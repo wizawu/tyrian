@@ -13,7 +13,7 @@ const LoginStore = assign({}, BaseStore, {
         return _login;
     },
 
-    dispatcherIndex: AppDispatcher.register(payload => {
+    dispatcherIndex: Dispatcher.register(payload => {
         let changed = true;
         let data = payload.data;
 

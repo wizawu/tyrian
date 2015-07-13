@@ -3,12 +3,7 @@
 ### Usage
 
 ```
-find js -name "*.js*" |xargs grep -Hn global.__
-```
-
-Replace all `global.__` with `global.YourNamespace`.
-
-```
+./defns YourNamespace
 npm install
 npm run watch
 ```

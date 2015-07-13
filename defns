@@ -1,0 +1,3 @@
+#!/bin/sh
+
+find js -name "*.js*" |xargs grep -l global.* |xargs sed -i "s/global\.\w\+/global.$1/g"

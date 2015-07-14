@@ -2,6 +2,10 @@
 
 set -e
 
-find js -name "*.js*" |xargs grep -l global.* |xargs sed -i "s/global\.\w\+/global.$1/g"
+if [ $(uname) = Linux ]; then
+    find js -name "*.js*" |xargs grep -l global.* |xargs sed -i "s/global\.\w\+/global.$1/g"
+else
+    find js -name "*.js*" |xargs grep -l global.* |xargs sed -i "" "s/global\.__/global.$1/g"
+fi
 
 rm -rf .git LICENSE README.md defns

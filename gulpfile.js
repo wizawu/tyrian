@@ -45,7 +45,7 @@ function build(bundler) {
 
 gulp.task("watch", function() {
     bundlers = bundlers.map(function(bundler) {
-        return watchify(bundler);
+        return watchify(bundler, {poll: true});
     });
     bundlers.forEach(function(bundler) {
         bundler.on("update", function() { build(bundler) });

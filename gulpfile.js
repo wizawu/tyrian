@@ -1,5 +1,7 @@
 var babelify = require("babelify");
 var browserify = require("browserify");
+var concat = require("gulp-concat");
+var globalReact = require("global-react");
 var gulp = require("gulp");
 var source = require("vinyl-source-stream");
 var template = require("gulp-template");
@@ -17,7 +19,7 @@ var bundlers = [
         entries: [entry],
         transform: [babelify],
         debug: true
-    });
+    }).transform({global: true}, globalReact);
 });
 
 function build(bundler) {
@@ -36,11 +38,16 @@ function build(bundler) {
             .pipe(gulp.dest("dist"));
     });
 
-    gulp.src("css/app.css").pipe(gulp.dest("dist"));
-
+    css();
     gulp.src("html/index.html")
         .pipe(template({ts: Date.now()}))
         .pipe(gulp.dest("dist"));
+}
+
+function css() {
+    gulp.src([
+        "css/app.css"
+    ]).pipe(concat("all.css")).pipe(gulp.dest("dist"));
 }
 
 gulp.task("watch", function() {

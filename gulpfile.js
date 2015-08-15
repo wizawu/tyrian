@@ -19,7 +19,7 @@ var bundlers = [
         entries: [entry],
         transform: [babelify],
         debug: true
-    }).transform({global: true}, globalReact);
+    }).exclude("react").transform({global: true}, globalReact);
 });
 
 function build(bundler) {
@@ -38,16 +38,16 @@ function build(bundler) {
             .pipe(gulp.dest("dist"));
     });
 
-    css();
+    gulp.src("node_modules/global-react/global.react.js")
+        .pipe(gulp.dest("dist"));
+
+    gulp.src(["css/app.css"])
+        .pipe(concat("all.css"))
+        .pipe(gulp.dest("dist"));
+
     gulp.src("html/index.html")
         .pipe(template({ts: Date.now()}))
         .pipe(gulp.dest("dist"));
-}
-
-function css() {
-    gulp.src([
-        "css/app.css"
-    ]).pipe(concat("all.css")).pipe(gulp.dest("dist"));
 }
 
 gulp.task("watch", function() {

@@ -16,9 +16,10 @@ var bundlers = [
     "./js/vendor.js"
 ].map(function(entry) {
     return browserify({
+        debug: true,
         entries: [entry],
-        transform: [babelify],
-        debug: true
+        extensions: [".js", ".jsx"],
+        transform: [babelify]
     }).exclude("react").transform({global: true}, globalReact);
 });
 

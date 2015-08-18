@@ -8,7 +8,7 @@ const {
 
 const {DefaultRoute, Route, RouteHandler} = ReactRouter;
 
-const Home = require("./components/Home.jsx");
+const Home = require("./components/Home");
 const translation = require("./translation.js");
 
 i18n.init({resStore: translation});

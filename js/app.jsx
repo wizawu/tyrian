@@ -26,8 +26,8 @@ const App = React.createClass({
         this.props.i18n.setLng(this.state.language);
     },
 
-    componentWillUpdate() {
-        this.props.i18n.setLng(this.state.language);
+    componentWillUpdate(_, nextState) {
+        this.props.i18n.setLng(nextState.language);
     },
 
     render() {

@@ -12,6 +12,7 @@ function time() {
 }
 
 var bundlers = [
+    // Add more entries here
     "./js/app.jsx",
     "./js/vendor.js"
 ].map(function(entry) {
@@ -21,6 +22,7 @@ var bundlers = [
         extensions: [".js", ".jsx"],
         transform: [babelify]
     }).exclude("react").transform({global: true}, globalReact);
+    // Same as `browserify app.jsx -t babelify -g global-react`
 });
 
 function build(bundler) {
@@ -42,7 +44,7 @@ function build(bundler) {
     gulp.src("node_modules/global-react/global.react.js")
         .pipe(gulp.dest("dist"));
 
-    gulp.src(["css/app.css"])
+    gulp.src(["css/app.css"])       // Add more CSS files here
         .pipe(concat("all.css"))
         .pipe(gulp.dest("dist"));
 

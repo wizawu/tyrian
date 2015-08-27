@@ -11,6 +11,8 @@ function time() {
     return "[" + new Date().toLocaleTimeString() + "] ";
 }
 
+var dist = ".";
+
 var bundlers = [
     // Add more entries here
     "./js/app.jsx",
@@ -49,7 +51,7 @@ function build(bundler) {
         .pipe(gulp.dest("dist"));
 
     gulp.src("html/index.html")
-        .pipe(template({ts: Date.now()}))
+        .pipe(template({ts: Date.now(), dist: dist}))
         .pipe(gulp.dest("dist"));
 }
 
@@ -65,4 +67,5 @@ gulp.task("watch", function() {
 });
 
 gulp.task("build", function() { build() });
+gulp.task("publish", function() { dist = "CDN_URL"; build() });
 gulp.task("default", ["watch"]);

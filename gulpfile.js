@@ -21,10 +21,9 @@ var bundlers = [
     return browserify({
         debug: true,
         entries: [entry],
-        extensions: [".js", ".jsx"],
         transform: [babelify]
     }).exclude("react").transform({global: true}, globalReact);
-    // Same as `browserify app.jsx -t babelify -g global-react`
+    // Same as `browserify app.jsx -t babelify -u react -g global-react`
 });
 
 function build(bundler) {

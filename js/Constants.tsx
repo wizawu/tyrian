@@ -1,6 +1,6 @@
 const {
     keyMirror,
-} = global.__;
+} = require("./namespace");
 
 export default {
     ActionTypes: keyMirror({

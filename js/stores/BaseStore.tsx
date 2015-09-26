@@ -1,7 +1,7 @@
 const {
     EventEmitter,
-    assign
-} = global.__;
+    assign,
+} = require("../namespace");
 
 const CHANGE_EVENT = "change";
 

@@ -1,9 +1,9 @@
 const {
     Mockxhr,
-} = global.__;
+} = require("../namespace");
 
-const ActionTypes = require("../Constants.js").ActionTypes;
-const Dispatcher = require("../Dispatcher.js");
+const ActionTypes = require("../Constants").ActionTypes;
+const Dispatcher = require("../Dispatcher");
 
 export default {
     login(params, done, fail) {

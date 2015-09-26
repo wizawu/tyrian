@@ -1,15 +1,17 @@
-require("./actions/mockxhr.js");
+declare var require;
+
+require("./actions/mockxhr");
 
 const {
     React,
     ReactRouter,
     i18n,
-} = global.__;
+} = require("./namespace");
 
 const {DefaultRoute, Route, RouteHandler} = ReactRouter;
 
-const Home = require("./components/Home.jsx");
-const translation = require("./translation.js");
+const Home = require("./components/Home");
+const translation = require("./translation");
 
 i18n.init({resStore: translation});
 

@@ -1,6 +1,6 @@
 const assign = require("react/lib/Object.assign");
 
-global.__ = assign(global.__ || {}, {
+assign(require("./namespace"), {
     React: require("react"),
     EventEmitter: require("events").EventEmitter,
     FluxDispatcher: require("flux").Dispatcher,

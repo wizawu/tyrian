@@ -1,9 +1,9 @@
 const {
     React,
-} = global.__;
+} = require("../namespace");
 
-const LoginActions = require("../actions/LoginActions.js");
-const LoginStore = require("../stores/LoginStore.js");
+const LoginActions = require("../actions/LoginActions");
+const LoginStore = require("../stores/LoginStore");
 
 const Home = React.createClass({
     propTypes: {
@@ -52,4 +52,4 @@ const Home = React.createClass({
     }
 });
 
-export default Home;
+export = Home;

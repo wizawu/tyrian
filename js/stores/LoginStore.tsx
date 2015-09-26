@@ -32,4 +32,4 @@ const LoginStore = assign({}, BaseStore, {
     })
 });
 
-export default LoginStore;
+export = LoginStore;

@@ -5,7 +5,7 @@ const {
 const ActionTypes = require("../Constants").ActionTypes;
 const Dispatcher = require("../Dispatcher");
 
-export default {
+export = {
     login(params, done, fail) {
         Mockxhr.post("/login", params, data => {
             Dispatcher.dispatch2(ActionTypes.LOGIN, data);

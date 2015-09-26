@@ -9,4 +9,4 @@ const Dispatcher = assign(new FluxDispatcher(), {
     }
 });
 
-export default Dispatcher;
+export = Dispatcher;

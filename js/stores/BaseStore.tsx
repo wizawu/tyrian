@@ -19,4 +19,4 @@ const BaseStore = assign({}, EventEmitter.prototype, {
     }
 });
 
-export default BaseStore;
+export = BaseStore;

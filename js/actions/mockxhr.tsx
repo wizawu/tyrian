@@ -1,6 +1,6 @@
 const {
     Mockxhr,
-} = global.__;
+} = require("../namespace");
 
 Mockxhr.setMock(true);
 

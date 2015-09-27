@@ -1,7 +1,7 @@
 const {
     EventEmitter,
-    assign
-} = global.__;
+    assign,
+} = require("../namespace");
 
 const CHANGE_EVENT = "change";
 
@@ -19,4 +19,4 @@ const BaseStore = assign({}, EventEmitter.prototype, {
     }
 });
 
-export default BaseStore;
+export = BaseStore;

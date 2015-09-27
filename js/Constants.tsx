@@ -1,8 +1,8 @@
 const {
     keyMirror,
-} = global.__;
+} = require("./namespace");
 
-export default {
+export = {
     ActionTypes: keyMirror({
         LOGIN: null,
         LOGOUT: null

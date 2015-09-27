@@ -1,7 +1,7 @@
 const {
     FluxDispatcher,
     assign
-} = global.__;
+} = require("./namespace");
 
 const Dispatcher = assign(new FluxDispatcher(), {
     dispatch2(type, data) {
@@ -9,4 +9,4 @@ const Dispatcher = assign(new FluxDispatcher(), {
     }
 });
 
-export default Dispatcher;
+export = Dispatcher;

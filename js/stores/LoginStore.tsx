@@ -1,10 +1,10 @@
 const {
     assign,
-} = global.__;
+} = require("../namespace");
 
-const ActionTypes = require("../Constants.js").ActionTypes;
-const BaseStore = require("./BaseStore.js");
-const Dispatcher = require("../Dispatcher.js");
+const ActionTypes = require("../Constants").ActionTypes;
+const BaseStore = require("./BaseStore");
+const Dispatcher = require("../Dispatcher");
 
 let _login = null;
 
@@ -32,4 +32,4 @@ const LoginStore = assign({}, BaseStore, {
     })
 });
 
-export default LoginStore;
+export = LoginStore;

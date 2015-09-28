@@ -1,5 +1,3 @@
-declare var require;
-
 require("./actions/mockxhr");
 
 const {

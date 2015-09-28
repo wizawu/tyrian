@@ -25,11 +25,11 @@ watch(["css/app.css"], function(filename) {
 });
 
 watch("js", function(filename) {
-    if (/vendor\.tsx$/.test(filename)) {
+    if (/vendor\.jsx$/.test(filename)) {
         printTime(filename);
-        exec("npm run build:tsx && npm run build:vendor && npm run build:html", report);
-    } else if (/\.tsx$/.test(filename)) {
+        exec("npm run build:vendor && npm run build:html", report);
+    } else if (/\.jsx$/.test(filename)) {
         printTime(filename);
-        exec("npm run build:tsx && npm run build:app && npm run build:html", report);
+        exec("npm run build:app && npm run build:html", report);
     }
 });

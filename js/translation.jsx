@@ -1,4 +1,4 @@
-export = {
+export default {
     "en-US": {
         "translation": {
             "common": {

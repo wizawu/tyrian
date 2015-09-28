@@ -1,3 +1,3 @@
 const NAMESPACE = "react-better-example";
 
-export = (window[NAMESPACE] || (window[NAMESPACE] = {}));
+export default (window[NAMESPACE] || (window[NAMESPACE] = {}));

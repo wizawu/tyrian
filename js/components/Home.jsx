@@ -52,4 +52,4 @@ const Home = React.createClass({
     }
 });
 
-export = Home;
+export default Home;

@@ -3,29 +3,25 @@ const {
 } = require("../namespace");
 
 const LoginActions = require("../actions/LoginActions");
-const LoginStore = require("../stores/LoginStore");
-const i18nStore = require("../stores/i18nStore");
+const store = require("../store");
 
 const Home = React.createClass({
     getInitialState() {
-        return {
-            email: ""
-        };
+        return { email: "" };
     },
 
     componentDidMount() {
-        i18nStore.subscribe(this._onChange);
-        LoginStore.subscribe(this._onChange);
+        store.subscribe(this._onChange);
     },
 
     _onChange() {
         this.setState({
-            email: (LoginStore.getState() || {}).email
+            email: (store.getState().login || {}).email
         });
     },
 
     _signIn() {
-        LoginActions.login({user: this.refs.input.getDOMNode().value});
+        LoginActions.login({ user: this.refs.input.getDOMNode().value });
     },
 
     _signOut() {
@@ -33,14 +29,13 @@ const Home = React.createClass({
     },
 
     render() {
-        let i18n = i18nStore.getState();
-
+        let i18n = store.getState().i18n;
         return (
             <div>
                 <input type="text" ref="input" />
                 <button onClick={this._signIn}>{i18n.t("common.signin")}</button>
                 <button onClick={this._signOut}>{i18n.t("common.signout")}</button>
-                <button onClick={_ => i18nStore.dispatch({type: "SETLNG", data: "zh-CN"})}>
+                <button onClick={_ => store.dispatch2("SETLNG", "zh-CN")}>
                     {i18n.t("common.setLng")}
                 </button>
                 <div>{this.state.email}</div>

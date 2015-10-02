@@ -4,12 +4,9 @@ const {
 
 const LoginActions = require("../actions/LoginActions");
 const LoginStore = require("../stores/LoginStore");
+const i18nStore = require("../stores/i18nStore");
 
 const Home = React.createClass({
-    propTypes: {
-        i18n: React.PropTypes.object
-    },
-
     getInitialState() {
         return {
             email: ""
@@ -17,16 +14,13 @@ const Home = React.createClass({
     },
 
     componentDidMount() {
-        LoginStore.addChangeListener(this._onChange);
-    },
-
-    componentWillUnmount() {
-        LoginStore.removeChangeListener(this._onChange);
+        i18nStore.subscribe(this._onChange);
+        LoginStore.subscribe(this._onChange);
     },
 
     _onChange() {
         this.setState({
-            email: (LoginStore.getAll() || {}).email
+            email: (LoginStore.getState() || {}).email
         });
     },
 
@@ -39,13 +33,16 @@ const Home = React.createClass({
     },
 
     render() {
-        let i18n = this.props.i18n;
+        let i18n = i18nStore.getState();
 
         return (
             <div>
                 <input type="text" ref="input" />
                 <button onClick={this._signIn}>{i18n.t("common.signin")}</button>
                 <button onClick={this._signOut}>{i18n.t("common.signout")}</button>
+                <button onClick={_ => i18nStore.dispatch({type: "SETLNG", data: "zh-CN"})}>
+                    {i18n.t("common.setLng")}
+                </button>
                 <div>{this.state.email}</div>
             </div>
         );

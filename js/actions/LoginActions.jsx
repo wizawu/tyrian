@@ -2,19 +2,25 @@ const {
     Mockxhr,
 } = require("../namespace");
 
-const ActionTypes = require("../Constants").ActionTypes;
-const Dispatcher = require("../Dispatcher");
+const LoginStore = require("../stores/LoginStore");
+const {ActionTypes} = require("../Constants");
 
 export default {
     login(params, done, fail) {
         Mockxhr.post("/login", params, data => {
-            Dispatcher.dispatch2(ActionTypes.LOGIN, data);
+            LoginStore.dispatch({
+                type: ActionTypes.LOGIN,
+                data: data,
+            });
         });
     },
 
     logout(params, done, fail) {
         Mockxhr.post("/logout", params, data => {
-            Dispatcher.dispatch2(ActionTypes.LOGOUT, {});
+            LoginStore.dispatch({
+                type: ActionTypes.LOGOUT,
+                data: {},
+            });
         });
     }
 };

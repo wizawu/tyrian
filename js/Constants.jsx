@@ -2,6 +2,7 @@ const keyMirror = {
     ActionTypes: {
         LOGIN: null,
         LOGOUT: null,
+        SETLNG: null,
     },
 };
 

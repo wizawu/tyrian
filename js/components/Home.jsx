@@ -2,8 +2,8 @@ const {
     React,
 } = require("../namespace");
 
-const LoginActions = require("../actions/LoginActions");
 const store = require("../store");
+const LoginActions = require("../actions").login;
 
 const Home = React.createClass({
     getInitialState() {

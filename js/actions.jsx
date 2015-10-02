@@ -1,10 +1,10 @@
 const {
     Mockxhr,
-} = require("../namespace");
+} = require("./namespace");
 
-const store = require("../store");
+const store = require("./store");
 
-export default {
+export const login = {
     login(params, done, fail) {
         Mockxhr.post("/login", params, data => {
             store.dispatch2("LOGIN", data);
@@ -15,5 +15,5 @@ export default {
         Mockxhr.post("/logout", params, data => {
             store.dispatch2("LOGOUT", {});
         });
-    }
+    },
 };

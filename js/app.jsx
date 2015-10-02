@@ -1,4 +1,4 @@
-require("./actions/mockxhr");
+require("./mockxhr");
 
 const {
     React,

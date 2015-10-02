@@ -15,8 +15,6 @@ const App = React.createClass({
     }
 });
 
-window.ReactRouter = ReactRouter;
-
 React.render((
     <Router>
         <Route path="/" component={App}>

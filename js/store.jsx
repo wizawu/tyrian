@@ -3,12 +3,10 @@ const {
     i18n,
 } = require("./namespace");
 
-const {createStore, combineReducers} = Redux;
-
 i18n.init({resStore: require("./translation")});
 i18n.setLng("en-US");
 
-let reducer = combineReducers({
+let reducer = Redux.combineReducers({
     i18n: (state, {type, data}) => {
         if (type === "SETLNG") i18n.setLng(data);
         return i18n;
@@ -26,7 +24,7 @@ let reducer = combineReducers({
     },
 });
 
-let store = createStore(reducer);
+let store = Redux.createStore(reducer);
 store.dispatch2 = (type, data) => store.dispatch({type: type, data: data});
 
 export default store;

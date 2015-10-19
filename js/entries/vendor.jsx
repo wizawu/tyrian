@@ -1,6 +1,6 @@
 const assign = require("object-assign");
 
-assign(require("./namespace"), {
+assign(require("../namespace"), {
     React: require("react"),
     Mockxhr: require("mockxhr"),
     ReactRouter: require("react-router"),

@@ -1,13 +1,13 @@
-require("./mockxhr");
+require("../mockxhr");
 
 const {
     React,
     ReactRouter,
-} = require("./namespace");
+} = require("../namespace");
 
 const {IndexRoute, Route, Router} = ReactRouter;
 
-const Home = require("./components/Home");
+const Home = require("../components/Home");
 
 const App = React.createClass({
     render() {

@@ -50,7 +50,7 @@ function buildDeps(callback) {
 function onJsChange(filename) {
     if (isSwapFile(filename)) return;
     if (deps["."][filename]) {
-        Object.keys(deps[filename] || []).forEach(function(entry) {
+        Object.keys(deps[filename] || {}).forEach(function(entry) {
             exec("npm run build:js dist/" + entry + " js/entries/" + entry, report);
         });
         exec("npm run build:html:all", report);

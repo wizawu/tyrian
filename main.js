@@ -44,6 +44,9 @@ var compiler = webpack({
             exclude: /node_modules/,
             loader: "babel",
             query: { presets: ["react", "es2015"] }
+        }, {
+            test: /\.less$/,
+            loader: "style!css!less"
         }]
     },
     plugins: command === "publish" ? [

@@ -1,3 +1,4 @@
+require("../../css/app.less");
 require("../mockxhr");
 
 const ReactDOM = require("react-dom");

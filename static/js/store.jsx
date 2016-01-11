@@ -1,5 +1,5 @@
 const Redux = require("redux");
-const i18n = require("i18next");
+const i18n = require("i18next-client");
 
 i18n.init({resStore: require("./translation")});
 i18n.setLng("en-US");
@@ -17,7 +17,7 @@ let reducer = Redux.combineReducers({
             case "LOGOUT":
                 return null;
             default:
-                return state;
+                return null;
         }
     },
 });
@@ -25,4 +25,4 @@ let reducer = Redux.combineReducers({
 let store = Redux.createStore(reducer);
 store.dispatch2 = (type, data) => store.dispatch({type: type, data: data});
 
-export default store;
+module.exports = store;

@@ -1,7 +1,7 @@
 const mockxhr = require("mockxhr");
 const store = require("./store");
 
-export default {
+module.exports = {
     login(params, done, fail) {
         mockxhr.post("/login", params, data => {
             store.dispatch2("LOGIN", data);

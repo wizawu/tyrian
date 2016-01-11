@@ -1,6 +1,6 @@
 require("../mockxhr");
 
-const React = require("react");
+const ReactDOM = require("react-dom");
 const { IndexRoute, Route, Router } = require("react-router");
 
 const Home = require("../components/Home");
@@ -11,7 +11,7 @@ const App = React.createClass({
     }
 });
 
-React.render((
+ReactDOM.render((
     <Router>
         <Route path="/" component={App}>
             <IndexRoute component={Home} />

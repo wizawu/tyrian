@@ -1,11 +1,7 @@
 require("../mockxhr");
 
-const {
-    React,
-    ReactRouter,
-} = require("../namespace");
-
-const {IndexRoute, Route, Router} = ReactRouter;
+const React = require("react");
+const { IndexRoute, Route, Router } = require("react-router");
 
 const Home = require("../components/Home");
 

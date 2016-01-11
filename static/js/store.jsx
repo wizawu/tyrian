@@ -1,7 +1,5 @@
-const {
-    Redux,
-    i18n,
-} = require("./namespace");
+const Redux = require("react-redux");
+const i18n = require("i18next");
 
 i18n.init({resStore: require("./translation")});
 i18n.setLng("en-US");
@@ -19,7 +17,7 @@ let reducer = Redux.combineReducers({
             case "LOGOUT":
                 return null;
             default:
-                return null;
+                return state;
         }
     },
 });

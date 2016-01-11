@@ -1,18 +1,16 @@
-const {
-    Mockxhr,
-} = require("./namespace");
+const mockxhr = require("mockxhr");
 
-Mockxhr.setMock(true);
+mockxhr.setMock(true);
 
-Mockxhr.mock(
+mockxhr.mock(
     "POST",
     "/login",
     data => {
         return {
             "user": data.user,
-            "email": data.user + "@gmail.com"
+            "email": data.user + "@gmail.com",
         };
     }
 );
 
-Mockxhr.mock("POST", "/logout");
+mockxhr.mock("POST", "/logout");

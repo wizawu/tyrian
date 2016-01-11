@@ -45,7 +45,10 @@ var compiler = webpack({
             loader: "babel",
             query: { presets: ["react", "es2015"] }
         }]
-    }
+    },
+    plugins: command === "publish" ? [
+        new webpack.optimize.UglifyJsPlugin({minimize: true})
+    ] : []
 });
 
 function buildReactCore() {
@@ -55,7 +58,8 @@ function buildReactCore() {
         output: {
             path: context + "/dist",
             filename: "react-core.js"
-        }
+        },
+        plugins: [new webpack.optimize.UglifyJsPlugin({minimize: true})]
     }).run(function(){});
 }
 
@@ -73,13 +77,6 @@ function build() {
     });
 }
 
-function publish() {
-    buildReactCore();
-    compiler.run(function(err, stats) {
-        console.log(stats.toString({colors: true}));
-    });
-}
-
 function help() {
     console.error("Usage:");
     console.error("  react-beaker watch   <source dir>");
@@ -89,4 +86,4 @@ function help() {
 
 if (command === "watch") watch();
 if (command === "build") build();
-if (command === "publish") publish();
+if (command === "publish") build();

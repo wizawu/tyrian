@@ -1,4 +1,4 @@
-const Redux = require("react-redux");
+const Redux = require("redux");
 const i18n = require("i18next");
 
 i18n.init({resStore: require("./translation")});

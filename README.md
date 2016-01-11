@@ -21,8 +21,8 @@ npm install -g wizawu/react-beaker
 
 2. Commands
 
-```
-react-beaker watch path/to/source
-react-beaker build path/to/source
-react-beaker publish path/to/source
-```
+    ```
+    react-beaker watch path/to/source
+    react-beaker build path/to/source
+    react-beaker publish path/to/source
+    ```

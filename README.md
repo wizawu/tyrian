@@ -13,10 +13,10 @@ npm install -g wizawu/react-beaker
 
     ```
     path/to/source/
-    ├── html
-    ├── js
-    │   └── entries
-    └── package.json (optional)
+    +-- html
+    +-- js
+    |   +-- entries
+    +-- package.json (optional)
     ```
 
 2. Commands

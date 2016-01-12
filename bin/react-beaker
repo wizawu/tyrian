@@ -1,3 +1,5 @@
 #!/bin/sh
 
-node main.js $@
+DIR="$(dirname $(readlink -f $(which $0)))/.."
+
+node $DIR/main.js $@

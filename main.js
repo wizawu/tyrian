@@ -27,6 +27,7 @@ fs.readdirSync(entriesDir).map(function(filename) {
 var webpack = require(libdir + "/node_modules/webpack");
 
 var compiler = webpack({
+    devtool: command === "publish" ? false : "inline-source-map",
     context: context,
     resolve: {
         extensions: ["", ".js", ".jsx"],
@@ -72,7 +73,7 @@ function buildReactCore() {
         entry: libdir + "/react-toolkit.js",
         output: {
             path: context + "/dist",
-            filename: "react-toolkit.min.js"
+            filename: "react-toolkit.min.js",
         },
         plugins: [new webpack.optimize.UglifyJsPlugin({minimize: true})]
     }).run(function(){});

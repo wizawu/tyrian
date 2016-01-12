@@ -57,10 +57,10 @@ var compiler = webpack({
 function buildReactCore() {
     webpack({
         context: process.cwd(),
-        entry: "./react-core.js",
+        entry: "./react-toolkit.js",
         output: {
             path: context + "/dist",
-            filename: "react-core.js"
+            filename: "react-toolkit.min.js"
         },
         plugins: [new webpack.optimize.UglifyJsPlugin({minimize: true})]
     }).run(function(){});

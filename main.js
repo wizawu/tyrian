@@ -24,10 +24,36 @@ fs.readdirSync(entriesDir).map(function(filename) {
     entry[filename.replace(/\.[^\.]+$/, "")] = entriesDir + filename;
 });
 
+// Choose options
+var options = {};
+switch (command) {
+    case "watch":
+        options = {
+            "sourceMap": true,
+            "minimize": false,
+            "filename": "[name].min.js",
+        };
+        break;
+    case "build":
+        options = {
+            "sourceMap": false,
+            "minimize": false,
+            "filename": "[name].js",
+        };
+        break;
+    case "publish":
+        options = {
+            "sourceMap": false,
+            "minimize": true,
+            "filename": "[name].min.js",
+        };
+        break;
+}
+
 var webpack = require(libdir + "/node_modules/webpack");
 
 var compiler = webpack({
-    devtool: command === "publish" ? false : "inline-source-map",
+    devtool: options.sourceMap && "inline-source-map",
     context: context,
     resolve: {
         extensions: ["", ".js", ".jsx"],
@@ -44,7 +70,7 @@ var compiler = webpack({
     entry: entry,
     output: {
         path: context + "/dist",
-        filename: "[name].js",
+        filename: options.filename,
     },
     module: {
         loaders: [{
@@ -62,7 +88,7 @@ var compiler = webpack({
             loader: "style!css!less",
         }]
     },
-    plugins: command === "publish" ? [
+    plugins: options.minimize ? [
         new webpack.optimize.UglifyJsPlugin({minimize: true})
     ] : []
 });

@@ -1,13 +1,10 @@
-require("../mockxhr");
+import "../../css/app.less";
 
-const {
-    React,
-    ReactRouter,
-} = require("../namespace");
+import ReactDOM from "react-dom";
+import { IndexRoute, Route, Router } from "react-router";
 
-const {IndexRoute, Route, Router} = ReactRouter;
-
-const Home = require("../components/Home");
+import "../mockxhr";
+import Home from "../components/Home";
 
 const App = React.createClass({
     render() {
@@ -15,7 +12,7 @@ const App = React.createClass({
     }
 });
 
-React.render((
+ReactDOM.render((
     <Router>
         <Route path="/" component={App}>
             <IndexRoute component={Home} />
@@ -23,4 +20,4 @@ React.render((
             <Route path="*" component={Home} />
         </Route>
     </Router>
-), document.body);
+), document.querySelector("section"));

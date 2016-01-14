@@ -1,9 +1,6 @@
-const {
-    React,
-} = require("../namespace");
-
-const store = require("../store");
-const LoginActions = require("../actions").login;
+import React from "react";
+import actions from "../actions";
+import store from "../store";
 
 const Home = React.createClass({
     getInitialState() {
@@ -21,11 +18,11 @@ const Home = React.createClass({
     },
 
     _signIn() {
-        LoginActions.login({ user: this.refs.input.getDOMNode().value });
+        actions.login({user: this.refs.input.value});
     },
 
     _signOut() {
-        LoginActions.logout();
+        actions.logout();
     },
 
     render() {
@@ -33,10 +30,10 @@ const Home = React.createClass({
         return (
             <div>
                 <input type="text" ref="input" />
-                <button onClick={this._signIn}>{i18n.t("common.signin")}</button>
-                <button onClick={this._signOut}>{i18n.t("common.signout")}</button>
+                <button onClick={this._signIn}>{i18n.t("signin")}</button>
+                <button onClick={this._signOut}>{i18n.t("signout")}</button>
                 <button onClick={_ => store.dispatch2("SETLNG", "zh-CN")}>
-                    {i18n.t("common.setLng")}
+                    {i18n.t("setlng")}
                 </button>
                 <div>{this.state.email}</div>
             </div>

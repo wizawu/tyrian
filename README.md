@@ -1,13 +1,28 @@
-# react-better-example
+react-beaker
+===
+
+### Install
+
+```
+npm install -g react-beaker
+```
 
 ### Usage
 
-```
-cd path/to/static
-git clone -b master --depth 1 git@github.com:wizawu/react-better-example.git .
+1. Code struct should be as follow.
 
-npm install
-npm run watch
-```
+    ```
+    path/to/source/
+    +-- html
+    +-- js
+    |   +-- entries
+    +-- package.json (optional)
+    ```
 
-You should modify the `NAMESPACE` constant in `js/namespace.jsx`.
+2. Commands
+
+    ```
+    react-beaker watch path/to/source
+    react-beaker build path/to/source
+    react-beaker publish path/to/source
+    ```

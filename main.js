@@ -17,12 +17,17 @@ if (!command || !context || ["watch", "build", "publish"].indexOf(command) < 0) 
     process.exit(1);
 }
 
-// Find all entries
+// Find all JavaScript entries
 var entry = {};
 var entriesDir = context + "/js/entries/";
-fs.readdirSync(entriesDir).map(function(filename) {
-    entry[filename.replace(/\.[^\.]+$/, "")] = entriesDir + filename;
+fs.readdirSync(entriesDir).forEach(function(filename) {
+    if (/.*\.swp$/.test(filename) === false) {
+        entry[filename.replace(/\.[^\.]+$/, "")] = entriesDir + filename;
+    }
 });
+
+// Find all HTML files
+var pages = fs.readdirSync(context + "/html");
 
 // Choose options
 var options = {};
@@ -51,6 +56,7 @@ switch (command) {
 }
 
 var webpack = require(libdir + "/node_modules/webpack");
+var HtmlWebpackPlugin = require(libdir + "/node_modules/html-webpack-plugin");
 
 var compiler = webpack({
     devtool: options.sourceMap && "inline-source-map",
@@ -88,9 +94,14 @@ var compiler = webpack({
             loader: "style!css!less",
         }]
     },
-    plugins: options.minimize ? [
+    plugins: pages.map(function(filename) {
+        return new HtmlWebpackPlugin({
+            filename: filename,
+            template: context + "/html/" + filename,
+        });
+    }).concat(options.minimize ? [
         new webpack.optimize.UglifyJsPlugin({minimize: true})
-    ] : []
+    ] : []),
 });
 
 function buildReactCore() {

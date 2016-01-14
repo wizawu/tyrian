@@ -4,12 +4,12 @@ react-beaker
 ### Install
 
 ```
-npm install -g wizawu/react-beaker
+npm install -g react-beaker
 ```
 
 ### Usage
 
-1. Code struct must be like
+1. Code struct should be as follow.
 
     ```
     path/to/source/

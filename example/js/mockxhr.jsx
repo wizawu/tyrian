@@ -1,4 +1,4 @@
-const mockxhr = require("mockxhr");
+import mockxhr from "mockxhr";
 
 mockxhr.setMock(true);
 

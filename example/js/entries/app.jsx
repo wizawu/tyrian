@@ -1,10 +1,10 @@
-require("../../css/app.less");
-require("../mockxhr");
+import "../../css/app.less";
 
-const ReactDOM = require("react-dom");
-const { IndexRoute, Route, Router } = require("react-router");
+import ReactDOM from "react-dom";
+import { IndexRoute, Route, Router } from "react-router";
 
-const Home = require("../components/Home");
+import "../mockxhr";
+import Home from "../components/Home";
 
 const App = React.createClass({
     render() {

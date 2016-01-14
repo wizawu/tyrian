@@ -1,10 +1,11 @@
-const Redux = require("redux");
-const i18n = require("i18next-client");
+import { combineReducers, createStore } from "redux";
+import * as i18n from "i18next-client";
+import translation from "./translation";
 
-i18n.init({resStore: require("./translation")});
+i18n.init({resStore: translation});
 i18n.setLng("en-US");
 
-let reducer = Redux.combineReducers({
+let reducer = combineReducers({
     i18n: (state, {type, data}) => {
         if (type === "SETLNG") i18n.setLng(data);
         return i18n;
@@ -22,7 +23,7 @@ let reducer = Redux.combineReducers({
     },
 });
 
-let store = Redux.createStore(reducer);
+let store = createStore(reducer);
 store.dispatch2 = (type, data) => store.dispatch({type: type, data: data});
 
-module.exports = store;
+export default store;

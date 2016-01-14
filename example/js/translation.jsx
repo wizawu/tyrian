@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     "en-US": {
         "translation": {
             "signin": "Sign in",

@@ -1,7 +1,6 @@
-const React = require("react");
-
-const store = require("../store");
-const actions = require("../actions");
+import React from "react";
+import actions from "../actions";
+import store from "../store";
 
 const Home = React.createClass({
     getInitialState() {
@@ -42,4 +41,4 @@ const Home = React.createClass({
     }
 });
 
-module.exports = Home;
+export default Home;

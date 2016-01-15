@@ -21,13 +21,15 @@ if (!command || !context || ["watch", "build", "publish"].indexOf(command) < 0) 
 var entry = {};
 var entriesDir = context + "/js/entries/";
 fs.readdirSync(entriesDir).forEach(function(filename) {
-    if (/.*\.swp$/.test(filename) === false) {
+    if (/.*\.sw.$/.test(filename) === false) {
         entry[filename.replace(/\.[^\.]+$/, "")] = entriesDir + filename;
     }
 });
 
 // Find all HTML files
-var pages = fs.readdirSync(context + "/html");
+var pages = fs.readdirSync(context + "/html").filter(function(filename) {
+    return /.*\.sw.$/.test(filename) === false;
+});
 
 // Choose options
 var options = {};

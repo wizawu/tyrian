@@ -89,7 +89,10 @@ var compiler = webpack({
                 presets: [
                     libdir + "/node_modules/babel-preset-react",
                     libdir + "/node_modules/babel-preset-es2015",
-                ]
+                ],
+                plugins: [
+                    libdir + "/node_modules/babel-plugin-transform-object-assign",
+                ],
             },
         }, {
             test: /\.css$/,

@@ -4,6 +4,7 @@ var fs = require("fs");
 var path = require("path");
 
 var libdir = path.dirname(process.argv[1]);
+var libmod = libdir + (fs.existsSync(libdir + "/node_modules") ? "/node_modules" : "/..");
 var command = process.argv[2];
 var context = process.argv[3] && path.resolve(process.argv[3]);
 
@@ -57,8 +58,8 @@ switch (command) {
         break;
 }
 
-var webpack = require(libdir + "/node_modules/webpack");
-var HtmlWebpackPlugin = require(libdir + "/node_modules/html-webpack-plugin");
+var webpack = require(libmod + "/webpack");
+var HtmlWebpackPlugin = require(libmod + "/html-webpack-plugin");
 
 var compiler = webpack({
     devtool: options.sourceMap && "inline-source-map",
@@ -73,7 +74,7 @@ var compiler = webpack({
         }
     },
     resolveLoader: {
-        modulesDirectories: [libdir + "/node_modules"]
+        modulesDirectories: [libmod]
     },
     entry: entry,
     output: {
@@ -87,11 +88,11 @@ var compiler = webpack({
             loader: "babel",
             query: {
                 presets: [
-                    libdir + "/node_modules/babel-preset-react",
-                    libdir + "/node_modules/babel-preset-es2015",
+                    libmod + "/babel-preset-react",
+                    libmod + "/babel-preset-es2015",
                 ],
                 plugins: [
-                    libdir + "/node_modules/babel-plugin-transform-object-assign",
+                    libmod + "/babel-plugin-transform-object-assign",
                 ],
             },
         }, {

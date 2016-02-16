@@ -28,9 +28,13 @@ fs.readdirSync(entriesDir).forEach(function(filename) {
 });
 
 // Find all HTML files
-var pages = fs.readdirSync(context + "/html").filter(function(filename) {
-    return /.*\.sw.$/.test(filename) === false;
-});
+try {
+    var pages = fs.readdirSync(context + "/html").filter(function(filename) {
+        return /.*\.sw.$/.test(filename) === false;
+    });
+} catch(_) {
+    var pages = [];
+}
 
 // Choose options
 var options = {};
@@ -67,6 +71,7 @@ var compiler = webpack({
     resolve: {
         extensions: ["", ".js", ".jsx"],
         alias: {
+            "react/lib":    libmod + "/react/lib",
             "react":        libdir + "/alias/react.js",
             "react-dom":    libdir + "/alias/react-dom.js",
             "react-router": libdir + "/alias/react-router.js",

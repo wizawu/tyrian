@@ -101,10 +101,10 @@ var compiler = webpack({
                 ],
             },
         }, {
-            test: /\.css$/,
+            test: /^[^!]+.css$/,
             loader: "style!css",
         }, {
-            test: /\.less$/,
+            test: /^[^!]+.less$/,
             loader: "style!css!less",
         }]
     },

@@ -1,5 +1,4 @@
-react-beaker
-===
+# react-beaker ![build status](https://travis-ci.org/wizawu/react-beaker.svg)
 
 ### Install
 

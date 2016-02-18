@@ -65,6 +65,8 @@ npm install -g react-beaker
 2. Commands
 
     ```shell
+    # If there is package.json in the source directory, you need to run `npm install` first
+
     react-beaker watch path/to/source
     react-beaker build path/to/source
     react-beaker publish path/to/source

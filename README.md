@@ -1,6 +1,6 @@
 # react-beaker ![build status](https://travis-ci.org/wizawu/react-beaker.svg)
 
-A devtool to cut down heavy dependencies/devDependencies of React projects.
+A devtool to cut down heavy dependencies/devDependencies of [React](https://facebook.github.io/react/) projects.
 
 For example, in many cases, you may need a `package.json` like
 
@@ -44,7 +44,7 @@ With `react-beaker`, you can simply write
 
 ### Installation
 
-It is recommended to install `react-beaker` to global.
+It is recommended to install `react-beaker` globally.
 
 ```shell
 npm install -g react-beaker
@@ -55,7 +55,7 @@ npm install -g react-beaker
 1. Project structure (or the frontend part) should be as follow.
 
     ```shell
-    path/to/source/
+    path/to/source
     +-- html
     +-- js
     |   +-- entries
@@ -73,7 +73,7 @@ npm install -g react-beaker
     For `watch` and `publish`, all source files with extensions `.js` or `.jsx` will be output with extension `.min.js` to `dist`.
 
     ```shell
-    path/to/source/
+    path/to/source
     +-- js
     |   +-- entries
     |       +-- a.js
@@ -86,7 +86,7 @@ npm install -g react-beaker
     For `build`, the extension would be `.js`.
 
     ```shell
-    path/to/source/
+    path/to/source
     +-- js
     |   +-- entries
     |       +-- a.js
@@ -99,7 +99,7 @@ npm install -g react-beaker
     Meanwhile, HTML source files will also be compiled to `dist`.
 
     ```shell
-    path/to/source/
+    path/to/source
     +-- html
     |   +-- app.html
     +-- dist
@@ -116,7 +116,7 @@ You will find `react-toolkit.min.js` in `dist`, which should be included in your
 <script src="./react-toolkit.min.js"></script>
 ```
 
-Then you are able to import the most commonly used React libraries.
+Then you are able to import the following React libraries without adding them to `package.json`.
 
 ```javascript
 import React from "react";

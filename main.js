@@ -126,7 +126,10 @@ function buildReactCore() {
             path: context + "/dist",
             filename: "react-toolkit.min.js",
         },
-        plugins: [new webpack.optimize.UglifyJsPlugin({minimize: true})]
+        plugins: [
+            new webpack.optimize.UglifyJsPlugin({minimize: true}),
+            new webpack.DefinePlugin({"process.env": {NODE_ENV: '"production"'}})
+        ]
     }).run(function(){});
 }
 

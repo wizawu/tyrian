@@ -41,23 +41,26 @@ var options = {};
 switch (command) {
     case "watch":
         options = {
-            "sourceMap": true,
-            "minimize": false,
+            "NODE_ENV": '"development"',
             "filename": "[name].min.js",
+            "minimize": false,
+            "sourceMap": true,
         };
         break;
     case "build":
         options = {
-            "sourceMap": false,
-            "minimize": false,
+            "NODE_ENV": '"production"',
             "filename": "[name].js",
+            "minimize": false,
+            "sourceMap": false,
         };
         break;
     case "publish":
         options = {
-            "sourceMap": false,
-            "minimize": true,
+            "NODE_ENV": '"production"',
             "filename": "[name].min.js",
+            "minimize": true,
+            "sourceMap": false,
         };
         break;
 }
@@ -115,7 +118,9 @@ var compiler = webpack({
         });
     }).concat(options.minimize ? [
         new webpack.optimize.UglifyJsPlugin({minimize: true})
-    ] : []),
+    ] : []).concat([
+        new webpack.DefinePlugin({"process.env": {NODE_ENV: options.NODE_ENV}})
+    ]),
 });
 
 function buildReactCore() {

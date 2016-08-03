@@ -68,6 +68,7 @@ switch (command) {
 var webpack = require(libmod + "/webpack");
 var HtmlWebpackPlugin = require(libmod + "/html-webpack-plugin");
 var autoprefixer = require(libmod + "/autoprefixer");
+
 var compiler = webpack({
     devtool: options.sourceMap && "inline-source-map",
     context: context,
@@ -122,9 +123,9 @@ var compiler = webpack({
         new webpack.DefinePlugin({"process.env": {NODE_ENV: options.NODE_ENV}})
     ]),
     postcss: function () {
-        return [autoprefixer({
-            browsers: ["last 2 versions"]
-        })];
+        return [
+            autoprefixer({browsers: ["last 2 versions"]})
+        ];
     }
 });
 

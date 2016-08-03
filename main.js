@@ -105,7 +105,7 @@ var compiler = webpack({
             },
         }, {
             test: /^[^!]+.css$/,
-            loader: "style!css",
+            loader: "style!css!postcss",
         }, {
             test: /^[^!]+.less$/,
             loader: "style!css!postcss!less",
@@ -123,7 +123,7 @@ var compiler = webpack({
     ]),
     postcss: function () {
         return [autoprefixer({
-            browsers: ["Safari >= 8"]
+            browsers: ["last 2 versions"]
         })];
     }
 });

@@ -67,7 +67,7 @@ switch (command) {
 
 var webpack = require(libmod + "/webpack");
 var HtmlWebpackPlugin = require(libmod + "/html-webpack-plugin");
-
+var autoprefixer = require(libmod + "/autoprefixer");
 var compiler = webpack({
     devtool: options.sourceMap && "inline-source-map",
     context: context,
@@ -108,7 +108,7 @@ var compiler = webpack({
             loader: "style!css",
         }, {
             test: /^[^!]+.less$/,
-            loader: "style!css!less",
+            loader: "style!css!postcss!less",
         }]
     },
     plugins: pages.map(function(filename) {
@@ -121,6 +121,11 @@ var compiler = webpack({
     ] : []).concat([
         new webpack.DefinePlugin({"process.env": {NODE_ENV: options.NODE_ENV}})
     ]),
+    postcss: function () {
+        return [autoprefixer({
+            browsers: ["Safari >= 8"]
+        })];
+    }
 });
 
 function buildReactCore() {

@@ -106,10 +106,10 @@ var compiler = webpack({
             },
         }, {
             test: /^[^!]+.css$/,
-            loader: "style!css!postcss",
+            loader: "style!css?-minimize!postcss",
         }, {
             test: /^[^!]+.less$/,
-            loader: "style!css!postcss!less",
+            loader: "style!css?-minimize!postcss!less",
         }]
     },
     plugins: pages.map(function(filename) {

@@ -73,7 +73,7 @@ var compiler = webpack({
     devtool: options.sourceMap && "inline-source-map",
     context: context,
     resolve: {
-        extensions: ["", ".web.js", ".js", ".jsx"],
+        extensions: ["", ".web.js", ".ts", ".tsx", ".js", ".jsx"],
         alias: {
             "react/lib/ReactCSSTransitionGroup": libdir + "/alias/ReactCSSTransitionGroup.js",
             "react/lib": libmod + "/react/lib",
@@ -106,6 +106,10 @@ var compiler = webpack({
                     libmod + "/babel-plugin-transform-object-assign",
                 ],
             },
+        }, {
+            test: /\.tsx?$/,
+            exclude: /node_modules/,
+            loader: "ts-loader"
         }, {
             test: /^[^!]+.css$/,
             loader: "style!css?-minimize!postcss",

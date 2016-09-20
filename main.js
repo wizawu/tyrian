@@ -80,6 +80,7 @@ var compiler = webpack({
             "react-dom":    libdir + "/alias/react-dom.js",
             "react-router": libdir + "/alias/react-router.js",
             "redux":        libdir + "/alias/redux.js",
+            "g2":           libdir + "/alias/g2.js",
         }
     },
     resolveLoader: {

@@ -75,12 +75,13 @@ var compiler = webpack({
     resolve: {
         extensions: ["", ".web.js", ".js", ".jsx"],
         alias: {
-            "react/lib":    libmod + "/react/lib",
-            "react":        libdir + "/alias/react.js",
-            "react-dom":    libdir + "/alias/react-dom.js",
+            "react/lib/ReactCSSTransitionGroup": libdir + "/alias/ReactCSSTransitionGroup.js",
+            "react/lib": libmod + "/react/lib",
+            "react": libdir + "/alias/react.js",
+            "react-dom": libdir + "/alias/react-dom.js",
             "react-router": libdir + "/alias/react-router.js",
-            "redux":        libdir + "/alias/redux.js",
-            "g2":           libdir + "/alias/g2.js",
+            "redux": libdir + "/alias/redux.js",
+            "g2": libdir + "/alias/g2.js",
         }
     },
     resolveLoader: {

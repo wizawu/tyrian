@@ -75,14 +75,16 @@ var compiler = webpack({
     resolve: {
         extensions: ["", ".web.js", ".ts", ".tsx", ".js", ".jsx"],
         alias: {
-            "react/lib/ReactCSSTransitionGroup": libdir + "/alias/ReactCSSTransitionGroup.js",
             "react/lib": libmod + "/react/lib",
-            "react": libdir + "/alias/react.js",
-            "react-dom": libdir + "/alias/react-dom.js",
-            "react-router": libdir + "/alias/react-router.js",
-            "redux": libdir + "/alias/redux.js",
-            "g2": libdir + "/alias/g2.js",
         }
+    },
+    externals: {
+        "g2": "G2",
+        "react": "React",
+        "redux": "Redux",
+        "react-dom": "ReactDOM",
+        "react-router": "ReactRouter",
+        "react-addons-css-transition-group": "_ReactCSSTransitionGroup",
     },
     resolveLoader: {
         modulesDirectories: [libmod]

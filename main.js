@@ -84,7 +84,7 @@ var compiler = webpack({
         "redux": "Redux",
         "react-dom": "ReactDOM",
         "react-router": "ReactRouter",
-        "react-addons-css-transition-group": "_ReactCSSTransitionGroup",
+        "react-addons-css-transition-group": "ReactCSSTransitionGroup",
     },
     resolveLoader: {
         modulesDirectories: [libmod]

@@ -1,7 +1,7 @@
 import "../../css/app.less";
 
 import ReactDOM from "react-dom";
-import CSSTransitionGroup from "react/lib/ReactCSSTransitionGroup";
+import CSSTransitionGroup from "react-addons-css-transition-group";
 import { IndexRoute, Route, Router } from "react-router";
 
 import "../mockxhr";

@@ -120,6 +120,15 @@ var compiler = webpack({
             loader: "style!css?-minimize!postcss!less",
         }]
     },
+    ts: {
+        compilerOptions: {
+            "jsx": "react",
+            "module": "commonjs",
+            "noImplicitAny": true,
+            "target": "es5",
+            "typeRoots": [context + "/node_modules/@types", context + "/js/types"]
+        }
+    },
     plugins: pages.map(function(filename) {
         return new HtmlWebpackPlugin({
             filename: filename,

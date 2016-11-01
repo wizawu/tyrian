@@ -32,7 +32,7 @@ try {
     var pages = fs.readdirSync(context + "/html").filter(function(filename) {
         return /.*\.sw.$/.test(filename) === false;
     });
-} catch(_) {
+} catch (_) {
     var pages = [];
 }
 
@@ -73,7 +73,7 @@ var compiler = webpack({
     devtool: options.sourceMap && "inline-source-map",
     context: context,
     resolve: {
-        extensions: ["", ".web.js", ".ts", ".tsx", ".js", ".jsx"],
+        extensions: ["", ".ts", ".tsx", ".js", ".jsx", ".web.js"],
         alias: {
             "react/lib": libmod + "/react/lib",
         }
@@ -135,13 +135,21 @@ var compiler = webpack({
             template: context + "/html/" + filename,
         });
     }).concat(options.minimize ? [
-        new webpack.optimize.UglifyJsPlugin({minimize: true})
+        new webpack.optimize.UglifyJsPlugin({
+            minimize: true
+        })
     ] : []).concat([
-        new webpack.DefinePlugin({"process.env": {NODE_ENV: options.NODE_ENV}})
+        new webpack.DefinePlugin({
+            "process.env": {
+                NODE_ENV: options.NODE_ENV
+            }
+        })
     ]),
-    postcss: function () {
+    postcss: function() {
         return [
-            autoprefixer({browsers: ["last 2 versions", "Safari >= 8"]})
+            autoprefixer({
+                browsers: ["last 2 versions", "Safari >= 8"]
+            })
         ];
     }
 });
@@ -155,23 +163,35 @@ function buildReactCore() {
             filename: "react-toolkit.min.js",
         },
         plugins: [
-            new webpack.optimize.UglifyJsPlugin({minimize: true}),
-            new webpack.DefinePlugin({"process.env": {NODE_ENV: '"production"'}})
+            new webpack.optimize.UglifyJsPlugin({
+                minimize: true
+            }),
+            new webpack.DefinePlugin({
+                "process.env": {
+                    NODE_ENV: '"production"'
+                }
+            })
         ]
-    }).run(function(){});
+    }).run(function() {});
 }
 
 function watch() {
     buildReactCore();
-    compiler.watch({poll: true}, function(err, stats) {
-        console.log(stats.toString({colors: true}));
+    compiler.watch({
+        poll: true
+    }, function(err, stats) {
+        console.log(stats.toString({
+            colors: true
+        }));
     });
 }
 
 function build() {
     buildReactCore();
     compiler.run(function(err, stats) {
-        console.log(stats.toString({colors: true}));
+        console.log(stats.toString({
+            colors: true
+        }));
     });
 }
 

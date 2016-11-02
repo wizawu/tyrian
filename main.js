@@ -126,7 +126,7 @@ var compiler = webpack({
             "module": "commonjs",
             "noImplicitAny": true,
             "target": "es5",
-            "typeRoots": [context + "/node_modules/@types", context + "/js/types"]
+            "typeRoots": [context + "/node_modules/@types", context + "/js/@types"]
         }
     },
     plugins: pages.map(function(filename) {

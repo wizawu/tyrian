@@ -79,7 +79,6 @@ var compiler = webpack({
         }
     },
     externals: {
-        "g2": "G2",
         "react": "React",
         "redux": "Redux",
         "react-dom": "ReactDOM",

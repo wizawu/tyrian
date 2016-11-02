@@ -73,7 +73,7 @@ var compiler = webpack({
     devtool: options.sourceMap && "inline-source-map",
     context: context,
     resolve: {
-        extensions: ["", ".ts", ".tsx", ".js", ".jsx", ".web.js"],
+        extensions: ["", ".web.js", ".ts", ".tsx", ".js", ".jsx"],
         alias: {
             "react/lib": libmod + "/react/lib",
         }

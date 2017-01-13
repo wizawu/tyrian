@@ -1,6 +1,6 @@
 # react-beaker ![build status](https://travis-ci.org/wizawu/react-beaker.svg)
 
-A devtool to cut down heavy dependencies/devDependencies of [React](https://facebook.github.io/react/) projects.
+A devtool built on webpack for cutting down heavy dependencies/devDependencies of [React](https://facebook.github.io/react/) projects.
 
 For example, in many cases, you may need a `package.json` like
 

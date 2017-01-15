@@ -1,0 +1,12 @@
+NUGET_DIR=packages
+NUGET_FLAGS=-x -o ${NUGET_DIR}
+
+all: deps
+	echo ok
+
+deps:
+	nuget install ${NUGET_FLAGS} -Version 9.0.1 Newtonsoft.Json
+	nuget install ${NUGET_FLAGS} -Version 2.0.0 Suave
+
+clean:
+	rm -rf ${NUGET_DIR}

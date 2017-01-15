@@ -1,8 +1,2 @@
-*.class
-*.iml
-*.jar
-*.war
-.gradle/
-.idea/
-build/
-lib/
+*.swp
+packages/

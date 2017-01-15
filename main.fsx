@@ -1,10 +1,7 @@
-#r "packages/Suave/lib/net40/Suave.dll"
-#r "packages/FSharp.Data/lib/net40/FSharp.Data.dll"
+#r "packages/Newtonsoft.Json/lib/net40/Newtonsoft.Json.dll"
 
-open Suave
+open Newtonsoft.Json.Linq
 
-open FSharp.Data
-
-type Simple = JsonProvider<""" { "name":"John", "age":94 } """>
-
-Simple.Name
+let json = JObject()
+json.Add("name", JValue("wizawu"))
+System.Console.WriteLine(json.ToString())

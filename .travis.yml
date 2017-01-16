@@ -1,0 +1,10 @@
+sudo: true
+language: node_js
+node_js:
+  - stable
+before_script:
+  - npm install -g .
+script:
+  - cd example && npm install && cd -
+  - react-beaker build example
+  - react-beaker publish example

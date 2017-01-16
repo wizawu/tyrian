@@ -1,24 +1,14 @@
-import "../../css/app.less";
+import "../../css/app.less"
 
-import ReactDOM from "react-dom";
-import CSSTransitionGroup from "react-addons-css-transition-group";
-import { IndexRoute, Route, Router } from "react-router";
+import Inferno from "inferno"
+import Component from "inferno-component"
 
-import "../mockxhr";
-import Home from "../components/Home";
+declare const React
 
-const App = React.createClass({
+class App extends Component<{}, {}> {
     render() {
-        return <div>{this.props.children}</div>;
+        return <div>Hello, Inferno</div>
     }
-});
+}
 
-ReactDOM.render((
-    <Router>
-        <Route path="/" component={App}>
-            <IndexRoute component={Home} />
-            <Route path="home" component={Home} />
-            <Route path="*" component={Home} />
-        </Route>
-    </Router>
-), document.querySelector("section"));
+Inferno.render(<App />, document.querySelector("section"))

@@ -80,6 +80,7 @@ var compiler = webpack({
     },
     externals: {
         "inferno": "Inferno",
+        "inferno-component": "InfernoComponent",
         "inferno-router": "InfernoRouter",
         "react": "React",
         "react-dom": "ReactDOM",
@@ -110,7 +111,6 @@ var compiler = webpack({
         compilerOptions: {
             "jsx": "react",
             "module": "commonjs",
-            "noImplicitAny": true,
             "target": "es5",
             "typeRoots": [context + "/node_modules/@types", context + "/js/@types"],
             "lib": ["dom", "es2015", "es2015.promise"]

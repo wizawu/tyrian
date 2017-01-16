@@ -76,7 +76,7 @@ var compiler = webpack({
     devtool: options.sourceMap && "inline-source-map",
     context: context,
     resolve: {
-        extensions: ["", ".tsx"],
+        extensions: ["", ".js", ".tsx"],
     },
     externals: {
         "inferno": "Inferno",

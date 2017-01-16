@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 var fs = require("fs");
 var path = require("path");
 
@@ -10,7 +8,7 @@ var context = process.argv[3] && path.resolve(process.argv[3]);
 
 // Print version
 var version = JSON.parse(fs.readFileSync(libdir + "/package.json")).version;
-console.log("Version: react-beaker " + version + "\n");
+console.log("Version: inferno-beaker " + version + "\n");
 
 // Validate arguments
 if (!command || !context || ["watch", "build", "publish"].indexOf(command) < 0) {
@@ -21,11 +19,15 @@ if (!command || !context || ["watch", "build", "publish"].indexOf(command) < 0) 
 // Find all JavaScript entries
 var entry = {};
 var entriesDir = context + "/js/entries/";
-fs.readdirSync(entriesDir).forEach(function(filename) {
-    if (/.*\.sw.$/.test(filename) === false) {
-        entry[filename.replace(/\.[^\.]+$/, "")] = entriesDir + filename;
-    }
-});
+try {
+    fs.readdirSync(entriesDir).forEach(function(filename) {
+        if (/.*\.sw.$/.test(filename) === false) {
+            entry[filename.replace(/\.[^\.]+$/, "")] = entriesDir + filename;
+        }
+    });
+} catch (_) {
+    console.log("Directory js/entries/ not found");
+}
 
 // Find all HTML files
 try {
@@ -33,6 +35,7 @@ try {
         return /.*\.sw.$/.test(filename) === false;
     });
 } catch (_) {
+    console.log("Directory html/ not found");
     var pages = [];
 }
 
@@ -73,17 +76,14 @@ var compiler = webpack({
     devtool: options.sourceMap && "inline-source-map",
     context: context,
     resolve: {
-        extensions: ["", ".web.js", ".ts", ".tsx", ".js", ".jsx"],
-        alias: {
-            "react/lib": libmod + "/react/lib",
-        }
+        extensions: ["", ".tsx"],
     },
     externals: {
+        "inferno": "Inferno",
+        "inferno-router": "InfernoRouter",
         "react": "React",
-        "redux": "Redux",
         "react-dom": "ReactDOM",
         "react-router": "ReactRouter",
-        "react-addons-css-transition-group": "ReactCSSTransitionGroup",
     },
     resolveLoader: {
         modulesDirectories: [libmod]
@@ -95,20 +95,7 @@ var compiler = webpack({
     },
     module: {
         loaders: [{
-            test: /\.jsx?$/,
-            exclude: /node_modules/,
-            loader: "babel",
-            query: {
-                presets: [
-                    libmod + "/babel-preset-react",
-                    libmod + "/babel-preset-es2015",
-                ],
-                plugins: [
-                    libmod + "/babel-plugin-transform-object-assign",
-                ],
-            },
-        }, {
-            test: /\.tsx?$/,
+            test: /\.tsx$/,
             exclude: /node_modules/,
             loader: "ts-loader"
         }, {
@@ -154,13 +141,13 @@ var compiler = webpack({
     }
 });
 
-function buildReactCore() {
+function buildToolkit() {
     webpack({
         context: libdir,
-        entry: libdir + "/react-toolkit.js",
+        entry: libdir + "/inferno-toolkit.js",
         output: {
             path: context + "/dist",
-            filename: "react-toolkit.min.js",
+            filename: "inferno-toolkit.min.js",
         },
         plugins: [
             new webpack.optimize.UglifyJsPlugin({
@@ -176,7 +163,7 @@ function buildReactCore() {
 }
 
 function watch() {
-    buildReactCore();
+    buildToolkit();
     compiler.watch({
         poll: true
     }, function(err, stats) {
@@ -187,7 +174,7 @@ function watch() {
 }
 
 function build() {
-    buildReactCore();
+    buildToolkit();
     compiler.run(function(err, stats) {
         console.log(stats.toString({
             colors: true
@@ -197,9 +184,9 @@ function build() {
 
 function help() {
     console.error("Usage:");
-    console.error("  react-beaker watch   <source dir>");
-    console.error("  react-beaker build   <source dir>");
-    console.error("  react-beaker publish <source dir>");
+    console.error("  inferno-beaker watch   <source dir>");
+    console.error("  inferno-beaker build   <source dir>");
+    console.error("  inferno-beaker publish <source dir>");
 }
 
 if (command === "watch") watch();

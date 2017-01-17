@@ -33,13 +33,13 @@ interface Props {
 }
 
 interface VNode {
-	children: InfernoChildren;
-	dom: Node | null;
-	events: Object | null;
-	flags: VNodeFlags;
+	children?: InfernoChildren;
+	dom?: Node | null;
+	events?: Object | null;
+	flags?: VNodeFlags;
 	key: Key;
 	props: Props | null;
-	ref: Ref;
+	ref?: Ref;
 	type: Type;
 	parentVNode?: VNode;
 }

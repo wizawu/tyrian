@@ -76,7 +76,6 @@ var compiler = webpack({
         "inferno-router": "InfernoRouter",
         "react": "React",
         "react-dom": "ReactDOM",
-        "react-router": "ReactRouter",
     },
     resolveLoader: {
         modulesDirectories: [libmod]

@@ -4,7 +4,7 @@ A handy devtool for [inferno](https://github.com/infernojs/inferno).
 
 * Built upon webpack
 * TypeScript (.tsx) only
-* Bundled `inferno`, `inferno-component`, `inferno-create-element`, `inferno-router`
+* Bundled `inferno`, `inferno-component`, `inferno-compat`
 * Import CSS/Less to TypeScript
 * Uglify outputs
 * Support source maps

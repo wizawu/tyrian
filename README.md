@@ -4,17 +4,15 @@ A handy devtool for [inferno](https://github.com/infernojs/inferno).
 
 * Built upon webpack
 * TypeScript (.tsx) only
-* Bundled `inferno`, `inferno-component`, `inferno-create-element` `inferno-router`
+* Bundled `inferno`, `inferno-component`, `inferno-create-element`, `inferno-router`
 * Import CSS/Less to TypeScript
-* Uglify
+* Uglify outputs
 * Support source maps
 
 ### Installation
 
-It is recommended to install `inferno-beaker` globally.
-
 ```
-npm install -g inferno-beaker
+npm i -g inferno-beaker
 ```
 
 ### Project Structure

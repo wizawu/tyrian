@@ -1,139 +1,41 @@
 # inferno-beaker ![build status](https://travis-ci.org/wizawu/inferno-beaker.svg)
 
-A devtool built on webpack for cutting down heavy dependencies/devDependencies of [React](https://facebook.github.io/react/) projects.
+A handy devtool for [inferno](https://github.com/infernojs/inferno).
 
-For example, in many cases, you may need a `package.json` like
-
-```javascript
-{
-    "scripts": {
-        "build": "...",
-        "start": "...",
-        "watch": "...",
-        "publish": "...",
-        ...
-    },
-    "dependencies": {
-        "react": "...",
-        "react-dom": "...",
-        "react-router": "...",
-        "redux": "...",
-        ...
-        "other-libs": "..."
-    },
-    "devDependencies": {
-        "webpack": "...",
-        "many-webpack-plugins": "...",
-        "babel": "...",
-        "many-babel-plugins": "...",
-        "uglifyjs": "...",
-        ...
-    }
-}
-```
-
-With `react-beaker`, you can simply write
-
-```javascript
-{
-    "dependencies": {
-        "other-libs": "..."
-    }
-}
-```
+* Built upon webpack
+* TypeScript (.tsx) only
+* Bundled `inferno`, `inferno-component`, `inferno-create-element` `inferno-router`
+* Import CSS/Less to TypeScript
+* Uglify
+* Support source maps
 
 ### Installation
 
-It is recommended to install `react-beaker` globally.
+It is recommended to install `inferno-beaker` globally.
 
-```shell
-npm install -g react-beaker
+```
+npm install -g inferno-beaker
 ```
 
-### Usage
+### Project Structure
 
-1. Project structure (or the frontend part) should be as follow.
-
-    ```shell
-    path/to/source
-    +-- html
-    +-- js
-    |   +-- entries
-    +-- package.json (optional)
-    ```
-
-2. Commands
-
-    ```shell
-    # If there is package.json in the source directory, you need to run `npm install` first
-
-    react-beaker watch path/to/source
-    react-beaker build path/to/source
-    react-beaker publish path/to/source
-    ```
-
-    For `watch` and `publish`, all source files with extensions `.js` or `.jsx` will be output with extension `.min.js` to `dist`.
-
-    ```shell
-    path/to/source
-    +-- js
-    |   +-- entries
-    |       +-- a.js
-    |       +-- b.jsx
-    +-- dist
-        +-- a.min.js
-        +-- b.min.js
-    ```
-
-    For `build`, the extension would be `.js`.
-
-    ```shell
-    path/to/source
-    +-- js
-    |   +-- entries
-    |       +-- a.js
-    |       +-- b.jsx
-    +-- dist
-        +-- a.js
-        +-- b.js
-    ```
-
-    Meanwhile, HTML source files will also be compiled to `dist`.
-
-    ```shell
-    path/to/source
-    +-- html
-    |   +-- app.html
-    +-- dist
-        +-- app.html
-    ```
-
-### Advanced
-
-#### React Stuff
-
-You will find `react-toolkit.min.js` in `dist`, which should be included in your HTML.
-
-```html
-<script src="./react-toolkit.min.js"></script>
+```
+path/to/source
++-- html
+|   +-- xxxx.html
++-- js
+|   +-- @types
+|   +-- entries
+|       +-- yyyy.tsx
++-- package.json (optional)
++-- dist (output)
+    +-- xxxx.html
+    +-- yyyy.min.js
 ```
 
-Then you are able to import the following React libraries without adding them to `package.json`.
+### Commands
 
-```javascript
-import React from "react";
-import ReactDOM from "react-dom";
-import Redux from "redux";
-import { IndexRoute, Route, Router } from "react-router";
 ```
-
-#### Source Map
-
-Source map is enabled when using `react-beaker watch`.
-
-#### CSS and Less
-
-```javascript
-import "../css/default.css";
-import "../css/theme.less";
+inferno-beaker watch path/to/source
+inferno-beaker build path/to/source
 ```

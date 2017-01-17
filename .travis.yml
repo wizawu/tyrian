@@ -7,4 +7,3 @@ before_script:
 script:
   - cd example && npm install && cd -
   - inferno-beaker build example
-  - inferno-beaker publish example

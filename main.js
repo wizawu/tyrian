@@ -11,7 +11,7 @@ var version = JSON.parse(fs.readFileSync(libdir + "/package.json")).version;
 console.log("Version: inferno-beaker " + version + "\n");
 
 // Validate arguments
-if (!command || !context || ["watch", "build", "publish"].indexOf(command) < 0) {
+if (!command || !context || ["watch", "build"].indexOf(command) < 0) {
     help();
     process.exit(1);
 }
@@ -51,14 +51,6 @@ switch (command) {
         };
         break;
     case "build":
-        options = {
-            "NODE_ENV": '"production"',
-            "filename": "[name].js",
-            "minimize": false,
-            "sourceMap": false,
-        };
-        break;
-    case "publish":
         options = {
             "NODE_ENV": '"production"',
             "filename": "[name].min.js",
@@ -113,7 +105,7 @@ var compiler = webpack({
             "module": "commonjs",
             "target": "es5",
             "typeRoots": [context + "/node_modules/@types", context + "/js/@types"],
-            "lib": ["dom", "es2015", "es2015.promise"]
+            "lib": ["dom", "es2015"],
         }
     },
     plugins: pages.map(function(filename) {
@@ -184,11 +176,9 @@ function build() {
 
 function help() {
     console.error("Usage:");
-    console.error("  inferno-beaker watch   <source dir>");
-    console.error("  inferno-beaker build   <source dir>");
-    console.error("  inferno-beaker publish <source dir>");
+    console.error("  inferno-beaker watch <source dir>");
+    console.error("  inferno-beaker build <source dir>");
 }
 
 if (command === "watch") watch();
 if (command === "build") build();
-if (command === "publish") build();

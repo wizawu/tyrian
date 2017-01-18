@@ -104,7 +104,11 @@ var compiler = webpack({
             "jsx": "react",
             "module": "commonjs",
             "target": "es5",
-            "typeRoots": [context + "/node_modules/@types", context + "/js/@types"],
+            "typeRoots": [
+                libdir + "/@types",
+                context + "/node_modules/@types",
+                context + "/js/@types",
+            ],
             "lib": ["dom", "es2015"],
         }
     },

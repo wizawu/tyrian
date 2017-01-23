@@ -1,2 +1,5 @@
 *.swp
-packages/
+FSharp.Core/
+MySql.Data/
+Newtonsoft.Json/
+Suave/

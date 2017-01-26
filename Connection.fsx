@@ -15,34 +15,42 @@ type ConnectionOptions = {
 }
 
 type IConnection =
-    abstract member One: string -> (string * string) list -> 'T option
-    abstract member List: string -> (string * string) list -> 'T list
+    abstract member Open: unit -> unit
+    abstract member Close: unit -> unit
+    abstract member One: string * (string * string) list -> 'a option
+    abstract member List: string * (string * string) list -> 'a list
 
-let MySQLConnection(options: ConnectionOptions) = { new IConnection with
+type MySQLConnection(options: ConnectionOptions) =
     let connection = new MySqlConnection(sprintf
         "server=%s;user=%s;database=%s;port=%s;password=%s"
         options.server options.user options.database options.port options.password
     )
 
-    member this.One<'T> sql parameters =
-        let command = new MySqlCommand(sql, connection)
-        parameters |> List.map (fun (k, v) -> command.Parameters.AddWithValue(k, v)) |> ignore
-        let reader = command.ExecuteReader()
-        if reader.Read() then
-            let result = Some(Result.ReadAsObject<'T>(reader))
-            reader.Close()
-            result
-        else
-            reader.Close()
-            None
+    interface IConnection with
+        member x.Open() =
+            connection.Open()
 
-    member this.List<'T> sql parameters =
-        let command = new MySqlCommand(sql, connection)
-        parameters |> List.map (fun (k, v) -> command.Parameters.AddWithValue(k, v)) |> ignore
-        let reader = command.ExecuteReader()
-        Seq.toList(seq {
-            while reader.Read() do
-                yield Result.ReadAsObject<'T>(reader)
-            reader.Close()
-        })
-}
+        member x.Close() =
+            connection.Close()
+
+        member x.One<'a>(sql, parameters) =
+            let command = new MySqlCommand(sql, connection)
+            parameters |> List.map (fun (k, v) -> command.Parameters.AddWithValue(k, v)) |> ignore
+            let reader = command.ExecuteReader()
+            if reader.Read() then
+                let result = Some(Result.ReadAsObject<'a>(reader))
+                reader.Close()
+                result
+            else
+                reader.Close()
+                None
+
+        member x.List<'a>(sql, parameters) =
+            let command = new MySqlCommand(sql, connection)
+            parameters |> List.map (fun (k, v) -> command.Parameters.AddWithValue(k, v)) |> ignore
+            let reader = command.ExecuteReader()
+            Seq.toList(seq {
+                while reader.Read() do
+                    yield Result.ReadAsObject<'a>(reader)
+                reader.Close()
+            })

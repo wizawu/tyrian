@@ -1,12 +1,6 @@
-#r "Newtonsoft.Json/lib/net40/Newtonsoft.Json.dll"
 #load "Connection.fsx"
 
-open Newtonsoft.Json.Linq
 open Orsql.Connection
-
-let json = JObject()
-json.Add("name", JValue("wizawu"))
-System.Console.WriteLine(json.ToString())
 
 let options = {
     server = "localhost";
@@ -16,11 +10,15 @@ let options = {
     password = "root";
 }
 
-let conn = new MySQLConnection(options)
-
-type Name = {
+type User = {
     firstname: string
     lastname: string
+    age: int
 }
 
-conn.One<Name>()
+let conn = MySQLConnection(options) :> IConnection
+conn.Open()
+
+match conn.One<User>("select * from user where firstname=@firstname", [("@firstname", "Jenny")]) with
+| Some user -> System.Console.WriteLine user.age
+| None -> printfn "none"

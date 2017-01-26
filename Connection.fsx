@@ -1,17 +1,18 @@
 module Orsql.Connection
 
 #r "MySql.Data/lib/net40/MySql.Data.dll"
+
 #load "Result.fsx"
 
 open MySql.Data.MySqlClient
 open Orsql.Result
 
 type ConnectionOptions = {
-    server: string
-    user: string
-    database: string
-    port: string
-    password: string
+    Server: string
+    User: string
+    Database: string
+    Port: string
+    Password: string
 }
 
 type IConnection =
@@ -19,12 +20,18 @@ type IConnection =
     abstract member Close: unit -> unit
     abstract member One: string * (string * string) list -> 'a option
     abstract member List: string * (string * string) list -> 'a list
+    abstract member Execute: string * (string * string) list -> unit
 
 type MySQLConnection(options: ConnectionOptions) =
     let connection = new MySqlConnection(sprintf
         "server=%s;user=%s;database=%s;port=%s;password=%s"
-        options.server options.user options.database options.port options.password
+        options.Server options.User options.Database options.Port options.Password
     )
+
+    let prepareReader(sql, parameters): MySqlDataReader =
+        let command = new MySqlCommand(sql, connection)
+        parameters |> List.map (fun (k, v) -> command.Parameters.AddWithValue(k, v)) |> ignore
+        command.ExecuteReader()
 
     interface IConnection with
         member x.Open() =
@@ -34,9 +41,7 @@ type MySQLConnection(options: ConnectionOptions) =
             connection.Close()
 
         member x.One<'a>(sql, parameters) =
-            let command = new MySqlCommand(sql, connection)
-            parameters |> List.map (fun (k, v) -> command.Parameters.AddWithValue(k, v)) |> ignore
-            let reader = command.ExecuteReader()
+            let reader = prepareReader(sql, parameters)
             if reader.Read() then
                 let result = Some(Result.ReadAsObject<'a>(reader))
                 reader.Close()
@@ -46,11 +51,13 @@ type MySQLConnection(options: ConnectionOptions) =
                 None
 
         member x.List<'a>(sql, parameters) =
-            let command = new MySqlCommand(sql, connection)
-            parameters |> List.map (fun (k, v) -> command.Parameters.AddWithValue(k, v)) |> ignore
-            let reader = command.ExecuteReader()
+            let reader = prepareReader(sql, parameters)
             Seq.toList(seq {
                 while reader.Read() do
                     yield Result.ReadAsObject<'a>(reader)
                 reader.Close()
             })
+
+        member x.Execute(sql, parameters) =
+            let reader = prepareReader(sql, parameters)
+            reader.Close()

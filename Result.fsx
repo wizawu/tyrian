@@ -8,8 +8,8 @@ open Newtonsoft.Json
 open Newtonsoft.Json.Linq
 open MySql.Data.MySqlClient
 
-let ReadAsObject<'T> (reader: MySqlDataReader) : 'T =
+let ReadAsObject<'a> (reader: MySqlDataReader) : 'a =
     let json = new JObject()
     for i = 0 to reader.FieldCount - 1 do
         json.Add(reader.GetName(i), JValue(reader.GetValue(i)))
-    JsonConvert.DeserializeObject<'T>(json.ToString())
+    JsonConvert.DeserializeObject<'a>(json.ToString())

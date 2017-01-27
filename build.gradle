@@ -15,7 +15,7 @@ sourceSets {
   test.kotlin.srcDirs += "src/test"
 }
 
-mainClassName = "MainKt"
+defaultTasks "test"
 
 repositories {
   mavenCentral()

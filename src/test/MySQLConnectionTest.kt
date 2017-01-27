@@ -1,3 +1,5 @@
+package orsql.test
+
 import org.junit.After
 import org.junit.Assert.assertEquals
 import org.junit.Before

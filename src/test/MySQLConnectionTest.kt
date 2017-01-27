@@ -16,8 +16,29 @@ class MySQLConnectionTest {
 
     @Before
     fun connect() {
-        val options = ConnectOptions("localhost", 3306, "test", "root", "root")
+        val options = ConnectOptions("localhost", 3306, "test", "root", "wizawu3306")
         connection = MySQLConnection(options)
+    }
+
+    @Test
+    fun ensureTable() {
+        connection!!.ensureTable("user")
+    }
+
+    @Test
+    fun ensureColumn() {
+        connection!!.ensureColumn("user", "firstname", "VARCHAR(64)")
+        connection!!.ensureColumn("user", "lastname", "VARCHAR(64)")
+    }
+
+    @Test
+    fun ensureIndex() {
+        connection!!.ensureIndex("user", arrayOf("firstname", "lastname"))
+    }
+
+    @Test
+    fun ensureUniqueIndex() {
+        connection!!.ensureUniqueIndex("user", arrayOf("id"))
     }
 
     @Test

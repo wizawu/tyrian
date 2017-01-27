@@ -14,6 +14,10 @@ data class ConnectOptions(
 )
 
 private interface IConnection {
+    fun ensureTable(tableName: String)
+    fun ensureColumn(tableName: String, columnName: String, columnType: String)
+    fun ensureIndex(tableName: String, columnNames: Array<String>)
+    fun ensureUniqueIndex(tableName: String, columnNames: Array<String>)
     fun <T> one(type: Class<T>, sql: String, parameters: Array<Any>): T?
     fun <T> list(type: Class<T>, sql: String, parameters: Array<Any>): ArrayList<T>
     fun execute(sql: String, parameters: Array<Any>)
@@ -22,6 +26,8 @@ private interface IConnection {
 
 class MySQLConnection(options: ConnectOptions) : IConnection {
     var connection: Connection? = null
+
+    private data class Column(val COLUMN_NAME: String)
 
     init {
         val url = String.format(
@@ -37,8 +43,38 @@ class MySQLConnection(options: ConnectOptions) : IConnection {
         return statement
     }
 
-    override fun close() {
-        connection ?: connection!!.close()
+    private fun indexName(columnNames: Array<String>, unique: Boolean): String {
+        var indexName = if (unique) "uidx" else "idx"
+        columnNames.forEach { name -> indexName += "_" + name.toLowerCase() }
+        return indexName
+    }
+
+    override fun ensureTable(tableName: String) {
+        execute(String.format("CREATE TABLE IF NOT EXISTS %s (id VARCHAR(64))", tableName), emptyArray())
+    }
+
+    override fun ensureColumn(tableName: String, columnName: String, columnType: String) {
+        val columns = list(Column::class.java, "desc " + tableName, emptyArray())
+        var exists = false
+        columns.forEach { col -> exists = exists || col.COLUMN_NAME == columnName }
+        if (exists) return
+        execute(String.format("ALTER TABLE %s ADD COLUMN %s %s", tableName, columnName, columnType), emptyArray())
+    }
+
+    override fun ensureIndex(tableName: String, columnNames: Array<String>) {
+        val indexName = indexName(columnNames, false)
+        var indexColumns = ""
+        columnNames.forEach { name -> indexColumns += "," + name }
+        val sql = "CREATE INDEX IF NOT EXISTS %s ON %s (%s)"
+        execute(String.format(sql, indexName, tableName, indexColumns.substring(1)), emptyArray())
+    }
+
+    override fun ensureUniqueIndex(tableName: String, columnNames: Array<String>) {
+        val indexName = indexName(columnNames, true)
+        var indexColumns = ""
+        columnNames.forEach { name -> indexColumns += "," + name }
+        val sql = "CREATE UNIQUE INDEX IF NOT EXISTS %s ON %s (%s)"
+        execute(String.format(sql, indexName, tableName, indexColumns.substring(1)), emptyArray())
     }
 
     override fun <T> one(type: Class<T>, sql: String, parameters: Array<Any>): T? {
@@ -69,5 +105,9 @@ class MySQLConnection(options: ConnectOptions) : IConnection {
         val statement = prepareStatement(sql, parameters)
         statement.executeUpdate()
         statement.close()
+    }
+
+    override fun close() {
+        connection ?: connection!!.close()
     }
 }

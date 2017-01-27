@@ -13,7 +13,7 @@ data class ConnectOptions(
         val password: String
 )
 
-interface IConnection {
+private interface IConnection {
     fun <T> one(type: Class<T>, sql: String, parameters: Array<Any>): T?
     fun <T> list(type: Class<T>, sql: String, parameters: Array<Any>): ArrayList<T>
     fun execute(sql: String, parameters: Array<Any>)

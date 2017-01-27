@@ -1,0 +1,30 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.6"
+  }
+}
+
+apply plugin: "application"
+apply plugin: "kotlin"
+
+sourceSets {
+  main.kotlin.srcDirs += "src/main"
+  test.kotlin.srcDirs += "src/test"
+}
+
+mainClassName = "main.MainKt"
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile "com.google.code.gson:gson:2.8.0"
+  compile "mysql:mysql-connector-java:6.0.5"
+  compile "org.jetbrains.kotlin:kotlin-stdlib:1.0.6"
+  compile "org.json:json:20160810"
+  testCompile "junit:junit:4.12"
+}

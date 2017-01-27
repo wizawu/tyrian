@@ -14,9 +14,9 @@ data class ConnectOptions(
 )
 
 interface IConnection {
-    fun <T> one(type: Class<T>, sql: String, parameters: Array<Object>): T?
-    fun <T> list(type: Class<T>, sql: String, parameters: Array<Object>): ArrayList<T>
-    fun execute(sql: String, parameters: Array<Object>)
+    fun <T> one(type: Class<T>, sql: String, parameters: Array<Any>): T?
+    fun <T> list(type: Class<T>, sql: String, parameters: Array<Any>): ArrayList<T>
+    fun execute(sql: String, parameters: Array<Any>)
     fun close()
 }
 
@@ -31,7 +31,7 @@ class MySQLConnection(options: ConnectOptions) : IConnection {
         connection = DriverManager.getConnection(url)
     }
 
-    private fun prepareStatement(sql: String, parameters: Array<Object>): PreparedStatement {
+    private fun prepareStatement(sql: String, parameters: Array<Any>): PreparedStatement {
         val statement = connection!!.prepareStatement(sql)
         parameters.forEachIndexed { i, parameter -> statement.setObject(i + 1, parameter) }
         return statement
@@ -41,7 +41,7 @@ class MySQLConnection(options: ConnectOptions) : IConnection {
         connection ?: connection!!.close()
     }
 
-    override fun <T> one(type: Class<T>, sql: String, parameters: Array<Object>): T? {
+    override fun <T> one(type: Class<T>, sql: String, parameters: Array<Any>): T? {
         var result: T? = null
         val statement = prepareStatement(sql, parameters)
         val resultSet = statement.executeQuery()
@@ -53,7 +53,7 @@ class MySQLConnection(options: ConnectOptions) : IConnection {
         return result
     }
 
-    override fun <T> list(type: Class<T>, sql: String, parameters: Array<Object>): ArrayList<T> {
+    override fun <T> list(type: Class<T>, sql: String, parameters: Array<Any>): ArrayList<T> {
         val result = ArrayList<T>()
         val statement = prepareStatement(sql, parameters)
         val resultSet = statement.executeQuery()
@@ -65,7 +65,7 @@ class MySQLConnection(options: ConnectOptions) : IConnection {
         return result
     }
 
-    override fun execute(sql: String, parameters: Array<Object>) {
+    override fun execute(sql: String, parameters: Array<Any>) {
         val statement = prepareStatement(sql, parameters)
         statement.executeUpdate()
         statement.close()

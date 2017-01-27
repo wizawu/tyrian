@@ -1,8 +1,8 @@
 package orsql
 
-import java.sql.ResultSet
-import org.json.JSONObject
 import com.google.gson.Gson
+import org.json.JSONObject
+import java.sql.ResultSet
 
 fun <T> readAs(type: Class<T>, resultSet: ResultSet): T {
     val json = JSONObject()

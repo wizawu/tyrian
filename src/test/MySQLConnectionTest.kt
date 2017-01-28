@@ -2,6 +2,7 @@ package orsql.test
 
 import org.junit.After
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertNotNull
 import org.junit.Before
 import org.junit.Test
 import orsql.ConnectOptions
@@ -63,6 +64,17 @@ class MySQLConnectionTest {
         )
         assertEquals(users.size, 2)
         assertEquals(users[0].lastname.toLowerCase(), "wu")
+    }
+
+    @Test
+    fun save() {
+        val user = User("Harold", "Finch", 20)
+        connection!!.save("user", user)
+        assertNotNull(connection!!.one<User>(
+                User::class.java,
+                "SELECT * FROM user WHERE lastname = ?",
+                arrayOf("Finch")
+        ))
     }
 
     @After

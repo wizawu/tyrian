@@ -1,5 +1,7 @@
 package orsql
 
+import com.google.gson.Gson
+import org.json.JSONObject
 import java.sql.Connection
 import java.sql.DriverManager
 import java.sql.PreparedStatement
@@ -20,6 +22,7 @@ private interface IConnection {
     fun ensureUniqueIndex(tableName: String, columnNames: Array<String>)
     fun <T> one(type: Class<T>, sql: String, parameters: Array<Any>): T?
     fun <T> list(type: Class<T>, sql: String, parameters: Array<Any>): ArrayList<T>
+    fun save(tableName: String, obj: Any)
     fun execute(sql: String, parameters: Array<Any>)
     fun close()
 }
@@ -99,6 +102,20 @@ class MySQLConnection(options: ConnectOptions) : IConnection {
         }
         statement.close()
         return result
+    }
+
+    override fun save(tableName: String, obj: Any) {
+        val json = JSONObject(Gson().toJson(obj))
+        var keys = ""
+        var values = ""
+        val parameters = ArrayList<Any>()
+        json.keys().forEach { key ->
+            keys += ",$key"
+            values += ",?"
+            parameters.add(json[key])
+        }
+        val sql = "INSERT INTO $tableName(${keys.substring(1)}) VALUES(${values.substring(1)})"
+        execute(sql, parameters.toTypedArray())
     }
 
     override fun execute(sql: String, parameters: Array<Any>) {

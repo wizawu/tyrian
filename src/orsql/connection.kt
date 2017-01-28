@@ -22,7 +22,7 @@ private interface IConnection {
     fun ensureUniqueIndex(tableName: String, columnNames: Array<String>)
     fun <T> one(type: Class<T>, sql: String, parameters: Array<Any>): T?
     fun <T> list(type: Class<T>, sql: String, parameters: Array<Any>): ArrayList<T>
-    fun save(tableName: String, obj: Any)
+    fun save(tableName: String, obj: Any, primary: String)
     fun execute(sql: String, parameters: Array<Any>)
     fun close()
 }
@@ -102,7 +102,7 @@ class MySQLConnection(options: ConnectOptions) : IConnection {
         return result
     }
 
-    override fun save(tableName: String, obj: Any) {
+    override fun save(tableName: String, obj: Any, primary: String) {
         val json = JSONObject(Gson().toJson(obj))
         var keys = ""
         var values = ""
@@ -112,7 +112,9 @@ class MySQLConnection(options: ConnectOptions) : IConnection {
             values += ",?"
             parameters.add(json[key])
         }
-        val sql = "INSERT INTO $tableName(${keys.substring(1)}) VALUES(${values.substring(1)})"
+        var sql = "DELETE FROM $tableName WHERE $primary = ?"
+        execute(sql, arrayOf(json[primary]))
+        sql = "INSERT INTO $tableName(${keys.substring(1)}) VALUES(${values.substring(1)})"
         execute(sql, parameters.toTypedArray())
     }
 

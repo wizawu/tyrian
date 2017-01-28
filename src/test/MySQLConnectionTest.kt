@@ -69,12 +69,17 @@ class MySQLConnectionTest {
     @Test
     fun save() {
         val user = User("Harold", "Finch", 20)
-        connection!!.save("user", user)
+        connection!!.save("user", user, "firstname")
         assertNotNull(connection!!.one<User>(
                 User::class.java,
                 "SELECT * FROM user WHERE lastname = ?",
                 arrayOf("Finch")
         ))
+        assertEquals(connection!!.list<User>(
+                User::class.java,
+                "SELECT * FROM user WHERE lastname = ?",
+                arrayOf("Finch")
+        ).size, 1)
     }
 
     @After

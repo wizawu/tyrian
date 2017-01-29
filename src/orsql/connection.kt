@@ -125,6 +125,6 @@ class MySQLConnection(options: ConnectOptions) : IConnection {
     }
 
     override fun close() {
-        connection ?: connection!!.close()
+        connection?.close()
     }
 }

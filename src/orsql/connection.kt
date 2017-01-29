@@ -33,11 +33,13 @@ open class MySQLConnection(options: ConnectOptions) : IConnection {
     var connection: Connection? = null
 
     init {
-        val url = String.format(
-                "jdbc:mysql://%s:%d/%s?user=%s&password=%s",
-                options.server, options.port, options.database, options.user, options.password
-        )
-        connection = DriverManager.getConnection(url)
+        if (this.javaClass.name == "orsql.MySQLConnection") {
+            val url = String.format(
+                    "jdbc:mysql://%s:%d/%s?user=%s&password=%s",
+                    options.server, options.port, options.database, options.user, options.password
+            )
+            connection = DriverManager.getConnection(url)
+        }
     }
 
     private fun prepareStatement(sql: String, parameters: Array<Any>): PreparedStatement {

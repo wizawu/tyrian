@@ -6,15 +6,15 @@ import org.junit.Assert.assertNotNull
 import org.junit.Before
 import org.junit.Test
 import orsql.ConnectOptions
-import orsql.MySQLConnection
+import orsql.MariaDBConnection
 
-class MySQLConnectionTest {
-    var connection: MySQLConnection? = null
+class MariaDBConnectionTest {
+    var connection: MariaDBConnection? = null
 
     @Before
     fun connect() {
         val options = ConnectOptions("localhost", 3306, "test", "root", "wizawu3306")
-        connection = MySQLConnection(options)
+        connection = MariaDBConnection(options)
     }
 
     @Test

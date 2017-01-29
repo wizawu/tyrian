@@ -27,10 +27,10 @@ private interface IConnection {
     fun close()
 }
 
-class MySQLConnection(options: ConnectOptions) : IConnection {
-    var connection: Connection? = null
-
+open class MySQLConnection(options: ConnectOptions) : IConnection {
     private data class Column(val COLUMN_NAME: String)
+
+    var connection: Connection? = null
 
     init {
         val url = String.format(
@@ -126,5 +126,15 @@ class MySQLConnection(options: ConnectOptions) : IConnection {
 
     override fun close() {
         connection?.close()
+    }
+}
+
+class MariaDBConnection(options: ConnectOptions) : MySQLConnection(options) {
+    init {
+        val url = String.format(
+                "jdbc:mariadb://%s:%d/%s?user=%s&password=%s",
+                options.server, options.port, options.database, options.user, options.password
+        )
+        connection = DriverManager.getConnection(url)
     }
 }

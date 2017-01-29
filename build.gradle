@@ -26,5 +26,6 @@ dependencies {
   compile "mysql:mysql-connector-java:6.0.5"
   compile "org.jetbrains.kotlin:kotlin-stdlib:1.0.6"
   compile "org.json:json:20160810"
+  compile "org.mariadb.jdbc:mariadb-java-client:1.5.7"
   testCompile "junit:junit:4.12"
 }

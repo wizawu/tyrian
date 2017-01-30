@@ -31,11 +31,12 @@ open class MySQLConnection(options: ConnectOptions) : IConnection {
     private data class Column(val COLUMN_NAME: String)
 
     var connection: Connection? = null
+    var url: String = ""
 
     init {
         if (this.javaClass.name == "orsql.MySQLConnection") {
-            val url = String.format(
-                    "jdbc:mysql://%s:%d/%s?user=%s&password=%s&autoReconnect=true",
+            url = String.format(
+                    "jdbc:mysql://%s:%d/%s?user=%s&password=%s",
                     options.server, options.port, options.database, options.user, options.password
             )
             connection = DriverManager.getConnection(url)
@@ -43,6 +44,7 @@ open class MySQLConnection(options: ConnectOptions) : IConnection {
     }
 
     private fun prepareStatement(sql: String, parameters: Array<Any>): PreparedStatement {
+        if (connection!!.isClosed) connection = DriverManager.getConnection(url)
         val statement = connection!!.prepareStatement(sql)
         parameters.forEachIndexed { i, parameter -> statement.setObject(i + 1, parameter) }
         return statement
@@ -133,8 +135,8 @@ open class MySQLConnection(options: ConnectOptions) : IConnection {
 
 class MariaDBConnection(options: ConnectOptions) : MySQLConnection(options) {
     init {
-        val url = String.format(
-                "jdbc:mariadb://%s:%d/%s?user=%s&password=%s&autoReconnect=true",
+        url = String.format(
+                "jdbc:mariadb://%s:%d/%s?user=%s&password=%s",
                 options.server, options.port, options.database, options.user, options.password
         )
         connection = DriverManager.getConnection(url)

@@ -35,7 +35,7 @@ open class MySQLConnection(options: ConnectOptions) : IConnection {
     init {
         if (this.javaClass.name == "orsql.MySQLConnection") {
             val url = String.format(
-                    "jdbc:mysql://%s:%d/%s?user=%s&password=%s",
+                    "jdbc:mysql://%s:%d/%s?user=%s&password=%s&tcpKeepAlive=true",
                     options.server, options.port, options.database, options.user, options.password
             )
             connection = DriverManager.getConnection(url)
@@ -134,7 +134,7 @@ open class MySQLConnection(options: ConnectOptions) : IConnection {
 class MariaDBConnection(options: ConnectOptions) : MySQLConnection(options) {
     init {
         val url = String.format(
-                "jdbc:mariadb://%s:%d/%s?user=%s&password=%s",
+                "jdbc:mariadb://%s:%d/%s?user=%s&password=%s&tcpKeepAlive=true",
                 options.server, options.port, options.database, options.user, options.password
         )
         connection = DriverManager.getConnection(url)

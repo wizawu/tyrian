@@ -73,6 +73,7 @@ var compiler = webpack({
     externals: {
         "inferno": "Inferno",
         "inferno-component": "InfernoComponent",
+        "inferno-create-class": "InfernoCreateClass",
         "inferno-create-element": "InfernoCreateElement",
         "react": "React",
         "react-dom": "ReactDOM",

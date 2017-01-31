@@ -7,26 +7,6 @@ import java.sql.DriverManager
 import java.sql.PreparedStatement
 import java.util.*
 
-data class ConnectOptions(
-        val server: String,
-        val port: Int,
-        val database: String,
-        val user: String,
-        val password: String
-)
-
-private interface IConnection {
-    fun ensureTable(tableName: String)
-    fun ensureColumn(tableName: String, columnName: String, columnType: String)
-    fun ensureIndex(tableName: String, columnNames: Array<String>)
-    fun ensureUniqueIndex(tableName: String, columnNames: Array<String>)
-    fun <T> one(type: Class<T>, sql: String, parameters: Array<Any>): T?
-    fun <T> list(type: Class<T>, sql: String, parameters: Array<Any>): ArrayList<T>
-    fun save(tableName: String, obj: Any, primary: String)
-    fun execute(sql: String, parameters: Array<Any>)
-    fun close()
-}
-
 open class MySQLConnection(options: ConnectOptions) : IConnection {
     private data class Column(val COLUMN_NAME: String)
 
@@ -36,7 +16,7 @@ open class MySQLConnection(options: ConnectOptions) : IConnection {
     init {
         if (this.javaClass.name == "orsql.MySQLConnection") {
             url = String.format(
-                    "jdbc:mysql://%s:%d/%s?user=%s&password=%s",
+                    "jdbc:mysql://%s:%d/%s?user=%s&password=%s&testOnBorrow=true",
                     options.server, options.port, options.database, options.user, options.password
             )
             connection = DriverManager.getConnection(url)
@@ -130,15 +110,5 @@ open class MySQLConnection(options: ConnectOptions) : IConnection {
 
     override fun close() {
         connection?.close()
-    }
-}
-
-class MariaDBConnection(options: ConnectOptions) : MySQLConnection(options) {
-    init {
-        url = String.format(
-                "jdbc:mariadb://%s:%d/%s?user=%s&password=%s",
-                options.server, options.port, options.database, options.user, options.password
-        )
-        connection = DriverManager.getConnection(url)
     }
 }

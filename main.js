@@ -68,11 +68,12 @@ var compiler = webpack({
     devtool: options.sourceMap && "inline-source-map",
     context: context,
     resolve: {
-        extensions: ["", ".js", ".tsx"],
+        extensions: ["", ".js", ".ls"],
     },
     externals: {
         "inferno": "Inferno",
         "inferno-component": "InfernoComponent",
+        "inferno-create-element": "InfernoCreateElement",
         "react": "React",
         "react-dom": "ReactDOM",
     },
@@ -86,9 +87,9 @@ var compiler = webpack({
     },
     module: {
         loaders: [{
-            test: /\.tsx$/,
+            test: /\.ls$/,
             exclude: /node_modules/,
-            loader: "ts-loader"
+            loader: "livescript-loader"
         }, {
             test: /^[^!]+.css$/,
             loader: "style!css?-minimize!postcss",
@@ -96,19 +97,6 @@ var compiler = webpack({
             test: /^[^!]+.less$/,
             loader: "style!css?-minimize!postcss!less",
         }]
-    },
-    ts: {
-        compilerOptions: {
-            "jsx": "react",
-            "module": "commonjs",
-            "target": "es5",
-            "typeRoots": [
-                libdir + "/@types",
-                context + "/node_modules/@types",
-                context + "/js/@types",
-            ],
-            "lib": ["dom", "es2015"],
-        }
     },
     plugins: pages.map(function(filename) {
         return new HtmlWebpackPlugin({

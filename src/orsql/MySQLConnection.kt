@@ -63,26 +63,34 @@ open class MySQLConnection(options: ConnectOptions) : IConnection {
     }
 
     override fun <T> one(type: Class<T>, sql: String, parameters: Array<Any>): T? {
+        var statement = prepareStatement("SELECT 0", emptyArray())
+        try { statement.execute() } finally { statement.close() }
+
         var result: T? = null
-        val statement = prepareStatement(sql, parameters)
-        val resultSet = statement.executeQuery()
-        if (resultSet != null) {
+        statement = prepareStatement(sql, parameters)
+        try {
+            val resultSet = statement.executeQuery()
             if (resultSet.next()) result = readAs(type, resultSet)
             resultSet.close()
+        } finally {
+            statement.close()
         }
-        statement.close()
         return result
     }
 
     override fun <T> list(type: Class<T>, sql: String, parameters: Array<Any>): ArrayList<T> {
+        var statement = prepareStatement("SELECT 0", emptyArray())
+        try { statement.execute() } finally { statement.close() }
+
         val result = ArrayList<T>()
-        val statement = prepareStatement(sql, parameters)
-        val resultSet = statement.executeQuery()
-        if (resultSet != null) {
+        statement = prepareStatement(sql, parameters)
+        try {
+            val resultSet = statement.executeQuery()
             while (resultSet.next()) result.add(readAs(type, resultSet))
             resultSet.close()
+        } finally {
+            statement.close()
         }
-        statement.close()
         return result
     }
 

@@ -5,6 +5,7 @@ import org.json.JSONObject
 import java.sql.Connection
 import java.sql.DriverManager
 import java.sql.PreparedStatement
+import java.sql.SQLNonTransientConnectionException
 import java.util.*
 
 open class MySQLConnection(options: ConnectOptions) : IConnection {
@@ -64,7 +65,12 @@ open class MySQLConnection(options: ConnectOptions) : IConnection {
 
     override fun <T> one(type: Class<T>, sql: String, parameters: Array<Any>): T? {
         var statement = prepareStatement("SELECT 0", emptyArray())
-        try { statement.execute() } finally { statement.close() }
+        try {
+            statement.execute()
+        } catch(_: SQLNonTransientConnectionException) {
+        } finally {
+            statement.close()
+        }
 
         var result: T? = null
         statement = prepareStatement(sql, parameters)
@@ -80,7 +86,12 @@ open class MySQLConnection(options: ConnectOptions) : IConnection {
 
     override fun <T> list(type: Class<T>, sql: String, parameters: Array<Any>): ArrayList<T> {
         var statement = prepareStatement("SELECT 0", emptyArray())
-        try { statement.execute() } finally { statement.close() }
+        try {
+            statement.execute()
+        } catch(_: SQLNonTransientConnectionException) {
+        } finally {
+            statement.close()
+        }
 
         val result = ArrayList<T>()
         statement = prepareStatement(sql, parameters)

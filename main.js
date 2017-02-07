@@ -162,7 +162,7 @@ function build() {
         console.log(stats.toString({
             colors: true
         }));
-        process.exit(2);
+        if (stats.hasErrors()) process.exit(2);
     });
 }
 

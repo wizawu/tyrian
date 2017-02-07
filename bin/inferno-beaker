@@ -13,4 +13,7 @@ fs.realpath(process.argv[1], function(_, arg) {
     child.stderr.on("data", function(data) {
         console.error(data.toString());
     });
+    child.on("exit", function(code) {
+        process.exit(code);
+    });
 });

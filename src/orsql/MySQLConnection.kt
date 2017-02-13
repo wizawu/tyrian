@@ -2,10 +2,7 @@ package orsql
 
 import com.google.gson.Gson
 import org.json.JSONObject
-import java.sql.Connection
-import java.sql.DriverManager
-import java.sql.PreparedStatement
-import java.sql.SQLNonTransientConnectionException
+import java.sql.*
 import java.util.*
 
 open class MySQLConnection(options: ConnectOptions) : IConnection {
@@ -115,10 +112,18 @@ open class MySQLConnection(options: ConnectOptions) : IConnection {
             values += ",?"
             parameters.add(json[key])
         }
-        var sql = "DELETE FROM $tableName WHERE $primary = ?"
-        execute(sql, arrayOf(json[primary]))
-        sql = "INSERT INTO $tableName(${keys.substring(1)}) VALUES(${values.substring(1)})"
-        execute(sql, parameters.toTypedArray())
+        connection?.autoCommit = false
+        try {
+            var sql = "DELETE FROM $tableName WHERE $primary = ?"
+            execute(sql, arrayOf(json[primary]))
+            sql = "INSERT INTO $tableName(${keys.substring(1)}) VALUES(${values.substring(1)})"
+            execute(sql, parameters.toTypedArray())
+            connection?.commit()
+        } catch (ex: SQLException) {
+            connection?.rollback()
+        } finally {
+            connection?.autoCommit = true
+        }
     }
 
     override fun execute(sql: String, parameters: Array<Any>) {

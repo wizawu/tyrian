@@ -60,6 +60,22 @@ switch (command) {
         break;
 }
 
+// Generate tsconfig.json
+var tsconfig = {
+    compilerOptions: {
+        "jsx": "react",
+        "module": "commonjs",
+        "target": "es5",
+        "typeRoots": [
+            libdir + "/@types",
+            context + "/node_modules/@types",
+            context + "/js/@types",
+        ],
+        "lib": ["dom", "es2015"],
+    }
+}
+fs.writeFileSync(context + "/tsconfig.json", JSON.stringify(tsconfig, null, 2))
+
 var webpack = require(libmod + "/webpack");
 var HtmlWebpackPlugin = require(libmod + "/html-webpack-plugin");
 var autoprefixer = require(libmod + "/autoprefixer");
@@ -102,19 +118,6 @@ var compiler = webpack({
             test: /^[^!]+.less$/,
             loader: "style!css?-minimize!postcss!less",
         }]
-    },
-    ts: {
-        compilerOptions: {
-            "jsx": "react",
-            "module": "commonjs",
-            "target": "es5",
-            "typeRoots": [
-                libdir + "/@types",
-                context + "/node_modules/@types",
-                context + "/js/@types",
-            ],
-            "lib": ["dom", "es2015"],
-        }
     },
     plugins: pages.map(function(filename) {
         return new HtmlWebpackPlugin({

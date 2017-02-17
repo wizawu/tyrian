@@ -8,7 +8,7 @@ var context = process.argv[3] && path.resolve(process.argv[3]);
 
 // Print version
 var version = JSON.parse(fs.readFileSync(libdir + "/package.json")).version;
-console.log("Version: inferno-beaker " + version + "\n");
+console.log("Version: reactc " + version + "\n");
 
 // Validate arguments
 if (!command || !context || ["watch", "build"].indexOf(command) < 0) {
@@ -67,9 +67,10 @@ var tsconfig = {
         "module": "commonjs",
         "target": "es5",
         "typeRoots": [
-            libdir + "/@types",
+            libmod + "/@types",
             context + "/node_modules/@types",
             context + "/js/@types",
+            context + "/dist/@types",
         ],
         "lib": ["dom", "es2015"],
     }
@@ -87,12 +88,9 @@ var compiler = webpack({
         extensions: ["", ".js", ".ls", ".ts", ".tsx"],
     },
     externals: {
-        "inferno": "Inferno",
-        "inferno-component": "InfernoComponent",
-        "inferno-create-class": "InfernoCreateClass",
-        "inferno-create-element": "InfernoCreateElement",
         "react": "React",
         "react-dom": "ReactDOM",
+        "react-router": "ReactRouter",
     },
     resolveLoader: {
         modulesDirectories: [libmod]
@@ -147,10 +145,10 @@ var compiler = webpack({
 function buildToolkit() {
     webpack({
         context: libdir,
-        entry: libdir + "/inferno-toolkit.js",
+        entry: libdir + "/react-toolkit.js",
         output: {
             path: context + "/dist",
-            filename: "inferno-toolkit.min.js",
+            filename: "react-toolkit.min.js",
         },
         plugins: [
             new webpack.optimize.UglifyJsPlugin({
@@ -158,7 +156,7 @@ function buildToolkit() {
             }),
             new webpack.DefinePlugin({
                 "process.env": {
-                    NODE_ENV: '"production"'
+                    NODE_ENV: options.NODE_ENV
                 }
             })
         ]
@@ -188,8 +186,8 @@ function build() {
 
 function help() {
     console.error("Usage:");
-    console.error("  inferno-beaker watch <source dir>");
-    console.error("  inferno-beaker build <source dir>");
+    console.error("  reactc watch <source dir>");
+    console.error("  reactc build <source dir>");
 }
 
 if (command === "watch") watch();

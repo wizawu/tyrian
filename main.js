@@ -21,8 +21,8 @@ var entry = {};
 var entriesDir = context + "/js/entries/";
 try {
     fs.readdirSync(entriesDir).forEach(function(filename) {
-        if (/.*\.sw.$/.test(filename) === false) {
-            entry[filename.replace(/\.[^\.]+$/, "")] = entriesDir + filename;
+        if (/\.sw.$/.test(filename) === false) {
+            entry[filename.replace(/\.[^.]+$/, "")] = entriesDir + filename;
         }
     });
 } catch (_) {
@@ -32,7 +32,7 @@ try {
 // Find all HTML files
 try {
     var pages = fs.readdirSync(context + "/html").filter(function(filename) {
-        return /.*\.sw.$/.test(filename) === false;
+        return /\.sw.$/.test(filename) === false;
     });
 } catch (_) {
     console.log("Directory html/ not found");

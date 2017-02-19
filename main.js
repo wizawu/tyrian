@@ -70,7 +70,6 @@ var tsconfig = {
             libmod + "/@types",
             context + "/node_modules/@types",
             context + "/js/@types",
-            context + "/dist/@types",
         ],
         "lib": ["dom", "es2015"],
     }
@@ -142,13 +141,13 @@ var compiler = webpack({
     }
 });
 
-function buildToolkit() {
+function buildReactLib() {
     webpack({
         context: libdir,
-        entry: libdir + "/react-toolkit.js",
+        entry: libdir + "/react-lib.js",
         output: {
             path: context + "/dist",
-            filename: "react-toolkit.min.js",
+            filename: "react-lib.min.js",
         },
         plugins: [
             new webpack.optimize.UglifyJsPlugin({
@@ -164,7 +163,7 @@ function buildToolkit() {
 }
 
 function watch() {
-    buildToolkit();
+    buildReactLib();
     compiler.watch({
         poll: true
     }, function(err, stats) {
@@ -175,7 +174,7 @@ function watch() {
 }
 
 function build() {
-    buildToolkit();
+    buildReactLib();
     compiler.run(function(err, stats) {
         console.log(stats.toString({
             colors: true

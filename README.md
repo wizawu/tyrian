@@ -1,18 +1,11 @@
-# inferno-beaker ![build status](https://travis-ci.org/wizawu/inferno-beaker.svg)
+# reactc
 
-A handy devtool for [inferno](https://github.com/infernojs/inferno).
-
-* Built upon webpack
-* TypeScript (.tsx) only
-* Bundled `inferno`, `inferno-component`, `inferno-compat`
-* Import CSS/Less to TypeScript
-* Uglify outputs
-* Support source maps
+A handy devtool for React.
 
 ### Installation
 
 ```
-npm i -g inferno-beaker
+npm i -g reactc
 ```
 
 ### Project Structure
@@ -34,6 +27,6 @@ path/to/source
 ### Commands
 
 ```
-inferno-beaker watch path/to/source
-inferno-beaker build path/to/source
+reactc watch path/to/source
+reactc build path/to/source
 ```

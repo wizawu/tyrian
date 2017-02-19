@@ -6,4 +6,4 @@ before_script:
   - npm install -g .
 script:
   - cd example && npm install && cd -
-  - inferno-beaker build example
+  - reactc build example

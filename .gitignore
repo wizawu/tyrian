@@ -1,4 +1,6 @@
 *.swp
-example/dist/
-node_modules/
+.idea
+dist
+node_modules
 npm-debug.log
+tsconfig.json

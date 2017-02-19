@@ -13,7 +13,7 @@ console.log("Version: reactc " + version + "\n");
 // Validate arguments
 if (!command || !context || ["watch", "build"].indexOf(command) < 0) {
     help();
-    process.exit(1);
+    process.exit(command === "help" ? 0 : 1);
 }
 
 // Find all JavaScript entries

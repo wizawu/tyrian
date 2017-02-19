@@ -67,7 +67,6 @@ var tsconfig = {
         "module": "commonjs",
         "target": "es5",
         "typeRoots": [
-            libmod + "/@types",
             context + "/node_modules/@types",
             context + "/js/@types",
         ],

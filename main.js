@@ -87,7 +87,6 @@ var compiler = webpack({
     externals: {
         "react": "React",
         "react-dom": "ReactDOM",
-        "react-router": "ReactRouter",
     },
     resolveLoader: {
         modulesDirectories: [libmod]

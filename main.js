@@ -64,13 +64,12 @@ switch (command) {
 var tsconfig = {
     compilerOptions: {
         "jsx": "react",
-        "module": "commonjs",
+        "lib": ["dom", "es2017"],
         "target": "es5",
         "typeRoots": [
             context + "/node_modules/@types",
             context + "/js/@types",
         ],
-        "lib": ["dom", "es2015"],
     }
 }
 fs.writeFileSync(context + "/tsconfig.json", JSON.stringify(tsconfig, null, 2))
@@ -154,7 +153,7 @@ function buildReactLib() {
             }),
             new webpack.DefinePlugin({
                 "process.env": {
-                    NODE_ENV: options.NODE_ENV
+                    NODE_ENV: '"production"'
                 }
             })
         ]

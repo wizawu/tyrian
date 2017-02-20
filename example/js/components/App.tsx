@@ -7,6 +7,7 @@ export default class App extends React.Component<{}, {}> {
             <Box justified>
                 <div>Hello, React!</div>
                 <div>{Date.now()}</div>
+                {this.props.children}
             </Box>
         )
     }

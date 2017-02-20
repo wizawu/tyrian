@@ -1,8 +1,12 @@
 window.React = require("react")
 window.ReactDOM = require("react-dom")
+window.ReactRouter = require("react-router")
+/*
 window.ReactRouter = {
-    IndexRedirect: "react-router/lib/IndexRedirect",
-    Route: "react-router/lib/Route",
-    Router: "react-router/lib/Router",
-    browserHistory: "react-router/lib/browserHistory",
+    Router: require("react-router/lib/Router"),
+    Route: require("react-router/lib/Route"),
+    Link: require("react-router/lib/Link"),
+    IndexRedirect: require("react-router/lib/IndexRedirect"),
+    browserHistory: require("react-router/lib/browserHistory"),
 }
+*.

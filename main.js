@@ -117,6 +117,7 @@ var compiler = webpack({
         return new HtmlWebpackPlugin({
             filename: filename,
             template: context + "/html/" + filename,
+            inject: false,
         });
     }).concat(options.minimize ? [
         new webpack.optimize.UglifyJsPlugin({

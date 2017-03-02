@@ -76,13 +76,12 @@ fs.writeFileSync(context + "/tsconfig.json", JSON.stringify(tsconfig, null, 2))
 
 var webpack = require(libmod + "/webpack");
 var HtmlWebpackPlugin = require(libmod + "/html-webpack-plugin");
-var autoprefixer = require(libmod + "/autoprefixer");
 
 var compiler = webpack({
     devtool: options.sourceMap && "inline-source-map",
     context: context,
     resolve: {
-        extensions: ["", ".js", ".ls", ".ts", ".tsx"],
+        extensions: [".js", ".ls", ".ts", ".tsx"],
     },
     externals: {
         "react": "React",
@@ -90,7 +89,7 @@ var compiler = webpack({
         "react-router": "ReactRouter",
     },
     resolveLoader: {
-        modulesDirectories: [libmod]
+        modules: [libmod],
     },
     entry: entry,
     output: {
@@ -98,7 +97,7 @@ var compiler = webpack({
         filename: options.filename,
     },
     module: {
-        loaders: [{
+        rules: [{
             test: /\.tsx?$/,
             exclude: /node_modules/,
             loader: "ts-loader"
@@ -108,10 +107,10 @@ var compiler = webpack({
             loader: "livescript-loader"
         }, {
             test: /^[^!]+.css$/,
-            loader: "style!css?-minimize!postcss",
+            loader: "style-loader!css-loader?-minimize",
         }, {
             test: /^[^!]+.less$/,
-            loader: "style!css?-minimize!postcss!less",
+            loader: "style-loader!css-loader?-minimize!less-loader",
         }]
     },
     plugins: pages.map(function(filename) {
@@ -121,7 +120,8 @@ var compiler = webpack({
         });
     }).concat(options.minimize ? [
         new webpack.optimize.UglifyJsPlugin({
-            minimize: true
+            minimize: true,
+            sourceMap: options.sourceMap,
         })
     ] : []).concat([
         new webpack.DefinePlugin({
@@ -129,14 +129,7 @@ var compiler = webpack({
                 NODE_ENV: options.NODE_ENV
             }
         })
-    ]),
-    postcss: function() {
-        return [
-            autoprefixer({
-                browsers: ["last 2 versions", "Safari >= 8"]
-            })
-        ];
-    }
+    ])
 });
 
 function buildReactLib() {
@@ -153,7 +146,8 @@ function buildReactLib() {
         },
         plugins: [
             new webpack.optimize.UglifyJsPlugin({
-                minimize: true
+                minimize: true,
+                sourceMap: false,
             }),
             new webpack.DefinePlugin({
                 "process.env": {

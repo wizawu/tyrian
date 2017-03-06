@@ -39,6 +39,16 @@ try {
     var pages = [];
 }
 
+// Find all type files
+try {
+    var types = fs.readdirSync(context + "/../types").filter(function(filename) {
+        return /\.sw.$/.test(filename) === false;
+    });
+} catch (_) {
+    console.log("Directory ../types not found");
+    var types = [];
+}
+
 // Choose options
 var options = {};
 switch (command) {
@@ -67,8 +77,9 @@ var tsconfig = {
         "lib": ["dom", "es2017"],
         "target": "es5",
         "typeRoots": [
-            context + "/node_modules/@types",
+            context + "/dist/@types",
             context + "/js/@types",
+            context + "/node_modules/@types",
         ],
     }
 }
@@ -76,6 +87,7 @@ fs.writeFileSync(context + "/tsconfig.json", JSON.stringify(tsconfig, null, 2))
 
 var webpack = require(libmod + "/webpack");
 var HtmlWebpackPlugin = require(libmod + "/html-webpack-plugin");
+var GoStructWebpackPlugin = require(libmod + "/go-struct-webpack-plugin");
 
 var compiler = webpack({
     devtool: options.sourceMap && "inline-source-map",
@@ -130,7 +142,11 @@ var compiler = webpack({
                 NODE_ENV: options.NODE_ENV
             }
         })
-    ])
+    ]).concat(types.map(function(filename) {
+        new GoStructWebpackPlugin({
+            source: context + "/../types/" + filename,
+        })
+    }))
 });
 
 function buildReactLib() {

@@ -87,7 +87,7 @@ fs.writeFileSync(context + "/tsconfig.json", JSON.stringify(tsconfig, null, 2))
 
 var webpack = require(libmod + "/webpack");
 var HtmlWebpackPlugin = require(libmod + "/html-webpack-plugin");
-var KotlinClassWebpackPlugin = require(libmod + "/kotlin-class-webpack-plugin");
+var KotlinClassWebpackPlugin = require("kotlin-class-webpack-plugin");
 
 var compiler = webpack({
     devtool: options.sourceMap && "inline-source-map",

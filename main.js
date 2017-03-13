@@ -153,10 +153,6 @@ var compiler = webpack({
 function buildReactLib() {
     webpack({
         context: libdir,
-        externals: {
-            "react": "React",
-            "react-dom": "ReactDOM",
-        },
         entry: libdir + "/react-lib.js",
         output: {
             path: context + "/dist",

@@ -87,7 +87,7 @@ fs.writeFileSync(context + "/tsconfig.json", JSON.stringify(tsconfig, null, 2))
 
 var webpack = require(libmod + "/webpack");
 var HtmlWebpackPlugin = require(libmod + "/html-webpack-plugin");
-var GoStructWebpackPlugin = require(libmod + "/go-struct-webpack-plugin");
+var KotlinClassWebpackPlugin = require(libmod + "/kotlin-class-webpack-plugin");
 
 var compiler = webpack({
     devtool: options.sourceMap && "inline-source-map",
@@ -143,8 +143,9 @@ var compiler = webpack({
             }
         })
     ]).concat(types.map(function(filename) {
-        new GoStructWebpackPlugin({
+        return new KotlinClassWebpackPlugin({
             source: context + "/../types/" + filename,
+            output: filename.replace(/\.kt$/, ".d.ts"),
         })
     }))
 });

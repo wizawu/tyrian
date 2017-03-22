@@ -6,6 +6,9 @@ var libmod = libdir + (fs.existsSync(libdir + "/node_modules") ? "/node_modules"
 var command = process.argv[2];
 var context = process.argv[3] && path.resolve(process.argv[3]);
 
+var webpack = require(libmod + "/webpack");
+var HtmlWebpackPlugin = require(libmod + "/html-webpack-plugin");
+
 // Print version
 var version = JSON.parse(fs.readFileSync(libdir + "/package.json")).version;
 console.log("Version: " + version);
@@ -76,9 +79,6 @@ var tsconfig = {
     }
 }
 fs.writeFileSync(context + "/tsconfig.json", JSON.stringify(tsconfig, null, 2))
-
-var webpack = require(libmod + "/webpack");
-var HtmlWebpackPlugin = require(libmod + "/html-webpack-plugin");
 
 var compiler = webpack({
     devtool: options.sourceMap && "inline-source-map",

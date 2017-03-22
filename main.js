@@ -8,10 +8,10 @@ var context = process.argv[3] && path.resolve(process.argv[3]);
 
 // Print version
 var version = JSON.parse(fs.readFileSync(libdir + "/package.json")).version;
-console.log("Version: reactc " + version + "\n");
+console.log("Version: 1c " + version + "\n");
 
 // Validate arguments
-if (!command || !context || ["watch", "build"].indexOf(command) < 0) {
+if (!command || !context || ["watch", "build", "react"].indexOf(command) < 0) {
     help();
     process.exit(command === "help" ? 0 : 1);
 }
@@ -26,7 +26,6 @@ try {
         }
     });
 } catch (_) {
-    console.log("Directory js/entries/ not found");
 }
 
 // Find all HTML files
@@ -35,18 +34,7 @@ try {
         return /\.sw.$/.test(filename) === false;
     });
 } catch (_) {
-    console.log("Directory html/ not found");
     var pages = [];
-}
-
-// Find all type files
-try {
-    var types = fs.readdirSync(context + "/../types").filter(function(filename) {
-        return /\.sw.$/.test(filename) === false;
-    });
-} catch (_) {
-    console.log("Directory ../types not found");
-    var types = [];
 }
 
 // Choose options
@@ -77,7 +65,6 @@ var tsconfig = {
         "lib": ["dom", "es2017"],
         "target": "es5",
         "typeRoots": [
-            context + "/dist/@types",
             context + "/js/@types",
             context + "/node_modules/@types",
         ],
@@ -87,7 +74,6 @@ fs.writeFileSync(context + "/tsconfig.json", JSON.stringify(tsconfig, null, 2))
 
 var webpack = require(libmod + "/webpack");
 var HtmlWebpackPlugin = require(libmod + "/html-webpack-plugin");
-var KotlinClassWebpackPlugin = require("kotlin-class-webpack-plugin");
 
 var compiler = webpack({
     devtool: options.sourceMap && "inline-source-map",
@@ -142,12 +128,7 @@ var compiler = webpack({
                 NODE_ENV: options.NODE_ENV
             }
         })
-    ]).concat(types.map(function(filename) {
-        return new KotlinClassWebpackPlugin({
-            source: context + "/../types/" + filename,
-            output: filename.replace(/\.kt$/, ".d.ts"),
-        })
-    }))
+    ]),
 });
 
 function buildReactLib() {
@@ -155,7 +136,7 @@ function buildReactLib() {
         context: libdir,
         entry: libdir + "/react-lib.js",
         output: {
-            path: context + "/dist",
+            path: context,
             filename: "react-lib.min.js",
         },
         plugins: [
@@ -173,7 +154,6 @@ function buildReactLib() {
 }
 
 function watch() {
-    buildReactLib();
     compiler.watch({
         poll: true
     }, function(err, stats) {
@@ -184,7 +164,6 @@ function watch() {
 }
 
 function build() {
-    buildReactLib();
     compiler.run(function(err, stats) {
         console.log(stats.toString({
             colors: true
@@ -195,9 +174,11 @@ function build() {
 
 function help() {
     console.error("Usage:");
-    console.error("  reactc watch <source dir>");
-    console.error("  reactc build <source dir>");
+    console.error("  1c react");
+    console.error("  1c watch <source dir>");
+    console.error("  1c build <source dir>");
 }
 
+if (command === "react") buildReactLib();
 if (command === "watch") watch();
 if (command === "build") build();

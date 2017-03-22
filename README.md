@@ -1,32 +1,34 @@
-# reactc
+# 1c
 
-A handy devtool for React.
+A handy devtool for TypeScript / React.
 
 ### Installation
 
 ```
-npm i -g reactc
+npm i -g 1c
 ```
 
-### Project Structure
+### Structure
 
 ```
 path/to/source
 +-- html
-|   +-- xxxx.html
+|   +-- xxx.html
 +-- js
 |   +-- @types
+        +-- yyy.d.ts
 |   +-- entries
-|       +-- yyyy.tsx
+|       +-- zzz.tsx
 +-- package.json (optional)
 +-- dist (output)
-    +-- xxxx.html
-    +-- yyyy.min.js
+    +-- xxx.html
+    +-- zzz.min.js
 ```
 
 ### Commands
 
 ```
-reactc watch path/to/source
-reactc build path/to/source
+1c react
+1c watch path/to/source
+1c build path/to/source
 ```

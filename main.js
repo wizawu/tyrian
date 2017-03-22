@@ -13,13 +13,10 @@ var HtmlWebpackPlugin = require(libmod + "/html-webpack-plugin");
 var version = JSON.parse(fs.readFileSync(libdir + "/package.json")).version;
 console.log("Version: " + version);
 
+// Validate arguments
 if (command === "react") {
     buildReactLib();
-    process.exit(0);
-}
-
-// Validate arguments
-if (!command || !context || ["watch", "build"].indexOf(command) < 0) {
+} else if (!command || !context || ["watch", "build"].indexOf(command) < 0) {
     help();
     process.exit(command === "help" ? 0 : 1);
 }
@@ -78,9 +75,11 @@ var tsconfig = {
         ],
     }
 }
-fs.writeFileSync(context + "/tsconfig.json", JSON.stringify(tsconfig, null, 2))
+if (command === "watch" || command === "build") {
+    fs.writeFileSync(context + "/tsconfig.json", JSON.stringify(tsconfig, null, 2))
+}
 
-var compiler = webpack({
+var compiler = (command === "watch" || command === "build") && webpack({
     devtool: options.sourceMap && "inline-source-map",
     context: context,
     resolve: {

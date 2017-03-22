@@ -8,10 +8,15 @@ var context = process.argv[3] && path.resolve(process.argv[3]);
 
 // Print version
 var version = JSON.parse(fs.readFileSync(libdir + "/package.json")).version;
-console.log("Version: 1c " + version + "\n");
+console.log("Version: " + version);
+
+if (command === "react") {
+    buildReactLib();
+    process.exit(0);
+}
 
 // Validate arguments
-if (!command || !context || ["watch", "build", "react"].indexOf(command) < 0) {
+if (!command || !context || ["watch", "build"].indexOf(command) < 0) {
     help();
     process.exit(command === "help" ? 0 : 1);
 }
@@ -179,6 +184,5 @@ function help() {
     console.error("  1c build <source dir>");
 }
 
-if (command === "react") buildReactLib();
 if (command === "watch") watch();
 if (command === "build") build();

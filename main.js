@@ -14,9 +14,7 @@ var version = JSON.parse(fs.readFileSync(libdir + "/package.json")).version;
 console.log("Version: " + version);
 
 // Validate arguments
-if (command === "react") {
-    buildReactLib();
-} else if (!command || !context || ["watch", "build"].indexOf(command) < 0) {
+if (!command || !context || ["watch", "build", "react"].indexOf(command) < 0) {
     help();
     process.exit(command === "help" ? 0 : 1);
 }
@@ -178,10 +176,12 @@ function build() {
 
 function help() {
     console.error("Usage:");
-    console.error("  1c react");
     console.error("  1c watch <source dir>");
     console.error("  1c build <source dir>");
+    console.error("  1c react <dist dir>");
+    console.error("  1c help");
 }
 
 if (command === "watch") watch();
 if (command === "build") build();
+if (command === "react") buildReactLib();

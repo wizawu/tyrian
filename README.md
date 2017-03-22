@@ -6,6 +6,7 @@ A handy devtool for TypeScript / React.
 
 ```
 npm i -g 1c
+1c help
 ```
 
 ### Structure
@@ -23,12 +24,4 @@ path/to/source
 +-- dist (output)
     +-- xxx.html
     +-- zzz.min.js
-```
-
-### Commands
-
-```
-1c react
-1c watch path/to/source
-1c build path/to/source
 ```

@@ -41,6 +41,7 @@ var tsconfig_json = function(context) { return `
 
 var gitignore = `
 .gradle
+dist
 lib
 node_modules
 tsconfig.json

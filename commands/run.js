@@ -1,7 +1,7 @@
 var spawn = require("child_process").spawn
 
-function install(type) {
-    var child = spawn(type, ["install"])
+function run(target) {
+    var child = spawn("jjs", [target])
     child.stdout.on("data", function(data) {
         if (data) process.stdout.write(data)
     })
@@ -13,7 +13,4 @@ function install(type) {
     })
 }
 
-module.exports = {
-    npm: function() { install("npm") },
-    mvn: function() { install("gradle") },
-}
+module.exports = run

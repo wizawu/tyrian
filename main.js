@@ -154,6 +154,7 @@ var path = require("path")
 
 var help = require("./commands/help")
 var init = require("./commands/init")
+var install = require("./commands/install")
 
 var libdir = path.dirname(process.argv[1])
 var libmod = libdir + (fs.existsSync(libdir + "/node_modules") ? "/node_modules" : "/..")
@@ -165,8 +166,8 @@ var version = JSON.parse(fs.readFileSync(libdir + "/package.json")).version
 console.log("Version: " + version)
 
 if (command === "init") init(context)
-else if (command === "install:npm") help()
-else if (command === "install:mvn") help()
+else if (command === "install:npm") install.npm()
+else if (command === "install:mvn") install.mvn()
 else if (command === "build:react") help()
 else if (command === "build") help()
 else if (command === "watch") help()

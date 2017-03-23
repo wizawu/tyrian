@@ -39,6 +39,13 @@ var tsconfig_json = function(context) { return `
 }
 `.trim() }
 
+var gitignore = `
+.gradle
+lib
+node_modules
+tsconfig.json
+`.trim()
+
 function init(context) {
     ["build", "dist", "lib", "node_modules", "src"].forEach(function(dir) {
         fs.mkdir(context + "/" + dir, function(err) {
@@ -55,6 +62,7 @@ function init(context) {
         ["build.gradle", build_gradle],
         ["package.json", package_json],
         ["tsconfig.json", tsconfig_json(context)],
+        [".gitignore", gitignore],
         ["src/assets/useless.txt", ""],
         ["src/css/index.less", ""],
         ["src/html/index.html", "<!DOCTYPE html>"],

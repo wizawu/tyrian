@@ -12,16 +12,24 @@ npm i -g 1c
 ### Structure
 
 ```
-path/to/source
-+-- html
-|   +-- xxx.html
-+-- js
-|   +-- @types
-        +-- yyy.d.ts
-|   +-- entries
-|       +-- zzz.tsx
-+-- package.json (optional)
-+-- dist (output)
-    +-- xxx.html
-    +-- zzz.min.js
+├── assets
+│   └── img
+│       └── logo.png
+├── build
+│   ├── assets
+│   │   ├── img
+│   │   │   └── logo.png
+│   │   └── js
+│   │       └── index.min.js
+│   └── index.html
+├── lib
+├── node_modules
+└── src
+    ├── css
+    ├── html
+    │   └── index.html
+    └── js
+        └── main
+            ├── index.tsx
+            └── main.ts
 ```

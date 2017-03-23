@@ -54,18 +54,15 @@ function init(context) {
             fs.mkdirSync(dir)
             console.log(dir)
         } catch (err) {
-            if (err.code === "EEXIST") console.log(dir)
-            else console.error(err)
+            if (err.code !== "EEXIST") console.error(err)
         }
     });
     ["assets", "css", "html", "js", "js/entry", "js/@types"].forEach(function(dir) {
-        var target = "src/" + dir
         try {
-            fs.mkdirSync(target)
-            console.log(target)
+            fs.mkdirSync("src/" + dir)
+            console.log("src/" + dir)
         } catch (err) {
-            if (err.code === "EEXIST") console.log(target)
-            else console.error(err)
+            if (err.code !== "EEXIST") console.error(err)
         }
     });
 
@@ -78,7 +75,7 @@ function init(context) {
         ["src/css/index.less", ""],
         ["src/html/index.html", "<!DOCTYPE html>"],
         ["src/js/entry/index.tsx", `import "../../css/index.less"`],
-        ["src/js/entry/main.j.ts", ""],
+        ["src/js/entry/main.j.ts", `print("Hello, world!")`],
         ["src/js/@types/index.d.ts", ""],
     ].forEach(function(args) {
         console.log(args[0])

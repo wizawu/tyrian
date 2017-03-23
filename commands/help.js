@@ -1,4 +1,9 @@
-function help(exit) {
+var fs = require("fs")
+
+function help(libdir, exit) {
+    var version = JSON.parse(fs.readFileSync(libdir + "/package.json")).version
+    console.log("Version: " + version)
+
     console.error("Usage:");
     console.error("  1c init");
     console.error("  1c install:npm");

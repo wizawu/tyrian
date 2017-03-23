@@ -13,10 +13,6 @@ var command = process.argv[2]
 var context = path.resolve(process.argv[3] || "")
 var target = process.argv[3] && path.resolve(process.argv[3])
 
-// Print version
-var version = JSON.parse(fs.readFileSync(libdir + "/package.json")).version
-console.log("Version: " + version)
-
 if (command === "init") init(context)
 else if (command === "install:npm") install.npm()
 else if (command === "install:mvn") install.mvn()
@@ -24,5 +20,5 @@ else if (command === "build:react") build.react(libdir, libmod, context)
 else if (command === "build") build.entry(libdir, libmod, context)
 else if (command === "watch") build.watch(libdir, libmod, context)
 else if (command === "run" && target) run(target)
-else if (command === "help") help()
-else help(1)
+else if (command === "help") help(libdir)
+else help(libdir, 1)

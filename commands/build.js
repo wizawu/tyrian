@@ -125,4 +125,5 @@ function react(libdir, libmod, context) {
 module.exports = {
     entry: entry,
     react: react,
+    watch: watch,
 }

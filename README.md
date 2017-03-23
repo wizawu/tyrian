@@ -12,24 +12,24 @@ npm i -g 1c
 ### Structure
 
 ```
-├── assets
-│   └── img
-│       └── logo.png
-├── build
-│   ├── assets
-│   │   ├── img
-│   │   │   └── logo.png
-│   │   └── js
-│   │       └── index.min.js
-│   └── index.html
-├── lib
-├── node_modules
 └── src
+    ├── assets
+    │   └── img
+    │       └── logo.png
     ├── css
+    ├── dist
+    │   ├── assets
+    │   │   └── img
+    │   │       └── logo.png
+    │   ├── index.html
+    │   └── js
+    │       └── index.min.js
     ├── html
     │   └── index.html
-    └── js
-        └── main
-            ├── index.tsx
-            └── main.ts
+    ├── js
+    │   └── entry
+    │       ├── index.tsx
+    │       └── main.ts
+    ├── lib
+    └── node_modules
 ```

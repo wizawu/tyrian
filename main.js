@@ -176,9 +176,13 @@ function build() {
 
 function help() {
     console.error("Usage:");
-    console.error("  1c watch <source dir>");
-    console.error("  1c build <source dir>");
-    console.error("  1c react <dist dir>");
+    console.error("  1c init");
+    console.error("  1c install-npm");
+    console.error("  1c install-mvn");
+    console.error("  1c build-react");
+    console.error("  1c build");
+    console.error("  1c watch");
+    console.error("  1c run build/<file>.min.js");
     console.error("  1c help");
 }
 

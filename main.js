@@ -1,23 +1,7 @@
-var fs = require("fs");
-var path = require("path");
-
-var libdir = path.dirname(process.argv[1]);
-var libmod = libdir + (fs.existsSync(libdir + "/node_modules") ? "/node_modules" : "/..");
-var command = process.argv[2];
-var context = process.argv[3] && path.resolve(process.argv[3]);
+/*
 
 var webpack = require(libmod + "/webpack");
 var HtmlWebpackPlugin = require(libmod + "/html-webpack-plugin");
-
-// Print version
-var version = JSON.parse(fs.readFileSync(libdir + "/package.json")).version;
-console.log("Version: " + version);
-
-// Validate arguments
-if (!command || !context || ["watch", "build", "react"].indexOf(command) < 0) {
-    help();
-    process.exit(command === "help" ? 0 : 1);
-}
 
 // Find all JavaScript entries
 var entry = {};
@@ -62,17 +46,7 @@ switch (command) {
 }
 
 // Generate tsconfig.json
-var tsconfig = {
-    compilerOptions: {
-        "jsx": "react",
-        "lib": ["dom", "es2017"],
-        "target": "es5",
-        "typeRoots": [
-            context + "/js/@types",
-            context + "/node_modules/@types",
-        ],
-    }
-}
+var tsconfig =
 if (command === "watch" || command === "build") {
     fs.writeFileSync(context + "/tsconfig.json", JSON.stringify(tsconfig, null, 2))
 }
@@ -173,19 +147,29 @@ function build() {
         if (stats.hasErrors()) process.exit(2);
     });
 }
+*/
 
-function help() {
-    console.error("Usage:");
-    console.error("  1c init");
-    console.error("  1c install-npm");
-    console.error("  1c install-mvn");
-    console.error("  1c build-react");
-    console.error("  1c build");
-    console.error("  1c watch");
-    console.error("  1c run build/<file>.min.js");
-    console.error("  1c help");
-}
+var fs = require("fs")
+var path = require("path")
 
-if (command === "watch") watch();
-if (command === "build") build();
-if (command === "react") buildReactLib();
+var help = require("./commands/help")
+var init = require("./commands/init")
+
+var libdir = path.dirname(process.argv[1])
+var libmod = libdir + (fs.existsSync(libdir + "/node_modules") ? "/node_modules" : "/..")
+var command = process.argv[2]
+var context = path.resolve(process.argv[3] || "")
+
+// Print version
+var version = JSON.parse(fs.readFileSync(libdir + "/package.json")).version
+console.log("Version: " + version)
+
+if (command === "init") init(context)
+else if (command === "install:npm") help()
+else if (command === "install:mvn") help()
+else if (command === "build:react") help()
+else if (command === "build") help()
+else if (command === "watch") help()
+else if (command === "run") help()
+else if (command === "help") help()
+else help(1)

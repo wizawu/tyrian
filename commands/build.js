@@ -2,6 +2,7 @@ var fs = require("fs")
 
 function compiler(watch, libdir, libmod, context) {
     var HtmlWebpackPlugin = require(libmod + "/html-webpack-plugin")
+    var webpack = require(libmod + "/webpack")
 
     var entry = {}
     try {
@@ -25,7 +26,7 @@ function compiler(watch, libdir, libmod, context) {
         var html = []
     }
 
-    require(libmod + "/webpack")({
+    return webpack({
         devtool: watch && "inline-source-map",
         context: context,
         resolve: {
@@ -98,7 +99,9 @@ function watch(libdir, libmod, context) {
 }
 
 function react(libdir, libmod, context) {
-    require(libmod + "/webpack")({
+    var webpack = require(libmod + "/webpack")
+
+    webpack({
         context: libdir,
         entry: libdir + "/react-lib.js",
         output: {

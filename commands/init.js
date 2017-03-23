@@ -41,6 +41,7 @@ var tsconfig_json = function(context) { return `
 
 var gitignore = `
 .gradle
+build
 dist
 lib
 node_modules
@@ -49,14 +50,23 @@ tsconfig.json
 
 function init(context) {
     ["build", "dist", "lib", "node_modules", "src"].forEach(function(dir) {
-        fs.mkdir(context + "/" + dir, function(err) {
-            if (err && err.code !== "EEXIST") console.error(err)
-        })
+        try {
+            fs.mkdirSync(dir)
+            console.log(dir)
+        } catch (err) {
+            if (err.code === "EEXIST") console.log(dir)
+            else console.error(err)
+        }
     });
     ["assets", "css", "html", "js", "js/entry", "js/@types"].forEach(function(dir) {
-        fs.mkdir(context + "/src/" + dir, function(err) {
-            if (err && err.code !== "EEXIST") console.error(err)
-        })
+        var target = "src/" + dir
+        try {
+            fs.mkdirSync(target)
+            console.log(target)
+        } catch (err) {
+            if (err.code === "EEXIST") console.log(target)
+            else console.error(err)
+        }
     });
 
     [
@@ -71,6 +81,7 @@ function init(context) {
         ["src/js/entry/main.j.ts", ""],
         ["src/js/@types/index.d.ts", ""],
     ].forEach(function(args) {
+        console.log(args[0])
         fs.writeFile(args[0], args[1], function(err) {
             if (err) console.log(err)
         })

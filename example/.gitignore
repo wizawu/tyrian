@@ -1,4 +1,6 @@
 .gradle
+build
+dist
 lib
 node_modules
 tsconfig.json

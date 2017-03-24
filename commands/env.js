@@ -5,10 +5,10 @@ function header(name, link) {
 }
 
 function notFound(name) {
-    return `** not found **`
+    return `** not found **\n`
 }
 
-function env(alwaysPrint) {
+function env() {
     var ok = true
     var output = ""
     var child = null
@@ -55,8 +55,12 @@ function env(alwaysPrint) {
     output += child.stdout + child.stderr || notFound()
     if (child.status !== 0) ok = false
 
-    if (!ok || alwaysPrint) console.log(output)
-    return ok
+    if (!ok) {
+        console.error(output)
+        process.exit(127)
+    } else {
+        return output
+    }
 }
 
 module.exports = env

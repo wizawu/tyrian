@@ -1,34 +1,19 @@
 var fs = require("fs")
 
-// build.gradle
-var build_gradle = `
-apply plugin: "java"
-
-repositories {
-  mavenCentral()
-}
-
-task install(type: Copy) {
-  into "lib"
-  from configurations.runtime
-}
-
-dependencies {
-  compile 'org.tinylog:tinylog:1.2'
-}
-`.trim()
-
 // package.json
-var package_json = `
+var package = `
 {
   "dependencies": {
     "mockxhr": "^1.3.0"
-  }
+  },
+  "mvnDependencies": [
+    "org.tinylog:tinylog:1.2"
+  ]
 }
 `.trim()
 
 // tsconfig.json
-var tsconfig_json = function(context) { return `
+var tsconfig = function(context) { return `
 {
   "compilerOptions": {
     "jsx": "react",
@@ -42,48 +27,50 @@ var tsconfig_json = function(context) { return `
 }
 `.trim() }
 
+// .gitignore
 var gitignore = `
 .gradle
 build
+build.gradle
 dist
 lib
 node_modules
 tsconfig.json
+yarn.lock
 `.trim()
 
 function init(context) {
     ["build", "dist", "lib", "node_modules", "src"].forEach(function(dir) {
+        console.log("mkdir " + dir)
         try {
             fs.mkdirSync(dir)
-            console.log(dir)
         } catch (err) {
-            if (err.code !== "EEXIST") console.error(err)
+            console.error(err.message)
         }
     });
     ["assets", "css", "html", "js", "js/entry", "js/@types"].forEach(function(dir) {
+        console.log("mkdir src/" + dir)
         try {
             fs.mkdirSync("src/" + dir)
-            console.log("src/" + dir)
         } catch (err) {
-            if (err.code !== "EEXIST") console.error(err)
+            console.error(err.message)
         }
     });
 
     [
-        ["build.gradle", build_gradle],
-        ["package.json", package_json],
-        ["tsconfig.json", tsconfig_json(context)],
+        ["package.json", package],
+        ["tsconfig.json", tsconfig(context)],
         [".gitignore", gitignore],
         ["src/assets/useless.txt", ""],
         ["src/css/index.less", ""],
         ["src/html/index.html", "<!DOCTYPE html>"],
         ["src/js/entry/index.tsx", `import "../../css/index.less"`],
         ["src/js/entry/main.j.ts", `print("Hello, world!")`],
-        ["src/js/@types/index.d.ts", ""],
+        ["src/js/@types/main.d.ts", "declare const print: any"],
     ].forEach(function(args) {
-        console.log(args[0])
+        console.log("create " + args[0])
         fs.writeFile(args[0], args[1], function(err) {
-            if (err) console.log(err)
+            if (err) console.log(err.message)
         })
     })
 }

@@ -15,8 +15,8 @@ function help(libdir, exit) {
     console.log("  1c run build/<outfile>.min.js");
     console.log("  1c version");
     console.log("  1c help");
-
-    if (exit) process.exit(exit)
+  
+    process.exit(exit)
 }
 
 module.exports = help

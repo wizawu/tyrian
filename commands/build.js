@@ -32,11 +32,6 @@ function compiler(watch, libdir, libmod, context) {
         resolve: {
             extensions: [".js", ".j.ts", ".ts", ".tsx"],
         },
-        externals: {
-            "react": "React",
-            "react-dom": "ReactDOM",
-            "react-router": "ReactRouter",
-        },
         resolveLoader: {
             modules: [libmod],
         },
@@ -98,32 +93,7 @@ function watch(libdir, libmod, context) {
     })
 }
 
-function react(libdir, libmod, context) {
-    var webpack = require(libmod + "/webpack")
-
-    webpack({
-        context: libdir,
-        entry: libdir + "/react-lib.js",
-        output: {
-            path: context + "/dist/assets/js",
-            filename: "react-lib.min.js",
-        },
-        plugins: [
-            new webpack.optimize.UglifyJsPlugin({
-                minimize: true,
-                sourceMap: false,
-            }),
-            new webpack.DefinePlugin({
-                "process.env": {
-                    NODE_ENV: '"production"'
-                }
-            })
-        ]
-    }).run(function() {})
-}
-
 module.exports = {
     entry: entry,
-    react: react,
     watch: watch,
 }

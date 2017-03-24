@@ -9,7 +9,6 @@ function help(libdir, exit) {
     console.error("  1c init");
     console.error("  1c install:npm");
     console.error("  1c install:mvn");
-    console.error("  1c build:react");
     console.error("  1c build");
     console.error("  1c watch");
     console.error("  1c run build/<outfile>.min.js");

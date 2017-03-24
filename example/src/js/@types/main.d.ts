@@ -1,1 +1,1 @@
-declare const print: any
+declare const java: any

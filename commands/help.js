@@ -1,20 +1,23 @@
 var fs = require("fs")
 
-function help(libdir, exit) {
-    var version = JSON.parse(fs.readFileSync(libdir + "/package.json")).version
-    console.log("Version: " + version)
+function version(libdir) {
+    return JSON.parse(fs.readFileSync(libdir + "/package.json")).version
+}
 
-    console.error("Usage:");
-    console.error("  1c env");
-    console.error("  1c init");
-    console.error("  1c install:npm");
-    console.error("  1c install:mvn");
-    console.error("  1c build");
-    console.error("  1c watch");
-    console.error("  1c run build/<outfile>.min.js");
-    console.error("  1c help");
+function help(libdir, exit) {
+    console.log(`Version: ${version(libdir)}`)
+    console.log("Usage:");
+    console.log("  1c env");
+    console.log("  1c init");
+    console.log("  1c install");
+    console.log("  1c build");
+    console.log("  1c watch");
+    console.log("  1c run build/<outfile>.min.js");
+    console.log("  1c version");
+    console.log("  1c help");
 
     if (exit) process.exit(exit)
 }
 
 module.exports = help
+module.exports.version = version

@@ -1,7 +1,11 @@
-var spawn = require("child_process").spawn
+var spawnSync = require("child_process").spawnSync
 
 function install(type) {
-    var child = spawn(type, ["install"])
+    var child = spawnSync("npm", ["install"], {
+        stdio: "inherit",
+    })
+    process.exit(child.status)
+    /*
     child.stdout.on("data", function(data) {
         if (data) process.stdout.write(data)
     })
@@ -11,6 +15,7 @@ function install(type) {
     child.on("exit", function(code) {
         process.exit(code)
     })
+    */
 }
 
 module.exports = {

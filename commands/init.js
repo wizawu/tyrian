@@ -1,5 +1,6 @@
 var fs = require("fs")
 
+// build.gradle
 var build_gradle = `
 apply plugin: "java"
 
@@ -17,6 +18,7 @@ dependencies {
 }
 `.trim()
 
+// package.json
 var package_json = `
 {
   "dependencies": {
@@ -25,6 +27,7 @@ var package_json = `
 }
 `.trim()
 
+// tsconfig.json
 var tsconfig_json = function(context) { return `
 {
   "compilerOptions": {

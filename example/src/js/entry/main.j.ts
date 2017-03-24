@@ -1,2 +1,1 @@
-var System = java.lang.System
-System.out.println(System.getProperty("java.version"))
+org.pmw.tinylog.Logger.info(java.lang.System.getProperty("java.version"))

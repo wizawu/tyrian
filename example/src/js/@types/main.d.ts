@@ -1,1 +1,1 @@
-declare const java: any
+declare const java: any, org: any

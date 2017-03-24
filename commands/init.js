@@ -65,8 +65,8 @@ function init(context) {
         ["src/css/index.less", ""],
         ["src/html/index.html", "<!DOCTYPE html>"],
         ["src/js/entry/index.tsx", `import "../../css/index.less"`],
-        ["src/js/entry/main.j.ts", `var System = java.lang.System\nSystem.out.println(System.getProperty("java.version"))`],
-        ["src/js/@types/main.d.ts", "declare const java: any"],
+        ["src/js/entry/main.j.ts", `org.pmw.tinylog.Logger.info(java.lang.System.getProperty("java.version"))`],
+        ["src/js/@types/main.d.ts", "declare const java: any, org: any"],
     ].forEach(function(args) {
         console.log("create " + args[0])
         fs.writeFile(args[0], args[1], function(err) {

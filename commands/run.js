@@ -1,16 +1,16 @@
-var spawn = require("child_process").spawn
+var fs = require("fs")
+var path = require("path")
+var spawnSync = require("child_process").spawnSync
 
 function run(target) {
-    var child = spawn("jjs", [target])
-    child.stdout.on("data", function(data) {
-        if (data) process.stdout.write(data)
+    var libdir = path.resolve(path.dirname(target) + "/../lib")
+    var classpath = fs.readdirSync(libdir).map(function(jar) {
+        return libdir + "/" + jar
     })
-    child.stderr.on("data", function(data) {
-        if (data) process.stderr.write(data)
+    var child = spawnSync("jjs", ["-cp", classpath, target], {
+        stdio: "inherit"
     })
-    child.on("exit", function(code) {
-        process.exit(code)
-    })
+    process.exit(child.status)
 }
 
 module.exports = run

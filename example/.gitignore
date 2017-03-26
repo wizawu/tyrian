@@ -1,7 +1,6 @@
 .gradle
 build
 build.gradle
-dist
 lib
 node_modules
 tsconfig.json

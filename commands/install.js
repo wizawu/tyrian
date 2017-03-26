@@ -1,5 +1,6 @@
 var fs = require("fs")
 var spawnSync = require("child_process").spawnSync
+var parse = require("../jar/parse")
 
 // build.gradle
 var gradle = function(deps) { return `
@@ -34,10 +35,16 @@ function install() {
         var child = spawnSync("gradle", ["install"], {
             stdio: "inherit",
         })
-        process.exit(child.status)
+        if (child.status !== 0) process.exit(child.status)
     } catch (err) {
         console.error(err.message)
     }
+
+    fs.readdirSync("lib").map(function(jar) {
+        if (jar === "@types") return
+        var content = parse("lib/" + jar)
+        fs.writeFileSync("lib/@types/" + jar.replace(/\.jar$/, ".d.ts"), content)
+    })
 }
 
 module.exports = install

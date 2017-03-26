@@ -67,7 +67,7 @@ function init() {
         ["src/html/test.html", "<!DOCTYPE html>"],
         ["src/js/entry/test.tsx", `import "../../css/test.less"`],
         ["src/js/entry/test.j.ts", `org.pmw.tinylog.Logger.info(java.lang.System.getProperty("java.version"))`],
-        ["src/js/@types/test.d.ts", "declare const java: any, org: any"],
+        ["src/js/@types/test.d.ts", "declare const java: any"],
     ].forEach(function(args) {
         console.log("create " + args[0])
         fs.writeFile(args[0], args[1], function(err) {

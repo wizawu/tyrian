@@ -1,8 +1,9 @@
 var fs = require("fs")
 
 function compiler(watch, libdir, libmod, context) {
-    var HtmlWebpackPlugin = require(libmod + "/html-webpack-plugin")
     var webpack = require(libmod + "/webpack")
+    var HtmlWebpackPlugin = require(libmod + "/html-webpack-plugin")
+    var CopyWebpackPlugin = require(libmod + "/copy-webpack-plugin")
 
     var entry = {}
     try {
@@ -12,7 +13,7 @@ function compiler(watch, libdir, libmod, context) {
                 entry["build/" + name] = context + "/src/js/entry/" + filename
             } else if (/\.tsx?/.test(filename)) {
                 var name = filename.replace(/\.tsx?$/, "")
-                entry["dist/assets/js/" + name] = context + "/src/js/entry/" + filename
+                entry["build/assets/js/" + name + ".min.js"] = context + "/src/js/entry/" + filename
             }
         })
     } catch (_) {
@@ -38,7 +39,7 @@ function compiler(watch, libdir, libmod, context) {
         entry: entry,
         output: {
             path: context,
-            filename: "[name].min.js",
+            filename: "[name]",
         },
         module: {
             rules: [{
@@ -55,7 +56,7 @@ function compiler(watch, libdir, libmod, context) {
         },
         plugins: html.map(function(filename) {
             return new HtmlWebpackPlugin({
-                filename: "dist/" + filename,
+                filename: "build/assets/" + filename,
                 template: context + "/src/html/" + filename,
                 inject: false,
             })
@@ -65,6 +66,11 @@ function compiler(watch, libdir, libmod, context) {
                 sourceMap: false,
             })
         ]).concat([
+            new CopyWebpackPlugin([{
+                context: context + "/src/assets",
+                from: "**/*",
+                to: context + "/build/assets"
+            }]),
             new webpack.DefinePlugin({
                 "process.env": {
                     NODE_ENV: watch ? '"development"' : '"production"'

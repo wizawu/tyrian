@@ -13,34 +13,34 @@ var package = `
 `.trim()
 
 // tsconfig.json
-var tsconfig = function(context) { return `
+var tsconfig = `
 {
   "compilerOptions": {
     "jsx": "react",
     "lib": ["dom", "es2017"],
     "target": "es5",
     "typeRoots": [
-      "${context}/js/@types",
-      "${context}/node_modules/@types"
+      "lib/@types",
+      "node_modules/@types",
+      "src/js/@types"
     ]
   }
 }
-`.trim() }
+`.trim()
 
 // .gitignore
 var gitignore = `
 .gradle
 build
 build.gradle
-dist
 lib
 node_modules
 tsconfig.json
 yarn.lock
 `.trim()
 
-function init(context) {
-    ["build", "dist", "lib", "node_modules", "src"].forEach(function(dir) {
+function init() {
+    ["build", "lib", "lib/@types", "node_modules", "src"].forEach(function(dir) {
         console.log("mkdir " + dir)
         try {
             fs.mkdirSync(dir)
@@ -48,7 +48,7 @@ function init(context) {
             console.error(err.message)
         }
     });
-    ["assets", "css", "html", "js", "js/entry", "js/@types"].forEach(function(dir) {
+    ["assets", "assets/img", "css", "html", "js", "js/entry", "js/@types"].forEach(function(dir) {
         console.log("mkdir src/" + dir)
         try {
             fs.mkdirSync("src/" + dir)
@@ -59,14 +59,15 @@ function init(context) {
 
     [
         ["package.json", package],
-        ["tsconfig.json", tsconfig(context)],
+        ["tsconfig.json", tsconfig],
         [".gitignore", gitignore],
-        ["src/assets/useless.txt", ""],
-        ["src/css/index.less", ""],
-        ["src/html/index.html", "<!DOCTYPE html>"],
-        ["src/js/entry/index.tsx", `import "../../css/index.less"`],
-        ["src/js/entry/main.j.ts", `org.pmw.tinylog.Logger.info(java.lang.System.getProperty("java.version"))`],
-        ["src/js/@types/main.d.ts", "declare const java: any, org: any"],
+        ["src/assets/test.txt", ""],
+        ["src/assets/img/test.jpg", ""],
+        ["src/css/test.less", ""],
+        ["src/html/test.html", "<!DOCTYPE html>"],
+        ["src/js/entry/test.tsx", `import "../../css/test.less"`],
+        ["src/js/entry/test.j.ts", `org.pmw.tinylog.Logger.info(java.lang.System.getProperty("java.version"))`],
+        ["src/js/@types/test.d.ts", "declare const java: any, org: any"],
     ].forEach(function(args) {
         console.log("create " + args[0])
         fs.writeFile(args[0], args[1], function(err) {

@@ -12,10 +12,10 @@ function help(libdir, exit) {
     console.log("  1c install");
     console.log("  1c build");
     console.log("  1c watch");
-    console.log("  1c run build/<outfile>.min.js");
+    console.log("  1c run build/<outfile>");
     console.log("  1c version");
     console.log("  1c help");
-  
+
     process.exit(exit)
 }
 

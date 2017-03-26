@@ -42,8 +42,10 @@ function install() {
 
     fs.readdirSync("lib").map(function(jar) {
         if (jar === "@types") return
+        var filename = "lib/@types/" + jar.replace(/\.jar$/, ".d.ts")
+        console.log("Generating " + filename + ":")
         var content = parse("lib/" + jar)
-        fs.writeFileSync("lib/@types/" + jar.replace(/\.jar$/, ".d.ts"), content)
+        fs.writeFileSync(filename, content)
     })
 }
 

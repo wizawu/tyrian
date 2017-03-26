@@ -8,12 +8,12 @@ function commandOutput(command, args) {
 }
 
 function getClassContent(jar, classPath) {
+    console.log("  Disassembling " + classPath)
     var className = classPath.replace(/\//g, ".").replace(/\.class$/, "")
     return commandOutput("javap", ["-cp", jar, className])
 }
 
 function getStructure(jar) {
-    console.error("Disassembling " + jar)
     var classes = commandOutput("jar", ["tf", jar]).split("\n")
     var structure = {}
     classes.forEach(function(classPath) {
@@ -34,9 +34,26 @@ function getStructure(jar) {
     return structure
 }
 
+function parsePackage(package, level) {
+    var result = ""
+    Object.keys(package).forEach(function(key) {
+        if (/\.class$/.test(key)) {
+            result += package[key]
+        } else {
+            result += (level === 0 ? "declare " : "") + "namespace " + key + " {\n"
+            result += parsePackage(package[key], level + 1)
+            result += "\n}\n"
+        }
+    })
+
+    return result.split("\n").map(function(line) {
+        return (level === 0 ? "" : "    ") + line
+    }).join("\n")
+}
+
 function parse(jar) {
     var structure = getStructure(jar)
-    return JSON.stringify(structure, null, 2)
+    return parsePackage(structure, 0)
 }
 
 module.exports = parse

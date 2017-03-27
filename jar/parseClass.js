@@ -1,3 +1,13 @@
+var typeMap = {
+    "byte": "number",
+    "short": "number",
+    "int": "number",
+    "long": "number",
+    "float": "number",
+    "double": "number",
+    "char": "any",
+}
+
 function nextToken(source, offset, stack) {
     var skip = 0
     while (/\s/.test(source.charAt(offset + skip))) {
@@ -62,7 +72,8 @@ function parseClassMember(source, offset, stack) {
             } else if (t.token === ",") {
                 line += ", "
             } else {
-                line += "arg" + i + ": " + t.token
+                var type = typeMap[t.token] || t.token
+                line += "arg" + i + ": " + type
                 i += 1
             }
         }
@@ -74,7 +85,7 @@ function parseClassMember(source, offset, stack) {
         return null
     }
 
-    line += ": " + returnType
+    line += ": " + (typeMap[returnType] || returnType)
     stack.push(line)
     return {
         source: source,
@@ -105,6 +116,8 @@ function parseClass(source, offset, stack, classType) {
             offset += t.skip
             stack.push("}")
             break
+        } else if (t.token === "public") {
+            offset += t.skip
         } else if (t.token === className) {
             offset += t.skip
             var line = "    constructor"
@@ -119,7 +132,8 @@ function parseClass(source, offset, stack, classType) {
                 } else if (t.token === ",") {
                     line += ", "
                 } else {
-                    line += "arg" + i + ": " + t.token
+                    var type = typeMap[t.token] || t.token
+                    line += "arg" + i + ": " + type
                     i += 1
                 }
             }
@@ -178,26 +192,5 @@ function parse(source, offset, stack) {
 }
 
 module.exports = function(source) {
-    return parse(source || test, 0, []).stack.join("\n")
+    return parse(source, 0, []).stack.join("\n")
 }
-
-var test = `
-            public final class org.pmw.tinylog.Configuration {
-              org.pmw.tinylog.Configuration(org.pmw.tinylog.Configurator, org.pmw.tinylog.Level, java.util.Map<java.lang.String, org.pmw.tinylog.Level>, java.lang.String, java.util.Locale, java.util.List<org.pmw.tinylog.WriterDefinition>, org.pmw.tinylog.WritingThread, java.lang.Integer);
-              public org.pmw.tinylog.Level getLevel();
-              public boolean hasCustomLevels();
-              public org.pmw.tinylog.Level getLevel(java.lang.String);
-              public java.lang.String getFormatPattern();
-              public java.util.Locale getLocale();
-              public java.util.List<org.pmw.tinylog.writers.Writer> getWriters();
-              public org.pmw.tinylog.WritingThread getWritingThread();
-              public int getMaxStackTraceElements();
-              org.pmw.tinylog.Configurator getConfigurator();
-              boolean isOutputPossible(org.pmw.tinylog.Level);
-              org.pmw.tinylog.writers.Writer[] getEffectiveWriters(org.pmw.tinylog.Level);
-              java.util.List<org.pmw.tinylog.Token>[] getEffectiveFormatTokens(org.pmw.tinylog.Level);
-              java.util.Set<org.pmw.tinylog.writers.LogEntryValue> getRequiredLogEntryValues(org.pmw.tinylog.Level);
-              org.pmw.tinylog.StackTraceInformation getRequiredStackTraceInformation(org.pmw.tinylog.Level);
-              static {};
-            }
-`

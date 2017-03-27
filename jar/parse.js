@@ -42,14 +42,13 @@ function parsePackage(package, level) {
             result += parseClass(package[key])
         } else {
             result += (level === 0 ? "declare " : "") + "namespace " + key + " {\n"
-            result += parsePackage(package[key], level + 1)
-            result += "}\n"
+            result += parsePackage(package[key], level + 1).split("\n").map(function(line) {
+                return "   " + line
+            }).join("\n")
+            result += "\n}\n"
         }
     })
-
-    return result.split("\n").map(function(line) {
-        return (level === 0 ? "" : "    ") + line
-    }).join("\n")
+    return result
 }
 
 function parse(jar) {

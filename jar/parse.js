@@ -1,4 +1,5 @@
 var spawnSync = require("child_process").spawnSync
+var parseClass = require("./parseClass")
 
 function commandOutput(command, args) {
     var child = spawnSync(command, args, {
@@ -38,11 +39,11 @@ function parsePackage(package, level) {
     var result = ""
     Object.keys(package).forEach(function(key) {
         if (/\.class$/.test(key)) {
-            result += package[key]
+            result += parseClass(package[key])
         } else {
             result += (level === 0 ? "declare " : "") + "namespace " + key + " {\n"
             result += parsePackage(package[key], level + 1)
-            result += "\n}\n"
+            result += "}\n"
         }
     })
 

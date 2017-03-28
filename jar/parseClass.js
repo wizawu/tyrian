@@ -103,12 +103,14 @@ function parseClass(source, offset, stack, classType) {
     }
     stack.push(line)
 
+    var scope = ""
     while (t = nextToken(source, offset, stack)) {
         if (t.token === "}") {
             offset += t.skip
             stack.push("}\n")
             break
-        } else if (t.token === "public") {
+        } else if (t.token === "public" || t.token === "protected") {
+            scope = t.token + " "
             offset += t.skip
         } else if (t.token === className && source.charAt(offset + t.skip) === "(") {
             offset += t.skip
@@ -132,7 +134,8 @@ function parseClass(source, offset, stack, classType) {
                     i += 1
                 }
             }
-            stack.push(line)
+            stack.push(line.replace(/^(\s+)/, "$1" + scope))
+            scope = ""
             while (source.charAt(offset) !== "\n") offset += 1
         } else {
             var context = parseClassMember(source, offset, stack)
@@ -140,6 +143,8 @@ function parseClass(source, offset, stack, classType) {
             source = context.source
             offset = context.offset
             stack = context.stack
+            stack[stack.length - 1] = stack[stack.length - 1].replace(/^(\s+)/, "$1" + scope)
+            scope = ""
         }
     }
 

@@ -34,7 +34,7 @@ function parseClassMember(source, offset, stack) {
         offset += t.skip
         if (["public", "protected", "static"].indexOf(t.token) >= 0) {
             line += t.token + " "
-        } else if (t.token !== "final" && t.token !== "abstract") {
+        } else if (["final", "abstract", "native", "synchronized"].indexOf(t.token) < 0) {
             returnType = t.token
             break
         }

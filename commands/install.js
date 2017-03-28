@@ -28,10 +28,13 @@ function install() {
 
     try {
         var json = JSON.parse(fs.readFileSync("package.json"))
+        if (!json.mvnDependencies) return
+
         var deps = json.mvnDependencies.map(function(dep) {
             return `compile '${dep}'`
         }).join("\n")
         fs.writeFileSync("build.gradle", gradle(deps))
+
         var child = spawnSync("gradle", ["install"], {
             stdio: "inherit",
         })

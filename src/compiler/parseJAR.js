@@ -23,7 +23,9 @@ function getStructure(jar) {
         var current = structure
         keys.forEach(function(key) {
             if (/\.class$/.test(key)) {
-                current[key] = getClassContent(jar, classPath)
+                if (key.indexOf("$") < 0) {
+                    current[key] = getClassContent(jar, classPath)
+                }
             } else if (current[key] === undefined) {
                 current[key] = {}
                 current = current[key]

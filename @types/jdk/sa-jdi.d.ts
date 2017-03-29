@@ -285,34 +285,6 @@ declare namespace com {
                    static access$210(arg0: com.sun.java.swing.ui.WizardDlg): int
                    static access$800(arg0: com.sun.java.swing.ui.WizardDlg): java.awt.event.ActionListener
                }
-               class WizardDlg$2 implements java.awt.event.ActionListener {
-                   constructor()
-                   public actionPerformed(arg0: java.awt.event.ActionEvent): void
-               }
-               class WizardDlg$1 implements java.awt.event.ActionListener {
-                   constructor()
-                   public actionPerformed(arg0: java.awt.event.ActionEvent): void
-               }
-               class WizardDlg$BackListener implements java.awt.event.ActionListener {
-                   this$0: com.sun.java.swing.ui.WizardDlg
-                   public actionPerformed(arg0: java.awt.event.ActionEvent): void
-                   constructor(arg0: com.sun.java.swing.ui.WizardDlg, arg1: com.sun.java.swing.ui.WizardDlg$1)
-               }
-               class WizardDlg$NextListener implements java.awt.event.ActionListener {
-                   this$0: com.sun.java.swing.ui.WizardDlg
-                   public actionPerformed(arg0: java.awt.event.ActionEvent): void
-                   constructor(arg0: com.sun.java.swing.ui.WizardDlg, arg1: com.sun.java.swing.ui.WizardDlg$1)
-               }
-               class WizardDlg$FinishListener implements java.awt.event.ActionListener {
-                   this$0: com.sun.java.swing.ui.WizardDlg
-                   public actionPerformed(arg0: java.awt.event.ActionEvent): void
-                   constructor(arg0: com.sun.java.swing.ui.WizardDlg, arg1: com.sun.java.swing.ui.WizardDlg$1)
-               }
-               class WizardDlg$CancelListener implements java.awt.event.ActionListener {
-                   this$0: com.sun.java.swing.ui.WizardDlg
-                   public actionPerformed(arg0: java.awt.event.ActionEvent): void
-                   constructor(arg0: com.sun.java.swing.ui.WizardDlg, arg1: com.sun.java.swing.ui.WizardDlg$1)
-               }
                class ToggleActionPropertyChangeListener implements java.beans.PropertyChangeListener {
                    public constructor(arg0: javax.swing.AbstractButton)
                    public propertyChange(arg0: java.beans.PropertyChangeEvent): void
@@ -330,29 +302,6 @@ declare namespace com {
                    static access$000(arg0: com.sun.java.swing.ui.TabsDlg): java.awt.event.ActionListener
                    static access$100(arg0: com.sun.java.swing.ui.TabsDlg): java.awt.event.ActionListener
                    static access$200(arg0: com.sun.java.swing.ui.TabsDlg): java.awt.event.ActionListener
-               }
-               class TabsDlg$2 implements java.awt.event.ActionListener {
-                   constructor()
-                   public actionPerformed(arg0: java.awt.event.ActionEvent): void
-               }
-               class TabsDlg$1 implements java.awt.event.ActionListener {
-                   constructor()
-                   public actionPerformed(arg0: java.awt.event.ActionEvent): void
-               }
-               class TabsDlg$OkListener implements java.awt.event.ActionListener {
-                   this$0: com.sun.java.swing.ui.TabsDlg
-                   public actionPerformed(arg0: java.awt.event.ActionEvent): void
-                   constructor(arg0: com.sun.java.swing.ui.TabsDlg, arg1: com.sun.java.swing.ui.TabsDlg$1)
-               }
-               class TabsDlg$CancelListener implements java.awt.event.ActionListener {
-                   this$0: com.sun.java.swing.ui.TabsDlg
-                   public actionPerformed(arg0: java.awt.event.ActionEvent): void
-                   constructor(arg0: com.sun.java.swing.ui.TabsDlg, arg1: com.sun.java.swing.ui.TabsDlg$1)
-               }
-               class TabsDlg$ApplyListener implements java.awt.event.ActionListener {
-                   this$0: com.sun.java.swing.ui.TabsDlg
-                   public actionPerformed(arg0: java.awt.event.ActionEvent): void
-                   constructor(arg0: com.sun.java.swing.ui.TabsDlg, arg1: com.sun.java.swing.ui.TabsDlg$1)
                }
                class SplashScreen extends java.awt.Window {
                    public constructor(arg0: java.awt.Frame)
@@ -412,12 +361,6 @@ declare namespace com {
                    public static setWaitCursor(arg0: java.awt.Component): void
                    public static setDefaultCursor(arg0: java.awt.Component): void
                    public static getButtconPrefSize(): java.awt.Dimension
-               }
-               class CommonUI$1 {
-               }
-               class CommonUI$NumberDocument extends javax.swing.text.PlainDocument {
-                   public insertString(arg0: int, arg1: java.lang.String, arg2: javax.swing.text.AttributeSet): void
-                   constructor(arg0: com.sun.java.swing.ui.CommonUI$1)
                }
                abstract class CommonMenuBar extends javax.swing.JMenuBar {
                    protected manager: com.sun.java.swing.action.ActionManager
@@ -481,10 +424,6 @@ declare namespace sun {
                 public static canHotswapOrPostBreakpoint(): boolean
                 public static canPostOnExceptions(): boolean
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class JvmtiExport$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             
          }
@@ -581,11 +520,6 @@ declare namespace sun {
                 public toString(): java.lang.String
                 public defaultArguments(): java.util.Map
             }
-            class SAPIDAttachingConnector$1 implements com.sun.jdi.connect.Transport {
-                this$0: sun.jvm.hotspot.jdi.SAPIDAttachingConnector
-                constructor(arg0: sun.jvm.hotspot.jdi.SAPIDAttachingConnector)
-                public name(): java.lang.String
-            }
             class SAJDIClassLoader extends java.net.URLClassLoader {
                 constructor(arg0: java.lang.ClassLoader)
                 constructor(arg0: java.lang.ClassLoader, arg1: java.lang.String)
@@ -603,11 +537,6 @@ declare namespace sun {
                 public toString(): java.lang.String
                 public defaultArguments(): java.util.Map
             }
-            class SADebugServerAttachingConnector$1 implements com.sun.jdi.connect.Transport {
-                this$0: sun.jvm.hotspot.jdi.SADebugServerAttachingConnector
-                constructor(arg0: sun.jvm.hotspot.jdi.SADebugServerAttachingConnector)
-                public name(): java.lang.String
-            }
             class SADebugServer {
                 public static main(arg0: java.lang.String[]): void
             }
@@ -622,11 +551,6 @@ declare namespace sun {
                 public transport(): com.sun.jdi.connect.Transport
                 public toString(): java.lang.String
                 public defaultArguments(): java.util.Map
-            }
-            class SACoreAttachingConnector$1 implements com.sun.jdi.connect.Transport {
-                this$0: sun.jvm.hotspot.jdi.SACoreAttachingConnector
-                constructor(arg0: sun.jvm.hotspot.jdi.SACoreAttachingConnector)
-                public name(): java.lang.String
             }
             class NonConcreteMethodImpl extends sun.jvm.hotspot.jdi.MethodImpl {
                 constructor(arg0: com.sun.jdi.VirtualMachine, arg1: sun.jvm.hotspot.jdi.ReferenceTypeImpl, arg2: sun.jvm.hotspot.oops.Method)
@@ -881,56 +805,6 @@ declare namespace sun {
                 public toString(): java.lang.String
                 static access$000(arg0: java.lang.Class): void
             }
-            class ConnectorImpl$SelectedArgumentImpl extends sun.jvm.hotspot.jdi.ConnectorImpl$ArgumentImpl implements com.sun.jdi.connect.Connector$SelectedArgument {
-                this$0: sun.jvm.hotspot.jdi.ConnectorImpl
-                constructor(arg0: sun.jvm.hotspot.jdi.ConnectorImpl, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String, arg5: boolean, arg6: java.util.List)
-                public choices(): java.util.List
-                public isValid(arg0: java.lang.String): boolean
-            }
-            class ConnectorImpl$StringArgumentImpl extends sun.jvm.hotspot.jdi.ConnectorImpl$ArgumentImpl implements com.sun.jdi.connect.Connector$StringArgument {
-                this$0: sun.jvm.hotspot.jdi.ConnectorImpl
-                constructor(arg0: sun.jvm.hotspot.jdi.ConnectorImpl, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String, arg5: boolean)
-                public isValid(arg0: java.lang.String): boolean
-            }
-            class ConnectorImpl$IntegerArgumentImpl extends sun.jvm.hotspot.jdi.ConnectorImpl$ArgumentImpl implements com.sun.jdi.connect.Connector$IntegerArgument {
-                this$0: sun.jvm.hotspot.jdi.ConnectorImpl
-                constructor(arg0: sun.jvm.hotspot.jdi.ConnectorImpl, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String, arg5: boolean, arg6: int, arg7: int)
-                public setValue(arg0: int): void
-                public isValid(arg0: java.lang.String): boolean
-                public isValid(arg0: int): boolean
-                public stringValueOf(arg0: int): java.lang.String
-                public intValue(): int
-                public max(): int
-                public min(): int
-            }
-            class ConnectorImpl$BooleanArgumentImpl extends sun.jvm.hotspot.jdi.ConnectorImpl$ArgumentImpl implements com.sun.jdi.connect.Connector$BooleanArgument {
-                this$0: sun.jvm.hotspot.jdi.ConnectorImpl
-                constructor(arg0: sun.jvm.hotspot.jdi.ConnectorImpl, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: boolean, arg5: boolean)
-                public setValue(arg0: boolean): void
-                public isValid(arg0: java.lang.String): boolean
-                public stringValueOf(arg0: boolean): java.lang.String
-                public booleanValue(): boolean
-            }
-            abstract class ConnectorImpl$ArgumentImpl implements com.sun.jdi.connect.Connector$Argument , java.lang.Cloneable , java.io.Serializable {
-                this$0: sun.jvm.hotspot.jdi.ConnectorImpl
-                constructor(arg0: sun.jvm.hotspot.jdi.ConnectorImpl, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String, arg5: boolean)
-                public isValid(arg0: java.lang.String): boolean
-                public name(): java.lang.String
-                public label(): java.lang.String
-                public description(): java.lang.String
-                public value(): java.lang.String
-                public setValue(arg0: java.lang.String): void
-                public mustSpecify(): boolean
-                public equals(arg0: java.lang.Object): boolean
-                public hashCode(): int
-                public clone(): java.lang.Object
-                public toString(): java.lang.String
-            }
-            class ConnectorImpl$1 implements java.util.Observer {
-                val$vm: java.lang.Object
-                constructor(arg0: java.lang.Object)
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class JNITypeParser {
                 static SIGNATURE_ENDCLASS: char
                 static SIGNATURE_FUNC: char
@@ -1018,14 +892,6 @@ declare namespace sun {
                 public arguments(): java.util.List
                 public bytecodes(): byte[]
                 public location(): com.sun.jdi.Location
-            }
-            class ConcreteMethodImpl$SoftLocationXRefs {
-                stratumID: java.lang.String
-                lineMapper: java.util.Map
-                lineLocations: java.util.List
-                lowestLine: int
-                highestLine: int
-                constructor(arg0: java.lang.String, arg1: java.util.Map, arg2: java.util.List, arg3: int, arg4: int)
             }
             class ClassTypeImpl extends sun.jvm.hotspot.jdi.ReferenceTypeImpl implements com.sun.jdi.ClassType {
                 protected constructor(arg0: com.sun.jdi.VirtualMachine, arg1: sun.jvm.hotspot.oops.InstanceKlass)
@@ -1171,21 +1037,6 @@ declare namespace sun {
                 findType(arg0: java.lang.String): com.sun.jdi.Type
                 static access$000(arg0: sun.jvm.hotspot.jdi.ClassLoaderReferenceImpl): java.util.List
             }
-            class ClassLoaderReferenceImpl$3 implements sun.jvm.hotspot.memory.SystemDictionary$ClassVisitor {
-                this$0: sun.jvm.hotspot.jdi.ClassLoaderReferenceImpl
-                constructor(arg0: sun.jvm.hotspot.jdi.ClassLoaderReferenceImpl)
-                public visit(arg0: sun.jvm.hotspot.oops.Klass): void
-            }
-            class ClassLoaderReferenceImpl$2 implements sun.jvm.hotspot.memory.SystemDictionary$ClassAndLoaderVisitor {
-                this$0: sun.jvm.hotspot.jdi.ClassLoaderReferenceImpl
-                constructor(arg0: sun.jvm.hotspot.jdi.ClassLoaderReferenceImpl)
-                public visit(arg0: sun.jvm.hotspot.oops.Klass, arg1: sun.jvm.hotspot.oops.Oop): void
-            }
-            class ClassLoaderReferenceImpl$1 implements sun.jvm.hotspot.memory.SystemDictionary$ClassAndLoaderVisitor {
-                this$0: sun.jvm.hotspot.jdi.ClassLoaderReferenceImpl
-                constructor(arg0: sun.jvm.hotspot.jdi.ClassLoaderReferenceImpl)
-                public visit(arg0: sun.jvm.hotspot.oops.Klass, arg1: sun.jvm.hotspot.oops.Oop): void
-            }
             class ThreadGroupReferenceImpl extends sun.jvm.hotspot.jdi.ObjectReferenceImpl implements com.sun.jdi.ThreadGroupReference {
                 constructor(arg0: com.sun.jdi.VirtualMachine, arg1: sun.jvm.hotspot.oops.Oop)
                 protected description(): java.lang.String
@@ -1246,52 +1097,6 @@ declare namespace sun {
                 static access$500(arg0: sun.jvm.hotspot.jdi.SDE, arg1: int, arg2: int, arg3: int): int
                 static access$600(arg0: sun.jvm.hotspot.jdi.SDE, arg1: int, arg2: int): int
                 static access$700(arg0: sun.jvm.hotspot.jdi.SDE): sun.jvm.hotspot.jdi.SDE$LineTableRecord[]
-            }
-            class SDE$1 {
-            }
-            class SDE$LineStratum {
-                this$0: sun.jvm.hotspot.jdi.SDE
-                public equals(arg0: java.lang.Object): boolean
-                lineNumber(): int
-                getSourceInfo(): void
-                sourceName(): java.lang.String
-                sourcePath(): java.lang.String
-                constructor(arg0: sun.jvm.hotspot.jdi.SDE, arg1: int, arg2: int, arg3: sun.jvm.hotspot.jdi.ReferenceTypeImpl, arg4: int, arg5: sun.jvm.hotspot.jdi.SDE$1)
-            }
-            class SDE$Stratum {
-                this$0: sun.jvm.hotspot.jdi.SDE
-                id(): java.lang.String
-                isJava(): boolean
-                sourceNames(arg0: sun.jvm.hotspot.jdi.ReferenceTypeImpl): java.util.List
-                sourcePaths(arg0: sun.jvm.hotspot.jdi.ReferenceTypeImpl): java.util.List
-                lineStratum(arg0: sun.jvm.hotspot.jdi.ReferenceTypeImpl, arg1: int): sun.jvm.hotspot.jdi.SDE$LineStratum
-                constructor(arg0: sun.jvm.hotspot.jdi.SDE, arg1: int, arg2: sun.jvm.hotspot.jdi.SDE$1)
-            }
-            class SDE$StratumTableRecord {
-                id: java.lang.String
-                fileIndex: int
-                lineIndex: int
-                this$0: sun.jvm.hotspot.jdi.SDE
-                constructor(arg0: sun.jvm.hotspot.jdi.SDE, arg1: sun.jvm.hotspot.jdi.SDE$1)
-            }
-            class SDE$LineTableRecord {
-                jplsStart: int
-                jplsEnd: int
-                jplsLineInc: int
-                njplsStart: int
-                njplsEnd: int
-                fileId: int
-                this$0: sun.jvm.hotspot.jdi.SDE
-                constructor(arg0: sun.jvm.hotspot.jdi.SDE, arg1: sun.jvm.hotspot.jdi.SDE$1)
-            }
-            class SDE$FileTableRecord {
-                fileId: int
-                sourceName: java.lang.String
-                sourcePath: java.lang.String
-                isConverted: boolean
-                this$0: sun.jvm.hotspot.jdi.SDE
-                getSourcePath(arg0: sun.jvm.hotspot.jdi.ReferenceTypeImpl): java.lang.String
-                constructor(arg0: sun.jvm.hotspot.jdi.SDE, arg1: sun.jvm.hotspot.jdi.SDE$1)
             }
             class VirtualMachineImpl extends sun.jvm.hotspot.jdi.MirrorImpl implements com.sun.jdi.PathSearchingVirtualMachine {
                 vmmgr: com.sun.jdi.VirtualMachineManager
@@ -1400,49 +1205,6 @@ declare namespace sun {
                 threadGroupMirror(arg0: sun.jvm.hotspot.oops.Instance): sun.jvm.hotspot.jdi.ThreadGroupReferenceImpl
                 classLoaderMirror(arg0: sun.jvm.hotspot.oops.Instance): sun.jvm.hotspot.jdi.ClassLoaderReferenceImpl
                 classObjectMirror(arg0: sun.jvm.hotspot.oops.Instance): sun.jvm.hotspot.jdi.ClassObjectReferenceImpl
-            }
-            class VirtualMachineImpl$SoftObjectReference extends java.lang.ref.SoftReference {
-                count: int
-                key: java.lang.Object
-                constructor(arg0: java.lang.Object, arg1: sun.jvm.hotspot.jdi.ObjectReferenceImpl, arg2: java.lang.ref.ReferenceQueue)
-                count(): int
-                incrementCount(): void
-                key(): java.lang.Object
-                object(): sun.jvm.hotspot.jdi.ObjectReferenceImpl
-            }
-            class VirtualMachineImpl$5 extends sun.jvm.hotspot.oops.DefaultHeapVisitor {
-                val$givenType: com.sun.jdi.ReferenceType
-                val$objects: java.util.List
-                this$0: sun.jvm.hotspot.jdi.VirtualMachineImpl
-                constructor(arg0: sun.jvm.hotspot.jdi.VirtualMachineImpl, arg1: com.sun.jdi.ReferenceType, arg2: java.util.List)
-                public doObj(arg0: sun.jvm.hotspot.oops.Oop): boolean
-            }
-            class VirtualMachineImpl$4 extends sun.jvm.hotspot.oops.DefaultHeapVisitor {
-                val$givenKls: sun.jvm.hotspot.oops.Klass
-                val$objects: java.util.List
-                this$0: sun.jvm.hotspot.jdi.VirtualMachineImpl
-                constructor(arg0: sun.jvm.hotspot.jdi.VirtualMachineImpl, arg1: sun.jvm.hotspot.oops.Klass, arg2: java.util.List)
-                public doObj(arg0: sun.jvm.hotspot.oops.Oop): boolean
-            }
-            class VirtualMachineImpl$3 extends sun.jvm.hotspot.oops.DefaultHeapVisitor {
-                val$objects: java.util.List
-                this$0: sun.jvm.hotspot.jdi.VirtualMachineImpl
-                constructor(arg0: sun.jvm.hotspot.jdi.VirtualMachineImpl, arg1: java.util.List)
-                public doObj(arg0: sun.jvm.hotspot.oops.Oop): boolean
-            }
-            class VirtualMachineImpl$2 extends sun.jvm.hotspot.oops.DefaultHeapVisitor {
-                val$size: int
-                val$klassArray: sun.jvm.hotspot.oops.Klass[]
-                val$retValue: long[]
-                this$0: sun.jvm.hotspot.jdi.VirtualMachineImpl
-                constructor(arg0: sun.jvm.hotspot.jdi.VirtualMachineImpl, arg1: int, arg2: sun.jvm.hotspot.oops.Klass[], arg3: long[])
-                public doObj(arg0: sun.jvm.hotspot.oops.Oop): boolean
-            }
-            class VirtualMachineImpl$1 implements sun.jvm.hotspot.memory.SystemDictionary$ClassVisitor {
-                val$saKlasses: java.util.List
-                this$0: sun.jvm.hotspot.jdi.VirtualMachineImpl
-                constructor(arg0: sun.jvm.hotspot.jdi.VirtualMachineImpl, arg1: java.util.List)
-                public visit(arg0: sun.jvm.hotspot.oops.Klass): void
             }
             interface JVMTIThreadState {
                 public static JVMTI_THREAD_STATE_ALIVE: int
@@ -1572,14 +1334,6 @@ declare namespace sun {
                 public constantPool(): byte[]
                 public compareTo(arg0: java.lang.Object): int
             }
-            class ReferenceTypeImpl$1 extends sun.jvm.hotspot.oops.DefaultHeapVisitor {
-                val$givenKls: sun.jvm.hotspot.oops.Klass
-                val$objects: java.util.List
-                val$max: long
-                this$0: sun.jvm.hotspot.jdi.ReferenceTypeImpl
-                constructor(arg0: sun.jvm.hotspot.jdi.ReferenceTypeImpl, arg1: sun.jvm.hotspot.oops.Klass, arg2: java.util.List, arg3: long)
-                public doObj(arg0: sun.jvm.hotspot.oops.Oop): boolean
-            }
             class ArrayTypeImpl extends sun.jvm.hotspot.jdi.ReferenceTypeImpl implements com.sun.jdi.ArrayType {
                 protected constructor(arg0: com.sun.jdi.VirtualMachine, arg1: sun.jvm.hotspot.oops.ArrayKlass)
                 public newInstance(arg0: int): com.sun.jdi.ArrayReference
@@ -1633,14 +1387,6 @@ declare namespace sun {
                 public toString(): java.lang.String
                 public virtualMachine(): com.sun.jdi.VirtualMachine
             }
-            class ObjectReferenceImpl$1 extends sun.jvm.hotspot.oops.DefaultHeapVisitor {
-                val$obj: com.sun.jdi.ObjectReference
-                val$objects: java.util.List
-                val$max: long
-                this$0: sun.jvm.hotspot.jdi.ObjectReferenceImpl
-                constructor(arg0: sun.jvm.hotspot.jdi.ObjectReferenceImpl, arg1: com.sun.jdi.ObjectReference, arg2: java.util.List, arg3: long)
-                public doObj(arg0: sun.jvm.hotspot.oops.Oop): boolean
-            }
             class ArrayReferenceImpl extends sun.jvm.hotspot.jdi.ObjectReferenceImpl implements com.sun.jdi.ArrayReference {
                 constructor(arg0: com.sun.jdi.VirtualMachine, arg1: sun.jvm.hotspot.oops.Array)
                 arrayType(): sun.jvm.hotspot.jdi.ArrayTypeImpl
@@ -1671,10 +1417,6 @@ declare namespace sun {
                    public printOn(arg0: java.io.PrintStream): void
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
                }
-               class ImmutableSpace$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-               }
                class MutableSpace extends sun.jvm.hotspot.gc_implementation.shared.ImmutableSpace {
                    public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                    public top(): sun.jvm.hotspot.debugger.Address
@@ -1682,10 +1424,6 @@ declare namespace sun {
                    public getLiveRegions(): java.util.List
                    public printOn(arg0: java.io.PrintStream): void
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-               }
-               class MutableSpace$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
                }
                
             }
@@ -1701,10 +1439,6 @@ declare namespace sun {
                    public printOn(arg0: java.io.PrintStream): void
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
                }
-               class ParallelScavengeHeap$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-               }
                class PSYoungGen extends sun.jvm.hotspot.runtime.VMObject {
                    public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                    public edenSpace(): sun.jvm.hotspot.gc_implementation.shared.MutableSpace
@@ -1716,10 +1450,6 @@ declare namespace sun {
                    public printOn(arg0: java.io.PrintStream): void
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
                }
-               class PSYoungGen$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-               }
                class PSOldGen extends sun.jvm.hotspot.runtime.VMObject {
                    public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                    public objectSpace(): sun.jvm.hotspot.gc_implementation.shared.MutableSpace
@@ -1728,10 +1458,6 @@ declare namespace sun {
                    public isIn(arg0: sun.jvm.hotspot.debugger.Address): boolean
                    public printOn(arg0: java.io.PrintStream): void
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-               }
-               class PSOldGen$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
                }
                
             }
@@ -1742,10 +1468,6 @@ declare namespace sun {
                    public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
                }
-               class HeapRegionSetCount$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-               }
                class G1HeapRegionTable extends sun.jvm.hotspot.runtime.VMObject {
                    public length(): long
                    public bias(): long
@@ -1754,19 +1476,6 @@ declare namespace sun {
                    public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
                    static access$100(arg0: sun.jvm.hotspot.gc_implementation.g1.G1HeapRegionTable, arg1: long): sun.jvm.hotspot.gc_implementation.g1.HeapRegion
-               }
-               class G1HeapRegionTable$HeapRegionIterator implements java.util.Iterator<sun.jvm.hotspot.gc_implementation.g1.HeapRegion> {
-                   this$0: sun.jvm.hotspot.gc_implementation.g1.G1HeapRegionTable
-                   public positionToNext(): sun.jvm.hotspot.gc_implementation.g1.HeapRegion
-                   public hasNext(): boolean
-                   public next(): sun.jvm.hotspot.gc_implementation.g1.HeapRegion
-                   public remove(): void
-                   constructor(arg0: sun.jvm.hotspot.gc_implementation.g1.G1HeapRegionTable, arg1: long)
-                   public next(): java.lang.Object
-               }
-               class G1HeapRegionTable$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
                }
                class HeapRegion extends sun.jvm.hotspot.memory.CompactibleSpace {
                    public static grainBytes(): long
@@ -1777,18 +1486,10 @@ declare namespace sun {
                    public free(): long
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
                }
-               class HeapRegion$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-               }
                class HeapRegionSetBase extends sun.jvm.hotspot.runtime.VMObject {
                    public count(): sun.jvm.hotspot.gc_implementation.g1.HeapRegionSetCount
                    public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-               }
-               class HeapRegionSetBase$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
                }
                class G1MonitoringSupport extends sun.jvm.hotspot.runtime.VMObject {
                    public edenCommitted(): long
@@ -1802,10 +1503,6 @@ declare namespace sun {
                    public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
                }
-               class G1MonitoringSupport$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-               }
                class HeapRegionManager extends sun.jvm.hotspot.runtime.VMObject {
                    public capacity(): long
                    public length(): long
@@ -1813,10 +1510,6 @@ declare namespace sun {
                    public heapRegionIterator(): java.util.Iterator<sun.jvm.hotspot.gc_implementation.g1.HeapRegion>
                    public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-               }
-               class HeapRegionManager$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
                }
                class G1CollectedHeap extends sun.jvm.hotspot.memory.SharedHeap {
                    public capacity(): long
@@ -1831,18 +1524,10 @@ declare namespace sun {
                    public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
                }
-               class G1CollectedHeap$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-               }
                class G1Allocator extends sun.jvm.hotspot.runtime.VMObject {
                    public getSummaryBytes(): long
                    public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-               }
-               class G1Allocator$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
                }
                
             }
@@ -1853,41 +1538,21 @@ declare namespace sun {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class RootNode$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class ProjNode extends sun.jvm.hotspot.opto.Node {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class ProjNode$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class TypeNode extends sun.jvm.hotspot.opto.Node {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class TypeNode$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class PhiNode extends sun.jvm.hotspot.opto.TypeNode {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class PhiNode$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class PhaseRegAlloc extends sun.jvm.hotspot.opto.Phase {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class PhaseRegAlloc$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class MachIfNode extends sun.jvm.hotspot.opto.MachNode {
                 prob(): float
@@ -1896,19 +1561,11 @@ declare namespace sun {
                 public dumpSpec(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class MachIfNode$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class MachCallStaticJavaNode extends sun.jvm.hotspot.opto.MachCallJavaNode {
                 public name(): java.lang.String
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public dumpSpec(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class MachCallStaticJavaNode$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class MachCallRuntimeNode extends sun.jvm.hotspot.opto.MachCallJavaNode {
                 public name(): java.lang.String
@@ -1916,25 +1573,13 @@ declare namespace sun {
                 public dumpSpec(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class MachCallRuntimeNode$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class MachNode extends sun.jvm.hotspot.opto.Node {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class MachNode$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class MachReturnNode extends sun.jvm.hotspot.opto.MachNode {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class MachReturnNode$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class MachSafePointNode extends sun.jvm.hotspot.opto.MachReturnNode {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -1942,18 +1587,10 @@ declare namespace sun {
                 public dumpSpec(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class MachSafePointNode$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class MachCallNode extends sun.jvm.hotspot.opto.MachSafePointNode {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public dumpSpec(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class MachCallNode$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class MachCallJavaNode extends sun.jvm.hotspot.opto.MachCallNode {
                 public method(): sun.jvm.hotspot.ci.ciMethod
@@ -1961,33 +1598,17 @@ declare namespace sun {
                 public dumpSpec(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class MachCallJavaNode$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class RegionNode extends sun.jvm.hotspot.opto.Node {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class RegionNode$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class LoopNode extends sun.jvm.hotspot.opto.RegionNode {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class LoopNode$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class HaltNode extends sun.jvm.hotspot.opto.Node {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class HaltNode$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class CompilerPhaseType extends java.lang.Enum<sun.jvm.hotspot.opto.CompilerPhaseType> {
                 public static PHASE_BEFORE_STRINGOPTS: sun.jvm.hotspot.opto.CompilerPhaseType
@@ -2028,27 +1649,15 @@ declare namespace sun {
                 public dumpSpec(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class CallStaticJavaNode$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class CallRuntimeNode extends sun.jvm.hotspot.opto.CallNode {
                 public name(): java.lang.String
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public dumpSpec(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class CallRuntimeNode$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class MultiNode extends sun.jvm.hotspot.opto.Node {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class MultiNode$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class SafePointNode extends sun.jvm.hotspot.opto.MultiNode {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -2056,19 +1665,11 @@ declare namespace sun {
                 public dumpSpec(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class SafePointNode$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class CallNode extends sun.jvm.hotspot.opto.SafePointNode {
                 public entryPoint(): sun.jvm.hotspot.debugger.Address
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public dumpSpec(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class CallNode$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class CallJavaNode extends sun.jvm.hotspot.opto.CallNode {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -2076,26 +1677,14 @@ declare namespace sun {
                 public dumpSpec(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class CallJavaNode$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class CallDynamicJavaNode extends sun.jvm.hotspot.opto.CallJavaNode {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class CallDynamicJavaNode$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class Block_List extends sun.jvm.hotspot.opto.Block_Array {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public size(): int
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class Block_List$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class Block_Array extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -2103,28 +1692,16 @@ declare namespace sun {
                 public at(arg0: int): sun.jvm.hotspot.opto.Block
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class Block_Array$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class Node_Array extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public Size(): int
                 public at(arg0: int): sun.jvm.hotspot.opto.Node
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class Node_Array$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class Node_List extends sun.jvm.hotspot.opto.Node_Array {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public size(): int
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class Node_List$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class Block extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -2133,10 +1710,6 @@ declare namespace sun {
                 public nodes(): sun.jvm.hotspot.opto.Node_List
                 public dump(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class Block$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class JVMState extends sun.jvm.hotspot.runtime.VMObject {
                 public static create(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.opto.JVMState
@@ -2147,10 +1720,6 @@ declare namespace sun {
                 public caller(): sun.jvm.hotspot.opto.JVMState
                 public dumpSpec(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class JVMState$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class InlineTree extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -2166,26 +1735,14 @@ declare namespace sun {
                 public dumpReplayData(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class InlineTree$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class Phase extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class Phase$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class PhaseCFG extends sun.jvm.hotspot.opto.Phase {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public dump(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class PhaseCFG$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class Node extends sun.jvm.hotspot.runtime.VMObject {
                 static nodes: java.util.HashMap
@@ -2207,14 +1764,6 @@ declare namespace sun {
                 public dumpSpec(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            abstract class Node$Instantiator {
-                constructor()
-                create(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.opto.Node
-            }
-            class Node$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class Compile extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public root(): sun.jvm.hotspot.opto.Node
@@ -2224,10 +1773,6 @@ declare namespace sun {
                 public ilt(): sun.jvm.hotspot.opto.InlineTree
                 public dumpInlineData(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class Compile$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             
          }
@@ -2241,10 +1786,6 @@ declare namespace sun {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class ciTypeArrayKlass$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class ciReceiverTypeData extends sun.jvm.hotspot.oops.ReceiverTypeData {
                 public constructor(arg0: sun.jvm.hotspot.oops.DataLayout)
                 public receiver(arg0: int): sun.jvm.hotspot.oops.Klass
@@ -2253,10 +1794,6 @@ declare namespace sun {
             class ciObjArrayKlass extends sun.jvm.hotspot.ci.ciArrayKlass {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class ciObjArrayKlass$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class ciMethodData extends sun.jvm.hotspot.ci.ciMetadata {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -2276,10 +1813,6 @@ declare namespace sun {
                 public dumpReplayData(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class ciMethodData$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class ciInstanceKlass extends sun.jvm.hotspot.ci.ciKlass {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public initState(): int
@@ -2289,34 +1822,18 @@ declare namespace sun {
                 public dumpReplayData(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class ciInstanceKlass$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class ciInstance extends sun.jvm.hotspot.ci.ciObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class ciInstance$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class ciField extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class ciField$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class ciSymbol extends sun.jvm.hotspot.ci.ciMetadata {
                 public asUtf88(): java.lang.String
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class ciSymbol$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class ciObject extends sun.jvm.hotspot.ci.ciBaseObject {
                 public getOop(): sun.jvm.hotspot.oops.Oop
@@ -2324,10 +1841,6 @@ declare namespace sun {
                 public printOn(arg0: java.io.PrintStream): void
                 public toString(): java.lang.String
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class ciObject$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class ciMethod extends sun.jvm.hotspot.ci.ciMetadata {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -2339,10 +1852,6 @@ declare namespace sun {
                 public dumpReplayData(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class ciMethod$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class ciObjectFactory extends sun.jvm.hotspot.runtime.VMObject {
                 public static get(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.ci.ciObject
                 public static getMetadata(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.ci.ciMetadata
@@ -2350,10 +1859,6 @@ declare namespace sun {
                 public symbols(): sun.jvm.hotspot.utilities.GrowableArray<sun.jvm.hotspot.ci.ciSymbol>
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class ciObjectFactory$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class ciEnv extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -2363,27 +1868,15 @@ declare namespace sun {
                 public dumpReplayData(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class ciEnv$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class ciConstant extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public dumpReplayData(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class ciConstant$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class ciBaseObject extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public dumpReplayData(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class ciBaseObject$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class ciMetadata extends sun.jvm.hotspot.ci.ciBaseObject {
                 public getMetadata(): sun.jvm.hotspot.oops.Metadata
@@ -2392,34 +1885,18 @@ declare namespace sun {
                 public toString(): java.lang.String
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class ciMetadata$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class ciType extends sun.jvm.hotspot.ci.ciMetadata {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class ciType$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class ciKlass extends sun.jvm.hotspot.ci.ciType {
                 public name(): java.lang.String
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class ciKlass$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class ciArrayKlass extends sun.jvm.hotspot.ci.ciKlass {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class ciArrayKlass$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             
          }
@@ -2665,396 +2142,9 @@ declare namespace sun {
              static access$3300(arg0: sun.jvm.hotspot.HSDB): java.lang.String
              static access$3400(arg0: sun.jvm.hotspot.HSDB): java.lang.String
          }
-         class HSDB$VisitHeap implements java.lang.Runnable {
-             visitor: sun.jvm.hotspot.oops.HeapVisitor
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB, arg1: sun.jvm.hotspot.oops.HeapVisitor)
-             public run(): void
-         }
-         class HSDB$HeapProgress implements sun.jvm.hotspot.utilities.HeapProgressThunk {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB, arg1: java.lang.String)
-             constructor(arg0: sun.jvm.hotspot.HSDB, arg1: java.lang.String, arg2: java.lang.String)
-             constructor(arg0: sun.jvm.hotspot.HSDB, arg1: java.lang.String, arg2: java.lang.String, arg3: sun.jvm.hotspot.HSDB$CleanupThunk)
-             public heapIterationFractionUpdate(arg0: double): void
-             public heapIterationComplete(): void
-             static access$3502(arg0: sun.jvm.hotspot.HSDB$HeapProgress, arg1: javax.swing.JInternalFrame): javax.swing.JInternalFrame
-             static access$3600(arg0: sun.jvm.hotspot.HSDB$HeapProgress): java.lang.String
-             static access$3500(arg0: sun.jvm.hotspot.HSDB$HeapProgress): javax.swing.JInternalFrame
-             static access$3702(arg0: sun.jvm.hotspot.HSDB$HeapProgress, arg1: sun.jvm.hotspot.ui.ProgressBarPanel): sun.jvm.hotspot.ui.ProgressBarPanel
-             static access$3800(arg0: sun.jvm.hotspot.HSDB$HeapProgress): java.lang.String
-             static access$3700(arg0: sun.jvm.hotspot.HSDB$HeapProgress): sun.jvm.hotspot.ui.ProgressBarPanel
-         }
-         class HSDB$HeapProgress$3 implements java.lang.Runnable {
-             this$1: sun.jvm.hotspot.HSDB$HeapProgress
-             constructor(arg0: sun.jvm.hotspot.HSDB$HeapProgress)
-             public run(): void
-         }
-         class HSDB$HeapProgress$2 implements java.lang.Runnable {
-             val$fractionOfHeapVisited: double
-             this$1: sun.jvm.hotspot.HSDB$HeapProgress
-             constructor(arg0: sun.jvm.hotspot.HSDB$HeapProgress, arg1: double)
-             public run(): void
-         }
-         class HSDB$HeapProgress$1 implements java.lang.Runnable {
-             this$1: sun.jvm.hotspot.HSDB$HeapProgress
-             constructor(arg0: sun.jvm.hotspot.HSDB$HeapProgress)
-             public run(): void
-         }
-         interface HSDB$CleanupThunk {
-             public heapIterationComplete(): void
-         }
-         class HSDB$48 implements java.lang.Runnable {
-             val$panel: sun.jvm.hotspot.ui.classbrowser.CodeViewerPanel
-             val$address: sun.jvm.hotspot.debugger.Address
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB, arg1: sun.jvm.hotspot.ui.classbrowser.CodeViewerPanel, arg2: sun.jvm.hotspot.debugger.Address)
-             public run(): void
-         }
-         class HSDB$47 implements java.lang.Runnable {
-             val$progressFrame: javax.swing.JInternalFrame
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB, arg1: javax.swing.JInternalFrame)
-             public run(): void
-         }
-         class HSDB$47$1 implements java.lang.Runnable {
-             val$htmlText: java.lang.String
-             this$1: sun.jvm.hotspot.HSDB$47
-             constructor(arg0: sun.jvm.hotspot.HSDB$47, arg1: java.lang.String)
-             public run(): void
-         }
-         class HSDB$46 extends sun.jvm.hotspot.CommandProcessor$DebuggerInterface {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public getAgent(): sun.jvm.hotspot.HotSpotAgent
-             public isAttached(): boolean
-             public attach(arg0: java.lang.String): void
-             public attach(arg0: java.lang.String, arg1: java.lang.String): void
-             public detach(): void
-             public reattach(): void
-         }
-         class HSDB$FindObjectByTypeCleanupThunk implements sun.jvm.hotspot.HSDB$CleanupThunk {
-             finder: sun.jvm.hotspot.utilities.FindObjectByType
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB, arg1: sun.jvm.hotspot.utilities.FindObjectByType)
-             public heapIterationComplete(): void
-         }
-         class HSDB$FindObjectByTypeCleanupThunk$1 implements java.lang.Runnable {
-             this$1: sun.jvm.hotspot.HSDB$FindObjectByTypeCleanupThunk
-             constructor(arg0: sun.jvm.hotspot.HSDB$FindObjectByTypeCleanupThunk)
-             public run(): void
-         }
-         class HSDB$ObjectHistogramCleanupThunk implements sun.jvm.hotspot.HSDB$CleanupThunk {
-             histo: sun.jvm.hotspot.oops.ObjectHistogram
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB, arg1: sun.jvm.hotspot.oops.ObjectHistogram)
-             public heapIterationComplete(): void
-         }
-         class HSDB$ObjectHistogramCleanupThunk$1 implements java.lang.Runnable {
-             this$1: sun.jvm.hotspot.HSDB$ObjectHistogramCleanupThunk
-             constructor(arg0: sun.jvm.hotspot.HSDB$ObjectHistogramCleanupThunk)
-             public run(): void
-         }
-         class HSDB$45 implements java.lang.Runnable {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public run(): void
-         }
-         class HSDB$45$1 implements java.util.Observer {
-             this$1: sun.jvm.hotspot.HSDB$45
-             constructor(arg0: sun.jvm.hotspot.HSDB$45)
-             public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-         }
-         class HSDB$44 implements java.lang.Runnable {
-             val$remoteMachineName: java.lang.String
-             val$errMsg: java.lang.String
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB, arg1: java.lang.String, arg2: java.lang.String)
-             public run(): void
-         }
-         class HSDB$43 implements java.lang.Runnable {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public run(): void
-         }
-         class HSDB$42 implements java.lang.Runnable {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public run(): void
-         }
-         class HSDB$41 implements java.lang.Runnable {
-             val$corePath: java.lang.String
-             val$errMsg: java.lang.String
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB, arg1: java.lang.String, arg2: java.lang.String)
-             public run(): void
-         }
-         class HSDB$40 implements java.lang.Runnable {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public run(): void
-         }
-         class HSDB$39 implements java.lang.Runnable {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public run(): void
-         }
-         class HSDB$38 implements java.lang.Runnable {
-             val$errMsg: java.lang.String
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB, arg1: java.lang.String)
-             public run(): void
-         }
-         class HSDB$37 implements java.lang.Runnable {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public run(): void
-         }
-         class HSDB$36 implements java.lang.Runnable {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public run(): void
-         }
-         class HSDB$35 implements java.lang.Runnable {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public run(): void
-         }
-         class HSDB$34 extends sun.jvm.hotspot.HSDB$StackWalker {
-             val$thread: sun.jvm.hotspot.runtime.JavaThread
-             val$addressSize: long
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB, arg1: sun.jvm.hotspot.runtime.JavaVFrame, arg2: sun.jvm.hotspot.ui.AnnotatedMemoryPanel, arg3: sun.jvm.hotspot.runtime.JavaThread, arg4: long)
-             public run(): void
-         }
-         class HSDB$34$1 implements sun.jvm.hotspot.runtime.AddressVisitor {
-             this$1: sun.jvm.hotspot.HSDB$34
-             constructor(arg0: sun.jvm.hotspot.HSDB$34)
-             public visitAddress(arg0: sun.jvm.hotspot.debugger.Address): void
-             public visitCompOopAddress(arg0: sun.jvm.hotspot.debugger.Address): void
-             public addAnnotation(arg0: sun.jvm.hotspot.debugger.Address, arg1: sun.jvm.hotspot.debugger.OopHandle): void
-         }
-         abstract class HSDB$StackWalker implements java.lang.Runnable {
-             protected vf: sun.jvm.hotspot.runtime.JavaVFrame
-             protected annoPanel: sun.jvm.hotspot.ui.AnnotatedMemoryPanel
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB, arg1: sun.jvm.hotspot.runtime.JavaVFrame, arg2: sun.jvm.hotspot.ui.AnnotatedMemoryPanel)
-         }
-         class HSDB$SignalInfo {
-             public sigNum: int
-             public sigName: java.lang.String
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-         }
-         class HSDB$33 implements java.lang.Runnable {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public run(): void
-         }
-         class HSDB$33$1 implements java.lang.Runnable {
-             val$errMsg: java.lang.String
-             this$1: sun.jvm.hotspot.HSDB$33
-             constructor(arg0: sun.jvm.hotspot.HSDB$33, arg1: java.lang.String)
-             public run(): void
-         }
-         class HSDB$32 implements java.awt.event.ActionListener {
-             val$dialog: javax.swing.JInternalFrame
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB, arg1: javax.swing.JInternalFrame)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$31 implements java.awt.event.ActionListener {
-             val$dialog: javax.swing.JInternalFrame
-             val$pidTextField: javax.swing.JTextField
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB, arg1: javax.swing.JInternalFrame, arg2: javax.swing.JTextField)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$31$1 implements java.lang.Runnable {
-             this$1: sun.jvm.hotspot.HSDB$31
-             constructor(arg0: sun.jvm.hotspot.HSDB$31)
-             public run(): void
-         }
-         class HSDB$30 implements java.awt.event.ActionListener {
-             val$dialog: javax.swing.JInternalFrame
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB, arg1: javax.swing.JInternalFrame)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$29 implements java.awt.event.ActionListener {
-             val$dialog: javax.swing.JInternalFrame
-             val$execPathField: javax.swing.JTextField
-             val$corePathField: javax.swing.JTextField
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB, arg1: javax.swing.JInternalFrame, arg2: javax.swing.JTextField, arg3: javax.swing.JTextField)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$29$1 implements java.lang.Runnable {
-             this$1: sun.jvm.hotspot.HSDB$29
-             constructor(arg0: sun.jvm.hotspot.HSDB$29)
-             public run(): void
-         }
-         class HSDB$28 implements java.awt.event.ActionListener {
-             val$dialog: javax.swing.JInternalFrame
-             val$execPathField: javax.swing.JTextField
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB, arg1: javax.swing.JInternalFrame, arg2: javax.swing.JTextField)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$27 implements java.awt.event.ActionListener {
-             val$dialog: javax.swing.JInternalFrame
-             val$corePathField: javax.swing.JTextField
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB, arg1: javax.swing.JInternalFrame, arg2: javax.swing.JTextField)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$26 implements java.awt.event.ActionListener {
-             val$attachDialog: javax.swing.JInternalFrame
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB, arg1: javax.swing.JInternalFrame)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$25 implements java.awt.event.ActionListener {
-             val$attachDialog: javax.swing.JInternalFrame
-             val$pidTextField: javax.swing.JTextField
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB, arg1: javax.swing.JInternalFrame, arg2: javax.swing.JTextField)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$25$1 implements java.lang.Runnable {
-             this$1: sun.jvm.hotspot.HSDB$25
-             constructor(arg0: sun.jvm.hotspot.HSDB$25)
-             public run(): void
-         }
-         class HSDB$24 extends java.lang.Thread {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public run(): void
-         }
-         class HSDB$23 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$22 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$21 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$20 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$19 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$18 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$17 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$16 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$15 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$14 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$13 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$12 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$11 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$10 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$9 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$8 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$7 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$6 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$5 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$4 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$3 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$2 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
-         class HSDB$1 implements java.awt.event.ActionListener {
-             this$0: sun.jvm.hotspot.HSDB
-             constructor(arg0: sun.jvm.hotspot.HSDB)
-             public actionPerformed(arg0: java.awt.event.ActionEvent): void
-         }
          class DebugServer {
              public constructor()
              public static main(arg0: java.lang.String[]): void
-         }
-         class DebugServer$1 implements java.lang.Runnable {
-             val$agent: sun.jvm.hotspot.HotSpotAgent
-             this$0: sun.jvm.hotspot.DebugServer
-             constructor(arg0: sun.jvm.hotspot.DebugServer, arg1: sun.jvm.hotspot.HotSpotAgent)
-             public run(): void
          }
          namespace tools {
             namespace soql {
@@ -3075,22 +2165,11 @@ declare namespace sun {
                    protected handleObject(arg0: java.lang.String): void
                    protected handleUnknown(arg0: java.lang.String): void
                }
-               class SOQL$1 implements sun.jvm.hotspot.utilities.soql.ObjectVisitor {
-                   this$0: sun.jvm.hotspot.tools.soql.SOQL
-                   constructor(arg0: sun.jvm.hotspot.tools.soql.SOQL)
-                   public visit(arg0: java.lang.Object): void
-               }
                class JSDB extends sun.jvm.hotspot.tools.Tool {
                    public constructor()
                    public constructor(arg0: sun.jvm.hotspot.debugger.JVMDebugger)
                    public static main(arg0: java.lang.String[]): void
                    public run(): void
-               }
-               class JSDB$1 extends sun.jvm.hotspot.utilities.soql.JSJavaScriptEngine {
-                   this$0: sun.jvm.hotspot.tools.soql.JSDB
-                   constructor(arg0: sun.jvm.hotspot.tools.soql.JSDB)
-                   public getObjectReader(): sun.jvm.hotspot.utilities.ObjectReader
-                   public getJSJavaFactory(): sun.jvm.hotspot.utilities.soql.JSJavaFactory
                }
                
             }
@@ -3149,12 +2228,6 @@ declare namespace sun {
                 public run(): void
                 public static main(arg0: java.lang.String[]): void
             }
-            class JSnap$1 implements sun.jvm.hotspot.runtime.PerfMemory$PerfDataEntryVisitor {
-                val$out: java.io.PrintStream
-                this$0: sun.jvm.hotspot.tools.JSnap
-                constructor(arg0: sun.jvm.hotspot.tools.JSnap, arg1: java.io.PrintStream)
-                public visit(arg0: sun.jvm.hotspot.runtime.PerfDataEntry): boolean
-            }
             class JMap extends sun.jvm.hotspot.tools.Tool {
                 public static MODE_HEAP_SUMMARY: int
                 public static MODE_HISTOGRAM: int
@@ -3190,22 +2263,11 @@ declare namespace sun {
                 public static main(arg0: java.lang.String[]): void
                 static access$000(arg0: sun.jvm.hotspot.tools.JInfo): void
             }
-            class JInfo$1 extends sun.jvm.hotspot.tools.Tool {
-                this$0: sun.jvm.hotspot.tools.JInfo
-                constructor(arg0: sun.jvm.hotspot.tools.JInfo)
-                public run(): void
-            }
             class HeapSummary extends sun.jvm.hotspot.tools.Tool {
                 public constructor()
                 public constructor(arg0: sun.jvm.hotspot.debugger.JVMDebugger)
                 public static main(arg0: java.lang.String[]): void
                 public run(): void
-            }
-            class HeapSummary$1StringStat implements sun.jvm.hotspot.memory.StringTable$StringVisitor {
-                this$0: sun.jvm.hotspot.tools.HeapSummary
-                constructor(arg0: sun.jvm.hotspot.tools.HeapSummary)
-                public visit(arg0: sun.jvm.hotspot.oops.Instance): void
-                public print(): void
             }
             class HeapDumper extends sun.jvm.hotspot.tools.Tool {
                 public constructor(arg0: java.lang.String)
@@ -3225,17 +2287,6 @@ declare namespace sun {
                 public constructor(arg0: sun.jvm.hotspot.debugger.JVMDebugger)
                 public static main(arg0: java.lang.String[]): void
                 public run(): void
-            }
-            class FinalizerInfo$2 implements java.util.Comparator {
-                this$0: sun.jvm.hotspot.tools.FinalizerInfo
-                constructor(arg0: sun.jvm.hotspot.tools.FinalizerInfo)
-                public compare(arg0: java.lang.Object, arg1: java.lang.Object): int
-            }
-            class FinalizerInfo$1 extends sun.jvm.hotspot.oops.DefaultOopVisitor {
-                val$queueref: sun.jvm.hotspot.oops.Oop[]
-                this$0: sun.jvm.hotspot.tools.FinalizerInfo
-                constructor(arg0: sun.jvm.hotspot.tools.FinalizerInfo, arg1: sun.jvm.hotspot.oops.Oop[])
-                public doOop(arg0: sun.jvm.hotspot.oops.OopField, arg1: boolean): void
             }
             abstract class Tool implements java.lang.Runnable {
                 protected static DEBUGEE_PID: int
@@ -3263,43 +2314,6 @@ declare namespace sun {
                 public static main(arg0: java.lang.String[]): void
                 public run(): void
                 static access$100(arg0: sun.jvm.hotspot.tools.ClassLoaderStats, arg1: sun.jvm.hotspot.oops.InstanceKlass): long
-            }
-            class ClassLoaderStats$1ParentFinder extends sun.jvm.hotspot.oops.DefaultOopVisitor {
-                this$0: sun.jvm.hotspot.tools.ClassLoaderStats
-                constructor(arg0: sun.jvm.hotspot.tools.ClassLoaderStats)
-                public doOop(arg0: sun.jvm.hotspot.oops.OopField, arg1: boolean): void
-                public getParent(): sun.jvm.hotspot.oops.Oop
-            }
-            class ClassLoaderStats$3 implements sun.jvm.hotspot.utilities.HeapProgressThunk {
-                val$err: java.io.PrintStream
-                this$0: sun.jvm.hotspot.tools.ClassLoaderStats
-                constructor(arg0: sun.jvm.hotspot.tools.ClassLoaderStats, arg1: java.io.PrintStream)
-                public heapIterationFractionUpdate(arg0: double): void
-                public heapIterationComplete(): void
-            }
-            class ClassLoaderStats$2 implements sun.jvm.hotspot.memory.SystemDictionary$ClassAndLoaderVisitor {
-                val$loaderMap: java.util.Map
-                val$bootstrapLoaderData: sun.jvm.hotspot.tools.ClassLoaderStats$LoaderData
-                this$0: sun.jvm.hotspot.tools.ClassLoaderStats
-                constructor(arg0: sun.jvm.hotspot.tools.ClassLoaderStats, arg1: java.util.Map, arg2: sun.jvm.hotspot.tools.ClassLoaderStats$LoaderData)
-                public visit(arg0: sun.jvm.hotspot.oops.Klass, arg1: sun.jvm.hotspot.oops.Oop): void
-            }
-            class ClassLoaderStats$1 extends sun.jvm.hotspot.oops.DefaultHeapVisitor {
-                val$loaderMap: java.util.Map
-                this$0: sun.jvm.hotspot.tools.ClassLoaderStats
-                constructor(arg0: sun.jvm.hotspot.tools.ClassLoaderStats, arg1: java.util.Map)
-                public doObj(arg0: sun.jvm.hotspot.oops.Oop): boolean
-            }
-            class ClassLoaderStats$LoaderData {
-                numClasses: long
-                classSize: long
-                classDetail: java.util.List
-                constructor(arg0: sun.jvm.hotspot.tools.ClassLoaderStats$1)
-            }
-            class ClassLoaderStats$ClassData {
-                klass: sun.jvm.hotspot.oops.Klass
-                size: long
-                constructor(arg0: sun.jvm.hotspot.oops.Klass, arg1: long)
             }
             namespace jcore {
                class PackageNameFilter implements sun.jvm.hotspot.tools.jcore.ClassFilter {
@@ -3364,11 +2378,6 @@ declare namespace sun {
                    public static main(arg0: java.lang.String[]): void
                    static access$000(arg0: sun.jvm.hotspot.tools.jcore.ClassDump, arg1: sun.jvm.hotspot.oops.InstanceKlass): void
                }
-               class ClassDump$1 implements sun.jvm.hotspot.memory.SystemDictionary$ClassVisitor {
-                   this$0: sun.jvm.hotspot.tools.jcore.ClassDump
-                   constructor(arg0: sun.jvm.hotspot.tools.jcore.ClassDump)
-                   public visit(arg0: sun.jvm.hotspot.oops.Klass): void
-               }
                class ByteCodeRewriter {
                    public static DEBUG: boolean
                    protected debugMessage(arg0: java.lang.String): void
@@ -3376,10 +2385,6 @@ declare namespace sun {
                    protected getConstantPoolIndexFromRefMap(arg0: int, arg1: int): short
                    protected getConstantPoolIndex(arg0: int, arg1: int): short
                    public rewrite(): void
-               }
-               class ByteCodeRewriter$1 implements java.security.PrivilegedAction {
-                   constructor()
-                   public run(): java.lang.Object
                }
                interface ClassFilter {
                    public canInclude(arg0: sun.jvm.hotspot.oops.InstanceKlass): boolean
@@ -3483,10 +2488,6 @@ declare namespace sun {
                 public printOn(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class CollectedHeap$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             
          }
          namespace c1 {
@@ -3495,10 +2496,6 @@ declare namespace sun {
                 public entryFor(arg0: int): sun.jvm.hotspot.debugger.Address
                 public blobFor(arg0: int): sun.jvm.hotspot.code.CodeBlob
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class Runtime1$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             
          }
@@ -3516,20 +2513,12 @@ declare namespace sun {
                 public protectionDomain(): sun.jvm.hotspot.oops.Oop
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class ProtectionDomainCacheEntry$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class PlaceholderEntry extends sun.jvm.hotspot.utilities.HashtableEntry {
                 public loader(): sun.jvm.hotspot.oops.Oop
                 public loaderData(): sun.jvm.hotspot.classfile.ClassLoaderData
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public klass(): sun.jvm.hotspot.oops.Symbol
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class PlaceholderEntry$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class ParNewGeneration extends sun.jvm.hotspot.memory.DefNewGeneration {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -3547,10 +2536,6 @@ declare namespace sun {
                 public printOn(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class OneContigSpaceCardGeneration$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class OffsetTableContigSpace extends sun.jvm.hotspot.memory.ContiguousSpace {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
             }
@@ -3562,18 +2547,10 @@ declare namespace sun {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class LoaderConstraintEntry$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class LinearAllocBlock extends sun.jvm.hotspot.runtime.VMObject {
                 public word_size(): long
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class LinearAllocBlock$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class GenerationIsInClosure implements sun.jvm.hotspot.memory.SpaceClosure {
                 constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -3584,20 +2561,6 @@ declare namespace sun {
                 public constructor()
                 public static newObject(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.memory.Generation
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class GenerationFactory$2 extends sun.jvm.hotspot.memory.Generation {
-                constructor(arg0: sun.jvm.hotspot.debugger.Address)
-                public name(): java.lang.String
-                public spaceIterate(arg0: sun.jvm.hotspot.memory.SpaceClosure, arg1: boolean): void
-                public printOn(arg0: java.io.PrintStream): void
-                public used(): long
-                public free(): long
-                public capacity(): long
-                public contiguousAvailable(): long
-            }
-            class GenerationFactory$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class GenCollectedHeap extends sun.jvm.hotspot.memory.SharedHeap {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -3611,10 +2574,6 @@ declare namespace sun {
                 public printOn(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class GenCollectedHeap$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class FreeChunk extends sun.jvm.hotspot.runtime.VMObject {
                 public next(): sun.jvm.hotspot.memory.FreeChunk
                 public prev(): sun.jvm.hotspot.memory.FreeChunk
@@ -3623,10 +2582,6 @@ declare namespace sun {
                 public static indicatesFreeChunk(arg0: sun.jvm.hotspot.debugger.Address): boolean
                 public isFree(): boolean
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class FreeChunk$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class EdenSpace extends sun.jvm.hotspot.memory.ContiguousSpace {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -3649,10 +2604,6 @@ declare namespace sun {
                 public printOn(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class DefNewGeneration$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class ContiguousSpace extends sun.jvm.hotspot.memory.CompactibleSpace {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public top(): sun.jvm.hotspot.debugger.Address
@@ -3664,10 +2615,6 @@ declare namespace sun {
                 public contains(arg0: sun.jvm.hotspot.debugger.Address): boolean
                 public printOn(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class ContiguousSpace$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class ConcurrentMarkSweepGeneration extends sun.jvm.hotspot.memory.CardGeneration {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -3683,10 +2630,6 @@ declare namespace sun {
                 public printOn(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class ConcurrentMarkSweepGeneration$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class CompactibleFreeListSpace extends sun.jvm.hotspot.memory.CompactibleSpace {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public collector(): sun.jvm.hotspot.memory.CMSCollector
@@ -3700,20 +2643,12 @@ declare namespace sun {
                 public static adjustObjectSizeInBytes(arg0: long): long
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class CompactibleFreeListSpace$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class GenerationSpec extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public name(): sun.jvm.hotspot.memory.Generation$Name
                 public initSize(): long
                 public maxSize(): long
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class GenerationSpec$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             abstract class Generation extends sun.jvm.hotspot.runtime.VMObject {
                 protected static K: int
@@ -3740,22 +2675,6 @@ declare namespace sun {
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
                 static access$100(): sun.jvm.hotspot.types.CIntegerField
             }
-            class Generation$StatRecord extends sun.jvm.hotspot.runtime.VMObject {
-                public constructor(arg0: sun.jvm.hotspot.debugger.Address)
-                public getInvocations(): int
-            }
-            class Generation$Name {
-                public static DEF_NEW: sun.jvm.hotspot.memory.Generation$Name
-                public static PAR_NEW: sun.jvm.hotspot.memory.Generation$Name
-                public static MARK_SWEEP_COMPACT: sun.jvm.hotspot.memory.Generation$Name
-                public static CONCURRENT_MARK_SWEEP: sun.jvm.hotspot.memory.Generation$Name
-                public static OTHER: sun.jvm.hotspot.memory.Generation$Name
-                public toString(): java.lang.String
-            }
-            class Generation$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             abstract class CardGeneration extends sun.jvm.hotspot.memory.Generation {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
             }
@@ -3764,10 +2683,6 @@ declare namespace sun {
                 public markBitMap(): sun.jvm.hotspot.memory.CMSBitMap
                 public blockSizeUsingPrintezisBits(arg0: sun.jvm.hotspot.debugger.Address): long
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class CMSCollector$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class CMSBitMap extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -3783,10 +2698,6 @@ declare namespace sun {
                 isMarked(arg0: sun.jvm.hotspot.debugger.Address): boolean
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class CMSBitMap$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class AdaptiveFreeList extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public size(): long
@@ -3794,18 +2705,10 @@ declare namespace sun {
                 public static sizeOf(): long
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class AdaptiveFreeList$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class AFLBinaryTreeDictionary extends sun.jvm.hotspot.runtime.VMObject {
                 public size(): long
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class AFLBinaryTreeDictionary$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             interface SpaceClosure {
                 public doSpace(arg0: sun.jvm.hotspot.memory.Space): void
@@ -3826,37 +2729,21 @@ declare namespace sun {
                 public printOn(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class Space$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             abstract class CompactibleSpace extends sun.jvm.hotspot.memory.Space {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public compactionTop(): sun.jvm.hotspot.debugger.Address
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class CompactibleSpace$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             abstract class SharedHeap extends sun.jvm.hotspot.gc_interface.CollectedHeap {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public kind(): sun.jvm.hotspot.gc_interface.CollectedHeapName
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class SharedHeap$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class ProtectionDomainEntry extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public next(): sun.jvm.hotspot.memory.ProtectionDomainEntry
                 public protectionDomain(): sun.jvm.hotspot.oops.Oop
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class ProtectionDomainEntry$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class HeapBlock extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -3866,15 +2753,6 @@ declare namespace sun {
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
                 static access$100(): sun.jvm.hotspot.types.CIntegerField
                 static access$200(): sun.jvm.hotspot.types.CIntegerField
-            }
-            class HeapBlock$Header extends sun.jvm.hotspot.runtime.VMObject {
-                public constructor(arg0: sun.jvm.hotspot.debugger.Address)
-                public getLength(): long
-                public isFree(): boolean
-            }
-            class HeapBlock$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class DictionaryEntry extends sun.jvm.hotspot.utilities.HashtableEntry {
                 public pdSet(): sun.jvm.hotspot.memory.ProtectionDomainEntry
@@ -3886,10 +2764,6 @@ declare namespace sun {
                 public isValidProtectionDomain(arg0: sun.jvm.hotspot.oops.Oop): boolean
                 public containsProtectionDomain(arg0: sun.jvm.hotspot.oops.Oop): boolean
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class DictionaryEntry$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class MemRegion implements java.lang.Cloneable {
                 public constructor()
@@ -3913,10 +2787,6 @@ declare namespace sun {
                 public wordSize(): long
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class MemRegion$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class CodeHeap extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public begin(): sun.jvm.hotspot.debugger.Address
@@ -3926,18 +2796,10 @@ declare namespace sun {
                 public nextBlock(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.debugger.Address
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class CodeHeap$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class LoaderConstraintTable extends sun.jvm.hotspot.utilities.TwoOopHashtable {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 protected getHashtableEntryClass(): java.lang.Class
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class LoaderConstraintTable$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class PlaceholderTable extends sun.jvm.hotspot.utilities.TwoOopHashtable {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -3951,10 +2813,6 @@ declare namespace sun {
                 public classesDo(arg0: sun.jvm.hotspot.memory.SystemDictionary$ClassAndLoaderVisitor): void
                 public find(arg0: int, arg1: long, arg2: sun.jvm.hotspot.oops.Symbol, arg3: sun.jvm.hotspot.oops.Oop, arg4: sun.jvm.hotspot.oops.Oop): sun.jvm.hotspot.oops.Klass
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class Dictionary$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class SystemDictionary {
                 public constructor()
@@ -3979,34 +2837,11 @@ declare namespace sun {
                 public primArrayClassesDo(arg0: sun.jvm.hotspot.memory.SystemDictionary$ClassAndLoaderVisitor): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class SystemDictionary$2 implements sun.jvm.hotspot.memory.SystemDictionary$ClassVisitor {
-                val$v: sun.jvm.hotspot.memory.SystemDictionary$ClassVisitor
-                this$0: sun.jvm.hotspot.memory.SystemDictionary
-                constructor(arg0: sun.jvm.hotspot.memory.SystemDictionary, arg1: sun.jvm.hotspot.memory.SystemDictionary$ClassVisitor)
-                public visit(arg0: sun.jvm.hotspot.oops.Klass): void
-            }
-            interface SystemDictionary$ClassAndLoaderVisitor {
-                public visit(arg0: sun.jvm.hotspot.oops.Klass, arg1: sun.jvm.hotspot.oops.Oop): void
-            }
-            interface SystemDictionary$ClassVisitor {
-                public visit(arg0: sun.jvm.hotspot.oops.Klass): void
-            }
-            class SystemDictionary$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class StringTable extends sun.jvm.hotspot.utilities.Hashtable {
                 public static getTheTable(): sun.jvm.hotspot.memory.StringTable
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public stringsDo(arg0: sun.jvm.hotspot.memory.StringTable$StringVisitor): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            interface StringTable$StringVisitor {
-                public visit(arg0: sun.jvm.hotspot.oops.Instance): void
-            }
-            class StringTable$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class SymbolTable extends sun.jvm.hotspot.utilities.Hashtable {
                 public static getTheTable(): sun.jvm.hotspot.memory.SymbolTable
@@ -4015,13 +2850,6 @@ declare namespace sun {
                 public probe(arg0: byte[]): sun.jvm.hotspot.oops.Symbol
                 public symbolsDo(arg0: sun.jvm.hotspot.memory.SymbolTable$SymbolVisitor): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            interface SymbolTable$SymbolVisitor {
-                public visit(arg0: sun.jvm.hotspot.oops.Symbol): void
-            }
-            class SymbolTable$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class Universe {
                 public constructor()
@@ -4041,20 +2869,6 @@ declare namespace sun {
                 public static elementTypeShouldBeAligned(arg0: sun.jvm.hotspot.runtime.BasicType): boolean
                 public static fieldTypeShouldBeAligned(arg0: sun.jvm.hotspot.runtime.BasicType): boolean
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class Universe$2 {
-                static $SwitchMap$sun$jvm$hotspot$memory$Universe$NARROW_OOP_MODE: int[]
-            }
-            class Universe$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
-            class Universe$NARROW_OOP_MODE extends java.lang.Enum<sun.jvm.hotspot.memory.Universe$NARROW_OOP_MODE> {
-                public static UnscaledNarrowOop: sun.jvm.hotspot.memory.Universe$NARROW_OOP_MODE
-                public static ZeroBasedNarrowOop: sun.jvm.hotspot.memory.Universe$NARROW_OOP_MODE
-                public static HeapBasedNarrowOop: sun.jvm.hotspot.memory.Universe$NARROW_OOP_MODE
-                public static values(): sun.jvm.hotspot.memory.Universe$NARROW_OOP_MODE[]
-                public static valueOf(arg0: java.lang.String): sun.jvm.hotspot.memory.Universe$NARROW_OOP_MODE
             }
             
          }
@@ -4095,44 +2909,6 @@ declare namespace sun {
                 public getStackOffset(): int
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            abstract class OopMapValue$OopTypes {
-                public static UNUSED_VALUE: sun.jvm.hotspot.compiler.OopMapValue$OopTypes
-                public static OOP_VALUE: sun.jvm.hotspot.compiler.OopMapValue$OopTypes
-                public static VALUE_VALUE: sun.jvm.hotspot.compiler.OopMapValue$OopTypes
-                public static NARROWOOP_VALUE: sun.jvm.hotspot.compiler.OopMapValue$OopTypes
-                public static CALLEE_SAVED_VALUE: sun.jvm.hotspot.compiler.OopMapValue$OopTypes
-                public static DERIVED_OOP_VALUE: sun.jvm.hotspot.compiler.OopMapValue$OopTypes
-                getValue(): int
-                protected constructor()
-            }
-            class OopMapValue$OopTypes$6 extends sun.jvm.hotspot.compiler.OopMapValue$OopTypes {
-                constructor()
-                getValue(): int
-            }
-            class OopMapValue$OopTypes$5 extends sun.jvm.hotspot.compiler.OopMapValue$OopTypes {
-                constructor()
-                getValue(): int
-            }
-            class OopMapValue$OopTypes$4 extends sun.jvm.hotspot.compiler.OopMapValue$OopTypes {
-                constructor()
-                getValue(): int
-            }
-            class OopMapValue$OopTypes$3 extends sun.jvm.hotspot.compiler.OopMapValue$OopTypes {
-                constructor()
-                getValue(): int
-            }
-            class OopMapValue$OopTypes$2 extends sun.jvm.hotspot.compiler.OopMapValue$OopTypes {
-                constructor()
-                getValue(): int
-            }
-            class OopMapValue$OopTypes$1 extends sun.jvm.hotspot.compiler.OopMapValue$OopTypes {
-                constructor()
-                getValue(): int
-            }
-            class OopMapValue$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class OopMapStream {
                 public constructor(arg0: sun.jvm.hotspot.compiler.OopMap)
                 public constructor(arg0: sun.jvm.hotspot.compiler.OopMap, arg1: sun.jvm.hotspot.compiler.OopMapValue$OopTypes)
@@ -4147,10 +2923,6 @@ declare namespace sun {
                 public osrBci(): int
                 public compLevel(): int
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class CompileTask$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             interface OopMapVisitor {
                 public visitOopLocation(arg0: sun.jvm.hotspot.debugger.Address): void
@@ -4167,10 +2939,6 @@ declare namespace sun {
                 getWriteStream(): sun.jvm.hotspot.code.CompressedWriteStream
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class OopMap$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class OopMapSet extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public getSize(): long
@@ -4180,18 +2948,6 @@ declare namespace sun {
                 public static allDo(arg0: sun.jvm.hotspot.runtime.Frame, arg1: sun.jvm.hotspot.code.CodeBlob, arg2: sun.jvm.hotspot.runtime.RegisterMap, arg3: sun.jvm.hotspot.compiler.OopMapVisitor, arg4: boolean): void
                 public static updateRegisterMap(arg0: sun.jvm.hotspot.runtime.Frame, arg1: sun.jvm.hotspot.code.CodeBlob, arg2: sun.jvm.hotspot.runtime.RegisterMap, arg3: boolean): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class OopMapSet$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
-            class OopMapSet$MyVisitor implements sun.jvm.hotspot.compiler.OopMapVisitor {
-                public constructor(arg0: sun.jvm.hotspot.runtime.AddressVisitor)
-                public setAddressVisitor(arg0: sun.jvm.hotspot.runtime.AddressVisitor): void
-                public visitOopLocation(arg0: sun.jvm.hotspot.debugger.Address): void
-                public visitDerivedOopLocation(arg0: sun.jvm.hotspot.debugger.Address, arg1: sun.jvm.hotspot.debugger.Address): void
-                public visitValueLocation(arg0: sun.jvm.hotspot.debugger.Address): void
-                public visitNarrowOopLocation(arg0: sun.jvm.hotspot.debugger.Address): void
             }
             
          }
@@ -4432,6 +3188,7 @@ declare namespace sun {
                 public static _fast_sgetfield: int
                 public static _fast_aputfield: int
                 public static _fast_bputfield: int
+                public static _fast_zputfield: int
                 public static _fast_cputfield: int
                 public static _fast_dputfield: int
                 public static _fast_fputfield: int
@@ -4509,10 +3266,6 @@ declare namespace sun {
                 static compute_flags(arg0: java.lang.String): char
                 static compute_flags(arg0: java.lang.String, arg1: int): char
                 static access$000(): void
-            }
-            class Bytecodes$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class BytecodeTableswitch extends sun.jvm.hotspot.interpreter.Bytecode {
                 constructor(arg0: sun.jvm.hotspot.oops.Method, arg1: int)
@@ -4882,20 +3635,12 @@ declare namespace sun {
                 public printOn(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class InterpreterCodelet$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class Interpreter {
                 public constructor()
                 public getCode(): sun.jvm.hotspot.code.StubQueue
                 public contains(arg0: sun.jvm.hotspot.debugger.Address): boolean
                 public getCodeletContaining(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.interpreter.InterpreterCodelet
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class Interpreter$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             interface OffsetClosure {
                 public offsetDo(arg0: int): void
@@ -4916,11 +3661,6 @@ declare namespace sun {
                 fillForNative(): void
                 verifyMask(arg0: sun.jvm.hotspot.oops.CellTypeStateList, arg1: sun.jvm.hotspot.oops.CellTypeStateList, arg2: int, arg3: int): boolean
             }
-            class OopMapCacheEntry$VerifyClosure implements sun.jvm.hotspot.interpreter.OffsetClosure {
-                constructor(arg0: sun.jvm.hotspot.interpreter.OopMapCacheEntry)
-                public offsetDo(arg0: int): void
-                failed(): boolean
-            }
             
          }
          namespace code {
@@ -4929,18 +3669,10 @@ declare namespace sun {
                 public isUncommonTrapStub(): boolean
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class UncommonTrapBlob$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class SafepointBlob extends sun.jvm.hotspot.code.SingletonBlob {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public isSafepointStub(): boolean
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class SafepointBlob$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class RuntimeStub extends sun.jvm.hotspot.code.CodeBlob {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -4948,10 +3680,6 @@ declare namespace sun {
                 public callerMustGCArguments(): boolean
                 public getName(): java.lang.String
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class RuntimeStub$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class ObjectValue extends sun.jvm.hotspot.code.ScopeValue {
                 public constructor(arg0: int)
@@ -4979,10 +3707,6 @@ declare namespace sun {
                 public isMethodHandlesAdapterBlob(): boolean
                 public getName(): java.lang.String
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class MethodHandlesAdapterBlob$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class LocationValue extends sun.jvm.hotspot.code.ScopeValue {
                 public constructor(arg0: sun.jvm.hotspot.code.Location)
@@ -5025,55 +3749,20 @@ declare namespace sun {
                 static access$1000(): int
                 static access$1100(): int
             }
-            class Location$Type {
-                public static NORMAL: sun.jvm.hotspot.code.Location$Type
-                public static OOP: sun.jvm.hotspot.code.Location$Type
-                public static NARROWOOP: sun.jvm.hotspot.code.Location$Type
-                public static INT_IN_LONG: sun.jvm.hotspot.code.Location$Type
-                public static LNG: sun.jvm.hotspot.code.Location$Type
-                public static FLOAT_IN_DBL: sun.jvm.hotspot.code.Location$Type
-                public static DBL: sun.jvm.hotspot.code.Location$Type
-                public static ADDR: sun.jvm.hotspot.code.Location$Type
-                public static INVALID: sun.jvm.hotspot.code.Location$Type
-                public toString(): java.lang.String
-                public getValue(): int
-            }
-            class Location$Where {
-                public static ON_STACK: sun.jvm.hotspot.code.Location$Where
-                public static IN_REGISTER: sun.jvm.hotspot.code.Location$Where
-                public toString(): java.lang.String
-                public getValue(): int
-            }
-            class Location$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class ExceptionBlob extends sun.jvm.hotspot.code.SingletonBlob {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public isExceptionStub(): boolean
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class ExceptionBlob$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class SingletonBlob extends sun.jvm.hotspot.code.CodeBlob {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public isSingletonBlob(): boolean
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class SingletonBlob$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class DeoptimizationBlob extends sun.jvm.hotspot.code.SingletonBlob {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public isDeoptimizationStub(): boolean
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class DeoptimizationBlob$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class DebugInformationRecorder {
                 public static SERIALIZED_NULL: int
@@ -5116,19 +3805,11 @@ declare namespace sun {
                 public isBufferBlob(): boolean
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class BufferBlob$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class AdapterBlob extends sun.jvm.hotspot.code.CodeBlob {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public isAdapterBlob(): boolean
                 public getName(): java.lang.String
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class AdapterBlob$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             abstract class ScopeValue {
                 static LOCATION_CODE: int
@@ -5172,10 +3853,6 @@ declare namespace sun {
                 public getNext(arg0: sun.jvm.hotspot.code.Stub): sun.jvm.hotspot.code.Stub
                 public getPrev(arg0: sun.jvm.hotspot.code.Stub): sun.jvm.hotspot.code.Stub
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class StubQueue$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class CompressedWriteStream extends sun.jvm.hotspot.code.CompressedStream {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -5227,10 +3904,6 @@ declare namespace sun {
                 public static getRegisterName(arg0: int): java.lang.String
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class VMRegImpl$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class CodeCache {
                 public constructor()
                 public scavengeRootMethods(): sun.jvm.hotspot.code.NMethod
@@ -5242,10 +3915,6 @@ declare namespace sun {
                 public createCodeBlobWrapper(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.code.CodeBlob
                 public iterate(arg0: sun.jvm.hotspot.code.CodeCacheVisitor): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class CodeCache$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class ScopeDesc {
                 public constructor(arg0: sun.jvm.hotspot.code.NMethod, arg1: int, arg2: int, arg3: boolean)
@@ -5275,10 +3944,6 @@ declare namespace sun {
                 public print(arg0: sun.jvm.hotspot.code.NMethod): void
                 public printOn(arg0: java.io.PrintStream, arg1: sun.jvm.hotspot.code.NMethod): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class PCDesc$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class CodeBlob extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -5328,10 +3993,6 @@ declare namespace sun {
                 public printOn(arg0: java.io.PrintStream): void
                 protected printComponentsOn(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class CodeBlob$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class NMethod extends sun.jvm.hotspot.code.CodeBlob {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -5427,10 +4088,6 @@ declare namespace sun {
                 public dumpReplayData(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class NMethod$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             
          }
          namespace classfile {
@@ -5439,10 +4096,6 @@ declare namespace sun {
                 public static instantiateWrapperFor(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.classfile.ClassLoaderData
                 public getClassLoader(): sun.jvm.hotspot.oops.Oop
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class ClassLoaderData$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             
          }
@@ -5462,10 +4115,6 @@ declare namespace sun {
                    public getThreadProxy(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.debugger.ThreadProxy
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
                }
-               class Win32X86JavaThreadPDAccess$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-               }
                
             }
             namespace win32_amd64 {
@@ -5483,10 +4132,6 @@ declare namespace sun {
                    public getThreadProxy(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.debugger.ThreadProxy
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
                }
-               class Win32AMD64JavaThreadPDAccess$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-               }
                
             }
             namespace x86 {
@@ -5494,10 +4139,6 @@ declare namespace sun {
                    public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                    public getLastJavaFP(): sun.jvm.hotspot.debugger.Address
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-               }
-               class X86JavaCallWrapper$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
                }
                class X86RegisterMap extends sun.jvm.hotspot.runtime.RegisterMap {
                    public constructor(arg0: sun.jvm.hotspot.runtime.JavaThread, arg1: boolean)
@@ -5551,10 +4192,6 @@ declare namespace sun {
                    protected addressOfSavedReceiver(): sun.jvm.hotspot.debugger.Address
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
                }
-               class X86Frame$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-               }
                class X86CurrentFrameGuess {
                    public constructor(arg0: sun.jvm.hotspot.debugger.x86.X86ThreadContext, arg1: sun.jvm.hotspot.runtime.JavaThread)
                    public run(arg0: long): boolean
@@ -5576,10 +4213,6 @@ declare namespace sun {
                    public shiftWindow(arg0: sun.jvm.hotspot.debugger.Address, arg1: sun.jvm.hotspot.debugger.Address): void
                    public makeIntegerRegsUnsaved(): void
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-               }
-               class SPARCRegisterMap$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
                }
                class SPARCFrame extends sun.jvm.hotspot.runtime.Frame {
                    public static PC_RETURN_OFFSET: int
@@ -5658,10 +4291,6 @@ declare namespace sun {
                    public getThreadProxy(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.debugger.ThreadProxy
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
                }
-               class SolarisX86JavaThreadPDAccess$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-               }
                
             }
             namespace solaris_sparc {
@@ -5679,10 +4308,6 @@ declare namespace sun {
                    public getThreadProxy(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.debugger.ThreadProxy
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
                }
-               class SolarisSPARCJavaThreadPDAccess$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-               }
                
             }
             namespace solaris_amd64 {
@@ -5699,10 +4324,6 @@ declare namespace sun {
                    public getLastSP(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.debugger.Address
                    public getThreadProxy(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.debugger.ThreadProxy
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-               }
-               class SolarisAMD64JavaThreadPDAccess$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
                }
                
             }
@@ -5728,10 +4349,6 @@ declare namespace sun {
                    public getThreadProxy(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.debugger.ThreadProxy
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
                }
-               class LinuxSPARCJavaThreadPDAccess$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-               }
                
             }
             namespace linux_x86 {
@@ -5748,10 +4365,6 @@ declare namespace sun {
                    public getLastSP(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.debugger.Address
                    public getThreadProxy(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.debugger.ThreadProxy
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-               }
-               class LinuxX86JavaThreadPDAccess$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
                }
                class LinuxSignals {
                    public constructor()
@@ -5773,10 +4386,6 @@ declare namespace sun {
                    public getLastSP(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.debugger.Address
                    public getThreadProxy(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.debugger.ThreadProxy
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-               }
-               class LinuxAMD64JavaThreadPDAccess$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
                }
                
             }
@@ -5802,10 +4411,6 @@ declare namespace sun {
                    public getThreadProxy(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.debugger.ThreadProxy
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
                }
-               class BsdX86JavaThreadPDAccess$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-               }
                class BsdSignals {
                    public constructor()
                    public static getSignalName(arg0: int): java.lang.String
@@ -5827,10 +4432,6 @@ declare namespace sun {
                    public getThreadProxy(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.debugger.ThreadProxy
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
                }
-               class BsdAMD64JavaThreadPDAccess$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-               }
                
             }
             namespace bsd {
@@ -5846,10 +4447,6 @@ declare namespace sun {
                    public getLastJavaFP(): sun.jvm.hotspot.debugger.Address
                    static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
                }
-               class AMD64JavaCallWrapper$1 implements java.util.Observer {
-                   constructor()
-                   public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-               }
                class AMD64CurrentFrameGuess {
                    public constructor(arg0: sun.jvm.hotspot.debugger.amd64.AMD64ThreadContext, arg1: sun.jvm.hotspot.runtime.JavaThread)
                    public run(arg0: long): boolean
@@ -5863,10 +4460,6 @@ declare namespace sun {
                 public constructor()
                 public static symbolAt(arg0: int): sun.jvm.hotspot.oops.Symbol
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class vmSymbols$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class WatcherThread extends sun.jvm.hotspot.runtime.Thread {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -5987,13 +4580,6 @@ declare namespace sun {
                 public static iterate(arg0: sun.jvm.hotspot.runtime.PerfMemory$PerfDataEntryVisitor): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            interface PerfMemory$PerfDataEntryVisitor {
-                public visit(arg0: sun.jvm.hotspot.runtime.PerfDataEntry): boolean
-            }
-            class PerfMemory$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class PerfDataPrologue extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public magic(): int
@@ -6006,10 +4592,6 @@ declare namespace sun {
                 public entryOffset(): int
                 public numEntries(): int
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class PerfDataPrologue$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class PerfDataEntry extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -6042,23 +4624,6 @@ declare namespace sun {
                 public valueAsString(): java.lang.String
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            interface PerfDataEntry$PerfDataVariability {
-                public static V_Constant: int
-                public static V_Monotonic: int
-                public static V_Variable: int
-            }
-            interface PerfDataEntry$PerfDataUnits {
-                public static U_None: int
-                public static U_Bytes: int
-                public static U_Ticks: int
-                public static U_Events: int
-                public static U_String: int
-                public static U_Hertz: int
-            }
-            class PerfDataEntry$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class MonitorInfo {
                 public constructor(arg0: sun.jvm.hotspot.debugger.OopHandle, arg1: sun.jvm.hotspot.runtime.BasicLock, arg2: boolean, arg3: boolean)
                 public owner(): sun.jvm.hotspot.debugger.OopHandle
@@ -6081,10 +4646,6 @@ declare namespace sun {
                 public resolvedMethod(): sun.jvm.hotspot.oops.Method
                 public resolvedReceiver(): sun.jvm.hotspot.oops.Klass
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class JNIid$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class InterpretedVFrame extends sun.jvm.hotspot.runtime.JavaVFrame {
                 public getMethod(): sun.jvm.hotspot.oops.Method
@@ -6143,11 +4704,6 @@ declare namespace sun {
                 static access$000(arg0: sun.jvm.hotspot.runtime.ConcurrentLocksPrinter, arg1: sun.jvm.hotspot.oops.Oop): sun.jvm.hotspot.runtime.JavaThread
                 static access$100(arg0: sun.jvm.hotspot.runtime.ConcurrentLocksPrinter): java.util.Map
             }
-            class ConcurrentLocksPrinter$1 extends sun.jvm.hotspot.oops.DefaultHeapVisitor {
-                this$0: sun.jvm.hotspot.runtime.ConcurrentLocksPrinter
-                constructor(arg0: sun.jvm.hotspot.runtime.ConcurrentLocksPrinter)
-                public doObj(arg0: sun.jvm.hotspot.oops.Oop): boolean
-            }
             class CompilerThread extends sun.jvm.hotspot.runtime.JavaThread {
                 public env(): sun.jvm.hotspot.ci.ciEnv
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -6155,10 +4711,6 @@ declare namespace sun {
                 public isHiddenFromExternalView(): boolean
                 public isCompilerThread(): boolean
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class CompilerThread$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class CompiledVFrame extends sun.jvm.hotspot.runtime.JavaVFrame {
                 public constructor(arg0: sun.jvm.hotspot.runtime.Frame, arg1: sun.jvm.hotspot.runtime.RegisterMap, arg2: sun.jvm.hotspot.runtime.JavaThread, arg3: sun.jvm.hotspot.code.ScopeDesc, arg4: boolean)
@@ -6198,10 +4750,6 @@ declare namespace sun {
                 public static getJVMArgs(): java.lang.String
                 public static getJavaCommand(): java.lang.String
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class Arguments$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             abstract class SignatureInfo extends sun.jvm.hotspot.runtime.SignatureIterator {
                 protected hasIterated: boolean
@@ -6296,10 +4844,6 @@ declare namespace sun {
                 public contains(arg0: sun.jvm.hotspot.debugger.Address): boolean
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class VirtualSpace$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             interface JavaThreadFactory {
                 public createJavaThreadWrapper(arg0: sun.jvm.hotspot.debugger.Address, arg1: sun.jvm.hotspot.types.TypeDataBase): sun.jvm.hotspot.runtime.JavaThread
             }
@@ -6320,10 +4864,6 @@ declare namespace sun {
                 public returnsToCallStub(arg0: sun.jvm.hotspot.debugger.Address): boolean
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class StubRoutines$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class JNIHandles {
                 public constructor()
                 public globalHandles(): sun.jvm.hotspot.runtime.JNIHandleBlock
@@ -6331,10 +4871,6 @@ declare namespace sun {
                 public deletedHandle(): sun.jvm.hotspot.debugger.OopHandle
                 public isDeletedHandle(arg0: sun.jvm.hotspot.debugger.OopHandle): boolean
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class JNIHandles$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class ObjectSynchronizer {
                 public constructor()
@@ -6344,16 +4880,6 @@ declare namespace sun {
                 static access$100(): sun.jvm.hotspot.debugger.Address
                 static access$200(): int
                 static access$300(): long
-            }
-            class ObjectSynchronizer$ObjectMonitorIterator implements java.util.Iterator {
-                constructor()
-                public hasNext(): boolean
-                public next(): java.lang.Object
-                public remove(): void
-            }
-            class ObjectSynchronizer$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class Threads {
                 public constructor()
@@ -6366,10 +4892,6 @@ declare namespace sun {
                 public getPendingThreads(arg0: sun.jvm.hotspot.runtime.ObjectMonitor): java.util.List
                 public getWaitingThreads(arg0: sun.jvm.hotspot.runtime.ObjectMonitor): java.util.List
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class Threads$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class StackValue {
                 public constructor()
@@ -6397,20 +4919,12 @@ declare namespace sun {
                 public minus(arg0: sun.jvm.hotspot.runtime.VMReg): int
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class VMReg$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class JavaCallWrapper extends sun.jvm.hotspot.runtime.VMObject {
                 protected static anchorField: sun.jvm.hotspot.types.AddressField
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public getLastJavaSP(): sun.jvm.hotspot.debugger.Address
                 public getLastJavaPC(): sun.jvm.hotspot.debugger.Address
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class JavaCallWrapper$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class BasicObjectLock extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -6419,10 +4933,6 @@ declare namespace sun {
                 public static size(): int
                 public address(): sun.jvm.hotspot.debugger.Address
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class BasicObjectLock$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class VM {
                 public static initialize(arg0: sun.jvm.hotspot.types.TypeDataBase, arg1: boolean): void
@@ -6501,31 +5011,6 @@ declare namespace sun {
                 static access$200(): sun.jvm.hotspot.types.Type
                 static access$402(arg0: sun.jvm.hotspot.runtime.VM, arg1: java.util.Properties): java.util.Properties
             }
-            class VM$2 extends sun.jvm.hotspot.oops.DefaultOopVisitor {
-                objReader: sun.jvm.hotspot.utilities.ObjectReader
-                this$0: sun.jvm.hotspot.runtime.VM
-                constructor(arg0: sun.jvm.hotspot.runtime.VM)
-                public doOop(arg0: sun.jvm.hotspot.oops.OopField, arg1: boolean): void
-            }
-            class VM$1 implements java.util.Comparator {
-                this$0: sun.jvm.hotspot.runtime.VM
-                constructor(arg0: sun.jvm.hotspot.runtime.VM)
-                public compare(arg0: java.lang.Object, arg1: java.lang.Object): int
-            }
-            class VM$Flag {
-                public getType(): java.lang.String
-                public getName(): java.lang.String
-                public getAddress(): sun.jvm.hotspot.debugger.Address
-                public getOrigin(): int
-                public isBool(): boolean
-                public getBool(): boolean
-                public isIntx(): boolean
-                public getIntx(): long
-                public isUIntx(): boolean
-                public getUIntx(): long
-                public getValue(): java.lang.String
-                constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: sun.jvm.hotspot.debugger.Address, arg3: int, arg4: sun.jvm.hotspot.runtime.VM$1)
-            }
             class StackValueCollection {
                 public constructor()
                 public constructor(arg0: int)
@@ -6554,10 +5039,6 @@ declare namespace sun {
                 public toString(): java.lang.String
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class JNIHandleBlock$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class ThreadLocalAllocBuffer extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public start(): sun.jvm.hotspot.debugger.Address
@@ -6571,19 +5052,11 @@ declare namespace sun {
                 public printOn(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class ThreadLocalAllocBuffer$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class OSThread extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public interrupted(): boolean
                 public threadId(): int
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class OSThread$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class JavaThreadState {
                 public static UNINITIALIZED: sun.jvm.hotspot.runtime.JavaThreadState
@@ -6626,10 +5099,6 @@ declare namespace sun {
                 protected initializeFromPD(arg0: sun.jvm.hotspot.runtime.RegisterMap): void
                 protected getLocationPD(arg0: sun.jvm.hotspot.runtime.VMReg): sun.jvm.hotspot.debugger.Address
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class RegisterMap$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             abstract class Frame implements java.lang.Cloneable {
                 protected raw_sp: sun.jvm.hotspot.debugger.Address
@@ -6708,18 +5177,6 @@ declare namespace sun {
                 public printOn(arg0: java.io.PrintStream): void
                 public interpreterFramePrintOn(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class Frame$InterpVisitor implements sun.jvm.hotspot.compiler.OopMapVisitor {
-                public constructor(arg0: sun.jvm.hotspot.runtime.AddressVisitor)
-                public setAddressVisitor(arg0: sun.jvm.hotspot.runtime.AddressVisitor): void
-                public visitOopLocation(arg0: sun.jvm.hotspot.debugger.Address): void
-                public visitDerivedOopLocation(arg0: sun.jvm.hotspot.debugger.Address, arg1: sun.jvm.hotspot.debugger.Address): void
-                public visitValueLocation(arg0: sun.jvm.hotspot.debugger.Address): void
-                public visitNarrowOopLocation(arg0: sun.jvm.hotspot.debugger.Address): void
-            }
-            class Frame$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             interface JavaThreadPDAccess {
                 public getLastJavaFP(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.debugger.Address
@@ -6803,18 +5260,10 @@ declare namespace sun {
                 public contentions(): long
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class ObjectMonitor$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class BasicLock extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public displacedHeader(): sun.jvm.hotspot.oops.Mark
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class BasicLock$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             interface AddressVisitor {
                 public visitAddress(arg0: sun.jvm.hotspot.debugger.Address): void
@@ -6890,10 +5339,6 @@ declare namespace sun {
                 threadObjectAddress(): sun.jvm.hotspot.debugger.Address
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class Thread$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class JavaThread extends sun.jvm.hotspot.runtime.Thread {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 setThreadPDAccess(arg0: sun.jvm.hotspot.runtime.JavaThreadPDAccess): void
@@ -6927,10 +5372,6 @@ declare namespace sun {
                 public getCurrentParkBlocker(): sun.jvm.hotspot.oops.Oop
                 public printInfoOn(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class JavaThread$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             interface ClassConstants {
                 public static JVM_CONSTANT_Utf8: int
@@ -7037,25 +5478,6 @@ declare namespace sun {
                    public setValueAt(arg0: java.lang.Object, arg1: int, arg2: int): void
                    protected delayedFireTableDataChanged(): void
                }
-               class TreeTableModelAdapter$3 implements java.lang.Runnable {
-                   this$0: sun.jvm.hotspot.ui.treetable.TreeTableModelAdapter
-                   constructor(arg0: sun.jvm.hotspot.ui.treetable.TreeTableModelAdapter)
-                   public run(): void
-               }
-               class TreeTableModelAdapter$2 implements javax.swing.event.TreeModelListener {
-                   this$0: sun.jvm.hotspot.ui.treetable.TreeTableModelAdapter
-                   constructor(arg0: sun.jvm.hotspot.ui.treetable.TreeTableModelAdapter)
-                   public treeNodesChanged(arg0: javax.swing.event.TreeModelEvent): void
-                   public treeNodesInserted(arg0: javax.swing.event.TreeModelEvent): void
-                   public treeNodesRemoved(arg0: javax.swing.event.TreeModelEvent): void
-                   public treeStructureChanged(arg0: javax.swing.event.TreeModelEvent): void
-               }
-               class TreeTableModelAdapter$1 implements javax.swing.event.TreeExpansionListener {
-                   this$0: sun.jvm.hotspot.ui.treetable.TreeTableModelAdapter
-                   constructor(arg0: sun.jvm.hotspot.ui.treetable.TreeTableModelAdapter)
-                   public treeExpanded(arg0: javax.swing.event.TreeExpansionEvent): void
-                   public treeCollapsed(arg0: javax.swing.event.TreeExpansionEvent): void
-               }
                class SimpleTreeTableModel extends sun.jvm.hotspot.ui.tree.SimpleTreeModel implements sun.jvm.hotspot.ui.treetable.TreeTableModel {
                    public constructor()
                    public getColumnCount(): int
@@ -7086,52 +5508,6 @@ declare namespace sun {
                    static access$000(arg0: sun.jvm.hotspot.ui.treetable.JTreeTable): boolean
                    static access$100(arg0: sun.jvm.hotspot.ui.treetable.JTreeTable): int
                    static access$200(arg0: sun.jvm.hotspot.ui.treetable.JTreeTable): boolean
-               }
-               class JTreeTable$ListToTreeSelectionModelWrapper extends javax.swing.tree.DefaultTreeSelectionModel {
-                   protected updatingListSelectionModel: boolean
-                   this$0: sun.jvm.hotspot.ui.treetable.JTreeTable
-                   public constructor(arg0: sun.jvm.hotspot.ui.treetable.JTreeTable)
-                   getListSelectionModel(): javax.swing.ListSelectionModel
-                   public resetRowSelection(): void
-                   protected createListSelectionListener(): javax.swing.event.ListSelectionListener
-                   protected updateSelectedPathsFromSelectedRows(): void
-               }
-               class JTreeTable$ListToTreeSelectionModelWrapper$ListSelectionHandler implements javax.swing.event.ListSelectionListener {
-                   this$1: sun.jvm.hotspot.ui.treetable.JTreeTable$ListToTreeSelectionModelWrapper
-                   constructor(arg0: sun.jvm.hotspot.ui.treetable.JTreeTable$ListToTreeSelectionModelWrapper)
-                   public valueChanged(arg0: javax.swing.event.ListSelectionEvent): void
-               }
-               class JTreeTable$TreeTableTextField extends javax.swing.JTextField {
-                   public offset: int
-                   constructor()
-                   public setBounds(arg0: int, arg1: int, arg2: int, arg3: int): void
-               }
-               class JTreeTable$TreeTableCellEditor extends javax.swing.DefaultCellEditor {
-                   this$0: sun.jvm.hotspot.ui.treetable.JTreeTable
-                   public constructor(arg0: sun.jvm.hotspot.ui.treetable.JTreeTable)
-                   public getTableCellEditorComponent(arg0: javax.swing.JTable, arg1: java.lang.Object, arg2: boolean, arg3: int, arg4: int): java.awt.Component
-                   public isCellEditable(arg0: java.util.EventObject): boolean
-               }
-               class JTreeTable$TreeTableCellRenderer extends javax.swing.JTree implements javax.swing.table.TableCellRenderer {
-                   protected visibleRow: int
-                   protected highlightBorder: javax.swing.border.Border
-                   this$0: sun.jvm.hotspot.ui.treetable.JTreeTable
-                   public constructor(arg0: sun.jvm.hotspot.ui.treetable.JTreeTable, arg1: javax.swing.tree.TreeModel)
-                   public updateUI(): void
-                   public setRowHeight(arg0: int): void
-                   public setBounds(arg0: int, arg1: int, arg2: int, arg3: int): void
-                   public paint(arg0: java.awt.Graphics): void
-                   public getTableCellRendererComponent(arg0: javax.swing.JTable, arg1: java.lang.Object, arg2: boolean, arg3: boolean, arg4: int, arg5: int): java.awt.Component
-               }
-               class JTreeTable$JTreeTableCellRenderer extends javax.swing.tree.DefaultTreeCellRenderer {
-                   this$0: sun.jvm.hotspot.ui.treetable.JTreeTable
-                   constructor(arg0: sun.jvm.hotspot.ui.treetable.JTreeTable)
-                   public getClosedIcon(): javax.swing.Icon
-                   public getDefaultClosedIcon(): javax.swing.Icon
-                   public getDefaultLeafIcon(): javax.swing.Icon
-                   public getDefaultOpenIcon(): javax.swing.Icon
-                   public getLeafIcon(): javax.swing.Icon
-                   public getOpenIcon(): javax.swing.Icon
                }
                interface TreeTableModel extends javax.swing.tree.TreeModel {
                    public getColumnCount(): int
@@ -7285,32 +5661,6 @@ declare namespace sun {
                 static access$500(arg0: sun.jvm.hotspot.ui.SourceCodePanel): sun.jvm.hotspot.ui.Editor
                 static access$600(arg0: sun.jvm.hotspot.ui.SourceCodePanel): sun.jvm.hotspot.ui.EditorCommands
             }
-            class SourceCodePanel$2 extends java.awt.event.KeyAdapter {
-                this$0: sun.jvm.hotspot.ui.SourceCodePanel
-                constructor(arg0: sun.jvm.hotspot.ui.SourceCodePanel)
-                public keyPressed(arg0: java.awt.event.KeyEvent): void
-            }
-            class SourceCodePanel$1 extends java.awt.event.FocusAdapter {
-                this$0: sun.jvm.hotspot.ui.SourceCodePanel
-                constructor(arg0: sun.jvm.hotspot.ui.SourceCodePanel)
-                public focusGained(arg0: java.awt.event.FocusEvent): void
-            }
-            class SourceCodePanel$RowHeader extends javax.swing.JPanel {
-                this$0: sun.jvm.hotspot.ui.SourceCodePanel
-                public constructor(arg0: sun.jvm.hotspot.ui.SourceCodePanel)
-                public paint(arg0: java.awt.Graphics): void
-                public getShowLineNumbers(): boolean
-                public setShowLineNumbers(arg0: boolean): void
-                public setFont(arg0: java.awt.Font): void
-                setViewport(arg0: javax.swing.JViewport): void
-                recomputeSize(): void
-            }
-            class SourceCodePanel$RowHeader$1 extends java.awt.event.HierarchyBoundsAdapter {
-                val$this$0: sun.jvm.hotspot.ui.SourceCodePanel
-                this$1: sun.jvm.hotspot.ui.SourceCodePanel$RowHeader
-                constructor(arg0: sun.jvm.hotspot.ui.SourceCodePanel$RowHeader, arg1: sun.jvm.hotspot.ui.SourceCodePanel)
-                public ancestorResized(arg0: java.awt.event.HierarchyEvent): void
-            }
             class ProcessListPanel extends javax.swing.JPanel {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Debugger)
                 public setAutoUpdateInterval(arg0: int): void
@@ -7329,34 +5679,6 @@ declare namespace sun {
                 static access$600(arg0: sun.jvm.hotspot.ui.ProcessListPanel, arg1: java.util.List, arg2: int): int
                 static access$700(arg0: sun.jvm.hotspot.ui.ProcessListPanel): javax.swing.table.AbstractTableModel
             }
-            class ProcessListPanel$5 implements java.awt.event.ActionListener {
-                this$0: sun.jvm.hotspot.ui.ProcessListPanel
-                constructor(arg0: sun.jvm.hotspot.ui.ProcessListPanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class ProcessListPanel$4 implements java.util.Comparator {
-                this$0: sun.jvm.hotspot.ui.ProcessListPanel
-                constructor(arg0: sun.jvm.hotspot.ui.ProcessListPanel)
-                public compare(arg0: java.lang.Object, arg1: java.lang.Object): int
-            }
-            class ProcessListPanel$3 implements java.util.Comparator {
-                this$0: sun.jvm.hotspot.ui.ProcessListPanel
-                constructor(arg0: sun.jvm.hotspot.ui.ProcessListPanel)
-                public compare(arg0: java.lang.Object, arg1: java.lang.Object): int
-            }
-            class ProcessListPanel$2 extends java.awt.event.MouseAdapter {
-                this$0: sun.jvm.hotspot.ui.ProcessListPanel
-                constructor(arg0: sun.jvm.hotspot.ui.ProcessListPanel)
-                public mousePressed(arg0: java.awt.event.MouseEvent): void
-            }
-            class ProcessListPanel$1 extends javax.swing.table.AbstractTableModel {
-                this$0: sun.jvm.hotspot.ui.ProcessListPanel
-                constructor(arg0: sun.jvm.hotspot.ui.ProcessListPanel)
-                public getColumnCount(): int
-                public getRowCount(): int
-                public getColumnName(arg0: int): java.lang.String
-                public getValueAt(arg0: int, arg1: int): java.lang.Object
-            }
             class ObjectListPanel extends sun.jvm.hotspot.ui.SAPanel {
                 public constructor(arg0: java.util.List, arg1: sun.jvm.hotspot.utilities.HeapProgressThunk)
                 static access$000(arg0: sun.jvm.hotspot.ui.ObjectListPanel): void
@@ -7372,70 +5694,11 @@ declare namespace sun {
                 static access$1000(arg0: sun.jvm.hotspot.ui.ObjectListPanel): sun.jvm.hotspot.ui.ObjectListPanel$ObjectListTableModel
                 static access$1100(arg0: sun.jvm.hotspot.ui.ObjectListPanel): sun.jvm.hotspot.utilities.HeapProgressThunk
             }
-            class ObjectListPanel$5 implements java.lang.Runnable {
-                val$cutoverButtonRunnable: java.lang.Runnable
-                val$worker: sun.jvm.hotspot.utilities.WorkerThread
-                this$0: sun.jvm.hotspot.ui.ObjectListPanel
-                constructor(arg0: sun.jvm.hotspot.ui.ObjectListPanel, arg1: java.lang.Runnable, arg2: sun.jvm.hotspot.utilities.WorkerThread)
-                public run(): void
-            }
-            class ObjectListPanel$4 implements java.lang.Runnable {
-                this$0: sun.jvm.hotspot.ui.ObjectListPanel
-                constructor(arg0: sun.jvm.hotspot.ui.ObjectListPanel)
-                public run(): void
-            }
-            class ObjectListPanel$4$1 implements java.awt.event.ActionListener {
-                this$1: sun.jvm.hotspot.ui.ObjectListPanel$4
-                constructor(arg0: sun.jvm.hotspot.ui.ObjectListPanel$4)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class ObjectListPanel$ObjectListTableModel extends sun.jvm.hotspot.ui.table.SortableTableModel {
-                this$0: sun.jvm.hotspot.ui.ObjectListPanel
-                public constructor(arg0: sun.jvm.hotspot.ui.ObjectListPanel)
-                public getColumnCount(): int
-                public getRowCount(): int
-                public getColumnName(arg0: int): java.lang.String
-                public getValueAt(arg0: int, arg1: int): java.lang.Object
-                public getValueForColumn(arg0: sun.jvm.hotspot.oops.Oop, arg1: int): java.lang.Object
-            }
-            class ObjectListPanel$ObjectListTableModel$ObjectListComparator extends sun.jvm.hotspot.ui.table.TableModelComparator {
-                this$1: sun.jvm.hotspot.ui.ObjectListPanel$ObjectListTableModel
-                public constructor(arg0: sun.jvm.hotspot.ui.ObjectListPanel$ObjectListTableModel, arg1: sun.jvm.hotspot.ui.ObjectListPanel$ObjectListTableModel)
-                public getValueForColumn(arg0: java.lang.Object, arg1: int): java.lang.Object
-            }
-            class ObjectListPanel$AddressWrapper implements java.lang.Comparable {
-                public toString(): java.lang.String
-                public compareTo(arg0: java.lang.Object): int
-                constructor(arg0: sun.jvm.hotspot.debugger.Address, arg1: sun.jvm.hotspot.ui.ObjectListPanel$1)
-            }
-            class ObjectListPanel$3 implements java.awt.event.ActionListener {
-                this$0: sun.jvm.hotspot.ui.ObjectListPanel
-                constructor(arg0: sun.jvm.hotspot.ui.ObjectListPanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class ObjectListPanel$2 implements java.awt.event.ActionListener {
-                this$0: sun.jvm.hotspot.ui.ObjectListPanel
-                constructor(arg0: sun.jvm.hotspot.ui.ObjectListPanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class ObjectListPanel$1 implements java.awt.event.ActionListener {
-                this$0: sun.jvm.hotspot.ui.ObjectListPanel
-                constructor(arg0: sun.jvm.hotspot.ui.ObjectListPanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
             class MonitorCacheDumpPanel extends javax.swing.JPanel {
                 public constructor()
             }
             class MemoryViewer extends javax.swing.JPanel {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Debugger, arg1: boolean)
-            }
-            class MemoryViewer$1 implements java.awt.event.ActionListener {
-                val$memory: sun.jvm.hotspot.ui.MemoryPanel
-                val$debugger: sun.jvm.hotspot.debugger.Debugger
-                val$addressField: javax.swing.JTextField
-                this$0: sun.jvm.hotspot.ui.MemoryViewer
-                constructor(arg0: sun.jvm.hotspot.ui.MemoryViewer, arg1: sun.jvm.hotspot.ui.MemoryPanel, arg2: sun.jvm.hotspot.debugger.Debugger, arg3: javax.swing.JTextField)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
             }
             class MemoryPanel extends javax.swing.JPanel {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Debugger, arg1: boolean)
@@ -7469,105 +5732,6 @@ declare namespace sun {
                 static access$2600(arg0: sun.jvm.hotspot.ui.MemoryPanel): void
                 static access$2700(arg0: sun.jvm.hotspot.ui.MemoryPanel): void
             }
-            class MemoryPanel$17 implements javax.swing.event.ChangeListener {
-                this$0: sun.jvm.hotspot.ui.MemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.MemoryPanel)
-                public stateChanged(arg0: javax.swing.event.ChangeEvent): void
-            }
-            class MemoryPanel$16 implements java.awt.event.HierarchyListener {
-                this$0: sun.jvm.hotspot.ui.MemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.MemoryPanel)
-                public hierarchyChanged(arg0: java.awt.event.HierarchyEvent): void
-            }
-            class MemoryPanel$15 extends java.awt.event.ComponentAdapter {
-                this$0: sun.jvm.hotspot.ui.MemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.MemoryPanel)
-                public componentResized(arg0: java.awt.event.ComponentEvent): void
-            }
-            class MemoryPanel$14 extends java.awt.event.MouseMotionAdapter {
-                this$0: sun.jvm.hotspot.ui.MemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.MemoryPanel)
-                public mouseDragged(arg0: java.awt.event.MouseEvent): void
-            }
-            class MemoryPanel$13 extends java.awt.event.MouseAdapter {
-                this$0: sun.jvm.hotspot.ui.MemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.MemoryPanel)
-                public mousePressed(arg0: java.awt.event.MouseEvent): void
-            }
-            class MemoryPanel$12 extends sun.jvm.hotspot.ui.MemoryPanel$ActionWrapper {
-                this$0: sun.jvm.hotspot.ui.MemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.MemoryPanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class MemoryPanel$11 extends sun.jvm.hotspot.ui.MemoryPanel$ActionWrapper {
-                this$0: sun.jvm.hotspot.ui.MemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.MemoryPanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class MemoryPanel$10 extends sun.jvm.hotspot.ui.MemoryPanel$ActionWrapper {
-                this$0: sun.jvm.hotspot.ui.MemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.MemoryPanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class MemoryPanel$9 extends sun.jvm.hotspot.ui.MemoryPanel$ActionWrapper {
-                this$0: sun.jvm.hotspot.ui.MemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.MemoryPanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class MemoryPanel$8 extends sun.jvm.hotspot.ui.MemoryPanel$ActionWrapper {
-                this$0: sun.jvm.hotspot.ui.MemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.MemoryPanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class MemoryPanel$7 extends sun.jvm.hotspot.ui.MemoryPanel$ActionWrapper {
-                this$0: sun.jvm.hotspot.ui.MemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.MemoryPanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class MemoryPanel$6 extends sun.jvm.hotspot.ui.MemoryPanel$ActionWrapper {
-                this$0: sun.jvm.hotspot.ui.MemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.MemoryPanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class MemoryPanel$5 extends sun.jvm.hotspot.ui.MemoryPanel$ActionWrapper {
-                this$0: sun.jvm.hotspot.ui.MemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.MemoryPanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class MemoryPanel$4 extends sun.jvm.hotspot.ui.MemoryPanel$ActionWrapper {
-                this$0: sun.jvm.hotspot.ui.MemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.MemoryPanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class MemoryPanel$3 extends sun.jvm.hotspot.ui.MemoryPanel$ActionWrapper {
-                this$0: sun.jvm.hotspot.ui.MemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.MemoryPanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class MemoryPanel$2 extends javax.swing.TransferHandler {
-                val$debugger: sun.jvm.hotspot.debugger.Debugger
-                this$0: sun.jvm.hotspot.ui.MemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.MemoryPanel, arg1: sun.jvm.hotspot.debugger.Debugger)
-                protected createTransferable(arg0: javax.swing.JComponent): java.awt.datatransfer.Transferable
-                public getSourceActions(arg0: javax.swing.JComponent): int
-                public importData(arg0: javax.swing.JComponent, arg1: java.awt.datatransfer.Transferable): boolean
-                public canImport(arg0: javax.swing.JComponent, arg1: java.awt.datatransfer.DataFlavor[]): boolean
-            }
-            class MemoryPanel$1 extends javax.swing.table.AbstractTableModel {
-                this$0: sun.jvm.hotspot.ui.MemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.MemoryPanel)
-                public getRowCount(): int
-                public getColumnCount(): int
-                public getValueAt(arg0: int, arg1: int): java.lang.Object
-                public isCellEditable(arg0: int, arg1: int): boolean
-            }
-            abstract class MemoryPanel$ActionWrapper extends javax.swing.AbstractAction {
-                this$0: sun.jvm.hotspot.ui.MemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.MemoryPanel)
-                setParent(arg0: javax.swing.Action): void
-                getParent(): javax.swing.Action
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
             class ThreadInfoPanel extends javax.swing.JPanel {
                 public constructor()
                 public constructor(arg0: sun.jvm.hotspot.runtime.JavaThread)
@@ -7583,67 +5747,6 @@ declare namespace sun {
                 static access$800(arg0: sun.jvm.hotspot.ui.JavaThreadsPanel): sun.jvm.hotspot.ui.JavaThreadsPanel$JavaThreadsTableModel
                 static access$900(arg0: sun.jvm.hotspot.ui.JavaThreadsPanel): java.util.List
             }
-            class JavaThreadsPanel$CachedThread {
-                this$0: sun.jvm.hotspot.ui.JavaThreadsPanel
-                public constructor(arg0: sun.jvm.hotspot.ui.JavaThreadsPanel, arg1: sun.jvm.hotspot.runtime.JavaThread)
-                public getThread(): sun.jvm.hotspot.runtime.JavaThread
-                public getThreadID(): java.lang.String
-                public getThreadName(): java.lang.String
-            }
-            class JavaThreadsPanel$JavaThreadsTableModel extends javax.swing.table.AbstractTableModel {
-                this$0: sun.jvm.hotspot.ui.JavaThreadsPanel
-                public constructor(arg0: sun.jvm.hotspot.ui.JavaThreadsPanel, arg1: java.util.List)
-                public getColumnCount(): int
-                public getRowCount(): int
-                public getColumnName(arg0: int): java.lang.String
-                public getValueAt(arg0: int, arg1: int): java.lang.Object
-                public getJavaThread(arg0: int): sun.jvm.hotspot.runtime.JavaThread
-            }
-            class JavaThreadsPanel$JavaThreadsColumnModel extends javax.swing.table.DefaultTableColumnModel {
-                this$0: sun.jvm.hotspot.ui.JavaThreadsPanel
-                public constructor(arg0: sun.jvm.hotspot.ui.JavaThreadsPanel)
-            }
-            class JavaThreadsPanel$JavaThreadsToolBar extends com.sun.java.swing.ui.CommonToolBar {
-                this$0: sun.jvm.hotspot.ui.JavaThreadsPanel
-                public constructor(arg0: sun.jvm.hotspot.ui.JavaThreadsPanel, arg1: com.sun.java.swing.ui.StatusBar)
-                protected addComponents(): void
-            }
-            class JavaThreadsPanel$ThreadPanel extends javax.swing.JPanel {
-                this$0: sun.jvm.hotspot.ui.JavaThreadsPanel
-                public constructor(arg0: sun.jvm.hotspot.ui.JavaThreadsPanel, arg1: javax.swing.JTable)
-                static access$300(arg0: sun.jvm.hotspot.ui.JavaThreadsPanel$ThreadPanel): void
-                static access$400(arg0: sun.jvm.hotspot.ui.JavaThreadsPanel$ThreadPanel): void
-                static access$500(arg0: sun.jvm.hotspot.ui.JavaThreadsPanel$ThreadPanel, arg1: boolean): void
-                static access$600(arg0: sun.jvm.hotspot.ui.JavaThreadsPanel$ThreadPanel): boolean
-                static access$700(arg0: sun.jvm.hotspot.ui.JavaThreadsPanel$ThreadPanel): void
-            }
-            class JavaThreadsPanel$ThreadPanel$2 implements javax.swing.event.ListSelectionListener {
-                val$this$0: sun.jvm.hotspot.ui.JavaThreadsPanel
-                this$1: sun.jvm.hotspot.ui.JavaThreadsPanel$ThreadPanel
-                constructor(arg0: sun.jvm.hotspot.ui.JavaThreadsPanel$ThreadPanel, arg1: sun.jvm.hotspot.ui.JavaThreadsPanel)
-                public valueChanged(arg0: javax.swing.event.ListSelectionEvent): void
-            }
-            class JavaThreadsPanel$ThreadPanel$1 implements java.awt.event.ItemListener {
-                val$this$0: sun.jvm.hotspot.ui.JavaThreadsPanel
-                this$1: sun.jvm.hotspot.ui.JavaThreadsPanel$ThreadPanel
-                constructor(arg0: sun.jvm.hotspot.ui.JavaThreadsPanel$ThreadPanel, arg1: sun.jvm.hotspot.ui.JavaThreadsPanel)
-                public itemStateChanged(arg0: java.awt.event.ItemEvent): void
-            }
-            class JavaThreadsPanel$3 extends java.awt.event.MouseAdapter {
-                this$0: sun.jvm.hotspot.ui.JavaThreadsPanel
-                constructor(arg0: sun.jvm.hotspot.ui.JavaThreadsPanel)
-                public mouseClicked(arg0: java.awt.event.MouseEvent): void
-            }
-            class JavaThreadsPanel$2 implements java.util.Observer {
-                this$0: sun.jvm.hotspot.ui.JavaThreadsPanel
-                constructor(arg0: sun.jvm.hotspot.ui.JavaThreadsPanel)
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
-            class JavaThreadsPanel$1 implements java.util.Observer {
-                this$0: sun.jvm.hotspot.ui.JavaThreadsPanel
-                constructor(arg0: sun.jvm.hotspot.ui.JavaThreadsPanel)
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             namespace classbrowser {
                class CodeViewerPanel extends javax.swing.JPanel {
                    protected contentEditor: sun.jvm.hotspot.ui.SAEditorPane
@@ -7654,16 +5757,6 @@ declare namespace sun {
                    public viewAddress(arg0: sun.jvm.hotspot.debugger.Address): void
                    static access$000(arg0: sun.jvm.hotspot.ui.classbrowser.CodeViewerPanel): void
                }
-               class CodeViewerPanel$2 implements java.awt.event.ActionListener {
-                   this$0: sun.jvm.hotspot.ui.classbrowser.CodeViewerPanel
-                   constructor(arg0: sun.jvm.hotspot.ui.classbrowser.CodeViewerPanel)
-                   public actionPerformed(arg0: java.awt.event.ActionEvent): void
-               }
-               class CodeViewerPanel$1 implements javax.swing.event.HyperlinkListener {
-                   this$0: sun.jvm.hotspot.ui.classbrowser.CodeViewerPanel
-                   constructor(arg0: sun.jvm.hotspot.ui.classbrowser.CodeViewerPanel)
-                   public hyperlinkUpdate(arg0: javax.swing.event.HyperlinkEvent): void
-               }
                class ClassBrowserPanel extends javax.swing.JPanel implements java.awt.event.ActionListener {
                    public constructor()
                    public setClassesText(arg0: java.lang.String): void
@@ -7672,17 +5765,6 @@ declare namespace sun {
                    protected registerActions(): void
                    static access$000(arg0: sun.jvm.hotspot.ui.classbrowser.ClassBrowserPanel): sun.jvm.hotspot.ui.classbrowser.HTMLGenerator
                    static access$100(arg0: sun.jvm.hotspot.ui.classbrowser.ClassBrowserPanel): sun.jvm.hotspot.ui.SAEditorPane
-               }
-               class ClassBrowserPanel$ClassBrowserToolBar extends com.sun.java.swing.ui.CommonToolBar {
-                   this$0: sun.jvm.hotspot.ui.classbrowser.ClassBrowserPanel
-                   public constructor(arg0: sun.jvm.hotspot.ui.classbrowser.ClassBrowserPanel, arg1: com.sun.java.swing.ui.StatusBar)
-                   protected addComponents(): void
-                   public getFindText(): java.lang.String
-               }
-               class ClassBrowserPanel$1 implements javax.swing.event.HyperlinkListener {
-                   this$0: sun.jvm.hotspot.ui.classbrowser.ClassBrowserPanel
-                   constructor(arg0: sun.jvm.hotspot.ui.classbrowser.ClassBrowserPanel)
-                   public hyperlinkUpdate(arg0: javax.swing.event.HyperlinkEvent): void
                }
                class HTMLGenerator implements sun.jvm.hotspot.runtime.ClassConstants {
                    public constructor()
@@ -7773,69 +5855,6 @@ declare namespace sun {
                    static access$100(arg0: sun.jvm.hotspot.ui.classbrowser.HTMLGenerator): java.lang.String
                    static access$200(arg0: sun.jvm.hotspot.ui.classbrowser.HTMLGenerator): boolean
                }
-               class HTMLGenerator$1OopMapValueIterator {
-                   val$stack0: int
-                   this$0: sun.jvm.hotspot.ui.classbrowser.HTMLGenerator
-                   constructor()
-                   iterate(arg0: sun.jvm.hotspot.compiler.OopMapStream, arg1: java.lang.String, arg2: boolean): sun.jvm.hotspot.ui.classbrowser.HTMLGenerator$Formatter
-               }
-               class HTMLGenerator$HTMLDisassembler implements sun.jvm.hotspot.asm.InstructionVisitor {
-                   this$0: sun.jvm.hotspot.ui.classbrowser.HTMLGenerator
-                   constructor(arg0: sun.jvm.hotspot.ui.classbrowser.HTMLGenerator, arg1: sun.jvm.hotspot.ui.classbrowser.HTMLGenerator$Formatter, arg2: sun.jvm.hotspot.code.CodeBlob)
-                   public getInstructionSize(): int
-                   public prologue(): void
-                   public beginInstruction(arg0: long): void
-                   public printAddress(arg0: long): void
-                   public print(arg0: java.lang.String): void
-                   public endInstruction(arg0: long): void
-                   public epilogue(): void
-               }
-               class HTMLGenerator$1 implements sun.jvm.hotspot.interpreter.BytecodeVisitor {
-                   val$buf: sun.jvm.hotspot.ui.classbrowser.HTMLGenerator$Formatter
-                   val$hasLineNumbers: boolean
-                   this$0: sun.jvm.hotspot.ui.classbrowser.HTMLGenerator
-                   constructor(arg0: sun.jvm.hotspot.ui.classbrowser.HTMLGenerator, arg1: sun.jvm.hotspot.ui.classbrowser.HTMLGenerator$Formatter, arg2: boolean)
-                   public prologue(arg0: sun.jvm.hotspot.oops.Method): void
-                   public visit(arg0: sun.jvm.hotspot.interpreter.Bytecode): void
-                   public epilogue(): void
-               }
-               class HTMLGenerator$Formatter {
-                   html: boolean
-                   buf: java.lang.StringBuffer
-                   constructor(arg0: boolean)
-                   append(arg0: java.lang.String): void
-                   append(arg0: int): void
-                   append(arg0: char): void
-                   append(arg0: java.lang.StringBuffer): void
-                   append(arg0: sun.jvm.hotspot.ui.classbrowser.HTMLGenerator$Formatter): void
-                   getBuffer(): java.lang.StringBuffer
-                   public toString(): java.lang.String
-                   wrap(arg0: java.lang.String, arg1: java.lang.String): void
-                   wrap(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void
-                   h1(arg0: java.lang.String): void
-                   h2(arg0: java.lang.String): void
-                   h3(arg0: java.lang.String): void
-                   h4(arg0: java.lang.String): void
-                   beginList(): void
-                   endList(): void
-                   beginListItem(): void
-                   endListItem(): void
-                   li(arg0: java.lang.String): void
-                   beginTable(arg0: int): void
-                   cell(arg0: java.lang.String): void
-                   headerCell(arg0: java.lang.String): void
-                   endTable(): void
-                   link(arg0: java.lang.String, arg1: java.lang.String): void
-                   beginTag(arg0: java.lang.String): void
-                   endTag(arg0: java.lang.String): void
-                   bold(arg0: java.lang.String): void
-                   nl(): void
-                   br(): void
-                   genEmptyHTML(): void
-                   genHTMLPrologue(): void
-                   genHTMLPrologue(arg0: java.lang.String): void
-                   genHTMLEpilogue(): void
-               }
                
             }
             class JavaStackTracePanel extends javax.swing.JPanel {
@@ -7843,11 +5862,6 @@ declare namespace sun {
                 public setJavaThread(arg0: sun.jvm.hotspot.runtime.JavaThread): void
                 static access$000(arg0: sun.jvm.hotspot.ui.JavaStackTracePanel): sun.jvm.hotspot.ui.classbrowser.HTMLGenerator
                 static access$100(arg0: sun.jvm.hotspot.ui.JavaStackTracePanel, arg1: java.lang.String): void
-            }
-            class JavaStackTracePanel$1 implements javax.swing.event.HyperlinkListener {
-                this$0: sun.jvm.hotspot.ui.JavaStackTracePanel
-                constructor(arg0: sun.jvm.hotspot.ui.JavaStackTracePanel)
-                public hyperlinkUpdate(arg0: javax.swing.event.HyperlinkEvent): void
             }
             class JInternalFrameWrapper implements sun.jvm.hotspot.ui.FrameWrapper {
                 public constructor(arg0: javax.swing.JInternalFrame)
@@ -7867,12 +5881,6 @@ declare namespace sun {
                 static access$000(arg0: sun.jvm.hotspot.ui.JInternalFrameWrapper): java.awt.event.ActionListener
                 static access$100(arg0: sun.jvm.hotspot.ui.JInternalFrameWrapper): java.awt.event.ActionListener
             }
-            class JInternalFrameWrapper$1 extends javax.swing.event.InternalFrameAdapter {
-                this$0: sun.jvm.hotspot.ui.JInternalFrameWrapper
-                constructor(arg0: sun.jvm.hotspot.ui.JInternalFrameWrapper)
-                public internalFrameClosing(arg0: javax.swing.event.InternalFrameEvent): void
-                public internalFrameActivated(arg0: javax.swing.event.InternalFrameEvent): void
-            }
             class JFrameWrapper implements sun.jvm.hotspot.ui.FrameWrapper {
                 public constructor(arg0: javax.swing.JFrame)
                 public getComponent(): java.awt.Component
@@ -7891,12 +5899,6 @@ declare namespace sun {
                 static access$000(arg0: sun.jvm.hotspot.ui.JFrameWrapper): java.awt.event.ActionListener
                 static access$100(arg0: sun.jvm.hotspot.ui.JFrameWrapper): java.awt.event.ActionListener
             }
-            class JFrameWrapper$1 extends java.awt.event.WindowAdapter {
-                this$0: sun.jvm.hotspot.ui.JFrameWrapper
-                constructor(arg0: sun.jvm.hotspot.ui.JFrameWrapper)
-                public windowClosing(arg0: java.awt.event.WindowEvent): void
-                public windowActivated(arg0: java.awt.event.WindowEvent): void
-            }
             class Inspector extends sun.jvm.hotspot.ui.SAPanel {
                 public constructor()
                 public constructor(arg0: sun.jvm.hotspot.ui.tree.SimpleTreeNode)
@@ -7914,49 +5916,6 @@ declare namespace sun {
                 static access$1000(arg0: sun.jvm.hotspot.ui.Inspector, arg1: sun.jvm.hotspot.ui.tree.SimpleTreeNode): void
                 static access$1100(arg0: sun.jvm.hotspot.ui.Inspector): javax.swing.JTree
                 static access$500(arg0: sun.jvm.hotspot.ui.Inspector): sun.jvm.hotspot.utilities.LivenessPathList
-            }
-            class Inspector$8 implements java.lang.Runnable {
-                val$cutoverButtonRunnable: java.lang.Runnable
-                val$worker: sun.jvm.hotspot.utilities.WorkerThread
-                this$0: sun.jvm.hotspot.ui.Inspector
-                constructor(arg0: sun.jvm.hotspot.ui.Inspector, arg1: java.lang.Runnable, arg2: sun.jvm.hotspot.utilities.WorkerThread)
-                public run(): void
-            }
-            class Inspector$7 implements java.lang.Runnable {
-                this$0: sun.jvm.hotspot.ui.Inspector
-                constructor(arg0: sun.jvm.hotspot.ui.Inspector)
-                public run(): void
-            }
-            class Inspector$6 implements java.lang.Runnable {
-                val$root: sun.jvm.hotspot.ui.tree.SimpleTreeNode
-                this$0: sun.jvm.hotspot.ui.Inspector
-                constructor(arg0: sun.jvm.hotspot.ui.Inspector, arg1: sun.jvm.hotspot.ui.tree.SimpleTreeNode)
-                public run(): void
-            }
-            class Inspector$5 extends java.awt.event.MouseAdapter {
-                this$0: sun.jvm.hotspot.ui.Inspector
-                constructor(arg0: sun.jvm.hotspot.ui.Inspector)
-                public mousePressed(arg0: java.awt.event.MouseEvent): void
-            }
-            class Inspector$4 implements java.awt.event.ActionListener {
-                this$0: sun.jvm.hotspot.ui.Inspector
-                constructor(arg0: sun.jvm.hotspot.ui.Inspector)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class Inspector$3 implements java.awt.event.ActionListener {
-                this$0: sun.jvm.hotspot.ui.Inspector
-                constructor(arg0: sun.jvm.hotspot.ui.Inspector)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class Inspector$2 implements java.awt.event.ActionListener {
-                this$0: sun.jvm.hotspot.ui.Inspector
-                constructor(arg0: sun.jvm.hotspot.ui.Inspector)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class Inspector$1 implements java.awt.event.ActionListener {
-                this$0: sun.jvm.hotspot.ui.Inspector
-                constructor(arg0: sun.jvm.hotspot.ui.Inspector)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
             }
             class HeapParametersPanel extends javax.swing.JPanel {
                 public constructor()
@@ -7997,11 +5956,6 @@ declare namespace sun {
                 static access$200(arg0: sun.jvm.hotspot.ui.FindPanel): javax.swing.JTextArea
                 static access$300(arg0: sun.jvm.hotspot.ui.FindPanel): javax.swing.JLabel
             }
-            class FindPanel$1 implements java.awt.event.ActionListener {
-                this$0: sun.jvm.hotspot.ui.FindPanel
-                constructor(arg0: sun.jvm.hotspot.ui.FindPanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
             class FindInHeapPanel extends javax.swing.JPanel {
                 static minUpdateFraction: double
                 public constructor()
@@ -8023,46 +5977,6 @@ declare namespace sun {
                 static access$1300(arg0: sun.jvm.hotspot.ui.FindInHeapPanel): void
                 static access$1400(arg0: sun.jvm.hotspot.ui.FindInHeapPanel): sun.jvm.hotspot.ui.ProgressBarPanel
             }
-            class FindInHeapPanel$5 implements java.lang.Runnable {
-                val$frac: double
-                this$0: sun.jvm.hotspot.ui.FindInHeapPanel
-                constructor(arg0: sun.jvm.hotspot.ui.FindInHeapPanel, arg1: double)
-                public run(): void
-            }
-            class FindInHeapPanel$4 implements java.lang.Runnable {
-                this$0: sun.jvm.hotspot.ui.FindInHeapPanel
-                constructor(arg0: sun.jvm.hotspot.ui.FindInHeapPanel)
-                public run(): void
-            }
-            class FindInHeapPanel$3 implements java.lang.Runnable {
-                this$0: sun.jvm.hotspot.ui.FindInHeapPanel
-                constructor(arg0: sun.jvm.hotspot.ui.FindInHeapPanel)
-                public run(): void
-            }
-            class FindInHeapPanel$2 implements java.awt.event.ActionListener {
-                this$0: sun.jvm.hotspot.ui.FindInHeapPanel
-                constructor(arg0: sun.jvm.hotspot.ui.FindInHeapPanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class FindInHeapPanel$2$1 implements java.lang.Runnable {
-                this$1: sun.jvm.hotspot.ui.FindInHeapPanel$2
-                constructor(arg0: sun.jvm.hotspot.ui.FindInHeapPanel$2)
-                public run(): void
-            }
-            class FindInHeapPanel$2$1$1 implements java.lang.Runnable {
-                this$2: sun.jvm.hotspot.ui.FindInHeapPanel$2$1
-                constructor(arg0: sun.jvm.hotspot.ui.FindInHeapPanel$2$1)
-                public run(): void
-            }
-            class FindInHeapPanel$1 implements sun.jvm.hotspot.oops.RawHeapVisitor {
-                error: boolean
-                this$0: sun.jvm.hotspot.ui.FindInHeapPanel
-                constructor(arg0: sun.jvm.hotspot.ui.FindInHeapPanel)
-                public prologue(arg0: long): void
-                public visitAddress(arg0: sun.jvm.hotspot.debugger.Address): void
-                public visitCompOopAddress(arg0: sun.jvm.hotspot.debugger.Address): void
-                public epilogue(): void
-            }
             class SAEditorPane extends javax.swing.JEditorPane {
                 public constructor()
                 public getSelectedText(): java.lang.String
@@ -8073,11 +5987,6 @@ declare namespace sun {
                 public constructor()
                 public getText(): java.lang.String
                 public setText(arg0: java.lang.String): void
-            }
-            class HistoryComboBox$1 implements java.awt.event.ActionListener {
-                this$0: sun.jvm.hotspot.ui.HistoryComboBox
-                constructor(arg0: sun.jvm.hotspot.ui.HistoryComboBox)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
             }
             class FindInCodeCachePanel extends sun.jvm.hotspot.ui.SAPanel {
                 public constructor()
@@ -8095,44 +6004,6 @@ declare namespace sun {
                 static access$100(arg0: sun.jvm.hotspot.ui.FindInCodeCachePanel): long
                 static access$000(arg0: sun.jvm.hotspot.ui.FindInCodeCachePanel): long
                 static access$1100(arg0: sun.jvm.hotspot.ui.FindInCodeCachePanel): sun.jvm.hotspot.ui.ProgressBarPanel
-            }
-            class FindInCodeCachePanel$4 implements java.lang.Runnable {
-                val$result: java.lang.StringBuffer
-                this$0: sun.jvm.hotspot.ui.FindInCodeCachePanel
-                constructor(arg0: sun.jvm.hotspot.ui.FindInCodeCachePanel, arg1: java.lang.StringBuffer)
-                public run(): void
-            }
-            class FindInCodeCachePanel$3 implements java.lang.Runnable {
-                this$0: sun.jvm.hotspot.ui.FindInCodeCachePanel
-                constructor(arg0: sun.jvm.hotspot.ui.FindInCodeCachePanel)
-                public run(): void
-            }
-            class FindInCodeCachePanel$2 implements javax.swing.event.HyperlinkListener {
-                this$0: sun.jvm.hotspot.ui.FindInCodeCachePanel
-                constructor(arg0: sun.jvm.hotspot.ui.FindInCodeCachePanel)
-                public hyperlinkUpdate(arg0: javax.swing.event.HyperlinkEvent): void
-            }
-            class FindInCodeCachePanel$1 implements java.awt.event.ActionListener {
-                this$0: sun.jvm.hotspot.ui.FindInCodeCachePanel
-                constructor(arg0: sun.jvm.hotspot.ui.FindInCodeCachePanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class FindInCodeCachePanel$Visitor implements sun.jvm.hotspot.code.CodeCacheVisitor {
-                base: sun.jvm.hotspot.debugger.Address
-                result: java.lang.StringBuffer
-                searching: boolean
-                this$0: sun.jvm.hotspot.ui.FindInCodeCachePanel
-                constructor(arg0: sun.jvm.hotspot.ui.FindInCodeCachePanel)
-                public prologue(arg0: sun.jvm.hotspot.debugger.Address, arg1: sun.jvm.hotspot.debugger.Address): void
-                public visit(arg0: sun.jvm.hotspot.code.CodeBlob): void
-                public epilogue(): void
-                public cleanup(): void
-                static access$1000(arg0: sun.jvm.hotspot.ui.FindInCodeCachePanel$Visitor): void
-            }
-            class FindInCodeCachePanel$Visitor$1 implements java.lang.Runnable {
-                this$1: sun.jvm.hotspot.ui.FindInCodeCachePanel$Visitor
-                constructor(arg0: sun.jvm.hotspot.ui.FindInCodeCachePanel$Visitor)
-                public run(): void
             }
             class SAPanel extends javax.swing.JPanel {
                 protected listeners: java.util.List
@@ -8152,22 +6023,6 @@ declare namespace sun {
                 static access$000(arg0: sun.jvm.hotspot.ui.FindByQueryPanel): javax.swing.JTextArea
                 static access$100(arg0: sun.jvm.hotspot.ui.FindByQueryPanel): sun.jvm.hotspot.utilities.soql.SOQLEngine
                 static access$200(arg0: sun.jvm.hotspot.ui.FindByQueryPanel): javax.swing.JEditorPane
-            }
-            class FindByQueryPanel$2 implements java.awt.event.ActionListener {
-                this$0: sun.jvm.hotspot.ui.FindByQueryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.FindByQueryPanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class FindByQueryPanel$2$1 implements sun.jvm.hotspot.utilities.soql.ObjectVisitor {
-                val$buf: java.lang.StringBuffer
-                this$1: sun.jvm.hotspot.ui.FindByQueryPanel$2
-                constructor(arg0: sun.jvm.hotspot.ui.FindByQueryPanel$2, arg1: java.lang.StringBuffer)
-                public visit(arg0: java.lang.Object): void
-            }
-            class FindByQueryPanel$1 implements javax.swing.event.HyperlinkListener {
-                this$0: sun.jvm.hotspot.ui.FindByQueryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.FindByQueryPanel)
-                public hyperlinkUpdate(arg0: javax.swing.event.HyperlinkEvent): void
             }
             interface EditorFactory {
                 public openFile(arg0: java.lang.String, arg1: sun.jvm.hotspot.ui.EditorCommands): sun.jvm.hotspot.ui.Editor
@@ -8215,33 +6070,6 @@ declare namespace sun {
                 static access$700(arg0: sun.jvm.hotspot.ui.DebuggerConsolePanel): void
                 static access$800(arg0: sun.jvm.hotspot.ui.DebuggerConsolePanel): void
             }
-            class DebuggerConsolePanel$4 extends java.awt.event.WindowAdapter {
-                constructor()
-                public windowClosing(arg0: java.awt.event.WindowEvent): void
-            }
-            class DebuggerConsolePanel$3 implements java.awt.event.ActionListener {
-                this$0: sun.jvm.hotspot.ui.DebuggerConsolePanel
-                constructor(arg0: sun.jvm.hotspot.ui.DebuggerConsolePanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class DebuggerConsolePanel$2 implements javax.swing.event.CaretListener {
-                this$0: sun.jvm.hotspot.ui.DebuggerConsolePanel
-                constructor(arg0: sun.jvm.hotspot.ui.DebuggerConsolePanel)
-                public caretUpdate(arg0: javax.swing.event.CaretEvent): void
-            }
-            class DebuggerConsolePanel$1 implements javax.swing.event.DocumentListener {
-                this$0: sun.jvm.hotspot.ui.DebuggerConsolePanel
-                constructor(arg0: sun.jvm.hotspot.ui.DebuggerConsolePanel)
-                public changedUpdate(arg0: javax.swing.event.DocumentEvent): void
-                public insertUpdate(arg0: javax.swing.event.DocumentEvent): void
-                public removeUpdate(arg0: javax.swing.event.DocumentEvent): void
-            }
-            class DebuggerConsolePanel$1$1 implements java.lang.Runnable {
-                val$result: java.lang.String
-                this$1: sun.jvm.hotspot.ui.DebuggerConsolePanel$1
-                constructor(arg0: sun.jvm.hotspot.ui.DebuggerConsolePanel$1, arg1: java.lang.String)
-                public run(): void
-            }
             class DeadlockDetectionPanel extends javax.swing.JPanel {
                 public constructor()
             }
@@ -8260,33 +6088,6 @@ declare namespace sun {
                 static access$400(arg0: sun.jvm.hotspot.ui.CommandProcessorPanel, arg1: java.lang.String): java.lang.String
                 static access$500(arg0: sun.jvm.hotspot.ui.CommandProcessorPanel): sun.jvm.hotspot.CommandProcessor
                 static access$600(arg0: sun.jvm.hotspot.ui.CommandProcessorPanel): void
-            }
-            class CommandProcessorPanel$4 extends java.awt.event.WindowAdapter {
-                constructor()
-                public windowClosing(arg0: java.awt.event.WindowEvent): void
-            }
-            class CommandProcessorPanel$3 implements java.awt.event.ActionListener {
-                this$0: sun.jvm.hotspot.ui.CommandProcessorPanel
-                constructor(arg0: sun.jvm.hotspot.ui.CommandProcessorPanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class CommandProcessorPanel$2 implements javax.swing.event.CaretListener {
-                this$0: sun.jvm.hotspot.ui.CommandProcessorPanel
-                constructor(arg0: sun.jvm.hotspot.ui.CommandProcessorPanel)
-                public caretUpdate(arg0: javax.swing.event.CaretEvent): void
-            }
-            class CommandProcessorPanel$1 implements javax.swing.event.DocumentListener {
-                this$0: sun.jvm.hotspot.ui.CommandProcessorPanel
-                constructor(arg0: sun.jvm.hotspot.ui.CommandProcessorPanel)
-                public changedUpdate(arg0: javax.swing.event.DocumentEvent): void
-                public insertUpdate(arg0: javax.swing.event.DocumentEvent): void
-                public removeUpdate(arg0: javax.swing.event.DocumentEvent): void
-            }
-            class CommandProcessorPanel$1$1 implements java.lang.Runnable {
-                val$ln: java.lang.String
-                this$1: sun.jvm.hotspot.ui.CommandProcessorPanel$1
-                constructor(arg0: sun.jvm.hotspot.ui.CommandProcessorPanel$1, arg1: java.lang.String)
-                public run(): void
             }
             class ProgressBarPanel extends javax.swing.JPanel {
                 public static VERTICAL: int
@@ -8347,15 +6148,6 @@ declare namespace sun {
                 static access$300(arg0: sun.jvm.hotspot.ui.HighPrecisionJScrollBar, arg1: int): java.math.BigInteger
                 static access$400(arg0: sun.jvm.hotspot.ui.HighPrecisionJScrollBar): void
             }
-            class HighPrecisionJScrollBar$2 implements javax.swing.event.ChangeListener {
-                constructor()
-                public stateChanged(arg0: javax.swing.event.ChangeEvent): void
-            }
-            class HighPrecisionJScrollBar$1 implements java.awt.event.AdjustmentListener {
-                this$0: sun.jvm.hotspot.ui.HighPrecisionJScrollBar
-                constructor(arg0: sun.jvm.hotspot.ui.HighPrecisionJScrollBar)
-                public adjustmentValueChanged(arg0: java.awt.event.AdjustmentEvent): void
-            }
             class AnnotatedMemoryPanel extends javax.swing.JPanel {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Debugger)
                 public constructor(arg0: sun.jvm.hotspot.debugger.Debugger, arg1: boolean, arg2: sun.jvm.hotspot.debugger.Address, arg3: sun.jvm.hotspot.debugger.Address, arg4: sun.jvm.hotspot.debugger.Address)
@@ -8367,52 +6159,6 @@ declare namespace sun {
                 public printOn(arg0: java.io.PrintStream): void
                 public static main(arg0: java.lang.String[]): void
                 static access$000(arg0: sun.jvm.hotspot.ui.AnnotatedMemoryPanel): sun.jvm.hotspot.ui.HighPrecisionJScrollBar
-            }
-            class AnnotatedMemoryPanel$8 extends java.awt.event.WindowAdapter {
-                constructor()
-                public windowClosed(arg0: java.awt.event.WindowEvent): void
-                public windowClosing(arg0: java.awt.event.WindowEvent): void
-            }
-            class AnnotatedMemoryPanel$7 implements javax.swing.event.ChangeListener {
-                this$0: sun.jvm.hotspot.ui.AnnotatedMemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.AnnotatedMemoryPanel)
-                public stateChanged(arg0: javax.swing.event.ChangeEvent): void
-            }
-            class AnnotatedMemoryPanel$6 extends javax.swing.AbstractAction {
-                this$0: sun.jvm.hotspot.ui.AnnotatedMemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.AnnotatedMemoryPanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class AnnotatedMemoryPanel$5 extends javax.swing.AbstractAction {
-                this$0: sun.jvm.hotspot.ui.AnnotatedMemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.AnnotatedMemoryPanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class AnnotatedMemoryPanel$4 extends javax.swing.AbstractAction {
-                this$0: sun.jvm.hotspot.ui.AnnotatedMemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.AnnotatedMemoryPanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class AnnotatedMemoryPanel$3 extends javax.swing.AbstractAction {
-                this$0: sun.jvm.hotspot.ui.AnnotatedMemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.AnnotatedMemoryPanel)
-                public actionPerformed(arg0: java.awt.event.ActionEvent): void
-            }
-            class AnnotatedMemoryPanel$2 implements java.awt.event.HierarchyBoundsListener {
-                this$0: sun.jvm.hotspot.ui.AnnotatedMemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.AnnotatedMemoryPanel)
-                public ancestorMoved(arg0: java.awt.event.HierarchyEvent): void
-                public ancestorResized(arg0: java.awt.event.HierarchyEvent): void
-            }
-            class AnnotatedMemoryPanel$AnnoX {
-                lineX: int
-                highBound: sun.jvm.hotspot.debugger.Address
-                public constructor(arg0: int, arg1: sun.jvm.hotspot.debugger.Address)
-            }
-            class AnnotatedMemoryPanel$1 implements java.util.Comparator {
-                this$0: sun.jvm.hotspot.ui.AnnotatedMemoryPanel
-                constructor(arg0: sun.jvm.hotspot.ui.AnnotatedMemoryPanel)
-                public compare(arg0: java.lang.Object, arg1: java.lang.Object): int
             }
             namespace table {
                class SortHeaderMouseAdapter extends java.awt.event.MouseAdapter {
@@ -8466,40 +6212,6 @@ declare namespace sun {
                 public static main(arg0: java.lang.String[]): void
                 static access$000(arg0: sun.jvm.hotspot.ui.ObjectHistogramPanel): void
             }
-            interface ObjectHistogramPanel$Listener {
-                public showObjectsOfType(arg0: sun.jvm.hotspot.oops.Klass): void
-            }
-            class ObjectHistogramPanel$ObjectHistogramTableModel extends sun.jvm.hotspot.ui.table.SortableTableModel {
-                this$0: sun.jvm.hotspot.ui.ObjectHistogramPanel
-                public constructor(arg0: sun.jvm.hotspot.ui.ObjectHistogramPanel, arg1: sun.jvm.hotspot.oops.ObjectHistogram)
-                public getColumnCount(): int
-                public getRowCount(): int
-                public getColumnName(arg0: int): java.lang.String
-                public getColumnClass(arg0: int): java.lang.Class
-                public getValueAt(arg0: int, arg1: int): java.lang.Object
-                public getValueForColumn(arg0: java.lang.Object, arg1: int): java.lang.Object
-                public getElement(arg0: int): sun.jvm.hotspot.oops.ObjectHistogramElement
-            }
-            class ObjectHistogramPanel$ObjectHistogramTableModel$ObjectHistogramComparator extends sun.jvm.hotspot.ui.table.TableModelComparator {
-                this$1: sun.jvm.hotspot.ui.ObjectHistogramPanel$ObjectHistogramTableModel
-                public constructor(arg0: sun.jvm.hotspot.ui.ObjectHistogramPanel$ObjectHistogramTableModel, arg1: sun.jvm.hotspot.ui.ObjectHistogramPanel$ObjectHistogramTableModel)
-                public getValueForColumn(arg0: java.lang.Object, arg1: int): java.lang.Object
-            }
-            class ObjectHistogramPanel$ObjectHistogramColummModel extends javax.swing.table.DefaultTableColumnModel {
-                this$0: sun.jvm.hotspot.ui.ObjectHistogramPanel
-                public constructor(arg0: sun.jvm.hotspot.ui.ObjectHistogramPanel)
-            }
-            class ObjectHistogramPanel$ObjectHistogramToolBar extends com.sun.java.swing.ui.CommonToolBar {
-                this$0: sun.jvm.hotspot.ui.ObjectHistogramPanel
-                public constructor(arg0: sun.jvm.hotspot.ui.ObjectHistogramPanel, arg1: com.sun.java.swing.ui.StatusBar)
-                protected addComponents(): void
-                public getFindText(): java.lang.String
-            }
-            class ObjectHistogramPanel$1 extends java.awt.event.MouseAdapter {
-                this$0: sun.jvm.hotspot.ui.ObjectHistogramPanel
-                constructor(arg0: sun.jvm.hotspot.ui.ObjectHistogramPanel)
-                public mouseClicked(arg0: java.awt.event.MouseEvent): void
-            }
             namespace tree {
                class SimpleTreeGroupNode implements sun.jvm.hotspot.ui.tree.SimpleTreeNode {
                    public constructor()
@@ -8542,54 +6254,6 @@ declare namespace sun {
                    public getIndexOfChild(arg0: sun.jvm.hotspot.ui.tree.SimpleTreeNode): int
                    public getValue(): java.lang.String
                }
-               class OopTreeNodeAdapter$Finder extends sun.jvm.hotspot.oops.DefaultOopVisitor {
-                   public constructor(arg0: sun.jvm.hotspot.oops.FieldIdentifier)
-                   public getIndex(): int
-                   public prologue(): void
-                   public doOop(arg0: sun.jvm.hotspot.oops.OopField, arg1: boolean): void
-                   public doByte(arg0: sun.jvm.hotspot.oops.ByteField, arg1: boolean): void
-                   public doChar(arg0: sun.jvm.hotspot.oops.CharField, arg1: boolean): void
-                   public doBoolean(arg0: sun.jvm.hotspot.oops.BooleanField, arg1: boolean): void
-                   public doShort(arg0: sun.jvm.hotspot.oops.ShortField, arg1: boolean): void
-                   public doInt(arg0: sun.jvm.hotspot.oops.IntField, arg1: boolean): void
-                   public doLong(arg0: sun.jvm.hotspot.oops.LongField, arg1: boolean): void
-                   public doFloat(arg0: sun.jvm.hotspot.oops.FloatField, arg1: boolean): void
-                   public doDouble(arg0: sun.jvm.hotspot.oops.DoubleField, arg1: boolean): void
-                   public doCInt(arg0: sun.jvm.hotspot.oops.CIntField, arg1: boolean): void
-               }
-               class OopTreeNodeAdapter$Fetcher extends sun.jvm.hotspot.oops.DefaultOopVisitor {
-                   this$0: sun.jvm.hotspot.ui.tree.OopTreeNodeAdapter
-                   public constructor(arg0: sun.jvm.hotspot.ui.tree.OopTreeNodeAdapter, arg1: int)
-                   public getChild(): sun.jvm.hotspot.ui.tree.SimpleTreeNode
-                   public prologue(): void
-                   public doMetadata(arg0: sun.jvm.hotspot.oops.MetadataField, arg1: boolean): void
-                   public doOop(arg0: sun.jvm.hotspot.oops.OopField, arg1: boolean): void
-                   public doByte(arg0: sun.jvm.hotspot.oops.ByteField, arg1: boolean): void
-                   public doChar(arg0: sun.jvm.hotspot.oops.CharField, arg1: boolean): void
-                   public doBoolean(arg0: sun.jvm.hotspot.oops.BooleanField, arg1: boolean): void
-                   public doShort(arg0: sun.jvm.hotspot.oops.ShortField, arg1: boolean): void
-                   public doInt(arg0: sun.jvm.hotspot.oops.IntField, arg1: boolean): void
-                   public doLong(arg0: sun.jvm.hotspot.oops.LongField, arg1: boolean): void
-                   public doFloat(arg0: sun.jvm.hotspot.oops.FloatField, arg1: boolean): void
-                   public doDouble(arg0: sun.jvm.hotspot.oops.DoubleField, arg1: boolean): void
-                   public doCInt(arg0: sun.jvm.hotspot.oops.CIntField, arg1: boolean): void
-               }
-               class OopTreeNodeAdapter$Counter extends sun.jvm.hotspot.oops.DefaultOopVisitor {
-                   constructor()
-                   public getNumFields(): int
-                   public prologue(): void
-                   public doMetadata(arg0: sun.jvm.hotspot.oops.MetadataField, arg1: boolean): void
-                   public doOop(arg0: sun.jvm.hotspot.oops.OopField, arg1: boolean): void
-                   public doByte(arg0: sun.jvm.hotspot.oops.ByteField, arg1: boolean): void
-                   public doChar(arg0: sun.jvm.hotspot.oops.CharField, arg1: boolean): void
-                   public doBoolean(arg0: sun.jvm.hotspot.oops.BooleanField, arg1: boolean): void
-                   public doShort(arg0: sun.jvm.hotspot.oops.ShortField, arg1: boolean): void
-                   public doInt(arg0: sun.jvm.hotspot.oops.IntField, arg1: boolean): void
-                   public doLong(arg0: sun.jvm.hotspot.oops.LongField, arg1: boolean): void
-                   public doFloat(arg0: sun.jvm.hotspot.oops.FloatField, arg1: boolean): void
-                   public doDouble(arg0: sun.jvm.hotspot.oops.DoubleField, arg1: boolean): void
-                   public doCInt(arg0: sun.jvm.hotspot.oops.CIntField, arg1: boolean): void
-               }
                class MetadataTreeNodeAdapter extends sun.jvm.hotspot.ui.tree.FieldTreeNodeAdapter {
                    public constructor(arg0: sun.jvm.hotspot.oops.Metadata, arg1: sun.jvm.hotspot.oops.FieldIdentifier)
                    public constructor(arg0: sun.jvm.hotspot.oops.Metadata, arg1: sun.jvm.hotspot.oops.FieldIdentifier, arg2: boolean)
@@ -8599,55 +6263,6 @@ declare namespace sun {
                    public isLeaf(): boolean
                    public getIndexOfChild(arg0: sun.jvm.hotspot.ui.tree.SimpleTreeNode): int
                    public getValue(): java.lang.String
-               }
-               class MetadataTreeNodeAdapter$Finder extends sun.jvm.hotspot.oops.DefaultMetadataVisitor {
-                   public constructor(arg0: sun.jvm.hotspot.oops.FieldIdentifier)
-                   public getIndex(): int
-                   public prologue(): void
-                   public doMetadata(arg0: sun.jvm.hotspot.oops.MetadataField, arg1: boolean): void
-                   public doOop(arg0: sun.jvm.hotspot.oops.OopField, arg1: boolean): void
-                   public doByte(arg0: sun.jvm.hotspot.oops.ByteField, arg1: boolean): void
-                   public doChar(arg0: sun.jvm.hotspot.oops.CharField, arg1: boolean): void
-                   public doBoolean(arg0: sun.jvm.hotspot.oops.BooleanField, arg1: boolean): void
-                   public doShort(arg0: sun.jvm.hotspot.oops.ShortField, arg1: boolean): void
-                   public doInt(arg0: sun.jvm.hotspot.oops.IntField, arg1: boolean): void
-                   public doLong(arg0: sun.jvm.hotspot.oops.LongField, arg1: boolean): void
-                   public doFloat(arg0: sun.jvm.hotspot.oops.FloatField, arg1: boolean): void
-                   public doDouble(arg0: sun.jvm.hotspot.oops.DoubleField, arg1: boolean): void
-                   public doCInt(arg0: sun.jvm.hotspot.oops.CIntField, arg1: boolean): void
-               }
-               class MetadataTreeNodeAdapter$Fetcher extends sun.jvm.hotspot.oops.DefaultMetadataVisitor {
-                   this$0: sun.jvm.hotspot.ui.tree.MetadataTreeNodeAdapter
-                   public constructor(arg0: sun.jvm.hotspot.ui.tree.MetadataTreeNodeAdapter, arg1: int)
-                   public getChild(): sun.jvm.hotspot.ui.tree.SimpleTreeNode
-                   public prologue(): void
-                   public doMetadata(arg0: sun.jvm.hotspot.oops.MetadataField, arg1: boolean): void
-                   public doOop(arg0: sun.jvm.hotspot.oops.OopField, arg1: boolean): void
-                   public doByte(arg0: sun.jvm.hotspot.oops.ByteField, arg1: boolean): void
-                   public doChar(arg0: sun.jvm.hotspot.oops.CharField, arg1: boolean): void
-                   public doBoolean(arg0: sun.jvm.hotspot.oops.BooleanField, arg1: boolean): void
-                   public doShort(arg0: sun.jvm.hotspot.oops.ShortField, arg1: boolean): void
-                   public doInt(arg0: sun.jvm.hotspot.oops.IntField, arg1: boolean): void
-                   public doLong(arg0: sun.jvm.hotspot.oops.LongField, arg1: boolean): void
-                   public doFloat(arg0: sun.jvm.hotspot.oops.FloatField, arg1: boolean): void
-                   public doDouble(arg0: sun.jvm.hotspot.oops.DoubleField, arg1: boolean): void
-                   public doCInt(arg0: sun.jvm.hotspot.oops.CIntField, arg1: boolean): void
-               }
-               class MetadataTreeNodeAdapter$Counter extends sun.jvm.hotspot.oops.DefaultMetadataVisitor {
-                   constructor()
-                   public getNumFields(): int
-                   public prologue(): void
-                   public doMetadata(arg0: sun.jvm.hotspot.oops.MetadataField, arg1: boolean): void
-                   public doOop(arg0: sun.jvm.hotspot.oops.OopField, arg1: boolean): void
-                   public doByte(arg0: sun.jvm.hotspot.oops.ByteField, arg1: boolean): void
-                   public doChar(arg0: sun.jvm.hotspot.oops.CharField, arg1: boolean): void
-                   public doBoolean(arg0: sun.jvm.hotspot.oops.BooleanField, arg1: boolean): void
-                   public doShort(arg0: sun.jvm.hotspot.oops.ShortField, arg1: boolean): void
-                   public doInt(arg0: sun.jvm.hotspot.oops.IntField, arg1: boolean): void
-                   public doLong(arg0: sun.jvm.hotspot.oops.LongField, arg1: boolean): void
-                   public doFloat(arg0: sun.jvm.hotspot.oops.FloatField, arg1: boolean): void
-                   public doDouble(arg0: sun.jvm.hotspot.oops.DoubleField, arg1: boolean): void
-                   public doCInt(arg0: sun.jvm.hotspot.oops.CIntField, arg1: boolean): void
                }
                class LongTreeNodeAdapter extends sun.jvm.hotspot.ui.tree.FieldTreeNodeAdapter {
                    public constructor(arg0: long, arg1: sun.jvm.hotspot.oops.FieldIdentifier)
@@ -8698,11 +6313,6 @@ declare namespace sun {
                    public getIndexOfChild(arg0: sun.jvm.hotspot.ui.tree.SimpleTreeNode): int
                    public getValue(): java.lang.String
                }
-               class CTypeTreeNodeAdapter$CTypeFieldIdentifier extends sun.jvm.hotspot.oops.FieldIdentifier {
-                   constructor(arg0: sun.jvm.hotspot.types.Type, arg1: sun.jvm.hotspot.types.Field)
-                   public getField(): sun.jvm.hotspot.types.Field
-                   public getName(): java.lang.String
-               }
                class CStringTreeNodeAdapter extends sun.jvm.hotspot.ui.tree.FieldTreeNodeAdapter {
                    public constructor(arg0: java.lang.String, arg1: sun.jvm.hotspot.oops.FieldIdentifier)
                    public constructor(arg0: java.lang.String, arg1: sun.jvm.hotspot.oops.FieldIdentifier, arg2: boolean)
@@ -8752,16 +6362,6 @@ declare namespace sun {
                    public removeTreeModelListener(arg0: javax.swing.event.TreeModelListener): void
                    public fireTreeStructureChanged(): void
                }
-               class SimpleTreeModel$1 implements sun.jvm.hotspot.ui.tree.SimpleTreeNode {
-                   constructor()
-                   public getChildCount(): int
-                   public getChild(arg0: int): sun.jvm.hotspot.ui.tree.SimpleTreeNode
-                   public isLeaf(): boolean
-                   public getIndexOfChild(arg0: sun.jvm.hotspot.ui.tree.SimpleTreeNode): int
-                   public toString(): java.lang.String
-                   public getName(): java.lang.String
-                   public getValue(): java.lang.String
-               }
                interface SimpleTreeNode {
                    public getChildCount(): int
                    public getChild(arg0: int): sun.jvm.hotspot.ui.tree.SimpleTreeNode
@@ -8782,10 +6382,6 @@ declare namespace sun {
                 public static asKlass(arg0: sun.jvm.hotspot.oops.Oop): sun.jvm.hotspot.oops.Klass
                 public static getOopSize(arg0: sun.jvm.hotspot.oops.Oop): long
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class java_lang_Class$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class UnknownOopException extends java.lang.RuntimeException {
                 public constructor()
@@ -8832,10 +6428,6 @@ declare namespace sun {
                 public static abstractOwnableSynchronizerGetOwnerThread(arg0: sun.jvm.hotspot.oops.Oop): sun.jvm.hotspot.oops.Oop
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class OopUtilities$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class ObjArrayKlass extends sun.jvm.hotspot.oops.ArrayKlass {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public getElementKlass(): sun.jvm.hotspot.oops.Klass
@@ -8846,10 +6438,6 @@ declare namespace sun {
                 public arrayKlassImpl(arg0: boolean): sun.jvm.hotspot.oops.Klass
                 public printValueOn(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class ObjArrayKlass$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class MultiBranchData extends sun.jvm.hotspot.oops.ArrayData {
                 static defaultCountOffSet: int
@@ -8884,27 +6472,15 @@ declare namespace sun {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class InstanceRefKlass$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class InstanceMirrorKlass extends sun.jvm.hotspot.oops.InstanceKlass {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public getObjectSize(arg0: sun.jvm.hotspot.oops.Oop): long
                 public iterateNonStaticFields(arg0: sun.jvm.hotspot.oops.OopVisitor, arg1: sun.jvm.hotspot.oops.Oop): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class InstanceMirrorKlass$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class InstanceClassLoaderKlass extends sun.jvm.hotspot.oops.InstanceKlass {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class InstanceClassLoaderKlass$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class IndexableFieldIdentifier extends sun.jvm.hotspot.oops.FieldIdentifier {
                 public constructor(arg0: int)
@@ -8998,10 +6574,6 @@ declare namespace sun {
                 public getHolderKlass(): sun.jvm.hotspot.oops.Klass
                 public printValueOn(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class CompiledICHolder$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class JumpData extends sun.jvm.hotspot.oops.ProfileData {
                 static takenOffSet: int
@@ -9172,104 +6744,6 @@ declare namespace sun {
                 public fillStackmapForOpcodes(arg0: sun.jvm.hotspot.interpreter.BytecodeStream, arg1: sun.jvm.hotspot.oops.CellTypeStateList, arg2: sun.jvm.hotspot.oops.CellTypeStateList, arg3: int): void
                 public fillInitVars(arg0: java.util.List): void
             }
-            class GenerateOopMap$4 implements sun.jvm.hotspot.oops.GenerateOopMap$JumpClosure {
-                this$0: sun.jvm.hotspot.oops.GenerateOopMap
-                constructor(arg0: sun.jvm.hotspot.oops.GenerateOopMap)
-                public process(arg0: sun.jvm.hotspot.oops.GenerateOopMap, arg1: int, arg2: int[]): void
-            }
-            class GenerateOopMap$3 implements sun.jvm.hotspot.oops.GenerateOopMap$JumpClosure {
-                this$0: sun.jvm.hotspot.oops.GenerateOopMap
-                constructor(arg0: sun.jvm.hotspot.oops.GenerateOopMap)
-                public process(arg0: sun.jvm.hotspot.oops.GenerateOopMap, arg1: int, arg2: int[]): void
-            }
-            class GenerateOopMap$2 implements sun.jvm.hotspot.oops.GenerateOopMap$JumpClosure {
-                this$0: sun.jvm.hotspot.oops.GenerateOopMap
-                constructor(arg0: sun.jvm.hotspot.oops.GenerateOopMap)
-                public process(arg0: sun.jvm.hotspot.oops.GenerateOopMap, arg1: int, arg2: int[]): void
-            }
-            class GenerateOopMap$1 implements sun.jvm.hotspot.oops.GenerateOopMap$JumpClosure {
-                this$0: sun.jvm.hotspot.oops.GenerateOopMap
-                constructor(arg0: sun.jvm.hotspot.oops.GenerateOopMap)
-                public process(arg0: sun.jvm.hotspot.oops.GenerateOopMap, arg1: int, arg2: int[]): void
-            }
-            class GenerateOopMap$BasicBlock {
-                static _dead_basic_block: int
-                static _unreached: int
-                _bci: int
-                _end_bci: int
-                _max_locals: int
-                _max_stack: int
-                _state: sun.jvm.hotspot.oops.CellTypeStateList
-                _stack_top: int
-                _monitor_top: int
-                constructor()
-                vars(): sun.jvm.hotspot.oops.CellTypeStateList
-                stack(): sun.jvm.hotspot.oops.CellTypeStateList
-                changed(): boolean
-                setChanged(arg0: boolean): void
-                isReachable(): boolean
-                isDead(): boolean
-                isAlive(): boolean
-                markAsAlive(): void
-            }
-            class GenerateOopMap$RetTable {
-                constructor()
-                computeRetTable(arg0: sun.jvm.hotspot.oops.Method): void
-                updateRetTable(arg0: int, arg1: int): void
-                findJsrsForTarget(arg0: int): sun.jvm.hotspot.oops.GenerateOopMap$RetTableEntry
-            }
-            class GenerateOopMap$RetTableEntry {
-                constructor(arg0: int, arg1: sun.jvm.hotspot.oops.GenerateOopMap$RetTableEntry)
-                targetBci(): int
-                nofJsrs(): int
-                jsrs(arg0: int): int
-                addJsr(arg0: int): void
-                addDelta(arg0: int, arg1: int): void
-                next(): sun.jvm.hotspot.oops.GenerateOopMap$RetTableEntry
-            }
-            class GenerateOopMap$ComputeEntryStack extends sun.jvm.hotspot.runtime.SignatureIterator {
-                _effect: sun.jvm.hotspot.oops.CellTypeStateList
-                _idx: int
-                set(arg0: sun.jvm.hotspot.oops.CellTypeState): void
-                length(): int
-                public doBool(): void
-                public doChar(): void
-                public doFloat(): void
-                public doByte(): void
-                public doShort(): void
-                public doInt(): void
-                public doVoid(): void
-                public doObject(arg0: int, arg1: int): void
-                public doArray(arg0: int, arg1: int): void
-                public doDouble(): void
-                public doLong(): void
-                constructor(arg0: sun.jvm.hotspot.oops.Symbol)
-                computeForParameters(arg0: boolean, arg1: sun.jvm.hotspot.oops.CellTypeStateList): int
-                computeForReturntype(arg0: sun.jvm.hotspot.oops.CellTypeStateList): int
-            }
-            class GenerateOopMap$ComputeCallStack extends sun.jvm.hotspot.runtime.SignatureIterator {
-                _effect: sun.jvm.hotspot.oops.CellTypeStateList
-                _idx: int
-                set(arg0: sun.jvm.hotspot.oops.CellTypeState): void
-                length(): int
-                public doBool(): void
-                public doChar(): void
-                public doFloat(): void
-                public doByte(): void
-                public doShort(): void
-                public doInt(): void
-                public doVoid(): void
-                public doObject(arg0: int, arg1: int): void
-                public doArray(arg0: int, arg1: int): void
-                public doDouble(): void
-                public doLong(): void
-                constructor(arg0: sun.jvm.hotspot.oops.Symbol)
-                computeForParameters(arg0: boolean, arg1: sun.jvm.hotspot.oops.CellTypeStateList): int
-                computeForReturntype(arg0: sun.jvm.hotspot.oops.CellTypeStateList): int
-            }
-            interface GenerateOopMap$JumpClosure {
-                public process(arg0: sun.jvm.hotspot.oops.GenerateOopMap, arg1: int, arg2: int[]): void
-            }
             class VirtualCallData extends sun.jvm.hotspot.oops.ReceiverTypeData {
                 public constructor(arg0: sun.jvm.hotspot.oops.DataLayout)
                 static staticCellCount(): int
@@ -9337,11 +6811,6 @@ declare namespace sun {
                 public getElements(): java.util.List
                 public print(): void
                 public printOn(arg0: java.io.PrintStream): void
-            }
-            class ObjectHistogram$1 implements java.util.Comparator {
-                this$0: sun.jvm.hotspot.oops.ObjectHistogram
-                constructor(arg0: sun.jvm.hotspot.oops.ObjectHistogram)
-                public compare(arg0: java.lang.Object, arg1: java.lang.Object): int
             }
             class CellTypeState {
                 public static bottom: sun.jvm.hotspot.oops.CellTypeState
@@ -9467,10 +6936,6 @@ declare namespace sun {
                 public iterateFields(arg0: sun.jvm.hotspot.oops.MetadataVisitor): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class ConstantPoolCacheEntry$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class ConstantPoolCache extends sun.jvm.hotspot.oops.Metadata {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public isConstantPoolCache(): boolean
@@ -9483,18 +6948,10 @@ declare namespace sun {
                 public iterateFields(arg0: sun.jvm.hotspot.oops.MetadataVisitor): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class ConstantPoolCache$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class CheckedExceptionElement {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address, arg1: long)
                 public getClassCPIndex(): int
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class CheckedExceptionElement$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class ExceptionTableElement {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address, arg1: long)
@@ -9503,10 +6960,6 @@ declare namespace sun {
                 public getHandlerPC(): int
                 public getCatchTypeIndex(): int
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class ExceptionTableElement$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class LocalVariableTableElement {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address, arg1: long)
@@ -9517,10 +6970,6 @@ declare namespace sun {
                 public getSignatureCPIndex(): int
                 public getSlot(): int
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class LocalVariableTableElement$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class LineNumberTableElement {
                 public constructor(arg0: int, arg1: int)
@@ -9535,10 +6984,6 @@ declare namespace sun {
                 public getBackedgeCounter(): long
                 public printValueOn(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class MethodCounters$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class MethodData extends sun.jvm.hotspot.oops.Metadata {
                 static TypeProfileWidth: int
@@ -9580,10 +7025,6 @@ declare namespace sun {
                 public dumpReplayData(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class MethodData$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class ConstMethod extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public getMethod(): sun.jvm.hotspot.oops.Method
@@ -9623,10 +7064,6 @@ declare namespace sun {
                 public getCheckedExceptions(): sun.jvm.hotspot.oops.CheckedExceptionElement[]
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class ConstMethod$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class BreakpointInfo extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public getOrigBytecode(): int
@@ -9637,10 +7074,6 @@ declare namespace sun {
                 public match(arg0: sun.jvm.hotspot.oops.Method, arg1: int): boolean
                 public match(arg0: sun.jvm.hotspot.oops.Method): boolean
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class BreakpointInfo$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class ConstantPool extends sun.jvm.hotspot.oops.Metadata implements sun.jvm.hotspot.runtime.ClassConstants {
                 protected debugMessage(arg0: java.lang.String): void
@@ -9691,19 +7124,6 @@ declare namespace sun {
                 public printValueOn(arg0: java.io.PrintStream): void
                 public getSize(): long
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class ConstantPool$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
-            class ConstantPool$CPSlot {
-                this$0: sun.jvm.hotspot.oops.ConstantPool
-                constructor(arg0: sun.jvm.hotspot.oops.ConstantPool, arg1: sun.jvm.hotspot.debugger.Address)
-                constructor(arg0: sun.jvm.hotspot.oops.ConstantPool, arg1: sun.jvm.hotspot.oops.Symbol)
-                public isResolved(): boolean
-                public isUnresolved(): boolean
-                public getSymbol(): sun.jvm.hotspot.oops.Symbol
-                public getKlass(): sun.jvm.hotspot.oops.Klass
             }
             class DoubleField extends sun.jvm.hotspot.oops.Field {
                 public constructor(arg0: sun.jvm.hotspot.oops.FieldIdentifier, arg1: long, arg2: boolean)
@@ -9851,11 +7271,6 @@ declare namespace sun {
                 public getSignature(): sun.jvm.hotspot.oops.Symbol
                 public getArrayInfo(): sun.jvm.hotspot.oops.FieldType$ArrayInfo
             }
-            class FieldType$ArrayInfo {
-                public constructor(arg0: int, arg1: int)
-                public dimension(): int
-                public elementBasicType(): int
-            }
             class FieldIdentifier {
                 public constructor()
                 public getName(): java.lang.String
@@ -9892,10 +7307,6 @@ declare namespace sun {
                 public iterateFields(arg0: sun.jvm.hotspot.oops.MetadataVisitor): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class ArrayKlass$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class TypeArrayKlass extends sun.jvm.hotspot.oops.ArrayKlass {
                 public static T_BOOLEAN: int
                 public static T_CHAR: int
@@ -9914,10 +7325,6 @@ declare namespace sun {
                 public arrayKlassImpl(arg0: boolean, arg1: int): sun.jvm.hotspot.oops.Klass
                 public arrayKlassImpl(arg0: boolean): sun.jvm.hotspot.oops.Klass
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class TypeArrayKlass$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class Method extends sun.jvm.hotspot.oops.Metadata {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -9987,10 +7394,6 @@ declare namespace sun {
                 public interpreterThrowoutCount(): int
                 public interpreterInvocationCount(): int
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class Method$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class InstanceKlass extends sun.jvm.hotspot.oops.Klass {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -10070,36 +7473,6 @@ declare namespace sun {
                 public dumpReplayData(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class InstanceKlass$StaticField {
-                public flags: sun.jvm.hotspot.oops.AccessFlags
-                public field: sun.jvm.hotspot.oops.Field
-                constructor(arg0: sun.jvm.hotspot.oops.Field, arg1: sun.jvm.hotspot.oops.AccessFlags)
-            }
-            interface InstanceKlass$EnclosingMethodAttributeOffset {
-                public static enclosing_method_class_index_offset: int
-                public static enclosing_method_method_index_offset: int
-                public static enclosing_method_attribute_size: int
-            }
-            interface InstanceKlass$InnerClassAttributeOffset {
-                public static innerClassInnerClassInfoOffset: int
-                public static innerClassOuterClassInfoOffset: int
-                public static innerClassInnerNameOffset: int
-                public static innerClassAccessFlagsOffset: int
-                public static innerClassNextOffset: int
-            }
-            class InstanceKlass$ClassState {
-                public static ALLOCATED: sun.jvm.hotspot.oops.InstanceKlass$ClassState
-                public static LOADED: sun.jvm.hotspot.oops.InstanceKlass$ClassState
-                public static LINKED: sun.jvm.hotspot.oops.InstanceKlass$ClassState
-                public static BEING_INITIALIZED: sun.jvm.hotspot.oops.InstanceKlass$ClassState
-                public static FULLY_INITIALIZED: sun.jvm.hotspot.oops.InstanceKlass$ClassState
-                public static INITIALIZATION_ERROR: sun.jvm.hotspot.oops.InstanceKlass$ClassState
-                public toString(): java.lang.String
-            }
-            class InstanceKlass$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class ObjArray extends sun.jvm.hotspot.oops.Array {
                 constructor(arg0: sun.jvm.hotspot.debugger.OopHandle, arg1: sun.jvm.hotspot.oops.ObjectHeap)
                 public isObjArray(): boolean
@@ -10109,10 +7482,6 @@ declare namespace sun {
                 public iterateFields(arg0: sun.jvm.hotspot.oops.OopVisitor, arg1: boolean): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class ObjArray$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class Array extends sun.jvm.hotspot.oops.Oop {
                 constructor(arg0: sun.jvm.hotspot.debugger.OopHandle, arg1: sun.jvm.hotspot.oops.ObjectHeap)
                 public getLength(): long
@@ -10121,10 +7490,6 @@ declare namespace sun {
                 public isArray(): boolean
                 public iterateFields(arg0: sun.jvm.hotspot.oops.OopVisitor, arg1: boolean): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class Array$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class TypeArray extends sun.jvm.hotspot.oops.Array {
                 constructor(arg0: sun.jvm.hotspot.debugger.OopHandle, arg1: sun.jvm.hotspot.oops.ObjectHeap)
@@ -10141,10 +7506,6 @@ declare namespace sun {
                 public iterateFields(arg0: sun.jvm.hotspot.oops.OopVisitor, arg1: boolean): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class TypeArray$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class Instance extends sun.jvm.hotspot.oops.Oop {
                 constructor(arg0: sun.jvm.hotspot.debugger.OopHandle, arg1: sun.jvm.hotspot.oops.ObjectHeap)
                 public static getHeaderSize(): long
@@ -10152,10 +7513,6 @@ declare namespace sun {
                 public iterateFields(arg0: sun.jvm.hotspot.oops.OopVisitor, arg1: boolean): void
                 public printValueOn(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class Instance$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class Symbol extends sun.jvm.hotspot.runtime.VMObject {
                 public static create(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.oops.Symbol
@@ -10171,10 +7528,6 @@ declare namespace sun {
                 public printValueOn(arg0: java.io.PrintStream): void
                 public fastCompare(arg0: sun.jvm.hotspot.oops.Symbol): int
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class Symbol$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             interface FieldVisitor {
                 public doMetadata(arg0: sun.jvm.hotspot.oops.MetadataField, arg1: boolean): void
@@ -10204,10 +7557,6 @@ declare namespace sun {
                 public printValueOn(arg0: java.io.PrintStream): void
                 public dumpReplayData(arg0: java.io.PrintStream): void
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class Metadata$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class Klass extends sun.jvm.hotspot.oops.Metadata implements sun.jvm.hotspot.runtime.ClassConstants {
                 public static LH_INSTANCE_SLOW_PATH_BIT: int
@@ -10259,10 +7608,6 @@ declare namespace sun {
                 public hasMirandaMethods(): boolean
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class Klass$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class Mark extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public value(): long
@@ -10288,10 +7633,6 @@ declare namespace sun {
                 public isCmsFreeChunk(): boolean
                 public getSize(): long
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class Mark$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class NarrowKlassField extends sun.jvm.hotspot.oops.MetadataField {
                 public constructor(arg0: sun.jvm.hotspot.types.AddressField, arg1: long)
@@ -10373,31 +7714,6 @@ declare namespace sun {
                 public print(): void
                 static access$000(arg0: sun.jvm.hotspot.oops.ObjectHeap, arg1: java.lang.String, arg2: java.util.List, arg3: java.util.List): void
             }
-            class ObjectHeap$3 implements java.util.Comparator {
-                this$0: sun.jvm.hotspot.oops.ObjectHeap
-                constructor(arg0: sun.jvm.hotspot.oops.ObjectHeap)
-                public compare(arg0: java.lang.Object, arg1: java.lang.Object): int
-            }
-            class ObjectHeap$LiveRegionsCollector implements sun.jvm.hotspot.memory.SpaceClosure {
-                this$0: sun.jvm.hotspot.oops.ObjectHeap
-                constructor(arg0: sun.jvm.hotspot.oops.ObjectHeap, arg1: java.util.List)
-                public doSpace(arg0: sun.jvm.hotspot.memory.Space): void
-            }
-            class ObjectHeap$2 implements sun.jvm.hotspot.oops.ObjectHeap$ObjectFilter {
-                val$k: sun.jvm.hotspot.oops.Klass
-                this$0: sun.jvm.hotspot.oops.ObjectHeap
-                constructor(arg0: sun.jvm.hotspot.oops.ObjectHeap, arg1: sun.jvm.hotspot.oops.Klass)
-                public canInclude(arg0: sun.jvm.hotspot.oops.Oop): boolean
-            }
-            class ObjectHeap$1 implements sun.jvm.hotspot.oops.ObjectHeap$ObjectFilter {
-                val$k: sun.jvm.hotspot.oops.Klass
-                this$0: sun.jvm.hotspot.oops.ObjectHeap
-                constructor(arg0: sun.jvm.hotspot.oops.ObjectHeap, arg1: sun.jvm.hotspot.oops.Klass)
-                public canInclude(arg0: sun.jvm.hotspot.oops.Oop): boolean
-            }
-            interface ObjectHeap$ObjectFilter {
-                public canInclude(arg0: sun.jvm.hotspot.oops.Oop): boolean
-            }
             class Oop {
                 constructor(arg0: sun.jvm.hotspot.debugger.OopHandle, arg1: sun.jvm.hotspot.oops.ObjectHeap)
                 getHeap(): sun.jvm.hotspot.oops.ObjectHeap
@@ -10433,10 +7749,6 @@ declare namespace sun {
                 static getKlassForOopHandle(arg0: sun.jvm.hotspot.debugger.OopHandle): sun.jvm.hotspot.oops.Klass
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class Oop$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             
          }
          namespace utilities {
@@ -10446,19 +7758,6 @@ declare namespace sun {
                 public static findInstanceKlasses(arg0: java.lang.String): sun.jvm.hotspot.oops.InstanceKlass[]
                 public static findInstanceKlass(arg0: java.lang.String): sun.jvm.hotspot.oops.InstanceKlass
                 static access$000(): void
-            }
-            class SystemDictionaryHelper$3 implements java.util.Comparator {
-                constructor()
-                public compare(arg0: java.lang.Object, arg1: java.lang.Object): int
-            }
-            class SystemDictionaryHelper$2 implements sun.jvm.hotspot.memory.SystemDictionary$ClassVisitor {
-                val$tmp: java.util.Vector
-                constructor(arg0: java.util.Vector)
-                public visit(arg0: sun.jvm.hotspot.oops.Klass): void
-            }
-            class SystemDictionaryHelper$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class StreamMonitor implements java.lang.Runnable {
                 public constructor(arg0: java.io.InputStream)
@@ -10473,22 +7772,10 @@ declare namespace sun {
                 public stopCapture(): java.lang.String
                 public run(): void
             }
-            class StreamMonitor$Trigger {
-                this$0: sun.jvm.hotspot.utilities.StreamMonitor
-                constructor(arg0: sun.jvm.hotspot.utilities.StreamMonitor, arg1: java.lang.String, arg2: int)
-                constructor(arg0: sun.jvm.hotspot.utilities.StreamMonitor, arg1: java.lang.String[], arg2: int)
-                matches(arg0: java.lang.String): boolean
-                equals(arg0: java.lang.String[]): boolean
-                static access$000(arg0: sun.jvm.hotspot.utilities.StreamMonitor$Trigger): int
-            }
             class RobustOopDeterminator {
                 public constructor()
                 public static oopLooksValid(arg0: sun.jvm.hotspot.debugger.OopHandle): boolean
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class RobustOopDeterminator$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class ReversePtrsAnalysis {
                 public constructor()
@@ -10498,30 +7785,6 @@ declare namespace sun {
                 static access$100(arg0: sun.jvm.hotspot.utilities.ReversePtrsAnalysis, arg1: sun.jvm.hotspot.oops.Oop): void
                 static access$200(arg0: sun.jvm.hotspot.utilities.ReversePtrsAnalysis): sun.jvm.hotspot.utilities.MarkBits
                 static access$300(arg0: sun.jvm.hotspot.utilities.ReversePtrsAnalysis): sun.jvm.hotspot.oops.ObjectHeap
-            }
-            class ReversePtrsAnalysis$RootVisitor implements sun.jvm.hotspot.runtime.AddressVisitor {
-                this$0: sun.jvm.hotspot.utilities.ReversePtrsAnalysis
-                constructor(arg0: sun.jvm.hotspot.utilities.ReversePtrsAnalysis, arg1: java.lang.String)
-                public visitAddress(arg0: sun.jvm.hotspot.debugger.Address): void
-                public visitCompOopAddress(arg0: sun.jvm.hotspot.debugger.Address): void
-            }
-            class ReversePtrsAnalysis$2 extends sun.jvm.hotspot.oops.DefaultOopVisitor {
-                val$currObj: sun.jvm.hotspot.oops.Oop
-                val$workList: java.util.Stack
-                this$0: sun.jvm.hotspot.utilities.ReversePtrsAnalysis
-                constructor(arg0: sun.jvm.hotspot.utilities.ReversePtrsAnalysis, arg1: sun.jvm.hotspot.oops.Oop, arg2: java.util.Stack)
-                public doOop(arg0: sun.jvm.hotspot.oops.OopField, arg1: boolean): void
-            }
-            class ReversePtrsAnalysis$1 implements sun.jvm.hotspot.memory.SystemDictionary$ClassVisitor {
-                this$0: sun.jvm.hotspot.utilities.ReversePtrsAnalysis
-                constructor(arg0: sun.jvm.hotspot.utilities.ReversePtrsAnalysis)
-                public visit(arg0: sun.jvm.hotspot.oops.Klass): void
-            }
-            class ReversePtrsAnalysis$1$1 extends sun.jvm.hotspot.oops.DefaultOopVisitor {
-                val$ik: sun.jvm.hotspot.oops.InstanceKlass
-                this$1: sun.jvm.hotspot.utilities.ReversePtrsAnalysis$1
-                constructor(arg0: sun.jvm.hotspot.utilities.ReversePtrsAnalysis$1, arg1: sun.jvm.hotspot.oops.InstanceKlass)
-                public doOop(arg0: sun.jvm.hotspot.oops.OopField, arg1: boolean): void
             }
             class ProgressiveHeapVisitor implements sun.jvm.hotspot.oops.HeapVisitor {
                 public constructor(arg0: sun.jvm.hotspot.oops.HeapVisitor, arg1: sun.jvm.hotspot.utilities.HeapProgressThunk)
@@ -10630,33 +7893,6 @@ declare namespace sun {
                 static access$600(arg0: sun.jvm.hotspot.utilities.HeapHprofBinWriter, arg1: int, arg2: int): void
                 static access$700(arg0: sun.jvm.hotspot.utilities.HeapHprofBinWriter, arg1: sun.jvm.hotspot.oops.Symbol): void
             }
-            class HeapHprofBinWriter$ClassData {
-                instSize: int
-                fields: java.util.List
-                constructor(arg0: int, arg1: java.util.List)
-            }
-            class HeapHprofBinWriter$4 implements sun.jvm.hotspot.memory.SystemDictionary$ClassVisitor {
-                this$0: sun.jvm.hotspot.utilities.HeapHprofBinWriter
-                constructor(arg0: sun.jvm.hotspot.utilities.HeapHprofBinWriter)
-                public visit(arg0: sun.jvm.hotspot.oops.Klass): void
-            }
-            class HeapHprofBinWriter$3 implements sun.jvm.hotspot.memory.SymbolTable$SymbolVisitor {
-                this$0: sun.jvm.hotspot.utilities.HeapHprofBinWriter
-                constructor(arg0: sun.jvm.hotspot.utilities.HeapHprofBinWriter)
-                public visit(arg0: sun.jvm.hotspot.oops.Symbol): void
-            }
-            class HeapHprofBinWriter$2 implements sun.jvm.hotspot.runtime.AddressVisitor {
-                val$threadIndex: int
-                this$0: sun.jvm.hotspot.utilities.HeapHprofBinWriter
-                constructor(arg0: sun.jvm.hotspot.utilities.HeapHprofBinWriter, arg1: int)
-                public visitAddress(arg0: sun.jvm.hotspot.debugger.Address): void
-                public visitCompOopAddress(arg0: sun.jvm.hotspot.debugger.Address): void
-            }
-            class HeapHprofBinWriter$1 implements sun.jvm.hotspot.memory.SystemDictionary$ClassVisitor {
-                this$0: sun.jvm.hotspot.utilities.HeapHprofBinWriter
-                constructor(arg0: sun.jvm.hotspot.utilities.HeapHprofBinWriter)
-                public visit(arg0: sun.jvm.hotspot.oops.Klass): void
-            }
             class HeapGXLWriter extends sun.jvm.hotspot.utilities.AbstractHeapGraphWriter {
                 public constructor()
                 public write(arg0: java.lang.String): void
@@ -10683,10 +7919,6 @@ declare namespace sun {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class HashtableBucket$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class ConstIterator implements java.util.Iterator {
                 public constructor(arg0: java.util.Iterator)
                 public hasNext(): boolean
@@ -10702,18 +7934,6 @@ declare namespace sun {
                 public constructor()
                 public static parseCast(arg0: java.lang.String): sun.jvm.hotspot.utilities.CPPExpressions$CastExpr
                 public static parseStaticField(arg0: java.lang.String): sun.jvm.hotspot.utilities.CPPExpressions$StaticFieldExpr
-            }
-            class CPPExpressions$1 {
-            }
-            class CPPExpressions$StaticFieldExpr {
-                public getContainingType(): java.lang.String
-                public getFieldName(): java.lang.String
-                constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: sun.jvm.hotspot.utilities.CPPExpressions$1)
-            }
-            class CPPExpressions$CastExpr {
-                public getType(): java.lang.String
-                public getAddress(): java.lang.String
-                constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: sun.jvm.hotspot.utilities.CPPExpressions$1)
             }
             class Bits {
                 public static AllBits: int
@@ -10802,46 +8022,6 @@ declare namespace sun {
                 protected handleRuntimeException(arg0: java.lang.RuntimeException): void
                 protected isJavaVisible(arg0: sun.jvm.hotspot.oops.Oop): boolean
             }
-            class AbstractHeapGraphWriter$4 extends sun.jvm.hotspot.oops.DefaultOopVisitor {
-                this$0: sun.jvm.hotspot.utilities.AbstractHeapGraphWriter
-                constructor(arg0: sun.jvm.hotspot.utilities.AbstractHeapGraphWriter)
-                public doOop(arg0: sun.jvm.hotspot.oops.OopField, arg1: boolean): void
-                public doByte(arg0: sun.jvm.hotspot.oops.ByteField, arg1: boolean): void
-                public doChar(arg0: sun.jvm.hotspot.oops.CharField, arg1: boolean): void
-                public doBoolean(arg0: sun.jvm.hotspot.oops.BooleanField, arg1: boolean): void
-                public doShort(arg0: sun.jvm.hotspot.oops.ShortField, arg1: boolean): void
-                public doInt(arg0: sun.jvm.hotspot.oops.IntField, arg1: boolean): void
-                public doLong(arg0: sun.jvm.hotspot.oops.LongField, arg1: boolean): void
-                public doFloat(arg0: sun.jvm.hotspot.oops.FloatField, arg1: boolean): void
-                public doDouble(arg0: sun.jvm.hotspot.oops.DoubleField, arg1: boolean): void
-            }
-            class AbstractHeapGraphWriter$3 extends sun.jvm.hotspot.oops.DefaultOopVisitor {
-                val$oop: sun.jvm.hotspot.oops.Oop
-                this$0: sun.jvm.hotspot.utilities.AbstractHeapGraphWriter
-                constructor(arg0: sun.jvm.hotspot.utilities.AbstractHeapGraphWriter, arg1: sun.jvm.hotspot.oops.Oop)
-                public doOop(arg0: sun.jvm.hotspot.oops.OopField, arg1: boolean): void
-                public doByte(arg0: sun.jvm.hotspot.oops.ByteField, arg1: boolean): void
-                public doChar(arg0: sun.jvm.hotspot.oops.CharField, arg1: boolean): void
-                public doBoolean(arg0: sun.jvm.hotspot.oops.BooleanField, arg1: boolean): void
-                public doShort(arg0: sun.jvm.hotspot.oops.ShortField, arg1: boolean): void
-                public doInt(arg0: sun.jvm.hotspot.oops.IntField, arg1: boolean): void
-                public doLong(arg0: sun.jvm.hotspot.oops.LongField, arg1: boolean): void
-                public doFloat(arg0: sun.jvm.hotspot.oops.FloatField, arg1: boolean): void
-                public doDouble(arg0: sun.jvm.hotspot.oops.DoubleField, arg1: boolean): void
-            }
-            class AbstractHeapGraphWriter$2 implements sun.jvm.hotspot.runtime.AddressVisitor {
-                this$0: sun.jvm.hotspot.utilities.AbstractHeapGraphWriter
-                constructor(arg0: sun.jvm.hotspot.utilities.AbstractHeapGraphWriter)
-                public visitAddress(arg0: sun.jvm.hotspot.debugger.Address): void
-                public visitCompOopAddress(arg0: sun.jvm.hotspot.debugger.Address): void
-            }
-            class AbstractHeapGraphWriter$1 extends sun.jvm.hotspot.oops.DefaultHeapVisitor {
-                this$0: sun.jvm.hotspot.utilities.AbstractHeapGraphWriter
-                constructor(arg0: sun.jvm.hotspot.utilities.AbstractHeapGraphWriter)
-                public prologue(arg0: long): void
-                public doObj(arg0: sun.jvm.hotspot.oops.Oop): boolean
-                public epilogue(): void
-            }
             namespace memo {
                abstract class MemoizedShort {
                    public constructor()
@@ -10896,18 +8076,10 @@ declare namespace sun {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class GenericGrowableArray$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class GrowableArray<T> extends sun.jvm.hotspot.utilities.GenericGrowableArray {
                 public static sun.jvm.hotspot.utilities.GrowableArray<S>: <S>
                 public at(arg0: int): T
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class GrowableArray$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             interface HeapProgressThunk {
                 public heapIterationFractionUpdate(arg0: double): void
@@ -10972,10 +8144,6 @@ declare namespace sun {
                 protected verify(): void
                 public static main(arg0: java.lang.String[]): void
             }
-            class RBTree$1 implements java.util.Comparator {
-                constructor()
-                public compare(arg0: java.lang.Object, arg1: java.lang.Object): int
-            }
             class IntervalTree extends sun.jvm.hotspot.utilities.RBTree {
                 public constructor(arg0: java.util.Comparator)
                 public insert(arg0: sun.jvm.hotspot.utilities.Interval, arg1: java.lang.Object): void
@@ -10984,10 +8152,6 @@ declare namespace sun {
                 public printOn(arg0: java.io.PrintStream): void
                 protected getNodeValue(arg0: sun.jvm.hotspot.utilities.RBNode): java.lang.Object
                 protected verify(): void
-            }
-            class IntervalTree$IntervalComparator implements java.util.Comparator {
-                public constructor(arg0: java.util.Comparator)
-                public compare(arg0: java.lang.Object, arg1: java.lang.Object): int
             }
             class LivenessPath {
                 constructor()
@@ -11010,13 +8174,6 @@ declare namespace sun {
                 public getFirstQueue(): sun.jvm.hotspot.utilities.MessageQueue
                 public getSecondQueue(): sun.jvm.hotspot.utilities.MessageQueue
             }
-            class MessageQueueBackend$MessageQueueImpl implements sun.jvm.hotspot.utilities.MessageQueue {
-                this$0: sun.jvm.hotspot.utilities.MessageQueueBackend
-                public constructor(arg0: sun.jvm.hotspot.utilities.MessageQueueBackend, arg1: java.util.LinkedList, arg2: java.util.LinkedList)
-                public readMessage(): java.lang.Object
-                public readMessageWithTimeout(arg0: long): java.lang.Object
-                public writeMessage(arg0: java.lang.Object): void
-            }
             class LivenessPathList {
                 public constructor()
                 public size(): int
@@ -11031,24 +8188,10 @@ declare namespace sun {
                 static access$000(arg0: sun.jvm.hotspot.utilities.WorkerThread): sun.jvm.hotspot.utilities.MessageQueueBackend
                 static access$100(arg0: sun.jvm.hotspot.utilities.WorkerThread): boolean
             }
-            class WorkerThread$MainLoop implements java.lang.Runnable {
-                this$0: sun.jvm.hotspot.utilities.WorkerThread
-                public constructor(arg0: sun.jvm.hotspot.utilities.WorkerThread)
-                public run(): void
-            }
-            class WorkerThread$1 implements java.lang.Runnable {
-                this$0: sun.jvm.hotspot.utilities.WorkerThread
-                constructor(arg0: sun.jvm.hotspot.utilities.WorkerThread)
-                public run(): void
-            }
             class HashtableEntry extends sun.jvm.hotspot.utilities.BasicHashtableEntry {
                 public literalValue(): sun.jvm.hotspot.debugger.Address
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class HashtableEntry$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class LivenessPathElement {
                 constructor(arg0: sun.jvm.hotspot.oops.Oop, arg1: sun.jvm.hotspot.oops.FieldIdentifier)
@@ -11069,10 +8212,6 @@ declare namespace sun {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class BasicHashtableEntry$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             interface BitMapClosure {
                 public doBit(arg0: int): void
             }
@@ -11088,20 +8227,12 @@ declare namespace sun {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class BasicHashtable$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class Hashtable extends sun.jvm.hotspot.utilities.BasicHashtable {
                 protected getHashtableEntryClass(): java.lang.Class
                 public hashToIndex(arg0: long): int
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 protected static hashSymbol(arg0: byte[]): long
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class Hashtable$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class BitMap {
                 public constructor(arg0: int)
@@ -11154,20 +8285,12 @@ declare namespace sun {
                 public getElemType(): sun.jvm.hotspot.types.Type
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class U1Array$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class U2Array extends sun.jvm.hotspot.utilities.GenericArray {
                 protected static elemType: sun.jvm.hotspot.types.Type
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public at(arg0: int): short
                 public getElemType(): sun.jvm.hotspot.types.Type
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class U2Array$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class IntArray extends sun.jvm.hotspot.utilities.GenericArray {
                 protected static elemType: sun.jvm.hotspot.types.Type
@@ -11176,20 +8299,12 @@ declare namespace sun {
                 public getElemType(): sun.jvm.hotspot.types.Type
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class IntArray$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class KlassArray extends sun.jvm.hotspot.utilities.GenericArray {
                 protected static elemType: sun.jvm.hotspot.types.Type
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public getAt(arg0: int): sun.jvm.hotspot.oops.Klass
                 public getElemType(): sun.jvm.hotspot.types.Type
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class KlassArray$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             abstract class GenericArray extends sun.jvm.hotspot.runtime.VMObject {
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address, arg1: long)
@@ -11201,20 +8316,12 @@ declare namespace sun {
                 public getElemType(): sun.jvm.hotspot.types.Type
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
             }
-            class GenericArray$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
-            }
             class MethodArray extends sun.jvm.hotspot.utilities.GenericArray {
                 protected static elemType: sun.jvm.hotspot.types.Type
                 public constructor(arg0: sun.jvm.hotspot.debugger.Address)
                 public at(arg0: int): sun.jvm.hotspot.oops.Method
                 public getElemType(): sun.jvm.hotspot.types.Type
                 static access$000(arg0: sun.jvm.hotspot.types.TypeDataBase): void
-            }
-            class MethodArray$1 implements java.util.Observer {
-                constructor()
-                public update(arg0: java.util.Observable, arg1: java.lang.Object): void
             }
             class ObjectReader {
                 protected javaLangString: sun.jvm.hotspot.oops.Symbol
@@ -11251,104 +8358,6 @@ declare namespace sun {
                 protected getFromObjTable(arg0: sun.jvm.hotspot.oops.Metadata): java.lang.Object
                 protected getParamTypes(arg0: sun.jvm.hotspot.oops.Symbol): java.lang.Class[]
                 static access$000(): boolean
-            }
-            class ObjectReader$SignatureParser extends sun.jvm.hotspot.runtime.SignatureIterator {
-                protected tmp: java.util.Vector
-                this$0: sun.jvm.hotspot.utilities.ObjectReader
-                public constructor(arg0: sun.jvm.hotspot.utilities.ObjectReader, arg1: sun.jvm.hotspot.oops.Symbol)
-                public doBool(): void
-                public doChar(): void
-                public doFloat(): void
-                public doDouble(): void
-                public doByte(): void
-                public doShort(): void
-                public doInt(): void
-                public doLong(): void
-                public doVoid(): void
-                public doObject(arg0: int, arg1: int): void
-                public doArray(arg0: int, arg1: int): void
-                protected getClass(arg0: int, arg1: int): java.lang.Class
-                protected getClassName(arg0: int, arg1: int): java.lang.String
-                protected arrayInnerBegin(arg0: int): int
-                public getNumParams(): int
-                public getParamTypes(): java.util.Enumeration
-            }
-            class ObjectReader$FieldSetter extends sun.jvm.hotspot.oops.DefaultOopVisitor {
-                protected obj: java.lang.Object
-                this$0: sun.jvm.hotspot.utilities.ObjectReader
-                public constructor(arg0: sun.jvm.hotspot.utilities.ObjectReader, arg1: java.lang.Object)
-                public doOop(arg0: sun.jvm.hotspot.oops.OopField, arg1: boolean): void
-                public doByte(arg0: sun.jvm.hotspot.oops.ByteField, arg1: boolean): void
-                public doChar(arg0: sun.jvm.hotspot.oops.CharField, arg1: boolean): void
-                public doBoolean(arg0: sun.jvm.hotspot.oops.BooleanField, arg1: boolean): void
-                public doShort(arg0: sun.jvm.hotspot.oops.ShortField, arg1: boolean): void
-                public doInt(arg0: sun.jvm.hotspot.oops.IntField, arg1: boolean): void
-                public doLong(arg0: sun.jvm.hotspot.oops.LongField, arg1: boolean): void
-                public doFloat(arg0: sun.jvm.hotspot.oops.FloatField, arg1: boolean): void
-                public doDouble(arg0: sun.jvm.hotspot.oops.DoubleField, arg1: boolean): void
-                public doCInt(arg0: sun.jvm.hotspot.oops.CIntField, arg1: boolean): void
-            }
-            class ObjectReader$9 extends sun.jvm.hotspot.oops.DefaultOopVisitor {
-                val$arrayObj: java.lang.Object[]
-                this$0: sun.jvm.hotspot.utilities.ObjectReader
-                constructor(arg0: sun.jvm.hotspot.utilities.ObjectReader, arg1: java.lang.Object[])
-                public doOop(arg0: sun.jvm.hotspot.oops.OopField, arg1: boolean): void
-            }
-            class ObjectReader$8 extends sun.jvm.hotspot.oops.DefaultOopVisitor {
-                val$arrayObj: long[]
-                val$array: sun.jvm.hotspot.oops.TypeArray
-                this$0: sun.jvm.hotspot.utilities.ObjectReader
-                constructor(arg0: sun.jvm.hotspot.utilities.ObjectReader, arg1: long[], arg2: sun.jvm.hotspot.oops.TypeArray)
-                public doLong(arg0: sun.jvm.hotspot.oops.LongField, arg1: boolean): void
-            }
-            class ObjectReader$7 extends sun.jvm.hotspot.oops.DefaultOopVisitor {
-                val$arrayObj: int[]
-                val$array: sun.jvm.hotspot.oops.TypeArray
-                this$0: sun.jvm.hotspot.utilities.ObjectReader
-                constructor(arg0: sun.jvm.hotspot.utilities.ObjectReader, arg1: int[], arg2: sun.jvm.hotspot.oops.TypeArray)
-                public doInt(arg0: sun.jvm.hotspot.oops.IntField, arg1: boolean): void
-            }
-            class ObjectReader$6 extends sun.jvm.hotspot.oops.DefaultOopVisitor {
-                val$arrayObj: short[]
-                val$array: sun.jvm.hotspot.oops.TypeArray
-                this$0: sun.jvm.hotspot.utilities.ObjectReader
-                constructor(arg0: sun.jvm.hotspot.utilities.ObjectReader, arg1: short[], arg2: sun.jvm.hotspot.oops.TypeArray)
-                public doShort(arg0: sun.jvm.hotspot.oops.ShortField, arg1: boolean): void
-            }
-            class ObjectReader$5 extends sun.jvm.hotspot.oops.DefaultOopVisitor {
-                val$arrayObj: byte[]
-                val$array: sun.jvm.hotspot.oops.TypeArray
-                this$0: sun.jvm.hotspot.utilities.ObjectReader
-                constructor(arg0: sun.jvm.hotspot.utilities.ObjectReader, arg1: byte[], arg2: sun.jvm.hotspot.oops.TypeArray)
-                public doByte(arg0: sun.jvm.hotspot.oops.ByteField, arg1: boolean): void
-            }
-            class ObjectReader$4 extends sun.jvm.hotspot.oops.DefaultOopVisitor {
-                val$arrayObj: double[]
-                val$array: sun.jvm.hotspot.oops.TypeArray
-                this$0: sun.jvm.hotspot.utilities.ObjectReader
-                constructor(arg0: sun.jvm.hotspot.utilities.ObjectReader, arg1: double[], arg2: sun.jvm.hotspot.oops.TypeArray)
-                public doDouble(arg0: sun.jvm.hotspot.oops.DoubleField, arg1: boolean): void
-            }
-            class ObjectReader$3 extends sun.jvm.hotspot.oops.DefaultOopVisitor {
-                val$arrayObj: float[]
-                val$array: sun.jvm.hotspot.oops.TypeArray
-                this$0: sun.jvm.hotspot.utilities.ObjectReader
-                constructor(arg0: sun.jvm.hotspot.utilities.ObjectReader, arg1: float[], arg2: sun.jvm.hotspot.oops.TypeArray)
-                public doFloat(arg0: sun.jvm.hotspot.oops.FloatField, arg1: boolean): void
-            }
-            class ObjectReader$2 extends sun.jvm.hotspot.oops.DefaultOopVisitor {
-                val$arrayObj: char[]
-                val$array: sun.jvm.hotspot.oops.TypeArray
-                this$0: sun.jvm.hotspot.utilities.ObjectReader
-                constructor(arg0: sun.jvm.hotspot.utilities.ObjectReader, arg1: char[], arg2: sun.jvm.hotspot.oops.TypeArray)
-                public doChar(arg0: sun.jvm.hotspot.oops.CharField, arg1: boolean): void
-            }
-            class ObjectReader$1 extends sun.jvm.hotspot.oops.DefaultOopVisitor {
-                val$arrayObj: boolean[]
-                val$array: sun.jvm.hotspot.oops.TypeArray
-                this$0: sun.jvm.hotspot.utilities.ObjectReader
-                constructor(arg0: sun.jvm.hotspot.utilities.ObjectReader, arg1: boolean[], arg2: sun.jvm.hotspot.oops.TypeArray)
-                public doBoolean(arg0: sun.jvm.hotspot.oops.BooleanField, arg1: boolean): void
             }
             namespace soql {
                class MethodCallable implements sun.jvm.hotspot.utilities.soql.Callable {
@@ -11451,15 +8460,6 @@ declare namespace sun {
                    protected constructor()
                    static access$000(arg0: sun.jvm.hotspot.utilities.soql.SOQLEngine, arg1: sun.jvm.hotspot.oops.Oop, arg2: sun.jvm.hotspot.utilities.soql.ObjectVisitor, arg3: boolean): void
                }
-               class SOQLEngine$1 implements sun.jvm.hotspot.oops.HeapVisitor {
-                   filterExists: boolean
-                   val$visitor: sun.jvm.hotspot.utilities.soql.ObjectVisitor
-                   this$0: sun.jvm.hotspot.utilities.soql.SOQLEngine
-                   constructor(arg0: sun.jvm.hotspot.utilities.soql.SOQLEngine, arg1: sun.jvm.hotspot.utilities.soql.ObjectVisitor)
-                   public prologue(arg0: long): void
-                   public doObj(arg0: sun.jvm.hotspot.oops.Oop): boolean
-                   public epilogue(): void
-               }
                class JSJavaInstanceKlass extends sun.jvm.hotspot.utilities.soql.JSJavaKlass {
                    public constructor(arg0: sun.jvm.hotspot.oops.InstanceKlass, arg1: sun.jvm.hotspot.utilities.soql.JSJavaFactory)
                    public getInstanceKlass(): sun.jvm.hotspot.oops.InstanceKlass
@@ -11501,24 +8501,6 @@ declare namespace sun {
                    public forEachClass(arg0: java.lang.Object[]): void
                    public toString(): java.lang.String
                    static access$000(arg0: sun.jvm.hotspot.utilities.soql.JSJavaHeap): sun.jvm.hotspot.utilities.soql.JSJavaFactory
-               }
-               class JSJavaHeap$3 implements sun.jvm.hotspot.memory.SystemDictionary$ClassVisitor {
-                   val$finalFunc: sun.jvm.hotspot.utilities.soql.Callable
-                   this$0: sun.jvm.hotspot.utilities.soql.JSJavaHeap
-                   constructor(arg0: sun.jvm.hotspot.utilities.soql.JSJavaHeap, arg1: sun.jvm.hotspot.utilities.soql.Callable)
-                   public visit(arg0: sun.jvm.hotspot.oops.Klass): void
-               }
-               class JSJavaHeap$2 implements sun.jvm.hotspot.memory.SystemDictionary$ClassAndLoaderVisitor {
-                   val$finalFunc: sun.jvm.hotspot.utilities.soql.Callable
-                   this$0: sun.jvm.hotspot.utilities.soql.JSJavaHeap
-                   constructor(arg0: sun.jvm.hotspot.utilities.soql.JSJavaHeap, arg1: sun.jvm.hotspot.utilities.soql.Callable)
-                   public visit(arg0: sun.jvm.hotspot.oops.Klass, arg1: sun.jvm.hotspot.oops.Oop): void
-               }
-               class JSJavaHeap$1 extends sun.jvm.hotspot.oops.DefaultHeapVisitor {
-                   val$finalFunc: sun.jvm.hotspot.utilities.soql.Callable
-                   this$0: sun.jvm.hotspot.utilities.soql.JSJavaHeap
-                   constructor(arg0: sun.jvm.hotspot.utilities.soql.JSJavaHeap, arg1: sun.jvm.hotspot.utilities.soql.Callable)
-                   public doObj(arg0: sun.jvm.hotspot.oops.Oop): boolean
                }
                class JSMap extends sun.jvm.hotspot.utilities.soql.DefaultScriptObject {
                    public constructor(arg0: java.util.Map, arg1: sun.jvm.hotspot.utilities.soql.JSJavaFactory)
@@ -11717,7 +8699,7 @@ declare namespace sun {
             
          }
          class CommandProcessor {
-             boolean: volatile
+             quit: boolean
              static historyPattern: java.util.regex.Pattern
              quote(arg0: java.lang.String): void
              dumpType(arg0: sun.jvm.hotspot.types.Type): void
@@ -11750,379 +8732,6 @@ declare namespace sun {
              static access$102(arg0: sun.jvm.hotspot.CommandProcessor, arg1: boolean): boolean
              static access$1200(arg0: sun.jvm.hotspot.CommandProcessor): sun.jvm.hotspot.utilities.soql.JSJavaScriptEngine
          }
-         class CommandProcessor$52 extends sun.jvm.hotspot.CommandProcessor$Command {
-             val$func: java.lang.String
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean, arg4: java.lang.String)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$51 extends sun.jvm.hotspot.utilities.soql.JSJavaScriptEngine {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor)
-             public getObjectReader(): sun.jvm.hotspot.utilities.ObjectReader
-             public getJSJavaFactory(): sun.jvm.hotspot.utilities.soql.JSJavaFactory
-             protected quit(): void
-             protected getInputReader(): java.io.BufferedReader
-             protected getOutputStream(): java.io.PrintStream
-             protected getErrorStream(): java.io.PrintStream
-         }
-         class CommandProcessor$50 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$49 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$48 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$47 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$46 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$45 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$44 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$43 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$43$1 implements sun.jvm.hotspot.code.CodeCacheVisitor {
-             val$fout: java.io.PrintStream
-             val$gen: sun.jvm.hotspot.ui.classbrowser.HTMLGenerator
-             this$1: sun.jvm.hotspot.CommandProcessor$43
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor$43, arg1: java.io.PrintStream, arg2: sun.jvm.hotspot.ui.classbrowser.HTMLGenerator)
-             public prologue(arg0: sun.jvm.hotspot.debugger.Address, arg1: sun.jvm.hotspot.debugger.Address): void
-             public visit(arg0: sun.jvm.hotspot.code.CodeBlob): void
-             public epilogue(): void
-         }
-         class CommandProcessor$42 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$42$3 implements sun.jvm.hotspot.code.CodeCacheVisitor {
-             val$value: sun.jvm.hotspot.debugger.Address
-             val$stride: long
-             this$1: sun.jvm.hotspot.CommandProcessor$42
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor$42, arg1: sun.jvm.hotspot.debugger.Address, arg2: long)
-             public prologue(arg0: sun.jvm.hotspot.debugger.Address, arg1: sun.jvm.hotspot.debugger.Address): void
-             public visit(arg0: sun.jvm.hotspot.code.CodeBlob): void
-             public epilogue(): void
-         }
-         class CommandProcessor$42$2 extends sun.jvm.hotspot.oops.DefaultHeapVisitor {
-             val$value: sun.jvm.hotspot.debugger.Address
-             this$1: sun.jvm.hotspot.CommandProcessor$42
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor$42, arg1: sun.jvm.hotspot.debugger.Address)
-             public doObj(arg0: sun.jvm.hotspot.oops.Oop): boolean
-         }
-         class CommandProcessor$42$1 implements sun.jvm.hotspot.oops.RawHeapVisitor {
-             val$value: sun.jvm.hotspot.debugger.Address
-             this$1: sun.jvm.hotspot.CommandProcessor$42
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor$42, arg1: sun.jvm.hotspot.debugger.Address)
-             public prologue(arg0: long): void
-             public visitAddress(arg0: sun.jvm.hotspot.debugger.Address): void
-             public visitCompOopAddress(arg0: sun.jvm.hotspot.debugger.Address): void
-             public epilogue(): void
-         }
-         class CommandProcessor$41 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$40 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$39 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$38 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$37 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$36 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$35 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$34 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$33 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$32 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$31 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$30 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$29 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$28 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$27 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$26 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$25 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$24 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$23 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$22 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$21 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$20 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$19 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$19$1 implements sun.jvm.hotspot.memory.SystemDictionary$ClassVisitor {
-             this$1: sun.jvm.hotspot.CommandProcessor$19
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor$19)
-             public visit(arg0: sun.jvm.hotspot.oops.Klass): void
-         }
-         class CommandProcessor$18 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$18$1 implements sun.jvm.hotspot.memory.SystemDictionary$ClassVisitor {
-             this$1: sun.jvm.hotspot.CommandProcessor$18
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor$18)
-             public visit(arg0: sun.jvm.hotspot.oops.Klass): void
-         }
-         class CommandProcessor$17 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$17$1 implements sun.jvm.hotspot.utilities.HeapProgressThunk {
-             val$complete: boolean[]
-             this$1: sun.jvm.hotspot.CommandProcessor$17
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor$17, arg1: boolean[])
-             public heapIterationFractionUpdate(arg0: double): void
-             public heapIterationComplete(): void
-         }
-         class CommandProcessor$16 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$15 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$14 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$13 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$12 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$12$1 implements java.util.Comparator {
-             this$1: sun.jvm.hotspot.CommandProcessor$12
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor$12)
-             public compare(arg0: java.lang.Object, arg1: java.lang.Object): int
-         }
-         class CommandProcessor$11 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$10 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$10$1 implements sun.jvm.hotspot.memory.SymbolTable$SymbolVisitor {
-             this$1: sun.jvm.hotspot.CommandProcessor$10
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor$10)
-             public visit(arg0: sun.jvm.hotspot.oops.Symbol): void
-         }
-         class CommandProcessor$9 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$8 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$7 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$6 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$5 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$4 extends sun.jvm.hotspot.CommandProcessor$Command {
-             args1: java.util.regex.Pattern
-             args2: java.util.regex.Pattern
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             fill(arg0: sun.jvm.hotspot.debugger.Address, arg1: int): java.lang.String
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$3 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$2 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         class CommandProcessor$1 extends sun.jvm.hotspot.CommandProcessor$Command {
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: boolean)
-             public doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-         }
-         abstract class CommandProcessor$Command {
-             name: java.lang.String
-             usage: java.lang.String
-             okIfDisconnected: boolean
-             this$0: sun.jvm.hotspot.CommandProcessor
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean)
-             constructor(arg0: sun.jvm.hotspot.CommandProcessor, arg1: java.lang.String, arg2: boolean)
-             doit(arg0: sun.jvm.hotspot.CommandProcessor$Tokens): void
-             usage(): void
-             printOopValue(arg0: sun.jvm.hotspot.oops.Oop): void
-             printNode(arg0: sun.jvm.hotspot.ui.tree.SimpleTreeNode): void
-         }
-         class CommandProcessor$Tokens {
-             input: java.lang.String
-             i: int
-             tokens: java.lang.String[]
-             length: int
-             splitWhitespace(arg0: java.lang.String): java.lang.String[]
-             add(arg0: java.lang.String, arg1: java.util.ArrayList): void
-             constructor(arg0: java.lang.String)
-             nextToken(): java.lang.String
-             hasMoreTokens(): boolean
-             countTokens(): int
-             trim(arg0: int): void
-             join(arg0: java.lang.String): java.lang.String
-             at(arg0: int): java.lang.String
-         }
-         class CommandProcessor$NonBootFilter implements sun.jvm.hotspot.tools.jcore.ClassFilter {
-             public constructor()
-             public canInclude(arg0: sun.jvm.hotspot.oops.InstanceKlass): boolean
-         }
-         class CommandProcessor$BootFilter implements sun.jvm.hotspot.tools.jcore.ClassFilter {
-             public constructor()
-             public canInclude(arg0: sun.jvm.hotspot.oops.InstanceKlass): boolean
-         }
-         abstract class CommandProcessor$DebuggerInterface {
-             public constructor()
-             public getAgent(): sun.jvm.hotspot.HotSpotAgent
-             public isAttached(): boolean
-             public attach(arg0: java.lang.String): void
-             public attach(arg0: java.lang.String, arg1: java.lang.String): void
-             public detach(): void
-             public reattach(): void
-         }
          class HotSpotAgent {
              static showUsage(): void
              public constructor()
@@ -12140,11 +8749,6 @@ declare namespace sun {
              public shutdownServer(): boolean
              static access$000(arg0: sun.jvm.hotspot.HotSpotAgent): boolean
          }
-         class HotSpotAgent$1 implements java.lang.Runnable {
-             this$0: sun.jvm.hotspot.HotSpotAgent
-             constructor(arg0: sun.jvm.hotspot.HotSpotAgent)
-             public run(): void
-         }
          class CLHSDB {
              public constructor(arg0: sun.jvm.hotspot.debugger.JVMDebugger)
              public static main(arg0: java.lang.String[]): void
@@ -12157,21 +8761,6 @@ declare namespace sun {
              static access$500(arg0: sun.jvm.hotspot.CLHSDB): java.lang.String
              static access$600(arg0: sun.jvm.hotspot.CLHSDB): java.lang.String
              static access$700(arg0: sun.jvm.hotspot.CLHSDB): java.lang.String
-         }
-         class CLHSDB$2 extends sun.jvm.hotspot.CommandProcessor$DebuggerInterface {
-             this$0: sun.jvm.hotspot.CLHSDB
-             constructor(arg0: sun.jvm.hotspot.CLHSDB)
-             public getAgent(): sun.jvm.hotspot.HotSpotAgent
-             public isAttached(): boolean
-             public attach(arg0: java.lang.String): void
-             public attach(arg0: java.lang.String, arg1: java.lang.String): void
-             public detach(): void
-             public reattach(): void
-         }
-         class CLHSDB$1 extends java.lang.Thread {
-             this$0: sun.jvm.hotspot.CLHSDB
-             constructor(arg0: sun.jvm.hotspot.CLHSDB)
-             public run(): void
          }
          namespace debugger {
             namespace ia64 {
@@ -12400,16 +8989,6 @@ declare namespace sun {
                    public writeBytesToProcess(arg0: long, arg1: long, arg2: byte[]): void
                    static access$000(arg0: sun.jvm.hotspot.debugger.windbg.WindbgDebuggerLocal, arg1: long): sun.jvm.hotspot.debugger.cdbg.ClosestSymbol
                }
-               class WindbgDebuggerLocal$2 extends sun.jvm.hotspot.debugger.windbg.DLL {
-                   this$0: sun.jvm.hotspot.debugger.windbg.WindbgDebuggerLocal
-                   constructor(arg0: sun.jvm.hotspot.debugger.windbg.WindbgDebuggerLocal, arg1: sun.jvm.hotspot.debugger.windbg.WindbgDebugger, arg2: java.lang.String, arg3: long, arg4: sun.jvm.hotspot.debugger.Address)
-                   public closestSymbolToPC(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.debugger.cdbg.ClosestSymbol
-               }
-               class WindbgDebuggerLocal$1 extends sun.jvm.hotspot.debugger.DebuggerUtilities {
-                   this$0: sun.jvm.hotspot.debugger.windbg.WindbgDebuggerLocal
-                   constructor(arg0: sun.jvm.hotspot.debugger.windbg.WindbgDebuggerLocal, arg1: long, arg2: boolean)
-                   public checkAlignment(arg0: long, arg1: long): void
-               }
                class WindbgCDebugger implements sun.jvm.hotspot.debugger.cdbg.CDebugger {
                    constructor(arg0: sun.jvm.hotspot.debugger.windbg.WindbgDebugger)
                    public getThreadList(): java.util.List
@@ -12424,14 +9003,6 @@ declare namespace sun {
                class WindbgCDebugInfoBuilder implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SubsectionTypes , sun.jvm.hotspot.debugger.win32.coff.DebugVC50TypeLeafIndices , sun.jvm.hotspot.debugger.win32.coff.DebugVC50TypeEnums , sun.jvm.hotspot.debugger.win32.coff.DebugVC50SymbolTypes , sun.jvm.hotspot.debugger.win32.coff.DebugVC50MemberAttributes , sun.jvm.hotspot.debugger.cdbg.CVAttributes , sun.jvm.hotspot.debugger.cdbg.AccessControl {
                    constructor(arg0: sun.jvm.hotspot.debugger.windbg.WindbgDebugger)
                    buildDataBase(arg0: java.lang.String, arg1: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.debugger.cdbg.CDebugInfoDataBase
-               }
-               class WindbgCDebugInfoBuilder$1 implements sun.jvm.hotspot.debugger.cdbg.basic.ResolveListener {
-                   this$0: sun.jvm.hotspot.debugger.windbg.WindbgCDebugInfoBuilder
-                   constructor(arg0: sun.jvm.hotspot.debugger.windbg.WindbgCDebugInfoBuilder)
-                   public resolveFailed(arg0: sun.jvm.hotspot.debugger.cdbg.Type, arg1: sun.jvm.hotspot.debugger.cdbg.basic.LazyType, arg2: java.lang.String): void
-                   public resolveFailed(arg0: sun.jvm.hotspot.debugger.cdbg.Type, arg1: java.lang.String): void
-                   public resolveFailed(arg0: sun.jvm.hotspot.debugger.cdbg.Sym, arg1: sun.jvm.hotspot.debugger.cdbg.basic.LazyType, arg2: java.lang.String): void
-                   public resolveFailed(arg0: sun.jvm.hotspot.debugger.cdbg.Sym, arg1: sun.jvm.hotspot.debugger.cdbg.basic.LazyBlockSym, arg2: java.lang.String): void
                }
                class WindbgOopHandle extends sun.jvm.hotspot.debugger.windbg.WindbgAddress implements sun.jvm.hotspot.debugger.OopHandle {
                    constructor(arg0: sun.jvm.hotspot.debugger.windbg.WindbgDebugger, arg1: long)
@@ -12524,16 +9095,6 @@ declare namespace sun {
                    public close(): void
                    static access$000(arg0: sun.jvm.hotspot.debugger.windbg.DLL): java.lang.String
                    static access$100(arg0: sun.jvm.hotspot.debugger.windbg.DLL): sun.jvm.hotspot.debugger.Address
-               }
-               class DLL$2 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                   this$0: sun.jvm.hotspot.debugger.windbg.DLL
-                   constructor(arg0: sun.jvm.hotspot.debugger.windbg.DLL)
-                   public computeValue(): java.lang.Object
-               }
-               class DLL$1 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                   this$0: sun.jvm.hotspot.debugger.windbg.DLL
-                   constructor(arg0: sun.jvm.hotspot.debugger.windbg.DLL)
-                   public computeValue(): java.lang.Object
                }
                class AddressDataSource implements sun.jvm.hotspot.debugger.DataSource {
                    public constructor(arg0: sun.jvm.hotspot.debugger.Address)
@@ -13815,968 +10376,6 @@ declare namespace sun {
                       public parse(arg0: java.lang.String): sun.jvm.hotspot.debugger.win32.coff.COFFFile
                       public parse(arg0: sun.jvm.hotspot.debugger.DataSource): sun.jvm.hotspot.debugger.win32.coff.COFFFile
                   }
-                  class COFFFileParser$COFFFileImpl implements sun.jvm.hotspot.debugger.win32.coff.COFFFile {
-                      this$0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser, arg1: sun.jvm.hotspot.debugger.DataSource)
-                      public isImage(): boolean
-                      public getHeader(): sun.jvm.hotspot.debugger.win32.coff.COFFHeader
-                      initialize(): void
-                      readByteAt(arg0: long): byte
-                      readByte(): byte
-                      readBytesAt(arg0: long, arg1: byte[]): int
-                      readBytes(arg0: byte[]): int
-                      readShortAt(arg0: long): short
-                      readShort(): short
-                      readIntAt(arg0: long): int
-                      readInt(): int
-                      readLongAt(arg0: long): long
-                      readLong(): long
-                      readFloat(): float
-                      readDouble(): double
-                      readCString(): java.lang.String
-                      seek(arg0: long): void
-                      getFilePointer(): long
-                      byteSwap(arg0: short): short
-                      byteSwap(arg0: int): int
-                      byteSwap(arg0: long): long
-                      public close(): void
-                      static access$000(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl): long
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl implements sun.jvm.hotspot.debugger.win32.coff.COFFHeader {
-                      this$1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl)
-                      public getMachineType(): short
-                      public getNumberOfSections(): short
-                      public getTimeDateStamp(): int
-                      public getPointerToSymbolTable(): int
-                      public getNumberOfSymbols(): int
-                      public getSizeOfOptionalHeader(): short
-                      public getOptionalHeader(): sun.jvm.hotspot.debugger.win32.coff.OptionalHeader
-                      public getCharacteristics(): short
-                      public hasCharacteristic(arg0: short): boolean
-                      public getSectionHeader(arg0: int): sun.jvm.hotspot.debugger.win32.coff.SectionHeader
-                      public getCOFFSymbol(arg0: int): sun.jvm.hotspot.debugger.win32.coff.COFFSymbol
-                      public getNumberOfStrings(): int
-                      public getString(arg0: int): java.lang.String
-                      getStringTable(): sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$StringTable
-                      rvaToFileOffset(arg0: int): int
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$StringTable {
-                      strings: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$StringTable$COFFString[]
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg1: int)
-                      getNum(): int
-                      get(arg0: int): java.lang.String
-                      getAtOffset(arg0: int): java.lang.String
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$StringTable$1 implements java.util.Comparator {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$StringTable
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$StringTable)
-                      public compare(arg0: java.lang.Object, arg1: java.lang.Object): int
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$StringTable$COFFString {
-                      str: java.lang.String
-                      offset: int
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$StringTable
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$StringTable, arg1: java.lang.String, arg2: int)
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$COFFLineNumberImpl implements sun.jvm.hotspot.debugger.win32.coff.COFFLineNumber {
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg1: int)
-                      public getType(): int
-                      public getLineNumber(): short
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$COFFRelocationImpl implements sun.jvm.hotspot.debugger.win32.coff.COFFRelocation {
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg1: int)
-                      public getVirtualAddress(): int
-                      public getSymbolTableIndex(): int
-                      public getType(): short
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$AuxSectionDefinitionsRecordImpl implements sun.jvm.hotspot.debugger.win32.coff.AuxSectionDefinitionsRecord {
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg1: int)
-                      public getLength(): int
-                      public getNumberOfRelocations(): short
-                      public getNumberOfLineNumbers(): short
-                      public getCheckSum(): int
-                      public getNumber(): short
-                      public getSelection(): byte
-                      public getType(): int
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$AuxFileRecordImpl implements sun.jvm.hotspot.debugger.win32.coff.AuxFileRecord {
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg1: int)
-                      public getName(): java.lang.String
-                      public getType(): int
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$AuxWeakExternalRecordImpl implements sun.jvm.hotspot.debugger.win32.coff.AuxWeakExternalRecord {
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg1: int)
-                      public getTagIndex(): int
-                      public getCharacteristics(): int
-                      public getType(): int
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$AuxBfEfRecordImpl implements sun.jvm.hotspot.debugger.win32.coff.AuxBfEfRecord {
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg1: int)
-                      public getLineNumber(): short
-                      public getPointerToNextFunction(): int
-                      public getType(): int
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$AuxFunctionDefinitionRecordImpl implements sun.jvm.hotspot.debugger.win32.coff.AuxFunctionDefinitionRecord {
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg1: int)
-                      public getTagIndex(): int
-                      public getTotalSize(): int
-                      public getPointerToLineNumber(): int
-                      public getPointerToNextFunction(): int
-                      public getType(): int
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$COFFSymbolImpl implements sun.jvm.hotspot.debugger.win32.coff.COFFSymbol , sun.jvm.hotspot.debugger.win32.coff.COFFSymbolConstants {
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      public constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg1: int)
-                      public getOffset(): int
-                      public getName(): java.lang.String
-                      public getValue(): int
-                      public getSectionNumber(): short
-                      public getType(): short
-                      public getStorageClass(): byte
-                      public getNumberOfAuxSymbols(): byte
-                      public isFunctionDefinition(): boolean
-                      public getAuxFunctionDefinitionRecord(): sun.jvm.hotspot.debugger.win32.coff.AuxFunctionDefinitionRecord
-                      public isBfOrEfSymbol(): boolean
-                      public getAuxBfEfRecord(): sun.jvm.hotspot.debugger.win32.coff.AuxBfEfRecord
-                      public isWeakExternal(): boolean
-                      public getAuxWeakExternalRecord(): sun.jvm.hotspot.debugger.win32.coff.AuxWeakExternalRecord
-                      public isFile(): boolean
-                      public getAuxFileRecord(): sun.jvm.hotspot.debugger.win32.coff.AuxFileRecord
-                      public isSectionDefinition(): boolean
-                      public getAuxSectionDefinitionsRecord(): sun.jvm.hotspot.debugger.win32.coff.AuxSectionDefinitionsRecord
-                      static access$1700(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$COFFSymbolImpl): int
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$COFFSymbolImpl$5 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$COFFSymbolImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$COFFSymbolImpl)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$COFFSymbolImpl$4 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$COFFSymbolImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$COFFSymbolImpl)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$COFFSymbolImpl$3 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$COFFSymbolImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$COFFSymbolImpl)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$COFFSymbolImpl$2 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$COFFSymbolImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$COFFSymbolImpl)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$COFFSymbolImpl$1 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$COFFSymbolImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$COFFSymbolImpl)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$SectionHeaderImpl implements sun.jvm.hotspot.debugger.win32.coff.SectionHeader {
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      public constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg1: int)
-                      public getName(): java.lang.String
-                      public getSize(): int
-                      public getVirtualAddress(): int
-                      public getSizeOfRawData(): int
-                      public getPointerToRawData(): int
-                      public getPointerToRelocations(): int
-                      public getPointerToLineNumbers(): int
-                      public getNumberOfRelocations(): short
-                      public getNumberOfLineNumbers(): short
-                      public getSectionFlags(): int
-                      public hasSectionFlag(arg0: int): boolean
-                      public getCOFFRelocation(arg0: int): sun.jvm.hotspot.debugger.win32.coff.COFFRelocation
-                      public getCOFFLineNumber(arg0: int): sun.jvm.hotspot.debugger.win32.coff.COFFLineNumber
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$SectionHeaderImpl$2 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      val$lineNoOffset: int
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$SectionHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$SectionHeaderImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg2: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$SectionHeaderImpl$1 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      val$relocOffset: int
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$SectionHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$SectionHeaderImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg2: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50 , sun.jvm.hotspot.debugger.win32.coff.DebugVC50TypeLeafIndices {
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg1: int)
-                      public getSubsectionDirectoryOffset(): int
-                      public getSubsectionDirectory(): sun.jvm.hotspot.debugger.win32.coff.DebugVC50SubsectionDirectory
-                      static access$200(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: int): int
-                      static access$400(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: int): java.lang.String
-                      static access$900(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: int): int
-                      static access$1000(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: int): int
-                      static access$1100(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: int): long
-                      static access$1200(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: int): float
-                      static access$1300(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: int): double
-                      static access$1400(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: int): int
-                      static access$1500(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: int): int
-                      static access$1600(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: int): int
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50TypeIteratorImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50TypeIterator , sun.jvm.hotspot.debugger.win32.coff.DebugVC50TypeLeafIndices , sun.jvm.hotspot.debugger.win32.coff.DebugVC50MemberAttributes , sun.jvm.hotspot.debugger.win32.coff.DebugVC50TypeEnums {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSGlobalTypes, arg2: int, arg3: int)
-                      public done(): boolean
-                      public next(): void
-                      public getLength(): short
-                      public getTypeIndex(): int
-                      public getNumTypes(): int
-                      public typeStringDone(): boolean
-                      public typeStringNext(): void
-                      public typeStringLeaf(): int
-                      public typeStringOffset(): int
-                      public getModifierIndex(): int
-                      public getModifierAttribute(): short
-                      public getPointerType(): int
-                      public getPointerAttributes(): int
-                      public getPointerBasedOnTypeIndex(): int
-                      public getPointerBasedOnTypeName(): java.lang.String
-                      public getPointerToMemberClass(): int
-                      public getPointerToMemberFormat(): short
-                      public getArrayElementType(): int
-                      public getArrayIndexType(): int
-                      public getArrayLength(): int
-                      public getArrayName(): java.lang.String
-                      public getClassCount(): short
-                      public getClassProperty(): short
-                      public getClassFieldList(): int
-                      public getClassFieldListIterator(): sun.jvm.hotspot.debugger.win32.coff.DebugVC50TypeIterator
-                      public getClassDerivationList(): int
-                      public getClassVShape(): int
-                      public getClassSize(): int
-                      public getClassName(): java.lang.String
-                      public getUnionCount(): short
-                      public getUnionProperty(): short
-                      public getUnionFieldList(): int
-                      public getUnionFieldListIterator(): sun.jvm.hotspot.debugger.win32.coff.DebugVC50TypeIterator
-                      public getUnionSize(): int
-                      public getUnionName(): java.lang.String
-                      public getEnumCount(): short
-                      public getEnumProperty(): short
-                      public getEnumType(): int
-                      public getEnumFieldList(): int
-                      public getEnumFieldListIterator(): sun.jvm.hotspot.debugger.win32.coff.DebugVC50TypeIterator
-                      public getEnumName(): java.lang.String
-                      public getProcedureReturnType(): int
-                      public getProcedureCallingConvention(): byte
-                      public getProcedureNumberOfParameters(): short
-                      public getProcedureArgumentList(): int
-                      public getProcedureArgumentListIterator(): sun.jvm.hotspot.debugger.win32.coff.DebugVC50TypeIterator
-                      public getMFunctionReturnType(): int
-                      public getMFunctionContainingClass(): int
-                      public getMFunctionThis(): int
-                      public getMFunctionCallingConvention(): byte
-                      public getMFunctionNumberOfParameters(): short
-                      public getMFunctionArgumentList(): int
-                      public getMFunctionArgumentListIterator(): sun.jvm.hotspot.debugger.win32.coff.DebugVC50TypeIterator
-                      public getMFunctionThisAdjust(): int
-                      public getVTShapeCount(): short
-                      public getVTShapeDescriptor(arg0: int): int
-                      public getBasicArrayType(): int
-                      public getLabelAddressMode(): short
-                      public getDimArrayType(): int
-                      public getDimArrayDimInfo(): int
-                      public getDimArrayName(): java.lang.String
-                      public getVFTPathCount(): int
-                      public getVFTPathBase(arg0: int): int
-                      public getSkipIndex(): int
-                      public getArgListCount(): int
-                      public getArgListType(arg0: int): int
-                      public getDefaultArgType(): int
-                      public getDefaultArgExpression(): java.lang.String
-                      public getDerivedCount(): int
-                      public getDerivedType(arg0: int): int
-                      public getBitfieldFieldType(): int
-                      public getBitfieldLength(): byte
-                      public getBitfieldPosition(): byte
-                      public getMListAttribute(): short
-                      public getMListLength(): int
-                      public getMListType(arg0: int): int
-                      public isMListIntroducingVirtual(): boolean
-                      public getMListVtabOffset(): int
-                      public getRefSym(): sun.jvm.hotspot.debugger.win32.coff.DebugVC50SymbolIterator
-                      public getBClassAttribute(): short
-                      public getBClassType(): int
-                      public getBClassOffset(): int
-                      public getVBClassAttribute(): short
-                      public getVBClassBaseClassType(): int
-                      public getVBClassVirtualBaseClassType(): int
-                      public getVBClassVBPOff(): int
-                      public getVBClassVBOff(): int
-                      public getIVBClassAttribute(): short
-                      public getIVBClassBType(): int
-                      public getIVBClassVBPType(): int
-                      public getIVBClassVBPOff(): int
-                      public getIVBClassVBOff(): int
-                      public getEnumerateAttribute(): short
-                      public getEnumerateValue(): long
-                      public getEnumerateName(): java.lang.String
-                      public getFriendFcnType(): int
-                      public getFriendFcnName(): java.lang.String
-                      public getIndexValue(): int
-                      public getIndexIterator(): sun.jvm.hotspot.debugger.win32.coff.DebugVC50TypeIterator
-                      public getMemberAttribute(): short
-                      public getMemberType(): int
-                      public getMemberOffset(): int
-                      public getMemberName(): java.lang.String
-                      public getStaticAttribute(): short
-                      public getStaticType(): int
-                      public getStaticName(): java.lang.String
-                      public getMethodCount(): short
-                      public getMethodList(): int
-                      public getMethodName(): java.lang.String
-                      public getNestedType(): int
-                      public getNestedName(): java.lang.String
-                      public getVFuncTabType(): int
-                      public getFriendClsType(): int
-                      public getOneMethodAttribute(): short
-                      public getOneMethodType(): int
-                      public isOneMethodIntroducingVirtual(): boolean
-                      public getOneMethodVBaseOff(): int
-                      public getOneMethodName(): java.lang.String
-                      public getVFuncOffType(): int
-                      public getVFuncOffOffset(): int
-                      public getNestedExAttribute(): short
-                      public getNestedExType(): int
-                      public getNestedExName(): java.lang.String
-                      public getMemberModifyAttribute(): short
-                      public getMemberModifyType(): int
-                      public getMemberModifyName(): java.lang.String
-                      public getNumericTypeAt(arg0: int): short
-                      public getNumericLengthAt(arg0: int): int
-                      public getNumericIntAt(arg0: int): int
-                      public getNumericLongAt(arg0: int): long
-                      public getNumericFloatAt(arg0: int): float
-                      public getNumericDoubleAt(arg0: int): double
-                      public getNumericDataAt(arg0: int): byte[]
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SymbolIteratorImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SymbolIterator {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: int, arg2: int)
-                      public done(): boolean
-                      public next(): void
-                      public getLength(): short
-                      public getType(): int
-                      public getOffset(): int
-                      public getCompilerTargetProcessor(): byte
-                      public getCompilerFlags(): int
-                      public getComplierVersion(): java.lang.String
-                      public getRegisterSymbolType(): int
-                      public getRegisterEnum(): short
-                      public getRegisterSymbolName(): java.lang.String
-                      public getConstantType(): int
-                      public getConstantValueAsInt(): int
-                      public getConstantValueAsLong(): long
-                      public getConstantValueAsFloat(): float
-                      public getConstantValueAsDouble(): double
-                      public getConstantName(): java.lang.String
-                      public getUDTType(): int
-                      public getUDTName(): java.lang.String
-                      public getSearchSymbolOffset(): int
-                      public getSearchSegment(): short
-                      public getObjectCodeViewSignature(): int
-                      public getObjectName(): java.lang.String
-                      public getManyRegType(): int
-                      public getManyRegCount(): byte
-                      public getManyRegRegister(arg0: int): byte
-                      public getManyRegName(): java.lang.String
-                      public getReturnFlags(): short
-                      public getReturnStyle(): byte
-                      public getReturnRegisterCount(): byte
-                      public getReturnRegister(arg0: int): byte
-                      public advanceToEntryThisSymbol(): void
-                      public getBPRelOffset(): int
-                      public getBPRelType(): int
-                      public getBPRelName(): java.lang.String
-                      public getLGDataType(): int
-                      public getLGDataOffset(): int
-                      public getLGDataSegment(): short
-                      public getLGDataName(): java.lang.String
-                      public getLGProcParent(): sun.jvm.hotspot.debugger.win32.coff.DebugVC50SymbolIterator
-                      public getLGProcParentOffset(): int
-                      public getLGProcEnd(): sun.jvm.hotspot.debugger.win32.coff.DebugVC50SymbolIterator
-                      public getLGProcEndOffset(): int
-                      public getLGProcNext(): sun.jvm.hotspot.debugger.win32.coff.DebugVC50SymbolIterator
-                      public getLGProcNextOffset(): int
-                      public getLGProcLength(): int
-                      public getLGProcDebugStart(): int
-                      public getLGProcDebugEnd(): int
-                      public getLGProcType(): int
-                      public getLGProcOffset(): int
-                      public getLGProcSegment(): short
-                      public getLGProcFlags(): byte
-                      public getLGProcName(): java.lang.String
-                      public getThunkParent(): sun.jvm.hotspot.debugger.win32.coff.DebugVC50SymbolIterator
-                      public getThunkParentOffset(): int
-                      public getThunkEnd(): sun.jvm.hotspot.debugger.win32.coff.DebugVC50SymbolIterator
-                      public getThunkEndOffset(): int
-                      public getThunkNext(): sun.jvm.hotspot.debugger.win32.coff.DebugVC50SymbolIterator
-                      public getThunkNextOffset(): int
-                      public getThunkOffset(): int
-                      public getThunkSegment(): short
-                      public getThunkLength(): short
-                      public getThunkType(): byte
-                      public getThunkName(): java.lang.String
-                      public getThunkAdjustorThisDelta(): short
-                      public getThunkAdjustorTargetName(): java.lang.String
-                      public getThunkVCallDisplacement(): short
-                      public getThunkPCodeOffset(): int
-                      public getThunkPCodeSegment(): short
-                      public getBlockParent(): sun.jvm.hotspot.debugger.win32.coff.DebugVC50SymbolIterator
-                      public getBlockParentOffset(): int
-                      public getBlockEnd(): sun.jvm.hotspot.debugger.win32.coff.DebugVC50SymbolIterator
-                      public getBlockEndOffset(): int
-                      public getBlockLength(): int
-                      public getBlockOffset(): int
-                      public getBlockSegment(): short
-                      public getBlockName(): java.lang.String
-                      public getLabelOffset(): int
-                      public getLabelSegment(): short
-                      public getLabelFlags(): byte
-                      public getLabelName(): java.lang.String
-                      public getChangeOffset(): int
-                      public getChangeSegment(): short
-                      public getChangeModel(): short
-                      public getVTableRoot(): int
-                      public getVTablePath(): int
-                      public getVTableOffset(): int
-                      public getVTableSegment(): short
-                      public getRegRelOffset(): int
-                      public getRegRelType(): int
-                      public getRegRelRegister(): short
-                      public getRegRelName(): java.lang.String
-                      public getLThreadType(): int
-                      public getLThreadOffset(): int
-                      public getLThreadSegment(): short
-                      public getLThreadName(): java.lang.String
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSStaticSymImpl extends sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSymbolBaseImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSStaticSym {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: short, arg2: short, arg3: int, arg4: int)
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSFileIndexImpl extends sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SubsectionImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSFileIndex {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: short, arg2: short, arg3: int, arg4: int)
-                      public getNumModules(): short
-                      public getNumReferences(): short
-                      public getModStart(): short[]
-                      public getRefCount(): short[]
-                      public getNameRef(): int[]
-                      public getNames(): java.lang.String[]
-                      static access$700(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSFileIndexImpl): short
-                      static access$800(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSFileIndexImpl): short
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSFileIndexImpl$4 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      this$4: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSFileIndexImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSFileIndexImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSFileIndexImpl$3 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      val$offset: int
-                      this$4: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSFileIndexImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSFileIndexImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg2: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSFileIndexImpl$2 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      val$offset: int
-                      this$4: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSFileIndexImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSFileIndexImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg2: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSFileIndexImpl$1 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      val$offset: int
-                      this$4: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSFileIndexImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSFileIndexImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg2: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSOffsetMap32Impl extends sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SubsectionImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSOffsetMap32 {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: short, arg2: short, arg3: int, arg4: int)
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSOffsetMap16Impl extends sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SubsectionImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSOffsetMap16 {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: short, arg2: short, arg3: int, arg4: int)
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSPreCompImpl extends sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SubsectionImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSPreComp {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: short, arg2: short, arg3: int, arg4: int)
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSegNameImpl extends sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SubsectionImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSSegName {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: short, arg2: short, arg3: int, arg4: int)
-                      public getSegName(arg0: int): java.lang.String
-                      static access$600(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSegNameImpl): int
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSegNameImpl$1 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      this$4: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSegNameImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSegNameImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SegDescImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SegDesc {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: int)
-                      public getFlags(): short
-                      public getOverlayNum(): short
-                      public getGroup(): short
-                      public getFrame(): short
-                      public getName(): short
-                      public getClassName(): short
-                      public getOffset(): int
-                      public getSize(): int
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSegMapImpl extends sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SubsectionImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSSegMap {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: short, arg2: short, arg3: int, arg4: int)
-                      public getNumSegDesc(): short
-                      public getNumLogicalSegDesc(): short
-                      public getSegDesc(arg0: int): sun.jvm.hotspot.debugger.win32.coff.DebugVC50SegDesc
-                      static access$500(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSegMapImpl): short
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSegMapImpl$1 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      val$offset: int
-                      this$4: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSegMapImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSegMapImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg2: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSMPCImpl extends sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SubsectionImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSMPC {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: short, arg2: short, arg3: int, arg4: int)
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSGlobalTypesImpl extends sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SubsectionImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSGlobalTypes {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: short, arg2: short, arg3: int, arg4: int)
-                      public getNumTypes(): int
-                      public getTypeOffset(arg0: int): int
-                      public getTypeIterator(): sun.jvm.hotspot.debugger.win32.coff.DebugVC50TypeIterator
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSGlobalPubImpl extends sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSymbolBaseImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSGlobalPub {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: short, arg2: short, arg3: int, arg4: int)
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSGlobalSymImpl extends sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSymbolBaseImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSGlobalSym {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: short, arg2: short, arg3: int, arg4: int)
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSymbolBaseImpl extends sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SubsectionImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSSymbolBase {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: short, arg2: short, arg3: int, arg4: int)
-                      public getSymHashIndex(): short
-                      public getAddrHashIndex(): short
-                      public getSymTabSize(): int
-                      public getSymHashSize(): int
-                      public getAddrHashSize(): int
-                      public getSymbolIterator(): sun.jvm.hotspot.debugger.win32.coff.DebugVC50SymbolIterator
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSLibrariesImpl extends sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SubsectionImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSLibraries {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: short, arg2: short, arg3: int, arg4: int)
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SrcModLineNumberMapImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SrcModLineNumberMap {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: int)
-                      public getSegment(): int
-                      public getNumSourceLinePairs(): int
-                      public getCodeOffset(arg0: int): int
-                      public getLineNumber(arg0: int): int
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SrcModLineNumberMapImpl$2 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      val$offset: int
-                      this$4: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SrcModLineNumberMapImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SrcModLineNumberMapImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg2: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SrcModLineNumberMapImpl$1 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      val$offset: int
-                      this$4: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SrcModLineNumberMapImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SrcModLineNumberMapImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg2: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SrcModFileDescImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SrcModFileDesc {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: int, arg2: int)
-                      public getNumCodeSegments(): int
-                      public getLineNumberMap(arg0: int): sun.jvm.hotspot.debugger.win32.coff.DebugVC50SrcModLineNumberMap
-                      public getSegmentStartOffset(arg0: int): int
-                      public getSegmentEndOffset(arg0: int): int
-                      public getSourceFileName(): java.lang.String
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SrcModFileDescImpl$3 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      val$offset: int
-                      this$4: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SrcModFileDescImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SrcModFileDescImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg2: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SrcModFileDescImpl$2 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      val$offset: int
-                      this$4: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SrcModFileDescImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SrcModFileDescImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg2: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SrcModFileDescImpl$1 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      val$offset: int
-                      val$baseOffset: int
-                      this$4: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SrcModFileDescImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SrcModFileDescImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg2: int, arg3: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSrcModuleImpl extends sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SubsectionImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSSrcModule {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: short, arg2: short, arg3: int, arg4: int)
-                      public getNumSourceFiles(): int
-                      public getNumCodeSegments(): int
-                      public getSourceFileDesc(arg0: int): sun.jvm.hotspot.debugger.win32.coff.DebugVC50SrcModFileDesc
-                      public getSegmentStartOffset(arg0: int): int
-                      public getSegmentEndOffset(arg0: int): int
-                      public getSegment(arg0: int): int
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSrcModuleImpl$3 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      val$offset: int
-                      this$4: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSrcModuleImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSrcModuleImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg2: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSrcModuleImpl$2 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      val$offset: int
-                      this$4: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSrcModuleImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSrcModuleImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg2: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSrcModuleImpl$1 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      val$offset: int
-                      this$4: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSrcModuleImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSrcModuleImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg2: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSrcLnSegImpl extends sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SubsectionImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSSrcLnSeg {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: short, arg2: short, arg3: int, arg4: int)
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSAlignSymImpl extends sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SubsectionImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSAlignSym {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: short, arg2: short, arg3: int, arg4: int)
-                      public getSymbolIterator(): sun.jvm.hotspot.debugger.win32.coff.DebugVC50SymbolIterator
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSSymbolsImpl extends sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SubsectionImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSSymbols {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: short, arg2: short, arg3: int, arg4: int)
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSPublicSymImpl extends sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SubsectionImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSPublicSym {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: short, arg2: short, arg3: int, arg4: int)
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSPublicImpl extends sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SubsectionImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSPublic {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: short, arg2: short, arg3: int, arg4: int)
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSTypesImpl extends sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SubsectionImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSTypes {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: short, arg2: short, arg3: int, arg4: int)
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SegInfoImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SegInfo {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: int)
-                      public getSegment(): short
-                      public getOffset(): int
-                      public getSegmentCodeSize(): int
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSModuleImpl extends sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SubsectionImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSModule {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: short, arg2: short, arg3: int, arg4: int)
-                      public getOverlayNumber(): short
-                      public getLibrariesIndex(): short
-                      public getNumCodeSegments(): short
-                      public getDebuggingStyle(): short
-                      public getSegInfo(arg0: int): sun.jvm.hotspot.debugger.win32.coff.DebugVC50SegInfo
-                      public getName(): java.lang.String
-                      static access$300(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSModuleImpl): short
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSModuleImpl$2 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      val$offset: int
-                      this$4: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSModuleImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSModuleImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg2: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSModuleImpl$1 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      val$offset: int
-                      this$4: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSModuleImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SSModuleImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg2: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SubsectionImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50Subsection {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: short, arg2: short, arg3: int, arg4: int)
-                      public getSubsectionType(): short
-                      public getSubsectionModuleIndex(): short
-                      public getSubsectionSize(): int
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$DebugVC50SubsectionDirectoryImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SubsectionDirectory , sun.jvm.hotspot.debugger.win32.coff.DebugVC50SubsectionTypes {
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: int)
-                      public getHeaderLength(): short
-                      public getEntryLength(): short
-                      public getNumEntries(): int
-                      public getSubsection(arg0: int): sun.jvm.hotspot.debugger.win32.coff.DebugVC50Subsection
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl$1 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugVC50Impl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugDirectoryEntryImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugDirectoryEntry , sun.jvm.hotspot.debugger.win32.coff.DebugTypes {
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg1: int)
-                      public getCharacteristics(): int
-                      public getTimeDateStamp(): int
-                      public getMajorVersion(): short
-                      public getMinorVersion(): short
-                      public getType(): int
-                      public getSizeOfData(): int
-                      public getAddressOfRawData(): int
-                      public getPointerToRawData(): int
-                      public getDebugVC50(): sun.jvm.hotspot.debugger.win32.coff.DebugVC50
-                      public getRawDataByte(arg0: int): byte
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DebugDirectoryImpl implements sun.jvm.hotspot.debugger.win32.coff.DebugDirectory {
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg1: int, arg2: int)
-                      public getNumEntries(): int
-                      public getEntry(arg0: int): sun.jvm.hotspot.debugger.win32.coff.DebugDirectoryEntry
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$ExportNameTable {
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg1: int[])
-                      get(arg0: int): java.lang.String
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$ExportNameTable$1 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      val$exportNamePointerTable: int[]
-                      val$idx: int
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$ExportNameTable
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$ExportNameTable, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg2: int[], arg3: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$ExportDirectoryTableImpl implements sun.jvm.hotspot.debugger.win32.coff.ExportDirectoryTable {
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg1: int, arg2: int)
-                      public getExportFlags(): int
-                      public getTimeDateStamp(): int
-                      public getMajorVersion(): short
-                      public getMinorVersion(): short
-                      public getNameRVA(): int
-                      public getDLLName(): java.lang.String
-                      public getOrdinalBase(): int
-                      public getNumberOfAddressTableEntries(): int
-                      public getNumberOfNamePointers(): int
-                      public getExportAddressTableRVA(): int
-                      public getNamePointerTableRVA(): int
-                      public getOrdinalTableRVA(): int
-                      public getExportName(arg0: int): java.lang.String
-                      public getExportOrdinal(arg0: int): short
-                      public isExportAddressForwarder(arg0: short): boolean
-                      public getExportAddressForwarder(arg0: short): java.lang.String
-                      public getExportAddress(arg0: short): int
-                      static access$100(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$ExportDirectoryTableImpl): int[]
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$ExportDirectoryTableImpl$5 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$ExportDirectoryTableImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$ExportDirectoryTableImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$ExportDirectoryTableImpl$4 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$ExportDirectoryTableImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$ExportDirectoryTableImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$ExportDirectoryTableImpl$3 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$ExportDirectoryTableImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$ExportDirectoryTableImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$ExportDirectoryTableImpl$2 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$ExportDirectoryTableImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$ExportDirectoryTableImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$ExportDirectoryTableImpl$1 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$ExportDirectoryTableImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$ExportDirectoryTableImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$DataDirectoryImpl implements sun.jvm.hotspot.debugger.win32.coff.DataDirectory {
-                      rva: int
-                      size: int
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg1: int)
-                      public getRVA(): int
-                      public getSize(): int
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$OptionalHeaderDataDirectoriesImpl implements sun.jvm.hotspot.debugger.win32.coff.OptionalHeaderDataDirectories {
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg1: int, arg2: int)
-                      public getExportTable(): sun.jvm.hotspot.debugger.win32.coff.DataDirectory
-                      public getImportTable(): sun.jvm.hotspot.debugger.win32.coff.DataDirectory
-                      public getResourceTable(): sun.jvm.hotspot.debugger.win32.coff.DataDirectory
-                      public getExceptionTable(): sun.jvm.hotspot.debugger.win32.coff.DataDirectory
-                      public getCertificateTable(): sun.jvm.hotspot.debugger.win32.coff.DataDirectory
-                      public getBaseRelocationTable(): sun.jvm.hotspot.debugger.win32.coff.DataDirectory
-                      public getDebug(): sun.jvm.hotspot.debugger.win32.coff.DataDirectory
-                      public getArchitecture(): sun.jvm.hotspot.debugger.win32.coff.DataDirectory
-                      public getGlobalPtr(): sun.jvm.hotspot.debugger.win32.coff.DataDirectory
-                      public getTLSTable(): sun.jvm.hotspot.debugger.win32.coff.DataDirectory
-                      public getLoadConfigTable(): sun.jvm.hotspot.debugger.win32.coff.DataDirectory
-                      public getBoundImportTable(): sun.jvm.hotspot.debugger.win32.coff.DataDirectory
-                      public getImportAddressTable(): sun.jvm.hotspot.debugger.win32.coff.DataDirectory
-                      public getDelayImportDescriptor(): sun.jvm.hotspot.debugger.win32.coff.DataDirectory
-                      public getCOMPlusRuntimeHeader(): sun.jvm.hotspot.debugger.win32.coff.DataDirectory
-                      public getExportDirectoryTable(): sun.jvm.hotspot.debugger.win32.coff.ExportDirectoryTable
-                      public getDebugDirectory(): sun.jvm.hotspot.debugger.win32.coff.DebugDirectory
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$OptionalHeaderDataDirectoriesImpl$3 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$OptionalHeaderDataDirectoriesImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$OptionalHeaderDataDirectoriesImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$OptionalHeaderDataDirectoriesImpl$2 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$OptionalHeaderDataDirectoriesImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$OptionalHeaderDataDirectoriesImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$OptionalHeaderDataDirectoriesImpl$1 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      val$dirOffset: int
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$OptionalHeaderDataDirectoriesImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$OptionalHeaderDataDirectoriesImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg2: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$OptionalHeaderWindowsSpecificFieldsImpl implements sun.jvm.hotspot.debugger.win32.coff.OptionalHeaderWindowsSpecificFields {
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg1: int, arg2: boolean)
-                      public getImageBase(): long
-                      public getSectionAlignment(): int
-                      public getFileAlignment(): int
-                      public getMajorOperatingSystemVersion(): short
-                      public getMinorOperatingSystemVersion(): short
-                      public getMajorImageVersion(): short
-                      public getMinorImageVersion(): short
-                      public getMajorSubsystemVersion(): short
-                      public getMinorSubsystemVersion(): short
-                      public getSizeOfImage(): int
-                      public getSizeOfHeaders(): int
-                      public getCheckSum(): int
-                      public getSubsystem(): short
-                      public getDLLCharacteristics(): short
-                      public getSizeOfStackReserve(): long
-                      public getSizeOfStackCommit(): long
-                      public getSizeOfHeapReserve(): long
-                      public getSizeOfHeapCommit(): long
-                      public getLoaderFlags(): int
-                      public getNumberOfRvaAndSizes(): int
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$OptionalHeaderStandardFieldsImpl implements sun.jvm.hotspot.debugger.win32.coff.OptionalHeaderStandardFields {
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg1: int, arg2: boolean)
-                      public getMajorLinkerVersion(): byte
-                      public getMinorLinkerVersion(): byte
-                      public getSizeOfCode(): int
-                      public getSizeOfInitializedData(): int
-                      public getSizeOfUninitializedData(): int
-                      public getAddressOfEntryPoint(): int
-                      public getBaseOfCode(): int
-                      public getBaseOfData(): int
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$OptionalHeaderImpl implements sun.jvm.hotspot.debugger.win32.coff.OptionalHeader {
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg1: int)
-                      public getMagicNumber(): short
-                      public getStandardFields(): sun.jvm.hotspot.debugger.win32.coff.OptionalHeaderStandardFields
-                      public getWindowsSpecificFields(): sun.jvm.hotspot.debugger.win32.coff.OptionalHeaderWindowsSpecificFields
-                      public getDataDirectories(): sun.jvm.hotspot.debugger.win32.coff.OptionalHeaderDataDirectories
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$OptionalHeaderImpl$3 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      val$dataDirectoriesOffset: int
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$OptionalHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$OptionalHeaderImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg2: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$OptionalHeaderImpl$2 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      val$windowsSpecificFieldsOffset: int
-                      val$isPE32Plus: boolean
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$OptionalHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$OptionalHeaderImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg2: int, arg3: boolean)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$OptionalHeaderImpl$1 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      val$standardFieldsOffset: int
-                      val$isPE32Plus: boolean
-                      this$3: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$OptionalHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl$OptionalHeaderImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg2: int, arg3: boolean)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$3 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl
-                      val$symbolOffset: int
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl, arg2: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$2 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl
-                      val$secHdrOffset: int
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl, arg1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl, arg2: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$COFFHeaderImpl$1 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      this$2: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl$COFFHeaderImpl)
-                      public computeValue(): java.lang.Object
-                  }
-                  class COFFFileParser$COFFFileImpl$1 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      this$1: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.win32.coff.COFFFileParser$COFFFileImpl)
-                      public computeValue(): java.lang.Object
-                  }
                   interface DebugVC50Subsection {
                       public getSubsectionType(): short
                       public getSubsectionModuleIndex(): short
@@ -15657,65 +11256,6 @@ declare namespace sun {
                    static access$900(arg0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal, arg1: long): sun.jvm.hotspot.debugger.cdbg.ClosestSymbol
                    static access$1000(arg0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal, arg1: long, arg2: long): byte[]
                }
-               class LinuxDebuggerLocal$1ReadBytesFromProcessTask implements sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal$WorkerThreadTask {
-                   address: long
-                   numBytes: long
-                   result: sun.jvm.hotspot.debugger.ReadResult
-                   this$0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal
-                   constructor(arg0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal)
-                   public doit(arg0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal): void
-               }
-               class LinuxDebuggerLocal$1LookupByAddressTask implements sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal$WorkerThreadTask {
-                   addr: long
-                   result: sun.jvm.hotspot.debugger.cdbg.ClosestSymbol
-                   this$0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal
-                   constructor(arg0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal)
-                   public doit(arg0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal): void
-               }
-               class LinuxDebuggerLocal$1GetThreadIntegerRegisterSetTask implements sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal$WorkerThreadTask {
-                   lwp_id: int
-                   result: long[]
-                   this$0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal
-                   constructor(arg0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal)
-                   public doit(arg0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal): void
-               }
-               class LinuxDebuggerLocal$1LookupByNameTask implements sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal$WorkerThreadTask {
-                   objectName: java.lang.String
-                   symbol: java.lang.String
-                   result: sun.jvm.hotspot.debugger.Address
-                   this$0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal
-                   constructor(arg0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal)
-                   public doit(arg0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal): void
-               }
-               class LinuxDebuggerLocal$1DetachTask implements sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal$WorkerThreadTask {
-                   result: boolean
-                   this$0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal
-                   constructor(arg0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal)
-                   public doit(arg0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal): void
-               }
-               class LinuxDebuggerLocal$1AttachTask implements sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal$WorkerThreadTask {
-                   pid: int
-                   this$0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal
-                   constructor(arg0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal)
-                   public doit(arg0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal): void
-               }
-               class LinuxDebuggerLocal$1 extends sun.jvm.hotspot.debugger.DebuggerUtilities {
-                   this$0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal
-                   constructor(arg0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal, arg1: long, arg2: boolean)
-                   public checkAlignment(arg0: long, arg1: long): void
-               }
-               class LinuxDebuggerLocal$LinuxDebuggerLocalWorkerThread extends java.lang.Thread {
-                   debugger: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal
-                   task: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal$WorkerThreadTask
-                   lastException: sun.jvm.hotspot.debugger.DebuggerException
-                   this$0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal
-                   public constructor(arg0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal, arg1: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal)
-                   public run(): void
-                   public execute(arg0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal$WorkerThreadTask): sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal$WorkerThreadTask
-               }
-               interface LinuxDebuggerLocal$WorkerThreadTask {
-                   public doit(arg0: sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal): void
-               }
                class LinuxCDebugger implements sun.jvm.hotspot.debugger.cdbg.CDebugger {
                    constructor(arg0: sun.jvm.hotspot.debugger.linux.LinuxDebugger)
                    public getThreadList(): java.util.List
@@ -15962,115 +11502,6 @@ declare namespace sun {
                       public parse(arg0: sun.jvm.hotspot.debugger.DataSource): sun.jvm.hotspot.debugger.posix.elf.ELFFile
                       public static main(arg0: java.lang.String[]): void
                   }
-                  class ELFFileParser$ELFFileImpl implements sun.jvm.hotspot.debugger.posix.elf.ELFFile {
-                      this$0: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser
-                      constructor(arg0: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser, arg1: sun.jvm.hotspot.debugger.DataSource)
-                      public getHeader(): sun.jvm.hotspot.debugger.posix.elf.ELFHeader
-                      public getMagicNumber(): byte[]
-                      public getObjectSize(): byte
-                      public getEncoding(): byte
-                      public getVersion(): byte
-                      public close(): void
-                      seek(arg0: long): void
-                      getFilePointer(): long
-                      readByte(): byte
-                      readBytes(arg0: byte[]): int
-                      readShort(): short
-                      readInt(): int
-                      readLong(): long
-                      byteSwap(arg0: short): short
-                      byteSwap(arg0: int): int
-                      byteSwap(arg0: long): long
-                      readUnsignedByte(): short
-                      readUnsignedShort(): int
-                      readUnsignedInt(): long
-                      unsignedByte(arg0: byte): short
-                      unsignedByte(arg0: short): int
-                      unsignedByte(arg0: int): long
-                      unsignedByteSwap(arg0: short): int
-                      unsignedByteSwap(arg0: int): long
-                  }
-                  class ELFFileParser$ELFFileImpl$ELFHashTableImpl implements sun.jvm.hotspot.debugger.posix.elf.ELFHashTable {
-                      this$1: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl, arg1: long, arg2: int)
-                      public getSymbol(arg0: java.lang.String): sun.jvm.hotspot.debugger.posix.elf.ELFSymbol
-                  }
-                  class ELFFileParser$ELFFileImpl$ELFStringTableImpl implements sun.jvm.hotspot.debugger.posix.elf.ELFStringTable {
-                      this$1: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl, arg1: long, arg2: int)
-                      public get(arg0: int): java.lang.String
-                      public getNumStrings(): int
-                  }
-                  class ELFFileParser$ELFFileImpl$ELFSymbolImpl implements sun.jvm.hotspot.debugger.posix.elf.ELFSymbol {
-                      this$1: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl, arg1: long, arg2: int)
-                      public getBinding(): int
-                      public getType(): int
-                      public getOffset(): long
-                      public getName(): java.lang.String
-                      public getValue(): long
-                      public getSize(): int
-                  }
-                  class ELFFileParser$ELFFileImpl$ELFSectionHeaderImpl implements sun.jvm.hotspot.debugger.posix.elf.ELFSectionHeader {
-                      this$1: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl, arg1: long)
-                      public getType(): int
-                      public getNumberOfSymbols(): int
-                      public getELFSymbol(arg0: int): sun.jvm.hotspot.debugger.posix.elf.ELFSymbol
-                      public getStringTable(): sun.jvm.hotspot.debugger.posix.elf.ELFStringTable
-                      public getHashTable(): sun.jvm.hotspot.debugger.posix.elf.ELFHashTable
-                      public getName(): java.lang.String
-                      public getLink(): int
-                      public getOffset(): int
-                      static access$000(arg0: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl$ELFSectionHeaderImpl): int
-                  }
-                  class ELFFileParser$ELFFileImpl$ELFSectionHeaderImpl$3 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$1: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl
-                      val$hashTableOffset: int
-                      val$hashTableSize: int
-                      this$2: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl$ELFSectionHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl$ELFSectionHeaderImpl, arg1: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl, arg2: int, arg3: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class ELFFileParser$ELFFileImpl$ELFSectionHeaderImpl$2 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$1: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl
-                      val$strTableOffset: int
-                      val$strTableSize: int
-                      this$2: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl$ELFSectionHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl$ELFSectionHeaderImpl, arg1: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl, arg2: int, arg3: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class ELFFileParser$ELFFileImpl$ELFSectionHeaderImpl$1 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$1: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl
-                      val$symbolOffset: int
-                      this$2: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl$ELFSectionHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl$ELFSectionHeaderImpl, arg1: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl, arg2: int)
-                      public computeValue(): java.lang.Object
-                  }
-                  class ELFFileParser$ELFFileImpl$ELFHeaderImpl implements sun.jvm.hotspot.debugger.posix.elf.ELFHeader {
-                      this$1: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl)
-                      public getFileType(): short
-                      public getArch(): short
-                      public getSectionHeaderSize(): short
-                      public getNumberOfSectionHeaders(): short
-                      public getSectionHeader(arg0: int): sun.jvm.hotspot.debugger.posix.elf.ELFSectionHeader
-                      public getSectionHeaderStringTable(): sun.jvm.hotspot.debugger.posix.elf.ELFStringTable
-                      public getStringTable(): sun.jvm.hotspot.debugger.posix.elf.ELFStringTable
-                      public getDynamicStringTable(): sun.jvm.hotspot.debugger.posix.elf.ELFStringTable
-                      public getHashTable(): sun.jvm.hotspot.debugger.posix.elf.ELFHashTable
-                      public getSymbolTableSection(): sun.jvm.hotspot.debugger.posix.elf.ELFSectionHeader
-                      public getDynamicSymbolTableSection(): sun.jvm.hotspot.debugger.posix.elf.ELFSectionHeader
-                      public getELFSymbol(arg0: java.lang.String): sun.jvm.hotspot.debugger.posix.elf.ELFSymbol
-                      public getELFSymbol(arg0: long): sun.jvm.hotspot.debugger.posix.elf.ELFSymbol
-                  }
-                  class ELFFileParser$ELFFileImpl$ELFHeaderImpl$1 extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                      val$this$1: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl
-                      val$sectionHeaderOffset: long
-                      this$2: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl$ELFHeaderImpl
-                      constructor(arg0: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl$ELFHeaderImpl, arg1: sun.jvm.hotspot.debugger.posix.elf.ELFFileParser$ELFFileImpl, arg2: long)
-                      public computeValue(): java.lang.Object
-                  }
                   interface ELFSymbol {
                       public static BINDING_LOCAL: int
                       public static BINDING_GLOBAL: int
@@ -16221,21 +11652,6 @@ declare namespace sun {
                    static access$000(arg0: sun.jvm.hotspot.debugger.posix.DSO): java.lang.String
                    static access$100(arg0: sun.jvm.hotspot.debugger.posix.DSO): sun.jvm.hotspot.debugger.Address
                }
-               class DSO$ELFFileByAddress extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                   this$0: sun.jvm.hotspot.debugger.posix.DSO
-                   constructor(arg0: sun.jvm.hotspot.debugger.posix.DSO)
-                   protected computeValue(): java.lang.Object
-               }
-               class DSO$ELFFileByName extends sun.jvm.hotspot.utilities.memo.MemoizedObject {
-                   this$0: sun.jvm.hotspot.debugger.posix.DSO
-                   constructor(arg0: sun.jvm.hotspot.debugger.posix.DSO)
-                   protected computeValue(): java.lang.Object
-               }
-               class DSO$IsDSO extends sun.jvm.hotspot.utilities.memo.MemoizedBoolean {
-                   this$0: sun.jvm.hotspot.debugger.posix.DSO
-                   constructor(arg0: sun.jvm.hotspot.debugger.posix.DSO)
-                   protected computeValue(): boolean
-               }
                
             }
             namespace bsd {
@@ -16338,65 +11754,6 @@ declare namespace sun {
                    static access$800(arg0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal, arg1: long): long[]
                    static access$900(arg0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal, arg1: long): sun.jvm.hotspot.debugger.cdbg.ClosestSymbol
                    static access$1000(arg0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal, arg1: long, arg2: long): byte[]
-               }
-               class BsdDebuggerLocal$1ReadBytesFromProcessTask implements sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal$WorkerThreadTask {
-                   address: long
-                   numBytes: long
-                   result: sun.jvm.hotspot.debugger.ReadResult
-                   this$0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal
-                   constructor(arg0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal)
-                   public doit(arg0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal): void
-               }
-               class BsdDebuggerLocal$1LookupByAddressTask implements sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal$WorkerThreadTask {
-                   addr: long
-                   result: sun.jvm.hotspot.debugger.cdbg.ClosestSymbol
-                   this$0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal
-                   constructor(arg0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal)
-                   public doit(arg0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal): void
-               }
-               class BsdDebuggerLocal$1GetThreadIntegerRegisterSetTask implements sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal$WorkerThreadTask {
-                   unique_thread_id: long
-                   result: long[]
-                   this$0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal
-                   constructor(arg0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal)
-                   public doit(arg0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal): void
-               }
-               class BsdDebuggerLocal$1LookupByNameTask implements sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal$WorkerThreadTask {
-                   objectName: java.lang.String
-                   symbol: java.lang.String
-                   result: sun.jvm.hotspot.debugger.Address
-                   this$0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal
-                   constructor(arg0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal)
-                   public doit(arg0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal): void
-               }
-               class BsdDebuggerLocal$1DetachTask implements sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal$WorkerThreadTask {
-                   result: boolean
-                   this$0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal
-                   constructor(arg0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal)
-                   public doit(arg0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal): void
-               }
-               class BsdDebuggerLocal$1AttachTask implements sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal$WorkerThreadTask {
-                   pid: int
-                   this$0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal
-                   constructor(arg0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal)
-                   public doit(arg0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal): void
-               }
-               class BsdDebuggerLocal$1 extends sun.jvm.hotspot.debugger.DebuggerUtilities {
-                   this$0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal
-                   constructor(arg0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal, arg1: long, arg2: boolean)
-                   public checkAlignment(arg0: long, arg1: long): void
-               }
-               class BsdDebuggerLocal$BsdDebuggerLocalWorkerThread extends java.lang.Thread {
-                   debugger: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal
-                   task: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal$WorkerThreadTask
-                   lastException: sun.jvm.hotspot.debugger.DebuggerException
-                   this$0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal
-                   public constructor(arg0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal, arg1: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal)
-                   public run(): void
-                   public execute(arg0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal$WorkerThreadTask): sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal$WorkerThreadTask
-               }
-               interface BsdDebuggerLocal$WorkerThreadTask {
-                   public doit(arg0: sun.jvm.hotspot.debugger.bsd.BsdDebuggerLocal): void
                }
                class BsdCDebugger implements sun.jvm.hotspot.debugger.cdbg.CDebugger {
                    constructor(arg0: sun.jvm.hotspot.debugger.bsd.BsdDebugger)
@@ -16627,11 +11984,11 @@ declare namespace sun {
                 public getDouble(arg0: long, arg1: boolean): double
             }
             class LongHashMap {
-                sun.jvm.hotspot.debugger.LongHashMap$Entry[]: transient
-                int: transient
+                table: sun.jvm.hotspot.debugger.LongHashMap$Entry[]
+                size: int
                 threshold: int
                 loadFactor: float
-                int: transient
+                modCount: int
                 public constructor(arg0: int, arg1: float)
                 public constructor(arg0: int)
                 public constructor()
@@ -16651,20 +12008,6 @@ declare namespace sun {
                 newEntry(arg0: int, arg1: long, arg2: java.lang.Object, arg3: sun.jvm.hotspot.debugger.LongHashMap$Entry): sun.jvm.hotspot.debugger.LongHashMap$Entry
                 capacity(): int
                 loadFactor(): float
-            }
-            class LongHashMap$Entry {
-                constructor(arg0: int, arg1: long, arg2: java.lang.Object, arg3: sun.jvm.hotspot.debugger.LongHashMap$Entry)
-                getKey(): long
-                getValue(): java.lang.Object
-                setValue(arg0: java.lang.Object): java.lang.Object
-                public equals(arg0: java.lang.Object): boolean
-                public hashCode(): int
-                static access$000(arg0: sun.jvm.hotspot.debugger.LongHashMap$Entry): java.lang.Object
-                static access$100(arg0: sun.jvm.hotspot.debugger.LongHashMap$Entry): sun.jvm.hotspot.debugger.LongHashMap$Entry
-                static access$200(arg0: sun.jvm.hotspot.debugger.LongHashMap$Entry): int
-                static access$300(arg0: sun.jvm.hotspot.debugger.LongHashMap$Entry): long
-                static access$002(arg0: sun.jvm.hotspot.debugger.LongHashMap$Entry, arg1: java.lang.Object): java.lang.Object
-                static access$102(arg0: sun.jvm.hotspot.debugger.LongHashMap$Entry, arg1: sun.jvm.hotspot.debugger.LongHashMap$Entry): sun.jvm.hotspot.debugger.LongHashMap$Entry
             }
             interface PageFetcher {
                 public fetchPage(arg0: long, arg1: long): sun.jvm.hotspot.debugger.Page
@@ -16782,11 +12125,6 @@ declare namespace sun {
                 public getKlassPtrSize(): long
                 public getNarrowKlassBase(): long
                 public getNarrowKlassShift(): int
-            }
-            class DebuggerBase$Fetcher implements sun.jvm.hotspot.debugger.PageFetcher {
-                this$0: sun.jvm.hotspot.debugger.DebuggerBase
-                constructor(arg0: sun.jvm.hotspot.debugger.DebuggerBase)
-                public fetchPage(arg0: long, arg1: long): sun.jvm.hotspot.debugger.Page
             }
             interface DataSource {
                 public readByte(): byte
@@ -16985,13 +12323,6 @@ declare namespace sun {
                       protected createCVVariant(arg0: int): sun.jvm.hotspot.debugger.cdbg.Type
                       public visit(arg0: sun.jvm.hotspot.debugger.cdbg.TypeVisitor): void
                   }
-                  class BasicEnumType$Enum {
-                      name: java.lang.String
-                      value: long
-                      constructor(arg0: java.lang.String, arg1: long)
-                      getName(): java.lang.String
-                      getValue(): long
-                  }
                   class BasicDoubleType extends sun.jvm.hotspot.debugger.cdbg.basic.BasicType implements sun.jvm.hotspot.debugger.cdbg.DoubleType {
                       public constructor(arg0: java.lang.String, arg1: int)
                       public asDouble(): sun.jvm.hotspot.debugger.cdbg.DoubleType
@@ -17134,11 +12465,6 @@ declare namespace sun {
                       public lineNumberForPC(arg0: sun.jvm.hotspot.debugger.Address): sun.jvm.hotspot.debugger.cdbg.basic.BasicLineNumberInfo
                       public iterate(arg0: sun.jvm.hotspot.debugger.cdbg.LineNumberVisitor): void
                   }
-                  class BasicLineNumberMapping$1 implements java.util.Comparator {
-                      this$0: sun.jvm.hotspot.debugger.cdbg.basic.BasicLineNumberMapping
-                      constructor(arg0: sun.jvm.hotspot.debugger.cdbg.basic.BasicLineNumberMapping)
-                      public compare(arg0: java.lang.Object, arg1: java.lang.Object): int
-                  }
                   interface ResolveListener {
                       public resolveFailed(arg0: sun.jvm.hotspot.debugger.cdbg.Type, arg1: sun.jvm.hotspot.debugger.cdbg.basic.LazyType, arg2: java.lang.String): void
                       public resolveFailed(arg0: sun.jvm.hotspot.debugger.cdbg.Type, arg1: java.lang.String): void
@@ -17164,11 +12490,6 @@ declare namespace sun {
                       public resolveType(arg0: sun.jvm.hotspot.debugger.cdbg.Type, arg1: sun.jvm.hotspot.debugger.cdbg.Type, arg2: sun.jvm.hotspot.debugger.cdbg.basic.ResolveListener, arg3: java.lang.String): sun.jvm.hotspot.debugger.cdbg.Type
                       public resolveType(arg0: sun.jvm.hotspot.debugger.cdbg.Sym, arg1: sun.jvm.hotspot.debugger.cdbg.Type, arg2: sun.jvm.hotspot.debugger.cdbg.basic.ResolveListener, arg3: java.lang.String): sun.jvm.hotspot.debugger.cdbg.Type
                       public resolveSym(arg0: sun.jvm.hotspot.debugger.cdbg.Sym, arg1: sun.jvm.hotspot.debugger.cdbg.Sym, arg2: sun.jvm.hotspot.debugger.cdbg.basic.ResolveListener, arg3: java.lang.String): sun.jvm.hotspot.debugger.cdbg.Sym
-                  }
-                  class BasicCDebugInfoDataBase$1 implements java.util.Comparator {
-                      this$0: sun.jvm.hotspot.debugger.cdbg.basic.BasicCDebugInfoDataBase
-                      constructor(arg0: sun.jvm.hotspot.debugger.cdbg.basic.BasicCDebugInfoDataBase)
-                      public compare(arg0: java.lang.Object, arg1: java.lang.Object): int
                   }
                   abstract class BasicType implements sun.jvm.hotspot.debugger.cdbg.Type , sun.jvm.hotspot.debugger.cdbg.CVAttributes {
                       protected constructor(arg0: java.lang.String, arg1: int)
@@ -17230,14 +12551,6 @@ declare namespace sun {
                       public blockForPC(): sun.jvm.hotspot.debugger.cdbg.BlockSym
                       public closestSymbolToPC(): sun.jvm.hotspot.debugger.cdbg.ClosestSymbol
                       public iterateLocals(arg0: sun.jvm.hotspot.debugger.cdbg.ObjectVisitor): void
-                  }
-                  class BasicCFrame$1 implements sun.jvm.hotspot.debugger.cdbg.NamedFieldIdentifier {
-                      val$local: sun.jvm.hotspot.debugger.cdbg.LocalSym
-                      this$0: sun.jvm.hotspot.debugger.cdbg.basic.BasicCFrame
-                      constructor(arg0: sun.jvm.hotspot.debugger.cdbg.basic.BasicCFrame, arg1: sun.jvm.hotspot.debugger.cdbg.LocalSym)
-                      public getType(): sun.jvm.hotspot.debugger.cdbg.Type
-                      public getName(): java.lang.String
-                      public toString(): java.lang.String
                   }
                   
                }
@@ -17380,14 +12693,6 @@ declare namespace sun {
                    public getWasWrite(): boolean
                    public getAddress(): sun.jvm.hotspot.debugger.Address
                    public getUnknownEventDetail(): java.lang.String
-               }
-               class DebugEvent$Type {
-                   public static LOADOBJECT_LOAD: sun.jvm.hotspot.debugger.cdbg.DebugEvent$Type
-                   public static LOADOBJECT_UNLOAD: sun.jvm.hotspot.debugger.cdbg.DebugEvent$Type
-                   public static BREAKPOINT: sun.jvm.hotspot.debugger.cdbg.DebugEvent$Type
-                   public static SINGLE_STEP: sun.jvm.hotspot.debugger.cdbg.DebugEvent$Type
-                   public static ACCESS_VIOLATION: sun.jvm.hotspot.debugger.cdbg.DebugEvent$Type
-                   public static UNKNOWN: sun.jvm.hotspot.debugger.cdbg.DebugEvent$Type
                }
                interface ObjectVisitor {
                    public enterType(arg0: sun.jvm.hotspot.debugger.cdbg.Type, arg1: sun.jvm.hotspot.debugger.Address): void

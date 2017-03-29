@@ -15,11 +15,17 @@ var context = path.resolve(process.argv[3] || "")
 var target = process.argv[3] && path.resolve(process.argv[3])
 
 if (command === "help") help(libdir, 0)
-else if (command === "env") console.error(env())
+if (command === "version") {
+    console.log(help.version(libdir))
+    process.exit(0)
+}
+
+var envvar = env()
+
+if (command === "env") console.error(envvar)
 else if (command === "init") init(libdir)
 else if (command === "install") install()
 else if (command === "build") build.entry(libdir, libmod, context)
 else if (command === "watch") build.watch(libdir, libmod, context)
 else if (command === "run" && target) run(target)
-else if (command === "version") console.log(help.version(libdir))
 else help(libdir, 1)

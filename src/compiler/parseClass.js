@@ -22,9 +22,21 @@ function nextToken(source, offset, stack) {
         var char = source.charAt(offset + skip)
         if (char === "<") count += 1
         if (char === ">") count -= 1
-        if (count === 0 && ["(", ")", ",", ";"].indexOf(char) >= 0) break
-        token += char === "?" ? "any" : char
-        skip += 1
+        if (count <= 0 && ["(", ")", ",", ";"].indexOf(char) >= 0) break
+        if (char === "?") {
+            skip += 1
+            // extends
+            var next = nextToken(source, offset + skip, stack)
+            skip += next.skip
+            // interface
+            next = nextToken(source, offset + skip, stack)
+            token += next.token
+            skip += next.skip
+        } else {
+            skip += 1
+            token += char
+        }
+        if (source.charAt(offset + skip) === ">" && count === 0) break
     }
 
     return {

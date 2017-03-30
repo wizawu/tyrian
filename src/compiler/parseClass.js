@@ -1,8 +1,7 @@
-function push(stack, line, type, name, generic) {
+function push(stack, line, type, name) {
     var str = new String(line)
     str.type = type
     str.name = name
-    str.generic = generic
     stack.push(str)
 }
 
@@ -89,7 +88,7 @@ function parseClassMember(source, offset, stack) {
         }
     }
     line += ": " + returnType
-    push(stack, line, isMethod ? "METHOD" : "MEMBER", memberName, !!typeVariable)
+    push(stack, line, isMethod ? "METHOD" : "MEMBER", memberName)
 
     while (source.charAt(offset) !== "\n") offset += 1
 
@@ -115,13 +114,13 @@ function parseClass(source, offset, stack, classType) {
         offset += t.skip
         if (t.token === "{") break
     }
-    push(stack, line, "BEGIN", "")
+    push(stack, line, "BEGIN")
 
     var scope = ""
     while (t = nextToken(source, offset, stack)) {
         if (t.token === "}") {
             offset += t.skip
-            push(stack, "}\n", "END", "")
+            push(stack, "}\n", "END")
             break
         } else if (t.token === "public" || t.token === "protected") {
             scope = t.token + " "
@@ -148,7 +147,7 @@ function parseClass(source, offset, stack, classType) {
                     i += 1
                 }
             }
-            push(stack, line.replace(/^(\s+)/, "$1" + scope), "CONS", "")
+            push(stack, line.replace(/^(\s+)/, "$1" + scope), "CONS")
             scope = ""
             while (source.charAt(offset) !== "\n") offset += 1
         } else {
@@ -161,8 +160,7 @@ function parseClass(source, offset, stack, classType) {
                 stack,
                 stack[stack.length - 1].replace(/^(\s+)/, "$1" + scope),
                 stack[stack.length - 1].type,
-                stack[stack.length - 1].name,
-                stack[stack.length - 1].generic
+                stack[stack.length - 1].name
             )
             stack.splice(stack.length - 2, 1)
             scope = ""

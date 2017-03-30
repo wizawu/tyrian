@@ -9,7 +9,7 @@ function commandOutput(command, args) {
 }
 
 function getClassContent(jar, classPath) {
-    console.log("  Disassembling " + classPath)
+    console.log(`  Disassembling ${jar}:${classPath}`)
     var className = classPath.replace(/\//g, ".").replace(/\.class$/, "")
     return commandOutput("javap", ["-cp", jar, className])
 }

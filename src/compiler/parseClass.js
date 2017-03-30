@@ -1,3 +1,11 @@
+function push(stack, line, type, name, generic) {
+    var str = new String(line)
+    str.type = type
+    str.name = name
+    str.generic = generic
+    stack.push(str)
+}
+
 function nextToken(source, offset, stack) {
     var skip = 0
     while (/\s/.test(source.charAt(offset + skip))) {
@@ -52,12 +60,15 @@ function parseClassMember(source, offset, stack) {
     }
 
     t = nextToken(source, offset, stack)
-    line += t.token + typeVariable
+    var memberName = t.token
+    line += memberName + typeVariable
     offset += t.skip
 
     t = nextToken(source, offset, stack)
     offset += t.skip
+    var isMethod = false
     if (t.token === "(") {
+        isMethod = true
         line += "("
         var i = 0
         while (t = nextToken(source, offset, stack)) {
@@ -78,7 +89,7 @@ function parseClassMember(source, offset, stack) {
         }
     }
     line += ": " + returnType
-    stack.push(line)
+    push(stack, line, isMethod ? "METHOD" : "MEMBER", memberName, !!typeVariable)
 
     while (source.charAt(offset) !== "\n") offset += 1
 
@@ -104,13 +115,13 @@ function parseClass(source, offset, stack, classType) {
         offset += t.skip
         if (t.token === "{") break
     }
-    stack.push(line)
+    push(stack, line, "BEGIN", "")
 
     var scope = ""
     while (t = nextToken(source, offset, stack)) {
         if (t.token === "}") {
             offset += t.skip
-            stack.push("}\n")
+            push(stack, "}\n", "END", "")
             break
         } else if (t.token === "public" || t.token === "protected") {
             scope = t.token + " "
@@ -137,7 +148,7 @@ function parseClass(source, offset, stack, classType) {
                     i += 1
                 }
             }
-            stack.push(line.replace(/^(\s+)/, "$1" + scope))
+            push(stack, line.replace(/^(\s+)/, "$1" + scope), "CONS", "")
             scope = ""
             while (source.charAt(offset) !== "\n") offset += 1
         } else {
@@ -146,7 +157,14 @@ function parseClass(source, offset, stack, classType) {
             source = context.source
             offset = context.offset
             stack = context.stack
-            stack[stack.length - 1] = stack[stack.length - 1].replace(/^(\s+)/, "$1" + scope)
+            push(
+                stack,
+                stack[stack.length - 1].replace(/^(\s+)/, "$1" + scope),
+                stack[stack.length - 1].type,
+                stack[stack.length - 1].name,
+                stack[stack.length - 1].generic
+            )
+            stack.splice(stack.length - 2, 1)
             scope = ""
         }
     }
@@ -184,5 +202,41 @@ function parse(source, offset, stack) {
 }
 
 module.exports = function(source) {
-    return parse(source, 0, []).stack.join("\n").replace(/<any extends (\S+)>/g, "<$1>")
+    var stack = parse(source, 0, []).stack
+    var newStack = []
+    var memberMap = {}
+    for (var i = 0; i < stack.length; i++) {
+        var line = stack[i]
+        switch (line.type) {
+            case "BEGIN":
+                memberMap = {}
+                newStack.push(line.toString())
+                break
+            case "CONS":
+                if (memberMap["&"]) {
+                    memberMap["&"] = "    constructor(...args: any[])"
+                } else {
+                    memberMap["&"] = line.toString()
+                }
+                break;
+            case "MEMBER":
+            case "METHOD":
+                if (memberMap[line.name]) {
+                    memberMap[line.name] = `    ${line.name}<T>(...args: any[]): any`
+                } else {
+                    memberMap[line.name] = line.toString()
+                }
+                break
+            case "END":
+                Object.keys(memberMap).forEach(function(key) {
+                    newStack.push(memberMap[key])
+                })
+                newStack.push(line.toString())
+                break
+            default:
+                console.error("Invalid stack")
+                process.exit(1)
+        }
+    }
+    return newStack.join("\n").replace(/<any extends (\S+)>/g, "<$1>")
 }

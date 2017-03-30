@@ -33,7 +33,7 @@ function nextToken(source, offset, stack) {
     }
 }
 
-function parseClassMember(source, offset, stack) {
+function parseClassMember(source, offset, stack, isInterface) {
     var line = "    "
     var returnType = ""
     var typeVariable = ""
@@ -41,7 +41,7 @@ function parseClassMember(source, offset, stack) {
     while (t = nextToken(source, offset, stack)) {
         offset += t.skip
         if (["public", "protected", "static"].indexOf(t.token) >= 0) {
-            line += t.token + " "
+            if (!isInterface) line += t.token + " "
         } else if (t.token.charAt(0) === "<") {
             typeVariable = t.token
         } else if (["final", "abstract", "native", "synchronized", "volatile", "strictfp", "transient"].indexOf(t.token) < 0) {
@@ -102,6 +102,7 @@ function parseClassMember(source, offset, stack) {
 function parseClass(source, offset, stack, classType) {
     var t = nextToken(source, offset, stack)
     if (t.token !== "class" && t.token !== "interface") return null
+    var isInterface = t.token === "interface"
     offset += t.skip
     var line = classType + t.token + " "
 
@@ -155,18 +156,20 @@ function parseClass(source, offset, stack, classType) {
             scope = ""
             while (source.charAt(offset) !== "\n") offset += 1
         } else {
-            var context = parseClassMember(source, offset, stack)
+            var context = parseClassMember(source, offset, stack, isInterface)
             if (!context) return null
-            source = context.source
-            offset = context.offset
-            stack = context.stack
-            push(
-                stack,
-                stack[stack.length - 1].replace(/^(\s+)/, "$1" + scope),
-                stack[stack.length - 1].type,
-                stack[stack.length - 1].name
-            )
-            stack.splice(stack.length - 2, 1)
+            if (!isInterface) {
+                source = context.source
+                offset = context.offset
+                stack = context.stack
+                push(
+                    stack,
+                    stack[stack.length - 1].replace(/^(\s+)/, "$1" + scope),
+                    stack[stack.length - 1].type,
+                    stack[stack.length - 1].name
+                )
+                stack.splice(stack.length - 2, 1)
+            }
             scope = ""
         }
     }

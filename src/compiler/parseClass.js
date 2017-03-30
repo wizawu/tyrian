@@ -27,11 +27,15 @@ function nextToken(source, offset, stack) {
             skip += 1
             // extends
             var next = nextToken(source, offset + skip, stack)
-            skip += next.skip
-            // interface
-            next = nextToken(source, offset + skip, stack)
-            token += next.token
-            skip += next.skip
+            if (next.token === "extends") {
+                skip += next.skip
+                // interface
+                next = nextToken(source, offset + skip, stack)
+                token += next.token
+                skip += next.skip
+            } else {
+                token += "any"
+            }
         } else {
             skip += 1
             token += char
@@ -121,7 +125,7 @@ function parseClass(source, offset, stack, classType) {
     t = nextToken(source, offset, stack)
     offset += t.skip
     var className = t.token
-    var shortClassName = className.split(".").reverse()[0]
+    var shortClassName = className.replace(/^(\w+\.)+/, "")
     line += shortClassName
     while (t = nextToken(source, offset, stack)) {
         line += " " + t.token

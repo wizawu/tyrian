@@ -146,6 +146,13 @@ public final class com.sun.beans.WeakCache<K, V> {
   public abstract java.lang.String name();
   public abstract void setDebugTraceMode(int);
 }
+`,
+`
+abstract class com.sun.beans.finder.AbstractFinder<T extends java.lang.reflect.Executable> {
+  protected com.sun.beans.finder.AbstractFinder(java.lang.Class<?>[]);
+  protected boolean isValid(T);
+  final T find(T[]) throws java.lang.NoSuchMethodException;
+}
 `
 ].forEach(function(source) {
     console.log(parseClass(source))

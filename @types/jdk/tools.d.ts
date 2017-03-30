@@ -2,21 +2,21 @@ declare namespace com {
    namespace sun {
       namespace jarsigner {
          interface ContentSignerParameters {
-             public getCommandLine(): java.lang.String[]
-             public getTimestampingAuthority(): java.net.URI
-             public getTimestampingAuthorityCertificate(): java.security.cert.X509Certificate
-             public getTSAPolicyID(): java.lang.String
-             public getSignature(): byte[]
-             public getSignatureAlgorithm(): java.lang.String
-             public getSignerCertificateChain(): java.security.cert.X509Certificate[]
-             public getContent(): byte[]
-             public getSource(): java.util.zip.ZipFile
+             getCommandLine(): java.lang.String[]
+             getTimestampingAuthority(): java.net.URI
+             getTimestampingAuthorityCertificate(): java.security.cert.X509Certificate
+             getTSAPolicyID(): java.lang.String
+             getSignature(): byte[]
+             getSignatureAlgorithm(): java.lang.String
+             getSignerCertificateChain(): java.security.cert.X509Certificate[]
+             getContent(): byte[]
+             getSource(): java.util.zip.ZipFile
          }
          abstract class ContentSigner {
              public constructor()
              public generateSignedData(arg0: com.sun.jarsigner.ContentSignerParameters, arg1: boolean, arg2: boolean): byte[]
          }
-
+         
       }
       namespace jdi {
          class Bootstrap {
@@ -64,135 +64,135 @@ declare namespace com {
              constructor(...args: any[])
          }
          interface LocalVariable extends com.sun.jdi.Mirror , java.lang.Comparable<com.sun.jdi.LocalVariable> {
-             public name(): java.lang.String
-             public typeName(): java.lang.String
-             public type(): com.sun.jdi.Type
-             public signature(): java.lang.String
-             public genericSignature(): java.lang.String
-             public isVisible(arg0: com.sun.jdi.StackFrame): boolean
-             public isArgument(): boolean
-             public equals(arg0: java.lang.Object): boolean
-             public hashCode(): int
+             name(): java.lang.String
+             typeName(): java.lang.String
+             type(): com.sun.jdi.Type
+             signature(): java.lang.String
+             genericSignature(): java.lang.String
+             isVisible(arg0: com.sun.jdi.StackFrame): boolean
+             isArgument(): boolean
+             equals(arg0: java.lang.Object): boolean
+             hashCode(): int
          }
          class InvocationException extends java.lang.Exception {
              exception<T>(...args: any[]): any
              public constructor(arg0: com.sun.jdi.ObjectReference)
          }
          interface MonitorInfo extends com.sun.jdi.Mirror {
-             public monitor(): com.sun.jdi.ObjectReference
-             public stackDepth(): int
-             public thread(): com.sun.jdi.ThreadReference
+             monitor(): com.sun.jdi.ObjectReference
+             stackDepth(): int
+             thread(): com.sun.jdi.ThreadReference
          }
          interface StackFrame extends com.sun.jdi.Mirror , com.sun.jdi.Locatable {
-             public location(): com.sun.jdi.Location
-             public thread(): com.sun.jdi.ThreadReference
-             public thisObject(): com.sun.jdi.ObjectReference
-             public visibleVariables(): java.util.List<com.sun.jdi.LocalVariable>
-             public visibleVariableByName(arg0: java.lang.String): com.sun.jdi.LocalVariable
-             public getValue(arg0: com.sun.jdi.LocalVariable): com.sun.jdi.Value
-             public getValues(arg0: java.util.List<com.sun.jdi.LocalVariable>): java.util.Map<com.sun.jdi.LocalVariable, com.sun.jdi.Value>
-             public setValue(arg0: com.sun.jdi.LocalVariable, arg1: com.sun.jdi.Value): void
-             public getArgumentValues(): java.util.List<com.sun.jdi.Value>
+             location(): com.sun.jdi.Location
+             thread(): com.sun.jdi.ThreadReference
+             thisObject(): com.sun.jdi.ObjectReference
+             visibleVariables(): java.util.List<com.sun.jdi.LocalVariable>
+             visibleVariableByName(arg0: java.lang.String): com.sun.jdi.LocalVariable
+             getValue(arg0: com.sun.jdi.LocalVariable): com.sun.jdi.Value
+             getValues(arg0: java.util.List<com.sun.jdi.LocalVariable>): java.util.Map<com.sun.jdi.LocalVariable, com.sun.jdi.Value>
+             setValue(arg0: com.sun.jdi.LocalVariable, arg1: com.sun.jdi.Value): void
+             getArgumentValues(): java.util.List<com.sun.jdi.Value>
          }
          class IncompatibleThreadStateException extends java.lang.Exception {
              constructor(...args: any[])
          }
          interface Location extends com.sun.jdi.Mirror , java.lang.Comparable<com.sun.jdi.Location> {
-             public declaringType(): com.sun.jdi.ReferenceType
-             public method(): com.sun.jdi.Method
-             public codeIndex(): long
+             declaringType(): com.sun.jdi.ReferenceType
+             method(): com.sun.jdi.Method
+             codeIndex(): long
              sourceName<T>(...args: any[]): any
              sourcePath<T>(...args: any[]): any
              lineNumber<T>(...args: any[]): any
-             public equals(arg0: java.lang.Object): boolean
-             public hashCode(): int
+             equals(arg0: java.lang.Object): boolean
+             hashCode(): int
          }
          interface Locatable {
-             public location(): com.sun.jdi.Location
+             location(): com.sun.jdi.Location
          }
          interface Method extends com.sun.jdi.TypeComponent , com.sun.jdi.Locatable , java.lang.Comparable<com.sun.jdi.Method> {
-             public returnTypeName(): java.lang.String
-             public returnType(): com.sun.jdi.Type
-             public argumentTypeNames(): java.util.List<java.lang.String>
-             public argumentTypes(): java.util.List<com.sun.jdi.Type>
-             public isAbstract(): boolean
-             public isDefault(): boolean
-             public isSynchronized(): boolean
-             public isNative(): boolean
-             public isVarArgs(): boolean
-             public isBridge(): boolean
-             public isConstructor(): boolean
-             public isStaticInitializer(): boolean
-             public isObsolete(): boolean
+             returnTypeName(): java.lang.String
+             returnType(): com.sun.jdi.Type
+             argumentTypeNames(): java.util.List<java.lang.String>
+             argumentTypes(): java.util.List<com.sun.jdi.Type>
+             isAbstract(): boolean
+             isDefault(): boolean
+             isSynchronized(): boolean
+             isNative(): boolean
+             isVarArgs(): boolean
+             isBridge(): boolean
+             isConstructor(): boolean
+             isStaticInitializer(): boolean
+             isObsolete(): boolean
              allLineLocations<T>(...args: any[]): any
              locationsOfLine<T>(...args: any[]): any
-             public locationOfCodeIndex(arg0: long): com.sun.jdi.Location
-             public variables(): java.util.List<com.sun.jdi.LocalVariable>
-             public variablesByName(arg0: java.lang.String): java.util.List<com.sun.jdi.LocalVariable>
-             public arguments(): java.util.List<com.sun.jdi.LocalVariable>
-             public bytecodes(): byte[]
-             public location(): com.sun.jdi.Location
-             public equals(arg0: java.lang.Object): boolean
-             public hashCode(): int
+             locationOfCodeIndex(arg0: long): com.sun.jdi.Location
+             variables(): java.util.List<com.sun.jdi.LocalVariable>
+             variablesByName(arg0: java.lang.String): java.util.List<com.sun.jdi.LocalVariable>
+             arguments(): java.util.List<com.sun.jdi.LocalVariable>
+             bytecodes(): byte[]
+             location(): com.sun.jdi.Location
+             equals(arg0: java.lang.Object): boolean
+             hashCode(): int
          }
          interface TypeComponent extends com.sun.jdi.Mirror , com.sun.jdi.Accessible {
-             public name(): java.lang.String
-             public signature(): java.lang.String
-             public genericSignature(): java.lang.String
-             public declaringType(): com.sun.jdi.ReferenceType
-             public isStatic(): boolean
-             public isFinal(): boolean
-             public isSynthetic(): boolean
+             name(): java.lang.String
+             signature(): java.lang.String
+             genericSignature(): java.lang.String
+             declaringType(): com.sun.jdi.ReferenceType
+             isStatic(): boolean
+             isFinal(): boolean
+             isSynthetic(): boolean
          }
          interface Field extends com.sun.jdi.TypeComponent , java.lang.Comparable<com.sun.jdi.Field> {
-             public typeName(): java.lang.String
-             public type(): com.sun.jdi.Type
-             public isTransient(): boolean
-             public isVolatile(): boolean
-             public isEnumConstant(): boolean
-             public equals(arg0: java.lang.Object): boolean
-             public hashCode(): int
+             typeName(): java.lang.String
+             type(): com.sun.jdi.Type
+             isTransient(): boolean
+             isVolatile(): boolean
+             isEnumConstant(): boolean
+             equals(arg0: java.lang.Object): boolean
+             hashCode(): int
          }
          class AbsentInformationException extends java.lang.Exception {
              constructor(...args: any[])
          }
          interface ClassObjectReference extends com.sun.jdi.ObjectReference {
-             public reflectedType(): com.sun.jdi.ReferenceType
+             reflectedType(): com.sun.jdi.ReferenceType
          }
          interface ClassLoaderReference extends com.sun.jdi.ObjectReference {
-             public definedClasses(): java.util.List<com.sun.jdi.ReferenceType>
-             public visibleClasses(): java.util.List<com.sun.jdi.ReferenceType>
+             definedClasses(): java.util.List<com.sun.jdi.ReferenceType>
+             visibleClasses(): java.util.List<com.sun.jdi.ReferenceType>
          }
          interface ArrayReference extends com.sun.jdi.ObjectReference {
-             public length(): int
-             public getValue(arg0: int): com.sun.jdi.Value
+             length(): int
+             getValue(arg0: int): com.sun.jdi.Value
              getValues<T>(...args: any[]): any
-             public setValue(arg0: int, arg1: com.sun.jdi.Value): void
+             setValue(arg0: int, arg1: com.sun.jdi.Value): void
              setValues<T>(...args: any[]): any
          }
          interface ArrayType extends com.sun.jdi.ReferenceType {
-             public newInstance(arg0: int): com.sun.jdi.ArrayReference
-             public componentSignature(): java.lang.String
-             public componentTypeName(): java.lang.String
-             public componentType(): com.sun.jdi.Type
+             newInstance(arg0: int): com.sun.jdi.ArrayReference
+             componentSignature(): java.lang.String
+             componentTypeName(): java.lang.String
+             componentType(): com.sun.jdi.Type
          }
          interface InterfaceType extends com.sun.jdi.ReferenceType {
-             public superinterfaces(): java.util.List<com.sun.jdi.InterfaceType>
-             public subinterfaces(): java.util.List<com.sun.jdi.InterfaceType>
-             public implementors(): java.util.List<com.sun.jdi.ClassType>
-             public invokeMethod(arg0: com.sun.jdi.ThreadReference, arg1: com.sun.jdi.Method, arg2: java.util.List<com.sun.jdi.Value>, arg3: int): com.sun.jdi.Value
+             superinterfaces(): java.util.List<com.sun.jdi.InterfaceType>
+             subinterfaces(): java.util.List<com.sun.jdi.InterfaceType>
+             implementors(): java.util.List<com.sun.jdi.ClassType>
+             invokeMethod(arg0: com.sun.jdi.ThreadReference, arg1: com.sun.jdi.Method, arg2: java.util.List<com.sun.jdi.Value>, arg3: int): com.sun.jdi.Value
          }
          interface ClassType extends com.sun.jdi.ReferenceType {
-             public static INVOKE_SINGLE_THREADED: int
-             public superclass(): com.sun.jdi.ClassType
-             public interfaces(): java.util.List<com.sun.jdi.InterfaceType>
-             public allInterfaces(): java.util.List<com.sun.jdi.InterfaceType>
-             public subclasses(): java.util.List<com.sun.jdi.ClassType>
-             public isEnum(): boolean
-             public setValue(arg0: com.sun.jdi.Field, arg1: com.sun.jdi.Value): void
-             public invokeMethod(arg0: com.sun.jdi.ThreadReference, arg1: com.sun.jdi.Method, arg2: java.util.List<com.sun.jdi.Value>, arg3: int): com.sun.jdi.Value
-             public newInstance(arg0: com.sun.jdi.ThreadReference, arg1: com.sun.jdi.Method, arg2: java.util.List<com.sun.jdi.Value>, arg3: int): com.sun.jdi.ObjectReference
-             public concreteMethodByName(arg0: java.lang.String, arg1: java.lang.String): com.sun.jdi.Method
+             INVOKE_SINGLE_THREADED: int
+             superclass(): com.sun.jdi.ClassType
+             interfaces(): java.util.List<com.sun.jdi.InterfaceType>
+             allInterfaces(): java.util.List<com.sun.jdi.InterfaceType>
+             subclasses(): java.util.List<com.sun.jdi.ClassType>
+             isEnum(): boolean
+             setValue(arg0: com.sun.jdi.Field, arg1: com.sun.jdi.Value): void
+             invokeMethod(arg0: com.sun.jdi.ThreadReference, arg1: com.sun.jdi.Method, arg2: java.util.List<com.sun.jdi.Value>, arg3: int): com.sun.jdi.Value
+             newInstance(arg0: com.sun.jdi.ThreadReference, arg1: com.sun.jdi.Method, arg2: java.util.List<com.sun.jdi.Value>, arg3: int): com.sun.jdi.ObjectReference
+             concreteMethodByName(arg0: java.lang.String, arg1: java.lang.String): com.sun.jdi.Method
          }
          interface VoidType extends com.sun.jdi.Type {
          }
@@ -215,173 +215,173 @@ declare namespace com {
          interface BooleanType extends com.sun.jdi.PrimitiveType {
          }
          interface VirtualMachineManager {
-             public defaultConnector(): com.sun.jdi.connect.LaunchingConnector
-             public launchingConnectors(): java.util.List<com.sun.jdi.connect.LaunchingConnector>
-             public attachingConnectors(): java.util.List<com.sun.jdi.connect.AttachingConnector>
-             public listeningConnectors(): java.util.List<com.sun.jdi.connect.ListeningConnector>
-             public allConnectors(): java.util.List<com.sun.jdi.connect.Connector>
-             public connectedVirtualMachines(): java.util.List<com.sun.jdi.VirtualMachine>
-             public majorInterfaceVersion(): int
-             public minorInterfaceVersion(): int
+             defaultConnector(): com.sun.jdi.connect.LaunchingConnector
+             launchingConnectors(): java.util.List<com.sun.jdi.connect.LaunchingConnector>
+             attachingConnectors(): java.util.List<com.sun.jdi.connect.AttachingConnector>
+             listeningConnectors(): java.util.List<com.sun.jdi.connect.ListeningConnector>
+             allConnectors(): java.util.List<com.sun.jdi.connect.Connector>
+             connectedVirtualMachines(): java.util.List<com.sun.jdi.VirtualMachine>
+             majorInterfaceVersion(): int
+             minorInterfaceVersion(): int
              createVirtualMachine<T>(...args: any[]): any
          }
          interface StringReference extends com.sun.jdi.ObjectReference {
-             public value(): java.lang.String
+             value(): java.lang.String
          }
          interface DoubleValue extends com.sun.jdi.PrimitiveValue , java.lang.Comparable<com.sun.jdi.DoubleValue> {
-             public value(): double
-             public equals(arg0: java.lang.Object): boolean
-             public hashCode(): int
+             value(): double
+             equals(arg0: java.lang.Object): boolean
+             hashCode(): int
          }
          interface FloatValue extends com.sun.jdi.PrimitiveValue , java.lang.Comparable<com.sun.jdi.FloatValue> {
-             public value(): float
-             public equals(arg0: java.lang.Object): boolean
-             public hashCode(): int
+             value(): float
+             equals(arg0: java.lang.Object): boolean
+             hashCode(): int
          }
          interface LongValue extends com.sun.jdi.PrimitiveValue , java.lang.Comparable<com.sun.jdi.LongValue> {
-             public value(): long
-             public equals(arg0: java.lang.Object): boolean
-             public hashCode(): int
+             value(): long
+             equals(arg0: java.lang.Object): boolean
+             hashCode(): int
          }
          interface IntegerValue extends com.sun.jdi.PrimitiveValue , java.lang.Comparable<com.sun.jdi.IntegerValue> {
-             public value(): int
-             public equals(arg0: java.lang.Object): boolean
-             public hashCode(): int
+             value(): int
+             equals(arg0: java.lang.Object): boolean
+             hashCode(): int
          }
          interface ShortValue extends com.sun.jdi.PrimitiveValue , java.lang.Comparable<com.sun.jdi.ShortValue> {
-             public value(): short
-             public equals(arg0: java.lang.Object): boolean
-             public hashCode(): int
+             value(): short
+             equals(arg0: java.lang.Object): boolean
+             hashCode(): int
          }
          interface CharValue extends com.sun.jdi.PrimitiveValue , java.lang.Comparable<com.sun.jdi.CharValue> {
-             public value(): char
-             public equals(arg0: java.lang.Object): boolean
-             public hashCode(): int
+             value(): char
+             equals(arg0: java.lang.Object): boolean
+             hashCode(): int
          }
          interface ByteValue extends com.sun.jdi.PrimitiveValue , java.lang.Comparable<com.sun.jdi.ByteValue> {
-             public value(): byte
-             public equals(arg0: java.lang.Object): boolean
-             public hashCode(): int
+             value(): byte
+             equals(arg0: java.lang.Object): boolean
+             hashCode(): int
          }
          interface PrimitiveValue extends com.sun.jdi.Value {
-             public booleanValue(): boolean
-             public byteValue(): byte
-             public charValue(): char
-             public shortValue(): short
-             public intValue(): int
-             public longValue(): long
-             public floatValue(): float
-             public doubleValue(): double
+             booleanValue(): boolean
+             byteValue(): byte
+             charValue(): char
+             shortValue(): short
+             intValue(): int
+             longValue(): long
+             floatValue(): float
+             doubleValue(): double
          }
          interface BooleanValue extends com.sun.jdi.PrimitiveValue {
-             public value(): boolean
-             public equals(arg0: java.lang.Object): boolean
-             public hashCode(): int
+             value(): boolean
+             equals(arg0: java.lang.Object): boolean
+             hashCode(): int
          }
          interface ThreadGroupReference extends com.sun.jdi.ObjectReference {
-             public name(): java.lang.String
-             public parent(): com.sun.jdi.ThreadGroupReference
-             public suspend(): void
-             public resume(): void
-             public threads(): java.util.List<com.sun.jdi.ThreadReference>
-             public threadGroups(): java.util.List<com.sun.jdi.ThreadGroupReference>
+             name(): java.lang.String
+             parent(): com.sun.jdi.ThreadGroupReference
+             suspend(): void
+             resume(): void
+             threads(): java.util.List<com.sun.jdi.ThreadReference>
+             threadGroups(): java.util.List<com.sun.jdi.ThreadGroupReference>
          }
          interface ObjectReference extends com.sun.jdi.Value {
-             public static INVOKE_SINGLE_THREADED: int
-             public static INVOKE_NONVIRTUAL: int
-             public referenceType(): com.sun.jdi.ReferenceType
-             public getValue(arg0: com.sun.jdi.Field): com.sun.jdi.Value
-             public getValues(arg0: java.util.List<com.sun.jdi.Field>): java.util.Map<com.sun.jdi.Field, com.sun.jdi.Value>
-             public setValue(arg0: com.sun.jdi.Field, arg1: com.sun.jdi.Value): void
-             public invokeMethod(arg0: com.sun.jdi.ThreadReference, arg1: com.sun.jdi.Method, arg2: java.util.List<com.sun.jdi.Value>, arg3: int): com.sun.jdi.Value
-             public disableCollection(): void
-             public enableCollection(): void
-             public isCollected(): boolean
-             public uniqueID(): long
-             public waitingThreads(): java.util.List<com.sun.jdi.ThreadReference>
-             public owningThread(): com.sun.jdi.ThreadReference
-             public entryCount(): int
-             public referringObjects(arg0: long): java.util.List<com.sun.jdi.ObjectReference>
-             public equals(arg0: java.lang.Object): boolean
-             public hashCode(): int
+             INVOKE_SINGLE_THREADED: int
+             INVOKE_NONVIRTUAL: int
+             referenceType(): com.sun.jdi.ReferenceType
+             getValue(arg0: com.sun.jdi.Field): com.sun.jdi.Value
+             getValues(arg0: java.util.List<com.sun.jdi.Field>): java.util.Map<com.sun.jdi.Field, com.sun.jdi.Value>
+             setValue(arg0: com.sun.jdi.Field, arg1: com.sun.jdi.Value): void
+             invokeMethod(arg0: com.sun.jdi.ThreadReference, arg1: com.sun.jdi.Method, arg2: java.util.List<com.sun.jdi.Value>, arg3: int): com.sun.jdi.Value
+             disableCollection(): void
+             enableCollection(): void
+             isCollected(): boolean
+             uniqueID(): long
+             waitingThreads(): java.util.List<com.sun.jdi.ThreadReference>
+             owningThread(): com.sun.jdi.ThreadReference
+             entryCount(): int
+             referringObjects(arg0: long): java.util.List<com.sun.jdi.ObjectReference>
+             equals(arg0: java.lang.Object): boolean
+             hashCode(): int
          }
          interface ThreadReference extends com.sun.jdi.ObjectReference {
-             public static THREAD_STATUS_UNKNOWN: int
-             public static THREAD_STATUS_ZOMBIE: int
-             public static THREAD_STATUS_RUNNING: int
-             public static THREAD_STATUS_SLEEPING: int
-             public static THREAD_STATUS_MONITOR: int
-             public static THREAD_STATUS_WAIT: int
-             public static THREAD_STATUS_NOT_STARTED: int
-             public name(): java.lang.String
-             public suspend(): void
-             public resume(): void
-             public suspendCount(): int
-             public stop(arg0: com.sun.jdi.ObjectReference): void
-             public interrupt(): void
-             public status(): int
-             public isSuspended(): boolean
-             public isAtBreakpoint(): boolean
-             public threadGroup(): com.sun.jdi.ThreadGroupReference
-             public frameCount(): int
+             THREAD_STATUS_UNKNOWN: int
+             THREAD_STATUS_ZOMBIE: int
+             THREAD_STATUS_RUNNING: int
+             THREAD_STATUS_SLEEPING: int
+             THREAD_STATUS_MONITOR: int
+             THREAD_STATUS_WAIT: int
+             THREAD_STATUS_NOT_STARTED: int
+             name(): java.lang.String
+             suspend(): void
+             resume(): void
+             suspendCount(): int
+             stop(arg0: com.sun.jdi.ObjectReference): void
+             interrupt(): void
+             status(): int
+             isSuspended(): boolean
+             isAtBreakpoint(): boolean
+             threadGroup(): com.sun.jdi.ThreadGroupReference
+             frameCount(): int
              frames<T>(...args: any[]): any
-             public frame(arg0: int): com.sun.jdi.StackFrame
-             public ownedMonitors(): java.util.List<com.sun.jdi.ObjectReference>
-             public ownedMonitorsAndFrames(): java.util.List<com.sun.jdi.MonitorInfo>
-             public currentContendedMonitor(): com.sun.jdi.ObjectReference
-             public popFrames(arg0: com.sun.jdi.StackFrame): void
-             public forceEarlyReturn(arg0: com.sun.jdi.Value): void
+             frame(arg0: int): com.sun.jdi.StackFrame
+             ownedMonitors(): java.util.List<com.sun.jdi.ObjectReference>
+             ownedMonitorsAndFrames(): java.util.List<com.sun.jdi.MonitorInfo>
+             currentContendedMonitor(): com.sun.jdi.ObjectReference
+             popFrames(arg0: com.sun.jdi.StackFrame): void
+             forceEarlyReturn(arg0: com.sun.jdi.Value): void
          }
          interface Accessible {
-             public modifiers(): int
-             public isPrivate(): boolean
-             public isPackagePrivate(): boolean
-             public isProtected(): boolean
-             public isPublic(): boolean
+             modifiers(): int
+             isPrivate(): boolean
+             isPackagePrivate(): boolean
+             isProtected(): boolean
+             isPublic(): boolean
          }
          interface ReferenceType extends com.sun.jdi.Type , java.lang.Comparable<com.sun.jdi.ReferenceType> , com.sun.jdi.Accessible {
-             public name(): java.lang.String
-             public genericSignature(): java.lang.String
-             public classLoader(): com.sun.jdi.ClassLoaderReference
-             public sourceName(): java.lang.String
-             public sourceNames(arg0: java.lang.String): java.util.List<java.lang.String>
-             public sourcePaths(arg0: java.lang.String): java.util.List<java.lang.String>
-             public sourceDebugExtension(): java.lang.String
-             public isStatic(): boolean
-             public isAbstract(): boolean
-             public isFinal(): boolean
-             public isPrepared(): boolean
-             public isVerified(): boolean
-             public isInitialized(): boolean
-             public failedToInitialize(): boolean
-             public fields(): java.util.List<com.sun.jdi.Field>
-             public visibleFields(): java.util.List<com.sun.jdi.Field>
-             public allFields(): java.util.List<com.sun.jdi.Field>
-             public fieldByName(arg0: java.lang.String): com.sun.jdi.Field
-             public methods(): java.util.List<com.sun.jdi.Method>
-             public visibleMethods(): java.util.List<com.sun.jdi.Method>
-             public allMethods(): java.util.List<com.sun.jdi.Method>
+             name(): java.lang.String
+             genericSignature(): java.lang.String
+             classLoader(): com.sun.jdi.ClassLoaderReference
+             sourceName(): java.lang.String
+             sourceNames(arg0: java.lang.String): java.util.List<java.lang.String>
+             sourcePaths(arg0: java.lang.String): java.util.List<java.lang.String>
+             sourceDebugExtension(): java.lang.String
+             isStatic(): boolean
+             isAbstract(): boolean
+             isFinal(): boolean
+             isPrepared(): boolean
+             isVerified(): boolean
+             isInitialized(): boolean
+             failedToInitialize(): boolean
+             fields(): java.util.List<com.sun.jdi.Field>
+             visibleFields(): java.util.List<com.sun.jdi.Field>
+             allFields(): java.util.List<com.sun.jdi.Field>
+             fieldByName(arg0: java.lang.String): com.sun.jdi.Field
+             methods(): java.util.List<com.sun.jdi.Method>
+             visibleMethods(): java.util.List<com.sun.jdi.Method>
+             allMethods(): java.util.List<com.sun.jdi.Method>
              methodsByName<T>(...args: any[]): any
-             public nestedTypes(): java.util.List<com.sun.jdi.ReferenceType>
-             public getValue(arg0: com.sun.jdi.Field): com.sun.jdi.Value
-             public getValues(arg0: java.util.List<com.sun.jdi.Field>): java.util.Map<com.sun.jdi.Field, com.sun.jdi.Value>
-             public classObject(): com.sun.jdi.ClassObjectReference
+             nestedTypes(): java.util.List<com.sun.jdi.ReferenceType>
+             getValue(arg0: com.sun.jdi.Field): com.sun.jdi.Value
+             getValues(arg0: java.util.List<com.sun.jdi.Field>): java.util.Map<com.sun.jdi.Field, com.sun.jdi.Value>
+             classObject(): com.sun.jdi.ClassObjectReference
              allLineLocations<T>(...args: any[]): any
              locationsOfLine<T>(...args: any[]): any
-             public availableStrata(): java.util.List<java.lang.String>
-             public defaultStratum(): java.lang.String
-             public instances(arg0: long): java.util.List<com.sun.jdi.ObjectReference>
-             public equals(arg0: java.lang.Object): boolean
-             public hashCode(): int
-             public majorVersion(): int
-             public minorVersion(): int
-             public constantPoolCount(): int
-             public constantPool(): byte[]
+             availableStrata(): java.util.List<java.lang.String>
+             defaultStratum(): java.lang.String
+             instances(arg0: long): java.util.List<com.sun.jdi.ObjectReference>
+             equals(arg0: java.lang.Object): boolean
+             hashCode(): int
+             majorVersion(): int
+             minorVersion(): int
+             constantPoolCount(): int
+             constantPool(): byte[]
          }
          interface PathSearchingVirtualMachine extends com.sun.jdi.VirtualMachine {
-             public classPath(): java.util.List<java.lang.String>
-             public bootClassPath(): java.util.List<java.lang.String>
-             public baseDirectory(): java.lang.String
+             classPath(): java.util.List<java.lang.String>
+             bootClassPath(): java.util.List<java.lang.String>
+             baseDirectory(): java.lang.String
          }
          class ClassNotLoadedException extends java.lang.Exception {
              constructor(...args: any[])
@@ -391,71 +391,71 @@ declare namespace com {
              constructor(...args: any[])
          }
          interface Type extends com.sun.jdi.Mirror {
-             public signature(): java.lang.String
-             public name(): java.lang.String
+             signature(): java.lang.String
+             name(): java.lang.String
          }
          interface VirtualMachine extends com.sun.jdi.Mirror {
-             public static TRACE_NONE: int
-             public static TRACE_SENDS: int
-             public static TRACE_RECEIVES: int
-             public static TRACE_EVENTS: int
-             public static TRACE_REFTYPES: int
-             public static TRACE_OBJREFS: int
-             public static TRACE_ALL: int
-             public classesByName(arg0: java.lang.String): java.util.List<com.sun.jdi.ReferenceType>
-             public allClasses(): java.util.List<com.sun.jdi.ReferenceType>
-             public redefineClasses(arg0: java.util.Map<T extends com.sun.jdi.ReferenceType, byte[]>): void
-             public allThreads(): java.util.List<com.sun.jdi.ThreadReference>
-             public suspend(): void
-             public resume(): void
-             public topLevelThreadGroups(): java.util.List<com.sun.jdi.ThreadGroupReference>
-             public eventQueue(): com.sun.jdi.event.EventQueue
-             public eventRequestManager(): com.sun.jdi.request.EventRequestManager
+             TRACE_NONE: int
+             TRACE_SENDS: int
+             TRACE_RECEIVES: int
+             TRACE_EVENTS: int
+             TRACE_REFTYPES: int
+             TRACE_OBJREFS: int
+             TRACE_ALL: int
+             classesByName(arg0: java.lang.String): java.util.List<com.sun.jdi.ReferenceType>
+             allClasses(): java.util.List<com.sun.jdi.ReferenceType>
+             redefineClasses(arg0: java.util.Map<com.sun.jdi.ReferenceType, byte[]>): void
+             allThreads(): java.util.List<com.sun.jdi.ThreadReference>
+             suspend(): void
+             resume(): void
+             topLevelThreadGroups(): java.util.List<com.sun.jdi.ThreadGroupReference>
+             eventQueue(): com.sun.jdi.event.EventQueue
+             eventRequestManager(): com.sun.jdi.request.EventRequestManager
              mirrorOf<T>(...args: any[]): any
-             public mirrorOfVoid(): com.sun.jdi.VoidValue
-             public process(): java.lang.Process
-             public dispose(): void
-             public exit(arg0: int): void
-             public canWatchFieldModification(): boolean
-             public canWatchFieldAccess(): boolean
-             public canGetBytecodes(): boolean
-             public canGetSyntheticAttribute(): boolean
-             public canGetOwnedMonitorInfo(): boolean
-             public canGetCurrentContendedMonitor(): boolean
-             public canGetMonitorInfo(): boolean
-             public canUseInstanceFilters(): boolean
-             public canRedefineClasses(): boolean
-             public canAddMethod(): boolean
-             public canUnrestrictedlyRedefineClasses(): boolean
-             public canPopFrames(): boolean
-             public canGetSourceDebugExtension(): boolean
-             public canRequestVMDeathEvent(): boolean
-             public canGetMethodReturnValues(): boolean
-             public canGetInstanceInfo(): boolean
-             public canUseSourceNameFilters(): boolean
-             public canForceEarlyReturn(): boolean
-             public canBeModified(): boolean
-             public canRequestMonitorEvents(): boolean
-             public canGetMonitorFrameInfo(): boolean
-             public canGetClassFileVersion(): boolean
-             public canGetConstantPool(): boolean
-             public setDefaultStratum(arg0: java.lang.String): void
-             public getDefaultStratum(): java.lang.String
-             public instanceCounts(arg0: java.util.List<com.sun.jdi.ReferenceType>): long[]
-             public description(): java.lang.String
-             public version(): java.lang.String
-             public name(): java.lang.String
-             public setDebugTraceMode(arg0: int): void
+             mirrorOfVoid(): com.sun.jdi.VoidValue
+             process(): java.lang.Process
+             dispose(): void
+             exit(arg0: int): void
+             canWatchFieldModification(): boolean
+             canWatchFieldAccess(): boolean
+             canGetBytecodes(): boolean
+             canGetSyntheticAttribute(): boolean
+             canGetOwnedMonitorInfo(): boolean
+             canGetCurrentContendedMonitor(): boolean
+             canGetMonitorInfo(): boolean
+             canUseInstanceFilters(): boolean
+             canRedefineClasses(): boolean
+             canAddMethod(): boolean
+             canUnrestrictedlyRedefineClasses(): boolean
+             canPopFrames(): boolean
+             canGetSourceDebugExtension(): boolean
+             canRequestVMDeathEvent(): boolean
+             canGetMethodReturnValues(): boolean
+             canGetInstanceInfo(): boolean
+             canUseSourceNameFilters(): boolean
+             canForceEarlyReturn(): boolean
+             canBeModified(): boolean
+             canRequestMonitorEvents(): boolean
+             canGetMonitorFrameInfo(): boolean
+             canGetClassFileVersion(): boolean
+             canGetConstantPool(): boolean
+             setDefaultStratum(arg0: java.lang.String): void
+             getDefaultStratum(): java.lang.String
+             instanceCounts(arg0: java.util.List<com.sun.jdi.ReferenceType>): long[]
+             description(): java.lang.String
+             version(): java.lang.String
+             name(): java.lang.String
+             setDebugTraceMode(arg0: int): void
          }
          interface VoidValue extends com.sun.jdi.Value {
-             public equals(arg0: java.lang.Object): boolean
-             public hashCode(): int
+             equals(arg0: java.lang.Object): boolean
+             hashCode(): int
          }
          interface Value extends com.sun.jdi.Mirror {
-             public type(): com.sun.jdi.Type
+             type(): com.sun.jdi.Type
          }
          interface Mirror {
-             public virtualMachine(): com.sun.jdi.VirtualMachine
+             virtualMachine(): com.sun.jdi.VirtualMachine
              toString<T>(...args: any[]): any
          }
          namespace connect {
@@ -472,55 +472,55 @@ declare namespace com {
                 public argumentNames(): java.util.List<java.lang.String>
             }
             interface Transport {
-                public name(): java.lang.String
+                name(): java.lang.String
             }
             interface ListeningConnector extends com.sun.jdi.connect.Connector {
-                public supportsMultipleConnections(): boolean
-                public startListening(arg0: java.util.Map<java.lang.String, any extends com.sun.jdi.connect.Connector$Argument>): java.lang.String
-                public stopListening(arg0: java.util.Map<java.lang.String, any extends com.sun.jdi.connect.Connector$Argument>): void
-                public accept(arg0: java.util.Map<java.lang.String, any extends com.sun.jdi.connect.Connector$Argument>): com.sun.jdi.VirtualMachine
+                supportsMultipleConnections(): boolean
+                startListening(arg0: java.util.Map<java.lang.String, com.sun.jdi.connect.Connector$Argument>): java.lang.String
+                stopListening(arg0: java.util.Map<java.lang.String, com.sun.jdi.connect.Connector$Argument>): void
+                accept(arg0: java.util.Map<java.lang.String, com.sun.jdi.connect.Connector$Argument>): com.sun.jdi.VirtualMachine
             }
             interface AttachingConnector extends com.sun.jdi.connect.Connector {
-                public attach(arg0: java.util.Map<java.lang.String, any extends com.sun.jdi.connect.Connector$Argument>): com.sun.jdi.VirtualMachine
+                attach(arg0: java.util.Map<java.lang.String, com.sun.jdi.connect.Connector$Argument>): com.sun.jdi.VirtualMachine
             }
             interface LaunchingConnector extends com.sun.jdi.connect.Connector {
-                public launch(arg0: java.util.Map<java.lang.String, any extends com.sun.jdi.connect.Connector$Argument>): com.sun.jdi.VirtualMachine
+                launch(arg0: java.util.Map<java.lang.String, com.sun.jdi.connect.Connector$Argument>): com.sun.jdi.VirtualMachine
             }
             interface Connector {
-                public name(): java.lang.String
-                public description(): java.lang.String
-                public transport(): com.sun.jdi.connect.Transport
-                public defaultArguments(): java.util.Map<java.lang.String, com.sun.jdi.connect.Connector$Argument>
+                name(): java.lang.String
+                description(): java.lang.String
+                transport(): com.sun.jdi.connect.Transport
+                defaultArguments(): java.util.Map<java.lang.String, com.sun.jdi.connect.Connector$Argument>
             }
             interface Connector$SelectedArgument extends com.sun.jdi.connect.Connector$Argument {
-                public choices(): java.util.List<java.lang.String>
-                public isValid(arg0: java.lang.String): boolean
+                choices(): java.util.List<java.lang.String>
+                isValid(arg0: java.lang.String): boolean
             }
             interface Connector$StringArgument extends com.sun.jdi.connect.Connector$Argument {
-                public isValid(arg0: java.lang.String): boolean
+                isValid(arg0: java.lang.String): boolean
             }
             interface Connector$IntegerArgument extends com.sun.jdi.connect.Connector$Argument {
-                public setValue(arg0: int): void
+                setValue(arg0: int): void
                 isValid<T>(...args: any[]): any
-                public stringValueOf(arg0: int): java.lang.String
-                public intValue(): int
-                public max(): int
-                public min(): int
+                stringValueOf(arg0: int): java.lang.String
+                intValue(): int
+                max(): int
+                min(): int
             }
             interface Connector$BooleanArgument extends com.sun.jdi.connect.Connector$Argument {
-                public setValue(arg0: boolean): void
-                public isValid(arg0: java.lang.String): boolean
-                public stringValueOf(arg0: boolean): java.lang.String
-                public booleanValue(): boolean
+                setValue(arg0: boolean): void
+                isValid(arg0: java.lang.String): boolean
+                stringValueOf(arg0: boolean): java.lang.String
+                booleanValue(): boolean
             }
             interface Connector$Argument extends java.io.Serializable {
-                public name(): java.lang.String
-                public label(): java.lang.String
-                public description(): java.lang.String
-                public value(): java.lang.String
-                public setValue(arg0: java.lang.String): void
-                public isValid(arg0: java.lang.String): boolean
-                public mustSpecify(): boolean
+                name(): java.lang.String
+                label(): java.lang.String
+                description(): java.lang.String
+                value(): java.lang.String
+                setValue(arg0: java.lang.String): void
+                isValid(arg0: java.lang.String): boolean
+                mustSpecify(): boolean
             }
             namespace spi {
                class ClosedConnectionException extends java.io.IOException {
@@ -554,93 +554,93 @@ declare namespace com {
                    public close(): void
                    public isOpen(): boolean
                }
-
+               
             }
-
+            
          }
          namespace event {
             interface ModificationWatchpointEvent extends com.sun.jdi.event.WatchpointEvent {
-                public valueToBe(): com.sun.jdi.Value
+                valueToBe(): com.sun.jdi.Value
             }
             interface AccessWatchpointEvent extends com.sun.jdi.event.WatchpointEvent {
             }
             interface WatchpointEvent extends com.sun.jdi.event.LocatableEvent {
-                public field(): com.sun.jdi.Field
-                public object(): com.sun.jdi.ObjectReference
-                public valueCurrent(): com.sun.jdi.Value
+                field(): com.sun.jdi.Field
+                object(): com.sun.jdi.ObjectReference
+                valueCurrent(): com.sun.jdi.Value
             }
             interface VMDisconnectEvent extends com.sun.jdi.event.Event {
             }
             interface VMDeathEvent extends com.sun.jdi.event.Event {
             }
             interface VMStartEvent extends com.sun.jdi.event.Event {
-                public thread(): com.sun.jdi.ThreadReference
+                thread(): com.sun.jdi.ThreadReference
             }
             interface ThreadStartEvent extends com.sun.jdi.event.Event {
-                public thread(): com.sun.jdi.ThreadReference
+                thread(): com.sun.jdi.ThreadReference
             }
             interface ThreadDeathEvent extends com.sun.jdi.event.Event {
-                public thread(): com.sun.jdi.ThreadReference
+                thread(): com.sun.jdi.ThreadReference
             }
             interface ExceptionEvent extends com.sun.jdi.event.LocatableEvent {
-                public exception(): com.sun.jdi.ObjectReference
-                public catchLocation(): com.sun.jdi.Location
+                exception(): com.sun.jdi.ObjectReference
+                catchLocation(): com.sun.jdi.Location
             }
             interface ClassUnloadEvent extends com.sun.jdi.event.Event {
-                public className(): java.lang.String
-                public classSignature(): java.lang.String
+                className(): java.lang.String
+                classSignature(): java.lang.String
             }
             interface ClassPrepareEvent extends com.sun.jdi.event.Event {
-                public thread(): com.sun.jdi.ThreadReference
-                public referenceType(): com.sun.jdi.ReferenceType
+                thread(): com.sun.jdi.ThreadReference
+                referenceType(): com.sun.jdi.ReferenceType
             }
             interface MonitorWaitedEvent extends com.sun.jdi.event.LocatableEvent {
-                public thread(): com.sun.jdi.ThreadReference
-                public monitor(): com.sun.jdi.ObjectReference
-                public timedout(): boolean
+                thread(): com.sun.jdi.ThreadReference
+                monitor(): com.sun.jdi.ObjectReference
+                timedout(): boolean
             }
             interface MonitorWaitEvent extends com.sun.jdi.event.LocatableEvent {
-                public thread(): com.sun.jdi.ThreadReference
-                public monitor(): com.sun.jdi.ObjectReference
-                public timeout(): long
+                thread(): com.sun.jdi.ThreadReference
+                monitor(): com.sun.jdi.ObjectReference
+                timeout(): long
             }
             interface MonitorContendedEnteredEvent extends com.sun.jdi.event.LocatableEvent {
-                public thread(): com.sun.jdi.ThreadReference
-                public monitor(): com.sun.jdi.ObjectReference
+                thread(): com.sun.jdi.ThreadReference
+                monitor(): com.sun.jdi.ObjectReference
             }
             interface MonitorContendedEnterEvent extends com.sun.jdi.event.LocatableEvent {
-                public thread(): com.sun.jdi.ThreadReference
-                public monitor(): com.sun.jdi.ObjectReference
+                thread(): com.sun.jdi.ThreadReference
+                monitor(): com.sun.jdi.ObjectReference
             }
             interface MethodExitEvent extends com.sun.jdi.event.LocatableEvent {
-                public method(): com.sun.jdi.Method
-                public returnValue(): com.sun.jdi.Value
+                method(): com.sun.jdi.Method
+                returnValue(): com.sun.jdi.Value
             }
             interface MethodEntryEvent extends com.sun.jdi.event.LocatableEvent {
-                public method(): com.sun.jdi.Method
+                method(): com.sun.jdi.Method
             }
             interface StepEvent extends com.sun.jdi.event.LocatableEvent {
             }
             interface LocatableEvent extends com.sun.jdi.event.Event , com.sun.jdi.Locatable {
-                public thread(): com.sun.jdi.ThreadReference
+                thread(): com.sun.jdi.ThreadReference
             }
             interface BreakpointEvent extends com.sun.jdi.event.LocatableEvent {
             }
             interface EventIterator extends java.util.Iterator<com.sun.jdi.event.Event> {
-                public nextEvent(): com.sun.jdi.event.Event
+                nextEvent(): com.sun.jdi.event.Event
             }
             interface Event extends com.sun.jdi.Mirror {
-                public request(): com.sun.jdi.request.EventRequest
+                request(): com.sun.jdi.request.EventRequest
             }
             interface EventSet extends com.sun.jdi.Mirror , java.util.Set<com.sun.jdi.event.Event> {
-                public suspendPolicy(): int
-                public eventIterator(): com.sun.jdi.event.EventIterator
-                public resume(): void
+                suspendPolicy(): int
+                eventIterator(): com.sun.jdi.event.EventIterator
+                resume(): void
             }
             interface EventQueue extends com.sun.jdi.Mirror {
                 remove<T>(...args: any[]): any
             }
-
+            
          }
          namespace request {
             class DuplicateRequestException extends java.lang.RuntimeException {
@@ -654,146 +654,146 @@ declare namespace com {
             interface ModificationWatchpointRequest extends com.sun.jdi.request.WatchpointRequest {
             }
             interface WatchpointRequest extends com.sun.jdi.request.EventRequest {
-                public field(): com.sun.jdi.Field
-                public addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
+                field(): com.sun.jdi.Field
+                addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
                 addClassFilter<T>(...args: any[]): any
-                public addClassExclusionFilter(arg0: java.lang.String): void
-                public addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
+                addClassExclusionFilter(arg0: java.lang.String): void
+                addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
             }
             interface AccessWatchpointRequest extends com.sun.jdi.request.WatchpointRequest {
             }
             interface BreakpointRequest extends com.sun.jdi.request.EventRequest , com.sun.jdi.Locatable {
-                public location(): com.sun.jdi.Location
-                public addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
-                public addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
+                location(): com.sun.jdi.Location
+                addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
+                addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
             }
             interface StepRequest extends com.sun.jdi.request.EventRequest {
-                public static STEP_INTO: int
-                public static STEP_OVER: int
-                public static STEP_OUT: int
-                public static STEP_MIN: int
-                public static STEP_LINE: int
-                public thread(): com.sun.jdi.ThreadReference
-                public size(): int
-                public depth(): int
+                STEP_INTO: int
+                STEP_OVER: int
+                STEP_OUT: int
+                STEP_MIN: int
+                STEP_LINE: int
+                thread(): com.sun.jdi.ThreadReference
+                size(): int
+                depth(): int
                 addClassFilter<T>(...args: any[]): any
-                public addClassExclusionFilter(arg0: java.lang.String): void
-                public addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
+                addClassExclusionFilter(arg0: java.lang.String): void
+                addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
             }
             interface MonitorWaitedRequest extends com.sun.jdi.request.EventRequest {
-                public addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
+                addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
                 addClassFilter<T>(...args: any[]): any
-                public addClassExclusionFilter(arg0: java.lang.String): void
-                public addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
+                addClassExclusionFilter(arg0: java.lang.String): void
+                addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
             }
             interface MonitorWaitRequest extends com.sun.jdi.request.EventRequest {
-                public addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
+                addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
                 addClassFilter<T>(...args: any[]): any
-                public addClassExclusionFilter(arg0: java.lang.String): void
-                public addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
+                addClassExclusionFilter(arg0: java.lang.String): void
+                addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
             }
             interface MonitorContendedEnteredRequest extends com.sun.jdi.request.EventRequest {
-                public addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
+                addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
                 addClassFilter<T>(...args: any[]): any
-                public addClassExclusionFilter(arg0: java.lang.String): void
-                public addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
+                addClassExclusionFilter(arg0: java.lang.String): void
+                addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
             }
             interface MonitorContendedEnterRequest extends com.sun.jdi.request.EventRequest {
-                public addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
+                addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
                 addClassFilter<T>(...args: any[]): any
-                public addClassExclusionFilter(arg0: java.lang.String): void
-                public addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
+                addClassExclusionFilter(arg0: java.lang.String): void
+                addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
             }
             interface MethodExitRequest extends com.sun.jdi.request.EventRequest {
-                public addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
+                addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
                 addClassFilter<T>(...args: any[]): any
-                public addClassExclusionFilter(arg0: java.lang.String): void
-                public addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
+                addClassExclusionFilter(arg0: java.lang.String): void
+                addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
             }
             interface MethodEntryRequest extends com.sun.jdi.request.EventRequest {
-                public addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
+                addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
                 addClassFilter<T>(...args: any[]): any
-                public addClassExclusionFilter(arg0: java.lang.String): void
-                public addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
+                addClassExclusionFilter(arg0: java.lang.String): void
+                addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
             }
             interface ExceptionRequest extends com.sun.jdi.request.EventRequest {
-                public exception(): com.sun.jdi.ReferenceType
-                public notifyCaught(): boolean
-                public notifyUncaught(): boolean
-                public addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
+                exception(): com.sun.jdi.ReferenceType
+                notifyCaught(): boolean
+                notifyUncaught(): boolean
+                addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
                 addClassFilter<T>(...args: any[]): any
-                public addClassExclusionFilter(arg0: java.lang.String): void
-                public addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
+                addClassExclusionFilter(arg0: java.lang.String): void
+                addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
             }
             interface ThreadDeathRequest extends com.sun.jdi.request.EventRequest {
-                public addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
+                addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
             }
             interface ThreadStartRequest extends com.sun.jdi.request.EventRequest {
-                public addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
+                addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
             }
             interface ClassUnloadRequest extends com.sun.jdi.request.EventRequest {
-                public addClassFilter(arg0: java.lang.String): void
-                public addClassExclusionFilter(arg0: java.lang.String): void
+                addClassFilter(arg0: java.lang.String): void
+                addClassExclusionFilter(arg0: java.lang.String): void
             }
             interface EventRequest extends com.sun.jdi.Mirror {
-                public static SUSPEND_NONE: int
-                public static SUSPEND_EVENT_THREAD: int
-                public static SUSPEND_ALL: int
-                public isEnabled(): boolean
-                public setEnabled(arg0: boolean): void
-                public enable(): void
-                public disable(): void
-                public addCountFilter(arg0: int): void
-                public setSuspendPolicy(arg0: int): void
-                public suspendPolicy(): int
-                public putProperty(arg0: java.lang.Object, arg1: java.lang.Object): void
-                public getProperty(arg0: java.lang.Object): java.lang.Object
+                SUSPEND_NONE: int
+                SUSPEND_EVENT_THREAD: int
+                SUSPEND_ALL: int
+                isEnabled(): boolean
+                setEnabled(arg0: boolean): void
+                enable(): void
+                disable(): void
+                addCountFilter(arg0: int): void
+                setSuspendPolicy(arg0: int): void
+                suspendPolicy(): int
+                putProperty(arg0: java.lang.Object, arg1: java.lang.Object): void
+                getProperty(arg0: java.lang.Object): java.lang.Object
             }
             interface ClassPrepareRequest extends com.sun.jdi.request.EventRequest {
                 addClassFilter<T>(...args: any[]): any
-                public addClassExclusionFilter(arg0: java.lang.String): void
-                public addSourceNameFilter(arg0: java.lang.String): void
+                addClassExclusionFilter(arg0: java.lang.String): void
+                addSourceNameFilter(arg0: java.lang.String): void
             }
             interface EventRequestManager extends com.sun.jdi.Mirror {
-                public createClassPrepareRequest(): com.sun.jdi.request.ClassPrepareRequest
-                public createClassUnloadRequest(): com.sun.jdi.request.ClassUnloadRequest
-                public createThreadStartRequest(): com.sun.jdi.request.ThreadStartRequest
-                public createThreadDeathRequest(): com.sun.jdi.request.ThreadDeathRequest
-                public createExceptionRequest(arg0: com.sun.jdi.ReferenceType, arg1: boolean, arg2: boolean): com.sun.jdi.request.ExceptionRequest
-                public createMethodEntryRequest(): com.sun.jdi.request.MethodEntryRequest
-                public createMethodExitRequest(): com.sun.jdi.request.MethodExitRequest
-                public createMonitorContendedEnterRequest(): com.sun.jdi.request.MonitorContendedEnterRequest
-                public createMonitorContendedEnteredRequest(): com.sun.jdi.request.MonitorContendedEnteredRequest
-                public createMonitorWaitRequest(): com.sun.jdi.request.MonitorWaitRequest
-                public createMonitorWaitedRequest(): com.sun.jdi.request.MonitorWaitedRequest
-                public createStepRequest(arg0: com.sun.jdi.ThreadReference, arg1: int, arg2: int): com.sun.jdi.request.StepRequest
-                public createBreakpointRequest(arg0: com.sun.jdi.Location): com.sun.jdi.request.BreakpointRequest
-                public createAccessWatchpointRequest(arg0: com.sun.jdi.Field): com.sun.jdi.request.AccessWatchpointRequest
-                public createModificationWatchpointRequest(arg0: com.sun.jdi.Field): com.sun.jdi.request.ModificationWatchpointRequest
-                public createVMDeathRequest(): com.sun.jdi.request.VMDeathRequest
-                public deleteEventRequest(arg0: com.sun.jdi.request.EventRequest): void
-                public deleteEventRequests(arg0: java.util.List<com.sun.jdi.request.EventRequest>): void
-                public deleteAllBreakpoints(): void
-                public stepRequests(): java.util.List<com.sun.jdi.request.StepRequest>
-                public classPrepareRequests(): java.util.List<com.sun.jdi.request.ClassPrepareRequest>
-                public classUnloadRequests(): java.util.List<com.sun.jdi.request.ClassUnloadRequest>
-                public threadStartRequests(): java.util.List<com.sun.jdi.request.ThreadStartRequest>
-                public threadDeathRequests(): java.util.List<com.sun.jdi.request.ThreadDeathRequest>
-                public exceptionRequests(): java.util.List<com.sun.jdi.request.ExceptionRequest>
-                public breakpointRequests(): java.util.List<com.sun.jdi.request.BreakpointRequest>
-                public accessWatchpointRequests(): java.util.List<com.sun.jdi.request.AccessWatchpointRequest>
-                public modificationWatchpointRequests(): java.util.List<com.sun.jdi.request.ModificationWatchpointRequest>
-                public methodEntryRequests(): java.util.List<com.sun.jdi.request.MethodEntryRequest>
-                public methodExitRequests(): java.util.List<com.sun.jdi.request.MethodExitRequest>
-                public monitorContendedEnterRequests(): java.util.List<com.sun.jdi.request.MonitorContendedEnterRequest>
-                public monitorContendedEnteredRequests(): java.util.List<com.sun.jdi.request.MonitorContendedEnteredRequest>
-                public monitorWaitRequests(): java.util.List<com.sun.jdi.request.MonitorWaitRequest>
-                public monitorWaitedRequests(): java.util.List<com.sun.jdi.request.MonitorWaitedRequest>
-                public vmDeathRequests(): java.util.List<com.sun.jdi.request.VMDeathRequest>
+                createClassPrepareRequest(): com.sun.jdi.request.ClassPrepareRequest
+                createClassUnloadRequest(): com.sun.jdi.request.ClassUnloadRequest
+                createThreadStartRequest(): com.sun.jdi.request.ThreadStartRequest
+                createThreadDeathRequest(): com.sun.jdi.request.ThreadDeathRequest
+                createExceptionRequest(arg0: com.sun.jdi.ReferenceType, arg1: boolean, arg2: boolean): com.sun.jdi.request.ExceptionRequest
+                createMethodEntryRequest(): com.sun.jdi.request.MethodEntryRequest
+                createMethodExitRequest(): com.sun.jdi.request.MethodExitRequest
+                createMonitorContendedEnterRequest(): com.sun.jdi.request.MonitorContendedEnterRequest
+                createMonitorContendedEnteredRequest(): com.sun.jdi.request.MonitorContendedEnteredRequest
+                createMonitorWaitRequest(): com.sun.jdi.request.MonitorWaitRequest
+                createMonitorWaitedRequest(): com.sun.jdi.request.MonitorWaitedRequest
+                createStepRequest(arg0: com.sun.jdi.ThreadReference, arg1: int, arg2: int): com.sun.jdi.request.StepRequest
+                createBreakpointRequest(arg0: com.sun.jdi.Location): com.sun.jdi.request.BreakpointRequest
+                createAccessWatchpointRequest(arg0: com.sun.jdi.Field): com.sun.jdi.request.AccessWatchpointRequest
+                createModificationWatchpointRequest(arg0: com.sun.jdi.Field): com.sun.jdi.request.ModificationWatchpointRequest
+                createVMDeathRequest(): com.sun.jdi.request.VMDeathRequest
+                deleteEventRequest(arg0: com.sun.jdi.request.EventRequest): void
+                deleteEventRequests(arg0: java.util.List<com.sun.jdi.request.EventRequest>): void
+                deleteAllBreakpoints(): void
+                stepRequests(): java.util.List<com.sun.jdi.request.StepRequest>
+                classPrepareRequests(): java.util.List<com.sun.jdi.request.ClassPrepareRequest>
+                classUnloadRequests(): java.util.List<com.sun.jdi.request.ClassUnloadRequest>
+                threadStartRequests(): java.util.List<com.sun.jdi.request.ThreadStartRequest>
+                threadDeathRequests(): java.util.List<com.sun.jdi.request.ThreadDeathRequest>
+                exceptionRequests(): java.util.List<com.sun.jdi.request.ExceptionRequest>
+                breakpointRequests(): java.util.List<com.sun.jdi.request.BreakpointRequest>
+                accessWatchpointRequests(): java.util.List<com.sun.jdi.request.AccessWatchpointRequest>
+                modificationWatchpointRequests(): java.util.List<com.sun.jdi.request.ModificationWatchpointRequest>
+                methodEntryRequests(): java.util.List<com.sun.jdi.request.MethodEntryRequest>
+                methodExitRequests(): java.util.List<com.sun.jdi.request.MethodExitRequest>
+                monitorContendedEnterRequests(): java.util.List<com.sun.jdi.request.MonitorContendedEnterRequest>
+                monitorContendedEnteredRequests(): java.util.List<com.sun.jdi.request.MonitorContendedEnteredRequest>
+                monitorWaitRequests(): java.util.List<com.sun.jdi.request.MonitorWaitRequest>
+                monitorWaitedRequests(): java.util.List<com.sun.jdi.request.MonitorWaitedRequest>
+                vmDeathRequests(): java.util.List<com.sun.jdi.request.VMDeathRequest>
             }
-
+            
          }
-
+         
       }
       namespace source {
          namespace util {
@@ -811,8 +811,8 @@ declare namespace com {
                 public getTypes(): javax.lang.model.util.Types
             }
             interface TaskListener {
-                public started(arg0: com.sun.source.util.TaskEvent): void
-                public finished(arg0: com.sun.source.util.TaskEvent): void
+                started(arg0: com.sun.source.util.TaskEvent): void
+                finished(arg0: com.sun.source.util.TaskEvent): void
             }
             class TaskEvent$Kind extends java.lang.Enum<com.sun.source.util.TaskEvent$Kind> {
                 public static PARSE: com.sun.source.util.TaskEvent$Kind
@@ -833,8 +833,8 @@ declare namespace com {
                 toString<T>(...args: any[]): any
             }
             interface Plugin {
-                public getName(): java.lang.String
-                public init(arg0: com.sun.source.util.JavacTask, ...arg1: java.lang.String[]): void
+                getName(): java.lang.String
+                init(arg0: com.sun.source.util.JavacTask, ...arg1: java.lang.String[]): void
             }
             class TreePath$1Result extends java.lang.Error {
                 static serialVersionUID: long
@@ -953,12 +953,12 @@ declare namespace com {
                 static access$100(arg0: com.sun.source.util.DocTreePath): com.sun.source.util.DocTreePath
             }
             interface DocSourcePositions extends com.sun.source.util.SourcePositions {
-                public getStartPosition(arg0: com.sun.source.tree.CompilationUnitTree, arg1: com.sun.source.doctree.DocCommentTree, arg2: com.sun.source.doctree.DocTree): long
-                public getEndPosition(arg0: com.sun.source.tree.CompilationUnitTree, arg1: com.sun.source.doctree.DocCommentTree, arg2: com.sun.source.doctree.DocTree): long
+                getStartPosition(arg0: com.sun.source.tree.CompilationUnitTree, arg1: com.sun.source.doctree.DocCommentTree, arg2: com.sun.source.doctree.DocTree): long
+                getEndPosition(arg0: com.sun.source.tree.CompilationUnitTree, arg1: com.sun.source.doctree.DocCommentTree, arg2: com.sun.source.doctree.DocTree): long
             }
             interface SourcePositions {
-                public getStartPosition(arg0: com.sun.source.tree.CompilationUnitTree, arg1: com.sun.source.tree.Tree): long
-                public getEndPosition(arg0: com.sun.source.tree.CompilationUnitTree, arg1: com.sun.source.tree.Tree): long
+                getStartPosition(arg0: com.sun.source.tree.CompilationUnitTree, arg1: com.sun.source.tree.Tree): long
+                getEndPosition(arg0: com.sun.source.tree.CompilationUnitTree, arg1: com.sun.source.tree.Tree): long
             }
             class SimpleTreeVisitor<R, P> implements com.sun.source.tree.TreeVisitor<R, P> {
                 protected DEFAULT_VALUE: R
@@ -1117,7 +1117,7 @@ declare namespace com {
                 public visitVersion(arg0: com.sun.source.doctree.VersionTree, arg1: P): R
                 public visitOther(arg0: com.sun.source.doctree.DocTree, arg1: P): R
             }
-
+            
          }
          namespace tree {
             class Tree$Kind extends java.lang.Enum<com.sun.source.tree.Tree$Kind> {
@@ -1227,8 +1227,8 @@ declare namespace com {
                 public asInterface(): java.lang.Class<com.sun.source.tree.Tree>
             }
             interface Tree {
-                public getKind(): com.sun.source.tree.Tree$Kind
-                public accept<R, D>(arg0: com.sun.source.tree.TreeVisitor<R, D>, arg1: D): R
+                getKind(): com.sun.source.tree.Tree$Kind
+                accept<R, D>(arg0: com.sun.source.tree.TreeVisitor<R, D>, arg1: D): R
             }
             class LambdaExpressionTree$BodyKind extends java.lang.Enum<com.sun.source.tree.LambdaExpressionTree$BodyKind> {
                 public static EXPRESSION: com.sun.source.tree.LambdaExpressionTree$BodyKind
@@ -1237,9 +1237,9 @@ declare namespace com {
                 valueOf<T>(...args: any[]): any
             }
             interface LambdaExpressionTree extends com.sun.source.tree.ExpressionTree {
-                public getParameters(): java.util.List<com.sun.source.tree.VariableTree>
-                public getBody(): com.sun.source.tree.Tree
-                public getBodyKind(): com.sun.source.tree.LambdaExpressionTree$BodyKind
+                getParameters(): java.util.List<com.sun.source.tree.VariableTree>
+                getBody(): com.sun.source.tree.Tree
+                getBodyKind(): com.sun.source.tree.LambdaExpressionTree$BodyKind
             }
             interface ExpressionTree extends com.sun.source.tree.Tree {
             }
@@ -1250,297 +1250,297 @@ declare namespace com {
                 valueOf<T>(...args: any[]): any
             }
             interface MemberReferenceTree extends com.sun.source.tree.ExpressionTree {
-                public getMode(): com.sun.source.tree.MemberReferenceTree$ReferenceMode
-                public getQualifierExpression(): com.sun.source.tree.ExpressionTree
-                public getName(): javax.lang.model.element.Name
-                public getTypeArguments(): java.util.List<com.sun.source.tree.ExpressionTree>
+                getMode(): com.sun.source.tree.MemberReferenceTree$ReferenceMode
+                getQualifierExpression(): com.sun.source.tree.ExpressionTree
+                getName(): javax.lang.model.element.Name
+                getTypeArguments(): java.util.List<com.sun.source.tree.ExpressionTree>
             }
             interface TreeVisitor<R, P> {
-                public visitAnnotatedType(arg0: com.sun.source.tree.AnnotatedTypeTree, arg1: P): R
-                public visitAnnotation(arg0: com.sun.source.tree.AnnotationTree, arg1: P): R
-                public visitMethodInvocation(arg0: com.sun.source.tree.MethodInvocationTree, arg1: P): R
-                public visitAssert(arg0: com.sun.source.tree.AssertTree, arg1: P): R
-                public visitAssignment(arg0: com.sun.source.tree.AssignmentTree, arg1: P): R
-                public visitCompoundAssignment(arg0: com.sun.source.tree.CompoundAssignmentTree, arg1: P): R
-                public visitBinary(arg0: com.sun.source.tree.BinaryTree, arg1: P): R
-                public visitBlock(arg0: com.sun.source.tree.BlockTree, arg1: P): R
-                public visitBreak(arg0: com.sun.source.tree.BreakTree, arg1: P): R
-                public visitCase(arg0: com.sun.source.tree.CaseTree, arg1: P): R
-                public visitCatch(arg0: com.sun.source.tree.CatchTree, arg1: P): R
-                public visitClass(arg0: com.sun.source.tree.ClassTree, arg1: P): R
-                public visitConditionalExpression(arg0: com.sun.source.tree.ConditionalExpressionTree, arg1: P): R
-                public visitContinue(arg0: com.sun.source.tree.ContinueTree, arg1: P): R
-                public visitDoWhileLoop(arg0: com.sun.source.tree.DoWhileLoopTree, arg1: P): R
-                public visitErroneous(arg0: com.sun.source.tree.ErroneousTree, arg1: P): R
-                public visitExpressionStatement(arg0: com.sun.source.tree.ExpressionStatementTree, arg1: P): R
-                public visitEnhancedForLoop(arg0: com.sun.source.tree.EnhancedForLoopTree, arg1: P): R
-                public visitForLoop(arg0: com.sun.source.tree.ForLoopTree, arg1: P): R
-                public visitIdentifier(arg0: com.sun.source.tree.IdentifierTree, arg1: P): R
-                public visitIf(arg0: com.sun.source.tree.IfTree, arg1: P): R
-                public visitImport(arg0: com.sun.source.tree.ImportTree, arg1: P): R
-                public visitArrayAccess(arg0: com.sun.source.tree.ArrayAccessTree, arg1: P): R
-                public visitLabeledStatement(arg0: com.sun.source.tree.LabeledStatementTree, arg1: P): R
-                public visitLiteral(arg0: com.sun.source.tree.LiteralTree, arg1: P): R
-                public visitMethod(arg0: com.sun.source.tree.MethodTree, arg1: P): R
-                public visitModifiers(arg0: com.sun.source.tree.ModifiersTree, arg1: P): R
-                public visitNewArray(arg0: com.sun.source.tree.NewArrayTree, arg1: P): R
-                public visitNewClass(arg0: com.sun.source.tree.NewClassTree, arg1: P): R
-                public visitLambdaExpression(arg0: com.sun.source.tree.LambdaExpressionTree, arg1: P): R
-                public visitParenthesized(arg0: com.sun.source.tree.ParenthesizedTree, arg1: P): R
-                public visitReturn(arg0: com.sun.source.tree.ReturnTree, arg1: P): R
-                public visitMemberSelect(arg0: com.sun.source.tree.MemberSelectTree, arg1: P): R
-                public visitMemberReference(arg0: com.sun.source.tree.MemberReferenceTree, arg1: P): R
-                public visitEmptyStatement(arg0: com.sun.source.tree.EmptyStatementTree, arg1: P): R
-                public visitSwitch(arg0: com.sun.source.tree.SwitchTree, arg1: P): R
-                public visitSynchronized(arg0: com.sun.source.tree.SynchronizedTree, arg1: P): R
-                public visitThrow(arg0: com.sun.source.tree.ThrowTree, arg1: P): R
-                public visitCompilationUnit(arg0: com.sun.source.tree.CompilationUnitTree, arg1: P): R
-                public visitTry(arg0: com.sun.source.tree.TryTree, arg1: P): R
-                public visitParameterizedType(arg0: com.sun.source.tree.ParameterizedTypeTree, arg1: P): R
-                public visitUnionType(arg0: com.sun.source.tree.UnionTypeTree, arg1: P): R
-                public visitIntersectionType(arg0: com.sun.source.tree.IntersectionTypeTree, arg1: P): R
-                public visitArrayType(arg0: com.sun.source.tree.ArrayTypeTree, arg1: P): R
-                public visitTypeCast(arg0: com.sun.source.tree.TypeCastTree, arg1: P): R
-                public visitPrimitiveType(arg0: com.sun.source.tree.PrimitiveTypeTree, arg1: P): R
-                public visitTypeParameter(arg0: com.sun.source.tree.TypeParameterTree, arg1: P): R
-                public visitInstanceOf(arg0: com.sun.source.tree.InstanceOfTree, arg1: P): R
-                public visitUnary(arg0: com.sun.source.tree.UnaryTree, arg1: P): R
-                public visitVariable(arg0: com.sun.source.tree.VariableTree, arg1: P): R
-                public visitWhileLoop(arg0: com.sun.source.tree.WhileLoopTree, arg1: P): R
-                public visitWildcard(arg0: com.sun.source.tree.WildcardTree, arg1: P): R
-                public visitOther(arg0: com.sun.source.tree.Tree, arg1: P): R
+                visitAnnotatedType(arg0: com.sun.source.tree.AnnotatedTypeTree, arg1: P): R
+                visitAnnotation(arg0: com.sun.source.tree.AnnotationTree, arg1: P): R
+                visitMethodInvocation(arg0: com.sun.source.tree.MethodInvocationTree, arg1: P): R
+                visitAssert(arg0: com.sun.source.tree.AssertTree, arg1: P): R
+                visitAssignment(arg0: com.sun.source.tree.AssignmentTree, arg1: P): R
+                visitCompoundAssignment(arg0: com.sun.source.tree.CompoundAssignmentTree, arg1: P): R
+                visitBinary(arg0: com.sun.source.tree.BinaryTree, arg1: P): R
+                visitBlock(arg0: com.sun.source.tree.BlockTree, arg1: P): R
+                visitBreak(arg0: com.sun.source.tree.BreakTree, arg1: P): R
+                visitCase(arg0: com.sun.source.tree.CaseTree, arg1: P): R
+                visitCatch(arg0: com.sun.source.tree.CatchTree, arg1: P): R
+                visitClass(arg0: com.sun.source.tree.ClassTree, arg1: P): R
+                visitConditionalExpression(arg0: com.sun.source.tree.ConditionalExpressionTree, arg1: P): R
+                visitContinue(arg0: com.sun.source.tree.ContinueTree, arg1: P): R
+                visitDoWhileLoop(arg0: com.sun.source.tree.DoWhileLoopTree, arg1: P): R
+                visitErroneous(arg0: com.sun.source.tree.ErroneousTree, arg1: P): R
+                visitExpressionStatement(arg0: com.sun.source.tree.ExpressionStatementTree, arg1: P): R
+                visitEnhancedForLoop(arg0: com.sun.source.tree.EnhancedForLoopTree, arg1: P): R
+                visitForLoop(arg0: com.sun.source.tree.ForLoopTree, arg1: P): R
+                visitIdentifier(arg0: com.sun.source.tree.IdentifierTree, arg1: P): R
+                visitIf(arg0: com.sun.source.tree.IfTree, arg1: P): R
+                visitImport(arg0: com.sun.source.tree.ImportTree, arg1: P): R
+                visitArrayAccess(arg0: com.sun.source.tree.ArrayAccessTree, arg1: P): R
+                visitLabeledStatement(arg0: com.sun.source.tree.LabeledStatementTree, arg1: P): R
+                visitLiteral(arg0: com.sun.source.tree.LiteralTree, arg1: P): R
+                visitMethod(arg0: com.sun.source.tree.MethodTree, arg1: P): R
+                visitModifiers(arg0: com.sun.source.tree.ModifiersTree, arg1: P): R
+                visitNewArray(arg0: com.sun.source.tree.NewArrayTree, arg1: P): R
+                visitNewClass(arg0: com.sun.source.tree.NewClassTree, arg1: P): R
+                visitLambdaExpression(arg0: com.sun.source.tree.LambdaExpressionTree, arg1: P): R
+                visitParenthesized(arg0: com.sun.source.tree.ParenthesizedTree, arg1: P): R
+                visitReturn(arg0: com.sun.source.tree.ReturnTree, arg1: P): R
+                visitMemberSelect(arg0: com.sun.source.tree.MemberSelectTree, arg1: P): R
+                visitMemberReference(arg0: com.sun.source.tree.MemberReferenceTree, arg1: P): R
+                visitEmptyStatement(arg0: com.sun.source.tree.EmptyStatementTree, arg1: P): R
+                visitSwitch(arg0: com.sun.source.tree.SwitchTree, arg1: P): R
+                visitSynchronized(arg0: com.sun.source.tree.SynchronizedTree, arg1: P): R
+                visitThrow(arg0: com.sun.source.tree.ThrowTree, arg1: P): R
+                visitCompilationUnit(arg0: com.sun.source.tree.CompilationUnitTree, arg1: P): R
+                visitTry(arg0: com.sun.source.tree.TryTree, arg1: P): R
+                visitParameterizedType(arg0: com.sun.source.tree.ParameterizedTypeTree, arg1: P): R
+                visitUnionType(arg0: com.sun.source.tree.UnionTypeTree, arg1: P): R
+                visitIntersectionType(arg0: com.sun.source.tree.IntersectionTypeTree, arg1: P): R
+                visitArrayType(arg0: com.sun.source.tree.ArrayTypeTree, arg1: P): R
+                visitTypeCast(arg0: com.sun.source.tree.TypeCastTree, arg1: P): R
+                visitPrimitiveType(arg0: com.sun.source.tree.PrimitiveTypeTree, arg1: P): R
+                visitTypeParameter(arg0: com.sun.source.tree.TypeParameterTree, arg1: P): R
+                visitInstanceOf(arg0: com.sun.source.tree.InstanceOfTree, arg1: P): R
+                visitUnary(arg0: com.sun.source.tree.UnaryTree, arg1: P): R
+                visitVariable(arg0: com.sun.source.tree.VariableTree, arg1: P): R
+                visitWhileLoop(arg0: com.sun.source.tree.WhileLoopTree, arg1: P): R
+                visitWildcard(arg0: com.sun.source.tree.WildcardTree, arg1: P): R
+                visitOther(arg0: com.sun.source.tree.Tree, arg1: P): R
             }
             interface VariableTree extends com.sun.source.tree.StatementTree {
-                public getModifiers(): com.sun.source.tree.ModifiersTree
-                public getName(): javax.lang.model.element.Name
-                public getNameExpression(): com.sun.source.tree.ExpressionTree
-                public getType(): com.sun.source.tree.Tree
-                public getInitializer(): com.sun.source.tree.ExpressionTree
+                getModifiers(): com.sun.source.tree.ModifiersTree
+                getName(): javax.lang.model.element.Name
+                getNameExpression(): com.sun.source.tree.ExpressionTree
+                getType(): com.sun.source.tree.Tree
+                getInitializer(): com.sun.source.tree.ExpressionTree
             }
             interface StatementTree extends com.sun.source.tree.Tree {
             }
             interface CompilationUnitTree extends com.sun.source.tree.Tree {
-                public getPackageAnnotations(): java.util.List<com.sun.source.tree.AnnotationTree>
-                public getPackageName(): com.sun.source.tree.ExpressionTree
-                public getImports(): java.util.List<com.sun.source.tree.ImportTree>
-                public getTypeDecls(): java.util.List<com.sun.source.tree.Tree>
-                public getSourceFile(): javax.tools.JavaFileObject
-                public getLineMap(): com.sun.source.tree.LineMap
+                getPackageAnnotations(): java.util.List<com.sun.source.tree.AnnotationTree>
+                getPackageName(): com.sun.source.tree.ExpressionTree
+                getImports(): java.util.List<com.sun.source.tree.ImportTree>
+                getTypeDecls(): java.util.List<com.sun.source.tree.Tree>
+                getSourceFile(): javax.tools.JavaFileObject
+                getLineMap(): com.sun.source.tree.LineMap
             }
             interface AnnotationTree extends com.sun.source.tree.ExpressionTree {
-                public getAnnotationType(): com.sun.source.tree.Tree
-                public getArguments(): java.util.List<com.sun.source.tree.ExpressionTree>
+                getAnnotationType(): com.sun.source.tree.Tree
+                getArguments(): java.util.List<com.sun.source.tree.ExpressionTree>
             }
             interface AnnotatedTypeTree extends com.sun.source.tree.ExpressionTree {
-                public getAnnotations(): java.util.List<com.sun.source.tree.AnnotationTree>
-                public getUnderlyingType(): com.sun.source.tree.ExpressionTree
+                getAnnotations(): java.util.List<com.sun.source.tree.AnnotationTree>
+                getUnderlyingType(): com.sun.source.tree.ExpressionTree
             }
             interface MethodInvocationTree extends com.sun.source.tree.ExpressionTree {
-                public getTypeArguments(): java.util.List<com.sun.source.tree.Tree>
-                public getMethodSelect(): com.sun.source.tree.ExpressionTree
-                public getArguments(): java.util.List<com.sun.source.tree.ExpressionTree>
+                getTypeArguments(): java.util.List<com.sun.source.tree.Tree>
+                getMethodSelect(): com.sun.source.tree.ExpressionTree
+                getArguments(): java.util.List<com.sun.source.tree.ExpressionTree>
             }
             interface AssertTree extends com.sun.source.tree.StatementTree {
-                public getCondition(): com.sun.source.tree.ExpressionTree
-                public getDetail(): com.sun.source.tree.ExpressionTree
+                getCondition(): com.sun.source.tree.ExpressionTree
+                getDetail(): com.sun.source.tree.ExpressionTree
             }
             interface AssignmentTree extends com.sun.source.tree.ExpressionTree {
-                public getVariable(): com.sun.source.tree.ExpressionTree
-                public getExpression(): com.sun.source.tree.ExpressionTree
+                getVariable(): com.sun.source.tree.ExpressionTree
+                getExpression(): com.sun.source.tree.ExpressionTree
             }
             interface CompoundAssignmentTree extends com.sun.source.tree.ExpressionTree {
-                public getVariable(): com.sun.source.tree.ExpressionTree
-                public getExpression(): com.sun.source.tree.ExpressionTree
+                getVariable(): com.sun.source.tree.ExpressionTree
+                getExpression(): com.sun.source.tree.ExpressionTree
             }
             interface BinaryTree extends com.sun.source.tree.ExpressionTree {
-                public getLeftOperand(): com.sun.source.tree.ExpressionTree
-                public getRightOperand(): com.sun.source.tree.ExpressionTree
+                getLeftOperand(): com.sun.source.tree.ExpressionTree
+                getRightOperand(): com.sun.source.tree.ExpressionTree
             }
             interface BlockTree extends com.sun.source.tree.StatementTree {
-                public isStatic(): boolean
-                public getStatements(): java.util.List<com.sun.source.tree.StatementTree>
+                isStatic(): boolean
+                getStatements(): java.util.List<com.sun.source.tree.StatementTree>
             }
             interface BreakTree extends com.sun.source.tree.StatementTree {
-                public getLabel(): javax.lang.model.element.Name
+                getLabel(): javax.lang.model.element.Name
             }
             interface CaseTree extends com.sun.source.tree.Tree {
-                public getExpression(): com.sun.source.tree.ExpressionTree
-                public getStatements(): java.util.List<com.sun.source.tree.StatementTree>
+                getExpression(): com.sun.source.tree.ExpressionTree
+                getStatements(): java.util.List<com.sun.source.tree.StatementTree>
             }
             interface CatchTree extends com.sun.source.tree.Tree {
-                public getParameter(): com.sun.source.tree.VariableTree
-                public getBlock(): com.sun.source.tree.BlockTree
+                getParameter(): com.sun.source.tree.VariableTree
+                getBlock(): com.sun.source.tree.BlockTree
             }
             interface ClassTree extends com.sun.source.tree.StatementTree {
-                public getModifiers(): com.sun.source.tree.ModifiersTree
-                public getSimpleName(): javax.lang.model.element.Name
-                public getTypeParameters(): java.util.List<com.sun.source.tree.TypeParameterTree>
-                public getExtendsClause(): com.sun.source.tree.Tree
-                public getImplementsClause(): java.util.List<com.sun.source.tree.Tree>
-                public getMembers(): java.util.List<com.sun.source.tree.Tree>
+                getModifiers(): com.sun.source.tree.ModifiersTree
+                getSimpleName(): javax.lang.model.element.Name
+                getTypeParameters(): java.util.List<com.sun.source.tree.TypeParameterTree>
+                getExtendsClause(): com.sun.source.tree.Tree
+                getImplementsClause(): java.util.List<com.sun.source.tree.Tree>
+                getMembers(): java.util.List<com.sun.source.tree.Tree>
             }
             interface ConditionalExpressionTree extends com.sun.source.tree.ExpressionTree {
-                public getCondition(): com.sun.source.tree.ExpressionTree
-                public getTrueExpression(): com.sun.source.tree.ExpressionTree
-                public getFalseExpression(): com.sun.source.tree.ExpressionTree
+                getCondition(): com.sun.source.tree.ExpressionTree
+                getTrueExpression(): com.sun.source.tree.ExpressionTree
+                getFalseExpression(): com.sun.source.tree.ExpressionTree
             }
             interface ContinueTree extends com.sun.source.tree.StatementTree {
-                public getLabel(): javax.lang.model.element.Name
+                getLabel(): javax.lang.model.element.Name
             }
             interface DoWhileLoopTree extends com.sun.source.tree.StatementTree {
-                public getCondition(): com.sun.source.tree.ExpressionTree
-                public getStatement(): com.sun.source.tree.StatementTree
+                getCondition(): com.sun.source.tree.ExpressionTree
+                getStatement(): com.sun.source.tree.StatementTree
             }
             interface ErroneousTree extends com.sun.source.tree.ExpressionTree {
-                public getErrorTrees(): java.util.List<com.sun.source.tree.Tree>
+                getErrorTrees(): java.util.List<com.sun.source.tree.Tree>
             }
             interface ExpressionStatementTree extends com.sun.source.tree.StatementTree {
-                public getExpression(): com.sun.source.tree.ExpressionTree
+                getExpression(): com.sun.source.tree.ExpressionTree
             }
             interface EnhancedForLoopTree extends com.sun.source.tree.StatementTree {
-                public getVariable(): com.sun.source.tree.VariableTree
-                public getExpression(): com.sun.source.tree.ExpressionTree
-                public getStatement(): com.sun.source.tree.StatementTree
+                getVariable(): com.sun.source.tree.VariableTree
+                getExpression(): com.sun.source.tree.ExpressionTree
+                getStatement(): com.sun.source.tree.StatementTree
             }
             interface ForLoopTree extends com.sun.source.tree.StatementTree {
-                public getInitializer(): java.util.List<com.sun.source.tree.StatementTree>
-                public getCondition(): com.sun.source.tree.ExpressionTree
-                public getUpdate(): java.util.List<com.sun.source.tree.ExpressionStatementTree>
-                public getStatement(): com.sun.source.tree.StatementTree
+                getInitializer(): java.util.List<com.sun.source.tree.StatementTree>
+                getCondition(): com.sun.source.tree.ExpressionTree
+                getUpdate(): java.util.List<com.sun.source.tree.ExpressionStatementTree>
+                getStatement(): com.sun.source.tree.StatementTree
             }
             interface IdentifierTree extends com.sun.source.tree.ExpressionTree {
-                public getName(): javax.lang.model.element.Name
+                getName(): javax.lang.model.element.Name
             }
             interface IfTree extends com.sun.source.tree.StatementTree {
-                public getCondition(): com.sun.source.tree.ExpressionTree
-                public getThenStatement(): com.sun.source.tree.StatementTree
-                public getElseStatement(): com.sun.source.tree.StatementTree
+                getCondition(): com.sun.source.tree.ExpressionTree
+                getThenStatement(): com.sun.source.tree.StatementTree
+                getElseStatement(): com.sun.source.tree.StatementTree
             }
             interface ImportTree extends com.sun.source.tree.Tree {
-                public isStatic(): boolean
-                public getQualifiedIdentifier(): com.sun.source.tree.Tree
+                isStatic(): boolean
+                getQualifiedIdentifier(): com.sun.source.tree.Tree
             }
             interface ArrayAccessTree extends com.sun.source.tree.ExpressionTree {
-                public getExpression(): com.sun.source.tree.ExpressionTree
-                public getIndex(): com.sun.source.tree.ExpressionTree
+                getExpression(): com.sun.source.tree.ExpressionTree
+                getIndex(): com.sun.source.tree.ExpressionTree
             }
             interface LabeledStatementTree extends com.sun.source.tree.StatementTree {
-                public getLabel(): javax.lang.model.element.Name
-                public getStatement(): com.sun.source.tree.StatementTree
+                getLabel(): javax.lang.model.element.Name
+                getStatement(): com.sun.source.tree.StatementTree
             }
             interface LiteralTree extends com.sun.source.tree.ExpressionTree {
-                public getValue(): java.lang.Object
+                getValue(): java.lang.Object
             }
             interface MethodTree extends com.sun.source.tree.Tree {
-                public getModifiers(): com.sun.source.tree.ModifiersTree
-                public getName(): javax.lang.model.element.Name
-                public getReturnType(): com.sun.source.tree.Tree
-                public getTypeParameters(): java.util.List<com.sun.source.tree.TypeParameterTree>
-                public getParameters(): java.util.List<com.sun.source.tree.VariableTree>
-                public getReceiverParameter(): com.sun.source.tree.VariableTree
-                public getThrows(): java.util.List<com.sun.source.tree.ExpressionTree>
-                public getBody(): com.sun.source.tree.BlockTree
-                public getDefaultValue(): com.sun.source.tree.Tree
+                getModifiers(): com.sun.source.tree.ModifiersTree
+                getName(): javax.lang.model.element.Name
+                getReturnType(): com.sun.source.tree.Tree
+                getTypeParameters(): java.util.List<com.sun.source.tree.TypeParameterTree>
+                getParameters(): java.util.List<com.sun.source.tree.VariableTree>
+                getReceiverParameter(): com.sun.source.tree.VariableTree
+                getThrows(): java.util.List<com.sun.source.tree.ExpressionTree>
+                getBody(): com.sun.source.tree.BlockTree
+                getDefaultValue(): com.sun.source.tree.Tree
             }
             interface ModifiersTree extends com.sun.source.tree.Tree {
-                public getFlags(): java.util.Set<javax.lang.model.element.Modifier>
-                public getAnnotations(): java.util.List<com.sun.source.tree.AnnotationTree>
+                getFlags(): java.util.Set<javax.lang.model.element.Modifier>
+                getAnnotations(): java.util.List<com.sun.source.tree.AnnotationTree>
             }
             interface NewArrayTree extends com.sun.source.tree.ExpressionTree {
-                public getType(): com.sun.source.tree.Tree
-                public getDimensions(): java.util.List<com.sun.source.tree.ExpressionTree>
-                public getInitializers(): java.util.List<com.sun.source.tree.ExpressionTree>
-                public getAnnotations(): java.util.List<com.sun.source.tree.AnnotationTree>
-                public getDimAnnotations(): java.util.List<any extends java.util.List<com.sun.source.tree.AnnotationTree>>
+                getType(): com.sun.source.tree.Tree
+                getDimensions(): java.util.List<com.sun.source.tree.ExpressionTree>
+                getInitializers(): java.util.List<com.sun.source.tree.ExpressionTree>
+                getAnnotations(): java.util.List<com.sun.source.tree.AnnotationTree>
+                getDimAnnotations(): java.util.List<java.util.List<com.sun.source.tree.AnnotationTree>>
             }
             interface NewClassTree extends com.sun.source.tree.ExpressionTree {
-                public getEnclosingExpression(): com.sun.source.tree.ExpressionTree
-                public getTypeArguments(): java.util.List<com.sun.source.tree.Tree>
-                public getIdentifier(): com.sun.source.tree.ExpressionTree
-                public getArguments(): java.util.List<com.sun.source.tree.ExpressionTree>
-                public getClassBody(): com.sun.source.tree.ClassTree
+                getEnclosingExpression(): com.sun.source.tree.ExpressionTree
+                getTypeArguments(): java.util.List<com.sun.source.tree.Tree>
+                getIdentifier(): com.sun.source.tree.ExpressionTree
+                getArguments(): java.util.List<com.sun.source.tree.ExpressionTree>
+                getClassBody(): com.sun.source.tree.ClassTree
             }
             interface ParenthesizedTree extends com.sun.source.tree.ExpressionTree {
-                public getExpression(): com.sun.source.tree.ExpressionTree
+                getExpression(): com.sun.source.tree.ExpressionTree
             }
             interface ReturnTree extends com.sun.source.tree.StatementTree {
-                public getExpression(): com.sun.source.tree.ExpressionTree
+                getExpression(): com.sun.source.tree.ExpressionTree
             }
             interface MemberSelectTree extends com.sun.source.tree.ExpressionTree {
-                public getExpression(): com.sun.source.tree.ExpressionTree
-                public getIdentifier(): javax.lang.model.element.Name
+                getExpression(): com.sun.source.tree.ExpressionTree
+                getIdentifier(): javax.lang.model.element.Name
             }
             interface EmptyStatementTree extends com.sun.source.tree.StatementTree {
             }
             interface SwitchTree extends com.sun.source.tree.StatementTree {
-                public getExpression(): com.sun.source.tree.ExpressionTree
-                public getCases(): java.util.List<com.sun.source.tree.CaseTree>
+                getExpression(): com.sun.source.tree.ExpressionTree
+                getCases(): java.util.List<com.sun.source.tree.CaseTree>
             }
             interface SynchronizedTree extends com.sun.source.tree.StatementTree {
-                public getExpression(): com.sun.source.tree.ExpressionTree
-                public getBlock(): com.sun.source.tree.BlockTree
+                getExpression(): com.sun.source.tree.ExpressionTree
+                getBlock(): com.sun.source.tree.BlockTree
             }
             interface ThrowTree extends com.sun.source.tree.StatementTree {
-                public getExpression(): com.sun.source.tree.ExpressionTree
+                getExpression(): com.sun.source.tree.ExpressionTree
             }
             interface TryTree extends com.sun.source.tree.StatementTree {
-                public getBlock(): com.sun.source.tree.BlockTree
-                public getCatches(): java.util.List<com.sun.source.tree.CatchTree>
-                public getFinallyBlock(): com.sun.source.tree.BlockTree
-                public getResources(): java.util.List<com.sun.source.tree.Tree>
+                getBlock(): com.sun.source.tree.BlockTree
+                getCatches(): java.util.List<com.sun.source.tree.CatchTree>
+                getFinallyBlock(): com.sun.source.tree.BlockTree
+                getResources(): java.util.List<com.sun.source.tree.Tree>
             }
             interface ParameterizedTypeTree extends com.sun.source.tree.Tree {
-                public getType(): com.sun.source.tree.Tree
-                public getTypeArguments(): java.util.List<com.sun.source.tree.Tree>
+                getType(): com.sun.source.tree.Tree
+                getTypeArguments(): java.util.List<com.sun.source.tree.Tree>
             }
             interface UnionTypeTree extends com.sun.source.tree.Tree {
-                public getTypeAlternatives(): java.util.List<com.sun.source.tree.Tree>
+                getTypeAlternatives(): java.util.List<com.sun.source.tree.Tree>
             }
             interface IntersectionTypeTree extends com.sun.source.tree.Tree {
-                public getBounds(): java.util.List<com.sun.source.tree.Tree>
+                getBounds(): java.util.List<com.sun.source.tree.Tree>
             }
             interface ArrayTypeTree extends com.sun.source.tree.Tree {
-                public getType(): com.sun.source.tree.Tree
+                getType(): com.sun.source.tree.Tree
             }
             interface TypeCastTree extends com.sun.source.tree.ExpressionTree {
-                public getType(): com.sun.source.tree.Tree
-                public getExpression(): com.sun.source.tree.ExpressionTree
+                getType(): com.sun.source.tree.Tree
+                getExpression(): com.sun.source.tree.ExpressionTree
             }
             interface PrimitiveTypeTree extends com.sun.source.tree.Tree {
-                public getPrimitiveTypeKind(): javax.lang.model.type.TypeKind
+                getPrimitiveTypeKind(): javax.lang.model.type.TypeKind
             }
             interface TypeParameterTree extends com.sun.source.tree.Tree {
-                public getName(): javax.lang.model.element.Name
-                public getBounds(): java.util.List<com.sun.source.tree.Tree>
-                public getAnnotations(): java.util.List<com.sun.source.tree.AnnotationTree>
+                getName(): javax.lang.model.element.Name
+                getBounds(): java.util.List<com.sun.source.tree.Tree>
+                getAnnotations(): java.util.List<com.sun.source.tree.AnnotationTree>
             }
             interface InstanceOfTree extends com.sun.source.tree.ExpressionTree {
-                public getExpression(): com.sun.source.tree.ExpressionTree
-                public getType(): com.sun.source.tree.Tree
+                getExpression(): com.sun.source.tree.ExpressionTree
+                getType(): com.sun.source.tree.Tree
             }
             interface UnaryTree extends com.sun.source.tree.ExpressionTree {
-                public getExpression(): com.sun.source.tree.ExpressionTree
+                getExpression(): com.sun.source.tree.ExpressionTree
             }
             interface WhileLoopTree extends com.sun.source.tree.StatementTree {
-                public getCondition(): com.sun.source.tree.ExpressionTree
-                public getStatement(): com.sun.source.tree.StatementTree
+                getCondition(): com.sun.source.tree.ExpressionTree
+                getStatement(): com.sun.source.tree.StatementTree
             }
             interface WildcardTree extends com.sun.source.tree.Tree {
-                public getBound(): com.sun.source.tree.Tree
+                getBound(): com.sun.source.tree.Tree
             }
             interface LineMap {
-                public getStartPosition(arg0: long): long
-                public getPosition(arg0: long, arg1: long): long
-                public getLineNumber(arg0: long): long
-                public getColumnNumber(arg0: long): long
+                getStartPosition(arg0: long): long
+                getPosition(arg0: long, arg1: long): long
+                getLineNumber(arg0: long): long
+                getColumnNumber(arg0: long): long
             }
             interface Scope {
-                public getEnclosingScope(): com.sun.source.tree.Scope
-                public getEnclosingClass(): javax.lang.model.element.TypeElement
-                public getEnclosingMethod(): javax.lang.model.element.ExecutableElement
-                public getLocalElements(): java.lang.Iterable<javax.lang.model.element.Element>
+                getEnclosingScope(): com.sun.source.tree.Scope
+                getEnclosingClass(): javax.lang.model.element.TypeElement
+                getEnclosingMethod(): javax.lang.model.element.ExecutableElement
+                getLocalElements(): java.lang.Iterable<javax.lang.model.element.Element>
             }
-
+            
          }
          namespace doctree {
             class DocTree$Kind extends java.lang.Enum<com.sun.source.doctree.DocTree$Kind> {
@@ -1581,44 +1581,44 @@ declare namespace com {
                 valueOf<T>(...args: any[]): any
             }
             interface DocTree {
-                public getKind(): com.sun.source.doctree.DocTree$Kind
-                public accept<R, D>(arg0: com.sun.source.doctree.DocTreeVisitor<R, D>, arg1: D): R
+                getKind(): com.sun.source.doctree.DocTree$Kind
+                accept<R, D>(arg0: com.sun.source.doctree.DocTreeVisitor<R, D>, arg1: D): R
             }
             interface DocCommentTree extends com.sun.source.doctree.DocTree {
-                public getFirstSentence(): java.util.List<com.sun.source.doctree.DocTree>
-                public getBody(): java.util.List<com.sun.source.doctree.DocTree>
-                public getBlockTags(): java.util.List<com.sun.source.doctree.DocTree>
+                getFirstSentence(): java.util.List<com.sun.source.doctree.DocTree>
+                getBody(): java.util.List<com.sun.source.doctree.DocTree>
+                getBlockTags(): java.util.List<com.sun.source.doctree.DocTree>
             }
             interface DocTreeVisitor<R, P> {
-                public visitAttribute(arg0: com.sun.source.doctree.AttributeTree, arg1: P): R
-                public visitAuthor(arg0: com.sun.source.doctree.AuthorTree, arg1: P): R
-                public visitComment(arg0: com.sun.source.doctree.CommentTree, arg1: P): R
-                public visitDeprecated(arg0: com.sun.source.doctree.DeprecatedTree, arg1: P): R
-                public visitDocComment(arg0: com.sun.source.doctree.DocCommentTree, arg1: P): R
-                public visitDocRoot(arg0: com.sun.source.doctree.DocRootTree, arg1: P): R
-                public visitEndElement(arg0: com.sun.source.doctree.EndElementTree, arg1: P): R
-                public visitEntity(arg0: com.sun.source.doctree.EntityTree, arg1: P): R
-                public visitErroneous(arg0: com.sun.source.doctree.ErroneousTree, arg1: P): R
-                public visitIdentifier(arg0: com.sun.source.doctree.IdentifierTree, arg1: P): R
-                public visitInheritDoc(arg0: com.sun.source.doctree.InheritDocTree, arg1: P): R
-                public visitLink(arg0: com.sun.source.doctree.LinkTree, arg1: P): R
-                public visitLiteral(arg0: com.sun.source.doctree.LiteralTree, arg1: P): R
-                public visitParam(arg0: com.sun.source.doctree.ParamTree, arg1: P): R
-                public visitReference(arg0: com.sun.source.doctree.ReferenceTree, arg1: P): R
-                public visitReturn(arg0: com.sun.source.doctree.ReturnTree, arg1: P): R
-                public visitSee(arg0: com.sun.source.doctree.SeeTree, arg1: P): R
-                public visitSerial(arg0: com.sun.source.doctree.SerialTree, arg1: P): R
-                public visitSerialData(arg0: com.sun.source.doctree.SerialDataTree, arg1: P): R
-                public visitSerialField(arg0: com.sun.source.doctree.SerialFieldTree, arg1: P): R
-                public visitSince(arg0: com.sun.source.doctree.SinceTree, arg1: P): R
-                public visitStartElement(arg0: com.sun.source.doctree.StartElementTree, arg1: P): R
-                public visitText(arg0: com.sun.source.doctree.TextTree, arg1: P): R
-                public visitThrows(arg0: com.sun.source.doctree.ThrowsTree, arg1: P): R
-                public visitUnknownBlockTag(arg0: com.sun.source.doctree.UnknownBlockTagTree, arg1: P): R
-                public visitUnknownInlineTag(arg0: com.sun.source.doctree.UnknownInlineTagTree, arg1: P): R
-                public visitValue(arg0: com.sun.source.doctree.ValueTree, arg1: P): R
-                public visitVersion(arg0: com.sun.source.doctree.VersionTree, arg1: P): R
-                public visitOther(arg0: com.sun.source.doctree.DocTree, arg1: P): R
+                visitAttribute(arg0: com.sun.source.doctree.AttributeTree, arg1: P): R
+                visitAuthor(arg0: com.sun.source.doctree.AuthorTree, arg1: P): R
+                visitComment(arg0: com.sun.source.doctree.CommentTree, arg1: P): R
+                visitDeprecated(arg0: com.sun.source.doctree.DeprecatedTree, arg1: P): R
+                visitDocComment(arg0: com.sun.source.doctree.DocCommentTree, arg1: P): R
+                visitDocRoot(arg0: com.sun.source.doctree.DocRootTree, arg1: P): R
+                visitEndElement(arg0: com.sun.source.doctree.EndElementTree, arg1: P): R
+                visitEntity(arg0: com.sun.source.doctree.EntityTree, arg1: P): R
+                visitErroneous(arg0: com.sun.source.doctree.ErroneousTree, arg1: P): R
+                visitIdentifier(arg0: com.sun.source.doctree.IdentifierTree, arg1: P): R
+                visitInheritDoc(arg0: com.sun.source.doctree.InheritDocTree, arg1: P): R
+                visitLink(arg0: com.sun.source.doctree.LinkTree, arg1: P): R
+                visitLiteral(arg0: com.sun.source.doctree.LiteralTree, arg1: P): R
+                visitParam(arg0: com.sun.source.doctree.ParamTree, arg1: P): R
+                visitReference(arg0: com.sun.source.doctree.ReferenceTree, arg1: P): R
+                visitReturn(arg0: com.sun.source.doctree.ReturnTree, arg1: P): R
+                visitSee(arg0: com.sun.source.doctree.SeeTree, arg1: P): R
+                visitSerial(arg0: com.sun.source.doctree.SerialTree, arg1: P): R
+                visitSerialData(arg0: com.sun.source.doctree.SerialDataTree, arg1: P): R
+                visitSerialField(arg0: com.sun.source.doctree.SerialFieldTree, arg1: P): R
+                visitSince(arg0: com.sun.source.doctree.SinceTree, arg1: P): R
+                visitStartElement(arg0: com.sun.source.doctree.StartElementTree, arg1: P): R
+                visitText(arg0: com.sun.source.doctree.TextTree, arg1: P): R
+                visitThrows(arg0: com.sun.source.doctree.ThrowsTree, arg1: P): R
+                visitUnknownBlockTag(arg0: com.sun.source.doctree.UnknownBlockTagTree, arg1: P): R
+                visitUnknownInlineTag(arg0: com.sun.source.doctree.UnknownInlineTagTree, arg1: P): R
+                visitValue(arg0: com.sun.source.doctree.ValueTree, arg1: P): R
+                visitVersion(arg0: com.sun.source.doctree.VersionTree, arg1: P): R
+                visitOther(arg0: com.sun.source.doctree.DocTree, arg1: P): R
             }
             class AttributeTree$ValueKind extends java.lang.Enum<com.sun.source.doctree.AttributeTree$ValueKind> {
                 public static EMPTY: com.sun.source.doctree.AttributeTree$ValueKind
@@ -1629,103 +1629,103 @@ declare namespace com {
                 valueOf<T>(...args: any[]): any
             }
             interface AttributeTree extends com.sun.source.doctree.DocTree {
-                public getName(): javax.lang.model.element.Name
-                public getValueKind(): com.sun.source.doctree.AttributeTree$ValueKind
-                public getValue(): java.util.List<com.sun.source.doctree.DocTree>
+                getName(): javax.lang.model.element.Name
+                getValueKind(): com.sun.source.doctree.AttributeTree$ValueKind
+                getValue(): java.util.List<com.sun.source.doctree.DocTree>
             }
             interface AuthorTree extends com.sun.source.doctree.BlockTagTree {
-                public getName(): java.util.List<com.sun.source.doctree.DocTree>
+                getName(): java.util.List<com.sun.source.doctree.DocTree>
             }
             interface BlockTagTree extends com.sun.source.doctree.DocTree {
-                public getTagName(): java.lang.String
+                getTagName(): java.lang.String
             }
             interface CommentTree extends com.sun.source.doctree.DocTree {
-                public getBody(): java.lang.String
+                getBody(): java.lang.String
             }
             interface DeprecatedTree extends com.sun.source.doctree.BlockTagTree {
-                public getBody(): java.util.List<com.sun.source.doctree.DocTree>
+                getBody(): java.util.List<com.sun.source.doctree.DocTree>
             }
             interface DocRootTree extends com.sun.source.doctree.InlineTagTree {
             }
             interface InlineTagTree extends com.sun.source.doctree.DocTree {
-                public getTagName(): java.lang.String
+                getTagName(): java.lang.String
             }
             interface EndElementTree extends com.sun.source.doctree.DocTree {
-                public getName(): javax.lang.model.element.Name
+                getName(): javax.lang.model.element.Name
             }
             interface EntityTree extends com.sun.source.doctree.DocTree {
-                public getName(): javax.lang.model.element.Name
+                getName(): javax.lang.model.element.Name
             }
             interface ErroneousTree extends com.sun.source.doctree.TextTree {
-                public getDiagnostic(): javax.tools.Diagnostic<javax.tools.JavaFileObject>
+                getDiagnostic(): javax.tools.Diagnostic<javax.tools.JavaFileObject>
             }
             interface TextTree extends com.sun.source.doctree.DocTree {
-                public getBody(): java.lang.String
+                getBody(): java.lang.String
             }
             interface IdentifierTree extends com.sun.source.doctree.DocTree {
-                public getName(): javax.lang.model.element.Name
+                getName(): javax.lang.model.element.Name
             }
             interface InheritDocTree extends com.sun.source.doctree.InlineTagTree {
             }
             interface LinkTree extends com.sun.source.doctree.InlineTagTree {
-                public getReference(): com.sun.source.doctree.ReferenceTree
-                public getLabel(): java.util.List<com.sun.source.doctree.DocTree>
+                getReference(): com.sun.source.doctree.ReferenceTree
+                getLabel(): java.util.List<com.sun.source.doctree.DocTree>
             }
             interface LiteralTree extends com.sun.source.doctree.InlineTagTree {
-                public getBody(): com.sun.source.doctree.TextTree
+                getBody(): com.sun.source.doctree.TextTree
             }
             interface ParamTree extends com.sun.source.doctree.BlockTagTree {
-                public isTypeParameter(): boolean
-                public getName(): com.sun.source.doctree.IdentifierTree
-                public getDescription(): java.util.List<com.sun.source.doctree.DocTree>
+                isTypeParameter(): boolean
+                getName(): com.sun.source.doctree.IdentifierTree
+                getDescription(): java.util.List<com.sun.source.doctree.DocTree>
             }
             interface ReferenceTree extends com.sun.source.doctree.DocTree {
-                public getSignature(): java.lang.String
+                getSignature(): java.lang.String
             }
             interface ReturnTree extends com.sun.source.doctree.BlockTagTree {
-                public getDescription(): java.util.List<com.sun.source.doctree.DocTree>
+                getDescription(): java.util.List<com.sun.source.doctree.DocTree>
             }
             interface SeeTree extends com.sun.source.doctree.BlockTagTree {
-                public getReference(): java.util.List<com.sun.source.doctree.DocTree>
+                getReference(): java.util.List<com.sun.source.doctree.DocTree>
             }
             interface SerialTree extends com.sun.source.doctree.BlockTagTree {
-                public getDescription(): java.util.List<com.sun.source.doctree.DocTree>
+                getDescription(): java.util.List<com.sun.source.doctree.DocTree>
             }
             interface SerialDataTree extends com.sun.source.doctree.BlockTagTree {
-                public getDescription(): java.util.List<com.sun.source.doctree.DocTree>
+                getDescription(): java.util.List<com.sun.source.doctree.DocTree>
             }
             interface SerialFieldTree extends com.sun.source.doctree.BlockTagTree {
-                public getName(): com.sun.source.doctree.IdentifierTree
-                public getType(): com.sun.source.doctree.ReferenceTree
-                public getDescription(): java.util.List<com.sun.source.doctree.DocTree>
+                getName(): com.sun.source.doctree.IdentifierTree
+                getType(): com.sun.source.doctree.ReferenceTree
+                getDescription(): java.util.List<com.sun.source.doctree.DocTree>
             }
             interface SinceTree extends com.sun.source.doctree.BlockTagTree {
-                public getBody(): java.util.List<com.sun.source.doctree.DocTree>
+                getBody(): java.util.List<com.sun.source.doctree.DocTree>
             }
             interface StartElementTree extends com.sun.source.doctree.DocTree {
-                public getName(): javax.lang.model.element.Name
-                public getAttributes(): java.util.List<com.sun.source.doctree.DocTree>
-                public isSelfClosing(): boolean
+                getName(): javax.lang.model.element.Name
+                getAttributes(): java.util.List<com.sun.source.doctree.DocTree>
+                isSelfClosing(): boolean
             }
             interface ThrowsTree extends com.sun.source.doctree.BlockTagTree {
-                public getExceptionName(): com.sun.source.doctree.ReferenceTree
-                public getDescription(): java.util.List<com.sun.source.doctree.DocTree>
+                getExceptionName(): com.sun.source.doctree.ReferenceTree
+                getDescription(): java.util.List<com.sun.source.doctree.DocTree>
             }
             interface UnknownBlockTagTree extends com.sun.source.doctree.BlockTagTree {
-                public getContent(): java.util.List<com.sun.source.doctree.DocTree>
+                getContent(): java.util.List<com.sun.source.doctree.DocTree>
             }
             interface UnknownInlineTagTree extends com.sun.source.doctree.InlineTagTree {
-                public getContent(): java.util.List<com.sun.source.doctree.DocTree>
+                getContent(): java.util.List<com.sun.source.doctree.DocTree>
             }
             interface ValueTree extends com.sun.source.doctree.InlineTagTree {
-                public getReference(): com.sun.source.doctree.ReferenceTree
+                getReference(): com.sun.source.doctree.ReferenceTree
             }
             interface VersionTree extends com.sun.source.doctree.BlockTagTree {
-                public getBody(): java.util.List<com.sun.source.doctree.DocTree>
+                getBody(): java.util.List<com.sun.source.doctree.DocTree>
             }
-
+            
          }
-
+         
       }
       namespace javadoc {
          interface DocErrorReporter {
@@ -1734,216 +1734,216 @@ declare namespace com {
              printNotice<T>(...args: any[]): any
          }
          interface Doc extends java.lang.Comparable<java.lang.Object> {
-             public commentText(): java.lang.String
+             commentText(): java.lang.String
              tags<T>(...args: any[]): any
-             public seeTags(): com.sun.javadoc.SeeTag[]
-             public inlineTags(): com.sun.javadoc.Tag[]
-             public firstSentenceTags(): com.sun.javadoc.Tag[]
-             public getRawCommentText(): java.lang.String
-             public setRawCommentText(arg0: java.lang.String): void
-             public name(): java.lang.String
-             public compareTo(arg0: java.lang.Object): int
-             public isField(): boolean
-             public isEnumConstant(): boolean
-             public isConstructor(): boolean
-             public isMethod(): boolean
-             public isAnnotationTypeElement(): boolean
-             public isInterface(): boolean
-             public isException(): boolean
-             public isError(): boolean
-             public isEnum(): boolean
-             public isAnnotationType(): boolean
-             public isOrdinaryClass(): boolean
-             public isClass(): boolean
-             public isIncluded(): boolean
-             public position(): com.sun.javadoc.SourcePosition
+             seeTags(): com.sun.javadoc.SeeTag[]
+             inlineTags(): com.sun.javadoc.Tag[]
+             firstSentenceTags(): com.sun.javadoc.Tag[]
+             getRawCommentText(): java.lang.String
+             setRawCommentText(arg0: java.lang.String): void
+             name(): java.lang.String
+             compareTo(arg0: java.lang.Object): int
+             isField(): boolean
+             isEnumConstant(): boolean
+             isConstructor(): boolean
+             isMethod(): boolean
+             isAnnotationTypeElement(): boolean
+             isInterface(): boolean
+             isException(): boolean
+             isError(): boolean
+             isEnum(): boolean
+             isAnnotationType(): boolean
+             isOrdinaryClass(): boolean
+             isClass(): boolean
+             isIncluded(): boolean
+             position(): com.sun.javadoc.SourcePosition
          }
          interface ProgramElementDoc extends com.sun.javadoc.Doc {
-             public containingClass(): com.sun.javadoc.ClassDoc
-             public containingPackage(): com.sun.javadoc.PackageDoc
-             public qualifiedName(): java.lang.String
-             public modifierSpecifier(): int
-             public modifiers(): java.lang.String
-             public annotations(): com.sun.javadoc.AnnotationDesc[]
-             public isPublic(): boolean
-             public isProtected(): boolean
-             public isPrivate(): boolean
-             public isPackagePrivate(): boolean
-             public isStatic(): boolean
-             public isFinal(): boolean
+             containingClass(): com.sun.javadoc.ClassDoc
+             containingPackage(): com.sun.javadoc.PackageDoc
+             qualifiedName(): java.lang.String
+             modifierSpecifier(): int
+             modifiers(): java.lang.String
+             annotations(): com.sun.javadoc.AnnotationDesc[]
+             isPublic(): boolean
+             isProtected(): boolean
+             isPrivate(): boolean
+             isPackagePrivate(): boolean
+             isStatic(): boolean
+             isFinal(): boolean
          }
          interface ClassDoc extends com.sun.javadoc.ProgramElementDoc , com.sun.javadoc.Type {
-             public isAbstract(): boolean
-             public isSerializable(): boolean
-             public isExternalizable(): boolean
-             public serializationMethods(): com.sun.javadoc.MethodDoc[]
-             public serializableFields(): com.sun.javadoc.FieldDoc[]
-             public definesSerializableFields(): boolean
-             public superclass(): com.sun.javadoc.ClassDoc
-             public superclassType(): com.sun.javadoc.Type
-             public subclassOf(arg0: com.sun.javadoc.ClassDoc): boolean
-             public interfaces(): com.sun.javadoc.ClassDoc[]
-             public interfaceTypes(): com.sun.javadoc.Type[]
-             public typeParameters(): com.sun.javadoc.TypeVariable[]
-             public typeParamTags(): com.sun.javadoc.ParamTag[]
+             isAbstract(): boolean
+             isSerializable(): boolean
+             isExternalizable(): boolean
+             serializationMethods(): com.sun.javadoc.MethodDoc[]
+             serializableFields(): com.sun.javadoc.FieldDoc[]
+             definesSerializableFields(): boolean
+             superclass(): com.sun.javadoc.ClassDoc
+             superclassType(): com.sun.javadoc.Type
+             subclassOf(arg0: com.sun.javadoc.ClassDoc): boolean
+             interfaces(): com.sun.javadoc.ClassDoc[]
+             interfaceTypes(): com.sun.javadoc.Type[]
+             typeParameters(): com.sun.javadoc.TypeVariable[]
+             typeParamTags(): com.sun.javadoc.ParamTag[]
              fields<T>(...args: any[]): any
-             public enumConstants(): com.sun.javadoc.FieldDoc[]
+             enumConstants(): com.sun.javadoc.FieldDoc[]
              methods<T>(...args: any[]): any
              constructors<T>(...args: any[]): any
              innerClasses<T>(...args: any[]): any
-             public findClass(arg0: java.lang.String): com.sun.javadoc.ClassDoc
-             public importedClasses(): com.sun.javadoc.ClassDoc[]
-             public importedPackages(): com.sun.javadoc.PackageDoc[]
+             findClass(arg0: java.lang.String): com.sun.javadoc.ClassDoc
+             importedClasses(): com.sun.javadoc.ClassDoc[]
+             importedPackages(): com.sun.javadoc.PackageDoc[]
          }
          interface Type {
-             public typeName(): java.lang.String
-             public qualifiedTypeName(): java.lang.String
-             public simpleTypeName(): java.lang.String
-             public dimension(): java.lang.String
+             typeName(): java.lang.String
+             qualifiedTypeName(): java.lang.String
+             simpleTypeName(): java.lang.String
+             dimension(): java.lang.String
              toString<T>(...args: any[]): any
-             public isPrimitive(): boolean
-             public asClassDoc(): com.sun.javadoc.ClassDoc
-             public asParameterizedType(): com.sun.javadoc.ParameterizedType
-             public asTypeVariable(): com.sun.javadoc.TypeVariable
-             public asWildcardType(): com.sun.javadoc.WildcardType
-             public asAnnotatedType(): com.sun.javadoc.AnnotatedType
-             public asAnnotationTypeDoc(): com.sun.javadoc.AnnotationTypeDoc
-             public getElementType(): com.sun.javadoc.Type
+             isPrimitive(): boolean
+             asClassDoc(): com.sun.javadoc.ClassDoc
+             asParameterizedType(): com.sun.javadoc.ParameterizedType
+             asTypeVariable(): com.sun.javadoc.TypeVariable
+             asWildcardType(): com.sun.javadoc.WildcardType
+             asAnnotatedType(): com.sun.javadoc.AnnotatedType
+             asAnnotationTypeDoc(): com.sun.javadoc.AnnotationTypeDoc
+             getElementType(): com.sun.javadoc.Type
          }
          interface PackageDoc extends com.sun.javadoc.Doc {
              allClasses<T>(...args: any[]): any
-             public ordinaryClasses(): com.sun.javadoc.ClassDoc[]
-             public exceptions(): com.sun.javadoc.ClassDoc[]
-             public errors(): com.sun.javadoc.ClassDoc[]
-             public enums(): com.sun.javadoc.ClassDoc[]
-             public interfaces(): com.sun.javadoc.ClassDoc[]
-             public annotationTypes(): com.sun.javadoc.AnnotationTypeDoc[]
-             public annotations(): com.sun.javadoc.AnnotationDesc[]
-             public findClass(arg0: java.lang.String): com.sun.javadoc.ClassDoc
+             ordinaryClasses(): com.sun.javadoc.ClassDoc[]
+             exceptions(): com.sun.javadoc.ClassDoc[]
+             errors(): com.sun.javadoc.ClassDoc[]
+             enums(): com.sun.javadoc.ClassDoc[]
+             interfaces(): com.sun.javadoc.ClassDoc[]
+             annotationTypes(): com.sun.javadoc.AnnotationTypeDoc[]
+             annotations(): com.sun.javadoc.AnnotationDesc[]
+             findClass(arg0: java.lang.String): com.sun.javadoc.ClassDoc
          }
          interface SourcePosition {
-             public file(): java.io.File
-             public line(): int
-             public column(): int
+             file(): java.io.File
+             line(): int
+             column(): int
              toString<T>(...args: any[]): any
          }
          interface MemberDoc extends com.sun.javadoc.ProgramElementDoc {
-             public isSynthetic(): boolean
+             isSynthetic(): boolean
          }
          interface FieldDoc extends com.sun.javadoc.MemberDoc {
-             public type(): com.sun.javadoc.Type
-             public isTransient(): boolean
-             public isVolatile(): boolean
-             public serialFieldTags(): com.sun.javadoc.SerialFieldTag[]
-             public constantValue(): java.lang.Object
-             public constantValueExpression(): java.lang.String
+             type(): com.sun.javadoc.Type
+             isTransient(): boolean
+             isVolatile(): boolean
+             serialFieldTags(): com.sun.javadoc.SerialFieldTag[]
+             constantValue(): java.lang.Object
+             constantValueExpression(): java.lang.String
          }
          interface ExecutableMemberDoc extends com.sun.javadoc.MemberDoc {
-             public thrownExceptions(): com.sun.javadoc.ClassDoc[]
-             public thrownExceptionTypes(): com.sun.javadoc.Type[]
-             public isNative(): boolean
-             public isSynchronized(): boolean
-             public isVarArgs(): boolean
-             public parameters(): com.sun.javadoc.Parameter[]
-             public receiverType(): com.sun.javadoc.Type
-             public throwsTags(): com.sun.javadoc.ThrowsTag[]
-             public paramTags(): com.sun.javadoc.ParamTag[]
-             public typeParamTags(): com.sun.javadoc.ParamTag[]
-             public signature(): java.lang.String
-             public flatSignature(): java.lang.String
-             public typeParameters(): com.sun.javadoc.TypeVariable[]
+             thrownExceptions(): com.sun.javadoc.ClassDoc[]
+             thrownExceptionTypes(): com.sun.javadoc.Type[]
+             isNative(): boolean
+             isSynchronized(): boolean
+             isVarArgs(): boolean
+             parameters(): com.sun.javadoc.Parameter[]
+             receiverType(): com.sun.javadoc.Type
+             throwsTags(): com.sun.javadoc.ThrowsTag[]
+             paramTags(): com.sun.javadoc.ParamTag[]
+             typeParamTags(): com.sun.javadoc.ParamTag[]
+             signature(): java.lang.String
+             flatSignature(): java.lang.String
+             typeParameters(): com.sun.javadoc.TypeVariable[]
          }
          interface MethodDoc extends com.sun.javadoc.ExecutableMemberDoc {
-             public isAbstract(): boolean
-             public isDefault(): boolean
-             public returnType(): com.sun.javadoc.Type
-             public overriddenClass(): com.sun.javadoc.ClassDoc
-             public overriddenType(): com.sun.javadoc.Type
-             public overriddenMethod(): com.sun.javadoc.MethodDoc
-             public overrides(arg0: com.sun.javadoc.MethodDoc): boolean
+             isAbstract(): boolean
+             isDefault(): boolean
+             returnType(): com.sun.javadoc.Type
+             overriddenClass(): com.sun.javadoc.ClassDoc
+             overriddenType(): com.sun.javadoc.Type
+             overriddenMethod(): com.sun.javadoc.MethodDoc
+             overrides(arg0: com.sun.javadoc.MethodDoc): boolean
          }
          interface ConstructorDoc extends com.sun.javadoc.ExecutableMemberDoc {
          }
          interface AnnotationTypeElementDoc extends com.sun.javadoc.MethodDoc {
-             public defaultValue(): com.sun.javadoc.AnnotationValue
+             defaultValue(): com.sun.javadoc.AnnotationValue
          }
          interface ParameterizedType extends com.sun.javadoc.Type {
-             public asClassDoc(): com.sun.javadoc.ClassDoc
-             public typeArguments(): com.sun.javadoc.Type[]
-             public superclassType(): com.sun.javadoc.Type
-             public interfaceTypes(): com.sun.javadoc.Type[]
-             public containingType(): com.sun.javadoc.Type
+             asClassDoc(): com.sun.javadoc.ClassDoc
+             typeArguments(): com.sun.javadoc.Type[]
+             superclassType(): com.sun.javadoc.Type
+             interfaceTypes(): com.sun.javadoc.Type[]
+             containingType(): com.sun.javadoc.Type
          }
          interface TypeVariable extends com.sun.javadoc.Type {
-             public bounds(): com.sun.javadoc.Type[]
-             public owner(): com.sun.javadoc.ProgramElementDoc
-             public annotations(): com.sun.javadoc.AnnotationDesc[]
+             bounds(): com.sun.javadoc.Type[]
+             owner(): com.sun.javadoc.ProgramElementDoc
+             annotations(): com.sun.javadoc.AnnotationDesc[]
          }
          interface ParamTag extends com.sun.javadoc.Tag {
-             public parameterName(): java.lang.String
-             public parameterComment(): java.lang.String
-             public isTypeParameter(): boolean
+             parameterName(): java.lang.String
+             parameterComment(): java.lang.String
+             isTypeParameter(): boolean
          }
          interface Tag {
-             public name(): java.lang.String
-             public holder(): com.sun.javadoc.Doc
-             public kind(): java.lang.String
-             public text(): java.lang.String
+             name(): java.lang.String
+             holder(): com.sun.javadoc.Doc
+             kind(): java.lang.String
+             text(): java.lang.String
              toString<T>(...args: any[]): any
-             public inlineTags(): com.sun.javadoc.Tag[]
-             public firstSentenceTags(): com.sun.javadoc.Tag[]
-             public position(): com.sun.javadoc.SourcePosition
+             inlineTags(): com.sun.javadoc.Tag[]
+             firstSentenceTags(): com.sun.javadoc.Tag[]
+             position(): com.sun.javadoc.SourcePosition
          }
          interface AnnotationTypeDoc extends com.sun.javadoc.ClassDoc {
-             public elements(): com.sun.javadoc.AnnotationTypeElementDoc[]
+             elements(): com.sun.javadoc.AnnotationTypeElementDoc[]
          }
          interface WildcardType extends com.sun.javadoc.Type {
-             public extendsBounds(): com.sun.javadoc.Type[]
-             public superBounds(): com.sun.javadoc.Type[]
+             extendsBounds(): com.sun.javadoc.Type[]
+             superBounds(): com.sun.javadoc.Type[]
          }
          interface AnnotatedType extends com.sun.javadoc.Type {
-             public annotations(): com.sun.javadoc.AnnotationDesc[]
-             public underlyingType(): com.sun.javadoc.Type
+             annotations(): com.sun.javadoc.AnnotationDesc[]
+             underlyingType(): com.sun.javadoc.Type
          }
          interface AnnotationDesc$ElementValuePair {
-             public element(): com.sun.javadoc.AnnotationTypeElementDoc
-             public value(): com.sun.javadoc.AnnotationValue
+             element(): com.sun.javadoc.AnnotationTypeElementDoc
+             value(): com.sun.javadoc.AnnotationValue
          }
          interface AnnotationDesc {
-             public annotationType(): com.sun.javadoc.AnnotationTypeDoc
-             public elementValues(): com.sun.javadoc.AnnotationDesc$ElementValuePair[]
-             public isSynthesized(): boolean
+             annotationType(): com.sun.javadoc.AnnotationTypeDoc
+             elementValues(): com.sun.javadoc.AnnotationDesc$ElementValuePair[]
+             isSynthesized(): boolean
          }
          interface SeeTag extends com.sun.javadoc.Tag {
-             public label(): java.lang.String
-             public referencedPackage(): com.sun.javadoc.PackageDoc
-             public referencedClassName(): java.lang.String
-             public referencedClass(): com.sun.javadoc.ClassDoc
-             public referencedMemberName(): java.lang.String
-             public referencedMember(): com.sun.javadoc.MemberDoc
+             label(): java.lang.String
+             referencedPackage(): com.sun.javadoc.PackageDoc
+             referencedClassName(): java.lang.String
+             referencedClass(): com.sun.javadoc.ClassDoc
+             referencedMemberName(): java.lang.String
+             referencedMember(): com.sun.javadoc.MemberDoc
          }
          interface SerialFieldTag extends com.sun.javadoc.Tag , java.lang.Comparable<java.lang.Object> {
-             public fieldName(): java.lang.String
-             public fieldType(): java.lang.String
-             public fieldTypeDoc(): com.sun.javadoc.ClassDoc
-             public description(): java.lang.String
-             public compareTo(arg0: java.lang.Object): int
+             fieldName(): java.lang.String
+             fieldType(): java.lang.String
+             fieldTypeDoc(): com.sun.javadoc.ClassDoc
+             description(): java.lang.String
+             compareTo(arg0: java.lang.Object): int
          }
          interface ThrowsTag extends com.sun.javadoc.Tag {
-             public exceptionName(): java.lang.String
-             public exceptionComment(): java.lang.String
-             public exception(): com.sun.javadoc.ClassDoc
-             public exceptionType(): com.sun.javadoc.Type
+             exceptionName(): java.lang.String
+             exceptionComment(): java.lang.String
+             exception(): com.sun.javadoc.ClassDoc
+             exceptionType(): com.sun.javadoc.Type
          }
          interface Parameter {
-             public type(): com.sun.javadoc.Type
-             public name(): java.lang.String
-             public typeName(): java.lang.String
+             type(): com.sun.javadoc.Type
+             name(): java.lang.String
+             typeName(): java.lang.String
              toString<T>(...args: any[]): any
-             public annotations(): com.sun.javadoc.AnnotationDesc[]
+             annotations(): com.sun.javadoc.AnnotationDesc[]
          }
          interface AnnotationValue {
-             public value(): java.lang.Object
+             value(): java.lang.Object
              toString<T>(...args: any[]): any
          }
          class LanguageVersion extends java.lang.Enum<com.sun.javadoc.LanguageVersion> {
@@ -1953,12 +1953,12 @@ declare namespace com {
              valueOf<T>(...args: any[]): any
          }
          interface RootDoc extends com.sun.javadoc.Doc , com.sun.javadoc.DocErrorReporter {
-             public options(): java.lang.String[][]
-             public specifiedPackages(): com.sun.javadoc.PackageDoc[]
-             public specifiedClasses(): com.sun.javadoc.ClassDoc[]
-             public classes(): com.sun.javadoc.ClassDoc[]
-             public packageNamed(arg0: java.lang.String): com.sun.javadoc.PackageDoc
-             public classNamed(arg0: java.lang.String): com.sun.javadoc.ClassDoc
+             options(): java.lang.String[][]
+             specifiedPackages(): com.sun.javadoc.PackageDoc[]
+             specifiedClasses(): com.sun.javadoc.ClassDoc[]
+             classes(): com.sun.javadoc.ClassDoc[]
+             packageNamed(arg0: java.lang.String): com.sun.javadoc.PackageDoc
+             classNamed(arg0: java.lang.String): com.sun.javadoc.ClassDoc
          }
          abstract class Doclet {
              public constructor()
@@ -1967,7 +1967,7 @@ declare namespace com {
              public static validOptions(arg0: java.lang.String[][], arg1: com.sun.javadoc.DocErrorReporter): boolean
              public static languageVersion(): com.sun.javadoc.LanguageVersion
          }
-
+         
       }
       namespace istack {
          namespace internal {
@@ -2026,8 +2026,8 @@ declare namespace com {
                    run<T>(...args: any[]): any
                }
                interface DefaultAuthenticator$Receiver {
-                   public onParsingError(arg0: java.lang.String, arg1: org.xml.sax.Locator): void
-                   public onError(arg0: java.lang.Exception, arg1: org.xml.sax.Locator): void
+                   onParsingError(arg0: java.lang.String, arg1: org.xml.sax.Locator): void
+                   onError(arg0: java.lang.Exception, arg1: org.xml.sax.Locator): void
                }
                class DefaultAuthenticator$DefaultRImpl implements com.sun.istack.internal.tools.DefaultAuthenticator$Receiver {
                    public onParsingError(arg0: java.lang.String, arg1: org.xml.sax.Locator): void
@@ -2049,11 +2049,11 @@ declare namespace com {
                    public setAuth(arg0: java.io.File, arg1: com.sun.istack.internal.tools.DefaultAuthenticator$Receiver): void
                    static getCurrentAuthenticator(): java.net.Authenticator
                }
-
+               
             }
-
+            
          }
-
+         
       }
       namespace codemodel {
          namespace internal {
@@ -2162,34 +2162,34 @@ declare namespace com {
                 compareTo<T>(...args: any[]): any
             }
             interface JGenerable {
-                public generate(arg0: com.sun.codemodel.internal.JFormatter): void
+                generate(arg0: com.sun.codemodel.internal.JFormatter): void
             }
             interface JDeclaration {
-                public declare(arg0: com.sun.codemodel.internal.JFormatter): void
+                declare(arg0: com.sun.codemodel.internal.JFormatter): void
             }
             interface JClassContainer {
-                public isClass(): boolean
-                public isPackage(): boolean
+                isClass(): boolean
+                isPackage(): boolean
                 _class<T>(...args: any[]): any
                 _interface<T>(...args: any[]): any
-                public classes(): java.util.Iterator<com.sun.codemodel.internal.JDefinedClass>
-                public parentContainer(): com.sun.codemodel.internal.JClassContainer
-                public getPackage(): com.sun.codemodel.internal.JPackage
-                public owner(): com.sun.codemodel.internal.JCodeModel
-                public _annotationTypeDeclaration(arg0: java.lang.String): com.sun.codemodel.internal.JDefinedClass
-                public _enum(arg0: java.lang.String): com.sun.codemodel.internal.JDefinedClass
+                classes(): java.util.Iterator<com.sun.codemodel.internal.JDefinedClass>
+                parentContainer(): com.sun.codemodel.internal.JClassContainer
+                getPackage(): com.sun.codemodel.internal.JPackage
+                owner(): com.sun.codemodel.internal.JCodeModel
+                _annotationTypeDeclaration(arg0: java.lang.String): com.sun.codemodel.internal.JDefinedClass
+                _enum(arg0: java.lang.String): com.sun.codemodel.internal.JDefinedClass
             }
             interface JGenerifiable {
                 generify<T>(...args: any[]): any
-                public typeParams(): com.sun.codemodel.internal.JTypeVar[]
+                typeParams(): com.sun.codemodel.internal.JTypeVar[]
             }
             interface JAnnotatable {
                 annotate<T>(...args: any[]): any
-                public annotate2<W extends com.sun.codemodel.internal.JAnnotationWriter>(arg0: java.lang.Class<W>): W
-                public annotations(): java.util.Collection<com.sun.codemodel.internal.JAnnotationUse>
+                annotate2<W extends com.sun.codemodel.internal.JAnnotationWriter>(arg0: java.lang.Class<W>): W
+                annotations(): java.util.Collection<com.sun.codemodel.internal.JAnnotationUse>
             }
             interface JDocCommentable {
-                public javadoc(): com.sun.codemodel.internal.JDocComment
+                javadoc(): com.sun.codemodel.internal.JDocComment
             }
             class JPackage implements com.sun.codemodel.internal.JDeclaration , com.sun.codemodel.internal.JGenerable , com.sun.codemodel.internal.JClassContainer , com.sun.codemodel.internal.JAnnotatable , java.lang.Comparable<com.sun.codemodel.internal.JPackage> , com.sun.codemodel.internal.JDocCommentable {
                 constructor(arg0: java.lang.String, arg1: com.sun.codemodel.internal.JCodeModel)
@@ -2359,36 +2359,36 @@ declare namespace com {
             }
             interface JExpression extends com.sun.codemodel.internal.JGenerable {
                 minus<T>(...args: any[]): any
-                public not(): com.sun.codemodel.internal.JExpression
-                public complement(): com.sun.codemodel.internal.JExpression
-                public incr(): com.sun.codemodel.internal.JExpression
-                public decr(): com.sun.codemodel.internal.JExpression
-                public plus(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
-                public mul(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
-                public div(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
-                public mod(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
-                public shl(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
-                public shr(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
-                public shrz(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
-                public band(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
-                public bor(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
-                public cand(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
-                public cor(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
-                public xor(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
-                public lt(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
-                public lte(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
-                public gt(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
-                public gte(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
-                public eq(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
-                public ne(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
-                public _instanceof(arg0: com.sun.codemodel.internal.JType): com.sun.codemodel.internal.JExpression
+                not(): com.sun.codemodel.internal.JExpression
+                complement(): com.sun.codemodel.internal.JExpression
+                incr(): com.sun.codemodel.internal.JExpression
+                decr(): com.sun.codemodel.internal.JExpression
+                plus(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
+                mul(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
+                div(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
+                mod(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
+                shl(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
+                shr(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
+                shrz(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
+                band(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
+                bor(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
+                cand(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
+                cor(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
+                xor(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
+                lt(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
+                lte(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
+                gt(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
+                gte(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
+                eq(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
+                ne(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
+                _instanceof(arg0: com.sun.codemodel.internal.JType): com.sun.codemodel.internal.JExpression
                 invoke<T>(...args: any[]): any
                 ref<T>(...args: any[]): any
-                public component(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JArrayCompRef
+                component(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JArrayCompRef
             }
             interface JAssignmentTarget extends com.sun.codemodel.internal.JGenerable , com.sun.codemodel.internal.JExpression {
-                public assign(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
-                public assignPlus(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
+                assign(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
+                assignPlus(arg0: com.sun.codemodel.internal.JExpression): com.sun.codemodel.internal.JExpression
             }
             class JBlock$1 implements com.sun.codemodel.internal.JStatement {
                 val$source: java.lang.String
@@ -2426,7 +2426,7 @@ declare namespace com {
                 public state(arg0: com.sun.codemodel.internal.JFormatter): void
             }
             interface JStatement {
-                public state(arg0: com.sun.codemodel.internal.JFormatter): void
+                state(arg0: com.sun.codemodel.internal.JFormatter): void
             }
             class JDocComment extends com.sun.codemodel.internal.JCommentPart implements com.sun.codemodel.internal.JGenerable {
                 public constructor(arg0: com.sun.codemodel.internal.JCodeModel)
@@ -2577,9 +2577,9 @@ declare namespace com {
                 protected substituteParams(arg0: com.sun.codemodel.internal.JTypeVar[], arg1: java.util.List<com.sun.codemodel.internal.JClass>): com.sun.codemodel.internal.JClass
                 public generate(arg0: com.sun.codemodel.internal.JFormatter): void
             }
-            interface Annotation> {
-                public getAnnotationUse(): com.sun.codemodel.internal.JAnnotationUse
-                public getAnnotationType(): java.lang.Class<A>
+            interface JAnnotationWriter<A extends java.lang.annotation.Annotation> {
+                getAnnotationUse(): com.sun.codemodel.internal.JAnnotationUse
+                getAnnotationType(): java.lang.Class<A>
             }
             class JPrimitiveType extends com.sun.codemodel.internal.JType {
                 constructor(arg0: com.sun.codemodel.internal.JCodeModel, arg1: java.lang.String, arg2: java.lang.Class<any>)
@@ -2773,7 +2773,7 @@ declare namespace com {
                    public openBinary(arg0: com.sun.codemodel.internal.JPackage, arg1: java.lang.String): java.io.OutputStream
                    public openSource(arg0: com.sun.codemodel.internal.JPackage, arg1: java.lang.String): java.io.Writer
                }
-
+               
             }
             namespace util {
                class UnicodeEscapeWriter extends java.io.FilterWriter {
@@ -2835,7 +2835,7 @@ declare namespace com {
                    public static theInstance: java.util.Comparator<com.sun.codemodel.internal.JClass>
                    compare<T>(...args: any[]): any
                }
-
+               
             }
             namespace fmt {
                class SecureLoader$1 implements java.security.PrivilegedAction {
@@ -2874,7 +2874,7 @@ declare namespace com {
                    public process(arg0: java.lang.String): java.lang.String
                }
                interface JStaticJavaFile$LineFilter {
-                   public process(arg0: java.lang.String): java.lang.String
+                   process(arg0: java.lang.String): java.lang.String
                }
                class JStaticJavaFile$ChainFilter implements com.sun.codemodel.internal.fmt.JStaticJavaFile$LineFilter {
                    public constructor(arg0: com.sun.codemodel.internal.fmt.JStaticJavaFile$LineFilter, arg1: com.sun.codemodel.internal.fmt.JStaticJavaFile$LineFilter)
@@ -2920,9 +2920,9 @@ declare namespace com {
                    public getDataStore(): java.io.OutputStream
                    public build(arg0: java.io.OutputStream): void
                }
-
+               
             }
-            class JAnnotationWriter<A>> implements java.lang.reflect.InvocationHandler , com.sun.codemodel.internal.JAnnotationWriter<A> {
+            class TypedAnnotationWriter<A extends java.lang.annotation.Annotation, W extends com.sun.codemodel.internal.JAnnotationWriter<A>> implements java.lang.reflect.InvocationHandler , com.sun.codemodel.internal.JAnnotationWriter<A> {
                 public constructor(arg0: java.lang.Class<A>, arg1: java.lang.Class<W>, arg2: com.sun.codemodel.internal.JAnnotationUse)
                 public getAnnotationUse(): com.sun.codemodel.internal.JAnnotationUse
                 public getAnnotationType(): java.lang.Class<A>
@@ -3187,9 +3187,9 @@ declare namespace com {
                 constructor(arg0: com.sun.codemodel.internal.JExpression)
                 public generate(arg0: com.sun.codemodel.internal.JFormatter): void
             }
-
+            
          }
-
+         
       }
       namespace xml {
          namespace internal {
@@ -3236,7 +3236,7 @@ declare namespace com {
                          static access$200(arg0: com.sun.xml.internal.xsom.impl.parser.ParserContext): com.sun.xml.internal.xsom.parser.XSOMParser
                      }
                      interface Patch {
-                         public run(): void
+                         run(): void
                      }
                      class SchemaDocumentImpl implements com.sun.xml.internal.xsom.parser.SchemaDocument {
                          references: java.util.Set<com.sun.xml.internal.xsom.impl.parser.SchemaDocumentImpl>
@@ -3335,12 +3335,12 @@ declare namespace com {
                             public traceln(arg0: java.lang.String): void
                         }
                         interface NGCCEventSource {
-                            public replace(arg0: com.sun.xml.internal.xsom.impl.parser.state.NGCCEventReceiver, arg1: com.sun.xml.internal.xsom.impl.parser.state.NGCCEventReceiver): int
-                            public sendEnterElement(arg0: int, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: org.xml.sax.Attributes): void
-                            public sendLeaveElement(arg0: int, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): void
-                            public sendEnterAttribute(arg0: int, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): void
-                            public sendLeaveAttribute(arg0: int, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): void
-                            public sendText(arg0: int, arg1: java.lang.String): void
+                            replace(arg0: com.sun.xml.internal.xsom.impl.parser.state.NGCCEventReceiver, arg1: com.sun.xml.internal.xsom.impl.parser.state.NGCCEventReceiver): int
+                            sendEnterElement(arg0: int, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: org.xml.sax.Attributes): void
+                            sendLeaveElement(arg0: int, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): void
+                            sendEnterAttribute(arg0: int, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): void
+                            sendLeaveAttribute(arg0: int, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): void
+                            sendText(arg0: int, arg1: java.lang.String): void
                         }
                         abstract class NGCCHandler implements com.sun.xml.internal.xsom.impl.parser.state.NGCCEventReceiver {
                             protected _parent: com.sun.xml.internal.xsom.impl.parser.state.NGCCHandler
@@ -3365,11 +3365,11 @@ declare namespace com {
                             public unexpectedLeaveAttribute(arg0: java.lang.String): void
                         }
                         interface NGCCEventReceiver {
-                            public enterElement(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: org.xml.sax.Attributes): void
-                            public leaveElement(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void
-                            public text(arg0: java.lang.String): void
-                            public enterAttribute(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void
-                            public leaveAttribute(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void
+                            enterElement(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: org.xml.sax.Attributes): void
+                            leaveElement(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void
+                            text(arg0: java.lang.String): void
+                            enterAttribute(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void
+                            leaveAttribute(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void
                         }
                         class AttributesImpl implements org.xml.sax.Attributes {
                             length: int
@@ -3870,15 +3870,15 @@ declare namespace com {
                             public sendLeaveElement(arg0: int, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): void
                             public sendText(arg0: int, arg1: java.lang.String): void
                         }
-
+                        
                      }
                      interface PatcherManager$Patcher {
-                         public run(): void
+                         run(): void
                      }
                      interface PatcherManager {
-                         public addPatcher(arg0: com.sun.xml.internal.xsom.impl.parser.Patch): void
-                         public addErrorChecker(arg0: com.sun.xml.internal.xsom.impl.parser.Patch): void
-                         public reportError(arg0: java.lang.String, arg1: org.xml.sax.Locator): void
+                         addPatcher(arg0: com.sun.xml.internal.xsom.impl.parser.Patch): void
+                         addErrorChecker(arg0: com.sun.xml.internal.xsom.impl.parser.Patch): void
+                         reportError(arg0: java.lang.String, arg1: org.xml.sax.Locator): void
                      }
                      class DelayedRef$Type extends com.sun.xml.internal.xsom.impl.parser.DelayedRef implements com.sun.xml.internal.xsom.impl.Ref$Type {
                          public constructor(arg0: com.sun.xml.internal.xsom.impl.parser.PatcherManager, arg1: org.xml.sax.Locator, arg2: com.sun.xml.internal.xsom.impl.SchemaImpl, arg3: com.sun.xml.internal.xsom.impl.UName)
@@ -4005,7 +4005,7 @@ declare namespace com {
                          static access$000(arg0: com.sun.xml.internal.xsom.impl.parser.BaseContentRef): com.sun.xml.internal.xsom.impl.Ref$Type
                          static access$100(arg0: com.sun.xml.internal.xsom.impl.parser.BaseContentRef): org.xml.sax.Locator
                      }
-
+                     
                   }
                   class SchemaSetImpl$1 extends com.sun.xml.internal.xsom.impl.scd.Iterators$Map<com.sun.xml.internal.xsom.XSElementDecl, com.sun.xml.internal.xsom.XSSchema> {
                       this$0: com.sun.xml.internal.xsom.impl.SchemaSetImpl
@@ -4238,13 +4238,13 @@ declare namespace com {
                   interface ContentTypeImpl extends com.sun.xml.internal.xsom.impl.Ref$ContentType , com.sun.xml.internal.xsom.XSContentType {
                   }
                   interface Ref$Term {
-                      public getTerm(): com.sun.xml.internal.xsom.XSTerm
+                      getTerm(): com.sun.xml.internal.xsom.XSTerm
                   }
                   interface Ref$Type {
-                      public getType(): com.sun.xml.internal.xsom.XSType
+                      getType(): com.sun.xml.internal.xsom.XSType
                   }
                   interface Ref$ContentType {
-                      public getContentType(): com.sun.xml.internal.xsom.XSContentType
+                      getContentType(): com.sun.xml.internal.xsom.XSContentType
                   }
                   interface Ref$SimpleType extends com.sun.xml.internal.xsom.impl.Ref$Type {
                       getType<T>(...args: any[]): any
@@ -4253,16 +4253,16 @@ declare namespace com {
                       getType<T>(...args: any[]): any
                   }
                   interface Ref$Attribute {
-                      public getAttribute(): com.sun.xml.internal.xsom.XSAttributeDecl
+                      getAttribute(): com.sun.xml.internal.xsom.XSAttributeDecl
                   }
                   interface Ref$AttGroup {
-                      public get(): com.sun.xml.internal.xsom.XSAttGroupDecl
+                      get(): com.sun.xml.internal.xsom.XSAttGroupDecl
                   }
                   interface Ref$Element extends com.sun.xml.internal.xsom.impl.Ref$Term {
-                      public get(): com.sun.xml.internal.xsom.XSElementDecl
+                      get(): com.sun.xml.internal.xsom.XSElementDecl
                   }
                   interface Ref$IdentityConstraint {
-                      public get(): com.sun.xml.internal.xsom.XSIdentityConstraint
+                      get(): com.sun.xml.internal.xsom.XSIdentityConstraint
                   }
                   abstract class Ref {
                       public constructor()
@@ -4533,7 +4533,7 @@ declare namespace com {
                          public fatalError(arg0: org.xml.sax.SAXParseException): void
                          public warning(arg0: org.xml.sax.SAXParseException): void
                      }
-
+                     
                   }
                   namespace scd {
                      class TokenMgrError extends java.lang.Error {
@@ -4574,7 +4574,7 @@ declare namespace com {
                          constructor(arg0: com.sun.xml.internal.xsom.impl.scd.Step$Filtered, arg1: java.util.Iterator)
                          matches<T>(...args: any[]): any
                      }
-                     abstract class XSComponent> extends com.sun.xml.internal.xsom.impl.scd.Step<T> {
+                     abstract class Step$Filtered<T extends com.sun.xml.internal.xsom.XSComponent> extends com.sun.xml.internal.xsom.impl.scd.Step<T> {
                          protected constructor(arg0: com.sun.xml.internal.xsom.impl.scd.Axis<T>)
                          protected filter(arg0: java.util.Iterator<T>): java.util.Iterator<T>
                          protected match(arg0: T): boolean
@@ -4595,7 +4595,7 @@ declare namespace com {
                          public constructor(arg0: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSSchema>, arg1: java.lang.String)
                          match<T>(...args: any[]): any
                      }
-                     abstract class XSComponent> {
+                     abstract class Step<T extends com.sun.xml.internal.xsom.XSComponent> {
                          public axis: com.sun.xml.internal.xsom.impl.scd.Axis<T>
                          predicate: int
                          protected constructor(arg0: com.sun.xml.internal.xsom.impl.scd.Axis<T>)
@@ -4776,34 +4776,34 @@ declare namespace com {
                          iterator<T>(...args: any[]): any
                          public getName(): java.lang.String
                      }
-                     interface XSComponent> {
-                         public static ROOT: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSSchema>
-                         public static INTERMEDIATE_SKIP: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSComponent>
-                         public static DESCENDANTS: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSComponent>
-                         public static X_SCHEMA: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSSchema>
-                         public static SUBSTITUTION_GROUP: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSElementDecl>
-                         public static ATTRIBUTE: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSAttributeDecl>
-                         public static ELEMENT: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSElementDecl>
-                         public static TYPE_DEFINITION: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSType>
-                         public static BASETYPE: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSType>
-                         public static PRIMITIVE_TYPE: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSSimpleType>
-                         public static ITEM_TYPE: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSSimpleType>
-                         public static MEMBER_TYPE: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSSimpleType>
-                         public static SCOPE: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSComponent>
-                         public static ATTRIBUTE_GROUP: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSAttGroupDecl>
-                         public static MODEL_GROUP_DECL: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSModelGroupDecl>
-                         public static IDENTITY_CONSTRAINT: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSIdentityConstraint>
-                         public static REFERENCED_KEY: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSIdentityConstraint>
-                         public static NOTATION: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSNotation>
-                         public static WILDCARD: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSWildcard>
-                         public static ATTRIBUTE_WILDCARD: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSWildcard>
-                         public static FACET: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSFacet>
-                         public static MODELGROUP_ALL: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSModelGroup>
-                         public static MODELGROUP_CHOICE: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSModelGroup>
-                         public static MODELGROUP_SEQUENCE: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSModelGroup>
-                         public static MODELGROUP_ANY: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSModelGroup>
+                     interface Axis<T extends com.sun.xml.internal.xsom.XSComponent> {
+                         ROOT: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSSchema>
+                         INTERMEDIATE_SKIP: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSComponent>
+                         DESCENDANTS: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSComponent>
+                         X_SCHEMA: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSSchema>
+                         SUBSTITUTION_GROUP: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSElementDecl>
+                         ATTRIBUTE: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSAttributeDecl>
+                         ELEMENT: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSElementDecl>
+                         TYPE_DEFINITION: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSType>
+                         BASETYPE: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSType>
+                         PRIMITIVE_TYPE: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSSimpleType>
+                         ITEM_TYPE: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSSimpleType>
+                         MEMBER_TYPE: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSSimpleType>
+                         SCOPE: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSComponent>
+                         ATTRIBUTE_GROUP: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSAttGroupDecl>
+                         MODEL_GROUP_DECL: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSModelGroupDecl>
+                         IDENTITY_CONSTRAINT: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSIdentityConstraint>
+                         REFERENCED_KEY: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSIdentityConstraint>
+                         NOTATION: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSNotation>
+                         WILDCARD: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSWildcard>
+                         ATTRIBUTE_WILDCARD: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSWildcard>
+                         FACET: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSFacet>
+                         MODELGROUP_ALL: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSModelGroup>
+                         MODELGROUP_CHOICE: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSModelGroup>
+                         MODELGROUP_SEQUENCE: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSModelGroup>
+                         MODELGROUP_ANY: com.sun.xml.internal.xsom.impl.scd.Axis<com.sun.xml.internal.xsom.XSModelGroup>
                          iterator<T>(...args: any[]): any
-                         public isModelGroup(): boolean
+                         isModelGroup(): boolean
                      }
                      class SimpleCharStream {
                          public static staticFlag: boolean
@@ -4905,18 +4905,18 @@ declare namespace com {
                          public getNextToken(): com.sun.xml.internal.xsom.impl.scd.Token
                      }
                      interface SCDParserConstants {
-                         public static EOF: int
-                         public static Letter: int
-                         public static BaseChar: int
-                         public static Ideographic: int
-                         public static CombiningChar: int
-                         public static UnicodeDigit: int
-                         public static Extender: int
-                         public static NCNAME: int
-                         public static NUMBER: int
-                         public static FACETNAME: int
-                         public static DEFAULT: int
-                         public static tokenImage: java.util.List<java.lang.String>
+                         EOF: int
+                         Letter: int
+                         BaseChar: int
+                         Ideographic: int
+                         CombiningChar: int
+                         UnicodeDigit: int
+                         Extender: int
+                         NCNAME: int
+                         NUMBER: int
+                         FACETNAME: int
+                         DEFAULT: int
+                         tokenImage: java.util.List<java.lang.String>
                      }
                      class SCDParser implements com.sun.xml.internal.xsom.impl.scd.SCDParserConstants {
                          public token_source: com.sun.xml.internal.xsom.impl.scd.SCDParserTokenManager
@@ -5014,7 +5014,7 @@ declare namespace com {
                          constructor(arg0: com.sun.xml.internal.xsom.impl.scd.AbstractAxisImpl, arg1: java.util.Iterator)
                          apply<T>(...args: any[]): any
                      }
-                     abstract class XSComponent> implements com.sun.xml.internal.xsom.impl.scd.Axis<T> , com.sun.xml.internal.xsom.visitor.XSFunction<java.util.Iterator<T>> {
+                     abstract class AbstractAxisImpl<T extends com.sun.xml.internal.xsom.XSComponent> implements com.sun.xml.internal.xsom.impl.scd.Axis<T> , com.sun.xml.internal.xsom.visitor.XSFunction<java.util.Iterator<T>> {
                          constructor()
                          protected singleton(arg0: T): java.util.Iterator<T>
                          union<T>(...args: any[]): any
@@ -5039,7 +5039,7 @@ declare namespace com {
                          modelGroup<T>(...args: any[]): any
                          elementDecl<T>(...args: any[]): any
                      }
-
+                     
                   }
                   abstract class SimpleTypeImpl extends com.sun.xml.internal.xsom.impl.DeclarationImpl implements com.sun.xml.internal.xsom.XSSimpleType , com.sun.xml.internal.xsom.impl.ContentTypeImpl , com.sun.xml.internal.xsom.impl.Ref$SimpleType {
                       constructor(arg0: com.sun.xml.internal.xsom.impl.parser.SchemaDocumentImpl, arg1: com.sun.xml.internal.xsom.impl.AnnotationImpl, arg2: org.xml.sax.Locator, arg3: com.sun.xml.internal.xsom.impl.ForeignAttributesImpl, arg4: java.lang.String, arg5: boolean, arg6: java.util.Set<com.sun.xml.internal.xsom.XSVariety>, arg7: com.sun.xml.internal.xsom.impl.Ref$SimpleType)
@@ -5311,7 +5311,7 @@ declare namespace com {
                       public static schemaNamespace: java.lang.String
                       public constructor()
                   }
-
+                  
                }
                namespace util {
                   class XSFunctionFilter<T> implements com.sun.xml.internal.xsom.visitor.XSFunction<T> {
@@ -5474,208 +5474,208 @@ declare namespace com {
                       identityConstraint<T>(...args: any[]): any
                       xpath<T>(...args: any[]): any
                   }
-
+                  
                }
                namespace visitor {
                   interface XSWildcardVisitor {
-                      public any(arg0: com.sun.xml.internal.xsom.XSWildcard$Any): void
-                      public other(arg0: com.sun.xml.internal.xsom.XSWildcard$Other): void
-                      public union(arg0: com.sun.xml.internal.xsom.XSWildcard$Union): void
+                      any(arg0: com.sun.xml.internal.xsom.XSWildcard$Any): void
+                      other(arg0: com.sun.xml.internal.xsom.XSWildcard$Other): void
+                      union(arg0: com.sun.xml.internal.xsom.XSWildcard$Union): void
                   }
                   interface XSWildcardFunction<T> {
-                      public any(arg0: com.sun.xml.internal.xsom.XSWildcard$Any): T
-                      public other(arg0: com.sun.xml.internal.xsom.XSWildcard$Other): T
-                      public union(arg0: com.sun.xml.internal.xsom.XSWildcard$Union): T
+                      any(arg0: com.sun.xml.internal.xsom.XSWildcard$Any): T
+                      other(arg0: com.sun.xml.internal.xsom.XSWildcard$Other): T
+                      union(arg0: com.sun.xml.internal.xsom.XSWildcard$Union): T
                   }
                   interface XSVisitor extends com.sun.xml.internal.xsom.visitor.XSTermVisitor , com.sun.xml.internal.xsom.visitor.XSContentTypeVisitor {
-                      public annotation(arg0: com.sun.xml.internal.xsom.XSAnnotation): void
-                      public attGroupDecl(arg0: com.sun.xml.internal.xsom.XSAttGroupDecl): void
-                      public attributeDecl(arg0: com.sun.xml.internal.xsom.XSAttributeDecl): void
-                      public attributeUse(arg0: com.sun.xml.internal.xsom.XSAttributeUse): void
-                      public complexType(arg0: com.sun.xml.internal.xsom.XSComplexType): void
-                      public schema(arg0: com.sun.xml.internal.xsom.XSSchema): void
-                      public facet(arg0: com.sun.xml.internal.xsom.XSFacet): void
-                      public notation(arg0: com.sun.xml.internal.xsom.XSNotation): void
-                      public identityConstraint(arg0: com.sun.xml.internal.xsom.XSIdentityConstraint): void
-                      public xpath(arg0: com.sun.xml.internal.xsom.XSXPath): void
+                      annotation(arg0: com.sun.xml.internal.xsom.XSAnnotation): void
+                      attGroupDecl(arg0: com.sun.xml.internal.xsom.XSAttGroupDecl): void
+                      attributeDecl(arg0: com.sun.xml.internal.xsom.XSAttributeDecl): void
+                      attributeUse(arg0: com.sun.xml.internal.xsom.XSAttributeUse): void
+                      complexType(arg0: com.sun.xml.internal.xsom.XSComplexType): void
+                      schema(arg0: com.sun.xml.internal.xsom.XSSchema): void
+                      facet(arg0: com.sun.xml.internal.xsom.XSFacet): void
+                      notation(arg0: com.sun.xml.internal.xsom.XSNotation): void
+                      identityConstraint(arg0: com.sun.xml.internal.xsom.XSIdentityConstraint): void
+                      xpath(arg0: com.sun.xml.internal.xsom.XSXPath): void
                   }
                   interface XSTermVisitor {
-                      public wildcard(arg0: com.sun.xml.internal.xsom.XSWildcard): void
-                      public modelGroupDecl(arg0: com.sun.xml.internal.xsom.XSModelGroupDecl): void
-                      public modelGroup(arg0: com.sun.xml.internal.xsom.XSModelGroup): void
-                      public elementDecl(arg0: com.sun.xml.internal.xsom.XSElementDecl): void
+                      wildcard(arg0: com.sun.xml.internal.xsom.XSWildcard): void
+                      modelGroupDecl(arg0: com.sun.xml.internal.xsom.XSModelGroupDecl): void
+                      modelGroup(arg0: com.sun.xml.internal.xsom.XSModelGroup): void
+                      elementDecl(arg0: com.sun.xml.internal.xsom.XSElementDecl): void
                   }
                   interface XSContentTypeVisitor {
-                      public simpleType(arg0: com.sun.xml.internal.xsom.XSSimpleType): void
-                      public particle(arg0: com.sun.xml.internal.xsom.XSParticle): void
-                      public empty(arg0: com.sun.xml.internal.xsom.XSContentType): void
+                      simpleType(arg0: com.sun.xml.internal.xsom.XSSimpleType): void
+                      particle(arg0: com.sun.xml.internal.xsom.XSParticle): void
+                      empty(arg0: com.sun.xml.internal.xsom.XSContentType): void
                   }
                   interface XSFunction<T> extends com.sun.xml.internal.xsom.visitor.XSContentTypeFunction<T> , com.sun.xml.internal.xsom.visitor.XSTermFunction<T> {
-                      public annotation(arg0: com.sun.xml.internal.xsom.XSAnnotation): T
-                      public attGroupDecl(arg0: com.sun.xml.internal.xsom.XSAttGroupDecl): T
-                      public attributeDecl(arg0: com.sun.xml.internal.xsom.XSAttributeDecl): T
-                      public attributeUse(arg0: com.sun.xml.internal.xsom.XSAttributeUse): T
-                      public complexType(arg0: com.sun.xml.internal.xsom.XSComplexType): T
-                      public schema(arg0: com.sun.xml.internal.xsom.XSSchema): T
-                      public facet(arg0: com.sun.xml.internal.xsom.XSFacet): T
-                      public notation(arg0: com.sun.xml.internal.xsom.XSNotation): T
-                      public identityConstraint(arg0: com.sun.xml.internal.xsom.XSIdentityConstraint): T
-                      public xpath(arg0: com.sun.xml.internal.xsom.XSXPath): T
+                      annotation(arg0: com.sun.xml.internal.xsom.XSAnnotation): T
+                      attGroupDecl(arg0: com.sun.xml.internal.xsom.XSAttGroupDecl): T
+                      attributeDecl(arg0: com.sun.xml.internal.xsom.XSAttributeDecl): T
+                      attributeUse(arg0: com.sun.xml.internal.xsom.XSAttributeUse): T
+                      complexType(arg0: com.sun.xml.internal.xsom.XSComplexType): T
+                      schema(arg0: com.sun.xml.internal.xsom.XSSchema): T
+                      facet(arg0: com.sun.xml.internal.xsom.XSFacet): T
+                      notation(arg0: com.sun.xml.internal.xsom.XSNotation): T
+                      identityConstraint(arg0: com.sun.xml.internal.xsom.XSIdentityConstraint): T
+                      xpath(arg0: com.sun.xml.internal.xsom.XSXPath): T
                   }
                   interface XSContentTypeFunction<T> {
-                      public simpleType(arg0: com.sun.xml.internal.xsom.XSSimpleType): T
-                      public particle(arg0: com.sun.xml.internal.xsom.XSParticle): T
-                      public empty(arg0: com.sun.xml.internal.xsom.XSContentType): T
+                      simpleType(arg0: com.sun.xml.internal.xsom.XSSimpleType): T
+                      particle(arg0: com.sun.xml.internal.xsom.XSParticle): T
+                      empty(arg0: com.sun.xml.internal.xsom.XSContentType): T
                   }
                   interface XSTermFunction<T> {
-                      public wildcard(arg0: com.sun.xml.internal.xsom.XSWildcard): T
-                      public modelGroupDecl(arg0: com.sun.xml.internal.xsom.XSModelGroupDecl): T
-                      public modelGroup(arg0: com.sun.xml.internal.xsom.XSModelGroup): T
-                      public elementDecl(arg0: com.sun.xml.internal.xsom.XSElementDecl): T
+                      wildcard(arg0: com.sun.xml.internal.xsom.XSWildcard): T
+                      modelGroupDecl(arg0: com.sun.xml.internal.xsom.XSModelGroupDecl): T
+                      modelGroup(arg0: com.sun.xml.internal.xsom.XSModelGroup): T
+                      elementDecl(arg0: com.sun.xml.internal.xsom.XSElementDecl): T
                   }
                   interface XSTermFunctionWithParam<T, P> {
-                      public wildcard(arg0: com.sun.xml.internal.xsom.XSWildcard, arg1: P): T
-                      public modelGroupDecl(arg0: com.sun.xml.internal.xsom.XSModelGroupDecl, arg1: P): T
-                      public modelGroup(arg0: com.sun.xml.internal.xsom.XSModelGroup, arg1: P): T
-                      public elementDecl(arg0: com.sun.xml.internal.xsom.XSElementDecl, arg1: P): T
+                      wildcard(arg0: com.sun.xml.internal.xsom.XSWildcard, arg1: P): T
+                      modelGroupDecl(arg0: com.sun.xml.internal.xsom.XSModelGroupDecl, arg1: P): T
+                      modelGroup(arg0: com.sun.xml.internal.xsom.XSModelGroup, arg1: P): T
+                      elementDecl(arg0: com.sun.xml.internal.xsom.XSElementDecl, arg1: P): T
                   }
                   interface XSSimpleTypeVisitor {
-                      public listSimpleType(arg0: com.sun.xml.internal.xsom.XSListSimpleType): void
-                      public unionSimpleType(arg0: com.sun.xml.internal.xsom.XSUnionSimpleType): void
-                      public restrictionSimpleType(arg0: com.sun.xml.internal.xsom.XSRestrictionSimpleType): void
+                      listSimpleType(arg0: com.sun.xml.internal.xsom.XSListSimpleType): void
+                      unionSimpleType(arg0: com.sun.xml.internal.xsom.XSUnionSimpleType): void
+                      restrictionSimpleType(arg0: com.sun.xml.internal.xsom.XSRestrictionSimpleType): void
                   }
                   interface XSSimpleTypeFunction<T> {
-                      public listSimpleType(arg0: com.sun.xml.internal.xsom.XSListSimpleType): T
-                      public unionSimpleType(arg0: com.sun.xml.internal.xsom.XSUnionSimpleType): T
-                      public restrictionSimpleType(arg0: com.sun.xml.internal.xsom.XSRestrictionSimpleType): T
+                      listSimpleType(arg0: com.sun.xml.internal.xsom.XSListSimpleType): T
+                      unionSimpleType(arg0: com.sun.xml.internal.xsom.XSUnionSimpleType): T
+                      restrictionSimpleType(arg0: com.sun.xml.internal.xsom.XSRestrictionSimpleType): T
                   }
-
+                  
                }
                interface XSWildcard$Any extends com.sun.xml.internal.xsom.XSWildcard {
                }
                interface XSWildcard$Other extends com.sun.xml.internal.xsom.XSWildcard {
-                   public getOtherNamespace(): java.lang.String
+                   getOtherNamespace(): java.lang.String
                }
                interface XSWildcard$Union extends com.sun.xml.internal.xsom.XSWildcard {
-                   public iterateNamespaces(): java.util.Iterator<java.lang.String>
-                   public getNamespaces(): java.util.Collection<java.lang.String>
+                   iterateNamespaces(): java.util.Iterator<java.lang.String>
+                   getNamespaces(): java.util.Collection<java.lang.String>
                }
                interface XSWildcard extends com.sun.xml.internal.xsom.XSComponent , com.sun.xml.internal.xsom.XSTerm {
-                   public static LAX: int
-                   public static STRTICT: int
-                   public static SKIP: int
-                   public getMode(): int
-                   public acceptsNamespace(arg0: java.lang.String): boolean
-                   public visit(arg0: com.sun.xml.internal.xsom.visitor.XSWildcardVisitor): void
-                   public apply<T>(arg0: com.sun.xml.internal.xsom.visitor.XSWildcardFunction<T>): T
+                   LAX: int
+                   STRTICT: int
+                   SKIP: int
+                   getMode(): int
+                   acceptsNamespace(arg0: java.lang.String): boolean
+                   visit(arg0: com.sun.xml.internal.xsom.visitor.XSWildcardVisitor): void
+                   apply<T>(arg0: com.sun.xml.internal.xsom.visitor.XSWildcardFunction<T>): T
                }
                interface XSComponent {
                    getAnnotation<T>(...args: any[]): any
-                   public getForeignAttributes(): java.util.List<com.sun.xml.internal.xsom.ForeignAttributes>
-                   public getForeignAttribute(arg0: java.lang.String, arg1: java.lang.String): java.lang.String
-                   public getLocator(): org.xml.sax.Locator
-                   public getOwnerSchema(): com.sun.xml.internal.xsom.XSSchema
-                   public getRoot(): com.sun.xml.internal.xsom.XSSchemaSet
-                   public getSourceDocument(): com.sun.xml.internal.xsom.parser.SchemaDocument
-                   public select(arg0: java.lang.String, arg1: javax.xml.namespace.NamespaceContext): java.util.Collection<com.sun.xml.internal.xsom.XSComponent>
-                   public selectSingle(arg0: java.lang.String, arg1: javax.xml.namespace.NamespaceContext): com.sun.xml.internal.xsom.XSComponent
-                   public visit(arg0: com.sun.xml.internal.xsom.visitor.XSVisitor): void
-                   public apply<T>(arg0: com.sun.xml.internal.xsom.visitor.XSFunction<T>): T
+                   getForeignAttributes(): java.util.List<com.sun.xml.internal.xsom.ForeignAttributes>
+                   getForeignAttribute(arg0: java.lang.String, arg1: java.lang.String): java.lang.String
+                   getLocator(): org.xml.sax.Locator
+                   getOwnerSchema(): com.sun.xml.internal.xsom.XSSchema
+                   getRoot(): com.sun.xml.internal.xsom.XSSchemaSet
+                   getSourceDocument(): com.sun.xml.internal.xsom.parser.SchemaDocument
+                   select(arg0: java.lang.String, arg1: javax.xml.namespace.NamespaceContext): java.util.Collection<com.sun.xml.internal.xsom.XSComponent>
+                   selectSingle(arg0: java.lang.String, arg1: javax.xml.namespace.NamespaceContext): com.sun.xml.internal.xsom.XSComponent
+                   visit(arg0: com.sun.xml.internal.xsom.visitor.XSVisitor): void
+                   apply<T>(arg0: com.sun.xml.internal.xsom.visitor.XSFunction<T>): T
                }
                interface XSTerm extends com.sun.xml.internal.xsom.XSComponent {
-                   public visit(arg0: com.sun.xml.internal.xsom.visitor.XSTermVisitor): void
+                   visit(arg0: com.sun.xml.internal.xsom.visitor.XSTermVisitor): void
                    apply<T>(...args: any[]): any
-                   public isWildcard(): boolean
-                   public isModelGroupDecl(): boolean
-                   public isModelGroup(): boolean
-                   public isElementDecl(): boolean
-                   public asWildcard(): com.sun.xml.internal.xsom.XSWildcard
-                   public asModelGroupDecl(): com.sun.xml.internal.xsom.XSModelGroupDecl
-                   public asModelGroup(): com.sun.xml.internal.xsom.XSModelGroup
-                   public asElementDecl(): com.sun.xml.internal.xsom.XSElementDecl
+                   isWildcard(): boolean
+                   isModelGroupDecl(): boolean
+                   isModelGroup(): boolean
+                   isElementDecl(): boolean
+                   asWildcard(): com.sun.xml.internal.xsom.XSWildcard
+                   asModelGroupDecl(): com.sun.xml.internal.xsom.XSModelGroupDecl
+                   asModelGroup(): com.sun.xml.internal.xsom.XSModelGroup
+                   asElementDecl(): com.sun.xml.internal.xsom.XSElementDecl
                }
                interface XSAnnotation {
-                   public getAnnotation(): java.lang.Object
-                   public setAnnotation(arg0: java.lang.Object): java.lang.Object
-                   public getLocator(): org.xml.sax.Locator
+                   getAnnotation(): java.lang.Object
+                   setAnnotation(arg0: java.lang.Object): java.lang.Object
+                   getLocator(): org.xml.sax.Locator
                }
                interface ForeignAttributes extends org.xml.sax.Attributes {
-                   public getContext(): org.relaxng.datatype.ValidationContext
-                   public getLocator(): org.xml.sax.Locator
+                   getContext(): org.relaxng.datatype.ValidationContext
+                   getLocator(): org.xml.sax.Locator
                }
                interface XSSchema extends com.sun.xml.internal.xsom.XSComponent {
-                   public getTargetNamespace(): java.lang.String
-                   public getAttributeDecls(): java.util.Map<java.lang.String, com.sun.xml.internal.xsom.XSAttributeDecl>
-                   public iterateAttributeDecls(): java.util.Iterator<com.sun.xml.internal.xsom.XSAttributeDecl>
-                   public getAttributeDecl(arg0: java.lang.String): com.sun.xml.internal.xsom.XSAttributeDecl
-                   public getElementDecls(): java.util.Map<java.lang.String, com.sun.xml.internal.xsom.XSElementDecl>
-                   public iterateElementDecls(): java.util.Iterator<com.sun.xml.internal.xsom.XSElementDecl>
-                   public getElementDecl(arg0: java.lang.String): com.sun.xml.internal.xsom.XSElementDecl
-                   public getAttGroupDecls(): java.util.Map<java.lang.String, com.sun.xml.internal.xsom.XSAttGroupDecl>
-                   public iterateAttGroupDecls(): java.util.Iterator<com.sun.xml.internal.xsom.XSAttGroupDecl>
-                   public getAttGroupDecl(arg0: java.lang.String): com.sun.xml.internal.xsom.XSAttGroupDecl
-                   public getModelGroupDecls(): java.util.Map<java.lang.String, com.sun.xml.internal.xsom.XSModelGroupDecl>
-                   public iterateModelGroupDecls(): java.util.Iterator<com.sun.xml.internal.xsom.XSModelGroupDecl>
-                   public getModelGroupDecl(arg0: java.lang.String): com.sun.xml.internal.xsom.XSModelGroupDecl
-                   public getTypes(): java.util.Map<java.lang.String, com.sun.xml.internal.xsom.XSType>
-                   public iterateTypes(): java.util.Iterator<com.sun.xml.internal.xsom.XSType>
-                   public getType(arg0: java.lang.String): com.sun.xml.internal.xsom.XSType
-                   public getSimpleTypes(): java.util.Map<java.lang.String, com.sun.xml.internal.xsom.XSSimpleType>
-                   public iterateSimpleTypes(): java.util.Iterator<com.sun.xml.internal.xsom.XSSimpleType>
-                   public getSimpleType(arg0: java.lang.String): com.sun.xml.internal.xsom.XSSimpleType
-                   public getComplexTypes(): java.util.Map<java.lang.String, com.sun.xml.internal.xsom.XSComplexType>
-                   public iterateComplexTypes(): java.util.Iterator<com.sun.xml.internal.xsom.XSComplexType>
-                   public getComplexType(arg0: java.lang.String): com.sun.xml.internal.xsom.XSComplexType
-                   public getNotations(): java.util.Map<java.lang.String, com.sun.xml.internal.xsom.XSNotation>
-                   public iterateNotations(): java.util.Iterator<com.sun.xml.internal.xsom.XSNotation>
-                   public getNotation(arg0: java.lang.String): com.sun.xml.internal.xsom.XSNotation
-                   public getIdentityConstraints(): java.util.Map<java.lang.String, com.sun.xml.internal.xsom.XSIdentityConstraint>
-                   public getIdentityConstraint(arg0: java.lang.String): com.sun.xml.internal.xsom.XSIdentityConstraint
-                   public getSourceDocument(): com.sun.xml.internal.xsom.parser.SchemaDocument
-                   public getRoot(): com.sun.xml.internal.xsom.XSSchemaSet
+                   getTargetNamespace(): java.lang.String
+                   getAttributeDecls(): java.util.Map<java.lang.String, com.sun.xml.internal.xsom.XSAttributeDecl>
+                   iterateAttributeDecls(): java.util.Iterator<com.sun.xml.internal.xsom.XSAttributeDecl>
+                   getAttributeDecl(arg0: java.lang.String): com.sun.xml.internal.xsom.XSAttributeDecl
+                   getElementDecls(): java.util.Map<java.lang.String, com.sun.xml.internal.xsom.XSElementDecl>
+                   iterateElementDecls(): java.util.Iterator<com.sun.xml.internal.xsom.XSElementDecl>
+                   getElementDecl(arg0: java.lang.String): com.sun.xml.internal.xsom.XSElementDecl
+                   getAttGroupDecls(): java.util.Map<java.lang.String, com.sun.xml.internal.xsom.XSAttGroupDecl>
+                   iterateAttGroupDecls(): java.util.Iterator<com.sun.xml.internal.xsom.XSAttGroupDecl>
+                   getAttGroupDecl(arg0: java.lang.String): com.sun.xml.internal.xsom.XSAttGroupDecl
+                   getModelGroupDecls(): java.util.Map<java.lang.String, com.sun.xml.internal.xsom.XSModelGroupDecl>
+                   iterateModelGroupDecls(): java.util.Iterator<com.sun.xml.internal.xsom.XSModelGroupDecl>
+                   getModelGroupDecl(arg0: java.lang.String): com.sun.xml.internal.xsom.XSModelGroupDecl
+                   getTypes(): java.util.Map<java.lang.String, com.sun.xml.internal.xsom.XSType>
+                   iterateTypes(): java.util.Iterator<com.sun.xml.internal.xsom.XSType>
+                   getType(arg0: java.lang.String): com.sun.xml.internal.xsom.XSType
+                   getSimpleTypes(): java.util.Map<java.lang.String, com.sun.xml.internal.xsom.XSSimpleType>
+                   iterateSimpleTypes(): java.util.Iterator<com.sun.xml.internal.xsom.XSSimpleType>
+                   getSimpleType(arg0: java.lang.String): com.sun.xml.internal.xsom.XSSimpleType
+                   getComplexTypes(): java.util.Map<java.lang.String, com.sun.xml.internal.xsom.XSComplexType>
+                   iterateComplexTypes(): java.util.Iterator<com.sun.xml.internal.xsom.XSComplexType>
+                   getComplexType(arg0: java.lang.String): com.sun.xml.internal.xsom.XSComplexType
+                   getNotations(): java.util.Map<java.lang.String, com.sun.xml.internal.xsom.XSNotation>
+                   iterateNotations(): java.util.Iterator<com.sun.xml.internal.xsom.XSNotation>
+                   getNotation(arg0: java.lang.String): com.sun.xml.internal.xsom.XSNotation
+                   getIdentityConstraints(): java.util.Map<java.lang.String, com.sun.xml.internal.xsom.XSIdentityConstraint>
+                   getIdentityConstraint(arg0: java.lang.String): com.sun.xml.internal.xsom.XSIdentityConstraint
+                   getSourceDocument(): com.sun.xml.internal.xsom.parser.SchemaDocument
+                   getRoot(): com.sun.xml.internal.xsom.XSSchemaSet
                }
                interface XSSchemaSet {
                    getSchema<T>(...args: any[]): any
-                   public getSchemaSize(): int
-                   public iterateSchema(): java.util.Iterator<com.sun.xml.internal.xsom.XSSchema>
-                   public getSchemas(): java.util.Collection<com.sun.xml.internal.xsom.XSSchema>
-                   public getType(arg0: java.lang.String, arg1: java.lang.String): com.sun.xml.internal.xsom.XSType
-                   public getSimpleType(arg0: java.lang.String, arg1: java.lang.String): com.sun.xml.internal.xsom.XSSimpleType
-                   public getAttributeDecl(arg0: java.lang.String, arg1: java.lang.String): com.sun.xml.internal.xsom.XSAttributeDecl
-                   public getElementDecl(arg0: java.lang.String, arg1: java.lang.String): com.sun.xml.internal.xsom.XSElementDecl
-                   public getModelGroupDecl(arg0: java.lang.String, arg1: java.lang.String): com.sun.xml.internal.xsom.XSModelGroupDecl
-                   public getAttGroupDecl(arg0: java.lang.String, arg1: java.lang.String): com.sun.xml.internal.xsom.XSAttGroupDecl
-                   public getComplexType(arg0: java.lang.String, arg1: java.lang.String): com.sun.xml.internal.xsom.XSComplexType
-                   public getIdentityConstraint(arg0: java.lang.String, arg1: java.lang.String): com.sun.xml.internal.xsom.XSIdentityConstraint
-                   public iterateElementDecls(): java.util.Iterator<com.sun.xml.internal.xsom.XSElementDecl>
-                   public iterateTypes(): java.util.Iterator<com.sun.xml.internal.xsom.XSType>
-                   public iterateAttributeDecls(): java.util.Iterator<com.sun.xml.internal.xsom.XSAttributeDecl>
-                   public iterateAttGroupDecls(): java.util.Iterator<com.sun.xml.internal.xsom.XSAttGroupDecl>
-                   public iterateModelGroupDecls(): java.util.Iterator<com.sun.xml.internal.xsom.XSModelGroupDecl>
-                   public iterateSimpleTypes(): java.util.Iterator<com.sun.xml.internal.xsom.XSSimpleType>
-                   public iterateComplexTypes(): java.util.Iterator<com.sun.xml.internal.xsom.XSComplexType>
-                   public iterateNotations(): java.util.Iterator<com.sun.xml.internal.xsom.XSNotation>
-                   public iterateIdentityConstraints(): java.util.Iterator<com.sun.xml.internal.xsom.XSIdentityConstraint>
-                   public getAnyType(): com.sun.xml.internal.xsom.XSComplexType
-                   public getAnySimpleType(): com.sun.xml.internal.xsom.XSSimpleType
-                   public getEmpty(): com.sun.xml.internal.xsom.XSContentType
-                   public select(arg0: java.lang.String, arg1: javax.xml.namespace.NamespaceContext): java.util.Collection<com.sun.xml.internal.xsom.XSComponent>
-                   public selectSingle(arg0: java.lang.String, arg1: javax.xml.namespace.NamespaceContext): com.sun.xml.internal.xsom.XSComponent
+                   getSchemaSize(): int
+                   iterateSchema(): java.util.Iterator<com.sun.xml.internal.xsom.XSSchema>
+                   getSchemas(): java.util.Collection<com.sun.xml.internal.xsom.XSSchema>
+                   getType(arg0: java.lang.String, arg1: java.lang.String): com.sun.xml.internal.xsom.XSType
+                   getSimpleType(arg0: java.lang.String, arg1: java.lang.String): com.sun.xml.internal.xsom.XSSimpleType
+                   getAttributeDecl(arg0: java.lang.String, arg1: java.lang.String): com.sun.xml.internal.xsom.XSAttributeDecl
+                   getElementDecl(arg0: java.lang.String, arg1: java.lang.String): com.sun.xml.internal.xsom.XSElementDecl
+                   getModelGroupDecl(arg0: java.lang.String, arg1: java.lang.String): com.sun.xml.internal.xsom.XSModelGroupDecl
+                   getAttGroupDecl(arg0: java.lang.String, arg1: java.lang.String): com.sun.xml.internal.xsom.XSAttGroupDecl
+                   getComplexType(arg0: java.lang.String, arg1: java.lang.String): com.sun.xml.internal.xsom.XSComplexType
+                   getIdentityConstraint(arg0: java.lang.String, arg1: java.lang.String): com.sun.xml.internal.xsom.XSIdentityConstraint
+                   iterateElementDecls(): java.util.Iterator<com.sun.xml.internal.xsom.XSElementDecl>
+                   iterateTypes(): java.util.Iterator<com.sun.xml.internal.xsom.XSType>
+                   iterateAttributeDecls(): java.util.Iterator<com.sun.xml.internal.xsom.XSAttributeDecl>
+                   iterateAttGroupDecls(): java.util.Iterator<com.sun.xml.internal.xsom.XSAttGroupDecl>
+                   iterateModelGroupDecls(): java.util.Iterator<com.sun.xml.internal.xsom.XSModelGroupDecl>
+                   iterateSimpleTypes(): java.util.Iterator<com.sun.xml.internal.xsom.XSSimpleType>
+                   iterateComplexTypes(): java.util.Iterator<com.sun.xml.internal.xsom.XSComplexType>
+                   iterateNotations(): java.util.Iterator<com.sun.xml.internal.xsom.XSNotation>
+                   iterateIdentityConstraints(): java.util.Iterator<com.sun.xml.internal.xsom.XSIdentityConstraint>
+                   getAnyType(): com.sun.xml.internal.xsom.XSComplexType
+                   getAnySimpleType(): com.sun.xml.internal.xsom.XSSimpleType
+                   getEmpty(): com.sun.xml.internal.xsom.XSContentType
+                   select(arg0: java.lang.String, arg1: javax.xml.namespace.NamespaceContext): java.util.Collection<com.sun.xml.internal.xsom.XSComponent>
+                   selectSingle(arg0: java.lang.String, arg1: javax.xml.namespace.NamespaceContext): com.sun.xml.internal.xsom.XSComponent
                }
                namespace parser {
                   interface SchemaDocument {
-                      public getSystemId(): java.lang.String
-                      public getTargetNamespace(): java.lang.String
-                      public getSchema(): com.sun.xml.internal.xsom.XSSchema
-                      public getReferencedDocuments(): java.util.Set<com.sun.xml.internal.xsom.parser.SchemaDocument>
-                      public getIncludedDocuments(): java.util.Set<com.sun.xml.internal.xsom.parser.SchemaDocument>
-                      public getImportedDocuments(arg0: java.lang.String): java.util.Set<com.sun.xml.internal.xsom.parser.SchemaDocument>
-                      public includes(arg0: com.sun.xml.internal.xsom.parser.SchemaDocument): boolean
-                      public imports(arg0: com.sun.xml.internal.xsom.parser.SchemaDocument): boolean
-                      public getReferers(): java.util.Set<com.sun.xml.internal.xsom.parser.SchemaDocument>
+                      getSystemId(): java.lang.String
+                      getTargetNamespace(): java.lang.String
+                      getSchema(): com.sun.xml.internal.xsom.XSSchema
+                      getReferencedDocuments(): java.util.Set<com.sun.xml.internal.xsom.parser.SchemaDocument>
+                      getIncludedDocuments(): java.util.Set<com.sun.xml.internal.xsom.parser.SchemaDocument>
+                      getImportedDocuments(arg0: java.lang.String): java.util.Set<com.sun.xml.internal.xsom.parser.SchemaDocument>
+                      includes(arg0: com.sun.xml.internal.xsom.parser.SchemaDocument): boolean
+                      imports(arg0: com.sun.xml.internal.xsom.parser.SchemaDocument): boolean
+                      getReferers(): java.util.Set<com.sun.xml.internal.xsom.parser.SchemaDocument>
                   }
                   interface AnnotationParserFactory {
-                      public create(): com.sun.xml.internal.xsom.parser.AnnotationParser
+                      create(): com.sun.xml.internal.xsom.parser.AnnotationParser
                   }
                   abstract class AnnotationParser {
                       public constructor()
@@ -5719,7 +5719,7 @@ declare namespace com {
                       public getAnnotationParserFactory(): com.sun.xml.internal.xsom.parser.AnnotationParserFactory
                   }
                   interface XMLParser {
-                      public parse(arg0: org.xml.sax.InputSource, arg1: org.xml.sax.ContentHandler, arg2: org.xml.sax.ErrorHandler, arg3: org.xml.sax.EntityResolver): void
+                      parse(arg0: org.xml.sax.InputSource, arg1: org.xml.sax.ContentHandler, arg2: org.xml.sax.ErrorHandler, arg3: org.xml.sax.EntityResolver): void
                   }
                   class JAXPParser$XMLReaderEx extends org.xml.sax.helpers.XMLFilterImpl {
                       constructor(arg0: org.xml.sax.XMLReader)
@@ -5730,17 +5730,17 @@ declare namespace com {
                       constructor(...args: any[])
                       public parse(arg0: org.xml.sax.InputSource, arg1: org.xml.sax.ContentHandler, arg2: org.xml.sax.ErrorHandler, arg3: org.xml.sax.EntityResolver): void
                   }
-
+                  
                }
                interface XSModelGroupDecl extends com.sun.xml.internal.xsom.XSDeclaration , com.sun.xml.internal.xsom.XSTerm {
-                   public getModelGroup(): com.sun.xml.internal.xsom.XSModelGroup
+                   getModelGroup(): com.sun.xml.internal.xsom.XSModelGroup
                }
                interface XSDeclaration extends com.sun.xml.internal.xsom.XSComponent {
-                   public getTargetNamespace(): java.lang.String
-                   public getName(): java.lang.String
-                   public isAnonymous(): boolean
-                   public isGlobal(): boolean
-                   public isLocal(): boolean
+                   getTargetNamespace(): java.lang.String
+                   getName(): java.lang.String
+                   isAnonymous(): boolean
+                   isGlobal(): boolean
+                   isLocal(): boolean
                }
                class XSModelGroup$Compositor extends java.lang.Enum<com.sun.xml.internal.xsom.XSModelGroup$Compositor> {
                    public static ALL: com.sun.xml.internal.xsom.XSModelGroup$Compositor
@@ -5751,150 +5751,150 @@ declare namespace com {
                    toString<T>(...args: any[]): any
                }
                interface XSModelGroup extends com.sun.xml.internal.xsom.XSComponent , com.sun.xml.internal.xsom.XSTerm , java.lang.Iterable<com.sun.xml.internal.xsom.XSParticle> {
-                   public static ALL: com.sun.xml.internal.xsom.XSModelGroup$Compositor
-                   public static SEQUENCE: com.sun.xml.internal.xsom.XSModelGroup$Compositor
-                   public static CHOICE: com.sun.xml.internal.xsom.XSModelGroup$Compositor
-                   public getCompositor(): com.sun.xml.internal.xsom.XSModelGroup$Compositor
-                   public getChild(arg0: int): com.sun.xml.internal.xsom.XSParticle
-                   public getSize(): int
-                   public getChildren(): com.sun.xml.internal.xsom.XSParticle[]
+                   ALL: com.sun.xml.internal.xsom.XSModelGroup$Compositor
+                   SEQUENCE: com.sun.xml.internal.xsom.XSModelGroup$Compositor
+                   CHOICE: com.sun.xml.internal.xsom.XSModelGroup$Compositor
+                   getCompositor(): com.sun.xml.internal.xsom.XSModelGroup$Compositor
+                   getChild(arg0: int): com.sun.xml.internal.xsom.XSParticle
+                   getSize(): int
+                   getChildren(): com.sun.xml.internal.xsom.XSParticle[]
                }
                interface XSParticle extends com.sun.xml.internal.xsom.XSContentType {
-                   public static UNBOUNDED: int
-                   public getMinOccurs(): java.math.BigInteger
-                   public getMaxOccurs(): java.math.BigInteger
-                   public isRepeated(): boolean
-                   public getTerm(): com.sun.xml.internal.xsom.XSTerm
+                   UNBOUNDED: int
+                   getMinOccurs(): java.math.BigInteger
+                   getMaxOccurs(): java.math.BigInteger
+                   isRepeated(): boolean
+                   getTerm(): com.sun.xml.internal.xsom.XSTerm
                }
                interface XSContentType extends com.sun.xml.internal.xsom.XSComponent {
-                   public asSimpleType(): com.sun.xml.internal.xsom.XSSimpleType
-                   public asParticle(): com.sun.xml.internal.xsom.XSParticle
-                   public asEmpty(): com.sun.xml.internal.xsom.XSContentType
-                   public apply<T>(arg0: com.sun.xml.internal.xsom.visitor.XSContentTypeFunction<T>): T
-                   public visit(arg0: com.sun.xml.internal.xsom.visitor.XSContentTypeVisitor): void
+                   asSimpleType(): com.sun.xml.internal.xsom.XSSimpleType
+                   asParticle(): com.sun.xml.internal.xsom.XSParticle
+                   asEmpty(): com.sun.xml.internal.xsom.XSContentType
+                   apply<T>(arg0: com.sun.xml.internal.xsom.visitor.XSContentTypeFunction<T>): T
+                   visit(arg0: com.sun.xml.internal.xsom.visitor.XSContentTypeVisitor): void
                }
                interface XSElementDecl extends com.sun.xml.internal.xsom.XSDeclaration , com.sun.xml.internal.xsom.XSTerm {
-                   public getType(): com.sun.xml.internal.xsom.XSType
-                   public isNillable(): boolean
-                   public getSubstAffiliation(): com.sun.xml.internal.xsom.XSElementDecl
-                   public getIdentityConstraints(): java.util.List<com.sun.xml.internal.xsom.XSIdentityConstraint>
-                   public isSubstitutionExcluded(arg0: int): boolean
-                   public isSubstitutionDisallowed(arg0: int): boolean
-                   public isAbstract(): boolean
-                   public listSubstitutables(): com.sun.xml.internal.xsom.XSElementDecl[]
-                   public getSubstitutables(): java.util.Set<com.sun.xml.internal.xsom.XSElementDecl>
-                   public canBeSubstitutedBy(arg0: com.sun.xml.internal.xsom.XSElementDecl): boolean
-                   public getDefaultValue(): com.sun.xml.internal.xsom.XmlString
-                   public getFixedValue(): com.sun.xml.internal.xsom.XmlString
-                   public getForm(): java.lang.Boolean
+                   getType(): com.sun.xml.internal.xsom.XSType
+                   isNillable(): boolean
+                   getSubstAffiliation(): com.sun.xml.internal.xsom.XSElementDecl
+                   getIdentityConstraints(): java.util.List<com.sun.xml.internal.xsom.XSIdentityConstraint>
+                   isSubstitutionExcluded(arg0: int): boolean
+                   isSubstitutionDisallowed(arg0: int): boolean
+                   isAbstract(): boolean
+                   listSubstitutables(): com.sun.xml.internal.xsom.XSElementDecl[]
+                   getSubstitutables(): java.util.Set<com.sun.xml.internal.xsom.XSElementDecl>
+                   canBeSubstitutedBy(arg0: com.sun.xml.internal.xsom.XSElementDecl): boolean
+                   getDefaultValue(): com.sun.xml.internal.xsom.XmlString
+                   getFixedValue(): com.sun.xml.internal.xsom.XmlString
+                   getForm(): java.lang.Boolean
                }
                interface XSAttributeDecl extends com.sun.xml.internal.xsom.XSDeclaration {
-                   public getType(): com.sun.xml.internal.xsom.XSSimpleType
-                   public getDefaultValue(): com.sun.xml.internal.xsom.XmlString
-                   public getFixedValue(): com.sun.xml.internal.xsom.XmlString
+                   getType(): com.sun.xml.internal.xsom.XSSimpleType
+                   getDefaultValue(): com.sun.xml.internal.xsom.XmlString
+                   getFixedValue(): com.sun.xml.internal.xsom.XmlString
                }
                interface XSAttGroupDecl extends com.sun.xml.internal.xsom.XSAttContainer {
                }
                interface XSAttContainer extends com.sun.xml.internal.xsom.XSDeclaration {
-                   public getAttributeWildcard(): com.sun.xml.internal.xsom.XSWildcard
-                   public getAttributeUse(arg0: java.lang.String, arg1: java.lang.String): com.sun.xml.internal.xsom.XSAttributeUse
-                   public iterateAttributeUses(): java.util.Iterator<com.sun.xml.internal.xsom.XSAttributeUse>
-                   public getAttributeUses(): java.util.Collection<com.sun.xml.internal.xsom.XSAttributeUse>
-                   public getDeclaredAttributeUse(arg0: java.lang.String, arg1: java.lang.String): com.sun.xml.internal.xsom.XSAttributeUse
-                   public iterateDeclaredAttributeUses(): java.util.Iterator<com.sun.xml.internal.xsom.XSAttributeUse>
-                   public getDeclaredAttributeUses(): java.util.Collection<com.sun.xml.internal.xsom.XSAttributeUse>
-                   public iterateAttGroups(): java.util.Iterator<com.sun.xml.internal.xsom.XSAttGroupDecl>
-                   public getAttGroups(): java.util.Collection<com.sun.xml.internal.xsom.XSAttGroupDecl>
+                   getAttributeWildcard(): com.sun.xml.internal.xsom.XSWildcard
+                   getAttributeUse(arg0: java.lang.String, arg1: java.lang.String): com.sun.xml.internal.xsom.XSAttributeUse
+                   iterateAttributeUses(): java.util.Iterator<com.sun.xml.internal.xsom.XSAttributeUse>
+                   getAttributeUses(): java.util.Collection<com.sun.xml.internal.xsom.XSAttributeUse>
+                   getDeclaredAttributeUse(arg0: java.lang.String, arg1: java.lang.String): com.sun.xml.internal.xsom.XSAttributeUse
+                   iterateDeclaredAttributeUses(): java.util.Iterator<com.sun.xml.internal.xsom.XSAttributeUse>
+                   getDeclaredAttributeUses(): java.util.Collection<com.sun.xml.internal.xsom.XSAttributeUse>
+                   iterateAttGroups(): java.util.Iterator<com.sun.xml.internal.xsom.XSAttGroupDecl>
+                   getAttGroups(): java.util.Collection<com.sun.xml.internal.xsom.XSAttGroupDecl>
                }
                interface XSType extends com.sun.xml.internal.xsom.XSDeclaration {
-                   public static EXTENSION: int
-                   public static RESTRICTION: int
-                   public static SUBSTITUTION: int
-                   public getBaseType(): com.sun.xml.internal.xsom.XSType
-                   public getDerivationMethod(): int
-                   public isSimpleType(): boolean
-                   public isComplexType(): boolean
-                   public listSubstitutables(): com.sun.xml.internal.xsom.XSType[]
-                   public getRedefinedBy(): com.sun.xml.internal.xsom.XSType
-                   public getRedefinedCount(): int
-                   public asSimpleType(): com.sun.xml.internal.xsom.XSSimpleType
-                   public asComplexType(): com.sun.xml.internal.xsom.XSComplexType
-                   public isDerivedFrom(arg0: com.sun.xml.internal.xsom.XSType): boolean
+                   EXTENSION: int
+                   RESTRICTION: int
+                   SUBSTITUTION: int
+                   getBaseType(): com.sun.xml.internal.xsom.XSType
+                   getDerivationMethod(): int
+                   isSimpleType(): boolean
+                   isComplexType(): boolean
+                   listSubstitutables(): com.sun.xml.internal.xsom.XSType[]
+                   getRedefinedBy(): com.sun.xml.internal.xsom.XSType
+                   getRedefinedCount(): int
+                   asSimpleType(): com.sun.xml.internal.xsom.XSSimpleType
+                   asComplexType(): com.sun.xml.internal.xsom.XSComplexType
+                   isDerivedFrom(arg0: com.sun.xml.internal.xsom.XSType): boolean
                }
                interface XSSimpleType extends com.sun.xml.internal.xsom.XSType , com.sun.xml.internal.xsom.XSContentType {
-                   public getSimpleBaseType(): com.sun.xml.internal.xsom.XSSimpleType
-                   public getVariety(): com.sun.xml.internal.xsom.XSVariety
-                   public getPrimitiveType(): com.sun.xml.internal.xsom.XSSimpleType
-                   public isPrimitive(): boolean
-                   public getBaseListType(): com.sun.xml.internal.xsom.XSListSimpleType
-                   public getBaseUnionType(): com.sun.xml.internal.xsom.XSUnionSimpleType
-                   public isFinal(arg0: com.sun.xml.internal.xsom.XSVariety): boolean
+                   getSimpleBaseType(): com.sun.xml.internal.xsom.XSSimpleType
+                   getVariety(): com.sun.xml.internal.xsom.XSVariety
+                   getPrimitiveType(): com.sun.xml.internal.xsom.XSSimpleType
+                   isPrimitive(): boolean
+                   getBaseListType(): com.sun.xml.internal.xsom.XSListSimpleType
+                   getBaseUnionType(): com.sun.xml.internal.xsom.XSUnionSimpleType
+                   isFinal(arg0: com.sun.xml.internal.xsom.XSVariety): boolean
                    getRedefinedBy<T>(...args: any[]): any
-                   public getFacet(arg0: java.lang.String): com.sun.xml.internal.xsom.XSFacet
-                   public getFacets(arg0: java.lang.String): java.util.List<com.sun.xml.internal.xsom.XSFacet>
-                   public visit(arg0: com.sun.xml.internal.xsom.visitor.XSSimpleTypeVisitor): void
-                   public apply<T>(arg0: com.sun.xml.internal.xsom.visitor.XSSimpleTypeFunction<T>): T
-                   public isRestriction(): boolean
-                   public isList(): boolean
-                   public isUnion(): boolean
-                   public asRestriction(): com.sun.xml.internal.xsom.XSRestrictionSimpleType
-                   public asList(): com.sun.xml.internal.xsom.XSListSimpleType
-                   public asUnion(): com.sun.xml.internal.xsom.XSUnionSimpleType
+                   getFacet(arg0: java.lang.String): com.sun.xml.internal.xsom.XSFacet
+                   getFacets(arg0: java.lang.String): java.util.List<com.sun.xml.internal.xsom.XSFacet>
+                   visit(arg0: com.sun.xml.internal.xsom.visitor.XSSimpleTypeVisitor): void
+                   apply<T>(arg0: com.sun.xml.internal.xsom.visitor.XSSimpleTypeFunction<T>): T
+                   isRestriction(): boolean
+                   isList(): boolean
+                   isUnion(): boolean
+                   asRestriction(): com.sun.xml.internal.xsom.XSRestrictionSimpleType
+                   asList(): com.sun.xml.internal.xsom.XSListSimpleType
+                   asUnion(): com.sun.xml.internal.xsom.XSUnionSimpleType
                }
                interface XSComplexType extends com.sun.xml.internal.xsom.XSType , com.sun.xml.internal.xsom.XSAttContainer {
-                   public isAbstract(): boolean
-                   public isFinal(arg0: int): boolean
-                   public isSubstitutionProhibited(arg0: int): boolean
-                   public getScope(): com.sun.xml.internal.xsom.XSElementDecl
-                   public getContentType(): com.sun.xml.internal.xsom.XSContentType
-                   public getExplicitContent(): com.sun.xml.internal.xsom.XSContentType
-                   public isMixed(): boolean
+                   isAbstract(): boolean
+                   isFinal(arg0: int): boolean
+                   isSubstitutionProhibited(arg0: int): boolean
+                   getScope(): com.sun.xml.internal.xsom.XSElementDecl
+                   getContentType(): com.sun.xml.internal.xsom.XSContentType
+                   getExplicitContent(): com.sun.xml.internal.xsom.XSContentType
+                   isMixed(): boolean
                    getRedefinedBy<T>(...args: any[]): any
-                   public getSubtypes(): java.util.List<com.sun.xml.internal.xsom.XSComplexType>
-                   public getElementDecls(): java.util.List<com.sun.xml.internal.xsom.XSElementDecl>
+                   getSubtypes(): java.util.List<com.sun.xml.internal.xsom.XSComplexType>
+                   getElementDecls(): java.util.List<com.sun.xml.internal.xsom.XSElementDecl>
                }
                interface XSNotation extends com.sun.xml.internal.xsom.XSDeclaration {
-                   public getPublicId(): java.lang.String
-                   public getSystemId(): java.lang.String
+                   getPublicId(): java.lang.String
+                   getSystemId(): java.lang.String
                }
                interface XSIdentityConstraint extends com.sun.xml.internal.xsom.XSComponent {
-                   public static KEY: short
-                   public static KEYREF: short
-                   public static UNIQUE: short
-                   public getParent(): com.sun.xml.internal.xsom.XSElementDecl
-                   public getName(): java.lang.String
-                   public getTargetNamespace(): java.lang.String
-                   public getCategory(): short
-                   public getSelector(): com.sun.xml.internal.xsom.XSXPath
-                   public getFields(): java.util.List<com.sun.xml.internal.xsom.XSXPath>
-                   public getReferencedKey(): com.sun.xml.internal.xsom.XSIdentityConstraint
+                   KEY: short
+                   KEYREF: short
+                   UNIQUE: short
+                   getParent(): com.sun.xml.internal.xsom.XSElementDecl
+                   getName(): java.lang.String
+                   getTargetNamespace(): java.lang.String
+                   getCategory(): short
+                   getSelector(): com.sun.xml.internal.xsom.XSXPath
+                   getFields(): java.util.List<com.sun.xml.internal.xsom.XSXPath>
+                   getReferencedKey(): com.sun.xml.internal.xsom.XSIdentityConstraint
                }
                interface XSAttributeUse extends com.sun.xml.internal.xsom.XSComponent {
-                   public isRequired(): boolean
-                   public getDecl(): com.sun.xml.internal.xsom.XSAttributeDecl
-                   public getDefaultValue(): com.sun.xml.internal.xsom.XmlString
-                   public getFixedValue(): com.sun.xml.internal.xsom.XmlString
+                   isRequired(): boolean
+                   getDecl(): com.sun.xml.internal.xsom.XSAttributeDecl
+                   getDefaultValue(): com.sun.xml.internal.xsom.XmlString
+                   getFixedValue(): com.sun.xml.internal.xsom.XmlString
                }
                interface XSFacet extends com.sun.xml.internal.xsom.XSComponent {
-                   public static FACET_LENGTH: java.lang.String
-                   public static FACET_MINLENGTH: java.lang.String
-                   public static FACET_MAXLENGTH: java.lang.String
-                   public static FACET_PATTERN: java.lang.String
-                   public static FACET_ENUMERATION: java.lang.String
-                   public static FACET_TOTALDIGITS: java.lang.String
-                   public static FACET_FRACTIONDIGITS: java.lang.String
-                   public static FACET_MININCLUSIVE: java.lang.String
-                   public static FACET_MAXINCLUSIVE: java.lang.String
-                   public static FACET_MINEXCLUSIVE: java.lang.String
-                   public static FACET_MAXEXCLUSIVE: java.lang.String
-                   public static FACET_WHITESPACE: java.lang.String
-                   public getName(): java.lang.String
-                   public getValue(): com.sun.xml.internal.xsom.XmlString
-                   public isFixed(): boolean
+                   FACET_LENGTH: java.lang.String
+                   FACET_MINLENGTH: java.lang.String
+                   FACET_MAXLENGTH: java.lang.String
+                   FACET_PATTERN: java.lang.String
+                   FACET_ENUMERATION: java.lang.String
+                   FACET_TOTALDIGITS: java.lang.String
+                   FACET_FRACTIONDIGITS: java.lang.String
+                   FACET_MININCLUSIVE: java.lang.String
+                   FACET_MAXINCLUSIVE: java.lang.String
+                   FACET_MINEXCLUSIVE: java.lang.String
+                   FACET_MAXEXCLUSIVE: java.lang.String
+                   FACET_WHITESPACE: java.lang.String
+                   getName(): java.lang.String
+                   getValue(): com.sun.xml.internal.xsom.XmlString
+                   isFixed(): boolean
                }
                interface XSXPath extends com.sun.xml.internal.xsom.XSComponent {
-                   public getParent(): com.sun.xml.internal.xsom.XSIdentityConstraint
-                   public getXPath(): com.sun.xml.internal.xsom.XmlString
+                   getParent(): com.sun.xml.internal.xsom.XSIdentityConstraint
+                   getXPath(): com.sun.xml.internal.xsom.XmlString
                }
                class XmlString$1 implements org.relaxng.datatype.ValidationContext {
                    constructor()
@@ -5917,16 +5917,16 @@ declare namespace com {
                    toString<T>(...args: any[]): any
                }
                interface XSListSimpleType extends com.sun.xml.internal.xsom.XSSimpleType {
-                   public getItemType(): com.sun.xml.internal.xsom.XSSimpleType
+                   getItemType(): com.sun.xml.internal.xsom.XSSimpleType
                }
                interface XSUnionSimpleType extends com.sun.xml.internal.xsom.XSSimpleType , java.lang.Iterable<com.sun.xml.internal.xsom.XSSimpleType> {
-                   public getMember(arg0: int): com.sun.xml.internal.xsom.XSSimpleType
-                   public getMemberSize(): int
+                   getMember(arg0: int): com.sun.xml.internal.xsom.XSSimpleType
+                   getMemberSize(): int
                }
                interface XSRestrictionSimpleType extends com.sun.xml.internal.xsom.XSSimpleType {
-                   public iterateDeclaredFacets(): java.util.Iterator<com.sun.xml.internal.xsom.XSFacet>
+                   iterateDeclaredFacets(): java.util.Iterator<com.sun.xml.internal.xsom.XSFacet>
                    getDeclaredFacets<T>(...args: any[]): any
-                   public getDeclaredFacet(arg0: java.lang.String): com.sun.xml.internal.xsom.XSFacet
+                   getDeclaredFacet(arg0: java.lang.String): com.sun.xml.internal.xsom.XSFacet
                }
                abstract class SCD {
                    public constructor()
@@ -5935,7 +5935,7 @@ declare namespace com {
                    selectSingle<T>(...args: any[]): any
                    toString<T>(...args: any[]): any
                }
-
+               
             }
             namespace rngom {
                namespace parse {
@@ -5963,7 +5963,7 @@ declare namespace com {
                          public getBaseUri(): java.lang.String
                      }
                      interface SchemaParser$CommentHandler {
-                         public comment(arg0: java.lang.String): void
+                         comment(arg0: java.lang.String): void
                      }
                      abstract class SchemaParser$Handler implements org.xml.sax.ContentHandler , com.sun.xml.internal.rngom.parse.xml.SchemaParser$CommentHandler {
                          comments: com.sun.xml.internal.rngom.ast.builder.CommentList
@@ -6100,7 +6100,7 @@ declare namespace com {
                          buildPattern(arg0: java.util.List<com.sun.xml.internal.rngom.ast.om.ParsedPattern>, arg1: com.sun.xml.internal.rngom.ast.om.Location, arg2: com.sun.xml.internal.rngom.ast.builder.Annotations): com.sun.xml.internal.rngom.ast.om.ParsedPattern
                      }
                      interface SchemaParser$NameClassRef {
-                         public setNameClass(arg0: com.sun.xml.internal.rngom.ast.om.ParsedNameClass): void
+                         setNameClass(arg0: com.sun.xml.internal.rngom.ast.om.ParsedNameClass): void
                      }
                      class SchemaParser$ElementState extends com.sun.xml.internal.rngom.parse.xml.SchemaParser$PatternContainerState implements com.sun.xml.internal.rngom.parse.xml.SchemaParser$NameClassRef {
                          nameClass: com.sun.xml.internal.rngom.ast.om.ParsedNameClass
@@ -6401,7 +6401,7 @@ declare namespace com {
                          public parseExternal(arg0: java.lang.String, arg1: com.sun.xml.internal.rngom.ast.builder.SchemaBuilder, arg2: com.sun.xml.internal.rngom.ast.builder.Scope, arg3: java.lang.String): com.sun.xml.internal.rngom.ast.om.ParsedPattern
                          static toBuildException(arg0: org.xml.sax.SAXException): com.sun.xml.internal.rngom.ast.builder.BuildException
                      }
-
+                     
                   }
                   namespace compact {
                      class UCode_UCodeESC_CharStream {
@@ -6579,35 +6579,35 @@ declare namespace com {
                          SkipLexicalActions(arg0: com.sun.xml.internal.rngom.parse.compact.Token): void
                      }
                      interface CompactSyntaxConstants {
-                         public static EOF: int
-                         public static NEWLINE: int
-                         public static NOT_NEWLINE: int
-                         public static WS: int
-                         public static DOCUMENTATION: int
-                         public static DOCUMENTATION_CONTINUE: int
-                         public static SINGLE_LINE_COMMENT: int
-                         public static DOCUMENTATION_AFTER_SINGLE_LINE_COMMENT: int
-                         public static SINGLE_LINE_COMMENT_CONTINUE: int
-                         public static BASE_CHAR: int
-                         public static IDEOGRAPHIC: int
-                         public static LETTER: int
-                         public static COMBINING_CHAR: int
-                         public static DIGIT: int
-                         public static EXTENDER: int
-                         public static NMSTART: int
-                         public static NMCHAR: int
-                         public static NCNAME: int
-                         public static IDENTIFIER: int
-                         public static ESCAPED_IDENTIFIER: int
-                         public static PREFIX_STAR: int
-                         public static PREFIXED_NAME: int
-                         public static LITERAL: int
-                         public static FANNOTATE: int
-                         public static ILLEGAL_CHAR: int
-                         public static DEFAULT: int
-                         public static AFTER_SINGLE_LINE_COMMENT: int
-                         public static AFTER_DOCUMENTATION: int
-                         public static tokenImage: java.lang.String[]
+                         EOF: int
+                         NEWLINE: int
+                         NOT_NEWLINE: int
+                         WS: int
+                         DOCUMENTATION: int
+                         DOCUMENTATION_CONTINUE: int
+                         SINGLE_LINE_COMMENT: int
+                         DOCUMENTATION_AFTER_SINGLE_LINE_COMMENT: int
+                         SINGLE_LINE_COMMENT_CONTINUE: int
+                         BASE_CHAR: int
+                         IDEOGRAPHIC: int
+                         LETTER: int
+                         COMBINING_CHAR: int
+                         DIGIT: int
+                         EXTENDER: int
+                         NMSTART: int
+                         NMCHAR: int
+                         NCNAME: int
+                         IDENTIFIER: int
+                         ESCAPED_IDENTIFIER: int
+                         PREFIX_STAR: int
+                         PREFIXED_NAME: int
+                         LITERAL: int
+                         FANNOTATE: int
+                         ILLEGAL_CHAR: int
+                         DEFAULT: int
+                         AFTER_SINGLE_LINE_COMMENT: int
+                         AFTER_DOCUMENTATION: int
+                         tokenImage: java.lang.String[]
                      }
                      class CompactSyntax$LocatedString {
                          this$0: com.sun.xml.internal.rngom.parse.compact.CompactSyntax
@@ -6734,16 +6734,16 @@ declare namespace com {
                          public parseInclude(arg0: java.lang.String, arg1: com.sun.xml.internal.rngom.ast.builder.SchemaBuilder, arg2: com.sun.xml.internal.rngom.ast.builder.IncludedGrammar, arg3: java.lang.String): com.sun.xml.internal.rngom.ast.om.ParsedPattern
                          public parseExternal(arg0: java.lang.String, arg1: com.sun.xml.internal.rngom.ast.builder.SchemaBuilder, arg2: com.sun.xml.internal.rngom.ast.builder.Scope, arg3: java.lang.String): com.sun.xml.internal.rngom.ast.om.ParsedPattern
                      }
-
+                     
                   }
                   interface Context extends org.relaxng.datatype.ValidationContext {
-                      public prefixes(): java.util.Enumeration
-                      public copy(): com.sun.xml.internal.rngom.parse.Context
+                      prefixes(): java.util.Enumeration
+                      copy(): com.sun.xml.internal.rngom.parse.Context
                   }
                   interface Parseable {
-                      public parse<P extends com.sun.xml.internal.rngom.ast.om.ParsedPattern>(arg0: com.sun.xml.internal.rngom.ast.builder.SchemaBuilder<any, P, any, any, any, any>): P
-                      public parseInclude<P extends com.sun.xml.internal.rngom.ast.om.ParsedPattern>(arg0: java.lang.String, arg1: com.sun.xml.internal.rngom.ast.builder.SchemaBuilder<any, P, any, any, any, any>, arg2: com.sun.xml.internal.rngom.ast.builder.IncludedGrammar<P, any, any, any, any>, arg3: java.lang.String): P
-                      public parseExternal<P extends com.sun.xml.internal.rngom.ast.om.ParsedPattern>(arg0: java.lang.String, arg1: com.sun.xml.internal.rngom.ast.builder.SchemaBuilder<any, P, any, any, any, any>, arg2: com.sun.xml.internal.rngom.ast.builder.Scope, arg3: java.lang.String): P
+                      parse<P extends com.sun.xml.internal.rngom.ast.om.ParsedPattern>(arg0: com.sun.xml.internal.rngom.ast.builder.SchemaBuilder<any, P, any, any, any, any>): P
+                      parseInclude<P extends com.sun.xml.internal.rngom.ast.om.ParsedPattern>(arg0: java.lang.String, arg1: com.sun.xml.internal.rngom.ast.builder.SchemaBuilder<any, P, any, any, any, any>, arg2: com.sun.xml.internal.rngom.ast.builder.IncludedGrammar<P, any, any, any, any>, arg3: java.lang.String): P
+                      parseExternal<P extends com.sun.xml.internal.rngom.ast.om.ParsedPattern>(arg0: java.lang.String, arg1: com.sun.xml.internal.rngom.ast.builder.SchemaBuilder<any, P, any, any, any, any>, arg2: com.sun.xml.internal.rngom.ast.builder.Scope, arg3: java.lang.String): P
                   }
                   class IllegalSchemaException extends java.lang.Exception {
                       public constructor()
@@ -6878,9 +6878,9 @@ declare namespace com {
                          constructor(arg0: com.sun.xml.internal.rngom.ast.builder.CommentList, arg1: com.sun.xml.internal.rngom.ast.builder.CommentList)
                          public addComment(arg0: java.lang.String, arg1: com.sun.xml.internal.rngom.ast.om.Location): void
                      }
-
+                     
                   }
-
+                  
                }
                namespace dt {
                   namespace builtin {
@@ -6903,7 +6903,7 @@ declare namespace com {
                          public addParameter(arg0: java.lang.String, arg1: java.lang.String, arg2: org.relaxng.datatype.ValidationContext): void
                          public createDatatype(): org.relaxng.datatype.Datatype
                      }
-
+                     
                   }
                   class DoNothingDatatypeLibraryFactoryImpl$1$1$1 implements org.relaxng.datatype.Datatype {
                       this$2: com.sun.xml.internal.rngom.dt.DoNothingDatatypeLibraryFactoryImpl$1$1
@@ -6941,7 +6941,7 @@ declare namespace com {
                       public constructor(arg0: org.relaxng.datatype.DatatypeLibraryFactory)
                       public createDatatypeLibrary(arg0: java.lang.String): org.relaxng.datatype.DatatypeLibrary
                   }
-
+                  
                }
                namespace binary {
                   namespace visitor {
@@ -6965,39 +6965,39 @@ declare namespace com {
                          public visitAfter(arg0: com.sun.xml.internal.rngom.binary.Pattern, arg1: com.sun.xml.internal.rngom.binary.Pattern): void
                      }
                      interface PatternVisitor {
-                         public visitEmpty(): void
-                         public visitNotAllowed(): void
-                         public visitError(): void
-                         public visitAfter(arg0: com.sun.xml.internal.rngom.binary.Pattern, arg1: com.sun.xml.internal.rngom.binary.Pattern): void
-                         public visitGroup(arg0: com.sun.xml.internal.rngom.binary.Pattern, arg1: com.sun.xml.internal.rngom.binary.Pattern): void
-                         public visitInterleave(arg0: com.sun.xml.internal.rngom.binary.Pattern, arg1: com.sun.xml.internal.rngom.binary.Pattern): void
-                         public visitChoice(arg0: com.sun.xml.internal.rngom.binary.Pattern, arg1: com.sun.xml.internal.rngom.binary.Pattern): void
-                         public visitOneOrMore(arg0: com.sun.xml.internal.rngom.binary.Pattern): void
-                         public visitElement(arg0: com.sun.xml.internal.rngom.nc.NameClass, arg1: com.sun.xml.internal.rngom.binary.Pattern): void
-                         public visitAttribute(arg0: com.sun.xml.internal.rngom.nc.NameClass, arg1: com.sun.xml.internal.rngom.binary.Pattern): void
-                         public visitData(arg0: org.relaxng.datatype.Datatype): void
-                         public visitDataExcept(arg0: org.relaxng.datatype.Datatype, arg1: com.sun.xml.internal.rngom.binary.Pattern): void
-                         public visitValue(arg0: org.relaxng.datatype.Datatype, arg1: java.lang.Object): void
-                         public visitText(): void
-                         public visitList(arg0: com.sun.xml.internal.rngom.binary.Pattern): void
+                         visitEmpty(): void
+                         visitNotAllowed(): void
+                         visitError(): void
+                         visitAfter(arg0: com.sun.xml.internal.rngom.binary.Pattern, arg1: com.sun.xml.internal.rngom.binary.Pattern): void
+                         visitGroup(arg0: com.sun.xml.internal.rngom.binary.Pattern, arg1: com.sun.xml.internal.rngom.binary.Pattern): void
+                         visitInterleave(arg0: com.sun.xml.internal.rngom.binary.Pattern, arg1: com.sun.xml.internal.rngom.binary.Pattern): void
+                         visitChoice(arg0: com.sun.xml.internal.rngom.binary.Pattern, arg1: com.sun.xml.internal.rngom.binary.Pattern): void
+                         visitOneOrMore(arg0: com.sun.xml.internal.rngom.binary.Pattern): void
+                         visitElement(arg0: com.sun.xml.internal.rngom.nc.NameClass, arg1: com.sun.xml.internal.rngom.binary.Pattern): void
+                         visitAttribute(arg0: com.sun.xml.internal.rngom.nc.NameClass, arg1: com.sun.xml.internal.rngom.binary.Pattern): void
+                         visitData(arg0: org.relaxng.datatype.Datatype): void
+                         visitDataExcept(arg0: org.relaxng.datatype.Datatype, arg1: com.sun.xml.internal.rngom.binary.Pattern): void
+                         visitValue(arg0: org.relaxng.datatype.Datatype, arg1: java.lang.Object): void
+                         visitText(): void
+                         visitList(arg0: com.sun.xml.internal.rngom.binary.Pattern): void
                      }
                      interface PatternFunction {
-                         public caseEmpty(arg0: com.sun.xml.internal.rngom.binary.EmptyPattern): java.lang.Object
-                         public caseNotAllowed(arg0: com.sun.xml.internal.rngom.binary.NotAllowedPattern): java.lang.Object
-                         public caseError(arg0: com.sun.xml.internal.rngom.binary.ErrorPattern): java.lang.Object
-                         public caseGroup(arg0: com.sun.xml.internal.rngom.binary.GroupPattern): java.lang.Object
-                         public caseInterleave(arg0: com.sun.xml.internal.rngom.binary.InterleavePattern): java.lang.Object
-                         public caseChoice(arg0: com.sun.xml.internal.rngom.binary.ChoicePattern): java.lang.Object
-                         public caseOneOrMore(arg0: com.sun.xml.internal.rngom.binary.OneOrMorePattern): java.lang.Object
-                         public caseElement(arg0: com.sun.xml.internal.rngom.binary.ElementPattern): java.lang.Object
-                         public caseAttribute(arg0: com.sun.xml.internal.rngom.binary.AttributePattern): java.lang.Object
-                         public caseData(arg0: com.sun.xml.internal.rngom.binary.DataPattern): java.lang.Object
-                         public caseDataExcept(arg0: com.sun.xml.internal.rngom.binary.DataExceptPattern): java.lang.Object
-                         public caseValue(arg0: com.sun.xml.internal.rngom.binary.ValuePattern): java.lang.Object
-                         public caseText(arg0: com.sun.xml.internal.rngom.binary.TextPattern): java.lang.Object
-                         public caseList(arg0: com.sun.xml.internal.rngom.binary.ListPattern): java.lang.Object
-                         public caseRef(arg0: com.sun.xml.internal.rngom.binary.RefPattern): java.lang.Object
-                         public caseAfter(arg0: com.sun.xml.internal.rngom.binary.AfterPattern): java.lang.Object
+                         caseEmpty(arg0: com.sun.xml.internal.rngom.binary.EmptyPattern): java.lang.Object
+                         caseNotAllowed(arg0: com.sun.xml.internal.rngom.binary.NotAllowedPattern): java.lang.Object
+                         caseError(arg0: com.sun.xml.internal.rngom.binary.ErrorPattern): java.lang.Object
+                         caseGroup(arg0: com.sun.xml.internal.rngom.binary.GroupPattern): java.lang.Object
+                         caseInterleave(arg0: com.sun.xml.internal.rngom.binary.InterleavePattern): java.lang.Object
+                         caseChoice(arg0: com.sun.xml.internal.rngom.binary.ChoicePattern): java.lang.Object
+                         caseOneOrMore(arg0: com.sun.xml.internal.rngom.binary.OneOrMorePattern): java.lang.Object
+                         caseElement(arg0: com.sun.xml.internal.rngom.binary.ElementPattern): java.lang.Object
+                         caseAttribute(arg0: com.sun.xml.internal.rngom.binary.AttributePattern): java.lang.Object
+                         caseData(arg0: com.sun.xml.internal.rngom.binary.DataPattern): java.lang.Object
+                         caseDataExcept(arg0: com.sun.xml.internal.rngom.binary.DataExceptPattern): java.lang.Object
+                         caseValue(arg0: com.sun.xml.internal.rngom.binary.ValuePattern): java.lang.Object
+                         caseText(arg0: com.sun.xml.internal.rngom.binary.TextPattern): java.lang.Object
+                         caseList(arg0: com.sun.xml.internal.rngom.binary.ListPattern): java.lang.Object
+                         caseRef(arg0: com.sun.xml.internal.rngom.binary.RefPattern): java.lang.Object
+                         caseAfter(arg0: com.sun.xml.internal.rngom.binary.AfterPattern): java.lang.Object
                      }
                      class ChildElementFinder$Element {
                          public nc: com.sun.xml.internal.rngom.nc.NameClass
@@ -7013,7 +7013,7 @@ declare namespace com {
                          public visitAttribute(arg0: com.sun.xml.internal.rngom.nc.NameClass, arg1: com.sun.xml.internal.rngom.binary.Pattern): void
                          public visitList(arg0: com.sun.xml.internal.rngom.binary.Pattern): void
                      }
-
+                     
                   }
                   abstract class Pattern implements com.sun.xml.internal.rngom.ast.om.ParsedPattern {
                       static TEXT_HASH_CODE: int
@@ -7401,7 +7401,7 @@ declare namespace com {
                       static access$800(arg0: com.sun.xml.internal.rngom.binary.SchemaBuilderImpl): com.sun.xml.internal.rngom.binary.SchemaBuilderImpl$OpenIncludes
                       static access$1000(arg0: com.sun.xml.internal.rngom.binary.SchemaBuilderImpl): void
                   }
-
+                  
                }
                namespace xml {
                   namespace util {
@@ -7426,7 +7426,7 @@ declare namespace com {
                          public static getJavaName(arg0: java.lang.String): java.lang.String
                          public static main(arg0: java.lang.String[]): void
                      }
-
+                     
                   }
                   namespace sax {
                      class XmlBaseHandler$Entry {
@@ -7451,7 +7451,7 @@ declare namespace com {
                          public getBaseUri(): java.lang.String
                      }
                      interface XMLReaderCreator {
-                         public createXMLReader(): org.xml.sax.XMLReader
+                         createXMLReader(): org.xml.sax.XMLReader
                      }
                      class JAXPXMLReaderCreator implements com.sun.xml.internal.rngom.xml.sax.XMLReaderCreator {
                          constructor(...args: any[])
@@ -7467,9 +7467,9 @@ declare namespace com {
                          public endCDATA(): void
                          public comment(arg0: char[], arg1: int, arg2: int): void
                      }
-
+                     
                   }
-
+                  
                }
                namespace util {
                   abstract class Utf16 {
@@ -7493,61 +7493,61 @@ declare namespace com {
                       constructor(...args: any[])
                       message<T>(...args: any[]): any
                   }
-
+                  
                }
                namespace ast {
                   namespace builder {
-                     interface CommentList<L>> {
-                         public getNameClassBuilder(): com.sun.xml.internal.rngom.ast.builder.NameClassBuilder<N, E, L, A, CL>
-                         public makeChoice(arg0: java.util.List<P>, arg1: L, arg2: A): P
-                         public makeInterleave(arg0: java.util.List<P>, arg1: L, arg2: A): P
-                         public makeGroup(arg0: java.util.List<P>, arg1: L, arg2: A): P
-                         public makeOneOrMore(arg0: P, arg1: L, arg2: A): P
-                         public makeZeroOrMore(arg0: P, arg1: L, arg2: A): P
-                         public makeOptional(arg0: P, arg1: L, arg2: A): P
-                         public makeList(arg0: P, arg1: L, arg2: A): P
-                         public makeMixed(arg0: P, arg1: L, arg2: A): P
-                         public makeEmpty(arg0: L, arg1: A): P
-                         public makeNotAllowed(arg0: L, arg1: A): P
-                         public makeText(arg0: L, arg1: A): P
-                         public makeAttribute(arg0: N, arg1: P, arg2: L, arg3: A): P
-                         public makeElement(arg0: N, arg1: P, arg2: L, arg3: A): P
-                         public makeDataPatternBuilder(arg0: java.lang.String, arg1: java.lang.String, arg2: L): com.sun.xml.internal.rngom.ast.builder.DataPatternBuilder
-                         public makeValue(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: com.sun.xml.internal.rngom.parse.Context, arg4: java.lang.String, arg5: L, arg6: A): P
-                         public makeGrammar(arg0: com.sun.xml.internal.rngom.ast.builder.Scope<P, E, L, A, CL>): com.sun.xml.internal.rngom.ast.builder.Grammar<P, E, L, A, CL>
-                         public annotate(arg0: P, arg1: A): P
-                         public annotateAfter(arg0: P, arg1: E): P
-                         public commentAfter(arg0: P, arg1: CL): P
-                         public makeExternalRef(arg0: com.sun.xml.internal.rngom.parse.Parseable, arg1: java.lang.String, arg2: java.lang.String, arg3: com.sun.xml.internal.rngom.ast.builder.Scope<P, E, L, A, CL>, arg4: L, arg5: A): P
-                         public makeLocation(arg0: java.lang.String, arg1: int, arg2: int): L
-                         public makeAnnotations(arg0: CL, arg1: com.sun.xml.internal.rngom.parse.Context): A
-                         public makeElementAnnotationBuilder(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: L, arg4: CL, arg5: com.sun.xml.internal.rngom.parse.Context): com.sun.xml.internal.rngom.ast.builder.ElementAnnotationBuilder<P, E, L, A, CL>
-                         public makeCommentList(): CL
-                         public makeErrorPattern(): P
-                         public usesComments(): boolean
-                         public expandPattern(arg0: P): P
+                     interface SchemaBuilder<N extends com.sun.xml.internal.rngom.ast.om.ParsedNameClass, P extends com.sun.xml.internal.rngom.ast.om.ParsedPattern, E extends com.sun.xml.internal.rngom.ast.om.ParsedElementAnnotation, L extends com.sun.xml.internal.rngom.ast.om.Location, A extends com.sun.xml.internal.rngom.ast.builder.Annotations<E, L, CL>, CL extends com.sun.xml.internal.rngom.ast.builder.CommentList<L>> {
+                         getNameClassBuilder(): com.sun.xml.internal.rngom.ast.builder.NameClassBuilder<N, E, L, A, CL>
+                         makeChoice(arg0: java.util.List<P>, arg1: L, arg2: A): P
+                         makeInterleave(arg0: java.util.List<P>, arg1: L, arg2: A): P
+                         makeGroup(arg0: java.util.List<P>, arg1: L, arg2: A): P
+                         makeOneOrMore(arg0: P, arg1: L, arg2: A): P
+                         makeZeroOrMore(arg0: P, arg1: L, arg2: A): P
+                         makeOptional(arg0: P, arg1: L, arg2: A): P
+                         makeList(arg0: P, arg1: L, arg2: A): P
+                         makeMixed(arg0: P, arg1: L, arg2: A): P
+                         makeEmpty(arg0: L, arg1: A): P
+                         makeNotAllowed(arg0: L, arg1: A): P
+                         makeText(arg0: L, arg1: A): P
+                         makeAttribute(arg0: N, arg1: P, arg2: L, arg3: A): P
+                         makeElement(arg0: N, arg1: P, arg2: L, arg3: A): P
+                         makeDataPatternBuilder(arg0: java.lang.String, arg1: java.lang.String, arg2: L): com.sun.xml.internal.rngom.ast.builder.DataPatternBuilder
+                         makeValue(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: com.sun.xml.internal.rngom.parse.Context, arg4: java.lang.String, arg5: L, arg6: A): P
+                         makeGrammar(arg0: com.sun.xml.internal.rngom.ast.builder.Scope<P, E, L, A, CL>): com.sun.xml.internal.rngom.ast.builder.Grammar<P, E, L, A, CL>
+                         annotate(arg0: P, arg1: A): P
+                         annotateAfter(arg0: P, arg1: E): P
+                         commentAfter(arg0: P, arg1: CL): P
+                         makeExternalRef(arg0: com.sun.xml.internal.rngom.parse.Parseable, arg1: java.lang.String, arg2: java.lang.String, arg3: com.sun.xml.internal.rngom.ast.builder.Scope<P, E, L, A, CL>, arg4: L, arg5: A): P
+                         makeLocation(arg0: java.lang.String, arg1: int, arg2: int): L
+                         makeAnnotations(arg0: CL, arg1: com.sun.xml.internal.rngom.parse.Context): A
+                         makeElementAnnotationBuilder(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: L, arg4: CL, arg5: com.sun.xml.internal.rngom.parse.Context): com.sun.xml.internal.rngom.ast.builder.ElementAnnotationBuilder<P, E, L, A, CL>
+                         makeCommentList(): CL
+                         makeErrorPattern(): P
+                         usesComments(): boolean
+                         expandPattern(arg0: P): P
                      }
-                     interface CommentList<L>> {
-                         public addAttribute(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: L): void
-                         public addElement(arg0: E): void
-                         public addComment(arg0: CL): void
-                         public addLeadingComment(arg0: CL): void
+                     interface Annotations<E extends com.sun.xml.internal.rngom.ast.om.ParsedElementAnnotation, L extends com.sun.xml.internal.rngom.ast.om.Location, CL extends com.sun.xml.internal.rngom.ast.builder.CommentList<L>> {
+                         addAttribute(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: L): void
+                         addElement(arg0: E): void
+                         addComment(arg0: CL): void
+                         addLeadingComment(arg0: CL): void
                      }
-                     interface Location> {
-                         public addComment(arg0: java.lang.String, arg1: L): void
+                     interface CommentList<L extends com.sun.xml.internal.rngom.ast.om.Location> {
+                         addComment(arg0: java.lang.String, arg1: L): void
                      }
-                     interface CommentList<L>> {
-                         public annotate(arg0: N, arg1: A): N
-                         public annotateAfter(arg0: N, arg1: E): N
-                         public commentAfter(arg0: N, arg1: CL): N
-                         public makeChoice(arg0: java.util.List<N>, arg1: L, arg2: A): N
-                         public makeName(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: L, arg4: A): N
+                     interface NameClassBuilder<N extends com.sun.xml.internal.rngom.ast.om.ParsedNameClass, E extends com.sun.xml.internal.rngom.ast.om.ParsedElementAnnotation, L extends com.sun.xml.internal.rngom.ast.om.Location, A extends com.sun.xml.internal.rngom.ast.builder.Annotations<E, L, CL>, CL extends com.sun.xml.internal.rngom.ast.builder.CommentList<L>> {
+                         annotate(arg0: N, arg1: A): N
+                         annotateAfter(arg0: N, arg1: E): N
+                         commentAfter(arg0: N, arg1: CL): N
+                         makeChoice(arg0: java.util.List<N>, arg1: L, arg2: A): N
+                         makeName(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: L, arg4: A): N
                          makeNsName<T>(...args: any[]): any
                          makeAnyName<T>(...args: any[]): any
-                         public makeErrorNameClass(): N
+                         makeErrorNameClass(): N
                      }
-                     interface CommentList<L>> extends com.sun.xml.internal.rngom.ast.builder.GrammarSection<P, E, L, A, CL> , com.sun.xml.internal.rngom.ast.builder.Scope<P, E, L, A, CL> {
-                         public endIncludedGrammar(arg0: L, arg1: A): P
+                     interface IncludedGrammar<P extends com.sun.xml.internal.rngom.ast.om.ParsedPattern, E extends com.sun.xml.internal.rngom.ast.om.ParsedElementAnnotation, L extends com.sun.xml.internal.rngom.ast.om.Location, A extends com.sun.xml.internal.rngom.ast.builder.Annotations<E, L, CL>, CL extends com.sun.xml.internal.rngom.ast.builder.CommentList<L>> extends com.sun.xml.internal.rngom.ast.builder.GrammarSection<P, E, L, A, CL> , com.sun.xml.internal.rngom.ast.builder.Scope<P, E, L, A, CL> {
+                         endIncludedGrammar(arg0: L, arg1: A): P
                      }
                      class GrammarSection$Combine {
                          toString<T>(...args: any[]): any
@@ -7555,43 +7555,43 @@ declare namespace com {
                      }
                      class GrammarSection$1 {
                      }
-                     interface CommentList<L>> {
-                         public static COMBINE_CHOICE: com.sun.xml.internal.rngom.ast.builder.GrammarSection$Combine
-                         public static COMBINE_INTERLEAVE: com.sun.xml.internal.rngom.ast.builder.GrammarSection$Combine
-                         public static START: java.lang.String
-                         public define(arg0: java.lang.String, arg1: com.sun.xml.internal.rngom.ast.builder.GrammarSection$Combine, arg2: P, arg3: L, arg4: A): void
-                         public topLevelAnnotation(arg0: E): void
-                         public topLevelComment(arg0: CL): void
-                         public makeDiv(): com.sun.xml.internal.rngom.ast.builder.Div<P, E, L, A, CL>
-                         public makeInclude(): com.sun.xml.internal.rngom.ast.builder.Include<P, E, L, A, CL>
+                     interface GrammarSection<P extends com.sun.xml.internal.rngom.ast.om.ParsedPattern, E extends com.sun.xml.internal.rngom.ast.om.ParsedElementAnnotation, L extends com.sun.xml.internal.rngom.ast.om.Location, A extends com.sun.xml.internal.rngom.ast.builder.Annotations<E, L, CL>, CL extends com.sun.xml.internal.rngom.ast.builder.CommentList<L>> {
+                         COMBINE_CHOICE: com.sun.xml.internal.rngom.ast.builder.GrammarSection$Combine
+                         COMBINE_INTERLEAVE: com.sun.xml.internal.rngom.ast.builder.GrammarSection$Combine
+                         START: java.lang.String
+                         define(arg0: java.lang.String, arg1: com.sun.xml.internal.rngom.ast.builder.GrammarSection$Combine, arg2: P, arg3: L, arg4: A): void
+                         topLevelAnnotation(arg0: E): void
+                         topLevelComment(arg0: CL): void
+                         makeDiv(): com.sun.xml.internal.rngom.ast.builder.Div<P, E, L, A, CL>
+                         makeInclude(): com.sun.xml.internal.rngom.ast.builder.Include<P, E, L, A, CL>
                      }
-                     interface CommentList<L>> extends com.sun.xml.internal.rngom.ast.builder.GrammarSection<P, E, L, A, CL> {
-                         public makeParentRef(arg0: java.lang.String, arg1: L, arg2: A): P
-                         public makeRef(arg0: java.lang.String, arg1: L, arg2: A): P
+                     interface Scope<P extends com.sun.xml.internal.rngom.ast.om.ParsedPattern, E extends com.sun.xml.internal.rngom.ast.om.ParsedElementAnnotation, L extends com.sun.xml.internal.rngom.ast.om.Location, A extends com.sun.xml.internal.rngom.ast.builder.Annotations<E, L, CL>, CL extends com.sun.xml.internal.rngom.ast.builder.CommentList<L>> extends com.sun.xml.internal.rngom.ast.builder.GrammarSection<P, E, L, A, CL> {
+                         makeParentRef(arg0: java.lang.String, arg1: L, arg2: A): P
+                         makeRef(arg0: java.lang.String, arg1: L, arg2: A): P
                      }
                      class BuildException extends java.lang.RuntimeException {
                          public constructor(arg0: java.lang.Throwable)
                          public getCause(): java.lang.Throwable
                      }
-                     interface CommentList<L>> {
-                         public addParam(arg0: java.lang.String, arg1: java.lang.String, arg2: com.sun.xml.internal.rngom.parse.Context, arg3: java.lang.String, arg4: L, arg5: A): void
-                         public annotation(arg0: E): void
+                     interface DataPatternBuilder<P extends com.sun.xml.internal.rngom.ast.om.ParsedPattern, E extends com.sun.xml.internal.rngom.ast.om.ParsedElementAnnotation, L extends com.sun.xml.internal.rngom.ast.om.Location, A extends com.sun.xml.internal.rngom.ast.builder.Annotations<E, L, CL>, CL extends com.sun.xml.internal.rngom.ast.builder.CommentList<L>> {
+                         addParam(arg0: java.lang.String, arg1: java.lang.String, arg2: com.sun.xml.internal.rngom.parse.Context, arg3: java.lang.String, arg4: L, arg5: A): void
+                         annotation(arg0: E): void
                          makePattern<T>(...args: any[]): any
                      }
-                     interface CommentList<L>> extends com.sun.xml.internal.rngom.ast.builder.GrammarSection<P, E, L, A, CL> , com.sun.xml.internal.rngom.ast.builder.Scope<P, E, L, A, CL> {
-                         public endGrammar(arg0: L, arg1: A): P
+                     interface Grammar<P extends com.sun.xml.internal.rngom.ast.om.ParsedPattern, E extends com.sun.xml.internal.rngom.ast.om.ParsedElementAnnotation, L extends com.sun.xml.internal.rngom.ast.om.Location, A extends com.sun.xml.internal.rngom.ast.builder.Annotations<E, L, CL>, CL extends com.sun.xml.internal.rngom.ast.builder.CommentList<L>> extends com.sun.xml.internal.rngom.ast.builder.GrammarSection<P, E, L, A, CL> , com.sun.xml.internal.rngom.ast.builder.Scope<P, E, L, A, CL> {
+                         endGrammar(arg0: L, arg1: A): P
                      }
-                     interface CommentList<L>> extends com.sun.xml.internal.rngom.ast.builder.Annotations<E, L, CL> {
-                         public addText(arg0: java.lang.String, arg1: L, arg2: CL): void
-                         public makeElementAnnotation(): E
+                     interface ElementAnnotationBuilder<P extends com.sun.xml.internal.rngom.ast.om.ParsedPattern, E extends com.sun.xml.internal.rngom.ast.om.ParsedElementAnnotation, L extends com.sun.xml.internal.rngom.ast.om.Location, A extends com.sun.xml.internal.rngom.ast.builder.Annotations<E, L, CL>, CL extends com.sun.xml.internal.rngom.ast.builder.CommentList<L>> extends com.sun.xml.internal.rngom.ast.builder.Annotations<E, L, CL> {
+                         addText(arg0: java.lang.String, arg1: L, arg2: CL): void
+                         makeElementAnnotation(): E
                      }
-                     interface CommentList<L>> extends com.sun.xml.internal.rngom.ast.builder.GrammarSection<P, E, L, A, CL> {
-                         public endDiv(arg0: L, arg1: A): void
+                     interface Div<P extends com.sun.xml.internal.rngom.ast.om.ParsedPattern, E extends com.sun.xml.internal.rngom.ast.om.ParsedElementAnnotation, L extends com.sun.xml.internal.rngom.ast.om.Location, A extends com.sun.xml.internal.rngom.ast.builder.Annotations<E, L, CL>, CL extends com.sun.xml.internal.rngom.ast.builder.CommentList<L>> extends com.sun.xml.internal.rngom.ast.builder.GrammarSection<P, E, L, A, CL> {
+                         endDiv(arg0: L, arg1: A): void
                      }
-                     interface CommentList<L>> extends com.sun.xml.internal.rngom.ast.builder.GrammarSection<P, E, L, A, CL> {
-                         public endInclude(arg0: com.sun.xml.internal.rngom.parse.Parseable, arg1: java.lang.String, arg2: java.lang.String, arg3: L, arg4: A): void
+                     interface Include<P extends com.sun.xml.internal.rngom.ast.om.ParsedPattern, E extends com.sun.xml.internal.rngom.ast.om.ParsedElementAnnotation, L extends com.sun.xml.internal.rngom.ast.om.Location, A extends com.sun.xml.internal.rngom.ast.builder.Annotations<E, L, CL>, CL extends com.sun.xml.internal.rngom.ast.builder.CommentList<L>> extends com.sun.xml.internal.rngom.ast.builder.GrammarSection<P, E, L, A, CL> {
+                         endInclude(arg0: com.sun.xml.internal.rngom.parse.Parseable, arg1: java.lang.String, arg2: java.lang.String, arg3: L, arg4: A): void
                      }
-
+                     
                   }
                   namespace om {
                      interface ParsedNameClass {
@@ -7602,7 +7602,7 @@ declare namespace com {
                      }
                      interface Location {
                      }
-
+                     
                   }
                   namespace util {
                      class LocatorImpl implements org.xml.sax.Locator , com.sun.xml.internal.rngom.ast.om.Location {
@@ -7616,9 +7616,9 @@ declare namespace com {
                          constructor(...args: any[])
                          public expandPattern(arg0: com.sun.xml.internal.rngom.ast.om.ParsedPattern): com.sun.xml.internal.rngom.ast.om.ParsedPattern
                      }
-
+                     
                   }
-
+                  
                }
                namespace nc {
                   class SimpleNameClass extends com.sun.xml.internal.rngom.nc.NameClass {
@@ -7653,13 +7653,13 @@ declare namespace com {
                       public hasOverlapWith(arg0: com.sun.xml.internal.rngom.nc.NameClass): boolean
                   }
                   interface NameClassVisitor<V> {
-                      public visitChoice(arg0: com.sun.xml.internal.rngom.nc.NameClass, arg1: com.sun.xml.internal.rngom.nc.NameClass): V
-                      public visitNsName(arg0: java.lang.String): V
-                      public visitNsNameExcept(arg0: java.lang.String, arg1: com.sun.xml.internal.rngom.nc.NameClass): V
-                      public visitAnyName(): V
-                      public visitAnyNameExcept(arg0: com.sun.xml.internal.rngom.nc.NameClass): V
-                      public visitName(arg0: javax.xml.namespace.QName): V
-                      public visitNull(): V
+                      visitChoice(arg0: com.sun.xml.internal.rngom.nc.NameClass, arg1: com.sun.xml.internal.rngom.nc.NameClass): V
+                      visitNsName(arg0: java.lang.String): V
+                      visitNsNameExcept(arg0: java.lang.String, arg1: com.sun.xml.internal.rngom.nc.NameClass): V
+                      visitAnyName(): V
+                      visitAnyNameExcept(arg0: com.sun.xml.internal.rngom.nc.NameClass): V
+                      visitName(arg0: javax.xml.namespace.QName): V
+                      visitNull(): V
                   }
                   class OverlapDetector implements com.sun.xml.internal.rngom.nc.NameClassVisitor<java.lang.Void> {
                       static IMPOSSIBLE: java.lang.String
@@ -7709,7 +7709,7 @@ declare namespace com {
                       visitName<T>(...args: any[]): any
                       visitNull<T>(...args: any[]): any
                   }
-                  class CommentList<L>> implements com.sun.xml.internal.rngom.ast.builder.NameClassBuilder<com.sun.xml.internal.rngom.nc.NameClass, E, L, A, CL> {
+                  class NameClassBuilderImpl<E extends com.sun.xml.internal.rngom.ast.om.ParsedElementAnnotation, L extends com.sun.xml.internal.rngom.ast.om.Location, A extends com.sun.xml.internal.rngom.ast.builder.Annotations<E, L, CL>, CL extends com.sun.xml.internal.rngom.ast.builder.CommentList<L>> implements com.sun.xml.internal.rngom.ast.builder.NameClassBuilder<com.sun.xml.internal.rngom.nc.NameClass, E, L, A, CL> {
                       public constructor()
                       makeChoice<T>(...args: any[]): any
                       makeName<T>(...args: any[]): any
@@ -7747,7 +7747,7 @@ declare namespace com {
                       public accept<V>(arg0: com.sun.xml.internal.rngom.nc.NameClassVisitor<V>): V
                       public isOpen(): boolean
                   }
-
+                  
                }
                namespace digested {
                   class PatternParseable$Parser implements com.sun.xml.internal.rngom.digested.DPatternVisitor<com.sun.xml.internal.rngom.ast.om.ParsedPattern> {
@@ -7808,23 +7808,23 @@ declare namespace com {
                       public getChildren(): java.util.List<org.w3c.dom.Element>
                   }
                   interface DPatternVisitor<V> {
-                      public onAttribute(arg0: com.sun.xml.internal.rngom.digested.DAttributePattern): V
-                      public onChoice(arg0: com.sun.xml.internal.rngom.digested.DChoicePattern): V
-                      public onData(arg0: com.sun.xml.internal.rngom.digested.DDataPattern): V
-                      public onElement(arg0: com.sun.xml.internal.rngom.digested.DElementPattern): V
-                      public onEmpty(arg0: com.sun.xml.internal.rngom.digested.DEmptyPattern): V
-                      public onGrammar(arg0: com.sun.xml.internal.rngom.digested.DGrammarPattern): V
-                      public onGroup(arg0: com.sun.xml.internal.rngom.digested.DGroupPattern): V
-                      public onInterleave(arg0: com.sun.xml.internal.rngom.digested.DInterleavePattern): V
-                      public onList(arg0: com.sun.xml.internal.rngom.digested.DListPattern): V
-                      public onMixed(arg0: com.sun.xml.internal.rngom.digested.DMixedPattern): V
-                      public onNotAllowed(arg0: com.sun.xml.internal.rngom.digested.DNotAllowedPattern): V
-                      public onOneOrMore(arg0: com.sun.xml.internal.rngom.digested.DOneOrMorePattern): V
-                      public onOptional(arg0: com.sun.xml.internal.rngom.digested.DOptionalPattern): V
-                      public onRef(arg0: com.sun.xml.internal.rngom.digested.DRefPattern): V
-                      public onText(arg0: com.sun.xml.internal.rngom.digested.DTextPattern): V
-                      public onValue(arg0: com.sun.xml.internal.rngom.digested.DValuePattern): V
-                      public onZeroOrMore(arg0: com.sun.xml.internal.rngom.digested.DZeroOrMorePattern): V
+                      onAttribute(arg0: com.sun.xml.internal.rngom.digested.DAttributePattern): V
+                      onChoice(arg0: com.sun.xml.internal.rngom.digested.DChoicePattern): V
+                      onData(arg0: com.sun.xml.internal.rngom.digested.DDataPattern): V
+                      onElement(arg0: com.sun.xml.internal.rngom.digested.DElementPattern): V
+                      onEmpty(arg0: com.sun.xml.internal.rngom.digested.DEmptyPattern): V
+                      onGrammar(arg0: com.sun.xml.internal.rngom.digested.DGrammarPattern): V
+                      onGroup(arg0: com.sun.xml.internal.rngom.digested.DGroupPattern): V
+                      onInterleave(arg0: com.sun.xml.internal.rngom.digested.DInterleavePattern): V
+                      onList(arg0: com.sun.xml.internal.rngom.digested.DListPattern): V
+                      onMixed(arg0: com.sun.xml.internal.rngom.digested.DMixedPattern): V
+                      onNotAllowed(arg0: com.sun.xml.internal.rngom.digested.DNotAllowedPattern): V
+                      onOneOrMore(arg0: com.sun.xml.internal.rngom.digested.DOneOrMorePattern): V
+                      onOptional(arg0: com.sun.xml.internal.rngom.digested.DOptionalPattern): V
+                      onRef(arg0: com.sun.xml.internal.rngom.digested.DRefPattern): V
+                      onText(arg0: com.sun.xml.internal.rngom.digested.DTextPattern): V
+                      onValue(arg0: com.sun.xml.internal.rngom.digested.DValuePattern): V
+                      onZeroOrMore(arg0: com.sun.xml.internal.rngom.digested.DZeroOrMorePattern): V
                   }
                   class DAttributePattern extends com.sun.xml.internal.rngom.digested.DXmlTokenPattern {
                       public constructor(arg0: com.sun.xml.internal.rngom.nc.NameClass)
@@ -8189,9 +8189,9 @@ declare namespace com {
                       onZeroOrMore<T>(...args: any[]): any
                       protected onUnary(arg0: com.sun.xml.internal.rngom.digested.DUnaryPattern): java.lang.Void
                   }
-
+                  
                }
-
+               
             }
             namespace dtdparser {
                abstract class XmlReader$BaseReader extends java.io.Reader {
@@ -8310,46 +8310,46 @@ declare namespace com {
                    public close(): void
                }
                interface DTDEventListener extends java.util.EventListener {
-                   public static CONTENT_MODEL_EMPTY: short
-                   public static CONTENT_MODEL_ANY: short
-                   public static CONTENT_MODEL_MIXED: short
-                   public static CONTENT_MODEL_CHILDREN: short
-                   public static USE_NORMAL: short
-                   public static USE_IMPLIED: short
-                   public static USE_FIXED: short
-                   public static USE_REQUIRED: short
-                   public static CHOICE: short
-                   public static SEQUENCE: short
-                   public static OCCURENCE_ZERO_OR_MORE: short
-                   public static OCCURENCE_ONE_OR_MORE: short
-                   public static OCCURENCE_ZERO_OR_ONE: short
-                   public static OCCURENCE_ONCE: short
-                   public setDocumentLocator(arg0: org.xml.sax.Locator): void
-                   public processingInstruction(arg0: java.lang.String, arg1: java.lang.String): void
-                   public notationDecl(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void
-                   public unparsedEntityDecl(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): void
-                   public internalGeneralEntityDecl(arg0: java.lang.String, arg1: java.lang.String): void
-                   public externalGeneralEntityDecl(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void
-                   public internalParameterEntityDecl(arg0: java.lang.String, arg1: java.lang.String): void
-                   public externalParameterEntityDecl(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void
-                   public startDTD(arg0: com.sun.xml.internal.dtdparser.InputEntity): void
-                   public endDTD(): void
-                   public comment(arg0: java.lang.String): void
-                   public characters(arg0: char[], arg1: int, arg2: int): void
-                   public ignorableWhitespace(arg0: char[], arg1: int, arg2: int): void
-                   public startCDATA(): void
-                   public endCDATA(): void
-                   public fatalError(arg0: org.xml.sax.SAXParseException): void
-                   public error(arg0: org.xml.sax.SAXParseException): void
-                   public warning(arg0: org.xml.sax.SAXParseException): void
-                   public startContentModel(arg0: java.lang.String, arg1: short): void
-                   public endContentModel(arg0: java.lang.String, arg1: short): void
-                   public attributeDecl(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String[], arg4: short, arg5: java.lang.String): void
-                   public childElement(arg0: java.lang.String, arg1: short): void
-                   public mixedElement(arg0: java.lang.String): void
-                   public startModelGroup(): void
-                   public endModelGroup(arg0: short): void
-                   public connector(arg0: short): void
+                   CONTENT_MODEL_EMPTY: short
+                   CONTENT_MODEL_ANY: short
+                   CONTENT_MODEL_MIXED: short
+                   CONTENT_MODEL_CHILDREN: short
+                   USE_NORMAL: short
+                   USE_IMPLIED: short
+                   USE_FIXED: short
+                   USE_REQUIRED: short
+                   CHOICE: short
+                   SEQUENCE: short
+                   OCCURENCE_ZERO_OR_MORE: short
+                   OCCURENCE_ONE_OR_MORE: short
+                   OCCURENCE_ZERO_OR_ONE: short
+                   OCCURENCE_ONCE: short
+                   setDocumentLocator(arg0: org.xml.sax.Locator): void
+                   processingInstruction(arg0: java.lang.String, arg1: java.lang.String): void
+                   notationDecl(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void
+                   unparsedEntityDecl(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): void
+                   internalGeneralEntityDecl(arg0: java.lang.String, arg1: java.lang.String): void
+                   externalGeneralEntityDecl(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void
+                   internalParameterEntityDecl(arg0: java.lang.String, arg1: java.lang.String): void
+                   externalParameterEntityDecl(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void
+                   startDTD(arg0: com.sun.xml.internal.dtdparser.InputEntity): void
+                   endDTD(): void
+                   comment(arg0: java.lang.String): void
+                   characters(arg0: char[], arg1: int, arg2: int): void
+                   ignorableWhitespace(arg0: char[], arg1: int, arg2: int): void
+                   startCDATA(): void
+                   endCDATA(): void
+                   fatalError(arg0: org.xml.sax.SAXParseException): void
+                   error(arg0: org.xml.sax.SAXParseException): void
+                   warning(arg0: org.xml.sax.SAXParseException): void
+                   startContentModel(arg0: java.lang.String, arg1: short): void
+                   endContentModel(arg0: java.lang.String, arg1: short): void
+                   attributeDecl(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String[], arg4: short, arg5: java.lang.String): void
+                   childElement(arg0: java.lang.String, arg1: short): void
+                   mixedElement(arg0: java.lang.String): void
+                   startModelGroup(): void
+                   endModelGroup(arg0: short): void
+                   connector(arg0: short): void
                }
                class ExternalEntity extends com.sun.xml.internal.dtdparser.EntityDecl {
                    systemId: java.lang.String
@@ -8447,11 +8447,11 @@ declare namespace com {
                    public endModelGroup(arg0: short): void
                    public connector(arg0: short): void
                }
-
+               
             }
-
+            
          }
-
+         
       }
       namespace tools {
          namespace example {
@@ -8515,119 +8515,119 @@ declare namespace com {
                       public getNextToken(): com.sun.tools.example.debug.expr.Token
                   }
                   interface ExpressionParserConstants {
-                      public static EOF: int
-                      public static SINGLE_LINE_COMMENT: int
-                      public static FORMAL_COMMENT: int
-                      public static MULTI_LINE_COMMENT: int
-                      public static ABSTRACT: int
-                      public static BOOLEAN: int
-                      public static BREAK: int
-                      public static BYTE: int
-                      public static CASE: int
-                      public static CATCH: int
-                      public static CHAR: int
-                      public static CLASS: int
-                      public static CONST: int
-                      public static CONTINUE: int
-                      public static _DEFAULT: int
-                      public static DO: int
-                      public static DOUBLE: int
-                      public static ELSE: int
-                      public static EXTENDS: int
-                      public static FALSE: int
-                      public static FINAL: int
-                      public static FINALLY: int
-                      public static FLOAT: int
-                      public static FOR: int
-                      public static GOTO: int
-                      public static IF: int
-                      public static IMPLEMENTS: int
-                      public static IMPORT: int
-                      public static INSTANCEOF: int
-                      public static INT: int
-                      public static INTERFACE: int
-                      public static LONG: int
-                      public static NATIVE: int
-                      public static NEW: int
-                      public static NULL: int
-                      public static PACKAGE: int
-                      public static PRIVATE: int
-                      public static PROTECTED: int
-                      public static PUBLIC: int
-                      public static RETURN: int
-                      public static SHORT: int
-                      public static STATIC: int
-                      public static SUPER: int
-                      public static SWITCH: int
-                      public static SYNCHRONIZED: int
-                      public static THIS: int
-                      public static THROW: int
-                      public static THROWS: int
-                      public static TRANSIENT: int
-                      public static TRUE: int
-                      public static TRY: int
-                      public static VOID: int
-                      public static VOLATILE: int
-                      public static WHILE: int
-                      public static INTEGER_LITERAL: int
-                      public static DECIMAL_LITERAL: int
-                      public static HEX_LITERAL: int
-                      public static OCTAL_LITERAL: int
-                      public static FLOATING_POINT_LITERAL: int
-                      public static EXPONENT: int
-                      public static CHARACTER_LITERAL: int
-                      public static STRING_LITERAL: int
-                      public static IDENTIFIER: int
-                      public static LETTER: int
-                      public static DIGIT: int
-                      public static LPAREN: int
-                      public static RPAREN: int
-                      public static LBRACE: int
-                      public static RBRACE: int
-                      public static LBRACKET: int
-                      public static RBRACKET: int
-                      public static SEMICOLON: int
-                      public static COMMA: int
-                      public static DOT: int
-                      public static ASSIGN: int
-                      public static GT: int
-                      public static LT: int
-                      public static BANG: int
-                      public static TILDE: int
-                      public static HOOK: int
-                      public static COLON: int
-                      public static EQ: int
-                      public static LE: int
-                      public static GE: int
-                      public static NE: int
-                      public static SC_OR: int
-                      public static SC_AND: int
-                      public static INCR: int
-                      public static DECR: int
-                      public static PLUS: int
-                      public static MINUS: int
-                      public static STAR: int
-                      public static SLASH: int
-                      public static BIT_AND: int
-                      public static BIT_OR: int
-                      public static XOR: int
-                      public static REM: int
-                      public static LSHIFT: int
-                      public static RSIGNEDSHIFT: int
-                      public static RUNSIGNEDSHIFT: int
-                      public static PLUSASSIGN: int
-                      public static MINUSASSIGN: int
-                      public static STARASSIGN: int
-                      public static SLASHASSIGN: int
-                      public static ANDASSIGN: int
-                      public static ORASSIGN: int
-                      public static XORASSIGN: int
-                      public static REMASSIGN: int
-                      public static LSHIFTASSIGN: int
-                      public static RSIGNEDSHIFTASSIGN: int
-                      public static RUNSIGNEDSHIFTASSIGN: int
-                      public static DEFAULT: int
-                      public static tokenImage: java.lang.String[]
+                      EOF: int
+                      SINGLE_LINE_COMMENT: int
+                      FORMAL_COMMENT: int
+                      MULTI_LINE_COMMENT: int
+                      ABSTRACT: int
+                      BOOLEAN: int
+                      BREAK: int
+                      BYTE: int
+                      CASE: int
+                      CATCH: int
+                      CHAR: int
+                      CLASS: int
+                      CONST: int
+                      CONTINUE: int
+                      _DEFAULT: int
+                      DO: int
+                      DOUBLE: int
+                      ELSE: int
+                      EXTENDS: int
+                      FALSE: int
+                      FINAL: int
+                      FINALLY: int
+                      FLOAT: int
+                      FOR: int
+                      GOTO: int
+                      IF: int
+                      IMPLEMENTS: int
+                      IMPORT: int
+                      INSTANCEOF: int
+                      INT: int
+                      INTERFACE: int
+                      LONG: int
+                      NATIVE: int
+                      NEW: int
+                      NULL: int
+                      PACKAGE: int
+                      PRIVATE: int
+                      PROTECTED: int
+                      PUBLIC: int
+                      RETURN: int
+                      SHORT: int
+                      STATIC: int
+                      SUPER: int
+                      SWITCH: int
+                      SYNCHRONIZED: int
+                      THIS: int
+                      THROW: int
+                      THROWS: int
+                      TRANSIENT: int
+                      TRUE: int
+                      TRY: int
+                      VOID: int
+                      VOLATILE: int
+                      WHILE: int
+                      INTEGER_LITERAL: int
+                      DECIMAL_LITERAL: int
+                      HEX_LITERAL: int
+                      OCTAL_LITERAL: int
+                      FLOATING_POINT_LITERAL: int
+                      EXPONENT: int
+                      CHARACTER_LITERAL: int
+                      STRING_LITERAL: int
+                      IDENTIFIER: int
+                      LETTER: int
+                      DIGIT: int
+                      LPAREN: int
+                      RPAREN: int
+                      LBRACE: int
+                      RBRACE: int
+                      LBRACKET: int
+                      RBRACKET: int
+                      SEMICOLON: int
+                      COMMA: int
+                      DOT: int
+                      ASSIGN: int
+                      GT: int
+                      LT: int
+                      BANG: int
+                      TILDE: int
+                      HOOK: int
+                      COLON: int
+                      EQ: int
+                      LE: int
+                      GE: int
+                      NE: int
+                      SC_OR: int
+                      SC_AND: int
+                      INCR: int
+                      DECR: int
+                      PLUS: int
+                      MINUS: int
+                      STAR: int
+                      SLASH: int
+                      BIT_AND: int
+                      BIT_OR: int
+                      XOR: int
+                      REM: int
+                      LSHIFT: int
+                      RSIGNEDSHIFT: int
+                      RUNSIGNEDSHIFT: int
+                      PLUSASSIGN: int
+                      MINUSASSIGN: int
+                      STARASSIGN: int
+                      SLASHASSIGN: int
+                      ANDASSIGN: int
+                      ORASSIGN: int
+                      XORASSIGN: int
+                      REMASSIGN: int
+                      LSHIFTASSIGN: int
+                      RSIGNEDSHIFTASSIGN: int
+                      RUNSIGNEDSHIFTASSIGN: int
+                      DEFAULT: int
+                      tokenImage: java.lang.String[]
                   }
                   class ExpressionParser implements com.sun.tools.example.debug.expr.ExpressionParserConstants {
                       stack: java.util.Stack<com.sun.tools.example.debug.expr.LValue>
@@ -8689,7 +8689,7 @@ declare namespace com {
                       public disable_tracing(): void
                   }
                   interface ExpressionParser$GetFrame {
-                      public get(): com.sun.jdi.StackFrame
+                      get(): com.sun.jdi.StackFrame
                   }
                   abstract class LValue {
                       protected jdiValue: com.sun.jdi.Value
@@ -8821,7 +8821,7 @@ declare namespace com {
                       public getMessage(): java.lang.String
                       constructor(...args: any[])
                   }
-
+                  
                }
                namespace tty {
                   class AccessWatchpointSpec extends com.sun.tools.example.debug.tty.WatchpointSpec {
@@ -9073,21 +9073,21 @@ declare namespace com {
                       public vmDisconnectEvent(arg0: com.sun.jdi.event.Event): boolean
                   }
                   interface EventNotifier {
-                      public vmStartEvent(arg0: com.sun.jdi.event.VMStartEvent): void
-                      public vmDeathEvent(arg0: com.sun.jdi.event.VMDeathEvent): void
-                      public vmDisconnectEvent(arg0: com.sun.jdi.event.VMDisconnectEvent): void
-                      public threadStartEvent(arg0: com.sun.jdi.event.ThreadStartEvent): void
-                      public threadDeathEvent(arg0: com.sun.jdi.event.ThreadDeathEvent): void
-                      public classPrepareEvent(arg0: com.sun.jdi.event.ClassPrepareEvent): void
-                      public classUnloadEvent(arg0: com.sun.jdi.event.ClassUnloadEvent): void
-                      public breakpointEvent(arg0: com.sun.jdi.event.BreakpointEvent): void
-                      public fieldWatchEvent(arg0: com.sun.jdi.event.WatchpointEvent): void
-                      public stepEvent(arg0: com.sun.jdi.event.StepEvent): void
-                      public exceptionEvent(arg0: com.sun.jdi.event.ExceptionEvent): void
-                      public methodEntryEvent(arg0: com.sun.jdi.event.MethodEntryEvent): void
-                      public methodExitEvent(arg0: com.sun.jdi.event.MethodExitEvent): boolean
-                      public vmInterrupted(): void
-                      public receivedEvent(arg0: com.sun.jdi.event.Event): void
+                      vmStartEvent(arg0: com.sun.jdi.event.VMStartEvent): void
+                      vmDeathEvent(arg0: com.sun.jdi.event.VMDeathEvent): void
+                      vmDisconnectEvent(arg0: com.sun.jdi.event.VMDisconnectEvent): void
+                      threadStartEvent(arg0: com.sun.jdi.event.ThreadStartEvent): void
+                      threadDeathEvent(arg0: com.sun.jdi.event.ThreadDeathEvent): void
+                      classPrepareEvent(arg0: com.sun.jdi.event.ClassPrepareEvent): void
+                      classUnloadEvent(arg0: com.sun.jdi.event.ClassUnloadEvent): void
+                      breakpointEvent(arg0: com.sun.jdi.event.BreakpointEvent): void
+                      fieldWatchEvent(arg0: com.sun.jdi.event.WatchpointEvent): void
+                      stepEvent(arg0: com.sun.jdi.event.StepEvent): void
+                      exceptionEvent(arg0: com.sun.jdi.event.ExceptionEvent): void
+                      methodEntryEvent(arg0: com.sun.jdi.event.MethodEntryEvent): void
+                      methodExitEvent(arg0: com.sun.jdi.event.MethodExitEvent): boolean
+                      vmInterrupted(): void
+                      receivedEvent(arg0: com.sun.jdi.event.Event): void
                   }
                   class TTY implements com.sun.tools.example.debug.tty.EventNotifier {
                       handler: com.sun.tools.example.debug.tty.EventHandler
@@ -9194,10 +9194,10 @@ declare namespace com {
                       constructor(...args: any[])
                   }
                   interface ReferenceTypeSpec {
-                      public matches(arg0: com.sun.jdi.ReferenceType): boolean
-                      public createPrepareRequest(): com.sun.jdi.request.ClassPrepareRequest
-                      public hashCode(): int
-                      public equals(arg0: java.lang.Object): boolean
+                      matches(arg0: com.sun.jdi.ReferenceType): boolean
+                      createPrepareRequest(): com.sun.jdi.request.ClassPrepareRequest
+                      hashCode(): int
+                      equals(arg0: java.lang.Object): boolean
                   }
                   abstract class EventRequestSpec {
                       refSpec: com.sun.tools.example.debug.tty.ReferenceTypeSpec
@@ -9220,11 +9220,11 @@ declare namespace com {
                       public equals(arg0: java.lang.Object): boolean
                       errorMessageFor(arg0: java.lang.Exception): java.lang.String
                   }
-
+                  
                }
-
+               
             }
-
+            
          }
          namespace extcheck {
             class ExtCheck {
@@ -9249,7 +9249,7 @@ declare namespace com {
                 public static main(arg0: java.lang.String[]): void
                 public static realMain(arg0: java.lang.String[]): void
             }
-
+            
          }
          namespace jdi {
             namespace resources {
@@ -9265,7 +9265,7 @@ declare namespace com {
                    public constructor()
                    protected getContents(): java.lang.Object[][]
                }
-
+               
             }
             class BaseLineInfo implements com.sun.tools.jdi.LineInfo {
                 constructor(arg0: int, arg1: com.sun.tools.jdi.ReferenceTypeImpl)
@@ -9581,7 +9581,7 @@ declare namespace com {
                 vm: com.sun.tools.attach.VirtualMachine
                 transport<T>(...args: any[]): any
                 public constructor()
-                public attach(arg0: java.util.Map<java.lang.String, any extends com.sun.jdi.connect.Connector$Argument>): com.sun.jdi.VirtualMachine
+                public attach(arg0: java.util.Map<java.lang.String, com.sun.jdi.connect.Connector$Argument>): com.sun.jdi.VirtualMachine
                 public name(): java.lang.String
                 public description(): java.lang.String
                 toString<T>(...args: any[]): any
@@ -9601,7 +9601,7 @@ declare namespace com {
                 transportService<T>(...args: any[]): any
                 transport<T>(...args: any[]): any
                 public constructor()
-                public launch(arg0: java.util.Map<java.lang.String, any extends com.sun.jdi.connect.Connector$Argument>): com.sun.jdi.VirtualMachine
+                public launch(arg0: java.util.Map<java.lang.String, com.sun.jdi.connect.Connector$Argument>): com.sun.jdi.VirtualMachine
                 public name(): java.lang.String
                 public description(): java.lang.String
                 toString<T>(...args: any[]): any
@@ -9694,7 +9694,7 @@ declare namespace com {
                 static ARG_PORT: java.lang.String
                 static ARG_HOST: java.lang.String
                 public constructor()
-                public attach(arg0: java.util.Map<java.lang.String, any extends com.sun.jdi.connect.Connector$Argument>): com.sun.jdi.VirtualMachine
+                public attach(arg0: java.util.Map<java.lang.String, com.sun.jdi.connect.Connector$Argument>): com.sun.jdi.VirtualMachine
                 public name(): java.lang.String
                 public description(): java.lang.String
             }
@@ -9706,15 +9706,15 @@ declare namespace com {
             class GenericListeningConnector extends com.sun.tools.jdi.ConnectorImpl implements com.sun.jdi.connect.ListeningConnector {
                 static ARG_ADDRESS: java.lang.String
                 static ARG_TIMEOUT: java.lang.String
-                listenMap: java.util.Map<java.util.Map<java.lang.String, any extends com.sun.jdi.connect.Connector$Argument>, com.sun.jdi.connect.spi.TransportService$ListenKey>
+                listenMap: java.util.Map<java.util.Map<java.lang.String, com.sun.jdi.connect.Connector$Argument>, com.sun.jdi.connect.spi.TransportService$ListenKey>
                 transportService: com.sun.jdi.connect.spi.TransportService
                 transport<T>(...args: any[]): any
                 static $assertionsDisabled: boolean
                 protected constructor(arg0: com.sun.jdi.connect.spi.TransportService)
                 public static create(arg0: com.sun.jdi.connect.spi.TransportService): com.sun.tools.jdi.GenericListeningConnector
                 startListening<T>(...args: any[]): any
-                public stopListening(arg0: java.util.Map<java.lang.String, any extends com.sun.jdi.connect.Connector$Argument>): void
-                public accept(arg0: java.util.Map<java.lang.String, any extends com.sun.jdi.connect.Connector$Argument>): com.sun.jdi.VirtualMachine
+                public stopListening(arg0: java.util.Map<java.lang.String, com.sun.jdi.connect.Connector$Argument>): void
+                public accept(arg0: java.util.Map<java.lang.String, com.sun.jdi.connect.Connector$Argument>): com.sun.jdi.VirtualMachine
                 public supportsMultipleConnections(): boolean
                 public name(): java.lang.String
                 public description(): java.lang.String
@@ -9730,7 +9730,7 @@ declare namespace com {
                 static ARG_PORT: java.lang.String
                 static ARG_LOCALADDR: java.lang.String
                 public constructor()
-                public startListening(arg0: java.util.Map<java.lang.String, any extends com.sun.jdi.connect.Connector$Argument>): java.lang.String
+                public startListening(arg0: java.util.Map<java.lang.String, com.sun.jdi.connect.Connector$Argument>): java.lang.String
                 public name(): java.lang.String
                 public description(): java.lang.String
             }
@@ -9814,7 +9814,7 @@ declare namespace com {
                 addBooleanArgument(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean, arg4: boolean): void
                 addIntegerArgument(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: boolean, arg5: int, arg6: int): void
                 addSelectedArgument(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: boolean, arg5: java.util.List<java.lang.String>): void
-                argument(arg0: java.lang.String, arg1: java.util.Map<java.lang.String, any extends com.sun.jdi.connect.Connector$Argument>): com.sun.tools.jdi.ConnectorImpl$ArgumentImpl
+                argument(arg0: java.lang.String, arg1: java.util.Map<java.lang.String, com.sun.jdi.connect.Connector$Argument>): com.sun.tools.jdi.ConnectorImpl$ArgumentImpl
                 getString(arg0: java.lang.String): java.lang.String
                 toString<T>(...args: any[]): any
             }
@@ -9902,7 +9902,7 @@ declare namespace com {
                 usingSharedMemory: boolean
                 public constructor()
                 static hasWhitespace(arg0: java.lang.String): boolean
-                public launch(arg0: java.util.Map<java.lang.String, any extends com.sun.jdi.connect.Connector$Argument>): com.sun.jdi.VirtualMachine
+                public launch(arg0: java.util.Map<java.lang.String, com.sun.jdi.connect.Connector$Argument>): com.sun.jdi.VirtualMachine
                 public name(): java.lang.String
                 public description(): java.lang.String
                 toString<T>(...args: any[]): any
@@ -9919,21 +9919,21 @@ declare namespace com {
                 public name(): java.lang.String
             }
             interface VMModifiers {
-                public static PUBLIC: int
-                public static PRIVATE: int
-                public static PROTECTED: int
-                public static STATIC: int
-                public static FINAL: int
-                public static SYNCHRONIZED: int
-                public static VOLATILE: int
-                public static BRIDGE: int
-                public static TRANSIENT: int
-                public static VARARGS: int
-                public static NATIVE: int
-                public static INTERFACE: int
-                public static ABSTRACT: int
-                public static ENUM_CONSTANT: int
-                public static SYNTHETIC: int
+                PUBLIC: int
+                PRIVATE: int
+                PROTECTED: int
+                STATIC: int
+                FINAL: int
+                SYNCHRONIZED: int
+                VOLATILE: int
+                BRIDGE: int
+                TRANSIENT: int
+                VARARGS: int
+                NATIVE: int
+                INTERFACE: int
+                ABSTRACT: int
+                ENUM_CONSTANT: int
+                SYNTHETIC: int
             }
             class VoidTypeImpl extends com.sun.tools.jdi.TypeImpl implements com.sun.jdi.VoidType {
                 constructor(arg0: com.sun.jdi.VirtualMachine)
@@ -9948,10 +9948,10 @@ declare namespace com {
                 valueOf<T>(...args: any[]): any
             }
             interface LineInfo {
-                public liStratum(): java.lang.String
-                public liLineNumber(): int
-                public liSourceName(): java.lang.String
-                public liSourcePath(): java.lang.String
+                liStratum(): java.lang.String
+                liLineNumber(): int
+                liSourceName(): java.lang.String
+                liSourcePath(): java.lang.String
             }
             class JNITypeParser {
                 static SIGNATURE_ENDCLASS: char
@@ -10498,8 +10498,8 @@ declare namespace com {
                 canInvoke(arg0: com.sun.jdi.Method): boolean
             }
             interface InvokableTypeImpl$InvocationResult {
-                public getException(): com.sun.tools.jdi.ObjectReferenceImpl
-                public getResult(): com.sun.tools.jdi.ValueImpl
+                getException(): com.sun.tools.jdi.ObjectReferenceImpl
+                getResult(): com.sun.tools.jdi.ValueImpl
             }
             class ClassTypeImpl extends com.sun.tools.jdi.InvokableTypeImpl implements com.sun.jdi.ClassType {
                 protected constructor(arg0: com.sun.jdi.VirtualMachine, arg1: long)
@@ -10679,7 +10679,7 @@ declare namespace com {
                 static isObjectTag(arg0: byte): boolean
             }
             interface CommandSender {
-                public send(): com.sun.tools.jdi.PacketStream
+                send(): com.sun.tools.jdi.PacketStream
             }
             class ThreadAction extends java.util.EventObject {
                 static THREAD_RESUMABLE: int
@@ -11994,8 +11994,8 @@ declare namespace com {
                 static waitForReply(arg0: com.sun.tools.jdi.VirtualMachineImpl, arg1: com.sun.tools.jdi.PacketStream): com.sun.tools.jdi.JDWP$VirtualMachine$Version
             }
             interface VMListener extends java.util.EventListener {
-                public vmSuspended(arg0: com.sun.tools.jdi.VMAction): boolean
-                public vmNotSuspended(arg0: com.sun.tools.jdi.VMAction): boolean
+                vmSuspended(arg0: com.sun.tools.jdi.VMAction): boolean
+                vmNotSuspended(arg0: com.sun.tools.jdi.VMAction): boolean
             }
             class ObjectReferenceImpl extends com.sun.tools.jdi.ValueImpl implements com.sun.jdi.ObjectReference , com.sun.tools.jdi.VMListener {
                 ref<T>(...args: any[]): any
@@ -12050,9 +12050,9 @@ declare namespace com {
                 protected constructor()
             }
             interface VirtualMachineManagerService extends com.sun.jdi.VirtualMachineManager {
-                public setDefaultConnector(arg0: com.sun.jdi.connect.LaunchingConnector): void
-                public addConnector(arg0: com.sun.jdi.connect.Connector): void
-                public removeConnector(arg0: com.sun.jdi.connect.Connector): void
+                setDefaultConnector(arg0: com.sun.jdi.connect.LaunchingConnector): void
+                addConnector(arg0: com.sun.jdi.connect.Connector): void
+                removeConnector(arg0: com.sun.jdi.connect.Connector): void
             }
             class VirtualMachineManagerImpl implements com.sun.tools.jdi.VirtualMachineManagerService {
                 public static virtualMachineManager(): com.sun.jdi.VirtualMachineManager
@@ -12311,7 +12311,7 @@ declare namespace com {
                 public run(): void
             }
             interface ThreadListener extends java.util.EventListener {
-                public threadResumable(arg0: com.sun.tools.jdi.ThreadAction): boolean
+                threadResumable(arg0: com.sun.tools.jdi.ThreadAction): boolean
             }
             class VirtualMachineImpl extends com.sun.tools.jdi.MirrorImpl implements com.sun.jdi.PathSearchingVirtualMachine , com.sun.tools.jdi.ThreadListener {
                 public sizeofFieldRef: int
@@ -12335,7 +12335,7 @@ declare namespace com {
                 public hashCode(): int
                 public classesByName(arg0: java.lang.String): java.util.List<com.sun.jdi.ReferenceType>
                 public allClasses(): java.util.List<com.sun.jdi.ReferenceType>
-                public redefineClasses(arg0: java.util.Map<any extends com.sun.jdi.ReferenceType, byte[]>): void
+                public redefineClasses(arg0: java.util.Map<com.sun.jdi.ReferenceType, byte[]>): void
                 public allThreads(): java.util.List<com.sun.jdi.ThreadReference>
                 public topLevelThreadGroups(): java.util.List<com.sun.jdi.ThreadGroupReference>
                 sendResumingCommand(arg0: com.sun.tools.jdi.CommandSender): com.sun.tools.jdi.PacketStream
@@ -12427,10 +12427,10 @@ declare namespace com {
                 public send(): com.sun.tools.jdi.PacketStream
             }
             interface ValueContainer {
-                public type(): com.sun.jdi.Type
-                public findType(arg0: java.lang.String): com.sun.jdi.Type
-                public typeName(): java.lang.String
-                public signature(): java.lang.String
+                type(): com.sun.jdi.Type
+                findType(arg0: java.lang.String): com.sun.jdi.Type
+                typeName(): java.lang.String
+                signature(): java.lang.String
             }
             abstract class MirrorImpl implements com.sun.jdi.Mirror {
                 protected vm: com.sun.tools.jdi.VirtualMachineImpl
@@ -12459,7 +12459,7 @@ declare namespace com {
                 typeValueKey(): byte
                 public virtualMachine(): com.sun.jdi.VirtualMachine
             }
-
+            
          }
          namespace attach {
             class AttachOperationFailedException extends java.io.IOException {
@@ -12518,9 +12518,9 @@ declare namespace com {
                    public listVirtualMachines(): java.util.List<com.sun.tools.attach.VirtualMachineDescriptor>
                    public static providers(): java.util.List<com.sun.tools.attach.spi.AttachProvider>
                }
-
+               
             }
-
+            
          }
          namespace script {
             namespace shell {
@@ -12551,11 +12551,11 @@ declare namespace com {
                    public run(arg0: java.lang.String[]): void
                }
                interface Main$Command {
-                   public run(arg0: java.lang.String[]): void
+                   run(arg0: java.lang.String[]): void
                }
-
+               
             }
-
+            
          }
          namespace hat {
             class Main {
@@ -12576,7 +12576,7 @@ declare namespace com {
                       constructor(...args: any[])
                   }
                   interface ObjectVisitor {
-                      public visit(arg0: java.lang.Object): boolean
+                      visit(arg0: java.lang.Object): boolean
                   }
                   class OQLEngine {
                       public static isOQLSupported(): boolean
@@ -12587,7 +12587,7 @@ declare namespace com {
                       public toHtml(arg0: java.lang.Object): java.lang.Object
                       public call(arg0: java.lang.String, arg1: java.lang.Object[]): java.lang.Object
                   }
-
+                  
                }
                namespace parser {
                   class FileReadBuffer implements com.sun.tools.hat.internal.parser.ReadBuffer {
@@ -12673,14 +12673,14 @@ declare namespace com {
                       public static readFile(arg0: java.lang.String, arg1: boolean, arg2: int): com.sun.tools.hat.internal.model.Snapshot
                   }
                   interface ReadBuffer {
-                      public get(arg0: long, arg1: byte[]): void
-                      public getChar(arg0: long): char
-                      public getByte(arg0: long): byte
-                      public getShort(arg0: long): short
-                      public getInt(arg0: long): int
-                      public getLong(arg0: long): long
+                      get(arg0: long, arg1: byte[]): void
+                      getChar(arg0: long): char
+                      getByte(arg0: long): byte
+                      getShort(arg0: long): short
+                      getInt(arg0: long): int
+                      getLong(arg0: long): long
                   }
-
+                  
                }
                namespace model {
                   class HackJavaValue extends com.sun.tools.hat.internal.model.JavaValue {
@@ -12797,14 +12797,14 @@ declare namespace com {
                       public mightExclude(): boolean
                   }
                   interface ArrayTypeCodes {
-                      public static T_BOOLEAN: int
-                      public static T_CHAR: int
-                      public static T_FLOAT: int
-                      public static T_DOUBLE: int
-                      public static T_BYTE: int
-                      public static T_SHORT: int
-                      public static T_INT: int
-                      public static T_LONG: int
+                      T_BOOLEAN: int
+                      T_CHAR: int
+                      T_FLOAT: int
+                      T_DOUBLE: int
+                      T_BYTE: int
+                      T_SHORT: int
+                      T_INT: int
+                      T_LONG: int
                   }
                   class JavaObjectArray extends com.sun.tools.hat.internal.model.JavaLazyReadObject {
                       public constructor(arg0: long, arg1: long)
@@ -12832,9 +12832,9 @@ declare namespace com {
                       public getLineNumber(): java.lang.String
                   }
                   interface JavaHeapObjectVisitor {
-                      public visit(arg0: com.sun.tools.hat.internal.model.JavaHeapObject): void
-                      public exclude(arg0: com.sun.tools.hat.internal.model.JavaClass, arg1: com.sun.tools.hat.internal.model.JavaField): boolean
-                      public mightExclude(): boolean
+                      visit(arg0: com.sun.tools.hat.internal.model.JavaHeapObject): void
+                      exclude(arg0: com.sun.tools.hat.internal.model.JavaClass, arg1: com.sun.tools.hat.internal.model.JavaField): boolean
+                      mightExclude(): boolean
                   }
                   class ReferenceChain {
                       obj: com.sun.tools.hat.internal.model.JavaHeapObject
@@ -12845,7 +12845,7 @@ declare namespace com {
                       public getDepth(): int
                   }
                   interface ReachableExcludes {
-                      public isExcluded(arg0: java.lang.String): boolean
+                      isExcluded(arg0: java.lang.String): boolean
                   }
                   class StackTrace {
                       public constructor(arg0: com.sun.tools.hat.internal.model.StackFrame[])
@@ -13060,7 +13060,7 @@ declare namespace com {
                       public visit(arg0: com.sun.tools.hat.internal.model.JavaHeapObject): void
                       constructor(arg0: com.sun.tools.hat.internal.model.Snapshot$1)
                   }
-
+                  
                }
                namespace server {
                   class AllClassesQuery extends com.sun.tools.hat.internal.server.QueryHandler {
@@ -13243,7 +13243,7 @@ declare namespace com {
                       constructor(arg0: com.sun.tools.hat.internal.server.RootsQuery)
                       public compare(arg0: java.lang.Object, arg1: java.lang.Object): int
                   }
-
+                  
                }
                namespace util {
                   class ArraySorter {
@@ -13281,11 +13281,11 @@ declare namespace com {
                       constructor()
                       public compare(arg0: java.lang.Object, arg1: java.lang.Object): int
                   }
-
+                  
                }
-
+               
             }
-
+            
          }
          namespace javac {
             namespace code {
@@ -13779,7 +13779,7 @@ declare namespace com {
                    public getReturnType(): javax.lang.model.type.TypeMirror
                }
                interface Type$UndetVar$UndetVarListener {
-                   public varChanged(arg0: com.sun.tools.javac.code.Type$UndetVar, arg1: java.util.Set<com.sun.tools.javac.code.Type$UndetVar$InferenceBound>): void
+                   varChanged(arg0: com.sun.tools.javac.code.Type$UndetVar, arg1: java.util.Set<com.sun.tools.javac.code.Type$UndetVar$InferenceBound>): void
                }
                class Type$UndetVar$InferenceBound$1 extends com.sun.tools.javac.code.Type$UndetVar$InferenceBound {
                    constructor(arg0: java.lang.String, arg1: int)
@@ -13939,18 +13939,18 @@ declare namespace com {
                    public getAnnotationMirrors(): java.util.List
                }
                interface Type$Visitor<R, S> {
-                   public visitClassType(arg0: com.sun.tools.javac.code.Type$ClassType, arg1: S): R
-                   public visitWildcardType(arg0: com.sun.tools.javac.code.Type$WildcardType, arg1: S): R
-                   public visitArrayType(arg0: com.sun.tools.javac.code.Type$ArrayType, arg1: S): R
-                   public visitMethodType(arg0: com.sun.tools.javac.code.Type$MethodType, arg1: S): R
-                   public visitPackageType(arg0: com.sun.tools.javac.code.Type$PackageType, arg1: S): R
-                   public visitTypeVar(arg0: com.sun.tools.javac.code.Type$TypeVar, arg1: S): R
-                   public visitCapturedType(arg0: com.sun.tools.javac.code.Type$CapturedType, arg1: S): R
-                   public visitForAll(arg0: com.sun.tools.javac.code.Type$ForAll, arg1: S): R
-                   public visitUndetVar(arg0: com.sun.tools.javac.code.Type$UndetVar, arg1: S): R
-                   public visitErrorType(arg0: com.sun.tools.javac.code.Type$ErrorType, arg1: S): R
-                   public visitAnnotatedType(arg0: com.sun.tools.javac.code.Type$AnnotatedType, arg1: S): R
-                   public visitType(arg0: com.sun.tools.javac.code.Type, arg1: S): R
+                   visitClassType(arg0: com.sun.tools.javac.code.Type$ClassType, arg1: S): R
+                   visitWildcardType(arg0: com.sun.tools.javac.code.Type$WildcardType, arg1: S): R
+                   visitArrayType(arg0: com.sun.tools.javac.code.Type$ArrayType, arg1: S): R
+                   visitMethodType(arg0: com.sun.tools.javac.code.Type$MethodType, arg1: S): R
+                   visitPackageType(arg0: com.sun.tools.javac.code.Type$PackageType, arg1: S): R
+                   visitTypeVar(arg0: com.sun.tools.javac.code.Type$TypeVar, arg1: S): R
+                   visitCapturedType(arg0: com.sun.tools.javac.code.Type$CapturedType, arg1: S): R
+                   visitForAll(arg0: com.sun.tools.javac.code.Type$ForAll, arg1: S): R
+                   visitUndetVar(arg0: com.sun.tools.javac.code.Type$UndetVar, arg1: S): R
+                   visitErrorType(arg0: com.sun.tools.javac.code.Type$ErrorType, arg1: S): R
+                   visitAnnotatedType(arg0: com.sun.tools.javac.code.Type$AnnotatedType, arg1: S): R
+                   visitType(arg0: com.sun.tools.javac.code.Type, arg1: S): R
                }
                class Type$4 {
                    static $SwitchMap$com$sun$tools$javac$code$TypeTag: int[]
@@ -14030,8 +14030,8 @@ declare namespace com {
                    public getAnnotation<A extends java.lang.annotation.Annotation>(arg0: java.lang.Class<A>): A
                }
                interface Scope$ScopeListener {
-                   public symbolAdded(arg0: com.sun.tools.javac.code.Symbol, arg1: com.sun.tools.javac.code.Scope): void
-                   public symbolRemoved(arg0: com.sun.tools.javac.code.Symbol, arg1: com.sun.tools.javac.code.Scope): void
+                   symbolAdded(arg0: com.sun.tools.javac.code.Symbol, arg1: com.sun.tools.javac.code.Scope): void
+                   symbolRemoved(arg0: com.sun.tools.javac.code.Symbol, arg1: com.sun.tools.javac.code.Scope): void
                }
                class Scope$1 implements com.sun.tools.javac.util.Filter<com.sun.tools.javac.code.Symbol> {
                    val$sym: com.sun.tools.javac.code.Symbol
@@ -14192,7 +14192,7 @@ declare namespace com {
                    getElementsByName<T>(...args: any[]): any
                    toString<T>(...args: any[]): any
                }
-               class Symbol> extends com.sun.tools.javac.code.Symbol {
+               class Symbol$DelegatedSymbol<T extends com.sun.tools.javac.code.Symbol> extends com.sun.tools.javac.code.Symbol {
                    protected other: T
                    public constructor(arg0: T)
                    toString<T>(...args: any[]): any
@@ -14400,7 +14400,7 @@ declare namespace com {
                    public accept<R, P>(arg0: com.sun.tools.javac.code.Symbol$Visitor<R, P>, arg1: P): R
                }
                interface Symbol$Completer {
-                   public complete(arg0: com.sun.tools.javac.code.Symbol): void
+                   complete(arg0: com.sun.tools.javac.code.Symbol): void
                }
                class Symbol$CompletionFailure extends java.lang.RuntimeException {
                    public sym: com.sun.tools.javac.code.Symbol
@@ -14413,13 +14413,13 @@ declare namespace com {
                    initCause<T>(...args: any[]): any
                }
                interface Symbol$Visitor<R, P> {
-                   public visitClassSymbol(arg0: com.sun.tools.javac.code.Symbol$ClassSymbol, arg1: P): R
-                   public visitMethodSymbol(arg0: com.sun.tools.javac.code.Symbol$MethodSymbol, arg1: P): R
-                   public visitPackageSymbol(arg0: com.sun.tools.javac.code.Symbol$PackageSymbol, arg1: P): R
-                   public visitOperatorSymbol(arg0: com.sun.tools.javac.code.Symbol$OperatorSymbol, arg1: P): R
-                   public visitVarSymbol(arg0: com.sun.tools.javac.code.Symbol$VarSymbol, arg1: P): R
-                   public visitTypeSymbol(arg0: com.sun.tools.javac.code.Symbol$TypeSymbol, arg1: P): R
-                   public visitSymbol(arg0: com.sun.tools.javac.code.Symbol, arg1: P): R
+                   visitClassSymbol(arg0: com.sun.tools.javac.code.Symbol$ClassSymbol, arg1: P): R
+                   visitMethodSymbol(arg0: com.sun.tools.javac.code.Symbol$MethodSymbol, arg1: P): R
+                   visitPackageSymbol(arg0: com.sun.tools.javac.code.Symbol$PackageSymbol, arg1: P): R
+                   visitOperatorSymbol(arg0: com.sun.tools.javac.code.Symbol$OperatorSymbol, arg1: P): R
+                   visitVarSymbol(arg0: com.sun.tools.javac.code.Symbol$VarSymbol, arg1: P): R
+                   visitTypeSymbol(arg0: com.sun.tools.javac.code.Symbol$TypeSymbol, arg1: P): R
+                   visitSymbol(arg0: com.sun.tools.javac.code.Symbol, arg1: P): R
                }
                abstract class Symbol extends com.sun.tools.javac.code.AnnoConstruct implements javax.lang.model.element.Element {
                    public kind: int
@@ -14605,12 +14605,12 @@ declare namespace com {
                    public constructor(arg0: com.sun.tools.javac.code.Type, arg1: com.sun.tools.javac.code.Type)
                }
                interface Attribute$Visitor {
-                   public visitConstant(arg0: com.sun.tools.javac.code.Attribute$Constant): void
-                   public visitClass(arg0: com.sun.tools.javac.code.Attribute$Class): void
-                   public visitCompound(arg0: com.sun.tools.javac.code.Attribute$Compound): void
-                   public visitArray(arg0: com.sun.tools.javac.code.Attribute$Array): void
-                   public visitEnum(arg0: com.sun.tools.javac.code.Attribute$Enum): void
-                   public visitError(arg0: com.sun.tools.javac.code.Attribute$Error): void
+                   visitConstant(arg0: com.sun.tools.javac.code.Attribute$Constant): void
+                   visitClass(arg0: com.sun.tools.javac.code.Attribute$Class): void
+                   visitCompound(arg0: com.sun.tools.javac.code.Attribute$Compound): void
+                   visitArray(arg0: com.sun.tools.javac.code.Attribute$Array): void
+                   visitEnum(arg0: com.sun.tools.javac.code.Attribute$Enum): void
+                   visitError(arg0: com.sun.tools.javac.code.Attribute$Error): void
                }
                class Attribute$RetentionPolicy extends java.lang.Enum<com.sun.tools.javac.code.Attribute$RetentionPolicy> {
                    public static SOURCE: com.sun.tools.javac.code.Attribute$RetentionPolicy
@@ -14637,7 +14637,7 @@ declare namespace com {
                    toString<T>(...args: any[]): any
                    public run(): void
                }
-               class Attribute$Compound> extends com.sun.tools.javac.code.Attribute$TypeCompound {
+               class SymbolMetadata$Placeholder<T extends com.sun.tools.javac.code.Attribute$Compound> extends com.sun.tools.javac.code.Attribute$TypeCompound {
                    public constructor(arg0: com.sun.tools.javac.comp.Annotate$AnnotateRepeatedContext<T>, arg1: com.sun.tools.javac.util.List<T>, arg2: com.sun.tools.javac.code.Symbol)
                    toString<T>(...args: any[]): any
                    public getPlaceholderFor(): com.sun.tools.javac.util.List<T>
@@ -15547,7 +15547,7 @@ declare namespace com {
                    public annotationType(arg0: com.sun.tools.javac.code.Attribute$Compound, arg1: com.sun.tools.javac.code.Symbol): com.sun.tools.javac.code.TypeAnnotations$AnnotationType
                }
                interface DeferredLintHandler$LintLogger {
-                   public report(): void
+                   report(): void
                }
                class DeferredLintHandler$1 implements com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition {
                    constructor()
@@ -15624,7 +15624,7 @@ declare namespace com {
                    visitVarSymbol<T>(...args: any[]): any
                    visitSymbol<T>(...args: any[]): any
                }
-
+               
             }
             namespace api {
                class Formattable$LocalizedString implements com.sun.tools.javac.api.Formattable {
@@ -15635,7 +15635,7 @@ declare namespace com {
                }
                interface Formattable {
                    toString<T>(...args: any[]): any
-                   public getKind(): java.lang.String
+                   getKind(): java.lang.String
                }
                class JavacTool$1 extends com.sun.tools.javac.main.OptionHelper$GrumpyHelper {
                    val$optionTable: com.sun.tools.javac.util.Options
@@ -15679,23 +15679,23 @@ declare namespace com {
                    valueOf<T>(...args: any[]): any
                }
                interface DiagnosticFormatter$Configuration {
-                   public setVisible(arg0: java.util.Set<com.sun.tools.javac.api.DiagnosticFormatter$Configuration$DiagnosticPart>): void
-                   public getVisible(): java.util.Set<com.sun.tools.javac.api.DiagnosticFormatter$Configuration$DiagnosticPart>
-                   public setMultilineLimit(arg0: com.sun.tools.javac.api.DiagnosticFormatter$Configuration$MultilineLimit, arg1: int): void
-                   public getMultilineLimit(arg0: com.sun.tools.javac.api.DiagnosticFormatter$Configuration$MultilineLimit): int
+                   setVisible(arg0: java.util.Set<com.sun.tools.javac.api.DiagnosticFormatter$Configuration$DiagnosticPart>): void
+                   getVisible(): java.util.Set<com.sun.tools.javac.api.DiagnosticFormatter$Configuration$DiagnosticPart>
+                   setMultilineLimit(arg0: com.sun.tools.javac.api.DiagnosticFormatter$Configuration$MultilineLimit, arg1: int): void
+                   getMultilineLimit(arg0: com.sun.tools.javac.api.DiagnosticFormatter$Configuration$MultilineLimit): int
                }
-               interface Diagnostic<any>> {
-                   public displaySource(arg0: D): boolean
-                   public format(arg0: D, arg1: java.util.Locale): java.lang.String
-                   public formatMessage(arg0: D, arg1: java.util.Locale): java.lang.String
-                   public formatKind(arg0: D, arg1: java.util.Locale): java.lang.String
-                   public formatSource(arg0: D, arg1: boolean, arg2: java.util.Locale): java.lang.String
-                   public formatPosition(arg0: D, arg1: com.sun.tools.javac.api.DiagnosticFormatter$PositionKind, arg2: java.util.Locale): java.lang.String
-                   public getConfiguration(): com.sun.tools.javac.api.DiagnosticFormatter$Configuration
+               interface DiagnosticFormatter<D extends javax.tools.Diagnostic<any>> {
+                   displaySource(arg0: D): boolean
+                   format(arg0: D, arg1: java.util.Locale): java.lang.String
+                   formatMessage(arg0: D, arg1: java.util.Locale): java.lang.String
+                   formatKind(arg0: D, arg1: java.util.Locale): java.lang.String
+                   formatSource(arg0: D, arg1: boolean, arg2: java.util.Locale): java.lang.String
+                   formatPosition(arg0: D, arg1: com.sun.tools.javac.api.DiagnosticFormatter$PositionKind, arg2: java.util.Locale): java.lang.String
+                   getConfiguration(): com.sun.tools.javac.api.DiagnosticFormatter$Configuration
                }
                interface Messages {
-                   public add(arg0: java.lang.String): void
-                   public getLocalizedString(arg0: java.util.Locale, arg1: java.lang.String, ...arg2: java.lang.Object[]): java.lang.String
+                   add(arg0: java.lang.String): void
+                   getLocalizedString(arg0: java.util.Locale, arg1: java.lang.String, ...arg2: java.lang.Object[]): java.lang.String
                }
                class MultiTaskListener implements com.sun.source.util.TaskListener {
                    public static taskListenerKey: com.sun.tools.javac.util.Context$Key<com.sun.tools.javac.api.MultiTaskListener>
@@ -15797,7 +15797,7 @@ declare namespace com {
                    static access$000(arg0: com.sun.tools.javac.api.ClientCodeWrapper, arg1: java.lang.Class, arg2: java.lang.Object): java.lang.String
                    static access$100(arg0: com.sun.tools.javac.api.ClientCodeWrapper, arg1: javax.tools.Diagnostic): javax.tools.Diagnostic
                }
-               class JavaFileManager> extends javax.tools.ForwardingJavaFileManager<M> {
+               class WrappingJavaFileManager<M extends javax.tools.JavaFileManager> extends javax.tools.ForwardingJavaFileManager<M> {
                    protected constructor(arg0: M)
                    wrap<T>(...args: any[]): any
                    unwrap<T>(...args: any[]): any
@@ -15945,7 +15945,7 @@ declare namespace com {
                    public hashCode(): int
                    toString<T>(...args: any[]): any
                }
-
+               
             }
             namespace tree {
                class JCTree$Tag extends java.lang.Enum<com.sun.tools.javac.tree.JCTree$Tag> {
@@ -16718,55 +16718,55 @@ declare namespace com {
                    public getTag(): com.sun.tools.javac.tree.JCTree$Tag
                }
                interface JCTree$Factory {
-                   public TopLevel(arg0: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCAnnotation>, arg1: com.sun.tools.javac.tree.JCTree$JCExpression, arg2: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree>): com.sun.tools.javac.tree.JCTree$JCCompilationUnit
-                   public Import(arg0: com.sun.tools.javac.tree.JCTree, arg1: boolean): com.sun.tools.javac.tree.JCTree$JCImport
-                   public ClassDef(arg0: com.sun.tools.javac.tree.JCTree$JCModifiers, arg1: com.sun.tools.javac.util.Name, arg2: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCTypeParameter>, arg3: com.sun.tools.javac.tree.JCTree$JCExpression, arg4: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>, arg5: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree>): com.sun.tools.javac.tree.JCTree$JCClassDecl
-                   public MethodDef(arg0: com.sun.tools.javac.tree.JCTree$JCModifiers, arg1: com.sun.tools.javac.util.Name, arg2: com.sun.tools.javac.tree.JCTree$JCExpression, arg3: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCTypeParameter>, arg4: com.sun.tools.javac.tree.JCTree$JCVariableDecl, arg5: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCVariableDecl>, arg6: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>, arg7: com.sun.tools.javac.tree.JCTree$JCBlock, arg8: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCMethodDecl
-                   public VarDef(arg0: com.sun.tools.javac.tree.JCTree$JCModifiers, arg1: com.sun.tools.javac.util.Name, arg2: com.sun.tools.javac.tree.JCTree$JCExpression, arg3: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCVariableDecl
-                   public Skip(): com.sun.tools.javac.tree.JCTree$JCSkip
-                   public Block(arg0: long, arg1: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCStatement>): com.sun.tools.javac.tree.JCTree$JCBlock
-                   public DoLoop(arg0: com.sun.tools.javac.tree.JCTree$JCStatement, arg1: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCDoWhileLoop
-                   public WhileLoop(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.tree.JCTree$JCStatement): com.sun.tools.javac.tree.JCTree$JCWhileLoop
-                   public ForLoop(arg0: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCStatement>, arg1: com.sun.tools.javac.tree.JCTree$JCExpression, arg2: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpressionStatement>, arg3: com.sun.tools.javac.tree.JCTree$JCStatement): com.sun.tools.javac.tree.JCTree$JCForLoop
-                   public ForeachLoop(arg0: com.sun.tools.javac.tree.JCTree$JCVariableDecl, arg1: com.sun.tools.javac.tree.JCTree$JCExpression, arg2: com.sun.tools.javac.tree.JCTree$JCStatement): com.sun.tools.javac.tree.JCTree$JCEnhancedForLoop
-                   public Labelled(arg0: com.sun.tools.javac.util.Name, arg1: com.sun.tools.javac.tree.JCTree$JCStatement): com.sun.tools.javac.tree.JCTree$JCLabeledStatement
-                   public Switch(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCCase>): com.sun.tools.javac.tree.JCTree$JCSwitch
-                   public Case(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCStatement>): com.sun.tools.javac.tree.JCTree$JCCase
-                   public Synchronized(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.tree.JCTree$JCBlock): com.sun.tools.javac.tree.JCTree$JCSynchronized
+                   TopLevel(arg0: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCAnnotation>, arg1: com.sun.tools.javac.tree.JCTree$JCExpression, arg2: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree>): com.sun.tools.javac.tree.JCTree$JCCompilationUnit
+                   Import(arg0: com.sun.tools.javac.tree.JCTree, arg1: boolean): com.sun.tools.javac.tree.JCTree$JCImport
+                   ClassDef(arg0: com.sun.tools.javac.tree.JCTree$JCModifiers, arg1: com.sun.tools.javac.util.Name, arg2: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCTypeParameter>, arg3: com.sun.tools.javac.tree.JCTree$JCExpression, arg4: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>, arg5: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree>): com.sun.tools.javac.tree.JCTree$JCClassDecl
+                   MethodDef(arg0: com.sun.tools.javac.tree.JCTree$JCModifiers, arg1: com.sun.tools.javac.util.Name, arg2: com.sun.tools.javac.tree.JCTree$JCExpression, arg3: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCTypeParameter>, arg4: com.sun.tools.javac.tree.JCTree$JCVariableDecl, arg5: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCVariableDecl>, arg6: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>, arg7: com.sun.tools.javac.tree.JCTree$JCBlock, arg8: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCMethodDecl
+                   VarDef(arg0: com.sun.tools.javac.tree.JCTree$JCModifiers, arg1: com.sun.tools.javac.util.Name, arg2: com.sun.tools.javac.tree.JCTree$JCExpression, arg3: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCVariableDecl
+                   Skip(): com.sun.tools.javac.tree.JCTree$JCSkip
+                   Block(arg0: long, arg1: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCStatement>): com.sun.tools.javac.tree.JCTree$JCBlock
+                   DoLoop(arg0: com.sun.tools.javac.tree.JCTree$JCStatement, arg1: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCDoWhileLoop
+                   WhileLoop(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.tree.JCTree$JCStatement): com.sun.tools.javac.tree.JCTree$JCWhileLoop
+                   ForLoop(arg0: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCStatement>, arg1: com.sun.tools.javac.tree.JCTree$JCExpression, arg2: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpressionStatement>, arg3: com.sun.tools.javac.tree.JCTree$JCStatement): com.sun.tools.javac.tree.JCTree$JCForLoop
+                   ForeachLoop(arg0: com.sun.tools.javac.tree.JCTree$JCVariableDecl, arg1: com.sun.tools.javac.tree.JCTree$JCExpression, arg2: com.sun.tools.javac.tree.JCTree$JCStatement): com.sun.tools.javac.tree.JCTree$JCEnhancedForLoop
+                   Labelled(arg0: com.sun.tools.javac.util.Name, arg1: com.sun.tools.javac.tree.JCTree$JCStatement): com.sun.tools.javac.tree.JCTree$JCLabeledStatement
+                   Switch(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCCase>): com.sun.tools.javac.tree.JCTree$JCSwitch
+                   Case(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCStatement>): com.sun.tools.javac.tree.JCTree$JCCase
+                   Synchronized(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.tree.JCTree$JCBlock): com.sun.tools.javac.tree.JCTree$JCSynchronized
                    Try<T>(...args: any[]): any
-                   public Catch(arg0: com.sun.tools.javac.tree.JCTree$JCVariableDecl, arg1: com.sun.tools.javac.tree.JCTree$JCBlock): com.sun.tools.javac.tree.JCTree$JCCatch
-                   public Conditional(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.tree.JCTree$JCExpression, arg2: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCConditional
-                   public If(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.tree.JCTree$JCStatement, arg2: com.sun.tools.javac.tree.JCTree$JCStatement): com.sun.tools.javac.tree.JCTree$JCIf
-                   public Exec(arg0: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCExpressionStatement
-                   public Break(arg0: com.sun.tools.javac.util.Name): com.sun.tools.javac.tree.JCTree$JCBreak
-                   public Continue(arg0: com.sun.tools.javac.util.Name): com.sun.tools.javac.tree.JCTree$JCContinue
-                   public Return(arg0: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCReturn
-                   public Throw(arg0: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCThrow
-                   public Assert(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCAssert
-                   public Apply(arg0: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>, arg1: com.sun.tools.javac.tree.JCTree$JCExpression, arg2: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>): com.sun.tools.javac.tree.JCTree$JCMethodInvocation
-                   public NewClass(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>, arg2: com.sun.tools.javac.tree.JCTree$JCExpression, arg3: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>, arg4: com.sun.tools.javac.tree.JCTree$JCClassDecl): com.sun.tools.javac.tree.JCTree$JCNewClass
-                   public NewArray(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>, arg2: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>): com.sun.tools.javac.tree.JCTree$JCNewArray
-                   public Parens(arg0: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCParens
-                   public Assign(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCAssign
-                   public Assignop(arg0: com.sun.tools.javac.tree.JCTree$Tag, arg1: com.sun.tools.javac.tree.JCTree, arg2: com.sun.tools.javac.tree.JCTree): com.sun.tools.javac.tree.JCTree$JCAssignOp
-                   public Unary(arg0: com.sun.tools.javac.tree.JCTree$Tag, arg1: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCUnary
-                   public Binary(arg0: com.sun.tools.javac.tree.JCTree$Tag, arg1: com.sun.tools.javac.tree.JCTree$JCExpression, arg2: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCBinary
-                   public TypeCast(arg0: com.sun.tools.javac.tree.JCTree, arg1: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCTypeCast
-                   public TypeTest(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.tree.JCTree): com.sun.tools.javac.tree.JCTree$JCInstanceOf
-                   public Indexed(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCArrayAccess
-                   public Select(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.util.Name): com.sun.tools.javac.tree.JCTree$JCFieldAccess
-                   public Ident(arg0: com.sun.tools.javac.util.Name): com.sun.tools.javac.tree.JCTree$JCIdent
-                   public Literal(arg0: com.sun.tools.javac.code.TypeTag, arg1: java.lang.Object): com.sun.tools.javac.tree.JCTree$JCLiteral
-                   public TypeIdent(arg0: com.sun.tools.javac.code.TypeTag): com.sun.tools.javac.tree.JCTree$JCPrimitiveTypeTree
-                   public TypeArray(arg0: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCArrayTypeTree
-                   public TypeApply(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>): com.sun.tools.javac.tree.JCTree$JCTypeApply
-                   public TypeParameter(arg0: com.sun.tools.javac.util.Name, arg1: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>): com.sun.tools.javac.tree.JCTree$JCTypeParameter
-                   public Wildcard(arg0: com.sun.tools.javac.tree.JCTree$TypeBoundKind, arg1: com.sun.tools.javac.tree.JCTree): com.sun.tools.javac.tree.JCTree$JCWildcard
-                   public TypeBoundKind(arg0: com.sun.tools.javac.code.BoundKind): com.sun.tools.javac.tree.JCTree$TypeBoundKind
-                   public Annotation(arg0: com.sun.tools.javac.tree.JCTree, arg1: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>): com.sun.tools.javac.tree.JCTree$JCAnnotation
-                   public Modifiers(arg0: long, arg1: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCAnnotation>): com.sun.tools.javac.tree.JCTree$JCModifiers
-                   public Erroneous(arg0: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree>): com.sun.tools.javac.tree.JCTree$JCErroneous
-                   public LetExpr(arg0: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCVariableDecl>, arg1: com.sun.tools.javac.tree.JCTree): com.sun.tools.javac.tree.JCTree$LetExpr
+                   Catch(arg0: com.sun.tools.javac.tree.JCTree$JCVariableDecl, arg1: com.sun.tools.javac.tree.JCTree$JCBlock): com.sun.tools.javac.tree.JCTree$JCCatch
+                   Conditional(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.tree.JCTree$JCExpression, arg2: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCConditional
+                   If(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.tree.JCTree$JCStatement, arg2: com.sun.tools.javac.tree.JCTree$JCStatement): com.sun.tools.javac.tree.JCTree$JCIf
+                   Exec(arg0: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCExpressionStatement
+                   Break(arg0: com.sun.tools.javac.util.Name): com.sun.tools.javac.tree.JCTree$JCBreak
+                   Continue(arg0: com.sun.tools.javac.util.Name): com.sun.tools.javac.tree.JCTree$JCContinue
+                   Return(arg0: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCReturn
+                   Throw(arg0: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCThrow
+                   Assert(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCAssert
+                   Apply(arg0: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>, arg1: com.sun.tools.javac.tree.JCTree$JCExpression, arg2: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>): com.sun.tools.javac.tree.JCTree$JCMethodInvocation
+                   NewClass(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>, arg2: com.sun.tools.javac.tree.JCTree$JCExpression, arg3: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>, arg4: com.sun.tools.javac.tree.JCTree$JCClassDecl): com.sun.tools.javac.tree.JCTree$JCNewClass
+                   NewArray(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>, arg2: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>): com.sun.tools.javac.tree.JCTree$JCNewArray
+                   Parens(arg0: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCParens
+                   Assign(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCAssign
+                   Assignop(arg0: com.sun.tools.javac.tree.JCTree$Tag, arg1: com.sun.tools.javac.tree.JCTree, arg2: com.sun.tools.javac.tree.JCTree): com.sun.tools.javac.tree.JCTree$JCAssignOp
+                   Unary(arg0: com.sun.tools.javac.tree.JCTree$Tag, arg1: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCUnary
+                   Binary(arg0: com.sun.tools.javac.tree.JCTree$Tag, arg1: com.sun.tools.javac.tree.JCTree$JCExpression, arg2: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCBinary
+                   TypeCast(arg0: com.sun.tools.javac.tree.JCTree, arg1: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCTypeCast
+                   TypeTest(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.tree.JCTree): com.sun.tools.javac.tree.JCTree$JCInstanceOf
+                   Indexed(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCArrayAccess
+                   Select(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.util.Name): com.sun.tools.javac.tree.JCTree$JCFieldAccess
+                   Ident(arg0: com.sun.tools.javac.util.Name): com.sun.tools.javac.tree.JCTree$JCIdent
+                   Literal(arg0: com.sun.tools.javac.code.TypeTag, arg1: java.lang.Object): com.sun.tools.javac.tree.JCTree$JCLiteral
+                   TypeIdent(arg0: com.sun.tools.javac.code.TypeTag): com.sun.tools.javac.tree.JCTree$JCPrimitiveTypeTree
+                   TypeArray(arg0: com.sun.tools.javac.tree.JCTree$JCExpression): com.sun.tools.javac.tree.JCTree$JCArrayTypeTree
+                   TypeApply(arg0: com.sun.tools.javac.tree.JCTree$JCExpression, arg1: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>): com.sun.tools.javac.tree.JCTree$JCTypeApply
+                   TypeParameter(arg0: com.sun.tools.javac.util.Name, arg1: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>): com.sun.tools.javac.tree.JCTree$JCTypeParameter
+                   Wildcard(arg0: com.sun.tools.javac.tree.JCTree$TypeBoundKind, arg1: com.sun.tools.javac.tree.JCTree): com.sun.tools.javac.tree.JCTree$JCWildcard
+                   TypeBoundKind(arg0: com.sun.tools.javac.code.BoundKind): com.sun.tools.javac.tree.JCTree$TypeBoundKind
+                   Annotation(arg0: com.sun.tools.javac.tree.JCTree, arg1: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>): com.sun.tools.javac.tree.JCTree$JCAnnotation
+                   Modifiers(arg0: long, arg1: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCAnnotation>): com.sun.tools.javac.tree.JCTree$JCModifiers
+                   Erroneous(arg0: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree>): com.sun.tools.javac.tree.JCTree$JCErroneous
+                   LetExpr(arg0: com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCVariableDecl>, arg1: com.sun.tools.javac.tree.JCTree): com.sun.tools.javac.tree.JCTree$LetExpr
                }
                abstract class JCTree$Visitor {
                    public constructor()
@@ -16847,9 +16847,9 @@ declare namespace com {
                    public getEndPosition(arg0: com.sun.tools.javac.tree.EndPosTable): int
                }
                interface EndPosTable {
-                   public getEndPos(arg0: com.sun.tools.javac.tree.JCTree): int
-                   public storeEnd(arg0: com.sun.tools.javac.tree.JCTree, arg1: int): void
-                   public replaceTree(arg0: com.sun.tools.javac.tree.JCTree, arg1: com.sun.tools.javac.tree.JCTree): int
+                   getEndPos(arg0: com.sun.tools.javac.tree.JCTree): int
+                   storeEnd(arg0: com.sun.tools.javac.tree.JCTree, arg1: int): void
+                   replaceTree(arg0: com.sun.tools.javac.tree.JCTree, arg1: com.sun.tools.javac.tree.JCTree): int
                }
                class TreeMaker$AnnotationBuilder implements com.sun.tools.javac.code.Attribute$Visitor {
                    result: com.sun.tools.javac.tree.JCTree$JCExpression
@@ -17195,7 +17195,7 @@ declare namespace com {
                    public visitLetExpr(arg0: com.sun.tools.javac.tree.JCTree$LetExpr): void
                    public visitTree(arg0: com.sun.tools.javac.tree.JCTree): void
                }
-               abstract class DCTree$DCEndPosTree<T>> extends com.sun.tools.javac.tree.DCTree {
+               abstract class DCTree$DCEndPosTree<T extends com.sun.tools.javac.tree.DCTree$DCEndPosTree<T>> extends com.sun.tools.javac.tree.DCTree {
                    public constructor()
                    public getEndPos(arg0: com.sun.tools.javac.tree.DCTree$DCDocComment): int
                    public setEndPos(arg0: int): T
@@ -17447,11 +17447,11 @@ declare namespace com {
                    toString<T>(...args: any[]): any
                }
                interface DocCommentTable {
-                   public hasComment(arg0: com.sun.tools.javac.tree.JCTree): boolean
-                   public getComment(arg0: com.sun.tools.javac.tree.JCTree): com.sun.tools.javac.parser.Tokens$Comment
-                   public getCommentText(arg0: com.sun.tools.javac.tree.JCTree): java.lang.String
-                   public getCommentTree(arg0: com.sun.tools.javac.tree.JCTree): com.sun.tools.javac.tree.DCTree$DCDocComment
-                   public putComment(arg0: com.sun.tools.javac.tree.JCTree, arg1: com.sun.tools.javac.parser.Tokens$Comment): void
+                   hasComment(arg0: com.sun.tools.javac.tree.JCTree): boolean
+                   getComment(arg0: com.sun.tools.javac.tree.JCTree): com.sun.tools.javac.parser.Tokens$Comment
+                   getCommentText(arg0: com.sun.tools.javac.tree.JCTree): java.lang.String
+                   getCommentTree(arg0: com.sun.tools.javac.tree.JCTree): com.sun.tools.javac.tree.DCTree$DCDocComment
+                   putComment(arg0: com.sun.tools.javac.tree.JCTree, arg1: com.sun.tools.javac.parser.Tokens$Comment): void
                }
                class DocTreeMaker {
                    protected static treeMakerKey: com.sun.tools.javac.util.Context$Key<com.sun.tools.javac.tree.DocTreeMaker>
@@ -17701,7 +17701,7 @@ declare namespace com {
                    visitVersion<T>(...args: any[]): any
                    visitOther<T>(...args: any[]): any
                }
-
+               
             }
             namespace util {
                class JCDiagnostic$Factory$1 implements java.lang.Runnable {
@@ -17737,10 +17737,10 @@ declare namespace com {
                    valueOf<T>(...args: any[]): any
                }
                interface JCDiagnostic$DiagnosticPosition {
-                   public getTree(): com.sun.tools.javac.tree.JCTree
-                   public getStartPosition(): int
-                   public getPreferredPosition(): int
-                   public getEndPosition(arg0: com.sun.tools.javac.tree.EndPosTable): int
+                   getTree(): com.sun.tools.javac.tree.JCTree
+                   getStartPosition(): int
+                   getPreferredPosition(): int
+                   getEndPosition(arg0: com.sun.tools.javac.tree.EndPosTable): int
                }
                class JCDiagnostic$SimpleDiagnosticPosition implements com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition {
                    public constructor(arg0: int)
@@ -17975,7 +17975,7 @@ declare namespace com {
                    public constructor()
                }
                interface Context$Factory<T> {
-                   public make(arg0: com.sun.tools.javac.util.Context): T
+                   make(arg0: com.sun.tools.javac.util.Context): T
                }
                class Context {
                    put<T>(...args: any[]): any
@@ -18024,14 +18024,14 @@ declare namespace com {
                    public static of<A, B>(arg0: A, arg1: B): com.sun.tools.javac.util.Pair<A, B>
                }
                interface LayoutCharacters {
-                   public static TabInc: int
-                   public static DiagInc: int
-                   public static DetailsInc: int
-                   public static TAB: byte
-                   public static LF: byte
-                   public static FF: byte
-                   public static CR: byte
-                   public static EOI: byte
+                   TabInc: int
+                   DiagInc: int
+                   DetailsInc: int
+                   TAB: byte
+                   LF: byte
+                   FF: byte
+                   CR: byte
+                   EOI: byte
                }
                class DiagnosticSource$1 extends com.sun.tools.javac.util.DiagnosticSource {
                    constructor()
@@ -18149,7 +18149,7 @@ declare namespace com {
                    public getByteOffset(): int
                }
                interface Filter<T> {
-                   public accepts(arg0: T): boolean
+                   accepts(arg0: T): boolean
                }
                class ListBuffer$1 implements java.util.Iterator<A> {
                    elems: com.sun.tools.javac.util.List<A>
@@ -18190,7 +18190,7 @@ declare namespace com {
                    static access$000(arg0: com.sun.tools.javac.util.ListBuffer): com.sun.tools.javac.util.List
                }
                interface GraphUtils$DependencyKind {
-                   public getDotStyle(): java.lang.String
+                   getDotStyle(): java.lang.String
                }
                abstract class GraphUtils$Node<D> {
                    public data: D
@@ -18209,7 +18209,7 @@ declare namespace com {
                    public getDependenciesByKind(arg0: com.sun.tools.javac.util.GraphUtils$DependencyKind): java.lang.Iterable<com.sun.tools.javac.util.GraphUtils$TarjanNode<D>>
                    compareTo<T>(...args: any[]): any
                }
-               class GraphUtils$TarjanNode<D>> {
+               class GraphUtils$Tarjan<D, N extends com.sun.tools.javac.util.GraphUtils$TarjanNode<D>> {
                    index: int
                    sccs: com.sun.tools.javac.util.ListBuffer<com.sun.tools.javac.util.List<N>>
                    stack: com.sun.tools.javac.util.ListBuffer<N>
@@ -18220,7 +18220,7 @@ declare namespace com {
                }
                class GraphUtils {
                    public constructor()
-                   public static tarjan<D, N extends com.sun.tools.javac.util.GraphUtils$TarjanNode<D>>(arg0: java.lang.Iterable<N>): com.sun.tools.javac.util.List<any extends com.sun.tools.javac.util.List<N>>
+                   public static tarjan<D, N extends com.sun.tools.javac.util.GraphUtils$TarjanNode<D>>(arg0: java.lang.Iterable<N>): com.sun.tools.javac.util.List<com.sun.tools.javac.util.List<N>>
                    public static toDot<D>(arg0: java.lang.Iterable<com.sun.tools.javac.util.GraphUtils$TarjanNode<D>>, arg1: java.lang.String, arg2: java.lang.String): java.lang.String
                }
                class Names {
@@ -18369,10 +18369,10 @@ declare namespace com {
                    public reportDeferredDiagnostic(): void
                }
                interface Position$LineMap extends com.sun.source.tree.LineMap {
-                   public getStartPosition(arg0: int): int
-                   public getPosition(arg0: int, arg1: int): int
-                   public getLineNumber(arg0: int): int
-                   public getColumnNumber(arg0: int): int
+                   getStartPosition(arg0: int): int
+                   getPosition(arg0: int, arg1: int): int
+                   getLineNumber(arg0: int): int
+                   getColumnNumber(arg0: int): int
                }
                class Position$LineMapImpl implements com.sun.tools.javac.util.Position$LineMap {
                    protected startPosition: int[]
@@ -18547,7 +18547,7 @@ declare namespace com {
                    public setMultilineLimit(arg0: com.sun.tools.javac.api.DiagnosticFormatter$Configuration$MultilineLimit, arg1: int): void
                    public setVisible(arg0: java.util.Set<com.sun.tools.javac.api.DiagnosticFormatter$Configuration$DiagnosticPart>): void
                }
-               class DiagnosticFormatter<D>> implements com.sun.tools.javac.api.DiagnosticFormatter<D> {
+               class ForwardingDiagnosticFormatter<D extends javax.tools.Diagnostic<any>, F extends com.sun.tools.javac.api.DiagnosticFormatter<D>> implements com.sun.tools.javac.api.DiagnosticFormatter<D> {
                    protected formatter: F
                    protected configuration: com.sun.tools.javac.util.ForwardingDiagnosticFormatter$ForwardingConfiguration
                    public constructor(arg0: F)
@@ -18806,7 +18806,7 @@ declare namespace com {
                class Abort extends java.lang.Error {
                    constructor(...args: any[])
                }
-
+               
             }
             namespace main {
                class Option$1 extends com.sun.tools.javac.main.Option {
@@ -19245,7 +19245,7 @@ declare namespace com {
                    public constructor()
                    public static parse(arg0: java.lang.String[]): java.lang.String[]
                }
-
+               
             }
             namespace file {
                class RelativePath$RelativeDirectory extends com.sun.tools.javac.file.RelativePath {
@@ -19298,11 +19298,11 @@ declare namespace com {
                    make<T>(...args: any[]): any
                }
                interface JavacFileManager$Archive {
-                   public close(): void
-                   public contains(arg0: com.sun.tools.javac.file.RelativePath): boolean
-                   public getFileObject(arg0: com.sun.tools.javac.file.RelativePath$RelativeDirectory, arg1: java.lang.String): javax.tools.JavaFileObject
-                   public getFiles(arg0: com.sun.tools.javac.file.RelativePath$RelativeDirectory): com.sun.tools.javac.util.List<java.lang.String>
-                   public getSubdirectories(): java.util.Set<com.sun.tools.javac.file.RelativePath$RelativeDirectory>
+                   close(): void
+                   contains(arg0: com.sun.tools.javac.file.RelativePath): boolean
+                   getFileObject(arg0: com.sun.tools.javac.file.RelativePath$RelativeDirectory, arg1: java.lang.String): javax.tools.JavaFileObject
+                   getFiles(arg0: com.sun.tools.javac.file.RelativePath$RelativeDirectory): com.sun.tools.javac.util.List<java.lang.String>
+                   getSubdirectories(): java.util.Set<com.sun.tools.javac.file.RelativePath$RelativeDirectory>
                }
                class JavacFileManager$MissingArchive implements com.sun.tools.javac.file.JavacFileManager$Archive {
                    zipFileName: java.io.File
@@ -19672,14 +19672,14 @@ declare namespace com {
                    public isFile(arg0: java.io.File): boolean
                    public getJarClassPath(arg0: java.io.File): java.util.List<java.io.File>
                }
-
+               
             }
             namespace comp {
                interface Annotate$Worker {
-                   public run(): void
+                   run(): void
                    toString<T>(...args: any[]): any
                }
-               class Attribute$Compound> {
+               class Annotate$AnnotateRepeatedContext<T extends com.sun.tools.javac.code.Attribute$Compound> {
                    public env: com.sun.tools.javac.comp.Env<com.sun.tools.javac.comp.AttrContext>
                    public annotated: java.util.Map<com.sun.tools.javac.code.Symbol$TypeSymbol, com.sun.tools.javac.util.ListBuffer<T>>
                    public pos: java.util.Map<T, com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition>
@@ -19748,8 +19748,8 @@ declare namespace com {
                    visitMethodType<T>(...args: any[]): any
                }
                interface Resolve$MethodCheck {
-                   public argumentsAcceptable(arg0: com.sun.tools.javac.comp.Env<com.sun.tools.javac.comp.AttrContext>, arg1: com.sun.tools.javac.comp.DeferredAttr$DeferredAttrContext, arg2: com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>, arg3: com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>, arg4: com.sun.tools.javac.util.Warner): void
-                   public mostSpecificCheck(arg0: com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>, arg1: boolean): com.sun.tools.javac.comp.Resolve$MethodCheck
+                   argumentsAcceptable(arg0: com.sun.tools.javac.comp.Env<com.sun.tools.javac.comp.AttrContext>, arg1: com.sun.tools.javac.comp.DeferredAttr$DeferredAttrContext, arg2: com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>, arg3: com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>, arg4: com.sun.tools.javac.util.Warner): void
+                   mostSpecificCheck(arg0: com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>, arg1: boolean): com.sun.tools.javac.comp.Resolve$MethodCheck
                }
                class Resolve$MethodCheckDiag extends java.lang.Enum<com.sun.tools.javac.comp.Resolve$MethodCheckDiag> {
                    public static ARITY_MISMATCH: com.sun.tools.javac.comp.Resolve$MethodCheckDiag
@@ -19922,8 +19922,8 @@ declare namespace com {
                    public iterator(): java.util.Iterator<com.sun.tools.javac.code.Symbol$TypeSymbol>
                }
                interface Resolve$LogResolveHelper {
-                   public resolveDiagnosticNeeded(arg0: com.sun.tools.javac.code.Type, arg1: com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>, arg2: com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>): boolean
-                   public getArgumentTypes(arg0: com.sun.tools.javac.comp.Resolve$ResolveError, arg1: com.sun.tools.javac.code.Symbol, arg2: com.sun.tools.javac.util.Name, arg3: com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>): com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>
+                   resolveDiagnosticNeeded(arg0: com.sun.tools.javac.code.Type, arg1: com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>, arg2: com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>): boolean
+                   getArgumentTypes(arg0: com.sun.tools.javac.comp.Resolve$ResolveError, arg1: com.sun.tools.javac.code.Symbol, arg2: com.sun.tools.javac.util.Name, arg3: com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>): com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>
                }
                class Resolve$6 implements com.sun.tools.javac.comp.Resolve$LogResolveHelper {
                    this$0: com.sun.tools.javac.comp.Resolve
@@ -20142,7 +20142,7 @@ declare namespace com {
                    getDiagnostic(arg0: com.sun.tools.javac.util.JCDiagnostic$DiagnosticType, arg1: com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition, arg2: com.sun.tools.javac.code.Symbol, arg3: com.sun.tools.javac.code.Type, arg4: com.sun.tools.javac.util.Name, arg5: com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>, arg6: com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>): com.sun.tools.javac.util.JCDiagnostic
                }
                interface Resolve$MethodResolutionDiagHelper$DiagnosticRewriter {
-                   public rewriteDiagnostic(arg0: com.sun.tools.javac.util.JCDiagnostic$Factory, arg1: com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition, arg2: com.sun.tools.javac.util.DiagnosticSource, arg3: com.sun.tools.javac.util.JCDiagnostic$DiagnosticType, arg4: com.sun.tools.javac.util.JCDiagnostic): com.sun.tools.javac.util.JCDiagnostic
+                   rewriteDiagnostic(arg0: com.sun.tools.javac.util.JCDiagnostic$Factory, arg1: com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition, arg2: com.sun.tools.javac.util.DiagnosticSource, arg3: com.sun.tools.javac.util.JCDiagnostic$DiagnosticType, arg4: com.sun.tools.javac.util.JCDiagnostic): com.sun.tools.javac.util.JCDiagnostic
                }
                class Resolve$MethodResolutionDiagHelper$Template {
                    regex: java.lang.String
@@ -20485,8 +20485,8 @@ declare namespace com {
                    public constructor(arg0: com.sun.tools.javac.comp.Infer$GraphSolver$InferenceGraph)
                }
                interface Infer$GraphStrategy {
-                   public pickNode(arg0: com.sun.tools.javac.comp.Infer$GraphSolver$InferenceGraph): com.sun.tools.javac.comp.Infer$GraphSolver$InferenceGraph$Node
-                   public done(): boolean
+                   pickNode(arg0: com.sun.tools.javac.comp.Infer$GraphSolver$InferenceGraph): com.sun.tools.javac.comp.Infer$GraphSolver$InferenceGraph$Node
+                   done(): boolean
                }
                abstract class Infer$LeafSolver implements com.sun.tools.javac.comp.Infer$GraphStrategy {
                    this$0: com.sun.tools.javac.comp.Infer
@@ -20608,7 +20608,7 @@ declare namespace com {
                    solve(arg0: com.sun.tools.javac.comp.Infer$GraphStrategy): void
                }
                interface Infer$FreeTypeListener {
-                   public typesInferred(arg0: com.sun.tools.javac.comp.Infer$InferenceContext): void
+                   typesInferred(arg0: com.sun.tools.javac.comp.Infer$InferenceContext): void
                }
                class Infer$InferenceContext$1 extends com.sun.tools.javac.code.Type$Mapping {
                    this$1: com.sun.tools.javac.comp.Infer$InferenceContext
@@ -20751,7 +20751,7 @@ declare namespace com {
                    static access$100(arg0: com.sun.tools.javac.comp.DeferredAttr$DeferredType, arg1: com.sun.tools.javac.comp.Attr$ResultInfo, arg2: com.sun.tools.javac.comp.DeferredAttr$DeferredStuckPolicy, arg3: com.sun.tools.javac.comp.DeferredAttr$DeferredTypeCompleter): com.sun.tools.javac.code.Type
                }
                interface DeferredAttr$DeferredTypeCompleter {
-                   public complete(arg0: com.sun.tools.javac.comp.DeferredAttr$DeferredType, arg1: com.sun.tools.javac.comp.Attr$ResultInfo, arg2: com.sun.tools.javac.comp.DeferredAttr$DeferredAttrContext): com.sun.tools.javac.code.Type
+                   complete(arg0: com.sun.tools.javac.comp.DeferredAttr$DeferredType, arg1: com.sun.tools.javac.comp.Attr$ResultInfo, arg2: com.sun.tools.javac.comp.DeferredAttr$DeferredAttrContext): com.sun.tools.javac.code.Type
                }
                class DeferredAttr$2 implements com.sun.tools.javac.comp.DeferredAttr$DeferredTypeCompleter {
                    this$0: com.sun.tools.javac.comp.DeferredAttr
@@ -20764,9 +20764,9 @@ declare namespace com {
                    public complete(arg0: com.sun.tools.javac.comp.DeferredAttr$DeferredType, arg1: com.sun.tools.javac.comp.Attr$ResultInfo, arg2: com.sun.tools.javac.comp.DeferredAttr$DeferredAttrContext): com.sun.tools.javac.code.Type
                }
                interface DeferredAttr$DeferredStuckPolicy {
-                   public isStuck(): boolean
-                   public stuckVars(): java.util.Set<com.sun.tools.javac.code.Type>
-                   public depVars(): java.util.Set<com.sun.tools.javac.code.Type>
+                   isStuck(): boolean
+                   stuckVars(): java.util.Set<com.sun.tools.javac.code.Type>
+                   depVars(): java.util.Set<com.sun.tools.javac.code.Type>
                }
                class DeferredAttr$4 implements com.sun.tools.javac.comp.DeferredAttr$DeferredStuckPolicy {
                    this$0: com.sun.tools.javac.comp.DeferredAttr
@@ -20964,9 +20964,9 @@ declare namespace com {
                    analyzeCandidateMethods<E>(arg0: com.sun.tools.javac.code.Symbol, arg1: E, arg2: com.sun.tools.javac.comp.DeferredAttr$MethodAnalyzer<E>): E
                }
                interface DeferredAttr$MethodAnalyzer<E> {
-                   public process(arg0: com.sun.tools.javac.code.Symbol$MethodSymbol): E
-                   public reduce(arg0: E, arg1: E): E
-                   public shouldStop(arg0: E): boolean
+                   process(arg0: com.sun.tools.javac.code.Symbol$MethodSymbol): E
+                   reduce(arg0: E, arg1: E): E
+                   shouldStop(arg0: E): boolean
                }
                class DeferredAttr$6 {
                    static $SwitchMap$com$sun$tools$javac$comp$DeferredAttr$AttrMode: int[]
@@ -21001,11 +21001,11 @@ declare namespace com {
                    static access$200(arg0: com.sun.tools.javac.comp.DeferredAttr): java.util.EnumSet
                }
                interface Check$CheckContext {
-                   public compatible(arg0: com.sun.tools.javac.code.Type, arg1: com.sun.tools.javac.code.Type, arg2: com.sun.tools.javac.util.Warner): boolean
-                   public report(arg0: com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition, arg1: com.sun.tools.javac.util.JCDiagnostic): void
-                   public checkWarner(arg0: com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition, arg1: com.sun.tools.javac.code.Type, arg2: com.sun.tools.javac.code.Type): com.sun.tools.javac.util.Warner
-                   public inferenceContext(): com.sun.tools.javac.comp.Infer$InferenceContext
-                   public deferredAttrContext(): com.sun.tools.javac.comp.DeferredAttr$DeferredAttrContext
+                   compatible(arg0: com.sun.tools.javac.code.Type, arg1: com.sun.tools.javac.code.Type, arg2: com.sun.tools.javac.util.Warner): boolean
+                   report(arg0: com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition, arg1: com.sun.tools.javac.util.JCDiagnostic): void
+                   checkWarner(arg0: com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition, arg1: com.sun.tools.javac.code.Type, arg2: com.sun.tools.javac.code.Type): com.sun.tools.javac.util.Warner
+                   inferenceContext(): com.sun.tools.javac.comp.Infer$InferenceContext
+                   deferredAttrContext(): com.sun.tools.javac.comp.DeferredAttr$DeferredAttrContext
                }
                class Check$NestedCheckContext implements com.sun.tools.javac.comp.Check$CheckContext {
                    enclosingContext: com.sun.tools.javac.comp.Check$CheckContext
@@ -21748,7 +21748,7 @@ declare namespace com {
                    constructor(arg0: com.sun.tools.javac.tree.JCTree)
                    resolveJump(): void
                }
-               abstract class Flow$BaseAnalyzer$PendingExit> extends com.sun.tools.javac.tree.TreeScanner {
+               abstract class Flow$BaseAnalyzer<P extends com.sun.tools.javac.comp.Flow$BaseAnalyzer$PendingExit> extends com.sun.tools.javac.tree.TreeScanner {
                    pendingExits: com.sun.tools.javac.util.ListBuffer<P>
                    constructor()
                    markDead(): void
@@ -22322,7 +22322,7 @@ declare namespace com {
                    public visitClassDef(arg0: com.sun.tools.javac.tree.JCTree$JCClassDecl): void
                }
                interface Lower$TreeBuilder {
-                   public build(arg0: com.sun.tools.javac.tree.JCTree): com.sun.tools.javac.tree.JCTree
+                   build(arg0: com.sun.tools.javac.tree.JCTree): com.sun.tools.javac.tree.JCTree
                }
                class Lower$2 implements com.sun.tools.javac.comp.Lower$TreeBuilder {
                    val$builder: com.sun.tools.javac.comp.Lower$TreeBuilder
@@ -22548,7 +22548,7 @@ declare namespace com {
                    public constructor(arg0: com.sun.tools.javac.comp.LambdaToMethod$LambdaAnalyzerPreprocessor, arg1: com.sun.tools.javac.tree.JCTree)
                    addLocal(arg0: com.sun.tools.javac.code.Symbol): void
                }
-               abstract class JCTree$JCFunctionalExpression> {
+               abstract class LambdaToMethod$LambdaAnalyzerPreprocessor$TranslationContext<T extends com.sun.tools.javac.tree.JCTree$JCFunctionalExpression> {
                    tree: T
                    owner: com.sun.tools.javac.code.Symbol
                    depth: int
@@ -22693,7 +22693,7 @@ declare namespace com {
                class AttrContextEnv extends com.sun.tools.javac.comp.Env<com.sun.tools.javac.comp.AttrContext> {
                    public constructor(arg0: com.sun.tools.javac.tree.JCTree, arg1: com.sun.tools.javac.comp.AttrContext)
                }
-
+               
             }
             namespace jvm {
                class ClassFile$Version extends java.lang.Enum<com.sun.tools.javac.jvm.ClassFile$Version> {
@@ -22752,237 +22752,237 @@ declare namespace com {
                    externalize<T>(...args: any[]): any
                }
                interface ByteCodes {
-                   public static illegal: int
-                   public static nop: int
-                   public static aconst_null: int
-                   public static iconst_m1: int
-                   public static iconst_0: int
-                   public static iconst_1: int
-                   public static iconst_2: int
-                   public static iconst_3: int
-                   public static iconst_4: int
-                   public static iconst_5: int
-                   public static lconst_0: int
-                   public static lconst_1: int
-                   public static fconst_0: int
-                   public static fconst_1: int
-                   public static fconst_2: int
-                   public static dconst_0: int
-                   public static dconst_1: int
-                   public static bipush: int
-                   public static sipush: int
-                   public static ldc1: int
-                   public static ldc2: int
-                   public static ldc2w: int
-                   public static iload: int
-                   public static lload: int
-                   public static fload: int
-                   public static dload: int
-                   public static aload: int
-                   public static iload_0: int
-                   public static iload_1: int
-                   public static iload_2: int
-                   public static iload_3: int
-                   public static lload_0: int
-                   public static lload_1: int
-                   public static lload_2: int
-                   public static lload_3: int
-                   public static fload_0: int
-                   public static fload_1: int
-                   public static fload_2: int
-                   public static fload_3: int
-                   public static dload_0: int
-                   public static dload_1: int
-                   public static dload_2: int
-                   public static dload_3: int
-                   public static aload_0: int
-                   public static aload_1: int
-                   public static aload_2: int
-                   public static aload_3: int
-                   public static iaload: int
-                   public static laload: int
-                   public static faload: int
-                   public static daload: int
-                   public static aaload: int
-                   public static baload: int
-                   public static caload: int
-                   public static saload: int
-                   public static istore: int
-                   public static lstore: int
-                   public static fstore: int
-                   public static dstore: int
-                   public static astore: int
-                   public static istore_0: int
-                   public static istore_1: int
-                   public static istore_2: int
-                   public static istore_3: int
-                   public static lstore_0: int
-                   public static lstore_1: int
-                   public static lstore_2: int
-                   public static lstore_3: int
-                   public static fstore_0: int
-                   public static fstore_1: int
-                   public static fstore_2: int
-                   public static fstore_3: int
-                   public static dstore_0: int
-                   public static dstore_1: int
-                   public static dstore_2: int
-                   public static dstore_3: int
-                   public static astore_0: int
-                   public static astore_1: int
-                   public static astore_2: int
-                   public static astore_3: int
-                   public static iastore: int
-                   public static lastore: int
-                   public static fastore: int
-                   public static dastore: int
-                   public static aastore: int
-                   public static bastore: int
-                   public static castore: int
-                   public static sastore: int
-                   public static pop: int
-                   public static pop2: int
-                   public static dup: int
-                   public static dup_x1: int
-                   public static dup_x2: int
-                   public static dup2: int
-                   public static dup2_x1: int
-                   public static dup2_x2: int
-                   public static swap: int
-                   public static iadd: int
-                   public static ladd: int
-                   public static fadd: int
-                   public static dadd: int
-                   public static isub: int
-                   public static lsub: int
-                   public static fsub: int
-                   public static dsub: int
-                   public static imul: int
-                   public static lmul: int
-                   public static fmul: int
-                   public static dmul: int
-                   public static idiv: int
-                   public static ldiv: int
-                   public static fdiv: int
-                   public static ddiv: int
-                   public static imod: int
-                   public static lmod: int
-                   public static fmod: int
-                   public static dmod: int
-                   public static ineg: int
-                   public static lneg: int
-                   public static fneg: int
-                   public static dneg: int
-                   public static ishl: int
-                   public static lshl: int
-                   public static ishr: int
-                   public static lshr: int
-                   public static iushr: int
-                   public static lushr: int
-                   public static iand: int
-                   public static land: int
-                   public static ior: int
-                   public static lor: int
-                   public static ixor: int
-                   public static lxor: int
-                   public static iinc: int
-                   public static i2l: int
-                   public static i2f: int
-                   public static i2d: int
-                   public static l2i: int
-                   public static l2f: int
-                   public static l2d: int
-                   public static f2i: int
-                   public static f2l: int
-                   public static f2d: int
-                   public static d2i: int
-                   public static d2l: int
-                   public static d2f: int
-                   public static int2byte: int
-                   public static int2char: int
-                   public static int2short: int
-                   public static lcmp: int
-                   public static fcmpl: int
-                   public static fcmpg: int
-                   public static dcmpl: int
-                   public static dcmpg: int
-                   public static ifeq: int
-                   public static ifne: int
-                   public static iflt: int
-                   public static ifge: int
-                   public static ifgt: int
-                   public static ifle: int
-                   public static if_icmpeq: int
-                   public static if_icmpne: int
-                   public static if_icmplt: int
-                   public static if_icmpge: int
-                   public static if_icmpgt: int
-                   public static if_icmple: int
-                   public static if_acmpeq: int
-                   public static if_acmpne: int
-                   public static goto_: int
-                   public static jsr: int
-                   public static ret: int
-                   public static tableswitch: int
-                   public static lookupswitch: int
-                   public static ireturn: int
-                   public static lreturn: int
-                   public static freturn: int
-                   public static dreturn: int
-                   public static areturn: int
-                   public static return_: int
-                   public static getstatic: int
-                   public static putstatic: int
-                   public static getfield: int
-                   public static putfield: int
-                   public static invokevirtual: int
-                   public static invokespecial: int
-                   public static invokestatic: int
-                   public static invokeinterface: int
-                   public static invokedynamic: int
-                   public static new_: int
-                   public static newarray: int
-                   public static anewarray: int
-                   public static arraylength: int
-                   public static athrow: int
-                   public static checkcast: int
-                   public static instanceof_: int
-                   public static monitorenter: int
-                   public static monitorexit: int
-                   public static wide: int
-                   public static multianewarray: int
-                   public static if_acmp_null: int
-                   public static if_acmp_nonnull: int
-                   public static goto_w: int
-                   public static jsr_w: int
-                   public static breakpoint: int
-                   public static ByteCodeCount: int
-                   public static string_add: int
-                   public static bool_not: int
-                   public static bool_and: int
-                   public static bool_or: int
-                   public static ishll: int
-                   public static lshll: int
-                   public static ishrl: int
-                   public static lshrl: int
-                   public static iushrl: int
-                   public static lushrl: int
-                   public static nullchk: int
-                   public static error: int
-                   public static dontgoto: int
-                   public static preShift: int
-                   public static preMask: int
-                   public static INTcode: int
-                   public static LONGcode: int
-                   public static FLOATcode: int
-                   public static DOUBLEcode: int
-                   public static OBJECTcode: int
-                   public static BYTEcode: int
-                   public static CHARcode: int
-                   public static SHORTcode: int
-                   public static VOIDcode: int
-                   public static TypeCodeCount: int
-                   public static typecodeNames: java.lang.String[]
+                   illegal: int
+                   nop: int
+                   aconst_null: int
+                   iconst_m1: int
+                   iconst_0: int
+                   iconst_1: int
+                   iconst_2: int
+                   iconst_3: int
+                   iconst_4: int
+                   iconst_5: int
+                   lconst_0: int
+                   lconst_1: int
+                   fconst_0: int
+                   fconst_1: int
+                   fconst_2: int
+                   dconst_0: int
+                   dconst_1: int
+                   bipush: int
+                   sipush: int
+                   ldc1: int
+                   ldc2: int
+                   ldc2w: int
+                   iload: int
+                   lload: int
+                   fload: int
+                   dload: int
+                   aload: int
+                   iload_0: int
+                   iload_1: int
+                   iload_2: int
+                   iload_3: int
+                   lload_0: int
+                   lload_1: int
+                   lload_2: int
+                   lload_3: int
+                   fload_0: int
+                   fload_1: int
+                   fload_2: int
+                   fload_3: int
+                   dload_0: int
+                   dload_1: int
+                   dload_2: int
+                   dload_3: int
+                   aload_0: int
+                   aload_1: int
+                   aload_2: int
+                   aload_3: int
+                   iaload: int
+                   laload: int
+                   faload: int
+                   daload: int
+                   aaload: int
+                   baload: int
+                   caload: int
+                   saload: int
+                   istore: int
+                   lstore: int
+                   fstore: int
+                   dstore: int
+                   astore: int
+                   istore_0: int
+                   istore_1: int
+                   istore_2: int
+                   istore_3: int
+                   lstore_0: int
+                   lstore_1: int
+                   lstore_2: int
+                   lstore_3: int
+                   fstore_0: int
+                   fstore_1: int
+                   fstore_2: int
+                   fstore_3: int
+                   dstore_0: int
+                   dstore_1: int
+                   dstore_2: int
+                   dstore_3: int
+                   astore_0: int
+                   astore_1: int
+                   astore_2: int
+                   astore_3: int
+                   iastore: int
+                   lastore: int
+                   fastore: int
+                   dastore: int
+                   aastore: int
+                   bastore: int
+                   castore: int
+                   sastore: int
+                   pop: int
+                   pop2: int
+                   dup: int
+                   dup_x1: int
+                   dup_x2: int
+                   dup2: int
+                   dup2_x1: int
+                   dup2_x2: int
+                   swap: int
+                   iadd: int
+                   ladd: int
+                   fadd: int
+                   dadd: int
+                   isub: int
+                   lsub: int
+                   fsub: int
+                   dsub: int
+                   imul: int
+                   lmul: int
+                   fmul: int
+                   dmul: int
+                   idiv: int
+                   ldiv: int
+                   fdiv: int
+                   ddiv: int
+                   imod: int
+                   lmod: int
+                   fmod: int
+                   dmod: int
+                   ineg: int
+                   lneg: int
+                   fneg: int
+                   dneg: int
+                   ishl: int
+                   lshl: int
+                   ishr: int
+                   lshr: int
+                   iushr: int
+                   lushr: int
+                   iand: int
+                   land: int
+                   ior: int
+                   lor: int
+                   ixor: int
+                   lxor: int
+                   iinc: int
+                   i2l: int
+                   i2f: int
+                   i2d: int
+                   l2i: int
+                   l2f: int
+                   l2d: int
+                   f2i: int
+                   f2l: int
+                   f2d: int
+                   d2i: int
+                   d2l: int
+                   d2f: int
+                   int2byte: int
+                   int2char: int
+                   int2short: int
+                   lcmp: int
+                   fcmpl: int
+                   fcmpg: int
+                   dcmpl: int
+                   dcmpg: int
+                   ifeq: int
+                   ifne: int
+                   iflt: int
+                   ifge: int
+                   ifgt: int
+                   ifle: int
+                   if_icmpeq: int
+                   if_icmpne: int
+                   if_icmplt: int
+                   if_icmpge: int
+                   if_icmpgt: int
+                   if_icmple: int
+                   if_acmpeq: int
+                   if_acmpne: int
+                   goto_: int
+                   jsr: int
+                   ret: int
+                   tableswitch: int
+                   lookupswitch: int
+                   ireturn: int
+                   lreturn: int
+                   freturn: int
+                   dreturn: int
+                   areturn: int
+                   return_: int
+                   getstatic: int
+                   putstatic: int
+                   getfield: int
+                   putfield: int
+                   invokevirtual: int
+                   invokespecial: int
+                   invokestatic: int
+                   invokeinterface: int
+                   invokedynamic: int
+                   new_: int
+                   newarray: int
+                   anewarray: int
+                   arraylength: int
+                   athrow: int
+                   checkcast: int
+                   instanceof_: int
+                   monitorenter: int
+                   monitorexit: int
+                   wide: int
+                   multianewarray: int
+                   if_acmp_null: int
+                   if_acmp_nonnull: int
+                   goto_w: int
+                   jsr_w: int
+                   breakpoint: int
+                   ByteCodeCount: int
+                   string_add: int
+                   bool_not: int
+                   bool_and: int
+                   bool_or: int
+                   ishll: int
+                   lshll: int
+                   ishrl: int
+                   lshrl: int
+                   iushrl: int
+                   lushrl: int
+                   nullchk: int
+                   error: int
+                   dontgoto: int
+                   preShift: int
+                   preMask: int
+                   INTcode: int
+                   LONGcode: int
+                   FLOATcode: int
+                   DOUBLEcode: int
+                   OBJECTcode: int
+                   BYTEcode: int
+                   CHARcode: int
+                   SHORTcode: int
+                   VOIDcode: int
+                   TypeCodeCount: int
+                   typecodeNames: java.lang.String[]
                }
                class ClassReader$1 implements com.sun.tools.javac.code.Symbol$Completer {
                    this$0: com.sun.tools.javac.jvm.ClassReader
@@ -23127,9 +23127,9 @@ declare namespace com {
                    protected read(arg0: com.sun.tools.javac.code.Symbol, arg1: int): void
                }
                interface ClassReader$ProxyVisitor extends com.sun.tools.javac.code.Attribute$Visitor {
-                   public visitEnumAttributeProxy(arg0: com.sun.tools.javac.jvm.ClassReader$EnumAttributeProxy): void
-                   public visitArrayAttributeProxy(arg0: com.sun.tools.javac.jvm.ClassReader$ArrayAttributeProxy): void
-                   public visitCompoundAnnotationProxy(arg0: com.sun.tools.javac.jvm.ClassReader$CompoundAnnotationProxy): void
+                   visitEnumAttributeProxy(arg0: com.sun.tools.javac.jvm.ClassReader$EnumAttributeProxy): void
+                   visitArrayAttributeProxy(arg0: com.sun.tools.javac.jvm.ClassReader$ArrayAttributeProxy): void
+                   visitCompoundAnnotationProxy(arg0: com.sun.tools.javac.jvm.ClassReader$CompoundAnnotationProxy): void
                }
                class ClassReader$EnumAttributeProxy extends com.sun.tools.javac.code.Attribute {
                    enumType: com.sun.tools.javac.code.Type
@@ -23200,7 +23200,7 @@ declare namespace com {
                    public run(): void
                }
                interface ClassReader$SourceCompleter {
-                   public complete(arg0: com.sun.tools.javac.code.Symbol$ClassSymbol): void
+                   complete(arg0: com.sun.tools.javac.code.Symbol$ClassSymbol): void
                }
                class ClassReader$SourceFileObject extends com.sun.tools.javac.file.BaseFileObject {
                    public constructor(arg0: com.sun.tools.javac.util.Name, arg1: com.sun.tools.javac.util.Name)
@@ -23848,16 +23848,16 @@ declare namespace com {
                    static access$100(arg0: com.sun.tools.javac.jvm.CRTable): com.sun.tools.javac.tree.EndPosTable
                }
                interface CRTFlags {
-                   public static CRT_STATEMENT: int
-                   public static CRT_BLOCK: int
-                   public static CRT_ASSIGNMENT: int
-                   public static CRT_FLOW_CONTROLLER: int
-                   public static CRT_FLOW_TARGET: int
-                   public static CRT_INVOKE: int
-                   public static CRT_CREATE: int
-                   public static CRT_BRANCH_TRUE: int
-                   public static CRT_BRANCH_FALSE: int
-                   public static CRT_VALID_FLAGS: int
+                   CRT_STATEMENT: int
+                   CRT_BLOCK: int
+                   CRT_ASSIGNMENT: int
+                   CRT_FLOW_CONTROLLER: int
+                   CRT_FLOW_TARGET: int
+                   CRT_INVOKE: int
+                   CRT_CREATE: int
+                   CRT_BRANCH_TRUE: int
+                   CRT_BRANCH_FALSE: int
+                   CRT_VALID_FLAGS: int
                }
                class JNIWriter$Mangle$Type {
                    public static CLASS: int
@@ -24245,7 +24245,7 @@ declare namespace com {
                    static access$200(arg0: com.sun.tools.javac.jvm.Gen): boolean
                    static access$300(arg0: com.sun.tools.javac.jvm.Gen): int
                }
-
+               
             }
             namespace parser {
                class Tokens$TokenKind extends java.lang.Enum<com.sun.tools.javac.parser.Tokens$TokenKind> implements com.sun.tools.javac.api.Formattable , com.sun.tools.javac.util.Filter<com.sun.tools.javac.parser.Tokens$TokenKind> {
@@ -24379,10 +24379,10 @@ declare namespace com {
                    valueOf<T>(...args: any[]): any
                }
                interface Tokens$Comment {
-                   public getText(): java.lang.String
-                   public getSourcePos(arg0: int): int
-                   public getStyle(): com.sun.tools.javac.parser.Tokens$Comment$CommentStyle
-                   public isDeprecated(): boolean
+                   getText(): java.lang.String
+                   getSourcePos(arg0: int): int
+                   getStyle(): com.sun.tools.javac.parser.Tokens$Comment$CommentStyle
+                   isDeprecated(): boolean
                }
                class Tokens$Token$Tag extends java.lang.Enum<com.sun.tools.javac.parser.Tokens$Token$Tag> {
                    public static DEFAULT: com.sun.tools.javac.parser.Tokens$Token$Tag
@@ -24457,7 +24457,7 @@ declare namespace com {
                    newScanner<T>(...args: any[]): any
                }
                interface JavacParser$ErrorRecoveryAction {
-                   public doRecover(arg0: com.sun.tools.javac.parser.JavacParser): com.sun.tools.javac.tree.JCTree
+                   doRecover(arg0: com.sun.tools.javac.parser.JavacParser): com.sun.tools.javac.tree.JCTree
                }
                class JavacParser$BasicErrorRecoveryAction$1 extends com.sun.tools.javac.parser.JavacParser$BasicErrorRecoveryAction {
                    constructor(arg0: java.lang.String, arg1: int)
@@ -24677,12 +24677,12 @@ declare namespace com {
                    checkAnnotationsAfterTypeParams(arg0: int): void
                }
                interface Parser {
-                   public parseCompilationUnit(): com.sun.tools.javac.tree.JCTree$JCCompilationUnit
-                   public parseExpression(): com.sun.tools.javac.tree.JCTree$JCExpression
-                   public parseStatement(): com.sun.tools.javac.tree.JCTree$JCStatement
-                   public parseType(): com.sun.tools.javac.tree.JCTree$JCExpression
+                   parseCompilationUnit(): com.sun.tools.javac.tree.JCTree$JCCompilationUnit
+                   parseExpression(): com.sun.tools.javac.tree.JCTree$JCExpression
+                   parseStatement(): com.sun.tools.javac.tree.JCTree$JCStatement
+                   parseType(): com.sun.tools.javac.tree.JCTree$JCExpression
                }
-               class UnicodeReader> implements com.sun.tools.javac.parser.Tokens$Comment {
+               class JavaTokenizer$BasicComment<U extends com.sun.tools.javac.parser.UnicodeReader> implements com.sun.tools.javac.parser.Tokens$Comment {
                    cs: com.sun.tools.javac.parser.Tokens$Comment$CommentStyle
                    comment_reader: U
                    protected deprecatedFlag: boolean
@@ -24723,12 +24723,12 @@ declare namespace com {
                    errPos<T>(...args: any[]): any
                }
                interface Lexer {
-                   public nextToken(): void
+                   nextToken(): void
                    token<T>(...args: any[]): any
-                   public prevToken(): com.sun.tools.javac.parser.Tokens$Token
-                   public split(): com.sun.tools.javac.parser.Tokens$Token
+                   prevToken(): com.sun.tools.javac.parser.Tokens$Token
+                   split(): com.sun.tools.javac.parser.Tokens$Token
                    errPos<T>(...args: any[]): any
-                   public getLineMap(): com.sun.tools.javac.util.Position$LineMap
+                   getLineMap(): com.sun.tools.javac.util.Position$LineMap
                }
                class UnicodeReader {
                    protected buf: char[]
@@ -24961,7 +24961,7 @@ declare namespace com {
                    isSentenceBreak<T>(...args: any[]): any
                    newString(arg0: int, arg1: int): java.lang.String
                }
-
+               
             }
             namespace processing {
                class JavacProcessingEnvironment$ServiceIterator implements java.util.Iterator<javax.annotation.processing.Processor> {
@@ -25254,7 +25254,7 @@ declare namespace com {
                    static serialVersionUID: long
                    constructor(arg0: java.lang.Throwable)
                }
-
+               
             }
             namespace model {
                class JavacElements$1Vis extends com.sun.tools.javac.tree.JCTree$Visitor {
@@ -25408,7 +25408,7 @@ declare namespace com {
                    public static generateAnnotation<A extends java.lang.annotation.Annotation>(arg0: com.sun.tools.javac.code.Attribute$Compound, arg1: java.lang.Class<A>): A
                    static access$000(arg0: com.sun.tools.javac.model.AnnotationProxyMaker): java.lang.Class
                }
-
+               
             }
             namespace sym {
                class Profiles$MakefileProfiles$Package {
@@ -25454,7 +25454,7 @@ declare namespace com {
                    public getSupportedSourceVersion(): javax.lang.model.SourceVersion
                    public static main(...arg0: java.lang.String[]): void
                }
-
+               
             }
             namespace nio {
                class PathFileObject$1 extends com.sun.tools.javac.nio.PathFileObject {
@@ -25546,15 +25546,15 @@ declare namespace com {
                    public inferBinaryName(arg0: javax.tools.JavaFileManager$Location, arg1: javax.tools.JavaFileObject): java.lang.String
                }
                interface PathFileManager extends javax.tools.JavaFileManager {
-                   public getDefaultFileSystem(): java.nio.file.FileSystem
-                   public setDefaultFileSystem(arg0: java.nio.file.FileSystem): void
-                   public getJavaFileObjectsFromPaths(arg0: java.lang.Iterable<java.nio.file.Path>): java.lang.Iterable<javax.tools.JavaFileObject>
-                   public getJavaFileObjects(...arg0: java.nio.file.Path[]): java.lang.Iterable<javax.tools.JavaFileObject>
-                   public getPath(arg0: javax.tools.FileObject): java.nio.file.Path
-                   public getLocation(arg0: javax.tools.JavaFileManager$Location): java.lang.Iterable<java.nio.file.Path>
-                   public setLocation(arg0: javax.tools.JavaFileManager$Location, arg1: java.lang.Iterable<java.nio.file.Path>): void
+                   getDefaultFileSystem(): java.nio.file.FileSystem
+                   setDefaultFileSystem(arg0: java.nio.file.FileSystem): void
+                   getJavaFileObjectsFromPaths(arg0: java.lang.Iterable<java.nio.file.Path>): java.lang.Iterable<javax.tools.JavaFileObject>
+                   getJavaFileObjects(...arg0: java.nio.file.Path[]): java.lang.Iterable<javax.tools.JavaFileObject>
+                   getPath(arg0: javax.tools.FileObject): java.nio.file.Path
+                   getLocation(arg0: javax.tools.JavaFileManager$Location): java.lang.Iterable<java.nio.file.Path>
+                   setLocation(arg0: javax.tools.JavaFileManager$Location, arg1: java.lang.Iterable<java.nio.file.Path>): void
                }
-
+               
             }
             class Main {
                 public constructor()
@@ -25594,9 +25594,9 @@ declare namespace com {
                    public constructor()
                    protected getContents(): java.lang.Object[][]
                }
-
+               
             }
-
+            
          }
          namespace doclets {
             namespace internal {
@@ -25614,13 +25614,13 @@ declare namespace com {
                          public constructor()
                          protected getContents(): java.lang.Object[][]
                      }
-
+                     
                   }
                   namespace util {
                      namespace links {
                         interface LinkOutput {
-                            public append(arg0: java.lang.Object): void
-                            public insert(arg0: int, arg1: java.lang.Object): void
+                            append(arg0: java.lang.Object): void
+                            insert(arg0: int, arg1: java.lang.Object): void
                         }
                         abstract class LinkInfo {
                             public classDoc: com.sun.javadoc.ClassDoc
@@ -25652,7 +25652,7 @@ declare namespace com {
                             getTypeParameterLinks<T>(...args: any[]): any
                             public getTypeAnnotationLinks(arg0: com.sun.tools.doclets.internal.toolkit.util.links.LinkInfo): com.sun.tools.doclets.internal.toolkit.Content
                         }
-
+                        
                      }
                      class ClassTree {
                          constructor(...args: any[])
@@ -26157,7 +26157,7 @@ declare namespace com {
                          public annotationToFieldDoc: java.util.Map<java.lang.String, java.util.List<com.sun.javadoc.FieldDoc>>
                          public constructor(arg0: com.sun.javadoc.RootDoc, arg1: com.sun.tools.doclets.internal.toolkit.util.ClassTree)
                      }
-
+                     
                   }
                   namespace taglets {
                      class TagletManager {
@@ -26184,14 +26184,14 @@ declare namespace com {
                          public getTaglet(arg0: java.lang.String): com.sun.tools.doclets.internal.toolkit.taglets.Taglet
                      }
                      interface Taglet {
-                         public inField(): boolean
-                         public inConstructor(): boolean
-                         public inMethod(): boolean
-                         public inOverview(): boolean
-                         public inPackage(): boolean
-                         public inType(): boolean
-                         public isInlineTag(): boolean
-                         public getName(): java.lang.String
+                         inField(): boolean
+                         inConstructor(): boolean
+                         inMethod(): boolean
+                         inOverview(): boolean
+                         inPackage(): boolean
+                         inType(): boolean
+                         isInlineTag(): boolean
+                         getName(): java.lang.String
                          getTagletOutput<T>(...args: any[]): any
                          toString<T>(...args: any[]): any
                      }
@@ -26219,7 +26219,7 @@ declare namespace com {
                          public configuration(): com.sun.tools.doclets.internal.toolkit.Configuration
                      }
                      interface InheritableTaglet extends com.sun.tools.doclets.internal.toolkit.taglets.Taglet {
-                         public inherit(arg0: com.sun.tools.doclets.internal.toolkit.util.DocFinder$Input, arg1: com.sun.tools.doclets.internal.toolkit.util.DocFinder$Output): void
+                         inherit(arg0: com.sun.tools.doclets.internal.toolkit.util.DocFinder$Input, arg1: com.sun.tools.doclets.internal.toolkit.util.DocFinder$Output): void
                      }
                      class ValueTaglet extends com.sun.tools.doclets.internal.toolkit.taglets.BaseInlineTaglet {
                          public constructor()
@@ -26367,7 +26367,7 @@ declare namespace com {
                          public getName(): java.lang.String
                          public getTagletOutput(arg0: com.sun.javadoc.Tag, arg1: com.sun.tools.doclets.internal.toolkit.taglets.TagletWriter): com.sun.tools.doclets.internal.toolkit.Content
                      }
-
+                     
                   }
                   namespace builders {
                      class BuilderFactory {
@@ -26701,7 +26701,7 @@ declare namespace com {
                          public buildAnnotationTypeOptionalMemberDetails(arg0: com.sun.tools.doclets.internal.toolkit.builders.XMLNode, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
                          public buildAnnotationTypeRequiredMemberDetails(arg0: com.sun.tools.doclets.internal.toolkit.builders.XMLNode, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
                      }
-
+                     
                   }
                   class Configuration$Fault extends java.lang.Exception {
                       constructor(...args: any[])
@@ -26779,248 +26779,248 @@ declare namespace com {
                       protected static nullCheck<T>(arg0: T): T
                   }
                   interface WriterFactory {
-                      public getConstantsSummaryWriter(): com.sun.tools.doclets.internal.toolkit.ConstantsSummaryWriter
-                      public getPackageSummaryWriter(arg0: com.sun.javadoc.PackageDoc, arg1: com.sun.javadoc.PackageDoc, arg2: com.sun.javadoc.PackageDoc): com.sun.tools.doclets.internal.toolkit.PackageSummaryWriter
-                      public getProfileSummaryWriter(arg0: com.sun.tools.javac.jvm.Profile, arg1: com.sun.tools.javac.jvm.Profile, arg2: com.sun.tools.javac.jvm.Profile): com.sun.tools.doclets.internal.toolkit.ProfileSummaryWriter
-                      public getProfilePackageSummaryWriter(arg0: com.sun.javadoc.PackageDoc, arg1: com.sun.javadoc.PackageDoc, arg2: com.sun.javadoc.PackageDoc, arg3: com.sun.tools.javac.jvm.Profile): com.sun.tools.doclets.internal.toolkit.ProfilePackageSummaryWriter
-                      public getClassWriter(arg0: com.sun.javadoc.ClassDoc, arg1: com.sun.javadoc.ClassDoc, arg2: com.sun.javadoc.ClassDoc, arg3: com.sun.tools.doclets.internal.toolkit.util.ClassTree): com.sun.tools.doclets.internal.toolkit.ClassWriter
-                      public getAnnotationTypeWriter(arg0: com.sun.javadoc.AnnotationTypeDoc, arg1: com.sun.javadoc.Type, arg2: com.sun.javadoc.Type): com.sun.tools.doclets.internal.toolkit.AnnotationTypeWriter
-                      public getMethodWriter(arg0: com.sun.tools.doclets.internal.toolkit.ClassWriter): com.sun.tools.doclets.internal.toolkit.MethodWriter
-                      public getAnnotationTypeFieldWriter(arg0: com.sun.tools.doclets.internal.toolkit.AnnotationTypeWriter): com.sun.tools.doclets.internal.toolkit.AnnotationTypeFieldWriter
-                      public getAnnotationTypeOptionalMemberWriter(arg0: com.sun.tools.doclets.internal.toolkit.AnnotationTypeWriter): com.sun.tools.doclets.internal.toolkit.AnnotationTypeOptionalMemberWriter
-                      public getAnnotationTypeRequiredMemberWriter(arg0: com.sun.tools.doclets.internal.toolkit.AnnotationTypeWriter): com.sun.tools.doclets.internal.toolkit.AnnotationTypeRequiredMemberWriter
-                      public getEnumConstantWriter(arg0: com.sun.tools.doclets.internal.toolkit.ClassWriter): com.sun.tools.doclets.internal.toolkit.EnumConstantWriter
-                      public getFieldWriter(arg0: com.sun.tools.doclets.internal.toolkit.ClassWriter): com.sun.tools.doclets.internal.toolkit.FieldWriter
-                      public getPropertyWriter(arg0: com.sun.tools.doclets.internal.toolkit.ClassWriter): com.sun.tools.doclets.internal.toolkit.PropertyWriter
-                      public getConstructorWriter(arg0: com.sun.tools.doclets.internal.toolkit.ClassWriter): com.sun.tools.doclets.internal.toolkit.ConstructorWriter
+                      getConstantsSummaryWriter(): com.sun.tools.doclets.internal.toolkit.ConstantsSummaryWriter
+                      getPackageSummaryWriter(arg0: com.sun.javadoc.PackageDoc, arg1: com.sun.javadoc.PackageDoc, arg2: com.sun.javadoc.PackageDoc): com.sun.tools.doclets.internal.toolkit.PackageSummaryWriter
+                      getProfileSummaryWriter(arg0: com.sun.tools.javac.jvm.Profile, arg1: com.sun.tools.javac.jvm.Profile, arg2: com.sun.tools.javac.jvm.Profile): com.sun.tools.doclets.internal.toolkit.ProfileSummaryWriter
+                      getProfilePackageSummaryWriter(arg0: com.sun.javadoc.PackageDoc, arg1: com.sun.javadoc.PackageDoc, arg2: com.sun.javadoc.PackageDoc, arg3: com.sun.tools.javac.jvm.Profile): com.sun.tools.doclets.internal.toolkit.ProfilePackageSummaryWriter
+                      getClassWriter(arg0: com.sun.javadoc.ClassDoc, arg1: com.sun.javadoc.ClassDoc, arg2: com.sun.javadoc.ClassDoc, arg3: com.sun.tools.doclets.internal.toolkit.util.ClassTree): com.sun.tools.doclets.internal.toolkit.ClassWriter
+                      getAnnotationTypeWriter(arg0: com.sun.javadoc.AnnotationTypeDoc, arg1: com.sun.javadoc.Type, arg2: com.sun.javadoc.Type): com.sun.tools.doclets.internal.toolkit.AnnotationTypeWriter
+                      getMethodWriter(arg0: com.sun.tools.doclets.internal.toolkit.ClassWriter): com.sun.tools.doclets.internal.toolkit.MethodWriter
+                      getAnnotationTypeFieldWriter(arg0: com.sun.tools.doclets.internal.toolkit.AnnotationTypeWriter): com.sun.tools.doclets.internal.toolkit.AnnotationTypeFieldWriter
+                      getAnnotationTypeOptionalMemberWriter(arg0: com.sun.tools.doclets.internal.toolkit.AnnotationTypeWriter): com.sun.tools.doclets.internal.toolkit.AnnotationTypeOptionalMemberWriter
+                      getAnnotationTypeRequiredMemberWriter(arg0: com.sun.tools.doclets.internal.toolkit.AnnotationTypeWriter): com.sun.tools.doclets.internal.toolkit.AnnotationTypeRequiredMemberWriter
+                      getEnumConstantWriter(arg0: com.sun.tools.doclets.internal.toolkit.ClassWriter): com.sun.tools.doclets.internal.toolkit.EnumConstantWriter
+                      getFieldWriter(arg0: com.sun.tools.doclets.internal.toolkit.ClassWriter): com.sun.tools.doclets.internal.toolkit.FieldWriter
+                      getPropertyWriter(arg0: com.sun.tools.doclets.internal.toolkit.ClassWriter): com.sun.tools.doclets.internal.toolkit.PropertyWriter
+                      getConstructorWriter(arg0: com.sun.tools.doclets.internal.toolkit.ClassWriter): com.sun.tools.doclets.internal.toolkit.ConstructorWriter
                       getMemberSummaryWriter<T>(...args: any[]): any
-                      public getSerializedFormWriter(): com.sun.tools.doclets.internal.toolkit.SerializedFormWriter
+                      getSerializedFormWriter(): com.sun.tools.doclets.internal.toolkit.SerializedFormWriter
                   }
                   interface ClassWriter {
-                      public getHeader(arg0: java.lang.String): com.sun.tools.doclets.internal.toolkit.Content
-                      public getClassContentHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public addClassTree(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public getClassInfoTreeHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public addTypeParamInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addSuperInterfacesInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addImplementedInterfacesInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addSubClassInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addSubInterfacesInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addInterfaceUsageInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addFunctionalInterfaceInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addNestedClassInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public getClassInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public addClassDeprecationInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addClassSignature(arg0: java.lang.String, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addClassDescription(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addClassTagInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public getMemberTreeHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public addFooter(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public printDocument(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public close(): void
-                      public getClassDoc(): com.sun.javadoc.ClassDoc
-                      public getMemberSummaryTree(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getMemberDetailsTree(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getHeader(arg0: java.lang.String): com.sun.tools.doclets.internal.toolkit.Content
+                      getClassContentHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      addClassTree(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      getClassInfoTreeHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      addTypeParamInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addSuperInterfacesInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addImplementedInterfacesInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addSubClassInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addSubInterfacesInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addInterfaceUsageInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addFunctionalInterfaceInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addNestedClassInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      getClassInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      addClassDeprecationInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addClassSignature(arg0: java.lang.String, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addClassDescription(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addClassTagInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      getMemberTreeHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      addFooter(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      printDocument(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      close(): void
+                      getClassDoc(): com.sun.javadoc.ClassDoc
+                      getMemberSummaryTree(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getMemberDetailsTree(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
                   }
                   interface AnnotationTypeWriter {
-                      public getHeader(arg0: java.lang.String): com.sun.tools.doclets.internal.toolkit.Content
-                      public getAnnotationContentHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public getAnnotationInfoTreeHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public getAnnotationInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public addAnnotationTypeSignature(arg0: java.lang.String, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addAnnotationTypeDescription(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addAnnotationTypeTagInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addAnnotationTypeDeprecationInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public getMemberTreeHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public getMemberTree(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getMemberSummaryTree(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getMemberDetailsTree(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public addFooter(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public printDocument(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public close(): void
-                      public getAnnotationTypeDoc(): com.sun.javadoc.AnnotationTypeDoc
+                      getHeader(arg0: java.lang.String): com.sun.tools.doclets.internal.toolkit.Content
+                      getAnnotationContentHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      getAnnotationInfoTreeHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      getAnnotationInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      addAnnotationTypeSignature(arg0: java.lang.String, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addAnnotationTypeDescription(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addAnnotationTypeTagInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addAnnotationTypeDeprecationInfo(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      getMemberTreeHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      getMemberTree(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getMemberSummaryTree(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getMemberDetailsTree(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      addFooter(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      printDocument(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      close(): void
+                      getAnnotationTypeDoc(): com.sun.javadoc.AnnotationTypeDoc
                   }
                   interface ConstantsSummaryWriter {
-                      public close(): void
-                      public getHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public getContentsHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public addLinkToPackageContent(arg0: com.sun.javadoc.PackageDoc, arg1: java.lang.String, arg2: java.util.Set<java.lang.String>, arg3: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public getContentsList(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getConstantSummaries(): com.sun.tools.doclets.internal.toolkit.Content
-                      public addPackageName(arg0: com.sun.javadoc.PackageDoc, arg1: java.lang.String, arg2: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public getClassConstantHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public addConstantMembers(arg0: com.sun.javadoc.ClassDoc, arg1: java.util.List<com.sun.javadoc.FieldDoc>, arg2: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addFooter(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public printDocument(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      close(): void
+                      getHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      getContentsHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      addLinkToPackageContent(arg0: com.sun.javadoc.PackageDoc, arg1: java.lang.String, arg2: java.util.Set<java.lang.String>, arg3: com.sun.tools.doclets.internal.toolkit.Content): void
+                      getContentsList(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getConstantSummaries(): com.sun.tools.doclets.internal.toolkit.Content
+                      addPackageName(arg0: com.sun.javadoc.PackageDoc, arg1: java.lang.String, arg2: com.sun.tools.doclets.internal.toolkit.Content): void
+                      getClassConstantHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      addConstantMembers(arg0: com.sun.javadoc.ClassDoc, arg1: java.util.List<com.sun.javadoc.FieldDoc>, arg2: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addFooter(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      printDocument(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
                   }
                   interface PackageSummaryWriter {
-                      public getPackageHeader(arg0: java.lang.String): com.sun.tools.doclets.internal.toolkit.Content
-                      public getContentHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public getSummaryHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public addClassesSummary(arg0: com.sun.javadoc.ClassDoc[], arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String[], arg4: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addPackageDescription(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addPackageTags(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addPackageFooter(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public printDocument(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public close(): void
+                      getPackageHeader(arg0: java.lang.String): com.sun.tools.doclets.internal.toolkit.Content
+                      getContentHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      getSummaryHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      addClassesSummary(arg0: com.sun.javadoc.ClassDoc[], arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String[], arg4: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addPackageDescription(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addPackageTags(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addPackageFooter(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      printDocument(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      close(): void
                   }
                   interface ProfileSummaryWriter {
-                      public getProfileHeader(arg0: java.lang.String): com.sun.tools.doclets.internal.toolkit.Content
-                      public getContentHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public getSummaryHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public getSummaryTree(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getPackageSummaryHeader(arg0: com.sun.javadoc.PackageDoc): com.sun.tools.doclets.internal.toolkit.Content
-                      public getPackageSummaryTree(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public addClassesSummary(arg0: com.sun.javadoc.ClassDoc[], arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String[], arg4: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addProfileFooter(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public printDocument(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public close(): void
+                      getProfileHeader(arg0: java.lang.String): com.sun.tools.doclets.internal.toolkit.Content
+                      getContentHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      getSummaryHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      getSummaryTree(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getPackageSummaryHeader(arg0: com.sun.javadoc.PackageDoc): com.sun.tools.doclets.internal.toolkit.Content
+                      getPackageSummaryTree(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      addClassesSummary(arg0: com.sun.javadoc.ClassDoc[], arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String[], arg4: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addProfileFooter(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      printDocument(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      close(): void
                   }
                   interface ProfilePackageSummaryWriter {
-                      public getPackageHeader(arg0: java.lang.String): com.sun.tools.doclets.internal.toolkit.Content
-                      public getContentHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public getSummaryHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public addClassesSummary(arg0: com.sun.javadoc.ClassDoc[], arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String[], arg4: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addPackageDescription(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addPackageTags(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addPackageFooter(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public printDocument(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public close(): void
+                      getPackageHeader(arg0: java.lang.String): com.sun.tools.doclets.internal.toolkit.Content
+                      getContentHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      getSummaryHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      addClassesSummary(arg0: com.sun.javadoc.ClassDoc[], arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String[], arg4: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addPackageDescription(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addPackageTags(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addPackageFooter(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      printDocument(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      close(): void
                   }
                   interface MethodWriter {
-                      public getMethodDetailsTreeHeader(arg0: com.sun.javadoc.ClassDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getMethodDocTreeHeader(arg0: com.sun.javadoc.MethodDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getSignature(arg0: com.sun.javadoc.MethodDoc): com.sun.tools.doclets.internal.toolkit.Content
-                      public addDeprecated(arg0: com.sun.javadoc.MethodDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addComments(arg0: com.sun.javadoc.Type, arg1: com.sun.javadoc.MethodDoc, arg2: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addTags(arg0: com.sun.javadoc.MethodDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public getMethodDetails(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getMethodDoc(arg0: com.sun.tools.doclets.internal.toolkit.Content, arg1: boolean): com.sun.tools.doclets.internal.toolkit.Content
-                      public close(): void
+                      getMethodDetailsTreeHeader(arg0: com.sun.javadoc.ClassDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getMethodDocTreeHeader(arg0: com.sun.javadoc.MethodDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getSignature(arg0: com.sun.javadoc.MethodDoc): com.sun.tools.doclets.internal.toolkit.Content
+                      addDeprecated(arg0: com.sun.javadoc.MethodDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addComments(arg0: com.sun.javadoc.Type, arg1: com.sun.javadoc.MethodDoc, arg2: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addTags(arg0: com.sun.javadoc.MethodDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      getMethodDetails(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getMethodDoc(arg0: com.sun.tools.doclets.internal.toolkit.Content, arg1: boolean): com.sun.tools.doclets.internal.toolkit.Content
+                      close(): void
                   }
                   interface AnnotationTypeFieldWriter {
-                      public getMemberTreeHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public addAnnotationFieldDetailsMarker(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addAnnotationDetailsTreeHeader(arg0: com.sun.javadoc.ClassDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public getAnnotationDocTreeHeader(arg0: com.sun.javadoc.MemberDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getAnnotationDetails(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getAnnotationDoc(arg0: com.sun.tools.doclets.internal.toolkit.Content, arg1: boolean): com.sun.tools.doclets.internal.toolkit.Content
-                      public getSignature(arg0: com.sun.javadoc.MemberDoc): com.sun.tools.doclets.internal.toolkit.Content
-                      public addDeprecated(arg0: com.sun.javadoc.MemberDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addComments(arg0: com.sun.javadoc.MemberDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addTags(arg0: com.sun.javadoc.MemberDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public close(): void
+                      getMemberTreeHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      addAnnotationFieldDetailsMarker(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addAnnotationDetailsTreeHeader(arg0: com.sun.javadoc.ClassDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      getAnnotationDocTreeHeader(arg0: com.sun.javadoc.MemberDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getAnnotationDetails(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getAnnotationDoc(arg0: com.sun.tools.doclets.internal.toolkit.Content, arg1: boolean): com.sun.tools.doclets.internal.toolkit.Content
+                      getSignature(arg0: com.sun.javadoc.MemberDoc): com.sun.tools.doclets.internal.toolkit.Content
+                      addDeprecated(arg0: com.sun.javadoc.MemberDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addComments(arg0: com.sun.javadoc.MemberDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addTags(arg0: com.sun.javadoc.MemberDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      close(): void
                   }
                   interface AnnotationTypeOptionalMemberWriter extends com.sun.tools.doclets.internal.toolkit.AnnotationTypeRequiredMemberWriter {
-                      public addDefaultValueInfo(arg0: com.sun.javadoc.MemberDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addDefaultValueInfo(arg0: com.sun.javadoc.MemberDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
                   }
                   interface AnnotationTypeRequiredMemberWriter {
-                      public getMemberTreeHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public addAnnotationDetailsMarker(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addAnnotationDetailsTreeHeader(arg0: com.sun.javadoc.ClassDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public getAnnotationDocTreeHeader(arg0: com.sun.javadoc.MemberDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getAnnotationDetails(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getAnnotationDoc(arg0: com.sun.tools.doclets.internal.toolkit.Content, arg1: boolean): com.sun.tools.doclets.internal.toolkit.Content
-                      public getSignature(arg0: com.sun.javadoc.MemberDoc): com.sun.tools.doclets.internal.toolkit.Content
-                      public addDeprecated(arg0: com.sun.javadoc.MemberDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addComments(arg0: com.sun.javadoc.MemberDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addTags(arg0: com.sun.javadoc.MemberDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public close(): void
+                      getMemberTreeHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      addAnnotationDetailsMarker(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addAnnotationDetailsTreeHeader(arg0: com.sun.javadoc.ClassDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      getAnnotationDocTreeHeader(arg0: com.sun.javadoc.MemberDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getAnnotationDetails(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getAnnotationDoc(arg0: com.sun.tools.doclets.internal.toolkit.Content, arg1: boolean): com.sun.tools.doclets.internal.toolkit.Content
+                      getSignature(arg0: com.sun.javadoc.MemberDoc): com.sun.tools.doclets.internal.toolkit.Content
+                      addDeprecated(arg0: com.sun.javadoc.MemberDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addComments(arg0: com.sun.javadoc.MemberDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addTags(arg0: com.sun.javadoc.MemberDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      close(): void
                   }
                   interface EnumConstantWriter {
-                      public getEnumConstantsDetailsTreeHeader(arg0: com.sun.javadoc.ClassDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getEnumConstantsTreeHeader(arg0: com.sun.javadoc.FieldDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getSignature(arg0: com.sun.javadoc.FieldDoc): com.sun.tools.doclets.internal.toolkit.Content
-                      public addDeprecated(arg0: com.sun.javadoc.FieldDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addComments(arg0: com.sun.javadoc.FieldDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addTags(arg0: com.sun.javadoc.FieldDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public getEnumConstantsDetails(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getEnumConstants(arg0: com.sun.tools.doclets.internal.toolkit.Content, arg1: boolean): com.sun.tools.doclets.internal.toolkit.Content
-                      public close(): void
+                      getEnumConstantsDetailsTreeHeader(arg0: com.sun.javadoc.ClassDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getEnumConstantsTreeHeader(arg0: com.sun.javadoc.FieldDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getSignature(arg0: com.sun.javadoc.FieldDoc): com.sun.tools.doclets.internal.toolkit.Content
+                      addDeprecated(arg0: com.sun.javadoc.FieldDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addComments(arg0: com.sun.javadoc.FieldDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addTags(arg0: com.sun.javadoc.FieldDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      getEnumConstantsDetails(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getEnumConstants(arg0: com.sun.tools.doclets.internal.toolkit.Content, arg1: boolean): com.sun.tools.doclets.internal.toolkit.Content
+                      close(): void
                   }
                   interface FieldWriter {
-                      public getFieldDetailsTreeHeader(arg0: com.sun.javadoc.ClassDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getFieldDocTreeHeader(arg0: com.sun.javadoc.FieldDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getSignature(arg0: com.sun.javadoc.FieldDoc): com.sun.tools.doclets.internal.toolkit.Content
-                      public addDeprecated(arg0: com.sun.javadoc.FieldDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addComments(arg0: com.sun.javadoc.FieldDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addTags(arg0: com.sun.javadoc.FieldDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public getFieldDetails(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getFieldDoc(arg0: com.sun.tools.doclets.internal.toolkit.Content, arg1: boolean): com.sun.tools.doclets.internal.toolkit.Content
-                      public close(): void
+                      getFieldDetailsTreeHeader(arg0: com.sun.javadoc.ClassDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getFieldDocTreeHeader(arg0: com.sun.javadoc.FieldDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getSignature(arg0: com.sun.javadoc.FieldDoc): com.sun.tools.doclets.internal.toolkit.Content
+                      addDeprecated(arg0: com.sun.javadoc.FieldDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addComments(arg0: com.sun.javadoc.FieldDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addTags(arg0: com.sun.javadoc.FieldDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      getFieldDetails(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getFieldDoc(arg0: com.sun.tools.doclets.internal.toolkit.Content, arg1: boolean): com.sun.tools.doclets.internal.toolkit.Content
+                      close(): void
                   }
                   interface PropertyWriter {
-                      public getPropertyDetailsTreeHeader(arg0: com.sun.javadoc.ClassDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getPropertyDocTreeHeader(arg0: com.sun.javadoc.MethodDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getSignature(arg0: com.sun.javadoc.MethodDoc): com.sun.tools.doclets.internal.toolkit.Content
-                      public addDeprecated(arg0: com.sun.javadoc.MethodDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addComments(arg0: com.sun.javadoc.MethodDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addTags(arg0: com.sun.javadoc.MethodDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public getPropertyDetails(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getPropertyDoc(arg0: com.sun.tools.doclets.internal.toolkit.Content, arg1: boolean): com.sun.tools.doclets.internal.toolkit.Content
-                      public close(): void
+                      getPropertyDetailsTreeHeader(arg0: com.sun.javadoc.ClassDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getPropertyDocTreeHeader(arg0: com.sun.javadoc.MethodDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getSignature(arg0: com.sun.javadoc.MethodDoc): com.sun.tools.doclets.internal.toolkit.Content
+                      addDeprecated(arg0: com.sun.javadoc.MethodDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addComments(arg0: com.sun.javadoc.MethodDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addTags(arg0: com.sun.javadoc.MethodDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      getPropertyDetails(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getPropertyDoc(arg0: com.sun.tools.doclets.internal.toolkit.Content, arg1: boolean): com.sun.tools.doclets.internal.toolkit.Content
+                      close(): void
                   }
                   interface ConstructorWriter {
-                      public getConstructorDetailsTreeHeader(arg0: com.sun.javadoc.ClassDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getConstructorDocTreeHeader(arg0: com.sun.javadoc.ConstructorDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getSignature(arg0: com.sun.javadoc.ConstructorDoc): com.sun.tools.doclets.internal.toolkit.Content
-                      public addDeprecated(arg0: com.sun.javadoc.ConstructorDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addComments(arg0: com.sun.javadoc.ConstructorDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addTags(arg0: com.sun.javadoc.ConstructorDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public getConstructorDetails(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getConstructorDoc(arg0: com.sun.tools.doclets.internal.toolkit.Content, arg1: boolean): com.sun.tools.doclets.internal.toolkit.Content
-                      public setFoundNonPubConstructor(arg0: boolean): void
-                      public close(): void
+                      getConstructorDetailsTreeHeader(arg0: com.sun.javadoc.ClassDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getConstructorDocTreeHeader(arg0: com.sun.javadoc.ConstructorDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getSignature(arg0: com.sun.javadoc.ConstructorDoc): com.sun.tools.doclets.internal.toolkit.Content
+                      addDeprecated(arg0: com.sun.javadoc.ConstructorDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addComments(arg0: com.sun.javadoc.ConstructorDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addTags(arg0: com.sun.javadoc.ConstructorDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      getConstructorDetails(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getConstructorDoc(arg0: com.sun.tools.doclets.internal.toolkit.Content, arg1: boolean): com.sun.tools.doclets.internal.toolkit.Content
+                      setFoundNonPubConstructor(arg0: boolean): void
+                      close(): void
                   }
                   interface MemberSummaryWriter {
-                      public getMemberSummaryHeader(arg0: com.sun.javadoc.ClassDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getSummaryTableTree(arg0: com.sun.javadoc.ClassDoc, arg1: java.util.List<com.sun.tools.doclets.internal.toolkit.Content>): com.sun.tools.doclets.internal.toolkit.Content
-                      public addMemberSummary(arg0: com.sun.javadoc.ClassDoc, arg1: com.sun.javadoc.ProgramElementDoc, arg2: com.sun.javadoc.Tag[], arg3: java.util.List<com.sun.tools.doclets.internal.toolkit.Content>, arg4: int): void
-                      public getInheritedSummaryHeader(arg0: com.sun.javadoc.ClassDoc): com.sun.tools.doclets.internal.toolkit.Content
-                      public addInheritedMemberSummary(arg0: com.sun.javadoc.ClassDoc, arg1: com.sun.javadoc.ProgramElementDoc, arg2: boolean, arg3: boolean, arg4: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public getInheritedSummaryLinksTree(): com.sun.tools.doclets.internal.toolkit.Content
-                      public getMemberTree(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public close(): void
+                      getMemberSummaryHeader(arg0: com.sun.javadoc.ClassDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getSummaryTableTree(arg0: com.sun.javadoc.ClassDoc, arg1: java.util.List<com.sun.tools.doclets.internal.toolkit.Content>): com.sun.tools.doclets.internal.toolkit.Content
+                      addMemberSummary(arg0: com.sun.javadoc.ClassDoc, arg1: com.sun.javadoc.ProgramElementDoc, arg2: com.sun.javadoc.Tag[], arg3: java.util.List<com.sun.tools.doclets.internal.toolkit.Content>, arg4: int): void
+                      getInheritedSummaryHeader(arg0: com.sun.javadoc.ClassDoc): com.sun.tools.doclets.internal.toolkit.Content
+                      addInheritedMemberSummary(arg0: com.sun.javadoc.ClassDoc, arg1: com.sun.javadoc.ProgramElementDoc, arg2: boolean, arg3: boolean, arg4: com.sun.tools.doclets.internal.toolkit.Content): void
+                      getInheritedSummaryLinksTree(): com.sun.tools.doclets.internal.toolkit.Content
+                      getMemberTree(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      close(): void
                   }
                   interface SerializedFormWriter$SerialFieldWriter {
-                      public getSerializableFieldsHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public getFieldsContentHeader(arg0: boolean): com.sun.tools.doclets.internal.toolkit.Content
-                      public getSerializableFields(arg0: java.lang.String, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public addMemberDeprecatedInfo(arg0: com.sun.javadoc.FieldDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      getSerializableFieldsHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      getFieldsContentHeader(arg0: boolean): com.sun.tools.doclets.internal.toolkit.Content
+                      getSerializableFields(arg0: java.lang.String, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      addMemberDeprecatedInfo(arg0: com.sun.javadoc.FieldDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
                       addMemberDescription<T>(...args: any[]): any
-                      public addMemberTags(arg0: com.sun.javadoc.FieldDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addMemberHeader(arg0: com.sun.javadoc.ClassDoc, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public shouldPrintOverview(arg0: com.sun.javadoc.FieldDoc): boolean
+                      addMemberTags(arg0: com.sun.javadoc.FieldDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addMemberHeader(arg0: com.sun.javadoc.ClassDoc, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: com.sun.tools.doclets.internal.toolkit.Content): void
+                      shouldPrintOverview(arg0: com.sun.javadoc.FieldDoc): boolean
                   }
                   interface SerializedFormWriter$SerialMethodWriter {
-                      public getSerializableMethodsHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public getMethodsContentHeader(arg0: boolean): com.sun.tools.doclets.internal.toolkit.Content
-                      public getSerializableMethods(arg0: java.lang.String, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public getNoCustomizationMsg(arg0: java.lang.String): com.sun.tools.doclets.internal.toolkit.Content
-                      public addMemberHeader(arg0: com.sun.javadoc.MethodDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addDeprecatedMemberInfo(arg0: com.sun.javadoc.MethodDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addMemberDescription(arg0: com.sun.javadoc.MethodDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public addMemberTags(arg0: com.sun.javadoc.MethodDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      getSerializableMethodsHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      getMethodsContentHeader(arg0: boolean): com.sun.tools.doclets.internal.toolkit.Content
+                      getSerializableMethods(arg0: java.lang.String, arg1: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      getNoCustomizationMsg(arg0: java.lang.String): com.sun.tools.doclets.internal.toolkit.Content
+                      addMemberHeader(arg0: com.sun.javadoc.MethodDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addDeprecatedMemberInfo(arg0: com.sun.javadoc.MethodDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addMemberDescription(arg0: com.sun.javadoc.MethodDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
+                      addMemberTags(arg0: com.sun.javadoc.MethodDoc, arg1: com.sun.tools.doclets.internal.toolkit.Content): void
                   }
                   interface SerializedFormWriter {
-                      public getHeader(arg0: java.lang.String): com.sun.tools.doclets.internal.toolkit.Content
-                      public getSerializedSummariesHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public getPackageSerializedHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public getPackageHeader(arg0: java.lang.String): com.sun.tools.doclets.internal.toolkit.Content
-                      public getClassSerializedHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public getClassHeader(arg0: com.sun.javadoc.ClassDoc): com.sun.tools.doclets.internal.toolkit.Content
-                      public getSerialUIDInfoHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public addSerialUIDInfo(arg0: java.lang.String, arg1: java.lang.String, arg2: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public getClassContentHeader(): com.sun.tools.doclets.internal.toolkit.Content
-                      public getSerialFieldWriter(arg0: com.sun.javadoc.ClassDoc): com.sun.tools.doclets.internal.toolkit.SerializedFormWriter$SerialFieldWriter
-                      public getSerialMethodWriter(arg0: com.sun.javadoc.ClassDoc): com.sun.tools.doclets.internal.toolkit.SerializedFormWriter$SerialMethodWriter
-                      public close(): void
-                      public getSerializedContent(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
-                      public addFooter(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
-                      public printDocument(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      getHeader(arg0: java.lang.String): com.sun.tools.doclets.internal.toolkit.Content
+                      getSerializedSummariesHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      getPackageSerializedHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      getPackageHeader(arg0: java.lang.String): com.sun.tools.doclets.internal.toolkit.Content
+                      getClassSerializedHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      getClassHeader(arg0: com.sun.javadoc.ClassDoc): com.sun.tools.doclets.internal.toolkit.Content
+                      getSerialUIDInfoHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      addSerialUIDInfo(arg0: java.lang.String, arg1: java.lang.String, arg2: com.sun.tools.doclets.internal.toolkit.Content): void
+                      getClassContentHeader(): com.sun.tools.doclets.internal.toolkit.Content
+                      getSerialFieldWriter(arg0: com.sun.javadoc.ClassDoc): com.sun.tools.doclets.internal.toolkit.SerializedFormWriter$SerialFieldWriter
+                      getSerialMethodWriter(arg0: com.sun.javadoc.ClassDoc): com.sun.tools.doclets.internal.toolkit.SerializedFormWriter$SerialMethodWriter
+                      close(): void
+                      getSerializedContent(arg0: com.sun.tools.doclets.internal.toolkit.Content): com.sun.tools.doclets.internal.toolkit.Content
+                      addFooter(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
+                      printDocument(arg0: com.sun.tools.doclets.internal.toolkit.Content): void
                   }
                   interface NestedClassWriter {
-                      public close(): void
+                      close(): void
                   }
                   abstract class AbstractDoclet {
                       configuration<T>(...args: any[]): any
@@ -27032,9 +27032,9 @@ declare namespace com {
                       protected generatePackageFiles(arg0: com.sun.tools.doclets.internal.toolkit.util.ClassTree): void
                       generateClassFiles<T>(...args: any[]): any
                   }
-
+                  
                }
-
+               
             }
             namespace formats {
                namespace html {
@@ -27418,7 +27418,7 @@ declare namespace com {
                          public isEmpty(): boolean
                          public charCount(): int
                      }
-
+                     
                   }
                   class SectionName extends java.lang.Enum<com.sun.tools.doclets.formats.html.SectionName> {
                       public static ANNOTATION_TYPE_ELEMENT_DETAIL: com.sun.tools.doclets.formats.html.SectionName
@@ -28457,11 +28457,11 @@ declare namespace com {
                          public constructor()
                          protected getContents(): java.lang.Object[][]
                      }
-
+                     
                   }
-
+                  
                }
-
+               
             }
             namespace standard {
                class Standard {
@@ -28471,20 +28471,20 @@ declare namespace com {
                    public static validOptions(arg0: java.lang.String[][], arg1: com.sun.javadoc.DocErrorReporter): boolean
                    public static languageVersion(): com.sun.javadoc.LanguageVersion
                }
-
+               
             }
             interface Taglet {
-                public inField(): boolean
-                public inConstructor(): boolean
-                public inMethod(): boolean
-                public inOverview(): boolean
-                public inPackage(): boolean
-                public inType(): boolean
-                public isInlineTag(): boolean
-                public getName(): java.lang.String
+                inField(): boolean
+                inConstructor(): boolean
+                inMethod(): boolean
+                inOverview(): boolean
+                inPackage(): boolean
+                inType(): boolean
+                isInlineTag(): boolean
+                getName(): java.lang.String
                 toString<T>(...args: any[]): any
             }
-
+            
          }
          namespace javap {
             class TypeAnnotationWriter$NoteKind extends java.lang.Enum<com.sun.tools.javap.TypeAnnotationWriter$NoteKind> {
@@ -29088,12 +29088,12 @@ declare namespace com {
                 getMessage<T>(...args: any[]): any
             }
             interface DisassemblerTool$DisassemblerTask extends java.util.concurrent.Callable<java.lang.Boolean> {
-                public setLocale(arg0: java.util.Locale): void
+                setLocale(arg0: java.util.Locale): void
                 call<T>(...args: any[]): any
             }
             interface DisassemblerTool extends javax.tools.Tool , javax.tools.OptionChecker {
-                public getTask(arg0: java.io.Writer, arg1: javax.tools.JavaFileManager, arg2: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>, arg3: java.lang.Iterable<java.lang.String>, arg4: java.lang.Iterable<java.lang.String>): com.sun.tools.javap.DisassemblerTool$DisassemblerTask
-                public getStandardFileManager(arg0: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>, arg1: java.util.Locale, arg2: java.nio.charset.Charset): javax.tools.StandardJavaFileManager
+                getTask(arg0: java.io.Writer, arg1: javax.tools.JavaFileManager, arg2: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>, arg3: java.lang.Iterable<java.lang.String>, arg4: java.lang.Iterable<java.lang.String>): com.sun.tools.javap.DisassemblerTool$DisassemblerTask
+                getStandardFileManager(arg0: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>, arg1: java.util.Locale, arg2: java.nio.charset.Charset): javax.tools.StandardJavaFileManager
             }
             class JavapFileManager extends com.sun.tools.javac.file.JavacFileManager {
                 public static create(arg0: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>, arg1: java.io.PrintWriter): com.sun.tools.javap.JavapFileManager
@@ -29119,20 +29119,20 @@ declare namespace com {
                    public constructor()
                    protected getContents(): java.lang.Object[][]
                }
-
+               
             }
-
+            
          }
          namespace classfile {
             class Annotation$InvalidAnnotation extends com.sun.tools.classfile.AttributeException {
                 constructor(arg0: java.lang.String)
             }
             interface Annotation$element_value$Visitor<R, P> {
-                public visitPrimitive(arg0: com.sun.tools.classfile.Annotation$Primitive_element_value, arg1: P): R
-                public visitEnum(arg0: com.sun.tools.classfile.Annotation$Enum_element_value, arg1: P): R
-                public visitClass(arg0: com.sun.tools.classfile.Annotation$Class_element_value, arg1: P): R
-                public visitAnnotation(arg0: com.sun.tools.classfile.Annotation$Annotation_element_value, arg1: P): R
-                public visitArray(arg0: com.sun.tools.classfile.Annotation$Array_element_value, arg1: P): R
+                visitPrimitive(arg0: com.sun.tools.classfile.Annotation$Primitive_element_value, arg1: P): R
+                visitEnum(arg0: com.sun.tools.classfile.Annotation$Enum_element_value, arg1: P): R
+                visitClass(arg0: com.sun.tools.classfile.Annotation$Class_element_value, arg1: P): R
+                visitAnnotation(arg0: com.sun.tools.classfile.Annotation$Annotation_element_value, arg1: P): R
+                visitArray(arg0: com.sun.tools.classfile.Annotation$Array_element_value, arg1: P): R
             }
             abstract class Annotation$element_value {
                 public tag: int
@@ -29235,20 +29235,20 @@ declare namespace com {
                 public iterator(): java.util.Iterator<com.sun.tools.classfile.ConstantPool$CPInfo>
             }
             interface ConstantPool$Visitor<R, P> {
-                public visitClass(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_Class_info, arg1: P): R
-                public visitDouble(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_Double_info, arg1: P): R
-                public visitFieldref(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_Fieldref_info, arg1: P): R
-                public visitFloat(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_Float_info, arg1: P): R
-                public visitInteger(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_Integer_info, arg1: P): R
-                public visitInterfaceMethodref(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_InterfaceMethodref_info, arg1: P): R
-                public visitInvokeDynamic(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_InvokeDynamic_info, arg1: P): R
-                public visitLong(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_Long_info, arg1: P): R
-                public visitNameAndType(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_NameAndType_info, arg1: P): R
-                public visitMethodref(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_Methodref_info, arg1: P): R
-                public visitMethodHandle(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_MethodHandle_info, arg1: P): R
-                public visitMethodType(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_MethodType_info, arg1: P): R
-                public visitString(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_String_info, arg1: P): R
-                public visitUtf8(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_Utf8_info, arg1: P): R
+                visitClass(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_Class_info, arg1: P): R
+                visitDouble(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_Double_info, arg1: P): R
+                visitFieldref(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_Fieldref_info, arg1: P): R
+                visitFloat(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_Float_info, arg1: P): R
+                visitInteger(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_Integer_info, arg1: P): R
+                visitInterfaceMethodref(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_InterfaceMethodref_info, arg1: P): R
+                visitInvokeDynamic(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_InvokeDynamic_info, arg1: P): R
+                visitLong(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_Long_info, arg1: P): R
+                visitNameAndType(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_NameAndType_info, arg1: P): R
+                visitMethodref(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_Methodref_info, arg1: P): R
+                visitMethodHandle(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_MethodHandle_info, arg1: P): R
+                visitMethodType(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_MethodType_info, arg1: P): R
+                visitString(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_String_info, arg1: P): R
+                visitUtf8(arg0: com.sun.tools.classfile.ConstantPool$CONSTANT_Utf8_info, arg1: P): R
             }
             abstract class ConstantPool$CPInfo {
                 protected cp: com.sun.tools.classfile.ConstantPool
@@ -29512,34 +29512,34 @@ declare namespace com {
                 protected init(): void
             }
             interface Attribute$Visitor<R, P> {
-                public visitBootstrapMethods(arg0: com.sun.tools.classfile.BootstrapMethods_attribute, arg1: P): R
-                public visitDefault(arg0: com.sun.tools.classfile.DefaultAttribute, arg1: P): R
-                public visitAnnotationDefault(arg0: com.sun.tools.classfile.AnnotationDefault_attribute, arg1: P): R
-                public visitCharacterRangeTable(arg0: com.sun.tools.classfile.CharacterRangeTable_attribute, arg1: P): R
-                public visitCode(arg0: com.sun.tools.classfile.Code_attribute, arg1: P): R
-                public visitCompilationID(arg0: com.sun.tools.classfile.CompilationID_attribute, arg1: P): R
-                public visitConstantValue(arg0: com.sun.tools.classfile.ConstantValue_attribute, arg1: P): R
-                public visitDeprecated(arg0: com.sun.tools.classfile.Deprecated_attribute, arg1: P): R
-                public visitEnclosingMethod(arg0: com.sun.tools.classfile.EnclosingMethod_attribute, arg1: P): R
-                public visitExceptions(arg0: com.sun.tools.classfile.Exceptions_attribute, arg1: P): R
-                public visitInnerClasses(arg0: com.sun.tools.classfile.InnerClasses_attribute, arg1: P): R
-                public visitLineNumberTable(arg0: com.sun.tools.classfile.LineNumberTable_attribute, arg1: P): R
-                public visitLocalVariableTable(arg0: com.sun.tools.classfile.LocalVariableTable_attribute, arg1: P): R
-                public visitLocalVariableTypeTable(arg0: com.sun.tools.classfile.LocalVariableTypeTable_attribute, arg1: P): R
-                public visitMethodParameters(arg0: com.sun.tools.classfile.MethodParameters_attribute, arg1: P): R
-                public visitRuntimeVisibleAnnotations(arg0: com.sun.tools.classfile.RuntimeVisibleAnnotations_attribute, arg1: P): R
-                public visitRuntimeInvisibleAnnotations(arg0: com.sun.tools.classfile.RuntimeInvisibleAnnotations_attribute, arg1: P): R
-                public visitRuntimeVisibleParameterAnnotations(arg0: com.sun.tools.classfile.RuntimeVisibleParameterAnnotations_attribute, arg1: P): R
-                public visitRuntimeInvisibleParameterAnnotations(arg0: com.sun.tools.classfile.RuntimeInvisibleParameterAnnotations_attribute, arg1: P): R
-                public visitRuntimeVisibleTypeAnnotations(arg0: com.sun.tools.classfile.RuntimeVisibleTypeAnnotations_attribute, arg1: P): R
-                public visitRuntimeInvisibleTypeAnnotations(arg0: com.sun.tools.classfile.RuntimeInvisibleTypeAnnotations_attribute, arg1: P): R
-                public visitSignature(arg0: com.sun.tools.classfile.Signature_attribute, arg1: P): R
-                public visitSourceDebugExtension(arg0: com.sun.tools.classfile.SourceDebugExtension_attribute, arg1: P): R
-                public visitSourceFile(arg0: com.sun.tools.classfile.SourceFile_attribute, arg1: P): R
-                public visitSourceID(arg0: com.sun.tools.classfile.SourceID_attribute, arg1: P): R
-                public visitStackMap(arg0: com.sun.tools.classfile.StackMap_attribute, arg1: P): R
-                public visitStackMapTable(arg0: com.sun.tools.classfile.StackMapTable_attribute, arg1: P): R
-                public visitSynthetic(arg0: com.sun.tools.classfile.Synthetic_attribute, arg1: P): R
+                visitBootstrapMethods(arg0: com.sun.tools.classfile.BootstrapMethods_attribute, arg1: P): R
+                visitDefault(arg0: com.sun.tools.classfile.DefaultAttribute, arg1: P): R
+                visitAnnotationDefault(arg0: com.sun.tools.classfile.AnnotationDefault_attribute, arg1: P): R
+                visitCharacterRangeTable(arg0: com.sun.tools.classfile.CharacterRangeTable_attribute, arg1: P): R
+                visitCode(arg0: com.sun.tools.classfile.Code_attribute, arg1: P): R
+                visitCompilationID(arg0: com.sun.tools.classfile.CompilationID_attribute, arg1: P): R
+                visitConstantValue(arg0: com.sun.tools.classfile.ConstantValue_attribute, arg1: P): R
+                visitDeprecated(arg0: com.sun.tools.classfile.Deprecated_attribute, arg1: P): R
+                visitEnclosingMethod(arg0: com.sun.tools.classfile.EnclosingMethod_attribute, arg1: P): R
+                visitExceptions(arg0: com.sun.tools.classfile.Exceptions_attribute, arg1: P): R
+                visitInnerClasses(arg0: com.sun.tools.classfile.InnerClasses_attribute, arg1: P): R
+                visitLineNumberTable(arg0: com.sun.tools.classfile.LineNumberTable_attribute, arg1: P): R
+                visitLocalVariableTable(arg0: com.sun.tools.classfile.LocalVariableTable_attribute, arg1: P): R
+                visitLocalVariableTypeTable(arg0: com.sun.tools.classfile.LocalVariableTypeTable_attribute, arg1: P): R
+                visitMethodParameters(arg0: com.sun.tools.classfile.MethodParameters_attribute, arg1: P): R
+                visitRuntimeVisibleAnnotations(arg0: com.sun.tools.classfile.RuntimeVisibleAnnotations_attribute, arg1: P): R
+                visitRuntimeInvisibleAnnotations(arg0: com.sun.tools.classfile.RuntimeInvisibleAnnotations_attribute, arg1: P): R
+                visitRuntimeVisibleParameterAnnotations(arg0: com.sun.tools.classfile.RuntimeVisibleParameterAnnotations_attribute, arg1: P): R
+                visitRuntimeInvisibleParameterAnnotations(arg0: com.sun.tools.classfile.RuntimeInvisibleParameterAnnotations_attribute, arg1: P): R
+                visitRuntimeVisibleTypeAnnotations(arg0: com.sun.tools.classfile.RuntimeVisibleTypeAnnotations_attribute, arg1: P): R
+                visitRuntimeInvisibleTypeAnnotations(arg0: com.sun.tools.classfile.RuntimeInvisibleTypeAnnotations_attribute, arg1: P): R
+                visitSignature(arg0: com.sun.tools.classfile.Signature_attribute, arg1: P): R
+                visitSourceDebugExtension(arg0: com.sun.tools.classfile.SourceDebugExtension_attribute, arg1: P): R
+                visitSourceFile(arg0: com.sun.tools.classfile.SourceFile_attribute, arg1: P): R
+                visitSourceID(arg0: com.sun.tools.classfile.SourceID_attribute, arg1: P): R
+                visitStackMap(arg0: com.sun.tools.classfile.StackMap_attribute, arg1: P): R
+                visitStackMapTable(arg0: com.sun.tools.classfile.StackMapTable_attribute, arg1: P): R
+                visitSynthetic(arg0: com.sun.tools.classfile.Synthetic_attribute, arg1: P): R
             }
             abstract class Attribute {
                 public static AnnotationDefault: java.lang.String
@@ -29882,13 +29882,13 @@ declare namespace com {
                 constructor(arg0: java.lang.String)
             }
             interface StackMapTable_attribute$stack_map_frame$Visitor<R, P> {
-                public visit_same_frame(arg0: com.sun.tools.classfile.StackMapTable_attribute$same_frame, arg1: P): R
-                public visit_same_locals_1_stack_item_frame(arg0: com.sun.tools.classfile.StackMapTable_attribute$same_locals_1_stack_item_frame, arg1: P): R
-                public visit_same_locals_1_stack_item_frame_extended(arg0: com.sun.tools.classfile.StackMapTable_attribute$same_locals_1_stack_item_frame_extended, arg1: P): R
-                public visit_chop_frame(arg0: com.sun.tools.classfile.StackMapTable_attribute$chop_frame, arg1: P): R
-                public visit_same_frame_extended(arg0: com.sun.tools.classfile.StackMapTable_attribute$same_frame_extended, arg1: P): R
-                public visit_append_frame(arg0: com.sun.tools.classfile.StackMapTable_attribute$append_frame, arg1: P): R
-                public visit_full_frame(arg0: com.sun.tools.classfile.StackMapTable_attribute$full_frame, arg1: P): R
+                visit_same_frame(arg0: com.sun.tools.classfile.StackMapTable_attribute$same_frame, arg1: P): R
+                visit_same_locals_1_stack_item_frame(arg0: com.sun.tools.classfile.StackMapTable_attribute$same_locals_1_stack_item_frame, arg1: P): R
+                visit_same_locals_1_stack_item_frame_extended(arg0: com.sun.tools.classfile.StackMapTable_attribute$same_locals_1_stack_item_frame_extended, arg1: P): R
+                visit_chop_frame(arg0: com.sun.tools.classfile.StackMapTable_attribute$chop_frame, arg1: P): R
+                visit_same_frame_extended(arg0: com.sun.tools.classfile.StackMapTable_attribute$same_frame_extended, arg1: P): R
+                visit_append_frame(arg0: com.sun.tools.classfile.StackMapTable_attribute$append_frame, arg1: P): R
+                visit_full_frame(arg0: com.sun.tools.classfile.StackMapTable_attribute$full_frame, arg1: P): R
             }
             abstract class StackMapTable_attribute$stack_map_frame {
                 public frame_type: int
@@ -30015,17 +30015,17 @@ declare namespace com {
                 valueOf<T>(...args: any[]): any
             }
             interface Instruction$KindVisitor<R, P> {
-                public visitNoOperands(arg0: com.sun.tools.classfile.Instruction, arg1: P): R
-                public visitArrayType(arg0: com.sun.tools.classfile.Instruction, arg1: com.sun.tools.classfile.Instruction$TypeKind, arg2: P): R
-                public visitBranch(arg0: com.sun.tools.classfile.Instruction, arg1: int, arg2: P): R
-                public visitConstantPoolRef(arg0: com.sun.tools.classfile.Instruction, arg1: int, arg2: P): R
-                public visitConstantPoolRefAndValue(arg0: com.sun.tools.classfile.Instruction, arg1: int, arg2: int, arg3: P): R
-                public visitLocal(arg0: com.sun.tools.classfile.Instruction, arg1: int, arg2: P): R
-                public visitLocalAndValue(arg0: com.sun.tools.classfile.Instruction, arg1: int, arg2: int, arg3: P): R
-                public visitLookupSwitch(arg0: com.sun.tools.classfile.Instruction, arg1: int, arg2: int, arg3: int[], arg4: int[], arg5: P): R
-                public visitTableSwitch(arg0: com.sun.tools.classfile.Instruction, arg1: int, arg2: int, arg3: int, arg4: int[], arg5: P): R
-                public visitValue(arg0: com.sun.tools.classfile.Instruction, arg1: int, arg2: P): R
-                public visitUnknown(arg0: com.sun.tools.classfile.Instruction, arg1: P): R
+                visitNoOperands(arg0: com.sun.tools.classfile.Instruction, arg1: P): R
+                visitArrayType(arg0: com.sun.tools.classfile.Instruction, arg1: com.sun.tools.classfile.Instruction$TypeKind, arg2: P): R
+                visitBranch(arg0: com.sun.tools.classfile.Instruction, arg1: int, arg2: P): R
+                visitConstantPoolRef(arg0: com.sun.tools.classfile.Instruction, arg1: int, arg2: P): R
+                visitConstantPoolRefAndValue(arg0: com.sun.tools.classfile.Instruction, arg1: int, arg2: int, arg3: P): R
+                visitLocal(arg0: com.sun.tools.classfile.Instruction, arg1: int, arg2: P): R
+                visitLocalAndValue(arg0: com.sun.tools.classfile.Instruction, arg1: int, arg2: int, arg3: P): R
+                visitLookupSwitch(arg0: com.sun.tools.classfile.Instruction, arg1: int, arg2: int, arg3: int[], arg4: int[], arg5: P): R
+                visitTableSwitch(arg0: com.sun.tools.classfile.Instruction, arg1: int, arg2: int, arg3: int, arg4: int[], arg5: P): R
+                visitValue(arg0: com.sun.tools.classfile.Instruction, arg1: int, arg2: P): R
+                visitUnknown(arg0: com.sun.tools.classfile.Instruction, arg1: P): R
             }
             class Instruction$TypeKind extends java.lang.Enum<com.sun.tools.classfile.Instruction$TypeKind> {
                 public static T_BOOLEAN: com.sun.tools.classfile.Instruction$TypeKind
@@ -30144,13 +30144,13 @@ declare namespace com {
                 toString<T>(...args: any[]): any
             }
             interface Type$Visitor<R, P> {
-                public visitSimpleType(arg0: com.sun.tools.classfile.Type$SimpleType, arg1: P): R
-                public visitArrayType(arg0: com.sun.tools.classfile.Type$ArrayType, arg1: P): R
-                public visitMethodType(arg0: com.sun.tools.classfile.Type$MethodType, arg1: P): R
-                public visitClassSigType(arg0: com.sun.tools.classfile.Type$ClassSigType, arg1: P): R
-                public visitClassType(arg0: com.sun.tools.classfile.Type$ClassType, arg1: P): R
-                public visitTypeParamType(arg0: com.sun.tools.classfile.Type$TypeParamType, arg1: P): R
-                public visitWildcardType(arg0: com.sun.tools.classfile.Type$WildcardType, arg1: P): R
+                visitSimpleType(arg0: com.sun.tools.classfile.Type$SimpleType, arg1: P): R
+                visitArrayType(arg0: com.sun.tools.classfile.Type$ArrayType, arg1: P): R
+                visitMethodType(arg0: com.sun.tools.classfile.Type$MethodType, arg1: P): R
+                visitClassSigType(arg0: com.sun.tools.classfile.Type$ClassSigType, arg1: P): R
+                visitClassType(arg0: com.sun.tools.classfile.Type$ClassType, arg1: P): R
+                visitTypeParamType(arg0: com.sun.tools.classfile.Type$TypeParamType, arg1: P): R
+                visitWildcardType(arg0: com.sun.tools.classfile.Type$WildcardType, arg1: P): R
             }
             class Type$SimpleType extends com.sun.tools.classfile.Type {
                 public name: java.lang.String
@@ -30600,19 +30600,19 @@ declare namespace com {
                 get<T>(...args: any[]): any
             }
             interface Dependency$Filter {
-                public accepts(arg0: com.sun.tools.classfile.Dependency): boolean
+                accepts(arg0: com.sun.tools.classfile.Dependency): boolean
             }
             interface Dependency$Finder {
-                public findDependencies(arg0: com.sun.tools.classfile.ClassFile): java.lang.Iterable<com.sun.tools.classfile.Dependency>
+                findDependencies(arg0: com.sun.tools.classfile.ClassFile): java.lang.Iterable<com.sun.tools.classfile.Dependency>
             }
             interface Dependency$Location {
-                public getName(): java.lang.String
-                public getClassName(): java.lang.String
-                public getPackageName(): java.lang.String
+                getName(): java.lang.String
+                getClassName(): java.lang.String
+                getPackageName(): java.lang.String
             }
             interface Dependency {
-                public getOrigin(): com.sun.tools.classfile.Dependency$Location
-                public getTarget(): com.sun.tools.classfile.Dependency$Location
+                getOrigin(): com.sun.tools.classfile.Dependency$Location
+                getTarget(): com.sun.tools.classfile.Dependency$Location
             }
             class Dependencies$ClassFileNotFoundException extends java.lang.Exception {
                 public className: java.lang.String
@@ -30622,10 +30622,10 @@ declare namespace com {
                 public constructor(arg0: java.lang.Throwable)
             }
             interface Dependencies$ClassFileReader {
-                public getClassFile(arg0: java.lang.String): com.sun.tools.classfile.ClassFile
+                getClassFile(arg0: java.lang.String): com.sun.tools.classfile.ClassFile
             }
             interface Dependencies$Recorder {
-                public addDependency(arg0: com.sun.tools.classfile.Dependency): void
+                addDependency(arg0: com.sun.tools.classfile.Dependency): void
             }
             class Dependencies$1 implements com.sun.tools.classfile.Dependencies$Recorder {
                 val$results: java.util.Set
@@ -30720,10 +30720,10 @@ declare namespace com {
                 findAllDependencies<T>(...args: any[]): any
             }
             interface ReferenceFinder$Filter {
-                public accept(arg0: com.sun.tools.classfile.ConstantPool, arg1: com.sun.tools.classfile.ConstantPool$CPRefInfo): boolean
+                accept(arg0: com.sun.tools.classfile.ConstantPool, arg1: com.sun.tools.classfile.ConstantPool$CPRefInfo): boolean
             }
             interface ReferenceFinder$Visitor {
-                public visit(arg0: com.sun.tools.classfile.ClassFile, arg1: com.sun.tools.classfile.Method, arg2: java.util.List<com.sun.tools.classfile.ConstantPool$CPRefInfo>): void
+                visit(arg0: com.sun.tools.classfile.ClassFile, arg1: com.sun.tools.classfile.Method, arg2: java.util.List<com.sun.tools.classfile.ConstantPool$CPRefInfo>): void
             }
             class ReferenceFinder$1 implements com.sun.tools.classfile.ConstantPool$Visitor<java.lang.Boolean, com.sun.tools.classfile.ConstantPool> {
                 this$0: com.sun.tools.classfile.ReferenceFinder
@@ -30897,7 +30897,7 @@ declare namespace com {
                 visitString<T>(...args: any[]): any
                 visitUtf8<T>(...args: any[]): any
             }
-
+            
          }
          namespace jdeps {
             class Profile$PackageToProfile {
@@ -30942,7 +30942,7 @@ declare namespace com {
                 static access$000(): java.util.List
             }
             interface Archive$Visitor {
-                public visit(arg0: com.sun.tools.classfile.Dependency$Location, arg1: com.sun.tools.classfile.Dependency$Location): void
+                visit(arg0: com.sun.tools.classfile.Dependency$Location, arg1: com.sun.tools.classfile.Dependency$Location): void
             }
             class Archive {
                 protected deps: java.util.Map<com.sun.tools.classfile.Dependency$Location, java.util.Set<com.sun.tools.classfile.Dependency$Location>>
@@ -31046,10 +31046,10 @@ declare namespace com {
                 valueOf<T>(...args: any[]): any
             }
             interface Analyzer$Filter {
-                public accepts(arg0: com.sun.tools.classfile.Dependency$Location, arg1: com.sun.tools.jdeps.Archive, arg2: com.sun.tools.classfile.Dependency$Location, arg3: com.sun.tools.jdeps.Archive): boolean
+                accepts(arg0: com.sun.tools.classfile.Dependency$Location, arg1: com.sun.tools.jdeps.Archive, arg2: com.sun.tools.classfile.Dependency$Location, arg3: com.sun.tools.jdeps.Archive): boolean
             }
             interface Analyzer$Visitor {
-                public visitDependence(arg0: java.lang.String, arg1: com.sun.tools.jdeps.Archive, arg2: java.lang.String, arg3: com.sun.tools.jdeps.Archive): void
+                visitDependence(arg0: java.lang.String, arg1: com.sun.tools.jdeps.Archive, arg2: java.lang.String, arg3: com.sun.tools.jdeps.Archive): void
             }
             class Analyzer$ArchiveDeps implements com.sun.tools.jdeps.Archive$Visitor {
                 protected archive: com.sun.tools.jdeps.Archive
@@ -31290,9 +31290,9 @@ declare namespace com {
                    public constructor()
                    protected getContents(): java.lang.Object[][]
                }
-
+               
             }
-
+            
          }
          namespace javah {
             class Util$Exit extends java.lang.Error {
@@ -31347,12 +31347,12 @@ declare namespace com {
                 qualifiedTypeName(arg0: javax.lang.model.type.TypeMirror): java.lang.String
             }
             interface NativeHeaderTool$NativeHeaderTask extends java.util.concurrent.Callable<java.lang.Boolean> {
-                public setLocale(arg0: java.util.Locale): void
+                setLocale(arg0: java.util.Locale): void
                 call<T>(...args: any[]): any
             }
             interface NativeHeaderTool extends javax.tools.Tool , javax.tools.OptionChecker {
-                public getTask(arg0: java.io.Writer, arg1: javax.tools.JavaFileManager, arg2: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>, arg3: java.lang.Iterable<java.lang.String>, arg4: java.lang.Iterable<java.lang.String>): com.sun.tools.javah.NativeHeaderTool$NativeHeaderTask
-                public getStandardFileManager(arg0: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>, arg1: java.util.Locale, arg2: java.nio.charset.Charset): javax.tools.StandardJavaFileManager
+                getTask(arg0: java.io.Writer, arg1: javax.tools.JavaFileManager, arg2: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>, arg3: java.lang.Iterable<java.lang.String>, arg4: java.lang.Iterable<java.lang.String>): com.sun.tools.javah.NativeHeaderTool$NativeHeaderTask
+                getStandardFileManager(arg0: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>, arg1: java.util.Locale, arg2: java.nio.charset.Charset): javax.tools.StandardJavaFileManager
             }
             class Mangle$Type {
                 public static CLASS: int
@@ -31652,9 +31652,9 @@ declare namespace com {
                    public constructor()
                    protected getContents(): java.lang.Object[][]
                }
-
+               
             }
-
+            
          }
          namespace javadoc {
             class DocEnv {
@@ -31804,7 +31804,7 @@ declare namespace com {
                 public checkModifier(arg0: int): boolean
             }
             interface JavaScriptScanner$Reporter {
-                public report(): void
+                report(): void
             }
             class JavaScriptScanner$ParseException extends java.lang.Exception {
                 constructor(arg0: java.lang.String)
@@ -32291,7 +32291,7 @@ declare namespace com {
                    public setLocale(arg0: java.util.Locale): void
                    call<T>(...args: any[]): any
                }
-
+               
             }
             class WildcardTypeImpl extends com.sun.tools.javadoc.AbstractTypeImpl implements com.sun.javadoc.WildcardType {
                 constructor(arg0: com.sun.tools.javadoc.DocEnv, arg1: com.sun.tools.javac.code.Type$WildcardType)
@@ -32835,9 +32835,9 @@ declare namespace com {
                    public constructor()
                    protected getContents(): java.lang.Object[][]
                }
-
+               
             }
-
+            
          }
          namespace doclint {
             class DocLint$BadArgs extends java.lang.Exception {
@@ -33522,9 +33522,9 @@ declare namespace com {
                    public constructor()
                    protected getContents(): java.lang.Object[][]
                }
-
+               
             }
-
+            
          }
          namespace internal {
             namespace xjc {
@@ -33561,13 +33561,13 @@ declare namespace com {
                             public markAsAcknowledged(): void
                         }
                         interface BIDeclaration {
-                            public setParent(arg0: com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BindInfo): void
-                            public getName(): javax.xml.namespace.QName
-                            public getLocation(): org.xml.sax.Locator
-                            public markAsAcknowledged(): void
-                            public isAcknowledged(): boolean
-                            public onSetOwner(): void
-                            public getChildren(): java.util.Collection<com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIDeclaration>
+                            setParent(arg0: com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BindInfo): void
+                            getName(): javax.xml.namespace.QName
+                            getLocation(): org.xml.sax.Locator
+                            markAsAcknowledged(): void
+                            isAcknowledged(): boolean
+                            onSetOwner(): void
+                            getChildren(): java.util.Collection<com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIDeclaration>
                         }
                         class BIEnum$BIEnumMember2 extends com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIEnumMember {
                             value: java.lang.String
@@ -34012,7 +34012,7 @@ declare namespace com {
                             static access$100(arg0: com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.AnnotationParserFactoryImpl): javax.xml.validation.ValidatorHandler
                             static access$102(arg0: com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.AnnotationParserFactoryImpl, arg1: javax.xml.validation.ValidatorHandler): javax.xml.validation.ValidatorHandler
                         }
-
+                        
                      }
                      namespace parser {
                         class XMLSchemaInternalizationLogic$ReferenceFinder extends com.sun.tools.internal.xjc.reader.internalizer.AbstractReferenceFinderImpl {
@@ -34076,7 +34076,7 @@ declare namespace com {
                             public endElement(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void
                             public setDocumentLocator(arg0: org.xml.sax.Locator): void
                         }
-
+                        
                      }
                      namespace ct {
                         class ComplexTypeFieldBuilder extends com.sun.tools.internal.xjc.reader.xmlschema.BindingComponent {
@@ -34182,7 +34182,7 @@ declare namespace com {
                             public isApplicable(arg0: com.sun.xml.internal.xsom.XSComplexType): boolean
                             public build(arg0: com.sun.xml.internal.xsom.XSComplexType): void
                         }
-
+                        
                      }
                      class BGMBuilder$1 extends com.sun.xml.internal.xsom.util.XSFinder {
                          this$0: com.sun.tools.internal.xjc.reader.xmlschema.BGMBuilder
@@ -34667,7 +34667,7 @@ declare namespace com {
                          complexType<T>(...args: any[]): any
                          elementDecl<T>(...args: any[]): any
                      }
-
+                     
                   }
                   namespace dtd {
                      namespace bindinfo {
@@ -34720,8 +34720,8 @@ declare namespace com {
                             public interfaces(): java.util.Collection<com.sun.tools.internal.xjc.reader.dtd.bindinfo.BIInterface>
                         }
                         interface BIConversion {
-                            public name(): java.lang.String
-                            public getTransducer(): com.sun.tools.internal.xjc.model.TypeUse
+                            name(): java.lang.String
+                            getTransducer(): com.sun.tools.internal.xjc.model.TypeUse
                         }
                         class BIElement {
                             parent: com.sun.tools.internal.xjc.reader.dtd.bindinfo.BindInfo
@@ -34779,7 +34779,7 @@ declare namespace com {
                             public getTransducer(): com.sun.tools.internal.xjc.model.TypeUse
                             create<T>(...args: any[]): any
                         }
-
+                        
                      }
                      class Term$1 extends com.sun.tools.internal.xjc.reader.dtd.Term {
                          constructor()
@@ -34830,7 +34830,7 @@ declare namespace com {
                          public implement(arg0: com.sun.codemodel.internal.JClass): void
                      }
                      interface TDTDReader$InterfaceAcceptor {
-                         public implement(arg0: com.sun.codemodel.internal.JClass): void
+                         implement(arg0: com.sun.codemodel.internal.JClass): void
                      }
                      class TDTDReader extends com.sun.xml.internal.dtdparser.DTDHandlerBase {
                          bindInfo: com.sun.tools.internal.xjc.reader.dtd.bindinfo.BindInfo
@@ -34896,16 +34896,16 @@ declare namespace com {
                          constructor()
                          static format(arg0: java.lang.String, ...arg1: java.lang.Object[]): java.lang.String
                      }
-
+                     
                   }
                   namespace internalizer {
                      interface InternalizationLogic {
-                         public createExternalReferenceFinder(arg0: com.sun.tools.internal.xjc.reader.internalizer.DOMForest): org.xml.sax.helpers.XMLFilterImpl
-                         public checkIfValidTargetNode(arg0: com.sun.tools.internal.xjc.reader.internalizer.DOMForest, arg1: org.w3c.dom.Element, arg2: org.w3c.dom.Element): boolean
-                         public refineTarget(arg0: org.w3c.dom.Element): org.w3c.dom.Element
+                         createExternalReferenceFinder(arg0: com.sun.tools.internal.xjc.reader.internalizer.DOMForest): org.xml.sax.helpers.XMLFilterImpl
+                         checkIfValidTargetNode(arg0: com.sun.tools.internal.xjc.reader.internalizer.DOMForest, arg1: org.w3c.dom.Element, arg2: org.w3c.dom.Element): boolean
+                         refineTarget(arg0: org.w3c.dom.Element): org.w3c.dom.Element
                      }
                      interface DOMForest$Handler extends org.xml.sax.ContentHandler {
-                         public getDocument(): org.w3c.dom.Document
+                         getDocument(): org.w3c.dom.Document
                      }
                      abstract class DOMForest$HandlerImpl extends org.xml.sax.helpers.XMLFilterImpl implements com.sun.tools.internal.xjc.reader.internalizer.DOMForest$Handler {
                          constructor(arg0: com.sun.tools.internal.xjc.reader.internalizer.DOMForest$1)
@@ -35069,7 +35069,7 @@ declare namespace com {
                          public startPrefixMapping(arg0: java.lang.String, arg1: java.lang.String): void
                          public startElement(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: org.xml.sax.Attributes): void
                      }
-
+                     
                   }
                   class RawTypeSet$Mode extends java.lang.Enum<com.sun.tools.internal.xjc.reader.RawTypeSet$Mode> {
                       public static SHOULD_BE_TYPEREF: com.sun.tools.internal.xjc.reader.RawTypeSet$Mode
@@ -35141,9 +35141,9 @@ declare namespace com {
                          public iterator(): java.util.Iterator<com.sun.tools.internal.xjc.reader.gbind.Element>
                      }
                      interface ElementSet extends java.lang.Iterable<com.sun.tools.internal.xjc.reader.gbind.Element> {
-                         public static EMPTY_SET: com.sun.tools.internal.xjc.reader.gbind.ElementSet
-                         public addNext(arg0: com.sun.tools.internal.xjc.reader.gbind.Element): void
-                         public contains(arg0: com.sun.tools.internal.xjc.reader.gbind.ElementSet): boolean
+                         EMPTY_SET: com.sun.tools.internal.xjc.reader.gbind.ElementSet
+                         addNext(arg0: com.sun.tools.internal.xjc.reader.gbind.Element): void
+                         contains(arg0: com.sun.tools.internal.xjc.reader.gbind.ElementSet): boolean
                      }
                      class ConnectedComponent implements java.lang.Iterable<com.sun.tools.internal.xjc.reader.gbind.Element> {
                          isRequired<T>(...args: any[]): any
@@ -35200,7 +35200,7 @@ declare namespace com {
                          buildDAG(arg0: com.sun.tools.internal.xjc.reader.gbind.ElementSet): void
                          toString<T>(...args: any[]): any
                      }
-
+                     
                   }
                   namespace relaxng {
                      class TypeUseBinder implements com.sun.xml.internal.rngom.digested.DPatternVisitor<com.sun.tools.internal.xjc.model.TypeUse> {
@@ -35314,7 +35314,7 @@ declare namespace com {
                          public static values(): com.sun.tools.internal.xjc.reader.relaxng.BindStyle[]
                          valueOf<T>(...args: any[]): any
                      }
-
+                     
                   }
                   abstract class AbstractExtensionBindingChecker extends com.sun.tools.internal.xjc.util.SubtreeCutter {
                       protected nsSupport: org.xml.sax.helpers.NamespaceSupport
@@ -35392,7 +35392,7 @@ declare namespace com {
                       public static EXPECTED_CONTENT_TYPES: java.lang.String
                       public constructor()
                   }
-
+                  
                }
                namespace runtime {
                   class ZeroOneBooleanAdapter extends javax.xml.bind.annotation.adapters.XmlAdapter<java.lang.String, java.lang.Boolean> {
@@ -35409,7 +35409,7 @@ declare namespace com {
                       public constructor()
                       createContext<T>(...args: any[]): any
                   }
-
+                  
                }
                namespace util {
                   class CodeModelClassFactory {
@@ -35512,13 +35512,13 @@ declare namespace com {
                       getElement<T>(...args: any[]): any
                       public static getElements(arg0: org.w3c.dom.NodeList): org.w3c.dom.Element[]
                   }
-
+                  
                }
                namespace generator {
                   namespace bean {
                      namespace field {
                         interface FieldRenderer {
-                            public generate(arg0: com.sun.tools.internal.xjc.generator.bean.ClassOutlineImpl, arg1: com.sun.tools.internal.xjc.model.CPropertyInfo): com.sun.tools.internal.xjc.outline.FieldOutline
+                            generate(arg0: com.sun.tools.internal.xjc.generator.bean.ClassOutlineImpl, arg1: com.sun.tools.internal.xjc.model.CPropertyInfo): com.sun.tools.internal.xjc.outline.FieldOutline
                         }
                         class FieldRendererFactory {
                             public constructor()
@@ -35763,7 +35763,7 @@ declare namespace com {
                             static access$000(arg0: com.sun.tools.internal.xjc.generator.bean.field.ArrayField): com.sun.codemodel.internal.JMethod
                             static access$100(arg0: com.sun.tools.internal.xjc.generator.bean.field.ArrayField): com.sun.codemodel.internal.JMethod
                         }
-
+                        
                      }
                      class ImplStructureStrategy$1$1 extends com.sun.tools.internal.xjc.generator.bean.MethodWriter {
                          val$target: com.sun.tools.internal.xjc.generator.bean.ClassOutlineImpl
@@ -35949,27 +35949,27 @@ declare namespace com {
                          populate<T>(...args: any[]): any
                          public getObjectFactory(): com.sun.codemodel.internal.JDefinedClass
                      }
-
+                     
                   }
                   namespace annotation {
                      namespace spec {
                         interface XmlTypeWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlType> {
-                            public name(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlTypeWriter
-                            public namespace(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlTypeWriter
-                            public propOrder(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlTypeWriter
+                            name(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlTypeWriter
+                            namespace(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlTypeWriter
+                            propOrder(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlTypeWriter
                             factoryClass<T>(...args: any[]): any
-                            public factoryMethod(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlTypeWriter
+                            factoryMethod(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlTypeWriter
                         }
                         interface XmlElementsWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlElements> {
-                            public value(): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementWriter
+                            value(): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementWriter
                         }
                         interface XmlElementWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlElement> {
-                            public name(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementWriter
+                            name(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementWriter
                             type<T>(...args: any[]): any
-                            public namespace(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementWriter
-                            public defaultValue(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementWriter
-                            public required(arg0: boolean): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementWriter
-                            public nillable(arg0: boolean): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementWriter
+                            namespace(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementWriter
+                            defaultValue(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementWriter
+                            required(arg0: boolean): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementWriter
+                            nillable(arg0: boolean): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementWriter
                         }
                         interface XmlValueWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlValue> {
                         }
@@ -35979,34 +35979,34 @@ declare namespace com {
                             value<T>(...args: any[]): any
                         }
                         interface XmlSchemaWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlSchema> {
-                            public location(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlSchemaWriter
-                            public namespace(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlSchemaWriter
-                            public xmlns(): com.sun.tools.internal.xjc.generator.annotation.spec.XmlNsWriter
-                            public elementFormDefault(arg0: javax.xml.bind.annotation.XmlNsForm): com.sun.tools.internal.xjc.generator.annotation.spec.XmlSchemaWriter
-                            public attributeFormDefault(arg0: javax.xml.bind.annotation.XmlNsForm): com.sun.tools.internal.xjc.generator.annotation.spec.XmlSchemaWriter
+                            location(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlSchemaWriter
+                            namespace(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlSchemaWriter
+                            xmlns(): com.sun.tools.internal.xjc.generator.annotation.spec.XmlNsWriter
+                            elementFormDefault(arg0: javax.xml.bind.annotation.XmlNsForm): com.sun.tools.internal.xjc.generator.annotation.spec.XmlSchemaWriter
+                            attributeFormDefault(arg0: javax.xml.bind.annotation.XmlNsForm): com.sun.tools.internal.xjc.generator.annotation.spec.XmlSchemaWriter
                         }
                         interface XmlNsWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlNs> {
-                            public prefix(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlNsWriter
-                            public namespaceURI(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlNsWriter
+                            prefix(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlNsWriter
+                            namespaceURI(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlNsWriter
                         }
                         interface XmlSchemaTypesWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlSchemaTypes> {
-                            public value(): com.sun.tools.internal.xjc.generator.annotation.spec.XmlSchemaTypeWriter
+                            value(): com.sun.tools.internal.xjc.generator.annotation.spec.XmlSchemaTypeWriter
                         }
                         interface XmlSchemaTypeWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlSchemaType> {
-                            public name(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlSchemaTypeWriter
+                            name(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlSchemaTypeWriter
                             type<T>(...args: any[]): any
-                            public namespace(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlSchemaTypeWriter
+                            namespace(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlSchemaTypeWriter
                         }
                         interface XmlRootElementWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlRootElement> {
-                            public name(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlRootElementWriter
-                            public namespace(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlRootElementWriter
+                            name(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlRootElementWriter
+                            namespace(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlRootElementWriter
                         }
                         interface XmlRegistryWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlRegistry> {
                         }
                         interface XmlMixedWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlMixed> {
                         }
                         interface XmlMimeTypeWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlMimeType> {
-                            public value(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlMimeTypeWriter
+                            value(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlMimeTypeWriter
                         }
                         interface XmlListWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlList> {
                         }
@@ -36024,53 +36024,53 @@ declare namespace com {
                             value<T>(...args: any[]): any
                         }
                         interface XmlEnumValueWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlEnumValue> {
-                            public value(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlEnumValueWriter
+                            value(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlEnumValueWriter
                         }
                         interface XmlElementWrapperWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlElementWrapper> {
-                            public name(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementWrapperWriter
-                            public namespace(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementWrapperWriter
-                            public required(arg0: boolean): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementWrapperWriter
-                            public nillable(arg0: boolean): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementWrapperWriter
+                            name(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementWrapperWriter
+                            namespace(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementWrapperWriter
+                            required(arg0: boolean): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementWrapperWriter
+                            nillable(arg0: boolean): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementWrapperWriter
                         }
                         interface XmlElementRefsWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlElementRefs> {
-                            public value(): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementRefWriter
+                            value(): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementRefWriter
                         }
                         interface XmlElementRefWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlElementRef> {
-                            public name(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementRefWriter
+                            name(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementRefWriter
                             type<T>(...args: any[]): any
-                            public namespace(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementRefWriter
-                            public required(arg0: boolean): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementRefWriter
+                            namespace(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementRefWriter
+                            required(arg0: boolean): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementRefWriter
                         }
                         interface XmlElementDeclWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlElementDecl> {
-                            public name(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementDeclWriter
+                            name(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementDeclWriter
                             scope<T>(...args: any[]): any
-                            public namespace(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementDeclWriter
-                            public defaultValue(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementDeclWriter
-                            public substitutionHeadNamespace(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementDeclWriter
-                            public substitutionHeadName(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementDeclWriter
+                            namespace(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementDeclWriter
+                            defaultValue(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementDeclWriter
+                            substitutionHeadNamespace(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementDeclWriter
+                            substitutionHeadName(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlElementDeclWriter
                         }
                         interface XmlAttributeWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlAttribute> {
-                            public name(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlAttributeWriter
-                            public namespace(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlAttributeWriter
-                            public required(arg0: boolean): com.sun.tools.internal.xjc.generator.annotation.spec.XmlAttributeWriter
+                            name(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlAttributeWriter
+                            namespace(arg0: java.lang.String): com.sun.tools.internal.xjc.generator.annotation.spec.XmlAttributeWriter
+                            required(arg0: boolean): com.sun.tools.internal.xjc.generator.annotation.spec.XmlAttributeWriter
                         }
                         interface XmlAttachmentRefWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlAttachmentRef> {
                         }
                         interface XmlAnyElementWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlAnyElement> {
                             value<T>(...args: any[]): any
-                            public lax(arg0: boolean): com.sun.tools.internal.xjc.generator.annotation.spec.XmlAnyElementWriter
+                            lax(arg0: boolean): com.sun.tools.internal.xjc.generator.annotation.spec.XmlAnyElementWriter
                         }
                         interface XmlAnyAttributeWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlAnyAttribute> {
                         }
                         interface XmlAccessorTypeWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlAccessorType> {
-                            public value(arg0: javax.xml.bind.annotation.XmlAccessType): com.sun.tools.internal.xjc.generator.annotation.spec.XmlAccessorTypeWriter
+                            value(arg0: javax.xml.bind.annotation.XmlAccessType): com.sun.tools.internal.xjc.generator.annotation.spec.XmlAccessorTypeWriter
                         }
                         interface XmlAccessorOrderWriter extends com.sun.codemodel.internal.JAnnotationWriter<javax.xml.bind.annotation.XmlAccessorOrder> {
-                            public value(arg0: javax.xml.bind.annotation.XmlAccessOrder): com.sun.tools.internal.xjc.generator.annotation.spec.XmlAccessorOrderWriter
+                            value(arg0: javax.xml.bind.annotation.XmlAccessOrder): com.sun.tools.internal.xjc.generator.annotation.spec.XmlAccessorOrderWriter
                         }
-
+                        
                      }
-
+                     
                   }
                   namespace util {
                      class WhitespaceNormalizer$1 extends com.sun.tools.internal.xjc.generator.util.WhitespaceNormalizer {
@@ -36099,15 +36099,15 @@ declare namespace com {
                          public get(arg0: boolean): com.sun.codemodel.internal.JBlock
                      }
                      interface BlockReference {
-                         public get(arg0: boolean): com.sun.codemodel.internal.JBlock
+                         get(arg0: boolean): com.sun.codemodel.internal.JBlock
                      }
                      class ExistingBlockReference implements com.sun.tools.internal.xjc.generator.util.BlockReference {
                          public constructor(arg0: com.sun.codemodel.internal.JBlock)
                          public get(arg0: boolean): com.sun.codemodel.internal.JBlock
                      }
-
+                     
                   }
-
+                  
                }
                namespace api {
                   namespace util {
@@ -36133,16 +36133,16 @@ declare namespace com {
                          public loadClass(arg0: java.lang.String): java.lang.Class
                          protected findClass(arg0: java.lang.String): java.lang.Class
                      }
-
+                     
                   }
                   interface ErrorListener extends com.sun.xml.internal.bind.api.ErrorListener {
-                      public error(arg0: org.xml.sax.SAXParseException): void
-                      public fatalError(arg0: org.xml.sax.SAXParseException): void
-                      public warning(arg0: org.xml.sax.SAXParseException): void
-                      public info(arg0: org.xml.sax.SAXParseException): void
+                      error(arg0: org.xml.sax.SAXParseException): void
+                      fatalError(arg0: org.xml.sax.SAXParseException): void
+                      warning(arg0: org.xml.sax.SAXParseException): void
+                      info(arg0: org.xml.sax.SAXParseException): void
                   }
                   interface ClassNameAllocator {
-                      public assignClassName(arg0: java.lang.String, arg1: java.lang.String): java.lang.String
+                      assignClassName(arg0: java.lang.String, arg1: java.lang.String): java.lang.String
                   }
                   class SpecVersion extends java.lang.Enum<com.sun.tools.internal.xjc.api.SpecVersion> {
                       public static V2_0: com.sun.tools.internal.xjc.api.SpecVersion
@@ -36244,7 +36244,7 @@ declare namespace com {
                             public getType(): com.sun.tools.internal.xjc.api.TypeAndAnnotation
                             public calcDrilldown(): java.util.List<com.sun.tools.internal.xjc.api.Property>
                         }
-                        abstract class CElement> implements com.sun.tools.internal.xjc.api.Mapping {
+                        abstract class AbstractMappingImpl<InfoT extends com.sun.tools.internal.xjc.model.CElement> implements com.sun.tools.internal.xjc.api.Mapping {
                             protected parent: com.sun.tools.internal.xjc.api.impl.s2j.JAXBModelImpl
                             protected clazz: InfoT
                             protected constructor(arg0: com.sun.tools.internal.xjc.api.impl.s2j.JAXBModelImpl, arg1: InfoT)
@@ -36279,48 +36279,48 @@ declare namespace com {
                             public getTypeClass(): java.lang.String
                             public calcDrilldown(): java.util.List<com.sun.tools.internal.xjc.api.Property>
                         }
-
+                        
                      }
-
+                     
                   }
                   interface TypeAndAnnotation {
-                      public getTypeClass(): com.sun.codemodel.internal.JType
-                      public annotate(arg0: com.sun.codemodel.internal.JAnnotatable): void
-                      public equals(arg0: java.lang.Object): boolean
+                      getTypeClass(): com.sun.codemodel.internal.JType
+                      annotate(arg0: com.sun.codemodel.internal.JAnnotatable): void
+                      equals(arg0: java.lang.Object): boolean
                   }
                   interface SchemaCompiler {
-                      public getParserHandler(arg0: java.lang.String): org.xml.sax.ContentHandler
+                      getParserHandler(arg0: java.lang.String): org.xml.sax.ContentHandler
                       parseSchema<T>(...args: any[]): any
-                      public setTargetVersion(arg0: com.sun.tools.internal.xjc.api.SpecVersion): void
-                      public setErrorListener(arg0: com.sun.tools.internal.xjc.api.ErrorListener): void
-                      public setEntityResolver(arg0: org.xml.sax.EntityResolver): void
-                      public setDefaultPackageName(arg0: java.lang.String): void
-                      public forcePackageName(arg0: java.lang.String): void
-                      public setClassNameAllocator(arg0: com.sun.tools.internal.xjc.api.ClassNameAllocator): void
-                      public resetSchema(): void
-                      public bind(): com.sun.tools.internal.xjc.api.S2JJAXBModel
-                      public getOptions(): com.sun.tools.internal.xjc.Options
+                      setTargetVersion(arg0: com.sun.tools.internal.xjc.api.SpecVersion): void
+                      setErrorListener(arg0: com.sun.tools.internal.xjc.api.ErrorListener): void
+                      setEntityResolver(arg0: org.xml.sax.EntityResolver): void
+                      setDefaultPackageName(arg0: java.lang.String): void
+                      forcePackageName(arg0: java.lang.String): void
+                      setClassNameAllocator(arg0: com.sun.tools.internal.xjc.api.ClassNameAllocator): void
+                      resetSchema(): void
+                      bind(): com.sun.tools.internal.xjc.api.S2JJAXBModel
+                      getOptions(): com.sun.tools.internal.xjc.Options
                   }
                   interface S2JJAXBModel extends com.sun.tools.internal.xjc.api.JAXBModel {
-                      public get(arg0: javax.xml.namespace.QName): com.sun.tools.internal.xjc.api.Mapping
-                      public getAllObjectFactories(): java.util.List<com.sun.codemodel.internal.JClass>
-                      public getMappings(): java.util.Collection<com.sun.tools.internal.xjc.api.Mapping>
-                      public getJavaType(arg0: javax.xml.namespace.QName): com.sun.tools.internal.xjc.api.TypeAndAnnotation
-                      public generateCode(arg0: com.sun.tools.internal.xjc.Plugin[], arg1: com.sun.tools.internal.xjc.api.ErrorListener): com.sun.codemodel.internal.JCodeModel
+                      get(arg0: javax.xml.namespace.QName): com.sun.tools.internal.xjc.api.Mapping
+                      getAllObjectFactories(): java.util.List<com.sun.codemodel.internal.JClass>
+                      getMappings(): java.util.Collection<com.sun.tools.internal.xjc.api.Mapping>
+                      getJavaType(arg0: javax.xml.namespace.QName): com.sun.tools.internal.xjc.api.TypeAndAnnotation
+                      generateCode(arg0: com.sun.tools.internal.xjc.Plugin[], arg1: com.sun.tools.internal.xjc.api.ErrorListener): com.sun.codemodel.internal.JCodeModel
                   }
                   interface JAXBModel {
-                      public getClassList(): java.util.List<java.lang.String>
+                      getClassList(): java.util.List<java.lang.String>
                   }
                   interface Mapping {
-                      public getElement(): javax.xml.namespace.QName
-                      public getType(): com.sun.tools.internal.xjc.api.TypeAndAnnotation
-                      public getWrapperStyleDrilldown(): java.util.List<com.sun.tools.internal.xjc.api.Property>
+                      getElement(): javax.xml.namespace.QName
+                      getType(): com.sun.tools.internal.xjc.api.TypeAndAnnotation
+                      getWrapperStyleDrilldown(): java.util.List<com.sun.tools.internal.xjc.api.Property>
                   }
                   interface Property {
-                      public name(): java.lang.String
-                      public type(): com.sun.codemodel.internal.JType
-                      public elementName(): javax.xml.namespace.QName
-                      public rawName(): javax.xml.namespace.QName
+                      name(): java.lang.String
+                      type(): com.sun.codemodel.internal.JType
+                      elementName(): javax.xml.namespace.QName
+                      rawName(): javax.xml.namespace.QName
                   }
                   class XJC {
                       public constructor()
@@ -36335,14 +36335,14 @@ declare namespace com {
                       public hashCode(): int
                   }
                   interface JavaCompiler {
-                      public bind(arg0: java.util.Collection<com.sun.tools.internal.xjc.api.Reference>, arg1: java.util.Map<javax.xml.namespace.QName, com.sun.tools.internal.xjc.api.Reference>, arg2: java.lang.String, arg3: javax.annotation.processing.ProcessingEnvironment): com.sun.tools.internal.xjc.api.J2SJAXBModel
+                      bind(arg0: java.util.Collection<com.sun.tools.internal.xjc.api.Reference>, arg1: java.util.Map<javax.xml.namespace.QName, com.sun.tools.internal.xjc.api.Reference>, arg2: java.lang.String, arg3: javax.annotation.processing.ProcessingEnvironment): com.sun.tools.internal.xjc.api.J2SJAXBModel
                   }
                   interface J2SJAXBModel extends com.sun.tools.internal.xjc.api.JAXBModel {
-                      public getXmlTypeName(arg0: com.sun.tools.internal.xjc.api.Reference): javax.xml.namespace.QName
-                      public generateSchema(arg0: javax.xml.bind.SchemaOutputResolver, arg1: com.sun.tools.internal.xjc.api.ErrorListener): void
-                      public generateEpisodeFile(arg0: javax.xml.transform.Result): void
+                      getXmlTypeName(arg0: com.sun.tools.internal.xjc.api.Reference): javax.xml.namespace.QName
+                      generateSchema(arg0: javax.xml.bind.SchemaOutputResolver, arg1: com.sun.tools.internal.xjc.api.ErrorListener): void
+                      generateEpisodeFile(arg0: javax.xml.transform.Result): void
                   }
-
+                  
                }
                namespace addon {
                   namespace episode {
@@ -36375,7 +36375,7 @@ declare namespace com {
                          public build(arg0: com.sun.tools.internal.xjc.addon.episode.PluginImpl$OutlineAdaptor, arg1: com.sun.xml.internal.bind.v2.schemagen.episode.Bindings): void
                      }
                      interface PluginImpl$OutlineAdaptor$OutlineType$BindingsBuilder {
-                         public build(arg0: com.sun.tools.internal.xjc.addon.episode.PluginImpl$OutlineAdaptor, arg1: com.sun.xml.internal.bind.v2.schemagen.episode.Bindings): void
+                         build(arg0: com.sun.tools.internal.xjc.addon.episode.PluginImpl$OutlineAdaptor, arg1: com.sun.xml.internal.bind.v2.schemagen.episode.Bindings): void
                      }
                      class PluginImpl$OutlineAdaptor$OutlineType extends java.lang.Enum<com.sun.tools.internal.xjc.addon.episode.PluginImpl$OutlineAdaptor$OutlineType> {
                          public static CLASS: com.sun.tools.internal.xjc.addon.episode.PluginImpl$OutlineAdaptor$OutlineType
@@ -36405,7 +36405,7 @@ declare namespace com {
                          public run(arg0: com.sun.tools.internal.xjc.outline.Outline, arg1: com.sun.tools.internal.xjc.Options, arg2: org.xml.sax.ErrorHandler): boolean
                          static access$700(): com.sun.xml.internal.xsom.visitor.XSFunction
                      }
-
+                     
                   }
                   namespace sync {
                      class SynchronizedMethodAddOn extends com.sun.tools.internal.xjc.Plugin {
@@ -36415,7 +36415,7 @@ declare namespace com {
                          public parseArgument(arg0: com.sun.tools.internal.xjc.Options, arg1: java.lang.String[], arg2: int): int
                          public run(arg0: com.sun.tools.internal.xjc.outline.Outline, arg1: com.sun.tools.internal.xjc.Options, arg2: org.xml.sax.ErrorHandler): boolean
                      }
-
+                     
                   }
                   namespace locator {
                      class SourceLocationAddOn extends com.sun.tools.internal.xjc.Plugin {
@@ -36425,7 +36425,7 @@ declare namespace com {
                          public parseArgument(arg0: com.sun.tools.internal.xjc.Options, arg1: java.lang.String[], arg2: int): int
                          public run(arg0: com.sun.tools.internal.xjc.outline.Outline, arg1: com.sun.tools.internal.xjc.Options, arg2: org.xml.sax.ErrorHandler): boolean
                      }
-
+                     
                   }
                   namespace code_injector {
                      class PluginImpl extends com.sun.tools.internal.xjc.Plugin {
@@ -36440,7 +36440,7 @@ declare namespace com {
                          public static NS: java.lang.String
                          public constructor()
                      }
-
+                     
                   }
                   namespace at_generated {
                      class PluginImpl extends com.sun.tools.internal.xjc.Plugin {
@@ -36449,7 +36449,7 @@ declare namespace com {
                          public getUsage(): java.lang.String
                          public run(arg0: com.sun.tools.internal.xjc.outline.Outline, arg1: com.sun.tools.internal.xjc.Options, arg2: org.xml.sax.ErrorHandler): boolean
                      }
-
+                     
                   }
                   namespace accessors {
                      class PluginImpl extends com.sun.tools.internal.xjc.Plugin {
@@ -36459,9 +36459,9 @@ declare namespace com {
                          public parseArgument(arg0: com.sun.tools.internal.xjc.Options, arg1: java.lang.String[], arg2: int): int
                          public run(arg0: com.sun.tools.internal.xjc.outline.Outline, arg1: com.sun.tools.internal.xjc.Options, arg2: org.xml.sax.ErrorHandler): boolean
                      }
-
+                     
                   }
-
+                  
                }
                namespace writer {
                   class SignatureWriter$1 implements java.util.Comparator<com.sun.codemodel.internal.JPackage> {
@@ -36472,25 +36472,25 @@ declare namespace com {
                   class SignatureWriter {
                       public static write(arg0: com.sun.tools.internal.xjc.outline.Outline, arg1: java.io.Writer): void
                   }
-
+                  
                }
                namespace outline {
                   interface Outline {
-                      public getModel(): com.sun.tools.internal.xjc.model.Model
-                      public getCodeModel(): com.sun.codemodel.internal.JCodeModel
-                      public getField(arg0: com.sun.tools.internal.xjc.model.CPropertyInfo): com.sun.tools.internal.xjc.outline.FieldOutline
-                      public getPackageContext(arg0: com.sun.codemodel.internal.JPackage): com.sun.tools.internal.xjc.outline.PackageOutline
-                      public getClasses(): java.util.Collection<com.sun.tools.internal.xjc.outline.ClassOutline>
-                      public getClazz(arg0: com.sun.tools.internal.xjc.model.CClassInfo): com.sun.tools.internal.xjc.outline.ClassOutline
-                      public getElement(arg0: com.sun.tools.internal.xjc.model.CElementInfo): com.sun.tools.internal.xjc.outline.ElementOutline
-                      public getEnum(arg0: com.sun.tools.internal.xjc.model.CEnumLeafInfo): com.sun.tools.internal.xjc.outline.EnumOutline
-                      public getEnums(): java.util.Collection<com.sun.tools.internal.xjc.outline.EnumOutline>
-                      public getAllPackageContexts(): java.lang.Iterable<com.sun.tools.internal.xjc.outline.PackageOutline>
-                      public getClassFactory(): com.sun.tools.internal.xjc.util.CodeModelClassFactory
-                      public getErrorReceiver(): com.sun.tools.internal.xjc.ErrorReceiver
-                      public getContainer(arg0: com.sun.tools.internal.xjc.model.CClassInfoParent, arg1: com.sun.tools.internal.xjc.outline.Aspect): com.sun.codemodel.internal.JClassContainer
-                      public resolve(arg0: com.sun.tools.internal.xjc.model.CTypeRef, arg1: com.sun.tools.internal.xjc.outline.Aspect): com.sun.codemodel.internal.JType
-                      public addRuntime(arg0: java.lang.Class): com.sun.codemodel.internal.JClass
+                      getModel(): com.sun.tools.internal.xjc.model.Model
+                      getCodeModel(): com.sun.codemodel.internal.JCodeModel
+                      getField(arg0: com.sun.tools.internal.xjc.model.CPropertyInfo): com.sun.tools.internal.xjc.outline.FieldOutline
+                      getPackageContext(arg0: com.sun.codemodel.internal.JPackage): com.sun.tools.internal.xjc.outline.PackageOutline
+                      getClasses(): java.util.Collection<com.sun.tools.internal.xjc.outline.ClassOutline>
+                      getClazz(arg0: com.sun.tools.internal.xjc.model.CClassInfo): com.sun.tools.internal.xjc.outline.ClassOutline
+                      getElement(arg0: com.sun.tools.internal.xjc.model.CElementInfo): com.sun.tools.internal.xjc.outline.ElementOutline
+                      getEnum(arg0: com.sun.tools.internal.xjc.model.CEnumLeafInfo): com.sun.tools.internal.xjc.outline.EnumOutline
+                      getEnums(): java.util.Collection<com.sun.tools.internal.xjc.outline.EnumOutline>
+                      getAllPackageContexts(): java.lang.Iterable<com.sun.tools.internal.xjc.outline.PackageOutline>
+                      getClassFactory(): com.sun.tools.internal.xjc.util.CodeModelClassFactory
+                      getErrorReceiver(): com.sun.tools.internal.xjc.ErrorReceiver
+                      getContainer(arg0: com.sun.tools.internal.xjc.model.CClassInfoParent, arg1: com.sun.tools.internal.xjc.outline.Aspect): com.sun.codemodel.internal.JClassContainer
+                      resolve(arg0: com.sun.tools.internal.xjc.model.CTypeRef, arg1: com.sun.tools.internal.xjc.outline.Aspect): com.sun.codemodel.internal.JType
+                      addRuntime(arg0: java.lang.Class): com.sun.codemodel.internal.JClass
                   }
                   abstract class ClassOutline {
                       public target: com.sun.tools.internal.xjc.model.CClassInfo
@@ -36504,19 +36504,19 @@ declare namespace com {
                       public getSuperClass(): com.sun.tools.internal.xjc.outline.ClassOutline
                   }
                   interface FieldOutline {
-                      public parent(): com.sun.tools.internal.xjc.outline.ClassOutline
-                      public getPropertyInfo(): com.sun.tools.internal.xjc.model.CPropertyInfo
-                      public getRawType(): com.sun.codemodel.internal.JType
-                      public create(arg0: com.sun.codemodel.internal.JExpression): com.sun.tools.internal.xjc.outline.FieldAccessor
+                      parent(): com.sun.tools.internal.xjc.outline.ClassOutline
+                      getPropertyInfo(): com.sun.tools.internal.xjc.model.CPropertyInfo
+                      getRawType(): com.sun.codemodel.internal.JType
+                      create(arg0: com.sun.codemodel.internal.JExpression): com.sun.tools.internal.xjc.outline.FieldAccessor
                   }
                   interface PackageOutline {
-                      public _package(): com.sun.codemodel.internal.JPackage
-                      public objectFactory(): com.sun.codemodel.internal.JDefinedClass
-                      public objectFactoryGenerator(): com.sun.tools.internal.xjc.generator.bean.ObjectFactoryGenerator
-                      public getClasses(): java.util.Set<com.sun.tools.internal.xjc.outline.ClassOutline>
-                      public getMostUsedNamespaceURI(): java.lang.String
-                      public getElementFormDefault(): javax.xml.bind.annotation.XmlNsForm
-                      public getAttributeFormDefault(): javax.xml.bind.annotation.XmlNsForm
+                      _package(): com.sun.codemodel.internal.JPackage
+                      objectFactory(): com.sun.codemodel.internal.JDefinedClass
+                      objectFactoryGenerator(): com.sun.tools.internal.xjc.generator.bean.ObjectFactoryGenerator
+                      getClasses(): java.util.Set<com.sun.tools.internal.xjc.outline.ClassOutline>
+                      getMostUsedNamespaceURI(): java.lang.String
+                      getElementFormDefault(): javax.xml.bind.annotation.XmlNsForm
+                      getAttributeFormDefault(): javax.xml.bind.annotation.XmlNsForm
                   }
                   abstract class ElementOutline {
                       public target: com.sun.tools.internal.xjc.model.CElementInfo
@@ -36540,19 +36540,19 @@ declare namespace com {
                       valueOf<T>(...args: any[]): any
                   }
                   interface FieldAccessor {
-                      public toRawValue(arg0: com.sun.codemodel.internal.JBlock, arg1: com.sun.codemodel.internal.JVar): void
-                      public fromRawValue(arg0: com.sun.codemodel.internal.JBlock, arg1: java.lang.String, arg2: com.sun.codemodel.internal.JExpression): void
-                      public unsetValues(arg0: com.sun.codemodel.internal.JBlock): void
-                      public hasSetValue(): com.sun.codemodel.internal.JExpression
-                      public owner(): com.sun.tools.internal.xjc.outline.FieldOutline
-                      public getPropertyInfo(): com.sun.tools.internal.xjc.model.CPropertyInfo
+                      toRawValue(arg0: com.sun.codemodel.internal.JBlock, arg1: com.sun.codemodel.internal.JVar): void
+                      fromRawValue(arg0: com.sun.codemodel.internal.JBlock, arg1: java.lang.String, arg2: com.sun.codemodel.internal.JExpression): void
+                      unsetValues(arg0: com.sun.codemodel.internal.JBlock): void
+                      hasSetValue(): com.sun.codemodel.internal.JExpression
+                      owner(): com.sun.tools.internal.xjc.outline.FieldOutline
+                      getPropertyInfo(): com.sun.tools.internal.xjc.model.CPropertyInfo
                   }
                   abstract class EnumConstantOutline {
                       public target: com.sun.tools.internal.xjc.model.CEnumConstant
                       public constRef: com.sun.codemodel.internal.JEnumConstant
                       protected constructor(arg0: com.sun.tools.internal.xjc.model.CEnumConstant, arg1: com.sun.codemodel.internal.JEnumConstant)
                   }
-
+                  
                }
                namespace model {
                   class Model$1 implements java.lang.Iterable<com.sun.tools.internal.xjc.model.CElementInfo> {
@@ -36588,8 +36588,8 @@ declare namespace com {
                       public beans(): java.util.Map<com.sun.tools.internal.xjc.model.nav.NClass, com.sun.tools.internal.xjc.model.CClassInfo>
                       public enums(): java.util.Map<com.sun.tools.internal.xjc.model.nav.NClass, com.sun.tools.internal.xjc.model.CEnumLeafInfo>
                       public typeUses(): java.util.Map<javax.xml.namespace.QName, com.sun.tools.internal.xjc.model.TypeUse>
-                      public arrays(): java.util.Map<com.sun.tools.internal.xjc.model.nav.NType, any extends com.sun.tools.internal.xjc.model.CArrayInfo>
-                      public builtins(): java.util.Map<com.sun.tools.internal.xjc.model.nav.NType, any extends com.sun.tools.internal.xjc.model.CBuiltinLeafInfo>
+                      public arrays(): java.util.Map<com.sun.tools.internal.xjc.model.nav.NType, com.sun.tools.internal.xjc.model.CArrayInfo>
+                      public builtins(): java.util.Map<com.sun.tools.internal.xjc.model.nav.NType, com.sun.tools.internal.xjc.model.CBuiltinLeafInfo>
                       getClassInfo<T>(...args: any[]): any
                       getElementInfo<T>(...args: any[]): any
                       getElementMappings<T>(...args: any[]): any
@@ -36608,13 +36608,13 @@ declare namespace com {
                   }
                   namespace nav {
                      interface NType {
-                         public toType(arg0: com.sun.tools.internal.xjc.outline.Outline, arg1: com.sun.tools.internal.xjc.outline.Aspect): com.sun.codemodel.internal.JType
-                         public isBoxedType(): boolean
-                         public fullName(): java.lang.String
+                         toType(arg0: com.sun.tools.internal.xjc.outline.Outline, arg1: com.sun.tools.internal.xjc.outline.Aspect): com.sun.codemodel.internal.JType
+                         isBoxedType(): boolean
+                         fullName(): java.lang.String
                      }
                      interface NClass extends com.sun.tools.internal.xjc.model.nav.NType {
                          toType<T>(...args: any[]): any
-                         public isAbstract(): boolean
+                         isAbstract(): boolean
                      }
                      class Utils$1 implements java.security.PrivilegedAction<java.lang.reflect.Method> {
                          val$refNav: java.lang.Class
@@ -36722,12 +36722,12 @@ declare namespace com {
                          public hashCode(): int
                          public equals(arg0: java.lang.Object): boolean
                      }
-
+                     
                   }
                   interface CCustomizable {
-                      public getCustomizations(): com.sun.tools.internal.xjc.model.CCustomizations
-                      public getLocator(): org.xml.sax.Locator
-                      public getSchemaComponent(): com.sun.xml.internal.xsom.XSComponent
+                      getCustomizations(): com.sun.tools.internal.xjc.model.CCustomizations
+                      getLocator(): org.xml.sax.Locator
+                      getSchemaComponent(): com.sun.xml.internal.xsom.XSComponent
                   }
                   abstract class CPropertyInfo implements com.sun.xml.internal.bind.v2.model.core.PropertyInfo<com.sun.tools.internal.xjc.model.nav.NType, com.sun.tools.internal.xjc.model.nav.NClass> , com.sun.tools.internal.xjc.model.CCustomizable {
                       public locator: org.xml.sax.Locator
@@ -36850,16 +36850,16 @@ declare namespace com {
                       public getLocation(): com.sun.xml.internal.bind.v2.runtime.Location
                   }
                   interface CTypeInfo extends com.sun.xml.internal.bind.v2.model.core.TypeInfo<com.sun.tools.internal.xjc.model.nav.NType, com.sun.tools.internal.xjc.model.nav.NClass> , com.sun.tools.internal.xjc.model.CCustomizable {
-                      public toType(arg0: com.sun.tools.internal.xjc.outline.Outline, arg1: com.sun.tools.internal.xjc.outline.Aspect): com.sun.codemodel.internal.JType
+                      toType(arg0: com.sun.tools.internal.xjc.outline.Outline, arg1: com.sun.tools.internal.xjc.outline.Aspect): com.sun.codemodel.internal.JType
                   }
                   interface CElement extends com.sun.tools.internal.xjc.model.CTypeInfo , com.sun.xml.internal.bind.v2.model.core.Element<com.sun.tools.internal.xjc.model.nav.NType, com.sun.tools.internal.xjc.model.nav.NClass> {
-                      public setAbstract(): void
-                      public isAbstract(): boolean
+                      setAbstract(): void
+                      isAbstract(): boolean
                   }
                   interface CClassInfoParent$Visitor<T> {
-                      public onBean(arg0: com.sun.tools.internal.xjc.model.CClassInfo): T
-                      public onPackage(arg0: com.sun.codemodel.internal.JPackage): T
-                      public onElement(arg0: com.sun.tools.internal.xjc.model.CElementInfo): T
+                      onBean(arg0: com.sun.tools.internal.xjc.model.CClassInfo): T
+                      onPackage(arg0: com.sun.codemodel.internal.JPackage): T
+                      onElement(arg0: com.sun.tools.internal.xjc.model.CElementInfo): T
                   }
                   class CClassInfoParent$Package implements com.sun.tools.internal.xjc.model.CClassInfoParent {
                       public pkg: com.sun.codemodel.internal.JPackage
@@ -36869,24 +36869,24 @@ declare namespace com {
                       public getOwnerPackage(): com.sun.codemodel.internal.JPackage
                   }
                   interface CClassInfoParent {
-                      public fullName(): java.lang.String
-                      public accept<T>(arg0: com.sun.tools.internal.xjc.model.CClassInfoParent$Visitor<T>): T
-                      public getOwnerPackage(): com.sun.codemodel.internal.JPackage
+                      fullName(): java.lang.String
+                      accept<T>(arg0: com.sun.tools.internal.xjc.model.CClassInfoParent$Visitor<T>): T
+                      getOwnerPackage(): com.sun.codemodel.internal.JPackage
                   }
                   interface CClass extends com.sun.tools.internal.xjc.model.CNonElement , com.sun.tools.internal.xjc.model.CElement {
                   }
                   interface CNonElement extends com.sun.xml.internal.bind.v2.model.core.NonElement<com.sun.tools.internal.xjc.model.nav.NType, com.sun.tools.internal.xjc.model.nav.NClass> , com.sun.tools.internal.xjc.model.TypeUse , com.sun.tools.internal.xjc.model.CTypeInfo {
-                      public getInfo(): com.sun.tools.internal.xjc.model.CNonElement
-                      public isCollection(): boolean
-                      public getAdapterUse(): com.sun.tools.internal.xjc.model.CAdapter
+                      getInfo(): com.sun.tools.internal.xjc.model.CNonElement
+                      isCollection(): boolean
+                      getAdapterUse(): com.sun.tools.internal.xjc.model.CAdapter
                   }
                   interface TypeUse {
-                      public isCollection(): boolean
-                      public getAdapterUse(): com.sun.tools.internal.xjc.model.CAdapter
-                      public getInfo(): com.sun.tools.internal.xjc.model.CNonElement
-                      public idUse(): com.sun.xml.internal.bind.v2.model.core.ID
-                      public getExpectedMimeType(): javax.activation.MimeType
-                      public createConstant(arg0: com.sun.tools.internal.xjc.outline.Outline, arg1: com.sun.xml.internal.xsom.XmlString): com.sun.codemodel.internal.JExpression
+                      isCollection(): boolean
+                      getAdapterUse(): com.sun.tools.internal.xjc.model.CAdapter
+                      getInfo(): com.sun.tools.internal.xjc.model.CNonElement
+                      idUse(): com.sun.xml.internal.bind.v2.model.core.ID
+                      getExpectedMimeType(): javax.activation.MimeType
+                      createConstant(arg0: com.sun.tools.internal.xjc.outline.Outline, arg1: com.sun.xml.internal.xsom.XmlString): com.sun.codemodel.internal.JExpression
                   }
                   class CElementPropertyInfo$1 extends java.util.AbstractList<com.sun.tools.internal.xjc.model.CNonElement> {
                       this$0: com.sun.tools.internal.xjc.model.CElementPropertyInfo
@@ -37188,10 +37188,10 @@ declare namespace com {
                       public getAdapterIfKnown(): java.lang.Class<javax.xml.bind.annotation.adapters.XmlAdapter>
                   }
                   interface CPropertyVisitor<V> {
-                      public onElement(arg0: com.sun.tools.internal.xjc.model.CElementPropertyInfo): V
-                      public onAttribute(arg0: com.sun.tools.internal.xjc.model.CAttributePropertyInfo): V
-                      public onValue(arg0: com.sun.tools.internal.xjc.model.CValuePropertyInfo): V
-                      public onReference(arg0: com.sun.tools.internal.xjc.model.CReferencePropertyInfo): V
+                      onElement(arg0: com.sun.tools.internal.xjc.model.CElementPropertyInfo): V
+                      onAttribute(arg0: com.sun.tools.internal.xjc.model.CAttributePropertyInfo): V
+                      onValue(arg0: com.sun.tools.internal.xjc.model.CValuePropertyInfo): V
+                      onReference(arg0: com.sun.tools.internal.xjc.model.CReferencePropertyInfo): V
                   }
                   class CClassRef extends com.sun.tools.internal.xjc.model.AbstractCElement implements com.sun.tools.internal.xjc.model.nav.NClass , com.sun.tools.internal.xjc.model.CClass {
                       static $assertionsDisabled: boolean
@@ -37337,7 +37337,7 @@ declare namespace com {
                       adapt<T>(...args: any[]): any
                   }
                   interface Populatable {
-                      public populate(arg0: com.sun.tools.internal.xjc.model.Model, arg1: com.sun.tools.internal.xjc.outline.Outline): void
+                      populate(arg0: com.sun.tools.internal.xjc.model.Model, arg1: com.sun.tools.internal.xjc.outline.Outline): void
                   }
                   class CWildcardTypeInfo extends com.sun.tools.internal.xjc.model.AbstractCTypeInfoImpl implements com.sun.xml.internal.bind.v2.model.core.WildcardTypeInfo<com.sun.tools.internal.xjc.model.nav.NType, com.sun.tools.internal.xjc.model.nav.NClass> {
                       public static INSTANCE: com.sun.tools.internal.xjc.model.CWildcardTypeInfo
@@ -37352,7 +37352,7 @@ declare namespace com {
                       public constructor(arg0: com.sun.tools.internal.xjc.api.ClassNameAllocator)
                       public assignClassName(arg0: java.lang.String, arg1: java.lang.String): java.lang.String
                   }
-
+                  
                }
                abstract class ErrorReceiver implements org.xml.sax.ErrorHandler , com.sun.tools.internal.xjc.api.ErrorListener {
                    public constructor()
@@ -37675,7 +37675,7 @@ declare namespace com {
                    constructor()
                    protected static createProtectiveClassLoader(arg0: java.lang.ClassLoader, arg1: java.lang.String): java.lang.ClassLoader
                }
-
+               
             }
             namespace jxc {
                namespace gen {
@@ -37720,11 +37720,11 @@ declare namespace com {
                          public unexpectedLeaveAttribute(arg0: java.lang.String): void
                      }
                      interface NGCCEventReceiver {
-                         public enterElement(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: org.xml.sax.Attributes): void
-                         public leaveElement(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void
-                         public text(arg0: java.lang.String): void
-                         public enterAttribute(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void
-                         public leaveAttribute(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void
+                         enterElement(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: org.xml.sax.Attributes): void
+                         leaveElement(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void
+                         text(arg0: java.lang.String): void
+                         enterAttribute(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void
+                         leaveAttribute(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void
                      }
                      class NGCCRuntime implements org.xml.sax.ContentHandler , com.sun.tools.internal.jxc.gen.config.NGCCEventSource {
                          static IMPOSSIBLE: java.lang.String
@@ -37762,12 +37762,12 @@ declare namespace com {
                          public traceln(arg0: java.lang.String): void
                      }
                      interface NGCCEventSource {
-                         public replace(arg0: com.sun.tools.internal.jxc.gen.config.NGCCEventReceiver, arg1: com.sun.tools.internal.jxc.gen.config.NGCCEventReceiver): int
-                         public sendEnterElement(arg0: int, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: org.xml.sax.Attributes): void
-                         public sendLeaveElement(arg0: int, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): void
-                         public sendEnterAttribute(arg0: int, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): void
-                         public sendLeaveAttribute(arg0: int, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): void
-                         public sendText(arg0: int, arg1: java.lang.String): void
+                         replace(arg0: com.sun.tools.internal.jxc.gen.config.NGCCEventReceiver, arg1: com.sun.tools.internal.jxc.gen.config.NGCCEventReceiver): int
+                         sendEnterElement(arg0: int, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: org.xml.sax.Attributes): void
+                         sendLeaveElement(arg0: int, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): void
+                         sendEnterAttribute(arg0: int, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): void
+                         sendLeaveAttribute(arg0: int, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): void
+                         sendText(arg0: int, arg1: java.lang.String): void
                      }
                      class AttributesImpl implements org.xml.sax.Attributes {
                          length: int
@@ -37850,9 +37850,9 @@ declare namespace com {
                          public getIncludes(): java.util.List
                          public getExcludes(): java.util.List
                      }
-
+                     
                   }
-
+                  
                }
                namespace ap {
                   class SecureLoader$1 implements java.security.PrivilegedAction<java.lang.ClassLoader> {
@@ -37945,7 +37945,7 @@ declare namespace com {
                       public process(arg0: java.util.Set<javax.lang.model.element.TypeElement>, arg1: javax.annotation.processing.RoundEnvironment): boolean
                       public getSupportedSourceVersion(): javax.lang.model.SourceVersion
                   }
-
+                  
                }
                namespace model {
                   namespace nav {
@@ -38027,9 +38027,9 @@ declare namespace com {
                          isEnum<T>(...args: any[]): any
                          static access$000(arg0: com.sun.tools.internal.jxc.model.nav.ApNavigator): javax.annotation.processing.ProcessingEnvironment
                      }
-
+                     
                   }
-
+                  
                }
                class NGCCRuntimeEx extends com.sun.tools.internal.jxc.gen.config.NGCCRuntime {
                    public constructor(arg0: org.xml.sax.ErrorHandler)
@@ -38057,15 +38057,15 @@ declare namespace com {
                             public generateSchema(arg0: javax.xml.bind.SchemaOutputResolver, arg1: com.sun.tools.internal.xjc.api.ErrorListener): void
                             public generateEpisodeFile(arg0: javax.xml.transform.Result): void
                         }
-
+                        
                      }
-
+                     
                   }
                   class JXC {
                       public constructor()
                       public static createJavaCompiler(): com.sun.tools.internal.xjc.api.JavaCompiler
                   }
-
+                  
                }
                class SecureLoader$1 implements java.security.PrivilegedAction<java.lang.ClassLoader> {
                    constructor()
@@ -38129,7 +38129,7 @@ declare namespace com {
                    public getClassesToBeIncluded(): java.util.Collection<com.sun.tools.internal.xjc.api.Reference>
                    public getSchemaOutputResolver(): javax.xml.bind.SchemaOutputResolver
                }
-
+               
             }
             namespace ws {
                namespace wsdl {
@@ -38168,7 +38168,7 @@ declare namespace com {
                          public getRootWSDLs(): java.util.Set<java.lang.String>
                      }
                      interface DOMForest$Handler extends org.xml.sax.ContentHandler {
-                         public getDocument(): org.w3c.dom.Document
+                         getDocument(): org.w3c.dom.Document
                      }
                      class DOMForest {
                          protected rootDocuments: java.util.Set<java.lang.String>
@@ -38197,10 +38197,10 @@ declare namespace com {
                          public dump(arg0: java.io.OutputStream): void
                      }
                      interface InternalizationLogic {
-                         public createExternalReferenceFinder(arg0: com.sun.tools.internal.ws.wsdl.parser.DOMForest): org.xml.sax.helpers.XMLFilterImpl
-                         public checkIfValidTargetNode(arg0: com.sun.tools.internal.ws.wsdl.parser.DOMForest, arg1: org.w3c.dom.Element, arg2: org.w3c.dom.Element): boolean
-                         public refineSchemaTarget(arg0: org.w3c.dom.Element): org.w3c.dom.Element
-                         public refineWSDLTarget(arg0: org.w3c.dom.Element): org.w3c.dom.Element
+                         createExternalReferenceFinder(arg0: com.sun.tools.internal.ws.wsdl.parser.DOMForest): org.xml.sax.helpers.XMLFilterImpl
+                         checkIfValidTargetNode(arg0: com.sun.tools.internal.ws.wsdl.parser.DOMForest, arg1: org.w3c.dom.Element, arg2: org.w3c.dom.Element): boolean
+                         refineSchemaTarget(arg0: org.w3c.dom.Element): org.w3c.dom.Element
+                         refineWSDLTarget(arg0: org.w3c.dom.Element): org.w3c.dom.Element
                      }
                      class WSDLInternalizationLogic$ReferenceFinder extends com.sun.tools.internal.ws.wsdl.parser.AbstractReferenceFinderImpl {
                          constructor(arg0: com.sun.tools.internal.ws.wsdl.parser.DOMForest)
@@ -38440,111 +38440,111 @@ declare namespace com {
                          public comment(arg0: char[], arg1: int, arg2: int): void
                      }
                      interface Constants {
-                         public static TAG_BINDING: java.lang.String
-                         public static TAG_DEFINITIONS: java.lang.String
-                         public static TAG_DOCUMENTATION: java.lang.String
-                         public static TAG_MESSAGE: java.lang.String
-                         public static TAG_PART: java.lang.String
-                         public static TAG_PORT_TYPE: java.lang.String
-                         public static TAG_TYPES: java.lang.String
-                         public static TAG_OPERATION: java.lang.String
-                         public static TAG_INPUT: java.lang.String
-                         public static TAG_OUTPUT: java.lang.String
-                         public static TAG_FAULT: java.lang.String
-                         public static TAG_SERVICE: java.lang.String
-                         public static TAG_PORT: java.lang.String
-                         public static TAG_: java.lang.String
-                         public static ATTR_ELEMENT: java.lang.String
-                         public static ATTR_NAME: java.lang.String
-                         public static ATTR_REQUIRED: java.lang.String
-                         public static ATTR_TARGET_NAMESPACE: java.lang.String
-                         public static ATTR_TYPE: java.lang.String
-                         public static ATTR_MESSAGE: java.lang.String
-                         public static ATTR_BINDING: java.lang.String
-                         public static ATTR_LOCATION: java.lang.String
-                         public static ATTR_TRANSPORT: java.lang.String
-                         public static ATTR_STYLE: java.lang.String
-                         public static ATTR_USE: java.lang.String
-                         public static ATTR_NAMESPACE: java.lang.String
-                         public static ATTR_ENCODING_STYLE: java.lang.String
-                         public static ATTR_PART: java.lang.String
-                         public static ATTR_PARTS: java.lang.String
-                         public static ATTR_SOAP_ACTION: java.lang.String
-                         public static ATTR_PARAMETER_ORDER: java.lang.String
-                         public static ATTR_VERB: java.lang.String
-                         public static ATTR_ID: java.lang.String
-                         public static ATTR_VERSION: java.lang.String
-                         public static ATTR_ATTRIBUTE_FORM_DEFAULT: java.lang.String
-                         public static ATTR_BLOCK_DEFAULT: java.lang.String
-                         public static ATTR_ELEMENT_FORM_DEFAULT: java.lang.String
-                         public static ATTR_FINAL_DEFAULT: java.lang.String
-                         public static ATTR_ABSTRACT: java.lang.String
-                         public static ATTR_NILLABLE: java.lang.String
-                         public static ATTR_DEFAULT: java.lang.String
-                         public static ATTR_FIXED: java.lang.String
-                         public static ATTR_FORM: java.lang.String
-                         public static ATTR_BLOCK: java.lang.String
-                         public static ATTR_FINAL: java.lang.String
-                         public static ATTR_REF: java.lang.String
-                         public static ATTR_SUBSTITUTION_GROUP: java.lang.String
-                         public static ATTR_MIN_OCCURS: java.lang.String
-                         public static ATTR_MAX_OCCURS: java.lang.String
-                         public static ATTR_PROCESS_CONTENTS: java.lang.String
-                         public static ATTR_MIXED: java.lang.String
-                         public static ATTR_BASE: java.lang.String
-                         public static ATTR_VALUE: java.lang.String
-                         public static ATTR_XPATH: java.lang.String
-                         public static ATTR_SCHEMA_LOCATION: java.lang.String
-                         public static ATTR_REFER: java.lang.String
-                         public static ATTR_ITEM_TYPE: java.lang.String
-                         public static ATTR_PUBLIC: java.lang.String
-                         public static ATTR_SYSTEM: java.lang.String
-                         public static ATTR_MEMBER_TYPES: java.lang.String
-                         public static ATTR_: java.lang.String
-                         public static ATTRVALUE_RPC: java.lang.String
-                         public static ATTRVALUE_DOCUMENT: java.lang.String
-                         public static ATTRVALUE_LITERAL: java.lang.String
-                         public static ATTRVALUE_ENCODED: java.lang.String
-                         public static ATTRVALUE_QUALIFIED: java.lang.String
-                         public static ATTRVALUE_UNQUALIFIED: java.lang.String
-                         public static ATTRVALUE_ALL: java.lang.String
-                         public static ATTRVALUE_SUBSTITUTION: java.lang.String
-                         public static ATTRVALUE_EXTENSION: java.lang.String
-                         public static ATTRVALUE_RESTRICTION: java.lang.String
-                         public static ATTRVALUE_LIST: java.lang.String
-                         public static ATTRVALUE_UNION: java.lang.String
-                         public static ATTRVALUE_UNBOUNDED: java.lang.String
-                         public static ATTRVALUE_PROHIBITED: java.lang.String
-                         public static ATTRVALUE_OPTIONAL: java.lang.String
-                         public static ATTRVALUE_REQUIRED: java.lang.String
-                         public static ATTRVALUE_LAX: java.lang.String
-                         public static ATTRVALUE_SKIP: java.lang.String
-                         public static ATTRVALUE_STRICT: java.lang.String
-                         public static ATTRVALUE_ANY: java.lang.String
-                         public static ATTRVALUE_LOCAL: java.lang.String
-                         public static ATTRVALUE_OTHER: java.lang.String
-                         public static ATTRVALUE_TARGET_NAMESPACE: java.lang.String
-                         public static ATTRVALUE_: java.lang.String
-                         public static NS_XML: java.lang.String
-                         public static NS_XMLNS: java.lang.String
-                         public static NS_WSDL: java.lang.String
-                         public static NS_WSDL_SOAP: java.lang.String
-                         public static NS_WSDL_SOAP12: java.lang.String
-                         public static NS_WSDL_HTTP: java.lang.String
-                         public static NS_WSDL_MIME: java.lang.String
-                         public static NS_XSD: java.lang.String
-                         public static NS_XSI: java.lang.String
-                         public static NS_: java.lang.String
-                         public static XMLNS: java.lang.String
-                         public static TRUE: java.lang.String
-                         public static FALSE: java.lang.String
+                         TAG_BINDING: java.lang.String
+                         TAG_DEFINITIONS: java.lang.String
+                         TAG_DOCUMENTATION: java.lang.String
+                         TAG_MESSAGE: java.lang.String
+                         TAG_PART: java.lang.String
+                         TAG_PORT_TYPE: java.lang.String
+                         TAG_TYPES: java.lang.String
+                         TAG_OPERATION: java.lang.String
+                         TAG_INPUT: java.lang.String
+                         TAG_OUTPUT: java.lang.String
+                         TAG_FAULT: java.lang.String
+                         TAG_SERVICE: java.lang.String
+                         TAG_PORT: java.lang.String
+                         TAG_: java.lang.String
+                         ATTR_ELEMENT: java.lang.String
+                         ATTR_NAME: java.lang.String
+                         ATTR_REQUIRED: java.lang.String
+                         ATTR_TARGET_NAMESPACE: java.lang.String
+                         ATTR_TYPE: java.lang.String
+                         ATTR_MESSAGE: java.lang.String
+                         ATTR_BINDING: java.lang.String
+                         ATTR_LOCATION: java.lang.String
+                         ATTR_TRANSPORT: java.lang.String
+                         ATTR_STYLE: java.lang.String
+                         ATTR_USE: java.lang.String
+                         ATTR_NAMESPACE: java.lang.String
+                         ATTR_ENCODING_STYLE: java.lang.String
+                         ATTR_PART: java.lang.String
+                         ATTR_PARTS: java.lang.String
+                         ATTR_SOAP_ACTION: java.lang.String
+                         ATTR_PARAMETER_ORDER: java.lang.String
+                         ATTR_VERB: java.lang.String
+                         ATTR_ID: java.lang.String
+                         ATTR_VERSION: java.lang.String
+                         ATTR_ATTRIBUTE_FORM_DEFAULT: java.lang.String
+                         ATTR_BLOCK_DEFAULT: java.lang.String
+                         ATTR_ELEMENT_FORM_DEFAULT: java.lang.String
+                         ATTR_FINAL_DEFAULT: java.lang.String
+                         ATTR_ABSTRACT: java.lang.String
+                         ATTR_NILLABLE: java.lang.String
+                         ATTR_DEFAULT: java.lang.String
+                         ATTR_FIXED: java.lang.String
+                         ATTR_FORM: java.lang.String
+                         ATTR_BLOCK: java.lang.String
+                         ATTR_FINAL: java.lang.String
+                         ATTR_REF: java.lang.String
+                         ATTR_SUBSTITUTION_GROUP: java.lang.String
+                         ATTR_MIN_OCCURS: java.lang.String
+                         ATTR_MAX_OCCURS: java.lang.String
+                         ATTR_PROCESS_CONTENTS: java.lang.String
+                         ATTR_MIXED: java.lang.String
+                         ATTR_BASE: java.lang.String
+                         ATTR_VALUE: java.lang.String
+                         ATTR_XPATH: java.lang.String
+                         ATTR_SCHEMA_LOCATION: java.lang.String
+                         ATTR_REFER: java.lang.String
+                         ATTR_ITEM_TYPE: java.lang.String
+                         ATTR_PUBLIC: java.lang.String
+                         ATTR_SYSTEM: java.lang.String
+                         ATTR_MEMBER_TYPES: java.lang.String
+                         ATTR_: java.lang.String
+                         ATTRVALUE_RPC: java.lang.String
+                         ATTRVALUE_DOCUMENT: java.lang.String
+                         ATTRVALUE_LITERAL: java.lang.String
+                         ATTRVALUE_ENCODED: java.lang.String
+                         ATTRVALUE_QUALIFIED: java.lang.String
+                         ATTRVALUE_UNQUALIFIED: java.lang.String
+                         ATTRVALUE_ALL: java.lang.String
+                         ATTRVALUE_SUBSTITUTION: java.lang.String
+                         ATTRVALUE_EXTENSION: java.lang.String
+                         ATTRVALUE_RESTRICTION: java.lang.String
+                         ATTRVALUE_LIST: java.lang.String
+                         ATTRVALUE_UNION: java.lang.String
+                         ATTRVALUE_UNBOUNDED: java.lang.String
+                         ATTRVALUE_PROHIBITED: java.lang.String
+                         ATTRVALUE_OPTIONAL: java.lang.String
+                         ATTRVALUE_REQUIRED: java.lang.String
+                         ATTRVALUE_LAX: java.lang.String
+                         ATTRVALUE_SKIP: java.lang.String
+                         ATTRVALUE_STRICT: java.lang.String
+                         ATTRVALUE_ANY: java.lang.String
+                         ATTRVALUE_LOCAL: java.lang.String
+                         ATTRVALUE_OTHER: java.lang.String
+                         ATTRVALUE_TARGET_NAMESPACE: java.lang.String
+                         ATTRVALUE_: java.lang.String
+                         NS_XML: java.lang.String
+                         NS_XMLNS: java.lang.String
+                         NS_WSDL: java.lang.String
+                         NS_WSDL_SOAP: java.lang.String
+                         NS_WSDL_SOAP12: java.lang.String
+                         NS_WSDL_HTTP: java.lang.String
+                         NS_WSDL_MIME: java.lang.String
+                         NS_XSD: java.lang.String
+                         NS_XSI: java.lang.String
+                         NS_: java.lang.String
+                         XMLNS: java.lang.String
+                         TRUE: java.lang.String
+                         FALSE: java.lang.String
                      }
-
+                     
                   }
                   namespace framework {
                      interface ParserListener {
-                         public ignoringExtension(arg0: com.sun.tools.internal.ws.wsdl.framework.Entity, arg1: javax.xml.namespace.QName, arg2: javax.xml.namespace.QName): void
-                         public doneParsingEntity(arg0: javax.xml.namespace.QName, arg1: com.sun.tools.internal.ws.wsdl.framework.Entity): void
+                         ignoringExtension(arg0: com.sun.tools.internal.ws.wsdl.framework.Entity, arg1: javax.xml.namespace.QName, arg2: javax.xml.namespace.QName): void
+                         doneParsingEntity(arg0: javax.xml.namespace.QName, arg1: com.sun.tools.internal.ws.wsdl.framework.Entity): void
                      }
                      class AbstractDocument$LocallyValidatingAction implements com.sun.tools.internal.ws.wsdl.framework.EntityAction {
                          public constructor()
@@ -38606,11 +38606,11 @@ declare namespace com {
                          failValidation<T>(...args: any[]): any
                      }
                      interface Elemental {
-                         public getElementName(): javax.xml.namespace.QName
-                         public getLocator(): org.xml.sax.Locator
+                         getElementName(): javax.xml.namespace.QName
+                         getLocator(): org.xml.sax.Locator
                      }
                      interface Defining extends com.sun.tools.internal.ws.wsdl.framework.Elemental {
-                         public getTargetNamespaceURI(): java.lang.String
+                         getTargetNamespaceURI(): java.lang.String
                      }
                      abstract class GlobalEntity extends com.sun.tools.internal.ws.wsdl.framework.Entity implements com.sun.tools.internal.ws.wsdl.framework.GloballyKnown {
                          public constructor(arg0: com.sun.tools.internal.ws.wsdl.framework.Defining, arg1: org.xml.sax.Locator, arg2: com.sun.tools.internal.ws.wscompile.ErrorReceiver)
@@ -38620,19 +38620,19 @@ declare namespace com {
                          public getDefining(): com.sun.tools.internal.ws.wsdl.framework.Defining
                      }
                      interface GloballyKnown extends com.sun.tools.internal.ws.wsdl.framework.Elemental {
-                         public getName(): java.lang.String
-                         public getKind(): com.sun.tools.internal.ws.wsdl.framework.Kind
-                         public getDefining(): com.sun.tools.internal.ws.wsdl.framework.Defining
+                         getName(): java.lang.String
+                         getKind(): com.sun.tools.internal.ws.wsdl.framework.Kind
+                         getDefining(): com.sun.tools.internal.ws.wsdl.framework.Defining
                      }
                      interface ExtensionVisitor {
-                         public preVisit(arg0: com.sun.tools.internal.ws.api.wsdl.TWSDLExtension): void
-                         public postVisit(arg0: com.sun.tools.internal.ws.api.wsdl.TWSDLExtension): void
+                         preVisit(arg0: com.sun.tools.internal.ws.api.wsdl.TWSDLExtension): void
+                         postVisit(arg0: com.sun.tools.internal.ws.api.wsdl.TWSDLExtension): void
                      }
                      interface EntityReferenceValidator {
-                         public isValid(arg0: com.sun.tools.internal.ws.wsdl.framework.Kind, arg1: javax.xml.namespace.QName): boolean
+                         isValid(arg0: com.sun.tools.internal.ws.wsdl.framework.Kind, arg1: javax.xml.namespace.QName): boolean
                      }
                      interface EntityAction {
-                         public perform(arg0: com.sun.tools.internal.ws.wsdl.framework.Entity): void
+                         perform(arg0: com.sun.tools.internal.ws.wsdl.framework.Entity): void
                      }
                      class Kind {
                          public constructor(arg0: java.lang.String)
@@ -38661,10 +38661,10 @@ declare namespace com {
                          public accept(arg0: com.sun.tools.internal.ws.wsdl.framework.ExtensionVisitor): void
                      }
                      interface QNameAction {
-                         public perform(arg0: javax.xml.namespace.QName): void
+                         perform(arg0: javax.xml.namespace.QName): void
                      }
                      interface EntityReferenceAction {
-                         public perform(arg0: com.sun.tools.internal.ws.wsdl.framework.Kind, arg1: javax.xml.namespace.QName): void
+                         perform(arg0: com.sun.tools.internal.ws.wsdl.framework.Kind, arg1: javax.xml.namespace.QName): void
                      }
                      abstract class ExtensionImpl extends com.sun.tools.internal.ws.wsdl.framework.Entity implements com.sun.tools.internal.ws.api.wsdl.TWSDLExtension {
                          public constructor(arg0: org.xml.sax.Locator)
@@ -38685,7 +38685,7 @@ declare namespace com {
                          public getDefaultResourceBundleName(): java.lang.String
                      }
                      interface Identifiable extends com.sun.tools.internal.ws.wsdl.framework.Elemental {
-                         public getID(): java.lang.String
+                         getID(): java.lang.String
                      }
                      class ExternalEntityReference {
                          public constructor(arg0: com.sun.tools.internal.ws.wsdl.framework.AbstractDocument, arg1: com.sun.tools.internal.ws.wsdl.framework.Kind, arg2: javax.xml.namespace.QName)
@@ -38703,7 +38703,7 @@ declare namespace com {
                          constructor(...args: any[])
                          public getDefaultResourceBundleName(): java.lang.String
                      }
-
+                     
                   }
                   namespace document {
                      class WSDLDocument$GloballyValidatingAction implements com.sun.tools.internal.ws.wsdl.framework.EntityAction , com.sun.tools.internal.ws.wsdl.framework.EntityReferenceAction {
@@ -39197,113 +39197,113 @@ declare namespace com {
                             public validateThis(): void
                         }
                         interface SOAPConstants {
-                            public static URI_ENVELOPE: java.lang.String
-                            public static NS_WSDL_SOAP: java.lang.String
-                            public static NS_SOAP_ENCODING: java.lang.String
-                            public static URI_SOAP_TRANSPORT_HTTP: java.lang.String
-                            public static QNAME_ADDRESS: javax.xml.namespace.QName
-                            public static QNAME_BINDING: javax.xml.namespace.QName
-                            public static QNAME_BODY: javax.xml.namespace.QName
-                            public static QNAME_FAULT: javax.xml.namespace.QName
-                            public static QNAME_HEADER: javax.xml.namespace.QName
-                            public static QNAME_HEADERFAULT: javax.xml.namespace.QName
-                            public static QNAME_OPERATION: javax.xml.namespace.QName
-                            public static QNAME_MUSTUNDERSTAND: javax.xml.namespace.QName
-                            public static QNAME_TYPE_ARRAY: javax.xml.namespace.QName
-                            public static QNAME_ATTR_GROUP_COMMON_ATTRIBUTES: javax.xml.namespace.QName
-                            public static QNAME_ATTR_ARRAY_TYPE: javax.xml.namespace.QName
-                            public static QNAME_ATTR_OFFSET: javax.xml.namespace.QName
-                            public static QNAME_ATTR_POSITION: javax.xml.namespace.QName
-                            public static QNAME_TYPE_BASE64: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_STRING: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_NORMALIZED_STRING: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_TOKEN: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_BYTE: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_UNSIGNED_BYTE: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_BASE64_BINARY: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_HEX_BINARY: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_POSITIVE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_NEGATIVE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_NON_NEGATIVE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_NON_POSITIVE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_INT: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_UNSIGNED_INT: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_LONG: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_UNSIGNED_LONG: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_SHORT: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_UNSIGNED_SHORT: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_DECIMAL: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_FLOAT: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_DOUBLE: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_BOOLEAN: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_TIME: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_DATE_TIME: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_DURATION: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_DATE: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_G_MONTH: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_G_YEAR: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_G_YEAR_MONTH: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_G_DAY: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_G_MONTH_DAY: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_NAME: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_QNAME: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_NCNAME: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_ANY_URI: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_ID: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_IDREF: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_IDREFS: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_ENTITY: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_ENTITIES: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_NOTATION: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_NMTOKEN: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_NMTOKENS: javax.xml.namespace.QName
-                            public static QNAME_TYPE_STRING: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NORMALIZED_STRING: javax.xml.namespace.QName
-                            public static QNAME_TYPE_TOKEN: javax.xml.namespace.QName
-                            public static QNAME_TYPE_BYTE: javax.xml.namespace.QName
-                            public static QNAME_TYPE_UNSIGNED_BYTE: javax.xml.namespace.QName
-                            public static QNAME_TYPE_BASE64_BINARY: javax.xml.namespace.QName
-                            public static QNAME_TYPE_HEX_BINARY: javax.xml.namespace.QName
-                            public static QNAME_TYPE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_TYPE_POSITIVE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NEGATIVE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NON_NEGATIVE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NON_POSITIVE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_TYPE_INT: javax.xml.namespace.QName
-                            public static QNAME_TYPE_UNSIGNED_INT: javax.xml.namespace.QName
-                            public static QNAME_TYPE_LONG: javax.xml.namespace.QName
-                            public static QNAME_TYPE_UNSIGNED_LONG: javax.xml.namespace.QName
-                            public static QNAME_TYPE_SHORT: javax.xml.namespace.QName
-                            public static QNAME_TYPE_UNSIGNED_SHORT: javax.xml.namespace.QName
-                            public static QNAME_TYPE_DECIMAL: javax.xml.namespace.QName
-                            public static QNAME_TYPE_FLOAT: javax.xml.namespace.QName
-                            public static QNAME_TYPE_DOUBLE: javax.xml.namespace.QName
-                            public static QNAME_TYPE_BOOLEAN: javax.xml.namespace.QName
-                            public static QNAME_TYPE_TIME: javax.xml.namespace.QName
-                            public static QNAME_TYPE_DATE_TIME: javax.xml.namespace.QName
-                            public static QNAME_TYPE_DURATION: javax.xml.namespace.QName
-                            public static QNAME_TYPE_DATE: javax.xml.namespace.QName
-                            public static QNAME_TYPE_G_MONTH: javax.xml.namespace.QName
-                            public static QNAME_TYPE_G_YEAR: javax.xml.namespace.QName
-                            public static QNAME_TYPE_G_YEAR_MONTH: javax.xml.namespace.QName
-                            public static QNAME_TYPE_G_DAY: javax.xml.namespace.QName
-                            public static QNAME_TYPE_G_MONTH_DAY: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NAME: javax.xml.namespace.QName
-                            public static QNAME_TYPE_QNAME: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NCNAME: javax.xml.namespace.QName
-                            public static QNAME_TYPE_ANY_URI: javax.xml.namespace.QName
-                            public static QNAME_TYPE_ID: javax.xml.namespace.QName
-                            public static QNAME_TYPE_IDREF: javax.xml.namespace.QName
-                            public static QNAME_TYPE_IDREFS: javax.xml.namespace.QName
-                            public static QNAME_TYPE_ENTITY: javax.xml.namespace.QName
-                            public static QNAME_TYPE_ENTITIES: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NOTATION: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NMTOKEN: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NMTOKENS: javax.xml.namespace.QName
-                            public static QNAME_TYPE_LANGUAGE: javax.xml.namespace.QName
-                            public static QNAME_ATTR_ID: javax.xml.namespace.QName
-                            public static QNAME_ATTR_HREF: javax.xml.namespace.QName
+                            URI_ENVELOPE: java.lang.String
+                            NS_WSDL_SOAP: java.lang.String
+                            NS_SOAP_ENCODING: java.lang.String
+                            URI_SOAP_TRANSPORT_HTTP: java.lang.String
+                            QNAME_ADDRESS: javax.xml.namespace.QName
+                            QNAME_BINDING: javax.xml.namespace.QName
+                            QNAME_BODY: javax.xml.namespace.QName
+                            QNAME_FAULT: javax.xml.namespace.QName
+                            QNAME_HEADER: javax.xml.namespace.QName
+                            QNAME_HEADERFAULT: javax.xml.namespace.QName
+                            QNAME_OPERATION: javax.xml.namespace.QName
+                            QNAME_MUSTUNDERSTAND: javax.xml.namespace.QName
+                            QNAME_TYPE_ARRAY: javax.xml.namespace.QName
+                            QNAME_ATTR_GROUP_COMMON_ATTRIBUTES: javax.xml.namespace.QName
+                            QNAME_ATTR_ARRAY_TYPE: javax.xml.namespace.QName
+                            QNAME_ATTR_OFFSET: javax.xml.namespace.QName
+                            QNAME_ATTR_POSITION: javax.xml.namespace.QName
+                            QNAME_TYPE_BASE64: javax.xml.namespace.QName
+                            QNAME_ELEMENT_STRING: javax.xml.namespace.QName
+                            QNAME_ELEMENT_NORMALIZED_STRING: javax.xml.namespace.QName
+                            QNAME_ELEMENT_TOKEN: javax.xml.namespace.QName
+                            QNAME_ELEMENT_BYTE: javax.xml.namespace.QName
+                            QNAME_ELEMENT_UNSIGNED_BYTE: javax.xml.namespace.QName
+                            QNAME_ELEMENT_BASE64_BINARY: javax.xml.namespace.QName
+                            QNAME_ELEMENT_HEX_BINARY: javax.xml.namespace.QName
+                            QNAME_ELEMENT_INTEGER: javax.xml.namespace.QName
+                            QNAME_ELEMENT_POSITIVE_INTEGER: javax.xml.namespace.QName
+                            QNAME_ELEMENT_NEGATIVE_INTEGER: javax.xml.namespace.QName
+                            QNAME_ELEMENT_NON_NEGATIVE_INTEGER: javax.xml.namespace.QName
+                            QNAME_ELEMENT_NON_POSITIVE_INTEGER: javax.xml.namespace.QName
+                            QNAME_ELEMENT_INT: javax.xml.namespace.QName
+                            QNAME_ELEMENT_UNSIGNED_INT: javax.xml.namespace.QName
+                            QNAME_ELEMENT_LONG: javax.xml.namespace.QName
+                            QNAME_ELEMENT_UNSIGNED_LONG: javax.xml.namespace.QName
+                            QNAME_ELEMENT_SHORT: javax.xml.namespace.QName
+                            QNAME_ELEMENT_UNSIGNED_SHORT: javax.xml.namespace.QName
+                            QNAME_ELEMENT_DECIMAL: javax.xml.namespace.QName
+                            QNAME_ELEMENT_FLOAT: javax.xml.namespace.QName
+                            QNAME_ELEMENT_DOUBLE: javax.xml.namespace.QName
+                            QNAME_ELEMENT_BOOLEAN: javax.xml.namespace.QName
+                            QNAME_ELEMENT_TIME: javax.xml.namespace.QName
+                            QNAME_ELEMENT_DATE_TIME: javax.xml.namespace.QName
+                            QNAME_ELEMENT_DURATION: javax.xml.namespace.QName
+                            QNAME_ELEMENT_DATE: javax.xml.namespace.QName
+                            QNAME_ELEMENT_G_MONTH: javax.xml.namespace.QName
+                            QNAME_ELEMENT_G_YEAR: javax.xml.namespace.QName
+                            QNAME_ELEMENT_G_YEAR_MONTH: javax.xml.namespace.QName
+                            QNAME_ELEMENT_G_DAY: javax.xml.namespace.QName
+                            QNAME_ELEMENT_G_MONTH_DAY: javax.xml.namespace.QName
+                            QNAME_ELEMENT_NAME: javax.xml.namespace.QName
+                            QNAME_ELEMENT_QNAME: javax.xml.namespace.QName
+                            QNAME_ELEMENT_NCNAME: javax.xml.namespace.QName
+                            QNAME_ELEMENT_ANY_URI: javax.xml.namespace.QName
+                            QNAME_ELEMENT_ID: javax.xml.namespace.QName
+                            QNAME_ELEMENT_IDREF: javax.xml.namespace.QName
+                            QNAME_ELEMENT_IDREFS: javax.xml.namespace.QName
+                            QNAME_ELEMENT_ENTITY: javax.xml.namespace.QName
+                            QNAME_ELEMENT_ENTITIES: javax.xml.namespace.QName
+                            QNAME_ELEMENT_NOTATION: javax.xml.namespace.QName
+                            QNAME_ELEMENT_NMTOKEN: javax.xml.namespace.QName
+                            QNAME_ELEMENT_NMTOKENS: javax.xml.namespace.QName
+                            QNAME_TYPE_STRING: javax.xml.namespace.QName
+                            QNAME_TYPE_NORMALIZED_STRING: javax.xml.namespace.QName
+                            QNAME_TYPE_TOKEN: javax.xml.namespace.QName
+                            QNAME_TYPE_BYTE: javax.xml.namespace.QName
+                            QNAME_TYPE_UNSIGNED_BYTE: javax.xml.namespace.QName
+                            QNAME_TYPE_BASE64_BINARY: javax.xml.namespace.QName
+                            QNAME_TYPE_HEX_BINARY: javax.xml.namespace.QName
+                            QNAME_TYPE_INTEGER: javax.xml.namespace.QName
+                            QNAME_TYPE_POSITIVE_INTEGER: javax.xml.namespace.QName
+                            QNAME_TYPE_NEGATIVE_INTEGER: javax.xml.namespace.QName
+                            QNAME_TYPE_NON_NEGATIVE_INTEGER: javax.xml.namespace.QName
+                            QNAME_TYPE_NON_POSITIVE_INTEGER: javax.xml.namespace.QName
+                            QNAME_TYPE_INT: javax.xml.namespace.QName
+                            QNAME_TYPE_UNSIGNED_INT: javax.xml.namespace.QName
+                            QNAME_TYPE_LONG: javax.xml.namespace.QName
+                            QNAME_TYPE_UNSIGNED_LONG: javax.xml.namespace.QName
+                            QNAME_TYPE_SHORT: javax.xml.namespace.QName
+                            QNAME_TYPE_UNSIGNED_SHORT: javax.xml.namespace.QName
+                            QNAME_TYPE_DECIMAL: javax.xml.namespace.QName
+                            QNAME_TYPE_FLOAT: javax.xml.namespace.QName
+                            QNAME_TYPE_DOUBLE: javax.xml.namespace.QName
+                            QNAME_TYPE_BOOLEAN: javax.xml.namespace.QName
+                            QNAME_TYPE_TIME: javax.xml.namespace.QName
+                            QNAME_TYPE_DATE_TIME: javax.xml.namespace.QName
+                            QNAME_TYPE_DURATION: javax.xml.namespace.QName
+                            QNAME_TYPE_DATE: javax.xml.namespace.QName
+                            QNAME_TYPE_G_MONTH: javax.xml.namespace.QName
+                            QNAME_TYPE_G_YEAR: javax.xml.namespace.QName
+                            QNAME_TYPE_G_YEAR_MONTH: javax.xml.namespace.QName
+                            QNAME_TYPE_G_DAY: javax.xml.namespace.QName
+                            QNAME_TYPE_G_MONTH_DAY: javax.xml.namespace.QName
+                            QNAME_TYPE_NAME: javax.xml.namespace.QName
+                            QNAME_TYPE_QNAME: javax.xml.namespace.QName
+                            QNAME_TYPE_NCNAME: javax.xml.namespace.QName
+                            QNAME_TYPE_ANY_URI: javax.xml.namespace.QName
+                            QNAME_TYPE_ID: javax.xml.namespace.QName
+                            QNAME_TYPE_IDREF: javax.xml.namespace.QName
+                            QNAME_TYPE_IDREFS: javax.xml.namespace.QName
+                            QNAME_TYPE_ENTITY: javax.xml.namespace.QName
+                            QNAME_TYPE_ENTITIES: javax.xml.namespace.QName
+                            QNAME_TYPE_NOTATION: javax.xml.namespace.QName
+                            QNAME_TYPE_NMTOKEN: javax.xml.namespace.QName
+                            QNAME_TYPE_NMTOKENS: javax.xml.namespace.QName
+                            QNAME_TYPE_LANGUAGE: javax.xml.namespace.QName
+                            QNAME_ATTR_ID: javax.xml.namespace.QName
+                            QNAME_ATTR_HREF: javax.xml.namespace.QName
                         }
                         class SOAPBody extends com.sun.tools.internal.ws.wsdl.framework.ExtensionImpl {
                             public constructor(arg0: org.xml.sax.Locator)
@@ -39328,119 +39328,119 @@ declare namespace com {
                             public validateThis(): void
                         }
                         interface SOAP12Constants {
-                            public static NS_WSDL_SOAP: java.lang.String
-                            public static NS_SOAP_ENCODING: java.lang.String
-                            public static URI_SOAP_TRANSPORT_HTTP: java.lang.String
-                            public static QNAME_ADDRESS: javax.xml.namespace.QName
-                            public static QNAME_BINDING: javax.xml.namespace.QName
-                            public static QNAME_BODY: javax.xml.namespace.QName
-                            public static QNAME_FAULT: javax.xml.namespace.QName
-                            public static QNAME_HEADER: javax.xml.namespace.QName
-                            public static QNAME_HEADERFAULT: javax.xml.namespace.QName
-                            public static QNAME_OPERATION: javax.xml.namespace.QName
-                            public static QNAME_TYPE_ARRAY: javax.xml.namespace.QName
-                            public static QNAME_ATTR_GROUP_COMMON_ATTRIBUTES: javax.xml.namespace.QName
-                            public static QNAME_ATTR_ARRAY_TYPE: javax.xml.namespace.QName
-                            public static QNAME_ATTR_ITEM_TYPE: javax.xml.namespace.QName
-                            public static QNAME_ATTR_ARRAY_SIZE: javax.xml.namespace.QName
-                            public static QNAME_ATTR_OFFSET: javax.xml.namespace.QName
-                            public static QNAME_ATTR_POSITION: javax.xml.namespace.QName
-                            public static QNAME_TYPE_BASE64: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_STRING: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_NORMALIZED_STRING: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_TOKEN: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_BYTE: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_UNSIGNED_BYTE: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_BASE64_BINARY: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_HEX_BINARY: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_POSITIVE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_NEGATIVE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_NON_NEGATIVE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_NON_POSITIVE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_INT: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_UNSIGNED_INT: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_LONG: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_UNSIGNED_LONG: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_SHORT: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_UNSIGNED_SHORT: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_DECIMAL: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_FLOAT: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_DOUBLE: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_BOOLEAN: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_TIME: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_DATE_TIME: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_DURATION: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_DATE: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_G_MONTH: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_G_YEAR: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_G_YEAR_MONTH: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_G_DAY: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_G_MONTH_DAY: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_NAME: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_QNAME: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_NCNAME: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_ANY_URI: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_ID: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_IDREF: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_IDREFS: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_ENTITY: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_ENTITIES: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_NOTATION: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_NMTOKEN: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT_NMTOKENS: javax.xml.namespace.QName
-                            public static QNAME_TYPE_STRING: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NORMALIZED_STRING: javax.xml.namespace.QName
-                            public static QNAME_TYPE_TOKEN: javax.xml.namespace.QName
-                            public static QNAME_TYPE_BYTE: javax.xml.namespace.QName
-                            public static QNAME_TYPE_UNSIGNED_BYTE: javax.xml.namespace.QName
-                            public static QNAME_TYPE_BASE64_BINARY: javax.xml.namespace.QName
-                            public static QNAME_TYPE_HEX_BINARY: javax.xml.namespace.QName
-                            public static QNAME_TYPE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_TYPE_POSITIVE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NEGATIVE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NON_NEGATIVE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NON_POSITIVE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_TYPE_INT: javax.xml.namespace.QName
-                            public static QNAME_TYPE_UNSIGNED_INT: javax.xml.namespace.QName
-                            public static QNAME_TYPE_LONG: javax.xml.namespace.QName
-                            public static QNAME_TYPE_UNSIGNED_LONG: javax.xml.namespace.QName
-                            public static QNAME_TYPE_SHORT: javax.xml.namespace.QName
-                            public static QNAME_TYPE_UNSIGNED_SHORT: javax.xml.namespace.QName
-                            public static QNAME_TYPE_DECIMAL: javax.xml.namespace.QName
-                            public static QNAME_TYPE_FLOAT: javax.xml.namespace.QName
-                            public static QNAME_TYPE_DOUBLE: javax.xml.namespace.QName
-                            public static QNAME_TYPE_BOOLEAN: javax.xml.namespace.QName
-                            public static QNAME_TYPE_TIME: javax.xml.namespace.QName
-                            public static QNAME_TYPE_DATE_TIME: javax.xml.namespace.QName
-                            public static QNAME_TYPE_DURATION: javax.xml.namespace.QName
-                            public static QNAME_TYPE_DATE: javax.xml.namespace.QName
-                            public static QNAME_TYPE_G_MONTH: javax.xml.namespace.QName
-                            public static QNAME_TYPE_G_YEAR: javax.xml.namespace.QName
-                            public static QNAME_TYPE_G_YEAR_MONTH: javax.xml.namespace.QName
-                            public static QNAME_TYPE_G_DAY: javax.xml.namespace.QName
-                            public static QNAME_TYPE_G_MONTH_DAY: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NAME: javax.xml.namespace.QName
-                            public static QNAME_TYPE_QNAME: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NCNAME: javax.xml.namespace.QName
-                            public static QNAME_TYPE_ANY_URI: javax.xml.namespace.QName
-                            public static QNAME_TYPE_ID: javax.xml.namespace.QName
-                            public static QNAME_TYPE_IDREF: javax.xml.namespace.QName
-                            public static QNAME_TYPE_IDREFS: javax.xml.namespace.QName
-                            public static QNAME_TYPE_ENTITY: javax.xml.namespace.QName
-                            public static QNAME_TYPE_ENTITIES: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NOTATION: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NMTOKEN: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NMTOKENS: javax.xml.namespace.QName
-                            public static QNAME_TYPE_LANGUAGE: javax.xml.namespace.QName
-                            public static QNAME_ATTR_ID: javax.xml.namespace.QName
-                            public static QNAME_ATTR_HREF: javax.xml.namespace.QName
+                            NS_WSDL_SOAP: java.lang.String
+                            NS_SOAP_ENCODING: java.lang.String
+                            URI_SOAP_TRANSPORT_HTTP: java.lang.String
+                            QNAME_ADDRESS: javax.xml.namespace.QName
+                            QNAME_BINDING: javax.xml.namespace.QName
+                            QNAME_BODY: javax.xml.namespace.QName
+                            QNAME_FAULT: javax.xml.namespace.QName
+                            QNAME_HEADER: javax.xml.namespace.QName
+                            QNAME_HEADERFAULT: javax.xml.namespace.QName
+                            QNAME_OPERATION: javax.xml.namespace.QName
+                            QNAME_TYPE_ARRAY: javax.xml.namespace.QName
+                            QNAME_ATTR_GROUP_COMMON_ATTRIBUTES: javax.xml.namespace.QName
+                            QNAME_ATTR_ARRAY_TYPE: javax.xml.namespace.QName
+                            QNAME_ATTR_ITEM_TYPE: javax.xml.namespace.QName
+                            QNAME_ATTR_ARRAY_SIZE: javax.xml.namespace.QName
+                            QNAME_ATTR_OFFSET: javax.xml.namespace.QName
+                            QNAME_ATTR_POSITION: javax.xml.namespace.QName
+                            QNAME_TYPE_BASE64: javax.xml.namespace.QName
+                            QNAME_ELEMENT_STRING: javax.xml.namespace.QName
+                            QNAME_ELEMENT_NORMALIZED_STRING: javax.xml.namespace.QName
+                            QNAME_ELEMENT_TOKEN: javax.xml.namespace.QName
+                            QNAME_ELEMENT_BYTE: javax.xml.namespace.QName
+                            QNAME_ELEMENT_UNSIGNED_BYTE: javax.xml.namespace.QName
+                            QNAME_ELEMENT_BASE64_BINARY: javax.xml.namespace.QName
+                            QNAME_ELEMENT_HEX_BINARY: javax.xml.namespace.QName
+                            QNAME_ELEMENT_INTEGER: javax.xml.namespace.QName
+                            QNAME_ELEMENT_POSITIVE_INTEGER: javax.xml.namespace.QName
+                            QNAME_ELEMENT_NEGATIVE_INTEGER: javax.xml.namespace.QName
+                            QNAME_ELEMENT_NON_NEGATIVE_INTEGER: javax.xml.namespace.QName
+                            QNAME_ELEMENT_NON_POSITIVE_INTEGER: javax.xml.namespace.QName
+                            QNAME_ELEMENT_INT: javax.xml.namespace.QName
+                            QNAME_ELEMENT_UNSIGNED_INT: javax.xml.namespace.QName
+                            QNAME_ELEMENT_LONG: javax.xml.namespace.QName
+                            QNAME_ELEMENT_UNSIGNED_LONG: javax.xml.namespace.QName
+                            QNAME_ELEMENT_SHORT: javax.xml.namespace.QName
+                            QNAME_ELEMENT_UNSIGNED_SHORT: javax.xml.namespace.QName
+                            QNAME_ELEMENT_DECIMAL: javax.xml.namespace.QName
+                            QNAME_ELEMENT_FLOAT: javax.xml.namespace.QName
+                            QNAME_ELEMENT_DOUBLE: javax.xml.namespace.QName
+                            QNAME_ELEMENT_BOOLEAN: javax.xml.namespace.QName
+                            QNAME_ELEMENT_TIME: javax.xml.namespace.QName
+                            QNAME_ELEMENT_DATE_TIME: javax.xml.namespace.QName
+                            QNAME_ELEMENT_DURATION: javax.xml.namespace.QName
+                            QNAME_ELEMENT_DATE: javax.xml.namespace.QName
+                            QNAME_ELEMENT_G_MONTH: javax.xml.namespace.QName
+                            QNAME_ELEMENT_G_YEAR: javax.xml.namespace.QName
+                            QNAME_ELEMENT_G_YEAR_MONTH: javax.xml.namespace.QName
+                            QNAME_ELEMENT_G_DAY: javax.xml.namespace.QName
+                            QNAME_ELEMENT_G_MONTH_DAY: javax.xml.namespace.QName
+                            QNAME_ELEMENT_NAME: javax.xml.namespace.QName
+                            QNAME_ELEMENT_QNAME: javax.xml.namespace.QName
+                            QNAME_ELEMENT_NCNAME: javax.xml.namespace.QName
+                            QNAME_ELEMENT_ANY_URI: javax.xml.namespace.QName
+                            QNAME_ELEMENT_ID: javax.xml.namespace.QName
+                            QNAME_ELEMENT_IDREF: javax.xml.namespace.QName
+                            QNAME_ELEMENT_IDREFS: javax.xml.namespace.QName
+                            QNAME_ELEMENT_ENTITY: javax.xml.namespace.QName
+                            QNAME_ELEMENT_ENTITIES: javax.xml.namespace.QName
+                            QNAME_ELEMENT_NOTATION: javax.xml.namespace.QName
+                            QNAME_ELEMENT_NMTOKEN: javax.xml.namespace.QName
+                            QNAME_ELEMENT_NMTOKENS: javax.xml.namespace.QName
+                            QNAME_TYPE_STRING: javax.xml.namespace.QName
+                            QNAME_TYPE_NORMALIZED_STRING: javax.xml.namespace.QName
+                            QNAME_TYPE_TOKEN: javax.xml.namespace.QName
+                            QNAME_TYPE_BYTE: javax.xml.namespace.QName
+                            QNAME_TYPE_UNSIGNED_BYTE: javax.xml.namespace.QName
+                            QNAME_TYPE_BASE64_BINARY: javax.xml.namespace.QName
+                            QNAME_TYPE_HEX_BINARY: javax.xml.namespace.QName
+                            QNAME_TYPE_INTEGER: javax.xml.namespace.QName
+                            QNAME_TYPE_POSITIVE_INTEGER: javax.xml.namespace.QName
+                            QNAME_TYPE_NEGATIVE_INTEGER: javax.xml.namespace.QName
+                            QNAME_TYPE_NON_NEGATIVE_INTEGER: javax.xml.namespace.QName
+                            QNAME_TYPE_NON_POSITIVE_INTEGER: javax.xml.namespace.QName
+                            QNAME_TYPE_INT: javax.xml.namespace.QName
+                            QNAME_TYPE_UNSIGNED_INT: javax.xml.namespace.QName
+                            QNAME_TYPE_LONG: javax.xml.namespace.QName
+                            QNAME_TYPE_UNSIGNED_LONG: javax.xml.namespace.QName
+                            QNAME_TYPE_SHORT: javax.xml.namespace.QName
+                            QNAME_TYPE_UNSIGNED_SHORT: javax.xml.namespace.QName
+                            QNAME_TYPE_DECIMAL: javax.xml.namespace.QName
+                            QNAME_TYPE_FLOAT: javax.xml.namespace.QName
+                            QNAME_TYPE_DOUBLE: javax.xml.namespace.QName
+                            QNAME_TYPE_BOOLEAN: javax.xml.namespace.QName
+                            QNAME_TYPE_TIME: javax.xml.namespace.QName
+                            QNAME_TYPE_DATE_TIME: javax.xml.namespace.QName
+                            QNAME_TYPE_DURATION: javax.xml.namespace.QName
+                            QNAME_TYPE_DATE: javax.xml.namespace.QName
+                            QNAME_TYPE_G_MONTH: javax.xml.namespace.QName
+                            QNAME_TYPE_G_YEAR: javax.xml.namespace.QName
+                            QNAME_TYPE_G_YEAR_MONTH: javax.xml.namespace.QName
+                            QNAME_TYPE_G_DAY: javax.xml.namespace.QName
+                            QNAME_TYPE_G_MONTH_DAY: javax.xml.namespace.QName
+                            QNAME_TYPE_NAME: javax.xml.namespace.QName
+                            QNAME_TYPE_QNAME: javax.xml.namespace.QName
+                            QNAME_TYPE_NCNAME: javax.xml.namespace.QName
+                            QNAME_TYPE_ANY_URI: javax.xml.namespace.QName
+                            QNAME_TYPE_ID: javax.xml.namespace.QName
+                            QNAME_TYPE_IDREF: javax.xml.namespace.QName
+                            QNAME_TYPE_IDREFS: javax.xml.namespace.QName
+                            QNAME_TYPE_ENTITY: javax.xml.namespace.QName
+                            QNAME_TYPE_ENTITIES: javax.xml.namespace.QName
+                            QNAME_TYPE_NOTATION: javax.xml.namespace.QName
+                            QNAME_TYPE_NMTOKEN: javax.xml.namespace.QName
+                            QNAME_TYPE_NMTOKENS: javax.xml.namespace.QName
+                            QNAME_TYPE_LANGUAGE: javax.xml.namespace.QName
+                            QNAME_ATTR_ID: javax.xml.namespace.QName
+                            QNAME_ATTR_HREF: javax.xml.namespace.QName
                         }
                         class SOAP12Binding extends com.sun.tools.internal.ws.wsdl.document.soap.SOAPBinding {
                             public constructor(arg0: org.xml.sax.Locator)
                             public getElementName(): javax.xml.namespace.QName
                         }
-
+                        
                      }
                      namespace mime {
                         class MIMEContent extends com.sun.tools.internal.ws.wsdl.framework.ExtensionImpl {
@@ -39482,13 +39482,13 @@ declare namespace com {
                             public validateThis(): void
                         }
                         interface MIMEConstants {
-                            public static NS_WSDL_MIME: java.lang.String
-                            public static QNAME_CONTENT: javax.xml.namespace.QName
-                            public static QNAME_MULTIPART_RELATED: javax.xml.namespace.QName
-                            public static QNAME_PART: javax.xml.namespace.QName
-                            public static QNAME_MIME_XML: javax.xml.namespace.QName
+                            NS_WSDL_MIME: java.lang.String
+                            QNAME_CONTENT: javax.xml.namespace.QName
+                            QNAME_MULTIPART_RELATED: javax.xml.namespace.QName
+                            QNAME_PART: javax.xml.namespace.QName
+                            QNAME_MIME_XML: javax.xml.namespace.QName
                         }
-
+                        
                      }
                      namespace jaxws {
                         class JAXWSBinding extends com.sun.tools.internal.ws.wsdl.framework.ExtensionImpl {
@@ -39545,38 +39545,38 @@ declare namespace com {
                             public setPart(arg0: java.lang.String): void
                         }
                         interface JAXWSBindingsConstants {
-                            public static NS_JAXWS_BINDINGS: java.lang.String
-                            public static NS_JAXB_BINDINGS: java.lang.String
-                            public static NS_XJC_BINDINGS: java.lang.String
-                            public static JAXWS_BINDINGS: javax.xml.namespace.QName
-                            public static WSDL_LOCATION_ATTR: java.lang.String
-                            public static NODE_ATTR: java.lang.String
-                            public static VERSION_ATTR: java.lang.String
-                            public static PACKAGE: javax.xml.namespace.QName
-                            public static NAME_ATTR: java.lang.String
-                            public static JAVADOC: javax.xml.namespace.QName
-                            public static ENABLE_WRAPPER_STYLE: javax.xml.namespace.QName
-                            public static ENABLE_ASYNC_MAPPING: javax.xml.namespace.QName
-                            public static ENABLE_ADDITIONAL_SOAPHEADER_MAPPING: javax.xml.namespace.QName
-                            public static ENABLE_MIME_CONTENT: javax.xml.namespace.QName
-                            public static PROVIDER: javax.xml.namespace.QName
-                            public static CLASS: javax.xml.namespace.QName
-                            public static METHOD: javax.xml.namespace.QName
-                            public static PARAMETER: javax.xml.namespace.QName
-                            public static PART_ATTR: java.lang.String
-                            public static ELEMENT_ATTR: java.lang.String
-                            public static EXCEPTION: javax.xml.namespace.QName
-                            public static JAXB_BINDINGS: javax.xml.namespace.QName
-                            public static JAXB_BINDING_VERSION: java.lang.String
-                            public static XSD_APPINFO: javax.xml.namespace.QName
-                            public static XSD_ANNOTATION: javax.xml.namespace.QName
+                            NS_JAXWS_BINDINGS: java.lang.String
+                            NS_JAXB_BINDINGS: java.lang.String
+                            NS_XJC_BINDINGS: java.lang.String
+                            JAXWS_BINDINGS: javax.xml.namespace.QName
+                            WSDL_LOCATION_ATTR: java.lang.String
+                            NODE_ATTR: java.lang.String
+                            VERSION_ATTR: java.lang.String
+                            PACKAGE: javax.xml.namespace.QName
+                            NAME_ATTR: java.lang.String
+                            JAVADOC: javax.xml.namespace.QName
+                            ENABLE_WRAPPER_STYLE: javax.xml.namespace.QName
+                            ENABLE_ASYNC_MAPPING: javax.xml.namespace.QName
+                            ENABLE_ADDITIONAL_SOAPHEADER_MAPPING: javax.xml.namespace.QName
+                            ENABLE_MIME_CONTENT: javax.xml.namespace.QName
+                            PROVIDER: javax.xml.namespace.QName
+                            CLASS: javax.xml.namespace.QName
+                            METHOD: javax.xml.namespace.QName
+                            PARAMETER: javax.xml.namespace.QName
+                            PART_ATTR: java.lang.String
+                            ELEMENT_ATTR: java.lang.String
+                            EXCEPTION: javax.xml.namespace.QName
+                            JAXB_BINDINGS: javax.xml.namespace.QName
+                            JAXB_BINDING_VERSION: java.lang.String
+                            XSD_APPINFO: javax.xml.namespace.QName
+                            XSD_ANNOTATION: javax.xml.namespace.QName
                         }
                         class Exception {
                             constructor(...args: any[])
                             public getClassName(): com.sun.tools.internal.ws.wsdl.document.jaxws.CustomName
                             public setClassName(arg0: com.sun.tools.internal.ws.wsdl.document.jaxws.CustomName): void
                         }
-
+                        
                      }
                      namespace schema {
                         class SchemaKinds {
@@ -39590,99 +39590,99 @@ declare namespace com {
                             public static XSD_TYPE: com.sun.tools.internal.ws.wsdl.framework.Kind
                         }
                         interface SchemaConstants {
-                            public static NS_XMLNS: java.lang.String
-                            public static NS_XSD: java.lang.String
-                            public static NS_XSI: java.lang.String
-                            public static QNAME_ALL: javax.xml.namespace.QName
-                            public static QNAME_ANNOTATION: javax.xml.namespace.QName
-                            public static QNAME_ANY: javax.xml.namespace.QName
-                            public static QNAME_ANY_ATTRIBUTE: javax.xml.namespace.QName
-                            public static QNAME_ATTRIBUTE: javax.xml.namespace.QName
-                            public static QNAME_ATTRIBUTE_GROUP: javax.xml.namespace.QName
-                            public static QNAME_CHOICE: javax.xml.namespace.QName
-                            public static QNAME_COMPLEX_CONTENT: javax.xml.namespace.QName
-                            public static QNAME_COMPLEX_TYPE: javax.xml.namespace.QName
-                            public static QNAME_ELEMENT: javax.xml.namespace.QName
-                            public static QNAME_ENUMERATION: javax.xml.namespace.QName
-                            public static QNAME_EXTENSION: javax.xml.namespace.QName
-                            public static QNAME_FIELD: javax.xml.namespace.QName
-                            public static QNAME_FRACTION_DIGITS: javax.xml.namespace.QName
-                            public static QNAME_GROUP: javax.xml.namespace.QName
-                            public static QNAME_IMPORT: javax.xml.namespace.QName
-                            public static QNAME_INCLUDE: javax.xml.namespace.QName
-                            public static QNAME_KEY: javax.xml.namespace.QName
-                            public static QNAME_KEYREF: javax.xml.namespace.QName
-                            public static QNAME_LENGTH: javax.xml.namespace.QName
-                            public static QNAME_LIST: javax.xml.namespace.QName
-                            public static QNAME_MAX_EXCLUSIVE: javax.xml.namespace.QName
-                            public static QNAME_MAX_INCLUSIVE: javax.xml.namespace.QName
-                            public static QNAME_MAX_LENGTH: javax.xml.namespace.QName
-                            public static QNAME_MIN_EXCLUSIVE: javax.xml.namespace.QName
-                            public static QNAME_MIN_INCLUSIVE: javax.xml.namespace.QName
-                            public static QNAME_MIN_LENGTH: javax.xml.namespace.QName
-                            public static QNAME_NOTATION: javax.xml.namespace.QName
-                            public static QNAME_RESTRICTION: javax.xml.namespace.QName
-                            public static QNAME_PATTERN: javax.xml.namespace.QName
-                            public static QNAME_PRECISION: javax.xml.namespace.QName
-                            public static QNAME_REDEFINE: javax.xml.namespace.QName
-                            public static QNAME_SCALE: javax.xml.namespace.QName
-                            public static QNAME_SCHEMA: javax.xml.namespace.QName
-                            public static QNAME_SELECTOR: javax.xml.namespace.QName
-                            public static QNAME_SEQUENCE: javax.xml.namespace.QName
-                            public static QNAME_SIMPLE_CONTENT: javax.xml.namespace.QName
-                            public static QNAME_SIMPLE_TYPE: javax.xml.namespace.QName
-                            public static QNAME_TOTAL_DIGITS: javax.xml.namespace.QName
-                            public static QNAME_UNIQUE: javax.xml.namespace.QName
-                            public static QNAME_UNION: javax.xml.namespace.QName
-                            public static QNAME_WHITE_SPACE: javax.xml.namespace.QName
-                            public static QNAME_TYPE_STRING: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NORMALIZED_STRING: javax.xml.namespace.QName
-                            public static QNAME_TYPE_TOKEN: javax.xml.namespace.QName
-                            public static QNAME_TYPE_BYTE: javax.xml.namespace.QName
-                            public static QNAME_TYPE_UNSIGNED_BYTE: javax.xml.namespace.QName
-                            public static QNAME_TYPE_BASE64_BINARY: javax.xml.namespace.QName
-                            public static QNAME_TYPE_HEX_BINARY: javax.xml.namespace.QName
-                            public static QNAME_TYPE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_TYPE_POSITIVE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NEGATIVE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NON_NEGATIVE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NON_POSITIVE_INTEGER: javax.xml.namespace.QName
-                            public static QNAME_TYPE_INT: javax.xml.namespace.QName
-                            public static QNAME_TYPE_UNSIGNED_INT: javax.xml.namespace.QName
-                            public static QNAME_TYPE_LONG: javax.xml.namespace.QName
-                            public static QNAME_TYPE_UNSIGNED_LONG: javax.xml.namespace.QName
-                            public static QNAME_TYPE_SHORT: javax.xml.namespace.QName
-                            public static QNAME_TYPE_UNSIGNED_SHORT: javax.xml.namespace.QName
-                            public static QNAME_TYPE_DECIMAL: javax.xml.namespace.QName
-                            public static QNAME_TYPE_FLOAT: javax.xml.namespace.QName
-                            public static QNAME_TYPE_DOUBLE: javax.xml.namespace.QName
-                            public static QNAME_TYPE_BOOLEAN: javax.xml.namespace.QName
-                            public static QNAME_TYPE_TIME: javax.xml.namespace.QName
-                            public static QNAME_TYPE_DATE_TIME: javax.xml.namespace.QName
-                            public static QNAME_TYPE_DURATION: javax.xml.namespace.QName
-                            public static QNAME_TYPE_DATE: javax.xml.namespace.QName
-                            public static QNAME_TYPE_G_MONTH: javax.xml.namespace.QName
-                            public static QNAME_TYPE_G_YEAR: javax.xml.namespace.QName
-                            public static QNAME_TYPE_G_YEAR_MONTH: javax.xml.namespace.QName
-                            public static QNAME_TYPE_G_DAY: javax.xml.namespace.QName
-                            public static QNAME_TYPE_G_MONTH_DAY: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NAME: javax.xml.namespace.QName
-                            public static QNAME_TYPE_QNAME: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NCNAME: javax.xml.namespace.QName
-                            public static QNAME_TYPE_ANY_URI: javax.xml.namespace.QName
-                            public static QNAME_TYPE_ID: javax.xml.namespace.QName
-                            public static QNAME_TYPE_IDREF: javax.xml.namespace.QName
-                            public static QNAME_TYPE_IDREFS: javax.xml.namespace.QName
-                            public static QNAME_TYPE_ENTITY: javax.xml.namespace.QName
-                            public static QNAME_TYPE_ENTITIES: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NOTATION: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NMTOKEN: javax.xml.namespace.QName
-                            public static QNAME_TYPE_NMTOKENS: javax.xml.namespace.QName
-                            public static QNAME_TYPE_LANGUAGE: javax.xml.namespace.QName
-                            public static QNAME_TYPE_URTYPE: javax.xml.namespace.QName
-                            public static QNAME_TYPE_SIMPLE_URTYPE: javax.xml.namespace.QName
+                            NS_XMLNS: java.lang.String
+                            NS_XSD: java.lang.String
+                            NS_XSI: java.lang.String
+                            QNAME_ALL: javax.xml.namespace.QName
+                            QNAME_ANNOTATION: javax.xml.namespace.QName
+                            QNAME_ANY: javax.xml.namespace.QName
+                            QNAME_ANY_ATTRIBUTE: javax.xml.namespace.QName
+                            QNAME_ATTRIBUTE: javax.xml.namespace.QName
+                            QNAME_ATTRIBUTE_GROUP: javax.xml.namespace.QName
+                            QNAME_CHOICE: javax.xml.namespace.QName
+                            QNAME_COMPLEX_CONTENT: javax.xml.namespace.QName
+                            QNAME_COMPLEX_TYPE: javax.xml.namespace.QName
+                            QNAME_ELEMENT: javax.xml.namespace.QName
+                            QNAME_ENUMERATION: javax.xml.namespace.QName
+                            QNAME_EXTENSION: javax.xml.namespace.QName
+                            QNAME_FIELD: javax.xml.namespace.QName
+                            QNAME_FRACTION_DIGITS: javax.xml.namespace.QName
+                            QNAME_GROUP: javax.xml.namespace.QName
+                            QNAME_IMPORT: javax.xml.namespace.QName
+                            QNAME_INCLUDE: javax.xml.namespace.QName
+                            QNAME_KEY: javax.xml.namespace.QName
+                            QNAME_KEYREF: javax.xml.namespace.QName
+                            QNAME_LENGTH: javax.xml.namespace.QName
+                            QNAME_LIST: javax.xml.namespace.QName
+                            QNAME_MAX_EXCLUSIVE: javax.xml.namespace.QName
+                            QNAME_MAX_INCLUSIVE: javax.xml.namespace.QName
+                            QNAME_MAX_LENGTH: javax.xml.namespace.QName
+                            QNAME_MIN_EXCLUSIVE: javax.xml.namespace.QName
+                            QNAME_MIN_INCLUSIVE: javax.xml.namespace.QName
+                            QNAME_MIN_LENGTH: javax.xml.namespace.QName
+                            QNAME_NOTATION: javax.xml.namespace.QName
+                            QNAME_RESTRICTION: javax.xml.namespace.QName
+                            QNAME_PATTERN: javax.xml.namespace.QName
+                            QNAME_PRECISION: javax.xml.namespace.QName
+                            QNAME_REDEFINE: javax.xml.namespace.QName
+                            QNAME_SCALE: javax.xml.namespace.QName
+                            QNAME_SCHEMA: javax.xml.namespace.QName
+                            QNAME_SELECTOR: javax.xml.namespace.QName
+                            QNAME_SEQUENCE: javax.xml.namespace.QName
+                            QNAME_SIMPLE_CONTENT: javax.xml.namespace.QName
+                            QNAME_SIMPLE_TYPE: javax.xml.namespace.QName
+                            QNAME_TOTAL_DIGITS: javax.xml.namespace.QName
+                            QNAME_UNIQUE: javax.xml.namespace.QName
+                            QNAME_UNION: javax.xml.namespace.QName
+                            QNAME_WHITE_SPACE: javax.xml.namespace.QName
+                            QNAME_TYPE_STRING: javax.xml.namespace.QName
+                            QNAME_TYPE_NORMALIZED_STRING: javax.xml.namespace.QName
+                            QNAME_TYPE_TOKEN: javax.xml.namespace.QName
+                            QNAME_TYPE_BYTE: javax.xml.namespace.QName
+                            QNAME_TYPE_UNSIGNED_BYTE: javax.xml.namespace.QName
+                            QNAME_TYPE_BASE64_BINARY: javax.xml.namespace.QName
+                            QNAME_TYPE_HEX_BINARY: javax.xml.namespace.QName
+                            QNAME_TYPE_INTEGER: javax.xml.namespace.QName
+                            QNAME_TYPE_POSITIVE_INTEGER: javax.xml.namespace.QName
+                            QNAME_TYPE_NEGATIVE_INTEGER: javax.xml.namespace.QName
+                            QNAME_TYPE_NON_NEGATIVE_INTEGER: javax.xml.namespace.QName
+                            QNAME_TYPE_NON_POSITIVE_INTEGER: javax.xml.namespace.QName
+                            QNAME_TYPE_INT: javax.xml.namespace.QName
+                            QNAME_TYPE_UNSIGNED_INT: javax.xml.namespace.QName
+                            QNAME_TYPE_LONG: javax.xml.namespace.QName
+                            QNAME_TYPE_UNSIGNED_LONG: javax.xml.namespace.QName
+                            QNAME_TYPE_SHORT: javax.xml.namespace.QName
+                            QNAME_TYPE_UNSIGNED_SHORT: javax.xml.namespace.QName
+                            QNAME_TYPE_DECIMAL: javax.xml.namespace.QName
+                            QNAME_TYPE_FLOAT: javax.xml.namespace.QName
+                            QNAME_TYPE_DOUBLE: javax.xml.namespace.QName
+                            QNAME_TYPE_BOOLEAN: javax.xml.namespace.QName
+                            QNAME_TYPE_TIME: javax.xml.namespace.QName
+                            QNAME_TYPE_DATE_TIME: javax.xml.namespace.QName
+                            QNAME_TYPE_DURATION: javax.xml.namespace.QName
+                            QNAME_TYPE_DATE: javax.xml.namespace.QName
+                            QNAME_TYPE_G_MONTH: javax.xml.namespace.QName
+                            QNAME_TYPE_G_YEAR: javax.xml.namespace.QName
+                            QNAME_TYPE_G_YEAR_MONTH: javax.xml.namespace.QName
+                            QNAME_TYPE_G_DAY: javax.xml.namespace.QName
+                            QNAME_TYPE_G_MONTH_DAY: javax.xml.namespace.QName
+                            QNAME_TYPE_NAME: javax.xml.namespace.QName
+                            QNAME_TYPE_QNAME: javax.xml.namespace.QName
+                            QNAME_TYPE_NCNAME: javax.xml.namespace.QName
+                            QNAME_TYPE_ANY_URI: javax.xml.namespace.QName
+                            QNAME_TYPE_ID: javax.xml.namespace.QName
+                            QNAME_TYPE_IDREF: javax.xml.namespace.QName
+                            QNAME_TYPE_IDREFS: javax.xml.namespace.QName
+                            QNAME_TYPE_ENTITY: javax.xml.namespace.QName
+                            QNAME_TYPE_ENTITIES: javax.xml.namespace.QName
+                            QNAME_TYPE_NOTATION: javax.xml.namespace.QName
+                            QNAME_TYPE_NMTOKEN: javax.xml.namespace.QName
+                            QNAME_TYPE_NMTOKENS: javax.xml.namespace.QName
+                            QNAME_TYPE_LANGUAGE: javax.xml.namespace.QName
+                            QNAME_TYPE_URTYPE: javax.xml.namespace.QName
+                            QNAME_TYPE_SIMPLE_URTYPE: javax.xml.namespace.QName
                         }
-
+                        
                      }
                      namespace http {
                         class HTTPUrlReplacement extends com.sun.tools.internal.ws.wsdl.framework.ExtensionImpl {
@@ -39703,12 +39703,12 @@ declare namespace com {
                             public validateThis(): void
                         }
                         interface HTTPConstants {
-                            public static NS_WSDL_HTTP: java.lang.String
-                            public static QNAME_ADDRESS: javax.xml.namespace.QName
-                            public static QNAME_BINDING: javax.xml.namespace.QName
-                            public static QNAME_OPERATION: javax.xml.namespace.QName
-                            public static QNAME_URL_ENCODED: javax.xml.namespace.QName
-                            public static QNAME_URL_REPLACEMENT: javax.xml.namespace.QName
+                            NS_WSDL_HTTP: java.lang.String
+                            QNAME_ADDRESS: javax.xml.namespace.QName
+                            QNAME_BINDING: javax.xml.namespace.QName
+                            QNAME_OPERATION: javax.xml.namespace.QName
+                            QNAME_URL_ENCODED: javax.xml.namespace.QName
+                            QNAME_URL_REPLACEMENT: javax.xml.namespace.QName
                         }
                         class HTTPBinding extends com.sun.tools.internal.ws.wsdl.framework.ExtensionImpl {
                             public constructor(arg0: org.xml.sax.Locator)
@@ -39724,7 +39724,7 @@ declare namespace com {
                             public setLocation(arg0: java.lang.String): void
                             public validateThis(): void
                         }
-
+                        
                      }
                      class WSDLDocumentVisitorBase extends com.sun.tools.internal.ws.wsdl.framework.ExtensionVisitorBase {
                          public constructor()
@@ -39733,23 +39733,23 @@ declare namespace com {
                          visit<T>(...args: any[]): any
                      }
                      interface WSDLConstants {
-                         public static NS_XMLNS: java.lang.String
-                         public static NS_WSDL: java.lang.String
-                         public static QNAME_BINDING: javax.xml.namespace.QName
-                         public static QNAME_DEFINITIONS: javax.xml.namespace.QName
-                         public static QNAME_DOCUMENTATION: javax.xml.namespace.QName
-                         public static QNAME_FAULT: javax.xml.namespace.QName
-                         public static QNAME_IMPORT: javax.xml.namespace.QName
-                         public static QNAME_INPUT: javax.xml.namespace.QName
-                         public static QNAME_MESSAGE: javax.xml.namespace.QName
-                         public static QNAME_OPERATION: javax.xml.namespace.QName
-                         public static QNAME_OUTPUT: javax.xml.namespace.QName
-                         public static QNAME_PART: javax.xml.namespace.QName
-                         public static QNAME_PORT: javax.xml.namespace.QName
-                         public static QNAME_PORT_TYPE: javax.xml.namespace.QName
-                         public static QNAME_SERVICE: javax.xml.namespace.QName
-                         public static QNAME_TYPES: javax.xml.namespace.QName
-                         public static QNAME_ATTR_ARRAY_TYPE: javax.xml.namespace.QName
+                         NS_XMLNS: java.lang.String
+                         NS_WSDL: java.lang.String
+                         QNAME_BINDING: javax.xml.namespace.QName
+                         QNAME_DEFINITIONS: javax.xml.namespace.QName
+                         QNAME_DOCUMENTATION: javax.xml.namespace.QName
+                         QNAME_FAULT: javax.xml.namespace.QName
+                         QNAME_IMPORT: javax.xml.namespace.QName
+                         QNAME_INPUT: javax.xml.namespace.QName
+                         QNAME_MESSAGE: javax.xml.namespace.QName
+                         QNAME_OPERATION: javax.xml.namespace.QName
+                         QNAME_OUTPUT: javax.xml.namespace.QName
+                         QNAME_PART: javax.xml.namespace.QName
+                         QNAME_PORT: javax.xml.namespace.QName
+                         QNAME_PORT_TYPE: javax.xml.namespace.QName
+                         QNAME_SERVICE: javax.xml.namespace.QName
+                         QNAME_TYPES: javax.xml.namespace.QName
+                         QNAME_ATTR_ARRAY_TYPE: javax.xml.namespace.QName
                      }
                      class Kinds {
                          public static BINDING: com.sun.tools.internal.ws.wsdl.framework.Kind
@@ -39758,9 +39758,9 @@ declare namespace com {
                          public static PORT_TYPE: com.sun.tools.internal.ws.wsdl.framework.Kind
                          public static SERVICE: com.sun.tools.internal.ws.wsdl.framework.Kind
                      }
-
+                     
                   }
-
+                  
                }
                namespace resources {
                   class WsdlMessages {
@@ -40591,7 +40591,7 @@ declare namespace com {
                       public static localizableCONFIGURATION_NOT_BINDING_FILE(arg0: java.lang.Object): com.sun.istack.internal.localization.Localizable
                       public static CONFIGURATION_NOT_BINDING_FILE(arg0: java.lang.Object): java.lang.String
                   }
-
+                  
                }
                namespace wscompile {
                   class ErrorReceiverFilter extends com.sun.tools.internal.ws.wscompile.ErrorReceiver {
@@ -40773,9 +40773,9 @@ declare namespace com {
                             public getUsage(): java.lang.String
                             public run(arg0: com.sun.tools.internal.ws.processor.model.Model, arg1: com.sun.tools.internal.ws.wscompile.WsimportOptions, arg2: com.sun.tools.internal.ws.wscompile.ErrorReceiver): boolean
                         }
-
+                        
                      }
-
+                     
                   }
                   class WsimportTool$Listener extends com.sun.tools.internal.ws.wscompile.WsimportListener {
                       cer: com.sun.tools.internal.ws.processor.modeler.wsdl.ConsoleErrorReporter
@@ -40835,20 +40835,20 @@ declare namespace com {
                       public getAbstractWSDL(arg0: javax.xml.ws.Holder<java.lang.String>): javax.xml.transform.Result
                   }
                   interface WsgenTool$ReportOutput$Report extends com.sun.xml.internal.txw2.TypedXmlWriter {
-                      public wsdl(arg0: java.lang.String): void
-                      public portType(): com.sun.tools.internal.ws.wscompile.WsgenTool$ReportOutput$QualifiedName
-                      public service(): com.sun.tools.internal.ws.wscompile.WsgenTool$ReportOutput$QualifiedName
-                      public port(): com.sun.tools.internal.ws.wscompile.WsgenTool$ReportOutput$QualifiedName
-                      public implClass(arg0: java.lang.String): void
-                      public schema(): com.sun.tools.internal.ws.wscompile.WsgenTool$ReportOutput$Schema
+                      wsdl(arg0: java.lang.String): void
+                      portType(): com.sun.tools.internal.ws.wscompile.WsgenTool$ReportOutput$QualifiedName
+                      service(): com.sun.tools.internal.ws.wscompile.WsgenTool$ReportOutput$QualifiedName
+                      port(): com.sun.tools.internal.ws.wscompile.WsgenTool$ReportOutput$QualifiedName
+                      implClass(arg0: java.lang.String): void
+                      schema(): com.sun.tools.internal.ws.wscompile.WsgenTool$ReportOutput$Schema
                   }
                   interface WsgenTool$ReportOutput$QualifiedName extends com.sun.xml.internal.txw2.TypedXmlWriter {
-                      public uri(arg0: java.lang.String): void
-                      public localName(arg0: java.lang.String): void
+                      uri(arg0: java.lang.String): void
+                      localName(arg0: java.lang.String): void
                   }
                   interface WsgenTool$ReportOutput$Schema extends com.sun.xml.internal.txw2.TypedXmlWriter {
-                      public ns(arg0: java.lang.String): void
-                      public location(arg0: java.lang.String): void
+                      ns(arg0: java.lang.String): void
+                      location(arg0: java.lang.String): void
                   }
                   class WsgenTool$ReportOutput {
                       constructor()
@@ -40915,7 +40915,7 @@ declare namespace com {
                       public getPassword(): java.lang.String
                       public matchingHost(arg0: java.net.URL): boolean
                   }
-
+                  
                }
                namespace api {
                   namespace wsdl {
@@ -40935,42 +40935,42 @@ declare namespace com {
                          public handlePortExtension(arg0: com.sun.tools.internal.ws.api.wsdl.TWSDLParserContext, arg1: com.sun.tools.internal.ws.api.wsdl.TWSDLExtensible, arg2: org.w3c.dom.Element): boolean
                      }
                      interface TWSDLParserContext {
-                         public push(): void
-                         public pop(): void
-                         public getNamespaceURI(arg0: java.lang.String): java.lang.String
-                         public getPrefixes(): java.lang.Iterable<java.lang.String>
-                         public getDefaultNamespaceURI(): java.lang.String
-                         public registerNamespaces(arg0: org.w3c.dom.Element): void
-                         public getLocation(arg0: org.w3c.dom.Element): org.xml.sax.Locator
+                         push(): void
+                         pop(): void
+                         getNamespaceURI(arg0: java.lang.String): java.lang.String
+                         getPrefixes(): java.lang.Iterable<java.lang.String>
+                         getDefaultNamespaceURI(): java.lang.String
+                         registerNamespaces(arg0: org.w3c.dom.Element): void
+                         getLocation(arg0: org.w3c.dom.Element): org.xml.sax.Locator
                      }
                      interface TWSDLExtensible {
-                         public getNameValue(): java.lang.String
-                         public getNamespaceURI(): java.lang.String
-                         public getWSDLElementName(): javax.xml.namespace.QName
-                         public addExtension(arg0: com.sun.tools.internal.ws.api.wsdl.TWSDLExtension): void
-                         public extensions(): java.lang.Iterable<com.sun.tools.internal.ws.api.wsdl.TWSDLExtension>
-                         public getParent(): com.sun.tools.internal.ws.api.wsdl.TWSDLExtensible
+                         getNameValue(): java.lang.String
+                         getNamespaceURI(): java.lang.String
+                         getWSDLElementName(): javax.xml.namespace.QName
+                         addExtension(arg0: com.sun.tools.internal.ws.api.wsdl.TWSDLExtension): void
+                         extensions(): java.lang.Iterable<com.sun.tools.internal.ws.api.wsdl.TWSDLExtension>
+                         getParent(): com.sun.tools.internal.ws.api.wsdl.TWSDLExtensible
                      }
                      interface TWSDLOperation extends com.sun.tools.internal.ws.api.wsdl.TWSDLExtensible {
-                         public getFaults(): java.util.Map<java.lang.String, com.sun.codemodel.internal.JClass>
+                         getFaults(): java.util.Map<java.lang.String, com.sun.codemodel.internal.JClass>
                      }
                      interface TWSDLExtension {
-                         public getParent(): com.sun.tools.internal.ws.api.wsdl.TWSDLExtensible
+                         getParent(): com.sun.tools.internal.ws.api.wsdl.TWSDLExtensible
                      }
-
+                     
                   }
                   abstract class TJavaGeneratorExtension {
                       public constructor()
                       public writeMethodAnnotations(arg0: com.sun.tools.internal.ws.api.wsdl.TWSDLOperation, arg1: com.sun.codemodel.internal.JMethod): void
                   }
                   interface WsgenProtocol extends java.lang.annotation.Annotation {
-                      public token(): java.lang.String
-                      public lexical(): java.lang.String
+                      token(): java.lang.String
+                      lexical(): java.lang.String
                   }
                   abstract class WsgenExtension {
                       public constructor()
                   }
-
+                  
                }
                namespace processor {
                   namespace model {
@@ -41156,7 +41156,7 @@ declare namespace com {
                             static replace(arg0: java.lang.String, ...arg1: java.lang.String[]): java.lang.String
                             static createMacroTemplate(arg0: java.lang.String): java.lang.String
                         }
-
+                        
                      }
                      namespace java {
                         class JavaInterface {
@@ -41282,7 +41282,7 @@ declare namespace com {
                             public getSOAPArrayHolderName(): java.lang.String
                             public setSOAPArrayHolderName(arg0: java.lang.String): void
                         }
-
+                        
                      }
                      class Port extends com.sun.tools.internal.ws.processor.model.ModelObject {
                          public portTypes: java.util.Map<javax.xml.namespace.QName, com.sun.tools.internal.ws.wsdl.document.PortType>
@@ -41473,32 +41473,32 @@ declare namespace com {
                      }
                      namespace exporter {
                         interface ExternalObject {
-                            public getType(): java.lang.String
-                            public saveTo(arg0: org.xml.sax.ContentHandler): void
+                            getType(): java.lang.String
+                            saveTo(arg0: org.xml.sax.ContentHandler): void
                         }
-
+                        
                      }
                      interface ModelProperties {
-                         public static WSDL_MODELER_NAME: java.lang.String
-                         public static PROPERTY_PARAM_MESSAGE_PART_NAME: java.lang.String
-                         public static PROPERTY_ANONYMOUS_TYPE_NAME: java.lang.String
-                         public static PROPERTY_ANONYMOUS_ARRAY_TYPE_NAME: java.lang.String
-                         public static PROPERTY_ANONYMOUS_ARRAY_JAVA_TYPE: java.lang.String
-                         public static PROPERTY_PTIE_CLASS_NAME: java.lang.String
-                         public static PROPERTY_EPTFF_CLASS_NAME: java.lang.String
-                         public static PROPERTY_SED_CLASS_NAME: java.lang.String
-                         public static PROPERTY_WSDL_PORT_NAME: java.lang.String
-                         public static PROPERTY_WSDL_PORT_TYPE_NAME: java.lang.String
-                         public static PROPERTY_WSDL_BINDING_NAME: java.lang.String
-                         public static PROPERTY_WSDL_MESSAGE_NAME: java.lang.String
-                         public static PROPERTY_MODELER_NAME: java.lang.String
-                         public static PROPERTY_STUB_CLASS_NAME: java.lang.String
-                         public static PROPERTY_STUB_OLD_CLASS_NAME: java.lang.String
-                         public static PROPERTY_DELEGATE_CLASS_NAME: java.lang.String
-                         public static PROPERTY_CLIENT_ENCODER_DECODER_CLASS_NAME: java.lang.String
-                         public static PROPERTY_CLIENT_CONTACTINFOLIST_CLASS_NAME: java.lang.String
-                         public static PROPERTY_TIE_CLASS_NAME: java.lang.String
-                         public static PROPERTY_JAVA_PORT_NAME: java.lang.String
+                         WSDL_MODELER_NAME: java.lang.String
+                         PROPERTY_PARAM_MESSAGE_PART_NAME: java.lang.String
+                         PROPERTY_ANONYMOUS_TYPE_NAME: java.lang.String
+                         PROPERTY_ANONYMOUS_ARRAY_TYPE_NAME: java.lang.String
+                         PROPERTY_ANONYMOUS_ARRAY_JAVA_TYPE: java.lang.String
+                         PROPERTY_PTIE_CLASS_NAME: java.lang.String
+                         PROPERTY_EPTFF_CLASS_NAME: java.lang.String
+                         PROPERTY_SED_CLASS_NAME: java.lang.String
+                         PROPERTY_WSDL_PORT_NAME: java.lang.String
+                         PROPERTY_WSDL_PORT_TYPE_NAME: java.lang.String
+                         PROPERTY_WSDL_BINDING_NAME: java.lang.String
+                         PROPERTY_WSDL_MESSAGE_NAME: java.lang.String
+                         PROPERTY_MODELER_NAME: java.lang.String
+                         PROPERTY_STUB_CLASS_NAME: java.lang.String
+                         PROPERTY_STUB_OLD_CLASS_NAME: java.lang.String
+                         PROPERTY_DELEGATE_CLASS_NAME: java.lang.String
+                         PROPERTY_CLIENT_ENCODER_DECODER_CLASS_NAME: java.lang.String
+                         PROPERTY_CLIENT_CONTACTINFOLIST_CLASS_NAME: java.lang.String
+                         PROPERTY_TIE_CLASS_NAME: java.lang.String
+                         PROPERTY_JAVA_PORT_NAME: java.lang.String
                      }
                      class ModelException extends com.sun.tools.internal.ws.processor.ProcessorException {
                          constructor(...args: any[])
@@ -41524,7 +41524,7 @@ declare namespace com {
                          public setNormalOperation(arg0: com.sun.tools.internal.ws.processor.model.Operation): void
                          public getJavaMethodName(): java.lang.String
                      }
-
+                     
                   }
                   namespace modeler {
                      namespace wsdl {
@@ -41692,10 +41692,10 @@ declare namespace com {
                             public getName(): java.lang.String
                             public setName(arg0: java.lang.String): void
                         }
-
+                        
                      }
                      interface Modeler {
-                         public buildModel(): com.sun.tools.internal.ws.processor.model.Model
+                         buildModel(): com.sun.tools.internal.ws.processor.model.Model
                      }
                      namespace annotation {
                         class WrapperInfo {
@@ -41829,17 +41829,17 @@ declare namespace com {
                             public hashCode(): int
                         }
                         interface ModelBuilder {
-                            public getProcessingEnvironment(): javax.annotation.processing.ProcessingEnvironment
-                            public getOperationName(arg0: javax.lang.model.element.Name): java.lang.String
-                            public getHolderValueType(arg0: javax.lang.model.type.TypeMirror): javax.lang.model.type.TypeMirror
-                            public checkAndSetProcessed(arg0: javax.lang.model.element.TypeElement): boolean
-                            public isServiceException(arg0: javax.lang.model.type.TypeMirror): boolean
-                            public isRemote(arg0: javax.lang.model.element.TypeElement): boolean
-                            public canOverWriteClass(arg0: java.lang.String): boolean
-                            public getOptions(): com.sun.tools.internal.ws.wscompile.WsgenOptions
-                            public getSourceDir(): java.io.File
-                            public log(arg0: java.lang.String): void
-                            public processWarning(arg0: java.lang.String): void
+                            getProcessingEnvironment(): javax.annotation.processing.ProcessingEnvironment
+                            getOperationName(arg0: javax.lang.model.element.Name): java.lang.String
+                            getHolderValueType(arg0: javax.lang.model.type.TypeMirror): javax.lang.model.type.TypeMirror
+                            checkAndSetProcessed(arg0: javax.lang.model.element.TypeElement): boolean
+                            isServiceException(arg0: javax.lang.model.type.TypeMirror): boolean
+                            isRemote(arg0: javax.lang.model.element.TypeElement): boolean
+                            canOverWriteClass(arg0: java.lang.String): boolean
+                            getOptions(): com.sun.tools.internal.ws.wscompile.WsgenOptions
+                            getSourceDir(): java.io.File
+                            log(arg0: java.lang.String): void
+                            processWarning(arg0: java.lang.String): void
                             processError<T>(...args: any[]): any
                         }
                         class AnnotationProcessorContext$SeiContext {
@@ -41885,7 +41885,7 @@ declare namespace com {
                             public getBeanTypeMoniker(): com.sun.tools.internal.ws.processor.modeler.annotation.TypeMoniker
                         }
                         interface TypeMoniker {
-                            public create(arg0: javax.annotation.processing.ProcessingEnvironment): javax.lang.model.type.TypeMirror
+                            create(arg0: javax.annotation.processing.ProcessingEnvironment): javax.lang.model.type.TypeMirror
                         }
                         class WebServiceAp extends javax.annotation.processing.AbstractProcessor implements com.sun.tools.internal.ws.processor.modeler.annotation.ModelBuilder {
                             public static DO_NOT_OVERWRITE: java.lang.String
@@ -41938,7 +41938,7 @@ declare namespace com {
                             getValueMember<T>(...args: any[]): any
                             public static isSubElement(arg0: javax.lang.model.element.TypeElement, arg1: javax.lang.model.element.TypeElement): boolean
                         }
-
+                        
                      }
                      class ModelerException extends com.sun.tools.internal.ws.processor.ProcessorException {
                          constructor(...args: any[])
@@ -42037,7 +42037,7 @@ declare namespace com {
                          public static DATA_HANDLER_JAVATYPE: com.sun.tools.internal.ws.processor.model.java.JavaSimpleType
                          public static getJavaSimpleType(arg0: java.lang.String): com.sun.tools.internal.ws.processor.model.java.JavaSimpleType
                      }
-
+                     
                   }
                   namespace util {
                      class IndentingWriter extends java.io.BufferedWriter {
@@ -42086,7 +42086,7 @@ declare namespace com {
                          public getJaxbGeneratedClassNames(): java.util.Set<java.lang.String>
                          public getExceptionClassNames(): java.util.Set<java.lang.String>
                      }
-
+                     
                   }
                   namespace generator {
                      class GeneratorException extends com.sun.tools.internal.ws.processor.ProcessorException {
@@ -42180,13 +42180,13 @@ declare namespace com {
                          public getGenerator(arg0: com.sun.tools.internal.ws.processor.model.Model, arg1: com.sun.tools.internal.ws.wscompile.WsimportOptions, arg2: com.sun.tools.internal.ws.wscompile.ErrorReceiver): com.sun.tools.internal.ws.processor.generator.GeneratorBase
                          public visit(arg0: com.sun.tools.internal.ws.processor.model.Fault): void
                      }
-
+                     
                   }
                   class ProcessorException extends com.sun.xml.internal.ws.util.exception.JAXWSExceptionBase {
                       constructor(...args: any[])
                       public getDefaultResourceBundleName(): java.lang.String
                   }
-
+                  
                }
                namespace util {
                   namespace xml {
@@ -42194,7 +42194,7 @@ declare namespace com {
                          public constructor()
                          matchesTagNS<T>(...args: any[]): any
                      }
-
+                     
                   }
                   class WSToolsObjectFactoryImpl extends com.sun.tools.internal.ws.spi.WSToolsObjectFactory {
                       public constructor()
@@ -42233,7 +42233,7 @@ declare namespace com {
                       public static getQualifier(arg0: java.lang.String): java.lang.String
                       public static replaceInnerClassSym(arg0: java.lang.String): java.lang.String
                   }
-
+                  
                }
                namespace spi {
                   abstract class WSToolsObjectFactory {
@@ -42242,7 +42242,7 @@ declare namespace com {
                       wsimport<T>(...args: any[]): any
                       wsgen<T>(...args: any[]): any
                   }
-
+                  
                }
                class WsImport {
                    public constructor()
@@ -42266,9 +42266,9 @@ declare namespace com {
                    public static checkIfLoading22API(): boolean
                    public static createClassLoader(arg0: java.lang.ClassLoader): java.lang.ClassLoader
                }
-
+               
             }
-
+            
          }
          namespace corba {
             namespace se {
@@ -42328,12 +42328,12 @@ declare namespace com {
                          protected writeAbstract(): void
                      }
                      interface JavaGenerator {
-                         public helperType(arg0: int, arg1: java.lang.String, arg2: com.sun.tools.corba.se.idl.toJavaPortable.TCOffsets, arg3: java.lang.String, arg4: com.sun.tools.corba.se.idl.SymtabEntry, arg5: java.io.PrintWriter): int
-                         public helperRead(arg0: java.lang.String, arg1: com.sun.tools.corba.se.idl.SymtabEntry, arg2: java.io.PrintWriter): void
-                         public helperWrite(arg0: com.sun.tools.corba.se.idl.SymtabEntry, arg1: java.io.PrintWriter): void
-                         public read(arg0: int, arg1: java.lang.String, arg2: java.lang.String, arg3: com.sun.tools.corba.se.idl.SymtabEntry, arg4: java.io.PrintWriter): int
-                         public write(arg0: int, arg1: java.lang.String, arg2: java.lang.String, arg3: com.sun.tools.corba.se.idl.SymtabEntry, arg4: java.io.PrintWriter): int
-                         public type(arg0: int, arg1: java.lang.String, arg2: com.sun.tools.corba.se.idl.toJavaPortable.TCOffsets, arg3: java.lang.String, arg4: com.sun.tools.corba.se.idl.SymtabEntry, arg5: java.io.PrintWriter): int
+                         helperType(arg0: int, arg1: java.lang.String, arg2: com.sun.tools.corba.se.idl.toJavaPortable.TCOffsets, arg3: java.lang.String, arg4: com.sun.tools.corba.se.idl.SymtabEntry, arg5: java.io.PrintWriter): int
+                         helperRead(arg0: java.lang.String, arg1: com.sun.tools.corba.se.idl.SymtabEntry, arg2: java.io.PrintWriter): void
+                         helperWrite(arg0: com.sun.tools.corba.se.idl.SymtabEntry, arg1: java.io.PrintWriter): void
+                         read(arg0: int, arg1: java.lang.String, arg2: java.lang.String, arg3: com.sun.tools.corba.se.idl.SymtabEntry, arg4: java.io.PrintWriter): int
+                         write(arg0: int, arg1: java.lang.String, arg2: java.lang.String, arg3: com.sun.tools.corba.se.idl.SymtabEntry, arg4: java.io.PrintWriter): int
+                         type(arg0: int, arg1: java.lang.String, arg2: com.sun.tools.corba.se.idl.toJavaPortable.TCOffsets, arg3: java.lang.String, arg4: com.sun.tools.corba.se.idl.SymtabEntry, arg5: java.io.PrintWriter): int
                      }
                      class TCOffsets {
                          public constructor()
@@ -42393,7 +42393,7 @@ declare namespace com {
                          protected stubName(arg0: com.sun.tools.corba.se.idl.InterfaceEntry): java.lang.String
                      }
                      interface AuxGen {
-                         public generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.SymtabEntry): void
+                         generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.SymtabEntry): void
                      }
                      class ValueFactory implements com.sun.tools.corba.se.idl.toJavaPortable.AuxGen {
                          protected symbolTable: java.util.Hashtable
@@ -42503,7 +42503,7 @@ declare namespace com {
                          protected writeSerializationMethods(): void
                      }
                      interface NameModifier {
-                         public makeName(arg0: java.lang.String): java.lang.String
+                         makeName(arg0: java.lang.String): java.lang.String
                      }
                      class ValueBoxGen24 extends com.sun.tools.corba.se.idl.toJavaPortable.ValueBoxGen {
                          public constructor()
@@ -42914,10 +42914,10 @@ declare namespace com {
                          protected setDefaultEmitter(): void
                          protected setNameModifiers(arg0: java.lang.String, arg1: java.lang.String): void
                      }
-
+                     
                   }
                   interface ValueGen extends com.sun.tools.corba.se.idl.Generator {
-                      public generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.ValueEntry, arg2: java.io.PrintWriter): void
+                      generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.ValueEntry, arg2: java.io.PrintWriter): void
                   }
                   interface Generator {
                   }
@@ -42999,13 +42999,13 @@ declare namespace com {
                       public allMethods(): java.util.Vector
                   }
                   interface InterfaceType {
-                      public static NORMAL: int
-                      public static ABSTRACT: int
-                      public static LOCAL: int
-                      public static LOCALSERVANT: int
-                      public static LOCAL_SIGNATURE_ONLY: int
-                      public getInterfaceType(): int
-                      public setInterfaceType(arg0: int): void
+                      NORMAL: int
+                      ABSTRACT: int
+                      LOCAL: int
+                      LOCALSERVANT: int
+                      LOCAL_SIGNATURE_ONLY: int
+                      getInterfaceType(): int
+                      setInterfaceType(arg0: int): void
                   }
                   class Factories {
                       public constructor()
@@ -43119,30 +43119,30 @@ declare namespace com {
                       public constructor(arg0: int, arg1: com.sun.tools.corba.se.idl.TypedefEntry)
                   }
                   interface InterfaceGen extends com.sun.tools.corba.se.idl.Generator {
-                      public generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.InterfaceEntry, arg2: java.io.PrintWriter): void
+                      generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.InterfaceEntry, arg2: java.io.PrintWriter): void
                   }
                   interface GenFactory {
-                      public createAttributeGen(): com.sun.tools.corba.se.idl.AttributeGen
-                      public createConstGen(): com.sun.tools.corba.se.idl.ConstGen
-                      public createEnumGen(): com.sun.tools.corba.se.idl.EnumGen
-                      public createExceptionGen(): com.sun.tools.corba.se.idl.ExceptionGen
-                      public createForwardGen(): com.sun.tools.corba.se.idl.ForwardGen
-                      public createForwardValueGen(): com.sun.tools.corba.se.idl.ForwardValueGen
-                      public createIncludeGen(): com.sun.tools.corba.se.idl.IncludeGen
-                      public createInterfaceGen(): com.sun.tools.corba.se.idl.InterfaceGen
-                      public createValueGen(): com.sun.tools.corba.se.idl.ValueGen
-                      public createValueBoxGen(): com.sun.tools.corba.se.idl.ValueBoxGen
-                      public createMethodGen(): com.sun.tools.corba.se.idl.MethodGen
-                      public createModuleGen(): com.sun.tools.corba.se.idl.ModuleGen
-                      public createNativeGen(): com.sun.tools.corba.se.idl.NativeGen
-                      public createParameterGen(): com.sun.tools.corba.se.idl.ParameterGen
-                      public createPragmaGen(): com.sun.tools.corba.se.idl.PragmaGen
-                      public createPrimitiveGen(): com.sun.tools.corba.se.idl.PrimitiveGen
-                      public createSequenceGen(): com.sun.tools.corba.se.idl.SequenceGen
-                      public createStringGen(): com.sun.tools.corba.se.idl.StringGen
-                      public createStructGen(): com.sun.tools.corba.se.idl.StructGen
-                      public createTypedefGen(): com.sun.tools.corba.se.idl.TypedefGen
-                      public createUnionGen(): com.sun.tools.corba.se.idl.UnionGen
+                      createAttributeGen(): com.sun.tools.corba.se.idl.AttributeGen
+                      createConstGen(): com.sun.tools.corba.se.idl.ConstGen
+                      createEnumGen(): com.sun.tools.corba.se.idl.EnumGen
+                      createExceptionGen(): com.sun.tools.corba.se.idl.ExceptionGen
+                      createForwardGen(): com.sun.tools.corba.se.idl.ForwardGen
+                      createForwardValueGen(): com.sun.tools.corba.se.idl.ForwardValueGen
+                      createIncludeGen(): com.sun.tools.corba.se.idl.IncludeGen
+                      createInterfaceGen(): com.sun.tools.corba.se.idl.InterfaceGen
+                      createValueGen(): com.sun.tools.corba.se.idl.ValueGen
+                      createValueBoxGen(): com.sun.tools.corba.se.idl.ValueBoxGen
+                      createMethodGen(): com.sun.tools.corba.se.idl.MethodGen
+                      createModuleGen(): com.sun.tools.corba.se.idl.ModuleGen
+                      createNativeGen(): com.sun.tools.corba.se.idl.NativeGen
+                      createParameterGen(): com.sun.tools.corba.se.idl.ParameterGen
+                      createPragmaGen(): com.sun.tools.corba.se.idl.PragmaGen
+                      createPrimitiveGen(): com.sun.tools.corba.se.idl.PrimitiveGen
+                      createSequenceGen(): com.sun.tools.corba.se.idl.SequenceGen
+                      createStringGen(): com.sun.tools.corba.se.idl.StringGen
+                      createStructGen(): com.sun.tools.corba.se.idl.StructGen
+                      createTypedefGen(): com.sun.tools.corba.se.idl.TypedefGen
+                      createUnionGen(): com.sun.tools.corba.se.idl.UnionGen
                   }
                   class Arguments {
                       public file: java.lang.String
@@ -43180,36 +43180,36 @@ declare namespace com {
                       pragmaEntry<T>(...args: any[]): any
                       primitiveEntry<T>(...args: any[]): any
                       sequenceEntry<T>(...args: any[]): any
-                      public stringEntry(): com.sun.tools.corba.se.idl.StringEntry
+                      stringEntry(): com.sun.tools.corba.se.idl.StringEntry
                       structEntry<T>(...args: any[]): any
                       typedefEntry<T>(...args: any[]): any
                       unionEntry<T>(...args: any[]): any
                   }
                   namespace constExpr {
                      interface ExprFactory {
-                         public and(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.And
-                         public booleanAnd(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.BooleanAnd
-                         public booleanNot(arg0: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.BooleanNot
-                         public booleanOr(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.BooleanOr
-                         public divide(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Divide
-                         public equal(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Equal
-                         public greaterEqual(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.GreaterEqual
-                         public greaterThan(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.GreaterThan
-                         public lessEqual(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.LessEqual
-                         public lessThan(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.LessThan
-                         public minus(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Minus
-                         public modulo(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Modulo
-                         public negative(arg0: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Negative
-                         public not(arg0: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Not
-                         public notEqual(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.NotEqual
-                         public or(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Or
-                         public plus(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Plus
-                         public positive(arg0: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Positive
-                         public shiftLeft(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.ShiftLeft
-                         public shiftRight(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.ShiftRight
+                         and(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.And
+                         booleanAnd(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.BooleanAnd
+                         booleanNot(arg0: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.BooleanNot
+                         booleanOr(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.BooleanOr
+                         divide(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Divide
+                         equal(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Equal
+                         greaterEqual(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.GreaterEqual
+                         greaterThan(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.GreaterThan
+                         lessEqual(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.LessEqual
+                         lessThan(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.LessThan
+                         minus(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Minus
+                         modulo(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Modulo
+                         negative(arg0: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Negative
+                         not(arg0: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Not
+                         notEqual(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.NotEqual
+                         or(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Or
+                         plus(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Plus
+                         positive(arg0: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Positive
+                         shiftLeft(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.ShiftLeft
+                         shiftRight(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.ShiftRight
                          terminal<T>(...args: any[]): any
-                         public times(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Times
-                         public xor(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Xor
+                         times(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Times
+                         xor(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Xor
                      }
                      abstract class Expression {
                          public static negOne: java.math.BigInteger
@@ -43377,10 +43377,10 @@ declare namespace com {
                          public times(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Times
                          public xor(arg0: com.sun.tools.corba.se.idl.constExpr.Expression, arg1: com.sun.tools.corba.se.idl.constExpr.Expression): com.sun.tools.corba.se.idl.constExpr.Xor
                      }
-
+                     
                   }
                   interface IncludeGen extends com.sun.tools.corba.se.idl.Generator {
-                      public generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.IncludeEntry, arg2: java.io.PrintWriter): void
+                      generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.IncludeEntry, arg2: java.io.PrintWriter): void
                   }
                   class Token {
                       static Any: int
@@ -43550,7 +43550,7 @@ declare namespace com {
                       constructor(...args: any[])
                   }
                   interface ForwardGen extends com.sun.tools.corba.se.idl.Generator {
-                      public generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.ForwardEntry, arg2: java.io.PrintWriter): void
+                      generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.ForwardEntry, arg2: java.io.PrintWriter): void
                   }
                   class ExceptionEntry extends com.sun.tools.corba.se.idl.StructEntry {
                       static exceptionGen: com.sun.tools.corba.se.idl.ExceptionGen
@@ -43582,7 +43582,7 @@ declare namespace com {
                       passType<T>(...args: any[]): any
                   }
                   interface MethodGen extends com.sun.tools.corba.se.idl.Generator {
-                      public generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.MethodEntry, arg2: java.io.PrintWriter): void
+                      generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.MethodEntry, arg2: java.io.PrintWriter): void
                   }
                   class TypedefEntry extends com.sun.tools.corba.se.idl.SymtabEntry {
                       static typedefGen: com.sun.tools.corba.se.idl.TypedefGen
@@ -43595,52 +43595,52 @@ declare namespace com {
                       public generator(): com.sun.tools.corba.se.idl.Generator
                   }
                   interface AttributeGen extends com.sun.tools.corba.se.idl.Generator {
-                      public generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.AttributeEntry, arg2: java.io.PrintWriter): void
+                      generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.AttributeEntry, arg2: java.io.PrintWriter): void
                   }
                   interface ConstGen extends com.sun.tools.corba.se.idl.Generator {
-                      public generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.ConstEntry, arg2: java.io.PrintWriter): void
+                      generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.ConstEntry, arg2: java.io.PrintWriter): void
                   }
                   interface EnumGen extends com.sun.tools.corba.se.idl.Generator {
-                      public generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.EnumEntry, arg2: java.io.PrintWriter): void
+                      generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.EnumEntry, arg2: java.io.PrintWriter): void
                   }
                   interface ExceptionGen extends com.sun.tools.corba.se.idl.Generator {
-                      public generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.ExceptionEntry, arg2: java.io.PrintWriter): void
+                      generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.ExceptionEntry, arg2: java.io.PrintWriter): void
                   }
                   interface ForwardValueGen extends com.sun.tools.corba.se.idl.Generator {
-                      public generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.ForwardValueEntry, arg2: java.io.PrintWriter): void
+                      generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.ForwardValueEntry, arg2: java.io.PrintWriter): void
                   }
                   interface ValueBoxGen extends com.sun.tools.corba.se.idl.Generator {
-                      public generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.ValueBoxEntry, arg2: java.io.PrintWriter): void
+                      generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.ValueBoxEntry, arg2: java.io.PrintWriter): void
                   }
                   interface ModuleGen extends com.sun.tools.corba.se.idl.Generator {
-                      public generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.ModuleEntry, arg2: java.io.PrintWriter): void
+                      generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.ModuleEntry, arg2: java.io.PrintWriter): void
                   }
                   interface NativeGen extends com.sun.tools.corba.se.idl.Generator {
-                      public generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.NativeEntry, arg2: java.io.PrintWriter): void
+                      generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.NativeEntry, arg2: java.io.PrintWriter): void
                   }
                   interface ParameterGen extends com.sun.tools.corba.se.idl.Generator {
-                      public generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.ParameterEntry, arg2: java.io.PrintWriter): void
+                      generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.ParameterEntry, arg2: java.io.PrintWriter): void
                   }
                   interface PragmaGen extends com.sun.tools.corba.se.idl.Generator {
-                      public generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.PragmaEntry, arg2: java.io.PrintWriter): void
+                      generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.PragmaEntry, arg2: java.io.PrintWriter): void
                   }
                   interface PrimitiveGen extends com.sun.tools.corba.se.idl.Generator {
-                      public generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.PrimitiveEntry, arg2: java.io.PrintWriter): void
+                      generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.PrimitiveEntry, arg2: java.io.PrintWriter): void
                   }
                   interface SequenceGen extends com.sun.tools.corba.se.idl.Generator {
-                      public generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.SequenceEntry, arg2: java.io.PrintWriter): void
+                      generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.SequenceEntry, arg2: java.io.PrintWriter): void
                   }
                   interface StringGen extends com.sun.tools.corba.se.idl.Generator {
-                      public generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.StringEntry, arg2: java.io.PrintWriter): void
+                      generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.StringEntry, arg2: java.io.PrintWriter): void
                   }
                   interface StructGen extends com.sun.tools.corba.se.idl.Generator {
-                      public generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.StructEntry, arg2: java.io.PrintWriter): void
+                      generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.StructEntry, arg2: java.io.PrintWriter): void
                   }
                   interface TypedefGen extends com.sun.tools.corba.se.idl.Generator {
-                      public generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.TypedefEntry, arg2: java.io.PrintWriter): void
+                      generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.TypedefEntry, arg2: java.io.PrintWriter): void
                   }
                   interface UnionGen extends com.sun.tools.corba.se.idl.Generator {
-                      public generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.UnionEntry, arg2: java.io.PrintWriter): void
+                      generate(arg0: java.util.Hashtable, arg1: com.sun.tools.corba.se.idl.UnionEntry, arg2: java.io.PrintWriter): void
                   }
                   class InvalidArgument extends java.lang.Exception {
                       constructor(...args: any[])
@@ -43990,7 +43990,7 @@ declare namespace com {
                             public process(arg0: java.lang.String, arg1: java.lang.String): boolean
                             public static processForward(arg0: com.sun.tools.corba.se.idl.ForwardEntry): void
                         }
-
+                        
                      }
                      namespace cff {
                         abstract class Messages {
@@ -44014,9 +44014,9 @@ declare namespace com {
                             public inZipFile: boolean
                             protected constructor(arg0: java.io.InputStream, arg1: java.lang.String, arg2: boolean)
                         }
-
+                        
                      }
-
+                     
                   }
                   class ValueRepositoryId {
                       public constructor()
@@ -44053,17 +44053,17 @@ declare namespace com {
                       typedefEntry<T>(...args: any[]): any
                       unionEntry<T>(...args: any[]): any
                   }
-
+                  
                }
-
+               
             }
-
+            
          }
-
+         
       }
-
+      
    }
-
+   
 }
 declare namespace sun {
    namespace applet {
@@ -44272,9 +44272,9 @@ declare namespace sun {
           constructor(arg0: sun.applet.AppletViewer, arg1: sun.applet.AppletViewer$1)
       }
       interface AppletViewerFactory {
-          public createAppletViewer(arg0: int, arg1: int, arg2: java.net.URL, arg3: java.util.Hashtable): sun.applet.AppletViewer
-          public getBaseMenuBar(): java.awt.MenuBar
-          public isStandalone(): boolean
+          createAppletViewer(arg0: int, arg1: int, arg2: java.net.URL, arg3: java.util.Hashtable): sun.applet.AppletViewer
+          getBaseMenuBar(): java.awt.MenuBar
+          isStandalone(): boolean
       }
       class Main {
           static theUserPropertiesFile: java.io.File
@@ -44337,7 +44337,7 @@ declare namespace sun {
              public constructor()
              public getContents(): java.lang.Object[][]
          }
-
+         
       }
       class AppletThreadGroup extends java.lang.ThreadGroup {
           constructor(...args: any[])
@@ -44354,7 +44354,7 @@ declare namespace sun {
           toString<T>(...args: any[]): any
       }
       interface AppletListener extends java.util.EventListener {
-          public appletStateChanged(arg0: sun.applet.AppletEvent): void
+          appletStateChanged(arg0: sun.applet.AppletEvent): void
       }
       class AppletClassLoader extends java.net.URLClassLoader {
           usageCount: int
@@ -44550,7 +44550,7 @@ declare namespace sun {
           public getSerializedObject(): java.lang.String
           public getAppletContext(): java.applet.AppletContext
       }
-
+      
    }
    namespace security {
       namespace tools {
@@ -44661,11 +44661,11 @@ declare namespace sun {
                 public generateSignedData(arg0: com.sun.jarsigner.ContentSignerParameters, arg1: boolean, arg2: boolean): byte[]
                 public static getTimestampingURI(arg0: java.security.cert.X509Certificate): java.net.URI
             }
-
+            
          }
-
+         
       }
-
+      
    }
    namespace jvmstat {
       namespace monitor {
@@ -44679,11 +44679,11 @@ declare namespace sun {
              public static isAttachable(arg0: sun.jvmstat.monitor.MonitoredVm): boolean
          }
          interface LongMonitor extends sun.jvmstat.monitor.Monitor {
-             public longValue(): long
+             longValue(): long
          }
          interface ByteArrayMonitor extends sun.jvmstat.monitor.Monitor {
-             public byteArrayValue(): byte[]
-             public byteAt(arg0: int): byte
+             byteArrayValue(): byte[]
+             byteAt(arg0: int): byte
          }
          abstract class AbstractMonitor implements sun.jvmstat.monitor.Monitor {
              protected name: java.lang.String
@@ -44702,10 +44702,10 @@ declare namespace sun {
              public getValue(): java.lang.Object
          }
          interface StringMonitor extends sun.jvmstat.monitor.Monitor {
-             public stringValue(): java.lang.String
+             stringValue(): java.lang.String
          }
          interface IntegerMonitor extends sun.jvmstat.monitor.Monitor {
-             public intValue(): int
+             intValue(): int
          }
          abstract class MonitoredHost {
              protected hostId: sun.jvmstat.monitor.HostIdentifier
@@ -44781,8 +44781,8 @@ declare namespace sun {
                 public getTerminated(): java.util.Set
             }
             interface HostListener extends java.util.EventListener {
-                public vmStatusChanged(arg0: sun.jvmstat.monitor.event.VmStatusChangeEvent): void
-                public disconnected(arg0: sun.jvmstat.monitor.event.HostEvent): void
+                vmStatusChanged(arg0: sun.jvmstat.monitor.event.VmStatusChangeEvent): void
+                disconnected(arg0: sun.jvmstat.monitor.event.HostEvent): void
             }
             class VmEvent extends java.util.EventObject {
                 public constructor(arg0: sun.jvmstat.monitor.MonitoredVm)
@@ -44796,24 +44796,24 @@ declare namespace sun {
                 public getRemoved(): java.util.List
             }
             interface VmListener extends java.util.EventListener {
-                public monitorStatusChanged(arg0: sun.jvmstat.monitor.event.MonitorStatusChangeEvent): void
-                public monitorsUpdated(arg0: sun.jvmstat.monitor.event.VmEvent): void
-                public disconnected(arg0: sun.jvmstat.monitor.event.VmEvent): void
+                monitorStatusChanged(arg0: sun.jvmstat.monitor.event.MonitorStatusChangeEvent): void
+                monitorsUpdated(arg0: sun.jvmstat.monitor.event.VmEvent): void
+                disconnected(arg0: sun.jvmstat.monitor.event.VmEvent): void
             }
-
+            
          }
          class MonitorException extends java.lang.Exception {
              constructor(...args: any[])
          }
          interface Monitor {
-             public getName(): java.lang.String
-             public getBaseName(): java.lang.String
-             public getUnits(): sun.jvmstat.monitor.Units
-             public getVariability(): sun.jvmstat.monitor.Variability
-             public isVector(): boolean
-             public getVectorLength(): int
-             public isSupported(): boolean
-             public getValue(): java.lang.Object
+             getName(): java.lang.String
+             getBaseName(): java.lang.String
+             getUnits(): sun.jvmstat.monitor.Units
+             getVariability(): sun.jvmstat.monitor.Variability
+             isVector(): boolean
+             getVectorLength(): int
+             isSupported(): boolean
+             getValue(): java.lang.Object
          }
          class VmIdentifier {
              constructor(...args: any[])
@@ -44835,38 +44835,38 @@ declare namespace sun {
              toString<T>(...args: any[]): any
          }
          interface MonitoredVm {
-             public getVmIdentifier(): sun.jvmstat.monitor.VmIdentifier
-             public findByName(arg0: java.lang.String): sun.jvmstat.monitor.Monitor
-             public findByPattern(arg0: java.lang.String): java.util.List<sun.jvmstat.monitor.Monitor>
-             public detach(): void
-             public setInterval(arg0: int): void
-             public getInterval(): int
-             public setLastException(arg0: java.lang.Exception): void
-             public getLastException(): java.lang.Exception
-             public clearLastException(): void
-             public isErrored(): boolean
-             public addVmListener(arg0: sun.jvmstat.monitor.event.VmListener): void
-             public removeVmListener(arg0: sun.jvmstat.monitor.event.VmListener): void
+             getVmIdentifier(): sun.jvmstat.monitor.VmIdentifier
+             findByName(arg0: java.lang.String): sun.jvmstat.monitor.Monitor
+             findByPattern(arg0: java.lang.String): java.util.List<sun.jvmstat.monitor.Monitor>
+             detach(): void
+             setInterval(arg0: int): void
+             getInterval(): int
+             setLastException(arg0: java.lang.Exception): void
+             getLastException(): java.lang.Exception
+             clearLastException(): void
+             isErrored(): boolean
+             addVmListener(arg0: sun.jvmstat.monitor.event.VmListener): void
+             removeVmListener(arg0: sun.jvmstat.monitor.event.VmListener): void
          }
          namespace remote {
             interface RemoteHost extends java.rmi.Remote {
-                public attachVm(arg0: int, arg1: java.lang.String): sun.jvmstat.monitor.remote.RemoteVm
-                public detachVm(arg0: sun.jvmstat.monitor.remote.RemoteVm): void
-                public activeVms(): int[]
+                attachVm(arg0: int, arg1: java.lang.String): sun.jvmstat.monitor.remote.RemoteVm
+                detachVm(arg0: sun.jvmstat.monitor.remote.RemoteVm): void
+                activeVms(): int[]
             }
             interface BufferedMonitoredVm extends sun.jvmstat.monitor.MonitoredVm {
-                public getBytes(): byte[]
-                public getCapacity(): int
+                getBytes(): byte[]
+                getCapacity(): int
             }
             interface RemoteVm extends java.rmi.Remote {
-                public getBytes(): byte[]
-                public getCapacity(): int
-                public getLocalVmId(): int
-                public detach(): void
+                getBytes(): byte[]
+                getCapacity(): int
+                getLocalVmId(): int
+                detach(): void
             }
-
+            
          }
-
+         
       }
       namespace perfdata {
          namespace monitor {
@@ -44992,7 +44992,7 @@ declare namespace sun {
                   class PerfDataBuffer extends sun.jvmstat.perfdata.monitor.AbstractPerfDataBuffer {
                       public constructor(arg0: sun.jvmstat.monitor.VmIdentifier)
                   }
-
+                  
                }
                namespace local {
                   class LocalEventTimer extends java.util.Timer {
@@ -45074,7 +45074,7 @@ declare namespace sun {
                       constructor()
                       public accept(arg0: java.io.File, arg1: java.lang.String): boolean
                   }
-
+                  
                }
                namespace rmi {
                   class MonitoredHostProvider extends sun.jvmstat.monitor.MonitoredHost {
@@ -45132,9 +45132,9 @@ declare namespace sun {
                       constructor(...args: any[])
                       public activeVms(): java.util.Set<java.lang.Integer>
                   }
-
+                  
                }
-
+               
             }
             namespace v1_0 {
                class BasicType {
@@ -45201,7 +45201,7 @@ declare namespace sun {
                    public overflowBuffer(): java.nio.IntBuffer
                    public modificationTimeStampBuffer(): java.nio.LongBuffer
                }
-
+               
             }
             class MonitorStatus {
                 protected inserted: java.util.List
@@ -45326,13 +45326,13 @@ declare namespace sun {
                    public toChar(): int
                    toTypeCode<T>(...args: any[]): any
                }
-
+               
             }
-
+            
          }
-
+         
       }
-
+      
    }
    namespace tools {
       namespace attach {
@@ -45398,7 +45398,7 @@ declare namespace sun {
              readErrorMessage(arg0: java.io.InputStream): java.lang.String
              attachTimeout(): long
          }
-
+         
       }
       namespace jar {
          namespace resources {
@@ -45450,7 +45450,7 @@ declare namespace sun {
                 public constructor()
                 protected getContents(): java.lang.Object[][]
             }
-
+            
          }
          class CommandLine {
              public constructor()
@@ -45552,7 +45552,7 @@ declare namespace sun {
              public entries(): java.util.Enumeration<sun.net.www.MessageHeader>
              public stream(arg0: java.io.OutputStream): void
          }
-
+         
       }
       namespace jcmd {
          class Arguments {
@@ -45573,14 +45573,14 @@ declare namespace sun {
              constructor()
              compare<T>(...args: any[]): any
          }
-
+         
       }
       namespace jinfo {
          class JInfo {
              public constructor()
              public static main(arg0: java.lang.String[]): void
          }
-
+         
       }
       namespace jmap {
          class JMap {
@@ -45588,7 +45588,7 @@ declare namespace sun {
              public constructor()
              public static main(arg0: java.lang.String[]): void
          }
-
+         
       }
       namespace jps {
          class Arguments {
@@ -45610,14 +45610,14 @@ declare namespace sun {
              public constructor()
              public static main(arg0: java.lang.String[]): void
          }
-
+         
       }
       namespace jstack {
          class JStack {
              public constructor()
              public static main(arg0: java.lang.String[]): void
          }
-
+         
       }
       namespace jstatd {
          class Jstatd {
@@ -45640,7 +45640,7 @@ declare namespace sun {
              public detach(): void
              public getLocalVmId(): int
          }
-
+         
       }
       namespace native2ascii {
          class A2NFilter extends java.io.FilterReader {
@@ -45677,9 +45677,9 @@ declare namespace sun {
                 public constructor()
                 public getContents(): java.lang.Object[][]
             }
-
+            
          }
-
+         
       }
       namespace asm {
          class ArrayData {
@@ -45875,7 +45875,7 @@ declare namespace sun {
              public empty(): boolean
              public listing(arg0: java.io.PrintStream): void
          }
-
+         
       }
       namespace tree {
          class AddExpression extends sun.tools.tree.BinaryArithmeticExpression {
@@ -46998,7 +46998,7 @@ declare namespace sun {
              public clone(): java.lang.Object
              toString<T>(...args: any[]): any
          }
-
+         
       }
       namespace java {
          class ArrayType extends sun.tools.java.Type {
@@ -47126,12 +47126,12 @@ declare namespace sun {
              public constructor()
          }
          interface ParserActions {
-             public packageDeclaration(arg0: long, arg1: sun.tools.java.IdentifierToken): void
-             public importClass(arg0: long, arg1: sun.tools.java.IdentifierToken): void
-             public importPackage(arg0: long, arg1: sun.tools.java.IdentifierToken): void
-             public beginClass(arg0: long, arg1: java.lang.String, arg2: int, arg3: sun.tools.java.IdentifierToken, arg4: sun.tools.java.IdentifierToken, arg5: sun.tools.java.IdentifierToken[]): sun.tools.java.ClassDefinition
-             public endClass(arg0: long, arg1: sun.tools.java.ClassDefinition): void
-             public defineField(arg0: long, arg1: sun.tools.java.ClassDefinition, arg2: java.lang.String, arg3: int, arg4: sun.tools.java.Type, arg5: sun.tools.java.IdentifierToken, arg6: sun.tools.java.IdentifierToken[], arg7: sun.tools.java.IdentifierToken[], arg8: sun.tools.tree.Node): void
+             packageDeclaration(arg0: long, arg1: sun.tools.java.IdentifierToken): void
+             importClass(arg0: long, arg1: sun.tools.java.IdentifierToken): void
+             importPackage(arg0: long, arg1: sun.tools.java.IdentifierToken): void
+             beginClass(arg0: long, arg1: java.lang.String, arg2: int, arg3: sun.tools.java.IdentifierToken, arg4: sun.tools.java.IdentifierToken, arg5: sun.tools.java.IdentifierToken[]): sun.tools.java.ClassDefinition
+             endClass(arg0: long, arg1: sun.tools.java.ClassDefinition): void
+             defineField(arg0: long, arg1: sun.tools.java.ClassDefinition, arg2: java.lang.String, arg3: int, arg4: sun.tools.java.Type, arg5: sun.tools.java.IdentifierToken, arg6: sun.tools.java.IdentifierToken[], arg7: sun.tools.java.IdentifierToken[], arg8: sun.tools.tree.Node): void
          }
          class Scanner implements sun.tools.java.Constants {
              public static OFFSETINC: long
@@ -47575,574 +47575,574 @@ declare namespace sun {
              public cleanup(arg0: sun.tools.java.Environment): void
          }
          interface RuntimeConstants {
-             public static SIGC_VOID: char
-             public static SIG_VOID: java.lang.String
-             public static SIGC_BOOLEAN: char
-             public static SIG_BOOLEAN: java.lang.String
-             public static SIGC_BYTE: char
-             public static SIG_BYTE: java.lang.String
-             public static SIGC_CHAR: char
-             public static SIG_CHAR: java.lang.String
-             public static SIGC_SHORT: char
-             public static SIG_SHORT: java.lang.String
-             public static SIGC_INT: char
-             public static SIG_INT: java.lang.String
-             public static SIGC_LONG: char
-             public static SIG_LONG: java.lang.String
-             public static SIGC_FLOAT: char
-             public static SIG_FLOAT: java.lang.String
-             public static SIGC_DOUBLE: char
-             public static SIG_DOUBLE: java.lang.String
-             public static SIGC_ARRAY: char
-             public static SIG_ARRAY: java.lang.String
-             public static SIGC_CLASS: char
-             public static SIG_CLASS: java.lang.String
-             public static SIGC_METHOD: char
-             public static SIG_METHOD: java.lang.String
-             public static SIGC_ENDCLASS: char
-             public static SIG_ENDCLASS: java.lang.String
-             public static SIGC_ENDMETHOD: char
-             public static SIG_ENDMETHOD: java.lang.String
-             public static SIGC_PACKAGE: char
-             public static SIG_PACKAGE: java.lang.String
-             public static JAVA_MAGIC: int
-             public static JAVA_MIN_SUPPORTED_VERSION: int
-             public static JAVA_MAX_SUPPORTED_VERSION: int
-             public static JAVA_MAX_SUPPORTED_MINOR_VERSION: int
-             public static JAVA_DEFAULT_VERSION: int
-             public static JAVA_DEFAULT_MINOR_VERSION: int
-             public static CONSTANT_UTF8: int
-             public static CONSTANT_UNICODE: int
-             public static CONSTANT_INTEGER: int
-             public static CONSTANT_FLOAT: int
-             public static CONSTANT_LONG: int
-             public static CONSTANT_DOUBLE: int
-             public static CONSTANT_CLASS: int
-             public static CONSTANT_STRING: int
-             public static CONSTANT_FIELD: int
-             public static CONSTANT_METHOD: int
-             public static CONSTANT_INTERFACEMETHOD: int
-             public static CONSTANT_NAMEANDTYPE: int
-             public static CONSTANT_METHODHANDLE: int
-             public static CONSTANT_METHODTYPE: int
-             public static CONSTANT_INVOKEDYNAMIC: int
-             public static ACC_PUBLIC: int
-             public static ACC_PRIVATE: int
-             public static ACC_PROTECTED: int
-             public static ACC_STATIC: int
-             public static ACC_FINAL: int
-             public static ACC_SYNCHRONIZED: int
-             public static ACC_VOLATILE: int
-             public static ACC_TRANSIENT: int
-             public static ACC_NATIVE: int
-             public static ACC_INTERFACE: int
-             public static ACC_ABSTRACT: int
-             public static ACC_SUPER: int
-             public static ACC_STRICT: int
-             public static T_CLASS: int
-             public static T_BOOLEAN: int
-             public static T_CHAR: int
-             public static T_FLOAT: int
-             public static T_DOUBLE: int
-             public static T_BYTE: int
-             public static T_SHORT: int
-             public static T_INT: int
-             public static T_LONG: int
-             public static opc_try: int
-             public static opc_dead: int
-             public static opc_label: int
-             public static opc_nop: int
-             public static opc_aconst_null: int
-             public static opc_iconst_m1: int
-             public static opc_iconst_0: int
-             public static opc_iconst_1: int
-             public static opc_iconst_2: int
-             public static opc_iconst_3: int
-             public static opc_iconst_4: int
-             public static opc_iconst_5: int
-             public static opc_lconst_0: int
-             public static opc_lconst_1: int
-             public static opc_fconst_0: int
-             public static opc_fconst_1: int
-             public static opc_fconst_2: int
-             public static opc_dconst_0: int
-             public static opc_dconst_1: int
-             public static opc_bipush: int
-             public static opc_sipush: int
-             public static opc_ldc: int
-             public static opc_ldc_w: int
-             public static opc_ldc2_w: int
-             public static opc_iload: int
-             public static opc_lload: int
-             public static opc_fload: int
-             public static opc_dload: int
-             public static opc_aload: int
-             public static opc_iload_0: int
-             public static opc_iload_1: int
-             public static opc_iload_2: int
-             public static opc_iload_3: int
-             public static opc_lload_0: int
-             public static opc_lload_1: int
-             public static opc_lload_2: int
-             public static opc_lload_3: int
-             public static opc_fload_0: int
-             public static opc_fload_1: int
-             public static opc_fload_2: int
-             public static opc_fload_3: int
-             public static opc_dload_0: int
-             public static opc_dload_1: int
-             public static opc_dload_2: int
-             public static opc_dload_3: int
-             public static opc_aload_0: int
-             public static opc_aload_1: int
-             public static opc_aload_2: int
-             public static opc_aload_3: int
-             public static opc_iaload: int
-             public static opc_laload: int
-             public static opc_faload: int
-             public static opc_daload: int
-             public static opc_aaload: int
-             public static opc_baload: int
-             public static opc_caload: int
-             public static opc_saload: int
-             public static opc_istore: int
-             public static opc_lstore: int
-             public static opc_fstore: int
-             public static opc_dstore: int
-             public static opc_astore: int
-             public static opc_istore_0: int
-             public static opc_istore_1: int
-             public static opc_istore_2: int
-             public static opc_istore_3: int
-             public static opc_lstore_0: int
-             public static opc_lstore_1: int
-             public static opc_lstore_2: int
-             public static opc_lstore_3: int
-             public static opc_fstore_0: int
-             public static opc_fstore_1: int
-             public static opc_fstore_2: int
-             public static opc_fstore_3: int
-             public static opc_dstore_0: int
-             public static opc_dstore_1: int
-             public static opc_dstore_2: int
-             public static opc_dstore_3: int
-             public static opc_astore_0: int
-             public static opc_astore_1: int
-             public static opc_astore_2: int
-             public static opc_astore_3: int
-             public static opc_iastore: int
-             public static opc_lastore: int
-             public static opc_fastore: int
-             public static opc_dastore: int
-             public static opc_aastore: int
-             public static opc_bastore: int
-             public static opc_castore: int
-             public static opc_sastore: int
-             public static opc_pop: int
-             public static opc_pop2: int
-             public static opc_dup: int
-             public static opc_dup_x1: int
-             public static opc_dup_x2: int
-             public static opc_dup2: int
-             public static opc_dup2_x1: int
-             public static opc_dup2_x2: int
-             public static opc_swap: int
-             public static opc_iadd: int
-             public static opc_ladd: int
-             public static opc_fadd: int
-             public static opc_dadd: int
-             public static opc_isub: int
-             public static opc_lsub: int
-             public static opc_fsub: int
-             public static opc_dsub: int
-             public static opc_imul: int
-             public static opc_lmul: int
-             public static opc_fmul: int
-             public static opc_dmul: int
-             public static opc_idiv: int
-             public static opc_ldiv: int
-             public static opc_fdiv: int
-             public static opc_ddiv: int
-             public static opc_irem: int
-             public static opc_lrem: int
-             public static opc_frem: int
-             public static opc_drem: int
-             public static opc_ineg: int
-             public static opc_lneg: int
-             public static opc_fneg: int
-             public static opc_dneg: int
-             public static opc_ishl: int
-             public static opc_lshl: int
-             public static opc_ishr: int
-             public static opc_lshr: int
-             public static opc_iushr: int
-             public static opc_lushr: int
-             public static opc_iand: int
-             public static opc_land: int
-             public static opc_ior: int
-             public static opc_lor: int
-             public static opc_ixor: int
-             public static opc_lxor: int
-             public static opc_iinc: int
-             public static opc_i2l: int
-             public static opc_i2f: int
-             public static opc_i2d: int
-             public static opc_l2i: int
-             public static opc_l2f: int
-             public static opc_l2d: int
-             public static opc_f2i: int
-             public static opc_f2l: int
-             public static opc_f2d: int
-             public static opc_d2i: int
-             public static opc_d2l: int
-             public static opc_d2f: int
-             public static opc_i2b: int
-             public static opc_i2c: int
-             public static opc_i2s: int
-             public static opc_lcmp: int
-             public static opc_fcmpl: int
-             public static opc_fcmpg: int
-             public static opc_dcmpl: int
-             public static opc_dcmpg: int
-             public static opc_ifeq: int
-             public static opc_ifne: int
-             public static opc_iflt: int
-             public static opc_ifge: int
-             public static opc_ifgt: int
-             public static opc_ifle: int
-             public static opc_if_icmpeq: int
-             public static opc_if_icmpne: int
-             public static opc_if_icmplt: int
-             public static opc_if_icmpge: int
-             public static opc_if_icmpgt: int
-             public static opc_if_icmple: int
-             public static opc_if_acmpeq: int
-             public static opc_if_acmpne: int
-             public static opc_goto: int
-             public static opc_jsr: int
-             public static opc_ret: int
-             public static opc_tableswitch: int
-             public static opc_lookupswitch: int
-             public static opc_ireturn: int
-             public static opc_lreturn: int
-             public static opc_freturn: int
-             public static opc_dreturn: int
-             public static opc_areturn: int
-             public static opc_return: int
-             public static opc_getstatic: int
-             public static opc_putstatic: int
-             public static opc_getfield: int
-             public static opc_putfield: int
-             public static opc_invokevirtual: int
-             public static opc_invokespecial: int
-             public static opc_invokestatic: int
-             public static opc_invokeinterface: int
-             public static opc_invokedynamic: int
-             public static opc_new: int
-             public static opc_newarray: int
-             public static opc_anewarray: int
-             public static opc_arraylength: int
-             public static opc_athrow: int
-             public static opc_checkcast: int
-             public static opc_instanceof: int
-             public static opc_monitorenter: int
-             public static opc_monitorexit: int
-             public static opc_wide: int
-             public static opc_multianewarray: int
-             public static opc_ifnull: int
-             public static opc_ifnonnull: int
-             public static opc_goto_w: int
-             public static opc_jsr_w: int
-             public static opc_breakpoint: int
-             public static opcNames: java.lang.String[]
-             public static opcLengths: int[]
+             SIGC_VOID: char
+             SIG_VOID: java.lang.String
+             SIGC_BOOLEAN: char
+             SIG_BOOLEAN: java.lang.String
+             SIGC_BYTE: char
+             SIG_BYTE: java.lang.String
+             SIGC_CHAR: char
+             SIG_CHAR: java.lang.String
+             SIGC_SHORT: char
+             SIG_SHORT: java.lang.String
+             SIGC_INT: char
+             SIG_INT: java.lang.String
+             SIGC_LONG: char
+             SIG_LONG: java.lang.String
+             SIGC_FLOAT: char
+             SIG_FLOAT: java.lang.String
+             SIGC_DOUBLE: char
+             SIG_DOUBLE: java.lang.String
+             SIGC_ARRAY: char
+             SIG_ARRAY: java.lang.String
+             SIGC_CLASS: char
+             SIG_CLASS: java.lang.String
+             SIGC_METHOD: char
+             SIG_METHOD: java.lang.String
+             SIGC_ENDCLASS: char
+             SIG_ENDCLASS: java.lang.String
+             SIGC_ENDMETHOD: char
+             SIG_ENDMETHOD: java.lang.String
+             SIGC_PACKAGE: char
+             SIG_PACKAGE: java.lang.String
+             JAVA_MAGIC: int
+             JAVA_MIN_SUPPORTED_VERSION: int
+             JAVA_MAX_SUPPORTED_VERSION: int
+             JAVA_MAX_SUPPORTED_MINOR_VERSION: int
+             JAVA_DEFAULT_VERSION: int
+             JAVA_DEFAULT_MINOR_VERSION: int
+             CONSTANT_UTF8: int
+             CONSTANT_UNICODE: int
+             CONSTANT_INTEGER: int
+             CONSTANT_FLOAT: int
+             CONSTANT_LONG: int
+             CONSTANT_DOUBLE: int
+             CONSTANT_CLASS: int
+             CONSTANT_STRING: int
+             CONSTANT_FIELD: int
+             CONSTANT_METHOD: int
+             CONSTANT_INTERFACEMETHOD: int
+             CONSTANT_NAMEANDTYPE: int
+             CONSTANT_METHODHANDLE: int
+             CONSTANT_METHODTYPE: int
+             CONSTANT_INVOKEDYNAMIC: int
+             ACC_PUBLIC: int
+             ACC_PRIVATE: int
+             ACC_PROTECTED: int
+             ACC_STATIC: int
+             ACC_FINAL: int
+             ACC_SYNCHRONIZED: int
+             ACC_VOLATILE: int
+             ACC_TRANSIENT: int
+             ACC_NATIVE: int
+             ACC_INTERFACE: int
+             ACC_ABSTRACT: int
+             ACC_SUPER: int
+             ACC_STRICT: int
+             T_CLASS: int
+             T_BOOLEAN: int
+             T_CHAR: int
+             T_FLOAT: int
+             T_DOUBLE: int
+             T_BYTE: int
+             T_SHORT: int
+             T_INT: int
+             T_LONG: int
+             opc_try: int
+             opc_dead: int
+             opc_label: int
+             opc_nop: int
+             opc_aconst_null: int
+             opc_iconst_m1: int
+             opc_iconst_0: int
+             opc_iconst_1: int
+             opc_iconst_2: int
+             opc_iconst_3: int
+             opc_iconst_4: int
+             opc_iconst_5: int
+             opc_lconst_0: int
+             opc_lconst_1: int
+             opc_fconst_0: int
+             opc_fconst_1: int
+             opc_fconst_2: int
+             opc_dconst_0: int
+             opc_dconst_1: int
+             opc_bipush: int
+             opc_sipush: int
+             opc_ldc: int
+             opc_ldc_w: int
+             opc_ldc2_w: int
+             opc_iload: int
+             opc_lload: int
+             opc_fload: int
+             opc_dload: int
+             opc_aload: int
+             opc_iload_0: int
+             opc_iload_1: int
+             opc_iload_2: int
+             opc_iload_3: int
+             opc_lload_0: int
+             opc_lload_1: int
+             opc_lload_2: int
+             opc_lload_3: int
+             opc_fload_0: int
+             opc_fload_1: int
+             opc_fload_2: int
+             opc_fload_3: int
+             opc_dload_0: int
+             opc_dload_1: int
+             opc_dload_2: int
+             opc_dload_3: int
+             opc_aload_0: int
+             opc_aload_1: int
+             opc_aload_2: int
+             opc_aload_3: int
+             opc_iaload: int
+             opc_laload: int
+             opc_faload: int
+             opc_daload: int
+             opc_aaload: int
+             opc_baload: int
+             opc_caload: int
+             opc_saload: int
+             opc_istore: int
+             opc_lstore: int
+             opc_fstore: int
+             opc_dstore: int
+             opc_astore: int
+             opc_istore_0: int
+             opc_istore_1: int
+             opc_istore_2: int
+             opc_istore_3: int
+             opc_lstore_0: int
+             opc_lstore_1: int
+             opc_lstore_2: int
+             opc_lstore_3: int
+             opc_fstore_0: int
+             opc_fstore_1: int
+             opc_fstore_2: int
+             opc_fstore_3: int
+             opc_dstore_0: int
+             opc_dstore_1: int
+             opc_dstore_2: int
+             opc_dstore_3: int
+             opc_astore_0: int
+             opc_astore_1: int
+             opc_astore_2: int
+             opc_astore_3: int
+             opc_iastore: int
+             opc_lastore: int
+             opc_fastore: int
+             opc_dastore: int
+             opc_aastore: int
+             opc_bastore: int
+             opc_castore: int
+             opc_sastore: int
+             opc_pop: int
+             opc_pop2: int
+             opc_dup: int
+             opc_dup_x1: int
+             opc_dup_x2: int
+             opc_dup2: int
+             opc_dup2_x1: int
+             opc_dup2_x2: int
+             opc_swap: int
+             opc_iadd: int
+             opc_ladd: int
+             opc_fadd: int
+             opc_dadd: int
+             opc_isub: int
+             opc_lsub: int
+             opc_fsub: int
+             opc_dsub: int
+             opc_imul: int
+             opc_lmul: int
+             opc_fmul: int
+             opc_dmul: int
+             opc_idiv: int
+             opc_ldiv: int
+             opc_fdiv: int
+             opc_ddiv: int
+             opc_irem: int
+             opc_lrem: int
+             opc_frem: int
+             opc_drem: int
+             opc_ineg: int
+             opc_lneg: int
+             opc_fneg: int
+             opc_dneg: int
+             opc_ishl: int
+             opc_lshl: int
+             opc_ishr: int
+             opc_lshr: int
+             opc_iushr: int
+             opc_lushr: int
+             opc_iand: int
+             opc_land: int
+             opc_ior: int
+             opc_lor: int
+             opc_ixor: int
+             opc_lxor: int
+             opc_iinc: int
+             opc_i2l: int
+             opc_i2f: int
+             opc_i2d: int
+             opc_l2i: int
+             opc_l2f: int
+             opc_l2d: int
+             opc_f2i: int
+             opc_f2l: int
+             opc_f2d: int
+             opc_d2i: int
+             opc_d2l: int
+             opc_d2f: int
+             opc_i2b: int
+             opc_i2c: int
+             opc_i2s: int
+             opc_lcmp: int
+             opc_fcmpl: int
+             opc_fcmpg: int
+             opc_dcmpl: int
+             opc_dcmpg: int
+             opc_ifeq: int
+             opc_ifne: int
+             opc_iflt: int
+             opc_ifge: int
+             opc_ifgt: int
+             opc_ifle: int
+             opc_if_icmpeq: int
+             opc_if_icmpne: int
+             opc_if_icmplt: int
+             opc_if_icmpge: int
+             opc_if_icmpgt: int
+             opc_if_icmple: int
+             opc_if_acmpeq: int
+             opc_if_acmpne: int
+             opc_goto: int
+             opc_jsr: int
+             opc_ret: int
+             opc_tableswitch: int
+             opc_lookupswitch: int
+             opc_ireturn: int
+             opc_lreturn: int
+             opc_freturn: int
+             opc_dreturn: int
+             opc_areturn: int
+             opc_return: int
+             opc_getstatic: int
+             opc_putstatic: int
+             opc_getfield: int
+             opc_putfield: int
+             opc_invokevirtual: int
+             opc_invokespecial: int
+             opc_invokestatic: int
+             opc_invokeinterface: int
+             opc_invokedynamic: int
+             opc_new: int
+             opc_newarray: int
+             opc_anewarray: int
+             opc_arraylength: int
+             opc_athrow: int
+             opc_checkcast: int
+             opc_instanceof: int
+             opc_monitorenter: int
+             opc_monitorexit: int
+             opc_wide: int
+             opc_multianewarray: int
+             opc_ifnull: int
+             opc_ifnonnull: int
+             opc_goto_w: int
+             opc_jsr_w: int
+             opc_breakpoint: int
+             opcNames: java.lang.String[]
+             opcLengths: int[]
          }
          interface Constants extends sun.tools.java.RuntimeConstants {
-             public static tracing: boolean
-             public static idAppend: sun.tools.java.Identifier
-             public static idClassInit: sun.tools.java.Identifier
-             public static idCode: sun.tools.java.Identifier
-             public static idInit: sun.tools.java.Identifier
-             public static idLength: sun.tools.java.Identifier
-             public static idNull: sun.tools.java.Identifier
-             public static idStar: sun.tools.java.Identifier
-             public static idSuper: sun.tools.java.Identifier
-             public static idThis: sun.tools.java.Identifier
-             public static idClass: sun.tools.java.Identifier
-             public static idToString: sun.tools.java.Identifier
-             public static idValueOf: sun.tools.java.Identifier
-             public static idNew: sun.tools.java.Identifier
-             public static idGetClass: sun.tools.java.Identifier
-             public static idTYPE: sun.tools.java.Identifier
-             public static idFinallyReturnValue: sun.tools.java.Identifier
-             public static idJavaLang: sun.tools.java.Identifier
-             public static idJavaLangCloneable: sun.tools.java.Identifier
-             public static idJavaLangError: sun.tools.java.Identifier
-             public static idJavaLangException: sun.tools.java.Identifier
-             public static idJavaLangObject: sun.tools.java.Identifier
-             public static idJavaLangClass: sun.tools.java.Identifier
-             public static idJavaLangRuntimeException: sun.tools.java.Identifier
-             public static idJavaLangString: sun.tools.java.Identifier
-             public static idJavaLangStringBuffer: sun.tools.java.Identifier
-             public static idJavaLangThrowable: sun.tools.java.Identifier
-             public static idJavaIoSerializable: sun.tools.java.Identifier
-             public static idConstantValue: sun.tools.java.Identifier
-             public static idLocalVariableTable: sun.tools.java.Identifier
-             public static idLineNumberTable: sun.tools.java.Identifier
-             public static idCoverageTable: sun.tools.java.Identifier
-             public static idSourceFile: sun.tools.java.Identifier
-             public static idDocumentation: sun.tools.java.Identifier
-             public static idDeprecated: sun.tools.java.Identifier
-             public static idSynthetic: sun.tools.java.Identifier
-             public static idExceptions: sun.tools.java.Identifier
-             public static idInnerClasses: sun.tools.java.Identifier
-             public static idClone: sun.tools.java.Identifier
-             public static SIGC_INNERCLASS: char
-             public static SIG_INNERCLASS: java.lang.String
-             public static prefixThis: java.lang.String
-             public static prefixVal: java.lang.String
-             public static prefixLoc: java.lang.String
-             public static prefixAccess: java.lang.String
-             public static prefixClass: java.lang.String
-             public static prefixArray: java.lang.String
-             public static F_VERBOSE: int
-             public static F_DUMP: int
-             public static F_WARNINGS: int
-             public static F_DEBUG_LINES: int
-             public static F_DEBUG_VARS: int
-             public static F_DEBUG_SOURCE: int
-             public static F_OPT: int
-             public static F_OPT_INTERCLASS: int
-             public static F_DEPENDENCIES: int
-             public static F_COVERAGE: int
-             public static F_COVDATA: int
-             public static F_DEPRECATION: int
-             public static F_PRINT_DEPENDENCIES: int
-             public static F_VERSION12: int
-             public static F_ERRORSREPORTED: int
-             public static F_STRICTDEFAULT: int
-             public static M_PUBLIC: int
-             public static M_PRIVATE: int
-             public static M_PROTECTED: int
-             public static M_STATIC: int
-             public static M_TRANSIENT: int
-             public static M_SYNCHRONIZED: int
-             public static M_ABSTRACT: int
-             public static M_NATIVE: int
-             public static M_FINAL: int
-             public static M_VOLATILE: int
-             public static M_INTERFACE: int
-             public static M_ANONYMOUS: int
-             public static M_LOCAL: int
-             public static M_DEPRECATED: int
-             public static M_SYNTHETIC: int
-             public static M_INLINEABLE: int
-             public static M_STRICTFP: int
-             public static paraDeprecated: java.lang.String
-             public static MM_CLASS: int
-             public static MM_MEMBER: int
-             public static MM_FIELD: int
-             public static MM_METHOD: int
-             public static ACCM_CLASS: int
-             public static ACCM_MEMBER: int
-             public static ACCM_INNERCLASS: int
-             public static ACCM_FIELD: int
-             public static ACCM_METHOD: int
-             public static TC_BOOLEAN: int
-             public static TC_BYTE: int
-             public static TC_CHAR: int
-             public static TC_SHORT: int
-             public static TC_INT: int
-             public static TC_LONG: int
-             public static TC_FLOAT: int
-             public static TC_DOUBLE: int
-             public static TC_NULL: int
-             public static TC_ARRAY: int
-             public static TC_CLASS: int
-             public static TC_VOID: int
-             public static TC_METHOD: int
-             public static TC_ERROR: int
-             public static CT_FIRST_KIND: int
-             public static CT_METHOD: int
-             public static CT_FIKT_METHOD: int
-             public static CT_BLOCK: int
-             public static CT_FIKT_RET: int
-             public static CT_CASE: int
-             public static CT_SWITH_WO_DEF: int
-             public static CT_BRANCH_TRUE: int
-             public static CT_BRANCH_FALSE: int
-             public static CT_LAST_KIND: int
-             public static TM_NULL: int
-             public static TM_VOID: int
-             public static TM_BOOLEAN: int
-             public static TM_BYTE: int
-             public static TM_CHAR: int
-             public static TM_SHORT: int
-             public static TM_INT: int
-             public static TM_LONG: int
-             public static TM_FLOAT: int
-             public static TM_DOUBLE: int
-             public static TM_ARRAY: int
-             public static TM_CLASS: int
-             public static TM_METHOD: int
-             public static TM_ERROR: int
-             public static TM_INT32: int
-             public static TM_NUM32: int
-             public static TM_NUM64: int
-             public static TM_INTEGER: int
-             public static TM_REAL: int
-             public static TM_NUMBER: int
-             public static TM_REFERENCE: int
-             public static CS_UNDEFINED: int
-             public static CS_UNDECIDED: int
-             public static CS_BINARY: int
-             public static CS_SOURCE: int
-             public static CS_PARSED: int
-             public static CS_CHECKED: int
-             public static CS_COMPILED: int
-             public static CS_NOTFOUND: int
-             public static ATT_ALL: int
-             public static ATT_CODE: int
-             public static ATT_ALLCLASSES: int
-             public static WHEREOFFSETBITS: int
-             public static MAXFILESIZE: long
-             public static MAXLINENUMBER: long
-             public static COMMA: int
-             public static ASSIGN: int
-             public static ASGMUL: int
-             public static ASGDIV: int
-             public static ASGREM: int
-             public static ASGADD: int
-             public static ASGSUB: int
-             public static ASGLSHIFT: int
-             public static ASGRSHIFT: int
-             public static ASGURSHIFT: int
-             public static ASGBITAND: int
-             public static ASGBITOR: int
-             public static ASGBITXOR: int
-             public static COND: int
-             public static OR: int
-             public static AND: int
-             public static BITOR: int
-             public static BITXOR: int
-             public static BITAND: int
-             public static NE: int
-             public static EQ: int
-             public static GE: int
-             public static GT: int
-             public static LE: int
-             public static LT: int
-             public static INSTANCEOF: int
-             public static LSHIFT: int
-             public static RSHIFT: int
-             public static URSHIFT: int
-             public static ADD: int
-             public static SUB: int
-             public static DIV: int
-             public static REM: int
-             public static MUL: int
-             public static CAST: int
-             public static POS: int
-             public static NEG: int
-             public static NOT: int
-             public static BITNOT: int
-             public static PREINC: int
-             public static PREDEC: int
-             public static NEWARRAY: int
-             public static NEWINSTANCE: int
-             public static NEWFROMNAME: int
-             public static POSTINC: int
-             public static POSTDEC: int
-             public static FIELD: int
-             public static METHOD: int
-             public static ARRAYACCESS: int
-             public static NEW: int
-             public static INC: int
-             public static DEC: int
-             public static CONVERT: int
-             public static EXPR: int
-             public static ARRAY: int
-             public static GOTO: int
-             public static IDENT: int
-             public static BOOLEANVAL: int
-             public static BYTEVAL: int
-             public static CHARVAL: int
-             public static SHORTVAL: int
-             public static INTVAL: int
-             public static LONGVAL: int
-             public static FLOATVAL: int
-             public static DOUBLEVAL: int
-             public static STRINGVAL: int
-             public static BYTE: int
-             public static CHAR: int
-             public static SHORT: int
-             public static INT: int
-             public static LONG: int
-             public static FLOAT: int
-             public static DOUBLE: int
-             public static VOID: int
-             public static BOOLEAN: int
-             public static TRUE: int
-             public static FALSE: int
-             public static THIS: int
-             public static SUPER: int
-             public static NULL: int
-             public static IF: int
-             public static ELSE: int
-             public static FOR: int
-             public static WHILE: int
-             public static DO: int
-             public static SWITCH: int
-             public static CASE: int
-             public static DEFAULT: int
-             public static BREAK: int
-             public static CONTINUE: int
-             public static RETURN: int
-             public static TRY: int
-             public static CATCH: int
-             public static FINALLY: int
-             public static THROW: int
-             public static STAT: int
-             public static EXPRESSION: int
-             public static DECLARATION: int
-             public static VARDECLARATION: int
-             public static IMPORT: int
-             public static CLASS: int
-             public static EXTENDS: int
-             public static IMPLEMENTS: int
-             public static INTERFACE: int
-             public static PACKAGE: int
-             public static PRIVATE: int
-             public static PUBLIC: int
-             public static PROTECTED: int
-             public static CONST: int
-             public static STATIC: int
-             public static TRANSIENT: int
-             public static SYNCHRONIZED: int
-             public static NATIVE: int
-             public static FINAL: int
-             public static VOLATILE: int
-             public static ABSTRACT: int
-             public static STRICTFP: int
-             public static SEMICOLON: int
-             public static COLON: int
-             public static QUESTIONMARK: int
-             public static LBRACE: int
-             public static RBRACE: int
-             public static LPAREN: int
-             public static RPAREN: int
-             public static LSQBRACKET: int
-             public static RSQBRACKET: int
-             public static THROWS: int
-             public static ERROR: int
-             public static COMMENT: int
-             public static TYPE: int
-             public static LENGTH: int
-             public static INLINERETURN: int
-             public static INLINEMETHOD: int
-             public static INLINENEWINSTANCE: int
-             public static opPrecedence: int[]
-             public static opNames: java.lang.String[]
+             tracing: boolean
+             idAppend: sun.tools.java.Identifier
+             idClassInit: sun.tools.java.Identifier
+             idCode: sun.tools.java.Identifier
+             idInit: sun.tools.java.Identifier
+             idLength: sun.tools.java.Identifier
+             idNull: sun.tools.java.Identifier
+             idStar: sun.tools.java.Identifier
+             idSuper: sun.tools.java.Identifier
+             idThis: sun.tools.java.Identifier
+             idClass: sun.tools.java.Identifier
+             idToString: sun.tools.java.Identifier
+             idValueOf: sun.tools.java.Identifier
+             idNew: sun.tools.java.Identifier
+             idGetClass: sun.tools.java.Identifier
+             idTYPE: sun.tools.java.Identifier
+             idFinallyReturnValue: sun.tools.java.Identifier
+             idJavaLang: sun.tools.java.Identifier
+             idJavaLangCloneable: sun.tools.java.Identifier
+             idJavaLangError: sun.tools.java.Identifier
+             idJavaLangException: sun.tools.java.Identifier
+             idJavaLangObject: sun.tools.java.Identifier
+             idJavaLangClass: sun.tools.java.Identifier
+             idJavaLangRuntimeException: sun.tools.java.Identifier
+             idJavaLangString: sun.tools.java.Identifier
+             idJavaLangStringBuffer: sun.tools.java.Identifier
+             idJavaLangThrowable: sun.tools.java.Identifier
+             idJavaIoSerializable: sun.tools.java.Identifier
+             idConstantValue: sun.tools.java.Identifier
+             idLocalVariableTable: sun.tools.java.Identifier
+             idLineNumberTable: sun.tools.java.Identifier
+             idCoverageTable: sun.tools.java.Identifier
+             idSourceFile: sun.tools.java.Identifier
+             idDocumentation: sun.tools.java.Identifier
+             idDeprecated: sun.tools.java.Identifier
+             idSynthetic: sun.tools.java.Identifier
+             idExceptions: sun.tools.java.Identifier
+             idInnerClasses: sun.tools.java.Identifier
+             idClone: sun.tools.java.Identifier
+             SIGC_INNERCLASS: char
+             SIG_INNERCLASS: java.lang.String
+             prefixThis: java.lang.String
+             prefixVal: java.lang.String
+             prefixLoc: java.lang.String
+             prefixAccess: java.lang.String
+             prefixClass: java.lang.String
+             prefixArray: java.lang.String
+             F_VERBOSE: int
+             F_DUMP: int
+             F_WARNINGS: int
+             F_DEBUG_LINES: int
+             F_DEBUG_VARS: int
+             F_DEBUG_SOURCE: int
+             F_OPT: int
+             F_OPT_INTERCLASS: int
+             F_DEPENDENCIES: int
+             F_COVERAGE: int
+             F_COVDATA: int
+             F_DEPRECATION: int
+             F_PRINT_DEPENDENCIES: int
+             F_VERSION12: int
+             F_ERRORSREPORTED: int
+             F_STRICTDEFAULT: int
+             M_PUBLIC: int
+             M_PRIVATE: int
+             M_PROTECTED: int
+             M_STATIC: int
+             M_TRANSIENT: int
+             M_SYNCHRONIZED: int
+             M_ABSTRACT: int
+             M_NATIVE: int
+             M_FINAL: int
+             M_VOLATILE: int
+             M_INTERFACE: int
+             M_ANONYMOUS: int
+             M_LOCAL: int
+             M_DEPRECATED: int
+             M_SYNTHETIC: int
+             M_INLINEABLE: int
+             M_STRICTFP: int
+             paraDeprecated: java.lang.String
+             MM_CLASS: int
+             MM_MEMBER: int
+             MM_FIELD: int
+             MM_METHOD: int
+             ACCM_CLASS: int
+             ACCM_MEMBER: int
+             ACCM_INNERCLASS: int
+             ACCM_FIELD: int
+             ACCM_METHOD: int
+             TC_BOOLEAN: int
+             TC_BYTE: int
+             TC_CHAR: int
+             TC_SHORT: int
+             TC_INT: int
+             TC_LONG: int
+             TC_FLOAT: int
+             TC_DOUBLE: int
+             TC_NULL: int
+             TC_ARRAY: int
+             TC_CLASS: int
+             TC_VOID: int
+             TC_METHOD: int
+             TC_ERROR: int
+             CT_FIRST_KIND: int
+             CT_METHOD: int
+             CT_FIKT_METHOD: int
+             CT_BLOCK: int
+             CT_FIKT_RET: int
+             CT_CASE: int
+             CT_SWITH_WO_DEF: int
+             CT_BRANCH_TRUE: int
+             CT_BRANCH_FALSE: int
+             CT_LAST_KIND: int
+             TM_NULL: int
+             TM_VOID: int
+             TM_BOOLEAN: int
+             TM_BYTE: int
+             TM_CHAR: int
+             TM_SHORT: int
+             TM_INT: int
+             TM_LONG: int
+             TM_FLOAT: int
+             TM_DOUBLE: int
+             TM_ARRAY: int
+             TM_CLASS: int
+             TM_METHOD: int
+             TM_ERROR: int
+             TM_INT32: int
+             TM_NUM32: int
+             TM_NUM64: int
+             TM_INTEGER: int
+             TM_REAL: int
+             TM_NUMBER: int
+             TM_REFERENCE: int
+             CS_UNDEFINED: int
+             CS_UNDECIDED: int
+             CS_BINARY: int
+             CS_SOURCE: int
+             CS_PARSED: int
+             CS_CHECKED: int
+             CS_COMPILED: int
+             CS_NOTFOUND: int
+             ATT_ALL: int
+             ATT_CODE: int
+             ATT_ALLCLASSES: int
+             WHEREOFFSETBITS: int
+             MAXFILESIZE: long
+             MAXLINENUMBER: long
+             COMMA: int
+             ASSIGN: int
+             ASGMUL: int
+             ASGDIV: int
+             ASGREM: int
+             ASGADD: int
+             ASGSUB: int
+             ASGLSHIFT: int
+             ASGRSHIFT: int
+             ASGURSHIFT: int
+             ASGBITAND: int
+             ASGBITOR: int
+             ASGBITXOR: int
+             COND: int
+             OR: int
+             AND: int
+             BITOR: int
+             BITXOR: int
+             BITAND: int
+             NE: int
+             EQ: int
+             GE: int
+             GT: int
+             LE: int
+             LT: int
+             INSTANCEOF: int
+             LSHIFT: int
+             RSHIFT: int
+             URSHIFT: int
+             ADD: int
+             SUB: int
+             DIV: int
+             REM: int
+             MUL: int
+             CAST: int
+             POS: int
+             NEG: int
+             NOT: int
+             BITNOT: int
+             PREINC: int
+             PREDEC: int
+             NEWARRAY: int
+             NEWINSTANCE: int
+             NEWFROMNAME: int
+             POSTINC: int
+             POSTDEC: int
+             FIELD: int
+             METHOD: int
+             ARRAYACCESS: int
+             NEW: int
+             INC: int
+             DEC: int
+             CONVERT: int
+             EXPR: int
+             ARRAY: int
+             GOTO: int
+             IDENT: int
+             BOOLEANVAL: int
+             BYTEVAL: int
+             CHARVAL: int
+             SHORTVAL: int
+             INTVAL: int
+             LONGVAL: int
+             FLOATVAL: int
+             DOUBLEVAL: int
+             STRINGVAL: int
+             BYTE: int
+             CHAR: int
+             SHORT: int
+             INT: int
+             LONG: int
+             FLOAT: int
+             DOUBLE: int
+             VOID: int
+             BOOLEAN: int
+             TRUE: int
+             FALSE: int
+             THIS: int
+             SUPER: int
+             NULL: int
+             IF: int
+             ELSE: int
+             FOR: int
+             WHILE: int
+             DO: int
+             SWITCH: int
+             CASE: int
+             DEFAULT: int
+             BREAK: int
+             CONTINUE: int
+             RETURN: int
+             TRY: int
+             CATCH: int
+             FINALLY: int
+             THROW: int
+             STAT: int
+             EXPRESSION: int
+             DECLARATION: int
+             VARDECLARATION: int
+             IMPORT: int
+             CLASS: int
+             EXTENDS: int
+             IMPLEMENTS: int
+             INTERFACE: int
+             PACKAGE: int
+             PRIVATE: int
+             PUBLIC: int
+             PROTECTED: int
+             CONST: int
+             STATIC: int
+             TRANSIENT: int
+             SYNCHRONIZED: int
+             NATIVE: int
+             FINAL: int
+             VOLATILE: int
+             ABSTRACT: int
+             STRICTFP: int
+             SEMICOLON: int
+             COLON: int
+             QUESTIONMARK: int
+             LBRACE: int
+             RBRACE: int
+             LPAREN: int
+             RPAREN: int
+             LSQBRACKET: int
+             RSQBRACKET: int
+             THROWS: int
+             ERROR: int
+             COMMENT: int
+             TYPE: int
+             LENGTH: int
+             INLINERETURN: int
+             INLINEMETHOD: int
+             INLINENEWINSTANCE: int
+             opPrecedence: int[]
+             opNames: java.lang.String[]
          }
          class MemberDefinition implements sun.tools.java.Constants {
              protected where: long
@@ -48231,7 +48231,7 @@ declare namespace sun {
              public print(arg0: java.io.PrintStream): void
              public cleanup(arg0: sun.tools.java.Environment): void
          }
-
+         
       }
       namespace util {
          class CommandLine {
@@ -48246,7 +48246,7 @@ declare namespace sun {
              public checkMember(arg0: sun.tools.java.MemberDefinition): boolean
              public checkClass(arg0: sun.tools.java.ClassDefinition): boolean
          }
-
+         
       }
       namespace jstat {
          class AscendingMonitorComparator implements java.util.Comparator<sun.jvmstat.monitor.Monitor> {
@@ -48419,8 +48419,8 @@ declare namespace sun {
              getOptionFormat(): sun.tools.jstat.OptionFormat
          }
          interface OutputFormatter {
-             public getHeader(): java.lang.String
-             public getRow(): java.lang.String
+             getHeader(): java.lang.String
+             getRow(): java.lang.String
          }
          class RawOutputFormatter implements sun.tools.jstat.OutputFormatter {
              public constructor(arg0: java.util.List, arg1: boolean)
@@ -48498,10 +48498,10 @@ declare namespace sun {
              toString<T>(...args: any[]): any
          }
          interface ExpressionEvaluator {
-             public evaluate(arg0: sun.tools.jstat.Expression): java.lang.Object
+             evaluate(arg0: sun.tools.jstat.Expression): java.lang.Object
          }
          interface Closure {
-             public visit(arg0: java.lang.Object, arg1: boolean): void
+             visit(arg0: java.lang.Object, arg1: boolean): void
          }
          class SymbolResolutionClosure implements sun.tools.jstat.Closure {
              public constructor(arg0: sun.tools.jstat.ExpressionEvaluator)
@@ -48522,7 +48522,7 @@ declare namespace sun {
              public toMessage(): java.lang.String
              toString<T>(...args: any[]): any
          }
-
+         
       }
       namespace serialver {
          class Res {
@@ -48558,7 +48558,7 @@ declare namespace sun {
              public static main(arg0: java.lang.String[]): void
              public static usage(): void
          }
-
+         
       }
       namespace javac {
          class BatchEnvironment extends sun.tools.java.Environment implements sun.tools.javac.ErrorConsumer {
@@ -48635,7 +48635,7 @@ declare namespace sun {
              getKey(): java.lang.String
          }
          interface ErrorConsumer {
-             public pushError(arg0: java.lang.String, arg1: int, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): void
+             pushError(arg0: java.lang.String, arg1: int, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): void
          }
          class ErrorMessage {
              where: long
@@ -48730,9 +48730,9 @@ declare namespace sun {
              public codeInit(arg0: sun.tools.java.Environment, arg1: sun.tools.tree.Context, arg2: sun.tools.asm.Assembler): void
              public print(arg0: java.io.PrintStream): void
          }
-
+         
       }
-
+      
    }
    namespace rmi {
       namespace rmic {
@@ -48764,21 +48764,21 @@ declare namespace sun {
              protected static sourceFileForClass(arg0: sun.tools.java.Identifier, arg1: sun.tools.java.Identifier, arg2: java.io.File, arg3: sun.rmi.rmic.BatchEnvironment): java.io.File
          }
          interface RMIConstants extends sun.rmi.rmic.Constants {
-             public static idRemoteObject: sun.tools.java.Identifier
-             public static idRemoteStub: sun.tools.java.Identifier
-             public static idRemoteRef: sun.tools.java.Identifier
-             public static idOperation: sun.tools.java.Identifier
-             public static idSkeleton: sun.tools.java.Identifier
-             public static idSkeletonMismatchException: sun.tools.java.Identifier
-             public static idRemoteCall: sun.tools.java.Identifier
-             public static idMarshalException: sun.tools.java.Identifier
-             public static idUnmarshalException: sun.tools.java.Identifier
-             public static idUnexpectedException: sun.tools.java.Identifier
-             public static STUB_VERSION_1_1: int
-             public static STUB_VERSION_FAT: int
-             public static STUB_VERSION_1_2: int
-             public static STUB_SERIAL_VERSION_UID: long
-             public static INTERFACE_HASH_STUB_VERSION: int
+             idRemoteObject: sun.tools.java.Identifier
+             idRemoteStub: sun.tools.java.Identifier
+             idRemoteRef: sun.tools.java.Identifier
+             idOperation: sun.tools.java.Identifier
+             idSkeleton: sun.tools.java.Identifier
+             idSkeletonMismatchException: sun.tools.java.Identifier
+             idRemoteCall: sun.tools.java.Identifier
+             idMarshalException: sun.tools.java.Identifier
+             idUnmarshalException: sun.tools.java.Identifier
+             idUnexpectedException: sun.tools.java.Identifier
+             STUB_VERSION_1_1: int
+             STUB_VERSION_FAT: int
+             STUB_VERSION_1_2: int
+             STUB_SERIAL_VERSION_UID: long
+             INTERFACE_HASH_STUB_VERSION: int
          }
          class RemoteClass implements sun.rmi.rmic.RMIConstants {
              public static forClass(arg0: sun.rmi.rmic.BatchEnvironment, arg1: sun.tools.java.ClassDefinition): sun.rmi.rmic.RemoteClass
@@ -48805,8 +48805,8 @@ declare namespace sun {
              static access$000(arg0: sun.rmi.rmic.RemoteClass$Method, arg1: sun.rmi.rmic.RemoteClass$Method): sun.rmi.rmic.RemoteClass$Method
          }
          interface Generator {
-             public parseArgs(arg0: java.lang.String[], arg1: sun.rmi.rmic.Main): boolean
-             public generate(arg0: sun.rmi.rmic.BatchEnvironment, arg1: sun.tools.java.ClassDefinition, arg2: java.io.File): void
+             parseArgs(arg0: java.lang.String[], arg1: sun.rmi.rmic.Main): boolean
+             generate(arg0: sun.rmi.rmic.BatchEnvironment, arg1: sun.tools.java.ClassDefinition, arg2: java.io.File): void
          }
          class Main implements sun.rmi.rmic.Constants {
              sourcePathArg: java.lang.String
@@ -48892,8 +48892,8 @@ declare namespace sun {
              public remove(): void
          }
          interface Constants extends sun.tools.java.Constants {
-             public static idRemote: sun.tools.java.Identifier
-             public static idRemoteException: sun.tools.java.Identifier
+             idRemote: sun.tools.java.Identifier
+             idRemoteException: sun.tools.java.Identifier
          }
          class Util implements sun.rmi.rmic.Constants {
              public constructor()
@@ -48933,10 +48933,10 @@ declare namespace sun {
                 enclosingMain(): sun.rmi.rmic.newrmic.Main
             }
             interface Generator {
-                public parseArgs(arg0: java.lang.String[], arg1: sun.rmi.rmic.newrmic.Main): boolean
-                public envClass(): java.lang.Class<sun.rmi.rmic.newrmic.BatchEnvironment>
-                public bootstrapClassNames(): java.util.Set<java.lang.String>
-                public generate(arg0: sun.rmi.rmic.newrmic.BatchEnvironment, arg1: com.sun.javadoc.ClassDoc, arg2: java.io.File): void
+                parseArgs(arg0: java.lang.String[], arg1: sun.rmi.rmic.newrmic.Main): boolean
+                envClass(): java.lang.Class<sun.rmi.rmic.newrmic.BatchEnvironment>
+                bootstrapClassNames(): java.util.Set<java.lang.String>
+                generate(arg0: sun.rmi.rmic.newrmic.BatchEnvironment, arg1: com.sun.javadoc.ClassDoc, arg2: java.io.File): void
             }
             class IndentingWriter extends java.io.BufferedWriter {
                 constructor(...args: any[])
@@ -49041,9 +49041,9 @@ declare namespace sun {
                    static getFriendlyUnqualifiedSignature(arg0: com.sun.javadoc.MethodDoc): java.lang.String
                    static isVoid(arg0: com.sun.javadoc.Type): boolean
                }
-
+               
             }
-
+            
          }
          namespace iiop {
             class ValueType extends sun.rmi.rmic.iiop.ClassType {
@@ -49252,128 +49252,128 @@ declare namespace sun {
                 protected setRepositoryID(): boolean
             }
             interface Constants extends sun.rmi.rmic.Constants {
-                public static idReplyHandler: sun.tools.java.Identifier
-                public static idStubBase: sun.tools.java.Identifier
-                public static idTieBase: sun.tools.java.Identifier
-                public static idTieInterface: sun.tools.java.Identifier
-                public static idPOAServantType: sun.tools.java.Identifier
-                public static idDelegate: sun.tools.java.Identifier
-                public static idOutputStream: sun.tools.java.Identifier
-                public static idExtOutputStream: sun.tools.java.Identifier
-                public static idInputStream: sun.tools.java.Identifier
-                public static idExtInputStream: sun.tools.java.Identifier
-                public static idSystemException: sun.tools.java.Identifier
-                public static idBadMethodException: sun.tools.java.Identifier
-                public static idPortableUnknownException: sun.tools.java.Identifier
-                public static idApplicationException: sun.tools.java.Identifier
-                public static idRemarshalException: sun.tools.java.Identifier
-                public static idJavaIoExternalizable: sun.tools.java.Identifier
-                public static idCorbaObject: sun.tools.java.Identifier
-                public static idCorbaORB: sun.tools.java.Identifier
-                public static idClassDesc: sun.tools.java.Identifier
-                public static idJavaIoIOException: sun.tools.java.Identifier
-                public static idIDLEntity: sun.tools.java.Identifier
-                public static idValueBase: sun.tools.java.Identifier
-                public static idBoxedRMI: sun.tools.java.Identifier
-                public static idBoxedIDL: sun.tools.java.Identifier
-                public static idCorbaUserException: sun.tools.java.Identifier
-                public static idBoolean: sun.tools.java.Identifier
-                public static idByte: sun.tools.java.Identifier
-                public static idChar: sun.tools.java.Identifier
-                public static idShort: sun.tools.java.Identifier
-                public static idInt: sun.tools.java.Identifier
-                public static idLong: sun.tools.java.Identifier
-                public static idFloat: sun.tools.java.Identifier
-                public static idDouble: sun.tools.java.Identifier
-                public static idVoid: sun.tools.java.Identifier
-                public static INDENT_STEP: int
-                public static TAB_SIZE: int
-                public static STATUS_PENDING: int
-                public static STATUS_VALID: int
-                public static STATUS_INVALID: int
-                public static NAME_SEPARATOR: java.lang.String
-                public static SERIAL_VERSION_UID: java.lang.String
-                public static IDL_KEYWORDS: java.lang.String[]
-                public static EXCEPTION_SUFFIX: java.lang.String
-                public static ERROR_SUFFIX: java.lang.String
-                public static EX_SUFFIX: java.lang.String
-                public static IDL_REPOSITORY_ID_PREFIX: java.lang.String
-                public static IDL_REPOSITORY_ID_VERSION: java.lang.String
-                public static IDL_CORBA_MODULE: java.lang.String[]
-                public static IDL_SEQUENCE_MODULE: java.lang.String[]
-                public static IDL_BOXEDIDL_MODULE: java.lang.String[]
-                public static IDL_CLASS: java.lang.String
-                public static IDL_CLASS_MODULE: java.lang.String[]
-                public static IDL_IDLENTITY: java.lang.String
-                public static IDL_SERIALIZABLE: java.lang.String
-                public static IDL_EXTERNALIZABLE: java.lang.String
-                public static IDL_JAVA_IO_MODULE: java.lang.String[]
-                public static IDL_ORG_OMG_CORBA_MODULE: java.lang.String[]
-                public static IDL_ORG_OMG_CORBA_PORTABLE_MODULE: java.lang.String[]
-                public static IDL_JAVA_LANG_OBJECT: java.lang.String
-                public static IDL_JAVA_LANG_MODULE: java.lang.String[]
-                public static IDL_JAVA_RMI_REMOTE: java.lang.String
-                public static IDL_JAVA_RMI_MODULE: java.lang.String[]
-                public static IDL_SEQUENCE: java.lang.String
-                public static IDL_CONSTRUCTOR: java.lang.String
-                public static IDL_NAME_SEPARATOR: java.lang.String
-                public static IDL_BOOLEAN: java.lang.String
-                public static IDL_BYTE: java.lang.String
-                public static IDL_CHAR: java.lang.String
-                public static IDL_SHORT: java.lang.String
-                public static IDL_INT: java.lang.String
-                public static IDL_LONG: java.lang.String
-                public static IDL_FLOAT: java.lang.String
-                public static IDL_DOUBLE: java.lang.String
-                public static IDL_VOID: java.lang.String
-                public static IDL_STRING: java.lang.String
-                public static IDL_CONSTANT_STRING: java.lang.String
-                public static IDL_CORBA_OBJECT: java.lang.String
-                public static IDL_ANY: java.lang.String
-                public static SOURCE_FILE_EXTENSION: java.lang.String
-                public static IDL_FILE_EXTENSION: java.lang.String
-                public static TYPE_VOID: int
-                public static TYPE_BOOLEAN: int
-                public static TYPE_BYTE: int
-                public static TYPE_CHAR: int
-                public static TYPE_SHORT: int
-                public static TYPE_INT: int
-                public static TYPE_LONG: int
-                public static TYPE_FLOAT: int
-                public static TYPE_DOUBLE: int
-                public static TYPE_STRING: int
-                public static TYPE_ANY: int
-                public static TYPE_CORBA_OBJECT: int
-                public static TYPE_REMOTE: int
-                public static TYPE_ABSTRACT: int
-                public static TYPE_NC_INTERFACE: int
-                public static TYPE_VALUE: int
-                public static TYPE_IMPLEMENTATION: int
-                public static TYPE_NC_CLASS: int
-                public static TYPE_ARRAY: int
-                public static TYPE_JAVA_RMI_REMOTE: int
-                public static TYPE_NONE: int
-                public static TYPE_ALL: int
-                public static TYPE_MASK: int
-                public static TM_MASK: int
-                public static TM_PRIMITIVE: int
-                public static TM_COMPOUND: int
-                public static TM_CLASS: int
-                public static TM_INTERFACE: int
-                public static TM_SPECIAL_CLASS: int
-                public static TM_SPECIAL_INTERFACE: int
-                public static TM_NON_CONFORMING: int
-                public static TM_INNER: int
-                public static ATTRIBUTE_NONE: int
-                public static ATTRIBUTE_IS: int
-                public static ATTRIBUTE_GET: int
-                public static ATTRIBUTE_IS_RW: int
-                public static ATTRIBUTE_GET_RW: int
-                public static ATTRIBUTE_SET: int
-                public static ATTRIBUTE_WIRE_PREFIX: java.lang.String[]
+                idReplyHandler: sun.tools.java.Identifier
+                idStubBase: sun.tools.java.Identifier
+                idTieBase: sun.tools.java.Identifier
+                idTieInterface: sun.tools.java.Identifier
+                idPOAServantType: sun.tools.java.Identifier
+                idDelegate: sun.tools.java.Identifier
+                idOutputStream: sun.tools.java.Identifier
+                idExtOutputStream: sun.tools.java.Identifier
+                idInputStream: sun.tools.java.Identifier
+                idExtInputStream: sun.tools.java.Identifier
+                idSystemException: sun.tools.java.Identifier
+                idBadMethodException: sun.tools.java.Identifier
+                idPortableUnknownException: sun.tools.java.Identifier
+                idApplicationException: sun.tools.java.Identifier
+                idRemarshalException: sun.tools.java.Identifier
+                idJavaIoExternalizable: sun.tools.java.Identifier
+                idCorbaObject: sun.tools.java.Identifier
+                idCorbaORB: sun.tools.java.Identifier
+                idClassDesc: sun.tools.java.Identifier
+                idJavaIoIOException: sun.tools.java.Identifier
+                idIDLEntity: sun.tools.java.Identifier
+                idValueBase: sun.tools.java.Identifier
+                idBoxedRMI: sun.tools.java.Identifier
+                idBoxedIDL: sun.tools.java.Identifier
+                idCorbaUserException: sun.tools.java.Identifier
+                idBoolean: sun.tools.java.Identifier
+                idByte: sun.tools.java.Identifier
+                idChar: sun.tools.java.Identifier
+                idShort: sun.tools.java.Identifier
+                idInt: sun.tools.java.Identifier
+                idLong: sun.tools.java.Identifier
+                idFloat: sun.tools.java.Identifier
+                idDouble: sun.tools.java.Identifier
+                idVoid: sun.tools.java.Identifier
+                INDENT_STEP: int
+                TAB_SIZE: int
+                STATUS_PENDING: int
+                STATUS_VALID: int
+                STATUS_INVALID: int
+                NAME_SEPARATOR: java.lang.String
+                SERIAL_VERSION_UID: java.lang.String
+                IDL_KEYWORDS: java.lang.String[]
+                EXCEPTION_SUFFIX: java.lang.String
+                ERROR_SUFFIX: java.lang.String
+                EX_SUFFIX: java.lang.String
+                IDL_REPOSITORY_ID_PREFIX: java.lang.String
+                IDL_REPOSITORY_ID_VERSION: java.lang.String
+                IDL_CORBA_MODULE: java.lang.String[]
+                IDL_SEQUENCE_MODULE: java.lang.String[]
+                IDL_BOXEDIDL_MODULE: java.lang.String[]
+                IDL_CLASS: java.lang.String
+                IDL_CLASS_MODULE: java.lang.String[]
+                IDL_IDLENTITY: java.lang.String
+                IDL_SERIALIZABLE: java.lang.String
+                IDL_EXTERNALIZABLE: java.lang.String
+                IDL_JAVA_IO_MODULE: java.lang.String[]
+                IDL_ORG_OMG_CORBA_MODULE: java.lang.String[]
+                IDL_ORG_OMG_CORBA_PORTABLE_MODULE: java.lang.String[]
+                IDL_JAVA_LANG_OBJECT: java.lang.String
+                IDL_JAVA_LANG_MODULE: java.lang.String[]
+                IDL_JAVA_RMI_REMOTE: java.lang.String
+                IDL_JAVA_RMI_MODULE: java.lang.String[]
+                IDL_SEQUENCE: java.lang.String
+                IDL_CONSTRUCTOR: java.lang.String
+                IDL_NAME_SEPARATOR: java.lang.String
+                IDL_BOOLEAN: java.lang.String
+                IDL_BYTE: java.lang.String
+                IDL_CHAR: java.lang.String
+                IDL_SHORT: java.lang.String
+                IDL_INT: java.lang.String
+                IDL_LONG: java.lang.String
+                IDL_FLOAT: java.lang.String
+                IDL_DOUBLE: java.lang.String
+                IDL_VOID: java.lang.String
+                IDL_STRING: java.lang.String
+                IDL_CONSTANT_STRING: java.lang.String
+                IDL_CORBA_OBJECT: java.lang.String
+                IDL_ANY: java.lang.String
+                SOURCE_FILE_EXTENSION: java.lang.String
+                IDL_FILE_EXTENSION: java.lang.String
+                TYPE_VOID: int
+                TYPE_BOOLEAN: int
+                TYPE_BYTE: int
+                TYPE_CHAR: int
+                TYPE_SHORT: int
+                TYPE_INT: int
+                TYPE_LONG: int
+                TYPE_FLOAT: int
+                TYPE_DOUBLE: int
+                TYPE_STRING: int
+                TYPE_ANY: int
+                TYPE_CORBA_OBJECT: int
+                TYPE_REMOTE: int
+                TYPE_ABSTRACT: int
+                TYPE_NC_INTERFACE: int
+                TYPE_VALUE: int
+                TYPE_IMPLEMENTATION: int
+                TYPE_NC_CLASS: int
+                TYPE_ARRAY: int
+                TYPE_JAVA_RMI_REMOTE: int
+                TYPE_NONE: int
+                TYPE_ALL: int
+                TYPE_MASK: int
+                TM_MASK: int
+                TM_PRIMITIVE: int
+                TM_COMPOUND: int
+                TM_CLASS: int
+                TM_INTERFACE: int
+                TM_SPECIAL_CLASS: int
+                TM_SPECIAL_INTERFACE: int
+                TM_NON_CONFORMING: int
+                TM_INNER: int
+                ATTRIBUTE_NONE: int
+                ATTRIBUTE_IS: int
+                ATTRIBUTE_GET: int
+                ATTRIBUTE_IS_RW: int
+                ATTRIBUTE_GET_RW: int
+                ATTRIBUTE_SET: int
+                ATTRIBUTE_WIRE_PREFIX: java.lang.String[]
             }
             interface ContextElement {
-                public getElementName(): java.lang.String
+                getElementName(): java.lang.String
             }
             class ContextStack {
                 public static TOP: int
@@ -49751,13 +49751,13 @@ declare namespace sun {
                 public static forAbstract(arg0: sun.tools.java.ClassDefinition, arg1: sun.rmi.rmic.iiop.ContextStack, arg2: boolean): sun.rmi.rmic.iiop.AbstractType
                 public getTypeDescription(): java.lang.String
             }
-
+            
          }
-
+         
       }
-
+      
    }
-
+   
 }
 declare namespace org {
    namespace relaxng {
@@ -49807,32 +49807,32 @@ declare namespace org {
                 public constructor()
                 public createDatatypeLibrary(arg0: java.lang.String): org.relaxng.datatype.DatatypeLibrary
             }
-
+            
          }
          interface DatatypeStreamingValidator {
-             public addCharacters(arg0: char[], arg1: int, arg2: int): void
-             public isValid(): boolean
-             public checkValid(): void
+             addCharacters(arg0: char[], arg1: int, arg2: int): void
+             isValid(): boolean
+             checkValid(): void
          }
          interface Datatype {
-             public static ID_TYPE_NULL: int
-             public static ID_TYPE_ID: int
-             public static ID_TYPE_IDREF: int
-             public static ID_TYPE_IDREFS: int
-             public isValid(arg0: java.lang.String, arg1: org.relaxng.datatype.ValidationContext): boolean
-             public checkValid(arg0: java.lang.String, arg1: org.relaxng.datatype.ValidationContext): void
-             public createStreamingValidator(arg0: org.relaxng.datatype.ValidationContext): org.relaxng.datatype.DatatypeStreamingValidator
-             public createValue(arg0: java.lang.String, arg1: org.relaxng.datatype.ValidationContext): java.lang.Object
-             public sameValue(arg0: java.lang.Object, arg1: java.lang.Object): boolean
-             public valueHashCode(arg0: java.lang.Object): int
-             public getIdType(): int
-             public isContextDependent(): boolean
+             ID_TYPE_NULL: int
+             ID_TYPE_ID: int
+             ID_TYPE_IDREF: int
+             ID_TYPE_IDREFS: int
+             isValid(arg0: java.lang.String, arg1: org.relaxng.datatype.ValidationContext): boolean
+             checkValid(arg0: java.lang.String, arg1: org.relaxng.datatype.ValidationContext): void
+             createStreamingValidator(arg0: org.relaxng.datatype.ValidationContext): org.relaxng.datatype.DatatypeStreamingValidator
+             createValue(arg0: java.lang.String, arg1: org.relaxng.datatype.ValidationContext): java.lang.Object
+             sameValue(arg0: java.lang.Object, arg1: java.lang.Object): boolean
+             valueHashCode(arg0: java.lang.Object): int
+             getIdType(): int
+             isContextDependent(): boolean
          }
          interface ValidationContext {
-             public resolveNamespacePrefix(arg0: java.lang.String): java.lang.String
-             public getBaseUri(): java.lang.String
-             public isUnparsedEntity(arg0: java.lang.String): boolean
-             public isNotation(arg0: java.lang.String): boolean
+             resolveNamespacePrefix(arg0: java.lang.String): java.lang.String
+             getBaseUri(): java.lang.String
+             isUnparsedEntity(arg0: java.lang.String): boolean
+             isNotation(arg0: java.lang.String): boolean
          }
          class DatatypeException extends java.lang.Exception {
              public static UNKNOWN: int
@@ -49840,19 +49840,19 @@ declare namespace org {
              public getIndex(): int
          }
          interface DatatypeBuilder {
-             public addParameter(arg0: java.lang.String, arg1: java.lang.String, arg2: org.relaxng.datatype.ValidationContext): void
-             public createDatatype(): org.relaxng.datatype.Datatype
+             addParameter(arg0: java.lang.String, arg1: java.lang.String, arg2: org.relaxng.datatype.ValidationContext): void
+             createDatatype(): org.relaxng.datatype.Datatype
          }
          interface DatatypeLibraryFactory {
-             public createDatatypeLibrary(arg0: java.lang.String): org.relaxng.datatype.DatatypeLibrary
+             createDatatypeLibrary(arg0: java.lang.String): org.relaxng.datatype.DatatypeLibrary
          }
          interface DatatypeLibrary {
-             public createDatatypeBuilder(arg0: java.lang.String): org.relaxng.datatype.DatatypeBuilder
-             public createDatatype(arg0: java.lang.String): org.relaxng.datatype.Datatype
+             createDatatypeBuilder(arg0: java.lang.String): org.relaxng.datatype.DatatypeBuilder
+             createDatatype(arg0: java.lang.String): org.relaxng.datatype.Datatype
          }
-
+         
       }
-
+      
    }
-
+   
 }

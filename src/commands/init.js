@@ -20,12 +20,17 @@ var tsconfig = function(libdir) { return `
     "lib": ["dom", "es2017"],
     "target": "es5",
     "typeRoots": [
-      "${libdir/}",
+      "${libdir}/@types/jdk",
       "lib/@types",
       "node_modules/@types",
       "src/js/@types"
     ]
-  }
+  },
+  "include": [
+    "${libdir}/@types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
 }
 `.trim() }
 
@@ -40,7 +45,7 @@ tsconfig.json
 yarn.lock
 `.trim()
 
-function init() {
+function init(libdir) {
     ["build", "lib", "lib/@types", "node_modules", "src"].forEach(function(dir) {
         console.log("mkdir " + dir)
         try {
@@ -60,7 +65,7 @@ function init() {
 
     [
         ["package.json", package],
-        ["tsconfig.json", tsconfig],
+        ["tsconfig.json", tsconfig(libdir)],
         [".gitignore", gitignore],
         ["src/assets/test.txt", ""],
         ["src/assets/img/test.jpg", ""],
@@ -68,7 +73,7 @@ function init() {
         ["src/html/test.html", "<!DOCTYPE html>"],
         ["src/js/entry/test.tsx", `import "../../css/test.less"`],
         ["src/js/entry/test.j.ts", `org.pmw.tinylog.Logger.info(java.lang.System.getProperty("java.version"))`],
-        ["src/js/@types/test.d.ts", "declare const java: any"],
+        ["src/js/@types/test.d.ts", ""],
     ].forEach(function(args) {
         console.log("create " + args[0])
         fs.writeFile(args[0], args[1], function(err) {

@@ -16,7 +16,7 @@ var target = process.argv[3] && path.resolve(process.argv[3])
 
 if (command === "help") help(libdir, 0)
 else if (command === "env") console.error(env())
-else if (command === "init") init()
+else if (command === "init") init(libdir)
 else if (command === "install") install()
 else if (command === "build") build.entry(libdir, libmod, context)
 else if (command === "watch") build.watch(libdir, libmod, context)

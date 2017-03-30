@@ -40,6 +40,15 @@ final class org.classpath.icedtea.pulseaudio.EventLoop implements java.lang.Runn
   public void sink_callback(java.lang.String);
   static {};
 }
+`,
+`
+public class sun.nio.cs.ext.ExtendedCharsets extends sun.nio.cs.AbstractCharsetProvider {
+  static volatile sun.nio.cs.ext.ExtendedCharsets instance;
+  public sun.nio.cs.ext.ExtendedCharsets();
+  protected void init();
+  public static java.lang.String[] aliasesFor(java.lang.String);
+  static {};
+}
 `
 ].forEach(function(source) {
     console.log(parseClass(source))

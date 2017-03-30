@@ -1,6 +1,6 @@
 var fs = require("fs")
 var path = require("path")
-var parse = require("../../jar/parse")
+var parseJAR = require("../../src/compiler/parseJAR")
 
 var jars = [
     "jre/lib/charsets.jar",
@@ -8,6 +8,7 @@ var jars = [
     "jre/lib/ext/dnsns.jar",
     "jre/lib/ext/icedtea-sound.jar",
     "jre/lib/ext/jaccess.jar",
+    "jre/lib/ext/java-atk-wrapper.jar",
     "jre/lib/ext/localedata.jar",
     "jre/lib/ext/nashorn.jar",
     "jre/lib/ext/sunec.jar",
@@ -19,12 +20,22 @@ var jars = [
     "jre/lib/management-agent.jar",
     "jre/lib/resources.jar",
     "jre/lib/rt.jar",
-    "jre/lib/security/US_export_policy.jar",
     "jre/lib/security/local_policy.jar",
+    "jre/lib/security/US_export_policy.jar",
+    "lib/dt.jar",
+    "lib/jconsole.jar",
+    "lib/sa-jdi.jar",
+    "lib/tools.jar",
 ]
 
-for (var i = 0; i < jars.length; i++) {
-    var jar = process.env.JAVA_HOME + "/" + jars[i]
-    var content = parse(jar)
-    fs.writeFileSync(path.basename(jar).replace(".jar", ".d.ts"), content)
-}
+jars.forEach(function(jar, i) {
+    jars[i] = process.env.JAVA_HOME + "/" + jars[i]
+    if (!fs.existsSync(jars[i])) {
+        console.error(jars[i] + " not found")
+        process.exit(1)
+    }
+})
+
+jars.forEach(function(jar) {
+    fs.writeFileSync(path.basename(jar).replace(".jar", ".d.ts"), parseJAR(jar))
+})

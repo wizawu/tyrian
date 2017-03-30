@@ -170,10 +170,10 @@ function parseClass(source, offset, stack, classType) {
         } else {
             var context = parseClassMember(source, offset, stack, isInterface)
             if (!context) return null
+            source = context.source
+            offset = context.offset
+            stack = context.stack
             if (!isInterface) {
-                source = context.source
-                offset = context.offset
-                stack = context.stack
                 push(
                     stack,
                     stack[stack.length - 1].replace(/^(\s+)/, "$1" + scope),

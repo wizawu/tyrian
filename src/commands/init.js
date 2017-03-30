@@ -13,20 +13,21 @@ var package = `
 `.trim()
 
 // tsconfig.json
-var tsconfig = `
+var tsconfig = function(libdir) { return `
 {
   "compilerOptions": {
     "jsx": "react",
     "lib": ["dom", "es2017"],
     "target": "es5",
     "typeRoots": [
+      "${libdir/}",
       "lib/@types",
       "node_modules/@types",
       "src/js/@types"
     ]
   }
 }
-`.trim()
+`.trim() }
 
 // .gitignore
 var gitignore = `

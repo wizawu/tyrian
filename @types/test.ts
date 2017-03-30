@@ -1,5 +1,6 @@
-// <reference path="jdk/jconsole.d.ts" />
-// <reference path="jdk/rt.d.ts" />
-/// <reference path="jdk/tools.d.ts" />
-
 console.log(com)
+console.log(java)
+console.log(javax)
+console.log(jdk)
+console.log(org)
+console.log(sun)

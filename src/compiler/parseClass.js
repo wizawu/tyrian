@@ -27,7 +27,7 @@ function nextToken(source, offset, stack) {
             skip += 1
             // extends
             var next = nextToken(source, offset + skip, stack)
-            if (next.token === "extends") {
+            if (next.token === "extends" || next.token === "super") {
                 skip += next.skip
                 // interface
                 next = nextToken(source, offset + skip, stack)

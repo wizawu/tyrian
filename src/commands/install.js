@@ -1,6 +1,6 @@
 var fs = require("fs")
 var spawnSync = require("child_process").spawnSync
-var parse = require("../jar/parse")
+var parseJAR = require("../compiler/parseJAR")
 
 // build.gradle
 var gradle = function(deps) { return `
@@ -47,7 +47,7 @@ function install() {
         if (jar === "@types") return
         var filename = "lib/@types/" + jar.replace(/\.jar$/, ".d.ts")
         console.log("Generating " + filename + ":")
-        var content = parse("lib/" + jar)
+        var content = parseJAR("lib/" + jar)
         fs.writeFileSync(filename, content)
     })
 }

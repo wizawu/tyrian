@@ -8,7 +8,7 @@ var init = require("./commands/init")
 var install = require("./commands/install")
 var run = require("./commands/run")
 
-var libdir = path.dirname(process.argv[1])
+var libdir = path.resolve(path.dirname(process.argv[1]) + "/..")
 var libmod = libdir + (fs.existsSync(libdir + "/node_modules") ? "/node_modules" : "/..")
 var command = process.argv[2]
 var context = path.resolve(process.argv[3] || "")

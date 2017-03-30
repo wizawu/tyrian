@@ -33,6 +33,10 @@ jars.forEach(function(jar, i) {
         console.error(jars[i] + " not found")
         process.exit(1)
     }
+    if (path.basename(jar === "sa-jdi.jar")) {
+        console.error("Cannot parse " + jar)
+        process.exit(1)
+    }
 })
 
 jars.forEach(function(jar) {

@@ -181,5 +181,5 @@ function parse(source, offset, stack) {
 }
 
 module.exports = function(source) {
-    return parse(source, 0, []).stack.join("\n").replace(/<any extends (\S+)>/g, "<$1>")
+    return parse(source, 0, []).stack.join("\n").replace(/<\S+ extends (\S+)>/g, "$1")
 }

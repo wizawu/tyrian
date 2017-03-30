@@ -49,6 +49,29 @@ public class sun.nio.cs.ext.ExtendedCharsets extends sun.nio.cs.AbstractCharsetP
   public static java.lang.String[] aliasesFor(java.lang.String);
   static {};
 }
+`,
+`
+public abstract class com.oracle.webservices.internal.api.message.BaseDistributedPropertySet extends com.oracle.webservices.internal.api.message.BasePropertySet implements com.oracle.webservices.internal.api.message.DistributedPropertySet {
+  public com.oracle.webservices.internal.api.message.BaseDistributedPropertySet();
+  public void addSatellite(com.oracle.webservices.internal.api.message.PropertySet);
+  public void addSatellite(java.lang.Class<? extends com.oracle.webservices.internal.api.message.PropertySet>, com.oracle.webservices.internal.api.message.PropertySet);
+  public void removeSatellite(com.oracle.webservices.internal.api.message.PropertySet);
+  public void copySatelliteInto(com.oracle.webservices.internal.api.message.DistributedPropertySet);
+  public void copySatelliteInto(com.oracle.webservices.internal.api.message.MessageContext);
+  public <T extends com.oracle.webservices.internal.api.message.PropertySet> T getSatellite(java.lang.Class<T>);
+  public java.util.Map<java.lang.Class<? extends com.oracle.webservices.internal.api.message.PropertySet>, com.oracle.webservices.internal.api.message.PropertySet> getSatellites();
+  public java.lang.Object get(java.lang.Object);
+  public java.lang.Object put(java.lang.String, java.lang.Object);
+  public boolean containsKey(java.lang.Object);
+  public boolean supports(java.lang.Object);
+  public java.lang.Object remove(java.lang.Object);
+  protected void createEntrySet(java.util.Set<java.util.Map$Entry<java.lang.String, java.lang.Object>>);
+  protected java.util.Map<java.lang.String, java.lang.Object> asMapLocal();
+  protected boolean supportsLocal(java.lang.Object);
+  protected java.util.Map<java.lang.String, java.lang.Object> createView();
+  static java.util.Map access$000(com.oracle.webservices.internal.api.message.BaseDistributedPropertySet);
+  static java.util.Map access$100(com.oracle.webservices.internal.api.message.BaseDistributedPropertySet);
+}
 `
 ].forEach(function(source) {
     console.log(parseClass(source))

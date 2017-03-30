@@ -29,11 +29,14 @@ function nextToken(source, offset, stack) {
 function parseClassMember(source, offset, stack) {
     var line = "    "
     var returnType = ""
+    var typeVariable = ""
     var t = null
     while (t = nextToken(source, offset, stack)) {
         offset += t.skip
         if (["public", "protected", "static"].indexOf(t.token) >= 0) {
             line += t.token + " "
+        } else if (t.token.charAt(0) === "<") {
+            typeVariable = t.token
         } else if (["final", "abstract", "native", "synchronized", "volatile", "strictfp", "transient"].indexOf(t.token) < 0) {
             returnType = t.token
             break
@@ -49,7 +52,7 @@ function parseClassMember(source, offset, stack) {
     }
 
     t = nextToken(source, offset, stack)
-    line += t.token
+    line += t.token + typeVariable
     offset += t.skip
 
     t = nextToken(source, offset, stack)
@@ -181,5 +184,5 @@ function parse(source, offset, stack) {
 }
 
 module.exports = function(source) {
-    return parse(source, 0, []).stack.join("\n").replace(/<\S+ extends (\S+)>/g, "$1")
+    return parse(source, 0, []).stack.join("\n").replace(/<any extends (\S+)>/g, "<$1>")
 }

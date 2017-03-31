@@ -18,6 +18,7 @@ var tsconfig = function(libdir) { return `
   "compilerOptions": {
     "jsx": "react",
     "lib": ["dom", "es2017"],
+    "skipLibCheck": true,
     "target": "es5",
     "typeRoots": [
       "${libdir}/@types",

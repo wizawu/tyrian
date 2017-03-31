@@ -1,17 +1,10 @@
-var fs = require("fs")
-var path = require("path")
-var spawnSync = require("child_process").spawnSync
+import * as fs from "fs"
+import * as path from "path"
+import {spawnSync} from "child_process"
 
-function run(target) {
-    var libdir = path.resolve(path.dirname(target) + "/../lib")
-    var classpath = fs.readdirSync(libdir).map(function(jar) {
-        if (jar === "@types") return ""
-        return libdir + "/" + jar
-    }).join(":")
-    var child = spawnSync("jjs", ["-cp", classpath, target], {
-        stdio: "inherit"
-    })
+export default function(target: string) {
+    let lib = path.resolve(path.dirname(target) + "/../lib")
+    let classpath = fs.readdirSync(lib).map(jar => jar === "@types" ? "" : `${lib}/${jar}`).join(":")
+    let child = spawnSync("jjs", ["-cp", classpath, target], {stdio: "inherit"})
     process.exit(child.status)
 }
-
-module.exports = run

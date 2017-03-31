@@ -1,56 +1,49 @@
-var spawnSync = require("child_process").spawnSync
+import { spawnSync } from "child_process"
 
-function header(name, link) {
-    return `\n[${name}](${link})\n`
-}
+const header = (tool: string, link: string) => `\n[${tool}](${link})\n`
+const notFound = () => `** not found **\n`
 
-function notFound(name) {
-    return `** not found **\n`
-}
-
-function env() {
-    var ok = true
-    var output = ""
-    var child = null
-    var spawnOptions = {
-        stdio: "pipe"
-    }
+export default function () {
+    let ok = true
+    let output = ""
+    let child = null
+    let options = { stdio: "pipe" }
 
     // node
-    child = spawnSync("node", ["-v"], spawnOptions)
+    child = spawnSync("node", ["-v"], options)
     output += header("node", "https://nodejs.org/en/download/")
     output += child.stdout + child.stderr || notFound()
     if (child.status !== 0) ok = false
 
     // yarn
-    child = spawnSync("yarn", ["-V"], spawnOptions)
+    child = spawnSync("yarn", ["-V"], options)
     output += header("yarn", "npm install -g yarn")
     output += child.stdout + child.stderr || notFound()
     if (child.status !== 0) ok = false
 
     // java
-    child = spawnSync("java", ["-version"], spawnOptions)
+    child = spawnSync("java", ["-version"], options)
     output += header("java", "http://openjdk.java.net/install/")
     output += child.stdout + child.stderr || notFound()
     if (child.status !== 0) ok = false
 
     // jjs
-    child = spawnSync("jjs", ["-fv"], Object.assign({input: "quit()"}, spawnOptions))
+    child = spawnSync("jjs", ["-fv"], { ...{ input: "quit()" }, ...options })
     output += "jjs -> " + (child.stdout + child.stderr || notFound()).replace(/jjs>\s+/, "")
     if (child.status !== 0) ok = false
 
     // javap
-    child = spawnSync("which", ["javap"], spawnOptions)
+    child = spawnSync("which", ["javap"], options)
     output += "javap -> " + (child.stdout + child.stderr || notFound())
     if (child.status !== 0) ok = false
 
     // jar
-    child = spawnSync("which", ["jar"], spawnOptions)
+    child = spawnSync("which", ["jar"], options)
     output += "jar -> " + (child.stdout + child.stderr || notFound())
     if (child.status !== 0) ok = false
 
     // gradle
-    child = spawnSync("gradle", ["-version"], spawnOptions)
+    child = spawnSync("gradle", ["-version"], options)
     output += header("gradle", "https://gradle.org/install")
     output += child.stdout + child.stderr || notFound()
     if (child.status !== 0) ok = false
@@ -62,5 +55,3 @@ function env() {
         return output
     }
 }
-
-module.exports = env

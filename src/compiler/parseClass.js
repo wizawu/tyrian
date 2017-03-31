@@ -257,6 +257,7 @@ module.exports = function(source, package) {
             case "MEMBER":
             case "METHOD":
                 if (ignore) break
+                if (line.name === "prototype") break
                 if (memberMap[line.name]) {
                     memberMap[line.name] = `    static ${line.name}<T>(...args: any[]): any`
                 } else {

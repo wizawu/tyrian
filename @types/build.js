@@ -9,8 +9,7 @@ jars.forEach(function(jar, i) {
         console.error(jars[i] + " not found")
         process.exit(1)
     }
-    var basename = path.basename(jar)
-    if (basename === "sa-jdi.jar" || basename === "localedata.jar") {
+    if (path.basename(jar) === "sa-jdi.jar") {
         console.error("Cannot parse " + jar)
         process.exit(2)
     }

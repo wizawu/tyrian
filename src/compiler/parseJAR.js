@@ -11,7 +11,7 @@ function commandOutput(command, args) {
 function parsePackage(package, level) {
     var result = ""
     Object.keys(package).forEach(function(key) {
-        if (key === "function") {
+        if (key === "function" || key === "is" || key === "in") {
             return
         } else if (typeof package[key] === "string") {
             result += package[key]

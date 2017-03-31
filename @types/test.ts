@@ -1,6 +1,0 @@
-console.log(com)
-console.log(java)
-console.log(javax)
-console.log(jdk)
-console.log(org)
-console.log(sun)

@@ -17869,7 +17869,7 @@ declare namespace com {
                    public suppressNotes: boolean
                    public dumpOnError: boolean
                    public multipleErrors: boolean
-                   protected diagListener: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>
+                   protected diagListener: javax.tools.DiagnosticListener<javax.tools.JavaFileObject>
                    public expectDiagKeys: java.util.Set<java.lang.String>
                    public compressedOutput: boolean
                    public nerrors: int
@@ -24612,7 +24612,7 @@ declare namespace com {
                    catchTypes(): com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>
                    switchBlockStatementGroups(): com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCCase>
                    protected switchBlockStatementGroup(): com.sun.tools.javac.tree.JCTree$JCCase
-                   moreStatementExpressions<T extends com.sun.tools.javac.util.ListBuffer<any super com.sun.tools.javac.tree.JCTree$JCExpressionStatement>>(arg0: int, arg1: com.sun.tools.javac.tree.JCTree$JCExpression, arg2: T): T
+                   moreStatementExpressions<T extends com.sun.tools.javac.util.ListBuffer<com.sun.tools.javac.tree.JCTree$JCExpressionStatement>>(arg0: int, arg1: com.sun.tools.javac.tree.JCTree$JCExpression, arg2: T): T
                    forInit(): com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCStatement>
                    forUpdate(): com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpressionStatement>
                    annotationsOpt(arg0: com.sun.tools.javac.tree.JCTree$Tag): com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCAnnotation>
@@ -24624,8 +24624,8 @@ declare namespace com {
                    annotationFieldValues(): com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCExpression>
                    annotationFieldValue(): com.sun.tools.javac.tree.JCTree$JCExpression
                    annotationValue(): com.sun.tools.javac.tree.JCTree$JCExpression
-                   public variableDeclarators<T extends com.sun.tools.javac.util.ListBuffer<any super com.sun.tools.javac.tree.JCTree$JCVariableDecl>>(arg0: com.sun.tools.javac.tree.JCTree$JCModifiers, arg1: com.sun.tools.javac.tree.JCTree$JCExpression, arg2: T): T
-                   variableDeclaratorsRest<T extends com.sun.tools.javac.util.ListBuffer<any super com.sun.tools.javac.tree.JCTree$JCVariableDecl>>(arg0: int, arg1: com.sun.tools.javac.tree.JCTree$JCModifiers, arg2: com.sun.tools.javac.tree.JCTree$JCExpression, arg3: com.sun.tools.javac.util.Name, arg4: boolean, arg5: com.sun.tools.javac.parser.Tokens$Comment, arg6: T): T
+                   public variableDeclarators<T extends com.sun.tools.javac.util.ListBuffer<com.sun.tools.javac.tree.JCTree$JCVariableDecl>>(arg0: com.sun.tools.javac.tree.JCTree$JCModifiers, arg1: com.sun.tools.javac.tree.JCTree$JCExpression, arg2: T): T
+                   variableDeclaratorsRest<T extends com.sun.tools.javac.util.ListBuffer<com.sun.tools.javac.tree.JCTree$JCVariableDecl>>(arg0: int, arg1: com.sun.tools.javac.tree.JCTree$JCModifiers, arg2: com.sun.tools.javac.tree.JCTree$JCExpression, arg3: com.sun.tools.javac.util.Name, arg4: boolean, arg5: com.sun.tools.javac.parser.Tokens$Comment, arg6: T): T
                    variableDeclarator(arg0: com.sun.tools.javac.tree.JCTree$JCModifiers, arg1: com.sun.tools.javac.tree.JCTree$JCExpression, arg2: boolean, arg3: com.sun.tools.javac.parser.Tokens$Comment): com.sun.tools.javac.tree.JCTree$JCVariableDecl
                    variableDeclaratorRest(arg0: int, arg1: com.sun.tools.javac.tree.JCTree$JCModifiers, arg2: com.sun.tools.javac.tree.JCTree$JCExpression, arg3: com.sun.tools.javac.util.Name, arg4: boolean, arg5: com.sun.tools.javac.parser.Tokens$Comment): com.sun.tools.javac.tree.JCTree$JCVariableDecl
                    variableDeclaratorId<T>(...args: any[]): any
@@ -29066,7 +29066,7 @@ declare namespace com {
                 fileManager: javax.tools.JavaFileManager
                 defaultFileManager: javax.tools.JavaFileManager
                 log: java.io.PrintWriter
-                diagnosticListener: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>
+                diagnosticListener: javax.tools.DiagnosticListener<javax.tools.JavaFileObject>
                 classes: java.util.List<java.lang.String>
                 options: com.sun.tools.javap.Options
                 task_locale: java.util.Locale
@@ -29092,11 +29092,11 @@ declare namespace com {
                 call<T>(...args: any[]): any
             }
             interface DisassemblerTool extends javax.tools.Tool , javax.tools.OptionChecker {
-                getTask(arg0: java.io.Writer, arg1: javax.tools.JavaFileManager, arg2: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>, arg3: java.lang.Iterable<java.lang.String>, arg4: java.lang.Iterable<java.lang.String>): com.sun.tools.javap.DisassemblerTool$DisassemblerTask
-                getStandardFileManager(arg0: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>, arg1: java.util.Locale, arg2: java.nio.charset.Charset): javax.tools.StandardJavaFileManager
+                getTask(arg0: java.io.Writer, arg1: javax.tools.JavaFileManager, arg2: javax.tools.DiagnosticListener<javax.tools.JavaFileObject>, arg3: java.lang.Iterable<java.lang.String>, arg4: java.lang.Iterable<java.lang.String>): com.sun.tools.javap.DisassemblerTool$DisassemblerTask
+                getStandardFileManager(arg0: javax.tools.DiagnosticListener<javax.tools.JavaFileObject>, arg1: java.util.Locale, arg2: java.nio.charset.Charset): javax.tools.StandardJavaFileManager
             }
             class JavapFileManager extends com.sun.tools.javac.file.JavacFileManager {
-                public static create(arg0: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>, arg1: java.io.PrintWriter): com.sun.tools.javap.JavapFileManager
+                public static create(arg0: javax.tools.DiagnosticListener<javax.tools.JavaFileObject>, arg1: java.io.PrintWriter): com.sun.tools.javap.JavapFileManager
             }
             class InternalError extends java.lang.Error {
                 public args: java.lang.Object[]
@@ -31319,8 +31319,8 @@ declare namespace com {
             class Util {
                 public verbose: boolean
                 log<T>(...args: any[]): any
-                public dl: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>
-                constructor(arg0: java.io.PrintWriter, arg1: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>)
+                public dl: javax.tools.DiagnosticListener<javax.tools.JavaFileObject>
+                constructor(arg0: java.io.PrintWriter, arg1: javax.tools.DiagnosticListener<javax.tools.JavaFileObject>)
                 public usage(): void
                 public version(): void
                 bug<T>(...args: any[]): any
@@ -31351,8 +31351,8 @@ declare namespace com {
                 call<T>(...args: any[]): any
             }
             interface NativeHeaderTool extends javax.tools.Tool , javax.tools.OptionChecker {
-                getTask(arg0: java.io.Writer, arg1: javax.tools.JavaFileManager, arg2: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>, arg3: java.lang.Iterable<java.lang.String>, arg4: java.lang.Iterable<java.lang.String>): com.sun.tools.javah.NativeHeaderTool$NativeHeaderTask
-                getStandardFileManager(arg0: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>, arg1: java.util.Locale, arg2: java.nio.charset.Charset): javax.tools.StandardJavaFileManager
+                getTask(arg0: java.io.Writer, arg1: javax.tools.JavaFileManager, arg2: javax.tools.DiagnosticListener<javax.tools.JavaFileObject>, arg3: java.lang.Iterable<java.lang.String>, arg4: java.lang.Iterable<java.lang.String>): com.sun.tools.javah.NativeHeaderTool$NativeHeaderTask
+                getStandardFileManager(arg0: javax.tools.DiagnosticListener<javax.tools.JavaFileObject>, arg1: java.util.Locale, arg2: java.nio.charset.Charset): javax.tools.StandardJavaFileManager
             }
             class Mangle$Type {
                 public static CLASS: int
@@ -31462,8 +31462,8 @@ declare namespace com {
             }
             class JavahTool implements com.sun.tools.javah.NativeHeaderTool {
                 public constructor()
-                public getTask(arg0: java.io.Writer, arg1: javax.tools.JavaFileManager, arg2: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>, arg3: java.lang.Iterable<java.lang.String>, arg4: java.lang.Iterable<java.lang.String>): com.sun.tools.javah.NativeHeaderTool$NativeHeaderTask
-                public getStandardFileManager(arg0: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>, arg1: java.util.Locale, arg2: java.nio.charset.Charset): javax.tools.StandardJavaFileManager
+                public getTask(arg0: java.io.Writer, arg1: javax.tools.JavaFileManager, arg2: javax.tools.DiagnosticListener<javax.tools.JavaFileObject>, arg3: java.lang.Iterable<java.lang.String>, arg4: java.lang.Iterable<java.lang.String>): com.sun.tools.javah.NativeHeaderTool$NativeHeaderTask
+                public getStandardFileManager(arg0: javax.tools.DiagnosticListener<javax.tools.JavaFileObject>, arg1: java.util.Locale, arg2: java.nio.charset.Charset): javax.tools.StandardJavaFileManager
                 public run(arg0: java.io.InputStream, arg1: java.io.OutputStream, arg2: java.io.OutputStream, ...arg3: java.lang.String[]): int
                 public getSourceVersions(): java.util.Set<javax.lang.model.SourceVersion>
                 public isSupportedOption(arg0: java.lang.String): int
@@ -31604,7 +31604,7 @@ declare namespace com {
                 javac_extras: java.util.Set<java.lang.String>
                 log: java.io.PrintWriter
                 fileManager: javax.tools.JavaFileManager
-                diagnosticListener: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>
+                diagnosticListener: javax.tools.DiagnosticListener<javax.tools.JavaFileObject>
                 task_locale: java.util.Locale
                 bundles: java.util.Map<java.util.Locale, java.util.ResourceBundle>
                 constructor(...args: any[])
@@ -31616,12 +31616,12 @@ declare namespace com {
                 run<T>(...args: any[]): any
                 public handleOptions(arg0: java.lang.String[]): void
                 call<T>(...args: any[]): any
-                static getDefaultFileManager(arg0: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>, arg1: java.io.PrintWriter): javax.tools.StandardJavaFileManager
+                static getDefaultFileManager(arg0: javax.tools.DiagnosticListener<javax.tools.JavaFileObject>, arg1: java.io.PrintWriter): javax.tools.StandardJavaFileManager
                 static access$000(arg0: com.sun.tools.javah.JavahTask, arg1: java.lang.String, arg2: java.lang.Object[]): java.lang.String
                 static access$200(arg0: com.sun.tools.javah.JavahTask, arg1: java.util.Locale, arg2: java.lang.String, arg3: java.lang.Object[]): java.lang.String
             }
             class JavahFileManager extends com.sun.tools.javac.file.JavacFileManager {
-                static create(arg0: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>, arg1: java.io.PrintWriter): com.sun.tools.javah.JavahFileManager
+                static create(arg0: javax.tools.DiagnosticListener<javax.tools.JavaFileObject>, arg1: java.io.PrintWriter): com.sun.tools.javah.JavahFileManager
             }
             class JNI$1 {
                 static $SwitchMap$javax$lang$model$type$TypeKind: int[]
@@ -32281,7 +32281,7 @@ declare namespace com {
                class JavadocTool implements javax.tools.DocumentationTool {
                    public constructor()
                    getTask<T>(...args: any[]): any
-                   public getStandardFileManager(arg0: javax.tools.DiagnosticListener<any super javax.tools.JavaFileObject>, arg1: java.util.Locale, arg2: java.nio.charset.Charset): javax.tools.StandardJavaFileManager
+                   public getStandardFileManager(arg0: javax.tools.DiagnosticListener<javax.tools.JavaFileObject>, arg1: java.util.Locale, arg2: java.nio.charset.Charset): javax.tools.StandardJavaFileManager
                    public run(arg0: java.io.InputStream, arg1: java.io.OutputStream, arg2: java.io.OutputStream, ...arg3: java.lang.String[]): int
                    public getSourceVersions(): java.util.Set<javax.lang.model.SourceVersion>
                    public isSupportedOption(arg0: java.lang.String): int

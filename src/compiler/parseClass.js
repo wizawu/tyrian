@@ -264,7 +264,10 @@ module.exports = function(source, package) {
                     newStack.push(memberMap[key])
                 })
                 newStack.push(line.toString())
-                objectPath.ensureExists(package, line.name, newStack.join("\n"))
+                var className = line.name.replace(/^(\w+\.)+/, "")
+                var ns = line.name.substring(0, line.name.length - className.length - 1)
+                objectPath.ensureExists(package, ns, {})
+                objectPath.get(package, ns)[className] = newStack.join("\n")
                 break
             default:
                 console.error("Invalid stack")

@@ -1,3 +1,5 @@
+var objectPath = require("object-path")
+
 function push(stack, line, type, name) {
     var str = new String(line)
     str.type = type
@@ -132,13 +134,13 @@ function parseClass(source, offset, stack, classType) {
         offset += t.skip
         if (t.token === "{") break
     }
-    push(stack, line, "BEGIN", shortClassName)
+    push(stack, line, "BEGIN", className)
 
     var scope = ""
     while (t = nextToken(source, offset, stack)) {
         if (t.token === "}") {
             offset += t.skip
-            push(stack, "}\n", "END")
+            push(stack, "}\n", "END", className)
             break
         } else if (t.token === "public" || t.token === "protected") {
             scope = t.token + " "
@@ -222,7 +224,7 @@ function parse(source, offset, stack) {
     return { stack: stack }
 }
 
-module.exports = function(source) {
+module.exports = function(source, package) {
     var stack = parse(source, 0, []).stack
     var newStack = []
     var memberMap = {}
@@ -231,6 +233,7 @@ module.exports = function(source) {
         var line = stack[i]
         switch (line.type) {
             case "BEGIN":
+                newStack = []
                 memberMap = {}
                 if (line.name.indexOf("-") >= 0) ignore = true
                 if (!ignore) newStack.push(line.toString())
@@ -261,11 +264,12 @@ module.exports = function(source) {
                     newStack.push(memberMap[key])
                 })
                 newStack.push(line.toString())
+                objectPath.ensureExists(package, line.name, newStack.join("\n"))
                 break
             default:
                 console.error("Invalid stack")
                 process.exit(1)
         }
     }
-    return newStack.join("\n").replace(/<any extends (\S+)>/g, "<$1>")
+    return newStack.join("\n")
 }

@@ -8,38 +8,11 @@ function commandOutput(command, args) {
     return child.stdout + child.stderr
 }
 
-function getClassContent(jar, classPath) {
-    console.log(`  Disassembling ${jar}:${classPath}`)
-    var className = classPath.replace(/\//g, ".").replace(/\.class$/, "")
-    return commandOutput("javap", ["-cp", jar, className])
-}
-
-function getStructure(jar) {
-    var classes = commandOutput("jar", ["tf", jar]).split("\n")
-    var structure = {}
-    classes.forEach(function(classPath) {
-        if (!/\.class$/.test(classPath)) return
-        var keys = classPath.split("/")
-        var current = structure
-        keys.forEach(function(key) {
-            if (/\.class$/.test(key)) {
-                current[key] = getClassContent(jar, classPath)
-            } else if (current[key] === undefined) {
-                current[key] = {}
-                current = current[key]
-            } else {
-                current = current[key]
-            }
-        })
-    })
-    return structure
-}
-
 function parsePackage(package, level) {
     var result = ""
     Object.keys(package).forEach(function(key) {
-        if (/\.class$/.test(key)) {
-            result += parseClass(package[key])
+        if (typeof package[key] === "string") {
+            result += package[key]
         } else {
             result += (level === 0 ? "declare " : "") + "namespace " + key + " {\n"
             result += parsePackage(package[key], level + 1).split("\n").map(function(line) {
@@ -52,8 +25,23 @@ function parsePackage(package, level) {
 }
 
 function parse(jar) {
-    var structure = getStructure(jar)
-    return parsePackage(structure, 0)
+    var classes = commandOutput("jar", ["tf", jar]).split("\n")
+    classes = classes.filter(function(c) {
+        return /\.class$/.test(c)
+    }).map(function(c) {
+        return c.replace(/\//g, ".").replace(/\.class$/, "")
+    })
+
+    console.log(`Disassembling ${jar}: ${classes.length} classes`)
+
+    var package = {}
+
+    for (var i = 0; i < classes.length; i += 2000) {
+        var javaCode = commandOutput("javap", ["-cp", jar].concat(classes.slice(i, i + 2000)))
+        parseClass(javaCode, package)
+    }
+
+    return parsePackage(package, 0)
 }
 
 module.exports = parse

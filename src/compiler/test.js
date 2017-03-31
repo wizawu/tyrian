@@ -340,5 +340,5 @@ public class com.sun.tools.javac.parser.JavacParser implements com.sun.tools.jav
 }
 `
 ].forEach(function(source) {
-    console.log(parseClass(source))
+    console.log(parseClass(source, {}))
 })

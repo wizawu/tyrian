@@ -51,10 +51,9 @@ function nextToken(source, offset, stack) {
     }
 }
 
-function parseClassMember(source, offset, stack, isInterface) {
+function parseClassMember(source, offset, stack, isInterface, typeVariable) {
     var line = "    "
     var returnType = ""
-    var typeVariable = ""
     var t = null
     while (t = nextToken(source, offset, stack)) {
         offset += t.skip
@@ -98,6 +97,8 @@ function parseClassMember(source, offset, stack, isInterface) {
             } else {
                 if (t.token.endsWith("...")) {
                     line += "...arg" + i + ": " + t.token.replace("...", "[]")
+                } else if (t.token.indexOf("java.util.function") === 0) {
+                    line += "arg" + i + ": any"
                 } else {
                     line += "arg" + i + ": " + t.token
                 }
@@ -105,7 +106,7 @@ function parseClassMember(source, offset, stack, isInterface) {
             }
         }
     }
-    line += ": " + returnType
+    line += ": " + (returnType.indexOf("java.util.function") === 0 ? "any" : returnType)
     push(stack, line, isMethod ? "METHOD" : "MEMBER", memberName)
 
     while (source.charAt(offset) !== "\n") offset += 1
@@ -137,6 +138,7 @@ function parseClass(source, offset, stack, classType) {
     push(stack, line, "BEGIN", className)
 
     var scope = ""
+    var typeVariable = ""
     while (t = nextToken(source, offset, stack)) {
         if (t.token === "}") {
             offset += t.skip
@@ -144,6 +146,9 @@ function parseClass(source, offset, stack, classType) {
             break
         } else if (t.token === "public" || t.token === "protected") {
             scope = t.token + " "
+            offset += t.skip
+        } else if (t.token.charAt(0) === "<") {
+            typeVariable = t.token
             offset += t.skip
         } else if (
                 (t.token === className && source.charAt(offset + t.skip) === "(") ||
@@ -164,6 +169,8 @@ function parseClass(source, offset, stack, classType) {
                 } else {
                     if (t.token.endsWith("...")) {
                         line += "...arg" + i + ": " + t.token.replace("...", "[]")
+                    } else if (t.token.indexOf("java.util.function") === 0) {
+                        line += "arg" + i + ": any"
                     } else {
                         line += "arg" + i + ": " + t.token
                     }
@@ -174,7 +181,7 @@ function parseClass(source, offset, stack, classType) {
             scope = ""
             while (source.charAt(offset) !== "\n") offset += 1
         } else {
-            var context = parseClassMember(source, offset, stack, isInterface)
+            var context = parseClassMember(source, offset, stack, isInterface, typeVariable)
             if (!context) return null
             source = context.source
             offset = context.offset
@@ -236,6 +243,7 @@ module.exports = function(source, package) {
                 newStack = []
                 memberMap = {}
                 if (line.name.indexOf("-") >= 0) ignore = true
+                if (line.name.indexOf("$") >= 0) ignore = true
                 if (!ignore) newStack.push(line.toString())
                 break
             case "CONS":
@@ -267,7 +275,7 @@ module.exports = function(source, package) {
                 var className = line.name.replace(/^(\w+\.)+/, "")
                 var ns = line.name.substring(0, line.name.length - className.length - 1)
                 objectPath.ensureExists(package, ns, {})
-                objectPath.get(package, ns)[className] = newStack.join("\n")
+                objectPath.get(package, ns)[className] = newStack.join("\n").replace(/>\.PropertyImpl/g, ">")
                 break
             default:
                 console.error("Invalid stack")

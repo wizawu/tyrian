@@ -338,6 +338,62 @@ public class com.sun.tools.javac.parser.JavacParser implements com.sun.tools.jav
   void checkAnnotationsAfterTypeParams(int);
   static {};
 }
+`,
+`
+public abstract class com.sun.jmx.mbeanserver.MBeanSupport<M> implements com.sun.jmx.mbeanserver.DynamicMBean2, javax.management.MBeanRegistration {
+  <T> com.sun.jmx.mbeanserver.MBeanSupport(T, java.lang.Class<T>) throws javax.management.NotCompliantMBeanException;
+  abstract com.sun.jmx.mbeanserver.MBeanIntrospector<M> getMBeanIntrospector();
+  abstract java.lang.Object getCookie();
+  public final boolean isMXBean();
+  public abstract void register(javax.management.MBeanServer, javax.management.ObjectName) throws java.lang.Exception;
+  public abstract void unregister();
+  public final javax.management.ObjectName preRegister(javax.management.MBeanServer, javax.management.ObjectName) throws java.lang.Exception;
+  public final void preRegister2(javax.management.MBeanServer, javax.management.ObjectName) throws java.lang.Exception;
+  public final void registerFailed();
+  public final void postRegister(java.lang.Boolean);
+  public final void preDeregister() throws java.lang.Exception;
+  public final void postDeregister();
+  public final java.lang.Object getAttribute(java.lang.String) throws javax.management.AttributeNotFoundException, javax.management.MBeanException, javax.management.ReflectionException;
+  public final javax.management.AttributeList getAttributes(java.lang.String[]);
+  public final void setAttribute(javax.management.Attribute) throws javax.management.AttributeNotFoundException, javax.management.InvalidAttributeValueException, javax.management.MBeanException, javax.management.ReflectionException;
+  public final javax.management.AttributeList setAttributes(javax.management.AttributeList);
+  public final java.lang.Object invoke(java.lang.String, java.lang.Object[], java.lang.String[]) throws javax.management.MBeanException, javax.management.ReflectionException;
+  public javax.management.MBeanInfo getMBeanInfo();
+  public final java.lang.String getClassName();
+  public final java.lang.Object getResource();
+  public final java.lang.Class<?> getMBeanInterface();
+}
+`,
+`
+class com.sun.xml.internal.bind.v2.model.impl.ElementInfoImpl<T, C, F, M> extends com.sun.xml.internal.bind.v2.model.impl.TypeInfoImpl<T, C, F, M> implements com.sun.xml.internal.bind.v2.model.core.ElementInfo<T, C> {
+  static final boolean $assertionsDisabled;
+  public com.sun.xml.internal.bind.v2.model.impl.ElementInfoImpl(com.sun.xml.internal.bind.v2.model.impl.ModelBuilder<T, C, F, M>, com.sun.xml.internal.bind.v2.model.impl.RegistryInfoImpl<T, C, F, M>, M) throws com.sun.xml.internal.bind.v2.runtime.IllegalAnnotationException;
+  final javax.xml.namespace.QName parseElementName(javax.xml.bind.annotation.XmlElementDecl);
+  protected com.sun.xml.internal.bind.v2.model.impl.ElementInfoImpl<T, C, F, M>.PropertyImpl createPropertyImpl();
+  public com.sun.xml.internal.bind.v2.model.core.ElementPropertyInfo<T, C> getProperty();
+  public com.sun.xml.internal.bind.v2.model.core.NonElement<T, C> getContentType();
+  public T getContentInMemoryType();
+  public javax.xml.namespace.QName getElementName();
+  public T getType();
+  public final boolean canBeReferencedByIDREF();
+  public com.sun.xml.internal.bind.v2.model.core.ClassInfo<T, C> getScope();
+  public com.sun.xml.internal.bind.v2.model.core.ElementInfo<T, C> getSubstitutionHead();
+  public java.util.Collection<? extends com.sun.xml.internal.bind.v2.model.impl.ElementInfoImpl<T, C, F, M>> getSubstitutionMembers();
+  void link();
+  public com.sun.xml.internal.bind.v2.runtime.Location getLocation();
+  public com.sun.xml.internal.bind.v2.model.core.Element getSubstitutionHead();
+  static com.sun.xml.internal.bind.v2.model.core.NonElement access$000(com.sun.xml.internal.bind.v2.model.impl.ElementInfoImpl);
+  static javax.xml.namespace.QName access$100(com.sun.xml.internal.bind.v2.model.impl.ElementInfoImpl);
+  static javax.xml.bind.annotation.XmlElementDecl access$200(com.sun.xml.internal.bind.v2.model.impl.ElementInfoImpl);
+  static boolean access$300(com.sun.xml.internal.bind.v2.model.impl.ElementInfoImpl);
+  static com.sun.xml.internal.bind.v2.model.core.Adapter access$400(com.sun.xml.internal.bind.v2.model.impl.ElementInfoImpl);
+  static com.sun.xml.internal.bind.v2.model.core.ID access$500(com.sun.xml.internal.bind.v2.model.impl.ElementInfoImpl);
+  static javax.activation.MimeType access$600(com.sun.xml.internal.bind.v2.model.impl.ElementInfoImpl);
+  static javax.xml.namespace.QName access$700(com.sun.xml.internal.bind.v2.model.impl.ElementInfoImpl);
+  static boolean access$800(com.sun.xml.internal.bind.v2.model.impl.ElementInfoImpl);
+  static java.lang.Object access$900(com.sun.xml.internal.bind.v2.model.impl.ElementInfoImpl);
+  static {};
+}
 `
 ].forEach(function(source) {
     console.log(parseClass(source, {}))

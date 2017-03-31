@@ -11,7 +11,9 @@ function commandOutput(command, args) {
 function parsePackage(package, level) {
     var result = ""
     Object.keys(package).forEach(function(key) {
-        if (typeof package[key] === "string") {
+        if (key === "function") {
+            return
+        } else if (typeof package[key] === "string") {
             result += package[key]
         } else {
             result += (level === 0 ? "declare " : "") + "namespace " + key + " {\n"
@@ -37,7 +39,7 @@ function parse(jar) {
     var package = {}
 
     for (var i = 0; i < classes.length; i += 2000) {
-        var javaCode = commandOutput("javap", ["-cp", jar].concat(classes.slice(i, i + 2000)))
+        var javaCode = commandOutput("javap", ["-protected", "-cp", jar].concat(classes.slice(i, i + 2000)))
         parseClass(javaCode, package)
     }
 

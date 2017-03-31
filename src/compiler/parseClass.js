@@ -258,7 +258,7 @@ module.exports = function(source, package) {
             case "METHOD":
                 if (ignore) break
                 if (memberMap[line.name]) {
-                    memberMap[line.name] = `    ${line.name}<T>(...args: any[]): any`
+                    memberMap[line.name] = `    static ${line.name}<T>(...args: any[]): any`
                 } else {
                     memberMap[line.name] = line.toString()
                 }
@@ -275,7 +275,7 @@ module.exports = function(source, package) {
                 var className = line.name.replace(/^(\w+\.)+/, "")
                 var ns = line.name.substring(0, line.name.length - className.length - 1)
                 objectPath.ensureExists(package, ns, {})
-                objectPath.get(package, ns)[className] = newStack.join("\n").replace(/>\.PropertyImpl/g, ">")
+                objectPath.get(package, ns)[className] = newStack.join("\n").replace(/>\.\w+/g, ">")
                 break
             default:
                 console.error("Invalid stack")

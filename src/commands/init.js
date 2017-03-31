@@ -20,7 +20,7 @@ var tsconfig = function(libdir) { return `
     "lib": ["dom", "es2017"],
     "target": "es5",
     "typeRoots": [
-      "${libdir}/@types/jdk",
+      "${libdir}/@types",
       "lib/@types",
       "node_modules/@types",
       "src/js/@types"

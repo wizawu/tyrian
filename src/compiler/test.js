@@ -72,6 +72,18 @@ public abstract class com.oracle.webservices.internal.api.message.BaseDistribute
   static java.util.Map access$000(com.oracle.webservices.internal.api.message.BaseDistributedPropertySet);
   static java.util.Map access$100(com.oracle.webservices.internal.api.message.BaseDistributedPropertySet);
 }
+`,
+`
+interface package-info {
+}
+`,
+`
+public final class com.sun.beans.WeakCache<K, V> {
+  public com.sun.beans.WeakCache();
+  public V get(K);
+  public void put(K, V);
+  public void clear();
+}
 `
 ].forEach(function(source) {
     console.log(parseClass(source))

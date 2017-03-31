@@ -108,13 +108,14 @@ function parseClass(source, offset, stack, classType) {
     t = nextToken(source, offset, stack)
     offset += t.skip
     var className = t.token
-    line += className.split(".").reverse()[0]
+    var shortClassName = className.split(".").reverse()[0]
+    line += shortClassName
     while (t = nextToken(source, offset, stack)) {
         line += " " + t.token
         offset += t.skip
         if (t.token === "{") break
     }
-    push(stack, line, "BEGIN")
+    push(stack, line, "BEGIN", shortClassName)
 
     var scope = ""
     while (t = nextToken(source, offset, stack)) {
@@ -125,7 +126,10 @@ function parseClass(source, offset, stack, classType) {
         } else if (t.token === "public" || t.token === "protected") {
             scope = t.token + " "
             offset += t.skip
-        } else if (t.token === className && source.charAt(offset + t.skip) === "(") {
+        } else if (
+                (t.token === className && source.charAt(offset + t.skip) === "(") ||
+                (className.indexOf(t.token) === 0 && className.charAt(t.token.length) === "<")
+            ) {
             offset += t.skip
             var line = "    constructor"
             var i = 0
@@ -203,22 +207,26 @@ module.exports = function(source) {
     var stack = parse(source, 0, []).stack
     var newStack = []
     var memberMap = {}
+    var ignore = false
     for (var i = 0; i < stack.length; i++) {
         var line = stack[i]
         switch (line.type) {
             case "BEGIN":
                 memberMap = {}
-                newStack.push(line.toString())
+                if (line.name.indexOf("-") >= 0) ignore = true
+                if (!ignore) newStack.push(line.toString())
                 break
             case "CONS":
+                if (ignore) break
                 if (memberMap["&"]) {
                     memberMap["&"] = "    constructor(...args: any[])"
                 } else {
                     memberMap["&"] = line.toString()
                 }
-                break;
+                break
             case "MEMBER":
             case "METHOD":
+                if (ignore) break
                 if (memberMap[line.name]) {
                     memberMap[line.name] = `    ${line.name}<T>(...args: any[]): any`
                 } else {
@@ -226,6 +234,10 @@ module.exports = function(source) {
                 }
                 break
             case "END":
+                if (ignore) {
+                    ignore = false
+                    break
+                }
                 Object.keys(memberMap).forEach(function(key) {
                     newStack.push(memberMap[key])
                 })

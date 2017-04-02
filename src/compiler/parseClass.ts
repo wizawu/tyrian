@@ -1,291 +1,248 @@
-var objectPath = require("object-path")
+import { get, ensureExists } from "object-path"
 
-function push(stack, line, type, name) {
-    var str = new String(line)
-    str.type = type
-    str.name = name
-    stack.push(str)
+const INDENT = "    "
+const UNSUPPORTED_MODIFIERS = [
+    "abstract",
+    "final",
+    "native",
+    "strictfp",
+    "synchronized",
+    "transient",
+    "volatile",
+]
+
+function safeType(type: string): string {
+    return type.indexOf("java.util.function") === 0 ? "any" : type
 }
 
-function nextToken(source, offset, stack) {
-    var skip = 0
-    while (/\s/.test(source.charAt(offset + skip))) {
-        skip += 1
-    }
+function nextToken(ctx: Context): Token {
+    let skip = 0
+    while (/\s/.test(ctx.source.charAt(ctx.offset + skip))) skip += 1
 
-    var char = source.charAt(offset + skip)
+    let char = ctx.source.charAt(ctx.offset + skip)
     if (["(", ")", ",", ";"].indexOf(char) >= 0) {
-        return { token: char, skip: skip + 1 }
+        return { value: char, skip: skip + 1 }
     }
 
-    var token = ""
-    var count = 0
-    while (count > 0 || /\S/.test(source.charAt(offset + skip))) {
-        var char = source.charAt(offset + skip)
-        if (char === "<") count += 1
-        if (char === ">") count -= 1
-        if (count <= 0 && ["(", ")", ",", ";"].indexOf(char) >= 0) break
+    let value = ""
+    let openAngles = 0
+    while (openAngles > 0 || /\S/.test(ctx.source.charAt(ctx.offset + skip))) {
+        char = ctx.source.charAt(ctx.offset + skip)
+        if (char === "<") openAngles += 1
+        if (char === ">") openAngles -= 1
+        if (openAngles <= 0 && ["(", ")", ",", ";"].indexOf(char) >= 0) break
         if (char === "?") {
             skip += 1
-            // extends
-            var next = nextToken(source, offset + skip, stack)
-            if (next.token === "extends" || next.token === "super") {
-                skip += next.skip
-                // interface
-                next = nextToken(source, offset + skip, stack)
-                token += next.token
-                skip += next.skip
+            let token = nextToken({ ...ctx, ...{ offset: ctx.offset + skip } })
+            if (token.value === "extends" || token.value === "super") {
+                // ? extends XXX
+                // ? super XXX
+                skip += token.skip
+                token = nextToken({ ...ctx, ...{ offset: ctx.offset + skip } })
+                value += token.value
+                skip += token.skip
             } else {
-                token += "any"
+                // <?>
+                value += "any"
             }
         } else {
             skip += 1
-            token += char
+            value += char
         }
-        if (source.charAt(offset + skip) === ">" && count === 0) break
+        if (ctx.source.charAt(ctx.offset + skip) === ">" && openAngles === 0) break
     }
 
-    return {
-        token: token,
-        skip: skip,
-    }
+    return { value, skip }
 }
 
-function parseClassMember(source, offset, stack, isInterface, typeVariable) {
-    var line = "    "
-    var returnType = ""
-    var t = null
-    while (t = nextToken(source, offset, stack)) {
-        offset += t.skip
-        if (["public", "protected", "static"].indexOf(t.token) >= 0) {
-            if (!isInterface) line += t.token + " "
-        } else if (t.token.charAt(0) === "<") {
-            typeVariable = t.token
-        } else if (["final", "abstract", "native", "synchronized", "volatile", "strictfp", "transient"].indexOf(t.token) < 0) {
-            returnType = t.token
-            break
-        }
-    }
-
-    if (returnType === "{}") {
-        return {
-            source: source,
-            offset: offset + 1,
-            stack: stack,
-        }
-    }
-
-    t = nextToken(source, offset, stack)
-    var memberName = t.token
-    line += memberName + typeVariable
-    offset += t.skip
-
-    t = nextToken(source, offset, stack)
-    offset += t.skip
-    var isMethod = false
-    if (t.token === "(") {
-        isMethod = true
+function parseParameters(ctx: Context, line: string): string {
+    let token = nextToken(ctx)
+    ctx.offset += token.skip
+    if (token.value === "(") {
         line += "("
-        var i = 0
-        while (t = nextToken(source, offset, stack)) {
-            offset += t.skip
-            if (t.token === ")") {
-                line += ")"
-                break
-            } else if (t.token === ",") {
-                line += ", "
-            } else {
-                if (t.token.endsWith("...")) {
-                    line += "...arg" + i + ": " + t.token.replace("...", "[]")
-                } else if (t.token.indexOf("java.util.function") === 0) {
-                    line += "arg" + i + ": any"
-                } else {
-                    line += "arg" + i + ": " + t.token
-                }
-                i += 1
-            }
-        }
+    } else {
+        return line
     }
-    line += ": " + (returnType.indexOf("java.util.function") === 0 ? "any" : returnType)
-    push(stack, line, isMethod ? "METHOD" : "MEMBER", memberName)
 
-    while (source.charAt(offset) !== "\n") offset += 1
-
-    return {
-        source: source,
-        offset: offset,
-        stack: stack,
-    }
-}
-
-function parseClass(source, offset, stack, classType) {
-    var t = nextToken(source, offset, stack)
-    if (t.token !== "class" && t.token !== "interface") return null
-    var isInterface = t.token === "interface"
-    offset += t.skip
-    var line = classType + t.token + " "
-
-    t = nextToken(source, offset, stack)
-    offset += t.skip
-    var className = t.token
-    var shortClassName = className.replace(/^(\w+\.)+/, "")
-    line += shortClassName
-    while (t = nextToken(source, offset, stack)) {
-        line += " " + t.token
-        offset += t.skip
-        if (t.token === "{") break
-    }
-    push(stack, line, "BEGIN", className)
-
-    var scope = ""
-    var typeVariable = ""
-    while (t = nextToken(source, offset, stack)) {
-        if (t.token === "}") {
-            offset += t.skip
-            push(stack, "}\n", "END", className)
+    for (let i = 0, token = nextToken(ctx); true;) {
+        ctx.offset += token.skip
+        if (token.value === ")") {
+            line += ")"
             break
-        } else if (t.token === "public" || t.token === "protected") {
-            scope = t.token + " "
-            offset += t.skip
-        } else if (t.token.charAt(0) === "<") {
-            typeVariable = t.token
-            offset += t.skip
+        } else if (token.value === ",") {
+            line += ", "
+        } else {
+            if (token.value.endsWith("...")) {
+                line += `...arg${i}: ${token.value.replace("...", "[]")}`
+            } else {
+                line += `arg${i}: ${safeType(token.value)}`
+            }
+            i += 1
+        }
+    }
+
+    return line
+}
+
+function parseMember(ctx: Context, isInterface: boolean, typeVariable: string): Context {
+    let line = INDENT
+    let type = ""
+
+    let token: Token = null
+    while (token = nextToken(ctx)) {
+        ctx.offset += token.skip
+        if (["public", "protected", "static"].indexOf(token.value) >= 0) {
+            if (!isInterface) line += token.value + " "
+        } else if (token.value.charAt(0) === "<") {
+            typeVariable = token.value
+        } else if (UNSUPPORTED_MODIFIERS.indexOf(token.value) >= 0) {
+            continue
+        } else {
+            type = token.value
+            break
+        }
+    }
+
+    // static {}
+    if (type === "{}") return { ...ctx, ...{ offset: ctx.offset + 1 } }
+
+    token = nextToken(ctx)
+    let member = token.value
+    line += member + typeVariable
+    ctx.offset += token.skip
+
+    line = parseParameters(ctx, line)
+    line += `: ${safeType(type)}`
+    ctx.stack.push({ line, type: "MEMBER", name: member })
+
+    while (ctx.source.charAt(ctx.offset) !== "\n") ctx.offset += 1
+    return ctx
+}
+
+function parseClass(ctx: Context, modifier: string): Context {
+    let token = nextToken(ctx)
+    let isInterface = token.value === "interface"
+    if (token.value !== "class" && isInterface) return null
+    ctx.offset += token.skip
+    let line = modifier + token.value + " "
+
+    token = nextToken(ctx)
+    ctx.offset += token.skip
+    let className = token.value
+    line += className.replace(/^(\w+\.)+/, "")
+
+    while (token = nextToken(ctx)) {
+        line += " " + token.value
+        ctx.offset += token.skip
+        if (token.value === "{") break
+    }
+    ctx.stack.push({ line, type: "BEGIN", name: className })
+
+    let memberModifier = ""
+    let typeVariable = ""
+    while (token = nextToken(ctx)) {
+        if (token.value === "}") {
+            ctx.offset += token.skip
+            ctx.stack.push({ line: "}\n", type: "END", name: className })
+            break
+        } else if (token.value === "public" || token.value === "protected") {
+            ctx.offset += token.skip
+            memberModifier = token.value + " "
+        } else if (token.value.charAt(0) === "<") {
+            ctx.offset += token.skip
+            typeVariable = token.value
         } else if (
-                (t.token === className && source.charAt(offset + t.skip) === "(") ||
-                (className.indexOf(t.token) === 0 && className.charAt(t.token.length) === "<")
-            ) {
-            offset += t.skip
-            var line = "    constructor"
-            var i = 0
-            while (t = nextToken(source, offset, stack)) {
-                offset += t.skip
-                if (t.token === "(") {
-                    line += "("
-                } else if (t.token === ")") {
-                    line += ")"
-                    break
-                } else if (t.token === ",") {
-                    line += ", "
-                } else {
-                    if (t.token.endsWith("...")) {
-                        line += "...arg" + i + ": " + t.token.replace("...", "[]")
-                    } else if (t.token.indexOf("java.util.function") === 0) {
-                        line += "arg" + i + ": any"
-                    } else {
-                        line += "arg" + i + ": " + t.token
-                    }
-                    i += 1
-                }
-            }
-            push(stack, line.replace(/^(\s+)/, "$1" + scope), "CONS")
-            scope = ""
-            while (source.charAt(offset) !== "\n") offset += 1
+            (token.value === className && ctx.source.charAt(ctx.offset + token.skip) === "(") ||
+            (className.indexOf(token.value) === 0 && className.charAt(token.value.length) === "<")
+        ) {
+            ctx.offset += token.skip
+            line = INDENT + "constructor"
+            line = parseParameters(ctx, line)
+            ctx.stack.push({ line: line.replace(/^(\s+)/, "$1" + memberModifier), type: "CONSTR" })
+
+            memberModifier = ""
+            while (ctx.source.charAt(ctx.offset) !== "\n") ctx.offset += 1
         } else {
-            var context = parseClassMember(source, offset, stack, isInterface, typeVariable)
-            if (!context) return null
-            source = context.source
-            offset = context.offset
-            stack = context.stack
+            if (!(ctx = parseMember(ctx, isInterface, typeVariable))) return null
             if (!isInterface) {
-                push(
-                    stack,
-                    stack[stack.length - 1].replace(/^(\s+)/, "$1" + scope),
-                    stack[stack.length - 1].type,
-                    stack[stack.length - 1].name
-                )
-                stack.splice(stack.length - 2, 1)
+                let lastItem = ctx.stack[ctx.stack.length - 1]
+                lastItem.line = lastItem.line.replace(/^(\s+)/, "$1" + memberModifier)
             }
-            scope = ""
+            memberModifier = ""
         }
     }
 
-    return {
-        source: source,
-        offset: offset,
-        stack: stack,
-    }
+    return ctx
 }
 
-function parse(source, offset, stack) {
-    var type = ""
-    while (offset < source.length) {
-        var next = nextToken(source, offset, stack)
-        var token = next.token
-        var skip = next.skip
-        if (token === "final" || token === "public") {
-            offset += skip
-        } else if (token === "abstract") {
-            type += token + " "
-            offset += skip
-        } else if (token === "class" || token === "interface") {
-            context = parseClass(source, offset, stack, type)
-            if (!context) return { stack: stack }
-            source = context.source
-            offset = context.offset
-            stack = context.stack
-            type = ""
+export default function (source: string, pkg: any) {
+    let ctx: Context = { source, offset: 0, stack: [] }
+    let modifier = ""
+    while (ctx.offset < source.length) {
+        let token = nextToken(ctx)
+        if (token.value === "final" || token.value === "public") {
+            ctx.offset += token.skip
+        } else if (token.value === "abstract") {
+            ctx.offset += token.skip
+            modifier += token.value + " "
+        } else if (token.value === "class" || token.value === "interface") {
+            if (!(ctx = parseClass(ctx, modifier))) break
+            modifier = ""
         } else {
-            offset += skip
+            ctx.offset += token.skip
         }
     }
-    return { stack: stack }
-}
 
-module.exports = function(source, package) {
-    var stack = parse(source, 0, []).stack
-    var newStack = []
-    var memberMap = {}
-    var ignore = false
-    for (var i = 0; i < stack.length; i++) {
-        var line = stack[i]
-        switch (line.type) {
+    let buffer = []
+    let memberMap = {}
+    let ignore = false
+
+    for (let i = 0; i < ctx.stack.length; i++) {
+        let item = ctx.stack[i]
+        switch (item.type) {
             case "BEGIN":
-                newStack = []
+                buffer = []
                 memberMap = {}
-                if (line.name.indexOf("-") >= 0) ignore = true
-                if (line.name.indexOf("$") >= 0) ignore = true
-                if (!ignore) newStack.push(line.toString())
+                ignore = false
+                if (item.name.indexOf("-") >= 0) ignore = true
+                if (item.name.indexOf("$") >= 0) ignore = true
+                if (!ignore) buffer.push(item.line)
                 break
-            case "CONS":
+            case "CONSTR":
                 if (ignore) break
                 if (memberMap["&"]) {
-                    memberMap["&"] = "    constructor(...args: any[])"
+                    memberMap["&"] = INDENT + "constructor(...args: any[])"
                 } else {
-                    memberMap["&"] = line.toString()
+                    memberMap["&"] = item.line
                 }
                 break
             case "MEMBER":
-            case "METHOD":
                 if (ignore) break
-                if (line.name === "prototype") break
-                if (memberMap[line.name]) {
-                    if (/\bstatic\b/.test(line.toString()) || /\bstatic\b/.test(memberMap[line.name])) {
-                        memberMap[line.name] = `    static ${line.name}<T>(...args: any[]): any`
+                if (item.name === "prototype") break
+                if (memberMap[item.name]) {
+                    if (/\bstatic\b/.test(item.line) || /\bstatic\b/.test(memberMap[item.name])) {
+                        memberMap[item.name] = `${INDENT}static ${item.name}<T>(...args: any[]): any`
                     } else {
-                        memberMap[line.name] = `    ${line.name}<T>(...args: any[]): any`
+                        memberMap[item.name] = `${INDENT}${item.name}<T>(...args: any[]): any`
                     }
                 } else {
-                    memberMap[line.name] = line.toString()
+                    memberMap[item.name] = item.line
                 }
                 break
             case "END":
-                if (ignore) {
-                    ignore = false
-                    break
-                }
-                Object.keys(memberMap).forEach(function(key) {
-                    newStack.push(memberMap[key])
-                })
-                newStack.push(line.toString())
-                var className = line.name.replace(/^(\w+\.)+/, "")
-                var ns = line.name.substring(0, line.name.length - className.length - 1)
-                objectPath.ensureExists(package, ns, {})
-                objectPath.get(package, ns)[className] = newStack.join("\n").replace(/>\.\w+/g, ">")
+                if (ignore) break
+                Object.keys(memberMap).forEach(key => buffer.push(memberMap[key]))
+                buffer.push(item.line)
+                let className = item.name.replace(/^(\w+\.)+/, "")
+                let ns = item.name.substring(0, item.name.length - className.length - 1)
+                ensureExists(pkg, ns, {})
+                get(pkg, ns)[className] = buffer.join("\n").replace(/>\.\w+/g, ">")
                 break
             default:
-                console.error("Invalid stack")
+                console.error(JSON.stringify(item))
                 process.exit(1)
         }
     }
-    return newStack.join("\n")
+
+    return buffer.join("\n")
 }

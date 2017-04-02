@@ -1,4 +1,4 @@
-var parseClass = require("./parseClass");
+const parseClass = require("./parseClass")
 
 [
 `
@@ -395,6 +395,6 @@ class com.sun.xml.internal.bind.v2.model.impl.ElementInfoImpl<T, C, F, M> extend
   static {};
 }
 `
-].forEach(function(source) {
+].forEach(function (source) {
     console.log(parseClass(source, {}))
 })

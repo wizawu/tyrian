@@ -1,7 +1,7 @@
-var fs = require("fs")
+import * as fs from "fs"
 
 // package.json
-var package = `
+const PACKAGE_JSON = `
 {
   "dependencies": {
     "mockxhr": "^1.3.0"
@@ -12,8 +12,19 @@ var package = `
 }
 `.trim()
 
+// .gitignore
+const _GITIGNORE = `
+.gradle
+build
+build.gradle
+lib
+node_modules
+tsconfig.json
+yarn.lock
+`.trim()
+
 // tsconfig.json
-var tsconfig = function(libdir) { return `
+const tsconfig = libdir => `
 {
   "compilerOptions": {
     "jsx": "react",
@@ -33,21 +44,10 @@ var tsconfig = function(libdir) { return `
     "**/*.tsx"
   ]
 }
-`.trim() }
-
-// .gitignore
-var gitignore = `
-.gradle
-build
-build.gradle
-lib
-node_modules
-tsconfig.json
-yarn.lock
 `.trim()
 
-function init(libdir) {
-    ["build", "lib", "lib/@types", "node_modules", "src"].forEach(function(dir) {
+export default function (libdir: string) {
+    ["build", "lib", "lib/@types", "node_modules", "src"].forEach(dir => {
         console.log("mkdir " + dir)
         try {
             fs.mkdirSync(dir)
@@ -55,7 +55,7 @@ function init(libdir) {
             console.error(err.message)
         }
     });
-    ["assets", "assets/img", "css", "html", "js", "js/entry", "js/@types"].forEach(function(dir) {
+    ["assets", "assets/img", "css", "html", "js", "js/entry", "js/@types"].forEach(dir => {
         console.log("mkdir src/" + dir)
         try {
             fs.mkdirSync("src/" + dir)
@@ -65,9 +65,9 @@ function init(libdir) {
     });
 
     [
-        ["package.json", package],
+        ["package.json", PACKAGE_JSON],
         ["tsconfig.json", tsconfig(libdir)],
-        [".gitignore", gitignore],
+        [".gitignore", _GITIGNORE],
         ["src/assets/test.txt", ""],
         ["src/assets/img/test.jpg", ""],
         ["src/css/test.less", ""],
@@ -75,12 +75,10 @@ function init(libdir) {
         ["src/js/entry/test.tsx", `import "../../css/test.less"`],
         ["src/js/entry/test.j.ts", `org.pmw.tinylog.Logger.info(java.lang.System.getProperty("java.version"))`],
         ["src/js/@types/test.d.ts", ""],
-    ].forEach(function(args) {
-        console.log("create " + args[0])
-        fs.writeFile(args[0], args[1], function(err) {
-            if (err) console.log(err.message)
-        })
+    ].forEach(([path, content]: string[]) => {
+        if (!fs.existsSync(path)) {
+            console.log("create " + path)
+            fs.writeFile(path, content, err => err && console.log(err.message))
+        }
     })
 }
-
-module.exports = init

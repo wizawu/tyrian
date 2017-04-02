@@ -1,10 +1,10 @@
-var fs = require("fs")
+import * as fs from "fs"
 
-function version(libdir) {
-    return JSON.parse(fs.readFileSync(libdir + "/package.json")).version
+export function version(libdir: string) {
+    return JSON.parse(fs.readFileSync(`${libdir}/package.json`).toString()).version
 }
 
-function help(libdir, exit) {
+export function help(libdir: string, exit: number) {
     console.log(`Version: ${version(libdir)}`)
     console.log("Usage:");
     console.log("  1c env");
@@ -18,6 +18,3 @@ function help(libdir, exit) {
 
     process.exit(exit)
 }
-
-module.exports = help
-module.exports.version = version

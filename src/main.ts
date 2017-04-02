@@ -3,10 +3,11 @@ var path = require("path")
 
 var build = require("./commands/build")
 var env = require("./commands/env")
-var help = require("./commands/help")
 var init = require("./commands/init")
 var install = require("./commands/install")
 var run = require("./commands/run")
+
+import {help, version} from "./commands/help"
 
 var libdir = path.resolve(path.dirname(process.argv[1]) + "/..")
 var libmod = libdir + (fs.existsSync(libdir + "/node_modules") ? "/node_modules" : "/..")
@@ -16,7 +17,7 @@ var target = process.argv[3] && path.resolve(process.argv[3])
 
 if (command === "help") help(libdir, 0)
 if (command === "version") {
-    console.log(help.version(libdir))
+    console.log(version(libdir))
     process.exit(0)
 }
 

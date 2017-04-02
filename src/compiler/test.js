@@ -1,4 +1,4 @@
-const parseClass = require("./parseClass")
+const parseClass = require("./parseClass").default;
 
 [
 `

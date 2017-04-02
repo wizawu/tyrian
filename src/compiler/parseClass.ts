@@ -1,3 +1,5 @@
+/// <reference path="../index.d.ts" />
+
 import { get, ensureExists } from "object-path"
 
 const INDENT = "    "
@@ -57,22 +59,18 @@ function nextToken(ctx: Context): Token {
 
 function parseParameters(ctx: Context, line: string): string {
     let token = nextToken(ctx)
-    ctx.offset += token.skip
-    if (token.value === "(") {
-        line += "("
-    } else {
-        return line
-    }
-
-    for (let i = 0, token = nextToken(ctx); true;) {
+    if (token.value !== "(") return line
+    for (let i = 0; true; token = nextToken(ctx)) {
         ctx.offset += token.skip
-        if (token.value === ")") {
+        if (token.value === "(") {
+            line += "("
+        } else if (token.value === ")") {
             line += ")"
             break
         } else if (token.value === ",") {
             line += ", "
         } else {
-            if (token.value.endsWith("...")) {
+            if (token.value.substring(token.value.length - 3) === "...") {
                 line += `...arg${i}: ${token.value.replace("...", "[]")}`
             } else {
                 line += `arg${i}: ${safeType(token.value)}`
@@ -163,7 +161,8 @@ function parseClass(ctx: Context, modifier: string): Context {
             memberModifier = ""
             while (ctx.source.charAt(ctx.offset) !== "\n") ctx.offset += 1
         } else {
-            if (!(ctx = parseMember(ctx, isInterface, typeVariable))) return null
+            ctx = parseMember(ctx, isInterface, typeVariable)
+            if (!ctx) return null
             if (!isInterface) {
                 let lastItem = ctx.stack[ctx.stack.length - 1]
                 lastItem.line = lastItem.line.replace(/^(\s+)/, "$1" + memberModifier)
@@ -186,7 +185,8 @@ export default function (source: string, pkg: any) {
             ctx.offset += token.skip
             modifier += token.value + " "
         } else if (token.value === "class" || token.value === "interface") {
-            if (!(ctx = parseClass(ctx, modifier))) break
+            let context = parseClass(ctx, modifier)
+            if (!context) break
             modifier = ""
         } else {
             ctx.offset += token.skip

@@ -59,7 +59,7 @@ function compiler(watch: boolean, libdir: string, libmod: string, context: strin
     })
 }
 
-export function entry(libdir: string, libmod: string, context: string) {
+export function build(libdir: string, libmod: string, context: string) {
     compiler(false, libdir, libmod, context).run((err, stats) => {
         console.log(stats.toString({ colors: true }))
         if (stats.hasErrors()) process.exit(2)

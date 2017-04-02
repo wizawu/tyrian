@@ -1,55 +1,32 @@
-var fs = require("fs")
-var spawnSync = require("child_process").spawnSync
-var parseJAR = require("../compiler/parseJAR")
-
+"use strict";
+exports.__esModule = true;
+var fs = require("fs");
+var child_process_1 = require("child_process");
+// TODO
+var parseJAR = require("../compiler/parseJAR");
 // build.gradle
-var gradle = function(deps) { return `
-apply plugin: "java"
-
-repositories {
-  mavenCentral()
-}
-
-task install(type: Copy) {
-  into "lib"
-  from configurations.runtime
-}
-
-dependencies {
-  ${deps}
-}
-`.trim() }
-
-function install() {
-    var child = spawnSync("yarn", ["install"], {
-        stdio: "inherit",
-    })
-    if (child.status !== 0) process.exit(child.status)
-
+var buildGradle = function (deps) { return ("\napply plugin: \"java\"\n\nrepositories {\n  mavenCentral()\n}\n\ntask install(type: Copy) {\n  into \"lib\"\n  from configurations.runtime\n}\n\ndependencies {\n  " + deps + "\n}\n").trim(); };
+function default_1() {
+    var child = child_process_1.spawnSync("yarn", ["install"], { stdio: "inherit" });
+    if (child.status !== 0)
+        process.exit(child.status);
     try {
-        var json = JSON.parse(fs.readFileSync("package.json"))
-        if (!json.mvnDependencies) return
-
-        var deps = json.mvnDependencies.map(function(dep) {
-            return `compile '${dep}'`
-        }).join("\n")
-        fs.writeFileSync("build.gradle", gradle(deps))
-
-        var child = spawnSync("gradle", ["install"], {
-            stdio: "inherit",
-        })
-        if (child.status !== 0) process.exit(child.status)
-    } catch (err) {
-        console.error(err.message)
+        var json = JSON.parse(fs.readFileSync("package.json").toString());
+        if (!json.mvnDependencies)
+            return;
+        var deps = json.mvnDependencies.map(function (dep) { return "compile '" + dep + "'"; }).join("\n");
+        fs.writeFileSync("build.gradle", buildGradle(deps));
+        child = child_process_1.spawnSync("gradle", ["install"], { stdio: "inherit" });
+        if (child.status !== 0)
+            process.exit(child.status);
     }
-
-    fs.readdirSync("lib").map(function(jar) {
-        if (jar === "@types") return
-        var filename = "lib/@types/" + jar.replace(/\.jar$/, ".d.ts")
-        console.log("Generating " + filename)
-        var content = parseJAR("lib/" + jar)
-        fs.writeFileSync(filename, content)
-    })
+    catch (err) {
+        console.error(err.message);
+    }
+    fs.readdirSync("lib").filter(function (jar) { return /\.jar$/.test(jar); }).map(function (jar) {
+        var filename = "lib/@types/" + jar.replace(/\.jar$/, ".d.ts");
+        console.log("Generating " + filename);
+        fs.writeFileSync(filename, parseJAR("lib/" + jar));
+    });
 }
-
-module.exports = install
+exports["default"] = default_1;

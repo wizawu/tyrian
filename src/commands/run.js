@@ -1,17 +1,12 @@
-var fs = require("fs")
-var path = require("path")
-var spawnSync = require("child_process").spawnSync
-
-function run(target) {
-    var libdir = path.resolve(path.dirname(target) + "/../lib")
-    var classpath = fs.readdirSync(libdir).map(function(jar) {
-        if (jar === "@types") return ""
-        return libdir + "/" + jar
-    }).join(":")
-    var child = spawnSync("jjs", ["-cp", classpath, target], {
-        stdio: "inherit"
-    })
-    process.exit(child.status)
+"use strict";
+exports.__esModule = true;
+var fs = require("fs");
+var path = require("path");
+var child_process_1 = require("child_process");
+function default_1(target) {
+    var lib = path.resolve(path.dirname(target) + "/../lib");
+    var classpath = fs.readdirSync(lib).map(function (jar) { return jar === "@types" ? "" : lib + "/" + jar; }).join(":");
+    var child = child_process_1.spawnSync("jjs", ["-cp", classpath, target], { stdio: "inherit" });
+    process.exit(child.status);
 }
-
-module.exports = run
+exports["default"] = default_1;

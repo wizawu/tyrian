@@ -1,66 +1,66 @@
-var spawnSync = require("child_process").spawnSync
-
-function header(name, link) {
-    return `\n[${name}](${link})\n`
-}
-
-function notFound(name) {
-    return `** not found **\n`
-}
-
-function env() {
-    var ok = true
-    var output = ""
-    var child = null
-    var spawnOptions = {
-        stdio: "pipe"
+"use strict";
+var __assign = (this && this.__assign) || Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+            t[p] = s[p];
     }
-
+    return t;
+};
+exports.__esModule = true;
+var child_process_1 = require("child_process");
+var header = function (tool, link) { return "\n[" + tool + "](" + link + ")\n"; };
+var notFound = function () { return "** not found **\n"; };
+function default_1() {
+    var ok = true;
+    var output = "";
+    var child = null;
+    var options = { stdio: "pipe" };
     // node
-    child = spawnSync("node", ["-v"], spawnOptions)
-    output += header("node", "https://nodejs.org/en/download/")
-    output += child.stdout + child.stderr || notFound()
-    if (child.status !== 0) ok = false
-
+    child = child_process_1.spawnSync("node", ["-v"], options);
+    output += header("node", "https://nodejs.org/en/download/");
+    output += child.stdout + child.stderr || notFound();
+    if (child.status !== 0)
+        ok = false;
     // yarn
-    child = spawnSync("yarn", ["-V"], spawnOptions)
-    output += header("yarn", "npm install -g yarn")
-    output += child.stdout + child.stderr || notFound()
-    if (child.status !== 0) ok = false
-
+    child = child_process_1.spawnSync("yarn", ["-V"], options);
+    output += header("yarn", "npm install -g yarn");
+    output += child.stdout + child.stderr || notFound();
+    if (child.status !== 0)
+        ok = false;
     // java
-    child = spawnSync("java", ["-version"], spawnOptions)
-    output += header("java", "http://openjdk.java.net/install/")
-    output += child.stdout + child.stderr || notFound()
-    if (child.status !== 0) ok = false
-
+    child = child_process_1.spawnSync("java", ["-version"], options);
+    output += header("java", "http://openjdk.java.net/install/");
+    output += child.stdout + child.stderr || notFound();
+    if (child.status !== 0)
+        ok = false;
     // jjs
-    child = spawnSync("jjs", ["-fv"], Object.assign({input: "quit()"}, spawnOptions))
-    output += "jjs -> " + (child.stdout + child.stderr || notFound()).replace(/jjs>\s+/, "")
-    if (child.status !== 0) ok = false
-
+    child = child_process_1.spawnSync("jjs", ["-fv"], __assign({ input: "quit()" }, options));
+    output += "jjs -> " + (child.stdout + child.stderr || notFound()).replace(/jjs>\s+/, "");
+    if (child.status !== 0)
+        ok = false;
     // javap
-    child = spawnSync("which", ["javap"], spawnOptions)
-    output += "javap -> " + (child.stdout + child.stderr || notFound())
-    if (child.status !== 0) ok = false
-
+    child = child_process_1.spawnSync("which", ["javap"], options);
+    output += "javap -> " + (child.stdout + child.stderr || notFound());
+    if (child.status !== 0)
+        ok = false;
     // jar
-    child = spawnSync("which", ["jar"], spawnOptions)
-    output += "jar -> " + (child.stdout + child.stderr || notFound())
-    if (child.status !== 0) ok = false
-
+    child = child_process_1.spawnSync("which", ["jar"], options);
+    output += "jar -> " + (child.stdout + child.stderr || notFound());
+    if (child.status !== 0)
+        ok = false;
     // gradle
-    child = spawnSync("gradle", ["-version"], spawnOptions)
-    output += header("gradle", "https://gradle.org/install")
-    output += child.stdout + child.stderr || notFound()
-    if (child.status !== 0) ok = false
-
+    child = child_process_1.spawnSync("gradle", ["-version"], options);
+    output += header("gradle", "https://gradle.org/install");
+    output += child.stdout + child.stderr || notFound();
+    if (child.status !== 0)
+        ok = false;
     if (!ok) {
-        console.error(output)
-        process.exit(127)
-    } else {
-        return output
+        console.error(output);
+        process.exit(127);
+    }
+    else {
+        return output;
     }
 }
-
-module.exports = env
+exports["default"] = default_1;

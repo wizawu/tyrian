@@ -1,5 +1,5 @@
 /// <reference path="primitive.d.ts" />
-/// <reference path="jdk/index.d.ts" />
+/// <reference path="jdk.d.ts" />
 
 console.log(com)
 console.log(java)

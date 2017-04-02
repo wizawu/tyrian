@@ -4,7 +4,7 @@ var fs = require("fs");
 var webpack = require("webpack");
 var CopyWebpackPlugin = require("copy-webpack-plugin");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
-function compiler(watch, libdir, libmod, context) {
+function compiler(watch, instdir, instmod, context) {
     var entry = {};
     fs.readdirSync(context + "/src/js/entry").forEach(function (filename) {
         if (/\.j\.ts$/.test(filename)) {
@@ -21,7 +21,7 @@ function compiler(watch, libdir, libmod, context) {
         devtool: watch && "inline-source-map",
         context: context,
         resolve: { extensions: [".js", ".j.ts", ".ts", ".tsx"] },
-        resolveLoader: { modules: [libmod] },
+        resolveLoader: { modules: [instmod] },
         entry: entry,
         output: { path: context, filename: "[name]" },
         module: {
@@ -57,16 +57,16 @@ function compiler(watch, libdir, libmod, context) {
         ])
     });
 }
-function build(libdir, libmod, context) {
-    compiler(false, libdir, libmod, context).run(function (err, stats) {
+function build(instdir, instmod, context) {
+    compiler(false, instdir, instmod, context).run(function (err, stats) {
         console.log(stats.toString({ colors: true }));
         if (stats.hasErrors())
             process.exit(2);
     });
 }
 exports.build = build;
-function watch(libdir, libmod, context) {
-    compiler(true, libdir, libmod, context).watch({ poll: true }, function (err, stats) {
+function watch(instdir, instmod, context) {
+    compiler(true, instdir, instmod, context).watch({ poll: true }, function (err, stats) {
         console.log(stats.toString({ colors: true }));
     });
 }

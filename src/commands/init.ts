@@ -24,7 +24,7 @@ yarn.lock
 `.trim()
 
 // tsconfig.json
-const tsconfig = libdir => `
+const tsconfig = instdir => `
 {
   "compilerOptions": {
     "jsx": "react",
@@ -32,21 +32,21 @@ const tsconfig = libdir => `
     "skipLibCheck": true,
     "target": "es5",
     "typeRoots": [
-      "${libdir}/@types",
+      "${instdir}/@types",
       "lib/@types",
       "node_modules/@types",
       "src/js/@types"
     ]
   },
   "include": [
-    "${libdir}/@types/**/*.ts",
+    "${instdir}/@types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
   ]
 }
 `.trim()
 
-export default function (libdir: string) {
+export default function (instdir: string) {
     ["build", "lib", "lib/@types", "node_modules", "src"].forEach(dir => {
         console.log("mkdir " + dir)
         try {
@@ -66,7 +66,7 @@ export default function (libdir: string) {
 
     [
         ["package.json", PACKAGE_JSON],
-        ["tsconfig.json", tsconfig(libdir)],
+        ["tsconfig.json", tsconfig(instdir)],
         [".gitignore", _GITIGNORE],
         ["src/assets/test.txt", ""],
         ["src/assets/img/test.jpg", ""],

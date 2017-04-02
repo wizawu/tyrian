@@ -1,12 +1,12 @@
 "use strict";
 exports.__esModule = true;
 var fs = require("fs");
-function version(libdir) {
-    return JSON.parse(fs.readFileSync(libdir + "/package.json").toString()).version;
+function version(instdir) {
+    return JSON.parse(fs.readFileSync(instdir + "/package.json").toString()).version;
 }
 exports.version = version;
-function help(libdir, exit) {
-    console.log("Version: " + version(libdir));
+function help(instdir, exit) {
+    console.log("Version: " + version(instdir));
     console.log("Usage:");
     console.log("  1c env");
     console.log("  1c init");

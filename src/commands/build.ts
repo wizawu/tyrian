@@ -4,7 +4,7 @@ const webpack = require("webpack")
 const CopyWebpackPlugin = require("copy-webpack-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 
-function compiler(watch: boolean, libdir: string, libmod: string, context: string) {
+function compiler(watch: boolean, instdir: string, instmod: string, context: string) {
     let entry = {}
     fs.readdirSync(`${context}/src/js/entry`).forEach(filename => {
         if (/\.j\.ts$/.test(filename)) {
@@ -22,7 +22,7 @@ function compiler(watch: boolean, libdir: string, libmod: string, context: strin
         devtool: watch && "inline-source-map",
         context: context,
         resolve: { extensions: [".js", ".j.ts", ".ts", ".tsx"] },
-        resolveLoader: { modules: [libmod] },
+        resolveLoader: { modules: [instmod] },
         entry: entry,
         output: { path: context, filename: "[name]" },
         module: {
@@ -59,15 +59,15 @@ function compiler(watch: boolean, libdir: string, libmod: string, context: strin
     })
 }
 
-export function build(libdir: string, libmod: string, context: string) {
-    compiler(false, libdir, libmod, context).run((err, stats) => {
+export function build(instdir: string, instmod: string, context: string) {
+    compiler(false, instdir, instmod, context).run((err, stats) => {
         console.log(stats.toString({ colors: true }))
         if (stats.hasErrors()) process.exit(2)
     })
 }
 
-export function watch(libdir: string, libmod: string, context: string) {
-    compiler(true, libdir, libmod, context).watch({ poll: true }, (err, stats) => {
+export function watch(instdir: string, instmod: string, context: string) {
+    compiler(true, instdir, instmod, context).watch({ poll: true }, (err, stats) => {
         console.log(stats.toString({ colors: true }))
     })
 }

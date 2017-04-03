@@ -12,7 +12,7 @@ lineN=$(find $JAVA_HOME -name "*.jar" | grep -v rt.jar | grep -v sa-jdi.jar | gr
 
 echo $line0 $lineN | sed -e 's/\ /\n/g' | parallel -I{} -j4 --no-notice --line-buffer node ../parse-jar.js {}
 
-ls *.d.ts | xargs -I {} echo "/// <reference path=\"jdk/{}\" />" > ../jdk.d.ts
+ls *.d.ts | grep -v index.d.ts | xargs -I {} echo "/// <reference path=\"{}\" />" > index.d.ts
 
 # run test
 

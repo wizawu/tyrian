@@ -18,7 +18,7 @@ function parsePackage(pkg, level) {
         else {
             result += (level === 0 ? "declare " : "") + "namespace " + key + " {\n";
             result += parsePackage(pkg[key], level + 1).split("\n").map(function (line) { return "    " + line; }).join("\n");
-            result += "}\n";
+            result += "\n}\n";
         }
     });
     return result;

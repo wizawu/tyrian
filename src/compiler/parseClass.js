@@ -131,7 +131,7 @@ function parseMember(ctx, isInterface, typeVariable) {
 function parseClass(ctx, modifier) {
     var token = nextToken(ctx);
     var isInterface = token.value === "interface";
-    if (token.value !== "class" && isInterface)
+    if (token.value !== "class" && !isInterface)
         return null;
     ctx.offset += token.skip;
     var line = modifier + token.value + " ";
@@ -198,9 +198,10 @@ function default_1(source, pkg) {
             modifier += token.value + " ";
         }
         else if (token.value === "class" || token.value === "interface") {
-            var context = parseClass(ctx, modifier);
-            if (!context)
+            var ctx1 = parseClass(ctx, modifier);
+            if (!ctx1)
                 break;
+            ctx = ctx1;
             modifier = "";
         }
         else {

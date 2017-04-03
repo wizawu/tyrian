@@ -119,7 +119,7 @@ function parseMember(ctx: Context, isInterface: boolean, typeVariable: string): 
 function parseClass(ctx: Context, modifier: string): Context {
     let token = nextToken(ctx)
     let isInterface = token.value === "interface"
-    if (token.value !== "class" && isInterface) return null
+    if (token.value !== "class" && !isInterface) return null
     ctx.offset += token.skip
     let line = modifier + token.value + " "
 
@@ -184,8 +184,9 @@ export default function (source: string, pkg: any) {
             ctx.offset += token.skip
             modifier += token.value + " "
         } else if (token.value === "class" || token.value === "interface") {
-            let context = parseClass(ctx, modifier)
-            if (!context) break
+            let ctx1 = parseClass(ctx, modifier)
+            if (!ctx1) break
+            ctx = ctx1
             modifier = ""
         } else {
             ctx.offset += token.skip

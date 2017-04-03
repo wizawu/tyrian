@@ -1,3 +1,5 @@
+import * as fs from "fs"
+import * as path from "path"
 import { spawnSync } from "child_process"
 import parseClass from "./parseClass"
 
@@ -22,7 +24,7 @@ function parsePackage(pkg: any, level: number): string {
     return result
 }
 
-export default function (jar: string): string {
+function parseJAR(jar: string): string {
     let classes = commandOutput("jar", ["tf", jar]).split("\n")
     classes = classes.filter(c => /\.class$/.test(c)).map(c => c.replace(/\//g, ".").replace(/\.class$/, ""))
     console.log(`Disassembling ${jar}: ${classes.length} classes`)
@@ -34,4 +36,11 @@ export default function (jar: string): string {
     }
 
     return parsePackage(pkg, 0)
+}
+
+export default parseJAR
+
+export function generateTsDefinition(jar: string) {
+    let target = path.basename(jar).replace(/\.jar$/, ".d.ts")
+    fs.writeFileSync(target, parseJAR(jar))
 }

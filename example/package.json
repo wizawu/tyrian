@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "mockxhr": "^1.3.0"
+  },
+  "mvnDependencies": [
+    "org.tinylog:tinylog:1.2"
+  ]
+}

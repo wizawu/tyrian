@@ -1,5 +1,7 @@
 "use strict";
 exports.__esModule = true;
+var fs = require("fs");
+var path = require("path");
 var child_process_1 = require("child_process");
 var parseClass_1 = require("./parseClass");
 function commandOutput(command, args) {
@@ -23,7 +25,7 @@ function parsePackage(pkg, level) {
     });
     return result;
 }
-function default_1(jar) {
+function parseJAR(jar) {
     var classes = commandOutput("jar", ["tf", jar]).split("\n");
     classes = classes.filter(function (c) { return /\.class$/.test(c); }).map(function (c) { return c.replace(/\//g, ".").replace(/\.class$/, ""); });
     console.log("Disassembling " + jar + ": " + classes.length + " classes");
@@ -34,4 +36,9 @@ function default_1(jar) {
     }
     return parsePackage(pkg, 0);
 }
-exports["default"] = default_1;
+exports["default"] = parseJAR;
+function generateTsDefinition(jar) {
+    var target = path.basename(jar).replace(/\.jar$/, ".d.ts");
+    fs.writeFileSync(target, parseJAR(jar));
+}
+exports.generateTsDefinition = generateTsDefinition;

@@ -1,49 +1,37 @@
-var spawnSync = require("child_process").spawnSync
-var parseClass = require("./parseClass")
+import { spawnSync } from "child_process"
+import parseClass from "./parseClass"
 
-function commandOutput(command, args) {
-    var child = spawnSync(command, args, {
-        stdio: "pipe"
-    })
-    return child.stdout + child.stderr
+function commandOutput(command: string, args: string[]): string {
+    let child = spawnSync(command, args, { stdio: "pipe" })
+    return child.stdout.toString() + child.stderr.toString()
 }
 
-function parsePackage(package, level) {
-    var result = ""
-    Object.keys(package).forEach(function(key) {
+function parsePackage(pkg: any, level: number): string {
+    let result = ""
+    Object.keys(pkg).forEach(key => {
         if (key === "function" || key === "is" || key === "in") {
-            return
-        } else if (typeof package[key] === "string") {
-            result += package[key]
+            return ""
+        } else if (typeof pkg[key] === "string") {
+            result += pkg[key]
         } else {
-            result += (level === 0 ? "declare " : "") + "namespace " + key + " {\n"
-            result += parsePackage(package[key], level + 1).split("\n").map(function(line) {
-                return "   " + line
-            }).join("\n")
-            result += "\n}\n"
+            result += `${level === 0 ? "declare " : ""}namespace ${key} {\n`
+            result += parsePackage(pkg[key], level + 1).split("\n").map(line => `    ${line}`).join("\n")
+            result += "}\n"
         }
     })
     return result
 }
 
-function parse(jar) {
-    var classes = commandOutput("jar", ["tf", jar]).split("\n")
-    classes = classes.filter(function(c) {
-        return /\.class$/.test(c)
-    }).map(function(c) {
-        return c.replace(/\//g, ".").replace(/\.class$/, "")
-    })
-
+export default function (jar: string): string {
+    let classes = commandOutput("jar", ["tf", jar]).split("\n")
+    classes = classes.filter(c => /\.class$/.test(c)).map(c => c.replace(/\//g, ".").replace(/\.class$/, ""))
     console.log(`Disassembling ${jar}: ${classes.length} classes`)
 
-    var package = {}
-
-    for (var i = 0; i < classes.length; i += 2000) {
-        var javaCode = commandOutput("javap", ["-cp", jar].concat(classes.slice(i, i + 2000)))
-        parseClass(javaCode, package)
+    let pkg = {}
+    for (let i = 0; i < classes.length; i += 2000) {
+        let javaCode = commandOutput("javap", ["-cp", jar].concat(classes.slice(i, i + 2000)))
+        parseClass(javaCode, pkg)
     }
 
-    return parsePackage(package, 0)
+    return parsePackage(pkg, 0)
 }
-
-module.exports = parse

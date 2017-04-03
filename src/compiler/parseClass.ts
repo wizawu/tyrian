@@ -2,7 +2,6 @@
 
 import { get, ensureExists } from "object-path"
 
-const INDENT = "    "
 const UNSUPPORTED_MODIFIERS = [
     "abstract",
     "final",
@@ -83,7 +82,7 @@ function parseParameters(ctx: Context, line: string): string {
 }
 
 function parseMember(ctx: Context, isInterface: boolean, typeVariable: string): Context {
-    let line = INDENT
+    let line = "    "
     let type = ""
 
     let token: Token = null
@@ -154,7 +153,7 @@ function parseClass(ctx: Context, modifier: string): Context {
             (className.indexOf(token.value) === 0 && className.charAt(token.value.length) === "<")
         ) {
             ctx.offset += token.skip
-            line = INDENT + "constructor"
+            line = "    constructor"
             line = parseParameters(ctx, line)
             ctx.stack.push({ line: line.replace(/^(\s+)/, "$1" + memberModifier), type: "CONSTR" })
 
@@ -211,7 +210,7 @@ export default function (source: string, pkg: any) {
             case "CONSTR":
                 if (ignore) break
                 if (memberMap["&"]) {
-                    memberMap["&"] = INDENT + "constructor(...args: any[])"
+                    memberMap["&"] = "    constructor(...args: any[])"
                 } else {
                     memberMap["&"] = item.line
                 }
@@ -221,9 +220,9 @@ export default function (source: string, pkg: any) {
                 if (item.name === "prototype") break
                 if (memberMap[item.name]) {
                     if (/\bstatic\b/.test(item.line) || /\bstatic\b/.test(memberMap[item.name])) {
-                        memberMap[item.name] = `${INDENT}static ${item.name}<T>(...args: any[]): any`
+                        memberMap[item.name] = `    static ${item.name}<T>(...args: any[]): any`
                     } else {
-                        memberMap[item.name] = `${INDENT}${item.name}<T>(...args: any[]): any`
+                        memberMap[item.name] = `    ${item.name}<T>(...args: any[]): any`
                     }
                 } else {
                     memberMap[item.name] = item.line

@@ -10,7 +10,6 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
 };
 exports.__esModule = true;
 var object_path_1 = require("object-path");
-var INDENT = "    ";
 var UNSUPPORTED_MODIFIERS = [
     "abstract",
     "final",
@@ -95,7 +94,7 @@ function parseParameters(ctx, line) {
     return line;
 }
 function parseMember(ctx, isInterface, typeVariable) {
-    var line = INDENT;
+    var line = "    ";
     var type = "";
     var token = null;
     while (token = nextToken(ctx)) {
@@ -166,7 +165,7 @@ function parseClass(ctx, modifier) {
         else if ((token.value === className && ctx.source.charAt(ctx.offset + token.skip) === "(") ||
             (className.indexOf(token.value) === 0 && className.charAt(token.value.length) === "<")) {
             ctx.offset += token.skip;
-            line = INDENT + "constructor";
+            line = "    constructor";
             line = parseParameters(ctx, line);
             ctx.stack.push({ line: line.replace(/^(\s+)/, "$1" + memberModifier), type: "CONSTR" });
             memberModifier = "";
@@ -229,7 +228,7 @@ function default_1(source, pkg) {
                 if (ignore)
                     break;
                 if (memberMap["&"]) {
-                    memberMap["&"] = INDENT + "constructor(...args: any[])";
+                    memberMap["&"] = "    constructor(...args: any[])";
                 }
                 else {
                     memberMap["&"] = item.line;
@@ -242,10 +241,10 @@ function default_1(source, pkg) {
                     break;
                 if (memberMap[item.name]) {
                     if (/\bstatic\b/.test(item.line) || /\bstatic\b/.test(memberMap[item.name])) {
-                        memberMap[item.name] = INDENT + "static " + item.name + "<T>(...args: any[]): any";
+                        memberMap[item.name] = "    static " + item.name + "<T>(...args: any[]): any";
                     }
                     else {
-                        memberMap[item.name] = "" + INDENT + item.name + "<T>(...args: any[]): any";
+                        memberMap[item.name] = "    " + item.name + "<T>(...args: any[]): any";
                     }
                 }
                 else {

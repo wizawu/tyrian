@@ -1,6 +1,6 @@
 var fs = require("fs")
 var path = require("path")
-var parseJAR = require("../src/compiler/parseJAR")
+var parseJAR = require("../src/compiler/parseJAR").default
 
 var jars = process.argv.slice(2)
 
@@ -12,5 +12,6 @@ jars.forEach(function (jar) {
 })
 
 jars.forEach(function (jar) {
-    fs.writeFileSync(path.basename(jar).replace(/\.jar$/, ".d.ts"), parseJAR(jar))
+    var target = path.basename(jar).replace(/\.jar$/, ".d.ts")
+    fs.writeFileSync(target, parseJAR(jar))
 })

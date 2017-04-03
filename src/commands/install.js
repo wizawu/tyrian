@@ -2,8 +2,7 @@
 exports.__esModule = true;
 var fs = require("fs");
 var child_process_1 = require("child_process");
-// TODO
-var parseJAR = require("../compiler/parseJAR");
+var parseJAR_1 = require("../compiler/parseJAR");
 // build.gradle
 var buildGradle = function (deps) { return ("\napply plugin: \"java\"\n\nrepositories {\n  mavenCentral()\n}\n\ntask install(type: Copy) {\n  into \"lib\"\n  from configurations.runtime\n}\n\ndependencies {\n  " + deps + "\n}\n").trim(); };
 function default_1() {
@@ -26,7 +25,7 @@ function default_1() {
     fs.readdirSync("lib").filter(function (jar) { return /\.jar$/.test(jar); }).map(function (jar) {
         var filename = "lib/@types/" + jar.replace(/\.jar$/, ".d.ts");
         console.log("Generating " + filename);
-        fs.writeFileSync(filename, parseJAR("lib/" + jar));
+        fs.writeFileSync(filename, parseJAR_1["default"]("lib/" + jar));
     });
 }
 exports["default"] = default_1;

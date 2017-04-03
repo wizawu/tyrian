@@ -1,8 +1,6 @@
 import * as fs from "fs"
 import { spawnSync } from "child_process"
-
-// TODO
-const parseJAR = require("../compiler/parseJAR")
+import parseJAR from "../compiler/parseJAR"
 
 // build.gradle
 const buildGradle = deps => `

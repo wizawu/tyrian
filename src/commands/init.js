@@ -32,7 +32,7 @@ function default_1(instdir) {
         [".gitignore", _GITIGNORE],
         ["src/assets/test.txt", ""],
         ["src/assets/img/test.jpg", ""],
-        ["src/css/test.less", ""],
+        ["src/css/test.less", "body { dislpay: flex }"],
         ["src/html/test.html", "<!DOCTYPE html>"],
         ["src/js/entry/test.tsx", "import \"../../css/test.less\""],
         ["src/js/entry/test.j.ts", "org.pmw.tinylog.Logger.info(java.lang.System.getProperty(\"java.version\"))"],

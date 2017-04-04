@@ -1,5 +1,6 @@
 import * as fs from "fs"
 
+const autoprefixer = require("autoprefixer")
 const webpack = require("webpack")
 const CopyWebpackPlugin = require("copy-webpack-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
@@ -17,6 +18,19 @@ function compiler(watch: boolean, instdir: string, instmod: string, context: str
     })
 
     let html = fs.readdirSync(`${context}/src/html`).filter(filename => /\.html$/.test(filename))
+    let cssLoaders = [{
+        loader: "style-loader"
+    }, {
+        loader: "css-loader",
+        options: { minimize: true },
+    }, {
+        loader: "postcss-loader",
+        options: {
+            plugins: [
+                autoprefixer({ browsers: ["last 3 versions", "safari >= 6", "IE >= 9"] })
+            ]
+        }
+    }]
 
     return webpack({
         devtool: watch && "inline-source-map",
@@ -32,10 +46,10 @@ function compiler(watch: boolean, instdir: string, instmod: string, context: str
                 exclude: /node_modules/,
             }, {
                 test: /^[^!]+\.css$/,
-                loader: "style-loader!css-loader?-minimize",
+                use: cssLoaders,
             }, {
                 test: /^[^!]+\.less$/,
-                loader: "style-loader!css-loader?-minimize!less-loader",
+                use: cssLoaders.concat({ loader: "less-loader" })
             }]
         },
         plugins: html.map(filename =>

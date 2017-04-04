@@ -1,6 +1,7 @@
 "use strict";
 exports.__esModule = true;
 var fs = require("fs");
+var autoprefixer = require("autoprefixer");
 var webpack = require("webpack");
 var CopyWebpackPlugin = require("copy-webpack-plugin");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -17,6 +18,19 @@ function compiler(watch, instdir, instmod, context) {
         }
     });
     var html = fs.readdirSync(context + "/src/html").filter(function (filename) { return /\.html$/.test(filename); });
+    var cssLoaders = [{
+            loader: "style-loader"
+        }, {
+            loader: "css-loader",
+            options: { minimize: true }
+        }, {
+            loader: "postcss-loader",
+            options: {
+                plugins: [
+                    autoprefixer({ browsers: ["last 3 versions", "safari >= 6", "IE >= 9"] })
+                ]
+            }
+        }];
     return webpack({
         devtool: watch && "inline-source-map",
         context: context,
@@ -31,10 +45,10 @@ function compiler(watch, instdir, instmod, context) {
                     exclude: /node_modules/
                 }, {
                     test: /^[^!]+\.css$/,
-                    loader: "style-loader!css-loader?-minimize"
+                    use: cssLoaders
                 }, {
                     test: /^[^!]+\.less$/,
-                    loader: "style-loader!css-loader?-minimize!less-loader"
+                    use: cssLoaders.concat({ loader: "less-loader" })
                 }]
         },
         plugins: html.map(function (filename) {

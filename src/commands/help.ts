@@ -4,7 +4,7 @@ export function version(instdir: string) {
     return JSON.parse(fs.readFileSync(`${instdir}/package.json`).toString()).version
 }
 
-export function help(instdir: string, exit: number) {
+export function help(instdir: string, status: number) {
     console.log(`Version: ${version(instdir)}`)
     console.log("Usage:");
     console.log("  1c env");
@@ -16,5 +16,5 @@ export function help(instdir: string, exit: number) {
     console.log("  1c version");
     console.log("  1c help");
 
-    process.exit(exit)
+    process.exit(status)
 }

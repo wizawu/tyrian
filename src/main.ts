@@ -9,7 +9,7 @@ import { build, watch } from "./commands/build"
 import { help, version } from "./commands/help"
 
 const instdir = path.resolve(path.dirname(process.argv[1]) + "/..")
-const instmod = instdir + (fs.existsSync(instdir + "/node_modules") ? "/node_modules" : "/..")
+const instmod = instdir + (fs.existsSync(instdir + "/node_modules/webpack") ? "/node_modules" : "/..")
 const command = process.argv[2]
 const context = path.resolve(".")
 const target = process.argv[3] && path.resolve(process.argv[3])

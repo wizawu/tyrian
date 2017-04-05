@@ -30,6 +30,7 @@ export const tsconfig = instdir => `
     "jsx": "react",
     "lib": ["dom", "es2017"],
     "skipLibCheck": true,
+    "strictNullChecks": true,
     "target": "es5",
     "typeRoots": [
       "${instdir}/@types",

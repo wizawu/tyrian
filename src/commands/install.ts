@@ -46,7 +46,7 @@ export default function () {
 
         // Generate build.gradle
         let deps = Object.keys(mvnDependencies).map(key => `compile '${key}:${mvnDependencies[key]}'`)
-        fs.writeFileSync("build.gradle", buildGradle(deps.join("\n")))
+        fs.writeFileSync("build.gradle", buildGradle(deps.join("\n  ")))
 
         // gradle install
         child = spawnSync("gradle", ["install"], { stdio: "inherit" })

@@ -27,7 +27,7 @@ function default_1() {
             });
         });
         var deps = Object.keys(mvnDependencies_1).map(function (key) { return "compile '" + key + ":" + mvnDependencies_1[key] + "'"; });
-        fs.writeFileSync("build.gradle", buildGradle(deps.join("\n")));
+        fs.writeFileSync("build.gradle", buildGradle(deps.join("\n  ")));
         child = child_process_1.spawnSync("gradle", ["install"], { stdio: "inherit" });
         if (child.status !== 0)
             process.exit(child.status);

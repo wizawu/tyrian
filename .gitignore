@@ -1,6 +1,9 @@
 *.iml
 *.swp
 .gradle
-.idea/
-build/
-lib/
+.idea
+build
+build.gradle
+lib
+node_modules
+yarn.lock

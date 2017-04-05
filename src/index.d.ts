@@ -3,7 +3,7 @@ type StackItemType = "BEGIN" | "CONSTR" | "MEMBER" | "END"
 interface StackItem {
     line: string
     type: StackItemType
-    name?: string
+    name: string
 }
 
 interface Context {

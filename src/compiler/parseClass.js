@@ -93,7 +93,7 @@ function parseParameters(ctx, line) {
 function parseMember(ctx, isInterface, typeVariable) {
     var line = "    ";
     var type = "";
-    var token = null;
+    var token = { value: "", skip: 0 };
     while (token = nextToken(ctx)) {
         ctx.offset += token.skip;
         if (["public", "protected", "static"].indexOf(token.value) >= 0) {
@@ -163,7 +163,7 @@ function parseClass(ctx, modifier) {
             ctx.offset += token.skip;
             line = "    constructor";
             line = parseParameters(ctx, line);
-            ctx.stack.push({ line: line.replace(/^(\s+)/, "$1" + memberModifier), type: "CONSTR" });
+            ctx.stack.push({ line: line.replace(/^(\s+)/, "$1" + memberModifier), type: "CONSTR", name: "" });
             memberModifier = "";
             while (ctx.source.charAt(ctx.offset) !== "\n")
                 ctx.offset += 1;

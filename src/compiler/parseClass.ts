@@ -86,7 +86,7 @@ function parseMember(ctx: Context, isInterface: boolean, typeVariable: string): 
     let line = "    "
     let type = ""
 
-    let token: Token = null
+    let token: Token = { value: "", skip: 0 }
     while (token = nextToken(ctx)) {
         ctx.offset += token.skip
         if (["public", "protected", "static"].indexOf(token.value) >= 0) {
@@ -117,7 +117,7 @@ function parseMember(ctx: Context, isInterface: boolean, typeVariable: string): 
     return ctx
 }
 
-function parseClass(ctx: Context, modifier: string): Context {
+function parseClass(ctx: Context, modifier: string): Context | null {
     let token = nextToken(ctx)
     let isInterface = token.value === "interface"
     if (token.value !== "class" && !isInterface) return null
@@ -156,7 +156,7 @@ function parseClass(ctx: Context, modifier: string): Context {
             ctx.offset += token.skip
             line = "    constructor"
             line = parseParameters(ctx, line)
-            ctx.stack.push({ line: line.replace(/^(\s+)/, "$1" + memberModifier), type: "CONSTR" })
+            ctx.stack.push({ line: line.replace(/^(\s+)/, "$1" + memberModifier), type: "CONSTR", name: "" })
 
             memberModifier = ""
             while (ctx.source.charAt(ctx.offset) !== "\n") ctx.offset += 1
@@ -207,7 +207,7 @@ export default function (source: string, pkg: any) {
                 ignore = false
                 if (item.name.indexOf("-") >= 0) ignore = true
                 if (item.name.indexOf("$") >= 0) ignore = true
-                if (!ignore) buffer.push(item.line)
+                if (!ignore) buffer.push(item.line as never)
                 break
             case "CONSTR":
                 if (ignore) break
@@ -232,8 +232,8 @@ export default function (source: string, pkg: any) {
                 break
             case "END":
                 if (ignore) break
-                Object.keys(memberMap).forEach(key => buffer.push(memberMap[key]))
-                buffer.push(item.line)
+                Object.keys(memberMap).forEach(key => buffer.push(memberMap[key] as never))
+                buffer.push(item.line as never)
                 let className = item.name.replace(/^(\w+\.)+/, "")
                 let ns = item.name.substring(0, item.name.length - className.length - 1)
                 ensureExists(pkg, ns, {})

@@ -24,7 +24,7 @@ yarn.lock
 `.trim()
 
 // tsconfig.json
-const tsconfig = instdir => `
+export const tsconfig = instdir => `
 {
   "compilerOptions": {
     "jsx": "react",

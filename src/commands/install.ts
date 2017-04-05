@@ -1,6 +1,8 @@
 import * as fs from "fs"
 import { spawnSync } from "child_process"
+
 import parseJAR from "../compiler/parseJAR"
+import { tsconfig } from "./init"
 
 // build.gradle
 const buildGradle = deps => `
@@ -20,7 +22,7 @@ dependencies {
 }
 `.trim()
 
-export default function () {
+export default function (instdir: string) {
     let child = spawnSync("yarn", ["install"], { stdio: "inherit" })
     if (child.status !== 0) process.exit(child.status)
 
@@ -62,4 +64,7 @@ export default function () {
         console.log("Generating " + filename)
         fs.writeFileSync(filename, parseJAR(`lib/${jar}`))
     })
+
+    // Generate tsconfig.json
+    if (!fs.existsSync("tsconfig.json")) fs.writeFileSync("tsconfig.json", tsconfig(instdir))
 }

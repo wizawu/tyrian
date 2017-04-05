@@ -26,7 +26,7 @@ const envvar = env()
 
 if (command === "env") console.error(envvar)
 else if (command === "init") init(instdir)
-else if (command === "install") install()
+else if (command === "install") install(instdir)
 else if (command === "build") build(instdir, instmod, context)
 else if (command === "watch") watch(instdir, instmod, context)
 else if (command === "run" && target) run(target)

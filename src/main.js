@@ -27,7 +27,7 @@ if (command === "env")
 else if (command === "init")
     init_1["default"](instdir);
 else if (command === "install")
-    install_1["default"]();
+    install_1["default"](instdir);
 else if (command === "build")
     build_1.build(instdir, instmod, context);
 else if (command === "watch")

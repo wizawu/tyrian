@@ -3,8 +3,9 @@ exports.__esModule = true;
 var fs = require("fs");
 var child_process_1 = require("child_process");
 var parseJAR_1 = require("../compiler/parseJAR");
+var init_1 = require("./init");
 var buildGradle = function (deps) { return ("\napply plugin: \"java\"\n\nrepositories {\n  mavenCentral()\n}\n\ntask install(type: Copy) {\n  into \"lib\"\n  from configurations.runtime\n}\n\ndependencies {\n  " + deps + "\n}\n").trim(); };
-function default_1() {
+function default_1(instdir) {
     var child = child_process_1.spawnSync("yarn", ["install"], { stdio: "inherit" });
     if (child.status !== 0)
         process.exit(child.status);
@@ -42,5 +43,7 @@ function default_1() {
         console.log("Generating " + filename);
         fs.writeFileSync(filename, parseJAR_1["default"]("lib/" + jar));
     });
+    if (!fs.existsSync("tsconfig.json"))
+        fs.writeFileSync("tsconfig.json", init_1.tsconfig(instdir));
 }
 exports["default"] = default_1;

@@ -1,4 +1,3 @@
-/// <reference path="../index.d.ts" />
 "use strict";
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -45,15 +44,12 @@ function nextToken(ctx) {
             skip += 1;
             var token = nextToken(__assign({}, ctx, { offset: ctx.offset + skip }));
             if (token.value === "extends" || token.value === "super") {
-                // ? extends XXX
-                // ? super XXX
                 skip += token.skip;
                 token = nextToken(__assign({}, ctx, { offset: ctx.offset + skip }));
                 value += token.value;
                 skip += token.skip;
             }
             else {
-                // <?>
                 value += "any";
             }
         }
@@ -115,7 +111,6 @@ function parseMember(ctx, isInterface, typeVariable) {
             break;
         }
     }
-    // static {}
     if (type === "{}")
         return __assign({}, ctx, { offset: ctx.offset + 1 });
     token = nextToken(ctx);

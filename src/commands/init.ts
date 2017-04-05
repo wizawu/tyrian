@@ -48,17 +48,19 @@ const tsconfig = instdir => `
 
 export default function (instdir: string) {
     ["build", "lib", "node_modules", "src"].forEach(dir => {
-        console.log("mkdir " + dir)
         try {
             fs.mkdirSync(dir)
+            console.log("mkdir " + dir)
         } catch (err) {
+            if (err.code !== "EEXIST") console.error(err.message)
         }
     });
     ["assets", "assets/img", "css", "html", "js", "js/entry", "js/@types"].forEach(dir => {
-        console.log("mkdir src/" + dir)
         try {
             fs.mkdirSync("src/" + dir)
+            console.log("mkdir src/" + dir)
         } catch (err) {
+            if (err.code !== "EEXIST") console.error(err.message)
         }
     });
 
@@ -75,8 +77,12 @@ export default function (instdir: string) {
         ["src/js/@types/test.d.ts", ""],
     ].forEach(([path, content]: string[]) => {
         if (!fs.existsSync(path)) {
-            console.log("create " + path)
-            fs.writeFile(path, content, err => err && console.log(err.message))
+            try {
+                fs.writeFileSync(path, content)
+                console.log("create " + path)
+            } catch (err) {
+                console.error(err.message)
+            }
         }
     })
 }

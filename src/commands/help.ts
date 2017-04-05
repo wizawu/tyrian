@@ -1,7 +1,7 @@
 import * as fs from "fs"
 
 export function version(instdir: string) {
-    return JSON.parse(fs.readFileSync(`${instdir}/package.json`).toString()).version
+    return JSON.parse(fs.readFileSync(`${instdir}/package.json`, "utf-8")).version
 }
 
 export function help(instdir: string, status: number) {

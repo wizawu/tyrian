@@ -1,7 +1,10 @@
 {
   "name": "1c",
-  "version": "6.4.6",
+  "version": "6.4.7",
   "bin": "./bin/1c",
+  "scripts": {
+    "build": "tsc --removeComments --strictNullChecks src/main.ts"
+  },
   "dependencies": {
     "@types/node": "latest",
     "@types/object-path": "^0.9.28",

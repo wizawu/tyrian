@@ -3,7 +3,6 @@ exports.__esModule = true;
 var fs = require("fs");
 var child_process_1 = require("child_process");
 var parseJAR_1 = require("../compiler/parseJAR");
-// build.gradle
 var buildGradle = function (deps) { return ("\napply plugin: \"java\"\n\nrepositories {\n  mavenCentral()\n}\n\ntask install(type: Copy) {\n  into \"lib\"\n  from configurations.runtime\n}\n\ndependencies {\n  " + deps + "\n}\n").trim(); };
 function default_1() {
     var child = child_process_1.spawnSync("yarn", ["install"], { stdio: "inherit" });
@@ -11,13 +10,11 @@ function default_1() {
         process.exit(child.status);
     try {
         var mvnDependencies_1 = {};
-        // package.json
         var json_1 = JSON.parse(fs.readFileSync("package.json", "utf-8"));
         (json_1.mvnDependencies || []).forEach(function (dep) {
             var _a = dep.split(":"), groupId = _a[0], artifactId = _a[1], version = _a[2];
             mvnDependencies_1[groupId + ":" + artifactId] = version;
         });
-        // node_modules/*/package.json
         fs.readdirSync("node_modules").forEach(function (dir) {
             if (!fs.existsSync("node_modules/" + dir + "/package.json"))
                 return;

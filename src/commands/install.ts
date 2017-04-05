@@ -25,6 +25,7 @@ export default function () {
     if (child.status !== 0) process.exit(child.status)
 
     try {
+        // TODO: Read mvnDependencies in node_modules
         let json = JSON.parse(fs.readFileSync("package.json").toString())
         if (!json.mvnDependencies) return
 
@@ -37,6 +38,7 @@ export default function () {
         console.error(err.message)
     }
 
+    fs.mkdirSync("lib/@types")
     fs.readdirSync("lib").filter(jar => /\.jar$/.test(jar)).map(jar => {
         let filename = "lib/@types/" + jar.replace(/\.jar$/, ".d.ts")
         console.log("Generating " + filename)

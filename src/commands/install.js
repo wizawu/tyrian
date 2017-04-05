@@ -10,6 +10,7 @@ function default_1() {
     if (child.status !== 0)
         process.exit(child.status);
     try {
+        // TODO: Read mvnDependencies in node_modules
         var json = JSON.parse(fs.readFileSync("package.json").toString());
         if (!json.mvnDependencies)
             return;
@@ -22,6 +23,7 @@ function default_1() {
     catch (err) {
         console.error(err.message);
     }
+    fs.mkdirSync("lib/@types");
     fs.readdirSync("lib").filter(function (jar) { return /\.jar$/.test(jar); }).map(function (jar) {
         var filename = "lib/@types/" + jar.replace(/\.jar$/, ".d.ts");
         console.log("Generating " + filename);

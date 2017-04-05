@@ -1,2 +1,4 @@
 example
 src/**/*.ts
+test.js
+test.ts

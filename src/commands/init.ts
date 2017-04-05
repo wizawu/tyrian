@@ -52,7 +52,6 @@ export default function (instdir: string) {
         try {
             fs.mkdirSync(dir)
         } catch (err) {
-            console.error(err.message)
         }
     });
     ["assets", "assets/img", "css", "html", "js", "js/entry", "js/@types"].forEach(dir => {
@@ -60,7 +59,6 @@ export default function (instdir: string) {
         try {
             fs.mkdirSync("src/" + dir)
         } catch (err) {
-            console.error(err.message)
         }
     });
 

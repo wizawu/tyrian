@@ -47,7 +47,7 @@ const tsconfig = instdir => `
 `.trim()
 
 export default function (instdir: string) {
-    ["build", "lib", "lib/@types", "node_modules", "src"].forEach(dir => {
+    ["build", "lib", "node_modules", "src"].forEach(dir => {
         console.log("mkdir " + dir)
         try {
             fs.mkdirSync(dir)

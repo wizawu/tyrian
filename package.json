@@ -1,6 +1,6 @@
 {
   "name": "1c",
-  "version": "6.4.5",
+  "version": "6.4.6",
   "bin": "./bin/1c",
   "dependencies": {
     "@types/node": "latest",

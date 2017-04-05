@@ -8,7 +8,7 @@ var _GITIGNORE = "\n.gradle\nbuild\nbuild.gradle\nlib\nnode_modules\ntsconfig.js
 // tsconfig.json
 var tsconfig = function (instdir) { return ("\n{\n  \"compilerOptions\": {\n    \"jsx\": \"react\",\n    \"lib\": [\"dom\", \"es2017\"],\n    \"skipLibCheck\": true,\n    \"target\": \"es5\",\n    \"typeRoots\": [\n      \"" + instdir + "/@types\",\n      \"lib/@types\",\n      \"node_modules/@types\",\n      \"src/js/@types\"\n    ]\n  },\n  \"include\": [\n    \"" + instdir + "/@types/**/*.ts\",\n    \"**/*.ts\",\n    \"**/*.tsx\"\n  ]\n}\n").trim(); };
 function default_1(instdir) {
-    ["build", "lib", "lib/@types", "node_modules", "src"].forEach(function (dir) {
+    ["build", "lib", "node_modules", "src"].forEach(function (dir) {
         console.log("mkdir " + dir);
         try {
             fs.mkdirSync(dir);

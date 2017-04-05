@@ -10,12 +10,27 @@ function default_1() {
     if (child.status !== 0)
         process.exit(child.status);
     try {
-        // TODO: Read mvnDependencies in node_modules
-        var json = JSON.parse(fs.readFileSync("package.json").toString());
-        if (!json.mvnDependencies)
-            return;
-        var deps = json.mvnDependencies.map(function (dep) { return "compile '" + dep + "'"; }).join("\n");
-        fs.writeFileSync("build.gradle", buildGradle(deps));
+        var mvnDependencies_1 = {};
+        // package.json
+        var json_1 = JSON.parse(fs.readFileSync("package.json", "utf-8"));
+        (json_1.mvnDependencies || []).forEach(function (dep) {
+            var _a = dep.split(":"), groupId = _a[0], artifactId = _a[1], version = _a[2];
+            mvnDependencies_1[groupId + ":" + artifactId] = version;
+        });
+        // node_modules/*/package.json
+        fs.readdirSync("node_modules").forEach(function (dir) {
+            if (!fs.existsSync("node_modules/" + dir + "/package.json"))
+                return;
+            json_1 = JSON.parse(fs.readFileSync("node_modules/" + dir + "/package.json", "utf-8"));
+            (json_1.mvnDependencies || []).forEach(function (dep) {
+                var _a = dep.split(":"), groupId = _a[0], artifactId = _a[1], version = _a[2];
+                if (!mvnDependencies_1[groupId + ":" + artifactId]) {
+                    mvnDependencies_1[groupId + ":" + artifactId] = version;
+                }
+            });
+        });
+        var deps = Object.keys(mvnDependencies_1).map(function (key) { return "compile '" + key + ":" + mvnDependencies_1[key] + "'"; });
+        fs.writeFileSync("build.gradle", buildGradle(deps.join("\n")));
         child = child_process_1.spawnSync("gradle", ["install"], { stdio: "inherit" });
         if (child.status !== 0)
             process.exit(child.status);
@@ -23,7 +38,8 @@ function default_1() {
     catch (err) {
         console.error(err.message);
     }
-    fs.mkdirSync("lib/@types");
+    if (!fs.existsSync("lib/@types"))
+        fs.mkdirSync("lib/@types");
     fs.readdirSync("lib").filter(function (jar) { return /\.jar$/.test(jar); }).map(function (jar) {
         var filename = "lib/@types/" + jar.replace(/\.jar$/, ".d.ts");
         console.log("Generating " + filename);

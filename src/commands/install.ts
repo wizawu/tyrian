@@ -25,12 +25,27 @@ export default function () {
     if (child.status !== 0) process.exit(child.status)
 
     try {
-        // TODO: Read mvnDependencies in node_modules
-        let json = JSON.parse(fs.readFileSync("package.json").toString())
-        if (!json.mvnDependencies) return
+        let mvnDependencies = {}
+        // package.json
+        let json = JSON.parse(fs.readFileSync("package.json", "utf-8"));
+        (json.mvnDependencies || []).forEach(dep => {
+            let [groupId, artifactId, version] = dep.split(":")
+            mvnDependencies[`${groupId}:${artifactId}`] = version
+        })
+        // node_modules/*/package.json
+        fs.readdirSync("node_modules").forEach(dir => {
+            if (!fs.existsSync(`node_modules/${dir}/package.json`)) return
+            json = JSON.parse(fs.readFileSync(`node_modules/${dir}/package.json`, "utf-8"));
+            (json.mvnDependencies || []).forEach(dep => {
+                let [groupId, artifactId, version] = dep.split(":")
+                if (!mvnDependencies[`${groupId}:${artifactId}`]) {
+                    mvnDependencies[`${groupId}:${artifactId}`] = version
+                }
+            })
+        })
 
-        let deps = json.mvnDependencies.map(dep => `compile '${dep}'`).join("\n")
-        fs.writeFileSync("build.gradle", buildGradle(deps))
+        let deps = Object.keys(mvnDependencies).map(key => `compile '${key}:${mvnDependencies[key]}'`)
+        fs.writeFileSync("build.gradle", buildGradle(deps.join("\n")))
 
         child = spawnSync("gradle", ["install"], { stdio: "inherit" })
         if (child.status !== 0) process.exit(child.status)
@@ -38,7 +53,7 @@ export default function () {
         console.error(err.message)
     }
 
-    fs.mkdirSync("lib/@types")
+    if (!fs.existsSync("lib/@types")) fs.mkdirSync("lib/@types")
     fs.readdirSync("lib").filter(jar => /\.jar$/.test(jar)).map(jar => {
         let filename = "lib/@types/" + jar.replace(/\.jar$/, ".d.ts")
         console.log("Generating " + filename)

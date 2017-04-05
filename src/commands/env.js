@@ -9,6 +9,7 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
 };
 exports.__esModule = true;
 var child_process_1 = require("child_process");
+var const_1 = require("../const");
 var header = function (tool, link) { return "\n[" + tool + "](" + link + ")\n"; };
 var notFound = function () { return "** not found **\n"; };
 function default_1() {
@@ -57,7 +58,7 @@ function default_1() {
         ok = false;
     if (!ok) {
         console.error(output);
-        process.exit(127);
+        process.exit(const_1.EXIT_STATUS.BROKEN_ENV);
     }
     else {
         return output;

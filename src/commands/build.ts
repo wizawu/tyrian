@@ -1,4 +1,5 @@
 import * as fs from "fs"
+import { EXIT_STATUS } from "../const"
 
 const autoprefixer = require("autoprefixer")
 const webpack = require("webpack")
@@ -77,7 +78,7 @@ function compiler(watch: boolean, instdir: string, instmod: string, context: str
 export function build(instdir: string, instmod: string, context: string) {
     compiler(false, instdir, instmod, context).run((err, stats) => {
         console.log(stats.toString({ colors: true }))
-        if (stats.hasErrors()) process.exit(2)
+        if (stats.hasErrors()) process.exit(EXIT_STATUS.WEBPACK_COMPILE_ERROR)
     })
 }
 

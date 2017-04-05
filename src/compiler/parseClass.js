@@ -10,6 +10,7 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
 };
 exports.__esModule = true;
 var object_path_1 = require("object-path");
+var const_1 = require("../const");
 var UNSUPPORTED_MODIFIERS = [
     "abstract",
     "final",
@@ -264,7 +265,7 @@ function default_1(source, pkg) {
                 break;
             default:
                 console.error(JSON.stringify(item));
-                process.exit(1);
+                process.exit(const_1.EXIT_STATUS.PARSE_CLASS_ERROR);
         }
     }
     return buffer.join("\n");

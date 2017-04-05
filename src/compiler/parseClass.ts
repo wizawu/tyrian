@@ -1,6 +1,7 @@
 /// <reference path="../index.d.ts" />
 
 import { get, ensureExists } from "object-path"
+import { EXIT_STATUS } from "../const"
 
 const UNSUPPORTED_MODIFIERS = [
     "abstract",
@@ -240,7 +241,7 @@ export default function (source: string, pkg: any) {
                 break
             default:
                 console.error(JSON.stringify(item))
-                process.exit(1)
+                process.exit(EXIT_STATUS.PARSE_CLASS_ERROR)
         }
     }
 

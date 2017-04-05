@@ -1,6 +1,7 @@
 "use strict";
 exports.__esModule = true;
 var fs = require("fs");
+var const_1 = require("../const");
 var autoprefixer = require("autoprefixer");
 var webpack = require("webpack");
 var CopyWebpackPlugin = require("copy-webpack-plugin");
@@ -75,7 +76,7 @@ function build(instdir, instmod, context) {
     compiler(false, instdir, instmod, context).run(function (err, stats) {
         console.log(stats.toString({ colors: true }));
         if (stats.hasErrors())
-            process.exit(2);
+            process.exit(const_1.EXIT_STATUS.WEBPACK_COMPILE_ERROR);
     });
 }
 exports.build = build;

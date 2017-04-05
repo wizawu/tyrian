@@ -1,4 +1,5 @@
 import { spawnSync } from "child_process"
+import { EXIT_STATUS } from "../const"
 
 const header = (tool: string, link: string) => `\n[${tool}](${link})\n`
 const notFound = () => `** not found **\n`
@@ -50,7 +51,7 @@ export default function () {
 
     if (!ok) {
         console.error(output)
-        process.exit(127)
+        process.exit(EXIT_STATUS.BROKEN_ENV)
     } else {
         return output
     }

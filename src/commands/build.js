@@ -18,7 +18,7 @@ function compiler(watch, instdir, instmod, context) {
             entry["build/assets/js/" + basename + ".min.js"] = context + "/src/js/entry/" + filename;
         }
     });
-    var html = fs.readdirSync(context + "/src/html").filter(function (filename) { return /\.html$/.test(filename); });
+    var html = fs.existsSync(context + "/src/html") ? (fs.readdirSync(context + "/src/html").filter(function (filename) { return /\.html$/.test(filename); })) : [];
     var cssLoaders = [{
             loader: "style-loader"
         }, {

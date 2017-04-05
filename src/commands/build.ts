@@ -18,7 +18,9 @@ function compiler(watch: boolean, instdir: string, instmod: string, context: str
         }
     })
 
-    let html = fs.readdirSync(`${context}/src/html`).filter(filename => /\.html$/.test(filename))
+    let html = fs.existsSync(`${context}/src/html`) ? (
+        fs.readdirSync(`${context}/src/html`).filter(filename => /\.html$/.test(filename))
+     ) : []
 
     let cssLoaders = [{
         loader: "style-loader"

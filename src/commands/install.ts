@@ -49,15 +49,16 @@ export default function (instdir: string) {
         // Generate build.gradle
         let deps = Object.keys(mvnDependencies).map(key => `compile '${key}:${mvnDependencies[key]}'`)
         fs.writeFileSync("build.gradle", buildGradle(deps.join("\n  ")))
-
-        // gradle install
-        child = spawnSync("gradle", ["install"], { stdio: "inherit" })
-        if (child.status !== 0) process.exit(child.status)
     } catch (err) {
         console.error(err.message)
     }
 
+    // gradle install
+    child = spawnSync("gradle", ["install"], { stdio: "inherit" })
+    if (child.status !== 0) process.exit(child.status)
+
     // Generate TypeScript definition for JAR
+    if (!fs.existsSync("lib")) fs.mkdirSync("lib")
     if (!fs.existsSync("lib/@types")) fs.mkdirSync("lib/@types")
     fs.readdirSync("lib").filter(jar => /\.jar$/.test(jar)).map(jar => {
         let filename = "lib/@types/" + jar.replace(/\.jar$/, ".d.ts")

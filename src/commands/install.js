@@ -29,13 +29,15 @@ function default_1(instdir) {
         });
         var deps = Object.keys(mvnDependencies_1).map(function (key) { return "compile '" + key + ":" + mvnDependencies_1[key] + "'"; });
         fs.writeFileSync("build.gradle", buildGradle(deps.join("\n  ")));
-        child = child_process_1.spawnSync("gradle", ["install"], { stdio: "inherit" });
-        if (child.status !== 0)
-            process.exit(child.status);
     }
     catch (err) {
         console.error(err.message);
     }
+    child = child_process_1.spawnSync("gradle", ["install"], { stdio: "inherit" });
+    if (child.status !== 0)
+        process.exit(child.status);
+    if (!fs.existsSync("lib"))
+        fs.mkdirSync("lib");
     if (!fs.existsSync("lib/@types"))
         fs.mkdirSync("lib/@types");
     fs.readdirSync("lib").filter(function (jar) { return /\.jar$/.test(jar); }).map(function (jar) {

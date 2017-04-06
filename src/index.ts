@@ -1,3 +1,3 @@
-import MySQLConnection from "./MySQLConnection"
-
-export default { MySQLConnection }
+export * from "./ConnectionImpl"
+export * from "./MariaDBConnection"
+export * from "./MySQLConnection"

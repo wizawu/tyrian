@@ -10,9 +10,9 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+var MySQLConnection_1 = require("./MySQLConnection");
 var DriverManager = java.sql.DriverManager;
 var String = java.lang.String;
-var MySQLConnection_1 = require("./MySQLConnection");
 var MariaDBConnection = (function (_super) {
     __extends(MariaDBConnection, _super);
     function MariaDBConnection(options) {

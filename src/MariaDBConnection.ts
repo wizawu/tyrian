@@ -1,13 +1,11 @@
+import { MySQLConnectionImpl } from "./MySQLConnection"
+import { Options } from "./ConnectionImpl"
+
 const DriverManager = java.sql.DriverManager
 const String = java.lang.String
-type Connection = java.sql.Connection
-type PreparedStatement = java.sql.PreparedStatement
-
-import { ConnectOptions } from "./IConnection"
-import { MySQLConnectionImpl } from "./MySQLConnection"
 
 export default class MariaDBConnection extends MySQLConnectionImpl {
-    constructor(options: ConnectOptions) {
+    constructor(options: Options) {
         super()
         this.url = String.format(
             "jdbc:mariadb://%s:%d/%s?user=%s&password=%s&testOnBorrow=true",

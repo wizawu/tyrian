@@ -10,9 +10,9 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+var util_1 = require("./util");
 var DriverManager = java.sql.DriverManager;
 var String = java.lang.String;
-var ResultSet_1 = require("./ResultSet");
 var MySQLConnectionImpl = (function () {
     function MySQLConnectionImpl() {
     }
@@ -65,7 +65,7 @@ var MySQLConnectionImpl = (function () {
         try {
             var resultSet = statement.executeQuery();
             if (resultSet.next())
-                result = ResultSet_1.readAs(resultSet);
+                result = util_1.resultSetToJSON(resultSet);
             resultSet.close();
         }
         finally {
@@ -88,7 +88,7 @@ var MySQLConnectionImpl = (function () {
         try {
             var resultSet = statement.executeQuery();
             while (resultSet.next())
-                result.push(ResultSet_1.readAs(resultSet));
+                result.push(util_1.resultSetToJSON(resultSet));
             resultSet.close();
         }
         finally {

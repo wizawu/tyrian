@@ -1,16 +1,15 @@
+import ConnectionImpl, { Options } from "./ConnectionImpl"
+import { resultSetToJSON } from "./util"
+
 const DriverManager = java.sql.DriverManager
 const String = java.lang.String
 type PreparedStatement = java.sql.PreparedStatement
-
-import IConnection from "./IConnection"
-import { ConnectOptions } from "./IConnection"
-import { readAs } from "./ResultSet"
 
 interface Column {
     COLUMN_NAME: string
 }
 
-export abstract class MySQLConnectionImpl implements IConnection {
+export abstract class MySQLConnectionImpl implements ConnectionImpl {
     connection: java.sql.Connection
     url: string
 
@@ -65,7 +64,7 @@ export abstract class MySQLConnectionImpl implements IConnection {
         statement = this.prepareStatement(sql, parameters)
         try {
             let resultSet = statement.executeQuery()
-            if (resultSet.next()) result = readAs<T>(resultSet)
+            if (resultSet.next()) result = resultSetToJSON<T>(resultSet)
             resultSet.close()
         } finally {
             statement.close()
@@ -86,7 +85,7 @@ export abstract class MySQLConnectionImpl implements IConnection {
         statement = this.prepareStatement(sql, parameters)
         try {
             let resultSet = statement.executeQuery()
-            while (resultSet.next()) result.push(readAs<T>(resultSet))
+            while (resultSet.next()) result.push(resultSetToJSON<T>(resultSet))
             resultSet.close()
         } finally {
             statement.close()
@@ -130,7 +129,7 @@ export abstract class MySQLConnectionImpl implements IConnection {
 }
 
 export default class MySQLConnection extends MySQLConnectionImpl {
-    constructor(options: ConnectOptions) {
+    constructor(options: Options) {
         super()
         this.url = String.format(
             "jdbc:mysql://%s:%d/%s?user=%s&password=%s&testOnBorrow=true",

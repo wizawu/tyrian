@@ -1,4 +1,7 @@
 "use strict";
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
 Object.defineProperty(exports, "__esModule", { value: true });
-var MySQLConnection_1 = require("./MySQLConnection");
-exports.default = { MySQLConnection: MySQLConnection_1.default };
+__export(require("./MariaDBConnection"));
+__export(require("./MySQLConnection"));

@@ -1,8 +1,11 @@
 {
   "name": "orsql",
   "version": "0.0.1",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
   "scripts": {
-    "build": "tsc -d --removeComments --strictNullChecks -p ."
+    "build": "tsc -d --noUnusedLocals --removeComments --strictNullChecks -p .",
+    "watch": "tsc -d --noUnusedLocals --removeComments --strictNullChecks -p . -w"
   },
   "mvnDependencies": [
     "junit:junit:4.12",

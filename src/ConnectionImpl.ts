@@ -1,4 +1,4 @@
-export interface ConnectOptions {
+export interface Options {
     server: string
     port: int
     database: string
@@ -6,7 +6,7 @@ export interface ConnectOptions {
     password: string
 }
 
-interface IConnection {
+interface ConnectionImpl {
     ensureTable(tableName: string)
     ensureColumn(tableName: string, columnName: string, columnType: string)
     ensureIndex(tableName: string, columnNames: string[])
@@ -18,4 +18,4 @@ interface IConnection {
     close()
 }
 
-export default IConnection
+export default ConnectionImpl

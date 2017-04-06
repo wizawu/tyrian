@@ -1,6 +1,5 @@
-import IConnection from "./IConnection";
-import { ConnectOptions } from "./IConnection";
-export declare abstract class MySQLConnectionImpl implements IConnection {
+import ConnectionImpl, { Options } from "./ConnectionImpl";
+export declare abstract class MySQLConnectionImpl implements ConnectionImpl {
     connection: java.sql.Connection;
     url: string;
     private prepareStatement(sql, parameters);
@@ -16,5 +15,5 @@ export declare abstract class MySQLConnectionImpl implements IConnection {
     close(): void;
 }
 export default class MySQLConnection extends MySQLConnectionImpl {
-    constructor(options: ConnectOptions);
+    constructor(options: Options);
 }

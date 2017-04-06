@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-function readAs(resultSet) {
+function resultSetToJSON(resultSet) {
     var json = {};
     for (var i = 1; i <= resultSet.getMetaData().getColumnCount(); i++) {
         var key = resultSet.getMetaData().getColumnName(i);
@@ -9,4 +9,4 @@ function readAs(resultSet) {
     }
     return json;
 }
-exports.readAs = readAs;
+exports.resultSetToJSON = resultSetToJSON;

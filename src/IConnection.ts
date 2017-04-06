@@ -1,4 +1,4 @@
-interface ConnectOptions {
+export interface ConnectOptions {
     server: string
     port: int
     database: string
@@ -11,9 +11,11 @@ interface IConnection {
     ensureColumn(tableName: string, columnName: string, columnType: string)
     ensureIndex(tableName: string, columnNames: string[])
     ensureUniqueIndex(tableName: string, columnNames: string[])
-    one<T>(type: Class<T>, sql: string, parameters: Array<Any>): T | null
-    list<T>(type: Class<T>, sql: string, parameters: Array<Any>): ArrayList<T>
-    save(tableName: string, obj: Any, primary: string)
-    execute(sql: string, parameters: Array<Any>)
+    one<T>(sql: string, parameters: any[]): T | null
+    list<T>(sql: string, parameters: any[]): T[]
+    save(tableName: string, obj: any, primary: string)
+    execute(sql: string, parameters: any[])
     close()
 }
+
+export default IConnection

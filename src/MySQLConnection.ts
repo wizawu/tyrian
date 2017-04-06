@@ -1,7 +1,6 @@
 const DriverManager = java.sql.DriverManager
-type Connection = java.sql.Connection
-type PreparedStatement = java.sql.PreparedStatement
 const String = java.lang.String
+type PreparedStatement = java.sql.PreparedStatement
 
 import IConnection from "./IConnection"
 import { ConnectOptions } from "./IConnection"
@@ -12,7 +11,7 @@ interface Column {
 }
 
 export abstract class MySQLConnectionImpl implements IConnection {
-    connection: Connection
+    connection: java.sql.Connection
     url: string
 
     private prepareStatement(sql: string, parameters: any[]): PreparedStatement {

@@ -1,6 +1,9 @@
 {
   "name": "orsql",
   "version": "0.0.1",
+  "scripts": {
+    "build": "tsc -d --removeComments --strictNullChecks -p ."
+  },
   "mvnDependencies": [
     "junit:junit:4.12",
     "mysql:mysql-connector-java:6.0.5",

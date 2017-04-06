@@ -1,5 +1,0 @@
-{
-    "mvnDependencies": [
-            "org.tinylog:tinylog:1.2"
-              ]
-}

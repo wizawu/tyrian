@@ -10,7 +10,7 @@ export declare abstract class MySQLConnectionImpl implements ConnectionImpl {
     ensureUniqueIndex(tableName: string, columnNames: string[]): void;
     one<T>(sql: string, parameters: any[]): T | null;
     list<T>(sql: string, parameters: any[]): T[];
-    save(tableName: string, json: any, primary: string): void;
+    save(tableName: string, obj: any, primary: string): void;
     execute(sql: string, parameters: any[]): void;
     close(): void;
 }

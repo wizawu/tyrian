@@ -17,45 +17,40 @@ var MySQLConnectionImpl = (function () {
     function MySQLConnectionImpl() {
     }
     MySQLConnectionImpl.prototype.prepareStatement = function (sql, parameters) {
-        if (this.connection.isClosed)
+        if (this.connection.isClosed())
             this.connection = DriverManager.getConnection(this.url);
         var statement = this.connection.prepareStatement(sql);
         parameters.forEach(function (parameter, i) { return statement.setObject(i + 1, parameter); });
         return statement;
     };
     MySQLConnectionImpl.prototype.indexName = function (columnNames, unique) {
-        var indexName = unique ? "uidx" : "idx";
-        columnNames.forEach(function (name) { return indexName += "_" + name.toLowerCase(); });
-        return indexName;
+        return (unique ? "uidx_" : "idx_") + columnNames.map(function (name) { return name.toLowerCase(); }).join("_");
     };
     MySQLConnectionImpl.prototype.ensureTable = function (tableName) {
         this.execute("CREATE TABLE IF NOT EXISTS " + tableName + " (id VARCHAR(64))", []);
     };
     MySQLConnectionImpl.prototype.ensureColumn = function (tableName, columnName, columnType) {
         var columns = this.list("desc " + tableName, []);
-        var exists = columns.some(function (col) { return col.COLUMN_NAME == columnName; });
-        if (exists)
+        if (columns.some(function (col) { return col.COLUMN_NAME == columnName; }))
             return;
         this.execute("ALTER TABLE " + tableName + " ADD COLUMN " + columnName + " " + columnType, []);
     };
     MySQLConnectionImpl.prototype.ensureIndex = function (tableName, columnNames) {
         var indexName = this.indexName(columnNames, false);
-        var indexColumns = "";
-        columnNames.forEach(function (name) { return indexColumns += "," + name; });
-        this.execute("CREATE INDEX IF NOT EXISTS " + indexName + " ON " + tableName + "(" + indexColumns.substring(1) + ")", []);
+        var indexColumns = columnNames.join(",");
+        this.execute("CREATE INDEX IF NOT EXISTS " + indexName + " ON " + tableName + "(" + indexColumns + ")", []);
     };
     MySQLConnectionImpl.prototype.ensureUniqueIndex = function (tableName, columnNames) {
         var indexName = this.indexName(columnNames, true);
-        var indexColumns = "";
-        columnNames.forEach(function (name) { return indexColumns += "," + name; });
-        this.execute("CREATE UNIQUE INDEX IF NOT EXISTS " + indexName + " ON " + tableName + "(" + indexColumns.substring(1) + ")", []);
+        var indexColumns = columnNames.join(",");
+        this.execute("CREATE UNIQUE INDEX IF NOT EXISTS " + indexName + " ON " + tableName + "(" + indexColumns + ")", []);
     };
     MySQLConnectionImpl.prototype.one = function (sql, parameters) {
         var statement = this.prepareStatement("SELECT 0", []);
         try {
             statement.execute();
         }
-        catch (_) {
+        catch (ex) {
         }
         finally {
             statement.close();
@@ -78,7 +73,7 @@ var MySQLConnectionImpl = (function () {
         try {
             statement.execute();
         }
-        catch (_) {
+        catch (ex) {
         }
         finally {
             statement.close();
@@ -96,19 +91,19 @@ var MySQLConnectionImpl = (function () {
         }
         return result;
     };
-    MySQLConnectionImpl.prototype.save = function (tableName, json, primary) {
+    MySQLConnectionImpl.prototype.save = function (tableName, obj, primary) {
         var keys = "";
         var values = "";
         var parameters = [];
-        Object.keys(json).forEach(function (key) {
+        Object.keys(obj).forEach(function (key) {
             keys += "," + key;
             values += ",?";
-            parameters.push(json[key]);
+            parameters.push(obj[key]);
         });
         this.connection.setAutoCommit(false);
         try {
             var sql = "DELETE FROM " + tableName + " WHERE " + primary + " = ?";
-            this.execute(sql, [json[primary]]);
+            this.execute(sql, [obj[primary]]);
             sql = "INSERT INTO " + tableName + "(" + keys.substring(1) + ") VALUES(" + values.substring(1) + ")";
             this.execute(sql, parameters);
             this.connection.commit();

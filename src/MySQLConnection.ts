@@ -14,16 +14,14 @@ export abstract class MySQLConnectionImpl implements ConnectionImpl {
     url: string
 
     private prepareStatement(sql: string, parameters: any[]): PreparedStatement {
-        if (this.connection.isClosed) this.connection = DriverManager.getConnection(this.url)
+        if (this.connection.isClosed()) this.connection = DriverManager.getConnection(this.url)
         let statement = this.connection.prepareStatement(sql) as PreparedStatement
         parameters.forEach((parameter, i) => statement.setObject(i + 1, parameter))
         return statement
     }
 
     private indexName(columnNames: string[], unique: boolean): string {
-        let indexName = unique ? "uidx" : "idx"
-        columnNames.forEach(name => indexName += "_" + name.toLowerCase())
-        return indexName
+        return (unique ? "uidx_" : "idx_") + columnNames.map(name => name.toLowerCase()).join("_")
     }
 
     ensureTable(tableName: string) {
@@ -32,30 +30,27 @@ export abstract class MySQLConnectionImpl implements ConnectionImpl {
 
     ensureColumn(tableName: string, columnName: string, columnType: string) {
         let columns = this.list<Column>("desc " + tableName, [])
-        let exists = columns.some(col => col.COLUMN_NAME == columnName)
-        if (exists) return
+        if (columns.some(col => col.COLUMN_NAME == columnName)) return
         this.execute(`ALTER TABLE ${tableName} ADD COLUMN ${columnName} ${columnType}`, [])
     }
 
     ensureIndex(tableName: string, columnNames: string[]) {
         let indexName = this.indexName(columnNames, false)
-        let indexColumns = ""
-        columnNames.forEach(name => indexColumns += "," + name)
-        this.execute(`CREATE INDEX IF NOT EXISTS ${indexName} ON ${tableName}(${indexColumns.substring(1)})`, [])
+        let indexColumns = columnNames.join(",")
+        this.execute(`CREATE INDEX IF NOT EXISTS ${indexName} ON ${tableName}(${indexColumns})`, [])
     }
 
     ensureUniqueIndex(tableName: string, columnNames: string[]) {
         let indexName = this.indexName(columnNames, true)
-        let indexColumns = ""
-        columnNames.forEach(name => indexColumns += "," + name)
-        this.execute(`CREATE UNIQUE INDEX IF NOT EXISTS ${indexName} ON ${tableName}(${indexColumns.substring(1)})`, [])
+        let indexColumns = columnNames.join(",")
+        this.execute(`CREATE UNIQUE INDEX IF NOT EXISTS ${indexName} ON ${tableName}(${indexColumns})`, [])
     }
 
     one<T>(sql: string, parameters: any[]): T | null {
         let statement = this.prepareStatement("SELECT 0", [])
         try {
             statement.execute()
-        } catch (_) {
+        } catch (ex) {
         } finally {
             statement.close()
         }
@@ -76,7 +71,7 @@ export abstract class MySQLConnectionImpl implements ConnectionImpl {
         let statement = this.prepareStatement("SELECT 0", [])
         try {
             statement.execute()
-        } catch (_) {
+        } catch (ex) {
         } finally {
             statement.close()
         }
@@ -93,20 +88,20 @@ export abstract class MySQLConnectionImpl implements ConnectionImpl {
         return result
     }
 
-    save(tableName: string, json: any, primary: string) {
+    save(tableName: string, obj: any, primary: string) {
         let keys = ""
         let values = ""
         let parameters: any[] = []
-        Object.keys(json).forEach(key => {
+        Object.keys(obj).forEach(key => {
             keys += "," + key
             values += ",?"
-            parameters.push(json[key])
+            parameters.push(obj[key])
         })
         this.connection.setAutoCommit(false)
 
         try {
             let sql = `DELETE FROM ${tableName} WHERE ${primary} = ?`
-            this.execute(sql, [json[primary]])
+            this.execute(sql, [obj[primary]])
             sql = `INSERT INTO ${tableName}(${keys.substring(1)}) VALUES(${values.substring(1)})`
             this.execute(sql, parameters)
             this.connection.commit()

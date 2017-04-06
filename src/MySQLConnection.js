@@ -92,19 +92,14 @@ var MySQLConnectionImpl = (function () {
         return result;
     };
     MySQLConnectionImpl.prototype.save = function (tableName, obj, primary) {
-        var keys = "";
-        var values = "";
-        var parameters = [];
-        Object.keys(obj).forEach(function (key) {
-            keys += "," + key;
-            values += ",?";
-            parameters.push(obj[key]);
-        });
+        var keys = Object.keys(obj).join(",");
+        var values = Object.keys(obj).map(function () { return "?"; }).join(",");
+        var parameters = Object.keys(obj).map(function (key) { return obj[key]; });
         this.connection.setAutoCommit(false);
         try {
             var sql = "DELETE FROM " + tableName + " WHERE " + primary + " = ?";
             this.execute(sql, [obj[primary]]);
-            sql = "INSERT INTO " + tableName + "(" + keys.substring(1) + ") VALUES(" + values.substring(1) + ")";
+            sql = "INSERT INTO " + tableName + "(" + keys + ") VALUES(" + values + ")";
             this.execute(sql, parameters);
             this.connection.commit();
         }

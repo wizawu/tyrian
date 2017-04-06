@@ -89,20 +89,15 @@ export abstract class MySQLConnectionImpl implements ConnectionImpl {
     }
 
     save(tableName: string, obj: any, primary: string) {
-        let keys = ""
-        let values = ""
-        let parameters: any[] = []
-        Object.keys(obj).forEach(key => {
-            keys += "," + key
-            values += ",?"
-            parameters.push(obj[key])
-        })
+        let keys = Object.keys(obj).join(",")
+        let values = Object.keys(obj).map(() => "?").join(",")
+        let parameters = Object.keys(obj).map(key => obj[key])
         this.connection.setAutoCommit(false)
 
         try {
             let sql = `DELETE FROM ${tableName} WHERE ${primary} = ?`
             this.execute(sql, [obj[primary]])
-            sql = `INSERT INTO ${tableName}(${keys.substring(1)}) VALUES(${values.substring(1)})`
+            sql = `INSERT INTO ${tableName}(${keys}) VALUES(${values})`
             this.execute(sql, parameters)
             this.connection.commit()
         } catch (ex) {

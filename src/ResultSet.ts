@@ -1,11 +1,10 @@
-package orsql
+const Gson = com.google.gson.Gson
+const JSONObject = org.json.JSONObject
+type ResultSet = java.sql.ResultSet
 
-import com.google.gson.Gson
-import org.json.JSONObject
-import java.sql.ResultSet
-
-fun <T> readAs(type: Class<T>, resultSet: ResultSet): T {
-    val json = JSONObject()
+export function readAs<T>(resultSet: ResultSet): T {
+    let json = new JSONObject()
+    for (let i = 1; i <= resultSet.getMetaData().getColumnCount(); i++)
     for (i in 1..resultSet.metaData.columnCount) {
         val key = resultSet.metaData.getColumnName(i)
         val value = resultSet.getObject(i)

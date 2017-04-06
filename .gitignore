@@ -1,4 +1,3 @@
-*.iml
 *.swp
 .gradle
 .idea
@@ -6,4 +5,5 @@ build
 build.gradle
 lib
 node_modules
+tsconfig.json
 yarn.lock

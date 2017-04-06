@@ -1,23 +1,19 @@
-package orsql
-
-import java.util.*
-
-data class ConnectOptions(
-        val server: String,
-        val port: Int,
-        val database: String,
-        val user: String,
-        val password: String
-)
+interface ConnectOptions {
+    server: string
+    port: int
+    database: string
+    user: string
+    password: string
+}
 
 interface IConnection {
-    fun ensureTable(tableName: String)
-    fun ensureColumn(tableName: String, columnName: String, columnType: String)
-    fun ensureIndex(tableName: String, columnNames: Array<String>)
-    fun ensureUniqueIndex(tableName: String, columnNames: Array<String>)
-    fun <T> one(type: Class<T>, sql: String, parameters: Array<Any>): T?
-    fun <T> list(type: Class<T>, sql: String, parameters: Array<Any>): ArrayList<T>
-    fun save(tableName: String, obj: Any, primary: String)
-    fun execute(sql: String, parameters: Array<Any>)
-    fun close()
+    ensureTable(tableName: string)
+    ensureColumn(tableName: string, columnName: string, columnType: string)
+    ensureIndex(tableName: string, columnNames: string[])
+    ensureUniqueIndex(tableName: string, columnNames: string[])
+    one<T>(type: Class<T>, sql: string, parameters: Array<Any>): T | null
+    list<T>(type: Class<T>, sql: string, parameters: Array<Any>): ArrayList<T>
+    save(tableName: string, obj: Any, primary: string)
+    execute(sql: string, parameters: Array<Any>)
+    close()
 }

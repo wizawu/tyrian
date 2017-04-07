@@ -1,10 +1,17 @@
-const TestCase = junit.framework.TestCase
-const { assertEquals } = junit.framework.Assert
+// declare const require: any
 
-class MySQLConnectionTest extends TestCase {
-    testAddition() {
-        assertEquals(1 + 1, 2)
-    }
-}
+var Mocha = require("mocha")
 
-new MySQLConnectionTest().run()
+var mocha = new Mocha()
+
+mocha.suite.beforeEach(function() {
+    console.log("ready")
+})
+
+mocha.suite.addTest(new Mocha.Test("test add", function() {
+}))
+
+mocha.suite.addTest(new Mocha.Test("test minus", function() {
+}))
+
+mocha.run()

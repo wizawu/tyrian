@@ -8,9 +8,12 @@
     "watch": "tsc -d -p . -w"
   },
   "mvnDependencies": [
-    "junit:junit:3.8.1",
     "mysql:mysql-connector-java:6.0.5",
-    "org.mariadb.jdbc:mariadb-java-client:1.5.7",
-    "org.tinylog:tinylog:1.2"
-  ]
+    "org.mariadb.jdbc:mariadb-java-client:1.5.7"
+  ],
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "mocha": "2.2.5",
+    "unit.js": "^2.0.0"
+  }
 }

@@ -1,4 +1,3 @@
+@types/test.ts
 example
 src/**/*.ts
-test.js
-test.ts

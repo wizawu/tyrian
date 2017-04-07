@@ -1,3 +1,5 @@
+*.j.d.ts
+*.j.js
 .gradle
 build
 build.gradle

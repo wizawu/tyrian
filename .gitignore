@@ -5,5 +5,7 @@ build
 build.gradle
 lib
 node_modules
+test/**/*.d.ts
+test/**/*.js
 tsconfig.json
 yarn.lock

@@ -14,7 +14,7 @@ function compiler(watch: boolean, instdir: string, instmod: string, context: str
             if (/\.j\.ts$/.test(filename)) {
                 let basename = filename.replace(/\.j\.ts$/, "")
                 entry[`build/${basename}`] = `${context}/src/js/entry/${filename}`
-            } else if (/\.tsx?/.test(filename)) {
+            } else if (/\.tsx?/.test(filename) && !/\.d\.ts$/.test(filename)) {
                 let basename = filename.replace(/\.tsx?$/, "")
                 entry[`build/assets/js/${basename}.min.js`] = `${context}/src/js/entry/${filename}`
             }

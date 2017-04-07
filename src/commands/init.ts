@@ -14,6 +14,8 @@ const PACKAGE_JSON = `
 
 // .gitignore
 const _GITIGNORE = `
+*.j.d.ts
+*.j.js
 .gradle
 build
 build.gradle
@@ -71,13 +73,13 @@ export default function (instdir: string) {
         ["package.json", PACKAGE_JSON],
         ["tsconfig.json", tsconfig(instdir)],
         [".gitignore", _GITIGNORE],
-        ["src/assets/test.txt", ""],
-        ["src/assets/img/test.jpg", ""],
-        ["src/css/test.less", "body { dislpay: flex }"],
-        ["src/html/test.html", "<!DOCTYPE html>"],
-        ["src/js/entry/test.tsx", `import "../../css/test.less"`],
+        ["src/assets/todo.txt", ""],
+        ["src/assets/img/blank.jpg", ""],
+        ["src/css/index.less", "body { dislpay: flex }"],
+        ["src/html/index.html", "<!DOCTYPE html>"],
+        ["src/js/entry/index.tsx", `import "../../css/index.less"`],
         ["src/js/entry/main.j.ts", `org.pmw.tinylog.Logger.info(java.lang.System.getProperty("java.version"))`],
-        ["src/js/@types/test.d.ts", ""],
+        ["src/js/@types/common.d.ts", ""],
         ["test/js/test.j.ts", `org.pmw.tinylog.Logger.warn("test")`],
     ].forEach(([path, content]: string[]) => {
         if (!fs.existsSync(path)) {

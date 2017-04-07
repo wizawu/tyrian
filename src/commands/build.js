@@ -14,7 +14,7 @@ function compiler(watch, instdir, instmod, context) {
                 var basename = filename.replace(/\.j\.ts$/, "");
                 entry["build/" + basename] = context + "/src/js/entry/" + filename;
             }
-            else if (/\.tsx?/.test(filename)) {
+            else if (/\.tsx?/.test(filename) && !/\.d\.ts$/.test(filename)) {
                 var basename = filename.replace(/\.tsx?$/, "");
                 entry["build/assets/js/" + basename + ".min.js"] = context + "/src/js/entry/" + filename;
             }

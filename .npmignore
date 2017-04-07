@@ -1,3 +1,4 @@
+*.log
 @types/test.ts
 example
 src/**/*.ts

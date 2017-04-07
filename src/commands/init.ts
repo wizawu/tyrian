@@ -29,6 +29,8 @@ export const tsconfig = instdir => `
   "compilerOptions": {
     "jsx": "react",
     "lib": ["dom", "es2017"],
+    "noUnusedLocals": true,
+    "removeComments": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
     "target": "es5",

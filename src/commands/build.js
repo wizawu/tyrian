@@ -8,22 +8,26 @@ var CopyWebpackPlugin = require("copy-webpack-plugin");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 function compiler(watch, instdir, instmod, context) {
     var entry = {};
-    fs.readdirSync(context + "/src/js/entry").forEach(function (filename) {
-        if (/\.j\.ts$/.test(filename)) {
-            var basename = filename.replace(/\.j\.ts$/, "");
-            entry["build/" + basename] = context + "/src/js/entry/" + filename;
-        }
-        else if (/\.tsx?/.test(filename)) {
-            var basename = filename.replace(/\.tsx?$/, "");
-            entry["build/assets/js/" + basename + ".min.js"] = context + "/src/js/entry/" + filename;
-        }
-    });
-    fs.readdirSync(context + "/test/js").forEach(function (filename) {
-        if (/\.j\.ts$/.test(filename)) {
-            var basename = filename.replace(/\.j\.ts$/, "");
-            entry["build/test/" + basename] = context + "/test/js/" + filename;
-        }
-    });
+    if (fs.existsSync(context + "/src/js/entry")) {
+        fs.readdirSync(context + "/src/js/entry").forEach(function (filename) {
+            if (/\.j\.ts$/.test(filename)) {
+                var basename = filename.replace(/\.j\.ts$/, "");
+                entry["build/" + basename] = context + "/src/js/entry/" + filename;
+            }
+            else if (/\.tsx?/.test(filename)) {
+                var basename = filename.replace(/\.tsx?$/, "");
+                entry["build/assets/js/" + basename + ".min.js"] = context + "/src/js/entry/" + filename;
+            }
+        });
+    }
+    if (fs.existsSync(context + "/test/js")) {
+        fs.readdirSync(context + "/test/js").forEach(function (filename) {
+            if (/\.j\.ts$/.test(filename)) {
+                var basename = filename.replace(/\.j\.ts$/, "");
+                entry["build/test/" + basename] = context + "/test/js/" + filename;
+            }
+        });
+    }
     var html = fs.existsSync(context + "/src/html") ? (fs.readdirSync(context + "/src/html").filter(function (filename) { return /\.html$/.test(filename); })) : [];
     var cssLoaders = [{
             loader: "style-loader"

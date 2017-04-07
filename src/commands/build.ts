@@ -8,21 +8,27 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 function compiler(watch: boolean, instdir: string, instmod: string, context: string) {
     let entry = {}
-    fs.readdirSync(`${context}/src/js/entry`).forEach(filename => {
-        if (/\.j\.ts$/.test(filename)) {
-            let basename = filename.replace(/\.j\.ts$/, "")
-            entry[`build/${basename}`] = `${context}/src/js/entry/${filename}`
-        } else if (/\.tsx?/.test(filename)) {
-            let basename = filename.replace(/\.tsx?$/, "")
-            entry[`build/assets/js/${basename}.min.js`] = `${context}/src/js/entry/${filename}`
-        }
-    })
-    fs.readdirSync(`${context}/test/js`).forEach(filename => {
-        if (/\.j\.ts$/.test(filename)) {
-            let basename = filename.replace(/\.j\.ts$/, "")
-            entry[`build/test/${basename}`] = `${context}/test/js/${filename}`
-        }
-    })
+    // source entry
+    if (fs.existsSync(`${context}/src/js/entry`)) {
+        fs.readdirSync(`${context}/src/js/entry`).forEach(filename => {
+            if (/\.j\.ts$/.test(filename)) {
+                let basename = filename.replace(/\.j\.ts$/, "")
+                entry[`build/${basename}`] = `${context}/src/js/entry/${filename}`
+            } else if (/\.tsx?/.test(filename)) {
+                let basename = filename.replace(/\.tsx?$/, "")
+                entry[`build/assets/js/${basename}.min.js`] = `${context}/src/js/entry/${filename}`
+            }
+        })
+    }
+    // test entry
+    if (fs.existsSync(`${context}/test/js`)) {
+        fs.readdirSync(`${context}/test/js`).forEach(filename => {
+            if (/\.j\.ts$/.test(filename)) {
+                let basename = filename.replace(/\.j\.ts$/, "")
+                entry[`build/test/${basename}`] = `${context}/test/js/${filename}`
+            }
+        })
+    }
 
     let html = fs.existsSync(`${context}/src/html`) ? (
         fs.readdirSync(`${context}/src/html`).filter(filename => /\.html$/.test(filename))

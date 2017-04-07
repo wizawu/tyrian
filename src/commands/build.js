@@ -18,6 +18,12 @@ function compiler(watch, instdir, instmod, context) {
             entry["build/assets/js/" + basename + ".min.js"] = context + "/src/js/entry/" + filename;
         }
     });
+    fs.readdirSync(context + "/test/js").forEach(function (filename) {
+        if (/\.j\.ts$/.test(filename)) {
+            var basename = filename.replace(/\.j\.ts$/, "");
+            entry["build/test/" + basename] = context + "/test/js/" + filename;
+        }
+    });
     var html = fs.existsSync(context + "/src/html") ? (fs.readdirSync(context + "/src/html").filter(function (filename) { return /\.html$/.test(filename); })) : [];
     var cssLoaders = [{
             loader: "style-loader"

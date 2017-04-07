@@ -17,6 +17,12 @@ function compiler(watch: boolean, instdir: string, instmod: string, context: str
             entry[`build/assets/js/${basename}.min.js`] = `${context}/src/js/entry/${filename}`
         }
     })
+    fs.readdirSync(`${context}/test/js`).forEach(filename => {
+        if (/\.j\.ts$/.test(filename)) {
+            let basename = filename.replace(/\.j\.ts$/, "")
+            entry[`build/test/${basename}`] = `${context}/test/js/${filename}`
+        }
+    })
 
     let html = fs.existsSync(`${context}/src/html`) ? (
         fs.readdirSync(`${context}/src/html`).filter(filename => /\.html$/.test(filename))

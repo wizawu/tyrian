@@ -1,9 +1,9 @@
 {
   "name": "1c",
-  "version": "6.4.12",
+  "version": "6.4.13",
   "bin": "./bin/1c",
   "scripts": {
-    "build": "tsc --removeComments --strictNullChecks src/main.ts"
+    "build": "tsc --noUnusedLocals --removeComments --strictNullChecks src/main.ts"
   },
   "dependencies": {
     "@types/node": "latest",

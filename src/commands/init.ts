@@ -48,7 +48,7 @@ export const tsconfig = instdir => `
 `.trim()
 
 export default function (instdir: string) {
-    ["build", "lib", "node_modules", "src"].forEach(dir => {
+    ["build", "build/assets", "build/test", "lib", "node_modules", "src", "test", "test/js"].forEach(dir => {
         try {
             fs.mkdirSync(dir)
             console.log("mkdir " + dir)
@@ -74,8 +74,9 @@ export default function (instdir: string) {
         ["src/css/test.less", "body { dislpay: flex }"],
         ["src/html/test.html", "<!DOCTYPE html>"],
         ["src/js/entry/test.tsx", `import "../../css/test.less"`],
-        ["src/js/entry/test.j.ts", `org.pmw.tinylog.Logger.info(java.lang.System.getProperty("java.version"))`],
+        ["src/js/entry/main.j.ts", `org.pmw.tinylog.Logger.info(java.lang.System.getProperty("java.version"))`],
         ["src/js/@types/test.d.ts", ""],
+        ["test/js/test.j.ts", `org.pmw.tinylog.Logger.warn("test")`],
     ].forEach(([path, content]: string[]) => {
         if (!fs.existsSync(path)) {
             try {

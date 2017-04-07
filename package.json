@@ -8,10 +8,9 @@
     "watch": "tsc -d --noUnusedLocals --removeComments --strictNullChecks -p . -w"
   },
   "mvnDependencies": [
+    "junit:junit:3.8.1",
     "mysql:mysql-connector-java:6.0.5",
-    "org.mariadb.jdbc:mariadb-java-client:1.5.7"
-  ],
-  "dependencies": {
-    "jasmine": "^2.5.3"
-  }
+    "org.mariadb.jdbc:mariadb-java-client:1.5.7",
+    "org.tinylog:tinylog:1.2"
+  ]
 }

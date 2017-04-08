@@ -13,12 +13,6 @@ const UNSUPPORTED_MODIFIERS = [
     "volatile",
 ]
 
-const UNSUPPORTED_PACKAGES = [
-    "com.sun.xml.bind.v2",
-    "com.sun.xml.internal.bind.v2",
-    "com.sun.xml.internal.ws",
-]
-
 function safeType(type: string): string {
     if (/java\.util\.function/.test(type)) return "any"
     if (/>\.\w+$/.test(type)) return "any"
@@ -214,8 +208,7 @@ export default function (source: string, pkg: any) {
                 memberMap = {}
                 ignore = false
                 if (item.name.indexOf("-") >= 0) ignore = true
-                if (item.name.indexOf("java.util.") === 0 && item.name.indexOf("$") > 0) ignore = true
-                if (UNSUPPORTED_PACKAGES.some(pkg => item.name.indexOf(pkg) >= 0)) ignore= true
+                if (item.name.indexOf("$") >= 0) ignore = true
                 if (!ignore) buffer.push(item.line as never)
                 break
             case "CONSTR":

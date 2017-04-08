@@ -1,9 +1,11 @@
 import ConnectionImpl, { Options } from "./ConnectionImpl";
 export declare abstract class MySQLConnectionImpl implements ConnectionImpl {
     connection: java.sql.Connection;
-    url: string;
+    driver: java.sql.Driver;
+    url: java.lang.String;
     private prepareStatement(sql, parameters);
     private indexName(columnNames, unique);
+    connect(): void;
     ensureTable(tableName: string): void;
     ensureColumn(tableName: string, columnName: string, columnType: string): void;
     ensureIndex(tableName: string, columnNames: string[]): void;

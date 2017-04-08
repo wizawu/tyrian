@@ -11,20 +11,22 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var util_1 = require("./util");
-var DriverManager = java.sql.DriverManager;
 var String = java.lang.String;
 var MySQLConnectionImpl = (function () {
     function MySQLConnectionImpl() {
     }
     MySQLConnectionImpl.prototype.prepareStatement = function (sql, parameters) {
         if (this.connection.isClosed())
-            this.connection = DriverManager.getConnection(this.url);
+            this.connect();
         var statement = this.connection.prepareStatement(sql);
         parameters.forEach(function (parameter, i) { return statement.setObject(i + 1, parameter); });
         return statement;
     };
     MySQLConnectionImpl.prototype.indexName = function (columnNames, unique) {
         return (unique ? "uidx_" : "idx_") + columnNames.map(function (name) { return name.toLowerCase(); }).join("_");
+    };
+    MySQLConnectionImpl.prototype.connect = function () {
+        this.connection = this.driver.connect(this.url, new java.util.Properties());
     };
     MySQLConnectionImpl.prototype.ensureTable = function (tableName) {
         this.execute("CREATE TABLE IF NOT EXISTS " + tableName + " (id VARCHAR(64))", []);
@@ -125,8 +127,9 @@ var MySQLConnection = (function (_super) {
     __extends(MySQLConnection, _super);
     function MySQLConnection(options) {
         var _this = _super.call(this) || this;
-        _this.url = String.format("jdbc:mysql://%s:%d/%s?user=%s&password=%s&testOnBorrow=true", options.server, options.port, options.database, options.user, options.password);
-        _this.connection = DriverManager.getConnection(_this.url);
+        _this.driver = new com.mysql.cj.jdbc.Driver();
+        _this.url = String.format("jdbc:mysql://%s:%d/%s?user=%s&password=%s&testOnBorrow=true", options.host, options.port, options.database, options.user, options.password);
+        _this.connect();
         return _this;
     }
     return MySQLConnection;

@@ -1,7 +1,6 @@
 import ConnectionImpl, { Options } from "./ConnectionImpl"
 import { resultSetToJSON } from "./util"
 
-const DriverManager = java.sql.DriverManager
 const String = java.lang.String
 type PreparedStatement = java.sql.PreparedStatement
 
@@ -11,10 +10,11 @@ interface Column {
 
 export abstract class MySQLConnectionImpl implements ConnectionImpl {
     connection: java.sql.Connection
-    url: string
+    driver: java.sql.Driver
+    url: java.lang.String
 
     private prepareStatement(sql: string, parameters: any[]): PreparedStatement {
-        if (this.connection.isClosed()) this.connection = DriverManager.getConnection(this.url)
+        if (this.connection.isClosed()) this.connect()
         let statement = this.connection.prepareStatement(sql) as PreparedStatement
         parameters.forEach((parameter, i) => statement.setObject(i + 1, parameter))
         return statement
@@ -22,6 +22,10 @@ export abstract class MySQLConnectionImpl implements ConnectionImpl {
 
     private indexName(columnNames: string[], unique: boolean): string {
         return (unique ? "uidx_" : "idx_") + columnNames.map(name => name.toLowerCase()).join("_")
+    }
+
+    connect() {
+        this.connection = this.driver.connect(this.url, new java.util.Properties())
     }
 
     ensureTable(tableName: string) {
@@ -121,10 +125,11 @@ export abstract class MySQLConnectionImpl implements ConnectionImpl {
 export default class MySQLConnection extends MySQLConnectionImpl {
     constructor(options: Options) {
         super()
+        this.driver = new com.mysql.cj.jdbc.Driver()
         this.url = String.format(
             "jdbc:mysql://%s:%d/%s?user=%s&password=%s&testOnBorrow=true",
-            options.server, options.port, options.database, options.user, options.password
+            options.host, options.port, options.database, options.user, options.password
         )
-        this.connection = DriverManager.getConnection(this.url)
+        this.connect()
     }
 }

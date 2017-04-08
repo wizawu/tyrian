@@ -1,5 +1,5 @@
 export interface Options {
-    server: string;
+    host: string;
     port: int;
     database: string;
     user: string;

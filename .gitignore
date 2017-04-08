@@ -1,11 +1,11 @@
+*.log
 *.swp
 .gradle
-.idea
 build
 build.gradle
 lib
 node_modules
-test/**/*.d.ts
+test/**/*.j.d.ts
 test/**/*.js
 tsconfig.json
 yarn.lock

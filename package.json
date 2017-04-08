@@ -9,11 +9,7 @@
   },
   "mvnDependencies": [
     "mysql:mysql-connector-java:6.0.5",
+    "org.assertj:assertj-core:2.6.0",
     "org.mariadb.jdbc:mariadb-java-client:1.5.7"
-  ],
-  "dependencies": {
-    "fs": "^0.0.1-security",
-    "mocha": "2.2.5",
-    "unit.js": "^2.0.0"
-  }
+  ]
 }

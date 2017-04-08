@@ -1,3 +1,4 @@
+import * as chalk from "chalk"
 import * as fs from "fs"
 
 // package.json
@@ -55,17 +56,25 @@ export default function (instdir: string) {
     ["build", "build/assets", "build/test", "lib", "node_modules", "src", "test", "test/js"].forEach(dir => {
         try {
             fs.mkdirSync(dir)
-            console.log("mkdir " + dir)
+            console.log(chalk.cyan("mkdir " + dir))
         } catch (err) {
-            if (err.code !== "EEXIST") console.error(err.message)
+            if (err.code === "EEXIST") {
+                console.error(chalk.yellow(err.message))
+            } else {
+                console.error(chalk.red(err.message))
+            }
         }
     });
     ["assets", "assets/img", "css", "html", "js", "js/entry", "js/@types"].forEach(dir => {
         try {
             fs.mkdirSync("src/" + dir)
-            console.log("mkdir src/" + dir)
+            console.log(chalk.cyan("mkdir src/" + dir))
         } catch (err) {
-            if (err.code !== "EEXIST") console.error(err.message)
+            if (err.code === "EEXIST") {
+                console.error(chalk.yellow(err.message))
+            } else {
+                console.error(chalk.red(err.message))
+            }
         }
     });
 
@@ -85,9 +94,13 @@ export default function (instdir: string) {
         if (!fs.existsSync(path)) {
             try {
                 fs.writeFileSync(path, content)
-                console.log("create " + path)
+                console.log(chalk.cyan("create " + path))
             } catch (err) {
-                console.error(err.message)
+                if (err.code === "EEXIST") {
+                    console.error(chalk.yellow(err.message))
+                } else {
+                    console.error(chalk.red(err.message))
+                }
             }
         }
     })

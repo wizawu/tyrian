@@ -1,8 +1,9 @@
-import { spawnSync } from "child_process"
+import * as chalk from "chalk"
 import { EXIT_STATUS } from "../const"
+import { spawnSync } from "child_process"
 
 const header = (tool: string, link: string) => `\n[${tool}](${link})\n`
-const notFound = (stdout, stderr) => stdout.toString() + stderr.toString() || `** not found **\n`
+const notFound = (stdout, stderr) => (stdout + stderr) || chalk.red("** not found **\n")
 
 export default function () {
     let ok = true

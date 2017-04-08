@@ -5,16 +5,21 @@ export function version(instdir: string) {
 }
 
 export function help(instdir: string, status: number) {
-    console.log(`Version: ${version(instdir)}`)
-    console.log("Usage:");
-    console.log("  1c env");
-    console.log("  1c init");
-    console.log("  1c install");
-    console.log("  1c build");
-    console.log("  1c watch");
-    console.log("  1c run build/<outfile>");
-    console.log("  1c version");
-    console.log("  1c help");
+    console.error(`
+
+Version: ${version(instdir)}
+
+Usage:
+  1c env                    Check running environment of 1c
+  1c init                   Initialize a new project in current directory
+  1c install                Install dependencies in package.json
+  1c build                  Build the project in current directory
+  1c watch                  Watch and rebuild the project
+  1c run build/<outfile>    Run output file compiled from .j.ts
+  1c version                Output the version number
+  1c help                   Output usage information
+
+    `.trim())
 
     process.exit(status)
 }

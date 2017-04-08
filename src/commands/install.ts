@@ -1,3 +1,4 @@
+import * as chalk from "chalk"
 import * as fs from "fs"
 import { spawnSync } from "child_process"
 
@@ -50,7 +51,7 @@ export default function (instdir: string) {
         let deps = Object.keys(mvnDependencies).map(key => `compile '${key}:${mvnDependencies[key]}'`)
         fs.writeFileSync("build.gradle", buildGradle(deps.join("\n  ")))
     } catch (err) {
-        console.error(err.message)
+        console.error(chalk.red(err.message))
     }
 
     // gradle install
@@ -62,8 +63,8 @@ export default function (instdir: string) {
     if (!fs.existsSync("lib/@types")) fs.mkdirSync("lib/@types")
     fs.readdirSync("lib").filter(jar => /\.jar$/.test(jar)).map(jar => {
         let filename = "lib/@types/" + jar.replace(/\.jar$/, ".d.ts")
-        console.log("Generating " + filename)
         fs.writeFileSync(filename, parseJAR(`lib/${jar}`))
+        console.log(chalk.green("Generated " + filename))
     })
 
     // Generate tsconfig.json

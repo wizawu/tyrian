@@ -3,25 +3,39 @@ declare namespace com {
         namespace java {
             namespace accessibility {
                 namespace util {
-                    class _AccessibleState extends javax.accessibility.AccessibleState {
-                        public static MANAGES_DESCENDANTS: com.sun.java.accessibility.util._AccessibleState
-                        protected constructor(arg0: java.lang.String)
-                    }
-                    class AccessibilityEventMonitor {
-                        protected static listenerList: com.sun.java.accessibility.util.AccessibilityListenerList
-                        protected static accessibilityListener: com.sun.java.accessibility.util.AccessibilityEventMonitor$AccessibilityEventListener
-                        public constructor()
-                        public static addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-                        public static removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-                    }
-                    class AccessibilityListenerList {
-                        protected listenerList: java.lang.Object[]
-                        public constructor()
-                        public getListenerList(): java.lang.Object[]
-                        getListenerCount<T>(...args: any[]): any
-                        public add(arg0: java.lang.Class, arg1: java.util.EventListener): void
-                        public remove(arg0: java.lang.Class, arg1: java.util.EventListener): void
-                        toString<T>(...args: any[]): any
+                    namespace java {
+                        namespace awt {
+                            class CheckboxTranslator extends com.sun.java.accessibility.util.Translator {
+                                public constructor()
+                                public getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
+                                public getAccessibleName(): java.lang.String
+                                public setAccessibleName(arg0: java.lang.String): void
+                                public getAccessibleRole(): javax.accessibility.AccessibleRole
+                            }
+                            class ButtonTranslator extends com.sun.java.accessibility.util.Translator {
+                                public constructor()
+                                public getAccessibleName(): java.lang.String
+                                public setAccessibleName(arg0: java.lang.String): void
+                                public getAccessibleRole(): javax.accessibility.AccessibleRole
+                            }
+                            class ListTranslator extends com.sun.java.accessibility.util.Translator {
+                                public constructor()
+                                public getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
+                                public getAccessibleRole(): javax.accessibility.AccessibleRole
+                            }
+                            class LabelTranslator extends com.sun.java.accessibility.util.Translator {
+                                public constructor()
+                                public getAccessibleName(): java.lang.String
+                                public setAccessibleName(arg0: java.lang.String): void
+                                public getAccessibleRole(): javax.accessibility.AccessibleRole
+                            }
+                            class TextComponentTranslator extends com.sun.java.accessibility.util.Translator {
+                                public constructor()
+                                public getAccessibleRole(): javax.accessibility.AccessibleRole
+                            }
+                            
+                        }
+                        
                     }
                     class EventID {
                         public static ACTION: int
@@ -96,6 +110,88 @@ declare namespace com {
                         public static getTopLevelWindows(): java.awt.Window[]
                         public static getTopLevelWindowWithFocus(): java.awt.Window
                     }
+                    class EventQueueMonitor$1 implements java.security.PrivilegedAction {
+                        constructor()
+                        public run(): java.lang.Object
+                    }
+                    class Translator extends javax.accessibility.AccessibleContext implements javax.accessibility.Accessible , javax.accessibility.AccessibleComponent {
+                        protected source: java.lang.Object
+                        protected static getTranslatorClass(arg0: java.lang.Class): java.lang.Class
+                        public static getAccessible(arg0: java.lang.Object): javax.accessibility.Accessible
+                        constructor(...args: any[])
+                        public getSource(): java.lang.Object
+                        public setSource(arg0: java.lang.Object): void
+                        public equals(arg0: java.lang.Object): boolean
+                        public getAccessibleContext(): javax.accessibility.AccessibleContext
+                        public getAccessibleName(): java.lang.String
+                        public setAccessibleName(arg0: java.lang.String): void
+                        public getAccessibleDescription(): java.lang.String
+                        public setAccessibleDescription(arg0: java.lang.String): void
+                        public getAccessibleRole(): javax.accessibility.AccessibleRole
+                        public getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
+                        public getAccessibleParent(): javax.accessibility.Accessible
+                        public getAccessibleIndexInParent(): int
+                        public getAccessibleChildrenCount(): int
+                        public getAccessibleChild(arg0: int): javax.accessibility.Accessible
+                        public getLocale(): java.util.Locale
+                        public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+                        public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+                        public getBackground(): java.awt.Color
+                        public setBackground(arg0: java.awt.Color): void
+                        public getForeground(): java.awt.Color
+                        public setForeground(arg0: java.awt.Color): void
+                        public getCursor(): java.awt.Cursor
+                        public setCursor(arg0: java.awt.Cursor): void
+                        public getFont(): java.awt.Font
+                        public setFont(arg0: java.awt.Font): void
+                        public getFontMetrics(arg0: java.awt.Font): java.awt.FontMetrics
+                        public isEnabled(): boolean
+                        public setEnabled(arg0: boolean): void
+                        public isVisible(): boolean
+                        public setVisible(arg0: boolean): void
+                        public isShowing(): boolean
+                        public contains(arg0: java.awt.Point): boolean
+                        public getLocationOnScreen(): java.awt.Point
+                        public getLocation(): java.awt.Point
+                        public setLocation(arg0: java.awt.Point): void
+                        public getBounds(): java.awt.Rectangle
+                        public setBounds(arg0: java.awt.Rectangle): void
+                        public getSize(): java.awt.Dimension
+                        public setSize(arg0: java.awt.Dimension): void
+                        public getAccessibleAt(arg0: java.awt.Point): javax.accessibility.Accessible
+                        public isFocusTraversable(): boolean
+                        public requestFocus(): void
+                        public addFocusListener(arg0: java.awt.event.FocusListener): void
+                        public removeFocusListener(arg0: java.awt.event.FocusListener): void
+                    }
+                    class _AccessibleState extends javax.accessibility.AccessibleState {
+                        public static MANAGES_DESCENDANTS: com.sun.java.accessibility.util._AccessibleState
+                        protected constructor(arg0: java.lang.String)
+                    }
+                    class AccessibilityEventMonitor {
+                        protected static listenerList: com.sun.java.accessibility.util.AccessibilityListenerList
+                        protected static accessibilityListener: com.sun.java.accessibility.util.AccessibilityEventMonitor$AccessibilityEventListener
+                        public constructor()
+                        public static addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+                        public static removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+                    }
+                    class AccessibilityEventMonitor$AccessibilityEventListener implements com.sun.java.accessibility.util.TopLevelWindowListener , java.beans.PropertyChangeListener {
+                        public constructor()
+                        installListeners<T>(...args: any[]): any
+                        removeListeners<T>(...args: any[]): any
+                        public topLevelWindowCreated(arg0: java.awt.Window): void
+                        public topLevelWindowDestroyed(arg0: java.awt.Window): void
+                        public propertyChange(arg0: java.beans.PropertyChangeEvent): void
+                    }
+                    class AccessibilityListenerList {
+                        protected listenerList: java.lang.Object[]
+                        public constructor()
+                        public getListenerList(): java.lang.Object[]
+                        getListenerCount<T>(...args: any[]): any
+                        public add(arg0: java.lang.Class, arg1: java.util.EventListener): void
+                        public remove(arg0: java.lang.Class, arg1: java.util.EventListener): void
+                        toString<T>(...args: any[]): any
+                    }
                     interface GUIInitializedListener extends java.util.EventListener {
                         guiInitialized(): void
                     }
@@ -161,6 +257,43 @@ declare namespace com {
                         static access$1100(): java.awt.event.ContainerListener
                         static access$1200(): java.awt.event.FocusListener
                     }
+                    class AWTEventMonitor$AWTEventsListener implements com.sun.java.accessibility.util.TopLevelWindowListener , java.awt.event.ActionListener , java.awt.event.AdjustmentListener , java.awt.event.ComponentListener , java.awt.event.ContainerListener , java.awt.event.FocusListener , java.awt.event.ItemListener , java.awt.event.KeyListener , java.awt.event.MouseListener , java.awt.event.MouseMotionListener , java.awt.event.TextListener , java.awt.event.WindowListener , javax.swing.event.ChangeListener {
+                        public constructor()
+                        installListeners<T>(...args: any[]): any
+                        public stateChanged(arg0: javax.swing.event.ChangeEvent): void
+                        removeListeners<T>(...args: any[]): any
+                        public topLevelWindowCreated(arg0: java.awt.Window): void
+                        public topLevelWindowDestroyed(arg0: java.awt.Window): void
+                        public actionPerformed(arg0: java.awt.event.ActionEvent): void
+                        public adjustmentValueChanged(arg0: java.awt.event.AdjustmentEvent): void
+                        public componentHidden(arg0: java.awt.event.ComponentEvent): void
+                        public componentMoved(arg0: java.awt.event.ComponentEvent): void
+                        public componentResized(arg0: java.awt.event.ComponentEvent): void
+                        public componentShown(arg0: java.awt.event.ComponentEvent): void
+                        public componentAdded(arg0: java.awt.event.ContainerEvent): void
+                        public componentRemoved(arg0: java.awt.event.ContainerEvent): void
+                        public focusGained(arg0: java.awt.event.FocusEvent): void
+                        public focusLost(arg0: java.awt.event.FocusEvent): void
+                        public itemStateChanged(arg0: java.awt.event.ItemEvent): void
+                        public keyPressed(arg0: java.awt.event.KeyEvent): void
+                        public keyReleased(arg0: java.awt.event.KeyEvent): void
+                        public keyTyped(arg0: java.awt.event.KeyEvent): void
+                        public mouseClicked(arg0: java.awt.event.MouseEvent): void
+                        public mouseEntered(arg0: java.awt.event.MouseEvent): void
+                        public mouseExited(arg0: java.awt.event.MouseEvent): void
+                        public mousePressed(arg0: java.awt.event.MouseEvent): void
+                        public mouseReleased(arg0: java.awt.event.MouseEvent): void
+                        public mouseDragged(arg0: java.awt.event.MouseEvent): void
+                        public mouseMoved(arg0: java.awt.event.MouseEvent): void
+                        public textValueChanged(arg0: java.awt.event.TextEvent): void
+                        public windowOpened(arg0: java.awt.event.WindowEvent): void
+                        public windowClosing(arg0: java.awt.event.WindowEvent): void
+                        public windowClosed(arg0: java.awt.event.WindowEvent): void
+                        public windowIconified(arg0: java.awt.event.WindowEvent): void
+                        public windowDeiconified(arg0: java.awt.event.WindowEvent): void
+                        public windowActivated(arg0: java.awt.event.WindowEvent): void
+                        public windowDeactivated(arg0: java.awt.event.WindowEvent): void
+                    }
                     class SwingEventMonitor extends com.sun.java.accessibility.util.AWTEventMonitor {
                         protected static listenerList: javax.swing.event.EventListenerList
                         protected static swingListener: com.sun.java.accessibility.util.SwingEventMonitor$SwingEventListener
@@ -202,6 +335,55 @@ declare namespace com {
                         public static addVetoableChangeListener(arg0: java.beans.VetoableChangeListener): void
                         public static removeVetoableChangeListener(arg0: java.beans.VetoableChangeListener): void
                     }
+                    class SwingEventMonitor$SwingEventListener extends com.sun.java.accessibility.util.AWTEventMonitor$AWTEventsListener implements javax.swing.event.AncestorListener , javax.swing.event.CaretListener , javax.swing.event.CellEditorListener , javax.swing.event.ChangeListener , javax.swing.event.DocumentListener , javax.swing.event.ListDataListener , javax.swing.event.ListSelectionListener , javax.swing.event.MenuListener , javax.swing.event.PopupMenuListener , javax.swing.event.TableColumnModelListener , javax.swing.event.TableModelListener , javax.swing.event.TreeExpansionListener , javax.swing.event.TreeModelListener , javax.swing.event.TreeSelectionListener , javax.swing.event.UndoableEditListener , javax.swing.event.InternalFrameListener , java.beans.PropertyChangeListener , java.beans.VetoableChangeListener {
+                        public constructor()
+                        installListeners<T>(...args: any[]): any
+                        removeListeners<T>(...args: any[]): any
+                        public componentAdded(arg0: java.awt.event.ContainerEvent): void
+                        public componentRemoved(arg0: java.awt.event.ContainerEvent): void
+                        public ancestorAdded(arg0: javax.swing.event.AncestorEvent): void
+                        public ancestorRemoved(arg0: javax.swing.event.AncestorEvent): void
+                        public ancestorMoved(arg0: javax.swing.event.AncestorEvent): void
+                        public caretUpdate(arg0: javax.swing.event.CaretEvent): void
+                        public editingStopped(arg0: javax.swing.event.ChangeEvent): void
+                        public editingCanceled(arg0: javax.swing.event.ChangeEvent): void
+                        public stateChanged(arg0: javax.swing.event.ChangeEvent): void
+                        public columnAdded(arg0: javax.swing.event.TableColumnModelEvent): void
+                        public columnMarginChanged(arg0: javax.swing.event.ChangeEvent): void
+                        public columnMoved(arg0: javax.swing.event.TableColumnModelEvent): void
+                        public columnRemoved(arg0: javax.swing.event.TableColumnModelEvent): void
+                        public columnSelectionChanged(arg0: javax.swing.event.ListSelectionEvent): void
+                        public changedUpdate(arg0: javax.swing.event.DocumentEvent): void
+                        public insertUpdate(arg0: javax.swing.event.DocumentEvent): void
+                        public removeUpdate(arg0: javax.swing.event.DocumentEvent): void
+                        public contentsChanged(arg0: javax.swing.event.ListDataEvent): void
+                        public intervalAdded(arg0: javax.swing.event.ListDataEvent): void
+                        public intervalRemoved(arg0: javax.swing.event.ListDataEvent): void
+                        valueChanged<T>(...args: any[]): any
+                        public menuCanceled(arg0: javax.swing.event.MenuEvent): void
+                        public menuDeselected(arg0: javax.swing.event.MenuEvent): void
+                        public menuSelected(arg0: javax.swing.event.MenuEvent): void
+                        public popupMenuWillBecomeVisible(arg0: javax.swing.event.PopupMenuEvent): void
+                        public popupMenuWillBecomeInvisible(arg0: javax.swing.event.PopupMenuEvent): void
+                        public popupMenuCanceled(arg0: javax.swing.event.PopupMenuEvent): void
+                        public tableChanged(arg0: javax.swing.event.TableModelEvent): void
+                        public treeCollapsed(arg0: javax.swing.event.TreeExpansionEvent): void
+                        public treeExpanded(arg0: javax.swing.event.TreeExpansionEvent): void
+                        public treeNodesChanged(arg0: javax.swing.event.TreeModelEvent): void
+                        public treeNodesInserted(arg0: javax.swing.event.TreeModelEvent): void
+                        public treeNodesRemoved(arg0: javax.swing.event.TreeModelEvent): void
+                        public treeStructureChanged(arg0: javax.swing.event.TreeModelEvent): void
+                        public undoableEditHappened(arg0: javax.swing.event.UndoableEditEvent): void
+                        public internalFrameOpened(arg0: javax.swing.event.InternalFrameEvent): void
+                        public internalFrameActivated(arg0: javax.swing.event.InternalFrameEvent): void
+                        public internalFrameDeactivated(arg0: javax.swing.event.InternalFrameEvent): void
+                        public internalFrameIconified(arg0: javax.swing.event.InternalFrameEvent): void
+                        public internalFrameDeiconified(arg0: javax.swing.event.InternalFrameEvent): void
+                        public internalFrameClosing(arg0: javax.swing.event.InternalFrameEvent): void
+                        public internalFrameClosed(arg0: javax.swing.event.InternalFrameEvent): void
+                        public propertyChange(arg0: java.beans.PropertyChangeEvent): void
+                        public vetoableChange(arg0: java.beans.PropertyChangeEvent): void
+                    }
                     interface TopLevelWindowListener extends java.util.EventListener {
                         topLevelWindowCreated(arg0: java.awt.Window): void
                         topLevelWindowDestroyed(arg0: java.awt.Window): void
@@ -214,90 +396,6 @@ declare namespace com {
                         public static remove(arg0: com.sun.java.accessibility.util.TopLevelWindowListener, arg1: com.sun.java.accessibility.util.TopLevelWindowListener): com.sun.java.accessibility.util.TopLevelWindowListener
                         protected static addInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener
                         protected static removeInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener
-                    }
-                    class Translator extends javax.accessibility.AccessibleContext implements javax.accessibility.Accessible , javax.accessibility.AccessibleComponent {
-                        protected source: java.lang.Object
-                        protected static getTranslatorClass(arg0: java.lang.Class): java.lang.Class
-                        public static getAccessible(arg0: java.lang.Object): javax.accessibility.Accessible
-                        constructor(...args: any[])
-                        public getSource(): java.lang.Object
-                        public setSource(arg0: java.lang.Object): void
-                        public equals(arg0: java.lang.Object): boolean
-                        public getAccessibleContext(): javax.accessibility.AccessibleContext
-                        public getAccessibleName(): java.lang.String
-                        public setAccessibleName(arg0: java.lang.String): void
-                        public getAccessibleDescription(): java.lang.String
-                        public setAccessibleDescription(arg0: java.lang.String): void
-                        public getAccessibleRole(): javax.accessibility.AccessibleRole
-                        public getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
-                        public getAccessibleParent(): javax.accessibility.Accessible
-                        public getAccessibleIndexInParent(): int
-                        public getAccessibleChildrenCount(): int
-                        public getAccessibleChild(arg0: int): javax.accessibility.Accessible
-                        public getLocale(): java.util.Locale
-                        public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-                        public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-                        public getBackground(): java.awt.Color
-                        public setBackground(arg0: java.awt.Color): void
-                        public getForeground(): java.awt.Color
-                        public setForeground(arg0: java.awt.Color): void
-                        public getCursor(): java.awt.Cursor
-                        public setCursor(arg0: java.awt.Cursor): void
-                        public getFont(): java.awt.Font
-                        public setFont(arg0: java.awt.Font): void
-                        public getFontMetrics(arg0: java.awt.Font): java.awt.FontMetrics
-                        public isEnabled(): boolean
-                        public setEnabled(arg0: boolean): void
-                        public isVisible(): boolean
-                        public setVisible(arg0: boolean): void
-                        public isShowing(): boolean
-                        public contains(arg0: java.awt.Point): boolean
-                        public getLocationOnScreen(): java.awt.Point
-                        public getLocation(): java.awt.Point
-                        public setLocation(arg0: java.awt.Point): void
-                        public getBounds(): java.awt.Rectangle
-                        public setBounds(arg0: java.awt.Rectangle): void
-                        public getSize(): java.awt.Dimension
-                        public setSize(arg0: java.awt.Dimension): void
-                        public getAccessibleAt(arg0: java.awt.Point): javax.accessibility.Accessible
-                        public isFocusTraversable(): boolean
-                        public requestFocus(): void
-                        public addFocusListener(arg0: java.awt.event.FocusListener): void
-                        public removeFocusListener(arg0: java.awt.event.FocusListener): void
-                    }
-                    namespace java {
-                        namespace awt {
-                            class ButtonTranslator extends com.sun.java.accessibility.util.Translator {
-                                public constructor()
-                                public getAccessibleName(): java.lang.String
-                                public setAccessibleName(arg0: java.lang.String): void
-                                public getAccessibleRole(): javax.accessibility.AccessibleRole
-                            }
-                            class CheckboxTranslator extends com.sun.java.accessibility.util.Translator {
-                                public constructor()
-                                public getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
-                                public getAccessibleName(): java.lang.String
-                                public setAccessibleName(arg0: java.lang.String): void
-                                public getAccessibleRole(): javax.accessibility.AccessibleRole
-                            }
-                            class LabelTranslator extends com.sun.java.accessibility.util.Translator {
-                                public constructor()
-                                public getAccessibleName(): java.lang.String
-                                public setAccessibleName(arg0: java.lang.String): void
-                                public getAccessibleRole(): javax.accessibility.AccessibleRole
-                            }
-                            class ListTranslator extends com.sun.java.accessibility.util.Translator {
-                                public constructor()
-                                public getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
-                                public getAccessibleRole(): javax.accessibility.AccessibleRole
-                            }
-                            class TextComponentTranslator extends com.sun.java.accessibility.util.Translator {
-                                public constructor()
-                                public getAccessibleRole(): javax.accessibility.AccessibleRole
-                            }
-                            
-                        }
-                        
                     }
                     
                 }

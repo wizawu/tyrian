@@ -84,7 +84,7 @@ export default function (instdir: string) {
         [".gitignore", _GITIGNORE],
         ["src/assets/todo.txt", ""],
         ["src/assets/img/blank.jpg", ""],
-        ["src/css/index.less", "body { dislpay: flex }"],
+        ["src/css/index.less", "body { display: flex }"],
         ["src/html/index.html", "<!DOCTYPE html>"],
         ["src/js/entry/index.tsx", `import "../../css/index.less"`],
         ["src/js/entry/main.j.ts", `org.pmw.tinylog.Logger.info(java.lang.System.getProperty("java.version"))`],

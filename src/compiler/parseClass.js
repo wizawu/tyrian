@@ -19,8 +19,17 @@ var UNSUPPORTED_MODIFIERS = [
     "transient",
     "volatile",
 ];
+var UNSUPPORTED_PACKAGES = [
+    "com.sun.xml.bind.v2",
+    "com.sun.xml.internal.bind.v2",
+    "com.sun.xml.internal.ws",
+];
 function safeType(type) {
-    return type.indexOf("java.util.function") === 0 ? "any" : type;
+    if (/java\.util\.function/.test(type))
+        return "any";
+    if (/>\.\w+$/.test(type))
+        return "any";
+    return type;
 }
 function nextToken(ctx) {
     var skip = 0;
@@ -207,7 +216,7 @@ function default_1(source, pkg) {
     var buffer = [];
     var memberMap = {};
     var ignore = false;
-    for (var i = 0; i < ctx.stack.length; i++) {
+    var _loop_1 = function (i) {
         var item = ctx.stack[i];
         switch (item.type) {
             case "BEGIN":
@@ -216,7 +225,9 @@ function default_1(source, pkg) {
                 ignore = false;
                 if (item.name.indexOf("-") >= 0)
                     ignore = true;
-                if (item.name.indexOf("$") >= 0)
+                if (item.name.indexOf("java.util.") === 0 && item.name.indexOf("$") > 0)
+                    ignore = true;
+                if (UNSUPPORTED_PACKAGES.some(function (pkg) { return item.name.indexOf(pkg) >= 0; }))
                     ignore = true;
                 if (!ignore)
                     buffer.push(item.line);
@@ -256,12 +267,15 @@ function default_1(source, pkg) {
                 var className = item.name.replace(/^(\w+\.)+/, "");
                 var ns = item.name.substring(0, item.name.length - className.length - 1);
                 object_path_1.ensureExists(pkg, ns, {});
-                object_path_1.get(pkg, ns)[className] = buffer.join("\n").replace(/>\.\w+/g, ">");
+                object_path_1.get(pkg, ns)[className] = buffer.join("\n");
                 break;
             default:
                 console.error(JSON.stringify(item));
                 process.exit(const_1.EXIT_STATUS.PARSE_CLASS_ERROR);
         }
+    };
+    for (var i = 0; i < ctx.stack.length; i++) {
+        _loop_1(i);
     }
     return buffer.join("\n");
 }

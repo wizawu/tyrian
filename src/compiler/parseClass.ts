@@ -13,8 +13,16 @@ const UNSUPPORTED_MODIFIERS = [
     "volatile",
 ]
 
+const UNSUPPORTED_PACKAGES = [
+    "com.sun.xml.bind.v2",
+    "com.sun.xml.internal.bind.v2",
+    "com.sun.xml.internal.ws",
+]
+
 function safeType(type: string): string {
-    return type.indexOf("java.util.function") === 0 ? "any" : type
+    if (/java\.util\.function/.test(type)) return "any"
+    if (/>\.\w+$/.test(type)) return "any"
+    return type
 }
 
 function nextToken(ctx: Context): Token {
@@ -206,7 +214,8 @@ export default function (source: string, pkg: any) {
                 memberMap = {}
                 ignore = false
                 if (item.name.indexOf("-") >= 0) ignore = true
-                if (item.name.indexOf("$") >= 0) ignore = true
+                if (item.name.indexOf("java.util.") === 0 && item.name.indexOf("$") > 0) ignore = true
+                if (UNSUPPORTED_PACKAGES.some(pkg => item.name.indexOf(pkg) >= 0)) ignore= true
                 if (!ignore) buffer.push(item.line as never)
                 break
             case "CONSTR":
@@ -237,7 +246,7 @@ export default function (source: string, pkg: any) {
                 let className = item.name.replace(/^(\w+\.)+/, "")
                 let ns = item.name.substring(0, item.name.length - className.length - 1)
                 ensureExists(pkg, ns, {})
-                get(pkg, ns)[className] = buffer.join("\n").replace(/>\.\w+/g, ">")
+                get(pkg, ns)[className] = buffer.join("\n")
                 break
             default:
                 console.error(JSON.stringify(item))

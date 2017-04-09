@@ -110,10 +110,6 @@ declare namespace com {
                         public static getTopLevelWindows(): java.awt.Window[]
                         public static getTopLevelWindowWithFocus(): java.awt.Window
                     }
-                    class EventQueueMonitor$1 implements java.security.PrivilegedAction {
-                        constructor()
-                        public run(): java.lang.Object
-                    }
                     class Translator extends javax.accessibility.AccessibleContext implements javax.accessibility.Accessible , javax.accessibility.AccessibleComponent {
                         protected source: java.lang.Object
                         protected static getTranslatorClass(arg0: java.lang.Class): java.lang.Class
@@ -174,14 +170,6 @@ declare namespace com {
                         public constructor()
                         public static addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
                         public static removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-                    }
-                    class AccessibilityEventMonitor$AccessibilityEventListener implements com.sun.java.accessibility.util.TopLevelWindowListener , java.beans.PropertyChangeListener {
-                        public constructor()
-                        installListeners<T>(...args: any[]): any
-                        removeListeners<T>(...args: any[]): any
-                        public topLevelWindowCreated(arg0: java.awt.Window): void
-                        public topLevelWindowDestroyed(arg0: java.awt.Window): void
-                        public propertyChange(arg0: java.beans.PropertyChangeEvent): void
                     }
                     class AccessibilityListenerList {
                         protected listenerList: java.lang.Object[]
@@ -257,43 +245,6 @@ declare namespace com {
                         static access$1100(): java.awt.event.ContainerListener
                         static access$1200(): java.awt.event.FocusListener
                     }
-                    class AWTEventMonitor$AWTEventsListener implements com.sun.java.accessibility.util.TopLevelWindowListener , java.awt.event.ActionListener , java.awt.event.AdjustmentListener , java.awt.event.ComponentListener , java.awt.event.ContainerListener , java.awt.event.FocusListener , java.awt.event.ItemListener , java.awt.event.KeyListener , java.awt.event.MouseListener , java.awt.event.MouseMotionListener , java.awt.event.TextListener , java.awt.event.WindowListener , javax.swing.event.ChangeListener {
-                        public constructor()
-                        installListeners<T>(...args: any[]): any
-                        public stateChanged(arg0: javax.swing.event.ChangeEvent): void
-                        removeListeners<T>(...args: any[]): any
-                        public topLevelWindowCreated(arg0: java.awt.Window): void
-                        public topLevelWindowDestroyed(arg0: java.awt.Window): void
-                        public actionPerformed(arg0: java.awt.event.ActionEvent): void
-                        public adjustmentValueChanged(arg0: java.awt.event.AdjustmentEvent): void
-                        public componentHidden(arg0: java.awt.event.ComponentEvent): void
-                        public componentMoved(arg0: java.awt.event.ComponentEvent): void
-                        public componentResized(arg0: java.awt.event.ComponentEvent): void
-                        public componentShown(arg0: java.awt.event.ComponentEvent): void
-                        public componentAdded(arg0: java.awt.event.ContainerEvent): void
-                        public componentRemoved(arg0: java.awt.event.ContainerEvent): void
-                        public focusGained(arg0: java.awt.event.FocusEvent): void
-                        public focusLost(arg0: java.awt.event.FocusEvent): void
-                        public itemStateChanged(arg0: java.awt.event.ItemEvent): void
-                        public keyPressed(arg0: java.awt.event.KeyEvent): void
-                        public keyReleased(arg0: java.awt.event.KeyEvent): void
-                        public keyTyped(arg0: java.awt.event.KeyEvent): void
-                        public mouseClicked(arg0: java.awt.event.MouseEvent): void
-                        public mouseEntered(arg0: java.awt.event.MouseEvent): void
-                        public mouseExited(arg0: java.awt.event.MouseEvent): void
-                        public mousePressed(arg0: java.awt.event.MouseEvent): void
-                        public mouseReleased(arg0: java.awt.event.MouseEvent): void
-                        public mouseDragged(arg0: java.awt.event.MouseEvent): void
-                        public mouseMoved(arg0: java.awt.event.MouseEvent): void
-                        public textValueChanged(arg0: java.awt.event.TextEvent): void
-                        public windowOpened(arg0: java.awt.event.WindowEvent): void
-                        public windowClosing(arg0: java.awt.event.WindowEvent): void
-                        public windowClosed(arg0: java.awt.event.WindowEvent): void
-                        public windowIconified(arg0: java.awt.event.WindowEvent): void
-                        public windowDeiconified(arg0: java.awt.event.WindowEvent): void
-                        public windowActivated(arg0: java.awt.event.WindowEvent): void
-                        public windowDeactivated(arg0: java.awt.event.WindowEvent): void
-                    }
                     class SwingEventMonitor extends com.sun.java.accessibility.util.AWTEventMonitor {
                         protected static listenerList: javax.swing.event.EventListenerList
                         protected static swingListener: com.sun.java.accessibility.util.SwingEventMonitor$SwingEventListener
@@ -334,55 +285,6 @@ declare namespace com {
                         public static removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
                         public static addVetoableChangeListener(arg0: java.beans.VetoableChangeListener): void
                         public static removeVetoableChangeListener(arg0: java.beans.VetoableChangeListener): void
-                    }
-                    class SwingEventMonitor$SwingEventListener extends com.sun.java.accessibility.util.AWTEventMonitor$AWTEventsListener implements javax.swing.event.AncestorListener , javax.swing.event.CaretListener , javax.swing.event.CellEditorListener , javax.swing.event.ChangeListener , javax.swing.event.DocumentListener , javax.swing.event.ListDataListener , javax.swing.event.ListSelectionListener , javax.swing.event.MenuListener , javax.swing.event.PopupMenuListener , javax.swing.event.TableColumnModelListener , javax.swing.event.TableModelListener , javax.swing.event.TreeExpansionListener , javax.swing.event.TreeModelListener , javax.swing.event.TreeSelectionListener , javax.swing.event.UndoableEditListener , javax.swing.event.InternalFrameListener , java.beans.PropertyChangeListener , java.beans.VetoableChangeListener {
-                        public constructor()
-                        installListeners<T>(...args: any[]): any
-                        removeListeners<T>(...args: any[]): any
-                        public componentAdded(arg0: java.awt.event.ContainerEvent): void
-                        public componentRemoved(arg0: java.awt.event.ContainerEvent): void
-                        public ancestorAdded(arg0: javax.swing.event.AncestorEvent): void
-                        public ancestorRemoved(arg0: javax.swing.event.AncestorEvent): void
-                        public ancestorMoved(arg0: javax.swing.event.AncestorEvent): void
-                        public caretUpdate(arg0: javax.swing.event.CaretEvent): void
-                        public editingStopped(arg0: javax.swing.event.ChangeEvent): void
-                        public editingCanceled(arg0: javax.swing.event.ChangeEvent): void
-                        public stateChanged(arg0: javax.swing.event.ChangeEvent): void
-                        public columnAdded(arg0: javax.swing.event.TableColumnModelEvent): void
-                        public columnMarginChanged(arg0: javax.swing.event.ChangeEvent): void
-                        public columnMoved(arg0: javax.swing.event.TableColumnModelEvent): void
-                        public columnRemoved(arg0: javax.swing.event.TableColumnModelEvent): void
-                        public columnSelectionChanged(arg0: javax.swing.event.ListSelectionEvent): void
-                        public changedUpdate(arg0: javax.swing.event.DocumentEvent): void
-                        public insertUpdate(arg0: javax.swing.event.DocumentEvent): void
-                        public removeUpdate(arg0: javax.swing.event.DocumentEvent): void
-                        public contentsChanged(arg0: javax.swing.event.ListDataEvent): void
-                        public intervalAdded(arg0: javax.swing.event.ListDataEvent): void
-                        public intervalRemoved(arg0: javax.swing.event.ListDataEvent): void
-                        valueChanged<T>(...args: any[]): any
-                        public menuCanceled(arg0: javax.swing.event.MenuEvent): void
-                        public menuDeselected(arg0: javax.swing.event.MenuEvent): void
-                        public menuSelected(arg0: javax.swing.event.MenuEvent): void
-                        public popupMenuWillBecomeVisible(arg0: javax.swing.event.PopupMenuEvent): void
-                        public popupMenuWillBecomeInvisible(arg0: javax.swing.event.PopupMenuEvent): void
-                        public popupMenuCanceled(arg0: javax.swing.event.PopupMenuEvent): void
-                        public tableChanged(arg0: javax.swing.event.TableModelEvent): void
-                        public treeCollapsed(arg0: javax.swing.event.TreeExpansionEvent): void
-                        public treeExpanded(arg0: javax.swing.event.TreeExpansionEvent): void
-                        public treeNodesChanged(arg0: javax.swing.event.TreeModelEvent): void
-                        public treeNodesInserted(arg0: javax.swing.event.TreeModelEvent): void
-                        public treeNodesRemoved(arg0: javax.swing.event.TreeModelEvent): void
-                        public treeStructureChanged(arg0: javax.swing.event.TreeModelEvent): void
-                        public undoableEditHappened(arg0: javax.swing.event.UndoableEditEvent): void
-                        public internalFrameOpened(arg0: javax.swing.event.InternalFrameEvent): void
-                        public internalFrameActivated(arg0: javax.swing.event.InternalFrameEvent): void
-                        public internalFrameDeactivated(arg0: javax.swing.event.InternalFrameEvent): void
-                        public internalFrameIconified(arg0: javax.swing.event.InternalFrameEvent): void
-                        public internalFrameDeiconified(arg0: javax.swing.event.InternalFrameEvent): void
-                        public internalFrameClosing(arg0: javax.swing.event.InternalFrameEvent): void
-                        public internalFrameClosed(arg0: javax.swing.event.InternalFrameEvent): void
-                        public propertyChange(arg0: java.beans.PropertyChangeEvent): void
-                        public vetoableChange(arg0: java.beans.PropertyChangeEvent): void
                     }
                     interface TopLevelWindowListener extends java.util.EventListener {
                         topLevelWindowCreated(arg0: java.awt.Window): void

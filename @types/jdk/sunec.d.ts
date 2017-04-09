@@ -4,10 +4,6 @@ declare namespace sun {
             class SunEC extends java.security.Provider {
                 public constructor()
             }
-            class SunEC$1 implements java.security.PrivilegedAction<java.lang.Void> {
-                constructor()
-                run<T>(...args: any[]): any
-            }
             class SunECEntries {
                 static putEntries(arg0: java.util.Map<java.lang.Object, java.lang.Object>, arg1: boolean): void
             }
@@ -79,27 +75,6 @@ declare namespace sun {
                 protected engineVerify(arg0: byte[]): boolean
                 protected engineSetParameter(arg0: java.lang.String, arg1: java.lang.Object): void
                 protected engineGetParameter(arg0: java.lang.String): java.lang.Object
-            }
-            class ECDSASignature$SHA512 extends sun.security.ec.ECDSASignature {
-                public constructor()
-            }
-            class ECDSASignature$SHA384 extends sun.security.ec.ECDSASignature {
-                public constructor()
-            }
-            class ECDSASignature$SHA256 extends sun.security.ec.ECDSASignature {
-                public constructor()
-            }
-            class ECDSASignature$SHA224 extends sun.security.ec.ECDSASignature {
-                public constructor()
-            }
-            class ECDSASignature$SHA1 extends sun.security.ec.ECDSASignature {
-                public constructor()
-            }
-            class ECDSASignature$Raw extends sun.security.ec.ECDSASignature {
-                public constructor()
-                engineUpdate<T>(...args: any[]): any
-                protected resetDigest(): void
-                protected getDigestValue(): byte[]
             }
             
         }

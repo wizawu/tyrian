@@ -1,6 +1,6 @@
 {
   "name": "1c",
-  "version": "6.5.1",
+  "version": "6.5.2",
   "bin": "./bin/1c",
   "scripts": {
     "build": "tsc --noUnusedLocals --removeComments --strictNullChecks src/main.ts"

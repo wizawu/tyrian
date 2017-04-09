@@ -382,7 +382,7 @@ declare namespace sun {
                 public chooseEngineServerAlias(arg0: java.lang.String, arg1: java.security.Principal[], arg2: javax.net.ssl.SSLEngine): java.lang.String
                 public getClientAliases(arg0: java.lang.String, arg1: java.security.Principal[]): java.lang.String[]
                 public getServerAliases(arg0: java.lang.String, arg1: java.security.Principal[]): java.lang.String[]
-                public getAliases(arg0: java.lang.String, arg1: java.security.Principal[], arg2: sun.security.ssl.X509KeyManagerImpl$CheckType, arg3: java.security.AlgorithmConstraints): java.lang.String[]
+                public getAliases(arg0: java.lang.String, arg1: java.security.Principal[], arg2: any, arg3: java.security.AlgorithmConstraints): java.lang.String[]
                 static access$100(): boolean
                 static access$200(): sun.security.ssl.Debug
             }
@@ -592,7 +592,7 @@ declare namespace sun {
                 svr_random: sun.security.ssl.RandomCookie
                 session: sun.security.ssl.SSLSessionImpl
                 cipherSuite: sun.security.ssl.CipherSuite
-                keyExchange: sun.security.ssl.CipherSuite$KeyExchange
+                keyExchange: any
                 resumingSession: boolean
                 enableNewSession: boolean
                 preferLocalCipherSuites: boolean
@@ -647,16 +647,16 @@ declare namespace sun {
                 getKickstartMessage(): sun.security.ssl.HandshakeMessage
                 processMessage(arg0: byte, arg1: int): void
                 handshakeAlert(arg0: byte): void
-                sendChangeCipherSpec(arg0: sun.security.ssl.HandshakeMessage$Finished, arg1: boolean): void
+                sendChangeCipherSpec(arg0: any, arg1: boolean): void
                 calculateKeys(arg0: javax.crypto.SecretKey, arg1: sun.security.ssl.ProtocolVersion): void
                 calculateConnectionKeys(arg0: javax.crypto.SecretKey): void
                 sessionKeysCalculated(): boolean
                 static throwSSLException(arg0: java.lang.String, arg1: java.lang.Throwable): void
-                getTask(): sun.security.ssl.Handshaker$DelegatedTask<any>
+                getTask(): any
                 taskOutstanding(): boolean
                 checkThrown(): void
                 static access$002(arg0: sun.security.ssl.Handshaker, arg1: java.lang.Exception): java.lang.Exception
-                static access$102(arg0: sun.security.ssl.Handshaker, arg1: sun.security.ssl.Handshaker$DelegatedTask): sun.security.ssl.Handshaker$DelegatedTask
+                static access$102(arg0: sun.security.ssl.Handshaker, arg1: any): any
                 static access$202(arg0: sun.security.ssl.Handshaker, arg1: boolean): boolean
             }
             abstract class HandshakeMessage {
@@ -719,7 +719,7 @@ declare namespace sun {
             }
             class MAC extends sun.security.ssl.Authenticator {
                 static NULL: sun.security.ssl.MAC
-                constructor(arg0: sun.security.ssl.CipherSuite$MacAlg, arg1: sun.security.ssl.ProtocolVersion, arg2: javax.crypto.SecretKey)
+                constructor(arg0: any, arg1: sun.security.ssl.ProtocolVersion, arg2: javax.crypto.SecretKey)
                 MAClen(): int
                 hashBlockLen(): int
                 minimalPaddingLen(): int
@@ -727,7 +727,7 @@ declare namespace sun {
             }
             class CipherBox {
                 static NULL: sun.security.ssl.CipherBox
-                static newCipherBox(arg0: sun.security.ssl.ProtocolVersion, arg1: sun.security.ssl.CipherSuite$BulkCipher, arg2: javax.crypto.SecretKey, arg3: javax.crypto.spec.IvParameterSpec, arg4: java.security.SecureRandom, arg5: boolean): sun.security.ssl.CipherBox
+                static newCipherBox(arg0: sun.security.ssl.ProtocolVersion, arg1: any, arg2: javax.crypto.SecretKey, arg3: javax.crypto.spec.IvParameterSpec, arg4: java.security.SecureRandom, arg5: boolean): sun.security.ssl.CipherBox
                 encrypt<T>(...args: any[]): any
                 decrypt<T>(...args: any[]): any
                 dispose(): void
@@ -746,31 +746,31 @@ declare namespace sun {
                 name: java.lang.String
                 id: int
                 priority: int
-                keyExchange: sun.security.ssl.CipherSuite$KeyExchange
-                cipher: sun.security.ssl.CipherSuite$BulkCipher
-                macAlg: sun.security.ssl.CipherSuite$MacAlg
-                prfAlg: sun.security.ssl.CipherSuite$PRF
+                keyExchange: any
+                cipher: any
+                macAlg: any
+                prfAlg: any
                 exportable: boolean
                 allowed: boolean
                 obsoleted: int
                 supported: int
-                static B_NULL: sun.security.ssl.CipherSuite$BulkCipher
-                static B_RC4_40: sun.security.ssl.CipherSuite$BulkCipher
-                static B_RC2_40: sun.security.ssl.CipherSuite$BulkCipher
-                static B_DES_40: sun.security.ssl.CipherSuite$BulkCipher
-                static B_RC4_128: sun.security.ssl.CipherSuite$BulkCipher
-                static B_DES: sun.security.ssl.CipherSuite$BulkCipher
-                static B_3DES: sun.security.ssl.CipherSuite$BulkCipher
-                static B_IDEA: sun.security.ssl.CipherSuite$BulkCipher
-                static B_AES_128: sun.security.ssl.CipherSuite$BulkCipher
-                static B_AES_256: sun.security.ssl.CipherSuite$BulkCipher
-                static B_AES_128_GCM: sun.security.ssl.CipherSuite$BulkCipher
-                static B_AES_256_GCM: sun.security.ssl.CipherSuite$BulkCipher
-                static M_NULL: sun.security.ssl.CipherSuite$MacAlg
-                static M_MD5: sun.security.ssl.CipherSuite$MacAlg
-                static M_SHA: sun.security.ssl.CipherSuite$MacAlg
-                static M_SHA256: sun.security.ssl.CipherSuite$MacAlg
-                static M_SHA384: sun.security.ssl.CipherSuite$MacAlg
+                static B_NULL: any
+                static B_RC4_40: any
+                static B_RC2_40: any
+                static B_DES_40: any
+                static B_RC4_128: any
+                static B_DES: any
+                static B_3DES: any
+                static B_IDEA: any
+                static B_AES_128: any
+                static B_AES_256: any
+                static B_AES_128_GCM: any
+                static B_AES_256_GCM: any
+                static M_NULL: any
+                static M_MD5: any
+                static M_SHA: any
+                static M_SHA256: any
+                static M_SHA384: any
                 static C_NULL: sun.security.ssl.CipherSuite
                 static C_SCSV: sun.security.ssl.CipherSuite
                 isAvailable(): boolean
@@ -886,7 +886,7 @@ declare namespace sun {
                 static $assertionsDisabled: boolean
                 constructor(...args: any[])
                 getAcc(): java.security.AccessControlContext
-                public getHandshakeStatus(): javax.net.ssl.SSLEngineResult$HandshakeStatus
+                public getHandshakeStatus(): any
                 changeWriteCiphers(): void
                 setVersion(arg0: sun.security.ssl.ProtocolVersion): void
                 public beginHandshake(): void

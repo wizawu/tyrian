@@ -166,7 +166,7 @@ declare namespace com {
                     }
                     class AccessibilityEventMonitor {
                         protected static listenerList: com.sun.java.accessibility.util.AccessibilityListenerList
-                        protected static accessibilityListener: com.sun.java.accessibility.util.AccessibilityEventMonitor$AccessibilityEventListener
+                        protected static accessibilityListener: any
                         public constructor()
                         public static addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
                         public static removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
@@ -204,7 +204,7 @@ declare namespace com {
                         protected static adjustmentListener: java.awt.event.AdjustmentListener
                         protected static itemListener: java.awt.event.ItemListener
                         protected static textListener: java.awt.event.TextListener
-                        protected static awtListener: com.sun.java.accessibility.util.AWTEventMonitor$AWTEventsListener
+                        protected static awtListener: any
                         public constructor()
                         public static getComponentWithFocus(): java.awt.Component
                         public static addComponentListener(arg0: java.awt.event.ComponentListener): void
@@ -247,7 +247,7 @@ declare namespace com {
                     }
                     class SwingEventMonitor extends com.sun.java.accessibility.util.AWTEventMonitor {
                         protected static listenerList: javax.swing.event.EventListenerList
-                        protected static swingListener: com.sun.java.accessibility.util.SwingEventMonitor$SwingEventListener
+                        protected static swingListener: any
                         public constructor()
                         public static addAncestorListener(arg0: javax.swing.event.AncestorListener): void
                         public static removeAncestorListener(arg0: javax.swing.event.AncestorListener): void

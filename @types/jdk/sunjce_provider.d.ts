@@ -210,7 +210,7 @@ declare namespace com {
                     protected engineGenerateSecret(arg0: java.security.spec.KeySpec): javax.crypto.SecretKey
                     protected engineGetKeySpec(arg0: javax.crypto.SecretKey, arg1: java.lang.Class<any>): java.security.spec.KeySpec
                     protected engineTranslateKey(arg0: javax.crypto.SecretKey): javax.crypto.SecretKey
-                    constructor(arg0: java.lang.String, arg1: com.sun.crypto.provider.PBEKeyFactory$1)
+                    constructor(arg0: java.lang.String, arg1: any)
                 }
                 class DHParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()

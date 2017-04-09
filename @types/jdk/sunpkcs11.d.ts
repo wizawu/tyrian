@@ -234,9 +234,9 @@ declare namespace sun {
                 public engineGetCertificateAlias(arg0: java.security.cert.Certificate): java.lang.String
                 engineStore<T>(...args: any[]): any
                 engineLoad<T>(...args: any[]): any
-                public engineGetEntry(arg0: java.lang.String, arg1: java.security.KeyStore$ProtectionParameter): java.security.KeyStore$Entry
-                public engineSetEntry(arg0: java.lang.String, arg1: java.security.KeyStore$Entry, arg2: java.security.KeyStore$ProtectionParameter): void
-                public engineEntryInstanceOf(arg0: java.lang.String, arg1: java.lang.Class<java.security.KeyStore$Entry>): boolean
+                public engineGetEntry(arg0: java.lang.String, arg1: any): any
+                public engineSetEntry(arg0: java.lang.String, arg1: any, arg2: any): void
+                public engineEntryInstanceOf(arg0: java.lang.String, arg1: any): boolean
                 static access$000(): sun.security.pkcs11.wrapper.CK_ATTRIBUTE
                 static access$100(): sun.security.pkcs11.wrapper.CK_ATTRIBUTE
                 static access$200(): sun.security.pkcs11.wrapper.CK_ATTRIBUTE
@@ -350,7 +350,7 @@ declare namespace sun {
                 getNssLibraryDirectory(): java.lang.String
                 getNssSecmodDirectory(): java.lang.String
                 getNssModule(): java.lang.String
-                getNssDbMode(): sun.security.pkcs11.Secmod$DbMode
+                getNssDbMode(): any
                 public getNssNetscapeDbWorkaround(): boolean
                 getNssArgs(): java.lang.String
                 getNssUseSecmodTrust(): boolean
@@ -371,7 +371,7 @@ declare namespace sun {
                 config: sun.security.pkcs11.Config
                 slotID: long
                 removable: boolean
-                nssModule: sun.security.pkcs11.Secmod$Module
+                nssModule: any
                 nssUseSecmodTrust: boolean
                 getToken(): sun.security.pkcs11.Token
                 constructor(...args: any[])
@@ -382,10 +382,10 @@ declare namespace sun {
                 public logout(): void
                 public setCallbackHandler(arg0: javax.security.auth.callback.CallbackHandler): void
                 static access$100(arg0: sun.security.pkcs11.SunPKCS11, arg1: sun.security.pkcs11.wrapper.CK_SLOT_INFO): void
-                static access$400(arg0: sun.security.pkcs11.SunPKCS11, arg1: java.security.Provider$Service): void
-                static access$500(arg0: sun.security.pkcs11.SunPKCS11, arg1: java.security.Provider$Service): void
+                static access$400(arg0: sun.security.pkcs11.SunPKCS11, arg1: any): void
+                static access$500(arg0: sun.security.pkcs11.SunPKCS11, arg1: any): void
                 static access$600(arg0: java.lang.String[]): java.lang.String[]
-                static access$700(arg0: sun.security.pkcs11.SunPKCS11, arg1: java.security.Provider$Service): void
+                static access$700(arg0: sun.security.pkcs11.SunPKCS11, arg1: any): void
                 static access$800(arg0: sun.security.pkcs11.SunPKCS11): java.lang.String
             }
             class Secmod {
@@ -399,9 +399,9 @@ declare namespace sun {
                 getConfigDir(): java.lang.String
                 getLibDir(): java.lang.String
                 initialize<T>(...args: any[]): any
-                public getModules(): java.util.List<sun.security.pkcs11.Secmod$Module>
-                isTrusted(arg0: java.security.cert.X509Certificate, arg1: sun.security.pkcs11.Secmod$TrustType): boolean
-                public getModule(arg0: sun.security.pkcs11.Secmod$ModuleType): sun.security.pkcs11.Secmod$Module
+                public getModules(): any
+                isTrusted(arg0: java.security.cert.X509Certificate, arg1: any): boolean
+                public getModule(arg0: any): any
                 static access$000(arg0: java.security.cert.X509Certificate, arg1: java.lang.String): byte[]
                 static access$100(arg0: sun.security.pkcs11.SunPKCS11): java.util.Map
             }

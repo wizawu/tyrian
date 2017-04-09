@@ -173,7 +173,7 @@ declare namespace javax {
             static INSTANCE: javax.crypto.JceSecurityManager
             getCryptoPermission(arg0: java.lang.String): javax.crypto.CryptoPermission
             isCallerTrusted(): boolean
-            constructor(arg0: javax.crypto.JceSecurityManager$1)
+            constructor(arg0: any)
         }
         class CryptoPolicyParser {
             constructor()

@@ -1,10 +1,7 @@
 {
   "name": "1c",
-  "version": "6.5.2",
+  "version": "6.5.3",
   "bin": "./bin/1c",
-  "scripts": {
-    "build": "tsc --noUnusedLocals --removeComments --strictNullChecks src/main.ts"
-  },
   "dependencies": {
     "@types/chalk": "^0.4.31",
     "@types/node": "latest",

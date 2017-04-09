@@ -14,8 +14,12 @@ const UNSUPPORTED_MODIFIERS = [
 ]
 
 function safeType(type: string): string {
+    // java.util.function.*
     if (/java\.util\.function/.test(type)) return "any"
+    // XXX<T>.YYY
     if (/>\.\w+$/.test(type)) return "any"
+    // XXX$YYY
+    if (type.indexOf("$") >= 0) return "any"
     return type
 }
 

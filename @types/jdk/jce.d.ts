@@ -13,8 +13,8 @@ declare namespace sun {
                 class TlsKeyMaterialSpec implements java.security.spec.KeySpec , javax.crypto.SecretKey {
                     static serialVersionUID: long
                     constructor(...args: any[])
-                    public getAlgorithm(): java.lang.String
-                    public getFormat(): java.lang.String
+                    public getAlgorithm(): string
+                    public getFormat(): string
                     public getEncoded(): byte[]
                     public getClientMacKey(): javax.crypto.SecretKey
                     public getServerMacKey(): javax.crypto.SecretKey
@@ -24,18 +24,18 @@ declare namespace sun {
                     public getServerIv(): javax.crypto.spec.IvParameterSpec
                 }
                 class TlsKeyMaterialParameterSpec implements java.security.spec.AlgorithmParameterSpec {
-                    public constructor(arg0: javax.crypto.SecretKey, arg1: int, arg2: int, arg3: byte[], arg4: byte[], arg5: java.lang.String, arg6: int, arg7: int, arg8: int, arg9: int, arg10: java.lang.String, arg11: int, arg12: int)
+                    public constructor(arg0: javax.crypto.SecretKey, arg1: int, arg2: int, arg3: byte[], arg4: byte[], arg5: string, arg6: int, arg7: int, arg8: int, arg9: int, arg10: string, arg11: int, arg12: int)
                     public getMasterSecret(): javax.crypto.SecretKey
                     public getMajorVersion(): int
                     public getMinorVersion(): int
                     public getClientRandom(): byte[]
                     public getServerRandom(): byte[]
-                    public getCipherAlgorithm(): java.lang.String
+                    public getCipherAlgorithm(): string
                     public getCipherKeyLength(): int
                     public getExpandedCipherKeyLength(): int
                     public getIvLength(): int
                     public getMacKeyLength(): int
-                    public getPRFHashAlg(): java.lang.String
+                    public getPRFHashAlg(): string
                     public getPRFHashLength(): int
                     public getPRFBlockSize(): int
                 }
@@ -48,24 +48,24 @@ declare namespace sun {
                     public getEncodedSecret(): byte[]
                 }
                 class TlsMasterSecretParameterSpec implements java.security.spec.AlgorithmParameterSpec {
-                    public constructor(arg0: javax.crypto.SecretKey, arg1: int, arg2: int, arg3: byte[], arg4: byte[], arg5: java.lang.String, arg6: int, arg7: int)
+                    public constructor(arg0: javax.crypto.SecretKey, arg1: int, arg2: int, arg3: byte[], arg4: byte[], arg5: string, arg6: int, arg7: int)
                     static checkVersion(arg0: int): int
                     public getPremasterSecret(): javax.crypto.SecretKey
                     public getMajorVersion(): int
                     public getMinorVersion(): int
                     public getClientRandom(): byte[]
                     public getServerRandom(): byte[]
-                    public getPRFHashAlg(): java.lang.String
+                    public getPRFHashAlg(): string
                     public getPRFHashLength(): int
                     public getPRFBlockSize(): int
                 }
                 class TlsPrfParameterSpec implements java.security.spec.AlgorithmParameterSpec {
-                    public constructor(arg0: javax.crypto.SecretKey, arg1: java.lang.String, arg2: byte[], arg3: int, arg4: java.lang.String, arg5: int, arg6: int)
+                    public constructor(arg0: javax.crypto.SecretKey, arg1: string, arg2: byte[], arg3: int, arg4: string, arg5: int, arg6: int)
                     public getSecret(): javax.crypto.SecretKey
-                    public getLabel(): java.lang.String
+                    public getLabel(): string
                     public getSeed(): byte[]
                     public getOutputLength(): int
-                    public getPRFHashAlg(): java.lang.String
+                    public getPRFHashAlg(): string
                     public getPRFHashLength(): int
                     public getPRFBlockSize(): int
                 }
@@ -95,7 +95,7 @@ declare namespace javax {
         }
         class EncryptedPrivateKeyInfo {
             constructor(...args: any[])
-            public getAlgName(): java.lang.String
+            public getAlgName(): string
             public getAlgParameters(): java.security.AlgorithmParameters
             public getEncryptedData(): byte[]
             getKeySpec<T>(...args: any[]): any
@@ -122,10 +122,10 @@ declare namespace javax {
             public elements(): java.util.Enumeration<java.security.Permission>
         }
         class SecretKeyFactory {
-            protected constructor(arg0: javax.crypto.SecretKeyFactorySpi, arg1: java.security.Provider, arg2: java.lang.String)
+            protected constructor(arg0: javax.crypto.SecretKeyFactorySpi, arg1: java.security.Provider, arg2: string)
             static getInstance<T>(...args: any[]): any
             public getProvider(): java.security.Provider
-            public getAlgorithm(): java.lang.String
+            public getAlgorithm(): string
             public generateSecret(arg0: java.security.spec.KeySpec): javax.crypto.SecretKey
             public getKeySpec(arg0: javax.crypto.SecretKey, arg1: java.lang.Class<any>): java.security.spec.KeySpec
             public translateKey(arg0: javax.crypto.SecretKey): javax.crypto.SecretKey
@@ -150,8 +150,8 @@ declare namespace javax {
         }
         class NullCipherSpi extends javax.crypto.CipherSpi {
             protected constructor()
-            public engineSetMode(arg0: java.lang.String): void
-            public engineSetPadding(arg0: java.lang.String): void
+            public engineSetMode(arg0: string): void
+            public engineSetPadding(arg0: string): void
             protected engineGetBlockSize(): int
             protected engineGetOutputSize(arg0: int): int
             protected engineGetIV(): byte[]
@@ -162,7 +162,7 @@ declare namespace javax {
             protected engineGetKeySize(arg0: java.security.Key): int
         }
         class CryptoAllPermission extends javax.crypto.CryptoPermission {
-            static ALG_NAME: java.lang.String
+            static ALG_NAME: string
             static INSTANCE: javax.crypto.CryptoAllPermission
             public implies(arg0: java.security.Permission): boolean
             public equals(arg0: java.lang.Object): boolean
@@ -171,7 +171,7 @@ declare namespace javax {
         }
         class JceSecurityManager extends java.lang.SecurityManager {
             static INSTANCE: javax.crypto.JceSecurityManager
-            getCryptoPermission(arg0: java.lang.String): javax.crypto.CryptoPermission
+            getCryptoPermission(arg0: string): javax.crypto.CryptoPermission
             isCallerTrusted(): boolean
             constructor(arg0: any)
         }
@@ -188,7 +188,7 @@ declare namespace javax {
             public implies(arg0: java.security.Permission): boolean
             public elements(): java.util.Enumeration<java.security.Permission>
             getMinimum(arg0: javax.crypto.CryptoPermissions): javax.crypto.CryptoPermissions
-            getPermissionCollection(arg0: java.lang.String): java.security.PermissionCollection
+            getPermissionCollection(arg0: string): java.security.PermissionCollection
         }
         class JarVerifier {
             constructor(arg0: java.net.URL, arg1: boolean)
@@ -197,8 +197,8 @@ declare namespace javax {
             getPermissions(): javax.crypto.CryptoPermissions
         }
         class KeyGenerator {
-            protected constructor(arg0: javax.crypto.KeyGeneratorSpi, arg1: java.security.Provider, arg2: java.lang.String)
-            public getAlgorithm(): java.lang.String
+            protected constructor(arg0: javax.crypto.KeyGeneratorSpi, arg1: java.security.Provider, arg2: string)
+            public getAlgorithm(): string
             static getInstance<T>(...args: any[]): any
             public getProvider(): java.security.Provider
             disableFailover(): void
@@ -206,8 +206,8 @@ declare namespace javax {
             public generateKey(): javax.crypto.SecretKey
         }
         class KeyAgreement {
-            protected constructor(arg0: javax.crypto.KeyAgreementSpi, arg1: java.security.Provider, arg2: java.lang.String)
-            public getAlgorithm(): java.lang.String
+            protected constructor(arg0: javax.crypto.KeyAgreementSpi, arg1: java.security.Provider, arg2: string)
+            public getAlgorithm(): string
             static getInstance<T>(...args: any[]): any
             chooseFirstProvider(): void
             public getProvider(): java.security.Provider
@@ -228,8 +228,8 @@ declare namespace javax {
             constructor(...args: any[])
         }
         class ExemptionMechanism {
-            protected constructor(arg0: javax.crypto.ExemptionMechanismSpi, arg1: java.security.Provider, arg2: java.lang.String)
-            public getName(): java.lang.String
+            protected constructor(arg0: javax.crypto.ExemptionMechanismSpi, arg1: java.security.Provider, arg2: string)
+            public getName(): string
             static getInstance<T>(...args: any[]): any
             public getProvider(): java.security.Provider
             public isCryptoAllowed(arg0: java.security.Key): boolean
@@ -239,15 +239,15 @@ declare namespace javax {
             protected finalize(): void
         }
         class CryptoPermission extends java.security.Permission {
-            static ALG_NAME_WILDCARD: java.lang.String
+            static ALG_NAME_WILDCARD: string
             constructor(...args: any[])
             public implies(arg0: java.security.Permission): boolean
             public equals(arg0: java.lang.Object): boolean
             public hashCode(): int
-            public getActions(): java.lang.String
+            public getActions(): string
             public newPermissionCollection(): java.security.PermissionCollection
-            getAlgorithm(): java.lang.String
-            getExemptionMechanism(): java.lang.String
+            getAlgorithm(): string
+            getExemptionMechanism(): string
             getMaxKeySize(): int
             getCheckParam(): boolean
             getAlgorithmParameterSpec(): java.security.spec.AlgorithmParameterSpec
@@ -255,8 +255,8 @@ declare namespace javax {
         }
         abstract class CipherSpi {
             public constructor()
-            protected engineSetMode(arg0: java.lang.String): void
-            protected engineSetPadding(arg0: java.lang.String): void
+            protected engineSetMode(arg0: string): void
+            protected engineSetPadding(arg0: string): void
             protected engineGetBlockSize(): int
             protected engineGetOutputSize(arg0: int): int
             protected engineGetIV(): byte[]
@@ -266,7 +266,7 @@ declare namespace javax {
             engineDoFinal<T>(...args: any[]): any
             static getTempArraySize(arg0: int): int
             protected engineWrap(arg0: java.security.Key): byte[]
-            protected engineUnwrap(arg0: byte[], arg1: java.lang.String, arg2: int): java.security.Key
+            protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
             protected engineGetKeySize(arg0: java.security.Key): int
             engineUpdateAAD<T>(...args: any[]): any
         }
@@ -282,7 +282,7 @@ declare namespace javax {
             static getInstance<T>(...args: any[]): any
             chooseFirstProvider(): void
             public getProvider(): java.security.Provider
-            public getAlgorithm(): java.lang.String
+            public getAlgorithm(): string
             public getBlockSize(): int
             public getOutputSize(arg0: int): int
             public getIV(): byte[]
@@ -292,21 +292,21 @@ declare namespace javax {
             update<T>(...args: any[]): any
             doFinal<T>(...args: any[]): any
             public wrap(arg0: java.security.Key): byte[]
-            public unwrap(arg0: byte[], arg1: java.lang.String, arg2: int): java.security.Key
-            public static getMaxAllowedKeyLength(arg0: java.lang.String): int
-            public static getMaxAllowedParameterSpec(arg0: java.lang.String): java.security.spec.AlgorithmParameterSpec
+            public unwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
+            public static getMaxAllowedKeyLength(arg0: string): int
+            public static getMaxAllowedParameterSpec(arg0: string): java.security.spec.AlgorithmParameterSpec
             updateAAD<T>(...args: any[]): any
         }
         class SealedObject implements java.io.Serializable {
             static serialVersionUID: long
             protected encodedParams: byte[]
             constructor(...args: any[])
-            public getAlgorithm(): java.lang.String
+            public getAlgorithm(): string
             getObject<T>(...args: any[]): any
         }
         class Mac implements java.lang.Cloneable {
-            protected constructor(arg0: javax.crypto.MacSpi, arg1: java.security.Provider, arg2: java.lang.String)
-            public getAlgorithm(): java.lang.String
+            protected constructor(arg0: javax.crypto.MacSpi, arg1: java.security.Provider, arg2: string)
+            public getAlgorithm(): string
             static getInstance<T>(...args: any[]): any
             chooseFirstProvider(): void
             public getProvider(): java.security.Provider
@@ -350,8 +350,8 @@ declare namespace javax {
             }
             class SecretKeySpec implements java.security.spec.KeySpec , javax.crypto.SecretKey {
                 constructor(...args: any[])
-                public getAlgorithm(): java.lang.String
-                public getFormat(): java.lang.String
+                public getAlgorithm(): string
+                public getFormat(): string
                 public getEncoded(): byte[]
                 public hashCode(): int
                 public equals(arg0: java.lang.Object): boolean
@@ -403,14 +403,14 @@ declare namespace javax {
                 public getParameterSpec(): java.security.spec.AlgorithmParameterSpec
             }
             class PSource {
-                protected constructor(arg0: java.lang.String)
-                public getAlgorithm(): java.lang.String
+                protected constructor(arg0: string)
+                public getAlgorithm(): string
             }
             class OAEPParameterSpec implements java.security.spec.AlgorithmParameterSpec {
                 public static DEFAULT: javax.crypto.spec.OAEPParameterSpec
-                public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: java.security.spec.AlgorithmParameterSpec, arg3: javax.crypto.spec.PSource)
-                public getDigestAlgorithm(): java.lang.String
-                public getMGFAlgorithm(): java.lang.String
+                public constructor(arg0: string, arg1: string, arg2: java.security.spec.AlgorithmParameterSpec, arg3: javax.crypto.spec.PSource)
+                public getDigestAlgorithm(): string
+                public getMGFAlgorithm(): string
                 public getMGFParameters(): java.security.spec.AlgorithmParameterSpec
                 public getPSource(): javax.crypto.spec.PSource
             }

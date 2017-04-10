@@ -286,21 +286,21 @@ declare namespace javax {
 declare namespace sun {
     namespace swing {
         class BeanInfoUtils {
-            public static BOUND: java.lang.String
-            public static CONSTRAINED: java.lang.String
-            public static PROPERTYEDITORCLASS: java.lang.String
-            public static READMETHOD: java.lang.String
-            public static WRITEMETHOD: java.lang.String
-            public static DISPLAYNAME: java.lang.String
-            public static EXPERT: java.lang.String
-            public static HIDDEN: java.lang.String
-            public static PREFERRED: java.lang.String
-            public static SHORTDESCRIPTION: java.lang.String
-            public static CUSTOMIZERCLASS: java.lang.String
+            public static BOUND: string
+            public static CONSTRAINED: string
+            public static PROPERTYEDITORCLASS: string
+            public static READMETHOD: string
+            public static WRITEMETHOD: string
+            public static DISPLAYNAME: string
+            public static EXPERT: string
+            public static HIDDEN: string
+            public static PREFERRED: string
+            public static SHORTDESCRIPTION: string
+            public static CUSTOMIZERCLASS: string
             public constructor()
-            public static createPropertyDescriptor(arg0: java.lang.Class, arg1: java.lang.String, arg2: java.lang.Object[]): java.beans.PropertyDescriptor
+            public static createPropertyDescriptor(arg0: java.lang.Class, arg1: string, arg2: java.lang.Object[]): java.beans.PropertyDescriptor
             public static createBeanDescriptor(arg0: java.lang.Class, arg1: java.lang.Object[]): java.beans.BeanDescriptor
-            public static throwError(arg0: java.lang.Exception, arg1: java.lang.String): void
+            public static throwError(arg0: java.lang.Exception, arg1: string): void
         }
         
     }

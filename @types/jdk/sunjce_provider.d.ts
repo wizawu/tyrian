@@ -6,16 +6,16 @@ declare namespace com {
                     static serialVersionUID: long
                     constructor(...args: any[])
                     public getEncoded(): byte[]
-                    public getAlgorithm(): java.lang.String
-                    public getFormat(): java.lang.String
+                    public getAlgorithm(): string
+                    public getFormat(): string
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
                     protected finalize(): void
                 }
                 class DESedeWrapCipher extends javax.crypto.CipherSpi {
                     public constructor()
-                    protected engineSetMode(arg0: java.lang.String): void
-                    protected engineSetPadding(arg0: java.lang.String): void
+                    protected engineSetMode(arg0: string): void
+                    protected engineSetPadding(arg0: string): void
                     protected engineGetBlockSize(): int
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
@@ -25,7 +25,7 @@ declare namespace com {
                     protected engineGetParameters(): java.security.AlgorithmParameters
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
-                    protected engineUnwrap(arg0: byte[], arg1: java.lang.String, arg2: int): java.security.Key
+                    protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class HmacMD5 extends com.sun.crypto.provider.HmacCore {
                     public constructor()
@@ -36,12 +36,12 @@ declare namespace com {
                     engineInit<T>(...args: any[]): any
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
                     engineGetEncoded<T>(...args: any[]): any
-                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): java.lang.String
+                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 class RC2Cipher extends javax.crypto.CipherSpi {
                     public constructor()
-                    protected engineSetMode(arg0: java.lang.String): void
-                    protected engineSetPadding(arg0: java.lang.String): void
+                    protected engineSetMode(arg0: string): void
+                    protected engineSetPadding(arg0: string): void
                     protected engineGetBlockSize(): int
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
@@ -51,7 +51,7 @@ declare namespace com {
                     engineDoFinal<T>(...args: any[]): any
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
-                    protected engineUnwrap(arg0: byte[], arg1: java.lang.String, arg2: int): java.security.Key
+                    protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class TlsKeyMaterialGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
@@ -66,19 +66,19 @@ declare namespace com {
                 }
                 class JceKeyStore extends java.security.KeyStoreSpi {
                     public constructor()
-                    public engineGetKey(arg0: java.lang.String, arg1: char[]): java.security.Key
-                    public engineGetCertificateChain(arg0: java.lang.String): java.security.cert.Certificate[]
-                    public engineGetCertificate(arg0: java.lang.String): java.security.cert.Certificate
-                    public engineGetCreationDate(arg0: java.lang.String): java.util.Date
+                    public engineGetKey(arg0: string, arg1: char[]): java.security.Key
+                    public engineGetCertificateChain(arg0: string): java.security.cert.Certificate[]
+                    public engineGetCertificate(arg0: string): java.security.cert.Certificate
+                    public engineGetCreationDate(arg0: string): java.util.Date
                     engineSetKeyEntry<T>(...args: any[]): any
-                    public engineSetCertificateEntry(arg0: java.lang.String, arg1: java.security.cert.Certificate): void
-                    public engineDeleteEntry(arg0: java.lang.String): void
+                    public engineSetCertificateEntry(arg0: string, arg1: java.security.cert.Certificate): void
+                    public engineDeleteEntry(arg0: string): void
                     public engineAliases(): java.util.Enumeration<java.lang.String>
-                    public engineContainsAlias(arg0: java.lang.String): boolean
+                    public engineContainsAlias(arg0: string): boolean
                     public engineSize(): int
-                    public engineIsKeyEntry(arg0: java.lang.String): boolean
-                    public engineIsCertificateEntry(arg0: java.lang.String): boolean
-                    public engineGetCertificateAlias(arg0: java.security.cert.Certificate): java.lang.String
+                    public engineIsKeyEntry(arg0: string): boolean
+                    public engineIsCertificateEntry(arg0: string): boolean
+                    public engineGetCertificateAlias(arg0: java.security.cert.Certificate): string
                     public engineStore(arg0: java.io.OutputStream, arg1: char[]): void
                     public engineLoad(arg0: java.io.InputStream, arg1: char[]): void
                 }
@@ -99,7 +99,7 @@ declare namespace com {
                     protected engineGenerateParameters(): java.security.AlgorithmParameters
                 }
                 class SslMacCore {
-                    constructor(arg0: java.lang.String, arg1: byte[], arg2: byte[])
+                    constructor(arg0: string, arg1: byte[], arg2: byte[])
                     getDigestLength(): int
                     init(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
                     update<T>(...args: any[]): any
@@ -107,7 +107,7 @@ declare namespace com {
                     reset(): void
                 }
                 class KeyGeneratorCore {
-                    constructor(arg0: java.lang.String, arg1: int)
+                    constructor(arg0: string, arg1: int)
                     implInit<T>(...args: any[]): any
                     implGenerateKey(): javax.crypto.SecretKey
                 }
@@ -116,7 +116,7 @@ declare namespace com {
                     engineInit<T>(...args: any[]): any
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
                     engineGetEncoded<T>(...args: any[]): any
-                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): java.lang.String
+                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 class TlsRsaPremasterSecretGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
@@ -128,12 +128,12 @@ declare namespace com {
                     engineInit<T>(...args: any[]): any
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
                     engineGetEncoded<T>(...args: any[]): any
-                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): java.lang.String
+                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 abstract class CipherWithWrappingSpi extends javax.crypto.CipherSpi {
                     public constructor()
                     protected engineWrap(arg0: java.security.Key): byte[]
-                    protected engineUnwrap(arg0: byte[], arg1: java.lang.String, arg2: int): java.security.Key
+                    protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class SunJCE extends java.security.Provider {
                     static debug: boolean
@@ -146,25 +146,25 @@ declare namespace com {
                     getBlockSize(): int
                     getEffectiveKeyBits(): int
                     initEffectiveKeyBits(arg0: int): void
-                    static checkKey(arg0: java.lang.String, arg1: int): void
-                    init(arg0: boolean, arg1: java.lang.String, arg2: byte[]): void
+                    static checkKey(arg0: string, arg1: int): void
+                    init(arg0: boolean, arg1: string, arg2: byte[]): void
                     encryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
                     decryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
                 }
                 class CounterMode extends com.sun.crypto.provider.FeedbackCipher {
                     constructor(arg0: com.sun.crypto.provider.SymmetricCipher)
-                    getFeedback(): java.lang.String
+                    getFeedback(): string
                     reset(): void
                     save(): void
                     restore(): void
-                    init(arg0: boolean, arg1: java.lang.String, arg2: byte[], arg3: byte[]): void
+                    init(arg0: boolean, arg1: string, arg2: byte[], arg3: byte[]): void
                     encrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     decrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                 }
                 class BlowfishCipher extends javax.crypto.CipherSpi {
                     public constructor()
-                    protected engineSetMode(arg0: java.lang.String): void
-                    protected engineSetPadding(arg0: java.lang.String): void
+                    protected engineSetMode(arg0: string): void
+                    protected engineSetPadding(arg0: string): void
                     protected engineGetBlockSize(): int
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
@@ -174,12 +174,12 @@ declare namespace com {
                     engineDoFinal<T>(...args: any[]): any
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
-                    protected engineUnwrap(arg0: byte[], arg1: java.lang.String, arg2: int): java.security.Key
+                    protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class RSACipher extends javax.crypto.CipherSpi {
                     public constructor()
-                    protected engineSetMode(arg0: java.lang.String): void
-                    protected engineSetPadding(arg0: java.lang.String): void
+                    protected engineSetMode(arg0: string): void
+                    protected engineSetPadding(arg0: string): void
                     protected engineGetBlockSize(): int
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
@@ -188,13 +188,13 @@ declare namespace com {
                     engineUpdate<T>(...args: any[]): any
                     engineDoFinal<T>(...args: any[]): any
                     protected engineWrap(arg0: java.security.Key): byte[]
-                    protected engineUnwrap(arg0: byte[], arg1: java.lang.String, arg2: int): java.security.Key
+                    protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                     protected engineGetKeySize(arg0: java.security.Key): int
                 }
                 class DESCipher extends javax.crypto.CipherSpi {
                     public constructor()
-                    protected engineSetMode(arg0: java.lang.String): void
-                    protected engineSetPadding(arg0: java.lang.String): void
+                    protected engineSetMode(arg0: string): void
+                    protected engineSetPadding(arg0: string): void
                     protected engineGetBlockSize(): int
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
@@ -204,28 +204,28 @@ declare namespace com {
                     engineDoFinal<T>(...args: any[]): any
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
-                    protected engineUnwrap(arg0: byte[], arg1: java.lang.String, arg2: int): java.security.Key
+                    protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 abstract class PBEKeyFactory extends javax.crypto.SecretKeyFactorySpi {
                     protected engineGenerateSecret(arg0: java.security.spec.KeySpec): javax.crypto.SecretKey
                     protected engineGetKeySpec(arg0: javax.crypto.SecretKey, arg1: java.lang.Class<any>): java.security.spec.KeySpec
                     protected engineTranslateKey(arg0: javax.crypto.SecretKey): javax.crypto.SecretKey
-                    constructor(arg0: java.lang.String, arg1: any)
+                    constructor(arg0: string, arg1: any)
                 }
                 class DHParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
                     engineInit<T>(...args: any[]): any
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
                     engineGetEncoded<T>(...args: any[]): any
-                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): java.lang.String
+                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 class ElectronicCodeBook extends com.sun.crypto.provider.FeedbackCipher {
                     constructor(arg0: com.sun.crypto.provider.SymmetricCipher)
-                    getFeedback(): java.lang.String
+                    getFeedback(): string
                     reset(): void
                     save(): void
                     restore(): void
-                    init(arg0: boolean, arg1: java.lang.String, arg2: byte[], arg3: byte[]): void
+                    init(arg0: boolean, arg1: string, arg2: byte[], arg3: byte[]): void
                     encrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     decrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                 }
@@ -236,8 +236,8 @@ declare namespace com {
                 abstract class AESCipher extends javax.crypto.CipherSpi {
                     static checkKeySize(arg0: java.security.Key, arg1: int): void
                     protected constructor(arg0: int)
-                    protected engineSetMode(arg0: java.lang.String): void
-                    protected engineSetPadding(arg0: java.lang.String): void
+                    protected engineSetMode(arg0: string): void
+                    protected engineSetPadding(arg0: string): void
                     protected engineGetBlockSize(): int
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
@@ -247,7 +247,7 @@ declare namespace com {
                     engineDoFinal<T>(...args: any[]): any
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
-                    protected engineUnwrap(arg0: byte[], arg1: java.lang.String, arg2: int): java.security.Key
+                    protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                     engineUpdateAAD<T>(...args: any[]): any
                 }
                 class RC2Parameters extends java.security.AlgorithmParametersSpi {
@@ -255,7 +255,7 @@ declare namespace com {
                     engineInit<T>(...args: any[]): any
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
                     engineGetEncoded<T>(...args: any[]): any
-                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): java.lang.String
+                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 class GCTR {
                     constructor(arg0: com.sun.crypto.provider.SymmetricCipher, arg1: byte[])
@@ -270,7 +270,7 @@ declare namespace com {
                     static DEFAULT_IV_LEN: int
                     static increment32(arg0: byte[]): void
                     constructor(arg0: com.sun.crypto.provider.SymmetricCipher)
-                    getFeedback(): java.lang.String
+                    getFeedback(): string
                     reset(): void
                     save(): void
                     restore(): void
@@ -310,8 +310,8 @@ declare namespace com {
                 }
                 class PBEWithMD5AndDESCipher extends javax.crypto.CipherSpi {
                     public constructor()
-                    protected engineSetMode(arg0: java.lang.String): void
-                    protected engineSetPadding(arg0: java.lang.String): void
+                    protected engineSetMode(arg0: string): void
+                    protected engineSetPadding(arg0: string): void
                     protected engineGetBlockSize(): int
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
@@ -321,7 +321,7 @@ declare namespace com {
                     engineDoFinal<T>(...args: any[]): any
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
-                    protected engineUnwrap(arg0: byte[], arg1: java.lang.String, arg2: int): java.security.Key
+                    protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class HmacSHA1KeyGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
@@ -333,7 +333,7 @@ declare namespace com {
                     engineInit<T>(...args: any[]): any
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
                     engineGetEncoded<T>(...args: any[]): any
-                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): java.lang.String
+                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 class DESedeKeyFactory extends javax.crypto.SecretKeyFactorySpi {
                     public constructor()
@@ -343,8 +343,8 @@ declare namespace com {
                 }
                 class ARCFOURCipher extends javax.crypto.CipherSpi {
                     public constructor()
-                    protected engineSetMode(arg0: java.lang.String): void
-                    protected engineSetPadding(arg0: java.lang.String): void
+                    protected engineSetMode(arg0: string): void
+                    protected engineSetPadding(arg0: string): void
                     protected engineGetBlockSize(): int
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
@@ -353,7 +353,7 @@ declare namespace com {
                     engineUpdate<T>(...args: any[]): any
                     engineDoFinal<T>(...args: any[]): any
                     protected engineWrap(arg0: java.security.Key): byte[]
-                    protected engineUnwrap(arg0: byte[], arg1: java.lang.String, arg2: int): java.security.Key
+                    protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                     protected engineGetKeySize(arg0: java.security.Key): int
                 }
                 class PKCS12PBECipherCore {
@@ -361,9 +361,9 @@ declare namespace com {
                     static CIPHER_IV: int
                     static MAC_KEY: int
                     static derive<T>(...args: any[]): any
-                    constructor(arg0: java.lang.String, arg1: int)
-                    implSetMode(arg0: java.lang.String): void
-                    implSetPadding(arg0: java.lang.String): void
+                    constructor(arg0: string, arg1: int)
+                    implSetMode(arg0: string): void
+                    implSetPadding(arg0: string): void
                     implGetBlockSize(): int
                     implGetOutputSize(arg0: int): int
                     implGetIV(): byte[]
@@ -373,13 +373,13 @@ declare namespace com {
                     implDoFinal<T>(...args: any[]): any
                     implGetKeySize(arg0: java.security.Key): int
                     implWrap(arg0: java.security.Key): byte[]
-                    implUnwrap(arg0: byte[], arg1: java.lang.String, arg2: int): java.security.Key
+                    implUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class CipherBlockChaining extends com.sun.crypto.provider.FeedbackCipher {
                     protected r: byte[]
                     constructor(arg0: com.sun.crypto.provider.SymmetricCipher)
-                    getFeedback(): java.lang.String
-                    init(arg0: boolean, arg1: java.lang.String, arg2: byte[], arg3: byte[]): void
+                    getFeedback(): string
+                    init(arg0: boolean, arg1: string, arg2: byte[], arg3: byte[]): void
                     reset(): void
                     save(): void
                     restore(): void
@@ -388,7 +388,7 @@ declare namespace com {
                 }
                 class CipherTextStealing extends com.sun.crypto.provider.CipherBlockChaining {
                     constructor(arg0: com.sun.crypto.provider.SymmetricCipher)
-                    getFeedback(): java.lang.String
+                    getFeedback(): string
                     encryptFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     decryptFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                 }
@@ -399,7 +399,7 @@ declare namespace com {
                 }
                 class DESedeCrypt extends com.sun.crypto.provider.DESCrypt implements com.sun.crypto.provider.DESConstants {
                     constructor()
-                    init(arg0: boolean, arg1: java.lang.String, arg2: byte[]): void
+                    init(arg0: boolean, arg1: string, arg2: byte[]): void
                     encryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
                     decryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
                 }
@@ -414,9 +414,9 @@ declare namespace com {
                     public generateKeyPair(): java.security.KeyPair
                 }
                 class PBECipherCore {
-                    constructor(arg0: java.lang.String)
-                    setMode(arg0: java.lang.String): void
-                    setPadding(arg0: java.lang.String): void
+                    constructor(arg0: string)
+                    setMode(arg0: string): void
+                    setPadding(arg0: string): void
                     getBlockSize(): int
                     getOutputSize(arg0: int): int
                     getIV(): byte[]
@@ -425,13 +425,13 @@ declare namespace com {
                     update<T>(...args: any[]): any
                     doFinal<T>(...args: any[]): any
                     wrap(arg0: java.security.Key): byte[]
-                    unwrap(arg0: byte[], arg1: java.lang.String, arg2: int): java.security.Key
+                    unwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class DHPrivateKey implements java.security.PrivateKey , javax.crypto.interfaces.DHPrivateKey , java.io.Serializable {
                     static serialVersionUID: long
                     constructor(...args: any[])
-                    public getFormat(): java.lang.String
-                    public getAlgorithm(): java.lang.String
+                    public getFormat(): string
+                    public getAlgorithm(): string
                     public getEncoded(): byte[]
                     public getX(): java.math.BigInteger
                     public getParams(): javax.crypto.spec.DHParameterSpec
@@ -454,9 +454,9 @@ declare namespace com {
                     static doTLS10PRF<T>(...args: any[]): any
                 }
                 abstract class PBES2Core extends javax.crypto.CipherSpi {
-                    constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: int)
-                    protected engineSetMode(arg0: java.lang.String): void
-                    protected engineSetPadding(arg0: java.lang.String): void
+                    constructor(arg0: string, arg1: string, arg2: int)
+                    protected engineSetMode(arg0: string): void
+                    protected engineSetPadding(arg0: string): void
                     protected engineGetBlockSize(): int
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
@@ -466,7 +466,7 @@ declare namespace com {
                     engineDoFinal<T>(...args: any[]): any
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
-                    protected engineUnwrap(arg0: byte[], arg1: java.lang.String, arg2: int): java.security.Key
+                    protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 interface BlowfishConstants {
                     BLOWFISH_BLOCK_SIZE: int
@@ -475,14 +475,14 @@ declare namespace com {
                 class BlowfishCrypt extends com.sun.crypto.provider.SymmetricCipher implements com.sun.crypto.provider.BlowfishConstants {
                     constructor()
                     getBlockSize(): int
-                    init(arg0: boolean, arg1: java.lang.String, arg2: byte[]): void
+                    init(arg0: boolean, arg1: string, arg2: byte[]): void
                     encryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
                     decryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
                 }
                 class PBES1Core {
-                    constructor(arg0: java.lang.String)
-                    setMode(arg0: java.lang.String): void
-                    setPadding(arg0: java.lang.String): void
+                    constructor(arg0: string)
+                    setMode(arg0: string): void
+                    setPadding(arg0: string): void
                     getBlockSize(): int
                     getOutputSize(arg0: int): int
                     getIV(): byte[]
@@ -491,12 +491,12 @@ declare namespace com {
                     update<T>(...args: any[]): any
                     doFinal<T>(...args: any[]): any
                     wrap(arg0: java.security.Key): byte[]
-                    unwrap(arg0: byte[], arg1: java.lang.String, arg2: int): java.security.Key
+                    unwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class PBEWithMD5AndTripleDESCipher extends javax.crypto.CipherSpi {
                     public constructor()
-                    protected engineSetMode(arg0: java.lang.String): void
-                    protected engineSetPadding(arg0: java.lang.String): void
+                    protected engineSetMode(arg0: string): void
+                    protected engineSetPadding(arg0: string): void
                     protected engineGetBlockSize(): int
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
@@ -506,27 +506,27 @@ declare namespace com {
                     engineDoFinal<T>(...args: any[]): any
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
-                    protected engineUnwrap(arg0: byte[], arg1: java.lang.String, arg2: int): java.security.Key
+                    protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class CipherCore {
                     constructor(arg0: com.sun.crypto.provider.SymmetricCipher, arg1: int)
-                    setMode(arg0: java.lang.String): void
-                    setPadding(arg0: java.lang.String): void
+                    setMode(arg0: string): void
+                    setPadding(arg0: string): void
                     getOutputSize(arg0: int): int
                     getIV(): byte[]
-                    getParameters(arg0: java.lang.String): java.security.AlgorithmParameters
+                    getParameters(arg0: string): java.security.AlgorithmParameters
                     init<T>(...args: any[]): any
                     static getKeyBytes(arg0: java.security.Key): byte[]
                     update<T>(...args: any[]): any
                     doFinal<T>(...args: any[]): any
                     wrap(arg0: java.security.Key): byte[]
-                    unwrap(arg0: byte[], arg1: java.lang.String, arg2: int): java.security.Key
+                    unwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                     updateAAD(arg0: byte[], arg1: int, arg2: int): void
                 }
                 class DESedeCipher extends javax.crypto.CipherSpi {
                     public constructor()
-                    protected engineSetMode(arg0: java.lang.String): void
-                    protected engineSetPadding(arg0: java.lang.String): void
+                    protected engineSetMode(arg0: string): void
+                    protected engineSetPadding(arg0: string): void
                     protected engineGetBlockSize(): int
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
@@ -536,7 +536,7 @@ declare namespace com {
                     protected engineGetParameters(): java.security.AlgorithmParameters
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
-                    protected engineUnwrap(arg0: byte[], arg1: java.lang.String, arg2: int): java.security.Key
+                    protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class GHASH {
                     constructor(arg0: byte[])
@@ -553,15 +553,15 @@ declare namespace com {
                 class AESCrypt extends com.sun.crypto.provider.SymmetricCipher implements com.sun.crypto.provider.AESConstants {
                     constructor()
                     getBlockSize(): int
-                    init(arg0: boolean, arg1: java.lang.String, arg2: byte[]): void
+                    init(arg0: boolean, arg1: string, arg2: byte[]): void
                     static isKeySizeValid(arg0: int): boolean
                     encryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
                     decryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
                 }
                 abstract class AESWrapCipher extends javax.crypto.CipherSpi {
                     public constructor(arg0: int)
-                    protected engineSetMode(arg0: java.lang.String): void
-                    protected engineSetPadding(arg0: java.lang.String): void
+                    protected engineSetMode(arg0: string): void
+                    protected engineSetPadding(arg0: string): void
                     protected engineGetBlockSize(): int
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
@@ -571,12 +571,12 @@ declare namespace com {
                     protected engineGetParameters(): java.security.AlgorithmParameters
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
-                    protected engineUnwrap(arg0: byte[], arg1: java.lang.String, arg2: int): java.security.Key
+                    protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class CipherFeedback extends com.sun.crypto.provider.FeedbackCipher {
                     constructor(arg0: com.sun.crypto.provider.SymmetricCipher, arg1: int)
-                    getFeedback(): java.lang.String
-                    init(arg0: boolean, arg1: java.lang.String, arg2: byte[], arg3: byte[]): void
+                    getFeedback(): string
+                    init(arg0: boolean, arg1: string, arg2: byte[], arg3: byte[]): void
                     reset(): void
                     save(): void
                     restore(): void
@@ -588,10 +588,10 @@ declare namespace com {
                     engineInit<T>(...args: any[]): any
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
                     engineGetEncoded<T>(...args: any[]): any
-                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): java.lang.String
+                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 class CipherForKeyProtector extends javax.crypto.Cipher {
-                    protected constructor(arg0: javax.crypto.CipherSpi, arg1: java.security.Provider, arg2: java.lang.String)
+                    protected constructor(arg0: javax.crypto.CipherSpi, arg1: java.security.Provider, arg2: string)
                 }
                 class EncryptedPrivateKeyInfo {
                     constructor(...args: any[])
@@ -608,8 +608,8 @@ declare namespace com {
                 }
                 class OutputFeedback extends com.sun.crypto.provider.FeedbackCipher {
                     constructor(arg0: com.sun.crypto.provider.SymmetricCipher, arg1: int)
-                    getFeedback(): java.lang.String
-                    init(arg0: boolean, arg1: java.lang.String, arg2: byte[], arg3: byte[]): void
+                    getFeedback(): string
+                    init(arg0: boolean, arg1: string, arg2: byte[], arg3: byte[]): void
                     reset(): void
                     save(): void
                     restore(): void
@@ -621,7 +621,7 @@ declare namespace com {
                     engineInit<T>(...args: any[]): any
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
                     engineGetEncoded<T>(...args: any[]): any
-                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): java.lang.String
+                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 class SealedObjectForKeyProtector extends javax.crypto.SealedObject {
                     static serialVersionUID: long
@@ -630,7 +630,7 @@ declare namespace com {
                 }
                 class ConstructKeys {
                     constructor()
-                    static constructKey(arg0: byte[], arg1: java.lang.String, arg2: int): java.security.Key
+                    static constructKey(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class HmacSHA1 extends com.sun.crypto.provider.HmacCore {
                     public constructor()
@@ -639,8 +639,8 @@ declare namespace com {
                 class DHPublicKey implements java.security.PublicKey , javax.crypto.interfaces.DHPublicKey , java.io.Serializable {
                     static serialVersionUID: long
                     constructor(...args: any[])
-                    public getFormat(): java.lang.String
-                    public getAlgorithm(): java.lang.String
+                    public getFormat(): string
+                    public getAlgorithm(): string
                     public getEncoded(): byte[]
                     public getY(): java.math.BigInteger
                     public getParams(): javax.crypto.spec.DHParameterSpec
@@ -650,25 +650,25 @@ declare namespace com {
                 }
                 class PBKDF2KeyImpl implements javax.crypto.interfaces.PBEKey {
                     static serialVersionUID: long
-                    constructor(arg0: javax.crypto.spec.PBEKeySpec, arg1: java.lang.String)
+                    constructor(arg0: javax.crypto.spec.PBEKeySpec, arg1: string)
                     public getEncoded(): byte[]
-                    public getAlgorithm(): java.lang.String
+                    public getAlgorithm(): string
                     public getIterationCount(): int
                     public getPassword(): char[]
                     public getSalt(): byte[]
-                    public getFormat(): java.lang.String
+                    public getFormat(): string
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
                     protected finalize(): void
                 }
                 abstract class PBKDF2Core extends javax.crypto.SecretKeyFactorySpi {
-                    constructor(arg0: java.lang.String)
+                    constructor(arg0: string)
                     protected engineGenerateSecret(arg0: java.security.spec.KeySpec): javax.crypto.SecretKey
                     protected engineGetKeySpec(arg0: javax.crypto.SecretKey, arg1: java.lang.Class<any>): java.security.spec.KeySpec
                     protected engineTranslateKey(arg0: javax.crypto.SecretKey): javax.crypto.SecretKey
                 }
                 abstract class PBMAC1Core extends com.sun.crypto.provider.HmacCore {
-                    constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: int)
+                    constructor(arg0: string, arg1: string, arg2: int)
                     protected engineInit(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
                 }
                 interface DESConstants {
@@ -679,7 +679,7 @@ declare namespace com {
                     decrypting: boolean
                     constructor()
                     getBlockSize(): int
-                    init(arg0: boolean, arg1: java.lang.String, arg2: byte[]): void
+                    init(arg0: boolean, arg1: string, arg2: byte[]): void
                     encryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
                     decryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
                     cipherBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
@@ -692,10 +692,10 @@ declare namespace com {
                 }
                 class PBEKey implements javax.crypto.SecretKey {
                     static serialVersionUID: long
-                    constructor(arg0: javax.crypto.spec.PBEKeySpec, arg1: java.lang.String)
+                    constructor(arg0: javax.crypto.spec.PBEKeySpec, arg1: string)
                     public getEncoded(): byte[]
-                    public getAlgorithm(): java.lang.String
-                    public getFormat(): java.lang.String
+                    public getAlgorithm(): string
+                    public getFormat(): string
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
                     protected finalize(): void
@@ -735,14 +735,14 @@ declare namespace com {
                     engineInit<T>(...args: any[]): any
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
                     engineGetEncoded<T>(...args: any[]): any
-                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): java.lang.String
+                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 class DESKey implements javax.crypto.SecretKey {
                     static serialVersionUID: long
                     constructor(...args: any[])
                     public getEncoded(): byte[]
-                    public getAlgorithm(): java.lang.String
-                    public getFormat(): java.lang.String
+                    public getAlgorithm(): string
+                    public getFormat(): string
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
                     protected finalize(): void
@@ -752,12 +752,12 @@ declare namespace com {
                     engineInit<T>(...args: any[]): any
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
                     engineGetEncoded<T>(...args: any[]): any
-                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): java.lang.String
+                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 abstract class SymmetricCipher {
                     constructor()
                     getBlockSize(): int
-                    init(arg0: boolean, arg1: java.lang.String, arg2: byte[]): void
+                    init(arg0: boolean, arg1: string, arg2: byte[]): void
                     encryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
                     decryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
                 }
@@ -768,10 +768,10 @@ declare namespace com {
                     constructor(arg0: com.sun.crypto.provider.SymmetricCipher)
                     getEmbeddedCipher(): com.sun.crypto.provider.SymmetricCipher
                     getBlockSize(): int
-                    getFeedback(): java.lang.String
+                    getFeedback(): string
                     save(): void
                     restore(): void
-                    init(arg0: boolean, arg1: java.lang.String, arg2: byte[], arg3: byte[]): void
+                    init(arg0: boolean, arg1: string, arg2: byte[], arg3: byte[]): void
                     getIV(): byte[]
                     reset(): void
                     encrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
@@ -783,8 +783,8 @@ declare namespace com {
                 }
                 class PCBC extends com.sun.crypto.provider.FeedbackCipher {
                     constructor(arg0: com.sun.crypto.provider.SymmetricCipher)
-                    getFeedback(): java.lang.String
-                    init(arg0: boolean, arg1: java.lang.String, arg2: byte[], arg3: byte[]): void
+                    getFeedback(): string
+                    init(arg0: boolean, arg1: string, arg2: byte[], arg3: byte[]): void
                     reset(): void
                     save(): void
                     restore(): void

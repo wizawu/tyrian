@@ -9,14 +9,14 @@ declare namespace sun {
             }
             class ECPrivateKeyImpl extends sun.security.pkcs.PKCS8Key implements java.security.interfaces.ECPrivateKey {
                 constructor(...args: any[])
-                public getAlgorithm(): java.lang.String
+                public getAlgorithm(): string
                 public getS(): java.math.BigInteger
                 public getParams(): java.security.spec.ECParameterSpec
                 protected parseKeyBits(): void
             }
             class ECPublicKeyImpl extends sun.security.x509.X509Key implements java.security.interfaces.ECPublicKey {
                 constructor(...args: any[])
-                public getAlgorithm(): java.lang.String
+                public getAlgorithm(): string
                 public getW(): java.security.spec.ECPoint
                 public getParams(): java.security.spec.ECParameterSpec
                 public getEncodedPublicValue(): byte[]
@@ -35,17 +35,17 @@ declare namespace sun {
                 engineInit<T>(...args: any[]): any
                 protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
                 engineGetEncoded<T>(...args: any[]): any
-                protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): java.lang.String
+                protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
             }
             class NamedCurve extends java.security.spec.ECParameterSpec {
-                constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: java.security.spec.EllipticCurve, arg3: java.security.spec.ECPoint, arg4: java.math.BigInteger, arg5: int)
-                getName(): java.lang.String
+                constructor(arg0: string, arg1: string, arg2: java.security.spec.EllipticCurve, arg3: java.security.spec.ECPoint, arg4: java.math.BigInteger, arg5: int)
+                getName(): string
                 getEncoded(): byte[]
-                getObjectId(): java.lang.String
+                getObjectId(): string
                 toString<T>(...args: any[]): any
             }
             class CurveDB {
-                static SPLIT_PATTERN: java.lang.String
+                static SPLIT_PATTERN: string
                 public constructor()
                 static getSupportedCurves(): java.util.Collection<sun.security.ec.NamedCurve>
                 static lookup<T>(...args: any[]): any
@@ -73,8 +73,8 @@ declare namespace sun {
                 engineUpdate<T>(...args: any[]): any
                 protected engineSign(): byte[]
                 protected engineVerify(arg0: byte[]): boolean
-                protected engineSetParameter(arg0: java.lang.String, arg1: java.lang.Object): void
-                protected engineGetParameter(arg0: java.lang.String): java.lang.Object
+                protected engineSetParameter(arg0: string, arg1: java.lang.Object): void
+                protected engineGetParameter(arg0: string): java.lang.Object
             }
             
         }

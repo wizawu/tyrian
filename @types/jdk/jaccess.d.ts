@@ -8,14 +8,14 @@ declare namespace com {
                             class CheckboxTranslator extends com.sun.java.accessibility.util.Translator {
                                 public constructor()
                                 public getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
-                                public getAccessibleName(): java.lang.String
-                                public setAccessibleName(arg0: java.lang.String): void
+                                public getAccessibleName(): string
+                                public setAccessibleName(arg0: string): void
                                 public getAccessibleRole(): javax.accessibility.AccessibleRole
                             }
                             class ButtonTranslator extends com.sun.java.accessibility.util.Translator {
                                 public constructor()
-                                public getAccessibleName(): java.lang.String
-                                public setAccessibleName(arg0: java.lang.String): void
+                                public getAccessibleName(): string
+                                public setAccessibleName(arg0: string): void
                                 public getAccessibleRole(): javax.accessibility.AccessibleRole
                             }
                             class ListTranslator extends com.sun.java.accessibility.util.Translator {
@@ -25,8 +25,8 @@ declare namespace com {
                             }
                             class LabelTranslator extends com.sun.java.accessibility.util.Translator {
                                 public constructor()
-                                public getAccessibleName(): java.lang.String
-                                public setAccessibleName(arg0: java.lang.String): void
+                                public getAccessibleName(): string
+                                public setAccessibleName(arg0: string): void
                                 public getAccessibleRole(): javax.accessibility.AccessibleRole
                             }
                             class TextComponentTranslator extends com.sun.java.accessibility.util.Translator {
@@ -70,7 +70,7 @@ declare namespace com {
                         public constructor()
                     }
                     class ComponentEvtDispatchThread extends java.lang.Thread {
-                        public constructor(arg0: java.lang.String)
+                        public constructor(arg0: string)
                         public run(): void
                     }
                     class EventQueueMonitorItem {
@@ -119,10 +119,10 @@ declare namespace com {
                         public setSource(arg0: java.lang.Object): void
                         public equals(arg0: java.lang.Object): boolean
                         public getAccessibleContext(): javax.accessibility.AccessibleContext
-                        public getAccessibleName(): java.lang.String
-                        public setAccessibleName(arg0: java.lang.String): void
-                        public getAccessibleDescription(): java.lang.String
-                        public setAccessibleDescription(arg0: java.lang.String): void
+                        public getAccessibleName(): string
+                        public setAccessibleName(arg0: string): void
+                        public getAccessibleDescription(): string
+                        public setAccessibleDescription(arg0: string): void
                         public getAccessibleRole(): javax.accessibility.AccessibleRole
                         public getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
                         public getAccessibleParent(): javax.accessibility.Accessible
@@ -162,7 +162,7 @@ declare namespace com {
                     }
                     class _AccessibleState extends javax.accessibility.AccessibleState {
                         public static MANAGES_DESCENDANTS: com.sun.java.accessibility.util._AccessibleState
-                        protected constructor(arg0: java.lang.String)
+                        protected constructor(arg0: string)
                     }
                     class AccessibilityEventMonitor {
                         protected static listenerList: com.sun.java.accessibility.util.AccessibilityListenerList

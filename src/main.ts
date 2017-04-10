@@ -22,9 +22,14 @@ if (command === "help") {
     process.exit(EXIT_STATUS.OK)
 }
 
-const envvar = env()
+let envstat: string | undefined = ""
+let envfile = `/tmp/1c-env-${(Date.now() / 3600000).toFixed()}`
+if (command === "env" || !fs.existsSync(envfile)) {
+    envstat = env()
+    fs.writeFileSync(envfile, envstat)
+}
 
-if (command === "env") console.error(envvar)
+if (command === "env") console.error(envstat)
 else if (command === "init") init(instdir)
 else if (command === "install") install(instdir)
 else if (command === "build") build(instdir, instmod, context)

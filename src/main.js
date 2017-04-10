@@ -21,9 +21,14 @@ else if (command === "version") {
     console.log(help_1.version(instdir));
     process.exit(const_1.EXIT_STATUS.OK);
 }
-var envvar = env_1["default"]();
+var envstat = "";
+var envfile = "/tmp/1c-env-" + (Date.now() / 3600000).toFixed();
+if (command === "env" || !fs.existsSync(envfile)) {
+    envstat = env_1["default"]();
+    fs.writeFileSync(envfile, envstat);
+}
 if (command === "env")
-    console.error(envvar);
+    console.error(envstat);
 else if (command === "init")
     init_1["default"](instdir);
 else if (command === "install")

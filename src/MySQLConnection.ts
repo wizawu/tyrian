@@ -1,7 +1,6 @@
 import ConnectionImpl, { Options } from "./ConnectionImpl"
 import { resultSetToJSON } from "./util"
 
-const String = java.lang.String
 type PreparedStatement = java.sql.PreparedStatement
 
 interface Column {
@@ -11,7 +10,7 @@ interface Column {
 export abstract class MySQLConnectionImpl implements ConnectionImpl {
     connection: java.sql.Connection
     driver: java.sql.Driver
-    url: java.lang.String
+    url: string
 
     private prepareStatement(sql: string, parameters: any[]): PreparedStatement {
         if (this.connection.isClosed()) this.connect()
@@ -126,7 +125,7 @@ export default class MySQLConnection extends MySQLConnectionImpl {
     constructor(options: Options) {
         super()
         this.driver = new com.mysql.cj.jdbc.Driver()
-        this.url = String.format(
+        this.url = java.lang.String.format(
             "jdbc:mysql://%s:%d/%s?user=%s&password=%s&testOnBorrow=true",
             options.host, options.port, options.database, options.user, options.password
         )

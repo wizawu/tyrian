@@ -11,7 +11,6 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var util_1 = require("./util");
-var String = java.lang.String;
 var MySQLConnectionImpl = (function () {
     function MySQLConnectionImpl() {
     }
@@ -128,7 +127,7 @@ var MySQLConnection = (function (_super) {
     function MySQLConnection(options) {
         var _this = _super.call(this) || this;
         _this.driver = new com.mysql.cj.jdbc.Driver();
-        _this.url = String.format("jdbc:mysql://%s:%d/%s?user=%s&password=%s&testOnBorrow=true", options.host, options.port, options.database, options.user, options.password);
+        _this.url = java.lang.String.format("jdbc:mysql://%s:%d/%s?user=%s&password=%s&testOnBorrow=true", options.host, options.port, options.database, options.user, options.password);
         _this.connect();
         return _this;
     }

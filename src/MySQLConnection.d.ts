@@ -2,7 +2,7 @@ import ConnectionImpl, { Options } from "./ConnectionImpl";
 export declare abstract class MySQLConnectionImpl implements ConnectionImpl {
     connection: java.sql.Connection;
     driver: java.sql.Driver;
-    url: java.lang.String;
+    url: string;
     private prepareStatement(sql, parameters);
     private indexName(columnNames, unique);
     connect(): void;

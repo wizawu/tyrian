@@ -1,11 +1,11 @@
 .PHONY: build test watch clean
 
-watch:
-	tsc -d -p . -w
-
 build:
 	1c install
 	tsc -d -p .
+
+watch:
+	tsc -d -p . -w
 
 test: build
 	1c build

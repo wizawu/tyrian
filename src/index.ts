@@ -1,9 +1,8 @@
-import ConnectionImpl, { Options } from "./ConnectionImpl"
 import MariaDBConnection from "./MariaDBConnection"
 import MySQLConnection from "./MySQLConnection"
+import { Options } from "./ConnectionImpl"
 
 export {
-    ConnectionImpl,
     MariaDBConnection,
     MySQLConnection,
     Options,

@@ -46,6 +46,7 @@ export const tsconfig = instdir => `
   },
   "include": [
     "${instdir}/@types/**/*.d.ts",
+    "lib/@types/**/*.d.ts",
     "src/**/*.ts",
     "src/**/*.tsx"
   ]

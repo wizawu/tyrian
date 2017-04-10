@@ -59,7 +59,9 @@ function compiler(watch: boolean, instdir: string, instmod: string, context: str
             rules: [{
                 test: /\.tsx?$/,
                 loader: "ts-loader",
-                exclude: /node_modules/,
+            }, {
+                test: /\.json$/,
+                loader: "json-loader",
             }, {
                 test: /^[^!]+\.css$/,
                 use: cssLoaders,

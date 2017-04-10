@@ -1,6 +1,6 @@
 {
   "name": "1c",
-  "version": "6.5.3",
+  "version": "6.5.4",
   "bin": "./bin/1c",
   "dependencies": {
     "@types/chalk": "^0.4.31",
@@ -11,6 +11,7 @@
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.0",
     "html-webpack-plugin": "^2.28.0",
+    "json-loader": "^0.5.4",
     "less": "^2.7.2",
     "less-loader": "^4.0.3",
     "object-path": "^0.11.4",

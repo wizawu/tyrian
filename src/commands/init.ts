@@ -56,7 +56,7 @@ export default function (instdir: string) {
     ["build", "build/assets", "build/test", "lib", "node_modules", "src", "test", "test/js"].forEach(dir => {
         try {
             fs.mkdirSync(dir)
-            console.log(chalk.cyan("mkdir " + dir))
+            console.log(chalk.green("mkdir " + dir))
         } catch (err) {
             if (err.code === "EEXIST") {
                 console.error(chalk.yellow(err.message))
@@ -68,7 +68,7 @@ export default function (instdir: string) {
     ["assets", "assets/img", "css", "html", "js", "js/entry", "js/@types"].forEach(dir => {
         try {
             fs.mkdirSync("src/" + dir)
-            console.log(chalk.cyan("mkdir src/" + dir))
+            console.log(chalk.green("mkdir src/" + dir))
         } catch (err) {
             if (err.code === "EEXIST") {
                 console.error(chalk.yellow(err.message))
@@ -94,7 +94,7 @@ export default function (instdir: string) {
         if (!fs.existsSync(path)) {
             try {
                 fs.writeFileSync(path, content)
-                console.log(chalk.cyan("create " + path))
+                console.log(chalk.green("create " + path))
             } catch (err) {
                 if (err.code === "EEXIST") {
                     console.error(chalk.yellow(err.message))

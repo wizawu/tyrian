@@ -26,6 +26,10 @@ function compiler(watch, instdir, instmod, context) {
                 var basename = filename.replace(/\.j\.ts$/, "");
                 entry["build/test/" + basename] = context + "/test/js/" + filename;
             }
+            else if (/\.tsx?/.test(filename) && !/\.d\.ts$/.test(filename)) {
+                var basename = filename.replace(/\.tsx?$/, "");
+                entry["build/test/" + basename + ".min.js"] = context + "/test/js/" + filename;
+            }
         });
     }
     var html = fs.existsSync(context + "/src/html") ? (fs.readdirSync(context + "/src/html").filter(function (filename) { return /\.html$/.test(filename); })) : [];

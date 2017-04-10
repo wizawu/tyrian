@@ -26,6 +26,8 @@ function safeType(type) {
         return "any";
     if (type.indexOf("$") >= 0)
         return "any";
+    if (type === "java.lang.String")
+        return "string";
     return type;
 }
 function nextToken(ctx) {

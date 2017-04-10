@@ -20,6 +20,7 @@ function safeType(type: string): string {
     if (/>\.\w+$/.test(type)) return "any"
     // XXX$YYY
     if (type.indexOf("$") >= 0) return "any"
+    if (type === "java.lang.String") return "string"
     return type
 }
 

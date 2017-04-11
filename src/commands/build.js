@@ -49,7 +49,7 @@ function compiler(watch, instdir, instmod, context) {
     return webpack({
         devtool: watch && "inline-source-map",
         context: context,
-        resolve: { extensions: [".js", ".j.ts", ".ts", ".tsx"] },
+        resolve: { extensions: [".js", ".ts", ".j.ts", ".tsx"] },
         resolveLoader: { modules: [instmod] },
         entry: entry,
         output: { path: context, filename: "[name]" },

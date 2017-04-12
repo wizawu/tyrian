@@ -74,17 +74,21 @@ function compiler(watch, instdir, instmod, context) {
                 template: context + "/src/html/" + filename,
                 inject: false
             });
-        }).concat(watch ? [] : [
-            new webpack.optimize.UglifyJsPlugin({
-                minimize: true,
-                sourceMap: false
-            })
-        ]).concat([
+        }).concat([
             new CopyWebpackPlugin([{
                     context: context + "/src/assets",
                     from: "**/*",
                     to: context + "/build/assets"
-                }])
+                }]),
+            new webpack.DefinePlugin({
+                "process.env": {
+                    NODE_ENV: watch ? '"development"' : '"production"'
+                }
+            }),
+            new webpack.optimize.UglifyJsPlugin({
+                minimize: watch ? false : true,
+                sourceMap: false
+            }),
         ])
     });
 }

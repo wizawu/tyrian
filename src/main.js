@@ -39,5 +39,7 @@ else if (command === "watch")
     build_1.watch(instdir, instmod, context);
 else if (command === "run" && target)
     run_1["default"](target);
+else if (command === "rerun" && target)
+    run_1["default"](target, true);
 else
     help_1.help(instdir, const_1.EXIT_STATUS.BAD_COMMAND);

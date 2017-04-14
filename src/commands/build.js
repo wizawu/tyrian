@@ -20,15 +20,17 @@ function compiler(watch, instdir, instmod, context) {
             }
         });
     }
-    if (fs.existsSync(context + "/test/js")) {
-        fs.readdirSync(context + "/test/js").forEach(function (filename) {
+    if (fs.existsSync(context + "/src/js/test")) {
+        fs.readdirSync(context + "/src/js/test").forEach(function (filename) {
+            if (!/^test/.test(filename))
+                return;
             if (/\.j\.ts$/.test(filename)) {
                 var basename = filename.replace(/\.j\.ts$/, "");
-                entry["build/test/" + basename] = context + "/test/js/" + filename;
+                entry["build/" + basename] = context + "/src/js/test/" + filename;
             }
             else if (/\.tsx?/.test(filename) && !/\.d\.ts$/.test(filename)) {
                 var basename = filename.replace(/\.tsx?$/, "");
-                entry["build/test/" + basename + ".min.js"] = context + "/test/js/" + filename;
+                entry["build/assets/js/" + basename + ".min.js"] = context + "/src/js/test/" + filename;
             }
         });
     }

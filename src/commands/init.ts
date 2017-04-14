@@ -15,8 +15,6 @@ const PACKAGE_JSON = `
 
 // .gitignore
 const _GITIGNORE = `
-*.j.d.ts
-*.j.js
 .gradle
 build
 build.gradle
@@ -49,12 +47,15 @@ export const tsconfig = instdir => `
     "lib/@types/**/*.d.ts",
     "src/**/*.ts",
     "src/**/*.tsx"
+  ],
+  "exclude": [
+    "src/js/test/*"
   ]
 }
 `.trim()
 
 export default function (instdir: string) {
-    ["build", "build/assets", "build/test", "lib", "node_modules", "src", "test", "test/js"].forEach(dir => {
+    ["build", "build/assets", "lib", "node_modules", "src"].forEach(dir => {
         try {
             fs.mkdirSync(dir)
             console.log(chalk.green("mkdir " + dir))
@@ -66,7 +67,7 @@ export default function (instdir: string) {
             }
         }
     });
-    ["assets", "assets/img", "css", "html", "js", "js/entry", "js/@types"].forEach(dir => {
+    ["assets", "assets/img", "css", "html", "js", "js/entry", "js/test", "js/@types"].forEach(dir => {
         try {
             fs.mkdirSync("src/" + dir)
             console.log(chalk.green("mkdir src/" + dir))
@@ -89,8 +90,8 @@ export default function (instdir: string) {
         ["src/html/index.html", "<!DOCTYPE html>"],
         ["src/js/entry/index.tsx", `import "../../css/index.less"`],
         ["src/js/entry/main.j.ts", `org.pmw.tinylog.Logger.info(java.lang.System.getProperty("java.version"))`],
+        ["src/js/test/test.j.ts", `org.pmw.tinylog.Logger.warn("test")`],
         ["src/js/@types/common.d.ts", ""],
-        ["test/js/test.j.ts", `org.pmw.tinylog.Logger.warn("test")`],
     ].forEach(([path, content]: string[]) => {
         if (!fs.existsSync(path)) {
             try {

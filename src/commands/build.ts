@@ -6,7 +6,7 @@ const webpack = require("webpack")
 const CopyWebpackPlugin = require("copy-webpack-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 
-function compiler(watch: boolean, instdir: string, instmod: string, context: string) {
+function compiler(instdir: string, instmod: string, context: string, watch: boolean) {
     let entry = {}
     // source entry
     if (fs.existsSync(`${context}/src/js/entry`)) {
@@ -36,7 +36,7 @@ function compiler(watch: boolean, instdir: string, instmod: string, context: str
 
     let html = fs.existsSync(`${context}/src/html`) ? (
         fs.readdirSync(`${context}/src/html`).filter(filename => /\.html$/.test(filename))
-     ) : []
+    ) : []
 
     let cssLoaders = [{
         loader: "style-loader"
@@ -99,15 +99,15 @@ function compiler(watch: boolean, instdir: string, instmod: string, context: str
     })
 }
 
-export function build(instdir: string, instmod: string, context: string) {
-    compiler(false, instdir, instmod, context).run((err, stats) => {
-        console.log(stats.toString({ colors: true }))
-        if (stats.hasErrors()) process.exit(EXIT_STATUS.WEBPACK_COMPILE_ERROR)
-    })
-}
-
-export function watch(instdir: string, instmod: string, context: string) {
-    compiler(true, instdir, instmod, context).watch({ poll: true }, (err, stats) => {
-        console.log(stats.toString({ colors: true }))
-    })
+export default function (instdir: string, instmod: string, context: string, watch: boolean) {
+    if (watch) {
+        compiler(instdir, instmod, context, true).watch({ poll: true }, (err, stats) => {
+            console.log(stats.toString({ colors: true }))
+        })
+    } else {
+        compiler(instdir, instmod, context, false).run((err, stats) => {
+            console.log(stats.toString({ colors: true }))
+            if (stats.hasErrors()) process.exit(EXIT_STATUS.WEBPACK_COMPILE_ERROR)
+        })
+    }
 }

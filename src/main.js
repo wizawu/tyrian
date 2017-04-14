@@ -2,18 +2,17 @@
 exports.__esModule = true;
 var fs = require("fs");
 var path = require("path");
+var build_1 = require("./commands/build");
 var env_1 = require("./commands/env");
 var init_1 = require("./commands/init");
 var install_1 = require("./commands/install");
 var run_1 = require("./commands/run");
-var build_1 = require("./commands/build");
-var help_1 = require("./commands/help");
 var const_1 = require("./const");
+var help_1 = require("./commands/help");
 var instdir = path.resolve(path.dirname(process.argv[1]) + "/..");
 var instmod = instdir + (fs.existsSync(instdir + "/node_modules/webpack") ? "/node_modules" : "/..");
 var command = process.argv[2];
 var context = path.resolve(".");
-var target = process.argv[3] && path.resolve(process.argv[3]);
 if (command === "help") {
     help_1.help(instdir, const_1.EXIT_STATUS.OK);
 }
@@ -34,12 +33,8 @@ else if (command === "init")
 else if (command === "install")
     install_1["default"](instdir);
 else if (command === "build")
-    build_1.build(instdir, instmod, context);
-else if (command === "watch")
-    build_1.watch(instdir, instmod, context);
-else if (command === "run" && target)
-    run_1["default"](target);
-else if (command === "rerun" && target)
-    run_1["default"](target, true);
+    build_1["default"](instdir, instmod, context, process.argv[3] === "-w");
+else if (command === "run" && process.argv[3])
+    run_1["default"](process.argv.reverse()[0], process.argv[3] === "-w");
 else
     help_1.help(instdir, const_1.EXIT_STATUS.BAD_COMMAND);

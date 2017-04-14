@@ -1,19 +1,18 @@
 import * as fs from "fs"
 import * as path from "path"
 
+import build from "./commands/build"
 import env from "./commands/env"
 import init from "./commands/init"
 import install from "./commands/install"
 import run from "./commands/run"
-import { build, watch } from "./commands/build"
-import { help, version } from "./commands/help"
 import { EXIT_STATUS } from "./const"
+import { help, version } from "./commands/help"
 
 const instdir = path.resolve(path.dirname(process.argv[1]) + "/..")
 const instmod = instdir + (fs.existsSync(instdir + "/node_modules/webpack") ? "/node_modules" : "/..")
 const command = process.argv[2]
 const context = path.resolve(".")
-const target = process.argv[3] && path.resolve(process.argv[3])
 
 if (command === "help") {
     help(instdir, EXIT_STATUS.OK)
@@ -32,8 +31,6 @@ if (command === "env" || !fs.existsSync(envfile)) {
 if (command === "env") console.error(envstat)
 else if (command === "init") init(instdir)
 else if (command === "install") install(instdir)
-else if (command === "build") build(instdir, instmod, context)
-else if (command === "watch") watch(instdir, instmod, context)
-else if (command === "run" && target) run(target)
-else if (command === "rerun" && target) run(target, true)
+else if (command === "build") build(instdir, instmod, context, process.argv[3] === "-w")
+else if (command === "run" && process.argv[3]) run(process.argv.reverse()[0], process.argv[3] === "-w")
 else help(instdir, EXIT_STATUS.BAD_COMMAND)

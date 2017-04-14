@@ -6,7 +6,7 @@ function version(instdir) {
 }
 exports.version = version;
 function help(instdir, status) {
-    console.error(("\n\nVersion: " + version(instdir) + "\n\nUsage:\n  1c env                    check running environment of 1c\n  1c init                   initialize a new project in current directory\n  1c install                install dependencies in package.json\n  1c build                  build the project in current directory\n  1c watch                  watch and rebuild the project\n  1c run build/<outfile>    run output file compiled from .j.ts\n  1c rerun build/<outfile>  run output file and enable hot reload\n  1c version                output version number\n  1c help                   output usage information\n\n    ").trim());
+    console.error(("\n\nVersion: " + version(instdir) + "\n\nUsage:\n  1c env                        check running environment of 1c\n  1c init                       initialize a new project in current directory\n  1c install                    install dependencies in package.json\n  1c build [-w]                 build the project in current directory\n  1c run [-w] build/<outfile>   run output file compiled from .j.ts\n  1c version                    output version number\n  1c help                       output usage information\n\nOptions:\n  -w    watch changes and re-build/re-run\n\n    ").trim());
     process.exit(status);
 }
 exports.help = help;

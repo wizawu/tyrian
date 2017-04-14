@@ -6,7 +6,7 @@ var autoprefixer = require("autoprefixer");
 var webpack = require("webpack");
 var CopyWebpackPlugin = require("copy-webpack-plugin");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
-function compiler(watch, instdir, instmod, context) {
+function compiler(instdir, instmod, context, watch) {
     var entry = {};
     if (fs.existsSync(context + "/src/js/entry")) {
         fs.readdirSync(context + "/src/js/entry").forEach(function (filename) {
@@ -94,17 +94,18 @@ function compiler(watch, instdir, instmod, context) {
         ])
     });
 }
-function build(instdir, instmod, context) {
-    compiler(false, instdir, instmod, context).run(function (err, stats) {
-        console.log(stats.toString({ colors: true }));
-        if (stats.hasErrors())
-            process.exit(const_1.EXIT_STATUS.WEBPACK_COMPILE_ERROR);
-    });
+function default_1(instdir, instmod, context, watch) {
+    if (watch) {
+        compiler(instdir, instmod, context, true).watch({ poll: true }, function (err, stats) {
+            console.log(stats.toString({ colors: true }));
+        });
+    }
+    else {
+        compiler(instdir, instmod, context, false).run(function (err, stats) {
+            console.log(stats.toString({ colors: true }));
+            if (stats.hasErrors())
+                process.exit(const_1.EXIT_STATUS.WEBPACK_COMPILE_ERROR);
+        });
+    }
 }
-exports.build = build;
-function watch(instdir, instmod, context) {
-    compiler(true, instdir, instmod, context).watch({ poll: true }, function (err, stats) {
-        console.log(stats.toString({ colors: true }));
-    });
-}
-exports.watch = watch;
+exports["default"] = default_1;

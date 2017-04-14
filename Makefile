@@ -1,6 +1,9 @@
-.PHONY: build test watch clean
+.PHONY: build test watch clean install
 
-build:
+install: clean
+	1c install
+
+build: install
 	tsc -d -p .
 
 watch:
@@ -11,4 +14,4 @@ test: build
 	ls build/test* | xargs -I {} 1c run {}
 
 clean:
-	rm -rf build lib node_modules
+	rm -rf build lib node_modules tsconfig.json

@@ -1,6 +1,6 @@
 /// <reference path="index.d.ts" />
 
-import { MySQLConnection, Options } from "../../src/index"
+import { MySQLConnection, Options } from "../index"
 
 const { assertThat } = org.assertj.core.api.Assertions
 

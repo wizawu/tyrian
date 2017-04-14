@@ -1,6 +1,6 @@
 /// <reference path="index.d.ts" />
 
-import { MariaDBConnection, Options } from "../../src/index"
+import { MariaDBConnection, Options } from "../index"
 
 const { assertThat } = org.assertj.core.api.Assertions
 

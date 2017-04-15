@@ -10,7 +10,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-var MySQLConnection_1 = require("./MySQLConnection");
+var JDBCConnection_1 = require("./JDBCConnection");
 var MariaDBConnection = (function (_super) {
     __extends(MariaDBConnection, _super);
     function MariaDBConnection(options) {
@@ -21,5 +21,5 @@ var MariaDBConnection = (function (_super) {
         return _this;
     }
     return MariaDBConnection;
-}(MySQLConnection_1.MySQLConnectionImpl));
+}(JDBCConnection_1.default));
 exports.default = MariaDBConnection;

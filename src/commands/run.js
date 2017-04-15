@@ -5,7 +5,7 @@ var path = require("path");
 var child_process_1 = require("child_process");
 function default_1(target, reload) {
     var dirname = path.resolve(path.dirname(target));
-    var lib = path.resolve(dirname + (/test$/.test(dirname) ? "/../../lib" : "/../lib"));
+    var lib = path.resolve(dirname + "/../lib");
     var classpath = fs.readdirSync(lib).map(function (jar) { return jar === "@types" ? "" : lib + "/" + jar; }).join(":");
     var run = function () { return child_process_1.spawn("jjs", ["-cp", classpath, target], { stdio: "inherit" }); };
     var child = run();

@@ -22,7 +22,7 @@ function compiler(watch, instdir, instmod, context) {
     }
     if (fs.existsSync(context + "/src/js/test")) {
         fs.readdirSync(context + "/src/js/test").forEach(function (filename) {
-            if (!/^test/.test(filename))
+            if (!/^[Tt]est/.test(filename))
                 return;
             if (/\.j\.ts$/.test(filename)) {
                 var basename = filename.replace(/\.j\.ts$/, "");

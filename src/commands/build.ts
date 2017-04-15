@@ -23,7 +23,7 @@ function compiler(watch: boolean, instdir: string, instmod: string, context: str
     // test entry
     if (fs.existsSync(`${context}/src/js/test`)) {
         fs.readdirSync(`${context}/src/js/test`).forEach(filename => {
-            if (!/^test/.test(filename)) return
+            if (!/^[Tt]est/.test(filename)) return
             if (/\.j\.ts$/.test(filename)) {
                 let basename = filename.replace(/\.j\.ts$/, "")
                 entry[`build/${basename}`] = `${context}/src/js/test/${filename}`

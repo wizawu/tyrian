@@ -12,7 +12,7 @@ function compiler(instdir, instmod, context, watch) {
         fs.readdirSync(context + "/src/js/entry").forEach(function (filename) {
             if (/\.j\.ts$/.test(filename)) {
                 var basename = filename.replace(/\.j\.ts$/, "");
-                entry["build/" + basename] = context + "/src/js/entry/" + filename;
+                entry["build/" + basename + ".js"] = context + "/src/js/entry/" + filename;
             }
             else if (/\.tsx?/.test(filename) && !/\.d\.ts$/.test(filename)) {
                 var basename = filename.replace(/\.tsx?$/, "");
@@ -26,7 +26,7 @@ function compiler(instdir, instmod, context, watch) {
                 return;
             if (/\.j\.ts$/.test(filename)) {
                 var basename = filename.replace(/\.j\.ts$/, "");
-                entry["build/" + basename] = context + "/src/js/test/" + filename;
+                entry["build/" + basename + ".js"] = context + "/src/js/test/" + filename;
             }
             else if (/\.tsx?/.test(filename) && !/\.d\.ts$/.test(filename)) {
                 var basename = filename.replace(/\.tsx?$/, "");
@@ -49,7 +49,7 @@ function compiler(instdir, instmod, context, watch) {
             }
         }];
     return webpack({
-        devtool: watch && "inline-source-map",
+        devtool: "source-map",
         context: context,
         resolve: { extensions: [".js", ".ts", ".j.ts", ".tsx"] },
         resolveLoader: { modules: [instmod] },
@@ -87,9 +87,9 @@ function compiler(instdir, instmod, context, watch) {
                     NODE_ENV: watch ? '"development"' : '"production"'
                 }
             }),
+        ]).concat(watch ? [] : [
             new webpack.optimize.UglifyJsPlugin({
-                minimize: watch ? false : true,
-                sourceMap: false
+                sourceMap: true
             }),
         ])
     });

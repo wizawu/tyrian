@@ -13,7 +13,7 @@ function compiler(instdir: string, instmod: string, context: string, watch: bool
         fs.readdirSync(`${context}/src/js/entry`).forEach(filename => {
             if (/\.j\.ts$/.test(filename)) {
                 let basename = filename.replace(/\.j\.ts$/, "")
-                entry[`build/${basename}`] = `${context}/src/js/entry/${filename}`
+                entry[`build/${basename}.js`] = `${context}/src/js/entry/${filename}`
             } else if (/\.tsx?/.test(filename) && !/\.d\.ts$/.test(filename)) {
                 let basename = filename.replace(/\.tsx?$/, "")
                 entry[`build/assets/js/${basename}.min.js`] = `${context}/src/js/entry/${filename}`
@@ -26,7 +26,7 @@ function compiler(instdir: string, instmod: string, context: string, watch: bool
             if (!/^[Tt]est/.test(filename)) return
             if (/\.j\.ts$/.test(filename)) {
                 let basename = filename.replace(/\.j\.ts$/, "")
-                entry[`build/${basename}`] = `${context}/src/js/test/${filename}`
+                entry[`build/${basename}.js`] = `${context}/src/js/test/${filename}`
             } else if (/\.tsx?/.test(filename) && !/\.d\.ts$/.test(filename)) {
                 let basename = filename.replace(/\.tsx?$/, "")
                 entry[`build/assets/js/${basename}.min.js`] = `${context}/src/js/test/${filename}`
@@ -53,7 +53,7 @@ function compiler(instdir: string, instmod: string, context: string, watch: bool
     }]
 
     return webpack({
-        devtool: watch && "inline-source-map",
+        devtool: "source-map",
         context: context,
         resolve: { extensions: [".js", ".ts", ".j.ts", ".tsx"] },
         resolveLoader: { modules: [instmod] },
@@ -91,9 +91,9 @@ function compiler(instdir: string, instmod: string, context: string, watch: bool
                     NODE_ENV: watch ? '"development"' : '"production"'
                 }
             }),
+        ]).concat(watch ? [] : [
             new webpack.optimize.UglifyJsPlugin({
-                minimize: watch ? false : true,
-                sourceMap: false,
+                sourceMap: true,
             }),
         ]),
     })

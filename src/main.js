@@ -35,6 +35,6 @@ else if (command === "install")
 else if (command === "build")
     build_1["default"](instdir, instmod, context, process.argv[3] === "-w");
 else if (command === "run" && process.argv[3])
-    run_1["default"](process.argv.reverse()[0], process.argv[3] === "-w");
+    run_1["default"](process.argv.pop(), process.argv[3] === "-w");
 else
     help_1.help(instdir, const_1.EXIT_STATUS.BAD_COMMAND);

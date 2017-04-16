@@ -100,10 +100,14 @@ function compilers(instdir: string, instmod: string, context: string, watch: boo
         ] : []),
     })
 
-    return [
-        createCompiler(entryJS, html, !watch),
-        createCompiler(entryJJS, [], false),
-    ]
+    let list = []
+    if (Object.keys(entryJS).length > 0) {
+        list.push(createCompiler(entryJS, html, !watch) as never)
+    }
+    if (Object.keys(entryJJS).length > 0) {
+        list.push(createCompiler(entryJJS, [], false) as never)
+    }
+    return list
 }
 
 export default function (instdir: string, instmod: string, context: string, watch: boolean) {

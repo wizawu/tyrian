@@ -94,10 +94,14 @@ function compilers(instdir, instmod, context, watch) {
             })
         ] : [])
     }); };
-    return [
-        createCompiler(entryJS, html, !watch),
-        createCompiler(entryJJS, [], false),
-    ];
+    var list = [];
+    if (Object.keys(entryJS).length > 0) {
+        list.push(createCompiler(entryJS, html, !watch));
+    }
+    if (Object.keys(entryJJS).length > 0) {
+        list.push(createCompiler(entryJJS, [], false));
+    }
+    return list;
 }
 function default_1(instdir, instmod, context, watch) {
     if (watch) {

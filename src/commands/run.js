@@ -16,7 +16,7 @@ function default_1(target, reload) {
         child.on("exit", function (code) { return process.exit(code); });
         var lookupSource = function (chunk) {
             var insert = [];
-            var regex = new RegExp(target + ":\\d+:\\d+", "g");
+            var regex = new RegExp(target + ":\\d+(:\\d+)?", "g");
             while (true) {
                 var match = regex.exec(chunk);
                 if (!match)
@@ -38,10 +38,10 @@ function default_1(target, reload) {
             return chunk;
         };
         child.stdout.on("data", function (chunk) {
-            console.log(lookupSource(chunk.toString()));
+            process.stdout.write(lookupSource(chunk.toString()));
         });
         child.stderr.on("data", function (chunk) {
-            console.error(lookupSource(chunk.toString()));
+            process.stderr.write(lookupSource(chunk.toString()));
         });
         return child;
     };

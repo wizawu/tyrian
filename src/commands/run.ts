@@ -17,7 +17,7 @@ export default function (target: string, reload?: boolean) {
 
         let lookupSource = chunk => {
             let insert: any[] = []
-            let regex = new RegExp(target + ":\\d+:\\d+", "g")
+            let regex = new RegExp(target + ":\\d+(:\\d+)?", "g")
             while (true) {
                 let match = regex.exec(chunk)
                 if (!match) break
@@ -39,10 +39,10 @@ export default function (target: string, reload?: boolean) {
         }
 
         child.stdout.on("data", chunk => {
-            console.log(lookupSource(chunk.toString()))
+            process.stdout.write(lookupSource(chunk.toString()))
         })
         child.stderr.on("data", chunk => {
-            console.error(lookupSource(chunk.toString()))
+            process.stderr.write(lookupSource(chunk.toString()))
         })
 
         return child

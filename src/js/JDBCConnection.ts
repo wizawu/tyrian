@@ -48,13 +48,27 @@ abstract class JDBCConnection implements ConnectionImpl {
     ensureIndex(tableName: string, columnNames: string[]) {
         let indexName = this.indexName(columnNames, false)
         let indexColumns = columnNames.join(",")
-        this.execute(`CREATE INDEX IF NOT EXISTS ${indexName} ON ${tableName}(${indexColumns})`, [])
+        try {
+            this.execute(`CREATE INDEX IF NOT EXISTS ${indexName} ON ${tableName}(${indexColumns})`, [])
+        } catch (ex) {
+            try {
+                this.execute(`CREATE INDEX ${indexName} ON ${tableName}(${indexColumns})`, [])
+            } catch (ex) {
+            }
+        }
     }
 
     ensureUniqueIndex(tableName: string, columnNames: string[]) {
         let indexName = this.indexName(columnNames, true)
         let indexColumns = columnNames.join(",")
-        this.execute(`CREATE UNIQUE INDEX IF NOT EXISTS ${indexName} ON ${tableName}(${indexColumns})`, [])
+        try {
+            this.execute(`CREATE UNIQUE INDEX IF NOT EXISTS ${indexName} ON ${tableName}(${indexColumns})`, [])
+        } catch (ex) {
+            try {
+                this.execute(`CREATE UNIQUE INDEX ${indexName} ON ${tableName}(${indexColumns})`, [])
+            } catch (ex) {
+            }
+        }
     }
 
     one<T>(sql: string, parameters: any[]): T | null {

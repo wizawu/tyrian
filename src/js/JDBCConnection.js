@@ -36,12 +36,30 @@ var JDBCConnection = (function () {
     JDBCConnection.prototype.ensureIndex = function (tableName, columnNames) {
         var indexName = this.indexName(columnNames, false);
         var indexColumns = columnNames.join(",");
-        this.execute("CREATE INDEX IF NOT EXISTS " + indexName + " ON " + tableName + "(" + indexColumns + ")", []);
+        try {
+            this.execute("CREATE INDEX IF NOT EXISTS " + indexName + " ON " + tableName + "(" + indexColumns + ")", []);
+        }
+        catch (ex) {
+            try {
+                this.execute("CREATE INDEX " + indexName + " ON " + tableName + "(" + indexColumns + ")", []);
+            }
+            catch (ex) {
+            }
+        }
     };
     JDBCConnection.prototype.ensureUniqueIndex = function (tableName, columnNames) {
         var indexName = this.indexName(columnNames, true);
         var indexColumns = columnNames.join(",");
-        this.execute("CREATE UNIQUE INDEX IF NOT EXISTS " + indexName + " ON " + tableName + "(" + indexColumns + ")", []);
+        try {
+            this.execute("CREATE UNIQUE INDEX IF NOT EXISTS " + indexName + " ON " + tableName + "(" + indexColumns + ")", []);
+        }
+        catch (ex) {
+            try {
+                this.execute("CREATE UNIQUE INDEX " + indexName + " ON " + tableName + "(" + indexColumns + ")", []);
+            }
+            catch (ex) {
+            }
+        }
     };
     JDBCConnection.prototype.one = function (sql, parameters) {
         var statement = this.prepareStatement("SELECT 0", []);

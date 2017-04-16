@@ -6,17 +6,18 @@ var autoprefixer = require("autoprefixer");
 var webpack = require("webpack");
 var CopyWebpackPlugin = require("copy-webpack-plugin");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
-function compiler(instdir, instmod, context, watch) {
-    var entry = {};
+function compilers(instdir, instmod, context, watch) {
+    var entryJS = {};
+    var entryJJS = {};
     if (fs.existsSync(context + "/src/js/entry")) {
         fs.readdirSync(context + "/src/js/entry").forEach(function (filename) {
             if (/\.j\.ts$/.test(filename)) {
                 var basename = filename.replace(/\.j\.ts$/, "");
-                entry["build/" + basename + ".js"] = context + "/src/js/entry/" + filename;
+                entryJJS["build/" + basename + ".js"] = context + "/src/js/entry/" + filename;
             }
             else if (/\.tsx?/.test(filename) && !/\.d\.ts$/.test(filename)) {
                 var basename = filename.replace(/\.tsx?$/, "");
-                entry["build/assets/js/" + basename + ".min.js"] = context + "/src/js/entry/" + filename;
+                entryJS["build/assets/js/" + basename + ".min.js"] = context + "/src/js/entry/" + filename;
             }
         });
     }
@@ -26,11 +27,11 @@ function compiler(instdir, instmod, context, watch) {
                 return;
             if (/\.j\.ts$/.test(filename)) {
                 var basename = filename.replace(/\.j\.ts$/, "");
-                entry["build/" + basename + ".js"] = context + "/src/js/test/" + filename;
+                entryJJS["build/" + basename + ".js"] = context + "/src/js/test/" + filename;
             }
             else if (/\.tsx?/.test(filename) && !/\.d\.ts$/.test(filename)) {
                 var basename = filename.replace(/\.tsx?$/, "");
-                entry["build/assets/js/" + basename + ".min.js"] = context + "/src/js/test/" + filename;
+                entryJS["build/assets/js/" + basename + ".min.js"] = context + "/src/js/test/" + filename;
             }
         });
     }
@@ -48,7 +49,7 @@ function compiler(instdir, instmod, context, watch) {
                 ]
             }
         }];
-    return webpack({
+    var createCompiler = function (entry, html, minimize) { return webpack({
         devtool: "source-map",
         context: context,
         resolve: { extensions: [".js", ".ts", ".j.ts", ".tsx"] },
@@ -84,27 +85,35 @@ function compiler(instdir, instmod, context, watch) {
                 }]),
             new webpack.DefinePlugin({
                 "process.env": {
-                    NODE_ENV: watch ? '"development"' : '"production"'
+                    NODE_ENV: minimize ? '"production"' : '"development"'
                 }
             }),
-        ]).concat(watch ? [] : [
+        ]).concat(minimize ? [
             new webpack.optimize.UglifyJsPlugin({
                 sourceMap: true
-            }),
-        ])
-    });
+            })
+        ] : [])
+    }); };
+    return [
+        createCompiler(entryJS, html, !watch),
+        createCompiler(entryJJS, [], false),
+    ];
 }
 function default_1(instdir, instmod, context, watch) {
     if (watch) {
-        compiler(instdir, instmod, context, true).watch({ poll: true }, function (err, stats) {
-            console.log(stats.toString({ colors: true }));
+        compilers(instdir, instmod, context, true).forEach(function (c) {
+            return c.watch({ poll: true }, function (err, stats) {
+                console.log(stats.toString({ colors: true }));
+            });
         });
     }
     else {
-        compiler(instdir, instmod, context, false).run(function (err, stats) {
-            console.log(stats.toString({ colors: true }));
-            if (stats.hasErrors())
-                process.exit(const_1.EXIT_STATUS.WEBPACK_COMPILE_ERROR);
+        compilers(instdir, instmod, context, false).forEach(function (c) {
+            return c.run(function (err, stats) {
+                console.log(stats.toString({ colors: true }));
+                if (stats.hasErrors())
+                    process.exit(const_1.EXIT_STATUS.WEBPACK_COMPILE_ERROR);
+            });
         });
     }
 }

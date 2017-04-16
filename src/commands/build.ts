@@ -6,17 +6,19 @@ const webpack = require("webpack")
 const CopyWebpackPlugin = require("copy-webpack-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 
-function compiler(instdir: string, instmod: string, context: string, watch: boolean) {
-    let entry = {}
+function compilers(instdir: string, instmod: string, context: string, watch: boolean): any[] {
+    let entryJS = {}
+    let entryJJS = {}
+
     // source entry
     if (fs.existsSync(`${context}/src/js/entry`)) {
         fs.readdirSync(`${context}/src/js/entry`).forEach(filename => {
             if (/\.j\.ts$/.test(filename)) {
                 let basename = filename.replace(/\.j\.ts$/, "")
-                entry[`build/${basename}.js`] = `${context}/src/js/entry/${filename}`
+                entryJJS[`build/${basename}.js`] = `${context}/src/js/entry/${filename}`
             } else if (/\.tsx?/.test(filename) && !/\.d\.ts$/.test(filename)) {
                 let basename = filename.replace(/\.tsx?$/, "")
-                entry[`build/assets/js/${basename}.min.js`] = `${context}/src/js/entry/${filename}`
+                entryJS[`build/assets/js/${basename}.min.js`] = `${context}/src/js/entry/${filename}`
             }
         })
     }
@@ -26,10 +28,10 @@ function compiler(instdir: string, instmod: string, context: string, watch: bool
             if (!/^[Tt]est/.test(filename)) return
             if (/\.j\.ts$/.test(filename)) {
                 let basename = filename.replace(/\.j\.ts$/, "")
-                entry[`build/${basename}.js`] = `${context}/src/js/test/${filename}`
+                entryJJS[`build/${basename}.js`] = `${context}/src/js/test/${filename}`
             } else if (/\.tsx?/.test(filename) && !/\.d\.ts$/.test(filename)) {
                 let basename = filename.replace(/\.tsx?$/, "")
-                entry[`build/assets/js/${basename}.min.js`] = `${context}/src/js/test/${filename}`
+                entryJS[`build/assets/js/${basename}.min.js`] = `${context}/src/js/test/${filename}`
             }
         })
     }
@@ -52,7 +54,7 @@ function compiler(instdir: string, instmod: string, context: string, watch: bool
         }
     }]
 
-    return webpack({
+    let createCompiler = (entry: any, html: any[], minimize: boolean) => webpack({
         devtool: "source-map",
         context: context,
         resolve: { extensions: [".js", ".ts", ".j.ts", ".tsx"] },
@@ -88,26 +90,35 @@ function compiler(instdir: string, instmod: string, context: string, watch: bool
             }]),
             new webpack.DefinePlugin({
                 "process.env": {
-                    NODE_ENV: watch ? '"development"' : '"production"'
+                    NODE_ENV: minimize ? '"production"' : '"development"'
                 }
             }),
-        ]).concat(watch ? [] : [
+        ]).concat(minimize ? [
             new webpack.optimize.UglifyJsPlugin({
                 sourceMap: true,
-            }),
-        ]),
+            })
+        ] : []),
     })
+
+    return [
+        createCompiler(entryJS, html, !watch),
+        createCompiler(entryJJS, [], false),
+    ]
 }
 
 export default function (instdir: string, instmod: string, context: string, watch: boolean) {
     if (watch) {
-        compiler(instdir, instmod, context, true).watch({ poll: true }, (err, stats) => {
-            console.log(stats.toString({ colors: true }))
-        })
+        compilers(instdir, instmod, context, true).forEach(c =>
+            c.watch({ poll: true }, (err, stats) => {
+                console.log(stats.toString({ colors: true }))
+            })
+        )
     } else {
-        compiler(instdir, instmod, context, false).run((err, stats) => {
-            console.log(stats.toString({ colors: true }))
-            if (stats.hasErrors()) process.exit(EXIT_STATUS.WEBPACK_COMPILE_ERROR)
-        })
+        compilers(instdir, instmod, context, false).forEach(c =>
+            c.run((err, stats) => {
+                console.log(stats.toString({ colors: true }))
+                if (stats.hasErrors()) process.exit(EXIT_STATUS.WEBPACK_COMPILE_ERROR)
+            })
+        )
     }
 }

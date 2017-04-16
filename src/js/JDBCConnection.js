@@ -102,7 +102,9 @@ var JDBCConnection = (function () {
             this.connection.commit();
         }
         catch (ex) {
+            this.connection.setAutoCommit(false);
             this.connection.rollback();
+            throw ex;
         }
         finally {
             this.connection.setAutoCommit(true);

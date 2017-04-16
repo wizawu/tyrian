@@ -112,7 +112,9 @@ abstract class JDBCConnection implements ConnectionImpl {
             this.execute(sql, parameters)
             this.connection.commit()
         } catch (ex) {
+            this.connection.setAutoCommit(false)
             this.connection.rollback()
+            throw ex
         } finally {
             this.connection.setAutoCommit(true)
         }

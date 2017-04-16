@@ -35,7 +35,7 @@ abstract class JDBCConnection implements ConnectionImpl {
         if (this.url.startsWith("jdbc:postgresql:")) {
             let info = this.one<any>(`
                 SELECT * FROM information_schema.columns
-                WHERE table_name = '${tableName}' AND column_name = '${columnName}'
+                WHERE table_name = '${tableName}' AND column_name = '${columnName.toLowerCase()}'
             `, [])
             if (info) return
         } else {

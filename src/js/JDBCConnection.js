@@ -22,7 +22,7 @@ var JDBCConnection = (function () {
     };
     JDBCConnection.prototype.ensureColumn = function (tableName, columnName, columnType) {
         if (this.url.startsWith("jdbc:postgresql:")) {
-            var info = this.one("\n                SELECT * FROM information_schema.columns\n                WHERE table_name = '" + tableName + "' AND column_name = '" + columnName + "'\n            ", []);
+            var info = this.one("\n                SELECT * FROM information_schema.columns\n                WHERE table_name = '" + tableName + "' AND column_name = '" + columnName.toLowerCase() + "'\n            ", []);
             if (info)
                 return;
         }

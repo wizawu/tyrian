@@ -11,8 +11,8 @@ var JDBCConnection = (function () {
         parameters.forEach(function (parameter, i) { return statement.setObject(i + 1, parameter); });
         return statement;
     };
-    JDBCConnection.prototype.indexName = function (columnNames, unique) {
-        return (unique ? "uidx_" : "idx_") + columnNames.map(function (name) { return name.toLowerCase(); }).join("_");
+    JDBCConnection.prototype.indexName = function (tableName, columnNames, unique) {
+        return tableName + "_" + (unique ? "uidx_" : "idx_") + columnNames.map(function (name) { return name.toLowerCase(); }).join("_");
     };
     JDBCConnection.prototype.connect = function () {
         this.connection = this.driver.connect(this.url, new java.util.Properties());
@@ -33,8 +33,15 @@ var JDBCConnection = (function () {
         }
         this.execute("ALTER TABLE " + tableName + " ADD COLUMN " + columnName + " " + columnType, []);
     };
+    JDBCConnection.prototype.ensurePrimaryKey = function (tableName, columnName) {
+        try {
+            this.execute("ALTER TABLE " + tableName + " ADD PRIMARY KEY (" + columnName + ")", []);
+        }
+        catch (ex) {
+        }
+    };
     JDBCConnection.prototype.ensureIndex = function (tableName, columnNames) {
-        var indexName = this.indexName(columnNames, false);
+        var indexName = this.indexName(tableName, columnNames, false);
         var indexColumns = columnNames.join(",");
         try {
             this.execute("CREATE INDEX IF NOT EXISTS " + indexName + " ON " + tableName + "(" + indexColumns + ")", []);
@@ -48,7 +55,7 @@ var JDBCConnection = (function () {
         }
     };
     JDBCConnection.prototype.ensureUniqueIndex = function (tableName, columnNames) {
-        var indexName = this.indexName(columnNames, true);
+        var indexName = this.indexName(tableName, columnNames, true);
         var indexColumns = columnNames.join(",");
         try {
             this.execute("CREATE UNIQUE INDEX IF NOT EXISTS " + indexName + " ON " + tableName + "(" + indexColumns + ")", []);

@@ -9,6 +9,7 @@ export interface Options {
 interface ConnectionImpl {
     ensureTable(tableName: string)
     ensureColumn(tableName: string, columnName: string, columnType: string)
+    ensurePrimaryKey(tableName: string, columnName: string)
     ensureIndex(tableName: string, columnNames: string[])
     ensureUniqueIndex(tableName: string, columnNames: string[])
     one<T>(sql: string, parameters: any[]): T | null

@@ -19,8 +19,8 @@ abstract class JDBCConnection implements ConnectionImpl {
         return statement
     }
 
-    private indexName(columnNames: string[], unique: boolean): string {
-        return (unique ? "uidx_" : "idx_") + columnNames.map(name => name.toLowerCase()).join("_")
+    private indexName(tableName: string, columnNames: string[], unique: boolean): string {
+        return tableName + "_" + (unique ? "uidx_" : "idx_") + columnNames.map(name => name.toLowerCase()).join("_")
     }
 
     connect() {
@@ -45,8 +45,15 @@ abstract class JDBCConnection implements ConnectionImpl {
         this.execute(`ALTER TABLE ${tableName} ADD COLUMN ${columnName} ${columnType}`, [])
     }
 
+    ensurePrimaryKey(tableName: string, columnName: string) {
+        try {
+            this.execute(`ALTER TABLE ${tableName} ADD PRIMARY KEY (${columnName})`, [])
+        } catch (ex) {
+        }
+    }
+
     ensureIndex(tableName: string, columnNames: string[]) {
-        let indexName = this.indexName(columnNames, false)
+        let indexName = this.indexName(tableName, columnNames, false)
         let indexColumns = columnNames.join(",")
         try {
             this.execute(`CREATE INDEX IF NOT EXISTS ${indexName} ON ${tableName}(${indexColumns})`, [])
@@ -59,7 +66,7 @@ abstract class JDBCConnection implements ConnectionImpl {
     }
 
     ensureUniqueIndex(tableName: string, columnNames: string[]) {
-        let indexName = this.indexName(columnNames, true)
+        let indexName = this.indexName(tableName, columnNames, true)
         let indexColumns = columnNames.join(",")
         try {
             this.execute(`CREATE UNIQUE INDEX IF NOT EXISTS ${indexName} ON ${tableName}(${indexColumns})`, [])

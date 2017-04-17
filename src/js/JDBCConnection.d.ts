@@ -4,10 +4,11 @@ declare abstract class JDBCConnection implements ConnectionImpl {
     driver: java.sql.Driver;
     url: string;
     private prepareStatement(sql, parameters);
-    private indexName(columnNames, unique);
+    private indexName(tableName, columnNames, unique);
     connect(): void;
     ensureTable(tableName: string): void;
     ensureColumn(tableName: string, columnName: string, columnType: string): void;
+    ensurePrimaryKey(tableName: string, columnName: string): void;
     ensureIndex(tableName: string, columnNames: string[]): void;
     ensureUniqueIndex(tableName: string, columnNames: string[]): void;
     one<T>(sql: string, parameters: any[]): T | null;

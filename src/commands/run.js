@@ -5,14 +5,14 @@ var fs = require("fs");
 var path = require("path");
 var source_map_1 = require("source-map");
 var child_process_1 = require("child_process");
-function default_1(target, reload) {
+function default_1(target, jjsArgs, reload) {
     target = path.resolve(target);
     var dirname = path.resolve(path.dirname(target));
     var lib = path.resolve(dirname + "/../lib");
     var classpath = fs.readdirSync(lib).map(function (jar) { return jar === "@types" ? "" : lib + "/" + jar; }).join(":");
     var sourceMap = new source_map_1.SourceMapConsumer(JSON.parse(fs.readFileSync(target + ".map", "utf-8")));
     var run = function () {
-        var child = child_process_1.spawn("jjs", ["-cp", classpath, target]);
+        var child = child_process_1.spawn("jjs", jjsArgs.concat(["-cp", classpath, target]));
         child.on("exit", function (code) { return process.exit(code); });
         var lookupSource = function (chunk) {
             var insert = [];

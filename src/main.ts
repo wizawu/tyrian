@@ -32,5 +32,12 @@ if (command === "env") console.error(envstat)
 else if (command === "init") init(instdir)
 else if (command === "install") install(instdir)
 else if (command === "build") build(instdir, instmod, context, process.argv[3] === "-w")
-else if (command === "run" && process.argv[3]) run(process.argv.pop() as string, process.argv[3] === "-w")
+else if (command === "run" && process.argv[3]) {
+    let nargs = process.argv.length
+    if (process.argv[3] === "-w") {
+        run(process.argv[nargs - 1], process.argv.slice(4, nargs - 1), true)
+    } else {
+        run(process.argv[nargs - 1], process.argv.slice(3, nargs - 1), false)
+    }
+}
 else help(instdir, EXIT_STATUS.BAD_COMMAND)

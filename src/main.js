@@ -34,7 +34,14 @@ else if (command === "install")
     install_1["default"](instdir);
 else if (command === "build")
     build_1["default"](instdir, instmod, context, process.argv[3] === "-w");
-else if (command === "run" && process.argv[3])
-    run_1["default"](process.argv.pop(), process.argv[3] === "-w");
+else if (command === "run" && process.argv[3]) {
+    var nargs = process.argv.length;
+    if (process.argv[3] === "-w") {
+        run_1["default"](process.argv[nargs - 1], process.argv.slice(4, nargs - 1), true);
+    }
+    else {
+        run_1["default"](process.argv[nargs - 1], process.argv.slice(3, nargs - 1), false);
+    }
+}
 else
     help_1.help(instdir, const_1.EXIT_STATUS.BAD_COMMAND);

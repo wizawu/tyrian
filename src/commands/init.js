@@ -4,7 +4,7 @@ var chalk = require("chalk");
 var fs = require("fs");
 var PACKAGE_JSON = "\n{\n  \"dependencies\": {\n    \"mockxhr\": \"^1.3.0\"\n  },\n  \"mvnDependencies\": [\n    \"org.tinylog:tinylog:1.2\"\n  ]\n}\n".trim();
 var _GITIGNORE = "\n.gradle\nbuild\nbuild.gradle\nlib\nnode_modules\ntsconfig.json\nyarn.lock\n".trim();
-exports.tsconfig = function (instdir) { return ("\n{\n  \"compilerOptions\": {\n    \"jsx\": \"react\",\n    \"lib\": [\"dom\", \"es2017\"],\n    \"noUnusedLocals\": true,\n    \"removeComments\": true,\n    \"skipLibCheck\": true,\n    \"strictNullChecks\": true,\n    \"target\": \"es5\",\n    \"typeRoots\": [\n      \"" + instdir + "/@types\",\n      \"lib/@types\",\n      \"node_modules/@types\",\n      \"src/js/@types\"\n    ]\n  },\n  \"include\": [\n    \"" + instdir + "/@types/**/*.d.ts\",\n    \"lib/@types/**/*.d.ts\",\n    \"src/**/*.ts\",\n    \"src/**/*.tsx\"\n  ],\n  \"exclude\": [\n    \"src/js/test/*\"\n  ]\n}\n").trim(); };
+exports.tsconfig = function (instdir) { return ("\n{\n  \"compilerOptions\": {\n    \"jsx\": \"react\",\n    \"lib\": [\"dom\", \"es2017\"],\n    \"noUnusedLocals\": true,\n    \"removeComments\": true,\n    \"skipLibCheck\": true,\n    \"sourceMap\": true,\n    \"strictNullChecks\": true,\n    \"target\": \"es5\",\n    \"typeRoots\": [\n      \"" + instdir + "/@types\",\n      \"lib/@types\",\n      \"node_modules/@types\",\n      \"src/js/@types\"\n    ]\n  },\n  \"include\": [\n    \"" + instdir + "/@types/**/*.d.ts\",\n    \"lib/@types/**/*.d.ts\",\n    \"src/**/*.ts\",\n    \"src/**/*.tsx\"\n  ],\n  \"exclude\": [\n    \"src/js/test/*\"\n  ]\n}\n").trim(); };
 function default_1(instdir) {
     ["build", "build/assets", "lib", "node_modules", "src"].forEach(function (dir) {
         try {

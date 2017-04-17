@@ -23,7 +23,7 @@ function default_1(target, jjsArgs, reload) {
                     break;
                 var position = sourceMap.originalPositionFor({
                     line: parseInt(match[0].split(":")[1]),
-                    column: parseInt(match[0].split(":")[2]) || 0
+                    column: parseInt(match[0].split(":")[2]) || 1e16
                 });
                 insert.push({
                     index: match.index + match[0].length,

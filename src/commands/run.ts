@@ -23,7 +23,7 @@ export default function (target: string, jjsArgs: string[], reload: boolean) {
                 if (!match) break
                 let position = sourceMap.originalPositionFor({
                     line: parseInt(match[0].split(":")[1]),
-                    column: parseInt(match[0].split(":")[2]) || 0,
+                    column: parseInt(match[0].split(":")[2]) || 1e16,
                 })
                 insert.push({
                     index: match.index + match[0].length,

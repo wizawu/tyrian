@@ -33,6 +33,7 @@ export const tsconfig = instdir => `
     "noUnusedLocals": true,
     "removeComments": true,
     "skipLibCheck": true,
+    "sourceMap": true,
     "strictNullChecks": true,
     "target": "es5",
     "typeRoots": [

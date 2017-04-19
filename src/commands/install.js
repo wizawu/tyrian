@@ -34,7 +34,7 @@ function default_1(instdir) {
     catch (err) {
         console.error(chalk.red(err.message));
     }
-    child = child_process_1.spawnSync("gradle", ["install"], { stdio: "inherit" });
+    child = child_process_1.spawnSync("gradle", ["--no-daemon", "install"], { stdio: "inherit" });
     if (child.status !== 0)
         process.exit(child.status);
     if (!fs.existsSync("lib"))

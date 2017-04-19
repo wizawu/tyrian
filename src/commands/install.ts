@@ -55,7 +55,7 @@ export default function (instdir: string) {
     }
 
     // gradle install
-    child = spawnSync("gradle", ["install"], { stdio: "inherit" })
+    child = spawnSync("gradle", ["--no-daemon", "install"], { stdio: "inherit" })
     if (child.status !== 0) process.exit(child.status)
 
     // Generate TypeScript definition for JAR

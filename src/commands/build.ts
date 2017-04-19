@@ -1,4 +1,6 @@
+import * as chalk from "chalk"
 import * as fs from "fs"
+import * as path from "path"
 import { EXIT_STATUS } from "../const"
 
 const autoprefixer = require("autoprefixer")
@@ -6,35 +8,18 @@ const webpack = require("webpack")
 const CopyWebpackPlugin = require("copy-webpack-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 
-function compilers(instdir: string, instmod: string, context: string, watch: boolean): any[] {
+function compilers(instdir: string, instmod: string, context: string, entries: string[], watch: boolean): any[] {
     let entryJS = {}
     let entryJJS = {}
 
-    // source entry
-    if (fs.existsSync(`${context}/src/js/entry`)) {
-        fs.readdirSync(`${context}/src/js/entry`).forEach(filename => {
-            if (/\.j\.ts$/.test(filename)) {
-                let basename = filename.replace(/\.j\.ts$/, "")
-                entryJJS[`build/${basename}.js`] = `${context}/src/js/entry/${filename}`
-            } else if (/\.tsx?/.test(filename) && !/\.d\.ts$/.test(filename)) {
-                let basename = filename.replace(/\.tsx?$/, "")
-                entryJS[`build/assets/js/${basename}.min.js`] = `${context}/src/js/entry/${filename}`
-            }
-        })
-    }
-    // test entry
-    if (fs.existsSync(`${context}/src/js/test`)) {
-        fs.readdirSync(`${context}/src/js/test`).forEach(filename => {
-            if (!/^[Tt]est/.test(filename)) return
-            if (/\.j\.ts$/.test(filename)) {
-                let basename = filename.replace(/\.j\.ts$/, "")
-                entryJJS[`build/${basename}.js`] = `${context}/src/js/test/${filename}`
-            } else if (/\.tsx?/.test(filename) && !/\.d\.ts$/.test(filename)) {
-                let basename = filename.replace(/\.tsx?$/, "")
-                entryJS[`build/assets/js/${basename}.min.js`] = `${context}/src/js/test/${filename}`
-            }
-        })
-    }
+    entries.forEach(entry => {
+        if (/\.j\.ts$/.test(entry)) {
+            entryJJS[`build/${path.basename(entry, ".j.ts")}.js`] = entry
+        } else if (/\.tsx?$/.test(entry) && !/\.d\.ts$/.test(entry)) {
+            let basename = path.basename(entry).replace(/\.tsx?$/, "")
+            entryJS[`build/assets/js/${basename}.min.js`] = entry
+        }
+    })
 
     let html = fs.existsSync(`${context}/src/html`) ? (
         fs.readdirSync(`${context}/src/html`).filter(filename => /\.html$/.test(filename))
@@ -110,15 +95,42 @@ function compilers(instdir: string, instmod: string, context: string, watch: boo
     return list
 }
 
-export default function (instdir: string, instmod: string, context: string, watch: boolean) {
+export default function (instdir: string, instmod: string, entries: string[], watch: boolean) {
+    if (entries.length === 0) {
+        console.error(chalk.yellow("no entry to build"))
+        process.exit(EXIT_STATUS.BUILD_ENTRY_ERROR)
+    }
+
+    let context: any = {}
+    entries.forEach((entry, i) => {
+        entries[i] = path.resolve(entry)
+        let tsconfigDir = path.dirname(entries[i])
+        while (!fs.existsSync(`${tsconfigDir}/tsconfig.json`)) {
+            if (tsconfigDir === "/") {
+                console.error(chalk.red("cannot find tsconfig.json"))
+                process.exit(EXIT_STATUS.BUILD_ENTRY_ERROR)
+            } else {
+                tsconfigDir = path.dirname(tsconfigDir)
+            }
+        }
+        context[tsconfigDir] = true
+    })
+
+    if (Object.keys(context).length > 1) {
+        console.error(chalk.red("entries not in the same project"))
+        process.exit(EXIT_STATUS.BUILD_ENTRY_ERROR)
+    }
+
+    context = Object.keys(context)[0]
+
     if (watch) {
-        compilers(instdir, instmod, context, true).forEach(c =>
+        compilers(instdir, instmod, context, entries, true).forEach(c =>
             c.watch({ poll: true }, (err, stats) => {
                 console.log(stats.toString({ colors: true }))
             })
         )
     } else {
-        compilers(instdir, instmod, context, false).forEach(c =>
+        compilers(instdir, instmod, context, entries, false).forEach(c =>
             c.run((err, stats) => {
                 console.log(stats.toString({ colors: true }))
                 if (stats.hasErrors()) process.exit(EXIT_STATUS.WEBPACK_COMPILE_ERROR)

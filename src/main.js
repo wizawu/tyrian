@@ -12,7 +12,6 @@ var help_1 = require("./commands/help");
 var instdir = path.resolve(path.dirname(process.argv[1]) + "/..");
 var instmod = instdir + (fs.existsSync(instdir + "/node_modules/webpack") ? "/node_modules" : "/..");
 var command = process.argv[2];
-var context = path.resolve(".");
 if (command === "help") {
     help_1.help(instdir, const_1.EXIT_STATUS.OK);
 }
@@ -26,14 +25,23 @@ if (command === "env" || !fs.existsSync(envfile)) {
     envstat = env_1["default"]();
     fs.writeFileSync(envfile, envstat);
 }
-if (command === "env")
+if (command === "env") {
     console.error(envstat);
-else if (command === "init")
+}
+else if (command === "init") {
     init_1["default"](instdir);
-else if (command === "install")
+}
+else if (command === "install") {
     install_1["default"](instdir);
-else if (command === "build")
-    build_1["default"](instdir, instmod, context, process.argv[3] === "-w");
+}
+else if (command === "build" && process.argv[3]) {
+    if (process.argv[3] === "-w") {
+        build_1["default"](instdir, instmod, process.argv.slice(4), true);
+    }
+    else {
+        build_1["default"](instdir, instmod, process.argv.slice(3), false);
+    }
+}
 else if (command === "run" && process.argv[3]) {
     var nargs = process.argv.length;
     if (process.argv[3] === "-w") {
@@ -43,5 +51,6 @@ else if (command === "run" && process.argv[3]) {
         run_1["default"](process.argv[nargs - 1], process.argv.slice(3, nargs - 1), false);
     }
 }
-else
+else {
     help_1.help(instdir, const_1.EXIT_STATUS.BAD_COMMAND);
+}

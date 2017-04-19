@@ -12,7 +12,6 @@ import { help, version } from "./commands/help"
 const instdir = path.resolve(path.dirname(process.argv[1]) + "/..")
 const instmod = instdir + (fs.existsSync(instdir + "/node_modules/webpack") ? "/node_modules" : "/..")
 const command = process.argv[2]
-const context = path.resolve(".")
 
 if (command === "help") {
     help(instdir, EXIT_STATUS.OK)
@@ -28,16 +27,25 @@ if (command === "env" || !fs.existsSync(envfile)) {
     fs.writeFileSync(envfile, envstat)
 }
 
-if (command === "env") console.error(envstat)
-else if (command === "init") init(instdir)
-else if (command === "install") install(instdir)
-else if (command === "build") build(instdir, instmod, context, process.argv[3] === "-w")
-else if (command === "run" && process.argv[3]) {
+if (command === "env") {
+    console.error(envstat)
+} else if (command === "init") {
+    init(instdir)
+} else if (command === "install") {
+    install(instdir)
+} else if (command === "build" && process.argv[3]) {
+    if (process.argv[3] === "-w") {
+        build(instdir, instmod, process.argv.slice(4), true)
+    } else {
+        build(instdir, instmod, process.argv.slice(3), false)
+    }
+} else if (command === "run" && process.argv[3]) {
     let nargs = process.argv.length
     if (process.argv[3] === "-w") {
         run(process.argv[nargs - 1], process.argv.slice(4, nargs - 1), true)
     } else {
         run(process.argv[nargs - 1], process.argv.slice(3, nargs - 1), false)
     }
+} else {
+    help(instdir, EXIT_STATUS.BAD_COMMAND)
 }
-else help(instdir, EXIT_STATUS.BAD_COMMAND)

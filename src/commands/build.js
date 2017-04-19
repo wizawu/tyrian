@@ -1,40 +1,25 @@
 "use strict";
 exports.__esModule = true;
+var chalk = require("chalk");
 var fs = require("fs");
+var path = require("path");
 var const_1 = require("../const");
 var autoprefixer = require("autoprefixer");
 var webpack = require("webpack");
 var CopyWebpackPlugin = require("copy-webpack-plugin");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
-function compilers(instdir, instmod, context, watch) {
+function compilers(instdir, instmod, context, entries, watch) {
     var entryJS = {};
     var entryJJS = {};
-    if (fs.existsSync(context + "/src/js/entry")) {
-        fs.readdirSync(context + "/src/js/entry").forEach(function (filename) {
-            if (/\.j\.ts$/.test(filename)) {
-                var basename = filename.replace(/\.j\.ts$/, "");
-                entryJJS["build/" + basename + ".js"] = context + "/src/js/entry/" + filename;
-            }
-            else if (/\.tsx?/.test(filename) && !/\.d\.ts$/.test(filename)) {
-                var basename = filename.replace(/\.tsx?$/, "");
-                entryJS["build/assets/js/" + basename + ".min.js"] = context + "/src/js/entry/" + filename;
-            }
-        });
-    }
-    if (fs.existsSync(context + "/src/js/test")) {
-        fs.readdirSync(context + "/src/js/test").forEach(function (filename) {
-            if (!/^[Tt]est/.test(filename))
-                return;
-            if (/\.j\.ts$/.test(filename)) {
-                var basename = filename.replace(/\.j\.ts$/, "");
-                entryJJS["build/" + basename + ".js"] = context + "/src/js/test/" + filename;
-            }
-            else if (/\.tsx?/.test(filename) && !/\.d\.ts$/.test(filename)) {
-                var basename = filename.replace(/\.tsx?$/, "");
-                entryJS["build/assets/js/" + basename + ".min.js"] = context + "/src/js/test/" + filename;
-            }
-        });
-    }
+    entries.forEach(function (entry) {
+        if (/\.j\.ts$/.test(entry)) {
+            entryJJS["build/" + path.basename(entry, ".j.ts") + ".js"] = entry;
+        }
+        else if (/\.tsx?$/.test(entry) && !/\.d\.ts$/.test(entry)) {
+            var basename = path.basename(entry).replace(/\.tsx?$/, "");
+            entryJS["build/assets/js/" + basename + ".min.js"] = entry;
+        }
+    });
     var html = fs.existsSync(context + "/src/html") ? (fs.readdirSync(context + "/src/html").filter(function (filename) { return /\.html$/.test(filename); })) : [];
     var cssLoaders = [{
             loader: "style-loader"
@@ -103,16 +88,40 @@ function compilers(instdir, instmod, context, watch) {
     }
     return list;
 }
-function default_1(instdir, instmod, context, watch) {
+function default_1(instdir, instmod, entries, watch) {
+    if (entries.length === 0) {
+        console.error(chalk.yellow("no entry to build"));
+        process.exit(const_1.EXIT_STATUS.BUILD_ENTRY_ERROR);
+    }
+    var context = {};
+    entries.forEach(function (entry, i) {
+        entries[i] = path.resolve(entry);
+        var tsconfigDir = path.dirname(entries[i]);
+        while (!fs.existsSync(tsconfigDir + "/tsconfig.json")) {
+            if (tsconfigDir === "/") {
+                console.error(chalk.red("cannot find tsconfig.json"));
+                process.exit(const_1.EXIT_STATUS.BUILD_ENTRY_ERROR);
+            }
+            else {
+                tsconfigDir = path.dirname(tsconfigDir);
+            }
+        }
+        context[tsconfigDir] = true;
+    });
+    if (Object.keys(context).length > 1) {
+        console.error(chalk.red("entries not in the same project"));
+        process.exit(const_1.EXIT_STATUS.BUILD_ENTRY_ERROR);
+    }
+    context = Object.keys(context)[0];
     if (watch) {
-        compilers(instdir, instmod, context, true).forEach(function (c) {
+        compilers(instdir, instmod, context, entries, true).forEach(function (c) {
             return c.watch({ poll: true }, function (err, stats) {
                 console.log(stats.toString({ colors: true }));
             });
         });
     }
     else {
-        compilers(instdir, instmod, context, false).forEach(function (c) {
+        compilers(instdir, instmod, context, entries, false).forEach(function (c) {
             return c.run(function (err, stats) {
                 console.log(stats.toString({ colors: true }));
                 if (stats.hasErrors())

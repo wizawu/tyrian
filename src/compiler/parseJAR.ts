@@ -45,3 +45,10 @@ export function generateTsDefinition(jar: string) {
     let target = path.basename(jar).replace(/\.jar$/, ".d.ts")
     fs.writeFileSync(target, parseJAR(jar))
 }
+
+export function getTopPackages(jar: string): string[] {
+    let packages = {}
+    let classes = commandOutput("jar", ["tf", jar]).split("\n")
+    classes.filter(c => /\.class$/.test(c)).forEach(path => packages[path.split("/")[0]] = true)
+    return Object.keys(packages)
+}

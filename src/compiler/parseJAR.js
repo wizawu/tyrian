@@ -43,3 +43,10 @@ function generateTsDefinition(jar) {
     fs.writeFileSync(target, parseJAR(jar));
 }
 exports.generateTsDefinition = generateTsDefinition;
+function getTopPackages(jar) {
+    var packages = {};
+    var classes = commandOutput("jar", ["tf", jar]).split("\n");
+    classes.filter(function (c) { return /\.class$/.test(c); }).forEach(function (path) { return packages[path.split("/")[0]] = true; });
+    return Object.keys(packages);
+}
+exports.getTopPackages = getTopPackages;

@@ -12,6 +12,7 @@ var chalk = require("chalk");
 var fs = require("fs");
 var path = require("path");
 var const_1 = require("../const");
+var parseJAR_1 = require("../compiler/parseJAR");
 var autoprefixer = require("autoprefixer");
 var webpack = require("webpack");
 var CopyWebpackPlugin = require("copy-webpack-plugin");
@@ -44,11 +45,11 @@ function compilers(instdir, instmod, context, entries, watch) {
         }];
     var globalVars = {};
     try {
-        var packageJSON = JSON.parse(fs.readFileSync(context + "/package.json", "utf-8")) || {};
-        var mvnDependencies = packageJSON.mvnDependencies || [];
-        mvnDependencies.forEach(function (dep) {
-            var namespace = dep.split(".")[0];
-            globalVars[namespace] = "Packages." + namespace;
+        var jars = fs.readdirSync(context + "/lib").filter(function (filename) { return /\.jar$/.test(filename); });
+        jars.forEach(function (jar) {
+            parseJAR_1.getTopPackages(context + "/lib/" + jar).forEach(function (pkg) {
+                return globalVars[pkg] = "Packages." + pkg;
+            });
         });
     }
     catch (ex) {

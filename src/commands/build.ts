@@ -2,6 +2,7 @@ import * as chalk from "chalk"
 import * as fs from "fs"
 import * as path from "path"
 import { EXIT_STATUS } from "../const"
+import { getTopPackages } from "../compiler/parseJAR"
 
 const autoprefixer = require("autoprefixer")
 const webpack = require("webpack")
@@ -41,11 +42,11 @@ function compilers(instdir: string, instmod: string, context: string, entries: s
 
     let globalVars = {}
     try {
-        let packageJSON = JSON.parse(fs.readFileSync(`${context}/package.json`, "utf-8")) || {}
-        let mvnDependencies = packageJSON.mvnDependencies || []
-        mvnDependencies.forEach(dep => {
-            let namespace = dep.split(".")[0]
-            globalVars[namespace] = "Packages." + namespace
+        let jars = fs.readdirSync(`${context}/lib`).filter(filename => /\.jar$/.test(filename))
+        jars.forEach(jar => {
+            getTopPackages(`${context}/lib/${jar}`).forEach(pkg =>
+                globalVars[pkg] = "Packages." + pkg
+            )
         })
     } catch (ex) {
     }

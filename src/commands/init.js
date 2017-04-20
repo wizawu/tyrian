@@ -20,7 +20,7 @@ function default_1(instdir) {
             }
         }
     });
-    ["assets", "assets/img", "css", "html", "js", "js/entry", "js/test", "js/@types"].forEach(function (dir) {
+    ["assets", "assets/img", "css", "html", "js", "js/@types"].forEach(function (dir) {
         try {
             fs.mkdirSync("src/" + dir);
             console.log(chalk.green("mkdir src/" + dir));
@@ -42,9 +42,8 @@ function default_1(instdir) {
         ["src/assets/img/blank.jpg", ""],
         ["src/css/index.less", "body { display: flex }"],
         ["src/html/index.html", "<!DOCTYPE html>"],
-        ["src/js/entry/index.tsx", "import \"../../css/index.less\""],
-        ["src/js/entry/main.j.ts", "org.pmw.tinylog.Logger.info(java.lang.System.getProperty(\"java.version\"))"],
-        ["src/js/test/test.j.ts", "org.pmw.tinylog.Logger.warn(\"test\")"],
+        ["src/js/index.tsx", "import \"../css/index.less\""],
+        ["src/js/main.j.ts", "org.pmw.tinylog.Logger.info(java.lang.System.getProperty(\"java.version\"))"],
         ["src/js/@types/common.d.ts", ""],
     ].forEach(function (_a) {
         var path = _a[0], content = _a[1];

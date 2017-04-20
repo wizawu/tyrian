@@ -1,4 +1,4 @@
-/// <reference path="primitive.d.ts" />
+/// <reference path="nashorn.d.ts" />
 /// <reference path="jdk/index.d.ts" />
 
 console.log(com)

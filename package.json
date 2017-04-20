@@ -1,6 +1,6 @@
 {
   "name": "1c",
-  "version": "6.8.3",
+  "version": "6.8.4",
   "bin": "./bin/1c",
   "dependencies": {
     "@types/chalk": "^0.4.31",

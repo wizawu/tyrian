@@ -1,8 +1,11 @@
 {
   "dependencies": {
+    "@types/chalk": "^0.4.31",
+    "chalk": "^1.1.3",
     "mockxhr": "^1.3.0"
   },
   "mvnDependencies": [
+    "ro.pippo:pippo:1.3.0",
     "org.tinylog:tinylog:1.2"
   ]
 }

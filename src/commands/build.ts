@@ -39,6 +39,17 @@ function compilers(instdir: string, instmod: string, context: string, entries: s
         }
     }]
 
+    let globalVars = {}
+    try {
+        let packageJSON = JSON.parse(fs.readFileSync(`${context}/package.json`, "utf-8")) || {}
+        let mvnDependencies = packageJSON.mvnDependencies || []
+        mvnDependencies.forEach(dep => {
+            let namespace = dep.split(".")[0]
+            globalVars[namespace] = "Packages." + namespace
+        })
+    } catch (ex) {
+    }
+
     let createCompiler = (entry: any, html: any[], minimize: boolean) => webpack({
         devtool: "source-map",
         context: context,
@@ -76,7 +87,8 @@ function compilers(instdir: string, instmod: string, context: string, entries: s
             new webpack.DefinePlugin({
                 "process.env": {
                     NODE_ENV: minimize ? '"production"' : '"development"'
-                }
+                },
+                ...(entry === entryJJS ? globalVars : {}),
             }),
         ]).concat(minimize ? [
             new webpack.optimize.UglifyJsPlugin({

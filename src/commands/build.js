@@ -1,4 +1,12 @@
 "use strict";
+var __assign = (this && this.__assign) || Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+            t[p] = s[p];
+    }
+    return t;
+};
 exports.__esModule = true;
 var chalk = require("chalk");
 var fs = require("fs");
@@ -34,6 +42,17 @@ function compilers(instdir, instmod, context, entries, watch) {
                 ]
             }
         }];
+    var globalVars = {};
+    try {
+        var packageJSON = JSON.parse(fs.readFileSync(context + "/package.json", "utf-8")) || {};
+        var mvnDependencies = packageJSON.mvnDependencies || [];
+        mvnDependencies.forEach(function (dep) {
+            var namespace = dep.split(".")[0];
+            globalVars[namespace] = "Packages." + namespace;
+        });
+    }
+    catch (ex) {
+    }
     var createCompiler = function (entry, html, minimize) { return webpack({
         devtool: "source-map",
         context: context,
@@ -68,11 +87,9 @@ function compilers(instdir, instmod, context, entries, watch) {
                     from: "**/*",
                     to: context + "/build/assets"
                 }]),
-            new webpack.DefinePlugin({
-                "process.env": {
+            new webpack.DefinePlugin(__assign({ "process.env": {
                     NODE_ENV: minimize ? '"production"' : '"development"'
-                }
-            }),
+                } }, (entry === entryJJS ? globalVars : {}))),
         ]).concat(minimize ? [
             new webpack.optimize.UglifyJsPlugin({
                 sourceMap: true

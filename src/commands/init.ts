@@ -48,9 +48,6 @@ export const tsconfig = instdir => `
     "lib/@types/**/*.d.ts",
     "src/**/*.ts",
     "src/**/*.tsx"
-  ],
-  "exclude": [
-    "src/js/test/*"
   ]
 }
 `.trim()

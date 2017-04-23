@@ -1,6 +1,6 @@
 /// <reference path="index.d.ts" />
 
-import { MySQLConnection, Options } from "../index"
+import { MySQLConnection, Options } from "../src/index"
 
 const { assertThat } = org.assertj.core.api.Assertions
 
@@ -9,8 +9,9 @@ function test(testCase: any) {
         host: "127.0.0.1",
         port: 3306,
         database: "test",
-        user: "root",
-        password: "wizawu3306",
+        user: "wizawu",
+        password: "WIZAWU3306",
+        useSSL: false,
     }
     let connection = new MySQLConnection(options)
     testCase(connection)

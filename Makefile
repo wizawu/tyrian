@@ -7,8 +7,8 @@ watch:
 	tsc -d -p . -w
 
 test: build
-	1c build
-	ls build/Test*.js | xargs -I {} 1c run {}
+	1c build test/TestMySQLConnection.j.ts
+	1c run build/TestMySQLConnection.js
 
 clean:
 	rm -rf build lib node_modules tsconfig.json

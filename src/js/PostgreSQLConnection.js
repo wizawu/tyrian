@@ -23,3 +23,4 @@ var PostgreSQLConnection = (function (_super) {
     return PostgreSQLConnection;
 }(JDBCConnection_1.default));
 exports.default = PostgreSQLConnection;
+//# sourceMappingURL=PostgreSQLConnection.js.map

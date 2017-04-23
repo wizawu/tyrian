@@ -10,3 +10,4 @@ function resultSetToJSON(resultSet) {
     return json;
 }
 exports.resultSetToJSON = resultSetToJSON;
+//# sourceMappingURL=util.js.map

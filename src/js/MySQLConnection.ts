@@ -9,6 +9,7 @@ export default class MySQLConnection extends JDBCConnection {
             "jdbc:mysql://%s:%d/%s?user=%s&password=%s&testOnBorrow=true",
             options.host, options.port, options.database, options.user, options.password
         )
+        this.url += "&useSSL=" + (options.useSSL ? "true" : "false")
         this.connect()
     }
 }

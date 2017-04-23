@@ -135,3 +135,4 @@ var JDBCConnection = (function () {
     return JDBCConnection;
 }());
 exports.default = JDBCConnection;
+//# sourceMappingURL=JDBCConnection.js.map

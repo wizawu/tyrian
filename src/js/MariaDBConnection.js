@@ -23,3 +23,4 @@ var MariaDBConnection = (function (_super) {
     return MariaDBConnection;
 }(JDBCConnection_1.default));
 exports.default = MariaDBConnection;
+//# sourceMappingURL=MariaDBConnection.js.map

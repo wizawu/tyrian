@@ -17,9 +17,11 @@ var MySQLConnection = (function (_super) {
         var _this = _super.call(this) || this;
         _this.driver = new com.mysql.cj.jdbc.Driver();
         _this.url = java.lang.String.format("jdbc:mysql://%s:%d/%s?user=%s&password=%s&testOnBorrow=true", options.host, options.port, options.database, options.user, options.password);
+        _this.url += "&useSSL=" + (options.useSSL ? "true" : "false");
         _this.connect();
         return _this;
     }
     return MySQLConnection;
 }(JDBCConnection_1.default));
 exports.default = MySQLConnection;
+//# sourceMappingURL=MySQLConnection.js.map

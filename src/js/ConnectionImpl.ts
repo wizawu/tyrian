@@ -4,6 +4,7 @@ export interface Options {
     database: string
     user: string
     password: string
+    useSSL?: boolean
 }
 
 interface ConnectionImpl {

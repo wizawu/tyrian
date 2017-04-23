@@ -6,3 +6,4 @@ var MySQLConnection_1 = require("./MySQLConnection");
 exports.MySQLConnection = MySQLConnection_1.default;
 var PostgreSQLConnection_1 = require("./PostgreSQLConnection");
 exports.PostgreSQLConnection = PostgreSQLConnection_1.default;
+//# sourceMappingURL=index.js.map

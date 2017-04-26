@@ -10,6 +10,7 @@ export default class MySQLConnection extends JDBCConnection {
             options.host, options.port, options.database, options.user, options.password
         )
         this.url += "&useSSL=" + (options.useSSL ? "true" : "false")
+        this.url += "&characterEncoding=" + (options.characterEncoding || "UTF-8")
         this.connect()
     }
 }

@@ -18,6 +18,7 @@ var MySQLConnection = (function (_super) {
         _this.driver = new com.mysql.cj.jdbc.Driver();
         _this.url = java.lang.String.format("jdbc:mysql://%s:%d/%s?user=%s&password=%s&testOnBorrow=true", options.host, options.port, options.database, options.user, options.password);
         _this.url += "&useSSL=" + (options.useSSL ? "true" : "false");
+        _this.url += "&characterEncoding=" + (options.characterEncoding || "UTF-8");
         _this.connect();
         return _this;
     }

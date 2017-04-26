@@ -5,6 +5,7 @@ export interface Options {
     user: string
     password: string
     useSSL?: boolean
+    characterEncoding?: string
 }
 
 interface ConnectionImpl {

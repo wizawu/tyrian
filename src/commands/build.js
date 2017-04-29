@@ -143,7 +143,6 @@ function default_1(instdir, instmod, entries, watch) {
     if (watch) {
         compilers(instdir, instmod, context, entries, true).forEach(function (c) {
             return c.watch({ poll: true }, function (err, stats) {
-                console.log(chalk.gray("Emit: " + new Date().toLocaleTimeString()));
                 console.log(stats.toString(statsOptions));
             });
         });
@@ -151,7 +150,6 @@ function default_1(instdir, instmod, entries, watch) {
     else {
         compilers(instdir, instmod, context, entries, false).forEach(function (c) {
             return c.run(function (err, stats) {
-                console.log(chalk.gray("Emit: " + new Date().toLocaleTimeString()));
                 console.log(stats.toString(statsOptions));
                 if (stats.hasErrors())
                     process.exit(const_1.EXIT_STATUS.WEBPACK_COMPILE_ERROR);

@@ -149,14 +149,12 @@ export default function (instdir: string, instmod: string, entries: string[], wa
     if (watch) {
         compilers(instdir, instmod, context, entries, true).forEach(c =>
             c.watch({ poll: true }, (err, stats) => {
-                console.log(chalk.gray("Emit: " + new Date().toLocaleTimeString()))
                 console.log(stats.toString(statsOptions))
             })
         )
     } else {
         compilers(instdir, instmod, context, entries, false).forEach(c =>
             c.run((err, stats) => {
-                console.log(chalk.gray("Emit: " + new Date().toLocaleTimeString()))
                 console.log(stats.toString(statsOptions))
                 if (stats.hasErrors()) process.exit(EXIT_STATUS.WEBPACK_COMPILE_ERROR)
             })

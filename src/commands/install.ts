@@ -15,7 +15,7 @@ repositories {
 }
 
 task install(type: Copy) {
-  into "lib"
+  into "${process.cwd()}/lib"
   from configurations.runtime
 }
 

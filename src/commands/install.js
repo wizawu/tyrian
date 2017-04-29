@@ -6,7 +6,7 @@ var fs = require("fs");
 var child_process_1 = require("child_process");
 var parseJAR_1 = require("../compiler/parseJAR");
 var init_1 = require("./init");
-var buildGradle = function (deps) { return ("\napply plugin: \"java\"\n\nrepositories {\n  mavenCentral()\n}\n\ntask install(type: Copy) {\n  into \"lib\"\n  from configurations.runtime\n}\n\ndependencies {\n  " + deps + "\n}\n").trim(); };
+var buildGradle = function (deps) { return ("\napply plugin: \"java\"\n\nrepositories {\n  mavenCentral()\n}\n\ntask install(type: Copy) {\n  into \"" + process.cwd() + "/lib\"\n  from configurations.runtime\n}\n\ndependencies {\n  " + deps + "\n}\n").trim(); };
 function default_1(instdir) {
     var child = child_process_1.spawnSync("yarn", ["install"], { stdio: "inherit" });
     if (child.status !== 0)

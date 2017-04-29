@@ -54,7 +54,8 @@ function compilers(instdir, instmod, context, entries, watch) {
     }
     catch (ex) {
     }
-    var createCompiler = function (entry, html, minimize) { return webpack({
+    var builtAssets = false;
+    var createCompiler = function (entry, minimize) { return webpack({
         devtool: "source-map",
         context: context,
         resolve: { extensions: [".js", ".ts", ".j.ts", ".tsx"] },
@@ -76,14 +77,14 @@ function compilers(instdir, instmod, context, entries, watch) {
                     use: cssLoaders.concat({ loader: "less-loader" })
                 }]
         },
-        plugins: html.map(function (filename) {
+        plugins: (builtAssets ? [] : html).map(function (filename) {
             return new HtmlWebpackPlugin({
                 filename: "build/assets/" + filename,
                 template: context + "/src/html/" + filename,
                 inject: false
             });
         }).concat([
-            new CopyWebpackPlugin([{
+            new CopyWebpackPlugin(builtAssets ? [] : [{
                     context: context + "/src/assets",
                     from: "**/*",
                     to: context + "/build/assets"
@@ -99,10 +100,12 @@ function compilers(instdir, instmod, context, entries, watch) {
     }); };
     var list = [];
     if (Object.keys(entryJS).length > 0) {
-        list.push(createCompiler(entryJS, html, !watch));
+        list.push(createCompiler(entryJS, !watch));
+        builtAssets = true;
     }
     if (Object.keys(entryJJS).length > 0) {
-        list.push(createCompiler(entryJJS, [], false));
+        list.push(createCompiler(entryJJS, false));
+        builtAssets = true;
     }
     return list;
 }
@@ -131,17 +134,25 @@ function default_1(instdir, instmod, entries, watch) {
         process.exit(const_1.EXIT_STATUS.BUILD_ENTRY_ERROR);
     }
     context = Object.keys(context)[0];
+    var statsOptions = {
+        children: false,
+        chunks: false,
+        colors: true,
+        versions: false
+    };
     if (watch) {
         compilers(instdir, instmod, context, entries, true).forEach(function (c) {
             return c.watch({ poll: true }, function (err, stats) {
-                console.log(stats.toString({ colors: true }));
+                console.log(chalk.gray("Emit: " + new Date().toLocaleTimeString()));
+                console.log(stats.toString(statsOptions));
             });
         });
     }
     else {
         compilers(instdir, instmod, context, entries, false).forEach(function (c) {
             return c.run(function (err, stats) {
-                console.log(stats.toString({ colors: true }));
+                console.log(chalk.gray("Emit: " + new Date().toLocaleTimeString()));
+                console.log(stats.toString(statsOptions));
                 if (stats.hasErrors())
                     process.exit(const_1.EXIT_STATUS.WEBPACK_COMPILE_ERROR);
             });

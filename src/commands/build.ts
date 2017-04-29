@@ -51,7 +51,9 @@ function compilers(instdir: string, instmod: string, context: string, entries: s
     } catch (ex) {
     }
 
-    let createCompiler = (entry: any, html: any[], minimize: boolean) => webpack({
+    let builtAssets = false
+
+    let createCompiler = (entry: any, minimize: boolean) => webpack({
         devtool: "source-map",
         context: context,
         resolve: { extensions: [".js", ".ts", ".j.ts", ".tsx"] },
@@ -73,14 +75,14 @@ function compilers(instdir: string, instmod: string, context: string, entries: s
                 use: cssLoaders.concat({ loader: "less-loader" })
             }]
         },
-        plugins: html.map(filename =>
+        plugins: (builtAssets ? [] : html).map(filename =>
             new HtmlWebpackPlugin({
                 filename: `build/assets/${filename}`,
                 template: `${context}/src/html/${filename}`,
                 inject: false,
             })
         ).concat([
-            new CopyWebpackPlugin([{
+            new CopyWebpackPlugin(builtAssets ? [] : [{
                 context: `${context}/src/assets`,
                 from: "**/*",
                 to: `${context}/build/assets`,
@@ -100,10 +102,12 @@ function compilers(instdir: string, instmod: string, context: string, entries: s
 
     let list = []
     if (Object.keys(entryJS).length > 0) {
-        list.push(createCompiler(entryJS, html, !watch) as never)
+        list.push(createCompiler(entryJS, !watch) as never)
+        builtAssets = true
     }
     if (Object.keys(entryJJS).length > 0) {
-        list.push(createCompiler(entryJJS, [], false) as never)
+        list.push(createCompiler(entryJJS, false) as never)
+        builtAssets = true
     }
     return list
 }
@@ -135,17 +139,25 @@ export default function (instdir: string, instmod: string, entries: string[], wa
     }
 
     context = Object.keys(context)[0]
+    let statsOptions = {
+        children: false,
+        chunks: false,
+        colors: true,
+        versions: false,
+    }
 
     if (watch) {
         compilers(instdir, instmod, context, entries, true).forEach(c =>
             c.watch({ poll: true }, (err, stats) => {
-                console.log(stats.toString({ colors: true }))
+                console.log(chalk.gray("Emit: " + new Date().toLocaleTimeString()))
+                console.log(stats.toString(statsOptions))
             })
         )
     } else {
         compilers(instdir, instmod, context, entries, false).forEach(c =>
             c.run((err, stats) => {
-                console.log(stats.toString({ colors: true }))
+                console.log(chalk.gray("Emit: " + new Date().toLocaleTimeString()))
+                console.log(stats.toString(statsOptions))
                 if (stats.hasErrors()) process.exit(EXIT_STATUS.WEBPACK_COMPILE_ERROR)
             })
         )

@@ -143,7 +143,7 @@ export default function (instdir: string, instmod: string, entries: string[], wa
         children: false,
         chunks: false,
         colors: true,
-        versions: false,
+        version: false,
     }
 
     if (watch) {

@@ -138,7 +138,7 @@ function default_1(instdir, instmod, entries, watch) {
         children: false,
         chunks: false,
         colors: true,
-        versions: false
+        version: false
     };
     if (watch) {
         compilers(instdir, instmod, context, entries, true).forEach(function (c) {

@@ -1,4 +1,5 @@
 import * as chalk from "chalk"
+import * as crypto from "crypto"
 import * as fs from "fs"
 import { spawnSync } from "child_process"
 
@@ -49,14 +50,15 @@ export default function (instdir: string) {
 
         // Generate build.gradle
         let deps = Object.keys(mvnDependencies).map(key => `compile '${key}:${mvnDependencies[key]}'`)
-        fs.writeFileSync("build.gradle", buildGradle(deps.join("\n  ")))
+        let buildGradlePath = "/tmp/build.gradle." + crypto.randomBytes(16).toString("hex")
+        fs.writeFileSync(buildGradlePath, buildGradle(deps.join("\n  ")))
+
+        // gradle install
+        child = spawnSync("gradle", ["-b", buildGradlePath, "--no-daemon", "install"], { stdio: "inherit" })
+        if (child.status !== 0) process.exit(child.status)
     } catch (err) {
         console.error(chalk.red(err.message))
     }
-
-    // gradle install
-    child = spawnSync("gradle", ["--no-daemon", "install"], { stdio: "inherit" })
-    if (child.status !== 0) process.exit(child.status)
 
     // Generate TypeScript definition for JAR
     if (!fs.existsSync("lib")) fs.mkdirSync("lib")

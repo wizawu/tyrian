@@ -1,6 +1,7 @@
 "use strict";
 exports.__esModule = true;
 var chalk = require("chalk");
+var crypto = require("crypto");
 var fs = require("fs");
 var child_process_1 = require("child_process");
 var parseJAR_1 = require("../compiler/parseJAR");
@@ -29,14 +30,15 @@ function default_1(instdir) {
             });
         });
         var deps = Object.keys(mvnDependencies_1).map(function (key) { return "compile '" + key + ":" + mvnDependencies_1[key] + "'"; });
-        fs.writeFileSync("build.gradle", buildGradle(deps.join("\n  ")));
+        var buildGradlePath = "/tmp/build.gradle." + crypto.randomBytes(16).toString("hex");
+        fs.writeFileSync(buildGradlePath, buildGradle(deps.join("\n  ")));
+        child = child_process_1.spawnSync("gradle", ["-b", buildGradlePath, "--no-daemon", "install"], { stdio: "inherit" });
+        if (child.status !== 0)
+            process.exit(child.status);
     }
     catch (err) {
         console.error(chalk.red(err.message));
     }
-    child = child_process_1.spawnSync("gradle", ["--no-daemon", "install"], { stdio: "inherit" });
-    if (child.status !== 0)
-        process.exit(child.status);
     if (!fs.existsSync("lib"))
         fs.mkdirSync("lib");
     if (!fs.existsSync("lib/@types"))

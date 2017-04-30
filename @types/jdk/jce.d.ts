@@ -565,7 +565,6 @@ declare namespace javax {
         }
         interface SecretKey extends java.security.Key , javax.security.auth.Destroyable {
             serialVersionUID: long
-            serialVersionUID: long
         }
         class BadPaddingException extends java.security.GeneralSecurityException {
             public constructor()

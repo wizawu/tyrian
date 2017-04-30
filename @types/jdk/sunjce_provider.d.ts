@@ -800,7 +800,6 @@ declare namespace com {
                 }
                 interface DESConstants {
                     DES_BLOCK_SIZE: int
-                    DES_BLOCK_SIZE: int
                 }
                 class DESCrypt extends com.sun.crypto.provider.SymmetricCipher implements com.sun.crypto.provider.DESConstants {
                     expandedKey: byte[]

@@ -156,9 +156,9 @@ function parseClass(ctx: Context, modifier: string): Context | null {
         } else if (token.value.charAt(0) === "<") {
             ctx.offset += token.skip
             typeVariable = token.value
-        } else if (
-            (token.value === className && ctx.source.charAt(ctx.offset + token.skip) === "(") ||
-            (className.indexOf(token.value) === 0 && className.charAt(token.value.length) === "<")
+        } else if ((token.value === className ||
+            className.indexOf(token.value) === 0 && className.charAt(token.value.length) === "<") &&
+            ctx.source.charAt(ctx.offset + token.skip) === "("
         ) {
             ctx.offset += token.skip
             line = "    constructor"
@@ -202,7 +202,6 @@ export default function (source: string, pkg: any) {
     }
 
     let buffer = []
-    let memberMap = {}
     let ignore = false
 
     for (let i = 0; i < ctx.stack.length; i++) {
@@ -210,41 +209,27 @@ export default function (source: string, pkg: any) {
         switch (item.type) {
             case "BEGIN":
                 buffer = []
-                memberMap = {}
                 ignore = false
                 if (item.name.indexOf("-") >= 0) ignore = true
                 if (item.name.indexOf("$") >= 0) ignore = true
                 if (!ignore) buffer.push(item.line as never)
                 break
             case "CONSTR":
-                if (ignore) break
-                if (memberMap["&"]) {
-                    memberMap["&"] = "    constructor(...args: any[])"
-                } else {
-                    memberMap["&"] = item.line
-                }
+                if (!ignore) buffer.push(item.line as never)
                 break
             case "MEMBER":
-                if (ignore) break
-                if (item.name === "prototype") break
-                if (memberMap[item.name]) {
-                    if (/\bstatic\b/.test(item.line) || /\bstatic\b/.test(memberMap[item.name])) {
-                        memberMap[item.name] = `    static ${item.name}<T>(...args: any[]): any`
-                    } else {
-                        memberMap[item.name] = `    ${item.name}<T>(...args: any[]): any`
-                    }
-                } else {
-                    memberMap[item.name] = item.line
+                if (!ignore && item.name !== "prototype") {
+                    buffer.push(item.line as never)
                 }
                 break
             case "END":
-                if (ignore) break
-                Object.keys(memberMap).forEach(key => buffer.push(memberMap[key] as never))
-                buffer.push(item.line as never)
-                let className = item.name.replace(/^(\w+\.)+/, "")
-                let ns = item.name.substring(0, item.name.length - className.length - 1)
-                ensureExists(pkg, ns, {})
-                get(pkg, ns)[className] = buffer.join("\n")
+                if (!ignore) {
+                    buffer.push(item.line as never)
+                    let className = item.name.replace(/^(\w+\.)+/, "")
+                    let ns = item.name.substring(0, item.name.length - className.length - 1)
+                    ensureExists(pkg, ns, {})
+                    get(pkg, ns)[className] = buffer.join("\n")
+                }
                 break
             default:
                 console.error(JSON.stringify(item))

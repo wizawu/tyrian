@@ -166,8 +166,9 @@ function parseClass(ctx, modifier) {
             ctx.offset += token.skip;
             typeVariable = token.value;
         }
-        else if ((token.value === className && ctx.source.charAt(ctx.offset + token.skip) === "(") ||
-            (className.indexOf(token.value) === 0 && className.charAt(token.value.length) === "<")) {
+        else if ((token.value === className ||
+            className.indexOf(token.value) === 0 && className.charAt(token.value.length) === "<") &&
+            ctx.source.charAt(ctx.offset + token.skip) === "(") {
             ctx.offset += token.skip;
             line = "    constructor";
             line = parseParameters(ctx, line);
@@ -213,14 +214,12 @@ function default_1(source, pkg) {
         }
     }
     var buffer = [];
-    var memberMap = {};
     var ignore = false;
     for (var i = 0; i < ctx.stack.length; i++) {
         var item = ctx.stack[i];
         switch (item.type) {
             case "BEGIN":
                 buffer = [];
-                memberMap = {};
                 ignore = false;
                 if (item.name.indexOf("-") >= 0)
                     ignore = true;
@@ -230,41 +229,22 @@ function default_1(source, pkg) {
                     buffer.push(item.line);
                 break;
             case "CONSTR":
-                if (ignore)
-                    break;
-                if (memberMap["&"]) {
-                    memberMap["&"] = "    constructor(...args: any[])";
-                }
-                else {
-                    memberMap["&"] = item.line;
-                }
+                if (!ignore)
+                    buffer.push(item.line);
                 break;
             case "MEMBER":
-                if (ignore)
-                    break;
-                if (item.name === "prototype")
-                    break;
-                if (memberMap[item.name]) {
-                    if (/\bstatic\b/.test(item.line) || /\bstatic\b/.test(memberMap[item.name])) {
-                        memberMap[item.name] = "    static " + item.name + "<T>(...args: any[]): any";
-                    }
-                    else {
-                        memberMap[item.name] = "    " + item.name + "<T>(...args: any[]): any";
-                    }
-                }
-                else {
-                    memberMap[item.name] = item.line;
+                if (!ignore && item.name !== "prototype") {
+                    buffer.push(item.line);
                 }
                 break;
             case "END":
-                if (ignore)
-                    break;
-                Object.keys(memberMap).forEach(function (key) { return buffer.push(memberMap[key]); });
-                buffer.push(item.line);
-                var className = item.name.replace(/^(\w+\.)+/, "");
-                var ns = item.name.substring(0, item.name.length - className.length - 1);
-                object_path_1.ensureExists(pkg, ns, {});
-                object_path_1.get(pkg, ns)[className] = buffer.join("\n");
+                if (!ignore) {
+                    buffer.push(item.line);
+                    var className = item.name.replace(/^(\w+\.)+/, "");
+                    var ns = item.name.substring(0, item.name.length - className.length - 1);
+                    object_path_1.ensureExists(pkg, ns, {});
+                    object_path_1.get(pkg, ns)[className] = buffer.join("\n");
+                }
                 break;
             default:
                 console.error(JSON.stringify(item));

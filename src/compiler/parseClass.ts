@@ -203,6 +203,7 @@ export default function (source: string, pkg: any) {
 
     let buffer = []
     let ignore = false
+    let isInterface = false
 
     for (let i = 0; i < ctx.stack.length; i++) {
         let item = ctx.stack[i]
@@ -210,6 +211,7 @@ export default function (source: string, pkg: any) {
             case "BEGIN":
                 buffer = []
                 ignore = false
+                isInterface = item.line.indexOf("interface") >= 0
                 if (item.name.indexOf("-") >= 0) ignore = true
                 if (item.name.indexOf("$") >= 0) ignore = true
                 if (!ignore) buffer.push(item.line as never)
@@ -219,7 +221,13 @@ export default function (source: string, pkg: any) {
                 break
             case "MEMBER":
                 if (!ignore && item.name !== "prototype") {
-                    buffer.push(item.line as never)
+                    if (isInterface && item.name === "handle") {
+                        // lambda
+                        buffer.push(item.line.replace("handle(", "handle?(") as never)
+                        buffer.push(item.line.replace("handle(", "(") as never)
+                    } else {
+                        buffer.push(item.line as never)
+                    }
                 }
                 break
             case "END":
@@ -228,7 +236,11 @@ export default function (source: string, pkg: any) {
                     let className = item.name.replace(/^(\w+\.)+/, "")
                     let ns = item.name.substring(0, item.name.length - className.length - 1)
                     ensureExists(pkg, ns, {})
-                    get(pkg, ns)[className] = buffer.join("\n")
+                    if (ns === "java.lang" && className === "Object") {
+                        get(pkg, ns)[className] = "type Object = any"
+                    } else {
+                        get(pkg, ns)[className] = buffer.join("\n")
+                    }
                 }
                 break
             default:

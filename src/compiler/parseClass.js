@@ -215,12 +215,14 @@ function default_1(source, pkg) {
     }
     var buffer = [];
     var ignore = false;
+    var isInterface = false;
     for (var i = 0; i < ctx.stack.length; i++) {
         var item = ctx.stack[i];
         switch (item.type) {
             case "BEGIN":
                 buffer = [];
                 ignore = false;
+                isInterface = item.line.indexOf("interface") >= 0;
                 if (item.name.indexOf("-") >= 0)
                     ignore = true;
                 if (item.name.indexOf("$") >= 0)
@@ -234,7 +236,13 @@ function default_1(source, pkg) {
                 break;
             case "MEMBER":
                 if (!ignore && item.name !== "prototype") {
-                    buffer.push(item.line);
+                    if (isInterface && item.name === "handle") {
+                        buffer.push(item.line.replace("handle(", "handle?("));
+                        buffer.push(item.line.replace("handle(", "("));
+                    }
+                    else {
+                        buffer.push(item.line);
+                    }
                 }
                 break;
             case "END":
@@ -243,7 +251,12 @@ function default_1(source, pkg) {
                     var className = item.name.replace(/^(\w+\.)+/, "");
                     var ns = item.name.substring(0, item.name.length - className.length - 1);
                     object_path_1.ensureExists(pkg, ns, {});
-                    object_path_1.get(pkg, ns)[className] = buffer.join("\n");
+                    if (ns === "java.lang" && className === "Object") {
+                        object_path_1.get(pkg, ns)[className] = "type Object = any";
+                    }
+                    else {
+                        object_path_1.get(pkg, ns)[className] = buffer.join("\n");
+                    }
                 }
                 break;
             default:

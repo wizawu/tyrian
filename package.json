@@ -1,7 +1,8 @@
 {
   "name": "1c",
-  "version": "6.8.12",
+  "version": "6.8.13",
   "bin": "./bin/1c",
+  "repository": "github:wizawu/1c",
   "dependencies": {
     "@types/chalk": "^0.4.31",
     "@types/node": "^7.0.12",

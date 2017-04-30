@@ -4,7 +4,8 @@ declare namespace com {
             namespace provider {
                 class DESedeKey implements javax.crypto.SecretKey {
                     static serialVersionUID: long
-                    constructor(...args: any[])
+                    constructor(arg0: byte[])
+                    constructor(arg0: byte[], arg1: int)
                     public getEncoded(): byte[]
                     public getAlgorithm(): string
                     public getFormat(): string
@@ -19,9 +20,13 @@ declare namespace com {
                     protected engineGetBlockSize(): int
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
-                    engineInit<T>(...args: any[]): any
-                    engineUpdate<T>(...args: any[]): any
-                    engineDoFinal<T>(...args: any[]): any
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     protected engineGetParameters(): java.security.AlgorithmParameters
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
@@ -33,9 +38,12 @@ declare namespace com {
                 }
                 class GCMParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
-                    engineInit<T>(...args: any[]): any
+                    protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec): void
+                    protected engineInit(arg0: byte[]): void
+                    protected engineInit(arg0: byte[], arg1: string): void
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
-                    engineGetEncoded<T>(...args: any[]): any
+                    protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
+                    protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 class RC2Cipher extends javax.crypto.CipherSpi {
@@ -46,16 +54,22 @@ declare namespace com {
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
                     protected engineGetParameters(): java.security.AlgorithmParameters
-                    engineInit<T>(...args: any[]): any
-                    engineUpdate<T>(...args: any[]): any
-                    engineDoFinal<T>(...args: any[]): any
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class TlsKeyMaterialGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
-                    engineInit<T>(...args: any[]): any
+                    protected engineInit(arg0: java.security.SecureRandom): void
+                    protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineGenerateKey(): javax.crypto.SecretKey
                 }
                 class DESKeyFactory extends javax.crypto.SecretKeyFactorySpi {
@@ -70,7 +84,8 @@ declare namespace com {
                     public engineGetCertificateChain(arg0: string): java.security.cert.Certificate[]
                     public engineGetCertificate(arg0: string): java.security.cert.Certificate
                     public engineGetCreationDate(arg0: string): java.util.Date
-                    engineSetKeyEntry<T>(...args: any[]): any
+                    public engineSetKeyEntry(arg0: string, arg1: java.security.Key, arg2: char[], arg3: java.security.cert.Certificate[]): void
+                    public engineSetKeyEntry(arg0: string, arg1: byte[], arg2: java.security.cert.Certificate[]): void
                     public engineSetCertificateEntry(arg0: string, arg1: java.security.cert.Certificate): void
                     public engineDeleteEntry(arg0: string): void
                     public engineAliases(): java.util.Enumeration<java.lang.String>
@@ -84,50 +99,67 @@ declare namespace com {
                 }
                 class DESedeKeyGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
-                    engineInit<T>(...args: any[]): any
+                    protected engineInit(arg0: java.security.SecureRandom): void
+                    protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineGenerateKey(): javax.crypto.SecretKey
                 }
                 class DESKeyGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
-                    engineInit<T>(...args: any[]): any
+                    protected engineInit(arg0: java.security.SecureRandom): void
+                    protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineGenerateKey(): javax.crypto.SecretKey
                     static setParityBit(arg0: byte[], arg1: int): void
                 }
                 class DHParameterGenerator extends java.security.AlgorithmParameterGeneratorSpi {
                     public constructor()
-                    engineInit<T>(...args: any[]): any
+                    protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
+                    protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
                     protected engineGenerateParameters(): java.security.AlgorithmParameters
                 }
                 class SslMacCore {
                     constructor(arg0: string, arg1: byte[], arg2: byte[])
                     getDigestLength(): int
                     init(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
-                    update<T>(...args: any[]): any
+                    update(arg0: byte): void
+                    update(arg0: byte[], arg1: int, arg2: int): void
+                    update(arg0: java.nio.ByteBuffer): void
                     doFinal(): byte[]
                     reset(): void
                 }
                 class KeyGeneratorCore {
                     constructor(arg0: string, arg1: int)
-                    implInit<T>(...args: any[]): any
+                    implInit(arg0: java.security.SecureRandom): void
+                    implInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
+                    implInit(arg0: int, arg1: java.security.SecureRandom): void
                     implGenerateKey(): javax.crypto.SecretKey
                 }
                 class OAEPParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
-                    engineInit<T>(...args: any[]): any
+                    protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec): void
+                    protected engineInit(arg0: byte[]): void
+                    protected engineInit(arg0: byte[], arg1: string): void
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
-                    engineGetEncoded<T>(...args: any[]): any
+                    protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
+                    protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 class TlsRsaPremasterSecretGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
-                    engineInit<T>(...args: any[]): any
+                    protected engineInit(arg0: java.security.SecureRandom): void
+                    protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineGenerateKey(): javax.crypto.SecretKey
                 }
                 class BlowfishParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
-                    engineInit<T>(...args: any[]): any
+                    protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec): void
+                    protected engineInit(arg0: byte[]): void
+                    protected engineInit(arg0: byte[], arg1: string): void
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
-                    engineGetEncoded<T>(...args: any[]): any
+                    protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
+                    protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 abstract class CipherWithWrappingSpi extends javax.crypto.CipherSpi {
@@ -169,9 +201,13 @@ declare namespace com {
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
                     protected engineGetParameters(): java.security.AlgorithmParameters
-                    engineInit<T>(...args: any[]): any
-                    engineUpdate<T>(...args: any[]): any
-                    engineDoFinal<T>(...args: any[]): any
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
@@ -184,9 +220,13 @@ declare namespace com {
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
                     protected engineGetParameters(): java.security.AlgorithmParameters
-                    engineInit<T>(...args: any[]): any
-                    engineUpdate<T>(...args: any[]): any
-                    engineDoFinal<T>(...args: any[]): any
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     protected engineWrap(arg0: java.security.Key): byte[]
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                     protected engineGetKeySize(arg0: java.security.Key): int
@@ -199,9 +239,13 @@ declare namespace com {
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
                     protected engineGetParameters(): java.security.AlgorithmParameters
-                    engineInit<T>(...args: any[]): any
-                    engineUpdate<T>(...args: any[]): any
-                    engineDoFinal<T>(...args: any[]): any
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
@@ -214,9 +258,12 @@ declare namespace com {
                 }
                 class DHParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
-                    engineInit<T>(...args: any[]): any
+                    protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec): void
+                    protected engineInit(arg0: byte[]): void
+                    protected engineInit(arg0: byte[], arg1: string): void
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
-                    engineGetEncoded<T>(...args: any[]): any
+                    protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
+                    protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 class ElectronicCodeBook extends com.sun.crypto.provider.FeedbackCipher {
@@ -242,19 +289,27 @@ declare namespace com {
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
                     protected engineGetParameters(): java.security.AlgorithmParameters
-                    engineInit<T>(...args: any[]): any
-                    engineUpdate<T>(...args: any[]): any
-                    engineDoFinal<T>(...args: any[]): any
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
-                    engineUpdateAAD<T>(...args: any[]): any
+                    protected engineUpdateAAD(arg0: byte[], arg1: int, arg2: int): void
+                    protected engineUpdateAAD(arg0: java.nio.ByteBuffer): void
                 }
                 class RC2Parameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
-                    engineInit<T>(...args: any[]): any
+                    protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec): void
+                    protected engineInit(arg0: byte[]): void
+                    protected engineInit(arg0: byte[], arg1: string): void
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
-                    engineGetEncoded<T>(...args: any[]): any
+                    protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
+                    protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 class GCTR {
@@ -274,7 +329,8 @@ declare namespace com {
                     reset(): void
                     save(): void
                     restore(): void
-                    init<T>(...args: any[]): any
+                    init(arg0: boolean, arg1: string, arg2: byte[], arg3: byte[]): void
+                    init(arg0: boolean, arg1: string, arg2: byte[], arg3: byte[], arg4: int): void
                     updateAAD(arg0: byte[], arg1: int, arg2: int): void
                     processAAD(): void
                     doLastBlock(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int, arg5: boolean): void
@@ -287,7 +343,9 @@ declare namespace com {
                 }
                 class AESKeyGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
-                    engineInit<T>(...args: any[]): any
+                    protected engineInit(arg0: java.security.SecureRandom): void
+                    protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineGenerateKey(): javax.crypto.SecretKey
                 }
                 class ISO10126Padding implements com.sun.crypto.provider.Padding {
@@ -298,7 +356,9 @@ declare namespace com {
                 }
                 class HmacMD5KeyGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
-                    engineInit<T>(...args: any[]): any
+                    protected engineInit(arg0: java.security.SecureRandom): void
+                    protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineGenerateKey(): javax.crypto.SecretKey
                 }
                 class DHKeyFactory extends java.security.KeyFactorySpi {
@@ -316,23 +376,32 @@ declare namespace com {
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
                     protected engineGetParameters(): java.security.AlgorithmParameters
-                    engineInit<T>(...args: any[]): any
-                    engineUpdate<T>(...args: any[]): any
-                    engineDoFinal<T>(...args: any[]): any
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class HmacSHA1KeyGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
-                    engineInit<T>(...args: any[]): any
+                    protected engineInit(arg0: java.security.SecureRandom): void
+                    protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineGenerateKey(): javax.crypto.SecretKey
                 }
                 class AESParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
-                    engineInit<T>(...args: any[]): any
+                    protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec): void
+                    protected engineInit(arg0: byte[]): void
+                    protected engineInit(arg0: byte[], arg1: string): void
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
-                    engineGetEncoded<T>(...args: any[]): any
+                    protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
+                    protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 class DESedeKeyFactory extends javax.crypto.SecretKeyFactorySpi {
@@ -349,9 +418,13 @@ declare namespace com {
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
                     protected engineGetParameters(): java.security.AlgorithmParameters
-                    engineInit<T>(...args: any[]): any
-                    engineUpdate<T>(...args: any[]): any
-                    engineDoFinal<T>(...args: any[]): any
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     protected engineWrap(arg0: java.security.Key): byte[]
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                     protected engineGetKeySize(arg0: java.security.Key): int
@@ -360,7 +433,8 @@ declare namespace com {
                     static CIPHER_KEY: int
                     static CIPHER_IV: int
                     static MAC_KEY: int
-                    static derive<T>(...args: any[]): any
+                    static derive(arg0: char[], arg1: byte[], arg2: int, arg3: int, arg4: int): byte[]
+                    static derive(arg0: char[], arg1: byte[], arg2: int, arg3: int, arg4: int, arg5: string, arg6: int): byte[]
                     constructor(arg0: string, arg1: int)
                     implSetMode(arg0: string): void
                     implSetPadding(arg0: string): void
@@ -368,9 +442,16 @@ declare namespace com {
                     implGetOutputSize(arg0: int): int
                     implGetIV(): byte[]
                     implGetParameters(): java.security.AlgorithmParameters
-                    implInit<T>(...args: any[]): any
-                    implUpdate<T>(...args: any[]): any
-                    implDoFinal<T>(...args: any[]): any
+                    implInit(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom): void
+                    implInit(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom, arg4: javax.crypto.CipherSpi): void
+                    implInit(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
+                    implInit(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom, arg4: javax.crypto.CipherSpi): void
+                    implInit(arg0: int, arg1: java.security.Key, arg2: java.security.SecureRandom): void
+                    implInit(arg0: int, arg1: java.security.Key, arg2: java.security.SecureRandom, arg3: javax.crypto.CipherSpi): void
+                    implUpdate(arg0: byte[], arg1: int, arg2: int): byte[]
+                    implUpdate(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                    implDoFinal(arg0: byte[], arg1: int, arg2: int): byte[]
+                    implDoFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     implGetKeySize(arg0: java.security.Key): int
                     implWrap(arg0: java.security.Key): byte[]
                     implUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
@@ -405,12 +486,15 @@ declare namespace com {
                 }
                 class TlsMasterSecretGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
-                    engineInit<T>(...args: any[]): any
+                    protected engineInit(arg0: java.security.SecureRandom): void
+                    protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineGenerateKey(): javax.crypto.SecretKey
                 }
                 class DHKeyPairGenerator extends java.security.KeyPairGeneratorSpi {
                     public constructor()
-                    initialize<T>(...args: any[]): any
+                    public initialize(arg0: int, arg1: java.security.SecureRandom): void
+                    public initialize(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
                     public generateKeyPair(): java.security.KeyPair
                 }
                 class PBECipherCore {
@@ -421,15 +505,20 @@ declare namespace com {
                     getOutputSize(arg0: int): int
                     getIV(): byte[]
                     getParameters(): java.security.AlgorithmParameters
-                    init<T>(...args: any[]): any
-                    update<T>(...args: any[]): any
-                    doFinal<T>(...args: any[]): any
+                    init(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom): void
+                    init(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
+                    update(arg0: byte[], arg1: int, arg2: int): byte[]
+                    update(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                    doFinal(arg0: byte[], arg1: int, arg2: int): byte[]
+                    doFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     wrap(arg0: java.security.Key): byte[]
                     unwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class DHPrivateKey implements java.security.PrivateKey , javax.crypto.interfaces.DHPrivateKey , java.io.Serializable {
                     static serialVersionUID: long
-                    constructor(...args: any[])
+                    constructor(arg0: java.math.BigInteger, arg1: java.math.BigInteger, arg2: java.math.BigInteger)
+                    constructor(arg0: java.math.BigInteger, arg1: java.math.BigInteger, arg2: java.math.BigInteger, arg3: int)
+                    constructor(arg0: byte[])
                     public getFormat(): string
                     public getAlgorithm(): string
                     public getEncoded(): byte[]
@@ -448,10 +537,14 @@ declare namespace com {
                     static genPad(arg0: byte, arg1: int): byte[]
                     static concat(arg0: byte[], arg1: byte[]): byte[]
                     public constructor()
-                    engineInit<T>(...args: any[]): any
+                    protected engineInit(arg0: java.security.SecureRandom): void
+                    protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     engineGenerateKey0(arg0: boolean): javax.crypto.SecretKey
-                    static doTLS12PRF<T>(...args: any[]): any
-                    static doTLS10PRF<T>(...args: any[]): any
+                    static doTLS12PRF(arg0: byte[], arg1: byte[], arg2: byte[], arg3: int, arg4: string, arg5: int, arg6: int): byte[]
+                    static doTLS12PRF(arg0: byte[], arg1: byte[], arg2: byte[], arg3: int, arg4: java.security.MessageDigest, arg5: int, arg6: int): byte[]
+                    static doTLS10PRF(arg0: byte[], arg1: byte[], arg2: byte[], arg3: int): byte[]
+                    static doTLS10PRF(arg0: byte[], arg1: byte[], arg2: byte[], arg3: int, arg4: java.security.MessageDigest, arg5: java.security.MessageDigest): byte[]
                 }
                 abstract class PBES2Core extends javax.crypto.CipherSpi {
                     constructor(arg0: string, arg1: string, arg2: int)
@@ -461,9 +554,13 @@ declare namespace com {
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
                     protected engineGetParameters(): java.security.AlgorithmParameters
-                    engineInit<T>(...args: any[]): any
-                    engineUpdate<T>(...args: any[]): any
-                    engineDoFinal<T>(...args: any[]): any
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
@@ -487,9 +584,12 @@ declare namespace com {
                     getOutputSize(arg0: int): int
                     getIV(): byte[]
                     getParameters(): java.security.AlgorithmParameters
-                    init<T>(...args: any[]): any
-                    update<T>(...args: any[]): any
-                    doFinal<T>(...args: any[]): any
+                    init(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom): void
+                    init(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
+                    update(arg0: byte[], arg1: int, arg2: int): byte[]
+                    update(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                    doFinal(arg0: byte[], arg1: int, arg2: int): byte[]
+                    doFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     wrap(arg0: java.security.Key): byte[]
                     unwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
@@ -501,9 +601,13 @@ declare namespace com {
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
                     protected engineGetParameters(): java.security.AlgorithmParameters
-                    engineInit<T>(...args: any[]): any
-                    engineUpdate<T>(...args: any[]): any
-                    engineDoFinal<T>(...args: any[]): any
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
@@ -515,10 +619,14 @@ declare namespace com {
                     getOutputSize(arg0: int): int
                     getIV(): byte[]
                     getParameters(arg0: string): java.security.AlgorithmParameters
-                    init<T>(...args: any[]): any
+                    init(arg0: int, arg1: java.security.Key, arg2: java.security.SecureRandom): void
+                    init(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom): void
+                    init(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
                     static getKeyBytes(arg0: java.security.Key): byte[]
-                    update<T>(...args: any[]): any
-                    doFinal<T>(...args: any[]): any
+                    update(arg0: byte[], arg1: int, arg2: int): byte[]
+                    update(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                    doFinal(arg0: byte[], arg1: int, arg2: int): byte[]
+                    doFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     wrap(arg0: java.security.Key): byte[]
                     unwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                     updateAAD(arg0: byte[], arg1: int, arg2: int): void
@@ -530,9 +638,13 @@ declare namespace com {
                     protected engineGetBlockSize(): int
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
-                    engineInit<T>(...args: any[]): any
-                    engineUpdate<T>(...args: any[]): any
-                    engineDoFinal<T>(...args: any[]): any
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     protected engineGetParameters(): java.security.AlgorithmParameters
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
@@ -543,7 +655,8 @@ declare namespace com {
                     reset(): void
                     save(): void
                     restore(): void
-                    update<T>(...args: any[]): any
+                    update(arg0: byte[]): void
+                    update(arg0: byte[], arg1: int, arg2: int): void
                     digest(): byte[]
                 }
                 interface AESConstants {
@@ -565,9 +678,13 @@ declare namespace com {
                     protected engineGetBlockSize(): int
                     protected engineGetOutputSize(arg0: int): int
                     protected engineGetIV(): byte[]
-                    engineInit<T>(...args: any[]): any
-                    engineUpdate<T>(...args: any[]): any
-                    engineDoFinal<T>(...args: any[]): any
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int): byte[]
+                    protected engineDoFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     protected engineGetParameters(): java.security.AlgorithmParameters
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
@@ -585,16 +702,20 @@ declare namespace com {
                 }
                 class DESedeParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
-                    engineInit<T>(...args: any[]): any
+                    protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec): void
+                    protected engineInit(arg0: byte[]): void
+                    protected engineInit(arg0: byte[], arg1: string): void
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
-                    engineGetEncoded<T>(...args: any[]): any
+                    protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
+                    protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 class CipherForKeyProtector extends javax.crypto.Cipher {
                     protected constructor(arg0: javax.crypto.CipherSpi, arg1: java.security.Provider, arg2: string)
                 }
                 class EncryptedPrivateKeyInfo {
-                    constructor(...args: any[])
+                    constructor(arg0: byte[])
+                    constructor(arg0: sun.security.x509.AlgorithmId, arg1: byte[])
                     getAlgorithm(): sun.security.x509.AlgorithmId
                     getEncryptedData(): byte[]
                     getEncoded(): byte[]
@@ -618,14 +739,18 @@ declare namespace com {
                 }
                 class PBEParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
-                    engineInit<T>(...args: any[]): any
+                    protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec): void
+                    protected engineInit(arg0: byte[]): void
+                    protected engineInit(arg0: byte[], arg1: string): void
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
-                    engineGetEncoded<T>(...args: any[]): any
+                    protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
+                    protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 class SealedObjectForKeyProtector extends javax.crypto.SealedObject {
                     static serialVersionUID: long
-                    constructor(...args: any[])
+                    constructor(arg0: java.io.Serializable, arg1: javax.crypto.Cipher)
+                    constructor(arg0: javax.crypto.SealedObject)
                     getParameters(): java.security.AlgorithmParameters
                 }
                 class ConstructKeys {
@@ -638,13 +763,15 @@ declare namespace com {
                 }
                 class DHPublicKey implements java.security.PublicKey , javax.crypto.interfaces.DHPublicKey , java.io.Serializable {
                     static serialVersionUID: long
-                    constructor(...args: any[])
+                    constructor(arg0: java.math.BigInteger, arg1: java.math.BigInteger, arg2: java.math.BigInteger)
+                    constructor(arg0: java.math.BigInteger, arg1: java.math.BigInteger, arg2: java.math.BigInteger, arg3: int)
+                    constructor(arg0: byte[])
                     public getFormat(): string
                     public getAlgorithm(): string
                     public getEncoded(): byte[]
                     public getY(): java.math.BigInteger
                     public getParams(): javax.crypto.spec.DHParameterSpec
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
                 }
@@ -687,7 +814,9 @@ declare namespace com {
                 }
                 class BlowfishKeyGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
-                    engineInit<T>(...args: any[]): any
+                    protected engineInit(arg0: java.security.SecureRandom): void
+                    protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
+                    protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineGenerateKey(): javax.crypto.SecretKey
                 }
                 class PBEKey implements javax.crypto.SecretKey {
@@ -713,9 +842,12 @@ declare namespace com {
                 }
                 class DHKeyAgreement extends javax.crypto.KeyAgreementSpi {
                     public constructor()
-                    engineInit<T>(...args: any[]): any
+                    protected engineInit(arg0: java.security.Key, arg1: java.security.SecureRandom): void
+                    protected engineInit(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec, arg2: java.security.SecureRandom): void
                     protected engineDoPhase(arg0: java.security.Key, arg1: boolean): java.security.Key
-                    engineGenerateSecret<T>(...args: any[]): any
+                    protected engineGenerateSecret(): byte[]
+                    protected engineGenerateSecret(arg0: byte[], arg1: int): int
+                    protected engineGenerateSecret(arg0: string): javax.crypto.SecretKey
                 }
                 class PBKDF2HmacSHA1Factory extends javax.crypto.SecretKeyFactorySpi {
                     public constructor()
@@ -725,21 +857,28 @@ declare namespace com {
                 }
                 class BlockCipherParamsCore {
                     constructor(arg0: int)
-                    init<T>(...args: any[]): any
+                    init(arg0: java.security.spec.AlgorithmParameterSpec): void
+                    init(arg0: byte[]): void
+                    init(arg0: byte[], arg1: string): void
                     getParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
-                    getEncoded<T>(...args: any[]): any
-                    toString<T>(...args: any[]): any
+                    getEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
+                    getEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
+                    public toString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 class DESParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
-                    engineInit<T>(...args: any[]): any
+                    protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec): void
+                    protected engineInit(arg0: byte[]): void
+                    protected engineInit(arg0: byte[], arg1: string): void
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
-                    engineGetEncoded<T>(...args: any[]): any
+                    protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
+                    protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 class DESKey implements javax.crypto.SecretKey {
                     static serialVersionUID: long
-                    constructor(...args: any[])
+                    constructor(arg0: byte[])
+                    constructor(arg0: byte[], arg1: int)
                     public getEncoded(): byte[]
                     public getAlgorithm(): string
                     public getFormat(): string
@@ -748,10 +887,14 @@ declare namespace com {
                     protected finalize(): void
                 }
                 abstract class PBES2Parameters extends java.security.AlgorithmParametersSpi {
-                    constructor(...args: any[])
-                    engineInit<T>(...args: any[]): any
+                    constructor()
+                    constructor(arg0: string)
+                    protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec): void
+                    protected engineInit(arg0: byte[]): void
+                    protected engineInit(arg0: byte[], arg1: string): void
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
-                    engineGetEncoded<T>(...args: any[]): any
+                    protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
+                    protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 abstract class SymmetricCipher {
@@ -792,10 +935,13 @@ declare namespace com {
                     decrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                 }
                 abstract class HmacCore extends javax.crypto.MacSpi implements java.lang.Cloneable {
-                    constructor(...args: any[])
+                    constructor(arg0: java.security.MessageDigest, arg1: int)
+                    constructor(arg0: string, arg1: int)
                     protected engineGetMacLength(): int
                     protected engineInit(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
-                    engineUpdate<T>(...args: any[]): any
+                    protected engineUpdate(arg0: byte): void
+                    protected engineUpdate(arg0: byte[], arg1: int, arg2: int): void
+                    protected engineUpdate(arg0: java.nio.ByteBuffer): void
                     protected engineDoFinal(): byte[]
                     protected engineReset(): void
                     public clone(): java.lang.Object

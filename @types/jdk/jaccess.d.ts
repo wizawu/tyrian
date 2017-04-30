@@ -114,7 +114,8 @@ declare namespace com {
                         protected source: java.lang.Object
                         protected static getTranslatorClass(arg0: java.lang.Class): java.lang.Class
                         public static getAccessible(arg0: java.lang.Object): javax.accessibility.Accessible
-                        constructor(...args: any[])
+                        public constructor()
+                        public constructor(arg0: java.lang.Object)
                         public getSource(): java.lang.Object
                         public setSource(arg0: java.lang.Object): void
                         public equals(arg0: java.lang.Object): boolean
@@ -175,10 +176,11 @@ declare namespace com {
                         protected listenerList: java.lang.Object[]
                         public constructor()
                         public getListenerList(): java.lang.Object[]
-                        getListenerCount<T>(...args: any[]): any
+                        public getListenerCount(): int
+                        public getListenerCount(arg0: java.lang.Class): int
                         public add(arg0: java.lang.Class, arg1: java.util.EventListener): void
                         public remove(arg0: java.lang.Class, arg1: java.util.EventListener): void
-                        toString<T>(...args: any[]): any
+                        public toString(): string
                     }
                     interface GUIInitializedListener extends java.util.EventListener {
                         guiInitialized(): void

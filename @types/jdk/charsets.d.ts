@@ -1187,7 +1187,10 @@ declare namespace sun {
                     public newEncoder(): java.nio.charset.CharsetEncoder
                 }
                 abstract class DoubleByteEncoder extends java.nio.charset.CharsetEncoder {
-                    constructor(...args: any[])
+                    protected constructor(arg0: java.nio.charset.Charset, arg1: short[], arg2: java.lang.String[])
+                    protected constructor(arg0: java.nio.charset.Charset, arg1: short[], arg2: java.lang.String[], arg3: float, arg4: float)
+                    protected constructor(arg0: java.nio.charset.Charset, arg1: short[], arg2: java.lang.String[], arg3: byte[])
+                    protected constructor(arg0: java.nio.charset.Charset, arg1: short[], arg2: java.lang.String[], arg3: byte[], arg4: float, arg5: float)
                     public canEncode(arg0: char): boolean
                     protected encodeLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
                     protected encodeDouble(arg0: char): int
@@ -1209,7 +1212,8 @@ declare namespace sun {
                     public newEncoder(): java.nio.charset.CharsetEncoder
                 }
                 class MS50220 extends sun.nio.cs.ext.ISO2022_JP {
-                    constructor(...args: any[])
+                    public constructor()
+                    protected constructor(arg0: string, arg1: java.lang.String[])
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
@@ -1332,7 +1336,8 @@ declare namespace sun {
                     public constructor()
                 }
                 class ISO2022_JP extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    constructor(...args: any[])
+                    public constructor()
+                    protected constructor(arg0: string, arg1: java.lang.String[])
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder

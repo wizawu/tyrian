@@ -23,7 +23,8 @@ declare namespace org {
                     static $assertionsDisabled: boolean
                     constructor(arg0: javax.sound.sampled.AudioFormat[], arg1: javax.sound.sampled.AudioFormat)
                     public close(): void
-                    open<T>(...args: any[]): any
+                    public open(arg0: javax.sound.sampled.AudioFormat, arg1: int): void
+                    public open(arg0: javax.sound.sampled.AudioFormat): void
                     protected connectLine(arg0: int, arg1: org.classpath.icedtea.pulseaudio.Stream): void
                     public read(arg0: byte[], arg1: int, arg2: int): int
                     public drain(): void
@@ -44,6 +45,7 @@ declare namespace org {
                     public getStream(): org.classpath.icedtea.pulseaudio.Stream
                     public isRunning(): boolean
                     public isActive(): boolean
+                    public open(): void
                     public removeLineListener(arg0: javax.sound.sampled.LineListener): void
                     public isOpen(): boolean
                     public isControlSupported(arg0: any): boolean
@@ -63,7 +65,8 @@ declare namespace org {
                     public static DEFAULT_SOURCEDATALINE_NAME: string
                     static $assertionsDisabled: boolean
                     constructor(arg0: javax.sound.sampled.AudioFormat[], arg1: javax.sound.sampled.AudioFormat)
-                    open<T>(...args: any[]): any
+                    public open(arg0: javax.sound.sampled.AudioFormat, arg1: int): void
+                    public open(arg0: javax.sound.sampled.AudioFormat): void
                     public native_set_volume(arg0: float): byte[]
                     public native_update_volume(): byte[]
                     public getCachedVolume(): float
@@ -89,6 +92,7 @@ declare namespace org {
                     public isActive(): boolean
                     public stop(): void
                     public start(): void
+                    public open(): void
                     public removeLineListener(arg0: javax.sound.sampled.LineListener): void
                     public isOpen(): boolean
                     public isControlSupported(arg0: any): boolean
@@ -131,9 +135,11 @@ declare namespace org {
                     public getLine(arg0: any): javax.sound.sampled.Line
                     public getMaxLines(arg0: any): int
                     public getMixerInfo(): any
-                    getSourceLineInfo<T>(...args: any[]): any
+                    public getSourceLineInfo(): any
+                    public getSourceLineInfo(arg0: any): any
                     public getSourceLines(): javax.sound.sampled.Line[]
-                    getTargetLineInfo<T>(...args: any[]): any
+                    public getTargetLineInfo(): any
+                    public getTargetLineInfo(arg0: any): any
                     public getTargetLines(): javax.sound.sampled.Line[]
                     public isLineSupported(arg0: any): boolean
                     public isSynchronizationSupported(arg0: javax.sound.sampled.Line[], arg1: boolean): boolean
@@ -147,8 +153,10 @@ declare namespace org {
                     public isControlSupported(arg0: any): boolean
                     public isOpen(): boolean
                     public open(): void
-                    openLocal<T>(...args: any[]): any
-                    openRemote<T>(...args: any[]): any
+                    public openLocal(): void
+                    public openLocal(arg0: string): void
+                    public openRemote(arg0: string, arg1: string): void
+                    public openRemote(arg0: string, arg1: string, arg2: int): void
                     public removeLineListener(arg0: javax.sound.sampled.LineListener): void
                     addSourceLine(arg0: org.classpath.icedtea.pulseaudio.PulseAudioLine): void
                     removeSourceLine(arg0: org.classpath.icedtea.pulseaudio.PulseAudioLine): void
@@ -158,7 +166,8 @@ declare namespace org {
                     static access$000(arg0: org.classpath.icedtea.pulseaudio.PulseAudioMixer, arg1: javax.sound.sampled.LineEvent): void
                 }
                 class StreamSampleSpecification {
-                    constructor(...args: any[])
+                    public constructor(arg0: any, arg1: int, arg2: int)
+                    public constructor(arg0: string, arg1: int, arg2: int)
                     public getFormat(): any
                     public getRate(): int
                     public getChannels(): int
@@ -185,7 +194,7 @@ declare namespace org {
                 abstract class PulseAudioLine implements javax.sound.sampled.Line {
                     protected lineListeners: java.util.List<javax.sound.sampled.LineListener>
                     protected controls: java.util.List<javax.sound.sampled.Control>
-                    isOpen<T>(...args: any[]): any
+                    protected isOpen: boolean
                     constructor()
                     public addLineListener(arg0: javax.sound.sampled.LineListener): void
                     public close(): void
@@ -193,6 +202,7 @@ declare namespace org {
                     public getControl(arg0: any): javax.sound.sampled.Control
                     public getControls(): javax.sound.sampled.Control[]
                     public isControlSupported(arg0: any): boolean
+                    public isOpen(): boolean
                     public removeLineListener(arg0: javax.sound.sampled.LineListener): void
                 }
                 abstract class PulseAudioDataLine extends org.classpath.icedtea.pulseaudio.PulseAudioLine implements javax.sound.sampled.DataLine {
@@ -211,7 +221,9 @@ declare namespace org {
                     writeInterrupted: boolean
                     static $assertionsDisabled: boolean
                     constructor()
-                    open<T>(...args: any[]): any
+                    protected open(arg0: javax.sound.sampled.AudioFormat, arg1: int): void
+                    protected open(arg0: javax.sound.sampled.AudioFormat): void
+                    public open(): void
                     public close(): void
                     reconnectforSynchronization(arg0: org.classpath.icedtea.pulseaudio.Stream): void
                     public start(): void
@@ -241,11 +253,13 @@ declare namespace org {
                     public getMicrosecondLength(): long
                     public getMicrosecondPosition(): long
                     public loop(arg0: int): void
-                    open<T>(...args: any[]): any
+                    public open(): void
+                    public open(arg0: javax.sound.sampled.AudioFormat, arg1: byte[], arg2: int, arg3: int): void
                     public native_set_volume(arg0: float): byte[]
                     public native_update_volume(): byte[]
                     public getCachedVolume(): float
                     public setCachedVolume(arg0: float): void
+                    public open(arg0: javax.sound.sampled.AudioInputStream): void
                     public setFramePosition(arg0: int): void
                     public setLoopPoints(arg0: int, arg1: int): void
                     public setMicrosecondPosition(arg0: long): void
@@ -346,7 +360,8 @@ declare namespace org {
                     drain(): org.classpath.icedtea.pulseaudio.Operation
                     updateTimingInfo(): org.classpath.icedtea.pulseaudio.Operation
                     isCorked(): boolean
-                    cork<T>(...args: any[]): any
+                    cork(arg0: boolean): org.classpath.icedtea.pulseaudio.Operation
+                    cork(): org.classpath.icedtea.pulseaudio.Operation
                     unCork(): org.classpath.icedtea.pulseaudio.Operation
                     flush(): org.classpath.icedtea.pulseaudio.Operation
                     triggerStart(): org.classpath.icedtea.pulseaudio.Operation
@@ -396,8 +411,9 @@ declare namespace org {
                 }
                 class Debug {
                     constructor()
-                    static println<T>(...args: any[]): any
+                    static println(arg0: string): void
                     static print(arg0: any, arg1: string): void
+                    static println(arg0: any, arg1: string): void
                 }
                 interface ContextListener {
                     update(arg0: org.classpath.icedtea.pulseaudio.ContextEvent): void

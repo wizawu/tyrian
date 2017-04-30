@@ -14,16 +14,21 @@ declare namespace sun {
             class P11TlsMasterSecretGenerator extends javax.crypto.KeyGeneratorSpi {
                 version: int
                 constructor(arg0: sun.security.pkcs11.Token, arg1: string, arg2: long)
-                engineInit<T>(...args: any[]): any
+                protected engineInit(arg0: java.security.SecureRandom): void
+                protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
+                protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                 protected engineGenerateKey(): javax.crypto.SecretKey
             }
             class P11Digest extends java.security.MessageDigestSpi implements java.lang.Cloneable {
                 constructor(arg0: sun.security.pkcs11.Token, arg1: string, arg2: long)
                 protected engineGetDigestLength(): int
                 protected engineReset(): void
-                engineDigest<T>(...args: any[]): any
-                engineUpdate<T>(...args: any[]): any
+                protected engineDigest(): byte[]
+                protected engineDigest(arg0: byte[], arg1: int, arg2: int): int
+                protected engineUpdate(arg0: byte): void
+                protected engineUpdate(arg0: byte[], arg1: int, arg2: int): void
                 protected implUpdate(arg0: javax.crypto.SecretKey): void
+                protected engineUpdate(arg0: java.nio.ByteBuffer): void
                 public clone(): java.lang.Object
             }
             class P11DHKeyFactory extends sun.security.pkcs11.P11KeyFactory {
@@ -39,7 +44,8 @@ declare namespace sun {
             class P11SecretKeyFactory extends javax.crypto.SecretKeyFactorySpi {
                 constructor(arg0: sun.security.pkcs11.Token, arg1: string)
                 static getKeyType(arg0: string): long
-                static convertKey<T>(...args: any[]): any
+                static convertKey(arg0: sun.security.pkcs11.Token, arg1: java.security.Key, arg2: string): sun.security.pkcs11.P11Key
+                static convertKey(arg0: sun.security.pkcs11.Token, arg1: java.security.Key, arg2: string, arg3: sun.security.pkcs11.wrapper.CK_ATTRIBUTE[]): sun.security.pkcs11.P11Key
                 static fixDESParity(arg0: byte[], arg1: int): void
                 protected engineGenerateSecret(arg0: java.security.spec.KeySpec): javax.crypto.SecretKey
                 protected engineGetKeySpec(arg0: javax.crypto.SecretKey, arg1: java.lang.Class<any>): java.security.spec.KeySpec
@@ -47,20 +53,27 @@ declare namespace sun {
             }
             class P11TlsRsaPremasterSecretGenerator extends javax.crypto.KeyGeneratorSpi {
                 constructor(arg0: sun.security.pkcs11.Token, arg1: string, arg2: long)
-                engineInit<T>(...args: any[]): any
+                protected engineInit(arg0: java.security.SecureRandom): void
+                protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
+                protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                 protected engineGenerateKey(): javax.crypto.SecretKey
             }
             class P11ECDHKeyAgreement extends javax.crypto.KeyAgreementSpi {
                 constructor(arg0: sun.security.pkcs11.Token, arg1: string, arg2: long)
-                engineInit<T>(...args: any[]): any
+                protected engineInit(arg0: java.security.Key, arg1: java.security.SecureRandom): void
+                protected engineInit(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec, arg2: java.security.SecureRandom): void
                 protected engineDoPhase(arg0: java.security.Key, arg1: boolean): java.security.Key
-                engineGenerateSecret<T>(...args: any[]): any
+                protected engineGenerateSecret(): byte[]
+                protected engineGenerateSecret(arg0: byte[], arg1: int): int
+                protected engineGenerateSecret(arg0: string): javax.crypto.SecretKey
             }
             class P11Signature extends java.security.SignatureSpi {
                 constructor(arg0: sun.security.pkcs11.Token, arg1: string, arg2: long)
                 protected engineInitVerify(arg0: java.security.PublicKey): void
                 protected engineInitSign(arg0: java.security.PrivateKey): void
-                engineUpdate<T>(...args: any[]): any
+                protected engineUpdate(arg0: byte): void
+                protected engineUpdate(arg0: byte[], arg1: int, arg2: int): void
+                protected engineUpdate(arg0: java.nio.ByteBuffer): void
                 protected engineSign(): byte[]
                 protected engineVerify(arg0: byte[]): boolean
                 protected engineSetParameter(arg0: string, arg1: java.lang.Object): void
@@ -68,7 +81,9 @@ declare namespace sun {
             }
             class P11TlsPrfGenerator extends javax.crypto.KeyGeneratorSpi {
                 constructor(arg0: sun.security.pkcs11.Token, arg1: string, arg2: long)
-                engineInit<T>(...args: any[]): any
+                protected engineInit(arg0: java.security.SecureRandom): void
+                protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
+                protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                 protected engineGenerateKey(): javax.crypto.SecretKey
             }
             class ConstructKeys {
@@ -83,9 +98,13 @@ declare namespace sun {
                 protected engineGetOutputSize(arg0: int): int
                 protected engineGetIV(): byte[]
                 protected engineGetParameters(): java.security.AlgorithmParameters
-                engineInit<T>(...args: any[]): any
-                engineUpdate<T>(...args: any[]): any
-                engineDoFinal<T>(...args: any[]): any
+                protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.SecureRandom): void
+                protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom): void
+                protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
+                protected engineUpdate(arg0: byte[], arg1: int, arg2: int): byte[]
+                protected engineUpdate(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                protected engineDoFinal(arg0: byte[], arg1: int, arg2: int): byte[]
+                protected engineDoFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                 protected engineWrap(arg0: java.security.Key): byte[]
                 protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 protected engineGetKeySize(arg0: java.security.Key): int
@@ -93,7 +112,9 @@ declare namespace sun {
             class P11KeyGenerator extends javax.crypto.KeyGeneratorSpi {
                 static checkKeySize(arg0: long, arg1: int, arg2: sun.security.pkcs11.Token): int
                 constructor(arg0: sun.security.pkcs11.Token, arg1: string, arg2: long)
-                engineInit<T>(...args: any[]): any
+                protected engineInit(arg0: java.security.SecureRandom): void
+                protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
+                protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                 protected engineGenerateKey(): javax.crypto.SecretKey
             }
             class P11Cipher extends javax.crypto.CipherSpi {
@@ -104,9 +125,15 @@ declare namespace sun {
                 protected engineGetOutputSize(arg0: int): int
                 protected engineGetIV(): byte[]
                 protected engineGetParameters(): java.security.AlgorithmParameters
-                engineInit<T>(...args: any[]): any
-                engineUpdate<T>(...args: any[]): any
-                engineDoFinal<T>(...args: any[]): any
+                protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.SecureRandom): void
+                protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom): void
+                protected engineInit(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
+                protected engineUpdate(arg0: byte[], arg1: int, arg2: int): byte[]
+                protected engineUpdate(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                protected engineUpdate(arg0: java.nio.ByteBuffer, arg1: java.nio.ByteBuffer): int
+                protected engineDoFinal(arg0: byte[], arg1: int, arg2: int): byte[]
+                protected engineDoFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                protected engineDoFinal(arg0: java.nio.ByteBuffer, arg1: java.nio.ByteBuffer): int
                 protected engineWrap(arg0: java.security.Key): byte[]
                 protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 protected engineGetKeySize(arg0: java.security.Key): int
@@ -123,7 +150,9 @@ declare namespace sun {
             }
             class P11TlsKeyMaterialGenerator extends javax.crypto.KeyGeneratorSpi {
                 constructor(arg0: sun.security.pkcs11.Token, arg1: string, arg2: long)
-                engineInit<T>(...args: any[]): any
+                protected engineInit(arg0: java.security.SecureRandom): void
+                protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
+                protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                 protected engineGenerateKey(): javax.crypto.SecretKey
             }
             class P11Mac extends javax.crypto.MacSpi {
@@ -132,22 +161,30 @@ declare namespace sun {
                 protected engineReset(): void
                 protected engineInit(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
                 protected engineDoFinal(): byte[]
-                engineUpdate<T>(...args: any[]): any
+                protected engineUpdate(arg0: byte): void
+                protected engineUpdate(arg0: byte[], arg1: int, arg2: int): void
+                protected engineUpdate(arg0: java.nio.ByteBuffer): void
             }
             class P11KeyAgreement extends javax.crypto.KeyAgreementSpi {
                 constructor(arg0: sun.security.pkcs11.Token, arg1: string, arg2: long)
-                engineInit<T>(...args: any[]): any
+                protected engineInit(arg0: java.security.Key, arg1: java.security.SecureRandom): void
+                protected engineInit(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec, arg2: java.security.SecureRandom): void
                 protected engineDoPhase(arg0: java.security.Key, arg1: boolean): java.security.Key
-                engineGenerateSecret<T>(...args: any[]): any
+                protected engineGenerateSecret(): byte[]
+                protected engineGenerateSecret(arg0: byte[], arg1: int): int
+                protected engineGenerateSecret(arg0: string): javax.crypto.SecretKey
             }
             class P11KeyPairGenerator extends java.security.KeyPairGeneratorSpi {
                 constructor(arg0: sun.security.pkcs11.Token, arg1: string, arg2: long)
-                initialize<T>(...args: any[]): any
+                public initialize(arg0: int, arg1: java.security.SecureRandom): void
+                public initialize(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
                 public generateKeyPair(): java.security.KeyPair
             }
             class P11ECKeyFactory extends sun.security.pkcs11.P11KeyFactory {
                 constructor(arg0: sun.security.pkcs11.Token, arg1: string)
-                static getECParameterSpec<T>(...args: any[]): any
+                static getECParameterSpec(arg0: string): java.security.spec.ECParameterSpec
+                static getECParameterSpec(arg0: int): java.security.spec.ECParameterSpec
+                static getECParameterSpec(arg0: java.security.spec.ECParameterSpec): java.security.spec.ECParameterSpec
                 static decodeParameters(arg0: byte[]): java.security.spec.ECParameterSpec
                 static encodeParameters(arg0: java.security.spec.ECParameterSpec): byte[]
                 static decodePoint(arg0: byte[], arg1: java.security.spec.EllipticCurve): java.security.spec.ECPoint
@@ -169,14 +206,16 @@ declare namespace sun {
             class SessionKeyRef extends java.lang.ref.PhantomReference<sun.security.pkcs11.P11Key> implements java.lang.Comparable<sun.security.pkcs11.SessionKeyRef> {
                 static referenceQueue(): java.lang.ref.ReferenceQueue<sun.security.pkcs11.P11Key>
                 constructor(arg0: sun.security.pkcs11.P11Key, arg1: long, arg2: sun.security.pkcs11.Session)
-                compareTo<T>(...args: any[]): any
+                public compareTo(arg0: sun.security.pkcs11.SessionKeyRef): int
+                public compareTo(arg0: java.lang.Object): int
             }
             class SessionRef extends java.lang.ref.PhantomReference<sun.security.pkcs11.Session> implements java.lang.Comparable<sun.security.pkcs11.SessionRef> {
                 static referenceQueue(): java.lang.ref.ReferenceQueue<sun.security.pkcs11.Session>
                 static totalCount(): int
                 constructor(arg0: sun.security.pkcs11.Session, arg1: long, arg2: sun.security.pkcs11.Token)
                 dispose(): void
-                compareTo<T>(...args: any[]): any
+                public compareTo(arg0: sun.security.pkcs11.SessionRef): int
+                public compareTo(arg0: java.lang.Object): int
             }
             abstract class P11Key implements java.security.Key , sun.security.util.Length {
                 type: string
@@ -194,7 +233,7 @@ declare namespace sun {
                 public equals(arg0: java.lang.Object): boolean
                 public hashCode(): int
                 protected writeReplace(): java.lang.Object
-                toString<T>(...args: any[]): any
+                public toString(): string
                 public length(): int
                 isPublic(): boolean
                 isPrivate(): boolean
@@ -208,7 +247,7 @@ declare namespace sun {
             class Session implements java.lang.Comparable<sun.security.pkcs11.Session> {
                 token: sun.security.pkcs11.Token
                 constructor(arg0: sun.security.pkcs11.Token, arg1: long)
-                compareTo<T>(...args: any[]): any
+                public compareTo(arg0: sun.security.pkcs11.Session): int
                 isLive(arg0: long): boolean
                 idInternal(): long
                 id(): long
@@ -216,6 +255,7 @@ declare namespace sun {
                 removeObject(): void
                 hasObjects(): boolean
                 close(): void
+                public compareTo(arg0: java.lang.Object): int
             }
             class P11KeyStore extends java.security.KeyStoreSpi {
                 constructor(arg0: sun.security.pkcs11.Token)
@@ -223,7 +263,8 @@ declare namespace sun {
                 public engineGetCertificateChain(arg0: string): java.security.cert.Certificate[]
                 public engineGetCertificate(arg0: string): java.security.cert.Certificate
                 public engineGetCreationDate(arg0: string): java.util.Date
-                engineSetKeyEntry<T>(...args: any[]): any
+                public engineSetKeyEntry(arg0: string, arg1: java.security.Key, arg2: char[], arg3: java.security.cert.Certificate[]): void
+                public engineSetKeyEntry(arg0: string, arg1: byte[], arg2: java.security.cert.Certificate[]): void
                 public engineSetCertificateEntry(arg0: string, arg1: java.security.cert.Certificate): void
                 public engineDeleteEntry(arg0: string): void
                 public engineAliases(): java.util.Enumeration<java.lang.String>
@@ -232,8 +273,10 @@ declare namespace sun {
                 public engineIsKeyEntry(arg0: string): boolean
                 public engineIsCertificateEntry(arg0: string): boolean
                 public engineGetCertificateAlias(arg0: java.security.cert.Certificate): string
-                engineStore<T>(...args: any[]): any
-                engineLoad<T>(...args: any[]): any
+                public engineStore(arg0: java.io.OutputStream, arg1: char[]): void
+                public engineStore(arg0: any): void
+                public engineLoad(arg0: java.io.InputStream, arg1: char[]): void
+                public engineLoad(arg0: any): void
                 public engineGetEntry(arg0: string, arg1: any): any
                 public engineSetEntry(arg0: string, arg1: any, arg2: any): void
                 public engineEntryInstanceOf(arg0: string, arg1: any): boolean
@@ -248,11 +291,12 @@ declare namespace sun {
                 static getSunJceProvider(): java.security.Provider
                 static convert(arg0: byte[], arg1: int, arg2: int): byte[]
                 static subarray(arg0: byte[], arg1: int, arg2: int): byte[]
-                static concat<T>(...args: any[]): any
+                static concat(arg0: byte[], arg1: byte[]): byte[]
+                static concat(arg0: long[], arg1: long[]): long[]
                 public static getMagnitude(arg0: java.math.BigInteger): byte[]
                 static getBytesUTF8(arg0: string): byte[]
                 static sha1(arg0: byte[]): byte[]
-                static toString<T>(...args: any[]): any
+                static toString(arg0: byte[]): string
             }
             class P11SecureRandom extends java.security.SecureRandomSpi {
                 constructor(arg0: sun.security.pkcs11.Token)
@@ -374,7 +418,10 @@ declare namespace sun {
                 nssModule: any
                 nssUseSecmodTrust: boolean
                 getToken(): sun.security.pkcs11.Token
-                constructor(...args: any[])
+                public constructor()
+                public constructor(arg0: string)
+                public constructor(arg0: java.io.InputStream)
+                public constructor(arg0: string, arg1: java.io.InputStream)
                 public equals(arg0: java.lang.Object): boolean
                 public hashCode(): int
                 uninitToken(arg0: sun.security.pkcs11.Token): void
@@ -398,7 +445,9 @@ declare namespace sun {
                 public isInitialized(): boolean
                 getConfigDir(): string
                 getLibDir(): string
-                initialize<T>(...args: any[]): any
+                public initialize(arg0: string, arg1: string): void
+                public initialize(arg0: any, arg1: string, arg2: string): void
+                public initialize(arg0: any, arg1: string, arg2: string, arg3: boolean): void
                 public getModules(): any
                 isTrusted(arg0: java.security.cert.X509Certificate, arg1: any): boolean
                 public getModule(arg0: any): any
@@ -411,10 +460,13 @@ declare namespace sun {
                     public mgf: long
                     public sLen: long
                     public constructor()
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                 }
                 class PKCS11RuntimeException extends java.lang.RuntimeException {
-                    constructor(...args: any[])
+                    public constructor()
+                    public constructor(arg0: string)
+                    public constructor(arg0: java.lang.Exception)
+                    public constructor(arg0: string, arg1: java.lang.Exception)
                 }
                 class CK_RSA_PKCS_OAEP_PARAMS {
                     public hashAlg: long
@@ -422,7 +474,7 @@ declare namespace sun {
                     public source: long
                     public pSourceData: byte[]
                     public constructor()
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                 }
                 class CK_DATE implements java.lang.Cloneable {
                     public year: char[]
@@ -430,13 +482,16 @@ declare namespace sun {
                     public day: char[]
                     public constructor(arg0: char[], arg1: char[], arg2: char[])
                     public clone(): java.lang.Object
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                 }
                 class Functions {
                     public constructor()
-                    static toFullHexString<T>(...args: any[]): any
-                    static toHexString<T>(...args: any[]): any
-                    static toBinaryString<T>(...args: any[]): any
+                    public static toFullHexString(arg0: long): string
+                    public static toFullHexString(arg0: int): string
+                    public static toHexString(arg0: long): string
+                    public static toHexString(arg0: byte[]): string
+                    public static toBinaryString(arg0: long): string
+                    public static toBinaryString(arg0: byte[]): string
                     public static slotInfoFlagsToString(arg0: long): string
                     public static tokenInfoFlagsToString(arg0: long): string
                     public static sessionInfoFlagsToString(arg0: long): string
@@ -452,7 +507,9 @@ declare namespace sun {
                     public static getObjectClassName(arg0: long): string
                     public static getObjectClassId(arg0: string): long
                     public static equals(arg0: sun.security.pkcs11.wrapper.CK_DATE, arg1: sun.security.pkcs11.wrapper.CK_DATE): boolean
-                    static hashCode<T>(...args: any[]): any
+                    public static hashCode(arg0: byte[]): int
+                    public static hashCode(arg0: char[]): int
+                    public static hashCode(arg0: sun.security.pkcs11.wrapper.CK_DATE): int
                 }
                 class Constants {
                     public static NEWLINE: string
@@ -467,7 +524,7 @@ declare namespace sun {
                     public hPrivateData: long
                     public pPublicData2: byte[]
                     public constructor()
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                 }
                 class CK_PBE_PARAMS {
                     public pInitVector: char[]
@@ -475,14 +532,14 @@ declare namespace sun {
                     public pSalt: char[]
                     public ulIteration: long
                     public constructor()
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                 }
                 class CK_X9_42_DH1_DERIVE_PARAMS {
                     public kdf: long
                     public pOtherInfo: byte[]
                     public pPublicData: byte[]
                     public constructor()
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                 }
                 class CK_PKCS5_PBKD2_PARAMS {
                     public saltSource: long
@@ -491,7 +548,7 @@ declare namespace sun {
                     public prf: long
                     public pPrfData: byte[]
                     public constructor()
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                 }
                 class CK_ECDH2_DERIVE_PARAMS {
                     public kdf: long
@@ -501,7 +558,7 @@ declare namespace sun {
                     public hPrivateData: long
                     public pPublicData2: byte[]
                     public constructor()
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                 }
                 class CK_SSL3_KEY_MAT_OUT {
                     public hClientMacSecret: long
@@ -511,24 +568,24 @@ declare namespace sun {
                     public pIVClient: byte[]
                     public pIVServer: byte[]
                     public constructor()
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                 }
                 class CK_SSL3_RANDOM_DATA {
                     public pClientRandom: byte[]
                     public pServerRandom: byte[]
                     public constructor(arg0: byte[], arg1: byte[])
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                 }
                 class CK_AES_CTR_PARAMS {
                     public constructor(arg0: byte[])
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                 }
                 class CK_ECDH1_DERIVE_PARAMS {
                     public kdf: long
                     public pSharedData: byte[]
                     public pPublicData: byte[]
                     public constructor(arg0: long, arg1: byte[], arg2: byte[])
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                 }
                 class CK_TLS_PRF_PARAMS {
                     public pSeed: byte[]
@@ -544,13 +601,13 @@ declare namespace sun {
                     public RandomInfo: sun.security.pkcs11.wrapper.CK_SSL3_RANDOM_DATA
                     public pReturnedKeyMaterial: sun.security.pkcs11.wrapper.CK_SSL3_KEY_MAT_OUT
                     public constructor(arg0: int, arg1: int, arg2: int, arg3: boolean, arg4: sun.security.pkcs11.wrapper.CK_SSL3_RANDOM_DATA)
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                 }
                 class CK_SSL3_MASTER_KEY_DERIVE_PARAMS {
                     public RandomInfo: sun.security.pkcs11.wrapper.CK_SSL3_RANDOM_DATA
                     public pVersion: sun.security.pkcs11.wrapper.CK_VERSION
                     public constructor(arg0: sun.security.pkcs11.wrapper.CK_SSL3_RANDOM_DATA, arg1: sun.security.pkcs11.wrapper.CK_VERSION)
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                 }
                 interface CK_UNLOCKMUTEX {
                     CK_UNLOCKMUTEX(arg0: java.lang.Object): void
@@ -568,13 +625,23 @@ declare namespace sun {
                     public major: byte
                     public minor: byte
                     public constructor(arg0: int, arg1: int)
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                 }
                 class CK_MECHANISM {
                     public mechanism: long
                     public pParameter: java.lang.Object
-                    constructor(...args: any[])
-                    toString<T>(...args: any[]): any
+                    public constructor()
+                    public constructor(arg0: long)
+                    public constructor(arg0: long, arg1: byte[])
+                    public constructor(arg0: long, arg1: java.math.BigInteger)
+                    public constructor(arg0: long, arg1: sun.security.pkcs11.wrapper.CK_VERSION)
+                    public constructor(arg0: long, arg1: sun.security.pkcs11.wrapper.CK_SSL3_MASTER_KEY_DERIVE_PARAMS)
+                    public constructor(arg0: long, arg1: sun.security.pkcs11.wrapper.CK_SSL3_KEY_MAT_PARAMS)
+                    public constructor(arg0: long, arg1: sun.security.pkcs11.wrapper.CK_TLS_PRF_PARAMS)
+                    public constructor(arg0: long, arg1: sun.security.pkcs11.wrapper.CK_ECDH1_DERIVE_PARAMS)
+                    public constructor(arg0: long, arg1: java.lang.Long)
+                    public constructor(arg0: long, arg1: sun.security.pkcs11.wrapper.CK_AES_CTR_PARAMS)
+                    public toString(): string
                 }
                 class CK_SESSION_INFO {
                     public slotID: long
@@ -582,7 +649,7 @@ declare namespace sun {
                     public flags: long
                     public ulDeviceError: long
                     public constructor(arg0: long, arg1: long, arg2: long, arg3: long)
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                 }
                 interface CK_NOTIFY {
                     CK_NOTIFY(arg0: long, arg1: long, arg2: java.lang.Object): void
@@ -592,7 +659,7 @@ declare namespace sun {
                     public ulMaxKeySize: long
                     public flags: long
                     public constructor(arg0: long, arg1: long, arg2: long)
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                 }
                 class CK_TOKEN_INFO {
                     public label: char[]
@@ -614,7 +681,7 @@ declare namespace sun {
                     public firmwareVersion: sun.security.pkcs11.wrapper.CK_VERSION
                     public utcTime: char[]
                     public constructor(arg0: char[], arg1: char[], arg2: char[], arg3: char[], arg4: long, arg5: long, arg6: long, arg7: long, arg8: long, arg9: long, arg10: long, arg11: long, arg12: long, arg13: long, arg14: long, arg15: sun.security.pkcs11.wrapper.CK_VERSION, arg16: sun.security.pkcs11.wrapper.CK_VERSION, arg17: char[])
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                 }
                 class CK_INFO {
                     public cryptokiVersion: sun.security.pkcs11.wrapper.CK_VERSION
@@ -623,7 +690,7 @@ declare namespace sun {
                     public libraryDescription: char[]
                     public libraryVersion: sun.security.pkcs11.wrapper.CK_VERSION
                     public constructor(arg0: sun.security.pkcs11.wrapper.CK_VERSION, arg1: char[], arg2: long, arg3: char[], arg4: sun.security.pkcs11.wrapper.CK_VERSION)
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                 }
                 class CK_C_INITIALIZE_ARGS {
                     public CreateMutex: sun.security.pkcs11.wrapper.CK_CREATEMUTEX
@@ -647,7 +714,7 @@ declare namespace sun {
                     public hardwareVersion: sun.security.pkcs11.wrapper.CK_VERSION
                     public firmwareVersion: sun.security.pkcs11.wrapper.CK_VERSION
                     public constructor(arg0: char[], arg1: char[], arg2: long, arg3: sun.security.pkcs11.wrapper.CK_VERSION, arg4: sun.security.pkcs11.wrapper.CK_VERSION)
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                 }
                 class CK_ATTRIBUTE {
                     public static TOKEN_FALSE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
@@ -668,13 +735,18 @@ declare namespace sun {
                     public static UNWRAP_NULL: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
                     public type: long
                     public pValue: java.lang.Object
-                    constructor(...args: any[])
+                    public constructor()
+                    public constructor(arg0: long)
+                    public constructor(arg0: long, arg1: java.lang.Object)
+                    public constructor(arg0: long, arg1: boolean)
+                    public constructor(arg0: long, arg1: long)
+                    public constructor(arg0: long, arg1: java.math.BigInteger)
                     public getBigInteger(): java.math.BigInteger
                     public getBoolean(): boolean
                     public getCharArray(): char[]
                     public getByteArray(): byte[]
                     public getLong(): long
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                 }
                 class PKCS11 {
                     public static loadNative(): void
@@ -735,7 +807,7 @@ declare namespace sun {
                     public C_DeriveKey(arg0: long, arg1: sun.security.pkcs11.wrapper.CK_MECHANISM, arg2: long, arg3: sun.security.pkcs11.wrapper.CK_ATTRIBUTE[]): long
                     public C_SeedRandom(arg0: long, arg1: byte[]): void
                     public C_GenerateRandom(arg0: long, arg1: byte[]): void
-                    toString<T>(...args: any[]): any
+                    public toString(): string
                     protected finalize(): void
                 }
                 interface PKCS11Constants {

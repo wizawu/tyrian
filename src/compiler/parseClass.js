@@ -228,26 +228,19 @@ function default_1(source, pkg) {
                 if (item.name.indexOf("$") >= 0)
                     ignore = true;
                 if (!ignore)
-                    buffer.push(item.line);
+                    buffer.push(item);
                 break;
             case "CONSTR":
                 if (!ignore)
-                    buffer.push(item.line);
+                    buffer.push(item);
                 break;
             case "MEMBER":
-                if (!ignore && item.name !== "prototype") {
-                    if (isInterface && item.name === "handle") {
-                        buffer.push(item.line.replace("handle(", "handle?("));
-                        buffer.push(item.line.replace("handle(", "("));
-                    }
-                    else {
-                        buffer.push(item.line);
-                    }
-                }
+                if (!ignore && item.name !== "prototype")
+                    buffer.push(item);
                 break;
             case "END":
                 if (!ignore) {
-                    buffer.push(item.line);
+                    buffer.push(item);
                     var className = item.name.replace(/^(\w+\.)+/, "");
                     var ns = item.name.substring(0, item.name.length - className.length - 1);
                     object_path_1.ensureExists(pkg, ns, {});
@@ -255,7 +248,10 @@ function default_1(source, pkg) {
                         object_path_1.get(pkg, ns)[className] = "type Object = any";
                     }
                     else {
-                        object_path_1.get(pkg, ns)[className] = buffer.join("\n");
+                        if (isInterface && buffer.length === 3) {
+                            buffer.splice(1, 1, { line: buffer[1].line.replace(buffer[1].name + "(", buffer[1].name + "?(") }, { line: buffer[1].line.replace(buffer[1].name + "(", "(") });
+                        }
+                        object_path_1.get(pkg, ns)[className] = buffer.map(function (b) { return b.line; }).join("\n");
                     }
                 }
                 break;

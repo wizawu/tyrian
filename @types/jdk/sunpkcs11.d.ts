@@ -610,16 +610,20 @@ declare namespace sun {
                     public toString(): string
                 }
                 interface CK_UNLOCKMUTEX {
-                    CK_UNLOCKMUTEX(arg0: java.lang.Object): void
+                    CK_UNLOCKMUTEX?(arg0: java.lang.Object): void
+                    (arg0: java.lang.Object): void
                 }
                 interface CK_LOCKMUTEX {
-                    CK_LOCKMUTEX(arg0: java.lang.Object): void
+                    CK_LOCKMUTEX?(arg0: java.lang.Object): void
+                    (arg0: java.lang.Object): void
                 }
                 interface CK_DESTROYMUTEX {
-                    CK_DESTROYMUTEX(arg0: java.lang.Object): void
+                    CK_DESTROYMUTEX?(arg0: java.lang.Object): void
+                    (arg0: java.lang.Object): void
                 }
                 interface CK_CREATEMUTEX {
-                    CK_CREATEMUTEX(): java.lang.Object
+                    CK_CREATEMUTEX?(): java.lang.Object
+                    (): java.lang.Object
                 }
                 class CK_VERSION {
                     public major: byte
@@ -652,7 +656,8 @@ declare namespace sun {
                     public toString(): string
                 }
                 interface CK_NOTIFY {
-                    CK_NOTIFY(arg0: long, arg1: long, arg2: java.lang.Object): void
+                    CK_NOTIFY?(arg0: long, arg1: long, arg2: java.lang.Object): void
+                    (arg0: long, arg1: long, arg2: java.lang.Object): void
                 }
                 class CK_MECHANISM_INFO {
                     public ulMinKeySize: long

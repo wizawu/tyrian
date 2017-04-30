@@ -177,7 +177,8 @@ declare namespace jdk {
                     static access$700<T>(arg0: java.lang.Object): void
                 }
                 interface ClassFilter {
-                    exposeToScripts(arg0: string): boolean
+                    exposeToScripts?(arg0: string): boolean
+                    (arg0: string): boolean
                 }
                 interface JSObject {
                     call(arg0: java.lang.Object, ...arg1: java.lang.Object[]): java.lang.Object
@@ -968,7 +969,8 @@ declare namespace jdk {
                     public setValue(arg0: jdk.nashorn.internal.ir.Expression): jdk.nashorn.internal.ir.PropertyNode
                 }
                 interface Splittable {
-                    getSplitRanges(): any
+                    getSplitRanges?(): any
+                    (): any
                 }
                 class ObjectNode extends jdk.nashorn.internal.ir.Expression implements jdk.nashorn.internal.ir.LexicalContextNode , jdk.nashorn.internal.ir.Splittable {
                     static $assertionsDisabled: boolean
@@ -1335,7 +1337,8 @@ declare namespace jdk {
                     public isSyntheticRethrow(): boolean
                 }
                 interface Labels {
-                    getLabels(): java.util.List<jdk.nashorn.internal.codegen.Label>
+                    getLabels?(): java.util.List<jdk.nashorn.internal.codegen.Label>
+                    (): java.util.List<jdk.nashorn.internal.codegen.Label>
                 }
                 interface BreakableNode extends jdk.nashorn.internal.ir.LexicalContextNode , jdk.nashorn.internal.ir.JoinPredecessor , jdk.nashorn.internal.ir.Labels {
                     ensureUniqueLabels(arg0: jdk.nashorn.internal.ir.LexicalContext): jdk.nashorn.internal.ir.Node
@@ -1636,7 +1639,8 @@ declare namespace jdk {
                     public static toString(arg0: jdk.nashorn.internal.ir.LocalVariableConversion, arg1: java.lang.StringBuilder): java.lang.StringBuilder
                 }
                 interface Terminal {
-                    isTerminal(): boolean
+                    isTerminal?(): boolean
+                    (): boolean
                 }
                 abstract class Statement extends jdk.nashorn.internal.ir.Node implements jdk.nashorn.internal.ir.Terminal {
                     public constructor(arg0: int, arg1: long, arg2: int)
@@ -1681,10 +1685,12 @@ declare namespace jdk {
                     getLocalVariableConversion(): jdk.nashorn.internal.ir.LocalVariableConversion
                 }
                 interface FunctionCall {
-                    isFunction(): boolean
+                    isFunction?(): boolean
+                    (): boolean
                 }
                 interface PropertyKey {
-                    getPropertyName(): string
+                    getPropertyName?(): string
+                    (): string
                 }
                 class IdentNode extends jdk.nashorn.internal.ir.Expression implements jdk.nashorn.internal.ir.PropertyKey , jdk.nashorn.internal.ir.FunctionCall , jdk.nashorn.internal.ir.Optimistic , jdk.nashorn.internal.ir.JoinPredecessor {
                     static $assertionsDisabled: boolean
@@ -1799,7 +1805,8 @@ declare namespace jdk {
                     
                 }
                 interface CompileUnitHolder {
-                    getCompileUnit(): jdk.nashorn.internal.codegen.CompileUnit
+                    getCompileUnit?(): jdk.nashorn.internal.codegen.CompileUnit
+                    (): jdk.nashorn.internal.codegen.CompileUnit
                 }
                 interface Flags<T extends jdk.nashorn.internal.ir.LexicalContextNode> {
                     getFlags(): int
@@ -1809,7 +1816,8 @@ declare namespace jdk {
                     setFlags(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: int): T
                 }
                 interface LexicalContextNode {
-                    accept(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.LexicalContext>): jdk.nashorn.internal.ir.Node
+                    accept?(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.LexicalContext>): jdk.nashorn.internal.ir.Node
+                    (arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.LexicalContext>): jdk.nashorn.internal.ir.Node
                 }
                 abstract class LexicalContextExpression extends jdk.nashorn.internal.ir.Expression implements jdk.nashorn.internal.ir.LexicalContextNode {
                     constructor(arg0: jdk.nashorn.internal.ir.LexicalContextExpression)
@@ -3032,7 +3040,8 @@ declare namespace jdk {
                         isOptimistic(): boolean
                     }
                     interface ScriptClass extends java.lang.annotation.Annotation {
-                        value(): string
+                        value?(): string
+                        (): string
                     }
                     
                 }
@@ -7220,7 +7229,8 @@ declare namespace jdk {
                 }
                 namespace logging {
                     interface Logger extends java.lang.annotation.Annotation {
-                        name(): string
+                        name?(): string
+                        (): string
                     }
                     interface Loggable {
                         initLogger(arg0: jdk.nashorn.internal.runtime.Context): jdk.nashorn.internal.runtime.logging.DebugLogger
@@ -8348,7 +8358,8 @@ declare namespace jdk {
                         public slice(arg0: long, arg1: long): jdk.nashorn.internal.runtime.arrays.ArrayData
                     }
                     interface AnyElements {
-                        getElementWeight(): int
+                        getElementWeight?(): int
+                        (): int
                     }
                     class ObjectArrayData extends jdk.nashorn.internal.runtime.arrays.ContinuousArrayData implements jdk.nashorn.internal.runtime.arrays.AnyElements {
                         static $assertionsDisabled: boolean
@@ -8915,7 +8926,8 @@ declare namespace jdk {
                 public static publicBootstrap(arg0: any, arg1: string, arg2: java.lang.invoke.MethodType): java.lang.invoke.CallSite
             }
             interface GuardedInvocationFilter {
-                filter(arg0: jdk.internal.dynalink.linker.GuardedInvocation, arg1: jdk.internal.dynalink.linker.LinkRequest, arg2: jdk.internal.dynalink.linker.LinkerServices): jdk.internal.dynalink.linker.GuardedInvocation
+                filter?(arg0: jdk.internal.dynalink.linker.GuardedInvocation, arg1: jdk.internal.dynalink.linker.LinkRequest, arg2: jdk.internal.dynalink.linker.LinkerServices): jdk.internal.dynalink.linker.GuardedInvocation
+                (arg0: jdk.internal.dynalink.linker.GuardedInvocation, arg1: jdk.internal.dynalink.linker.LinkRequest, arg2: jdk.internal.dynalink.linker.LinkerServices): jdk.internal.dynalink.linker.GuardedInvocation
             }
             class DynamicLinker {
                 constructor(arg0: jdk.internal.dynalink.linker.LinkerServices, arg1: jdk.internal.dynalink.GuardedInvocationFilter, arg2: int, arg3: boolean, arg4: int)
@@ -9127,7 +9139,8 @@ declare namespace jdk {
             }
             namespace linker {
                 interface MethodTypeConversionStrategy {
-                    asType(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.invoke.MethodType): java.lang.invoke.MethodHandle
+                    asType?(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.invoke.MethodType): java.lang.invoke.MethodHandle
+                    (arg0: java.lang.invoke.MethodHandle, arg1: java.lang.invoke.MethodType): java.lang.invoke.MethodHandle
                 }
                 class GuardedTypeConversion {
                     public constructor(arg0: jdk.internal.dynalink.linker.GuardedInvocation, arg1: boolean)
@@ -9135,16 +9148,20 @@ declare namespace jdk {
                     public isCacheable(): boolean
                 }
                 interface GuardingTypeConverterFactory {
-                    convertToType(arg0: java.lang.Class<any>, arg1: java.lang.Class<any>): jdk.internal.dynalink.linker.GuardedTypeConversion
+                    convertToType?(arg0: java.lang.Class<any>, arg1: java.lang.Class<any>): jdk.internal.dynalink.linker.GuardedTypeConversion
+                    (arg0: java.lang.Class<any>, arg1: java.lang.Class<any>): jdk.internal.dynalink.linker.GuardedTypeConversion
                 }
                 interface MethodHandleTransformer {
-                    transform(arg0: java.lang.invoke.MethodHandle): java.lang.invoke.MethodHandle
+                    transform?(arg0: java.lang.invoke.MethodHandle): java.lang.invoke.MethodHandle
+                    (arg0: java.lang.invoke.MethodHandle): java.lang.invoke.MethodHandle
                 }
                 interface GuardingDynamicLinker {
-                    getGuardedInvocation(arg0: jdk.internal.dynalink.linker.LinkRequest, arg1: jdk.internal.dynalink.linker.LinkerServices): jdk.internal.dynalink.linker.GuardedInvocation
+                    getGuardedInvocation?(arg0: jdk.internal.dynalink.linker.LinkRequest, arg1: jdk.internal.dynalink.linker.LinkerServices): jdk.internal.dynalink.linker.GuardedInvocation
+                    (arg0: jdk.internal.dynalink.linker.LinkRequest, arg1: jdk.internal.dynalink.linker.LinkerServices): jdk.internal.dynalink.linker.GuardedInvocation
                 }
                 interface TypeBasedGuardingDynamicLinker extends jdk.internal.dynalink.linker.GuardingDynamicLinker {
-                    canLinkType(arg0: java.lang.Class<any>): boolean
+                    canLinkType?(arg0: java.lang.Class<any>): boolean
+                    (arg0: java.lang.Class<any>): boolean
                 }
                 interface LinkerServices {
                     asType(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.invoke.MethodType): java.lang.invoke.MethodHandle
@@ -9156,7 +9173,8 @@ declare namespace jdk {
                     filterInternalObjects(arg0: java.lang.invoke.MethodHandle): java.lang.invoke.MethodHandle
                 }
                 interface ConversionComparator {
-                    compareConversion(arg0: java.lang.Class<any>, arg1: java.lang.Class<any>, arg2: java.lang.Class<any>): any
+                    compareConversion?(arg0: java.lang.Class<any>, arg1: java.lang.Class<any>, arg2: java.lang.Class<any>): any
+                    (arg0: java.lang.Class<any>, arg1: java.lang.Class<any>, arg2: java.lang.Class<any>): any
                 }
                 class GuardedInvocation {
                     public constructor(arg0: java.lang.invoke.MethodHandle)

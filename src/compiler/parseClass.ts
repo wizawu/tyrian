@@ -201,7 +201,7 @@ export default function (source: string, pkg: any) {
         }
     }
 
-    let buffer = []
+    let buffer: any[] = []
     let ignore = false
     let isInterface = false
 
@@ -214,32 +214,30 @@ export default function (source: string, pkg: any) {
                 isInterface = item.line.indexOf("interface") >= 0
                 if (item.name.indexOf("-") >= 0) ignore = true
                 if (item.name.indexOf("$") >= 0) ignore = true
-                if (!ignore) buffer.push(item.line as never)
+                if (!ignore) buffer.push(item as never)
                 break
             case "CONSTR":
-                if (!ignore) buffer.push(item.line as never)
+                if (!ignore) buffer.push(item as never)
                 break
             case "MEMBER":
-                if (!ignore && item.name !== "prototype") {
-                    if (isInterface && item.name === "handle") {
-                        // lambda
-                        buffer.push(item.line.replace("handle(", "handle?(") as never)
-                        buffer.push(item.line.replace("handle(", "(") as never)
-                    } else {
-                        buffer.push(item.line as never)
-                    }
-                }
+                if (!ignore && item.name !== "prototype") buffer.push(item as never)
                 break
             case "END":
                 if (!ignore) {
-                    buffer.push(item.line as never)
+                    buffer.push(item as never)
                     let className = item.name.replace(/^(\w+\.)+/, "")
                     let ns = item.name.substring(0, item.name.length - className.length - 1)
                     ensureExists(pkg, ns, {})
                     if (ns === "java.lang" && className === "Object") {
                         get(pkg, ns)[className] = "type Object = any"
                     } else {
-                        get(pkg, ns)[className] = buffer.join("\n")
+                        if (isInterface && buffer.length === 3) {
+                            buffer.splice(1, 1,
+                                { line: buffer[1].line.replace(buffer[1].name + "(", buffer[1].name + "?(") },
+                                { line: buffer[1].line.replace(buffer[1].name + "(", "(") }
+                            )
+                        }
+                        get(pkg, ns)[className] = buffer.map(b => b.line).join("\n")
                     }
                 }
                 break

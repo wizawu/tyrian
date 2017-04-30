@@ -183,7 +183,8 @@ declare namespace com {
                         public toString(): string
                     }
                     interface GUIInitializedListener extends java.util.EventListener {
-                        guiInitialized(): void
+                        guiInitialized?(): void
+                        (): void
                     }
                     class GUIInitializedMulticaster extends java.awt.AWTEventMulticaster implements com.sun.java.accessibility.util.GUIInitializedListener {
                         protected constructor(arg0: java.util.EventListener, arg1: java.util.EventListener)

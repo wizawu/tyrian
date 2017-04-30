@@ -415,7 +415,8 @@ declare namespace javax {
                 getX(): java.math.BigInteger
             }
             interface DHKey {
-                getParams(): javax.crypto.spec.DHParameterSpec
+                getParams?(): javax.crypto.spec.DHParameterSpec
+                (): javax.crypto.spec.DHParameterSpec
             }
             interface DHPublicKey extends javax.crypto.interfaces.DHKey , java.security.PublicKey {
                 serialVersionUID: long
@@ -563,6 +564,7 @@ declare namespace javax {
             protected engineTranslateKey(arg0: javax.crypto.SecretKey): javax.crypto.SecretKey
         }
         interface SecretKey extends java.security.Key , javax.security.auth.Destroyable {
+            serialVersionUID: long
             serialVersionUID: long
         }
         class BadPaddingException extends java.security.GeneralSecurityException {

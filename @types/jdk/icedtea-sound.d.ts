@@ -416,7 +416,8 @@ declare namespace org {
                     static println(arg0: any, arg1: string): void
                 }
                 interface ContextListener {
-                    update(arg0: org.classpath.icedtea.pulseaudio.ContextEvent): void
+                    update?(arg0: org.classpath.icedtea.pulseaudio.ContextEvent): void
+                    (arg0: org.classpath.icedtea.pulseaudio.ContextEvent): void
                 }
                 class ContextEvent {
                     static UNCONNECTED: long

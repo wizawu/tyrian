@@ -15,9 +15,7 @@ const PACKAGE_JSON = `
 
 // .gitignore
 const _GITIGNORE = `
-.gradle
 build
-build.gradle
 lib
 node_modules
 tsconfig.json
@@ -25,32 +23,30 @@ yarn.lock
 `.trim()
 
 // tsconfig.json
-export const tsconfig = instdir => `
-{
-  "compilerOptions": {
-    "jsx": "react",
-    "lib": ["dom", "es2017"],
-    "noUnusedLocals": true,
-    "removeComments": true,
-    "skipLibCheck": true,
-    "sourceMap": true,
-    "strictNullChecks": true,
-    "target": "es5",
-    "typeRoots": [
-      "${instdir}/@types",
-      "lib/@types",
-      "node_modules/@types",
-      "src/js/@types"
-    ]
-  },
-  "include": [
-    "${instdir}/@types/**/*.d.ts",
-    "lib/@types/**/*.d.ts",
-    "src/**/*.ts",
-    "src/**/*.tsx"
-  ]
-}
-`.trim()
+export const tsconfig = (instdir, noJDK = false) => JSON.stringify({
+    "compilerOptions": {
+        "jsx": "react",
+        "lib": ["dom", "es2017"],
+        "noUnusedLocals": true,
+        "removeComments": true,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "strictNullChecks": true,
+        "target": "es5",
+        "typeRoots": [
+            `${instdir}/@types`,
+            "lib/@types",
+            "node_modules/@types",
+            "src/js/@types"
+        ].slice(noJDK ? 1 : 0)
+    },
+    "include": [
+        `${instdir}/@types/**/*.d.ts`,
+        "lib/@types/**/*.d.ts",
+        "src/**/*.ts",
+        "src/**/*.tsx"
+    ].slice(noJDK ? 1 : 0)
+}, null, 2)
 
 export default function (instdir: string) {
     ["build", "build/assets", "lib", "node_modules", "src"].forEach(dir => {

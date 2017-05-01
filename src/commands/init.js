@@ -3,8 +3,34 @@ exports.__esModule = true;
 var chalk = require("chalk");
 var fs = require("fs");
 var PACKAGE_JSON = "\n{\n  \"dependencies\": {\n    \"mockxhr\": \"^1.3.0\"\n  },\n  \"mvnDependencies\": [\n    \"org.tinylog:tinylog:1.2\"\n  ]\n}\n".trim();
-var _GITIGNORE = "\n.gradle\nbuild\nbuild.gradle\nlib\nnode_modules\ntsconfig.json\nyarn.lock\n".trim();
-exports.tsconfig = function (instdir) { return ("\n{\n  \"compilerOptions\": {\n    \"jsx\": \"react\",\n    \"lib\": [\"dom\", \"es2017\"],\n    \"noUnusedLocals\": true,\n    \"removeComments\": true,\n    \"skipLibCheck\": true,\n    \"sourceMap\": true,\n    \"strictNullChecks\": true,\n    \"target\": \"es5\",\n    \"typeRoots\": [\n      \"" + instdir + "/@types\",\n      \"lib/@types\",\n      \"node_modules/@types\",\n      \"src/js/@types\"\n    ]\n  },\n  \"include\": [\n    \"" + instdir + "/@types/**/*.d.ts\",\n    \"lib/@types/**/*.d.ts\",\n    \"src/**/*.ts\",\n    \"src/**/*.tsx\"\n  ]\n}\n").trim(); };
+var _GITIGNORE = "\nbuild\nlib\nnode_modules\ntsconfig.json\nyarn.lock\n".trim();
+exports.tsconfig = function (instdir, noJDK) {
+    if (noJDK === void 0) { noJDK = false; }
+    return JSON.stringify({
+        "compilerOptions": {
+            "jsx": "react",
+            "lib": ["dom", "es2017"],
+            "noUnusedLocals": true,
+            "removeComments": true,
+            "skipLibCheck": true,
+            "sourceMap": true,
+            "strictNullChecks": true,
+            "target": "es5",
+            "typeRoots": [
+                instdir + "/@types",
+                "lib/@types",
+                "node_modules/@types",
+                "src/js/@types"
+            ].slice(noJDK ? 1 : 0)
+        },
+        "include": [
+            instdir + "/@types/**/*.d.ts",
+            "lib/@types/**/*.d.ts",
+            "src/**/*.ts",
+            "src/**/*.tsx"
+        ].slice(noJDK ? 1 : 0)
+    }, null, 2);
+};
 function default_1(instdir) {
     ["build", "build/assets", "lib", "node_modules", "src"].forEach(function (dir) {
         try {

@@ -48,7 +48,6 @@ function default_1(instdir) {
         fs.writeFileSync(filename, parseJAR_1["default"]("lib/" + jar));
         console.log(chalk.green("Generated " + filename));
     });
-    if (!fs.existsSync("tsconfig.json"))
-        fs.writeFileSync("tsconfig.json", init_1.tsconfig(instdir));
+    fs.writeFileSync("tsconfig.json", init_1.tsconfig(instdir, process.argv[3] === "--noJDK"));
 }
 exports["default"] = default_1;

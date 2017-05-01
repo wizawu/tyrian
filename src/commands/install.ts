@@ -70,5 +70,5 @@ export default function (instdir: string) {
     })
 
     // Generate tsconfig.json
-    if (!fs.existsSync("tsconfig.json")) fs.writeFileSync("tsconfig.json", tsconfig(instdir))
+    fs.writeFileSync("tsconfig.json", tsconfig(instdir, process.argv[3] === "--noJDK"))
 }

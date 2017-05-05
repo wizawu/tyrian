@@ -11,6 +11,7 @@ export default class MySQLConnection extends JDBCConnection {
         )
         this.url += "&useSSL=" + (options.useSSL ? "true" : "false")
         this.url += "&characterEncoding=" + (options.characterEncoding || "UTF-8")
+        this.url += "&autoReconnect=" + (options.autoReconnect ? "true" : "false")
         this.connect()
     }
 }

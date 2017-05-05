@@ -19,6 +19,7 @@ var MySQLConnection = (function (_super) {
         _this.url = java.lang.String.format("jdbc:mysql://%s:%d/%s?user=%s&password=%s&testOnBorrow=true", options.host, options.port, options.database, options.user, options.password);
         _this.url += "&useSSL=" + (options.useSSL ? "true" : "false");
         _this.url += "&characterEncoding=" + (options.characterEncoding || "UTF-8");
+        _this.url += "&autoReconnect=" + (options.autoReconnect ? "true" : "false");
         _this.connect();
         return _this;
     }

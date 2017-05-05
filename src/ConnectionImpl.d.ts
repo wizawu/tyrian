@@ -4,8 +4,9 @@ export interface Options {
     database: string;
     user: string;
     password: string;
-    useSSL?: boolean;
+    autoReconnect?: boolean;
     characterEncoding?: string;
+    useSSL?: boolean;
 }
 interface ConnectionImpl {
     ensureTable(tableName: string): any;

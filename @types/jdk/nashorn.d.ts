@@ -7015,7 +7015,7 @@ declare namespace jdk {
                         public constructor(arg0: string, arg1: java.io.PrintWriter)
                         public getResource(): string
                         public toString(): string
-                        public static getBooleanProperty(arg0: string, arg1: java.lang.Boolean): boolean
+                        public static getBooleanProperty(arg0: string, arg1: boolean): boolean
                         public static getBooleanProperty(arg0: string): boolean
                         public static getStringProperty(arg0: string, arg1: string): string
                         public static getIntProperty(arg0: string, arg1: int): int
@@ -7627,7 +7627,7 @@ declare namespace jdk {
                     protected invokeNoSuchProperty(arg0: string, arg1: boolean, arg2: int): java.lang.Object
                     addSpill(arg0: java.lang.Class<any>, arg1: string): java.lang.invoke.MethodHandle
                     protected static pairArguments(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.invoke.MethodType): java.lang.invoke.MethodHandle
-                    public static pairArguments(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.invoke.MethodType, arg2: java.lang.Boolean): java.lang.invoke.MethodHandle
+                    public static pairArguments(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.invoke.MethodType, arg2: boolean): java.lang.invoke.MethodHandle
                     static adaptHandleToVarArgCallSite(arg0: java.lang.invoke.MethodHandle, arg1: int): java.lang.invoke.MethodHandle
                     public setLength(arg0: long): void
                     public getInt(arg0: java.lang.Object, arg1: int): int
@@ -8793,7 +8793,7 @@ declare namespace jdk {
                     public static toNumber(arg0: java.lang.Object): double
                     public static toNumberForEq(arg0: java.lang.Object): double
                     public static toNumberForStrictEq(arg0: java.lang.Object): double
-                    public static toNumber(arg0: java.lang.Boolean): double
+                    public static toNumber(arg0: boolean): double
                     public static toNumber(arg0: jdk.nashorn.internal.runtime.ScriptObject): double
                     public static toNumberOptimistic(arg0: java.lang.Object, arg1: int): double
                     public static toNumberMaybeOptimistic(arg0: java.lang.Object, arg1: int): double

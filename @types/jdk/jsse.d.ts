@@ -832,7 +832,7 @@ declare namespace sun {
                 applyExplicitNonce(arg0: sun.security.ssl.Authenticator, arg1: byte, arg2: java.nio.ByteBuffer): int
                 applyExplicitNonce(arg0: sun.security.ssl.Authenticator, arg1: byte, arg2: byte[], arg3: int, arg4: int): int
                 createExplicitNonce(arg0: sun.security.ssl.Authenticator, arg1: byte, arg2: int): byte[]
-                isAvailable(): java.lang.Boolean
+                isAvailable(): boolean
             }
             class CipherSuite implements java.lang.Comparable<sun.security.ssl.CipherSuite> {
                 static SUPPORTED_SUITES_PRIORITY: int

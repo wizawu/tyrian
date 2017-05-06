@@ -21,6 +21,7 @@ function safeType(type: string): string {
     // XXX$YYY
     if (type.indexOf("$") >= 0) return "any"
     if (type === "java.lang.String") return "string"
+    if (type === "java.lang.Boolean") return "boolean"
     return type
 }
 

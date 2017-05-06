@@ -28,6 +28,8 @@ function safeType(type) {
         return "any";
     if (type === "java.lang.String")
         return "string";
+    if (type === "java.lang.Boolean")
+        return "boolean";
     return type;
 }
 function nextToken(ctx) {

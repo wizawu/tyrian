@@ -250,11 +250,16 @@ function default_1(source, pkg) {
                         object_path_1.get(pkg, ns)[className] = "type Object = any";
                     }
                     else {
-                        object_path_1.get(pkg, ns)[className] = buffer.map(function (b) { return b.line; }).join("\n");
                         if (isInterface && buffer.length === 3 && buffer[1].line.indexOf("(") > 0) {
-                            buffer[1].line = buffer[1].line.replace(buffer[1].name + "(", "(");
-                            object_path_1.get(pkg, ns)[className] += buffer.map(function (b) { return b.line; }).join("\n");
+                            var classID = className.indexOf("<") < 0 ? className :
+                                className.substring(0, className.indexOf("<"));
+                            buffer.push({ line: buffer[0].line.replace(classID, classID + "$_0") });
+                            buffer.push({ line: buffer[1].line.replace(buffer[1].name + "(", "(") });
+                            buffer.push({ line: buffer[2].line });
+                            buffer[0].line = buffer[0].line.replace(classID, classID + "$_1");
+                            buffer.push({ line: "type " + classID + " = " + classID + "$_0 | " + classID + "$_1\n" });
                         }
+                        object_path_1.get(pkg, ns)[className] = buffer.map(function (b) { return b.line; }).join("\n");
                     }
                 }
                 break;

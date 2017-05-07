@@ -609,22 +609,42 @@ declare namespace sun {
                     public constructor(arg0: sun.security.pkcs11.wrapper.CK_SSL3_RANDOM_DATA, arg1: sun.security.pkcs11.wrapper.CK_VERSION)
                     public toString(): string
                 }
-                interface CK_UNLOCKMUTEX {
-                    CK_UNLOCKMUTEX?(arg0: java.lang.Object): void
+                interface CK_UNLOCKMUTEX$_1 {
+                    CK_UNLOCKMUTEX(arg0: java.lang.Object): void
+                }
+                
+                interface CK_UNLOCKMUTEX$_0 {
                     (arg0: java.lang.Object): void
                 }
-                interface CK_LOCKMUTEX {
-                    CK_LOCKMUTEX?(arg0: java.lang.Object): void
+                
+                type CK_UNLOCKMUTEX = CK_UNLOCKMUTEX$_0 | CK_UNLOCKMUTEX$_1
+                interface CK_LOCKMUTEX$_1 {
+                    CK_LOCKMUTEX(arg0: java.lang.Object): void
+                }
+                
+                interface CK_LOCKMUTEX$_0 {
                     (arg0: java.lang.Object): void
                 }
-                interface CK_DESTROYMUTEX {
-                    CK_DESTROYMUTEX?(arg0: java.lang.Object): void
+                
+                type CK_LOCKMUTEX = CK_LOCKMUTEX$_0 | CK_LOCKMUTEX$_1
+                interface CK_DESTROYMUTEX$_1 {
+                    CK_DESTROYMUTEX(arg0: java.lang.Object): void
+                }
+                
+                interface CK_DESTROYMUTEX$_0 {
                     (arg0: java.lang.Object): void
                 }
-                interface CK_CREATEMUTEX {
-                    CK_CREATEMUTEX?(): java.lang.Object
+                
+                type CK_DESTROYMUTEX = CK_DESTROYMUTEX$_0 | CK_DESTROYMUTEX$_1
+                interface CK_CREATEMUTEX$_1 {
+                    CK_CREATEMUTEX(): java.lang.Object
+                }
+                
+                interface CK_CREATEMUTEX$_0 {
                     (): java.lang.Object
                 }
+                
+                type CK_CREATEMUTEX = CK_CREATEMUTEX$_0 | CK_CREATEMUTEX$_1
                 class CK_VERSION {
                     public major: byte
                     public minor: byte
@@ -655,10 +675,15 @@ declare namespace sun {
                     public constructor(arg0: long, arg1: long, arg2: long, arg3: long)
                     public toString(): string
                 }
-                interface CK_NOTIFY {
-                    CK_NOTIFY?(arg0: long, arg1: long, arg2: java.lang.Object): void
+                interface CK_NOTIFY$_1 {
+                    CK_NOTIFY(arg0: long, arg1: long, arg2: java.lang.Object): void
+                }
+                
+                interface CK_NOTIFY$_0 {
                     (arg0: long, arg1: long, arg2: java.lang.Object): void
                 }
+                
+                type CK_NOTIFY = CK_NOTIFY$_0 | CK_NOTIFY$_1
                 class CK_MECHANISM_INFO {
                     public ulMinKeySize: long
                     public ulMaxKeySize: long

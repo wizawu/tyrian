@@ -414,10 +414,15 @@ declare namespace javax {
                 serialVersionUID: long
                 getX(): java.math.BigInteger
             }
-            interface DHKey {
-                getParams?(): javax.crypto.spec.DHParameterSpec
+            interface DHKey$_1 {
+                getParams(): javax.crypto.spec.DHParameterSpec
+            }
+            
+            interface DHKey$_0 {
                 (): javax.crypto.spec.DHParameterSpec
             }
+            
+            type DHKey = DHKey$_0 | DHKey$_1
             interface DHPublicKey extends javax.crypto.interfaces.DHKey , java.security.PublicKey {
                 serialVersionUID: long
                 getY(): java.math.BigInteger

@@ -250,10 +250,11 @@ function default_1(source, pkg) {
                         object_path_1.get(pkg, ns)[className] = "type Object = any";
                     }
                     else {
-                        if (isInterface && buffer.length === 3 && buffer[1].line.indexOf("(") > 0) {
-                            buffer.splice(1, 1, { line: buffer[1].line.replace(buffer[1].name + "(", buffer[1].name + "?(") }, { line: buffer[1].line.replace(buffer[1].name + "(", "(") });
-                        }
                         object_path_1.get(pkg, ns)[className] = buffer.map(function (b) { return b.line; }).join("\n");
+                        if (isInterface && buffer.length === 3 && buffer[1].line.indexOf("(") > 0) {
+                            buffer[1].line = buffer[1].line.replace(buffer[1].name + "(", "(");
+                            object_path_1.get(pkg, ns)[className] += buffer.map(function (b) { return b.line; }).join("\n");
+                        }
                     }
                 }
                 break;

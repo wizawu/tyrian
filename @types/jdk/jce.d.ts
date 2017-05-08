@@ -7,7 +7,6 @@ declare namespace sun {
                     getMajorVersion(): int
                     getMinorVersion(): int
                 }
-                
             }
             namespace spec {
                 class TlsKeyMaterialSpec implements java.security.spec.KeySpec , javax.crypto.SecretKey {
@@ -72,13 +71,9 @@ declare namespace sun {
                     public getPRFHashLength(): int
                     public getPRFBlockSize(): int
                 }
-                
             }
-            
         }
-        
     }
-    
 }
 declare namespace javax {
     namespace crypto {
@@ -417,11 +412,9 @@ declare namespace javax {
             interface DHKey$_1 {
                 getParams(): javax.crypto.spec.DHParameterSpec
             }
-            
             interface DHKey$_0 {
                 (): javax.crypto.spec.DHParameterSpec
             }
-            
             type DHKey = DHKey$_0 | DHKey$_1
             interface DHPublicKey extends javax.crypto.interfaces.DHKey , java.security.PublicKey {
                 serialVersionUID: long
@@ -433,7 +426,6 @@ declare namespace javax {
                 getSalt(): byte[]
                 getIterationCount(): int
             }
-            
         }
         abstract class KeyGeneratorSpi {
             public constructor()
@@ -551,7 +543,6 @@ declare namespace javax {
                 public getIterationCount(): int
                 public getKeyLength(): int
             }
-            
         }
         abstract class KeyAgreementSpi {
             public constructor()
@@ -598,7 +589,5 @@ declare namespace javax {
             protected engineReset(): void
             public clone(): java.lang.Object
         }
-        
     }
-    
 }

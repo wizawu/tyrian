@@ -951,11 +951,7 @@ declare namespace com {
                     protected engineInit(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
                     public clone(): java.lang.Object
                 }
-                
             }
-            
         }
-        
     }
-    
 }

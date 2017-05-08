@@ -1,6 +1,6 @@
 {
   "name": "1c",
-  "version": "6.8.20",
+  "version": "6.8.21",
   "bin": "./bin/1c",
   "repository": "github:wizawu/1c",
   "dependencies": {

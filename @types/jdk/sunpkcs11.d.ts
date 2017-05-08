@@ -612,38 +612,30 @@ declare namespace sun {
                 interface CK_UNLOCKMUTEX$_1 {
                     CK_UNLOCKMUTEX(arg0: java.lang.Object): void
                 }
-                
                 interface CK_UNLOCKMUTEX$_0 {
                     (arg0: java.lang.Object): void
                 }
-                
                 type CK_UNLOCKMUTEX = CK_UNLOCKMUTEX$_0 | CK_UNLOCKMUTEX$_1
                 interface CK_LOCKMUTEX$_1 {
                     CK_LOCKMUTEX(arg0: java.lang.Object): void
                 }
-                
                 interface CK_LOCKMUTEX$_0 {
                     (arg0: java.lang.Object): void
                 }
-                
                 type CK_LOCKMUTEX = CK_LOCKMUTEX$_0 | CK_LOCKMUTEX$_1
                 interface CK_DESTROYMUTEX$_1 {
                     CK_DESTROYMUTEX(arg0: java.lang.Object): void
                 }
-                
                 interface CK_DESTROYMUTEX$_0 {
                     (arg0: java.lang.Object): void
                 }
-                
                 type CK_DESTROYMUTEX = CK_DESTROYMUTEX$_0 | CK_DESTROYMUTEX$_1
                 interface CK_CREATEMUTEX$_1 {
                     CK_CREATEMUTEX(): java.lang.Object
                 }
-                
                 interface CK_CREATEMUTEX$_0 {
                     (): java.lang.Object
                 }
-                
                 type CK_CREATEMUTEX = CK_CREATEMUTEX$_0 | CK_CREATEMUTEX$_1
                 class CK_VERSION {
                     public major: byte
@@ -678,11 +670,9 @@ declare namespace sun {
                 interface CK_NOTIFY$_1 {
                     CK_NOTIFY(arg0: long, arg1: long, arg2: java.lang.Object): void
                 }
-                
                 interface CK_NOTIFY$_0 {
                     (arg0: long, arg1: long, arg2: java.lang.Object): void
                 }
-                
                 type CK_NOTIFY = CK_NOTIFY$_0 | CK_NOTIFY$_1
                 class CK_MECHANISM_INFO {
                     public ulMinKeySize: long
@@ -1332,11 +1322,7 @@ declare namespace sun {
                     CKT_NETSCAPE_VALID: long
                     CKT_NETSCAPE_VALID_DELEGATOR: long
                 }
-                
             }
-            
         }
-        
     }
-    
 }

@@ -43,7 +43,7 @@ export default parseJAR
 
 export function generateTsDefinition(jar: string) {
     let target = path.basename(jar).replace(/\.jar$/, ".d.ts")
-    fs.writeFileSync(target, parseJAR(jar))
+    fs.writeFileSync(target, parseJAR(jar).replace(/^\s+\n/gm, ""))
 }
 
 export function getTopPackages(jar: string): string[] {

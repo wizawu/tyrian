@@ -1364,11 +1364,8 @@ declare namespace sun {
                     static initb2c(): void
                     static initc2b(): void
                 }
-                
             }
-            
         }
-        
     }
     namespace awt {
         class HKSCS extends sun.nio.cs.ext.MS950_HKSCS_XP {
@@ -1394,9 +1391,6 @@ declare namespace sun {
                 public newDecoder(): java.nio.charset.CharsetDecoder
                 public contains(arg0: java.nio.charset.Charset): boolean
             }
-            
         }
-        
     }
-    
 }

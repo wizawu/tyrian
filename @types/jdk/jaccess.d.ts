@@ -33,9 +33,7 @@ declare namespace com {
                                 public constructor()
                                 public getAccessibleRole(): javax.accessibility.AccessibleRole
                             }
-                            
                         }
-                        
                     }
                     class EventID {
                         public static ACTION: int
@@ -185,11 +183,9 @@ declare namespace com {
                     interface GUIInitializedListener$_1 extends java.util.EventListener {
                         guiInitialized(): void
                     }
-                    
                     interface GUIInitializedListener$_0 extends java.util.EventListener {
                         (): void
                     }
-                    
                     type GUIInitializedListener = GUIInitializedListener$_0 | GUIInitializedListener$_1
                     class GUIInitializedMulticaster extends java.awt.AWTEventMulticaster implements com.sun.java.accessibility.util.GUIInitializedListener {
                         protected constructor(arg0: java.util.EventListener, arg1: java.util.EventListener)
@@ -307,13 +303,8 @@ declare namespace com {
                         protected static addInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener
                         protected static removeInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener
                     }
-                    
                 }
-                
             }
-            
         }
-        
     }
-    
 }

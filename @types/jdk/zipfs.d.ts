@@ -362,11 +362,7 @@ declare namespace com {
                     static access$000(arg0: com.sun.nio.zipfs.ZipDirectoryStream): boolean
                     static access$100(arg0: com.sun.nio.zipfs.ZipDirectoryStream): java.util.Iterator
                 }
-                
             }
-            
         }
-        
     }
-    
 }

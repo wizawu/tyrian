@@ -15,13 +15,8 @@ declare namespace sun {
                         public getProviderName(): string
                         public getType(): string
                     }
-                    
                 }
-                
             }
-            
         }
-        
     }
-    
 }

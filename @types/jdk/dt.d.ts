@@ -271,7 +271,6 @@ declare namespace javax {
                 public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
                 public getIcon(arg0: int): java.awt.Image
             }
-            
         }
         class SwingBeanInfoBase extends java.beans.SimpleBeanInfo {
             public constructor()
@@ -279,9 +278,7 @@ declare namespace javax {
             public getIcon(arg0: int): java.awt.Image
             public getAdditionalBeanInfo(): java.beans.BeanInfo[]
         }
-        
     }
-    
 }
 declare namespace sun {
     namespace swing {
@@ -302,7 +299,5 @@ declare namespace sun {
             public static createBeanDescriptor(arg0: java.lang.Class, arg1: java.lang.Object[]): java.beans.BeanDescriptor
             public static throwError(arg0: java.lang.Exception, arg1: string): void
         }
-        
     }
-    
 }

@@ -40,7 +40,7 @@ function parseJAR(jar) {
 exports["default"] = parseJAR;
 function generateTsDefinition(jar) {
     var target = path.basename(jar).replace(/\.jar$/, ".d.ts");
-    fs.writeFileSync(target, parseJAR(jar));
+    fs.writeFileSync(target, parseJAR(jar).replace(/^\s+\n/gm, ""));
 }
 exports.generateTsDefinition = generateTsDefinition;
 function getTopPackages(jar) {

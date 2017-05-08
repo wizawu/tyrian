@@ -418,11 +418,9 @@ declare namespace org {
                 interface ContextListener$_1 {
                     update(arg0: org.classpath.icedtea.pulseaudio.ContextEvent): void
                 }
-                
                 interface ContextListener$_0 {
                     (arg0: org.classpath.icedtea.pulseaudio.ContextEvent): void
                 }
-                
                 type ContextListener = ContextListener$_0 | ContextListener$_1
                 class ContextEvent {
                     static UNCONNECTED: long
@@ -436,11 +434,7 @@ declare namespace org {
                     public constructor(arg0: long)
                     public getType(): long
                 }
-                
             }
-            
         }
-        
     }
-    
 }

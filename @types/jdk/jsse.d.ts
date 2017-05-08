@@ -16,17 +16,11 @@ declare namespace com {
                             public static isFIPS(): boolean
                             public static install(): void
                         }
-                        
                     }
-                    
                 }
-                
             }
-            
         }
-        
     }
-    
 }
 declare namespace sun {
     namespace security {
@@ -34,7 +28,6 @@ declare namespace sun {
             class SunRsaSign extends java.security.Provider {
                 public constructor()
             }
-            
         }
         namespace ssl {
             class DummyX509KeyManager extends javax.net.ssl.X509ExtendedKeyManager {
@@ -436,7 +429,6 @@ declare namespace sun {
                     public getLocalPrincipal(): java.security.Principal
                     public getPeerPrincipal(): java.security.Principal
                 }
-                
             }
             class X509KeyManagerImpl extends javax.net.ssl.X509ExtendedKeyManager implements javax.net.ssl.X509KeyManager {
                 constructor(arg0: any)
@@ -1289,15 +1281,11 @@ declare namespace sun {
                 protected finalize(): void
                 static access$000(arg0: sun.security.ssl.SunJSSE, arg1: boolean): void
             }
-            
         }
         namespace provider {
             class Sun extends java.security.Provider {
                 public constructor()
             }
-            
         }
-        
     }
-    
 }

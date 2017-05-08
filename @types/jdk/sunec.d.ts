@@ -91,9 +91,6 @@ declare namespace sun {
                 protected engineSetParameter(arg0: string, arg1: java.lang.Object): void
                 protected engineGetParameter(arg0: string): java.lang.Object
             }
-            
         }
-        
     }
-    
 }

@@ -46,7 +46,7 @@ function default_1(instdir) {
             }
         }
     });
-    ["assets", "assets/img", "css", "html", "js", "js/@types"].forEach(function (dir) {
+    ["assets", "assets/img", "css", "js", "js/@types"].forEach(function (dir) {
         try {
             fs.mkdirSync("src/" + dir);
             console.log(chalk.green("mkdir src/" + dir));
@@ -64,10 +64,9 @@ function default_1(instdir) {
         ["package.json", PACKAGE_JSON],
         ["tsconfig.json", exports.tsconfig(instdir)],
         [".gitignore", _GITIGNORE],
-        ["src/assets/todo.txt", ""],
+        ["src/assets/index.html", "<!DOCTYPE html>"],
         ["src/assets/img/blank.jpg", ""],
         ["src/css/index.less", "body { display: flex }"],
-        ["src/html/index.html", "<!DOCTYPE html>"],
         ["src/js/index.tsx", "import \"../css/index.less\""],
         ["src/js/main.j.ts", "org.pmw.tinylog.Logger.info(java.lang.System.getProperty(\"java.version\"))"],
         ["src/js/@types/common.d.ts", ""],

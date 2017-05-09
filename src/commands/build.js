@@ -16,7 +16,6 @@ var parseJAR_1 = require("../compiler/parseJAR");
 var autoprefixer = require("autoprefixer");
 var webpack = require("webpack");
 var CopyWebpackPlugin = require("copy-webpack-plugin");
-var HtmlWebpackPlugin = require("html-webpack-plugin");
 function compilers(instdir, instmod, context, entries, watch) {
     var entryJS = {};
     var entryJJS = {};
@@ -29,7 +28,6 @@ function compilers(instdir, instmod, context, entries, watch) {
             entryJS["build/assets/js/" + basename + ".min.js"] = entry;
         }
     });
-    var html = fs.existsSync(context + "/src/html") ? (fs.readdirSync(context + "/src/html").filter(function (filename) { return /\.html$/.test(filename); })) : [];
     var cssLoaders = [{
             loader: "style-loader"
         }, {
@@ -77,13 +75,7 @@ function compilers(instdir, instmod, context, entries, watch) {
                     use: cssLoaders.concat({ loader: "less-loader" })
                 }]
         },
-        plugins: (builtAssets ? [] : html).map(function (filename) {
-            return new HtmlWebpackPlugin({
-                filename: "build/assets/" + filename,
-                template: context + "/src/html/" + filename,
-                inject: false
-            });
-        }).concat([
+        plugins: [
             new CopyWebpackPlugin(builtAssets ? [] : [{
                     context: context + "/src/assets",
                     from: "**/*",
@@ -92,7 +84,7 @@ function compilers(instdir, instmod, context, entries, watch) {
             new webpack.DefinePlugin(__assign({ "process.env": {
                     NODE_ENV: minimize ? '"production"' : '"development"'
                 } }, (entry === entryJJS ? globalVars : {}))),
-        ]).concat(minimize ? [
+        ].concat(minimize ? [
             new webpack.optimize.UglifyJsPlugin({
                 sourceMap: true
             })

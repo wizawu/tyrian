@@ -7,7 +7,6 @@ import { getTopPackages } from "../compiler/parseJAR"
 const autoprefixer = require("autoprefixer")
 const webpack = require("webpack")
 const CopyWebpackPlugin = require("copy-webpack-plugin")
-const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 function compilers(instdir: string, instmod: string, context: string, entries: string[], watch: boolean): any[] {
     let entryJS = {}
@@ -21,10 +20,6 @@ function compilers(instdir: string, instmod: string, context: string, entries: s
             entryJS[`build/assets/js/${basename}.min.js`] = entry
         }
     })
-
-    let html = fs.existsSync(`${context}/src/html`) ? (
-        fs.readdirSync(`${context}/src/html`).filter(filename => /\.html$/.test(filename))
-    ) : []
 
     let cssLoaders = [{
         loader: "style-loader"
@@ -75,13 +70,7 @@ function compilers(instdir: string, instmod: string, context: string, entries: s
                 use: cssLoaders.concat({ loader: "less-loader" })
             }]
         },
-        plugins: (builtAssets ? [] : html).map(filename =>
-            new HtmlWebpackPlugin({
-                filename: `build/assets/${filename}`,
-                template: `${context}/src/html/${filename}`,
-                inject: false,
-            })
-        ).concat([
+        plugins: [
             new CopyWebpackPlugin(builtAssets ? [] : [{
                 context: `${context}/src/assets`,
                 from: "**/*",
@@ -93,7 +82,7 @@ function compilers(instdir: string, instmod: string, context: string, entries: s
                 },
                 ...(entry === entryJJS ? globalVars : {}),
             }),
-        ]).concat(minimize ? [
+        ].concat(minimize ? [
             new webpack.optimize.UglifyJsPlugin({
                 sourceMap: true,
             })

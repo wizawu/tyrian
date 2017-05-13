@@ -111,7 +111,9 @@ function generateTsxHTML(options: webpack.Configuration) {
         if (/\.tsx$/.test((options.entry as any)[k])) {
             let html = k.replace(/js\/(.+).min.js/, "$1.tsx.html")
             try {
-                let element = require(`${options.context}/${k}`).default
+                let module = `${options.context}/${k}`
+                delete require.cache[module]
+                let element = require(module).default
                 try {
                     fs.writeFileSync(html, renderToStaticMarkup(element))
                 } catch (ex) {

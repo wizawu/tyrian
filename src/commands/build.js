@@ -111,7 +111,9 @@ function generateTsxHTML(options) {
         if (/\.tsx$/.test(options.entry[k])) {
             var html = k.replace(/js\/(.+).min.js/, "$1.tsx.html");
             try {
-                var element = require(options.context + "/" + k)["default"];
+                var module_1 = options.context + "/" + k;
+                delete require.cache[module_1];
+                var element = require(module_1)["default"];
                 try {
                     fs.writeFileSync(html, server_1.renderToStaticMarkup(element));
                 }

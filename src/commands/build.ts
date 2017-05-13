@@ -59,7 +59,7 @@ function compilers(instdir: string, instmod: string, context: string, entries: s
         output: {
             path: context,
             filename: "[name]",
-            libraryTarget: "commonjs-module",
+            libraryTarget: entry === entryJJS ? undefined : "commonjs-module",
         },
         module: {
             rules: [{

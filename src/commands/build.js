@@ -8,7 +8,6 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
     return t;
 };
 exports.__esModule = true;
-var React = require("react");
 var chalk = require("chalk");
 var fs = require("fs");
 var path = require("path");
@@ -112,10 +111,9 @@ function generateTsxHTML(options) {
         if (/\.tsx$/.test(options.entry[k])) {
             var html = k.replace(/js\/(.+).min.js/, "$1.tsx.html");
             try {
-                var component = require(options.context + "/" + k)["default"];
+                var element = require(options.context + "/" + k)["default"];
                 try {
-                    var markup = server_1.renderToStaticMarkup(React.createElement(component));
-                    fs.writeFileSync(html, markup);
+                    fs.writeFileSync(html, server_1.renderToStaticMarkup(element));
                 }
                 catch (ex) {
                     console.error(chalk.yellow(ex.message));

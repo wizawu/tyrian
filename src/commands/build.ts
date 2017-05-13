@@ -1,4 +1,3 @@
-import * as React from "react"
 import * as chalk from "chalk"
 import * as fs from "fs"
 import * as path from "path"
@@ -112,10 +111,9 @@ function generateTsxHTML(options: webpack.Configuration) {
         if (/\.tsx$/.test((options.entry as any)[k])) {
             let html = k.replace(/js\/(.+).min.js/, "$1.tsx.html")
             try {
-                let component = require(`${options.context}/${k}`).default
+                let element = require(`${options.context}/${k}`).default
                 try {
-                    let markup = renderToStaticMarkup(React.createElement(component))
-                    fs.writeFileSync(html, markup)
+                    fs.writeFileSync(html, renderToStaticMarkup(element))
                 } catch (ex) {
                     console.error(chalk.yellow(ex.message))
                 }

@@ -55,11 +55,7 @@ function compilers(instdir: string, instmod: string, context: string, entries: s
         resolve: { extensions: [".js", ".ts", ".j.ts", ".tsx"] },
         resolveLoader: { modules: [instmod] },
         entry: entry,
-        output: {
-            path: context,
-            filename: "[name]",
-            libraryTarget: entry === entryJJS ? undefined : "commonjs-module",
-        },
+        output: { path: context, filename: "[name]" },
         module: {
             rules: [{
                 test: /\.tsx?$/,
@@ -109,15 +105,19 @@ function compilers(instdir: string, instmod: string, context: string, entries: s
 function generateTsxHTML(options: webpack.Configuration) {
     Object.keys(options.entry).forEach(k => {
         if (/\.tsx$/.test((options.entry as any)[k])) {
-            let html = k.replace(/js\/(.+).min.js/, "$1.tsx.html")
+            let filepath = k.replace(/js\/(.+).min.js/, "$1.tsx.html")
+            let module = `${options.context}/${k}`
+            delete require.cache[module];
+            (global as any)._tsx_html = undefined
             try {
-                let module = `${options.context}/${k}`
-                delete require.cache[module]
-                let element = require(module).default
-                try {
-                    fs.writeFileSync(html, renderToStaticMarkup(element))
-                } catch (ex) {
-                    console.error(chalk.yellow(ex.message))
+                require(module)
+                let html = (global as any)._tsx_html
+                if (typeof html !== "undefined") {
+                    try {
+                        fs.writeFileSync(filepath, renderToStaticMarkup(html))
+                    } catch (ex) {
+                        console.error(chalk.yellow(ex.message))
+                    }
                 }
             } catch (ex) {
             }

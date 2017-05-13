@@ -1,14 +1,16 @@
+import * as React from "react"
 import * as chalk from "chalk"
 import * as fs from "fs"
 import * as path from "path"
+import * as webpack from "webpack"
+import { renderToStaticMarkup } from "react-dom/server"
 import { EXIT_STATUS } from "../const"
 import { getTopPackages } from "../compiler/parseJAR"
 
 const autoprefixer = require("autoprefixer")
-const webpack = require("webpack")
 const CopyWebpackPlugin = require("copy-webpack-plugin")
 
-function compilers(instdir: string, instmod: string, context: string, entries: string[], watch: boolean): any[] {
+function compilers(instdir: string, instmod: string, context: string, entries: string[], watch: boolean) {
     let entryJS = {}
     let entryJJS = {}
 
@@ -54,7 +56,11 @@ function compilers(instdir: string, instmod: string, context: string, entries: s
         resolve: { extensions: [".js", ".ts", ".j.ts", ".tsx"] },
         resolveLoader: { modules: [instmod] },
         entry: entry,
-        output: { path: context, filename: "[name]" },
+        output: {
+            path: context,
+            filename: "[name]",
+            libraryTarget: "commonjs-module",
+        },
         module: {
             rules: [{
                 test: /\.tsx?$/,
@@ -89,16 +95,34 @@ function compilers(instdir: string, instmod: string, context: string, entries: s
         ] : []),
     })
 
-    let list = []
+    let list: webpack.Compiler[] = []
     if (Object.keys(entryJS).length > 0) {
-        list.push(createCompiler(entryJS, !watch) as never)
+        list.push(createCompiler(entryJS, !watch))
         builtAssets = true
     }
     if (Object.keys(entryJJS).length > 0) {
-        list.push(createCompiler(entryJJS, false) as never)
+        list.push(createCompiler(entryJJS, false))
         builtAssets = true
     }
     return list
+}
+
+function generateTsxHTML(options: webpack.Configuration) {
+    Object.keys(options.entry).forEach(k => {
+        if (/\.tsx$/.test((options.entry as any)[k])) {
+            let html = k.replace(/js\/(.+).min.js/, "$1.tsx.html")
+            try {
+                let component = require(`${options.context}/${k}`).default
+                try {
+                    let markup = renderToStaticMarkup(React.createElement(component))
+                    fs.writeFileSync(html, markup)
+                } catch (ex) {
+                    console.error(chalk.yellow(ex.message))
+                }
+            } catch (ex) {
+            }
+        }
+    })
 }
 
 export default function (instdir: string, instmod: string, entries: string[], watch: boolean) {
@@ -139,13 +163,18 @@ export default function (instdir: string, instmod: string, entries: string[], wa
         compilers(instdir, instmod, context, entries, true).forEach(c =>
             c.watch({ poll: true }, (err, stats) => {
                 console.log(stats.toString(statsOptions))
+                generateTsxHTML(c.options)
             })
         )
     } else {
         compilers(instdir, instmod, context, entries, false).forEach(c =>
             c.run((err, stats) => {
                 console.log(stats.toString(statsOptions))
-                if (stats.hasErrors()) process.exit(EXIT_STATUS.WEBPACK_COMPILE_ERROR)
+                if (stats.hasErrors()) {
+                    process.exit(EXIT_STATUS.WEBPACK_COMPILE_ERROR)
+                } else {
+                    generateTsxHTML(c.options)
+                }
             })
         )
     }

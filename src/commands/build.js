@@ -8,13 +8,15 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
     return t;
 };
 exports.__esModule = true;
+var React = require("react");
 var chalk = require("chalk");
 var fs = require("fs");
 var path = require("path");
+var webpack = require("webpack");
+var server_1 = require("react-dom/server");
 var const_1 = require("../const");
 var parseJAR_1 = require("../compiler/parseJAR");
 var autoprefixer = require("autoprefixer");
-var webpack = require("webpack");
 var CopyWebpackPlugin = require("copy-webpack-plugin");
 function compilers(instdir, instmod, context, entries, watch) {
     var entryJS = {};
@@ -59,7 +61,11 @@ function compilers(instdir, instmod, context, entries, watch) {
         resolve: { extensions: [".js", ".ts", ".j.ts", ".tsx"] },
         resolveLoader: { modules: [instmod] },
         entry: entry,
-        output: { path: context, filename: "[name]" },
+        output: {
+            path: context,
+            filename: "[name]",
+            libraryTarget: "commonjs-module"
+        },
         module: {
             rules: [{
                     test: /\.tsx?$/,
@@ -101,6 +107,25 @@ function compilers(instdir, instmod, context, entries, watch) {
     }
     return list;
 }
+function generateTsxHTML(options) {
+    Object.keys(options.entry).forEach(function (k) {
+        if (/\.tsx$/.test(options.entry[k])) {
+            var html = k.replace(/js\/(.+).min.js/, "$1.tsx.html");
+            try {
+                var component = require(options.context + "/" + k)["default"];
+                try {
+                    var markup = server_1.renderToStaticMarkup(React.createElement(component));
+                    fs.writeFileSync(html, markup);
+                }
+                catch (ex) {
+                    console.error(chalk.yellow(ex.message));
+                }
+            }
+            catch (ex) {
+            }
+        }
+    });
+}
 function default_1(instdir, instmod, entries, watch) {
     if (entries.length === 0) {
         console.error(chalk.yellow("no entry to build"));
@@ -136,6 +161,7 @@ function default_1(instdir, instmod, entries, watch) {
         compilers(instdir, instmod, context, entries, true).forEach(function (c) {
             return c.watch({ poll: true }, function (err, stats) {
                 console.log(stats.toString(statsOptions));
+                generateTsxHTML(c.options);
             });
         });
     }
@@ -143,8 +169,12 @@ function default_1(instdir, instmod, entries, watch) {
         compilers(instdir, instmod, context, entries, false).forEach(function (c) {
             return c.run(function (err, stats) {
                 console.log(stats.toString(statsOptions));
-                if (stats.hasErrors())
+                if (stats.hasErrors()) {
                     process.exit(const_1.EXIT_STATUS.WEBPACK_COMPILE_ERROR);
+                }
+                else {
+                    generateTsxHTML(c.options);
+                }
             });
         });
     }

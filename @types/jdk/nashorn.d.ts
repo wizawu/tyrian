@@ -64,15 +64,15 @@ declare namespace jdk {
                     public getProgram(...arg0: java.lang.String[]): string
                     public getScriptEngine(): javax.script.ScriptEngine
                     public getScriptEngine(arg0: java.lang.ClassLoader): javax.script.ScriptEngine
-                    public getScriptEngine(arg0: jdk.nashorn.api.scripting.ClassFilter): javax.script.ScriptEngine
+                    public getScriptEngine(arg0: jdk.nashorn.api.scripting.ClassFilter | jdk.nashorn.api.scripting.ClassFilter$$Lambda): javax.script.ScriptEngine
                     public getScriptEngine(...arg0: java.lang.String[]): javax.script.ScriptEngine
                     public getScriptEngine(arg0: java.lang.String[], arg1: java.lang.ClassLoader): javax.script.ScriptEngine
-                    public getScriptEngine(arg0: java.lang.String[], arg1: java.lang.ClassLoader, arg2: jdk.nashorn.api.scripting.ClassFilter): javax.script.ScriptEngine
+                    public getScriptEngine(arg0: java.lang.String[], arg1: java.lang.ClassLoader, arg2: jdk.nashorn.api.scripting.ClassFilter | jdk.nashorn.api.scripting.ClassFilter$$Lambda): javax.script.ScriptEngine
                 }
                 class NashornScriptEngine extends javax.script.AbstractScriptEngine implements javax.script.Compilable , javax.script.Invocable {
                     public static NASHORN_GLOBAL: string
                     static $assertionsDisabled: boolean
-                    constructor(arg0: jdk.nashorn.api.scripting.NashornScriptEngineFactory, arg1: java.lang.String[], arg2: java.lang.ClassLoader, arg3: jdk.nashorn.api.scripting.ClassFilter)
+                    constructor(arg0: jdk.nashorn.api.scripting.NashornScriptEngineFactory, arg1: java.lang.String[], arg2: java.lang.ClassLoader, arg3: jdk.nashorn.api.scripting.ClassFilter | jdk.nashorn.api.scripting.ClassFilter$$Lambda)
                     public eval(arg0: java.io.Reader, arg1: javax.script.ScriptContext): java.lang.Object
                     public eval(arg0: string, arg1: javax.script.ScriptContext): java.lang.Object
                     public getFactory(): javax.script.ScriptEngineFactory
@@ -850,7 +850,7 @@ declare namespace jdk {
                     public accept(arg0: jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.LexicalContext>): jdk.nashorn.internal.ir.Node
                     public isLocal(): boolean
                     public toString(arg0: java.lang.StringBuilder, arg1: boolean): void
-                    public toString(arg0: java.lang.StringBuilder, arg1: java.lang.Runnable, arg2: boolean): void
+                    public toString(arg0: java.lang.StringBuilder, arg1: java.lang.Runnable | java.lang.Runnable$$Lambda, arg2: boolean): void
                     public getExpression(): jdk.nashorn.internal.ir.Expression
                     public setExpression(arg0: jdk.nashorn.internal.ir.Expression): jdk.nashorn.internal.ir.UnaryNode
                     public getProgramPoint(): int
@@ -952,7 +952,7 @@ declare namespace jdk {
                     public setExpression(arg0: jdk.nashorn.internal.ir.Expression): jdk.nashorn.internal.ir.ReturnNode
                 }
                 class PropertyNode extends jdk.nashorn.internal.ir.Node {
-                    public constructor(arg0: long, arg1: int, arg2: jdk.nashorn.internal.ir.PropertyKey, arg3: jdk.nashorn.internal.ir.Expression, arg4: jdk.nashorn.internal.ir.FunctionNode, arg5: jdk.nashorn.internal.ir.FunctionNode)
+                    public constructor(arg0: long, arg1: int, arg2: jdk.nashorn.internal.ir.PropertyKey | jdk.nashorn.internal.ir.PropertyKey$$Lambda, arg3: jdk.nashorn.internal.ir.Expression, arg4: jdk.nashorn.internal.ir.FunctionNode, arg5: jdk.nashorn.internal.ir.FunctionNode)
                     public getKeyName(): string
                     public accept(arg0: jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.LexicalContext>): jdk.nashorn.internal.ir.Node
                     public toString(arg0: java.lang.StringBuilder, arg1: boolean): void
@@ -1582,9 +1582,9 @@ declare namespace jdk {
                 class LexicalContext {
                     static $assertionsDisabled: boolean
                     public constructor()
-                    public setFlag(arg0: jdk.nashorn.internal.ir.LexicalContextNode, arg1: int): void
+                    public setFlag(arg0: jdk.nashorn.internal.ir.LexicalContextNode | jdk.nashorn.internal.ir.LexicalContextNode$$Lambda, arg1: int): void
                     public setBlockNeedsScope(arg0: jdk.nashorn.internal.ir.Block): void
-                    public getFlags(arg0: jdk.nashorn.internal.ir.LexicalContextNode): int
+                    public getFlags(arg0: jdk.nashorn.internal.ir.LexicalContextNode | jdk.nashorn.internal.ir.LexicalContextNode$$Lambda): int
                     public getFunctionBody(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Block
                     public getAllNodes(): java.util.Iterator<jdk.nashorn.internal.ir.LexicalContextNode>
                     public getOutermostFunction(): jdk.nashorn.internal.ir.FunctionNode
@@ -1594,8 +1594,8 @@ declare namespace jdk {
                     public pop<T extends jdk.nashorn.internal.ir.Node>(arg0: T): T
                     public applyTopFlags<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: T): T
                     public peek<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): jdk.nashorn.internal.ir.LexicalContextNode
-                    public contains<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: jdk.nashorn.internal.ir.LexicalContextNode): boolean
-                    public replace<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: jdk.nashorn.internal.ir.LexicalContextNode, arg1: jdk.nashorn.internal.ir.LexicalContextNode): jdk.nashorn.internal.ir.LexicalContextNode
+                    public contains<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: jdk.nashorn.internal.ir.LexicalContextNode | jdk.nashorn.internal.ir.LexicalContextNode$$Lambda): boolean
+                    public replace<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: jdk.nashorn.internal.ir.LexicalContextNode | jdk.nashorn.internal.ir.LexicalContextNode$$Lambda, arg1: jdk.nashorn.internal.ir.LexicalContextNode | jdk.nashorn.internal.ir.LexicalContextNode$$Lambda): jdk.nashorn.internal.ir.LexicalContextNode
                     public getBlocks<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): java.util.Iterator<jdk.nashorn.internal.ir.Block>
                     public getFunctions<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): java.util.Iterator<jdk.nashorn.internal.ir.FunctionNode>
                     public getParentBlock<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): jdk.nashorn.internal.ir.Block
@@ -1610,7 +1610,7 @@ declare namespace jdk {
                     public isFunctionBody<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): boolean
                     public isSplitBody<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): boolean
                     public getParentFunction<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.FunctionNode
-                    public getScopeNestingLevelTo<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: jdk.nashorn.internal.ir.LexicalContextNode): int
+                    public getScopeNestingLevelTo<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: jdk.nashorn.internal.ir.LexicalContextNode | jdk.nashorn.internal.ir.LexicalContextNode$$Lambda): int
                     public inLoop<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): boolean
                     public getCurrentLoop<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): jdk.nashorn.internal.ir.LoopNode
                     public getBreakable<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: string): jdk.nashorn.internal.ir.BreakableNode
@@ -3167,8 +3167,8 @@ declare namespace jdk {
                     public newGenericDescriptor(arg0: boolean, arg1: boolean): jdk.nashorn.internal.runtime.PropertyDescriptor
                     public newDataDescriptor(arg0: java.lang.Object, arg1: boolean, arg2: boolean, arg3: boolean): jdk.nashorn.internal.runtime.PropertyDescriptor
                     public newAccessorDescriptor(arg0: java.lang.Object, arg1: java.lang.Object, arg2: boolean, arg3: boolean): jdk.nashorn.internal.runtime.PropertyDescriptor
-                    public getInvokeByName(arg0: java.lang.Object, arg1: java.util.concurrent.Callable<jdk.nashorn.internal.runtime.linker.InvokeByName>): jdk.nashorn.internal.runtime.linker.InvokeByName
-                    public getDynamicInvoker(arg0: java.lang.Object, arg1: java.util.concurrent.Callable<java.lang.invoke.MethodHandle>): java.lang.invoke.MethodHandle
+                    public getInvokeByName(arg0: java.lang.Object, arg1: java.util.concurrent.Callable<jdk.nashorn.internal.runtime.linker.InvokeByName> | java.util.concurrent.Callable$$Lambda<jdk.nashorn.internal.runtime.linker.InvokeByName>): jdk.nashorn.internal.runtime.linker.InvokeByName
+                    public getDynamicInvoker(arg0: java.lang.Object, arg1: java.util.concurrent.Callable<java.lang.invoke.MethodHandle> | java.util.concurrent.Callable$$Lambda<java.lang.invoke.MethodHandle>): java.lang.invoke.MethodHandle
                     public static __noSuchProperty__(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
                     public static eval(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
                     public static directEval(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object, arg3: java.lang.Object, arg4: boolean): java.lang.Object
@@ -3975,7 +3975,7 @@ declare namespace jdk {
                     static $assertionsDisabled: boolean
                     constructor()
                     getReplacement(arg0: jdk.nashorn.internal.codegen.CompileUnit): jdk.nashorn.internal.codegen.CompileUnit
-                    getExistingReplacement(arg0: jdk.nashorn.internal.ir.CompileUnitHolder): jdk.nashorn.internal.codegen.CompileUnit
+                    getExistingReplacement(arg0: jdk.nashorn.internal.ir.CompileUnitHolder | jdk.nashorn.internal.ir.CompileUnitHolder$$Lambda): jdk.nashorn.internal.codegen.CompileUnit
                     public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Node
                     public leaveLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode<any>): jdk.nashorn.internal.ir.Node
                     public leaveObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode): jdk.nashorn.internal.ir.Node
@@ -6940,9 +6940,9 @@ declare namespace jdk {
                     public static err(arg0: string, arg1: boolean): void
                     getSharedLoader(): java.lang.ClassLoader
                     public constructor(arg0: jdk.nashorn.internal.runtime.options.Options, arg1: jdk.nashorn.internal.runtime.ErrorManager, arg2: java.lang.ClassLoader)
-                    public constructor(arg0: jdk.nashorn.internal.runtime.options.Options, arg1: jdk.nashorn.internal.runtime.ErrorManager, arg2: java.lang.ClassLoader, arg3: jdk.nashorn.api.scripting.ClassFilter)
+                    public constructor(arg0: jdk.nashorn.internal.runtime.options.Options, arg1: jdk.nashorn.internal.runtime.ErrorManager, arg2: java.lang.ClassLoader, arg3: jdk.nashorn.api.scripting.ClassFilter | jdk.nashorn.api.scripting.ClassFilter$$Lambda)
                     public constructor(arg0: jdk.nashorn.internal.runtime.options.Options, arg1: jdk.nashorn.internal.runtime.ErrorManager, arg2: java.io.PrintWriter, arg3: java.io.PrintWriter, arg4: java.lang.ClassLoader)
-                    public constructor(arg0: jdk.nashorn.internal.runtime.options.Options, arg1: jdk.nashorn.internal.runtime.ErrorManager, arg2: java.io.PrintWriter, arg3: java.io.PrintWriter, arg4: java.lang.ClassLoader, arg5: jdk.nashorn.api.scripting.ClassFilter)
+                    public constructor(arg0: jdk.nashorn.internal.runtime.options.Options, arg1: jdk.nashorn.internal.runtime.ErrorManager, arg2: java.io.PrintWriter, arg3: java.io.PrintWriter, arg4: java.lang.ClassLoader, arg5: jdk.nashorn.api.scripting.ClassFilter | jdk.nashorn.api.scripting.ClassFilter$$Lambda)
                     public getClassFilter(): jdk.nashorn.api.scripting.ClassFilter
                     getGlobalConstants(): jdk.nashorn.internal.runtime.GlobalConstants
                     public getErrorManager(): jdk.nashorn.internal.runtime.ErrorManager
@@ -7867,7 +7867,7 @@ declare namespace jdk {
                     class NashornBeansLinker implements jdk.internal.dynalink.linker.GuardingDynamicLinker {
                         public constructor()
                         public getGuardedInvocation(arg0: jdk.internal.dynalink.linker.LinkRequest, arg1: jdk.internal.dynalink.linker.LinkerServices): jdk.internal.dynalink.linker.GuardedInvocation
-                        public static getGuardedInvocation(arg0: jdk.internal.dynalink.linker.GuardingDynamicLinker, arg1: jdk.internal.dynalink.linker.LinkRequest, arg2: jdk.internal.dynalink.linker.LinkerServices): jdk.internal.dynalink.linker.GuardedInvocation
+                        public static getGuardedInvocation(arg0: jdk.internal.dynalink.linker.GuardingDynamicLinker | jdk.internal.dynalink.linker.GuardingDynamicLinker$$Lambda, arg1: jdk.internal.dynalink.linker.LinkRequest, arg2: jdk.internal.dynalink.linker.LinkerServices): jdk.internal.dynalink.linker.GuardedInvocation
                         static exportArgument(arg0: java.lang.Object, arg1: boolean): java.lang.Object
                         static getFunctionalInterfaceMethodName(arg0: java.lang.Class<any>): string
                         static createHiddenObjectFilter(): jdk.internal.dynalink.linker.MethodHandleTransformer
@@ -8901,15 +8901,15 @@ declare namespace jdk {
                 public setClassLoader(arg0: java.lang.ClassLoader): void
                 public setPrioritizedLinkers(arg0: java.util.List<jdk.internal.dynalink.linker.GuardingDynamicLinker>): void
                 public setPrioritizedLinkers(...arg0: jdk.internal.dynalink.linker.GuardingDynamicLinker[]): void
-                public setPrioritizedLinker(arg0: jdk.internal.dynalink.linker.GuardingDynamicLinker): void
+                public setPrioritizedLinker(arg0: jdk.internal.dynalink.linker.GuardingDynamicLinker | jdk.internal.dynalink.linker.GuardingDynamicLinker$$Lambda): void
                 public setFallbackLinkers(arg0: java.util.List<jdk.internal.dynalink.linker.GuardingDynamicLinker>): void
                 public setFallbackLinkers(...arg0: jdk.internal.dynalink.linker.GuardingDynamicLinker[]): void
                 public setRuntimeContextArgCount(arg0: int): void
                 public setSyncOnRelink(arg0: boolean): void
                 public setUnstableRelinkThreshold(arg0: int): void
-                public setPrelinkFilter(arg0: jdk.internal.dynalink.GuardedInvocationFilter): void
-                public setAutoConversionStrategy(arg0: jdk.internal.dynalink.linker.MethodTypeConversionStrategy): void
-                public setInternalObjectsFilter(arg0: jdk.internal.dynalink.linker.MethodHandleTransformer): void
+                public setPrelinkFilter(arg0: jdk.internal.dynalink.GuardedInvocationFilter | jdk.internal.dynalink.GuardedInvocationFilter$$Lambda): void
+                public setAutoConversionStrategy(arg0: jdk.internal.dynalink.linker.MethodTypeConversionStrategy | jdk.internal.dynalink.linker.MethodTypeConversionStrategy$$Lambda): void
+                public setInternalObjectsFilter(arg0: jdk.internal.dynalink.linker.MethodHandleTransformer | jdk.internal.dynalink.linker.MethodHandleTransformer$$Lambda): void
                 public createLinker(): jdk.internal.dynalink.DynamicLinker
             }
             class NoSuchDynamicMethodException extends java.lang.RuntimeException {
@@ -8926,7 +8926,7 @@ declare namespace jdk {
                 (arg0: jdk.internal.dynalink.linker.GuardedInvocation, arg1: jdk.internal.dynalink.linker.LinkRequest, arg2: jdk.internal.dynalink.linker.LinkerServices): jdk.internal.dynalink.linker.GuardedInvocation
             }
             class DynamicLinker {
-                constructor(arg0: jdk.internal.dynalink.linker.LinkerServices, arg1: jdk.internal.dynalink.GuardedInvocationFilter, arg2: int, arg3: boolean, arg4: int)
+                constructor(arg0: jdk.internal.dynalink.linker.LinkerServices, arg1: jdk.internal.dynalink.GuardedInvocationFilter | jdk.internal.dynalink.GuardedInvocationFilter$$Lambda, arg2: int, arg3: boolean, arg4: int)
                 public link<T extends jdk.internal.dynalink.RelinkableCallSite>(arg0: T): T
                 public getLinkerServices<T extends jdk.internal.dynalink.RelinkableCallSite>(): jdk.internal.dynalink.linker.LinkerServices
                 public static getLinkedCallSiteLocation<T extends jdk.internal.dynalink.RelinkableCallSite>(): java.lang.StackTraceElement
@@ -9078,7 +9078,7 @@ declare namespace jdk {
                 }
                 class TypeConverterFactory {
                     static IDENTITY_CONVERSION: java.lang.invoke.MethodHandle
-                    public constructor(arg0: java.lang.Iterable<jdk.internal.dynalink.linker.GuardingTypeConverterFactory>, arg1: jdk.internal.dynalink.linker.MethodTypeConversionStrategy)
+                    public constructor(arg0: java.lang.Iterable<jdk.internal.dynalink.linker.GuardingTypeConverterFactory>, arg1: jdk.internal.dynalink.linker.MethodTypeConversionStrategy | jdk.internal.dynalink.linker.MethodTypeConversionStrategy$$Lambda)
                     public asType(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.invoke.MethodType): java.lang.invoke.MethodHandle
                     public canConvert(arg0: java.lang.Class<any>, arg1: java.lang.Class<any>): boolean
                     public compareConversion(arg0: java.lang.Class<any>, arg1: java.lang.Class<any>, arg2: java.lang.Class<any>): any
@@ -9091,7 +9091,7 @@ declare namespace jdk {
                     static access$000(arg0: java.lang.Class): java.lang.ClassLoader
                 }
                 class LinkerServicesImpl implements jdk.internal.dynalink.linker.LinkerServices {
-                    public constructor(arg0: jdk.internal.dynalink.support.TypeConverterFactory, arg1: jdk.internal.dynalink.linker.GuardingDynamicLinker, arg2: jdk.internal.dynalink.linker.MethodHandleTransformer)
+                    public constructor(arg0: jdk.internal.dynalink.support.TypeConverterFactory, arg1: jdk.internal.dynalink.linker.GuardingDynamicLinker | jdk.internal.dynalink.linker.GuardingDynamicLinker$$Lambda, arg2: jdk.internal.dynalink.linker.MethodHandleTransformer | jdk.internal.dynalink.linker.MethodHandleTransformer$$Lambda)
                     public canConvert(arg0: java.lang.Class<any>, arg1: java.lang.Class<any>): boolean
                     public asType(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.invoke.MethodType): java.lang.invoke.MethodHandle
                     public asTypeLosslessReturn(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.invoke.MethodType): java.lang.invoke.MethodHandle

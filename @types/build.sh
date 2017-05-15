@@ -7,7 +7,7 @@ set -xe
 
 cd $DIR/jdk
 
-rm -f index.js && touch index.js
+rm -f ../isLambda.js && touch ../isLambda.js
 
 line0=$(find $JAVA_HOME -name "*.jar" | grep rt.jar)
 lineN=$(find $JAVA_HOME -name "*.jar" | grep -v rt.jar | grep -v sa-jdi.jar | grep -v tools.jar)

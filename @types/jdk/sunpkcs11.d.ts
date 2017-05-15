@@ -425,9 +425,9 @@ declare namespace sun {
                 public equals(arg0: java.lang.Object): boolean
                 public hashCode(): int
                 uninitToken(arg0: sun.security.pkcs11.Token): void
-                public login(arg0: javax.security.auth.Subject, arg1: javax.security.auth.callback.CallbackHandler): void
+                public login(arg0: javax.security.auth.Subject, arg1: javax.security.auth.callback.CallbackHandler | javax.security.auth.callback.CallbackHandler$$Lambda): void
                 public logout(): void
-                public setCallbackHandler(arg0: javax.security.auth.callback.CallbackHandler): void
+                public setCallbackHandler(arg0: javax.security.auth.callback.CallbackHandler | javax.security.auth.callback.CallbackHandler$$Lambda): void
                 static access$100(arg0: sun.security.pkcs11.SunPKCS11, arg1: sun.security.pkcs11.wrapper.CK_SLOT_INFO): void
                 static access$400(arg0: sun.security.pkcs11.SunPKCS11, arg1: any): void
                 static access$500(arg0: sun.security.pkcs11.SunPKCS11, arg1: any): void
@@ -775,7 +775,7 @@ declare namespace sun {
                     public C_GetTokenInfo(arg0: long): sun.security.pkcs11.wrapper.CK_TOKEN_INFO
                     public C_GetMechanismList(arg0: long): long[]
                     public C_GetMechanismInfo(arg0: long, arg1: long): sun.security.pkcs11.wrapper.CK_MECHANISM_INFO
-                    public C_OpenSession(arg0: long, arg1: long, arg2: java.lang.Object, arg3: sun.security.pkcs11.wrapper.CK_NOTIFY): long
+                    public C_OpenSession(arg0: long, arg1: long, arg2: java.lang.Object, arg3: sun.security.pkcs11.wrapper.CK_NOTIFY | sun.security.pkcs11.wrapper.CK_NOTIFY$$Lambda): long
                     public C_CloseSession(arg0: long): void
                     public C_GetSessionInfo(arg0: long): sun.security.pkcs11.wrapper.CK_SESSION_INFO
                     public C_GetOperationState(arg0: long): byte[]

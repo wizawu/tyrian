@@ -112,7 +112,6 @@ function generateTsxHTML(options) {
             try {
                 require(module_1);
                 var html = global._tsx_html;
-                console.log(html);
                 if (typeof html !== "undefined") {
                     try {
                         fs.writeFileSync(filepath, server_1.renderToStaticMarkup(html));

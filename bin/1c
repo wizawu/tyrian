@@ -4,6 +4,6 @@ var fs = require("fs")
 var path = require("path")
 var spawnSync = require("child_process").spawnSync
 
-var main = path.dirname(path.dirname(fs.realpathSync(process.argv[1]))) + "/src/main.js"
+var main = path.dirname(path.dirname(fs.realpathSync(process.argv[1]))) + "/dist/main.js"
 var child = spawnSync("node", [main].concat(process.argv.slice(2)), { stdio: "inherit" })
 process.exit(child.status)

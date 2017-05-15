@@ -5,6 +5,7 @@ var fs = require("fs");
 var path = require("path");
 var child_process_1 = require("child_process");
 var parseClass_1 = require("./parseClass");
+var lambda = require("./lambda");
 function commandOutput(command, args) {
     var child = child_process_1.spawnSync(command, args, { stdio: "pipe" });
     return child.stdout.toString() + child.stderr.toString();
@@ -41,6 +42,7 @@ exports["default"] = parseJAR;
 function generateTsDefinition(jar) {
     var target = path.basename(jar).replace(/\.jar$/, ".d.ts");
     fs.writeFileSync(target, parseJAR(jar).replace(/^\s+\n/gm, ""));
+    Object.keys(lambda.isLambda).forEach(function (k) { return lambda.addLambdaToFile(fs.realpathSync("./index.js"), k); });
 }
 exports.generateTsDefinition = generateTsDefinition;
 function getTopPackages(jar) {

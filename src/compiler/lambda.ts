@@ -13,6 +13,7 @@ export function addLambdaToFile(file: string, key: string) {
         fs.appendFileSync(file, `
 module.exports.isLambda = module.exports.isLambda || {}
 module.exports.isLambda["${key}"] = true
-        `)
+`
+        )
     }
 }

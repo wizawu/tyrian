@@ -1,6 +1,7 @@
 "use strict";
 exports.__esModule = true;
 var fs = require("fs");
+var os = require("os");
 var path = require("path");
 var build_1 = require("./commands/build");
 var env_1 = require("./commands/env");
@@ -20,7 +21,7 @@ else if (command === "version") {
     process.exit(const_1.EXIT_STATUS.OK);
 }
 var envstat = "";
-var envfile = "/tmp/1c-env-" + (Date.now() / 3600000).toFixed();
+var envfile = os.tmpdir() + "/1c-env-" + (Date.now() / 3600000).toFixed();
 if (command === "env" || !fs.existsSync(envfile)) {
     envstat = env_1["default"]();
     fs.writeFileSync(envfile, envstat);

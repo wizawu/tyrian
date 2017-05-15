@@ -10,6 +10,7 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
 exports.__esModule = true;
 var object_path_1 = require("object-path");
 var const_1 = require("../const");
+var lambda = require("./lambda");
 var UNSUPPORTED_MODIFIERS = [
     "abstract",
     "final",
@@ -19,7 +20,7 @@ var UNSUPPORTED_MODIFIERS = [
     "transient",
     "volatile",
 ];
-function safeType(type) {
+function safeType(type, allowLambda) {
     if (/java\.util\.function/.test(type))
         return "any";
     if (/>\.\w+$/.test(type))
@@ -30,6 +31,10 @@ function safeType(type) {
         return "string";
     if (type === "java.lang.Boolean")
         return "boolean";
+    var classID = type.indexOf("<") < 0 ? type : type.substring(0, type.indexOf("<"));
+    if (allowLambda && lambda.isLambda[classID]) {
+        return type + " | " + type.replace(new RegExp("(" + classID + ")"), "$1$$$Lambda");
+    }
     return type;
 }
 function nextToken(ctx) {
@@ -93,7 +98,7 @@ function parseParameters(ctx, line) {
                 line += "...arg" + i + ": " + token.value.replace("...", "[]");
             }
             else {
-                line += "arg" + i + ": " + safeType(token.value);
+                line += "arg" + i + ": " + safeType(token.value, true);
             }
             i += 1;
         }
@@ -256,6 +261,7 @@ function default_1(source, pkg) {
                             buffer.push({ line: buffer[0].line.replace(classID, classID + "$$$Lambda") });
                             buffer.push({ line: buffer[1].line.replace(buffer[1].name + "(", "(") });
                             buffer.push({ line: buffer[2].line });
+                            lambda.addLambda(ns + "." + classID);
                         }
                         object_path_1.get(pkg, ns)[className] = buffer.map(function (b) { return b.line; }).join("\n");
                     }

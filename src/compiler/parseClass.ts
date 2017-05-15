@@ -1,8 +1,8 @@
 /// <reference path="../index.d.ts" />
 
 import { get, ensureExists } from "object-path"
-import { addLambda } from "./lambda"
 import { EXIT_STATUS } from "../const"
+import * as lambda from "./lambda"
 
 const UNSUPPORTED_MODIFIERS = [
     "abstract",
@@ -14,7 +14,7 @@ const UNSUPPORTED_MODIFIERS = [
     "volatile",
 ]
 
-function safeType(type: string): string {
+function safeType(type: string, allowLambda?: boolean): string {
     // java.util.function.*
     if (/java\.util\.function/.test(type)) return "any"
     // XXX<T>.YYY
@@ -23,6 +23,11 @@ function safeType(type: string): string {
     if (type.indexOf("$") >= 0) return "any"
     if (type === "java.lang.String") return "string"
     if (type === "java.lang.Boolean") return "boolean"
+
+    let classID = type.indexOf("<") < 0 ? type : type.substring(0, type.indexOf("<"))
+    if (allowLambda && lambda.isLambda[classID]) {
+        return `${type} | ${type.replace(new RegExp(`(${classID})`), "$1$$$Lambda")}`
+    }
     return type
 }
 
@@ -82,7 +87,7 @@ function parseParameters(ctx: Context, line: string): string {
             if (token.value.substring(token.value.length - 3) === "...") {
                 line += `...arg${i}: ${token.value.replace("...", "[]")}`
             } else {
-                line += `arg${i}: ${safeType(token.value)}`
+                line += `arg${i}: ${safeType(token.value, true)}`
             }
             i += 1
         }
@@ -240,7 +245,7 @@ export default function (source: string, pkg: any) {
                             buffer.push({ line: buffer[0].line.replace(classID, `${classID}$$$Lambda`) })
                             buffer.push({ line: buffer[1].line.replace(buffer[1].name + "(", "(") })
                             buffer.push({ line: buffer[2].line })
-                            addLambda(ns + "." + classID)
+                            lambda.addLambda(ns + "." + classID)
                         }
                         get(pkg, ns)[className] = buffer.map(b => b.line).join("\n")
                     }

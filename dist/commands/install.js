@@ -3,6 +3,7 @@ exports.__esModule = true;
 var chalk = require("chalk");
 var crypto = require("crypto");
 var fs = require("fs");
+var os = require("os");
 var child_process_1 = require("child_process");
 var parseJAR_1 = require("../compiler/parseJAR");
 var init_1 = require("./init");
@@ -30,7 +31,7 @@ function default_1(instdir) {
             });
         });
         var deps = Object.keys(mvnDependencies_1).map(function (key) { return "compile '" + key + ":" + mvnDependencies_1[key] + "'"; });
-        var buildGradlePath = "/tmp/build.gradle." + crypto.randomBytes(16).toString("hex");
+        var buildGradlePath = os.tmpdir() + "/build.gradle." + crypto.randomBytes(16).toString("hex");
         fs.writeFileSync(buildGradlePath, buildGradle(deps.join("\n  ")));
         child = child_process_1.spawnSync("gradle", ["-b", buildGradlePath, "--no-daemon", "install"], { stdio: "inherit" });
         if (child.status !== 0)

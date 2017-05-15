@@ -1,6 +1,7 @@
 /// <reference path="../index.d.ts" />
 
 import { get, ensureExists } from "object-path"
+import { addLambda } from "./lambda"
 import { EXIT_STATUS } from "../const"
 
 const UNSUPPORTED_MODIFIERS = [
@@ -239,6 +240,7 @@ export default function (source: string, pkg: any) {
                             buffer.push({ line: buffer[0].line.replace(classID, `${classID}$$$Lambda`) })
                             buffer.push({ line: buffer[1].line.replace(buffer[1].name + "(", "(") })
                             buffer.push({ line: buffer[2].line })
+                            addLambda(ns + "." + classID)
                         }
                         get(pkg, ns)[className] = buffer.map(b => b.line).join("\n")
                     }

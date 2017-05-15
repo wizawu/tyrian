@@ -2,7 +2,9 @@ import * as chalk from "chalk"
 import * as fs from "fs"
 import * as path from "path"
 import { spawnSync } from "child_process"
+
 import parseClass from "./parseClass"
+import * as lambda from "./lambda"
 
 function commandOutput(command: string, args: string[]): string {
     let child = spawnSync(command, args, { stdio: "pipe" })
@@ -44,6 +46,7 @@ export default parseJAR
 export function generateTsDefinition(jar: string) {
     let target = path.basename(jar).replace(/\.jar$/, ".d.ts")
     fs.writeFileSync(target, parseJAR(jar).replace(/^\s+\n/gm, ""))
+    Object.keys(lambda.isLambda).forEach(k => lambda.addLambdaToFile(fs.realpathSync("./index.js"), k))
 }
 
 export function getTopPackages(jar: string): string[] {

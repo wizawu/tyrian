@@ -1,6 +1,12 @@
 import * as fs from "fs"
 
-export const isLambda = {}
+export let isLambda = {}
+
+try {
+    isLambda = require("../../@types/jdk/index.js").isLambda || {}
+} catch (ex) {
+    console.log(ex.message)
+}
 
 export function addLambda(key: string) {
     isLambda[key] = true

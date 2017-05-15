@@ -65,6 +65,9 @@ export default function (instdir: string) {
     if (!fs.existsSync("lib")) fs.mkdirSync("lib")
     if (!fs.existsSync("lib/@types")) fs.mkdirSync("lib/@types")
     fs.readdirSync("lib").filter(jar => /\.jar$/.test(jar)).map(jar => {
+        parseJAR(`lib/${jar}`)
+    })
+    fs.readdirSync("lib").filter(jar => /\.jar$/.test(jar)).map(jar => {
         let filename = "lib/@types/" + jar.replace(/\.jar$/, ".d.ts")
         fs.writeFileSync(filename, parseJAR(`lib/${jar}`))
         console.log(chalk.green("Generated " + filename))

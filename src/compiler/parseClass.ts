@@ -236,11 +236,9 @@ export default function (source: string, pkg: any) {
                             // interface with only 1 method
                             let classID = className.indexOf("<") < 0 ? className :
                                 className.substring(0, className.indexOf("<"))
-                            buffer.push({ line: buffer[0].line.replace(classID, `${classID}$_0`) })
+                            buffer.push({ line: buffer[0].line.replace(classID, `${classID}$$$Lambda`) })
                             buffer.push({ line: buffer[1].line.replace(buffer[1].name + "(", "(") })
                             buffer.push({ line: buffer[2].line })
-                            buffer[0].line = buffer[0].line.replace(classID, `${classID}$_1`)
-                            buffer.push({ line: `type ${classID} = ${classID}$_0 | ${classID}$_1\n` })
                         }
                         get(pkg, ns)[className] = buffer.map(b => b.line).join("\n")
                     }

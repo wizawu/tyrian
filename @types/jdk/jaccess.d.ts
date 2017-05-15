@@ -180,13 +180,12 @@ declare namespace com {
                         public remove(arg0: java.lang.Class, arg1: java.util.EventListener): void
                         public toString(): string
                     }
-                    interface GUIInitializedListener$_1 extends java.util.EventListener {
+                    interface GUIInitializedListener extends java.util.EventListener {
                         guiInitialized(): void
                     }
-                    interface GUIInitializedListener$_0 extends java.util.EventListener {
+                    interface GUIInitializedListener$$Lambda extends java.util.EventListener {
                         (): void
                     }
-                    type GUIInitializedListener = GUIInitializedListener$_0 | GUIInitializedListener$_1
                     class GUIInitializedMulticaster extends java.awt.AWTEventMulticaster implements com.sun.java.accessibility.util.GUIInitializedListener {
                         protected constructor(arg0: java.util.EventListener, arg1: java.util.EventListener)
                         public guiInitialized(): void

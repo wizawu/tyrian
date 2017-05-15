@@ -45,6 +45,9 @@ function default_1(instdir) {
     if (!fs.existsSync("lib/@types"))
         fs.mkdirSync("lib/@types");
     fs.readdirSync("lib").filter(function (jar) { return /\.jar$/.test(jar); }).map(function (jar) {
+        parseJAR_1["default"]("lib/" + jar);
+    });
+    fs.readdirSync("lib").filter(function (jar) { return /\.jar$/.test(jar); }).map(function (jar) {
         var filename = "lib/@types/" + jar.replace(/\.jar$/, ".d.ts");
         fs.writeFileSync(filename, parseJAR_1["default"]("lib/" + jar));
         console.log(chalk.green("Generated " + filename));

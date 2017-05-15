@@ -42,7 +42,7 @@ exports["default"] = parseJAR;
 function generateTsDefinition(jar) {
     var target = path.basename(jar).replace(/\.jar$/, ".d.ts");
     fs.writeFileSync(target, parseJAR(jar).replace(/^\s+\n/gm, ""));
-    Object.keys(lambda.isLambda).forEach(function (k) { return lambda.addLambdaToFile(fs.realpathSync("./index.js"), k); });
+    Object.keys(lambda.isLambda).forEach(function (k) { return lambda.addLambdaToFile(fs.realpathSync("../isLambda.js"), k); });
 }
 exports.generateTsDefinition = generateTsDefinition;
 function getTopPackages(jar) {

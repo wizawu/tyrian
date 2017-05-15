@@ -46,7 +46,7 @@ export default parseJAR
 export function generateTsDefinition(jar: string) {
     let target = path.basename(jar).replace(/\.jar$/, ".d.ts")
     fs.writeFileSync(target, parseJAR(jar).replace(/^\s+\n/gm, ""))
-    Object.keys(lambda.isLambda).forEach(k => lambda.addLambdaToFile(fs.realpathSync("./index.js"), k))
+    Object.keys(lambda.isLambda).forEach(k => lambda.addLambdaToFile(fs.realpathSync("../isLambda.js"), k))
 }
 
 export function getTopPackages(jar: string): string[] {

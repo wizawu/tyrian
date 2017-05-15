@@ -3,7 +3,7 @@ import * as fs from "fs"
 export let isLambda = {}
 
 try {
-    isLambda = require("../../@types/jdk/index.js").isLambda || {}
+    isLambda = require("../../@types/isLambda.js") || {}
 } catch (ex) {
     console.log(ex.message)
 }
@@ -14,12 +14,8 @@ export function addLambda(key: string) {
 
 export function addLambdaToFile(file: string, key: string) {
     delete require.cache[file]
-    let isLambda = require(file).isLambda || {}
+    let isLambda = require(file) || {}
     if (!isLambda[key]) {
-        fs.appendFileSync(file, `
-module.exports.isLambda = module.exports.isLambda || {}
-module.exports.isLambda["${key}"] = true
-`
-        )
+        fs.appendFileSync(file, `module.exports["${key}"] = true\n`)
     }
 }

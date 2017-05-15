@@ -1,6 +1,7 @@
 import * as chalk from "chalk"
 import * as crypto from "crypto"
 import * as fs from "fs"
+import * as os from "os"
 import { spawnSync } from "child_process"
 
 import parseJAR from "../compiler/parseJAR"
@@ -50,7 +51,7 @@ export default function (instdir: string) {
 
         // Generate build.gradle
         let deps = Object.keys(mvnDependencies).map(key => `compile '${key}:${mvnDependencies[key]}'`)
-        let buildGradlePath = "/tmp/build.gradle." + crypto.randomBytes(16).toString("hex")
+        let buildGradlePath = `${os.tmpdir()}/build.gradle.` + crypto.randomBytes(16).toString("hex")
         fs.writeFileSync(buildGradlePath, buildGradle(deps.join("\n  ")))
 
         // gradle install

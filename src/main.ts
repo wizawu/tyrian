@@ -1,4 +1,5 @@
 import * as fs from "fs"
+import * as os from "os"
 import * as path from "path"
 
 import build from "./commands/build"
@@ -21,7 +22,7 @@ if (command === "help") {
 }
 
 let envstat: string | undefined = ""
-let envfile = `/tmp/1c-env-${(Date.now() / 3600000).toFixed()}`
+let envfile = `${os.tmpdir()}/1c-env-${(Date.now() / 3600000).toFixed()}`
 if (command === "env" || !fs.existsSync(envfile)) {
     envstat = env()
     fs.writeFileSync(envfile, envstat)

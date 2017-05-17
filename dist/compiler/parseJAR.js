@@ -42,7 +42,7 @@ exports["default"] = parseJAR;
 function generateJDKDefinition(root) {
     var jars = process.argv.slice(1);
     jars.forEach(function (jar) { return parseJAR(jar); });
-    fs.writeFileSync(fs.realpathSync(root + "/src/compiler/isLambda.js"), "module.exports = " + JSON.stringify(lambda.isLambda, null, 4));
+    fs.writeFileSync(fs.realpathSync(root + "/dist/compiler/isLambda.js"), "module.exports = " + JSON.stringify(lambda.isLambda, null, 4));
     jars.forEach(function (jar) {
         var target = path.basename(jar).replace(/\.jar$/, ".d.ts");
         fs.writeFileSync(target, parseJAR(jar).replace(/^\s+\n/gm, ""));

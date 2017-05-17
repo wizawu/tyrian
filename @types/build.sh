@@ -5,8 +5,8 @@ set -xe
 
 # create a new isLambda.js
 
-rm -f $dir/../src/compiler/isLambda.js
-touch $dir/../src/compiler/isLambda.js
+rm -f $dir/../dist/compiler/isLambda.js
+touch $dir/../dist/compiler/isLambda.js
 
 # build jdk
 

@@ -1,7 +1,7 @@
 export let isLambda = {}
 
 try {
-    isLambda = require("../../@types/isLambda.js") || {}
+    isLambda = require("./isLambda") || {}
 } catch (ex) {
     console.log(ex.message)
 }

@@ -43,11 +43,11 @@ function parseJAR(jar: string): string {
 
 export default parseJAR
 
-export function generateJDKDefinition() {
+export function generateJDKDefinition(root: string) {
     let jars = process.argv.slice(1)
     jars.forEach(jar => parseJAR(jar))
     fs.writeFileSync(
-        fs.realpathSync("../isLambda.js"),
+        fs.realpathSync(`${root}/src/compiler/isLambda.js`),
         `module.exports = ${JSON.stringify(lambda.isLambda, null, 4)}`
     )
     jars.forEach(jar => {

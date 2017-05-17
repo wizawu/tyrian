@@ -115,6 +115,7 @@ function generateTsxHTML(options) {
                 if (typeof html !== "undefined") {
                     try {
                         fs.writeFileSync(filepath, server_1.renderToStaticMarkup(html));
+                        console.log(chalk.green("[" + new Date().toTimeString().substring(0, 8) + "] emitted " + filepath));
                     }
                     catch (ex) {
                         console.error(chalk.yellow(ex.message));

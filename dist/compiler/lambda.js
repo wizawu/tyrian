@@ -2,7 +2,7 @@
 exports.__esModule = true;
 exports.isLambda = {};
 try {
-    exports.isLambda = require("./isLambda") || {};
+    exports.isLambda = require("./isLambda.js") || {};
 }
 catch (ex) {
     console.log(ex.message);

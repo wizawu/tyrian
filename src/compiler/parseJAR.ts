@@ -43,10 +43,17 @@ function parseJAR(jar: string): string {
 
 export default parseJAR
 
-export function generateTsDefinition(jar: string) {
-    let target = path.basename(jar).replace(/\.jar$/, ".d.ts")
-    fs.writeFileSync(target, parseJAR(jar).replace(/^\s+\n/gm, ""))
-    Object.keys(lambda.isLambda).forEach(k => lambda.addLambdaToFile(fs.realpathSync("../isLambda.js"), k))
+export function generateJDKDefinition() {
+    let jars = process.argv.slice(1)
+    jars.forEach(jar => parseJAR(jar))
+    fs.writeFileSync(
+        fs.realpathSync("../isLambda.js"),
+        `module.exports = ${JSON.stringify(lambda.isLambda, null, 4)}`
+    )
+    jars.forEach(jar => {
+        let target = path.basename(jar).replace(/\.jar$/, ".d.ts")
+        fs.writeFileSync(target, parseJAR(jar).replace(/^\s+\n/gm, ""))
+    })
 }
 
 export function getTopPackages(jar: string): string[] {

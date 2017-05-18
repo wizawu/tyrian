@@ -125,20 +125,25 @@ abstract class JDBCConnection implements ConnectionImpl {
             `SELECT * FROM ${tableName} WHERE ${primary} = ?`,
             [obj[primary]]
         )
-        if (exists) {
-            this.execute(
+        this.connection.setAutoCommit(false)
+        try {
+            exists && this.execute(
                 `DELETE FROM ${tableName} WHERE ${primary} = ?`,
                 [obj[primary]]
             )
+            let keys = Object.keys(obj).join(",")
+            let values = Object.keys(obj).map(() => "?").join(",")
+            this.execute(
+                `INSERT INTO ${tableName}(${keys}) VALUES(${values})`,
+                Object.keys(obj).map(key => obj[key])
+            )
+            this.connection.commit()
+        } catch (ex) {
+            this.connection.rollback()
+            throw ex
+        } finally {
+            this.connection.setAutoCommit(true)
         }
-
-        let keys = Object.keys(obj).join(",")
-        let values = Object.keys(obj).map(() => "?").join(",")
-        let parameters = Object.keys(obj).map(key => obj[key])
-        this.execute(
-            `INSERT INTO ${tableName}(${keys}) VALUES(${values})`,
-            parameters
-        )
     }
 
     execute(sql: string, parameters: any[]) {

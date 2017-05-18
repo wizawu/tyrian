@@ -116,13 +116,21 @@ var JDBCConnection = (function () {
     };
     JDBCConnection.prototype.save = function (tableName, obj, primary) {
         var exists = !!this.one("SELECT * FROM " + tableName + " WHERE " + primary + " = ?", [obj[primary]]);
-        if (exists) {
-            this.execute("DELETE FROM " + tableName + " WHERE " + primary + " = ?", [obj[primary]]);
+        this.connection.setAutoCommit(false);
+        try {
+            exists && this.execute("DELETE FROM " + tableName + " WHERE " + primary + " = ?", [obj[primary]]);
+            var keys = Object.keys(obj).join(",");
+            var values = Object.keys(obj).map(function () { return "?"; }).join(",");
+            this.execute("INSERT INTO " + tableName + "(" + keys + ") VALUES(" + values + ")", Object.keys(obj).map(function (key) { return obj[key]; }));
+            this.connection.commit();
         }
-        var keys = Object.keys(obj).join(",");
-        var values = Object.keys(obj).map(function () { return "?"; }).join(",");
-        var parameters = Object.keys(obj).map(function (key) { return obj[key]; });
-        this.execute("INSERT INTO " + tableName + "(" + keys + ") VALUES(" + values + ")", parameters);
+        catch (ex) {
+            this.connection.rollback();
+            throw ex;
+        }
+        finally {
+            this.connection.setAutoCommit(true);
+        }
     };
     JDBCConnection.prototype.execute = function (sql, parameters) {
         var statement = this.prepareStatement(sql, parameters);

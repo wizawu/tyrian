@@ -1,9 +1,7 @@
 *.log
 *.map
 *.swp
-.gradle
 build
-build.gradle
 lib
 node_modules
 tsconfig.json

@@ -1,9 +1,9 @@
 {
   "name": "orsql",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "repository": "github:wizawu/orsql",
-  "main": "src/index.js",
-  "types": "src/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "mvnDependencies": [
     "mysql:mysql-connector-java:6.0.5",
     "org.assertj:assertj-core:2.6.0",

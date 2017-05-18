@@ -1,10 +1,10 @@
 .PHONY: build test watch clean install
 
 build: install
-	tsc -d -p .
+	tsc -d -p . --outDir dist
 
 watch:
-	tsc -d -p . -w
+	tsc -d -p . --outDir dist -w
 
 test: build
 	1c build test/TestMySQLConnection.j.ts

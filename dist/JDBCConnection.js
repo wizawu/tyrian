@@ -1,8 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var util_1 = require("./util");
+var Semaphore = java.util.concurrent.Semaphore;
 var JDBCConnection = (function () {
     function JDBCConnection() {
+        this.mutex = new Semaphore(1);
     }
     JDBCConnection.prototype.prepareStatement = function (sql, parameters) {
         if (this.connection.isClosed())
@@ -115,21 +117,31 @@ var JDBCConnection = (function () {
         return result;
     };
     JDBCConnection.prototype.save = function (tableName, obj, primary) {
+        var _this = this;
         var exists = !!this.one("SELECT * FROM " + tableName + " WHERE " + primary + " = ?", [obj[primary]]);
-        this.connection.setAutoCommit(false);
-        try {
-            exists && this.execute("DELETE FROM " + tableName + " WHERE " + primary + " = ?", [obj[primary]]);
+        var insert = function () {
             var keys = Object.keys(obj).join(",");
             var values = Object.keys(obj).map(function () { return "?"; }).join(",");
-            this.execute("INSERT INTO " + tableName + "(" + keys + ") VALUES(" + values + ")", Object.keys(obj).map(function (key) { return obj[key]; }));
-            this.connection.commit();
+            _this.execute("INSERT INTO " + tableName + "(" + keys + ") VALUES(" + values + ")", Object.keys(obj).map(function (key) { return obj[key]; }));
+        };
+        if (exists) {
+            this.mutex.acquire();
+            this.connection.setAutoCommit(false);
+            try {
+                this.execute("DELETE FROM " + tableName + " WHERE " + primary + " = ?", [obj[primary]]);
+                insert();
+                this.connection.commit();
+            }
+            catch (ex) {
+                this.connection.rollback();
+            }
+            finally {
+                this.connection.setAutoCommit(true);
+                this.mutex.release();
+            }
         }
-        catch (ex) {
-            this.connection.rollback();
-            throw ex;
-        }
-        finally {
-            this.connection.setAutoCommit(true);
+        else {
+            insert();
         }
     };
     JDBCConnection.prototype.execute = function (sql, parameters) {

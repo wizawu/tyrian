@@ -1,7 +1,7 @@
 import ConnectionImpl from "./ConnectionImpl"
 import { resultSetToJSON } from "./util"
 
-type PreparedStatement = java.sql.PreparedStatement
+const Semaphore = java.util.concurrent.Semaphore
 
 interface Column {
     COLUMN_NAME: string
@@ -12,9 +12,11 @@ abstract class JDBCConnection implements ConnectionImpl {
     driver: java.sql.Driver
     url: string
 
-    private prepareStatement(sql: string, parameters: any[]): PreparedStatement {
+    private mutex = new Semaphore(1)
+
+    private prepareStatement(sql: string, parameters: any[]) {
         if (this.connection.isClosed()) this.connect()
-        let statement = this.connection.prepareStatement(sql) as PreparedStatement
+        let statement = this.connection.prepareStatement(sql)
         parameters.forEach((parameter, i) => statement.setObject(i + 1, parameter))
         return statement
     }
@@ -125,24 +127,32 @@ abstract class JDBCConnection implements ConnectionImpl {
             `SELECT * FROM ${tableName} WHERE ${primary} = ?`,
             [obj[primary]]
         )
-        this.connection.setAutoCommit(false)
-        try {
-            exists && this.execute(
-                `DELETE FROM ${tableName} WHERE ${primary} = ?`,
-                [obj[primary]]
-            )
+        let insert = () => {
             let keys = Object.keys(obj).join(",")
             let values = Object.keys(obj).map(() => "?").join(",")
             this.execute(
                 `INSERT INTO ${tableName}(${keys}) VALUES(${values})`,
                 Object.keys(obj).map(key => obj[key])
             )
-            this.connection.commit()
-        } catch (ex) {
-            this.connection.rollback()
-            throw ex
-        } finally {
-            this.connection.setAutoCommit(true)
+        }
+        if (exists) {
+            this.mutex.acquire()
+            this.connection.setAutoCommit(false)
+            try {
+                this.execute(
+                    `DELETE FROM ${tableName} WHERE ${primary} = ?`,
+                    [obj[primary]]
+                )
+                insert()
+                this.connection.commit()
+            } catch (ex) {
+                this.connection.rollback()
+            } finally {
+                this.connection.setAutoCommit(true)
+                this.mutex.release()
+            }
+        } else {
+            insert()
         }
     }
 

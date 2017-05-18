@@ -3,6 +3,7 @@ declare abstract class JDBCConnection implements ConnectionImpl {
     connection: java.sql.Connection;
     driver: java.sql.Driver;
     url: string;
+    private mutex;
     private prepareStatement(sql, parameters);
     private indexName(tableName, columnNames, unique);
     connect(): void;

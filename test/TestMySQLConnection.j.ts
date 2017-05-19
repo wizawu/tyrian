@@ -10,7 +10,7 @@ function test(testCase: any) {
         port: 3306,
         database: "test",
         user: "wizawu",
-        password: "WIZAWU3306",
+        password: "",
         useSSL: false,
     }
     let connection = new MySQLConnection(options)

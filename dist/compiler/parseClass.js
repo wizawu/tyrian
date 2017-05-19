@@ -255,7 +255,9 @@ function default_1(source, pkg) {
                         object_path_1.get(pkg, ns)[className] = "type Object = any";
                     }
                     else {
-                        if (isInterface && buffer.length === 3 && buffer[1].line.indexOf("(") > 0) {
+                        if (isInterface && buffer.length === 3 &&
+                            buffer[1].line.indexOf("(") > 0 &&
+                            buffer[0].line.indexOf(" extends ") < 0) {
                             var classID = className.indexOf("<") < 0 ? className :
                                 className.substring(0, className.indexOf("<"));
                             buffer.push({ line: buffer[0].line.replace(classID, classID + "$$$Lambda") });

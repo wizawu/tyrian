@@ -1129,8 +1129,8 @@ declare namespace sun {
                 public setEnabledProtocols(arg0: java.lang.String[]): void
                 public getEnabledProtocols(): java.lang.String[]
                 public setSoTimeout(arg0: int): void
-                public addHandshakeCompletedListener(arg0: javax.net.ssl.HandshakeCompletedListener | javax.net.ssl.HandshakeCompletedListener$$Lambda): void
-                public removeHandshakeCompletedListener(arg0: javax.net.ssl.HandshakeCompletedListener | javax.net.ssl.HandshakeCompletedListener$$Lambda): void
+                public addHandshakeCompletedListener(arg0: javax.net.ssl.HandshakeCompletedListener): void
+                public removeHandshakeCompletedListener(arg0: javax.net.ssl.HandshakeCompletedListener): void
                 public getSSLParameters(): javax.net.ssl.SSLParameters
                 public setSSLParameters(arg0: javax.net.ssl.SSLParameters): void
                 receivedChangeCipherSpec(): boolean

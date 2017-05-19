@@ -100,8 +100,8 @@ declare namespace com {
                         static getComponentAt(arg0: java.awt.Container, arg1: java.awt.Point): java.awt.Component
                         public static getAccessibleAt(arg0: java.awt.Point): javax.accessibility.Accessible
                         public static isGUIInitialized(): boolean
-                        public static addGUIInitializedListener(arg0: com.sun.java.accessibility.util.GUIInitializedListener | com.sun.java.accessibility.util.GUIInitializedListener$$Lambda): void
-                        public static removeGUIInitializedListener(arg0: com.sun.java.accessibility.util.GUIInitializedListener | com.sun.java.accessibility.util.GUIInitializedListener$$Lambda): void
+                        public static addGUIInitializedListener(arg0: com.sun.java.accessibility.util.GUIInitializedListener): void
+                        public static removeGUIInitializedListener(arg0: com.sun.java.accessibility.util.GUIInitializedListener): void
                         public static addTopLevelWindowListener(arg0: com.sun.java.accessibility.util.TopLevelWindowListener): void
                         public static removeTopLevelWindowListener(arg0: com.sun.java.accessibility.util.TopLevelWindowListener): void
                         public static getCurrentMousePosition(): java.awt.Point
@@ -129,8 +129,8 @@ declare namespace com {
                         public getAccessibleChildrenCount(): int
                         public getAccessibleChild(arg0: int): javax.accessibility.Accessible
                         public getLocale(): java.util.Locale
-                        public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
-                        public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+                        public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+                        public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
                         public getBackground(): java.awt.Color
                         public setBackground(arg0: java.awt.Color): void
                         public getForeground(): java.awt.Color
@@ -167,8 +167,8 @@ declare namespace com {
                         protected static listenerList: com.sun.java.accessibility.util.AccessibilityListenerList
                         protected static accessibilityListener: any
                         public constructor()
-                        public static addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
-                        public static removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+                        public static addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+                        public static removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
                     }
                     class AccessibilityListenerList {
                         protected listenerList: java.lang.Object[]
@@ -183,14 +183,11 @@ declare namespace com {
                     interface GUIInitializedListener extends java.util.EventListener {
                         guiInitialized(): void
                     }
-                    interface GUIInitializedListener$$Lambda extends java.util.EventListener {
-                        (): void
-                    }
                     class GUIInitializedMulticaster extends java.awt.AWTEventMulticaster implements com.sun.java.accessibility.util.GUIInitializedListener {
                         protected constructor(arg0: java.util.EventListener, arg1: java.util.EventListener)
                         public guiInitialized(): void
-                        public static add(arg0: com.sun.java.accessibility.util.GUIInitializedListener | com.sun.java.accessibility.util.GUIInitializedListener$$Lambda, arg1: com.sun.java.accessibility.util.GUIInitializedListener | com.sun.java.accessibility.util.GUIInitializedListener$$Lambda): com.sun.java.accessibility.util.GUIInitializedListener
-                        public static remove(arg0: com.sun.java.accessibility.util.GUIInitializedListener | com.sun.java.accessibility.util.GUIInitializedListener$$Lambda, arg1: com.sun.java.accessibility.util.GUIInitializedListener | com.sun.java.accessibility.util.GUIInitializedListener$$Lambda): com.sun.java.accessibility.util.GUIInitializedListener
+                        public static add(arg0: com.sun.java.accessibility.util.GUIInitializedListener, arg1: com.sun.java.accessibility.util.GUIInitializedListener): com.sun.java.accessibility.util.GUIInitializedListener
+                        public static remove(arg0: com.sun.java.accessibility.util.GUIInitializedListener, arg1: com.sun.java.accessibility.util.GUIInitializedListener): com.sun.java.accessibility.util.GUIInitializedListener
                         protected static addInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener
                         protected static removeInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener
                     }
@@ -224,14 +221,14 @@ declare namespace com {
                         public static removeMouseMotionListener(arg0: java.awt.event.MouseMotionListener): void
                         public static addWindowListener(arg0: java.awt.event.WindowListener): void
                         public static removeWindowListener(arg0: java.awt.event.WindowListener): void
-                        public static addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
-                        public static removeActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
-                        public static addAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$Lambda): void
-                        public static removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$Lambda): void
-                        public static addItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): void
-                        public static removeItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): void
-                        public static addTextListener(arg0: java.awt.event.TextListener | java.awt.event.TextListener$$Lambda): void
-                        public static removeTextListener(arg0: java.awt.event.TextListener | java.awt.event.TextListener$$Lambda): void
+                        public static addActionListener(arg0: java.awt.event.ActionListener): void
+                        public static removeActionListener(arg0: java.awt.event.ActionListener): void
+                        public static addAdjustmentListener(arg0: java.awt.event.AdjustmentListener): void
+                        public static removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener): void
+                        public static addItemListener(arg0: java.awt.event.ItemListener): void
+                        public static removeItemListener(arg0: java.awt.event.ItemListener): void
+                        public static addTextListener(arg0: java.awt.event.TextListener): void
+                        public static removeTextListener(arg0: java.awt.event.TextListener): void
                         static access$002(arg0: boolean): boolean
                         static access$000(): boolean
                         static access$100(): java.awt.event.ComponentListener
@@ -254,40 +251,40 @@ declare namespace com {
                         public constructor()
                         public static addAncestorListener(arg0: javax.swing.event.AncestorListener): void
                         public static removeAncestorListener(arg0: javax.swing.event.AncestorListener): void
-                        public static addCaretListener(arg0: javax.swing.event.CaretListener | javax.swing.event.CaretListener$$Lambda): void
-                        public static removeCaretListener(arg0: javax.swing.event.CaretListener | javax.swing.event.CaretListener$$Lambda): void
+                        public static addCaretListener(arg0: javax.swing.event.CaretListener): void
+                        public static removeCaretListener(arg0: javax.swing.event.CaretListener): void
                         public static addCellEditorListener(arg0: javax.swing.event.CellEditorListener): void
                         public static removeCellEditorListener(arg0: javax.swing.event.CellEditorListener): void
-                        public static addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
-                        public static removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+                        public static addChangeListener(arg0: javax.swing.event.ChangeListener): void
+                        public static removeChangeListener(arg0: javax.swing.event.ChangeListener): void
                         public static addColumnModelListener(arg0: javax.swing.event.TableColumnModelListener): void
                         public static removeColumnModelListener(arg0: javax.swing.event.TableColumnModelListener): void
                         public static addDocumentListener(arg0: javax.swing.event.DocumentListener): void
                         public static removeDocumentListener(arg0: javax.swing.event.DocumentListener): void
                         public static addListDataListener(arg0: javax.swing.event.ListDataListener): void
                         public static removeListDataListener(arg0: javax.swing.event.ListDataListener): void
-                        public static addListSelectionListener(arg0: javax.swing.event.ListSelectionListener | javax.swing.event.ListSelectionListener$$Lambda): void
-                        public static removeListSelectionListener(arg0: javax.swing.event.ListSelectionListener | javax.swing.event.ListSelectionListener$$Lambda): void
+                        public static addListSelectionListener(arg0: javax.swing.event.ListSelectionListener): void
+                        public static removeListSelectionListener(arg0: javax.swing.event.ListSelectionListener): void
                         public static addMenuListener(arg0: javax.swing.event.MenuListener): void
                         public static removeMenuListener(arg0: javax.swing.event.MenuListener): void
                         public static addPopupMenuListener(arg0: javax.swing.event.PopupMenuListener): void
                         public static removePopupMenuListener(arg0: javax.swing.event.PopupMenuListener): void
-                        public static addTableModelListener(arg0: javax.swing.event.TableModelListener | javax.swing.event.TableModelListener$$Lambda): void
-                        public static removeTableModelListener(arg0: javax.swing.event.TableModelListener | javax.swing.event.TableModelListener$$Lambda): void
+                        public static addTableModelListener(arg0: javax.swing.event.TableModelListener): void
+                        public static removeTableModelListener(arg0: javax.swing.event.TableModelListener): void
                         public static addTreeExpansionListener(arg0: javax.swing.event.TreeExpansionListener): void
                         public static removeTreeExpansionListener(arg0: javax.swing.event.TreeExpansionListener): void
                         public static addTreeModelListener(arg0: javax.swing.event.TreeModelListener): void
                         public static removeTreeModelListener(arg0: javax.swing.event.TreeModelListener): void
-                        public static addTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$Lambda): void
-                        public static removeTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$Lambda): void
-                        public static addUndoableEditListener(arg0: javax.swing.event.UndoableEditListener | javax.swing.event.UndoableEditListener$$Lambda): void
-                        public static removeUndoableEditListener(arg0: javax.swing.event.UndoableEditListener | javax.swing.event.UndoableEditListener$$Lambda): void
+                        public static addTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener): void
+                        public static removeTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener): void
+                        public static addUndoableEditListener(arg0: javax.swing.event.UndoableEditListener): void
+                        public static removeUndoableEditListener(arg0: javax.swing.event.UndoableEditListener): void
                         public static addInternalFrameListener(arg0: javax.swing.event.InternalFrameListener): void
                         public static removeInternalFrameListener(arg0: javax.swing.event.InternalFrameListener): void
-                        public static addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
-                        public static removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
-                        public static addVetoableChangeListener(arg0: java.beans.VetoableChangeListener | java.beans.VetoableChangeListener$$Lambda): void
-                        public static removeVetoableChangeListener(arg0: java.beans.VetoableChangeListener | java.beans.VetoableChangeListener$$Lambda): void
+                        public static addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+                        public static removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+                        public static addVetoableChangeListener(arg0: java.beans.VetoableChangeListener): void
+                        public static removeVetoableChangeListener(arg0: java.beans.VetoableChangeListener): void
                     }
                     interface TopLevelWindowListener extends java.util.EventListener {
                         topLevelWindowCreated(arg0: java.awt.Window): void

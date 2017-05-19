@@ -46,12 +46,12 @@ declare namespace org {
                     public isRunning(): boolean
                     public isActive(): boolean
                     public open(): void
-                    public removeLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$Lambda): void
+                    public removeLineListener(arg0: javax.sound.sampled.LineListener): void
                     public isOpen(): boolean
                     public isControlSupported(arg0: any): boolean
                     public getControls(): javax.sound.sampled.Control[]
                     public getControl(arg0: any): javax.sound.sampled.Control
-                    public addLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$Lambda): void
+                    public addLineListener(arg0: javax.sound.sampled.LineListener): void
                 }
                 class PulseAudioSourcePort extends org.classpath.icedtea.pulseaudio.PulseAudioPort {
                     constructor(arg0: string)
@@ -93,12 +93,12 @@ declare namespace org {
                     public stop(): void
                     public start(): void
                     public open(): void
-                    public removeLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$Lambda): void
+                    public removeLineListener(arg0: javax.sound.sampled.LineListener): void
                     public isOpen(): boolean
                     public isControlSupported(arg0: any): boolean
                     public getControls(): javax.sound.sampled.Control[]
                     public getControl(arg0: any): javax.sound.sampled.Control
-                    public addLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$Lambda): void
+                    public addLineListener(arg0: javax.sound.sampled.LineListener): void
                 }
                 class PulseAudioVolumeControl extends javax.sound.sampled.FloatControl {
                     static MAX_VOLUME: int
@@ -145,7 +145,7 @@ declare namespace org {
                     public isSynchronizationSupported(arg0: javax.sound.sampled.Line[], arg1: boolean): boolean
                     public synchronize(arg0: javax.sound.sampled.Line[], arg1: boolean): void
                     public unsynchronize(arg0: javax.sound.sampled.Line[]): void
-                    public addLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$Lambda): void
+                    public addLineListener(arg0: javax.sound.sampled.LineListener): void
                     public close(): void
                     public getControl(arg0: any): javax.sound.sampled.Control
                     public getControls(): javax.sound.sampled.Control[]
@@ -157,7 +157,7 @@ declare namespace org {
                     public openLocal(arg0: string): void
                     public openRemote(arg0: string, arg1: string): void
                     public openRemote(arg0: string, arg1: string, arg2: int): void
-                    public removeLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$Lambda): void
+                    public removeLineListener(arg0: javax.sound.sampled.LineListener): void
                     addSourceLine(arg0: org.classpath.icedtea.pulseaudio.PulseAudioLine): void
                     removeSourceLine(arg0: org.classpath.icedtea.pulseaudio.PulseAudioLine): void
                     addTargetLine(arg0: org.classpath.icedtea.pulseaudio.PulseAudioLine): void
@@ -196,14 +196,14 @@ declare namespace org {
                     protected controls: java.util.List<javax.sound.sampled.Control>
                     protected isOpen: boolean
                     constructor()
-                    public addLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$Lambda): void
+                    public addLineListener(arg0: javax.sound.sampled.LineListener): void
                     public close(): void
                     protected fireLineEvent(arg0: javax.sound.sampled.LineEvent): void
                     public getControl(arg0: any): javax.sound.sampled.Control
                     public getControls(): javax.sound.sampled.Control[]
                     public isControlSupported(arg0: any): boolean
                     public isOpen(): boolean
-                    public removeLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$Lambda): void
+                    public removeLineListener(arg0: javax.sound.sampled.LineListener): void
                 }
                 abstract class PulseAudioDataLine extends org.classpath.icedtea.pulseaudio.PulseAudioLine implements javax.sound.sampled.DataLine {
                     protected static DEFAULT_BUFFER_SIZE: int
@@ -275,12 +275,12 @@ declare namespace org {
                     public getStream(): org.classpath.icedtea.pulseaudio.Stream
                     public isRunning(): boolean
                     public isActive(): boolean
-                    public removeLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$Lambda): void
+                    public removeLineListener(arg0: javax.sound.sampled.LineListener): void
                     public isOpen(): boolean
                     public isControlSupported(arg0: any): boolean
                     public getControls(): javax.sound.sampled.Control[]
                     public getControl(arg0: any): javax.sound.sampled.Control
-                    public addLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$Lambda): void
+                    public addLineListener(arg0: javax.sound.sampled.LineListener): void
                     static access$000(arg0: org.classpath.icedtea.pulseaudio.PulseAudioClip): int
                     static access$100(arg0: org.classpath.icedtea.pulseaudio.PulseAudioClip): int
                     static access$200(arg0: org.classpath.icedtea.pulseaudio.PulseAudioClip, arg1: int, arg2: int): void

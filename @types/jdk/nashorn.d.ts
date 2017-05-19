@@ -3049,9 +3049,6 @@ declare namespace jdk {
                     interface ScriptClass extends java.lang.annotation.Annotation {
                         value(): string
                     }
-                    interface ScriptClass$$Lambda extends java.lang.annotation.Annotation {
-                        (): string
-                    }
                 }
                 class Global extends jdk.nashorn.internal.runtime.Scope {
                     public arguments: java.lang.Object
@@ -7227,9 +7224,6 @@ declare namespace jdk {
                     interface Logger extends java.lang.annotation.Annotation {
                         name(): string
                     }
-                    interface Logger$$Lambda extends java.lang.annotation.Annotation {
-                        (): string
-                    }
                     interface Loggable {
                         initLogger(arg0: jdk.nashorn.internal.runtime.Context): jdk.nashorn.internal.runtime.logging.DebugLogger
                         getLogger(): jdk.nashorn.internal.runtime.logging.DebugLogger
@@ -9164,9 +9158,6 @@ declare namespace jdk {
                 }
                 interface TypeBasedGuardingDynamicLinker extends jdk.internal.dynalink.linker.GuardingDynamicLinker {
                     canLinkType(arg0: java.lang.Class<any>): boolean
-                }
-                interface TypeBasedGuardingDynamicLinker$$Lambda extends jdk.internal.dynalink.linker.GuardingDynamicLinker {
-                    (arg0: java.lang.Class<any>): boolean
                 }
                 interface LinkerServices {
                     asType(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.invoke.MethodType): java.lang.invoke.MethodHandle

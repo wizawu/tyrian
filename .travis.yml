@@ -1,6 +1,13 @@
+dist: trusty
+
 language: node_js
 node_js:
   - stable
+jdk:
+  - openjdk8
+
+before_script:
+  - jdk_switcher use openjdk8
 script:
-  - npm install typescript
+  - npm install -g typescript yarn
   - make types

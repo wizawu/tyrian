@@ -50,7 +50,7 @@ function compilers(instdir: string, instmod: string, context: string, entries: s
     let builtAssets = false
 
     let createCompiler = (entry: any, minimize: boolean) => webpack({
-        devtool: "source-map",
+        devtool: "cheap-source-map",
         context: context,
         resolve: { extensions: [".js", ".ts", ".j.ts", ".tsx"] },
         resolveLoader: { modules: [instmod] },

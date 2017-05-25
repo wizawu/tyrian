@@ -27,12 +27,12 @@ export default function (target: string, jjsArgs: string[], reload: boolean) {
                 })
                 insert.push({
                     index: match.index + match[0].length,
-                    position: `${position.source}:${position.line}:${position.column}`
+                    position: `${position.source}:${position.line}`
                 })
             }
             insert.reverse().forEach((s: any) => {
                 chunk = chunk.substring(0, s.index) +
-                    chalk.yellow(`(${s.position})`) +
+                    chalk.yellow(`->${s.position}`) +
                     chunk.substring(s.index)
             })
             return chunk

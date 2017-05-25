@@ -27,12 +27,12 @@ function default_1(target, jjsArgs, reload) {
                 });
                 insert.push({
                     index: match.index + match[0].length,
-                    position: position.source + ":" + position.line + ":" + position.column
+                    position: position.source + ":" + position.line
                 });
             }
             insert.reverse().forEach(function (s) {
                 chunk = chunk.substring(0, s.index) +
-                    chalk.yellow("(" + s.position + ")") +
+                    chalk.yellow("->" + s.position) +
                     chunk.substring(s.index);
             });
             return chunk;

@@ -55,7 +55,7 @@ function compilers(instdir, instmod, context, entries, watch) {
     }
     var builtAssets = false;
     var createCompiler = function (entry, minimize) { return webpack({
-        devtool: "source-map",
+        devtool: "cheap-source-map",
         context: context,
         resolve: { extensions: [".js", ".ts", ".j.ts", ".tsx"] },
         resolveLoader: { modules: [instmod] },

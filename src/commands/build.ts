@@ -117,7 +117,7 @@ function generateTsxHTML(options: webpack.Configuration) {
                     console.log(chalk.green(`[${new Date().toTimeString().substring(0, 8)}] emitted ${filepath}`))
                 }
             } catch (ex) {
-                if (process.env.DEBUG_TSX_HTML) console.error(chalk.yellow(ex.message))
+                if (process.env.DEBUG_TSX_HTML) console.error(chalk.red(`${filepath}: ${ex.message}`))
             }
         }
     })

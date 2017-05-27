@@ -119,7 +119,7 @@ function generateTsxHTML(options) {
             }
             catch (ex) {
                 if (process.env.DEBUG_TSX_HTML)
-                    console.error(chalk.yellow(ex.message));
+                    console.error(chalk.red(filepath + ": " + ex.message));
             }
         }
     });

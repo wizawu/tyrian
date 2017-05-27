@@ -112,17 +112,14 @@ function generateTsxHTML(options) {
             try {
                 require(module_1);
                 var html = global._tsx_html;
-                if (typeof html !== "undefined") {
-                    try {
-                        fs.writeFileSync(filepath, server_1.renderToStaticMarkup(html));
-                        console.log(chalk.green("[" + new Date().toTimeString().substring(0, 8) + "] emitted " + filepath));
-                    }
-                    catch (ex) {
-                        console.error(chalk.yellow(ex.message));
-                    }
+                if (html) {
+                    fs.writeFileSync(filepath, server_1.renderToStaticMarkup(html));
+                    console.log(chalk.green("[" + new Date().toTimeString().substring(0, 8) + "] emitted " + filepath));
                 }
             }
             catch (ex) {
+                if (process.env.DEBUG_TSX_HTML)
+                    console.error(chalk.yellow(ex.message));
             }
         }
     });

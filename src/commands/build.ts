@@ -112,15 +112,12 @@ function generateTsxHTML(options: webpack.Configuration) {
             try {
                 require(module)
                 let html = (global as any)._tsx_html
-                if (typeof html !== "undefined") {
-                    try {
-                        fs.writeFileSync(filepath, renderToStaticMarkup(html))
-                        console.log(chalk.green(`[${new Date().toTimeString().substring(0, 8)}] emitted ${filepath}`))
-                    } catch (ex) {
-                        console.error(chalk.yellow(ex.message))
-                    }
+                if (html) {
+                    fs.writeFileSync(filepath, renderToStaticMarkup(html))
+                    console.log(chalk.green(`[${new Date().toTimeString().substring(0, 8)}] emitted ${filepath}`))
                 }
             } catch (ex) {
+                if (process.env.DEBUG_TSX_HTML) console.error(chalk.yellow(ex.message))
             }
         }
     })

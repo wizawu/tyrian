@@ -10,4 +10,13 @@ function resultSetToJSON(resultSet) {
     return json;
 }
 exports.resultSetToJSON = resultSetToJSON;
+function log(exception) {
+    if (exception.message) {
+        print(exception.message);
+    }
+    else if (typeof exception === "string") {
+        print(exception);
+    }
+}
+exports.log = log;
 //# sourceMappingURL=util.js.map

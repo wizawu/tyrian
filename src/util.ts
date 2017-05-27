@@ -7,3 +7,11 @@ export function resultSetToJSON<T>(resultSet: java.sql.ResultSet): T {
     }
     return json as T
 }
+
+export function log(exception: any) {
+    if (exception.message) {
+        (print as any)(exception.message)
+    } else if (typeof exception === "string") {
+        (print as any)(exception)
+    }
+}

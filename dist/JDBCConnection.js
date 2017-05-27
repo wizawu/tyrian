@@ -40,6 +40,7 @@ var JDBCConnection = (function () {
             this.execute("ALTER TABLE " + tableName + " ADD PRIMARY KEY (" + columnName + ")", []);
         }
         catch (ex) {
+            util_1.log(ex);
         }
     };
     JDBCConnection.prototype.ensureIndex = function (tableName, columnNames) {
@@ -49,10 +50,12 @@ var JDBCConnection = (function () {
             this.execute("CREATE INDEX IF NOT EXISTS " + indexName + " ON " + tableName + "(" + indexColumns + ")", []);
         }
         catch (ex) {
+            util_1.log(ex);
             try {
                 this.execute("CREATE INDEX " + indexName + " ON " + tableName + "(" + indexColumns + ")", []);
             }
             catch (ex) {
+                util_1.log(ex);
             }
         }
     };
@@ -63,10 +66,12 @@ var JDBCConnection = (function () {
             this.execute("CREATE UNIQUE INDEX IF NOT EXISTS " + indexName + " ON " + tableName + "(" + indexColumns + ")", []);
         }
         catch (ex) {
+            util_1.log(ex);
             try {
                 this.execute("CREATE UNIQUE INDEX " + indexName + " ON " + tableName + "(" + indexColumns + ")", []);
             }
             catch (ex) {
+                util_1.log(ex);
             }
         }
     };
@@ -76,6 +81,7 @@ var JDBCConnection = (function () {
             statement.execute();
         }
         catch (ex) {
+            util_1.log(ex);
         }
         finally {
             statement.close();
@@ -99,6 +105,7 @@ var JDBCConnection = (function () {
             statement.execute();
         }
         catch (ex) {
+            util_1.log(ex);
         }
         finally {
             statement.close();
@@ -133,6 +140,7 @@ var JDBCConnection = (function () {
                 this.connection.commit();
             }
             catch (ex) {
+                util_1.log(ex);
                 this.connection.rollback();
             }
             finally {

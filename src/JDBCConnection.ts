@@ -1,5 +1,5 @@
 import ConnectionImpl from "./ConnectionImpl"
-import { resultSetToJSON } from "./util"
+import { log, resultSetToJSON } from "./util"
 
 const Semaphore = java.util.concurrent.Semaphore
 
@@ -51,6 +51,7 @@ abstract class JDBCConnection implements ConnectionImpl {
         try {
             this.execute(`ALTER TABLE ${tableName} ADD PRIMARY KEY (${columnName})`, [])
         } catch (ex) {
+            log(ex)
         }
     }
 
@@ -60,9 +61,11 @@ abstract class JDBCConnection implements ConnectionImpl {
         try {
             this.execute(`CREATE INDEX IF NOT EXISTS ${indexName} ON ${tableName}(${indexColumns})`, [])
         } catch (ex) {
+            log(ex)
             try {
                 this.execute(`CREATE INDEX ${indexName} ON ${tableName}(${indexColumns})`, [])
             } catch (ex) {
+                log(ex)
             }
         }
     }
@@ -73,9 +76,11 @@ abstract class JDBCConnection implements ConnectionImpl {
         try {
             this.execute(`CREATE UNIQUE INDEX IF NOT EXISTS ${indexName} ON ${tableName}(${indexColumns})`, [])
         } catch (ex) {
+            log(ex)
             try {
                 this.execute(`CREATE UNIQUE INDEX ${indexName} ON ${tableName}(${indexColumns})`, [])
             } catch (ex) {
+                log(ex)
             }
         }
     }
@@ -85,6 +90,7 @@ abstract class JDBCConnection implements ConnectionImpl {
         try {
             statement.execute()
         } catch (ex) {
+            log(ex)
         } finally {
             statement.close()
         }
@@ -106,6 +112,7 @@ abstract class JDBCConnection implements ConnectionImpl {
         try {
             statement.execute()
         } catch (ex) {
+            log(ex)
         } finally {
             statement.close()
         }
@@ -146,6 +153,7 @@ abstract class JDBCConnection implements ConnectionImpl {
                 insert()
                 this.connection.commit()
             } catch (ex) {
+                log(ex)
                 this.connection.rollback()
             } finally {
                 this.connection.setAutoCommit(true)

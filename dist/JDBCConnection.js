@@ -81,7 +81,6 @@ var JDBCConnection = (function () {
             statement.execute();
         }
         catch (ex) {
-            util_1.log(ex);
         }
         finally {
             statement.close();
@@ -105,7 +104,6 @@ var JDBCConnection = (function () {
             statement.execute();
         }
         catch (ex) {
-            util_1.log(ex);
         }
         finally {
             statement.close();

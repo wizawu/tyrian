@@ -90,7 +90,6 @@ abstract class JDBCConnection implements ConnectionImpl {
         try {
             statement.execute()
         } catch (ex) {
-            log(ex)
         } finally {
             statement.close()
         }
@@ -112,7 +111,6 @@ abstract class JDBCConnection implements ConnectionImpl {
         try {
             statement.execute()
         } catch (ex) {
-            log(ex)
         } finally {
             statement.close()
         }

@@ -1,6 +1,6 @@
 {
   "name": "orsql",
-  "version": "0.2.13",
+  "version": "0.2.14",
   "repository": "github:wizawu/orsql",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -1,13 +1,10 @@
 {
-  "name": "orsql",
-  "version": "0.2.14",
-  "repository": "github:wizawu/orsql",
+  "name": "uds",
+  "version": "0.0.0",
+  "repository": "github:wizawu/uds",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "mvnDependencies": [
-    "mysql:mysql-connector-java:6.0.5",
-    "org.assertj:assertj-core:2.6.0",
-    "org.mariadb.jdbc:mariadb-java-client:1.5.7",
-    "org.postgresql:postgresql:42.0.0"
+    "mysql:mysql-connector-java:6.0.5"
   ]
 }

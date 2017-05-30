@@ -1,3 +1,7 @@
+export function indexName(table: string, columns: string[], unique: boolean) {
+    return `${table}_${unique ? "u" : ""}idx_${columns.join("_").toLowerCase()}`
+}
+
 export function resultSetToJSON<T>(resultSet: java.sql.ResultSet): T {
     let json: any = {}
     for (let i = 1; i <= resultSet.getMetaData().getColumnCount(); i++) {

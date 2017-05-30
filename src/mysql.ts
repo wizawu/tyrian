@@ -20,11 +20,6 @@ export class MySQLClient extends JDBCClient {
             this.url += `&useSSL=${options.useSSL}`
         }
 
-        this.logger = options.logger || {
-            info: message => java.lang.System.out.println(message),
-            error: message => java.lang.System.err.println(message),
-        }
-
         this.connect()
     }
 }

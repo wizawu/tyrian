@@ -1,20 +1,9 @@
-import { Client, Logger } from "./client"
-import { resultSetToJSON } from "./util"
-
-const Semaphore = java.util.concurrent.Semaphore
-
-/*
-interface Column {
-    COLUMN_NAME: string
-}
-
-*/
+import { Client } from "./client"
+import { indexName, resultSetToJSON } from "./util"
 
 export abstract class JDBCClient implements Client {
     protected connection: java.sql.Connection
     protected driver: java.sql.Driver
-    protected logger: Logger
-    protected mutex = new Semaphore(1)
     protected url: string
 
     protected connect() {
@@ -66,19 +55,33 @@ export abstract class JDBCClient implements Client {
     }
 
     ensureColumn(table: string, column: string, type: string) {
-        let columns = this.list<any>("DESC " + table)
-        if (columns.some(col => col.COLUMN_NAME === column)) return
+        let rows = this.list<any>("DESC " + table)
+        if (rows.some(row => row.COLUMN_NAME === column)) return
         this.execute(`ALTER TABLE ${table} ADD COLUMN ${column} ${type}`)
     }
 
     ensureIndex(table: string, columns: string[]) {
+        let index = indexName(table, columns, false)
+        let rows = this.list<any>("SHOW INDEX FROM " + table)
+        if (rows.some(row => row.INDEX_NAME === index)) return
+        this.execute(`CREATE INDEX ${index} ON ${table}(${columns.join(",")})`)
     }
 
     ensureUniqueIndex(table: string, columns: string[]) {
+        let index = indexName(table, columns, true)
+        let rows = this.list<any>("SHOW INDEX FROM " + table)
+        if (rows.some(row => row.INDEX_NAME === index)) return
+        this.execute(`CREATE UNIQUE INDEX ${index} ON ${table}(${columns.join(",")})`)
     }
 
     one<T>(sql: string, parameters?: any[]): T | null {
-        return null
+        let result: T | null = null
+        let statement = this.prepareStatement(sql, parameters)
+        let resultSet = statement.executeQuery()
+        if (resultSet.next()) result = resultSetToJSON<T>(resultSet)
+        resultSet.close()
+        statement.close()
+        return result
     }
 
     list<T>(sql: string, parameters?: any[]): T[] {
@@ -92,12 +95,21 @@ export abstract class JDBCClient implements Client {
     }
 
     insert(table: string, object: any) {
+        let keys = Object.keys(object).join(",")
+        let values = Object.keys(object).map(() => "?").join(",")
+        this.execute(
+            `INSERT INTO ${table}(${keys}) VALUES(${values})`,
+            Object.keys(object).map(key => object[key])
+        )
     }
 
-    update(table: string, object: any) {
-    }
-
-    save(table: string, object: any) {
+    upsert(table: string, object: any) {
+        let keys = Object.keys(object).join(",")
+        let values = Object.keys(object).map(() => "?").join(",")
+        this.execute(
+            `REPLACE INTO ${table}(${keys}) VALUES(${values})`,
+            Object.keys(object).map(key => object[key])
+        )
     }
 
     execute(sql: string, parameters?: any[]) {
@@ -107,6 +119,12 @@ export abstract class JDBCClient implements Client {
     }
 
     delete(bucket_or_table: string, key: any) {
+        let pkey = ""
+        let rows = this.list<any>("SHOW INDEX FROM " + bucket_or_table)
+        rows.forEach(row => {
+            if (row.INDEX_NAME === "PRIMARY") pkey = row.COLUMN_NAME
+        })
+        this.execute(`DELETE FROM ${bucket_or_table} WHERE ${pkey} = ${key}`)
     }
 
     close() {
@@ -121,108 +139,4 @@ export abstract class JDBCClient implements Client {
         }
         return statement
     }
-
-    /*
-
-    private indexName(tableName: string, columnNames: string[], unique: boolean): string {
-        return tableName + "_" + (unique ? "uidx_" : "idx_") + columnNames.map(name => name.toLowerCase()).join("_")
-    }
-
-    ensurePrimaryKey(tableName: string, columnName: string) {
-        try {
-            this.execute(`ALTER TABLE ${tableName} ADD PRIMARY KEY (${columnName})`, [])
-        } catch (ex) {
-            log(ex)
-        }
-    }
-
-    ensureIndex(tableName: string, columnNames: string[]) {
-        let indexName = this.indexName(tableName, columnNames, false)
-        let indexColumns = columnNames.join(",")
-        try {
-            this.execute(`CREATE INDEX IF NOT EXISTS ${indexName} ON ${tableName}(${indexColumns})`, [])
-        } catch (ex) {
-            log(ex)
-            try {
-                this.execute(`CREATE INDEX ${indexName} ON ${tableName}(${indexColumns})`, [])
-            } catch (ex) {
-                log(ex)
-            }
-        }
-    }
-
-    ensureUniqueIndex(tableName: string, columnNames: string[]) {
-        let indexName = this.indexName(tableName, columnNames, true)
-        let indexColumns = columnNames.join(",")
-        try {
-            this.execute(`CREATE UNIQUE INDEX IF NOT EXISTS ${indexName} ON ${tableName}(${indexColumns})`, [])
-        } catch (ex) {
-            log(ex)
-            try {
-                this.execute(`CREATE UNIQUE INDEX ${indexName} ON ${tableName}(${indexColumns})`, [])
-            } catch (ex) {
-                log(ex)
-            }
-        }
-    }
-
-    one<T>(sql: string, parameters: any[]): T | null {
-        let statement = this.prepareStatement("SELECT 0", [])
-        try {
-            statement.execute()
-        } catch (ex) {
-        } finally {
-            statement.close()
-        }
-
-        let result: T | null = null
-        statement = this.prepareStatement(sql, parameters)
-        try {
-            let resultSet = statement.executeQuery()
-            if (resultSet.next()) result = resultSetToJSON<T>(resultSet)
-            resultSet.close()
-        } finally {
-            statement.close()
-        }
-        return result
-    }
-
-    list<T>(sql: string, parameters: any[]): T[] {
-    }
-
-    save(tableName: string, obj: any, primary: string) {
-        let exists = !!this.one<any>(
-            `SELECT * FROM ${tableName} WHERE ${primary} = ?`,
-            [obj[primary]]
-        )
-        let insert = () => {
-            let keys = Object.keys(obj).join(",")
-            let values = Object.keys(obj).map(() => "?").join(",")
-            this.execute(
-                `INSERT INTO ${tableName}(${keys}) VALUES(${values})`,
-                Object.keys(obj).map(key => obj[key])
-            )
-        }
-        if (exists) {
-            this.mutex.acquire()
-            this.connection.setAutoCommit(false)
-            try {
-                this.execute(
-                    `DELETE FROM ${tableName} WHERE ${primary} = ?`,
-                    [obj[primary]]
-                )
-                insert()
-                this.connection.commit()
-            } catch (ex) {
-                log(ex)
-                this.connection.rollback()
-            } finally {
-                this.connection.setAutoCommit(true)
-                this.mutex.release()
-            }
-        } else {
-            insert()
-        }
-    }
-    */
 }

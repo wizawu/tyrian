@@ -1,16 +1,9 @@
-export interface Logger {
-    info(message: string)
-    error(message: string)
-}
-
 export interface Options {
     host: string
     port: int
     database: string
     user: string
     password: string
-
-    logger?: Logger
 
     autoReconnect?: boolean
     characterEncoding?: string
@@ -41,8 +34,7 @@ export interface Client {
     one<T>(sql: string, parameters?: any[]): T | null
     list<T>(sql: string, parameters?: any[]): T[]
     insert(table: string, object: any)
-    update(table: string, object: any)
-    save(table: string, object: any)
+    upsert(table: string, object: any)
     execute(sql: string, parameters?: any[])
 
     delete(bucket_or_table: string, key: any)

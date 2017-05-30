@@ -20,30 +20,18 @@ export interface Options {
 
 export interface Client {
     // Key-value store
-    getInt(key: string): number | null
     getInt(bucket: string, key: string): number | null
-    getFloat(key: string): number | null
     getFloat(bucket: string, key: string): number | null
-    getString(key: string): string | null
     getString(bucket: string, key: string): string | null
-    getJSON(key: string): any | null
     getJSON(bucket: string, key: string): any | null
-    setInt(key: string, value: number, ttl?: number)
     setInt(bucket: string, key: string, value: number, ttl?: number)
-    setFloat(key: string, value: number, ttl?: number)
     setFloat(bucket: string, key: string, value: number, ttl?: number)
-    setString(key: string, value: string, ttl?: number)
     setString(bucket: string, key: string, value: string, ttl?: number)
-    setJSON(key: string, json: any, ttl?: number)
     setJSON(bucket: string, key: string, json: any, ttl?: number)
 
     // Object store
-    get(key: string): java.lang.Byte[]
-    get(bucket: string, key: string): java.lang.Byte[]
-    put(key: string, data: java.lang.Byte[], ttl?: number)
+    get(bucket: string, key: string): java.lang.Byte[] | null
     put(bucket: string, key: string, data: java.lang.Byte[], ttl?: number)
-
-    delete(bucket_or_table: string, key: any)
 
     // RDBMS
     ensureTable(table: string, pkey: string, type: string)
@@ -57,5 +45,6 @@ export interface Client {
     save(table: string, object: any)
     execute(sql: string, parameters?: any[])
 
+    delete(bucket_or_table: string, key: any)
     close()
 }

@@ -7,11 +7,88 @@ interface Column {
 }
 
 export abstract class JDBCClient implements Client {
-    connection: java.sql.Connection
-    driver: java.sql.Driver
-    url: string
+    protected connection: java.sql.Connection
+    protected driver: java.sql.Driver
+    protected mutex = new Semaphore(1)
+    protected url: string
 
-    private mutex = new Semaphore(1)
+    protected connect() {
+        this.connection = this.driver.connect(this.url, new java.util.Properties())
+    }
+
+    getInt(arg0: string, arg1?: string): number | null {
+        return null
+    }
+
+    getFloat(arg0: string, arg1?: string): number | null {
+        return null
+    }
+
+    getString(arg0: string, arg1?: string): string | null {
+        return null
+    }
+
+    getJSON(arg0: string, arg1?: string): any | null {
+        return null
+    }
+
+    setInt(arg0: string, arg1: number | string, arg2?: number, arg3?: number) {
+    }
+
+    setFloat(arg0: string, arg1: number | string, arg2?: number, arg3?: number) {
+    }
+
+    setString(arg0: string, arg1: string, arg2?: number | string, arg3?: number) {
+    }
+
+    setJSON(arg0: string, arg1: any, arg2?: any, arg3?: number) {
+    }
+
+    get(arg0: string, arg1?: string): java.lang.Byte[] {
+        return []
+    }
+
+    put(arg0: string, arg1: java.lang.Byte[] | string, arg2?: number | java.lang.Byte[], arg3?: number) {
+    }
+
+    delete(bucket_or_table: string, key: any) {
+    }
+
+    ensureTable(table: string, pkey: string, type: string) {
+    }
+
+    ensureColumn(table: string, column: string, type: string) {
+    }
+
+    ensureIndex(table: string, columns: string[]) {
+    }
+
+    ensureUniqueIndex(table: string, columns: string[]) {
+    }
+
+    one<T>(sql: string, parameters?: any[]): T | null {
+        return null
+    }
+
+    list<T>(sql: string, parameters?: any[]): T[] {
+        return []
+    }
+
+    insert(table: string, object: any) {
+    }
+
+    update(table: string, object: any) {
+    }
+
+    save(table: string, object: any) {
+    }
+
+    execute(sql: string, parameters?: any[]) {
+    }
+
+    close() {
+        this.connection.close()
+    }
 
     /*
     private prepareStatement(sql: string, parameters: any[]) {
@@ -25,9 +102,6 @@ export abstract class JDBCClient implements Client {
         return tableName + "_" + (unique ? "uidx_" : "idx_") + columnNames.map(name => name.toLowerCase()).join("_")
     }
 
-    connect() {
-        this.connection = this.driver.connect(this.url, new java.util.Properties())
-    }
 
     ensureTable(tableName: string) {
         this.execute(`CREATE TABLE IF NOT EXISTS ${tableName} (id VARCHAR(64))`, [])
@@ -168,9 +242,6 @@ export abstract class JDBCClient implements Client {
         statement.close()
     }
 
-    close() {
-        this.connection.close()
-    }
     */
 }
 

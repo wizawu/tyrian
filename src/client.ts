@@ -37,6 +37,14 @@ export interface Client {
     setJSON(key: string, json: any, ttl?: number)
     setJSON(bucket: string, key: string, json: any, ttl?: number)
 
+    // Object store
+    get(key: string): java.lang.Byte[]
+    get(bucket: string, key: string): java.lang.Byte[]
+    put(key: string, data: java.lang.Byte[], ttl?: number)
+    put(bucket: string, key: string, data: java.lang.Byte[], ttl?: number)
+
+    delete(bucket_or_table: string, key: any)
+
     // RDBMS
     ensureTable(table: string, pkey: string, type: string)
     ensureColumn(table: string, column: string, type: string)
@@ -49,13 +57,5 @@ export interface Client {
     save(table: string, object: any)
     execute(sql: string, parameters?: any[])
 
-    // Object store
-    get(key: string): java.lang.Byte[]
-    get(bucket: string, key: string): java.lang.Byte[]
-    put(key: string, data: java.lang.Byte[], ttl?: number)
-    put(bucket: string, key: string, data: java.lang.Byte[], ttl?: number)
-
-    delete(table: string, key: any)
-    delete(bucket: string, key: string)
     close()
 }

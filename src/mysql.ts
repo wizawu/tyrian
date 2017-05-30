@@ -1,17 +1,25 @@
-import JDBCConnection from "./JDBCConnection"
-import { Options } from "./ConnectionImpl"
+import { JDBCClient } from "./jdbc"
+import { Options } from "./client"
 
-export default class MySQLConnection extends JDBCConnection {
+export class MySQLClient extends JDBCClient {
     constructor(options: Options) {
         super()
+
+        let { host, port, database, user, password } = options
         this.driver = new com.mysql.cj.jdbc.Driver()
-        this.url = java.lang.String.format(
-            "jdbc:mysql://%s:%d/%s?user=%s&password=%s&testOnBorrow=true",
-            options.host, options.port, options.database, options.user, options.password
-        )
-        this.url += "&useSSL=" + (options.useSSL ? "true" : "false")
-        this.url += "&characterEncoding=" + (options.characterEncoding || "UTF-8")
-        this.url += "&autoReconnect=" + (options.autoReconnect ? "true" : "false")
+        this.url = `jdbc:mysql://${host}:${port}/${database}?user=${user}&password=${password}` +
+            `&characterEncoding=${options.characterEncoding || "UTF-8"}`
+
+        if (options.autoReconnect !== undefined) {
+            this.url += `&autoReconnect=${options.autoReconnect}`
+        }
+        if (options.testOnBorrow !== undefined) {
+            this.url += `&testOnBorrow=${options.testOnBorrow}`
+        }
+        if (options.useSSL !== undefined) {
+            this.url += `&useSSL=${options.useSSL}`
+        }
+
         this.connect()
     }
 }

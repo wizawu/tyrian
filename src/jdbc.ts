@@ -1,5 +1,4 @@
-import ConnectionImpl from "./ConnectionImpl"
-import { log, resultSetToJSON } from "./util"
+import { Client } from "./client"
 
 const Semaphore = java.util.concurrent.Semaphore
 
@@ -7,13 +6,14 @@ interface Column {
     COLUMN_NAME: string
 }
 
-abstract class JDBCConnection implements ConnectionImpl {
+export abstract class JDBCClient implements Client {
     connection: java.sql.Connection
     driver: java.sql.Driver
     url: string
 
     private mutex = new Semaphore(1)
 
+    /*
     private prepareStatement(sql: string, parameters: any[]) {
         if (this.connection.isClosed()) this.connect()
         let statement = this.connection.prepareStatement(sql)
@@ -171,6 +171,15 @@ abstract class JDBCConnection implements ConnectionImpl {
     close() {
         this.connection.close()
     }
+    */
 }
 
-export default JDBCConnection
+function resultSetToJSON<T>(resultSet: java.sql.ResultSet): T {
+    let json: any = {}
+    for (let i = 1; i <= resultSet.getMetaData().getColumnCount(); i++) {
+        let key = resultSet.getMetaData().getColumnName(i)
+        let value = resultSet.getObject(i)
+        json[key.toString()] = value
+    }
+    return json as T
+}

@@ -1,11 +1,3 @@
-import MariaDBConnection from "./MariaDBConnection"
-import MySQLConnection from "./MySQLConnection"
-import PostgreSQLConnection from "./PostgreSQLConnection"
-import { Options } from "./ConnectionImpl"
-
-export {
-    MariaDBConnection,
-    MySQLConnection,
-    PostgreSQLConnection,
-    Options,
-}
+export { Client, Options } from "./client"
+export { JDBCClient } from "./jdbc"
+export { MySQLClient } from "./mysql"

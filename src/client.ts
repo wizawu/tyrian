@@ -1,3 +1,8 @@
+export interface Logger {
+    info(message: string)
+    error(message: string)
+}
+
 export interface Options {
     host: string
     port: int
@@ -5,8 +10,11 @@ export interface Options {
     user: string
     password: string
 
+    logger?: Logger
+
     autoReconnect?: boolean
     characterEncoding?: string
+    testOnBorrow?: boolean
     useSSL?: boolean
 }
 

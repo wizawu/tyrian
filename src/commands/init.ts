@@ -43,8 +43,8 @@ export const tsconfig = (instdir, noJDK = false) => JSON.stringify({
     "include": [
         `${instdir}/@types/**/*.d.ts`,
         "lib/@types/**/*.d.ts",
-        "src/**/*.ts",
-        "src/**/*.tsx"
+        "**/*.ts",
+        "**/*.tsx"
     ].slice(noJDK ? 1 : 0)
 }, null, 2)
 

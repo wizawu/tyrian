@@ -1,10 +1,15 @@
 {
   "name": "uds",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "repository": "github:wizawu/uds",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "mvnDependencies": [
-    "mysql:mysql-connector-java:6.0.5"
-  ]
+    "mysql:mysql-connector-java:6.0.6"
+  ],
+  "devDependencies": {
+    "@types/chai": "^3.5.2",
+    "chai": "^4.0.0",
+    "lightest": "^0.1.1"
+  }
 }

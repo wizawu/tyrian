@@ -1920,6 +1920,24 @@ declare namespace sun {
                         protected getContents(): java.lang.Object[][]
                     }
                 }
+                namespace is$ {
+                    class CalendarData_is_IS extends java.util.ListResourceBundle {
+                        public constructor()
+                        protected getContents(): java.lang.Object[][]
+                    }
+                    class LocaleNames_is extends sun.util.resources.OpenListResourceBundle {
+                        public constructor()
+                        protected getContents(): java.lang.Object[][]
+                    }
+                    class CurrencyNames_is extends sun.util.resources.OpenListResourceBundle {
+                        public constructor()
+                        protected getContents(): java.lang.Object[][]
+                    }
+                    class TimeZoneNames_is extends sun.util.resources.TimeZoneNamesBundle {
+                        public constructor()
+                        protected getContents(): java.lang.Object[][]
+                    }
+                }
                 namespace ta {
                     class CurrencyNames_ta_LK extends sun.util.resources.OpenListResourceBundle {
                         public constructor()
@@ -4522,6 +4540,12 @@ declare namespace sun {
                         protected getContents(): java.lang.Object[][]
                     }
                     class FormatData_af_NA extends java.util.ListResourceBundle {
+                        public constructor()
+                        protected getContents(): java.lang.Object[][]
+                    }
+                }
+                namespace is$ {
+                    class FormatData_is extends java.util.ListResourceBundle {
                         public constructor()
                         protected getContents(): java.lang.Object[][]
                     }

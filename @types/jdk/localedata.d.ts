@@ -241,6 +241,34 @@ declare namespace sun {
                     protected getContents(): java.lang.Object[][]
                 }
             }
+            namespace in$ {
+                class LocaleNames_in extends sun.util.resources.LocaleNamesBundle {
+                    public constructor()
+                    protected getContents(): java.lang.Object[][]
+                }
+                class CurrencyNames_in_ID extends sun.util.resources.LocaleNamesBundle {
+                    public constructor()
+                    protected getContents(): java.lang.Object[][]
+                }
+                class CalendarData_in_ID extends sun.util.resources.LocaleNamesBundle {
+                    public constructor()
+                    protected getContents(): java.lang.Object[][]
+                }
+            }
+            namespace is$ {
+                class LocaleNames_is extends sun.util.resources.LocaleNamesBundle {
+                    public constructor()
+                    protected getContents(): java.lang.Object[][]
+                }
+                class CalendarData_is extends sun.util.resources.LocaleNamesBundle {
+                    public constructor()
+                    protected getContents(): java.lang.Object[][]
+                }
+                class CurrencyNames_is_IS extends sun.util.resources.LocaleNamesBundle {
+                    public constructor()
+                    protected getContents(): java.lang.Object[][]
+                }
+            }
             namespace iw {
                 class CalendarData_iw extends sun.util.resources.LocaleNamesBundle {
                     public constructor()
@@ -1181,6 +1209,24 @@ declare namespace sun {
                     protected getContents(): java.lang.Object[][]
                 }
             }
+            namespace is$ {
+                class FormatData_is extends sun.util.resources.ParallelListResourceBundle {
+                    public constructor()
+                    protected getContents(): java.lang.Object[][]
+                }
+                class JavaTimeSupplementary_is extends sun.util.resources.OpenListResourceBundle {
+                    public constructor()
+                    protected getContents(): java.lang.Object[][]
+                }
+                class CollationData_is extends java.util.ListResourceBundle {
+                    public constructor()
+                    protected getContents(): java.lang.Object[][]
+                }
+                class FormatData_is_IS extends sun.util.resources.ParallelListResourceBundle {
+                    public constructor()
+                    protected getContents(): java.lang.Object[][]
+                }
+            }
             namespace lv {
                 class JavaTimeSupplementary_lv extends sun.util.resources.OpenListResourceBundle {
                     public constructor()
@@ -1609,6 +1655,16 @@ declare namespace sun {
                     protected getContents(): java.lang.Object[][]
                 }
                 class CollationData_hi extends java.util.ListResourceBundle {
+                    public constructor()
+                    protected getContents(): java.lang.Object[][]
+                }
+            }
+            namespace in$ {
+                class FormatData_in extends sun.util.resources.ParallelListResourceBundle {
+                    public constructor()
+                    protected getContents(): java.lang.Object[][]
+                }
+                class FormatData_in_ID extends sun.util.resources.ParallelListResourceBundle {
                     public constructor()
                     protected getContents(): java.lang.Object[][]
                 }

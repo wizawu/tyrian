@@ -352,7 +352,6 @@ module.exports = {
     "javax.accessibility.Accessible": true,
     "sun.nio.ByteBuffered": true,
     "sun.misc.JavaUtilZipFileAccess": true,
-    "sun.misc.JavaSecurityProtectionDomainAccess": true,
     "java.lang.Readable": true,
     "java.net.URLStreamHandlerFactory": true,
     "sun.nio.cs.ArrayEncoder": true,

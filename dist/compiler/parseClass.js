@@ -21,8 +21,6 @@ var UNSUPPORTED_MODIFIERS = [
     "volatile",
 ];
 function safeType(type, allowLambda) {
-    if (/java\.util\.function/.test(type))
-        return "any";
     if (/>\.\w+$/.test(type))
         return "any";
     if (type.indexOf("$") >= 0)
@@ -31,11 +29,14 @@ function safeType(type, allowLambda) {
         return "string";
     if (type === "java.lang.Boolean")
         return "boolean";
+    type = type.replace(/\.function\./g, ".function$.");
     var classID = type.indexOf("<") < 0 ? type : type.substring(0, type.indexOf("<"));
     if (allowLambda && lambda.isLambda[classID]) {
         return type + " | " + type.replace(new RegExp("(" + classID + ")"), "$1$$$Lambda");
     }
-    return type;
+    else {
+        return type;
+    }
 }
 function nextToken(ctx) {
     var skip = 0;

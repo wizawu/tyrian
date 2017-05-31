@@ -613,8 +613,10 @@ declare namespace com {
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class CipherCore {
+                    static GCM_MODE: int
                     constructor(arg0: com.sun.crypto.provider.SymmetricCipher, arg1: int)
                     setMode(arg0: string): void
+                    getMode(): int
                     setPadding(arg0: string): void
                     getOutputSize(arg0: int): int
                     getIV(): byte[]
@@ -698,7 +700,9 @@ declare namespace com {
                     save(): void
                     restore(): void
                     encrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                    encryptFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     decrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                    decryptFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                 }
                 class DESedeParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
@@ -735,7 +739,9 @@ declare namespace com {
                     save(): void
                     restore(): void
                     encrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                    encryptFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     decrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                    decryptFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                 }
                 class PBEParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()

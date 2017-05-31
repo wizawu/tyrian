@@ -216,16 +216,21 @@ declare namespace sun {
                 public getServerAliases(arg0: string, arg1: java.security.Principal[]): java.lang.String[]
             }
             class SupportedEllipticCurvesExtension extends sun.security.ssl.HelloExtension {
-                static DEFAULT: sun.security.ssl.SupportedEllipticCurvesExtension
                 constructor(arg0: sun.security.ssl.HandshakeInStream, arg1: int)
+                static getActiveCurves(arg0: java.security.AlgorithmConstraints): int
+                static hasActiveCurves(arg0: java.security.AlgorithmConstraints): boolean
+                static createExtension(arg0: java.security.AlgorithmConstraints): sun.security.ssl.SupportedEllipticCurvesExtension
+                getPreferredCurve(arg0: java.security.AlgorithmConstraints): int
                 contains(arg0: int): boolean
-                curveIds(): int[]
                 length(): int
                 send(arg0: sun.security.ssl.HandshakeOutStream): void
                 public toString(): string
                 static isSupported(arg0: int): boolean
                 static getCurveIndex(arg0: java.security.spec.ECParameterSpec): int
                 static getCurveOid(arg0: int): string
+                static getECGenParamSpec(arg0: int): java.security.spec.ECGenParameterSpec
+                static access$000(): java.util.Map
+                static access$100(): java.util.Map
             }
             class RSASignature extends java.security.SignatureSpi {
                 public constructor()
@@ -368,7 +373,7 @@ declare namespace sun {
             }
             class ECDHCrypt {
                 constructor(arg0: java.security.PrivateKey, arg1: java.security.PublicKey)
-                constructor(arg0: string, arg1: java.security.SecureRandom)
+                constructor(arg0: int, arg1: java.security.SecureRandom)
                 constructor(arg0: java.security.spec.ECParameterSpec, arg1: java.security.SecureRandom)
                 getPublicKey(): java.security.PublicKey
                 getAgreedSecret(arg0: java.security.PublicKey): javax.crypto.SecretKey
@@ -767,6 +772,8 @@ declare namespace sun {
                 protected engineInit(arg0: javax.net.ssl.KeyManager[], arg1: javax.net.ssl.TrustManager[], arg2: java.security.SecureRandom): void
                 protected engineGetSocketFactory(): javax.net.ssl.SSLSocketFactory
                 protected engineGetServerSocketFactory(): javax.net.ssl.SSLServerSocketFactory
+                createSSLEngineImpl(): javax.net.ssl.SSLEngine
+                createSSLEngineImpl(arg0: string, arg1: int): javax.net.ssl.SSLEngine
                 protected engineCreateSSLEngine(): javax.net.ssl.SSLEngine
                 protected engineCreateSSLEngine(arg0: string, arg1: int): javax.net.ssl.SSLEngine
                 protected engineGetClientSessionContext(): javax.net.ssl.SSLSessionContext
@@ -775,15 +782,19 @@ declare namespace sun {
                 getX509KeyManager(): javax.net.ssl.X509ExtendedKeyManager
                 getX509TrustManager(): javax.net.ssl.X509TrustManager
                 getEphemeralKeyManager(): sun.security.ssl.EphemeralKeyManager
-                getDefaultServerSSLParams(): javax.net.ssl.SSLParameters
-                getDefaultClientSSLParams(): javax.net.ssl.SSLParameters
-                getSupportedSSLParams(): javax.net.ssl.SSLParameters
                 getSuportedProtocolList(): sun.security.ssl.ProtocolList
-                getDefaultProtocolList(arg0: boolean): sun.security.ssl.ProtocolList
+                getServerDefaultProtocolList(): sun.security.ssl.ProtocolList
+                getClientDefaultProtocolList(): sun.security.ssl.ProtocolList
                 getSupportedCipherSuiteList(): sun.security.ssl.CipherSuiteList
+                getServerDefaultCipherSuiteList(): sun.security.ssl.CipherSuiteList
+                getClientDefaultCipherSuiteList(): sun.security.ssl.CipherSuiteList
+                getDefaultProtocolList(arg0: boolean): sun.security.ssl.ProtocolList
                 getDefaultCipherSuiteList(arg0: boolean): sun.security.ssl.CipherSuiteList
                 isDefaultProtocolList(arg0: sun.security.ssl.ProtocolList): boolean
-                static access$100(): sun.security.ssl.Debug
+                isDefaultCipherSuiteList(arg0: sun.security.ssl.CipherSuiteList): boolean
+                static access$000(arg0: sun.security.ssl.ProtocolVersion[]): java.lang.String[]
+                static access$100(arg0: sun.security.ssl.ProtocolList, arg1: boolean): sun.security.ssl.CipherSuiteList
+                static access$300(): sun.security.ssl.Debug
             }
             class CipherSuiteList {
                 constructor(arg0: java.util.Collection<sun.security.ssl.CipherSuite>)
@@ -798,7 +809,6 @@ declare namespace sun {
                 toStringArray(): java.lang.String[]
                 public toString(): string
                 send(arg0: sun.security.ssl.HandshakeOutStream): void
-                static clearAvailableCache(): void
             }
             class MAC extends sun.security.ssl.Authenticator {
                 static NULL: sun.security.ssl.MAC
@@ -824,12 +834,10 @@ declare namespace sun {
                 applyExplicitNonce(arg0: sun.security.ssl.Authenticator, arg1: byte, arg2: java.nio.ByteBuffer): int
                 applyExplicitNonce(arg0: sun.security.ssl.Authenticator, arg1: byte, arg2: byte[], arg3: int, arg4: int): int
                 createExplicitNonce(arg0: sun.security.ssl.Authenticator, arg1: byte, arg2: int): byte[]
-                isAvailable(): boolean
             }
             class CipherSuite implements java.lang.Comparable<sun.security.ssl.CipherSuite> {
                 static SUPPORTED_SUITES_PRIORITY: int
                 static DEFAULT_SUITES_PRIORITY: int
-                static DYNAMIC_AVAILABILITY: boolean
                 name: string
                 id: int
                 priority: int
@@ -884,7 +892,6 @@ declare namespace sun {
                 static SIGNATURE_RAWRSA: string
                 static SIGNATURE_SSLRSA: string
                 static isEcAvailable(): boolean
-                static clearEcAvailable(): void
                 static isKerberosAvailable(): boolean
                 static getCipher(arg0: string): javax.crypto.Cipher
                 static getSignature(arg0: string): java.security.Signature
@@ -893,6 +900,7 @@ declare namespace sun {
                 static getKeyAgreement(arg0: string): javax.crypto.KeyAgreement
                 static getMac(arg0: string): javax.crypto.Mac
                 static getKeyFactory(arg0: string): java.security.KeyFactory
+                static getAlgorithmParameters(arg0: string): java.security.AlgorithmParameters
                 static getSecureRandom(): java.security.SecureRandom
                 static getMD5(): java.security.MessageDigest
                 static getSHA(): java.security.MessageDigest

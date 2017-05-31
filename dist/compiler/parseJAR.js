@@ -13,14 +13,14 @@ function commandOutput(command, args) {
 function parsePackage(pkg, level) {
     var result = "";
     Object.keys(pkg).forEach(function (key) {
-        if (key === "function" || key === "is" || key === "in") {
-            return "";
-        }
-        else if (typeof pkg[key] === "string") {
+        if (typeof pkg[key] === "string") {
             result += pkg[key];
         }
         else {
-            result += (level === 0 ? "declare " : "") + "namespace " + key + " {\n";
+            var namespace = key;
+            if (key === "function" || key === "is" || key === "in")
+                namespace += "$";
+            result += (level === 0 ? "declare " : "") + "namespace " + namespace + " {\n";
             result += parsePackage(pkg[key], level + 1).split("\n").map(function (line) { return "    " + line; }).join("\n");
             result += "\n}\n";
         }

@@ -45,8 +45,6 @@ export const tsconfig = (instdir, noJDK = false) => JSON.stringify({
         "lib/@types/**/*.d.ts",
         "src/**/*.ts",
         "src/**/*.tsx",
-        "test/**/*.ts",
-        "test/**/*.tsx"
     ].slice(noJDK ? 1 : 0)
 }, null, 2)
 

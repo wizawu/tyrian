@@ -28,8 +28,6 @@ exports.tsconfig = function (instdir, noJDK) {
             "lib/@types/**/*.d.ts",
             "src/**/*.ts",
             "src/**/*.tsx",
-            "test/**/*.ts",
-            "test/**/*.tsx"
         ].slice(noJDK ? 1 : 0)
     }, null, 2);
 };

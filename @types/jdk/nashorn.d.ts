@@ -6916,8 +6916,8 @@ declare namespace jdk {
                     static fromClass(arg0: java.lang.Class<any>): jdk.nashorn.internal.runtime.Context
                     public getLogger(arg0: java.lang.Class<jdk.nashorn.internal.runtime.logging.Loggable>): jdk.nashorn.internal.runtime.logging.DebugLogger
                     public getLogger(arg0: java.lang.Class<jdk.nashorn.internal.runtime.logging.Loggable>, arg1: java.util.function$.Consumer<jdk.nashorn.internal.runtime.logging.DebugLogger>): jdk.nashorn.internal.runtime.logging.DebugLogger
-                    public addLoggingToHandle(arg0: java.lang.Class<jdk.nashorn.internal.runtime.logging.Loggable>, arg1: java.lang.invoke.MethodHandle, arg2: java.util.function$.Supplier<java.lang.String>): java.lang.invoke.MethodHandle
-                    public addLoggingToHandle(arg0: java.lang.Class<jdk.nashorn.internal.runtime.logging.Loggable>, arg1: java.util.logging.Level, arg2: java.lang.invoke.MethodHandle, arg3: int, arg4: boolean, arg5: java.util.function$.Supplier<java.lang.String>): java.lang.invoke.MethodHandle
+                    public addLoggingToHandle(arg0: java.lang.Class<jdk.nashorn.internal.runtime.logging.Loggable>, arg1: java.lang.invoke.MethodHandle, arg2: java.util.function$.Supplier<java.lang.String> | java.util.function$.Supplier$$Lambda<java.lang.String>): java.lang.invoke.MethodHandle
+                    public addLoggingToHandle(arg0: java.lang.Class<jdk.nashorn.internal.runtime.logging.Loggable>, arg1: java.util.logging.Level, arg2: java.lang.invoke.MethodHandle, arg3: int, arg4: boolean, arg5: java.util.function$.Supplier<java.lang.String> | java.util.function$.Supplier$$Lambda<java.lang.String>): java.lang.invoke.MethodHandle
                     public newBuiltinSwitchPoint(arg0: string): java.lang.invoke.SwitchPoint
                     public getBuiltinSwitchPoint(arg0: string): java.lang.invoke.SwitchPoint
                     static access$000(arg0: jdk.nashorn.internal.runtime.Context): long

@@ -6,6 +6,11 @@ var path = require("path");
 var child_process_1 = require("child_process");
 var parseClass_1 = require("./parseClass");
 var lambda = require("./lambda");
+var ILLEGAL_NAMESPACES = [
+    "function",
+    "in",
+    "is",
+];
 function commandOutput(command, args) {
     var child = child_process_1.spawnSync(command, args, { stdio: "pipe" });
     return child.stdout.toString() + child.stderr.toString();
@@ -14,11 +19,15 @@ function parsePackage(pkg, level) {
     var result = "";
     Object.keys(pkg).forEach(function (key) {
         if (typeof pkg[key] === "string") {
-            result += pkg[key];
+            var text_1 = pkg[key];
+            ILLEGAL_NAMESPACES.forEach(function (ns) {
+                text_1 = text_1.replace(new RegExp("\\." + ns + "\\.", "g"), "." + ns + "$.");
+            });
+            result += text_1;
         }
         else {
             var namespace = key;
-            if (key === "function" || key === "is" || key === "in")
+            if (ILLEGAL_NAMESPACES.indexOf(key) >= 0)
                 namespace += "$";
             result += (level === 0 ? "declare " : "") + "namespace " + namespace + " {\n";
             result += parsePackage(pkg[key], level + 1).split("\n").map(function (line) { return "    " + line; }).join("\n");

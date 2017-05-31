@@ -15,20 +15,19 @@ const UNSUPPORTED_MODIFIERS = [
 ]
 
 function safeType(type: string, allowLambda?: boolean): string {
-    // java.util.function.*
-    if (/java\.util\.function/.test(type)) return "any"
-    // XXX<T>.YYY
-    if (/>\.\w+$/.test(type)) return "any"
-    // XXX$YYY
-    if (type.indexOf("$") >= 0) return "any"
+    if (/>\.\w+$/.test(type)) return "any"      // XXX<T>.YYY
+    if (type.indexOf("$") >= 0) return "any"    // XXX$YYY
     if (type === "java.lang.String") return "string"
     if (type === "java.lang.Boolean") return "boolean"
+
+    type = type.replace(/\.function\./g, ".function$.")
 
     let classID = type.indexOf("<") < 0 ? type : type.substring(0, type.indexOf("<"))
     if (allowLambda && lambda.isLambda[classID]) {
         return `${type} | ${type.replace(new RegExp(`(${classID})`), "$1$$$Lambda")}`
+    } else {
+        return type
     }
-    return type
 }
 
 function nextToken(ctx: Context): Token {

@@ -7,9 +7,10 @@ export class MySQLClient extends JDBCClient {
 
         let { host, port, database, user, password } = options
         this.driver = new com.mysql.cj.jdbc.Driver()
-        this.url = `jdbc:mysql://${host}:${port}/${database}?user=${user}&password=${password}` +
-            `&characterEncoding=${options.characterEncoding || "UTF-8"}`
+        this.SQL_UNIX_TIMESTAMP = "floor(unix_timestamp(current_timestamp(6)) * 1000000)"
 
+        this.url = `jdbc:mysql://${host}:${port}/${database}?user=${user}&password=${password}`
+        this.url += `&characterEncoding=${options.characterEncoding || "UTF-8"}`
         if (options.autoReconnect !== undefined) {
             this.url += `&autoReconnect=${options.autoReconnect}`
         }

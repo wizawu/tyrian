@@ -5,6 +5,7 @@ export abstract class JDBCClient implements Client {
     protected connection: java.sql.Connection
     protected driver: java.sql.Driver
     protected url: string
+    protected SQL_UNIX_TIMESTAMP: string
 
     protected connect() {
         this.connection = this.driver.connect(this.url, new java.util.Properties())
@@ -160,14 +161,21 @@ export abstract class JDBCClient implements Client {
         this.ensureColumn(bucket, "_blob", "LONGBLOB")
         this.ensureColumn(bucket, "timestamp", "BIGINT")
         this.ensureColumn(bucket, "expires_at", "BIGINT")
-        this.ensureIndex(bucket, ["timestamp"])
+        this.ensureIndex(bucket, ["expires_at"])
     }
 
     private getByType(bucket: string, key: string, type: string) {
         if (!this.existsTable(bucket)) return null
-        let record = this.one<BucketRecord>(`SELECT * FROM ${bucket} WHERE _key = ?`, [key])
+        let record = this.one<BucketRecord>(`
+            SELECT *, expires_at >= ${this.SQL_UNIX_TIMESTAMP} as expired
+            FROM ${bucket} WHERE _key = ?`,
+            [key]
+        )
         if (record === null) return null
-        if (record.expires_at as number > Date.now() / 1000) return null
+        if ((record as any).expired) {
+            this.wipeUpExpiration(bucket)
+            return null
+        }
         switch (type) {
             case "int":
                 return record._int
@@ -184,25 +192,14 @@ export abstract class JDBCClient implements Client {
 
     private setByType(bucket: string, key: string, type: string, value: any, ttl?: number) {
         this.ensureBucket(bucket)
-        let record: BucketRecord = { _key: key, timestamp: Math.floor(Date.now() / 1000) }
-        if (ttl !== undefined) record.expires_at = record.timestamp + ttl
-        switch (type) {
-            case "int":
-                record._int = value
-                break
-            case "float":
-                record._float = value
-                break
-            case "string":
-                record._string = value
-                break
-            case "blob":
-                record._blob = value
-                break
-            default:
-                return
-        }
-        this.upsert(bucket, record)
+        let keys = `_key,_${type},timestamp,expires_at`
+        let expires_at = ttl === undefined ? "NULL" : `${this.SQL_UNIX_TIMESTAMP} + ${ttl * 1e6}`
+        let values = `?,?,${this.SQL_UNIX_TIMESTAMP},${expires_at}`
+        this.execute(`REPLACE INTO ${bucket}(${keys}) VALUES(${values})`, [key, value])
+    }
+
+    private wipeUpExpiration(bucket: string) {
+        this.execute(`DELETE FROM ${bucket} WHERE expires_at >= ${this.SQL_UNIX_TIMESTAMP}`)
     }
 }
 

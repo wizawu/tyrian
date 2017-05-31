@@ -11,38 +11,44 @@ export abstract class JDBCClient implements Client {
     }
 
     getInt(bucket: string, key: string): number | null {
-        return null
+        return this.getByType(bucket, key, "int") as number
     }
 
     getFloat(bucket: string, key: string): number | null {
-        return null
+        return this.getByType(bucket, key, "float") as number
     }
 
     getString(bucket: string, key: string): string | null {
-        return null
+        return this.getByType(bucket, key, "string") as string
     }
 
     getJSON(bucket: string, key: string): any | null {
-        return null
+        let value = this.getByType(bucket, key, "string")
+        return value === null ? null : JSON.parse(value as string)
     }
 
     setInt(bucket: string, key: string, value: number, ttl?: number) {
+        this.setByType(bucket, key, "int", value, ttl)
     }
 
     setFloat(bucket: string, key: string, value: number, ttl?: number) {
+        this.setByType(bucket, key, "float", value, ttl)
     }
 
     setString(bucket: string, key: string, value: string, ttl?: number) {
+        this.setByType(bucket, key, "string", value, ttl)
     }
 
     setJSON(bucket: string, key: string, json: any, ttl?: number) {
+        this.setByType(bucket, key, "string", JSON.stringify(json), ttl)
     }
 
     get(bucket: string, key: string): java.lang.Byte[] | null {
-        return []
+        return this.getByType(bucket, key, "blob") as java.lang.Byte[]
     }
 
     put(bucket: string, key: string, data: java.lang.Byte[], ttl?: number) {
+        this.setByType(bucket, key, "blob", data, ttl)
     }
 
     ensureTable(table: string, pkey: string, type: string) {
@@ -139,4 +145,73 @@ export abstract class JDBCClient implements Client {
         }
         return statement
     }
+
+    private existsTable(table: string) {
+        let rows = this.list<any>("SHOW TABLES")
+        return rows.some(row => row.TABLE_NAME === table)
+    }
+
+    private ensureBucket(bucket: string) {
+        if (this.existsTable(bucket)) return
+        this.ensureTable(bucket, "_key", "VARCHAR(2048)")
+        this.ensureColumn(bucket, "_int", "BIGINT")
+        this.ensureColumn(bucket, "_float", "DOUBLE")
+        this.ensureColumn(bucket, "_string", "TEXT")
+        this.ensureColumn(bucket, "_blob", "LONGBLOB")
+        this.ensureColumn(bucket, "timestamp", "BIGINT")
+        this.ensureColumn(bucket, "expires_at", "BIGINT")
+        this.ensureIndex(bucket, ["timestamp"])
+    }
+
+    private getByType(bucket: string, key: string, type: string) {
+        if (!this.existsTable(bucket)) return null
+        let record = this.one<BucketRecord>(`SELECT * FROM ${bucket} WHERE _key = ?`, [key])
+        if (record === null) return null
+        if (record.expires_at as number > Date.now() / 1000) return null
+        switch (type) {
+            case "int":
+                return record._int
+            case "float":
+                return record._float
+            case "string":
+                return record._string
+            case "blob":
+                return record._blob
+            default:
+                return null
+        }
+    }
+
+    private setByType(bucket: string, key: string, type: string, value: any, ttl?: number) {
+        this.ensureBucket(bucket)
+        let record: BucketRecord = { _key: key, timestamp: Math.floor(Date.now() / 1000) }
+        if (ttl !== undefined) record.expires_at = record.timestamp + ttl
+        switch (type) {
+            case "int":
+                record._int = value
+                break
+            case "float":
+                record._float = value
+                break
+            case "string":
+                record._string = value
+                break
+            case "blob":
+                record._blob = value
+                break
+            default:
+                return
+        }
+        this.upsert(bucket, record)
+    }
+}
+
+interface BucketRecord {
+    _key: string
+    _int?: number
+    _float?: number
+    _string?: string
+    _blob?: java.lang.Byte[]
+    timestamp: number
+    expires_at?: number
 }

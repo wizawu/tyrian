@@ -26,8 +26,10 @@ exports.tsconfig = function (instdir, noJDK) {
         "include": [
             instdir + "/@types/**/*.d.ts",
             "lib/@types/**/*.d.ts",
-            "**/*.ts",
-            "**/*.tsx"
+            "src/**/*.ts",
+            "src/**/*.tsx",
+            "test/**/*.ts",
+            "test/**/*.tsx"
         ].slice(noJDK ? 1 : 0)
     }, null, 2);
 };

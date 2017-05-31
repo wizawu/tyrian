@@ -10,11 +10,16 @@ function default_1(target, jjsArgs, reload) {
     var dirname = path.resolve(path.dirname(target));
     var lib = path.resolve(dirname + "/../lib");
     var classpath = fs.readdirSync(lib).map(function (jar) { return jar === "@types" ? "" : lib + "/" + jar; }).join(":");
-    var sourceMap = new source_map_1.SourceMapConsumer(JSON.parse(fs.readFileSync(target + ".map", "utf-8")));
+    var sourceMap = null;
+    if (fs.existsSync(target + ".map")) {
+        sourceMap = new source_map_1.SourceMapConsumer(JSON.parse(fs.readFileSync(target + ".map", "utf-8")));
+    }
     var run = function () {
         var child = child_process_1.spawn("jjs", jjsArgs.concat(["-cp", classpath, target]));
         child.on("exit", function (code) { return process.exit(code); });
         var lookupSource = function (chunk) {
+            if (sourceMap === null)
+                return chunk;
             var insert = [];
             var regex = new RegExp(target + ":\\d+(:\\d+)?", "g");
             while (true) {

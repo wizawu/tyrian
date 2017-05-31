@@ -9,13 +9,17 @@ export default function (target: string, jjsArgs: string[], reload: boolean) {
     let dirname = path.resolve(path.dirname(target))
     let lib = path.resolve(dirname + "/../lib")
     let classpath = fs.readdirSync(lib).map(jar => jar === "@types" ? "" : `${lib}/${jar}`).join(":")
-    let sourceMap = new SourceMapConsumer(JSON.parse(fs.readFileSync(target + ".map", "utf-8")))
+    let sourceMap: SourceMapConsumer = null as any
+    if (fs.existsSync(target + ".map")) {
+        sourceMap = new SourceMapConsumer(JSON.parse(fs.readFileSync(target + ".map", "utf-8")))
+    }
 
     let run = () => {
         let child = spawn("jjs", jjsArgs.concat(["-cp", classpath, target]))
-        child.on("exit", code =>  process.exit(code))
+        child.on("exit", code => process.exit(code))
 
         let lookupSource = chunk => {
+            if (sourceMap === null) return chunk
             let insert: any[] = []
             let regex = new RegExp(target + ":\\d+(:\\d+)?", "g")
             while (true) {

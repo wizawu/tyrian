@@ -6,6 +6,12 @@ import { spawnSync } from "child_process"
 import parseClass from "./parseClass"
 import * as lambda from "./lambda"
 
+const ILLEGAL_NAMESPACES = [
+    "function",
+    "in",
+    "is",
+]
+
 function commandOutput(command: string, args: string[]): string {
     let child = spawnSync(command, args, { stdio: "pipe" })
     return child.stdout.toString() + child.stderr.toString()
@@ -15,10 +21,14 @@ function parsePackage(pkg: any, level: number): string {
     let result = ""
     Object.keys(pkg).forEach(key => {
         if (typeof pkg[key] === "string") {
-            result += pkg[key]
+            let text = pkg[key]
+            ILLEGAL_NAMESPACES.forEach(ns => {
+                text = text.replace(new RegExp(`\\.${ns}\\.`, "g"), `.${ns}$.`)
+            })
+            result += text
         } else {
             let namespace = key
-            if (key === "function" || key === "is" || key === "in") namespace += "$"
+            if (ILLEGAL_NAMESPACES.indexOf(key) >= 0) namespace += "$"
             result += `${level === 0 ? "declare " : ""}namespace ${namespace} {\n`
             result += parsePackage(pkg[key], level + 1).split("\n").map(line => `    ${line}`).join("\n")
             result += "\n}\n"

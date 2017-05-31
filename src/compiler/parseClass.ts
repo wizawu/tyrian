@@ -20,8 +20,6 @@ function safeType(type: string, allowLambda?: boolean): string {
     if (type === "java.lang.String") return "string"
     if (type === "java.lang.Boolean") return "boolean"
 
-    type = type.replace(/\.function\./g, ".function$.")
-
     let classID = type.indexOf("<") < 0 ? type : type.substring(0, type.indexOf("<"))
     if (allowLambda && lambda.isLambda[classID]) {
         return `${type} | ${type.replace(new RegExp(`(${classID})`), "$1$$$Lambda")}`

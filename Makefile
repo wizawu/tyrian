@@ -1,3 +1,5 @@
+.PHONY: test
+
 build: install
 	tsc -d -p . --outDir dist
 
@@ -8,7 +10,10 @@ install: clean
 	1c install
 
 clean:
-	rm -rf lib node_modules tsconfig.json
+	rm -rf build lib node_modules tsconfig.json
 
-test: build
-	echo ok
+watch/test:
+	1c build -w src/test_mysql.j.ts
+
+test:
+	1c run build/test_mysql.js

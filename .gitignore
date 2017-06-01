@@ -1,3 +1,5 @@
+*.j.d.ts
+*.j.js
 *.log
 *.map
 *.swp

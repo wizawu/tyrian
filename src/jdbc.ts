@@ -2,12 +2,14 @@ import { Client } from "./client"
 import { indexName, resultSetToJSON } from "./util"
 
 export abstract class JDBCClient implements Client {
+    protected cache: net.sf.ehcache.CacheManager
     protected connection: java.sql.Connection
     protected driver: java.sql.Driver
     protected url: string
     protected SQL_UNIX_TIMESTAMP: string
 
     protected connect() {
+        this.cache = net.sf.ehcache.CacheManager.create()
         this.connection = this.driver.connect(this.url, new java.util.Properties())
     }
 
@@ -44,7 +46,7 @@ export abstract class JDBCClient implements Client {
         this.setByType(bucket, key, "string", JSON.stringify(json), ttl)
     }
 
-    get(bucket: string, key: string): byte[] | null {
+    fetch(bucket: string, key: string): byte[] | null {
         return this.getByType(bucket, key, "blob") as byte[]
     }
 
@@ -132,10 +134,14 @@ export abstract class JDBCClient implements Client {
             if (row.INDEX_NAME === "PRIMARY") pkey = row.COLUMN_NAME
         })
         this.execute(`DELETE FROM ${bucket_or_table} WHERE ${pkey} = ?`, [key])
+        if (this.cache.cacheExists(bucket_or_table)) {
+            this.cache.getCache(bucket_or_table).remove(key)
+        }
     }
 
     close() {
         this.connection.close()
+        this.cache.shutdown()
     }
 
     private prepareStatement(sql: string, parameters?: any[]) {
@@ -152,50 +158,93 @@ export abstract class JDBCClient implements Client {
         return rows.some(row => row.TABLE_NAME === table)
     }
 
-    private ensureBucket(bucket: string) {
-        if (this.existsTable(bucket)) return
-        this.ensureTable(bucket, "_key", "VARCHAR(2048)")
-        this.ensureColumn(bucket, "_int", "BIGINT")
-        this.ensureColumn(bucket, "_float", "DOUBLE")
-        this.ensureColumn(bucket, "_string", "TEXT")
-        this.ensureColumn(bucket, "_blob", "LONGBLOB")
-        this.ensureColumn(bucket, "timestamp", "BIGINT")
-        this.ensureColumn(bucket, "expires_at", "BIGINT")
-        this.ensureIndex(bucket, ["expires_at"])
+    private ensureBucket(bucket: string, withCache: boolean) {
+        this.execute(`
+            CREATE TABLE IF NOT EXISTS ${bucket} (
+                _key VARCHAR(2048) NOT NULL,
+                _int BIGINT,
+                _float DOUBLE,
+                _string TEXT,
+                _blob LONGBLOB,
+                timestamp BIGINT,
+                expires_at BIGINT,
+                PRIMARY KEY (_key),
+                INDEX ${bucket}_idx_expires_at (expires_at)
+            )
+        `)
+        if (withCache) this.ensureBucketInCache(bucket)
+    }
+
+    private ensureBucketInCache(bucket: string) {
+        let cache = new net.sf.ehcache.Cache(bucket, 4096, false, false, 3600, 300)
+        this.cache.addCacheIfAbsent(cache)
     }
 
     private getByType(bucket: string, key: string, type: string) {
-        if (!this.existsTable(bucket)) return null
+        let useCache = type !== "blob"
+        if (useCache) {
+            if (this.cache.cacheExists(bucket)) {
+                let element = this.cache.getCache(bucket).get(key)
+                if (element !== null) return element.getValue()
+            }
+        } else if (!this.existsTable(bucket)) {
+            return null
+        }
+
         let record = this.one<BucketRecord>(`
-            SELECT *, ${this.SQL_UNIX_TIMESTAMP} >= expires_at as expired
+            SELECT *, expires_at - ${this.SQL_UNIX_TIMESTAMP} as ttl
             FROM ${bucket} WHERE _key = ?`,
             [key]
         )
         if (record === null) return null
-        if ((record as any).expired) {
+        if (typeof (record as any).ttl === "number" && (record as any).ttl <= 0) {
             this.wipeUpExpiration(bucket)
             return null
         }
+
+        let value: any = null
         switch (type) {
             case "int":
-                return record._int
+                value = record._int
+                break
             case "float":
-                return record._float
+                value = record._float
+                break
             case "string":
-                return record._string
+                value = record._string
+                break
             case "blob":
-                return record._blob
-            default:
-                return null
+                value = record._blob
+                break
         }
+        if (useCache) {
+            this.ensureBucketInCache(bucket)
+            this.putToCache(bucket, key, value, (record as any).ttl / 1e6)
+        }
+        return value
     }
 
     private setByType(bucket: string, key: string, type: string, value: any, ttl?: number) {
-        this.ensureBucket(bucket)
+        let useCache = type !== "blob"
+        if (useCache) {
+            this.ensureBucketInCache(bucket)
+            let element = this.cache.getCache(bucket).get(key)
+            if (element !== null && element.getValue() === value) return
+        }
+        this.ensureBucket(bucket, useCache)
         let keys = `_key,_${type},timestamp,expires_at`
         let expires_at = ttl === undefined ? "NULL" : `${this.SQL_UNIX_TIMESTAMP} + ${ttl * 1e6}`
         let values = `?,?,${this.SQL_UNIX_TIMESTAMP},${expires_at}`
         this.execute(`REPLACE INTO ${bucket}(${keys}) VALUES(${values})`, [key, value])
+        if (useCache) this.putToCache(bucket, key, value, ttl)
+    }
+
+    private putToCache(bucket: string, key: string, value: any, ttl?: number) {
+        let config = this.cache.getConfiguration().getDefaultCacheConfiguration()
+        if (typeof ttl === "number" && ttl <= 0) return
+        if (ttl === undefined || ttl === null || ttl === NaN) ttl = config.getTimeToLiveSeconds()
+        let element = new net.sf.ehcache.Element(key, value, config.getTimeToIdleSeconds(), ttl)
+        this.cache.getCache(bucket).put(element)
     }
 
     private wipeUpExpiration(bucket: string) {

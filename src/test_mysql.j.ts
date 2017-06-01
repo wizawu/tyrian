@@ -2,6 +2,7 @@ import { assert } from "chai"
 import { describe, it, before, after, beforeEach, report } from "lightest"
 import { JDBCClient, MySQLClient } from "./index"
 
+const String = java.lang.String
 const logger = java.lang.System.err
 
 describe("MySQLClient", () => {
@@ -58,10 +59,10 @@ describe("MySQLClient", () => {
         assert.strictEqual(client.getJSON(bucket, "y"), null)
     })
 
-    it("get/put", () => {
-        client.put(bucket, "x", new java.lang.String("zxcv").getBytes())
-        assert.strictEqual<any>(new java.lang.String(client.get(bucket, "x") as byte[]), "zxcv")
-        assert.strictEqual(client.get(bucket, "y"), null)
+    it("fetch/put", () => {
+        client.put(bucket, "x", new String("zxcv").getBytes())
+        assert.strictEqual<any>(new String(client.fetch(bucket, "x") as byte[]), "zxcv")
+        assert.strictEqual(client.fetch(bucket, "y"), null)
     })
 
     it("expire", () => {
@@ -77,7 +78,6 @@ describe("MySQLClient", () => {
         client.setInt(bucket, "x", 1)
         assert.strictEqual(client.getInt(bucket, "x"), 1)
         client.setFloat(bucket, "x", 3.14)
-        assert.strictEqual(client.getInt(bucket, "x"), null)
         assert.strictEqual(client.getFloat(bucket, "x"), 3.14)
     })
 

@@ -23,7 +23,7 @@ export interface Client {
     setJSON(bucket: string, key: string, json: any, ttl?: number)
 
     // Object store
-    get(bucket: string, key: string): byte[] | null
+    fetch(bucket: string, key: string): byte[] | null
     put(bucket: string, key: string, data: byte[], ttl?: number)
 
     // RDBMS

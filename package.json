@@ -5,6 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "mvnDependencies": [
+    "net.sf.ehcache:ehcache:2.10.4",
+    "org.slf4j:slf4j-simple:1.7.25",
     "mysql:mysql-connector-java:6.0.6"
   ],
   "devDependencies": {

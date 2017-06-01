@@ -12,8 +12,13 @@ install: clean
 clean:
 	rm -rf build lib node_modules tsconfig.json
 
-watch/test:
+test/build:
+	1c build src/test_mysql.j.ts
+
+test/watch:
 	1c build -w src/test_mysql.j.ts
 
-test:
+test/run:
 	1c run build/test_mysql.js
+
+test: build test/build test/run

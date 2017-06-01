@@ -176,8 +176,10 @@ export abstract class JDBCClient implements Client {
     }
 
     private ensureBucketInCache(bucket: string) {
-        let cache = new net.sf.ehcache.Cache(bucket, 4096, false, false, 3600, 300)
-        this.cache.addCacheIfAbsent(cache)
+        if (!this.cache.cacheExists(bucket)) {
+            let cache = new net.sf.ehcache.Cache(bucket, 4096, false, false, 3600, 300)
+            this.cache.addCacheIfAbsent(cache)
+        }
     }
 
     private getByType(bucket: string, key: string, type: string) {

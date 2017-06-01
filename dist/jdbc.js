@@ -132,8 +132,10 @@ var JDBCClient = (function () {
             this.ensureBucketInCache(bucket);
     };
     JDBCClient.prototype.ensureBucketInCache = function (bucket) {
-        var cache = new net.sf.ehcache.Cache(bucket, 4096, false, false, 3600, 300);
-        this.cache.addCacheIfAbsent(cache);
+        if (!this.cache.cacheExists(bucket)) {
+            var cache = new net.sf.ehcache.Cache(bucket, 4096, false, false, 3600, 300);
+            this.cache.addCacheIfAbsent(cache);
+        }
     };
     JDBCClient.prototype.getByType = function (bucket, key, type) {
         var useCache = type !== "blob";

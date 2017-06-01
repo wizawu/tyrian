@@ -1,5 +1,6 @@
 import { Client } from "./client";
 export declare abstract class JDBCClient implements Client {
+    protected cache: net.sf.ehcache.CacheManager;
     protected connection: java.sql.Connection;
     protected driver: java.sql.Driver;
     protected url: string;
@@ -13,7 +14,7 @@ export declare abstract class JDBCClient implements Client {
     setFloat(bucket: string, key: string, value: number, ttl?: number): void;
     setString(bucket: string, key: string, value: string, ttl?: number): void;
     setJSON(bucket: string, key: string, json: any, ttl?: number): void;
-    get(bucket: string, key: string): byte[] | null;
+    fetch(bucket: string, key: string): byte[] | null;
     put(bucket: string, key: string, data: byte[], ttl?: number): void;
     ensureTable(table: string, pkey: string, type: string): void;
     ensureColumn(table: string, column: string, type: string): void;
@@ -28,8 +29,10 @@ export declare abstract class JDBCClient implements Client {
     close(): void;
     private prepareStatement(sql, parameters?);
     private existsTable(table);
-    private ensureBucket(bucket);
+    private ensureBucket(bucket, withCache);
+    private ensureBucketInCache(bucket);
     private getByType(bucket, key, type);
     private setByType(bucket, key, type, value, ttl?);
+    private putToCache(bucket, key, value, ttl?);
     private wipeUpExpiration(bucket);
 }

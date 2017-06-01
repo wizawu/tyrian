@@ -44,11 +44,11 @@ export abstract class JDBCClient implements Client {
         this.setByType(bucket, key, "string", JSON.stringify(json), ttl)
     }
 
-    get(bucket: string, key: string): java.lang.Byte[] | null {
-        return this.getByType(bucket, key, "blob") as java.lang.Byte[]
+    get(bucket: string, key: string): byte[] | null {
+        return this.getByType(bucket, key, "blob") as byte[]
     }
 
-    put(bucket: string, key: string, data: java.lang.Byte[], ttl?: number) {
+    put(bucket: string, key: string, data: byte[], ttl?: number) {
         this.setByType(bucket, key, "blob", data, ttl)
     }
 
@@ -131,7 +131,7 @@ export abstract class JDBCClient implements Client {
         rows.forEach(row => {
             if (row.INDEX_NAME === "PRIMARY") pkey = row.COLUMN_NAME
         })
-        this.execute(`DELETE FROM ${bucket_or_table} WHERE ${pkey} = ${key}`)
+        this.execute(`DELETE FROM ${bucket_or_table} WHERE ${pkey} = ?`, [key])
     }
 
     close() {
@@ -167,7 +167,7 @@ export abstract class JDBCClient implements Client {
     private getByType(bucket: string, key: string, type: string) {
         if (!this.existsTable(bucket)) return null
         let record = this.one<BucketRecord>(`
-            SELECT *, expires_at >= ${this.SQL_UNIX_TIMESTAMP} as expired
+            SELECT *, ${this.SQL_UNIX_TIMESTAMP} >= expires_at as expired
             FROM ${bucket} WHERE _key = ?`,
             [key]
         )
@@ -199,7 +199,7 @@ export abstract class JDBCClient implements Client {
     }
 
     private wipeUpExpiration(bucket: string) {
-        this.execute(`DELETE FROM ${bucket} WHERE expires_at >= ${this.SQL_UNIX_TIMESTAMP}`)
+        this.execute(`DELETE FROM ${bucket} WHERE ${this.SQL_UNIX_TIMESTAMP} >= expires_at`)
     }
 }
 
@@ -208,7 +208,7 @@ interface BucketRecord {
     _int?: number
     _float?: number
     _string?: string
-    _blob?: java.lang.Byte[]
+    _blob?: byte[]
     timestamp: number
     expires_at?: number
 }

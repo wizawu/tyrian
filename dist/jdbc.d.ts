@@ -13,8 +13,8 @@ export declare abstract class JDBCClient implements Client {
     setFloat(bucket: string, key: string, value: number, ttl?: number): void;
     setString(bucket: string, key: string, value: string, ttl?: number): void;
     setJSON(bucket: string, key: string, json: any, ttl?: number): void;
-    get(bucket: string, key: string): java.lang.Byte[] | null;
-    put(bucket: string, key: string, data: java.lang.Byte[], ttl?: number): void;
+    get(bucket: string, key: string): byte[] | null;
+    put(bucket: string, key: string, data: byte[], ttl?: number): void;
     ensureTable(table: string, pkey: string, type: string): void;
     ensureColumn(table: string, column: string, type: string): void;
     ensureIndex(table: string, columns: string[]): void;

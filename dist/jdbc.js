@@ -103,7 +103,7 @@ var JDBCClient = (function () {
             if (row.INDEX_NAME === "PRIMARY")
                 pkey = row.COLUMN_NAME;
         });
-        this.execute("DELETE FROM " + bucket_or_table + " WHERE " + pkey + " = " + key);
+        this.execute("DELETE FROM " + bucket_or_table + " WHERE " + pkey + " = ?", [key]);
     };
     JDBCClient.prototype.close = function () {
         this.connection.close();
@@ -136,7 +136,7 @@ var JDBCClient = (function () {
     JDBCClient.prototype.getByType = function (bucket, key, type) {
         if (!this.existsTable(bucket))
             return null;
-        var record = this.one("\n            SELECT *, expires_at >= " + this.SQL_UNIX_TIMESTAMP + " as expired\n            FROM " + bucket + " WHERE _key = ?", [key]);
+        var record = this.one("\n            SELECT *, " + this.SQL_UNIX_TIMESTAMP + " >= expires_at as expired\n            FROM " + bucket + " WHERE _key = ?", [key]);
         if (record === null)
             return null;
         if (record.expired) {
@@ -164,7 +164,7 @@ var JDBCClient = (function () {
         this.execute("REPLACE INTO " + bucket + "(" + keys + ") VALUES(" + values + ")", [key, value]);
     };
     JDBCClient.prototype.wipeUpExpiration = function (bucket) {
-        this.execute("DELETE FROM " + bucket + " WHERE expires_at >= " + this.SQL_UNIX_TIMESTAMP);
+        this.execute("DELETE FROM " + bucket + " WHERE " + this.SQL_UNIX_TIMESTAMP + " >= expires_at");
     };
     return JDBCClient;
 }());

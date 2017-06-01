@@ -23,8 +23,8 @@ export interface Client {
     setJSON(bucket: string, key: string, json: any, ttl?: number)
 
     // Object store
-    get(bucket: string, key: string): java.lang.Byte[] | null
-    put(bucket: string, key: string, data: java.lang.Byte[], ttl?: number)
+    get(bucket: string, key: string): byte[] | null
+    put(bucket: string, key: string, data: byte[], ttl?: number)
 
     // RDBMS
     ensureTable(table: string, pkey: string, type: string)

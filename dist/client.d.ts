@@ -18,8 +18,8 @@ export interface Client {
     setFloat(bucket: string, key: string, value: number, ttl?: number): any;
     setString(bucket: string, key: string, value: string, ttl?: number): any;
     setJSON(bucket: string, key: string, json: any, ttl?: number): any;
-    get(bucket: string, key: string): java.lang.Byte[] | null;
-    put(bucket: string, key: string, data: java.lang.Byte[], ttl?: number): any;
+    get(bucket: string, key: string): byte[] | null;
+    put(bucket: string, key: string, data: byte[], ttl?: number): any;
     ensureTable(table: string, pkey: string, type: string): any;
     ensureColumn(table: string, column: string, type: string): any;
     ensureIndex(table: string, columns: string[]): any;

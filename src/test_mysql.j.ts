@@ -1,5 +1,5 @@
 import { assert } from "chai"
-import { describe, it, before, after, beforeEach, report } from "lightest"
+import { describe, it, before, after, beforeEach, afterEach, report } from "lightest"
 import { JDBCClient, MySQLClient } from "./index"
 
 const String = java.lang.String
@@ -10,7 +10,7 @@ describe("MySQLClient", () => {
     let bucket = "bucket"
     let table = "bucket"
 
-    before(() => {
+    beforeEach(() => {
         client = new MySQLClient({
             host: "127.0.0.1",
             port: 3306,
@@ -19,17 +19,12 @@ describe("MySQLClient", () => {
             password: "venividivici",
             useSSL: false,
         })
+        client.execute(`DROP TABLE IF EXISTS ${bucket}`)
+        client.execute(`DROP TABLE IF EXISTS ${table}`)
     })
 
-    after(() => {
+    afterEach(() => {
         client.close()
-    })
-
-    beforeEach(() => {
-        try {
-            client.execute(`DROP TABLE ${table}`)
-        } catch (ex) {
-        }
     })
 
     it("getInt/setInt", () => {
@@ -208,6 +203,100 @@ describe("MySQLClient", () => {
         } catch (ex) {
             assert.isString(ex.message)
         }
+    })
+})
+
+describe("MySQLClient benchmark", () => {
+    let client: JDBCClient
+    let bucket = "bucket"
+    let table = "bucket"
+    let bulk = 100
+
+    before(() => {
+        client = new MySQLClient({
+            host: "127.0.0.1",
+            port: 3306,
+            database: "test",
+            user: "root",
+            password: "venividivici",
+            useSSL: false,
+        })
+        client.execute(`DROP TABLE IF EXISTS ${bucket}`)
+        client.execute(`DROP TABLE IF EXISTS ${table}`)
+        client.setString(bucket, "_", "_")
+    })
+
+    after(() => {
+        client.close()
+    })
+
+    it("setInt", () => {
+        for (let i = 0; i < bulk; i++) {
+            client.setInt(bucket, "int" + i, i)
+        }
+    })
+
+    it("getInt", () => {
+        for (let i = 0; i < bulk; i++) {
+            assert.strictEqual(client.getInt(bucket, "int" + i), i)
+        }
+    })
+
+    it("setJSON", () => {
+        for (let i = 0; i < bulk; i++) {
+            client.setJSON(bucket, "json" + i, { value: i })
+        }
+    })
+
+    it("getJSON", () => {
+        for (let i = 0; i < bulk; i++) {
+            assert.strictEqual(client.getJSON(bucket, "json" + i).value, i)
+        }
+    })
+
+    it("put", () => {
+        for (let i = 0; i < bulk; i++) {
+            client.put(bucket, "object" + i, new String("" + i).getBytes())
+        }
+    })
+
+    it("fetch", () => {
+        for (let i = 0; i < bulk; i++) {
+            assert.strictEqual(
+                new String(client.fetch(bucket, "object" + i) as any),
+                new String("" + i)
+            )
+        }
+    })
+
+    it("delete", () => {
+        for (let i = 0; i < bulk; i++) {
+            client.delete(bucket, "int" + i)
+        }
+    })
+
+    it("insert", () => {
+        for (let i = 0; i < bulk; i++) {
+            client.insert(table, { _key: "insert" + i, _int: i })
+        }
+    })
+
+    it("upsert", () => {
+        for (let i = 0; i < bulk; i++) {
+            client.upsert(table, { _key: "upsert" + i, _string: "upsert" })
+        }
+    })
+
+    it("one", () => {
+        for (let i = 0; i < bulk; i++) {
+            let row = client.one<any>(`SELECT * FROM ${table} WHERE _key = ?`, ["insert" + i])
+            assert.strictEqual(row._int, i)
+        }
+    })
+
+    it("list", () => {
+        let rows = client.list<any>(`SELECT * FROM ${table} WHERE _string = ?`, ["upsert"])
+        assert.strictEqual(rows.every(row => row._string === "upsert"), true)
     })
 })
 

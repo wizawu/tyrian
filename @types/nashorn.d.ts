@@ -14,3 +14,4 @@ declare class Java {
 }
 
 declare const Packages: any
+declare const arguments: string[]

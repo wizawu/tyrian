@@ -1,4 +1,10 @@
+export interface Host {
+    host: string
+    port: int
+}
+
 export interface Options {
+    hosts?: Host[]
     host: string
     port: int
     database: string

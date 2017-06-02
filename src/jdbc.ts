@@ -8,10 +8,7 @@ export abstract class JDBCClient implements Client {
     protected url: string
     protected SQL_UNIX_TIMESTAMP: string
 
-    protected connect() {
-        this.cache = net.sf.ehcache.CacheManager.create()
-        this.connection = this.driver.connect(this.url, new java.util.Properties())
-    }
+    protected abstract connect(): void
 
     getInt(bucket: string, key: string): number | null {
         return this.getByType(bucket, key, "int") as number

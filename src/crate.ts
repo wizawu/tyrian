@@ -20,4 +20,19 @@ export class CrateClient extends JDBCClient {
     protected connect() {
         this.connection = this.driver.connect(this.url, new java.util.Properties())
     }
+
+    protected ensureBucket(bucket: string, withCache: boolean) {
+        this.execute(`
+            CREATE TABLE IF NOT EXISTS ${bucket} (
+                _key STRING PRIMARY KEY,
+                _int LONG,
+                _float DOUBLE,
+                _string STRING,
+                _blob STRING,
+                timestamp LONG,
+                expires_at LONG INDEX USING PLAIN
+            )
+        `)
+        if (withCache) this.ensureBucketInCache(bucket)
+    }
 }

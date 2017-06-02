@@ -8,6 +8,7 @@ export abstract class JDBCClient implements Client {
     protected SQL_UNIX_TIMESTAMP: string
 
     protected abstract connect(): void
+    protected abstract ensureBucket(bucket: string, withCache: boolean)
 
     getInt(bucket: string, key: string): number | null {
         return this.getByType(bucket, key, "int") as number
@@ -154,24 +155,7 @@ export abstract class JDBCClient implements Client {
         return rows.some(row => row.TABLE_NAME === table)
     }
 
-    private ensureBucket(bucket: string, withCache: boolean) {
-        this.execute(`
-            CREATE TABLE IF NOT EXISTS ${bucket} (
-                _key VARCHAR(2048) NOT NULL,
-                _int BIGINT,
-                _float DOUBLE,
-                _string TEXT,
-                _blob LONGBLOB,
-                timestamp BIGINT,
-                expires_at BIGINT,
-                PRIMARY KEY (_key),
-                INDEX ${bucket}_idx_expires_at (expires_at)
-            )
-        `)
-        if (withCache) this.ensureBucketInCache(bucket)
-    }
-
-    private ensureBucketInCache(bucket: string) {
+    protected ensureBucketInCache(bucket: string) {
         if (!this.cache.cacheExists(bucket)) {
             let cache = new net.sf.ehcache.Cache(bucket, 4096, false, false, 3600, 300)
             this.cache.addCacheIfAbsent(cache)

@@ -286,7 +286,7 @@ let runTest2 = (description, newClient) => describe(description, () => {
     })
 })
 
-runTest1("MySQLClient", () =>
+false && runTest1("MySQLClient", () =>
     new MySQLClient({
         host: "127.0.0.1",
         port: 3306,
@@ -297,17 +297,17 @@ runTest1("MySQLClient", () =>
     })
 )
 
-false && runTest1("CrateClient", () =>
+runTest1("CrateClient", () =>
     new CrateClient({
         host: "127.0.0.1",
-        port: 4200,
+        port: 5432,
         database: "",
         user: "",
         password: "",
     })
 )
 
-runTest2("MySQLClient benchmark", () =>
+false && runTest2("MySQLClient benchmark", () =>
     new MySQLClient({
         host: "127.0.0.1",
         port: 3306,

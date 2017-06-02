@@ -32,4 +32,21 @@ export class MySQLClient extends JDBCClient {
     protected connect() {
         this.connection = this.driver.connect(this.url, new java.util.Properties())
     }
+
+    protected ensureBucket(bucket: string, withCache: boolean) {
+        this.execute(`
+            CREATE TABLE IF NOT EXISTS ${bucket} (
+                _key VARCHAR(2048) NOT NULL,
+                _int BIGINT,
+                _float DOUBLE,
+                _string TEXT,
+                _blob LONGBLOB,
+                timestamp BIGINT,
+                expires_at BIGINT,
+                PRIMARY KEY (_key),
+                INDEX ${bucket}_idx_expires_at (expires_at)
+            )
+        `)
+        if (withCache) this.ensureBucketInCache(bucket)
+    }
 }

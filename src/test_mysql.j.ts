@@ -221,7 +221,7 @@ describe("MySQLClient benchmark", () => {
             password: "venividivici",
             useSSL: false,
             logger: "com.mysql.cj.core.log.Slf4JLogger",
-            profileSQL: true,
+            profileSQL: java.lang.System.getenv("PROFILE_SQL") === "true",
         })
         client.execute(`DROP TABLE IF EXISTS ${bucket}`)
         client.execute(`DROP TABLE IF EXISTS ${table}`)

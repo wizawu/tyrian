@@ -24,4 +24,4 @@ test/run:
 test: build test/build test/run
 
 bench:
-	make test/run 2>&1 | grep duration | sort -rnk 14
+	PROFILE_SQL=true make test/run 2>&1 | grep duration | sort -rnk 14

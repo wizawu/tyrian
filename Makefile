@@ -10,7 +10,7 @@ install: clean
 	1c install
 
 clean:
-	rm -rf build lib node_modules tsconfig.json
+	rm -rf build lib node_modules tsconfig.json yarn.lock
 
 test/build:
 	1c build src/test_mysql.j.ts

@@ -10,7 +10,7 @@
   ],
   "devDependencies": {
     "@types/chai": "^3.5.2",
-    "chai": "^4.0.0",
+    "chai": "^3.5.0",
     "lightest": "^0.1.1"
   }
 }

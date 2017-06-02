@@ -4,11 +4,9 @@ import { Options } from "./client"
 export class MySQLClient extends JDBCClient {
     constructor(options: Options) {
         super()
-
         let { host, port, database, user, password } = options
         this.driver = new com.mysql.cj.jdbc.Driver()
         this.SQL_UNIX_TIMESTAMP = "floor(unix_timestamp(current_timestamp(6)) * 1000000)"
-
         this.url = `jdbc:mysql://${host}:${port}/${database}?user=${user}&password=${password}`
         this.url += `&characterEncoding=${options.characterEncoding || "UTF-8"}`
         if (options.autoReconnect !== undefined) {
@@ -26,7 +24,11 @@ export class MySQLClient extends JDBCClient {
         if (options.useSSL !== undefined) {
             this.url += `&useSSL=${options.useSSL}`
         }
-
         this.connect()
+    }
+
+    protected connect() {
+        this.cache = net.sf.ehcache.CacheManager.create()
+        this.connection = this.driver.connect(this.url, new java.util.Properties())
     }
 }

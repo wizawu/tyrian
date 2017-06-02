@@ -14,6 +14,12 @@ export class MySQLClient extends JDBCClient {
         if (options.autoReconnect !== undefined) {
             this.url += `&autoReconnect=${options.autoReconnect}`
         }
+        if (options.logger !== undefined) {
+            this.url += `&logger=${options.logger}`
+        }
+        if (options.profileSQL !== undefined) {
+            this.url += `&profileSQL=${options.profileSQL}`
+        }
         if (options.testOnBorrow !== undefined) {
             this.url += `&testOnBorrow=${options.testOnBorrow}`
         }

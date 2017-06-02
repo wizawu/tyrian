@@ -7,6 +7,8 @@ export interface Options {
 
     autoReconnect?: boolean
     characterEncoding?: string
+    logger?: string
+    profileSQL?: boolean
     testOnBorrow?: boolean
     useSSL?: boolean
 }

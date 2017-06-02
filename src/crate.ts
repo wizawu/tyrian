@@ -24,11 +24,11 @@ export class CrateClient extends JDBCClient {
     protected ensureBucket(bucket: string, withCache: boolean) {
         this.execute(`
             CREATE TABLE IF NOT EXISTS ${bucket} (
-                _key STRING PRIMARY KEY,
-                _int LONG,
-                _float DOUBLE,
-                _string STRING,
-                _blob STRING,
+                unique_key STRING PRIMARY KEY,
+                int_value LONG,
+                float_value DOUBLE,
+                string_value STRING,
+                blob_value STRING,
                 timestamp LONG,
                 expires_at LONG INDEX USING PLAIN
             )

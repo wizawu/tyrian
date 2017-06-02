@@ -175,7 +175,7 @@ export abstract class JDBCClient implements Client {
 
         let record = this.one<BucketRecord>(`
             SELECT *, expires_at - ${this.SQL_UNIX_TIMESTAMP} as ttl
-            FROM ${bucket} WHERE _key = ?`,
+            FROM ${bucket} WHERE unique_key = ?`,
             [key]
         )
         if (record === null) return null
@@ -187,16 +187,16 @@ export abstract class JDBCClient implements Client {
         let value: any = null
         switch (type) {
             case "int":
-                value = record._int
+                value = record.int_value
                 break
             case "float":
-                value = record._float
+                value = record.float_value
                 break
             case "string":
-                value = record._string
+                value = record.string_value
                 break
             case "blob":
-                value = record._blob
+                value = record.blob_value
                 break
         }
         if (useCache) {
@@ -214,7 +214,7 @@ export abstract class JDBCClient implements Client {
             if (element !== null && element.getValue() === value) return
         }
         this.ensureBucket(bucket, useCache)
-        let keys = `_key,_${type},timestamp,expires_at`
+        let keys = `unique_key,${type}_value,timestamp,expires_at`
         let expires_at = ttl === undefined ? "NULL" : `${this.SQL_UNIX_TIMESTAMP} + ${ttl * 1e6}`
         let values = `?,?,${this.SQL_UNIX_TIMESTAMP},${expires_at}`
         this.execute(`REPLACE INTO ${bucket}(${keys}) VALUES(${values})`, [key, value])
@@ -235,11 +235,11 @@ export abstract class JDBCClient implements Client {
 }
 
 interface BucketRecord {
-    _key: string
-    _int?: number
-    _float?: number
-    _string?: string
-    _blob?: byte[]
+    unique_key: string
+    int_value?: number
+    float_value?: number
+    string_value?: string
+    blob_value?: byte[]
     timestamp: number
     expires_at?: number
 }

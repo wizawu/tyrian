@@ -36,14 +36,14 @@ export class MySQLClient extends JDBCClient {
     protected ensureBucket(bucket: string, withCache: boolean) {
         this.execute(`
             CREATE TABLE IF NOT EXISTS ${bucket} (
-                _key VARCHAR(2048) NOT NULL,
-                _int BIGINT,
-                _float DOUBLE,
-                _string TEXT,
-                _blob LONGBLOB,
+                unique_key VARCHAR(2048) NOT NULL,
+                int_value BIGINT,
+                float_value DOUBLE,
+                string_value TEXT,
+                blob_value LONGBLOB,
                 timestamp BIGINT,
                 expires_at BIGINT,
-                PRIMARY KEY (_key),
+                PRIMARY KEY (unique_key),
                 INDEX ${bucket}_idx_expires_at (expires_at)
             )
         `)

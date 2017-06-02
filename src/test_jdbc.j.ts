@@ -263,30 +263,30 @@ let runTest2 = (description, newClient) => describe(description, () => {
 
     it("insert", () => {
         for (let i = 0; i < bulk; i++) {
-            client.insert(table, { _key: "insert" + i, _int: i })
+            client.insert(table, { unique_key: "insert" + i, int_value: i })
         }
     })
 
     it("upsert", () => {
         for (let i = 0; i < bulk; i++) {
-            client.upsert(table, { _key: "upsert" + i, _string: "upsert" })
+            client.upsert(table, { unique_key: "upsert" + i, string_value: "upsert" })
         }
     })
 
     it("one", () => {
         for (let i = 0; i < bulk; i++) {
-            let row = client.one<any>(`SELECT * FROM ${table} WHERE _key = ?`, ["insert" + i])
-            assert.strictEqual(row._int, i)
+            let row = client.one<any>(`SELECT * FROM ${table} WHERE unique_key = ?`, ["insert" + i])
+            assert.strictEqual(row.int_value, i)
         }
     })
 
     it("list", () => {
-        let rows = client.list<any>(`SELECT * FROM ${table} WHERE _string = ?`, ["upsert"])
-        assert.strictEqual(rows.every(row => row._string === "upsert"), true)
+        let rows = client.list<any>(`SELECT * FROM ${table} WHERE string_value = ?`, ["upsert"])
+        assert.strictEqual(rows.every(row => row.string_value === "upsert"), true)
     })
 })
 
-false && runTest1("MySQLClient", () =>
+true && runTest1("MySQLClient", () =>
     new MySQLClient({
         host: "127.0.0.1",
         port: 3306,
@@ -297,7 +297,7 @@ false && runTest1("MySQLClient", () =>
     })
 )
 
-runTest1("CrateClient", () =>
+false && runTest1("CrateClient", () =>
     new CrateClient({
         host: "127.0.0.1",
         port: 5432,
@@ -307,7 +307,7 @@ runTest1("CrateClient", () =>
     })
 )
 
-false && runTest2("MySQLClient benchmark", () =>
+true && runTest2("MySQLClient benchmark", () =>
     new MySQLClient({
         host: "127.0.0.1",
         port: 3306,

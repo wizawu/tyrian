@@ -1,6 +1,6 @@
 import { assert } from "chai"
 import { describe, it, before, after, beforeEach, afterEach, report } from "lightest"
-import { JDBCClient, MySQLClient } from "./index"
+import { JDBCClient, MySQLClient, CrateClient } from "./index"
 
 const String = java.lang.String
 const logger = java.lang.System.err
@@ -294,6 +294,16 @@ runTest1("MySQLClient", () =>
         user: "root",
         password: "venividivici",
         useSSL: false,
+    })
+)
+
+false && runTest1("CrateClient", () =>
+    new CrateClient({
+        host: "127.0.0.1",
+        port: 4200,
+        database: "",
+        user: "",
+        password: "",
     })
 )
 

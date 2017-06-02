@@ -4,7 +4,6 @@ import { indexName, resultSetToJSON } from "./util"
 export abstract class JDBCClient implements Client {
     protected cache: net.sf.ehcache.CacheManager
     protected connection: java.sql.Connection
-    protected driver: java.sql.Driver
     protected url: string
     protected SQL_UNIX_TIMESTAMP: string
 

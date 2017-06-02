@@ -23,6 +23,12 @@ var MySQLClient = (function (_super) {
         if (options.autoReconnect !== undefined) {
             _this.url += "&autoReconnect=" + options.autoReconnect;
         }
+        if (options.logger !== undefined) {
+            _this.url += "&logger=" + options.logger;
+        }
+        if (options.profileSQL !== undefined) {
+            _this.url += "&profileSQL=" + options.profileSQL;
+        }
         if (options.testOnBorrow !== undefined) {
             _this.url += "&testOnBorrow=" + options.testOnBorrow;
         }

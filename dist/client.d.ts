@@ -6,6 +6,8 @@ export interface Options {
     password: string;
     autoReconnect?: boolean;
     characterEncoding?: string;
+    logger?: string;
+    profileSQL?: boolean;
     testOnBorrow?: boolean;
     useSSL?: boolean;
 }

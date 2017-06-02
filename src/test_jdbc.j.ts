@@ -5,20 +5,13 @@ import { JDBCClient, MySQLClient } from "./index"
 const String = java.lang.String
 const logger = java.lang.System.err
 
-describe("MySQLClient", () => {
+let runTest1 = (description, newClient) => describe(description, () => {
     let client: JDBCClient
     let bucket = "bucket"
     let table = "bucket"
 
     beforeEach(() => {
-        client = new MySQLClient({
-            host: "127.0.0.1",
-            port: 3306,
-            database: "test",
-            user: "root",
-            password: "venividivici",
-            useSSL: false,
-        })
+        client = newClient()
         client.execute(`DROP TABLE IF EXISTS ${bucket}`)
         client.execute(`DROP TABLE IF EXISTS ${table}`)
     })
@@ -206,23 +199,14 @@ describe("MySQLClient", () => {
     })
 })
 
-describe("MySQLClient benchmark", () => {
+let runTest2 = (description, newClient) => describe(description, () => {
     let client: JDBCClient
     let bucket = "bucket"
     let table = "bucket"
     let bulk = 100
 
     before(() => {
-        client = new MySQLClient({
-            host: "127.0.0.1",
-            port: 3306,
-            database: "test",
-            user: "root",
-            password: "venividivici",
-            useSSL: false,
-            logger: "com.mysql.cj.core.log.Slf4JLogger",
-            profileSQL: java.lang.System.getenv("PROFILE_SQL") === "true",
-        })
+        client = newClient()
         client.execute(`DROP TABLE IF EXISTS ${bucket}`)
         client.execute(`DROP TABLE IF EXISTS ${table}`)
         client.setString(bucket, "_", "_")
@@ -301,6 +285,30 @@ describe("MySQLClient benchmark", () => {
         assert.strictEqual(rows.every(row => row._string === "upsert"), true)
     })
 })
+
+runTest1("MySQLClient", () =>
+    new MySQLClient({
+        host: "127.0.0.1",
+        port: 3306,
+        database: "test",
+        user: "root",
+        password: "venividivici",
+        useSSL: false,
+    })
+)
+
+runTest2("MySQLClient benchmark", () =>
+    new MySQLClient({
+        host: "127.0.0.1",
+        port: 3306,
+        database: "test",
+        user: "root",
+        password: "venividivici",
+        useSSL: false,
+        logger: "com.mysql.cj.core.log.Slf4JLogger",
+        profileSQL: java.lang.System.getenv("PROFILE_SQL") === "true",
+    })
+)
 
 logger.print(report.toString())
 assert.isOk(report.ok())

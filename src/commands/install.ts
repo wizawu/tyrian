@@ -12,6 +12,7 @@ const buildGradle = deps => `
 apply plugin: "java"
 
 repositories {
+  jcenter()
   mavenCentral()
 }
 

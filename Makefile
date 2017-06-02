@@ -13,13 +13,13 @@ clean:
 	rm -rf build lib node_modules tsconfig.json yarn.lock
 
 test/build:
-	1c build src/test_mysql.j.ts
+	1c build src/test_jdbc.j.ts
 
 test/watch:
-	1c build -w src/test_mysql.j.ts
+	1c build -w src/test_jdbc.j.ts
 
 test/run:
-	1c run build/test_mysql.js
+	1c run build/test_jdbc.js
 
 test: build test/build test/run
 

@@ -49,4 +49,13 @@ export class MySQLClient extends JDBCClient {
         `)
         if (withCache) this.ensureBucketInCache(bucket)
     }
+
+    upsert(table: string, object: any) {
+        let keys = Object.keys(object).join(",")
+        let values = Object.keys(object).map(() => "?").join(",")
+        this.execute(
+            `REPLACE INTO ${table}(${keys}) VALUES(${values})`,
+            Object.keys(object).map(key => object[key])
+        )
+    }
 }

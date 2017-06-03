@@ -9,6 +9,7 @@ export abstract class JDBCClient implements Client {
 
     protected abstract connect(): void
     protected abstract ensureBucket(bucket: string, withCache: boolean)
+    abstract upsert(table: string, object: any)
 
     getInt(bucket: string, key: string): number | null {
         return this.getByType(bucket, key, "int") as number
@@ -54,8 +55,7 @@ export abstract class JDBCClient implements Client {
     ensureTable(table: string, pkey: string, type: string) {
         this.execute(`
             CREATE TABLE IF NOT EXISTS ${table} (
-                ${pkey} ${type} NOT NULL,
-                PRIMARY KEY (${pkey})
+                ${pkey} ${type} PRIMARY KEY
             )
         `)
     }
@@ -84,7 +84,11 @@ export abstract class JDBCClient implements Client {
         let result: T | null = null
         let statement = this.prepareStatement(sql, parameters)
         let resultSet = statement.executeQuery()
-        if (resultSet.next()) result = resultSetToJSON<T>(resultSet)
+        java.lang.System.out.println(true)
+        if (resultSet.next()) {
+            java.lang.System.out.println(true)
+            result = resultSetToJSON<T>(resultSet)
+        }
         resultSet.close()
         statement.close()
         return result
@@ -105,15 +109,6 @@ export abstract class JDBCClient implements Client {
         let values = Object.keys(object).map(() => "?").join(",")
         this.execute(
             `INSERT INTO ${table}(${keys}) VALUES(${values})`,
-            Object.keys(object).map(key => object[key])
-        )
-    }
-
-    upsert(table: string, object: any) {
-        let keys = Object.keys(object).join(",")
-        let values = Object.keys(object).map(() => "?").join(",")
-        this.execute(
-            `REPLACE INTO ${table}(${keys}) VALUES(${values})`,
             Object.keys(object).map(key => object[key])
         )
     }

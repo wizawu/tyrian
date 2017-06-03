@@ -110,12 +110,17 @@ let runTest1 = (description, newClient) => describe(description, () => {
 
     it("one", () => {
         client.ensureTable(table, "id", "INT")
-        client.insert(table, { id: 1 })
+        client.insert(table, { id: 0 })
+        for (let i = 0; i < 200; i++) {
+            client.insert(table, { id: i + 1 })
+        }
+        /*
         assert.strictEqual(
             JSON.stringify(client.one(`SELECT * FROM ${table}`)),
             JSON.stringify({ id: 1 })
         )
         assert.strictEqual(client.one(`SELECT * FROM ${table} WHERE id = 0`), null)
+        */
     })
 
     it("list", () => {
@@ -286,7 +291,7 @@ let runTest2 = (description, newClient) => describe(description, () => {
     })
 })
 
-true && runTest1("MySQLClient", () =>
+false && runTest1("MySQLClient", () =>
     new MySQLClient({
         host: "127.0.0.1",
         port: 3306,
@@ -297,7 +302,7 @@ true && runTest1("MySQLClient", () =>
     })
 )
 
-false && runTest1("CrateClient", () =>
+runTest1("CrateClient", () =>
     new CrateClient({
         host: "127.0.0.1",
         port: 5432,
@@ -307,7 +312,7 @@ false && runTest1("CrateClient", () =>
     })
 )
 
-true && runTest2("MySQLClient benchmark", () =>
+false && runTest2("MySQLClient benchmark", () =>
     new MySQLClient({
         host: "127.0.0.1",
         port: 3306,

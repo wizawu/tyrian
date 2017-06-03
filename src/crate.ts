@@ -35,4 +35,16 @@ export class CrateClient extends JDBCClient {
         `)
         if (withCache) this.ensureBucketInCache(bucket)
     }
+
+    upsert(table: string, object: any) {
+        let randomRow = this.one<any>(`SELECT * FROM ${table} LIMIT 1`)
+        let keys = Object.keys(randomRow || object)
+        let values = keys.map(key => object[key])
+        let sql = `
+            INSERT INTO ${table}(${keys.join(",")}) VALUES(${keys.map(() => "?").join(",")})
+            ON DUPLICATE KEY UPDATE
+            ${keys.map(key => key + " = ?").join(",")}
+        `
+        this.execute(sql, values.concat(values))
+    }
 }

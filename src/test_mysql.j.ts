@@ -219,7 +219,6 @@ describe("MySQLClient benchmark", () => {
     let client: JDBCClient
     let bucket = "bucket"
     let table = "bucket"
-    let bulk = 100
 
     before(() => {
         client = new MySQLClient({
@@ -241,68 +240,56 @@ describe("MySQLClient benchmark", () => {
         client.close()
     })
 
+    function batch(func: any) {
+        for (let i = 0; i < 100; i++) func(i)
+    }
+
     it("setInt", () => {
-        for (let i = 0; i < bulk; i++) {
-            client.setInt(bucket, "int" + i, i)
-        }
+        batch(i => client.setInt(bucket, "int" + i, i))
     })
 
     it("getInt", () => {
-        for (let i = 0; i < bulk; i++) {
-            assert.strictEqual(client.getInt(bucket, "int" + i), i)
-        }
+        batch(i => assert.strictEqual(client.getInt(bucket, "int" + i), i))
     })
 
     it("setJSON", () => {
-        for (let i = 0; i < bulk; i++) {
-            client.setJSON(bucket, "json" + i, { value: i })
-        }
+        batch(i => client.setJSON(bucket, "json" + i, { value: i }))
     })
 
     it("getJSON", () => {
-        for (let i = 0; i < bulk; i++) {
-            assert.strictEqual(client.getJSON(bucket, "json" + i).value, i)
-        }
+        batch(i => assert.strictEqual(client.getJSON(bucket, "json" + i).value, i))
     })
 
     it("put", () => {
-        for (let i = 0; i < bulk; i++) {
-            client.put(bucket, "object" + i, new String("" + i).getBytes())
-        }
+        batch(i => client.put(bucket, "object" + i, new String("" + i).getBytes()))
     })
 
     it("fetch", () => {
-        for (let i = 0; i < bulk; i++) {
+        batch(i =>
             assert.strictEqual(
                 new String(client.fetch(bucket, "object" + i) as any),
                 new String("" + i)
             )
-        }
+        )
     })
 
     it("delete", () => {
-        for (let i = 0; i < bulk; i++) {
-            client.delete(bucket, "int" + i)
-        }
+        batch(i => client.delete(bucket, "int" + i))
     })
 
     it("insert", () => {
-        for (let i = 0; i < bulk; i++) {
-            client.insert(table, { key_: "insert" + i, int_: i })
-        }
+        batch(i => client.insert(table, { key_: "insert" + i, int_: i }))
     })
 
     it("upsert", () => {
-        for (let i = 0; i < bulk; i++) {
-            client.upsert(table, { key_: "upsert" + i, string_: "upsert" })
-        }
+        batch(i => client.upsert(table, { key_: "upsert" + i, string_: "upsert" }))
     })
 
     it("one", () => {
-        for (let i = 0; i < bulk; i++) {
+        batch(i => {
             let row = client.one<any>(`SELECT * FROM ${table} WHERE key_ = ?`, ["insert" + i])
             assert.strictEqual(row.int_, i)
-        }
+        })
     })
 
     it("list", () => {

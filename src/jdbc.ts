@@ -8,45 +8,56 @@ export abstract class JDBCClient implements Client {
 
     protected abstract connect(): void
 
-    getInt(bucket: string, key: string): number | null {
-        return this.getByType(bucket, key, "int") as number
+    get(bucket: string, key: string): number | string | Object | null {
+        if (!this.one("SHOW TABLES LIKE ?", [bucket])) return null
+        let record = this.one(`
+            SELECT *, expires_at - ${this.SQL_UNIX_TIMESTAMP} as ttl
+            FROM ${bucket} WHERE key_ = ?`,
+            [key]
+        ) as BucketRecord
+        if (record === null) return null
+        if (typeof (record as any).ttl === "number" && (record as any).ttl <= 0) {
+            this.execute(`DELETE FROM ${bucket} WHERE ${this.SQL_UNIX_TIMESTAMP} >= expires_at`)
+            return null
+        }
+        return record.value
     }
 
-    getFloat(bucket: string, key: string): number | null {
-        return this.getByType(bucket, key, "float") as number
-    }
-
-    getString(bucket: string, key: string): string | null {
-        return this.getByType(bucket, key, "string") as string
-    }
-
-    getJSON(bucket: string, key: string): any | null {
-        let value = this.getByType(bucket, key, "string")
+    getJSON(bucket: string, key: string): Object | null {
+        let value = this.get(bucket, key)
         return value === null ? null : JSON.parse(value as string)
     }
 
     setInt(bucket: string, key: string, value: number, ttl?: number) {
-        this.setByType(bucket, key, "int", value, ttl)
+        this.setByType(true, bucket, "BIGINT", key, value, ttl)
     }
 
     setFloat(bucket: string, key: string, value: number, ttl?: number) {
-        this.setByType(bucket, key, "float", value, ttl)
+        this.setByType(true, bucket, "DOUBLE", key, value, ttl)
     }
 
     setString(bucket: string, key: string, value: string, ttl?: number) {
-        this.setByType(bucket, key, "string", value, ttl)
+        this.setByType(true, bucket, "VARCHAR(1024)", key, value, ttl)
     }
 
-    setJSON(bucket: string, key: string, json: any, ttl?: number) {
-        this.setByType(bucket, key, "string", JSON.stringify(json), ttl)
+    putInt(bucket: string, key: string, value: number, ttl?: number) {
+        this.setByType(false, bucket, "BIGINT", key, value, ttl)
     }
 
-    fetch(bucket: string, key: string): byte[] | null {
-        return this.getByType(bucket, key, "blob") as byte[]
+    putFloat(bucket: string, key: string, value: number, ttl?: number) {
+        this.setByType(false, bucket, "DOUBLE", key, value, ttl)
     }
 
-    put(bucket: string, key: string, data: byte[], ttl?: number) {
-        this.setByType(bucket, key, "blob", data, ttl)
+    putString(bucket: string, key: string, value: string, ttl?: number) {
+        this.setByType(false, bucket, "TEXT", key, value, ttl)
+    }
+
+    putJSON(bucket: string, key: string, json: Object, ttl?: number) {
+        this.setByType(false, bucket, "TEXT", key, JSON.stringify(json), ttl)
+    }
+
+    putBytes(bucket: string, key: string, data: byte[], ttl?: number) {
+        this.setByType(false, bucket, "LONGBLOB", key, data, ttl)
     }
 
     ensureTable(table: string, pkey: string, type: string) {
@@ -58,46 +69,46 @@ export abstract class JDBCClient implements Client {
     }
 
     ensureColumn(table: string, column: string, type: string) {
-        let rows = this.list<any>("DESC " + table)
-        if (rows.some(row => row.COLUMN_NAME === column)) return
+        let columns: any[] = this.list("DESC " + table)
+        if (columns.some(col => col.COLUMN_NAME === column)) return
         this.execute(`ALTER TABLE ${table} ADD COLUMN ${column} ${type}`)
     }
 
     ensureIndex(table: string, columns: string[]) {
         let index = indexName(table, columns, false)
-        let rows = this.list<any>("SHOW INDEX FROM " + table)
-        if (rows.some(row => row.INDEX_NAME === index)) return
+        let indexes: any[] = this.list("SHOW INDEX FROM " + table)
+        if (indexes.some(idx => idx.INDEX_NAME === index)) return
         this.execute(`CREATE INDEX ${index} ON ${table}(${columns.join(",")})`)
     }
 
     ensureUniqueIndex(table: string, columns: string[]) {
         let index = indexName(table, columns, true)
-        let rows = this.list<any>("SHOW INDEX FROM " + table)
-        if (rows.some(row => row.INDEX_NAME === index)) return
+        let indexes: any[] = this.list("SHOW INDEX FROM " + table)
+        if (indexes.some(idx => idx.INDEX_NAME === index)) return
         this.execute(`CREATE UNIQUE INDEX ${index} ON ${table}(${columns.join(",")})`)
     }
 
-    one<T>(sql: string, parameters?: any[]): T | null {
-        let result: T | null = null
+    one(sql: string, parameters?: any[]): Object | null {
+        let result: Object | null = null
         let statement = this.prepareStatement(sql, parameters)
         let resultSet = statement.executeQuery()
-        if (resultSet.next()) result = resultSetToJSON<T>(resultSet)
+        if (resultSet.next()) result = resultSetToJSON(resultSet)
         resultSet.close()
         statement.close()
         return result
     }
 
-    list<T>(sql: string, parameters?: any[]): T[] {
-        let result: T[] = []
+    list(sql: string, parameters?: any[]): Object[] {
+        let result: Object[] = []
         let statement = this.prepareStatement(sql, parameters)
         let resultSet = statement.executeQuery()
-        while (resultSet.next()) result.push(resultSetToJSON<T>(resultSet))
+        while (resultSet.next()) result.push(resultSetToJSON(resultSet))
         resultSet.close()
         statement.close()
         return result
     }
 
-    insert(table: string, object: any) {
+    insert(table: string, object: Object) {
         let keys = Object.keys(object).join(",")
         let values = Object.keys(object).map(() => "?").join(",")
         this.execute(
@@ -106,7 +117,7 @@ export abstract class JDBCClient implements Client {
         )
     }
 
-    upsert(table: string, object: any) {
+    upsert(table: string, object: Object) {
         let keys = Object.keys(object).join(",")
         let values = Object.keys(object).map(() => "?").join(",")
         this.execute(
@@ -121,9 +132,9 @@ export abstract class JDBCClient implements Client {
         statement.close()
     }
 
-    delete(bucket_or_table: string, key: any) {
+    delete(bucket_or_table: string, key: number | string) {
         let pkey = ""
-        let indexes = this.list<any>("SHOW INDEX FROM " + bucket_or_table)
+        let indexes: any[] = this.list("SHOW INDEX FROM " + bucket_or_table)
         indexes.forEach(index => {
             if (index.INDEX_NAME === "PRIMARY") pkey = index.COLUMN_NAME
         })
@@ -143,53 +154,17 @@ export abstract class JDBCClient implements Client {
         return statement
     }
 
-    private getByType(bucket: string, key: string, type: string) {
-        if (!this.one("SHOW TABLES LIKE ?", [bucket])) return null
-        let record = this.one<BucketRecord>(`
-            SELECT *, expires_at - ${this.SQL_UNIX_TIMESTAMP} as ttl
-            FROM ${bucket} WHERE key_ = ?`,
-            [key]
-        )
-        if (record === null) return null
-        if (typeof (record as any).ttl === "number" && (record as any).ttl <= 0) {
-            this.execute(`DELETE FROM ${bucket} WHERE ${this.SQL_UNIX_TIMESTAMP} >= expires_at`)
-            return null
-        }
-        switch (type) {
-            case "int":
-                return record.int_
-            case "float":
-                return record.float_
-            case "string":
-                return record.string_
-            case "blob":
-                return record.blob_
-            default:
-                return null
-        }
-    }
-
-    private setByType(bucket: string, key: string, type: string, value: any, ttl?: number) {
-        let columns = "", engine = ""
-        if (type === "blob") {
-            columns = "blob_ LONGBLOB"
-        } else if (type === "string") {
-            columns = "string_ VARCHAR(1024)"
-            engine = "ENGINE = MEMORY"
-        } else {
-            columns = "int_ BIGINT, float_ DOUBLE"
-            engine = "ENGINE = MEMORY"
-        }
+    private setByType(inMemory: boolean, bucket: string, type: string, key: string, value: any, ttl?: number) {
         this.execute(`
             CREATE TABLE IF NOT EXISTS ${bucket} (
                 key_ VARCHAR(255) PRIMARY KEY,
-                ${columns},
+                value ${type},
                 timestamp BIGINT,
                 expires_at BIGINT,
                 INDEX ${bucket}_idx_expires_at (expires_at)
-            ) ${engine}
+            ) ${inMemory ? "ENGINE = MEMORY" : ""}
         `)
-        let keys = `key_,${type}_,timestamp,expires_at`
+        let keys = `key_,value,timestamp,expires_at`
         let expires_at = ttl === undefined ? "NULL" : `${this.SQL_UNIX_TIMESTAMP} + ${ttl * 1e6}`
         let values = `?,?,${this.SQL_UNIX_TIMESTAMP},${expires_at}`
         this.execute(`REPLACE INTO ${bucket}(${keys}) VALUES(${values})`, [key, value])
@@ -198,10 +173,7 @@ export abstract class JDBCClient implements Client {
 
 interface BucketRecord {
     key_: string
-    int_?: number
-    float_?: number
-    string_?: string
-    blob_?: byte[]
+    value: any
     timestamp: number
-    expires_at?: number
+    expires_at: number
 }

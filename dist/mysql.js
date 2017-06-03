@@ -15,8 +15,8 @@ var MySQLClient = (function (_super) {
     __extends(MySQLClient, _super);
     function MySQLClient(options) {
         var _this = _super.call(this) || this;
-        var host = options.host, port = options.port, database = options.database, user = options.user, password = options.password;
         _this.driver = new com.mysql.cj.jdbc.Driver();
+        var host = options.host, port = options.port, database = options.database, user = options.user, password = options.password;
         _this.SQL_UNIX_TIMESTAMP = "floor(unix_timestamp(current_timestamp(6)) * 1000000)";
         _this.url = "jdbc:mysql://" + host + ":" + port + "/" + database + "?user=" + user + "&password=" + password;
         _this.url += "&characterEncoding=" + (options.characterEncoding || "UTF-8");
@@ -38,6 +38,9 @@ var MySQLClient = (function (_super) {
         _this.connect();
         return _this;
     }
+    MySQLClient.prototype.connect = function () {
+        this.connection = this.driver.connect(this.url, new java.util.Properties());
+    };
     return MySQLClient;
 }(jdbc_1.JDBCClient));
 exports.MySQLClient = MySQLClient;

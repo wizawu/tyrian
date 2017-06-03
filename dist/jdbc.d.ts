@@ -1,11 +1,9 @@
 import { Client } from "./client";
 export declare abstract class JDBCClient implements Client {
-    protected cache: net.sf.ehcache.CacheManager;
     protected connection: java.sql.Connection;
-    protected driver: java.sql.Driver;
     protected url: string;
     protected SQL_UNIX_TIMESTAMP: string;
-    protected connect(): void;
+    protected abstract connect(): void;
     getInt(bucket: string, key: string): number | null;
     getFloat(bucket: string, key: string): number | null;
     getString(bucket: string, key: string): string | null;
@@ -28,11 +26,6 @@ export declare abstract class JDBCClient implements Client {
     delete(bucket_or_table: string, key: any): void;
     close(): void;
     private prepareStatement(sql, parameters?);
-    private existsTable(table);
-    private ensureBucket(bucket, withCache);
-    private ensureBucketInCache(bucket);
     private getByType(bucket, key, type);
     private setByType(bucket, key, type, value, ttl?);
-    private putToCache(bucket, key, value, ttl?);
-    private wipeUpExpiration(bucket);
 }

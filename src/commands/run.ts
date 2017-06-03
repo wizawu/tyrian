@@ -4,7 +4,7 @@ import * as path from "path"
 import { SourceMapConsumer } from "source-map"
 import { spawn } from "child_process"
 
-export default function (target: string, jjsArgs: string[], reload: boolean) {
+export default function (jjsArgs: string[], target: string, args: string[], watch: boolean) {
     target = path.resolve(target)
     let dirname = path.resolve(path.dirname(target))
     let lib = path.resolve(dirname + "/../lib")
@@ -15,7 +15,7 @@ export default function (target: string, jjsArgs: string[], reload: boolean) {
     }
 
     let run = () => {
-        let child = spawn("jjs", jjsArgs.concat(["-cp", classpath, target]))
+        let child = spawn("jjs", jjsArgs.concat(["-cp", classpath, target]).concat(args))
         child.on("exit", code => process.exit(code))
 
         let lookupSource = chunk => {
@@ -53,8 +53,8 @@ export default function (target: string, jjsArgs: string[], reload: boolean) {
     }
 
     let child = run()
-    if (reload) {
-        // Restart child when target changes
+    if (watch) {
+        // restart child when target changes
         fs.watchFile(target, () => {
             child.removeAllListeners()
             child.on("exit", () => child = run())

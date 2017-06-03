@@ -38,11 +38,18 @@ if (command === "env") {
         build(instdir, instmod, process.argv.slice(3), false)
     }
 } else if (command === "run" && process.argv[3]) {
-    let nargs = process.argv.length
-    if (process.argv[3] === "-w") {
-        run(process.argv[nargs - 1], process.argv.slice(4, nargs - 1), true)
-    } else {
-        run(process.argv[nargs - 1], process.argv.slice(3, nargs - 1), false)
+    let watch = false
+    let jjsOptions = []
+    for (let i = 3; i < process.argv.length; i++) {
+        let arg = process.argv[i]
+        if (i === 3 && arg === "-w") {
+            watch = true
+        } else if (arg.charAt(0) === "-") {
+            jjsOptions.push(arg as never)
+        } else {
+            run(jjsOptions, arg, process.argv.slice(i + 1), watch)
+            break
+        }
     }
 } else {
     help(instdir, EXIT_STATUS.BAD_COMMAND)

@@ -2,25 +2,16 @@ import * as chalk from "chalk"
 import * as fs from "fs"
 import * as path from "path"
 import * as webpack from "webpack"
-import { renderToStaticMarkup } from "react-dom/server"
+
 import { EXIT_STATUS } from "../const"
 import { getTopPackages } from "../compiler/parseJAR"
 
 const autoprefixer = require("autoprefixer")
-const CopyWebpackPlugin = require("copy-webpack-plugin")
 
-function compilers(instdir: string, instmod: string, context: string, entries: string[], watch: boolean) {
-    let entryJS = {}
-    let entryJJS = {}
-
-    entries.forEach(entry => {
-        if (/\.j\.ts$/.test(entry)) {
-            entryJJS[`build/${path.basename(entry, ".j.ts")}.js`] = entry
-        } else if (/\.tsx?$/.test(entry) && !/\.d\.ts$/.test(entry)) {
-            let basename = path.basename(entry).replace(/\.tsx?$/, "")
-            entryJS[`build/assets/js/${basename}.min.js`] = entry
-        }
-    })
+function compiler(instdir: string, instmod: string, entries: string[], watch: boolean) {
+    let context = process.cwd()
+    let entry = {}
+    entries.forEach(file => entry[`${path.basename(file, ".ts")}.js`] = file)
 
     let cssLoaders = [{
         loader: "style-loader"
@@ -31,28 +22,31 @@ function compilers(instdir: string, instmod: string, context: string, entries: s
         loader: "postcss-loader",
         options: {
             plugins: [
-                autoprefixer({ browsers: ["last 3 versions", "safari >= 6", "IE >= 9"] })
+                autoprefixer({
+                    browsers: [
+                        "last 3 versions",
+                        "safari >= 6",
+                        "IE >= 9",
+                    ]
+                })
             ]
         }
     }]
 
     let globalVars = {}
-    try {
-        let jars = fs.readdirSync(`${context}/lib`).filter(filename => /\.jar$/.test(filename))
+    if (fs.existsSync(`${context}/lib`)) {
+        let jars = fs.readdirSync(`${context}/lib`).filter(file => /\.jar$/.test(file))
         jars.forEach(jar => {
             getTopPackages(`${context}/lib/${jar}`).forEach(pkg =>
-                globalVars[pkg] = "Packages." + pkg
+                globalVars[pkg] = `typeof ${pkg} === "undefined" ? Packages.${pkg} : ${pkg}`
             )
         })
-    } catch (ex) {
     }
 
-    let builtAssets = false
-
-    let createCompiler = (entry: any, minimize: boolean) => webpack({
+    return webpack({
         devtool: "cheap-source-map",
         context: context,
-        resolve: { extensions: [".js", ".ts", ".j.ts", ".tsx"] },
+        resolve: { extensions: [".js", ".ts", ".tsx"] },
         resolveLoader: { modules: [instmod] },
         entry: entry,
         output: { path: context, filename: "[name]" },
@@ -72,54 +66,16 @@ function compilers(instdir: string, instmod: string, context: string, entries: s
             }]
         },
         plugins: [
-            new CopyWebpackPlugin(builtAssets ? [] : [{
-                context: `${context}/src/assets`,
-                from: "**/*",
-                to: `${context}/build/assets`,
-            }]),
-            new webpack.DefinePlugin({
-                "process.env": {
-                    NODE_ENV: minimize ? '"production"' : '"development"'
-                },
-                ...(entry === entryJJS ? globalVars : {}),
-            }),
-        ].concat(minimize ? [
             new webpack.optimize.UglifyJsPlugin({
                 sourceMap: true,
-            })
-        ] : []),
-    })
-
-    let list: webpack.Compiler[] = []
-    if (Object.keys(entryJS).length > 0) {
-        list.push(createCompiler(entryJS, !watch))
-        builtAssets = true
-    }
-    if (Object.keys(entryJJS).length > 0) {
-        list.push(createCompiler(entryJJS, false))
-        builtAssets = true
-    }
-    return list
-}
-
-function generateTsxHTML(options: webpack.Configuration) {
-    Object.keys(options.entry).forEach(k => {
-        if (/\.tsx$/.test((options.entry as any)[k])) {
-            let filepath = k.replace(/js\/(.+).min.js/, "$1.tsx.html")
-            let module = `${options.context}/${k}`
-            delete require.cache[module];
-            (global as any)._tsx_html = undefined
-            try {
-                require(module)
-                let html = (global as any)._tsx_html
-                if (html) {
-                    fs.writeFileSync(filepath, renderToStaticMarkup(html))
-                    console.log(chalk.green(`[${new Date().toTimeString().substring(0, 8)}] emitted ${filepath}`))
-                }
-            } catch (ex) {
-                if (process.env.DEBUG_TSX_HTML) console.error(chalk.red(`${filepath}: ${ex.message}`))
-            }
-        }
+            }),
+            new webpack.DefinePlugin({
+                "process.env": {
+                    NODE_ENV: watch ? '"development"' : '"production"'
+                },
+                ...globalVars,
+            }),
+        ].slice(watch ? 1 : 0)
     })
 }
 
@@ -127,29 +83,11 @@ export default function (instdir: string, instmod: string, entries: string[], wa
     if (entries.length === 0) {
         console.error(chalk.yellow("no entry to build"))
         process.exit(EXIT_STATUS.BUILD_ENTRY_ERROR)
+    } else if (!fs.existsSync("tsconfig.json")) {
+        console.error(chalk.red("no tsconfig.json in current directory"))
+        process.exit(EXIT_STATUS.TSCONFIG_NOT_FOUND)
     }
 
-    let context: any = {}
-    entries.forEach((entry, i) => {
-        entries[i] = path.resolve(entry)
-        let tsconfigDir = path.dirname(entries[i])
-        while (!fs.existsSync(`${tsconfigDir}/tsconfig.json`)) {
-            if (tsconfigDir === "/") {
-                console.error(chalk.red("cannot find tsconfig.json"))
-                process.exit(EXIT_STATUS.BUILD_ENTRY_ERROR)
-            } else {
-                tsconfigDir = path.dirname(tsconfigDir)
-            }
-        }
-        context[tsconfigDir] = true
-    })
-
-    if (Object.keys(context).length > 1) {
-        console.error(chalk.red("entries not in the same project"))
-        process.exit(EXIT_STATUS.BUILD_ENTRY_ERROR)
-    }
-
-    context = Object.keys(context)[0]
     let statsOptions = {
         children: false,
         chunks: false,
@@ -158,22 +96,14 @@ export default function (instdir: string, instmod: string, entries: string[], wa
     }
 
     if (watch) {
-        compilers(instdir, instmod, context, entries, true).forEach(c =>
-            c.watch({ poll: true }, (err, stats) => {
-                console.log(stats.toString(statsOptions))
-                generateTsxHTML(c.options)
-            })
-        )
+        compiler(instdir, instmod, entries, true).watch({ poll: true }, (err, stats) => {
+            console.log(`Clock: ${new Date().toLocaleTimeString()}`)
+            console.log(stats.toString(statsOptions))
+        })
     } else {
-        compilers(instdir, instmod, context, entries, false).forEach(c =>
-            c.run((err, stats) => {
-                console.log(stats.toString(statsOptions))
-                if (stats.hasErrors()) {
-                    process.exit(EXIT_STATUS.WEBPACK_COMPILE_ERROR)
-                } else {
-                    generateTsxHTML(c.options)
-                }
-            })
-        )
+        compiler(instdir, instmod, entries, false).run((err, stats) => {
+            console.log(stats.toString(statsOptions))
+            if (stats.hasErrors()) process.exit(EXIT_STATUS.WEBPACK_COMPILE_ERROR)
+        })
     }
 }

@@ -23,7 +23,7 @@ export abstract class JDBCClient implements Client {
         return record.value
     }
 
-    getJSON(bucket: string, key: string): Object | null {
+    getJSON<T>(bucket: string, key: string): T | null {
         let value = this.get(bucket, key)
         return value === null ? null : JSON.parse(value as string)
     }
@@ -69,37 +69,37 @@ export abstract class JDBCClient implements Client {
     }
 
     ensureColumn(table: string, column: string, type: string) {
-        let columns: any[] = this.list("DESC " + table)
+        let columns = this.list("DESC " + table) as any[]
         if (columns.some(col => col.COLUMN_NAME === column)) return
         this.execute(`ALTER TABLE ${table} ADD COLUMN ${column} ${type}`)
     }
 
     ensureIndex(table: string, columns: string[]) {
         let index = indexName(table, columns, false)
-        let indexes: any[] = this.list("SHOW INDEX FROM " + table)
+        let indexes = this.list("SHOW INDEX FROM " + table) as any[]
         if (indexes.some(idx => idx.INDEX_NAME === index)) return
         this.execute(`CREATE INDEX ${index} ON ${table}(${columns.join(",")})`)
     }
 
     ensureUniqueIndex(table: string, columns: string[]) {
         let index = indexName(table, columns, true)
-        let indexes: any[] = this.list("SHOW INDEX FROM " + table)
+        let indexes = this.list("SHOW INDEX FROM " + table) as any[]
         if (indexes.some(idx => idx.INDEX_NAME === index)) return
         this.execute(`CREATE UNIQUE INDEX ${index} ON ${table}(${columns.join(",")})`)
     }
 
-    one(sql: string, parameters?: any[]): Object | null {
+    one<T>(sql: string, parameters?: any[]): T | null {
         let result: Object | null = null
         let statement = this.prepareStatement(sql, parameters)
         let resultSet = statement.executeQuery()
         if (resultSet.next()) result = resultSetToJSON(resultSet)
         resultSet.close()
         statement.close()
-        return result
+        return result as T
     }
 
-    list(sql: string, parameters?: any[]): Object[] {
-        let result: Object[] = []
+    list<T>(sql: string, parameters?: any[]): T[] {
+        let result: T[] = []
         let statement = this.prepareStatement(sql, parameters)
         let resultSet = statement.executeQuery()
         while (resultSet.next()) result.push(resultSetToJSON(resultSet))
@@ -134,7 +134,7 @@ export abstract class JDBCClient implements Client {
 
     delete(bucket_or_table: string, key: number | string) {
         let pkey = ""
-        let indexes: any[] = this.list("SHOW INDEX FROM " + bucket_or_table)
+        let indexes = this.list("SHOW INDEX FROM " + bucket_or_table) as any[]
         indexes.forEach(index => {
             if (index.INDEX_NAME === "PRIMARY") pkey = index.COLUMN_NAME
         })

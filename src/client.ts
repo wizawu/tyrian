@@ -16,7 +16,7 @@ export interface Options {
 export interface Client {
     // Key-value store
     get(bucket: string, key: string): number | string | Object | null
-    getJSON(bucket: string, key: string): Object | null
+    getJSON<T>(bucket: string, key: string): T | null
     setInt(bucket: string, key: string, value: number, ttl?: number)
     setFloat(bucket: string, key: string, value: number, ttl?: number)
     setString(bucket: string, key: string, value: string, ttl?: number)
@@ -31,8 +31,8 @@ export interface Client {
     ensureColumn(table: string, column: string, type: string)
     ensureIndex(table: string, columns: string[])
     ensureUniqueIndex(table: string, columns: string[])
-    one(sql: string, parameters?: any[]): Object | null
-    list(sql: string, parameters?: any[]): Object[]
+    one<T>(sql: string, parameters?: any[]): T | null
+    list<T>(sql: string, parameters?: any[]): T[]
     insert(table: string, object: Object)
     upsert(table: string, object: Object)
     execute(sql: string, parameters?: any[])

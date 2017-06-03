@@ -12,23 +12,13 @@ var chalk = require("chalk");
 var fs = require("fs");
 var path = require("path");
 var webpack = require("webpack");
-var server_1 = require("react-dom/server");
 var const_1 = require("../const");
 var parseJAR_1 = require("../compiler/parseJAR");
 var autoprefixer = require("autoprefixer");
-var CopyWebpackPlugin = require("copy-webpack-plugin");
-function compilers(instdir, instmod, context, entries, watch) {
-    var entryJS = {};
-    var entryJJS = {};
-    entries.forEach(function (entry) {
-        if (/\.j\.ts$/.test(entry)) {
-            entryJJS["build/" + path.basename(entry, ".j.ts") + ".js"] = entry;
-        }
-        else if (/\.tsx?$/.test(entry) && !/\.d\.ts$/.test(entry)) {
-            var basename = path.basename(entry).replace(/\.tsx?$/, "");
-            entryJS["build/assets/js/" + basename + ".min.js"] = entry;
-        }
-    });
+function compiler(instdir, instmod, entries, watch) {
+    var context = process.cwd();
+    var entry = {};
+    entries.forEach(function (file) { return entry[path.basename(file, ".ts") + ".js"] = file; });
     var cssLoaders = [{
             loader: "style-loader"
         }, {
@@ -38,26 +28,29 @@ function compilers(instdir, instmod, context, entries, watch) {
             loader: "postcss-loader",
             options: {
                 plugins: [
-                    autoprefixer({ browsers: ["last 3 versions", "safari >= 6", "IE >= 9"] })
+                    autoprefixer({
+                        browsers: [
+                            "last 3 versions",
+                            "safari >= 6",
+                            "IE >= 9",
+                        ]
+                    })
                 ]
             }
         }];
     var globalVars = {};
-    try {
-        var jars = fs.readdirSync(context + "/lib").filter(function (filename) { return /\.jar$/.test(filename); });
+    if (fs.existsSync(context + "/lib")) {
+        var jars = fs.readdirSync(context + "/lib").filter(function (file) { return /\.jar$/.test(file); });
         jars.forEach(function (jar) {
             parseJAR_1.getTopPackages(context + "/lib/" + jar).forEach(function (pkg) {
-                return globalVars[pkg] = "Packages." + pkg;
+                return globalVars[pkg] = "typeof " + pkg + " === \"undefined\" ? Packages." + pkg + " : " + pkg;
             });
         });
     }
-    catch (ex) {
-    }
-    var builtAssets = false;
-    var createCompiler = function (entry, minimize) { return webpack({
+    return webpack({
         devtool: "cheap-source-map",
         context: context,
-        resolve: { extensions: [".js", ".ts", ".j.ts", ".tsx"] },
+        resolve: { extensions: [".js", ".ts", ".tsx"] },
         resolveLoader: { modules: [instmod] },
         entry: entry,
         output: { path: context, filename: "[name]" },
@@ -77,51 +70,13 @@ function compilers(instdir, instmod, context, entries, watch) {
                 }]
         },
         plugins: [
-            new CopyWebpackPlugin(builtAssets ? [] : [{
-                    context: context + "/src/assets",
-                    from: "**/*",
-                    to: context + "/build/assets"
-                }]),
-            new webpack.DefinePlugin(__assign({ "process.env": {
-                    NODE_ENV: minimize ? '"production"' : '"development"'
-                } }, (entry === entryJJS ? globalVars : {}))),
-        ].concat(minimize ? [
             new webpack.optimize.UglifyJsPlugin({
                 sourceMap: true
-            })
-        ] : [])
-    }); };
-    var list = [];
-    if (Object.keys(entryJS).length > 0) {
-        list.push(createCompiler(entryJS, !watch));
-        builtAssets = true;
-    }
-    if (Object.keys(entryJJS).length > 0) {
-        list.push(createCompiler(entryJJS, false));
-        builtAssets = true;
-    }
-    return list;
-}
-function generateTsxHTML(options) {
-    Object.keys(options.entry).forEach(function (k) {
-        if (/\.tsx$/.test(options.entry[k])) {
-            var filepath = k.replace(/js\/(.+).min.js/, "$1.tsx.html");
-            var module_1 = options.context + "/" + k;
-            delete require.cache[module_1];
-            global._tsx_html = undefined;
-            try {
-                require(module_1);
-                var html = global._tsx_html;
-                if (html) {
-                    fs.writeFileSync(filepath, server_1.renderToStaticMarkup(html));
-                    console.log(chalk.green("[" + new Date().toTimeString().substring(0, 8) + "] emitted " + filepath));
-                }
-            }
-            catch (ex) {
-                if (process.env.DEBUG_TSX_HTML)
-                    console.error(chalk.red(filepath + ": " + ex.message));
-            }
-        }
+            }),
+            new webpack.DefinePlugin(__assign({ "process.env": {
+                    NODE_ENV: watch ? '"development"' : '"production"'
+                } }, globalVars)),
+        ].slice(watch ? 1 : 0)
     });
 }
 function default_1(instdir, instmod, entries, watch) {
@@ -129,26 +84,10 @@ function default_1(instdir, instmod, entries, watch) {
         console.error(chalk.yellow("no entry to build"));
         process.exit(const_1.EXIT_STATUS.BUILD_ENTRY_ERROR);
     }
-    var context = {};
-    entries.forEach(function (entry, i) {
-        entries[i] = path.resolve(entry);
-        var tsconfigDir = path.dirname(entries[i]);
-        while (!fs.existsSync(tsconfigDir + "/tsconfig.json")) {
-            if (tsconfigDir === "/") {
-                console.error(chalk.red("cannot find tsconfig.json"));
-                process.exit(const_1.EXIT_STATUS.BUILD_ENTRY_ERROR);
-            }
-            else {
-                tsconfigDir = path.dirname(tsconfigDir);
-            }
-        }
-        context[tsconfigDir] = true;
-    });
-    if (Object.keys(context).length > 1) {
-        console.error(chalk.red("entries not in the same project"));
-        process.exit(const_1.EXIT_STATUS.BUILD_ENTRY_ERROR);
+    else if (!fs.existsSync("tsconfig.json")) {
+        console.error(chalk.red("no tsconfig.json in current directory"));
+        process.exit(const_1.EXIT_STATUS.TSCONFIG_NOT_FOUND);
     }
-    context = Object.keys(context)[0];
     var statsOptions = {
         children: false,
         chunks: false,
@@ -156,24 +95,16 @@ function default_1(instdir, instmod, entries, watch) {
         version: false
     };
     if (watch) {
-        compilers(instdir, instmod, context, entries, true).forEach(function (c) {
-            return c.watch({ poll: true }, function (err, stats) {
-                console.log(stats.toString(statsOptions));
-                generateTsxHTML(c.options);
-            });
+        compiler(instdir, instmod, entries, true).watch({ poll: true }, function (err, stats) {
+            console.log("Clock: " + new Date().toLocaleTimeString());
+            console.log(stats.toString(statsOptions));
         });
     }
     else {
-        compilers(instdir, instmod, context, entries, false).forEach(function (c) {
-            return c.run(function (err, stats) {
-                console.log(stats.toString(statsOptions));
-                if (stats.hasErrors()) {
-                    process.exit(const_1.EXIT_STATUS.WEBPACK_COMPILE_ERROR);
-                }
-                else {
-                    generateTsxHTML(c.options);
-                }
-            });
+        compiler(instdir, instmod, entries, false).run(function (err, stats) {
+            console.log(stats.toString(statsOptions));
+            if (stats.hasErrors())
+                process.exit(const_1.EXIT_STATUS.WEBPACK_COMPILE_ERROR);
         });
     }
 }

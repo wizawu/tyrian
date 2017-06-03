@@ -1,5 +1,3 @@
-.PHONY: build types
-
 FLAGS=--noUnusedLocals --removeComments --strictNullChecks --outDir dist
 
 build:

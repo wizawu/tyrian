@@ -5,7 +5,7 @@ var fs = require("fs");
 var path = require("path");
 var source_map_1 = require("source-map");
 var child_process_1 = require("child_process");
-function default_1(target, jjsArgs, reload) {
+function default_1(jjsArgs, target, args, watch) {
     target = path.resolve(target);
     var dirname = path.resolve(path.dirname(target));
     var lib = path.resolve(dirname + "/../lib");
@@ -15,7 +15,7 @@ function default_1(target, jjsArgs, reload) {
         sourceMap = new source_map_1.SourceMapConsumer(JSON.parse(fs.readFileSync(target + ".map", "utf-8")));
     }
     var run = function () {
-        var child = child_process_1.spawn("jjs", jjsArgs.concat(["-cp", classpath, target]));
+        var child = child_process_1.spawn("jjs", jjsArgs.concat(["-cp", classpath, target]).concat(args));
         child.on("exit", function (code) { return process.exit(code); });
         var lookupSource = function (chunk) {
             if (sourceMap === null)
@@ -51,7 +51,7 @@ function default_1(target, jjsArgs, reload) {
         return child;
     };
     var child = run();
-    if (reload) {
+    if (watch) {
         fs.watchFile(target, function () {
             child.removeAllListeners();
             child.on("exit", function () { return child = run(); });

@@ -5,7 +5,6 @@ var os = require("os");
 var path = require("path");
 var build_1 = require("./commands/build");
 var env_1 = require("./commands/env");
-var init_1 = require("./commands/init");
 var install_1 = require("./commands/install");
 var run_1 = require("./commands/run");
 var const_1 = require("./const");
@@ -29,9 +28,6 @@ if (command === "env" || !fs.existsSync(envfile)) {
 if (command === "env") {
     console.error(envstat);
 }
-else if (command === "init") {
-    init_1["default"](instdir);
-}
 else if (command === "install") {
     install_1["default"](instdir);
 }
@@ -44,12 +40,20 @@ else if (command === "build" && process.argv[3]) {
     }
 }
 else if (command === "run" && process.argv[3]) {
-    var nargs = process.argv.length;
-    if (process.argv[3] === "-w") {
-        run_1["default"](process.argv[nargs - 1], process.argv.slice(4, nargs - 1), true);
-    }
-    else {
-        run_1["default"](process.argv[nargs - 1], process.argv.slice(3, nargs - 1), false);
+    var watch = false;
+    var jjsOptions = [];
+    for (var i = 3; i < process.argv.length; i++) {
+        var arg = process.argv[i];
+        if (i === 3 && arg === "-w") {
+            watch = true;
+        }
+        else if (arg.charAt(0) === "-") {
+            jjsOptions.push(arg);
+        }
+        else {
+            run_1["default"](jjsOptions, arg, process.argv.slice(i + 1), watch);
+            break;
+        }
     }
 }
 else {

@@ -61,18 +61,27 @@ describe("MySQLClient", () => {
     })
 
     it("expire", () => {
-        client.setInt(bucket, "x", 1, 2)
+        client.setInt(bucket, "x", 1, 1)
         assert.strictEqual(client.getInt(bucket, "x"), 1)
-        java.lang.Thread.sleep(1000)
+        java.lang.Thread.sleep(500)
         assert.strictEqual(client.getInt(bucket, "x"), 1)
-        java.lang.Thread.sleep(1000)
+        java.lang.Thread.sleep(500)
         assert.strictEqual(client.getInt(bucket, "x"), null)
+
+        client.setInt(bucket, "y", 2, 2)
+        assert.strictEqual(client.getInt(bucket, "y"), 2)
+        client.setInt(bucket, "y", 2, 1)
+        java.lang.Thread.sleep(500)
+        assert.strictEqual(client.getInt(bucket, "y"), 2)
+        java.lang.Thread.sleep(500)
+        assert.strictEqual(client.getInt(bucket, "y"), null)
     })
 
     it("override", () => {
         client.setInt(bucket, "x", 1)
         assert.strictEqual(client.getInt(bucket, "x"), 1)
         client.setFloat(bucket, "x", 3.14)
+        assert.strictEqual(client.getInt(bucket, "x"), null)
         assert.strictEqual(client.getFloat(bucket, "x"), 3.14)
     })
 

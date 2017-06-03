@@ -40,6 +40,10 @@ export abstract class JDBCClient implements Client {
         this.setByType(true, bucket, "VARCHAR(1024)", key, value, ttl)
     }
 
+    setJSON(bucket: string, key: string, json: Object, ttl?: number) {
+        this.setByType(true, bucket, "VARCHAR(1024)", key, JSON.stringify(json), ttl)
+    }
+
     putInt(bucket: string, key: string, value: number, ttl?: number) {
         this.setByType(false, bucket, "BIGINT", key, value, ttl)
     }

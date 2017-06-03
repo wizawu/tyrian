@@ -20,6 +20,7 @@ export interface Client {
     setInt(bucket: string, key: string, value: number, ttl?: number)
     setFloat(bucket: string, key: string, value: number, ttl?: number)
     setString(bucket: string, key: string, value: string, ttl?: number)
+    setJSON(bucket: string, key: string, json: Object, ttl?: number)
     putInt(bucket: string, key: string, value: number, ttl?: number)
     putFloat(bucket: string, key: string, value: number, ttl?: number)
     putString(bucket: string, key: string, value: string, ttl?: number)

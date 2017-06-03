@@ -197,11 +197,18 @@ describe("MySQLClient", () => {
         assert.strictEqual(client.list(`SELECT * FROM ${table}`).length, 1)
         client.delete(table, 1)
         assert.strictEqual(client.list(`SELECT * FROM ${table}`).length, 0)
+
         client.execute(`DROP TABLE ${table}`)
         client.setInt(bucket, "x", 1)
         assert.strictEqual(client.getInt(bucket, "x"), 1)
         client.delete(bucket, "x")
         assert.strictEqual(client.getInt(bucket, "x"), null)
+
+        client.execute(`DROP TABLE ${table}`)
+        client.put(bucket, "x", new String("zxcv").getBytes())
+        assert.strictEqual<any>(new String(client.fetch(bucket, "x") as any), "zxcv")
+        client.delete(bucket, "x")
+        assert.strictEqual(client.fetch(bucket, "x"), null)
     })
 
     it("close", () => {
@@ -231,9 +238,6 @@ describe("MySQLClient benchmark", () => {
             logger: "com.mysql.cj.core.log.Slf4JLogger",
             profileSQL: java.lang.System.getenv("PROFILE_SQL") === "true",
         })
-        client.execute(`DROP TABLE IF EXISTS ${bucket}`)
-        client.execute(`DROP TABLE IF EXISTS ${table}`)
-        client.setString(bucket, "_", "_")
     })
 
     after(() => {
@@ -245,6 +249,7 @@ describe("MySQLClient benchmark", () => {
     }
 
     it("setInt", () => {
+        client.execute(`DROP TABLE IF EXISTS ${bucket}`)
         batch(i => client.setInt(bucket, "int" + i, i))
     })
 
@@ -252,7 +257,12 @@ describe("MySQLClient benchmark", () => {
         batch(i => assert.strictEqual(client.getInt(bucket, "int" + i), i))
     })
 
+    it("delete", () => {
+        batch(i => client.delete(bucket, "int" + i))
+    })
+
     it("setJSON", () => {
+        client.execute(`DROP TABLE IF EXISTS ${bucket}`)
         batch(i => client.setJSON(bucket, "json" + i, { value: i }))
     })
 
@@ -261,6 +271,7 @@ describe("MySQLClient benchmark", () => {
     })
 
     it("put", () => {
+        client.execute(`DROP TABLE IF EXISTS ${bucket}`)
         batch(i => client.put(bucket, "object" + i, new String("" + i).getBytes()))
     })
 
@@ -273,16 +284,10 @@ describe("MySQLClient benchmark", () => {
         )
     })
 
-    it("delete", () => {
-        batch(i => client.delete(bucket, "int" + i))
-    })
-
     it("insert", () => {
+        client.execute(`DROP TABLE IF EXISTS ${table}`)
+        client.execute(`CREATE TABLE ${table}(key_ VARCHAR(64), int_ INT)`)
         batch(i => client.insert(table, { key_: "insert" + i, int_: i }))
-    })
-
-    it("upsert", () => {
-        batch(i => client.upsert(table, { key_: "upsert" + i, string_: "upsert" }))
     })
 
     it("one", () => {
@@ -290,6 +295,12 @@ describe("MySQLClient benchmark", () => {
             let row = client.one<any>(`SELECT * FROM ${table} WHERE key_ = ?`, ["insert" + i])
             assert.strictEqual(row.int_, i)
         })
+    })
+
+    it("upsert", () => {
+        client.execute(`DROP TABLE IF EXISTS ${table}`)
+        client.execute(`CREATE TABLE ${table}(key_ VARCHAR(64), string_ TEXT)`)
+        batch(i => client.upsert(table, { key_: "upsert" + i, string_: "upsert" }))
     })
 
     it("list", () => {

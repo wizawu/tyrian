@@ -5,10 +5,9 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "mvnDependencies": [
-    "io.crate:crate-jdbc:2.1.7",
-    "mysql:mysql-connector-java:6.0.6",
     "net.sf.ehcache:ehcache:2.10.4",
-    "org.slf4j:slf4j-simple:1.7.25"
+    "org.slf4j:slf4j-simple:1.7.25",
+    "mysql:mysql-connector-java:6.0.6"
   ],
   "devDependencies": {
     "@types/chai": "^3.5.2",

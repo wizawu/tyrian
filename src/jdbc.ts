@@ -2,14 +2,12 @@ import { Client } from "./client"
 import { indexName, resultSetToJSON } from "./util"
 
 export abstract class JDBCClient implements Client {
-    protected cache: net.sf.ehcache.CacheManager
+    protected cache = net.sf.ehcache.CacheManager.create()
     protected connection: java.sql.Connection
     protected url: string
     protected SQL_UNIX_TIMESTAMP: string
 
     protected abstract connect(): void
-    protected abstract ensureBucket(bucket: string, withCache: boolean)
-    abstract upsert(table: string, object: any)
 
     getInt(bucket: string, key: string): number | null {
         return this.getByType(bucket, key, "int") as number
@@ -84,11 +82,7 @@ export abstract class JDBCClient implements Client {
         let result: T | null = null
         let statement = this.prepareStatement(sql, parameters)
         let resultSet = statement.executeQuery()
-        java.lang.System.out.println(true)
-        if (resultSet.next()) {
-            java.lang.System.out.println(true)
-            result = resultSetToJSON<T>(resultSet)
-        }
+        if (resultSet.next()) result = resultSetToJSON<T>(resultSet)
         resultSet.close()
         statement.close()
         return result
@@ -109,6 +103,15 @@ export abstract class JDBCClient implements Client {
         let values = Object.keys(object).map(() => "?").join(",")
         this.execute(
             `INSERT INTO ${table}(${keys}) VALUES(${values})`,
+            Object.keys(object).map(key => object[key])
+        )
+    }
+
+    upsert(table: string, object: any) {
+        let keys = Object.keys(object).join(",")
+        let values = Object.keys(object).map(() => "?").join(",")
+        this.execute(
+            `REPLACE INTO ${table}(${keys}) VALUES(${values})`,
             Object.keys(object).map(key => object[key])
         )
     }
@@ -150,7 +153,23 @@ export abstract class JDBCClient implements Client {
         return rows.some(row => row.TABLE_NAME === table)
     }
 
-    protected ensureBucketInCache(bucket: string) {
+    private ensureBucket(bucket: string, withCache: boolean) {
+        this.execute(`
+            CREATE TABLE IF NOT EXISTS ${bucket} (
+                key_ VARCHAR(2048) PRIMARY KEY,
+                int_ BIGINT,
+                float_ DOUBLE,
+                string_ TEXT,
+                blob_ LONGBLOB,
+                timestamp BIGINT,
+                expires_at BIGINT,
+                INDEX ${bucket}_idx_expires_at (expires_at)
+            )
+        `)
+        if (withCache) this.ensureBucketInCache(bucket)
+    }
+
+    private ensureBucketInCache(bucket: string) {
         if (!this.cache.cacheExists(bucket)) {
             let cache = new net.sf.ehcache.Cache(bucket, 4096, false, false, 3600, 300)
             this.cache.addCacheIfAbsent(cache)
@@ -170,7 +189,7 @@ export abstract class JDBCClient implements Client {
 
         let record = this.one<BucketRecord>(`
             SELECT *, expires_at - ${this.SQL_UNIX_TIMESTAMP} as ttl
-            FROM ${bucket} WHERE unique_key = ?`,
+            FROM ${bucket} WHERE key_ = ?`,
             [key]
         )
         if (record === null) return null
@@ -182,16 +201,16 @@ export abstract class JDBCClient implements Client {
         let value: any = null
         switch (type) {
             case "int":
-                value = record.int_value
+                value = record.int_
                 break
             case "float":
-                value = record.float_value
+                value = record.float_
                 break
             case "string":
-                value = record.string_value
+                value = record.string_
                 break
             case "blob":
-                value = record.blob_value
+                value = record.blob_
                 break
         }
         if (useCache) {
@@ -209,7 +228,7 @@ export abstract class JDBCClient implements Client {
             if (element !== null && element.getValue() === value) return
         }
         this.ensureBucket(bucket, useCache)
-        let keys = `unique_key,${type}_value,timestamp,expires_at`
+        let keys = `key_,${type}_,timestamp,expires_at`
         let expires_at = ttl === undefined ? "NULL" : `${this.SQL_UNIX_TIMESTAMP} + ${ttl * 1e6}`
         let values = `?,?,${this.SQL_UNIX_TIMESTAMP},${expires_at}`
         this.execute(`REPLACE INTO ${bucket}(${keys}) VALUES(${values})`, [key, value])
@@ -230,11 +249,11 @@ export abstract class JDBCClient implements Client {
 }
 
 interface BucketRecord {
-    unique_key: string
-    int_value?: number
-    float_value?: number
-    string_value?: string
-    blob_value?: byte[]
+    key_: string
+    int_?: number
+    float_?: number
+    string_?: string
+    blob_?: byte[]
     timestamp: number
     expires_at?: number
 }

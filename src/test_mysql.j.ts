@@ -1,17 +1,24 @@
 import { assert } from "chai"
 import { describe, it, before, after, beforeEach, afterEach, report } from "lightest"
-import { JDBCClient, MySQLClient, CrateClient } from "./index"
+import { JDBCClient, MySQLClient } from "./index"
 
 const String = java.lang.String
 const logger = java.lang.System.err
 
-let runTest1 = (description, newClient) => describe(description, () => {
+describe("MySQLClient", () => {
     let client: JDBCClient
     let bucket = "bucket"
     let table = "bucket"
 
     beforeEach(() => {
-        client = newClient()
+        client = new MySQLClient({
+            host: "127.0.0.1",
+            port: 3306,
+            database: "test",
+            user: "root",
+            password: "venividivici",
+            useSSL: false,
+        })
         client.execute(`DROP TABLE IF EXISTS ${bucket}`)
         client.execute(`DROP TABLE IF EXISTS ${table}`)
     })
@@ -110,17 +117,12 @@ let runTest1 = (description, newClient) => describe(description, () => {
 
     it("one", () => {
         client.ensureTable(table, "id", "INT")
-        client.insert(table, { id: 0 })
-        for (let i = 0; i < 200; i++) {
-            client.insert(table, { id: i + 1 })
-        }
-        /*
+        client.insert(table, { id: 1 })
         assert.strictEqual(
             JSON.stringify(client.one(`SELECT * FROM ${table}`)),
             JSON.stringify({ id: 1 })
         )
         assert.strictEqual(client.one(`SELECT * FROM ${table} WHERE id = 0`), null)
-        */
     })
 
     it("list", () => {
@@ -204,14 +206,23 @@ let runTest1 = (description, newClient) => describe(description, () => {
     })
 })
 
-let runTest2 = (description, newClient) => describe(description, () => {
+describe("MySQLClient benchmark", () => {
     let client: JDBCClient
     let bucket = "bucket"
     let table = "bucket"
     let bulk = 100
 
     before(() => {
-        client = newClient()
+        client = new MySQLClient({
+            host: "127.0.0.1",
+            port: 3306,
+            database: "test",
+            user: "root",
+            password: "venividivici",
+            useSSL: false,
+            logger: "com.mysql.cj.core.log.Slf4JLogger",
+            profileSQL: java.lang.System.getenv("PROFILE_SQL") === "true",
+        })
         client.execute(`DROP TABLE IF EXISTS ${bucket}`)
         client.execute(`DROP TABLE IF EXISTS ${table}`)
         client.setString(bucket, "_", "_")
@@ -268,62 +279,28 @@ let runTest2 = (description, newClient) => describe(description, () => {
 
     it("insert", () => {
         for (let i = 0; i < bulk; i++) {
-            client.insert(table, { unique_key: "insert" + i, int_value: i })
+            client.insert(table, { key_: "insert" + i, int_: i })
         }
     })
 
     it("upsert", () => {
         for (let i = 0; i < bulk; i++) {
-            client.upsert(table, { unique_key: "upsert" + i, string_value: "upsert" })
+            client.upsert(table, { key_: "upsert" + i, string_: "upsert" })
         }
     })
 
     it("one", () => {
         for (let i = 0; i < bulk; i++) {
-            let row = client.one<any>(`SELECT * FROM ${table} WHERE unique_key = ?`, ["insert" + i])
-            assert.strictEqual(row.int_value, i)
+            let row = client.one<any>(`SELECT * FROM ${table} WHERE key_ = ?`, ["insert" + i])
+            assert.strictEqual(row.int_, i)
         }
     })
 
     it("list", () => {
-        let rows = client.list<any>(`SELECT * FROM ${table} WHERE string_value = ?`, ["upsert"])
-        assert.strictEqual(rows.every(row => row.string_value === "upsert"), true)
+        let rows = client.list<any>(`SELECT * FROM ${table} WHERE string_ = ?`, ["upsert"])
+        assert.strictEqual(rows.every(row => row.string_ === "upsert"), true)
     })
 })
-
-false && runTest1("MySQLClient", () =>
-    new MySQLClient({
-        host: "127.0.0.1",
-        port: 3306,
-        database: "test",
-        user: "root",
-        password: "venividivici",
-        useSSL: false,
-    })
-)
-
-runTest1("CrateClient", () =>
-    new CrateClient({
-        host: "127.0.0.1",
-        port: 5432,
-        database: "",
-        user: "",
-        password: "",
-    })
-)
-
-false && runTest2("MySQLClient benchmark", () =>
-    new MySQLClient({
-        host: "127.0.0.1",
-        port: 3306,
-        database: "test",
-        user: "root",
-        password: "venividivici",
-        useSSL: false,
-        logger: "com.mysql.cj.core.log.Slf4JLogger",
-        profileSQL: java.lang.System.getenv("PROFILE_SQL") === "true",
-    })
-)
 
 logger.print(report.toString())
 assert.isOk(report.ok())

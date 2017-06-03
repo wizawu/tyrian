@@ -6,7 +6,6 @@ export class MySQLClient extends JDBCClient {
 
     constructor(options: Options) {
         super()
-        this.cache = net.sf.ehcache.CacheManager.create()
         let { host, port, database, user, password } = options
         this.SQL_UNIX_TIMESTAMP = "floor(unix_timestamp(current_timestamp(6)) * 1000000)"
         this.url = `jdbc:mysql://${host}:${port}/${database}?user=${user}&password=${password}`
@@ -31,31 +30,5 @@ export class MySQLClient extends JDBCClient {
 
     protected connect() {
         this.connection = this.driver.connect(this.url, new java.util.Properties())
-    }
-
-    protected ensureBucket(bucket: string, withCache: boolean) {
-        this.execute(`
-            CREATE TABLE IF NOT EXISTS ${bucket} (
-                unique_key VARCHAR(2048) NOT NULL,
-                int_value BIGINT,
-                float_value DOUBLE,
-                string_value TEXT,
-                blob_value LONGBLOB,
-                timestamp BIGINT,
-                expires_at BIGINT,
-                PRIMARY KEY (unique_key),
-                INDEX ${bucket}_idx_expires_at (expires_at)
-            )
-        `)
-        if (withCache) this.ensureBucketInCache(bucket)
-    }
-
-    upsert(table: string, object: any) {
-        let keys = Object.keys(object).join(",")
-        let values = Object.keys(object).map(() => "?").join(",")
-        this.execute(
-            `REPLACE INTO ${table}(${keys}) VALUES(${values})`,
-            Object.keys(object).map(key => object[key])
-        )
     }
 }

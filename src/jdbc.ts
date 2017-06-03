@@ -143,28 +143,8 @@ export abstract class JDBCClient implements Client {
         return statement
     }
 
-    private existsTable(table: string) {
-        let rows = this.list<any>("SHOW TABLES")
-        return rows.some(row => row.TABLE_NAME === table)
-    }
-
-    private ensureBucket(bucket: string) {
-        this.execute(`
-            CREATE TABLE IF NOT EXISTS ${bucket} (
-                key_ VARCHAR(2048) PRIMARY KEY,
-                int_ BIGINT,
-                float_ DOUBLE,
-                string_ TEXT,
-                blob_ LONGBLOB,
-                timestamp BIGINT,
-                expires_at BIGINT,
-                INDEX ${bucket}_idx_expires_at (expires_at)
-            )
-        `)
-    }
-
     private getByType(bucket: string, key: string, type: string) {
-        if (!this.existsTable(bucket)) return
+        if (!this.one("SHOW TABLES LIKE ?", [bucket])) return null
         let record = this.one<BucketRecord>(`
             SELECT *, expires_at - ${this.SQL_UNIX_TIMESTAMP} as ttl
             FROM ${bucket} WHERE key_ = ?`,
@@ -172,7 +152,7 @@ export abstract class JDBCClient implements Client {
         )
         if (record === null) return null
         if (typeof (record as any).ttl === "number" && (record as any).ttl <= 0) {
-            this.wipeUpExpiration(bucket)
+            this.execute(`DELETE FROM ${bucket} WHERE ${this.SQL_UNIX_TIMESTAMP} >= expires_at`)
             return null
         }
         switch (type) {
@@ -190,15 +170,22 @@ export abstract class JDBCClient implements Client {
     }
 
     private setByType(bucket: string, key: string, type: string, value: any, ttl?: number) {
-        this.ensureBucket(bucket)
+        this.execute(`
+            CREATE TABLE IF NOT EXISTS ${bucket} (
+                key_ VARCHAR(2048) PRIMARY KEY,
+                int_ BIGINT,
+                float_ DOUBLE,
+                string_ TEXT,
+                blob_ LONGBLOB,
+                timestamp BIGINT,
+                expires_at BIGINT,
+                INDEX ${bucket}_idx_expires_at (expires_at)
+            )
+        `)
         let keys = `key_,${type}_,timestamp,expires_at`
         let expires_at = ttl === undefined ? "NULL" : `${this.SQL_UNIX_TIMESTAMP} + ${ttl * 1e6}`
         let values = `?,?,${this.SQL_UNIX_TIMESTAMP},${expires_at}`
         this.execute(`REPLACE INTO ${bucket}(${keys}) VALUES(${values})`, [key, value])
-    }
-
-    private wipeUpExpiration(bucket: string) {
-        this.execute(`DELETE FROM ${bucket} WHERE ${this.SQL_UNIX_TIMESTAMP} >= expires_at`)
     }
 }
 

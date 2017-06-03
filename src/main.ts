@@ -4,7 +4,6 @@ import * as path from "path"
 
 import build from "./commands/build"
 import env from "./commands/env"
-import init from "./commands/init"
 import install from "./commands/install"
 import run from "./commands/run"
 import { EXIT_STATUS } from "./const"
@@ -30,8 +29,6 @@ if (command === "env" || !fs.existsSync(envfile)) {
 
 if (command === "env") {
     console.error(envstat)
-} else if (command === "init") {
-    init(instdir)
 } else if (command === "install") {
     install(instdir)
 } else if (command === "build" && process.argv[3]) {

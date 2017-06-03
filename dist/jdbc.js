@@ -95,10 +95,10 @@ var JDBCClient = (function () {
     };
     JDBCClient.prototype.delete = function (bucket_or_table, key) {
         var pkey = "";
-        var rows = this.list("SHOW INDEX FROM " + bucket_or_table);
-        rows.forEach(function (row) {
-            if (row.INDEX_NAME === "PRIMARY")
-                pkey = row.COLUMN_NAME;
+        var indexes = this.list("SHOW INDEX FROM " + bucket_or_table);
+        indexes.forEach(function (index) {
+            if (index.INDEX_NAME === "PRIMARY")
+                pkey = index.COLUMN_NAME;
         });
         this.execute("DELETE FROM " + bucket_or_table + " WHERE " + pkey + " = ?", [key]);
     };
@@ -138,7 +138,19 @@ var JDBCClient = (function () {
         }
     };
     JDBCClient.prototype.setByType = function (bucket, key, type, value, ttl) {
-        this.execute("\n            CREATE TABLE IF NOT EXISTS " + bucket + " (\n                key_ VARCHAR(2048) PRIMARY KEY,\n                int_ BIGINT,\n                float_ DOUBLE,\n                string_ TEXT,\n                blob_ LONGBLOB,\n                timestamp BIGINT,\n                expires_at BIGINT,\n                INDEX " + bucket + "_idx_expires_at (expires_at)\n            )\n        ");
+        var columns = "", engine = "";
+        if (type === "blob") {
+            columns = "blob_ LONGBLOB";
+        }
+        else if (type === "string") {
+            columns = "string_ VARCHAR(1024)";
+            engine = "ENGINE = MEMORY";
+        }
+        else {
+            columns = "int_ BIGINT, float_ DOUBLE";
+            engine = "ENGINE = MEMORY";
+        }
+        this.execute("\n            CREATE TABLE IF NOT EXISTS " + bucket + " (\n                key_ VARCHAR(255) PRIMARY KEY,\n                " + columns + ",\n                timestamp BIGINT,\n                expires_at BIGINT,\n                INDEX " + bucket + "_idx_expires_at (expires_at)\n            ) " + engine + "\n        ");
         var keys = "key_," + type + "_,timestamp,expires_at";
         var expires_at = ttl === undefined ? "NULL" : this.SQL_UNIX_TIMESTAMP + " + " + ttl * 1e6;
         var values = "?,?," + this.SQL_UNIX_TIMESTAMP + "," + expires_at;

@@ -127,16 +127,7 @@ export abstract class JDBCClient implements Client {
         indexes.forEach(index => {
             if (index.INDEX_NAME === "PRIMARY") pkey = index.COLUMN_NAME
         })
-        if (pkey === "key_") {
-            let columns = this.list<any>("SHOW COLUMNS FROM " + bucket_or_table)
-            if (columns.some(c => c.COLUMN_NAME === "blob_")) {
-                this.execute(`DELETE FROM ${bucket_or_table} WHERE ${pkey} = ?`, [key])
-            } else {
-                this.execute(`DELETE FROM ${bucket_or_table} WHERE ${pkey} = ?`, [this.sha256(key)])
-            }
-        } else {
-            this.execute(`DELETE FROM ${bucket_or_table} WHERE ${pkey} = ?`, [key])
-        }
+        this.execute(`DELETE FROM ${bucket_or_table} WHERE ${pkey} = ?`, [key])
     }
 
     close() {
@@ -152,14 +143,7 @@ export abstract class JDBCClient implements Client {
         return statement
     }
 
-    private sha256(key: string) {
-        let digest = java.security.MessageDigest.getInstance("SHA-256")
-        digest.update(new java.lang.String(key).getBytes())
-        return java.util.Base64.getEncoder().encodeToString(digest.digest())
-    }
-
     private getByType(bucket: string, key: string, type: string) {
-        key = type === "blob" ? key : this.sha256(key)
         if (!this.one("SHOW TABLES LIKE ?", [bucket])) return null
         let record = this.one<BucketRecord>(`
             SELECT *, expires_at - ${this.SQL_UNIX_TIMESTAMP} as ttl
@@ -186,39 +170,25 @@ export abstract class JDBCClient implements Client {
     }
 
     private setByType(bucket: string, key: string, type: string, value: any, ttl?: number) {
-        key = type === "blob" ? key : this.sha256(key)
-        if (type === "string") {
-            this.execute(`
-                CREATE TABLE IF NOT EXISTS ${bucket} (
-                    key_ VARCHAR(44) PRIMARY KEY,
-                    string_ VARCHAR(1024),
-                    timestamp BIGINT,
-                    expires_at BIGINT,
-                    INDEX ${bucket}_idx_expires_at (expires_at)
-                ) ENGINE = MEMORY
-            `)
-        } else if (type === "blob") {
-            this.execute(`
-                CREATE TABLE IF NOT EXISTS ${bucket} (
-                    key_ VARCHAR(255) PRIMARY KEY,
-                    blob_ LONGBLOB,
-                    timestamp BIGINT,
-                    expires_at BIGINT,
-                    INDEX ${bucket}_idx_expires_at (expires_at)
-                )
-            `)
+        let columns = "", engine = ""
+        if (type === "blob") {
+            columns = "blob_ LONGBLOB"
+        } else if (type === "string") {
+            columns = "string_ VARCHAR(1024)"
+            engine = "ENGINE = MEMORY"
         } else {
-            this.execute(`
-                CREATE TABLE IF NOT EXISTS ${bucket} (
-                    key_ VARCHAR(44) PRIMARY KEY,
-                    int_ BIGINT,
-                    float_ DOUBLE,
-                    timestamp BIGINT,
-                    expires_at BIGINT,
-                    INDEX ${bucket}_idx_expires_at (expires_at)
-                ) ENGINE = MEMORY
-            `)
+            columns = "int_ BIGINT, float_ DOUBLE"
+            engine = "ENGINE = MEMORY"
         }
+        this.execute(`
+            CREATE TABLE IF NOT EXISTS ${bucket} (
+                key_ VARCHAR(255) PRIMARY KEY,
+                ${columns},
+                timestamp BIGINT,
+                expires_at BIGINT,
+                INDEX ${bucket}_idx_expires_at (expires_at)
+            ) ${engine}
+        `)
         let keys = `key_,${type}_,timestamp,expires_at`
         let expires_at = ttl === undefined ? "NULL" : `${this.SQL_UNIX_TIMESTAMP} + ${ttl * 1e6}`
         let values = `?,?,${this.SQL_UNIX_TIMESTAMP},${expires_at}`

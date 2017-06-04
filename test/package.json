@@ -1,7 +1,6 @@
 {
   "dependencies": {
-    "@types/chalk": "^0.4.31",
-    "chalk": "^1.1.3"
+    "reduxdb": "^3.0.4"
   },
   "mvnDependencies": [
     "com.sparkjava:spark-core:2.5.5",

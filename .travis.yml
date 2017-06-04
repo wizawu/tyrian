@@ -11,3 +11,4 @@ before_script:
 script:
   - npm install -g typescript yarn
   - make types
+  - make test

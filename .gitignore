@@ -1,5 +1,6 @@
 *.log
 *.swp
+dist
 lib
 node_modules
 tsconfig.json

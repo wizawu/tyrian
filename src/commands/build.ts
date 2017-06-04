@@ -58,7 +58,7 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
         let jars = fs.readdirSync(`${context}/lib`).filter(file => /\.jar$/.test(file))
         jars.forEach(jar => {
             getTopPackages(`${context}/lib/${jar}`).forEach(pkg =>
-                globalVars[pkg] = `typeof ${pkg} === "undefined" ? Packages.${pkg} : ${pkg}`
+                globalVars[pkg] = `(typeof Packages === "object" && typeof ${pkg} === "undefined" ? Packages.${pkg} : ${pkg})`
             )
         })
     }

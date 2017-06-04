@@ -8,7 +8,6 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
     return t;
 };
 exports.__esModule = true;
-var assert = require("assert");
 var chalk = require("chalk");
 var fs = require("fs");
 var path = require("path");
@@ -19,22 +18,22 @@ var autoprefixer = require("autoprefixer");
 function compiler(instdir, instmod, entries, options) {
     var context = process.cwd();
     var entry = {};
-    if (fs.lstatSync(options.output).isDirectory()) {
-        entries.forEach(function (file) {
-            if (/\.ts$/.test(file)) {
-                entry[options.output + "/" + path.basename(file, ".ts") + ".js"] = file;
-            }
-            else if (/\.tsx$/.test(file)) {
-                entry[options.output + "/" + path.basename(file, ".tsx") + ".js"] = file;
-            }
-            else {
-                throw "invalid entry suffix";
-            }
-        });
+    entries = entries.map(function (entry) { return "./" + path.relative("", entry); });
+    if (entries.length === 1 && options.outFile) {
+        entry[options.outFile] = entries[0];
     }
     else {
-        assert.strictEqual(entries.length, 1);
-        entry[options.output] = entries[0];
+        entries.forEach(function (file) {
+            if (/\.ts$/.test(file)) {
+                entry[path.basename(file, ".ts") + ".js"] = file;
+            }
+            else if (/\.tsx$/.test(file)) {
+                entry[path.basename(file, ".tsx") + ".js"] = file;
+            }
+            else {
+                throw "invalid entry suffix: " + file;
+            }
+        });
     }
     var cssLoaders = [{
             loader: "style-loader"
@@ -60,7 +59,7 @@ function compiler(instdir, instmod, entries, options) {
         var jars = fs.readdirSync(context + "/lib").filter(function (file) { return /\.jar$/.test(file); });
         jars.forEach(function (jar) {
             parseJAR_1.getTopPackages(context + "/lib/" + jar).forEach(function (pkg) {
-                return globalVars[pkg] = "typeof " + pkg + " === \"undefined\" ? Packages." + pkg + " : " + pkg;
+                return globalVars[pkg] = "(typeof Packages === \"object\" && typeof " + pkg + " === \"undefined\" ? Packages." + pkg + " : " + pkg + ")";
             });
         });
     }
@@ -71,7 +70,7 @@ function compiler(instdir, instmod, entries, options) {
         resolveLoader: { modules: [instmod] },
         entry: entry,
         output: {
-            path: context,
+            path: path.resolve(options.outDir),
             filename: "[name]",
             libraryTarget: options.targetModule ? "commonjs2" : undefined
         },
@@ -105,6 +104,10 @@ function default_1(instdir, instmod, entries, options) {
         console.error(chalk.yellow("no entry to build"));
         process.exit(const_1.EXIT_STATUS.BUILD_ENTRY_ERROR);
     }
+    else if (options.outDir === undefined) {
+        console.error(chalk.red("invalid -o option"));
+        process.exit(const_1.EXIT_STATUS.BUILD_OUTDIR_ERROR);
+    }
     else if (entries.some(function (entry) { return !/\.tsx?$/.test(entry); })) {
         console.error(chalk.red("entry suffix should be .ts or .tsx"));
         process.exit(const_1.EXIT_STATUS.BUILD_ENTRY_ERROR);
@@ -113,18 +116,8 @@ function default_1(instdir, instmod, entries, options) {
         console.error(chalk.red("no tsconfig.json in current directory"));
         process.exit(const_1.EXIT_STATUS.TSCONFIG_NOT_FOUND);
     }
-    if (options.output) {
-        if (!fs.existsSync(options.output) && (/\/$/.test(options.output) || entries.length > 1)) {
-            fs.mkdirSync(options.output);
-        }
-        if (entries.length > 1 && !fs.lstatSync(options.output).isDirectory()) {
-            console.error(chalk.red("invalid -o option"));
-            process.exit(const_1.EXIT_STATUS.BUILD_OUTPUT_ERROR);
-        }
-    }
-    else {
-        console.error(chalk.red("invalid -o option"));
-        process.exit(const_1.EXIT_STATUS.BUILD_OUTPUT_ERROR);
+    if (options.outFile && entries.length > 1) {
+        console.error(chalk.yellow("ignoring -o " + options.outFile));
     }
     var statsOptions = {
         children: false,

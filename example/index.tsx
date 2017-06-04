@@ -1,1 +1,1 @@
-import "../css/index.less"
+import "./index.less"

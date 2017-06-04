@@ -11,7 +11,9 @@ exports.__esModule = true;
 var chalk = require("chalk");
 var const_1 = require("../const");
 var child_process_1 = require("child_process");
-var header = function (tool, link) { return "\n[" + tool + "](" + link + ")\n"; };
+function header(tool, link) {
+    return "\n" + chalk.green("[" + tool + "]") + chalk.gray("(" + link + ")") + "\n";
+}
 var notFound = function (stdout, stderr) { return (stdout + stderr) || chalk.red("** not found **\n"); };
 function default_1() {
     var ok = true;

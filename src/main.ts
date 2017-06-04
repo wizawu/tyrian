@@ -7,6 +7,7 @@ import env from "./commands/env"
 import install from "./commands/install"
 import run from "./commands/run"
 import { EXIT_STATUS } from "./const"
+import { Options as BuildOptions } from "./commands/build"
 import { help, version } from "./commands/help"
 
 const instdir = path.resolve(path.dirname(process.argv[1]) + "/..")
@@ -32,10 +33,24 @@ if (command === "env") {
 } else if (command === "install") {
     install(instdir)
 } else if (command === "build" && process.argv[3]) {
-    if (process.argv[3] === "-w") {
-        build(instdir, instmod, process.argv.slice(4), true)
-    } else {
-        build(instdir, instmod, process.argv.slice(3), false)
+    let options: BuildOptions = {
+        watch: false,
+        targetModule: false,
+        output: "./"
+    }
+    for (let i = 3; i < process.argv.length; i++) {
+        let arg = process.argv[i]
+        if (arg === "-w") {
+            options.watch = true
+        } else if (arg === "-m") {
+            options.targetModule = true
+        } else if (arg === "-o") {
+            options.output = process.argv[i + 1]
+            i += 1
+        } else {
+            build(instdir, instmod, process.argv.slice(i), options)
+            break
+        }
     }
 } else if (command === "run" && process.argv[3]) {
     let watch = false

@@ -10,14 +10,17 @@ export function help(instdir: string, status: number) {
 Version: ${version(instdir)}
 
 Usage:
-  1c help                               print this message
-  1c version                            print the version number
-  1c env                                check if all dependencies of 1c are ready
-  1c install                            install dependencies in package.json
-  1c build [-w] <entry>...              bundle one/multiple entries (.ts/.tsx)
-  1c run [-w] [jjs options] <output>    run output file (.js)
+  1c help                                       print this message
+  1c version                                    print the version number
+  1c env                                        check if all dependencies of 1c are ready
+  1c install                                    install dependencies in package.json
+  1c build [-w] [-m] [-o file|dir] <entry>...   bundle one/multiple entries (.ts/.tsx)
+  1c run [-w] [jjs options] <output>            run output file (.js)
 
 Options:
+
+  -m                build the entry into a commonjs module
+  -o                output file path or directory (for multiple entries)
   -w                watch changes and re-build/re-run
   jjs options       check out 'jjs -h'
 

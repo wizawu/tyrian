@@ -1,3 +1,4 @@
+import * as assert from "assert"
 import * as chalk from "chalk"
 import * as fs from "fs"
 import * as path from "path"
@@ -8,10 +9,29 @@ import { getTopPackages } from "../compiler/parseJAR"
 
 const autoprefixer = require("autoprefixer")
 
-function compiler(instdir: string, instmod: string, entries: string[], watch: boolean) {
+export interface Options {
+    watch: boolean
+    targetModule: boolean
+    output: string
+}
+
+function compiler(instdir: string, instmod: string, entries: string[], options: Options) {
     let context = process.cwd()
     let entry = {}
-    entries.forEach(file => entry[`${path.basename(file, ".ts")}.js`] = file)
+    if (fs.lstatSync(options.output).isDirectory()) {
+        entries.forEach(file => {
+            if (/\.ts$/.test(file)) {
+                entry[`${options.output}/${path.basename(file, ".ts")}.js`] = file
+            } else if (/\.tsx$/.test(file)) {
+                entry[`${options.output}/${path.basename(file, ".tsx")}.js`] = file
+            } else {
+                throw "invalid entry suffix"
+            }
+        })
+    } else {
+        assert.strictEqual(entries.length, 1)
+        entry[options.output] = entries[0]
+    }
 
     let cssLoaders = [{
         loader: "style-loader"
@@ -49,7 +69,11 @@ function compiler(instdir: string, instmod: string, entries: string[], watch: bo
         resolve: { extensions: [".js", ".ts", ".tsx"] },
         resolveLoader: { modules: [instmod] },
         entry: entry,
-        output: { path: context, filename: "[name]" },
+        output: {
+            path: context,
+            filename: "[name]",
+            libraryTarget: options.targetModule ? "commonjs2" : undefined,
+        },
         module: {
             rules: [{
                 test: /\.tsx?$/,
@@ -71,18 +95,27 @@ function compiler(instdir: string, instmod: string, entries: string[], watch: bo
             }),
             new webpack.DefinePlugin({
                 "process.env": {
-                    NODE_ENV: watch ? '"development"' : '"production"'
+                    NODE_ENV: options.watch ? '"development"' : '"production"'
                 },
                 ...globalVars,
             }),
-        ].slice(watch ? 1 : 0)
+        ].slice(options.watch ? 1 : 0)
     })
 }
 
-export default function (instdir: string, instmod: string, entries: string[], watch: boolean) {
+export default function (instdir: string, instmod: string, entries: string[], options: Options) {
     if (entries.length === 0) {
         console.error(chalk.yellow("no entry to build"))
         process.exit(EXIT_STATUS.BUILD_ENTRY_ERROR)
+    } else if (entries.some(entry => !/\.tsx?$/.test(entry))) {
+        console.error(chalk.red("entry suffix should be .ts or .tsx"))
+        process.exit(EXIT_STATUS.BUILD_ENTRY_ERROR)
+    } else if (!fs.existsSync(options.output) ||
+        (entries.length === 1 && /\.tsx?$/.test(options.output)) ||
+        (entries.length > 1 && !fs.lstatSync(options.output).isDirectory())
+    ) {
+        console.error(chalk.red("invalid -o option"))
+        process.exit(EXIT_STATUS.BUILD_OUTPUT_ERROR)
     } else if (!fs.existsSync("tsconfig.json")) {
         console.error(chalk.red("no tsconfig.json in current directory"))
         process.exit(EXIT_STATUS.TSCONFIG_NOT_FOUND)
@@ -95,13 +128,13 @@ export default function (instdir: string, instmod: string, entries: string[], wa
         version: false,
     }
 
-    if (watch) {
-        compiler(instdir, instmod, entries, true).watch({ poll: true }, (err, stats) => {
+    if (options.watch) {
+        compiler(instdir, instmod, entries, options).watch({ poll: true }, (err, stats) => {
             console.log(`Clock: ${new Date().toLocaleTimeString()}`)
             console.log(stats.toString(statsOptions))
         })
     } else {
-        compiler(instdir, instmod, entries, false).run((err, stats) => {
+        compiler(instdir, instmod, entries, options).run((err, stats) => {
             console.log(stats.toString(statsOptions))
             if (stats.hasErrors()) process.exit(EXIT_STATUS.WEBPACK_COMPILE_ERROR)
         })

@@ -8,6 +8,7 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
     return t;
 };
 exports.__esModule = true;
+var assert = require("assert");
 var chalk = require("chalk");
 var fs = require("fs");
 var path = require("path");
@@ -15,10 +16,26 @@ var webpack = require("webpack");
 var const_1 = require("../const");
 var parseJAR_1 = require("../compiler/parseJAR");
 var autoprefixer = require("autoprefixer");
-function compiler(instdir, instmod, entries, watch) {
+function compiler(instdir, instmod, entries, options) {
     var context = process.cwd();
     var entry = {};
-    entries.forEach(function (file) { return entry[path.basename(file, ".ts") + ".js"] = file; });
+    if (fs.lstatSync(options.output).isDirectory()) {
+        entries.forEach(function (file) {
+            if (/\.ts$/.test(file)) {
+                entry[options.output + "/" + path.basename(file, ".ts") + ".js"] = file;
+            }
+            else if (/\.tsx$/.test(file)) {
+                entry[options.output + "/" + path.basename(file, ".tsx") + ".js"] = file;
+            }
+            else {
+                throw "invalid entry suffix";
+            }
+        });
+    }
+    else {
+        assert.strictEqual(entries.length, 1);
+        entry[options.output] = entries[0];
+    }
     var cssLoaders = [{
             loader: "style-loader"
         }, {
@@ -53,7 +70,11 @@ function compiler(instdir, instmod, entries, watch) {
         resolve: { extensions: [".js", ".ts", ".tsx"] },
         resolveLoader: { modules: [instmod] },
         entry: entry,
-        output: { path: context, filename: "[name]" },
+        output: {
+            path: context,
+            filename: "[name]",
+            libraryTarget: options.targetModule ? "commonjs2" : undefined
+        },
         module: {
             rules: [{
                     test: /\.tsx?$/,
@@ -74,15 +95,25 @@ function compiler(instdir, instmod, entries, watch) {
                 sourceMap: true
             }),
             new webpack.DefinePlugin(__assign({ "process.env": {
-                    NODE_ENV: watch ? '"development"' : '"production"'
+                    NODE_ENV: options.watch ? '"development"' : '"production"'
                 } }, globalVars)),
-        ].slice(watch ? 1 : 0)
+        ].slice(options.watch ? 1 : 0)
     });
 }
-function default_1(instdir, instmod, entries, watch) {
+function default_1(instdir, instmod, entries, options) {
     if (entries.length === 0) {
         console.error(chalk.yellow("no entry to build"));
         process.exit(const_1.EXIT_STATUS.BUILD_ENTRY_ERROR);
+    }
+    else if (entries.some(function (entry) { return !/\.tsx?$/.test(entry); })) {
+        console.error(chalk.red("entry suffix should be .ts or .tsx"));
+        process.exit(const_1.EXIT_STATUS.BUILD_ENTRY_ERROR);
+    }
+    else if (!fs.existsSync(options.output) ||
+        (entries.length === 1 && /\.tsx?$/.test(options.output)) ||
+        (entries.length > 1 && !fs.lstatSync(options.output).isDirectory())) {
+        console.error(chalk.red("invalid -o option"));
+        process.exit(const_1.EXIT_STATUS.BUILD_OUTPUT_ERROR);
     }
     else if (!fs.existsSync("tsconfig.json")) {
         console.error(chalk.red("no tsconfig.json in current directory"));
@@ -94,14 +125,14 @@ function default_1(instdir, instmod, entries, watch) {
         colors: true,
         version: false
     };
-    if (watch) {
-        compiler(instdir, instmod, entries, true).watch({ poll: true }, function (err, stats) {
+    if (options.watch) {
+        compiler(instdir, instmod, entries, options).watch({ poll: true }, function (err, stats) {
             console.log("Clock: " + new Date().toLocaleTimeString());
             console.log(stats.toString(statsOptions));
         });
     }
     else {
-        compiler(instdir, instmod, entries, false).run(function (err, stats) {
+        compiler(instdir, instmod, entries, options).run(function (err, stats) {
             console.log(stats.toString(statsOptions));
             if (stats.hasErrors())
                 process.exit(const_1.EXIT_STATUS.WEBPACK_COMPILE_ERROR);

@@ -32,11 +32,27 @@ else if (command === "install") {
     install_1["default"](instdir);
 }
 else if (command === "build" && process.argv[3]) {
-    if (process.argv[3] === "-w") {
-        build_1["default"](instdir, instmod, process.argv.slice(4), true);
-    }
-    else {
-        build_1["default"](instdir, instmod, process.argv.slice(3), false);
+    var options = {
+        watch: false,
+        targetModule: false,
+        output: "./"
+    };
+    for (var i = 3; i < process.argv.length; i++) {
+        var arg = process.argv[i];
+        if (arg === "-w") {
+            options.watch = true;
+        }
+        else if (arg === "-m") {
+            options.targetModule = true;
+        }
+        else if (arg === "-o") {
+            options.output = process.argv[i + 1];
+            i += 1;
+        }
+        else {
+            build_1["default"](instdir, instmod, process.argv.slice(i), options);
+            break;
+        }
     }
 }
 else if (command === "run" && process.argv[3]) {

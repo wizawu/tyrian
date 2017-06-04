@@ -1,4 +1,6 @@
 *.log
 *.swp
+lib
 node_modules
+tsconfig.json
 yarn.lock

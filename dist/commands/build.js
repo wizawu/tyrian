@@ -109,15 +109,22 @@ function default_1(instdir, instmod, entries, options) {
         console.error(chalk.red("entry suffix should be .ts or .tsx"));
         process.exit(const_1.EXIT_STATUS.BUILD_ENTRY_ERROR);
     }
-    else if (!fs.existsSync(options.output) ||
-        (entries.length === 1 && /\.tsx?$/.test(options.output)) ||
-        (entries.length > 1 && !fs.lstatSync(options.output).isDirectory())) {
-        console.error(chalk.red("invalid -o option"));
-        process.exit(const_1.EXIT_STATUS.BUILD_OUTPUT_ERROR);
-    }
     else if (!fs.existsSync("tsconfig.json")) {
         console.error(chalk.red("no tsconfig.json in current directory"));
         process.exit(const_1.EXIT_STATUS.TSCONFIG_NOT_FOUND);
+    }
+    if (options.output) {
+        if (!fs.existsSync(options.output) && (/\/$/.test(options.output) || entries.length > 1)) {
+            fs.mkdirSync(options.output);
+        }
+        if (entries.length > 1 && !fs.lstatSync(options.output).isDirectory()) {
+            console.error(chalk.red("invalid -o option"));
+            process.exit(const_1.EXIT_STATUS.BUILD_OUTPUT_ERROR);
+        }
+    }
+    else {
+        console.error(chalk.red("invalid -o option"));
+        process.exit(const_1.EXIT_STATUS.BUILD_OUTPUT_ERROR);
     }
     var statsOptions = {
         children: false,

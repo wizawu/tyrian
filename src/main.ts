@@ -36,7 +36,7 @@ if (command === "env") {
     let options: BuildOptions = {
         watch: false,
         targetModule: false,
-        output: "./"
+        outDir: "./",
     }
     for (let i = 3; i < process.argv.length; i++) {
         let arg = process.argv[i]
@@ -44,8 +44,11 @@ if (command === "env") {
             options.watch = true
         } else if (arg === "-m") {
             options.targetModule = true
+        } else if (arg === "-c") {
+            options.outDir = process.argv[i + 1]
+            i += 1
         } else if (arg === "-o") {
-            options.output = process.argv[i + 1]
+            options.outFile = process.argv[i + 1]
             i += 1
         } else {
             build(instdir, instmod, process.argv.slice(i), options)

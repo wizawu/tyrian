@@ -1,4 +1,3 @@
-import * as assert from "assert"
 import * as chalk from "chalk"
 import * as fs from "fs"
 import * as path from "path"
@@ -12,25 +11,26 @@ const autoprefixer = require("autoprefixer")
 export interface Options {
     watch: boolean
     targetModule: boolean
-    output: string
+    outDir: string
+    outFile?: string
 }
 
 function compiler(instdir: string, instmod: string, entries: string[], options: Options) {
     let context = process.cwd()
     let entry = {}
-    if (fs.lstatSync(options.output).isDirectory()) {
+    entries = entries.map(entry => "./" + path.relative("", entry))
+    if (entries.length === 1 && options.outFile) {
+        entry[options.outFile] = entries[0]
+    } else {
         entries.forEach(file => {
             if (/\.ts$/.test(file)) {
-                entry[`${options.output}/${path.basename(file, ".ts")}.js`] = file
+                entry[path.basename(file, ".ts") + ".js"] = file
             } else if (/\.tsx$/.test(file)) {
-                entry[`${options.output}/${path.basename(file, ".tsx")}.js`] = file
+                entry[path.basename(file, ".tsx") + ".js"] = file
             } else {
-                throw "invalid entry suffix"
+                throw `invalid entry suffix: ${file}`
             }
         })
-    } else {
-        assert.strictEqual(entries.length, 1)
-        entry[options.output] = entries[0]
     }
 
     let cssLoaders = [{
@@ -70,7 +70,7 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
         resolveLoader: { modules: [instmod] },
         entry: entry,
         output: {
-            path: context,
+            path: path.resolve(options.outDir),
             filename: "[name]",
             libraryTarget: options.targetModule ? "commonjs2" : undefined,
         },
@@ -107,6 +107,9 @@ export default function (instdir: string, instmod: string, entries: string[], op
     if (entries.length === 0) {
         console.error(chalk.yellow("no entry to build"))
         process.exit(EXIT_STATUS.BUILD_ENTRY_ERROR)
+    } else if (options.outDir === undefined) {
+        console.error(chalk.red("invalid -o option"))
+        process.exit(EXIT_STATUS.BUILD_OUTDIR_ERROR)
     } else if (entries.some(entry => !/\.tsx?$/.test(entry))) {
         console.error(chalk.red("entry suffix should be .ts or .tsx"))
         process.exit(EXIT_STATUS.BUILD_ENTRY_ERROR)
@@ -115,17 +118,8 @@ export default function (instdir: string, instmod: string, entries: string[], op
         process.exit(EXIT_STATUS.TSCONFIG_NOT_FOUND)
     }
 
-    if (options.output) {
-        if (!fs.existsSync(options.output) && (/\/$/.test(options.output) || entries.length > 1)) {
-            fs.mkdirSync(options.output)
-        }
-        if (entries.length > 1 && !fs.lstatSync(options.output).isDirectory()) {
-            console.error(chalk.red("invalid -o option"))
-            process.exit(EXIT_STATUS.BUILD_OUTPUT_ERROR)
-        }
-    } else {
-        console.error(chalk.red("invalid -o option"))
-        process.exit(EXIT_STATUS.BUILD_OUTPUT_ERROR)
+    if (options.outFile && entries.length > 1) {
+        console.error(chalk.yellow(`ignoring -o ${options.outFile}`))
     }
 
     let statsOptions = {

@@ -15,3 +15,13 @@ declare class Java {
 
 declare const Packages: any
 declare const arguments: string[]
+
+declare namespace java {
+    namespace util {
+        namespace function$ {
+            interface Consumer$$TypeScript<T> {
+                (arg: T): any
+            }
+        }
+    }
+}

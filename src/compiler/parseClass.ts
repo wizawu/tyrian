@@ -14,14 +14,17 @@ const UNSUPPORTED_MODIFIERS = [
     "volatile",
 ]
 
-function safeType(type: string, allowLambda?: boolean): string {
+function safeType(type: string, isParameter?: boolean): string {
     if (/>\.\w+$/.test(type)) return "any"      // XXX<T>.YYY
     if (type.indexOf("$") >= 0) return "any"    // XXX$YYY
     if (type === "java.lang.String") return "string"
     if (type === "java.lang.Boolean") return "boolean"
+    if (type === "java.util.function.Consumer<T>" && isParameter) {
+        return "java.util.function.Consumer$$TypeScript<T>"
+    }
 
     let classID = type.indexOf("<") < 0 ? type : type.substring(0, type.indexOf("<"))
-    if (allowLambda && lambda.isLambda[classID]) {
+    if (isParameter && lambda.isLambda[classID]) {
         return `${type} | ${type.replace(new RegExp(`(${classID})`), "$1$$$Lambda")}`
     } else {
         return type

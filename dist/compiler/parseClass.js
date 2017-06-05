@@ -20,7 +20,7 @@ var UNSUPPORTED_MODIFIERS = [
     "transient",
     "volatile",
 ];
-function safeType(type, allowLambda) {
+function safeType(type, isParameter) {
     if (/>\.\w+$/.test(type))
         return "any";
     if (type.indexOf("$") >= 0)
@@ -29,8 +29,11 @@ function safeType(type, allowLambda) {
         return "string";
     if (type === "java.lang.Boolean")
         return "boolean";
+    if (type === "java.util.function.Consumer<T>" && isParameter) {
+        return "java.util.function.Consumer$$TypeScript<T>";
+    }
     var classID = type.indexOf("<") < 0 ? type : type.substring(0, type.indexOf("<"));
-    if (allowLambda && lambda.isLambda[classID]) {
+    if (isParameter && lambda.isLambda[classID]) {
         return type + " | " + type.replace(new RegExp("(" + classID + ")"), "$1$$$Lambda");
     }
     else {

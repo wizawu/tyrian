@@ -1,9 +1,4 @@
-*.j.d.ts
-*.j.js
-*.log
-*.map
 *.swp
-build
 lib
 node_modules
 tsconfig.json

@@ -1,6 +1,6 @@
 import { assert } from "chai"
 import { describe, it, before, after, beforeEach, afterEach, report } from "lightest"
-import { JDBCClient, MySQLClient } from "./index"
+import { JDBCClient, MySQLClient } from "../src/index"
 
 const String = java.lang.String
 const logger = java.lang.System.err

@@ -7,7 +7,8 @@ var source_map_1 = require("source-map");
 var child_process_1 = require("child_process");
 function default_1(jjsArgs, target, args, watch) {
     target = path.resolve(target);
-    var classpath = fs.readdirSync("lib").map(function (jar) { return jar === "@types" ? "" : "lib/" + jar; }).join(":");
+    var classpath = !fs.existsSync("lib") ? "." :
+        fs.readdirSync("lib").map(function (jar) { return jar === "@types" ? "" : "lib/" + jar; }).join(":");
     var sourceMap = null;
     if (fs.existsSync(target + ".map")) {
         sourceMap = new source_map_1.SourceMapConsumer(JSON.parse(fs.readFileSync(target + ".map", "utf-8")));

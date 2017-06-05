@@ -6,7 +6,8 @@ import { spawn } from "child_process"
 
 export default function (jjsArgs: string[], target: string, args: string[], watch: boolean) {
     target = path.resolve(target)
-    let classpath = fs.readdirSync("lib").map(jar => jar === "@types" ? "" : `lib/${jar}`).join(":")
+    let classpath = !fs.existsSync("lib") ? "." :
+        fs.readdirSync("lib").map(jar => jar === "@types" ? "" : `lib/${jar}`).join(":")
     let sourceMap: SourceMapConsumer = null as any
     if (fs.existsSync(target + ".map")) {
         sourceMap = new SourceMapConsumer(JSON.parse(fs.readFileSync(target + ".map", "utf-8")))

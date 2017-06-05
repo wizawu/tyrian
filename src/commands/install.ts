@@ -26,8 +26,8 @@ const tsconfig = instdir => JSON.stringify({
     "include": [
         `${instdir}/@types/**/*.d.ts`,
         "lib/@types/**/*.d.ts",
-        "**/*.ts",
-        "**/*.tsx",
+        "src/**/*.ts",
+        "src/**/*.tsx",
     ]
 }, null, 2)
 

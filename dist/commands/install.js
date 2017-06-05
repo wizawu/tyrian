@@ -25,8 +25,8 @@ var tsconfig = function (instdir) { return JSON.stringify({
     "include": [
         instdir + "/@types/**/*.d.ts",
         "lib/@types/**/*.d.ts",
-        "**/*.ts",
-        "**/*.tsx",
+        "src/**/*.ts",
+        "src/**/*.tsx",
     ]
 }, null, 2); };
 var package_json = JSON.stringify({

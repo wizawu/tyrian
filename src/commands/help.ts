@@ -7,23 +7,26 @@ export function version(instdir: string) {
 export function help(instdir: string, status: number) {
     console.error(`
 
-Version: ${version(instdir)}
+version: ${version(instdir)}
 
-Usage:
-  1c help                                           print this message
-  1c version                                        print the version number
-  1c env                                            check if all dependencies of 1c are ready
-  1c install                                        install dependencies in package.json
-  1c build [-w] [-m] [-c dir|-o file] <entry>...    build one/multiple entries (.ts/.tsx)
-  1c run [-w] [jjs options] <output>                run output file (.js)
+usage:
+  1c help                               print this message
+  1c version                            print the version number
+  1c env                                check if all dependencies of 1c are ready
+  1c install                            install dependencies in package.json
+  1c build [options] <entry>...         build one/multiple entries (.ts/.tsx)
+  1c run [-w] [jjs options] <output>    run output file (.js)
 
-Options:
-
+build options:
   -c <dir>          output build result in <dir>
   -m                build each entry as a commonjs module
   -o <file>         output build result to <file>
-  -w                watch changes and re-build/re-run
-  jjs options       check out 'jjs -h'
+  -u                uglify build result
+  -w                watch changes and re-build
+
+run options:
+  -w                watch changes and re-run
+  jjs options       check out 'jjs -h' (should after -w if exist)
 
     `.trim())
 

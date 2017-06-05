@@ -36,6 +36,7 @@ if (command === "env") {
     let options: BuildOptions = {
         watch: false,
         targetModule: false,
+        uglify: false,
         outDir: "./",
     }
     for (let i = 3; i < process.argv.length; i++) {
@@ -44,6 +45,8 @@ if (command === "env") {
             options.watch = true
         } else if (arg === "-m") {
             options.targetModule = true
+        } else if (arg === "-u") {
+            options.uglify = true
         } else if (arg === "-c") {
             options.outDir = process.argv[i + 1]
             i += 1

@@ -11,6 +11,7 @@ const autoprefixer = require("autoprefixer")
 export interface Options {
     watch: boolean
     targetModule: boolean
+    uglify: boolean
     outDir: string
     outFile?: string
 }
@@ -64,7 +65,7 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
     }
 
     return webpack({
-        devtool: "cheap-source-map",
+        devtool: "source-map",
         context: context,
         resolve: { extensions: [".js", ".ts", ".tsx"] },
         resolveLoader: { modules: [instmod] },
@@ -99,7 +100,7 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
                 },
                 ...globalVars,
             }),
-        ].slice(options.watch ? 1 : 0)
+        ].slice(options.uglify ? 0 : 1)
     })
 }
 

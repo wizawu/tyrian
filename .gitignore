@@ -1,5 +1,8 @@
+*.log
+*.map
 *.swp
 lib
 node_modules
+test_*.js*
 tsconfig.json
 yarn.lock

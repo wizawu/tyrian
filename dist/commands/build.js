@@ -66,7 +66,10 @@ function compiler(instdir, instmod, entries, options) {
     return webpack({
         devtool: "source-map",
         context: context,
-        resolve: { extensions: [".js", ".ts", ".tsx"] },
+        resolve: {
+            alias: fs.existsSync("package.json") && JSON.parse(fs.readFileSync("package.json", "utf-8")).alias || undefined,
+            extensions: [".js", ".ts", ".tsx"]
+        },
         resolveLoader: { modules: [instmod] },
         entry: entry,
         output: {

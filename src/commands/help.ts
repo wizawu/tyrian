@@ -7,9 +7,9 @@ export function version(instdir: string) {
 export function help(instdir: string, status: number) {
     console.error(`
 
-version: ${version(instdir)}
+Version: ${version(instdir)}
 
-usage:
+Usage:
   1c help                               print this message
   1c version                            print the version number
   1c env                                check if all dependencies of 1c are ready

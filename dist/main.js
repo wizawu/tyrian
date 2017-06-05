@@ -35,6 +35,7 @@ else if (command === "build" && process.argv[3]) {
     var options = {
         watch: false,
         targetModule: false,
+        uglify: false,
         outDir: "./"
     };
     for (var i = 3; i < process.argv.length; i++) {
@@ -44,6 +45,9 @@ else if (command === "build" && process.argv[3]) {
         }
         else if (arg === "-m") {
             options.targetModule = true;
+        }
+        else if (arg === "-u") {
+            options.uglify = true;
         }
         else if (arg === "-c") {
             options.outDir = process.argv[i + 1];

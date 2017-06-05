@@ -64,7 +64,7 @@ function compiler(instdir, instmod, entries, options) {
         });
     }
     return webpack({
-        devtool: "cheap-source-map",
+        devtool: "source-map",
         context: context,
         resolve: { extensions: [".js", ".ts", ".tsx"] },
         resolveLoader: { modules: [instmod] },
@@ -96,7 +96,7 @@ function compiler(instdir, instmod, entries, options) {
             new webpack.DefinePlugin(__assign({ "process.env": {
                     NODE_ENV: options.watch ? '"development"' : '"production"'
                 } }, globalVars)),
-        ].slice(options.watch ? 1 : 0)
+        ].slice(options.uglify ? 0 : 1)
     });
 }
 function default_1(instdir, instmod, entries, options) {

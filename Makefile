@@ -15,7 +15,7 @@ test: build
 	./bin/1c help
 	./bin/1c version
 	./bin/1c env
-	cd test && ../bin/1c install
-	cd test && ../bin/1c build -c dist main.ts module.ts
-	cd test && ../bin/1c build -c dist -m -u module.ts
-	cd test && ../bin/1c build -o dist/main.js main.ts
+	cd example && ../bin/1c install
+	cd example && ../bin/1c build -c dist main.ts module.ts
+	cd example && ../bin/1c build -c dist -m -u module.ts
+	cd example && ../bin/1c build -o dist/main.js main.ts

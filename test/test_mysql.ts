@@ -54,35 +54,8 @@ describe("MySQLClient", () => {
         assert.strictEqual(client.get(bucket, "y"), null)
     })
 
-    it("putInt", () => {
-        client.putInt(bucket, "x", 1)
-        assert.strictEqual(client.get(bucket, "x"), 1)
-        assert.strictEqual(client.get(bucket, "y"), null)
-    })
-
-    it("putFloat", () => {
-        client.putFloat(bucket, "x", 3.14)
-        assert.strictEqual(client.get(bucket, "x"), 3.14)
-        assert.strictEqual(client.get(bucket, "y"), null)
-    })
-
-    it("putString", () => {
-        client.putString(bucket, "x", "text")
-        assert.strictEqual(client.get(bucket, "x"), "text")
-        assert.strictEqual(client.get(bucket, "y"), null)
-    })
-
-    it("putJSON", () => {
-        client.putJSON(bucket, "x", { value: 1 })
-        assert.strictEqual(
-            JSON.stringify(client.getJSON(bucket, "x")),
-            JSON.stringify({ value: 1 })
-        )
-        assert.strictEqual(client.get(bucket, "y"), null)
-    })
-
-    it("putBytes", () => {
-        client.putBytes(bucket, "x", new String("zxcv").getBytes())
+    it("setBlob", () => {
+        client.setBlob(bucket, "x", new String("zxcv").getBytes())
         assert.strictEqual<any>(new String(client.get(bucket, "x") as any), "zxcv")
         assert.strictEqual(client.get(bucket, "y"), null)
     })
@@ -104,17 +77,11 @@ describe("MySQLClient", () => {
         assert.strictEqual(client.get(bucket, "y"), null)
     })
 
-    it("type corruption", () => {
+    it("type override", () => {
         client.setInt(bucket, "x", 1)
         assert.strictEqual(client.get(bucket, "x"), 1)
-        try {
-            client.setString(bucket, "x", "text")
-            throw "should not setString"
-        } catch (ex) {
-            assert.isString(ex.message)
-        } finally {
-            assert.strictEqual(client.get(bucket, "x"), 1)
-        }
+        client.setString(bucket, "x", "text")
+        assert.strictEqual(client.get(bucket, "x"), "text")
     })
 
     it("ensureTable", () => {
@@ -239,12 +206,6 @@ describe("MySQLClient", () => {
         assert.strictEqual(client.get(bucket, "x"), 1)
         client.delete(bucket, "x")
         assert.strictEqual(client.get(bucket, "x"), null)
-
-        client.execute(`DROP TABLE ${table}`)
-        client.putBytes(bucket, "x", new String("zxcv").getBytes())
-        assert.strictEqual<any>(new String(client.get(bucket, "x") as any), "zxcv")
-        client.delete(bucket, "x")
-        assert.strictEqual(client.get(bucket, "x"), null)
     })
 
     it("close", () => {
@@ -276,6 +237,9 @@ describe("MySQLClient benchmark", () => {
             useServerPrepStmts: false,
             rewriteBatchedStatements: true,
         })
+        client.execute(`DROP TABLE IF EXISTS ${bucket}`)
+        client.execute(`DROP TABLE IF EXISTS ${table}`)
+        client.setString(bucket, "_", "_")
     })
 
     after(() => {
@@ -287,89 +251,56 @@ describe("MySQLClient benchmark", () => {
     }
 
     it("setInt", () => {
-        client.execute(`DROP TABLE IF EXISTS ${bucket}`)
         batch(i => client.setInt(bucket, "int" + i, i))
     })
 
     it("setFloat", () => {
-        client.execute(`DROP TABLE IF EXISTS ${bucket}`)
         batch(i => client.setFloat(bucket, "float" + i, i))
     })
 
     it("setString", () => {
-        client.execute(`DROP TABLE IF EXISTS ${bucket}`)
         batch(i => client.setString(bucket, "string" + i, "text" + i))
     })
 
-    it("setString", () => {
-        client.execute(`DROP TABLE IF EXISTS ${bucket}`)
+    it("setJSON", () => {
         batch(i => client.setJSON(bucket, "json" + i, { value: i }))
     })
 
-    it("get from memory", () => {
+    it("setBlob", () => {
+        batch(i => client.setBlob(bucket, "blob" + i, new String("zxcv" + i).getBytes()))
+    })
+
+    it("get", () => {
+        batch(i => assert.strictEqual(client.get(bucket, "int" + i), i))
+    })
+
+    it("getJSON", () => {
         batch(i => assert.strictEqual(client.getJSON<any>(bucket, "json" + i).value, i))
     })
 
-    it("delete from memory", () => {
+    it("delete", () => {
         batch(i => client.delete(bucket, "json" + i))
     })
 
-    it("putInt", () => {
-        client.execute(`DROP TABLE IF EXISTS ${bucket}`)
-        batch(i => client.putInt(bucket, "int" + i, i))
-    })
-
-    it("putFloat", () => {
-        client.execute(`DROP TABLE IF EXISTS ${bucket}`)
-        batch(i => client.putFloat(bucket, "float" + i, i))
-    })
-
-    it("putString", () => {
-        client.execute(`DROP TABLE IF EXISTS ${bucket}`)
-        batch(i => client.putString(bucket, "string" + i, "text" + i))
-    })
-
-    it("putJSON", () => {
-        client.execute(`DROP TABLE IF EXISTS ${bucket}`)
-        batch(i => client.putJSON(bucket, "json" + i, { value: i }))
-    })
-
-    it("putBytes", () => {
-        client.execute(`DROP TABLE IF EXISTS ${bucket}`)
-        batch(i => client.putBytes(bucket, "bytes" + i, new String("zxcv").getBytes()))
-    })
-
-    it("getJSON from disk", () => {
-        batch(i => assert.strictEqual<any>(new String(client.get(bucket, "bytes" + i) as any), "zxcv"))
-    })
-
-    it("delete from disk", () => {
-        batch(i => client.delete(bucket, "bytes" + i))
-    })
-
     it("insert", () => {
-        client.execute(`DROP TABLE IF EXISTS ${table}`)
-        client.execute(`CREATE TABLE ${table}(key_ VARCHAR(64), value INT)`)
-        batch(i => client.insert(table, { key_: "insert" + i, value: i }))
+        batch(i => client.insert(table, { key_: "insert" + i, int_: i }))
+    })
+
+    it("upsert", () => {
+        batch(i => client.upsert(table, { key_: "upsert" + i, string_: "upsert" }))
     })
 
     it("one", () => {
         batch(i => {
             let row = client.one<any>(`SELECT * FROM ${table} WHERE key_ = ?`, ["insert" + i])
-            assert.strictEqual(row.value, i)
+            assert.strictEqual(row.int_, i)
         })
     })
 
-    it("upsert", () => {
-        client.execute(`DROP TABLE IF EXISTS ${table}`)
-        client.execute(`CREATE TABLE ${table}(key_ VARCHAR(64), value TEXT)`)
-        batch(i => client.upsert(table, { key_: "upsert" + i, value: "upsert" }))
-    })
-
     it("list", () => {
-        let rows = client.list<any>(`SELECT * FROM ${table} WHERE value = ?`, ["upsert"])
+        let rows = client.list<any>(`SELECT * FROM ${table} WHERE string_ = ?`, ["upsert"])
         assert.strictEqual(rows.length, 100)
-        assert.strictEqual(rows.every(row => row.value === "upsert"), true)
+        assert.strictEqual(rows.every(row => row.string_ === "upsert"), true)
     })
 })
 

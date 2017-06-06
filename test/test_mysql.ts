@@ -234,8 +234,7 @@ describe("MySQLClient benchmark", () => {
             useSSL: false,
             logger: "com.mysql.cj.core.log.Slf4JLogger",
             profileSQL: java.lang.System.getenv("PROFILE_SQL") === "true",
-            useServerPrepStmts: false,
-            rewriteBatchedStatements: true,
+            defaultEngine: "MyISAM",
         })
         client.execute(`DROP TABLE IF EXISTS ${bucket}`)
         client.execute(`DROP TABLE IF EXISTS ${table}`)
@@ -247,7 +246,7 @@ describe("MySQLClient benchmark", () => {
     })
 
     function batch(func: any) {
-        for (let i = 0; i < 100; i++) func(i)
+        for (let i = 0; i < 1000; i++) func(i)
     }
 
     it("setInt", () => {
@@ -299,7 +298,7 @@ describe("MySQLClient benchmark", () => {
 
     it("list", () => {
         let rows = client.list<any>(`SELECT * FROM ${table} WHERE string_ = ?`, ["upsert"])
-        assert.strictEqual(rows.length, 100)
+        assert.strictEqual(rows.length, 1000)
         assert.strictEqual(rows.every(row => row.string_ === "upsert"), true)
     })
 })

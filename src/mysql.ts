@@ -19,11 +19,17 @@ export class MySQLClient extends JDBCClient {
         if (options.profileSQL !== undefined) {
             this.url += `&profileSQL=${options.profileSQL}`
         }
+        if (options.rewriteBatchedStatements !== undefined) {
+            this.url += `&rewriteBatchedStatements=${options.rewriteBatchedStatements}`
+        }
         if (options.testOnBorrow !== undefined) {
             this.url += `&testOnBorrow=${options.testOnBorrow}`
         }
         if (options.useSSL !== undefined) {
             this.url += `&useSSL=${options.useSSL}`
+        }
+        if (options.useServerPrepStmts !== undefined) {
+            this.url += `&useServerPrepStmts=${options.useServerPrepStmts}`
         }
         this.connect()
     }

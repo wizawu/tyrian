@@ -273,6 +273,8 @@ describe("MySQLClient benchmark", () => {
             useSSL: false,
             logger: "com.mysql.cj.core.log.Slf4JLogger",
             profileSQL: java.lang.System.getenv("PROFILE_SQL") === "true",
+            useServerPrepStmts: false,
+            rewriteBatchedStatements: true,
         })
     })
 

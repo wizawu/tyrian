@@ -8,8 +8,10 @@ export interface Options {
     characterEncoding?: string;
     logger?: string;
     profileSQL?: boolean;
+    rewriteBatchedStatements?: boolean;
     testOnBorrow?: boolean;
     useSSL?: boolean;
+    useServerPrepStmts?: boolean;
 }
 export interface Client {
     get(bucket: string, key: string): number | string | Object | null;

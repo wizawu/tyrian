@@ -29,11 +29,17 @@ var MySQLClient = (function (_super) {
         if (options.profileSQL !== undefined) {
             _this.url += "&profileSQL=" + options.profileSQL;
         }
+        if (options.rewriteBatchedStatements !== undefined) {
+            _this.url += "&rewriteBatchedStatements=" + options.rewriteBatchedStatements;
+        }
         if (options.testOnBorrow !== undefined) {
             _this.url += "&testOnBorrow=" + options.testOnBorrow;
         }
         if (options.useSSL !== undefined) {
             _this.url += "&useSSL=" + options.useSSL;
+        }
+        if (options.useServerPrepStmts !== undefined) {
+            _this.url += "&useServerPrepStmts=" + options.useServerPrepStmts;
         }
         _this.connect();
         return _this;

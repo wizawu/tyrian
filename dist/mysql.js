@@ -16,8 +16,9 @@ var MySQLClient = (function (_super) {
     function MySQLClient(options) {
         var _this = _super.call(this) || this;
         _this.driver = new com.mysql.cj.jdbc.Driver();
-        var host = options.host, port = options.port, database = options.database, user = options.user, password = options.password;
+        var host = options.host, port = options.port, database = options.database, user = options.user, password = options.password, defaultEngine = options.defaultEngine;
         _this.SQL_UNIX_TIMESTAMP = "floor(unix_timestamp(current_timestamp(6)) * 1000000)";
+        _this.defaultEngine = defaultEngine ? "ENGINE = " + defaultEngine : "";
         _this.url = "jdbc:mysql://" + host + ":" + port + "/" + database + "?user=" + user + "&password=" + password;
         _this.url += "&characterEncoding=" + (options.characterEncoding || "UTF-8");
         if (options.autoReconnect !== undefined) {

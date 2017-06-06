@@ -4,6 +4,7 @@ export interface Options {
     database: string;
     user: string;
     password: string;
+    defaultEngine?: string;
     autoReconnect?: boolean;
     characterEncoding?: string;
     logger?: string;
@@ -14,17 +15,13 @@ export interface Options {
     useServerPrepStmts?: boolean;
 }
 export interface Client {
-    get(bucket: string, key: string): number | string | Object | null;
+    get(bucket: string, key: string): number | string | byte[] | null;
     getJSON<T>(bucket: string, key: string): T | null;
     setInt(bucket: string, key: string, value: number, ttl?: number): any;
     setFloat(bucket: string, key: string, value: number, ttl?: number): any;
     setString(bucket: string, key: string, value: string, ttl?: number): any;
     setJSON(bucket: string, key: string, json: Object, ttl?: number): any;
-    putInt(bucket: string, key: string, value: number, ttl?: number): any;
-    putFloat(bucket: string, key: string, value: number, ttl?: number): any;
-    putString(bucket: string, key: string, value: string, ttl?: number): any;
-    putJSON(bucket: string, key: string, json: Object, ttl?: number): any;
-    putBytes(bucket: string, key: string, data: byte[], ttl?: number): any;
+    setBlob(bucket: string, key: string, data: byte[], ttl?: number): any;
     ensureTable(table: string, pkey: string, type: string): any;
     ensureColumn(table: string, column: string, type: string): any;
     ensureIndex(table: string, columns: string[]): any;

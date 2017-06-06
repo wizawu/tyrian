@@ -1,20 +1,17 @@
 import { Client } from "./client";
 export declare abstract class JDBCClient implements Client {
     protected connection: java.sql.Connection;
+    protected defaultEngine: string;
     protected url: string;
     protected SQL_UNIX_TIMESTAMP: string;
     protected abstract connect(): void;
-    get(bucket: string, key: string): number | string | Object | null;
+    get(bucket: string, key: string): number | string | byte[] | null;
     getJSON<T>(bucket: string, key: string): T | null;
     setInt(bucket: string, key: string, value: number, ttl?: number): void;
     setFloat(bucket: string, key: string, value: number, ttl?: number): void;
     setString(bucket: string, key: string, value: string, ttl?: number): void;
     setJSON(bucket: string, key: string, json: Object, ttl?: number): void;
-    putInt(bucket: string, key: string, value: number, ttl?: number): void;
-    putFloat(bucket: string, key: string, value: number, ttl?: number): void;
-    putString(bucket: string, key: string, value: string, ttl?: number): void;
-    putJSON(bucket: string, key: string, json: Object, ttl?: number): void;
-    putBytes(bucket: string, key: string, data: byte[], ttl?: number): void;
+    setBlob(bucket: string, key: string, data: byte[], ttl?: number): void;
     ensureTable(table: string, pkey: string, type: string): void;
     ensureColumn(table: string, column: string, type: string): void;
     ensureIndex(table: string, columns: string[]): void;
@@ -27,5 +24,5 @@ export declare abstract class JDBCClient implements Client {
     delete(bucket_or_table: string, key: number | string): void;
     close(): void;
     private prepareStatement(sql, parameters?);
-    private setByType(inMemory, bucket, type, key, value, ttl?);
+    private setByType(bucket, type, key, value, ttl?);
 }

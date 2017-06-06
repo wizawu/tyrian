@@ -14,41 +14,29 @@ var JDBCClient = (function () {
             this.execute("DELETE FROM " + bucket + " WHERE " + this.SQL_UNIX_TIMESTAMP + " >= expires_at");
             return null;
         }
-        return record.value;
+        return record[record.type + "_"];
     };
     JDBCClient.prototype.getJSON = function (bucket, key) {
         var value = this.get(bucket, key);
         return value === null ? null : JSON.parse(value);
     };
     JDBCClient.prototype.setInt = function (bucket, key, value, ttl) {
-        this.setByType(true, bucket, "BIGINT", key, value, ttl);
+        this.setByType(bucket, "int", key, value, ttl);
     };
     JDBCClient.prototype.setFloat = function (bucket, key, value, ttl) {
-        this.setByType(true, bucket, "DOUBLE", key, value, ttl);
+        this.setByType(bucket, "float", key, value, ttl);
     };
     JDBCClient.prototype.setString = function (bucket, key, value, ttl) {
-        this.setByType(true, bucket, "VARCHAR(1024)", key, value, ttl);
+        this.setByType(bucket, "string", key, value, ttl);
     };
     JDBCClient.prototype.setJSON = function (bucket, key, json, ttl) {
-        this.setByType(true, bucket, "VARCHAR(1024)", key, JSON.stringify(json), ttl);
+        this.setByType(bucket, "string", key, JSON.stringify(json), ttl);
     };
-    JDBCClient.prototype.putInt = function (bucket, key, value, ttl) {
-        this.setByType(false, bucket, "BIGINT", key, value, ttl);
-    };
-    JDBCClient.prototype.putFloat = function (bucket, key, value, ttl) {
-        this.setByType(false, bucket, "DOUBLE", key, value, ttl);
-    };
-    JDBCClient.prototype.putString = function (bucket, key, value, ttl) {
-        this.setByType(false, bucket, "TEXT", key, value, ttl);
-    };
-    JDBCClient.prototype.putJSON = function (bucket, key, json, ttl) {
-        this.setByType(false, bucket, "TEXT", key, JSON.stringify(json), ttl);
-    };
-    JDBCClient.prototype.putBytes = function (bucket, key, data, ttl) {
-        this.setByType(false, bucket, "LONGBLOB", key, data, ttl);
+    JDBCClient.prototype.setBlob = function (bucket, key, data, ttl) {
+        this.setByType(bucket, "blob", key, data, ttl);
     };
     JDBCClient.prototype.ensureTable = function (table, pkey, type) {
-        this.execute("\n            CREATE TABLE IF NOT EXISTS " + table + " (\n                " + pkey + " " + type + " PRIMARY KEY\n            )\n        ");
+        this.execute("\n            CREATE TABLE IF NOT EXISTS " + table + " (\n                " + pkey + " " + type + " PRIMARY KEY\n            ) " + this.defaultEngine + "\n        ");
     };
     JDBCClient.prototype.ensureColumn = function (table, column, type) {
         var columns = this.list("DESC " + table);
@@ -126,12 +114,12 @@ var JDBCClient = (function () {
         }
         return statement;
     };
-    JDBCClient.prototype.setByType = function (inMemory, bucket, type, key, value, ttl) {
-        this.execute("\n            CREATE TABLE IF NOT EXISTS " + bucket + " (\n                key_ VARCHAR(255) PRIMARY KEY,\n                value " + type + ",\n                timestamp BIGINT,\n                expires_at BIGINT,\n                INDEX " + bucket + "_idx_expires_at (expires_at)\n            ) " + (inMemory ? "ENGINE = MEMORY" : "") + "\n        ");
-        var keys = "key_,value,timestamp,expires_at";
+    JDBCClient.prototype.setByType = function (bucket, type, key, value, ttl) {
+        this.execute("\n            CREATE TABLE IF NOT EXISTS " + bucket + " (\n                key_ VARCHAR(255) PRIMARY KEY,\n                int_ BIGINT,\n                float_ DOUBLE,\n                string_ TEXT,\n                blob_ LONGBLOB,\n                type TEXT,\n                timestamp BIGINT,\n                expires_at BIGINT,\n                INDEX " + bucket + "_idx_expires_at (expires_at)\n            ) " + this.defaultEngine + "\n        ");
+        var keys = "key_, " + type + "_, type, timestamp, expires_at";
         var expires_at = ttl === undefined ? "NULL" : this.SQL_UNIX_TIMESTAMP + " + " + ttl * 1e6;
-        var values = "?,?," + this.SQL_UNIX_TIMESTAMP + "," + expires_at;
-        this.execute("REPLACE INTO " + bucket + "(" + keys + ") VALUES(" + values + ")", [key, value]);
+        var values = "?, ?, ?, " + this.SQL_UNIX_TIMESTAMP + ", " + expires_at;
+        this.execute("REPLACE INTO " + bucket + "(" + keys + ") VALUES(" + values + ")", [key, value, type]);
     };
     return JDBCClient;
 }());

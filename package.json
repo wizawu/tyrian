@@ -1,6 +1,6 @@
 {
   "name": "uds",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "repository": "github:wizawu/uds",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

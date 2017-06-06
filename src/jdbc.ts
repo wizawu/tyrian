@@ -3,6 +3,7 @@ import { indexName, resultSetToJSON } from "./util"
 
 export abstract class JDBCClient implements Client {
     protected connection: java.sql.Connection
+    protected defaultEngine: string
     protected url: string
     protected SQL_UNIX_TIMESTAMP: string
 
@@ -52,7 +53,7 @@ export abstract class JDBCClient implements Client {
         this.execute(`
             CREATE TABLE IF NOT EXISTS ${table} (
                 ${pkey} ${type} PRIMARY KEY
-            )
+            ) ${this.defaultEngine}
         `)
     }
 
@@ -154,7 +155,7 @@ export abstract class JDBCClient implements Client {
                 timestamp BIGINT,
                 expires_at BIGINT,
                 INDEX ${bucket}_idx_expires_at (expires_at)
-            )
+            ) ${this.defaultEngine}
         `)
         let keys = `key_, ${type}_, type, timestamp, expires_at`
         let expires_at = ttl === undefined ? "NULL" : `${this.SQL_UNIX_TIMESTAMP} + ${ttl * 1e6}`

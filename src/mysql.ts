@@ -6,8 +6,9 @@ export class MySQLClient extends JDBCClient {
 
     constructor(options: Options) {
         super()
-        let { host, port, database, user, password } = options
+        let { host, port, database, user, password, defaultEngine } = options
         this.SQL_UNIX_TIMESTAMP = "floor(unix_timestamp(current_timestamp(6)) * 1000000)"
+        this.defaultEngine = defaultEngine ? `ENGINE = ${defaultEngine}` : ""
         this.url = `jdbc:mysql://${host}:${port}/${database}?user=${user}&password=${password}`
         this.url += `&characterEncoding=${options.characterEncoding || "UTF-8"}`
         if (options.autoReconnect !== undefined) {

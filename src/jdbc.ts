@@ -8,19 +8,19 @@ export abstract class JDBCClient implements Client {
 
     protected abstract connect(): void
 
-    get(bucket: string, key: string): number | string | Object | null {
+    get(bucket: string, key: string): number | string | byte[] | null {
         if (!this.one("SHOW TABLES LIKE ?", [bucket])) return null
         let record = this.one(`
             SELECT *, expires_at - ${this.SQL_UNIX_TIMESTAMP} as ttl
             FROM ${bucket} WHERE key_ = ?`,
             [key]
-        ) as BucketRecord
+        ) as BucketItem
         if (record === null) return null
         if (typeof (record as any).ttl === "number" && (record as any).ttl <= 0) {
             this.execute(`DELETE FROM ${bucket} WHERE ${this.SQL_UNIX_TIMESTAMP} >= expires_at`)
             return null
         }
-        return record.value
+        return record[record.type + "_"]
     }
 
     getJSON<T>(bucket: string, key: string): T | null {
@@ -29,39 +29,23 @@ export abstract class JDBCClient implements Client {
     }
 
     setInt(bucket: string, key: string, value: number, ttl?: number) {
-        this.setByType(true, bucket, "BIGINT", key, value, ttl)
+        this.setByType(bucket, "int", key, value, ttl)
     }
 
     setFloat(bucket: string, key: string, value: number, ttl?: number) {
-        this.setByType(true, bucket, "DOUBLE", key, value, ttl)
+        this.setByType(bucket, "float", key, value, ttl)
     }
 
     setString(bucket: string, key: string, value: string, ttl?: number) {
-        this.setByType(true, bucket, "VARCHAR(1024)", key, value, ttl)
+        this.setByType(bucket, "string", key, value, ttl)
     }
 
     setJSON(bucket: string, key: string, json: Object, ttl?: number) {
-        this.setByType(true, bucket, "VARCHAR(1024)", key, JSON.stringify(json), ttl)
+        this.setByType(bucket, "string", key, JSON.stringify(json), ttl)
     }
 
-    putInt(bucket: string, key: string, value: number, ttl?: number) {
-        this.setByType(false, bucket, "BIGINT", key, value, ttl)
-    }
-
-    putFloat(bucket: string, key: string, value: number, ttl?: number) {
-        this.setByType(false, bucket, "DOUBLE", key, value, ttl)
-    }
-
-    putString(bucket: string, key: string, value: string, ttl?: number) {
-        this.setByType(false, bucket, "TEXT", key, value, ttl)
-    }
-
-    putJSON(bucket: string, key: string, json: Object, ttl?: number) {
-        this.setByType(false, bucket, "TEXT", key, JSON.stringify(json), ttl)
-    }
-
-    putBytes(bucket: string, key: string, data: byte[], ttl?: number) {
-        this.setByType(false, bucket, "LONGBLOB", key, data, ttl)
+    setBlob(bucket: string, key: string, data: byte[], ttl?: number) {
+        this.setByType(bucket, "blob", key, data, ttl)
     }
 
     ensureTable(table: string, pkey: string, type: string) {
@@ -158,26 +142,36 @@ export abstract class JDBCClient implements Client {
         return statement
     }
 
-    private setByType(inMemory: boolean, bucket: string, type: string, key: string, value: any, ttl?: number) {
+    private setByType(bucket: string, type: BucketValueType, key: string, value: any, ttl?: number) {
         this.execute(`
             CREATE TABLE IF NOT EXISTS ${bucket} (
                 key_ VARCHAR(255) PRIMARY KEY,
-                value ${type},
+                int_ BIGINT,
+                float_ DOUBLE,
+                string_ TEXT,
+                blob_ LONGBLOB,
+                type TEXT,
                 timestamp BIGINT,
                 expires_at BIGINT,
                 INDEX ${bucket}_idx_expires_at (expires_at)
-            ) ${inMemory ? "ENGINE = MEMORY" : ""}
+            )
         `)
-        let keys = `key_,value,timestamp,expires_at`
+        let keys = `key_, ${type}_, type, timestamp, expires_at`
         let expires_at = ttl === undefined ? "NULL" : `${this.SQL_UNIX_TIMESTAMP} + ${ttl * 1e6}`
-        let values = `?,?,${this.SQL_UNIX_TIMESTAMP},${expires_at}`
-        this.execute(`REPLACE INTO ${bucket}(${keys}) VALUES(${values})`, [key, value])
+        let values = `?, ?, ?, ${this.SQL_UNIX_TIMESTAMP}, ${expires_at}`
+        this.execute(`REPLACE INTO ${bucket}(${keys}) VALUES(${values})`, [key, value, type])
     }
 }
 
-interface BucketRecord {
+type BucketValueType = "int" | "float" | "string" | "blob"
+
+interface BucketItem {
     key_: string
-    value: any
+    int_: number
+    float_: number
+    string_: string
+    blob_: byte[]
+    type: BucketValueType
     timestamp: number
     expires_at: number
 }

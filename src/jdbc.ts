@@ -146,7 +146,7 @@ export abstract class JDBCClient implements Client {
     private setByType(bucket: string, type: BucketValueType, key: string, value: any, ttl?: number) {
         this.execute(`
             CREATE TABLE IF NOT EXISTS ${bucket} (
-                key_ VARCHAR(255) PRIMARY KEY,
+                key_ VARCHAR(250) PRIMARY KEY,
                 int_ BIGINT,
                 float_ DOUBLE,
                 string_ TEXT,

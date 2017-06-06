@@ -18,6 +18,7 @@ describe("MySQLClient", () => {
             user: "root",
             password: "venividivici",
             useSSL: false,
+            defaultEngine: "MyISAM",
         })
         client.execute(`DROP TABLE IF EXISTS ${bucket}`)
         client.execute(`DROP TABLE IF EXISTS ${table}`)

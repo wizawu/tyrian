@@ -16,7 +16,8 @@ declare const $ARG: string[]
 declare const $ENV: Object
 declare const Packages: Object
 
-declare function Number(arg: any): java.lang.Double
+// declare function Number(arg: any): java.lang.Double
+// declare function print(...args: any[]): void
 declare function String(arg: any): java.lang.String
 declare function echo(...args: any[]): void
 declare function exit(code?: number): void

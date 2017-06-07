@@ -144,19 +144,21 @@ export abstract class JDBCClient implements Client {
     }
 
     private setByType(bucket: string, type: BucketValueType, key: string, value: any, ttl?: number) {
-        this.execute(`
-            CREATE TABLE IF NOT EXISTS ${bucket} (
-                key_ VARCHAR(250) PRIMARY KEY,
-                int_ BIGINT,
-                float_ DOUBLE,
-                string_ TEXT,
-                blob_ LONGBLOB,
-                type TEXT,
-                timestamp BIGINT,
-                expires_at BIGINT,
-                INDEX ${bucket}_idx_expires_at (expires_at)
-            ) ${this.defaultEngine}
-        `)
+        if (!this.one("SHOW TABLES LIKE ?", [bucket])) {
+            this.execute(`
+                CREATE TABLE IF NOT EXISTS ${bucket} (
+                    key_ VARCHAR(250) PRIMARY KEY,
+                    int_ BIGINT,
+                    float_ DOUBLE,
+                    string_ TEXT,
+                    blob_ LONGBLOB,
+                    type TEXT,
+                    timestamp BIGINT,
+                    expires_at BIGINT,
+                    INDEX ${bucket}_idx_expires_at (expires_at)
+                ) ${this.defaultEngine}
+            `)
+        }
         let keys = `key_, ${type}_, type, timestamp, expires_at`
         let expires_at = ttl === undefined ? "NULL" : `${this.SQL_UNIX_TIMESTAMP} + ${ttl * 1e6}`
         let values = `?, ?, ?, ${this.SQL_UNIX_TIMESTAMP}, ${expires_at}`

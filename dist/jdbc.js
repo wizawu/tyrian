@@ -115,7 +115,9 @@ var JDBCClient = (function () {
         return statement;
     };
     JDBCClient.prototype.setByType = function (bucket, type, key, value, ttl) {
-        this.execute("\n            CREATE TABLE IF NOT EXISTS " + bucket + " (\n                key_ VARCHAR(250) PRIMARY KEY,\n                int_ BIGINT,\n                float_ DOUBLE,\n                string_ TEXT,\n                blob_ LONGBLOB,\n                type TEXT,\n                timestamp BIGINT,\n                expires_at BIGINT,\n                INDEX " + bucket + "_idx_expires_at (expires_at)\n            ) " + this.defaultEngine + "\n        ");
+        if (!this.one("SHOW TABLES LIKE ?", [bucket])) {
+            this.execute("\n                CREATE TABLE IF NOT EXISTS " + bucket + " (\n                    key_ VARCHAR(250) PRIMARY KEY,\n                    int_ BIGINT,\n                    float_ DOUBLE,\n                    string_ TEXT,\n                    blob_ LONGBLOB,\n                    type TEXT,\n                    timestamp BIGINT,\n                    expires_at BIGINT,\n                    INDEX " + bucket + "_idx_expires_at (expires_at)\n                ) " + this.defaultEngine + "\n            ");
+        }
         var keys = "key_, " + type + "_, type, timestamp, expires_at";
         var expires_at = ttl === undefined ? "NULL" : this.SQL_UNIX_TIMESTAMP + " + " + ttl * 1e6;
         var values = "?, ?, ?, " + this.SQL_UNIX_TIMESTAMP + ", " + expires_at;

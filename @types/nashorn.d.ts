@@ -14,7 +14,7 @@ declare class Java {
 }
 
 declare const Packages: any
-declare const arguments: string[]
+declare const $ARG: string[]
 
 declare namespace java {
     namespace util {

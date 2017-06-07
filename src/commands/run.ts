@@ -14,7 +14,7 @@ export default function (jjsArgs: string[], target: string, args: string[], watc
     }
 
     let run = () => {
-        let child = spawn("jjs", [...jjsArgs, "-cp", classpath, target, "--", ...args])
+        let child = spawn("jjs", [...jjsArgs, "-scripting", "-cp", classpath, target, "--", ...args])
         child.on("exit", code => process.exit(code))
 
         let lookupSource = chunk => {

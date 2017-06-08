@@ -1,5 +1,5 @@
 # 1c [![](https://badge.fury.io/js/1c.svg)](https://www.npmjs.com/package/1c) [![](https://travis-ci.org/wizawu/1c.svg)](https://travis-ci.org/wizawu/1c)
 
-Check out [1c.const.one](https://1c.const.one/) for more information.
+Check out the [official website](https://1c.wizawu.com/) for more information.
 
-![](https://1c.const.one/assets/img/1c-ide.gif)
+![](https://1c.wizawu.com/assets/img/1c-ide.gif)

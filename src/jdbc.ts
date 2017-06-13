@@ -4,8 +4,10 @@ import { indexName, resultSetToJSON } from "./util"
 export abstract class JDBCClient implements Client {
     protected connection: java.sql.Connection
     protected defaultEngine: string
+    protected interactedAt: number
     protected url: string
     protected SQL_UNIX_TIMESTAMP: string
+    protected WAIT_TIMEOUT: number
 
     protected abstract connect(): void
 
@@ -135,7 +137,10 @@ export abstract class JDBCClient implements Client {
     }
 
     private prepareStatement(sql: string, parameters?: any[]) {
-        if (this.connection.isClosed()) this.connect()
+        if (this.connection.isClosed() || Date.now() - this.interactedAt > this.WAIT_TIMEOUT) {
+            this.connect()
+        }
+        this.interactedAt = Date.now()
         let statement = this.connection.prepareStatement(sql)
         if (parameters) {
             parameters.forEach((parameter, i) => statement.setObject(i + 1, parameter))

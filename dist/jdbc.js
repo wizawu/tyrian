@@ -106,8 +106,10 @@ var JDBCClient = (function () {
         this.connection.close();
     };
     JDBCClient.prototype.prepareStatement = function (sql, parameters) {
-        if (this.connection.isClosed())
+        if (this.connection.isClosed() || Date.now() - this.interactedAt > this.WAIT_TIMEOUT) {
             this.connect();
+        }
+        this.interactedAt = Date.now();
         var statement = this.connection.prepareStatement(sql);
         if (parameters) {
             parameters.forEach(function (parameter, i) { return statement.setObject(i + 1, parameter); });

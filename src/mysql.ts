@@ -33,9 +33,12 @@ export class MySQLClient extends JDBCClient {
             this.url += `&useServerPrepStmts=${options.useServerPrepStmts}`
         }
         this.connect()
+
+        this.WAIT_TIMEOUT = this.one<any>("SHOW VARIABLES LIKE 'wait_timeout'").Value * 1000
     }
 
     protected connect() {
         this.connection = this.driver.connect(this.url, new java.util.Properties())
+        this.interactedAt = Date.now()
     }
 }

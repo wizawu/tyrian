@@ -12,16 +12,16 @@ install: clean
 clean:
 	rm -rf lib node_modules tsconfig.json yarn.lock
 
-test/build:
+build/test:
 	1c build test/test_mysql.ts
 
-test/watch:
+watch/test:
 	1c build -w test/test_mysql.ts
 
-test/run:
+run/test:
 	1c run test_mysql.js
 
-test: build test/build test/run
+test: build build/test run/test
 
 profile:
-	PROFILE_SQL=true make test/run 2>&1
+	PROFILE_SQL=true make run/test 2>&1

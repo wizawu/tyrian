@@ -2,8 +2,10 @@ import { Client } from "./client";
 export declare abstract class JDBCClient implements Client {
     protected connection: java.sql.Connection;
     protected defaultEngine: string;
+    protected interactedAt: number;
     protected url: string;
     protected SQL_UNIX_TIMESTAMP: string;
+    protected WAIT_TIMEOUT: number;
     protected abstract connect(): void;
     get(bucket: string, key: string): number | string | byte[] | null;
     getJSON<T>(bucket: string, key: string): T | null;

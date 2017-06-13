@@ -43,10 +43,12 @@ var MySQLClient = (function (_super) {
             _this.url += "&useServerPrepStmts=" + options.useServerPrepStmts;
         }
         _this.connect();
+        _this.WAIT_TIMEOUT = _this.one("SHOW VARIABLES LIKE 'wait_timeout'").Value * 1000;
         return _this;
     }
     MySQLClient.prototype.connect = function () {
         this.connection = this.driver.connect(this.url, new java.util.Properties());
+        this.interactedAt = Date.now();
     };
     return MySQLClient;
 }(jdbc_1.JDBCClient));

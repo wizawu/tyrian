@@ -49,7 +49,7 @@ describe("MySQLClient", () => {
     it("setJSON", () => {
         client.setJSON(bucket, "x", { value: 1 })
         assert.strictEqual(
-            JSON.stringify(client.getJSON(bucket, "x")),
+            JSON.stringify(client.get(bucket, "x")),
             JSON.stringify({ value: 1 })
         )
         assert.strictEqual(client.get(bucket, "y"), null)
@@ -271,11 +271,7 @@ describe("MySQLClient benchmark", () => {
     })
 
     it("get", () => {
-        batch(i => assert.strictEqual(client.get(bucket, "int" + i), i))
-    })
-
-    it("getJSON", () => {
-        batch(i => assert.strictEqual(client.getJSON<any>(bucket, "json" + i).value, i))
+        batch(i => assert.strictEqual(client.get<any>(bucket, "json" + i).value, i))
     })
 
     it("delete", () => {

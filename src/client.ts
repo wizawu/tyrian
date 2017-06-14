@@ -18,8 +18,7 @@ export interface Options {
 
 export interface Client {
     // Key-value store
-    get(bucket: string, key: string): number | string | byte[] | null
-    getJSON<T>(bucket: string, key: string): T | null
+    get<T>(bucket: string, key: string): T | null
     setInt(bucket: string, key: string, value: number, ttl?: number)
     setFloat(bucket: string, key: string, value: number, ttl?: number)
     setString(bucket: string, key: string, value: string, ttl?: number)

@@ -11,7 +11,7 @@ export abstract class JDBCClient implements Client {
 
     protected abstract connect(): void
 
-    get(bucket: string, key: string): number | string | byte[] | null {
+    get<T>(bucket: string, key: string): T | null {
         if (!this.one("SHOW TABLES LIKE ?", [bucket])) return null
         let record = this.one(`
             SELECT *, expires_at - ${this.SQL_UNIX_TIMESTAMP} as ttl
@@ -23,12 +23,7 @@ export abstract class JDBCClient implements Client {
             this.execute(`DELETE FROM ${bucket} WHERE ${this.SQL_UNIX_TIMESTAMP} >= expires_at`)
             return null
         }
-        return record[record.type + "_"]
-    }
-
-    getJSON<T>(bucket: string, key: string): T | null {
-        let value = this.get(bucket, key)
-        return value === null ? null : JSON.parse(value as string)
+        return record.type === "json" ? JSON.parse(record[record.type + "_"]) : record[record.type + "_"]
     }
 
     setInt(bucket: string, key: string, value: number, ttl?: number) {
@@ -44,7 +39,7 @@ export abstract class JDBCClient implements Client {
     }
 
     setJSON(bucket: string, key: string, json: Object, ttl?: number) {
-        this.setByType(bucket, "string", key, JSON.stringify(json), ttl)
+        this.setByType(bucket, "json", key, JSON.stringify(json), ttl)
     }
 
     setBlob(bucket: string, key: string, data: byte[], ttl?: number) {
@@ -156,6 +151,7 @@ export abstract class JDBCClient implements Client {
                     int_ BIGINT,
                     float_ DOUBLE,
                     string_ TEXT,
+                    json_ JSON,
                     blob_ LONGBLOB,
                     type TEXT,
                     timestamp BIGINT,
@@ -171,13 +167,14 @@ export abstract class JDBCClient implements Client {
     }
 }
 
-type BucketValueType = "int" | "float" | "string" | "blob"
+type BucketValueType = "int" | "float" | "string" | "json" | "blob"
 
 interface BucketItem {
     key_: string
     int_: number
     float_: number
     string_: string
+    json_: Object
     blob_: byte[]
     type: BucketValueType
     timestamp: number

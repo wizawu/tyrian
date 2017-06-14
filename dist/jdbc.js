@@ -14,11 +14,7 @@ var JDBCClient = (function () {
             this.execute("DELETE FROM " + bucket + " WHERE " + this.SQL_UNIX_TIMESTAMP + " >= expires_at");
             return null;
         }
-        return record[record.type + "_"];
-    };
-    JDBCClient.prototype.getJSON = function (bucket, key) {
-        var value = this.get(bucket, key);
-        return value === null ? null : JSON.parse(value);
+        return record.type === "json" ? JSON.parse(record[record.type + "_"]) : record[record.type + "_"];
     };
     JDBCClient.prototype.setInt = function (bucket, key, value, ttl) {
         this.setByType(bucket, "int", key, value, ttl);
@@ -30,7 +26,7 @@ var JDBCClient = (function () {
         this.setByType(bucket, "string", key, value, ttl);
     };
     JDBCClient.prototype.setJSON = function (bucket, key, json, ttl) {
-        this.setByType(bucket, "string", key, JSON.stringify(json), ttl);
+        this.setByType(bucket, "json", key, JSON.stringify(json), ttl);
     };
     JDBCClient.prototype.setBlob = function (bucket, key, data, ttl) {
         this.setByType(bucket, "blob", key, data, ttl);
@@ -118,7 +114,7 @@ var JDBCClient = (function () {
     };
     JDBCClient.prototype.setByType = function (bucket, type, key, value, ttl) {
         if (!this.one("SHOW TABLES LIKE ?", [bucket])) {
-            this.execute("\n                CREATE TABLE IF NOT EXISTS " + bucket + " (\n                    key_ VARCHAR(250) PRIMARY KEY,\n                    int_ BIGINT,\n                    float_ DOUBLE,\n                    string_ TEXT,\n                    blob_ LONGBLOB,\n                    type TEXT,\n                    timestamp BIGINT,\n                    expires_at BIGINT,\n                    INDEX " + bucket + "_idx_expires_at (expires_at)\n                ) " + this.defaultEngine + "\n            ");
+            this.execute("\n                CREATE TABLE IF NOT EXISTS " + bucket + " (\n                    key_ VARCHAR(250) PRIMARY KEY,\n                    int_ BIGINT,\n                    float_ DOUBLE,\n                    string_ TEXT,\n                    json_ JSON,\n                    blob_ LONGBLOB,\n                    type TEXT,\n                    timestamp BIGINT,\n                    expires_at BIGINT,\n                    INDEX " + bucket + "_idx_expires_at (expires_at)\n                ) " + this.defaultEngine + "\n            ");
         }
         var keys = "key_, " + type + "_, type, timestamp, expires_at";
         var expires_at = ttl === undefined ? "NULL" : this.SQL_UNIX_TIMESTAMP + " + " + ttl * 1e6;

@@ -15,8 +15,7 @@ export interface Options {
     useServerPrepStmts?: boolean;
 }
 export interface Client {
-    get(bucket: string, key: string): number | string | byte[] | null;
-    getJSON<T>(bucket: string, key: string): T | null;
+    get<T>(bucket: string, key: string): T | null;
     setInt(bucket: string, key: string, value: number, ttl?: number): any;
     setFloat(bucket: string, key: string, value: number, ttl?: number): any;
     setString(bucket: string, key: string, value: string, ttl?: number): any;

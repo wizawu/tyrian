@@ -14,7 +14,12 @@ function default_1(jjsArgs, target, args, watch) {
         sourceMap = new source_map_1.SourceMapConsumer(JSON.parse(fs.readFileSync(target + ".map", "utf-8")));
     }
     var run = function () {
-        var child = child_process_1.spawn("jjs", jjsArgs.concat(["-scripting", "-cp", classpath, target, "--"], args));
+        var child = child_process_1.spawn("jjs", jjsArgs.concat([
+            "-scripting", "--language=es6",
+            "-cp", classpath,
+            target,
+            "--"
+        ], args));
         child.on("exit", function (code) { return process.exit(code); });
         var lookupSource = function (chunk) {
             if (sourceMap === null)

@@ -8,6 +8,8 @@ var parseClass_1 = require("./parseClass");
 var lambda = require("./lambda");
 var ILLEGAL_NAMESPACES = [
     "debugger",
+    "enum",
+    "export",
     "function",
     "in",
     "is",

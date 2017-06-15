@@ -8,6 +8,8 @@ import * as lambda from "./lambda"
 
 const ILLEGAL_NAMESPACES = [
     "debugger",
+    "enum",
+    "export",
     "function",
     "in",
     "is",

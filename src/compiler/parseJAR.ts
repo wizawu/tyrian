@@ -7,6 +7,7 @@ import parseClass from "./parseClass"
 import * as lambda from "./lambda"
 
 const ILLEGAL_NAMESPACES = [
+    "debugger",
     "function",
     "in",
     "is",

@@ -7,6 +7,7 @@ var child_process_1 = require("child_process");
 var parseClass_1 = require("./parseClass");
 var lambda = require("./lambda");
 var ILLEGAL_NAMESPACES = [
+    "debugger",
     "function",
     "in",
     "is",

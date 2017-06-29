@@ -23,8 +23,6 @@ var UNSUPPORTED_MODIFIERS = [
 function safeType(type, isParameter) {
     if (/>\.\w+$/.test(type))
         return "any";
-    if (type.indexOf("$") >= 0)
-        return "any";
     if (type === "java.lang.String")
         return "string";
     if (type === "java.lang.Boolean")
@@ -235,7 +233,7 @@ function default_1(source, pkg) {
                 isInterface = item.line.indexOf("interface") >= 0;
                 if (item.name.indexOf("-") >= 0)
                     ignore = true;
-                if (item.name.indexOf("$") >= 0)
+                if (/>\.\w+/.test(item.line))
                     ignore = true;
                 if (!ignore)
                     buffer.push(item);
@@ -245,8 +243,9 @@ function default_1(source, pkg) {
                     buffer.push(item);
                 break;
             case "MEMBER":
-                if (!ignore && item.name !== "prototype")
+                if (!ignore && item.name !== "prototype" && item.line.indexOf("constructor:") < 0) {
                     buffer.push(item);
+                }
                 break;
             case "END":
                 if (!ignore) {

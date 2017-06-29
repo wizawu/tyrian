@@ -72,32 +72,11 @@ declare namespace com {
                         public run(): void
                     }
                     class EventQueueMonitorItem {
-                        event: java.awt.AWTEvent
-                        next: com.sun.java.accessibility.util.EventQueueMonitorItem
-                        constructor(arg0: java.awt.AWTEvent)
                     }
                     class EventQueueMonitor implements java.awt.event.AWTEventListener {
-                        static topLevelWindows: java.util.Vector
-                        static topLevelWindowWithFocus: java.awt.Window
-                        static currentMousePosition: java.awt.Point
-                        static currentMouseComponent: java.awt.Component
-                        static guiInitializedListener: com.sun.java.accessibility.util.GUIInitializedListener
-                        static topLevelWindowListener: com.sun.java.accessibility.util.TopLevelWindowListener
-                        static mouseMotionListener: java.awt.event.MouseMotionListener
-                        static guiInitialized: boolean
-                        static componentEventQueue: com.sun.java.accessibility.util.EventQueueMonitorItem
-                        static componentEventQueueLock: java.lang.Object
                         public constructor()
-                        static queueComponentEvent(arg0: java.awt.event.ComponentEvent): void
                         public static maybeInitialize(): void
                         public eventDispatched(arg0: java.awt.AWTEvent): void
-                        static maybeNotifyAssistiveTechnologies(): void
-                        static addTopLevelWindow(arg0: java.awt.Component): void
-                        static removeTopLevelWindow(arg0: java.awt.Window): void
-                        static updateCurrentMousePosition(arg0: java.awt.event.MouseEvent): void
-                        static processEvent(arg0: java.awt.AWTEvent): void
-                        static getShowingComponentAt(arg0: java.awt.Container, arg1: int, arg2: int): java.awt.Component
-                        static getComponentAt(arg0: java.awt.Container, arg1: java.awt.Point): java.awt.Component
                         public static getAccessibleAt(arg0: java.awt.Point): javax.accessibility.Accessible
                         public static isGUIInitialized(): boolean
                         public static addGUIInitializedListener(arg0: com.sun.java.accessibility.util.GUIInitializedListener): void
@@ -109,7 +88,6 @@ declare namespace com {
                         public static getTopLevelWindowWithFocus(): java.awt.Window
                     }
                     class EventQueueMonitor$1 implements java.security.PrivilegedAction {
-                        constructor()
                         public run(): java.lang.Object
                     }
                     class Translator extends javax.accessibility.AccessibleContext implements javax.accessibility.Accessible , javax.accessibility.AccessibleComponent {
@@ -243,21 +221,6 @@ declare namespace com {
                         public static removeItemListener(arg0: java.awt.event.ItemListener): void
                         public static addTextListener(arg0: java.awt.event.TextListener): void
                         public static removeTextListener(arg0: java.awt.event.TextListener): void
-                        static access$002(arg0: boolean): boolean
-                        static access$000(): boolean
-                        static access$100(): java.awt.event.ComponentListener
-                        static access$200(): java.awt.event.KeyListener
-                        static access$300(): java.awt.event.MouseListener
-                        static access$400(): java.awt.event.MouseMotionListener
-                        static access$500(): java.awt.event.WindowListener
-                        static access$600(): java.awt.event.ActionListener
-                        static access$700(): java.awt.event.AdjustmentListener
-                        static access$800(): java.awt.event.ItemListener
-                        static access$900(): java.awt.event.TextListener
-                        static access$1002(arg0: java.awt.Component): java.awt.Component
-                        static access$1000(): java.awt.Component
-                        static access$1100(): java.awt.event.ContainerListener
-                        static access$1200(): java.awt.event.FocusListener
                     }
                     class AWTEventMonitor$AWTEventsListener implements com.sun.java.accessibility.util.TopLevelWindowListener , java.awt.event.ActionListener , java.awt.event.AdjustmentListener , java.awt.event.ComponentListener , java.awt.event.ContainerListener , java.awt.event.FocusListener , java.awt.event.ItemListener , java.awt.event.KeyListener , java.awt.event.MouseListener , java.awt.event.MouseMotionListener , java.awt.event.TextListener , java.awt.event.WindowListener , javax.swing.event.ChangeListener {
                         public constructor()

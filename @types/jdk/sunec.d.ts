@@ -5,12 +5,10 @@ declare namespace sun {
                 public constructor()
             }
             class SunEC$1 implements java.security.PrivilegedAction<java.lang.Void> {
-                constructor()
                 public run(): java.lang.Void
                 public run(): java.lang.Object
             }
             class SunECEntries {
-                static putEntries(arg0: java.util.Map<java.lang.Object, java.lang.Object>, arg1: boolean): void
             }
             class ECPrivateKeyImpl extends sun.security.pkcs.PKCS8Key implements java.security.interfaces.ECPrivateKey {
                 public constructor(arg0: byte[])
@@ -38,7 +36,6 @@ declare namespace sun {
                 public generateKeyPair(): java.security.KeyPair
             }
             class ECParameters extends java.security.AlgorithmParametersSpi {
-                static getAlgorithmParameters(arg0: java.security.spec.ECParameterSpec): java.security.AlgorithmParameters
                 public constructor()
                 protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec): void
                 protected engineInit(arg0: byte[]): void
@@ -49,19 +46,10 @@ declare namespace sun {
                 protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
             }
             class NamedCurve extends java.security.spec.ECParameterSpec {
-                constructor(arg0: string, arg1: string, arg2: java.security.spec.EllipticCurve, arg3: java.security.spec.ECPoint, arg4: java.math.BigInteger, arg5: int)
-                getName(): string
-                getEncoded(): byte[]
-                getObjectId(): string
                 public toString(): string
             }
             class CurveDB {
-                static SPLIT_PATTERN: string
                 public constructor()
-                static getSupportedCurves(): java.util.Collection<sun.security.ec.NamedCurve>
-                static lookup(arg0: string): sun.security.ec.NamedCurve
-                static lookup(arg0: int): sun.security.ec.NamedCurve
-                static lookup(arg0: java.security.spec.ECParameterSpec): sun.security.ec.NamedCurve
             }
             class ECKeyFactory extends java.security.KeyFactorySpi {
                 public constructor()
@@ -81,8 +69,6 @@ declare namespace sun {
                 protected engineGenerateSecret(arg0: string): javax.crypto.SecretKey
             }
             abstract class ECDSASignature extends java.security.SignatureSpi {
-                constructor()
-                constructor(arg0: string)
                 protected engineInitVerify(arg0: java.security.PublicKey): void
                 protected engineInitSign(arg0: java.security.PrivateKey): void
                 protected engineInitSign(arg0: java.security.PrivateKey, arg1: java.security.SecureRandom): void

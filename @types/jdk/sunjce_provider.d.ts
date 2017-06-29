@@ -3,9 +3,6 @@ declare namespace com {
         namespace crypto {
             namespace provider {
                 class DESedeKey implements javax.crypto.SecretKey {
-                    static serialVersionUID: long
-                    constructor(arg0: byte[])
-                    constructor(arg0: byte[], arg1: int)
                     public getEncoded(): byte[]
                     public getAlgorithm(): string
                     public getFormat(): string
@@ -100,20 +97,10 @@ declare namespace com {
                 class JceKeyStore$1 {
                 }
                 class JceKeyStore$TrustedCertEntry {
-                    date: java.util.Date
-                    cert: java.security.cert.Certificate
-                    constructor(arg0: com.sun.crypto.provider.JceKeyStore$1)
                 }
                 class JceKeyStore$SecretKeyEntry {
-                    date: java.util.Date
-                    sealedKey: javax.crypto.SealedObject
-                    constructor(arg0: com.sun.crypto.provider.JceKeyStore$1)
                 }
                 class JceKeyStore$PrivateKeyEntry {
-                    date: java.util.Date
-                    protectedKey: byte[]
-                    chain: java.security.cert.Certificate[]
-                    constructor(arg0: com.sun.crypto.provider.JceKeyStore$1)
                 }
                 class DESedeKeyGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
@@ -128,7 +115,6 @@ declare namespace com {
                     protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
                     protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineGenerateKey(): javax.crypto.SecretKey
-                    static setParityBit(arg0: byte[], arg1: int): void
                 }
                 class DHParameterGenerator extends java.security.AlgorithmParameterGeneratorSpi {
                     public constructor()
@@ -137,18 +123,8 @@ declare namespace com {
                     protected engineGenerateParameters(): java.security.AlgorithmParameters
                 }
                 class SslMacCore {
-                    constructor(arg0: string, arg1: byte[], arg2: byte[])
-                    getDigestLength(): int
-                    init(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
-                    update(arg0: byte): void
-                    update(arg0: byte[], arg1: int, arg2: int): void
-                    update(arg0: java.nio.ByteBuffer): void
-                    doFinal(): byte[]
-                    reset(): void
                 }
                 class SslMacCore$SslMacSHA1 extends javax.crypto.MacSpi {
-                    static shaPad1: byte[]
-                    static shaPad2: byte[]
                     public constructor()
                     protected engineGetMacLength(): int
                     protected engineInit(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
@@ -159,8 +135,6 @@ declare namespace com {
                     protected engineReset(): void
                 }
                 class SslMacCore$SslMacMD5 extends javax.crypto.MacSpi {
-                    static md5Pad1: byte[]
-                    static md5Pad2: byte[]
                     public constructor()
                     protected engineGetMacLength(): int
                     protected engineInit(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
@@ -171,11 +145,6 @@ declare namespace com {
                     protected engineReset(): void
                 }
                 class KeyGeneratorCore {
-                    constructor(arg0: string, arg1: int)
-                    implInit(arg0: java.security.SecureRandom): void
-                    implInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
-                    implInit(arg0: int, arg1: java.security.SecureRandom): void
-                    implGenerateKey(): javax.crypto.SecretKey
                 }
                 class KeyGeneratorCore$ARCFOURKeyGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
@@ -243,38 +212,16 @@ declare namespace com {
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class SunJCE extends java.security.Provider {
-                    static debug: boolean
-                    static getRandom(): java.security.SecureRandom
                     public constructor()
-                    static getInstance(): com.sun.crypto.provider.SunJCE
                 }
                 class SunJCE$1 implements java.security.PrivilegedAction<java.lang.Object> {
-                    this$0: com.sun.crypto.provider.SunJCE
-                    constructor(arg0: com.sun.crypto.provider.SunJCE)
                     public run(): java.lang.Object
                 }
                 class SunJCE$SecureRandomHolder {
-                    static RANDOM: java.security.SecureRandom
                 }
                 class RC2Crypt extends com.sun.crypto.provider.SymmetricCipher {
-                    constructor()
-                    getBlockSize(): int
-                    getEffectiveKeyBits(): int
-                    initEffectiveKeyBits(arg0: int): void
-                    static checkKey(arg0: string, arg1: int): void
-                    init(arg0: boolean, arg1: string, arg2: byte[]): void
-                    encryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
-                    decryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
                 }
                 class CounterMode extends com.sun.crypto.provider.FeedbackCipher {
-                    constructor(arg0: com.sun.crypto.provider.SymmetricCipher)
-                    getFeedback(): string
-                    reset(): void
-                    save(): void
-                    restore(): void
-                    init(arg0: boolean, arg1: string, arg2: byte[], arg3: byte[]): void
-                    encrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    decrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                 }
                 class BlowfishCipher extends javax.crypto.CipherSpi {
                     public constructor()
@@ -337,7 +284,6 @@ declare namespace com {
                     protected engineGenerateSecret(arg0: java.security.spec.KeySpec): javax.crypto.SecretKey
                     protected engineGetKeySpec(arg0: javax.crypto.SecretKey, arg1: java.lang.Class<any>): java.security.spec.KeySpec
                     protected engineTranslateKey(arg0: javax.crypto.SecretKey): javax.crypto.SecretKey
-                    constructor(arg0: string, arg1: com.sun.crypto.provider.PBEKeyFactory$1)
                 }
                 class PBEKeyFactory$1 {
                 }
@@ -403,21 +349,10 @@ declare namespace com {
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 class ElectronicCodeBook extends com.sun.crypto.provider.FeedbackCipher {
-                    constructor(arg0: com.sun.crypto.provider.SymmetricCipher)
-                    getFeedback(): string
-                    reset(): void
-                    save(): void
-                    restore(): void
-                    init(arg0: boolean, arg1: string, arg2: byte[], arg3: byte[]): void
-                    encrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    decrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                 }
                 class PrivateKeyInfo {
-                    constructor(arg0: byte[])
-                    getAlgorithm(): sun.security.x509.AlgorithmId
                 }
                 abstract class AESCipher extends javax.crypto.CipherSpi {
-                    static checkKeySize(arg0: java.security.Key, arg1: int): void
                     protected constructor(arg0: int)
                     protected engineSetMode(arg0: string): void
                     protected engineSetPadding(arg0: string): void
@@ -500,33 +435,9 @@ declare namespace com {
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 class GCTR {
-                    constructor(arg0: com.sun.crypto.provider.SymmetricCipher, arg1: byte[])
-                    update(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     protected doFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    reset(): void
-                    save(): void
-                    restore(): void
                 }
                 class GaloisCounterMode extends com.sun.crypto.provider.FeedbackCipher {
-                    static DEFAULT_TAG_LEN: int
-                    static DEFAULT_IV_LEN: int
-                    static increment32(arg0: byte[]): void
-                    constructor(arg0: com.sun.crypto.provider.SymmetricCipher)
-                    getFeedback(): string
-                    reset(): void
-                    save(): void
-                    restore(): void
-                    init(arg0: boolean, arg1: string, arg2: byte[], arg3: byte[]): void
-                    init(arg0: boolean, arg1: string, arg2: byte[], arg3: byte[], arg4: int): void
-                    updateAAD(arg0: byte[], arg1: int, arg2: int): void
-                    processAAD(): void
-                    doLastBlock(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int, arg5: boolean): void
-                    encrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    encryptFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    decrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    decryptFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    getTagLen(): int
-                    getBufferedLength(): int
                 }
                 class AESKeyGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
@@ -536,7 +447,6 @@ declare namespace com {
                     protected engineGenerateKey(): javax.crypto.SecretKey
                 }
                 class ISO10126Padding implements com.sun.crypto.provider.Padding {
-                    constructor(arg0: int)
                     public padWithLen(arg0: byte[], arg1: int, arg2: int): void
                     public unpad(arg0: byte[], arg1: int, arg2: int): int
                     public padLength(arg0: int): int
@@ -617,31 +527,6 @@ declare namespace com {
                     protected engineGetKeySize(arg0: java.security.Key): int
                 }
                 class PKCS12PBECipherCore {
-                    static CIPHER_KEY: int
-                    static CIPHER_IV: int
-                    static MAC_KEY: int
-                    static derive(arg0: char[], arg1: byte[], arg2: int, arg3: int, arg4: int): byte[]
-                    static derive(arg0: char[], arg1: byte[], arg2: int, arg3: int, arg4: int, arg5: string, arg6: int): byte[]
-                    constructor(arg0: string, arg1: int)
-                    implSetMode(arg0: string): void
-                    implSetPadding(arg0: string): void
-                    implGetBlockSize(): int
-                    implGetOutputSize(arg0: int): int
-                    implGetIV(): byte[]
-                    implGetParameters(): java.security.AlgorithmParameters
-                    implInit(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom): void
-                    implInit(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom, arg4: javax.crypto.CipherSpi): void
-                    implInit(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
-                    implInit(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom, arg4: javax.crypto.CipherSpi): void
-                    implInit(arg0: int, arg1: java.security.Key, arg2: java.security.SecureRandom): void
-                    implInit(arg0: int, arg1: java.security.Key, arg2: java.security.SecureRandom, arg3: javax.crypto.CipherSpi): void
-                    implUpdate(arg0: byte[], arg1: int, arg2: int): byte[]
-                    implUpdate(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    implDoFinal(arg0: byte[], arg1: int, arg2: int): byte[]
-                    implDoFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    implGetKeySize(arg0: java.security.Key): int
-                    implWrap(arg0: java.security.Key): byte[]
-                    implUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class PKCS12PBECipherCore$PBEWithSHA1AndRC4_128 extends javax.crypto.CipherSpi {
                     public constructor()
@@ -740,31 +625,12 @@ declare namespace com {
                 }
                 class CipherBlockChaining extends com.sun.crypto.provider.FeedbackCipher {
                     protected r: byte[]
-                    constructor(arg0: com.sun.crypto.provider.SymmetricCipher)
-                    getFeedback(): string
-                    init(arg0: boolean, arg1: string, arg2: byte[], arg3: byte[]): void
-                    reset(): void
-                    save(): void
-                    restore(): void
-                    encrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    decrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                 }
                 class CipherTextStealing extends com.sun.crypto.provider.CipherBlockChaining {
-                    constructor(arg0: com.sun.crypto.provider.SymmetricCipher)
-                    getFeedback(): string
-                    encryptFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    decryptFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                 }
                 class ai extends javax.crypto.SealedObject {
-                    static serialVersionUID: long
-                    constructor(arg0: javax.crypto.SealedObject)
-                    readResolve(): java.lang.Object
                 }
                 class DESedeCrypt extends com.sun.crypto.provider.DESCrypt implements com.sun.crypto.provider.DESConstants {
-                    constructor()
-                    init(arg0: boolean, arg1: string, arg2: byte[]): void
-                    encryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
-                    decryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
                 }
                 class TlsMasterSecretGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
@@ -774,7 +640,6 @@ declare namespace com {
                     protected engineGenerateKey(): javax.crypto.SecretKey
                 }
                 class TlsMasterSecretGenerator$TlsMasterSecretKey implements sun.security.internal.interfaces.TlsMasterSecret {
-                    constructor(arg0: byte[], arg1: int, arg2: int)
                     public getMajorVersion(): int
                     public getMinorVersion(): int
                     public getAlgorithm(): string
@@ -788,27 +653,8 @@ declare namespace com {
                     public generateKeyPair(): java.security.KeyPair
                 }
                 class PBECipherCore {
-                    constructor(arg0: string)
-                    setMode(arg0: string): void
-                    setPadding(arg0: string): void
-                    getBlockSize(): int
-                    getOutputSize(arg0: int): int
-                    getIV(): byte[]
-                    getParameters(): java.security.AlgorithmParameters
-                    init(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom): void
-                    init(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
-                    update(arg0: byte[], arg1: int, arg2: int): byte[]
-                    update(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    doFinal(arg0: byte[], arg1: int, arg2: int): byte[]
-                    doFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    wrap(arg0: java.security.Key): byte[]
-                    unwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class DHPrivateKey implements java.security.PrivateKey , javax.crypto.interfaces.DHPrivateKey , java.io.Serializable {
-                    static serialVersionUID: long
-                    constructor(arg0: java.math.BigInteger, arg1: java.math.BigInteger, arg2: java.math.BigInteger)
-                    constructor(arg0: java.math.BigInteger, arg1: java.math.BigInteger, arg2: java.math.BigInteger, arg3: int)
-                    constructor(arg0: byte[])
                     public getFormat(): string
                     public getAlgorithm(): string
                     public getEncoded(): byte[]
@@ -818,23 +664,10 @@ declare namespace com {
                     public equals(arg0: java.lang.Object): boolean
                 }
                 abstract class TlsPrfGenerator extends javax.crypto.KeyGeneratorSpi {
-                    static LABEL_MASTER_SECRET: byte[]
-                    static LABEL_KEY_EXPANSION: byte[]
-                    static LABEL_CLIENT_WRITE_KEY: byte[]
-                    static LABEL_SERVER_WRITE_KEY: byte[]
-                    static LABEL_IV_BLOCK: byte[]
-                    static SSL3_CONST: byte[][]
-                    static genPad(arg0: byte, arg1: int): byte[]
-                    static concat(arg0: byte[], arg1: byte[]): byte[]
                     public constructor()
                     protected engineInit(arg0: java.security.SecureRandom): void
                     protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
                     protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
-                    engineGenerateKey0(arg0: boolean): javax.crypto.SecretKey
-                    static doTLS12PRF(arg0: byte[], arg1: byte[], arg2: byte[], arg3: int, arg4: string, arg5: int, arg6: int): byte[]
-                    static doTLS12PRF(arg0: byte[], arg1: byte[], arg2: byte[], arg3: int, arg4: java.security.MessageDigest, arg5: int, arg6: int): byte[]
-                    static doTLS10PRF(arg0: byte[], arg1: byte[], arg2: byte[], arg3: int): byte[]
-                    static doTLS10PRF(arg0: byte[], arg1: byte[], arg2: byte[], arg3: int, arg4: java.security.MessageDigest, arg5: java.security.MessageDigest): byte[]
                 }
                 class TlsPrfGenerator$V10 extends com.sun.crypto.provider.TlsPrfGenerator {
                     public constructor()
@@ -845,7 +678,6 @@ declare namespace com {
                     protected engineGenerateKey(): javax.crypto.SecretKey
                 }
                 abstract class PBES2Core extends javax.crypto.CipherSpi {
-                    constructor(arg0: string, arg1: string, arg2: int)
                     protected engineSetMode(arg0: string): void
                     protected engineSetPadding(arg0: string): void
                     protected engineGetBlockSize(): int
@@ -898,28 +730,8 @@ declare namespace com {
                     BLOWFISH_MAX_KEYSIZE: int
                 }
                 class BlowfishCrypt extends com.sun.crypto.provider.SymmetricCipher implements com.sun.crypto.provider.BlowfishConstants {
-                    constructor()
-                    getBlockSize(): int
-                    init(arg0: boolean, arg1: string, arg2: byte[]): void
-                    encryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
-                    decryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
                 }
                 class PBES1Core {
-                    constructor(arg0: string)
-                    setMode(arg0: string): void
-                    setPadding(arg0: string): void
-                    getBlockSize(): int
-                    getOutputSize(arg0: int): int
-                    getIV(): byte[]
-                    getParameters(): java.security.AlgorithmParameters
-                    init(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom): void
-                    init(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
-                    update(arg0: byte[], arg1: int, arg2: int): byte[]
-                    update(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    doFinal(arg0: byte[], arg1: int, arg2: int): byte[]
-                    doFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    wrap(arg0: java.security.Key): byte[]
-                    unwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class PBEWithMD5AndTripleDESCipher extends javax.crypto.CipherSpi {
                     public constructor()
@@ -941,25 +753,6 @@ declare namespace com {
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class CipherCore {
-                    static GCM_MODE: int
-                    constructor(arg0: com.sun.crypto.provider.SymmetricCipher, arg1: int)
-                    setMode(arg0: string): void
-                    getMode(): int
-                    setPadding(arg0: string): void
-                    getOutputSize(arg0: int): int
-                    getIV(): byte[]
-                    getParameters(arg0: string): java.security.AlgorithmParameters
-                    init(arg0: int, arg1: java.security.Key, arg2: java.security.SecureRandom): void
-                    init(arg0: int, arg1: java.security.Key, arg2: java.security.spec.AlgorithmParameterSpec, arg3: java.security.SecureRandom): void
-                    init(arg0: int, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
-                    static getKeyBytes(arg0: java.security.Key): byte[]
-                    update(arg0: byte[], arg1: int, arg2: int): byte[]
-                    update(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    doFinal(arg0: byte[], arg1: int, arg2: int): byte[]
-                    doFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    wrap(arg0: java.security.Key): byte[]
-                    unwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
-                    updateAAD(arg0: byte[], arg1: int, arg2: int): void
                 }
                 class DESedeCipher extends javax.crypto.CipherSpi {
                     public constructor()
@@ -981,25 +774,12 @@ declare namespace com {
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class GHASH {
-                    constructor(arg0: byte[])
-                    reset(): void
-                    save(): void
-                    restore(): void
-                    update(arg0: byte[]): void
-                    update(arg0: byte[], arg1: int, arg2: int): void
-                    digest(): byte[]
                 }
                 interface AESConstants {
                     AES_BLOCK_SIZE: int
                     AES_KEYSIZES: int[]
                 }
                 class AESCrypt extends com.sun.crypto.provider.SymmetricCipher implements com.sun.crypto.provider.AESConstants {
-                    constructor()
-                    getBlockSize(): int
-                    init(arg0: boolean, arg1: string, arg2: byte[]): void
-                    static isKeySizeValid(arg0: int): boolean
-                    encryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
-                    decryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
                 }
                 abstract class AESWrapCipher extends javax.crypto.CipherSpi {
                     public constructor(arg0: int)
@@ -1033,16 +813,6 @@ declare namespace com {
                     public constructor()
                 }
                 class CipherFeedback extends com.sun.crypto.provider.FeedbackCipher {
-                    constructor(arg0: com.sun.crypto.provider.SymmetricCipher, arg1: int)
-                    getFeedback(): string
-                    init(arg0: boolean, arg1: string, arg2: byte[], arg3: byte[]): void
-                    reset(): void
-                    save(): void
-                    restore(): void
-                    encrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    encryptFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    decrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    decryptFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                 }
                 class DESedeParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
@@ -1058,30 +828,10 @@ declare namespace com {
                     protected constructor(arg0: javax.crypto.CipherSpi, arg1: java.security.Provider, arg2: string)
                 }
                 class EncryptedPrivateKeyInfo {
-                    constructor(arg0: byte[])
-                    constructor(arg0: sun.security.x509.AlgorithmId, arg1: byte[])
-                    getAlgorithm(): sun.security.x509.AlgorithmId
-                    getEncryptedData(): byte[]
-                    getEncoded(): byte[]
                 }
                 class KeyProtector {
-                    constructor(arg0: char[])
-                    protect(arg0: java.security.PrivateKey): byte[]
-                    recover(arg0: com.sun.crypto.provider.EncryptedPrivateKeyInfo): java.security.Key
-                    seal(arg0: java.security.Key): javax.crypto.SealedObject
-                    unseal(arg0: javax.crypto.SealedObject): java.security.Key
                 }
                 class OutputFeedback extends com.sun.crypto.provider.FeedbackCipher {
-                    constructor(arg0: com.sun.crypto.provider.SymmetricCipher, arg1: int)
-                    getFeedback(): string
-                    init(arg0: boolean, arg1: string, arg2: byte[], arg3: byte[]): void
-                    reset(): void
-                    save(): void
-                    restore(): void
-                    encrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    encryptFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    decrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    decryptFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                 }
                 class PBEParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
@@ -1094,24 +844,14 @@ declare namespace com {
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 class SealedObjectForKeyProtector extends javax.crypto.SealedObject {
-                    static serialVersionUID: long
-                    constructor(arg0: java.io.Serializable, arg1: javax.crypto.Cipher)
-                    constructor(arg0: javax.crypto.SealedObject)
-                    getParameters(): java.security.AlgorithmParameters
                 }
                 class ConstructKeys {
-                    constructor()
-                    static constructKey(arg0: byte[], arg1: string, arg2: int): java.security.Key
                 }
                 class HmacSHA1 extends com.sun.crypto.provider.HmacCore {
                     public constructor()
                     public clone(): java.lang.Object
                 }
                 class DHPublicKey implements java.security.PublicKey , javax.crypto.interfaces.DHPublicKey , java.io.Serializable {
-                    static serialVersionUID: long
-                    constructor(arg0: java.math.BigInteger, arg1: java.math.BigInteger, arg2: java.math.BigInteger)
-                    constructor(arg0: java.math.BigInteger, arg1: java.math.BigInteger, arg2: java.math.BigInteger, arg3: int)
-                    constructor(arg0: byte[])
                     public getFormat(): string
                     public getAlgorithm(): string
                     public getEncoded(): byte[]
@@ -1122,8 +862,6 @@ declare namespace com {
                     public equals(arg0: java.lang.Object): boolean
                 }
                 class PBKDF2KeyImpl implements javax.crypto.interfaces.PBEKey {
-                    static serialVersionUID: long
-                    constructor(arg0: javax.crypto.spec.PBEKeySpec, arg1: string)
                     public getEncoded(): byte[]
                     public getAlgorithm(): string
                     public getIterationCount(): int
@@ -1135,9 +873,6 @@ declare namespace com {
                     protected finalize(): void
                 }
                 class PBKDF2KeyImpl$1 implements javax.crypto.SecretKey {
-                    val$prf: javax.crypto.Mac
-                    val$password: byte[]
-                    constructor(arg0: javax.crypto.Mac, arg1: byte[])
                     public getAlgorithm(): string
                     public getFormat(): string
                     public getEncoded(): byte[]
@@ -1145,7 +880,6 @@ declare namespace com {
                     public equals(arg0: java.lang.Object): boolean
                 }
                 abstract class PBKDF2Core extends javax.crypto.SecretKeyFactorySpi {
-                    constructor(arg0: string)
                     protected engineGenerateSecret(arg0: java.security.spec.KeySpec): javax.crypto.SecretKey
                     protected engineGetKeySpec(arg0: javax.crypto.SecretKey, arg1: java.lang.Class<any>): java.security.spec.KeySpec
                     protected engineTranslateKey(arg0: javax.crypto.SecretKey): javax.crypto.SecretKey
@@ -1166,7 +900,6 @@ declare namespace com {
                     public constructor()
                 }
                 abstract class PBMAC1Core extends com.sun.crypto.provider.HmacCore {
-                    constructor(arg0: string, arg1: string, arg2: int)
                     protected engineInit(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
                 }
                 class PBMAC1Core$HmacSHA512 extends com.sun.crypto.provider.PBMAC1Core {
@@ -1193,15 +926,6 @@ declare namespace com {
                     DES_BLOCK_SIZE: int
                 }
                 class DESCrypt extends com.sun.crypto.provider.SymmetricCipher implements com.sun.crypto.provider.DESConstants {
-                    expandedKey: byte[]
-                    decrypting: boolean
-                    constructor()
-                    getBlockSize(): int
-                    init(arg0: boolean, arg1: string, arg2: byte[]): void
-                    encryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
-                    decryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
-                    cipherBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
-                    expandKey(arg0: byte[]): void
                 }
                 class BlowfishKeyGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
@@ -1211,8 +935,6 @@ declare namespace com {
                     protected engineGenerateKey(): javax.crypto.SecretKey
                 }
                 class PBEKey implements javax.crypto.SecretKey {
-                    static serialVersionUID: long
-                    constructor(arg0: javax.crypto.spec.PBEKeySpec, arg1: string)
                     public getEncoded(): byte[]
                     public getAlgorithm(): string
                     public getFormat(): string
@@ -1226,7 +948,6 @@ declare namespace com {
                     padLength(arg0: int): int
                 }
                 class PKCS5Padding implements com.sun.crypto.provider.Padding {
-                    constructor(arg0: int)
                     public padWithLen(arg0: byte[], arg1: int, arg2: int): void
                     public unpad(arg0: byte[], arg1: int, arg2: int): int
                     public padLength(arg0: int): int
@@ -1247,14 +968,7 @@ declare namespace com {
                     protected engineTranslateKey(arg0: javax.crypto.SecretKey): javax.crypto.SecretKey
                 }
                 class BlockCipherParamsCore {
-                    constructor(arg0: int)
-                    init(arg0: java.security.spec.AlgorithmParameterSpec): void
-                    init(arg0: byte[]): void
-                    init(arg0: byte[], arg1: string): void
-                    getParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
-                    getEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
-                    getEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
-                    public toString<T extends java.security.spec.AlgorithmParameterSpec>(): string
+                    public toString(): string
                 }
                 class DESParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
@@ -1267,9 +981,6 @@ declare namespace com {
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 }
                 class DESKey implements javax.crypto.SecretKey {
-                    static serialVersionUID: long
-                    constructor(arg0: byte[])
-                    constructor(arg0: byte[], arg1: int)
                     public getEncoded(): byte[]
                     public getAlgorithm(): string
                     public getFormat(): string
@@ -1278,8 +989,6 @@ declare namespace com {
                     protected finalize(): void
                 }
                 abstract class PBES2Parameters extends java.security.AlgorithmParametersSpi {
-                    constructor()
-                    constructor(arg0: string)
                     protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec): void
                     protected engineInit(arg0: byte[]): void
                     protected engineInit(arg0: byte[], arg1: string): void
@@ -1322,45 +1031,12 @@ declare namespace com {
                     public constructor()
                 }
                 abstract class SymmetricCipher {
-                    constructor()
-                    getBlockSize(): int
-                    init(arg0: boolean, arg1: string, arg2: byte[]): void
-                    encryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
-                    decryptBlock(arg0: byte[], arg1: int, arg2: byte[], arg3: int): void
                 }
                 abstract class FeedbackCipher {
-                    embeddedCipher: com.sun.crypto.provider.SymmetricCipher
-                    blockSize: int
-                    iv: byte[]
-                    constructor(arg0: com.sun.crypto.provider.SymmetricCipher)
-                    getEmbeddedCipher(): com.sun.crypto.provider.SymmetricCipher
-                    getBlockSize(): int
-                    getFeedback(): string
-                    save(): void
-                    restore(): void
-                    init(arg0: boolean, arg1: string, arg2: byte[], arg3: byte[]): void
-                    getIV(): byte[]
-                    reset(): void
-                    encrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    encryptFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    decrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    decryptFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    updateAAD(arg0: byte[], arg1: int, arg2: int): void
-                    getBufferedLength(): int
                 }
                 class PCBC extends com.sun.crypto.provider.FeedbackCipher {
-                    constructor(arg0: com.sun.crypto.provider.SymmetricCipher)
-                    getFeedback(): string
-                    init(arg0: boolean, arg1: string, arg2: byte[], arg3: byte[]): void
-                    reset(): void
-                    save(): void
-                    restore(): void
-                    encrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
-                    decrypt(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                 }
                 abstract class HmacCore extends javax.crypto.MacSpi implements java.lang.Cloneable {
-                    constructor(arg0: java.security.MessageDigest, arg1: int)
-                    constructor(arg0: string, arg1: int)
                     protected engineGetMacLength(): int
                     protected engineInit(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
                     protected engineUpdate(arg0: byte): void

@@ -10,7 +10,6 @@ declare namespace sun {
             }
             namespace spec {
                 class TlsKeyMaterialSpec implements java.security.spec.KeySpec , javax.crypto.SecretKey {
-                    static serialVersionUID: long
                     public constructor(arg0: javax.crypto.SecretKey, arg1: javax.crypto.SecretKey)
                     public constructor(arg0: javax.crypto.SecretKey, arg1: javax.crypto.SecretKey, arg2: javax.crypto.SecretKey, arg3: javax.crypto.SecretKey)
                     public constructor(arg0: javax.crypto.SecretKey, arg1: javax.crypto.SecretKey, arg2: javax.crypto.SecretKey, arg3: javax.crypto.spec.IvParameterSpec, arg4: javax.crypto.SecretKey, arg5: javax.crypto.spec.IvParameterSpec)
@@ -50,13 +49,11 @@ declare namespace sun {
                     public getEncodedSecret(): byte[]
                 }
                 class TlsRsaPremasterSecretParameterSpec$1 implements java.security.PrivilegedAction<java.lang.Boolean> {
-                    constructor()
                     public run(): boolean
                     public run(): java.lang.Object
                 }
                 class TlsMasterSecretParameterSpec implements java.security.spec.AlgorithmParameterSpec {
                     public constructor(arg0: javax.crypto.SecretKey, arg1: int, arg2: int, arg3: byte[], arg4: byte[], arg5: string, arg6: int, arg7: int)
-                    static checkVersion(arg0: int): int
                     public getPremasterSecret(): javax.crypto.SecretKey
                     public getMajorVersion(): int
                     public getMinorVersion(): int
@@ -83,29 +80,12 @@ declare namespace sun {
 declare namespace javax {
     namespace crypto {
         class JceSecurity {
-            static RANDOM: java.security.SecureRandom
-            static getInstance(arg0: string, arg1: java.lang.Class<any>, arg2: string, arg3: string): sun.security.jca.GetInstance$Instance
-            static getInstance(arg0: string, arg1: java.lang.Class<any>, arg2: string, arg3: java.security.Provider): sun.security.jca.GetInstance$Instance
-            static getInstance(arg0: string, arg1: java.lang.Class<any>, arg2: string): sun.security.jca.GetInstance$Instance
-            static verifyExemptJar(arg0: java.net.URL): javax.crypto.CryptoPermissions
-            static verifyProviderJar(arg0: java.net.URL): void
-            static getVerificationResult(arg0: java.security.Provider): java.lang.Exception
-            static canUseProvider(arg0: java.security.Provider): boolean
-            static getCodeBase(arg0: java.lang.Class<any>): java.net.URL
-            static getDefaultPolicy(): javax.crypto.CryptoPermissions
-            static getExemptPolicy(): javax.crypto.CryptoPermissions
-            static isRestricted(): boolean
-            static access$000(): void
-            static access$100(): java.net.URL
         }
         class JceSecurity$2 implements java.security.PrivilegedAction<java.net.URL> {
-            val$clazz: java.lang.Class
-            constructor(arg0: java.lang.Class)
             public run(): java.net.URL
             public run(): java.lang.Object
         }
         class JceSecurity$1 implements java.security.PrivilegedExceptionAction<java.lang.Object> {
-            constructor()
             public run(): java.lang.Object
         }
         class EncryptedPrivateKeyInfo {
@@ -142,7 +122,6 @@ declare namespace javax {
             public markSupported(): boolean
         }
         class CryptoAllPermissionCollection extends java.security.PermissionCollection implements java.io.Serializable {
-            constructor()
             public add(arg0: java.security.Permission): void
             public implies(arg0: java.security.Permission): boolean
             public elements(): java.util.Enumeration<java.security.Permission>
@@ -159,7 +138,6 @@ declare namespace javax {
             public translateKey(arg0: javax.crypto.SecretKey): javax.crypto.SecretKey
         }
         class CryptoPermissionCollection extends java.security.PermissionCollection implements java.io.Serializable {
-            constructor()
             public add(arg0: java.security.Permission): void
             public implies(arg0: java.security.Permission): boolean
             public elements(): java.util.Enumeration<java.security.Permission>
@@ -168,13 +146,11 @@ declare namespace javax {
             public constructor()
         }
         class PermissionsEnumerator implements java.util.Enumeration<java.security.Permission> {
-            constructor(arg0: java.util.Enumeration<java.security.PermissionCollection>)
             public hasMoreElements(): boolean
             public nextElement(): java.security.Permission
             public nextElement(): java.lang.Object
         }
         class extObjectInputStream extends java.io.ObjectInputStream {
-            constructor(arg0: java.io.InputStream)
             protected resolveClass(arg0: java.io.ObjectStreamClass): java.lang.Class<any>
         }
         class NullCipherSpi extends javax.crypto.CipherSpi {
@@ -195,72 +171,35 @@ declare namespace javax {
             protected engineGetKeySize(arg0: java.security.Key): int
         }
         class CryptoAllPermission extends javax.crypto.CryptoPermission {
-            static ALG_NAME: string
-            static INSTANCE: javax.crypto.CryptoAllPermission
             public implies(arg0: java.security.Permission): boolean
             public equals(arg0: java.lang.Object): boolean
             public hashCode(): int
             public newPermissionCollection(): java.security.PermissionCollection
         }
         class JceSecurityManager extends java.lang.SecurityManager {
-            static INSTANCE: javax.crypto.JceSecurityManager
-            getCryptoPermission(arg0: string): javax.crypto.CryptoPermission
-            isCallerTrusted(): boolean
-            constructor(arg0: javax.crypto.JceSecurityManager$1)
         }
         class JceSecurityManager$1 implements java.security.PrivilegedAction<javax.crypto.JceSecurityManager> {
-            constructor()
             public run(): javax.crypto.JceSecurityManager
             public run(): java.lang.Object
         }
         class CryptoPolicyParser {
-            constructor()
-            read(arg0: java.io.Reader): void
-            getPermissions(): javax.crypto.CryptoPermission[]
         }
         class CryptoPolicyParser$ParsingException extends java.security.GeneralSecurityException {
-            constructor(arg0: string)
-            constructor(arg0: int, arg1: string)
-            constructor(arg0: int, arg1: string, arg2: string)
         }
         class CryptoPolicyParser$CryptoPermissionEntry {
-            cryptoPermission: string
-            alg: string
-            exemptionMechanism: string
-            maxKeySize: int
-            checkParam: boolean
-            algParamSpec: java.security.spec.AlgorithmParameterSpec
-            constructor()
             public hashCode(): int
             public equals(arg0: java.lang.Object): boolean
         }
         class CryptoPolicyParser$GrantEntry {
-            constructor()
-            add(arg0: javax.crypto.CryptoPolicyParser$CryptoPermissionEntry): void
-            remove(arg0: javax.crypto.CryptoPolicyParser$CryptoPermissionEntry): boolean
-            contains(arg0: javax.crypto.CryptoPolicyParser$CryptoPermissionEntry): boolean
-            permissionElements(): java.util.Enumeration<javax.crypto.CryptoPolicyParser$CryptoPermissionEntry>
         }
         class CryptoPermissions extends java.security.PermissionCollection implements java.io.Serializable {
-            constructor()
-            load(arg0: java.io.InputStream): void
-            isEmpty(): boolean
             public add(arg0: java.security.Permission): void
             public implies(arg0: java.security.Permission): boolean
             public elements(): java.util.Enumeration<java.security.Permission>
-            getMinimum(arg0: javax.crypto.CryptoPermissions): javax.crypto.CryptoPermissions
-            getPermissionCollection(arg0: string): java.security.PermissionCollection
         }
         class JarVerifier {
-            constructor(arg0: java.net.URL, arg1: boolean)
-            verify(): void
-            static verifyPolicySigned(arg0: java.security.cert.Certificate[]): void
-            getPermissions(): javax.crypto.CryptoPermissions
         }
         class JarVerifier$1 implements java.security.PrivilegedExceptionAction<java.util.jar.JarFile> {
-            val$url: java.net.URL
-            this$0: javax.crypto.JarVerifier
-            constructor(arg0: javax.crypto.JarVerifier, arg1: java.net.URL)
             public run(): java.util.jar.JarFile
             public run(): java.lang.Object
         }
@@ -271,7 +210,6 @@ declare namespace javax {
             public static getInstance(arg0: string, arg1: string): javax.crypto.KeyGenerator
             public static getInstance(arg0: string, arg1: java.security.Provider): javax.crypto.KeyGenerator
             public getProvider(): java.security.Provider
-            disableFailover(): void
             public init(arg0: java.security.SecureRandom): void
             public init(arg0: java.security.spec.AlgorithmParameterSpec): void
             public init(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
@@ -285,7 +223,6 @@ declare namespace javax {
             public static getInstance(arg0: string): javax.crypto.KeyAgreement
             public static getInstance(arg0: string, arg1: string): javax.crypto.KeyAgreement
             public static getInstance(arg0: string, arg1: java.security.Provider): javax.crypto.KeyAgreement
-            chooseFirstProvider(): void
             public getProvider(): java.security.Provider
             public init(arg0: java.security.Key): void
             public init(arg0: java.security.Key, arg1: java.security.SecureRandom): void
@@ -331,23 +268,11 @@ declare namespace javax {
             protected finalize(): void
         }
         class CryptoPermission extends java.security.Permission {
-            static ALG_NAME_WILDCARD: string
-            constructor(arg0: string)
-            constructor(arg0: string, arg1: int)
-            constructor(arg0: string, arg1: int, arg2: java.security.spec.AlgorithmParameterSpec)
-            constructor(arg0: string, arg1: string)
-            constructor(arg0: string, arg1: int, arg2: string)
-            constructor(arg0: string, arg1: int, arg2: java.security.spec.AlgorithmParameterSpec, arg3: string)
             public implies(arg0: java.security.Permission): boolean
             public equals(arg0: java.lang.Object): boolean
             public hashCode(): int
             public getActions(): string
             public newPermissionCollection(): java.security.PermissionCollection
-            getAlgorithm(): string
-            getExemptionMechanism(): string
-            getMaxKeySize(): int
-            getCheckParam(): boolean
-            getAlgorithmParameterSpec(): java.security.spec.AlgorithmParameterSpec
             public toString(): string
         }
         abstract class CipherSpi {
@@ -367,7 +292,6 @@ declare namespace javax {
             protected engineDoFinal(arg0: byte[], arg1: int, arg2: int): byte[]
             protected engineDoFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
             protected engineDoFinal(arg0: java.nio.ByteBuffer, arg1: java.nio.ByteBuffer): int
-            static getTempArraySize(arg0: int): int
             protected engineWrap(arg0: java.security.Key): byte[]
             protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
             protected engineGetKeySize(arg0: java.security.Key): int
@@ -383,11 +307,9 @@ declare namespace javax {
             public static PRIVATE_KEY: int
             public static SECRET_KEY: int
             protected constructor(arg0: javax.crypto.CipherSpi, arg1: java.security.Provider, arg2: string)
-            constructor(arg0: javax.crypto.CipherSpi, arg1: string)
             public static getInstance(arg0: string): javax.crypto.Cipher
             public static getInstance(arg0: string, arg1: string): javax.crypto.Cipher
             public static getInstance(arg0: string, arg1: java.security.Provider): javax.crypto.Cipher
-            chooseFirstProvider(): void
             public getProvider(): java.security.Provider
             public getAlgorithm(): string
             public getBlockSize(): int
@@ -424,18 +346,8 @@ declare namespace javax {
             public updateAAD(arg0: java.nio.ByteBuffer): void
         }
         class Cipher$Transform {
-            transform: string
-            suffix: string
-            mode: string
-            pad: string
-            constructor(arg0: string, arg1: string, arg2: string, arg3: string)
-            setModePadding(arg0: javax.crypto.CipherSpi): void
-            supportsModePadding(arg0: java.security.Provider$Service): int
-            supportsMode(arg0: java.security.Provider$Service): int
-            supportsPadding(arg0: java.security.Provider$Service): int
         }
         class SealedObject implements java.io.Serializable {
-            static serialVersionUID: long
             protected encodedParams: byte[]
             public constructor(arg0: java.io.Serializable, arg1: javax.crypto.Cipher)
             protected constructor(arg0: javax.crypto.SealedObject)
@@ -450,7 +362,6 @@ declare namespace javax {
             public static getInstance(arg0: string): javax.crypto.Mac
             public static getInstance(arg0: string, arg1: string): javax.crypto.Mac
             public static getInstance(arg0: string, arg1: java.security.Provider): javax.crypto.Mac
-            chooseFirstProvider(): void
             public getProvider(): java.security.Provider
             public getMacLength(): int
             public init(arg0: java.security.Key): void

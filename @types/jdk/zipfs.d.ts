@@ -3,18 +3,12 @@ declare namespace com {
         namespace nio {
             namespace zipfs {
                 class ZipFileAttributeView implements java.nio.file.attribute.BasicFileAttributeView {
-                    static get<V extends java.nio.file.attribute.FileAttributeView>(arg0: com.sun.nio.zipfs.ZipPath, arg1: java.lang.Class<V>): V
-                    static get(arg0: com.sun.nio.zipfs.ZipPath, arg1: string): com.sun.nio.zipfs.ZipFileAttributeView
                     public name(): string
                     public readAttributes(): com.sun.nio.zipfs.ZipFileAttributes
                     public setTimes(arg0: java.nio.file.attribute.FileTime, arg1: java.nio.file.attribute.FileTime, arg2: java.nio.file.attribute.FileTime): void
-                    setAttribute(arg0: string, arg1: java.lang.Object): void
-                    readAttributes(arg0: string): java.util.Map<java.lang.String, java.lang.Object>
-                    attribute(arg0: com.sun.nio.zipfs.ZipFileAttributeView$AttrID, arg1: com.sun.nio.zipfs.ZipFileAttributes): java.lang.Object
                     public readAttributes(): java.nio.file.attribute.BasicFileAttributes
                 }
                 class ZipFileAttributeView$1 {
-                    static $SwitchMap$com$sun$nio$zipfs$ZipFileAttributeView$AttrID: int[]
                 }
                 class ZipFileAttributeView$AttrID extends java.lang.Enum<com.sun.nio.zipfs.ZipFileAttributeView$AttrID> {
                     public static size: com.sun.nio.zipfs.ZipFileAttributeView$AttrID
@@ -33,7 +27,6 @@ declare namespace com {
                     public static valueOf(arg0: string): com.sun.nio.zipfs.ZipFileAttributeView$AttrID
                 }
                 class ZipFileStore extends java.nio.file.FileStore {
-                    constructor(arg0: com.sun.nio.zipfs.ZipPath)
                     public name(): string
                     public type(): string
                     public isReadOnly(): boolean
@@ -46,8 +39,6 @@ declare namespace com {
                     public getAttribute<V extends java.nio.file.attribute.FileStoreAttributeView>(arg0: string): java.lang.Object
                 }
                 class ZipFileStore$ZipFileStoreAttributes {
-                    fstore: java.nio.file.FileStore
-                    size: long
                     public constructor(arg0: com.sun.nio.zipfs.ZipFileStore)
                     public totalSpace(): long
                     public usableSpace(): long
@@ -62,14 +53,8 @@ declare namespace com {
                 class ZipInfo {
                     public constructor()
                     public static main(arg0: java.lang.String[]): void
-                    static print(arg0: string, ...arg1: java.lang.Object[]): void
-                    static printLOC(arg0: byte[]): void
-                    static printCEN(arg0: byte[], arg1: int): void
-                    static locoff(arg0: byte[], arg1: int): long
-                    static printExtra(arg0: byte[], arg1: int, arg2: int): void
                 }
                 class ZipFileAttributes implements java.nio.file.attribute.BasicFileAttributes {
-                    constructor(arg0: com.sun.nio.zipfs.ZipFileSystem$Entry)
                     public creationTime(): java.nio.file.attribute.FileTime
                     public isDirectory(): boolean
                     public isOther(): boolean
@@ -87,14 +72,6 @@ declare namespace com {
                     public toString(): string
                 }
                 class ZipCoder {
-                    toString(arg0: byte[], arg1: int): string
-                    toString(arg0: byte[]): string
-                    getBytes(arg0: string): byte[]
-                    getBytesUTF8(arg0: string): byte[]
-                    toStringUTF8(arg0: byte[], arg1: int): string
-                    isUTF8(): boolean
-                    static get(arg0: java.nio.charset.Charset): com.sun.nio.zipfs.ZipCoder
-                    static get(arg0: string): com.sun.nio.zipfs.ZipCoder
                 }
                 class ZipFileSystemProvider extends java.nio.file.spi.FileSystemProvider {
                     public constructor()
@@ -104,7 +81,6 @@ declare namespace com {
                     public newFileSystem(arg0: java.nio.file.Path, arg1: java.util.Map<java.lang.String, any>): java.nio.file.FileSystem
                     public getPath(arg0: java.net.URI): java.nio.file.Path
                     public getFileSystem(arg0: java.net.URI): java.nio.file.FileSystem
-                    static toZipPath(arg0: java.nio.file.Path): com.sun.nio.zipfs.ZipPath
                     public checkAccess(arg0: java.nio.file.Path, ...arg1: java.nio.file.AccessMode[]): void
                     public copy(arg0: java.nio.file.Path, arg1: java.nio.file.Path, ...arg2: java.nio.file.CopyOption[]): void
                     public createDirectory(arg0: java.nio.file.Path, ...arg1: java.nio.file.attribute.FileAttribute<any>[]): void
@@ -124,11 +100,8 @@ declare namespace com {
                     public readAttributes<A extends java.nio.file.attribute.BasicFileAttributes>(arg0: java.nio.file.Path, arg1: string, ...arg2: java.nio.file.LinkOption[]): java.util.Map<java.lang.String, java.lang.Object>
                     public readSymbolicLink<A extends java.nio.file.attribute.BasicFileAttributes>(arg0: java.nio.file.Path): java.nio.file.Path
                     public setAttribute<A extends java.nio.file.attribute.BasicFileAttributes>(arg0: java.nio.file.Path, arg1: string, arg2: java.lang.Object, ...arg3: java.nio.file.LinkOption[]): void
-                    removeFileSystem<A extends java.nio.file.attribute.BasicFileAttributes>(arg0: java.nio.file.Path, arg1: com.sun.nio.zipfs.ZipFileSystem): void
                 }
                 class ZipPath implements java.nio.file.Path {
-                    constructor(arg0: com.sun.nio.zipfs.ZipFileSystem, arg1: byte[])
-                    constructor(arg0: com.sun.nio.zipfs.ZipFileSystem, arg1: byte[], arg2: boolean)
                     public getRoot(): com.sun.nio.zipfs.ZipPath
                     public getFileName(): java.nio.file.Path
                     public getParent(): com.sun.nio.zipfs.ZipPath
@@ -136,7 +109,6 @@ declare namespace com {
                     public getName(arg0: int): com.sun.nio.zipfs.ZipPath
                     public subpath(arg0: int, arg1: int): com.sun.nio.zipfs.ZipPath
                     public toRealPath(...arg0: java.nio.file.LinkOption[]): com.sun.nio.zipfs.ZipPath
-                    isHidden(): boolean
                     public toAbsolutePath(): com.sun.nio.zipfs.ZipPath
                     public toUri(): java.net.URI
                     public relativize(arg0: java.nio.file.Path): java.nio.file.Path
@@ -151,7 +123,6 @@ declare namespace com {
                     public startsWith(arg0: string): boolean
                     public endsWith(arg0: string): boolean
                     public normalize(): java.nio.file.Path
-                    getResolvedPath(): byte[]
                     public toString(): string
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
@@ -160,24 +131,6 @@ declare namespace com {
                     public register(arg0: java.nio.file.WatchService, ...arg1: java.nio.file.WatchEvent$Kind<any>[]): java.nio.file.WatchKey
                     public toFile(): java.io.File
                     public iterator(): java.util.Iterator<java.nio.file.Path>
-                    createDirectory(...arg0: java.nio.file.attribute.FileAttribute<any>[]): void
-                    newInputStream(...arg0: java.nio.file.OpenOption[]): java.io.InputStream
-                    newDirectoryStream(arg0: java.nio.file.DirectoryStream$Filter<java.nio.file.Path> | java.nio.file.DirectoryStream$Filter<java.nio.file.Path>): java.nio.file.DirectoryStream<java.nio.file.Path>
-                    delete(): void
-                    deleteIfExists(): void
-                    getAttributes(): com.sun.nio.zipfs.ZipFileAttributes
-                    setAttribute(arg0: string, arg1: java.lang.Object, ...arg2: java.nio.file.LinkOption[]): void
-                    setTimes(arg0: java.nio.file.attribute.FileTime, arg1: java.nio.file.attribute.FileTime, arg2: java.nio.file.attribute.FileTime): void
-                    readAttributes(arg0: string, ...arg1: java.nio.file.LinkOption[]): java.util.Map<java.lang.String, java.lang.Object>
-                    getFileStore(): java.nio.file.FileStore
-                    isSameFile(arg0: java.nio.file.Path): boolean
-                    newByteChannel(arg0: java.util.Set<java.nio.file.OpenOption>, ...arg1: java.nio.file.attribute.FileAttribute<any>[]): java.nio.channels.SeekableByteChannel
-                    newFileChannel(arg0: java.util.Set<java.nio.file.OpenOption>, ...arg1: java.nio.file.attribute.FileAttribute<any>[]): java.nio.channels.FileChannel
-                    checkAccess(...arg0: java.nio.file.AccessMode[]): void
-                    exists(): boolean
-                    newOutputStream(...arg0: java.nio.file.OpenOption[]): java.io.OutputStream
-                    move(arg0: com.sun.nio.zipfs.ZipPath, ...arg1: java.nio.file.CopyOption[]): void
-                    copy(arg0: com.sun.nio.zipfs.ZipPath, ...arg1: java.nio.file.CopyOption[]): void
                     public toRealPath(arg0: java.nio.file.LinkOption[]): java.nio.file.Path
                     public toAbsolutePath(): java.nio.file.Path
                     public resolve(arg0: string): java.nio.file.Path
@@ -190,151 +143,48 @@ declare namespace com {
                     public compareTo(arg0: java.lang.Object): int
                 }
                 class ZipPath$2 {
-                    static $SwitchMap$java$nio$file$AccessMode: int[]
                 }
                 class ZipPath$1 implements java.util.Iterator<java.nio.file.Path> {
-                    this$0: com.sun.nio.zipfs.ZipPath
-                    constructor(arg0: com.sun.nio.zipfs.ZipPath)
                     public hasNext(): boolean
                     public next(): java.nio.file.Path
                     public remove(): void
                     public next(): java.lang.Object
                 }
                 class ZipFileSystem extends java.nio.file.FileSystem {
-                    cen: byte[]
-                    constructor(arg0: com.sun.nio.zipfs.ZipFileSystemProvider, arg1: java.nio.file.Path, arg2: java.util.Map<java.lang.String, any>)
                     public provider(): java.nio.file.spi.FileSystemProvider
                     public getSeparator(): string
                     public isOpen(): boolean
                     public isReadOnly(): boolean
                     public getRootDirectories(): java.lang.Iterable<java.nio.file.Path>
-                    getDefaultDir(): com.sun.nio.zipfs.ZipPath
                     public getPath(arg0: string, ...arg1: java.lang.String[]): com.sun.nio.zipfs.ZipPath
                     public getUserPrincipalLookupService(): java.nio.file.attribute.UserPrincipalLookupService
                     public newWatchService(): java.nio.file.WatchService
-                    getFileStore(arg0: com.sun.nio.zipfs.ZipPath): java.nio.file.FileStore
                     public getFileStores(): java.lang.Iterable<java.nio.file.FileStore>
                     public supportedFileAttributeViews(): java.util.Set<java.lang.String>
                     public toString(): string
-                    getZipFile(): java.nio.file.Path
                     public getPathMatcher(arg0: string): java.nio.file.PathMatcher
                     public close(): void
-                    getFileAttributes(arg0: byte[]): com.sun.nio.zipfs.ZipFileAttributes
-                    setTimes(arg0: byte[], arg1: java.nio.file.attribute.FileTime, arg2: java.nio.file.attribute.FileTime, arg3: java.nio.file.attribute.FileTime): void
-                    exists(arg0: byte[]): boolean
-                    isDirectory(arg0: byte[]): boolean
-                    iteratorOf(arg0: byte[], arg1: java.nio.file.DirectoryStream$Filter<java.nio.file.Path> | java.nio.file.DirectoryStream$Filter<java.nio.file.Path>): java.util.Iterator<java.nio.file.Path>
-                    createDirectory(arg0: byte[], ...arg1: java.nio.file.attribute.FileAttribute<any>[]): void
-                    copyFile(arg0: boolean, arg1: byte[], arg2: byte[], ...arg3: java.nio.file.CopyOption[]): void
-                    newOutputStream(arg0: byte[], ...arg1: java.nio.file.OpenOption[]): java.io.OutputStream
-                    newInputStream(arg0: byte[]): java.io.InputStream
-                    newByteChannel(arg0: byte[], arg1: java.util.Set<java.nio.file.OpenOption>, ...arg2: java.nio.file.attribute.FileAttribute<any>[]): java.nio.channels.SeekableByteChannel
-                    newFileChannel(arg0: byte[], arg1: java.util.Set<java.nio.file.OpenOption>, ...arg2: java.nio.file.attribute.FileAttribute<any>[]): java.nio.channels.FileChannel
-                    getBytes(arg0: string): byte[]
-                    getString(arg0: byte[]): string
                     protected finalize(): void
-                    readFullyAt(arg0: byte[], arg1: int, arg2: long, arg3: long): long
                     public deleteFile(arg0: byte[], arg1: boolean): void
-                    static zerror(arg0: string): void
                     public getPath(arg0: string, arg1: java.lang.String[]): java.nio.file.Path
-                    static access$000(arg0: com.sun.nio.zipfs.ZipFileSystem, arg1: com.sun.nio.zipfs.ZipFileSystem$Entry): void
-                    static access$100(arg0: com.sun.nio.zipfs.ZipFileSystem, arg1: java.nio.file.Path): void
-                    static access$200(arg0: com.sun.nio.zipfs.ZipFileSystem, arg1: java.util.zip.Inflater): void
-                    static access$300(arg0: com.sun.nio.zipfs.ZipFileSystem): java.util.Set
-                    static access$400(arg0: com.sun.nio.zipfs.ZipFileSystem, arg1: com.sun.nio.zipfs.ZipFileSystem$Entry): long
-                    static access$500(arg0: com.sun.nio.zipfs.ZipFileSystem): void
-                    static access$600(arg0: com.sun.nio.zipfs.ZipFileSystem): java.util.zip.Deflater
-                    static access$700(arg0: com.sun.nio.zipfs.ZipFileSystem, arg1: java.util.zip.Deflater): void
-                    static access$800(): boolean
-                    static access$900(arg0: com.sun.nio.zipfs.ZipFileSystem, arg1: byte[]): com.sun.nio.zipfs.ZipFileSystem$Entry
                 }
                 class ZipFileSystem$ExChannelCloser {
-                    path: java.nio.file.Path
-                    ch: java.nio.channels.SeekableByteChannel
-                    streams: java.util.Set<java.io.InputStream>
-                    constructor(arg0: java.nio.file.Path, arg1: java.nio.channels.SeekableByteChannel, arg2: java.util.Set<java.io.InputStream>)
                 }
                 class ZipFileSystem$Entry extends com.sun.nio.zipfs.ZipFileSystem$IndexNode {
-                    static CEN: int
-                    static NEW: int
-                    static FILECH: int
-                    static COPY: int
-                    bytes: byte[]
-                    file: java.nio.file.Path
-                    type: int
-                    version: int
-                    flag: int
-                    method: int
-                    mtime: long
-                    atime: long
-                    ctime: long
-                    crc: long
-                    csize: long
-                    size: long
-                    extra: byte[]
-                    versionMade: int
-                    disk: int
-                    attrs: int
-                    attrsEx: long
-                    locoff: long
-                    comment: byte[]
-                    static $assertionsDisabled: boolean
-                    constructor()
-                    constructor(arg0: byte[])
-                    constructor(arg0: byte[], arg1: int)
-                    constructor(arg0: com.sun.nio.zipfs.ZipFileSystem$Entry, arg1: int)
-                    constructor(arg0: byte[], arg1: java.nio.file.Path, arg2: int)
-                    version(): int
-                    static readCEN(arg0: com.sun.nio.zipfs.ZipFileSystem, arg1: int): com.sun.nio.zipfs.ZipFileSystem$Entry
-                    writeCEN(arg0: java.io.OutputStream): int
-                    static readLOC(arg0: com.sun.nio.zipfs.ZipFileSystem, arg1: long): com.sun.nio.zipfs.ZipFileSystem$Entry
-                    static readLOC(arg0: com.sun.nio.zipfs.ZipFileSystem, arg1: long, arg2: byte[]): com.sun.nio.zipfs.ZipFileSystem$Entry
-                    loc(arg0: com.sun.nio.zipfs.ZipFileSystem, arg1: long, arg2: byte[]): com.sun.nio.zipfs.ZipFileSystem$Entry
-                    writeLOC(arg0: java.io.OutputStream): int
-                    writeEXT(arg0: java.io.OutputStream): int
-                    readExtra(arg0: com.sun.nio.zipfs.ZipFileSystem): void
                 }
                 class ZipFileSystem$IndexNode {
-                    name: byte[]
-                    hashcode: int
-                    pos: int
-                    sibling: com.sun.nio.zipfs.ZipFileSystem$IndexNode
-                    child: com.sun.nio.zipfs.ZipFileSystem$IndexNode
-                    constructor(arg0: byte[], arg1: int)
-                    static keyOf(arg0: byte[]): com.sun.nio.zipfs.ZipFileSystem$IndexNode
-                    name(arg0: byte[]): void
-                    as(arg0: byte[]): com.sun.nio.zipfs.ZipFileSystem$IndexNode
-                    isDir(): boolean
                     public equals(arg0: java.lang.Object): boolean
                     public hashCode(): int
-                    constructor()
                 }
                 class ZipFileSystem$END {
-                    disknum: int
-                    sdisknum: int
-                    endsub: int
-                    centot: int
-                    cenlen: long
-                    cenoff: long
-                    comlen: int
-                    comment: byte[]
-                    diskNum: int
-                    endpos: long
-                    disktot: int
-                    constructor()
-                    write(arg0: java.io.OutputStream, arg1: long): void
                 }
                 class ZipFileSystem$EntryOutputStream extends java.util.zip.DeflaterOutputStream {
-                    this$0: com.sun.nio.zipfs.ZipFileSystem
-                    constructor(arg0: com.sun.nio.zipfs.ZipFileSystem, arg1: com.sun.nio.zipfs.ZipFileSystem$Entry, arg2: java.io.OutputStream)
                     public write(arg0: byte[], arg1: int, arg2: int): void
                     public close(): void
                 }
                 class ZipFileSystem$EntryInputStream extends java.io.InputStream {
                     protected rem: long
                     protected size: long
-                    this$0: com.sun.nio.zipfs.ZipFileSystem
-                    constructor(arg0: com.sun.nio.zipfs.ZipFileSystem, arg1: com.sun.nio.zipfs.ZipFileSystem$Entry, arg2: java.nio.channels.SeekableByteChannel)
                     public read(arg0: byte[], arg1: int, arg2: int): int
                     public read(): int
                     public skip(arg0: long): long
@@ -343,21 +193,11 @@ declare namespace com {
                     public close(): void
                 }
                 class ZipFileSystem$5 extends java.util.zip.InflaterInputStream {
-                    val$size: long
-                    this$0: com.sun.nio.zipfs.ZipFileSystem
-                    constructor(arg0: com.sun.nio.zipfs.ZipFileSystem, arg1: java.io.InputStream, arg2: java.util.zip.Inflater, arg3: int, arg4: long)
                     public close(): void
                     protected fill(): void
                     public available(): int
                 }
                 class ZipFileSystem$4 extends java.nio.channels.FileChannel {
-                    val$fch: java.nio.channels.FileChannel
-                    val$forWrite: boolean
-                    val$u: com.sun.nio.zipfs.ZipFileSystem$Entry
-                    val$isFCH: boolean
-                    val$tmpfile: java.nio.file.Path
-                    this$0: com.sun.nio.zipfs.ZipFileSystem
-                    constructor(arg0: com.sun.nio.zipfs.ZipFileSystem, arg1: java.nio.channels.FileChannel, arg2: boolean, arg3: com.sun.nio.zipfs.ZipFileSystem$Entry, arg4: boolean, arg5: java.nio.file.Path)
                     public write(arg0: java.nio.ByteBuffer): int
                     public write(arg0: java.nio.ByteBuffer[], arg1: int, arg2: int): long
                     public position(): long
@@ -379,11 +219,6 @@ declare namespace com {
                     public position(arg0: long): java.nio.channels.SeekableByteChannel
                 }
                 class ZipFileSystem$3 implements java.nio.channels.SeekableByteChannel {
-                    read: long
-                    val$rbc: java.nio.channels.ReadableByteChannel
-                    val$size: long
-                    this$0: com.sun.nio.zipfs.ZipFileSystem
-                    constructor(arg0: com.sun.nio.zipfs.ZipFileSystem, arg1: java.nio.channels.ReadableByteChannel, arg2: long)
                     public isOpen(): boolean
                     public position(): long
                     public position(arg0: long): java.nio.channels.SeekableByteChannel
@@ -394,11 +229,6 @@ declare namespace com {
                     public close(): void
                 }
                 class ZipFileSystem$2 implements java.nio.channels.SeekableByteChannel {
-                    written: long
-                    val$offset: long
-                    val$wbc: java.nio.channels.WritableByteChannel
-                    this$0: com.sun.nio.zipfs.ZipFileSystem
-                    constructor(arg0: com.sun.nio.zipfs.ZipFileSystem, arg1: long, arg2: java.nio.channels.WritableByteChannel)
                     public isOpen(): boolean
                     public position(): long
                     public position(arg0: long): java.nio.channels.SeekableByteChannel
@@ -409,13 +239,9 @@ declare namespace com {
                     public close(): void
                 }
                 class ZipFileSystem$1 implements java.nio.file.PathMatcher {
-                    val$pattern: java.util.regex.Pattern
-                    this$0: com.sun.nio.zipfs.ZipFileSystem
-                    constructor(arg0: com.sun.nio.zipfs.ZipFileSystem, arg1: java.util.regex.Pattern)
                     public matches(arg0: java.nio.file.Path): boolean
                 }
                 class ZipUtils {
-                    constructor()
                     public static writeShort(arg0: java.io.OutputStream, arg1: int): void
                     public static writeInt(arg0: java.io.OutputStream, arg1: long): void
                     public static writeLong(arg0: java.io.OutputStream, arg1: long): void
@@ -431,144 +257,12 @@ declare namespace com {
                     public static toRegexPattern(arg0: string): string
                 }
                 class ZipConstants {
-                    static METHOD_STORED: int
-                    static METHOD_DEFLATED: int
-                    static METHOD_DEFLATED64: int
-                    static METHOD_BZIP2: int
-                    static METHOD_LZMA: int
-                    static METHOD_LZ77: int
-                    static METHOD_AES: int
-                    static FLAG_ENCRYPTED: int
-                    static FLAG_DATADESCR: int
-                    static FLAG_EFS: int
-                    static LOCSIG: long
-                    static EXTSIG: long
-                    static CENSIG: long
-                    static ENDSIG: long
-                    static LOCHDR: int
-                    static EXTHDR: int
-                    static CENHDR: int
-                    static ENDHDR: int
-                    static LOCVER: int
-                    static LOCFLG: int
-                    static LOCHOW: int
-                    static LOCTIM: int
-                    static LOCCRC: int
-                    static LOCSIZ: int
-                    static LOCLEN: int
-                    static LOCNAM: int
-                    static LOCEXT: int
-                    static EXTCRC: int
-                    static EXTSIZ: int
-                    static EXTLEN: int
-                    static CENVEM: int
-                    static CENVER: int
-                    static CENFLG: int
-                    static CENHOW: int
-                    static CENTIM: int
-                    static CENCRC: int
-                    static CENSIZ: int
-                    static CENLEN: int
-                    static CENNAM: int
-                    static CENEXT: int
-                    static CENCOM: int
-                    static CENDSK: int
-                    static CENATT: int
-                    static CENATX: int
-                    static CENOFF: int
-                    static ENDSUB: int
-                    static ENDTOT: int
-                    static ENDSIZ: int
-                    static ENDOFF: int
-                    static ENDCOM: int
-                    static ZIP64_ENDSIG: long
-                    static ZIP64_LOCSIG: long
-                    static ZIP64_ENDHDR: int
-                    static ZIP64_LOCHDR: int
-                    static ZIP64_EXTHDR: int
-                    static ZIP64_EXTID: int
-                    static ZIP64_MINVAL32: int
-                    static ZIP64_MINVAL: long
-                    static ZIP64_ENDLEN: int
-                    static ZIP64_ENDVEM: int
-                    static ZIP64_ENDVER: int
-                    static ZIP64_ENDNMD: int
-                    static ZIP64_ENDDSK: int
-                    static ZIP64_ENDTOD: int
-                    static ZIP64_ENDTOT: int
-                    static ZIP64_ENDSIZ: int
-                    static ZIP64_ENDOFF: int
-                    static ZIP64_ENDEXT: int
-                    static ZIP64_LOCDSK: int
-                    static ZIP64_LOCOFF: int
-                    static ZIP64_LOCTOT: int
-                    static ZIP64_EXTCRC: int
-                    static ZIP64_EXTSIZ: int
-                    static ZIP64_EXTLEN: int
-                    static EXTID_ZIP64: int
-                    static EXTID_NTFS: int
-                    static EXTID_UNIX: int
-                    static EXTID_EFS: int
-                    static EXTID_EXTT: int
-                    static END_MAXLEN: long
-                    static READBLOCKSZ: int
-                    constructor()
-                    static CH(arg0: byte[], arg1: int): int
-                    static SH(arg0: byte[], arg1: int): int
-                    static LG(arg0: byte[], arg1: int): long
-                    static LL(arg0: byte[], arg1: int): long
-                    static GETSIG(arg0: byte[]): long
-                    static LOCSIG(arg0: byte[]): long
-                    static LOCVER(arg0: byte[]): int
-                    static LOCFLG(arg0: byte[]): int
-                    static LOCHOW(arg0: byte[]): int
-                    static LOCTIM(arg0: byte[]): long
-                    static LOCCRC(arg0: byte[]): long
-                    static LOCSIZ(arg0: byte[]): long
-                    static LOCLEN(arg0: byte[]): long
-                    static LOCNAM(arg0: byte[]): int
-                    static LOCEXT(arg0: byte[]): int
-                    static EXTCRC(arg0: byte[]): long
-                    static EXTSIZ(arg0: byte[]): long
-                    static EXTLEN(arg0: byte[]): long
-                    static ENDSUB(arg0: byte[]): int
-                    static ENDTOT(arg0: byte[]): int
-                    static ENDSIZ(arg0: byte[]): long
-                    static ENDOFF(arg0: byte[]): long
-                    static ENDCOM(arg0: byte[]): int
-                    static ENDCOM(arg0: byte[], arg1: int): int
-                    static ZIP64_ENDTOD(arg0: byte[]): long
-                    static ZIP64_ENDTOT(arg0: byte[]): long
-                    static ZIP64_ENDSIZ(arg0: byte[]): long
-                    static ZIP64_ENDOFF(arg0: byte[]): long
-                    static ZIP64_LOCOFF(arg0: byte[]): long
-                    static CENSIG(arg0: byte[], arg1: int): long
-                    static CENVEM(arg0: byte[], arg1: int): int
-                    static CENVER(arg0: byte[], arg1: int): int
-                    static CENFLG(arg0: byte[], arg1: int): int
-                    static CENHOW(arg0: byte[], arg1: int): int
-                    static CENTIM(arg0: byte[], arg1: int): long
-                    static CENCRC(arg0: byte[], arg1: int): long
-                    static CENSIZ(arg0: byte[], arg1: int): long
-                    static CENLEN(arg0: byte[], arg1: int): long
-                    static CENNAM(arg0: byte[], arg1: int): int
-                    static CENEXT(arg0: byte[], arg1: int): int
-                    static CENCOM(arg0: byte[], arg1: int): int
-                    static CENDSK(arg0: byte[], arg1: int): int
-                    static CENATT(arg0: byte[], arg1: int): int
-                    static CENATX(arg0: byte[], arg1: int): long
-                    static CENOFF(arg0: byte[], arg1: int): long
                 }
                 class ZipDirectoryStream implements java.nio.file.DirectoryStream<java.nio.file.Path> {
-                    constructor(arg0: com.sun.nio.zipfs.ZipPath, arg1: java.nio.file.DirectoryStream$Filter<java.nio.file.Path> | java.nio.file.DirectoryStream$Filter<java.nio.file.Path>)
                     public iterator(): java.util.Iterator<java.nio.file.Path>
                     public close(): void
-                    static access$000(arg0: com.sun.nio.zipfs.ZipDirectoryStream): boolean
-                    static access$100(arg0: com.sun.nio.zipfs.ZipDirectoryStream): java.util.Iterator
                 }
                 class ZipDirectoryStream$1 implements java.util.Iterator<java.nio.file.Path> {
-                    this$0: com.sun.nio.zipfs.ZipDirectoryStream
-                    constructor(arg0: com.sun.nio.zipfs.ZipDirectoryStream)
                     public hasNext(): boolean
                     public next(): java.nio.file.Path
                     public remove(): void

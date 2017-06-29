@@ -3,23 +3,8 @@ declare namespace sun {
         namespace cs {
             namespace ext {
                 class EUC_TWMapping {
-                    static b1Min: int
-                    static b1Max: int
-                    static b2Min: int
-                    static b2Max: int
-                    static b2c: java.lang.String[]
-                    static C2BSIZE: int
-                    static c2bIndex: char[]
-                    static C2BSUPPSIZE: int
-                    static c2bSuppIndex: char[]
-                    static b2cIsSuppStr: string
-                    constructor()
                 }
                 class HKSCSMapping {
-                    static b2cBmpStr: java.lang.String[]
-                    static b2cSuppStr: java.lang.String[]
-                    static pua: string
-                    constructor()
                 }
                 class IBM037 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
@@ -183,10 +168,6 @@ declare namespace sun {
                     public newEncoder(): java.nio.charset.CharsetEncoder
                 }
                 class HKSCS_XPMapping {
-                    static b2cBmpStr: java.lang.String[]
-                    static b2cSuppStr: java.lang.String[]
-                    static pua: string
-                    constructor()
                 }
                 class IBM273 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
@@ -336,19 +317,11 @@ declare namespace sun {
                     public newEncoder(): java.nio.charset.CharsetEncoder
                 }
                 class Big5 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class IBM870 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
@@ -463,10 +436,6 @@ declare namespace sun {
                     public newEncoder(): java.nio.charset.CharsetEncoder
                 }
                 class HKSCS2001Mapping {
-                    static b2cBmpStr: java.lang.String[]
-                    static b2cSuppStr: java.lang.String[]
-                    static pua: string
-                    constructor()
                 }
                 class MacCentralEurope extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
@@ -567,484 +536,228 @@ declare namespace sun {
                     public newEncoder(): java.nio.charset.CharsetEncoder
                 }
                 class Johab extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class EUC_CN extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class EUC_KR extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class MS932 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class MS936 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class MS949 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class MS950 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class GBK extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class SJIS extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class PCK extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class IBM1364 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class IBM1381 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class IBM1383 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class IBM300 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class IBM930 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class IBM933 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class IBM935 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class IBM937 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class IBM939 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class IBM942 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class IBM943 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class IBM948 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class IBM949 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class IBM950 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class IBM970 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class JIS_X_0208 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class JIS_X_0212 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class JIS_X_0208_Solaris extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class JIS_X_0208_MS5022X extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class JIS_X_0208_MS932 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class JIS_X_0212_Solaris extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class JIS_X_0212_MS5022X extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSBStr: string
-                    static b2cStr: java.lang.String[]
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
                 class COMPOUND_TEXT_Encoder extends java.nio.charset.CharsetEncoder {
                     public constructor(arg0: java.nio.charset.Charset)
@@ -1072,25 +785,10 @@ declare namespace sun {
                     protected implReplaceWith(arg0: string): void
                 }
                 class CompoundTextSupport {
-                    static MAX_CONTROL_SEQUENCE_LEN: int
-                    static getStandardDecoder(arg0: byte[]): java.nio.charset.CharsetDecoder
-                    static getHighBit(arg0: byte[]): boolean
-                    static getNonStandardDecoder(arg0: byte[], arg1: byte[]): java.nio.charset.CharsetDecoder
-                    static getDecoder(arg0: string): java.nio.charset.CharsetDecoder
-                    static getEscapeSequence(arg0: string): byte[]
-                    static getEncoding(arg0: string): byte[]
-                    static getEncodings(): java.util.List<java.lang.String>
-                    static getEncoder(arg0: string): java.nio.charset.CharsetEncoder
                 }
                 class CompoundTextSupport$ControlSequence {
-                    hash: int
-                    escSequence: byte[]
-                    encoding: byte[]
-                    constructor(arg0: byte[])
-                    constructor(arg0: byte[], arg1: byte[])
                     public equals(arg0: java.lang.Object): boolean
                     public hashCode(): int
-                    concatenate(arg0: sun.nio.cs.ext.CompoundTextSupport$ControlSequence): sun.nio.cs.ext.CompoundTextSupport$ControlSequence
                 }
                 class JISAutoDetect extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
@@ -1104,7 +802,6 @@ declare namespace sun {
                     public static canBeSJIS1B(arg0: int): boolean
                     public static canBeEUCJP(arg0: int): boolean
                     public static canBeEUCKana(arg0: int, arg1: int): boolean
-                    static access$200(arg0: java.nio.CharBuffer): boolean
                 }
                 class JISAutoDetect$Decoder extends java.nio.charset.CharsetDecoder {
                     public constructor(arg0: java.nio.charset.Charset)
@@ -1114,8 +811,6 @@ declare namespace sun {
                     public isAutoDetecting(): boolean
                     public isCharsetDetected(): boolean
                     public detectedCharset(): java.nio.charset.Charset
-                    static access$000(): byte[]
-                    static access$100(): byte[]
                 }
                 class ISO2022_CN_CNS extends sun.nio.cs.ext.ISO2022 implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
@@ -1138,12 +833,8 @@ declare namespace sun {
                 class Big5_HKSCS_2001$1 {
                 }
                 class Big5_HKSCS_2001$Encoder extends sun.nio.cs.ext.HKSCS$Encoder {
-                    static c2bBmp: char[][]
-                    static c2bSupp: char[][]
-                    constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.Big5_HKSCS_2001$1)
                 }
                 class Big5_HKSCS_2001$Decoder extends sun.nio.cs.ext.HKSCS$Decoder {
-                    constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.Big5_HKSCS_2001$1)
                 }
                 class MS932_0213 extends java.nio.charset.Charset {
                     public constructor()
@@ -1152,19 +843,14 @@ declare namespace sun {
                     public newEncoder(): java.nio.charset.CharsetEncoder
                 }
                 class MS932_0213$Encoder extends sun.nio.cs.ext.SJIS_0213$Encoder {
-                    static encMS932: sun.nio.cs.ext.DoubleByte$Encoder
                     protected constructor(arg0: java.nio.charset.Charset)
                     protected encodeChar(arg0: char): int
                 }
                 class MS932_0213$Decoder extends sun.nio.cs.ext.SJIS_0213$Decoder {
-                    static decMS932: sun.nio.cs.ext.DoubleByte$Decoder
                     protected constructor(arg0: java.nio.charset.Charset)
                     protected decodeDouble(arg0: int, arg1: int): char
                 }
                 class IBM949C extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
@@ -1177,22 +863,16 @@ declare namespace sun {
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static access$200(): char[]
-                    static access$300(): byte[]
                 }
                 class ISCII91$1 {
                 }
                 class ISCII91$Encoder extends java.nio.charset.CharsetEncoder {
-                    static $assertionsDisabled: boolean
                     public canEncode(arg0: char): boolean
                     protected encodeLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
-                    constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.ISCII91$1)
                 }
                 class ISCII91$Decoder extends java.nio.charset.CharsetDecoder {
-                    static $assertionsDisabled: boolean
                     protected implFlush(arg0: java.nio.CharBuffer): java.nio.charset.CoderResult
                     protected decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
-                    constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.ISCII91$1)
                 }
                 class MS950_HKSCS extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
@@ -1204,12 +884,8 @@ declare namespace sun {
                 class MS950_HKSCS$1 {
                 }
                 class MS950_HKSCS$Encoder extends sun.nio.cs.ext.HKSCS$Encoder {
-                    static c2bBmp: char[][]
-                    static c2bSupp: char[][]
-                    constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.MS950_HKSCS$1)
                 }
                 class MS950_HKSCS$Decoder extends sun.nio.cs.ext.HKSCS$Decoder {
-                    constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.MS950_HKSCS$1)
                 }
                 class ISO2022_CN extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
@@ -1220,8 +896,6 @@ declare namespace sun {
                     public canEncode(): boolean
                 }
                 class ISO2022_CN$Decoder extends java.nio.charset.CharsetDecoder {
-                    static $assertionsDisabled: boolean
-                    constructor(arg0: java.nio.charset.Charset)
                     protected implReset(): void
                     protected decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
                 }
@@ -1236,16 +910,11 @@ declare namespace sun {
                 }
                 class EUC_JP_Open$Encoder extends sun.nio.cs.ext.EUC_JP$Encoder {
                     protected encodeDouble(arg0: char): int
-                    constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.EUC_JP_Open$1)
                 }
                 class EUC_JP_Open$Decoder extends sun.nio.cs.ext.EUC_JP$Decoder {
                     protected decodeDouble(arg0: int, arg1: int): char
-                    constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.EUC_JP_Open$1)
                 }
                 class IBM943C extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
@@ -1260,35 +929,16 @@ declare namespace sun {
                     public newEncoder(): java.nio.charset.CharsetEncoder
                 }
                 class EUC_TW$Encoder extends java.nio.charset.CharsetEncoder {
-                    static c2b: char[]
-                    static c2bIndex: char[]
-                    static c2bSupp: char[]
-                    static c2bSuppIndex: char[]
-                    static c2bPlane: byte[]
                     public constructor(arg0: java.nio.charset.Charset)
                     public canEncode(arg0: char): boolean
                     public canEncode(arg0: java.lang.CharSequence): boolean
                     public toEUC(arg0: char, arg1: char, arg2: byte[]): int
                     public toEUC(arg0: char, arg1: byte[]): int
                     protected encodeLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
-                    static encode(arg0: char, arg1: char, arg2: byte[]): int
-                    static encode(arg0: char, arg1: byte[]): int
                 }
                 class EUC_TW$Decoder extends java.nio.charset.CharsetDecoder {
-                    c1: char[]
-                    c2: char[]
-                    static b2c: java.lang.String[]
-                    static b1Min: int
-                    static b1Max: int
-                    static b2Min: int
-                    static b2Max: int
-                    static dbSegSize: int
-                    static b2cIsSupp: byte[]
-                    static cnspToIndex: byte[]
                     public constructor(arg0: java.nio.charset.Charset)
                     public toUnicode(arg0: int, arg1: int, arg2: int): char[]
-                    static isLegalDB(arg0: int): boolean
-                    static decode(arg0: int, arg1: int, arg2: int, arg3: char[], arg4: char[]): char[]
                     protected decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
                 }
                 class Big5_HKSCS extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
@@ -1301,12 +951,8 @@ declare namespace sun {
                 class Big5_HKSCS$1 {
                 }
                 class Big5_HKSCS$Encoder extends sun.nio.cs.ext.HKSCS$Encoder {
-                    static c2bBmp: char[][]
-                    static c2bSupp: char[][]
-                    constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.Big5_HKSCS$1)
                 }
                 class Big5_HKSCS$Decoder extends sun.nio.cs.ext.HKSCS$Decoder {
-                    constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.Big5_HKSCS$1)
                 }
                 class IBM834 extends java.nio.charset.Charset {
                     public constructor()
@@ -1341,7 +987,6 @@ declare namespace sun {
                     public constructor(arg0: java.nio.charset.Charset)
                 }
                 class IBM33722$Decoder extends java.nio.charset.CharsetDecoder {
-                    static $assertionsDisabled: boolean
                     public constructor(arg0: java.nio.charset.Charset)
                     protected decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
                 }
@@ -1372,9 +1017,6 @@ declare namespace sun {
                     protected doSBKANA(): boolean
                 }
                 class IBM942C extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
@@ -1382,7 +1024,6 @@ declare namespace sun {
                     public newEncoder(): java.nio.charset.CharsetEncoder
                 }
                 class SJIS_0213 extends java.nio.charset.Charset {
-                    static mapping: sun.nio.cs.CharsetMapping
                     public constructor()
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
@@ -1391,7 +1032,6 @@ declare namespace sun {
                 class SJIS_0213$Encoder extends java.nio.charset.CharsetEncoder {
                     protected static UNMAPPABLE: int
                     protected static MAX_SINGLEBYTE: int
-                    leftoverBase: char
                     protected constructor(arg0: java.nio.charset.Charset)
                     public canEncode(arg0: char): boolean
                     protected encodeChar(arg0: char): int
@@ -1413,37 +1053,26 @@ declare namespace sun {
                     protected decodeDoubleEx(arg0: int, arg1: int): char[]
                 }
                 class SJIS_0213$1 implements java.security.PrivilegedAction<sun.nio.cs.CharsetMapping> {
-                    constructor()
                     public run(): sun.nio.cs.CharsetMapping
                     public run(): java.lang.Object
                 }
                 class GB18030 extends java.nio.charset.Charset {
-                    static decoderIndex2: java.lang.String[]
-                    static index1: short[]
-                    static index2: java.lang.String[]
-                    static encoderIndex2: java.lang.String[]
                     public constructor()
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static access$200(): short[]
-                    static access$300(): short[]
                 }
                 class GB18030$1 {
                 }
                 class GB18030$Encoder extends java.nio.charset.CharsetEncoder {
-                    static $assertionsDisabled: boolean
                     public canEncode(arg0: char): boolean
                     protected implReset(): void
                     protected encodeLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
-                    constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.GB18030$1)
                 }
                 class GB18030$Decoder extends java.nio.charset.CharsetDecoder {
-                    static $assertionsDisabled: boolean
                     protected decodeDouble(arg0: int, arg1: int): char
                     protected implReset(): void
                     protected decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
-                    constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.GB18030$1)
                 }
                 class ISO2022_KR extends sun.nio.cs.ext.ISO2022 implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
@@ -1451,7 +1080,6 @@ declare namespace sun {
                     public historicalName(): string
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static access$000(): java.nio.charset.Charset
                 }
                 class ISO2022_KR$Encoder extends sun.nio.cs.ext.ISO2022$Encoder {
                     public constructor(arg0: java.nio.charset.Charset)
@@ -1468,14 +1096,11 @@ declare namespace sun {
                     public newEncoder(): java.nio.charset.CharsetEncoder
                 }
                 class MSISO2022JP$CoderHolder {
-                    static DEC0208: sun.nio.cs.ext.DoubleByte$Decoder
-                    static ENC0208: sun.nio.cs.ext.DoubleByte$Encoder
                 }
                 class HKSCS {
                     public constructor()
                 }
                 class HKSCS$Encoder extends sun.nio.cs.ext.DoubleByte$Encoder {
-                    static C2B_UNMAPPABLE: char[]
                     protected constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.DoubleByte$Encoder, arg2: char[][], arg3: char[][])
                     public encodeBig5(arg0: char): int
                     public encodeChar(arg0: char): int
@@ -1486,11 +1111,8 @@ declare namespace sun {
                     protected encodeLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
                     protected implReplaceWith(arg0: byte[]): void
                     public encode(arg0: char[], arg1: int, arg2: int, arg3: byte[]): int
-                    static initc2b(arg0: char[][], arg1: java.lang.String[], arg2: string): void
                 }
                 class HKSCS$Decoder extends sun.nio.cs.ext.DoubleByte$Decoder {
-                    static b2Min: int
-                    static b2Max: int
                     protected constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.DoubleByte$Decoder, arg2: char[][], arg3: char[][])
                     public decodeSingle(arg0: int): char
                     public decodeBig5(arg0: int, arg1: int): char
@@ -1500,7 +1122,6 @@ declare namespace sun {
                     protected decodeBufferLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
                     public decode(arg0: byte[], arg1: int, arg2: int, arg3: char[]): int
                     public decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
-                    static initb2c(arg0: char[][], arg1: java.lang.String[]): void
                 }
                 class MS950_HKSCS_XP extends java.nio.charset.Charset {
                     public constructor()
@@ -1511,16 +1132,12 @@ declare namespace sun {
                 class MS950_HKSCS_XP$1 {
                 }
                 class MS950_HKSCS_XP$Encoder extends sun.nio.cs.ext.HKSCS$Encoder {
-                    static c2bBmp: char[][]
                     public encodeSupp(arg0: int): int
-                    constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.MS950_HKSCS_XP$1)
                 }
                 class MS950_HKSCS_XP$Decoder extends sun.nio.cs.ext.HKSCS$Decoder {
                     public decodeDoubleEx(arg0: int, arg1: int): char
-                    constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.MS950_HKSCS_XP$1)
                 }
                 class ExtendedCharsets extends sun.nio.cs.AbstractCharsetProvider {
-                    static instance: sun.nio.cs.ext.ExtendedCharsets
                     public constructor()
                     protected init(): void
                     public static aliasesFor(arg0: string): java.lang.String[]
@@ -1539,7 +1156,6 @@ declare namespace sun {
                     protected SS2Desig: string
                     protected SS3Desig: string
                     protected ISOEncoder: java.nio.charset.CharsetEncoder
-                    static $assertionsDisabled: boolean
                     protected constructor(arg0: java.nio.charset.Charset)
                     public canEncode(arg0: char): boolean
                     protected implReset(): void
@@ -1552,7 +1168,6 @@ declare namespace sun {
                     protected SODecoder: java.nio.charset.CharsetDecoder[]
                     protected SS2Decoder: java.nio.charset.CharsetDecoder[]
                     protected SS3Decoder: java.nio.charset.CharsetDecoder[]
-                    static $assertionsDisabled: boolean
                     protected constructor(arg0: java.nio.charset.Charset)
                     protected implReset(): void
                     protected decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
@@ -1565,10 +1180,6 @@ declare namespace sun {
                     public newEncoder(): java.nio.charset.CharsetEncoder
                 }
                 class EUC_JP$Encoder extends java.nio.charset.CharsetEncoder {
-                    static ENC0201: sun.nio.cs.SingleByte$Encoder
-                    static ENC0208: sun.nio.cs.ext.DoubleByte$Encoder
-                    static ENC0212: sun.nio.cs.ext.DoubleByte$Encoder
-                    static $assertionsDisabled: boolean
                     protected constructor(arg0: java.nio.charset.Charset)
                     protected constructor(arg0: java.nio.charset.Charset, arg1: float, arg2: float, arg3: sun.nio.cs.SingleByte$Encoder, arg4: sun.nio.cs.ext.DoubleByte$Encoder, arg5: sun.nio.cs.ext.DoubleByte$Encoder)
                     public canEncode(arg0: char): boolean
@@ -1577,10 +1188,6 @@ declare namespace sun {
                     protected encodeLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
                 }
                 class EUC_JP$Decoder extends java.nio.charset.CharsetDecoder implements sun.nio.cs.ext.DelegatableDecoder {
-                    static DEC0201: sun.nio.cs.SingleByte$Decoder
-                    static DEC0208: sun.nio.cs.ext.DoubleByte$Decoder
-                    static DEC0212: sun.nio.cs.ext.DoubleByte$Decoder
-                    static $assertionsDisabled: boolean
                     protected constructor(arg0: java.nio.charset.Charset)
                     protected constructor(arg0: java.nio.charset.Charset, arg1: float, arg2: float, arg3: sun.nio.cs.SingleByte$Decoder, arg4: sun.nio.cs.ext.DoubleByte$Decoder, arg5: sun.nio.cs.ext.DoubleByte$Decoder)
                     protected decodeDouble(arg0: int, arg1: int): char
@@ -1598,10 +1205,8 @@ declare namespace sun {
                 class EUC_JP_LINUX$1 {
                 }
                 class EUC_JP_LINUX$Encoder extends sun.nio.cs.ext.EUC_JP$Encoder {
-                    constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.EUC_JP_LINUX$1)
                 }
                 class EUC_JP_LINUX$Decoder extends sun.nio.cs.ext.EUC_JP$Decoder {
-                    constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.EUC_JP_LINUX$1)
                 }
                 abstract class SimpleEUCEncoder extends java.nio.charset.CharsetEncoder {
                     protected index1: short[]
@@ -1612,7 +1217,6 @@ declare namespace sun {
                     protected mask1: int
                     protected mask2: int
                     protected shift: int
-                    static $assertionsDisabled: boolean
                     protected constructor(arg0: java.nio.charset.Charset)
                     public canEncode(arg0: char): boolean
                     protected encodeLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
@@ -1629,7 +1233,6 @@ declare namespace sun {
                     public constructor(arg0: java.nio.charset.Charset)
                 }
                 class IBM964$Decoder extends java.nio.charset.CharsetDecoder {
-                    static $assertionsDisabled: boolean
                     public constructor(arg0: java.nio.charset.Charset)
                     protected decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
                 }
@@ -1643,15 +1246,9 @@ declare namespace sun {
                     public constructor()
                 }
                 class DoubleByte$Encoder_EUC_SIM extends sun.nio.cs.ext.DoubleByte$Encoder {
-                    constructor(arg0: java.nio.charset.Charset, arg1: char[], arg2: char[])
                 }
                 class DoubleByte$Encoder_EBCDIC extends sun.nio.cs.ext.DoubleByte$Encoder {
-                    static SBCS: int
-                    static DBCS: int
-                    static SO: byte
-                    static SI: byte
                     protected currentState: int
-                    constructor(arg0: java.nio.charset.Charset, arg1: char[], arg2: char[])
                     protected implReset(): void
                     protected implFlush(arg0: java.nio.ByteBuffer): java.nio.charset.CoderResult
                     protected encodeArrayLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
@@ -1659,51 +1256,35 @@ declare namespace sun {
                     public encode(arg0: char[], arg1: int, arg2: int, arg3: byte[]): int
                 }
                 class DoubleByte$Encoder_DBCSONLY extends sun.nio.cs.ext.DoubleByte$Encoder {
-                    constructor(arg0: java.nio.charset.Charset, arg1: byte[], arg2: char[], arg3: char[])
                     public encodeChar(arg0: char): int
                 }
                 class DoubleByte$Encoder extends java.nio.charset.CharsetEncoder implements sun.nio.cs.ArrayEncoder {
-                    MAX_SINGLEBYTE: int
-                    sgp: sun.nio.cs.Surrogate$Parser
                     protected repl: byte[]
                     protected constructor(arg0: java.nio.charset.Charset, arg1: char[], arg2: char[])
-                    constructor(arg0: java.nio.charset.Charset, arg1: float, arg2: float, arg3: byte[], arg4: char[], arg5: char[])
                     public canEncode(arg0: char): boolean
-                    sgp(): sun.nio.cs.Surrogate$Parser
                     protected encodeArrayLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
                     protected encodeBufferLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
                     protected encodeLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
                     protected implReplaceWith(arg0: byte[]): void
                     public encode(arg0: char[], arg1: int, arg2: int, arg3: byte[]): int
                     public encodeChar(arg0: char): int
-                    static initC2B(arg0: java.lang.String[], arg1: string, arg2: string, arg3: string, arg4: int, arg5: int, arg6: char[], arg7: char[]): void
                 }
                 class DoubleByte$Decoder_EUC_SIM extends sun.nio.cs.ext.DoubleByte$Decoder {
-                    constructor(arg0: java.nio.charset.Charset, arg1: char[][], arg2: char[], arg3: int, arg4: int)
                     protected crMalformedOrUnderFlow(arg0: int): java.nio.charset.CoderResult
                     protected crMalformedOrUnmappable(arg0: int, arg1: int): java.nio.charset.CoderResult
                     public decode(arg0: byte[], arg1: int, arg2: int, arg3: char[]): int
                 }
                 class DoubleByte$Decoder_DBCSONLY extends sun.nio.cs.ext.DoubleByte$Decoder {
-                    static b2cSB_UNMAPPABLE: char[]
-                    constructor(arg0: java.nio.charset.Charset, arg1: char[][], arg2: char[], arg3: int, arg4: int)
                 }
                 class DoubleByte$Decoder_EBCDIC extends sun.nio.cs.ext.DoubleByte$Decoder {
-                    constructor(arg0: java.nio.charset.Charset, arg1: char[][], arg2: char[], arg3: int, arg4: int)
                     public implReset(): void
                     protected decodeArrayLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
                     protected decodeBufferLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
                     public decode(arg0: byte[], arg1: int, arg2: int, arg3: char[]): int
                 }
                 class DoubleByte$Decoder extends java.nio.charset.CharsetDecoder implements sun.nio.cs.ext.DelegatableDecoder , sun.nio.cs.ArrayDecoder {
-                    b2c: char[][]
-                    b2cSB: char[]
-                    b2Min: int
-                    b2Max: int
                     protected crMalformedOrUnderFlow(arg0: int): java.nio.charset.CoderResult
                     protected crMalformedOrUnmappable(arg0: int, arg1: int): java.nio.charset.CoderResult
-                    constructor(arg0: java.nio.charset.Charset, arg1: float, arg2: float, arg3: char[][], arg4: char[], arg5: int, arg6: int)
-                    constructor(arg0: java.nio.charset.Charset, arg1: char[][], arg2: char[], arg3: int, arg4: int)
                     protected decodeArrayLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
                     protected decodeBufferLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
                     public decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
@@ -1725,25 +1306,18 @@ declare namespace sun {
                 class ISO2022_JP$1 {
                 }
                 class ISO2022_JP$Encoder extends java.nio.charset.CharsetEncoder {
-                    static ENC0208: sun.nio.cs.ext.DoubleByte$Encoder
-                    static $assertionsDisabled: boolean
-                    constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.DoubleByte$Encoder, arg2: sun.nio.cs.ext.DoubleByte$Encoder, arg3: boolean)
                     protected encodeSingle(arg0: char): int
                     protected implReset(): void
                     protected implReplaceWith(arg0: byte[]): void
                     protected implFlush(arg0: java.nio.ByteBuffer): java.nio.charset.CoderResult
                     public canEncode(arg0: char): boolean
                     protected encodeLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
-                    constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.ISO2022_JP$1)
                 }
                 class ISO2022_JP$Decoder extends java.nio.charset.CharsetDecoder implements sun.nio.cs.ext.DelegatableDecoder {
-                    static DEC0208: sun.nio.cs.ext.DoubleByte$Decoder
-                    static $assertionsDisabled: boolean
                     protected constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.DoubleByte$Decoder, arg2: sun.nio.cs.ext.DoubleByte$Decoder)
                     public implReset(): void
                     public decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
                     public implFlush(arg0: java.nio.CharBuffer): java.nio.charset.CoderResult
-                    constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.ISO2022_JP$1)
                 }
                 class ISO2022_JP_2 extends sun.nio.cs.ext.ISO2022_JP {
                     public constructor()
@@ -1753,21 +1327,13 @@ declare namespace sun {
                     public newEncoder(): java.nio.charset.CharsetEncoder
                 }
                 class ISO2022_JP_2$CoderHolder {
-                    static DEC0212: sun.nio.cs.ext.DoubleByte$Decoder
-                    static ENC0212: sun.nio.cs.ext.DoubleByte$Encoder
                 }
                 class Big5_Solaris extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    static b2c: char[][]
-                    static b2cSB: char[]
-                    static c2b: char[]
-                    static c2bIndex: char[]
                     public constructor()
                     public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
-                    static initb2c(): void
-                    static initc2b(): void
                 }
             }
         }
@@ -1785,8 +1351,6 @@ declare namespace sun {
                 public contains(arg0: java.nio.charset.Charset): boolean
             }
             class X11GB2312$Decoder extends java.nio.charset.CharsetDecoder {
-                static $assertionsDisabled: boolean
-                this$0: sun.awt.motif.X11GB2312
                 public constructor(arg0: sun.awt.motif.X11GB2312, arg1: java.nio.charset.Charset)
                 protected decodeDouble(arg0: int, arg1: int): char
                 protected decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
@@ -1798,14 +1362,11 @@ declare namespace sun {
                 public contains(arg0: java.nio.charset.Charset): boolean
             }
             class X11KSC5601$Decoder extends java.nio.charset.CharsetDecoder {
-                static $assertionsDisabled: boolean
-                this$0: sun.awt.motif.X11KSC5601
                 public constructor(arg0: sun.awt.motif.X11KSC5601, arg1: java.nio.charset.Charset)
                 protected decodeDouble(arg0: int, arg1: int): char
                 protected decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
             }
             class X11KSC5601$Encoder extends java.nio.charset.CharsetEncoder {
-                this$0: sun.awt.motif.X11KSC5601
                 public constructor(arg0: sun.awt.motif.X11KSC5601, arg1: java.nio.charset.Charset)
                 public canEncode(arg0: char): boolean
                 protected encodeDouble(arg0: char): int
@@ -1813,7 +1374,6 @@ declare namespace sun {
                 public isLegalReplacement(arg0: byte[]): boolean
             }
             class X11GB2312$Encoder extends java.nio.charset.CharsetEncoder {
-                this$0: sun.awt.motif.X11GB2312
                 public constructor(arg0: sun.awt.motif.X11GB2312, arg1: java.nio.charset.Charset)
                 public canEncode(arg0: char): boolean
                 protected encodeDouble(arg0: char): int
@@ -1821,8 +1381,6 @@ declare namespace sun {
                 public isLegalReplacement(arg0: byte[]): boolean
             }
             class X11GBK$Encoder extends sun.nio.cs.ext.DoubleByte$Encoder {
-                this$0: sun.awt.motif.X11GBK
-                constructor(arg0: sun.awt.motif.X11GBK, arg1: java.nio.charset.Charset)
                 public canEncode(arg0: char): boolean
                 public encodeChar(arg0: char): int
             }

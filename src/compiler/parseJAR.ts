@@ -47,7 +47,7 @@ function parseJAR(jar: string): string {
 
     let pkg = {}
     for (let i = 0; i < classes.length; i += 2000) {
-        let javaCode = commandOutput("javap", ["-cp", jar].concat(classes.slice(i, i + 2000)))
+        let javaCode = commandOutput("javap", ["-protected", "-cp", jar].concat(classes.slice(i, i + 2000)))
         parseClass(javaCode, pkg)
     }
 

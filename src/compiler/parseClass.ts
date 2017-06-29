@@ -16,7 +16,6 @@ const UNSUPPORTED_MODIFIERS = [
 
 function safeType(type: string, isParameter?: boolean): string {
     if (/>\.\w+$/.test(type)) return "any"      // XXX<T>.YYY
-    if (type.indexOf("$") >= 0) return "any"    // XXX$YYY
     if (type === "java.lang.String") return "string"
     if (type === "java.lang.Boolean") return "boolean"
     if (type === "java.util.function.Consumer<T>" && isParameter) {
@@ -220,14 +219,16 @@ export default function (source: string, pkg: any) {
                 ignore = false
                 isInterface = item.line.indexOf("interface") >= 0
                 if (item.name.indexOf("-") >= 0) ignore = true
-                if (item.name.indexOf("$") >= 0) ignore = true
+                if (/>\.\w+/.test(item.line)) ignore = true
                 if (!ignore) buffer.push(item as never)
                 break
             case "CONSTR":
                 if (!ignore) buffer.push(item as never)
                 break
             case "MEMBER":
-                if (!ignore && item.name !== "prototype") buffer.push(item as never)
+                if (!ignore && item.name !== "prototype" && item.line.indexOf("constructor:") < 0) {
+                    buffer.push(item as never)
+                }
                 break
             case "END":
                 if (!ignore) {

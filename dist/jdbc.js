@@ -77,12 +77,18 @@ var JDBCClient = (function () {
     JDBCClient.prototype.insert = function (table, object) {
         var keys = Object.keys(object).join(",");
         var values = Object.keys(object).map(function () { return "?"; }).join(",");
-        this.execute("INSERT INTO " + table + "(" + keys + ") VALUES(" + values + ")", Object.keys(object).map(function (key) { return object[key]; }));
+        this.execute("INSERT INTO " + table + "(" + keys + ") VALUES(" + values + ")", Object.keys(object).map(function (key) {
+            var value = object[key];
+            return typeof value === "object" ? JSON.stringify(value) : value;
+        }));
     };
     JDBCClient.prototype.upsert = function (table, object) {
         var keys = Object.keys(object).join(",");
         var values = Object.keys(object).map(function () { return "?"; }).join(",");
-        this.execute("REPLACE INTO " + table + "(" + keys + ") VALUES(" + values + ")", Object.keys(object).map(function (key) { return object[key]; }));
+        this.execute("REPLACE INTO " + table + "(" + keys + ") VALUES(" + values + ")", Object.keys(object).map(function (key) {
+            var value = object[key];
+            return typeof value === "object" ? JSON.stringify(value) : value;
+        }));
     };
     JDBCClient.prototype.execute = function (sql, parameters) {
         var statement = this.prepareStatement(sql, parameters);

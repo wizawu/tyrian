@@ -99,7 +99,10 @@ export abstract class JDBCClient implements Client {
         let values = Object.keys(object).map(() => "?").join(",")
         this.execute(
             `INSERT INTO ${table}(${keys}) VALUES(${values})`,
-            Object.keys(object).map(key => object[key])
+            Object.keys(object).map(key => {
+                let value = object[key]
+                return typeof value === "object" ? JSON.stringify(value) : value
+            })
         )
     }
 
@@ -108,7 +111,10 @@ export abstract class JDBCClient implements Client {
         let values = Object.keys(object).map(() => "?").join(",")
         this.execute(
             `REPLACE INTO ${table}(${keys}) VALUES(${values})`,
-            Object.keys(object).map(key => object[key])
+            Object.keys(object).map(key => {
+                let value = object[key]
+                return typeof value === "object" ? JSON.stringify(value) : value
+            })
         )
     }
 

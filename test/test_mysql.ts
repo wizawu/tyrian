@@ -186,6 +186,14 @@ describe("MySQLClient", () => {
         assert.strictEqual(rows.some(r => r.id === 2 && r.path === "/home"), true)
     })
 
+    it("json array", () => {
+        client.ensureTable(table, "id", "INT")
+        client.ensureColumn(table, "list", "JSON")
+        client.insert(table, { id: 1, list: [2, 3] })
+        assert.strictEqual(client.one<any>(`SELECT json_contains(list, '2') ok from ${table}`).ok, 1)
+        assert.strictEqual(client.one<any>(`SELECT json_contains(list, '4') ok from ${table}`).ok, 0)
+    })
+
     it("execute", () => {
         client.ensureTable(table, "id", "INT")
         let tables = client.list<any>("SHOW TABLES")

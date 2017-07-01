@@ -11,7 +11,7 @@ export declare abstract class JDBCClient implements Client {
     setInt(bucket: string, key: string, value: number, ttl?: number): void;
     setFloat(bucket: string, key: string, value: number, ttl?: number): void;
     setString(bucket: string, key: string, value: string, ttl?: number): void;
-    setJSON(bucket: string, key: string, json: Object, ttl?: number): void;
+    setJSON(bucket: string, key: string, json: object, ttl?: number): void;
     setBlob(bucket: string, key: string, data: byte[], ttl?: number): void;
     ensureTable(table: string, pkey: string, type: string): void;
     ensureColumn(table: string, column: string, type: string): void;
@@ -19,8 +19,8 @@ export declare abstract class JDBCClient implements Client {
     ensureUniqueIndex(table: string, columns: string[]): void;
     one<T>(sql: string, parameters?: any[]): T | null;
     list<T>(sql: string, parameters?: any[]): T[];
-    insert(table: string, object: Object): void;
-    upsert(table: string, object: Object): void;
+    insert(table: string, obj: object): void;
+    upsert(table: string, obj: object): void;
     execute(sql: string, parameters?: any[]): void;
     delete(bucket_or_table: string, key: number | string): void;
     close(): void;

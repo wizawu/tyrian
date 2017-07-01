@@ -22,7 +22,7 @@ export interface Client {
     setInt(bucket: string, key: string, value: number, ttl?: number)
     setFloat(bucket: string, key: string, value: number, ttl?: number)
     setString(bucket: string, key: string, value: string, ttl?: number)
-    setJSON(bucket: string, key: string, json: Object, ttl?: number)
+    setJSON(bucket: string, key: string, json: object, ttl?: number)
     setBlob(bucket: string, key: string, data: byte[], ttl?: number)
 
     // RDBMS
@@ -32,8 +32,8 @@ export interface Client {
     ensureUniqueIndex(table: string, columns: string[])
     one<T>(sql: string, parameters?: any[]): T | null
     list<T>(sql: string, parameters?: any[]): T[]
-    insert(table: string, object: Object)
-    upsert(table: string, object: Object)
+    insert(table: string, obj: object)
+    upsert(table: string, obj: object)
     execute(sql: string, parameters?: any[])
 
     delete(bucket_or_table: string, key: number | string)

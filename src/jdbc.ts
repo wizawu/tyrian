@@ -38,7 +38,7 @@ export abstract class JDBCClient implements Client {
         this.setByType(bucket, "string", key, value, ttl)
     }
 
-    setJSON(bucket: string, key: string, json: Object, ttl?: number) {
+    setJSON(bucket: string, key: string, json: object, ttl?: number) {
         this.setByType(bucket, "json", key, JSON.stringify(json), ttl)
     }
 
@@ -75,7 +75,7 @@ export abstract class JDBCClient implements Client {
     }
 
     one<T>(sql: string, parameters?: any[]): T | null {
-        let result: Object | null = null
+        let result: object | null = null
         let statement = this.prepareStatement(sql, parameters)
         let resultSet = statement.executeQuery()
         if (resultSet.next()) result = resultSetToJSON(resultSet)
@@ -94,25 +94,25 @@ export abstract class JDBCClient implements Client {
         return result
     }
 
-    insert(table: string, object: Object) {
-        let keys = Object.keys(object).join(",")
-        let values = Object.keys(object).map(() => "?").join(",")
+    insert(table: string, obj: object) {
+        let keys = Object.keys(obj).join(",")
+        let values = Object.keys(obj).map(() => "?").join(",")
         this.execute(
             `INSERT INTO ${table}(${keys}) VALUES(${values})`,
-            Object.keys(object).map(key => {
-                let value = object[key]
+            Object.keys(obj).map(key => {
+                let value = obj[key]
                 return typeof value === "object" ? JSON.stringify(value) : value
             })
         )
     }
 
-    upsert(table: string, object: Object) {
-        let keys = Object.keys(object).join(",")
-        let values = Object.keys(object).map(() => "?").join(",")
+    upsert(table: string, obj: object) {
+        let keys = Object.keys(obj).join(",")
+        let values = Object.keys(obj).map(() => "?").join(",")
         this.execute(
             `REPLACE INTO ${table}(${keys}) VALUES(${values})`,
-            Object.keys(object).map(key => {
-                let value = object[key]
+            Object.keys(obj).map(key => {
+                let value = obj[key]
                 return typeof value === "object" ? JSON.stringify(value) : value
             })
         )
@@ -180,7 +180,7 @@ interface BucketItem {
     int_: number
     float_: number
     string_: string
-    json_: Object
+    json_: object
     blob_: byte[]
     type: BucketValueType
     timestamp: number

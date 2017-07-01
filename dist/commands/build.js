@@ -123,9 +123,9 @@ function default_1(instdir, instmod, entries, options) {
         console.error(chalk.yellow("ignoring -o " + options.outFile));
     }
     var statsOptions = {
-        children: false,
-        chunks: false,
         colors: true,
+        hash: true,
+        timings: true,
         version: false
     };
     if (options.watch) {

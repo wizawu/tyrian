@@ -127,9 +127,9 @@ export default function (instdir: string, instmod: string, entries: string[], op
     }
 
     let statsOptions = {
-        children: false,
-        chunks: false,
         colors: true,
+        hash: true,
+        timings: true,
         version: false,
     }
 

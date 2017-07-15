@@ -1,6 +1,6 @@
 {
   "name": "1c",
-  "version": "8.3.2",
+  "version": "8.3.3",
   "bin": "./bin/1c",
   "repository": "github:wizawu/1c",
   "dependencies": {
@@ -21,6 +21,7 @@
     "style-loader": "0.18.2",
     "ts-loader": "2.2.1",
     "typescript": "2.4.1",
+    "url-loader": "^0.5.9",
     "webpack": "3.0.0"
   }
 }

@@ -90,9 +90,6 @@ function compiler(instdir, instmod, entries, options) {
                 }, {
                     test: /^[^!]+\.less$/,
                     use: cssLoaders.concat({ loader: "less-loader" })
-                }, {
-                    test: /\.(eot|otf|svg|ttf|woff|woff2)$/,
-                    loader: "url-loader?limit=100000"
                 }]
         },
         plugins: [

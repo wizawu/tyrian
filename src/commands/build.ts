@@ -90,10 +90,7 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
                 use: cssLoaders,
             }, {
                 test: /^[^!]+\.less$/,
-                use: cssLoaders.concat({ loader: "less-loader" }),
-            }, {
-                test: /\.(eot|otf|svg|ttf|woff|woff2)$/,
-                loader: "url-loader?limit=100000",
+                use: cssLoaders.concat({ loader: "less-loader" })
             }]
         },
         plugins: [

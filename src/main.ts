@@ -44,6 +44,7 @@ if (command === "env") {
         if (arg === "-w") {
             options.watch = true
         } else if (arg === "-m") {
+            // deprecated
             options.targetModule = true
         } else if (arg === "-u") {
             options.uglify = true

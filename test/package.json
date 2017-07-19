@@ -2,8 +2,7 @@
   "dependencies": {
     "@types/chai": "^4.0.0",
     "chai": "^4.0.2",
-    "lightest": "^0.1.1",
-    "reduxdb": "^3.0.4"
+    "lightest": "^0.1.1"
   },
   "mvnDependencies": [
     "com.sparkjava:spark-core:2.5.5",

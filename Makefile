@@ -17,9 +17,7 @@ test: build
 	./bin/1c env
 	rm -rf test/dist
 	cd test && ../bin/1c install
-	cd test && ../bin/1c build -c dist main.ts module.ts
-	cd test && ../bin/1c build -c dist -m -u module.ts
+	cd test && ../bin/1c build -c dist -u main.ts
 	cd test && ../bin/1c build -o dist/test.js nashorn.ts
 	cd test && ../bin/1c run dist/test.js
 	test -f test/dist/main.js
-	test -f test/dist/module.js

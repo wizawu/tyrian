@@ -19,14 +19,13 @@ Usage:
 
 build options:
   -c <dir>          output build result in <dir>
-  -m                build each entry as a commonjs module
   -o <file>         output build result to <file>
-  -u                uglify build result
+  -u                uglify build result (and disable exception tracking)
   -w                watch changes and re-build
 
 run options:
   -w                watch changes and re-run
-  jjs options       check out 'jjs -h' (should after -w if exist)
+  jjs options       check out 'jjs -h' (must after -w if used)
 
     `.trim())
 

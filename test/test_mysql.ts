@@ -16,7 +16,7 @@ describe("MySQLClient", () => {
             port: 3306,
             database: "test",
             user: "root",
-            password: "venividivici",
+            password: "",
             useSSL: false,
             defaultEngine: "MyISAM",
         })
@@ -239,7 +239,7 @@ describe("MySQLClient benchmark", () => {
             port: 3306,
             database: "test",
             user: "root",
-            password: "venividivici",
+            password: "",
             useSSL: false,
             logger: "com.mysql.cj.core.log.Slf4JLogger",
             profileSQL: java.lang.System.getenv("PROFILE_SQL") === "true",

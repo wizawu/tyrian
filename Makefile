@@ -1,6 +1,6 @@
 .PHONY: test
 
-build: install
+build:
 	tsc -d -p . --outDir dist
 
 watch:

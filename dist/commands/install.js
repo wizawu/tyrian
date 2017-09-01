@@ -39,7 +39,7 @@ function default_1(instdir) {
     if (!fs.existsSync("package.json")) {
         fs.writeFileSync("package.json", package_json);
     }
-    var child = child_process_1.spawnSync("yarn", ["install"], { stdio: "inherit" });
+    var child = child_process_1.spawnSync("npm", ["install"], { stdio: "inherit" });
     if (child.status !== 0)
         process.exit(child.status);
     var mvnDependencies = {};

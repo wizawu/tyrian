@@ -24,11 +24,6 @@ function default_1() {
     output += notFound(child.stdout, child.stderr);
     if (child.status !== 0)
         ok = false;
-    child = child_process_1.spawnSync("yarn", ["-V"], options);
-    output += header("yarn", "npm install -g yarn");
-    output += notFound(child.stdout, child.stderr);
-    if (child.status !== 0)
-        ok = false;
     child = child_process_1.spawnSync("java", ["-version"], options);
     output += header("java", "http://openjdk.java.net/install/");
     output += notFound(child.stdout, child.stderr);

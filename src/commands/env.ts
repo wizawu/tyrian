@@ -19,12 +19,6 @@ export default function () {
     output += notFound(child.stdout, child.stderr)
     if (child.status !== 0) ok = false
 
-    // yarn
-    child = spawnSync("yarn", ["-V"], options)
-    output += header("yarn", "npm install -g yarn")
-    output += notFound(child.stdout, child.stderr)
-    if (child.status !== 0) ok = false
-
     // java
     child = spawnSync("java", ["-version"], options)
     output += header("java", "http://openjdk.java.net/install/")

@@ -65,8 +65,8 @@ export default function (instdir: string) {
         fs.writeFileSync("package.json", package_json)
     }
 
-    // yarn install
-    let child = spawnSync("yarn", ["install"], { stdio: "inherit" })
+    // npm install
+    let child = spawnSync("npm", ["install"], { stdio: "inherit" })
     if (child.status !== 0) process.exit(child.status)
 
     // gather all maven dependencies

@@ -19,6 +19,12 @@ export default function () {
     output += notFound(child.stdout, child.stderr)
     if (child.status !== 0) ok = false
 
+    // npm
+    child = spawnSync("npm", ["-v"], options)
+    output += header("npm", "npm install -g npm")
+    output += notFound(child.stdout, child.stderr)
+    if (child.status !== 0) ok = false
+
     // java
     child = spawnSync("java", ["-version"], options)
     output += header("java", "http://openjdk.java.net/install/")

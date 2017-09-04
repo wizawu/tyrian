@@ -35,7 +35,9 @@ var package_json = JSON.stringify({
 }, null, 2);
 var build_gradle = function (deps) { return "\n    apply plugin: \"java\"\n\n    repositories {\n        jcenter()\n        mavenCentral()\n    }\n\n    task install(type: Copy) {\n        into \"" + process.cwd() + "/lib\"\n        from configurations.runtime\n    }\n\n    dependencies {\n        " + deps + "\n    }\n"; };
 function default_1(instdir) {
-    fs.writeFileSync("tsconfig.json", tsconfig(instdir));
+    if (!fs.existsSync("tsconfig.json")) {
+        fs.writeFileSync("tsconfig.json", tsconfig(instdir));
+    }
     if (!fs.existsSync("package.json")) {
         fs.writeFileSync("package.json", package_json);
     }

@@ -58,7 +58,9 @@ const build_gradle = deps => `
 
 export default function (instdir: string) {
     // generate tsconfig.json
-    fs.writeFileSync("tsconfig.json", tsconfig(instdir))
+    if (!fs.existsSync("tsconfig.json")) {
+        fs.writeFileSync("tsconfig.json", tsconfig(instdir))
+    }
 
     // generate package.json
     if (!fs.existsSync("package.json")) {

@@ -7,7 +7,7 @@
  */
 
 type byte = number
-type char = string
+type char = number
 type double = number
 type float = number
 type int = number
@@ -30,7 +30,8 @@ declare function readFully(filepath: string): string
 declare function readLine(prompt?: string): string
 
 declare class Java {
-    static extend(type: any, impl: Object): any
+    static extend(type: any, impl?: Object): any
+    static super(variable: any): any
     static from(value: any): any
     static to(jsValue: Object, javaType: any): any
     static type(className: string): any

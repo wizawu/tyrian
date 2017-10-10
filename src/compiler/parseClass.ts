@@ -15,7 +15,7 @@ const UNSUPPORTED_MODIFIERS = [
 ]
 
 function safeType(type: string, isParameter?: boolean): string {
-    if (/>\.\w+$/.test(type)) return "any"      // XXX<T>.YYY
+    if (/>\./.test(type)) return "any"      // XXX<T>.YYY  XXX<T>.YYY<T>
     if (type === "java.lang.String") return "string"
     if (type === "java.lang.Boolean") return "boolean"
     if (/^java\.util\.function\.Consumer<\w+>$/.test(type) && isParameter) {

@@ -21,7 +21,7 @@ var UNSUPPORTED_MODIFIERS = [
     "volatile",
 ];
 function safeType(type, isParameter) {
-    if (/>\.\w+$/.test(type))
+    if (/>\./.test(type))
         return "any";
     if (type === "java.lang.String")
         return "string";

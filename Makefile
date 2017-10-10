@@ -1,10 +1,12 @@
 .PHONY: test
 
 build:
-	tsc -d -p . --outDir dist
+	tsc -d -p . --outDir build
+	rm -rf dist
+	mv build/src dist
 
 watch:
-	tsc -d -p . --outDir dist -w
+	tsc -d -p . --outDir build -w
 
 build/test:
 	1c build test/test_*.ts

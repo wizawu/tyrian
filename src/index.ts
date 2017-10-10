@@ -1,5 +1,6 @@
 const JdbcTemplate = org.springframework.jdbc.core.JdbcTemplate
 const MysqlDataSource = com.mysql.cj.jdbc.MysqlDataSource
+const RowMapper = Java.type("org.springframework.jdbc.core.RowMapper")
 
 export interface Options {
     host: string
@@ -18,19 +19,21 @@ export interface Options {
     useServerPrepStmts?: boolean
 }
 
-export function mapRow(resultSet: java.sql.ResultSet) {
-    let json: any = {}
-    for (let i = 1; i <= resultSet.getMetaData().getColumnCount(); i++) {
-        let key = resultSet.getMetaData().getColumnName(i)
-        let type = resultSet.getMetaData().getColumnTypeName(i)
-        if (type.toUpperCase() === "JSON") {
-            json.put(key, JSON.parse(resultSet.getString(i)))
-        } else {
-            json.put(key, resultSet.getObject(i))
+export const mapRow = new RowMapper({
+    mapRow(resultSet: java.sql.ResultSet) {
+        let json: any = {}
+        for (let i = 1; i <= resultSet.getMetaData().getColumnCount(); i++) {
+            let key = resultSet.getMetaData().getColumnName(i)
+            let type = resultSet.getMetaData().getColumnTypeName(i)
+            if (type.toUpperCase() === "JSON") {
+                json[key] = JSON.parse(resultSet.getString(i))
+            } else {
+                json[key] = resultSet.getObject(i)
+            }
         }
+        return json
     }
-    return json
-}
+})
 
 export class Client {
     jdbcTemplate: org.springframework.jdbc.core.JdbcTemplate
@@ -67,19 +70,19 @@ export class Client {
 
     ensureTable(table: string, pkey: string, type: string) {
         this.jdbcTemplate.execute(`
-            CREATE TEABLE IF NOT EXISTS ${table} (${pkey} ${type} PRIMARY KEY)
+            CREATE TABLE IF NOT EXISTS ${table} (${pkey} ${type} PRIMARY KEY)
         `)
     }
 
     ensureColumn(table: string, column: string, type: string) {
-        let columns = this.jdbcTemplate.query("SHOW COLUMNS FROM " + table, mapRow)
+        let columns = Java.from(this.jdbcTemplate.query("SHOW COLUMNS FROM " + table, mapRow))
         if (columns.some(col => col.COLUMN_NAME === column)) return
         this.jdbcTemplate.execute(`ALTER TABLE ${table} ADD COLUMN ${column} ${type}`)
     }
 
     ensureIndex(table: string, columns: string[], options = { unique: false }) {
         let index = table + (options.unique ? "_uidx_" : "_idx_") + columns.join("_")
-        let indexes = this.jdbcTemplate.query("SHOW INDEX FROM " + table, mapRow)
+        let indexes = Java.from(this.jdbcTemplate.query("SHOW INDEX FROM " + table, mapRow))
         if (indexes.some(idx => idx.INDEX_NAME === index)) return
         this.jdbcTemplate.execute(`
             CREATE ${options.unique ? "UNIQUE" : ""} INDEX ${index} ON ${table}(${columns.join(",")})

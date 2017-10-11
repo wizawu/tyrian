@@ -79,7 +79,12 @@ var Client = (function () {
         var values = Object.keys(object).map(function () { return "?"; }).join(",");
         this.jdbcTemplate.update((options.upsert ? "REPLACE" : "INSERT") + " INTO " + table + "(" + keys + ") VALUES(" + values + ")", Object.keys(object).map(function (key) {
             var value = object[key];
-            return typeof value === "object" ? JSON.stringify(value) : value;
+            if (typeof value === "object") {
+                return value === null ? null : JSON.stringify(value);
+            }
+            else {
+                return value;
+            }
         }));
     };
     Client.prototype.upsert = function (table, object) {

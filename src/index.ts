@@ -105,7 +105,11 @@ export class Client {
             `${options.upsert ? "REPLACE" : "INSERT"} INTO ${table}(${keys}) VALUES(${values})`,
             Object.keys(object).map(key => {
                 let value = object[key]
-                return typeof value === "object" ? JSON.stringify(value) : value
+                if (typeof value === "object") {
+                    return value === null ? null : JSON.stringify(value)
+                } else {
+                    return value
+                }
             })
         )
     }

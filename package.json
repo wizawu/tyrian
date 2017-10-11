@@ -1,12 +1,11 @@
 {
   "name": "jdbc-template",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "repository": "github:wizawu/jdbc-template",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "mvnDependencies": [
     "mysql:mysql-connector-java:6.0.6",
-    "org.slf4j:slf4j-simple:1.7.25",
     "org.springframework:spring-jdbc:5.0.0.RELEASE"
   ],
   "devDependencies": {

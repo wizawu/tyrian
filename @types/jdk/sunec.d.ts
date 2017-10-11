@@ -3,15 +3,15 @@ declare namespace sun {
         namespace ec {
             class SunEC extends java.security.Provider {
                 public constructor()
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SunEC$1 implements java.security.PrivilegedAction<java.lang.Void> {
                 public run(): java.lang.Void
                 public run(): java.lang.Object
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SunECEntries {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ECPrivateKeyImpl extends sun.security.pkcs.PKCS8Key implements java.security.interfaces.ECPrivateKey {
                 public constructor(arg0: byte[])
@@ -37,7 +37,7 @@ declare namespace sun {
                 public initialize(arg0: int, arg1: java.security.SecureRandom): void
                 public initialize(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
                 public generateKeyPair(): java.security.KeyPair
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ECParameters extends java.security.AlgorithmParametersSpi {
                 public constructor()
@@ -48,15 +48,15 @@ declare namespace sun {
                 protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
                 protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
                 protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class NamedCurve extends java.security.spec.ECParameterSpec {
                 public toString(): string
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class CurveDB {
                 public constructor()
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ECKeyFactory extends java.security.KeyFactorySpi {
                 public constructor()
@@ -65,7 +65,7 @@ declare namespace sun {
                 protected engineGeneratePublic(arg0: java.security.spec.KeySpec): java.security.PublicKey
                 protected engineGeneratePrivate(arg0: java.security.spec.KeySpec): java.security.PrivateKey
                 protected engineGetKeySpec<T extends java.security.spec.KeySpec>(arg0: java.security.Key, arg1: java.lang.Class<T>): T
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ECDHKeyAgreement extends javax.crypto.KeyAgreementSpi {
                 public constructor()
@@ -75,7 +75,7 @@ declare namespace sun {
                 protected engineGenerateSecret(): byte[]
                 protected engineGenerateSecret(arg0: byte[], arg1: int): int
                 protected engineGenerateSecret(arg0: string): javax.crypto.SecretKey
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             abstract class ECDSASignature extends java.security.SignatureSpi {
                 protected engineInitVerify(arg0: java.security.PublicKey): void
@@ -90,27 +90,27 @@ declare namespace sun {
                 protected engineVerify(arg0: byte[]): boolean
                 protected engineSetParameter(arg0: string, arg1: java.lang.Object): void
                 protected engineGetParameter(arg0: string): java.lang.Object
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ECDSASignature$SHA512 extends sun.security.ec.ECDSASignature {
                 public constructor()
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ECDSASignature$SHA384 extends sun.security.ec.ECDSASignature {
                 public constructor()
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ECDSASignature$SHA256 extends sun.security.ec.ECDSASignature {
                 public constructor()
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ECDSASignature$SHA224 extends sun.security.ec.ECDSASignature {
                 public constructor()
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ECDSASignature$SHA1 extends sun.security.ec.ECDSASignature {
                 public constructor()
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ECDSASignature$Raw extends sun.security.ec.ECDSASignature {
                 public constructor()
@@ -119,7 +119,7 @@ declare namespace sun {
                 protected engineUpdate(arg0: java.nio.ByteBuffer): void
                 protected resetDigest(): void
                 protected getDigestValue(): byte[]
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
         }
     }

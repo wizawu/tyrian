@@ -8,7 +8,7 @@ declare namespace com {
                             protected constructor()
                             public checkClientTrusted(arg0: java.security.cert.X509Certificate[], arg1: string, arg2: string, arg3: string): void
                             public checkServerTrusted(arg0: java.security.cert.X509Certificate[], arg1: string, arg2: string, arg3: string): void
-                            public class: java.lang.Class<any>
+                            public static class: java.lang.Class<any>
                         }
                         class Provider extends sun.security.ssl.SunJSSE {
                             public constructor()
@@ -16,7 +16,7 @@ declare namespace com {
                             public constructor(arg0: string)
                             public static isFIPS(): boolean
                             public static install(): void
-                            public class: java.lang.Class<any>
+                            public static class: java.lang.Class<any>
                         }
                     }
                 }
@@ -29,7 +29,7 @@ declare namespace sun {
         namespace rsa {
             class SunRsaSign extends java.security.Provider {
                 public constructor()
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
         }
         namespace ssl {
@@ -42,7 +42,7 @@ declare namespace sun {
                 public chooseEngineServerAlias(arg0: string, arg1: java.security.Principal[], arg2: javax.net.ssl.SSLEngine): string
                 public getCertificateChain(arg0: string): java.security.cert.X509Certificate[]
                 public getPrivateKey(arg0: string): java.security.PrivateKey
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class AbstractKeyManagerWrapper extends javax.net.ssl.X509ExtendedKeyManager {
                 public getClientAliases(arg0: string, arg1: java.security.Principal[]): java.lang.String[]
@@ -51,7 +51,7 @@ declare namespace sun {
                 public chooseServerAlias(arg0: string, arg1: java.security.Principal[], arg2: java.net.Socket): string
                 public getCertificateChain(arg0: string): java.security.cert.X509Certificate[]
                 public getPrivateKey(arg0: string): java.security.PrivateKey
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class DummyX509TrustManager extends javax.net.ssl.X509ExtendedTrustManager implements javax.net.ssl.X509TrustManager {
                 public checkClientTrusted(arg0: java.security.cert.X509Certificate[], arg1: string): void
@@ -61,7 +61,7 @@ declare namespace sun {
                 public checkServerTrusted(arg0: java.security.cert.X509Certificate[], arg1: string, arg2: java.net.Socket): void
                 public checkClientTrusted(arg0: java.security.cert.X509Certificate[], arg1: string, arg2: javax.net.ssl.SSLEngine): void
                 public checkServerTrusted(arg0: java.security.cert.X509Certificate[], arg1: string, arg2: javax.net.ssl.SSLEngine): void
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class AbstractTrustManagerWrapper extends javax.net.ssl.X509ExtendedTrustManager implements javax.net.ssl.X509TrustManager {
                 public checkClientTrusted(arg0: java.security.cert.X509Certificate[], arg1: string): void
@@ -71,46 +71,46 @@ declare namespace sun {
                 public checkServerTrusted(arg0: java.security.cert.X509Certificate[], arg1: string, arg2: java.net.Socket): void
                 public checkClientTrusted(arg0: java.security.cert.X509Certificate[], arg1: string, arg2: javax.net.ssl.SSLEngine): void
                 public checkServerTrusted(arg0: java.security.cert.X509Certificate[], arg1: string, arg2: javax.net.ssl.SSLEngine): void
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class RSAClientKeyExchange extends sun.security.ssl.HandshakeMessage {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ECDHClientKeyExchange extends sun.security.ssl.HandshakeMessage {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ServerHandshaker extends sun.security.ssl.Handshaker {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ServerHandshaker$3 {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ServerHandshaker$2 implements java.security.PrivilegedExceptionAction<java.lang.Object> {
                 public run(): java.lang.Object
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ServerHandshaker$1 implements java.security.PrivilegedExceptionAction<javax.security.auth.Subject> {
                 public run(): javax.security.auth.Subject
                 public run(): java.lang.Object
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLAlgorithmDecomposer extends sun.security.util.AlgorithmDecomposer {
                 public decompose(arg0: string): java.util.Set<java.lang.String>
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLAlgorithmDecomposer$1 {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ClientHandshaker extends sun.security.ssl.Handshaker {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ClientHandshaker$2 {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ClientHandshaker$1 implements java.security.PrivilegedExceptionAction<javax.security.auth.Subject> {
                 public run(): javax.security.auth.Subject
                 public run(): java.lang.Object
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class X509TrustManagerImpl extends javax.net.ssl.X509ExtendedTrustManager implements javax.net.ssl.X509TrustManager {
                 public checkClientTrusted(arg0: java.security.cert.X509Certificate[], arg1: string): void
@@ -120,7 +120,7 @@ declare namespace sun {
                 public checkServerTrusted(arg0: java.security.cert.X509Certificate[], arg1: string, arg2: java.net.Socket): void
                 public checkClientTrusted(arg0: java.security.cert.X509Certificate[], arg1: string, arg2: javax.net.ssl.SSLEngine): void
                 public checkServerTrusted(arg0: java.security.cert.X509Certificate[], arg1: string, arg2: javax.net.ssl.SSLEngine): void
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class Krb5Helper {
                 public static isAvailable(): boolean
@@ -131,31 +131,31 @@ declare namespace sun {
                 public static getPrincipalHostName(arg0: java.security.Principal): string
                 public static getServicePermission(arg0: string, arg1: string): java.security.Permission
                 public static isRelated(arg0: javax.security.auth.Subject, arg1: java.security.Principal): boolean
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class Krb5Helper$1 implements java.security.PrivilegedAction<sun.security.ssl.Krb5Proxy> {
                 public run(): sun.security.ssl.Krb5Proxy
                 public run(): java.lang.Object
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class RenegotiationInfoExtension extends sun.security.ssl.HelloExtension {
                 public toString(): string
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class DHCrypt {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class DHCrypt$ParametersHolder {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class DHCrypt$ParametersHolder$1 implements java.security.PrivilegedAction<java.lang.String> {
                 public run(): string
                 public run(): java.lang.Object
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SupportedEllipticPointFormatsExtension extends sun.security.ssl.HelloExtension {
                 public toString(): string
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLServerSocketFactoryImpl extends javax.net.ssl.SSLServerSocketFactory {
                 public constructor()
@@ -165,11 +165,11 @@ declare namespace sun {
                 public createServerSocket(arg0: int, arg1: int, arg2: java.net.InetAddress): java.net.ServerSocket
                 public getDefaultCipherSuites(): java.lang.String[]
                 public getSupportedCipherSuites(): java.lang.String[]
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SignatureAlgorithmsExtension extends sun.security.ssl.HelloExtension {
                 public toString(): string
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class CloneableDigest extends java.security.MessageDigest implements java.lang.Cloneable {
                 protected engineGetDigestLength(): int
@@ -179,7 +179,7 @@ declare namespace sun {
                 protected engineDigest(arg0: byte[], arg1: int, arg2: int): int
                 protected engineReset(): void
                 public clone(): java.lang.Object
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ByteBufferInputStream extends java.io.InputStream {
                 public read(): int
@@ -191,7 +191,7 @@ declare namespace sun {
                 public mark(arg0: int): void
                 public reset(): void
                 public markSupported(): boolean
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SunX509KeyManagerImpl extends javax.net.ssl.X509ExtendedKeyManager {
                 public getCertificateChain(arg0: string): java.security.cert.X509Certificate[]
@@ -202,14 +202,14 @@ declare namespace sun {
                 public chooseEngineServerAlias(arg0: string, arg1: java.security.Principal[], arg2: javax.net.ssl.SSLEngine): string
                 public getClientAliases(arg0: string, arg1: java.security.Principal[]): java.lang.String[]
                 public getServerAliases(arg0: string, arg1: java.security.Principal[]): java.lang.String[]
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SunX509KeyManagerImpl$X509Credentials {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SupportedEllipticCurvesExtension extends sun.security.ssl.HelloExtension {
                 public toString(): string
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class RSASignature extends java.security.SignatureSpi {
                 public constructor()
@@ -223,41 +223,41 @@ declare namespace sun {
                 protected engineVerify(arg0: byte[], arg1: int, arg2: int): boolean
                 protected engineSetParameter(arg0: string, arg1: java.lang.Object): void
                 protected engineGetParameter(arg0: string): java.lang.Object
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             abstract class TrustManagerFactoryImpl extends javax.net.ssl.TrustManagerFactorySpi {
                 protected engineInit(arg0: java.security.KeyStore): void
                 protected engineInit(arg0: javax.net.ssl.ManagerFactoryParameters): void
                 protected engineGetTrustManagers(): javax.net.ssl.TrustManager[]
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class TrustManagerFactoryImpl$PKIXFactory extends sun.security.ssl.TrustManagerFactoryImpl {
                 public constructor()
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class TrustManagerFactoryImpl$SimpleFactory extends sun.security.ssl.TrustManagerFactoryImpl {
                 public constructor()
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class TrustManagerFactoryImpl$2 implements java.security.PrivilegedExceptionAction<java.lang.Void> {
                 public run(): java.lang.Void
                 public run(): java.lang.Object
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class TrustManagerFactoryImpl$1 implements java.security.PrivilegedExceptionAction<java.io.FileInputStream> {
                 public run(): java.io.FileInputStream
                 public run(): java.lang.Object
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class Utilities {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class UnknownExtension extends sun.security.ssl.HelloExtension {
                 public toString(): string
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class Alerts {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLSocketFactoryImpl extends javax.net.ssl.SSLSocketFactory {
                 public constructor()
@@ -270,30 +270,30 @@ declare namespace sun {
                 public createSocket(arg0: java.net.InetAddress, arg1: int, arg2: java.net.InetAddress, arg3: int): java.net.Socket
                 public getDefaultCipherSuites(): java.lang.String[]
                 public getSupportedCipherSuites(): java.lang.String[]
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ServerNameExtension extends sun.security.ssl.HelloExtension {
                 public toString(): string
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ServerNameExtension$UnknownServerName extends javax.net.ssl.SNIServerName {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             abstract class KeyManagerFactoryImpl extends javax.net.ssl.KeyManagerFactorySpi {
                 protected engineGetKeyManagers(): javax.net.ssl.KeyManager[]
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class KeyManagerFactoryImpl$X509 extends sun.security.ssl.KeyManagerFactoryImpl {
                 public constructor()
                 protected engineInit(arg0: java.security.KeyStore, arg1: char[]): void
                 protected engineInit(arg0: javax.net.ssl.ManagerFactoryParameters): void
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class KeyManagerFactoryImpl$SunX509 extends sun.security.ssl.KeyManagerFactoryImpl {
                 public constructor()
                 protected engineInit(arg0: java.security.KeyStore, arg1: char[]): void
                 protected engineInit(arg0: javax.net.ssl.ManagerFactoryParameters): void
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLServerSocketImpl extends javax.net.ssl.SSLServerSocket {
                 public getSupportedCipherSuites(): java.lang.String[]
@@ -314,22 +314,22 @@ declare namespace sun {
                 public setSSLParameters(arg0: javax.net.ssl.SSLParameters): void
                 public accept(): java.net.Socket
                 public toString(): string
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLAlgorithmConstraints implements java.security.AlgorithmConstraints {
                 public permits(arg0: java.util.Set<java.security.CryptoPrimitive>, arg1: string, arg2: java.security.AlgorithmParameters): boolean
                 public permits(arg0: java.util.Set<java.security.CryptoPrimitive>, arg1: java.security.Key): boolean
                 public permits(arg0: java.util.Set<java.security.CryptoPrimitive>, arg1: string, arg2: java.security.Key, arg3: java.security.AlgorithmParameters): boolean
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLAlgorithmConstraints$SupportedSignatureAlgorithmConstraints implements java.security.AlgorithmConstraints {
                 public permits(arg0: java.util.Set<java.security.CryptoPrimitive>, arg1: string, arg2: java.security.AlgorithmParameters): boolean
                 public permits(arg0: java.util.Set<java.security.CryptoPrimitive>, arg1: java.security.Key): boolean
                 public permits(arg0: java.util.Set<java.security.CryptoPrimitive>, arg1: string, arg2: java.security.Key, arg3: java.security.AlgorithmParameters): boolean
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ECDHCrypt {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             interface Krb5Proxy {
                 getClientSubject(arg0: java.security.AccessControlContext): javax.security.auth.Subject
@@ -352,12 +352,12 @@ declare namespace sun {
                 public getUnencryptedPreMasterSecret(): byte[]
                 public getPeerPrincipal(): java.security.Principal
                 public getLocalPrincipal(): java.security.Principal
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class KerberosClientKeyExchange$1 implements java.security.PrivilegedAction<java.lang.Class<any>> {
                 public run(): java.lang.Class<any>
                 public run(): java.lang.Object
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             namespace krb5 {
                 class Krb5ProxyImpl implements sun.security.ssl.Krb5Proxy {
@@ -369,10 +369,10 @@ declare namespace sun {
                     public getPrincipalHostName(arg0: java.security.Principal): string
                     public getServicePermission(arg0: string, arg1: string): java.security.Permission
                     public isRelated(arg0: javax.security.auth.Subject, arg1: java.security.Principal): boolean
-                    public class: java.lang.Class<any>
+                    public static class: java.lang.Class<any>
                 }
                 class KerberosPreMasterSecret {
-                    public class: java.lang.Class<any>
+                    public static class: java.lang.Class<any>
                 }
                 class KerberosClientKeyExchangeImpl extends sun.security.ssl.KerberosClientKeyExchange {
                     public constructor()
@@ -386,22 +386,22 @@ declare namespace sun {
                     public getLocalPrincipal(): javax.security.auth.kerberos.KerberosPrincipal
                     public getLocalPrincipal(): java.security.Principal
                     public getPeerPrincipal(): java.security.Principal
-                    public class: java.lang.Class<any>
+                    public static class: java.lang.Class<any>
                 }
                 class KerberosClientKeyExchangeImpl$3 implements java.security.PrivilegedExceptionAction<javax.security.auth.kerberos.KerberosTicket> {
                     public run(): javax.security.auth.kerberos.KerberosTicket
                     public run(): java.lang.Object
-                    public class: java.lang.Class<any>
+                    public static class: java.lang.Class<any>
                 }
                 class KerberosClientKeyExchangeImpl$2 implements java.security.PrivilegedAction<java.lang.String> {
                     public run(): string
                     public run(): java.lang.Object
-                    public class: java.lang.Class<any>
+                    public static class: java.lang.Class<any>
                 }
                 class KerberosClientKeyExchangeImpl$1 implements java.security.PrivilegedAction<javax.security.auth.kerberos.KerberosKey[]> {
                     public run(): javax.security.auth.kerberos.KerberosKey[]
                     public run(): java.lang.Object
-                    public class: java.lang.Class<any>
+                    public static class: java.lang.Class<any>
                 }
             }
             class X509KeyManagerImpl extends javax.net.ssl.X509ExtendedKeyManager implements javax.net.ssl.X509KeyManager {
@@ -414,10 +414,10 @@ declare namespace sun {
                 public getClientAliases(arg0: string, arg1: java.security.Principal[]): java.lang.String[]
                 public getServerAliases(arg0: string, arg1: java.security.Principal[]): java.lang.String[]
                 public getAliases(arg0: string, arg1: java.security.Principal[], arg2: sun.security.ssl.X509KeyManagerImpl$CheckType, arg3: java.security.AlgorithmConstraints): java.lang.String[]
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class X509KeyManagerImpl$1 {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class X509KeyManagerImpl$CheckResult extends java.lang.Enum<sun.security.ssl.X509KeyManagerImpl$CheckResult> {
                 public static OK: sun.security.ssl.X509KeyManagerImpl$CheckResult
@@ -426,7 +426,7 @@ declare namespace sun {
                 public static EXTENSION_MISMATCH: sun.security.ssl.X509KeyManagerImpl$CheckResult
                 public static values(): sun.security.ssl.X509KeyManagerImpl$CheckResult[]
                 public static valueOf(arg0: string): sun.security.ssl.X509KeyManagerImpl$CheckResult
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class X509KeyManagerImpl$CheckType extends java.lang.Enum<sun.security.ssl.X509KeyManagerImpl$CheckType> {
                 public static NONE: sun.security.ssl.X509KeyManagerImpl$CheckType
@@ -434,40 +434,40 @@ declare namespace sun {
                 public static SERVER: sun.security.ssl.X509KeyManagerImpl$CheckType
                 public static values(): sun.security.ssl.X509KeyManagerImpl$CheckType[]
                 public static valueOf(arg0: string): sun.security.ssl.X509KeyManagerImpl$CheckType
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class X509KeyManagerImpl$EntryStatus implements java.lang.Comparable<sun.security.ssl.X509KeyManagerImpl$EntryStatus> {
                 public compareTo(arg0: sun.security.ssl.X509KeyManagerImpl$EntryStatus): int
                 public toString(): string
                 public compareTo(arg0: java.lang.Object): int
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class X509KeyManagerImpl$KeyType {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class X509KeyManagerImpl$SizedMap<K, V> extends java.util.LinkedHashMap<K, V> {
                 protected removeEldestEntry(arg0: java.util.Map$Entry<K, V>): boolean
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class DHClientKeyExchange extends sun.security.ssl.HandshakeMessage {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SecureKey {
                 public hashCode(): int
                 public equals(arg0: java.lang.Object): boolean
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SessionId {
                 public toString(): string
                 public hashCode(): int
                 public equals(arg0: java.lang.Object): boolean
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class RandomCookie {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SignatureAndHashAlgorithm {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SignatureAndHashAlgorithm$SignatureAlgorithm extends java.lang.Enum<sun.security.ssl.SignatureAndHashAlgorithm$SignatureAlgorithm> {
                 public static UNDEFINED: sun.security.ssl.SignatureAndHashAlgorithm$SignatureAlgorithm
@@ -477,7 +477,7 @@ declare namespace sun {
                 public static ECDSA: sun.security.ssl.SignatureAndHashAlgorithm$SignatureAlgorithm
                 public static values(): sun.security.ssl.SignatureAndHashAlgorithm$SignatureAlgorithm[]
                 public static valueOf(arg0: string): sun.security.ssl.SignatureAndHashAlgorithm$SignatureAlgorithm
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SignatureAndHashAlgorithm$HashAlgorithm extends java.lang.Enum<sun.security.ssl.SignatureAndHashAlgorithm$HashAlgorithm> {
                 public static UNDEFINED: sun.security.ssl.SignatureAndHashAlgorithm$HashAlgorithm
@@ -490,7 +490,7 @@ declare namespace sun {
                 public static SHA512: sun.security.ssl.SignatureAndHashAlgorithm$HashAlgorithm
                 public static values(): sun.security.ssl.SignatureAndHashAlgorithm$HashAlgorithm[]
                 public static valueOf(arg0: string): sun.security.ssl.SignatureAndHashAlgorithm$HashAlgorithm
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLSessionContextImpl implements javax.net.ssl.SSLSessionContext {
                 public getSession(arg0: byte[]): javax.net.ssl.SSLSession
@@ -499,49 +499,49 @@ declare namespace sun {
                 public getSessionTimeout(): int
                 public setSessionCacheSize(arg0: int): void
                 public getSessionCacheSize(): int
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLSessionContextImpl$SessionCacheVisitor implements sun.security.util.Cache$CacheVisitor<sun.security.ssl.SessionId, sun.security.ssl.SSLSessionImpl> {
                 public visit(arg0: java.util.Map<sun.security.ssl.SessionId, sun.security.ssl.SSLSessionImpl>): void
                 public getSessionIds(): java.util.Enumeration<byte[]>
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLSessionContextImpl$1 implements java.security.PrivilegedAction<java.lang.String> {
                 public run(): string
                 public run(): java.lang.Object
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class EphemeralKeyManager {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class EphemeralKeyManager$1 {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class EphemeralKeyManager$EphemeralKeyPair {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class EngineArgs {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class EngineOutputRecord extends sun.security.ssl.OutputRecord {
                 public flush(): void
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class EngineInputRecord extends sun.security.ssl.InputRecord {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class EngineWriter {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ProtocolList {
                 public toString(): string
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class AppOutputStream extends java.io.OutputStream {
                 public write(arg0: byte[], arg1: int, arg2: int): void
                 public write(arg0: int): void
                 public close(): void
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class AppInputStream extends java.io.InputStream {
                 public available(): int
@@ -549,7 +549,7 @@ declare namespace sun {
                 public read(arg0: byte[], arg1: int, arg2: int): int
                 public skip(arg0: long): long
                 public close(): void
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLSessionImpl extends javax.net.ssl.ExtendedSSLSession {
                 public isValid(): boolean
@@ -583,66 +583,66 @@ declare namespace sun {
                 public getRequestedServerNames(): java.util.List<javax.net.ssl.SNIServerName>
                 public toString(): string
                 protected finalize(): void
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             abstract class Handshaker {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class Handshaker$DelegatedTask<E> implements java.lang.Runnable {
                 public run(): void
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class Handshaker$1 implements java.security.PrivilegedExceptionAction<java.lang.Void> {
                 public run(): java.lang.Void
                 public run(): java.lang.Object
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             abstract class HandshakeMessage {
                 public static debug: sun.security.ssl.Debug
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class HandshakeMessage$Finished extends sun.security.ssl.HandshakeMessage {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class HandshakeMessage$CertificateVerify extends sun.security.ssl.HandshakeMessage {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class HandshakeMessage$CertificateVerify$1 implements java.security.PrivilegedAction<java.lang.Object> {
                 public run(): java.lang.Object
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class HandshakeMessage$ServerHelloDone extends sun.security.ssl.HandshakeMessage {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class HandshakeMessage$CertificateRequest extends sun.security.ssl.HandshakeMessage {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class HandshakeMessage$DistinguishedName {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class HandshakeMessage$ECDH_ServerKeyExchange extends sun.security.ssl.HandshakeMessage$ServerKeyExchange {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class HandshakeMessage$DH_ServerKeyExchange extends sun.security.ssl.HandshakeMessage$ServerKeyExchange {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class HandshakeMessage$RSA_ServerKeyExchange extends sun.security.ssl.HandshakeMessage$ServerKeyExchange {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             abstract class HandshakeMessage$ServerKeyExchange extends sun.security.ssl.HandshakeMessage {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class HandshakeMessage$CertificateMsg extends sun.security.ssl.HandshakeMessage {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class HandshakeMessage$ServerHello extends sun.security.ssl.HandshakeMessage {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class HandshakeMessage$ClientHello extends sun.security.ssl.HandshakeMessage {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class HandshakeMessage$HelloRequest extends sun.security.ssl.HandshakeMessage {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             abstract class SSLContextImpl extends javax.net.ssl.SSLContextSpi {
                 protected engineInit(arg0: javax.net.ssl.KeyManager[], arg1: javax.net.ssl.TrustManager[], arg2: java.security.SecureRandom): void
@@ -652,69 +652,69 @@ declare namespace sun {
                 protected engineCreateSSLEngine(arg0: string, arg1: int): javax.net.ssl.SSLEngine
                 protected engineGetClientSessionContext(): javax.net.ssl.SSLSessionContext
                 protected engineGetServerSessionContext(): javax.net.ssl.SSLSessionContext
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLContextImpl$1 {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLContextImpl$DefaultSSLContext extends sun.security.ssl.SSLContextImpl$CustomizedTLSContext {
                 public constructor()
                 protected engineInit(arg0: javax.net.ssl.KeyManager[], arg1: javax.net.ssl.TrustManager[], arg2: java.security.SecureRandom): void
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLContextImpl$DefaultSSLContext$2 implements java.security.PrivilegedExceptionAction<java.io.FileInputStream> {
                 public run(): java.io.FileInputStream
                 public run(): java.lang.Object
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLContextImpl$DefaultSSLContext$1 implements java.security.PrivilegedExceptionAction<java.lang.Object> {
                 public run(): java.lang.Object
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLContextImpl$TLSContext extends sun.security.ssl.SSLContextImpl$CustomizedTLSContext {
                 public constructor()
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLContextImpl$CustomizedSSLContext extends sun.security.ssl.SSLContextImpl$AbstractSSLContext {
                 protected constructor()
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLContextImpl$TLS12Context extends sun.security.ssl.SSLContextImpl$AbstractTLSContext {
                 public constructor()
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLContextImpl$TLS11Context extends sun.security.ssl.SSLContextImpl$AbstractTLSContext {
                 public constructor()
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLContextImpl$TLS10Context extends sun.security.ssl.SSLContextImpl$AbstractTLSContext {
                 public constructor()
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             abstract class SSLContextImpl$AbstractSSLContext extends sun.security.ssl.SSLContextImpl {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class CipherSuiteList {
                 public toString(): string
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class CipherSuiteList$1 {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class MAC extends sun.security.ssl.Authenticator {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class CipherBox {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class CipherBox$1 {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class CipherSuite implements java.lang.Comparable<sun.security.ssl.CipherSuite> {
                 public compareTo(arg0: sun.security.ssl.CipherSuite): int
                 public toString(): string
                 public compareTo(arg0: java.lang.Object): int
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class CipherSuite$PRF extends java.lang.Enum<sun.security.ssl.CipherSuite$PRF> {
                 public static P_NONE: sun.security.ssl.CipherSuite$PRF
@@ -723,15 +723,15 @@ declare namespace sun {
                 public static P_SHA512: sun.security.ssl.CipherSuite$PRF
                 public static values(): sun.security.ssl.CipherSuite$PRF[]
                 public static valueOf(arg0: string): sun.security.ssl.CipherSuite$PRF
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class CipherSuite$MacAlg {
                 public toString(): string
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class CipherSuite$BulkCipher {
                 public toString(): string
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class CipherSuite$CipherType extends java.lang.Enum<sun.security.ssl.CipherSuite$CipherType> {
                 public static STREAM_CIPHER: sun.security.ssl.CipherSuite$CipherType
@@ -739,7 +739,7 @@ declare namespace sun {
                 public static AEAD_CIPHER: sun.security.ssl.CipherSuite$CipherType
                 public static values(): sun.security.ssl.CipherSuite$CipherType[]
                 public static valueOf(arg0: string): sun.security.ssl.CipherSuite$CipherType
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class CipherSuite$KeyExchange extends java.lang.Enum<sun.security.ssl.CipherSuite$KeyExchange> {
                 public static K_NULL: sun.security.ssl.CipherSuite$KeyExchange
@@ -761,25 +761,25 @@ declare namespace sun {
                 public static values(): sun.security.ssl.CipherSuite$KeyExchange[]
                 public static valueOf(arg0: string): sun.security.ssl.CipherSuite$KeyExchange
                 public toString(): string
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class JsseJce {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class JsseJce$SunCertificates extends java.security.Provider {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class JsseJce$SunCertificates$1 implements java.security.PrivilegedAction<java.lang.Object> {
                 public run(): java.lang.Object
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class JsseJce$1 implements java.security.PrivilegedExceptionAction<java.lang.Void> {
                 public run(): java.lang.Void
                 public run(): java.lang.Object
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class Authenticator {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class Debug {
                 public constructor()
@@ -791,7 +791,7 @@ declare namespace sun {
                 public println(): void
                 public static println(arg0: string, arg1: string): void
                 public static println(arg0: java.io.PrintStream, arg1: string, arg2: byte[]): void
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ProtocolVersion implements java.lang.Comparable<sun.security.ssl.ProtocolVersion> {
                 public v: int
@@ -801,11 +801,11 @@ declare namespace sun {
                 public toString(): string
                 public compareTo(arg0: sun.security.ssl.ProtocolVersion): int
                 public compareTo(arg0: java.lang.Object): int
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class OutputRecord extends java.io.ByteArrayOutputStream implements sun.security.ssl.Record {
                 public reset(): void
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLEngineImpl extends javax.net.ssl.SSLEngine {
                 public getHandshakeStatus(): javax.net.ssl.SSLEngineResult$HandshakeStatus
@@ -836,7 +836,7 @@ declare namespace sun {
                 public getSSLParameters(): javax.net.ssl.SSLParameters
                 public setSSLParameters(arg0: javax.net.ssl.SSLParameters): void
                 public toString(): string
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             abstract class BaseSSLSocketImpl extends javax.net.ssl.SSLSocket {
                 public getChannel(): java.nio.channels.SocketChannel
@@ -879,7 +879,7 @@ declare namespace sun {
                 public getOutputStream(): java.io.OutputStream
                 public close(): void
                 public setSoTimeout(arg0: int): void
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLSocketImpl extends sun.security.ssl.BaseSSLSocketImpl {
                 public connect(arg0: java.net.SocketAddress, arg1: int): void
@@ -916,19 +916,19 @@ declare namespace sun {
                 public getRemoteSocketAddress(): java.net.SocketAddress
                 public getLocalSocketAddress(): java.net.SocketAddress
                 public bind(arg0: java.net.SocketAddress): void
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLSocketImpl$NotifyHandshakeThread extends java.lang.Thread {
                 public run(): void
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SSLSocketImpl$NotifyHandshakeThread$1 implements java.security.PrivilegedAction<java.lang.Void> {
                 public run(): java.lang.Void
                 public run(): java.lang.Object
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class HandshakeHash {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             interface Record {
                 ct_change_cipher_spec: byte
@@ -953,18 +953,18 @@ declare namespace sun {
             }
             class InputRecord extends java.io.ByteArrayInputStream implements sun.security.ssl.Record {
                 public close(): void
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class HandshakeOutStream extends java.io.OutputStream {
                 public write(arg0: byte[], arg1: int, arg2: int): void
                 public write(arg0: int): void
                 public flush(): void
                 public putBytes16(arg0: byte[]): void
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class ExtensionType {
                 public toString(): string
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class HandshakeInStream extends java.io.InputStream {
                 public available(): int
@@ -975,14 +975,14 @@ declare namespace sun {
                 public reset(): void
                 public markSupported(): boolean
                 public getBytes16(): byte[]
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             abstract class HelloExtension {
                 public toString(): string
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class HelloExtensions {
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             abstract class SunJSSE extends java.security.Provider {
                 protected static isFIPS(): boolean
@@ -990,17 +990,17 @@ declare namespace sun {
                 protected constructor(arg0: java.security.Provider)
                 protected constructor(arg0: string)
                 protected finalize(): void
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
             class SunJSSE$1 implements java.security.PrivilegedAction<java.lang.Object> {
                 public run(): java.lang.Object
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
         }
         namespace provider {
             class Sun extends java.security.Provider {
                 public constructor()
-                public class: java.lang.Class<any>
+                public static class: java.lang.Class<any>
             }
         }
     }

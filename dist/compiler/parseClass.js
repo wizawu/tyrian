@@ -250,7 +250,7 @@ function default_1(source, pkg) {
             case "END":
                 if (!ignore) {
                     if (!isInterface)
-                        buffer.push({ line: "    public class: java.lang.Class<any>" });
+                        buffer.push({ line: "    public static class: java.lang.Class<any>" });
                     buffer.push(item);
                     var className = item.name.replace(/^(\w+\.)+/, "");
                     var ns = item.name.substring(0, item.name.length - className.length - 1);

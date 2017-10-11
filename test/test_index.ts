@@ -82,7 +82,7 @@ describe("Client", () => {
                 "a"
             )
             assert.strictEqual(
-                client.jdbcTemplate.queryForObject(`SELECT id FROM ${table} WHERE value = 'b'`, (java.lang.Integer as any).class),
+                client.jdbcTemplate.queryForObject(`SELECT id FROM ${table} WHERE value = 'b'`, java.lang.Integer.class),
                 2
             )
         }
@@ -113,11 +113,11 @@ describe("Client", () => {
         client.ensureColumn(table, "list", "JSON")
         client.insert(table, { id: 1, list: [2, 3] })
         assert.strictEqual(
-            client.jdbcTemplate.queryForObject(`SELECT json_contains(list, '2') FROM ${table}`, (java.lang.Boolean as any).class),
+            client.jdbcTemplate.queryForObject(`SELECT json_contains(list, '2') FROM ${table}`, java.lang.Boolean.class),
             true
         )
         assert.strictEqual(
-            client.jdbcTemplate.queryForObject(`SELECT json_contains(list, '4') FROM ${table}`, (java.lang.Boolean as any).class),
+            client.jdbcTemplate.queryForObject(`SELECT json_contains(list, '4') FROM ${table}`, java.lang.Boolean.class),
             false
         )
         client.insert(table, { id: 4, list: { value: [5, 6] } })

@@ -1,3 +1,7 @@
+export declare const BIGINT = "BIGINT";
+export declare const BOOL = "BOOL";
+export declare const TEXT = "TEXT";
+export declare const VARCHAR: (length: number) => string;
 export interface Options {
     host: string;
     port: int;

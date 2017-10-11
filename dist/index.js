@@ -3,6 +3,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var JdbcTemplate = org.springframework.jdbc.core.JdbcTemplate;
 var MysqlDataSource = com.mysql.cj.jdbc.MysqlDataSource;
 var RowMapper = Java.type("org.springframework.jdbc.core.RowMapper");
+exports.BIGINT = "BIGINT";
+exports.BOOL = "BOOL";
+exports.TEXT = "TEXT";
+exports.VARCHAR = function (length) { return "VARCHAR(" + length + ")"; };
 exports.mapRow = new RowMapper({
     mapRow: function (resultSet) {
         var json = {};

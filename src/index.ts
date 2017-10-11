@@ -2,6 +2,11 @@ const JdbcTemplate = org.springframework.jdbc.core.JdbcTemplate
 const MysqlDataSource = com.mysql.cj.jdbc.MysqlDataSource
 const RowMapper = Java.type("org.springframework.jdbc.core.RowMapper")
 
+export const BIGINT = "BIGINT"
+export const BOOL = "BOOL"
+export const TEXT = "TEXT"
+export const VARCHAR = (length: number) => `VARCHAR(${length})`
+
 export interface Options {
     host: string
     port: int

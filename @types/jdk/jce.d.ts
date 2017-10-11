@@ -22,6 +22,7 @@ declare namespace sun {
                     public getClientIv(): javax.crypto.spec.IvParameterSpec
                     public getServerCipherKey(): javax.crypto.SecretKey
                     public getServerIv(): javax.crypto.spec.IvParameterSpec
+                    public class: java.lang.Class<any>
                 }
                 class TlsKeyMaterialParameterSpec implements java.security.spec.AlgorithmParameterSpec {
                     public constructor(arg0: javax.crypto.SecretKey, arg1: int, arg2: int, arg3: byte[], arg4: byte[], arg5: string, arg6: int, arg7: int, arg8: int, arg9: int, arg10: string, arg11: int, arg12: int)
@@ -38,6 +39,7 @@ declare namespace sun {
                     public getPRFHashAlg(): string
                     public getPRFHashLength(): int
                     public getPRFBlockSize(): int
+                    public class: java.lang.Class<any>
                 }
                 class TlsRsaPremasterSecretParameterSpec implements java.security.spec.AlgorithmParameterSpec {
                     public constructor(arg0: int, arg1: int)
@@ -47,10 +49,12 @@ declare namespace sun {
                     public getMajorVersion(): int
                     public getMinorVersion(): int
                     public getEncodedSecret(): byte[]
+                    public class: java.lang.Class<any>
                 }
                 class TlsRsaPremasterSecretParameterSpec$1 implements java.security.PrivilegedAction<java.lang.Boolean> {
                     public run(): boolean
                     public run(): java.lang.Object
+                    public class: java.lang.Class<any>
                 }
                 class TlsMasterSecretParameterSpec implements java.security.spec.AlgorithmParameterSpec {
                     public constructor(arg0: javax.crypto.SecretKey, arg1: int, arg2: int, arg3: byte[], arg4: byte[], arg5: string, arg6: int, arg7: int)
@@ -62,6 +66,7 @@ declare namespace sun {
                     public getPRFHashAlg(): string
                     public getPRFHashLength(): int
                     public getPRFBlockSize(): int
+                    public class: java.lang.Class<any>
                 }
                 class TlsPrfParameterSpec implements java.security.spec.AlgorithmParameterSpec {
                     public constructor(arg0: javax.crypto.SecretKey, arg1: string, arg2: byte[], arg3: int, arg4: string, arg5: int, arg6: int)
@@ -72,6 +77,7 @@ declare namespace sun {
                     public getPRFHashAlg(): string
                     public getPRFHashLength(): int
                     public getPRFBlockSize(): int
+                    public class: java.lang.Class<any>
                 }
             }
         }
@@ -80,13 +86,16 @@ declare namespace sun {
 declare namespace javax {
     namespace crypto {
         class JceSecurity {
+            public class: java.lang.Class<any>
         }
         class JceSecurity$2 implements java.security.PrivilegedAction<java.net.URL> {
             public run(): java.net.URL
             public run(): java.lang.Object
+            public class: java.lang.Class<any>
         }
         class JceSecurity$1 implements java.security.PrivilegedExceptionAction<java.lang.Object> {
             public run(): java.lang.Object
+            public class: java.lang.Class<any>
         }
         class EncryptedPrivateKeyInfo {
             public constructor(arg0: byte[])
@@ -100,6 +109,7 @@ declare namespace javax {
             public getKeySpec(arg0: java.security.Key, arg1: string): java.security.spec.PKCS8EncodedKeySpec
             public getKeySpec(arg0: java.security.Key, arg1: java.security.Provider): java.security.spec.PKCS8EncodedKeySpec
             public getEncoded(): byte[]
+            public class: java.lang.Class<any>
         }
         class CipherOutputStream extends java.io.FilterOutputStream {
             public constructor(arg0: java.io.OutputStream, arg1: javax.crypto.Cipher)
@@ -109,6 +119,7 @@ declare namespace javax {
             public write(arg0: byte[], arg1: int, arg2: int): void
             public flush(): void
             public close(): void
+            public class: java.lang.Class<any>
         }
         class CipherInputStream extends java.io.FilterInputStream {
             public constructor(arg0: java.io.InputStream, arg1: javax.crypto.Cipher)
@@ -120,11 +131,13 @@ declare namespace javax {
             public available(): int
             public close(): void
             public markSupported(): boolean
+            public class: java.lang.Class<any>
         }
         class CryptoAllPermissionCollection extends java.security.PermissionCollection implements java.io.Serializable {
             public add(arg0: java.security.Permission): void
             public implies(arg0: java.security.Permission): boolean
             public elements(): java.util.Enumeration<java.security.Permission>
+            public class: java.lang.Class<any>
         }
         class SecretKeyFactory {
             protected constructor(arg0: javax.crypto.SecretKeyFactorySpi, arg1: java.security.Provider, arg2: string)
@@ -136,22 +149,27 @@ declare namespace javax {
             public generateSecret(arg0: java.security.spec.KeySpec): javax.crypto.SecretKey
             public getKeySpec(arg0: javax.crypto.SecretKey, arg1: java.lang.Class<any>): java.security.spec.KeySpec
             public translateKey(arg0: javax.crypto.SecretKey): javax.crypto.SecretKey
+            public class: java.lang.Class<any>
         }
         class CryptoPermissionCollection extends java.security.PermissionCollection implements java.io.Serializable {
             public add(arg0: java.security.Permission): void
             public implies(arg0: java.security.Permission): boolean
             public elements(): java.util.Enumeration<java.security.Permission>
+            public class: java.lang.Class<any>
         }
         class NullCipher extends javax.crypto.Cipher {
             public constructor()
+            public class: java.lang.Class<any>
         }
         class PermissionsEnumerator implements java.util.Enumeration<java.security.Permission> {
             public hasMoreElements(): boolean
             public nextElement(): java.security.Permission
             public nextElement(): java.lang.Object
+            public class: java.lang.Class<any>
         }
         class extObjectInputStream extends java.io.ObjectInputStream {
             protected resolveClass(arg0: java.io.ObjectStreamClass): java.lang.Class<any>
+            public class: java.lang.Class<any>
         }
         class NullCipherSpi extends javax.crypto.CipherSpi {
             protected constructor()
@@ -169,39 +187,50 @@ declare namespace javax {
             protected engineDoFinal(arg0: byte[], arg1: int, arg2: int): byte[]
             protected engineDoFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
             protected engineGetKeySize(arg0: java.security.Key): int
+            public class: java.lang.Class<any>
         }
         class CryptoAllPermission extends javax.crypto.CryptoPermission {
             public implies(arg0: java.security.Permission): boolean
             public equals(arg0: java.lang.Object): boolean
             public hashCode(): int
             public newPermissionCollection(): java.security.PermissionCollection
+            public class: java.lang.Class<any>
         }
         class JceSecurityManager extends java.lang.SecurityManager {
+            public class: java.lang.Class<any>
         }
         class JceSecurityManager$1 implements java.security.PrivilegedAction<javax.crypto.JceSecurityManager> {
             public run(): javax.crypto.JceSecurityManager
             public run(): java.lang.Object
+            public class: java.lang.Class<any>
         }
         class CryptoPolicyParser {
+            public class: java.lang.Class<any>
         }
         class CryptoPolicyParser$ParsingException extends java.security.GeneralSecurityException {
+            public class: java.lang.Class<any>
         }
         class CryptoPolicyParser$CryptoPermissionEntry {
             public hashCode(): int
             public equals(arg0: java.lang.Object): boolean
+            public class: java.lang.Class<any>
         }
         class CryptoPolicyParser$GrantEntry {
+            public class: java.lang.Class<any>
         }
         class CryptoPermissions extends java.security.PermissionCollection implements java.io.Serializable {
             public add(arg0: java.security.Permission): void
             public implies(arg0: java.security.Permission): boolean
             public elements(): java.util.Enumeration<java.security.Permission>
+            public class: java.lang.Class<any>
         }
         class JarVerifier {
+            public class: java.lang.Class<any>
         }
         class JarVerifier$1 implements java.security.PrivilegedExceptionAction<java.util.jar.JarFile> {
             public run(): java.util.jar.JarFile
             public run(): java.lang.Object
+            public class: java.lang.Class<any>
         }
         class KeyGenerator {
             protected constructor(arg0: javax.crypto.KeyGeneratorSpi, arg1: java.security.Provider, arg2: string)
@@ -216,6 +245,7 @@ declare namespace javax {
             public init(arg0: int): void
             public init(arg0: int, arg1: java.security.SecureRandom): void
             public generateKey(): javax.crypto.SecretKey
+            public class: java.lang.Class<any>
         }
         class KeyAgreement {
             protected constructor(arg0: javax.crypto.KeyAgreementSpi, arg1: java.security.Provider, arg2: string)
@@ -232,10 +262,12 @@ declare namespace javax {
             public generateSecret(): byte[]
             public generateSecret(arg0: byte[], arg1: int): int
             public generateSecret(arg0: string): javax.crypto.SecretKey
+            public class: java.lang.Class<any>
         }
         class ExemptionMechanismException extends java.security.GeneralSecurityException {
             public constructor()
             public constructor(arg0: string)
+            public class: java.lang.Class<any>
         }
         abstract class ExemptionMechanismSpi {
             public constructor()
@@ -245,10 +277,12 @@ declare namespace javax {
             protected engineInit(arg0: java.security.Key, arg1: java.security.AlgorithmParameters): void
             protected engineGenExemptionBlob(): byte[]
             protected engineGenExemptionBlob(arg0: byte[], arg1: int): int
+            public class: java.lang.Class<any>
         }
         class NoSuchPaddingException extends java.security.GeneralSecurityException {
             public constructor()
             public constructor(arg0: string)
+            public class: java.lang.Class<any>
         }
         class ExemptionMechanism {
             protected constructor(arg0: javax.crypto.ExemptionMechanismSpi, arg1: java.security.Provider, arg2: string)
@@ -266,6 +300,7 @@ declare namespace javax {
             public genExemptionBlob(arg0: byte[]): int
             public genExemptionBlob(arg0: byte[], arg1: int): int
             protected finalize(): void
+            public class: java.lang.Class<any>
         }
         class CryptoPermission extends java.security.Permission {
             public implies(arg0: java.security.Permission): boolean
@@ -274,6 +309,7 @@ declare namespace javax {
             public getActions(): string
             public newPermissionCollection(): java.security.PermissionCollection
             public toString(): string
+            public class: java.lang.Class<any>
         }
         abstract class CipherSpi {
             public constructor()
@@ -297,6 +333,7 @@ declare namespace javax {
             protected engineGetKeySize(arg0: java.security.Key): int
             protected engineUpdateAAD(arg0: byte[], arg1: int, arg2: int): void
             protected engineUpdateAAD(arg0: java.nio.ByteBuffer): void
+            public class: java.lang.Class<any>
         }
         class Cipher {
             public static ENCRYPT_MODE: int
@@ -344,8 +381,10 @@ declare namespace javax {
             public updateAAD(arg0: byte[]): void
             public updateAAD(arg0: byte[], arg1: int, arg2: int): void
             public updateAAD(arg0: java.nio.ByteBuffer): void
+            public class: java.lang.Class<any>
         }
         class Cipher$Transform {
+            public class: java.lang.Class<any>
         }
         class SealedObject implements java.io.Serializable {
             protected encodedParams: byte[]
@@ -355,6 +394,7 @@ declare namespace javax {
             public getObject(arg0: java.security.Key): java.lang.Object
             public getObject(arg0: javax.crypto.Cipher): java.lang.Object
             public getObject(arg0: java.security.Key, arg1: string): java.lang.Object
+            public class: java.lang.Class<any>
         }
         class Mac implements java.lang.Cloneable {
             protected constructor(arg0: javax.crypto.MacSpi, arg1: java.security.Provider, arg2: string)
@@ -375,6 +415,7 @@ declare namespace javax {
             public doFinal(arg0: byte[]): byte[]
             public reset(): void
             public clone(): java.lang.Object
+            public class: java.lang.Class<any>
         }
         namespace interfaces {
             interface DHPrivateKey extends javax.crypto.interfaces.DHKey , java.security.PrivateKey {
@@ -404,6 +445,7 @@ declare namespace javax {
             protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
             protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
             protected engineGenerateKey(): javax.crypto.SecretKey
+            public class: java.lang.Class<any>
         }
         namespace spec {
             class GCMParameterSpec implements java.security.spec.AlgorithmParameterSpec {
@@ -411,6 +453,7 @@ declare namespace javax {
                 public constructor(arg0: int, arg1: byte[], arg2: int, arg3: int)
                 public getTLen(): int
                 public getIV(): byte[]
+                public class: java.lang.Class<any>
             }
             class SecretKeySpec implements java.security.spec.KeySpec , javax.crypto.SecretKey {
                 public constructor(arg0: byte[], arg1: string)
@@ -420,12 +463,14 @@ declare namespace javax {
                 public getEncoded(): byte[]
                 public hashCode(): int
                 public equals(arg0: java.lang.Object): boolean
+                public class: java.lang.Class<any>
             }
             class DHPrivateKeySpec implements java.security.spec.KeySpec {
                 public constructor(arg0: java.math.BigInteger, arg1: java.math.BigInteger, arg2: java.math.BigInteger)
                 public getX(): java.math.BigInteger
                 public getP(): java.math.BigInteger
                 public getG(): java.math.BigInteger
+                public class: java.lang.Class<any>
             }
             class DESedeKeySpec implements java.security.spec.KeySpec {
                 public static DES_EDE_KEY_LEN: int
@@ -433,6 +478,7 @@ declare namespace javax {
                 public constructor(arg0: byte[], arg1: int)
                 public getKey(): byte[]
                 public static isParityAdjusted(arg0: byte[], arg1: int): boolean
+                public class: java.lang.Class<any>
             }
             class RC2ParameterSpec implements java.security.spec.AlgorithmParameterSpec {
                 public constructor(arg0: int)
@@ -442,11 +488,13 @@ declare namespace javax {
                 public getIV(): byte[]
                 public equals(arg0: java.lang.Object): boolean
                 public hashCode(): int
+                public class: java.lang.Class<any>
             }
             class DHGenParameterSpec implements java.security.spec.AlgorithmParameterSpec {
                 public constructor(arg0: int, arg1: int)
                 public getPrimeSize(): int
                 public getExponentSize(): int
+                public class: java.lang.Class<any>
             }
             class RC5ParameterSpec implements java.security.spec.AlgorithmParameterSpec {
                 public constructor(arg0: int, arg1: int, arg2: int)
@@ -458,6 +506,7 @@ declare namespace javax {
                 public getIV(): byte[]
                 public equals(arg0: java.lang.Object): boolean
                 public hashCode(): int
+                public class: java.lang.Class<any>
             }
             class DESKeySpec implements java.security.spec.KeySpec {
                 public static DES_KEY_LEN: int
@@ -466,6 +515,7 @@ declare namespace javax {
                 public getKey(): byte[]
                 public static isParityAdjusted(arg0: byte[], arg1: int): boolean
                 public static isWeak(arg0: byte[], arg1: int): boolean
+                public class: java.lang.Class<any>
             }
             class PBEParameterSpec implements java.security.spec.AlgorithmParameterSpec {
                 public constructor(arg0: byte[], arg1: int)
@@ -473,15 +523,18 @@ declare namespace javax {
                 public getSalt(): byte[]
                 public getIterationCount(): int
                 public getParameterSpec(): java.security.spec.AlgorithmParameterSpec
+                public class: java.lang.Class<any>
             }
             class PSource {
                 protected constructor(arg0: string)
                 public getAlgorithm(): string
+                public class: java.lang.Class<any>
             }
             class PSource$PSpecified extends javax.crypto.spec.PSource {
                 public static DEFAULT: javax.crypto.spec.PSource$PSpecified
                 public constructor(arg0: byte[])
                 public getValue(): byte[]
+                public class: java.lang.Class<any>
             }
             class OAEPParameterSpec implements java.security.spec.AlgorithmParameterSpec {
                 public static DEFAULT: javax.crypto.spec.OAEPParameterSpec
@@ -490,17 +543,20 @@ declare namespace javax {
                 public getMGFAlgorithm(): string
                 public getMGFParameters(): java.security.spec.AlgorithmParameterSpec
                 public getPSource(): javax.crypto.spec.PSource
+                public class: java.lang.Class<any>
             }
             class DHPublicKeySpec implements java.security.spec.KeySpec {
                 public constructor(arg0: java.math.BigInteger, arg1: java.math.BigInteger, arg2: java.math.BigInteger)
                 public getY(): java.math.BigInteger
                 public getP(): java.math.BigInteger
                 public getG(): java.math.BigInteger
+                public class: java.lang.Class<any>
             }
             class IvParameterSpec implements java.security.spec.AlgorithmParameterSpec {
                 public constructor(arg0: byte[])
                 public constructor(arg0: byte[], arg1: int, arg2: int)
                 public getIV(): byte[]
+                public class: java.lang.Class<any>
             }
             class DHParameterSpec implements java.security.spec.AlgorithmParameterSpec {
                 public constructor(arg0: java.math.BigInteger, arg1: java.math.BigInteger)
@@ -508,6 +564,7 @@ declare namespace javax {
                 public getP(): java.math.BigInteger
                 public getG(): java.math.BigInteger
                 public getL(): int
+                public class: java.lang.Class<any>
             }
             class PBEKeySpec implements java.security.spec.KeySpec {
                 public constructor(arg0: char[])
@@ -518,6 +575,7 @@ declare namespace javax {
                 public getSalt(): byte[]
                 public getIterationCount(): int
                 public getKeyLength(): int
+                public class: java.lang.Class<any>
             }
         }
         abstract class KeyAgreementSpi {
@@ -528,12 +586,14 @@ declare namespace javax {
             protected engineGenerateSecret(): byte[]
             protected engineGenerateSecret(arg0: byte[], arg1: int): int
             protected engineGenerateSecret(arg0: string): javax.crypto.SecretKey
+            public class: java.lang.Class<any>
         }
         abstract class SecretKeyFactorySpi {
             public constructor()
             protected engineGenerateSecret(arg0: java.security.spec.KeySpec): javax.crypto.SecretKey
             protected engineGetKeySpec(arg0: javax.crypto.SecretKey, arg1: java.lang.Class<any>): java.security.spec.KeySpec
             protected engineTranslateKey(arg0: javax.crypto.SecretKey): javax.crypto.SecretKey
+            public class: java.lang.Class<any>
         }
         interface SecretKey extends java.security.Key , javax.security.auth.Destroyable {
             serialVersionUID: long
@@ -541,18 +601,22 @@ declare namespace javax {
         class BadPaddingException extends java.security.GeneralSecurityException {
             public constructor()
             public constructor(arg0: string)
+            public class: java.lang.Class<any>
         }
         class AEADBadTagException extends javax.crypto.BadPaddingException {
             public constructor()
             public constructor(arg0: string)
+            public class: java.lang.Class<any>
         }
         class ShortBufferException extends java.security.GeneralSecurityException {
             public constructor()
             public constructor(arg0: string)
+            public class: java.lang.Class<any>
         }
         class IllegalBlockSizeException extends java.security.GeneralSecurityException {
             public constructor()
             public constructor(arg0: string)
+            public class: java.lang.Class<any>
         }
         abstract class MacSpi {
             public constructor()
@@ -564,6 +628,7 @@ declare namespace javax {
             protected engineDoFinal(): byte[]
             protected engineReset(): void
             public clone(): java.lang.Object
+            public class: java.lang.Class<any>
         }
     }
 }

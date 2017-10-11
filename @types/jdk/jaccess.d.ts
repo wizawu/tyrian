@@ -11,27 +11,32 @@ declare namespace com {
                                 public getAccessibleName(): string
                                 public setAccessibleName(arg0: string): void
                                 public getAccessibleRole(): javax.accessibility.AccessibleRole
+                                public class: java.lang.Class<any>
                             }
                             class ButtonTranslator extends com.sun.java.accessibility.util.Translator {
                                 public constructor()
                                 public getAccessibleName(): string
                                 public setAccessibleName(arg0: string): void
                                 public getAccessibleRole(): javax.accessibility.AccessibleRole
+                                public class: java.lang.Class<any>
                             }
                             class ListTranslator extends com.sun.java.accessibility.util.Translator {
                                 public constructor()
                                 public getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
                                 public getAccessibleRole(): javax.accessibility.AccessibleRole
+                                public class: java.lang.Class<any>
                             }
                             class LabelTranslator extends com.sun.java.accessibility.util.Translator {
                                 public constructor()
                                 public getAccessibleName(): string
                                 public setAccessibleName(arg0: string): void
                                 public getAccessibleRole(): javax.accessibility.AccessibleRole
+                                public class: java.lang.Class<any>
                             }
                             class TextComponentTranslator extends com.sun.java.accessibility.util.Translator {
                                 public constructor()
                                 public getAccessibleRole(): javax.accessibility.AccessibleRole
+                                public class: java.lang.Class<any>
                             }
                         }
                     }
@@ -66,12 +71,15 @@ declare namespace com {
                         public static VETOABLECHANGE: int
                         public static INTERNALFRAME: int
                         public constructor()
+                        public class: java.lang.Class<any>
                     }
                     class ComponentEvtDispatchThread extends java.lang.Thread {
                         public constructor(arg0: string)
                         public run(): void
+                        public class: java.lang.Class<any>
                     }
                     class EventQueueMonitorItem {
+                        public class: java.lang.Class<any>
                     }
                     class EventQueueMonitor implements java.awt.event.AWTEventListener {
                         public constructor()
@@ -86,9 +94,11 @@ declare namespace com {
                         public static getCurrentMousePosition(): java.awt.Point
                         public static getTopLevelWindows(): java.awt.Window[]
                         public static getTopLevelWindowWithFocus(): java.awt.Window
+                        public class: java.lang.Class<any>
                     }
                     class EventQueueMonitor$1 implements java.security.PrivilegedAction {
                         public run(): java.lang.Object
+                        public class: java.lang.Class<any>
                     }
                     class Translator extends javax.accessibility.AccessibleContext implements javax.accessibility.Accessible , javax.accessibility.AccessibleComponent {
                         protected source: java.lang.Object
@@ -140,10 +150,12 @@ declare namespace com {
                         public requestFocus(): void
                         public addFocusListener(arg0: java.awt.event.FocusListener): void
                         public removeFocusListener(arg0: java.awt.event.FocusListener): void
+                        public class: java.lang.Class<any>
                     }
                     class _AccessibleState extends javax.accessibility.AccessibleState {
                         public static MANAGES_DESCENDANTS: com.sun.java.accessibility.util._AccessibleState
                         protected constructor(arg0: string)
+                        public class: java.lang.Class<any>
                     }
                     class AccessibilityEventMonitor {
                         protected static listenerList: com.sun.java.accessibility.util.AccessibilityListenerList
@@ -151,6 +163,7 @@ declare namespace com {
                         public constructor()
                         public static addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
                         public static removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+                        public class: java.lang.Class<any>
                     }
                     class AccessibilityEventMonitor$AccessibilityEventListener implements com.sun.java.accessibility.util.TopLevelWindowListener , java.beans.PropertyChangeListener {
                         public constructor()
@@ -161,6 +174,7 @@ declare namespace com {
                         public topLevelWindowCreated(arg0: java.awt.Window): void
                         public topLevelWindowDestroyed(arg0: java.awt.Window): void
                         public propertyChange(arg0: java.beans.PropertyChangeEvent): void
+                        public class: java.lang.Class<any>
                     }
                     class AccessibilityListenerList {
                         protected listenerList: java.lang.Object[]
@@ -171,6 +185,7 @@ declare namespace com {
                         public add(arg0: java.lang.Class, arg1: java.util.EventListener): void
                         public remove(arg0: java.lang.Class, arg1: java.util.EventListener): void
                         public toString(): string
+                        public class: java.lang.Class<any>
                     }
                     interface GUIInitializedListener extends java.util.EventListener {
                         guiInitialized(): void
@@ -182,6 +197,7 @@ declare namespace com {
                         public static remove(arg0: com.sun.java.accessibility.util.GUIInitializedListener, arg1: com.sun.java.accessibility.util.GUIInitializedListener): com.sun.java.accessibility.util.GUIInitializedListener
                         protected static addInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener
                         protected static removeInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener
+                        public class: java.lang.Class<any>
                     }
                     class AWTEventMonitor {
                         protected static componentWithFocus: java.awt.Component
@@ -221,6 +237,7 @@ declare namespace com {
                         public static removeItemListener(arg0: java.awt.event.ItemListener): void
                         public static addTextListener(arg0: java.awt.event.TextListener): void
                         public static removeTextListener(arg0: java.awt.event.TextListener): void
+                        public class: java.lang.Class<any>
                     }
                     class AWTEventMonitor$AWTEventsListener implements com.sun.java.accessibility.util.TopLevelWindowListener , java.awt.event.ActionListener , java.awt.event.AdjustmentListener , java.awt.event.ComponentListener , java.awt.event.ContainerListener , java.awt.event.FocusListener , java.awt.event.ItemListener , java.awt.event.KeyListener , java.awt.event.MouseListener , java.awt.event.MouseMotionListener , java.awt.event.TextListener , java.awt.event.WindowListener , javax.swing.event.ChangeListener {
                         public constructor()
@@ -263,6 +280,7 @@ declare namespace com {
                         public windowDeiconified(arg0: java.awt.event.WindowEvent): void
                         public windowActivated(arg0: java.awt.event.WindowEvent): void
                         public windowDeactivated(arg0: java.awt.event.WindowEvent): void
+                        public class: java.lang.Class<any>
                     }
                     class SwingEventMonitor extends com.sun.java.accessibility.util.AWTEventMonitor {
                         protected static listenerList: javax.swing.event.EventListenerList
@@ -304,6 +322,7 @@ declare namespace com {
                         public static removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
                         public static addVetoableChangeListener(arg0: java.beans.VetoableChangeListener): void
                         public static removeVetoableChangeListener(arg0: java.beans.VetoableChangeListener): void
+                        public class: java.lang.Class<any>
                     }
                     class SwingEventMonitor$SwingEventListener extends com.sun.java.accessibility.util.AWTEventMonitor$AWTEventsListener implements javax.swing.event.AncestorListener , javax.swing.event.CaretListener , javax.swing.event.CellEditorListener , javax.swing.event.ChangeListener , javax.swing.event.DocumentListener , javax.swing.event.ListDataListener , javax.swing.event.ListSelectionListener , javax.swing.event.MenuListener , javax.swing.event.PopupMenuListener , javax.swing.event.TableColumnModelListener , javax.swing.event.TableModelListener , javax.swing.event.TreeExpansionListener , javax.swing.event.TreeModelListener , javax.swing.event.TreeSelectionListener , javax.swing.event.UndoableEditListener , javax.swing.event.InternalFrameListener , java.beans.PropertyChangeListener , java.beans.VetoableChangeListener {
                         public constructor()
@@ -356,6 +375,7 @@ declare namespace com {
                         public internalFrameClosed(arg0: javax.swing.event.InternalFrameEvent): void
                         public propertyChange(arg0: java.beans.PropertyChangeEvent): void
                         public vetoableChange(arg0: java.beans.PropertyChangeEvent): void
+                        public class: java.lang.Class<any>
                     }
                     interface TopLevelWindowListener extends java.util.EventListener {
                         topLevelWindowCreated(arg0: java.awt.Window): void
@@ -369,6 +389,7 @@ declare namespace com {
                         public static remove(arg0: com.sun.java.accessibility.util.TopLevelWindowListener, arg1: com.sun.java.accessibility.util.TopLevelWindowListener): com.sun.java.accessibility.util.TopLevelWindowListener
                         protected static addInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener
                         protected static removeInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener
+                        public class: java.lang.Class<any>
                     }
                 }
             }

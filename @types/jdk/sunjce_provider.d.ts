@@ -9,6 +9,7 @@ declare namespace com {
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
                     protected finalize(): void
+                    public class: java.lang.Class<any>
                 }
                 class DESedeWrapCipher extends javax.crypto.CipherSpi {
                     public constructor()
@@ -28,10 +29,12 @@ declare namespace com {
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
+                    public class: java.lang.Class<any>
                 }
                 class HmacMD5 extends com.sun.crypto.provider.HmacCore {
                     public constructor()
                     public clone(): java.lang.Object
+                    public class: java.lang.Class<any>
                 }
                 class GCMParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
@@ -42,6 +45,7 @@ declare namespace com {
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
+                    public class: java.lang.Class<any>
                 }
                 class RC2Cipher extends javax.crypto.CipherSpi {
                     public constructor()
@@ -61,6 +65,7 @@ declare namespace com {
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
+                    public class: java.lang.Class<any>
                 }
                 class TlsKeyMaterialGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
@@ -68,12 +73,14 @@ declare namespace com {
                     protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
                     protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineGenerateKey(): javax.crypto.SecretKey
+                    public class: java.lang.Class<any>
                 }
                 class DESKeyFactory extends javax.crypto.SecretKeyFactorySpi {
                     public constructor()
                     protected engineGenerateSecret(arg0: java.security.spec.KeySpec): javax.crypto.SecretKey
                     protected engineGetKeySpec(arg0: javax.crypto.SecretKey, arg1: java.lang.Class<any>): java.security.spec.KeySpec
                     protected engineTranslateKey(arg0: javax.crypto.SecretKey): javax.crypto.SecretKey
+                    public class: java.lang.Class<any>
                 }
                 class JceKeyStore extends java.security.KeyStoreSpi {
                     public constructor()
@@ -93,14 +100,19 @@ declare namespace com {
                     public engineGetCertificateAlias(arg0: java.security.cert.Certificate): string
                     public engineStore(arg0: java.io.OutputStream, arg1: char[]): void
                     public engineLoad(arg0: java.io.InputStream, arg1: char[]): void
+                    public class: java.lang.Class<any>
                 }
                 class JceKeyStore$1 {
+                    public class: java.lang.Class<any>
                 }
                 class JceKeyStore$TrustedCertEntry {
+                    public class: java.lang.Class<any>
                 }
                 class JceKeyStore$SecretKeyEntry {
+                    public class: java.lang.Class<any>
                 }
                 class JceKeyStore$PrivateKeyEntry {
+                    public class: java.lang.Class<any>
                 }
                 class DESedeKeyGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
@@ -108,6 +120,7 @@ declare namespace com {
                     protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
                     protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineGenerateKey(): javax.crypto.SecretKey
+                    public class: java.lang.Class<any>
                 }
                 class DESKeyGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
@@ -115,14 +128,17 @@ declare namespace com {
                     protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
                     protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineGenerateKey(): javax.crypto.SecretKey
+                    public class: java.lang.Class<any>
                 }
                 class DHParameterGenerator extends java.security.AlgorithmParameterGeneratorSpi {
                     public constructor()
                     protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
                     protected engineGenerateParameters(): java.security.AlgorithmParameters
+                    public class: java.lang.Class<any>
                 }
                 class SslMacCore {
+                    public class: java.lang.Class<any>
                 }
                 class SslMacCore$SslMacSHA1 extends javax.crypto.MacSpi {
                     public constructor()
@@ -133,6 +149,7 @@ declare namespace com {
                     protected engineUpdate(arg0: java.nio.ByteBuffer): void
                     protected engineDoFinal(): byte[]
                     protected engineReset(): void
+                    public class: java.lang.Class<any>
                 }
                 class SslMacCore$SslMacMD5 extends javax.crypto.MacSpi {
                     public constructor()
@@ -143,8 +160,10 @@ declare namespace com {
                     protected engineUpdate(arg0: java.nio.ByteBuffer): void
                     protected engineDoFinal(): byte[]
                     protected engineReset(): void
+                    public class: java.lang.Class<any>
                 }
                 class KeyGeneratorCore {
+                    public class: java.lang.Class<any>
                 }
                 class KeyGeneratorCore$ARCFOURKeyGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
@@ -152,6 +171,7 @@ declare namespace com {
                     protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
                     protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineGenerateKey(): javax.crypto.SecretKey
+                    public class: java.lang.Class<any>
                 }
                 class KeyGeneratorCore$RC2KeyGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
@@ -159,6 +179,7 @@ declare namespace com {
                     protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
                     protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineGenerateKey(): javax.crypto.SecretKey
+                    public class: java.lang.Class<any>
                 }
                 abstract class KeyGeneratorCore$HmacSHA2KG extends javax.crypto.KeyGeneratorSpi {
                     protected constructor(arg0: string, arg1: int)
@@ -166,18 +187,23 @@ declare namespace com {
                     protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
                     protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineGenerateKey(): javax.crypto.SecretKey
+                    public class: java.lang.Class<any>
                 }
                 class KeyGeneratorCore$HmacSHA2KG$SHA512 extends com.sun.crypto.provider.KeyGeneratorCore$HmacSHA2KG {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class KeyGeneratorCore$HmacSHA2KG$SHA384 extends com.sun.crypto.provider.KeyGeneratorCore$HmacSHA2KG {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class KeyGeneratorCore$HmacSHA2KG$SHA256 extends com.sun.crypto.provider.KeyGeneratorCore$HmacSHA2KG {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class KeyGeneratorCore$HmacSHA2KG$SHA224 extends com.sun.crypto.provider.KeyGeneratorCore$HmacSHA2KG {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class OAEPParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
@@ -188,6 +214,7 @@ declare namespace com {
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
+                    public class: java.lang.Class<any>
                 }
                 class TlsRsaPremasterSecretGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
@@ -195,6 +222,7 @@ declare namespace com {
                     protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
                     protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineGenerateKey(): javax.crypto.SecretKey
+                    public class: java.lang.Class<any>
                 }
                 class BlowfishParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
@@ -205,23 +233,30 @@ declare namespace com {
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
+                    public class: java.lang.Class<any>
                 }
                 abstract class CipherWithWrappingSpi extends javax.crypto.CipherSpi {
                     public constructor()
                     protected engineWrap(arg0: java.security.Key): byte[]
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
+                    public class: java.lang.Class<any>
                 }
                 class SunJCE extends java.security.Provider {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class SunJCE$1 implements java.security.PrivilegedAction<java.lang.Object> {
                     public run(): java.lang.Object
+                    public class: java.lang.Class<any>
                 }
                 class SunJCE$SecureRandomHolder {
+                    public class: java.lang.Class<any>
                 }
                 class RC2Crypt extends com.sun.crypto.provider.SymmetricCipher {
+                    public class: java.lang.Class<any>
                 }
                 class CounterMode extends com.sun.crypto.provider.FeedbackCipher {
+                    public class: java.lang.Class<any>
                 }
                 class BlowfishCipher extends javax.crypto.CipherSpi {
                     public constructor()
@@ -241,6 +276,7 @@ declare namespace com {
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
+                    public class: java.lang.Class<any>
                 }
                 class RSACipher extends javax.crypto.CipherSpi {
                     public constructor()
@@ -260,6 +296,7 @@ declare namespace com {
                     protected engineWrap(arg0: java.security.Key): byte[]
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                     protected engineGetKeySize(arg0: java.security.Key): int
+                    public class: java.lang.Class<any>
                 }
                 class DESCipher extends javax.crypto.CipherSpi {
                     public constructor()
@@ -279,64 +316,84 @@ declare namespace com {
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
+                    public class: java.lang.Class<any>
                 }
                 abstract class PBEKeyFactory extends javax.crypto.SecretKeyFactorySpi {
                     protected engineGenerateSecret(arg0: java.security.spec.KeySpec): javax.crypto.SecretKey
                     protected engineGetKeySpec(arg0: javax.crypto.SecretKey, arg1: java.lang.Class<any>): java.security.spec.KeySpec
                     protected engineTranslateKey(arg0: javax.crypto.SecretKey): javax.crypto.SecretKey
+                    public class: java.lang.Class<any>
                 }
                 class PBEKeyFactory$1 {
+                    public class: java.lang.Class<any>
                 }
                 class PBEKeyFactory$PBEWithHmacSHA512AndAES_256 extends com.sun.crypto.provider.PBEKeyFactory {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBEKeyFactory$PBEWithHmacSHA384AndAES_256 extends com.sun.crypto.provider.PBEKeyFactory {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBEKeyFactory$PBEWithHmacSHA256AndAES_256 extends com.sun.crypto.provider.PBEKeyFactory {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBEKeyFactory$PBEWithHmacSHA224AndAES_256 extends com.sun.crypto.provider.PBEKeyFactory {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBEKeyFactory$PBEWithHmacSHA1AndAES_256 extends com.sun.crypto.provider.PBEKeyFactory {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBEKeyFactory$PBEWithHmacSHA512AndAES_128 extends com.sun.crypto.provider.PBEKeyFactory {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBEKeyFactory$PBEWithHmacSHA384AndAES_128 extends com.sun.crypto.provider.PBEKeyFactory {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBEKeyFactory$PBEWithHmacSHA256AndAES_128 extends com.sun.crypto.provider.PBEKeyFactory {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBEKeyFactory$PBEWithHmacSHA224AndAES_128 extends com.sun.crypto.provider.PBEKeyFactory {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBEKeyFactory$PBEWithHmacSHA1AndAES_128 extends com.sun.crypto.provider.PBEKeyFactory {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBEKeyFactory$PBEWithMD5AndTripleDES extends com.sun.crypto.provider.PBEKeyFactory {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBEKeyFactory$PBEWithSHA1AndRC4_128 extends com.sun.crypto.provider.PBEKeyFactory {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBEKeyFactory$PBEWithSHA1AndRC4_40 extends com.sun.crypto.provider.PBEKeyFactory {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBEKeyFactory$PBEWithSHA1AndRC2_128 extends com.sun.crypto.provider.PBEKeyFactory {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBEKeyFactory$PBEWithSHA1AndRC2_40 extends com.sun.crypto.provider.PBEKeyFactory {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBEKeyFactory$PBEWithSHA1AndDESede extends com.sun.crypto.provider.PBEKeyFactory {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBEKeyFactory$PBEWithMD5AndDES extends com.sun.crypto.provider.PBEKeyFactory {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class DHParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
@@ -347,10 +404,13 @@ declare namespace com {
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
+                    public class: java.lang.Class<any>
                 }
                 class ElectronicCodeBook extends com.sun.crypto.provider.FeedbackCipher {
+                    public class: java.lang.Class<any>
                 }
                 class PrivateKeyInfo {
+                    public class: java.lang.Class<any>
                 }
                 abstract class AESCipher extends javax.crypto.CipherSpi {
                     protected constructor(arg0: int)
@@ -372,57 +432,75 @@ declare namespace com {
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                     protected engineUpdateAAD(arg0: byte[], arg1: int, arg2: int): void
                     protected engineUpdateAAD(arg0: java.nio.ByteBuffer): void
+                    public class: java.lang.Class<any>
                 }
                 class AESCipher$AES256_GCM_NoPadding extends com.sun.crypto.provider.AESCipher$OidImpl {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class AESCipher$AES192_GCM_NoPadding extends com.sun.crypto.provider.AESCipher$OidImpl {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class AESCipher$AES128_GCM_NoPadding extends com.sun.crypto.provider.AESCipher$OidImpl {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class AESCipher$AES256_CFB_NoPadding extends com.sun.crypto.provider.AESCipher$OidImpl {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class AESCipher$AES192_CFB_NoPadding extends com.sun.crypto.provider.AESCipher$OidImpl {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class AESCipher$AES128_CFB_NoPadding extends com.sun.crypto.provider.AESCipher$OidImpl {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class AESCipher$AES256_OFB_NoPadding extends com.sun.crypto.provider.AESCipher$OidImpl {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class AESCipher$AES192_OFB_NoPadding extends com.sun.crypto.provider.AESCipher$OidImpl {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class AESCipher$AES128_OFB_NoPadding extends com.sun.crypto.provider.AESCipher$OidImpl {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class AESCipher$AES256_CBC_NoPadding extends com.sun.crypto.provider.AESCipher$OidImpl {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class AESCipher$AES192_CBC_NoPadding extends com.sun.crypto.provider.AESCipher$OidImpl {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class AESCipher$AES128_CBC_NoPadding extends com.sun.crypto.provider.AESCipher$OidImpl {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class AESCipher$AES256_ECB_NoPadding extends com.sun.crypto.provider.AESCipher$OidImpl {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class AESCipher$AES192_ECB_NoPadding extends com.sun.crypto.provider.AESCipher$OidImpl {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class AESCipher$AES128_ECB_NoPadding extends com.sun.crypto.provider.AESCipher$OidImpl {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 abstract class AESCipher$OidImpl extends com.sun.crypto.provider.AESCipher {
                     protected constructor(arg0: int, arg1: string, arg2: string)
+                    public class: java.lang.Class<any>
                 }
                 class AESCipher$General extends com.sun.crypto.provider.AESCipher {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class RC2Parameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
@@ -433,11 +511,14 @@ declare namespace com {
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
+                    public class: java.lang.Class<any>
                 }
                 class GCTR {
                     protected doFinal(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
+                    public class: java.lang.Class<any>
                 }
                 class GaloisCounterMode extends com.sun.crypto.provider.FeedbackCipher {
+                    public class: java.lang.Class<any>
                 }
                 class AESKeyGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
@@ -445,11 +526,13 @@ declare namespace com {
                     protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
                     protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineGenerateKey(): javax.crypto.SecretKey
+                    public class: java.lang.Class<any>
                 }
                 class ISO10126Padding implements com.sun.crypto.provider.Padding {
                     public padWithLen(arg0: byte[], arg1: int, arg2: int): void
                     public unpad(arg0: byte[], arg1: int, arg2: int): int
                     public padLength(arg0: int): int
+                    public class: java.lang.Class<any>
                 }
                 class HmacMD5KeyGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
@@ -457,6 +540,7 @@ declare namespace com {
                     protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
                     protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineGenerateKey(): javax.crypto.SecretKey
+                    public class: java.lang.Class<any>
                 }
                 class DHKeyFactory extends java.security.KeyFactorySpi {
                     public constructor()
@@ -464,6 +548,7 @@ declare namespace com {
                     protected engineGeneratePrivate(arg0: java.security.spec.KeySpec): java.security.PrivateKey
                     protected engineGetKeySpec<T extends java.security.spec.KeySpec>(arg0: java.security.Key, arg1: java.lang.Class<T>): T
                     protected engineTranslateKey<T extends java.security.spec.KeySpec>(arg0: java.security.Key): java.security.Key
+                    public class: java.lang.Class<any>
                 }
                 class PBEWithMD5AndDESCipher extends javax.crypto.CipherSpi {
                     public constructor()
@@ -483,6 +568,7 @@ declare namespace com {
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
+                    public class: java.lang.Class<any>
                 }
                 class HmacSHA1KeyGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
@@ -490,6 +576,7 @@ declare namespace com {
                     protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
                     protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineGenerateKey(): javax.crypto.SecretKey
+                    public class: java.lang.Class<any>
                 }
                 class AESParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
@@ -500,12 +587,14 @@ declare namespace com {
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
+                    public class: java.lang.Class<any>
                 }
                 class DESedeKeyFactory extends javax.crypto.SecretKeyFactorySpi {
                     public constructor()
                     protected engineGenerateSecret(arg0: java.security.spec.KeySpec): javax.crypto.SecretKey
                     protected engineGetKeySpec(arg0: javax.crypto.SecretKey, arg1: java.lang.Class<any>): java.security.spec.KeySpec
                     protected engineTranslateKey(arg0: javax.crypto.SecretKey): javax.crypto.SecretKey
+                    public class: java.lang.Class<any>
                 }
                 class ARCFOURCipher extends javax.crypto.CipherSpi {
                     public constructor()
@@ -525,8 +614,10 @@ declare namespace com {
                     protected engineWrap(arg0: java.security.Key): byte[]
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
                     protected engineGetKeySize(arg0: java.security.Key): int
+                    public class: java.lang.Class<any>
                 }
                 class PKCS12PBECipherCore {
+                    public class: java.lang.Class<any>
                 }
                 class PKCS12PBECipherCore$PBEWithSHA1AndRC4_128 extends javax.crypto.CipherSpi {
                     public constructor()
@@ -546,6 +637,7 @@ declare namespace com {
                     protected engineUpdate(arg0: byte[], arg1: int, arg2: int): byte[]
                     protected engineUpdate(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     protected engineWrap(arg0: java.security.Key): byte[]
+                    public class: java.lang.Class<any>
                 }
                 class PKCS12PBECipherCore$PBEWithSHA1AndRC4_40 extends javax.crypto.CipherSpi {
                     public constructor()
@@ -565,6 +657,7 @@ declare namespace com {
                     protected engineUpdate(arg0: byte[], arg1: int, arg2: int): byte[]
                     protected engineUpdate(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     protected engineWrap(arg0: java.security.Key): byte[]
+                    public class: java.lang.Class<any>
                 }
                 class PKCS12PBECipherCore$PBEWithSHA1AndRC2_128 extends javax.crypto.CipherSpi {
                     public constructor()
@@ -584,6 +677,7 @@ declare namespace com {
                     protected engineUpdate(arg0: byte[], arg1: int, arg2: int): byte[]
                     protected engineUpdate(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     protected engineWrap(arg0: java.security.Key): byte[]
+                    public class: java.lang.Class<any>
                 }
                 class PKCS12PBECipherCore$PBEWithSHA1AndRC2_40 extends javax.crypto.CipherSpi {
                     public constructor()
@@ -603,6 +697,7 @@ declare namespace com {
                     protected engineUpdate(arg0: byte[], arg1: int, arg2: int): byte[]
                     protected engineUpdate(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     protected engineWrap(arg0: java.security.Key): byte[]
+                    public class: java.lang.Class<any>
                 }
                 class PKCS12PBECipherCore$PBEWithSHA1AndDESede extends javax.crypto.CipherSpi {
                     public constructor()
@@ -622,15 +717,20 @@ declare namespace com {
                     protected engineUpdate(arg0: byte[], arg1: int, arg2: int): byte[]
                     protected engineUpdate(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int): int
                     protected engineWrap(arg0: java.security.Key): byte[]
+                    public class: java.lang.Class<any>
                 }
                 class CipherBlockChaining extends com.sun.crypto.provider.FeedbackCipher {
                     protected r: byte[]
+                    public class: java.lang.Class<any>
                 }
                 class CipherTextStealing extends com.sun.crypto.provider.CipherBlockChaining {
+                    public class: java.lang.Class<any>
                 }
                 class ai extends javax.crypto.SealedObject {
+                    public class: java.lang.Class<any>
                 }
                 class DESedeCrypt extends com.sun.crypto.provider.DESCrypt implements com.sun.crypto.provider.DESConstants {
+                    public class: java.lang.Class<any>
                 }
                 class TlsMasterSecretGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
@@ -638,6 +738,7 @@ declare namespace com {
                     protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
                     protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineGenerateKey(): javax.crypto.SecretKey
+                    public class: java.lang.Class<any>
                 }
                 class TlsMasterSecretGenerator$TlsMasterSecretKey implements sun.security.internal.interfaces.TlsMasterSecret {
                     public getMajorVersion(): int
@@ -651,8 +752,10 @@ declare namespace com {
                     public initialize(arg0: int, arg1: java.security.SecureRandom): void
                     public initialize(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
                     public generateKeyPair(): java.security.KeyPair
+                    public class: java.lang.Class<any>
                 }
                 class PBECipherCore {
+                    public class: java.lang.Class<any>
                 }
                 class DHPrivateKey implements java.security.PrivateKey , javax.crypto.interfaces.DHPrivateKey , java.io.Serializable {
                     public getFormat(): string
@@ -668,14 +771,17 @@ declare namespace com {
                     protected engineInit(arg0: java.security.SecureRandom): void
                     protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
                     protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
+                    public class: java.lang.Class<any>
                 }
                 class TlsPrfGenerator$V10 extends com.sun.crypto.provider.TlsPrfGenerator {
                     public constructor()
                     protected engineGenerateKey(): javax.crypto.SecretKey
+                    public class: java.lang.Class<any>
                 }
                 class TlsPrfGenerator$V12 extends com.sun.crypto.provider.TlsPrfGenerator {
                     public constructor()
                     protected engineGenerateKey(): javax.crypto.SecretKey
+                    public class: java.lang.Class<any>
                 }
                 abstract class PBES2Core extends javax.crypto.CipherSpi {
                     protected engineSetMode(arg0: string): void
@@ -694,44 +800,57 @@ declare namespace com {
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
+                    public class: java.lang.Class<any>
                 }
                 class PBES2Core$HmacSHA512AndAES_256 extends com.sun.crypto.provider.PBES2Core {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBES2Core$HmacSHA384AndAES_256 extends com.sun.crypto.provider.PBES2Core {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBES2Core$HmacSHA256AndAES_256 extends com.sun.crypto.provider.PBES2Core {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBES2Core$HmacSHA224AndAES_256 extends com.sun.crypto.provider.PBES2Core {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBES2Core$HmacSHA1AndAES_256 extends com.sun.crypto.provider.PBES2Core {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBES2Core$HmacSHA512AndAES_128 extends com.sun.crypto.provider.PBES2Core {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBES2Core$HmacSHA384AndAES_128 extends com.sun.crypto.provider.PBES2Core {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBES2Core$HmacSHA256AndAES_128 extends com.sun.crypto.provider.PBES2Core {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBES2Core$HmacSHA224AndAES_128 extends com.sun.crypto.provider.PBES2Core {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBES2Core$HmacSHA1AndAES_128 extends com.sun.crypto.provider.PBES2Core {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 interface BlowfishConstants {
                     BLOWFISH_BLOCK_SIZE: int
                     BLOWFISH_MAX_KEYSIZE: int
                 }
                 class BlowfishCrypt extends com.sun.crypto.provider.SymmetricCipher implements com.sun.crypto.provider.BlowfishConstants {
+                    public class: java.lang.Class<any>
                 }
                 class PBES1Core {
+                    public class: java.lang.Class<any>
                 }
                 class PBEWithMD5AndTripleDESCipher extends javax.crypto.CipherSpi {
                     public constructor()
@@ -751,8 +870,10 @@ declare namespace com {
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
+                    public class: java.lang.Class<any>
                 }
                 class CipherCore {
+                    public class: java.lang.Class<any>
                 }
                 class DESedeCipher extends javax.crypto.CipherSpi {
                     public constructor()
@@ -772,14 +893,17 @@ declare namespace com {
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
+                    public class: java.lang.Class<any>
                 }
                 class GHASH {
+                    public class: java.lang.Class<any>
                 }
                 interface AESConstants {
                     AES_BLOCK_SIZE: int
                     AES_KEYSIZES: int[]
                 }
                 class AESCrypt extends com.sun.crypto.provider.SymmetricCipher implements com.sun.crypto.provider.AESConstants {
+                    public class: java.lang.Class<any>
                 }
                 abstract class AESWrapCipher extends javax.crypto.CipherSpi {
                     public constructor(arg0: int)
@@ -799,20 +923,26 @@ declare namespace com {
                     protected engineGetKeySize(arg0: java.security.Key): int
                     protected engineWrap(arg0: java.security.Key): byte[]
                     protected engineUnwrap(arg0: byte[], arg1: string, arg2: int): java.security.Key
+                    public class: java.lang.Class<any>
                 }
                 class AESWrapCipher$AES256 extends com.sun.crypto.provider.AESWrapCipher {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class AESWrapCipher$AES192 extends com.sun.crypto.provider.AESWrapCipher {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class AESWrapCipher$AES128 extends com.sun.crypto.provider.AESWrapCipher {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class AESWrapCipher$General extends com.sun.crypto.provider.AESWrapCipher {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class CipherFeedback extends com.sun.crypto.provider.FeedbackCipher {
+                    public class: java.lang.Class<any>
                 }
                 class DESedeParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
@@ -823,15 +953,20 @@ declare namespace com {
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
+                    public class: java.lang.Class<any>
                 }
                 class CipherForKeyProtector extends javax.crypto.Cipher {
                     protected constructor(arg0: javax.crypto.CipherSpi, arg1: java.security.Provider, arg2: string)
+                    public class: java.lang.Class<any>
                 }
                 class EncryptedPrivateKeyInfo {
+                    public class: java.lang.Class<any>
                 }
                 class KeyProtector {
+                    public class: java.lang.Class<any>
                 }
                 class OutputFeedback extends com.sun.crypto.provider.FeedbackCipher {
+                    public class: java.lang.Class<any>
                 }
                 class PBEParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
@@ -842,14 +977,18 @@ declare namespace com {
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
+                    public class: java.lang.Class<any>
                 }
                 class SealedObjectForKeyProtector extends javax.crypto.SealedObject {
+                    public class: java.lang.Class<any>
                 }
                 class ConstructKeys {
+                    public class: java.lang.Class<any>
                 }
                 class HmacSHA1 extends com.sun.crypto.provider.HmacCore {
                     public constructor()
                     public clone(): java.lang.Object
+                    public class: java.lang.Class<any>
                 }
                 class DHPublicKey implements java.security.PublicKey , javax.crypto.interfaces.DHPublicKey , java.io.Serializable {
                     public getFormat(): string
@@ -878,54 +1017,68 @@ declare namespace com {
                     public getEncoded(): byte[]
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
+                    public class: java.lang.Class<any>
                 }
                 abstract class PBKDF2Core extends javax.crypto.SecretKeyFactorySpi {
                     protected engineGenerateSecret(arg0: java.security.spec.KeySpec): javax.crypto.SecretKey
                     protected engineGetKeySpec(arg0: javax.crypto.SecretKey, arg1: java.lang.Class<any>): java.security.spec.KeySpec
                     protected engineTranslateKey(arg0: javax.crypto.SecretKey): javax.crypto.SecretKey
+                    public class: java.lang.Class<any>
                 }
                 class PBKDF2Core$HmacSHA512 extends com.sun.crypto.provider.PBKDF2Core {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBKDF2Core$HmacSHA384 extends com.sun.crypto.provider.PBKDF2Core {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBKDF2Core$HmacSHA256 extends com.sun.crypto.provider.PBKDF2Core {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBKDF2Core$HmacSHA224 extends com.sun.crypto.provider.PBKDF2Core {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBKDF2Core$HmacSHA1 extends com.sun.crypto.provider.PBKDF2Core {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 abstract class PBMAC1Core extends com.sun.crypto.provider.HmacCore {
                     protected engineInit(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
+                    public class: java.lang.Class<any>
                 }
                 class PBMAC1Core$HmacSHA512 extends com.sun.crypto.provider.PBMAC1Core {
                     public constructor()
                     public clone(): java.lang.Object
+                    public class: java.lang.Class<any>
                 }
                 class PBMAC1Core$HmacSHA384 extends com.sun.crypto.provider.PBMAC1Core {
                     public constructor()
                     public clone(): java.lang.Object
+                    public class: java.lang.Class<any>
                 }
                 class PBMAC1Core$HmacSHA256 extends com.sun.crypto.provider.PBMAC1Core {
                     public constructor()
                     public clone(): java.lang.Object
+                    public class: java.lang.Class<any>
                 }
                 class PBMAC1Core$HmacSHA224 extends com.sun.crypto.provider.PBMAC1Core {
                     public constructor()
                     public clone(): java.lang.Object
+                    public class: java.lang.Class<any>
                 }
                 class PBMAC1Core$HmacSHA1 extends com.sun.crypto.provider.PBMAC1Core {
                     public constructor()
                     public clone(): java.lang.Object
+                    public class: java.lang.Class<any>
                 }
                 interface DESConstants {
                     DES_BLOCK_SIZE: int
                 }
                 class DESCrypt extends com.sun.crypto.provider.SymmetricCipher implements com.sun.crypto.provider.DESConstants {
+                    public class: java.lang.Class<any>
                 }
                 class BlowfishKeyGenerator extends javax.crypto.KeyGeneratorSpi {
                     public constructor()
@@ -933,6 +1086,7 @@ declare namespace com {
                     protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec, arg1: java.security.SecureRandom): void
                     protected engineInit(arg0: int, arg1: java.security.SecureRandom): void
                     protected engineGenerateKey(): javax.crypto.SecretKey
+                    public class: java.lang.Class<any>
                 }
                 class PBEKey implements javax.crypto.SecretKey {
                     public getEncoded(): byte[]
@@ -941,6 +1095,7 @@ declare namespace com {
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
                     protected finalize(): void
+                    public class: java.lang.Class<any>
                 }
                 interface Padding {
                     padWithLen(arg0: byte[], arg1: int, arg2: int): void
@@ -951,6 +1106,7 @@ declare namespace com {
                     public padWithLen(arg0: byte[], arg1: int, arg2: int): void
                     public unpad(arg0: byte[], arg1: int, arg2: int): int
                     public padLength(arg0: int): int
+                    public class: java.lang.Class<any>
                 }
                 class DHKeyAgreement extends javax.crypto.KeyAgreementSpi {
                     public constructor()
@@ -960,15 +1116,18 @@ declare namespace com {
                     protected engineGenerateSecret(): byte[]
                     protected engineGenerateSecret(arg0: byte[], arg1: int): int
                     protected engineGenerateSecret(arg0: string): javax.crypto.SecretKey
+                    public class: java.lang.Class<any>
                 }
                 class PBKDF2HmacSHA1Factory extends javax.crypto.SecretKeyFactorySpi {
                     public constructor()
                     protected engineGenerateSecret(arg0: java.security.spec.KeySpec): javax.crypto.SecretKey
                     protected engineGetKeySpec(arg0: javax.crypto.SecretKey, arg1: java.lang.Class<any>): java.security.spec.KeySpec
                     protected engineTranslateKey(arg0: javax.crypto.SecretKey): javax.crypto.SecretKey
+                    public class: java.lang.Class<any>
                 }
                 class BlockCipherParamsCore {
                     public toString(): string
+                    public class: java.lang.Class<any>
                 }
                 class DESParameters extends java.security.AlgorithmParametersSpi {
                     public constructor()
@@ -979,6 +1138,7 @@ declare namespace com {
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
+                    public class: java.lang.Class<any>
                 }
                 class DESKey implements javax.crypto.SecretKey {
                     public getEncoded(): byte[]
@@ -987,6 +1147,7 @@ declare namespace com {
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
                     protected finalize(): void
+                    public class: java.lang.Class<any>
                 }
                 abstract class PBES2Parameters extends java.security.AlgorithmParametersSpi {
                     protected engineInit(arg0: java.security.spec.AlgorithmParameterSpec): void
@@ -996,45 +1157,60 @@ declare namespace com {
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: string): byte[]
                     protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
+                    public class: java.lang.Class<any>
                 }
                 class PBES2Parameters$HmacSHA512AndAES_256 extends com.sun.crypto.provider.PBES2Parameters {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBES2Parameters$HmacSHA384AndAES_256 extends com.sun.crypto.provider.PBES2Parameters {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBES2Parameters$HmacSHA256AndAES_256 extends com.sun.crypto.provider.PBES2Parameters {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBES2Parameters$HmacSHA224AndAES_256 extends com.sun.crypto.provider.PBES2Parameters {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBES2Parameters$HmacSHA1AndAES_256 extends com.sun.crypto.provider.PBES2Parameters {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBES2Parameters$HmacSHA512AndAES_128 extends com.sun.crypto.provider.PBES2Parameters {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBES2Parameters$HmacSHA384AndAES_128 extends com.sun.crypto.provider.PBES2Parameters {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBES2Parameters$HmacSHA256AndAES_128 extends com.sun.crypto.provider.PBES2Parameters {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBES2Parameters$HmacSHA224AndAES_128 extends com.sun.crypto.provider.PBES2Parameters {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBES2Parameters$HmacSHA1AndAES_128 extends com.sun.crypto.provider.PBES2Parameters {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 class PBES2Parameters$General extends com.sun.crypto.provider.PBES2Parameters {
                     public constructor()
+                    public class: java.lang.Class<any>
                 }
                 abstract class SymmetricCipher {
+                    public class: java.lang.Class<any>
                 }
                 abstract class FeedbackCipher {
+                    public class: java.lang.Class<any>
                 }
                 class PCBC extends com.sun.crypto.provider.FeedbackCipher {
+                    public class: java.lang.Class<any>
                 }
                 abstract class HmacCore extends javax.crypto.MacSpi implements java.lang.Cloneable {
                     protected engineGetMacLength(): int
@@ -1045,27 +1221,33 @@ declare namespace com {
                     protected engineDoFinal(): byte[]
                     protected engineReset(): void
                     public clone(): java.lang.Object
+                    public class: java.lang.Class<any>
                 }
                 class HmacCore$HmacSHA512 extends com.sun.crypto.provider.HmacCore {
                     public constructor()
                     public clone(): java.lang.Object
+                    public class: java.lang.Class<any>
                 }
                 class HmacCore$HmacSHA384 extends com.sun.crypto.provider.HmacCore {
                     public constructor()
                     public clone(): java.lang.Object
+                    public class: java.lang.Class<any>
                 }
                 class HmacCore$HmacSHA256 extends com.sun.crypto.provider.HmacCore {
                     public constructor()
                     public clone(): java.lang.Object
+                    public class: java.lang.Class<any>
                 }
                 class HmacCore$HmacSHA224 extends com.sun.crypto.provider.HmacCore {
                     public constructor()
                     public clone(): java.lang.Object
+                    public class: java.lang.Class<any>
                 }
                 class HmacPKCS12PBESHA1 extends com.sun.crypto.provider.HmacCore {
                     public constructor()
                     protected engineInit(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
                     public clone(): java.lang.Object
+                    public class: java.lang.Class<any>
                 }
             }
         }

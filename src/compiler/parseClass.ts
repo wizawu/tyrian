@@ -232,6 +232,7 @@ export default function (source: string, pkg: any) {
                 break
             case "END":
                 if (!ignore) {
+                    if (!isInterface) buffer.push({ line: "    public class: java.lang.Class<any>" })
                     buffer.push(item as never)
                     let className = item.name.replace(/^(\w+\.)+/, "")
                     let ns = item.name.substring(0, item.name.length - className.length - 1)

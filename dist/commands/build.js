@@ -63,11 +63,27 @@ function compiler(instdir, instmod, entries, options) {
             });
         });
     }
+    var alias;
+    var plugins = [
+        new webpack.DefinePlugin(__assign({ "process.env": {
+                NODE_ENV: options.watch ? '"development"' : '"production"'
+            } }, globalVars)),
+    ];
+    if (options.uglify) {
+        plugins.push(new webpack.optimize.UglifyJsPlugin({ sourceMap: true }));
+    }
+    if (fs.existsSync("package.json")) {
+        var packageJSON = JSON.parse(fs.readFileSync("package.json", "utf-8"));
+        alias = packageJSON.alias;
+        if (packageJSON.commonsChunk) {
+            plugins.push(new webpack.optimize.CommonsChunkPlugin(packageJSON.commonsChunk));
+        }
+    }
     return webpack({
         devtool: "source-map",
         context: context,
         resolve: {
-            alias: fs.existsSync("package.json") && JSON.parse(fs.readFileSync("package.json", "utf-8")).alias || undefined,
+            alias: alias,
             extensions: [".js", ".ts", ".tsx"]
         },
         resolveLoader: { modules: [instmod] },
@@ -95,14 +111,7 @@ function compiler(instdir, instmod, entries, options) {
                     use: "url-loader"
                 }]
         },
-        plugins: [
-            new webpack.optimize.UglifyJsPlugin({
-                sourceMap: true
-            }),
-            new webpack.DefinePlugin(__assign({ "process.env": {
-                    NODE_ENV: options.watch ? '"development"' : '"production"'
-                } }, globalVars)),
-        ].slice(options.uglify ? 0 : 1)
+        plugins: plugins
     });
 }
 function default_1(instdir, instmod, entries, options) {

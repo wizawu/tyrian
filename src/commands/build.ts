@@ -64,12 +64,32 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
         })
     }
 
+    let alias
+    let plugins = [
+        new webpack.DefinePlugin({
+            "process.env": {
+                NODE_ENV: options.watch ? '"development"' : '"production"'
+            },
+            ...globalVars,
+        }),
+    ]
+    if (options.uglify) {
+        plugins.push(new webpack.optimize.UglifyJsPlugin({ sourceMap: true }))
+    }
+    if (fs.existsSync("package.json")) {
+        let packageJSON = JSON.parse(fs.readFileSync("package.json", "utf-8"))
+        alias = packageJSON.alias
+        if (packageJSON.commonsChunk) {
+            plugins.push(new webpack.optimize.CommonsChunkPlugin(packageJSON.commonsChunk))
+        }
+    }
+
     return webpack({
         devtool: "source-map",
         context: context,
         resolve: {
-            alias: fs.existsSync("package.json") && JSON.parse(fs.readFileSync("package.json", "utf-8")).alias || undefined,
-            extensions: [".js", ".ts", ".tsx"],
+            alias,
+            extensions: [".js", ".ts", ".tsx"]
         },
         resolveLoader: { modules: [instmod] },
         entry: entry,
@@ -96,17 +116,7 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
                 use: "url-loader",
             }]
         },
-        plugins: [
-            new webpack.optimize.UglifyJsPlugin({
-                sourceMap: true,
-            }),
-            new webpack.DefinePlugin({
-                "process.env": {
-                    NODE_ENV: options.watch ? '"development"' : '"production"'
-                },
-                ...globalVars,
-            }),
-        ].slice(options.uglify ? 0 : 1)
+        plugins,
     })
 }
 

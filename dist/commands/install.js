@@ -8,6 +8,7 @@ var child_process_1 = require("child_process");
 var parseJAR_1 = require("../compiler/parseJAR");
 var tsconfig = function (instdir) { return JSON.stringify({
     "compilerOptions": {
+        "allowJs": true,
         "jsx": "react",
         "lib": ["dom", "es2017"],
         "noUnusedLocals": true,

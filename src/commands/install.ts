@@ -9,6 +9,7 @@ import parseJAR from "../compiler/parseJAR"
 // tsconfig.json
 const tsconfig = instdir => JSON.stringify({
     "compilerOptions": {
+        "allowJs": true,
         "jsx": "react",
         "lib": ["dom", "es2017"],
         "noUnusedLocals": true,

@@ -12,7 +12,7 @@ touch $dir/../dist/compiler/isLambda.js
 
 cd $dir/jdk
 
-jars=$(find $JAVA_HOME -name "*.jar" | grep -v sa-jdi.jar | grep -v tools.jar)
+jars=$(find $JAVA_HOME/ -name "*.jar" | grep -v sa-jdi.jar | grep -v tools.jar)
 
 node -e "require('$dir/../dist/compiler/parseJAR').generateJDKDefinition('$dir/..')" $jars
 

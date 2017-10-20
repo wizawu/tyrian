@@ -2,6 +2,31 @@ declare namespace com {
     namespace sun {
         namespace nio {
             namespace zipfs {
+                class ZipInfo {
+                    public constructor()
+                    public static main(arg0: java.lang.String[]): void
+                    public static class: java.lang.Class<any>
+                }
+                class ZipFileStore extends java.nio.file.FileStore {
+                    public name(): string
+                    public type(): string
+                    public isReadOnly(): boolean
+                    public supportsFileAttributeView(arg0: java.lang.Class<java.nio.file.attribute.FileAttributeView>): boolean
+                    public supportsFileAttributeView(arg0: string): boolean
+                    public getFileStoreAttributeView<V extends java.nio.file.attribute.FileStoreAttributeView>(arg0: java.lang.Class<V>): V
+                    public getTotalSpace<V extends java.nio.file.attribute.FileStoreAttributeView>(): long
+                    public getUsableSpace<V extends java.nio.file.attribute.FileStoreAttributeView>(): long
+                    public getUnallocatedSpace<V extends java.nio.file.attribute.FileStoreAttributeView>(): long
+                    public getAttribute<V extends java.nio.file.attribute.FileStoreAttributeView>(arg0: string): java.lang.Object
+                    public static class: java.lang.Class<any>
+                }
+                class ZipFileStore$ZipFileStoreAttributes {
+                    public constructor(arg0: com.sun.nio.zipfs.ZipFileStore)
+                    public totalSpace(): long
+                    public usableSpace(): long
+                    public unallocatedSpace(): long
+                    public static class: java.lang.Class<any>
+                }
                 class ZipFileAttributeView implements java.nio.file.attribute.BasicFileAttributeView {
                     public name(): string
                     public readAttributes(): com.sun.nio.zipfs.ZipFileAttributes
@@ -29,36 +54,11 @@ declare namespace com {
                     public static valueOf(arg0: string): com.sun.nio.zipfs.ZipFileAttributeView$AttrID
                     public static class: java.lang.Class<any>
                 }
-                class ZipFileStore extends java.nio.file.FileStore {
-                    public name(): string
-                    public type(): string
-                    public isReadOnly(): boolean
-                    public supportsFileAttributeView(arg0: java.lang.Class<java.nio.file.attribute.FileAttributeView>): boolean
-                    public supportsFileAttributeView(arg0: string): boolean
-                    public getFileStoreAttributeView<V extends java.nio.file.attribute.FileStoreAttributeView>(arg0: java.lang.Class<V>): V
-                    public getTotalSpace<V extends java.nio.file.attribute.FileStoreAttributeView>(): long
-                    public getUsableSpace<V extends java.nio.file.attribute.FileStoreAttributeView>(): long
-                    public getUnallocatedSpace<V extends java.nio.file.attribute.FileStoreAttributeView>(): long
-                    public getAttribute<V extends java.nio.file.attribute.FileStoreAttributeView>(arg0: string): java.lang.Object
-                    public static class: java.lang.Class<any>
-                }
-                class ZipFileStore$ZipFileStoreAttributes {
-                    public constructor(arg0: com.sun.nio.zipfs.ZipFileStore)
-                    public totalSpace(): long
-                    public usableSpace(): long
-                    public unallocatedSpace(): long
-                    public static class: java.lang.Class<any>
-                }
                 class JarFileSystemProvider extends com.sun.nio.zipfs.ZipFileSystemProvider {
                     public constructor()
                     public getScheme(): string
                     protected uriToPath(arg0: java.net.URI): java.nio.file.Path
                     public getPath(arg0: java.net.URI): java.nio.file.Path
-                    public static class: java.lang.Class<any>
-                }
-                class ZipInfo {
-                    public constructor()
-                    public static main(arg0: java.lang.String[]): void
                     public static class: java.lang.Class<any>
                 }
                 class ZipFileAttributes implements java.nio.file.attribute.BasicFileAttributes {

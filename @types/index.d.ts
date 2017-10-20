@@ -7,7 +7,7 @@
  */
 
 type byte = number
-type char = number
+type char = object      // typeof (new java.lang.String("char").toCharArray()[0])
 type double = number
 type float = number
 type int = number

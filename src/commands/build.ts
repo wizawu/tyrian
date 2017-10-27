@@ -10,7 +10,6 @@ const autoprefixer = require("autoprefixer")
 
 export interface Options {
     watch: boolean
-    targetModule: boolean
     uglify: boolean
     outDir: string
     outFile?: string
@@ -96,7 +95,6 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
         output: {
             path: path.resolve(options.outDir),
             filename: "[name]",
-            libraryTarget: options.targetModule ? "commonjs2" : undefined,
         },
         module: {
             rules: [{

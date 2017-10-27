@@ -34,7 +34,6 @@ else if (command === "install") {
 else if (command === "build" && process.argv[3]) {
     var options = {
         watch: false,
-        targetModule: false,
         uglify: false,
         outDir: "./"
     };
@@ -42,9 +41,6 @@ else if (command === "build" && process.argv[3]) {
         var arg = process.argv[i];
         if (arg === "-w") {
             options.watch = true;
-        }
-        else if (arg === "-m") {
-            options.targetModule = true;
         }
         else if (arg === "-u") {
             options.uglify = true;

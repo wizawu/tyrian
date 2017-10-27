@@ -90,8 +90,7 @@ function compiler(instdir, instmod, entries, options) {
         entry: entry,
         output: {
             path: path.resolve(options.outDir),
-            filename: "[name]",
-            libraryTarget: options.targetModule ? "commonjs2" : undefined
+            filename: "[name]"
         },
         module: {
             rules: [{

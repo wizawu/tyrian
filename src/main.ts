@@ -35,7 +35,6 @@ if (command === "env") {
 } else if (command === "build" && process.argv[3]) {
     let options: BuildOptions = {
         watch: false,
-        targetModule: false,
         uglify: false,
         outDir: "./",
     }
@@ -43,9 +42,6 @@ if (command === "env") {
         let arg = process.argv[i]
         if (arg === "-w") {
             options.watch = true
-        } else if (arg === "-m") {
-            // deprecated
-            options.targetModule = true
         } else if (arg === "-u") {
             options.uglify = true
         } else if (arg === "-c") {

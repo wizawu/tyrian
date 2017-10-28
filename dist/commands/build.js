@@ -14,6 +14,7 @@ var path = require("path");
 var webpack = require("webpack");
 var const_1 = require("../const");
 var parseJAR_1 = require("../compiler/parseJAR");
+var install_1 = require("./install");
 var autoprefixer = require("autoprefixer");
 function compiler(instdir, instmod, entries, options) {
     var context = process.cwd();
@@ -115,23 +116,32 @@ function compiler(instdir, instmod, entries, options) {
 }
 function default_1(instdir, instmod, entries, options) {
     if (entries.length === 0) {
-        console.error(chalk.yellow("no entry to build"));
+        console.error(chalk.red("No entry to build"));
         process.exit(const_1.EXIT_STATUS.BUILD_ENTRY_ERROR);
     }
-    else if (options.outDir === undefined) {
-        console.error(chalk.red("invalid -o option"));
-        process.exit(const_1.EXIT_STATUS.BUILD_OUTDIR_ERROR);
-    }
-    else if (entries.some(function (entry) { return !/\.tsx?$/.test(entry); })) {
-        console.error(chalk.red("entry suffix should be .ts or .tsx"));
+    if (entries.some(function (entry) { return !/\.tsx?$/.test(entry); })) {
+        console.error(chalk.red("Entry suffix should be .ts or .tsx"));
         process.exit(const_1.EXIT_STATUS.BUILD_ENTRY_ERROR);
     }
-    else if (!fs.existsSync("tsconfig.json")) {
-        console.error(chalk.red("no tsconfig.json in current directory"));
-        process.exit(const_1.EXIT_STATUS.TSCONFIG_NOT_FOUND);
+    if (entries.length > 1 && options.outFile) {
+        console.error(chalk.red("Cannot use -o option if there are multiple entries"));
+        process.exit(const_1.EXIT_STATUS.BUILD_ENTRY_ERROR);
     }
-    if (options.outFile && entries.length > 1) {
-        console.error(chalk.yellow("ignoring -o " + options.outFile));
+    if (options.outFile && fs.existsSync(options.outFile)) {
+        if (!fs.lstatSync(options.outFile).isFile()) {
+            console.error(chalk.red(options.outFile + " is not a file"));
+            process.exit(const_1.EXIT_STATUS.BUILD_OUTFILE_ERROR);
+        }
+    }
+    if (options.outDir && fs.existsSync(options.outDir)) {
+        if (!fs.lstatSync(options.outDir).isDirectory()) {
+            console.error(chalk.red(options.outDir + " is not a directory"));
+            process.exit(const_1.EXIT_STATUS.BUILD_OUTDIR_ERROR);
+        }
+    }
+    if (!fs.existsSync("tsconfig.json")) {
+        fs.writeFileSync("tsconfig.json", install_1.tsconfig(instdir));
+        console.error(chalk.yellow("Generated tsconfig.json"));
     }
     var statsOptions = {
         colors: true,

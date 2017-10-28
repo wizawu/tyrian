@@ -37,6 +37,7 @@ else if (command === "build" && process.argv[3]) {
         uglify: false,
         outDir: "./"
     };
+    var ok = false;
     for (var i = 3; i < process.argv.length; i++) {
         var arg = process.argv[i];
         if (arg === "-w") {
@@ -54,10 +55,12 @@ else if (command === "build" && process.argv[3]) {
             i += 1;
         }
         else {
+            ok = true;
             build_1["default"](instdir, instmod, process.argv.slice(i), options);
-            break;
         }
     }
+    if (!ok)
+        help_1.help(instdir, const_1.EXIT_STATUS.BAD_COMMAND);
 }
 else if (command === "run" && process.argv[3]) {
     var watch = false;

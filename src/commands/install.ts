@@ -7,7 +7,7 @@ import { spawnSync } from "child_process"
 import parseJAR from "../compiler/parseJAR"
 
 // tsconfig.json
-const tsconfig = instdir => JSON.stringify({
+export const tsconfig = instdir => JSON.stringify({
     "compilerOptions": {
         "allowJs": true,
         "jsx": "react",

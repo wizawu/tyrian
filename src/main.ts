@@ -38,6 +38,7 @@ if (command === "env") {
         uglify: false,
         outDir: "./",
     }
+    let ok = false
     for (let i = 3; i < process.argv.length; i++) {
         let arg = process.argv[i]
         if (arg === "-w") {
@@ -51,10 +52,11 @@ if (command === "env") {
             options.outFile = process.argv[i + 1]
             i += 1
         } else {
+            ok = true
             build(instdir, instmod, process.argv.slice(i), options)
-            break
         }
     }
+    if (!ok) help(instdir, EXIT_STATUS.BAD_COMMAND)
 } else if (command === "run" && process.argv[3]) {
     let watch = false
     let jjsOptions = []

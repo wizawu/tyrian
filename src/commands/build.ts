@@ -5,6 +5,7 @@ import * as webpack from "webpack"
 
 import { EXIT_STATUS } from "../const"
 import { getTopPackages } from "../compiler/parseJAR"
+import { tsconfig } from "./install"
 
 const autoprefixer = require("autoprefixer")
 
@@ -120,21 +121,33 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
 
 export default function (instdir: string, instmod: string, entries: string[], options: Options) {
     if (entries.length === 0) {
-        console.error(chalk.yellow("no entry to build"))
+        console.error(chalk.red("No entry to build"))
         process.exit(EXIT_STATUS.BUILD_ENTRY_ERROR)
-    } else if (options.outDir === undefined) {
-        console.error(chalk.red("invalid -o option"))
-        process.exit(EXIT_STATUS.BUILD_OUTDIR_ERROR)
-    } else if (entries.some(entry => !/\.tsx?$/.test(entry))) {
-        console.error(chalk.red("entry suffix should be .ts or .tsx"))
+    }
+    if (entries.some(entry => !/\.tsx?$/.test(entry))) {
+        console.error(chalk.red("Entry suffix should be .ts or .tsx"))
         process.exit(EXIT_STATUS.BUILD_ENTRY_ERROR)
-    } else if (!fs.existsSync("tsconfig.json")) {
-        console.error(chalk.red("no tsconfig.json in current directory"))
-        process.exit(EXIT_STATUS.TSCONFIG_NOT_FOUND)
+    }
+    if (entries.length > 1 && options.outFile) {
+        console.error(chalk.red("Cannot use -o option if there are multiple entries"))
+        process.exit(EXIT_STATUS.BUILD_ENTRY_ERROR)
+    }
+    if (options.outFile && fs.existsSync(options.outFile)) {
+        if (!fs.lstatSync(options.outFile).isFile()) {
+            console.error(chalk.red(`${options.outFile} is not a file`))
+            process.exit(EXIT_STATUS.BUILD_OUTFILE_ERROR)
+        }
+    }
+    if (options.outDir && fs.existsSync(options.outDir)) {
+        if (!fs.lstatSync(options.outDir).isDirectory()) {
+            console.error(chalk.red(`${options.outDir} is not a directory`))
+            process.exit(EXIT_STATUS.BUILD_OUTDIR_ERROR)
+        }
     }
 
-    if (options.outFile && entries.length > 1) {
-        console.error(chalk.yellow(`ignoring -o ${options.outFile}`))
+    if (!fs.existsSync("tsconfig.json")) {
+        fs.writeFileSync("tsconfig.json", tsconfig(instdir))
+        console.error(chalk.yellow("Generated tsconfig.json"))
     }
 
     let statsOptions = {

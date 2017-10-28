@@ -5,6 +5,6 @@ export class EXIT_STATUS {
     static WEBPACK_COMPILE_ERROR = 3
     static BUILD_ENTRY_ERROR = 4
     static BUILD_OUTDIR_ERROR = 5
-    static TSCONFIG_NOT_FOUND = 6
+    static BUILD_OUTFILE_ERROR = 6
     static BROKEN_ENV = 127
 }

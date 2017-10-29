@@ -54,6 +54,7 @@ if (command === "env") {
         } else {
             ok = true
             build(instdir, instmod, process.argv.slice(i), options)
+            break
         }
     }
     if (!ok) help(instdir, EXIT_STATUS.BAD_COMMAND)

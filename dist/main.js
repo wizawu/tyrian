@@ -57,6 +57,7 @@ else if (command === "build" && process.argv[3]) {
         else {
             ok = true;
             build_1["default"](instdir, instmod, process.argv.slice(i), options);
+            break;
         }
     }
     if (!ok)

@@ -1,6 +1,6 @@
 {
   "name": "jdbc-template",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "repository": "github:wizawu/jdbc-template",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

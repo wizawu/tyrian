@@ -24,26 +24,27 @@ export interface Options {
     useServerPrepStmts?: boolean
 }
 
-export const mapRow = new RowMapper({
-    mapRow(resultSet: java.sql.ResultSet) {
-        let json: any = {}
-        for (let i = 1; i <= resultSet.getMetaData().getColumnCount(); i++) {
-            let key = resultSet.getMetaData().getColumnName(i)
-            let type = resultSet.getMetaData().getColumnTypeName(i)
-            if (type.toUpperCase() === "JSON") {
-                json[key] = JSON.parse(resultSet.getString(i))
-            } else {
-                json[key] = resultSet.getObject(i)
-            }
+export const rowMapper = new RowMapper((resultSet: java.sql.ResultSet) => {
+    let json: any = {}
+    for (let i = 1; i <= resultSet.getMetaData().getColumnCount(); i++) {
+        let key = resultSet.getMetaData().getColumnName(i)
+        let type = resultSet.getMetaData().getColumnTypeName(i)
+        if (resultSet.getObject(i) == null) {
+            json[key] = null
+        } else if (type.toUpperCase() === "JSON") {
+            json[key] = JSON.parse(resultSet.getString(i))
+        } else {
+            json[key] = resultSet.getObject(i)
         }
-        return json
     }
+    return json
 })
 
 export class Client {
     jdbcTemplate: org.springframework.jdbc.core.JdbcTemplate
+    defaultRowMapper: org.springframework.jdbc.core.RowMapper<any>
 
-    constructor(options: Options) {
+    constructor(options: Options, defaultRowMapper?: org.springframework.jdbc.core.RowMapper<any>) {
         const { host, port, database, user, password } = options
         let url = `jdbc:mysql://${host}:${port}/${database}?user=${user}&password=${password}`
         url += `&characterEncoding=${options.characterEncoding || "UTF-8"}`
@@ -71,6 +72,7 @@ export class Client {
         const dataSource = new MysqlDataSource()
         dataSource.setURL(url)
         this.jdbcTemplate = new JdbcTemplate(dataSource)
+        this.defaultRowMapper = defaultRowMapper || rowMapper
     }
 
     ensureTable(table: string, pkey: string, type: string) {
@@ -79,15 +81,31 @@ export class Client {
         `)
     }
 
+    query(sql: string, args?: any[]) {
+        if (args === undefined) {
+            return this.jdbcTemplate.query(sql, this.defaultRowMapper)
+        } else {
+            return this.jdbcTemplate.query(sql, args, this.defaultRowMapper)
+        }
+    }
+
+    queryForObject(sql: string, args?: any[]) {
+        if (args === undefined) {
+            this.jdbcTemplate.queryForObject(sql, this.defaultRowMapper)
+        } else {
+            this.jdbcTemplate.queryForObject(sql, args, this.defaultRowMapper)
+        }
+    }
+
     ensureColumn(table: string, column: string, type: string) {
-        let columns = Java.from(this.jdbcTemplate.query("SHOW COLUMNS FROM " + table, mapRow))
+        let columns = Java.from(this.query("SHOW COLUMNS FROM " + table))
         if (columns.some(col => col.COLUMN_NAME === column)) return
         this.jdbcTemplate.execute(`ALTER TABLE ${table} ADD COLUMN ${column} ${type}`)
     }
 
     ensureIndex(table: string, columns: string[], options = { unique: false }) {
         let index = table + (options.unique ? "_uidx_" : "_idx_") + columns.join("_")
-        let indexes = Java.from(this.jdbcTemplate.query("SHOW INDEX FROM " + table, mapRow))
+        let indexes = Java.from(this.query("SHOW INDEX FROM " + table))
         if (indexes.some(idx => idx.INDEX_NAME === index)) return
         this.jdbcTemplate.execute(`
             CREATE ${options.unique ? "UNIQUE" : ""} INDEX ${index} ON ${table}(${columns.join(",")})

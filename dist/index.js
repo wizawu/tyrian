@@ -7,24 +7,25 @@ exports.BIGINT = "BIGINT";
 exports.BOOL = "BOOL";
 exports.TEXT = "TEXT";
 exports.VARCHAR = function (length) { return "VARCHAR(" + length + ")"; };
-exports.mapRow = new RowMapper({
-    mapRow: function (resultSet) {
-        var json = {};
-        for (var i = 1; i <= resultSet.getMetaData().getColumnCount(); i++) {
-            var key = resultSet.getMetaData().getColumnName(i);
-            var type = resultSet.getMetaData().getColumnTypeName(i);
-            if (type.toUpperCase() === "JSON") {
-                json[key] = JSON.parse(resultSet.getString(i));
-            }
-            else {
-                json[key] = resultSet.getObject(i);
-            }
+exports.rowMapper = new RowMapper(function (resultSet) {
+    var json = {};
+    for (var i = 1; i <= resultSet.getMetaData().getColumnCount(); i++) {
+        var key = resultSet.getMetaData().getColumnName(i);
+        var type = resultSet.getMetaData().getColumnTypeName(i);
+        if (resultSet.getObject(i) == null) {
+            json[key] = null;
         }
-        return json;
+        else if (type.toUpperCase() === "JSON") {
+            json[key] = JSON.parse(resultSet.getString(i));
+        }
+        else {
+            json[key] = resultSet.getObject(i);
+        }
     }
+    return json;
 });
 var Client = (function () {
-    function Client(options) {
+    function Client(options, defaultRowMapper) {
         var host = options.host, port = options.port, database = options.database, user = options.user, password = options.password;
         var url = "jdbc:mysql://" + host + ":" + port + "/" + database + "?user=" + user + "&password=" + password;
         url += "&characterEncoding=" + (options.characterEncoding || "UTF-8");
@@ -52,12 +53,29 @@ var Client = (function () {
         var dataSource = new MysqlDataSource();
         dataSource.setURL(url);
         this.jdbcTemplate = new JdbcTemplate(dataSource);
+        this.defaultRowMapper = defaultRowMapper || exports.rowMapper;
     }
     Client.prototype.ensureTable = function (table, pkey, type) {
         this.jdbcTemplate.execute("\n            CREATE TABLE IF NOT EXISTS " + table + " (" + pkey + " " + type + " PRIMARY KEY)\n        ");
     };
+    Client.prototype.query = function (sql, args) {
+        if (args === undefined) {
+            return this.jdbcTemplate.query(sql, this.defaultRowMapper);
+        }
+        else {
+            return this.jdbcTemplate.query(sql, args, this.defaultRowMapper);
+        }
+    };
+    Client.prototype.queryForObject = function (sql, args) {
+        if (args === undefined) {
+            this.jdbcTemplate.queryForObject(sql, this.defaultRowMapper);
+        }
+        else {
+            this.jdbcTemplate.queryForObject(sql, args, this.defaultRowMapper);
+        }
+    };
     Client.prototype.ensureColumn = function (table, column, type) {
-        var columns = Java.from(this.jdbcTemplate.query("SHOW COLUMNS FROM " + table, exports.mapRow));
+        var columns = Java.from(this.query("SHOW COLUMNS FROM " + table));
         if (columns.some(function (col) { return col.COLUMN_NAME === column; }))
             return;
         this.jdbcTemplate.execute("ALTER TABLE " + table + " ADD COLUMN " + column + " " + type);
@@ -65,7 +83,7 @@ var Client = (function () {
     Client.prototype.ensureIndex = function (table, columns, options) {
         if (options === void 0) { options = { unique: false }; }
         var index = table + (options.unique ? "_uidx_" : "_idx_") + columns.join("_");
-        var indexes = Java.from(this.jdbcTemplate.query("SHOW INDEX FROM " + table, exports.mapRow));
+        var indexes = Java.from(this.query("SHOW INDEX FROM " + table));
         if (indexes.some(function (idx) { return idx.INDEX_NAME === index; }))
             return;
         this.jdbcTemplate.execute("\n            CREATE " + (options.unique ? "UNIQUE" : "") + " INDEX " + index + " ON " + table + "(" + columns.join(",") + ")\n        ");

@@ -1,6 +1,6 @@
 import { assert } from "chai"
 import { describe, it, beforeEach, report } from "lightest"
-import { Client, mapRow, VARCHAR, TEXT, BIGINT } from "../src/index"
+import { Client, VARCHAR, TEXT, BIGINT } from "../src/index"
 
 const logger = java.lang.System.err
 
@@ -22,9 +22,9 @@ describe("Client", () => {
 
     it("ensureTable", () => {
         client.ensureTable(table, "id", BIGINT)
-        let tables = Java.from(client.jdbcTemplate.query(`SHOW TABLES`, mapRow))
+        let tables = Java.from(client.query(`SHOW TABLES`))
         assert.strictEqual(tables.some(t => t.TABLE_NAME === table), true)
-        let index = client.jdbcTemplate.query(`SHOW INDEX FROM ${table}`, mapRow)[0]
+        let index = client.query(`SHOW INDEX FROM ${table}`)[0]
         assert.strictEqual(index.INDEX_NAME, "PRIMARY")
         assert.strictEqual(index.COLUMN_NAME, "id")
     })
@@ -32,7 +32,7 @@ describe("Client", () => {
     it("ensureColumn", () => {
         client.ensureTable(table, "id", BIGINT)
         client.ensureColumn(table, "path", TEXT)
-        let columns = Java.from(client.jdbcTemplate.query(`SHOW COLUMNS FROM ${table}`, mapRow))
+        let columns = Java.from(client.query(`SHOW COLUMNS FROM ${table}`))
         assert.strictEqual(columns.some(c =>
             c.COLUMN_NAME === "path" &&
             c.COLUMN_TYPE === "text"
@@ -43,7 +43,7 @@ describe("Client", () => {
         client.ensureTable(table, "id", BIGINT)
         client.ensureColumn(table, "path", VARCHAR(16))
         client.ensureIndex(table, ["id", "path"])
-        let indexes = Java.from(client.jdbcTemplate.query(`SHOW INDEX FROM ${table}`, mapRow))
+        let indexes = Java.from(client.query(`SHOW INDEX FROM ${table}`))
         assert.strictEqual(indexes.some(c =>
             c.INDEX_NAME === `${table}_idx_id_path` &&
             c.NON_UNIQUE === 1
@@ -54,7 +54,7 @@ describe("Client", () => {
         client.ensureTable(table, "id", BIGINT)
         client.ensureColumn(table, "path", VARCHAR(16))
         client.ensureUniqueIndex(table, ["id", "path"])
-        let indexes = Java.from(client.jdbcTemplate.query(`SHOW INDEX FROM ${table}`, mapRow))
+        let indexes = Java.from(client.query(`SHOW INDEX FROM ${table}`))
         assert.strictEqual(indexes.some(c =>
             c.INDEX_NAME === `${table}_uidx_id_path` &&
             c.NON_UNIQUE === 0
@@ -65,10 +65,10 @@ describe("Client", () => {
         client.ensureTable(table, "id", BIGINT)
         client.ensureColumn(table, "value", TEXT)
         client.insert(table, { id: 1, value: "a" })
-        let rows = Java.from(client.jdbcTemplate.query(`SELECT * FROM ${table}`, mapRow))
+        let rows = Java.from(client.query(`SELECT * FROM ${table}`))
         assert.strictEqual(rows.length, 1)
         client.insert(table, { id: 2, value: "b" })
-        rows = Java.from(client.jdbcTemplate.query(`SELECT * FROM ${table}`, mapRow))
+        rows = Java.from(client.query(`SELECT * FROM ${table}`))
         assert.strictEqual(rows.length, 2)
         try {
             client.insert(table, { id: 1, value: "c" })
@@ -92,17 +92,17 @@ describe("Client", () => {
         client.ensureTable(table, "id", BIGINT)
         client.ensureColumn(table, "path", TEXT)
         client.insert(table, { id: 1, path: "/" })
-        let rows = Java.from(client.jdbcTemplate.query(`SELECT * FROM ${table}`, mapRow))
+        let rows = Java.from(client.query(`SELECT * FROM ${table}`))
         assert.strictEqual(rows.length, 1)
         assert.strictEqual(rows[0].id, 1)
         assert.strictEqual(rows[0].path, "/")
         client.upsert(table, { id: 1, path: "/root" })
-        rows = Java.from(client.jdbcTemplate.query(`SELECT * FROM ${table}`, mapRow))
+        rows = Java.from(client.query(`SELECT * FROM ${table}`))
         assert.strictEqual(rows.length, 1)
         assert.strictEqual(rows[0].id, 1)
         assert.strictEqual(rows[0].path, "/root")
         client.upsert(table, { id: 2, path: "/home" })
-        rows = Java.from(client.jdbcTemplate.query(`SELECT * FROM ${table}`, mapRow))
+        rows = Java.from(client.query(`SELECT * FROM ${table}`))
         assert.strictEqual(rows.length, 2)
         assert.strictEqual(rows.some(r => r.id === 1 && r.path === "/root"), true)
         assert.strictEqual(rows.some(r => r.id === 2 && r.path === "/home"), true)
@@ -121,7 +121,7 @@ describe("Client", () => {
             false
         )
         client.insert(table, { id: 4, list: { value: [5, 6] } })
-        let row: any = client.jdbcTemplate.queryForObject(`SELECT * FROM ${table} WHERE id = 4`, mapRow)
+        let row: any = client.queryForObject(`SELECT * FROM ${table} WHERE id = 4`)
         assert.strictEqual(row.id, 4)
         assert.strictEqual(row.list.value[0], 5)
         assert.strictEqual(row.list.value[1], 6)

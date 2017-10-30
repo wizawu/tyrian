@@ -17,11 +17,14 @@ export interface Options {
     useSSL?: boolean;
     useServerPrepStmts?: boolean;
 }
-export declare const mapRow: any;
+export declare const rowMapper: any;
 export declare class Client {
     jdbcTemplate: org.springframework.jdbc.core.JdbcTemplate;
-    constructor(options: Options);
+    defaultRowMapper: org.springframework.jdbc.core.RowMapper<any>;
+    constructor(options: Options, defaultRowMapper?: org.springframework.jdbc.core.RowMapper<any>);
     ensureTable(table: string, pkey: string, type: string): void;
+    query(sql: string, args?: any[]): java.util.List<any>;
+    queryForObject(sql: string, args?: any[]): void;
     ensureColumn(table: string, column: string, type: string): void;
     ensureIndex(table: string, columns: string[], options?: {
         unique: boolean;

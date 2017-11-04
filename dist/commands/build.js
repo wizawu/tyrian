@@ -151,8 +151,8 @@ function default_1(instdir, instmod, entries, options) {
     };
     if (options.watch) {
         compiler(instdir, instmod, entries, options).watch({ poll: true }, function (err, stats) {
-            console.log("Clock: " + new Date().toLocaleTimeString());
             console.log(stats.toString(statsOptions));
+            console.log("\nFinished last build at " + new Date().toLocaleTimeString() + "\n");
         });
     }
     else {

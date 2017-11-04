@@ -159,8 +159,8 @@ export default function (instdir: string, instmod: string, entries: string[], op
 
     if (options.watch) {
         compiler(instdir, instmod, entries, options).watch({ poll: true }, (err, stats) => {
-            console.log(`Clock: ${new Date().toLocaleTimeString()}`)
             console.log(stats.toString(statsOptions))
+            console.log(`\nFinished last build at ${new Date().toLocaleTimeString()}\n`)
         })
     } else {
         compiler(instdir, instmod, entries, options).run((err, stats) => {

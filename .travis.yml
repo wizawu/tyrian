@@ -9,6 +9,6 @@ jdk:
 before_script:
   - jdk_switcher use openjdk8
 script:
-  - npm install -g typescript yarn
+  - npm install -g typescript
   - make types
   - make test

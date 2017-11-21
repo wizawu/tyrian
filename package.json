@@ -1,6 +1,6 @@
 {
   "name": "1c",
-  "version": "8.7.0",
+  "version": "8.7.1",
   "bin": "./bin/1c",
   "repository": "github:wizawu/1c",
   "dependencies": {
@@ -10,7 +10,7 @@
     "@types/source-map": "^0.5.2",
     "@types/webpack": "^3.8.1",
     "autoprefixer": "^7.1.6",
-    "chalk": "2.0.x",
+    "chalk": "2.1.x",
     "css-loader": "^0.28.7",
     "json-loader": "^0.5.7",
     "less": "^2.7.3",

@@ -24,7 +24,7 @@ export declare class Client {
     constructor(options: Options, defaultRowMapper?: org.springframework.jdbc.core.RowMapper<any>);
     ensureTable(table: string, pkey: string, type: string): void;
     query(sql: string, args?: any[]): java.util.List<any>;
-    queryForObject(sql: string, args?: any[]): void;
+    queryForObject(sql: string, args?: any[]): any;
     ensureColumn(table: string, column: string, type: string): void;
     ensureIndex(table: string, columns: string[], options?: {
         unique: boolean;

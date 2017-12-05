@@ -91,9 +91,9 @@ export class Client {
 
     queryForObject(sql: string, args?: any[]) {
         if (args === undefined) {
-            this.jdbcTemplate.queryForObject(sql, this.defaultRowMapper)
+            return this.jdbcTemplate.queryForObject(sql, this.defaultRowMapper)
         } else {
-            this.jdbcTemplate.queryForObject(sql, args, this.defaultRowMapper)
+            return this.jdbcTemplate.queryForObject(sql, args, this.defaultRowMapper)
         }
     }
 

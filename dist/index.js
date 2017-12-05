@@ -68,10 +68,10 @@ var Client = (function () {
     };
     Client.prototype.queryForObject = function (sql, args) {
         if (args === undefined) {
-            this.jdbcTemplate.queryForObject(sql, this.defaultRowMapper);
+            return this.jdbcTemplate.queryForObject(sql, this.defaultRowMapper);
         }
         else {
-            this.jdbcTemplate.queryForObject(sql, args, this.defaultRowMapper);
+            return this.jdbcTemplate.queryForObject(sql, args, this.defaultRowMapper);
         }
     };
     Client.prototype.ensureColumn = function (table, column, type) {

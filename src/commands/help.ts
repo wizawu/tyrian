@@ -25,7 +25,8 @@ build options:
 
 run options:
   -w                watch changes and re-run
-  jjs options       check out 'jjs -h' (must after -w if used)
+  jjs options       check out 'jjs -h' (must be after -w if used)
+                    e.g. -J-Xms64m -J-Xmx256m -Dfile.encoding=UTF-8
 
     `.trim())
 

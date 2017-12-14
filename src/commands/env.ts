@@ -53,7 +53,7 @@ export default function () {
     if (child.status !== 0) ok = false
 
     if (!ok) {
-        console.error(output)
+        console.log(output)
         process.exit(EXIT_STATUS.BROKEN_ENV)
     } else {
         return output

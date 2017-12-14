@@ -5,8 +5,8 @@ export function version(instdir: string) {
 }
 
 export function help(instdir: string, status: number) {
-    console.error(`
-
+    console.log()
+    console.log(`
 Version: ${version(instdir)}
 
 Usage:
@@ -27,8 +27,7 @@ run options:
   -w                watch changes and re-run
   jjs options       check out 'jjs -h' (must be after -w if used)
                     e.g. -J-Xms64m -J-Xmx256m -Dfile.encoding=UTF-8
-
     `.trim())
-
+    console.log()
     process.exit(status)
 }

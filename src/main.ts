@@ -1,5 +1,4 @@
 import * as fs from "fs"
-import * as os from "os"
 import * as path from "path"
 
 import build from "./commands/build"
@@ -18,18 +17,8 @@ if (command === "help") {
     help(instdir, EXIT_STATUS.OK)
 } else if (command === "version") {
     console.log(version(instdir))
-    process.exit(EXIT_STATUS.OK)
-}
-
-let envstat: string | undefined = ""
-let envfile = `${os.tmpdir()}/1c-env-${(Date.now() / 3600000).toFixed()}`
-if (command === "env" || !fs.existsSync(envfile)) {
-    envstat = env()
-    fs.writeFileSync(envfile, envstat)
-}
-
-if (command === "env") {
-    console.error(envstat)
+} else if (command === "env") {
+    console.log(env())
 } else if (command === "install") {
     install(instdir)
 } else if (command === "build" && process.argv[3]) {

@@ -52,7 +52,7 @@ function default_1() {
     if (child.status !== 0)
         ok = false;
     if (!ok) {
-        console.error(output);
+        console.log(output);
         process.exit(const_1.EXIT_STATUS.BROKEN_ENV);
     }
     else {

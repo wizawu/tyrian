@@ -1,7 +1,6 @@
 "use strict";
 exports.__esModule = true;
 var fs = require("fs");
-var os = require("os");
 var path = require("path");
 var build_1 = require("./commands/build");
 var env_1 = require("./commands/env");
@@ -17,16 +16,9 @@ if (command === "help") {
 }
 else if (command === "version") {
     console.log(help_1.version(instdir));
-    process.exit(const_1.EXIT_STATUS.OK);
 }
-var envstat = "";
-var envfile = os.tmpdir() + "/1c-env-" + (Date.now() / 3600000).toFixed();
-if (command === "env" || !fs.existsSync(envfile)) {
-    envstat = env_1["default"]();
-    fs.writeFileSync(envfile, envstat);
-}
-if (command === "env") {
-    console.error(envstat);
+else if (command === "env") {
+    console.log(env_1["default"]());
 }
 else if (command === "install") {
     install_1["default"](instdir);

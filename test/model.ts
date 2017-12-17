@@ -1,7 +1,7 @@
 import { assert } from "chai"
 import { beforeEach, describe, it, report } from "lightest"
 
-import { Model } from "../src/model"
+import { Model, VARCHAR } from "../src/model"
 
 class Repository extends Model {
     topics = this.ARRAY()
@@ -10,6 +10,12 @@ class Repository extends Model {
     owner = this.OBJECT()
     name = this.STRING()
 }
+
+describe("model", () => {
+    it("VARCHAR", () => {
+        assert.deepEqual("VARCHAR(64)", VARCHAR(64))
+    })
+})
 
 describe("Model", () => {
     let repository
@@ -36,6 +42,23 @@ describe("Model", () => {
 
     it("STRING", () => {
         assert.deepEqual("", repository.name)
+    })
+
+    it("from", () => {
+        let repository = new Repository().from({
+            topics: ["z", "x", "c"],
+            private: true,
+            size: 10,
+            owner: { url: "https://" },
+            name: "wizawu",
+            extra: "no",
+        }) as Repository
+        assert.deepEqual(["z", "x", "c"], repository.topics)
+        assert.deepEqual(true, repository.private)
+        assert.deepEqual(10, repository.size)
+        assert.deepEqual("https://", repository.owner.url)
+        assert.deepEqual("wizawu", repository.name)
+        assert.isUndefined((repository as any).extra)
     })
 })
 

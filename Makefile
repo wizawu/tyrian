@@ -4,5 +4,10 @@ build: clean
 watch:
 	1c build -w -c test/dist test/*.ts
 
+test: build
+	1c build -c test/dist test/*.ts
+	1c run test/dist/model.js
+	1c run test/dist/index.js
+
 clean:
 	rm -rf dist

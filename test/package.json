@@ -1,9 +1,0 @@
-{
-  "mvnDependencies": [
-    "mysql:mysql-connector-java:6.0.6",
-    "org.springframework:spring-jdbc:5.0.0.RELEASE"
-  ],
-  "devDependencies": {
-    "lightest": "^0.1.2"
-  }
-}

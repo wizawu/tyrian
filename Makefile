@@ -1,8 +1,8 @@
 build: clean
-	tsc -d -p . --outDir dist
+	tsc -d -p build.tsconfig.json --outDir dist
 
 watch:
-	tsc -d -p . --outDir dist -w
+	1c build -w -c test/dist test/*.ts
 
 clean:
 	rm -rf dist

@@ -32,23 +32,11 @@ var Client = (function () {
         if (options.autoReconnect !== undefined) {
             url += "&autoReconnect=" + options.autoReconnect;
         }
-        if (options.logger !== undefined) {
-            url += "&logger=" + options.logger;
-        }
-        if (options.profileSQL !== undefined) {
-            url += "&profileSQL=" + options.profileSQL;
-        }
-        if (options.rewriteBatchedStatements !== undefined) {
-            url += "&rewriteBatchedStatements=" + options.rewriteBatchedStatements;
-        }
         if (options.testOnBorrow !== undefined) {
             url += "&testOnBorrow=" + options.testOnBorrow;
         }
         if (options.useSSL !== undefined) {
             url += "&useSSL=" + options.useSSL;
-        }
-        if (options.useServerPrepStmts !== undefined) {
-            url += "&useServerPrepStmts=" + options.useServerPrepStmts;
         }
         var dataSource = new MysqlDataSource();
         dataSource.setURL(url);

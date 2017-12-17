@@ -10,12 +10,8 @@ export interface Options {
     password: string;
     autoReconnect?: boolean;
     characterEncoding?: string;
-    logger?: string;
-    profileSQL?: boolean;
-    rewriteBatchedStatements?: boolean;
     testOnBorrow?: boolean;
     useSSL?: boolean;
-    useServerPrepStmts?: boolean;
 }
 export declare const rowMapper: any;
 export declare class Client {

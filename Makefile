@@ -1,17 +1,8 @@
-.PHONY: build test
-
 build: clean
-	tsc -d -p . --outDir build
-	mv build/src dist
+	tsc -d -p . --outDir dist
 
 watch:
-	tsc -d -p . --outDir build -w
-
-build/test:
-	1c build test/test_*.ts
-
-test: build build/test
-	1c run test_index.js
+	tsc -d -p . --outDir dist -w
 
 clean:
-	rm -rf build dist
+	rm -rf dist

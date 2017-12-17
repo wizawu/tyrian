@@ -1,14 +1,11 @@
 {
-  "name": "jdbc-template",
-  "version": "0.5.5",
-  "repository": "github:wizawu/jdbc-template",
+  "name": "orsql",
+  "version": "0.6.0",
+  "repository": "github:wizawu/orsql",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "mvnDependencies": [
     "mysql:mysql-connector-java:6.0.6",
     "org.springframework:spring-jdbc:5.0.0.RELEASE"
-  ],
-  "devDependencies": {
-    "lightest": "^0.1.2"
-  }
+  ]
 }

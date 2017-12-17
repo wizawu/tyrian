@@ -16,12 +16,8 @@ export interface Options {
 
     autoReconnect?: boolean
     characterEncoding?: string
-    logger?: string
-    profileSQL?: boolean
-    rewriteBatchedStatements?: boolean
     testOnBorrow?: boolean
     useSSL?: boolean
-    useServerPrepStmts?: boolean
 }
 
 export const rowMapper = new RowMapper((resultSet: java.sql.ResultSet) => {
@@ -51,23 +47,11 @@ export class Client {
         if (options.autoReconnect !== undefined) {
             url += `&autoReconnect=${options.autoReconnect}`
         }
-        if (options.logger !== undefined) {
-            url += `&logger=${options.logger}`
-        }
-        if (options.profileSQL !== undefined) {
-            url += `&profileSQL=${options.profileSQL}`
-        }
-        if (options.rewriteBatchedStatements !== undefined) {
-            url += `&rewriteBatchedStatements=${options.rewriteBatchedStatements}`
-        }
         if (options.testOnBorrow !== undefined) {
             url += `&testOnBorrow=${options.testOnBorrow}`
         }
         if (options.useSSL !== undefined) {
             url += `&useSSL=${options.useSSL}`
-        }
-        if (options.useServerPrepStmts !== undefined) {
-            url += `&useServerPrepStmts=${options.useServerPrepStmts}`
         }
         const dataSource = new MysqlDataSource()
         dataSource.setURL(url)

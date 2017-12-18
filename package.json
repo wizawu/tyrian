@@ -1,6 +1,6 @@
 {
   "name": "orsql",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "repository": "github:wizawu/orsql",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,6 +10,8 @@
   ],
   "devDependencies": {
     "chai": "^4.1.2",
-    "lightest": "^0.1.2"
+    "lightest": "^0.1.2",
+    "lorem-ipsum": "^1.0.4",
+    "uuid": "^3.1.0"
   }
 }

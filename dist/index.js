@@ -5,6 +5,11 @@ function __export(m) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var model_1 = require("./model");
 __export(require("./model"));
+var Collate;
+(function (Collate) {
+    Collate["utf8_bin"] = "utf8_bin";
+    Collate["utf8mb4_unicode_ci"] = "utf8mb4_unicode_ci";
+})(Collate = exports.Collate || (exports.Collate = {}));
 var Engine;
 (function (Engine) {
     Engine["ARCHIVE"] = "ARCHIVE";
@@ -33,9 +38,9 @@ var Client = (function () {
         dataSource.setURL(url);
         this.db = new org.springframework.jdbc.core.JdbcTemplate(dataSource);
     }
-    Client.prototype.ensureTable = function (table, pkey, type, engine) {
+    Client.prototype.ensureTable = function (table, pkey, type, engine, collate) {
         if (engine === void 0) { engine = Engine.InnoDB; }
-        this.db.execute("\n            CREATE TABLE IF NOT EXISTS " + table + " (\n                " + pkey + " " + type + " PRIMARY KEY\n            ) ENGINE = " + engine + "\n        ");
+        this.db.execute("\n            CREATE TABLE IF NOT EXISTS " + table + " (\n                " + pkey + " " + type + " PRIMARY KEY\n            ) ENGINE = " + engine + " " + (collate ? ", COLLATE " + collate : "") + "\n        ");
     };
     Client.prototype.ensureColumn = function (table, column, type) {
         var columns = this.query("SHOW COLUMNS FROM " + table);

@@ -1,5 +1,9 @@
 import { Model } from "./model";
 export * from "./model";
+export declare enum Collate {
+    utf8_bin = "utf8_bin",
+    utf8mb4_unicode_ci = "utf8mb4_unicode_ci",
+}
 export declare enum Engine {
     ARCHIVE = "ARCHIVE",
     BLACKHOLE = "BLACKHOLE",
@@ -26,7 +30,7 @@ export interface Options {
 export declare class Client {
     db: org.springframework.jdbc.core.JdbcTemplate;
     constructor(options: Options);
-    ensureTable(table: string, pkey: string, type: string, engine?: Engine): void;
+    ensureTable(table: string, pkey: string, type: string, engine?: Engine, collate?: Collate): void;
     ensureColumn(table: string, column: string, type: string): void;
     ensureIndex(table: string, columns: string[], options?: {
         unique: boolean;

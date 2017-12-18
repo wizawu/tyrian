@@ -1,5 +1,6 @@
 import { assert } from "chai"
 import { describe, it, beforeEach, report, afterEach } from "lightest"
+
 import { Client, Model, ColumnType, Engine } from "../src/index"
 
 const logger = java.lang.System.err

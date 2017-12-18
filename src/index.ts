@@ -2,6 +2,11 @@ import { Model, rowMapper } from "./model"
 
 export * from "./model"
 
+export enum Collate {
+    utf8_bin = "utf8_bin",
+    utf8mb4_unicode_ci = "utf8mb4_unicode_ci",
+}
+
 export enum Engine {
     ARCHIVE = "ARCHIVE",
     BLACKHOLE = "BLACKHOLE",
@@ -44,11 +49,11 @@ export class Client {
         this.db = new org.springframework.jdbc.core.JdbcTemplate(dataSource)
     }
 
-    ensureTable(table: string, pkey: string, type: string, engine = Engine.InnoDB) {
+    ensureTable(table: string, pkey: string, type: string, engine = Engine.InnoDB, collate?: Collate) {
         this.db.execute(`
             CREATE TABLE IF NOT EXISTS ${table} (
                 ${pkey} ${type} PRIMARY KEY
-            ) ENGINE = ${engine}
+            ) ENGINE = ${engine} ${collate ? ", COLLATE " + collate : ""}
         `)
     }
 

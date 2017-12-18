@@ -134,18 +134,18 @@ describe("Client", () => {
         assert.deepEqual("b", rows[0].value)
     })
 
-    it("json", () => {
+    it("JSON", () => {
         client.ensureColumn(table, "value", ColumnType.TEXT)
         client.ensureColumn(table, "list", ColumnType.JSON)
         client.ensureColumn(table, "map", ColumnType.JSON)
 
         client.insert(table, new Row().from({ id: 1, list: [2, 3] }))
         assert.strictEqual(
-            client.db.queryForObject(`SELECT json_contains(list, '2') FROM ${table}`, java.lang.Boolean.class),
+            client.db.queryForObject(`SELECT JSON_CONTAINS(list, '2') FROM ${table}`, java.lang.Boolean.class),
             true
         )
         assert.strictEqual(
-            client.db.queryForObject(`SELECT json_contains(list, '4') FROM ${table}`, java.lang.Boolean.class),
+            client.db.queryForObject(`SELECT JSON_CONTAINS(list, '4') FROM ${table}`, java.lang.Boolean.class),
             false
         )
 

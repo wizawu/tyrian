@@ -1,5 +1,17 @@
 import { Model } from "./model";
 export * from "./model";
+export declare enum Engine {
+    ARCHIVE = "ARCHIVE",
+    BLACKHOLE = "BLACKHOLE",
+    CSV = "CSV",
+    FEDERATED = "FEDERATED",
+    InnoDB = "InnoDB",
+    MEMORY = "MEMORY",
+    MRG_MYISAM = "MRG_MYISAM",
+    MyISAM = "MyISAM",
+    PERFORMANCE_SCHEMA = "PERFORMANCE_SCHEMA",
+    ROCKSDB = "ROCKSDB",
+}
 export interface Options {
     host: string;
     port: int;

@@ -1,11 +1,20 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var RowMapper = Java.type("org.springframework.jdbc.core.RowMapper");
-exports.BIGINT = "BIGINT";
-exports.BOOL = "BOOL";
-exports.DOUBLE = "DOUBLE";
-exports.TEXT = "TEXT";
-exports.VARCHAR = function (length) { return "VARCHAR(" + length + ")"; };
+var ColumnType = (function () {
+    function ColumnType() {
+    }
+    ColumnType.VARCHAR = function (length) {
+        return "VARCHAR(" + length + ")";
+    };
+    ColumnType.BIGINT = "BIGINT";
+    ColumnType.BOOL = "BOOL";
+    ColumnType.DOUBLE = "DOUBLE";
+    ColumnType.JSON = "JSON";
+    ColumnType.TEXT = "TEXT";
+    return ColumnType;
+}());
+exports.ColumnType = ColumnType;
 var Model = (function () {
     function Model() {
     }

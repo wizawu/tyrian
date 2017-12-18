@@ -5,8 +5,19 @@ function __export(m) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var model_1 = require("./model");
 __export(require("./model"));
-var JdbcTemplate = org.springframework.jdbc.core.JdbcTemplate;
-var MysqlDataSource = com.mysql.cj.jdbc.MysqlDataSource;
+var Engine;
+(function (Engine) {
+    Engine["ARCHIVE"] = "ARCHIVE";
+    Engine["BLACKHOLE"] = "BLACKHOLE";
+    Engine["CSV"] = "CSV";
+    Engine["FEDERATED"] = "FEDERATED";
+    Engine["InnoDB"] = "InnoDB";
+    Engine["MEMORY"] = "MEMORY";
+    Engine["MRG_MYISAM"] = "MRG_MYISAM";
+    Engine["MyISAM"] = "MyISAM";
+    Engine["PERFORMANCE_SCHEMA"] = "PERFORMANCE_SCHEMA";
+    Engine["ROCKSDB"] = "ROCKSDB";
+})(Engine = exports.Engine || (exports.Engine = {}));
 var Client = (function () {
     function Client(options) {
         var host = options.host, port = options.port, database = options.database, user = options.user, password = options.password;
@@ -18,10 +29,10 @@ var Client = (function () {
             url += "&testOnBorrow=" + options.testOnBorrow;
         if (options.useSSL !== undefined)
             url += "&useSSL=" + options.useSSL;
-        var dataSource = new MysqlDataSource();
+        var dataSource = new com.mysql.cj.jdbc.MysqlDataSource();
         dataSource.setURL(url);
-        this.db = new JdbcTemplate(dataSource);
-        this.defaultEngine = options.defaultEngine || "INNODB";
+        this.db = new org.springframework.jdbc.core.JdbcTemplate(dataSource);
+        this.defaultEngine = options.defaultEngine || Engine.InnoDB;
     }
     Client.prototype.ensureTable = function (table, pkey, type, engine) {
         this.db.execute("\n            CREATE TABLE IF NOT EXISTS " + table + " (\n                " + pkey + " " + type + " PRIMARY KEY\n            ) ENGINE = " + (engine || this.defaultEngine) + "\n        ");

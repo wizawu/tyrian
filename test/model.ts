@@ -1,7 +1,7 @@
 import { assert } from "chai"
 import { beforeEach, describe, it, report } from "lightest"
 
-import { Model, VARCHAR } from "../src/model"
+import { Model, ColumnType } from "../src/model"
 
 class Repository extends Model {
     topics = this.ARRAY()
@@ -13,7 +13,7 @@ class Repository extends Model {
 
 describe("model", () => {
     it("VARCHAR", () => {
-        assert.deepEqual("VARCHAR(64)", VARCHAR(64))
+        assert.deepEqual("VARCHAR(64)", ColumnType.VARCHAR(64))
     })
 })
 

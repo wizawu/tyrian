@@ -1,6 +1,6 @@
 import { assert } from "chai"
 import { describe, it, beforeEach, report, afterEach } from "lightest"
-import { Client, Model, BIGINT, TEXT, VARCHAR } from "../src/index"
+import { Client, Model, ColumnType, Engine } from "../src/index"
 
 const logger = java.lang.System.err
 
@@ -23,10 +23,10 @@ describe("Client", () => {
             user: "root",
             password: "",
             useSSL: false,
-            defaultEngine: "MyISAM",
+            defaultEngine: Engine.MyISAM,
         })
         client.db.execute(`DROP TABLE IF EXISTS ${table}`)
-        client.ensureTable(table, "id", BIGINT)
+        client.ensureTable(table, "id", ColumnType.BIGINT)
     })
 
     afterEach(() => {
@@ -42,28 +42,28 @@ describe("Client", () => {
     })
 
     it("ensureColumn", () => {
-        client.ensureColumn(table, "path", TEXT)
+        client.ensureColumn(table, "path", ColumnType.TEXT)
         let columns = client.query(`SHOW COLUMNS FROM ${table}`)
         assert.strictEqual(columns.some(c => c.Field === "path" && c.Type === "text"), true)
     })
 
     it("ensureIndex", () => {
-        client.ensureColumn(table, "path", VARCHAR(16))
+        client.ensureColumn(table, "path", ColumnType.VARCHAR(16))
         client.ensureIndex(table, ["id", "path"])
         let indexes = client.query(`SHOW INDEX FROM ${table}`)
         assert.strictEqual(indexes.some(c => c.Key_name === `${table}_idx_id_path` && c.Non_unique), true)
     })
 
     it("ensureUniqueIndex", () => {
-        client.ensureColumn(table, "path", VARCHAR(16))
+        client.ensureColumn(table, "path", ColumnType.VARCHAR(16))
         client.ensureUniqueIndex(table, ["id", "path"])
         let indexes = client.query(`SHOW INDEX FROM ${table}`)
         assert.strictEqual(indexes.some(c => c.Key_name === `${table}_uidx_id_path` && !c.Non_unique), true)
     })
 
     it("ensureFullText", () => {
-        client.ensureColumn(table, "title", TEXT)
-        client.ensureColumn(table, "content", TEXT)
+        client.ensureColumn(table, "title", ColumnType.TEXT)
+        client.ensureColumn(table, "content", ColumnType.TEXT)
         client.ensureFullText(table, ["title", "content"])
         client.db.update(`INSERT INTO ${table}(id,title,content) VALUES(1,'疑犯追踪','运用一套独特的办法制止犯罪的故事')`)
         client.db.update(`INSERT INTO ${table}(id,title,content) VALUES(2,'迷失','面对这种荒芜人烟的小岛')`)
@@ -78,9 +78,9 @@ describe("Client", () => {
     })
 
     it("insert", () => {
-        client.ensureColumn(table, "value", TEXT)
-        client.ensureColumn(table, "list", "JSON")
-        client.ensureColumn(table, "map", "JSON")
+        client.ensureColumn(table, "value", ColumnType.TEXT)
+        client.ensureColumn(table, "list", ColumnType.JSON)
+        client.ensureColumn(table, "map", ColumnType.JSON)
 
         client.insert(table, new Row().from({ id: 1, value: "a" }))
         client.insert(table, new Row().from({ id: 2, value: "b" }))
@@ -105,9 +105,9 @@ describe("Client", () => {
     })
 
     it("upsert", () => {
-        client.ensureColumn(table, "value", TEXT)
-        client.ensureColumn(table, "list", "JSON")
-        client.ensureColumn(table, "map", "JSON")
+        client.ensureColumn(table, "value", ColumnType.TEXT)
+        client.ensureColumn(table, "list", ColumnType.JSON)
+        client.ensureColumn(table, "map", ColumnType.JSON)
 
         client.insert(table, new Row().from({ id: 1, value: "a" }))
         let rows = client.query(`SELECT * FROM ${table}`)
@@ -122,9 +122,9 @@ describe("Client", () => {
     })
 
     it("json", () => {
-        client.ensureColumn(table, "value", TEXT)
-        client.ensureColumn(table, "list", "JSON")
-        client.ensureColumn(table, "map", "JSON")
+        client.ensureColumn(table, "value", ColumnType.TEXT)
+        client.ensureColumn(table, "list", ColumnType.JSON)
+        client.ensureColumn(table, "map", ColumnType.JSON)
 
         client.insert(table, new Row().from({ id: 1, list: [2, 3] }))
         assert.strictEqual(

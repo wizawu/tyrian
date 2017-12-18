@@ -1,10 +1,15 @@
 const RowMapper = Java.type("org.springframework.jdbc.core.RowMapper")
 
-export const BIGINT = "BIGINT"
-export const BOOL = "BOOL"
-export const DOUBLE = "DOUBLE"
-export const TEXT = "TEXT"
-export const VARCHAR = (length: number) => `VARCHAR(${length})`
+export class ColumnType {
+    static BIGINT = "BIGINT"
+    static BOOL = "BOOL"
+    static DOUBLE = "DOUBLE"
+    static JSON = "JSON"
+    static TEXT = "TEXT"
+    static VARCHAR(length: number) {
+        return "VARCHAR(" + length + ")"
+    }
+}
 
 export abstract class Model {
     protected ARRAY() {

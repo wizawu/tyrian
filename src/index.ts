@@ -2,8 +2,18 @@ import { Model, rowMapper } from "./model"
 
 export * from "./model"
 
-const JdbcTemplate = org.springframework.jdbc.core.JdbcTemplate
-const MysqlDataSource = com.mysql.cj.jdbc.MysqlDataSource
+export enum Engine {
+    ARCHIVE = "ARCHIVE",
+    BLACKHOLE = "BLACKHOLE",
+    CSV = "CSV",
+    FEDERATED = "FEDERATED",
+    InnoDB = "InnoDB",
+    MEMORY = "MEMORY",
+    MRG_MYISAM = "MRG_MYISAM",
+    MyISAM = "MyISAM",
+    PERFORMANCE_SCHEMA = "PERFORMANCE_SCHEMA",
+    ROCKSDB = "ROCKSDB",
+}
 
 export interface Options {
     host: string
@@ -32,10 +42,10 @@ export class Client {
         if (options.testOnBorrow !== undefined) url += `&testOnBorrow=${options.testOnBorrow}`
         if (options.useSSL !== undefined) url += `&useSSL=${options.useSSL}`
 
-        const dataSource = new MysqlDataSource()
+        const dataSource = new com.mysql.cj.jdbc.MysqlDataSource()
         dataSource.setURL(url)
-        this.db = new JdbcTemplate(dataSource)
-        this.defaultEngine = options.defaultEngine || "INNODB"
+        this.db = new org.springframework.jdbc.core.JdbcTemplate(dataSource)
+        this.defaultEngine = options.defaultEngine || Engine.InnoDB
     }
 
     ensureTable(table: string, pkey: string, type: string, engine?: string) {

@@ -20,10 +20,6 @@ export enum Engine {
     ROCKSDB = "ROCKSDB",
 }
 
-export enum Variable {
-    innodb_flush_log_at_trx_commit = "innodb_flush_log_at_trx_commit"
-}
-
 export interface Options {
     host: string
     port: int
@@ -51,10 +47,14 @@ export class Client {
         const dataSource = new com.mysql.cj.jdbc.MysqlDataSource()
         dataSource.setURL(url)
         this.db = new org.springframework.jdbc.core.JdbcTemplate(dataSource)
+
+        Object.keys(this.$).forEach(variable => this.$[variable] = this.$[variable].bind(this))
     }
 
-    SET_GLOBAL(variable: Variable, value: any) {
-        this.db.execute(`SET GLOBAL ${variable} = ${value}`)
+    $ = {
+        innodb_flush_log_at_trx_commit(value: number) {
+            this.db.execute("SET GLOBAL innodb_flush_log_at_trx_commit = " + value)
+        }
     }
 
     ensureTable(table: string, pkey: string, type: string, engine = Engine.INNODB, collate?: Collate) {

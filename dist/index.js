@@ -23,12 +23,14 @@ var Engine;
     Engine["PERFORMANCE_SCHEMA"] = "PERFORMANCE_SCHEMA";
     Engine["ROCKSDB"] = "ROCKSDB";
 })(Engine = exports.Engine || (exports.Engine = {}));
-var Variable;
-(function (Variable) {
-    Variable["innodb_flush_log_at_trx_commit"] = "innodb_flush_log_at_trx_commit";
-})(Variable = exports.Variable || (exports.Variable = {}));
 var Client = (function () {
     function Client(options) {
+        var _this = this;
+        this.$ = {
+            innodb_flush_log_at_trx_commit: function (value) {
+                this.db.execute("SET GLOBAL innodb_flush_log_at_trx_commit = " + value);
+            }
+        };
         var host = options.host, port = options.port, database = options.database, user = options.user, password = options.password;
         var url = "jdbc:mysql://" + host + ":" + port + "/" + database + "?user=" + user + "&password=" + password;
         url += "&characterEncoding=" + (options.characterEncoding || "UTF-8");
@@ -41,10 +43,8 @@ var Client = (function () {
         var dataSource = new com.mysql.cj.jdbc.MysqlDataSource();
         dataSource.setURL(url);
         this.db = new org.springframework.jdbc.core.JdbcTemplate(dataSource);
+        Object.keys(this.$).forEach(function (variable) { return _this.$[variable] = _this.$[variable].bind(_this); });
     }
-    Client.prototype.SET_GLOBAL = function (variable, value) {
-        this.db.execute("SET GLOBAL " + variable + " = " + value);
-    };
     Client.prototype.ensureTable = function (table, pkey, type, engine, collate) {
         if (engine === void 0) { engine = Engine.INNODB; }
         this.db.execute("\n            CREATE TABLE IF NOT EXISTS " + table + " (\n                " + pkey + " " + type + " PRIMARY KEY\n            ) ENGINE = " + engine + " " + (collate ? ", COLLATE " + collate : "") + "\n        ");

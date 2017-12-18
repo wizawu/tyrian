@@ -3,7 +3,7 @@ import * as uuid from "uuid/v4"
 import { assert } from "chai"
 import { describe, it, beforeEach, report } from "lightest"
 
-import { Client, Model, ColumnType, Engine, Collate, Variable } from "../src/index"
+import { Client, Model, ColumnType, Engine, Collate } from "../src/index"
 
 const logger = java.lang.System.err
 
@@ -25,7 +25,7 @@ describe("Benchmark", () => {
             password: "",
             useSSL: false,
         })
-        client.SET_GLOBAL(Variable.innodb_flush_log_at_trx_commit, 2)
+        client.$.innodb_flush_log_at_trx_commit(2)
     })
 
     it(Engine.INNODB, () => {

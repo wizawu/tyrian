@@ -16,9 +16,6 @@ export declare enum Engine {
     PERFORMANCE_SCHEMA = "PERFORMANCE_SCHEMA",
     ROCKSDB = "ROCKSDB",
 }
-export declare enum Variable {
-    innodb_flush_log_at_trx_commit = "innodb_flush_log_at_trx_commit",
-}
 export interface Options {
     host: string;
     port: int;
@@ -33,7 +30,9 @@ export interface Options {
 export declare class Client {
     db: org.springframework.jdbc.core.JdbcTemplate;
     constructor(options: Options);
-    SET_GLOBAL(variable: Variable, value: any): void;
+    $: {
+        innodb_flush_log_at_trx_commit(value: number): void;
+    };
     ensureTable(table: string, pkey: string, type: string, engine?: Engine, collate?: Collate): void;
     ensureColumn(table: string, column: string, type: string): void;
     ensureIndex(table: string, columns: string[], options?: {

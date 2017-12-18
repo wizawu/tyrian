@@ -26,13 +26,10 @@ export interface Options {
     characterEncoding?: string
     testOnBorrow?: boolean
     useSSL?: boolean
-
-    defaultEngine?: string
 }
 
 export class Client {
     db: org.springframework.jdbc.core.JdbcTemplate
-    defaultEngine: string
 
     constructor(options: Options) {
         const { host, port, database, user, password } = options
@@ -45,14 +42,13 @@ export class Client {
         const dataSource = new com.mysql.cj.jdbc.MysqlDataSource()
         dataSource.setURL(url)
         this.db = new org.springframework.jdbc.core.JdbcTemplate(dataSource)
-        this.defaultEngine = options.defaultEngine || Engine.InnoDB
     }
 
-    ensureTable(table: string, pkey: string, type: string, engine?: string) {
+    ensureTable(table: string, pkey: string, type: string, engine = Engine.InnoDB) {
         this.db.execute(`
             CREATE TABLE IF NOT EXISTS ${table} (
                 ${pkey} ${type} PRIMARY KEY
-            ) ENGINE = ${engine || this.defaultEngine}
+            ) ENGINE = ${engine}
         `)
     }
 

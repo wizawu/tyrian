@@ -22,13 +22,11 @@ export interface Options {
     characterEncoding?: string;
     testOnBorrow?: boolean;
     useSSL?: boolean;
-    defaultEngine?: string;
 }
 export declare class Client {
     db: org.springframework.jdbc.core.JdbcTemplate;
-    defaultEngine: string;
     constructor(options: Options);
-    ensureTable(table: string, pkey: string, type: string, engine?: string): void;
+    ensureTable(table: string, pkey: string, type: string, engine?: Engine): void;
     ensureColumn(table: string, column: string, type: string): void;
     ensureIndex(table: string, columns: string[], options?: {
         unique: boolean;

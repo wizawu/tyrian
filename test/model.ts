@@ -11,7 +11,7 @@ class Repository extends Model {
     name = this.STRING()
 }
 
-describe("model", () => {
+describe("ColumnType", () => {
     it("VARCHAR", () => {
         assert.deepEqual("VARCHAR(64)", ColumnType.VARCHAR(64))
     })

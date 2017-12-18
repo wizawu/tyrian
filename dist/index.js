@@ -32,10 +32,10 @@ var Client = (function () {
         var dataSource = new com.mysql.cj.jdbc.MysqlDataSource();
         dataSource.setURL(url);
         this.db = new org.springframework.jdbc.core.JdbcTemplate(dataSource);
-        this.defaultEngine = options.defaultEngine || Engine.InnoDB;
     }
     Client.prototype.ensureTable = function (table, pkey, type, engine) {
-        this.db.execute("\n            CREATE TABLE IF NOT EXISTS " + table + " (\n                " + pkey + " " + type + " PRIMARY KEY\n            ) ENGINE = " + (engine || this.defaultEngine) + "\n        ");
+        if (engine === void 0) { engine = Engine.InnoDB; }
+        this.db.execute("\n            CREATE TABLE IF NOT EXISTS " + table + " (\n                " + pkey + " " + type + " PRIMARY KEY\n            ) ENGINE = " + engine + "\n        ");
     };
     Client.prototype.ensureColumn = function (table, column, type) {
         var columns = this.query("SHOW COLUMNS FROM " + table);

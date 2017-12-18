@@ -77,6 +77,20 @@ describe("Client", () => {
         assert.strictEqual('迷失', result.title)
     })
 
+    it("update", () => {
+        client.ensureColumn(table, "value", ColumnType.TEXT)
+        client.ensureColumn(table, "list", ColumnType.JSON)
+        client.ensureColumn(table, "map", ColumnType.JSON)
+
+        client.insert(table, new Row().from({ id: 1, value: "a" }))
+        let row: Row = client.queryForObject(`SELECT * FROM ${table}`)
+        assert.deepEqual("a", row.value)
+
+        client.update(`UPDATE ${table} SET value = 'b'`)
+        row = client.queryForObject(`SELECT * FROM ${table}`)
+        assert.deepEqual("b", row.value)
+    })
+
     it("insert", () => {
         client.ensureColumn(table, "value", ColumnType.TEXT)
         client.ensureColumn(table, "list", ColumnType.JSON)

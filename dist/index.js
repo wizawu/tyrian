@@ -67,12 +67,19 @@ var Client = (function () {
     Client.prototype.queryForObject = function (sql, args) {
         return args === undefined ? this.db.queryForObject(sql, model_1.rowMapper) : this.db.queryForObject(sql, args, model_1.rowMapper);
     };
+    Client.prototype.update = function (sql) {
+        var args = [];
+        for (var _i = 1; _i < arguments.length; _i++) {
+            args[_i - 1] = arguments[_i];
+        }
+        return this.db.update(sql, args);
+    };
     Client.prototype.insert = function (table, doc, options) {
         if (options === void 0) { options = { upsert: false }; }
         var Doc = doc.constructor;
         var keys = Object.keys(new Doc());
         var values = keys.map(function () { return "?"; }).join(",");
-        this.db.update((options.upsert ? "REPLACE" : "INSERT") + " INTO " + table + "(" + keys.join(",") + ") VALUES(" + values + ")", keys.map(function (key) {
+        return this.db.update((options.upsert ? "REPLACE" : "INSERT") + " INTO " + table + "(" + keys.join(",") + ") VALUES(" + values + ")", keys.map(function (key) {
             var value = doc[key];
             if (typeof value === "object") {
                 return value === null ? null : JSON.stringify(value);
@@ -83,7 +90,7 @@ var Client = (function () {
         }));
     };
     Client.prototype.upsert = function (table, doc) {
-        this.insert(table, doc, { upsert: true });
+        return this.insert(table, doc, { upsert: true });
     };
     return Client;
 }());

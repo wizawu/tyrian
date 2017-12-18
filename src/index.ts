@@ -90,15 +90,19 @@ export class Client {
         )
     }
 
-    queryForObject(sql: string, args?: any[]) {
+    queryForObject(sql: string, args?: any[]): any {
         return args === undefined ? this.db.queryForObject(sql, rowMapper) : this.db.queryForObject(sql, args, rowMapper)
+    }
+
+    update(sql: string, ...args: any[]) {
+        return this.db.update(sql, args)
     }
 
     insert(table: string, doc: Model, options = { upsert: false }) {
         let Doc: any = doc.constructor
         let keys = Object.keys(new Doc())
         let values = keys.map(() => "?").join(",")
-        this.db.update(
+        return this.db.update(
             `${options.upsert ? "REPLACE" : "INSERT"} INTO ${table}(${keys.join(",")}) VALUES(${values})`,
             keys.map(key => {
                 let value = doc[key]
@@ -112,6 +116,6 @@ export class Client {
     }
 
     upsert(table: string, doc: Model) {
-        this.insert(table, doc, { upsert: true })
+        return this.insert(table, doc, { upsert: true })
     }
 }

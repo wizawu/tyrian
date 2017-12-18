@@ -36,9 +36,10 @@ export declare class Client {
     ensureUniqueIndex(table: string, columns: string[]): void;
     ensureFullText(table: string, columns: string[]): void;
     query(sql: string, args?: any[]): any[];
-    queryForObject(sql: string, args?: any[]): {};
+    queryForObject(sql: string, args?: any[]): any;
+    update(sql: string, ...args: any[]): number;
     insert(table: string, doc: Model, options?: {
         upsert: boolean;
-    }): void;
-    upsert(table: string, doc: Model): void;
+    }): number;
+    upsert(table: string, doc: Model): number;
 }

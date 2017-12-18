@@ -23,6 +23,7 @@ describe("Client", () => {
             user: "root",
             password: "",
             useSSL: false,
+            defaultEngine: "MyISAM",
         })
         client.db.execute(`DROP TABLE IF EXISTS ${table}`)
         client.ensureTable(table, "id", BIGINT)
@@ -89,7 +90,7 @@ describe("Client", () => {
             client.insert(table, new Row().from({ id: 1, value: "c" }))
             throw "should not insert"
         } catch (ex) {
-            assert.isString(ex.message)
+            assert.isOk(/duplicate entry/i.test(ex.message))
         } finally {
             assert.strictEqual(rows.length, 2)
             assert.strictEqual(

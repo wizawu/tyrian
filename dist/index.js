@@ -16,13 +16,17 @@ var Engine;
     Engine["BLACKHOLE"] = "BLACKHOLE";
     Engine["CSV"] = "CSV";
     Engine["FEDERATED"] = "FEDERATED";
-    Engine["InnoDB"] = "InnoDB";
+    Engine["INNODB"] = "INNODB";
     Engine["MEMORY"] = "MEMORY";
     Engine["MRG_MYISAM"] = "MRG_MYISAM";
-    Engine["MyISAM"] = "MyISAM";
+    Engine["MYISAM"] = "MYISAM";
     Engine["PERFORMANCE_SCHEMA"] = "PERFORMANCE_SCHEMA";
     Engine["ROCKSDB"] = "ROCKSDB";
 })(Engine = exports.Engine || (exports.Engine = {}));
+var Variable;
+(function (Variable) {
+    Variable["innodb_flush_log_at_trx_commit"] = "innodb_flush_log_at_trx_commit";
+})(Variable = exports.Variable || (exports.Variable = {}));
 var Client = (function () {
     function Client(options) {
         var host = options.host, port = options.port, database = options.database, user = options.user, password = options.password;
@@ -38,8 +42,11 @@ var Client = (function () {
         dataSource.setURL(url);
         this.db = new org.springframework.jdbc.core.JdbcTemplate(dataSource);
     }
+    Client.prototype.SET_GLOBAL = function (variable, value) {
+        this.db.execute("SET GLOBAL " + variable + " = " + value);
+    };
     Client.prototype.ensureTable = function (table, pkey, type, engine, collate) {
-        if (engine === void 0) { engine = Engine.InnoDB; }
+        if (engine === void 0) { engine = Engine.INNODB; }
         this.db.execute("\n            CREATE TABLE IF NOT EXISTS " + table + " (\n                " + pkey + " " + type + " PRIMARY KEY\n            ) ENGINE = " + engine + " " + (collate ? ", COLLATE " + collate : "") + "\n        ");
     };
     Client.prototype.ensureColumn = function (table, column, type) {

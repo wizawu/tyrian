@@ -12,12 +12,16 @@ export enum Engine {
     BLACKHOLE = "BLACKHOLE",
     CSV = "CSV",
     FEDERATED = "FEDERATED",
-    InnoDB = "InnoDB",
+    INNODB = "INNODB",
     MEMORY = "MEMORY",
     MRG_MYISAM = "MRG_MYISAM",
-    MyISAM = "MyISAM",
+    MYISAM = "MYISAM",
     PERFORMANCE_SCHEMA = "PERFORMANCE_SCHEMA",
     ROCKSDB = "ROCKSDB",
+}
+
+export enum Variable {
+    innodb_flush_log_at_trx_commit = "innodb_flush_log_at_trx_commit"
 }
 
 export interface Options {
@@ -49,7 +53,11 @@ export class Client {
         this.db = new org.springframework.jdbc.core.JdbcTemplate(dataSource)
     }
 
-    ensureTable(table: string, pkey: string, type: string, engine = Engine.InnoDB, collate?: Collate) {
+    SET_GLOBAL(variable: Variable, value: any) {
+        this.db.execute(`SET GLOBAL ${variable} = ${value}`)
+    }
+
+    ensureTable(table: string, pkey: string, type: string, engine = Engine.INNODB, collate?: Collate) {
         this.db.execute(`
             CREATE TABLE IF NOT EXISTS ${table} (
                 ${pkey} ${type} PRIMARY KEY

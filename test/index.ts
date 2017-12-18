@@ -26,7 +26,7 @@ describe("Client", () => {
             useSSL: false,
         })
         client.db.execute(`DROP TABLE IF EXISTS ${table}`)
-        client.ensureTable(table, "id", ColumnType.BIGINT, Engine.MyISAM)
+        client.ensureTable(table, "id", ColumnType.BIGINT, Engine.MYISAM)
     })
 
     afterEach(() => {

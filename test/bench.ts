@@ -3,7 +3,7 @@ import * as uuid from "uuid/v4"
 import { assert } from "chai"
 import { describe, it, beforeEach, report } from "lightest"
 
-import { Client, Model, ColumnType, Engine, Collate } from "../src/index"
+import { Client, Model, ColumnType, Engine, Collate, Variable } from "../src/index"
 
 const logger = java.lang.System.err
 
@@ -25,11 +25,12 @@ describe("Benchmark", () => {
             password: "",
             useSSL: false,
         })
+        client.SET_GLOBAL(Variable.innodb_flush_log_at_trx_commit, 2)
     })
 
-    it(Engine.InnoDB, () => {
+    it(Engine.INNODB, () => {
         client.db.execute(`DROP TABLE IF EXISTS ${table}`)
-        client.ensureTable(table, "id", ColumnType.VARCHAR(64), Engine.InnoDB)
+        client.ensureTable(table, "id", ColumnType.VARCHAR(64), Engine.INNODB)
         client.ensureColumn(table, "content", ColumnType.TEXT)
         for (let i = 0; i < 100; i++) {
             let thesis = new Thesis().from({
@@ -40,7 +41,7 @@ describe("Benchmark", () => {
         }
     })
 
-    it(Engine.InnoDB + " FULLTEXT", () => {
+    it(Engine.INNODB + " FULLTEXT", () => {
         client.ensureFullText(table, ["content"])
         for (let i = 0; i < 100; i++) {
             let rows = client.query(`
@@ -50,9 +51,9 @@ describe("Benchmark", () => {
         }
     })
 
-    it(Engine.MyISAM, () => {
+    it(Engine.MYISAM, () => {
         client.db.execute(`DROP TABLE IF EXISTS ${table}`)
-        client.ensureTable(table, "id", ColumnType.VARCHAR(64), Engine.MyISAM)
+        client.ensureTable(table, "id", ColumnType.VARCHAR(64), Engine.MYISAM)
         client.ensureColumn(table, "content", ColumnType.TEXT)
         for (let i = 0; i < 100; i++) {
             let thesis = new Thesis().from({
@@ -63,7 +64,7 @@ describe("Benchmark", () => {
         }
     })
 
-    it(Engine.MyISAM + " FULLTEXT", () => {
+    it(Engine.MYISAM + " FULLTEXT", () => {
         client.ensureFullText(table, ["content"])
         for (let i = 0; i < 100; i++) {
             let rows = client.query(`

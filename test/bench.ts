@@ -33,7 +33,7 @@ describe("Benchmark", () => {
         client.ensureTable(table, "id", ColumnType.VARCHAR(64), Engine.INNODB)
         client.ensureColumn(table, "content", ColumnType.TEXT)
         for (let i = 0; i < 100; i++) {
-            let thesis = new Thesis().from({
+            let thesis = new Thesis().merge({
                 id: uuid(),
                 content: lorem({ count: 10 }),
             })
@@ -56,7 +56,7 @@ describe("Benchmark", () => {
         client.ensureTable(table, "id", ColumnType.VARCHAR(64), Engine.MYISAM)
         client.ensureColumn(table, "content", ColumnType.TEXT)
         for (let i = 0; i < 100; i++) {
-            let thesis = new Thesis().from({
+            let thesis = new Thesis().merge({
                 id: uuid(),
                 content: lorem({ count: 10 }),
             })
@@ -79,7 +79,7 @@ describe("Benchmark", () => {
         client.ensureTable(table, "id", ColumnType.VARCHAR(64), Engine.ROCKSDB, Collate.utf8_bin)
         client.ensureColumn(table, "content", ColumnType.TEXT)
         for (let i = 0; i < 100; i++) {
-            let thesis = new Thesis().from({
+            let thesis = new Thesis().merge({
                 id: uuid(),
                 content: lorem({ count: 10 }),
             })

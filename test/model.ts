@@ -44,8 +44,8 @@ describe("Model", () => {
         assert.deepEqual("", repository.name)
     })
 
-    it("from", () => {
-        let repository = new Repository().from({
+    it("merge", () => {
+        let repository = new Repository().merge({
             topics: ["z", "x", "c"],
             private: true,
             size: 10,

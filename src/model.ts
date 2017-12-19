@@ -27,8 +27,10 @@ export abstract class Model {
     protected STRING() {
         return ""
     }
-    from(json: object): Model {
-        Object.keys(this).forEach(key => this[key] = json[key] === undefined ? this[key] : json[key])
+    merge(json: object): Model {
+        Object.keys(this).forEach(key => {
+            if (json[key] !== undefined) this[key] = json[key]
+        })
         return this
     }
 }

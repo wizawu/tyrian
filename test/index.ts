@@ -82,7 +82,7 @@ describe("Client", () => {
         client.ensureColumn(table, "list", ColumnType.JSON)
         client.ensureColumn(table, "map", ColumnType.JSON)
 
-        client.insert(table, new Row().from({ id: 1, value: "a" }))
+        client.insert(table, new Row().merge({ id: 1, value: "a" }))
         let row: Row = client.queryForObject(`SELECT * FROM ${table}`)
         assert.deepEqual("a", row.value)
 
@@ -96,12 +96,12 @@ describe("Client", () => {
         client.ensureColumn(table, "list", ColumnType.JSON)
         client.ensureColumn(table, "map", ColumnType.JSON)
 
-        client.insert(table, new Row().from({ id: 1, value: "a" }))
-        client.insert(table, new Row().from({ id: 2, value: "b" }))
+        client.insert(table, new Row().merge({ id: 1, value: "a" }))
+        client.insert(table, new Row().merge({ id: 2, value: "b" }))
         let rows = client.query(`SELECT * FROM ${table}`)
         assert.strictEqual(rows.length, 2)
         try {
-            client.insert(table, new Row().from({ id: 1, value: "c" }))
+            client.insert(table, new Row().merge({ id: 1, value: "c" }))
             throw "should not insert"
         } catch (ex) {
             assert.isOk(/duplicate entry/i.test(ex.message))
@@ -123,12 +123,12 @@ describe("Client", () => {
         client.ensureColumn(table, "list", ColumnType.JSON)
         client.ensureColumn(table, "map", ColumnType.JSON)
 
-        client.insert(table, new Row().from({ id: 1, value: "a" }))
+        client.insert(table, new Row().merge({ id: 1, value: "a" }))
         let rows = client.query(`SELECT * FROM ${table}`)
         assert.deepEqual(1, rows[0].id)
         assert.deepEqual("a", rows[0].value)
 
-        client.upsert(table, new Row().from({ id: 1, value: "b" }))
+        client.upsert(table, new Row().merge({ id: 1, value: "b" }))
         rows = client.query(`SELECT * FROM ${table}`)
         assert.deepEqual(1, rows.length)
         assert.deepEqual(1, rows[0].id)
@@ -140,7 +140,7 @@ describe("Client", () => {
         client.ensureColumn(table, "list", ColumnType.JSON)
         client.ensureColumn(table, "map", ColumnType.JSON)
 
-        client.insert(table, new Row().from({ id: 1, list: [2, 3] }))
+        client.insert(table, new Row().merge({ id: 1, list: [2, 3] }))
         assert.strictEqual(
             client.db.queryForObject(`SELECT JSON_CONTAINS(list, '2') FROM ${table}`, java.lang.Boolean.class),
             true
@@ -150,7 +150,7 @@ describe("Client", () => {
             false
         )
 
-        client.insert(table, new Row().from({ id: 4, map: { value: [5, 6] } }))
+        client.insert(table, new Row().merge({ id: 4, map: { value: [5, 6] } }))
         let row: any = client.queryForObject(`SELECT * FROM ${table} WHERE id = 4`)
         assert.strictEqual(row.id, 4)
         assert.strictEqual(row.map.value[0], 5)

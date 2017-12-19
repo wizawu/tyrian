@@ -40,8 +40,9 @@ var Client = (function () {
             url += "&testOnBorrow=" + options.testOnBorrow;
         if (options.useSSL !== undefined)
             url += "&useSSL=" + options.useSSL;
-        var dataSource = new com.mysql.cj.jdbc.MysqlDataSource();
-        dataSource.setURL(url);
+        var dataSource = new com.zaxxer.hikari.HikariDataSource();
+        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+        dataSource.setJdbcUrl(url);
         this.db = new org.springframework.jdbc.core.JdbcTemplate(dataSource);
         Object.keys(this.$).forEach(function (variable) { return _this.$[variable] = _this.$[variable].bind(_this); });
     }

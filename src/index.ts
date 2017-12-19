@@ -44,8 +44,9 @@ export class Client {
         if (options.testOnBorrow !== undefined) url += `&testOnBorrow=${options.testOnBorrow}`
         if (options.useSSL !== undefined) url += `&useSSL=${options.useSSL}`
 
-        const dataSource = new com.mysql.cj.jdbc.MysqlDataSource()
-        dataSource.setURL(url)
+        const dataSource = new com.zaxxer.hikari.HikariDataSource()
+        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver")
+        dataSource.setJdbcUrl(url)
         this.db = new org.springframework.jdbc.core.JdbcTemplate(dataSource)
 
         Object.keys(this.$).forEach(variable => this.$[variable] = this.$[variable].bind(this))

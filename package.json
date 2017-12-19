@@ -1,10 +1,11 @@
 {
   "name": "orsql",
-  "version": "0.6.7",
+  "version": "0.6.8",
   "repository": "github:wizawu/orsql",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "mvnDependencies": [
+    "com.zaxxer:HikariCP:2.7.4",
     "mysql:mysql-connector-java:6.0.6",
     "org.springframework:spring-jdbc:5.0.0.RELEASE"
   ],

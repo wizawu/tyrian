@@ -12,6 +12,6 @@ export declare abstract class Model {
     protected NUMBER(): number;
     protected OBJECT(): any;
     protected STRING(): string;
-    from(json: object): Model;
+    merge(json: object): Model;
 }
 export declare const rowMapper: any;

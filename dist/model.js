@@ -33,9 +33,12 @@ var Model = (function () {
     Model.prototype.STRING = function () {
         return "";
     };
-    Model.prototype.from = function (json) {
+    Model.prototype.merge = function (json) {
         var _this = this;
-        Object.keys(this).forEach(function (key) { return _this[key] = json[key] === undefined ? _this[key] : json[key]; });
+        Object.keys(this).forEach(function (key) {
+            if (json[key] !== undefined)
+                _this[key] = json[key];
+        });
         return this;
     };
     return Model;

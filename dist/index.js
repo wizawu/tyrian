@@ -23,6 +23,11 @@ var Engine;
     Engine["PERFORMANCE_SCHEMA"] = "PERFORMANCE_SCHEMA";
     Engine["ROCKSDB"] = "ROCKSDB";
 })(Engine = exports.Engine || (exports.Engine = {}));
+var Parser;
+(function (Parser) {
+    Parser["mecab"] = "mecab";
+    Parser["ngram"] = "ngram";
+})(Parser = exports.Parser || (exports.Parser = {}));
 var Client = (function () {
     function Client(options) {
         var _this = this;
@@ -51,28 +56,25 @@ var Client = (function () {
         this.db.execute("\n            CREATE TABLE IF NOT EXISTS " + table + " (\n                " + pkey + " " + type + " PRIMARY KEY\n            ) ENGINE = " + engine + " " + (collate ? ", COLLATE " + collate : "") + "\n        ");
     };
     Client.prototype.ensureColumn = function (table, column, type) {
-        var columns = this.query("SHOW COLUMNS FROM " + table);
-        if (columns.some(function (col) { return col.Field === column; }))
-            return;
-        this.db.execute("ALTER TABLE " + table + " ADD COLUMN " + column + " " + type);
+        var columns = this.query("SHOW COLUMNS FROM " + table + " LIKE ?", [column]);
+        if (columns.length === 0) {
+            this.db.execute("ALTER TABLE " + table + " ADD COLUMN " + column + " " + type);
+        }
     };
     Client.prototype.ensureIndex = function (table, columns, options) {
-        if (options === void 0) { options = { unique: false }; }
-        var index = table + (options.unique ? "_uidx_" : "_idx_") + columns.join("_");
-        var indexes = this.query("SHOW INDEX FROM " + table);
-        if (indexes.some(function (idx) { return idx.Key_name === index; }))
-            return;
-        this.db.execute("\n            CREATE " + (options.unique ? "UNIQUE" : "") + " INDEX " + index + " ON " + table + "(" + columns.join(",") + ")\n        ");
+        if (options === void 0) { options = { type: "", separator: "_idx_", parser: "" }; }
+        var name = table + options.separator + columns.join("_");
+        var indexes = this.query("SHOW INDEX FROM " + table + " WHERE Key_name = ?", [name]);
+        if (indexes.length === 0) {
+            this.db.execute("\n                CREATE " + options.type + " INDEX " + name + " ON " + table + "(" + columns.join(",") + ") " + options.parser + "\n            ");
+        }
     };
     Client.prototype.ensureUniqueIndex = function (table, columns) {
-        this.ensureIndex(table, columns, { unique: true });
+        this.ensureIndex(table, columns, { type: "UNIQUE", separator: "_uidx_", parser: "" });
     };
-    Client.prototype.ensureFullText = function (table, columns) {
-        var index = table + "_ft_" + columns.join("_");
-        var indexes = this.query("SHOW INDEX FROM " + table);
-        if (indexes.some(function (idx) { return idx.Key_name === index; }))
-            return;
-        this.db.execute("\n            ALTER TABLE " + table + " ADD FULLTEXT " + index + "(" + columns.join(",") + ") WITH PARSER ngram\n        ");
+    Client.prototype.ensureFullText = function (table, columns, parser) {
+        if (parser === void 0) { parser = Parser.ngram; }
+        this.ensureIndex(table, columns, { type: "FULLTEXT", separator: "_ft_", parser: "WITH PARSER " + parser });
     };
     Client.prototype.query = function (sql, args) {
         return Java.from(args === undefined ? this.db.query(sql, model_1.rowMapper) : this.db.query(sql, args, model_1.rowMapper));

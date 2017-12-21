@@ -16,6 +16,10 @@ export declare enum Engine {
     PERFORMANCE_SCHEMA = "PERFORMANCE_SCHEMA",
     ROCKSDB = "ROCKSDB",
 }
+export declare enum Parser {
+    mecab = "mecab",
+    ngram = "ngram",
+}
 export interface Options {
     host: string;
     port: int;
@@ -36,10 +40,12 @@ export declare class Client {
     ensureTable(table: string, pkey: string, type: string, engine?: Engine, collate?: Collate): void;
     ensureColumn(table: string, column: string, type: string): void;
     ensureIndex(table: string, columns: string[], options?: {
-        unique: boolean;
+        type: string;
+        separator: string;
+        parser: string;
     }): void;
     ensureUniqueIndex(table: string, columns: string[]): void;
-    ensureFullText(table: string, columns: string[]): void;
+    ensureFullText(table: string, columns: string[], parser?: Parser): void;
     query(sql: string, args?: any[]): any[];
     queryForObject(sql: string, args?: any[]): any;
     update(sql: string, ...args: any[]): number;

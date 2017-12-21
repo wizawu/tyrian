@@ -20,6 +20,11 @@ export enum Engine {
     ROCKSDB = "ROCKSDB",
 }
 
+export enum Parser {
+    mecab = "mecab",
+    ngram = "ngram",
+}
+
 export interface Options {
     host: string
     port: int
@@ -67,31 +72,28 @@ export class Client {
     }
 
     ensureColumn(table: string, column: string, type: string) {
-        let columns = this.query("SHOW COLUMNS FROM " + table)
-        if (columns.some(col => col.Field === column)) return
-        this.db.execute(`ALTER TABLE ${table} ADD COLUMN ${column} ${type}`)
+        let columns = this.query(`SHOW COLUMNS FROM ${table} LIKE ?`, [column])
+        if (columns.length === 0) {
+            this.db.execute(`ALTER TABLE ${table} ADD COLUMN ${column} ${type}`)
+        }
     }
 
-    ensureIndex(table: string, columns: string[], options = { unique: false }) {
-        let index = table + (options.unique ? "_uidx_" : "_idx_") + columns.join("_")
-        let indexes = this.query("SHOW INDEX FROM " + table)
-        if (indexes.some(idx => idx.Key_name === index)) return
-        this.db.execute(`
-            CREATE ${options.unique ? "UNIQUE" : ""} INDEX ${index} ON ${table}(${columns.join(",")})
-        `)
+    ensureIndex(table: string, columns: string[], options = { type: "", separator: "_idx_", parser: "" }) {
+        let name = table + options.separator + columns.join("_")
+        let indexes = this.query(`SHOW INDEX FROM ${table} WHERE Key_name = ?`, [name])
+        if (indexes.length === 0) {
+            this.db.execute(`
+                CREATE ${options.type} INDEX ${name} ON ${table}(${columns.join(",")}) ${options.parser}
+            `)
+        }
     }
 
     ensureUniqueIndex(table: string, columns: string[]) {
-        this.ensureIndex(table, columns, { unique: true })
+        this.ensureIndex(table, columns, { type: "UNIQUE", separator: "_uidx_", parser: "" })
     }
 
-    ensureFullText(table: string, columns: string[]) {
-        let index = table + "_ft_" + columns.join("_")
-        let indexes = this.query("SHOW INDEX FROM " + table)
-        if (indexes.some(idx => idx.Key_name === index)) return
-        this.db.execute(`
-            ALTER TABLE ${table} ADD FULLTEXT ${index}(${columns.join(",")}) WITH PARSER ngram
-        `)
+    ensureFullText(table: string, columns: string[], parser = Parser.ngram) {
+        this.ensureIndex(table, columns, { type: "FULLTEXT", separator: "_ft_", parser: `WITH PARSER ${parser}` })
     }
 
     query(sql: string, args?: any[]): any[] {

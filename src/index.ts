@@ -130,4 +130,38 @@ export class Client {
     upsert(table: string, doc: Model) {
         return this.insert(table, doc, { upsert: true })
     }
+
+    batchInsert(table: string, docs: Model[], options = { upsert: false }) {
+        if (docs.length === 0) return
+        let Doc: any = docs[0].constructor
+        let keys = Object.keys(new Doc())
+        let values = keys.map(() => "?").join(",")
+        const BatchPreparedStatementSetter = Java.extend(
+            Java.type("org.springframework.jdbc.core.BatchPreparedStatementSetter"),
+            {
+                setValues(preparedStatement, i) {
+                    const doc = docs[i]
+                    keys.forEach((key, j) => {
+                        const value = doc[key]
+                        if (typeof value === "object") {
+                            preparedStatement.setObject(j + 1, value === null ? null : JSON.stringify(value))
+                        } else {
+                            preparedStatement.setObject(j + 1, value)
+                        }
+                    })
+                },
+                getBatchSize() {
+                    return docs.length
+                },
+            }
+        )
+        return this.db.batchUpdate(
+            `${options.upsert ? "REPLACE" : "INSERT"} INTO ${table}(${keys.join(",")}) VALUES(${values})`,
+            new BatchPreparedStatementSetter()
+        )
+    }
+
+    batchUpsert(table: string, docs: Model[]) {
+        this.batchInsert(table, docs, { upsert: true })
+    }
 }

@@ -41,6 +41,20 @@ describe("Benchmark", () => {
         }
     })
 
+    it(Engine.INNODB + " BATCH", () => {
+        client.db.execute(`DROP TABLE IF EXISTS ${table}`)
+        client.ensureTable(table, "id", ColumnType.VARCHAR(64), Engine.INNODB)
+        client.ensureColumn(table, "content", ColumnType.TEXT)
+        let theses: Model[] = []
+        for (let i = 0; i < 100; i++) {
+            theses.push(new Thesis().merge({
+                id: uuid(),
+                content: lorem({ count: 10 }),
+            }))
+        }
+        client.batchInsert(table, theses)
+    })
+
     it(Engine.INNODB + " FULLTEXT", () => {
         client.ensureFullText(table, ["content"])
         for (let i = 0; i < 100; i++) {
@@ -64,6 +78,20 @@ describe("Benchmark", () => {
         }
     })
 
+    it(Engine.MYISAM + " BATCH", () => {
+        client.db.execute(`DROP TABLE IF EXISTS ${table}`)
+        client.ensureTable(table, "id", ColumnType.VARCHAR(64), Engine.MYISAM)
+        client.ensureColumn(table, "content", ColumnType.TEXT)
+        let theses: Model[] = []
+        for (let i = 0; i < 100; i++) {
+            theses.push(new Thesis().merge({
+                id: uuid(),
+                content: lorem({ count: 10 }),
+            }))
+        }
+        client.batchInsert(table, theses)
+    })
+
     it(Engine.MYISAM + " FULLTEXT", () => {
         client.ensureFullText(table, ["content"])
         for (let i = 0; i < 100; i++) {
@@ -85,6 +113,20 @@ describe("Benchmark", () => {
             })
             client.insert(table, thesis)
         }
+    })
+
+    it(Engine.ROCKSDB + " BATCH", () => {
+        client.db.execute(`DROP TABLE IF EXISTS ${table}`)
+        client.ensureTable(table, "id", ColumnType.VARCHAR(64), Engine.ROCKSDB, Collate.utf8_bin)
+        client.ensureColumn(table, "content", ColumnType.TEXT)
+        let theses: Model[] = []
+        for (let i = 0; i < 100; i++) {
+            theses.push(new Thesis().merge({
+                id: uuid(),
+                content: lorem({ count: 10 }),
+            }))
+        }
+        client.batchInsert(table, theses)
     })
 })
 

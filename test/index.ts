@@ -135,6 +135,39 @@ describe("Client", () => {
         assert.deepEqual("b", rows[0].value)
     })
 
+    it("batchInsert", () => {
+        client.ensureColumn(table, "value", ColumnType.TEXT)
+        client.ensureColumn(table, "list", ColumnType.JSON)
+        client.ensureColumn(table, "map", ColumnType.JSON)
+
+        client.batchInsert(table, [
+            new Row().merge({ id: 1, value: "a" }),
+            new Row().merge({ id: 2, value: "b" }),
+        ])
+
+        let rows = client.query(`SELECT * FROM ${table} ORDER BY id`)
+        assert.deepEqual(2, rows.length)
+        assert.deepEqual("a", rows[0].value)
+        assert.deepEqual("b", rows[1].value)
+    })
+
+    it("batchUpsert", () => {
+        client.ensureColumn(table, "value", ColumnType.TEXT)
+        client.ensureColumn(table, "list", ColumnType.JSON)
+        client.ensureColumn(table, "map", ColumnType.JSON)
+
+        client.batchUpsert(table, [
+            new Row().merge({ id: 1, value: "a" }),
+            new Row().merge({ id: 2, value: "b" }),
+            new Row().merge({ id: 1, value: "c" }),
+        ])
+
+        let rows = client.query(`SELECT * FROM ${table} ORDER BY id`)
+        assert.deepEqual(2, rows.length)
+        assert.deepEqual("c", rows[0].value)
+        assert.deepEqual("b", rows[1].value)
+    })
+
     it("JSON", () => {
         client.ensureColumn(table, "value", ColumnType.TEXT)
         client.ensureColumn(table, "list", ColumnType.JSON)

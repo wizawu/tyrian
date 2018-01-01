@@ -53,4 +53,8 @@ export declare class Client {
         upsert: boolean;
     }): number;
     upsert(table: string, doc: Model): number;
+    batchInsert(table: string, docs: Model[], options?: {
+        upsert: boolean;
+    }): number[] | undefined;
+    batchUpsert(table: string, docs: Model[]): void;
 }

@@ -107,6 +107,35 @@ var Client = (function () {
     Client.prototype.upsert = function (table, doc) {
         return this.insert(table, doc, { upsert: true });
     };
+    Client.prototype.batchInsert = function (table, docs, options) {
+        if (options === void 0) { options = { upsert: false }; }
+        if (docs.length === 0)
+            return;
+        var Doc = docs[0].constructor;
+        var keys = Object.keys(new Doc());
+        var values = keys.map(function () { return "?"; }).join(",");
+        var BatchPreparedStatementSetter = Java.extend(Java.type("org.springframework.jdbc.core.BatchPreparedStatementSetter"), {
+            setValues: function (preparedStatement, i) {
+                var doc = docs[i];
+                keys.forEach(function (key, j) {
+                    var value = doc[key];
+                    if (typeof value === "object") {
+                        preparedStatement.setObject(j + 1, value === null ? null : JSON.stringify(value));
+                    }
+                    else {
+                        preparedStatement.setObject(j + 1, value);
+                    }
+                });
+            },
+            getBatchSize: function () {
+                return docs.length;
+            },
+        });
+        return this.db.batchUpdate((options.upsert ? "REPLACE" : "INSERT") + " INTO " + table + "(" + keys.join(",") + ") VALUES(" + values + ")", new BatchPreparedStatementSetter());
+    };
+    Client.prototype.batchUpsert = function (table, docs) {
+        this.batchInsert(table, docs, { upsert: true });
+    };
     return Client;
 }());
 exports.Client = Client;

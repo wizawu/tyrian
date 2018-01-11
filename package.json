@@ -1,7 +1,7 @@
 {
-  "name": "orsql",
-  "version": "0.6.10",
-  "repository": "github:wizawu/orsql",
+  "name": "tooq",
+  "version": "0.0.1",
+  "repository": "github:wizawu/tooq",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "mvnDependencies": [

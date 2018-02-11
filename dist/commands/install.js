@@ -9,6 +9,7 @@ var parseJAR_1 = require("../compiler/parseJAR");
 exports.tsconfig = function (instdir) { return JSON.stringify({
     "compilerOptions": {
         "allowJs": true,
+        "esModuleInterop": true,
         "jsx": "react",
         "lib": ["dom", "es2017"],
         "noUnusedLocals": true,

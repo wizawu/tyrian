@@ -13,6 +13,7 @@ exports.tsconfig = function (instdir) { return JSON.stringify({
         "jsx": "react",
         "lib": ["dom", "es2017"],
         "noUnusedLocals": true,
+        "pretty": true,
         "removeComments": true,
         "skipLibCheck": true,
         "sourceMap": true,

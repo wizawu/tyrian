@@ -1,69 +1,20 @@
 declare namespace javax {
     namespace swing {
-        class AbstractButtonBeanInfo extends javax.swing.SwingBeanInfoBase {
+        class JTableBeanInfo extends javax.swing.SwingBeanInfoBase {
             public constructor()
             public getBeanDescriptor(): java.beans.BeanDescriptor
             public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
             public getIcon(arg0: int): java.awt.Image
             public static class: java.lang.Class<any>
         }
-        class BoxBeanInfo extends javax.swing.SwingBeanInfoBase {
+        class JToggleButtonBeanInfo extends javax.swing.SwingBeanInfoBase {
             public constructor()
             public getBeanDescriptor(): java.beans.BeanDescriptor
             public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
             public getIcon(arg0: int): java.awt.Image
             public static class: java.lang.Class<any>
         }
-        class JComponentBeanInfo extends javax.swing.SwingBeanInfoBase {
-            public constructor()
-            public getBeanDescriptor(): java.beans.BeanDescriptor
-            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-            public getIcon(arg0: int): java.awt.Image
-            public static class: java.lang.Class<any>
-        }
-        class JAppletBeanInfo extends javax.swing.SwingBeanInfoBase {
-            public constructor()
-            public getBeanDescriptor(): java.beans.BeanDescriptor
-            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-            public getIcon(arg0: int): java.awt.Image
-            public static class: java.lang.Class<any>
-        }
-        class JButtonBeanInfo extends javax.swing.SwingBeanInfoBase {
-            public constructor()
-            public getBeanDescriptor(): java.beans.BeanDescriptor
-            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-            public getIcon(arg0: int): java.awt.Image
-            public static class: java.lang.Class<any>
-        }
-        class JCheckBoxBeanInfo extends javax.swing.SwingBeanInfoBase {
-            public constructor()
-            public getBeanDescriptor(): java.beans.BeanDescriptor
-            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-            public getIcon(arg0: int): java.awt.Image
-            public static class: java.lang.Class<any>
-        }
-        class JCheckBoxMenuItemBeanInfo extends javax.swing.SwingBeanInfoBase {
-            public constructor()
-            public getBeanDescriptor(): java.beans.BeanDescriptor
-            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-            public getIcon(arg0: int): java.awt.Image
-            public static class: java.lang.Class<any>
-        }
-        class JComboBoxBeanInfo extends javax.swing.SwingBeanInfoBase {
-            public constructor()
-            public getBeanDescriptor(): java.beans.BeanDescriptor
-            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-            public getIcon(arg0: int): java.awt.Image
-            public static class: java.lang.Class<any>
-        }
-        class JColorChooserBeanInfo extends javax.swing.SwingBeanInfoBase {
-            public constructor()
-            public getBeanDescriptor(): java.beans.BeanDescriptor
-            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-            public getIcon(arg0: int): java.awt.Image
-            public static class: java.lang.Class<any>
-        }
-        class JDesktopPaneBeanInfo extends javax.swing.SwingBeanInfoBase {
+        class JTreeBeanInfo extends javax.swing.SwingBeanInfoBase {
             public constructor()
             public getBeanDescriptor(): java.beans.BeanDescriptor
             public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
@@ -77,56 +28,35 @@ declare namespace javax {
             public getIcon(arg0: int): java.awt.Image
             public static class: java.lang.Class<any>
         }
-        class JEditorPaneBeanInfo extends javax.swing.SwingBeanInfoBase {
+        class JSeparatorBeanInfo extends javax.swing.SwingBeanInfoBase {
             public constructor()
             public getBeanDescriptor(): java.beans.BeanDescriptor
             public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
             public getIcon(arg0: int): java.awt.Image
             public static class: java.lang.Class<any>
         }
-        class JFileChooserBeanInfo extends javax.swing.SwingBeanInfoBase {
+        class JTabbedPaneBeanInfo extends javax.swing.SwingBeanInfoBase {
             public constructor()
             public getBeanDescriptor(): java.beans.BeanDescriptor
             public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
             public getIcon(arg0: int): java.awt.Image
             public static class: java.lang.Class<any>
         }
-        class JFrameBeanInfo extends javax.swing.SwingBeanInfoBase {
+        class JRadioButtonBeanInfo extends javax.swing.SwingBeanInfoBase {
             public constructor()
             public getBeanDescriptor(): java.beans.BeanDescriptor
             public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
             public getIcon(arg0: int): java.awt.Image
             public static class: java.lang.Class<any>
         }
-        class JFormattedTextFieldBeanInfo extends javax.swing.SwingBeanInfoBase {
+        class JProgressBarBeanInfo extends javax.swing.SwingBeanInfoBase {
             public constructor()
             public getBeanDescriptor(): java.beans.BeanDescriptor
             public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
             public getIcon(arg0: int): java.awt.Image
             public static class: java.lang.Class<any>
         }
-        class JInternalFrameBeanInfo extends javax.swing.SwingBeanInfoBase {
-            public constructor()
-            public getBeanDescriptor(): java.beans.BeanDescriptor
-            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-            public getIcon(arg0: int): java.awt.Image
-            public static class: java.lang.Class<any>
-        }
-        class JLabelBeanInfo extends javax.swing.SwingBeanInfoBase {
-            public constructor()
-            public getBeanDescriptor(): java.beans.BeanDescriptor
-            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-            public getIcon(arg0: int): java.awt.Image
-            public static class: java.lang.Class<any>
-        }
-        class JLayeredPaneBeanInfo extends javax.swing.SwingBeanInfoBase {
-            public constructor()
-            public getBeanDescriptor(): java.beans.BeanDescriptor
-            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-            public getIcon(arg0: int): java.awt.Image
-            public static class: java.lang.Class<any>
-        }
-        class JListBeanInfo extends javax.swing.SwingBeanInfoBase {
+        class JComboBoxBeanInfo extends javax.swing.SwingBeanInfoBase {
             public constructor()
             public getBeanDescriptor(): java.beans.BeanDescriptor
             public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
@@ -140,7 +70,7 @@ declare namespace javax {
             public getIcon(arg0: int): java.awt.Image
             public static class: java.lang.Class<any>
         }
-        class JMenuBarBeanInfo extends javax.swing.SwingBeanInfoBase {
+        class JCheckBoxBeanInfo extends javax.swing.SwingBeanInfoBase {
             public constructor()
             public getBeanDescriptor(): java.beans.BeanDescriptor
             public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
@@ -154,7 +84,163 @@ declare namespace javax {
             public getIcon(arg0: int): java.awt.Image
             public static class: java.lang.Class<any>
         }
+        class JSplitPaneBeanInfo extends javax.swing.SwingBeanInfoBase {
+            public constructor()
+            public getBeanDescriptor(): java.beans.BeanDescriptor
+            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
+            public getIcon(arg0: int): java.awt.Image
+            public static class: java.lang.Class<any>
+        }
+        class JButtonBeanInfo extends javax.swing.SwingBeanInfoBase {
+            public constructor()
+            public getBeanDescriptor(): java.beans.BeanDescriptor
+            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
+            public getIcon(arg0: int): java.awt.Image
+            public static class: java.lang.Class<any>
+        }
+        class JFrameBeanInfo extends javax.swing.SwingBeanInfoBase {
+            public constructor()
+            public getBeanDescriptor(): java.beans.BeanDescriptor
+            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
+            public getIcon(arg0: int): java.awt.Image
+            public static class: java.lang.Class<any>
+        }
+        class JListBeanInfo extends javax.swing.SwingBeanInfoBase {
+            public constructor()
+            public getBeanDescriptor(): java.beans.BeanDescriptor
+            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
+            public getIcon(arg0: int): java.awt.Image
+            public static class: java.lang.Class<any>
+        }
+        class AbstractButtonBeanInfo extends javax.swing.SwingBeanInfoBase {
+            public constructor()
+            public getBeanDescriptor(): java.beans.BeanDescriptor
+            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
+            public getIcon(arg0: int): java.awt.Image
+            public static class: java.lang.Class<any>
+        }
+        namespace text {
+            class JTextComponentBeanInfo extends javax.swing.SwingBeanInfoBase {
+                public constructor()
+                public getBeanDescriptor(): java.beans.BeanDescriptor
+                public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
+                public getIcon(arg0: int): java.awt.Image
+                public static class: java.lang.Class<any>
+            }
+        }
+        class JSpinnerBeanInfo extends javax.swing.SwingBeanInfoBase {
+            public constructor()
+            public getBeanDescriptor(): java.beans.BeanDescriptor
+            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
+            public getIcon(arg0: int): java.awt.Image
+            public static class: java.lang.Class<any>
+        }
+        class JTextPaneBeanInfo extends javax.swing.SwingBeanInfoBase {
+            public constructor()
+            public getBeanDescriptor(): java.beans.BeanDescriptor
+            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
+            public getIcon(arg0: int): java.awt.Image
+            public static class: java.lang.Class<any>
+        }
+        class JScrollPaneBeanInfo extends javax.swing.SwingBeanInfoBase {
+            public constructor()
+            public getBeanDescriptor(): java.beans.BeanDescriptor
+            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
+            public getIcon(arg0: int): java.awt.Image
+            public static class: java.lang.Class<any>
+        }
+        class JSliderBeanInfo extends javax.swing.SwingBeanInfoBase {
+            public constructor()
+            public getBeanDescriptor(): java.beans.BeanDescriptor
+            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
+            public getIcon(arg0: int): java.awt.Image
+            public static class: java.lang.Class<any>
+        }
+        class JRadioButtonMenuItemBeanInfo extends javax.swing.SwingBeanInfoBase {
+            public constructor()
+            public getBeanDescriptor(): java.beans.BeanDescriptor
+            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
+            public getIcon(arg0: int): java.awt.Image
+            public static class: java.lang.Class<any>
+        }
+        class JComponentBeanInfo extends javax.swing.SwingBeanInfoBase {
+            public constructor()
+            public getBeanDescriptor(): java.beans.BeanDescriptor
+            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
+            public getIcon(arg0: int): java.awt.Image
+            public static class: java.lang.Class<any>
+        }
+        class JFormattedTextFieldBeanInfo extends javax.swing.SwingBeanInfoBase {
+            public constructor()
+            public getBeanDescriptor(): java.beans.BeanDescriptor
+            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
+            public getIcon(arg0: int): java.awt.Image
+            public static class: java.lang.Class<any>
+        }
+        class JTextFieldBeanInfo extends javax.swing.SwingBeanInfoBase {
+            public constructor()
+            public getBeanDescriptor(): java.beans.BeanDescriptor
+            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
+            public getIcon(arg0: int): java.awt.Image
+            public static class: java.lang.Class<any>
+        }
+        class JCheckBoxMenuItemBeanInfo extends javax.swing.SwingBeanInfoBase {
+            public constructor()
+            public getBeanDescriptor(): java.beans.BeanDescriptor
+            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
+            public getIcon(arg0: int): java.awt.Image
+            public static class: java.lang.Class<any>
+        }
+        class JColorChooserBeanInfo extends javax.swing.SwingBeanInfoBase {
+            public constructor()
+            public getBeanDescriptor(): java.beans.BeanDescriptor
+            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
+            public getIcon(arg0: int): java.awt.Image
+            public static class: java.lang.Class<any>
+        }
+        class JLabelBeanInfo extends javax.swing.SwingBeanInfoBase {
+            public constructor()
+            public getBeanDescriptor(): java.beans.BeanDescriptor
+            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
+            public getIcon(arg0: int): java.awt.Image
+            public static class: java.lang.Class<any>
+        }
         class JOptionPaneBeanInfo extends javax.swing.SwingBeanInfoBase {
+            public constructor()
+            public getBeanDescriptor(): java.beans.BeanDescriptor
+            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
+            public getIcon(arg0: int): java.awt.Image
+            public static class: java.lang.Class<any>
+        }
+        class JPopupMenuBeanInfo extends javax.swing.SwingBeanInfoBase {
+            public constructor()
+            public getBeanDescriptor(): java.beans.BeanDescriptor
+            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
+            public getIcon(arg0: int): java.awt.Image
+            public static class: java.lang.Class<any>
+        }
+        class BoxBeanInfo extends javax.swing.SwingBeanInfoBase {
+            public constructor()
+            public getBeanDescriptor(): java.beans.BeanDescriptor
+            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
+            public getIcon(arg0: int): java.awt.Image
+            public static class: java.lang.Class<any>
+        }
+        class JWindowBeanInfo extends javax.swing.SwingBeanInfoBase {
+            public constructor()
+            public getBeanDescriptor(): java.beans.BeanDescriptor
+            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
+            public getIcon(arg0: int): java.awt.Image
+            public static class: java.lang.Class<any>
+        }
+        class JAppletBeanInfo extends javax.swing.SwingBeanInfoBase {
+            public constructor()
+            public getBeanDescriptor(): java.beans.BeanDescriptor
+            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
+            public getIcon(arg0: int): java.awt.Image
+            public static class: java.lang.Class<any>
+        }
+        class JInternalFrameBeanInfo extends javax.swing.SwingBeanInfoBase {
             public constructor()
             public getBeanDescriptor(): java.beans.BeanDescriptor
             public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
@@ -175,28 +261,14 @@ declare namespace javax {
             public getIcon(arg0: int): java.awt.Image
             public static class: java.lang.Class<any>
         }
-        class JPopupMenuBeanInfo extends javax.swing.SwingBeanInfoBase {
+        class JFileChooserBeanInfo extends javax.swing.SwingBeanInfoBase {
             public constructor()
             public getBeanDescriptor(): java.beans.BeanDescriptor
             public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
             public getIcon(arg0: int): java.awt.Image
             public static class: java.lang.Class<any>
         }
-        class JProgressBarBeanInfo extends javax.swing.SwingBeanInfoBase {
-            public constructor()
-            public getBeanDescriptor(): java.beans.BeanDescriptor
-            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-            public getIcon(arg0: int): java.awt.Image
-            public static class: java.lang.Class<any>
-        }
-        class JRadioButtonBeanInfo extends javax.swing.SwingBeanInfoBase {
-            public constructor()
-            public getBeanDescriptor(): java.beans.BeanDescriptor
-            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-            public getIcon(arg0: int): java.awt.Image
-            public static class: java.lang.Class<any>
-        }
-        class JRadioButtonMenuItemBeanInfo extends javax.swing.SwingBeanInfoBase {
+        class JLayeredPaneBeanInfo extends javax.swing.SwingBeanInfoBase {
             public constructor()
             public getBeanDescriptor(): java.beans.BeanDescriptor
             public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
@@ -210,49 +282,7 @@ declare namespace javax {
             public getIcon(arg0: int): java.awt.Image
             public static class: java.lang.Class<any>
         }
-        class JScrollPaneBeanInfo extends javax.swing.SwingBeanInfoBase {
-            public constructor()
-            public getBeanDescriptor(): java.beans.BeanDescriptor
-            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-            public getIcon(arg0: int): java.awt.Image
-            public static class: java.lang.Class<any>
-        }
-        class JSeparatorBeanInfo extends javax.swing.SwingBeanInfoBase {
-            public constructor()
-            public getBeanDescriptor(): java.beans.BeanDescriptor
-            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-            public getIcon(arg0: int): java.awt.Image
-            public static class: java.lang.Class<any>
-        }
-        class JSliderBeanInfo extends javax.swing.SwingBeanInfoBase {
-            public constructor()
-            public getBeanDescriptor(): java.beans.BeanDescriptor
-            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-            public getIcon(arg0: int): java.awt.Image
-            public static class: java.lang.Class<any>
-        }
-        class JSplitPaneBeanInfo extends javax.swing.SwingBeanInfoBase {
-            public constructor()
-            public getBeanDescriptor(): java.beans.BeanDescriptor
-            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-            public getIcon(arg0: int): java.awt.Image
-            public static class: java.lang.Class<any>
-        }
-        class JSpinnerBeanInfo extends javax.swing.SwingBeanInfoBase {
-            public constructor()
-            public getBeanDescriptor(): java.beans.BeanDescriptor
-            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-            public getIcon(arg0: int): java.awt.Image
-            public static class: java.lang.Class<any>
-        }
-        class JTabbedPaneBeanInfo extends javax.swing.SwingBeanInfoBase {
-            public constructor()
-            public getBeanDescriptor(): java.beans.BeanDescriptor
-            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-            public getIcon(arg0: int): java.awt.Image
-            public static class: java.lang.Class<any>
-        }
-        class JTableBeanInfo extends javax.swing.SwingBeanInfoBase {
+        class JMenuBarBeanInfo extends javax.swing.SwingBeanInfoBase {
             public constructor()
             public getBeanDescriptor(): java.beans.BeanDescriptor
             public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
@@ -266,21 +296,7 @@ declare namespace javax {
             public getIcon(arg0: int): java.awt.Image
             public static class: java.lang.Class<any>
         }
-        class JTextFieldBeanInfo extends javax.swing.SwingBeanInfoBase {
-            public constructor()
-            public getBeanDescriptor(): java.beans.BeanDescriptor
-            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-            public getIcon(arg0: int): java.awt.Image
-            public static class: java.lang.Class<any>
-        }
-        class JTextPaneBeanInfo extends javax.swing.SwingBeanInfoBase {
-            public constructor()
-            public getBeanDescriptor(): java.beans.BeanDescriptor
-            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-            public getIcon(arg0: int): java.awt.Image
-            public static class: java.lang.Class<any>
-        }
-        class JToggleButtonBeanInfo extends javax.swing.SwingBeanInfoBase {
+        class JEditorPaneBeanInfo extends javax.swing.SwingBeanInfoBase {
             public constructor()
             public getBeanDescriptor(): java.beans.BeanDescriptor
             public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
@@ -294,28 +310,12 @@ declare namespace javax {
             public getIcon(arg0: int): java.awt.Image
             public static class: java.lang.Class<any>
         }
-        class JTreeBeanInfo extends javax.swing.SwingBeanInfoBase {
+        class JDesktopPaneBeanInfo extends javax.swing.SwingBeanInfoBase {
             public constructor()
             public getBeanDescriptor(): java.beans.BeanDescriptor
             public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
             public getIcon(arg0: int): java.awt.Image
             public static class: java.lang.Class<any>
-        }
-        class JWindowBeanInfo extends javax.swing.SwingBeanInfoBase {
-            public constructor()
-            public getBeanDescriptor(): java.beans.BeanDescriptor
-            public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-            public getIcon(arg0: int): java.awt.Image
-            public static class: java.lang.Class<any>
-        }
-        namespace text {
-            class JTextComponentBeanInfo extends javax.swing.SwingBeanInfoBase {
-                public constructor()
-                public getBeanDescriptor(): java.beans.BeanDescriptor
-                public getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-                public getIcon(arg0: int): java.awt.Image
-                public static class: java.lang.Class<any>
-            }
         }
         class SwingBeanInfoBase extends java.beans.SimpleBeanInfo {
             public constructor()

@@ -3,85 +3,6 @@ declare namespace com {
         namespace java {
             namespace accessibility {
                 namespace util {
-                    class ComponentEvtDispatchThread extends java.lang.Thread {
-                        public constructor(arg0: string)
-                        public run(): void
-                        public static class: java.lang.Class<any>
-                    }
-                    class EventQueueMonitorItem {
-                        public static class: java.lang.Class<any>
-                    }
-                    class EventQueueMonitor implements java.awt.event.AWTEventListener {
-                        public constructor()
-                        public static maybeInitialize(): void
-                        public eventDispatched(arg0: java.awt.AWTEvent): void
-                        public static getAccessibleAt(arg0: java.awt.Point): javax.accessibility.Accessible
-                        public static isGUIInitialized(): boolean
-                        public static addGUIInitializedListener(arg0: com.sun.java.accessibility.util.GUIInitializedListener): void
-                        public static removeGUIInitializedListener(arg0: com.sun.java.accessibility.util.GUIInitializedListener): void
-                        public static addTopLevelWindowListener(arg0: com.sun.java.accessibility.util.TopLevelWindowListener): void
-                        public static removeTopLevelWindowListener(arg0: com.sun.java.accessibility.util.TopLevelWindowListener): void
-                        public static getCurrentMousePosition(): java.awt.Point
-                        public static getTopLevelWindows(): java.awt.Window[]
-                        public static getTopLevelWindowWithFocus(): java.awt.Window
-                        public static class: java.lang.Class<any>
-                    }
-                    class EventQueueMonitor$1 implements java.security.PrivilegedAction {
-                        public run(): java.lang.Object
-                        public static class: java.lang.Class<any>
-                    }
-                    class TopLevelWindowMulticaster extends java.awt.AWTEventMulticaster implements com.sun.java.accessibility.util.TopLevelWindowListener {
-                        protected constructor(arg0: java.util.EventListener, arg1: java.util.EventListener)
-                        public topLevelWindowCreated(arg0: java.awt.Window): void
-                        public topLevelWindowDestroyed(arg0: java.awt.Window): void
-                        public static add(arg0: com.sun.java.accessibility.util.TopLevelWindowListener, arg1: com.sun.java.accessibility.util.TopLevelWindowListener): com.sun.java.accessibility.util.TopLevelWindowListener
-                        public static remove(arg0: com.sun.java.accessibility.util.TopLevelWindowListener, arg1: com.sun.java.accessibility.util.TopLevelWindowListener): com.sun.java.accessibility.util.TopLevelWindowListener
-                        protected static addInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener
-                        protected static removeInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener
-                        public static class: java.lang.Class<any>
-                    }
-                    class EventID {
-                        public static ACTION: int
-                        public static ADJUSTMENT: int
-                        public static COMPONENT: int
-                        public static CONTAINER: int
-                        public static FOCUS: int
-                        public static ITEM: int
-                        public static KEY: int
-                        public static MOUSE: int
-                        public static MOTION: int
-                        public static TEXT: int
-                        public static WINDOW: int
-                        public static ANCESTOR: int
-                        public static CARET: int
-                        public static CELLEDITOR: int
-                        public static CHANGE: int
-                        public static COLUMNMODEL: int
-                        public static DOCUMENT: int
-                        public static LISTDATA: int
-                        public static LISTSELECTION: int
-                        public static MENU: int
-                        public static POPUPMENU: int
-                        public static TABLEMODEL: int
-                        public static TREEEXPANSION: int
-                        public static TREEMODEL: int
-                        public static TREESELECTION: int
-                        public static UNDOABLEEDIT: int
-                        public static PROPERTYCHANGE: int
-                        public static VETOABLECHANGE: int
-                        public static INTERNALFRAME: int
-                        public constructor()
-                        public static class: java.lang.Class<any>
-                    }
-                    class GUIInitializedMulticaster extends java.awt.AWTEventMulticaster implements com.sun.java.accessibility.util.GUIInitializedListener {
-                        protected constructor(arg0: java.util.EventListener, arg1: java.util.EventListener)
-                        public guiInitialized(): void
-                        public static add(arg0: com.sun.java.accessibility.util.GUIInitializedListener, arg1: com.sun.java.accessibility.util.GUIInitializedListener): com.sun.java.accessibility.util.GUIInitializedListener
-                        public static remove(arg0: com.sun.java.accessibility.util.GUIInitializedListener, arg1: com.sun.java.accessibility.util.GUIInitializedListener): com.sun.java.accessibility.util.GUIInitializedListener
-                        protected static addInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener
-                        protected static removeInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener
-                        public static class: java.lang.Class<any>
-                    }
                     class SwingEventMonitor extends com.sun.java.accessibility.util.AWTEventMonitor {
                         protected static listenerList: javax.swing.event.EventListenerList
                         protected static swingListener: com.sun.java.accessibility.util.SwingEventMonitor$SwingEventListener
@@ -122,6 +43,9 @@ declare namespace com {
                         public static removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
                         public static addVetoableChangeListener(arg0: java.beans.VetoableChangeListener): void
                         public static removeVetoableChangeListener(arg0: java.beans.VetoableChangeListener): void
+                        public static class: java.lang.Class<any>
+                    }
+                    class EventQueueMonitorItem {
                         public static class: java.lang.Class<any>
                     }
                     class SwingEventMonitor$SwingEventListener extends com.sun.java.accessibility.util.AWTEventMonitor$AWTEventsListener implements javax.swing.event.AncestorListener , javax.swing.event.CaretListener , javax.swing.event.CellEditorListener , javax.swing.event.ChangeListener , javax.swing.event.DocumentListener , javax.swing.event.ListDataListener , javax.swing.event.ListSelectionListener , javax.swing.event.MenuListener , javax.swing.event.PopupMenuListener , javax.swing.event.TableColumnModelListener , javax.swing.event.TableModelListener , javax.swing.event.TreeExpansionListener , javax.swing.event.TreeModelListener , javax.swing.event.TreeSelectionListener , javax.swing.event.UndoableEditListener , javax.swing.event.InternalFrameListener , java.beans.PropertyChangeListener , java.beans.VetoableChangeListener {
@@ -229,123 +153,23 @@ declare namespace com {
                         public removeFocusListener(arg0: java.awt.event.FocusListener): void
                         public static class: java.lang.Class<any>
                     }
-                    namespace java {
-                        namespace awt {
-                            class LabelTranslator extends com.sun.java.accessibility.util.Translator {
-                                public constructor()
-                                public getAccessibleName(): string
-                                public setAccessibleName(arg0: string): void
-                                public getAccessibleRole(): javax.accessibility.AccessibleRole
-                                public static class: java.lang.Class<any>
-                            }
-                            class TextComponentTranslator extends com.sun.java.accessibility.util.Translator {
-                                public constructor()
-                                public getAccessibleRole(): javax.accessibility.AccessibleRole
-                                public static class: java.lang.Class<any>
-                            }
-                            class CheckboxTranslator extends com.sun.java.accessibility.util.Translator {
-                                public constructor()
-                                public getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
-                                public getAccessibleName(): string
-                                public setAccessibleName(arg0: string): void
-                                public getAccessibleRole(): javax.accessibility.AccessibleRole
-                                public static class: java.lang.Class<any>
-                            }
-                            class ButtonTranslator extends com.sun.java.accessibility.util.Translator {
-                                public constructor()
-                                public getAccessibleName(): string
-                                public setAccessibleName(arg0: string): void
-                                public getAccessibleRole(): javax.accessibility.AccessibleRole
-                                public static class: java.lang.Class<any>
-                            }
-                            class ListTranslator extends com.sun.java.accessibility.util.Translator {
-                                public constructor()
-                                public getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
-                                public getAccessibleRole(): javax.accessibility.AccessibleRole
-                                public static class: java.lang.Class<any>
-                            }
-                        }
-                    }
-                    interface GUIInitializedListener extends java.util.EventListener {
-                        guiInitialized(): void
-                    }
-                    class _AccessibleState extends javax.accessibility.AccessibleState {
-                        public static MANAGES_DESCENDANTS: com.sun.java.accessibility.util._AccessibleState
-                        protected constructor(arg0: string)
+                    class EventQueueMonitor$1 implements java.security.PrivilegedAction {
+                        public run(): java.lang.Object
                         public static class: java.lang.Class<any>
                     }
-                    class AccessibilityListenerList {
-                        protected listenerList: java.lang.Object[]
-                        public constructor()
-                        public getListenerList(): java.lang.Object[]
-                        public getListenerCount(): int
-                        public getListenerCount(arg0: java.lang.Class): int
-                        public add(arg0: java.lang.Class, arg1: java.util.EventListener): void
-                        public remove(arg0: java.lang.Class, arg1: java.util.EventListener): void
-                        public toString(): string
+                    class ComponentEvtDispatchThread extends java.lang.Thread {
+                        public constructor(arg0: string)
+                        public run(): void
                         public static class: java.lang.Class<any>
                     }
-                    class AccessibilityEventMonitor {
-                        protected static listenerList: com.sun.java.accessibility.util.AccessibilityListenerList
-                        protected static accessibilityListener: com.sun.java.accessibility.util.AccessibilityEventMonitor$AccessibilityEventListener
-                        public constructor()
-                        public static addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-                        public static removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-                        public static class: java.lang.Class<any>
-                    }
-                    class AccessibilityEventMonitor$AccessibilityEventListener implements com.sun.java.accessibility.util.TopLevelWindowListener , java.beans.PropertyChangeListener {
-                        public constructor()
-                        protected installListeners(): void
-                        protected installListeners(arg0: javax.accessibility.Accessible | javax.accessibility.Accessible$$Lambda): void
-                        protected removeListeners(): void
-                        protected removeListeners(arg0: javax.accessibility.Accessible | javax.accessibility.Accessible$$Lambda): void
+                    class TopLevelWindowMulticaster extends java.awt.AWTEventMulticaster implements com.sun.java.accessibility.util.TopLevelWindowListener {
+                        protected constructor(arg0: java.util.EventListener, arg1: java.util.EventListener)
                         public topLevelWindowCreated(arg0: java.awt.Window): void
                         public topLevelWindowDestroyed(arg0: java.awt.Window): void
-                        public propertyChange(arg0: java.beans.PropertyChangeEvent): void
-                        public static class: java.lang.Class<any>
-                    }
-                    interface TopLevelWindowListener extends java.util.EventListener {
-                        topLevelWindowCreated(arg0: java.awt.Window): void
-                        topLevelWindowDestroyed(arg0: java.awt.Window): void
-                    }
-                    class AWTEventMonitor {
-                        protected static componentWithFocus: java.awt.Component
-                        protected static componentListener: java.awt.event.ComponentListener
-                        protected static containerListener: java.awt.event.ContainerListener
-                        protected static focusListener: java.awt.event.FocusListener
-                        protected static keyListener: java.awt.event.KeyListener
-                        protected static mouseListener: java.awt.event.MouseListener
-                        protected static mouseMotionListener: java.awt.event.MouseMotionListener
-                        protected static windowListener: java.awt.event.WindowListener
-                        protected static actionListener: java.awt.event.ActionListener
-                        protected static adjustmentListener: java.awt.event.AdjustmentListener
-                        protected static itemListener: java.awt.event.ItemListener
-                        protected static textListener: java.awt.event.TextListener
-                        protected static awtListener: com.sun.java.accessibility.util.AWTEventMonitor$AWTEventsListener
-                        public constructor()
-                        public static getComponentWithFocus(): java.awt.Component
-                        public static addComponentListener(arg0: java.awt.event.ComponentListener): void
-                        public static removeComponentListener(arg0: java.awt.event.ComponentListener): void
-                        public static addContainerListener(arg0: java.awt.event.ContainerListener): void
-                        public static removeContainerListener(arg0: java.awt.event.ContainerListener): void
-                        public static addFocusListener(arg0: java.awt.event.FocusListener): void
-                        public static removeFocusListener(arg0: java.awt.event.FocusListener): void
-                        public static addKeyListener(arg0: java.awt.event.KeyListener): void
-                        public static removeKeyListener(arg0: java.awt.event.KeyListener): void
-                        public static addMouseListener(arg0: java.awt.event.MouseListener): void
-                        public static removeMouseListener(arg0: java.awt.event.MouseListener): void
-                        public static addMouseMotionListener(arg0: java.awt.event.MouseMotionListener): void
-                        public static removeMouseMotionListener(arg0: java.awt.event.MouseMotionListener): void
-                        public static addWindowListener(arg0: java.awt.event.WindowListener): void
-                        public static removeWindowListener(arg0: java.awt.event.WindowListener): void
-                        public static addActionListener(arg0: java.awt.event.ActionListener): void
-                        public static removeActionListener(arg0: java.awt.event.ActionListener): void
-                        public static addAdjustmentListener(arg0: java.awt.event.AdjustmentListener): void
-                        public static removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener): void
-                        public static addItemListener(arg0: java.awt.event.ItemListener): void
-                        public static removeItemListener(arg0: java.awt.event.ItemListener): void
-                        public static addTextListener(arg0: java.awt.event.TextListener): void
-                        public static removeTextListener(arg0: java.awt.event.TextListener): void
+                        public static add(arg0: com.sun.java.accessibility.util.TopLevelWindowListener, arg1: com.sun.java.accessibility.util.TopLevelWindowListener): com.sun.java.accessibility.util.TopLevelWindowListener
+                        public static remove(arg0: com.sun.java.accessibility.util.TopLevelWindowListener, arg1: com.sun.java.accessibility.util.TopLevelWindowListener): com.sun.java.accessibility.util.TopLevelWindowListener
+                        protected static addInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener
+                        protected static removeInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener
                         public static class: java.lang.Class<any>
                     }
                     class AWTEventMonitor$AWTEventsListener implements com.sun.java.accessibility.util.TopLevelWindowListener , java.awt.event.ActionListener , java.awt.event.AdjustmentListener , java.awt.event.ComponentListener , java.awt.event.ContainerListener , java.awt.event.FocusListener , java.awt.event.ItemListener , java.awt.event.KeyListener , java.awt.event.MouseListener , java.awt.event.MouseMotionListener , java.awt.event.TextListener , java.awt.event.WindowListener , javax.swing.event.ChangeListener {
@@ -389,6 +213,182 @@ declare namespace com {
                         public windowDeiconified(arg0: java.awt.event.WindowEvent): void
                         public windowActivated(arg0: java.awt.event.WindowEvent): void
                         public windowDeactivated(arg0: java.awt.event.WindowEvent): void
+                        public static class: java.lang.Class<any>
+                    }
+                    class GUIInitializedMulticaster extends java.awt.AWTEventMulticaster implements com.sun.java.accessibility.util.GUIInitializedListener {
+                        protected constructor(arg0: java.util.EventListener, arg1: java.util.EventListener)
+                        public guiInitialized(): void
+                        public static add(arg0: com.sun.java.accessibility.util.GUIInitializedListener, arg1: com.sun.java.accessibility.util.GUIInitializedListener): com.sun.java.accessibility.util.GUIInitializedListener
+                        public static remove(arg0: com.sun.java.accessibility.util.GUIInitializedListener, arg1: com.sun.java.accessibility.util.GUIInitializedListener): com.sun.java.accessibility.util.GUIInitializedListener
+                        protected static addInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener
+                        protected static removeInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener
+                        public static class: java.lang.Class<any>
+                    }
+                    class AccessibilityEventMonitor$AccessibilityEventListener implements com.sun.java.accessibility.util.TopLevelWindowListener , java.beans.PropertyChangeListener {
+                        public constructor()
+                        protected installListeners(): void
+                        protected installListeners(arg0: javax.accessibility.Accessible | javax.accessibility.Accessible$$Lambda): void
+                        protected removeListeners(): void
+                        protected removeListeners(arg0: javax.accessibility.Accessible | javax.accessibility.Accessible$$Lambda): void
+                        public topLevelWindowCreated(arg0: java.awt.Window): void
+                        public topLevelWindowDestroyed(arg0: java.awt.Window): void
+                        public propertyChange(arg0: java.beans.PropertyChangeEvent): void
+                        public static class: java.lang.Class<any>
+                    }
+                    class EventID {
+                        public static ACTION: int
+                        public static ADJUSTMENT: int
+                        public static COMPONENT: int
+                        public static CONTAINER: int
+                        public static FOCUS: int
+                        public static ITEM: int
+                        public static KEY: int
+                        public static MOUSE: int
+                        public static MOTION: int
+                        public static TEXT: int
+                        public static WINDOW: int
+                        public static ANCESTOR: int
+                        public static CARET: int
+                        public static CELLEDITOR: int
+                        public static CHANGE: int
+                        public static COLUMNMODEL: int
+                        public static DOCUMENT: int
+                        public static LISTDATA: int
+                        public static LISTSELECTION: int
+                        public static MENU: int
+                        public static POPUPMENU: int
+                        public static TABLEMODEL: int
+                        public static TREEEXPANSION: int
+                        public static TREEMODEL: int
+                        public static TREESELECTION: int
+                        public static UNDOABLEEDIT: int
+                        public static PROPERTYCHANGE: int
+                        public static VETOABLECHANGE: int
+                        public static INTERNALFRAME: int
+                        public constructor()
+                        public static class: java.lang.Class<any>
+                    }
+                    class AWTEventMonitor {
+                        protected static componentWithFocus: java.awt.Component
+                        protected static componentListener: java.awt.event.ComponentListener
+                        protected static containerListener: java.awt.event.ContainerListener
+                        protected static focusListener: java.awt.event.FocusListener
+                        protected static keyListener: java.awt.event.KeyListener
+                        protected static mouseListener: java.awt.event.MouseListener
+                        protected static mouseMotionListener: java.awt.event.MouseMotionListener
+                        protected static windowListener: java.awt.event.WindowListener
+                        protected static actionListener: java.awt.event.ActionListener
+                        protected static adjustmentListener: java.awt.event.AdjustmentListener
+                        protected static itemListener: java.awt.event.ItemListener
+                        protected static textListener: java.awt.event.TextListener
+                        protected static awtListener: com.sun.java.accessibility.util.AWTEventMonitor$AWTEventsListener
+                        public constructor()
+                        public static getComponentWithFocus(): java.awt.Component
+                        public static addComponentListener(arg0: java.awt.event.ComponentListener): void
+                        public static removeComponentListener(arg0: java.awt.event.ComponentListener): void
+                        public static addContainerListener(arg0: java.awt.event.ContainerListener): void
+                        public static removeContainerListener(arg0: java.awt.event.ContainerListener): void
+                        public static addFocusListener(arg0: java.awt.event.FocusListener): void
+                        public static removeFocusListener(arg0: java.awt.event.FocusListener): void
+                        public static addKeyListener(arg0: java.awt.event.KeyListener): void
+                        public static removeKeyListener(arg0: java.awt.event.KeyListener): void
+                        public static addMouseListener(arg0: java.awt.event.MouseListener): void
+                        public static removeMouseListener(arg0: java.awt.event.MouseListener): void
+                        public static addMouseMotionListener(arg0: java.awt.event.MouseMotionListener): void
+                        public static removeMouseMotionListener(arg0: java.awt.event.MouseMotionListener): void
+                        public static addWindowListener(arg0: java.awt.event.WindowListener): void
+                        public static removeWindowListener(arg0: java.awt.event.WindowListener): void
+                        public static addActionListener(arg0: java.awt.event.ActionListener): void
+                        public static removeActionListener(arg0: java.awt.event.ActionListener): void
+                        public static addAdjustmentListener(arg0: java.awt.event.AdjustmentListener): void
+                        public static removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener): void
+                        public static addItemListener(arg0: java.awt.event.ItemListener): void
+                        public static removeItemListener(arg0: java.awt.event.ItemListener): void
+                        public static addTextListener(arg0: java.awt.event.TextListener): void
+                        public static removeTextListener(arg0: java.awt.event.TextListener): void
+                        public static class: java.lang.Class<any>
+                    }
+                    class AccessibilityEventMonitor {
+                        protected static listenerList: com.sun.java.accessibility.util.AccessibilityListenerList
+                        protected static accessibilityListener: com.sun.java.accessibility.util.AccessibilityEventMonitor$AccessibilityEventListener
+                        public constructor()
+                        public static addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+                        public static removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+                        public static class: java.lang.Class<any>
+                    }
+                    class AccessibilityListenerList {
+                        protected listenerList: java.lang.Object[]
+                        public constructor()
+                        public getListenerList(): java.lang.Object[]
+                        public getListenerCount(): int
+                        public getListenerCount(arg0: java.lang.Class): int
+                        public add(arg0: java.lang.Class, arg1: java.util.EventListener): void
+                        public remove(arg0: java.lang.Class, arg1: java.util.EventListener): void
+                        public toString(): string
+                        public static class: java.lang.Class<any>
+                    }
+                    class _AccessibleState extends javax.accessibility.AccessibleState {
+                        public static MANAGES_DESCENDANTS: com.sun.java.accessibility.util._AccessibleState
+                        protected constructor(arg0: string)
+                        public static class: java.lang.Class<any>
+                    }
+                    namespace java {
+                        namespace awt {
+                            class ButtonTranslator extends com.sun.java.accessibility.util.Translator {
+                                public constructor()
+                                public getAccessibleName(): string
+                                public setAccessibleName(arg0: string): void
+                                public getAccessibleRole(): javax.accessibility.AccessibleRole
+                                public static class: java.lang.Class<any>
+                            }
+                            class ListTranslator extends com.sun.java.accessibility.util.Translator {
+                                public constructor()
+                                public getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
+                                public getAccessibleRole(): javax.accessibility.AccessibleRole
+                                public static class: java.lang.Class<any>
+                            }
+                            class TextComponentTranslator extends com.sun.java.accessibility.util.Translator {
+                                public constructor()
+                                public getAccessibleRole(): javax.accessibility.AccessibleRole
+                                public static class: java.lang.Class<any>
+                            }
+                            class LabelTranslator extends com.sun.java.accessibility.util.Translator {
+                                public constructor()
+                                public getAccessibleName(): string
+                                public setAccessibleName(arg0: string): void
+                                public getAccessibleRole(): javax.accessibility.AccessibleRole
+                                public static class: java.lang.Class<any>
+                            }
+                            class CheckboxTranslator extends com.sun.java.accessibility.util.Translator {
+                                public constructor()
+                                public getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
+                                public getAccessibleName(): string
+                                public setAccessibleName(arg0: string): void
+                                public getAccessibleRole(): javax.accessibility.AccessibleRole
+                                public static class: java.lang.Class<any>
+                            }
+                        }
+                    }
+                    interface GUIInitializedListener extends java.util.EventListener {
+                        guiInitialized(): void
+                    }
+                    interface TopLevelWindowListener extends java.util.EventListener {
+                        topLevelWindowCreated(arg0: java.awt.Window): void
+                        topLevelWindowDestroyed(arg0: java.awt.Window): void
+                    }
+                    class EventQueueMonitor implements java.awt.event.AWTEventListener {
+                        public constructor()
+                        public static maybeInitialize(): void
+                        public eventDispatched(arg0: java.awt.AWTEvent): void
+                        public static getAccessibleAt(arg0: java.awt.Point): javax.accessibility.Accessible
+                        public static isGUIInitialized(): boolean
+                        public static addGUIInitializedListener(arg0: com.sun.java.accessibility.util.GUIInitializedListener): void
+                        public static removeGUIInitializedListener(arg0: com.sun.java.accessibility.util.GUIInitializedListener): void
+                        public static addTopLevelWindowListener(arg0: com.sun.java.accessibility.util.TopLevelWindowListener): void
+                        public static removeTopLevelWindowListener(arg0: com.sun.java.accessibility.util.TopLevelWindowListener): void
+                        public static getCurrentMousePosition(): java.awt.Point
+                        public static getTopLevelWindows(): java.awt.Window[]
+                        public static getTopLevelWindowWithFocus(): java.awt.Window
                         public static class: java.lang.Class<any>
                     }
                 }

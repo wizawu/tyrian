@@ -19,8 +19,8 @@
     "postcss-loader": "^2.0.8",
     "source-map": "^0.6.1",
     "style-loader": "^0.19.0",
-    "ts-loader": "^2.3.7",
-    "typescript": "^2.6.1",
+    "ts-loader": "^3.5.0",
+    "typescript": "^2.7.1",
     "url-loader": "^0.6.2",
     "webpack": "^3.8.1"
   }

@@ -1,6 +1,6 @@
 {
   "name": "1c",
-  "version": "8.8.2",
+  "version": "8.8.3",
   "repository": "github:wizawu/1c",
   "license": "MIT",
   "bin": "./bin/1c",
@@ -14,7 +14,7 @@
     "chalk": "2.1.x",
     "css-loader": "^0.28.9",
     "json-loader": "^0.5.7",
-    "less": "^3.0.0",
+    "less": "^2.7.3",
     "less-loader": "^4.0.5",
     "object-path": "^0.11.4",
     "postcss-loader": "^2.1.0",

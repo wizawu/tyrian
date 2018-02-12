@@ -1,67 +1,80 @@
-const RowMapper = Java.type("org.springframework.jdbc.core.RowMapper")
+import * as uuid from "uuid"
 
-namespace tooq {
-    export interface ModelOptions {
-        tableName: string
-        indexes: string[][]
-        uniqueIndexes: string[][]
-        fullTextIndexes: string[][]
+import { Client } from "./client"
+import { Collate, Engine } from "./constant"
+
+export interface Options {
+    client: Client
+    table: string
+    primary: string
+    engine?: Engine
+    collate?: Collate
+    index?: string[][]
+    unique?: string[][]
+    fulltext?: string[][]
+}
+
+export abstract class Model {
+    protected BIGINT() {
+        return 0
     }
 
-    export abstract class Model {
-        protected PrimaryKey(columType: string) {
-            return ""
-        }
+    protected BOOL() {
+        return false
+    }
 
-        protected Array(columType: string | null) {
-            return []
-        }
+    protected DOUBLE() {
+        return 0
+    }
 
-        protected Boolean(columType: string | null) {
-            return false
-        }
+    protected JSON() {
+        return null
+    }
 
-        protected Number(columType: string | null) {
-            return 0
-        }
+    protected VARCHAR(n: number) {
+        return ""
+    }
 
-        protected Object(columType: string | null) {
-            return null as any
-        }
+    protected UUID() {
+        return uuid.v4()
+    }
 
-        protected String(columType: string | null) {
-            return ""
-        }
+    protected TEXT() {
+        return ""
+    }
 
-        merge(json: object): Model {
-            Object.keys(this).forEach(key => {
-                if (json[key] !== undefined) this[key] = json[key]
-            })
-            return this
-        }
+    protected TIMESTAMP() {
+        return Date.now()
+    }
 
-        createTable() { }
+    public generateTable() { }
 
-        constructor(options?: ModelOptions) {
-            if (options)  {
-                this.PrimaryKey = this.Array = this.Boolean = this.Number = this.Object = this.String
+    constructor(options?: Options) {
+        if (options && options.client && options.table && options.primary) {
+            this.BIGINT = (() => "BIGINT") as any
+            this.BOOL = (() => "BOOL") as any
+            this.DOUBLE = (() => "DOUBLE") as any
+            this.JSON = (() => "JSON") as any
+            this.VARCHAR = n => `VARCHAR(${n})`
+            this.UUID = () => "VARCHAR(40)"
+            this.TEXT = () => "TEXT"
+            this.TIMESTAMP = (() => "BIGINT") as any
+
+            this.generateTable = () => {
+                options.client.ensureTable(
+                    options.table,
+                    options.primary,
+                    this[options.primary],
+                    options.engine,
+                    options.collate,
+                )
+
+                Object.keys(this).forEach(key => {
+                    if (typeof this[key] !== "function") {
+                        options.client.ensureColumn(options.table, key, this[key])
+                    }
+                })
             }
         }
     }
-
-    export const rowMapper = new RowMapper((resultSet: java.sql.ResultSet) => {
-        let json: any = {}
-        for (let i = 1; i <= resultSet.getMetaData().getColumnCount(); i++) {
-            let key = resultSet.getMetaData().getColumnLabel(i)
-            let type = resultSet.getMetaData().getColumnTypeName(i)
-            if (resultSet.getObject(i) == null) {
-                json[key] = null
-            } else if (type.toUpperCase() === "JSON") {
-                json[key] = JSON.parse(resultSet.getString(i))
-            } else {
-                json[key] = resultSet.getObject(i)
-            }
-        }
-        return json
-    })
 }

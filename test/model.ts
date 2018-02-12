@@ -1,64 +1,79 @@
 import { assert } from "chai"
 import { beforeEach, describe, it, report } from "lightest"
 
-import { Model, ColumnType } from "../src/model"
-
-class Repository extends Model {
-    topics = this.ARRAY()
-    private = this.BOOLEAN()
-    size = this.NUMBER()
-    owner = this.OBJECT()
-    name = this.STRING()
-}
-
-describe("ColumnType", () => {
-    it("VARCHAR", () => {
-        assert.deepEqual("VARCHAR(64)", ColumnType.VARCHAR(64))
-    })
-})
+import { Collate, Engine, Model, Client } from "../src/index"
 
 describe("Model", () => {
-    let repository
+    let client = new Client({
+        host: "127.0.0.1",
+        port: 3306,
+        database: "test",
+        user: "root",
+        password: "",
+        useSSL: false,
+    })
 
     beforeEach(() => {
-        repository = new Repository()
+        client.execute("DROP TABLE IF EXISTS user")
     })
 
-    it("ARRAY", () => {
-        assert.deepEqual([], repository.topics)
+    it("extends", () => {
+        class User extends Model {
+            a = this.BIGINT()
+            b = this.BOOL()
+            c = this.DOUBLE()
+            d = this.JSON()
+            e = this.TEXT()
+            f = this.TIMESTAMP()
+            g = this.UUID()
+            h = this.VARCHAR(64)
+        }
+
+        let user = new User({
+            client: client,
+            table: "user",
+            primary: "id",
+        })
+        assert.strictEqual(user.a as any, "BIGINT")
+        assert.strictEqual(user.b as any, "BOOL")
+        assert.strictEqual(user.c as any, "DOUBLE")
+        assert.strictEqual(user.d as any, "JSON")
+        assert.strictEqual(user.e as any, "TEXT")
+        assert.strictEqual(user.f as any, "BIGINT")
+        assert.strictEqual(user.g as any, "VARCHAR(40)")
+        assert.strictEqual(user.h as any, "VARCHAR(64)")
+
+        user = new User()
+        assert.strictEqual(user.a, 0)
+        assert.strictEqual(user.b, false)
+        assert.strictEqual(user.c, 0)
+        assert.strictEqual(user.d, null)
+        assert.strictEqual(user.e, "")
+        assert.isNumber(user.f)
+        assert.isString(user.g)
+        assert.strictEqual(user.h, "")
     })
 
-    it("BOOLEAN", () => {
-        assert.deepEqual(false, repository.private)
-    })
+    it("generateTable", () => {
+        class User extends Model {
+            id = this.UUID()
+            countryCode = this.VARCHAR(4)
+            phoneNumber = this.VARCHAR(20)
+            email = this.VARCHAR(64)
+            name = this.TEXT()
+            position = this.TEXT()
+        }
 
-    it("NUMBER", () => {
-        assert.deepEqual(0, repository.size)
-    })
-
-    it("OBJECT", () => {
-        assert.deepEqual(null, repository.owner)
-    })
-
-    it("STRING", () => {
-        assert.deepEqual("", repository.name)
-    })
-
-    it("merge", () => {
-        let repository = new Repository().merge({
-            topics: ["z", "x", "c"],
-            private: true,
-            size: 10,
-            owner: { url: "https://" },
-            name: "wizawu",
-            extra: "no",
-        }) as Repository
-        assert.deepEqual(["z", "x", "c"], repository.topics)
-        assert.deepEqual(true, repository.private)
-        assert.deepEqual(10, repository.size)
-        assert.deepEqual("https://", repository.owner.url)
-        assert.deepEqual("wizawu", repository.name)
-        assert.isUndefined((repository as any).extra)
+        new User({
+            client: client,
+            table: "user",
+            primary: "id",
+            engine: Engine.MYISAM,
+            collate: Collate.utf8_bin,
+            index: [["email"]],
+            unique: [["countryCode", "phoneNumber"]],
+            fulltext: [["name", "position"]],
+        }).generateTable()
     })
 })
 

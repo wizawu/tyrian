@@ -1,6 +1,6 @@
 {
   "name": "1c",
-  "version": "8.8.3",
+  "version": "8.8.4",
   "repository": "github:wizawu/1c",
   "license": "MIT",
   "bin": "./bin/1c",
@@ -18,7 +18,7 @@
     "less-loader": "^4.0.5",
     "object-path": "^0.11.4",
     "postcss-loader": "^2.1.0",
-    "source-map": "^0.7.0",
+    "source-map": "^0.6.1",
     "style-loader": "^0.20.1",
     "ts-loader": "^3.5.0",
     "typescript": "^2.7.1",

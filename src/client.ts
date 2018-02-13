@@ -1,4 +1,4 @@
-import { Collate, Engine } from "./constant"
+import { Collate, Engine, Parser } from "./constant"
 
 const RowMapper = Java.type("org.springframework.jdbc.core.RowMapper")
 
@@ -48,6 +48,24 @@ export class Client {
         this.db = new org.springframework.jdbc.core.JdbcTemplate(dataSource)
     }
 
+    query(sql: string, args?: any[]) {
+        return Java.from(
+            args === undefined ? this.db.query(sql, rowMapper) : this.db.query(sql, args, rowMapper)
+        )
+    }
+
+    queryForObject(sql: string, args?: any[]): any {
+        return args === undefined ? this.db.queryForObject(sql, rowMapper) : this.db.queryForObject(sql, args, rowMapper)
+    }
+
+    execute(sql: string) {
+        return this.db.execute(sql)
+    }
+
+    update(sql: string, ...args: any[]) {
+        return this.db.update(sql, args)
+    }
+
     ensureTable(table: string, pkey: string, type: string, engine = Engine.INNODB, collate?: Collate) {
         this.db.execute(`
             CREATE TABLE IF NOT EXISTS ${table} (
@@ -63,45 +81,27 @@ export class Client {
         }
     }
 
-    execute(sql: string) {
-        return this.db.execute(sql)
+    ensureIndex(table: string, columns: string[], options = { type: "", separator: "_idx_", parser: "" }) {
+        let name = table + options.separator + columns.join("_")
+        let indexes = this.query(`SHOW INDEX FROM ${table} WHERE key_name = ?`, [name])
+        if (indexes.length === 0) {
+            this.db.execute(`
+                CREATE ${options.type} INDEX ${name} ON ${table}(${columns.join(",")}) ${options.parser}
+            `)
+        }
     }
 
-    query(sql: string, args?: any[]): any[] {
-        return Java.from(
-            args === undefined ? this.db.query(sql, rowMapper) : this.db.query(sql, args, rowMapper)
-        )
+    ensureUniqueIndex(table: string, columns: string[]) {
+        this.ensureIndex(table, columns, { type: "UNIQUE", separator: "_uidx_", parser: "" })
+    }
+
+    ensureFullText(table: string, columns: string[], parser = Parser.ngram) {
+        this.ensureIndex(table, columns, { type: "FULLTEXT", separator: "_ft_", parser: `WITH PARSER ${parser}` })
     }
 }
 
         /*
 
-        ensureIndex(table: string, columns: string[], options = { type: "", separator: "_idx_", parser: "" }) {
-            let name = table + options.separator + columns.join("_")
-            let indexes = this.query(`SHOW INDEX FROM ${table} WHERE Key_name = ?`, [name])
-            if (indexes.length === 0) {
-                this.db.execute(`
-                CREATE ${options.type} INDEX ${name} ON ${table}(${columns.join(",")}) ${options.parser}
-            `)
-            }
-        }
-
-        ensureUniqueIndex(table: string, columns: string[]) {
-            this.ensureIndex(table, columns, { type: "UNIQUE", separator: "_uidx_", parser: "" })
-        }
-
-        ensureFullText(table: string, columns: string[], parser = Parser.ngram) {
-            this.ensureIndex(table, columns, { type: "FULLTEXT", separator: "_ft_", parser: `WITH PARSER ${parser}` })
-        }
-
-
-        queryForObject(sql: string, args?: any[]): any {
-            return args === undefined ? this.db.queryForObject(sql, rowMapper) : this.db.queryForObject(sql, args, rowMapper)
-        }
-
-        update(sql: string, ...args: any[]) {
-            return this.db.update(sql, args)
-        }
 
         insert(table: string, doc: Model, options = { upsert: false }) {
             let Doc: any = doc.constructor

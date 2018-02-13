@@ -1,7 +1,7 @@
 import * as uuid from "uuid"
 
 import { Client } from "./client"
-import { Collate, Engine } from "./constant"
+import { Collate, Engine, Parser } from "./constant"
 
 export interface Options {
     client: Client
@@ -11,7 +11,7 @@ export interface Options {
     collate?: Collate
     index?: string[][]
     unique?: string[][]
-    fulltext?: string[][]
+    fulltext?: (Parser | string)[][]
 }
 
 export abstract class Model {
@@ -51,6 +51,8 @@ export abstract class Model {
 
     constructor(options?: Options) {
         if (options && options.client && options.table && options.primary) {
+            const client = options.client
+
             this.BIGINT = (() => "BIGINT") as any
             this.BOOL = (() => "BOOL") as any
             this.DOUBLE = (() => "DOUBLE") as any
@@ -61,7 +63,7 @@ export abstract class Model {
             this.TIMESTAMP = (() => "BIGINT") as any
 
             this.generateTable = () => {
-                options.client.ensureTable(
+                client.ensureTable(
                     options.table,
                     options.primary,
                     this[options.primary],
@@ -71,9 +73,15 @@ export abstract class Model {
 
                 Object.keys(this).forEach(key => {
                     if (typeof this[key] !== "function") {
-                        options.client.ensureColumn(options.table, key, this[key])
+                        client.ensureColumn(options.table, key, this[key])
                     }
-                })
+                });
+
+                (options.index || []).forEach(columns => client.ensureIndex(options.table, columns));
+                (options.unique || []).forEach(columns => client.ensureUniqueIndex(options.table, columns));
+                (options.fulltext || []).forEach(columns =>
+                    client.ensureFullText(options.table, columns.slice(1), columns[0] as Parser)
+                )
             }
         }
     }

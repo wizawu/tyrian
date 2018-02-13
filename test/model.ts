@@ -1,7 +1,7 @@
 import { assert } from "chai"
 import { beforeEach, describe, it, report } from "lightest"
 
-import { Collate, Engine, Model, Client } from "../src/index"
+import { Parser, Collate, Engine, Model, Client } from "../src/index"
 
 describe("Model", () => {
     let client = new Client({
@@ -14,7 +14,7 @@ describe("Model", () => {
     })
 
     beforeEach(() => {
-        client.execute("DROP TABLE IF EXISTS user")
+        client.db.execute("DROP TABLE IF EXISTS user")
     })
 
     it("extends", () => {
@@ -72,8 +72,25 @@ describe("Model", () => {
             collate: Collate.utf8_bin,
             index: [["email"]],
             unique: [["countryCode", "phoneNumber"]],
-            fulltext: [["name", "position"]],
+            fulltext: [[Parser.ngram, "name", "position"]],
         }).generateTable()
+
+        let result = client.queryForObject(
+            "SELECT * FROM information_schema.tables WHERE table_schema = ? AND table_name = ?",
+            ["test", "user"]
+        )
+        assert.strictEqual(result.ENGINE.toUpperCase(), Engine.MYISAM)
+        assert.strictEqual(result.TABLE_COLLATION, Collate.utf8_bin)
+
+        result = client.query("SHOW INDEXES FROM user")
+        assert.includeMembers(
+            result.map(r => r.Key_name),
+            [
+                "user_idx_email",
+                "user_uidx_countryCode_phoneNumber",
+                "user_ft_name_position",
+            ]
+        )
     })
 })
 

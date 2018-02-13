@@ -1,0 +1,78 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var constant_1 = require("./constant");
+var RowMapper = Java.type("org.springframework.jdbc.core.RowMapper");
+exports.rowMapper = new RowMapper(function (resultSet) {
+    var row = {};
+    for (var i = 1; i <= resultSet.getMetaData().getColumnCount(); i++) {
+        var key = resultSet.getMetaData().getColumnLabel(i);
+        var type = resultSet.getMetaData().getColumnTypeName(i);
+        if (resultSet.getObject(i) == null) {
+            row[key] = null;
+        }
+        else if (type.toUpperCase() === "JSON") {
+            row[key] = JSON.parse(resultSet.getString(i));
+        }
+        else {
+            row[key] = resultSet.getObject(i);
+        }
+    }
+    return row;
+});
+var Client = (function () {
+    function Client(options) {
+        var host = options.host, port = options.port, database = options.database, user = options.user, password = options.password;
+        var url = "jdbc:mysql://" + host + ":" + port + "/" + database + "?user=" + user + "&password=" + password;
+        url += "&characterEncoding=" + (options.characterEncoding || "UTF-8");
+        if (options.autoReconnect !== undefined)
+            url += "&autoReconnect=" + options.autoReconnect;
+        if (options.testOnBorrow !== undefined)
+            url += "&testOnBorrow=" + options.testOnBorrow;
+        if (options.useSSL !== undefined)
+            url += "&useSSL=" + options.useSSL;
+        var dataSource = new com.zaxxer.hikari.HikariDataSource();
+        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+        dataSource.setJdbcUrl(url);
+        this.db = new org.springframework.jdbc.core.JdbcTemplate(dataSource);
+    }
+    Client.prototype.query = function (sql, args) {
+        return Java.from(args === undefined ? this.db.query(sql, exports.rowMapper) : this.db.query(sql, args, exports.rowMapper));
+    };
+    Client.prototype.queryForObject = function (sql, args) {
+        return args === undefined ? this.db.queryForObject(sql, exports.rowMapper) : this.db.queryForObject(sql, args, exports.rowMapper);
+    };
+    Client.prototype.execute = function (sql) {
+        return this.db.execute(sql);
+    };
+    Client.prototype.update = function (sql, args) {
+        return this.db.update(sql, args);
+    };
+    Client.prototype.ensureTable = function (table, pkey, type, engine, collate) {
+        if (engine === void 0) { engine = constant_1.Engine.INNODB; }
+        this.db.execute("\n            CREATE TABLE IF NOT EXISTS " + table + " (\n                " + pkey + " " + type + " PRIMARY KEY\n            ) ENGINE = " + engine + " " + (collate ? ", COLLATE " + collate : "") + "\n        ");
+    };
+    Client.prototype.ensureColumn = function (table, column, type) {
+        var columns = this.query("SHOW COLUMNS FROM " + table + " LIKE ?", [column]);
+        if (columns.length === 0) {
+            this.execute("ALTER TABLE " + table + " ADD COLUMN " + column + " " + type);
+        }
+    };
+    Client.prototype.ensureIndex = function (table, columns, options) {
+        if (options === void 0) { options = { type: "", separator: "_idx_", parser: "" }; }
+        var name = table + options.separator + columns.join("_");
+        var indexes = this.query("SHOW INDEX FROM " + table + " WHERE key_name = ?", [name]);
+        if (indexes.length === 0) {
+            this.execute("\n                CREATE " + options.type + " INDEX " + name + " ON " + table + "(" + columns.join(",") + ") " + options.parser + "\n            ");
+        }
+    };
+    Client.prototype.ensureUniqueIndex = function (table, columns) {
+        this.ensureIndex(table, columns, { type: "UNIQUE", separator: "_uidx_", parser: "" });
+    };
+    Client.prototype.ensureFullText = function (table, columns, parser) {
+        if (parser === void 0) { parser = constant_1.Parser.ngram; }
+        this.ensureIndex(table, columns, { type: "FULLTEXT", separator: "_ft_", parser: "WITH PARSER " + parser });
+    };
+    return Client;
+}());
+exports.Client = Client;
+//# sourceMappingURL=client.js.map

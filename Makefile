@@ -7,8 +7,6 @@ watch:
 test: build
 	1c build -c test/dist test/*.ts
 	1c run test/dist/model.js
-	1c run test/dist/index.js
-	1c run test/dist/bench.js
 
 clean:
 	rm -rf dist

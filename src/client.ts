@@ -77,7 +77,7 @@ export class Client {
     ensureColumn(table: string, column: string, type: string) {
         let columns = this.query(`SHOW COLUMNS FROM ${table} LIKE ?`, [column])
         if (columns.length === 0) {
-            this.db.execute(`ALTER TABLE ${table} ADD COLUMN ${column} ${type}`)
+            this.execute(`ALTER TABLE ${table} ADD COLUMN ${column} ${type}`)
         }
     }
 
@@ -85,7 +85,7 @@ export class Client {
         let name = table + options.separator + columns.join("_")
         let indexes = this.query(`SHOW INDEX FROM ${table} WHERE key_name = ?`, [name])
         if (indexes.length === 0) {
-            this.db.execute(`
+            this.execute(`
                 CREATE ${options.type} INDEX ${name} ON ${table}(${columns.join(",")}) ${options.parser}
             `)
         }
@@ -99,64 +99,3 @@ export class Client {
         this.ensureIndex(table, columns, { type: "FULLTEXT", separator: "_ft_", parser: `WITH PARSER ${parser}` })
     }
 }
-
-        /*
-
-
-        insert(table: string, doc: Model, options = { upsert: false }) {
-            let Doc: any = doc.constructor
-            let keys = Object.keys(new Doc())
-            let values = keys.map(() => "?").join(",")
-            return this.db.update(
-                `${options.upsert ? "REPLACE" : "INSERT"} INTO ${table}(${keys.join(",")}) VALUES(${values})`,
-                keys.map(key => {
-                    let value = doc[key]
-                    if (typeof value === "object") {
-                        return value === null ? null : JSON.stringify(value)
-                    } else {
-                        return value
-                    }
-                })
-            )
-        }
-
-        upsert(table: string, doc: Model) {
-            return this.insert(table, doc, { upsert: true })
-        }
-
-        batchInsert(table: string, docs: Model[], options = { upsert: false }) {
-            if (docs.length === 0) return
-            let Doc: any = docs[0].constructor
-            let keys = Object.keys(new Doc())
-            let values = keys.map(() => "?").join(",")
-            const BatchPreparedStatementSetter = Java.extend(
-                Java.type("org.springframework.jdbc.core.BatchPreparedStatementSetter"),
-                {
-                    setValues(preparedStatement, i) {
-                        const doc = docs[i]
-                        keys.forEach((key, j) => {
-                            const value = doc[key]
-                            if (typeof value === "object") {
-                                preparedStatement.setObject(j + 1, value === null ? null : JSON.stringify(value))
-                            } else {
-                                preparedStatement.setObject(j + 1, value)
-                            }
-                        })
-                    },
-                    getBatchSize() {
-                        return docs.length
-                    },
-                }
-            )
-            return this.db.batchUpdate(
-                `${options.upsert ? "REPLACE" : "INSERT"} INTO ${table}(${keys.join(",")}) VALUES(${values})`,
-                new BatchPreparedStatementSetter()
-            )
-        }
-
-        batchUpsert(table: string, docs: Model[]) {
-            this.batchInsert(table, docs, { upsert: true })
-        }
-    }
-}
-*/

@@ -156,8 +156,11 @@ describe("Model", () => {
             userTable.delete({})
             assert.fail()
         } catch (e) {
-            echo(e.message)
         }
+        userTable.delete({ name: "wizawu" })
+        let result = userTable.list({}) as User[]
+        assert.strictEqual(result.length, 1)
+        assert.strictEqual(result[0].email, "wizawu@163.com")
     })
 })
 

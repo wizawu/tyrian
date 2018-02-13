@@ -47,6 +47,15 @@ export abstract class Model {
         return Date.now()
     }
 
+    private queryToSQL(sql: string, query: object) {
+        let args: any[] = []
+        Object.keys(query).forEach(key => {
+            sql += ` AND ${key} = ?`
+            args.push(query[key])
+        })
+        return { sql, args }
+    }
+
     public merge(row: object) {
         if (!row) return this
         Object.keys(this).forEach(key => {
@@ -112,32 +121,17 @@ export abstract class Model {
             }
 
             this.get = query => {
-                let sql = `SELECT * FROM ${table} WHERE TRUE`
-                let args: any[] = []
-                Object.keys(query).forEach(key => {
-                    sql += ` AND ${key} = ?`
-                    args.push(query[key])
-                })
+                let { sql, args } = this.queryToSQL(`SELECT * FROM ${table} WHERE TRUE`, query)
                 return new Row().merge(client.queryForObject(sql, args))
             }
 
             this.list = query => {
-                let sql = `SELECT * FROM ${table} WHERE TRUE`
-                let args: any[] = []
-                Object.keys(query).forEach(key => {
-                    sql += ` AND ${key} = ?`
-                    args.push(query[key])
-                })
+                let { sql, args } = this.queryToSQL(`SELECT * FROM ${table} WHERE TRUE`, query)
                 return client.query(sql, args).map(row => new Row().merge(row))
             }
 
             this.delete = query => {
-                let sql = `DELETE FROM ${table} WHERE TRUE`
-                let args: any[] = []
-                Object.keys(query).forEach(key => {
-                    sql += ` AND ${key} = ?`
-                    args.push(query[key])
-                })
+                let { sql, args } = this.queryToSQL(`DELETE FROM ${table} WHERE TRUE`, query)
                 if (args.length === 0) {
                     throw "Cannot delete rows with an empty query"
                 } else {
@@ -151,7 +145,7 @@ export abstract class Model {
                 let values = keys.map(() => "?").join(",")
                 return client.update(
                     `${options.upsert ? "REPLACE" : "INSERT"} INTO ${table}(${keys.join(",")}) VALUES(${values})`,
-                    ...keys.map(key => {
+                    keys.map(key => {
                         let value = newRow[key]
                         if (typeof value === "object") {
                             return value === null ? null : JSON.stringify(value)

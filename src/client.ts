@@ -62,7 +62,7 @@ export class Client {
         return this.db.execute(sql)
     }
 
-    update(sql: string, ...args: any[]) {
+    update(sql: string, args: any[]) {
         return this.db.update(sql, args)
     }
 

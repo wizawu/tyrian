@@ -122,7 +122,15 @@ export abstract class Model {
 
             this.get = query => {
                 let { sql, args } = this.queryToSQL(`SELECT * FROM ${table} WHERE TRUE`, query)
-                return new Row().merge(client.queryForObject(sql, args))
+                try {
+                    return new Row().merge(client.queryForObject(sql, args))
+                } catch (e) {
+                    if (e instanceof org.springframework.dao.EmptyResultDataAccessException) {
+                        return null
+                    } else {
+                        throw e
+                    }
+                }
             }
 
             this.list = query => {

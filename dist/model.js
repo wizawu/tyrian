@@ -37,7 +37,17 @@ var Model = (function () {
             };
             this.get = function (query) {
                 var _a = _this.queryToSQL("SELECT * FROM " + table_1 + " WHERE TRUE", query), sql = _a.sql, args = _a.args;
-                return new Row_1().merge(client_1.queryForObject(sql, args));
+                try {
+                    return new Row_1().merge(client_1.queryForObject(sql, args));
+                }
+                catch (e) {
+                    if (e instanceof org.springframework.dao.EmptyResultDataAccessException) {
+                        return null;
+                    }
+                    else {
+                        throw e;
+                    }
+                }
             };
             this.list = function (query) {
                 var _a = _this.queryToSQL("SELECT * FROM " + table_1 + " WHERE TRUE", query), sql = _a.sql, args = _a.args;

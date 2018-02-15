@@ -28,8 +28,8 @@ exports.tsconfig = function (instdir) { return JSON.stringify({
     "include": [
         instdir + "/@types/**/*.d.ts",
         "lib/@types/**/*.d.ts",
-        "src/**/*.ts",
-        "src/**/*.tsx",
+        "**/*.ts",
+        "**/*.tsx",
     ]
 }, null, 2); };
 var package_json = JSON.stringify({

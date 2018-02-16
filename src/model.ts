@@ -64,6 +64,10 @@ export abstract class Model {
         return this
     }
 
+    public getTableName() {
+        return ""
+    }
+
     public generateTable() { }
 
     public get(query: object): object | null {
@@ -97,6 +101,8 @@ export abstract class Model {
             this.UUID = () => "VARCHAR(40)"
             this.TEXT = () => "TEXT"
             this.TIMESTAMP = (() => "BIGINT") as any
+
+            this.getTableName = () => table
 
             this.generateTable = () => {
                 client.ensureTable(

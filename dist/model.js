@@ -22,6 +22,7 @@ var Model = (function () {
             this.UUID = function () { return "VARCHAR(40)"; };
             this.TEXT = function () { return "TEXT"; };
             this.TIMESTAMP = (function () { return "BIGINT"; });
+            this.getTableName = function () { return table_1; };
             this.generateTable = function () {
                 client_1.ensureTable(table_1, options.primary, _this[options.primary], options.engine, options.collate);
                 Object.keys(_this).forEach(function (key) {
@@ -151,6 +152,9 @@ var Model = (function () {
                 _this[key] = row[key];
         });
         return this;
+    };
+    Model.prototype.getTableName = function () {
+        return "";
     };
     Model.prototype.generateTable = function () { };
     Model.prototype.get = function (query) {

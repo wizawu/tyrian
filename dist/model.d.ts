@@ -21,6 +21,7 @@ export declare abstract class Model {
     protected TIMESTAMP(): number;
     private queryToSQL(sql, query);
     merge(row: object): this;
+    getTableName(): string;
     generateTable(): void;
     get(query: object): object | null;
     list(query: object): object[];

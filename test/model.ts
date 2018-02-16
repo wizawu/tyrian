@@ -75,6 +75,10 @@ describe("Model", () => {
         assert.strictEqual(user.h, "")
     })
 
+    it("getTableName", () => {
+        assert.strictEqual(userTable.getTableName(), "user")
+    })
+
     it("generateTable", () => {
         let result = client.queryForObject(
             "SELECT * FROM information_schema.tables WHERE table_schema = ? AND table_name = ?",

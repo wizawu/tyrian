@@ -105,6 +105,9 @@ describe("Model", () => {
         assert.isNotEmpty(user.id)
         assert.strictEqual(user.name, "wizawu")
         assert.isUndefined((user as any).phone)
+
+        user = userTable.get({ name: "anonymous" }) as User
+        assert.strictEqual(user, null)
     })
 
     it("upsert", () => {

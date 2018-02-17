@@ -39,7 +39,17 @@ var Client = (function () {
         return Java.from(args === undefined ? this.db.query(sql, exports.rowMapper) : this.db.query(sql, args, exports.rowMapper));
     };
     Client.prototype.queryForObject = function (sql, args) {
-        return args === undefined ? this.db.queryForObject(sql, exports.rowMapper) : this.db.queryForObject(sql, args, exports.rowMapper);
+        try {
+            return args === undefined ? this.db.queryForObject(sql, exports.rowMapper) : this.db.queryForObject(sql, args, exports.rowMapper);
+        }
+        catch (e) {
+            if (e instanceof org.springframework.dao.EmptyResultDataAccessException) {
+                return null;
+            }
+            else {
+                throw e;
+            }
+        }
     };
     Client.prototype.execute = function (sql) {
         return this.db.execute(sql);

@@ -55,7 +55,15 @@ export class Client {
     }
 
     queryForObject(sql: string, args?: any[]): any {
-        return args === undefined ? this.db.queryForObject(sql, rowMapper) : this.db.queryForObject(sql, args, rowMapper)
+        try {
+            return args === undefined ? this.db.queryForObject(sql, rowMapper) : this.db.queryForObject(sql, args, rowMapper)
+        } catch (e) {
+            if (e instanceof org.springframework.dao.EmptyResultDataAccessException) {
+                return null
+            } else {
+                throw e
+            }
+        }
     }
 
     execute(sql: string) {

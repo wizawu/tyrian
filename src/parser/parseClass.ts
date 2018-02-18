@@ -24,7 +24,7 @@ function safeType(type: string, isParameter?: boolean): string {
 
     let classID = type.indexOf("<") < 0 ? type : type.substring(0, type.indexOf("<"))
     if (isParameter && lambda.isLambda[classID]) {
-        return `${type} | ${type.replace(new RegExp(`(${classID})`), "$1$$$Lambda")}`
+        return `${type} | ${type.replace(new RegExp(`(${classID})`.replace(/\$/g, "\\$")), "$1$$$Lambda")}`
     } else {
         return type
     }

@@ -1148,7 +1148,7 @@ declare namespace jdk {
                     protected skipComments(): boolean
                     public valueOfPattern(arg0: int, arg1: int): jdk.nashorn.internal.parser.Lexer$RegexToken
                     public canStartLiteral(arg0: jdk.nashorn.internal.parser.TokenType): boolean
-                    protected scanLiteral(arg0: long, arg1: jdk.nashorn.internal.parser.TokenType, arg2: jdk.nashorn.internal.parser.Lexer$LineInfoReceiver | jdk.nashorn.internal.parser.Lexer$LineInfoReceiver): boolean
+                    protected scanLiteral(arg0: long, arg1: jdk.nashorn.internal.parser.TokenType, arg2: jdk.nashorn.internal.parser.Lexer$LineInfoReceiver | jdk.nashorn.internal.parser.Lexer$LineInfoReceiver$$Lambda): boolean
                     protected static convertDigit(arg0: char, arg1: int): int
                     protected scanString(arg0: boolean): void
                     protected isEscapeCharacter(arg0: char): boolean

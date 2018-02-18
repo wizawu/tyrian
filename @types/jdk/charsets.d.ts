@@ -25,7 +25,7 @@ declare namespace sun {
                 }
                 class EUC_JP$Decoder extends java.nio.charset.CharsetDecoder implements sun.nio.cs.ext.DelegatableDecoder {
                     protected constructor(arg0: java.nio.charset.Charset)
-                    protected constructor(arg0: java.nio.charset.Charset, arg1: float, arg2: float, arg3: sun.nio.cs.SingleByte$Decoder | sun.nio.cs.SingleByte$Decoder, arg4: sun.nio.cs.ext.DoubleByte$Decoder | sun.nio.cs.ext.DoubleByte$Decoder, arg5: sun.nio.cs.ext.DoubleByte$Decoder | sun.nio.cs.ext.DoubleByte$Decoder)
+                    protected constructor(arg0: java.nio.charset.Charset, arg1: float, arg2: float, arg3: sun.nio.cs.SingleByte$Decoder | sun.nio.cs.SingleByte$Decoder$$Lambda, arg4: sun.nio.cs.ext.DoubleByte$Decoder | sun.nio.cs.ext.DoubleByte$Decoder$$Lambda, arg5: sun.nio.cs.ext.DoubleByte$Decoder | sun.nio.cs.ext.DoubleByte$Decoder$$Lambda)
                     protected decodeDouble(arg0: int, arg1: int): char
                     public decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda): java.nio.charset.CoderResult
                     public implReset(): void
@@ -116,7 +116,7 @@ declare namespace sun {
                     public constructor()
                 }
                 class HKSCS$Decoder extends sun.nio.cs.ext.DoubleByte$Decoder {
-                    protected constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.DoubleByte$Decoder | sun.nio.cs.ext.DoubleByte$Decoder, arg2: char[][], arg3: char[][])
+                    protected constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.DoubleByte$Decoder | sun.nio.cs.ext.DoubleByte$Decoder$$Lambda, arg2: char[][], arg3: char[][])
                     public decodeSingle(arg0: int): char
                     public decodeBig5(arg0: int, arg1: int): char
                     public decodeDouble(arg0: int, arg1: int): char
@@ -167,7 +167,7 @@ declare namespace sun {
                     public constructor()
                 }
                 class ISO2022_JP$Decoder extends java.nio.charset.CharsetDecoder implements sun.nio.cs.ext.DelegatableDecoder {
-                    protected constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.DoubleByte$Decoder | sun.nio.cs.ext.DoubleByte$Decoder, arg2: sun.nio.cs.ext.DoubleByte$Decoder | sun.nio.cs.ext.DoubleByte$Decoder)
+                    protected constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.DoubleByte$Decoder | sun.nio.cs.ext.DoubleByte$Decoder$$Lambda, arg2: sun.nio.cs.ext.DoubleByte$Decoder | sun.nio.cs.ext.DoubleByte$Decoder$$Lambda)
                     public implReset(): void
                     public decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda): java.nio.charset.CoderResult
                     public implFlush(arg0: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda): java.nio.charset.CoderResult
@@ -241,7 +241,7 @@ declare namespace sun {
                 }
                 class EUC_JP$Encoder extends java.nio.charset.CharsetEncoder {
                     protected constructor(arg0: java.nio.charset.Charset)
-                    protected constructor(arg0: java.nio.charset.Charset, arg1: float, arg2: float, arg3: sun.nio.cs.SingleByte$Encoder | sun.nio.cs.SingleByte$Encoder, arg4: sun.nio.cs.ext.DoubleByte$Encoder | sun.nio.cs.ext.DoubleByte$Encoder, arg5: sun.nio.cs.ext.DoubleByte$Encoder | sun.nio.cs.ext.DoubleByte$Encoder)
+                    protected constructor(arg0: java.nio.charset.Charset, arg1: float, arg2: float, arg3: sun.nio.cs.SingleByte$Encoder | sun.nio.cs.SingleByte$Encoder$$Lambda, arg4: sun.nio.cs.ext.DoubleByte$Encoder | sun.nio.cs.ext.DoubleByte$Encoder$$Lambda, arg5: sun.nio.cs.ext.DoubleByte$Encoder | sun.nio.cs.ext.DoubleByte$Encoder$$Lambda)
                     public canEncode(arg0: char): boolean
                     protected encodeSingle(arg0: char, arg1: byte[]): int
                     protected encodeDouble(arg0: char): int
@@ -1420,7 +1420,7 @@ declare namespace sun {
                     public constructor()
                 }
                 class HKSCS$Encoder extends sun.nio.cs.ext.DoubleByte$Encoder {
-                    protected constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.DoubleByte$Encoder | sun.nio.cs.ext.DoubleByte$Encoder, arg2: char[][], arg3: char[][])
+                    protected constructor(arg0: java.nio.charset.Charset, arg1: sun.nio.cs.ext.DoubleByte$Encoder | sun.nio.cs.ext.DoubleByte$Encoder$$Lambda, arg2: char[][], arg3: char[][])
                     public encodeBig5(arg0: char): int
                     public encodeChar(arg0: char): int
                     public encodeSupp(arg0: int): int

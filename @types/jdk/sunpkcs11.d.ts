@@ -28,6 +28,9 @@ declare namespace sun {
                 public length(): int
                 public static class: java.lang.Class<any>
             }
+            abstract class P11Key$$Lambda implements java.security.Key , sun.security.util.Length {
+                public (): string
+            }
             class KeyCache {
                 public static class: java.lang.Class<any>
             }
@@ -58,6 +61,9 @@ declare namespace sun {
                 public getProtectionParameter(): java.security.KeyStore$ProtectionParameter
                 public getTrustType(): sun.security.pkcs11.Secmod$TrustType
                 public static class: java.lang.Class<any>
+            }
+            class Secmod$KeyStoreLoadParameter$$Lambda implements java.security.KeyStore$LoadStoreParameter {
+                public constructor(arg0: sun.security.pkcs11.Secmod$TrustType, arg1: char[])
             }
             class ConfigurationException extends java.io.IOException {
                 public static class: java.lang.Class<any>
@@ -111,6 +117,9 @@ declare namespace sun {
                 protected finalize(): void
                 public static class: java.lang.Class<any>
             }
+            class P11KeyStore$PasswordCallbackHandler$$Lambda implements javax.security.auth.callback.CallbackHandler {
+                public (arg0: javax.security.auth.callback.Callback[]): void
+            }
             class Config {
                 public getNssNetscapeDbWorkaround(): boolean
                 public static class: java.lang.Class<any>
@@ -162,6 +171,9 @@ declare namespace sun {
             class SunPKCS11$TokenPoller implements java.lang.Runnable {
                 public run(): void
                 public static class: java.lang.Class<any>
+            }
+            class SunPKCS11$TokenPoller$$Lambda implements java.lang.Runnable {
+                public (): void
             }
             class P11ECKeyFactory extends sun.security.pkcs11.P11KeyFactory {
                 protected engineGeneratePublic(arg0: java.security.spec.KeySpec): java.security.PublicKey
@@ -1156,7 +1168,7 @@ declare namespace sun {
                 public engineIsKeyEntry(arg0: string): boolean
                 public engineIsCertificateEntry(arg0: string): boolean
                 public engineGetCertificateAlias(arg0: java.security.cert.Certificate): string
-                public engineStore(arg0: java.io.OutputStream, arg1: char[]): void
+                public engineStore(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: char[]): void
                 public engineStore(arg0: java.security.KeyStore$LoadStoreParameter | java.security.KeyStore$LoadStoreParameter): void
                 public engineLoad(arg0: java.io.InputStream, arg1: char[]): void
                 public engineLoad(arg0: java.security.KeyStore$LoadStoreParameter | java.security.KeyStore$LoadStoreParameter): void

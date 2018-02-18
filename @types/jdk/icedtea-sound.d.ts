@@ -78,6 +78,9 @@ declare namespace org {
                     public update(): void
                     public static class: java.lang.Class<any>
                 }
+                class PulseAudioDataLine$2$$Lambda implements org.classpath.icedtea.pulseaudio.Stream$UnderflowListener {
+                    public (): void
+                }
                 interface Stream$UnderflowListener {
                     update(): void
                 }
@@ -102,6 +105,9 @@ declare namespace org {
                 class PulseAudioClip$1 implements org.classpath.icedtea.pulseaudio.Stream$WriteListener {
                     public update(): void
                     public static class: java.lang.Class<any>
+                }
+                class PulseAudioClip$1$$Lambda implements org.classpath.icedtea.pulseaudio.Stream$WriteListener {
+                    public (): void
                 }
                 class Stream {
                     public static STATE_UNCONNECTED: long
@@ -139,6 +145,9 @@ declare namespace org {
                 class PulseAudioDataLine$1 implements org.classpath.icedtea.pulseaudio.Stream$StateListener {
                     public update(): void
                     public static class: java.lang.Class<any>
+                }
+                class PulseAudioDataLine$1$$Lambda implements org.classpath.icedtea.pulseaudio.Stream$StateListener {
+                    public (): void
                 }
                 class PulseAudioTargetPort extends org.classpath.icedtea.pulseaudio.PulseAudioPort {
                     public open(): void
@@ -258,6 +267,9 @@ declare namespace org {
                     public update(): void
                     public static class: java.lang.Class<any>
                 }
+                class PulseAudioDataLine$4$$Lambda implements org.classpath.icedtea.pulseaudio.Stream$WriteListener {
+                    public (): void
+                }
                 class Debug$DebugLevel extends java.lang.Enum<org.classpath.icedtea.pulseaudio.Debug$DebugLevel> {
                     public static Verbose: org.classpath.icedtea.pulseaudio.Debug$DebugLevel
                     public static Debug: org.classpath.icedtea.pulseaudio.Debug$DebugLevel
@@ -330,6 +342,9 @@ declare namespace org {
                     public update(arg0: org.classpath.icedtea.pulseaudio.ContextEvent): void
                     public static class: java.lang.Class<any>
                 }
+                class PulseAudioMixer$2$$Lambda implements org.classpath.icedtea.pulseaudio.ContextListener {
+                    public (arg0: org.classpath.icedtea.pulseaudio.ContextEvent): void
+                }
                 interface Stream$OverflowListener {
                     update(): void
                 }
@@ -347,8 +362,11 @@ declare namespace org {
                     public update(): void
                     public static class: java.lang.Class<any>
                 }
+                class PulseAudioDataLine$3$$Lambda implements org.classpath.icedtea.pulseaudio.Stream$PlaybackStartedListener {
+                    public (): void
+                }
                 class PulseAudioVolumeControl extends javax.sound.sampled.FloatControl {
-                    protected constructor(arg0: org.classpath.icedtea.pulseaudio.PulseAudioPlaybackLine, arg1: org.classpath.icedtea.pulseaudio.EventLoop)
+                    protected constructor(arg0: org.classpath.icedtea.pulseaudio.PulseAudioPlaybackLine, arg1: org.classpath.icedtea.pulseaudio.EventLoop | org.classpath.icedtea.pulseaudio.EventLoop$$Lambda)
                     public setValue(arg0: float): void
                     protected setStreamVolume(arg0: float): void
                     public getValue(): float
@@ -399,6 +417,9 @@ declare namespace org {
                     public update(): void
                     public static class: java.lang.Class<any>
                 }
+                class PulseAudioDataLine$5$$Lambda implements org.classpath.icedtea.pulseaudio.Stream$CorkListener {
+                    public (): void
+                }
                 class PulseAudioMixerProvider extends javax.sound.sampled.spi.MixerProvider {
                     public constructor()
                     public getMixer(arg0: javax.sound.sampled.Mixer$Info): javax.sound.sampled.Mixer
@@ -412,9 +433,15 @@ declare namespace org {
                     public sink_callback(arg0: string): void
                     public static class: java.lang.Class<any>
                 }
+                class EventLoop$$Lambda implements java.lang.Runnable {
+                    public (): void
+                }
                 class PulseAudioMixer$1 implements org.classpath.icedtea.pulseaudio.ContextListener {
                     public update(arg0: org.classpath.icedtea.pulseaudio.ContextEvent): void
                     public static class: java.lang.Class<any>
+                }
+                class PulseAudioMixer$1$$Lambda implements org.classpath.icedtea.pulseaudio.ContextListener {
+                    public (arg0: org.classpath.icedtea.pulseaudio.ContextEvent): void
                 }
                 abstract class PulseAudioPort extends org.classpath.icedtea.pulseaudio.PulseAudioLine implements javax.sound.sampled.Port , org.classpath.icedtea.pulseaudio.PulseAudioPlaybackLine {
                     public native_set_volume(arg0: float): byte[]

@@ -716,6 +716,9 @@ declare namespace sun {
                 public run(): void
                 public static class: java.lang.Class<any>
             }
+            class Handshaker$DelegatedTask$$Lambda<E> implements java.lang.Runnable {
+                public (): void
+            }
             class SSLSessionImpl extends javax.net.ssl.ExtendedSSLSession {
                 public isValid(): boolean
                 public getId(): byte[]

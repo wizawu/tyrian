@@ -6,6 +6,9 @@ declare namespace org {
                 public run(): void
                 public static class: java.lang.Class<any>
             }
+            class AtkAction$ActionRunner$$Lambda implements java.lang.Runnable {
+                public constructor(arg0: org.GNOME.Accessibility.AtkAction, arg1: javax.accessibility.AccessibleAction, arg2: int)
+            }
             class AtkAction {
                 public constructor(arg0: javax.accessibility.AccessibleContext)
                 public do_action(arg0: int): boolean

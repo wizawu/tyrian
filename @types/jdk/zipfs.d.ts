@@ -132,6 +132,9 @@ declare namespace com {
                     public matches(arg0: java.nio.file.Path): boolean
                     public static class: java.lang.Class<any>
                 }
+                class ZipFileSystem$1$$Lambda implements java.nio.file.PathMatcher {
+                    public (arg0: java.nio.file.Path): boolean
+                }
                 class ZipFileStore extends java.nio.file.FileStore {
                     public name(): string
                     public type(): string
@@ -200,11 +203,11 @@ declare namespace com {
                     public static class: java.lang.Class<any>
                 }
                 class ZipUtils {
-                    public static writeShort(arg0: java.io.OutputStream, arg1: int): void
-                    public static writeInt(arg0: java.io.OutputStream, arg1: long): void
-                    public static writeLong(arg0: java.io.OutputStream, arg1: long): void
-                    public static writeBytes(arg0: java.io.OutputStream, arg1: byte[]): void
-                    public static writeBytes(arg0: java.io.OutputStream, arg1: byte[], arg2: int, arg3: int): void
+                    public static writeShort(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: int): void
+                    public static writeInt(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: long): void
+                    public static writeLong(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: long): void
+                    public static writeBytes(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: byte[]): void
+                    public static writeBytes(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: byte[], arg2: int, arg3: int): void
                     public static toDirectoryPath(arg0: byte[]): byte[]
                     public static dosToJavaTime(arg0: long): long
                     public static javaToDosTime(arg0: long): long

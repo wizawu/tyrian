@@ -157,6 +157,9 @@ declare namespace com {
                         public run(): java.lang.Object
                         public static class: java.lang.Class<any>
                     }
+                    class EventQueueMonitor$1$$Lambda implements java.security.PrivilegedAction {
+                        public (): java.lang.Object
+                    }
                     class ComponentEvtDispatchThread extends java.lang.Thread {
                         public constructor(arg0: string)
                         public run(): void
@@ -164,8 +167,8 @@ declare namespace com {
                     }
                     class TopLevelWindowMulticaster extends java.awt.AWTEventMulticaster implements com.sun.java.accessibility.util.TopLevelWindowListener {
                         protected constructor(arg0: java.util.EventListener, arg1: java.util.EventListener)
-                        public topLevelWindowCreated(arg0: java.awt.Window): void
-                        public topLevelWindowDestroyed(arg0: java.awt.Window): void
+                        public topLevelWindowCreated(arg0: java.awt.Window | java.awt.Window$$Lambda): void
+                        public topLevelWindowDestroyed(arg0: java.awt.Window | java.awt.Window$$Lambda): void
                         public static add(arg0: com.sun.java.accessibility.util.TopLevelWindowListener, arg1: com.sun.java.accessibility.util.TopLevelWindowListener): com.sun.java.accessibility.util.TopLevelWindowListener
                         public static remove(arg0: com.sun.java.accessibility.util.TopLevelWindowListener, arg1: com.sun.java.accessibility.util.TopLevelWindowListener): com.sun.java.accessibility.util.TopLevelWindowListener
                         protected static addInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener
@@ -182,8 +185,8 @@ declare namespace com {
                         protected removeListeners(arg0: int): void
                         protected removeListeners(arg0: java.awt.Component): void
                         protected removeListeners(arg0: java.awt.Component, arg1: int): void
-                        public topLevelWindowCreated(arg0: java.awt.Window): void
-                        public topLevelWindowDestroyed(arg0: java.awt.Window): void
+                        public topLevelWindowCreated(arg0: java.awt.Window | java.awt.Window$$Lambda): void
+                        public topLevelWindowDestroyed(arg0: java.awt.Window | java.awt.Window$$Lambda): void
                         public actionPerformed(arg0: java.awt.event.ActionEvent): void
                         public adjustmentValueChanged(arg0: java.awt.event.AdjustmentEvent): void
                         public componentHidden(arg0: java.awt.event.ComponentEvent): void
@@ -230,8 +233,8 @@ declare namespace com {
                         protected installListeners(arg0: javax.accessibility.Accessible | javax.accessibility.Accessible$$Lambda): void
                         protected removeListeners(): void
                         protected removeListeners(arg0: javax.accessibility.Accessible | javax.accessibility.Accessible$$Lambda): void
-                        public topLevelWindowCreated(arg0: java.awt.Window): void
-                        public topLevelWindowDestroyed(arg0: java.awt.Window): void
+                        public topLevelWindowCreated(arg0: java.awt.Window | java.awt.Window$$Lambda): void
+                        public topLevelWindowDestroyed(arg0: java.awt.Window | java.awt.Window$$Lambda): void
                         public propertyChange(arg0: java.beans.PropertyChangeEvent): void
                         public static class: java.lang.Class<any>
                     }
@@ -373,8 +376,8 @@ declare namespace com {
                         guiInitialized(): void
                     }
                     interface TopLevelWindowListener extends java.util.EventListener {
-                        topLevelWindowCreated(arg0: java.awt.Window): void
-                        topLevelWindowDestroyed(arg0: java.awt.Window): void
+                        topLevelWindowCreated(arg0: java.awt.Window | java.awt.Window$$Lambda): void
+                        topLevelWindowDestroyed(arg0: java.awt.Window | java.awt.Window$$Lambda): void
                     }
                     class EventQueueMonitor implements java.awt.event.AWTEventListener {
                         public constructor()

@@ -148,10 +148,16 @@ declare namespace jdk {
                     public getGuardedInvocation(arg0: jdk.internal.dynalink.linker.LinkRequest, arg1: jdk.internal.dynalink.linker.LinkerServices): jdk.internal.dynalink.linker.GuardedInvocation
                     public static class: java.lang.Class<any>
                 }
+                class BeansLinker$$Lambda implements jdk.internal.dynalink.linker.GuardingDynamicLinker {
+                    public constructor()
+                }
                 abstract class AbstractJavaLinker implements jdk.internal.dynalink.linker.GuardingDynamicLinker {
                     public getGuardedInvocation(arg0: jdk.internal.dynalink.linker.LinkRequest, arg1: jdk.internal.dynalink.linker.LinkerServices): jdk.internal.dynalink.linker.GuardedInvocation
                     protected getGuardedInvocationComponent(arg0: jdk.internal.dynalink.CallSiteDescriptor, arg1: jdk.internal.dynalink.linker.LinkerServices, arg2: java.util.List<java.lang.String>): jdk.internal.dynalink.beans.GuardedInvocationComponent
                     public static class: java.lang.Class<any>
+                }
+                abstract class AbstractJavaLinker$$Lambda implements jdk.internal.dynalink.linker.GuardingDynamicLinker {
+                    public (arg0: jdk.internal.dynalink.linker.LinkRequest, arg1: jdk.internal.dynalink.linker.LinkerServices): jdk.internal.dynalink.linker.GuardedInvocation
                 }
                 class CallerSensitiveDynamicMethod extends jdk.internal.dynalink.beans.SingleDynamicMethod {
                     public static class: java.lang.Class<any>
@@ -462,6 +468,9 @@ declare namespace jdk {
                     public transform(arg0: java.lang.invoke.MethodHandle): java.lang.invoke.MethodHandle
                     public static class: java.lang.Class<any>
                 }
+                class DefaultInternalObjectFilter$$Lambda implements jdk.internal.dynalink.linker.MethodHandleTransformer {
+                    public constructor(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.invoke.MethodHandle)
+                }
                 class TypeConverterFactory$3 extends java.lang.ClassValue<jdk.internal.dynalink.support.ClassMap<java.lang.Boolean>> {
                     protected computeValue(arg0: java.lang.Class<any>): jdk.internal.dynalink.support.ClassMap<java.lang.Boolean>
                     protected computeValue(arg0: java.lang.Class): java.lang.Object
@@ -548,6 +557,9 @@ declare namespace jdk {
                     public constructor()
                     public filter(arg0: jdk.internal.dynalink.linker.GuardedInvocation, arg1: jdk.internal.dynalink.linker.LinkRequest, arg2: jdk.internal.dynalink.linker.LinkerServices): jdk.internal.dynalink.linker.GuardedInvocation
                     public static class: java.lang.Class<any>
+                }
+                class DefaultPrelinkFilter$$Lambda implements jdk.internal.dynalink.GuardedInvocationFilter {
+                    public constructor()
                 }
                 class TypeConverterFactory {
                     public constructor(arg0: java.lang.Iterable<jdk.internal.dynalink.linker.GuardingTypeConverterFactory>, arg1: jdk.internal.dynalink.linker.MethodTypeConversionStrategy | jdk.internal.dynalink.linker.MethodTypeConversionStrategy$$Lambda)
@@ -641,8 +653,8 @@ declare namespace jdk {
                 public static INTERNAL_ERROR: int
                 protected constructor()
                 public static main(arg0: java.lang.String[]): void
-                public static main(arg0: java.io.InputStream, arg1: java.io.OutputStream, arg2: java.io.OutputStream, arg3: java.lang.String[]): int
-                protected run(arg0: java.io.InputStream, arg1: java.io.OutputStream, arg2: java.io.OutputStream, arg3: java.lang.String[]): int
+                public static main(arg0: java.io.InputStream, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda, arg2: java.io.OutputStream | java.io.OutputStream$$Lambda, arg3: java.lang.String[]): int
+                protected run(arg0: java.io.InputStream, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda, arg2: java.io.OutputStream | java.io.OutputStream$$Lambda, arg3: java.lang.String[]): int
                 protected apply(arg0: jdk.nashorn.internal.runtime.ScriptFunction, arg1: java.lang.Object): java.lang.Object
                 public static class: java.lang.Class<any>
             }
@@ -1086,6 +1098,9 @@ declare namespace jdk {
                 class Parser$1 implements jdk.nashorn.internal.parser.Lexer$LineInfoReceiver {
                     public lineInfo(arg0: int, arg1: int): void
                     public static class: java.lang.Class<any>
+                }
+                class Parser$1$$Lambda implements jdk.nashorn.internal.parser.Lexer$LineInfoReceiver {
+                    public (arg0: int, arg1: int): void
                 }
                 class DateParser$Token extends java.lang.Enum<jdk.nashorn.internal.parser.DateParser$Token> {
                     public static UNKNOWN: jdk.nashorn.internal.parser.DateParser$Token
@@ -3725,8 +3740,8 @@ declare namespace jdk {
                     public enterExpressionStatement(arg0: jdk.nashorn.internal.ir.ExpressionStatement): boolean
                     public enterBlockStatement(arg0: jdk.nashorn.internal.ir.BlockStatement): boolean
                     public enterForNode(arg0: jdk.nashorn.internal.ir.ForNode): boolean
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
-                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Node
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
+                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Node
                     public enterIfNode(arg0: jdk.nashorn.internal.ir.IfNode): boolean
                     public enterReturnNode(arg0: jdk.nashorn.internal.ir.ReturnNode): boolean
                     public enterSplitReturn(arg0: jdk.nashorn.internal.ir.SplitReturn): boolean
@@ -3744,8 +3759,8 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class CodeGenerator$8$1 extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
-                    public enterObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode): boolean
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
+                    public enterObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode | jdk.nashorn.internal.ir.ObjectNode$$Lambda): boolean
                     public enterDefault(arg0: jdk.nashorn.internal.ir.Node): boolean
                     public static class: java.lang.Class<any>
                 }
@@ -3782,7 +3797,7 @@ declare namespace jdk {
                 class CodeGenerator$3 extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
                     public enterIdentNode(arg0: jdk.nashorn.internal.ir.IdentNode): boolean
                     public enterAccessNode(arg0: jdk.nashorn.internal.ir.AccessNode): boolean
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
                     public enterIndexNode(arg0: jdk.nashorn.internal.ir.IndexNode): boolean
                     protected enterDefault(arg0: jdk.nashorn.internal.ir.Node): boolean
                     public static class: java.lang.Class<any>
@@ -3812,8 +3827,8 @@ declare namespace jdk {
                 class FindScopeDepths extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor implements jdk.nashorn.internal.runtime.logging.Loggable {
                     public getLogger(): jdk.nashorn.internal.runtime.logging.DebugLogger
                     public initLogger(arg0: jdk.nashorn.internal.runtime.Context): jdk.nashorn.internal.runtime.logging.DebugLogger
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
-                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Node
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
+                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Node
                     public enterWithNode(arg0: jdk.nashorn.internal.ir.WithNode): boolean
                     public enterBlock(arg0: jdk.nashorn.internal.ir.Block): boolean
                     public leaveBlock(arg0: jdk.nashorn.internal.ir.Block): jdk.nashorn.internal.ir.Node
@@ -3900,8 +3915,8 @@ declare namespace jdk {
                     public getLogger(): jdk.nashorn.internal.runtime.logging.DebugLogger
                     public initLogger(arg0: jdk.nashorn.internal.runtime.Context): jdk.nashorn.internal.runtime.logging.DebugLogger
                     public getInvalidatedProgramPoints(): java.util.Map<java.lang.Integer, jdk.nashorn.internal.codegen.types.Type>
-                    public compile(arg0: jdk.nashorn.internal.ir.FunctionNode, arg1: jdk.nashorn.internal.codegen.Compiler$CompilationPhases): jdk.nashorn.internal.ir.FunctionNode
-                    public persistClassInfo(arg0: string, arg1: jdk.nashorn.internal.ir.FunctionNode): void
+                    public compile(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda, arg1: jdk.nashorn.internal.codegen.Compiler$CompilationPhases): jdk.nashorn.internal.ir.FunctionNode
+                    public persistClassInfo(arg0: string, arg1: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): void
                     public static updateCompilationId(arg0: int): void
                     public static binaryName(arg0: string): string
                     public static class: java.lang.Class<any>
@@ -3934,11 +3949,11 @@ declare namespace jdk {
                 }
                 class SplitIntoFunctions extends jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.BlockLexicalContext> {
                     public constructor(arg0: jdk.nashorn.internal.codegen.Compiler)
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
-                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Node
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
+                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Node
                     protected leaveDefault(arg0: jdk.nashorn.internal.ir.Node): jdk.nashorn.internal.ir.Node
-                    public enterSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode): boolean
-                    public leaveSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode): jdk.nashorn.internal.ir.Node
+                    public enterSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode | jdk.nashorn.internal.ir.SplitNode$$Lambda): boolean
+                    public leaveSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode | jdk.nashorn.internal.ir.SplitNode$$Lambda): jdk.nashorn.internal.ir.Node
                     public enterVarNode(arg0: jdk.nashorn.internal.ir.VarNode): boolean
                     public leaveBlock(arg0: jdk.nashorn.internal.ir.Block): jdk.nashorn.internal.ir.Node
                     public leaveBreakNode(arg0: jdk.nashorn.internal.ir.BreakNode): jdk.nashorn.internal.ir.Node
@@ -3979,6 +3994,9 @@ declare namespace jdk {
                     public populateRange(arg0: jdk.nashorn.internal.codegen.MethodEmitter, arg1: jdk.nashorn.internal.codegen.types.Type, arg2: int, arg3: int, arg4: int): void
                     public static class: java.lang.Class<any>
                 }
+                class CodeGenerator$7$$Lambda implements jdk.nashorn.internal.codegen.CodeGenerator$SplitLiteralCreator {
+                    public (arg0: jdk.nashorn.internal.codegen.MethodEmitter, arg1: jdk.nashorn.internal.codegen.types.Type, arg2: int, arg3: int, arg4: int): void
+                }
                 class CodeGenerator$30 extends jdk.nashorn.internal.codegen.CodeGenerator$BinaryArith {
                     protected op(arg0: int): void
                     public static class: java.lang.Class<any>
@@ -3999,7 +4017,7 @@ declare namespace jdk {
                 }
                 class FoldConstants$1 extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
                     public enterVarNode(arg0: jdk.nashorn.internal.ir.VarNode): boolean
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$ScopeDepthComputationPhase extends jdk.nashorn.internal.codegen.CompilationPhase {
@@ -4042,7 +4060,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$ReinitializeCachedPhase$1 extends jdk.nashorn.internal.codegen.ReplaceCompileUnits {
-                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Node
+                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Node
                     public static class: java.lang.Class<any>
                 }
                 abstract class CodeGenerator$BinaryArith {
@@ -4094,8 +4112,8 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class ProgramPoints extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
-                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Node
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
+                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Node
                     public enterVarNode(arg0: jdk.nashorn.internal.ir.VarNode): boolean
                     public enterIdentNode(arg0: jdk.nashorn.internal.ir.IdentNode): boolean
                     public leaveIdentNode(arg0: jdk.nashorn.internal.ir.IdentNode): jdk.nashorn.internal.ir.Node
@@ -4119,7 +4137,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class Splitter$2 extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
                     public static class: java.lang.Class<any>
                 }
                 class CompilerConstants$8 extends jdk.nashorn.internal.codegen.CompilerConstants$Call {
@@ -4139,7 +4157,7 @@ declare namespace jdk {
                     public enterIdentNode(arg0: jdk.nashorn.internal.ir.IdentNode): boolean
                     public enterAccessNode(arg0: jdk.nashorn.internal.ir.AccessNode): boolean
                     public enterIndexNode(arg0: jdk.nashorn.internal.ir.IndexNode): boolean
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
                     public enterASSIGN(arg0: jdk.nashorn.internal.ir.BinaryNode): boolean
                     public enterASSIGN_ADD(arg0: jdk.nashorn.internal.ir.BinaryNode): boolean
                     public enterASSIGN_BIT_AND(arg0: jdk.nashorn.internal.ir.BinaryNode): boolean
@@ -4153,7 +4171,7 @@ declare namespace jdk {
                     public enterASSIGN_SHR(arg0: jdk.nashorn.internal.ir.BinaryNode): boolean
                     public enterASSIGN_SUB(arg0: jdk.nashorn.internal.ir.BinaryNode): boolean
                     public enterCallNode(arg0: jdk.nashorn.internal.ir.CallNode): boolean
-                    public enterLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode<any>): boolean
+                    public enterLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode<any> | jdk.nashorn.internal.ir.LiteralNode$$Lambda<any>): boolean
                     public enterTernaryNode(arg0: jdk.nashorn.internal.ir.TernaryNode): boolean
                     public enterADD(arg0: jdk.nashorn.internal.ir.BinaryNode): boolean
                     public enterSUB(arg0: jdk.nashorn.internal.ir.UnaryNode): boolean
@@ -4183,7 +4201,7 @@ declare namespace jdk {
                     public enterLT(arg0: jdk.nashorn.internal.ir.BinaryNode): boolean
                     public enterNE(arg0: jdk.nashorn.internal.ir.BinaryNode): boolean
                     public enterNE_STRICT(arg0: jdk.nashorn.internal.ir.BinaryNode): boolean
-                    public enterObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode): boolean
+                    public enterObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode | jdk.nashorn.internal.ir.ObjectNode$$Lambda): boolean
                     public enterRuntimeNode(arg0: jdk.nashorn.internal.ir.RuntimeNode): boolean
                     public enterNEW(arg0: jdk.nashorn.internal.ir.UnaryNode): boolean
                     public enterDECINC(arg0: jdk.nashorn.internal.ir.UnaryNode): boolean
@@ -4201,7 +4219,7 @@ declare namespace jdk {
                     public hasCode(): boolean
                     public setUsed(): void
                     public getCode(): java.lang.Class<any>
-                    public isInitializing(arg0: jdk.nashorn.internal.runtime.RecompilableScriptFunctionData, arg1: jdk.nashorn.internal.ir.FunctionNode): boolean
+                    public isInitializing(arg0: jdk.nashorn.internal.runtime.RecompilableScriptFunctionData, arg1: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
                     public canHold(arg0: long): boolean
                     public getClassEmitter(): jdk.nashorn.internal.codegen.ClassEmitter
                     public getUnitClassName(): string
@@ -4249,7 +4267,7 @@ declare namespace jdk {
                 class FunctionSignature {
                     public constructor(arg0: boolean, arg1: boolean, arg2: jdk.nashorn.internal.codegen.types.Type, arg3: java.util.List<jdk.nashorn.internal.ir.Expression>)
                     public constructor(arg0: boolean, arg1: boolean, arg2: jdk.nashorn.internal.codegen.types.Type, arg3: int)
-                    public constructor(arg0: jdk.nashorn.internal.ir.FunctionNode)
+                    public constructor(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda)
                     public toString(): string
                     public size(): int
                     public getParamTypes(): jdk.nashorn.internal.codegen.types.Type[]
@@ -4280,13 +4298,13 @@ declare namespace jdk {
                 }
                 class LocalVariableTypesCalculator$1 extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
                     protected enterDefault(arg0: jdk.nashorn.internal.ir.Node): boolean
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
                     public leaveBinaryNode(arg0: jdk.nashorn.internal.ir.BinaryNode): jdk.nashorn.internal.ir.Node
                     protected leaveDefault(arg0: jdk.nashorn.internal.ir.Node): jdk.nashorn.internal.ir.Node
                     public leaveBlock(arg0: jdk.nashorn.internal.ir.Block): jdk.nashorn.internal.ir.Node
-                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Node
+                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Node
                     public leaveIdentNode(arg0: jdk.nashorn.internal.ir.IdentNode): jdk.nashorn.internal.ir.Node
-                    public leaveLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode<any>): jdk.nashorn.internal.ir.Node
+                    public leaveLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode<any> | jdk.nashorn.internal.ir.LiteralNode$$Lambda<any>): jdk.nashorn.internal.ir.Node
                     public leaveRuntimeNode(arg0: jdk.nashorn.internal.ir.RuntimeNode): jdk.nashorn.internal.ir.Node
                     public static class: java.lang.Class<any>
                 }
@@ -4330,8 +4348,8 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 abstract class CompilationPhase {
-                    protected begin(arg0: jdk.nashorn.internal.codegen.Compiler, arg1: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.FunctionNode
-                    protected end(arg0: jdk.nashorn.internal.codegen.Compiler, arg1: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.FunctionNode
+                    protected begin(arg0: jdk.nashorn.internal.codegen.Compiler, arg1: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.FunctionNode
+                    protected end(arg0: jdk.nashorn.internal.codegen.Compiler, arg1: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.FunctionNode
                     public static class: java.lang.Class<any>
                 }
                 class ApplySpecialization$2 extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
@@ -4341,7 +4359,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class CodeGenerator$11$1 extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
                     public enterDefault(arg0: jdk.nashorn.internal.ir.Node): boolean
                     public static class: java.lang.Class<any>
                 }
@@ -4354,7 +4372,7 @@ declare namespace jdk {
                     public initLogger(arg0: jdk.nashorn.internal.runtime.Context): jdk.nashorn.internal.runtime.logging.DebugLogger
                     public leaveUnaryNode(arg0: jdk.nashorn.internal.ir.UnaryNode): jdk.nashorn.internal.ir.Node
                     public leaveBinaryNode(arg0: jdk.nashorn.internal.ir.BinaryNode): jdk.nashorn.internal.ir.Node
-                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Node
+                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Node
                     public leaveIfNode(arg0: jdk.nashorn.internal.ir.IfNode): jdk.nashorn.internal.ir.Node
                     public leaveTernaryNode(arg0: jdk.nashorn.internal.ir.TernaryNode): jdk.nashorn.internal.ir.Node
                     public leaveSwitchNode(arg0: jdk.nashorn.internal.ir.SwitchNode): jdk.nashorn.internal.ir.Node
@@ -4376,8 +4394,8 @@ declare namespace jdk {
                     public initLogger(arg0: jdk.nashorn.internal.runtime.Context): jdk.nashorn.internal.runtime.logging.DebugLogger
                     public enterCallNode(arg0: jdk.nashorn.internal.ir.CallNode): boolean
                     public leaveCallNode(arg0: jdk.nashorn.internal.ir.CallNode): jdk.nashorn.internal.ir.Node
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
-                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Node
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
+                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Node
                     public static class: java.lang.Class<any>
                 }
                 class CodeGenerator$31 extends jdk.nashorn.internal.codegen.CodeGenerator$BinaryArith {
@@ -4426,8 +4444,8 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class CacheAst extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
-                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Node
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
+                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Node
                     public static class: java.lang.Class<any>
                 }
                 class AssignSymbols extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor implements jdk.nashorn.internal.runtime.logging.Loggable {
@@ -4436,13 +4454,13 @@ declare namespace jdk {
                     public initLogger(arg0: jdk.nashorn.internal.runtime.Context): jdk.nashorn.internal.runtime.logging.DebugLogger
                     public enterBlock(arg0: jdk.nashorn.internal.ir.Block): boolean
                     public enterCatchNode(arg0: jdk.nashorn.internal.ir.CatchNode): boolean
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
                     public enterVarNode(arg0: jdk.nashorn.internal.ir.VarNode): boolean
                     public leaveVarNode(arg0: jdk.nashorn.internal.ir.VarNode): jdk.nashorn.internal.ir.Node
                     public leaveBinaryNode(arg0: jdk.nashorn.internal.ir.BinaryNode): jdk.nashorn.internal.ir.Node
                     public leaveUnaryNode(arg0: jdk.nashorn.internal.ir.UnaryNode): jdk.nashorn.internal.ir.Node
                     public leaveForNode(arg0: jdk.nashorn.internal.ir.ForNode): jdk.nashorn.internal.ir.Node
-                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Node
+                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Node
                     public leaveIdentNode(arg0: jdk.nashorn.internal.ir.IdentNode): jdk.nashorn.internal.ir.Node
                     public leaveSwitchNode(arg0: jdk.nashorn.internal.ir.SwitchNode): jdk.nashorn.internal.ir.Node
                     public leaveTryNode(arg0: jdk.nashorn.internal.ir.TryNode): jdk.nashorn.internal.ir.Node
@@ -4461,8 +4479,8 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$SplittingPhase$1 extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
-                    public leaveLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode<any>): jdk.nashorn.internal.ir.LiteralNode<any>
-                    public leaveLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode): jdk.nashorn.internal.ir.Node
+                    public leaveLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode<any> | jdk.nashorn.internal.ir.LiteralNode$$Lambda<any>): jdk.nashorn.internal.ir.LiteralNode<any>
+                    public leaveLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode | jdk.nashorn.internal.ir.LiteralNode$$Lambda): jdk.nashorn.internal.ir.Node
                     public static class: java.lang.Class<any>
                 }
                 class CodeGenerator$29 extends jdk.nashorn.internal.codegen.CodeGenerator$BinaryArith {
@@ -4480,15 +4498,15 @@ declare namespace jdk {
                 }
                 class Splitter extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor implements jdk.nashorn.internal.runtime.logging.Loggable {
                     public static SPLIT_THRESHOLD: long
-                    public constructor(arg0: jdk.nashorn.internal.codegen.Compiler, arg1: jdk.nashorn.internal.ir.FunctionNode, arg2: jdk.nashorn.internal.codegen.CompileUnit)
+                    public constructor(arg0: jdk.nashorn.internal.codegen.Compiler, arg1: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda, arg2: jdk.nashorn.internal.codegen.CompileUnit)
                     public initLogger(arg0: jdk.nashorn.internal.runtime.Context): jdk.nashorn.internal.runtime.logging.DebugLogger
                     public getLogger(): jdk.nashorn.internal.runtime.logging.DebugLogger
                     protected findUnit(arg0: long): jdk.nashorn.internal.codegen.CompileUnit
                     public enterBlock(arg0: jdk.nashorn.internal.ir.Block): boolean
                     public leaveBlock(arg0: jdk.nashorn.internal.ir.Block): jdk.nashorn.internal.ir.Node
-                    public leaveLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode): jdk.nashorn.internal.ir.Node
-                    public leaveObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode): jdk.nashorn.internal.ir.Node
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
+                    public leaveLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode | jdk.nashorn.internal.ir.LiteralNode$$Lambda): jdk.nashorn.internal.ir.Node
+                    public leaveObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode | jdk.nashorn.internal.ir.ObjectNode$$Lambda): jdk.nashorn.internal.ir.Node
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
                     public static class: java.lang.Class<any>
                 }
                 class CodeGenerator$25 extends jdk.nashorn.internal.codegen.CodeGenerator$BinarySelfAssignment {
@@ -4496,7 +4514,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$DeclareLocalSymbolsPhase$1 extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
                     public enterBlock(arg0: jdk.nashorn.internal.ir.Block): boolean
                     public static class: java.lang.Class<any>
                 }
@@ -4528,7 +4546,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class ApplySpecialization$1 extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
                     public enterCallNode(arg0: jdk.nashorn.internal.ir.CallNode): boolean
                     public static class: java.lang.Class<any>
                 }
@@ -4541,9 +4559,9 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 abstract class ReplaceCompileUnits extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
-                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Node
-                    public leaveLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode<any>): jdk.nashorn.internal.ir.Node
-                    public leaveObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode): jdk.nashorn.internal.ir.Node
+                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Node
+                    public leaveLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode<any> | jdk.nashorn.internal.ir.LiteralNode$$Lambda<any>): jdk.nashorn.internal.ir.Node
+                    public leaveObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode | jdk.nashorn.internal.ir.ObjectNode$$Lambda): jdk.nashorn.internal.ir.Node
                     public static class: java.lang.Class<any>
                 }
                 abstract class CompilerConstants$FieldAccess extends jdk.nashorn.internal.codegen.CompilerConstants$Access {
@@ -4650,15 +4668,15 @@ declare namespace jdk {
                     public enterExpressionStatement(arg0: jdk.nashorn.internal.ir.ExpressionStatement): boolean
                     protected leaveDefault(arg0: jdk.nashorn.internal.ir.Node): jdk.nashorn.internal.ir.Node
                     public enterForNode(arg0: jdk.nashorn.internal.ir.ForNode): boolean
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
                     public enterGetSplitState(arg0: jdk.nashorn.internal.ir.GetSplitState): boolean
                     public enterIdentNode(arg0: jdk.nashorn.internal.ir.IdentNode): boolean
                     public enterIfNode(arg0: jdk.nashorn.internal.ir.IfNode): boolean
                     public enterIndexNode(arg0: jdk.nashorn.internal.ir.IndexNode): boolean
                     public enterJoinPredecessorExpression(arg0: jdk.nashorn.internal.ir.JoinPredecessorExpression): boolean
                     public enterJumpToInlinedFinally(arg0: jdk.nashorn.internal.ir.JumpToInlinedFinally): boolean
-                    public enterLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode<any>): boolean
-                    public enterObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode): boolean
+                    public enterLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode<any> | jdk.nashorn.internal.ir.LiteralNode$$Lambda<any>): boolean
+                    public enterObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode | jdk.nashorn.internal.ir.ObjectNode$$Lambda): boolean
                     public enterPropertyNode(arg0: jdk.nashorn.internal.ir.PropertyNode): boolean
                     public enterReturnNode(arg0: jdk.nashorn.internal.ir.ReturnNode): boolean
                     public enterRuntimeNode(arg0: jdk.nashorn.internal.ir.RuntimeNode): boolean
@@ -4672,7 +4690,7 @@ declare namespace jdk {
                     public enterWhileNode(arg0: jdk.nashorn.internal.ir.WhileNode): boolean
                     public enterWithNode(arg0: jdk.nashorn.internal.ir.WithNode): boolean
                     public leaveBlock(arg0: jdk.nashorn.internal.ir.Block): jdk.nashorn.internal.ir.Node
-                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Node
+                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Node
                     public static class: java.lang.Class<any>
                 }
                 class ClassEmitter$2 implements java.security.PrivilegedAction<jdk.nashorn.internal.runtime.Context> {
@@ -4681,8 +4699,8 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class Splitter$1 extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
-                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Node
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
+                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Node
                     public static class: java.lang.Class<any>
                 }
                 class CodeGenerator$33 {
@@ -4740,13 +4758,13 @@ declare namespace jdk {
                     public leaveExpressionStatement(arg0: jdk.nashorn.internal.ir.ExpressionStatement): jdk.nashorn.internal.ir.Node
                     public leaveBlockStatement(arg0: jdk.nashorn.internal.ir.BlockStatement): jdk.nashorn.internal.ir.Node
                     public leaveForNode(arg0: jdk.nashorn.internal.ir.ForNode): jdk.nashorn.internal.ir.Node
-                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Node
+                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Node
                     public leaveIfNode(arg0: jdk.nashorn.internal.ir.IfNode): jdk.nashorn.internal.ir.Node
                     public leaveIN(arg0: jdk.nashorn.internal.ir.BinaryNode): jdk.nashorn.internal.ir.Node
                     public leaveINSTANCEOF(arg0: jdk.nashorn.internal.ir.BinaryNode): jdk.nashorn.internal.ir.Node
                     public leaveLabelNode(arg0: jdk.nashorn.internal.ir.LabelNode): jdk.nashorn.internal.ir.Node
                     public leaveReturnNode(arg0: jdk.nashorn.internal.ir.ReturnNode): jdk.nashorn.internal.ir.Node
-                    public leaveCaseNode(arg0: jdk.nashorn.internal.ir.CaseNode): jdk.nashorn.internal.ir.Node
+                    public leaveCaseNode(arg0: jdk.nashorn.internal.ir.CaseNode | jdk.nashorn.internal.ir.CaseNode$$Lambda): jdk.nashorn.internal.ir.Node
                     public leaveSwitchNode(arg0: jdk.nashorn.internal.ir.SwitchNode): jdk.nashorn.internal.ir.Node
                     public leaveThrowNode(arg0: jdk.nashorn.internal.ir.ThrowNode): jdk.nashorn.internal.ir.Node
                     public leaveTryNode(arg0: jdk.nashorn.internal.ir.TryNode): jdk.nashorn.internal.ir.Node
@@ -4772,7 +4790,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class Lower$3 extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
                     public leaveThrowNode(arg0: jdk.nashorn.internal.ir.ThrowNode): jdk.nashorn.internal.ir.Node
                     public leaveBreakNode(arg0: jdk.nashorn.internal.ir.BreakNode): jdk.nashorn.internal.ir.Node
                     public leaveContinueNode(arg0: jdk.nashorn.internal.ir.ContinueNode): jdk.nashorn.internal.ir.Node
@@ -5104,17 +5122,17 @@ declare namespace jdk {
                     public leaveContinueNode(arg0: jdk.nashorn.internal.ir.ContinueNode): jdk.nashorn.internal.ir.Node
                     public leaveExpressionStatement(arg0: jdk.nashorn.internal.ir.ExpressionStatement): jdk.nashorn.internal.ir.Node
                     public leaveForNode(arg0: jdk.nashorn.internal.ir.ForNode): jdk.nashorn.internal.ir.Node
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
                     public leaveIdentNode(arg0: jdk.nashorn.internal.ir.IdentNode): jdk.nashorn.internal.ir.Node
                     public leaveIfNode(arg0: jdk.nashorn.internal.ir.IfNode): jdk.nashorn.internal.ir.Node
                     public leaveIndexNode(arg0: jdk.nashorn.internal.ir.IndexNode): jdk.nashorn.internal.ir.Node
                     public leaveJumpToInlinedFinally(arg0: jdk.nashorn.internal.ir.JumpToInlinedFinally): jdk.nashorn.internal.ir.Node
-                    public enterLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode): boolean
-                    public enterObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode): boolean
+                    public enterLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode | jdk.nashorn.internal.ir.LiteralNode$$Lambda): boolean
+                    public enterObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode | jdk.nashorn.internal.ir.ObjectNode$$Lambda): boolean
                     public leavePropertyNode(arg0: jdk.nashorn.internal.ir.PropertyNode): jdk.nashorn.internal.ir.Node
                     public leaveReturnNode(arg0: jdk.nashorn.internal.ir.ReturnNode): jdk.nashorn.internal.ir.Node
                     public leaveRuntimeNode(arg0: jdk.nashorn.internal.ir.RuntimeNode): jdk.nashorn.internal.ir.Node
-                    public enterSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode): boolean
+                    public enterSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode | jdk.nashorn.internal.ir.SplitNode$$Lambda): boolean
                     public leaveSwitchNode(arg0: jdk.nashorn.internal.ir.SwitchNode): jdk.nashorn.internal.ir.Node
                     public leaveThrowNode(arg0: jdk.nashorn.internal.ir.ThrowNode): jdk.nashorn.internal.ir.Node
                     public leaveTryNode(arg0: jdk.nashorn.internal.ir.TryNode): jdk.nashorn.internal.ir.Node
@@ -5178,7 +5196,7 @@ declare namespace jdk {
                     public enterCatchNode(arg0: jdk.nashorn.internal.ir.CatchNode): boolean
                     public enterExpressionStatement(arg0: jdk.nashorn.internal.ir.ExpressionStatement): boolean
                     public enterForNode(arg0: jdk.nashorn.internal.ir.ForNode): boolean
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
                     public enterIfNode(arg0: jdk.nashorn.internal.ir.IfNode): boolean
                     public enterIndexNode(arg0: jdk.nashorn.internal.ir.IndexNode): boolean
                     public enterTernaryNode(arg0: jdk.nashorn.internal.ir.TernaryNode): boolean
@@ -5186,12 +5204,12 @@ declare namespace jdk {
                     public enterVarNode(arg0: jdk.nashorn.internal.ir.VarNode): boolean
                     public enterWhileNode(arg0: jdk.nashorn.internal.ir.WhileNode): boolean
                     protected leaveDefault(arg0: jdk.nashorn.internal.ir.Node): jdk.nashorn.internal.ir.Node
-                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Node
+                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Node
                     public leaveIdentNode(arg0: jdk.nashorn.internal.ir.IdentNode): jdk.nashorn.internal.ir.Node
                     public static class: java.lang.Class<any>
                 }
                 class Lower$2 extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
-                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Node
+                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Node
                     public leaveDefault(arg0: jdk.nashorn.internal.ir.Node): jdk.nashorn.internal.ir.Node
                     public static class: java.lang.Class<any>
                 }
@@ -5237,6 +5255,9 @@ declare namespace jdk {
                     protected getAllocatorClass(): java.lang.Class<jdk.nashorn.internal.runtime.ScriptObject>
                     protected loadValue(arg0: T, arg1: jdk.nashorn.internal.codegen.types.Type): void
                     public static class: java.lang.Class<any>
+                }
+                abstract class ObjectCreator$$Lambda<T> implements jdk.nashorn.internal.codegen.CodeGenerator$SplitLiteralCreator {
+                    protected propertyMap: jdk.nashorn.internal.runtime.PropertyMap
                 }
                 class Lower$1 extends jdk.nashorn.internal.ir.BlockLexicalContext {
                     public popStatements(): java.util.List<jdk.nashorn.internal.ir.Statement>
@@ -5345,6 +5366,9 @@ declare namespace jdk {
                 class ScriptingFunctions$1 implements java.lang.Runnable {
                     public run(): void
                     public static class: java.lang.Class<any>
+                }
+                class ScriptingFunctions$1$$Lambda implements java.lang.Runnable {
+                    public (): void
                 }
                 class PropertyHashMap implements java.util.Map<java.lang.String, jdk.nashorn.internal.runtime.Property> {
                     public static EMPTY_HASHMAP: jdk.nashorn.internal.runtime.PropertyHashMap
@@ -5536,6 +5560,9 @@ declare namespace jdk {
                     public newThread(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda): java.lang.Thread
                     public static class: java.lang.Class<any>
                 }
+                class RecompilableScriptFunctionData$2$$Lambda implements java.util.concurrent.ThreadFactory {
+                    public (arg0: java.lang.Runnable | java.lang.Runnable$$Lambda): java.lang.Thread
+                }
                 class ScriptFunction$Bound extends jdk.nashorn.internal.runtime.ScriptFunction {
                     protected getTargetFunction(): jdk.nashorn.internal.runtime.ScriptFunction
                     public static class: java.lang.Class<any>
@@ -5567,8 +5594,8 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class FunctionInitializer implements java.io.Serializable {
-                    public constructor(arg0: jdk.nashorn.internal.ir.FunctionNode)
-                    public constructor(arg0: jdk.nashorn.internal.ir.FunctionNode, arg1: java.util.Map<java.lang.Integer, jdk.nashorn.internal.codegen.types.Type>)
+                    public constructor(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda)
+                    public constructor(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda, arg1: java.util.Map<java.lang.Integer, jdk.nashorn.internal.codegen.types.Type>)
                     public getClassName(): string
                     public getMethodType(): java.lang.invoke.MethodType
                     public getFlags(): int
@@ -7526,7 +7553,7 @@ declare namespace jdk {
                 }
                 class RecompilableScriptFunctionData extends jdk.nashorn.internal.runtime.ScriptFunctionData implements jdk.nashorn.internal.runtime.logging.Loggable {
                     public static RECOMPILATION_PREFIX: string
-                    public constructor(arg0: jdk.nashorn.internal.ir.FunctionNode, arg1: jdk.nashorn.internal.runtime.CodeInstaller, arg2: jdk.nashorn.internal.runtime.AllocationStrategy, arg3: java.util.Map<java.lang.Integer, jdk.nashorn.internal.runtime.RecompilableScriptFunctionData>, arg4: java.util.Map<java.lang.String, java.lang.Integer>, arg5: java.util.Set<java.lang.String>)
+                    public constructor(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda, arg1: jdk.nashorn.internal.runtime.CodeInstaller, arg2: jdk.nashorn.internal.runtime.AllocationStrategy, arg3: java.util.Map<java.lang.Integer, jdk.nashorn.internal.runtime.RecompilableScriptFunctionData>, arg4: java.util.Map<java.lang.String, java.lang.Integer>, arg5: java.util.Set<java.lang.String>)
                     public getLogger(): jdk.nashorn.internal.runtime.logging.DebugLogger
                     public initLogger(arg0: jdk.nashorn.internal.runtime.Context): jdk.nashorn.internal.runtime.logging.DebugLogger
                     public hasInternalSymbol(arg0: string): boolean
@@ -7539,16 +7566,16 @@ declare namespace jdk {
                     public toStringVerbose(): string
                     public getFunctionName(): string
                     public inDynamicContext(): boolean
-                    public setCachedAst(arg0: jdk.nashorn.internal.ir.FunctionNode): void
-                    public initializeCode(arg0: jdk.nashorn.internal.ir.FunctionNode): void
+                    public setCachedAst(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): void
+                    public initializeCode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): void
                     public getReturnType(arg0: java.lang.invoke.MethodType, arg1: jdk.nashorn.internal.runtime.ScriptObject): java.lang.Class<any>
                     public needsCallee(): boolean
                     public getFunctionFlags(): int
                     public getFunctionNodeId(): int
                     public getSource(): jdk.nashorn.internal.runtime.Source
                     public getScriptFunctionData(arg0: int): jdk.nashorn.internal.runtime.RecompilableScriptFunctionData
-                    public isGlobalSymbol(arg0: jdk.nashorn.internal.ir.FunctionNode, arg1: string): boolean
-                    public restoreFlags(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.FunctionNode
+                    public isGlobalSymbol(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda, arg1: string): boolean
+                    public restoreFlags(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.FunctionNode
                     public static class: java.lang.Class<any>
                 }
                 class Context$6 implements java.security.PrivilegedAction<jdk.nashorn.internal.runtime.ScriptLoader> {
@@ -7669,6 +7696,9 @@ declare namespace jdk {
                         public convert(arg0: java.lang.Class): jdk.nashorn.internal.runtime.arrays.ArrayData
                         public copy(): jdk.nashorn.internal.runtime.arrays.ArrayData
                         public static class: java.lang.Class<any>
+                    }
+                    class ObjectArrayData$$Lambda extends jdk.nashorn.internal.runtime.arrays.ContinuousArrayData implements jdk.nashorn.internal.runtime.arrays.AnyElements {
+                        public (): java.lang.Class<any>
                     }
                     class UndefinedArrayFilter extends jdk.nashorn.internal.runtime.arrays.ArrayFilter {
                         public copy(): jdk.nashorn.internal.runtime.arrays.ArrayData
@@ -8538,7 +8568,7 @@ declare namespace jdk {
                     public leaveTryNode(arg0: jdk.nashorn.internal.ir.TryNode): jdk.nashorn.internal.ir.Node
                     public enterBlock(arg0: jdk.nashorn.internal.ir.Block): boolean
                     public leaveBlock(arg0: jdk.nashorn.internal.ir.Block): jdk.nashorn.internal.ir.Node
-                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Node
+                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Node
                     protected leaveDefault(arg0: jdk.nashorn.internal.ir.Node): jdk.nashorn.internal.ir.Node
                     public static class: java.lang.Class<any>
                 }
@@ -8643,6 +8673,9 @@ declare namespace jdk {
                     public run(): void
                     public static class: java.lang.Class<any>
                 }
+                class RecompilableScriptFunctionData$1$$Lambda implements java.lang.Runnable {
+                    public (): void
+                }
                 class Context$1 implements java.security.PrivilegedAction<jdk.nashorn.internal.runtime.StructureLoader> {
                     public run(): jdk.nashorn.internal.runtime.StructureLoader
                     public run(): java.lang.Object
@@ -8701,6 +8734,9 @@ declare namespace jdk {
                     class Bootstrap$1 implements jdk.internal.dynalink.GuardedInvocationFilter {
                         public filter(arg0: jdk.internal.dynalink.linker.GuardedInvocation, arg1: jdk.internal.dynalink.linker.LinkRequest, arg2: jdk.internal.dynalink.linker.LinkerServices): jdk.internal.dynalink.linker.GuardedInvocation
                         public static class: java.lang.Class<any>
+                    }
+                    class Bootstrap$1$$Lambda implements jdk.internal.dynalink.GuardedInvocationFilter {
+                        public (arg0: jdk.internal.dynalink.linker.GuardedInvocation, arg1: jdk.internal.dynalink.linker.LinkRequest, arg2: jdk.internal.dynalink.linker.LinkerServices): jdk.internal.dynalink.linker.GuardedInvocation
                     }
                     class ReflectionCheckLinker implements jdk.internal.dynalink.linker.TypeBasedGuardingDynamicLinker {
                         public canLinkType(arg0: java.lang.Class<any>): boolean
@@ -8837,6 +8873,9 @@ declare namespace jdk {
                         public convertToType(arg0: java.lang.Class<any>, arg1: java.lang.Class<any>): jdk.internal.dynalink.linker.GuardedTypeConversion
                         public static class: java.lang.Class<any>
                     }
+                    class NashornBottomLinker$$Lambda implements jdk.internal.dynalink.linker.GuardingDynamicLinker , jdk.internal.dynalink.linker.GuardingTypeConverterFactory {
+                        public (arg0: jdk.internal.dynalink.linker.LinkRequest, arg1: jdk.internal.dynalink.linker.LinkerServices): jdk.internal.dynalink.linker.GuardedInvocation
+                    }
                     class NashornBeansLinker$NashornBeansLinkerServices implements jdk.internal.dynalink.linker.LinkerServices {
                         public asType(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.invoke.MethodType): java.lang.invoke.MethodHandle
                         public asTypeLosslessReturn(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.invoke.MethodType): java.lang.invoke.MethodHandle
@@ -8871,9 +8910,15 @@ declare namespace jdk {
                         public compareConversion(arg0: java.lang.Class<any>, arg1: java.lang.Class<any>, arg2: java.lang.Class<any>): jdk.internal.dynalink.linker.ConversionComparator$Comparison
                         public static class: java.lang.Class<any>
                     }
+                    class NashornPrimitiveLinker$$Lambda implements jdk.internal.dynalink.linker.TypeBasedGuardingDynamicLinker , jdk.internal.dynalink.linker.GuardingTypeConverterFactory , jdk.internal.dynalink.linker.ConversionComparator {
+                        public (arg0: java.lang.Class<any>): boolean
+                    }
                     class Bootstrap$2 implements jdk.internal.dynalink.linker.MethodTypeConversionStrategy {
                         public asType(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.invoke.MethodType): java.lang.invoke.MethodHandle
                         public static class: java.lang.Class<any>
+                    }
+                    class Bootstrap$2$$Lambda implements jdk.internal.dynalink.linker.MethodTypeConversionStrategy {
+                        public (arg0: java.lang.invoke.MethodHandle, arg1: java.lang.invoke.MethodType): java.lang.invoke.MethodHandle
                     }
                     class Bootstrap {
                         public static BOOTSTRAP: jdk.nashorn.internal.codegen.CompilerConstants$Call
@@ -8932,6 +8977,9 @@ declare namespace jdk {
                         public compareConversion(arg0: java.lang.Class<any>, arg1: java.lang.Class<any>, arg2: java.lang.Class<any>): jdk.internal.dynalink.linker.ConversionComparator$Comparison
                         public static class: java.lang.Class<any>
                     }
+                    class NashornLinker$$Lambda implements jdk.internal.dynalink.linker.TypeBasedGuardingDynamicLinker , jdk.internal.dynalink.linker.GuardingTypeConverterFactory , jdk.internal.dynalink.linker.ConversionComparator {
+                        public (arg0: java.lang.Class<any>): boolean
+                    }
                     class JavaArgumentConverters {
                         public static class: java.lang.Class<any>
                     }
@@ -8964,6 +9012,9 @@ declare namespace jdk {
                         public static getGuardedInvocation(arg0: jdk.internal.dynalink.linker.GuardingDynamicLinker | jdk.internal.dynalink.linker.GuardingDynamicLinker$$Lambda, arg1: jdk.internal.dynalink.linker.LinkRequest, arg2: jdk.internal.dynalink.linker.LinkerServices): jdk.internal.dynalink.linker.GuardedInvocation
                         public static class: java.lang.Class<any>
                     }
+                    class NashornBeansLinker$$Lambda implements jdk.internal.dynalink.linker.GuardingDynamicLinker {
+                        public constructor()
+                    }
                     class JavaAdapterClassLoader$2$1 implements java.security.PrivilegedAction<jdk.nashorn.internal.runtime.Context> {
                         public run(): jdk.nashorn.internal.runtime.Context
                         public run(): java.lang.Object
@@ -8972,6 +9023,9 @@ declare namespace jdk {
                     class LinkerCallSite$ProfilingLinkerCallSite$ProfileDumper implements java.lang.Runnable {
                         public run(): void
                         public static class: java.lang.Class<any>
+                    }
+                    class LinkerCallSite$ProfilingLinkerCallSite$ProfileDumper$$Lambda implements java.lang.Runnable {
+                        public (): void
                     }
                     class LinkerCallSite$1 implements java.util.Comparator<java.util.Map$Entry<java.lang.String, java.util.concurrent.atomic.AtomicInteger>> {
                         public compare(arg0: java.util.Map$Entry<java.lang.String, java.util.concurrent.atomic.AtomicInteger>, arg1: java.util.Map$Entry<java.lang.String, java.util.concurrent.atomic.AtomicInteger>): int
@@ -9179,7 +9233,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class RecompilableScriptFunctionData$4 extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
                     public static class: java.lang.Class<any>
                 }
                 interface Context$MultiGlobalCompiledScript {
@@ -9487,6 +9541,9 @@ declare namespace jdk {
                     public getFunction(arg0: jdk.nashorn.internal.objects.Global): jdk.nashorn.internal.runtime.ScriptFunction
                     public static class: java.lang.Class<any>
                 }
+                class Context$2$$Lambda implements jdk.nashorn.internal.runtime.Context$MultiGlobalCompiledScript {
+                    public (arg0: jdk.nashorn.internal.objects.Global): jdk.nashorn.internal.runtime.ScriptFunction
+                }
                 class CodeStore$DirectoryCodeStore$2 implements java.security.PrivilegedExceptionAction<jdk.nashorn.internal.runtime.StoredScript> {
                     public run(): jdk.nashorn.internal.runtime.StoredScript
                     public run(): java.lang.Object
@@ -9513,6 +9570,9 @@ declare namespace jdk {
                 class ScriptingFunctions$2 implements java.lang.Runnable {
                     public run(): void
                     public static class: java.lang.Class<any>
+                }
+                class ScriptingFunctions$2$$Lambda implements java.lang.Runnable {
+                    public (): void
                 }
                 class ScriptRuntime$2 {
                     public static class: java.lang.Class<any>
@@ -9841,6 +9901,9 @@ declare namespace jdk {
                         public run(): void
                         public static class: java.lang.Class<any>
                     }
+                    class PrintVisitor$1$$Lambda implements java.lang.Runnable {
+                        public (): void
+                    }
                     class ObjectSizeCalculator$ArrayElementsVisitor {
                         public visit(arg0: jdk.nashorn.internal.ir.debug.ObjectSizeCalculator): void
                         public static class: java.lang.Class<any>
@@ -9941,24 +10004,24 @@ declare namespace jdk {
                         public enterBinaryNode(arg0: jdk.nashorn.internal.ir.BinaryNode): boolean
                         public enterBreakNode(arg0: jdk.nashorn.internal.ir.BreakNode): boolean
                         public enterCallNode(arg0: jdk.nashorn.internal.ir.CallNode): boolean
-                        public enterCaseNode(arg0: jdk.nashorn.internal.ir.CaseNode): boolean
+                        public enterCaseNode(arg0: jdk.nashorn.internal.ir.CaseNode | jdk.nashorn.internal.ir.CaseNode$$Lambda): boolean
                         public enterCatchNode(arg0: jdk.nashorn.internal.ir.CatchNode): boolean
                         public enterContinueNode(arg0: jdk.nashorn.internal.ir.ContinueNode): boolean
                         public enterEmptyNode(arg0: jdk.nashorn.internal.ir.EmptyNode): boolean
                         public enterExpressionStatement(arg0: jdk.nashorn.internal.ir.ExpressionStatement): boolean
                         public enterBlockStatement(arg0: jdk.nashorn.internal.ir.BlockStatement): boolean
                         public enterForNode(arg0: jdk.nashorn.internal.ir.ForNode): boolean
-                        public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
+                        public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
                         public enterIdentNode(arg0: jdk.nashorn.internal.ir.IdentNode): boolean
                         public enterIfNode(arg0: jdk.nashorn.internal.ir.IfNode): boolean
                         public enterIndexNode(arg0: jdk.nashorn.internal.ir.IndexNode): boolean
                         public enterLabelNode(arg0: jdk.nashorn.internal.ir.LabelNode): boolean
-                        public enterLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode): boolean
-                        public enterObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode): boolean
+                        public enterLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode | jdk.nashorn.internal.ir.LiteralNode$$Lambda): boolean
+                        public enterObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode | jdk.nashorn.internal.ir.ObjectNode$$Lambda): boolean
                         public enterPropertyNode(arg0: jdk.nashorn.internal.ir.PropertyNode): boolean
                         public enterReturnNode(arg0: jdk.nashorn.internal.ir.ReturnNode): boolean
                         public enterRuntimeNode(arg0: jdk.nashorn.internal.ir.RuntimeNode): boolean
-                        public enterSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode): boolean
+                        public enterSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode | jdk.nashorn.internal.ir.SplitNode$$Lambda): boolean
                         public enterSwitchNode(arg0: jdk.nashorn.internal.ir.SwitchNode): boolean
                         public enterTernaryNode(arg0: jdk.nashorn.internal.ir.TernaryNode): boolean
                         public enterThrowNode(arg0: jdk.nashorn.internal.ir.ThrowNode): boolean
@@ -10046,11 +10109,11 @@ declare namespace jdk {
                         public enterUnaryNode(arg0: jdk.nashorn.internal.ir.UnaryNode): boolean
                         public enterExpressionStatement(arg0: jdk.nashorn.internal.ir.ExpressionStatement): boolean
                         public enterForNode(arg0: jdk.nashorn.internal.ir.ForNode): boolean
-                        public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
+                        public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
                         public enterIfNode(arg0: jdk.nashorn.internal.ir.IfNode): boolean
                         public enterLabelNode(arg0: jdk.nashorn.internal.ir.LabelNode): boolean
-                        public enterSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode): boolean
-                        public leaveSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode): jdk.nashorn.internal.ir.Node
+                        public enterSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode | jdk.nashorn.internal.ir.SplitNode$$Lambda): boolean
+                        public leaveSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode | jdk.nashorn.internal.ir.SplitNode$$Lambda): jdk.nashorn.internal.ir.Node
                         public enterSwitchNode(arg0: jdk.nashorn.internal.ir.SwitchNode): boolean
                         public enterTryNode(arg0: jdk.nashorn.internal.ir.TryNode): boolean
                         public enterVarNode(arg0: jdk.nashorn.internal.ir.VarNode): boolean
@@ -10196,8 +10259,8 @@ declare namespace jdk {
                         public leaveBreakNode(arg0: jdk.nashorn.internal.ir.BreakNode): jdk.nashorn.internal.ir.Node
                         public enterCallNode(arg0: jdk.nashorn.internal.ir.CallNode): boolean
                         public leaveCallNode(arg0: jdk.nashorn.internal.ir.CallNode): jdk.nashorn.internal.ir.Node
-                        public enterCaseNode(arg0: jdk.nashorn.internal.ir.CaseNode): boolean
-                        public leaveCaseNode(arg0: jdk.nashorn.internal.ir.CaseNode): jdk.nashorn.internal.ir.Node
+                        public enterCaseNode(arg0: jdk.nashorn.internal.ir.CaseNode | jdk.nashorn.internal.ir.CaseNode$$Lambda): boolean
+                        public leaveCaseNode(arg0: jdk.nashorn.internal.ir.CaseNode | jdk.nashorn.internal.ir.CaseNode$$Lambda): jdk.nashorn.internal.ir.Node
                         public enterCatchNode(arg0: jdk.nashorn.internal.ir.CatchNode): boolean
                         public leaveCatchNode(arg0: jdk.nashorn.internal.ir.CatchNode): jdk.nashorn.internal.ir.Node
                         public enterContinueNode(arg0: jdk.nashorn.internal.ir.ContinueNode): boolean
@@ -10210,8 +10273,8 @@ declare namespace jdk {
                         public leaveBlockStatement(arg0: jdk.nashorn.internal.ir.BlockStatement): jdk.nashorn.internal.ir.Node
                         public enterForNode(arg0: jdk.nashorn.internal.ir.ForNode): boolean
                         public leaveForNode(arg0: jdk.nashorn.internal.ir.ForNode): jdk.nashorn.internal.ir.Node
-                        public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
-                        public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Node
+                        public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
+                        public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Node
                         public enterGetSplitState(arg0: jdk.nashorn.internal.ir.GetSplitState): boolean
                         public leaveGetSplitState(arg0: jdk.nashorn.internal.ir.GetSplitState): jdk.nashorn.internal.ir.Node
                         public enterIdentNode(arg0: jdk.nashorn.internal.ir.IdentNode): boolean
@@ -10224,10 +10287,10 @@ declare namespace jdk {
                         public leaveJumpToInlinedFinally(arg0: jdk.nashorn.internal.ir.JumpToInlinedFinally): jdk.nashorn.internal.ir.Node
                         public enterLabelNode(arg0: jdk.nashorn.internal.ir.LabelNode): boolean
                         public leaveLabelNode(arg0: jdk.nashorn.internal.ir.LabelNode): jdk.nashorn.internal.ir.Node
-                        public enterLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode<any>): boolean
-                        public leaveLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode<any>): jdk.nashorn.internal.ir.Node
-                        public enterObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode): boolean
-                        public leaveObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode): jdk.nashorn.internal.ir.Node
+                        public enterLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode<any> | jdk.nashorn.internal.ir.LiteralNode$$Lambda<any>): boolean
+                        public leaveLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode<any> | jdk.nashorn.internal.ir.LiteralNode$$Lambda<any>): jdk.nashorn.internal.ir.Node
+                        public enterObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode | jdk.nashorn.internal.ir.ObjectNode$$Lambda): boolean
+                        public leaveObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode | jdk.nashorn.internal.ir.ObjectNode$$Lambda): jdk.nashorn.internal.ir.Node
                         public enterPropertyNode(arg0: jdk.nashorn.internal.ir.PropertyNode): boolean
                         public leavePropertyNode(arg0: jdk.nashorn.internal.ir.PropertyNode): jdk.nashorn.internal.ir.Node
                         public enterReturnNode(arg0: jdk.nashorn.internal.ir.ReturnNode): boolean
@@ -10236,8 +10299,8 @@ declare namespace jdk {
                         public leaveRuntimeNode(arg0: jdk.nashorn.internal.ir.RuntimeNode): jdk.nashorn.internal.ir.Node
                         public enterSetSplitState(arg0: jdk.nashorn.internal.ir.SetSplitState): boolean
                         public leaveSetSplitState(arg0: jdk.nashorn.internal.ir.SetSplitState): jdk.nashorn.internal.ir.Node
-                        public enterSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode): boolean
-                        public leaveSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode): jdk.nashorn.internal.ir.Node
+                        public enterSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode | jdk.nashorn.internal.ir.SplitNode$$Lambda): boolean
+                        public leaveSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode | jdk.nashorn.internal.ir.SplitNode$$Lambda): jdk.nashorn.internal.ir.Node
                         public enterSplitReturn(arg0: jdk.nashorn.internal.ir.SplitReturn): boolean
                         public leaveSplitReturn(arg0: jdk.nashorn.internal.ir.SplitReturn): jdk.nashorn.internal.ir.Node
                         public enterSwitchNode(arg0: jdk.nashorn.internal.ir.SwitchNode): boolean
@@ -10281,6 +10344,9 @@ declare namespace jdk {
                 class UnaryNode$1 implements java.lang.Runnable {
                     public run(): void
                     public static class: java.lang.Class<any>
+                }
+                class UnaryNode$1$$Lambda implements java.lang.Runnable {
+                    public (): void
                 }
                 class Symbol implements java.lang.Comparable<jdk.nashorn.internal.ir.Symbol> , java.lang.Cloneable , java.io.Serializable {
                     public static IS_GLOBAL: int
@@ -10458,6 +10524,9 @@ declare namespace jdk {
                     public clearFlag(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: int): jdk.nashorn.internal.ir.LexicalContextNode
                     public static class: java.lang.Class<any>
                 }
+                class FunctionNode$$Lambda extends jdk.nashorn.internal.ir.LexicalContextExpression implements jdk.nashorn.internal.ir.Flags<jdk.nashorn.internal.ir.FunctionNode> , jdk.nashorn.internal.ir.CompileUnitHolder {
+                    public static FUNCTION_TYPE: jdk.nashorn.internal.codegen.types.Type
+                }
                 class LexicalContextNode$Acceptor {
                     public constructor()
                     public static class: java.lang.Class<any>
@@ -10502,6 +10571,9 @@ declare namespace jdk {
                     public setSplitRanges(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: java.util.List<jdk.nashorn.internal.ir.Splittable$SplitRange>): jdk.nashorn.internal.ir.ObjectNode
                     public getSplitRanges(): java.util.List<jdk.nashorn.internal.ir.Splittable$SplitRange>
                     public static class: java.lang.Class<any>
+                }
+                class ObjectNode$$Lambda extends jdk.nashorn.internal.ir.Expression implements jdk.nashorn.internal.ir.LexicalContextNode , jdk.nashorn.internal.ir.Splittable {
+                    public constructor(arg0: long, arg1: int, arg2: java.util.List<jdk.nashorn.internal.ir.PropertyNode>)
                 }
                 interface JoinPredecessor {
                     setLocalVariableConversion(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: jdk.nashorn.internal.ir.LocalVariableConversion): jdk.nashorn.internal.ir.JoinPredecessor
@@ -10586,7 +10658,7 @@ declare namespace jdk {
                     setFlags(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: int): T
                 }
                 class SwitchNode extends jdk.nashorn.internal.ir.BreakableStatement {
-                    public constructor(arg0: int, arg1: long, arg2: int, arg3: jdk.nashorn.internal.ir.Expression, arg4: java.util.List<jdk.nashorn.internal.ir.CaseNode>, arg5: jdk.nashorn.internal.ir.CaseNode)
+                    public constructor(arg0: int, arg1: long, arg2: int, arg3: jdk.nashorn.internal.ir.Expression, arg4: java.util.List<jdk.nashorn.internal.ir.CaseNode>, arg5: jdk.nashorn.internal.ir.CaseNode | jdk.nashorn.internal.ir.CaseNode$$Lambda)
                     public ensureUniqueLabels(arg0: jdk.nashorn.internal.ir.LexicalContext): jdk.nashorn.internal.ir.Node
                     public isTerminal(): boolean
                     public accept(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.LexicalContext>): jdk.nashorn.internal.ir.Node
@@ -10594,7 +10666,7 @@ declare namespace jdk {
                     public getDefaultCase(): jdk.nashorn.internal.ir.CaseNode
                     public getCases(): java.util.List<jdk.nashorn.internal.ir.CaseNode>
                     public setCases(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: java.util.List<jdk.nashorn.internal.ir.CaseNode>): jdk.nashorn.internal.ir.SwitchNode
-                    public setCases(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: java.util.List<jdk.nashorn.internal.ir.CaseNode>, arg2: jdk.nashorn.internal.ir.CaseNode): jdk.nashorn.internal.ir.SwitchNode
+                    public setCases(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: java.util.List<jdk.nashorn.internal.ir.CaseNode>, arg2: jdk.nashorn.internal.ir.CaseNode | jdk.nashorn.internal.ir.CaseNode$$Lambda): jdk.nashorn.internal.ir.SwitchNode
                     public getExpression(): jdk.nashorn.internal.ir.Expression
                     public setExpression(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: jdk.nashorn.internal.ir.Expression): jdk.nashorn.internal.ir.SwitchNode
                     public getTag(): jdk.nashorn.internal.ir.Symbol
@@ -10662,15 +10734,15 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class PropertyNode extends jdk.nashorn.internal.ir.Node {
-                    public constructor(arg0: long, arg1: int, arg2: jdk.nashorn.internal.ir.PropertyKey | jdk.nashorn.internal.ir.PropertyKey$$Lambda, arg3: jdk.nashorn.internal.ir.Expression, arg4: jdk.nashorn.internal.ir.FunctionNode, arg5: jdk.nashorn.internal.ir.FunctionNode)
+                    public constructor(arg0: long, arg1: int, arg2: jdk.nashorn.internal.ir.PropertyKey | jdk.nashorn.internal.ir.PropertyKey$$Lambda, arg3: jdk.nashorn.internal.ir.Expression, arg4: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda, arg5: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda)
                     public getKeyName(): string
                     public accept(arg0: jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.LexicalContext>): jdk.nashorn.internal.ir.Node
                     public toString(arg0: java.lang.StringBuilder, arg1: boolean): void
                     public getGetter(): jdk.nashorn.internal.ir.FunctionNode
-                    public setGetter(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.PropertyNode
+                    public setGetter(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.PropertyNode
                     public getKey(): jdk.nashorn.internal.ir.Expression
                     public getSetter(): jdk.nashorn.internal.ir.FunctionNode
-                    public setSetter(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.PropertyNode
+                    public setSetter(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.PropertyNode
                     public getValue(): jdk.nashorn.internal.ir.Expression
                     public setValue(arg0: jdk.nashorn.internal.ir.Expression): jdk.nashorn.internal.ir.PropertyNode
                     public static class: java.lang.Class<any>
@@ -10708,15 +10780,18 @@ declare namespace jdk {
                 abstract class Statement extends jdk.nashorn.internal.ir.Node implements jdk.nashorn.internal.ir.Terminal {
                     public constructor(arg0: int, arg1: long, arg2: int)
                     protected constructor(arg0: int, arg1: long, arg2: int, arg3: int)
-                    protected constructor(arg0: jdk.nashorn.internal.ir.Statement)
+                    protected constructor(arg0: jdk.nashorn.internal.ir.Statement | jdk.nashorn.internal.ir.Statement$$Lambda)
                     public getLineNumber(): int
                     public isTerminal(): boolean
                     public hasGoto(): boolean
                     public hasTerminalFlags(): boolean
                     public static class: java.lang.Class<any>
                 }
+                abstract class Statement$$Lambda extends jdk.nashorn.internal.ir.Node implements jdk.nashorn.internal.ir.Terminal {
+                    public constructor(arg0: int, arg1: long, arg2: int)
+                }
                 class EmptyNode extends jdk.nashorn.internal.ir.Statement {
-                    public constructor(arg0: jdk.nashorn.internal.ir.Statement)
+                    public constructor(arg0: jdk.nashorn.internal.ir.Statement | jdk.nashorn.internal.ir.Statement$$Lambda)
                     public constructor(arg0: int, arg1: long, arg2: int)
                     public accept(arg0: jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.LexicalContext>): jdk.nashorn.internal.ir.Node
                     public toString(arg0: java.lang.StringBuilder, arg1: boolean): void
@@ -10759,6 +10834,9 @@ declare namespace jdk {
                     public getLocalVariableConversion(): jdk.nashorn.internal.ir.LocalVariableConversion
                     public getLabels(): java.util.List<jdk.nashorn.internal.codegen.Label>
                     public static class: java.lang.Class<any>
+                }
+                class CaseNode$$Lambda extends jdk.nashorn.internal.ir.Node implements jdk.nashorn.internal.ir.JoinPredecessor , jdk.nashorn.internal.ir.Labels , jdk.nashorn.internal.ir.Terminal {
+                    public constructor(arg0: long, arg1: int, arg2: jdk.nashorn.internal.ir.Expression, arg3: jdk.nashorn.internal.ir.Block)
                 }
                 class CatchNode extends jdk.nashorn.internal.ir.Statement {
                     public constructor(arg0: int, arg1: long, arg2: int, arg3: jdk.nashorn.internal.ir.IdentNode, arg4: jdk.nashorn.internal.ir.Expression, arg5: jdk.nashorn.internal.ir.Block, arg6: boolean)
@@ -10963,6 +11041,9 @@ declare namespace jdk {
                     public accept(arg0: jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.LexicalContext>): jdk.nashorn.internal.ir.Node
                     public static class: java.lang.Class<any>
                 }
+                abstract class LexicalContextExpression$$Lambda extends jdk.nashorn.internal.ir.Expression implements jdk.nashorn.internal.ir.LexicalContextNode {
+                    public (arg0: jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.LexicalContext>): jdk.nashorn.internal.ir.Node
+                }
                 class ThrowNode extends jdk.nashorn.internal.ir.Statement implements jdk.nashorn.internal.ir.JoinPredecessor {
                     public constructor(arg0: int, arg1: long, arg2: int, arg3: jdk.nashorn.internal.ir.Expression, arg4: boolean)
                     public isTerminal(): boolean
@@ -10997,8 +11078,8 @@ declare namespace jdk {
                     protected value: T
                     public static POSTSET_MARKER: java.lang.Object
                     protected constructor(arg0: long, arg1: int, arg2: T)
-                    protected constructor(arg0: jdk.nashorn.internal.ir.LiteralNode<T>)
-                    protected constructor(arg0: jdk.nashorn.internal.ir.LiteralNode<T>, arg1: T)
+                    protected constructor(arg0: jdk.nashorn.internal.ir.LiteralNode<T> | jdk.nashorn.internal.ir.LiteralNode$$Lambda<T>)
+                    protected constructor(arg0: jdk.nashorn.internal.ir.LiteralNode<T> | jdk.nashorn.internal.ir.LiteralNode$$Lambda<T>, arg1: T)
                     public initialize(arg0: jdk.nashorn.internal.ir.LexicalContext): jdk.nashorn.internal.ir.LiteralNode<any>
                     public isNull(): boolean
                     public getType(): jdk.nashorn.internal.codegen.types.Type
@@ -11034,6 +11115,9 @@ declare namespace jdk {
                     public static newInstance(arg0: long, arg1: int, arg2: jdk.nashorn.internal.ir.Expression[]): jdk.nashorn.internal.ir.LiteralNode<jdk.nashorn.internal.ir.Expression[]>
                     public static class: java.lang.Class<any>
                 }
+                abstract class LiteralNode$$Lambda<T> extends jdk.nashorn.internal.ir.Expression implements jdk.nashorn.internal.ir.PropertyKey {
+                    protected value: T
+                }
                 class LocalVariableConversion {
                     public constructor(arg0: jdk.nashorn.internal.ir.Symbol, arg1: jdk.nashorn.internal.codegen.types.Type, arg2: jdk.nashorn.internal.codegen.types.Type, arg3: jdk.nashorn.internal.ir.LocalVariableConversion)
                     public getFrom(): jdk.nashorn.internal.codegen.types.Type
@@ -11067,7 +11151,7 @@ declare namespace jdk {
                     public setFlag(arg0: jdk.nashorn.internal.ir.LexicalContextNode | jdk.nashorn.internal.ir.LexicalContextNode$$Lambda, arg1: int): void
                     public setBlockNeedsScope(arg0: jdk.nashorn.internal.ir.Block): void
                     public getFlags(arg0: jdk.nashorn.internal.ir.LexicalContextNode | jdk.nashorn.internal.ir.LexicalContextNode$$Lambda): int
-                    public getFunctionBody(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Block
+                    public getFunctionBody(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Block
                     public getAllNodes(): java.util.Iterator<jdk.nashorn.internal.ir.LexicalContextNode>
                     public getOutermostFunction(): jdk.nashorn.internal.ir.FunctionNode
                     public push<T extends jdk.nashorn.internal.ir.LexicalContextNode>(arg0: T): T
@@ -11091,7 +11175,7 @@ declare namespace jdk {
                     public getDefiningFunction<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: jdk.nashorn.internal.ir.Symbol): jdk.nashorn.internal.ir.FunctionNode
                     public isFunctionBody<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): boolean
                     public isSplitBody<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): boolean
-                    public getParentFunction<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.FunctionNode
+                    public getParentFunction<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.FunctionNode
                     public getScopeNestingLevelTo<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: jdk.nashorn.internal.ir.LexicalContextNode | jdk.nashorn.internal.ir.LexicalContextNode$$Lambda): int
                     public inLoop<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): boolean
                     public getCurrentLoop<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): jdk.nashorn.internal.ir.LoopNode
@@ -11100,7 +11184,7 @@ declare namespace jdk {
                     public getInlinedFinally<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: string): jdk.nashorn.internal.ir.Block
                     public getTryNodeForInlinedFinally<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: string): jdk.nashorn.internal.ir.TryNode
                     public findLabel<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: string): jdk.nashorn.internal.ir.LabelNode
-                    public isExternalTarget<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: jdk.nashorn.internal.ir.SplitNode, arg1: jdk.nashorn.internal.ir.BreakableNode): boolean
+                    public isExternalTarget<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: jdk.nashorn.internal.ir.SplitNode | jdk.nashorn.internal.ir.SplitNode$$Lambda, arg1: jdk.nashorn.internal.ir.BreakableNode): boolean
                     public inUnprotectedSwitchContext<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): boolean
                     public toString<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): string
                     public static class: java.lang.Class<any>
@@ -11214,8 +11298,8 @@ declare namespace jdk {
                 class BlockStatement extends jdk.nashorn.internal.ir.Statement {
                     public constructor(arg0: jdk.nashorn.internal.ir.Block)
                     public constructor(arg0: int, arg1: jdk.nashorn.internal.ir.Block)
-                    public static createReplacement(arg0: jdk.nashorn.internal.ir.Statement, arg1: java.util.List<jdk.nashorn.internal.ir.Statement>): jdk.nashorn.internal.ir.BlockStatement
-                    public static createReplacement(arg0: jdk.nashorn.internal.ir.Statement, arg1: int, arg2: java.util.List<jdk.nashorn.internal.ir.Statement>): jdk.nashorn.internal.ir.BlockStatement
+                    public static createReplacement(arg0: jdk.nashorn.internal.ir.Statement | jdk.nashorn.internal.ir.Statement$$Lambda, arg1: java.util.List<jdk.nashorn.internal.ir.Statement>): jdk.nashorn.internal.ir.BlockStatement
+                    public static createReplacement(arg0: jdk.nashorn.internal.ir.Statement | jdk.nashorn.internal.ir.Statement$$Lambda, arg1: int, arg2: java.util.List<jdk.nashorn.internal.ir.Statement>): jdk.nashorn.internal.ir.BlockStatement
                     public isTerminal(): boolean
                     public accept(arg0: jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.LexicalContext>): jdk.nashorn.internal.ir.Node
                     public toString(arg0: java.lang.StringBuilder, arg1: boolean): void
@@ -11381,6 +11465,9 @@ declare namespace jdk {
                     public initialize(arg0: jdk.nashorn.internal.ir.LexicalContext): jdk.nashorn.internal.ir.LiteralNode
                     public static class: java.lang.Class<any>
                 }
+                class LiteralNode$ArrayLiteralNode$$Lambda extends jdk.nashorn.internal.ir.LiteralNode<jdk.nashorn.internal.ir.Expression[]> implements jdk.nashorn.internal.ir.LexicalContextNode , jdk.nashorn.internal.ir.Splittable {
+                    protected constructor(arg0: long, arg1: int, arg2: jdk.nashorn.internal.ir.Expression[])
+                }
                 class SplitNode extends jdk.nashorn.internal.ir.LexicalContextStatement implements jdk.nashorn.internal.ir.CompileUnitHolder {
                     public constructor(arg0: string, arg1: jdk.nashorn.internal.ir.Block, arg2: jdk.nashorn.internal.codegen.CompileUnit)
                     public getBody(): jdk.nashorn.internal.ir.Block
@@ -11392,11 +11479,17 @@ declare namespace jdk {
                     public accept(arg0: jdk.nashorn.internal.ir.visitor.NodeVisitor): jdk.nashorn.internal.ir.Node
                     public static class: java.lang.Class<any>
                 }
+                class SplitNode$$Lambda extends jdk.nashorn.internal.ir.LexicalContextStatement implements jdk.nashorn.internal.ir.CompileUnitHolder {
+                    public constructor(arg0: string, arg1: jdk.nashorn.internal.ir.Block, arg2: jdk.nashorn.internal.codegen.CompileUnit)
+                }
                 abstract class LexicalContextStatement extends jdk.nashorn.internal.ir.Statement implements jdk.nashorn.internal.ir.LexicalContextNode {
                     protected constructor(arg0: int, arg1: long, arg2: int)
-                    protected constructor(arg0: jdk.nashorn.internal.ir.LexicalContextStatement)
+                    protected constructor(arg0: jdk.nashorn.internal.ir.LexicalContextStatement | jdk.nashorn.internal.ir.LexicalContextStatement$$Lambda)
                     public accept(arg0: jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.LexicalContext>): jdk.nashorn.internal.ir.Node
                     public static class: java.lang.Class<any>
+                }
+                abstract class LexicalContextStatement$$Lambda extends jdk.nashorn.internal.ir.Statement implements jdk.nashorn.internal.ir.LexicalContextNode {
+                    protected constructor(arg0: int, arg1: long, arg2: int)
                 }
                 class BlockLexicalContext extends jdk.nashorn.internal.ir.LexicalContext {
                     protected lastStatement: jdk.nashorn.internal.ir.Statement
@@ -11405,8 +11498,8 @@ declare namespace jdk {
                     protected popStatements<T extends jdk.nashorn.internal.ir.LexicalContextNode>(): java.util.List<jdk.nashorn.internal.ir.Statement>
                     protected afterSetStatements<T extends jdk.nashorn.internal.ir.LexicalContextNode>(arg0: jdk.nashorn.internal.ir.Block): jdk.nashorn.internal.ir.Block
                     public pop<T extends jdk.nashorn.internal.ir.Node>(arg0: T): T
-                    public appendStatement<T extends jdk.nashorn.internal.ir.Node>(arg0: jdk.nashorn.internal.ir.Statement): void
-                    public prependStatement<T extends jdk.nashorn.internal.ir.Node>(arg0: jdk.nashorn.internal.ir.Statement): jdk.nashorn.internal.ir.Node
+                    public appendStatement<T extends jdk.nashorn.internal.ir.Node>(arg0: jdk.nashorn.internal.ir.Statement | jdk.nashorn.internal.ir.Statement$$Lambda): void
+                    public prependStatement<T extends jdk.nashorn.internal.ir.Node>(arg0: jdk.nashorn.internal.ir.Statement | jdk.nashorn.internal.ir.Statement$$Lambda): jdk.nashorn.internal.ir.Node
                     public prependStatements<T extends jdk.nashorn.internal.ir.Node>(arg0: java.util.List<jdk.nashorn.internal.ir.Statement>): void
                     public getLastStatement<T extends jdk.nashorn.internal.ir.Node>(): jdk.nashorn.internal.ir.Statement
                     public static class: java.lang.Class<any>

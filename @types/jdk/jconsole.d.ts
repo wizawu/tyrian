@@ -43,9 +43,15 @@ declare namespace sun {
                 public run(): void
                 public static class: java.lang.Class<any>
             }
+            class CreateMBeanDialog$3$$Lambda implements java.lang.Runnable {
+                public (): void
+            }
             class OverviewTab$1$1 implements java.lang.Runnable {
                 public run(): void
                 public static class: java.lang.Class<any>
+            }
+            class OverviewTab$1$1$$Lambda implements java.lang.Runnable {
+                public (): void
             }
             namespace inspector {
                 class XOpenTypeViewer$XCompositeData extends sun.tools.jconsole.inspector.XOpenTypeViewer$XOpenTypeData {
@@ -171,6 +177,9 @@ declare namespace sun {
                     public run(): void
                     public static class: java.lang.Class<any>
                 }
+                class XPlottingViewer$2$1$$Lambda implements java.lang.Runnable {
+                    public (): void
+                }
                 class XTree$Token {
                     public constructor(arg0: string, arg1: string)
                     public getTokenType(): string
@@ -255,9 +264,15 @@ declare namespace sun {
                     public run(): void
                     public static class: java.lang.Class<any>
                 }
+                class XMBeanAttributes$2$$Lambda implements java.lang.Runnable {
+                    public (): void
+                }
                 class XMBeanNotifications$XMBeanNotificationsListener$1 implements java.lang.Runnable {
                     public run(): void
                     public static class: java.lang.Class<any>
+                }
+                class XMBeanNotifications$XMBeanNotificationsListener$1$$Lambda implements java.lang.Runnable {
+                    public (): void
                 }
                 class Utils {
                     public static getClass(arg0: string): java.lang.Class<any>
@@ -286,7 +301,7 @@ declare namespace sun {
                 }
                 class XTreeRenderer extends javax.swing.tree.DefaultTreeCellRenderer {
                     public constructor()
-                    public getTreeCellRendererComponent(arg0: javax.swing.JTree, arg1: java.lang.Object, arg2: boolean, arg3: boolean, arg4: boolean, arg5: int, arg6: boolean): java.awt.Component
+                    public getTreeCellRendererComponent(arg0: javax.swing.JTree | javax.swing.JTree$$Lambda, arg1: java.lang.Object, arg2: boolean, arg3: boolean, arg4: boolean, arg5: int, arg6: boolean): java.awt.Component
                     public static class: java.lang.Class<any>
                 }
                 class XTree$MBeanInfoNodesSwingWorker extends javax.swing.SwingWorker<java.lang.Object[], java.lang.Void> {
@@ -438,7 +453,7 @@ declare namespace sun {
                     public isReadable(arg0: int): boolean
                     public isCellError(arg0: int, arg1: int): boolean
                     public isAttributeViewable(arg0: int, arg1: int): boolean
-                    public loadAttributes(arg0: sun.tools.jconsole.inspector.XMBean, arg1: javax.management.MBeanInfo): void
+                    public loadAttributes(arg0: sun.tools.jconsole.inspector.XMBean, arg1: javax.management.MBeanInfo | javax.management.MBeanInfo$$Lambda): void
                     public refreshAttributes(): void
                     public columnMarginChanged(arg0: javax.swing.event.ChangeEvent): void
                     public emptyTable(): void
@@ -460,7 +475,7 @@ declare namespace sun {
                     public static class: java.lang.Class<any>
                 }
                 class OperationEntry extends javax.swing.JPanel {
-                    public constructor(arg0: javax.management.MBeanOperationInfo, arg1: boolean, arg2: javax.swing.JButton, arg3: sun.tools.jconsole.inspector.XOperations)
+                    public constructor(arg0: javax.management.MBeanOperationInfo, arg1: boolean, arg2: javax.swing.JButton | javax.swing.JButton$$Lambda, arg3: sun.tools.jconsole.inspector.XOperations)
                     public getSignature(): java.lang.String[]
                     public getParameters(): java.lang.Object[]
                     public getReturnType(): string
@@ -476,6 +491,9 @@ declare namespace sun {
                     public constructor(arg0: java.awt.Component, arg1: java.lang.Object, arg2: string, arg3: int)
                     public run(): void
                     public static class: java.lang.Class<any>
+                }
+                class ThreadDialog$$Lambda implements java.lang.Runnable {
+                    public constructor(arg0: java.awt.Component, arg1: java.lang.Object, arg2: string, arg3: int)
                 }
                 class XPlotter extends sun.tools.jconsole.Plotter {
                     public constructor(arg0: javax.swing.JTable, arg1: sun.tools.jconsole.Plotter$Unit)
@@ -504,7 +522,7 @@ declare namespace sun {
                     public static OPERATION_INVOCATION_EVENT: string
                     public constructor(arg0: sun.tools.jconsole.MBeansTab)
                     public removeOperations(): void
-                    public loadOperations(arg0: sun.tools.jconsole.inspector.XMBean, arg1: javax.management.MBeanInfo): void
+                    public loadOperations(arg0: sun.tools.jconsole.inspector.XMBean, arg1: javax.management.MBeanInfo | javax.management.MBeanInfo$$Lambda): void
                     public actionPerformed(arg0: java.awt.event.ActionEvent): void
                     public addOperationsListener(arg0: javax.management.NotificationListener): void
                     public removeOperationsListener(arg0: javax.management.NotificationListener): void
@@ -530,7 +548,7 @@ declare namespace sun {
                     public constructor()
                     public constructor(arg0: java.lang.Object)
                     public constructor(arg0: java.lang.Object, arg1: int)
-                    public constructor(arg0: java.lang.Object, arg1: java.lang.Class<any>, arg2: int, arg3: boolean, arg4: javax.swing.JButton, arg5: sun.tools.jconsole.inspector.XOperations)
+                    public constructor(arg0: java.lang.Object, arg1: java.lang.Class<any>, arg2: int, arg3: boolean, arg4: javax.swing.JButton | javax.swing.JButton$$Lambda, arg5: sun.tools.jconsole.inspector.XOperations)
                     public static setNullSelectionAllowed(arg0: boolean): void
                     public static getNullSelectionAllowed(): boolean
                     protected init(arg0: java.lang.Object, arg1: java.lang.Class<any>): void
@@ -607,7 +625,7 @@ declare namespace sun {
                     public constructor()
                     public emptyInfoTable(): void
                     public emptyDescTable(): void
-                    public addMBeanInfo(arg0: sun.tools.jconsole.inspector.XMBean, arg1: javax.management.MBeanInfo): void
+                    public addMBeanInfo(arg0: sun.tools.jconsole.inspector.XMBean, arg1: javax.management.MBeanInfo | javax.management.MBeanInfo$$Lambda): void
                     public addMBeanAttributeInfo(arg0: javax.management.MBeanAttributeInfo): void
                     public addMBeanOperationInfo(arg0: javax.management.MBeanOperationInfo): void
                     public addMBeanNotificationInfo(arg0: javax.management.MBeanNotificationInfo): void
@@ -673,6 +691,9 @@ declare namespace sun {
                 public run(): void
                 public static class: java.lang.Class<any>
             }
+            class JConsole$4$1$$Lambda implements java.lang.Runnable {
+                public (): void
+            }
             class SheetDialog$SlideAndFadeGlassPane extends javax.swing.JPanel {
                 public show(arg0: sun.tools.jconsole.SheetDialog$SheetOptionPane): void
                 public hide(arg0: sun.tools.jconsole.SheetDialog$SheetOptionPane): void
@@ -690,6 +711,9 @@ declare namespace sun {
                 public run(): void
                 public static class: java.lang.Class<any>
             }
+            class VMPanel$8$$Lambda implements java.lang.Runnable {
+                public (): void
+            }
             interface ProxyClient$SnapshotMBeanServerConnection extends javax.management.MBeanServerConnection {
                 flush(): void
             }
@@ -700,6 +724,9 @@ declare namespace sun {
             class ThreadTab$4$1$1 implements java.lang.Runnable {
                 public run(): void
                 public static class: java.lang.Class<any>
+            }
+            class ThreadTab$4$1$1$$Lambda implements java.lang.Runnable {
+                public (): void
             }
             class ConnectDialog$LocalTabJTable extends javax.swing.JTable {
                 public constructor(arg0: sun.tools.jconsole.ConnectDialog, arg1: sun.tools.jconsole.ConnectDialog$ManagedVmTableModel)
@@ -803,6 +830,9 @@ declare namespace sun {
                 public run(): void
                 public static class: java.lang.Class<any>
             }
+            class ThreadTab$2$$Lambda implements java.lang.Runnable {
+                public (): void
+            }
             class MBeansTab extends sun.tools.jconsole.Tab implements javax.management.NotificationListener , java.beans.PropertyChangeListener , javax.swing.event.TreeSelectionListener , javax.swing.event.TreeWillExpandListener {
                 public static getTabName(): string
                 public constructor(arg0: sun.tools.jconsole.VMPanel)
@@ -863,13 +893,13 @@ declare namespace sun {
             }
             class BorderedComponent$LabeledBorder extends javax.swing.border.TitledBorder {
                 protected label: javax.swing.JComponent
-                public constructor(arg0: javax.swing.JComponent)
+                public constructor(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda)
                 public constructor(arg0: javax.swing.border.Border)
-                public constructor(arg0: javax.swing.border.Border, arg1: javax.swing.JComponent)
+                public constructor(arg0: javax.swing.border.Border, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda)
                 public paintBorder(arg0: java.awt.Component, arg1: java.awt.Graphics, arg2: int, arg3: int, arg4: int, arg5: int): void
                 public getBorderInsets(arg0: java.awt.Component, arg1: java.awt.Insets): java.awt.Insets
                 public getLabel(): javax.swing.JComponent
-                public setLabel(arg0: javax.swing.JComponent): void
+                public setLabel(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
                 public getMinimumSize(arg0: java.awt.Component): java.awt.Dimension
                 public static class: java.lang.Class<any>
             }
@@ -877,9 +907,15 @@ declare namespace sun {
                 public run(): void
                 public static class: java.lang.Class<any>
             }
+            class VMPanel$6$$Lambda implements java.lang.Runnable {
+                public (): void
+            }
             class JConsole$6 implements java.lang.Runnable {
                 public run(): void
                 public static class: java.lang.Class<any>
+            }
+            class JConsole$6$$Lambda implements java.lang.Runnable {
+                public (): void
             }
             class InternalDialog extends javax.swing.JInternalFrame {
                 protected statusBar: javax.swing.JLabel
@@ -933,6 +969,9 @@ declare namespace sun {
                 public run(): void
                 public static class: java.lang.Class<any>
             }
+            class ThreadTab$4$$Lambda implements java.lang.Runnable {
+                public (): void
+            }
             class BorderedComponent$FocusBorder extends javax.swing.border.AbstractBorder implements java.awt.event.FocusListener {
                 public constructor(arg0: java.awt.Component)
                 public paintBorder(arg0: java.awt.Component, arg1: java.awt.Graphics, arg2: int, arg3: int, arg4: int, arg5: int): void
@@ -943,10 +982,10 @@ declare namespace sun {
             }
             class VariableGridLayout extends java.awt.GridLayout {
                 public constructor(arg0: int, arg1: int, arg2: int, arg3: int, arg4: boolean, arg5: boolean)
-                public setFillRow(arg0: javax.swing.JComponent, arg1: boolean): void
-                public setFillColumn(arg0: javax.swing.JComponent, arg1: boolean): void
-                public getFillRow(arg0: javax.swing.JComponent): boolean
-                public getFillColumn(arg0: javax.swing.JComponent): boolean
+                public setFillRow(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: boolean): void
+                public setFillColumn(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: boolean): void
+                public getFillRow(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): boolean
+                public getFillColumn(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): boolean
                 public layoutContainer(arg0: java.awt.Container): void
                 public preferredLayoutSize(arg0: java.awt.Container): java.awt.Dimension
                 public static class: java.lang.Class<any>
@@ -969,6 +1008,9 @@ declare namespace sun {
                 public run(): void
                 public static class: java.lang.Class<any>
             }
+            class VMPanel$9$$Lambda implements java.lang.Runnable {
+                public (): void
+            }
             class Plotter$SaveDataFileChooser extends javax.swing.JFileChooser {
                 public approveSelection(): void
                 public static class: java.lang.Class<any>
@@ -976,6 +1018,9 @@ declare namespace sun {
             class JConsole$3$1 implements java.lang.Runnable {
                 public run(): void
                 public static class: java.lang.Class<any>
+            }
+            class JConsole$3$1$$Lambda implements java.lang.Runnable {
+                public (): void
             }
             class ThreadTab$PromptingTextField extends javax.swing.JTextField implements java.awt.event.FocusListener {
                 public constructor(arg0: sun.tools.jconsole.ThreadTab, arg1: string, arg2: int)
@@ -990,12 +1035,15 @@ declare namespace sun {
                 public static class: java.lang.Class<any>
             }
             class ThreadTab$ThreadJList$1 extends javax.swing.DefaultListCellRenderer {
-                public getListCellRendererComponent(arg0: javax.swing.JList<any>, arg1: java.lang.Object, arg2: int, arg3: boolean, arg4: boolean): java.awt.Component
+                public getListCellRendererComponent(arg0: javax.swing.JList<any> | javax.swing.JList$$Lambda<any>, arg1: java.lang.Object, arg2: int, arg3: boolean, arg4: boolean): java.awt.Component
                 public static class: java.lang.Class<any>
             }
             class ThreadTab$4$2 implements java.lang.Runnable {
                 public run(): void
                 public static class: java.lang.Class<any>
+            }
+            class ThreadTab$4$2$$Lambda implements java.lang.Runnable {
+                public (): void
             }
             class PlotterPanel$1 extends java.awt.event.MouseAdapter {
                 public mousePressed(arg0: java.awt.event.MouseEvent): void
@@ -1021,9 +1069,15 @@ declare namespace sun {
                 public run(): void
                 public static class: java.lang.Class<any>
             }
+            class ThreadTab$4$1$2$$Lambda implements java.lang.Runnable {
+                public (): void
+            }
             class VMPanel$3$1 implements java.lang.Runnable {
                 public run(): void
                 public static class: java.lang.Class<any>
+            }
+            class VMPanel$3$1$$Lambda implements java.lang.Runnable {
+                public (): void
             }
             class ThreadTab$4$1 extends java.lang.Thread {
                 public run(): void
@@ -1175,7 +1229,7 @@ declare namespace sun {
                 public static class: java.lang.Class<any>
             }
             class BorderedComponent$ArrowIcon implements javax.swing.Icon {
-                public constructor(arg0: int, arg1: javax.swing.JLabel)
+                public constructor(arg0: int, arg1: javax.swing.JLabel | javax.swing.JLabel$$Lambda)
                 public paintIcon(arg0: java.awt.Component, arg1: java.awt.Graphics, arg2: int, arg3: int): void
                 public getIconWidth(): int
                 public getIconHeight(): int
@@ -1261,6 +1315,9 @@ declare namespace sun {
                 public run(): void
                 public static class: java.lang.Class<any>
             }
+            class MBeansTab$2$$Lambda implements java.lang.Runnable {
+                public (): void
+            }
             class VMPanel$TabInfo {
                 public static class: java.lang.Class<any>
             }
@@ -1272,6 +1329,9 @@ declare namespace sun {
                 public run(): void
                 public static class: java.lang.Class<any>
             }
+            class ThreadTab$2$1$$Lambda implements java.lang.Runnable {
+                public (): void
+            }
             class MemoryTab$1 extends sun.tools.jconsole.Plotter {
                 public toString(): string
                 public static class: java.lang.Class<any>
@@ -1280,9 +1340,12 @@ declare namespace sun {
                 public run(): void
                 public static class: java.lang.Class<any>
             }
+            class ConnectDialog$4$$Lambda implements java.lang.Runnable {
+                public (): void
+            }
             class LabeledComponent extends javax.swing.JPanel {
-                public constructor(arg0: string, arg1: javax.swing.JComponent)
-                public constructor(arg0: string, arg1: int, arg2: javax.swing.JComponent)
+                public constructor(arg0: string, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda)
+                public constructor(arg0: string, arg1: int, arg2: javax.swing.JComponent | javax.swing.JComponent$$Lambda)
                 public setLabel(arg0: string): void
                 public setValueLabel(arg0: string): void
                 public static layout(arg0: java.awt.Container): void
@@ -1294,9 +1357,9 @@ declare namespace sun {
             }
             class BorderedComponent extends javax.swing.JPanel implements java.awt.event.ActionListener {
                 public constructor(arg0: string)
-                public constructor(arg0: string, arg1: javax.swing.JComponent)
-                public constructor(arg0: string, arg1: javax.swing.JComponent, arg2: boolean)
-                public setComponent(arg0: javax.swing.JComponent): void
+                public constructor(arg0: string, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda)
+                public constructor(arg0: string, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg2: boolean)
+                public setComponent(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
                 public setValueLabel(arg0: string): void
                 public actionPerformed(arg0: java.awt.event.ActionEvent): void
                 public getMinimumSize(): java.awt.Dimension
@@ -1313,21 +1376,30 @@ declare namespace sun {
                 public run(): void
                 public static class: java.lang.Class<any>
             }
+            class VMPanel$7$$Lambda implements java.lang.Runnable {
+                public (): void
+            }
             class JConsole$4 implements java.lang.Runnable {
                 public run(): void
                 public static class: java.lang.Class<any>
             }
+            class JConsole$4$$Lambda implements java.lang.Runnable {
+                public (): void
+            }
             class JConsole$5 implements java.lang.Runnable {
                 public run(): void
                 public static class: java.lang.Class<any>
+            }
+            class JConsole$5$$Lambda implements java.lang.Runnable {
+                public (): void
             }
             class MemoryTab$MemoryOverviewPanel extends sun.tools.jconsole.OverviewPanel {
                 public static class: java.lang.Class<any>
             }
             class Utilities {
                 public constructor()
-                public static updateTransparency(arg0: javax.swing.JComponent): void
-                public static newTableScrollPane(arg0: javax.swing.JComponent): javax.swing.JScrollPane
+                public static updateTransparency(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                public static newTableScrollPane(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.JScrollPane
                 public static setAccessibleName(arg0: javax.accessibility.Accessible | javax.accessibility.Accessible$$Lambda, arg1: string): void
                 public static setAccessibleDescription(arg0: javax.accessibility.Accessible | javax.accessibility.Accessible$$Lambda, arg1: string): void
                 public static ensureContrast(arg0: java.awt.Color, arg1: java.awt.Color): java.awt.Color
@@ -1335,7 +1407,7 @@ declare namespace sun {
                 public static class: java.lang.Class<any>
             }
             class Utilities$TableScrollPane extends javax.swing.JScrollPane {
-                public constructor(arg0: javax.swing.JComponent)
+                public constructor(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda)
                 protected paintBorder(arg0: java.awt.Graphics): void
                 public static class: java.lang.Class<any>
             }
@@ -1346,6 +1418,9 @@ declare namespace sun {
             class SheetDialog$2 implements java.lang.Runnable {
                 public run(): void
                 public static class: java.lang.Class<any>
+            }
+            class SheetDialog$2$$Lambda implements java.lang.Runnable {
+                public (): void
             }
             class AboutDialog extends sun.tools.jconsole.InternalDialog {
                 public constructor(arg0: sun.tools.jconsole.JConsole)
@@ -1378,6 +1453,9 @@ declare namespace sun {
             class ThreadTab$3 implements java.lang.Runnable {
                 public run(): void
                 public static class: java.lang.Class<any>
+            }
+            class ThreadTab$3$$Lambda implements java.lang.Runnable {
+                public (): void
             }
             class CreateMBeanDialog$2 extends java.lang.Thread {
                 public run(): void
@@ -1711,6 +1789,9 @@ declare namespace sun {
                 public invoke(arg0: java.lang.Object, arg1: java.lang.reflect.Method, arg2: java.lang.Object[]): java.lang.Object
                 public static class: java.lang.Class<any>
             }
+            class ProxyClient$SnapshotInvocationHandler$$Lambda implements java.lang.reflect.InvocationHandler {
+                public (arg0: java.lang.Object, arg1: java.lang.reflect.Method, arg2: java.lang.Object[]): java.lang.Object
+            }
             class MaximizableInternalFrame$MDIButtonIcon implements javax.swing.Icon {
                 public paintIcon(arg0: java.awt.Component, arg1: java.awt.Graphics, arg2: int, arg3: int): void
                 public getIconWidth(): int
@@ -1746,6 +1827,9 @@ declare namespace sun {
             class ClassTab$1 implements java.lang.Runnable {
                 public run(): void
                 public static class: java.lang.Class<any>
+            }
+            class ClassTab$1$$Lambda implements java.lang.Runnable {
+                public (): void
             }
             class ConnectDialog$Padder extends javax.swing.JPanel {
                 public getPreferredSize(): java.awt.Dimension

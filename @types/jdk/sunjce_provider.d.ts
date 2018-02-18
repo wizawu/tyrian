@@ -559,6 +559,9 @@ declare namespace com {
                     public checkInput(arg0: sun.misc.ObjectInputFilter$FilterInfo): sun.misc.ObjectInputFilter$Status
                     public static class: java.lang.Class<any>
                 }
+                class JceKeyStore$DeserializationChecker$$Lambda implements sun.misc.ObjectInputFilter {
+                    public (arg0: sun.misc.ObjectInputFilter$FilterInfo): sun.misc.ObjectInputFilter$Status
+                }
                 class PKCS12PBECipherCore$PBEWithSHA1AndRC4_128 extends javax.crypto.CipherSpi {
                     public constructor()
                     protected engineDoFinal(arg0: byte[], arg1: int, arg2: int): byte[]
@@ -675,7 +678,7 @@ declare namespace com {
                     public engineIsKeyEntry(arg0: string): boolean
                     public engineIsCertificateEntry(arg0: string): boolean
                     public engineGetCertificateAlias(arg0: java.security.cert.Certificate): string
-                    public engineStore(arg0: java.io.OutputStream, arg1: char[]): void
+                    public engineStore(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: char[]): void
                     public engineLoad(arg0: java.io.InputStream, arg1: char[]): void
                     public static class: java.lang.Class<any>
                 }

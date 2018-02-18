@@ -5,7 +5,7 @@ var crypto = require("crypto");
 var fs = require("fs");
 var os = require("os");
 var child_process_1 = require("child_process");
-var parseJAR_1 = require("../compiler/parseJAR");
+var parseJAR_1 = require("../parser/parseJAR");
 exports.tsconfig = function (instdir) { return JSON.stringify({
     "compilerOptions": {
         "allowJs": true,

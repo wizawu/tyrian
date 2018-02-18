@@ -13,7 +13,7 @@ var fs = require("fs");
 var path = require("path");
 var webpack = require("webpack");
 var const_1 = require("../const");
-var parseJAR_1 = require("../compiler/parseJAR");
+var parseJAR_1 = require("../parser/parseJAR");
 var install_1 = require("./install");
 var autoprefixer = require("autoprefixer");
 function compiler(instdir, instmod, entries, options) {

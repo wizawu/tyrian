@@ -4,7 +4,7 @@ import * as fs from "fs"
 import * as os from "os"
 import { spawnSync } from "child_process"
 
-import parseJAR from "../compiler/parseJAR"
+import parseJAR from "../parser/parseJAR"
 
 // tsconfig.json
 export const tsconfig = instdir => JSON.stringify({

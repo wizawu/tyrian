@@ -5,8 +5,8 @@ set -xe
 
 # create a new isLambda.js
 
-rm -f $dir/../dist/compiler/isLambda.js
-touch $dir/../dist/compiler/isLambda.js
+rm -f $dir/../dist/parser/isLambda.js
+touch $dir/../dist/parser/isLambda.js
 
 # build jdk
 
@@ -14,7 +14,7 @@ cd $dir/jdk
 
 jars=$(find $JAVA_HOME/ -name "*.jar" | grep -v sa-jdi.jar | grep -v tools.jar)
 
-node -e "require('$dir/../dist/compiler/parseJAR').generateJDKDefinition('$dir/..')" $jars
+node -e "require('$dir/../dist/parser/parseJAR').generateJDKDefinition('$dir/..')" $jars
 
 ls *.d.ts | grep -v index.d.ts | xargs -I {} echo "/// <reference path=\"{}\" />" > index.d.ts
 

@@ -4,7 +4,7 @@ import * as path from "path"
 import * as webpack from "webpack"
 
 import { EXIT_STATUS } from "../const"
-import { getTopPackages } from "../compiler/parseJAR"
+import { getTopPackages } from "../parser/parseJAR"
 import { tsconfig } from "./install"
 
 const autoprefixer = require("autoprefixer")

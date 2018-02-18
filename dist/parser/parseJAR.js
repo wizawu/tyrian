@@ -54,6 +54,7 @@ exports["default"] = parseJAR;
 function generateJDKDefinition(root) {
     var jars = process.argv.slice(1);
     jars.forEach(function (jar) { return parseJAR(jar); });
+    jars.forEach(function (jar) { return parseJAR(jar); });
     fs.writeFileSync(fs.realpathSync(root + "/dist/parser/isLambda.js"), "module.exports = " + JSON.stringify(lambda.isLambda, null, 4));
     jars.forEach(function (jar) {
         var target = path.basename(jar).replace(/\.jar$/, ".d.ts");

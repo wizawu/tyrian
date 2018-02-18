@@ -259,14 +259,15 @@ function default_1(source, pkg) {
                         object_path_1.get(pkg, ns)[className] = "type Object = any";
                     }
                     else {
-                        if (isInterface && buffer.length === 3 &&
+                        if ((isInterface && buffer.length === 3 &&
                             buffer[1].line.indexOf("(") > 0 &&
-                            buffer[0].line.indexOf(" extends ") < 0) {
+                            buffer[0].line.indexOf(" extends ") < 0) || (buffer[0].line.indexOf(" implements ") > 0 &&
+                            lambda.isLambda[buffer[0].line.split(" ").reverse()[1]])) {
                             var classID = className.indexOf("<") < 0 ? className :
                                 className.substring(0, className.indexOf("<"));
                             buffer.push({ line: buffer[0].line.replace(classID, classID + "$$$Lambda") });
                             buffer.push({ line: buffer[1].line.replace(buffer[1].name + "(", "(") });
-                            buffer.push({ line: buffer[2].line });
+                            buffer.push({ line: "}\n" });
                             lambda.addLambda(ns + "." + classID);
                         }
                         object_path_1.get(pkg, ns)[className] = buffer.map(function (b) { return b.line; }).join("\n");

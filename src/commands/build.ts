@@ -1,4 +1,5 @@
 import * as chalk from "chalk"
+import * as crypto from "crypto"
 import * as fs from "fs"
 import * as path from "path"
 import * as webpack from "webpack"
@@ -85,6 +86,15 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
         }
     }
 
+    let tsconfigFile = "tsconfig.json"
+    if (options.skipJDK) {
+        let tsBuildConfig = fs.readFileSync("tsconfig.json", "utf-8")
+            .replace(/\(1c\/@types\)/g, options.skipJDK ? "1c/@types-lite" : "$1")
+        let md5 = crypto.createHash("md5").update(tsBuildConfig).digest().toString("hex")
+        tsconfigFile = "tsconfig.build." + md5 + ".json"
+        fs.writeFileSync(tsconfigFile, tsBuildConfig)
+    }
+
     return webpack({
         devtool: "source-map",
         context: context,
@@ -102,15 +112,7 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
             rules: [{
                 test: /\.tsx?$/,
                 loader: "ts-loader",
-                options: options.skipJDK ? {
-                    compilerOptions: {
-                        typeRoots: [
-                            `${instdir}/@types-lite`,
-                            "lib/@types",
-                            "node_modules/@types",
-                        ]
-                    }
-                } : {}
+                options: { configFile: tsconfigFile },
             }, {
                 test: /\.json$/,
                 loader: "json-loader",

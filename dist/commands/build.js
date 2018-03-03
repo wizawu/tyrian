@@ -9,6 +9,7 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
 };
 exports.__esModule = true;
 var chalk = require("chalk");
+var crypto = require("crypto");
 var fs = require("fs");
 var path = require("path");
 var webpack = require("webpack");
@@ -80,6 +81,14 @@ function compiler(instdir, instmod, entries, options) {
             plugins.push(new webpack.optimize.CommonsChunkPlugin(packageJSON.commonsChunk));
         }
     }
+    var tsconfigFile = "tsconfig.json";
+    if (options.skipJDK) {
+        var tsBuildConfig = fs.readFileSync("tsconfig.json", "utf-8")
+            .replace(/\(1c\/@types\)/g, options.skipJDK ? "1c/@types-lite" : "$1");
+        var md5 = crypto.createHash("md5").update(tsBuildConfig).digest().toString("hex");
+        tsconfigFile = "tsconfig.build." + md5 + ".json";
+        fs.writeFileSync(tsconfigFile, tsBuildConfig);
+    }
     return webpack({
         devtool: "source-map",
         context: context,
@@ -97,15 +106,7 @@ function compiler(instdir, instmod, entries, options) {
             rules: [{
                     test: /\.tsx?$/,
                     loader: "ts-loader",
-                    options: options.skipJDK ? {
-                        compilerOptions: {
-                            typeRoots: [
-                                instdir + "/@types-lite",
-                                "lib/@types",
-                                "node_modules/@types",
-                            ]
-                        }
-                    } : {}
+                    options: { configFile: tsconfigFile }
                 }, {
                     test: /\.json$/,
                     loader: "json-loader"

@@ -38,6 +38,9 @@ else if (command === "build" && process.argv[3]) {
         else if (arg === "-u") {
             options.uglify = true;
         }
+        else if (arg === "--skipJDK") {
+            options.skipJDK = true;
+        }
         else if (arg === "-c") {
             options.outDir = process.argv[i + 1];
             i += 1;

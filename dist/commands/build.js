@@ -96,7 +96,16 @@ function compiler(instdir, instmod, entries, options) {
         module: {
             rules: [{
                     test: /\.tsx?$/,
-                    loader: "ts-loader"
+                    loader: "ts-loader",
+                    options: options.skipJDK ? {
+                        compilerOptions: {
+                            typeRoots: [
+                                instdir + "/@types-lite",
+                                "lib/@types",
+                                "node_modules/@types",
+                            ]
+                        }
+                    } : {}
                 }, {
                     test: /\.json$/,
                     loader: "json-loader"

@@ -20,6 +20,7 @@ Usage:
 build options:
   -c <dir>          output build result in <dir>
   -o <file>         output build result to <file>
+  --skipJDK         skip JDK definition checking
   -u                uglify build result (and disable exception tracking)
   -w                watch changes and re-build
 

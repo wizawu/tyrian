@@ -34,6 +34,8 @@ if (command === "help") {
             options.watch = true
         } else if (arg === "-u") {
             options.uglify = true
+        } else if (arg === "--skipJDK") {
+            options.skipJDK = true
         } else if (arg === "-c") {
             options.outDir = process.argv[i + 1]
             i += 1

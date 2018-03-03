@@ -14,6 +14,7 @@ export interface Options {
     uglify: boolean
     outDir: string
     outFile?: string
+    skipJDK?: boolean
 }
 
 function compiler(instdir: string, instmod: string, entries: string[], options: Options) {
@@ -101,6 +102,15 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
             rules: [{
                 test: /\.tsx?$/,
                 loader: "ts-loader",
+                options: options.skipJDK ? {
+                    compilerOptions: {
+                        typeRoots: [
+                            `${instdir}/@types-lite`,
+                            "lib/@types",
+                            "node_modules/@types",
+                        ]
+                    }
+                } : {}
             }, {
                 test: /\.json$/,
                 loader: "json-loader",

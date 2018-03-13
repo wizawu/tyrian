@@ -2,4 +2,4 @@
 
 Check out the [official website](https://1c.wizawu.com/) for more information.
 
-![](https://1c.wizawu.com/assets/img/1c-ide.gif)
+![](https://1c.wizawu.com/assets/img/1c-ide.gif?cached)

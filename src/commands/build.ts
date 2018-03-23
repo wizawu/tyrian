@@ -66,7 +66,12 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
         })
     }
 
-    let alias
+    let webpackConfig: any = {}
+    if (fs.existsSync("package.json")) {
+        let packageJSON = JSON.parse(fs.readFileSync("package.json", "utf-8"))
+        webpackConfig = packageJSON.webpack || {}
+    }
+
     let plugins = [
         new webpack.DefinePlugin({
             "process.env": {
@@ -78,11 +83,9 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
     if (options.uglify) {
         plugins.push(new webpack.optimize.UglifyJsPlugin({ sourceMap: true }))
     }
-    if (fs.existsSync("package.json")) {
-        let packageJSON = JSON.parse(fs.readFileSync("package.json", "utf-8"))
-        alias = packageJSON.alias
-        if (packageJSON.commonsChunk) {
-            plugins.push(new webpack.optimize.CommonsChunkPlugin(packageJSON.commonsChunk))
+    if (webpackConfig.plugins) {
+        if (webpackConfig.plugins.commonsChunk) {
+            plugins.push(new webpack.optimize.CommonsChunkPlugin(webpackConfig.plugins.commonsChunk))
         }
     }
 
@@ -99,8 +102,8 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
         devtool: "source-map",
         context: context,
         resolve: {
-            alias,
-            extensions: [".js", ".ts", ".tsx"]
+            extensions: [".js", ".ts", ".tsx"],
+            ...webpackConfig.resolve
         },
         resolveLoader: { modules: [instmod] },
         entry: entry,

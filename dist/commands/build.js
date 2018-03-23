@@ -65,7 +65,11 @@ function compiler(instdir, instmod, entries, options) {
             });
         });
     }
-    var alias;
+    var webpackConfig = {};
+    if (fs.existsSync("package.json")) {
+        var packageJSON = JSON.parse(fs.readFileSync("package.json", "utf-8"));
+        webpackConfig = packageJSON.webpack || {};
+    }
     var plugins = [
         new webpack.DefinePlugin(__assign({ "process.env": {
                 NODE_ENV: options.watch ? '"development"' : '"production"'
@@ -74,11 +78,9 @@ function compiler(instdir, instmod, entries, options) {
     if (options.uglify) {
         plugins.push(new webpack.optimize.UglifyJsPlugin({ sourceMap: true }));
     }
-    if (fs.existsSync("package.json")) {
-        var packageJSON = JSON.parse(fs.readFileSync("package.json", "utf-8"));
-        alias = packageJSON.alias;
-        if (packageJSON.commonsChunk) {
-            plugins.push(new webpack.optimize.CommonsChunkPlugin(packageJSON.commonsChunk));
+    if (webpackConfig.plugins) {
+        if (webpackConfig.plugins.commonsChunk) {
+            plugins.push(new webpack.optimize.CommonsChunkPlugin(webpackConfig.plugins.commonsChunk));
         }
     }
     var tsconfigFile = "tsconfig.json";
@@ -92,10 +94,7 @@ function compiler(instdir, instmod, entries, options) {
     return webpack({
         devtool: "source-map",
         context: context,
-        resolve: {
-            alias: alias,
-            extensions: [".js", ".ts", ".tsx"]
-        },
+        resolve: __assign({ extensions: [".js", ".ts", ".tsx"] }, webpackConfig.resolve),
         resolveLoader: { modules: [instmod] },
         entry: entry,
         output: {

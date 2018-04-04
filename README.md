@@ -5,4 +5,4 @@
 * Check out the [official website](https://1c.wizawu.com/) for more information.
 * Check out the [examples](/examples).
 
-![](https://1c.wizawu.com/assets/img/1c-ide.gif?cached)
+![](https://1c.wizawu.com/assets/img/1c-ide.gif)

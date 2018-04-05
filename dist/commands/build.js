@@ -98,12 +98,6 @@ function compiler(instdir, instmod, entries, options) {
                             options: { configFile: tsconfigFile },
                         }]
                 }, {
-                    test: /\.js$/,
-                    use: [{
-                            loader: "babel-loader",
-                            options: { "presets": [instmod + "/babel-preset-env"] },
-                        }]
-                }, {
                     test: /\.json$/,
                     loader: "json-loader",
                 }, {

@@ -11,5 +11,7 @@ require("core-js/es6/map");
 require("core-js/es6/set");
 require("core-js/es6/symbol");
 var _logging = __importStar(require("./logging"));
+var _mysql = __importStar(require("./mysql"));
 exports.logging = _logging;
+exports.mysql = _mysql;
 //# sourceMappingURL=index.js.map

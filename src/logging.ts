@@ -14,7 +14,7 @@ function getSourceMapConsumer() {
     let path = Paths.get(source[0] + ".map")
     if (Files.exists(path)) {
         let text = new java.lang.String(Files.readAllBytes(path), StandardCharsets.UTF_8)
-        consumer.parse(text as any)
+        consumer.parse(text)
         return consumer
     } else {
         return null

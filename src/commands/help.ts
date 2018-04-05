@@ -21,7 +21,7 @@ build options:
   -c <dir>          output build result in <dir>
   -o <file>         output build result to <file>
   --skipJDK         skip JDK definition checking
-  -u                uglify build result (and disable exception tracking)
+  -u                uglify build result
   -w                watch changes and re-build
 
 run options:

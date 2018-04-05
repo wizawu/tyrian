@@ -2,7 +2,6 @@ import * as crypto from "crypto"
 import * as fs from "fs"
 import * as path from "path"
 import * as webpack from "webpack"
-import SplitChunksPlugin from "../../node_modules/webpack/lib/optimize/SplitChunksPlugin"
 import chalk from "chalk"
 
 import { EXIT_STATUS } from "../const"

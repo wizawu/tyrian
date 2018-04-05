@@ -144,15 +144,19 @@ function default_1(instdir, instmod, entries, options) {
         fs.writeFileSync("tsconfig.json", install_1.tsconfig(instdir));
         console.error(chalk_1.default.yellow("Generated tsconfig.json"));
     }
+    var statsOptions = {
+        colors: true,
+        entrypoints: false,
+        modules: false,
+    };
     if (options.watch) {
         getCompiler(instdir, instmod, entries, options).watch({ poll: true }, function (err, stats) {
-            console.log(stats.toString("minimal"));
-            console.log("\nFinished last build at " + new Date().toLocaleTimeString() + "\n");
+            console.log(stats.toString(statsOptions));
         });
     }
     else {
         getCompiler(instdir, instmod, entries, options).run(function (err, stats) {
-            console.log(stats.toString("minimal"));
+            console.log(stats.toString(statsOptions));
             if (stats.hasErrors())
                 process.exit(const_1.EXIT_STATUS.WEBPACK_COMPILE_ERROR);
         });

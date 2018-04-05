@@ -161,14 +161,19 @@ export default function (instdir: string, instmod: string, entries: string[], op
         console.error(chalk.yellow("Generated tsconfig.json"))
     }
 
+    let statsOptions = {
+        colors: true,
+        entrypoints: false,
+        modules: false,
+    }
+
     if (options.watch) {
         getCompiler(instdir, instmod, entries, options).watch({ poll: true }, (err, stats) => {
-            console.log(stats.toString("minimal"))
-            console.log(`\nFinished last build at ${new Date().toLocaleTimeString()}\n`)
+            console.log(stats.toString(statsOptions))
         })
     } else {
         getCompiler(instdir, instmod, entries, options).run((err, stats) => {
-            console.log(stats.toString("minimal"))
+            console.log(stats.toString(statsOptions))
             if (stats.hasErrors()) process.exit(EXIT_STATUS.WEBPACK_COMPILE_ERROR)
         })
     }

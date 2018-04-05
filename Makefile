@@ -1,5 +1,5 @@
 build: clean
-	tsc -d -p build.tsconfig.json --outDir dist
+	tsc -d -p tsconfig.build.json --outDir dist
 
 clean:
 	rm -rf dist

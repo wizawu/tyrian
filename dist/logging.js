@@ -1,14 +1,14 @@
 "use strict";
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
-}
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 var chalk_1 = __importDefault(require("chalk"));
 var SimpleDateFormat = java.text.SimpleDateFormat;
 var SourceMapConsumerV3 = com.google.debugging.sourcemap.SourceMapConsumerV3;
 var StandardCharsets = java.nio.charset.StandardCharsets;
 var _a = java.nio.file, Files = _a.Files, Paths = _a.Paths;
-var chalk = new chalk_1.default.constructor({ enabled: true, level: 3 });
+var chalk = new chalk_1.default.constructor({ enabled: true });
 var sourceMapConsumer = getSourceMapConsumer();
 function getSourceMapConsumer() {
     var consumer = new SourceMapConsumerV3();
@@ -50,15 +50,15 @@ var Logger = (function () {
     }
     Logger.info = function (message) {
         var stack = getCallerSource();
-        print(message, 1, chalk.blueBright("[INFO]"), stack);
+        print(message, 1, chalk.blue("[INFO]"), stack);
     };
     Logger.warn = function (message) {
         var stack = getCallerSource();
-        print(message, 2, chalk.yellowBright("[WARN]"), stack);
+        print(message, 2, chalk.yellow("[WARN]"), stack);
     };
     Logger.error = function (message) {
         var stack = getCallerSource();
-        print(message, 2, chalk.redBright("[ERRO]"), stack);
+        print(message, 2, chalk.red("[ERRO]"), stack);
     };
     return Logger;
 }());

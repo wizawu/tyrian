@@ -19,7 +19,7 @@ export const tsconfig = instdir => JSON.stringify({
         "skipLibCheck": true,
         "sourceMap": true,
         "strictNullChecks": true,
-        "target": "ES5",
+        "target": "es5",
         "typeRoots": [
             `${instdir}/@types`,
             "lib/@types",

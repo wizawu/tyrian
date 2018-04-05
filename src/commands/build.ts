@@ -37,6 +37,7 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
         })
     }
 
+    // Support both CSS and Less
     let cssLoaders = [{
         loader: "style-loader"
     }, {
@@ -57,6 +58,7 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
         }
     }]
 
+    // Inject java packages to global variables
     let globalVars = {}
     if (fs.existsSync(`${context}/lib`)) {
         let jars = fs.readdirSync(`${context}/lib`).filter(file => /\.jar$/.test(file))
@@ -67,12 +69,14 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
         })
     }
 
+    // Load webpack config from package.json
     let webpackConfig: any = {}
     if (fs.existsSync("package.json")) {
         let packageJSON = JSON.parse(fs.readFileSync("package.json", "utf-8"))
         webpackConfig = packageJSON.webpack || {}
     }
 
+    // Define webpack plugins
     let plugins = [
         new webpack.DefinePlugin({
             "process.env": {
@@ -90,6 +94,7 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
         if (splitChunksOptions) plugins.push(new SplitChunksPlugin(splitChunksOptions))
     }
 
+    // Create a tsconfig file for builds with --skipJDK
     let tsconfigFile = "tsconfig.json"
     if (options.skipJDK) {
         let tsBuildConfig = fs.readFileSync("tsconfig.json", "utf-8")
@@ -100,7 +105,7 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
     }
 
     return webpack({
-        mode: options.watch ? "development" : "production",
+        mode: options.uglify ? "production" : "development",
         devtool: "source-map",
         context: context,
         resolve: {
@@ -116,8 +121,16 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
         module: {
             rules: [{
                 test: /\.tsx?$/,
-                loader: "ts-loader",
-                options: { configFile: tsconfigFile },
+                use: [{
+                    loader: "ts-loader",
+                    options: { configFile: tsconfigFile },
+                }]
+            }, {
+                test: /\.js$/,
+                use: [{
+                    loader: "babel-loader",
+                    options: { "presets": [instmod + "/babel-preset-env"] },
+                }]
             }, {
                 test: /\.json$/,
                 loader: "json-loader",

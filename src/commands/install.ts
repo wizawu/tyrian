@@ -1,7 +1,7 @@
-import * as chalk from "chalk"
 import * as crypto from "crypto"
 import * as fs from "fs"
 import * as os from "os"
+import chalk from "chalk"
 import { spawnSync } from "child_process"
 
 import parseJAR from "../parser/parseJAR"

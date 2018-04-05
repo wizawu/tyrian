@@ -1,4 +1,4 @@
-import * as chalk from "chalk"
+import chalk from "chalk"
 import { EXIT_STATUS } from "../const"
 import { spawnSync } from "child_process"
 

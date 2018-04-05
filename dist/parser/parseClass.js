@@ -23,10 +23,10 @@ var UNSUPPORTED_MODIFIERS = [
 function safeType(type, isParameter) {
     if (/>\./.test(type))
         return "any";
-    if (type === "java.lang.String" && isParameter)
-        return type + " | string";
-    if (type === "java.lang.Boolean" && isParameter)
-        return type + " | boolean";
+    if (type === "java.lang.String")
+        return isParameter ? type + " | string" : "string";
+    if (type === "java.lang.Boolean")
+        return isParameter ? type + " | boolean" : "boolean";
     if (/^java\.util\.function\.Consumer<\w+>$/.test(type) && isParameter) {
         return type.replace("Consumer", "Consumer$$$TypeScript");
     }

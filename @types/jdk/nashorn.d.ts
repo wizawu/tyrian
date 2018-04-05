@@ -9,7 +9,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class NashornScriptEngine extends javax.script.AbstractScriptEngine implements javax.script.Compilable , javax.script.Invocable {
-                    public static NASHORN_GLOBAL: java.lang.String
+                    public static NASHORN_GLOBAL: string
                     public eval(arg0: java.io.Reader, arg1: javax.script.ScriptContext): java.lang.Object
                     public eval(arg0: java.lang.String | string, arg1: javax.script.ScriptContext): java.lang.Object
                     public getFactory(): javax.script.ScriptEngineFactory
@@ -39,17 +39,17 @@ declare namespace jdk {
                 }
                 class NashornScriptEngineFactory implements javax.script.ScriptEngineFactory {
                     public constructor()
-                    public getEngineName(): java.lang.String
-                    public getEngineVersion(): java.lang.String
+                    public getEngineName(): string
+                    public getEngineVersion(): string
                     public getExtensions(): java.util.List<java.lang.String>
-                    public getLanguageName(): java.lang.String
-                    public getLanguageVersion(): java.lang.String
-                    public getMethodCallSyntax(arg0: java.lang.String | string, arg1: java.lang.String | string, ...arg2: java.lang.String[]): java.lang.String
+                    public getLanguageName(): string
+                    public getLanguageVersion(): string
+                    public getMethodCallSyntax(arg0: java.lang.String | string, arg1: java.lang.String | string, ...arg2: java.lang.String[]): string
                     public getMimeTypes(): java.util.List<java.lang.String>
                     public getNames(): java.util.List<java.lang.String>
-                    public getOutputStatement(arg0: java.lang.String | string): java.lang.String
+                    public getOutputStatement(arg0: java.lang.String | string): string
                     public getParameter(arg0: java.lang.String | string): java.lang.Object
-                    public getProgram(...arg0: java.lang.String[]): java.lang.String
+                    public getProgram(...arg0: java.lang.String[]): string
                     public getScriptEngine(): javax.script.ScriptEngine
                     public getScriptEngine(arg0: java.lang.ClassLoader): javax.script.ScriptEngine
                     public getScriptEngine(arg0: jdk.nashorn.api.scripting.ClassFilter | jdk.nashorn.api.scripting.ClassFilter$$Lambda): javax.script.ScriptEngine
@@ -59,8 +59,8 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class ScriptUtils {
-                    public static parse(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: boolean): java.lang.String
-                    public static format(arg0: java.lang.String | string, arg1: java.lang.Object[]): java.lang.String
+                    public static parse(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: boolean): string
+                    public static format(arg0: java.lang.String | string, arg1: java.lang.Object[]): string
                     public static makeSynchronizedFunction(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
                     public static wrap(arg0: java.lang.Object): jdk.nashorn.api.scripting.ScriptObjectMirror
                     public static unwrap(arg0: java.lang.Object): java.lang.Object
@@ -95,7 +95,7 @@ declare namespace jdk {
                     public values(): java.util.Collection<java.lang.Object>
                     public isInstance(arg0: java.lang.Object): boolean
                     public isInstanceOf(arg0: java.lang.Object): boolean
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public isFunction(): boolean
                     public isStrictFunction(): boolean
                     public isArray(): boolean
@@ -107,7 +107,7 @@ declare namespace jdk {
                 class ScriptObjectMirror extends jdk.nashorn.api.scripting.AbstractJSObject implements javax.script.Bindings {
                     public equals(arg0: java.lang.Object): boolean
                     public hashCode(): int
-                    public toString(): java.lang.String
+                    public toString(): string
                     public call(arg0: java.lang.Object, ...arg1: java.lang.Object[]): java.lang.Object
                     public newObject(...arg0: java.lang.Object[]): java.lang.Object
                     public eval(arg0: java.lang.String | string): java.lang.Object
@@ -121,7 +121,7 @@ declare namespace jdk {
                     public setSlot(arg0: int, arg1: java.lang.Object): void
                     public setIndexedPropertiesToExternalArrayData(arg0: java.nio.ByteBuffer): void
                     public isInstance(arg0: java.lang.Object): boolean
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public isFunction(): boolean
                     public isStrictFunction(): boolean
                     public isArray(): boolean
@@ -175,7 +175,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class ScriptObjectMirror$32 implements java.util.concurrent.Callable<java.lang.Boolean> {
-                    public call(): java.lang.Boolean
+                    public call(): boolean
                     public call(): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
@@ -185,7 +185,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class ScriptObjectMirror$30 implements java.util.concurrent.Callable<java.lang.Boolean> {
-                    public call(): java.lang.Boolean
+                    public call(): boolean
                     public call(): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
@@ -195,7 +195,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class ScriptObjectMirror$28 implements java.util.concurrent.Callable<java.lang.Boolean> {
-                    public call(): java.lang.Boolean
+                    public call(): boolean
                     public call(): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
@@ -233,7 +233,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class ScriptObjectMirror$20 implements java.util.concurrent.Callable<java.lang.Boolean> {
-                    public call(): java.lang.Boolean
+                    public call(): boolean
                     public call(): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
@@ -255,7 +255,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class ScriptObjectMirror$15 implements java.util.concurrent.Callable<java.lang.Boolean> {
-                    public call(): java.lang.Boolean
+                    public call(): boolean
                     public call(): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
@@ -269,12 +269,12 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class ScriptObjectMirror$12 implements java.util.concurrent.Callable<java.lang.Boolean> {
-                    public call(): java.lang.Boolean
+                    public call(): boolean
                     public call(): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
                 class ScriptObjectMirror$11 implements java.util.concurrent.Callable<java.lang.Boolean> {
-                    public call(): java.lang.Boolean
+                    public call(): boolean
                     public call(): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
@@ -283,7 +283,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class ScriptObjectMirror$9 implements java.util.concurrent.Callable<java.lang.Boolean> {
-                    public call(): java.lang.Boolean
+                    public call(): boolean
                     public call(): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
@@ -298,12 +298,12 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class ScriptObjectMirror$6 implements java.util.concurrent.Callable<java.lang.Boolean> {
-                    public call(): java.lang.Boolean
+                    public call(): boolean
                     public call(): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
                 class ScriptObjectMirror$5 implements java.util.concurrent.Callable<java.lang.Boolean> {
-                    public call(): java.lang.Boolean
+                    public call(): boolean
                     public call(): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
@@ -325,7 +325,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class ScriptObjectMirror$1 implements java.util.concurrent.Callable<java.lang.String> {
-                    public call(): java.lang.String
+                    public call(): string
                     public call(): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
@@ -350,7 +350,7 @@ declare namespace jdk {
                     values(): java.util.Collection<java.lang.Object>
                     isInstance(arg0: java.lang.Object): boolean
                     isInstanceOf(arg0: java.lang.Object): boolean
-                    getClassName(): java.lang.String
+                    getClassName(): string
                     isFunction(): boolean
                     isStrictFunction(): boolean
                     isArray(): boolean
@@ -360,14 +360,14 @@ declare namespace jdk {
                     protected constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: int, arg3: int)
                     protected constructor(arg0: java.lang.String | string, arg1: java.lang.Throwable, arg2: java.lang.String | string, arg3: int, arg4: int)
                     protected constructor(arg0: java.lang.String | string, arg1: java.lang.Throwable)
-                    public getFileName(): java.lang.String
+                    public getFileName(): string
                     public setFileName(arg0: java.lang.String | string): void
                     public getLineNumber(): int
                     public setLineNumber(arg0: int): void
                     public getColumnNumber(): int
                     public setColumnNumber(arg0: int): void
                     public static getScriptFrames(arg0: java.lang.Throwable): java.lang.StackTraceElement[]
-                    public static getScriptStackString(arg0: java.lang.Throwable): java.lang.String
+                    public static getScriptStackString(arg0: java.lang.Throwable): string
                     protected getThrown(): java.lang.Object
                     protected initEcmaError(arg0: jdk.nashorn.internal.runtime.ScriptObject): jdk.nashorn.api.scripting.NashornException
                     public getEcmaError(): java.lang.Object
@@ -459,7 +459,7 @@ declare namespace jdk {
                 }
                 class DateParser$Name {
                     public matches(arg0: java.lang.String | string, arg1: int, arg2: int): boolean
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class DateParser$Token extends java.lang.Enum<jdk.nashorn.internal.parser.DateParser$Token> {
@@ -476,7 +476,7 @@ declare namespace jdk {
                 }
                 class JSONParser {
                     public constructor(arg0: java.lang.String | string, arg1: jdk.nashorn.internal.objects.Global, arg2: boolean)
-                    public static quote(arg0: java.lang.String | string): java.lang.String
+                    public static quote(arg0: java.lang.String | string): string
                     public parse(): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
@@ -501,13 +501,13 @@ declare namespace jdk {
                     protected T(arg0: int): jdk.nashorn.internal.parser.TokenType
                     protected next(): jdk.nashorn.internal.parser.TokenType
                     protected nextOrEOL(): jdk.nashorn.internal.parser.TokenType
-                    protected static message(arg0: java.lang.String | string, ...arg1: java.lang.String[]): java.lang.String
+                    protected static message(arg0: java.lang.String | string, ...arg1: java.lang.String[]): string
                     protected error(arg0: java.lang.String | string, arg1: long): jdk.nashorn.internal.runtime.ParserException
                     protected error(arg0: jdk.nashorn.internal.runtime.JSErrorType, arg1: java.lang.String | string, arg2: long): jdk.nashorn.internal.runtime.ParserException
                     protected error(arg0: java.lang.String | string): jdk.nashorn.internal.runtime.ParserException
                     protected error(arg0: jdk.nashorn.internal.runtime.JSErrorType, arg1: java.lang.String | string): jdk.nashorn.internal.runtime.ParserException
                     protected warning(arg0: jdk.nashorn.internal.runtime.JSErrorType, arg1: java.lang.String | string, arg2: long): void
-                    protected expectMessage(arg0: jdk.nashorn.internal.parser.TokenType): java.lang.String
+                    protected expectMessage(arg0: jdk.nashorn.internal.parser.TokenType): string
                     protected expect(arg0: jdk.nashorn.internal.parser.TokenType): void
                     protected expectDontAdvance(arg0: jdk.nashorn.internal.parser.TokenType): void
                     protected expectValue(arg0: jdk.nashorn.internal.parser.TokenType): java.lang.Object
@@ -537,7 +537,7 @@ declare namespace jdk {
                     public parse(arg0: java.lang.String | string, arg1: int, arg2: int, arg3: boolean): jdk.nashorn.internal.ir.FunctionNode
                     public parseFormalParameterList(): java.util.List<jdk.nashorn.internal.ir.IdentNode>
                     public parseFunctionBody(): jdk.nashorn.internal.ir.FunctionNode
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class Parser$2 {
@@ -563,9 +563,9 @@ declare namespace jdk {
                     public static descLength(arg0: long): int
                     public static descType(arg0: long): jdk.nashorn.internal.parser.TokenType
                     public static recast(arg0: long, arg1: jdk.nashorn.internal.parser.TokenType): long
-                    public static toString(arg0: jdk.nashorn.internal.runtime.Source, arg1: long, arg2: boolean): java.lang.String
-                    public static toString(arg0: jdk.nashorn.internal.runtime.Source, arg1: long): java.lang.String
-                    public static toString(arg0: long): java.lang.String
+                    public static toString(arg0: jdk.nashorn.internal.runtime.Source, arg1: long, arg2: boolean): string
+                    public static toString(arg0: jdk.nashorn.internal.runtime.Source, arg1: long): string
+                    public static toString(arg0: long): string
                     public static hashCode(arg0: long): int
                     public static class: java.lang.Class<any>
                 }
@@ -620,7 +620,7 @@ declare namespace jdk {
                     public constructor(arg0: jdk.nashorn.internal.runtime.Source, arg1: int, arg2: int, arg3: jdk.nashorn.internal.parser.TokenStream, arg4: boolean, arg5: boolean)
                     protected add(arg0: jdk.nashorn.internal.parser.TokenType, arg1: int, arg2: int): void
                     protected add(arg0: jdk.nashorn.internal.parser.TokenType, arg1: int): void
-                    public static getWhitespaceRegExp(): java.lang.String
+                    public static getWhitespaceRegExp(): string
                     public static isJSWhitespace(arg0: char): boolean
                     public static isJSEOL(arg0: char): boolean
                     protected isStringDelimiter(arg0: char): boolean
@@ -635,7 +635,7 @@ declare namespace jdk {
                     protected isEscapeCharacter(arg0: char): boolean
                     protected scanNumber(): void
                     public lexify(): void
-                    protected static message(arg0: java.lang.String | string, ...arg1: java.lang.String[]): java.lang.String
+                    protected static message(arg0: java.lang.String | string, ...arg1: java.lang.String[]): string
                     protected error(arg0: java.lang.String | string, arg1: jdk.nashorn.internal.parser.TokenType, arg2: int, arg3: int): void
                     public static class: java.lang.Class<any>
                 }
@@ -648,13 +648,13 @@ declare namespace jdk {
                 }
                 class Lexer$RegexToken extends jdk.nashorn.internal.parser.Lexer$LexerToken {
                     public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
-                    public getOptions(): java.lang.String
-                    public toString(): java.lang.String
+                    public getOptions(): string
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 abstract class Lexer$LexerToken implements java.io.Serializable {
                     protected constructor(arg0: java.lang.String | string)
-                    public getExpression(): java.lang.String
+                    public getExpression(): string
                     public static class: java.lang.Class<any>
                 }
                 class Lexer$EditStringLexer extends jdk.nashorn.internal.parser.Lexer {
@@ -793,14 +793,14 @@ declare namespace jdk {
                     public needsParens(arg0: jdk.nashorn.internal.parser.TokenType, arg1: boolean): boolean
                     public isOperator(arg0: boolean): boolean
                     public getLength(): int
-                    public getName(): java.lang.String
-                    public getNameOrType(): java.lang.String
+                    public getName(): string
+                    public getNameOrType(): string
                     public getNext(): jdk.nashorn.internal.parser.TokenType
                     public setNext(arg0: jdk.nashorn.internal.parser.TokenType): void
                     public getKind(): jdk.nashorn.internal.parser.TokenKind
                     public getPrecedence(): int
                     public isLeftAssociative(): boolean
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class TokenKind extends java.lang.Enum<jdk.nashorn.internal.parser.TokenKind> {
@@ -830,18 +830,18 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class OptimisticLexicalContext$Assumption {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 namespace debug {
                     class ASTWriter {
                         public constructor(arg0: jdk.nashorn.internal.ir.Node)
-                        public toString(): java.lang.String
+                        public toString(): string
                         public toArray(): jdk.nashorn.internal.ir.Node[]
                         public static class: java.lang.Class<any>
                     }
                     class JSONWriter extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
-                        public static parse(arg0: jdk.nashorn.internal.runtime.Context, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: boolean): java.lang.String
+                        public static parse(arg0: jdk.nashorn.internal.runtime.Context, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: boolean): string
                         public enterJoinPredecessorExpression(arg0: jdk.nashorn.internal.ir.JoinPredecessorExpression): boolean
                         protected enterDefault(arg0: jdk.nashorn.internal.ir.Node): boolean
                         protected leaveDefault(arg0: jdk.nashorn.internal.ir.Node): jdk.nashorn.internal.ir.Node
@@ -889,17 +889,17 @@ declare namespace jdk {
                     }
                     class NashornClassReader$DirectInfo<T> extends jdk.nashorn.internal.ir.debug.NashornClassReader$Constant {
                         protected info: T
-                        public toString(): java.lang.String
+                        public toString(): string
                         public static class: java.lang.Class<any>
                     }
                     class NashornClassReader$IndexInfo2 extends jdk.nashorn.internal.ir.debug.NashornClassReader$IndexInfo {
                         protected index2: int
-                        public toString(): java.lang.String
+                        public toString(): string
                         public static class: java.lang.Class<any>
                     }
                     class NashornClassReader$IndexInfo extends jdk.nashorn.internal.ir.debug.NashornClassReader$Constant {
                         protected index: int
-                        public toString(): java.lang.String
+                        public toString(): string
                         public static class: java.lang.Class<any>
                     }
                     abstract class NashornClassReader$Constant {
@@ -909,11 +909,11 @@ declare namespace jdk {
                         public static class: java.lang.Class<any>
                     }
                     class NashornClassReader$2 extends jdk.nashorn.internal.ir.debug.NashornClassReader$IndexInfo2 {
-                        public toString(): java.lang.String
+                        public toString(): string
                         public static class: java.lang.Class<any>
                     }
                     class NashornClassReader$1 extends jdk.nashorn.internal.ir.debug.NashornClassReader$IndexInfo2 {
-                        public toString(): java.lang.String
+                        public toString(): string
                         public static class: java.lang.Class<any>
                     }
                     class NashornTextifier extends jdk.internal.org.objectweb.asm.util.Printer {
@@ -969,11 +969,11 @@ declare namespace jdk {
                     }
                     class NashornTextifier$NashornLabel extends jdk.internal.org.objectweb.asm.Label {
                         public getOffset(): int
-                        public toString(): java.lang.String
+                        public toString(): string
                         public static class: java.lang.Class<any>
                     }
                     class NashornTextifier$Graph {
-                        public toString(): java.lang.String
+                        public toString(): string
                         public static class: java.lang.Class<any>
                     }
                     class ClassHistogramElement {
@@ -985,7 +985,7 @@ declare namespace jdk {
                         public getBytes(): long
                         public getClazz(): java.lang.Class<any>
                         public getInstances(): long
-                        public toString(): java.lang.String
+                        public toString(): string
                         public static class: java.lang.Class<any>
                     }
                     class ClassHistogramElement$3 implements java.util.Comparator<jdk.nashorn.internal.ir.debug.ClassHistogramElement> {
@@ -1059,7 +1059,7 @@ declare namespace jdk {
                         public constructor(arg0: boolean, arg1: boolean)
                         public constructor(arg0: jdk.nashorn.internal.ir.Node)
                         public constructor(arg0: jdk.nashorn.internal.ir.Node, arg1: boolean, arg2: boolean)
-                        public toString(): java.lang.String
+                        public toString(): string
                         public enterDefault(arg0: jdk.nashorn.internal.ir.Node): boolean
                         public enterContinueNode(arg0: jdk.nashorn.internal.ir.ContinueNode): boolean
                         public enterBreakNode(arg0: jdk.nashorn.internal.ir.BreakNode): boolean
@@ -1325,7 +1325,7 @@ declare namespace jdk {
                     public getArity(): int
                     public getReturnType(): jdk.nashorn.internal.codegen.types.Type
                     public getTokenType(): jdk.nashorn.internal.parser.TokenType
-                    public nonStrictName(): java.lang.String
+                    public nonStrictName(): string
                     public static requestFor(arg0: jdk.nashorn.internal.ir.Expression): jdk.nashorn.internal.ir.RuntimeNode$Request
                     public static isUndefinedCheck(arg0: jdk.nashorn.internal.ir.RuntimeNode$Request): boolean
                     public static isEQ(arg0: jdk.nashorn.internal.ir.RuntimeNode$Request): boolean
@@ -1350,7 +1350,7 @@ declare namespace jdk {
                 }
                 class PropertyNode extends jdk.nashorn.internal.ir.Node {
                     public constructor(arg0: long, arg1: int, arg2: jdk.nashorn.internal.ir.PropertyKey | jdk.nashorn.internal.ir.PropertyKey$$Lambda, arg3: jdk.nashorn.internal.ir.Expression, arg4: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda, arg5: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda)
-                    public getKeyName(): java.lang.String
+                    public getKeyName(): string
                     public accept(arg0: jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.LexicalContext>): jdk.nashorn.internal.ir.Node
                     public toString(arg0: java.lang.StringBuilder, arg1: boolean): void
                     public getGetter(): jdk.nashorn.internal.ir.FunctionNode
@@ -1398,13 +1398,13 @@ declare namespace jdk {
                     public initialize(arg0: jdk.nashorn.internal.ir.LexicalContext): jdk.nashorn.internal.ir.LiteralNode<any>
                     public isNull(): boolean
                     public getType(): jdk.nashorn.internal.codegen.types.Type
-                    public getPropertyName(): java.lang.String
+                    public getPropertyName(): string
                     public getBoolean(): boolean
                     public getInt32(): int
                     public getUint32(): long
                     public getLong(): long
                     public getNumber(): double
-                    public getString(): java.lang.String
+                    public getString(): string
                     public getObject(): java.lang.Object
                     public isString(): boolean
                     public isNumeric(): boolean
@@ -1649,14 +1649,14 @@ declare namespace jdk {
                 class CallNode$EvalArgs implements java.io.Serializable {
                     public constructor(arg0: java.util.List<jdk.nashorn.internal.ir.Expression>, arg1: java.lang.String | string)
                     public getArgs(): java.util.List<jdk.nashorn.internal.ir.Expression>
-                    public getLocation(): java.lang.String
+                    public getLocation(): string
                     public static class: java.lang.Class<any>
                 }
                 abstract class JumpStatement extends jdk.nashorn.internal.ir.Statement implements jdk.nashorn.internal.ir.JoinPredecessor {
                     protected constructor(arg0: int, arg1: long, arg2: int, arg3: java.lang.String | string)
                     protected constructor(arg0: jdk.nashorn.internal.ir.JumpStatement, arg1: jdk.nashorn.internal.ir.LocalVariableConversion)
                     public hasGoto(): boolean
-                    public getLabelName(): java.lang.String
+                    public getLabelName(): string
                     public toString(arg0: java.lang.StringBuilder, arg1: boolean): void
                     public getTarget(arg0: jdk.nashorn.internal.ir.LexicalContext): jdk.nashorn.internal.ir.BreakableNode
                     public getTargetLabel(arg0: jdk.nashorn.internal.ir.LexicalContext): jdk.nashorn.internal.codegen.Label
@@ -1741,7 +1741,7 @@ declare namespace jdk {
                     public constructor(arg0: long, arg1: int, arg2: jdk.nashorn.internal.ir.Expression, arg3: java.lang.String | string)
                     public accept(arg0: jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.LexicalContext>): jdk.nashorn.internal.ir.Node
                     public toString(arg0: java.lang.StringBuilder, arg1: boolean): void
-                    public getProperty(): java.lang.String
+                    public getProperty(): string
                     public setType(arg0: jdk.nashorn.internal.codegen.types.Type): jdk.nashorn.internal.ir.AccessNode
                     public setProgramPoint(arg0: int): jdk.nashorn.internal.ir.AccessNode
                     public setIsFunction(): jdk.nashorn.internal.ir.AccessNode
@@ -1755,7 +1755,7 @@ declare namespace jdk {
                     public getBody(): jdk.nashorn.internal.ir.Block
                     public accept(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.LexicalContext>): jdk.nashorn.internal.ir.Node
                     public toString(arg0: java.lang.StringBuilder, arg1: boolean): void
-                    public getName(): java.lang.String
+                    public getName(): string
                     public getCompileUnit(): jdk.nashorn.internal.codegen.CompileUnit
                     public setCompileUnit(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: jdk.nashorn.internal.codegen.CompileUnit): jdk.nashorn.internal.ir.SplitNode
                     public accept(arg0: jdk.nashorn.internal.ir.visitor.NodeVisitor): jdk.nashorn.internal.ir.Node
@@ -1809,7 +1809,7 @@ declare namespace jdk {
                     public toString(arg0: java.lang.StringBuilder, arg1: boolean): void
                     public getBody(): jdk.nashorn.internal.ir.Block
                     public setBody(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: jdk.nashorn.internal.ir.Block): jdk.nashorn.internal.ir.LabelNode
-                    public getLabelName(): java.lang.String
+                    public getLabelName(): string
                     public getLocalVariableConversion(): jdk.nashorn.internal.ir.LocalVariableConversion
                     public setLocalVariableConversion(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: jdk.nashorn.internal.ir.LocalVariableConversion): jdk.nashorn.internal.ir.LabelNode
                     public accept(arg0: jdk.nashorn.internal.ir.visitor.NodeVisitor): jdk.nashorn.internal.ir.Node
@@ -2125,7 +2125,7 @@ declare namespace jdk {
                     public findLabel<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: java.lang.String | string): jdk.nashorn.internal.ir.LabelNode
                     public isExternalTarget<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: jdk.nashorn.internal.ir.SplitNode | jdk.nashorn.internal.ir.SplitNode$$Lambda, arg1: jdk.nashorn.internal.ir.BreakableNode): boolean
                     public inUnprotectedSwitchContext<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): boolean
-                    public toString<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): java.lang.String
+                    public toString<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): string
                     public static class: java.lang.Class<any>
                 }
                 class LexicalContext$NodeIterator<T extends jdk.nashorn.internal.ir.LexicalContextNode> implements java.util.Iterator<T> {
@@ -2151,7 +2151,7 @@ declare namespace jdk {
                     public isLive(): boolean
                     public isAnyLive(): boolean
                     public static hasLiveConversion(arg0: jdk.nashorn.internal.ir.JoinPredecessor): boolean
-                    public toString(): java.lang.String
+                    public toString(): string
                     public toString(arg0: java.lang.StringBuilder): java.lang.StringBuilder
                     public static toString(arg0: jdk.nashorn.internal.ir.LocalVariableConversion, arg1: java.lang.StringBuilder): java.lang.StringBuilder
                     public static class: java.lang.Class<any>
@@ -2219,10 +2219,10 @@ declare namespace jdk {
                     (): boolean
                 }
                 interface PropertyKey {
-                    getPropertyName(): java.lang.String
+                    getPropertyName(): string
                 }
                 interface PropertyKey$$Lambda {
-                    (): java.lang.String
+                    (): string
                 }
                 class IdentNode extends jdk.nashorn.internal.ir.Expression implements jdk.nashorn.internal.ir.PropertyKey , jdk.nashorn.internal.ir.FunctionCall , jdk.nashorn.internal.ir.Optimistic , jdk.nashorn.internal.ir.JoinPredecessor {
                     public constructor(arg0: long, arg1: int, arg2: java.lang.String | string)
@@ -2231,8 +2231,8 @@ declare namespace jdk {
                     public getType(): jdk.nashorn.internal.codegen.types.Type
                     public accept(arg0: jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.LexicalContext>): jdk.nashorn.internal.ir.Node
                     public toString(arg0: java.lang.StringBuilder, arg1: boolean): void
-                    public getName(): java.lang.String
-                    public getPropertyName(): java.lang.String
+                    public getName(): string
+                    public getPropertyName(): string
                     public isLocal(): boolean
                     public getSymbol(): jdk.nashorn.internal.ir.Symbol
                     public setSymbol(arg0: jdk.nashorn.internal.ir.Symbol): jdk.nashorn.internal.ir.IdentNode
@@ -2285,7 +2285,7 @@ declare namespace jdk {
                     public less(arg0: int): boolean
                     public setNeedsSlot(arg0: boolean): jdk.nashorn.internal.ir.Symbol
                     public slotCount(): int
-                    public toString(): java.lang.String
+                    public toString(): string
                     public compareTo(arg0: jdk.nashorn.internal.ir.Symbol): int
                     public hasSlot(): boolean
                     public isBytecodeLocal(): boolean
@@ -2312,7 +2312,7 @@ declare namespace jdk {
                     public setFlags(arg0: int): jdk.nashorn.internal.ir.Symbol
                     public setFlag(arg0: int): jdk.nashorn.internal.ir.Symbol
                     public clearFlag(arg0: int): jdk.nashorn.internal.ir.Symbol
-                    public getName(): java.lang.String
+                    public getName(): string
                     public getFirstSlot(): int
                     public getSlot(arg0: jdk.nashorn.internal.codegen.types.Type): int
                     public hasSlotFor(arg0: jdk.nashorn.internal.codegen.types.Type): boolean
@@ -2402,11 +2402,11 @@ declare namespace jdk {
                     public getSource(): jdk.nashorn.internal.runtime.Source
                     public initializeDeserialized(arg0: jdk.nashorn.internal.runtime.Source, arg1: jdk.nashorn.internal.codegen.Namespace): jdk.nashorn.internal.ir.FunctionNode
                     public getId(): int
-                    public getSourceName(): java.lang.String
-                    public static getSourceName(arg0: jdk.nashorn.internal.runtime.Source): java.lang.String
+                    public getSourceName(): string
+                    public static getSourceName(arg0: jdk.nashorn.internal.runtime.Source): string
                     public static getDirectiveFlag(arg0: java.lang.String | string): int
                     public getLineNumber(): int
-                    public uniqueName(arg0: java.lang.String | string): java.lang.String
+                    public uniqueName(arg0: java.lang.String | string): string
                     public toString(arg0: java.lang.StringBuilder, arg1: boolean): void
                     public getFlags(): int
                     public getFlag(arg0: int): boolean
@@ -2439,7 +2439,7 @@ declare namespace jdk {
                     public setLastToken(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: long): jdk.nashorn.internal.ir.FunctionNode
                     public getEndParserState(): java.lang.Object
                     public setEndParserState(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: java.lang.Object): jdk.nashorn.internal.ir.FunctionNode
-                    public getName(): java.lang.String
+                    public getName(): string
                     public setName(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: java.lang.String | string): jdk.nashorn.internal.ir.FunctionNode
                     public allVarsInScope(): boolean
                     public isSplit(): boolean
@@ -2494,8 +2494,8 @@ declare namespace jdk {
                     public isAssignment(): boolean
                     public ensureUniqueLabels(arg0: jdk.nashorn.internal.ir.LexicalContext): jdk.nashorn.internal.ir.Node
                     public accept(arg0: jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.LexicalContext>): jdk.nashorn.internal.ir.Node
-                    public toString(): java.lang.String
-                    public toString(arg0: boolean): java.lang.String
+                    public toString(): string
+                    public toString(arg0: boolean): string
                     public toString(arg0: java.lang.StringBuilder): void
                     public toString(arg0: java.lang.StringBuilder, arg1: boolean): void
                     public getFinish(): int
@@ -2636,7 +2636,7 @@ declare namespace jdk {
                     public S$toISOString(arg0: java.lang.Object): void
                     public G$toJSON(): java.lang.Object
                     public public S$toJSON(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeRegExp$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -2651,7 +2651,7 @@ declare namespace jdk {
                     public S$test(arg0: java.lang.Object): void
                     public G$toString(): java.lang.Object
                     public public S$toString(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeArray$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -2704,7 +2704,7 @@ declare namespace jdk {
                     public S$reduce(arg0: java.lang.Object): void
                     public G$reduceRight(): java.lang.Object
                     public public S$reduceRight(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeUint8ClampedArray$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -2716,7 +2716,7 @@ declare namespace jdk {
                     public S$set(arg0: java.lang.Object): void
                     public G$subarray(): java.lang.Object
                     public public S$subarray(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeArrayBuffer$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -2727,7 +2727,7 @@ declare namespace jdk {
                 class NativeArrayBuffer$Prototype extends jdk.nashorn.internal.runtime.PrototypeObject {
                     public G$slice(): java.lang.Object
                     public public S$slice(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeUint8Array$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -2739,7 +2739,7 @@ declare namespace jdk {
                     public S$set(arg0: java.lang.Object): void
                     public G$subarray(): java.lang.Object
                     public public S$subarray(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeUint32Array$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -2751,7 +2751,7 @@ declare namespace jdk {
                     public S$set(arg0: java.lang.Object): void
                     public G$subarray(): java.lang.Object
                     public public S$subarray(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeUint16Array$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -2763,7 +2763,7 @@ declare namespace jdk {
                     public S$set(arg0: java.lang.Object): void
                     public G$subarray(): java.lang.Object
                     public public S$subarray(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeURIError$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -2774,7 +2774,7 @@ declare namespace jdk {
                     public S$name(arg0: java.lang.Object): void
                     public G$message(): java.lang.Object
                     public public S$message(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeTypeError$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -2785,7 +2785,7 @@ declare namespace jdk {
                     public S$name(arg0: java.lang.Object): void
                     public G$message(): java.lang.Object
                     public public S$message(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeSyntaxError$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -2796,7 +2796,7 @@ declare namespace jdk {
                     public S$name(arg0: java.lang.Object): void
                     public G$message(): java.lang.Object
                     public public S$message(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeString$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -2849,7 +2849,7 @@ declare namespace jdk {
                     public S$trimLeft(arg0: java.lang.Object): void
                     public G$trimRight(): java.lang.Object
                     public public S$trimRight(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeReferenceError$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -2860,7 +2860,7 @@ declare namespace jdk {
                     public S$name(arg0: java.lang.Object): void
                     public G$message(): java.lang.Object
                     public public S$message(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeRangeError$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -2871,7 +2871,7 @@ declare namespace jdk {
                     public S$name(arg0: java.lang.Object): void
                     public G$message(): java.lang.Object
                     public public S$message(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeObject$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -2922,7 +2922,7 @@ declare namespace jdk {
                     public S$isPrototypeOf(arg0: java.lang.Object): void
                     public G$propertyIsEnumerable(): java.lang.Object
                     public public S$propertyIsEnumerable(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeNumber$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -2946,7 +2946,7 @@ declare namespace jdk {
                     public S$toLocaleString(arg0: java.lang.Object): void
                     public G$valueOf(): java.lang.Object
                     public public S$valueOf(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeMath$Constructor extends jdk.nashorn.internal.runtime.ScriptObject {
@@ -2994,11 +2994,11 @@ declare namespace jdk {
                     public S$sqrt(arg0: java.lang.Object): void
                     public G$tan(): java.lang.Object
                     public public S$tan(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeMath$Prototype extends jdk.nashorn.internal.runtime.PrototypeObject {
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeJavaImporter$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -3009,7 +3009,7 @@ declare namespace jdk {
                     public S$__noSuchProperty__(arg0: java.lang.Object): void
                     public G$__noSuchMethod__(): java.lang.Object
                     public public S$__noSuchMethod__(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeJava$Constructor extends jdk.nashorn.internal.runtime.ScriptObject {
@@ -3041,7 +3041,7 @@ declare namespace jdk {
                     public S$_super(arg0: java.lang.Object): void
                     public G$asJSONCompatible(): java.lang.Object
                     public public S$asJSONCompatible(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeJSON$Constructor extends jdk.nashorn.internal.runtime.ScriptObject {
@@ -3049,14 +3049,14 @@ declare namespace jdk {
                     public S$parse(arg0: java.lang.Object): void
                     public G$stringify(): java.lang.Object
                     public public S$stringify(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeJSAdapter$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
                     public static class: java.lang.Class<any>
                 }
                 class NativeJSAdapter$Prototype extends jdk.nashorn.internal.runtime.PrototypeObject {
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeInt8Array$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -3068,7 +3068,7 @@ declare namespace jdk {
                     public S$set(arg0: java.lang.Object): void
                     public G$subarray(): java.lang.Object
                     public public S$subarray(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeInt32Array$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -3080,7 +3080,7 @@ declare namespace jdk {
                     public S$set(arg0: java.lang.Object): void
                     public G$subarray(): java.lang.Object
                     public public S$subarray(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeInt16Array$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -3092,7 +3092,7 @@ declare namespace jdk {
                     public S$set(arg0: java.lang.Object): void
                     public G$subarray(): java.lang.Object
                     public public S$subarray(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeFunction$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -3109,7 +3109,7 @@ declare namespace jdk {
                     public S$bind(arg0: java.lang.Object): void
                     public G$toSource(): java.lang.Object
                     public public S$toSource(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeFloat64Array$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -3121,7 +3121,7 @@ declare namespace jdk {
                     public S$set(arg0: java.lang.Object): void
                     public G$subarray(): java.lang.Object
                     public public S$subarray(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeFloat32Array$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -3133,7 +3133,7 @@ declare namespace jdk {
                     public S$set(arg0: java.lang.Object): void
                     public G$subarray(): java.lang.Object
                     public public S$subarray(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeEvalError$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -3144,7 +3144,7 @@ declare namespace jdk {
                     public S$name(arg0: java.lang.Object): void
                     public G$message(): java.lang.Object
                     public public S$message(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeError$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -3165,7 +3165,7 @@ declare namespace jdk {
                     public S$getStackTrace(arg0: java.lang.Object): void
                     public G$toString(): java.lang.Object
                     public public S$toString(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeDebug$Constructor extends jdk.nashorn.internal.runtime.ScriptObject {
@@ -3211,7 +3211,7 @@ declare namespace jdk {
                     public S$getRuntimeEvents(arg0: java.lang.Object): void
                     public G$getLastRuntimeEvent(): java.lang.Object
                     public public S$getLastRuntimeEvent(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeDataView$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -3250,7 +3250,7 @@ declare namespace jdk {
                     public S$setFloat32(arg0: java.lang.Object): void
                     public G$setFloat64(): java.lang.Object
                     public public S$setFloat64(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeBoolean$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
@@ -3261,7 +3261,7 @@ declare namespace jdk {
                     public S$toString(arg0: java.lang.Object): void
                     public G$valueOf(): java.lang.Object
                     public public S$valueOf(arg0: java.lang.Object): void
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class AccessorPropertyDescriptor extends jdk.nashorn.internal.runtime.ScriptObject implements jdk.nashorn.internal.runtime.PropertyDescriptor {
@@ -3285,7 +3285,7 @@ declare namespace jdk {
                     public type(): int
                     public hasAndEquals(arg0: jdk.nashorn.internal.runtime.PropertyDescriptor): boolean
                     public equals(arg0: java.lang.Object): boolean
-                    public toString(): java.lang.String
+                    public toString(): string
                     public public hashCode(): int
                     public static $clinit$(): void
                     public G$configurable(): java.lang.Object
@@ -3319,7 +3319,7 @@ declare namespace jdk {
                     public type(): int
                     public hasAndEquals(arg0: jdk.nashorn.internal.runtime.PropertyDescriptor): boolean
                     public equals(arg0: java.lang.Object): boolean
-                    public toString(): java.lang.String
+                    public toString(): string
                     public public hashCode(): int
                     public static $clinit$(): void
                     public G$configurable(): java.lang.Object
@@ -3351,7 +3351,7 @@ declare namespace jdk {
                     public type(): int
                     public hasAndEquals(arg0: jdk.nashorn.internal.runtime.PropertyDescriptor): boolean
                     public equals(arg0: java.lang.Object): boolean
-                    public toString(): java.lang.String
+                    public toString(): string
                     public public hashCode(): int
                     public static $clinit$(): void
                     public G$configurable(): java.lang.Object
@@ -3361,7 +3361,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class NativeArguments extends jdk.nashorn.internal.runtime.ScriptObject {
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public getArgument(arg0: int): java.lang.Object
                     public setArgument(arg0: int, arg1: java.lang.Object): void
                     public delete(arg0: int, arg1: boolean): boolean
@@ -3377,12 +3377,12 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class NativeBoolean extends jdk.nashorn.internal.runtime.ScriptObject {
-                    public safeToString(): java.lang.String
-                    public toString(): java.lang.String
+                    public safeToString(): string
+                    public toString(): string
                     public getValue(): boolean
                     public booleanValue(): boolean
-                    public getClassName(): java.lang.String
-                    public static toString(arg0: java.lang.Object): java.lang.String
+                    public getClassName(): string
+                    public static toString(arg0: java.lang.Object): string
                     public static valueOf(arg0: java.lang.Object): boolean
                     public static constructor(arg0: boolean, arg1: java.lang.Object, arg2: java.lang.Object): java.lang.Object
                     public static lookupPrimitive(arg0: jdk.internal.dynalink.linker.LinkRequest, arg1: java.lang.Object): jdk.internal.dynalink.linker.GuardedInvocation
@@ -3447,7 +3447,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class NativeDebug extends jdk.nashorn.internal.runtime.ScriptObject {
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static getArrayDataClass(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
                     public static getArrayData(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
                     public static getContext(arg0: java.lang.Object): java.lang.Object
@@ -3457,8 +3457,8 @@ declare namespace jdk {
                     public static diffPropertyMaps(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): java.lang.Object
                     public static getClass(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
                     public static equals(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): boolean
-                    public static toJavaString(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.String
-                    public static toIdentString(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.String
+                    public static toJavaString(arg0: java.lang.Object, arg1: java.lang.Object): string
+                    public static toIdentString(arg0: java.lang.Object, arg1: java.lang.Object): string
                     public static getListenerCount(arg0: java.lang.Object, arg1: java.lang.Object): int
                     public static dumpCounters(arg0: java.lang.Object): java.lang.Object
                     public static getEventQueueCapacity(arg0: java.lang.Object): java.lang.Object
@@ -3475,7 +3475,7 @@ declare namespace jdk {
                 class NativeError extends jdk.nashorn.internal.runtime.ScriptObject {
                     public instMessage: java.lang.Object
                     public nashornException: java.lang.Object
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static constructor(arg0: boolean, arg1: java.lang.Object, arg2: java.lang.Object): jdk.nashorn.internal.objects.NativeError
                     public static captureStackTrace(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
                     public static dumpStack(arg0: java.lang.Object): java.lang.Object
@@ -3500,7 +3500,7 @@ declare namespace jdk {
                 class NativeEvalError extends jdk.nashorn.internal.runtime.ScriptObject {
                     public instMessage: java.lang.Object
                     public nashornException: java.lang.Object
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public public static constructor(arg0: boolean, arg1: java.lang.Object, arg2: java.lang.Object): jdk.nashorn.internal.objects.NativeEvalError
                     public static $clinit$(): void
                     public G$instMessage(): java.lang.Object
@@ -3538,7 +3538,7 @@ declare namespace jdk {
                 class NativeFloat32Array$1 extends jdk.nashorn.internal.objects.ArrayBufferView$Factory {
                     public construct(arg0: jdk.nashorn.internal.objects.NativeArrayBuffer, arg1: int, arg2: int): jdk.nashorn.internal.objects.ArrayBufferView
                     public createArrayData(arg0: java.nio.ByteBuffer, arg1: int, arg2: int): jdk.nashorn.internal.objects.NativeFloat32Array$Float32ArrayData
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public createArrayData(arg0: java.nio.ByteBuffer, arg1: int, arg2: int): jdk.nashorn.internal.runtime.arrays.TypedArrayData
                     public static class: java.lang.Class<any>
                 }
@@ -3571,18 +3571,18 @@ declare namespace jdk {
                 class NativeFloat64Array$1 extends jdk.nashorn.internal.objects.ArrayBufferView$Factory {
                     public construct(arg0: jdk.nashorn.internal.objects.NativeArrayBuffer, arg1: int, arg2: int): jdk.nashorn.internal.objects.ArrayBufferView
                     public createArrayData(arg0: java.nio.ByteBuffer, arg1: int, arg2: int): jdk.nashorn.internal.objects.NativeFloat64Array$Float64ArrayData
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public createArrayData(arg0: java.nio.ByteBuffer, arg1: int, arg2: int): jdk.nashorn.internal.runtime.arrays.TypedArrayData
                     public static class: java.lang.Class<any>
                 }
                 class NativeFunction {
                     public static TO_APPLY_ARGS: java.lang.invoke.MethodHandle
-                    public static toString(arg0: java.lang.Object): java.lang.String
+                    public static toString(arg0: java.lang.Object): string
                     public static apply(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): java.lang.Object
                     public static toApplyArgs(arg0: java.lang.Object): java.lang.Object[]
                     public static call(arg0: java.lang.Object, ...arg1: java.lang.Object[]): java.lang.Object
                     public static bind(arg0: java.lang.Object, ...arg1: java.lang.Object[]): java.lang.Object
-                    public static toSource(arg0: java.lang.Object): java.lang.String
+                    public static toSource(arg0: java.lang.Object): string
                     public static function(arg0: boolean, arg1: java.lang.Object, ...arg2: java.lang.Object[]): jdk.nashorn.internal.runtime.ScriptFunction
                     public static $clinit$(): void
                     public static class: java.lang.Class<any>
@@ -3615,7 +3615,7 @@ declare namespace jdk {
                 class NativeInt16Array$1 extends jdk.nashorn.internal.objects.ArrayBufferView$Factory {
                     public construct(arg0: jdk.nashorn.internal.objects.NativeArrayBuffer, arg1: int, arg2: int): jdk.nashorn.internal.objects.ArrayBufferView
                     public createArrayData(arg0: java.nio.ByteBuffer, arg1: int, arg2: int): jdk.nashorn.internal.objects.NativeInt16Array$Int16ArrayData
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public createArrayData(arg0: java.nio.ByteBuffer, arg1: int, arg2: int): jdk.nashorn.internal.runtime.arrays.TypedArrayData
                     public static class: java.lang.Class<any>
                 }
@@ -3647,7 +3647,7 @@ declare namespace jdk {
                 class NativeInt32Array$1 extends jdk.nashorn.internal.objects.ArrayBufferView$Factory {
                     public construct(arg0: jdk.nashorn.internal.objects.NativeArrayBuffer, arg1: int, arg2: int): jdk.nashorn.internal.objects.ArrayBufferView
                     public createArrayData(arg0: java.nio.ByteBuffer, arg1: int, arg2: int): jdk.nashorn.internal.objects.NativeInt32Array$Int32ArrayData
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public createArrayData(arg0: java.nio.ByteBuffer, arg1: int, arg2: int): jdk.nashorn.internal.runtime.arrays.TypedArrayData
                     public static class: java.lang.Class<any>
                 }
@@ -3679,27 +3679,27 @@ declare namespace jdk {
                 class NativeInt8Array$1 extends jdk.nashorn.internal.objects.ArrayBufferView$Factory {
                     public construct(arg0: jdk.nashorn.internal.objects.NativeArrayBuffer, arg1: int, arg2: int): jdk.nashorn.internal.objects.ArrayBufferView
                     public createArrayData(arg0: java.nio.ByteBuffer, arg1: int, arg2: int): jdk.nashorn.internal.objects.NativeInt8Array$Int8ArrayData
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public createArrayData(arg0: java.nio.ByteBuffer, arg1: int, arg2: int): jdk.nashorn.internal.runtime.arrays.TypedArrayData
                     public static class: java.lang.Class<any>
                 }
                 class NativeJSAdapter extends jdk.nashorn.internal.runtime.ScriptObject {
-                    public static __get__: java.lang.String
-                    public static __put__: java.lang.String
-                    public static __call__: java.lang.String
-                    public static __new__: java.lang.String
-                    public static __getIds__: java.lang.String
-                    public static __getKeys__: java.lang.String
-                    public static __getValues__: java.lang.String
-                    public static __has__: java.lang.String
-                    public static __delete__: java.lang.String
-                    public static __preventExtensions__: java.lang.String
-                    public static __isExtensible__: java.lang.String
-                    public static __seal__: java.lang.String
-                    public static __isSealed__: java.lang.String
-                    public static __freeze__: java.lang.String
-                    public static __isFrozen__: java.lang.String
-                    public getClassName(): java.lang.String
+                    public static __get__: string
+                    public static __put__: string
+                    public static __call__: string
+                    public static __new__: string
+                    public static __getIds__: string
+                    public static __getKeys__: string
+                    public static __getValues__: string
+                    public static __has__: string
+                    public static __delete__: string
+                    public static __preventExtensions__: string
+                    public static __isExtensible__: string
+                    public static __seal__: string
+                    public static __isSealed__: string
+                    public static __freeze__: string
+                    public static __isFrozen__: string
+                    public getClassName(): string
                     public getInt(arg0: java.lang.Object, arg1: int): int
                     public getInt(arg0: double, arg1: int): int
                     public getInt(arg0: int, arg1: int): int
@@ -3784,7 +3784,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class NativeJavaImporter extends jdk.nashorn.internal.runtime.ScriptObject {
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static constructor(arg0: boolean, arg1: java.lang.Object, ...arg2: java.lang.Object[]): jdk.nashorn.internal.objects.NativeJavaImporter
                     public static __noSuchProperty__(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
                     public static __noSuchMethod__(arg0: java.lang.Object, ...arg1: java.lang.Object[]): java.lang.Object
@@ -3859,19 +3859,19 @@ declare namespace jdk {
                     public static NaN: double
                     public static NEGATIVE_INFINITY: double
                     public static POSITIVE_INFINITY: double
-                    public safeToString(): java.lang.String
-                    public toString(): java.lang.String
+                    public safeToString(): string
+                    public toString(): string
                     public getValue(): double
                     public doubleValue(): double
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static constructor(arg0: boolean, arg1: java.lang.Object, ...arg2: java.lang.Object[]): java.lang.Object
-                    public static toFixed(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.String
-                    public static toFixed(arg0: java.lang.Object, arg1: int): java.lang.String
-                    public static toExponential(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.String
-                    public static toPrecision(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.String
-                    public static toPrecision(arg0: java.lang.Object, arg1: int): java.lang.String
-                    public static toString(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.String
-                    public static toLocaleString(arg0: java.lang.Object): java.lang.String
+                    public static toFixed(arg0: java.lang.Object, arg1: java.lang.Object): string
+                    public static toFixed(arg0: java.lang.Object, arg1: int): string
+                    public static toExponential(arg0: java.lang.Object, arg1: java.lang.Object): string
+                    public static toPrecision(arg0: java.lang.Object, arg1: java.lang.Object): string
+                    public static toPrecision(arg0: java.lang.Object, arg1: int): string
+                    public static toString(arg0: java.lang.Object, arg1: java.lang.Object): string
+                    public static toLocaleString(arg0: java.lang.Object): string
                     public static valueOf(arg0: java.lang.Object): double
                     public static lookupPrimitive(arg0: jdk.internal.dynalink.linker.LinkRequest, arg1: java.lang.Object): jdk.internal.dynalink.linker.GuardedInvocation
                     public static $clinit$(): void
@@ -3896,7 +3896,7 @@ declare namespace jdk {
                     public static isExtensible(arg0: java.lang.Object, arg1: java.lang.Object): boolean
                     public static keys(arg0: java.lang.Object, arg1: java.lang.Object): jdk.nashorn.internal.runtime.ScriptObject
                     public static construct(arg0: boolean, arg1: java.lang.Object, arg2: java.lang.Object): java.lang.Object
-                    public static toString(arg0: java.lang.Object): java.lang.String
+                    public static toString(arg0: java.lang.Object): string
                     public static toLocaleString(arg0: java.lang.Object): java.lang.Object
                     public static valueOf(arg0: java.lang.Object): java.lang.Object
                     public static hasOwnProperty(arg0: java.lang.Object, arg1: java.lang.Object): boolean
@@ -3918,7 +3918,7 @@ declare namespace jdk {
                 class NativeRangeError extends jdk.nashorn.internal.runtime.ScriptObject {
                     public instMessage: java.lang.Object
                     public nashornException: java.lang.Object
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public public static constructor(arg0: boolean, arg1: java.lang.Object, arg2: java.lang.Object): jdk.nashorn.internal.objects.NativeRangeError
                     public static $clinit$(): void
                     public G$instMessage(): java.lang.Object
@@ -3930,7 +3930,7 @@ declare namespace jdk {
                 class NativeReferenceError extends jdk.nashorn.internal.runtime.ScriptObject {
                     public instMessage: java.lang.Object
                     public nashornException: java.lang.Object
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public public static constructor(arg0: boolean, arg1: java.lang.Object, arg2: java.lang.Object): jdk.nashorn.internal.objects.NativeReferenceError
                     public static $clinit$(): void
                     public G$instMessage(): java.lang.Object
@@ -3940,7 +3940,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class NativeStrictArguments extends jdk.nashorn.internal.runtime.ScriptObject {
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public getArgument(arg0: int): java.lang.Object
                     public setArgument(arg0: int, arg1: java.lang.Object): void
                     public static G$length(arg0: java.lang.Object): java.lang.Object
@@ -3948,11 +3948,11 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class NativeString extends jdk.nashorn.internal.runtime.ScriptObject implements jdk.nashorn.internal.runtime.OptimisticBuiltins {
-                    public safeToString(): java.lang.String
-                    public toString(): java.lang.String
+                    public safeToString(): string
+                    public toString(): string
                     public equals(arg0: java.lang.Object): boolean
                     public hashCode(): int
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public getLength(): java.lang.Object
                     protected findGetMethod(arg0: jdk.internal.dynalink.CallSiteDescriptor, arg1: jdk.internal.dynalink.linker.LinkRequest, arg2: java.lang.String | string): jdk.internal.dynalink.linker.GuardedInvocation
                     protected findGetIndexMethod(arg0: jdk.internal.dynalink.CallSiteDescriptor, arg1: jdk.internal.dynalink.linker.LinkRequest): jdk.internal.dynalink.linker.GuardedInvocation
@@ -3977,18 +3977,18 @@ declare namespace jdk {
                     public getOwnPropertyDescriptor(arg0: java.lang.String | string): java.lang.Object
                     protected getOwnKeys(arg0: boolean, arg1: java.util.Set<java.lang.String>): java.lang.String[]
                     public static length(arg0: java.lang.Object): java.lang.Object
-                    public static fromCharCode(arg0: java.lang.Object, ...arg1: java.lang.Object[]): java.lang.String
+                    public static fromCharCode(arg0: java.lang.Object, ...arg1: java.lang.Object[]): string
                     public static fromCharCode(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
-                    public static fromCharCode(arg0: java.lang.Object, arg1: int): java.lang.String
+                    public static fromCharCode(arg0: java.lang.Object, arg1: int): string
                     public static fromCharCode(arg0: java.lang.Object, arg1: int, arg2: int): java.lang.Object
                     public static fromCharCode(arg0: java.lang.Object, arg1: int, arg2: int, arg3: int): java.lang.Object
-                    public static fromCharCode(arg0: java.lang.Object, arg1: int, arg2: int, arg3: int, arg4: int): java.lang.String
-                    public static fromCharCode(arg0: java.lang.Object, arg1: double): java.lang.String
-                    public static toString(arg0: java.lang.Object): java.lang.String
-                    public static valueOf(arg0: java.lang.Object): java.lang.String
-                    public static charAt(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.String
-                    public static charAt(arg0: java.lang.Object, arg1: double): java.lang.String
-                    public static charAt(arg0: java.lang.Object, arg1: int): java.lang.String
+                    public static fromCharCode(arg0: java.lang.Object, arg1: int, arg2: int, arg3: int, arg4: int): string
+                    public static fromCharCode(arg0: java.lang.Object, arg1: double): string
+                    public static toString(arg0: java.lang.Object): string
+                    public static valueOf(arg0: java.lang.Object): string
+                    public static charAt(arg0: java.lang.Object, arg1: java.lang.Object): string
+                    public static charAt(arg0: java.lang.Object, arg1: double): string
+                    public static charAt(arg0: java.lang.Object, arg1: int): string
                     public static charCodeAt(arg0: java.lang.Object, arg1: java.lang.Object): double
                     public static charCodeAt(arg0: java.lang.Object, arg1: double): int
                     public static charCodeAt(arg0: java.lang.Object, arg1: long): int
@@ -4001,27 +4001,27 @@ declare namespace jdk {
                     public static lastIndexOf(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): int
                     public static localeCompare(arg0: java.lang.Object, arg1: java.lang.Object): double
                     public static match(arg0: java.lang.Object, arg1: java.lang.Object): jdk.nashorn.internal.runtime.ScriptObject
-                    public static replace(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): java.lang.String
+                    public static replace(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): string
                     public static search(arg0: java.lang.Object, arg1: java.lang.Object): int
-                    public static slice(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): java.lang.String
-                    public static slice(arg0: java.lang.Object, arg1: int): java.lang.String
-                    public static slice(arg0: java.lang.Object, arg1: double): java.lang.String
-                    public static slice(arg0: java.lang.Object, arg1: int, arg2: int): java.lang.String
-                    public static slice(arg0: java.lang.Object, arg1: double, arg2: double): java.lang.String
+                    public static slice(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): string
+                    public static slice(arg0: java.lang.Object, arg1: int): string
+                    public static slice(arg0: java.lang.Object, arg1: double): string
+                    public static slice(arg0: java.lang.Object, arg1: int, arg2: int): string
+                    public static slice(arg0: java.lang.Object, arg1: double, arg2: double): string
                     public static split(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): jdk.nashorn.internal.runtime.ScriptObject
-                    public static substr(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): java.lang.String
-                    public static substring(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): java.lang.String
-                    public static substring(arg0: java.lang.Object, arg1: int): java.lang.String
-                    public static substring(arg0: java.lang.Object, arg1: double): java.lang.String
-                    public static substring(arg0: java.lang.Object, arg1: int, arg2: int): java.lang.String
-                    public static substring(arg0: java.lang.Object, arg1: double, arg2: double): java.lang.String
-                    public static toLowerCase(arg0: java.lang.Object): java.lang.String
-                    public static toLocaleLowerCase(arg0: java.lang.Object): java.lang.String
-                    public static toUpperCase(arg0: java.lang.Object): java.lang.String
-                    public static toLocaleUpperCase(arg0: java.lang.Object): java.lang.String
-                    public static trim(arg0: java.lang.Object): java.lang.String
-                    public static trimLeft(arg0: java.lang.Object): java.lang.String
-                    public static trimRight(arg0: java.lang.Object): java.lang.String
+                    public static substr(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): string
+                    public static substring(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): string
+                    public static substring(arg0: java.lang.Object, arg1: int): string
+                    public static substring(arg0: java.lang.Object, arg1: double): string
+                    public static substring(arg0: java.lang.Object, arg1: int, arg2: int): string
+                    public static substring(arg0: java.lang.Object, arg1: double, arg2: double): string
+                    public static toLowerCase(arg0: java.lang.Object): string
+                    public static toLocaleLowerCase(arg0: java.lang.Object): string
+                    public static toUpperCase(arg0: java.lang.Object): string
+                    public static toLocaleUpperCase(arg0: java.lang.Object): string
+                    public static trim(arg0: java.lang.Object): string
+                    public static trimLeft(arg0: java.lang.Object): string
+                    public static trimRight(arg0: java.lang.Object): string
                     public static constructor(arg0: boolean, arg1: java.lang.Object, ...arg2: java.lang.Object[]): java.lang.Object
                     public static constructor(arg0: boolean, arg1: java.lang.Object): java.lang.Object
                     public static constructor(arg0: boolean, arg1: java.lang.Object, arg2: java.lang.Object): java.lang.Object
@@ -4043,7 +4043,7 @@ declare namespace jdk {
                 class NativeSyntaxError extends jdk.nashorn.internal.runtime.ScriptObject {
                     public instMessage: java.lang.Object
                     public nashornException: java.lang.Object
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public public static constructor(arg0: boolean, arg1: java.lang.Object, arg2: java.lang.Object): jdk.nashorn.internal.objects.NativeSyntaxError
                     public static $clinit$(): void
                     public G$instMessage(): java.lang.Object
@@ -4055,7 +4055,7 @@ declare namespace jdk {
                 class NativeTypeError extends jdk.nashorn.internal.runtime.ScriptObject {
                     public instMessage: java.lang.Object
                     public nashornException: java.lang.Object
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public public static constructor(arg0: boolean, arg1: java.lang.Object, arg2: java.lang.Object): jdk.nashorn.internal.objects.NativeTypeError
                     public static $clinit$(): void
                     public G$instMessage(): java.lang.Object
@@ -4067,7 +4067,7 @@ declare namespace jdk {
                 class NativeURIError extends jdk.nashorn.internal.runtime.ScriptObject {
                     public instMessage: java.lang.Object
                     public nashornException: java.lang.Object
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public public static constructor(arg0: boolean, arg1: java.lang.Object, arg2: java.lang.Object): jdk.nashorn.internal.objects.NativeURIError
                     public static $clinit$(): void
                     public G$instMessage(): java.lang.Object
@@ -4105,7 +4105,7 @@ declare namespace jdk {
                 class NativeUint16Array$1 extends jdk.nashorn.internal.objects.ArrayBufferView$Factory {
                     public construct(arg0: jdk.nashorn.internal.objects.NativeArrayBuffer, arg1: int, arg2: int): jdk.nashorn.internal.objects.ArrayBufferView
                     public createArrayData(arg0: java.nio.ByteBuffer, arg1: int, arg2: int): jdk.nashorn.internal.objects.NativeUint16Array$Uint16ArrayData
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public createArrayData(arg0: java.nio.ByteBuffer, arg1: int, arg2: int): jdk.nashorn.internal.runtime.arrays.TypedArrayData
                     public static class: java.lang.Class<any>
                 }
@@ -4139,7 +4139,7 @@ declare namespace jdk {
                 class NativeUint32Array$1 extends jdk.nashorn.internal.objects.ArrayBufferView$Factory {
                     public construct(arg0: jdk.nashorn.internal.objects.NativeArrayBuffer, arg1: int, arg2: int): jdk.nashorn.internal.objects.ArrayBufferView
                     public createArrayData(arg0: java.nio.ByteBuffer, arg1: int, arg2: int): jdk.nashorn.internal.objects.NativeUint32Array$Uint32ArrayData
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public createArrayData(arg0: java.nio.ByteBuffer, arg1: int, arg2: int): jdk.nashorn.internal.runtime.arrays.TypedArrayData
                     public static class: java.lang.Class<any>
                 }
@@ -4172,7 +4172,7 @@ declare namespace jdk {
                 class NativeUint8Array$1 extends jdk.nashorn.internal.objects.ArrayBufferView$Factory {
                     public construct(arg0: jdk.nashorn.internal.objects.NativeArrayBuffer, arg1: int, arg2: int): jdk.nashorn.internal.objects.ArrayBufferView
                     public createArrayData(arg0: java.nio.ByteBuffer, arg1: int, arg2: int): jdk.nashorn.internal.objects.NativeUint8Array$Uint8ArrayData
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public createArrayData(arg0: java.nio.ByteBuffer, arg1: int, arg2: int): jdk.nashorn.internal.runtime.arrays.TypedArrayData
                     public static class: java.lang.Class<any>
                 }
@@ -4182,7 +4182,7 @@ declare namespace jdk {
                     protected constructor(arg0: int)
                     protected constructor(arg0: jdk.nashorn.internal.objects.NativeArrayBuffer, arg1: int, arg2: int)
                     public static constructor(arg0: boolean, arg1: java.lang.Object, ...arg2: java.lang.Object[]): jdk.nashorn.internal.objects.NativeArrayBuffer
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static byteLength(arg0: java.lang.Object): int
                     public static isView(arg0: java.lang.Object, arg1: java.lang.Object): boolean
                     public static slice(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): jdk.nashorn.internal.objects.NativeArrayBuffer
@@ -4200,7 +4200,7 @@ declare namespace jdk {
                     public getLength(): java.lang.Object
                     protected factory(): jdk.nashorn.internal.objects.ArrayBufferView$Factory
                     protected getPrototype(arg0: jdk.nashorn.internal.objects.Global): jdk.nashorn.internal.runtime.ScriptObject
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     protected isFloatArray(): boolean
                     protected static constructorImpl(arg0: boolean, arg1: java.lang.Object[], arg2: jdk.nashorn.internal.objects.ArrayBufferView$Factory): jdk.nashorn.internal.objects.ArrayBufferView
                     protected static setImpl(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): java.lang.Object
@@ -4215,7 +4215,7 @@ declare namespace jdk {
                     public construct(arg0: int): jdk.nashorn.internal.objects.ArrayBufferView
                     public construct(arg0: jdk.nashorn.internal.objects.NativeArrayBuffer, arg1: int, arg2: int): jdk.nashorn.internal.objects.ArrayBufferView
                     public createArrayData(arg0: java.nio.ByteBuffer, arg1: int, arg2: int): jdk.nashorn.internal.runtime.arrays.TypedArrayData<any>
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static class: java.lang.Class<any>
                 }
                 class NativeUint8ClampedArray extends jdk.nashorn.internal.objects.ArrayBufferView {
@@ -4249,14 +4249,14 @@ declare namespace jdk {
                 class NativeUint8ClampedArray$1 extends jdk.nashorn.internal.objects.ArrayBufferView$Factory {
                     public construct(arg0: jdk.nashorn.internal.objects.NativeArrayBuffer, arg1: int, arg2: int): jdk.nashorn.internal.objects.ArrayBufferView
                     public createArrayData(arg0: java.nio.ByteBuffer, arg1: int, arg2: int): jdk.nashorn.internal.objects.NativeUint8ClampedArray$Uint8ClampedArrayData
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public createArrayData(arg0: java.nio.ByteBuffer, arg1: int, arg2: int): jdk.nashorn.internal.runtime.arrays.TypedArrayData
                     public static class: java.lang.Class<any>
                 }
                 class NativeRegExpExecResult extends jdk.nashorn.internal.runtime.ScriptObject {
                     public index: java.lang.Object
                     public input: java.lang.Object
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static length(arg0: java.lang.Object): java.lang.Object
                     public public static length(arg0: java.lang.Object, arg1: java.lang.Object): void
                     public static $clinit$(): void
@@ -4270,7 +4270,7 @@ declare namespace jdk {
                     protected findGetMethod(arg0: jdk.internal.dynalink.CallSiteDescriptor, arg1: jdk.internal.dynalink.linker.LinkRequest, arg2: java.lang.String | string): jdk.internal.dynalink.linker.GuardedInvocation
                     protected findGetIndexMethod(arg0: jdk.internal.dynalink.CallSiteDescriptor, arg1: jdk.internal.dynalink.linker.LinkRequest): jdk.internal.dynalink.linker.GuardedInvocation
                     protected findSetIndexMethod(arg0: jdk.internal.dynalink.CallSiteDescriptor, arg1: jdk.internal.dynalink.linker.LinkRequest): jdk.internal.dynalink.linker.GuardedInvocation
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public getLength(): java.lang.Object
                     public defineOwnProperty(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: boolean): boolean
                     public defineOwnProperty(arg0: int, arg1: java.lang.Object): void
@@ -4283,7 +4283,7 @@ declare namespace jdk {
                     public static setProtoLength(arg0: java.lang.Object, arg1: java.lang.Object): void
                     public static toString(arg0: java.lang.Object): java.lang.Object
                     public static assertNumeric(arg0: java.lang.Object): java.lang.Object
-                    public static toLocaleString(arg0: java.lang.Object): java.lang.String
+                    public static toLocaleString(arg0: java.lang.Object): string
                     public static construct(arg0: boolean, arg1: java.lang.Object, ...arg2: java.lang.Object[]): jdk.nashorn.internal.objects.NativeArray
                     public static construct(arg0: boolean, arg1: java.lang.Object): jdk.nashorn.internal.objects.NativeArray
                     public static construct(arg0: boolean, arg1: java.lang.Object, arg2: boolean): java.lang.Object
@@ -4295,7 +4295,7 @@ declare namespace jdk {
                     public static concat(arg0: java.lang.Object, arg1: double): jdk.nashorn.internal.objects.NativeArray
                     public static concat(arg0: java.lang.Object, arg1: java.lang.Object): jdk.nashorn.internal.objects.NativeArray
                     public static concat(arg0: java.lang.Object, ...arg1: java.lang.Object[]): jdk.nashorn.internal.objects.NativeArray
-                    public static join(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.String
+                    public static join(arg0: java.lang.Object, arg1: java.lang.Object): string
                     public static popInt(arg0: java.lang.Object): int
                     public static popDouble(arg0: java.lang.Object): double
                     public static popObject(arg0: java.lang.Object): java.lang.Object
@@ -4321,7 +4321,7 @@ declare namespace jdk {
                     public static filter(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): jdk.nashorn.internal.objects.NativeArray
                     public static reduce(arg0: java.lang.Object, ...arg1: java.lang.Object[]): java.lang.Object
                     public static reduceRight(arg0: java.lang.Object, ...arg1: java.lang.Object[]): java.lang.Object
-                    public toString(): java.lang.String
+                    public toString(): string
                     public getLinkLogic(arg0: java.lang.Class<jdk.nashorn.internal.objects.annotations.SpecializedFunction$LinkLogic>): jdk.nashorn.internal.objects.annotations.SpecializedFunction$LinkLogic
                     public hasPerInstanceAssumptions(): boolean
                     public static $clinit$(): void
@@ -4401,18 +4401,18 @@ declare namespace jdk {
                 }
                 class NativeRegExp extends jdk.nashorn.internal.runtime.ScriptObject {
                     public lastIndex: java.lang.Object
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static constructor(arg0: boolean, arg1: java.lang.Object, ...arg2: java.lang.Object[]): jdk.nashorn.internal.objects.NativeRegExp
                     public static constructor(arg0: boolean, arg1: java.lang.Object): jdk.nashorn.internal.objects.NativeRegExp
                     public static constructor(arg0: boolean, arg1: java.lang.Object, arg2: java.lang.Object): jdk.nashorn.internal.objects.NativeRegExp
                     public static constructor(arg0: boolean, arg1: java.lang.Object, arg2: java.lang.Object, arg3: java.lang.Object): jdk.nashorn.internal.objects.NativeRegExp
                     public static newRegExp(arg0: java.lang.Object, arg1: java.lang.Object): jdk.nashorn.internal.objects.NativeRegExp
-                    public safeToString(): java.lang.String
-                    public toString(): java.lang.String
+                    public safeToString(): string
+                    public toString(): string
                     public static compile(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): jdk.nashorn.internal.runtime.ScriptObject
                     public static exec(arg0: java.lang.Object, arg1: java.lang.Object): jdk.nashorn.internal.runtime.ScriptObject
                     public static test(arg0: java.lang.Object, arg1: java.lang.Object): boolean
-                    public static toString(arg0: java.lang.Object): java.lang.String
+                    public static toString(arg0: java.lang.Object): string
                     public static source(arg0: java.lang.Object): java.lang.Object
                     public static global(arg0: java.lang.Object): java.lang.Object
                     public static ignoreCase(arg0: java.lang.Object): java.lang.Object
@@ -4448,21 +4448,21 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class NativeDate extends jdk.nashorn.internal.runtime.ScriptObject {
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public getDefaultValue(arg0: java.lang.Class<any>): java.lang.Object
                     public static construct(arg0: boolean, arg1: java.lang.Object): java.lang.Object
                     public static construct(arg0: boolean, arg1: java.lang.Object, ...arg2: java.lang.Object[]): java.lang.Object
-                    public safeToString(): java.lang.String
-                    public toString(): java.lang.String
+                    public safeToString(): string
+                    public toString(): string
                     public static parse(arg0: java.lang.Object, arg1: java.lang.Object): double
                     public static UTC(arg0: java.lang.Object, ...arg1: java.lang.Object[]): double
                     public static now(arg0: java.lang.Object): double
-                    public static toString(arg0: java.lang.Object): java.lang.String
-                    public static toDateString(arg0: java.lang.Object): java.lang.String
-                    public static toTimeString(arg0: java.lang.Object): java.lang.String
-                    public static toLocaleString(arg0: java.lang.Object): java.lang.String
-                    public static toLocaleDateString(arg0: java.lang.Object): java.lang.String
-                    public static toLocaleTimeString(arg0: java.lang.Object): java.lang.String
+                    public static toString(arg0: java.lang.Object): string
+                    public static toDateString(arg0: java.lang.Object): string
+                    public static toTimeString(arg0: java.lang.Object): string
+                    public static toLocaleString(arg0: java.lang.Object): string
+                    public static toLocaleDateString(arg0: java.lang.Object): string
+                    public static toLocaleTimeString(arg0: java.lang.Object): string
                     public static valueOf(arg0: java.lang.Object): double
                     public static getTime(arg0: java.lang.Object): double
                     public static getFullYear(arg0: java.lang.Object): java.lang.Object
@@ -4499,9 +4499,9 @@ declare namespace jdk {
                     public static setFullYear(arg0: java.lang.Object, ...arg1: java.lang.Object[]): double
                     public static setUTCFullYear(arg0: java.lang.Object, ...arg1: java.lang.Object[]): double
                     public static setYear(arg0: java.lang.Object, arg1: java.lang.Object): double
-                    public static toUTCString(arg0: java.lang.Object): java.lang.String
-                    public static toGMTString(arg0: java.lang.Object): java.lang.String
-                    public static toISOString(arg0: java.lang.Object): java.lang.String
+                    public static toUTCString(arg0: java.lang.Object): string
+                    public static toGMTString(arg0: java.lang.Object): string
+                    public static toISOString(arg0: java.lang.Object): string
                     public static toJSON(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
                     public static $clinit$(): void
                     public static class: java.lang.Class<any>
@@ -4513,30 +4513,30 @@ declare namespace jdk {
                 }
                 namespace annotations {
                     interface Constructor extends java.lang.annotation.Annotation {
-                        name(): java.lang.String
+                        name(): string
                         arity(): int
                     }
                     interface Function extends java.lang.annotation.Annotation {
-                        name(): java.lang.String
+                        name(): string
                         attributes(): int
                         arity(): int
                         where(): jdk.nashorn.internal.objects.annotations.Where
                     }
                     interface Getter extends java.lang.annotation.Annotation {
-                        name(): java.lang.String
+                        name(): string
                         attributes(): int
                         where(): jdk.nashorn.internal.objects.annotations.Where
                     }
                     interface Optimistic extends java.lang.annotation.Annotation {
                     }
                     interface Property extends java.lang.annotation.Annotation {
-                        name(): java.lang.String
+                        name(): string
                         attributes(): int
-                        clazz(): java.lang.String
+                        clazz(): string
                         where(): jdk.nashorn.internal.objects.annotations.Where
                     }
                     interface Setter extends java.lang.annotation.Annotation {
-                        name(): java.lang.String
+                        name(): string
                         attributes(): int
                         where(): jdk.nashorn.internal.objects.annotations.Where
                     }
@@ -4557,7 +4557,7 @@ declare namespace jdk {
                         public static class: java.lang.Class<any>
                     }
                     interface SpecializedFunction extends java.lang.annotation.Annotation {
-                        name(): java.lang.String
+                        name(): string
                         linkLogic(): java.lang.Class<any>
                         isConstructor(): boolean
                         isOptimistic(): boolean
@@ -4585,7 +4585,7 @@ declare namespace jdk {
                         public static class: java.lang.Class<any>
                     }
                     interface ScriptClass extends java.lang.annotation.Annotation {
-                        value(): java.lang.String
+                        value(): string
                     }
                 }
                 class Global extends jdk.nashorn.internal.runtime.Scope {
@@ -4714,7 +4714,7 @@ declare namespace jdk {
                     public static getBuiltinFunctionApplySwitchPoint(): java.lang.invoke.SwitchPoint
                     public static isBuiltinFunctionPrototypeApply(): boolean
                     public static isBuiltinFunctionPrototypeCall(): boolean
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public static regExpCopy(arg0: java.lang.Object): java.lang.Object
                     public static toRegExp(arg0: java.lang.Object): jdk.nashorn.internal.objects.NativeRegExp
                     public static toObject(arg0: java.lang.Object): java.lang.Object
@@ -4825,7 +4825,7 @@ declare namespace jdk {
             }
             namespace lookup {
                 class MethodHandleFactory {
-                    public static stripName(arg0: java.lang.Object): java.lang.String
+                    public static stripName(arg0: java.lang.Object): string
                     public static getFunctionality(): jdk.nashorn.internal.lookup.MethodHandleFunctionality
                     public static addDebugPrintout(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.Object): java.lang.invoke.MethodHandle
                     public static addDebugPrintout(arg0: jdk.nashorn.internal.runtime.logging.DebugLogger, arg1: java.util.logging.Level, arg2: java.lang.invoke.MethodHandle, arg3: java.lang.Object): java.lang.invoke.MethodHandle
@@ -4837,7 +4837,7 @@ declare namespace jdk {
                     public constructor()
                     public initLogger(arg0: jdk.nashorn.internal.runtime.Context): jdk.nashorn.internal.runtime.logging.DebugLogger
                     public getLogger(): jdk.nashorn.internal.runtime.logging.DebugLogger
-                    protected static describe(...arg0: java.lang.Object[]): java.lang.String
+                    protected static describe(...arg0: java.lang.Object[]): string
                     public debug(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.String | string, ...arg2: java.lang.Object[]): java.lang.invoke.MethodHandle
                     public filterArguments(arg0: java.lang.invoke.MethodHandle, arg1: int, ...arg2: java.lang.invoke.MethodHandle[]): java.lang.invoke.MethodHandle
                     public filterReturnValue(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.invoke.MethodHandle): java.lang.invoke.MethodHandle
@@ -5055,7 +5055,7 @@ declare namespace jdk {
                     public constructor(arg0: boolean, arg1: boolean, arg2: jdk.nashorn.internal.codegen.types.Type, arg3: java.util.List<jdk.nashorn.internal.ir.Expression>)
                     public constructor(arg0: boolean, arg1: boolean, arg2: jdk.nashorn.internal.codegen.types.Type, arg3: int)
                     public constructor(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda)
-                    public toString(): java.lang.String
+                    public toString(): string
                     public size(): int
                     public getParamTypes(): jdk.nashorn.internal.codegen.types.Type[]
                     public getMethodType(): java.lang.invoke.MethodType
@@ -5223,7 +5223,7 @@ declare namespace jdk {
                     public static getLocationDescriptor(arg0: jdk.nashorn.internal.runtime.Source, arg1: int, arg2: jdk.nashorn.internal.codegen.types.Type[]): java.lang.Object
                     public static store(arg0: java.lang.Object, arg1: java.util.Map<java.lang.Integer, jdk.nashorn.internal.codegen.types.Type>): void
                     public static load(arg0: java.lang.Object): java.util.Map<java.lang.Integer, jdk.nashorn.internal.codegen.types.Type>
-                    public static getVersionDirName(): java.lang.String
+                    public static getVersionDirName(): string
                     public static class: java.lang.Class<any>
                 }
                 class OptimisticTypesPersistence$PathAndTime implements java.lang.Comparable<jdk.nashorn.internal.codegen.OptimisticTypesPersistence$PathAndTime> {
@@ -5306,7 +5306,7 @@ declare namespace jdk {
                     protected setClassAndName(arg0: jdk.nashorn.internal.codegen.CompileUnit, arg1: java.lang.String | string): void
                     public generateInvoke(arg0: jdk.nashorn.internal.codegen.MethodEmitter): jdk.nashorn.internal.codegen.MethodEmitter
                     protected generateScopeCall(): void
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class MapCreator<T> {
@@ -5314,7 +5314,7 @@ declare namespace jdk {
                 }
                 class MapTuple<T> {
                     public getValueType(): java.lang.Class<any>
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CodeGeneratorLexicalContext extends jdk.nashorn.internal.ir.LexicalContext {
@@ -5362,12 +5362,12 @@ declare namespace jdk {
                     (arg0: jdk.nashorn.internal.codegen.MethodEmitter, arg1: jdk.nashorn.internal.codegen.types.Type, arg2: int, arg3: int, arg4: int): void
                 }
                 class CodeGenerator$ContinuationInfo {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CodeGenerator$OptimismExceptionHandlerSpec implements java.lang.Comparable<jdk.nashorn.internal.codegen.CodeGenerator$OptimismExceptionHandlerSpec> {
                     public compareTo(arg0: jdk.nashorn.internal.codegen.CodeGenerator$OptimismExceptionHandlerSpec): int
-                    public toString(): java.lang.String
+                    public toString(): string
                     public compareTo(arg0: java.lang.Object): int
                     public static class: java.lang.Class<any>
                 }
@@ -5515,7 +5515,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class CodeGenerator$11 implements java.util.function$.Supplier<java.lang.Boolean> {
-                    public get(): java.lang.Boolean
+                    public get(): boolean
                     public get(): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
@@ -5534,7 +5534,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class CodeGenerator$8 implements java.util.function$.Supplier<java.lang.Boolean> {
-                    public get(): java.lang.Boolean
+                    public get(): boolean
                     public get(): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
@@ -5660,7 +5660,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class CodeGenerator$TypeBounds {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CodeGenerator$LoadFastScopeVar extends jdk.nashorn.internal.codegen.CodeGenerator$LoadScopeVar {
@@ -5837,12 +5837,12 @@ declare namespace jdk {
                 class Label implements java.io.Serializable {
                     public constructor(arg0: java.lang.String | string)
                     public constructor(arg0: jdk.nashorn.internal.codegen.Label)
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class Label$Stack implements java.lang.Cloneable {
                     public clone(): jdk.nashorn.internal.codegen.Label$Stack
-                    public toString(): java.lang.String
+                    public toString(): string
                     public clone(): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
@@ -5850,8 +5850,8 @@ declare namespace jdk {
                     public constructor()
                     public constructor(arg0: jdk.nashorn.internal.codegen.Namespace)
                     public getParent(): jdk.nashorn.internal.codegen.Namespace
-                    public uniqueName(arg0: java.lang.String | string): java.lang.String
-                    public toString(): java.lang.String
+                    public uniqueName(arg0: java.lang.String | string): string
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CompilationException extends java.lang.RuntimeException {
@@ -5866,15 +5866,15 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$InstallPhase extends jdk.nashorn.internal.codegen.CompilationPhase {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$BytecodeGenerationPhase extends jdk.nashorn.internal.codegen.CompilationPhase {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$ReinitializeCachedPhase extends jdk.nashorn.internal.codegen.CompilationPhase {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$ReinitializeCachedPhase$1 extends jdk.nashorn.internal.codegen.ReplaceCompileUnits {
@@ -5882,7 +5882,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$ReuseCompileUnitsPhase extends jdk.nashorn.internal.codegen.CompilationPhase {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$ReuseCompileUnitsPhase$1 extends jdk.nashorn.internal.codegen.ReplaceCompileUnits {
@@ -5890,15 +5890,15 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$LocalVariableTypeCalculationPhase extends jdk.nashorn.internal.codegen.CompilationPhase {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$OptimisticTypeAssignmentPhase extends jdk.nashorn.internal.codegen.CompilationPhase {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$DeclareLocalSymbolsPhase extends jdk.nashorn.internal.codegen.CompilationPhase {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$DeclareLocalSymbolsPhase$1 extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
@@ -5907,23 +5907,23 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$ScopeDepthComputationPhase extends jdk.nashorn.internal.codegen.CompilationPhase {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$SymbolAssignmentPhase extends jdk.nashorn.internal.codegen.CompilationPhase {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$CacheAstPhase extends jdk.nashorn.internal.codegen.CompilationPhase {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$ProgramPointPhase extends jdk.nashorn.internal.codegen.CompilationPhase {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$SplittingPhase extends jdk.nashorn.internal.codegen.CompilationPhase {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$SplittingPhase$1 extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
@@ -5932,15 +5932,15 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$ApplySpecializationPhase extends jdk.nashorn.internal.codegen.CompilationPhase {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$LoweringPhase extends jdk.nashorn.internal.codegen.CompilationPhase {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CompilationPhase$ConstantFoldingPhase extends jdk.nashorn.internal.codegen.CompilationPhase {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class TypeEvaluator {
@@ -5950,7 +5950,7 @@ declare namespace jdk {
                     public constructor(arg0: int, arg1: java.lang.invoke.MethodType, arg2: boolean)
                     public getParameterTypes(arg0: int): jdk.nashorn.internal.codegen.types.Type[]
                     public needsCallee(): boolean
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class ConstantData {
@@ -5979,8 +5979,8 @@ declare namespace jdk {
                     public isInitializing(arg0: jdk.nashorn.internal.runtime.RecompilableScriptFunctionData, arg1: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
                     public canHold(arg0: long): boolean
                     public getClassEmitter(): jdk.nashorn.internal.codegen.ClassEmitter
-                    public getUnitClassName(): java.lang.String
-                    public toString(): java.lang.String
+                    public getUnitClassName(): string
+                    public toString(): string
                     public compareTo(arg0: jdk.nashorn.internal.codegen.CompileUnit): int
                     public compareTo(arg0: java.lang.Object): int
                     public static class: java.lang.Class<any>
@@ -5989,7 +5989,7 @@ declare namespace jdk {
                     protected functionNode: jdk.nashorn.internal.ir.FunctionNode
                     public begin(): void
                     public end(): void
-                    public toString(): java.lang.String
+                    public toString(): string
                     public athrow(): void
                     protected getTypesFromStack(arg0: int): jdk.nashorn.internal.codegen.types.Type[]
                     public static class: java.lang.Class<any>
@@ -6005,10 +6005,10 @@ declare namespace jdk {
                     public getLogger(): jdk.nashorn.internal.runtime.logging.DebugLogger
                     public initLogger(arg0: jdk.nashorn.internal.runtime.Context): jdk.nashorn.internal.runtime.logging.DebugLogger
                     public static pack(arg0: java.lang.Number): long
-                    public static getClassName(arg0: int, arg1: boolean): java.lang.String
-                    public static getClassName(arg0: int, arg1: int, arg2: boolean): java.lang.String
+                    public static getClassName(arg0: int, arg1: boolean): string
+                    public static getClassName(arg0: int, arg1: int, arg2: boolean): string
                     public static getFieldCount(arg0: java.lang.Class<any>): int
-                    public static getFieldName(arg0: int, arg1: jdk.nashorn.internal.codegen.types.Type): java.lang.String
+                    public static getFieldName(arg0: int, arg1: jdk.nashorn.internal.codegen.types.Type): string
                     public generate(arg0: java.lang.String | string): byte[]
                     public generate(arg0: int): byte[]
                     public generate(arg0: int, arg1: int): byte[]
@@ -6049,12 +6049,12 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class ClassEmitter$1 extends jdk.internal.org.objectweb.asm.ClassWriter {
-                    protected getCommonSuperClass(arg0: java.lang.String | string, arg1: java.lang.String | string): java.lang.String
+                    protected getCommonSuperClass(arg0: java.lang.String | string, arg1: java.lang.String | string): string
                     public static class: java.lang.Class<any>
                 }
                 class Compiler implements jdk.nashorn.internal.runtime.logging.Loggable {
-                    public static SCRIPTS_PACKAGE: java.lang.String
-                    public static OBJECTS_PACKAGE: java.lang.String
+                    public static SCRIPTS_PACKAGE: string
+                    public static OBJECTS_PACKAGE: string
                     public static forInitialCompilation(arg0: jdk.nashorn.internal.runtime.CodeInstaller, arg1: jdk.nashorn.internal.runtime.Source, arg2: jdk.nashorn.internal.runtime.ErrorManager, arg3: boolean): jdk.nashorn.internal.codegen.Compiler
                     public static forNoInstallerCompilation(arg0: jdk.nashorn.internal.runtime.Context, arg1: jdk.nashorn.internal.runtime.Source, arg2: boolean): jdk.nashorn.internal.codegen.Compiler
                     public static forOnDemandCompilation(arg0: jdk.nashorn.internal.runtime.CodeInstaller, arg1: jdk.nashorn.internal.runtime.Source, arg2: boolean, arg3: jdk.nashorn.internal.runtime.RecompilableScriptFunctionData, arg4: jdk.nashorn.internal.codegen.TypeMap, arg5: java.util.Map<java.lang.Integer, jdk.nashorn.internal.codegen.types.Type>, arg6: java.lang.Object, arg7: int[], arg8: jdk.nashorn.internal.runtime.ScriptObject): jdk.nashorn.internal.codegen.Compiler
@@ -6064,7 +6064,7 @@ declare namespace jdk {
                     public compile(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda, arg1: jdk.nashorn.internal.codegen.Compiler$CompilationPhases): jdk.nashorn.internal.ir.FunctionNode
                     public persistClassInfo(arg0: java.lang.String | string, arg1: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): void
                     public static updateCompilationId(arg0: int): void
-                    public static binaryName(arg0: java.lang.String | string): java.lang.String
+                    public static binaryName(arg0: java.lang.String | string): string
                     public static class: java.lang.Class<any>
                 }
                 class Compiler$2 implements java.util.Comparator<jdk.nashorn.internal.ir.debug.ClassHistogramElement> {
@@ -6087,7 +6087,7 @@ declare namespace jdk {
                     public static GENERATE_BYTECODE_AND_INSTALL_RESTOF: jdk.nashorn.internal.codegen.Compiler$CompilationPhases
                     public static COMPILE_ALL_RESTOF: jdk.nashorn.internal.codegen.Compiler$CompilationPhases
                     public static COMPILE_CACHED_RESTOF: jdk.nashorn.internal.codegen.Compiler$CompilationPhases
-                    public toString(): java.lang.String
+                    public toString(): string
                     public iterator(): java.util.Iterator<jdk.nashorn.internal.codegen.CompilationPhase>
                     public static class: java.lang.Class<any>
                 }
@@ -6182,8 +6182,8 @@ declare namespace jdk {
                     class ObjectType extends jdk.nashorn.internal.codegen.types.Type {
                         protected constructor()
                         protected constructor(arg0: java.lang.Class<any>)
-                        public toString(): java.lang.String
-                        public getShortDescriptor(): java.lang.String
+                        public toString(): string
+                        public getShortDescriptor(): string
                         public add(arg0: jdk.internal.org.objectweb.asm.MethodVisitor, arg1: int): jdk.nashorn.internal.codegen.types.Type
                         public load(arg0: jdk.internal.org.objectweb.asm.MethodVisitor, arg1: int): jdk.nashorn.internal.codegen.types.Type
                         public store(arg0: jdk.internal.org.objectweb.asm.MethodVisitor, arg1: int): void
@@ -6206,7 +6206,7 @@ declare namespace jdk {
                         public newarray(arg0: jdk.internal.org.objectweb.asm.MethodVisitor): jdk.nashorn.internal.codegen.types.Type
                         public newarray(arg0: jdk.internal.org.objectweb.asm.MethodVisitor, arg1: int): jdk.nashorn.internal.codegen.types.Type
                         public load(arg0: jdk.internal.org.objectweb.asm.MethodVisitor, arg1: int): jdk.nashorn.internal.codegen.types.Type
-                        public toString(): java.lang.String
+                        public toString(): string
                         public convert(arg0: jdk.internal.org.objectweb.asm.MethodVisitor, arg1: jdk.nashorn.internal.codegen.types.Type): jdk.nashorn.internal.codegen.types.Type
                         public getBytecodeStackType(): char
                         public _return(arg0: jdk.internal.org.objectweb.asm.MethodVisitor): void
@@ -6216,7 +6216,7 @@ declare namespace jdk {
                         public loadUndefined(arg0: jdk.internal.org.objectweb.asm.MethodVisitor): jdk.nashorn.internal.codegen.types.Type
                         public store(arg0: jdk.internal.org.objectweb.asm.MethodVisitor, arg1: int): void
                         public add(arg0: jdk.internal.org.objectweb.asm.MethodVisitor, arg1: int): jdk.nashorn.internal.codegen.types.Type
-                        public getShortDescriptor(): java.lang.String
+                        public getShortDescriptor(): string
                         public static class: java.lang.Class<any>
                     }
                     interface BytecodeBitwiseOps {
@@ -6283,15 +6283,15 @@ declare namespace jdk {
                         public nextWider(): jdk.nashorn.internal.codegen.types.Type
                         public getBoxedType(): java.lang.Class<any>
                         public getBytecodeStackType(): char
-                        public static getMethodDescriptor(arg0: jdk.nashorn.internal.codegen.types.Type, ...arg1: jdk.nashorn.internal.codegen.types.Type[]): java.lang.String
-                        public static getMethodDescriptor(arg0: java.lang.Class<any>, ...arg1: java.lang.Class<any>[]): java.lang.String
+                        public static getMethodDescriptor(arg0: jdk.nashorn.internal.codegen.types.Type, ...arg1: jdk.nashorn.internal.codegen.types.Type[]): string
+                        public static getMethodDescriptor(arg0: java.lang.Class<any>, ...arg1: java.lang.Class<any>[]): string
                         public static getShortSignatureDescriptor(arg0: jdk.nashorn.internal.codegen.types.Type): char
                         public static getMethodReturnType(arg0: java.lang.String | string): jdk.nashorn.internal.codegen.types.Type
                         public static getMethodArguments(arg0: java.lang.String | string): jdk.nashorn.internal.codegen.types.Type[]
                         public static writeTypeMap(arg0: java.util.Map<java.lang.Integer, jdk.nashorn.internal.codegen.types.Type>, arg1: java.io.DataOutput): void
                         public static readTypeMap(arg0: java.io.DataInput): java.util.Map<java.lang.Integer, jdk.nashorn.internal.codegen.types.Type>
-                        public getInternalName(): java.lang.String
-                        public static getInternalName(arg0: java.lang.Class<any>): java.lang.String
+                        public getInternalName(): string
+                        public static getInternalName(arg0: java.lang.Class<any>): string
                         public isUnknown(): boolean
                         public isJSPrimitive(): boolean
                         public isBoolean(): boolean
@@ -6321,9 +6321,9 @@ declare namespace jdk {
                         public static narrowest(arg0: jdk.nashorn.internal.codegen.types.Type, arg1: jdk.nashorn.internal.codegen.types.Type, arg2: jdk.nashorn.internal.codegen.types.Type): jdk.nashorn.internal.codegen.types.Type
                         public narrowest(arg0: jdk.nashorn.internal.codegen.types.Type): jdk.nashorn.internal.codegen.types.Type
                         public widest(arg0: jdk.nashorn.internal.codegen.types.Type): jdk.nashorn.internal.codegen.types.Type
-                        public getDescriptor(): java.lang.String
-                        public getShortDescriptor(): java.lang.String
-                        public toString(): java.lang.String
+                        public getDescriptor(): string
+                        public getShortDescriptor(): string
+                        public toString(): string
                         public static typeFor(arg0: java.lang.Class<any>): jdk.nashorn.internal.codegen.types.Type
                         public compareTo(arg0: jdk.nashorn.internal.codegen.types.Type): int
                         public dup(arg0: jdk.internal.org.objectweb.asm.MethodVisitor, arg1: int): jdk.nashorn.internal.codegen.types.Type
@@ -6336,12 +6336,12 @@ declare namespace jdk {
                         public static class: java.lang.Class<any>
                     }
                     class Type$7 extends jdk.nashorn.internal.codegen.types.Type$ValueLessType {
-                        public getDescriptor(): java.lang.String
+                        public getDescriptor(): string
                         public getBytecodeStackType(): char
                         public static class: java.lang.Class<any>
                     }
                     class Type$6 extends jdk.nashorn.internal.codegen.types.Type$ValueLessType {
-                        public getDescriptor(): java.lang.String
+                        public getDescriptor(): string
                         public getBytecodeStackType(): char
                         public static class: java.lang.Class<any>
                     }
@@ -6360,11 +6360,11 @@ declare namespace jdk {
                     interface Type$Unknown {
                     }
                     class Type$5 extends jdk.nashorn.internal.codegen.types.ObjectType {
-                        public toString(): java.lang.String
+                        public toString(): string
                         public static class: java.lang.Class<any>
                     }
                     class Type$4 extends jdk.nashorn.internal.codegen.types.ObjectType {
-                        public toString(): java.lang.String
+                        public toString(): string
                         public static class: java.lang.Class<any>
                     }
                     class Type$3 extends jdk.nashorn.internal.codegen.types.ArrayType {
@@ -6438,13 +6438,13 @@ declare namespace jdk {
                     public static values(): jdk.nashorn.internal.codegen.CompilerConstants[]
                     public static valueOf(arg0: java.lang.String | string): jdk.nashorn.internal.codegen.CompilerConstants
                     public static isCompilerConstant(arg0: java.lang.String | string): boolean
-                    public symbolName(): java.lang.String
+                    public symbolName(): string
                     public type(): java.lang.Class<any>
                     public slot(): int
-                    public descriptor(): java.lang.String
-                    public static className(arg0: java.lang.Class<any>): java.lang.String
-                    public static methodDescriptor(arg0: java.lang.Class<any>, ...arg1: java.lang.Class<any>[]): java.lang.String
-                    public static typeDescriptor(arg0: java.lang.Class<any>): java.lang.String
+                    public descriptor(): string
+                    public static className(arg0: java.lang.Class<any>): string
+                    public static methodDescriptor(arg0: java.lang.Class<any>, ...arg1: java.lang.Class<any>[]): string
+                    public static typeDescriptor(arg0: java.lang.Class<any>): string
                     public static constructorNoLookup(arg0: java.lang.Class<any>): jdk.nashorn.internal.codegen.CompilerConstants$Call
                     public static constructorNoLookup(arg0: java.lang.String | string, ...arg1: java.lang.Class<any>[]): jdk.nashorn.internal.codegen.CompilerConstants$Call
                     public static constructorNoLookup(arg0: java.lang.Class<any>, ...arg1: java.lang.Class<any>[]): jdk.nashorn.internal.codegen.CompilerConstants$Call
@@ -6468,9 +6468,9 @@ declare namespace jdk {
                     protected constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
                     protected constructor(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string)
                     public invoke(arg0: jdk.internal.org.objectweb.asm.MethodVisitor): void
-                    public descriptor(): java.lang.String
-                    public name(): java.lang.String
-                    public className(): java.lang.String
+                    public descriptor(): string
+                    public name(): string
+                    public className(): string
                     public methodHandle(): java.lang.invoke.MethodHandle
                     public static class: java.lang.Class<any>
                 }
@@ -6478,22 +6478,22 @@ declare namespace jdk {
                     protected constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
                     protected get(arg0: jdk.nashorn.internal.codegen.MethodEmitter): jdk.nashorn.internal.codegen.MethodEmitter
                     protected put(arg0: jdk.nashorn.internal.codegen.MethodEmitter): void
-                    public descriptor(): java.lang.String
-                    public name(): java.lang.String
-                    public className(): java.lang.String
+                    public descriptor(): string
+                    public name(): string
+                    public className(): string
                     public methodHandle(): java.lang.invoke.MethodHandle
                     public static class: java.lang.Class<any>
                 }
                 abstract class CompilerConstants$Access {
                     protected methodHandle: java.lang.invoke.MethodHandle
-                    protected className: java.lang.String
-                    protected name: java.lang.String
-                    protected descriptor: java.lang.String
+                    protected className: string
+                    protected name: string
+                    protected descriptor: string
                     protected constructor(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string)
                     public methodHandle(): java.lang.invoke.MethodHandle
-                    public className(): java.lang.String
-                    public name(): java.lang.String
-                    public descriptor(): java.lang.String
+                    public className(): string
+                    public name(): string
+                    public descriptor(): string
                     public static class: java.lang.Class<any>
                 }
                 class CompilerConstants$9 extends jdk.nashorn.internal.codegen.CompilerConstants$Call {
@@ -6551,7 +6551,7 @@ declare namespace jdk {
                 }
                 class ConsString implements java.lang.CharSequence {
                     public constructor(arg0: java.lang.CharSequence, arg1: java.lang.CharSequence)
-                    public toString(): java.lang.String
+                    public toString(): string
                     public length(): int
                     public charAt(arg0: int): char
                     public subSequence(arg0: int, arg1: int): java.lang.CharSequence
@@ -6559,13 +6559,13 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class Debug {
-                    public static firstJSFrame(arg0: java.lang.Throwable): java.lang.String
-                    public static firstJSFrame(): java.lang.String
-                    public static scriptStack(): java.lang.String
-                    public static id(arg0: java.lang.Object): java.lang.String
+                    public static firstJSFrame(arg0: java.lang.Throwable): string
+                    public static firstJSFrame(): string
+                    public static scriptStack(): string
+                    public static id(arg0: java.lang.Object): string
                     public static intId(arg0: java.lang.Object): int
-                    public static stackTraceElementAt(arg0: int): java.lang.String
-                    public static caller(arg0: int, arg1: int, ...arg2: java.lang.String[]): java.lang.String
+                    public static stackTraceElementAt(arg0: int): string
+                    public static caller(arg0: int, arg1: int, ...arg2: java.lang.String[]): string
                     public static dumpTokens(arg0: jdk.nashorn.internal.runtime.Source, arg1: jdk.nashorn.internal.parser.Lexer, arg2: jdk.nashorn.internal.parser.TokenStream): void
                     public static class: java.lang.Class<any>
                 }
@@ -6609,13 +6609,13 @@ declare namespace jdk {
                     public static encodeURIComponent(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
                     public static decodeURI(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
                     public static decodeURIComponent(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
-                    public static escape(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.String
-                    public static unescape(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.String
+                    public static escape(arg0: java.lang.Object, arg1: java.lang.Object): string
+                    public static unescape(arg0: java.lang.Object, arg1: java.lang.Object): string
                     public static anonymous(arg0: java.lang.Object): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
                 class JSONFunctions {
-                    public static quote(arg0: java.lang.String | string): java.lang.String
+                    public static quote(arg0: java.lang.String | string): string
                     public static parse(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
@@ -6641,7 +6641,7 @@ declare namespace jdk {
                     public values(): java.util.Collection<java.lang.Object>
                     public isInstance(arg0: java.lang.Object): boolean
                     public isInstanceOf(arg0: java.lang.Object): boolean
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public isFunction(): boolean
                     public isStrictFunction(): boolean
                     public isArray(): boolean
@@ -6695,12 +6695,12 @@ declare namespace jdk {
                 }
                 class NativeJavaPackage extends jdk.nashorn.internal.runtime.ScriptObject {
                     public constructor(arg0: java.lang.String | string, arg1: jdk.nashorn.internal.runtime.ScriptObject)
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public equals(arg0: java.lang.Object): boolean
                     public hashCode(): int
-                    public getName(): java.lang.String
-                    public safeToString(): java.lang.String
-                    public toString(): java.lang.String
+                    public getName(): string
+                    public safeToString(): string
+                    public toString(): string
                     public getDefaultValue(arg0: java.lang.Class<any>): java.lang.Object
                     protected findNewMethod(arg0: jdk.internal.dynalink.CallSiteDescriptor, arg1: jdk.internal.dynalink.linker.LinkRequest): jdk.internal.dynalink.linker.GuardedInvocation
                     protected findCallMethod(arg0: jdk.internal.dynalink.CallSiteDescriptor, arg1: jdk.internal.dynalink.linker.LinkRequest): jdk.internal.dynalink.linker.GuardedInvocation
@@ -6712,8 +6712,8 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class NumberToString {
-                    public static stringFor(arg0: double): java.lang.String
-                    public toString(): java.lang.String
+                    public static stringFor(arg0: double): string
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class OptimisticReturnFilters {
@@ -6737,20 +6737,20 @@ declare namespace jdk {
                     public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
                     public countTokens(): int
                     public hasMoreTokens(): boolean
-                    public nextToken(): java.lang.String
+                    public nextToken(): string
                     public static class: java.lang.Class<any>
                 }
                 class ScriptingFunctions {
                     public static READLINE: java.lang.invoke.MethodHandle
                     public static READFULLY: java.lang.invoke.MethodHandle
                     public static EXEC: java.lang.invoke.MethodHandle
-                    public static EXEC_NAME: java.lang.String
-                    public static OUT_NAME: java.lang.String
-                    public static ERR_NAME: java.lang.String
-                    public static EXIT_NAME: java.lang.String
-                    public static THROW_ON_ERROR_NAME: java.lang.String
-                    public static ENV_NAME: java.lang.String
-                    public static PWD_NAME: java.lang.String
+                    public static EXEC_NAME: string
+                    public static OUT_NAME: string
+                    public static ERR_NAME: string
+                    public static EXIT_NAME: string
+                    public static THROW_ON_ERROR_NAME: string
+                    public static ENV_NAME: string
+                    public static PWD_NAME: string
                     public static readLine(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
                     public static readFully(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
                     public static exec(arg0: java.lang.Object, ...arg1: java.lang.Object[]): java.lang.Object
@@ -6781,8 +6781,8 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class Version {
-                    public static version(): java.lang.String
-                    public static fullVersion(): java.lang.String
+                    public static version(): string
+                    public static fullVersion(): string
                     public static class: java.lang.Class<any>
                 }
                 class WithObject extends jdk.nashorn.internal.runtime.Scope {
@@ -6827,8 +6827,8 @@ declare namespace jdk {
                     public getByteCodeSlots(): java.lang.Object[]
                     public getPreviousContinuationEntryPoints(): int[]
                     public getRuntimeScope(): jdk.nashorn.internal.runtime.ScriptObject
-                    public getMessage(): java.lang.String
-                    public getMessageShort(): java.lang.String
+                    public getMessage(): string
+                    public getMessageShort(): string
                     public static class: java.lang.Class<any>
                 }
                 class BitVector implements java.lang.Cloneable {
@@ -6850,7 +6850,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class CompiledFunction {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CompiledFunction$OptimismInfo {
@@ -6876,7 +6876,7 @@ declare namespace jdk {
                 }
                 class AllocationStrategy implements java.io.Serializable {
                     public constructor(arg0: int, arg1: boolean)
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class AllocationStrategy$AllocatorMap {
@@ -6884,16 +6884,16 @@ declare namespace jdk {
                 }
                 class Timing implements jdk.nashorn.internal.runtime.logging.Loggable {
                     public constructor(arg0: boolean)
-                    public getLogInfo(): java.lang.String
+                    public getLogInfo(): string
                     public getLogInfoLines(): java.lang.String[]
                     public accumulateTime(arg0: java.lang.String | string, arg1: long): void
                     public initLogger(arg0: jdk.nashorn.internal.runtime.Context): jdk.nashorn.internal.runtime.logging.DebugLogger
                     public getLogger(): jdk.nashorn.internal.runtime.logging.DebugLogger
-                    public static toMillisPrint(arg0: long): java.lang.String
+                    public static toMillisPrint(arg0: long): string
                     public static class: java.lang.Class<any>
                 }
                 class Timing$TimeSupplier implements java.util.function$.Supplier<java.lang.String> {
-                    public get(): java.lang.String
+                    public get(): string
                     public get(): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
@@ -6916,13 +6916,13 @@ declare namespace jdk {
                         public static RUNTIME_EVENT_QUEUE_SIZE: int
                         public constructor(arg0: java.util.logging.Level, arg1: T)
                         public getValue(): T
-                        public toString(): java.lang.String
+                        public toString(): string
                         public getValueClass(): java.lang.Class<any>
                         public static class: java.lang.Class<any>
                     }
                 }
                 class RecompilableScriptFunctionData extends jdk.nashorn.internal.runtime.ScriptFunctionData implements jdk.nashorn.internal.runtime.logging.Loggable {
-                    public static RECOMPILATION_PREFIX: java.lang.String
+                    public static RECOMPILATION_PREFIX: string
                     public constructor(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda, arg1: jdk.nashorn.internal.runtime.CodeInstaller, arg2: jdk.nashorn.internal.runtime.AllocationStrategy, arg3: java.util.Map<java.lang.Integer, jdk.nashorn.internal.runtime.RecompilableScriptFunctionData>, arg4: java.util.Map<java.lang.String, java.lang.Integer>, arg5: java.util.Set<java.lang.String>)
                     public getLogger(): jdk.nashorn.internal.runtime.logging.DebugLogger
                     public initLogger(arg0: jdk.nashorn.internal.runtime.Context): jdk.nashorn.internal.runtime.logging.DebugLogger
@@ -6932,9 +6932,9 @@ declare namespace jdk {
                     public getEndParserState(): java.lang.Object
                     public getParent(): jdk.nashorn.internal.runtime.RecompilableScriptFunctionData
                     public initTransients(arg0: jdk.nashorn.internal.runtime.Source, arg1: jdk.nashorn.internal.runtime.CodeInstaller): void
-                    public toString(): java.lang.String
-                    public toStringVerbose(): java.lang.String
-                    public getFunctionName(): java.lang.String
+                    public toString(): string
+                    public toStringVerbose(): string
+                    public getFunctionName(): string
                     public inDynamicContext(): boolean
                     public setCachedAst(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): void
                     public initializeCode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): void
@@ -7001,7 +7001,7 @@ declare namespace jdk {
                 class FunctionInitializer implements java.io.Serializable {
                     public constructor(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda)
                     public constructor(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda, arg1: java.util.Map<java.lang.Integer, jdk.nashorn.internal.codegen.types.Type>)
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public getMethodType(): java.lang.invoke.MethodType
                     public getFlags(): int
                     public getCode(): java.lang.Class<any>
@@ -7015,7 +7015,7 @@ declare namespace jdk {
                 class ErrorManager {
                     public constructor()
                     public constructor(arg0: java.io.PrintWriter)
-                    public static format(arg0: java.lang.String | string, arg1: jdk.nashorn.internal.runtime.Source, arg2: int, arg3: int, arg4: long): java.lang.String
+                    public static format(arg0: java.lang.String | string, arg1: jdk.nashorn.internal.runtime.Source, arg2: int, arg3: int, arg4: long): string
                     public error(arg0: jdk.nashorn.internal.runtime.ParserException): void
                     public error(arg0: java.lang.String | string): void
                     public warning(arg0: jdk.nashorn.internal.runtime.ParserException): void
@@ -7083,7 +7083,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 abstract class ScriptFunctionData implements java.io.Serializable {
-                    protected name: java.lang.String
+                    protected name: string
                     protected code: java.util.LinkedList<jdk.nashorn.internal.runtime.CompiledFunction>
                     protected flags: int
                     public static IS_STRICT: int
@@ -7096,9 +7096,9 @@ declare namespace jdk {
                     public static IS_STRICT_OR_BUILTIN: int
                     public static IS_BUILTIN_CONSTRUCTOR: int
                     public isStrict(): boolean
-                    protected getFunctionName(): java.lang.String
-                    public toString(): java.lang.String
-                    public toStringVerbose(): java.lang.String
+                    protected getFunctionName(): string
+                    public toString(): string
+                    public toStringVerbose(): string
                     protected ensureCompiled(): void
                     protected static needsCallee(arg0: java.lang.invoke.MethodHandle): boolean
                     protected static isVarArg(arg0: java.lang.invoke.MethodHandle): boolean
@@ -7154,7 +7154,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class UserAccessorProperty$Accessors {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class GlobalConstants implements jdk.nashorn.internal.runtime.logging.Loggable {
@@ -7171,7 +7171,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class GlobalConstants$Access {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class AccessorProperty extends jdk.nashorn.internal.runtime.Property {
@@ -7203,22 +7203,22 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class AccessorProperty$5 implements java.util.function$.Supplier<java.lang.String> {
-                    public get(): java.lang.String
+                    public get(): string
                     public get(): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
                 class AccessorProperty$4 implements java.util.function$.Supplier<java.lang.String> {
-                    public get(): java.lang.String
+                    public get(): string
                     public get(): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
                 class AccessorProperty$3 implements java.util.function$.Supplier<java.lang.String> {
-                    public get(): java.lang.String
+                    public get(): string
                     public get(): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
                 class AccessorProperty$2 implements java.util.function$.Supplier<java.lang.String> {
-                    public get(): java.lang.String
+                    public get(): string
                     public get(): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
@@ -7249,7 +7249,7 @@ declare namespace jdk {
                     public setValue(arg0: int, arg1: boolean): void
                     public setValue(arg0: double, arg1: boolean): void
                     public setValue(arg0: java.lang.Object, arg1: boolean): void
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 interface OptimisticBuiltins {
@@ -7262,7 +7262,7 @@ declare namespace jdk {
                     public _const_as_var: boolean
                     public _callsite_flags: int
                     public _debug_lines: boolean
-                    public _dest_dir: java.lang.String
+                    public _dest_dir: string
                     public _dump_on_error: boolean
                     public _early_lvalue_error: boolean
                     public _empty_statements: boolean
@@ -7270,7 +7270,7 @@ declare namespace jdk {
                     public _fx: boolean
                     public _global_per_engine: boolean
                     public _es6: boolean
-                    public static COMPILE_ONLY_OPTIMISTIC_ARG: java.lang.String
+                    public static COMPILE_ONLY_OPTIMISTIC_ARG: string
                     public _function_statement: jdk.nashorn.internal.runtime.ScriptEnvironment$FunctionStatementBehavior
                     public _lazy_compilation: boolean
                     public _optimistic_types: boolean
@@ -7283,8 +7283,8 @@ declare namespace jdk {
                     public _print_ast: boolean
                     public _print_lower_ast: boolean
                     public _print_code: boolean
-                    public _print_code_dir: java.lang.String
-                    public _print_code_func: java.lang.String
+                    public _print_code_dir: string
+                    public _print_code_func: string
                     public _print_mem_usage: boolean
                     public _print_no_newline: boolean
                     public _print_parse: boolean
@@ -7317,12 +7317,12 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class Context {
-                    public static NASHORN_SET_CONFIG: java.lang.String
-                    public static NASHORN_CREATE_CONTEXT: java.lang.String
-                    public static NASHORN_CREATE_GLOBAL: java.lang.String
-                    public static NASHORN_GET_CONTEXT: java.lang.String
-                    public static NASHORN_JAVA_REFLECTION: java.lang.String
-                    public static NASHORN_DEBUG_MODE: java.lang.String
+                    public static NASHORN_SET_CONFIG: string
+                    public static NASHORN_CREATE_CONTEXT: string
+                    public static NASHORN_CREATE_GLOBAL: string
+                    public static NASHORN_GET_CONTEXT: string
+                    public static NASHORN_JAVA_REFLECTION: string
+                    public static NASHORN_DEBUG_MODE: string
                     public static DEBUG: boolean
                     public static getGlobal(): jdk.nashorn.internal.objects.Global
                     public static setGlobal(arg0: jdk.nashorn.internal.runtime.ScriptObject): void
@@ -7454,18 +7454,18 @@ declare namespace jdk {
                     class OptionTemplate implements java.lang.Comparable<jdk.nashorn.internal.runtime.options.OptionTemplate> {
                         public isHelp(): boolean
                         public isXHelp(): boolean
-                        public getResource(): java.lang.String
-                        public getType(): java.lang.String
-                        public getKey(): java.lang.String
-                        public getDefaultValue(): java.lang.String
-                        public getDependency(): java.lang.String
-                        public getConflict(): java.lang.String
+                        public getResource(): string
+                        public getType(): string
+                        public getKey(): string
+                        public getDefaultValue(): string
+                        public getDependency(): string
+                        public getConflict(): string
                         public isUndocumented(): boolean
-                        public getShortName(): java.lang.String
-                        public getName(): java.lang.String
-                        public getDescription(): java.lang.String
+                        public getShortName(): string
+                        public getName(): string
+                        public getDescription(): string
                         public isValueNextArg(): boolean
-                        public toString(): java.lang.String
+                        public toString(): string
                         public compareTo(arg0: jdk.nashorn.internal.runtime.options.OptionTemplate): int
                         public compareTo(arg0: java.lang.Object): int
                         public static class: java.lang.Class<any>
@@ -7473,16 +7473,16 @@ declare namespace jdk {
                     class Options {
                         public constructor(arg0: java.lang.String | string)
                         public constructor(arg0: java.lang.String | string, arg1: java.io.PrintWriter)
-                        public getResource(): java.lang.String
-                        public toString(): java.lang.String
+                        public getResource(): string
+                        public toString(): string
                         public static getBooleanProperty(arg0: java.lang.String | string, arg1: java.lang.Boolean | boolean): boolean
                         public static getBooleanProperty(arg0: java.lang.String | string): boolean
-                        public static getStringProperty(arg0: java.lang.String | string, arg1: java.lang.String | string): java.lang.String
+                        public static getStringProperty(arg0: java.lang.String | string, arg1: java.lang.String | string): string
                         public static getIntProperty(arg0: java.lang.String | string, arg1: int): int
                         public get(arg0: java.lang.String | string): jdk.nashorn.internal.runtime.options.Option<any>
                         public getBoolean(arg0: java.lang.String | string): boolean
                         public getInteger(arg0: java.lang.String | string): int
-                        public getString(arg0: java.lang.String | string): java.lang.String
+                        public getString(arg0: java.lang.String | string): string
                         public set(arg0: java.lang.String | string, arg1: jdk.nashorn.internal.runtime.options.Option<any>): void
                         public set(arg0: java.lang.String | string, arg1: boolean): void
                         public set(arg0: java.lang.String | string, arg1: java.lang.String | string): void
@@ -7507,19 +7507,19 @@ declare namespace jdk {
                         public static class: java.lang.Class<any>
                     }
                     class Options$2 implements java.security.PrivilegedAction<java.lang.String> {
-                        public run(): java.lang.String
+                        public run(): string
                         public run(): java.lang.Object
                         public static class: java.lang.Class<any>
                     }
                     class Options$1 implements java.security.PrivilegedAction<java.lang.Boolean> {
-                        public run(): java.lang.Boolean
+                        public run(): boolean
                         public run(): java.lang.Object
                         public static class: java.lang.Class<any>
                     }
                     class Option<T> {
                         protected value: T
                         public getValue(): T
-                        public toString(): java.lang.String
+                        public toString(): string
                         public static class: java.lang.Class<any>
                     }
                     class KeyValueOption extends jdk.nashorn.internal.runtime.options.Option<java.lang.String> {
@@ -7538,7 +7538,7 @@ declare namespace jdk {
                     }
                 }
                 abstract class CodeStore implements jdk.nashorn.internal.runtime.logging.Loggable {
-                    public static NASHORN_PROVIDE_CODE_STORE: java.lang.String
+                    public static NASHORN_PROVIDE_CODE_STORE: string
                     protected constructor()
                     public initLogger(arg0: jdk.nashorn.internal.runtime.Context): jdk.nashorn.internal.runtime.logging.DebugLogger
                     public getLogger(): jdk.nashorn.internal.runtime.logging.DebugLogger
@@ -7547,7 +7547,7 @@ declare namespace jdk {
                     public store(arg0: java.lang.String | string, arg1: jdk.nashorn.internal.runtime.Source, arg2: jdk.nashorn.internal.runtime.StoredScript): jdk.nashorn.internal.runtime.StoredScript
                     public load(arg0: jdk.nashorn.internal.runtime.Source, arg1: java.lang.String | string): jdk.nashorn.internal.runtime.StoredScript
                     public storedScriptFor(arg0: jdk.nashorn.internal.runtime.Source, arg1: java.lang.String | string, arg2: java.util.Map<java.lang.String, byte[]>, arg3: java.util.Map<java.lang.Integer, jdk.nashorn.internal.runtime.FunctionInitializer>, arg4: java.lang.Object[], arg5: int): jdk.nashorn.internal.runtime.StoredScript
-                    public static getCacheKey(arg0: java.lang.Object, arg1: jdk.nashorn.internal.codegen.types.Type[]): java.lang.String
+                    public static getCacheKey(arg0: java.lang.Object, arg1: jdk.nashorn.internal.codegen.types.Type[]): string
                     public static class: java.lang.Class<any>
                 }
                 class CodeStore$DirectoryCodeStore extends jdk.nashorn.internal.runtime.CodeStore {
@@ -7594,14 +7594,14 @@ declare namespace jdk {
                     public findProperty(arg0: java.lang.String | string): jdk.nashorn.internal.runtime.Property
                     public addAll(arg0: jdk.nashorn.internal.runtime.PropertyMap): jdk.nashorn.internal.runtime.PropertyMap
                     public getProperties(): jdk.nashorn.internal.runtime.Property[]
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public equalsWithoutType(arg0: jdk.nashorn.internal.runtime.PropertyMap): boolean
-                    public toString(): java.lang.String
+                    public toString(): string
                     public iterator(): java.util.Iterator<java.lang.Object>
                     public containsArrayKeys(): boolean
                     public changeProto(arg0: jdk.nashorn.internal.runtime.ScriptObject): jdk.nashorn.internal.runtime.PropertyMap
                     public getSharedProtoMap(): jdk.nashorn.internal.runtime.PropertyMap
-                    public static diff(arg0: jdk.nashorn.internal.runtime.PropertyMap, arg1: jdk.nashorn.internal.runtime.PropertyMap): java.lang.String
+                    public static diff(arg0: jdk.nashorn.internal.runtime.PropertyMap, arg1: jdk.nashorn.internal.runtime.PropertyMap): string
                     public static getCount(): long
                     public static getClonedCount(): long
                     public static getHistoryHit(): long
@@ -7652,7 +7652,7 @@ declare namespace jdk {
                     public setFlags(arg0: int): jdk.nashorn.internal.runtime.Property
                     public getGetter(arg0: java.lang.Class<any>): java.lang.invoke.MethodHandle
                     public getOptimisticGetter(arg0: java.lang.Class<any>, arg1: int): java.lang.invoke.MethodHandle
-                    public getKey(): java.lang.String
+                    public getKey(): string
                     public getSlot(): int
                     public getIntValue(arg0: jdk.nashorn.internal.runtime.ScriptObject, arg1: jdk.nashorn.internal.runtime.ScriptObject): int
                     public getDoubleValue(arg0: jdk.nashorn.internal.runtime.ScriptObject, arg1: jdk.nashorn.internal.runtime.ScriptObject): double
@@ -7665,8 +7665,8 @@ declare namespace jdk {
                     public getSetterFunction(arg0: jdk.nashorn.internal.runtime.ScriptObject): jdk.nashorn.internal.runtime.ScriptFunction
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
-                    public toStringShort(): java.lang.String
-                    public toString(): java.lang.String
+                    public toStringShort(): string
+                    public toString(): string
                     public getType(): java.lang.Class<any>
                     public setType(arg0: java.lang.Class<any>): void
                     protected getLocalType(): java.lang.Class<any>
@@ -7706,11 +7706,11 @@ declare namespace jdk {
                 }
                 class PropertyHashMap$Element implements java.util.Map$Entry<java.lang.String, jdk.nashorn.internal.runtime.Property> {
                     public equals(arg0: java.lang.Object): boolean
-                    public getKey(): java.lang.String
+                    public getKey(): string
                     public getValue(): jdk.nashorn.internal.runtime.Property
                     public hashCode(): int
                     public setValue(arg0: jdk.nashorn.internal.runtime.Property): jdk.nashorn.internal.runtime.Property
-                    public toString(): java.lang.String
+                    public toString(): string
                     public setValue(arg0: java.lang.Object): java.lang.Object
                     public getValue(): java.lang.Object
                     public getKey(): java.lang.Object
@@ -7724,13 +7724,13 @@ declare namespace jdk {
                     }
                     class JdkRegExp$DefaultMatcher implements jdk.nashorn.internal.runtime.regexp.RegExpMatcher {
                         public search(arg0: int): boolean
-                        public getInput(): java.lang.String
+                        public getInput(): string
                         public start(): int
                         public start(arg0: int): int
                         public end(): int
                         public end(arg0: int): int
-                        public group(): java.lang.String
-                        public group(arg0: int): java.lang.String
+                        public group(): string
+                        public group(arg0: int): string
                         public groupCount(): int
                         public static class: java.lang.Class<any>
                     }
@@ -7741,13 +7741,13 @@ declare namespace jdk {
                     }
                     class JoniRegExp$JoniMatcher implements jdk.nashorn.internal.runtime.regexp.RegExpMatcher {
                         public search(arg0: int): boolean
-                        public getInput(): java.lang.String
+                        public getInput(): string
                         public start(): int
                         public start(arg0: int): int
                         public end(): int
                         public end(arg0: int): int
-                        public group(): java.lang.String
-                        public group(arg0: int): java.lang.String
+                        public group(): string
+                        public group(arg0: int): string
                         public groupCount(): int
                         public static class: java.lang.Class<any>
                     }
@@ -7796,7 +7796,7 @@ declare namespace jdk {
                         }
                         class ByteCodePrinter {
                             public constructor(arg0: jdk.nashorn.internal.runtime.regexp.joni.Regex)
-                            public byteCodeListToString(): java.lang.String
+                            public byteCodeListToString(): string
                             public compiledByteCodeToString(arg0: java.lang.StringBuilder, arg1: int): int
                             public static class: java.lang.Class<any>
                         }
@@ -7937,9 +7937,9 @@ declare namespace jdk {
                             public static class: java.lang.Class<any>
                         }
                         interface Warnings {
-                            INVALID_BACKREFERENCE: java.lang.String
-                            INVALID_SUBEXP_CALL: java.lang.String
-                            INVALID_UNICODE_PROPERTY: java.lang.String
+                            INVALID_BACKREFERENCE: string
+                            INVALID_SUBEXP_CALL: string
+                            INVALID_UNICODE_PROPERTY: string
                         }
                         class MinMaxLen {
                             public static class: java.lang.Class<any>
@@ -7949,7 +7949,7 @@ declare namespace jdk {
                             public beg: int[]
                             public end: int[]
                             public constructor(arg0: int)
-                            public toString(): java.lang.String
+                            public toString(): string
                             public static class: java.lang.Class<any>
                         }
                         class Token {
@@ -7958,7 +7958,7 @@ declare namespace jdk {
                         class CodeRangeBuffer implements java.lang.Cloneable {
                             public constructor()
                             public isInCodeRange(arg0: int): boolean
-                            public toString(): java.lang.String
+                            public toString(): string
                             public expand(arg0: int): void
                             public ensureSize(arg0: int): void
                             protected moveLeft(arg0: int, arg1: int, arg2: int): void
@@ -7978,7 +7978,7 @@ declare namespace jdk {
                         class BitSet {
                             public static SINGLE_BYTE_SIZE: int
                             public constructor()
-                            public toString(): java.lang.String
+                            public toString(): string
                             public at(arg0: int): boolean
                             public set(arg0: int): void
                             public clear(arg0: int): void
@@ -8044,38 +8044,38 @@ declare namespace jdk {
                             public static BM: jdk.nashorn.internal.runtime.regexp.joni.SearchAlgorithm
                             public static MAP: jdk.nashorn.internal.runtime.regexp.joni.SearchAlgorithm
                             public constructor()
-                            public getName(): java.lang.String
+                            public getName(): string
                             public search(arg0: jdk.nashorn.internal.runtime.regexp.joni.Regex, arg1: char[], arg2: int, arg3: int, arg4: int): int
                             public searchBackward(arg0: jdk.nashorn.internal.runtime.regexp.joni.Regex, arg1: char[], arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int): int
                             public static class: java.lang.Class<any>
                         }
                         class SearchAlgorithm$4 extends jdk.nashorn.internal.runtime.regexp.joni.SearchAlgorithm {
-                            public getName(): java.lang.String
+                            public getName(): string
                             public search(arg0: jdk.nashorn.internal.runtime.regexp.joni.Regex, arg1: char[], arg2: int, arg3: int, arg4: int): int
                             public searchBackward(arg0: jdk.nashorn.internal.runtime.regexp.joni.Regex, arg1: char[], arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int): int
                             public static class: java.lang.Class<any>
                         }
                         class SearchAlgorithm$3 extends jdk.nashorn.internal.runtime.regexp.joni.SearchAlgorithm {
-                            public getName(): java.lang.String
+                            public getName(): string
                             public search(arg0: jdk.nashorn.internal.runtime.regexp.joni.Regex, arg1: char[], arg2: int, arg3: int, arg4: int): int
                             public searchBackward(arg0: jdk.nashorn.internal.runtime.regexp.joni.Regex, arg1: char[], arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int): int
                             public static class: java.lang.Class<any>
                         }
                         class SearchAlgorithm$SLOW_IC extends jdk.nashorn.internal.runtime.regexp.joni.SearchAlgorithm {
                             public constructor(arg0: jdk.nashorn.internal.runtime.regexp.joni.Regex)
-                            public getName(): java.lang.String
+                            public getName(): string
                             public search(arg0: jdk.nashorn.internal.runtime.regexp.joni.Regex, arg1: char[], arg2: int, arg3: int, arg4: int): int
                             public searchBackward(arg0: jdk.nashorn.internal.runtime.regexp.joni.Regex, arg1: char[], arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int): int
                             public static class: java.lang.Class<any>
                         }
                         class SearchAlgorithm$2 extends jdk.nashorn.internal.runtime.regexp.joni.SearchAlgorithm {
-                            public getName(): java.lang.String
+                            public getName(): string
                             public search(arg0: jdk.nashorn.internal.runtime.regexp.joni.Regex, arg1: char[], arg2: int, arg3: int, arg4: int): int
                             public searchBackward(arg0: jdk.nashorn.internal.runtime.regexp.joni.Regex, arg1: char[], arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int): int
                             public static class: java.lang.Class<any>
                         }
                         class SearchAlgorithm$1 extends jdk.nashorn.internal.runtime.regexp.joni.SearchAlgorithm {
-                            public getName(): java.lang.String
+                            public getName(): string
                             public search(arg0: jdk.nashorn.internal.runtime.regexp.joni.Regex, arg1: char[], arg2: int, arg3: int, arg4: int): int
                             public searchBackward(arg0: jdk.nashorn.internal.runtime.regexp.joni.Regex, arg1: char[], arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int): int
                             public static class: java.lang.Class<any>
@@ -8151,7 +8151,7 @@ declare namespace jdk {
                             public static MAXBIT: int
                             public static DEFAULT: int
                             public constructor()
-                            public static toString(arg0: int): java.lang.String
+                            public static toString(arg0: int): string
                             public static isIgnoreCase(arg0: int): boolean
                             public static isExtend(arg0: int): boolean
                             public static isSingleline(arg0: int): boolean
@@ -8193,10 +8193,10 @@ declare namespace jdk {
                             public matcher(arg0: char[], arg1: int, arg2: int): jdk.nashorn.internal.runtime.regexp.joni.Matcher
                             public getWarnings(): jdk.nashorn.internal.runtime.regexp.joni.WarnCallback
                             public numberOfCaptures(): int
-                            public optimizeInfoToString(): java.lang.String
+                            public optimizeInfoToString(): string
                             public getOptions(): int
-                            public dumpTree(): java.lang.String
-                            public dumpByteCode(): java.lang.String
+                            public dumpTree(): string
+                            public dumpByteCode(): string
                             public static class: java.lang.Class<any>
                         }
                         class Syntax implements jdk.nashorn.internal.runtime.regexp.joni.constants.SyntaxProperties {
@@ -8336,24 +8336,24 @@ declare namespace jdk {
                                 protected setChild(arg0: jdk.nashorn.internal.runtime.regexp.joni.ast.Node): void
                                 protected getChild(): jdk.nashorn.internal.runtime.regexp.joni.ast.Node
                                 public setTarget(arg0: jdk.nashorn.internal.runtime.regexp.joni.ast.Node): void
-                                public getName(): java.lang.String
-                                public toString(arg0: int): java.lang.String
-                                public typeToString(): java.lang.String
+                                public getName(): string
+                                public toString(arg0: int): string
+                                public typeToString(): string
                                 public static class: java.lang.Class<any>
                             }
                             class AnyCharNode extends jdk.nashorn.internal.runtime.regexp.joni.ast.Node {
                                 public constructor()
                                 public getType(): int
-                                public getName(): java.lang.String
-                                public toString(arg0: int): java.lang.String
+                                public getName(): string
+                                public toString(arg0: int): string
                                 public static class: java.lang.Class<any>
                             }
                             class BackRefNode extends jdk.nashorn.internal.runtime.regexp.joni.ast.StateNode {
                                 public backRef: int
                                 public constructor(arg0: int, arg1: jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment)
                                 public getType(): int
-                                public getName(): java.lang.String
-                                public toString(arg0: int): java.lang.String
+                                public getName(): string
+                                public toString(arg0: int): string
                                 public static class: java.lang.Class<any>
                             }
                             class EncloseNode extends jdk.nashorn.internal.runtime.regexp.joni.ast.StateNode implements jdk.nashorn.internal.runtime.regexp.joni.constants.EncloseType {
@@ -8373,9 +8373,9 @@ declare namespace jdk {
                                 protected setChild(arg0: jdk.nashorn.internal.runtime.regexp.joni.ast.Node): void
                                 protected getChild(): jdk.nashorn.internal.runtime.regexp.joni.ast.Node
                                 public setTarget(arg0: jdk.nashorn.internal.runtime.regexp.joni.ast.Node): void
-                                public getName(): java.lang.String
-                                public toString(arg0: int): java.lang.String
-                                public typeToString(): java.lang.String
+                                public getName(): string
+                                public toString(arg0: int): string
+                                public typeToString(): string
                                 public isMemory(): boolean
                                 public isOption(): boolean
                                 public isStopBacktrack(): boolean
@@ -8387,11 +8387,11 @@ declare namespace jdk {
                                 public constructor()
                                 public clear(): void
                                 public getType(): int
-                                public getName(): java.lang.String
+                                public getName(): string
                                 public equals(arg0: java.lang.Object): boolean
                                 public hashCode(): int
-                                public toString(arg0: int): java.lang.String
-                                public flagsToString(): java.lang.String
+                                public toString(arg0: int): string
+                                public flagsToString(): string
                                 public isEmpty(): boolean
                                 public addCodeRangeToBuf(arg0: int, arg1: int): void
                                 public addCodeRange(arg0: jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment, arg1: int, arg2: int): void
@@ -8442,8 +8442,8 @@ declare namespace jdk {
                                 public verifyTree(arg0: java.util.Set<jdk.nashorn.internal.runtime.regexp.joni.ast.Node>, arg1: jdk.nashorn.internal.runtime.regexp.joni.WarnCallback): void
                                 public setCar(arg0: jdk.nashorn.internal.runtime.regexp.joni.ast.Node): jdk.nashorn.internal.runtime.regexp.joni.ast.Node
                                 public setCdr(arg0: jdk.nashorn.internal.runtime.regexp.joni.ast.ConsAltNode): jdk.nashorn.internal.runtime.regexp.joni.ast.ConsAltNode
-                                public getName(): java.lang.String
-                                public toString(arg0: int): java.lang.String
+                                public getName(): string
+                                public toString(arg0: int): string
                                 public static class: java.lang.Class<any>
                             }
                             class QuantifierNode extends jdk.nashorn.internal.runtime.regexp.joni.ast.StateNode {
@@ -8462,8 +8462,8 @@ declare namespace jdk {
                                 protected getChild(): jdk.nashorn.internal.runtime.regexp.joni.ast.Node
                                 public setTarget(arg0: jdk.nashorn.internal.runtime.regexp.joni.ast.Node): void
                                 public convertToString(arg0: int): jdk.nashorn.internal.runtime.regexp.joni.ast.StringNode
-                                public getName(): java.lang.String
-                                public toString(arg0: int): java.lang.String
+                                public getName(): string
+                                public toString(arg0: int): string
                                 public isAnyCharStar(): boolean
                                 protected popularNum(): int
                                 protected set(arg0: jdk.nashorn.internal.runtime.regexp.joni.ast.QuantifierNode): void
@@ -8490,8 +8490,8 @@ declare namespace jdk {
                             abstract class StateNode extends jdk.nashorn.internal.runtime.regexp.joni.ast.Node implements jdk.nashorn.internal.runtime.regexp.joni.constants.NodeStatus {
                                 protected state: int
                                 public constructor()
-                                public toString(arg0: int): java.lang.String
-                                public stateToString(): java.lang.String
+                                public toString(arg0: int): string
+                                public stateToString(): string
                                 public isMinFixed(): boolean
                                 public setMinFixed(): void
                                 public isMaxFixed(): boolean
@@ -8530,11 +8530,11 @@ declare namespace jdk {
                                 protected getChild(): jdk.nashorn.internal.runtime.regexp.joni.ast.Node
                                 public swap(arg0: jdk.nashorn.internal.runtime.regexp.joni.ast.Node): void
                                 public verifyTree(arg0: java.util.Set<jdk.nashorn.internal.runtime.regexp.joni.ast.Node>, arg1: jdk.nashorn.internal.runtime.regexp.joni.WarnCallback): void
-                                public getName(): java.lang.String
-                                protected toString(arg0: int): java.lang.String
-                                public getAddressName(): java.lang.String
-                                public toString(): java.lang.String
-                                protected static pad(arg0: java.lang.Object, arg1: int): java.lang.String
+                                public getName(): string
+                                protected toString(arg0: int): string
+                                public getAddressName(): string
+                                public toString(): string
+                                protected static pad(arg0: java.lang.Object, arg1: int): string
                                 public isInvalidQuantifier(): boolean
                                 public isAllowedInLookBehind(): boolean
                                 public isSimple(): boolean
@@ -8551,8 +8551,8 @@ declare namespace jdk {
                                 public constructor(arg0: char)
                                 public ensure(arg0: int): void
                                 public getType(): int
-                                public getName(): java.lang.String
-                                public toString(arg0: int): java.lang.String
+                                public getName(): string
+                                public toString(arg0: int): string
                                 public length(): int
                                 public splitLastChar(): jdk.nashorn.internal.runtime.regexp.joni.ast.StringNode
                                 public canBeSplit(): boolean
@@ -8617,17 +8617,17 @@ declare namespace jdk {
                                 S: int
                                 BYTES: int
                                 LAST_INDEX: int
-                                STR: java.lang.String
-                                END: java.lang.String
-                                MSA_START: java.lang.String
-                                MSA_OPTONS: java.lang.String
-                                MSA_BEST_LEN: java.lang.String
-                                MSA_BEST_S: java.lang.String
-                                MSA_BEGIN: java.lang.String
-                                MSA_END: java.lang.String
-                                BITSET: java.lang.String
-                                CODERANGE: java.lang.String
-                                TEMPLATE: java.lang.String
+                                STR: string
+                                END: string
+                                MSA_START: string
+                                MSA_OPTONS: string
+                                MSA_BEST_LEN: string
+                                MSA_BEST_S: string
+                                MSA_BEGIN: string
+                                MSA_END: string
+                                BITSET: string
+                                CODERANGE: string
+                                TEMPLATE: string
                             }
                             class CCSTATE extends java.lang.Enum<jdk.nashorn.internal.runtime.regexp.joni.constants.CCSTATE> {
                                 public static VALUE: jdk.nashorn.internal.runtime.regexp.joni.constants.CCSTATE
@@ -9034,45 +9034,45 @@ declare namespace jdk {
                         }
                         namespace exception {
                             interface ErrorMessages {
-                                ERR_INVALID_CODE_POINT_VALUE: java.lang.String
-                                ERR_TOO_BIG_WIDE_CHAR_VALUE: java.lang.String
-                                ERR_TOO_LONG_WIDE_CHAR_VALUE: java.lang.String
-                                ERR_PARSER_BUG: java.lang.String
-                                ERR_UNDEFINED_BYTECODE: java.lang.String
-                                ERR_UNEXPECTED_BYTECODE: java.lang.String
-                                ERR_END_PATTERN_AT_LEFT_BRACE: java.lang.String
-                                ERR_END_PATTERN_AT_LEFT_BRACKET: java.lang.String
-                                ERR_EMPTY_CHAR_CLASS: java.lang.String
-                                ERR_PREMATURE_END_OF_CHAR_CLASS: java.lang.String
-                                ERR_END_PATTERN_AT_ESCAPE: java.lang.String
-                                ERR_END_PATTERN_AT_META: java.lang.String
-                                ERR_END_PATTERN_AT_CONTROL: java.lang.String
-                                ERR_META_CODE_SYNTAX: java.lang.String
-                                ERR_CONTROL_CODE_SYNTAX: java.lang.String
-                                ERR_CHAR_CLASS_VALUE_AT_END_OF_RANGE: java.lang.String
-                                ERR_UNMATCHED_RANGE_SPECIFIER_IN_CHAR_CLASS: java.lang.String
-                                ERR_TARGET_OF_REPEAT_OPERATOR_NOT_SPECIFIED: java.lang.String
-                                ERR_TARGET_OF_REPEAT_OPERATOR_INVALID: java.lang.String
-                                ERR_UNMATCHED_CLOSE_PARENTHESIS: java.lang.String
-                                ERR_END_PATTERN_WITH_UNMATCHED_PARENTHESIS: java.lang.String
-                                ERR_END_PATTERN_IN_GROUP: java.lang.String
-                                ERR_UNDEFINED_GROUP_OPTION: java.lang.String
-                                ERR_INVALID_POSIX_BRACKET_TYPE: java.lang.String
-                                ERR_INVALID_LOOK_BEHIND_PATTERN: java.lang.String
-                                ERR_INVALID_REPEAT_RANGE_PATTERN: java.lang.String
-                                ERR_TOO_BIG_NUMBER: java.lang.String
-                                ERR_TOO_BIG_NUMBER_FOR_REPEAT_RANGE: java.lang.String
-                                ERR_UPPER_SMALLER_THAN_LOWER_IN_REPEAT_RANGE: java.lang.String
-                                ERR_EMPTY_RANGE_IN_CHAR_CLASS: java.lang.String
-                                ERR_TOO_MANY_MULTI_BYTE_RANGES: java.lang.String
-                                ERR_TOO_SHORT_MULTI_BYTE_STRING: java.lang.String
-                                ERR_INVALID_BACKREF: java.lang.String
-                                ERR_NUMBERED_BACKREF_OR_CALL_NOT_ALLOWED: java.lang.String
-                                ERR_EMPTY_GROUP_NAME: java.lang.String
-                                ERR_INVALID_GROUP_NAME: java.lang.String
-                                ERR_INVALID_CHAR_IN_GROUP_NAME: java.lang.String
-                                ERR_GROUP_NUMBER_OVER_FOR_CAPTURE_HISTORY: java.lang.String
-                                ERR_INVALID_COMBINATION_OF_OPTIONS: java.lang.String
+                                ERR_INVALID_CODE_POINT_VALUE: string
+                                ERR_TOO_BIG_WIDE_CHAR_VALUE: string
+                                ERR_TOO_LONG_WIDE_CHAR_VALUE: string
+                                ERR_PARSER_BUG: string
+                                ERR_UNDEFINED_BYTECODE: string
+                                ERR_UNEXPECTED_BYTECODE: string
+                                ERR_END_PATTERN_AT_LEFT_BRACE: string
+                                ERR_END_PATTERN_AT_LEFT_BRACKET: string
+                                ERR_EMPTY_CHAR_CLASS: string
+                                ERR_PREMATURE_END_OF_CHAR_CLASS: string
+                                ERR_END_PATTERN_AT_ESCAPE: string
+                                ERR_END_PATTERN_AT_META: string
+                                ERR_END_PATTERN_AT_CONTROL: string
+                                ERR_META_CODE_SYNTAX: string
+                                ERR_CONTROL_CODE_SYNTAX: string
+                                ERR_CHAR_CLASS_VALUE_AT_END_OF_RANGE: string
+                                ERR_UNMATCHED_RANGE_SPECIFIER_IN_CHAR_CLASS: string
+                                ERR_TARGET_OF_REPEAT_OPERATOR_NOT_SPECIFIED: string
+                                ERR_TARGET_OF_REPEAT_OPERATOR_INVALID: string
+                                ERR_UNMATCHED_CLOSE_PARENTHESIS: string
+                                ERR_END_PATTERN_WITH_UNMATCHED_PARENTHESIS: string
+                                ERR_END_PATTERN_IN_GROUP: string
+                                ERR_UNDEFINED_GROUP_OPTION: string
+                                ERR_INVALID_POSIX_BRACKET_TYPE: string
+                                ERR_INVALID_LOOK_BEHIND_PATTERN: string
+                                ERR_INVALID_REPEAT_RANGE_PATTERN: string
+                                ERR_TOO_BIG_NUMBER: string
+                                ERR_TOO_BIG_NUMBER_FOR_REPEAT_RANGE: string
+                                ERR_UPPER_SMALLER_THAN_LOWER_IN_REPEAT_RANGE: string
+                                ERR_EMPTY_RANGE_IN_CHAR_CLASS: string
+                                ERR_TOO_MANY_MULTI_BYTE_RANGES: string
+                                ERR_TOO_SHORT_MULTI_BYTE_STRING: string
+                                ERR_INVALID_BACKREF: string
+                                ERR_NUMBERED_BACKREF_OR_CALL_NOT_ALLOWED: string
+                                ERR_EMPTY_GROUP_NAME: string
+                                ERR_INVALID_GROUP_NAME: string
+                                ERR_INVALID_CHAR_IN_GROUP_NAME: string
+                                ERR_GROUP_NUMBER_OVER_FOR_CAPTURE_HISTORY: string
+                                ERR_INVALID_COMBINATION_OF_OPTIONS: string
                             }
                             class InternalException extends jdk.nashorn.internal.runtime.regexp.joni.exception.JOniException {
                                 public constructor(arg0: java.lang.String | string)
@@ -9095,12 +9095,12 @@ declare namespace jdk {
                     }
                     interface RegExpMatcher extends java.util.regex.MatchResult {
                         search(arg0: int): boolean
-                        getInput(): java.lang.String
+                        getInput(): string
                     }
                     abstract class RegExp {
                         protected groupsInNegativeLookahead: jdk.nashorn.internal.runtime.BitVector
                         protected constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
-                        public getSource(): java.lang.String
+                        public getSource(): string
                         public setGlobal(arg0: boolean): void
                         public isGlobal(): boolean
                         public isIgnoreCase(): boolean
@@ -9113,7 +9113,7 @@ declare namespace jdk {
                     class RegExpResult {
                         public constructor(arg0: java.lang.String | string, arg1: int, arg2: java.lang.Object[])
                         public getGroups(): java.lang.Object[]
-                        public getInput(): java.lang.String
+                        public getInput(): string
                         public getIndex(): int
                         public length(): int
                         public getGroup(arg0: int): java.lang.Object
@@ -9139,7 +9139,7 @@ declare namespace jdk {
                         public constructor(arg0: java.lang.String | string, arg1: java.util.logging.Level, arg2: boolean)
                         public getLevel(): java.util.logging.Level
                         public getOutputStream(): java.io.PrintWriter
-                        public static quote(arg0: java.lang.String | string): java.lang.String
+                        public static quote(arg0: java.lang.String | string): string
                         public isEnabled(): boolean
                         public static isEnabled(arg0: jdk.nashorn.internal.runtime.logging.DebugLogger): boolean
                         public indent(arg0: int): void
@@ -9184,11 +9184,11 @@ declare namespace jdk {
                         public static class: java.lang.Class<any>
                     }
                     class DebugLogger$1$1 extends java.util.logging.Formatter {
-                        public format(arg0: java.util.logging.LogRecord): java.lang.String
+                        public format(arg0: java.util.logging.LogRecord): string
                         public static class: java.lang.Class<any>
                     }
                     interface Logger extends java.lang.annotation.Annotation {
-                        name(): java.lang.String
+                        name(): string
                     }
                     interface Loggable {
                         initLogger(arg0: jdk.nashorn.internal.runtime.Context): jdk.nashorn.internal.runtime.logging.DebugLogger
@@ -9207,19 +9207,19 @@ declare namespace jdk {
                     public static sourceFor(arg0: java.lang.String | string, arg1: java.io.Reader): jdk.nashorn.internal.runtime.Source
                     public equals(arg0: java.lang.Object): boolean
                     public hashCode(): int
-                    public getString(): java.lang.String
-                    public getName(): java.lang.String
+                    public getString(): string
+                    public getName(): string
                     public getLastModified(): long
-                    public getBase(): java.lang.String
-                    public getString(arg0: int, arg1: int): java.lang.String
-                    public getString(arg0: long): java.lang.String
+                    public getBase(): string
+                    public getString(arg0: int, arg1: int): string
+                    public getString(arg0: long): string
                     public getURL(): java.net.URL
-                    public getExplicitURL(): java.lang.String
+                    public getExplicitURL(): string
                     public setExplicitURL(arg0: java.lang.String | string): void
                     public isEvalCode(): boolean
                     public getLine(arg0: int): int
                     public getColumn(arg0: int): int
-                    public getSourceLine(arg0: int): java.lang.String
+                    public getSourceLine(arg0: int): string
                     public getContent(): char[]
                     public getLength(): int
                     public static readFully(arg0: java.io.Reader): char[]
@@ -9227,9 +9227,9 @@ declare namespace jdk {
                     public static readFully(arg0: java.io.File, arg1: java.nio.charset.Charset): char[]
                     public static readFully(arg0: java.net.URL): char[]
                     public static readFully(arg0: java.net.URL, arg1: java.nio.charset.Charset): char[]
-                    public getDigest(): java.lang.String
-                    public static baseURL(arg0: java.net.URL): java.lang.String
-                    public toString(): java.lang.String
+                    public getDigest(): string
+                    public static baseURL(arg0: java.net.URL): string
+                    public toString(): string
                     public initLogger(arg0: jdk.nashorn.internal.runtime.Context): jdk.nashorn.internal.runtime.logging.DebugLogger
                     public getLogger(): jdk.nashorn.internal.runtime.logging.DebugLogger
                     public static class: java.lang.Class<any>
@@ -9250,7 +9250,7 @@ declare namespace jdk {
                     protected lastModified: long
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
-                    public toString(): java.lang.String
+                    public toString(): string
                     public url(): java.net.URL
                     public length(): int
                     public lastModified(): long
@@ -9264,7 +9264,7 @@ declare namespace jdk {
                 class Source$RawData implements jdk.nashorn.internal.runtime.Source$Data {
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
-                    public toString(): java.lang.String
+                    public toString(): string
                     public url(): java.net.URL
                     public length(): int
                     public lastModified(): long
@@ -9302,19 +9302,19 @@ declare namespace jdk {
                     public static createStrictBuiltin(arg0: java.lang.String | string, arg1: java.lang.invoke.MethodHandle): jdk.nashorn.internal.runtime.ScriptFunction
                     public createBound(arg0: java.lang.Object, arg1: java.lang.Object[]): jdk.nashorn.internal.runtime.ScriptFunction
                     public createSynchronized(arg0: java.lang.Object): jdk.nashorn.internal.runtime.ScriptFunction
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public isInstance(arg0: jdk.nashorn.internal.runtime.ScriptObject): boolean
                     protected getTargetFunction(): jdk.nashorn.internal.runtime.ScriptFunction
                     public setArity(arg0: int): void
                     public isStrict(): boolean
                     public needsWrappedThis(): boolean
-                    public safeToString(): java.lang.String
-                    public toString(): java.lang.String
-                    public toSource(): java.lang.String
+                    public safeToString(): string
+                    public toString(): string
+                    public toSource(): string
                     public getPrototype(): java.lang.Object
                     public setPrototype(arg0: java.lang.Object): void
                     public getBoundInvokeHandle(arg0: java.lang.Object): java.lang.invoke.MethodHandle
-                    public getName(): java.lang.String
+                    public getName(): string
                     public getScope(): jdk.nashorn.internal.runtime.ScriptObject
                     public static G$prototype(arg0: java.lang.Object): java.lang.Object
                     public static S$prototype(arg0: java.lang.Object, arg1: java.lang.Object): void
@@ -9368,8 +9368,8 @@ declare namespace jdk {
                 class Undefined extends jdk.nashorn.internal.runtime.DefaultPropertyAccess {
                     public static getUndefined(): jdk.nashorn.internal.runtime.Undefined
                     public static getEmpty(): jdk.nashorn.internal.runtime.Undefined
-                    public getClassName(): java.lang.String
-                    public toString(): java.lang.String
+                    public getClassName(): string
+                    public toString(): string
                     public static lookup(arg0: jdk.internal.dynalink.CallSiteDescriptor): jdk.internal.dynalink.linker.GuardedInvocation
                     public get(arg0: java.lang.Object): java.lang.Object
                     public set(arg0: java.lang.Object, arg1: java.lang.Object, arg2: int): void
@@ -9408,9 +9408,9 @@ declare namespace jdk {
                     delete(arg0: java.lang.Object, arg1: boolean): boolean
                 }
                 abstract class ScriptObject implements jdk.nashorn.internal.runtime.PropertyAccess , java.lang.Cloneable {
-                    public static PROTO_PROPERTY_NAME: java.lang.String
-                    public static NO_SUCH_METHOD_NAME: java.lang.String
-                    public static NO_SUCH_PROPERTY_NAME: java.lang.String
+                    public static PROTO_PROPERTY_NAME: string
+                    public static NO_SUCH_METHOD_NAME: string
+                    public static NO_SUCH_PROPERTY_NAME: string
                     public static IS_ARRAY: int
                     public static IS_ARGUMENTS: int
                     public static IS_LENGTH_NOT_WRITABLE: int
@@ -9480,9 +9480,9 @@ declare namespace jdk {
                     public getOwnKeys(arg0: boolean): java.lang.String[]
                     protected getOwnKeys(arg0: boolean, arg1: java.util.Set<java.lang.String>): java.lang.String[]
                     public hasArrayEntries(): boolean
-                    public getClassName(): java.lang.String
+                    public getClassName(): string
                     public getLength(): java.lang.Object
-                    public safeToString(): java.lang.String
+                    public safeToString(): string
                     public getDefaultValue(arg0: java.lang.Class<any>): java.lang.Object
                     public isInstance(arg0: jdk.nashorn.internal.runtime.ScriptObject): boolean
                     public preventExtensions(): jdk.nashorn.internal.runtime.ScriptObject
@@ -9617,7 +9617,7 @@ declare namespace jdk {
                         public (arg0: jdk.internal.dynalink.linker.GuardedInvocation, arg1: jdk.internal.dynalink.linker.LinkRequest, arg2: jdk.internal.dynalink.linker.LinkerServices): jdk.internal.dynalink.linker.GuardedInvocation
                     }
                     class BoundCallable {
-                        public toString(): java.lang.String
+                        public toString(): string
                         public static class: java.lang.Class<any>
                     }
                     class BoundCallableLinker implements jdk.internal.dynalink.linker.TypeBasedGuardingDynamicLinker {
@@ -9682,7 +9682,7 @@ declare namespace jdk {
                         public static getObjectConverter(arg0: java.lang.Class<any>): java.lang.invoke.MethodHandle
                         public static exportReturnValue(arg0: java.lang.Object): java.lang.Object
                         public static toCharPrimitive(arg0: java.lang.Object): char
-                        public static toString(arg0: java.lang.Object): java.lang.String
+                        public static toString(arg0: java.lang.Object): string
                         public static class: java.lang.Class<any>
                     }
                     class JavaAdapterServices$1 implements java.security.PrivilegedAction<java.lang.ClassLoader> {
@@ -9741,7 +9741,7 @@ declare namespace jdk {
                         public static class: java.lang.Class<any>
                     }
                     class JavaAdapterBytecodeGenerator$1 extends jdk.internal.org.objectweb.asm.ClassWriter {
-                        protected getCommonSuperClass(arg0: java.lang.String | string, arg1: java.lang.String | string): java.lang.String
+                        protected getCommonSuperClass(arg0: java.lang.String | string, arg1: java.lang.String | string): string
                         public static class: java.lang.Class<any>
                     }
                     class AdaptationResult {
@@ -9764,7 +9764,7 @@ declare namespace jdk {
                         public static ARGLIMIT: int
                         protected getPruneCatches(): java.lang.invoke.MethodHandle
                         public static getCatchInvalidationCount(arg0: java.lang.Object): int
-                        public toString(): java.lang.String
+                        public toString(): string
                         public getNashornDescriptor(): jdk.nashorn.internal.runtime.linker.NashornCallSiteDescriptor
                         public relink(arg0: jdk.internal.dynalink.linker.GuardedInvocation, arg1: java.lang.invoke.MethodHandle): void
                         public resetAndRelink(arg0: jdk.internal.dynalink.linker.GuardedInvocation, arg1: java.lang.invoke.MethodHandle): void
@@ -9826,7 +9826,7 @@ declare namespace jdk {
                         public static class: java.lang.Class<any>
                     }
                     class NashornBeansLinker$1 extends java.lang.ClassValue<java.lang.String> {
-                        protected computeValue(arg0: java.lang.Class<any>): java.lang.String
+                        protected computeValue(arg0: java.lang.Class<any>): string
                         protected computeValue(arg0: java.lang.Class): java.lang.Object
                         public static class: java.lang.Class<any>
                     }
@@ -9886,7 +9886,7 @@ declare namespace jdk {
                     class InvokeByName {
                         public constructor(arg0: java.lang.String | string, arg1: java.lang.Class<any>)
                         public constructor(arg0: java.lang.String | string, arg1: java.lang.Class<any>, arg2: java.lang.Class<any>, ...arg3: java.lang.Class<any>[])
-                        public getName(): java.lang.String
+                        public getName(): string
                         public getGetter(): java.lang.invoke.MethodHandle
                         public getInvoker(): java.lang.invoke.MethodHandle
                         public static class: java.lang.Class<any>
@@ -9919,20 +9919,20 @@ declare namespace jdk {
                         public static CALLSITE_PROGRAM_POINT_SHIFT: int
                         public static MAX_PROGRAM_POINT_VALUE: int
                         public static FLAGS_MASK: int
-                        public static toString(arg0: int): java.lang.String
+                        public static toString(arg0: int): string
                         public static get(arg0: java.lang.invoke.MethodHandles$Lookup, arg1: java.lang.String | string, arg2: java.lang.invoke.MethodType, arg3: int): jdk.nashorn.internal.runtime.linker.NashornCallSiteDescriptor
                         public getNameTokenCount(): int
-                        public getNameToken(arg0: int): java.lang.String
+                        public getNameToken(arg0: int): string
                         public getLookup(): java.lang.invoke.MethodHandles$Lookup
                         public equals(arg0: jdk.internal.dynalink.CallSiteDescriptor): boolean
                         public getMethodType(): java.lang.invoke.MethodType
-                        public getOperator(): java.lang.String
-                        public getFirstOperator(): java.lang.String
-                        public getOperand(): java.lang.String
-                        public getFunctionDescription(): java.lang.String
-                        public static getFunctionDescription(arg0: jdk.internal.dynalink.CallSiteDescriptor): java.lang.String
-                        public getFunctionErrorMessage(arg0: java.lang.Object): java.lang.String
-                        public static getFunctionErrorMessage(arg0: jdk.internal.dynalink.CallSiteDescriptor, arg1: java.lang.Object): java.lang.String
+                        public getOperator(): string
+                        public getFirstOperator(): string
+                        public getOperand(): string
+                        public getFunctionDescription(): string
+                        public static getFunctionDescription(arg0: jdk.internal.dynalink.CallSiteDescriptor): string
+                        public getFunctionErrorMessage(arg0: java.lang.Object): string
+                        public static getFunctionErrorMessage(arg0: jdk.internal.dynalink.CallSiteDescriptor, arg1: java.lang.Object): string
                         public static getFlags(arg0: jdk.internal.dynalink.CallSiteDescriptor): int
                         public static isScope(arg0: jdk.internal.dynalink.CallSiteDescriptor): boolean
                         public static isFastScope(arg0: jdk.internal.dynalink.CallSiteDescriptor): boolean
@@ -10065,7 +10065,7 @@ declare namespace jdk {
                         public fastPopDouble(): double
                         public fastPopObject(): java.lang.Object
                         public fastConcat(arg0: jdk.nashorn.internal.runtime.arrays.ContinuousArrayData): jdk.nashorn.internal.runtime.arrays.ContinuousArrayData
-                        public toString(): java.lang.String
+                        public toString(): string
                         public copy(): jdk.nashorn.internal.runtime.arrays.ContinuousArrayData
                         public copy(): jdk.nashorn.internal.runtime.arrays.ArrayData
                         public static class: java.lang.Class<any>
@@ -10148,7 +10148,7 @@ declare namespace jdk {
                         public fastPopDouble(): double
                         public fastPopObject(): java.lang.Object
                         public fastConcat(arg0: jdk.nashorn.internal.runtime.arrays.ContinuousArrayData): jdk.nashorn.internal.runtime.arrays.ContinuousArrayData
-                        public toString(): java.lang.String
+                        public toString(): string
                         public copy(): jdk.nashorn.internal.runtime.arrays.ContinuousArrayData
                         public convert(arg0: java.lang.Class): jdk.nashorn.internal.runtime.arrays.ArrayData
                         public copy(): jdk.nashorn.internal.runtime.arrays.ArrayData
@@ -10197,7 +10197,7 @@ declare namespace jdk {
                         public push(arg0: boolean, arg1: java.lang.Object): jdk.nashorn.internal.runtime.arrays.ArrayData
                         public fastSplice(arg0: int, arg1: int, arg2: int): jdk.nashorn.internal.runtime.arrays.ArrayData
                         public fastConcat(arg0: jdk.nashorn.internal.runtime.arrays.ContinuousArrayData): jdk.nashorn.internal.runtime.arrays.ContinuousArrayData
-                        public toString(): java.lang.String
+                        public toString(): string
                         public copy(): jdk.nashorn.internal.runtime.arrays.ContinuousArrayData
                         public convert(arg0: java.lang.Class): jdk.nashorn.internal.runtime.arrays.ArrayData
                         public copy(): jdk.nashorn.internal.runtime.arrays.ArrayData
@@ -10522,7 +10522,7 @@ declare namespace jdk {
                         public push(arg0: boolean, arg1: java.lang.Object): jdk.nashorn.internal.runtime.arrays.ArrayData
                         public slice(arg0: long, arg1: long): jdk.nashorn.internal.runtime.arrays.ArrayData
                         public fastConcat(arg0: jdk.nashorn.internal.runtime.arrays.ContinuousArrayData): jdk.nashorn.internal.runtime.arrays.ContinuousArrayData
-                        public toString(): java.lang.String
+                        public toString(): string
                         public getElementGetter(arg0: java.lang.Class<any>, arg1: int): java.lang.invoke.MethodHandle
                         public getElementSetter(arg0: java.lang.Class<any>): java.lang.invoke.MethodHandle
                         public getElementType(): java.lang.Class<any>
@@ -10552,7 +10552,7 @@ declare namespace jdk {
                         public static getArrayIndex(arg0: java.lang.String | string): int
                         public static isValidArrayIndex(arg0: int): boolean
                         public static toLongIndex(arg0: int): long
-                        public static toKey(arg0: int): java.lang.String
+                        public static toKey(arg0: int): string
                         public static class: java.lang.Class<any>
                     }
                 }
@@ -10568,19 +10568,19 @@ declare namespace jdk {
                     public hasInvalidProgramPoint(): boolean
                     public getProgramPoint(): int
                     public hasPrimitiveReturnValue(): boolean
-                    public getMessage(): java.lang.String
+                    public getMessage(): string
                     public static class: java.lang.Class<any>
                 }
                 interface PropertyDescriptor {
                     GENERIC: int
                     DATA: int
                     ACCESSOR: int
-                    CONFIGURABLE: java.lang.String
-                    ENUMERABLE: java.lang.String
-                    WRITABLE: java.lang.String
-                    VALUE: java.lang.String
-                    GET: java.lang.String
-                    SET: java.lang.String
+                    CONFIGURABLE: string
+                    ENUMERABLE: string
+                    WRITABLE: string
+                    VALUE: string
+                    GET: string
+                    SET: string
                     isConfigurable(): boolean
                     isEnumerable(): boolean
                     isWritable(): boolean
@@ -10628,13 +10628,13 @@ declare namespace jdk {
                     public constructor(arg0: java.lang.Object, arg1: java.lang.Throwable)
                     public static create(arg0: java.lang.Object, arg1: java.lang.String | string, arg2: int, arg3: int): jdk.nashorn.internal.runtime.ECMAException
                     public getThrown(): java.lang.Object
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static getException(arg0: jdk.nashorn.internal.runtime.ScriptObject): java.lang.Object
                     public static printStackTrace(arg0: jdk.nashorn.internal.runtime.ScriptObject): java.lang.Object
                     public static getLineNumber(arg0: jdk.nashorn.internal.runtime.ScriptObject): java.lang.Object
                     public static getColumnNumber(arg0: jdk.nashorn.internal.runtime.ScriptObject): java.lang.Object
                     public static getFileName(arg0: jdk.nashorn.internal.runtime.ScriptObject): java.lang.Object
-                    public static safeToString(arg0: jdk.nashorn.internal.runtime.ScriptObject): java.lang.String
+                    public static safeToString(arg0: jdk.nashorn.internal.runtime.ScriptObject): string
                     public static class: java.lang.Class<any>
                 }
                 class ScriptRuntime {
@@ -10655,8 +10655,8 @@ declare namespace jdk {
                     public static switchTagAsInt(arg0: boolean, arg1: int): int
                     public static switchTagAsInt(arg0: long, arg1: int): int
                     public static switchTagAsInt(arg0: double, arg1: int): int
-                    public static builtinObjectToString(arg0: java.lang.Object): java.lang.String
-                    public static safeToString(arg0: java.lang.Object): java.lang.String
+                    public static builtinObjectToString(arg0: java.lang.Object): string
+                    public static safeToString(arg0: java.lang.Object): string
                     public static toPropertyIterator(arg0: java.lang.Object): java.util.Iterator<any>
                     public static toValueIterator(arg0: java.lang.Object): java.util.Iterator<any>
                     public static mergeScope(arg0: jdk.nashorn.internal.runtime.ScriptObject): jdk.nashorn.internal.runtime.ScriptObject
@@ -10665,7 +10665,7 @@ declare namespace jdk {
                     public static throwConstTypeError(arg0: java.lang.String | string): void
                     public static construct(arg0: jdk.nashorn.internal.runtime.ScriptFunction, ...arg1: java.lang.Object[]): java.lang.Object
                     public static sameValue(arg0: java.lang.Object, arg1: java.lang.Object): boolean
-                    public static parse(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: boolean): java.lang.String
+                    public static parse(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: boolean): string
                     public static isJSWhitespace(arg0: char): boolean
                     public static openWith(arg0: jdk.nashorn.internal.runtime.ScriptObject, arg1: java.lang.Object): jdk.nashorn.internal.runtime.ScriptObject
                     public static ADD(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
@@ -10760,7 +10760,7 @@ declare namespace jdk {
                     public static GET_UNDEFINED: java.util.List<java.lang.invoke.MethodHandle>
                     public static values(): jdk.nashorn.internal.runtime.JSType[]
                     public static valueOf(arg0: java.lang.String | string): jdk.nashorn.internal.runtime.JSType
-                    public typeName(): java.lang.String
+                    public typeName(): string
                     public static of(arg0: java.lang.Object): jdk.nashorn.internal.runtime.JSType
                     public static ofNoFunction(arg0: java.lang.Object): jdk.nashorn.internal.runtime.JSType
                     public static voidReturn(): void
@@ -10774,17 +10774,17 @@ declare namespace jdk {
                     public static toPrimitive(arg0: java.lang.Object): java.lang.Object
                     public static toPrimitive(arg0: java.lang.Object, arg1: java.lang.Class<any>): java.lang.Object
                     public static toPrimitive(arg0: jdk.nashorn.api.scripting.JSObject, arg1: java.lang.Class<any>): java.lang.Object
-                    public static toPrimitiveToString(arg0: java.lang.Object): java.lang.String
+                    public static toPrimitiveToString(arg0: java.lang.Object): string
                     public static toPrimitiveToCharSequence(arg0: java.lang.Object): java.lang.CharSequence
                     public static toBoolean(arg0: double): boolean
                     public static toBoolean(arg0: java.lang.Object): boolean
-                    public static toString(arg0: java.lang.Object): java.lang.String
+                    public static toString(arg0: java.lang.Object): string
                     public static toCharSequence(arg0: java.lang.Object): java.lang.CharSequence
                     public static isString(arg0: java.lang.Object): boolean
                     public static isNumber(arg0: java.lang.Object): boolean
-                    public static toString(arg0: int): java.lang.String
-                    public static toString(arg0: double): java.lang.String
-                    public static toString(arg0: double, arg1: int): java.lang.String
+                    public static toString(arg0: int): string
+                    public static toString(arg0: double): string
+                    public static toString(arg0: double, arg1: int): string
                     public static toNumber(arg0: java.lang.Object): double
                     public static toNumberForEq(arg0: java.lang.Object): double
                     public static toNumberForStrictEq(arg0: java.lang.Object): double
@@ -10868,7 +10868,7 @@ declare namespace jdk {
                     public static uriError(arg0: jdk.nashorn.internal.objects.Global, arg1: java.lang.String | string, ...arg2: java.lang.String[]): jdk.nashorn.internal.runtime.ECMAException
                     public static uriError(arg0: java.lang.Throwable, arg1: java.lang.String | string, ...arg2: java.lang.String[]): jdk.nashorn.internal.runtime.ECMAException
                     public static uriError(arg0: jdk.nashorn.internal.objects.Global, arg1: java.lang.Throwable, arg2: java.lang.String | string, ...arg3: java.lang.String[]): jdk.nashorn.internal.runtime.ECMAException
-                    public static getMessage(arg0: java.lang.String | string, ...arg1: java.lang.String[]): java.lang.String
+                    public static getMessage(arg0: java.lang.String | string, ...arg1: java.lang.String[]): string
                     public static isScriptFrame(arg0: java.lang.StackTraceElement): boolean
                     public static class: java.lang.Class<any>
                 }
@@ -11122,7 +11122,7 @@ declare namespace jdk {
                     public getInvocation(arg0: jdk.internal.dynalink.CallSiteDescriptor, arg1: jdk.internal.dynalink.linker.LinkerServices): java.lang.invoke.MethodHandle
                     public contains(arg0: jdk.internal.dynalink.beans.SingleDynamicMethod): boolean
                     public isConstructor(): boolean
-                    public toString(): java.lang.String
+                    public toString(): string
                     public addMethod(arg0: jdk.internal.dynalink.beans.SingleDynamicMethod): void
                     public static class: java.lang.Class<any>
                 }
@@ -11164,7 +11164,7 @@ declare namespace jdk {
                 class AccessibleMembersLookup$MethodSignature {
                     public equals(arg0: java.lang.Object): boolean
                     public hashCode(): int
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 abstract class SingleDynamicMethod extends jdk.internal.dynalink.beans.DynamicMethod {
@@ -11175,7 +11175,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 abstract class DynamicMethod {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 abstract class AbstractJavaLinker implements jdk.internal.dynalink.linker.GuardingDynamicLinker {
@@ -11216,7 +11216,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class GuardedInvocationComponent$Validator {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class GuardedInvocationComponent$ValidationType extends java.lang.Enum<jdk.internal.dynalink.beans.GuardedInvocationComponent$ValidationType> {
@@ -11231,7 +11231,7 @@ declare namespace jdk {
                 class StaticClass implements java.io.Serializable {
                     public static forClass(arg0: java.lang.Class<any>): jdk.internal.dynalink.beans.StaticClass
                     public getRepresentedClass(): java.lang.Class<any>
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class StaticClass$1 extends java.lang.ClassValue<jdk.internal.dynalink.beans.StaticClass> {
@@ -11267,11 +11267,11 @@ declare namespace jdk {
                 SCHEME: int
                 OPERATOR: int
                 NAME_OPERAND: int
-                TOKEN_DELIMITER: java.lang.String
-                OPERATOR_DELIMITER: java.lang.String
+                TOKEN_DELIMITER: string
+                OPERATOR_DELIMITER: string
                 getNameTokenCount(): int
-                getNameToken(arg0: int): java.lang.String
-                getName(): java.lang.String
+                getNameToken(arg0: int): string
+                getName(): string
                 getMethodType(): java.lang.invoke.MethodType
                 getLookup(): java.lang.invoke.MethodHandles$Lookup
                 changeMethodType(arg0: java.lang.invoke.MethodType): jdk.internal.dynalink.CallSiteDescriptor
@@ -11386,7 +11386,7 @@ declare namespace jdk {
                 }
                 class DefaultCallSiteDescriptor extends jdk.internal.dynalink.support.AbstractCallSiteDescriptor {
                     public getNameTokenCount(): int
-                    public getNameToken(arg0: int): java.lang.String
+                    public getNameToken(arg0: int): string
                     public getMethodType(): java.lang.invoke.MethodType
                     public changeMethodType(arg0: java.lang.invoke.MethodType): jdk.internal.dynalink.CallSiteDescriptor
                     public static class: java.lang.Class<any>
@@ -11397,13 +11397,13 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class NameCodec {
-                    public static encode(arg0: java.lang.String | string): java.lang.String
-                    public static decode(arg0: java.lang.String | string): java.lang.String
+                    public static encode(arg0: java.lang.String | string): string
+                    public static decode(arg0: java.lang.String | string): string
                     public static class: java.lang.Class<any>
                 }
                 class NamedDynCallSiteDescriptor extends jdk.internal.dynalink.support.UnnamedDynCallSiteDescriptor {
                     public getNameTokenCount(): int
-                    public getNameToken(arg0: int): java.lang.String
+                    public getNameToken(arg0: int): string
                     public changeMethodType(arg0: java.lang.invoke.MethodType): jdk.internal.dynalink.CallSiteDescriptor
                     public static class: java.lang.Class<any>
                 }
@@ -11458,7 +11458,7 @@ declare namespace jdk {
                     public static class: java.lang.Class<any>
                 }
                 class TypeConverterFactory$3$1 extends jdk.internal.dynalink.support.ClassMap<java.lang.Boolean> {
-                    protected computeValue(arg0: java.lang.Class<any>): java.lang.Boolean
+                    protected computeValue(arg0: java.lang.Class<any>): boolean
                     protected computeValue(arg0: java.lang.Class): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
@@ -11497,7 +11497,7 @@ declare namespace jdk {
                 }
                 class UnnamedDynCallSiteDescriptor extends jdk.internal.dynalink.support.AbstractCallSiteDescriptor {
                     public getNameTokenCount(): int
-                    public getNameToken(arg0: int): java.lang.String
+                    public getNameToken(arg0: int): string
                     public getMethodType(): java.lang.invoke.MethodType
                     public changeMethodType(arg0: java.lang.invoke.MethodType): jdk.internal.dynalink.CallSiteDescriptor
                     public static class: java.lang.Class<any>
@@ -11510,12 +11510,12 @@ declare namespace jdk {
                 }
                 abstract class AbstractCallSiteDescriptor implements jdk.internal.dynalink.CallSiteDescriptor {
                     public constructor()
-                    public getName(): java.lang.String
+                    public getName(): string
                     public getLookup(): java.lang.invoke.MethodHandles$Lookup
                     public equals(arg0: java.lang.Object): boolean
                     public equals(arg0: jdk.internal.dynalink.CallSiteDescriptor): boolean
                     public hashCode(): int
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
             }

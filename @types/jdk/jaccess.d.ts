@@ -35,7 +35,7 @@ declare namespace com {
                         public getListenerCount(arg0: java.lang.Class): int
                         public add(arg0: java.lang.Class, arg1: java.util.EventListener): void
                         public remove(arg0: java.lang.Class, arg1: java.util.EventListener): void
-                        public toString(): java.lang.String
+                        public toString(): string
                         public static class: java.lang.Class<any>
                     }
                     class EventID {
@@ -315,9 +315,9 @@ declare namespace com {
                         public setSource(arg0: java.lang.Object): void
                         public equals(arg0: java.lang.Object): boolean
                         public getAccessibleContext(): javax.accessibility.AccessibleContext
-                        public getAccessibleName(): java.lang.String
+                        public getAccessibleName(): string
                         public setAccessibleName(arg0: java.lang.String | string): void
-                        public getAccessibleDescription(): java.lang.String
+                        public getAccessibleDescription(): string
                         public setAccessibleDescription(arg0: java.lang.String | string): void
                         public getAccessibleRole(): javax.accessibility.AccessibleRole
                         public getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
@@ -361,7 +361,7 @@ declare namespace com {
                         namespace awt {
                             class ButtonTranslator extends com.sun.java.accessibility.util.Translator {
                                 public constructor()
-                                public getAccessibleName(): java.lang.String
+                                public getAccessibleName(): string
                                 public setAccessibleName(arg0: java.lang.String | string): void
                                 public getAccessibleRole(): javax.accessibility.AccessibleRole
                                 public static class: java.lang.Class<any>
@@ -369,14 +369,14 @@ declare namespace com {
                             class CheckboxTranslator extends com.sun.java.accessibility.util.Translator {
                                 public constructor()
                                 public getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
-                                public getAccessibleName(): java.lang.String
+                                public getAccessibleName(): string
                                 public setAccessibleName(arg0: java.lang.String | string): void
                                 public getAccessibleRole(): javax.accessibility.AccessibleRole
                                 public static class: java.lang.Class<any>
                             }
                             class LabelTranslator extends com.sun.java.accessibility.util.Translator {
                                 public constructor()
-                                public getAccessibleName(): java.lang.String
+                                public getAccessibleName(): string
                                 public setAccessibleName(arg0: java.lang.String | string): void
                                 public getAccessibleRole(): javax.accessibility.AccessibleRole
                                 public static class: java.lang.Class<any>

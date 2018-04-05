@@ -108,7 +108,7 @@ declare namespace com {
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.String | string): byte[]
-                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): java.lang.String
+                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                     public static class: java.lang.Class<any>
                 }
                 class AESCrypt extends com.sun.crypto.provider.SymmetricCipher implements com.sun.crypto.provider.AESConstants {
@@ -193,7 +193,7 @@ declare namespace com {
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.String | string): byte[]
-                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): java.lang.String
+                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                     public static class: java.lang.Class<any>
                 }
                 class CipherFeedback extends com.sun.crypto.provider.FeedbackCipher {
@@ -240,8 +240,8 @@ declare namespace com {
                 }
                 class DESKey implements javax.crypto.SecretKey {
                     public getEncoded(): byte[]
-                    public getAlgorithm(): java.lang.String
-                    public getFormat(): java.lang.String
+                    public getAlgorithm(): string
+                    public getFormat(): string
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
                     protected finalize(): void
@@ -270,7 +270,7 @@ declare namespace com {
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.String | string): byte[]
-                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): java.lang.String
+                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                     public static class: java.lang.Class<any>
                 }
                 class DESedeCipher extends javax.crypto.CipherSpi {
@@ -304,8 +304,8 @@ declare namespace com {
                 }
                 class DESedeKey implements javax.crypto.SecretKey {
                     public getEncoded(): byte[]
-                    public getAlgorithm(): java.lang.String
-                    public getFormat(): java.lang.String
+                    public getAlgorithm(): string
+                    public getFormat(): string
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
                     protected finalize(): void
@@ -327,7 +327,7 @@ declare namespace com {
                     public static class: java.lang.Class<any>
                 }
                 class BlockCipherParamsCore {
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class DESedeParameters extends java.security.AlgorithmParametersSpi {
@@ -338,7 +338,7 @@ declare namespace com {
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.String | string): byte[]
-                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): java.lang.String
+                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                     public static class: java.lang.Class<any>
                 }
                 class DESedeWrapCipher extends javax.crypto.CipherSpi {
@@ -404,12 +404,12 @@ declare namespace com {
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.String | string): byte[]
-                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): java.lang.String
+                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                     public static class: java.lang.Class<any>
                 }
                 class DHPrivateKey implements java.security.PrivateKey , javax.crypto.interfaces.DHPrivateKey , java.io.Serializable {
-                    public getFormat(): java.lang.String
-                    public getAlgorithm(): java.lang.String
+                    public getFormat(): string
+                    public getAlgorithm(): string
                     public getEncoded(): byte[]
                     public getX(): java.math.BigInteger
                     public getParams(): javax.crypto.spec.DHParameterSpec
@@ -417,12 +417,12 @@ declare namespace com {
                     public equals(arg0: java.lang.Object): boolean
                 }
                 class DHPublicKey implements java.security.PublicKey , javax.crypto.interfaces.DHPublicKey , java.io.Serializable {
-                    public getFormat(): java.lang.String
-                    public getAlgorithm(): java.lang.String
+                    public getFormat(): string
+                    public getAlgorithm(): string
                     public getEncoded(): byte[]
                     public getY(): java.math.BigInteger
                     public getParams(): javax.crypto.spec.DHParameterSpec
-                    public toString(): java.lang.String
+                    public toString(): string
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
                 }
@@ -437,7 +437,7 @@ declare namespace com {
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.String | string): byte[]
-                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): java.lang.String
+                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                     public static class: java.lang.Class<any>
                 }
                 class GHASH {
@@ -507,7 +507,7 @@ declare namespace com {
                     public engineSize(): int
                     public engineIsKeyEntry(arg0: java.lang.String | string): boolean
                     public engineIsCertificateEntry(arg0: java.lang.String | string): boolean
-                    public engineGetCertificateAlias(arg0: java.security.cert.Certificate): java.lang.String
+                    public engineGetCertificateAlias(arg0: java.security.cert.Certificate): string
                     public engineStore(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: char[]): void
                     public engineLoad(arg0: java.io.InputStream, arg1: char[]): void
                     public static class: java.lang.Class<any>
@@ -592,7 +592,7 @@ declare namespace com {
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.String | string): byte[]
-                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): java.lang.String
+                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                     public static class: java.lang.Class<any>
                 }
                 class OutputFeedback extends com.sun.crypto.provider.FeedbackCipher {
@@ -600,8 +600,8 @@ declare namespace com {
                 }
                 class PBEKey implements javax.crypto.SecretKey {
                     public getEncoded(): byte[]
-                    public getAlgorithm(): java.lang.String
-                    public getFormat(): java.lang.String
+                    public getAlgorithm(): string
+                    public getFormat(): string
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
                     protected finalize(): void
@@ -692,7 +692,7 @@ declare namespace com {
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.String | string): byte[]
-                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): java.lang.String
+                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                     public static class: java.lang.Class<any>
                 }
                 abstract class PBES2Core extends javax.crypto.CipherSpi {
@@ -761,7 +761,7 @@ declare namespace com {
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.String | string): byte[]
-                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): java.lang.String
+                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                     public static class: java.lang.Class<any>
                 }
                 class PBES2Parameters$HmacSHA512AndAES_256 extends com.sun.crypto.provider.PBES2Parameters {
@@ -860,18 +860,18 @@ declare namespace com {
                 }
                 class PBKDF2KeyImpl implements javax.crypto.interfaces.PBEKey {
                     public getEncoded(): byte[]
-                    public getAlgorithm(): java.lang.String
+                    public getAlgorithm(): string
                     public getIterationCount(): int
                     public getPassword(): char[]
                     public getSalt(): byte[]
-                    public getFormat(): java.lang.String
+                    public getFormat(): string
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
                     protected finalize(): void
                 }
                 class PBKDF2KeyImpl$1 implements javax.crypto.SecretKey {
-                    public getAlgorithm(): java.lang.String
-                    public getFormat(): java.lang.String
+                    public getAlgorithm(): string
+                    public getFormat(): string
                     public getEncoded(): byte[]
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
@@ -1140,7 +1140,7 @@ declare namespace com {
                     protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
                     protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.String | string): byte[]
-                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): java.lang.String
+                    protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                     public static class: java.lang.Class<any>
                 }
                 class RSACipher extends javax.crypto.CipherSpi {
@@ -1224,8 +1224,8 @@ declare namespace com {
                 class TlsMasterSecretGenerator$TlsMasterSecretKey implements sun.security.internal.interfaces.TlsMasterSecret {
                     public getMajorVersion(): int
                     public getMinorVersion(): int
-                    public getAlgorithm(): java.lang.String
-                    public getFormat(): java.lang.String
+                    public getAlgorithm(): string
+                    public getFormat(): string
                     public getEncoded(): byte[]
                 }
                 abstract class TlsPrfGenerator extends javax.crypto.KeyGeneratorSpi {

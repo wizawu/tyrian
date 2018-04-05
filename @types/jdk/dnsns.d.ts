@@ -6,7 +6,7 @@ declare namespace sun {
                     class DNSNameService implements sun.net.spi.nameservice.NameService {
                         public constructor()
                         public lookupAllHostAddr(arg0: java.lang.String | string): java.net.InetAddress[]
-                        public getHostByAddr(arg0: byte[]): java.lang.String
+                        public getHostByAddr(arg0: byte[]): string
                         public static class: java.lang.Class<any>
                     }
                     class DNSNameService$2 implements java.security.PrivilegedExceptionAction<javax.naming.directory.Attributes> {
@@ -28,8 +28,8 @@ declare namespace sun {
                     class DNSNameServiceDescriptor implements sun.net.spi.nameservice.NameServiceDescriptor {
                         public constructor()
                         public createNameService(): sun.net.spi.nameservice.NameService
-                        public getProviderName(): java.lang.String
-                        public getType(): java.lang.String
+                        public getProviderName(): string
+                        public getType(): string
                         public static class: java.lang.Class<any>
                     }
                 }

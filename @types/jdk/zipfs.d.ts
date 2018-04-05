@@ -4,7 +4,7 @@ declare namespace com {
             namespace zipfs {
                 class JarFileSystemProvider extends com.sun.nio.zipfs.ZipFileSystemProvider {
                     public constructor()
-                    public getScheme(): java.lang.String
+                    public getScheme(): string
                     protected uriToPath(arg0: java.net.URI): java.nio.file.Path
                     public getPath(arg0: java.net.URI): java.nio.file.Path
                     public static class: java.lang.Class<any>
@@ -22,7 +22,7 @@ declare namespace com {
                     public static class: java.lang.Class<any>
                 }
                 class ZipFileAttributeView implements java.nio.file.attribute.BasicFileAttributeView {
-                    public name(): java.lang.String
+                    public name(): string
                     public readAttributes(): com.sun.nio.zipfs.ZipFileAttributes
                     public setTimes(arg0: java.nio.file.attribute.FileTime, arg1: java.nio.file.attribute.FileTime, arg2: java.nio.file.attribute.FileTime): void
                     public readAttributes(): java.nio.file.attribute.BasicFileAttributes
@@ -49,8 +49,8 @@ declare namespace com {
                     public static class: java.lang.Class<any>
                 }
                 class ZipFileStore extends java.nio.file.FileStore {
-                    public name(): java.lang.String
-                    public type(): java.lang.String
+                    public name(): string
+                    public type(): string
                     public isReadOnly(): boolean
                     public supportsFileAttributeView(arg0: java.lang.Class<java.nio.file.attribute.FileAttributeView>): boolean
                     public supportsFileAttributeView(arg0: java.lang.String | string): boolean
@@ -78,7 +78,7 @@ declare namespace com {
                 }
                 class ZipFileSystemProvider extends java.nio.file.spi.FileSystemProvider {
                     public constructor()
-                    public getScheme(): java.lang.String
+                    public getScheme(): string
                     protected uriToPath(arg0: java.net.URI): java.nio.file.Path
                     public newFileSystem(arg0: java.net.URI, arg1: java.util.Map<java.lang.String, any>): java.nio.file.FileSystem
                     public newFileSystem(arg0: java.nio.file.Path, arg1: java.util.Map<java.lang.String, any>): java.nio.file.FileSystem
@@ -120,12 +120,12 @@ declare namespace com {
                     public method(): int
                     public extra(): byte[]
                     public comment(): byte[]
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class ZipFileSystem extends java.nio.file.FileSystem {
                     public provider(): java.nio.file.spi.FileSystemProvider
-                    public getSeparator(): java.lang.String
+                    public getSeparator(): string
                     public isOpen(): boolean
                     public isReadOnly(): boolean
                     public getRootDirectories(): java.lang.Iterable<java.nio.file.Path>
@@ -134,7 +134,7 @@ declare namespace com {
                     public newWatchService(): java.nio.file.WatchService
                     public getFileStores(): java.lang.Iterable<java.nio.file.FileStore>
                     public supportedFileAttributeViews(): java.util.Set<java.lang.String>
-                    public toString(): java.lang.String
+                    public toString(): string
                     public getPathMatcher(arg0: java.lang.String | string): java.nio.file.PathMatcher
                     public close(): void
                     protected finalize(): void
@@ -254,7 +254,7 @@ declare namespace com {
                     public startsWith(arg0: java.lang.String | string): boolean
                     public endsWith(arg0: java.lang.String | string): boolean
                     public normalize(): java.nio.file.Path
-                    public toString(): java.lang.String
+                    public toString(): string
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
                     public compareTo(arg0: java.nio.file.Path): int
@@ -297,7 +297,7 @@ declare namespace com {
                     public static javaToWinTime(arg0: long): long
                     public static unixToJavaTime(arg0: long): long
                     public static javaToUnixTime(arg0: long): long
-                    public static toRegexPattern(arg0: java.lang.String | string): java.lang.String
+                    public static toRegexPattern(arg0: java.lang.String | string): string
                     public static class: java.lang.Class<any>
                 }
             }

@@ -13,11 +13,11 @@ declare namespace org {
                 public constructor(arg0: javax.accessibility.AccessibleContext)
                 public do_action(arg0: int): boolean
                 public get_n_actions(): int
-                public get_description(arg0: int): java.lang.String
+                public get_description(arg0: int): string
                 public setDescription(arg0: int, arg1: java.lang.String | string): boolean
-                public get_name(arg0: int): java.lang.String
-                public getLocalizedName(arg0: int): java.lang.String
-                public get_keybinding(arg0: int): java.lang.String
+                public get_name(arg0: int): string
+                public getLocalizedName(arg0: int): string
+                public get_keybinding(arg0: int): string
                 public static class: java.lang.Class<any>
             }
             class AtkComponent {
@@ -48,7 +48,7 @@ declare namespace org {
             }
             class AtkHyperlink {
                 public constructor(arg0: javax.accessibility.AccessibleHyperlink)
-                public get_uri(arg0: int): java.lang.String
+                public get_uri(arg0: int): string
                 public get_object(arg0: int): java.lang.Object
                 public get_end_index(): int
                 public get_start_index(): int
@@ -66,7 +66,7 @@ declare namespace org {
             class AtkImage {
                 public constructor(arg0: javax.accessibility.AccessibleContext)
                 public get_image_position(arg0: int): java.awt.Point
-                public get_image_description(): java.lang.String
+                public get_image_description(): string
                 public get_image_size(): java.awt.Dimension
                 public static class: java.lang.Class<any>
             }
@@ -79,7 +79,7 @@ declare namespace org {
                 public isAltKeyDown: boolean
                 public isMetaKeyDown: boolean
                 public keyval: int
-                public string: java.lang.String
+                public string: string
                 public keycode: int
                 public timestamp: int
                 public constructor(arg0: java.awt.event.KeyEvent)
@@ -141,9 +141,9 @@ declare namespace org {
                 public get_row_extent_at(arg0: int, arg1: int): int
                 public get_caption(): javax.accessibility.AccessibleContext
                 public setCaption(arg0: javax.accessibility.Accessible | javax.accessibility.Accessible$$Lambda): void
-                public get_column_description(arg0: int): java.lang.String
+                public get_column_description(arg0: int): string
                 public setColumnDescription(arg0: int, arg1: java.lang.String | string): void
-                public get_row_description(arg0: int): java.lang.String
+                public get_row_description(arg0: int): string
                 public setRowDescription(arg0: int, arg1: java.lang.String | string): void
                 public get_column_header(arg0: int): javax.accessibility.AccessibleContext
                 public setColumnHeader(arg0: int, arg1: javax.accessibility.AccessibleTable): void
@@ -172,7 +172,7 @@ declare namespace org {
                 public static class: java.lang.Class<any>
             }
             class AtkText$StringSequence {
-                public str: java.lang.String
+                public str: string
                 public start_offset: int
                 public end_offset: int
                 public constructor(arg0: org.GNOME.Accessibility.AtkText, arg1: java.lang.String | string, arg2: int, arg3: int)
@@ -180,7 +180,7 @@ declare namespace org {
             }
             class AtkText {
                 public constructor(arg0: javax.accessibility.AccessibleContext)
-                public get_text(arg0: int, arg1: int): java.lang.String
+                public get_text(arg0: int, arg1: int): string
                 public get_character_at_offset(arg0: int): char
                 public get_text_at_offset(arg0: int, arg1: int): org.GNOME.Accessibility.AtkText$StringSequence
                 public get_caret_offset(): int
@@ -281,7 +281,7 @@ declare namespace org {
             class GNOMEKeyMapping$GNOMEKeyInfo {
                 public constructor(arg0: int, arg1: java.lang.String | string)
                 public getGdkKeyCode(): int
-                public getGdkKeyString(): java.lang.String
+                public getGdkKeyString(): string
                 public static class: java.lang.Class<any>
             }
             class GNOMEKeyMapping {

@@ -2,8 +2,8 @@ declare namespace org {
     namespace classpath {
         namespace icedtea {
             class Config {
-                public static PACKAGE_NAME: java.lang.String
-                public static PACKAGE_VERSION: java.lang.String
+                public static PACKAGE_NAME: string
+                public static PACKAGE_VERSION: string
                 public static class: java.lang.Class<any>
             }
             namespace pulseaudio {
@@ -11,7 +11,7 @@ declare namespace org {
                     public static class: java.lang.Class<any>
                 }
                 class SecurityWrapper$1 implements java.security.PrivilegedAction<java.lang.Boolean> {
-                    public run(): java.lang.Boolean
+                    public run(): boolean
                     public run(): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
@@ -24,7 +24,7 @@ declare namespace org {
                     public static class: java.lang.Class<any>
                 }
                 class PulseAudioTargetDataLine extends org.classpath.icedtea.pulseaudio.PulseAudioDataLine implements javax.sound.sampled.TargetDataLine {
-                    public static DEFAULT_TARGETDATALINE_NAME: java.lang.String
+                    public static DEFAULT_TARGETDATALINE_NAME: string
                     public close(): void
                     public open(arg0: javax.sound.sampled.AudioFormat, arg1: int): void
                     public open(arg0: javax.sound.sampled.AudioFormat): void
@@ -40,7 +40,7 @@ declare namespace org {
                     public stop(): void
                     public getLineInfo(): javax.sound.sampled.Line$Info
                     public getBytesInBuffer(): int
-                    public getName(): java.lang.String
+                    public getName(): string
                     public setName(arg0: java.lang.String | string): void
                     public getLevel(): float
                     public getFormat(): javax.sound.sampled.AudioFormat
@@ -66,7 +66,7 @@ declare namespace org {
                     public static class: java.lang.Class<any>
                 }
                 class PulseAudioSourceDataLine extends org.classpath.icedtea.pulseaudio.PulseAudioDataLine implements javax.sound.sampled.SourceDataLine , org.classpath.icedtea.pulseaudio.PulseAudioPlaybackLine {
-                    public static DEFAULT_SOURCEDATALINE_NAME: java.lang.String
+                    public static DEFAULT_SOURCEDATALINE_NAME: string
                     public open(arg0: javax.sound.sampled.AudioFormat, arg1: int): void
                     public open(arg0: javax.sound.sampled.AudioFormat): void
                     public native_set_volume(arg0: float): byte[]
@@ -84,7 +84,7 @@ declare namespace org {
                     public close(): void
                     public getLineInfo(): javax.sound.sampled.Line$Info
                     public getBytesInBuffer(): int
-                    public getName(): java.lang.String
+                    public getName(): string
                     public setName(arg0: java.lang.String | string): void
                     public getLevel(): float
                     public getFormat(): javax.sound.sampled.AudioFormat
@@ -118,7 +118,7 @@ declare namespace org {
                     public close(): void
                     public getLineInfo(): javax.sound.sampled.Line$Info
                     public open(): void
-                    public getName(): java.lang.String
+                    public getName(): string
                     public static class: java.lang.Class<any>
                 }
                 class PulseAudioMixerProvider extends javax.sound.sampled.spi.MixerProvider {
@@ -214,7 +214,7 @@ declare namespace org {
                 }
                 abstract class PulseAudioDataLine extends org.classpath.icedtea.pulseaudio.PulseAudioLine implements javax.sound.sampled.DataLine {
                     protected static DEFAULT_BUFFER_SIZE: int
-                    protected streamName: java.lang.String
+                    protected streamName: string
                     protected isStarted: boolean
                     protected dataWritten: boolean
                     protected supportedFormats: javax.sound.sampled.AudioFormat[]
@@ -239,7 +239,7 @@ declare namespace org {
                     public getFormat(): javax.sound.sampled.AudioFormat
                     public getLevel(): float
                     public setName(arg0: java.lang.String | string): void
-                    public getName(): java.lang.String
+                    public getName(): string
                     public getBytesInBuffer(): int
                     public static class: java.lang.Class<any>
                 }
@@ -279,7 +279,7 @@ declare namespace org {
                     public (): void
                 }
                 class PulseAudioClip extends org.classpath.icedtea.pulseaudio.PulseAudioDataLine implements javax.sound.sampled.Clip , org.classpath.icedtea.pulseaudio.PulseAudioPlaybackLine {
-                    public static DEFAULT_CLIP_NAME: java.lang.String
+                    public static DEFAULT_CLIP_NAME: string
                     protected connectLine(arg0: int, arg1: org.classpath.icedtea.pulseaudio.Stream): void
                     public available(): int
                     public close(): void
@@ -305,7 +305,7 @@ declare namespace org {
                     public stop(): void
                     public getLineInfo(): javax.sound.sampled.Line$Info
                     public getBytesInBuffer(): int
-                    public getName(): java.lang.String
+                    public getName(): string
                     public setName(arg0: java.lang.String | string): void
                     public getLevel(): float
                     public getFormat(): javax.sound.sampled.AudioFormat
@@ -357,7 +357,7 @@ declare namespace org {
                     public static FLAG_DONT_INHIBIT_AUTO_SUSPEND: long
                     public static FLAG_START_UNMUTED: long
                     public static FLAG_FAIL_ON_SUSPEND: long
-                    public static DEFAULT_DEVICE: java.lang.String
+                    public static DEFAULT_DEVICE: string
                     public static checkNativeStreamState(arg0: long): long
                     public bytesInBuffer(): int
                     public static class: java.lang.Class<any>

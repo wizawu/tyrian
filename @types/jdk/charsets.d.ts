@@ -16,7 +16,7 @@ declare namespace sun {
                 }
                 class IBM037 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -27,7 +27,7 @@ declare namespace sun {
                 }
                 class IBM1006 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -38,7 +38,7 @@ declare namespace sun {
                 }
                 class IBM1025 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -49,7 +49,7 @@ declare namespace sun {
                 }
                 class IBM1026 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -60,7 +60,7 @@ declare namespace sun {
                 }
                 class IBM1046 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -71,7 +71,7 @@ declare namespace sun {
                 }
                 class IBM1047 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -82,7 +82,7 @@ declare namespace sun {
                 }
                 class IBM1097 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -93,7 +93,7 @@ declare namespace sun {
                 }
                 class IBM1098 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -104,7 +104,7 @@ declare namespace sun {
                 }
                 class IBM1112 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -115,7 +115,7 @@ declare namespace sun {
                 }
                 class IBM1122 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -126,7 +126,7 @@ declare namespace sun {
                 }
                 class IBM1123 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -137,7 +137,7 @@ declare namespace sun {
                 }
                 class IBM1124 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -148,7 +148,7 @@ declare namespace sun {
                 }
                 class IBM1140 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -159,7 +159,7 @@ declare namespace sun {
                 }
                 class IBM1141 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -170,7 +170,7 @@ declare namespace sun {
                 }
                 class IBM1142 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -181,7 +181,7 @@ declare namespace sun {
                 }
                 class IBM1143 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -192,7 +192,7 @@ declare namespace sun {
                 }
                 class IBM1144 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -203,7 +203,7 @@ declare namespace sun {
                 }
                 class IBM1145 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -214,7 +214,7 @@ declare namespace sun {
                 }
                 class IBM1146 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -225,7 +225,7 @@ declare namespace sun {
                 }
                 class IBM1147 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -236,7 +236,7 @@ declare namespace sun {
                 }
                 class IBM1148 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -247,7 +247,7 @@ declare namespace sun {
                 }
                 class IBM1149 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -258,7 +258,7 @@ declare namespace sun {
                 }
                 class IBM1166 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -269,7 +269,7 @@ declare namespace sun {
                 }
                 class IBM273 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -280,7 +280,7 @@ declare namespace sun {
                 }
                 class IBM277 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -291,7 +291,7 @@ declare namespace sun {
                 }
                 class IBM278 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -302,7 +302,7 @@ declare namespace sun {
                 }
                 class IBM280 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -313,7 +313,7 @@ declare namespace sun {
                 }
                 class IBM284 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -324,7 +324,7 @@ declare namespace sun {
                 }
                 class IBM285 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -335,7 +335,7 @@ declare namespace sun {
                 }
                 class IBM290 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -346,7 +346,7 @@ declare namespace sun {
                 }
                 class IBM297 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -357,7 +357,7 @@ declare namespace sun {
                 }
                 class IBM420 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -368,7 +368,7 @@ declare namespace sun {
                 }
                 class IBM424 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -379,7 +379,7 @@ declare namespace sun {
                 }
                 class IBM500 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -390,7 +390,7 @@ declare namespace sun {
                 }
                 class IBM833 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -401,7 +401,7 @@ declare namespace sun {
                 }
                 class IBM838 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -412,7 +412,7 @@ declare namespace sun {
                 }
                 class IBM856 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -423,7 +423,7 @@ declare namespace sun {
                 }
                 class IBM860 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -434,7 +434,7 @@ declare namespace sun {
                 }
                 class IBM861 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -445,7 +445,7 @@ declare namespace sun {
                 }
                 class IBM863 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -456,7 +456,7 @@ declare namespace sun {
                 }
                 class IBM864 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -467,7 +467,7 @@ declare namespace sun {
                 }
                 class IBM865 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -478,7 +478,7 @@ declare namespace sun {
                 }
                 class IBM868 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -489,7 +489,7 @@ declare namespace sun {
                 }
                 class IBM869 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -500,7 +500,7 @@ declare namespace sun {
                 }
                 class IBM870 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -511,7 +511,7 @@ declare namespace sun {
                 }
                 class IBM871 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -522,7 +522,7 @@ declare namespace sun {
                 }
                 class IBM875 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -533,7 +533,7 @@ declare namespace sun {
                 }
                 class IBM918 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -544,7 +544,7 @@ declare namespace sun {
                 }
                 class IBM921 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -555,7 +555,7 @@ declare namespace sun {
                 }
                 class IBM922 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -566,7 +566,7 @@ declare namespace sun {
                 }
                 class ISO_8859_11 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -577,7 +577,7 @@ declare namespace sun {
                 }
                 class ISO_8859_3 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -588,7 +588,7 @@ declare namespace sun {
                 }
                 class ISO_8859_6 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -599,7 +599,7 @@ declare namespace sun {
                 }
                 class ISO_8859_8 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -610,7 +610,7 @@ declare namespace sun {
                 }
                 class JIS_X_0201 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -621,7 +621,7 @@ declare namespace sun {
                 }
                 class MS1255 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -632,7 +632,7 @@ declare namespace sun {
                 }
                 class MS1256 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -643,7 +643,7 @@ declare namespace sun {
                 }
                 class MS1258 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -654,7 +654,7 @@ declare namespace sun {
                 }
                 class MS874 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -665,7 +665,7 @@ declare namespace sun {
                 }
                 class MacArabic extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -676,7 +676,7 @@ declare namespace sun {
                 }
                 class MacCentralEurope extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -687,7 +687,7 @@ declare namespace sun {
                 }
                 class MacCroatian extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -698,7 +698,7 @@ declare namespace sun {
                 }
                 class MacCyrillic extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -709,7 +709,7 @@ declare namespace sun {
                 }
                 class MacDingbat extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -720,7 +720,7 @@ declare namespace sun {
                 }
                 class MacGreek extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -731,7 +731,7 @@ declare namespace sun {
                 }
                 class MacHebrew extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -742,7 +742,7 @@ declare namespace sun {
                 }
                 class MacIceland extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -753,7 +753,7 @@ declare namespace sun {
                 }
                 class MacRoman extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -764,7 +764,7 @@ declare namespace sun {
                 }
                 class MacRomania extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -775,7 +775,7 @@ declare namespace sun {
                 }
                 class MacSymbol extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -786,7 +786,7 @@ declare namespace sun {
                 }
                 class MacThai extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -797,7 +797,7 @@ declare namespace sun {
                 }
                 class MacTurkish extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -808,7 +808,7 @@ declare namespace sun {
                 }
                 class MacUkraine extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -819,7 +819,7 @@ declare namespace sun {
                 }
                 class TIS_620 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -830,7 +830,7 @@ declare namespace sun {
                 }
                 class Big5 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -841,7 +841,7 @@ declare namespace sun {
                 }
                 class Johab extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -852,7 +852,7 @@ declare namespace sun {
                 }
                 class EUC_CN extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -863,7 +863,7 @@ declare namespace sun {
                 }
                 class EUC_KR extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -874,7 +874,7 @@ declare namespace sun {
                 }
                 class MS932 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -885,7 +885,7 @@ declare namespace sun {
                 }
                 class MS936 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -896,7 +896,7 @@ declare namespace sun {
                 }
                 class MS949 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -907,7 +907,7 @@ declare namespace sun {
                 }
                 class MS950 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -918,7 +918,7 @@ declare namespace sun {
                 }
                 class GBK extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -929,7 +929,7 @@ declare namespace sun {
                 }
                 class SJIS extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -940,7 +940,7 @@ declare namespace sun {
                 }
                 class PCK extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -951,7 +951,7 @@ declare namespace sun {
                 }
                 class IBM1364 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -962,7 +962,7 @@ declare namespace sun {
                 }
                 class IBM1381 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -973,7 +973,7 @@ declare namespace sun {
                 }
                 class IBM1383 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -984,7 +984,7 @@ declare namespace sun {
                 }
                 class IBM300 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -995,7 +995,7 @@ declare namespace sun {
                 }
                 class IBM930 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1006,7 +1006,7 @@ declare namespace sun {
                 }
                 class IBM933 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1017,7 +1017,7 @@ declare namespace sun {
                 }
                 class IBM935 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1028,7 +1028,7 @@ declare namespace sun {
                 }
                 class IBM937 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1039,7 +1039,7 @@ declare namespace sun {
                 }
                 class IBM939 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1050,7 +1050,7 @@ declare namespace sun {
                 }
                 class IBM942 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1061,7 +1061,7 @@ declare namespace sun {
                 }
                 class IBM943 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1072,7 +1072,7 @@ declare namespace sun {
                 }
                 class IBM948 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1083,7 +1083,7 @@ declare namespace sun {
                 }
                 class IBM949 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1094,7 +1094,7 @@ declare namespace sun {
                 }
                 class IBM950 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1105,7 +1105,7 @@ declare namespace sun {
                 }
                 class IBM970 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1116,7 +1116,7 @@ declare namespace sun {
                 }
                 class JIS_X_0208 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1127,7 +1127,7 @@ declare namespace sun {
                 }
                 class JIS_X_0212 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1138,7 +1138,7 @@ declare namespace sun {
                 }
                 class JIS_X_0208_Solaris extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1149,7 +1149,7 @@ declare namespace sun {
                 }
                 class JIS_X_0208_MS5022X extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1160,7 +1160,7 @@ declare namespace sun {
                 }
                 class JIS_X_0208_MS932 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1171,7 +1171,7 @@ declare namespace sun {
                 }
                 class JIS_X_0212_Solaris extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1182,7 +1182,7 @@ declare namespace sun {
                 }
                 class JIS_X_0212_MS5022X extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1229,7 +1229,7 @@ declare namespace sun {
                 }
                 class Big5_HKSCS extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1265,7 +1265,7 @@ declare namespace sun {
                 }
                 class Big5_Solaris extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1288,7 +1288,7 @@ declare namespace sun {
                 }
                 class EUC_JP_LINUX extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1308,7 +1308,7 @@ declare namespace sun {
                 }
                 class EUC_JP extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1337,7 +1337,7 @@ declare namespace sun {
                 }
                 class EUC_JP_Open extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1387,7 +1387,7 @@ declare namespace sun {
                 }
                 class IBM33722 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1420,7 +1420,7 @@ declare namespace sun {
                 }
                 class IBM942C extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1431,7 +1431,7 @@ declare namespace sun {
                 }
                 class IBM943C extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1442,7 +1442,7 @@ declare namespace sun {
                 }
                 class IBM949C extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1453,7 +1453,7 @@ declare namespace sun {
                 }
                 class IBM964 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1473,7 +1473,7 @@ declare namespace sun {
                 }
                 class ISCII91 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1497,7 +1497,7 @@ declare namespace sun {
                 }
                 class EUC_TW extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1523,7 +1523,7 @@ declare namespace sun {
                 }
                 class ISO2022_CN extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1541,7 +1541,7 @@ declare namespace sun {
                 class ISO2022_CN_CNS extends sun.nio.cs.ext.ISO2022 implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
                     public contains(arg0: java.nio.charset.Charset): boolean
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
                     public static class: java.lang.Class<any>
@@ -1558,7 +1558,7 @@ declare namespace sun {
                 class ISO2022_CN_GB extends sun.nio.cs.ext.ISO2022 implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
                     public contains(arg0: java.nio.charset.Charset): boolean
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
                     public static class: java.lang.Class<any>
@@ -1573,7 +1573,7 @@ declare namespace sun {
                 }
                 class ISO2022_JP_2 extends sun.nio.cs.ext.ISO2022_JP {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1593,9 +1593,9 @@ declare namespace sun {
                     public static PLANE2: byte
                     public static PLANE3: byte
                     protected maximumDesignatorLength: byte
-                    protected SODesig: java.lang.String
-                    protected SS2Desig: java.lang.String
-                    protected SS3Desig: java.lang.String
+                    protected SODesig: string
+                    protected SS2Desig: string
+                    protected SS3Desig: string
                     protected ISOEncoder: java.nio.charset.CharsetEncoder
                     protected constructor(arg0: java.nio.charset.Charset)
                     public canEncode(arg0: char): boolean
@@ -1618,7 +1618,7 @@ declare namespace sun {
                 class ISO2022_KR extends sun.nio.cs.ext.ISO2022 implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
                     public contains(arg0: java.nio.charset.Charset): boolean
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
                     public static class: java.lang.Class<any>
@@ -1640,7 +1640,7 @@ declare namespace sun {
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public canEncode(): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public newEncoder(): java.nio.charset.CharsetEncoder
                     public static getByteMask1(): byte[]
                     public static getByteMask2(): byte[]
@@ -1665,7 +1665,7 @@ declare namespace sun {
                 class MS50220 extends sun.nio.cs.ext.ISO2022_JP {
                     public constructor()
                     protected constructor(arg0: java.lang.String | string, arg1: java.lang.String[])
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1674,7 +1674,7 @@ declare namespace sun {
                 }
                 class MS50221 extends sun.nio.cs.ext.MS50220 {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     protected doSBKANA(): boolean
                     public static class: java.lang.Class<any>
@@ -1698,7 +1698,7 @@ declare namespace sun {
                 }
                 class MS950_HKSCS extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1839,7 +1839,7 @@ declare namespace sun {
                 class ISO2022_JP extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
                     public constructor()
                     protected constructor(arg0: java.lang.String | string, arg1: java.lang.String[])
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1870,7 +1870,7 @@ declare namespace sun {
                 }
                 class MSISO2022JP extends sun.nio.cs.ext.ISO2022_JP {
                     public constructor()
-                    public historicalName(): java.lang.String
+                    public historicalName(): string
                     public contains(arg0: java.nio.charset.Charset): boolean
                     public newDecoder(): java.nio.charset.CharsetDecoder
                     public newEncoder(): java.nio.charset.CharsetEncoder
@@ -1918,10 +1918,10 @@ declare namespace sun {
                 }
                 abstract class SimpleEUCEncoder extends java.nio.charset.CharsetEncoder {
                     protected index1: short[]
-                    protected index2: java.lang.String
-                    protected index2a: java.lang.String
-                    protected index2b: java.lang.String
-                    protected index2c: java.lang.String
+                    protected index2: string
+                    protected index2a: string
+                    protected index2b: string
+                    protected index2c: string
                     protected mask1: int
                     protected mask2: int
                     protected shift: int

@@ -173,8 +173,8 @@ declare namespace sun {
             }
             class P11TlsPrfGenerator$1 implements javax.crypto.SecretKey {
                 public getEncoded(): byte[]
-                public getFormat(): java.lang.String
-                public getAlgorithm(): java.lang.String
+                public getFormat(): string
+                public getAlgorithm(): string
                 public static class: java.lang.Class<any>
             }
             class P11TlsRsaPremasterSecretGenerator extends javax.crypto.KeyGeneratorSpi {
@@ -195,68 +195,68 @@ declare namespace sun {
                 public static class: java.lang.Class<any>
             }
             abstract class P11Key implements java.security.Key , sun.security.util.Length {
-                public getAlgorithm(): java.lang.String
+                public getAlgorithm(): string
                 public getEncoded(): byte[]
                 public equals(arg0: java.lang.Object): boolean
                 public hashCode(): int
                 protected writeReplace(): java.lang.Object
-                public toString(): java.lang.String
+                public toString(): string
                 public length(): int
                 public static class: java.lang.Class<any>
             }
             abstract class P11Key$$Lambda implements java.security.Key , sun.security.util.Length {
-                public (): java.lang.String
+                public (): string
             }
             class P11Key$P11ECPublicKey extends sun.security.pkcs11.P11Key implements java.security.interfaces.ECPublicKey {
-                public getFormat(): java.lang.String
+                public getFormat(): string
                 public getW(): java.security.spec.ECPoint
                 public getParams(): java.security.spec.ECParameterSpec
-                public toString(): java.lang.String
+                public toString(): string
             }
             class P11Key$P11ECPrivateKey extends sun.security.pkcs11.P11Key implements java.security.interfaces.ECPrivateKey {
-                public getFormat(): java.lang.String
+                public getFormat(): string
                 public getS(): java.math.BigInteger
                 public getParams(): java.security.spec.ECParameterSpec
             }
             class P11Key$P11DHPublicKey extends sun.security.pkcs11.P11Key implements javax.crypto.interfaces.DHPublicKey {
-                public getFormat(): java.lang.String
+                public getFormat(): string
                 public getY(): java.math.BigInteger
                 public getParams(): javax.crypto.spec.DHParameterSpec
-                public toString(): java.lang.String
+                public toString(): string
                 public hashCode(): int
                 public equals(arg0: java.lang.Object): boolean
             }
             class P11Key$P11DHPrivateKey extends sun.security.pkcs11.P11Key implements javax.crypto.interfaces.DHPrivateKey {
-                public getFormat(): java.lang.String
+                public getFormat(): string
                 public getX(): java.math.BigInteger
                 public getParams(): javax.crypto.spec.DHParameterSpec
                 public hashCode(): int
                 public equals(arg0: java.lang.Object): boolean
             }
             class P11Key$P11DSAPrivateKey extends sun.security.pkcs11.P11Key implements java.security.interfaces.DSAPrivateKey {
-                public getFormat(): java.lang.String
+                public getFormat(): string
                 public getX(): java.math.BigInteger
                 public getParams(): java.security.interfaces.DSAParams
             }
             class P11Key$P11DSAPublicKey extends sun.security.pkcs11.P11Key implements java.security.interfaces.DSAPublicKey {
-                public getFormat(): java.lang.String
+                public getFormat(): string
                 public getY(): java.math.BigInteger
                 public getParams(): java.security.interfaces.DSAParams
-                public toString(): java.lang.String
+                public toString(): string
             }
             class P11Key$P11RSAPublicKey extends sun.security.pkcs11.P11Key implements java.security.interfaces.RSAPublicKey {
-                public getFormat(): java.lang.String
+                public getFormat(): string
                 public getModulus(): java.math.BigInteger
                 public getPublicExponent(): java.math.BigInteger
-                public toString(): java.lang.String
+                public toString(): string
             }
             class P11Key$P11RSAPrivateNonCRTKey extends sun.security.pkcs11.P11Key implements java.security.interfaces.RSAPrivateKey {
-                public getFormat(): java.lang.String
+                public getFormat(): string
                 public getModulus(): java.math.BigInteger
                 public getPrivateExponent(): java.math.BigInteger
             }
             class P11Key$P11RSAPrivateKey extends sun.security.pkcs11.P11Key implements java.security.interfaces.RSAPrivateCrtKey {
-                public getFormat(): java.lang.String
+                public getFormat(): string
                 public getModulus(): java.math.BigInteger
                 public getPublicExponent(): java.math.BigInteger
                 public getPrivateExponent(): java.math.BigInteger
@@ -271,11 +271,11 @@ declare namespace sun {
                 public getMinorVersion(): int
             }
             class P11Key$P11SecretKey extends sun.security.pkcs11.P11Key implements javax.crypto.SecretKey {
-                public getFormat(): java.lang.String
+                public getFormat(): string
                 public static class: java.lang.Class<any>
             }
             class P11Key$P11PrivateKey extends sun.security.pkcs11.P11Key implements java.security.PrivateKey {
-                public getFormat(): java.lang.String
+                public getFormat(): string
                 public static class: java.lang.Class<any>
             }
             class Session implements java.lang.Comparable<sun.security.pkcs11.Session> {
@@ -297,7 +297,7 @@ declare namespace sun {
                 public engineSize(): int
                 public engineIsKeyEntry(arg0: java.lang.String | string): boolean
                 public engineIsCertificateEntry(arg0: java.lang.String | string): boolean
-                public engineGetCertificateAlias(arg0: java.security.cert.Certificate): java.lang.String
+                public engineGetCertificateAlias(arg0: java.security.cert.Certificate): string
                 public engineStore(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: char[]): void
                 public engineStore(arg0: java.security.KeyStore$LoadStoreParameter | java.security.KeyStore$LoadStoreParameter$$Lambda): void
                 public engineLoad(arg0: java.io.InputStream, arg1: char[]): void
@@ -324,7 +324,7 @@ declare namespace sun {
             class P11KeyStore$AliasInfo {
                 public constructor(arg0: java.lang.String | string)
                 public constructor(arg0: java.lang.String | string, arg1: byte[], arg2: boolean, arg3: java.security.cert.X509Certificate)
-                public toString(): java.lang.String
+                public toString(): string
                 public static class: java.lang.Class<any>
             }
             class P11Util {
@@ -373,13 +373,13 @@ declare namespace sun {
                 public static class: java.lang.Class<any>
             }
             class TemplateManager$Template {
-                public toString(): java.lang.String
+                public toString(): string
                 public static class: java.lang.Class<any>
             }
             class TemplateManager$TemplateKey {
                 public equals(arg0: java.lang.Object): boolean
                 public hashCode(): int
-                public toString(): java.lang.String
+                public toString(): string
                 public static class: java.lang.Class<any>
             }
             class TemplateManager$KeyAndTemplate {
@@ -409,7 +409,7 @@ declare namespace sun {
                 public newInstance(arg0: java.lang.Object): java.lang.Object
                 public newInstance0(arg0: java.lang.Object): java.lang.Object
                 public supportsParameter(arg0: java.lang.Object): boolean
-                public toString(): java.lang.String
+                public toString(): string
                 public static class: java.lang.Class<any>
             }
             class SunPKCS11$2 implements java.security.PrivilegedAction<java.lang.Object> {
@@ -428,7 +428,7 @@ declare namespace sun {
                 public (): void
             }
             class SunPKCS11$Descriptor {
-                public toString(): java.lang.String
+                public toString(): string
                 public static class: java.lang.Class<any>
             }
             class Secmod {
@@ -481,12 +481,12 @@ declare namespace sun {
                 public static class: java.lang.Class<any>
             }
             class Secmod$Module {
-                public getConfiguration(): java.lang.String
+                public getConfiguration(): string
                 public setConfiguration(arg0: java.lang.String | string): void
-                public getLibraryName(): java.lang.String
+                public getLibraryName(): string
                 public getType(): sun.security.pkcs11.Secmod$ModuleType
                 public getProvider(): java.security.Provider
-                public toString(): java.lang.String
+                public toString(): string
                 public static class: java.lang.Class<any>
             }
             class Secmod$ModuleType extends java.lang.Enum<sun.security.pkcs11.Secmod$ModuleType> {
@@ -508,7 +508,7 @@ declare namespace sun {
                     public hPrivateData: long
                     public pPublicData2: byte[]
                     public constructor()
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CK_PBE_PARAMS {
@@ -517,7 +517,7 @@ declare namespace sun {
                     public pSalt: char[]
                     public ulIteration: long
                     public constructor()
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CK_PKCS5_PBKD2_PARAMS {
@@ -527,7 +527,7 @@ declare namespace sun {
                     public prf: long
                     public pPrfData: byte[]
                     public constructor()
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CK_RSA_PKCS_OAEP_PARAMS {
@@ -536,7 +536,7 @@ declare namespace sun {
                     public source: long
                     public pSourceData: byte[]
                     public constructor()
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CK_RSA_PKCS_PSS_PARAMS {
@@ -544,7 +544,7 @@ declare namespace sun {
                     public mgf: long
                     public sLen: long
                     public constructor()
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CK_X9_42_DH1_DERIVE_PARAMS {
@@ -552,7 +552,7 @@ declare namespace sun {
                     public pOtherInfo: byte[]
                     public pPublicData: byte[]
                     public constructor()
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CK_X9_42_DH2_DERIVE_PARAMS {
@@ -563,12 +563,12 @@ declare namespace sun {
                     public hPrivateData: long
                     public pPublicData2: byte[]
                     public constructor()
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class Constants {
-                    public static NEWLINE: java.lang.String
-                    public static INDENT: java.lang.String
+                    public static NEWLINE: string
+                    public static INDENT: string
                     public constructor()
                     public static class: java.lang.Class<any>
                 }
@@ -578,30 +578,30 @@ declare namespace sun {
                     public day: char[]
                     public constructor(arg0: char[], arg1: char[], arg2: char[])
                     public clone(): java.lang.Object
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class Functions {
                     public constructor()
-                    public static toFullHexString(arg0: long): java.lang.String
-                    public static toFullHexString(arg0: int): java.lang.String
-                    public static toHexString(arg0: long): java.lang.String
-                    public static toHexString(arg0: byte[]): java.lang.String
-                    public static toBinaryString(arg0: long): java.lang.String
-                    public static toBinaryString(arg0: byte[]): java.lang.String
-                    public static slotInfoFlagsToString(arg0: long): java.lang.String
-                    public static tokenInfoFlagsToString(arg0: long): java.lang.String
-                    public static sessionInfoFlagsToString(arg0: long): java.lang.String
-                    public static sessionStateToString(arg0: long): java.lang.String
-                    public static mechanismInfoFlagsToString(arg0: long): java.lang.String
+                    public static toFullHexString(arg0: long): string
+                    public static toFullHexString(arg0: int): string
+                    public static toHexString(arg0: long): string
+                    public static toHexString(arg0: byte[]): string
+                    public static toBinaryString(arg0: long): string
+                    public static toBinaryString(arg0: byte[]): string
+                    public static slotInfoFlagsToString(arg0: long): string
+                    public static tokenInfoFlagsToString(arg0: long): string
+                    public static sessionInfoFlagsToString(arg0: long): string
+                    public static sessionStateToString(arg0: long): string
+                    public static mechanismInfoFlagsToString(arg0: long): string
                     public static getId(arg0: java.util.Map<java.lang.String, java.lang.Integer>, arg1: java.lang.String | string): long
-                    public static getMechanismName(arg0: long): java.lang.String
+                    public static getMechanismName(arg0: long): string
                     public static getMechanismId(arg0: java.lang.String | string): long
-                    public static getKeyName(arg0: long): java.lang.String
+                    public static getKeyName(arg0: long): string
                     public static getKeyId(arg0: java.lang.String | string): long
-                    public static getAttributeName(arg0: long): java.lang.String
+                    public static getAttributeName(arg0: long): string
                     public static getAttributeId(arg0: java.lang.String | string): long
-                    public static getObjectClassName(arg0: long): java.lang.String
+                    public static getObjectClassName(arg0: long): string
                     public static getObjectClassId(arg0: java.lang.String | string): long
                     public static equals(arg0: sun.security.pkcs11.wrapper.CK_DATE, arg1: sun.security.pkcs11.wrapper.CK_DATE): boolean
                     public static hashCode(arg0: byte[]): int
@@ -627,19 +627,19 @@ declare namespace sun {
                     public pIVClient: byte[]
                     public pIVServer: byte[]
                     public constructor()
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CK_SSL3_RANDOM_DATA {
                     public pClientRandom: byte[]
                     public pServerRandom: byte[]
                     public constructor(arg0: byte[], arg1: byte[])
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CK_AES_CTR_PARAMS {
                     public constructor(arg0: byte[])
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CK_ECDH1_DERIVE_PARAMS {
@@ -647,7 +647,7 @@ declare namespace sun {
                     public pSharedData: byte[]
                     public pPublicData: byte[]
                     public constructor(arg0: long, arg1: byte[], arg2: byte[])
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CK_TLS_PRF_PARAMS {
@@ -665,14 +665,14 @@ declare namespace sun {
                     public RandomInfo: sun.security.pkcs11.wrapper.CK_SSL3_RANDOM_DATA
                     public pReturnedKeyMaterial: sun.security.pkcs11.wrapper.CK_SSL3_KEY_MAT_OUT
                     public constructor(arg0: int, arg1: int, arg2: int, arg3: boolean, arg4: sun.security.pkcs11.wrapper.CK_SSL3_RANDOM_DATA)
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CK_SSL3_MASTER_KEY_DERIVE_PARAMS {
                     public RandomInfo: sun.security.pkcs11.wrapper.CK_SSL3_RANDOM_DATA
                     public pVersion: sun.security.pkcs11.wrapper.CK_VERSION
                     public constructor(arg0: sun.security.pkcs11.wrapper.CK_SSL3_RANDOM_DATA, arg1: sun.security.pkcs11.wrapper.CK_VERSION)
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 interface CK_UNLOCKMUTEX {
@@ -703,7 +703,7 @@ declare namespace sun {
                     public major: byte
                     public minor: byte
                     public constructor(arg0: int, arg1: int)
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CK_MECHANISM {
@@ -720,7 +720,7 @@ declare namespace sun {
                     public constructor(arg0: long, arg1: sun.security.pkcs11.wrapper.CK_ECDH1_DERIVE_PARAMS)
                     public constructor(arg0: long, arg1: java.lang.Long)
                     public constructor(arg0: long, arg1: sun.security.pkcs11.wrapper.CK_AES_CTR_PARAMS)
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CK_SESSION_INFO {
@@ -729,7 +729,7 @@ declare namespace sun {
                     public flags: long
                     public ulDeviceError: long
                     public constructor(arg0: long, arg1: long, arg2: long, arg3: long)
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 interface CK_NOTIFY {
@@ -743,7 +743,7 @@ declare namespace sun {
                     public ulMaxKeySize: long
                     public flags: long
                     public constructor(arg0: long, arg1: long, arg2: long)
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CK_TOKEN_INFO {
@@ -766,7 +766,7 @@ declare namespace sun {
                     public firmwareVersion: sun.security.pkcs11.wrapper.CK_VERSION
                     public utcTime: char[]
                     public constructor(arg0: char[], arg1: char[], arg2: char[], arg3: char[], arg4: long, arg5: long, arg6: long, arg7: long, arg8: long, arg9: long, arg10: long, arg11: long, arg12: long, arg13: long, arg14: long, arg15: sun.security.pkcs11.wrapper.CK_VERSION, arg16: sun.security.pkcs11.wrapper.CK_VERSION, arg17: char[])
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CK_INFO {
@@ -776,7 +776,7 @@ declare namespace sun {
                     public libraryDescription: char[]
                     public libraryVersion: sun.security.pkcs11.wrapper.CK_VERSION
                     public constructor(arg0: sun.security.pkcs11.wrapper.CK_VERSION, arg1: char[], arg2: long, arg3: char[], arg4: sun.security.pkcs11.wrapper.CK_VERSION)
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CK_C_INITIALIZE_ARGS {
@@ -792,7 +792,7 @@ declare namespace sun {
                 class PKCS11Exception extends java.lang.Exception {
                     protected errorCode_: long
                     public constructor(arg0: long)
-                    public getMessage(): java.lang.String
+                    public getMessage(): string
                     public getErrorCode(): long
                     public static class: java.lang.Class<any>
                 }
@@ -803,7 +803,7 @@ declare namespace sun {
                     public hardwareVersion: sun.security.pkcs11.wrapper.CK_VERSION
                     public firmwareVersion: sun.security.pkcs11.wrapper.CK_VERSION
                     public constructor(arg0: char[], arg1: char[], arg2: long, arg3: sun.security.pkcs11.wrapper.CK_VERSION, arg4: sun.security.pkcs11.wrapper.CK_VERSION)
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class CK_ATTRIBUTE {
@@ -836,7 +836,7 @@ declare namespace sun {
                     public getCharArray(): char[]
                     public getByteArray(): byte[]
                     public getLong(): long
-                    public toString(): java.lang.String
+                    public toString(): string
                     public static class: java.lang.Class<any>
                 }
                 class PKCS11 {
@@ -896,7 +896,7 @@ declare namespace sun {
                     public C_DeriveKey(arg0: long, arg1: sun.security.pkcs11.wrapper.CK_MECHANISM, arg2: long, arg3: sun.security.pkcs11.wrapper.CK_ATTRIBUTE[]): long
                     public C_SeedRandom(arg0: long, arg1: byte[]): void
                     public C_GenerateRandom(arg0: long, arg1: byte[]): void
-                    public toString(): java.lang.String
+                    public toString(): string
                     protected finalize(): void
                     public static class: java.lang.Class<any>
                 }

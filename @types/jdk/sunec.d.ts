@@ -83,13 +83,13 @@ declare namespace sun {
                 protected engineGetParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
                 protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
                 protected engineGetEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.String | string): byte[]
-                protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): java.lang.String
+                protected engineToString<T extends java.security.spec.AlgorithmParameterSpec>(): string
                 public static class: java.lang.Class<any>
             }
             class ECPrivateKeyImpl extends sun.security.pkcs.PKCS8Key implements java.security.interfaces.ECPrivateKey {
                 public constructor(arg0: byte[])
                 public constructor(arg0: java.math.BigInteger, arg1: java.security.spec.ECParameterSpec)
-                public getAlgorithm(): java.lang.String
+                public getAlgorithm(): string
                 public getS(): java.math.BigInteger
                 public getParams(): java.security.spec.ECParameterSpec
                 protected parseKeyBits(): void
@@ -97,16 +97,16 @@ declare namespace sun {
             class ECPublicKeyImpl extends sun.security.x509.X509Key implements java.security.interfaces.ECPublicKey {
                 public constructor(arg0: java.security.spec.ECPoint, arg1: java.security.spec.ECParameterSpec)
                 public constructor(arg0: byte[])
-                public getAlgorithm(): java.lang.String
+                public getAlgorithm(): string
                 public getW(): java.security.spec.ECPoint
                 public getParams(): java.security.spec.ECParameterSpec
                 public getEncodedPublicValue(): byte[]
                 protected parseKeyBits(): void
-                public toString(): java.lang.String
+                public toString(): string
                 protected writeReplace(): java.lang.Object
             }
             class NamedCurve extends java.security.spec.ECParameterSpec {
-                public toString(): java.lang.String
+                public toString(): string
                 public static class: java.lang.Class<any>
             }
             class SunEC extends java.security.Provider {

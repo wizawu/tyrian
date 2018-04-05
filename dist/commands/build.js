@@ -17,7 +17,7 @@ var const_1 = require("../const");
 var parseJAR_1 = require("../parser/parseJAR");
 var install_1 = require("./install");
 var autoprefixer = require("autoprefixer");
-function compiler(instdir, instmod, entries, options) {
+function getCompiler(instdir, instmod, entries, options) {
     var context = process.cwd();
     var entry = {};
     entries = entries.map(function (entry) { return "./" + path.relative("", entry); });
@@ -144,21 +144,15 @@ function default_1(instdir, instmod, entries, options) {
         fs.writeFileSync("tsconfig.json", install_1.tsconfig(instdir));
         console.error(chalk_1.default.yellow("Generated tsconfig.json"));
     }
-    var statsOptions = {
-        colors: true,
-        hash: true,
-        timings: true,
-        version: false,
-    };
     if (options.watch) {
-        compiler(instdir, instmod, entries, options).watch({ poll: true }, function (err, stats) {
-            console.log(stats.toString(statsOptions));
+        getCompiler(instdir, instmod, entries, options).watch({ poll: true }, function (err, stats) {
+            console.log(stats.toString("minimal"));
             console.log("\nFinished last build at " + new Date().toLocaleTimeString() + "\n");
         });
     }
     else {
-        compiler(instdir, instmod, entries, options).run(function (err, stats) {
-            console.log(stats.toString(statsOptions));
+        getCompiler(instdir, instmod, entries, options).run(function (err, stats) {
+            console.log(stats.toString("minimal"));
             if (stats.hasErrors())
                 process.exit(const_1.EXIT_STATUS.WEBPACK_COMPILE_ERROR);
         });

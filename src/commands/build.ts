@@ -18,7 +18,7 @@ export interface Options {
     skipJDK?: boolean
 }
 
-function compiler(instdir: string, instmod: string, entries: string[], options: Options) {
+function getCompiler(instdir: string, instmod: string, entries: string[], options: Options) {
     let context = process.cwd()
     let entry = {}
     entries = entries.map(entry => "./" + path.relative("", entry))
@@ -161,21 +161,14 @@ export default function (instdir: string, instmod: string, entries: string[], op
         console.error(chalk.yellow("Generated tsconfig.json"))
     }
 
-    let statsOptions = {
-        colors: true,
-        hash: true,
-        timings: true,
-        version: false,
-    }
-
     if (options.watch) {
-        compiler(instdir, instmod, entries, options).watch({ poll: true }, (err, stats) => {
-            console.log(stats.toString(statsOptions))
+        getCompiler(instdir, instmod, entries, options).watch({ poll: true }, (err, stats) => {
+            console.log(stats.toString("minimal"))
             console.log(`\nFinished last build at ${new Date().toLocaleTimeString()}\n`)
         })
     } else {
-        compiler(instdir, instmod, entries, options).run((err, stats) => {
-            console.log(stats.toString(statsOptions))
+        getCompiler(instdir, instmod, entries, options).run((err, stats) => {
+            console.log(stats.toString("minimal"))
             if (stats.hasErrors()) process.exit(EXIT_STATUS.WEBPACK_COMPILE_ERROR)
         })
     }

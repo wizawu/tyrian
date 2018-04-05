@@ -7,14 +7,14 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
     }
     return t;
 };
-exports.__esModule = true;
-var chalk = require("chalk");
+Object.defineProperty(exports, "__esModule", { value: true });
+var chalk_1 = require("chalk");
 var const_1 = require("../const");
 var child_process_1 = require("child_process");
 function header(tool, link) {
-    return "\n" + chalk.green("[" + tool + "]") + chalk.gray("(" + link + ")") + "\n";
+    return "\n" + chalk_1.default.green("[" + tool + "]") + chalk_1.default.gray("(" + link + ")") + "\n";
 }
-var notFound = function (stdout, stderr) { return (stdout + stderr) || chalk.red("** not found **\n"); };
+var notFound = function (stdout, stderr) { return (stdout + stderr) || chalk_1.default.red("** not found **\n"); };
 function default_1() {
     var ok = true;
     var output = "";
@@ -59,4 +59,4 @@ function default_1() {
         return output;
     }
 }
-exports["default"] = default_1;
+exports.default = default_1;

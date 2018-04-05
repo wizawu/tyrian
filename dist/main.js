@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var fs = require("fs");
 var path = require("path");
 var build_1 = require("./commands/build");
@@ -18,16 +18,16 @@ else if (command === "version") {
     console.log(help_1.version(instdir));
 }
 else if (command === "env") {
-    console.log(env_1["default"]());
+    console.log(env_1.default());
 }
 else if (command === "install") {
-    install_1["default"](instdir);
+    install_1.default(instdir);
 }
 else if (command === "build" && process.argv[3]) {
     var options = {
         watch: false,
         uglify: false,
-        outDir: "./"
+        outDir: "./",
     };
     var ok = false;
     for (var i = 3; i < process.argv.length; i++) {
@@ -51,7 +51,7 @@ else if (command === "build" && process.argv[3]) {
         }
         else {
             ok = true;
-            build_1["default"](instdir, instmod, process.argv.slice(i), options);
+            build_1.default(instdir, instmod, process.argv.slice(i), options);
             break;
         }
     }
@@ -70,7 +70,7 @@ else if (command === "run" && process.argv[3]) {
             jjsOptions.push(arg);
         }
         else {
-            run_1["default"](jjsOptions, arg, process.argv.slice(i + 1), watch);
+            run_1.default(jjsOptions, arg, process.argv.slice(i + 1), watch);
             break;
         }
     }

@@ -7,7 +7,7 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
     }
     return t;
 };
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var object_path_1 = require("object-path");
 var const_1 = require("../const");
 var lambda = require("./lambda");
@@ -23,10 +23,10 @@ var UNSUPPORTED_MODIFIERS = [
 function safeType(type, isParameter) {
     if (/>\./.test(type))
         return "any";
-    if (type === "java.lang.String")
-        return "string";
-    if (type === "java.lang.Boolean")
-        return "boolean";
+    if (type === "java.lang.String" && isParameter)
+        return type + " | string";
+    if (type === "java.lang.Boolean" && isParameter)
+        return type + " | boolean";
     if (/^java\.util\.function\.Consumer<\w+>$/.test(type) && isParameter) {
         return type.replace("Consumer", "Consumer$$$TypeScript");
     }
@@ -281,4 +281,4 @@ function default_1(source, pkg) {
     }
     return buffer.join("\n");
 }
-exports["default"] = default_1;
+exports.default = default_1;

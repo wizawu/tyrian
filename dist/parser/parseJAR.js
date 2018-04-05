@@ -1,8 +1,8 @@
 "use strict";
-exports.__esModule = true;
-var chalk = require("chalk");
+Object.defineProperty(exports, "__esModule", { value: true });
 var fs = require("fs");
 var path = require("path");
+var chalk_1 = require("chalk");
 var child_process_1 = require("child_process");
 var parseClass_1 = require("./parseClass");
 var lambda = require("./lambda");
@@ -42,15 +42,15 @@ function parsePackage(pkg, level) {
 function parseJAR(jar) {
     var classes = commandOutput("jar", ["tf", jar]).split("\n");
     classes = classes.filter(function (c) { return /\.class$/.test(c); }).map(function (c) { return c.replace(/\//g, ".").replace(/\.class$/, ""); });
-    console.log(chalk.gray("Disassembling " + jar + ": " + classes.length + " classes"));
+    console.log(chalk_1.default.gray("Disassembling " + jar + ": " + classes.length + " classes"));
     var pkg = {};
     for (var i = 0; i < classes.length; i += 2000) {
         var javaCode = commandOutput("javap", ["-protected", "-cp", jar].concat(classes.slice(i, i + 2000)));
-        parseClass_1["default"](javaCode, pkg);
+        parseClass_1.default(javaCode, pkg);
     }
     return parsePackage(pkg, 0);
 }
-exports["default"] = parseJAR;
+exports.default = parseJAR;
 function generateJDKDefinition(root) {
     var jars = process.argv.slice(1);
     jars.forEach(function (jar) { return parseJAR(jar); });

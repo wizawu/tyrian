@@ -1,9 +1,9 @@
 "use strict";
-exports.__esModule = true;
-var chalk = require("chalk");
+Object.defineProperty(exports, "__esModule", { value: true });
 var crypto = require("crypto");
 var fs = require("fs");
 var os = require("os");
+var chalk_1 = require("chalk");
 var child_process_1 = require("child_process");
 var parseJAR_1 = require("../parser/parseJAR");
 exports.tsconfig = function (instdir) { return JSON.stringify({
@@ -73,13 +73,13 @@ function default_1(instdir) {
         if (!fs.existsSync("lib/@types"))
             fs.mkdirSync("lib/@types");
         fs.readdirSync("lib").filter(function (jar) { return /\.jar$/.test(jar); }).map(function (jar) {
-            parseJAR_1["default"]("lib/" + jar);
+            parseJAR_1.default("lib/" + jar);
         });
         fs.readdirSync("lib").filter(function (jar) { return /\.jar$/.test(jar); }).map(function (jar) {
             var filename = "lib/@types/" + jar.replace(/\.jar$/, ".d.ts");
-            fs.writeFileSync(filename, parseJAR_1["default"]("lib/" + jar));
-            console.log(chalk.green("Generated " + filename));
+            fs.writeFileSync(filename, parseJAR_1.default("lib/" + jar));
+            console.log(chalk_1.default.green("Generated " + filename));
         });
     }
 }
-exports["default"] = default_1;
+exports.default = default_1;

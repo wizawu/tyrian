@@ -8,6 +8,8 @@
     "com.google.javascript:closure-compiler:v20180319"
   ],
   "dependencies": {
-    "chalk": "^2.3.2"
+    "@types/core-js": "^0.9.46",
+    "chalk": "^2.3.2",
+    "core-js": "^2.5.4"
   }
 }

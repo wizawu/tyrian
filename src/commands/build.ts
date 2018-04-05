@@ -58,14 +58,15 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
         }
     }]
 
-    // Inject java packages to global variables
-    let globalVars = {}
+    // Find top packages from jars
+    let javaPackages = {}
     if (fs.existsSync(`${context}/lib`)) {
         let jars = fs.readdirSync(`${context}/lib`).filter(file => /\.jar$/.test(file))
         jars.forEach(jar => {
-            getTopPackages(`${context}/lib/${jar}`).forEach(pkg =>
-                globalVars[pkg] = `(typeof Packages === "object" && typeof ${pkg} === "undefined" ? Packages.${pkg} : ${pkg})`
-            )
+            getTopPackages(`${context}/lib/${jar}`).forEach(pkg => {
+                let test = `typeof Packages === "object" && typeof ${pkg} === "undefined"`
+                javaPackages[pkg] = `(${test} ? Packages.${pkg} : ${pkg})`
+            })
         })
     }
 
@@ -74,24 +75,6 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
     if (fs.existsSync("package.json")) {
         let packageJSON = JSON.parse(fs.readFileSync("package.json", "utf-8"))
         webpackConfig = packageJSON.webpack || {}
-    }
-
-    // Define webpack plugins
-    let plugins = [
-        new webpack.DefinePlugin({
-            "process.env": {
-                NODE_ENV: options.watch ? '"development"' : '"production"'
-            },
-            ...globalVars,
-        }),
-    ]
-    if (options.uglify) {
-        plugins.push(new webpack.optimize.UglifyJsPlugin({ sourceMap: true }))
-    }
-    if (webpackConfig.plugins) {
-        let splitChunksOptions = webpackConfig.plugins.splitChunks ||
-            webpackConfig.plugins.commonsChunk
-        if (splitChunksOptions) plugins.push(new SplitChunksPlugin(splitChunksOptions))
     }
 
     // Create a tsconfig file for builds with --skipJDK
@@ -145,7 +128,12 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
                 use: "url-loader",
             }]
         },
-        plugins,
+        plugins: [new webpack.DefinePlugin(javaPackages)],
+        optimization: {
+            nodeEnv: options.watch ? "development" : "production",
+            minimize: options.uglify,
+            ...webpackConfig.optimization,
+        }
     })
 }
 

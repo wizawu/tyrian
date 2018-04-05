@@ -1,6 +1,6 @@
 {
   "name": "1c",
-  "version": "8.10.0",
+  "version": "8.11.0",
   "repository": "github:wizawu/1c",
   "license": "MIT",
   "bin": "./bin/1c",

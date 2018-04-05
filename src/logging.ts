@@ -5,7 +5,7 @@ const SourceMapConsumerV3 = com.google.debugging.sourcemap.SourceMapConsumerV3
 const StandardCharsets = java.nio.charset.StandardCharsets
 const { Files, Paths } = java.nio.file
 
-const chalk = new Chalk.constructor({ enabled: true, level: 3 })
+const chalk = new Chalk.constructor({ enabled: true })
 const sourceMapConsumer = getSourceMapConsumer()
 
 function getSourceMapConsumer() {
@@ -52,16 +52,16 @@ function print(message: string, fd: 1 | 2, level: string, stack: any[]) {
 export class Logger {
     static info(message: string) {
         let stack = getCallerSource()
-        print(message, 1, chalk.blueBright("[INFO]"), stack)
+        print(message, 1, chalk.blue("[INFO]"), stack)
     }
 
     static warn(message: string) {
         let stack = getCallerSource()
-        print(message, 2, chalk.yellowBright("[WARN]"), stack)
+        print(message, 2, chalk.yellow("[WARN]"), stack)
     }
 
     static error(message: string) {
         let stack = getCallerSource()
-        print(message, 2, chalk.redBright("[ERRO]"), stack)
+        print(message, 2, chalk.red("[ERRO]"), stack)
     }
 }

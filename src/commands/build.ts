@@ -3,6 +3,7 @@ import * as crypto from "crypto"
 import * as fs from "fs"
 import * as path from "path"
 import * as webpack from "webpack"
+import SplitChunksPlugin from "../../node_modules/webpack/lib/optimize/SplitChunksPlugin"
 
 import { EXIT_STATUS } from "../const"
 import { getTopPackages } from "../parser/parseJAR"
@@ -84,9 +85,9 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
         plugins.push(new webpack.optimize.UglifyJsPlugin({ sourceMap: true }))
     }
     if (webpackConfig.plugins) {
-        if (webpackConfig.plugins.commonsChunk) {
-            plugins.push(new webpack.optimize.CommonsChunkPlugin(webpackConfig.plugins.commonsChunk))
-        }
+        let splitChunksOptions = webpackConfig.plugins.splitChunks ||
+            webpackConfig.plugins.commonsChunk
+        if (splitChunksOptions) plugins.push(new SplitChunksPlugin(splitChunksOptions))
     }
 
     let tsconfigFile = "tsconfig.json"
@@ -99,6 +100,7 @@ function compiler(instdir: string, instmod: string, entries: string[], options: 
     }
 
     return webpack({
+        mode: options.watch ? "development" : "production",
         devtool: "source-map",
         context: context,
         resolve: {

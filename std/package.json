@@ -1,0 +1,26 @@
+{
+  "name": "1c-std",
+  "version": "0.0.4",
+  "repository": "github:wizawu/1c-std",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "mvnDependencies": [
+    "com.google.javascript:closure-compiler:v20180319",
+    "com.zaxxer:HikariCP:2.7.4",
+    "mysql:mysql-connector-java:6.0.6",
+    "org.springframework:spring-jdbc:5.0.0.RELEASE"
+  ],
+  "dependencies": {
+    "@types/chalk": "^0.4.31",
+    "@types/core-js": "^0.9.46",
+    "@types/uuid": "^3.4.3",
+    "chalk": "^1.1.3",
+    "core-js": "^2.5.4",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "lightest": "^0.1.2",
+    "lorem-ipsum": "^1.0.4"
+  }
+}

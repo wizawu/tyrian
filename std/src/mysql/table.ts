@@ -11,20 +11,16 @@ export interface Definition {
 }
 
 export function Table(definition: Definition) {
-    return class {
-        private static NAME = definition.name
+    class __Table__ {
+        static readonly TABLE_NAME = definition.name
         private static PRIMARY = definition.primary
         private static ENGINE = definition.engine
         private static COLLATE = definition.collate
         private static columns = {}
         private static client: Client
 
-        protected static setColumn(key: string, type: string) {
-            this.columns[key] = { key, type }
-        }
-
-        static tableName() {
-            return this.NAME
+        protected setColumn(key: string, type: string) {
+            __Table__.columns[key] = { key, type }
         }
 
         static setClient(client: Client) {
@@ -34,7 +30,7 @@ export function Table(definition: Definition) {
 
         static ensureTable() {
             this.client.ensureTable(
-                this.NAME,
+                this.TABLE_NAME,
                 this.PRIMARY,
                 this.columns[this.PRIMARY].type,
                 this.ENGINE,
@@ -42,7 +38,7 @@ export function Table(definition: Definition) {
             )
             Object.keys(this.columns).forEach(key => {
                 this.client.ensureColumn(
-                    this.NAME,
+                    this.TABLE_NAME,
                     key,
                     this.columns[key].type
                 )
@@ -50,30 +46,29 @@ export function Table(definition: Definition) {
         }
 
         static ensureIndex(columns: string[]) {
-            this.client.ensureIndex(this.NAME, columns)
+            this.client.ensureIndex(this.TABLE_NAME, columns)
         }
 
         static ensureUniqueIndex(columns: string[]) {
-            this.client.ensureUniqueIndex(this.NAME, columns)
+            this.client.ensureUniqueIndex(this.TABLE_NAME, columns)
         }
 
         static ensureFullTextIndex(columns: string[], parser = Parser.ngram) {
-            this.client.ensureFullTextIndex(this.NAME, columns, parser)
+            this.client.ensureFullTextIndex(this.TABLE_NAME, columns, parser)
         }
 
         static get(query: object) {
-            let { sql, args } = this.queryToSQL(`SELECT * FROM ${this.NAME} WHERE TRUE`, query)
-            let row = this.client.queryForObject(sql, args)
-            return row ? this.struct(row) : null
+            let { sql, args } = this.queryToSQL(`SELECT * FROM ${this.TABLE_NAME} WHERE TRUE`, query)
+            return this.client.queryForObject(sql, args)
         }
 
         static list(query: object) {
-            let { sql, args } = this.queryToSQL(`SELECT * FROM ${this.NAME} WHERE TRUE`, query)
-            return this.client.query(sql, args).map(row => this.struct(row))
+            let { sql, args } = this.queryToSQL(`SELECT * FROM ${this.TABLE_NAME} WHERE TRUE`, query)
+            return this.client.query(sql, args)
         }
 
         static delete(query: object) {
-            let { sql, args } = this.queryToSQL(`DELETE FROM ${this.NAME} WHERE TRUE`, query)
+            let { sql, args } = this.queryToSQL(`DELETE FROM ${this.TABLE_NAME} WHERE TRUE`, query)
             if (args.length === 0) {
                 throw "Cannot delete rows with an empty query"
             } else {
@@ -82,15 +77,14 @@ export function Table(definition: Definition) {
         }
 
         static insert(row: object, options = { upsert: false }) {
-            let model = this.struct(row)
-            let keys = Object.keys(model)
+            let keys = Object.keys(this.columns)
             return this.client.update(
                 `${options.upsert ? "REPLACE" : "INSERT"} INTO
-                    ${this.NAME} (${keys.join(",")})
+                    ${this.TABLE_NAME} (${keys.join(",")})
                     VALUES (${keys.map(() => "?").join(",")})
                 `,
                 keys.map(key => {
-                    let value = model[key]
+                    const value = row[key] === undefined ? null : row[key]
                     if (typeof value === "object") {
                         return value === null ? null : JSON.stringify(value)
                     } else {
@@ -106,15 +100,13 @@ export function Table(definition: Definition) {
 
         static batchInsert(rows: object[], options = { upsert: false }) {
             if (rows.length === 0) return
-            let that = this
-            let keys = Object.keys(this.struct(rows[0]))
+            let keys = Object.keys(this.columns)
             const BatchPreparedStatementSetter = Java.extend(
                 Java.type("org.springframework.jdbc.core.BatchPreparedStatementSetter"),
                 {
                     setValues(preparedStatement, i) {
-                        let model = that.struct(rows[i])
                         keys.forEach((key, j) => {
-                            const value = model[key]
+                            const value = rows[i][key] === undefined ? null : rows[i][key]
                             if (typeof value === "object") {
                                 preparedStatement.setObject(j + 1, value === null ? null : JSON.stringify(value))
                             } else {
@@ -129,7 +121,7 @@ export function Table(definition: Definition) {
             )
             return this.client.db.batchUpdate(
                 `${options.upsert ? "REPLACE" : "INSERT"} INTO
-                    ${this.NAME} (${keys.join(",")})
+                    ${this.TABLE_NAME} (${keys.join(",")})
                     VALUES (${keys.map(() => "?").join(",")})
                 `,
                 new BatchPreparedStatementSetter()
@@ -140,12 +132,11 @@ export function Table(definition: Definition) {
             return this.batchInsert(rows, { upsert: true })
         }
 
-        static struct(json: object) {
-            let model = JSON.parse(JSON.stringify(this.prototype))
-            Object.keys(model).forEach(key => {
-                if (json && json[key] !== undefined) model[key] = json[key]
+        merge(json: object) {
+            Object.keys(this).forEach(key => {
+                if (json && json[key] !== undefined) this[key] = json[key]
             })
-            return model
+            return this
         }
 
         private static queryToSQL(sql: string, query: object) {
@@ -157,9 +148,10 @@ export function Table(definition: Definition) {
             return { sql, args }
         }
     }
+    return __Table__
 }
 
-export const Columns = {
+export const Column = {
     BIGINT(model, key) {
         model.setColumn(key, "BIGINT")
         model[key] = 0

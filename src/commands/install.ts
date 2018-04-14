@@ -11,6 +11,7 @@ export const tsconfig = instdir => JSON.stringify({
     "compilerOptions": {
         "allowJs": true,
         "esModuleInterop": true,
+        "experimentalDecorators": true,
         "jsx": "react",
         "lib": ["dom", "es2017"],
         "noUnusedLocals": true,

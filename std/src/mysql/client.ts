@@ -7,7 +7,7 @@ export const rowMapper = new RowMapper((resultSet: java.sql.ResultSet) => {
     for (let i = 1; i <= resultSet.getMetaData().getColumnCount(); i++) {
         let key = resultSet.getMetaData().getColumnLabel(i)
         let type = resultSet.getMetaData().getColumnTypeName(i)
-        if (resultSet.getObject(i) == null) {
+        if (resultSet.getObject(i) === null) {
             row[key] = null
         } else if (type.toUpperCase() === "JSON") {
             row[key] = JSON.parse(resultSet.getString(i))
@@ -103,7 +103,7 @@ export class Client {
         this.ensureIndex(table, columns, { type: "UNIQUE", separator: "_uidx_", parser: "" })
     }
 
-    ensureFullText(table: string, columns: string[], parser = Parser.ngram) {
-        this.ensureIndex(table, columns, { type: "FULLTEXT", separator: "_ft_", parser: `WITH PARSER ${parser}` })
+    ensureFullTextIndex(table: string, columns: string[], parser = Parser.ngram) {
+        this.ensureIndex(table, columns, { type: "FULLTEXT", separator: "_ftidx_", parser: `WITH PARSER ${parser}` })
     }
 }

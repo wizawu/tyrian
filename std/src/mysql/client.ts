@@ -1,4 +1,4 @@
-import { Collate, Engine, Parser } from "./constant"
+import { Parser } from "./constant"
 
 const RowMapper = Java.type("org.springframework.jdbc.core.RowMapper")
 
@@ -18,10 +18,6 @@ export const rowMapper = new RowMapper((resultSet: java.sql.ResultSet) => {
     return row
 })
 
-export interface TableOptions {
-    collate?: Collate
-    engine?: Engine
-}
 
 export interface Options {
     host: string
@@ -77,16 +73,6 @@ export class Client {
 
     update(sql: string, args: any[]) {
         return this.db.update(sql, args)
-    }
-
-    ensureTable(table: string, pkey: string, type: string, options?: TableOptions) {
-        this.db.execute(`
-            CREATE TABLE IF NOT EXISTS ${table} (
-                ${pkey} ${type} PRIMARY KEY
-            )
-            ${options && options.collate ? " COLLATE " + options.collate : ""}
-            ${options && options.engine ? " ENGINE " + options.engine: ""}
-        `)
     }
 
     ensureColumn(table: string, column: string, type: string) {

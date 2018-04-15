@@ -1,12 +1,18 @@
 import * as uuid from "uuid"
 
-import { Client, TableOptions } from "./client"
-import { Parser } from "./constant"
+import { Client } from "./client"
+import { Collate, Engine, Parser } from "./constant"
+
+export interface Options {
+    primary: string[]
+    collate?: Collate
+    engine?: Engine
+}
 
 export declare class Model {
     static readonly TABLE_NAME: string
     static setClient(client: Client): typeof Model
-    static ensureTable(options?: TableOptions): void
+    static ensureTable(options?: Options): void
     static ensureIndex(columns: string[]): void
     static ensureUniqueIndex(columns: string[]): void
     static ensureFullTextIndex(columns: string[], parser?: Parser): void
@@ -22,10 +28,9 @@ export declare class Model {
 
 export type TableModel = typeof Model
 
-export function Table(name: string, primary: string): TableModel {
+export function Table(name: string): TableModel {
     class __Model__ {
         public static readonly TABLE_NAME = name
-        private static PRIMARY_KEY = primary
         private static columns = {}
         private static client: Client
 
@@ -44,13 +49,17 @@ export function Table(name: string, primary: string): TableModel {
             return this
         }
 
-        static ensureTable(options?: TableOptions) {
-            this.client.ensureTable(
-                this.TABLE_NAME,
-                this.PRIMARY_KEY,
-                this.columns[this.PRIMARY_KEY].type,
-                options
-            )
+        static ensureTable(options: Options) {
+            this.client.execute(`
+                CREATE TABLE IF NOT EXISTS ${this.TABLE_NAME} (
+                    ${options.primary.map(key =>
+                        key + " " + this.columns[key].type + ","
+                    )}
+                    PRIMARY KEY (${options.primary.join(",")})
+                )
+                ${options && options.collate ? " COLLATE " + options.collate : ""}
+                ${options && options.engine ? " ENGINE " + options.engine: ""}
+            `)
             Object.keys(this.columns).forEach(key => {
                 this.client.ensureColumn(
                     this.TABLE_NAME,

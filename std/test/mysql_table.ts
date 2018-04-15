@@ -4,7 +4,7 @@ import { beforeEach, describe, it, report } from "lightest"
 import { Collate, Engine, Client, Table, Column } from "../src/mysql"
 
 describe("Table", () => {
-    class User extends Table("user", "id") {
+    class User extends Table("user") {
         @Column.UUID
         id
         @Column.VARCHAR(4)
@@ -23,21 +23,21 @@ describe("Table", () => {
         host: "127.0.0.1",
         port: 3306,
         database: "test",
-        user: "root",
+        user: "admin",
         password: "",
         useSSL: false,
     })
 
     beforeEach(() => {
         client.db.execute("DROP TABLE IF EXISTS user")
-        User.setClient(client).ensureTable({ engine: Engine.MYISAM, collate: Collate.utf8_bin })
+        User.setClient(client).ensureTable({ primary: ["id"], engine: Engine.MYISAM, collate: Collate.utf8_bin })
         User.ensureIndex(["email"])
         User.ensureUniqueIndex(["countryCode", "phoneNumber"])
         User.ensureFullTextIndex(["name", "position"])
     })
 
     it("extends", () => {
-        class User extends Table("user", "id") {
+        class User extends Table("user") {
             @Column.BIGINT
             a
             @Column.BOOL
@@ -83,7 +83,7 @@ describe("Table", () => {
             [
                 "user_idx_email",
                 "user_uidx_countryCode_phoneNumber",
-                "user_ftidx_name_position",
+                "user_ft_name_position",
             ]
         )
     })

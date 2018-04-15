@@ -4,7 +4,6 @@ import { Client } from "./client"
 import { Collate, Engine } from "./constant"
 
 export interface Options {
-    primary: string[]
     collate?: Collate
     engine?: Engine
 }
@@ -32,6 +31,7 @@ export function Table(name: string): TableModel {
     class __Model__ {
         public static readonly TABLE_NAME = name
         private static columns = {}
+        private static primary: string[] = []
         private static client: Client
 
         constructor() {
@@ -44,18 +44,22 @@ export function Table(name: string): TableModel {
             __Model__.columns[key] = { key, type, init }
         }
 
+        protected addPrimary(key: string) {
+            __Model__.primary.push(key)
+        }
+
         static setClient(client: Client) {
             this.client = client
             return this
         }
 
-        static ensureTable(options: Options) {
+        static ensureTable(options?: Options) {
             this.client.execute(`
                 CREATE TABLE IF NOT EXISTS ${this.TABLE_NAME} (
-                    ${options.primary.map(key =>
+                    ${this.primary.map(key =>
                         key + " " + this.columns[key].type + ","
                     )}
-                    PRIMARY KEY (${options.primary.join(",")})
+                    PRIMARY KEY (${this.primary.join(",")})
                 )
                 ${options && options.collate ? " COLLATE " + options.collate : ""}
                 ${options && options.engine ? " ENGINE " + options.engine: ""}
@@ -181,6 +185,9 @@ export function Table(name: string): TableModel {
 }
 
 export const Column = {
+    PRIMARY(model, key) {
+        model.addPrimary(key)
+    },
     BIGINT(model, key) {
         model.setColumn(key, "BIGINT", () => 0)
     },

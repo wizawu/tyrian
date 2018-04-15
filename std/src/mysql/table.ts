@@ -3,40 +3,40 @@ import * as uuid from "uuid"
 import { Client, TableOptions } from "./client"
 import { Parser } from "./constant"
 
-export declare class __Table__ {
-    static readonly TABLE_NAME: any
-    static setClient(client: Client): typeof __Table__
+export declare class Model {
+    static readonly TABLE_NAME: string
+    static setClient(client: Client): typeof Model
     static ensureTable(options?: TableOptions): void
     static ensureIndex(columns: string[]): void
     static ensureUniqueIndex(columns: string[]): void
     static ensureFullTextIndex(columns: string[], parser?: Parser): void
-    static get(query: object): __Table__ | null
-    static list(query: object): any
+    static get(query: object): Model | null
+    static list(query: object): Model[]
     static delete(query: object): number
     static insert(row: object, options?: { upsert: boolean }): number
     static upsert(row: object): number
-    static batchInsert(rows: object[], options?: { upsert: boolean }): number[] | undefined
-    static batchUpsert(rows: object[]): number[] | undefined
-    static struct(json: object): __Table__
+    static batchInsert(rows: object[], options?: { upsert: boolean }): number[]
+    static batchUpsert(rows: object[]): number[]
+    static struct(json: object): Model
 }
 
-export type TableModel = typeof __Table__
+export type TableModel = typeof Model
 
 export function Table(name: string, primary: string): TableModel {
-    class __Table__ {
+    class __Model__ {
         public static readonly TABLE_NAME = name
         private static PRIMARY_KEY = primary
         private static columns = {}
         private static client: Client
 
         constructor() {
-            Object.keys(__Table__.columns).forEach(key => {
-                this[key] = __Table__.columns[key].init()
+            Object.keys(__Model__.columns).forEach(key => {
+                this[key] = __Model__.columns[key].init()
             })
         }
 
         protected setColumn(key: string, type: string, init: any) {
-            __Table__.columns[key] = { key, type, init }
+            __Model__.columns[key] = { key, type, init }
         }
 
         static setClient(client: Client) {
@@ -80,7 +80,7 @@ export function Table(name: string, primary: string): TableModel {
 
         static list(query: object) {
             let { sql, args } = this.queryToSQL(`SELECT * FROM ${this.TABLE_NAME} WHERE TRUE`, query)
-            return this.client.query(sql, args).map(row => row ? this.struct(row) : null)
+            return this.client.query(sql, args).map(row => this.struct(row))
         }
 
         static delete(query: object) {
@@ -152,8 +152,8 @@ export function Table(name: string, primary: string): TableModel {
         }
 
         static struct(json: object) {
-            let model = new __Table__()
-            Object.keys(__Table__.columns).forEach(key => {
+            let model = new __Model__()
+            Object.keys(__Model__.columns).forEach(key => {
                 if (json && json[key] !== undefined) model[key] = json[key]
             })
             return model
@@ -168,7 +168,7 @@ export function Table(name: string, primary: string): TableModel {
             return { sql, args }
         }
     }
-    return __Table__ as any
+    return __Model__ as any
 }
 
 export const Column = {

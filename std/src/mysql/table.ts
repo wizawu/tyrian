@@ -3,10 +3,47 @@ import * as uuid from "uuid"
 import { Client, TableOptions } from "./client"
 import { Parser } from "./constant"
 
-export function Table(name: string, primary: string) {
+export class __Table__ {
+    public static readonly TABLE_NAME: string
+    static setClient(client: Client): typeof __Table__ {
+        return null as any
+    }
+    static ensureTable(options?: TableOptions): void { }
+    static ensureIndex(columns: string[]): void { }
+    static ensureUniqueIndex(columns: string[]): void { }
+    static ensureFullTextIndex(columns: string[], parser?: Parser): void { }
+    static get(query: object): object | null {
+        return null
+    }
+    static list(query: object): object[] {
+        return []
+    }
+    static delete(query: object): number {
+        return 0
+    }
+    static insert(row: object, options = { upsert: false }): number {
+        return 0
+    }
+    static upsert(row: object): number {
+        return 0
+    }
+    static batchInsert(rows: object[], options = { upsert: false }): number[] {
+        return []
+    }
+    static batchUpsert(rows: object[]): number[] {
+        return []
+    }
+    static struct(json: object): __Table__ {
+        return null as any
+    }
+}
+
+export type TableModel = typeof __Table__
+
+export function Table(name: string, primary: string): TableModel {
     class __Table__ {
-        static readonly TABLE_NAME = name
-        private static PRIMARY = primary
+        public static readonly TABLE_NAME = name
+        private static PRIMARY_KEY = primary
         private static columns = {}
         private static client: Client
 
@@ -28,8 +65,8 @@ export function Table(name: string, primary: string) {
         static ensureTable(options?: TableOptions) {
             this.client.ensureTable(
                 this.TABLE_NAME,
-                this.PRIMARY,
-                this.columns[this.PRIMARY].type,
+                this.PRIMARY_KEY,
+                this.columns[this.PRIMARY_KEY].type,
                 options
             )
             Object.keys(this.columns).forEach(key => {
@@ -149,7 +186,7 @@ export function Table(name: string, primary: string) {
             return { sql, args }
         }
     }
-    return __Table__
+    return __Table__ as any
 }
 
 export const Column = {

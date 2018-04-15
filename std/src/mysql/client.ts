@@ -1,5 +1,3 @@
-import { Parser } from "./constant"
-
 const RowMapper = Java.type("org.springframework.jdbc.core.RowMapper")
 
 export const rowMapper = new RowMapper((resultSet: java.sql.ResultSet) => {
@@ -82,21 +80,21 @@ export class Client {
         }
     }
 
-    ensureIndex(table: string, columns: string[], options = { type: "", separator: "_idx_", parser: "" }) {
+    ensureIndex(table: string, columns: string[], options = { type: "", separator: "_idx_" }) {
         let name = table + options.separator + columns.join("_")
         let indexes = this.query(`SHOW INDEX FROM ${table} WHERE key_name = ?`, [name])
         if (indexes.length === 0) {
             this.execute(`
-                CREATE ${options.type} INDEX ${name} ON ${table}(${columns.join(",")}) ${options.parser}
+                CREATE ${options.type} INDEX ${name} ON ${table} (${columns.join(",")})
             `)
         }
     }
 
     ensureUniqueIndex(table: string, columns: string[]) {
-        this.ensureIndex(table, columns, { type: "UNIQUE", separator: "_uidx_", parser: "" })
+        this.ensureIndex(table, columns, { type: "UNIQUE", separator: "_uidx_" })
     }
 
-    ensureFullTextIndex(table: string, columns: string[], parser = Parser.ngram) {
-        this.ensureIndex(table, columns, { type: "FULLTEXT", separator: "_ftidx_", parser: `WITH PARSER ${parser}` })
+    ensureFullTextIndex(table: string, columns: string[]) {
+        this.ensureIndex(table, columns, { type: "FULLTEXT", separator: "_ft_" })
     }
 }

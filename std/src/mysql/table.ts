@@ -1,7 +1,7 @@
 import * as uuid from "uuid"
 
 import { Client } from "./client"
-import { Collate, Engine, Parser } from "./constant"
+import { Collate, Engine } from "./constant"
 
 export interface Options {
     primary: string[]
@@ -15,7 +15,7 @@ export declare class Model {
     static ensureTable(options?: Options): void
     static ensureIndex(columns: string[]): void
     static ensureUniqueIndex(columns: string[]): void
-    static ensureFullTextIndex(columns: string[], parser?: Parser): void
+    static ensureFullTextIndex(columns: string[]): void
     static get(query: object): Model | null
     static list(query: object): Model[]
     static delete(query: object): number
@@ -77,8 +77,8 @@ export function Table(name: string): TableModel {
             this.client.ensureUniqueIndex(this.TABLE_NAME, columns)
         }
 
-        static ensureFullTextIndex(columns: string[], parser?: Parser) {
-            this.client.ensureFullTextIndex(this.TABLE_NAME, columns, parser)
+        static ensureFullTextIndex(columns: string[]) {
+            this.client.ensureFullTextIndex(this.TABLE_NAME, columns)
         }
 
         static get(query: object) {

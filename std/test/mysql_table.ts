@@ -37,8 +37,10 @@ describe("Table", () => {
         User.ensureFullTextIndex(["name", "position"])
     })
 
-    it("extends", () => {
-        class User extends Table("user") {
+    it("Table", () => {
+        client.db.execute("DROP TABLE IF EXISTS collection")
+        class Collection extends Table("collection") {
+            @Column.PRIMARY
             @Column.BIGINT
             a
             @Column.BOOL
@@ -51,26 +53,32 @@ describe("Table", () => {
             e
             @Column.TIMESTAMP
             f
+            @Column.PRIMARY
             @Column.UUID
             g
             @Column.VARCHAR(64)
             h
         }
-        assert.strictEqual(User.TABLE_NAME, "user")
+        assert.strictEqual(Collection.TABLE_NAME, "collection")
+        Collection.setClient(client).ensureTable()
 
-        let user = new User()
-        assert.strictEqual(user.a, 0)
-        assert.strictEqual(user.b, false)
-        assert.strictEqual(user.c, 0)
-        assert.strictEqual(user.d, null)
-        assert.strictEqual(user.e, "")
-        assert.isNumber(user.f)
-        assert.isString(user.g)
-        assert.strictEqual(user.h, "")
-        assert.notEqual(user.g, new User().g)
+        let col = new Collection()
+        assert.strictEqual(col.a, 0)
+        assert.strictEqual(col.b, false)
+        assert.strictEqual(col.c, 0)
+        assert.strictEqual(col.d, null)
+        assert.strictEqual(col.e, "")
+        assert.isNumber(col.f)
+        assert.isString(col.g)
+        assert.strictEqual(col.h, "")
+        assert.notEqual(col.g, new Collection().g)
+
+        let rows = client.query("SHOW INDEXES FROM collection WHERE Key_name = 'PRIMARY'")
+        assert.strictEqual(rows.length, 2)
+        assert.deepEqual(rows.map(r => r.Column_name), ["a", "g"])
     })
 
-    it("ensureTable/ensureIndex", () => {
+    it("engine/collate/index", () => {
         let result = client.queryForObject(
             "SELECT * FROM information_schema.tables WHERE table_schema = ? AND table_name = ?",
             ["test", "user"]

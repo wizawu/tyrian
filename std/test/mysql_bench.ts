@@ -1,20 +1,22 @@
-/*
 import lorem from "lorem-ipsum"
 import { assert } from "chai"
 import { describe, it, beforeEach, report } from "lightest"
 
-import { Client, Model, Engine, Collate } from "../src/mysql"
+import { Client, Table, Column, Engine, Collate } from "../src/mysql"
 
 const logger = java.lang.System.err
 
-class Thesis extends Model {
-    id = this.UUID()
-    content = this.TEXT()
+const table = "test"
+
+class Thesis extends Table(table, "id") {
+    @Column.UUID
+    id
+    @Column.TEXT
+    content
 }
 
 describe("Benchmark", () => {
     let client: Client
-    let table = "test"
 
     beforeEach(() => {
         client = new Client({
@@ -25,36 +27,29 @@ describe("Benchmark", () => {
             password: "",
             useSSL: false,
         })
+        Thesis.setClient(client)
     })
 
     it(Engine.INNODB, () => {
         client.execute(`DROP TABLE IF EXISTS ${table}`)
-        let thesisTable = new Thesis({
-            client, table, primary: "id",
-            engine: Engine.INNODB,
-        })
-        thesisTable.generateTable()
+        Thesis.ensureTable({ engine: Engine.INNODB })
         for (let i = 0; i < 100; i++) {
-            thesisTable.insert({ content: lorem({ count: 10 }) })
+            Thesis.insert({ content: lorem({ count: 10 }) })
         }
     })
 
     it(Engine.INNODB + " BATCH", () => {
         client.db.execute(`DROP TABLE IF EXISTS ${table}`)
-        let thesisTable = new Thesis({
-            client, table, primary: "id",
-            engine: Engine.INNODB,
-        })
-        thesisTable.generateTable()
+        Thesis.ensureTable({ engine: Engine.INNODB })
         let theses: any[] = []
         for (let i = 0; i < 100; i++) {
             theses.push({ content: lorem({ count: 10 }) })
         }
-        thesisTable.batchInsert(theses)
+        Thesis.batchInsert(theses)
     })
 
     it(Engine.INNODB + " FULLTEXT", () => {
-        client.ensureFullText(table, ["content"])
+        Thesis.ensureFullTextIndex(["content"])
         for (let i = 0; i < 100; i++) {
             let rows = client.query(`
                 SELECT * FROM ${table} WHERE (MATCH(content) AGAINST('lorem' IN BOOLEAN MODE)) > 0
@@ -65,32 +60,24 @@ describe("Benchmark", () => {
 
     it(Engine.MYISAM, () => {
         client.db.execute(`DROP TABLE IF EXISTS ${table}`)
-        let thesisTable = new Thesis({
-            client, table, primary: "id",
-            engine: Engine.MYISAM
-        })
-        thesisTable.generateTable()
+        Thesis.ensureTable({ engine: Engine.MYISAM })
         for (let i = 0; i < 100; i++) {
-            thesisTable.insert({ content: lorem({ count: 10 }) })
+            Thesis.insert({ content: lorem({ count: 10 }) })
         }
     })
 
     it(Engine.MYISAM + " BATCH", () => {
         client.db.execute(`DROP TABLE IF EXISTS ${table}`)
-        let thesisTable = new Thesis({
-            client, table, primary: "id",
-            engine: Engine.MYISAM,
-        })
-        thesisTable.generateTable()
+        Thesis.ensureTable({ engine: Engine.MYISAM })
         let theses: any[] = []
         for (let i = 0; i < 100; i++) {
             theses.push({ content: lorem({ count: 10 }) })
         }
-        thesisTable.batchInsert(theses)
+        Thesis.batchInsert(theses)
     })
 
     it(Engine.MYISAM + " FULLTEXT", () => {
-        client.ensureFullText(table, ["content"])
+        Thesis.ensureFullTextIndex(["content"])
         for (let i = 0; i < 100; i++) {
             let rows = client.query(`
                 SELECT * FROM ${table} WHERE (MATCH(content) AGAINST('lorem' IN BOOLEAN MODE)) > 0
@@ -101,34 +88,22 @@ describe("Benchmark", () => {
 
     it(Engine.ROCKSDB, () => {
         client.db.execute(`DROP TABLE IF EXISTS ${table}`)
-        let thesisTable = new Thesis({
-            client, table, primary: "id",
-            engine: Engine.ROCKSDB,
-            collate: Collate.utf8_bin,
-        })
-        thesisTable.generateTable()
+        Thesis.ensureTable({ engine: Engine.ROCKSDB, collate: Collate.utf8_bin })
         for (let i = 0; i < 100; i++) {
-            thesisTable.insert({ content: lorem({ count: 10 }) })
+            Thesis.insert({ content: lorem({ count: 10 }) })
         }
     })
 
     it(Engine.ROCKSDB + " BATCH", () => {
         client.db.execute(`DROP TABLE IF EXISTS ${table}`)
-        let thesisTable = new Thesis({
-            client, table, primary: "id",
-            engine: Engine.ROCKSDB,
-            collate: Collate.utf8_bin,
-        })
-        thesisTable.generateTable()
+        Thesis.ensureTable({ engine: Engine.ROCKSDB, collate: Collate.utf8_bin })
         let theses: any[] = []
         for (let i = 0; i < 100; i++) {
             theses.push({ content: lorem({ count: 10 }) })
         }
-        thesisTable.batchInsert(theses)
+        Thesis.batchInsert(theses)
     })
 })
 
 assert.isOk(report.ok())
 logger.print(report.toString())
-
-*/

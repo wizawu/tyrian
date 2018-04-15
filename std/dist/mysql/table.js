@@ -28,9 +28,7 @@ function Table(name) {
         };
         __Model__.ensureTable = function (options) {
             var _this = this;
-            this.client.execute("\n                CREATE TABLE IF NOT EXISTS " + this.TABLE_NAME + " (\n                    " + this.primary.map(function (key) {
-                return key + " " + _this.columns[key].type + ",";
-            }) + "\n                    PRIMARY KEY (" + this.primary.join(",") + ")\n                )\n                " + (options && options.collate ? " COLLATE " + options.collate : "") + "\n                " + (options && options.engine ? " ENGINE " + options.engine : "") + "\n            ");
+            this.client.execute("\n                CREATE TABLE IF NOT EXISTS " + this.TABLE_NAME + " (\n                    " + this.primary.map(function (key) { return key + " " + _this.columns[key].type + ","; }).join("") + "\n                    PRIMARY KEY (" + this.primary.join(",") + ")\n                )\n                " + (options && options.collate ? " COLLATE " + options.collate : "") + "\n                " + (options && options.engine ? " ENGINE " + options.engine : "") + "\n            ");
             Object.keys(this.columns).forEach(function (key) {
                 _this.client.ensureColumn(_this.TABLE_NAME, key, _this.columns[key].type);
             });

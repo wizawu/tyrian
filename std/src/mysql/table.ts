@@ -56,13 +56,11 @@ export function Table(name: string): TableModel {
         static ensureTable(options?: Options) {
             this.client.execute(`
                 CREATE TABLE IF NOT EXISTS ${this.TABLE_NAME} (
-                    ${this.primary.map(key =>
-                        key + " " + this.columns[key].type + ","
-                    )}
+                    ${this.primary.map(key => key + " " + this.columns[key].type + ",").join("")}
                     PRIMARY KEY (${this.primary.join(",")})
                 )
                 ${options && options.collate ? " COLLATE " + options.collate : ""}
-                ${options && options.engine ? " ENGINE " + options.engine: ""}
+                ${options && options.engine ? " ENGINE " + options.engine : ""}
             `)
             Object.keys(this.columns).forEach(key => {
                 this.client.ensureColumn(

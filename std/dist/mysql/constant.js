@@ -8,15 +8,18 @@ var Collate;
 var Engine;
 (function (Engine) {
     Engine["ARCHIVE"] = "ARCHIVE";
+    Engine["ARIA"] = "ARIA";
     Engine["BLACKHOLE"] = "BLACKHOLE";
     Engine["CSV"] = "CSV";
     Engine["FEDERATED"] = "FEDERATED";
     Engine["INNODB"] = "INNODB";
     Engine["MEMORY"] = "MEMORY";
     Engine["MRG_MYISAM"] = "MRG_MYISAM";
+    Engine["MROONGA"] = "MROONGA";
     Engine["MYISAM"] = "MYISAM";
     Engine["PERFORMANCE_SCHEMA"] = "PERFORMANCE_SCHEMA";
     Engine["ROCKSDB"] = "ROCKSDB";
+    Engine["SEQUENCE"] = "SEQUENCE";
 })(Engine = exports.Engine || (exports.Engine = {}));
 var Parser;
 (function (Parser) {

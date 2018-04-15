@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var constant_1 = require("./constant");
 var RowMapper = Java.type("org.springframework.jdbc.core.RowMapper");
 exports.rowMapper = new RowMapper(function (resultSet) {
     var row = {};
@@ -57,9 +56,6 @@ var Client = (function () {
     Client.prototype.update = function (sql, args) {
         return this.db.update(sql, args);
     };
-    Client.prototype.ensureTable = function (table, pkey, type, options) {
-        this.db.execute("\n            CREATE TABLE IF NOT EXISTS " + table + " (\n                " + pkey + " " + type + " PRIMARY KEY\n            )\n            " + (options && options.collate ? " COLLATE " + options.collate : "") + "\n            " + (options && options.engine ? " ENGINE " + options.engine : "") + "\n        ");
-    };
     Client.prototype.ensureColumn = function (table, column, type) {
         var columns = this.query("SHOW COLUMNS FROM " + table + " LIKE ?", [column]);
         if (columns.length === 0) {
@@ -67,19 +63,18 @@ var Client = (function () {
         }
     };
     Client.prototype.ensureIndex = function (table, columns, options) {
-        if (options === void 0) { options = { type: "", separator: "_idx_", parser: "" }; }
+        if (options === void 0) { options = { type: "", separator: "_idx_" }; }
         var name = table + options.separator + columns.join("_");
         var indexes = this.query("SHOW INDEX FROM " + table + " WHERE key_name = ?", [name]);
         if (indexes.length === 0) {
-            this.execute("\n                CREATE " + options.type + " INDEX " + name + " ON " + table + "(" + columns.join(",") + ") " + options.parser + "\n            ");
+            this.execute("\n                CREATE " + options.type + " INDEX " + name + " ON " + table + " (" + columns.join(",") + ")\n            ");
         }
     };
     Client.prototype.ensureUniqueIndex = function (table, columns) {
-        this.ensureIndex(table, columns, { type: "UNIQUE", separator: "_uidx_", parser: "" });
+        this.ensureIndex(table, columns, { type: "UNIQUE", separator: "_uidx_" });
     };
-    Client.prototype.ensureFullTextIndex = function (table, columns, parser) {
-        if (parser === void 0) { parser = constant_1.Parser.ngram; }
-        this.ensureIndex(table, columns, { type: "FULLTEXT", separator: "_ftidx_", parser: "WITH PARSER " + parser });
+    Client.prototype.ensureFullTextIndex = function (table, columns) {
+        this.ensureIndex(table, columns, { type: "FULLTEXT", separator: "_ft_" });
     };
     return Client;
 }());

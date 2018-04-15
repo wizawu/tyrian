@@ -4,15 +4,18 @@ export declare enum Collate {
 }
 export declare enum Engine {
     ARCHIVE = "ARCHIVE",
+    ARIA = "ARIA",
     BLACKHOLE = "BLACKHOLE",
     CSV = "CSV",
     FEDERATED = "FEDERATED",
     INNODB = "INNODB",
     MEMORY = "MEMORY",
     MRG_MYISAM = "MRG_MYISAM",
+    MROONGA = "MROONGA",
     MYISAM = "MYISAM",
     PERFORMANCE_SCHEMA = "PERFORMANCE_SCHEMA",
     ROCKSDB = "ROCKSDB",
+    SEQUENCE = "SEQUENCE",
 }
 export declare enum Parser {
     mecab = "mecab",

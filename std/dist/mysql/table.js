@@ -8,7 +8,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var uuid = __importStar(require("uuid"));
-function Table(name, primary) {
+function Table(name) {
     var __Model__ = (function () {
         function __Model__() {
             var _this = this;
@@ -19,13 +19,18 @@ function Table(name, primary) {
         __Model__.prototype.setColumn = function (key, type, init) {
             __Model__.columns[key] = { key: key, type: type, init: init };
         };
+        __Model__.prototype.addPrimary = function (key) {
+            __Model__.primary.push(key);
+        };
         __Model__.setClient = function (client) {
             this.client = client;
             return this;
         };
         __Model__.ensureTable = function (options) {
             var _this = this;
-            this.client.ensureTable(this.TABLE_NAME, this.PRIMARY_KEY, this.columns[this.PRIMARY_KEY].type, options);
+            this.client.execute("\n                CREATE TABLE IF NOT EXISTS " + this.TABLE_NAME + " (\n                    " + this.primary.map(function (key) {
+                return key + " " + _this.columns[key].type + ",";
+            }) + "\n                    PRIMARY KEY (" + this.primary.join(",") + ")\n                )\n                " + (options && options.collate ? " COLLATE " + options.collate : "") + "\n                " + (options && options.engine ? " ENGINE " + options.engine : "") + "\n            ");
             Object.keys(this.columns).forEach(function (key) {
                 _this.client.ensureColumn(_this.TABLE_NAME, key, _this.columns[key].type);
             });
@@ -36,8 +41,8 @@ function Table(name, primary) {
         __Model__.ensureUniqueIndex = function (columns) {
             this.client.ensureUniqueIndex(this.TABLE_NAME, columns);
         };
-        __Model__.ensureFullTextIndex = function (columns, parser) {
-            this.client.ensureFullTextIndex(this.TABLE_NAME, columns, parser);
+        __Model__.ensureFullTextIndex = function (columns) {
+            this.client.ensureFullTextIndex(this.TABLE_NAME, columns);
         };
         __Model__.get = function (query) {
             var _a = this.queryToSQL("SELECT * FROM " + this.TABLE_NAME + " WHERE TRUE", query), sql = _a.sql, args = _a.args;
@@ -120,14 +125,17 @@ function Table(name, primary) {
             return { sql: sql, args: args };
         };
         __Model__.TABLE_NAME = name;
-        __Model__.PRIMARY_KEY = primary;
         __Model__.columns = {};
+        __Model__.primary = [];
         return __Model__;
     }());
     return __Model__;
 }
 exports.Table = Table;
 exports.Column = {
+    PRIMARY: function (model, key) {
+        model.addPrimary(key);
+    },
     BIGINT: function (model, key) {
         model.setColumn(key, "BIGINT", function () { return 0; });
     },

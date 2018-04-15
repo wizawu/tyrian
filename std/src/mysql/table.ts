@@ -3,39 +3,21 @@ import * as uuid from "uuid"
 import { Client, TableOptions } from "./client"
 import { Parser } from "./constant"
 
-export class __Table__ {
-    public static readonly TABLE_NAME: string
-    static setClient(client: Client): typeof __Table__ {
-        return null as any
-    }
-    static ensureTable(options?: TableOptions): void { }
-    static ensureIndex(columns: string[]): void { }
-    static ensureUniqueIndex(columns: string[]): void { }
-    static ensureFullTextIndex(columns: string[], parser?: Parser): void { }
-    static get(query: object): object | null {
-        return null
-    }
-    static list(query: object): object[] {
-        return []
-    }
-    static delete(query: object): number {
-        return 0
-    }
-    static insert(row: object, options = { upsert: false }): number {
-        return 0
-    }
-    static upsert(row: object): number {
-        return 0
-    }
-    static batchInsert(rows: object[], options = { upsert: false }): number[] {
-        return []
-    }
-    static batchUpsert(rows: object[]): number[] {
-        return []
-    }
-    static struct(json: object): __Table__ {
-        return null as any
-    }
+export declare class __Table__ {
+    static readonly TABLE_NAME: any
+    static setClient(client: Client): typeof __Table__
+    static ensureTable(options?: TableOptions): void
+    static ensureIndex(columns: string[]): void
+    static ensureUniqueIndex(columns: string[]): void
+    static ensureFullTextIndex(columns: string[], parser?: Parser): void
+    static get(query: object): __Table__ | null
+    static list(query: object): any
+    static delete(query: object): number
+    static insert(row: object, options?: { upsert: boolean }): number
+    static upsert(row: object): number
+    static batchInsert(rows: object[], options?: { upsert: boolean }): number[] | undefined
+    static batchUpsert(rows: object[]): number[] | undefined
+    static struct(json: object): __Table__
 }
 
 export type TableModel = typeof __Table__

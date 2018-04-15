@@ -8,87 +8,48 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var uuid = __importStar(require("uuid"));
-var __Table__ = (function () {
-    function __Table__() {
-    }
-    __Table__.setClient = function (client) {
-        return null;
-    };
-    __Table__.ensureTable = function (options) { };
-    __Table__.ensureIndex = function (columns) { };
-    __Table__.ensureUniqueIndex = function (columns) { };
-    __Table__.ensureFullTextIndex = function (columns, parser) { };
-    __Table__.get = function (query) {
-        return null;
-    };
-    __Table__.list = function (query) {
-        return [];
-    };
-    __Table__.delete = function (query) {
-        return 0;
-    };
-    __Table__.insert = function (row, options) {
-        if (options === void 0) { options = { upsert: false }; }
-        return 0;
-    };
-    __Table__.upsert = function (row) {
-        return 0;
-    };
-    __Table__.batchInsert = function (rows, options) {
-        if (options === void 0) { options = { upsert: false }; }
-        return [];
-    };
-    __Table__.batchUpsert = function (rows) {
-        return [];
-    };
-    __Table__.struct = function (json) {
-        return null;
-    };
-    return __Table__;
-}());
-exports.__Table__ = __Table__;
 function Table(name, primary) {
-    var __Table__ = (function () {
-        function __Table__() {
+    var __Model__ = (function () {
+        function __Model__() {
             var _this = this;
-            Object.keys(__Table__.columns).forEach(function (key) {
-                _this[key] = __Table__.columns[key].init();
+            Object.keys(__Model__.columns).forEach(function (key) {
+                _this[key] = __Model__.columns[key].init();
             });
         }
-        __Table__.prototype.setColumn = function (key, type, init) {
-            __Table__.columns[key] = { key: key, type: type, init: init };
+        __Model__.prototype.setColumn = function (key, type, init) {
+            __Model__.columns[key] = { key: key, type: type, init: init };
         };
-        __Table__.setClient = function (client) {
+        __Model__.setClient = function (client) {
             this.client = client;
             return this;
         };
-        __Table__.ensureTable = function (options) {
+        __Model__.ensureTable = function (options) {
             var _this = this;
             this.client.ensureTable(this.TABLE_NAME, this.PRIMARY_KEY, this.columns[this.PRIMARY_KEY].type, options);
             Object.keys(this.columns).forEach(function (key) {
                 _this.client.ensureColumn(_this.TABLE_NAME, key, _this.columns[key].type);
             });
         };
-        __Table__.ensureIndex = function (columns) {
+        __Model__.ensureIndex = function (columns) {
             this.client.ensureIndex(this.TABLE_NAME, columns);
         };
-        __Table__.ensureUniqueIndex = function (columns) {
+        __Model__.ensureUniqueIndex = function (columns) {
             this.client.ensureUniqueIndex(this.TABLE_NAME, columns);
         };
-        __Table__.ensureFullTextIndex = function (columns, parser) {
+        __Model__.ensureFullTextIndex = function (columns, parser) {
             this.client.ensureFullTextIndex(this.TABLE_NAME, columns, parser);
         };
-        __Table__.get = function (query) {
+        __Model__.get = function (query) {
             var _a = this.queryToSQL("SELECT * FROM " + this.TABLE_NAME + " WHERE TRUE", query), sql = _a.sql, args = _a.args;
             var row = this.client.queryForObject(sql, args);
             return row ? this.struct(row) : null;
         };
-        __Table__.list = function (query) {
+        __Model__.list = function (query) {
             var _this = this;
             var _a = this.queryToSQL("SELECT * FROM " + this.TABLE_NAME + " WHERE TRUE", query), sql = _a.sql, args = _a.args;
-            return this.client.query(sql, args).map(function (row) { return row ? _this.struct(row) : null; });
+            return this.client.query(sql, args).map(function (row) { return _this.struct(row); });
         };
-        __Table__.delete = function (query) {
+        __Model__.delete = function (query) {
             var _a = this.queryToSQL("DELETE FROM " + this.TABLE_NAME + " WHERE TRUE", query), sql = _a.sql, args = _a.args;
             if (args.length === 0) {
                 throw "Cannot delete rows with an empty query";
@@ -97,7 +58,7 @@ function Table(name, primary) {
                 return this.client.update(sql, args);
             }
         };
-        __Table__.insert = function (row, options) {
+        __Model__.insert = function (row, options) {
             if (options === void 0) { options = { upsert: false }; }
             var model = this.struct(row);
             var keys = Object.keys(this.columns);
@@ -111,10 +72,10 @@ function Table(name, primary) {
                 }
             }));
         };
-        __Table__.upsert = function (row) {
+        __Model__.upsert = function (row) {
             return this.insert(row, { upsert: true });
         };
-        __Table__.batchInsert = function (rows, options) {
+        __Model__.batchInsert = function (rows, options) {
             if (options === void 0) { options = { upsert: false }; }
             if (rows.length === 0)
                 return;
@@ -139,18 +100,18 @@ function Table(name, primary) {
             });
             return this.client.db.batchUpdate((options.upsert ? "REPLACE" : "INSERT") + " INTO\n                    " + this.TABLE_NAME + " (" + keys.join(",") + ")\n                    VALUES (" + keys.map(function () { return "?"; }).join(",") + ")\n                ", new BatchPreparedStatementSetter());
         };
-        __Table__.batchUpsert = function (rows) {
+        __Model__.batchUpsert = function (rows) {
             return this.batchInsert(rows, { upsert: true });
         };
-        __Table__.struct = function (json) {
-            var model = new __Table__();
-            Object.keys(__Table__.columns).forEach(function (key) {
+        __Model__.struct = function (json) {
+            var model = new __Model__();
+            Object.keys(__Model__.columns).forEach(function (key) {
                 if (json && json[key] !== undefined)
                     model[key] = json[key];
             });
             return model;
         };
-        __Table__.queryToSQL = function (sql, query) {
+        __Model__.queryToSQL = function (sql, query) {
             var args = [];
             Object.keys(query).forEach(function (key) {
                 sql += " AND " + key + " = ?";
@@ -158,12 +119,12 @@ function Table(name, primary) {
             });
             return { sql: sql, args: args };
         };
-        __Table__.TABLE_NAME = name;
-        __Table__.PRIMARY_KEY = primary;
-        __Table__.columns = {};
-        return __Table__;
+        __Model__.TABLE_NAME = name;
+        __Model__.PRIMARY_KEY = primary;
+        __Model__.columns = {};
+        return __Model__;
     }());
-    return __Table__;
+    return __Model__;
 }
 exports.Table = Table;
 exports.Column = {

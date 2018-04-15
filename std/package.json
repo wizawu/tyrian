@@ -1,7 +1,7 @@
 {
   "name": "1c-std",
-  "version": "0.1.0",
-  "repository": "github:wizawu/1c-std",
+  "version": "0.1.2",
+  "repository": "https://github.com/wizawu/1c/tree/master/std",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "mvnDependencies": [

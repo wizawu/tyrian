@@ -1,14 +1,14 @@
 import { Client, TableOptions } from "./client";
 import { Parser } from "./constant";
-export declare class __Table__ {
+export declare class Model {
     static readonly TABLE_NAME: string;
-    static setClient(client: Client): typeof __Table__;
+    static setClient(client: Client): typeof Model;
     static ensureTable(options?: TableOptions): void;
     static ensureIndex(columns: string[]): void;
     static ensureUniqueIndex(columns: string[]): void;
     static ensureFullTextIndex(columns: string[], parser?: Parser): void;
-    static get(query: object): object | null;
-    static list(query: object): object[];
+    static get(query: object): Model | null;
+    static list(query: object): Model[];
     static delete(query: object): number;
     static insert(row: object, options?: {
         upsert: boolean;
@@ -18,9 +18,9 @@ export declare class __Table__ {
         upsert: boolean;
     }): number[];
     static batchUpsert(rows: object[]): number[];
-    static struct(json: object): __Table__;
+    static struct(json: object): Model;
 }
-export declare type TableModel = typeof __Table__;
+export declare type TableModel = typeof Model;
 export declare function Table(name: string, primary: string): TableModel;
 export declare const Column: {
     BIGINT(model: any, key: any): void;

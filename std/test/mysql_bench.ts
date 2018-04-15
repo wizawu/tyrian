@@ -9,6 +9,7 @@ const logger = java.lang.System.err
 const table = "test"
 
 class Thesis extends Table(table) {
+    @Column.PRIMARY
     @Column.UUID
     id
     @Column.TEXT
@@ -32,7 +33,7 @@ describe("Benchmark", () => {
 
     it(Engine.INNODB, () => {
         client.execute(`DROP TABLE IF EXISTS ${table}`)
-        Thesis.ensureTable({ primary: ["id"], engine: Engine.INNODB })
+        Thesis.ensureTable({ engine: Engine.INNODB })
         for (let i = 0; i < 100; i++) {
             Thesis.insert({ content: lorem({ count: 10 }) })
         }
@@ -40,7 +41,7 @@ describe("Benchmark", () => {
 
     it(Engine.INNODB + " BATCH", () => {
         client.db.execute(`DROP TABLE IF EXISTS ${table}`)
-        Thesis.ensureTable({ primary: ["id"], engine: Engine.INNODB })
+        Thesis.ensureTable({ engine: Engine.INNODB })
         let theses: any[] = []
         for (let i = 0; i < 100; i++) {
             theses.push({ content: lorem({ count: 10 }) })
@@ -63,7 +64,7 @@ describe("Benchmark", () => {
 
     it(Engine.MYISAM, () => {
         client.db.execute(`DROP TABLE IF EXISTS ${table}`)
-        Thesis.ensureTable({ primary: ["id"], engine: Engine.MYISAM })
+        Thesis.ensureTable({ engine: Engine.MYISAM })
         for (let i = 0; i < 100; i++) {
             Thesis.insert({ content: lorem({ count: 10 }) })
         }
@@ -71,7 +72,7 @@ describe("Benchmark", () => {
 
     it(Engine.MYISAM + " BATCH", () => {
         client.db.execute(`DROP TABLE IF EXISTS ${table}`)
-        Thesis.ensureTable({ primary: ["id"], engine: Engine.MYISAM })
+        Thesis.ensureTable({ engine: Engine.MYISAM })
         let theses: any[] = []
         for (let i = 0; i < 100; i++) {
             theses.push({ content: lorem({ count: 10 }) })

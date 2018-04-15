@@ -5,6 +5,7 @@ import { Collate, Engine, Client, Table, Column } from "../src/mysql"
 
 describe("Table", () => {
     class User extends Table("user") {
+        @Column.PRIMARY
         @Column.UUID
         id
         @Column.VARCHAR(4)
@@ -30,7 +31,7 @@ describe("Table", () => {
 
     beforeEach(() => {
         client.db.execute("DROP TABLE IF EXISTS user")
-        User.setClient(client).ensureTable({ primary: ["id"], engine: Engine.MYISAM, collate: Collate.utf8_bin })
+        User.setClient(client).ensureTable({ engine: Engine.MYISAM, collate: Collate.utf8_bin })
         User.ensureIndex(["email"])
         User.ensureUniqueIndex(["countryCode", "phoneNumber"])
         User.ensureFullTextIndex(["name", "position"])

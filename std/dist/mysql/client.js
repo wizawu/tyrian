@@ -7,7 +7,7 @@ exports.rowMapper = new RowMapper(function (resultSet) {
     for (var i = 1; i <= resultSet.getMetaData().getColumnCount(); i++) {
         var key = resultSet.getMetaData().getColumnLabel(i);
         var type = resultSet.getMetaData().getColumnTypeName(i);
-        if (resultSet.getObject(i) == null) {
+        if (resultSet.getObject(i) === null) {
             row[key] = null;
         }
         else if (type.toUpperCase() === "JSON") {
@@ -57,9 +57,8 @@ var Client = (function () {
     Client.prototype.update = function (sql, args) {
         return this.db.update(sql, args);
     };
-    Client.prototype.ensureTable = function (table, pkey, type, engine, collate) {
-        if (engine === void 0) { engine = constant_1.Engine.INNODB; }
-        this.db.execute("\n            CREATE TABLE IF NOT EXISTS " + table + " (\n                " + pkey + " " + type + " PRIMARY KEY\n            ) ENGINE = " + engine + " " + (collate ? ", COLLATE " + collate : "") + "\n        ");
+    Client.prototype.ensureTable = function (table, pkey, type, options) {
+        this.db.execute("\n            CREATE TABLE IF NOT EXISTS " + table + " (\n                " + pkey + " " + type + " PRIMARY KEY\n            )\n            " + (options && options.collate ? " COLLATE " + options.collate : "") + "\n            " + (options && options.engine ? " ENGINE " + options.engine : "") + "\n        ");
     };
     Client.prototype.ensureColumn = function (table, column, type) {
         var columns = this.query("SHOW COLUMNS FROM " + table + " LIKE ?", [column]);
@@ -78,9 +77,9 @@ var Client = (function () {
     Client.prototype.ensureUniqueIndex = function (table, columns) {
         this.ensureIndex(table, columns, { type: "UNIQUE", separator: "_uidx_", parser: "" });
     };
-    Client.prototype.ensureFullText = function (table, columns, parser) {
+    Client.prototype.ensureFullTextIndex = function (table, columns, parser) {
         if (parser === void 0) { parser = constant_1.Parser.ngram; }
-        this.ensureIndex(table, columns, { type: "FULLTEXT", separator: "_ft_", parser: "WITH PARSER " + parser });
+        this.ensureIndex(table, columns, { type: "FULLTEXT", separator: "_ftidx_", parser: "WITH PARSER " + parser });
     };
     return Client;
 }());

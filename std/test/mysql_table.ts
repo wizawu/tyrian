@@ -30,7 +30,7 @@ describe("Table", () => {
 
     beforeEach(() => {
         client.db.execute("DROP TABLE IF EXISTS user")
-        User.setClient(client).ensureTable()
+        User.setClient(client).ensureTable({ engine: Engine.MYISAM, collate: Collate.utf8_bin })
         User.ensureIndex(["email"])
         User.ensureUniqueIndex(["countryCode", "phoneNumber"])
         User.ensureFullTextIndex(["name", "position"])

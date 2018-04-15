@@ -16,11 +16,18 @@ export function Table(definition: Definition) {
         private static PRIMARY = definition.primary
         private static ENGINE = definition.engine
         private static COLLATE = definition.collate
+
         private static columns = {}
         private static client: Client
 
-        protected setColumn(key: string, type: string) {
-            __Table__.columns[key] = { key, type }
+        constructor() {
+            Object.keys(__Table__.columns).forEach(key => {
+                this[key] = __Table__.columns[key].init()
+            })
+        }
+
+        protected setColumn(key: string, type: string, init: any) {
+            __Table__.columns[key] = { key, type, init }
         }
 
         static setClient(client: Client) {
@@ -59,12 +66,13 @@ export function Table(definition: Definition) {
 
         static get(query: object) {
             let { sql, args } = this.queryToSQL(`SELECT * FROM ${this.TABLE_NAME} WHERE TRUE`, query)
-            return this.client.queryForObject(sql, args)
+            let row = this.client.queryForObject(sql, args)
+            return row ? this.struct(row) : null
         }
 
         static list(query: object) {
             let { sql, args } = this.queryToSQL(`SELECT * FROM ${this.TABLE_NAME} WHERE TRUE`, query)
-            return this.client.query(sql, args)
+            return this.client.query(sql, args).map(row => row ? this.struct(row) : null)
         }
 
         static delete(query: object) {
@@ -77,6 +85,7 @@ export function Table(definition: Definition) {
         }
 
         static insert(row: object, options = { upsert: false }) {
+            let model = this.struct(row)
             let keys = Object.keys(this.columns)
             return this.client.update(
                 `${options.upsert ? "REPLACE" : "INSERT"} INTO
@@ -84,7 +93,7 @@ export function Table(definition: Definition) {
                     VALUES (${keys.map(() => "?").join(",")})
                 `,
                 keys.map(key => {
-                    const value = row[key] === undefined ? null : row[key]
+                    let value = model[key]
                     if (typeof value === "object") {
                         return value === null ? null : JSON.stringify(value)
                     } else {
@@ -100,13 +109,15 @@ export function Table(definition: Definition) {
 
         static batchInsert(rows: object[], options = { upsert: false }) {
             if (rows.length === 0) return
+            let that = this
             let keys = Object.keys(this.columns)
             const BatchPreparedStatementSetter = Java.extend(
                 Java.type("org.springframework.jdbc.core.BatchPreparedStatementSetter"),
                 {
                     setValues(preparedStatement, i) {
+                        const model = that.struct(rows[i])
                         keys.forEach((key, j) => {
-                            const value = rows[i][key] === undefined ? null : rows[i][key]
+                            let value = model[key]
                             if (typeof value === "object") {
                                 preparedStatement.setObject(j + 1, value === null ? null : JSON.stringify(value))
                             } else {
@@ -132,11 +143,12 @@ export function Table(definition: Definition) {
             return this.batchInsert(rows, { upsert: true })
         }
 
-        merge(json: object) {
-            Object.keys(this).forEach(key => {
-                if (json && json[key] !== undefined) this[key] = json[key]
+        static struct(json: object) {
+            let model = new __Table__()
+            Object.keys(__Table__.columns).forEach(key => {
+                if (json && json[key] !== undefined) model[key] = json[key]
             })
-            return this
+            return model
         }
 
         private static queryToSQL(sql: string, query: object) {
@@ -153,37 +165,29 @@ export function Table(definition: Definition) {
 
 export const Column = {
     BIGINT(model, key) {
-        model.setColumn(key, "BIGINT")
-        model[key] = 0
+        model.setColumn(key, "BIGINT", () => 0)
     },
     BOOL(model, key) {
-        model.setColumn(key, "BOOL")
-        model[key] = false
+        model.setColumn(key, "BOOL", () => false)
     },
     DOUBLE(model, key) {
-        model.setColumn(key, "DOUBLE")
-        model[key] = 0
+        model.setColumn(key, "DOUBLE", () => 0)
     },
     JSON(model, key) {
-        model.setColumn(key, "JSON")
-        model[key] = null
+        model.setColumn(key, "JSON", () => null)
     },
     VARCHAR(n: number) {
         return function (model, key) {
-            model.setColumn(key, `VARCHAR(${n})`)
-            model[key] = ""
+            model.setColumn(key, `VARCHAR(${n})`, () => "")
         }
     },
     UUID(model, key) {
-        model.setColumn(key, `VARCHAR(40)`)
-        model[key] = uuid.v4()
+        model.setColumn(key, `VARCHAR(40)`, () => uuid.v4())
     },
     TEXT(model, key) {
-        model.setColumn(key, "TEXT")
-        model[key] = ""
+        model.setColumn(key, "TEXT", () => "")
     },
     TIMESTAMP(model, key) {
-        model.setColumn(key, "BIGINT")
-        model[key] = Date.now()
+        model.setColumn(key, "BIGINT", () => Date.now())
     },
 }

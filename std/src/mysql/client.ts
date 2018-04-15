@@ -18,6 +18,11 @@ export const rowMapper = new RowMapper((resultSet: java.sql.ResultSet) => {
     return row
 })
 
+export interface TableOptions {
+    collate?: Collate
+    engine?: Engine
+}
+
 export interface Options {
     host: string
     port: number
@@ -74,11 +79,13 @@ export class Client {
         return this.db.update(sql, args)
     }
 
-    ensureTable(table: string, pkey: string, type: string, engine = Engine.INNODB, collate?: Collate) {
+    ensureTable(table: string, pkey: string, type: string, options?: TableOptions) {
         this.db.execute(`
             CREATE TABLE IF NOT EXISTS ${table} (
                 ${pkey} ${type} PRIMARY KEY
-            ) ENGINE = ${engine} ${collate ? ", COLLATE " + collate : ""}
+            )
+            ${options && options.collate ? " COLLATE " + options.collate : ""}
+            ${options && options.engine ? " ENGINE " + options.engine: ""}
         `)
     }
 

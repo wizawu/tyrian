@@ -1,22 +1,12 @@
 import * as uuid from "uuid"
 
-import { Client } from "./client"
-import { Collate, Engine, Parser } from "./constant"
+import { Client, TableOptions } from "./client"
+import { Parser } from "./constant"
 
-export interface Definition {
-    name: string
-    primary: string
-    engine?: Engine
-    collate?: Collate
-}
-
-export function Table(definition: Definition) {
+export function Table(name: string, primary: string) {
     class __Table__ {
-        static readonly TABLE_NAME = definition.name
-        private static PRIMARY = definition.primary
-        private static ENGINE = definition.engine
-        private static COLLATE = definition.collate
-
+        static readonly TABLE_NAME = name
+        private static PRIMARY = primary
         private static columns = {}
         private static client: Client
 
@@ -35,13 +25,12 @@ export function Table(definition: Definition) {
             return this
         }
 
-        static ensureTable() {
+        static ensureTable(options?: TableOptions) {
             this.client.ensureTable(
                 this.TABLE_NAME,
                 this.PRIMARY,
                 this.columns[this.PRIMARY].type,
-                this.ENGINE,
-                this.COLLATE,
+                options
             )
             Object.keys(this.columns).forEach(key => {
                 this.client.ensureColumn(
@@ -60,7 +49,7 @@ export function Table(definition: Definition) {
             this.client.ensureUniqueIndex(this.TABLE_NAME, columns)
         }
 
-        static ensureFullTextIndex(columns: string[], parser = Parser.ngram) {
+        static ensureFullTextIndex(columns: string[], parser?: Parser) {
             this.client.ensureFullTextIndex(this.TABLE_NAME, columns, parser)
         }
 

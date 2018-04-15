@@ -4,7 +4,7 @@ import { beforeEach, describe, it, report } from "lightest"
 import { Collate, Engine, Client, Table, Column } from "../src/mysql"
 
 describe("Table", () => {
-    class User extends Table({ name: "user", primary: "id", engine: Engine.MYISAM, collate: Collate.utf8_bin }) {
+    class User extends Table("user", "id") {
         @Column.UUID
         id
         @Column.VARCHAR(4)
@@ -37,7 +37,7 @@ describe("Table", () => {
     })
 
     it("extends", () => {
-        class User extends Table({ name: "user", primary: "id" }) {
+        class User extends Table("user", "id") {
             @Column.BIGINT
             a
             @Column.BOOL

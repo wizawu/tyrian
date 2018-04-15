@@ -1,16 +1,22 @@
 import { assert } from "chai"
 import { beforeEach, describe, it, report } from "lightest"
 
-import { Parser, Collate, Engine, Model, Client } from "../src/mysql"
+import { Collate, Engine, Client, Table, Column } from "../src/mysql"
 
-describe("Model", () => {
-    class User extends Model {
-        id = this.UUID()
-        countryCode = this.VARCHAR(4)
-        phoneNumber = this.VARCHAR(20)
-        email = this.VARCHAR(64)
-        name = this.TEXT()
-        position = this.TEXT()
+describe("Table", () => {
+    class User extends Table({ name: "user", primary: "id", engine: Engine.MYISAM, collate: Collate.utf8_bin }) {
+        @Column.UUID
+        id
+        @Column.VARCHAR(4)
+        countryCode
+        @Column.VARCHAR(20)
+        phoneNumber
+        @Column.VARCHAR(64)
+        email
+        @Column.TEXT
+        name
+        @Column.TEXT
+        position
     }
 
     let client = new Client({
@@ -21,50 +27,37 @@ describe("Model", () => {
         password: "",
         useSSL: false,
     })
-    let userTable: User
 
     beforeEach(() => {
         client.db.execute("DROP TABLE IF EXISTS user")
-        userTable = new User({
-            client: client,
-            table: "user",
-            primary: "id",
-            engine: Engine.MYISAM,
-            collate: Collate.utf8_bin,
-            index: [["email"]],
-            unique: [["countryCode", "phoneNumber"]],
-            fulltext: [[Parser.ngram, "name", "position"]],
-        })
-        userTable.generateTable()
+        User.setClient(client).ensureTable()
+        User.ensureIndex(["email"])
+        User.ensureUniqueIndex(["countryCode", "phoneNumber"])
+        User.ensureFullTextIndex(["name", "position"])
     })
 
     it("extends", () => {
-        class User extends Model {
-            a = this.BIGINT()
-            b = this.BOOL()
-            c = this.DOUBLE()
-            d = this.JSON()
-            e = this.TEXT()
-            f = this.TIMESTAMP()
-            g = this.UUID()
-            h = this.VARCHAR(64)
+        class User extends Table({ name: "user", primary: "id" }) {
+            @Column.BIGINT
+            a
+            @Column.BOOL
+            b
+            @Column.DOUBLE
+            c
+            @Column.JSON
+            d
+            @Column.TEXT
+            e
+            @Column.TIMESTAMP
+            f
+            @Column.UUID
+            g
+            @Column.VARCHAR(64)
+            h
         }
+        assert.strictEqual(User.TABLE_NAME, "user")
 
-        let user = new User({
-            client: client,
-            table: "user",
-            primary: "id",
-        })
-        assert.strictEqual(user.a as any, "BIGINT")
-        assert.strictEqual(user.b as any, "BOOL")
-        assert.strictEqual(user.c as any, "DOUBLE")
-        assert.strictEqual(user.d as any, "JSON")
-        assert.strictEqual(user.e as any, "TEXT")
-        assert.strictEqual(user.f as any, "BIGINT")
-        assert.strictEqual(user.g as any, "VARCHAR(40)")
-        assert.strictEqual(user.h as any, "VARCHAR(64)")
-
-        user = new User()
+        let user = new User()
         assert.strictEqual(user.a, 0)
         assert.strictEqual(user.b, false)
         assert.strictEqual(user.c, 0)
@@ -73,13 +66,10 @@ describe("Model", () => {
         assert.isNumber(user.f)
         assert.isString(user.g)
         assert.strictEqual(user.h, "")
+        assert.notEqual(user.g, new User().g)
     })
 
-    it("getTableName", () => {
-        assert.strictEqual(userTable.getTableName(), "user")
-    })
-
-    it("generateTable", () => {
+    it("ensureTable/ensureIndex", () => {
         let result = client.queryForObject(
             "SELECT * FROM information_schema.tables WHERE table_schema = ? AND table_name = ?",
             ["test", "user"]
@@ -93,39 +83,39 @@ describe("Model", () => {
             [
                 "user_idx_email",
                 "user_uidx_countryCode_phoneNumber",
-                "user_ft_name_position",
+                "user_ftidx_name_position",
             ]
         )
     })
 
     it("get/insert", () => {
         client.execute("ALTER TABLE user ADD COLUMN phone TEXT")
-        userTable.insert({ name: "wizawu", phone: "10086" })
-        let user = userTable.get({ name: "wizawu" }) as User
+        User.insert(User.struct({ name: "wizawu", phone: "10086" }))
+        let user = User.get({ name: "wizawu" }) as User
         assert.isNotEmpty(user.id)
         assert.strictEqual(user.name, "wizawu")
         assert.isUndefined((user as any).phone)
 
-        user = userTable.get({ name: "anonymous" }) as User
+        user = User.get({ name: "anonymous" }) as User
         assert.strictEqual(user, null)
     })
 
     it("upsert", () => {
-        userTable.insert({ email: "wizawu@gmail.com" })
-        let user = userTable.get({}) as User
-        userTable.upsert({ id: user.id, email: "wizawu@qq.com" })
-        user = userTable.get({ id: user.id }) as User
+        User.insert(User.struct({ email: "wizawu@gmail.com" }))
+        let user = User.get({}) as User
+        User.upsert(User.struct({ id: user.id, email: "wizawu@qq.com" }))
+        user = User.get({ id: user.id }) as User
         assert.strictEqual(user.email, "wizawu@qq.com")
     })
 
     it("list/batchInsert", () => {
         client.execute("ALTER TABLE user ADD COLUMN phone TEXT")
-        userTable.batchInsert([
+        User.batchInsert([
             { name: "wizawu", email: "wizawu@gmail.com", countryCode: "1" },
             { name: "wizawu", email: "wizawu@qq.com", countryCode: "86", phone: "10086" },
             { email: "wizawu@163.com" },
         ])
-        let result = userTable.list({ name: "wizawu" }) as User[]
+        let result = User.list({ name: "wizawu" }) as User[]
         assert.strictEqual(result.length, 2)
         assert.strictEqual(result[0].name, "wizawu")
         assert.strictEqual(result[0].email, "wizawu@gmail.com")
@@ -137,35 +127,35 @@ describe("Model", () => {
     })
 
     it("batchUpsert", () => {
-        userTable.batchUpsert([
+        User.batchUpsert([
             { id: "1", email: "wizawu@gmail.com", countryCode: "1" },
             { id: "2", email: "wizawu@qq.com", countryCode: "86" },
         ])
-        let result = userTable.list({}) as User[]
+        let result = User.list({}) as User[]
         assert.strictEqual(result.length, 2)
-        userTable.batchUpsert([
+        User.batchUpsert([
             { id: "1", email: "wizawu@163.com", countryCode: "1" },
             { id: "2", email: "wizawu@163.com", countryCode: "86" },
         ])
-        result = userTable.list({}) as User[]
+        result = User.list({}) as User[]
         assert.strictEqual(result.length, 2)
         assert.strictEqual(result[0].email, "wizawu@163.com")
         assert.strictEqual(result[1].email, "wizawu@163.com")
     })
 
     it("delete", () => {
-        userTable.batchInsert([
+        User.batchInsert([
             { name: "wizawu", email: "wizawu@gmail.com", countryCode: "1" },
             { name: "wizawu", email: "wizawu@qq.com", countryCode: "86", phone: "10086" },
             { email: "wizawu@163.com" },
         ])
         try {
-            userTable.delete({})
+            User.delete({})
             assert.fail()
         } catch (e) {
         }
-        userTable.delete({ name: "wizawu" })
-        let result = userTable.list({}) as User[]
+        User.delete({ name: "wizawu" })
+        let result = User.list({}) as User[]
         assert.strictEqual(result.length, 1)
         assert.strictEqual(result[0].email, "wizawu@163.com")
     })

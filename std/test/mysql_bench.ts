@@ -1,3 +1,4 @@
+/*
 import lorem from "lorem-ipsum"
 import { assert } from "chai"
 import { describe, it, beforeEach, report } from "lightest"
@@ -129,3 +130,5 @@ describe("Benchmark", () => {
 
 assert.isOk(report.ok())
 logger.print(report.toString())
+
+*/

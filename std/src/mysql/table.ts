@@ -18,9 +18,9 @@ export declare class Model {
     static get(query: object): Model | null
     static list(query: object): Model[]
     static delete(query: object): number
-    static insert(row: object, options?: { upsert: boolean }): number
+    static insert(row: object): number
     static upsert(row: object): number
-    static batchInsert(rows: object[], options?: { upsert: boolean }): number[]
+    static batchInsert(rows: object[]): number[]
     static batchUpsert(rows: object[]): number[]
     static struct(json: object): Model
 }

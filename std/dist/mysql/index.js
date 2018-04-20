@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+require("../polyfill");
 var client_1 = require("./client");
 exports.Client = client_1.Client;
 var constant_1 = require("./constant");

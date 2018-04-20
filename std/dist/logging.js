@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+require("./polyfill");
 var chalk_1 = __importDefault(require("chalk"));
 var SimpleDateFormat = java.text.SimpleDateFormat;
 var SourceMapConsumerV3 = com.google.debugging.sourcemap.SourceMapConsumerV3;

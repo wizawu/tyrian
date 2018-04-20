@@ -1,5 +1,3 @@
-import "./polyfill"
-
 import Chalk from "chalk"
 
 const SimpleDateFormat = java.text.SimpleDateFormat

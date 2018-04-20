@@ -1,4 +1,3 @@
-import "./polyfill";
 export declare class Logger {
     static info(message: string): void;
     static warn(message: string): void;

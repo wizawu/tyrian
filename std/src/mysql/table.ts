@@ -11,10 +11,10 @@ export interface Options {
 export declare class Model {
     static readonly TABLE_NAME: string
     static setClient(client: Client): typeof Model
-    static ensureTable(options?: Options): void
-    static ensureIndex(columns: string[]): void
-    static ensureUniqueIndex(columns: string[]): void
-    static ensureFullTextIndex(columns: string[]): void
+    static ensureTable(options?: Options): typeof Model
+    static ensureIndex(columns: string[]): typeof Model
+    static ensureUniqueIndex(columns: string[]): typeof Model
+    static ensureFullTextIndex(columns: string[]): typeof Model
     static get(query: object): Model | null
     static list(query: object): Model[]
     static delete(query: object): number
@@ -69,18 +69,22 @@ export function Table(name: string): TableModel {
                     this.columns[key].type
                 )
             })
+            return this
         }
 
         static ensureIndex(columns: string[]) {
             this.client.ensureIndex(this.TABLE_NAME, columns)
+            return this
         }
 
         static ensureUniqueIndex(columns: string[]) {
             this.client.ensureUniqueIndex(this.TABLE_NAME, columns)
+            return this
         }
 
         static ensureFullTextIndex(columns: string[]) {
             this.client.ensureFullTextIndex(this.TABLE_NAME, columns)
+            return this
         }
 
         static get(query: object) {

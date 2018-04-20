@@ -32,15 +32,19 @@ function Table(name) {
             Object.keys(this.columns).forEach(function (key) {
                 _this.client.ensureColumn(_this.TABLE_NAME, key, _this.columns[key].type);
             });
+            return this;
         };
         __Model__.ensureIndex = function (columns) {
             this.client.ensureIndex(this.TABLE_NAME, columns);
+            return this;
         };
         __Model__.ensureUniqueIndex = function (columns) {
             this.client.ensureUniqueIndex(this.TABLE_NAME, columns);
+            return this;
         };
         __Model__.ensureFullTextIndex = function (columns) {
             this.client.ensureFullTextIndex(this.TABLE_NAME, columns);
+            return this;
         };
         __Model__.get = function (query) {
             var _a = this.queryToSQL("SELECT * FROM " + this.TABLE_NAME + " WHERE TRUE", query), sql = _a.sql, args = _a.args;

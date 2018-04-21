@@ -1,4 +1,5 @@
 import * as crypto from "crypto"
+import * as filesize from "filesize"
 import * as fs from "fs"
 import * as path from "path"
 import * as webpack from "webpack"
@@ -142,20 +143,31 @@ export default function (instdir: string, instmod: string, options: Options) {
         console.error(chalk.yellow("Generated tsconfig.json"))
     }
 
-    let statsOptions = {
-        colors: true,
-        chunks: false,
-        entrypoints: false,
-        modules: false,
+    const printStats = (stats: webpack.Stats) => {
+        console.log(stats.toString({
+            assets: false,
+            colors: true,
+            chunks: false,
+            entrypoints: false,
+            modules: false,
+        }))
+        stats.toJson().assets.forEach(asset => {
+            if (asset.emitted) {
+                let size = filesize(asset.size, { standard: "iec", round: 2 })
+                size = ("           " + size).slice(-11)
+                console.log(`${chalk.gray("[asset]")} ${size} ${chalk.yellow(asset.name)}`)
+            }
+        })
+        console.log()
     }
 
     if (options.watch) {
         getCompiler(instdir, instmod, options).watch({ poll: true }, (err, stats) => {
-            console.log(stats.toString(statsOptions))
+            printStats(stats)
         })
     } else {
         getCompiler(instdir, instmod, options).run((err, stats) => {
-            console.log(stats.toString(statsOptions))
+            printStats(stats)
             if (stats.hasErrors()) process.exit(EXIT_STATUS.WEBPACK_COMPILE_ERROR)
         })
     }

@@ -9,6 +9,7 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var crypto = require("crypto");
+var filesize = require("filesize");
 var fs = require("fs");
 var path = require("path");
 var webpack = require("webpack");
@@ -122,20 +123,31 @@ function default_1(instdir, instmod, options) {
         fs.writeFileSync("tsconfig.json", install_1.tsconfig(instdir));
         console.error(chalk_1.default.yellow("Generated tsconfig.json"));
     }
-    var statsOptions = {
-        colors: true,
-        chunks: false,
-        entrypoints: false,
-        modules: false,
+    var printStats = function (stats) {
+        console.log(stats.toString({
+            assets: false,
+            colors: true,
+            chunks: false,
+            entrypoints: false,
+            modules: false,
+        }));
+        stats.toJson().assets.forEach(function (asset) {
+            if (asset.emitted) {
+                var size = filesize(asset.size, { standard: "iec", round: 2 });
+                size = ("           " + size).slice(-11);
+                console.log(chalk_1.default.gray("[asset]") + " " + size + " " + chalk_1.default.yellow(asset.name));
+            }
+        });
+        console.log();
     };
     if (options.watch) {
         getCompiler(instdir, instmod, options).watch({ poll: true }, function (err, stats) {
-            console.log(stats.toString(statsOptions));
+            printStats(stats);
         });
     }
     else {
         getCompiler(instdir, instmod, options).run(function (err, stats) {
-            console.log(stats.toString(statsOptions));
+            printStats(stats);
             if (stats.hasErrors())
                 process.exit(const_1.EXIT_STATUS.WEBPACK_COMPILE_ERROR);
         });

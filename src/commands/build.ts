@@ -131,7 +131,7 @@ export default function (instdir: string, instmod: string, options: Options) {
         process.exit(EXIT_STATUS.CLI_INVALID_OUTFILE)
     }
     options.output.forEach(filename => {
-        if (fs.existsSync(filename) && fs.lstatSync(filename).isDirectory) {
+        if (fs.existsSync(filename) && fs.lstatSync(filename).isDirectory()) {
             console.error(chalk.red(filename + " is a directory"))
             process.exit(EXIT_STATUS.CLI_INVALID_OUTFILE)
         }

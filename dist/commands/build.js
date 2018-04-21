@@ -17,25 +17,13 @@ var const_1 = require("../const");
 var parseJAR_1 = require("../parser/parseJAR");
 var install_1 = require("./install");
 var autoprefixer = require("autoprefixer");
-function getCompiler(instdir, instmod, entries, options) {
+function getCompiler(instdir, instmod, options) {
     var context = process.cwd();
     var entry = {};
-    entries = entries.map(function (entry) { return "./" + path.relative("", entry); });
-    if (entries.length === 1 && options.outFile) {
-        entry[options.outFile] = entries[0];
-    }
-    else {
-        entries.forEach(function (file) {
-            if (/\.ts$/.test(file)) {
-                entry[path.basename(file, ".ts") + ".js"] = file;
-            }
-            else if (/\.tsx$/.test(file)) {
-                entry[path.basename(file, ".tsx") + ".js"] = file;
-            }
-            else {
-                throw "invalid entry suffix: " + file;
-            }
-        });
+    for (var i = 0; i < options.output.length; i++) {
+        var inFile = path.format({ dir: ".", name: path.relative("", options.input[i]) });
+        var outFile = path.relative("", options.output[i]);
+        entry[outFile] = inFile;
     }
     var cssLoaders = [{
             loader: "style-loader"
@@ -87,7 +75,7 @@ function getCompiler(instdir, instmod, entries, options) {
         resolveLoader: { modules: [instmod] },
         entry: entry,
         output: {
-            path: path.resolve(options.outDir),
+            path: path.resolve(""),
             filename: "[name]",
         },
         module: {
@@ -115,31 +103,21 @@ function getCompiler(instdir, instmod, entries, options) {
         optimization: __assign({ nodeEnv: options.watch ? "development" : "production", minimize: options.uglify }, webpackConfig.optimization)
     });
 }
-function default_1(instdir, instmod, entries, options) {
-    if (entries.length === 0) {
+function default_1(instdir, instmod, options) {
+    if (options.input.length === 0) {
         console.error(chalk_1.default.red("No entry to build"));
-        process.exit(const_1.EXIT_STATUS.BUILD_ENTRY_ERROR);
+        process.exit(const_1.EXIT_STATUS.CLI_INVALID_ENTRY);
     }
-    if (entries.some(function (entry) { return !/\.tsx?$/.test(entry); })) {
-        console.error(chalk_1.default.red("Entry suffix should be .ts or .tsx"));
-        process.exit(const_1.EXIT_STATUS.BUILD_ENTRY_ERROR);
+    if (options.input.length !== options.output.length) {
+        console.error(chalk_1.default.red("Missing build output option"));
+        process.exit(const_1.EXIT_STATUS.CLI_INVALID_OUTFILE);
     }
-    if (entries.length > 1 && options.outFile) {
-        console.error(chalk_1.default.red("Cannot use -o option if there are multiple entries"));
-        process.exit(const_1.EXIT_STATUS.BUILD_ENTRY_ERROR);
-    }
-    if (options.outFile && fs.existsSync(options.outFile)) {
-        if (!fs.lstatSync(options.outFile).isFile()) {
-            console.error(chalk_1.default.red(options.outFile + " is not a file"));
-            process.exit(const_1.EXIT_STATUS.BUILD_OUTFILE_ERROR);
+    options.output.forEach(function (filename) {
+        if (fs.existsSync(filename) && fs.lstatSync(filename).isDirectory()) {
+            console.error(chalk_1.default.red(filename + " is a directory"));
+            process.exit(const_1.EXIT_STATUS.CLI_INVALID_OUTFILE);
         }
-    }
-    if (options.outDir && fs.existsSync(options.outDir)) {
-        if (!fs.lstatSync(options.outDir).isDirectory()) {
-            console.error(chalk_1.default.red(options.outDir + " is not a directory"));
-            process.exit(const_1.EXIT_STATUS.BUILD_OUTDIR_ERROR);
-        }
-    }
+    });
     if (!fs.existsSync("tsconfig.json")) {
         fs.writeFileSync("tsconfig.json", install_1.tsconfig(instdir));
         console.error(chalk_1.default.yellow("Generated tsconfig.json"));
@@ -150,12 +128,12 @@ function default_1(instdir, instmod, entries, options) {
         modules: false,
     };
     if (options.watch) {
-        getCompiler(instdir, instmod, entries, options).watch({ poll: true }, function (err, stats) {
+        getCompiler(instdir, instmod, options).watch({ poll: true }, function (err, stats) {
             console.log(stats.toString(statsOptions));
         });
     }
     else {
-        getCompiler(instdir, instmod, entries, options).run(function (err, stats) {
+        getCompiler(instdir, instmod, options).run(function (err, stats) {
             console.log(stats.toString(statsOptions));
             if (stats.hasErrors())
                 process.exit(const_1.EXIT_STATUS.WEBPACK_COMPILE_ERROR);

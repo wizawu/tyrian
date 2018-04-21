@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var fs = require("fs");
 var path = require("path");
+var chalk_1 = require("chalk");
 var build_1 = require("./commands/build");
 var env_1 = require("./commands/env");
 var install_1 = require("./commands/install");
@@ -25,11 +26,14 @@ else if (command === "install") {
 }
 else if (command === "build" && process.argv[3]) {
     var options = {
+        input: [],
+        output: [],
         watch: false,
         uglify: false,
-        outDir: "./",
     };
-    var ok = false;
+    var outDir = "";
+    var _c = false;
+    var _o = false;
     for (var i = 3; i < process.argv.length; i++) {
         var arg = process.argv[i];
         if (arg === "-w") {
@@ -42,21 +46,52 @@ else if (command === "build" && process.argv[3]) {
             options.skipJDK = true;
         }
         else if (arg === "-c") {
-            options.outDir = process.argv[i + 1];
-            i += 1;
+            _c = true;
+            if (_c && _o) {
+                console.error(chalk_1.default.red("Cannot use -c and -o together"));
+                process.exit(const_1.EXIT_STATUS.CLI_INVALID_OPTION);
+            }
+            else if (process.argv[i + 1] === undefined) {
+                console.error(chalk_1.default.red("Undefined -c argument"));
+                process.exit(const_1.EXIT_STATUS.CLI_INVALID_OPTION);
+            }
+            else {
+                outDir = process.argv[i + 1];
+                i += 1;
+            }
         }
         else if (arg === "-o") {
-            options.outFile = process.argv[i + 1];
-            i += 1;
+            _o = true;
+            if (_c && _o) {
+                console.error(chalk_1.default.red("Cannot use -c and -o together"));
+                process.exit(const_1.EXIT_STATUS.CLI_INVALID_OPTION);
+            }
+            else if (process.argv[i + 1] === undefined) {
+                console.error(chalk_1.default.red("Undefined -o argument"));
+                process.exit(const_1.EXIT_STATUS.CLI_INVALID_OPTION);
+            }
+            else {
+                options.output.push(process.argv[i + 1]);
+                i += 1;
+            }
         }
         else {
-            ok = true;
-            build_1.default(instdir, instmod, process.argv.slice(i), options);
-            break;
+            options.input.push(arg);
+            if (!_o) {
+                if (arg.endsWith(".ts")) {
+                    options.output.push(path.join(outDir, path.basename(arg, ".ts") + ".js"));
+                }
+                else if (arg.endsWith(".tsx")) {
+                    options.output.push(path.join(outDir, path.basename(arg, ".tsx") + ".js"));
+                }
+                else {
+                    console.error(chalk_1.default.red("Entry suffix should be .ts or .tsx"));
+                    process.exit(const_1.EXIT_STATUS.CLI_INVALID_ENTRY);
+                }
+            }
         }
     }
-    if (!ok)
-        help_1.help(instdir, const_1.EXIT_STATUS.BAD_COMMAND);
+    build_1.default(instdir, instmod, options);
 }
 else if (command === "run" && process.argv[3]) {
     var watch = false;
@@ -76,5 +111,5 @@ else if (command === "run" && process.argv[3]) {
     }
 }
 else {
-    help_1.help(instdir, const_1.EXIT_STATUS.BAD_COMMAND);
+    help_1.help(instdir, const_1.EXIT_STATUS.CLI_BAD_COMMAND);
 }

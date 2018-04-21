@@ -144,6 +144,7 @@ export default function (instdir: string, instmod: string, options: Options) {
 
     let statsOptions = {
         colors: true,
+        chunks: false,
         entrypoints: false,
         modules: false,
     }

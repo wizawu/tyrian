@@ -124,6 +124,7 @@ function default_1(instdir, instmod, options) {
     }
     var statsOptions = {
         colors: true,
+        chunks: false,
         entrypoints: false,
         modules: false,
     };

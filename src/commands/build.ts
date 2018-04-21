@@ -11,29 +11,20 @@ import { tsconfig } from "./install"
 const autoprefixer = require("autoprefixer")
 
 export interface Options {
+    input: string[]
+    output: string[]
     watch: boolean
     uglify: boolean
-    outDir: string
-    outFile?: string
     skipJDK?: boolean
 }
 
-function getCompiler(instdir: string, instmod: string, entries: string[], options: Options) {
+function getCompiler(instdir: string, instmod: string, options: Options) {
     let context = process.cwd()
     let entry = {}
-    entries = entries.map(entry => "./" + path.relative("", entry))
-    if (entries.length === 1 && options.outFile) {
-        entry[options.outFile] = entries[0]
-    } else {
-        entries.forEach(file => {
-            if (/\.ts$/.test(file)) {
-                entry[path.basename(file, ".ts") + ".js"] = file
-            } else if (/\.tsx$/.test(file)) {
-                entry[path.basename(file, ".tsx") + ".js"] = file
-            } else {
-                throw `invalid entry suffix: ${file}`
-            }
-        })
+    for (let i = 0; i < options.output.length; i++) {
+        let inFile = path.format({ dir: ".", name: path.relative("", options.input[i]) })
+        let outFile = path.relative("", options.output[i])
+        entry[outFile] = inFile
     }
 
     // Support both CSS and Less
@@ -97,7 +88,7 @@ function getCompiler(instdir: string, instmod: string, entries: string[], option
         resolveLoader: { modules: [instmod] },
         entry: entry,
         output: {
-            path: path.resolve(options.outDir),
+            path: path.resolve(""),
             filename: "[name]",
         },
         module: {
@@ -130,31 +121,21 @@ function getCompiler(instdir: string, instmod: string, entries: string[], option
     })
 }
 
-export default function (instdir: string, instmod: string, entries: string[], options: Options) {
-    if (entries.length === 0) {
+export default function (instdir: string, instmod: string, options: Options) {
+    if (options.input.length === 0) {
         console.error(chalk.red("No entry to build"))
-        process.exit(EXIT_STATUS.BUILD_ENTRY_ERROR)
+        process.exit(EXIT_STATUS.CLI_INVALID_ENTRY)
     }
-    if (entries.some(entry => !/\.tsx?$/.test(entry))) {
-        console.error(chalk.red("Entry suffix should be .ts or .tsx"))
-        process.exit(EXIT_STATUS.BUILD_ENTRY_ERROR)
+    if (options.input.length !== options.output.length) {
+        console.error(chalk.red("Missing build output option"))
+        process.exit(EXIT_STATUS.CLI_INVALID_OUTFILE)
     }
-    if (entries.length > 1 && options.outFile) {
-        console.error(chalk.red("Cannot use -o option if there are multiple entries"))
-        process.exit(EXIT_STATUS.BUILD_ENTRY_ERROR)
-    }
-    if (options.outFile && fs.existsSync(options.outFile)) {
-        if (!fs.lstatSync(options.outFile).isFile()) {
-            console.error(chalk.red(`${options.outFile} is not a file`))
-            process.exit(EXIT_STATUS.BUILD_OUTFILE_ERROR)
+    options.output.forEach(filename => {
+        if (fs.existsSync(filename) && fs.lstatSync(filename).isDirectory) {
+            console.error(chalk.red(filename + " is a directory"))
+            process.exit(EXIT_STATUS.CLI_INVALID_OUTFILE)
         }
-    }
-    if (options.outDir && fs.existsSync(options.outDir)) {
-        if (!fs.lstatSync(options.outDir).isDirectory()) {
-            console.error(chalk.red(`${options.outDir} is not a directory`))
-            process.exit(EXIT_STATUS.BUILD_OUTDIR_ERROR)
-        }
-    }
+    })
 
     if (!fs.existsSync("tsconfig.json")) {
         fs.writeFileSync("tsconfig.json", tsconfig(instdir))
@@ -168,11 +149,11 @@ export default function (instdir: string, instmod: string, entries: string[], op
     }
 
     if (options.watch) {
-        getCompiler(instdir, instmod, entries, options).watch({ poll: true }, (err, stats) => {
+        getCompiler(instdir, instmod, options).watch({ poll: true }, (err, stats) => {
             console.log(stats.toString(statsOptions))
         })
     } else {
-        getCompiler(instdir, instmod, entries, options).run((err, stats) => {
+        getCompiler(instdir, instmod, options).run((err, stats) => {
             console.log(stats.toString(statsOptions))
             if (stats.hasErrors()) process.exit(EXIT_STATUS.WEBPACK_COMPILE_ERROR)
         })

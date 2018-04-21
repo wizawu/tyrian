@@ -14,20 +14,27 @@ Usage:
   1c version                            print the version number
   1c env                                check all prerequisites of 1c
   1c install                            install dependencies in package.json
-  1c build [options] <entry>...         build one/multiple entries (.ts/.tsx)
+  1c build [options] <output/entry>...  build one/multiple entries (.ts/.tsx)
   1c run [-w] [jjs options] <output>    run an output file (.js)
 
 build options:
-  -c <dir>          output build result in <dir>
-  -o <file>         output build result to <file>
-  --skipJDK         skip JDK definition checking
-  -u                uglify build result
-  -w                watch changes and re-build
+  --skipJDK             skip JDK definition checking
+  -u                    uglify build results
+  -w                    watch changes and re-build
+
+build output/entry:
+  -c <dir> <entry>...   output build results to a directory
+  -o <file> <entry>     output to a specific file (CANNOT be used with -c)
+
+  # examples #
+  input1.ts input2.tsx                  -> ./input1.js ./input2.js
+  -c dir1 input1.ts -c dir2 input2.tsx  -> dir1/input1.js dir2/input2.js
+  -o dir/output input.ts                -> dir/output
 
 run options:
-  -w                watch changes and re-run
-  jjs options       check out 'jjs -h' (must be after -w if used)
-                    e.g. -J-Xms64m -J-Xmx256m -Dfile.encoding=UTF-8
+  -w                    watch changes and re-run
+  jjs options           check out 'jjs -h' (must be AFTER -w if used)
+                        e.g. -J-Xms64m -J-Xmx256m -Dfile.encoding=UTF-8
     `.trim())
     console.log()
     process.exit(status)

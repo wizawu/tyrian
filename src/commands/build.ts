@@ -154,8 +154,8 @@ export default function (instdir: string, instmod: string, options: Options) {
         stats.toJson().assets.forEach(asset => {
             if (asset.emitted) {
                 let size = filesize(asset.size, { standard: "iec", round: 2 })
-                size = ("           " + size).slice(-11)
-                console.log(`${chalk.gray("[asset]")} ${size} ${chalk.yellow(asset.name)}`)
+                size = ("           " + size).slice(-10)
+                console.log(`${chalk.gray("[emit]")} ${size} ${chalk.yellow(asset.name)}`)
             }
         })
         console.log()

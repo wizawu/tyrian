@@ -134,8 +134,8 @@ function default_1(instdir, instmod, options) {
         stats.toJson().assets.forEach(function (asset) {
             if (asset.emitted) {
                 var size = filesize(asset.size, { standard: "iec", round: 2 });
-                size = ("           " + size).slice(-11);
-                console.log(chalk_1.default.gray("[asset]") + " " + size + " " + chalk_1.default.yellow(asset.name));
+                size = ("           " + size).slice(-10);
+                console.log(chalk_1.default.gray("[emit]") + " " + size + " " + chalk_1.default.yellow(asset.name));
             }
         });
         console.log();

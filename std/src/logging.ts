@@ -5,8 +5,7 @@ const SourceMapConsumerV3 = com.google.debugging.sourcemap.SourceMapConsumerV3
 const StandardCharsets = java.nio.charset.StandardCharsets
 const { Files, Paths } = java.nio.file
 
-const chalk = new Chalk.constructor({ enabled: true })
-const sourceMapConsumer = getSourceMapConsumer()
+export const Color = new Chalk.constructor({ enabled: true })
 
 function getSourceMapConsumer() {
     let consumer = new SourceMapConsumerV3()
@@ -30,6 +29,8 @@ function getCallerSource() {
     return [stack.getFileName(), stack.getLineNumber()]
 }
 
+const sourceMapConsumer = getSourceMapConsumer()
+
 function print(message: string, fd: 1 | 2, level: string, stack: any[]) {
     let fileName = stack[0]
     let lineNumber = stack[1]
@@ -41,7 +42,7 @@ function print(message: string, fd: 1 | 2, level: string, stack: any[]) {
     fileName = fileName.split(/[\/\\]/).reverse()[0]
 
     let time = (new SimpleDateFormat("yyyy/MM/dd HH:mm:ss") as any).format(new java.util.Date())
-    let line = `${level} ${time} ${chalk.gray(fileName + ":" + lineNumber + ":")} ${message}`
+    let line = `${level} ${time} ${Color.gray(fileName + ":" + lineNumber + ":")} ${message}`
     if (fd === 1) {
         java.lang.System.out.println(line)
     } else {
@@ -52,16 +53,16 @@ function print(message: string, fd: 1 | 2, level: string, stack: any[]) {
 export class Logger {
     static info(message: string) {
         let stack = getCallerSource()
-        print(message, 1, chalk.blue("[INFO]"), stack)
+        print(message, 1, Color.blue("[INFO]"), stack)
     }
 
     static warn(message: string) {
         let stack = getCallerSource()
-        print(message, 2, chalk.yellow("[WARN]"), stack)
+        print(message, 2, Color.yellow("[WARN]"), stack)
     }
 
     static error(message: string) {
         let stack = getCallerSource()
-        print(message, 2, chalk.red("[ERRO]"), stack)
+        print(message, 2, Color.red("[ERRO]"), stack)
     }
 }

@@ -10,5 +10,6 @@ before_script:
   - jdk_switcher use openjdk8
 script:
   - npm install -g typescript
+  - npm install
   - make types
   - make test

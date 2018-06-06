@@ -1,13 +1,13 @@
 {
   "name": "1c",
-  "version": "8.13.0",
+  "version": "8.13.1",
   "repository": "github:wizawu/1c",
   "bin": "./bin/1c",
   "dependencies": {
     "@types/filesize": "^3.6.0",
     "@types/node": "^9.6.20",
     "@types/object-path": "^0.9.29",
-    "@types/webpack": "^4.4.0",
+    "@types/webpack": "^4.1.7",
     "autoprefixer": "^8.6.0",
     "chalk": "^2.4.1",
     "css-loader": "^0.28.9",
@@ -21,6 +21,6 @@
     "ts-loader": "^4.3.1",
     "typescript": "^2.9.1",
     "url-loader": "^1.0.1",
-    "webpack": "^4.11.0"
+    "webpack": "^4.5.0"
   }
 }

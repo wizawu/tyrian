@@ -26,7 +26,7 @@ build output/entry:
   -c <dir> <entry>...   output build results to a directory
   -o <file> <entry>     output to a specific file (CANNOT be used with -c)
 
-  # examples #
+  # Examples #
   input1.ts input2.tsx                  -> ./input1.js ./input2.js
   -c dir1 input1.ts -c dir2 input2.tsx  -> dir1/input1.js dir2/input2.js
   -o dir/output input.ts                -> dir/output

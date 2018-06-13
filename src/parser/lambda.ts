@@ -7,5 +7,6 @@ try {
 }
 
 export function addLambda(key: string) {
+    if (key === "java.lang.Class") return
     isLambda[key] = true
 }

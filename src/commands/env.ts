@@ -33,7 +33,7 @@ export default function () {
 
     // jjs
     child = spawnSync("jjs", ["-fv"], { ...{ input: "quit()" }, ...options })
-    output += "jjs -> " + notFound(child.stdout, child.stderr).replace(/jjs>\s+/, "")
+    output += "jjs   -> " + notFound(child.stdout, child.stderr).replace(/jjs>\s+/, "")
     if (child.status !== 0) ok = false
 
     // javap
@@ -43,7 +43,7 @@ export default function () {
 
     // jar
     child = spawnSync("which", ["jar"], options)
-    output += "jar -> " + notFound(child.stdout, child.stderr)
+    output += "jar   -> " + notFound(child.stdout, child.stderr)
     if (child.status !== 0) ok = false
 
     // gradle

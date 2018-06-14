@@ -35,7 +35,7 @@ function default_1() {
     if (child.status !== 0)
         ok = false;
     child = child_process_1.spawnSync("jjs", ["-fv"], __assign({ input: "quit()" }, options));
-    output += "jjs -> " + notFound(child.stdout, child.stderr).replace(/jjs>\s+/, "");
+    output += "jjs   -> " + notFound(child.stdout, child.stderr).replace(/jjs>\s+/, "");
     if (child.status !== 0)
         ok = false;
     child = child_process_1.spawnSync("which", ["javap"], options);
@@ -43,7 +43,7 @@ function default_1() {
     if (child.status !== 0)
         ok = false;
     child = child_process_1.spawnSync("which", ["jar"], options);
-    output += "jar -> " + notFound(child.stdout, child.stderr);
+    output += "jar   -> " + notFound(child.stdout, child.stderr);
     if (child.status !== 0)
         ok = false;
     child = child_process_1.spawnSync("gradle", ["-version"], options);

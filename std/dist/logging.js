@@ -23,7 +23,12 @@ function getSourceMapConsumer() {
     }
 }
 function getCallerSource() {
-    var stack = java.lang.Thread.currentThread().getStackTrace()[3];
+    var stack;
+    for (var i = 0; true; i++) {
+        stack = java.lang.Thread.currentThread().getStackTrace()[i];
+        if (stack.getClassName().startsWith("jdk.nashorn.internal.scripts.Script$"))
+            break;
+    }
     return [stack.getFileName(), stack.getLineNumber()];
 }
 var sourceMapConsumer = getSourceMapConsumer();

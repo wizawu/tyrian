@@ -21,11 +21,11 @@ function getSourceMapConsumer() {
 }
 
 function getCallerSource() {
-    // stack 0: java thread
-    // stack 1: here
-    // stack 2: info/warn/error
-    // stack 3: caller
-    const stack = java.lang.Thread.currentThread().getStackTrace()[3]
+    let stack: java.lang.StackTraceElement
+    for (let i = 0; true; i++) {
+        stack = java.lang.Thread.currentThread().getStackTrace()[i]
+        if (stack.getClassName().startsWith("jdk.nashorn.internal.scripts.Script$")) break
+    }
     return [stack.getFileName(), stack.getLineNumber()]
 }
 

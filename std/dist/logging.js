@@ -23,13 +23,14 @@ function getSourceMapConsumer() {
     }
 }
 function getCallerSource() {
-    var stack;
-    for (var i = 0; true; i++) {
-        stack = java.lang.Thread.currentThread().getStackTrace()[i];
-        if (stack.getClassName().startsWith("jdk.nashorn.internal.scripts.Script$"))
-            break;
+    var stacks = java.lang.Thread.currentThread().getStackTrace();
+    var scripts = [];
+    for (var i = 0; i < stacks.length; i++) {
+        if (stacks[i].getClassName().startsWith("jdk.nashorn.internal.scripts.Script$")) {
+            scripts.push(stacks[i]);
+        }
     }
-    return [stack.getFileName(), stack.getLineNumber()];
+    return [scripts[2].getFileName(), scripts[2].getLineNumber()];
 }
 var sourceMapConsumer = getSourceMapConsumer();
 function print(message, fd, level, stack) {

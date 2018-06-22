@@ -28,9 +28,9 @@ function getCallerSource() {
             scripts.push(stacks[i])
         }
     }
-    // stack 0: here
-    // stack 1: info/warn/error
-    // stack 2: caller
+    // scripts[0]: here
+    // scripts[1]: info/warn/error
+    // scripts[2]: caller
     return [scripts[2].getFileName(), scripts[2].getLineNumber()]
 }
 

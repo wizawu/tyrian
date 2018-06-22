@@ -20,7 +20,7 @@ function default_1() {
     var output = "";
     var options = { stdio: "pipe" };
     var child = child_process_1.spawnSync("node", ["-v"], options);
-    output += header("node", "https://nodejs.org/en/download/");
+    output += header("node", "https://nodejs.org/en/download");
     output += notFound(child.stdout, child.stderr);
     if (child.status !== 0)
         ok = false;
@@ -30,20 +30,20 @@ function default_1() {
     if (child.status !== 0)
         ok = false;
     child = child_process_1.spawnSync("java", ["-version"], options);
-    output += header("java", "http://openjdk.java.net/install/");
+    output += header("java", "http://openjdk.java.net/install");
     output += notFound(child.stdout, child.stderr);
     if (child.status !== 0)
         ok = false;
     child = child_process_1.spawnSync("jjs", ["-fv"], __assign({ input: "quit()" }, options));
-    output += "jjs   -> " + notFound(child.stdout, child.stderr).replace(/jjs>\s+/, "");
+    output += "jjs      - " + notFound(child.stdout, child.stderr).replace(/jjs>\s+/, "");
     if (child.status !== 0)
         ok = false;
     child = child_process_1.spawnSync("which", ["javap"], options);
-    output += "javap -> " + notFound(child.stdout, child.stderr);
+    output += "javap    - " + notFound(child.stdout, child.stderr);
     if (child.status !== 0)
         ok = false;
     child = child_process_1.spawnSync("which", ["jar"], options);
-    output += "jar   -> " + notFound(child.stdout, child.stderr);
+    output += "jar      - " + notFound(child.stdout, child.stderr);
     if (child.status !== 0)
         ok = false;
     child = child_process_1.spawnSync("gradle", ["-version"], options);
@@ -52,11 +52,11 @@ function default_1() {
     if (child.status !== 0)
         ok = false;
     if (!ok) {
-        console.log(output);
+        console.log("\n" + output.trim() + "\n");
         process.exit(const_1.EXIT_STATUS.BROKEN_ENV);
     }
     else {
-        return output;
+        return "\n" + output.trim() + "\n";
     }
 }
 exports.default = default_1;

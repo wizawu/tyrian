@@ -15,7 +15,7 @@ export default function () {
 
     // node
     let child = spawnSync("node", ["-v"], options)
-    output += header("node", "https://nodejs.org/en/download/")
+    output += header("node", "https://nodejs.org/en/download")
     output += notFound(child.stdout, child.stderr)
     if (child.status !== 0) ok = false
 
@@ -27,23 +27,23 @@ export default function () {
 
     // java
     child = spawnSync("java", ["-version"], options)
-    output += header("java", "http://openjdk.java.net/install/")
+    output += header("java", "http://openjdk.java.net/install")
     output += notFound(child.stdout, child.stderr)
     if (child.status !== 0) ok = false
 
     // jjs
     child = spawnSync("jjs", ["-fv"], { ...{ input: "quit()" }, ...options })
-    output += "jjs   -> " + notFound(child.stdout, child.stderr).replace(/jjs>\s+/, "")
+    output += "jjs      - " + notFound(child.stdout, child.stderr).replace(/jjs>\s+/, "")
     if (child.status !== 0) ok = false
 
     // javap
     child = spawnSync("which", ["javap"], options)
-    output += "javap -> " + notFound(child.stdout, child.stderr)
+    output += "javap    - " + notFound(child.stdout, child.stderr)
     if (child.status !== 0) ok = false
 
     // jar
     child = spawnSync("which", ["jar"], options)
-    output += "jar   -> " + notFound(child.stdout, child.stderr)
+    output += "jar      - " + notFound(child.stdout, child.stderr)
     if (child.status !== 0) ok = false
 
     // gradle
@@ -53,9 +53,9 @@ export default function () {
     if (child.status !== 0) ok = false
 
     if (!ok) {
-        console.log(output)
+        console.log("\n" + output.trim() + "\n")
         process.exit(EXIT_STATUS.BROKEN_ENV)
     } else {
-        return output
+        return "\n" + output.trim() + "\n"
     }
 }

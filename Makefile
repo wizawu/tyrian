@@ -9,6 +9,7 @@ watch:
 	tsc ${FLAGS} -w src/main.ts
 
 types: build
+	./build-jars.sh
 	\@types/build.sh
 
 test: build

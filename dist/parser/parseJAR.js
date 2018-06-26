@@ -41,7 +41,8 @@ function parsePackage(pkg, level) {
 }
 function parseJAR(jar) {
     var classes = commandOutput("jar", ["tf", jar]).split("\n");
-    classes = classes.filter(function (c) { return /\.java$/.test(c); }).map(function (c) { return c.replace(/\//g, ".").replace(/\.java$/, ""); });
+    classes = classes.filter(function (c) { return /\.(class|java)$/.test(c); })
+        .map(function (c) { return c.replace(/\//g, ".").replace(/\.(class|java)$/, ""); });
     console.log(chalk_1.default.gray("Disassembling " + jar + ": " + classes.length + " classes"));
     var pkg = {};
     for (var i = 0; i < classes.length; i += 2000) {

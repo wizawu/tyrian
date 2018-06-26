@@ -42,7 +42,8 @@ function parsePackage(pkg: any, level: number): string {
 
 function parseJAR(jar: string): string {
     let classes = commandOutput("jar", ["tf", jar]).split("\n")
-    classes = classes.filter(c => /\.java$/.test(c)).map(c => c.replace(/\//g, ".").replace(/\.java$/, ""))
+    classes = classes.filter(c => /\.(class|java)$/.test(c))
+        .map(c => c.replace(/\//g, ".").replace(/\.(class|java)$/, ""))
     console.log(chalk.gray(`Disassembling ${jar}: ${classes.length} classes`))
 
     let pkg = {}

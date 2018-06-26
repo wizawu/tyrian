@@ -41,11 +41,12 @@ function parsePackage(pkg, level) {
 }
 function parseJAR(jar) {
     var classes = commandOutput("jar", ["tf", jar]).split("\n");
-    classes = classes.filter(function (c) { return /\.class$/.test(c); }).map(function (c) { return c.replace(/\//g, ".").replace(/\.class$/, ""); });
+    classes = classes.filter(function (c) { return /\.java$/.test(c); }).map(function (c) { return c.replace(/\//g, ".").replace(/\.java$/, ""); });
     console.log(chalk_1.default.gray("Disassembling " + jar + ": " + classes.length + " classes"));
     var pkg = {};
     for (var i = 0; i < classes.length; i += 2000) {
         var javaCode = commandOutput("javap", ["-protected", "-cp", jar].concat(classes.slice(i, i + 2000)));
+        javaCode = javaCode.replace(/Compiled from "\w+.java\n"/g, "");
         parseClass_1.default(javaCode, pkg);
     }
     return parsePackage(pkg, 0);

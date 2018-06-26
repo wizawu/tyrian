@@ -12,7 +12,7 @@ touch $dir/../dist/parser/isLambda.js
 
 cd $dir/jdk
 
-jars=$(find $dir/../jars/openjdk -name "*.jar")
+jars=$(ls $dir/../jars/openjdk/*.jar)
 
 node -e "require('$dir/../dist/parser/parseJAR').generateJDKDefinition('$dir/..')" $jars
 

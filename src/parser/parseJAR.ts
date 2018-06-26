@@ -42,12 +42,13 @@ function parsePackage(pkg: any, level: number): string {
 
 function parseJAR(jar: string): string {
     let classes = commandOutput("jar", ["tf", jar]).split("\n")
-    classes = classes.filter(c => /\.class$/.test(c)).map(c => c.replace(/\//g, ".").replace(/\.class$/, ""))
+    classes = classes.filter(c => /\.java$/.test(c)).map(c => c.replace(/\//g, ".").replace(/\.java$/, ""))
     console.log(chalk.gray(`Disassembling ${jar}: ${classes.length} classes`))
 
     let pkg = {}
     for (let i = 0; i < classes.length; i += 2000) {
         let javaCode = commandOutput("javap", ["-protected", "-cp", jar].concat(classes.slice(i, i + 2000)))
+        javaCode = javaCode.replace(/Compiled from "\w+.java\n"/g, "")
         parseClass(javaCode, pkg)
     }
 

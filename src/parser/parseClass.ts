@@ -238,7 +238,7 @@ export default function (source: string, pkg: any) {
                     let ns = item.name.substring(0, item.name.length - className.length - 1)
                     ensureExists(pkg, ns, {})
                     if (ns === "java.lang" && className === "Object") {
-                        get(pkg, ns)[className] = "type Object = any"
+                        get(pkg, ns)[className] = "type Object = any\n"
                     } else {
                         if ((isInterface && buffer.length === 3 &&      // Can be interface
                             buffer[1].line.indexOf("(") > 0 &&          // with only 1 method

@@ -256,7 +256,7 @@ function default_1(source, pkg) {
                     var ns = item.name.substring(0, item.name.length - className.length - 1);
                     object_path_1.ensureExists(pkg, ns, {});
                     if (ns === "java.lang" && className === "Object") {
-                        object_path_1.get(pkg, ns)[className] = "type Object = any";
+                        object_path_1.get(pkg, ns)[className] = "type Object = any\n";
                     }
                     else {
                         if ((isInterface && buffer.length === 3 &&

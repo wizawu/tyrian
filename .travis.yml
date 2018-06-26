@@ -11,5 +11,4 @@ before_script:
 script:
   - npm install -g typescript
   - npm install
-  - make types
   - make test

@@ -3,7 +3,9 @@ Changelog
 
 ### Roadmap
 
-* Upgrade to Java 10 and turn version up to 10.x.x
+* Version 10
+* OpenJDK 10 with OpenJ9
+* Gradle 4.8
 
 ### 8.14.0
 

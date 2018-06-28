@@ -100,9 +100,6 @@ function getCompiler(instdir: string, instmod: string, options: Options) {
                     options: { configFile: tsconfigFile },
                 }]
             }, {
-                test: /\.json$/,
-                loader: "json-loader",
-            }, {
                 test: /^[^!]+\.css$/,
                 use: cssLoaders,
             }, {

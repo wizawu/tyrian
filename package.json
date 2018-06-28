@@ -1,6 +1,6 @@
 {
   "name": "1c",
-  "version": "8.14.3",
+  "version": "8.14.4",
   "repository": "github:wizawu/1c",
   "bin": "./bin/1c",
   "dependencies": {
@@ -12,7 +12,6 @@
     "chalk": "^2.4.1",
     "css-loader": "^0.28.9",
     "filesize": "^3.6.1",
-    "json-loader": "^0.5.7",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
     "object-path": "^0.11.4",

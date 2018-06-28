@@ -87,9 +87,6 @@ function getCompiler(instdir, instmod, options) {
                             options: { configFile: tsconfigFile },
                         }]
                 }, {
-                    test: /\.json$/,
-                    loader: "json-loader",
-                }, {
                     test: /^[^!]+\.css$/,
                     use: cssLoaders,
                 }, {

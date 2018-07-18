@@ -5,14 +5,86 @@ declare namespace com {
                 namespace xml {
                     namespace internal {
                         namespace security {
-                            class Init {
-                                public static CONF_NS: string
-                                public constructor()
-                                public static isInitialized(): boolean
-                                public static init(): void
-                                public static class: java.lang.Class<any>
-                            }
                             namespace algorithms {
+                                namespace implementations {
+                                    abstract class IntegrityHmac extends com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithmSpi {
+                                        public engineGetURI(): string
+                                        public constructor()
+                                        protected engineSetParameter(arg0: java.security.spec.AlgorithmParameterSpec): void
+                                        public reset(): void
+                                        protected engineVerify(arg0: byte[]): boolean
+                                        protected engineInitVerify(arg0: java.security.Key): void
+                                        protected engineSign(): byte[]
+                                        protected engineInitSign(arg0: java.security.Key): void
+                                        protected engineInitSign(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
+                                        protected engineInitSign(arg0: java.security.Key, arg1: java.security.SecureRandom): void
+                                        protected engineUpdate(arg0: byte[]): void
+                                        protected engineUpdate(arg0: byte): void
+                                        protected engineUpdate(arg0: byte[], arg1: int, arg2: int): void
+                                        protected engineGetJCEAlgorithmString(): string
+                                        protected engineGetJCEProviderName(): string
+                                        protected engineSetHMACOutputLength(arg0: int): void
+                                        protected engineGetContextFromElement(arg0: org.w3c.dom.Element): void
+                                        public engineAddContextToElement(arg0: org.w3c.dom.Element): void
+                                        public static class: java.lang.Class<any>
+                                    }
+                                    abstract class SignatureBaseRSA extends com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithmSpi {
+                                        public engineGetURI(): string
+                                        public constructor()
+                                        protected engineSetParameter(arg0: java.security.spec.AlgorithmParameterSpec): void
+                                        protected engineVerify(arg0: byte[]): boolean
+                                        protected engineInitVerify(arg0: java.security.Key): void
+                                        protected engineSign(): byte[]
+                                        protected engineInitSign(arg0: java.security.Key, arg1: java.security.SecureRandom): void
+                                        protected engineInitSign(arg0: java.security.Key): void
+                                        protected engineUpdate(arg0: byte[]): void
+                                        protected engineUpdate(arg0: byte): void
+                                        protected engineUpdate(arg0: byte[], arg1: int, arg2: int): void
+                                        protected engineGetJCEAlgorithmString(): string
+                                        protected engineGetJCEProviderName(): string
+                                        protected engineSetHMACOutputLength(arg0: int): void
+                                        protected engineInitSign(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
+                                        public static class: java.lang.Class<any>
+                                    }
+                                    class SignatureDSA extends com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithmSpi {
+                                        protected engineGetURI(): string
+                                        public constructor()
+                                        protected engineSetParameter(arg0: java.security.spec.AlgorithmParameterSpec): void
+                                        protected engineVerify(arg0: byte[]): boolean
+                                        protected engineInitVerify(arg0: java.security.Key): void
+                                        protected engineSign(): byte[]
+                                        protected engineInitSign(arg0: java.security.Key, arg1: java.security.SecureRandom): void
+                                        protected engineInitSign(arg0: java.security.Key): void
+                                        protected engineUpdate(arg0: byte[]): void
+                                        protected engineUpdate(arg0: byte): void
+                                        protected engineUpdate(arg0: byte[], arg1: int, arg2: int): void
+                                        protected engineGetJCEAlgorithmString(): string
+                                        protected engineGetJCEProviderName(): string
+                                        protected engineSetHMACOutputLength(arg0: int): void
+                                        protected engineInitSign(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
+                                        public static class: java.lang.Class<any>
+                                    }
+                                    abstract class SignatureECDSA extends com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithmSpi {
+                                        public engineGetURI(): string
+                                        public static convertASN1toXMLDSIG(arg0: byte[]): byte[]
+                                        public static convertXMLDSIGtoASN1(arg0: byte[]): byte[]
+                                        public constructor()
+                                        protected engineSetParameter(arg0: java.security.spec.AlgorithmParameterSpec): void
+                                        protected engineVerify(arg0: byte[]): boolean
+                                        protected engineInitVerify(arg0: java.security.Key): void
+                                        protected engineSign(): byte[]
+                                        protected engineInitSign(arg0: java.security.Key, arg1: java.security.SecureRandom): void
+                                        protected engineInitSign(arg0: java.security.Key): void
+                                        protected engineUpdate(arg0: byte[]): void
+                                        protected engineUpdate(arg0: byte): void
+                                        protected engineUpdate(arg0: byte[], arg1: int, arg2: int): void
+                                        protected engineGetJCEAlgorithmString(): string
+                                        protected engineGetJCEProviderName(): string
+                                        protected engineSetHMACOutputLength(arg0: int): void
+                                        protected engineInitSign(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
+                                        public static class: java.lang.Class<any>
+                                    }
+                                }
                                 abstract class Algorithm extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy {
                                     public constructor(arg0: org.w3c.dom.Document, arg1: java.lang.String | string)
                                     public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
@@ -104,146 +176,8 @@ declare namespace com {
                                     public reset(): void
                                     public static class: java.lang.Class<any>
                                 }
-                                namespace implementations {
-                                    abstract class IntegrityHmac extends com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithmSpi {
-                                        public engineGetURI(): string
-                                        public constructor()
-                                        protected engineSetParameter(arg0: java.security.spec.AlgorithmParameterSpec): void
-                                        public reset(): void
-                                        protected engineVerify(arg0: byte[]): boolean
-                                        protected engineInitVerify(arg0: java.security.Key): void
-                                        protected engineSign(): byte[]
-                                        protected engineInitSign(arg0: java.security.Key): void
-                                        protected engineInitSign(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
-                                        protected engineInitSign(arg0: java.security.Key, arg1: java.security.SecureRandom): void
-                                        protected engineUpdate(arg0: byte[]): void
-                                        protected engineUpdate(arg0: byte): void
-                                        protected engineUpdate(arg0: byte[], arg1: int, arg2: int): void
-                                        protected engineGetJCEAlgorithmString(): string
-                                        protected engineGetJCEProviderName(): string
-                                        protected engineSetHMACOutputLength(arg0: int): void
-                                        protected engineGetContextFromElement(arg0: org.w3c.dom.Element): void
-                                        public engineAddContextToElement(arg0: org.w3c.dom.Element): void
-                                        public static class: java.lang.Class<any>
-                                    }
-                                    abstract class SignatureBaseRSA extends com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithmSpi {
-                                        public engineGetURI(): string
-                                        public constructor()
-                                        protected engineSetParameter(arg0: java.security.spec.AlgorithmParameterSpec): void
-                                        protected engineVerify(arg0: byte[]): boolean
-                                        protected engineInitVerify(arg0: java.security.Key): void
-                                        protected engineSign(): byte[]
-                                        protected engineInitSign(arg0: java.security.Key, arg1: java.security.SecureRandom): void
-                                        protected engineInitSign(arg0: java.security.Key): void
-                                        protected engineUpdate(arg0: byte[]): void
-                                        protected engineUpdate(arg0: byte): void
-                                        protected engineUpdate(arg0: byte[], arg1: int, arg2: int): void
-                                        protected engineGetJCEAlgorithmString(): string
-                                        protected engineGetJCEProviderName(): string
-                                        protected engineSetHMACOutputLength(arg0: int): void
-                                        protected engineInitSign(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
-                                        public static class: java.lang.Class<any>
-                                    }
-                                    class SignatureDSA extends com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithmSpi {
-                                        protected engineGetURI(): string
-                                        public constructor()
-                                        protected engineSetParameter(arg0: java.security.spec.AlgorithmParameterSpec): void
-                                        protected engineVerify(arg0: byte[]): boolean
-                                        protected engineInitVerify(arg0: java.security.Key): void
-                                        protected engineSign(): byte[]
-                                        protected engineInitSign(arg0: java.security.Key, arg1: java.security.SecureRandom): void
-                                        protected engineInitSign(arg0: java.security.Key): void
-                                        protected engineUpdate(arg0: byte[]): void
-                                        protected engineUpdate(arg0: byte): void
-                                        protected engineUpdate(arg0: byte[], arg1: int, arg2: int): void
-                                        protected engineGetJCEAlgorithmString(): string
-                                        protected engineGetJCEProviderName(): string
-                                        protected engineSetHMACOutputLength(arg0: int): void
-                                        protected engineInitSign(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
-                                        public static class: java.lang.Class<any>
-                                    }
-                                    abstract class SignatureECDSA extends com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithmSpi {
-                                        public engineGetURI(): string
-                                        public static convertASN1toXMLDSIG(arg0: byte[]): byte[]
-                                        public static convertXMLDSIGtoASN1(arg0: byte[]): byte[]
-                                        public constructor()
-                                        protected engineSetParameter(arg0: java.security.spec.AlgorithmParameterSpec): void
-                                        protected engineVerify(arg0: byte[]): boolean
-                                        protected engineInitVerify(arg0: java.security.Key): void
-                                        protected engineSign(): byte[]
-                                        protected engineInitSign(arg0: java.security.Key, arg1: java.security.SecureRandom): void
-                                        protected engineInitSign(arg0: java.security.Key): void
-                                        protected engineUpdate(arg0: byte[]): void
-                                        protected engineUpdate(arg0: byte): void
-                                        protected engineUpdate(arg0: byte[], arg1: int, arg2: int): void
-                                        protected engineGetJCEAlgorithmString(): string
-                                        protected engineGetJCEProviderName(): string
-                                        protected engineSetHMACOutputLength(arg0: int): void
-                                        protected engineInitSign(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
-                                        public static class: java.lang.Class<any>
-                                    }
-                                }
                             }
                             namespace c14n {
-                                class CanonicalizationException extends com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException {
-                                    public constructor()
-                                    public constructor(arg0: java.lang.String | string)
-                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[])
-                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
-                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.Exception)
-                                    public static class: java.lang.Class<any>
-                                }
-                                class Canonicalizer {
-                                    public static ENCODING: string
-                                    public static XPATH_C14N_WITH_COMMENTS_SINGLE_NODE: string
-                                    public static ALGO_ID_C14N_OMIT_COMMENTS: string
-                                    public static ALGO_ID_C14N_WITH_COMMENTS: string
-                                    public static ALGO_ID_C14N_EXCL_OMIT_COMMENTS: string
-                                    public static ALGO_ID_C14N_EXCL_WITH_COMMENTS: string
-                                    public static ALGO_ID_C14N11_OMIT_COMMENTS: string
-                                    public static ALGO_ID_C14N11_WITH_COMMENTS: string
-                                    public static ALGO_ID_C14N_PHYSICAL: string
-                                    public static getInstance(arg0: java.lang.String | string): com.sun.org.apache.xml.internal.security.c14n.Canonicalizer
-                                    public static register(arg0: java.lang.String | string, arg1: java.lang.String | string): void
-                                    public static register(arg0: java.lang.String | string, arg1: java.lang.Class<com.sun.org.apache.xml.internal.security.c14n.CanonicalizerSpi>): void
-                                    public static registerDefaultAlgorithms(): void
-                                    public getURI(): string
-                                    public getIncludeComments(): boolean
-                                    public canonicalize(arg0: byte[]): byte[]
-                                    public canonicalizeSubtree(arg0: org.w3c.dom.Node): byte[]
-                                    public canonicalizeSubtree(arg0: org.w3c.dom.Node, arg1: java.lang.String | string): byte[]
-                                    public canonicalizeXPathNodeSet(arg0: org.w3c.dom.NodeList): byte[]
-                                    public canonicalizeXPathNodeSet(arg0: org.w3c.dom.NodeList, arg1: java.lang.String | string): byte[]
-                                    public canonicalizeXPathNodeSet(arg0: java.util.Set<org.w3c.dom.Node>): byte[]
-                                    public canonicalizeXPathNodeSet(arg0: java.util.Set<org.w3c.dom.Node>, arg1: java.lang.String | string): byte[]
-                                    public setWriter(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
-                                    public getImplementingCanonicalizerClass(): string
-                                    public notReset(): void
-                                    public static class: java.lang.Class<any>
-                                }
-                                abstract class CanonicalizerSpi {
-                                    protected reset: boolean
-                                    public constructor()
-                                    public engineCanonicalize(arg0: byte[]): byte[]
-                                    public engineCanonicalizeXPathNodeSet(arg0: org.w3c.dom.NodeList): byte[]
-                                    public engineCanonicalizeXPathNodeSet(arg0: org.w3c.dom.NodeList, arg1: java.lang.String | string): byte[]
-                                    public engineGetURI(): string
-                                    public engineGetIncludeComments(): boolean
-                                    public engineCanonicalizeXPathNodeSet(arg0: java.util.Set<org.w3c.dom.Node>): byte[]
-                                    public engineCanonicalizeXPathNodeSet(arg0: java.util.Set<org.w3c.dom.Node>, arg1: java.lang.String | string): byte[]
-                                    public engineCanonicalizeSubTree(arg0: org.w3c.dom.Node): byte[]
-                                    public engineCanonicalizeSubTree(arg0: org.w3c.dom.Node, arg1: java.lang.String | string): byte[]
-                                    public setWriter(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
-                                    public static class: java.lang.Class<any>
-                                }
-                                class InvalidCanonicalizerException extends com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException {
-                                    public constructor()
-                                    public constructor(arg0: java.lang.String | string)
-                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[])
-                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
-                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.Exception)
-                                    public static class: java.lang.Class<any>
-                                }
                                 namespace helper {
                                     class AttrCompare implements java.util.Comparator<org.w3c.dom.Attr> , java.io.Serializable {
                                         public constructor()
@@ -385,6 +319,65 @@ declare namespace com {
                                         public static class: java.lang.Class<any>
                                     }
                                 }
+                                class CanonicalizationException extends com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException {
+                                    public constructor()
+                                    public constructor(arg0: java.lang.String | string)
+                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[])
+                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
+                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.Exception)
+                                    public static class: java.lang.Class<any>
+                                }
+                                class Canonicalizer {
+                                    public static ENCODING: string
+                                    public static XPATH_C14N_WITH_COMMENTS_SINGLE_NODE: string
+                                    public static ALGO_ID_C14N_OMIT_COMMENTS: string
+                                    public static ALGO_ID_C14N_WITH_COMMENTS: string
+                                    public static ALGO_ID_C14N_EXCL_OMIT_COMMENTS: string
+                                    public static ALGO_ID_C14N_EXCL_WITH_COMMENTS: string
+                                    public static ALGO_ID_C14N11_OMIT_COMMENTS: string
+                                    public static ALGO_ID_C14N11_WITH_COMMENTS: string
+                                    public static ALGO_ID_C14N_PHYSICAL: string
+                                    public static getInstance(arg0: java.lang.String | string): com.sun.org.apache.xml.internal.security.c14n.Canonicalizer
+                                    public static register(arg0: java.lang.String | string, arg1: java.lang.String | string): void
+                                    public static register(arg0: java.lang.String | string, arg1: java.lang.Class<com.sun.org.apache.xml.internal.security.c14n.CanonicalizerSpi>): void
+                                    public static registerDefaultAlgorithms(): void
+                                    public getURI(): string
+                                    public getIncludeComments(): boolean
+                                    public canonicalize(arg0: byte[]): byte[]
+                                    public canonicalizeSubtree(arg0: org.w3c.dom.Node): byte[]
+                                    public canonicalizeSubtree(arg0: org.w3c.dom.Node, arg1: java.lang.String | string): byte[]
+                                    public canonicalizeXPathNodeSet(arg0: org.w3c.dom.NodeList): byte[]
+                                    public canonicalizeXPathNodeSet(arg0: org.w3c.dom.NodeList, arg1: java.lang.String | string): byte[]
+                                    public canonicalizeXPathNodeSet(arg0: java.util.Set<org.w3c.dom.Node>): byte[]
+                                    public canonicalizeXPathNodeSet(arg0: java.util.Set<org.w3c.dom.Node>, arg1: java.lang.String | string): byte[]
+                                    public setWriter(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                                    public getImplementingCanonicalizerClass(): string
+                                    public notReset(): void
+                                    public static class: java.lang.Class<any>
+                                }
+                                abstract class CanonicalizerSpi {
+                                    protected reset: boolean
+                                    public constructor()
+                                    public engineCanonicalize(arg0: byte[]): byte[]
+                                    public engineCanonicalizeXPathNodeSet(arg0: org.w3c.dom.NodeList): byte[]
+                                    public engineCanonicalizeXPathNodeSet(arg0: org.w3c.dom.NodeList, arg1: java.lang.String | string): byte[]
+                                    public engineGetURI(): string
+                                    public engineGetIncludeComments(): boolean
+                                    public engineCanonicalizeXPathNodeSet(arg0: java.util.Set<org.w3c.dom.Node>): byte[]
+                                    public engineCanonicalizeXPathNodeSet(arg0: java.util.Set<org.w3c.dom.Node>, arg1: java.lang.String | string): byte[]
+                                    public engineCanonicalizeSubTree(arg0: org.w3c.dom.Node): byte[]
+                                    public engineCanonicalizeSubTree(arg0: org.w3c.dom.Node, arg1: java.lang.String | string): byte[]
+                                    public setWriter(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                                    public static class: java.lang.Class<any>
+                                }
+                                class InvalidCanonicalizerException extends com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException {
+                                    public constructor()
+                                    public constructor(arg0: java.lang.String | string)
+                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[])
+                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
+                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.Exception)
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                             namespace exceptions {
                                 class AlgorithmAlreadyRegisteredException extends com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException {
@@ -437,87 +430,108 @@ declare namespace com {
                                 }
                             }
                             namespace keys {
-                                class ContentHandlerAlreadyRegisteredException extends com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException {
-                                    public constructor()
-                                    public constructor(arg0: java.lang.String | string)
-                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[])
-                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
-                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.Exception)
-                                    public static class: java.lang.Class<any>
-                                }
-                                class KeyInfo extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy {
-                                    public constructor(arg0: org.w3c.dom.Document)
-                                    public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
-                                    public setSecureValidation(arg0: boolean): void
-                                    public setId(arg0: java.lang.String | string): void
-                                    public getId(): string
-                                    public addKeyName(arg0: java.lang.String | string): void
-                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.KeyName): void
-                                    public addKeyValue(arg0: java.security.PublicKey): void
-                                    public addKeyValue(arg0: org.w3c.dom.Element): void
-                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.keyvalues.DSAKeyValue | com.sun.org.apache.xml.internal.security.keys.content.keyvalues.DSAKeyValue$$Lambda): void
-                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.keyvalues.RSAKeyValue | com.sun.org.apache.xml.internal.security.keys.content.keyvalues.RSAKeyValue$$Lambda): void
-                                    public add(arg0: java.security.PublicKey): void
-                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.KeyValue): void
-                                    public addMgmtData(arg0: java.lang.String | string): void
-                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.MgmtData): void
-                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.PGPData): void
-                                    public addRetrievalMethod(arg0: java.lang.String | string, arg1: com.sun.org.apache.xml.internal.security.transforms.Transforms, arg2: java.lang.String | string): void
-                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.RetrievalMethod): void
-                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.SPKIData): void
-                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.X509Data): void
-                                    public add(arg0: com.sun.org.apache.xml.internal.security.encryption.EncryptedKey): void
-                                    public addDEREncodedKeyValue(arg0: java.security.PublicKey): void
-                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.DEREncodedKeyValue): void
-                                    public addKeyInfoReference(arg0: java.lang.String | string): void
-                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.KeyInfoReference): void
-                                    public addUnknownElement(arg0: org.w3c.dom.Element): void
-                                    public lengthKeyName(): int
-                                    public lengthKeyValue(): int
-                                    public lengthMgmtData(): int
-                                    public lengthPGPData(): int
-                                    public lengthRetrievalMethod(): int
-                                    public lengthSPKIData(): int
-                                    public lengthX509Data(): int
-                                    public lengthDEREncodedKeyValue(): int
-                                    public lengthKeyInfoReference(): int
-                                    public lengthUnknownElement(): int
-                                    public itemKeyName(arg0: int): com.sun.org.apache.xml.internal.security.keys.content.KeyName
-                                    public itemKeyValue(arg0: int): com.sun.org.apache.xml.internal.security.keys.content.KeyValue
-                                    public itemMgmtData(arg0: int): com.sun.org.apache.xml.internal.security.keys.content.MgmtData
-                                    public itemPGPData(arg0: int): com.sun.org.apache.xml.internal.security.keys.content.PGPData
-                                    public itemRetrievalMethod(arg0: int): com.sun.org.apache.xml.internal.security.keys.content.RetrievalMethod
-                                    public itemSPKIData(arg0: int): com.sun.org.apache.xml.internal.security.keys.content.SPKIData
-                                    public itemX509Data(arg0: int): com.sun.org.apache.xml.internal.security.keys.content.X509Data
-                                    public itemEncryptedKey(arg0: int): com.sun.org.apache.xml.internal.security.encryption.EncryptedKey
-                                    public itemDEREncodedKeyValue(arg0: int): com.sun.org.apache.xml.internal.security.keys.content.DEREncodedKeyValue
-                                    public itemKeyInfoReference(arg0: int): com.sun.org.apache.xml.internal.security.keys.content.KeyInfoReference
-                                    public itemUnknownElement(arg0: int): org.w3c.dom.Element
-                                    public isEmpty(): boolean
-                                    public containsKeyName(): boolean
-                                    public containsKeyValue(): boolean
-                                    public containsMgmtData(): boolean
-                                    public containsPGPData(): boolean
-                                    public containsRetrievalMethod(): boolean
-                                    public containsSPKIData(): boolean
-                                    public containsUnknownElement(): boolean
-                                    public containsX509Data(): boolean
-                                    public containsDEREncodedKeyValue(): boolean
-                                    public containsKeyInfoReference(): boolean
-                                    public getPublicKey(): java.security.PublicKey
-                                    public getX509Certificate(): java.security.cert.X509Certificate
-                                    public getSecretKey(): javax.crypto.SecretKey
-                                    public getPrivateKey(): java.security.PrivateKey
-                                    public registerInternalKeyResolver(arg0: com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi): void
-                                    public addStorageResolver(arg0: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): void
-                                    public getBaseLocalName(): string
-                                    public static class: java.lang.Class<any>
-                                }
-                                class KeyUtils {
-                                    public static prinoutKeyInfo(arg0: com.sun.org.apache.xml.internal.security.keys.KeyInfo, arg1: java.io.PrintStream): void
-                                    public static class: java.lang.Class<any>
-                                }
                                 namespace content {
+                                    namespace keyvalues {
+                                        class DSAKeyValue extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.keyvalues.KeyValueContent {
+                                            public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
+                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.math.BigInteger, arg2: java.math.BigInteger, arg3: java.math.BigInteger, arg4: java.math.BigInteger)
+                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.security.Key)
+                                            public getPublicKey(): java.security.PublicKey
+                                            public getBaseLocalName(): string
+                                            public static class: java.lang.Class<any>
+                                        }
+                                        class DSAKeyValue$$Lambda extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.keyvalues.KeyValueContent {
+                                            public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
+                                        }
+                                        interface KeyValueContent {
+                                            getPublicKey(): java.security.PublicKey
+                                        }
+                                        interface KeyValueContent$$Lambda {
+                                            (): java.security.PublicKey
+                                        }
+                                        class RSAKeyValue extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.keyvalues.KeyValueContent {
+                                            public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
+                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.math.BigInteger, arg2: java.math.BigInteger)
+                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.security.Key)
+                                            public getPublicKey(): java.security.PublicKey
+                                            public getBaseLocalName(): string
+                                            public static class: java.lang.Class<any>
+                                        }
+                                        class RSAKeyValue$$Lambda extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.keyvalues.KeyValueContent {
+                                            public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
+                                        }
+                                    }
+                                    namespace x509 {
+                                        class XMLX509CRL extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509DataContent {
+                                            public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
+                                            public constructor(arg0: org.w3c.dom.Document, arg1: byte[])
+                                            public getCRLBytes(): byte[]
+                                            public getBaseLocalName(): string
+                                            public static class: java.lang.Class<any>
+                                        }
+                                        class XMLX509Certificate extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509DataContent {
+                                            public static JCA_CERT_ID: string
+                                            public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
+                                            public constructor(arg0: org.w3c.dom.Document, arg1: byte[])
+                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.security.cert.X509Certificate)
+                                            public getCertificateBytes(): byte[]
+                                            public getX509Certificate(): java.security.cert.X509Certificate
+                                            public getPublicKey(): java.security.PublicKey
+                                            public equals(arg0: java.lang.Object): boolean
+                                            public hashCode(): int
+                                            public getBaseLocalName(): string
+                                            public static class: java.lang.Class<any>
+                                        }
+                                        interface XMLX509DataContent {
+                                        }
+                                        class XMLX509Digest extends com.sun.org.apache.xml.internal.security.utils.Signature11ElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509DataContent {
+                                            public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
+                                            public constructor(arg0: org.w3c.dom.Document, arg1: byte[], arg2: java.lang.String | string)
+                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.security.cert.X509Certificate, arg2: java.lang.String | string)
+                                            public getAlgorithmAttr(): org.w3c.dom.Attr
+                                            public getAlgorithm(): string
+                                            public getDigestBytes(): byte[]
+                                            public static getDigestBytesFromCert(arg0: java.security.cert.X509Certificate, arg1: java.lang.String | string): byte[]
+                                            public getBaseLocalName(): string
+                                            public static class: java.lang.Class<any>
+                                        }
+                                        class XMLX509IssuerSerial extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509DataContent {
+                                            public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
+                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.lang.String | string, arg2: java.math.BigInteger)
+                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.lang.String | string, arg2: java.lang.String | string)
+                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.lang.String | string, arg2: int)
+                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.security.cert.X509Certificate)
+                                            public getSerialNumber(): java.math.BigInteger
+                                            public getSerialNumberInteger(): int
+                                            public getIssuerName(): string
+                                            public equals(arg0: java.lang.Object): boolean
+                                            public hashCode(): int
+                                            public getBaseLocalName(): string
+                                            public static class: java.lang.Class<any>
+                                        }
+                                        class XMLX509SKI extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509DataContent {
+                                            public static SKI_OID: string
+                                            public constructor(arg0: org.w3c.dom.Document, arg1: byte[])
+                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.security.cert.X509Certificate)
+                                            public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
+                                            public getSKIBytes(): byte[]
+                                            public static getSKIBytesFromCert(arg0: java.security.cert.X509Certificate): byte[]
+                                            public equals(arg0: java.lang.Object): boolean
+                                            public hashCode(): int
+                                            public getBaseLocalName(): string
+                                            public static class: java.lang.Class<any>
+                                        }
+                                        class XMLX509SubjectName extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509DataContent {
+                                            public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
+                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.lang.String | string)
+                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.security.cert.X509Certificate)
+                                            public getSubjectName(): string
+                                            public equals(arg0: java.lang.Object): boolean
+                                            public hashCode(): int
+                                            public getBaseLocalName(): string
+                                            public static class: java.lang.Class<any>
+                                        }
+                                    }
                                     class DEREncodedKeyValue extends com.sun.org.apache.xml.internal.security.utils.Signature11ElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.KeyInfoContent {
                                         public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
                                         public constructor(arg0: org.w3c.dom.Document, arg1: java.security.PublicKey)
@@ -638,164 +652,8 @@ declare namespace com {
                                         public getBaseLocalName(): string
                                         public static class: java.lang.Class<any>
                                     }
-                                    namespace keyvalues {
-                                        class DSAKeyValue extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.keyvalues.KeyValueContent {
-                                            public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
-                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.math.BigInteger, arg2: java.math.BigInteger, arg3: java.math.BigInteger, arg4: java.math.BigInteger)
-                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.security.Key)
-                                            public getPublicKey(): java.security.PublicKey
-                                            public getBaseLocalName(): string
-                                            public static class: java.lang.Class<any>
-                                        }
-                                        class DSAKeyValue$$Lambda extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.keyvalues.KeyValueContent {
-                                            public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
-                                        }
-                                        interface KeyValueContent {
-                                            getPublicKey(): java.security.PublicKey
-                                        }
-                                        interface KeyValueContent$$Lambda {
-                                            (): java.security.PublicKey
-                                        }
-                                        class RSAKeyValue extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.keyvalues.KeyValueContent {
-                                            public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
-                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.math.BigInteger, arg2: java.math.BigInteger)
-                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.security.Key)
-                                            public getPublicKey(): java.security.PublicKey
-                                            public getBaseLocalName(): string
-                                            public static class: java.lang.Class<any>
-                                        }
-                                        class RSAKeyValue$$Lambda extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.keyvalues.KeyValueContent {
-                                            public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
-                                        }
-                                    }
-                                    namespace x509 {
-                                        class XMLX509CRL extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509DataContent {
-                                            public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
-                                            public constructor(arg0: org.w3c.dom.Document, arg1: byte[])
-                                            public getCRLBytes(): byte[]
-                                            public getBaseLocalName(): string
-                                            public static class: java.lang.Class<any>
-                                        }
-                                        class XMLX509Certificate extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509DataContent {
-                                            public static JCA_CERT_ID: string
-                                            public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
-                                            public constructor(arg0: org.w3c.dom.Document, arg1: byte[])
-                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.security.cert.X509Certificate)
-                                            public getCertificateBytes(): byte[]
-                                            public getX509Certificate(): java.security.cert.X509Certificate
-                                            public getPublicKey(): java.security.PublicKey
-                                            public equals(arg0: java.lang.Object): boolean
-                                            public hashCode(): int
-                                            public getBaseLocalName(): string
-                                            public static class: java.lang.Class<any>
-                                        }
-                                        interface XMLX509DataContent {
-                                        }
-                                        class XMLX509Digest extends com.sun.org.apache.xml.internal.security.utils.Signature11ElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509DataContent {
-                                            public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
-                                            public constructor(arg0: org.w3c.dom.Document, arg1: byte[], arg2: java.lang.String | string)
-                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.security.cert.X509Certificate, arg2: java.lang.String | string)
-                                            public getAlgorithmAttr(): org.w3c.dom.Attr
-                                            public getAlgorithm(): string
-                                            public getDigestBytes(): byte[]
-                                            public static getDigestBytesFromCert(arg0: java.security.cert.X509Certificate, arg1: java.lang.String | string): byte[]
-                                            public getBaseLocalName(): string
-                                            public static class: java.lang.Class<any>
-                                        }
-                                        class XMLX509IssuerSerial extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509DataContent {
-                                            public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
-                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.lang.String | string, arg2: java.math.BigInteger)
-                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.lang.String | string, arg2: java.lang.String | string)
-                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.lang.String | string, arg2: int)
-                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.security.cert.X509Certificate)
-                                            public getSerialNumber(): java.math.BigInteger
-                                            public getSerialNumberInteger(): int
-                                            public getIssuerName(): string
-                                            public equals(arg0: java.lang.Object): boolean
-                                            public hashCode(): int
-                                            public getBaseLocalName(): string
-                                            public static class: java.lang.Class<any>
-                                        }
-                                        class XMLX509SKI extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509DataContent {
-                                            public static SKI_OID: string
-                                            public constructor(arg0: org.w3c.dom.Document, arg1: byte[])
-                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.security.cert.X509Certificate)
-                                            public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
-                                            public getSKIBytes(): byte[]
-                                            public static getSKIBytesFromCert(arg0: java.security.cert.X509Certificate): byte[]
-                                            public equals(arg0: java.lang.Object): boolean
-                                            public hashCode(): int
-                                            public getBaseLocalName(): string
-                                            public static class: java.lang.Class<any>
-                                        }
-                                        class XMLX509SubjectName extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509DataContent {
-                                            public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
-                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.lang.String | string)
-                                            public constructor(arg0: org.w3c.dom.Document, arg1: java.security.cert.X509Certificate)
-                                            public getSubjectName(): string
-                                            public equals(arg0: java.lang.Object): boolean
-                                            public hashCode(): int
-                                            public getBaseLocalName(): string
-                                            public static class: java.lang.Class<any>
-                                        }
-                                    }
                                 }
                                 namespace keyresolver {
-                                    class InvalidKeyResolverException extends com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException {
-                                        public constructor()
-                                        public constructor(arg0: java.lang.String | string)
-                                        public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[])
-                                        public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
-                                        public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.Exception)
-                                        public static class: java.lang.Class<any>
-                                    }
-                                    class KeyResolver {
-                                        public static length(): int
-                                        public static getX509Certificate(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): java.security.cert.X509Certificate
-                                        public static getPublicKey(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): java.security.PublicKey
-                                        public static register(arg0: java.lang.String | string, arg1: boolean): void
-                                        public static registerAtStart(arg0: java.lang.String | string, arg1: boolean): void
-                                        public static register(arg0: com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi, arg1: boolean): void
-                                        public static registerClassNames(arg0: java.util.List<java.lang.String>): void
-                                        public static registerDefaultResolvers(): void
-                                        public resolvePublicKey(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): java.security.PublicKey
-                                        public resolveX509Certificate(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): java.security.cert.X509Certificate
-                                        public resolveSecretKey(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): javax.crypto.SecretKey
-                                        public setProperty(arg0: java.lang.String | string, arg1: java.lang.String | string): void
-                                        public getProperty(arg0: java.lang.String | string): string
-                                        public understandsProperty(arg0: java.lang.String | string): boolean
-                                        public resolverClassName(): string
-                                        public static iterator(): java.util.Iterator<com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi>
-                                        public static class: java.lang.Class<any>
-                                    }
-                                    class KeyResolverException extends com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException {
-                                        public constructor()
-                                        public constructor(arg0: java.lang.String | string)
-                                        public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[])
-                                        public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
-                                        public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.Exception)
-                                        public static class: java.lang.Class<any>
-                                    }
-                                    abstract class KeyResolverSpi {
-                                        protected properties: java.util.Map<java.lang.String, java.lang.String>
-                                        protected globalResolver: boolean
-                                        protected secureValidation: boolean
-                                        public constructor()
-                                        public setSecureValidation(arg0: boolean): void
-                                        public engineCanResolve(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): boolean
-                                        public engineResolvePublicKey(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): java.security.PublicKey
-                                        public engineLookupAndResolvePublicKey(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): java.security.PublicKey
-                                        public engineResolveX509Certificate(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): java.security.cert.X509Certificate
-                                        public engineLookupResolveX509Certificate(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): java.security.cert.X509Certificate
-                                        public engineResolveSecretKey(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): javax.crypto.SecretKey
-                                        public engineLookupAndResolveSecretKey(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): javax.crypto.SecretKey
-                                        public engineLookupAndResolvePrivateKey(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): java.security.PrivateKey
-                                        public engineSetProperty(arg0: java.lang.String | string, arg1: java.lang.String | string): void
-                                        public engineGetProperty(arg0: java.lang.String | string): string
-                                        public understandsProperty(arg0: java.lang.String | string): boolean
-                                        public setGlobalResolver(arg0: boolean): void
-                                        public static class: java.lang.Class<any>
-                                    }
                                     namespace implementations {
                                         class DEREncodedKeyValueResolver extends com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi {
                                             public constructor()
@@ -902,8 +760,81 @@ declare namespace com {
                                             public static class: java.lang.Class<any>
                                         }
                                     }
+                                    class InvalidKeyResolverException extends com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException {
+                                        public constructor()
+                                        public constructor(arg0: java.lang.String | string)
+                                        public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[])
+                                        public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
+                                        public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.Exception)
+                                        public static class: java.lang.Class<any>
+                                    }
+                                    class KeyResolver {
+                                        public static length(): int
+                                        public static getX509Certificate(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): java.security.cert.X509Certificate
+                                        public static getPublicKey(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): java.security.PublicKey
+                                        public static register(arg0: java.lang.String | string, arg1: boolean): void
+                                        public static registerAtStart(arg0: java.lang.String | string, arg1: boolean): void
+                                        public static register(arg0: com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi, arg1: boolean): void
+                                        public static registerClassNames(arg0: java.util.List<java.lang.String>): void
+                                        public static registerDefaultResolvers(): void
+                                        public resolvePublicKey(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): java.security.PublicKey
+                                        public resolveX509Certificate(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): java.security.cert.X509Certificate
+                                        public resolveSecretKey(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): javax.crypto.SecretKey
+                                        public setProperty(arg0: java.lang.String | string, arg1: java.lang.String | string): void
+                                        public getProperty(arg0: java.lang.String | string): string
+                                        public understandsProperty(arg0: java.lang.String | string): boolean
+                                        public resolverClassName(): string
+                                        public static iterator(): java.util.Iterator<com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi>
+                                        public static class: java.lang.Class<any>
+                                    }
+                                    class KeyResolverException extends com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException {
+                                        public constructor()
+                                        public constructor(arg0: java.lang.String | string)
+                                        public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[])
+                                        public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
+                                        public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.Exception)
+                                        public static class: java.lang.Class<any>
+                                    }
+                                    abstract class KeyResolverSpi {
+                                        protected properties: java.util.Map<java.lang.String, java.lang.String>
+                                        protected globalResolver: boolean
+                                        protected secureValidation: boolean
+                                        public constructor()
+                                        public setSecureValidation(arg0: boolean): void
+                                        public engineCanResolve(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): boolean
+                                        public engineResolvePublicKey(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): java.security.PublicKey
+                                        public engineLookupAndResolvePublicKey(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): java.security.PublicKey
+                                        public engineResolveX509Certificate(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): java.security.cert.X509Certificate
+                                        public engineLookupResolveX509Certificate(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): java.security.cert.X509Certificate
+                                        public engineResolveSecretKey(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): javax.crypto.SecretKey
+                                        public engineLookupAndResolveSecretKey(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): javax.crypto.SecretKey
+                                        public engineLookupAndResolvePrivateKey(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): java.security.PrivateKey
+                                        public engineSetProperty(arg0: java.lang.String | string, arg1: java.lang.String | string): void
+                                        public engineGetProperty(arg0: java.lang.String | string): string
+                                        public understandsProperty(arg0: java.lang.String | string): boolean
+                                        public setGlobalResolver(arg0: boolean): void
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                                 namespace storage {
+                                    namespace implementations {
+                                        class CertsInFilesystemDirectoryResolver extends com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi {
+                                            public constructor(arg0: java.lang.String | string)
+                                            public getIterator(): java.util.Iterator<java.security.cert.Certificate>
+                                            public static main(arg0: java.lang.String[]): void
+                                            public static class: java.lang.Class<any>
+                                        }
+                                        class KeyStoreResolver extends com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi {
+                                            public constructor(arg0: java.security.KeyStore)
+                                            public getIterator(): java.util.Iterator<java.security.cert.Certificate>
+                                            public static class: java.lang.Class<any>
+                                        }
+                                        class SingleCertificateResolver extends com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi {
+                                            public constructor(arg0: java.security.cert.X509Certificate)
+                                            public getIterator(): java.util.Iterator<java.security.cert.Certificate>
+                                            public static class: java.lang.Class<any>
+                                        }
+                                    }
                                     class StorageResolver {
                                         public constructor()
                                         public constructor(arg0: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi)
@@ -928,27 +859,111 @@ declare namespace com {
                                         public getIterator(): java.util.Iterator<java.security.cert.Certificate>
                                         public static class: java.lang.Class<any>
                                     }
-                                    namespace implementations {
-                                        class CertsInFilesystemDirectoryResolver extends com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi {
-                                            public constructor(arg0: java.lang.String | string)
-                                            public getIterator(): java.util.Iterator<java.security.cert.Certificate>
-                                            public static main(arg0: java.lang.String[]): void
-                                            public static class: java.lang.Class<any>
-                                        }
-                                        class KeyStoreResolver extends com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi {
-                                            public constructor(arg0: java.security.KeyStore)
-                                            public getIterator(): java.util.Iterator<java.security.cert.Certificate>
-                                            public static class: java.lang.Class<any>
-                                        }
-                                        class SingleCertificateResolver extends com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi {
-                                            public constructor(arg0: java.security.cert.X509Certificate)
-                                            public getIterator(): java.util.Iterator<java.security.cert.Certificate>
-                                            public static class: java.lang.Class<any>
-                                        }
-                                    }
+                                }
+                                class ContentHandlerAlreadyRegisteredException extends com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException {
+                                    public constructor()
+                                    public constructor(arg0: java.lang.String | string)
+                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[])
+                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
+                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.Exception)
+                                    public static class: java.lang.Class<any>
+                                }
+                                class KeyInfo extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy {
+                                    public constructor(arg0: org.w3c.dom.Document)
+                                    public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
+                                    public setSecureValidation(arg0: boolean): void
+                                    public setId(arg0: java.lang.String | string): void
+                                    public getId(): string
+                                    public addKeyName(arg0: java.lang.String | string): void
+                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.KeyName): void
+                                    public addKeyValue(arg0: java.security.PublicKey): void
+                                    public addKeyValue(arg0: org.w3c.dom.Element): void
+                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.keyvalues.DSAKeyValue | com.sun.org.apache.xml.internal.security.keys.content.keyvalues.DSAKeyValue$$Lambda): void
+                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.keyvalues.RSAKeyValue | com.sun.org.apache.xml.internal.security.keys.content.keyvalues.RSAKeyValue$$Lambda): void
+                                    public add(arg0: java.security.PublicKey): void
+                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.KeyValue): void
+                                    public addMgmtData(arg0: java.lang.String | string): void
+                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.MgmtData): void
+                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.PGPData): void
+                                    public addRetrievalMethod(arg0: java.lang.String | string, arg1: com.sun.org.apache.xml.internal.security.transforms.Transforms, arg2: java.lang.String | string): void
+                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.RetrievalMethod): void
+                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.SPKIData): void
+                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.X509Data): void
+                                    public add(arg0: com.sun.org.apache.xml.internal.security.encryption.EncryptedKey): void
+                                    public addDEREncodedKeyValue(arg0: java.security.PublicKey): void
+                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.DEREncodedKeyValue): void
+                                    public addKeyInfoReference(arg0: java.lang.String | string): void
+                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.KeyInfoReference): void
+                                    public addUnknownElement(arg0: org.w3c.dom.Element): void
+                                    public lengthKeyName(): int
+                                    public lengthKeyValue(): int
+                                    public lengthMgmtData(): int
+                                    public lengthPGPData(): int
+                                    public lengthRetrievalMethod(): int
+                                    public lengthSPKIData(): int
+                                    public lengthX509Data(): int
+                                    public lengthDEREncodedKeyValue(): int
+                                    public lengthKeyInfoReference(): int
+                                    public lengthUnknownElement(): int
+                                    public itemKeyName(arg0: int): com.sun.org.apache.xml.internal.security.keys.content.KeyName
+                                    public itemKeyValue(arg0: int): com.sun.org.apache.xml.internal.security.keys.content.KeyValue
+                                    public itemMgmtData(arg0: int): com.sun.org.apache.xml.internal.security.keys.content.MgmtData
+                                    public itemPGPData(arg0: int): com.sun.org.apache.xml.internal.security.keys.content.PGPData
+                                    public itemRetrievalMethod(arg0: int): com.sun.org.apache.xml.internal.security.keys.content.RetrievalMethod
+                                    public itemSPKIData(arg0: int): com.sun.org.apache.xml.internal.security.keys.content.SPKIData
+                                    public itemX509Data(arg0: int): com.sun.org.apache.xml.internal.security.keys.content.X509Data
+                                    public itemEncryptedKey(arg0: int): com.sun.org.apache.xml.internal.security.encryption.EncryptedKey
+                                    public itemDEREncodedKeyValue(arg0: int): com.sun.org.apache.xml.internal.security.keys.content.DEREncodedKeyValue
+                                    public itemKeyInfoReference(arg0: int): com.sun.org.apache.xml.internal.security.keys.content.KeyInfoReference
+                                    public itemUnknownElement(arg0: int): org.w3c.dom.Element
+                                    public isEmpty(): boolean
+                                    public containsKeyName(): boolean
+                                    public containsKeyValue(): boolean
+                                    public containsMgmtData(): boolean
+                                    public containsPGPData(): boolean
+                                    public containsRetrievalMethod(): boolean
+                                    public containsSPKIData(): boolean
+                                    public containsUnknownElement(): boolean
+                                    public containsX509Data(): boolean
+                                    public containsDEREncodedKeyValue(): boolean
+                                    public containsKeyInfoReference(): boolean
+                                    public getPublicKey(): java.security.PublicKey
+                                    public getX509Certificate(): java.security.cert.X509Certificate
+                                    public getSecretKey(): javax.crypto.SecretKey
+                                    public getPrivateKey(): java.security.PrivateKey
+                                    public registerInternalKeyResolver(arg0: com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi): void
+                                    public addStorageResolver(arg0: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver): void
+                                    public getBaseLocalName(): string
+                                    public static class: java.lang.Class<any>
+                                }
+                                class KeyUtils {
+                                    public static prinoutKeyInfo(arg0: com.sun.org.apache.xml.internal.security.keys.KeyInfo, arg1: java.io.PrintStream): void
+                                    public static class: java.lang.Class<any>
                                 }
                             }
                             namespace signature {
+                                namespace reference {
+                                    interface ReferenceData {
+                                    }
+                                    interface ReferenceNodeSetData extends com.sun.org.apache.xml.internal.security.signature.reference.ReferenceData {
+                                        iterator(): java.util.Iterator<org.w3c.dom.Node>
+                                    }
+                                    class ReferenceOctetStreamData implements com.sun.org.apache.xml.internal.security.signature.reference.ReferenceData {
+                                        public constructor(arg0: java.io.InputStream)
+                                        public constructor(arg0: java.io.InputStream, arg1: java.lang.String | string, arg2: java.lang.String | string)
+                                        public getOctetStream(): java.io.InputStream
+                                        public getURI(): string
+                                        public getMimeType(): string
+                                        public static class: java.lang.Class<any>
+                                    }
+                                    class ReferenceSubTreeData implements com.sun.org.apache.xml.internal.security.signature.reference.ReferenceNodeSetData {
+                                        public constructor(arg0: org.w3c.dom.Node, arg1: boolean)
+                                        public iterator(): java.util.Iterator<org.w3c.dom.Node>
+                                        public getRoot(): org.w3c.dom.Node
+                                        public excludeComments(): boolean
+                                        public static class: java.lang.Class<any>
+                                    }
+                                }
                                 class InvalidDigestValueException extends com.sun.org.apache.xml.internal.security.signature.XMLSignatureException {
                                     public constructor()
                                     public constructor(arg0: java.lang.String | string)
@@ -1204,100 +1219,8 @@ declare namespace com {
                                     public getHTMLRepresentation(): string
                                     public static class: java.lang.Class<any>
                                 }
-                                namespace reference {
-                                    interface ReferenceData {
-                                    }
-                                    interface ReferenceNodeSetData extends com.sun.org.apache.xml.internal.security.signature.reference.ReferenceData {
-                                        iterator(): java.util.Iterator<org.w3c.dom.Node>
-                                    }
-                                    class ReferenceOctetStreamData implements com.sun.org.apache.xml.internal.security.signature.reference.ReferenceData {
-                                        public constructor(arg0: java.io.InputStream)
-                                        public constructor(arg0: java.io.InputStream, arg1: java.lang.String | string, arg2: java.lang.String | string)
-                                        public getOctetStream(): java.io.InputStream
-                                        public getURI(): string
-                                        public getMimeType(): string
-                                        public static class: java.lang.Class<any>
-                                    }
-                                    class ReferenceSubTreeData implements com.sun.org.apache.xml.internal.security.signature.reference.ReferenceNodeSetData {
-                                        public constructor(arg0: org.w3c.dom.Node, arg1: boolean)
-                                        public iterator(): java.util.Iterator<org.w3c.dom.Node>
-                                        public getRoot(): org.w3c.dom.Node
-                                        public excludeComments(): boolean
-                                        public static class: java.lang.Class<any>
-                                    }
-                                }
                             }
                             namespace transforms {
-                                class ClassLoaderUtils {
-                                    public static class: java.lang.Class<any>
-                                }
-                                class InvalidTransformException extends com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException {
-                                    public constructor()
-                                    public constructor(arg0: java.lang.String | string)
-                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[])
-                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
-                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.Exception)
-                                    public static class: java.lang.Class<any>
-                                }
-                                class Transform extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy {
-                                    public constructor(arg0: org.w3c.dom.Document, arg1: java.lang.String | string)
-                                    public constructor(arg0: org.w3c.dom.Document, arg1: java.lang.String | string, arg2: org.w3c.dom.Element)
-                                    public constructor(arg0: org.w3c.dom.Document, arg1: java.lang.String | string, arg2: org.w3c.dom.NodeList)
-                                    public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
-                                    public static register(arg0: java.lang.String | string, arg1: java.lang.String | string): void
-                                    public static register(arg0: java.lang.String | string, arg1: java.lang.Class<com.sun.org.apache.xml.internal.security.transforms.TransformSpi>): void
-                                    public static registerDefaultAlgorithms(): void
-                                    public getURI(): string
-                                    public performTransform(arg0: com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
-                                    public performTransform(arg0: com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
-                                    public getBaseLocalName(): string
-                                    public static class: java.lang.Class<any>
-                                }
-                                interface TransformParam {
-                                }
-                                abstract class TransformSpi {
-                                    public constructor()
-                                    protected enginePerformTransform(arg0: com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda, arg2: com.sun.org.apache.xml.internal.security.transforms.Transform): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
-                                    protected enginePerformTransform(arg0: com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput, arg1: com.sun.org.apache.xml.internal.security.transforms.Transform): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
-                                    protected enginePerformTransform(arg0: com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
-                                    protected engineGetURI(): string
-                                    public static class: java.lang.Class<any>
-                                }
-                                class TransformationException extends com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException {
-                                    public constructor()
-                                    public constructor(arg0: java.lang.String | string)
-                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[])
-                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
-                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.Exception)
-                                    public static class: java.lang.Class<any>
-                                }
-                                class Transforms extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy {
-                                    public static TRANSFORM_C14N_OMIT_COMMENTS: string
-                                    public static TRANSFORM_C14N_WITH_COMMENTS: string
-                                    public static TRANSFORM_C14N11_OMIT_COMMENTS: string
-                                    public static TRANSFORM_C14N11_WITH_COMMENTS: string
-                                    public static TRANSFORM_C14N_EXCL_OMIT_COMMENTS: string
-                                    public static TRANSFORM_C14N_EXCL_WITH_COMMENTS: string
-                                    public static TRANSFORM_XSLT: string
-                                    public static TRANSFORM_BASE64_DECODE: string
-                                    public static TRANSFORM_XPATH: string
-                                    public static TRANSFORM_ENVELOPED_SIGNATURE: string
-                                    public static TRANSFORM_XPOINTER: string
-                                    public static TRANSFORM_XPATH2FILTER: string
-                                    protected constructor()
-                                    public constructor(arg0: org.w3c.dom.Document)
-                                    public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
-                                    public setSecureValidation(arg0: boolean): void
-                                    public addTransform(arg0: java.lang.String | string): void
-                                    public addTransform(arg0: java.lang.String | string, arg1: org.w3c.dom.Element): void
-                                    public addTransform(arg0: java.lang.String | string, arg1: org.w3c.dom.NodeList): void
-                                    public performTransforms(arg0: com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
-                                    public performTransforms(arg0: com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
-                                    public getLength(): int
-                                    public item(arg0: int): com.sun.org.apache.xml.internal.security.transforms.Transform
-                                    public getBaseLocalName(): string
-                                    public static class: java.lang.Class<any>
-                                }
                                 namespace implementations {
                                     class FuncHere extends com.sun.org.apache.xpath.internal.functions.Function {
                                         public constructor()
@@ -1466,8 +1389,176 @@ declare namespace com {
                                         public static class: java.lang.Class<any>
                                     }
                                 }
+                                class ClassLoaderUtils {
+                                    public static class: java.lang.Class<any>
+                                }
+                                class InvalidTransformException extends com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException {
+                                    public constructor()
+                                    public constructor(arg0: java.lang.String | string)
+                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[])
+                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
+                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.Exception)
+                                    public static class: java.lang.Class<any>
+                                }
+                                class Transform extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy {
+                                    public constructor(arg0: org.w3c.dom.Document, arg1: java.lang.String | string)
+                                    public constructor(arg0: org.w3c.dom.Document, arg1: java.lang.String | string, arg2: org.w3c.dom.Element)
+                                    public constructor(arg0: org.w3c.dom.Document, arg1: java.lang.String | string, arg2: org.w3c.dom.NodeList)
+                                    public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
+                                    public static register(arg0: java.lang.String | string, arg1: java.lang.String | string): void
+                                    public static register(arg0: java.lang.String | string, arg1: java.lang.Class<com.sun.org.apache.xml.internal.security.transforms.TransformSpi>): void
+                                    public static registerDefaultAlgorithms(): void
+                                    public getURI(): string
+                                    public performTransform(arg0: com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
+                                    public performTransform(arg0: com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
+                                    public getBaseLocalName(): string
+                                    public static class: java.lang.Class<any>
+                                }
+                                interface TransformParam {
+                                }
+                                abstract class TransformSpi {
+                                    public constructor()
+                                    protected enginePerformTransform(arg0: com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda, arg2: com.sun.org.apache.xml.internal.security.transforms.Transform): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
+                                    protected enginePerformTransform(arg0: com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput, arg1: com.sun.org.apache.xml.internal.security.transforms.Transform): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
+                                    protected enginePerformTransform(arg0: com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
+                                    protected engineGetURI(): string
+                                    public static class: java.lang.Class<any>
+                                }
+                                class TransformationException extends com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException {
+                                    public constructor()
+                                    public constructor(arg0: java.lang.String | string)
+                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[])
+                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
+                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.Exception)
+                                    public static class: java.lang.Class<any>
+                                }
+                                class Transforms extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy {
+                                    public static TRANSFORM_C14N_OMIT_COMMENTS: string
+                                    public static TRANSFORM_C14N_WITH_COMMENTS: string
+                                    public static TRANSFORM_C14N11_OMIT_COMMENTS: string
+                                    public static TRANSFORM_C14N11_WITH_COMMENTS: string
+                                    public static TRANSFORM_C14N_EXCL_OMIT_COMMENTS: string
+                                    public static TRANSFORM_C14N_EXCL_WITH_COMMENTS: string
+                                    public static TRANSFORM_XSLT: string
+                                    public static TRANSFORM_BASE64_DECODE: string
+                                    public static TRANSFORM_XPATH: string
+                                    public static TRANSFORM_ENVELOPED_SIGNATURE: string
+                                    public static TRANSFORM_XPOINTER: string
+                                    public static TRANSFORM_XPATH2FILTER: string
+                                    protected constructor()
+                                    public constructor(arg0: org.w3c.dom.Document)
+                                    public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
+                                    public setSecureValidation(arg0: boolean): void
+                                    public addTransform(arg0: java.lang.String | string): void
+                                    public addTransform(arg0: java.lang.String | string, arg1: org.w3c.dom.Element): void
+                                    public addTransform(arg0: java.lang.String | string, arg1: org.w3c.dom.NodeList): void
+                                    public performTransforms(arg0: com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
+                                    public performTransforms(arg0: com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
+                                    public getLength(): int
+                                    public item(arg0: int): com.sun.org.apache.xml.internal.security.transforms.Transform
+                                    public getBaseLocalName(): string
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                             namespace utils {
+                                namespace resolver {
+                                    namespace implementations {
+                                        class ResolverAnonymous extends com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi {
+                                            public engineIsThreadSafe(): boolean
+                                            public constructor(arg0: java.lang.String | string)
+                                            public constructor(arg0: java.io.InputStream)
+                                            public engineResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
+                                            public engineCanResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): boolean
+                                            public engineGetPropertyKeys(): java.lang.String[]
+                                            public static class: java.lang.Class<any>
+                                        }
+                                        class ResolverDirectHTTP extends com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi {
+                                            public constructor()
+                                            public engineIsThreadSafe(): boolean
+                                            public engineResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
+                                            public engineCanResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): boolean
+                                            public engineGetPropertyKeys(): java.lang.String[]
+                                            public static class: java.lang.Class<any>
+                                        }
+                                        class ResolverFragment extends com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi {
+                                            public constructor()
+                                            public engineIsThreadSafe(): boolean
+                                            public engineResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
+                                            public engineCanResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): boolean
+                                            public static class: java.lang.Class<any>
+                                        }
+                                        class ResolverLocalFilesystem extends com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi {
+                                            public constructor()
+                                            public engineIsThreadSafe(): boolean
+                                            public engineResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
+                                            public engineCanResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): boolean
+                                            public static class: java.lang.Class<any>
+                                        }
+                                        class ResolverXPointer extends com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi {
+                                            public constructor()
+                                            public engineIsThreadSafe(): boolean
+                                            public engineResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
+                                            public engineCanResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): boolean
+                                            public static class: java.lang.Class<any>
+                                        }
+                                    }
+                                    class ResourceResolver {
+                                        public constructor(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi)
+                                        public static getInstance(arg0: org.w3c.dom.Attr, arg1: java.lang.String | string): com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver
+                                        public static getInstance(arg0: org.w3c.dom.Attr, arg1: java.lang.String | string, arg2: boolean): com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver
+                                        public static getInstance(arg0: org.w3c.dom.Attr, arg1: java.lang.String | string, arg2: java.util.List<com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver>): com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver
+                                        public static getInstance(arg0: org.w3c.dom.Attr, arg1: java.lang.String | string, arg2: java.util.List<com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver>, arg3: boolean): com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver
+                                        public static register(arg0: java.lang.String | string): void
+                                        public static registerAtStart(arg0: java.lang.String | string): void
+                                        public static register(arg0: java.lang.Class<com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi>, arg1: boolean): void
+                                        public static register(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi, arg1: boolean): void
+                                        public static registerDefaultResolvers(): void
+                                        public resolve(arg0: org.w3c.dom.Attr, arg1: java.lang.String | string): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
+                                        public resolve(arg0: org.w3c.dom.Attr, arg1: java.lang.String | string, arg2: boolean): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
+                                        public setProperty(arg0: java.lang.String | string, arg1: java.lang.String | string): void
+                                        public getProperty(arg0: java.lang.String | string): string
+                                        public addProperties(arg0: java.util.Map<java.lang.String, java.lang.String>): void
+                                        public getPropertyKeys(): java.lang.String[]
+                                        public understandsProperty(arg0: java.lang.String | string): boolean
+                                        public static class: java.lang.Class<any>
+                                    }
+                                    class ResourceResolverContext {
+                                        public uriToResolve: string
+                                        public secureValidation: boolean
+                                        public baseUri: string
+                                        public attr: org.w3c.dom.Attr
+                                        public constructor(arg0: org.w3c.dom.Attr, arg1: java.lang.String | string, arg2: boolean)
+                                        public static class: java.lang.Class<any>
+                                    }
+                                    class ResourceResolverException extends com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException {
+                                        public constructor(arg0: java.lang.String | string, arg1: org.w3c.dom.Attr, arg2: java.lang.String | string)
+                                        public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: org.w3c.dom.Attr, arg3: java.lang.String | string)
+                                        public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception, arg2: org.w3c.dom.Attr, arg3: java.lang.String | string)
+                                        public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.Exception, arg3: org.w3c.dom.Attr, arg4: java.lang.String | string)
+                                        public setURI(arg0: org.w3c.dom.Attr): void
+                                        public getURI(): org.w3c.dom.Attr
+                                        public setbaseURI(arg0: java.lang.String | string): void
+                                        public getbaseURI(): string
+                                        public static class: java.lang.Class<any>
+                                    }
+                                    abstract class ResourceResolverSpi {
+                                        protected properties: java.util.Map<java.lang.String, java.lang.String>
+                                        protected secureValidation: boolean
+                                        public constructor()
+                                        public engineResolve(arg0: org.w3c.dom.Attr, arg1: java.lang.String | string): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
+                                        public engineResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
+                                        public engineSetProperty(arg0: java.lang.String | string, arg1: java.lang.String | string): void
+                                        public engineGetProperty(arg0: java.lang.String | string): string
+                                        public engineAddProperies(arg0: java.util.Map<java.lang.String, java.lang.String>): void
+                                        public engineIsThreadSafe(): boolean
+                                        public engineCanResolve(arg0: org.w3c.dom.Attr, arg1: java.lang.String | string): boolean
+                                        public engineCanResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): boolean
+                                        public engineGetPropertyKeys(): java.lang.String[]
+                                        public understandsProperty(arg0: java.lang.String | string): boolean
+                                        public static fixURI(arg0: java.lang.String | string): string
+                                        public static class: java.lang.Class<any>
+                                    }
+                                }
                                 class Base64 {
                                     public static BASE64DEFAULTLENGTH: int
                                     public static encode(arg0: java.math.BigInteger): string
@@ -1848,104 +1939,13 @@ declare namespace com {
                                     public newXPathAPI(): com.sun.org.apache.xml.internal.security.utils.XPathAPI
                                     public static class: java.lang.Class<any>
                                 }
-                                namespace resolver {
-                                    class ResourceResolver {
-                                        public constructor(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi)
-                                        public static getInstance(arg0: org.w3c.dom.Attr, arg1: java.lang.String | string): com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver
-                                        public static getInstance(arg0: org.w3c.dom.Attr, arg1: java.lang.String | string, arg2: boolean): com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver
-                                        public static getInstance(arg0: org.w3c.dom.Attr, arg1: java.lang.String | string, arg2: java.util.List<com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver>): com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver
-                                        public static getInstance(arg0: org.w3c.dom.Attr, arg1: java.lang.String | string, arg2: java.util.List<com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver>, arg3: boolean): com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver
-                                        public static register(arg0: java.lang.String | string): void
-                                        public static registerAtStart(arg0: java.lang.String | string): void
-                                        public static register(arg0: java.lang.Class<com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi>, arg1: boolean): void
-                                        public static register(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi, arg1: boolean): void
-                                        public static registerDefaultResolvers(): void
-                                        public resolve(arg0: org.w3c.dom.Attr, arg1: java.lang.String | string): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
-                                        public resolve(arg0: org.w3c.dom.Attr, arg1: java.lang.String | string, arg2: boolean): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
-                                        public setProperty(arg0: java.lang.String | string, arg1: java.lang.String | string): void
-                                        public getProperty(arg0: java.lang.String | string): string
-                                        public addProperties(arg0: java.util.Map<java.lang.String, java.lang.String>): void
-                                        public getPropertyKeys(): java.lang.String[]
-                                        public understandsProperty(arg0: java.lang.String | string): boolean
-                                        public static class: java.lang.Class<any>
-                                    }
-                                    class ResourceResolverContext {
-                                        public uriToResolve: string
-                                        public secureValidation: boolean
-                                        public baseUri: string
-                                        public attr: org.w3c.dom.Attr
-                                        public constructor(arg0: org.w3c.dom.Attr, arg1: java.lang.String | string, arg2: boolean)
-                                        public static class: java.lang.Class<any>
-                                    }
-                                    class ResourceResolverException extends com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException {
-                                        public constructor(arg0: java.lang.String | string, arg1: org.w3c.dom.Attr, arg2: java.lang.String | string)
-                                        public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: org.w3c.dom.Attr, arg3: java.lang.String | string)
-                                        public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception, arg2: org.w3c.dom.Attr, arg3: java.lang.String | string)
-                                        public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.Exception, arg3: org.w3c.dom.Attr, arg4: java.lang.String | string)
-                                        public setURI(arg0: org.w3c.dom.Attr): void
-                                        public getURI(): org.w3c.dom.Attr
-                                        public setbaseURI(arg0: java.lang.String | string): void
-                                        public getbaseURI(): string
-                                        public static class: java.lang.Class<any>
-                                    }
-                                    abstract class ResourceResolverSpi {
-                                        protected properties: java.util.Map<java.lang.String, java.lang.String>
-                                        protected secureValidation: boolean
-                                        public constructor()
-                                        public engineResolve(arg0: org.w3c.dom.Attr, arg1: java.lang.String | string): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
-                                        public engineResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
-                                        public engineSetProperty(arg0: java.lang.String | string, arg1: java.lang.String | string): void
-                                        public engineGetProperty(arg0: java.lang.String | string): string
-                                        public engineAddProperies(arg0: java.util.Map<java.lang.String, java.lang.String>): void
-                                        public engineIsThreadSafe(): boolean
-                                        public engineCanResolve(arg0: org.w3c.dom.Attr, arg1: java.lang.String | string): boolean
-                                        public engineCanResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): boolean
-                                        public engineGetPropertyKeys(): java.lang.String[]
-                                        public understandsProperty(arg0: java.lang.String | string): boolean
-                                        public static fixURI(arg0: java.lang.String | string): string
-                                        public static class: java.lang.Class<any>
-                                    }
-                                    namespace implementations {
-                                        class ResolverAnonymous extends com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi {
-                                            public engineIsThreadSafe(): boolean
-                                            public constructor(arg0: java.lang.String | string)
-                                            public constructor(arg0: java.io.InputStream)
-                                            public engineResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
-                                            public engineCanResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): boolean
-                                            public engineGetPropertyKeys(): java.lang.String[]
-                                            public static class: java.lang.Class<any>
-                                        }
-                                        class ResolverDirectHTTP extends com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi {
-                                            public constructor()
-                                            public engineIsThreadSafe(): boolean
-                                            public engineResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
-                                            public engineCanResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): boolean
-                                            public engineGetPropertyKeys(): java.lang.String[]
-                                            public static class: java.lang.Class<any>
-                                        }
-                                        class ResolverFragment extends com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi {
-                                            public constructor()
-                                            public engineIsThreadSafe(): boolean
-                                            public engineResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
-                                            public engineCanResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): boolean
-                                            public static class: java.lang.Class<any>
-                                        }
-                                        class ResolverLocalFilesystem extends com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi {
-                                            public constructor()
-                                            public engineIsThreadSafe(): boolean
-                                            public engineResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
-                                            public engineCanResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): boolean
-                                            public static class: java.lang.Class<any>
-                                        }
-                                        class ResolverXPointer extends com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi {
-                                            public constructor()
-                                            public engineIsThreadSafe(): boolean
-                                            public engineResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
-                                            public engineCanResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): boolean
-                                            public static class: java.lang.Class<any>
-                                        }
-                                    }
-                                }
+                            }
+                            class Init {
+                                public static CONF_NS: string
+                                public constructor()
+                                public static isInitialized(): boolean
+                                public static init(): void
+                                public static class: java.lang.Class<any>
                             }
                         }
                     }
@@ -1957,113 +1957,6 @@ declare namespace com {
 declare namespace javax {
     namespace xml {
         namespace crypto {
-            interface AlgorithmMethod {
-                getAlgorithm(): string
-                getParameterSpec(): java.security.spec.AlgorithmParameterSpec
-            }
-            interface Data {
-            }
-            abstract class KeySelector {
-                protected constructor()
-                public select(arg0: javax.xml.crypto.dsig.keyinfo.KeyInfo, arg1: javax.xml.crypto.KeySelector$Purpose, arg2: javax.xml.crypto.AlgorithmMethod, arg3: javax.xml.crypto.XMLCryptoContext): javax.xml.crypto.KeySelectorResult
-                public static singletonKeySelector(arg0: java.security.Key): javax.xml.crypto.KeySelector
-                public static class: java.lang.Class<any>
-            }
-            class KeySelectorException extends java.lang.Exception {
-                public constructor()
-                public constructor(arg0: java.lang.String | string)
-                public constructor(arg0: java.lang.String | string, arg1: java.lang.Throwable)
-                public constructor(arg0: java.lang.Throwable)
-                public getCause(): java.lang.Throwable
-                public printStackTrace(): void
-                public printStackTrace(arg0: java.io.PrintStream): void
-                public printStackTrace(arg0: java.io.PrintWriter): void
-                public static class: java.lang.Class<any>
-            }
-            interface KeySelectorResult {
-                getKey(): java.security.Key
-            }
-            interface KeySelectorResult$$Lambda {
-                (): java.security.Key
-            }
-            class MarshalException extends java.lang.Exception {
-                public constructor()
-                public constructor(arg0: java.lang.String | string)
-                public constructor(arg0: java.lang.String | string, arg1: java.lang.Throwable)
-                public constructor(arg0: java.lang.Throwable)
-                public getCause(): java.lang.Throwable
-                public printStackTrace(): void
-                public printStackTrace(arg0: java.io.PrintStream): void
-                public printStackTrace(arg0: java.io.PrintWriter): void
-                public static class: java.lang.Class<any>
-            }
-            class NoSuchMechanismException extends java.lang.RuntimeException {
-                public constructor()
-                public constructor(arg0: java.lang.String | string)
-                public constructor(arg0: java.lang.String | string, arg1: java.lang.Throwable)
-                public constructor(arg0: java.lang.Throwable)
-                public getCause(): java.lang.Throwable
-                public printStackTrace(): void
-                public printStackTrace(arg0: java.io.PrintStream): void
-                public printStackTrace(arg0: java.io.PrintWriter): void
-                public static class: java.lang.Class<any>
-            }
-            interface NodeSetData extends javax.xml.crypto.Data {
-                iterator(): java.util.Iterator
-            }
-            class OctetStreamData implements javax.xml.crypto.Data {
-                public constructor(arg0: java.io.InputStream)
-                public constructor(arg0: java.io.InputStream, arg1: java.lang.String | string, arg2: java.lang.String | string)
-                public getOctetStream(): java.io.InputStream
-                public getURI(): string
-                public getMimeType(): string
-                public static class: java.lang.Class<any>
-            }
-            interface URIDereferencer {
-                dereference(arg0: javax.xml.crypto.URIReference, arg1: javax.xml.crypto.XMLCryptoContext): javax.xml.crypto.Data
-            }
-            interface URIDereferencer$$Lambda {
-                (arg0: javax.xml.crypto.URIReference, arg1: javax.xml.crypto.XMLCryptoContext): javax.xml.crypto.Data
-            }
-            interface URIReference {
-                getURI(): string
-                getType(): string
-            }
-            class URIReferenceException extends java.lang.Exception {
-                public constructor()
-                public constructor(arg0: java.lang.String | string)
-                public constructor(arg0: java.lang.String | string, arg1: java.lang.Throwable)
-                public constructor(arg0: java.lang.String | string, arg1: java.lang.Throwable, arg2: javax.xml.crypto.URIReference)
-                public constructor(arg0: java.lang.Throwable)
-                public getURIReference(): javax.xml.crypto.URIReference
-                public getCause(): java.lang.Throwable
-                public printStackTrace(): void
-                public printStackTrace(arg0: java.io.PrintStream): void
-                public printStackTrace(arg0: java.io.PrintWriter): void
-                public static class: java.lang.Class<any>
-            }
-            interface XMLCryptoContext {
-                getBaseURI(): string
-                setBaseURI(arg0: java.lang.String | string): void
-                getKeySelector(): javax.xml.crypto.KeySelector
-                setKeySelector(arg0: javax.xml.crypto.KeySelector): void
-                getURIDereferencer(): javax.xml.crypto.URIDereferencer
-                setURIDereferencer(arg0: javax.xml.crypto.URIDereferencer | javax.xml.crypto.URIDereferencer$$Lambda): void
-                getNamespacePrefix(arg0: java.lang.String | string, arg1: java.lang.String | string): string
-                putNamespacePrefix(arg0: java.lang.String | string, arg1: java.lang.String | string): string
-                getDefaultNamespacePrefix(): string
-                setDefaultNamespacePrefix(arg0: java.lang.String | string): void
-                setProperty(arg0: java.lang.String | string, arg1: java.lang.Object): java.lang.Object
-                getProperty(arg0: java.lang.String | string): java.lang.Object
-                get(arg0: java.lang.Object): java.lang.Object
-                put(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
-            }
-            interface XMLStructure {
-                isFeatureSupported(arg0: java.lang.String | string): boolean
-            }
-            interface XMLStructure$$Lambda {
-                (arg0: java.lang.String | string): boolean
-            }
             namespace dom {
                 class DOMCryptoContext implements javax.xml.crypto.XMLCryptoContext {
                     protected constructor()
@@ -2100,6 +1993,132 @@ declare namespace javax {
                 }
             }
             namespace dsig {
+                namespace dom {
+                    class DOMSignContext extends javax.xml.crypto.dom.DOMCryptoContext implements javax.xml.crypto.dsig.XMLSignContext {
+                        public constructor(arg0: java.security.Key, arg1: org.w3c.dom.Node)
+                        public constructor(arg0: java.security.Key, arg1: org.w3c.dom.Node, arg2: org.w3c.dom.Node)
+                        public constructor(arg0: javax.xml.crypto.KeySelector, arg1: org.w3c.dom.Node)
+                        public constructor(arg0: javax.xml.crypto.KeySelector, arg1: org.w3c.dom.Node, arg2: org.w3c.dom.Node)
+                        public setParent(arg0: org.w3c.dom.Node): void
+                        public setNextSibling(arg0: org.w3c.dom.Node): void
+                        public getParent(): org.w3c.dom.Node
+                        public getNextSibling(): org.w3c.dom.Node
+                        public static class: java.lang.Class<any>
+                    }
+                    class DOMValidateContext extends javax.xml.crypto.dom.DOMCryptoContext implements javax.xml.crypto.dsig.XMLValidateContext {
+                        public constructor(arg0: javax.xml.crypto.KeySelector, arg1: org.w3c.dom.Node)
+                        public constructor(arg0: java.security.Key, arg1: org.w3c.dom.Node)
+                        public setNode(arg0: org.w3c.dom.Node): void
+                        public getNode(): org.w3c.dom.Node
+                        public static class: java.lang.Class<any>
+                    }
+                }
+                namespace keyinfo {
+                    interface KeyInfo extends javax.xml.crypto.XMLStructure {
+                        getContent(): java.util.List
+                        getId(): string
+                        marshal(arg0: javax.xml.crypto.XMLStructure | javax.xml.crypto.XMLStructure$$Lambda, arg1: javax.xml.crypto.XMLCryptoContext): void
+                    }
+                    abstract class KeyInfoFactory {
+                        protected constructor()
+                        public static getInstance(arg0: java.lang.String | string): javax.xml.crypto.dsig.keyinfo.KeyInfoFactory
+                        public static getInstance(arg0: java.lang.String | string, arg1: java.security.Provider): javax.xml.crypto.dsig.keyinfo.KeyInfoFactory
+                        public static getInstance(arg0: java.lang.String | string, arg1: java.lang.String | string): javax.xml.crypto.dsig.keyinfo.KeyInfoFactory
+                        public static getInstance(): javax.xml.crypto.dsig.keyinfo.KeyInfoFactory
+                        public getMechanismType(): string
+                        public getProvider(): java.security.Provider
+                        public newKeyInfo(arg0: java.util.List): javax.xml.crypto.dsig.keyinfo.KeyInfo
+                        public newKeyInfo(arg0: java.util.List, arg1: java.lang.String | string): javax.xml.crypto.dsig.keyinfo.KeyInfo
+                        public newKeyName(arg0: java.lang.String | string): javax.xml.crypto.dsig.keyinfo.KeyName
+                        public newKeyValue(arg0: java.security.PublicKey): javax.xml.crypto.dsig.keyinfo.KeyValue
+                        public newPGPData(arg0: byte[]): javax.xml.crypto.dsig.keyinfo.PGPData
+                        public newPGPData(arg0: byte[], arg1: byte[], arg2: java.util.List): javax.xml.crypto.dsig.keyinfo.PGPData
+                        public newPGPData(arg0: byte[], arg1: java.util.List): javax.xml.crypto.dsig.keyinfo.PGPData
+                        public newRetrievalMethod(arg0: java.lang.String | string): javax.xml.crypto.dsig.keyinfo.RetrievalMethod
+                        public newRetrievalMethod(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.util.List): javax.xml.crypto.dsig.keyinfo.RetrievalMethod
+                        public newX509Data(arg0: java.util.List): javax.xml.crypto.dsig.keyinfo.X509Data
+                        public newX509IssuerSerial(arg0: java.lang.String | string, arg1: java.math.BigInteger): javax.xml.crypto.dsig.keyinfo.X509IssuerSerial
+                        public isFeatureSupported(arg0: java.lang.String | string): boolean
+                        public getURIDereferencer(): javax.xml.crypto.URIDereferencer
+                        public unmarshalKeyInfo(arg0: javax.xml.crypto.XMLStructure | javax.xml.crypto.XMLStructure$$Lambda): javax.xml.crypto.dsig.keyinfo.KeyInfo
+                        public static class: java.lang.Class<any>
+                    }
+                    interface KeyName extends javax.xml.crypto.XMLStructure {
+                        getName(): string
+                    }
+                    interface KeyValue extends javax.xml.crypto.XMLStructure {
+                        DSA_TYPE: string
+                        RSA_TYPE: string
+                        getPublicKey(): java.security.PublicKey
+                    }
+                    interface PGPData extends javax.xml.crypto.XMLStructure {
+                        TYPE: string
+                        getKeyId(): byte[]
+                        getKeyPacket(): byte[]
+                        getExternalElements(): java.util.List
+                    }
+                    interface RetrievalMethod extends javax.xml.crypto.URIReference , javax.xml.crypto.XMLStructure {
+                        getTransforms(): java.util.List
+                        getURI(): string
+                        dereference(arg0: javax.xml.crypto.XMLCryptoContext): javax.xml.crypto.Data
+                    }
+                    interface X509Data extends javax.xml.crypto.XMLStructure {
+                        TYPE: string
+                        RAW_X509_CERTIFICATE_TYPE: string
+                        getContent(): java.util.List
+                    }
+                    interface X509IssuerSerial extends javax.xml.crypto.XMLStructure {
+                        getIssuerName(): string
+                        getSerialNumber(): java.math.BigInteger
+                    }
+                }
+                namespace spec {
+                    interface C14NMethodParameterSpec extends javax.xml.crypto.dsig.spec.TransformParameterSpec {
+                    }
+                    interface DigestMethodParameterSpec extends java.security.spec.AlgorithmParameterSpec {
+                    }
+                    class ExcC14NParameterSpec implements javax.xml.crypto.dsig.spec.C14NMethodParameterSpec {
+                        public static DEFAULT: string
+                        public constructor()
+                        public constructor(arg0: java.util.List)
+                        public getPrefixList(): java.util.List
+                        public static class: java.lang.Class<any>
+                    }
+                    class HMACParameterSpec implements javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec {
+                        public constructor(arg0: int)
+                        public getOutputLength(): int
+                        public static class: java.lang.Class<any>
+                    }
+                    interface SignatureMethodParameterSpec extends java.security.spec.AlgorithmParameterSpec {
+                    }
+                    interface TransformParameterSpec extends java.security.spec.AlgorithmParameterSpec {
+                    }
+                    class XPathFilter2ParameterSpec implements javax.xml.crypto.dsig.spec.TransformParameterSpec {
+                        public constructor(arg0: java.util.List)
+                        public getXPathList(): java.util.List
+                        public static class: java.lang.Class<any>
+                    }
+                    class XPathFilterParameterSpec implements javax.xml.crypto.dsig.spec.TransformParameterSpec {
+                        public constructor(arg0: java.lang.String | string)
+                        public constructor(arg0: java.lang.String | string, arg1: java.util.Map)
+                        public getXPath(): string
+                        public getNamespaceMap(): java.util.Map
+                        public static class: java.lang.Class<any>
+                    }
+                    class XPathType {
+                        public constructor(arg0: java.lang.String | string, arg1: javax.xml.crypto.dsig.spec.XPathType$Filter)
+                        public constructor(arg0: java.lang.String | string, arg1: javax.xml.crypto.dsig.spec.XPathType$Filter, arg2: java.util.Map)
+                        public getExpression(): string
+                        public getFilter(): javax.xml.crypto.dsig.spec.XPathType$Filter
+                        public getNamespaceMap(): java.util.Map
+                        public static class: java.lang.Class<any>
+                    }
+                    class XSLTTransformParameterSpec implements javax.xml.crypto.dsig.spec.TransformParameterSpec {
+                        public constructor(arg0: javax.xml.crypto.XMLStructure | javax.xml.crypto.XMLStructure$$Lambda)
+                        public getStylesheet(): javax.xml.crypto.XMLStructure
+                        public static class: java.lang.Class<any>
+                    }
+                }
                 interface CanonicalizationMethod extends javax.xml.crypto.dsig.Transform {
                     INCLUSIVE: string
                     INCLUSIVE_WITH_COMMENTS: string
@@ -2253,132 +2272,113 @@ declare namespace javax {
                 }
                 interface XMLValidateContext extends javax.xml.crypto.XMLCryptoContext {
                 }
-                namespace dom {
-                    class DOMSignContext extends javax.xml.crypto.dom.DOMCryptoContext implements javax.xml.crypto.dsig.XMLSignContext {
-                        public constructor(arg0: java.security.Key, arg1: org.w3c.dom.Node)
-                        public constructor(arg0: java.security.Key, arg1: org.w3c.dom.Node, arg2: org.w3c.dom.Node)
-                        public constructor(arg0: javax.xml.crypto.KeySelector, arg1: org.w3c.dom.Node)
-                        public constructor(arg0: javax.xml.crypto.KeySelector, arg1: org.w3c.dom.Node, arg2: org.w3c.dom.Node)
-                        public setParent(arg0: org.w3c.dom.Node): void
-                        public setNextSibling(arg0: org.w3c.dom.Node): void
-                        public getParent(): org.w3c.dom.Node
-                        public getNextSibling(): org.w3c.dom.Node
-                        public static class: java.lang.Class<any>
-                    }
-                    class DOMValidateContext extends javax.xml.crypto.dom.DOMCryptoContext implements javax.xml.crypto.dsig.XMLValidateContext {
-                        public constructor(arg0: javax.xml.crypto.KeySelector, arg1: org.w3c.dom.Node)
-                        public constructor(arg0: java.security.Key, arg1: org.w3c.dom.Node)
-                        public setNode(arg0: org.w3c.dom.Node): void
-                        public getNode(): org.w3c.dom.Node
-                        public static class: java.lang.Class<any>
-                    }
-                }
-                namespace keyinfo {
-                    interface KeyInfo extends javax.xml.crypto.XMLStructure {
-                        getContent(): java.util.List
-                        getId(): string
-                        marshal(arg0: javax.xml.crypto.XMLStructure | javax.xml.crypto.XMLStructure$$Lambda, arg1: javax.xml.crypto.XMLCryptoContext): void
-                    }
-                    abstract class KeyInfoFactory {
-                        protected constructor()
-                        public static getInstance(arg0: java.lang.String | string): javax.xml.crypto.dsig.keyinfo.KeyInfoFactory
-                        public static getInstance(arg0: java.lang.String | string, arg1: java.security.Provider): javax.xml.crypto.dsig.keyinfo.KeyInfoFactory
-                        public static getInstance(arg0: java.lang.String | string, arg1: java.lang.String | string): javax.xml.crypto.dsig.keyinfo.KeyInfoFactory
-                        public static getInstance(): javax.xml.crypto.dsig.keyinfo.KeyInfoFactory
-                        public getMechanismType(): string
-                        public getProvider(): java.security.Provider
-                        public newKeyInfo(arg0: java.util.List): javax.xml.crypto.dsig.keyinfo.KeyInfo
-                        public newKeyInfo(arg0: java.util.List, arg1: java.lang.String | string): javax.xml.crypto.dsig.keyinfo.KeyInfo
-                        public newKeyName(arg0: java.lang.String | string): javax.xml.crypto.dsig.keyinfo.KeyName
-                        public newKeyValue(arg0: java.security.PublicKey): javax.xml.crypto.dsig.keyinfo.KeyValue
-                        public newPGPData(arg0: byte[]): javax.xml.crypto.dsig.keyinfo.PGPData
-                        public newPGPData(arg0: byte[], arg1: byte[], arg2: java.util.List): javax.xml.crypto.dsig.keyinfo.PGPData
-                        public newPGPData(arg0: byte[], arg1: java.util.List): javax.xml.crypto.dsig.keyinfo.PGPData
-                        public newRetrievalMethod(arg0: java.lang.String | string): javax.xml.crypto.dsig.keyinfo.RetrievalMethod
-                        public newRetrievalMethod(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.util.List): javax.xml.crypto.dsig.keyinfo.RetrievalMethod
-                        public newX509Data(arg0: java.util.List): javax.xml.crypto.dsig.keyinfo.X509Data
-                        public newX509IssuerSerial(arg0: java.lang.String | string, arg1: java.math.BigInteger): javax.xml.crypto.dsig.keyinfo.X509IssuerSerial
-                        public isFeatureSupported(arg0: java.lang.String | string): boolean
-                        public getURIDereferencer(): javax.xml.crypto.URIDereferencer
-                        public unmarshalKeyInfo(arg0: javax.xml.crypto.XMLStructure | javax.xml.crypto.XMLStructure$$Lambda): javax.xml.crypto.dsig.keyinfo.KeyInfo
-                        public static class: java.lang.Class<any>
-                    }
-                    interface KeyName extends javax.xml.crypto.XMLStructure {
-                        getName(): string
-                    }
-                    interface KeyValue extends javax.xml.crypto.XMLStructure {
-                        DSA_TYPE: string
-                        RSA_TYPE: string
-                        getPublicKey(): java.security.PublicKey
-                    }
-                    interface PGPData extends javax.xml.crypto.XMLStructure {
-                        TYPE: string
-                        getKeyId(): byte[]
-                        getKeyPacket(): byte[]
-                        getExternalElements(): java.util.List
-                    }
-                    interface RetrievalMethod extends javax.xml.crypto.URIReference , javax.xml.crypto.XMLStructure {
-                        getTransforms(): java.util.List
-                        getURI(): string
-                        dereference(arg0: javax.xml.crypto.XMLCryptoContext): javax.xml.crypto.Data
-                    }
-                    interface X509Data extends javax.xml.crypto.XMLStructure {
-                        TYPE: string
-                        RAW_X509_CERTIFICATE_TYPE: string
-                        getContent(): java.util.List
-                    }
-                    interface X509IssuerSerial extends javax.xml.crypto.XMLStructure {
-                        getIssuerName(): string
-                        getSerialNumber(): java.math.BigInteger
-                    }
-                }
-                namespace spec {
-                    interface C14NMethodParameterSpec extends javax.xml.crypto.dsig.spec.TransformParameterSpec {
-                    }
-                    interface DigestMethodParameterSpec extends java.security.spec.AlgorithmParameterSpec {
-                    }
-                    class ExcC14NParameterSpec implements javax.xml.crypto.dsig.spec.C14NMethodParameterSpec {
-                        public static DEFAULT: string
-                        public constructor()
-                        public constructor(arg0: java.util.List)
-                        public getPrefixList(): java.util.List
-                        public static class: java.lang.Class<any>
-                    }
-                    class HMACParameterSpec implements javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec {
-                        public constructor(arg0: int)
-                        public getOutputLength(): int
-                        public static class: java.lang.Class<any>
-                    }
-                    interface SignatureMethodParameterSpec extends java.security.spec.AlgorithmParameterSpec {
-                    }
-                    interface TransformParameterSpec extends java.security.spec.AlgorithmParameterSpec {
-                    }
-                    class XPathFilter2ParameterSpec implements javax.xml.crypto.dsig.spec.TransformParameterSpec {
-                        public constructor(arg0: java.util.List)
-                        public getXPathList(): java.util.List
-                        public static class: java.lang.Class<any>
-                    }
-                    class XPathFilterParameterSpec implements javax.xml.crypto.dsig.spec.TransformParameterSpec {
-                        public constructor(arg0: java.lang.String | string)
-                        public constructor(arg0: java.lang.String | string, arg1: java.util.Map)
-                        public getXPath(): string
-                        public getNamespaceMap(): java.util.Map
-                        public static class: java.lang.Class<any>
-                    }
-                    class XPathType {
-                        public constructor(arg0: java.lang.String | string, arg1: javax.xml.crypto.dsig.spec.XPathType$Filter)
-                        public constructor(arg0: java.lang.String | string, arg1: javax.xml.crypto.dsig.spec.XPathType$Filter, arg2: java.util.Map)
-                        public getExpression(): string
-                        public getFilter(): javax.xml.crypto.dsig.spec.XPathType$Filter
-                        public getNamespaceMap(): java.util.Map
-                        public static class: java.lang.Class<any>
-                    }
-                    class XSLTTransformParameterSpec implements javax.xml.crypto.dsig.spec.TransformParameterSpec {
-                        public constructor(arg0: javax.xml.crypto.XMLStructure | javax.xml.crypto.XMLStructure$$Lambda)
-                        public getStylesheet(): javax.xml.crypto.XMLStructure
-                        public static class: java.lang.Class<any>
-                    }
-                }
+            }
+            interface AlgorithmMethod {
+                getAlgorithm(): string
+                getParameterSpec(): java.security.spec.AlgorithmParameterSpec
+            }
+            interface Data {
+            }
+            abstract class KeySelector {
+                protected constructor()
+                public select(arg0: javax.xml.crypto.dsig.keyinfo.KeyInfo, arg1: javax.xml.crypto.KeySelector$Purpose, arg2: javax.xml.crypto.AlgorithmMethod, arg3: javax.xml.crypto.XMLCryptoContext): javax.xml.crypto.KeySelectorResult
+                public static singletonKeySelector(arg0: java.security.Key): javax.xml.crypto.KeySelector
+                public static class: java.lang.Class<any>
+            }
+            class KeySelectorException extends java.lang.Exception {
+                public constructor()
+                public constructor(arg0: java.lang.String | string)
+                public constructor(arg0: java.lang.String | string, arg1: java.lang.Throwable)
+                public constructor(arg0: java.lang.Throwable)
+                public getCause(): java.lang.Throwable
+                public printStackTrace(): void
+                public printStackTrace(arg0: java.io.PrintStream): void
+                public printStackTrace(arg0: java.io.PrintWriter): void
+                public static class: java.lang.Class<any>
+            }
+            interface KeySelectorResult {
+                getKey(): java.security.Key
+            }
+            interface KeySelectorResult$$Lambda {
+                (): java.security.Key
+            }
+            class MarshalException extends java.lang.Exception {
+                public constructor()
+                public constructor(arg0: java.lang.String | string)
+                public constructor(arg0: java.lang.String | string, arg1: java.lang.Throwable)
+                public constructor(arg0: java.lang.Throwable)
+                public getCause(): java.lang.Throwable
+                public printStackTrace(): void
+                public printStackTrace(arg0: java.io.PrintStream): void
+                public printStackTrace(arg0: java.io.PrintWriter): void
+                public static class: java.lang.Class<any>
+            }
+            class NoSuchMechanismException extends java.lang.RuntimeException {
+                public constructor()
+                public constructor(arg0: java.lang.String | string)
+                public constructor(arg0: java.lang.String | string, arg1: java.lang.Throwable)
+                public constructor(arg0: java.lang.Throwable)
+                public getCause(): java.lang.Throwable
+                public printStackTrace(): void
+                public printStackTrace(arg0: java.io.PrintStream): void
+                public printStackTrace(arg0: java.io.PrintWriter): void
+                public static class: java.lang.Class<any>
+            }
+            interface NodeSetData extends javax.xml.crypto.Data {
+                iterator(): java.util.Iterator
+            }
+            class OctetStreamData implements javax.xml.crypto.Data {
+                public constructor(arg0: java.io.InputStream)
+                public constructor(arg0: java.io.InputStream, arg1: java.lang.String | string, arg2: java.lang.String | string)
+                public getOctetStream(): java.io.InputStream
+                public getURI(): string
+                public getMimeType(): string
+                public static class: java.lang.Class<any>
+            }
+            interface URIDereferencer {
+                dereference(arg0: javax.xml.crypto.URIReference, arg1: javax.xml.crypto.XMLCryptoContext): javax.xml.crypto.Data
+            }
+            interface URIDereferencer$$Lambda {
+                (arg0: javax.xml.crypto.URIReference, arg1: javax.xml.crypto.XMLCryptoContext): javax.xml.crypto.Data
+            }
+            interface URIReference {
+                getURI(): string
+                getType(): string
+            }
+            class URIReferenceException extends java.lang.Exception {
+                public constructor()
+                public constructor(arg0: java.lang.String | string)
+                public constructor(arg0: java.lang.String | string, arg1: java.lang.Throwable)
+                public constructor(arg0: java.lang.String | string, arg1: java.lang.Throwable, arg2: javax.xml.crypto.URIReference)
+                public constructor(arg0: java.lang.Throwable)
+                public getURIReference(): javax.xml.crypto.URIReference
+                public getCause(): java.lang.Throwable
+                public printStackTrace(): void
+                public printStackTrace(arg0: java.io.PrintStream): void
+                public printStackTrace(arg0: java.io.PrintWriter): void
+                public static class: java.lang.Class<any>
+            }
+            interface XMLCryptoContext {
+                getBaseURI(): string
+                setBaseURI(arg0: java.lang.String | string): void
+                getKeySelector(): javax.xml.crypto.KeySelector
+                setKeySelector(arg0: javax.xml.crypto.KeySelector): void
+                getURIDereferencer(): javax.xml.crypto.URIDereferencer
+                setURIDereferencer(arg0: javax.xml.crypto.URIDereferencer | javax.xml.crypto.URIDereferencer$$Lambda): void
+                getNamespacePrefix(arg0: java.lang.String | string, arg1: java.lang.String | string): string
+                putNamespacePrefix(arg0: java.lang.String | string, arg1: java.lang.String | string): string
+                getDefaultNamespacePrefix(): string
+                setDefaultNamespacePrefix(arg0: java.lang.String | string): void
+                setProperty(arg0: java.lang.String | string, arg1: java.lang.Object): java.lang.Object
+                getProperty(arg0: java.lang.String | string): java.lang.Object
+                get(arg0: java.lang.Object): java.lang.Object
+                put(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
+            }
+            interface XMLStructure {
+                isFeatureSupported(arg0: java.lang.String | string): boolean
+            }
+            interface XMLStructure$$Lambda {
+                (arg0: java.lang.String | string): boolean
             }
         }
     }
@@ -2388,28 +2388,6 @@ declare namespace org {
         namespace xml {
             namespace dsig {
                 namespace internal {
-                    class DigesterOutputStream extends java.io.OutputStream {
-                        public constructor(arg0: java.security.MessageDigest)
-                        public constructor(arg0: java.security.MessageDigest, arg1: boolean)
-                        public write(arg0: int): void
-                        public write(arg0: byte[], arg1: int, arg2: int): void
-                        public getDigestValue(): byte[]
-                        public getInputStream(): java.io.InputStream
-                        public close(): void
-                        public static class: java.lang.Class<any>
-                    }
-                    class MacOutputStream extends java.io.ByteArrayOutputStream {
-                        public constructor(arg0: javax.crypto.Mac)
-                        public write(arg0: int): void
-                        public write(arg0: byte[], arg1: int, arg2: int): void
-                        public static class: java.lang.Class<any>
-                    }
-                    class SignerOutputStream extends java.io.ByteArrayOutputStream {
-                        public constructor(arg0: java.security.Signature)
-                        public write(arg0: int): void
-                        public write(arg0: byte[], arg1: int, arg2: int): void
-                        public static class: java.lang.Class<any>
-                    }
                     namespace dom {
                         abstract class AbstractDOMSignatureMethod extends org.jcp.xml.dsig.internal.dom.DOMStructure implements javax.xml.crypto.dsig.SignatureMethod {
                             public marshal(arg0: org.w3c.dom.Node, arg1: java.lang.String | string, arg2: javax.xml.crypto.dom.DOMCryptoContext): void
@@ -2840,6 +2818,28 @@ declare namespace org {
                             public constructor()
                             public static class: java.lang.Class<any>
                         }
+                    }
+                    class DigesterOutputStream extends java.io.OutputStream {
+                        public constructor(arg0: java.security.MessageDigest)
+                        public constructor(arg0: java.security.MessageDigest, arg1: boolean)
+                        public write(arg0: int): void
+                        public write(arg0: byte[], arg1: int, arg2: int): void
+                        public getDigestValue(): byte[]
+                        public getInputStream(): java.io.InputStream
+                        public close(): void
+                        public static class: java.lang.Class<any>
+                    }
+                    class MacOutputStream extends java.io.ByteArrayOutputStream {
+                        public constructor(arg0: javax.crypto.Mac)
+                        public write(arg0: int): void
+                        public write(arg0: byte[], arg1: int, arg2: int): void
+                        public static class: java.lang.Class<any>
+                    }
+                    class SignerOutputStream extends java.io.ByteArrayOutputStream {
+                        public constructor(arg0: java.security.Signature)
+                        public write(arg0: int): void
+                        public write(arg0: byte[], arg1: int, arg2: int): void
+                        public static class: java.lang.Class<any>
                     }
                 }
             }

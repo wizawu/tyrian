@@ -875,840 +875,6 @@ declare namespace java {
 }
 declare namespace javax {
     namespace management {
-        class AndQueryExp extends javax.management.QueryEval implements javax.management.QueryExp {
-            public constructor()
-            public constructor(arg0: javax.management.QueryExp, arg1: javax.management.QueryExp)
-            public getLeftExp(): javax.management.QueryExp
-            public getRightExp(): javax.management.QueryExp
-            public apply(arg0: javax.management.ObjectName): boolean
-            public toString(): string
-            public static class: java.lang.Class<any>
-        }
-        class Attribute implements java.io.Serializable {
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.Object)
-            public getName(): string
-            public getValue(): java.lang.Object
-            public equals(arg0: java.lang.Object): boolean
-            public hashCode(): int
-            public toString(): string
-            public static class: java.lang.Class<any>
-        }
-        class AttributeChangeNotification extends javax.management.Notification {
-            public static ATTRIBUTE_CHANGE: string
-            public constructor(arg0: java.lang.Object, arg1: long, arg2: long, arg3: java.lang.String | string, arg4: java.lang.String | string, arg5: java.lang.String | string, arg6: java.lang.Object, arg7: java.lang.Object)
-            public getAttributeName(): string
-            public getAttributeType(): string
-            public getOldValue(): java.lang.Object
-            public getNewValue(): java.lang.Object
-            public static class: java.lang.Class<any>
-        }
-        class AttributeChangeNotificationFilter implements javax.management.NotificationFilter {
-            public constructor()
-            public isNotificationEnabled(arg0: javax.management.Notification): boolean
-            public enableAttribute(arg0: java.lang.String | string): void
-            public disableAttribute(arg0: java.lang.String | string): void
-            public disableAllAttributes(): void
-            public getEnabledAttributes(): java.util.Vector<java.lang.String>
-            public static class: java.lang.Class<any>
-        }
-        class AttributeList extends java.util.ArrayList<java.lang.Object> {
-            public constructor()
-            public constructor(arg0: int)
-            public constructor(arg0: javax.management.AttributeList)
-            public constructor(arg0: java.util.List<javax.management.Attribute>)
-            public asList(): java.util.List<javax.management.Attribute>
-            public add(arg0: javax.management.Attribute): void
-            public add(arg0: int, arg1: javax.management.Attribute): void
-            public set(arg0: int, arg1: javax.management.Attribute): void
-            public addAll(arg0: javax.management.AttributeList): boolean
-            public addAll(arg0: int, arg1: javax.management.AttributeList): boolean
-            public add(arg0: java.lang.Object): boolean
-            public add(arg0: int, arg1: java.lang.Object): void
-            public addAll(arg0: java.util.Collection<any>): boolean
-            public addAll(arg0: int, arg1: java.util.Collection<any>): boolean
-            public set(arg0: int, arg1: java.lang.Object): java.lang.Object
-            public static class: java.lang.Class<any>
-        }
-        class AttributeNotFoundException extends javax.management.OperationsException {
-            public constructor()
-            public constructor(arg0: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
-        class AttributeValueExp implements javax.management.ValueExp {
-            public constructor()
-            public constructor(arg0: java.lang.String | string)
-            public getAttributeName(): string
-            public apply(arg0: javax.management.ObjectName): javax.management.ValueExp
-            public toString(): string
-            public setMBeanServer(arg0: javax.management.MBeanServer): void
-            protected getAttribute(arg0: javax.management.ObjectName): java.lang.Object
-            public static class: java.lang.Class<any>
-        }
-        class BadAttributeValueExpException extends java.lang.Exception {
-            public constructor(arg0: java.lang.Object)
-            public toString(): string
-            public static class: java.lang.Class<any>
-        }
-        class BadBinaryOpValueExpException extends java.lang.Exception {
-            public constructor(arg0: javax.management.ValueExp)
-            public getExp(): javax.management.ValueExp
-            public toString(): string
-            public static class: java.lang.Class<any>
-        }
-        class BadStringOperationException extends java.lang.Exception {
-            public constructor(arg0: java.lang.String | string)
-            public toString(): string
-            public static class: java.lang.Class<any>
-        }
-        class BetweenQueryExp extends javax.management.QueryEval implements javax.management.QueryExp {
-            public constructor()
-            public constructor(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp, arg2: javax.management.ValueExp)
-            public getCheckedValue(): javax.management.ValueExp
-            public getLowerBound(): javax.management.ValueExp
-            public getUpperBound(): javax.management.ValueExp
-            public apply(arg0: javax.management.ObjectName): boolean
-            public toString(): string
-            public static class: java.lang.Class<any>
-        }
-        class BinaryOpValueExp extends javax.management.QueryEval implements javax.management.ValueExp {
-            public constructor()
-            public constructor(arg0: int, arg1: javax.management.ValueExp, arg2: javax.management.ValueExp)
-            public getOperator(): int
-            public getLeftValue(): javax.management.ValueExp
-            public getRightValue(): javax.management.ValueExp
-            public apply(arg0: javax.management.ObjectName): javax.management.ValueExp
-            public toString(): string
-            public setMBeanServer(arg0: javax.management.MBeanServer): void
-            public static class: java.lang.Class<any>
-        }
-        class BinaryRelQueryExp extends javax.management.QueryEval implements javax.management.QueryExp {
-            public constructor()
-            public constructor(arg0: int, arg1: javax.management.ValueExp, arg2: javax.management.ValueExp)
-            public getOperator(): int
-            public getLeftValue(): javax.management.ValueExp
-            public getRightValue(): javax.management.ValueExp
-            public apply(arg0: javax.management.ObjectName): boolean
-            public toString(): string
-            public static class: java.lang.Class<any>
-        }
-        class BooleanValueExp extends javax.management.QueryEval implements javax.management.ValueExp {
-            public getValue(): boolean
-            public toString(): string
-            public apply(arg0: javax.management.ObjectName): javax.management.ValueExp
-            public setMBeanServer(arg0: javax.management.MBeanServer): void
-            public static class: java.lang.Class<any>
-        }
-        class ClassAttributeValueExp extends javax.management.AttributeValueExp {
-            public constructor()
-            public apply(arg0: javax.management.ObjectName): javax.management.ValueExp
-            public toString(): string
-            protected getValue(arg0: javax.management.ObjectName): java.lang.Object
-            public static class: java.lang.Class<any>
-        }
-        class DefaultLoaderRepository {
-            public constructor()
-            public static loadClass(arg0: java.lang.String | string): java.lang.Class<any>
-            public static loadClassWithout(arg0: java.lang.ClassLoader, arg1: java.lang.String | string): java.lang.Class<any>
-            public static class: java.lang.Class<any>
-        }
-        interface Descriptor extends java.io.Serializable , java.lang.Cloneable {
-            getFieldValue(arg0: java.lang.String | string): java.lang.Object
-            setField(arg0: java.lang.String | string, arg1: java.lang.Object): void
-            getFields(): java.lang.String[]
-            getFieldNames(): java.lang.String[]
-            getFieldValues(...arg0: java.lang.String[]): java.lang.Object[]
-            removeField(arg0: java.lang.String | string): void
-            setFields(arg0: java.lang.String[], arg1: java.lang.Object[]): void
-            clone(): java.lang.Object
-            isValid(): boolean
-            equals(arg0: java.lang.Object): boolean
-            hashCode(): int
-        }
-        interface DescriptorAccess extends javax.management.DescriptorRead {
-            setDescriptor(arg0: javax.management.Descriptor): void
-        }
-        interface DescriptorKey extends java.lang.annotation.Annotation {
-            value(): string
-        }
-        interface DescriptorRead {
-            getDescriptor(): javax.management.Descriptor
-        }
-        interface DescriptorRead$$Lambda {
-            (): javax.management.Descriptor
-        }
-        interface DynamicMBean {
-            getAttribute(arg0: java.lang.String | string): java.lang.Object
-            setAttribute(arg0: javax.management.Attribute): void
-            getAttributes(arg0: java.lang.String[]): javax.management.AttributeList
-            setAttributes(arg0: javax.management.AttributeList): javax.management.AttributeList
-            invoke(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.String[]): java.lang.Object
-            getMBeanInfo(): javax.management.MBeanInfo
-        }
-        class ImmutableDescriptor implements javax.management.Descriptor {
-            public static EMPTY_DESCRIPTOR: javax.management.ImmutableDescriptor
-            public constructor(arg0: java.lang.String[], arg1: java.lang.Object[])
-            public constructor(...arg0: java.lang.String[])
-            public constructor(arg0: java.util.Map<java.lang.String, any>)
-            public static union(...arg0: javax.management.Descriptor[]): javax.management.ImmutableDescriptor
-            public getFieldValue(arg0: java.lang.String | string): java.lang.Object
-            public getFields(): java.lang.String[]
-            public getFieldValues(...arg0: java.lang.String[]): java.lang.Object[]
-            public getFieldNames(): java.lang.String[]
-            public equals(arg0: java.lang.Object): boolean
-            public hashCode(): int
-            public toString(): string
-            public isValid(): boolean
-            public clone(): javax.management.Descriptor
-            public setFields(arg0: java.lang.String[], arg1: java.lang.Object[]): void
-            public setField(arg0: java.lang.String | string, arg1: java.lang.Object): void
-            public removeField(arg0: java.lang.String | string): void
-            public clone(): java.lang.Object
-            public static class: java.lang.Class<any>
-        }
-        class InQueryExp extends javax.management.QueryEval implements javax.management.QueryExp {
-            public constructor()
-            public constructor(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp[])
-            public getCheckedValue(): javax.management.ValueExp
-            public getExplicitValues(): javax.management.ValueExp[]
-            public apply(arg0: javax.management.ObjectName): boolean
-            public toString(): string
-            public static class: java.lang.Class<any>
-        }
-        class InstanceAlreadyExistsException extends javax.management.OperationsException {
-            public constructor()
-            public constructor(arg0: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
-        class InstanceNotFoundException extends javax.management.OperationsException {
-            public constructor()
-            public constructor(arg0: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
-        class InstanceOfQueryExp extends javax.management.QueryEval implements javax.management.QueryExp {
-            public constructor(arg0: javax.management.StringValueExp)
-            public getClassNameValue(): javax.management.StringValueExp
-            public apply(arg0: javax.management.ObjectName): boolean
-            public toString(): string
-            public static class: java.lang.Class<any>
-        }
-        class IntrospectionException extends javax.management.OperationsException {
-            public constructor()
-            public constructor(arg0: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
-        class InvalidApplicationException extends java.lang.Exception {
-            public constructor(arg0: java.lang.Object)
-            public static class: java.lang.Class<any>
-        }
-        class InvalidAttributeValueException extends javax.management.OperationsException {
-            public constructor()
-            public constructor(arg0: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
-        class JMException extends java.lang.Exception {
-            public constructor()
-            public constructor(arg0: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
-        class JMRuntimeException extends java.lang.RuntimeException {
-            public constructor()
-            public constructor(arg0: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
-        class JMX {
-            public static DEFAULT_VALUE_FIELD: string
-            public static IMMUTABLE_INFO_FIELD: string
-            public static INTERFACE_CLASS_NAME_FIELD: string
-            public static LEGAL_VALUES_FIELD: string
-            public static MAX_VALUE_FIELD: string
-            public static MIN_VALUE_FIELD: string
-            public static MXBEAN_FIELD: string
-            public static OPEN_TYPE_FIELD: string
-            public static ORIGINAL_TYPE_FIELD: string
-            public static newMBeanProxy<T>(arg0: javax.management.MBeanServerConnection, arg1: javax.management.ObjectName, arg2: java.lang.Class<T>): T
-            public static newMBeanProxy<T>(arg0: javax.management.MBeanServerConnection, arg1: javax.management.ObjectName, arg2: java.lang.Class<T>, arg3: boolean): T
-            public static newMXBeanProxy<T>(arg0: javax.management.MBeanServerConnection, arg1: javax.management.ObjectName, arg2: java.lang.Class<T>): T
-            public static newMXBeanProxy<T>(arg0: javax.management.MBeanServerConnection, arg1: javax.management.ObjectName, arg2: java.lang.Class<T>, arg3: boolean): T
-            public static isMXBeanInterface(arg0: java.lang.Class<any>): boolean
-            public static class: java.lang.Class<any>
-        }
-        class ListenerNotFoundException extends javax.management.OperationsException {
-            public constructor()
-            public constructor(arg0: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
-        class MBeanAttributeInfo extends javax.management.MBeanFeatureInfo implements java.lang.Cloneable {
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: boolean, arg4: boolean, arg5: boolean)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: boolean, arg4: boolean, arg5: boolean, arg6: javax.management.Descriptor)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.reflect.Method, arg3: java.lang.reflect.Method)
-            public clone(): java.lang.Object
-            public getType(): string
-            public isReadable(): boolean
-            public isWritable(): boolean
-            public isIs(): boolean
-            public toString(): string
-            public equals(arg0: java.lang.Object): boolean
-            public hashCode(): int
-            public static class: java.lang.Class<any>
-        }
-        class MBeanConstructorInfo extends javax.management.MBeanFeatureInfo implements java.lang.Cloneable {
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.reflect.Constructor<any>)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.management.MBeanParameterInfo[])
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.management.MBeanParameterInfo[], arg3: javax.management.Descriptor)
-            public clone(): java.lang.Object
-            public getSignature(): javax.management.MBeanParameterInfo[]
-            public toString(): string
-            public equals(arg0: java.lang.Object): boolean
-            public hashCode(): int
-            public static class: java.lang.Class<any>
-        }
-        class MBeanException extends javax.management.JMException {
-            public constructor(arg0: java.lang.Exception)
-            public constructor(arg0: java.lang.Exception, arg1: java.lang.String | string)
-            public getTargetException(): java.lang.Exception
-            public getCause(): java.lang.Throwable
-            public static class: java.lang.Class<any>
-        }
-        class MBeanFeatureInfo implements java.io.Serializable , javax.management.DescriptorRead {
-            protected name: string
-            protected description: string
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.management.Descriptor)
-            public getName(): string
-            public getDescription(): string
-            public getDescriptor(): javax.management.Descriptor
-            public equals(arg0: java.lang.Object): boolean
-            public hashCode(): int
-            public static class: java.lang.Class<any>
-        }
-        class MBeanFeatureInfo$$Lambda implements java.io.Serializable , javax.management.DescriptorRead {
-            protected name: string
-        }
-        class MBeanInfo implements java.lang.Cloneable , java.io.Serializable , javax.management.DescriptorRead {
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.management.MBeanAttributeInfo[], arg3: javax.management.MBeanConstructorInfo[], arg4: javax.management.MBeanOperationInfo[], arg5: javax.management.MBeanNotificationInfo[])
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.management.MBeanAttributeInfo[], arg3: javax.management.MBeanConstructorInfo[], arg4: javax.management.MBeanOperationInfo[], arg5: javax.management.MBeanNotificationInfo[], arg6: javax.management.Descriptor)
-            public clone(): java.lang.Object
-            public getClassName(): string
-            public getDescription(): string
-            public getAttributes(): javax.management.MBeanAttributeInfo[]
-            public getOperations(): javax.management.MBeanOperationInfo[]
-            public getConstructors(): javax.management.MBeanConstructorInfo[]
-            public getNotifications(): javax.management.MBeanNotificationInfo[]
-            public getDescriptor(): javax.management.Descriptor
-            public toString(): string
-            public equals(arg0: java.lang.Object): boolean
-            public hashCode(): int
-            public static class: java.lang.Class<any>
-        }
-        class MBeanInfo$$Lambda implements java.lang.Cloneable , java.io.Serializable , javax.management.DescriptorRead {
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.management.MBeanAttributeInfo[], arg3: javax.management.MBeanConstructorInfo[], arg4: javax.management.MBeanOperationInfo[], arg5: javax.management.MBeanNotificationInfo[])
-        }
-        class MBeanNotificationInfo extends javax.management.MBeanFeatureInfo implements java.lang.Cloneable {
-            public constructor(arg0: java.lang.String[], arg1: java.lang.String | string, arg2: java.lang.String | string)
-            public constructor(arg0: java.lang.String[], arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: javax.management.Descriptor)
-            public clone(): java.lang.Object
-            public getNotifTypes(): java.lang.String[]
-            public toString(): string
-            public equals(arg0: java.lang.Object): boolean
-            public hashCode(): int
-            public static class: java.lang.Class<any>
-        }
-        class MBeanOperationInfo extends javax.management.MBeanFeatureInfo implements java.lang.Cloneable {
-            public static INFO: int
-            public static ACTION: int
-            public static ACTION_INFO: int
-            public static UNKNOWN: int
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.reflect.Method)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.management.MBeanParameterInfo[], arg3: java.lang.String | string, arg4: int)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.management.MBeanParameterInfo[], arg3: java.lang.String | string, arg4: int, arg5: javax.management.Descriptor)
-            public clone(): java.lang.Object
-            public getReturnType(): string
-            public getSignature(): javax.management.MBeanParameterInfo[]
-            public getImpact(): int
-            public toString(): string
-            public equals(arg0: java.lang.Object): boolean
-            public hashCode(): int
-            public static class: java.lang.Class<any>
-        }
-        class MBeanParameterInfo extends javax.management.MBeanFeatureInfo implements java.lang.Cloneable {
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: javax.management.Descriptor)
-            public clone(): java.lang.Object
-            public getType(): string
-            public toString(): string
-            public equals(arg0: java.lang.Object): boolean
-            public hashCode(): int
-            public static class: java.lang.Class<any>
-        }
-        class MBeanPermission extends java.security.Permission {
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.management.ObjectName, arg3: java.lang.String | string)
-            public getActions(): string
-            public hashCode(): int
-            public implies(arg0: java.security.Permission): boolean
-            public equals(arg0: java.lang.Object): boolean
-            public static class: java.lang.Class<any>
-        }
-        interface MBeanRegistration {
-            preRegister(arg0: javax.management.MBeanServer, arg1: javax.management.ObjectName): javax.management.ObjectName
-            postRegister(arg0: java.lang.Boolean | boolean): void
-            preDeregister(): void
-            postDeregister(): void
-        }
-        class MBeanRegistrationException extends javax.management.MBeanException {
-            public constructor(arg0: java.lang.Exception)
-            public constructor(arg0: java.lang.Exception, arg1: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
-        interface MBeanServer extends javax.management.MBeanServerConnection {
-            createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName): javax.management.ObjectInstance
-            createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName, arg2: javax.management.ObjectName): javax.management.ObjectInstance
-            createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName, arg2: java.lang.Object[], arg3: java.lang.String[]): javax.management.ObjectInstance
-            createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName, arg2: javax.management.ObjectName, arg3: java.lang.Object[], arg4: java.lang.String[]): javax.management.ObjectInstance
-            registerMBean(arg0: java.lang.Object, arg1: javax.management.ObjectName): javax.management.ObjectInstance
-            unregisterMBean(arg0: javax.management.ObjectName): void
-            getObjectInstance(arg0: javax.management.ObjectName): javax.management.ObjectInstance
-            queryMBeans(arg0: javax.management.ObjectName, arg1: javax.management.QueryExp): java.util.Set<javax.management.ObjectInstance>
-            queryNames(arg0: javax.management.ObjectName, arg1: javax.management.QueryExp): java.util.Set<javax.management.ObjectName>
-            isRegistered(arg0: javax.management.ObjectName): boolean
-            getMBeanCount(): java.lang.Integer
-            getAttribute(arg0: javax.management.ObjectName, arg1: java.lang.String | string): java.lang.Object
-            getAttributes(arg0: javax.management.ObjectName, arg1: java.lang.String[]): javax.management.AttributeList
-            setAttribute(arg0: javax.management.ObjectName, arg1: javax.management.Attribute): void
-            setAttributes(arg0: javax.management.ObjectName, arg1: javax.management.AttributeList): javax.management.AttributeList
-            invoke(arg0: javax.management.ObjectName, arg1: java.lang.String | string, arg2: java.lang.Object[], arg3: java.lang.String[]): java.lang.Object
-            getDefaultDomain(): string
-            getDomains(): java.lang.String[]
-            addNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
-            addNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
-            removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName): void
-            removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
-            removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener): void
-            removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
-            getMBeanInfo(arg0: javax.management.ObjectName): javax.management.MBeanInfo
-            isInstanceOf(arg0: javax.management.ObjectName, arg1: java.lang.String | string): boolean
-            instantiate(arg0: java.lang.String | string): java.lang.Object
-            instantiate(arg0: java.lang.String | string, arg1: javax.management.ObjectName): java.lang.Object
-            instantiate(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.String[]): java.lang.Object
-            instantiate(arg0: java.lang.String | string, arg1: javax.management.ObjectName, arg2: java.lang.Object[], arg3: java.lang.String[]): java.lang.Object
-            deserialize(arg0: javax.management.ObjectName, arg1: byte[]): java.io.ObjectInputStream
-            deserialize(arg0: java.lang.String | string, arg1: byte[]): java.io.ObjectInputStream
-            deserialize(arg0: java.lang.String | string, arg1: javax.management.ObjectName, arg2: byte[]): java.io.ObjectInputStream
-            getClassLoaderFor(arg0: javax.management.ObjectName): java.lang.ClassLoader
-            getClassLoader(arg0: javax.management.ObjectName): java.lang.ClassLoader
-            getClassLoaderRepository(): javax.management.loading.ClassLoaderRepository
-        }
-        class MBeanServerBuilder {
-            public constructor()
-            public newMBeanServerDelegate(): javax.management.MBeanServerDelegate
-            public newMBeanServer(arg0: java.lang.String | string, arg1: javax.management.MBeanServer, arg2: javax.management.MBeanServerDelegate): javax.management.MBeanServer
-            public static class: java.lang.Class<any>
-        }
-        interface MBeanServerConnection {
-            createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName): javax.management.ObjectInstance
-            createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName, arg2: javax.management.ObjectName): javax.management.ObjectInstance
-            createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName, arg2: java.lang.Object[], arg3: java.lang.String[]): javax.management.ObjectInstance
-            createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName, arg2: javax.management.ObjectName, arg3: java.lang.Object[], arg4: java.lang.String[]): javax.management.ObjectInstance
-            unregisterMBean(arg0: javax.management.ObjectName): void
-            getObjectInstance(arg0: javax.management.ObjectName): javax.management.ObjectInstance
-            queryMBeans(arg0: javax.management.ObjectName, arg1: javax.management.QueryExp): java.util.Set<javax.management.ObjectInstance>
-            queryNames(arg0: javax.management.ObjectName, arg1: javax.management.QueryExp): java.util.Set<javax.management.ObjectName>
-            isRegistered(arg0: javax.management.ObjectName): boolean
-            getMBeanCount(): java.lang.Integer
-            getAttribute(arg0: javax.management.ObjectName, arg1: java.lang.String | string): java.lang.Object
-            getAttributes(arg0: javax.management.ObjectName, arg1: java.lang.String[]): javax.management.AttributeList
-            setAttribute(arg0: javax.management.ObjectName, arg1: javax.management.Attribute): void
-            setAttributes(arg0: javax.management.ObjectName, arg1: javax.management.AttributeList): javax.management.AttributeList
-            invoke(arg0: javax.management.ObjectName, arg1: java.lang.String | string, arg2: java.lang.Object[], arg3: java.lang.String[]): java.lang.Object
-            getDefaultDomain(): string
-            getDomains(): java.lang.String[]
-            addNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
-            addNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
-            removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName): void
-            removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
-            removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener): void
-            removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
-            getMBeanInfo(arg0: javax.management.ObjectName): javax.management.MBeanInfo
-            isInstanceOf(arg0: javax.management.ObjectName, arg1: java.lang.String | string): boolean
-        }
-        class MBeanServerDelegate implements javax.management.MBeanServerDelegateMBean , javax.management.NotificationEmitter {
-            public static DELEGATE_NAME: javax.management.ObjectName
-            public constructor()
-            public getMBeanServerId(): string
-            public getSpecificationName(): string
-            public getSpecificationVersion(): string
-            public getSpecificationVendor(): string
-            public getImplementationName(): string
-            public getImplementationVersion(): string
-            public getImplementationVendor(): string
-            public getNotificationInfo(): javax.management.MBeanNotificationInfo[]
-            public addNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
-            public removeNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
-            public removeNotificationListener(arg0: javax.management.NotificationListener): void
-            public sendNotification(arg0: javax.management.Notification): void
-            public static class: java.lang.Class<any>
-        }
-        interface MBeanServerDelegateMBean {
-            getMBeanServerId(): string
-            getSpecificationName(): string
-            getSpecificationVersion(): string
-            getSpecificationVendor(): string
-            getImplementationName(): string
-            getImplementationVersion(): string
-            getImplementationVendor(): string
-        }
-        class MBeanServerFactory {
-            public static releaseMBeanServer(arg0: javax.management.MBeanServer): void
-            public static createMBeanServer(): javax.management.MBeanServer
-            public static createMBeanServer(arg0: java.lang.String | string): javax.management.MBeanServer
-            public static newMBeanServer(): javax.management.MBeanServer
-            public static newMBeanServer(arg0: java.lang.String | string): javax.management.MBeanServer
-            public static findMBeanServer(arg0: java.lang.String | string): java.util.ArrayList<javax.management.MBeanServer>
-            public static getClassLoaderRepository(arg0: javax.management.MBeanServer): javax.management.loading.ClassLoaderRepository
-            public static class: java.lang.Class<any>
-        }
-        class MBeanServerInvocationHandler implements java.lang.reflect.InvocationHandler {
-            public constructor(arg0: javax.management.MBeanServerConnection, arg1: javax.management.ObjectName)
-            public constructor(arg0: javax.management.MBeanServerConnection, arg1: javax.management.ObjectName, arg2: boolean)
-            public getMBeanServerConnection(): javax.management.MBeanServerConnection
-            public getObjectName(): javax.management.ObjectName
-            public isMXBean(): boolean
-            public static newProxyInstance<T>(arg0: javax.management.MBeanServerConnection, arg1: javax.management.ObjectName, arg2: java.lang.Class<T>, arg3: boolean): T
-            public invoke(arg0: java.lang.Object, arg1: java.lang.reflect.Method, arg2: java.lang.Object[]): java.lang.Object
-            public static class: java.lang.Class<any>
-        }
-        class MBeanServerInvocationHandler$$Lambda implements java.lang.reflect.InvocationHandler {
-            public constructor(arg0: javax.management.MBeanServerConnection, arg1: javax.management.ObjectName)
-        }
-        class MBeanServerNotification extends javax.management.Notification {
-            public static REGISTRATION_NOTIFICATION: string
-            public static UNREGISTRATION_NOTIFICATION: string
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: long, arg3: javax.management.ObjectName)
-            public getMBeanName(): javax.management.ObjectName
-            public toString(): string
-            public static class: java.lang.Class<any>
-        }
-        class MBeanServerPermission extends java.security.BasicPermission {
-            public constructor(arg0: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
-            public hashCode(): int
-            public implies(arg0: java.security.Permission): boolean
-            public equals(arg0: java.lang.Object): boolean
-            public newPermissionCollection(): java.security.PermissionCollection
-            public static class: java.lang.Class<any>
-        }
-        class MBeanTrustPermission extends java.security.BasicPermission {
-            public constructor(arg0: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
-        interface MXBean extends java.lang.annotation.Annotation {
-            value(): boolean
-        }
-        class MalformedObjectNameException extends javax.management.OperationsException {
-            public constructor()
-            public constructor(arg0: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
-        class MatchQueryExp extends javax.management.QueryEval implements javax.management.QueryExp {
-            public constructor()
-            public constructor(arg0: javax.management.AttributeValueExp, arg1: javax.management.StringValueExp)
-            public getAttribute(): javax.management.AttributeValueExp
-            public getPattern(): string
-            public apply(arg0: javax.management.ObjectName): boolean
-            public toString(): string
-            public static class: java.lang.Class<any>
-        }
-        class NotCompliantMBeanException extends javax.management.OperationsException {
-            public constructor()
-            public constructor(arg0: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
-        class NotQueryExp extends javax.management.QueryEval implements javax.management.QueryExp {
-            public constructor()
-            public constructor(arg0: javax.management.QueryExp)
-            public getNegatedExp(): javax.management.QueryExp
-            public apply(arg0: javax.management.ObjectName): boolean
-            public toString(): string
-            public static class: java.lang.Class<any>
-        }
-        class Notification extends java.util.EventObject {
-            protected source: java.lang.Object
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: long)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: long, arg3: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: long, arg3: long)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: long, arg3: long, arg4: java.lang.String | string)
-            public setSource(arg0: java.lang.Object): void
-            public getSequenceNumber(): long
-            public setSequenceNumber(arg0: long): void
-            public getType(): string
-            public getTimeStamp(): long
-            public setTimeStamp(arg0: long): void
-            public getMessage(): string
-            public getUserData(): java.lang.Object
-            public setUserData(arg0: java.lang.Object): void
-            public toString(): string
-            public static class: java.lang.Class<any>
-        }
-        interface NotificationBroadcaster {
-            addNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
-            removeNotificationListener(arg0: javax.management.NotificationListener): void
-            getNotificationInfo(): javax.management.MBeanNotificationInfo[]
-        }
-        class NotificationBroadcasterSupport implements javax.management.NotificationEmitter {
-            public constructor()
-            public constructor(arg0: java.util.concurrent.Executor | java.util.concurrent.Executor$$Lambda)
-            public constructor(...arg0: javax.management.MBeanNotificationInfo[])
-            public constructor(arg0: java.util.concurrent.Executor | java.util.concurrent.Executor$$Lambda, ...arg1: javax.management.MBeanNotificationInfo[])
-            public addNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
-            public removeNotificationListener(arg0: javax.management.NotificationListener): void
-            public removeNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
-            public getNotificationInfo(): javax.management.MBeanNotificationInfo[]
-            public sendNotification(arg0: javax.management.Notification): void
-            protected handleNotification(arg0: javax.management.NotificationListener, arg1: javax.management.Notification, arg2: java.lang.Object): void
-            public static class: java.lang.Class<any>
-        }
-        interface NotificationEmitter extends javax.management.NotificationBroadcaster {
-            removeNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
-        }
-        interface NotificationFilter extends java.io.Serializable {
-            isNotificationEnabled(arg0: javax.management.Notification): boolean
-        }
-        class NotificationFilterSupport implements javax.management.NotificationFilter {
-            public constructor()
-            public isNotificationEnabled(arg0: javax.management.Notification): boolean
-            public enableType(arg0: java.lang.String | string): void
-            public disableType(arg0: java.lang.String | string): void
-            public disableAllTypes(): void
-            public getEnabledTypes(): java.util.Vector<java.lang.String>
-            public static class: java.lang.Class<any>
-        }
-        interface NotificationListener extends java.util.EventListener {
-            handleNotification(arg0: javax.management.Notification, arg1: java.lang.Object): void
-        }
-        class NumericValueExp extends javax.management.QueryEval implements javax.management.ValueExp {
-            public constructor()
-            public doubleValue(): double
-            public longValue(): long
-            public isLong(): boolean
-            public toString(): string
-            public apply(arg0: javax.management.ObjectName): javax.management.ValueExp
-            public setMBeanServer(arg0: javax.management.MBeanServer): void
-            public static class: java.lang.Class<any>
-        }
-        class ObjectInstance implements java.io.Serializable {
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
-            public constructor(arg0: javax.management.ObjectName, arg1: java.lang.String | string)
-            public equals(arg0: java.lang.Object): boolean
-            public hashCode(): int
-            public getObjectName(): javax.management.ObjectName
-            public getClassName(): string
-            public toString(): string
-            public static class: java.lang.Class<any>
-        }
-        class ObjectName implements java.lang.Comparable<javax.management.ObjectName> , javax.management.QueryExp {
-            public static WILDCARD: javax.management.ObjectName
-            public static getInstance(arg0: java.lang.String | string): javax.management.ObjectName
-            public static getInstance(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): javax.management.ObjectName
-            public static getInstance(arg0: java.lang.String | string, arg1: java.util.Hashtable<java.lang.String, java.lang.String>): javax.management.ObjectName
-            public static getInstance(arg0: javax.management.ObjectName): javax.management.ObjectName
-            public constructor(arg0: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: java.util.Hashtable<java.lang.String, java.lang.String>)
-            public isPattern(): boolean
-            public isDomainPattern(): boolean
-            public isPropertyPattern(): boolean
-            public isPropertyListPattern(): boolean
-            public isPropertyValuePattern(): boolean
-            public isPropertyValuePattern(arg0: java.lang.String | string): boolean
-            public getCanonicalName(): string
-            public getDomain(): string
-            public getKeyProperty(arg0: java.lang.String | string): string
-            public getKeyPropertyList(): java.util.Hashtable<java.lang.String, java.lang.String>
-            public getKeyPropertyListString(): string
-            public getCanonicalKeyPropertyListString(): string
-            public toString(): string
-            public equals(arg0: java.lang.Object): boolean
-            public hashCode(): int
-            public static quote(arg0: java.lang.String | string): string
-            public static unquote(arg0: java.lang.String | string): string
-            public apply(arg0: javax.management.ObjectName): boolean
-            public setMBeanServer(arg0: javax.management.MBeanServer): void
-            public compareTo(arg0: javax.management.ObjectName): int
-            public compareTo(arg0: java.lang.Object): int
-            public static class: java.lang.Class<any>
-        }
-        class OperationsException extends javax.management.JMException {
-            public constructor()
-            public constructor(arg0: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
-        class OrQueryExp extends javax.management.QueryEval implements javax.management.QueryExp {
-            public constructor()
-            public constructor(arg0: javax.management.QueryExp, arg1: javax.management.QueryExp)
-            public getLeftExp(): javax.management.QueryExp
-            public getRightExp(): javax.management.QueryExp
-            public apply(arg0: javax.management.ObjectName): boolean
-            public toString(): string
-            public static class: java.lang.Class<any>
-        }
-        interface PersistentMBean {
-            load(): void
-            store(): void
-        }
-        class QualifiedAttributeValueExp extends javax.management.AttributeValueExp {
-            public constructor()
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
-            public getAttrClassName(): string
-            public apply(arg0: javax.management.ObjectName): javax.management.ValueExp
-            public toString(): string
-            public static class: java.lang.Class<any>
-        }
-        class Query {
-            public static GT: int
-            public static LT: int
-            public static GE: int
-            public static LE: int
-            public static EQ: int
-            public static PLUS: int
-            public static MINUS: int
-            public static TIMES: int
-            public static DIV: int
-            public constructor()
-            public static and(arg0: javax.management.QueryExp, arg1: javax.management.QueryExp): javax.management.QueryExp
-            public static or(arg0: javax.management.QueryExp, arg1: javax.management.QueryExp): javax.management.QueryExp
-            public static gt(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp): javax.management.QueryExp
-            public static geq(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp): javax.management.QueryExp
-            public static leq(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp): javax.management.QueryExp
-            public static lt(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp): javax.management.QueryExp
-            public static eq(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp): javax.management.QueryExp
-            public static between(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp, arg2: javax.management.ValueExp): javax.management.QueryExp
-            public static match(arg0: javax.management.AttributeValueExp, arg1: javax.management.StringValueExp): javax.management.QueryExp
-            public static attr(arg0: java.lang.String | string): javax.management.AttributeValueExp
-            public static attr(arg0: java.lang.String | string, arg1: java.lang.String | string): javax.management.AttributeValueExp
-            public static classattr(): javax.management.AttributeValueExp
-            public static not(arg0: javax.management.QueryExp): javax.management.QueryExp
-            public static in(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp[]): javax.management.QueryExp
-            public static value(arg0: java.lang.String | string): javax.management.StringValueExp
-            public static value(arg0: java.lang.Number): javax.management.ValueExp
-            public static value(arg0: int): javax.management.ValueExp
-            public static value(arg0: long): javax.management.ValueExp
-            public static value(arg0: float): javax.management.ValueExp
-            public static value(arg0: double): javax.management.ValueExp
-            public static value(arg0: boolean): javax.management.ValueExp
-            public static plus(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp): javax.management.ValueExp
-            public static times(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp): javax.management.ValueExp
-            public static minus(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp): javax.management.ValueExp
-            public static div(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp): javax.management.ValueExp
-            public static initialSubString(arg0: javax.management.AttributeValueExp, arg1: javax.management.StringValueExp): javax.management.QueryExp
-            public static anySubString(arg0: javax.management.AttributeValueExp, arg1: javax.management.StringValueExp): javax.management.QueryExp
-            public static finalSubString(arg0: javax.management.AttributeValueExp, arg1: javax.management.StringValueExp): javax.management.QueryExp
-            public static isInstanceOf(arg0: javax.management.StringValueExp): javax.management.QueryExp
-            public static class: java.lang.Class<any>
-        }
-        abstract class QueryEval implements java.io.Serializable {
-            public constructor()
-            public setMBeanServer(arg0: javax.management.MBeanServer): void
-            public static getMBeanServer(): javax.management.MBeanServer
-            public static class: java.lang.Class<any>
-        }
-        interface QueryExp extends java.io.Serializable {
-            apply(arg0: javax.management.ObjectName): boolean
-            setMBeanServer(arg0: javax.management.MBeanServer): void
-        }
-        class ReflectionException extends javax.management.JMException {
-            public constructor(arg0: java.lang.Exception)
-            public constructor(arg0: java.lang.Exception, arg1: java.lang.String | string)
-            public getTargetException(): java.lang.Exception
-            public getCause(): java.lang.Throwable
-            public static class: java.lang.Class<any>
-        }
-        class RuntimeErrorException extends javax.management.JMRuntimeException {
-            public constructor(arg0: java.lang.Error)
-            public constructor(arg0: java.lang.Error, arg1: java.lang.String | string)
-            public getTargetError(): java.lang.Error
-            public getCause(): java.lang.Throwable
-            public static class: java.lang.Class<any>
-        }
-        class RuntimeMBeanException extends javax.management.JMRuntimeException {
-            public constructor(arg0: java.lang.RuntimeException)
-            public constructor(arg0: java.lang.RuntimeException, arg1: java.lang.String | string)
-            public getTargetException(): java.lang.RuntimeException
-            public getCause(): java.lang.Throwable
-            public static class: java.lang.Class<any>
-        }
-        class RuntimeOperationsException extends javax.management.JMRuntimeException {
-            public constructor(arg0: java.lang.RuntimeException)
-            public constructor(arg0: java.lang.RuntimeException, arg1: java.lang.String | string)
-            public getTargetException(): java.lang.RuntimeException
-            public getCause(): java.lang.Throwable
-            public static class: java.lang.Class<any>
-        }
-        class ServiceNotFoundException extends javax.management.OperationsException {
-            public constructor()
-            public constructor(arg0: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
-        class StandardEmitterMBean extends javax.management.StandardMBean implements javax.management.NotificationEmitter {
-            public constructor(arg0: T, arg1: java.lang.Class<T>, arg2: javax.management.NotificationEmitter)
-            public constructor(arg0: T, arg1: java.lang.Class<T>, arg2: boolean, arg3: javax.management.NotificationEmitter)
-            protected constructor(arg0: java.lang.Class<any>, arg1: javax.management.NotificationEmitter)
-            protected constructor(arg0: java.lang.Class<any>, arg1: boolean, arg2: javax.management.NotificationEmitter)
-            public removeNotificationListener<T>(arg0: javax.management.NotificationListener): void
-            public removeNotificationListener<T>(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
-            public addNotificationListener<T>(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
-            public getNotificationInfo<T>(): javax.management.MBeanNotificationInfo[]
-            public sendNotification<T>(arg0: javax.management.Notification): void
-            public static class: java.lang.Class<any>
-        }
-        class StandardMBean implements javax.management.DynamicMBean , javax.management.MBeanRegistration {
-            public constructor(arg0: T, arg1: java.lang.Class<T>)
-            protected constructor(arg0: java.lang.Class<any>)
-            public constructor(arg0: T, arg1: java.lang.Class<T>, arg2: boolean)
-            protected constructor(arg0: java.lang.Class<any>, arg1: boolean)
-            public setImplementation<T>(arg0: java.lang.Object): void
-            public getImplementation<T>(): java.lang.Object
-            public getMBeanInterface<T>(): java.lang.Class<any>
-            public getImplementationClass<T>(): java.lang.Class<any>
-            public getAttribute<T>(arg0: java.lang.String | string): java.lang.Object
-            public setAttribute<T>(arg0: javax.management.Attribute): void
-            public getAttributes<T>(arg0: java.lang.String[]): javax.management.AttributeList
-            public setAttributes<T>(arg0: javax.management.AttributeList): javax.management.AttributeList
-            public invoke<T>(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.String[]): java.lang.Object
-            public getMBeanInfo<T>(): javax.management.MBeanInfo
-            protected getClassName<T>(arg0: javax.management.MBeanInfo | javax.management.MBeanInfo$$Lambda): string
-            protected getDescription<T>(arg0: javax.management.MBeanInfo | javax.management.MBeanInfo$$Lambda): string
-            protected getDescription<T>(arg0: javax.management.MBeanFeatureInfo | javax.management.MBeanFeatureInfo$$Lambda): string
-            protected getDescription<T>(arg0: javax.management.MBeanAttributeInfo): string
-            protected getDescription<T>(arg0: javax.management.MBeanConstructorInfo): string
-            protected getDescription<T>(arg0: javax.management.MBeanConstructorInfo, arg1: javax.management.MBeanParameterInfo, arg2: int): string
-            protected getParameterName<T>(arg0: javax.management.MBeanConstructorInfo, arg1: javax.management.MBeanParameterInfo, arg2: int): string
-            protected getDescription<T>(arg0: javax.management.MBeanOperationInfo): string
-            protected getImpact<T>(arg0: javax.management.MBeanOperationInfo): int
-            protected getParameterName<T>(arg0: javax.management.MBeanOperationInfo, arg1: javax.management.MBeanParameterInfo, arg2: int): string
-            protected getDescription<T>(arg0: javax.management.MBeanOperationInfo, arg1: javax.management.MBeanParameterInfo, arg2: int): string
-            protected getConstructors<T>(arg0: javax.management.MBeanConstructorInfo[], arg1: java.lang.Object): javax.management.MBeanConstructorInfo[]
-            protected getCachedMBeanInfo<T>(): javax.management.MBeanInfo
-            protected cacheMBeanInfo<T>(arg0: javax.management.MBeanInfo | javax.management.MBeanInfo$$Lambda): void
-            public preRegister<T>(arg0: javax.management.MBeanServer, arg1: javax.management.ObjectName): javax.management.ObjectName
-            public postRegister<T>(arg0: java.lang.Boolean | boolean): void
-            public preDeregister<T>(): void
-            public postDeregister<T>(): void
-            public static class: java.lang.Class<any>
-        }
-        class StringValueExp implements javax.management.ValueExp {
-            public constructor()
-            public constructor(arg0: java.lang.String | string)
-            public getValue(): string
-            public toString(): string
-            public setMBeanServer(arg0: javax.management.MBeanServer): void
-            public apply(arg0: javax.management.ObjectName): javax.management.ValueExp
-            public static class: java.lang.Class<any>
-        }
-        interface ValueExp extends java.io.Serializable {
-            apply(arg0: javax.management.ObjectName): javax.management.ValueExp
-            setMBeanServer(arg0: javax.management.MBeanServer): void
-        }
         namespace loading {
             interface ClassLoaderRepository {
                 loadClass(arg0: java.lang.String | string): java.lang.Class<any>
@@ -2989,10 +2155,1015 @@ declare namespace javax {
                 public static class: java.lang.Class<any>
             }
         }
+        class AndQueryExp extends javax.management.QueryEval implements javax.management.QueryExp {
+            public constructor()
+            public constructor(arg0: javax.management.QueryExp, arg1: javax.management.QueryExp)
+            public getLeftExp(): javax.management.QueryExp
+            public getRightExp(): javax.management.QueryExp
+            public apply(arg0: javax.management.ObjectName): boolean
+            public toString(): string
+            public static class: java.lang.Class<any>
+        }
+        class Attribute implements java.io.Serializable {
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.Object)
+            public getName(): string
+            public getValue(): java.lang.Object
+            public equals(arg0: java.lang.Object): boolean
+            public hashCode(): int
+            public toString(): string
+            public static class: java.lang.Class<any>
+        }
+        class AttributeChangeNotification extends javax.management.Notification {
+            public static ATTRIBUTE_CHANGE: string
+            public constructor(arg0: java.lang.Object, arg1: long, arg2: long, arg3: java.lang.String | string, arg4: java.lang.String | string, arg5: java.lang.String | string, arg6: java.lang.Object, arg7: java.lang.Object)
+            public getAttributeName(): string
+            public getAttributeType(): string
+            public getOldValue(): java.lang.Object
+            public getNewValue(): java.lang.Object
+            public static class: java.lang.Class<any>
+        }
+        class AttributeChangeNotificationFilter implements javax.management.NotificationFilter {
+            public constructor()
+            public isNotificationEnabled(arg0: javax.management.Notification): boolean
+            public enableAttribute(arg0: java.lang.String | string): void
+            public disableAttribute(arg0: java.lang.String | string): void
+            public disableAllAttributes(): void
+            public getEnabledAttributes(): java.util.Vector<java.lang.String>
+            public static class: java.lang.Class<any>
+        }
+        class AttributeList extends java.util.ArrayList<java.lang.Object> {
+            public constructor()
+            public constructor(arg0: int)
+            public constructor(arg0: javax.management.AttributeList)
+            public constructor(arg0: java.util.List<javax.management.Attribute>)
+            public asList(): java.util.List<javax.management.Attribute>
+            public add(arg0: javax.management.Attribute): void
+            public add(arg0: int, arg1: javax.management.Attribute): void
+            public set(arg0: int, arg1: javax.management.Attribute): void
+            public addAll(arg0: javax.management.AttributeList): boolean
+            public addAll(arg0: int, arg1: javax.management.AttributeList): boolean
+            public add(arg0: java.lang.Object): boolean
+            public add(arg0: int, arg1: java.lang.Object): void
+            public addAll(arg0: java.util.Collection<any>): boolean
+            public addAll(arg0: int, arg1: java.util.Collection<any>): boolean
+            public set(arg0: int, arg1: java.lang.Object): java.lang.Object
+            public static class: java.lang.Class<any>
+        }
+        class AttributeNotFoundException extends javax.management.OperationsException {
+            public constructor()
+            public constructor(arg0: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
+        class AttributeValueExp implements javax.management.ValueExp {
+            public constructor()
+            public constructor(arg0: java.lang.String | string)
+            public getAttributeName(): string
+            public apply(arg0: javax.management.ObjectName): javax.management.ValueExp
+            public toString(): string
+            public setMBeanServer(arg0: javax.management.MBeanServer): void
+            protected getAttribute(arg0: javax.management.ObjectName): java.lang.Object
+            public static class: java.lang.Class<any>
+        }
+        class BadAttributeValueExpException extends java.lang.Exception {
+            public constructor(arg0: java.lang.Object)
+            public toString(): string
+            public static class: java.lang.Class<any>
+        }
+        class BadBinaryOpValueExpException extends java.lang.Exception {
+            public constructor(arg0: javax.management.ValueExp)
+            public getExp(): javax.management.ValueExp
+            public toString(): string
+            public static class: java.lang.Class<any>
+        }
+        class BadStringOperationException extends java.lang.Exception {
+            public constructor(arg0: java.lang.String | string)
+            public toString(): string
+            public static class: java.lang.Class<any>
+        }
+        class BetweenQueryExp extends javax.management.QueryEval implements javax.management.QueryExp {
+            public constructor()
+            public constructor(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp, arg2: javax.management.ValueExp)
+            public getCheckedValue(): javax.management.ValueExp
+            public getLowerBound(): javax.management.ValueExp
+            public getUpperBound(): javax.management.ValueExp
+            public apply(arg0: javax.management.ObjectName): boolean
+            public toString(): string
+            public static class: java.lang.Class<any>
+        }
+        class BinaryOpValueExp extends javax.management.QueryEval implements javax.management.ValueExp {
+            public constructor()
+            public constructor(arg0: int, arg1: javax.management.ValueExp, arg2: javax.management.ValueExp)
+            public getOperator(): int
+            public getLeftValue(): javax.management.ValueExp
+            public getRightValue(): javax.management.ValueExp
+            public apply(arg0: javax.management.ObjectName): javax.management.ValueExp
+            public toString(): string
+            public setMBeanServer(arg0: javax.management.MBeanServer): void
+            public static class: java.lang.Class<any>
+        }
+        class BinaryRelQueryExp extends javax.management.QueryEval implements javax.management.QueryExp {
+            public constructor()
+            public constructor(arg0: int, arg1: javax.management.ValueExp, arg2: javax.management.ValueExp)
+            public getOperator(): int
+            public getLeftValue(): javax.management.ValueExp
+            public getRightValue(): javax.management.ValueExp
+            public apply(arg0: javax.management.ObjectName): boolean
+            public toString(): string
+            public static class: java.lang.Class<any>
+        }
+        class BooleanValueExp extends javax.management.QueryEval implements javax.management.ValueExp {
+            public getValue(): boolean
+            public toString(): string
+            public apply(arg0: javax.management.ObjectName): javax.management.ValueExp
+            public setMBeanServer(arg0: javax.management.MBeanServer): void
+            public static class: java.lang.Class<any>
+        }
+        class ClassAttributeValueExp extends javax.management.AttributeValueExp {
+            public constructor()
+            public apply(arg0: javax.management.ObjectName): javax.management.ValueExp
+            public toString(): string
+            protected getValue(arg0: javax.management.ObjectName): java.lang.Object
+            public static class: java.lang.Class<any>
+        }
+        class DefaultLoaderRepository {
+            public constructor()
+            public static loadClass(arg0: java.lang.String | string): java.lang.Class<any>
+            public static loadClassWithout(arg0: java.lang.ClassLoader, arg1: java.lang.String | string): java.lang.Class<any>
+            public static class: java.lang.Class<any>
+        }
+        interface Descriptor extends java.io.Serializable , java.lang.Cloneable {
+            getFieldValue(arg0: java.lang.String | string): java.lang.Object
+            setField(arg0: java.lang.String | string, arg1: java.lang.Object): void
+            getFields(): java.lang.String[]
+            getFieldNames(): java.lang.String[]
+            getFieldValues(...arg0: java.lang.String[]): java.lang.Object[]
+            removeField(arg0: java.lang.String | string): void
+            setFields(arg0: java.lang.String[], arg1: java.lang.Object[]): void
+            clone(): java.lang.Object
+            isValid(): boolean
+            equals(arg0: java.lang.Object): boolean
+            hashCode(): int
+        }
+        interface DescriptorAccess extends javax.management.DescriptorRead {
+            setDescriptor(arg0: javax.management.Descriptor): void
+        }
+        interface DescriptorKey extends java.lang.annotation.Annotation {
+            value(): string
+        }
+        interface DescriptorRead {
+            getDescriptor(): javax.management.Descriptor
+        }
+        interface DescriptorRead$$Lambda {
+            (): javax.management.Descriptor
+        }
+        interface DynamicMBean {
+            getAttribute(arg0: java.lang.String | string): java.lang.Object
+            setAttribute(arg0: javax.management.Attribute): void
+            getAttributes(arg0: java.lang.String[]): javax.management.AttributeList
+            setAttributes(arg0: javax.management.AttributeList): javax.management.AttributeList
+            invoke(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.String[]): java.lang.Object
+            getMBeanInfo(): javax.management.MBeanInfo
+        }
+        class ImmutableDescriptor implements javax.management.Descriptor {
+            public static EMPTY_DESCRIPTOR: javax.management.ImmutableDescriptor
+            public constructor(arg0: java.lang.String[], arg1: java.lang.Object[])
+            public constructor(...arg0: java.lang.String[])
+            public constructor(arg0: java.util.Map<java.lang.String, any>)
+            public static union(...arg0: javax.management.Descriptor[]): javax.management.ImmutableDescriptor
+            public getFieldValue(arg0: java.lang.String | string): java.lang.Object
+            public getFields(): java.lang.String[]
+            public getFieldValues(...arg0: java.lang.String[]): java.lang.Object[]
+            public getFieldNames(): java.lang.String[]
+            public equals(arg0: java.lang.Object): boolean
+            public hashCode(): int
+            public toString(): string
+            public isValid(): boolean
+            public clone(): javax.management.Descriptor
+            public setFields(arg0: java.lang.String[], arg1: java.lang.Object[]): void
+            public setField(arg0: java.lang.String | string, arg1: java.lang.Object): void
+            public removeField(arg0: java.lang.String | string): void
+            public clone(): java.lang.Object
+            public static class: java.lang.Class<any>
+        }
+        class InQueryExp extends javax.management.QueryEval implements javax.management.QueryExp {
+            public constructor()
+            public constructor(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp[])
+            public getCheckedValue(): javax.management.ValueExp
+            public getExplicitValues(): javax.management.ValueExp[]
+            public apply(arg0: javax.management.ObjectName): boolean
+            public toString(): string
+            public static class: java.lang.Class<any>
+        }
+        class InstanceAlreadyExistsException extends javax.management.OperationsException {
+            public constructor()
+            public constructor(arg0: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
+        class InstanceNotFoundException extends javax.management.OperationsException {
+            public constructor()
+            public constructor(arg0: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
+        class InstanceOfQueryExp extends javax.management.QueryEval implements javax.management.QueryExp {
+            public constructor(arg0: javax.management.StringValueExp)
+            public getClassNameValue(): javax.management.StringValueExp
+            public apply(arg0: javax.management.ObjectName): boolean
+            public toString(): string
+            public static class: java.lang.Class<any>
+        }
+        class IntrospectionException extends javax.management.OperationsException {
+            public constructor()
+            public constructor(arg0: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
+        class InvalidApplicationException extends java.lang.Exception {
+            public constructor(arg0: java.lang.Object)
+            public static class: java.lang.Class<any>
+        }
+        class InvalidAttributeValueException extends javax.management.OperationsException {
+            public constructor()
+            public constructor(arg0: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
+        class JMException extends java.lang.Exception {
+            public constructor()
+            public constructor(arg0: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
+        class JMRuntimeException extends java.lang.RuntimeException {
+            public constructor()
+            public constructor(arg0: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
+        class JMX {
+            public static DEFAULT_VALUE_FIELD: string
+            public static IMMUTABLE_INFO_FIELD: string
+            public static INTERFACE_CLASS_NAME_FIELD: string
+            public static LEGAL_VALUES_FIELD: string
+            public static MAX_VALUE_FIELD: string
+            public static MIN_VALUE_FIELD: string
+            public static MXBEAN_FIELD: string
+            public static OPEN_TYPE_FIELD: string
+            public static ORIGINAL_TYPE_FIELD: string
+            public static newMBeanProxy<T>(arg0: javax.management.MBeanServerConnection, arg1: javax.management.ObjectName, arg2: java.lang.Class<T>): T
+            public static newMBeanProxy<T>(arg0: javax.management.MBeanServerConnection, arg1: javax.management.ObjectName, arg2: java.lang.Class<T>, arg3: boolean): T
+            public static newMXBeanProxy<T>(arg0: javax.management.MBeanServerConnection, arg1: javax.management.ObjectName, arg2: java.lang.Class<T>): T
+            public static newMXBeanProxy<T>(arg0: javax.management.MBeanServerConnection, arg1: javax.management.ObjectName, arg2: java.lang.Class<T>, arg3: boolean): T
+            public static isMXBeanInterface(arg0: java.lang.Class<any>): boolean
+            public static class: java.lang.Class<any>
+        }
+        class ListenerNotFoundException extends javax.management.OperationsException {
+            public constructor()
+            public constructor(arg0: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
+        class MBeanAttributeInfo extends javax.management.MBeanFeatureInfo implements java.lang.Cloneable {
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: boolean, arg4: boolean, arg5: boolean)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: boolean, arg4: boolean, arg5: boolean, arg6: javax.management.Descriptor)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.reflect.Method, arg3: java.lang.reflect.Method)
+            public clone(): java.lang.Object
+            public getType(): string
+            public isReadable(): boolean
+            public isWritable(): boolean
+            public isIs(): boolean
+            public toString(): string
+            public equals(arg0: java.lang.Object): boolean
+            public hashCode(): int
+            public static class: java.lang.Class<any>
+        }
+        class MBeanConstructorInfo extends javax.management.MBeanFeatureInfo implements java.lang.Cloneable {
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.reflect.Constructor<any>)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.management.MBeanParameterInfo[])
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.management.MBeanParameterInfo[], arg3: javax.management.Descriptor)
+            public clone(): java.lang.Object
+            public getSignature(): javax.management.MBeanParameterInfo[]
+            public toString(): string
+            public equals(arg0: java.lang.Object): boolean
+            public hashCode(): int
+            public static class: java.lang.Class<any>
+        }
+        class MBeanException extends javax.management.JMException {
+            public constructor(arg0: java.lang.Exception)
+            public constructor(arg0: java.lang.Exception, arg1: java.lang.String | string)
+            public getTargetException(): java.lang.Exception
+            public getCause(): java.lang.Throwable
+            public static class: java.lang.Class<any>
+        }
+        class MBeanFeatureInfo implements java.io.Serializable , javax.management.DescriptorRead {
+            protected name: string
+            protected description: string
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.management.Descriptor)
+            public getName(): string
+            public getDescription(): string
+            public getDescriptor(): javax.management.Descriptor
+            public equals(arg0: java.lang.Object): boolean
+            public hashCode(): int
+            public static class: java.lang.Class<any>
+        }
+        class MBeanFeatureInfo$$Lambda implements java.io.Serializable , javax.management.DescriptorRead {
+            protected name: string
+        }
+        class MBeanInfo implements java.lang.Cloneable , java.io.Serializable , javax.management.DescriptorRead {
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.management.MBeanAttributeInfo[], arg3: javax.management.MBeanConstructorInfo[], arg4: javax.management.MBeanOperationInfo[], arg5: javax.management.MBeanNotificationInfo[])
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.management.MBeanAttributeInfo[], arg3: javax.management.MBeanConstructorInfo[], arg4: javax.management.MBeanOperationInfo[], arg5: javax.management.MBeanNotificationInfo[], arg6: javax.management.Descriptor)
+            public clone(): java.lang.Object
+            public getClassName(): string
+            public getDescription(): string
+            public getAttributes(): javax.management.MBeanAttributeInfo[]
+            public getOperations(): javax.management.MBeanOperationInfo[]
+            public getConstructors(): javax.management.MBeanConstructorInfo[]
+            public getNotifications(): javax.management.MBeanNotificationInfo[]
+            public getDescriptor(): javax.management.Descriptor
+            public toString(): string
+            public equals(arg0: java.lang.Object): boolean
+            public hashCode(): int
+            public static class: java.lang.Class<any>
+        }
+        class MBeanInfo$$Lambda implements java.lang.Cloneable , java.io.Serializable , javax.management.DescriptorRead {
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.management.MBeanAttributeInfo[], arg3: javax.management.MBeanConstructorInfo[], arg4: javax.management.MBeanOperationInfo[], arg5: javax.management.MBeanNotificationInfo[])
+        }
+        class MBeanNotificationInfo extends javax.management.MBeanFeatureInfo implements java.lang.Cloneable {
+            public constructor(arg0: java.lang.String[], arg1: java.lang.String | string, arg2: java.lang.String | string)
+            public constructor(arg0: java.lang.String[], arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: javax.management.Descriptor)
+            public clone(): java.lang.Object
+            public getNotifTypes(): java.lang.String[]
+            public toString(): string
+            public equals(arg0: java.lang.Object): boolean
+            public hashCode(): int
+            public static class: java.lang.Class<any>
+        }
+        class MBeanOperationInfo extends javax.management.MBeanFeatureInfo implements java.lang.Cloneable {
+            public static INFO: int
+            public static ACTION: int
+            public static ACTION_INFO: int
+            public static UNKNOWN: int
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.reflect.Method)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.management.MBeanParameterInfo[], arg3: java.lang.String | string, arg4: int)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.management.MBeanParameterInfo[], arg3: java.lang.String | string, arg4: int, arg5: javax.management.Descriptor)
+            public clone(): java.lang.Object
+            public getReturnType(): string
+            public getSignature(): javax.management.MBeanParameterInfo[]
+            public getImpact(): int
+            public toString(): string
+            public equals(arg0: java.lang.Object): boolean
+            public hashCode(): int
+            public static class: java.lang.Class<any>
+        }
+        class MBeanParameterInfo extends javax.management.MBeanFeatureInfo implements java.lang.Cloneable {
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: javax.management.Descriptor)
+            public clone(): java.lang.Object
+            public getType(): string
+            public toString(): string
+            public equals(arg0: java.lang.Object): boolean
+            public hashCode(): int
+            public static class: java.lang.Class<any>
+        }
+        class MBeanPermission extends java.security.Permission {
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.management.ObjectName, arg3: java.lang.String | string)
+            public getActions(): string
+            public hashCode(): int
+            public implies(arg0: java.security.Permission): boolean
+            public equals(arg0: java.lang.Object): boolean
+            public static class: java.lang.Class<any>
+        }
+        interface MBeanRegistration {
+            preRegister(arg0: javax.management.MBeanServer, arg1: javax.management.ObjectName): javax.management.ObjectName
+            postRegister(arg0: java.lang.Boolean | boolean): void
+            preDeregister(): void
+            postDeregister(): void
+        }
+        class MBeanRegistrationException extends javax.management.MBeanException {
+            public constructor(arg0: java.lang.Exception)
+            public constructor(arg0: java.lang.Exception, arg1: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
+        interface MBeanServer extends javax.management.MBeanServerConnection {
+            createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName): javax.management.ObjectInstance
+            createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName, arg2: javax.management.ObjectName): javax.management.ObjectInstance
+            createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName, arg2: java.lang.Object[], arg3: java.lang.String[]): javax.management.ObjectInstance
+            createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName, arg2: javax.management.ObjectName, arg3: java.lang.Object[], arg4: java.lang.String[]): javax.management.ObjectInstance
+            registerMBean(arg0: java.lang.Object, arg1: javax.management.ObjectName): javax.management.ObjectInstance
+            unregisterMBean(arg0: javax.management.ObjectName): void
+            getObjectInstance(arg0: javax.management.ObjectName): javax.management.ObjectInstance
+            queryMBeans(arg0: javax.management.ObjectName, arg1: javax.management.QueryExp): java.util.Set<javax.management.ObjectInstance>
+            queryNames(arg0: javax.management.ObjectName, arg1: javax.management.QueryExp): java.util.Set<javax.management.ObjectName>
+            isRegistered(arg0: javax.management.ObjectName): boolean
+            getMBeanCount(): java.lang.Integer
+            getAttribute(arg0: javax.management.ObjectName, arg1: java.lang.String | string): java.lang.Object
+            getAttributes(arg0: javax.management.ObjectName, arg1: java.lang.String[]): javax.management.AttributeList
+            setAttribute(arg0: javax.management.ObjectName, arg1: javax.management.Attribute): void
+            setAttributes(arg0: javax.management.ObjectName, arg1: javax.management.AttributeList): javax.management.AttributeList
+            invoke(arg0: javax.management.ObjectName, arg1: java.lang.String | string, arg2: java.lang.Object[], arg3: java.lang.String[]): java.lang.Object
+            getDefaultDomain(): string
+            getDomains(): java.lang.String[]
+            addNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
+            addNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
+            removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName): void
+            removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
+            removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener): void
+            removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
+            getMBeanInfo(arg0: javax.management.ObjectName): javax.management.MBeanInfo
+            isInstanceOf(arg0: javax.management.ObjectName, arg1: java.lang.String | string): boolean
+            instantiate(arg0: java.lang.String | string): java.lang.Object
+            instantiate(arg0: java.lang.String | string, arg1: javax.management.ObjectName): java.lang.Object
+            instantiate(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.String[]): java.lang.Object
+            instantiate(arg0: java.lang.String | string, arg1: javax.management.ObjectName, arg2: java.lang.Object[], arg3: java.lang.String[]): java.lang.Object
+            deserialize(arg0: javax.management.ObjectName, arg1: byte[]): java.io.ObjectInputStream
+            deserialize(arg0: java.lang.String | string, arg1: byte[]): java.io.ObjectInputStream
+            deserialize(arg0: java.lang.String | string, arg1: javax.management.ObjectName, arg2: byte[]): java.io.ObjectInputStream
+            getClassLoaderFor(arg0: javax.management.ObjectName): java.lang.ClassLoader
+            getClassLoader(arg0: javax.management.ObjectName): java.lang.ClassLoader
+            getClassLoaderRepository(): javax.management.loading.ClassLoaderRepository
+        }
+        class MBeanServerBuilder {
+            public constructor()
+            public newMBeanServerDelegate(): javax.management.MBeanServerDelegate
+            public newMBeanServer(arg0: java.lang.String | string, arg1: javax.management.MBeanServer, arg2: javax.management.MBeanServerDelegate): javax.management.MBeanServer
+            public static class: java.lang.Class<any>
+        }
+        interface MBeanServerConnection {
+            createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName): javax.management.ObjectInstance
+            createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName, arg2: javax.management.ObjectName): javax.management.ObjectInstance
+            createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName, arg2: java.lang.Object[], arg3: java.lang.String[]): javax.management.ObjectInstance
+            createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName, arg2: javax.management.ObjectName, arg3: java.lang.Object[], arg4: java.lang.String[]): javax.management.ObjectInstance
+            unregisterMBean(arg0: javax.management.ObjectName): void
+            getObjectInstance(arg0: javax.management.ObjectName): javax.management.ObjectInstance
+            queryMBeans(arg0: javax.management.ObjectName, arg1: javax.management.QueryExp): java.util.Set<javax.management.ObjectInstance>
+            queryNames(arg0: javax.management.ObjectName, arg1: javax.management.QueryExp): java.util.Set<javax.management.ObjectName>
+            isRegistered(arg0: javax.management.ObjectName): boolean
+            getMBeanCount(): java.lang.Integer
+            getAttribute(arg0: javax.management.ObjectName, arg1: java.lang.String | string): java.lang.Object
+            getAttributes(arg0: javax.management.ObjectName, arg1: java.lang.String[]): javax.management.AttributeList
+            setAttribute(arg0: javax.management.ObjectName, arg1: javax.management.Attribute): void
+            setAttributes(arg0: javax.management.ObjectName, arg1: javax.management.AttributeList): javax.management.AttributeList
+            invoke(arg0: javax.management.ObjectName, arg1: java.lang.String | string, arg2: java.lang.Object[], arg3: java.lang.String[]): java.lang.Object
+            getDefaultDomain(): string
+            getDomains(): java.lang.String[]
+            addNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
+            addNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
+            removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName): void
+            removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
+            removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener): void
+            removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
+            getMBeanInfo(arg0: javax.management.ObjectName): javax.management.MBeanInfo
+            isInstanceOf(arg0: javax.management.ObjectName, arg1: java.lang.String | string): boolean
+        }
+        class MBeanServerDelegate implements javax.management.MBeanServerDelegateMBean , javax.management.NotificationEmitter {
+            public static DELEGATE_NAME: javax.management.ObjectName
+            public constructor()
+            public getMBeanServerId(): string
+            public getSpecificationName(): string
+            public getSpecificationVersion(): string
+            public getSpecificationVendor(): string
+            public getImplementationName(): string
+            public getImplementationVersion(): string
+            public getImplementationVendor(): string
+            public getNotificationInfo(): javax.management.MBeanNotificationInfo[]
+            public addNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
+            public removeNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
+            public removeNotificationListener(arg0: javax.management.NotificationListener): void
+            public sendNotification(arg0: javax.management.Notification): void
+            public static class: java.lang.Class<any>
+        }
+        interface MBeanServerDelegateMBean {
+            getMBeanServerId(): string
+            getSpecificationName(): string
+            getSpecificationVersion(): string
+            getSpecificationVendor(): string
+            getImplementationName(): string
+            getImplementationVersion(): string
+            getImplementationVendor(): string
+        }
+        class MBeanServerFactory {
+            public static releaseMBeanServer(arg0: javax.management.MBeanServer): void
+            public static createMBeanServer(): javax.management.MBeanServer
+            public static createMBeanServer(arg0: java.lang.String | string): javax.management.MBeanServer
+            public static newMBeanServer(): javax.management.MBeanServer
+            public static newMBeanServer(arg0: java.lang.String | string): javax.management.MBeanServer
+            public static findMBeanServer(arg0: java.lang.String | string): java.util.ArrayList<javax.management.MBeanServer>
+            public static getClassLoaderRepository(arg0: javax.management.MBeanServer): javax.management.loading.ClassLoaderRepository
+            public static class: java.lang.Class<any>
+        }
+        class MBeanServerInvocationHandler implements java.lang.reflect.InvocationHandler {
+            public constructor(arg0: javax.management.MBeanServerConnection, arg1: javax.management.ObjectName)
+            public constructor(arg0: javax.management.MBeanServerConnection, arg1: javax.management.ObjectName, arg2: boolean)
+            public getMBeanServerConnection(): javax.management.MBeanServerConnection
+            public getObjectName(): javax.management.ObjectName
+            public isMXBean(): boolean
+            public static newProxyInstance<T>(arg0: javax.management.MBeanServerConnection, arg1: javax.management.ObjectName, arg2: java.lang.Class<T>, arg3: boolean): T
+            public invoke(arg0: java.lang.Object, arg1: java.lang.reflect.Method, arg2: java.lang.Object[]): java.lang.Object
+            public static class: java.lang.Class<any>
+        }
+        class MBeanServerInvocationHandler$$Lambda implements java.lang.reflect.InvocationHandler {
+            public constructor(arg0: javax.management.MBeanServerConnection, arg1: javax.management.ObjectName)
+        }
+        class MBeanServerNotification extends javax.management.Notification {
+            public static REGISTRATION_NOTIFICATION: string
+            public static UNREGISTRATION_NOTIFICATION: string
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: long, arg3: javax.management.ObjectName)
+            public getMBeanName(): javax.management.ObjectName
+            public toString(): string
+            public static class: java.lang.Class<any>
+        }
+        class MBeanServerPermission extends java.security.BasicPermission {
+            public constructor(arg0: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
+            public hashCode(): int
+            public implies(arg0: java.security.Permission): boolean
+            public equals(arg0: java.lang.Object): boolean
+            public newPermissionCollection(): java.security.PermissionCollection
+            public static class: java.lang.Class<any>
+        }
+        class MBeanTrustPermission extends java.security.BasicPermission {
+            public constructor(arg0: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
+        interface MXBean extends java.lang.annotation.Annotation {
+            value(): boolean
+        }
+        class MalformedObjectNameException extends javax.management.OperationsException {
+            public constructor()
+            public constructor(arg0: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
+        class MatchQueryExp extends javax.management.QueryEval implements javax.management.QueryExp {
+            public constructor()
+            public constructor(arg0: javax.management.AttributeValueExp, arg1: javax.management.StringValueExp)
+            public getAttribute(): javax.management.AttributeValueExp
+            public getPattern(): string
+            public apply(arg0: javax.management.ObjectName): boolean
+            public toString(): string
+            public static class: java.lang.Class<any>
+        }
+        class NotCompliantMBeanException extends javax.management.OperationsException {
+            public constructor()
+            public constructor(arg0: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
+        class NotQueryExp extends javax.management.QueryEval implements javax.management.QueryExp {
+            public constructor()
+            public constructor(arg0: javax.management.QueryExp)
+            public getNegatedExp(): javax.management.QueryExp
+            public apply(arg0: javax.management.ObjectName): boolean
+            public toString(): string
+            public static class: java.lang.Class<any>
+        }
+        class Notification extends java.util.EventObject {
+            protected source: java.lang.Object
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: long)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: long, arg3: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: long, arg3: long)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: long, arg3: long, arg4: java.lang.String | string)
+            public setSource(arg0: java.lang.Object): void
+            public getSequenceNumber(): long
+            public setSequenceNumber(arg0: long): void
+            public getType(): string
+            public getTimeStamp(): long
+            public setTimeStamp(arg0: long): void
+            public getMessage(): string
+            public getUserData(): java.lang.Object
+            public setUserData(arg0: java.lang.Object): void
+            public toString(): string
+            public static class: java.lang.Class<any>
+        }
+        interface NotificationBroadcaster {
+            addNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
+            removeNotificationListener(arg0: javax.management.NotificationListener): void
+            getNotificationInfo(): javax.management.MBeanNotificationInfo[]
+        }
+        class NotificationBroadcasterSupport implements javax.management.NotificationEmitter {
+            public constructor()
+            public constructor(arg0: java.util.concurrent.Executor | java.util.concurrent.Executor$$Lambda)
+            public constructor(...arg0: javax.management.MBeanNotificationInfo[])
+            public constructor(arg0: java.util.concurrent.Executor | java.util.concurrent.Executor$$Lambda, ...arg1: javax.management.MBeanNotificationInfo[])
+            public addNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
+            public removeNotificationListener(arg0: javax.management.NotificationListener): void
+            public removeNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
+            public getNotificationInfo(): javax.management.MBeanNotificationInfo[]
+            public sendNotification(arg0: javax.management.Notification): void
+            protected handleNotification(arg0: javax.management.NotificationListener, arg1: javax.management.Notification, arg2: java.lang.Object): void
+            public static class: java.lang.Class<any>
+        }
+        interface NotificationEmitter extends javax.management.NotificationBroadcaster {
+            removeNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
+        }
+        interface NotificationFilter extends java.io.Serializable {
+            isNotificationEnabled(arg0: javax.management.Notification): boolean
+        }
+        class NotificationFilterSupport implements javax.management.NotificationFilter {
+            public constructor()
+            public isNotificationEnabled(arg0: javax.management.Notification): boolean
+            public enableType(arg0: java.lang.String | string): void
+            public disableType(arg0: java.lang.String | string): void
+            public disableAllTypes(): void
+            public getEnabledTypes(): java.util.Vector<java.lang.String>
+            public static class: java.lang.Class<any>
+        }
+        interface NotificationListener extends java.util.EventListener {
+            handleNotification(arg0: javax.management.Notification, arg1: java.lang.Object): void
+        }
+        class NumericValueExp extends javax.management.QueryEval implements javax.management.ValueExp {
+            public constructor()
+            public doubleValue(): double
+            public longValue(): long
+            public isLong(): boolean
+            public toString(): string
+            public apply(arg0: javax.management.ObjectName): javax.management.ValueExp
+            public setMBeanServer(arg0: javax.management.MBeanServer): void
+            public static class: java.lang.Class<any>
+        }
+        class ObjectInstance implements java.io.Serializable {
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
+            public constructor(arg0: javax.management.ObjectName, arg1: java.lang.String | string)
+            public equals(arg0: java.lang.Object): boolean
+            public hashCode(): int
+            public getObjectName(): javax.management.ObjectName
+            public getClassName(): string
+            public toString(): string
+            public static class: java.lang.Class<any>
+        }
+        class ObjectName implements java.lang.Comparable<javax.management.ObjectName> , javax.management.QueryExp {
+            public static WILDCARD: javax.management.ObjectName
+            public static getInstance(arg0: java.lang.String | string): javax.management.ObjectName
+            public static getInstance(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): javax.management.ObjectName
+            public static getInstance(arg0: java.lang.String | string, arg1: java.util.Hashtable<java.lang.String, java.lang.String>): javax.management.ObjectName
+            public static getInstance(arg0: javax.management.ObjectName): javax.management.ObjectName
+            public constructor(arg0: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: java.util.Hashtable<java.lang.String, java.lang.String>)
+            public isPattern(): boolean
+            public isDomainPattern(): boolean
+            public isPropertyPattern(): boolean
+            public isPropertyListPattern(): boolean
+            public isPropertyValuePattern(): boolean
+            public isPropertyValuePattern(arg0: java.lang.String | string): boolean
+            public getCanonicalName(): string
+            public getDomain(): string
+            public getKeyProperty(arg0: java.lang.String | string): string
+            public getKeyPropertyList(): java.util.Hashtable<java.lang.String, java.lang.String>
+            public getKeyPropertyListString(): string
+            public getCanonicalKeyPropertyListString(): string
+            public toString(): string
+            public equals(arg0: java.lang.Object): boolean
+            public hashCode(): int
+            public static quote(arg0: java.lang.String | string): string
+            public static unquote(arg0: java.lang.String | string): string
+            public apply(arg0: javax.management.ObjectName): boolean
+            public setMBeanServer(arg0: javax.management.MBeanServer): void
+            public compareTo(arg0: javax.management.ObjectName): int
+            public compareTo(arg0: java.lang.Object): int
+            public static class: java.lang.Class<any>
+        }
+        class OperationsException extends javax.management.JMException {
+            public constructor()
+            public constructor(arg0: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
+        class OrQueryExp extends javax.management.QueryEval implements javax.management.QueryExp {
+            public constructor()
+            public constructor(arg0: javax.management.QueryExp, arg1: javax.management.QueryExp)
+            public getLeftExp(): javax.management.QueryExp
+            public getRightExp(): javax.management.QueryExp
+            public apply(arg0: javax.management.ObjectName): boolean
+            public toString(): string
+            public static class: java.lang.Class<any>
+        }
+        interface PersistentMBean {
+            load(): void
+            store(): void
+        }
+        class QualifiedAttributeValueExp extends javax.management.AttributeValueExp {
+            public constructor()
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
+            public getAttrClassName(): string
+            public apply(arg0: javax.management.ObjectName): javax.management.ValueExp
+            public toString(): string
+            public static class: java.lang.Class<any>
+        }
+        class Query {
+            public static GT: int
+            public static LT: int
+            public static GE: int
+            public static LE: int
+            public static EQ: int
+            public static PLUS: int
+            public static MINUS: int
+            public static TIMES: int
+            public static DIV: int
+            public constructor()
+            public static and(arg0: javax.management.QueryExp, arg1: javax.management.QueryExp): javax.management.QueryExp
+            public static or(arg0: javax.management.QueryExp, arg1: javax.management.QueryExp): javax.management.QueryExp
+            public static gt(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp): javax.management.QueryExp
+            public static geq(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp): javax.management.QueryExp
+            public static leq(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp): javax.management.QueryExp
+            public static lt(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp): javax.management.QueryExp
+            public static eq(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp): javax.management.QueryExp
+            public static between(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp, arg2: javax.management.ValueExp): javax.management.QueryExp
+            public static match(arg0: javax.management.AttributeValueExp, arg1: javax.management.StringValueExp): javax.management.QueryExp
+            public static attr(arg0: java.lang.String | string): javax.management.AttributeValueExp
+            public static attr(arg0: java.lang.String | string, arg1: java.lang.String | string): javax.management.AttributeValueExp
+            public static classattr(): javax.management.AttributeValueExp
+            public static not(arg0: javax.management.QueryExp): javax.management.QueryExp
+            public static in(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp[]): javax.management.QueryExp
+            public static value(arg0: java.lang.String | string): javax.management.StringValueExp
+            public static value(arg0: java.lang.Number): javax.management.ValueExp
+            public static value(arg0: int): javax.management.ValueExp
+            public static value(arg0: long): javax.management.ValueExp
+            public static value(arg0: float): javax.management.ValueExp
+            public static value(arg0: double): javax.management.ValueExp
+            public static value(arg0: boolean): javax.management.ValueExp
+            public static plus(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp): javax.management.ValueExp
+            public static times(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp): javax.management.ValueExp
+            public static minus(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp): javax.management.ValueExp
+            public static div(arg0: javax.management.ValueExp, arg1: javax.management.ValueExp): javax.management.ValueExp
+            public static initialSubString(arg0: javax.management.AttributeValueExp, arg1: javax.management.StringValueExp): javax.management.QueryExp
+            public static anySubString(arg0: javax.management.AttributeValueExp, arg1: javax.management.StringValueExp): javax.management.QueryExp
+            public static finalSubString(arg0: javax.management.AttributeValueExp, arg1: javax.management.StringValueExp): javax.management.QueryExp
+            public static isInstanceOf(arg0: javax.management.StringValueExp): javax.management.QueryExp
+            public static class: java.lang.Class<any>
+        }
+        abstract class QueryEval implements java.io.Serializable {
+            public constructor()
+            public setMBeanServer(arg0: javax.management.MBeanServer): void
+            public static getMBeanServer(): javax.management.MBeanServer
+            public static class: java.lang.Class<any>
+        }
+        interface QueryExp extends java.io.Serializable {
+            apply(arg0: javax.management.ObjectName): boolean
+            setMBeanServer(arg0: javax.management.MBeanServer): void
+        }
+        class ReflectionException extends javax.management.JMException {
+            public constructor(arg0: java.lang.Exception)
+            public constructor(arg0: java.lang.Exception, arg1: java.lang.String | string)
+            public getTargetException(): java.lang.Exception
+            public getCause(): java.lang.Throwable
+            public static class: java.lang.Class<any>
+        }
+        class RuntimeErrorException extends javax.management.JMRuntimeException {
+            public constructor(arg0: java.lang.Error)
+            public constructor(arg0: java.lang.Error, arg1: java.lang.String | string)
+            public getTargetError(): java.lang.Error
+            public getCause(): java.lang.Throwable
+            public static class: java.lang.Class<any>
+        }
+        class RuntimeMBeanException extends javax.management.JMRuntimeException {
+            public constructor(arg0: java.lang.RuntimeException)
+            public constructor(arg0: java.lang.RuntimeException, arg1: java.lang.String | string)
+            public getTargetException(): java.lang.RuntimeException
+            public getCause(): java.lang.Throwable
+            public static class: java.lang.Class<any>
+        }
+        class RuntimeOperationsException extends javax.management.JMRuntimeException {
+            public constructor(arg0: java.lang.RuntimeException)
+            public constructor(arg0: java.lang.RuntimeException, arg1: java.lang.String | string)
+            public getTargetException(): java.lang.RuntimeException
+            public getCause(): java.lang.Throwable
+            public static class: java.lang.Class<any>
+        }
+        class ServiceNotFoundException extends javax.management.OperationsException {
+            public constructor()
+            public constructor(arg0: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
+        class StandardEmitterMBean extends javax.management.StandardMBean implements javax.management.NotificationEmitter {
+            public constructor(arg0: T, arg1: java.lang.Class<T>, arg2: javax.management.NotificationEmitter)
+            public constructor(arg0: T, arg1: java.lang.Class<T>, arg2: boolean, arg3: javax.management.NotificationEmitter)
+            protected constructor(arg0: java.lang.Class<any>, arg1: javax.management.NotificationEmitter)
+            protected constructor(arg0: java.lang.Class<any>, arg1: boolean, arg2: javax.management.NotificationEmitter)
+            public removeNotificationListener<T>(arg0: javax.management.NotificationListener): void
+            public removeNotificationListener<T>(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
+            public addNotificationListener<T>(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
+            public getNotificationInfo<T>(): javax.management.MBeanNotificationInfo[]
+            public sendNotification<T>(arg0: javax.management.Notification): void
+            public static class: java.lang.Class<any>
+        }
+        class StandardMBean implements javax.management.DynamicMBean , javax.management.MBeanRegistration {
+            public constructor(arg0: T, arg1: java.lang.Class<T>)
+            protected constructor(arg0: java.lang.Class<any>)
+            public constructor(arg0: T, arg1: java.lang.Class<T>, arg2: boolean)
+            protected constructor(arg0: java.lang.Class<any>, arg1: boolean)
+            public setImplementation<T>(arg0: java.lang.Object): void
+            public getImplementation<T>(): java.lang.Object
+            public getMBeanInterface<T>(): java.lang.Class<any>
+            public getImplementationClass<T>(): java.lang.Class<any>
+            public getAttribute<T>(arg0: java.lang.String | string): java.lang.Object
+            public setAttribute<T>(arg0: javax.management.Attribute): void
+            public getAttributes<T>(arg0: java.lang.String[]): javax.management.AttributeList
+            public setAttributes<T>(arg0: javax.management.AttributeList): javax.management.AttributeList
+            public invoke<T>(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.String[]): java.lang.Object
+            public getMBeanInfo<T>(): javax.management.MBeanInfo
+            protected getClassName<T>(arg0: javax.management.MBeanInfo | javax.management.MBeanInfo$$Lambda): string
+            protected getDescription<T>(arg0: javax.management.MBeanInfo | javax.management.MBeanInfo$$Lambda): string
+            protected getDescription<T>(arg0: javax.management.MBeanFeatureInfo | javax.management.MBeanFeatureInfo$$Lambda): string
+            protected getDescription<T>(arg0: javax.management.MBeanAttributeInfo): string
+            protected getDescription<T>(arg0: javax.management.MBeanConstructorInfo): string
+            protected getDescription<T>(arg0: javax.management.MBeanConstructorInfo, arg1: javax.management.MBeanParameterInfo, arg2: int): string
+            protected getParameterName<T>(arg0: javax.management.MBeanConstructorInfo, arg1: javax.management.MBeanParameterInfo, arg2: int): string
+            protected getDescription<T>(arg0: javax.management.MBeanOperationInfo): string
+            protected getImpact<T>(arg0: javax.management.MBeanOperationInfo): int
+            protected getParameterName<T>(arg0: javax.management.MBeanOperationInfo, arg1: javax.management.MBeanParameterInfo, arg2: int): string
+            protected getDescription<T>(arg0: javax.management.MBeanOperationInfo, arg1: javax.management.MBeanParameterInfo, arg2: int): string
+            protected getConstructors<T>(arg0: javax.management.MBeanConstructorInfo[], arg1: java.lang.Object): javax.management.MBeanConstructorInfo[]
+            protected getCachedMBeanInfo<T>(): javax.management.MBeanInfo
+            protected cacheMBeanInfo<T>(arg0: javax.management.MBeanInfo | javax.management.MBeanInfo$$Lambda): void
+            public preRegister<T>(arg0: javax.management.MBeanServer, arg1: javax.management.ObjectName): javax.management.ObjectName
+            public postRegister<T>(arg0: java.lang.Boolean | boolean): void
+            public preDeregister<T>(): void
+            public postDeregister<T>(): void
+            public static class: java.lang.Class<any>
+        }
+        class StringValueExp implements javax.management.ValueExp {
+            public constructor()
+            public constructor(arg0: java.lang.String | string)
+            public getValue(): string
+            public toString(): string
+            public setMBeanServer(arg0: javax.management.MBeanServer): void
+            public apply(arg0: javax.management.ObjectName): javax.management.ValueExp
+            public static class: java.lang.Class<any>
+        }
+        interface ValueExp extends java.io.Serializable {
+            apply(arg0: javax.management.ObjectName): javax.management.ValueExp
+            setMBeanServer(arg0: javax.management.MBeanServer): void
+        }
     }
 }
 declare namespace sun {
     namespace management {
+        namespace counter {
+            namespace perf {
+                class ByteArrayCounterSnapshot extends sun.management.counter.AbstractCounter implements sun.management.counter.ByteArrayCounter {
+                    public getValue(): java.lang.Object
+                    public byteArrayValue(): byte[]
+                    public byteAt(arg0: int): byte
+                    public static class: java.lang.Class<any>
+                }
+                class InstrumentationException extends java.lang.RuntimeException {
+                    public constructor()
+                    public constructor(arg0: java.lang.String | string)
+                    public static class: java.lang.Class<any>
+                }
+                class LongArrayCounterSnapshot extends sun.management.counter.AbstractCounter implements sun.management.counter.LongArrayCounter {
+                    public getValue(): java.lang.Object
+                    public longArrayValue(): long[]
+                    public longAt(arg0: int): long
+                    public static class: java.lang.Class<any>
+                }
+                class LongCounterSnapshot extends sun.management.counter.AbstractCounter implements sun.management.counter.LongCounter {
+                    public getValue(): java.lang.Object
+                    public longValue(): long
+                    public static class: java.lang.Class<any>
+                }
+                class PerfByteArrayCounter extends sun.management.counter.AbstractCounter implements sun.management.counter.ByteArrayCounter {
+                    public getValue(): java.lang.Object
+                    public byteArrayValue(): byte[]
+                    public byteAt(arg0: int): byte
+                    public toString(): string
+                    protected writeReplace(): java.lang.Object
+                    public static class: java.lang.Class<any>
+                }
+                class PerfDataEntry {
+                    public size(): int
+                    public name(): string
+                    public type(): sun.management.counter.perf.PerfDataType
+                    public units(): sun.management.counter.Units
+                    public flags(): int
+                    public vectorLength(): int
+                    public variability(): sun.management.counter.Variability
+                    public byteData(): java.nio.ByteBuffer
+                    public longData(): java.nio.LongBuffer
+                    public static class: java.lang.Class<any>
+                }
+                class PerfDataType {
+                    public static BOOLEAN: sun.management.counter.perf.PerfDataType
+                    public static CHAR: sun.management.counter.perf.PerfDataType
+                    public static FLOAT: sun.management.counter.perf.PerfDataType
+                    public static DOUBLE: sun.management.counter.perf.PerfDataType
+                    public static BYTE: sun.management.counter.perf.PerfDataType
+                    public static SHORT: sun.management.counter.perf.PerfDataType
+                    public static INT: sun.management.counter.perf.PerfDataType
+                    public static LONG: sun.management.counter.perf.PerfDataType
+                    public static ILLEGAL: sun.management.counter.perf.PerfDataType
+                    public toString(): string
+                    public byteValue(): byte
+                    public size(): int
+                    public static toPerfDataType(arg0: byte): sun.management.counter.perf.PerfDataType
+                    public static class: java.lang.Class<any>
+                }
+                class PerfInstrumentation {
+                    public constructor(arg0: java.nio.ByteBuffer)
+                    public getMajorVersion(): int
+                    public getMinorVersion(): int
+                    public getModificationTimeStamp(): long
+                    public getAllCounters(): java.util.List<sun.management.counter.Counter>
+                    public findByPattern(arg0: java.lang.String | string): java.util.List<sun.management.counter.Counter>
+                    public static class: java.lang.Class<any>
+                }
+                class PerfLongArrayCounter extends sun.management.counter.AbstractCounter implements sun.management.counter.LongArrayCounter {
+                    public getValue(): java.lang.Object
+                    public longArrayValue(): long[]
+                    public longAt(arg0: int): long
+                    protected writeReplace(): java.lang.Object
+                    public static class: java.lang.Class<any>
+                }
+                class PerfLongCounter extends sun.management.counter.AbstractCounter implements sun.management.counter.LongCounter {
+                    public getValue(): java.lang.Object
+                    public longValue(): long
+                    protected writeReplace(): java.lang.Object
+                    public static class: java.lang.Class<any>
+                }
+                class PerfStringCounter extends sun.management.counter.perf.PerfByteArrayCounter implements sun.management.counter.StringCounter {
+                    public isVector(): boolean
+                    public getVectorLength(): int
+                    public getValue(): java.lang.Object
+                    public stringValue(): string
+                    protected writeReplace(): java.lang.Object
+                    public static class: java.lang.Class<any>
+                }
+                class Prologue {
+                    public getMagic(): int
+                    public getMajorVersion(): int
+                    public getMinorVersion(): int
+                    public getByteOrder(): java.nio.ByteOrder
+                    public getEntryOffset(): int
+                    public getUsed(): int
+                    public getOverflow(): int
+                    public getModificationTimeStamp(): long
+                    public getNumEntries(): int
+                    public isAccessible(): boolean
+                    public static class: java.lang.Class<any>
+                }
+                class StringCounterSnapshot extends sun.management.counter.AbstractCounter implements sun.management.counter.StringCounter {
+                    public getValue(): java.lang.Object
+                    public stringValue(): string
+                    public static class: java.lang.Class<any>
+                }
+            }
+            abstract class AbstractCounter implements sun.management.counter.Counter {
+                protected constructor(arg0: java.lang.String | string, arg1: sun.management.counter.Units, arg2: sun.management.counter.Variability, arg3: int, arg4: int)
+                protected constructor(arg0: java.lang.String | string, arg1: sun.management.counter.Units, arg2: sun.management.counter.Variability, arg3: int)
+                public getName(): string
+                public getUnits(): sun.management.counter.Units
+                public getVariability(): sun.management.counter.Variability
+                public isVector(): boolean
+                public getVectorLength(): int
+                public isInternal(): boolean
+                public getFlags(): int
+                public getValue(): java.lang.Object
+                public toString(): string
+                public static class: java.lang.Class<any>
+            }
+            interface ByteArrayCounter extends sun.management.counter.Counter {
+                byteArrayValue(): byte[]
+                byteAt(arg0: int): byte
+            }
+            interface Counter extends java.io.Serializable {
+                getName(): string
+                getUnits(): sun.management.counter.Units
+                getVariability(): sun.management.counter.Variability
+                isVector(): boolean
+                getVectorLength(): int
+                getValue(): java.lang.Object
+                isInternal(): boolean
+                getFlags(): int
+            }
+            interface LongArrayCounter extends sun.management.counter.Counter {
+                longArrayValue(): long[]
+                longAt(arg0: int): long
+            }
+            interface LongCounter extends sun.management.counter.Counter {
+                longValue(): long
+            }
+            interface StringCounter extends sun.management.counter.Counter {
+                stringValue(): string
+            }
+            class Units implements java.io.Serializable {
+                public static INVALID: sun.management.counter.Units
+                public static NONE: sun.management.counter.Units
+                public static BYTES: sun.management.counter.Units
+                public static TICKS: sun.management.counter.Units
+                public static EVENTS: sun.management.counter.Units
+                public static STRING: sun.management.counter.Units
+                public static HERTZ: sun.management.counter.Units
+                public toString(): string
+                public intValue(): int
+                public static toUnits(arg0: int): sun.management.counter.Units
+                public static class: java.lang.Class<any>
+            }
+            class Variability implements java.io.Serializable {
+                public static INVALID: sun.management.counter.Variability
+                public static CONSTANT: sun.management.counter.Variability
+                public static MONOTONIC: sun.management.counter.Variability
+                public static VARIABLE: sun.management.counter.Variability
+                public toString(): string
+                public intValue(): int
+                public static toVariability(arg0: int): sun.management.counter.Variability
+                public static class: java.lang.Class<any>
+            }
+        }
         class BaseOperatingSystemImpl implements java.lang.management.OperatingSystemMXBean {
             protected constructor(arg0: sun.management.VMManagement)
             public getName(): string
@@ -3502,177 +3673,6 @@ declare namespace sun {
             public getClassVerificationTime(): long
             public getInternalCounters(arg0: java.lang.String | string): java.util.List<sun.management.counter.Counter>
             public static class: java.lang.Class<any>
-        }
-        namespace counter {
-            abstract class AbstractCounter implements sun.management.counter.Counter {
-                protected constructor(arg0: java.lang.String | string, arg1: sun.management.counter.Units, arg2: sun.management.counter.Variability, arg3: int, arg4: int)
-                protected constructor(arg0: java.lang.String | string, arg1: sun.management.counter.Units, arg2: sun.management.counter.Variability, arg3: int)
-                public getName(): string
-                public getUnits(): sun.management.counter.Units
-                public getVariability(): sun.management.counter.Variability
-                public isVector(): boolean
-                public getVectorLength(): int
-                public isInternal(): boolean
-                public getFlags(): int
-                public getValue(): java.lang.Object
-                public toString(): string
-                public static class: java.lang.Class<any>
-            }
-            interface ByteArrayCounter extends sun.management.counter.Counter {
-                byteArrayValue(): byte[]
-                byteAt(arg0: int): byte
-            }
-            interface Counter extends java.io.Serializable {
-                getName(): string
-                getUnits(): sun.management.counter.Units
-                getVariability(): sun.management.counter.Variability
-                isVector(): boolean
-                getVectorLength(): int
-                getValue(): java.lang.Object
-                isInternal(): boolean
-                getFlags(): int
-            }
-            interface LongArrayCounter extends sun.management.counter.Counter {
-                longArrayValue(): long[]
-                longAt(arg0: int): long
-            }
-            interface LongCounter extends sun.management.counter.Counter {
-                longValue(): long
-            }
-            interface StringCounter extends sun.management.counter.Counter {
-                stringValue(): string
-            }
-            class Units implements java.io.Serializable {
-                public static INVALID: sun.management.counter.Units
-                public static NONE: sun.management.counter.Units
-                public static BYTES: sun.management.counter.Units
-                public static TICKS: sun.management.counter.Units
-                public static EVENTS: sun.management.counter.Units
-                public static STRING: sun.management.counter.Units
-                public static HERTZ: sun.management.counter.Units
-                public toString(): string
-                public intValue(): int
-                public static toUnits(arg0: int): sun.management.counter.Units
-                public static class: java.lang.Class<any>
-            }
-            class Variability implements java.io.Serializable {
-                public static INVALID: sun.management.counter.Variability
-                public static CONSTANT: sun.management.counter.Variability
-                public static MONOTONIC: sun.management.counter.Variability
-                public static VARIABLE: sun.management.counter.Variability
-                public toString(): string
-                public intValue(): int
-                public static toVariability(arg0: int): sun.management.counter.Variability
-                public static class: java.lang.Class<any>
-            }
-            namespace perf {
-                class ByteArrayCounterSnapshot extends sun.management.counter.AbstractCounter implements sun.management.counter.ByteArrayCounter {
-                    public getValue(): java.lang.Object
-                    public byteArrayValue(): byte[]
-                    public byteAt(arg0: int): byte
-                    public static class: java.lang.Class<any>
-                }
-                class InstrumentationException extends java.lang.RuntimeException {
-                    public constructor()
-                    public constructor(arg0: java.lang.String | string)
-                    public static class: java.lang.Class<any>
-                }
-                class LongArrayCounterSnapshot extends sun.management.counter.AbstractCounter implements sun.management.counter.LongArrayCounter {
-                    public getValue(): java.lang.Object
-                    public longArrayValue(): long[]
-                    public longAt(arg0: int): long
-                    public static class: java.lang.Class<any>
-                }
-                class LongCounterSnapshot extends sun.management.counter.AbstractCounter implements sun.management.counter.LongCounter {
-                    public getValue(): java.lang.Object
-                    public longValue(): long
-                    public static class: java.lang.Class<any>
-                }
-                class PerfByteArrayCounter extends sun.management.counter.AbstractCounter implements sun.management.counter.ByteArrayCounter {
-                    public getValue(): java.lang.Object
-                    public byteArrayValue(): byte[]
-                    public byteAt(arg0: int): byte
-                    public toString(): string
-                    protected writeReplace(): java.lang.Object
-                    public static class: java.lang.Class<any>
-                }
-                class PerfDataEntry {
-                    public size(): int
-                    public name(): string
-                    public type(): sun.management.counter.perf.PerfDataType
-                    public units(): sun.management.counter.Units
-                    public flags(): int
-                    public vectorLength(): int
-                    public variability(): sun.management.counter.Variability
-                    public byteData(): java.nio.ByteBuffer
-                    public longData(): java.nio.LongBuffer
-                    public static class: java.lang.Class<any>
-                }
-                class PerfDataType {
-                    public static BOOLEAN: sun.management.counter.perf.PerfDataType
-                    public static CHAR: sun.management.counter.perf.PerfDataType
-                    public static FLOAT: sun.management.counter.perf.PerfDataType
-                    public static DOUBLE: sun.management.counter.perf.PerfDataType
-                    public static BYTE: sun.management.counter.perf.PerfDataType
-                    public static SHORT: sun.management.counter.perf.PerfDataType
-                    public static INT: sun.management.counter.perf.PerfDataType
-                    public static LONG: sun.management.counter.perf.PerfDataType
-                    public static ILLEGAL: sun.management.counter.perf.PerfDataType
-                    public toString(): string
-                    public byteValue(): byte
-                    public size(): int
-                    public static toPerfDataType(arg0: byte): sun.management.counter.perf.PerfDataType
-                    public static class: java.lang.Class<any>
-                }
-                class PerfInstrumentation {
-                    public constructor(arg0: java.nio.ByteBuffer)
-                    public getMajorVersion(): int
-                    public getMinorVersion(): int
-                    public getModificationTimeStamp(): long
-                    public getAllCounters(): java.util.List<sun.management.counter.Counter>
-                    public findByPattern(arg0: java.lang.String | string): java.util.List<sun.management.counter.Counter>
-                    public static class: java.lang.Class<any>
-                }
-                class PerfLongArrayCounter extends sun.management.counter.AbstractCounter implements sun.management.counter.LongArrayCounter {
-                    public getValue(): java.lang.Object
-                    public longArrayValue(): long[]
-                    public longAt(arg0: int): long
-                    protected writeReplace(): java.lang.Object
-                    public static class: java.lang.Class<any>
-                }
-                class PerfLongCounter extends sun.management.counter.AbstractCounter implements sun.management.counter.LongCounter {
-                    public getValue(): java.lang.Object
-                    public longValue(): long
-                    protected writeReplace(): java.lang.Object
-                    public static class: java.lang.Class<any>
-                }
-                class PerfStringCounter extends sun.management.counter.perf.PerfByteArrayCounter implements sun.management.counter.StringCounter {
-                    public isVector(): boolean
-                    public getVectorLength(): int
-                    public getValue(): java.lang.Object
-                    public stringValue(): string
-                    protected writeReplace(): java.lang.Object
-                    public static class: java.lang.Class<any>
-                }
-                class Prologue {
-                    public getMagic(): int
-                    public getMajorVersion(): int
-                    public getMinorVersion(): int
-                    public getByteOrder(): java.nio.ByteOrder
-                    public getEntryOffset(): int
-                    public getUsed(): int
-                    public getOverflow(): int
-                    public getModificationTimeStamp(): long
-                    public getNumEntries(): int
-                    public isAccessible(): boolean
-                    public static class: java.lang.Class<any>
-                }
-                class StringCounterSnapshot extends sun.management.counter.AbstractCounter implements sun.management.counter.StringCounter {
-                    public getValue(): java.lang.Object
-                    public stringValue(): string
-                    public static class: java.lang.Class<any>
-                }
-            }
         }
     }
 }

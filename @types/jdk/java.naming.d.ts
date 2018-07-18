@@ -2,6 +2,93 @@ declare namespace com {
     namespace sun {
         namespace jndi {
             namespace ldap {
+                namespace ext {
+                    class StartTlsResponseImpl extends javax.naming.ldap.StartTlsResponse {
+                        public constructor()
+                        public setEnabledCipherSuites(arg0: java.lang.String[]): void
+                        public setHostnameVerifier(arg0: javax.net.ssl.HostnameVerifier | javax.net.ssl.HostnameVerifier$$Lambda): void
+                        public negotiate(): javax.net.ssl.SSLSession
+                        public negotiate(arg0: javax.net.ssl.SSLSocketFactory): javax.net.ssl.SSLSession
+                        public close(): void
+                        public setConnection(arg0: com.sun.jndi.ldap.Connection | com.sun.jndi.ldap.Connection$$Lambda, arg1: java.lang.String | string): void
+                        public static class: java.lang.Class<any>
+                    }
+                }
+                namespace pool {
+                    class ConnectionDesc {
+                        public equals(arg0: java.lang.Object): boolean
+                        public hashCode(): int
+                        public toString(): string
+                        public static class: java.lang.Class<any>
+                    }
+                    class Connections implements com.sun.jndi.ldap.pool.PoolCallback {
+                        public releasePooledConnection(arg0: com.sun.jndi.ldap.pool.PooledConnection | com.sun.jndi.ldap.pool.PooledConnection$$Lambda): boolean
+                        public removePooledConnection(arg0: com.sun.jndi.ldap.pool.PooledConnection | com.sun.jndi.ldap.pool.PooledConnection$$Lambda): boolean
+                        public static class: java.lang.Class<any>
+                    }
+                    class ConnectionsRef {
+                        public static class: java.lang.Class<any>
+                    }
+                    class ConnectionsWeakRef extends java.lang.ref.WeakReference<com.sun.jndi.ldap.pool.ConnectionsRef> {
+                        public static class: java.lang.Class<any>
+                    }
+                    class Pool {
+                        public constructor(arg0: int, arg1: int, arg2: int)
+                        public getPooledConnection(arg0: java.lang.Object, arg1: long, arg2: com.sun.jndi.ldap.pool.PooledConnectionFactory | com.sun.jndi.ldap.pool.PooledConnectionFactory$$Lambda): com.sun.jndi.ldap.pool.PooledConnection
+                        public expire(arg0: long): void
+                        public showStats(arg0: java.io.PrintStream): void
+                        public toString(): string
+                        public static class: java.lang.Class<any>
+                    }
+                    interface PoolCallback {
+                        releasePooledConnection(arg0: com.sun.jndi.ldap.pool.PooledConnection | com.sun.jndi.ldap.pool.PooledConnection$$Lambda): boolean
+                        removePooledConnection(arg0: com.sun.jndi.ldap.pool.PooledConnection | com.sun.jndi.ldap.pool.PooledConnection$$Lambda): boolean
+                    }
+                    class PoolCleaner extends java.lang.Thread {
+                        public constructor(arg0: long, arg1: com.sun.jndi.ldap.pool.Pool[])
+                        public run(): void
+                        public static class: java.lang.Class<any>
+                    }
+                    interface PooledConnection {
+                        closeConnection(): void
+                    }
+                    interface PooledConnection$$Lambda {
+                        (): void
+                    }
+                    interface PooledConnectionFactory {
+                        createPooledConnection(arg0: com.sun.jndi.ldap.pool.PoolCallback): com.sun.jndi.ldap.pool.PooledConnection
+                    }
+                    interface PooledConnectionFactory$$Lambda {
+                        (arg0: com.sun.jndi.ldap.pool.PoolCallback): com.sun.jndi.ldap.pool.PooledConnection
+                    }
+                }
+                namespace sasl {
+                    class DefaultCallbackHandler implements javax.security.auth.callback.CallbackHandler {
+                        public handle(arg0: javax.security.auth.callback.Callback[]): void
+                        protected finalize(): void
+                        public static class: java.lang.Class<any>
+                    }
+                    class DefaultCallbackHandler$$Lambda implements javax.security.auth.callback.CallbackHandler {
+                        public (arg0: javax.security.auth.callback.Callback[]): void
+                    }
+                    class LdapSasl {
+                        public static saslBind(arg0: com.sun.jndi.ldap.LdapClient | com.sun.jndi.ldap.LdapClient$$Lambda, arg1: com.sun.jndi.ldap.Connection | com.sun.jndi.ldap.Connection$$Lambda, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.Object, arg5: java.lang.String | string, arg6: java.util.Hashtable<any, any>, arg7: javax.naming.ldap.Control[]): com.sun.jndi.ldap.LdapResult
+                        public static class: java.lang.Class<any>
+                    }
+                    class SaslInputStream extends java.io.InputStream {
+                        public read(): int
+                        public read(arg0: byte[], arg1: int, arg2: int): int
+                        public available(): int
+                        public close(): void
+                        public static class: java.lang.Class<any>
+                    }
+                    class SaslOutputStream extends java.io.FilterOutputStream {
+                        public write(arg0: int): void
+                        public write(arg0: byte[], arg1: int, arg2: int): void
+                        public close(): void
+                        public static class: java.lang.Class<any>
+                    }
+                }
                 abstract class AbstractLdapNamingEnumeration<T extends javax.naming.NameClassPair> implements javax.naming.NamingEnumeration<T> , com.sun.jndi.ldap.ReferralEnumeration<T> {
                     protected listArg: javax.naming.Name
                     protected homeCtx: com.sun.jndi.ldap.LdapCtx
@@ -496,93 +583,6 @@ declare namespace com {
                 abstract class VersionHelper {
                     protected static getUrlArray(arg0: java.lang.String[]): java.net.URL[]
                     public static class: java.lang.Class<any>
-                }
-                namespace ext {
-                    class StartTlsResponseImpl extends javax.naming.ldap.StartTlsResponse {
-                        public constructor()
-                        public setEnabledCipherSuites(arg0: java.lang.String[]): void
-                        public setHostnameVerifier(arg0: javax.net.ssl.HostnameVerifier | javax.net.ssl.HostnameVerifier$$Lambda): void
-                        public negotiate(): javax.net.ssl.SSLSession
-                        public negotiate(arg0: javax.net.ssl.SSLSocketFactory): javax.net.ssl.SSLSession
-                        public close(): void
-                        public setConnection(arg0: com.sun.jndi.ldap.Connection | com.sun.jndi.ldap.Connection$$Lambda, arg1: java.lang.String | string): void
-                        public static class: java.lang.Class<any>
-                    }
-                }
-                namespace pool {
-                    class ConnectionDesc {
-                        public equals(arg0: java.lang.Object): boolean
-                        public hashCode(): int
-                        public toString(): string
-                        public static class: java.lang.Class<any>
-                    }
-                    class Connections implements com.sun.jndi.ldap.pool.PoolCallback {
-                        public releasePooledConnection(arg0: com.sun.jndi.ldap.pool.PooledConnection | com.sun.jndi.ldap.pool.PooledConnection$$Lambda): boolean
-                        public removePooledConnection(arg0: com.sun.jndi.ldap.pool.PooledConnection | com.sun.jndi.ldap.pool.PooledConnection$$Lambda): boolean
-                        public static class: java.lang.Class<any>
-                    }
-                    class ConnectionsRef {
-                        public static class: java.lang.Class<any>
-                    }
-                    class ConnectionsWeakRef extends java.lang.ref.WeakReference<com.sun.jndi.ldap.pool.ConnectionsRef> {
-                        public static class: java.lang.Class<any>
-                    }
-                    class Pool {
-                        public constructor(arg0: int, arg1: int, arg2: int)
-                        public getPooledConnection(arg0: java.lang.Object, arg1: long, arg2: com.sun.jndi.ldap.pool.PooledConnectionFactory | com.sun.jndi.ldap.pool.PooledConnectionFactory$$Lambda): com.sun.jndi.ldap.pool.PooledConnection
-                        public expire(arg0: long): void
-                        public showStats(arg0: java.io.PrintStream): void
-                        public toString(): string
-                        public static class: java.lang.Class<any>
-                    }
-                    interface PoolCallback {
-                        releasePooledConnection(arg0: com.sun.jndi.ldap.pool.PooledConnection | com.sun.jndi.ldap.pool.PooledConnection$$Lambda): boolean
-                        removePooledConnection(arg0: com.sun.jndi.ldap.pool.PooledConnection | com.sun.jndi.ldap.pool.PooledConnection$$Lambda): boolean
-                    }
-                    class PoolCleaner extends java.lang.Thread {
-                        public constructor(arg0: long, arg1: com.sun.jndi.ldap.pool.Pool[])
-                        public run(): void
-                        public static class: java.lang.Class<any>
-                    }
-                    interface PooledConnection {
-                        closeConnection(): void
-                    }
-                    interface PooledConnection$$Lambda {
-                        (): void
-                    }
-                    interface PooledConnectionFactory {
-                        createPooledConnection(arg0: com.sun.jndi.ldap.pool.PoolCallback): com.sun.jndi.ldap.pool.PooledConnection
-                    }
-                    interface PooledConnectionFactory$$Lambda {
-                        (arg0: com.sun.jndi.ldap.pool.PoolCallback): com.sun.jndi.ldap.pool.PooledConnection
-                    }
-                }
-                namespace sasl {
-                    class DefaultCallbackHandler implements javax.security.auth.callback.CallbackHandler {
-                        public handle(arg0: javax.security.auth.callback.Callback[]): void
-                        protected finalize(): void
-                        public static class: java.lang.Class<any>
-                    }
-                    class DefaultCallbackHandler$$Lambda implements javax.security.auth.callback.CallbackHandler {
-                        public (arg0: javax.security.auth.callback.Callback[]): void
-                    }
-                    class LdapSasl {
-                        public static saslBind(arg0: com.sun.jndi.ldap.LdapClient | com.sun.jndi.ldap.LdapClient$$Lambda, arg1: com.sun.jndi.ldap.Connection | com.sun.jndi.ldap.Connection$$Lambda, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.Object, arg5: java.lang.String | string, arg6: java.util.Hashtable<any, any>, arg7: javax.naming.ldap.Control[]): com.sun.jndi.ldap.LdapResult
-                        public static class: java.lang.Class<any>
-                    }
-                    class SaslInputStream extends java.io.InputStream {
-                        public read(): int
-                        public read(arg0: byte[], arg1: int, arg2: int): int
-                        public available(): int
-                        public close(): void
-                        public static class: java.lang.Class<any>
-                    }
-                    class SaslOutputStream extends java.io.FilterOutputStream {
-                        public write(arg0: int): void
-                        public write(arg0: byte[], arg1: int, arg2: int): void
-                        public close(): void
-                        public static class: java.lang.Class<any>
-                    }
                 }
             }
             namespace toolkit {
@@ -1307,461 +1307,6 @@ declare namespace com {
 }
 declare namespace javax {
     namespace naming {
-        class AuthenticationException extends javax.naming.NamingSecurityException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor()
-            public static class: java.lang.Class<any>
-        }
-        class AuthenticationNotSupportedException extends javax.naming.NamingSecurityException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor()
-            public static class: java.lang.Class<any>
-        }
-        class BinaryRefAddr extends javax.naming.RefAddr {
-            public constructor(arg0: java.lang.String | string, arg1: byte[])
-            public constructor(arg0: java.lang.String | string, arg1: byte[], arg2: int, arg3: int)
-            public getContent(): java.lang.Object
-            public equals(arg0: java.lang.Object): boolean
-            public hashCode(): int
-            public toString(): string
-            public static class: java.lang.Class<any>
-        }
-        class Binding extends javax.naming.NameClassPair {
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.Object)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: boolean)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object, arg3: boolean)
-            public getClassName(): string
-            public getObject(): java.lang.Object
-            public setObject(arg0: java.lang.Object): void
-            public toString(): string
-            public static class: java.lang.Class<any>
-        }
-        class CannotProceedException extends javax.naming.NamingException {
-            protected remainingNewName: javax.naming.Name
-            protected environment: java.util.Hashtable<any, any>
-            protected altName: javax.naming.Name
-            protected altNameCtx: javax.naming.Context
-            public constructor(arg0: java.lang.String | string)
-            public constructor()
-            public getEnvironment(): java.util.Hashtable<any, any>
-            public setEnvironment(arg0: java.util.Hashtable<any, any>): void
-            public getRemainingNewName(): javax.naming.Name
-            public setRemainingNewName(arg0: javax.naming.Name): void
-            public getAltName(): javax.naming.Name
-            public setAltName(arg0: javax.naming.Name): void
-            public getAltNameCtx(): javax.naming.Context
-            public setAltNameCtx(arg0: javax.naming.Context): void
-            public static class: java.lang.Class<any>
-        }
-        class CommunicationException extends javax.naming.NamingException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor()
-            public static class: java.lang.Class<any>
-        }
-        class CompositeName implements javax.naming.Name {
-            protected constructor(arg0: java.util.Enumeration<java.lang.String>)
-            public constructor(arg0: java.lang.String | string)
-            public constructor()
-            public toString(): string
-            public equals(arg0: java.lang.Object): boolean
-            public hashCode(): int
-            public compareTo(arg0: java.lang.Object): int
-            public clone(): java.lang.Object
-            public size(): int
-            public isEmpty(): boolean
-            public getAll(): java.util.Enumeration<java.lang.String>
-            public get(arg0: int): string
-            public getPrefix(arg0: int): javax.naming.Name
-            public getSuffix(arg0: int): javax.naming.Name
-            public startsWith(arg0: javax.naming.Name): boolean
-            public endsWith(arg0: javax.naming.Name): boolean
-            public addAll(arg0: javax.naming.Name): javax.naming.Name
-            public addAll(arg0: int, arg1: javax.naming.Name): javax.naming.Name
-            public add(arg0: java.lang.String | string): javax.naming.Name
-            public add(arg0: int, arg1: java.lang.String | string): javax.naming.Name
-            public remove(arg0: int): java.lang.Object
-            public static class: java.lang.Class<any>
-        }
-        class CompoundName implements javax.naming.Name {
-            protected impl: javax.naming.NameImpl
-            protected mySyntax: java.util.Properties
-            protected constructor(arg0: java.util.Enumeration<java.lang.String>, arg1: java.util.Properties)
-            public constructor(arg0: java.lang.String | string, arg1: java.util.Properties)
-            public toString(): string
-            public equals(arg0: java.lang.Object): boolean
-            public hashCode(): int
-            public clone(): java.lang.Object
-            public compareTo(arg0: java.lang.Object): int
-            public size(): int
-            public isEmpty(): boolean
-            public getAll(): java.util.Enumeration<java.lang.String>
-            public get(arg0: int): string
-            public getPrefix(arg0: int): javax.naming.Name
-            public getSuffix(arg0: int): javax.naming.Name
-            public startsWith(arg0: javax.naming.Name): boolean
-            public endsWith(arg0: javax.naming.Name): boolean
-            public addAll(arg0: javax.naming.Name): javax.naming.Name
-            public addAll(arg0: int, arg1: javax.naming.Name): javax.naming.Name
-            public add(arg0: java.lang.String | string): javax.naming.Name
-            public add(arg0: int, arg1: java.lang.String | string): javax.naming.Name
-            public remove(arg0: int): java.lang.Object
-            public static class: java.lang.Class<any>
-        }
-        class ConfigurationException extends javax.naming.NamingException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor()
-            public static class: java.lang.Class<any>
-        }
-        interface Context {
-            INITIAL_CONTEXT_FACTORY: string
-            OBJECT_FACTORIES: string
-            STATE_FACTORIES: string
-            URL_PKG_PREFIXES: string
-            PROVIDER_URL: string
-            DNS_URL: string
-            AUTHORITATIVE: string
-            BATCHSIZE: string
-            REFERRAL: string
-            SECURITY_PROTOCOL: string
-            SECURITY_AUTHENTICATION: string
-            SECURITY_PRINCIPAL: string
-            SECURITY_CREDENTIALS: string
-            LANGUAGE: string
-            APPLET: string
-            lookup(arg0: javax.naming.Name): java.lang.Object
-            lookup(arg0: java.lang.String | string): java.lang.Object
-            bind(arg0: javax.naming.Name, arg1: java.lang.Object): void
-            bind(arg0: java.lang.String | string, arg1: java.lang.Object): void
-            rebind(arg0: javax.naming.Name, arg1: java.lang.Object): void
-            rebind(arg0: java.lang.String | string, arg1: java.lang.Object): void
-            unbind(arg0: javax.naming.Name): void
-            unbind(arg0: java.lang.String | string): void
-            rename(arg0: javax.naming.Name, arg1: javax.naming.Name): void
-            rename(arg0: java.lang.String | string, arg1: java.lang.String | string): void
-            list(arg0: javax.naming.Name): javax.naming.NamingEnumeration<javax.naming.NameClassPair>
-            list(arg0: java.lang.String | string): javax.naming.NamingEnumeration<javax.naming.NameClassPair>
-            listBindings(arg0: javax.naming.Name): javax.naming.NamingEnumeration<javax.naming.Binding>
-            listBindings(arg0: java.lang.String | string): javax.naming.NamingEnumeration<javax.naming.Binding>
-            destroySubcontext(arg0: javax.naming.Name): void
-            destroySubcontext(arg0: java.lang.String | string): void
-            createSubcontext(arg0: javax.naming.Name): javax.naming.Context
-            createSubcontext(arg0: java.lang.String | string): javax.naming.Context
-            lookupLink(arg0: javax.naming.Name): java.lang.Object
-            lookupLink(arg0: java.lang.String | string): java.lang.Object
-            getNameParser(arg0: javax.naming.Name): javax.naming.NameParser
-            getNameParser(arg0: java.lang.String | string): javax.naming.NameParser
-            composeName(arg0: javax.naming.Name, arg1: javax.naming.Name): javax.naming.Name
-            composeName(arg0: java.lang.String | string, arg1: java.lang.String | string): string
-            addToEnvironment(arg0: java.lang.String | string, arg1: java.lang.Object): java.lang.Object
-            removeFromEnvironment(arg0: java.lang.String | string): java.lang.Object
-            getEnvironment(): java.util.Hashtable<any, any>
-            close(): void
-            getNameInNamespace(): string
-        }
-        class ContextNotEmptyException extends javax.naming.NamingException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor()
-            public static class: java.lang.Class<any>
-        }
-        class InitialContext implements javax.naming.Context {
-            protected myProps: java.util.Hashtable<java.lang.Object, java.lang.Object>
-            protected defaultInitCtx: javax.naming.Context
-            protected gotDefault: boolean
-            protected constructor(arg0: boolean)
-            public constructor()
-            public constructor(arg0: java.util.Hashtable<any, any>)
-            protected init(arg0: java.util.Hashtable<any, any>): void
-            public static doLookup<T>(arg0: javax.naming.Name): T
-            public static doLookup<T>(arg0: java.lang.String | string): T
-            protected getDefaultInitCtx(): javax.naming.Context
-            protected getURLOrDefaultInitCtx(arg0: java.lang.String | string): javax.naming.Context
-            protected getURLOrDefaultInitCtx(arg0: javax.naming.Name): javax.naming.Context
-            public lookup(arg0: java.lang.String | string): java.lang.Object
-            public lookup(arg0: javax.naming.Name): java.lang.Object
-            public bind(arg0: java.lang.String | string, arg1: java.lang.Object): void
-            public bind(arg0: javax.naming.Name, arg1: java.lang.Object): void
-            public rebind(arg0: java.lang.String | string, arg1: java.lang.Object): void
-            public rebind(arg0: javax.naming.Name, arg1: java.lang.Object): void
-            public unbind(arg0: java.lang.String | string): void
-            public unbind(arg0: javax.naming.Name): void
-            public rename(arg0: java.lang.String | string, arg1: java.lang.String | string): void
-            public rename(arg0: javax.naming.Name, arg1: javax.naming.Name): void
-            public list(arg0: java.lang.String | string): javax.naming.NamingEnumeration<javax.naming.NameClassPair>
-            public list(arg0: javax.naming.Name): javax.naming.NamingEnumeration<javax.naming.NameClassPair>
-            public listBindings(arg0: java.lang.String | string): javax.naming.NamingEnumeration<javax.naming.Binding>
-            public listBindings(arg0: javax.naming.Name): javax.naming.NamingEnumeration<javax.naming.Binding>
-            public destroySubcontext(arg0: java.lang.String | string): void
-            public destroySubcontext(arg0: javax.naming.Name): void
-            public createSubcontext(arg0: java.lang.String | string): javax.naming.Context
-            public createSubcontext(arg0: javax.naming.Name): javax.naming.Context
-            public lookupLink(arg0: java.lang.String | string): java.lang.Object
-            public lookupLink(arg0: javax.naming.Name): java.lang.Object
-            public getNameParser(arg0: java.lang.String | string): javax.naming.NameParser
-            public getNameParser(arg0: javax.naming.Name): javax.naming.NameParser
-            public composeName(arg0: java.lang.String | string, arg1: java.lang.String | string): string
-            public composeName(arg0: javax.naming.Name, arg1: javax.naming.Name): javax.naming.Name
-            public addToEnvironment(arg0: java.lang.String | string, arg1: java.lang.Object): java.lang.Object
-            public removeFromEnvironment(arg0: java.lang.String | string): java.lang.Object
-            public getEnvironment(): java.util.Hashtable<any, any>
-            public close(): void
-            public getNameInNamespace(): string
-            public static class: java.lang.Class<any>
-        }
-        class InsufficientResourcesException extends javax.naming.NamingException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor()
-            public static class: java.lang.Class<any>
-        }
-        class InterruptedNamingException extends javax.naming.NamingException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor()
-            public static class: java.lang.Class<any>
-        }
-        class InvalidNameException extends javax.naming.NamingException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor()
-            public static class: java.lang.Class<any>
-        }
-        class LimitExceededException extends javax.naming.NamingException {
-            public constructor()
-            public constructor(arg0: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
-        class LinkException extends javax.naming.NamingException {
-            protected linkResolvedName: javax.naming.Name
-            protected linkResolvedObj: java.lang.Object
-            protected linkRemainingName: javax.naming.Name
-            protected linkExplanation: string
-            public constructor(arg0: java.lang.String | string)
-            public constructor()
-            public getLinkResolvedName(): javax.naming.Name
-            public getLinkRemainingName(): javax.naming.Name
-            public getLinkResolvedObj(): java.lang.Object
-            public getLinkExplanation(): string
-            public setLinkExplanation(arg0: java.lang.String | string): void
-            public setLinkResolvedName(arg0: javax.naming.Name): void
-            public setLinkRemainingName(arg0: javax.naming.Name): void
-            public setLinkResolvedObj(arg0: java.lang.Object): void
-            public toString(): string
-            public toString(arg0: boolean): string
-            public static class: java.lang.Class<any>
-        }
-        class LinkLoopException extends javax.naming.LinkException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor()
-            public static class: java.lang.Class<any>
-        }
-        class LinkRef extends javax.naming.Reference {
-            public constructor(arg0: javax.naming.Name)
-            public constructor(arg0: java.lang.String | string)
-            public getLinkName(): string
-            public static class: java.lang.Class<any>
-        }
-        class MalformedLinkException extends javax.naming.LinkException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor()
-            public static class: java.lang.Class<any>
-        }
-        interface Name extends java.lang.Cloneable , java.io.Serializable , java.lang.Comparable<java.lang.Object> {
-            serialVersionUID: long
-            clone(): java.lang.Object
-            compareTo(arg0: java.lang.Object): int
-            size(): int
-            isEmpty(): boolean
-            getAll(): java.util.Enumeration<java.lang.String>
-            get(arg0: int): string
-            getPrefix(arg0: int): javax.naming.Name
-            getSuffix(arg0: int): javax.naming.Name
-            startsWith(arg0: javax.naming.Name): boolean
-            endsWith(arg0: javax.naming.Name): boolean
-            addAll(arg0: javax.naming.Name): javax.naming.Name
-            addAll(arg0: int, arg1: javax.naming.Name): javax.naming.Name
-            add(arg0: java.lang.String | string): javax.naming.Name
-            add(arg0: int, arg1: java.lang.String | string): javax.naming.Name
-            remove(arg0: int): java.lang.Object
-        }
-        class NameAlreadyBoundException extends javax.naming.NamingException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor()
-            public static class: java.lang.Class<any>
-        }
-        class NameClassPair implements java.io.Serializable {
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: boolean)
-            public getClassName(): string
-            public getName(): string
-            public setName(arg0: java.lang.String | string): void
-            public setClassName(arg0: java.lang.String | string): void
-            public isRelative(): boolean
-            public setRelative(arg0: boolean): void
-            public getNameInNamespace(): string
-            public setNameInNamespace(arg0: java.lang.String | string): void
-            public toString(): string
-            public static class: java.lang.Class<any>
-        }
-        class NameImpl {
-            public toString(): string
-            public equals(arg0: java.lang.Object): boolean
-            public compareTo(arg0: javax.naming.NameImpl): int
-            public size(): int
-            public getAll(): java.util.Enumeration<java.lang.String>
-            public get(arg0: int): string
-            public getPrefix(arg0: int): java.util.Enumeration<java.lang.String>
-            public getSuffix(arg0: int): java.util.Enumeration<java.lang.String>
-            public isEmpty(): boolean
-            public startsWith(arg0: int, arg1: java.util.Enumeration<java.lang.String>): boolean
-            public endsWith(arg0: int, arg1: java.util.Enumeration<java.lang.String>): boolean
-            public addAll(arg0: java.util.Enumeration<java.lang.String>): boolean
-            public addAll(arg0: int, arg1: java.util.Enumeration<java.lang.String>): boolean
-            public add(arg0: java.lang.String | string): void
-            public add(arg0: int, arg1: java.lang.String | string): void
-            public remove(arg0: int): java.lang.Object
-            public hashCode(): int
-            public static class: java.lang.Class<any>
-        }
-        class NameNotFoundException extends javax.naming.NamingException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor()
-            public static class: java.lang.Class<any>
-        }
-        interface NameParser {
-            parse(arg0: java.lang.String | string): javax.naming.Name
-        }
-        interface NameParser$$Lambda {
-            (arg0: java.lang.String | string): javax.naming.Name
-        }
-        interface NamingEnumeration<T> extends java.util.Enumeration<T> {
-            next(): T
-            hasMore(): boolean
-            close(): void
-        }
-        class NamingException extends java.lang.Exception {
-            protected resolvedName: javax.naming.Name
-            protected resolvedObj: java.lang.Object
-            protected remainingName: javax.naming.Name
-            protected rootException: java.lang.Throwable
-            public constructor(arg0: java.lang.String | string)
-            public constructor()
-            public getResolvedName(): javax.naming.Name
-            public getRemainingName(): javax.naming.Name
-            public getResolvedObj(): java.lang.Object
-            public getExplanation(): string
-            public setResolvedName(arg0: javax.naming.Name): void
-            public setRemainingName(arg0: javax.naming.Name): void
-            public setResolvedObj(arg0: java.lang.Object): void
-            public appendRemainingComponent(arg0: java.lang.String | string): void
-            public appendRemainingName(arg0: javax.naming.Name): void
-            public getRootCause(): java.lang.Throwable
-            public setRootCause(arg0: java.lang.Throwable): void
-            public getCause(): java.lang.Throwable
-            public initCause(arg0: java.lang.Throwable): java.lang.Throwable
-            public toString(): string
-            public toString(arg0: boolean): string
-            public static class: java.lang.Class<any>
-        }
-        abstract class NamingSecurityException extends javax.naming.NamingException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor()
-            public static class: java.lang.Class<any>
-        }
-        class NoInitialContextException extends javax.naming.NamingException {
-            public constructor()
-            public constructor(arg0: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
-        class NoPermissionException extends javax.naming.NamingSecurityException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor()
-            public static class: java.lang.Class<any>
-        }
-        class NotContextException extends javax.naming.NamingException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor()
-            public static class: java.lang.Class<any>
-        }
-        class OperationNotSupportedException extends javax.naming.NamingException {
-            public constructor()
-            public constructor(arg0: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
-        class PartialResultException extends javax.naming.NamingException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor()
-            public static class: java.lang.Class<any>
-        }
-        abstract class RefAddr implements java.io.Serializable {
-            protected addrType: string
-            protected constructor(arg0: java.lang.String | string)
-            public getType(): string
-            public getContent(): java.lang.Object
-            public equals(arg0: java.lang.Object): boolean
-            public hashCode(): int
-            public toString(): string
-            public static class: java.lang.Class<any>
-        }
-        class Reference implements java.lang.Cloneable , java.io.Serializable {
-            protected className: string
-            protected addrs: java.util.Vector<javax.naming.RefAddr>
-            protected classFactory: string
-            protected classFactoryLocation: string
-            public constructor(arg0: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: javax.naming.RefAddr)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: javax.naming.RefAddr, arg2: java.lang.String | string, arg3: java.lang.String | string)
-            public getClassName(): string
-            public getFactoryClassName(): string
-            public getFactoryClassLocation(): string
-            public get(arg0: java.lang.String | string): javax.naming.RefAddr
-            public get(arg0: int): javax.naming.RefAddr
-            public getAll(): java.util.Enumeration<javax.naming.RefAddr>
-            public size(): int
-            public add(arg0: javax.naming.RefAddr): void
-            public add(arg0: int, arg1: javax.naming.RefAddr): void
-            public remove(arg0: int): java.lang.Object
-            public clear(): void
-            public equals(arg0: java.lang.Object): boolean
-            public hashCode(): int
-            public toString(): string
-            public clone(): java.lang.Object
-            public static class: java.lang.Class<any>
-        }
-        interface Referenceable {
-            getReference(): javax.naming.Reference
-        }
-        interface Referenceable$$Lambda {
-            (): javax.naming.Reference
-        }
-        abstract class ReferralException extends javax.naming.NamingException {
-            protected constructor(arg0: java.lang.String | string)
-            protected constructor()
-            public getReferralInfo(): java.lang.Object
-            public getReferralContext(): javax.naming.Context
-            public getReferralContext(arg0: java.util.Hashtable<any, any>): javax.naming.Context
-            public skipReferral(): boolean
-            public retryReferral(): void
-            public static class: java.lang.Class<any>
-        }
-        class ServiceUnavailableException extends javax.naming.NamingException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor()
-            public static class: java.lang.Class<any>
-        }
-        class SizeLimitExceededException extends javax.naming.LimitExceededException {
-            public constructor()
-            public constructor(arg0: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
-        class StringRefAddr extends javax.naming.RefAddr {
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
-            public getContent(): java.lang.Object
-            public static class: java.lang.Class<any>
-        }
-        class TimeLimitExceededException extends javax.naming.LimitExceededException {
-            public constructor()
-            public constructor(arg0: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
         namespace directory {
             interface Attribute extends java.lang.Cloneable , java.io.Serializable {
                 serialVersionUID: long
@@ -2384,6 +1929,461 @@ declare namespace javax {
             interface StateFactory$$Lambda {
                 (arg0: java.lang.Object, arg1: javax.naming.Name, arg2: javax.naming.Context, arg3: java.util.Hashtable<any, any>): java.lang.Object
             }
+        }
+        class AuthenticationException extends javax.naming.NamingSecurityException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor()
+            public static class: java.lang.Class<any>
+        }
+        class AuthenticationNotSupportedException extends javax.naming.NamingSecurityException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor()
+            public static class: java.lang.Class<any>
+        }
+        class BinaryRefAddr extends javax.naming.RefAddr {
+            public constructor(arg0: java.lang.String | string, arg1: byte[])
+            public constructor(arg0: java.lang.String | string, arg1: byte[], arg2: int, arg3: int)
+            public getContent(): java.lang.Object
+            public equals(arg0: java.lang.Object): boolean
+            public hashCode(): int
+            public toString(): string
+            public static class: java.lang.Class<any>
+        }
+        class Binding extends javax.naming.NameClassPair {
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.Object)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: boolean)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object, arg3: boolean)
+            public getClassName(): string
+            public getObject(): java.lang.Object
+            public setObject(arg0: java.lang.Object): void
+            public toString(): string
+            public static class: java.lang.Class<any>
+        }
+        class CannotProceedException extends javax.naming.NamingException {
+            protected remainingNewName: javax.naming.Name
+            protected environment: java.util.Hashtable<any, any>
+            protected altName: javax.naming.Name
+            protected altNameCtx: javax.naming.Context
+            public constructor(arg0: java.lang.String | string)
+            public constructor()
+            public getEnvironment(): java.util.Hashtable<any, any>
+            public setEnvironment(arg0: java.util.Hashtable<any, any>): void
+            public getRemainingNewName(): javax.naming.Name
+            public setRemainingNewName(arg0: javax.naming.Name): void
+            public getAltName(): javax.naming.Name
+            public setAltName(arg0: javax.naming.Name): void
+            public getAltNameCtx(): javax.naming.Context
+            public setAltNameCtx(arg0: javax.naming.Context): void
+            public static class: java.lang.Class<any>
+        }
+        class CommunicationException extends javax.naming.NamingException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor()
+            public static class: java.lang.Class<any>
+        }
+        class CompositeName implements javax.naming.Name {
+            protected constructor(arg0: java.util.Enumeration<java.lang.String>)
+            public constructor(arg0: java.lang.String | string)
+            public constructor()
+            public toString(): string
+            public equals(arg0: java.lang.Object): boolean
+            public hashCode(): int
+            public compareTo(arg0: java.lang.Object): int
+            public clone(): java.lang.Object
+            public size(): int
+            public isEmpty(): boolean
+            public getAll(): java.util.Enumeration<java.lang.String>
+            public get(arg0: int): string
+            public getPrefix(arg0: int): javax.naming.Name
+            public getSuffix(arg0: int): javax.naming.Name
+            public startsWith(arg0: javax.naming.Name): boolean
+            public endsWith(arg0: javax.naming.Name): boolean
+            public addAll(arg0: javax.naming.Name): javax.naming.Name
+            public addAll(arg0: int, arg1: javax.naming.Name): javax.naming.Name
+            public add(arg0: java.lang.String | string): javax.naming.Name
+            public add(arg0: int, arg1: java.lang.String | string): javax.naming.Name
+            public remove(arg0: int): java.lang.Object
+            public static class: java.lang.Class<any>
+        }
+        class CompoundName implements javax.naming.Name {
+            protected impl: javax.naming.NameImpl
+            protected mySyntax: java.util.Properties
+            protected constructor(arg0: java.util.Enumeration<java.lang.String>, arg1: java.util.Properties)
+            public constructor(arg0: java.lang.String | string, arg1: java.util.Properties)
+            public toString(): string
+            public equals(arg0: java.lang.Object): boolean
+            public hashCode(): int
+            public clone(): java.lang.Object
+            public compareTo(arg0: java.lang.Object): int
+            public size(): int
+            public isEmpty(): boolean
+            public getAll(): java.util.Enumeration<java.lang.String>
+            public get(arg0: int): string
+            public getPrefix(arg0: int): javax.naming.Name
+            public getSuffix(arg0: int): javax.naming.Name
+            public startsWith(arg0: javax.naming.Name): boolean
+            public endsWith(arg0: javax.naming.Name): boolean
+            public addAll(arg0: javax.naming.Name): javax.naming.Name
+            public addAll(arg0: int, arg1: javax.naming.Name): javax.naming.Name
+            public add(arg0: java.lang.String | string): javax.naming.Name
+            public add(arg0: int, arg1: java.lang.String | string): javax.naming.Name
+            public remove(arg0: int): java.lang.Object
+            public static class: java.lang.Class<any>
+        }
+        class ConfigurationException extends javax.naming.NamingException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor()
+            public static class: java.lang.Class<any>
+        }
+        interface Context {
+            INITIAL_CONTEXT_FACTORY: string
+            OBJECT_FACTORIES: string
+            STATE_FACTORIES: string
+            URL_PKG_PREFIXES: string
+            PROVIDER_URL: string
+            DNS_URL: string
+            AUTHORITATIVE: string
+            BATCHSIZE: string
+            REFERRAL: string
+            SECURITY_PROTOCOL: string
+            SECURITY_AUTHENTICATION: string
+            SECURITY_PRINCIPAL: string
+            SECURITY_CREDENTIALS: string
+            LANGUAGE: string
+            APPLET: string
+            lookup(arg0: javax.naming.Name): java.lang.Object
+            lookup(arg0: java.lang.String | string): java.lang.Object
+            bind(arg0: javax.naming.Name, arg1: java.lang.Object): void
+            bind(arg0: java.lang.String | string, arg1: java.lang.Object): void
+            rebind(arg0: javax.naming.Name, arg1: java.lang.Object): void
+            rebind(arg0: java.lang.String | string, arg1: java.lang.Object): void
+            unbind(arg0: javax.naming.Name): void
+            unbind(arg0: java.lang.String | string): void
+            rename(arg0: javax.naming.Name, arg1: javax.naming.Name): void
+            rename(arg0: java.lang.String | string, arg1: java.lang.String | string): void
+            list(arg0: javax.naming.Name): javax.naming.NamingEnumeration<javax.naming.NameClassPair>
+            list(arg0: java.lang.String | string): javax.naming.NamingEnumeration<javax.naming.NameClassPair>
+            listBindings(arg0: javax.naming.Name): javax.naming.NamingEnumeration<javax.naming.Binding>
+            listBindings(arg0: java.lang.String | string): javax.naming.NamingEnumeration<javax.naming.Binding>
+            destroySubcontext(arg0: javax.naming.Name): void
+            destroySubcontext(arg0: java.lang.String | string): void
+            createSubcontext(arg0: javax.naming.Name): javax.naming.Context
+            createSubcontext(arg0: java.lang.String | string): javax.naming.Context
+            lookupLink(arg0: javax.naming.Name): java.lang.Object
+            lookupLink(arg0: java.lang.String | string): java.lang.Object
+            getNameParser(arg0: javax.naming.Name): javax.naming.NameParser
+            getNameParser(arg0: java.lang.String | string): javax.naming.NameParser
+            composeName(arg0: javax.naming.Name, arg1: javax.naming.Name): javax.naming.Name
+            composeName(arg0: java.lang.String | string, arg1: java.lang.String | string): string
+            addToEnvironment(arg0: java.lang.String | string, arg1: java.lang.Object): java.lang.Object
+            removeFromEnvironment(arg0: java.lang.String | string): java.lang.Object
+            getEnvironment(): java.util.Hashtable<any, any>
+            close(): void
+            getNameInNamespace(): string
+        }
+        class ContextNotEmptyException extends javax.naming.NamingException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor()
+            public static class: java.lang.Class<any>
+        }
+        class InitialContext implements javax.naming.Context {
+            protected myProps: java.util.Hashtable<java.lang.Object, java.lang.Object>
+            protected defaultInitCtx: javax.naming.Context
+            protected gotDefault: boolean
+            protected constructor(arg0: boolean)
+            public constructor()
+            public constructor(arg0: java.util.Hashtable<any, any>)
+            protected init(arg0: java.util.Hashtable<any, any>): void
+            public static doLookup<T>(arg0: javax.naming.Name): T
+            public static doLookup<T>(arg0: java.lang.String | string): T
+            protected getDefaultInitCtx(): javax.naming.Context
+            protected getURLOrDefaultInitCtx(arg0: java.lang.String | string): javax.naming.Context
+            protected getURLOrDefaultInitCtx(arg0: javax.naming.Name): javax.naming.Context
+            public lookup(arg0: java.lang.String | string): java.lang.Object
+            public lookup(arg0: javax.naming.Name): java.lang.Object
+            public bind(arg0: java.lang.String | string, arg1: java.lang.Object): void
+            public bind(arg0: javax.naming.Name, arg1: java.lang.Object): void
+            public rebind(arg0: java.lang.String | string, arg1: java.lang.Object): void
+            public rebind(arg0: javax.naming.Name, arg1: java.lang.Object): void
+            public unbind(arg0: java.lang.String | string): void
+            public unbind(arg0: javax.naming.Name): void
+            public rename(arg0: java.lang.String | string, arg1: java.lang.String | string): void
+            public rename(arg0: javax.naming.Name, arg1: javax.naming.Name): void
+            public list(arg0: java.lang.String | string): javax.naming.NamingEnumeration<javax.naming.NameClassPair>
+            public list(arg0: javax.naming.Name): javax.naming.NamingEnumeration<javax.naming.NameClassPair>
+            public listBindings(arg0: java.lang.String | string): javax.naming.NamingEnumeration<javax.naming.Binding>
+            public listBindings(arg0: javax.naming.Name): javax.naming.NamingEnumeration<javax.naming.Binding>
+            public destroySubcontext(arg0: java.lang.String | string): void
+            public destroySubcontext(arg0: javax.naming.Name): void
+            public createSubcontext(arg0: java.lang.String | string): javax.naming.Context
+            public createSubcontext(arg0: javax.naming.Name): javax.naming.Context
+            public lookupLink(arg0: java.lang.String | string): java.lang.Object
+            public lookupLink(arg0: javax.naming.Name): java.lang.Object
+            public getNameParser(arg0: java.lang.String | string): javax.naming.NameParser
+            public getNameParser(arg0: javax.naming.Name): javax.naming.NameParser
+            public composeName(arg0: java.lang.String | string, arg1: java.lang.String | string): string
+            public composeName(arg0: javax.naming.Name, arg1: javax.naming.Name): javax.naming.Name
+            public addToEnvironment(arg0: java.lang.String | string, arg1: java.lang.Object): java.lang.Object
+            public removeFromEnvironment(arg0: java.lang.String | string): java.lang.Object
+            public getEnvironment(): java.util.Hashtable<any, any>
+            public close(): void
+            public getNameInNamespace(): string
+            public static class: java.lang.Class<any>
+        }
+        class InsufficientResourcesException extends javax.naming.NamingException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor()
+            public static class: java.lang.Class<any>
+        }
+        class InterruptedNamingException extends javax.naming.NamingException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor()
+            public static class: java.lang.Class<any>
+        }
+        class InvalidNameException extends javax.naming.NamingException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor()
+            public static class: java.lang.Class<any>
+        }
+        class LimitExceededException extends javax.naming.NamingException {
+            public constructor()
+            public constructor(arg0: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
+        class LinkException extends javax.naming.NamingException {
+            protected linkResolvedName: javax.naming.Name
+            protected linkResolvedObj: java.lang.Object
+            protected linkRemainingName: javax.naming.Name
+            protected linkExplanation: string
+            public constructor(arg0: java.lang.String | string)
+            public constructor()
+            public getLinkResolvedName(): javax.naming.Name
+            public getLinkRemainingName(): javax.naming.Name
+            public getLinkResolvedObj(): java.lang.Object
+            public getLinkExplanation(): string
+            public setLinkExplanation(arg0: java.lang.String | string): void
+            public setLinkResolvedName(arg0: javax.naming.Name): void
+            public setLinkRemainingName(arg0: javax.naming.Name): void
+            public setLinkResolvedObj(arg0: java.lang.Object): void
+            public toString(): string
+            public toString(arg0: boolean): string
+            public static class: java.lang.Class<any>
+        }
+        class LinkLoopException extends javax.naming.LinkException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor()
+            public static class: java.lang.Class<any>
+        }
+        class LinkRef extends javax.naming.Reference {
+            public constructor(arg0: javax.naming.Name)
+            public constructor(arg0: java.lang.String | string)
+            public getLinkName(): string
+            public static class: java.lang.Class<any>
+        }
+        class MalformedLinkException extends javax.naming.LinkException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor()
+            public static class: java.lang.Class<any>
+        }
+        interface Name extends java.lang.Cloneable , java.io.Serializable , java.lang.Comparable<java.lang.Object> {
+            serialVersionUID: long
+            clone(): java.lang.Object
+            compareTo(arg0: java.lang.Object): int
+            size(): int
+            isEmpty(): boolean
+            getAll(): java.util.Enumeration<java.lang.String>
+            get(arg0: int): string
+            getPrefix(arg0: int): javax.naming.Name
+            getSuffix(arg0: int): javax.naming.Name
+            startsWith(arg0: javax.naming.Name): boolean
+            endsWith(arg0: javax.naming.Name): boolean
+            addAll(arg0: javax.naming.Name): javax.naming.Name
+            addAll(arg0: int, arg1: javax.naming.Name): javax.naming.Name
+            add(arg0: java.lang.String | string): javax.naming.Name
+            add(arg0: int, arg1: java.lang.String | string): javax.naming.Name
+            remove(arg0: int): java.lang.Object
+        }
+        class NameAlreadyBoundException extends javax.naming.NamingException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor()
+            public static class: java.lang.Class<any>
+        }
+        class NameClassPair implements java.io.Serializable {
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: boolean)
+            public getClassName(): string
+            public getName(): string
+            public setName(arg0: java.lang.String | string): void
+            public setClassName(arg0: java.lang.String | string): void
+            public isRelative(): boolean
+            public setRelative(arg0: boolean): void
+            public getNameInNamespace(): string
+            public setNameInNamespace(arg0: java.lang.String | string): void
+            public toString(): string
+            public static class: java.lang.Class<any>
+        }
+        class NameImpl {
+            public toString(): string
+            public equals(arg0: java.lang.Object): boolean
+            public compareTo(arg0: javax.naming.NameImpl): int
+            public size(): int
+            public getAll(): java.util.Enumeration<java.lang.String>
+            public get(arg0: int): string
+            public getPrefix(arg0: int): java.util.Enumeration<java.lang.String>
+            public getSuffix(arg0: int): java.util.Enumeration<java.lang.String>
+            public isEmpty(): boolean
+            public startsWith(arg0: int, arg1: java.util.Enumeration<java.lang.String>): boolean
+            public endsWith(arg0: int, arg1: java.util.Enumeration<java.lang.String>): boolean
+            public addAll(arg0: java.util.Enumeration<java.lang.String>): boolean
+            public addAll(arg0: int, arg1: java.util.Enumeration<java.lang.String>): boolean
+            public add(arg0: java.lang.String | string): void
+            public add(arg0: int, arg1: java.lang.String | string): void
+            public remove(arg0: int): java.lang.Object
+            public hashCode(): int
+            public static class: java.lang.Class<any>
+        }
+        class NameNotFoundException extends javax.naming.NamingException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor()
+            public static class: java.lang.Class<any>
+        }
+        interface NameParser {
+            parse(arg0: java.lang.String | string): javax.naming.Name
+        }
+        interface NameParser$$Lambda {
+            (arg0: java.lang.String | string): javax.naming.Name
+        }
+        interface NamingEnumeration<T> extends java.util.Enumeration<T> {
+            next(): T
+            hasMore(): boolean
+            close(): void
+        }
+        class NamingException extends java.lang.Exception {
+            protected resolvedName: javax.naming.Name
+            protected resolvedObj: java.lang.Object
+            protected remainingName: javax.naming.Name
+            protected rootException: java.lang.Throwable
+            public constructor(arg0: java.lang.String | string)
+            public constructor()
+            public getResolvedName(): javax.naming.Name
+            public getRemainingName(): javax.naming.Name
+            public getResolvedObj(): java.lang.Object
+            public getExplanation(): string
+            public setResolvedName(arg0: javax.naming.Name): void
+            public setRemainingName(arg0: javax.naming.Name): void
+            public setResolvedObj(arg0: java.lang.Object): void
+            public appendRemainingComponent(arg0: java.lang.String | string): void
+            public appendRemainingName(arg0: javax.naming.Name): void
+            public getRootCause(): java.lang.Throwable
+            public setRootCause(arg0: java.lang.Throwable): void
+            public getCause(): java.lang.Throwable
+            public initCause(arg0: java.lang.Throwable): java.lang.Throwable
+            public toString(): string
+            public toString(arg0: boolean): string
+            public static class: java.lang.Class<any>
+        }
+        abstract class NamingSecurityException extends javax.naming.NamingException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor()
+            public static class: java.lang.Class<any>
+        }
+        class NoInitialContextException extends javax.naming.NamingException {
+            public constructor()
+            public constructor(arg0: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
+        class NoPermissionException extends javax.naming.NamingSecurityException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor()
+            public static class: java.lang.Class<any>
+        }
+        class NotContextException extends javax.naming.NamingException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor()
+            public static class: java.lang.Class<any>
+        }
+        class OperationNotSupportedException extends javax.naming.NamingException {
+            public constructor()
+            public constructor(arg0: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
+        class PartialResultException extends javax.naming.NamingException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor()
+            public static class: java.lang.Class<any>
+        }
+        abstract class RefAddr implements java.io.Serializable {
+            protected addrType: string
+            protected constructor(arg0: java.lang.String | string)
+            public getType(): string
+            public getContent(): java.lang.Object
+            public equals(arg0: java.lang.Object): boolean
+            public hashCode(): int
+            public toString(): string
+            public static class: java.lang.Class<any>
+        }
+        class Reference implements java.lang.Cloneable , java.io.Serializable {
+            protected className: string
+            protected addrs: java.util.Vector<javax.naming.RefAddr>
+            protected classFactory: string
+            protected classFactoryLocation: string
+            public constructor(arg0: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: javax.naming.RefAddr)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: javax.naming.RefAddr, arg2: java.lang.String | string, arg3: java.lang.String | string)
+            public getClassName(): string
+            public getFactoryClassName(): string
+            public getFactoryClassLocation(): string
+            public get(arg0: java.lang.String | string): javax.naming.RefAddr
+            public get(arg0: int): javax.naming.RefAddr
+            public getAll(): java.util.Enumeration<javax.naming.RefAddr>
+            public size(): int
+            public add(arg0: javax.naming.RefAddr): void
+            public add(arg0: int, arg1: javax.naming.RefAddr): void
+            public remove(arg0: int): java.lang.Object
+            public clear(): void
+            public equals(arg0: java.lang.Object): boolean
+            public hashCode(): int
+            public toString(): string
+            public clone(): java.lang.Object
+            public static class: java.lang.Class<any>
+        }
+        interface Referenceable {
+            getReference(): javax.naming.Reference
+        }
+        interface Referenceable$$Lambda {
+            (): javax.naming.Reference
+        }
+        abstract class ReferralException extends javax.naming.NamingException {
+            protected constructor(arg0: java.lang.String | string)
+            protected constructor()
+            public getReferralInfo(): java.lang.Object
+            public getReferralContext(): javax.naming.Context
+            public getReferralContext(arg0: java.util.Hashtable<any, any>): javax.naming.Context
+            public skipReferral(): boolean
+            public retryReferral(): void
+            public static class: java.lang.Class<any>
+        }
+        class ServiceUnavailableException extends javax.naming.NamingException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor()
+            public static class: java.lang.Class<any>
+        }
+        class SizeLimitExceededException extends javax.naming.LimitExceededException {
+            public constructor()
+            public constructor(arg0: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
+        class StringRefAddr extends javax.naming.RefAddr {
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
+            public getContent(): java.lang.Object
+            public static class: java.lang.Class<any>
+        }
+        class TimeLimitExceededException extends javax.naming.LimitExceededException {
+            public constructor()
+            public constructor(arg0: java.lang.String | string)
+            public static class: java.lang.Class<any>
         }
     }
 }

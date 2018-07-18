@@ -28,108 +28,6 @@ declare namespace com {
 }
 declare namespace java {
     namespace rmi {
-        class AccessException extends java.rmi.RemoteException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
-            public static class: java.lang.Class<any>
-        }
-        class AlreadyBoundException extends java.lang.Exception {
-            public constructor()
-            public constructor(arg0: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
-        class ConnectException extends java.rmi.RemoteException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
-            public static class: java.lang.Class<any>
-        }
-        class ConnectIOException extends java.rmi.RemoteException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
-            public static class: java.lang.Class<any>
-        }
-        class MarshalException extends java.rmi.RemoteException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
-            public static class: java.lang.Class<any>
-        }
-        class MarshalledObject<T> implements java.io.Serializable {
-            public constructor(arg0: T)
-            public get(): T
-            public hashCode(): int
-            public equals(arg0: java.lang.Object): boolean
-            public static class: java.lang.Class<any>
-        }
-        class Naming {
-            public static lookup(arg0: java.lang.String | string): java.rmi.Remote
-            public static bind(arg0: java.lang.String | string, arg1: java.rmi.Remote): void
-            public static unbind(arg0: java.lang.String | string): void
-            public static rebind(arg0: java.lang.String | string, arg1: java.rmi.Remote): void
-            public static list(arg0: java.lang.String | string): java.lang.String[]
-            public static class: java.lang.Class<any>
-        }
-        class NoSuchObjectException extends java.rmi.RemoteException {
-            public constructor(arg0: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
-        class NotBoundException extends java.lang.Exception {
-            public constructor()
-            public constructor(arg0: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
-        class RMISecurityException extends java.lang.SecurityException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
-            public static class: java.lang.Class<any>
-        }
-        class RMISecurityManager extends java.lang.SecurityManager {
-            public constructor()
-            public static class: java.lang.Class<any>
-        }
-        interface Remote {
-        }
-        class RemoteException extends java.io.IOException {
-            public detail: java.lang.Throwable
-            public constructor()
-            public constructor(arg0: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.Throwable)
-            public getMessage(): string
-            public getCause(): java.lang.Throwable
-            public static class: java.lang.Class<any>
-        }
-        class ServerError extends java.rmi.RemoteException {
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.Error)
-            public static class: java.lang.Class<any>
-        }
-        class ServerException extends java.rmi.RemoteException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
-            public static class: java.lang.Class<any>
-        }
-        class ServerRuntimeException extends java.rmi.RemoteException {
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
-            public static class: java.lang.Class<any>
-        }
-        class StubNotFoundException extends java.rmi.RemoteException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
-            public static class: java.lang.Class<any>
-        }
-        class UnexpectedException extends java.rmi.RemoteException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
-            public static class: java.lang.Class<any>
-        }
-        class UnknownHostException extends java.rmi.RemoteException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
-            public static class: java.lang.Class<any>
-        }
-        class UnmarshalException extends java.rmi.RemoteException {
-            public constructor(arg0: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
-            public static class: java.lang.Class<any>
-        }
         namespace activation {
             abstract class Activatable extends java.rmi.server.RemoteServer {
                 protected constructor(arg0: java.lang.String | string, arg1: java.rmi.MarshalledObject<any>, arg2: boolean, arg3: int)
@@ -506,6 +404,108 @@ declare namespace java {
                 (): void
             }
         }
+        class AccessException extends java.rmi.RemoteException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
+            public static class: java.lang.Class<any>
+        }
+        class AlreadyBoundException extends java.lang.Exception {
+            public constructor()
+            public constructor(arg0: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
+        class ConnectException extends java.rmi.RemoteException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
+            public static class: java.lang.Class<any>
+        }
+        class ConnectIOException extends java.rmi.RemoteException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
+            public static class: java.lang.Class<any>
+        }
+        class MarshalException extends java.rmi.RemoteException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
+            public static class: java.lang.Class<any>
+        }
+        class MarshalledObject<T> implements java.io.Serializable {
+            public constructor(arg0: T)
+            public get(): T
+            public hashCode(): int
+            public equals(arg0: java.lang.Object): boolean
+            public static class: java.lang.Class<any>
+        }
+        class Naming {
+            public static lookup(arg0: java.lang.String | string): java.rmi.Remote
+            public static bind(arg0: java.lang.String | string, arg1: java.rmi.Remote): void
+            public static unbind(arg0: java.lang.String | string): void
+            public static rebind(arg0: java.lang.String | string, arg1: java.rmi.Remote): void
+            public static list(arg0: java.lang.String | string): java.lang.String[]
+            public static class: java.lang.Class<any>
+        }
+        class NoSuchObjectException extends java.rmi.RemoteException {
+            public constructor(arg0: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
+        class NotBoundException extends java.lang.Exception {
+            public constructor()
+            public constructor(arg0: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
+        class RMISecurityException extends java.lang.SecurityException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
+        class RMISecurityManager extends java.lang.SecurityManager {
+            public constructor()
+            public static class: java.lang.Class<any>
+        }
+        interface Remote {
+        }
+        class RemoteException extends java.io.IOException {
+            public detail: java.lang.Throwable
+            public constructor()
+            public constructor(arg0: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.Throwable)
+            public getMessage(): string
+            public getCause(): java.lang.Throwable
+            public static class: java.lang.Class<any>
+        }
+        class ServerError extends java.rmi.RemoteException {
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.Error)
+            public static class: java.lang.Class<any>
+        }
+        class ServerException extends java.rmi.RemoteException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
+            public static class: java.lang.Class<any>
+        }
+        class ServerRuntimeException extends java.rmi.RemoteException {
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
+            public static class: java.lang.Class<any>
+        }
+        class StubNotFoundException extends java.rmi.RemoteException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
+            public static class: java.lang.Class<any>
+        }
+        class UnexpectedException extends java.rmi.RemoteException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
+            public static class: java.lang.Class<any>
+        }
+        class UnknownHostException extends java.rmi.RemoteException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
+            public static class: java.lang.Class<any>
+        }
+        class UnmarshalException extends java.rmi.RemoteException {
+            public constructor(arg0: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.Exception)
+            public static class: java.lang.Class<any>
+        }
     }
 }
 declare namespace javax {
@@ -808,6 +808,61 @@ declare namespace sun {
             }
         }
         namespace transport {
+            namespace tcp {
+                class TCPChannel implements sun.rmi.transport.Channel {
+                    public getEndpoint(): sun.rmi.transport.Endpoint
+                    public newConnection(): sun.rmi.transport.Connection
+                    public free(arg0: sun.rmi.transport.Connection, arg1: boolean): void
+                    public shedCache(): void
+                    public static class: java.lang.Class<any>
+                }
+                class TCPConnection implements sun.rmi.transport.Connection {
+                    public getOutputStream(): java.io.OutputStream
+                    public releaseOutputStream(): void
+                    public getInputStream(): java.io.InputStream
+                    public releaseInputStream(): void
+                    public isReusable(): boolean
+                    public isDead(): boolean
+                    public close(): void
+                    public getChannel(): sun.rmi.transport.Channel
+                    public static class: java.lang.Class<any>
+                }
+                class TCPEndpoint implements sun.rmi.transport.Endpoint {
+                    public constructor(arg0: java.lang.String | string, arg1: int)
+                    public constructor(arg0: java.lang.String | string, arg1: int, arg2: java.rmi.server.RMIClientSocketFactory | java.rmi.server.RMIClientSocketFactory$$Lambda, arg3: java.rmi.server.RMIServerSocketFactory | java.rmi.server.RMIServerSocketFactory$$Lambda)
+                    public static getLocalEndpoint(arg0: int): sun.rmi.transport.tcp.TCPEndpoint
+                    public static getLocalEndpoint(arg0: int, arg1: java.rmi.server.RMIClientSocketFactory | java.rmi.server.RMIClientSocketFactory$$Lambda, arg2: java.rmi.server.RMIServerSocketFactory | java.rmi.server.RMIServerSocketFactory$$Lambda): sun.rmi.transport.tcp.TCPEndpoint
+                    public getOutboundTransport(): sun.rmi.transport.Transport
+                    public static shedConnectionCaches(): void
+                    public exportObject(arg0: sun.rmi.transport.Target): void
+                    public getChannel(): sun.rmi.transport.Channel
+                    public getHost(): string
+                    public getPort(): int
+                    public getListenPort(): int
+                    public getInboundTransport(): sun.rmi.transport.Transport
+                    public getClientSocketFactory(): java.rmi.server.RMIClientSocketFactory
+                    public getServerSocketFactory(): java.rmi.server.RMIServerSocketFactory
+                    public toString(): string
+                    public hashCode(): int
+                    public equals(arg0: java.lang.Object): boolean
+                    public write(arg0: java.io.ObjectOutput): void
+                    public static read(arg0: java.io.ObjectInput): sun.rmi.transport.tcp.TCPEndpoint
+                    public writeHostPortFormat(arg0: java.io.DataOutput): void
+                    public static readHostPortFormat(arg0: java.io.DataInput): sun.rmi.transport.tcp.TCPEndpoint
+                    public static class: java.lang.Class<any>
+                }
+                class TCPTransport extends sun.rmi.transport.Transport {
+                    public shedConnectionCaches(): void
+                    public getChannel(arg0: sun.rmi.transport.Endpoint): sun.rmi.transport.tcp.TCPChannel
+                    public free(arg0: sun.rmi.transport.Endpoint): void
+                    public exportObject(arg0: sun.rmi.transport.Target): void
+                    protected targetUnexported(): void
+                    protected checkAcceptPermission(arg0: java.security.AccessControlContext): void
+                    public static getClientHost(): string
+                    public getChannel(arg0: sun.rmi.transport.Endpoint): sun.rmi.transport.Channel
+                    public static class: java.lang.Class<any>
+                }
+            }
             interface Channel {
                 newConnection(): sun.rmi.transport.Connection
                 getEndpoint(): sun.rmi.transport.Endpoint
@@ -950,61 +1005,6 @@ declare namespace sun {
                 public hashCode(): int
                 public equals(arg0: java.lang.Object): boolean
                 public static class: java.lang.Class<any>
-            }
-            namespace tcp {
-                class TCPChannel implements sun.rmi.transport.Channel {
-                    public getEndpoint(): sun.rmi.transport.Endpoint
-                    public newConnection(): sun.rmi.transport.Connection
-                    public free(arg0: sun.rmi.transport.Connection, arg1: boolean): void
-                    public shedCache(): void
-                    public static class: java.lang.Class<any>
-                }
-                class TCPConnection implements sun.rmi.transport.Connection {
-                    public getOutputStream(): java.io.OutputStream
-                    public releaseOutputStream(): void
-                    public getInputStream(): java.io.InputStream
-                    public releaseInputStream(): void
-                    public isReusable(): boolean
-                    public isDead(): boolean
-                    public close(): void
-                    public getChannel(): sun.rmi.transport.Channel
-                    public static class: java.lang.Class<any>
-                }
-                class TCPEndpoint implements sun.rmi.transport.Endpoint {
-                    public constructor(arg0: java.lang.String | string, arg1: int)
-                    public constructor(arg0: java.lang.String | string, arg1: int, arg2: java.rmi.server.RMIClientSocketFactory | java.rmi.server.RMIClientSocketFactory$$Lambda, arg3: java.rmi.server.RMIServerSocketFactory | java.rmi.server.RMIServerSocketFactory$$Lambda)
-                    public static getLocalEndpoint(arg0: int): sun.rmi.transport.tcp.TCPEndpoint
-                    public static getLocalEndpoint(arg0: int, arg1: java.rmi.server.RMIClientSocketFactory | java.rmi.server.RMIClientSocketFactory$$Lambda, arg2: java.rmi.server.RMIServerSocketFactory | java.rmi.server.RMIServerSocketFactory$$Lambda): sun.rmi.transport.tcp.TCPEndpoint
-                    public getOutboundTransport(): sun.rmi.transport.Transport
-                    public static shedConnectionCaches(): void
-                    public exportObject(arg0: sun.rmi.transport.Target): void
-                    public getChannel(): sun.rmi.transport.Channel
-                    public getHost(): string
-                    public getPort(): int
-                    public getListenPort(): int
-                    public getInboundTransport(): sun.rmi.transport.Transport
-                    public getClientSocketFactory(): java.rmi.server.RMIClientSocketFactory
-                    public getServerSocketFactory(): java.rmi.server.RMIServerSocketFactory
-                    public toString(): string
-                    public hashCode(): int
-                    public equals(arg0: java.lang.Object): boolean
-                    public write(arg0: java.io.ObjectOutput): void
-                    public static read(arg0: java.io.ObjectInput): sun.rmi.transport.tcp.TCPEndpoint
-                    public writeHostPortFormat(arg0: java.io.DataOutput): void
-                    public static readHostPortFormat(arg0: java.io.DataInput): sun.rmi.transport.tcp.TCPEndpoint
-                    public static class: java.lang.Class<any>
-                }
-                class TCPTransport extends sun.rmi.transport.Transport {
-                    public shedConnectionCaches(): void
-                    public getChannel(arg0: sun.rmi.transport.Endpoint): sun.rmi.transport.tcp.TCPChannel
-                    public free(arg0: sun.rmi.transport.Endpoint): void
-                    public exportObject(arg0: sun.rmi.transport.Target): void
-                    protected targetUnexported(): void
-                    protected checkAcceptPermission(arg0: java.security.AccessControlContext): void
-                    public static getClientHost(): string
-                    public getChannel(arg0: sun.rmi.transport.Endpoint): sun.rmi.transport.Channel
-                    public static class: java.lang.Class<any>
-                }
             }
         }
     }

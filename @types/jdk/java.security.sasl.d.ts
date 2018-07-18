@@ -2,71 +2,6 @@ declare namespace com {
     namespace sun {
         namespace security {
             namespace sasl {
-                class ClientFactoryImpl implements javax.security.sasl.SaslClientFactory {
-                    public constructor()
-                    public createSaslClient(arg0: java.lang.String[], arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.util.Map<java.lang.String, any>, arg5: javax.security.auth.callback.CallbackHandler | javax.security.auth.callback.CallbackHandler$$Lambda): javax.security.sasl.SaslClient
-                    public getMechanismNames(arg0: java.util.Map<java.lang.String, any>): java.lang.String[]
-                    public static class: java.lang.Class<any>
-                }
-                abstract class CramMD5Base {
-                    protected completed: boolean
-                    protected aborted: boolean
-                    protected pw: byte[]
-                    protected static logger: java.util.logging.Logger
-                    protected constructor()
-                    public getMechanismName(): string
-                    public isComplete(): boolean
-                    public unwrap(arg0: byte[], arg1: int, arg2: int): byte[]
-                    public wrap(arg0: byte[], arg1: int, arg2: int): byte[]
-                    public getNegotiatedProperty(arg0: java.lang.String | string): java.lang.Object
-                    public dispose(): void
-                    protected clearPassword(): void
-                    protected finalize(): void
-                    public static class: java.lang.Class<any>
-                }
-                class CramMD5Client extends com.sun.security.sasl.CramMD5Base implements javax.security.sasl.SaslClient {
-                    public hasInitialResponse(): boolean
-                    public evaluateChallenge(arg0: byte[]): byte[]
-                    public static class: java.lang.Class<any>
-                }
-                class CramMD5Server extends com.sun.security.sasl.CramMD5Base implements javax.security.sasl.SaslServer {
-                    public evaluateResponse(arg0: byte[]): byte[]
-                    public getAuthorizationID(): string
-                    public static class: java.lang.Class<any>
-                }
-                class ExternalClient implements javax.security.sasl.SaslClient {
-                    public getMechanismName(): string
-                    public hasInitialResponse(): boolean
-                    public dispose(): void
-                    public evaluateChallenge(arg0: byte[]): byte[]
-                    public isComplete(): boolean
-                    public unwrap(arg0: byte[], arg1: int, arg2: int): byte[]
-                    public wrap(arg0: byte[], arg1: int, arg2: int): byte[]
-                    public getNegotiatedProperty(arg0: java.lang.String | string): java.lang.Object
-                    public static class: java.lang.Class<any>
-                }
-                class PlainClient implements javax.security.sasl.SaslClient {
-                    public getMechanismName(): string
-                    public hasInitialResponse(): boolean
-                    public dispose(): void
-                    public evaluateChallenge(arg0: byte[]): byte[]
-                    public isComplete(): boolean
-                    public unwrap(arg0: byte[], arg1: int, arg2: int): byte[]
-                    public wrap(arg0: byte[], arg1: int, arg2: int): byte[]
-                    public getNegotiatedProperty(arg0: java.lang.String | string): java.lang.Object
-                    protected finalize(): void
-                    public static class: java.lang.Class<any>
-                }
-                class Provider extends java.security.Provider {
-                    public constructor()
-                    public static class: java.lang.Class<any>
-                }
-                class ServerFactoryImpl implements javax.security.sasl.SaslServerFactory {
-                    public constructor()
-                    public createSaslServer(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.util.Map<java.lang.String, any>, arg4: javax.security.auth.callback.CallbackHandler | javax.security.auth.callback.CallbackHandler$$Lambda): javax.security.sasl.SaslServer
-                    public getMechanismNames(arg0: java.util.Map<java.lang.String, any>): java.lang.String[]
-                    public static class: java.lang.Class<any>
-                }
                 namespace digest {
                     abstract class DigestMD5Base extends com.sun.security.sasl.util.AbstractSaslImpl {
                         protected static MAX_CHALLENGE_LENGTH: int
@@ -212,6 +147,71 @@ declare namespace com {
                         public static filterMechs(arg0: java.lang.String[], arg1: int[], arg2: java.util.Map<java.lang.String, any>): java.lang.String[]
                         public static class: java.lang.Class<any>
                     }
+                }
+                class ClientFactoryImpl implements javax.security.sasl.SaslClientFactory {
+                    public constructor()
+                    public createSaslClient(arg0: java.lang.String[], arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.util.Map<java.lang.String, any>, arg5: javax.security.auth.callback.CallbackHandler | javax.security.auth.callback.CallbackHandler$$Lambda): javax.security.sasl.SaslClient
+                    public getMechanismNames(arg0: java.util.Map<java.lang.String, any>): java.lang.String[]
+                    public static class: java.lang.Class<any>
+                }
+                abstract class CramMD5Base {
+                    protected completed: boolean
+                    protected aborted: boolean
+                    protected pw: byte[]
+                    protected static logger: java.util.logging.Logger
+                    protected constructor()
+                    public getMechanismName(): string
+                    public isComplete(): boolean
+                    public unwrap(arg0: byte[], arg1: int, arg2: int): byte[]
+                    public wrap(arg0: byte[], arg1: int, arg2: int): byte[]
+                    public getNegotiatedProperty(arg0: java.lang.String | string): java.lang.Object
+                    public dispose(): void
+                    protected clearPassword(): void
+                    protected finalize(): void
+                    public static class: java.lang.Class<any>
+                }
+                class CramMD5Client extends com.sun.security.sasl.CramMD5Base implements javax.security.sasl.SaslClient {
+                    public hasInitialResponse(): boolean
+                    public evaluateChallenge(arg0: byte[]): byte[]
+                    public static class: java.lang.Class<any>
+                }
+                class CramMD5Server extends com.sun.security.sasl.CramMD5Base implements javax.security.sasl.SaslServer {
+                    public evaluateResponse(arg0: byte[]): byte[]
+                    public getAuthorizationID(): string
+                    public static class: java.lang.Class<any>
+                }
+                class ExternalClient implements javax.security.sasl.SaslClient {
+                    public getMechanismName(): string
+                    public hasInitialResponse(): boolean
+                    public dispose(): void
+                    public evaluateChallenge(arg0: byte[]): byte[]
+                    public isComplete(): boolean
+                    public unwrap(arg0: byte[], arg1: int, arg2: int): byte[]
+                    public wrap(arg0: byte[], arg1: int, arg2: int): byte[]
+                    public getNegotiatedProperty(arg0: java.lang.String | string): java.lang.Object
+                    public static class: java.lang.Class<any>
+                }
+                class PlainClient implements javax.security.sasl.SaslClient {
+                    public getMechanismName(): string
+                    public hasInitialResponse(): boolean
+                    public dispose(): void
+                    public evaluateChallenge(arg0: byte[]): byte[]
+                    public isComplete(): boolean
+                    public unwrap(arg0: byte[], arg1: int, arg2: int): byte[]
+                    public wrap(arg0: byte[], arg1: int, arg2: int): byte[]
+                    public getNegotiatedProperty(arg0: java.lang.String | string): java.lang.Object
+                    protected finalize(): void
+                    public static class: java.lang.Class<any>
+                }
+                class Provider extends java.security.Provider {
+                    public constructor()
+                    public static class: java.lang.Class<any>
+                }
+                class ServerFactoryImpl implements javax.security.sasl.SaslServerFactory {
+                    public constructor()
+                    public createSaslServer(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.util.Map<java.lang.String, any>, arg4: javax.security.auth.callback.CallbackHandler | javax.security.auth.callback.CallbackHandler$$Lambda): javax.security.sasl.SaslServer
+                    public getMechanismNames(arg0: java.util.Map<java.lang.String, any>): java.lang.String[]
+                    public static class: java.lang.Class<any>
                 }
             }
         }

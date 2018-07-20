@@ -27,6 +27,7 @@ exports.tsconfig = function (instdir) { return JSON.stringify({
         ]
     },
     "include": [
+        instdir + "/node_modules/typescript/lib",
         instdir + "/@types/**/*.d.ts",
         "lib/@types/**/*.d.ts",
         "**/*.ts",

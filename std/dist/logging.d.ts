@@ -1,4 +1,3 @@
-/// <reference types="chalk" />
 import Chalk from "chalk";
 export declare const Color: Chalk.Chalk;
 export declare class Logger {

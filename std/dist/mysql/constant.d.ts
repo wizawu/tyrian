@@ -1,6 +1,6 @@
 export declare enum Collate {
     utf8_bin = "utf8_bin",
-    utf8mb4_unicode_ci = "utf8mb4_unicode_ci",
+    utf8mb4_unicode_ci = "utf8mb4_unicode_ci"
 }
 export declare enum Engine {
     ARCHIVE = "ARCHIVE",
@@ -15,9 +15,9 @@ export declare enum Engine {
     MYISAM = "MYISAM",
     PERFORMANCE_SCHEMA = "PERFORMANCE_SCHEMA",
     ROCKSDB = "ROCKSDB",
-    SEQUENCE = "SEQUENCE",
+    SEQUENCE = "SEQUENCE"
 }
 export declare enum Parser {
     mecab = "mecab",
-    ngram = "ngram",
+    ngram = "ngram"
 }

@@ -13,7 +13,7 @@ export interface Options {
 export declare class Client {
     db: org.springframework.jdbc.core.JdbcTemplate;
     constructor(options: Options);
-    query(sql: string, args?: any[]): any;
+    query(sql: string, args?: any[]): any[];
     queryForObject(sql: string, args?: any[]): any;
     execute(sql: string): void;
     update(sql: string, args: any[]): number;

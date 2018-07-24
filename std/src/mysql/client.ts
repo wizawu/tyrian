@@ -47,7 +47,7 @@ export class Client {
         this.db = new org.springframework.jdbc.core.JdbcTemplate(dataSource)
     }
 
-    query(sql: string, args?: any[]) {
+    query(sql: string, args?: any[]): any[] {
         return Java.from(
             args === undefined ? this.db.query(sql, rowMapper) : this.db.query(sql, args, rowMapper)
         )

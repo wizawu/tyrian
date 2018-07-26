@@ -6,6 +6,7 @@ Changelog
 * Version 10
 * OpenJDK 10 with OpenJ9
 * Gradle 4.8
+* Expose internal functions
 
 ### 8.14.4
 

@@ -94,8 +94,8 @@ export default function (instdir: string) {
         mvnDependencies[`${groupId}:${artifactId}`] = version
     })
 
-    // generate build.gradle
     if (Object.keys(mvnDependencies).length > 0) {
+        // generate build.gradle
         let deps = Object.keys(mvnDependencies).map(key => `compile '${key}:${mvnDependencies[key]}'`)
         let path = `${os.tmpdir()}/build.gradle.` + crypto.randomBytes(16).toString("hex")
         fs.writeFileSync(path, build_gradle(deps.join("\n")))
@@ -103,7 +103,9 @@ export default function (instdir: string) {
         // gradle install
         child = spawnSync("gradle", ["-b", path, "--no-daemon", "install"], { stdio: "inherit" })
         if (child.status !== 0) process.exit(child.status)
+    }
 
+    if (fs.existsSync("lib")) {
         // Generate TypeScript definition for JAR
         if (!fs.existsSync("lib/@types")) fs.mkdirSync("lib/@types")
         fs.readdirSync("lib").filter(jar => /\.jar$/.test(jar)).map(jar => {

@@ -72,6 +72,8 @@ function default_1(instdir) {
         child = child_process_1.spawnSync("gradle", ["-b", path, "--no-daemon", "install"], { stdio: "inherit" });
         if (child.status !== 0)
             process.exit(child.status);
+    }
+    if (fs.existsSync("lib")) {
         if (!fs.existsSync("lib/@types"))
             fs.mkdirSync("lib/@types");
         fs.readdirSync("lib").filter(function (jar) { return /\.jar$/.test(jar); }).map(function (jar) {

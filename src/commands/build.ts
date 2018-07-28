@@ -73,8 +73,8 @@ function getCompiler(instdir: string, instmod: string, options: Options) {
     if (options.skipJDK) {
         let tsBuildConfig = fs.readFileSync("tsconfig.json", "utf-8")
             .replace(/(1c\/@types)/g, options.skipJDK ? "1c/@types-lite" : "$1")
-        let md5 = crypto.createHash("md5").update(tsBuildConfig).digest().toString("hex")
-        tsconfigFile = "tsconfig.build." + md5 + ".json"
+        let sha1 = crypto.createHash("sha1").update(tsBuildConfig).digest().toString("hex")
+        tsconfigFile = "tsconfig.build." + sha1.slice(0, 7) + ".json"
         fs.writeFileSync(tsconfigFile, tsBuildConfig)
     }
 

@@ -64,8 +64,8 @@ function getCompiler(instdir, instmod, options) {
     if (options.skipJDK) {
         var tsBuildConfig = fs.readFileSync("tsconfig.json", "utf-8")
             .replace(/(1c\/@types)/g, options.skipJDK ? "1c/@types-lite" : "$1");
-        var md5 = crypto.createHash("md5").update(tsBuildConfig).digest().toString("hex");
-        tsconfigFile = "tsconfig.build." + md5 + ".json";
+        var sha1 = crypto.createHash("sha1").update(tsBuildConfig).digest().toString("hex");
+        tsconfigFile = "tsconfig.build." + sha1.slice(0, 7) + ".json";
         fs.writeFileSync(tsconfigFile, tsBuildConfig);
     }
     return webpack({

@@ -17,6 +17,9 @@ Usage:
   1c build [options] <output/entry>...  build one/multiple entries (.ts/.tsx)
   1c run [-w] [jjs options] <output>    run an output file (.js)
 
+install options:
+  -D                    do not generate typescript definitions for JARs
+
 build options:
   -u                    uglify build results
   -w                    watch changes and re-build

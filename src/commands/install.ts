@@ -65,7 +65,7 @@ const build_gradle = deps => `
     }
 `
 
-export default function (instdir: string) {
+export default function (instdir: string, noTypes = false) {
     // generate tsconfig.json
     if (!fs.existsSync("tsconfig.json")) {
         fs.writeFileSync("tsconfig.json", tsconfig(instdir))
@@ -108,6 +108,8 @@ export default function (instdir: string) {
         child = spawnSync("gradle", ["-b", path, "--no-daemon", "install"], { stdio: "inherit" })
         if (child.status !== 0) process.exit(child.status)
     }
+
+    if (noTypes) return
 
     if (fs.existsSync("lib")) {
         // Generate TypeScript definition for JAR

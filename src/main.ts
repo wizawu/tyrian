@@ -21,7 +21,7 @@ if (command === "help") {
 } else if (command === "env") {
     console.log(env())
 } else if (command === "install") {
-    install(instdir)
+    install(instdir, process.argv[3] === "-D")
 } else if (command === "build" && process.argv[3]) {
     let options: BuildOptions = {
         input: [],

@@ -36,7 +36,8 @@ function outputPackage(pkg: any, namespaces: string[], outputDir: string) {
             ILLEGAL_NAMESPACES.forEach(ns => {
                 text = text.replace(new RegExp(`\\.${ns}\\.`, "g"), `.${ns}$.`)
             })
-            result += text + "\n" + tail.reverse().join("\n")
+            result += text.split("\n").filter(line => !!line.trim())
+                .map(line => space + line).join("\n") + "\n" + tail.reverse().join("\n")
             if (key.indexOf("<") > 0) key = key.substring(0, key.indexOf("<"))
             fs.writeFileSync(path.join(outputDir, [...namespaces, key, "d.ts"].join(".")), result)
         } else {

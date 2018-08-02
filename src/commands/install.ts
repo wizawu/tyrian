@@ -32,6 +32,7 @@ export const tsconfig = instdir => JSON.stringify({
         `${instdir}/node_modules/typescript/lib/lib.es6.d.ts`,
         `${instdir}/@types/index.d.ts`,
         `${instdir}/@types/jdk/rt/java.*.d.ts`,
+        `${instdir}/@types/jdk/rt/javax.*.d.ts`,
         `${instdir}/@types/jdk/rt/jdk.*.d.ts`,
         "lib/@types/**/*.d.ts",
         "**/*.ts",

@@ -3,14 +3,12 @@ declare namespace com {
         namespace jndi {
             namespace ldap {
                 namespace pool {
-interface PooledConnection {
-    closeConnection(): void
-}
-
-interface PooledConnection$$Lambda {
-    (): void
-}
-
+                    interface PooledConnection {
+                        closeConnection(): void
+                    }
+                    interface PooledConnection$$Lambda {
+                        (): void
+                    }
                 }
             }
         }

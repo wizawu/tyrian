@@ -4,10 +4,9 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace encoding {
-class CodeSetCache {
-    public static class: java.lang.Class<any>
-}
-
+                        class CodeSetCache {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

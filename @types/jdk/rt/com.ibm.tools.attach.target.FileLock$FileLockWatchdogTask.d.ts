@@ -3,11 +3,10 @@ declare namespace com {
         namespace tools {
             namespace attach {
                 namespace target {
-class FileLock$FileLockWatchdogTask extends java.util.TimerTask {
-    public run(): void
-    public static class: java.lang.Class<any>
-}
-
+                    class FileLock$FileLockWatchdogTask extends java.util.TimerTask {
+                        public run(): void
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

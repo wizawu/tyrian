@@ -2,11 +2,10 @@ declare namespace com {
     namespace sun {
         namespace crypto {
             namespace provider {
-class PBES2Core$HmacSHA512AndAES_128 extends com.sun.crypto.provider.PBES2Core {
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                class PBES2Core$HmacSHA512AndAES_128 extends com.sun.crypto.provider.PBES2Core {
+                    public constructor()
+                    public static class: java.lang.Class<any>
+                }
             }
         }
     }

@@ -4,11 +4,10 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace monitoring {
-abstract class LongMonitoredAttributeBase extends com.sun.corba.se.spi.monitoring.MonitoredAttributeBase {
-    public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
-    public static class: java.lang.Class<any>
-}
-
+                        abstract class LongMonitoredAttributeBase extends com.sun.corba.se.spi.monitoring.MonitoredAttributeBase {
+                            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

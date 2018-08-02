@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace bind {
                     namespace util {
-class SecureLoader {
-    public static class: java.lang.Class<any>
-}
-
+                        class SecureLoader {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

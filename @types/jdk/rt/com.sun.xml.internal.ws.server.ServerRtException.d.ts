@@ -4,14 +4,13 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace server {
-class ServerRtException extends com.sun.xml.internal.ws.util.exception.JAXWSExceptionBase {
-    public constructor(arg0: java.lang.String | string, ...arg1: java.lang.Object[])
-    public constructor(arg0: java.lang.Throwable)
-    public constructor(arg0: com.sun.istack.internal.localization.Localizable)
-    public getDefaultResourceBundleName(): string
-    public static class: java.lang.Class<any>
-}
-
+                        class ServerRtException extends com.sun.xml.internal.ws.util.exception.JAXWSExceptionBase {
+                            public constructor(arg0: java.lang.String | string, ...arg1: java.lang.Object[])
+                            public constructor(arg0: java.lang.Throwable)
+                            public constructor(arg0: com.sun.istack.internal.localization.Localizable)
+                            public getDefaultResourceBundleName(): string
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

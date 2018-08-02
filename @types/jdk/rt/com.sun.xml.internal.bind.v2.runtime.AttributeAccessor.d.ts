@@ -5,14 +5,12 @@ declare namespace com {
                 namespace bind {
                     namespace v2 {
                         namespace runtime {
-interface AttributeAccessor<BeanT> {
-    isNilIncluded(): boolean
-}
-
-interface AttributeAccessor$$Lambda<BeanT> {
-    (): boolean
-}
-
+                            interface AttributeAccessor<BeanT> {
+                                isNilIncluded(): boolean
+                            }
+                            interface AttributeAccessor$$Lambda<BeanT> {
+                                (): boolean
+                            }
                         }
                     }
                 }

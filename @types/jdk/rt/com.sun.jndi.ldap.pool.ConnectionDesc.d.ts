@@ -3,13 +3,12 @@ declare namespace com {
         namespace jndi {
             namespace ldap {
                 namespace pool {
-class ConnectionDesc {
-    public equals(arg0: java.lang.Object): boolean
-    public hashCode(): int
-    public toString(): string
-    public static class: java.lang.Class<any>
-}
-
+                    class ConnectionDesc {
+                        public equals(arg0: java.lang.Object): boolean
+                        public hashCode(): int
+                        public toString(): string
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

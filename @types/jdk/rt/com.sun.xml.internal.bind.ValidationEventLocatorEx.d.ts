@@ -3,10 +3,9 @@ declare namespace com {
         namespace xml {
             namespace internal {
                 namespace bind {
-interface ValidationEventLocatorEx extends javax.xml.bind.ValidationEventLocator {
-    getFieldName(): string
-}
-
+                    interface ValidationEventLocatorEx extends javax.xml.bind.ValidationEventLocator {
+                        getFieldName(): string
+                    }
                 }
             }
         }

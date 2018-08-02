@@ -1,12 +1,10 @@
 declare namespace sun {
     namespace misc {
-interface JavaLangRefAccess {
-    tryHandlePendingReference(): boolean
-}
-
-interface JavaLangRefAccess$$Lambda {
-    (): boolean
-}
-
+        interface JavaLangRefAccess {
+            tryHandlePendingReference(): boolean
+        }
+        interface JavaLangRefAccess$$Lambda {
+            (): boolean
+        }
     }
 }

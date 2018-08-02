@@ -7,10 +7,9 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 namespace traversers {
-class XSDComplexTypeTraverser$ComplexTypeRecoverableError extends java.lang.Exception {
-    public static class: java.lang.Class<any>
-}
-
+                                    class XSDComplexTypeTraverser$ComplexTypeRecoverableError extends java.lang.Exception {
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

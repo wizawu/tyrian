@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace model {
-class Utils {
-    public static class: java.lang.Class<any>
-}
-
+                        class Utils {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

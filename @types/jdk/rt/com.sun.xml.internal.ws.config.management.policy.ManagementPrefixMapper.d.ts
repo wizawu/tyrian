@@ -6,16 +6,14 @@ declare namespace com {
                     namespace config {
                         namespace management {
                             namespace policy {
-class ManagementPrefixMapper implements com.sun.xml.internal.ws.policy.spi.PrefixMapper {
-    public constructor()
-    public getPrefixMap(): java.util.Map<java.lang.String, java.lang.String>
-    public static class: java.lang.Class<any>
-}
-
-class ManagementPrefixMapper$$Lambda implements com.sun.xml.internal.ws.policy.spi.PrefixMapper {
-    public constructor()
-}
-
+                                class ManagementPrefixMapper implements com.sun.xml.internal.ws.policy.spi.PrefixMapper {
+                                    public constructor()
+                                    public getPrefixMap(): java.util.Map<java.lang.String, java.lang.String>
+                                    public static class: java.lang.Class<any>
+                                }
+                                class ManagementPrefixMapper$$Lambda implements com.sun.xml.internal.ws.policy.spi.PrefixMapper {
+                                    public constructor()
+                                }
                             }
                         }
                     }

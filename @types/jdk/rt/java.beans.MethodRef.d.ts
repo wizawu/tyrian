@@ -1,8 +1,7 @@
 declare namespace java {
     namespace beans {
-class MethodRef {
-    public static class: java.lang.Class<any>
-}
-
+        class MethodRef {
+            public static class: java.lang.Class<any>
+        }
     }
 }

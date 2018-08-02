@@ -3,12 +3,11 @@ declare namespace sun {
         namespace resources {
             namespace cldr {
                 namespace mr {
-class LocaleNames_mr extends sun.util.resources.OpenListResourceBundle {
-    public constructor()
-    protected getContents(): java.lang.Object[][]
-    public static class: java.lang.Class<any>
-}
-
+                    class LocaleNames_mr extends sun.util.resources.OpenListResourceBundle {
+                        public constructor()
+                        protected getContents(): java.lang.Object[][]
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

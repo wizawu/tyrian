@@ -4,10 +4,9 @@ declare namespace com {
             namespace swing {
                 namespace plaf {
                     namespace windows {
-class WindowsInternalFrameUI$1 {
-    public static class: java.lang.Class<any>
-}
-
+                        class WindowsInternalFrameUI$1 {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

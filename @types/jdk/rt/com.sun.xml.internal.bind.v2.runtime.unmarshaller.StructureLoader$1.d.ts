@@ -6,10 +6,9 @@ declare namespace com {
                     namespace v2 {
                         namespace runtime {
                             namespace unmarshaller {
-class StructureLoader$1 {
-    public static class: java.lang.Class<any>
-}
-
+                                class StructureLoader$1 {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

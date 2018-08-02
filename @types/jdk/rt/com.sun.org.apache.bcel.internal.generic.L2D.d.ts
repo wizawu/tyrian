@@ -5,12 +5,11 @@ declare namespace com {
                 namespace bcel {
                     namespace internal {
                         namespace generic {
-class L2D extends com.sun.org.apache.bcel.internal.generic.ConversionInstruction {
-    public constructor()
-    public accept(arg0: com.sun.org.apache.bcel.internal.generic.Visitor): void
-    public static class: java.lang.Class<any>
-}
-
+                            class L2D extends com.sun.org.apache.bcel.internal.generic.ConversionInstruction {
+                                public constructor()
+                                public accept(arg0: com.sun.org.apache.bcel.internal.generic.Visitor): void
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

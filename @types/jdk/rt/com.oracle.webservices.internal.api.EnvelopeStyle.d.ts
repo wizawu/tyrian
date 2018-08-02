@@ -3,10 +3,9 @@ declare namespace com {
         namespace webservices {
             namespace internal {
                 namespace api {
-interface EnvelopeStyle extends java.lang.annotation.Annotation {
-    style(): com.oracle.webservices.internal.api.EnvelopeStyle$Style[]
-}
-
+                    interface EnvelopeStyle extends java.lang.annotation.Annotation {
+                        style(): com.oracle.webservices.internal.api.EnvelopeStyle$Style[]
+                    }
                 }
             }
         }

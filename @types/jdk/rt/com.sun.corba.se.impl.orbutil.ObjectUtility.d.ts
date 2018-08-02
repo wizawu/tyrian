@@ -4,11 +4,10 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace orbutil {
-class ObjectUtility {
-    public static concatenateArrays(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                        class ObjectUtility {
+                            public static concatenateArrays(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

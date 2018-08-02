@@ -5,11 +5,10 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace xs {
-interface LSInputList extends java.util.List {
-    getLength(): int
-    item(arg0: int): org.w3c.dom.ls.LSInput
-}
-
+                            interface LSInputList extends java.util.List {
+                                getLength(): int
+                                item(arg0: int): org.w3c.dom.ls.LSInput
+                            }
                         }
                     }
                 }

@@ -5,11 +5,10 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace impl {
-interface XMLEntityDescription extends com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier {
-    setEntityName(arg0: java.lang.String | string): void
-    getEntityName(): string
-}
-
+                            interface XMLEntityDescription extends com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier {
+                                setEntityName(arg0: java.lang.String | string): void
+                                getEntityName(): string
+                            }
                         }
                     }
                 }

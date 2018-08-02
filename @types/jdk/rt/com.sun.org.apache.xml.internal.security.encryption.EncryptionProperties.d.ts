@@ -6,14 +6,13 @@ declare namespace com {
                     namespace internal {
                         namespace security {
                             namespace encryption {
-interface EncryptionProperties {
-    getId(): string
-    setId(arg0: java.lang.String | string): void
-    getEncryptionProperties(): java.util.Iterator<com.sun.org.apache.xml.internal.security.encryption.EncryptionProperty>
-    addEncryptionProperty(arg0: com.sun.org.apache.xml.internal.security.encryption.EncryptionProperty): void
-    removeEncryptionProperty(arg0: com.sun.org.apache.xml.internal.security.encryption.EncryptionProperty): void
-}
-
+                                interface EncryptionProperties {
+                                    getId(): string
+                                    setId(arg0: java.lang.String | string): void
+                                    getEncryptionProperties(): java.util.Iterator<com.sun.org.apache.xml.internal.security.encryption.EncryptionProperty>
+                                    addEncryptionProperty(arg0: com.sun.org.apache.xml.internal.security.encryption.EncryptionProperty): void
+                                    removeEncryptionProperty(arg0: com.sun.org.apache.xml.internal.security.encryption.EncryptionProperty): void
+                                }
                             }
                         }
                     }

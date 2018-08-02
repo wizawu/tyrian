@@ -4,12 +4,11 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace util {
-abstract class QNameMap$HashIterator<E> implements java.util.Iterator<E> {
-    public hasNext(): boolean
-    public remove(): void
-    public static class: java.lang.Class<any>
-}
-
+                        abstract class QNameMap$HashIterator<E> implements java.util.Iterator<E> {
+                            public hasNext(): boolean
+                            public remove(): void
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

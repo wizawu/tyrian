@@ -5,11 +5,10 @@ declare namespace com {
                 namespace ws {
                     namespace encoding {
                         namespace xml {
-interface XMLMessage$MessageDataSource {
-    hasUnconsumedDataSource(): boolean
-    getDataSource(): javax.activation.DataSource
-}
-
+                            interface XMLMessage$MessageDataSource {
+                                hasUnconsumedDataSource(): boolean
+                                getDataSource(): javax.activation.DataSource
+                            }
                         }
                     }
                 }

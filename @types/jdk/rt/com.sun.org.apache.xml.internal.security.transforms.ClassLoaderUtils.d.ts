@@ -6,10 +6,9 @@ declare namespace com {
                     namespace internal {
                         namespace security {
                             namespace transforms {
-class ClassLoaderUtils {
-    public static class: java.lang.Class<any>
-}
-
+                                class ClassLoaderUtils {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

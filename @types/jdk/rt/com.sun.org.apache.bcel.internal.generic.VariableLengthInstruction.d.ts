@@ -5,9 +5,8 @@ declare namespace com {
                 namespace bcel {
                     namespace internal {
                         namespace generic {
-interface VariableLengthInstruction {
-}
-
+                            interface VariableLengthInstruction {
+                            }
                         }
                     }
                 }

@@ -5,18 +5,17 @@ declare namespace com {
                 namespace bcel {
                     namespace internal {
                         namespace classfile {
-class Synthetic extends com.sun.org.apache.bcel.internal.classfile.Attribute {
-    public constructor(arg0: com.sun.org.apache.bcel.internal.classfile.Synthetic)
-    public constructor(arg0: int, arg1: int, arg2: byte[], arg3: com.sun.org.apache.bcel.internal.classfile.ConstantPool)
-    public accept(arg0: com.sun.org.apache.bcel.internal.classfile.Visitor): void
-    public dump(arg0: java.io.DataOutputStream): void
-    public getBytes(): byte[]
-    public setBytes(arg0: byte[]): void
-    public toString(): string
-    public copy(arg0: com.sun.org.apache.bcel.internal.classfile.ConstantPool): com.sun.org.apache.bcel.internal.classfile.Attribute
-    public static class: java.lang.Class<any>
-}
-
+                            class Synthetic extends com.sun.org.apache.bcel.internal.classfile.Attribute {
+                                public constructor(arg0: com.sun.org.apache.bcel.internal.classfile.Synthetic)
+                                public constructor(arg0: int, arg1: int, arg2: byte[], arg3: com.sun.org.apache.bcel.internal.classfile.ConstantPool)
+                                public accept(arg0: com.sun.org.apache.bcel.internal.classfile.Visitor): void
+                                public dump(arg0: java.io.DataOutputStream): void
+                                public getBytes(): byte[]
+                                public setBytes(arg0: byte[]): void
+                                public toString(): string
+                                public copy(arg0: com.sun.org.apache.bcel.internal.classfile.ConstantPool): com.sun.org.apache.bcel.internal.classfile.Attribute
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

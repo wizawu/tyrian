@@ -2,20 +2,19 @@ declare namespace javax {
     namespace lang {
         namespace model {
             namespace util {
-class ElementFilter {
-    public static fieldsIn(arg0: java.lang.Iterable<javax.lang.model.element.Element>): java.util.List<javax.lang.model.element.VariableElement>
-    public static fieldsIn(arg0: java.util.Set<javax.lang.model.element.Element>): java.util.Set<javax.lang.model.element.VariableElement>
-    public static constructorsIn(arg0: java.lang.Iterable<javax.lang.model.element.Element>): java.util.List<javax.lang.model.element.ExecutableElement>
-    public static constructorsIn(arg0: java.util.Set<javax.lang.model.element.Element>): java.util.Set<javax.lang.model.element.ExecutableElement>
-    public static methodsIn(arg0: java.lang.Iterable<javax.lang.model.element.Element>): java.util.List<javax.lang.model.element.ExecutableElement>
-    public static methodsIn(arg0: java.util.Set<javax.lang.model.element.Element>): java.util.Set<javax.lang.model.element.ExecutableElement>
-    public static typesIn(arg0: java.lang.Iterable<javax.lang.model.element.Element>): java.util.List<javax.lang.model.element.TypeElement>
-    public static typesIn(arg0: java.util.Set<javax.lang.model.element.Element>): java.util.Set<javax.lang.model.element.TypeElement>
-    public static packagesIn(arg0: java.lang.Iterable<javax.lang.model.element.Element>): java.util.List<javax.lang.model.element.PackageElement>
-    public static packagesIn(arg0: java.util.Set<javax.lang.model.element.Element>): java.util.Set<javax.lang.model.element.PackageElement>
-    public static class: java.lang.Class<any>
-}
-
+                class ElementFilter {
+                    public static fieldsIn(arg0: java.lang.Iterable<javax.lang.model.element.Element>): java.util.List<javax.lang.model.element.VariableElement>
+                    public static fieldsIn(arg0: java.util.Set<javax.lang.model.element.Element>): java.util.Set<javax.lang.model.element.VariableElement>
+                    public static constructorsIn(arg0: java.lang.Iterable<javax.lang.model.element.Element>): java.util.List<javax.lang.model.element.ExecutableElement>
+                    public static constructorsIn(arg0: java.util.Set<javax.lang.model.element.Element>): java.util.Set<javax.lang.model.element.ExecutableElement>
+                    public static methodsIn(arg0: java.lang.Iterable<javax.lang.model.element.Element>): java.util.List<javax.lang.model.element.ExecutableElement>
+                    public static methodsIn(arg0: java.util.Set<javax.lang.model.element.Element>): java.util.Set<javax.lang.model.element.ExecutableElement>
+                    public static typesIn(arg0: java.lang.Iterable<javax.lang.model.element.Element>): java.util.List<javax.lang.model.element.TypeElement>
+                    public static typesIn(arg0: java.util.Set<javax.lang.model.element.Element>): java.util.Set<javax.lang.model.element.TypeElement>
+                    public static packagesIn(arg0: java.lang.Iterable<javax.lang.model.element.Element>): java.util.List<javax.lang.model.element.PackageElement>
+                    public static packagesIn(arg0: java.util.Set<javax.lang.model.element.Element>): java.util.Set<javax.lang.model.element.PackageElement>
+                    public static class: java.lang.Class<any>
+                }
             }
         }
     }

@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace encoding {
                         namespace fastinfoset {
-class FastInfosetStreamSOAPCodec$1 {
-    public static class: java.lang.Class<any>
-}
-
+                            class FastInfosetStreamSOAPCodec$1 {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

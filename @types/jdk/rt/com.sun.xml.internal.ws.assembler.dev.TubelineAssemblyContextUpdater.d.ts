@@ -5,11 +5,10 @@ declare namespace com {
                 namespace ws {
                     namespace assembler {
                         namespace dev {
-interface TubelineAssemblyContextUpdater {
-    prepareContext(arg0: com.sun.xml.internal.ws.assembler.dev.ClientTubelineAssemblyContext): void
-    prepareContext(arg0: com.sun.xml.internal.ws.assembler.dev.ServerTubelineAssemblyContext): void
-}
-
+                            interface TubelineAssemblyContextUpdater {
+                                prepareContext(arg0: com.sun.xml.internal.ws.assembler.dev.ClientTubelineAssemblyContext): void
+                                prepareContext(arg0: com.sun.xml.internal.ws.assembler.dev.ServerTubelineAssemblyContext): void
+                            }
                         }
                     }
                 }

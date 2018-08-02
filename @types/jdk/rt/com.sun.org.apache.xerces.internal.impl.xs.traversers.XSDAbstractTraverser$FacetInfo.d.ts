@@ -7,10 +7,9 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 namespace traversers {
-class XSDAbstractTraverser$FacetInfo {
-    public static class: java.lang.Class<any>
-}
-
+                                    class XSDAbstractTraverser$FacetInfo {
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

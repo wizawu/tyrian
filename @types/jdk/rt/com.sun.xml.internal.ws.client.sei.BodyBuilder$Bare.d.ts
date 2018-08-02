@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace client {
                         namespace sei {
-class BodyBuilder$Bare extends com.sun.xml.internal.ws.client.sei.BodyBuilder$JAXB {
-    public static class: java.lang.Class<any>
-}
-
+                            class BodyBuilder$Bare extends com.sun.xml.internal.ws.client.sei.BodyBuilder$JAXB {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

@@ -6,12 +6,11 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace core {
-interface MaybeElement<T, C> extends com.sun.xml.internal.bind.v2.model.core.NonElement<T, C> {
-    isElement(): boolean
-    getElementName(): javax.xml.namespace.QName
-    asElement(): com.sun.xml.internal.bind.v2.model.core.Element<T, C>
-}
-
+                                interface MaybeElement<T, C> extends com.sun.xml.internal.bind.v2.model.core.NonElement<T, C> {
+                                    isElement(): boolean
+                                    getElementName(): javax.xml.namespace.QName
+                                    asElement(): com.sun.xml.internal.bind.v2.model.core.Element<T, C>
+                                }
                             }
                         }
                     }

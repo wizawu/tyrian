@@ -3,12 +3,11 @@ declare namespace com {
         namespace imageio {
             namespace plugins {
                 namespace common {
-class StandardMetadataFormatResources extends java.util.ListResourceBundle {
-    public constructor()
-    protected getContents(): java.lang.Object[][]
-    public static class: java.lang.Class<any>
-}
-
+                    class StandardMetadataFormatResources extends java.util.ListResourceBundle {
+                        public constructor()
+                        protected getContents(): java.lang.Object[][]
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

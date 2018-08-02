@@ -7,12 +7,11 @@ declare namespace com {
                         namespace security {
                             namespace algorithms {
                                 namespace implementations {
-class SignatureECDSA$SignatureECDSASHA384 extends com.sun.org.apache.xml.internal.security.algorithms.implementations.SignatureECDSA {
-    public constructor()
-    public engineGetURI(): string
-    public static class: java.lang.Class<any>
-}
-
+                                    class SignatureECDSA$SignatureECDSASHA384 extends com.sun.org.apache.xml.internal.security.algorithms.implementations.SignatureECDSA {
+                                        public constructor()
+                                        public engineGetURI(): string
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

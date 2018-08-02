@@ -7,15 +7,14 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 namespace opti {
-class SchemaDOMParser$BooleanStack {
-    public constructor()
-    public size(): int
-    public push(arg0: boolean): void
-    public pop(): boolean
-    public clear(): void
-    public static class: java.lang.Class<any>
-}
-
+                                    class SchemaDOMParser$BooleanStack {
+                                        public constructor()
+                                        public size(): int
+                                        public push(arg0: boolean): void
+                                        public pop(): boolean
+                                        public clear(): void
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

@@ -7,11 +7,10 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 namespace traversers {
-class XSDAbstractIDConstraintTraverser extends com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser {
-    public constructor(arg0: com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler, arg1: com.sun.org.apache.xerces.internal.impl.xs.traversers.XSAttributeChecker)
-    public static class: java.lang.Class<any>
-}
-
+                                    class XSDAbstractIDConstraintTraverser extends com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser {
+                                        public constructor(arg0: com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler, arg1: com.sun.org.apache.xerces.internal.impl.xs.traversers.XSAttributeChecker)
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

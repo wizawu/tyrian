@@ -4,10 +4,9 @@ declare namespace com {
             namespace swing {
                 namespace plaf {
                     namespace windows {
-class XPStyle {
-    public static class: java.lang.Class<any>
-}
-
+                        class XPStyle {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

@@ -5,14 +5,12 @@ declare namespace com {
                 namespace spi {
                     namespace orbutil {
                         namespace closure {
-interface Closure {
-    evaluate(): java.lang.Object
-}
-
-interface Closure$$Lambda {
-    (): java.lang.Object
-}
-
+                            interface Closure {
+                                evaluate(): java.lang.Object
+                            }
+                            interface Closure$$Lambda {
+                                (): java.lang.Object
+                            }
                         }
                     }
                 }

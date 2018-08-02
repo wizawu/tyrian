@@ -4,10 +4,9 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace activation {
-class RepositoryImpl$RepositoryDB implements java.io.Serializable {
-    public static class: java.lang.Class<any>
-}
-
+                        class RepositoryImpl$RepositoryDB implements java.io.Serializable {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

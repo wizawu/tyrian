@@ -3,11 +3,10 @@ declare namespace jdk {
         namespace internal {
             namespace codegen {
                 namespace types {
-class Type$4 extends jdk.nashorn.internal.codegen.types.ObjectType {
-    public toString(): string
-    public static class: java.lang.Class<any>
-}
-
+                    class Type$4 extends jdk.nashorn.internal.codegen.types.ObjectType {
+                        public toString(): string
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

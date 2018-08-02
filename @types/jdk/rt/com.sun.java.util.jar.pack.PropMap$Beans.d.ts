@@ -4,10 +4,9 @@ declare namespace com {
             namespace util {
                 namespace jar {
                     namespace pack {
-class PropMap$Beans {
-    public static class: java.lang.Class<any>
-}
-
+                        class PropMap$Beans {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

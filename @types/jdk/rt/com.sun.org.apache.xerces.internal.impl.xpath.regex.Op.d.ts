@@ -7,11 +7,10 @@ declare namespace com {
                         namespace impl {
                             namespace xpath {
                                 namespace regex {
-class Op {
-    protected constructor(arg0: int)
-    public static class: java.lang.Class<any>
-}
-
+                                    class Op {
+                                        protected constructor(arg0: int)
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

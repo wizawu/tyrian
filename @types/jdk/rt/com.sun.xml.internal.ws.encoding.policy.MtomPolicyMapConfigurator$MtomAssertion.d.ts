@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace encoding {
                         namespace policy {
-class MtomPolicyMapConfigurator$MtomAssertion extends com.sun.xml.internal.ws.policy.PolicyAssertion {
-    public static class: java.lang.Class<any>
-}
-
+                            class MtomPolicyMapConfigurator$MtomAssertion extends com.sun.xml.internal.ws.policy.PolicyAssertion {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

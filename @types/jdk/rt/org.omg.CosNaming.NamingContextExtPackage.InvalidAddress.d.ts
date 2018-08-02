@@ -2,12 +2,11 @@ declare namespace org {
     namespace omg {
         namespace CosNaming {
             namespace NamingContextExtPackage {
-class InvalidAddress extends org.omg.CORBA.UserException {
-    public constructor()
-    public constructor(arg0: java.lang.String | string)
-    public static class: java.lang.Class<any>
-}
-
+                class InvalidAddress extends org.omg.CORBA.UserException {
+                    public constructor()
+                    public constructor(arg0: java.lang.String | string)
+                    public static class: java.lang.Class<any>
+                }
             }
         }
     }

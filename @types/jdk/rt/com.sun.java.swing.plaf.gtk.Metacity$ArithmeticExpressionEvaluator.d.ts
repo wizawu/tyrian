@@ -4,13 +4,12 @@ declare namespace com {
             namespace swing {
                 namespace plaf {
                     namespace gtk {
-class Metacity$ArithmeticExpressionEvaluator {
-    public expression(): float
-    public getTermValue(): float
-    public getFactorValue(): float
-    public static class: java.lang.Class<any>
-}
-
+                        class Metacity$ArithmeticExpressionEvaluator {
+                            public expression(): float
+                            public getTermValue(): float
+                            public getFactorValue(): float
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

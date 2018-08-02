@@ -5,14 +5,12 @@ declare namespace jdk {
                 namespace asm {
                     namespace tree {
                         namespace analysis {
-interface Value {
-    getSize(): int
-}
-
-interface Value$$Lambda {
-    (): int
-}
-
+                            interface Value {
+                                getSize(): int
+                            }
+                            interface Value$$Lambda {
+                                (): int
+                            }
                         }
                     }
                 }

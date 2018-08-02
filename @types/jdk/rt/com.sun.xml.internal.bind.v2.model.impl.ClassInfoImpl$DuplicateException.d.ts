@@ -6,11 +6,10 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace impl {
-class ClassInfoImpl$DuplicateException extends java.lang.Exception {
-    public constructor(arg0: java.lang.annotation.Annotation, arg1: java.lang.annotation.Annotation)
-    public static class: java.lang.Class<any>
-}
-
+                                class ClassInfoImpl$DuplicateException extends java.lang.Exception {
+                                    public constructor(arg0: java.lang.annotation.Annotation, arg1: java.lang.annotation.Annotation)
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

@@ -4,14 +4,13 @@ declare namespace com {
             namespace glassfish {
                 namespace external {
                     namespace statistics {
-interface Statistic {
-    getName(): string
-    getUnit(): string
-    getDescription(): string
-    getStartTime(): long
-    getLastSampleTime(): long
-}
-
+                        interface Statistic {
+                            getName(): string
+                            getUnit(): string
+                            getDescription(): string
+                            getStartTime(): long
+                            getLastSampleTime(): long
+                        }
                     }
                 }
             }

@@ -5,11 +5,10 @@ declare namespace com {
                 namespace spi {
                     namespace orbutil {
                         namespace proxy {
-interface InvocationHandlerFactory {
-    getInvocationHandler(): java.lang.reflect.InvocationHandler
-    getProxyInterfaces(): java.lang.Class[]
-}
-
+                            interface InvocationHandlerFactory {
+                                getInvocationHandler(): java.lang.reflect.InvocationHandler
+                                getProxyInterfaces(): java.lang.Class[]
+                            }
                         }
                     }
                 }

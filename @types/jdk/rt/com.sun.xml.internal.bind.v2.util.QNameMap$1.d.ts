@@ -5,10 +5,9 @@ declare namespace com {
                 namespace bind {
                     namespace v2 {
                         namespace util {
-class QNameMap$1 {
-    public static class: java.lang.Class<any>
-}
-
+                            class QNameMap$1 {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

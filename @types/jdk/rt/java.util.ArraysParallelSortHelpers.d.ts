@@ -1,8 +1,7 @@
 declare namespace java {
     namespace util {
-class ArraysParallelSortHelpers {
-    public static class: java.lang.Class<any>
-}
-
+        class ArraysParallelSortHelpers {
+            public static class: java.lang.Class<any>
+        }
     }
 }

@@ -1,12 +1,11 @@
 declare namespace java {
     namespace util {
         namespace concurrent {
-class BrokenBarrierException extends java.lang.Exception {
-    public constructor()
-    public constructor(arg0: java.lang.String | string)
-    public static class: java.lang.Class<any>
-}
-
+            class BrokenBarrierException extends java.lang.Exception {
+                public constructor()
+                public constructor(arg0: java.lang.String | string)
+                public static class: java.lang.Class<any>
+            }
         }
     }
 }

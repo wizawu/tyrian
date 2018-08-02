@@ -5,10 +5,9 @@ declare namespace com {
                 namespace spi {
                     namespace ior {
                         namespace iiop {
-interface MaxStreamFormatVersionComponent extends com.sun.corba.se.spi.ior.TaggedComponent {
-    getMaxStreamFormatVersion(): byte
-}
-
+                            interface MaxStreamFormatVersionComponent extends com.sun.corba.se.spi.ior.TaggedComponent {
+                                getMaxStreamFormatVersion(): byte
+                            }
                         }
                     }
                 }

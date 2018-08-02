@@ -6,15 +6,13 @@ declare namespace com {
                     namespace transport {
                         namespace http {
                             namespace server {
-class WSHttpHandler$HttpHandlerRunnable implements java.lang.Runnable {
-    public run(): void
-    public static class: java.lang.Class<any>
-}
-
-class WSHttpHandler$HttpHandlerRunnable$$Lambda implements java.lang.Runnable {
-    public (): void
-}
-
+                                class WSHttpHandler$HttpHandlerRunnable implements java.lang.Runnable {
+                                    public run(): void
+                                    public static class: java.lang.Class<any>
+                                }
+                                class WSHttpHandler$HttpHandlerRunnable$$Lambda implements java.lang.Runnable {
+                                    public (): void
+                                }
                             }
                         }
                     }

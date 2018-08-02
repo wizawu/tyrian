@@ -3,11 +3,10 @@ declare namespace javax {
         namespace bind {
             namespace annotation {
                 namespace adapters {
-interface XmlJavaTypeAdapter extends java.lang.annotation.Annotation {
-    value(): java.lang.Class<javax.xml.bind.annotation.adapters.XmlAdapter>
-    type(): java.lang.Class
-}
-
+                    interface XmlJavaTypeAdapter extends java.lang.annotation.Annotation {
+                        value(): java.lang.Class<javax.xml.bind.annotation.adapters.XmlAdapter>
+                        type(): java.lang.Class
+                    }
                 }
             }
         }

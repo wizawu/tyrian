@@ -4,9 +4,8 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace activation {
-interface Server extends com.sun.corba.se.spi.activation.ServerOperations , org.omg.CORBA.Object , org.omg.CORBA.portable.IDLEntity {
-}
-
+                        interface Server extends com.sun.corba.se.spi.activation.ServerOperations , org.omg.CORBA.Object , org.omg.CORBA.portable.IDLEntity {
+                        }
                     }
                 }
             }

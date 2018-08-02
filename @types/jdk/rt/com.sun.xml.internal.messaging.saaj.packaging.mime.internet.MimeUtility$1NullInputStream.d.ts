@@ -7,11 +7,10 @@ declare namespace com {
                         namespace packaging {
                             namespace mime {
                                 namespace internet {
-class MimeUtility$1NullInputStream extends java.io.InputStream {
-    public read(): int
-    public static class: java.lang.Class<any>
-}
-
+                                    class MimeUtility$1NullInputStream extends java.io.InputStream {
+                                        public read(): int
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

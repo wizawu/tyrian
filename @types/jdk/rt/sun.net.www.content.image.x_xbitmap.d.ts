@@ -3,13 +3,12 @@ declare namespace sun {
         namespace www {
             namespace content {
                 namespace image {
-class x_xbitmap extends java.net.ContentHandler {
-    public constructor()
-    public getContent(arg0: java.net.URLConnection): java.lang.Object
-    public getContent(arg0: java.net.URLConnection, arg1: java.lang.Class[]): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                    class x_xbitmap extends java.net.ContentHandler {
+                        public constructor()
+                        public getContent(arg0: java.net.URLConnection): java.lang.Object
+                        public getContent(arg0: java.net.URLConnection, arg1: java.lang.Class[]): java.lang.Object
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

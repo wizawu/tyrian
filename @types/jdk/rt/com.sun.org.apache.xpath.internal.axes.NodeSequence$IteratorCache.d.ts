@@ -5,10 +5,9 @@ declare namespace com {
                 namespace xpath {
                     namespace internal {
                         namespace axes {
-class NodeSequence$IteratorCache {
-    public static class: java.lang.Class<any>
-}
-
+                            class NodeSequence$IteratorCache {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

@@ -6,11 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace security {
                             namespace signature {
-interface NodeFilter {
-    isNodeInclude(arg0: org.w3c.dom.Node): int
-    isNodeIncludeDO(arg0: org.w3c.dom.Node, arg1: int): int
-}
-
+                                interface NodeFilter {
+                                    isNodeInclude(arg0: org.w3c.dom.Node): int
+                                    isNodeIncludeDO(arg0: org.w3c.dom.Node, arg1: int): int
+                                }
                             }
                         }
                     }

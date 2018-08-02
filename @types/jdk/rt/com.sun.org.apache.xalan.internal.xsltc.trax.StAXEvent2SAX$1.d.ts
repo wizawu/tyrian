@@ -6,16 +6,15 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace trax {
-class StAXEvent2SAX$1 implements org.xml.sax.ext.Locator2 {
-    public getColumnNumber(): int
-    public getLineNumber(): int
-    public getPublicId(): string
-    public getSystemId(): string
-    public getXMLVersion(): string
-    public getEncoding(): string
-    public static class: java.lang.Class<any>
-}
-
+                                class StAXEvent2SAX$1 implements org.xml.sax.ext.Locator2 {
+                                    public getColumnNumber(): int
+                                    public getLineNumber(): int
+                                    public getPublicId(): string
+                                    public getSystemId(): string
+                                    public getXMLVersion(): string
+                                    public getEncoding(): string
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

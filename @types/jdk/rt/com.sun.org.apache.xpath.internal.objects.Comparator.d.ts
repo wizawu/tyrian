@@ -5,10 +5,9 @@ declare namespace com {
                 namespace xpath {
                     namespace internal {
                         namespace objects {
-abstract class Comparator {
-    public static class: java.lang.Class<any>
-}
-
+                            abstract class Comparator {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

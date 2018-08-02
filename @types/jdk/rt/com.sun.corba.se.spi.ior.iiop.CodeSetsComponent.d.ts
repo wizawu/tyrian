@@ -5,10 +5,9 @@ declare namespace com {
                 namespace spi {
                     namespace ior {
                         namespace iiop {
-interface CodeSetsComponent extends com.sun.corba.se.spi.ior.TaggedComponent {
-    getCodeSetComponentInfo(): com.sun.corba.se.impl.encoding.CodeSetComponentInfo
-}
-
+                            interface CodeSetsComponent extends com.sun.corba.se.spi.ior.TaggedComponent {
+                                getCodeSetComponentInfo(): com.sun.corba.se.impl.encoding.CodeSetComponentInfo
+                            }
                         }
                     }
                 }

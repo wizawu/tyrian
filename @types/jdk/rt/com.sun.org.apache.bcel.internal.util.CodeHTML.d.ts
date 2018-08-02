@@ -5,10 +5,9 @@ declare namespace com {
                 namespace bcel {
                     namespace internal {
                         namespace util {
-class CodeHTML implements com.sun.org.apache.bcel.internal.Constants {
-    public static class: java.lang.Class<any>
-}
-
+                            class CodeHTML implements com.sun.org.apache.bcel.internal.Constants {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

@@ -4,12 +4,11 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace io {
-class TypeMismatchException extends java.lang.Error {
-    public constructor()
-    public constructor(arg0: java.lang.String | string)
-    public static class: java.lang.Class<any>
-}
-
+                        class TypeMismatchException extends java.lang.Error {
+                            public constructor()
+                            public constructor(arg0: java.lang.String | string)
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

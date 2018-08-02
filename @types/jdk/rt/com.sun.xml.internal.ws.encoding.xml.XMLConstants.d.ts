@@ -5,12 +5,11 @@ declare namespace com {
                 namespace ws {
                     namespace encoding {
                         namespace xml {
-class XMLConstants {
-    public static OUTPUT_XML_CHARACTER_ENCODING: string
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                            class XMLConstants {
+                                public static OUTPUT_XML_CHARACTER_ENCODING: string
+                                public constructor()
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

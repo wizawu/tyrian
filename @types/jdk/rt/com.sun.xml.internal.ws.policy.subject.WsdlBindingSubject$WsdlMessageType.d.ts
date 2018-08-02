@@ -5,16 +5,15 @@ declare namespace com {
                 namespace ws {
                     namespace policy {
                         namespace subject {
-class WsdlBindingSubject$WsdlMessageType extends java.lang.Enum<com.sun.xml.internal.ws.policy.subject.WsdlBindingSubject$WsdlMessageType> {
-    public static NO_MESSAGE: com.sun.xml.internal.ws.policy.subject.WsdlBindingSubject$WsdlMessageType
-    public static INPUT: com.sun.xml.internal.ws.policy.subject.WsdlBindingSubject$WsdlMessageType
-    public static OUTPUT: com.sun.xml.internal.ws.policy.subject.WsdlBindingSubject$WsdlMessageType
-    public static FAULT: com.sun.xml.internal.ws.policy.subject.WsdlBindingSubject$WsdlMessageType
-    public static values(): com.sun.xml.internal.ws.policy.subject.WsdlBindingSubject$WsdlMessageType[]
-    public static valueOf(arg0: java.lang.String | string): com.sun.xml.internal.ws.policy.subject.WsdlBindingSubject$WsdlMessageType
-    public static class: java.lang.Class<any>
-}
-
+                            class WsdlBindingSubject$WsdlMessageType extends java.lang.Enum<com.sun.xml.internal.ws.policy.subject.WsdlBindingSubject$WsdlMessageType> {
+                                public static NO_MESSAGE: com.sun.xml.internal.ws.policy.subject.WsdlBindingSubject$WsdlMessageType
+                                public static INPUT: com.sun.xml.internal.ws.policy.subject.WsdlBindingSubject$WsdlMessageType
+                                public static OUTPUT: com.sun.xml.internal.ws.policy.subject.WsdlBindingSubject$WsdlMessageType
+                                public static FAULT: com.sun.xml.internal.ws.policy.subject.WsdlBindingSubject$WsdlMessageType
+                                public static values(): com.sun.xml.internal.ws.policy.subject.WsdlBindingSubject$WsdlMessageType[]
+                                public static valueOf(arg0: java.lang.String | string): com.sun.xml.internal.ws.policy.subject.WsdlBindingSubject$WsdlMessageType
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

@@ -4,12 +4,11 @@ declare namespace com {
             namespace glassfish {
                 namespace external {
                     namespace amx {
-interface BootAMXMBean {
-    BOOT_AMX_OPERATION_NAME: string
-    bootAMX(): javax.management.ObjectName
-    getJMXServiceURLs(): javax.management.remote.JMXServiceURL[]
-}
-
+                        interface BootAMXMBean {
+                            BOOT_AMX_OPERATION_NAME: string
+                            bootAMX(): javax.management.ObjectName
+                            getJMXServiceURLs(): javax.management.remote.JMXServiceURL[]
+                        }
                     }
                 }
             }

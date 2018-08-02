@@ -1,11 +1,10 @@
 declare namespace javax {
     namespace net {
         namespace ssl {
-class SSLPeerUnverifiedException extends javax.net.ssl.SSLException {
-    public constructor(arg0: java.lang.String | string)
-    public static class: java.lang.Class<any>
-}
-
+            class SSLPeerUnverifiedException extends javax.net.ssl.SSLException {
+                public constructor(arg0: java.lang.String | string)
+                public static class: java.lang.Class<any>
+            }
         }
     }
 }

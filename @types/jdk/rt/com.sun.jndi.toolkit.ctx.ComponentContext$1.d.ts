@@ -3,11 +3,10 @@ declare namespace com {
         namespace jndi {
             namespace toolkit {
                 namespace ctx {
-class ComponentContext$1 extends javax.naming.RefAddr {
-    public getContent(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                    class ComponentContext$1 extends javax.naming.RefAddr {
+                        public getContent(): java.lang.Object
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

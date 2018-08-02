@@ -3,10 +3,9 @@ declare namespace sun {
         namespace www {
             namespace protocol {
                 namespace http {
-class HttpURLConnection$13 {
-    public static class: java.lang.Class<any>
-}
-
+                    class HttpURLConnection$13 {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

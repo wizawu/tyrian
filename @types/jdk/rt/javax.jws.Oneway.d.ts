@@ -1,7 +1,6 @@
 declare namespace javax {
     namespace jws {
-interface Oneway extends java.lang.annotation.Annotation {
-}
-
+        interface Oneway extends java.lang.annotation.Annotation {
+        }
     }
 }

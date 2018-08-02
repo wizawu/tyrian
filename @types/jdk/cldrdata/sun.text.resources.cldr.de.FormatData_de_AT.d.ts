@@ -3,12 +3,11 @@ declare namespace sun {
         namespace resources {
             namespace cldr {
                 namespace de {
-class FormatData_de_AT extends java.util.ListResourceBundle {
-    public constructor()
-    protected getContents(): java.lang.Object[][]
-    public static class: java.lang.Class<any>
-}
-
+                    class FormatData_de_AT extends java.util.ListResourceBundle {
+                        public constructor()
+                        protected getContents(): java.lang.Object[][]
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

@@ -5,12 +5,11 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace streaming {
-class XMLStreamWriterFactory$1 extends com.sun.xml.internal.ws.api.streaming.ContextClassloaderLocal<com.sun.xml.internal.ws.api.streaming.XMLStreamWriterFactory> {
-    protected initialValue(): com.sun.xml.internal.ws.api.streaming.XMLStreamWriterFactory
-    protected initialValue(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                            class XMLStreamWriterFactory$1 extends com.sun.xml.internal.ws.api.streaming.ContextClassloaderLocal<com.sun.xml.internal.ws.api.streaming.XMLStreamWriterFactory> {
+                                protected initialValue(): com.sun.xml.internal.ws.api.streaming.XMLStreamWriterFactory
+                                protected initialValue(): java.lang.Object
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

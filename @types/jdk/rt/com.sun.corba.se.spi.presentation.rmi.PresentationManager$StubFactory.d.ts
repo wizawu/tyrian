@@ -5,11 +5,10 @@ declare namespace com {
                 namespace spi {
                     namespace presentation {
                         namespace rmi {
-interface PresentationManager$StubFactory {
-    makeStub(): org.omg.CORBA.Object
-    getTypeIds(): java.lang.String[]
-}
-
+                            interface PresentationManager$StubFactory {
+                                makeStub(): org.omg.CORBA.Object
+                                getTypeIds(): java.lang.String[]
+                            }
                         }
                     }
                 }

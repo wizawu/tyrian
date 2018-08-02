@@ -5,17 +5,16 @@ declare namespace com {
                 namespace impl {
                     namespace naming {
                         namespace pcosnaming {
-class InternalBindingKey implements java.io.Serializable {
-    public id: string
-    public kind: string
-    public constructor()
-    public constructor(arg0: org.omg.CosNaming.NameComponent)
-    protected setup(arg0: org.omg.CosNaming.NameComponent): void
-    public equals(arg0: java.lang.Object): boolean
-    public hashCode(): int
-    public static class: java.lang.Class<any>
-}
-
+                            class InternalBindingKey implements java.io.Serializable {
+                                public id: string
+                                public kind: string
+                                public constructor()
+                                public constructor(arg0: org.omg.CosNaming.NameComponent)
+                                protected setup(arg0: org.omg.CosNaming.NameComponent): void
+                                public equals(arg0: java.lang.Object): boolean
+                                public hashCode(): int
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

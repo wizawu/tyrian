@@ -6,15 +6,13 @@ declare namespace com {
                     namespace v2 {
                         namespace runtime {
                             namespace output {
-class FastInfosetStreamWriterOutput$AppData implements com.sun.xml.internal.org.jvnet.fastinfoset.VocabularyApplicationData {
-    public clear(): void
-    public static class: java.lang.Class<any>
-}
-
-class FastInfosetStreamWriterOutput$AppData$$Lambda implements com.sun.xml.internal.org.jvnet.fastinfoset.VocabularyApplicationData {
-    public (): void
-}
-
+                                class FastInfosetStreamWriterOutput$AppData implements com.sun.xml.internal.org.jvnet.fastinfoset.VocabularyApplicationData {
+                                    public clear(): void
+                                    public static class: java.lang.Class<any>
+                                }
+                                class FastInfosetStreamWriterOutput$AppData$$Lambda implements com.sun.xml.internal.org.jvnet.fastinfoset.VocabularyApplicationData {
+                                    public (): void
+                                }
                             }
                         }
                     }

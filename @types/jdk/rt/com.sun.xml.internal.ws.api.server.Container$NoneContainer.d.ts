@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace server {
-class Container$NoneContainer extends com.sun.xml.internal.ws.api.server.Container {
-    public static class: java.lang.Class<any>
-}
-
+                            class Container$NoneContainer extends com.sun.xml.internal.ws.api.server.Container {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

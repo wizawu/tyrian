@@ -6,11 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace trax {
-class TemplatesImpl$TransletClassLoader extends java.lang.ClassLoader {
-    public loadClass(arg0: java.lang.String | string): java.lang.Class<any>
-    public static class: java.lang.Class<any>
-}
-
+                                class TemplatesImpl$TransletClassLoader extends java.lang.ClassLoader {
+                                    public loadClass(arg0: java.lang.String | string): java.lang.Class<any>
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

@@ -4,12 +4,11 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace wsdl {
-class DispatchException extends java.lang.Exception {
-    public fault: com.sun.xml.internal.ws.api.message.Message
-    public constructor(arg0: com.sun.xml.internal.ws.api.message.Message)
-    public static class: java.lang.Class<any>
-}
-
+                        class DispatchException extends java.lang.Exception {
+                            public fault: com.sun.xml.internal.ws.api.message.Message
+                            public constructor(arg0: com.sun.xml.internal.ws.api.message.Message)
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

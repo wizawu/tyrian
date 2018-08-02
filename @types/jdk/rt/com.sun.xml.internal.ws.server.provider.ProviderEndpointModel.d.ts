@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace server {
                         namespace provider {
-class ProviderEndpointModel<T> {
-    public static class: java.lang.Class<any>
-}
-
+                            class ProviderEndpointModel<T> {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

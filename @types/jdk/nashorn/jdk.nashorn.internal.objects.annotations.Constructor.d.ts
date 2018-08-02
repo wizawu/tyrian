@@ -3,11 +3,10 @@ declare namespace jdk {
         namespace internal {
             namespace objects {
                 namespace annotations {
-interface Constructor extends java.lang.annotation.Annotation {
-    name(): string
-    arity(): int
-}
-
+                    interface Constructor extends java.lang.annotation.Annotation {
+                        name(): string
+                        arity(): int
+                    }
                 }
             }
         }

@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace fastinfoset {
                     namespace util {
-class PrefixArray$PrefixEntry {
-    public static class: java.lang.Class<any>
-}
-
+                        class PrefixArray$PrefixEntry {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

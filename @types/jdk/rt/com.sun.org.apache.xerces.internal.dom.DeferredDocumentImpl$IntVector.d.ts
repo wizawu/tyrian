@@ -5,14 +5,13 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace dom {
-class DeferredDocumentImpl$IntVector {
-    public size(): int
-    public elementAt(arg0: int): int
-    public addElement(arg0: int): void
-    public removeAllElements(): void
-    public static class: java.lang.Class<any>
-}
-
+                            class DeferredDocumentImpl$IntVector {
+                                public size(): int
+                                public elementAt(arg0: int): int
+                                public addElement(arg0: int): void
+                                public removeAllElements(): void
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

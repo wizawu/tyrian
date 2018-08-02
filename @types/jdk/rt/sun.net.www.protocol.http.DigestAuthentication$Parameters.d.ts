@@ -3,10 +3,9 @@ declare namespace sun {
         namespace www {
             namespace protocol {
                 namespace http {
-class DigestAuthentication$Parameters implements java.io.Serializable {
-    public static class: java.lang.Class<any>
-}
-
+                    class DigestAuthentication$Parameters implements java.io.Serializable {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

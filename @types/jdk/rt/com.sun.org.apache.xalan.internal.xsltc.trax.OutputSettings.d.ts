@@ -6,12 +6,11 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace trax {
-class OutputSettings {
-    public constructor()
-    public getProperties(): java.util.Properties
-    public static class: java.lang.Class<any>
-}
-
+                                class OutputSettings {
+                                    public constructor()
+                                    public getProperties(): java.util.Properties
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

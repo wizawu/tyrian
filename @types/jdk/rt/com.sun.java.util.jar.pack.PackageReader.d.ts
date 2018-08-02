@@ -4,11 +4,10 @@ declare namespace com {
             namespace util {
                 namespace jar {
                     namespace pack {
-class PackageReader extends com.sun.java.util.jar.pack.BandStructure {
-    protected getCPIndex(arg0: byte): com.sun.java.util.jar.pack.ConstantPool$Index
-    public static class: java.lang.Class<any>
-}
-
+                        class PackageReader extends com.sun.java.util.jar.pack.BandStructure {
+                            protected getCPIndex(arg0: byte): com.sun.java.util.jar.pack.ConstantPool$Index
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

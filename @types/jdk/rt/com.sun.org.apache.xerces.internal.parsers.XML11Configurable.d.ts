@@ -5,9 +5,8 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace parsers {
-interface XML11Configurable {
-}
-
+                            interface XML11Configurable {
+                            }
                         }
                     }
                 }

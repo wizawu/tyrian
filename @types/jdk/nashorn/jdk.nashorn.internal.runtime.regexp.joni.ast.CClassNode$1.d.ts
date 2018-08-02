@@ -5,10 +5,9 @@ declare namespace jdk {
                 namespace regexp {
                     namespace joni {
                         namespace ast {
-class CClassNode$1 {
-    public static class: java.lang.Class<any>
-}
-
+                            class CClassNode$1 {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

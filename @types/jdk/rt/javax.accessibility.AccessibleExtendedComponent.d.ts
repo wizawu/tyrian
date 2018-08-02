@@ -1,10 +1,9 @@
 declare namespace javax {
     namespace accessibility {
-interface AccessibleExtendedComponent extends javax.accessibility.AccessibleComponent {
-    getToolTipText(): string
-    getTitledBorderText(): string
-    getAccessibleKeyBinding(): javax.accessibility.AccessibleKeyBinding
-}
-
+        interface AccessibleExtendedComponent extends javax.accessibility.AccessibleComponent {
+            getToolTipText(): string
+            getTitledBorderText(): string
+            getAccessibleKeyBinding(): javax.accessibility.AccessibleKeyBinding
+        }
     }
 }

@@ -4,12 +4,11 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace activation {
-interface ServerOperations {
-    shutdown(): void
-    install(): void
-    uninstall(): void
-}
-
+                        interface ServerOperations {
+                            shutdown(): void
+                            install(): void
+                            uninstall(): void
+                        }
                     }
                 }
             }

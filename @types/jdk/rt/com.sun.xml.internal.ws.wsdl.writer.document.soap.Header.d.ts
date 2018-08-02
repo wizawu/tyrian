@@ -7,12 +7,11 @@ declare namespace com {
                         namespace writer {
                             namespace document {
                                 namespace soap {
-interface Header extends com.sun.xml.internal.txw2.TypedXmlWriter , com.sun.xml.internal.ws.wsdl.writer.document.soap.BodyType {
-    message(arg0: javax.xml.namespace.QName): com.sun.xml.internal.ws.wsdl.writer.document.soap.Header
-    headerFault(): com.sun.xml.internal.ws.wsdl.writer.document.soap.HeaderFault
-    part(arg0: java.lang.String | string): com.sun.xml.internal.ws.wsdl.writer.document.soap.BodyType
-}
-
+                                    interface Header extends com.sun.xml.internal.txw2.TypedXmlWriter , com.sun.xml.internal.ws.wsdl.writer.document.soap.BodyType {
+                                        message(arg0: javax.xml.namespace.QName): com.sun.xml.internal.ws.wsdl.writer.document.soap.Header
+                                        headerFault(): com.sun.xml.internal.ws.wsdl.writer.document.soap.HeaderFault
+                                        part(arg0: java.lang.String | string): com.sun.xml.internal.ws.wsdl.writer.document.soap.BodyType
+                                    }
                                 }
                             }
                         }

@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace bind {
                     namespace annotation {
-interface OverrideAnnotationOf extends java.lang.annotation.Annotation {
-    value(): string
-}
-
+                        interface OverrideAnnotationOf extends java.lang.annotation.Annotation {
+                            value(): string
+                        }
                     }
                 }
             }

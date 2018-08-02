@@ -6,10 +6,9 @@ declare namespace com {
                     namespace internal {
                         namespace jaxp {
                             namespace datatype {
-class DurationImpl$DurationStream implements java.io.Serializable {
-    public static class: java.lang.Class<any>
-}
-
+                                class DurationImpl$DurationStream implements java.io.Serializable {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

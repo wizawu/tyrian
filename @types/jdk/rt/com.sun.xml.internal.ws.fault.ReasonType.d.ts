@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace fault {
-class ReasonType {
-    public static class: java.lang.Class<any>
-}
-
+                        class ReasonType {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

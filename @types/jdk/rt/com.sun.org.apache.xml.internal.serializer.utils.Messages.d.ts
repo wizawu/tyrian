@@ -6,11 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace serializer {
                             namespace utils {
-class Messages {
-    public createMessage(arg0: java.lang.String | string, arg1: java.lang.Object[]): string
-    public static class: java.lang.Class<any>
-}
-
+                                class Messages {
+                                    public createMessage(arg0: java.lang.String | string, arg1: java.lang.Object[]): string
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

@@ -5,9 +5,8 @@ declare namespace com {
                 namespace external {
                     namespace statistics {
                         namespace annotations {
-interface Reset extends java.lang.annotation.Annotation {
-}
-
+                            interface Reset extends java.lang.annotation.Annotation {
+                            }
                         }
                     }
                 }

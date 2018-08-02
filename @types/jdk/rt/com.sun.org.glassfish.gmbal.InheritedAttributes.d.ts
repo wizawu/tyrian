@@ -3,10 +3,9 @@ declare namespace com {
         namespace org {
             namespace glassfish {
                 namespace gmbal {
-interface InheritedAttributes extends java.lang.annotation.Annotation {
-    value(): com.sun.org.glassfish.gmbal.InheritedAttribute[]
-}
-
+                    interface InheritedAttributes extends java.lang.annotation.Annotation {
+                        value(): com.sun.org.glassfish.gmbal.InheritedAttribute[]
+                    }
                 }
             }
         }

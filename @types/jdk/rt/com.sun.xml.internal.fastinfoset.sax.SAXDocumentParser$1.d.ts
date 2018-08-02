@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace fastinfoset {
                     namespace sax {
-class SAXDocumentParser$1 {
-    public static class: java.lang.Class<any>
-}
-
+                        class SAXDocumentParser$1 {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

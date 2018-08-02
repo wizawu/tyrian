@@ -5,11 +5,10 @@ declare namespace com {
                 namespace external {
                     namespace probe {
                         namespace provider {
-interface StatsProvider {
-    enable(): void
-    disable(): void
-}
-
+                            interface StatsProvider {
+                                enable(): void
+                                disable(): void
+                            }
                         }
                     }
                 }

@@ -3,10 +3,9 @@ declare namespace com {
         namespace tools {
             namespace attach {
                 namespace target {
-class FileLock$syncObject {
-    public static class: java.lang.Class<any>
-}
-
+                    class FileLock$syncObject {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

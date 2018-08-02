@@ -6,13 +6,12 @@ declare namespace com {
                     namespace v2 {
                         namespace runtime {
                             namespace output {
-class FastInfosetStreamWriterOutput$TablesPerJAXBContext {
-    public requireClearTables(): void
-    public clearOrResetTables(arg0: int): void
-    public incrementMaxIndexValue(): void
-    public static class: java.lang.Class<any>
-}
-
+                                class FastInfosetStreamWriterOutput$TablesPerJAXBContext {
+                                    public requireClearTables(): void
+                                    public clearOrResetTables(arg0: int): void
+                                    public incrementMaxIndexValue(): void
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

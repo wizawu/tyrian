@@ -3,9 +3,8 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 namespace arrays {
-interface IntOrLongElements extends jdk.nashorn.internal.runtime.arrays.NumericElements {
-}
-
+                    interface IntOrLongElements extends jdk.nashorn.internal.runtime.arrays.NumericElements {
+                    }
                 }
             }
         }

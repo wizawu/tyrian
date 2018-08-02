@@ -5,10 +5,9 @@ declare namespace com {
                 namespace xml {
                     namespace internal {
                         namespace serializer {
-interface ExtendedLexicalHandler extends org.xml.sax.ext.LexicalHandler {
-    comment(arg0: java.lang.String | string): void
-}
-
+                            interface ExtendedLexicalHandler extends org.xml.sax.ext.LexicalHandler {
+                                comment(arg0: java.lang.String | string): void
+                            }
                         }
                     }
                 }

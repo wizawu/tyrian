@@ -5,11 +5,10 @@ declare namespace com {
                 namespace xml {
                     namespace internal {
                         namespace serializer {
-interface TransformStateSetter {
-    setCurrentNode(arg0: org.w3c.dom.Node): void
-    resetState(arg0: javax.xml.transform.Transformer): void
-}
-
+                            interface TransformStateSetter {
+                                setCurrentNode(arg0: org.w3c.dom.Node): void
+                                resetState(arg0: javax.xml.transform.Transformer): void
+                            }
                         }
                     }
                 }

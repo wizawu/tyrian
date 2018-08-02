@@ -5,12 +5,11 @@ declare namespace com {
                 namespace xalan {
                     namespace internal {
                         namespace xsltc {
-class ProcessorVersion {
-    public constructor()
-    public static main(arg0: java.lang.String[]): void
-    public static class: java.lang.Class<any>
-}
-
+                            class ProcessorVersion {
+                                public constructor()
+                                public static main(arg0: java.lang.String[]): void
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

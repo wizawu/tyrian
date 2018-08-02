@@ -7,14 +7,12 @@ declare namespace com {
                         namespace dtm {
                             namespace ref {
                                 namespace dom2dtm {
-interface DOM2DTM$CharacterNodeHandler {
-    characters(arg0: org.w3c.dom.Node): void
-}
-
-interface DOM2DTM$CharacterNodeHandler$$Lambda {
-    (arg0: org.w3c.dom.Node): void
-}
-
+                                    interface DOM2DTM$CharacterNodeHandler {
+                                        characters(arg0: org.w3c.dom.Node): void
+                                    }
+                                    interface DOM2DTM$CharacterNodeHandler$$Lambda {
+                                        (arg0: org.w3c.dom.Node): void
+                                    }
                                 }
                             }
                         }

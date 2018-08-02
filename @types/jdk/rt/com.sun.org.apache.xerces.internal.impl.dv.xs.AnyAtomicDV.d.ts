@@ -7,12 +7,11 @@ declare namespace com {
                         namespace impl {
                             namespace dv {
                                 namespace xs {
-class AnyAtomicDV extends com.sun.org.apache.xerces.internal.impl.dv.xs.TypeValidator {
-    public getAllowedFacets(): short
-    public getActualValue(arg0: java.lang.String | string, arg1: com.sun.org.apache.xerces.internal.impl.dv.ValidationContext): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                                    class AnyAtomicDV extends com.sun.org.apache.xerces.internal.impl.dv.xs.TypeValidator {
+                                        public getAllowedFacets(): short
+                                        public getActualValue(arg0: java.lang.String | string, arg1: com.sun.org.apache.xerces.internal.impl.dv.ValidationContext): java.lang.Object
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

@@ -5,10 +5,9 @@ declare namespace com {
                 namespace xml {
                     namespace internal {
                         namespace serialize {
-class EncodingInfo$CharToByteConverterMethods {
-    public static class: java.lang.Class<any>
-}
-
+                            class EncodingInfo$CharToByteConverterMethods {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

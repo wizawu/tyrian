@@ -5,13 +5,12 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace server {
-class SDDocumentSource$1 extends com.sun.xml.internal.ws.api.server.SDDocumentSource {
-    public read(arg0: javax.xml.stream.XMLInputFactory): javax.xml.stream.XMLStreamReader
-    public read(): javax.xml.stream.XMLStreamReader
-    public getSystemId(): java.net.URL
-    public static class: java.lang.Class<any>
-}
-
+                            class SDDocumentSource$1 extends com.sun.xml.internal.ws.api.server.SDDocumentSource {
+                                public read(arg0: javax.xml.stream.XMLInputFactory): javax.xml.stream.XMLStreamReader
+                                public read(): javax.xml.stream.XMLStreamReader
+                                public getSystemId(): java.net.URL
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

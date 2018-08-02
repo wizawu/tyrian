@@ -7,12 +7,11 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 namespace traversers {
-class XSDHandler$XSDKey {
-    public hashCode(): int
-    public equals(arg0: java.lang.Object): boolean
-    public static class: java.lang.Class<any>
-}
-
+                                    class XSDHandler$XSDKey {
+                                        public hashCode(): int
+                                        public equals(arg0: java.lang.Object): boolean
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

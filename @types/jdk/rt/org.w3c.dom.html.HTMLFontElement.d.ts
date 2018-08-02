@@ -2,15 +2,14 @@ declare namespace org {
     namespace w3c {
         namespace dom {
             namespace html {
-interface HTMLFontElement extends org.w3c.dom.html.HTMLElement {
-    getColor(): string
-    setColor(arg0: java.lang.String | string): void
-    getFace(): string
-    setFace(arg0: java.lang.String | string): void
-    getSize(): string
-    setSize(arg0: java.lang.String | string): void
-}
-
+                interface HTMLFontElement extends org.w3c.dom.html.HTMLElement {
+                    getColor(): string
+                    setColor(arg0: java.lang.String | string): void
+                    getFace(): string
+                    setFace(arg0: java.lang.String | string): void
+                    getSize(): string
+                    setSize(arg0: java.lang.String | string): void
+                }
             }
         }
     }

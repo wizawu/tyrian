@@ -1,7 +1,6 @@
 declare namespace java {
     namespace util {
-interface RandomAccess {
-}
-
+        interface RandomAccess {
+        }
     }
 }

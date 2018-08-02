@@ -4,11 +4,10 @@ declare namespace com {
             namespace swing {
                 namespace plaf {
                     namespace nimbus {
-class NimbusLookAndFeel extends javax.swing.plaf.nimbus.NimbusLookAndFeel {
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                        class NimbusLookAndFeel extends javax.swing.plaf.nimbus.NimbusLookAndFeel {
+                            public constructor()
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

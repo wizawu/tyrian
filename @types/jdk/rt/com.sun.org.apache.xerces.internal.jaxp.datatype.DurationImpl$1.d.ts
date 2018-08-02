@@ -6,10 +6,9 @@ declare namespace com {
                     namespace internal {
                         namespace jaxp {
                             namespace datatype {
-class DurationImpl$1 {
-    public static class: java.lang.Class<any>
-}
-
+                                class DurationImpl$1 {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

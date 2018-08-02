@@ -5,14 +5,13 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace xs {
-interface XSParticle extends com.sun.org.apache.xerces.internal.xs.XSObject {
-    getMinOccurs(): int
-    getMaxOccurs(): int
-    getMaxOccursUnbounded(): boolean
-    getTerm(): com.sun.org.apache.xerces.internal.xs.XSTerm
-    getAnnotations(): com.sun.org.apache.xerces.internal.xs.XSObjectList
-}
-
+                            interface XSParticle extends com.sun.org.apache.xerces.internal.xs.XSObject {
+                                getMinOccurs(): int
+                                getMaxOccurs(): int
+                                getMaxOccursUnbounded(): boolean
+                                getTerm(): com.sun.org.apache.xerces.internal.xs.XSTerm
+                                getAnnotations(): com.sun.org.apache.xerces.internal.xs.XSObjectList
+                            }
                         }
                     }
                 }

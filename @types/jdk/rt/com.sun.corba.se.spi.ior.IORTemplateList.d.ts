@@ -4,9 +4,8 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace ior {
-interface IORTemplateList extends java.util.List , com.sun.corba.se.spi.ior.IORFactory , com.sun.corba.se.spi.ior.MakeImmutable {
-}
-
+                        interface IORTemplateList extends java.util.List , com.sun.corba.se.spi.ior.IORFactory , com.sun.corba.se.spi.ior.MakeImmutable {
+                        }
                     }
                 }
             }

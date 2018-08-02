@@ -3,10 +3,9 @@ declare namespace sun {
         namespace krb5 {
             namespace internal {
                 namespace rcache {
-class DflCache$1 {
-    public static class: java.lang.Class<any>
-}
-
+                    class DflCache$1 {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

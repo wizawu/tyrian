@@ -6,13 +6,12 @@ declare namespace com {
                     namespace v2 {
                         namespace runtime {
                             namespace reflect {
-class PrimitiveArrayListerByte$1 implements com.sun.xml.internal.bind.v2.runtime.reflect.ListIterator<java.lang.Byte> {
-    public hasNext(): boolean
-    public next(): java.lang.Byte
-    public next(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                                class PrimitiveArrayListerByte$1 implements com.sun.xml.internal.bind.v2.runtime.reflect.ListIterator<java.lang.Byte> {
+                                    public hasNext(): boolean
+                                    public next(): java.lang.Byte
+                                    public next(): java.lang.Object
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

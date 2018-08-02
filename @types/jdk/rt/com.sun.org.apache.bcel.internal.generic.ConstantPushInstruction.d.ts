@@ -5,10 +5,9 @@ declare namespace com {
                 namespace bcel {
                     namespace internal {
                         namespace generic {
-interface ConstantPushInstruction extends com.sun.org.apache.bcel.internal.generic.PushInstruction , com.sun.org.apache.bcel.internal.generic.TypedInstruction {
-    getValue(): java.lang.Number
-}
-
+                            interface ConstantPushInstruction extends com.sun.org.apache.bcel.internal.generic.PushInstruction , com.sun.org.apache.bcel.internal.generic.TypedInstruction {
+                                getValue(): java.lang.Number
+                            }
                         }
                     }
                 }

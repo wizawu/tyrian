@@ -5,14 +5,12 @@ declare namespace com {
                 namespace impl {
                     namespace orbutil {
                         namespace graph {
-interface Node {
-    getChildren(): java.util.Set
-}
-
-interface Node$$Lambda {
-    (): java.util.Set
-}
-
+                            interface Node {
+                                getChildren(): java.util.Set
+                            }
+                            interface Node$$Lambda {
+                                (): java.util.Set
+                            }
                         }
                     }
                 }

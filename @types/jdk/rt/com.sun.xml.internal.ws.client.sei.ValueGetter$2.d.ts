@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace client {
                         namespace sei {
-class ValueGetter$2 extends com.sun.xml.internal.ws.client.sei.ValueGetter {
-    public static class: java.lang.Class<any>
-}
-
+                            class ValueGetter$2 extends com.sun.xml.internal.ws.client.sei.ValueGetter {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

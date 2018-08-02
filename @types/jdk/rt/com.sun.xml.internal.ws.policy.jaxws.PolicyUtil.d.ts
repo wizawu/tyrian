@@ -5,14 +5,13 @@ declare namespace com {
                 namespace ws {
                     namespace policy {
                         namespace jaxws {
-class PolicyUtil {
-    public constructor()
-    public static addServiceProviders<T>(arg0: java.util.Collection<T>, arg1: java.lang.Class<T>): void
-    public static configureModel(arg0: com.sun.xml.internal.ws.api.model.wsdl.WSDLModel, arg1: com.sun.xml.internal.ws.policy.PolicyMap): void
-    public static getPortScopedFeatures(arg0: com.sun.xml.internal.ws.policy.PolicyMap, arg1: javax.xml.namespace.QName, arg2: javax.xml.namespace.QName): java.util.Collection<javax.xml.ws.WebServiceFeature>
-    public static class: java.lang.Class<any>
-}
-
+                            class PolicyUtil {
+                                public constructor()
+                                public static addServiceProviders<T>(arg0: java.util.Collection<T>, arg1: java.lang.Class<T>): void
+                                public static configureModel(arg0: com.sun.xml.internal.ws.api.model.wsdl.WSDLModel, arg1: com.sun.xml.internal.ws.policy.PolicyMap): void
+                                public static getPortScopedFeatures(arg0: com.sun.xml.internal.ws.policy.PolicyMap, arg1: javax.xml.namespace.QName, arg2: javax.xml.namespace.QName): java.util.Collection<javax.xml.ws.WebServiceFeature>
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

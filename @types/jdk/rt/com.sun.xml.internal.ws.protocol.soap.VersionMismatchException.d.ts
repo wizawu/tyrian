@@ -5,13 +5,12 @@ declare namespace com {
                 namespace ws {
                     namespace protocol {
                         namespace soap {
-class VersionMismatchException extends com.sun.xml.internal.ws.api.message.ExceptionHasMessage {
-    public constructor(arg0: com.sun.xml.internal.ws.api.SOAPVersion, ...arg1: java.lang.Object[])
-    public getDefaultResourceBundleName(): string
-    public getFaultMessage(): com.sun.xml.internal.ws.api.message.Message
-    public static class: java.lang.Class<any>
-}
-
+                            class VersionMismatchException extends com.sun.xml.internal.ws.api.message.ExceptionHasMessage {
+                                public constructor(arg0: com.sun.xml.internal.ws.api.SOAPVersion, ...arg1: java.lang.Object[])
+                                public getDefaultResourceBundleName(): string
+                                public getFaultMessage(): com.sun.xml.internal.ws.api.message.Message
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace assembler {
-class MetroConfigLoader {
-    public static class: java.lang.Class<any>
-}
-
+                        class MetroConfigLoader {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace spi {
                         namespace db {
-class Utils {
-    public static class: java.lang.Class<any>
-}
-
+                            class Utils {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

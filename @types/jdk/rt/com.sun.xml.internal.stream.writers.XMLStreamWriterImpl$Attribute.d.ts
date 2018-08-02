@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace stream {
                     namespace writers {
-class XMLStreamWriterImpl$Attribute extends com.sun.org.apache.xerces.internal.xni.QName {
-    public static class: java.lang.Class<any>
-}
-
+                        class XMLStreamWriterImpl$Attribute extends com.sun.org.apache.xerces.internal.xni.QName {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

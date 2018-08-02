@@ -3,11 +3,10 @@ declare namespace com {
         namespace org {
             namespace glassfish {
                 namespace gmbal {
-interface DescriptorKey extends java.lang.annotation.Annotation {
-    value(): string
-    omitIfDefault(): boolean
-}
-
+                    interface DescriptorKey extends java.lang.annotation.Annotation {
+                        value(): string
+                        omitIfDefault(): boolean
+                    }
                 }
             }
         }

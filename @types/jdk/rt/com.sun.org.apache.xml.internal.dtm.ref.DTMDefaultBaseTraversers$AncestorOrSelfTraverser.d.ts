@@ -6,12 +6,11 @@ declare namespace com {
                     namespace internal {
                         namespace dtm {
                             namespace ref {
-class DTMDefaultBaseTraversers$AncestorOrSelfTraverser extends com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseTraversers$AncestorTraverser {
-    public first(arg0: int): int
-    public first(arg0: int, arg1: int): int
-    public static class: java.lang.Class<any>
-}
-
+                                class DTMDefaultBaseTraversers$AncestorOrSelfTraverser extends com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseTraversers$AncestorTraverser {
+                                    public first(arg0: int): int
+                                    public first(arg0: int, arg1: int): int
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

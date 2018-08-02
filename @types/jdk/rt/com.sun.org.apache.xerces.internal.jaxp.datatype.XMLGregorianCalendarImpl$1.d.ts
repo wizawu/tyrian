@@ -6,10 +6,9 @@ declare namespace com {
                     namespace internal {
                         namespace jaxp {
                             namespace datatype {
-class XMLGregorianCalendarImpl$1 {
-    public static class: java.lang.Class<any>
-}
-
+                                class XMLGregorianCalendarImpl$1 {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

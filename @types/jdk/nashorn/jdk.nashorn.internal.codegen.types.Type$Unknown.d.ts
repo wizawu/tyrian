@@ -3,9 +3,8 @@ declare namespace jdk {
         namespace internal {
             namespace codegen {
                 namespace types {
-interface Type$Unknown {
-}
-
+                    interface Type$Unknown {
+                    }
                 }
             }
         }

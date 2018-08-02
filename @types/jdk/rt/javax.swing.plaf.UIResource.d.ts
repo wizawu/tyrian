@@ -1,9 +1,8 @@
 declare namespace javax {
     namespace swing {
         namespace plaf {
-interface UIResource {
-}
-
+            interface UIResource {
+            }
         }
     }
 }

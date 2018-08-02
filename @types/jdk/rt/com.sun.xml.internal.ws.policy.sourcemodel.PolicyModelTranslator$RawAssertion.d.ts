@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace policy {
                         namespace sourcemodel {
-class PolicyModelTranslator$RawAssertion {
-    public static class: java.lang.Class<any>
-}
-
+                            class PolicyModelTranslator$RawAssertion {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

@@ -6,10 +6,9 @@ declare namespace com {
                     namespace internal {
                         namespace xni {
                             namespace grammars {
-interface XMLDTDDescription extends com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarDescription {
-    getRootName(): string
-}
-
+                                interface XMLDTDDescription extends com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarDescription {
+                                    getRootName(): string
+                                }
                             }
                         }
                     }

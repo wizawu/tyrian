@@ -5,14 +5,12 @@ declare namespace com {
                 namespace spi {
                     namespace legacy {
                         namespace interceptor {
-interface RequestInfoExt {
-    connection(): com.sun.corba.se.spi.legacy.connection.Connection
-}
-
-interface RequestInfoExt$$Lambda {
-    (): com.sun.corba.se.spi.legacy.connection.Connection
-}
-
+                            interface RequestInfoExt {
+                                connection(): com.sun.corba.se.spi.legacy.connection.Connection
+                            }
+                            interface RequestInfoExt$$Lambda {
+                                (): com.sun.corba.se.spi.legacy.connection.Connection
+                            }
                         }
                     }
                 }

@@ -4,16 +4,15 @@ declare namespace com {
             namespace util {
                 namespace jar {
                     namespace pack {
-class ConstantPool$StringEntry extends com.sun.java.util.jar.pack.ConstantPool$LiteralEntry {
-    public getRef(arg0: int): com.sun.java.util.jar.pack.ConstantPool$Entry
-    protected computeValueHash(): int
-    public equals(arg0: java.lang.Object): boolean
-    public compareTo(arg0: java.lang.Object): int
-    public literalValue(): java.lang.Comparable<any>
-    public stringValue(): string
-    public static class: java.lang.Class<any>
-}
-
+                        class ConstantPool$StringEntry extends com.sun.java.util.jar.pack.ConstantPool$LiteralEntry {
+                            public getRef(arg0: int): com.sun.java.util.jar.pack.ConstantPool$Entry
+                            protected computeValueHash(): int
+                            public equals(arg0: java.lang.Object): boolean
+                            public compareTo(arg0: java.lang.Object): int
+                            public literalValue(): java.lang.Comparable<any>
+                            public stringValue(): string
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

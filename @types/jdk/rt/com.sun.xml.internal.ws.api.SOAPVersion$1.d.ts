@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace api {
-class SOAPVersion$1 {
-    public static class: java.lang.Class<any>
-}
-
+                        class SOAPVersion$1 {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

@@ -1,9 +1,8 @@
 declare namespace java {
     namespace rmi {
-class NoSuchObjectException extends java.rmi.RemoteException {
-    public constructor(arg0: java.lang.String | string)
-    public static class: java.lang.Class<any>
-}
-
+        class NoSuchObjectException extends java.rmi.RemoteException {
+            public constructor(arg0: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
     }
 }

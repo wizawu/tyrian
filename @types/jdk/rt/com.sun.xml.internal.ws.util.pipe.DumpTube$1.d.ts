@@ -5,11 +5,10 @@ declare namespace com {
                 namespace ws {
                     namespace util {
                         namespace pipe {
-class DumpTube$1 extends java.io.PrintStream {
-    public close(): void
-    public static class: java.lang.Class<any>
-}
-
+                            class DumpTube$1 extends java.io.PrintStream {
+                                public close(): void
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

@@ -5,10 +5,9 @@ declare namespace com {
                 namespace bcel {
                     namespace internal {
                         namespace generic {
-class MethodGen$BranchTarget {
-    public static class: java.lang.Class<any>
-}
-
+                            class MethodGen$BranchTarget {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

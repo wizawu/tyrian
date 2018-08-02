@@ -5,12 +5,11 @@ declare namespace com {
                 namespace plaf {
                     namespace basic {
                         namespace resources {
-class basic_zh_CN extends java.util.ListResourceBundle {
-    public constructor()
-    protected getContents(): java.lang.Object[][]
-    public static class: java.lang.Class<any>
-}
-
+                            class basic_zh_CN extends java.util.ListResourceBundle {
+                                public constructor()
+                                protected getContents(): java.lang.Object[][]
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

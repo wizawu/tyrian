@@ -3,12 +3,11 @@ declare namespace sun {
         namespace resources {
             namespace cldr {
                 namespace zh {
-class CurrencyNames_zh_Hans_MO extends sun.util.resources.OpenListResourceBundle {
-    public constructor()
-    protected getContents(): java.lang.Object[][]
-    public static class: java.lang.Class<any>
-}
-
+                    class CurrencyNames_zh_Hans_MO extends sun.util.resources.OpenListResourceBundle {
+                        public constructor()
+                        protected getContents(): java.lang.Object[][]
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

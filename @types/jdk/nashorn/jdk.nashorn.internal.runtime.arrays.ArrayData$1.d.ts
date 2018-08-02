@@ -3,10 +3,9 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 namespace arrays {
-class ArrayData$1 {
-    public static class: java.lang.Class<any>
-}
-
+                    class ArrayData$1 {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

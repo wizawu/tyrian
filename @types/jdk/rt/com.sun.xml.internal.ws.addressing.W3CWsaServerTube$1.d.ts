@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace addressing {
-class W3CWsaServerTube$1 {
-    public static class: java.lang.Class<any>
-}
-
+                        class W3CWsaServerTube$1 {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

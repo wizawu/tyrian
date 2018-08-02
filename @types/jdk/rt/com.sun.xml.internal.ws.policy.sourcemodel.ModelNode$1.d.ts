@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace policy {
                         namespace sourcemodel {
-class ModelNode$1 {
-    public static class: java.lang.Class<any>
-}
-
+                            class ModelNode$1 {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace server {
-class WSEndpointImpl$3 {
-    public static class: java.lang.Class<any>
-}
-
+                        class WSEndpointImpl$3 {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

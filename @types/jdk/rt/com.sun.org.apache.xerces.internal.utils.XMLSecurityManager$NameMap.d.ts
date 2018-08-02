@@ -5,15 +5,14 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace utils {
-class XMLSecurityManager$NameMap extends java.lang.Enum<com.sun.org.apache.xerces.internal.utils.XMLSecurityManager$NameMap> {
-    public static ENTITY_EXPANSION_LIMIT: com.sun.org.apache.xerces.internal.utils.XMLSecurityManager$NameMap
-    public static MAX_OCCUR_NODE_LIMIT: com.sun.org.apache.xerces.internal.utils.XMLSecurityManager$NameMap
-    public static ELEMENT_ATTRIBUTE_LIMIT: com.sun.org.apache.xerces.internal.utils.XMLSecurityManager$NameMap
-    public static values(): com.sun.org.apache.xerces.internal.utils.XMLSecurityManager$NameMap[]
-    public static valueOf(arg0: java.lang.String | string): com.sun.org.apache.xerces.internal.utils.XMLSecurityManager$NameMap
-    public static class: java.lang.Class<any>
-}
-
+                            class XMLSecurityManager$NameMap extends java.lang.Enum<com.sun.org.apache.xerces.internal.utils.XMLSecurityManager$NameMap> {
+                                public static ENTITY_EXPANSION_LIMIT: com.sun.org.apache.xerces.internal.utils.XMLSecurityManager$NameMap
+                                public static MAX_OCCUR_NODE_LIMIT: com.sun.org.apache.xerces.internal.utils.XMLSecurityManager$NameMap
+                                public static ELEMENT_ATTRIBUTE_LIMIT: com.sun.org.apache.xerces.internal.utils.XMLSecurityManager$NameMap
+                                public static values(): com.sun.org.apache.xerces.internal.utils.XMLSecurityManager$NameMap[]
+                                public static valueOf(arg0: java.lang.String | string): com.sun.org.apache.xerces.internal.utils.XMLSecurityManager$NameMap
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

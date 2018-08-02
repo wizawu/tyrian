@@ -6,14 +6,12 @@ declare namespace com {
                     namespace v2 {
                         namespace runtime {
                             namespace unmarshaller {
-interface Patcher {
-    run(): void
-}
-
-interface Patcher$$Lambda {
-    (): void
-}
-
+                                interface Patcher {
+                                    run(): void
+                                }
+                                interface Patcher$$Lambda {
+                                    (): void
+                                }
                             }
                         }
                     }

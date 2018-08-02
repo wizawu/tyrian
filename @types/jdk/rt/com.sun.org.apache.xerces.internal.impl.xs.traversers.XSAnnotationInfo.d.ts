@@ -7,10 +7,9 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 namespace traversers {
-class XSAnnotationInfo {
-    public static class: java.lang.Class<any>
-}
-
+                                    class XSAnnotationInfo {
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

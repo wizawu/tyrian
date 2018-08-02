@@ -6,12 +6,11 @@ declare namespace com {
                     namespace internal {
                         namespace utils {
                             namespace res {
-class XResources_zh_TW extends com.sun.org.apache.xml.internal.utils.res.XResourceBundle {
-    public constructor()
-    public getContents(): java.lang.Object[][]
-    public static class: java.lang.Class<any>
-}
-
+                                class XResources_zh_TW extends com.sun.org.apache.xml.internal.utils.res.XResourceBundle {
+                                    public constructor()
+                                    public getContents(): java.lang.Object[][]
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

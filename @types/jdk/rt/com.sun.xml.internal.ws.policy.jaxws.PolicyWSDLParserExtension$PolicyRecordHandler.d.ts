@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace policy {
                         namespace jaxws {
-class PolicyWSDLParserExtension$PolicyRecordHandler {
-    public static class: java.lang.Class<any>
-}
-
+                            class PolicyWSDLParserExtension$PolicyRecordHandler {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

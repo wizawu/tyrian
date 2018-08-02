@@ -6,11 +6,10 @@ declare namespace com {
                     namespace v2 {
                         namespace runtime {
                             namespace reflect {
-interface ListIterator<E> {
-    hasNext(): boolean
-    next(): E
-}
-
+                                interface ListIterator<E> {
+                                    hasNext(): boolean
+                                    next(): E
+                                }
                             }
                         }
                     }

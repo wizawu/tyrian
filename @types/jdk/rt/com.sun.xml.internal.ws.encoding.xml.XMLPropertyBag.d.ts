@@ -5,14 +5,13 @@ declare namespace com {
                 namespace ws {
                     namespace encoding {
                         namespace xml {
-class XMLPropertyBag extends com.oracle.webservices.internal.api.message.BasePropertySet {
-    public constructor()
-    protected getPropertyMap(): com.oracle.webservices.internal.api.message.BasePropertySet$PropertyMap
-    public getXMLContentType(): string
-    public setXMLContentType(arg0: java.lang.String | string): void
-    public static class: java.lang.Class<any>
-}
-
+                            class XMLPropertyBag extends com.oracle.webservices.internal.api.message.BasePropertySet {
+                                public constructor()
+                                protected getPropertyMap(): com.oracle.webservices.internal.api.message.BasePropertySet$PropertyMap
+                                public getXMLContentType(): string
+                                public setXMLContentType(arg0: java.lang.String | string): void
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

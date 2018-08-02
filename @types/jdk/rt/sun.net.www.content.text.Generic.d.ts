@@ -3,11 +3,10 @@ declare namespace sun {
         namespace www {
             namespace content {
                 namespace text {
-class Generic extends sun.net.www.content.text.plain {
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                    class Generic extends sun.net.www.content.text.plain {
+                        public constructor()
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

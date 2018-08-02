@@ -4,11 +4,10 @@ declare namespace com {
             namespace internal {
                 namespace fastinfoset {
                     namespace util {
-class KeyIntMap$BaseEntry {
-    public constructor(arg0: int, arg1: int)
-    public static class: java.lang.Class<any>
-}
-
+                        class KeyIntMap$BaseEntry {
+                            public constructor(arg0: int, arg1: int)
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

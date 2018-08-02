@@ -6,17 +6,16 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace compiler {
-interface NodeTest {
-    TEXT: int
-    COMMENT: int
-    PI: int
-    ROOT: int
-    ELEMENT: int
-    ATTRIBUTE: int
-    GTYPE: int
-    ANODE: int
-}
-
+                                interface NodeTest {
+                                    TEXT: int
+                                    COMMENT: int
+                                    PI: int
+                                    ROOT: int
+                                    ELEMENT: int
+                                    ATTRIBUTE: int
+                                    GTYPE: int
+                                    ANODE: int
+                                }
                             }
                         }
                     }

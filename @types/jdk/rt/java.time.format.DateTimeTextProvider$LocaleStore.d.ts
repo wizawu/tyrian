@@ -1,10 +1,9 @@
 declare namespace java {
     namespace time {
         namespace format {
-class DateTimeTextProvider$LocaleStore {
-    public static class: java.lang.Class<any>
-}
-
+            class DateTimeTextProvider$LocaleStore {
+                public static class: java.lang.Class<any>
+            }
         }
     }
 }

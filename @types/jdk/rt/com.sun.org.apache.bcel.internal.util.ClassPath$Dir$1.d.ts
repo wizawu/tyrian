@@ -5,15 +5,14 @@ declare namespace com {
                 namespace bcel {
                     namespace internal {
                         namespace util {
-class ClassPath$Dir$1 implements com.sun.org.apache.bcel.internal.util.ClassPath$ClassFile {
-    public getInputStream(): java.io.InputStream
-    public getPath(): string
-    public getTime(): long
-    public getSize(): long
-    public getBase(): string
-    public static class: java.lang.Class<any>
-}
-
+                            class ClassPath$Dir$1 implements com.sun.org.apache.bcel.internal.util.ClassPath$ClassFile {
+                                public getInputStream(): java.io.InputStream
+                                public getPath(): string
+                                public getTime(): long
+                                public getSize(): long
+                                public getBase(): string
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

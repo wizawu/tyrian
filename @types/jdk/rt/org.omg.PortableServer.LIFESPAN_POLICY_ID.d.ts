@@ -1,10 +1,9 @@
 declare namespace org {
     namespace omg {
         namespace PortableServer {
-interface LIFESPAN_POLICY_ID {
-    value: int
-}
-
+            interface LIFESPAN_POLICY_ID {
+                value: int
+            }
         }
     }
 }

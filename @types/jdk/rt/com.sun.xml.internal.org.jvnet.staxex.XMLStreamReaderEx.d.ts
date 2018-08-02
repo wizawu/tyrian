@@ -5,13 +5,12 @@ declare namespace com {
                 namespace org {
                     namespace jvnet {
                         namespace staxex {
-interface XMLStreamReaderEx extends javax.xml.stream.XMLStreamReader {
-    getPCDATA(): java.lang.CharSequence
-    getNamespaceContext(): com.sun.xml.internal.org.jvnet.staxex.NamespaceContextEx
-    getElementTextTrim(): string
-    getNamespaceContext(): javax.xml.namespace.NamespaceContext
-}
-
+                            interface XMLStreamReaderEx extends javax.xml.stream.XMLStreamReader {
+                                getPCDATA(): java.lang.CharSequence
+                                getNamespaceContext(): com.sun.xml.internal.org.jvnet.staxex.NamespaceContextEx
+                                getElementTextTrim(): string
+                                getNamespaceContext(): javax.xml.namespace.NamespaceContext
+                            }
                         }
                     }
                 }

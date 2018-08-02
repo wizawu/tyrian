@@ -6,9 +6,8 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace dom {
-interface DOMBuilder extends com.sun.org.apache.xalan.internal.xsltc.dom.ExtendedSAX {
-}
-
+                                interface DOMBuilder extends com.sun.org.apache.xalan.internal.xsltc.dom.ExtendedSAX {
+                                }
                             }
                         }
                     }

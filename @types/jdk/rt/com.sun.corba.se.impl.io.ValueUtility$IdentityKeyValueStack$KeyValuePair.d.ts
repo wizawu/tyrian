@@ -4,10 +4,9 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace io {
-class ValueUtility$IdentityKeyValueStack$KeyValuePair {
-    public static class: java.lang.Class<any>
-}
-
+                        class ValueUtility$IdentityKeyValueStack$KeyValuePair {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

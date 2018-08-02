@@ -5,14 +5,12 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace server {
-interface DocumentAddressResolver {
-    getRelativeAddressFor(arg0: com.sun.xml.internal.ws.api.server.SDDocument, arg1: com.sun.xml.internal.ws.api.server.SDDocument): string
-}
-
-interface DocumentAddressResolver$$Lambda {
-    (arg0: com.sun.xml.internal.ws.api.server.SDDocument, arg1: com.sun.xml.internal.ws.api.server.SDDocument): string
-}
-
+                            interface DocumentAddressResolver {
+                                getRelativeAddressFor(arg0: com.sun.xml.internal.ws.api.server.SDDocument, arg1: com.sun.xml.internal.ws.api.server.SDDocument): string
+                            }
+                            interface DocumentAddressResolver$$Lambda {
+                                (arg0: com.sun.xml.internal.ws.api.server.SDDocument, arg1: com.sun.xml.internal.ws.api.server.SDDocument): string
+                            }
                         }
                     }
                 }

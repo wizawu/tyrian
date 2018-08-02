@@ -6,11 +6,10 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace impl {
-class ClassInfoImpl$ConflictException extends java.lang.Exception {
-    public constructor(arg0: java.util.List<java.lang.annotation.Annotation>)
-    public static class: java.lang.Class<any>
-}
-
+                                class ClassInfoImpl$ConflictException extends java.lang.Exception {
+                                    public constructor(arg0: java.util.List<java.lang.annotation.Annotation>)
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

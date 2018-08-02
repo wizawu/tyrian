@@ -5,12 +5,11 @@ declare namespace com {
                 namespace plaf {
                     namespace synth {
                         namespace resources {
-class synth_zh_HK extends java.util.ListResourceBundle {
-    public constructor()
-    protected getContents(): java.lang.Object[][]
-    public static class: java.lang.Class<any>
-}
-
+                            class synth_zh_HK extends java.util.ListResourceBundle {
+                                public constructor()
+                                protected getContents(): java.lang.Object[][]
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

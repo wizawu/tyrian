@@ -4,11 +4,10 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace monitoring {
-interface MonitoringManager extends java.io.Closeable {
-    getRootMonitoredObject(): com.sun.corba.se.spi.monitoring.MonitoredObject
-    clearState(): void
-}
-
+                        interface MonitoringManager extends java.io.Closeable {
+                            getRootMonitoredObject(): com.sun.corba.se.spi.monitoring.MonitoredObject
+                            clearState(): void
+                        }
                     }
                 }
             }

@@ -5,12 +5,11 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace server {
-class AbstractServerAsyncTransport$CodecPool extends com.sun.xml.internal.ws.util.Pool<com.sun.xml.internal.ws.api.pipe.Codec> {
-    protected create(): com.sun.xml.internal.ws.api.pipe.Codec
-    protected create(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                            class AbstractServerAsyncTransport$CodecPool extends com.sun.xml.internal.ws.util.Pool<com.sun.xml.internal.ws.api.pipe.Codec> {
+                                protected create(): com.sun.xml.internal.ws.api.pipe.Codec
+                                protected create(): java.lang.Object
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

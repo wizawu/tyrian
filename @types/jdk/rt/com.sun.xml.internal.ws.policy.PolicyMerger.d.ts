@@ -4,12 +4,11 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace policy {
-class PolicyMerger {
-    public static getMerger(): com.sun.xml.internal.ws.policy.PolicyMerger
-    public merge(arg0: java.util.Collection<com.sun.xml.internal.ws.policy.Policy>): com.sun.xml.internal.ws.policy.Policy
-    public static class: java.lang.Class<any>
-}
-
+                        class PolicyMerger {
+                            public static getMerger(): com.sun.xml.internal.ws.policy.PolicyMerger
+                            public merge(arg0: java.util.Collection<com.sun.xml.internal.ws.policy.Policy>): com.sun.xml.internal.ws.policy.Policy
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

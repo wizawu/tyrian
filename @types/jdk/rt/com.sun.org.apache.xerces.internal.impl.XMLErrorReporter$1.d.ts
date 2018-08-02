@@ -5,11 +5,10 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace impl {
-class XMLErrorReporter$1 extends com.sun.org.apache.xerces.internal.util.ErrorHandlerProxy {
-    protected getErrorHandler(): com.sun.org.apache.xerces.internal.xni.parser.XMLErrorHandler
-    public static class: java.lang.Class<any>
-}
-
+                            class XMLErrorReporter$1 extends com.sun.org.apache.xerces.internal.util.ErrorHandlerProxy {
+                                protected getErrorHandler(): com.sun.org.apache.xerces.internal.xni.parser.XMLErrorHandler
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

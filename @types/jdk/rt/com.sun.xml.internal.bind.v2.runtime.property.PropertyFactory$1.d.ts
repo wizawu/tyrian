@@ -6,10 +6,9 @@ declare namespace com {
                     namespace v2 {
                         namespace runtime {
                             namespace property {
-class PropertyFactory$1 {
-    public static class: java.lang.Class<any>
-}
-
+                                class PropertyFactory$1 {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

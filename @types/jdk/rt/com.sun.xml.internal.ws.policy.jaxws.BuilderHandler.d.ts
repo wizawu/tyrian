@@ -5,11 +5,10 @@ declare namespace com {
                 namespace ws {
                     namespace policy {
                         namespace jaxws {
-abstract class BuilderHandler {
-    protected doPopulate(arg0: com.sun.xml.internal.ws.policy.PolicyMapExtender): void
-    public static class: java.lang.Class<any>
-}
-
+                            abstract class BuilderHandler {
+                                protected doPopulate(arg0: com.sun.xml.internal.ws.policy.PolicyMapExtender): void
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

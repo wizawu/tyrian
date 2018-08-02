@@ -1,10 +1,9 @@
 declare namespace org {
     namespace omg {
         namespace PortableInterceptor {
-interface ACTIVE {
-    value: short
-}
-
+            interface ACTIVE {
+                value: short
+            }
         }
     }
 }

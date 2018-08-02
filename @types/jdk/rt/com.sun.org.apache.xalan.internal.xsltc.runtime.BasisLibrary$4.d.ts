@@ -6,12 +6,11 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace runtime {
-class BasisLibrary$4 extends java.lang.ThreadLocal<java.util.concurrent.atomic.AtomicInteger> {
-    protected initialValue(): java.util.concurrent.atomic.AtomicInteger
-    protected initialValue(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                                class BasisLibrary$4 extends java.lang.ThreadLocal<java.util.concurrent.atomic.AtomicInteger> {
+                                    protected initialValue(): java.util.concurrent.atomic.AtomicInteger
+                                    protected initialValue(): java.lang.Object
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

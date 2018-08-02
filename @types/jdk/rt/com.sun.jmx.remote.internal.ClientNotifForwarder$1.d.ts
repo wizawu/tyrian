@@ -3,10 +3,9 @@ declare namespace com {
         namespace jmx {
             namespace remote {
                 namespace internal {
-class ClientNotifForwarder$1 {
-    public static class: java.lang.Class<any>
-}
-
+                    class ClientNotifForwarder$1 {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

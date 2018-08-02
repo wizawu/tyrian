@@ -4,11 +4,10 @@ declare namespace com {
             namespace lang {
                 namespace management {
                     namespace internal {
-class MemoryNotificationInfoUtil {
-    public static toCompositeData(arg0: java.lang.management.MemoryNotificationInfo): javax.management.openmbean.CompositeData
-    public static class: java.lang.Class<any>
-}
-
+                        class MemoryNotificationInfoUtil {
+                            public static toCompositeData(arg0: java.lang.management.MemoryNotificationInfo): javax.management.openmbean.CompositeData
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

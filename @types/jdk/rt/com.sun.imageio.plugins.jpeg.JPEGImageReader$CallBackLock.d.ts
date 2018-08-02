@@ -3,10 +3,9 @@ declare namespace com {
         namespace imageio {
             namespace plugins {
                 namespace jpeg {
-class JPEGImageReader$CallBackLock {
-    public static class: java.lang.Class<any>
-}
-
+                    class JPEGImageReader$CallBackLock {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

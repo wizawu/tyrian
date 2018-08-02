@@ -8,9 +8,8 @@ declare namespace com {
                             namespace keys {
                                 namespace content {
                                     namespace x509 {
-interface XMLX509DataContent {
-}
-
+                                        interface XMLX509DataContent {
+                                        }
                                     }
                                 }
                             }

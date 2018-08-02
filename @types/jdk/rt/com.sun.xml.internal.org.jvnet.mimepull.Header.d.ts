@@ -5,11 +5,10 @@ declare namespace com {
                 namespace org {
                     namespace jvnet {
                         namespace mimepull {
-interface Header {
-    getName(): string
-    getValue(): string
-}
-
+                            interface Header {
+                                getName(): string
+                                getValue(): string
+                            }
                         }
                     }
                 }

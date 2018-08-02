@@ -4,13 +4,12 @@ declare namespace com {
             namespace internal {
                 namespace bind {
                     namespace api {
-class CompositeStructure {
-    public bridges: com.sun.xml.internal.bind.api.Bridge[]
-    public values: java.lang.Object[]
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                        class CompositeStructure {
+                            public bridges: com.sun.xml.internal.bind.api.Bridge[]
+                            public values: java.lang.Object[]
+                            public constructor()
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

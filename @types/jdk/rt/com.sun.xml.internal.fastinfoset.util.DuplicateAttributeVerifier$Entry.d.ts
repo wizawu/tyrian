@@ -4,11 +4,10 @@ declare namespace com {
             namespace internal {
                 namespace fastinfoset {
                     namespace util {
-class DuplicateAttributeVerifier$Entry {
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                        class DuplicateAttributeVerifier$Entry {
+                            public constructor()
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

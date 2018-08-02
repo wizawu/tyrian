@@ -1,10 +1,9 @@
 declare namespace com {
     namespace ibm {
         namespace jit {
-class DecimalFormatHelper$FieldDelegate {
-    public static class: java.lang.Class<any>
-}
-
+            class DecimalFormatHelper$FieldDelegate {
+                public static class: java.lang.Class<any>
+            }
         }
     }
 }

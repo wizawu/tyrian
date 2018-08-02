@@ -6,14 +6,13 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace trax {
-class TransformerFactoryImpl$PIParamWrapper {
-    public _media: string
-    public _title: string
-    public _charset: string
-    public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
-    public static class: java.lang.Class<any>
-}
-
+                                class TransformerFactoryImpl$PIParamWrapper {
+                                    public _media: string
+                                    public _title: string
+                                    public _charset: string
+                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

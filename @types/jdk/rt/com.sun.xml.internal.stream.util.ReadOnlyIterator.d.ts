@@ -4,15 +4,14 @@ declare namespace com {
             namespace internal {
                 namespace stream {
                     namespace util {
-class ReadOnlyIterator implements java.util.Iterator {
-    public constructor()
-    public constructor(arg0: java.util.Iterator)
-    public hasNext(): boolean
-    public next(): java.lang.Object
-    public remove(): void
-    public static class: java.lang.Class<any>
-}
-
+                        class ReadOnlyIterator implements java.util.Iterator {
+                            public constructor()
+                            public constructor(arg0: java.util.Iterator)
+                            public hasNext(): boolean
+                            public next(): java.lang.Object
+                            public remove(): void
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

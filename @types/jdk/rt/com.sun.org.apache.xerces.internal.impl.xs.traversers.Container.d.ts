@@ -7,10 +7,9 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 namespace traversers {
-abstract class Container {
-    public static class: java.lang.Class<any>
-}
-
+                                    abstract class Container {
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

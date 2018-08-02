@@ -7,10 +7,9 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 namespace traversers {
-class SmallContainer extends com.sun.org.apache.xerces.internal.impl.xs.traversers.Container {
-    public static class: java.lang.Class<any>
-}
-
+                                    class SmallContainer extends com.sun.org.apache.xerces.internal.impl.xs.traversers.Container {
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

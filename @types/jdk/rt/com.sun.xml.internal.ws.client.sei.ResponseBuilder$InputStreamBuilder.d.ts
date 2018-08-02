@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace client {
                         namespace sei {
-class ResponseBuilder$InputStreamBuilder extends com.sun.xml.internal.ws.client.sei.ResponseBuilder$AttachmentBuilder {
-    public static class: java.lang.Class<any>
-}
-
+                            class ResponseBuilder$InputStreamBuilder extends com.sun.xml.internal.ws.client.sei.ResponseBuilder$AttachmentBuilder {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

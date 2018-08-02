@@ -6,12 +6,11 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace runtime {
-class ErrorMessages_ja extends java.util.ListResourceBundle {
-    public constructor()
-    public getContents(): java.lang.Object[][]
-    public static class: java.lang.Class<any>
-}
-
+                                class ErrorMessages_ja extends java.util.ListResourceBundle {
+                                    public constructor()
+                                    public getContents(): java.lang.Object[][]
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

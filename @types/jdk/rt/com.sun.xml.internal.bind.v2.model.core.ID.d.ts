@@ -6,15 +6,14 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace core {
-class ID extends java.lang.Enum<com.sun.xml.internal.bind.v2.model.core.ID> {
-    public static ID: com.sun.xml.internal.bind.v2.model.core.ID
-    public static IDREF: com.sun.xml.internal.bind.v2.model.core.ID
-    public static NONE: com.sun.xml.internal.bind.v2.model.core.ID
-    public static values(): com.sun.xml.internal.bind.v2.model.core.ID[]
-    public static valueOf(arg0: java.lang.String | string): com.sun.xml.internal.bind.v2.model.core.ID
-    public static class: java.lang.Class<any>
-}
-
+                                class ID extends java.lang.Enum<com.sun.xml.internal.bind.v2.model.core.ID> {
+                                    public static ID: com.sun.xml.internal.bind.v2.model.core.ID
+                                    public static IDREF: com.sun.xml.internal.bind.v2.model.core.ID
+                                    public static NONE: com.sun.xml.internal.bind.v2.model.core.ID
+                                    public static values(): com.sun.xml.internal.bind.v2.model.core.ID[]
+                                    public static valueOf(arg0: java.lang.String | string): com.sun.xml.internal.bind.v2.model.core.ID
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

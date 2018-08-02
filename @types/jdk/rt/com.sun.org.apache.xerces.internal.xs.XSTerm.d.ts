@@ -5,9 +5,8 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace xs {
-interface XSTerm extends com.sun.org.apache.xerces.internal.xs.XSObject {
-}
-
+                            interface XSTerm extends com.sun.org.apache.xerces.internal.xs.XSObject {
+                            }
                         }
                     }
                 }

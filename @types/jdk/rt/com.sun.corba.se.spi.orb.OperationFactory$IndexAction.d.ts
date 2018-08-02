@@ -4,13 +4,12 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace orb {
-class OperationFactory$IndexAction extends com.sun.corba.se.spi.orb.OperationFactory$OperationBase {
-    public constructor(arg0: int)
-    public operate(arg0: java.lang.Object): java.lang.Object
-    public toString(): string
-    public static class: java.lang.Class<any>
-}
-
+                        class OperationFactory$IndexAction extends com.sun.corba.se.spi.orb.OperationFactory$OperationBase {
+                            public constructor(arg0: int)
+                            public operate(arg0: java.lang.Object): java.lang.Object
+                            public toString(): string
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

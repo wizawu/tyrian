@@ -5,10 +5,9 @@ declare namespace com {
                 namespace xml {
                     namespace internal {
                         namespace serializer {
-class Encodings$1 {
-    public static class: java.lang.Class<any>
-}
-
+                            class Encodings$1 {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

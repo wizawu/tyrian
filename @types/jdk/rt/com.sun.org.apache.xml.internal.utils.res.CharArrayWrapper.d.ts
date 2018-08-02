@@ -6,13 +6,12 @@ declare namespace com {
                     namespace internal {
                         namespace utils {
                             namespace res {
-class CharArrayWrapper {
-    public constructor(arg0: char[])
-    public getChar(arg0: int): char
-    public getLength(): int
-    public static class: java.lang.Class<any>
-}
-
+                                class CharArrayWrapper {
+                                    public constructor(arg0: char[])
+                                    public getChar(arg0: int): char
+                                    public getLength(): int
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

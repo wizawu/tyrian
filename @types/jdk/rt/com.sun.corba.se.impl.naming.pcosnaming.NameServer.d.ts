@@ -5,13 +5,12 @@ declare namespace com {
                 namespace impl {
                     namespace naming {
                         namespace pcosnaming {
-class NameServer {
-    public static main(arg0: java.lang.String[]): void
-    protected constructor(arg0: java.lang.String[])
-    protected run(): void
-    public static class: java.lang.Class<any>
-}
-
+                            class NameServer {
+                                public static main(arg0: java.lang.String[]): void
+                                protected constructor(arg0: java.lang.String[])
+                                protected run(): void
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

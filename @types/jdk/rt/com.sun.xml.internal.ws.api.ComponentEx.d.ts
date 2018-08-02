@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace api {
-interface ComponentEx extends com.sun.xml.internal.ws.api.Component {
-    getIterableSPI<S>(arg0: java.lang.Class<S>): java.lang.Iterable<S>
-}
-
+                        interface ComponentEx extends com.sun.xml.internal.ws.api.Component {
+                            getIterableSPI<S>(arg0: java.lang.Class<S>): java.lang.Iterable<S>
+                        }
                     }
                 }
             }

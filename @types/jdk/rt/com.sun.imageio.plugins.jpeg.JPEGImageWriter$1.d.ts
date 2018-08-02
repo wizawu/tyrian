@@ -3,12 +3,11 @@ declare namespace com {
         namespace imageio {
             namespace plugins {
                 namespace jpeg {
-class JPEGImageWriter$1 implements java.security.PrivilegedAction<java.lang.Void> {
-    public run(): java.lang.Void
-    public run(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                    class JPEGImageWriter$1 implements java.security.PrivilegedAction<java.lang.Void> {
+                        public run(): java.lang.Void
+                        public run(): java.lang.Object
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

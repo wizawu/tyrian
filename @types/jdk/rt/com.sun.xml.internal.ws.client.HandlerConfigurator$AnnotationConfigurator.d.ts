@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace client {
-class HandlerConfigurator$AnnotationConfigurator extends com.sun.xml.internal.ws.client.HandlerConfigurator {
-    public static class: java.lang.Class<any>
-}
-
+                        class HandlerConfigurator$AnnotationConfigurator extends com.sun.xml.internal.ws.client.HandlerConfigurator {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

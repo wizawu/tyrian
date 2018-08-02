@@ -5,13 +5,12 @@ declare namespace com {
                 namespace xpath {
                     namespace internal {
                         namespace functions {
-class FuncExtFunctionAvailable extends com.sun.org.apache.xpath.internal.functions.FunctionOneArg {
-    public constructor()
-    public execute(arg0: com.sun.org.apache.xpath.internal.XPathContext): com.sun.org.apache.xpath.internal.objects.XObject
-    public setFunctionTable(arg0: com.sun.org.apache.xpath.internal.compiler.FunctionTable): void
-    public static class: java.lang.Class<any>
-}
-
+                            class FuncExtFunctionAvailable extends com.sun.org.apache.xpath.internal.functions.FunctionOneArg {
+                                public constructor()
+                                public execute(arg0: com.sun.org.apache.xpath.internal.XPathContext): com.sun.org.apache.xpath.internal.objects.XObject
+                                public setFunctionTable(arg0: com.sun.org.apache.xpath.internal.compiler.FunctionTable): void
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

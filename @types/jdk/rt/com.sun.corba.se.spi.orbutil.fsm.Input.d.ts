@@ -5,9 +5,8 @@ declare namespace com {
                 namespace spi {
                     namespace orbutil {
                         namespace fsm {
-interface Input {
-}
-
+                            interface Input {
+                            }
                         }
                     }
                 }

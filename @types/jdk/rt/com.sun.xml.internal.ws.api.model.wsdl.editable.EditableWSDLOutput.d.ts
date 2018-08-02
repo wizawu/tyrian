@@ -7,16 +7,15 @@ declare namespace com {
                         namespace model {
                             namespace wsdl {
                                 namespace editable {
-interface EditableWSDLOutput extends com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput {
-    getMessage(): com.sun.xml.internal.ws.api.model.wsdl.editable.EditableWSDLMessage
-    getOperation(): com.sun.xml.internal.ws.api.model.wsdl.editable.EditableWSDLOperation
-    setAction(arg0: java.lang.String | string): void
-    setDefaultAction(arg0: boolean): void
-    freeze(arg0: com.sun.xml.internal.ws.api.model.wsdl.editable.EditableWSDLModel): void
-    getOperation(): com.sun.xml.internal.ws.api.model.wsdl.WSDLOperation
-    getMessage(): com.sun.xml.internal.ws.api.model.wsdl.WSDLMessage
-}
-
+                                    interface EditableWSDLOutput extends com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput {
+                                        getMessage(): com.sun.xml.internal.ws.api.model.wsdl.editable.EditableWSDLMessage
+                                        getOperation(): com.sun.xml.internal.ws.api.model.wsdl.editable.EditableWSDLOperation
+                                        setAction(arg0: java.lang.String | string): void
+                                        setDefaultAction(arg0: boolean): void
+                                        freeze(arg0: com.sun.xml.internal.ws.api.model.wsdl.editable.EditableWSDLModel): void
+                                        getOperation(): com.sun.xml.internal.ws.api.model.wsdl.WSDLOperation
+                                        getMessage(): com.sun.xml.internal.ws.api.model.wsdl.WSDLMessage
+                                    }
                                 }
                             }
                         }

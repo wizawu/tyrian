@@ -6,10 +6,9 @@ declare namespace com {
                     namespace org {
                         namespace objectweb {
                             namespace asm {
-class Frame {
-    public static class: java.lang.Class<any>
-}
-
+                                class Frame {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

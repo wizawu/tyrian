@@ -5,14 +5,12 @@ declare namespace com {
                 namespace xpath {
                     namespace internal {
                         namespace axes {
-interface PathComponent {
-    getAnalysisBits(): int
-}
-
-interface PathComponent$$Lambda {
-    (): int
-}
-
+                            interface PathComponent {
+                                getAnalysisBits(): int
+                            }
+                            interface PathComponent$$Lambda {
+                                (): int
+                            }
                         }
                     }
                 }

@@ -4,11 +4,10 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace handler {
-class HandlerTube$HandlerTubeExchange {
-    public isHandleFalse(): boolean
-    public static class: java.lang.Class<any>
-}
-
+                        class HandlerTube$HandlerTubeExchange {
+                            public isHandleFalse(): boolean
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

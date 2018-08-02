@@ -4,10 +4,9 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace encoding {
-class OSFCodeSetRegistry$1 {
-    public static class: java.lang.Class<any>
-}
-
+                        class OSFCodeSetRegistry$1 {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

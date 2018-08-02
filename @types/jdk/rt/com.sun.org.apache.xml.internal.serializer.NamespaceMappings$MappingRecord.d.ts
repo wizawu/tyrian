@@ -5,10 +5,9 @@ declare namespace com {
                 namespace xml {
                     namespace internal {
                         namespace serializer {
-class NamespaceMappings$MappingRecord {
-    public static class: java.lang.Class<any>
-}
-
+                            class NamespaceMappings$MappingRecord {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

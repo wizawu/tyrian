@@ -5,12 +5,11 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace xs {
-interface StringList extends java.util.List {
-    getLength(): int
-    contains(arg0: java.lang.String | string): boolean
-    item(arg0: int): string
-}
-
+                            interface StringList extends java.util.List {
+                                getLength(): int
+                                contains(arg0: java.lang.String | string): boolean
+                                item(arg0: int): string
+                            }
                         }
                     }
                 }

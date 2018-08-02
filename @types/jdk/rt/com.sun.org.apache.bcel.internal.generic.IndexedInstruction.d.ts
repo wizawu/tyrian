@@ -5,11 +5,10 @@ declare namespace com {
                 namespace bcel {
                     namespace internal {
                         namespace generic {
-interface IndexedInstruction {
-    getIndex(): int
-    setIndex(arg0: int): void
-}
-
+                            interface IndexedInstruction {
+                                getIndex(): int
+                                setIndex(arg0: int): void
+                            }
                         }
                     }
                 }

@@ -5,13 +5,12 @@ declare namespace com {
                 namespace ws {
                     namespace util {
                         namespace xml {
-class XmlUtil$5 implements org.xml.sax.ErrorHandler {
-    public warning(arg0: org.xml.sax.SAXParseException): void
-    public error(arg0: org.xml.sax.SAXParseException): void
-    public fatalError(arg0: org.xml.sax.SAXParseException): void
-    public static class: java.lang.Class<any>
-}
-
+                            class XmlUtil$5 implements org.xml.sax.ErrorHandler {
+                                public warning(arg0: org.xml.sax.SAXParseException): void
+                                public error(arg0: org.xml.sax.SAXParseException): void
+                                public fatalError(arg0: org.xml.sax.SAXParseException): void
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

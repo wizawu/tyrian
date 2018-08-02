@@ -3,11 +3,10 @@ declare namespace sun {
         namespace www {
             namespace protocol {
                 namespace http {
-class NTLMAuthenticationProxy {
-    public static isTrustedSite(arg0: java.net.URL): boolean
-    public static class: java.lang.Class<any>
-}
-
+                    class NTLMAuthenticationProxy {
+                        public static isTrustedSite(arg0: java.net.URL): boolean
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

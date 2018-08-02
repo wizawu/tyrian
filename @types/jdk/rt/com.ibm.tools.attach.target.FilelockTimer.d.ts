@@ -3,11 +3,10 @@ declare namespace com {
         namespace tools {
             namespace attach {
                 namespace target {
-class FilelockTimer extends java.util.Timer {
-    public cancel(): void
-    public static class: java.lang.Class<any>
-}
-
+                    class FilelockTimer extends java.util.Timer {
+                        public cancel(): void
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

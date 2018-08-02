@@ -5,15 +5,13 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace server {
-class ThreadLocalContainerResolver$2 implements java.util.concurrent.Executor {
-    public execute(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda): void
-    public static class: java.lang.Class<any>
-}
-
-class ThreadLocalContainerResolver$2$$Lambda implements java.util.concurrent.Executor {
-    public (arg0: java.lang.Runnable | java.lang.Runnable$$Lambda): void
-}
-
+                            class ThreadLocalContainerResolver$2 implements java.util.concurrent.Executor {
+                                public execute(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda): void
+                                public static class: java.lang.Class<any>
+                            }
+                            class ThreadLocalContainerResolver$2$$Lambda implements java.util.concurrent.Executor {
+                                public (arg0: java.lang.Runnable | java.lang.Runnable$$Lambda): void
+                            }
                         }
                     }
                 }

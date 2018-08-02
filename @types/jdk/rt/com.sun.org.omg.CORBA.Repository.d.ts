@@ -3,9 +3,8 @@ declare namespace com {
         namespace org {
             namespace omg {
                 namespace CORBA {
-interface Repository extends org.omg.CORBA.IRObject , org.omg.CORBA.portable.IDLEntity {
-}
-
+                    interface Repository extends org.omg.CORBA.IRObject , org.omg.CORBA.portable.IDLEntity {
+                    }
                 }
             }
         }

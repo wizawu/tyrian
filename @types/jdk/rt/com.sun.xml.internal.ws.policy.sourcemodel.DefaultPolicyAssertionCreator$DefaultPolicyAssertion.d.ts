@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace policy {
                         namespace sourcemodel {
-class DefaultPolicyAssertionCreator$DefaultPolicyAssertion extends com.sun.xml.internal.ws.policy.PolicyAssertion {
-    public static class: java.lang.Class<any>
-}
-
+                            class DefaultPolicyAssertionCreator$DefaultPolicyAssertion extends com.sun.xml.internal.ws.policy.PolicyAssertion {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

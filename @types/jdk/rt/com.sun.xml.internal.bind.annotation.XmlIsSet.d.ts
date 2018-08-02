@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace bind {
                     namespace annotation {
-interface XmlIsSet extends java.lang.annotation.Annotation {
-    value(): string
-}
-
+                        interface XmlIsSet extends java.lang.annotation.Annotation {
+                            value(): string
+                        }
                     }
                 }
             }

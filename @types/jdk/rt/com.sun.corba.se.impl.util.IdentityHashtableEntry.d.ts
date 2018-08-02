@@ -4,10 +4,9 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace util {
-class IdentityHashtableEntry {
-    public static class: java.lang.Class<any>
-}
-
+                        class IdentityHashtableEntry {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

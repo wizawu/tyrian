@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace server {
                         namespace sei {
-class TieHandler$1 {
-    public static class: java.lang.Class<any>
-}
-
+                            class TieHandler$1 {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

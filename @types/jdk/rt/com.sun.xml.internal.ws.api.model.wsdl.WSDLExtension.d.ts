@@ -6,14 +6,12 @@ declare namespace com {
                     namespace api {
                         namespace model {
                             namespace wsdl {
-interface WSDLExtension {
-    getName(): javax.xml.namespace.QName
-}
-
-interface WSDLExtension$$Lambda {
-    (): javax.xml.namespace.QName
-}
-
+                                interface WSDLExtension {
+                                    getName(): javax.xml.namespace.QName
+                                }
+                                interface WSDLExtension$$Lambda {
+                                    (): javax.xml.namespace.QName
+                                }
                             }
                         }
                     }

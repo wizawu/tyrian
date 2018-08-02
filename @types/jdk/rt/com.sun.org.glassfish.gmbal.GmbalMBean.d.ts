@@ -3,9 +3,8 @@ declare namespace com {
         namespace org {
             namespace glassfish {
                 namespace gmbal {
-interface GmbalMBean extends javax.management.DynamicMBean , javax.management.NotificationEmitter {
-}
-
+                    interface GmbalMBean extends javax.management.DynamicMBean , javax.management.NotificationEmitter {
+                    }
                 }
             }
         }

@@ -5,11 +5,10 @@ declare namespace com {
                 namespace ws {
                     namespace client {
                         namespace sei {
-class ValueSetterFactory$3 extends com.sun.xml.internal.ws.client.sei.ValueSetterFactory {
-    public get(arg0: com.sun.xml.internal.ws.model.ParameterImpl): com.sun.xml.internal.ws.client.sei.ValueSetter
-    public static class: java.lang.Class<any>
-}
-
+                            class ValueSetterFactory$3 extends com.sun.xml.internal.ws.client.sei.ValueSetterFactory {
+                                public get(arg0: com.sun.xml.internal.ws.model.ParameterImpl): com.sun.xml.internal.ws.client.sei.ValueSetter
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

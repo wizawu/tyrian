@@ -7,12 +7,11 @@ declare namespace com {
                         namespace security {
                             namespace algorithms {
                                 namespace implementations {
-class IntegrityHmac$IntegrityHmacSHA512 extends com.sun.org.apache.xml.internal.security.algorithms.implementations.IntegrityHmac {
-    public constructor()
-    public engineGetURI(): string
-    public static class: java.lang.Class<any>
-}
-
+                                    class IntegrityHmac$IntegrityHmacSHA512 extends com.sun.org.apache.xml.internal.security.algorithms.implementations.IntegrityHmac {
+                                        public constructor()
+                                        public engineGetURI(): string
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

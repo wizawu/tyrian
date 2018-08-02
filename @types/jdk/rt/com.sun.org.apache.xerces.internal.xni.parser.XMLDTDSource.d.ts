@@ -6,11 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace xni {
                             namespace parser {
-interface XMLDTDSource {
-    setDTDHandler(arg0: com.sun.org.apache.xerces.internal.xni.XMLDTDHandler): void
-    getDTDHandler(): com.sun.org.apache.xerces.internal.xni.XMLDTDHandler
-}
-
+                                interface XMLDTDSource {
+                                    setDTDHandler(arg0: com.sun.org.apache.xerces.internal.xni.XMLDTDHandler): void
+                                    getDTDHandler(): com.sun.org.apache.xerces.internal.xni.XMLDTDHandler
+                                }
                             }
                         }
                     }

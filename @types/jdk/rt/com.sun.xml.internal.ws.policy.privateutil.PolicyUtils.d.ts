@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace policy {
                         namespace privateutil {
-class PolicyUtils {
-    public static class: java.lang.Class<any>
-}
-
+                            class PolicyUtils {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

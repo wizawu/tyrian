@@ -4,11 +4,10 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace interceptors {
-class PIHandlerImpl$RequestInfoStack extends java.util.Stack {
-    public disableCount: int
-    public static class: java.lang.Class<any>
-}
-
+                        class PIHandlerImpl$RequestInfoStack extends java.util.Stack {
+                            public disableCount: int
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

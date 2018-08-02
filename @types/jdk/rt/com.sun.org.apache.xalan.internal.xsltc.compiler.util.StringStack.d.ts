@@ -7,14 +7,13 @@ declare namespace com {
                         namespace xsltc {
                             namespace compiler {
                                 namespace util {
-class StringStack extends java.util.Stack {
-    public constructor()
-    public peekString(): string
-    public popString(): string
-    public pushString(arg0: java.lang.String | string): string
-    public static class: java.lang.Class<any>
-}
-
+                                    class StringStack extends java.util.Stack {
+                                        public constructor()
+                                        public peekString(): string
+                                        public popString(): string
+                                        public pushString(arg0: java.lang.String | string): string
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

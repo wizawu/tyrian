@@ -6,10 +6,9 @@ declare namespace com {
                     namespace internal {
                         namespace dtm {
                             namespace ref {
-class ChunkedIntArray {
-    public static class: java.lang.Class<any>
-}
-
+                                class ChunkedIntArray {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

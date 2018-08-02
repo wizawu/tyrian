@@ -6,14 +6,13 @@ declare namespace com {
                     namespace internal {
                         namespace impl {
                             namespace dtd {
-class XML11DTDValidator extends com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator {
-    protected static DTD_VALIDATOR_PROPERTY: string
-    public constructor()
-    public reset(arg0: com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager): void
-    protected init(): void
-    public static class: java.lang.Class<any>
-}
-
+                                class XML11DTDValidator extends com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator {
+                                    protected static DTD_VALIDATOR_PROPERTY: string
+                                    public constructor()
+                                    public reset(arg0: com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager): void
+                                    protected init(): void
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

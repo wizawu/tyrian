@@ -5,11 +5,10 @@ declare namespace com {
                 namespace xpath {
                     namespace internal {
                         namespace res {
-class XPATHErrorResources_en extends com.sun.org.apache.xpath.internal.res.XPATHErrorResources {
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                            class XPATHErrorResources_en extends com.sun.org.apache.xpath.internal.res.XPATHErrorResources {
+                                public constructor()
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

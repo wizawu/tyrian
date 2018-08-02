@@ -3,12 +3,11 @@ declare namespace sun {
         namespace www {
             namespace protocol {
                 namespace ftp {
-class FtpURLConnection$1 implements java.security.PrivilegedAction<java.net.ProxySelector> {
-    public run(): java.net.ProxySelector
-    public run(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                    class FtpURLConnection$1 implements java.security.PrivilegedAction<java.net.ProxySelector> {
+                        public run(): java.net.ProxySelector
+                        public run(): java.lang.Object
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

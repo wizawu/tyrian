@@ -5,12 +5,11 @@ declare namespace com {
                 namespace impl {
                     namespace naming {
                         namespace pcosnaming {
-class CounterDB implements java.io.Serializable {
-    public static rootCounter: int
-    public getNextCounter(): int
-    public static class: java.lang.Class<any>
-}
-
+                            class CounterDB implements java.io.Serializable {
+                                public static rootCounter: int
+                                public getNextCounter(): int
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

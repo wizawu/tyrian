@@ -6,10 +6,9 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace annotation {
-class Init {
-    public static class: java.lang.Class<any>
-}
-
+                                class Init {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

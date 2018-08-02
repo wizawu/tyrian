@@ -5,16 +5,14 @@ declare namespace com {
                 namespace bcel {
                     namespace internal {
                         namespace generic {
-class LALOAD extends com.sun.org.apache.bcel.internal.generic.ArrayInstruction implements com.sun.org.apache.bcel.internal.generic.StackProducer {
-    public constructor()
-    public accept(arg0: com.sun.org.apache.bcel.internal.generic.Visitor): void
-    public static class: java.lang.Class<any>
-}
-
-class LALOAD$$Lambda extends com.sun.org.apache.bcel.internal.generic.ArrayInstruction implements com.sun.org.apache.bcel.internal.generic.StackProducer {
-    public constructor()
-}
-
+                            class LALOAD extends com.sun.org.apache.bcel.internal.generic.ArrayInstruction implements com.sun.org.apache.bcel.internal.generic.StackProducer {
+                                public constructor()
+                                public accept(arg0: com.sun.org.apache.bcel.internal.generic.Visitor): void
+                                public static class: java.lang.Class<any>
+                            }
+                            class LALOAD$$Lambda extends com.sun.org.apache.bcel.internal.generic.ArrayInstruction implements com.sun.org.apache.bcel.internal.generic.StackProducer {
+                                public constructor()
+                            }
                         }
                     }
                 }

@@ -6,11 +6,10 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace annotation {
-interface Locatable {
-    getUpstream(): com.sun.xml.internal.bind.v2.model.annotation.Locatable
-    getLocation(): com.sun.xml.internal.bind.v2.runtime.Location
-}
-
+                                interface Locatable {
+                                    getUpstream(): com.sun.xml.internal.bind.v2.model.annotation.Locatable
+                                    getLocation(): com.sun.xml.internal.bind.v2.runtime.Location
+                                }
                             }
                         }
                     }

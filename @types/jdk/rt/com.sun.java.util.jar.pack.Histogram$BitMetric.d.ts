@@ -4,14 +4,12 @@ declare namespace com {
             namespace util {
                 namespace jar {
                     namespace pack {
-interface Histogram$BitMetric {
-    getBitLength(arg0: int): double
-}
-
-interface Histogram$BitMetric$$Lambda {
-    (arg0: int): double
-}
-
+                        interface Histogram$BitMetric {
+                            getBitLength(arg0: int): double
+                        }
+                        interface Histogram$BitMetric$$Lambda {
+                            (arg0: int): double
+                        }
                     }
                 }
             }

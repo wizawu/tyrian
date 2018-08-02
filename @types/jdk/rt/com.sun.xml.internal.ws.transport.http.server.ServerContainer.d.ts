@@ -6,11 +6,10 @@ declare namespace com {
                     namespace transport {
                         namespace http {
                             namespace server {
-class ServerContainer extends com.sun.xml.internal.ws.api.server.Container {
-    public getSPI<T>(arg0: java.lang.Class<T>): T
-    public static class: java.lang.Class<any>
-}
-
+                                class ServerContainer extends com.sun.xml.internal.ws.api.server.Container {
+                                    public getSPI<T>(arg0: java.lang.Class<T>): T
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

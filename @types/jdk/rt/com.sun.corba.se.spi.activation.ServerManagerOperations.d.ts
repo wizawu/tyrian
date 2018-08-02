@@ -4,9 +4,8 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace activation {
-interface ServerManagerOperations extends com.sun.corba.se.spi.activation.ActivatorOperations , com.sun.corba.se.spi.activation.LocatorOperations {
-}
-
+                        interface ServerManagerOperations extends com.sun.corba.se.spi.activation.ActivatorOperations , com.sun.corba.se.spi.activation.LocatorOperations {
+                        }
                     }
                 }
             }

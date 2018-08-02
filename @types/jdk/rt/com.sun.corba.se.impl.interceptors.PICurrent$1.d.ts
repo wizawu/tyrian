@@ -4,11 +4,10 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace interceptors {
-class PICurrent$1 extends java.lang.ThreadLocal {
-    protected initialValue(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                        class PICurrent$1 extends java.lang.ThreadLocal {
+                            protected initialValue(): java.lang.Object
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

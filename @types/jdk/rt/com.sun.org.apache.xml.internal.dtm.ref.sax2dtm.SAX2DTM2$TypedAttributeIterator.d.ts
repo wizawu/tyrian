@@ -7,13 +7,12 @@ declare namespace com {
                         namespace dtm {
                             namespace ref {
                                 namespace sax2dtm {
-class SAX2DTM2$TypedAttributeIterator extends com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseIterators$InternalAxisIteratorBase {
-    public constructor(arg0: com.sun.org.apache.xml.internal.dtm.ref.sax2dtm.SAX2DTM2, arg1: int)
-    public setStartNode(arg0: int): com.sun.org.apache.xml.internal.dtm.DTMAxisIterator
-    public next(): int
-    public static class: java.lang.Class<any>
-}
-
+                                    class SAX2DTM2$TypedAttributeIterator extends com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseIterators$InternalAxisIteratorBase {
+                                        public constructor(arg0: com.sun.org.apache.xml.internal.dtm.ref.sax2dtm.SAX2DTM2, arg1: int)
+                                        public setStartNode(arg0: int): com.sun.org.apache.xml.internal.dtm.DTMAxisIterator
+                                        public next(): int
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

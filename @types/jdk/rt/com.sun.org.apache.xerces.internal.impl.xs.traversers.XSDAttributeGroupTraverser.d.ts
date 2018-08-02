@@ -7,10 +7,9 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 namespace traversers {
-class XSDAttributeGroupTraverser extends com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser {
-    public static class: java.lang.Class<any>
-}
-
+                                    class XSDAttributeGroupTraverser extends com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser {
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

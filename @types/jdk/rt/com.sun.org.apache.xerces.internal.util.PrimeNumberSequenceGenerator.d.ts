@@ -5,10 +5,9 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace util {
-class PrimeNumberSequenceGenerator {
-    public static class: java.lang.Class<any>
-}
-
+                            class PrimeNumberSequenceGenerator {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

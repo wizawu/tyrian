@@ -6,12 +6,11 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace compiler {
-class StringLengthCall extends com.sun.org.apache.xalan.internal.xsltc.compiler.FunctionCall {
-    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.QName, arg1: java.util.Vector)
-    public translate(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator): void
-    public static class: java.lang.Class<any>
-}
-
+                                class StringLengthCall extends com.sun.org.apache.xalan.internal.xsltc.compiler.FunctionCall {
+                                    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.QName, arg1: java.util.Vector)
+                                    public translate(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator): void
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

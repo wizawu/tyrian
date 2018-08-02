@@ -6,11 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace impl {
                             namespace dv {
-class InvalidDatatypeValueException extends com.sun.org.apache.xerces.internal.impl.dv.DatatypeException {
-    public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[])
-    public static class: java.lang.Class<any>
-}
-
+                                class InvalidDatatypeValueException extends com.sun.org.apache.xerces.internal.impl.dv.DatatypeException {
+                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[])
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

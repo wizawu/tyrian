@@ -3,11 +3,10 @@ declare namespace com {
         namespace jmx {
             namespace remote {
                 namespace internal {
-class ArrayNotificationBuffer$BufferListener implements javax.management.NotificationListener {
-    public handleNotification(arg0: javax.management.Notification, arg1: java.lang.Object): void
-    public static class: java.lang.Class<any>
-}
-
+                    class ArrayNotificationBuffer$BufferListener implements javax.management.NotificationListener {
+                        public handleNotification(arg0: javax.management.Notification, arg1: java.lang.Object): void
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

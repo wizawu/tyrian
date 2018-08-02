@@ -5,10 +5,9 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace xinclude {
-class SecuritySupport {
-    public static class: java.lang.Class<any>
-}
-
+                            class SecuritySupport {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

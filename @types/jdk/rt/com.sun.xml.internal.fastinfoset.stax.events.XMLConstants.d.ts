@@ -5,13 +5,12 @@ declare namespace com {
                 namespace fastinfoset {
                     namespace stax {
                         namespace events {
-class XMLConstants {
-    public static ENCODING: string
-    public static XMLVERSION: string
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                            class XMLConstants {
+                                public static ENCODING: string
+                                public static XMLVERSION: string
+                                public constructor()
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

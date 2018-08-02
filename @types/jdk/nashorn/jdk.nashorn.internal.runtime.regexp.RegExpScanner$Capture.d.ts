@@ -3,10 +3,9 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 namespace regexp {
-class RegExpScanner$Capture {
-    public static class: java.lang.Class<any>
-}
-
+                    class RegExpScanner$Capture {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

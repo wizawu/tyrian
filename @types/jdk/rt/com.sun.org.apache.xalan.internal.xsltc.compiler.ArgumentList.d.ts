@@ -6,12 +6,11 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace compiler {
-class ArgumentList {
-    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.ArgumentList)
-    public toString(): string
-    public static class: java.lang.Class<any>
-}
-
+                                class ArgumentList {
+                                    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.ArgumentList)
+                                    public toString(): string
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

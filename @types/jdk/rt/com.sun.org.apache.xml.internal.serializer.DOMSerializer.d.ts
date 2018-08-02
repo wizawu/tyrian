@@ -5,14 +5,12 @@ declare namespace com {
                 namespace xml {
                     namespace internal {
                         namespace serializer {
-interface DOMSerializer {
-    serialize(arg0: org.w3c.dom.Node): void
-}
-
-interface DOMSerializer$$Lambda {
-    (arg0: org.w3c.dom.Node): void
-}
-
+                            interface DOMSerializer {
+                                serialize(arg0: org.w3c.dom.Node): void
+                            }
+                            interface DOMSerializer$$Lambda {
+                                (arg0: org.w3c.dom.Node): void
+                            }
                         }
                     }
                 }

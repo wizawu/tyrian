@@ -4,15 +4,14 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace encoding {
-class BufferManagerWriteGrow extends com.sun.corba.se.impl.encoding.BufferManagerWrite {
-    public sentFragment(): boolean
-    public getBufferSize(): int
-    public overflow(arg0: com.sun.corba.se.impl.encoding.ByteBufferWithInfo): void
-    public sendMessage(): void
-    public close(): void
-    public static class: java.lang.Class<any>
-}
-
+                        class BufferManagerWriteGrow extends com.sun.corba.se.impl.encoding.BufferManagerWrite {
+                            public sentFragment(): boolean
+                            public getBufferSize(): int
+                            public overflow(arg0: com.sun.corba.se.impl.encoding.ByteBufferWithInfo): void
+                            public sendMessage(): void
+                            public close(): void
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

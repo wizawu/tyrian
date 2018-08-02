@@ -5,11 +5,10 @@ declare namespace com {
                 namespace spi {
                     namespace legacy {
                         namespace interceptor {
-interface IORInfoExt {
-    getServerPort(arg0: java.lang.String | string): int
-    getObjectAdapter(): com.sun.corba.se.spi.oa.ObjectAdapter
-}
-
+                            interface IORInfoExt {
+                                getServerPort(arg0: java.lang.String | string): int
+                                getObjectAdapter(): com.sun.corba.se.spi.oa.ObjectAdapter
+                            }
                         }
                     }
                 }

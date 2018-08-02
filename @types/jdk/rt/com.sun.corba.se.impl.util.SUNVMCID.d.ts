@@ -4,10 +4,9 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace util {
-interface SUNVMCID {
-    value: int
-}
-
+                        interface SUNVMCID {
+                            value: int
+                        }
                     }
                 }
             }

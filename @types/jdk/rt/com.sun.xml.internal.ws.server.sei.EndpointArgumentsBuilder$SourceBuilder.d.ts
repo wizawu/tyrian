@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace server {
                         namespace sei {
-class EndpointArgumentsBuilder$SourceBuilder extends com.sun.xml.internal.ws.server.sei.EndpointArgumentsBuilder$AttachmentBuilder {
-    public static class: java.lang.Class<any>
-}
-
+                            class EndpointArgumentsBuilder$SourceBuilder extends com.sun.xml.internal.ws.server.sei.EndpointArgumentsBuilder$AttachmentBuilder {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

@@ -5,11 +5,10 @@ declare namespace com {
                 namespace org {
                     namespace jvnet {
                         namespace mimepull {
-class MimeUtility {
-    public static decode(arg0: java.io.InputStream, arg1: java.lang.String | string): java.io.InputStream
-    public static class: java.lang.Class<any>
-}
-
+                            class MimeUtility {
+                                public static decode(arg0: java.io.InputStream, arg1: java.lang.String | string): java.io.InputStream
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

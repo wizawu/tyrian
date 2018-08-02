@@ -5,11 +5,10 @@ declare namespace com {
                 namespace impl {
                     namespace orbutil {
                         namespace threadpool {
-class ThreadPoolImpl$4 extends com.sun.corba.se.spi.monitoring.LongMonitoredAttributeBase {
-    public getValue(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                            class ThreadPoolImpl$4 extends com.sun.corba.se.spi.monitoring.LongMonitoredAttributeBase {
+                                public getValue(): java.lang.Object
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

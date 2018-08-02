@@ -5,15 +5,14 @@ declare namespace com {
                 namespace impl {
                     namespace naming {
                         namespace namingutil {
-interface INSURL {
-    getRIRFlag(): boolean
-    getEndpointInfo(): java.util.List
-    getKeyString(): string
-    getStringifiedName(): string
-    isCorbanameURL(): boolean
-    dPrint(): void
-}
-
+                            interface INSURL {
+                                getRIRFlag(): boolean
+                                getEndpointInfo(): java.util.List
+                                getKeyString(): string
+                                getStringifiedName(): string
+                                isCorbanameURL(): boolean
+                                dPrint(): void
+                            }
                         }
                     }
                 }

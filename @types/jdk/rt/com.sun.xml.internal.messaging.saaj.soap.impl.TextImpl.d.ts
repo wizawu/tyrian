@@ -6,19 +6,18 @@ declare namespace com {
                     namespace saaj {
                         namespace soap {
                             namespace impl {
-class TextImpl extends com.sun.org.apache.xerces.internal.dom.TextImpl implements javax.xml.soap.Text , org.w3c.dom.Text {
-    protected static log: java.util.logging.Logger
-    public constructor(arg0: com.sun.xml.internal.messaging.saaj.soap.SOAPDocumentImpl, arg1: java.lang.String | string)
-    public getValue(): string
-    public setValue(arg0: java.lang.String | string): void
-    public setParentElement(arg0: javax.xml.soap.SOAPElement): void
-    public getParentElement(): javax.xml.soap.SOAPElement
-    public detachNode(): void
-    public recycleNode(): void
-    public isComment(): boolean
-    public static class: java.lang.Class<any>
-}
-
+                                class TextImpl extends com.sun.org.apache.xerces.internal.dom.TextImpl implements javax.xml.soap.Text , org.w3c.dom.Text {
+                                    protected static log: java.util.logging.Logger
+                                    public constructor(arg0: com.sun.xml.internal.messaging.saaj.soap.SOAPDocumentImpl, arg1: java.lang.String | string)
+                                    public getValue(): string
+                                    public setValue(arg0: java.lang.String | string): void
+                                    public setParentElement(arg0: javax.xml.soap.SOAPElement): void
+                                    public getParentElement(): javax.xml.soap.SOAPElement
+                                    public detachNode(): void
+                                    public recycleNode(): void
+                                    public isComment(): boolean
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

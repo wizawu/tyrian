@@ -4,14 +4,12 @@ declare namespace com {
             namespace internal {
                 namespace bind {
                     namespace unmarshaller {
-interface Patcher {
-    run(): void
-}
-
-interface Patcher$$Lambda {
-    (): void
-}
-
+                        interface Patcher {
+                            run(): void
+                        }
+                        interface Patcher$$Lambda {
+                            (): void
+                        }
                     }
                 }
             }

@@ -5,11 +5,10 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace dom {
-class AbortException extends java.lang.RuntimeException {
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                            class AbortException extends java.lang.RuntimeException {
+                                public constructor()
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

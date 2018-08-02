@@ -6,11 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace impl {
                             namespace validation {
-interface EntityState {
-    isEntityDeclared(arg0: java.lang.String | string): boolean
-    isEntityUnparsed(arg0: java.lang.String | string): boolean
-}
-
+                                interface EntityState {
+                                    isEntityDeclared(arg0: java.lang.String | string): boolean
+                                    isEntityUnparsed(arg0: java.lang.String | string): boolean
+                                }
                             }
                         }
                     }

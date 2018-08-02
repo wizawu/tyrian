@@ -4,10 +4,9 @@ declare namespace com {
             namespace lang {
                 namespace management {
                     namespace internal {
-class ManagementUtils$Component<T extends java.lang.management.PlatformManagedObject> {
-    public static class: java.lang.Class<any>
-}
-
+                        class ManagementUtils$Component<T extends java.lang.management.PlatformManagedObject> {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

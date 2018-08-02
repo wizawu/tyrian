@@ -4,10 +4,9 @@ declare namespace com {
             namespace apache {
                 namespace regexp {
                     namespace internal {
-class RECompiler$RERange {
-    public static class: java.lang.Class<any>
-}
-
+                        class RECompiler$RERange {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

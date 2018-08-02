@@ -4,14 +4,12 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace transport {
-interface SocketOrChannelAcceptor {
-    getServerSocket(): java.net.ServerSocket
-}
-
-interface SocketOrChannelAcceptor$$Lambda {
-    (): java.net.ServerSocket
-}
-
+                        interface SocketOrChannelAcceptor {
+                            getServerSocket(): java.net.ServerSocket
+                        }
+                        interface SocketOrChannelAcceptor$$Lambda {
+                            (): java.net.ServerSocket
+                        }
                     }
                 }
             }

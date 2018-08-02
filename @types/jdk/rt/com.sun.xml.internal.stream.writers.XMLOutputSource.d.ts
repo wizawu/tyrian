@@ -4,11 +4,10 @@ declare namespace com {
             namespace internal {
                 namespace stream {
                     namespace writers {
-class XMLOutputSource {
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                        class XMLOutputSource {
+                            public constructor()
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

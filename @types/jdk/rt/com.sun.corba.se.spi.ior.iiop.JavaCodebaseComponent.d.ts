@@ -5,10 +5,9 @@ declare namespace com {
                 namespace spi {
                     namespace ior {
                         namespace iiop {
-interface JavaCodebaseComponent extends com.sun.corba.se.spi.ior.TaggedComponent {
-    getURLs(): string
-}
-
+                            interface JavaCodebaseComponent extends com.sun.corba.se.spi.ior.TaggedComponent {
+                                getURLs(): string
+                            }
                         }
                     }
                 }

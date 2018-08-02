@@ -6,11 +6,10 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace util {
-class ArrayInfoUtil {
-    public static calcArrayTypeName(arg0: javax.xml.namespace.QName): javax.xml.namespace.QName
-    public static class: java.lang.Class<any>
-}
-
+                                class ArrayInfoUtil {
+                                    public static calcArrayTypeName(arg0: javax.xml.namespace.QName): javax.xml.namespace.QName
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

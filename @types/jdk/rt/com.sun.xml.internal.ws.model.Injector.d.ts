@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace model {
-class Injector {
-    public static class: java.lang.Class<any>
-}
-
+                        class Injector {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

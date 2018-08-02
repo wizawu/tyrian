@@ -6,14 +6,12 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace dom {
-interface Filter {
-    test(arg0: int): boolean
-}
-
-interface Filter$$Lambda {
-    (arg0: int): boolean
-}
-
+                                interface Filter {
+                                    test(arg0: int): boolean
+                                }
+                                interface Filter$$Lambda {
+                                    (arg0: int): boolean
+                                }
                             }
                         }
                     }

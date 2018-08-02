@@ -3,12 +3,11 @@ declare namespace sun {
         namespace www {
             namespace protocol {
                 namespace jar {
-class URLJarFile$1 implements java.security.PrivilegedExceptionAction<java.util.jar.JarFile> {
-    public run(): java.util.jar.JarFile
-    public run(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                    class URLJarFile$1 implements java.security.PrivilegedExceptionAction<java.util.jar.JarFile> {
+                        public run(): java.util.jar.JarFile
+                        public run(): java.lang.Object
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

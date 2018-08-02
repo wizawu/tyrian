@@ -6,14 +6,12 @@ declare namespace com {
                     namespace internal {
                         namespace xs {
                             namespace datatypes {
-interface XSDouble {
-    getValue(): double
-}
-
-interface XSDouble$$Lambda {
-    (): double
-}
-
+                                interface XSDouble {
+                                    getValue(): double
+                                }
+                                interface XSDouble$$Lambda {
+                                    (): double
+                                }
                             }
                         }
                     }

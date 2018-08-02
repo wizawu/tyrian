@@ -7,12 +7,11 @@ declare namespace com {
                         namespace security {
                             namespace c14n {
                                 namespace implementations {
-class UtfHelpper {
-    public constructor()
-    public static getStringInUtf8(arg0: java.lang.String | string): byte[]
-    public static class: java.lang.Class<any>
-}
-
+                                    class UtfHelpper {
+                                        public constructor()
+                                        public static getStringInUtf8(arg0: java.lang.String | string): byte[]
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

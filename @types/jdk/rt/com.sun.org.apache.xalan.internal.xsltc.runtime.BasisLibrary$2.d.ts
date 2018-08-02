@@ -6,12 +6,11 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace runtime {
-class BasisLibrary$2 extends java.lang.ThreadLocal<java.lang.StringBuffer> {
-    protected initialValue(): java.lang.StringBuffer
-    protected initialValue(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                                class BasisLibrary$2 extends java.lang.ThreadLocal<java.lang.StringBuffer> {
+                                    protected initialValue(): java.lang.StringBuffer
+                                    protected initialValue(): java.lang.Object
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

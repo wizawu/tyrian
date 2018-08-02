@@ -5,11 +5,10 @@ declare namespace com {
                 namespace spi {
                     namespace ior {
                         namespace iiop {
-class IIOPFactories$7 extends com.sun.corba.se.spi.ior.EncapsulationFactoryBase {
-    public readContents(arg0: org.omg.CORBA_2_3.portable.InputStream): com.sun.corba.se.spi.ior.Identifiable
-    public static class: java.lang.Class<any>
-}
-
+                            class IIOPFactories$7 extends com.sun.corba.se.spi.ior.EncapsulationFactoryBase {
+                                public readContents(arg0: org.omg.CORBA_2_3.portable.InputStream): com.sun.corba.se.spi.ior.Identifiable
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

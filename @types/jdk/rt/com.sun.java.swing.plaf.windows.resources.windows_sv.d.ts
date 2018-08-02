@@ -5,12 +5,11 @@ declare namespace com {
                 namespace plaf {
                     namespace windows {
                         namespace resources {
-class windows_sv extends java.util.ListResourceBundle {
-    public constructor()
-    protected getContents(): java.lang.Object[][]
-    public static class: java.lang.Class<any>
-}
-
+                            class windows_sv extends java.util.ListResourceBundle {
+                                public constructor()
+                                protected getContents(): java.lang.Object[][]
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

@@ -5,12 +5,11 @@ declare namespace com {
                 namespace ws {
                     namespace spi {
                         namespace db {
-interface PropertyGetter {
-    getType(): java.lang.Class
-    getAnnotation<A>(arg0: java.lang.Class<A>): A
-    get(arg0: java.lang.Object): java.lang.Object
-}
-
+                            interface PropertyGetter {
+                                getType(): java.lang.Class
+                                getAnnotation<A>(arg0: java.lang.Class<A>): A
+                                get(arg0: java.lang.Object): java.lang.Object
+                            }
                         }
                     }
                 }

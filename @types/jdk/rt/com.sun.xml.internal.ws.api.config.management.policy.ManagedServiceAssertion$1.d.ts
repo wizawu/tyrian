@@ -7,10 +7,9 @@ declare namespace com {
                         namespace config {
                             namespace management {
                                 namespace policy {
-class ManagedServiceAssertion$1 {
-    public static class: java.lang.Class<any>
-}
-
+                                    class ManagedServiceAssertion$1 {
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

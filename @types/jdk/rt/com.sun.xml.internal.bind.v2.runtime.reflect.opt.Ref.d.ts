@@ -7,10 +7,9 @@ declare namespace com {
                         namespace runtime {
                             namespace reflect {
                                 namespace opt {
-class Ref {
-    public static class: java.lang.Class<any>
-}
-
+                                    class Ref {
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

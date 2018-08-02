@@ -5,12 +5,11 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace util {
-class AugmentationsImpl$SmallContainer$SmallContainerKeyEnumeration implements java.util.Enumeration {
-    public hasMoreElements(): boolean
-    public nextElement(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                            class AugmentationsImpl$SmallContainer$SmallContainerKeyEnumeration implements java.util.Enumeration {
+                                public hasMoreElements(): boolean
+                                public nextElement(): java.lang.Object
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

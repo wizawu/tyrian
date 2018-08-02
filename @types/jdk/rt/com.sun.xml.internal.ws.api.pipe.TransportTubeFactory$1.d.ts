@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace pipe {
-class TransportTubeFactory$1 {
-    public static class: java.lang.Class<any>
-}
-
+                            class TransportTubeFactory$1 {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

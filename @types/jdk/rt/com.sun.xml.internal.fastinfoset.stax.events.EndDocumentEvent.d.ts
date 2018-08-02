@@ -5,12 +5,11 @@ declare namespace com {
                 namespace fastinfoset {
                     namespace stax {
                         namespace events {
-class EndDocumentEvent extends com.sun.xml.internal.fastinfoset.stax.events.EventBase implements javax.xml.stream.events.EndDocument {
-    public constructor()
-    public toString(): string
-    public static class: java.lang.Class<any>
-}
-
+                            class EndDocumentEvent extends com.sun.xml.internal.fastinfoset.stax.events.EventBase implements javax.xml.stream.events.EndDocument {
+                                public constructor()
+                                public toString(): string
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

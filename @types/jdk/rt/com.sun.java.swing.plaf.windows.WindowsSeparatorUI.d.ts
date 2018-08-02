@@ -4,11 +4,10 @@ declare namespace com {
             namespace swing {
                 namespace plaf {
                     namespace windows {
-class WindowsSeparatorUI extends javax.swing.plaf.basic.BasicSeparatorUI {
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                        class WindowsSeparatorUI extends javax.swing.plaf.basic.BasicSeparatorUI {
+                            public constructor()
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

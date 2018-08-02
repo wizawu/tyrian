@@ -6,10 +6,9 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace core {
-interface ArrayInfo<T, C> extends com.sun.xml.internal.bind.v2.model.core.NonElement<T, C> {
-    getItemType(): com.sun.xml.internal.bind.v2.model.core.NonElement<T, C>
-}
-
+                                interface ArrayInfo<T, C> extends com.sun.xml.internal.bind.v2.model.core.NonElement<T, C> {
+                                    getItemType(): com.sun.xml.internal.bind.v2.model.core.NonElement<T, C>
+                                }
                             }
                         }
                     }

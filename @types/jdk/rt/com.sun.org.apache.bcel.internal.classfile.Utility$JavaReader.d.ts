@@ -5,13 +5,12 @@ declare namespace com {
                 namespace bcel {
                     namespace internal {
                         namespace classfile {
-class Utility$JavaReader extends java.io.FilterReader {
-    public constructor(arg0: java.io.Reader)
-    public read(): int
-    public read(arg0: char[], arg1: int, arg2: int): int
-    public static class: java.lang.Class<any>
-}
-
+                            class Utility$JavaReader extends java.io.FilterReader {
+                                public constructor(arg0: java.io.Reader)
+                                public read(): int
+                                public read(arg0: char[], arg1: int, arg2: int): int
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

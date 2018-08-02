@@ -4,13 +4,12 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace resolver {
-class CompositeResolverImpl implements com.sun.corba.se.spi.resolver.Resolver {
-    public constructor(arg0: com.sun.corba.se.spi.resolver.Resolver, arg1: com.sun.corba.se.spi.resolver.Resolver)
-    public resolve(arg0: java.lang.String | string): org.omg.CORBA.Object
-    public list(): java.util.Set
-    public static class: java.lang.Class<any>
-}
-
+                        class CompositeResolverImpl implements com.sun.corba.se.spi.resolver.Resolver {
+                            public constructor(arg0: com.sun.corba.se.spi.resolver.Resolver, arg1: com.sun.corba.se.spi.resolver.Resolver)
+                            public resolve(arg0: java.lang.String | string): org.omg.CORBA.Object
+                            public list(): java.util.Set
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

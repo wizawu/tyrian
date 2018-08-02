@@ -2,14 +2,13 @@ declare namespace javax {
     namespace swing {
         namespace plaf {
             namespace metal {
-class MetalPopupMenuSeparatorUI extends javax.swing.plaf.metal.MetalSeparatorUI {
-    public constructor()
-    public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
-    public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-    public getPreferredSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
-    public static class: java.lang.Class<any>
-}
-
+                class MetalPopupMenuSeparatorUI extends javax.swing.plaf.metal.MetalSeparatorUI {
+                    public constructor()
+                    public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
+                    public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public getPreferredSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
+                    public static class: java.lang.Class<any>
+                }
             }
         }
     }

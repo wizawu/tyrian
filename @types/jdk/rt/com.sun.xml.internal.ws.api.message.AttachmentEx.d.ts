@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace message {
-interface AttachmentEx extends com.sun.xml.internal.ws.api.message.Attachment {
-    getMimeHeaders(): java.util.Iterator<com.sun.xml.internal.ws.api.message.AttachmentEx$MimeHeader>
-}
-
+                            interface AttachmentEx extends com.sun.xml.internal.ws.api.message.Attachment {
+                                getMimeHeaders(): java.util.Iterator<com.sun.xml.internal.ws.api.message.AttachmentEx$MimeHeader>
+                            }
                         }
                     }
                 }

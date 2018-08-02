@@ -6,10 +6,9 @@ declare namespace com {
                     namespace transport {
                         namespace http {
                             namespace server {
-class ServerMgr {
-    public static class: java.lang.Class<any>
-}
-
+                                class ServerMgr {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

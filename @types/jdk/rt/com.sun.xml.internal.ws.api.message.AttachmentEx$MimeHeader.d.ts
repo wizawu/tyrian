@@ -5,11 +5,10 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace message {
-interface AttachmentEx$MimeHeader {
-    getName(): string
-    getValue(): string
-}
-
+                            interface AttachmentEx$MimeHeader {
+                                getName(): string
+                                getValue(): string
+                            }
                         }
                     }
                 }

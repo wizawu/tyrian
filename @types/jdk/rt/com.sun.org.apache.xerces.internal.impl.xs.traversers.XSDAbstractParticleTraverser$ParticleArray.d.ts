@@ -7,11 +7,10 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 namespace traversers {
-class XSDAbstractParticleTraverser$ParticleArray {
-    protected constructor()
-    public static class: java.lang.Class<any>
-}
-
+                                    class XSDAbstractParticleTraverser$ParticleArray {
+                                        protected constructor()
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

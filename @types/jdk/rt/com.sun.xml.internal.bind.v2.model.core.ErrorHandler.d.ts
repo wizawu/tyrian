@@ -6,14 +6,12 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace core {
-interface ErrorHandler {
-    error(arg0: com.sun.xml.internal.bind.v2.runtime.IllegalAnnotationException): void
-}
-
-interface ErrorHandler$$Lambda {
-    (arg0: com.sun.xml.internal.bind.v2.runtime.IllegalAnnotationException): void
-}
-
+                                interface ErrorHandler {
+                                    error(arg0: com.sun.xml.internal.bind.v2.runtime.IllegalAnnotationException): void
+                                }
+                                interface ErrorHandler$$Lambda {
+                                    (arg0: com.sun.xml.internal.bind.v2.runtime.IllegalAnnotationException): void
+                                }
                             }
                         }
                     }

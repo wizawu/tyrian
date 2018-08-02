@@ -6,10 +6,9 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace compiler {
-abstract class RelativePathPattern extends com.sun.org.apache.xalan.internal.xsltc.compiler.LocationPathPattern {
-    public static class: java.lang.Class<any>
-}
-
+                                abstract class RelativePathPattern extends com.sun.org.apache.xalan.internal.xsltc.compiler.LocationPathPattern {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

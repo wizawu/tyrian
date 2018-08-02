@@ -5,14 +5,12 @@ declare namespace com {
                 namespace ws {
                     namespace transport {
                         namespace http {
-interface HttpAdapter$CompletionCallback {
-    onCompletion(): void
-}
-
-interface HttpAdapter$CompletionCallback$$Lambda {
-    (): void
-}
-
+                            interface HttpAdapter$CompletionCallback {
+                                onCompletion(): void
+                            }
+                            interface HttpAdapter$CompletionCallback$$Lambda {
+                                (): void
+                            }
                         }
                     }
                 }

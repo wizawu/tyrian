@@ -3,10 +3,9 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 namespace options {
-class Options$ParsedArg {
-    public static class: java.lang.Class<any>
-}
-
+                    class Options$ParsedArg {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

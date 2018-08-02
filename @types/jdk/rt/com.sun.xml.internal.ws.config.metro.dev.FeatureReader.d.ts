@@ -6,11 +6,10 @@ declare namespace com {
                     namespace config {
                         namespace metro {
                             namespace dev {
-interface FeatureReader<T extends javax.xml.ws.WebServiceFeature> {
-    ENABLED_ATTRIBUTE_NAME: javax.xml.namespace.QName
-    parse(arg0: javax.xml.stream.XMLEventReader): T
-}
-
+                                interface FeatureReader<T extends javax.xml.ws.WebServiceFeature> {
+                                    ENABLED_ATTRIBUTE_NAME: javax.xml.namespace.QName
+                                    parse(arg0: javax.xml.stream.XMLEventReader): T
+                                }
                             }
                         }
                     }

@@ -6,9 +6,8 @@ declare namespace com {
                     namespace internal {
                         namespace security {
                             namespace encryption {
-interface EncryptedData extends com.sun.org.apache.xml.internal.security.encryption.EncryptedType {
-}
-
+                                interface EncryptedData extends com.sun.org.apache.xml.internal.security.encryption.EncryptedType {
+                                }
                             }
                         }
                     }

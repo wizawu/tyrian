@@ -3,10 +3,9 @@ declare namespace com {
         namespace tools {
             namespace attach {
                 namespace target {
-class CommonDirectory$syncObject {
-    public static class: java.lang.Class<any>
-}
-
+                    class CommonDirectory$syncObject {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

@@ -1,9 +1,8 @@
 declare namespace javax {
     namespace xml {
         namespace bind {
-interface PrintConversionEvent extends javax.xml.bind.ValidationEvent {
-}
-
+            interface PrintConversionEvent extends javax.xml.bind.ValidationEvent {
+            }
         }
     }
 }

@@ -6,12 +6,11 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace core {
-interface NonElement<T, C> extends com.sun.xml.internal.bind.v2.model.core.TypeInfo<T, C> {
-    ANYTYPE_NAME: javax.xml.namespace.QName
-    getTypeName(): javax.xml.namespace.QName
-    isSimpleType(): boolean
-}
-
+                                interface NonElement<T, C> extends com.sun.xml.internal.bind.v2.model.core.TypeInfo<T, C> {
+                                    ANYTYPE_NAME: javax.xml.namespace.QName
+                                    getTypeName(): javax.xml.namespace.QName
+                                    isSimpleType(): boolean
+                                }
                             }
                         }
                     }

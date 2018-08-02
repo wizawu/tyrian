@@ -4,10 +4,9 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace util {
-class JDKClassLoader {
-    public static class: java.lang.Class<any>
-}
-
+                        class JDKClassLoader {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

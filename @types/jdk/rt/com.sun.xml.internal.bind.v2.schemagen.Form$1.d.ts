@@ -5,10 +5,9 @@ declare namespace com {
                 namespace bind {
                     namespace v2 {
                         namespace schemagen {
-class Form$1 extends com.sun.xml.internal.bind.v2.schemagen.Form {
-    public static class: java.lang.Class<any>
-}
-
+                            class Form$1 extends com.sun.xml.internal.bind.v2.schemagen.Form {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

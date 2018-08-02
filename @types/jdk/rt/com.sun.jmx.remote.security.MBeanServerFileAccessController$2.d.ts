@@ -3,10 +3,9 @@ declare namespace com {
         namespace jmx {
             namespace remote {
                 namespace security {
-class MBeanServerFileAccessController$2 {
-    public static class: java.lang.Class<any>
-}
-
+                    class MBeanServerFileAccessController$2 {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

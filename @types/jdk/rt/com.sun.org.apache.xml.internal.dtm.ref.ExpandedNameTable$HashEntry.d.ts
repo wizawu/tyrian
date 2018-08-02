@@ -6,11 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace dtm {
                             namespace ref {
-class ExpandedNameTable$HashEntry {
-    protected constructor(arg0: com.sun.org.apache.xml.internal.dtm.ref.ExtendedType, arg1: int, arg2: int, arg3: com.sun.org.apache.xml.internal.dtm.ref.ExpandedNameTable$HashEntry)
-    public static class: java.lang.Class<any>
-}
-
+                                class ExpandedNameTable$HashEntry {
+                                    protected constructor(arg0: com.sun.org.apache.xml.internal.dtm.ref.ExtendedType, arg1: int, arg2: int, arg3: com.sun.org.apache.xml.internal.dtm.ref.ExpandedNameTable$HashEntry)
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

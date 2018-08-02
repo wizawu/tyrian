@@ -5,14 +5,13 @@ declare namespace com {
                 namespace spi {
                     namespace presentation {
                         namespace rmi {
-interface PresentationManager$ClassData {
-    getMyClass(): java.lang.Class
-    getIDLNameTranslator(): com.sun.corba.se.spi.presentation.rmi.IDLNameTranslator
-    getTypeIds(): java.lang.String[]
-    getInvocationHandlerFactory(): com.sun.corba.se.spi.orbutil.proxy.InvocationHandlerFactory
-    getDictionary(): java.util.Map
-}
-
+                            interface PresentationManager$ClassData {
+                                getMyClass(): java.lang.Class
+                                getIDLNameTranslator(): com.sun.corba.se.spi.presentation.rmi.IDLNameTranslator
+                                getTypeIds(): java.lang.String[]
+                                getInvocationHandlerFactory(): com.sun.corba.se.spi.orbutil.proxy.InvocationHandlerFactory
+                                getDictionary(): java.util.Map
+                            }
                         }
                     }
                 }

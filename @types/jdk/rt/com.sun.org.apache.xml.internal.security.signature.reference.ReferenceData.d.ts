@@ -7,9 +7,8 @@ declare namespace com {
                         namespace security {
                             namespace signature {
                                 namespace reference {
-interface ReferenceData {
-}
-
+                                    interface ReferenceData {
+                                    }
                                 }
                             }
                         }

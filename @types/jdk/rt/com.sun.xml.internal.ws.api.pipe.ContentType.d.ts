@@ -5,9 +5,8 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace pipe {
-interface ContentType extends com.oracle.webservices.internal.api.message.ContentType {
-}
-
+                            interface ContentType extends com.oracle.webservices.internal.api.message.ContentType {
+                            }
                         }
                     }
                 }

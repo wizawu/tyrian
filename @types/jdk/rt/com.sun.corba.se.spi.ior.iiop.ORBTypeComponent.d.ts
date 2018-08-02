@@ -5,10 +5,9 @@ declare namespace com {
                 namespace spi {
                     namespace ior {
                         namespace iiop {
-interface ORBTypeComponent extends com.sun.corba.se.spi.ior.TaggedComponent {
-    getORBType(): int
-}
-
+                            interface ORBTypeComponent extends com.sun.corba.se.spi.ior.TaggedComponent {
+                                getORBType(): int
+                            }
                         }
                     }
                 }

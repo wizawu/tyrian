@@ -4,10 +4,9 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace io {
-class OutputStreamHook$1 {
-    public static class: java.lang.Class<any>
-}
-
+                        class OutputStreamHook$1 {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

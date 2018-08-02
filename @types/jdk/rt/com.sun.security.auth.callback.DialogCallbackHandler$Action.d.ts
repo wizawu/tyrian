@@ -3,14 +3,12 @@ declare namespace com {
         namespace security {
             namespace auth {
                 namespace callback {
-interface DialogCallbackHandler$Action {
-    perform(): void
-}
-
-interface DialogCallbackHandler$Action$$Lambda {
-    (): void
-}
-
+                    interface DialogCallbackHandler$Action {
+                        perform(): void
+                    }
+                    interface DialogCallbackHandler$Action$$Lambda {
+                        (): void
+                    }
                 }
             }
         }

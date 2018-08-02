@@ -4,11 +4,10 @@ declare namespace com {
             namespace apache {
                 namespace xpath {
                     namespace internal {
-interface ExpressionOwner {
-    getExpression(): com.sun.org.apache.xpath.internal.Expression
-    setExpression(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda): void
-}
-
+                        interface ExpressionOwner {
+                            getExpression(): com.sun.org.apache.xpath.internal.Expression
+                            setExpression(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda): void
+                        }
                     }
                 }
             }

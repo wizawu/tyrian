@@ -6,12 +6,11 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace core {
-interface EnumConstant<T, C> {
-    getEnclosingClass(): com.sun.xml.internal.bind.v2.model.core.EnumLeafInfo<T, C>
-    getLexicalValue(): string
-    getName(): string
-}
-
+                                interface EnumConstant<T, C> {
+                                    getEnclosingClass(): com.sun.xml.internal.bind.v2.model.core.EnumLeafInfo<T, C>
+                                    getLexicalValue(): string
+                                    getName(): string
+                                }
                             }
                         }
                     }

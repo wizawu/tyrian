@@ -5,12 +5,11 @@ declare namespace com {
                 namespace xpath {
                     namespace internal {
                         namespace compiler {
-class FuncLoader {
-    public getName(): string
-    public constructor(arg0: java.lang.String | string, arg1: int)
-    public static class: java.lang.Class<any>
-}
-
+                            class FuncLoader {
+                                public getName(): string
+                                public constructor(arg0: java.lang.String | string, arg1: int)
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

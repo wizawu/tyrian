@@ -5,12 +5,11 @@ declare namespace com {
                 namespace ws {
                     namespace transport {
                         namespace http {
-class HttpAdapterList$PortInfo {
-    public equals(arg0: java.lang.Object): boolean
-    public hashCode(): int
-    public static class: java.lang.Class<any>
-}
-
+                            class HttpAdapterList$PortInfo {
+                                public equals(arg0: java.lang.Object): boolean
+                                public hashCode(): int
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

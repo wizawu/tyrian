@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace encoding {
-class HeaderTokenizer {
-    public static class: java.lang.Class<any>
-}
-
+                        class HeaderTokenizer {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

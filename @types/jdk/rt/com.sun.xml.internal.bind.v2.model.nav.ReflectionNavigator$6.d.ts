@@ -6,15 +6,13 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace nav {
-class ReflectionNavigator$6 implements com.sun.xml.internal.bind.v2.runtime.Location {
-    public toString(): string
-    public static class: java.lang.Class<any>
-}
-
-class ReflectionNavigator$6$$Lambda implements com.sun.xml.internal.bind.v2.runtime.Location {
-    public (): string
-}
-
+                                class ReflectionNavigator$6 implements com.sun.xml.internal.bind.v2.runtime.Location {
+                                    public toString(): string
+                                    public static class: java.lang.Class<any>
+                                }
+                                class ReflectionNavigator$6$$Lambda implements com.sun.xml.internal.bind.v2.runtime.Location {
+                                    public (): string
+                                }
                             }
                         }
                     }

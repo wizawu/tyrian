@@ -5,14 +5,13 @@ declare namespace com {
                 namespace bcel {
                     namespace internal {
                         namespace classfile {
-class ClassParser {
-    public constructor(arg0: java.io.InputStream, arg1: java.lang.String | string)
-    public constructor(arg0: java.lang.String | string)
-    public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
-    public parse(): com.sun.org.apache.bcel.internal.classfile.JavaClass
-    public static class: java.lang.Class<any>
-}
-
+                            class ClassParser {
+                                public constructor(arg0: java.io.InputStream, arg1: java.lang.String | string)
+                                public constructor(arg0: java.lang.String | string)
+                                public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
+                                public parse(): com.sun.org.apache.bcel.internal.classfile.JavaClass
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

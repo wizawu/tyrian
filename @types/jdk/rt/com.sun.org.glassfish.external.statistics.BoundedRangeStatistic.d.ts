@@ -4,9 +4,8 @@ declare namespace com {
             namespace glassfish {
                 namespace external {
                     namespace statistics {
-interface BoundedRangeStatistic extends com.sun.org.glassfish.external.statistics.BoundaryStatistic , com.sun.org.glassfish.external.statistics.RangeStatistic {
-}
-
+                        interface BoundedRangeStatistic extends com.sun.org.glassfish.external.statistics.BoundaryStatistic , com.sun.org.glassfish.external.statistics.RangeStatistic {
+                        }
                     }
                 }
             }

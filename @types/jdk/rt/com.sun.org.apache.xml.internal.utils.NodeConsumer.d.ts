@@ -5,14 +5,12 @@ declare namespace com {
                 namespace xml {
                     namespace internal {
                         namespace utils {
-interface NodeConsumer {
-    setOriginatingNode(arg0: org.w3c.dom.Node): void
-}
-
-interface NodeConsumer$$Lambda {
-    (arg0: org.w3c.dom.Node): void
-}
-
+                            interface NodeConsumer {
+                                setOriginatingNode(arg0: org.w3c.dom.Node): void
+                            }
+                            interface NodeConsumer$$Lambda {
+                                (arg0: org.w3c.dom.Node): void
+                            }
                         }
                     }
                 }

@@ -7,10 +7,9 @@ declare namespace com {
                         namespace impl {
                             namespace xpath {
                                 namespace regex {
-class Op$StringOp extends com.sun.org.apache.xerces.internal.impl.xpath.regex.Op {
-    public static class: java.lang.Class<any>
-}
-
+                                    class Op$StringOp extends com.sun.org.apache.xerces.internal.impl.xpath.regex.Op {
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

@@ -7,11 +7,10 @@ declare namespace com {
                         namespace security {
                             namespace c14n {
                                 namespace implementations {
-class NameSpaceSymbEntry implements java.lang.Cloneable {
-    public clone(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                                    class NameSpaceSymbEntry implements java.lang.Cloneable {
+                                        public clone(): java.lang.Object
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

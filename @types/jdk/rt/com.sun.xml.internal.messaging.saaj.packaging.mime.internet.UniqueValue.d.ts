@@ -7,11 +7,10 @@ declare namespace com {
                         namespace packaging {
                             namespace mime {
                                 namespace internet {
-class UniqueValue {
-    public static getUniqueBoundaryValue(): string
-    public static class: java.lang.Class<any>
-}
-
+                                    class UniqueValue {
+                                        public static getUniqueBoundaryValue(): string
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

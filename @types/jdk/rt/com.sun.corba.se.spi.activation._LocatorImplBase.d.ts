@@ -4,17 +4,15 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace activation {
-abstract class _LocatorImplBase extends org.omg.CORBA.portable.ObjectImpl implements com.sun.corba.se.spi.activation.Locator , org.omg.CORBA.portable.InvokeHandler {
-    public constructor()
-    public _invoke(arg0: java.lang.String | string, arg1: org.omg.CORBA.portable.InputStream, arg2: org.omg.CORBA.portable.ResponseHandler): org.omg.CORBA.portable.OutputStream
-    public _ids(): java.lang.String[]
-    public static class: java.lang.Class<any>
-}
-
-abstract class _LocatorImplBase$$Lambda extends org.omg.CORBA.portable.ObjectImpl implements com.sun.corba.se.spi.activation.Locator , org.omg.CORBA.portable.InvokeHandler {
-    public constructor()
-}
-
+                        abstract class _LocatorImplBase extends org.omg.CORBA.portable.ObjectImpl implements com.sun.corba.se.spi.activation.Locator , org.omg.CORBA.portable.InvokeHandler {
+                            public constructor()
+                            public _invoke(arg0: java.lang.String | string, arg1: org.omg.CORBA.portable.InputStream, arg2: org.omg.CORBA.portable.ResponseHandler): org.omg.CORBA.portable.OutputStream
+                            public _ids(): java.lang.String[]
+                            public static class: java.lang.Class<any>
+                        }
+                        abstract class _LocatorImplBase$$Lambda extends org.omg.CORBA.portable.ObjectImpl implements com.sun.corba.se.spi.activation.Locator , org.omg.CORBA.portable.InvokeHandler {
+                            public constructor()
+                        }
                     }
                 }
             }

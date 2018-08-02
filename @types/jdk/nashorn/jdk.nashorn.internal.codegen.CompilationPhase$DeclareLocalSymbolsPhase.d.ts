@@ -2,11 +2,10 @@ declare namespace jdk {
     namespace nashorn {
         namespace internal {
             namespace codegen {
-class CompilationPhase$DeclareLocalSymbolsPhase extends jdk.nashorn.internal.codegen.CompilationPhase {
-    public toString(): string
-    public static class: java.lang.Class<any>
-}
-
+                class CompilationPhase$DeclareLocalSymbolsPhase extends jdk.nashorn.internal.codegen.CompilationPhase {
+                    public toString(): string
+                    public static class: java.lang.Class<any>
+                }
             }
         }
     }

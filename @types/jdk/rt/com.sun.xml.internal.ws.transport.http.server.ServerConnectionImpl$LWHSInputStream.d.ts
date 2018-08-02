@@ -6,11 +6,10 @@ declare namespace com {
                     namespace transport {
                         namespace http {
                             namespace server {
-class ServerConnectionImpl$LWHSInputStream extends java.io.FilterInputStream {
-    public close(): void
-    public static class: java.lang.Class<any>
-}
-
+                                class ServerConnectionImpl$LWHSInputStream extends java.io.FilterInputStream {
+                                    public close(): void
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

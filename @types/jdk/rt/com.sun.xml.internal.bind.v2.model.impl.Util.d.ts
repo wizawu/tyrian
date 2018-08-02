@@ -6,10 +6,9 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace impl {
-class Util {
-    public static class: java.lang.Class<any>
-}
-
+                                class Util {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

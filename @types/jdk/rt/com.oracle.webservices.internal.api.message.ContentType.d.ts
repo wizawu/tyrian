@@ -4,12 +4,11 @@ declare namespace com {
             namespace internal {
                 namespace api {
                     namespace message {
-interface ContentType {
-    getContentType(): string
-    getSOAPActionHeader(): string
-    getAcceptHeader(): string
-}
-
+                        interface ContentType {
+                            getContentType(): string
+                            getSOAPActionHeader(): string
+                            getAcceptHeader(): string
+                        }
                     }
                 }
             }

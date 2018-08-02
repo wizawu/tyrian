@@ -5,10 +5,9 @@ declare namespace com {
                 namespace xpath {
                     namespace internal {
                         namespace objects {
-class EqualComparator extends com.sun.org.apache.xpath.internal.objects.Comparator {
-    public static class: java.lang.Class<any>
-}
-
+                            class EqualComparator extends com.sun.org.apache.xpath.internal.objects.Comparator {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

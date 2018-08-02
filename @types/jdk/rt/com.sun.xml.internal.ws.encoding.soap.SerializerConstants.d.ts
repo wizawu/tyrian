@@ -5,19 +5,18 @@ declare namespace com {
                 namespace ws {
                     namespace encoding {
                         namespace soap {
-interface SerializerConstants {
-    ENCODE_TYPE: boolean
-    DONT_ENCODE_TYPE: boolean
-    SERIALIZE_AS_REF: boolean
-    DONT_SERIALIZE_AS_REF: boolean
-    REFERENCEABLE: boolean
-    NOT_REFERENCEABLE: boolean
-    NULLABLE: boolean
-    NOT_NULLABLE: boolean
-    REFERENCED_INSTANCE: boolean
-    UNREFERENCED_INSTANCE: boolean
-}
-
+                            interface SerializerConstants {
+                                ENCODE_TYPE: boolean
+                                DONT_ENCODE_TYPE: boolean
+                                SERIALIZE_AS_REF: boolean
+                                DONT_SERIALIZE_AS_REF: boolean
+                                REFERENCEABLE: boolean
+                                NOT_REFERENCEABLE: boolean
+                                NULLABLE: boolean
+                                NOT_NULLABLE: boolean
+                                REFERENCED_INSTANCE: boolean
+                                UNREFERENCED_INSTANCE: boolean
+                            }
                         }
                     }
                 }

@@ -5,10 +5,9 @@ declare namespace com {
                 namespace bcel {
                     namespace internal {
                         namespace util {
-class ByteSequence$ByteArrayStream extends java.io.ByteArrayInputStream {
-    public static class: java.lang.Class<any>
-}
-
+                            class ByteSequence$ByteArrayStream extends java.io.ByteArrayInputStream {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

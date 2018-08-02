@@ -8,14 +8,12 @@ declare namespace com {
                             namespace keys {
                                 namespace content {
                                     namespace keyvalues {
-interface KeyValueContent {
-    getPublicKey(): java.security.PublicKey
-}
-
-interface KeyValueContent$$Lambda {
-    (): java.security.PublicKey
-}
-
+                                        interface KeyValueContent {
+                                            getPublicKey(): java.security.PublicKey
+                                        }
+                                        interface KeyValueContent$$Lambda {
+                                            (): java.security.PublicKey
+                                        }
                                     }
                                 }
                             }

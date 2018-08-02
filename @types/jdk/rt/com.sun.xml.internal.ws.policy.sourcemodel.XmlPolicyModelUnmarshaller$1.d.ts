@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace policy {
                         namespace sourcemodel {
-class XmlPolicyModelUnmarshaller$1 {
-    public static class: java.lang.Class<any>
-}
-
+                            class XmlPolicyModelUnmarshaller$1 {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

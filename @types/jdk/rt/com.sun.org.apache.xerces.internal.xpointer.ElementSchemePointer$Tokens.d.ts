@@ -5,10 +5,9 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace xpointer {
-class ElementSchemePointer$Tokens {
-    public static class: java.lang.Class<any>
-}
-
+                            class ElementSchemePointer$Tokens {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

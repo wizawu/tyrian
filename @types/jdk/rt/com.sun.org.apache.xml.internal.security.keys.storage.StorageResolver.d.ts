@@ -7,18 +7,17 @@ declare namespace com {
                         namespace security {
                             namespace keys {
                                 namespace storage {
-class StorageResolver {
-    public constructor()
-    public constructor(arg0: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi)
-    public add(arg0: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi): void
-    public constructor(arg0: java.security.KeyStore)
-    public add(arg0: java.security.KeyStore): void
-    public constructor(arg0: java.security.cert.X509Certificate)
-    public add(arg0: java.security.cert.X509Certificate): void
-    public getIterator(): java.util.Iterator<java.security.cert.Certificate>
-    public static class: java.lang.Class<any>
-}
-
+                                    class StorageResolver {
+                                        public constructor()
+                                        public constructor(arg0: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi)
+                                        public add(arg0: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi): void
+                                        public constructor(arg0: java.security.KeyStore)
+                                        public add(arg0: java.security.KeyStore): void
+                                        public constructor(arg0: java.security.cert.X509Certificate)
+                                        public add(arg0: java.security.cert.X509Certificate): void
+                                        public getIterator(): java.util.Iterator<java.security.cert.Certificate>
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

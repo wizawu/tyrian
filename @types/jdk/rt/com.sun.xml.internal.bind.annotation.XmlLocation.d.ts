@@ -4,9 +4,8 @@ declare namespace com {
             namespace internal {
                 namespace bind {
                     namespace annotation {
-interface XmlLocation extends java.lang.annotation.Annotation {
-}
-
+                        interface XmlLocation extends java.lang.annotation.Annotation {
+                        }
                     }
                 }
             }

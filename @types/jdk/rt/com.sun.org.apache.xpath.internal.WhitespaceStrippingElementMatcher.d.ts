@@ -4,11 +4,10 @@ declare namespace com {
             namespace apache {
                 namespace xpath {
                     namespace internal {
-interface WhitespaceStrippingElementMatcher {
-    shouldStripWhiteSpace(arg0: com.sun.org.apache.xpath.internal.XPathContext, arg1: org.w3c.dom.Element): boolean
-    canStripWhiteSpace(): boolean
-}
-
+                        interface WhitespaceStrippingElementMatcher {
+                            shouldStripWhiteSpace(arg0: com.sun.org.apache.xpath.internal.XPathContext, arg1: org.w3c.dom.Element): boolean
+                            canStripWhiteSpace(): boolean
+                        }
                     }
                 }
             }

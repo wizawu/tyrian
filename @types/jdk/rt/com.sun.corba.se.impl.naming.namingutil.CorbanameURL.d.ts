@@ -5,12 +5,11 @@ declare namespace com {
                 namespace impl {
                     namespace naming {
                         namespace namingutil {
-class CorbanameURL extends com.sun.corba.se.impl.naming.namingutil.INSURLBase {
-    public constructor(arg0: java.lang.String | string)
-    public isCorbanameURL(): boolean
-    public static class: java.lang.Class<any>
-}
-
+                            class CorbanameURL extends com.sun.corba.se.impl.naming.namingutil.INSURLBase {
+                                public constructor(arg0: java.lang.String | string)
+                                public isCorbanameURL(): boolean
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

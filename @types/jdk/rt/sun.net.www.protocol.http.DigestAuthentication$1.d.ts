@@ -3,12 +3,11 @@ declare namespace sun {
         namespace www {
             namespace protocol {
                 namespace http {
-class DigestAuthentication$1 implements java.security.PrivilegedAction<java.lang.Boolean> {
-    public run(): boolean
-    public run(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                    class DigestAuthentication$1 implements java.security.PrivilegedAction<java.lang.Boolean> {
+                        public run(): boolean
+                        public run(): java.lang.Object
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

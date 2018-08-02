@@ -7,12 +7,11 @@ declare namespace com {
                         namespace impl {
                             namespace xpath {
                                 namespace regex {
-class ParseException extends java.lang.RuntimeException {
-    public constructor(arg0: java.lang.String | string, arg1: int)
-    public getLocation(): int
-    public static class: java.lang.Class<any>
-}
-
+                                    class ParseException extends java.lang.RuntimeException {
+                                        public constructor(arg0: java.lang.String | string, arg1: int)
+                                        public getLocation(): int
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

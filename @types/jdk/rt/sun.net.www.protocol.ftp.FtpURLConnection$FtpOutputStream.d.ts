@@ -3,11 +3,10 @@ declare namespace sun {
         namespace www {
             namespace protocol {
                 namespace ftp {
-class FtpURLConnection$FtpOutputStream extends java.io.FilterOutputStream {
-    public close(): void
-    public static class: java.lang.Class<any>
-}
-
+                    class FtpURLConnection$FtpOutputStream extends java.io.FilterOutputStream {
+                        public close(): void
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

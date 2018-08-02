@@ -7,10 +7,9 @@ declare namespace com {
                         namespace security {
                             namespace c14n {
                                 namespace implementations {
-class Canonicalizer20010315$XmlAttrStack {
-    public static class: java.lang.Class<any>
-}
-
+                                    class Canonicalizer20010315$XmlAttrStack {
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

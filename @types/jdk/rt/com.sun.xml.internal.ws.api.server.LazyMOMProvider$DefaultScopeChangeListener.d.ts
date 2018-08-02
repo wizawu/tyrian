@@ -5,9 +5,8 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace server {
-interface LazyMOMProvider$DefaultScopeChangeListener extends com.sun.xml.internal.ws.api.server.LazyMOMProvider$ScopeChangeListener {
-}
-
+                            interface LazyMOMProvider$DefaultScopeChangeListener extends com.sun.xml.internal.ws.api.server.LazyMOMProvider$ScopeChangeListener {
+                            }
                         }
                     }
                 }

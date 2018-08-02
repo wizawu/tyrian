@@ -4,13 +4,12 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace oa {
-class OADefault {
-    public constructor()
-    public static makePOAFactory(arg0: com.sun.corba.se.spi.orb.ORB): com.sun.corba.se.spi.oa.ObjectAdapterFactory
-    public static makeTOAFactory(arg0: com.sun.corba.se.spi.orb.ORB): com.sun.corba.se.spi.oa.ObjectAdapterFactory
-    public static class: java.lang.Class<any>
-}
-
+                        class OADefault {
+                            public constructor()
+                            public static makePOAFactory(arg0: com.sun.corba.se.spi.orb.ORB): com.sun.corba.se.spi.oa.ObjectAdapterFactory
+                            public static makeTOAFactory(arg0: com.sun.corba.se.spi.orb.ORB): com.sun.corba.se.spi.oa.ObjectAdapterFactory
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

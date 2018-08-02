@@ -4,13 +4,12 @@ declare namespace com {
             namespace se {
                 namespace pept {
                     namespace broker {
-interface Broker {
-    createOrIncrementInvocationInfo(): com.sun.corba.se.pept.protocol.ClientInvocationInfo
-    getInvocationInfo(): com.sun.corba.se.pept.protocol.ClientInvocationInfo
-    releaseOrDecrementInvocationInfo(): void
-    getTransportManager(): com.sun.corba.se.pept.transport.TransportManager
-}
-
+                        interface Broker {
+                            createOrIncrementInvocationInfo(): com.sun.corba.se.pept.protocol.ClientInvocationInfo
+                            getInvocationInfo(): com.sun.corba.se.pept.protocol.ClientInvocationInfo
+                            releaseOrDecrementInvocationInfo(): void
+                            getTransportManager(): com.sun.corba.se.pept.transport.TransportManager
+                        }
                     }
                 }
             }

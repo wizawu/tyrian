@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace client {
-class WSServiceDelegate$5 {
-    public static class: java.lang.Class<any>
-}
-
+                        class WSServiceDelegate$5 {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

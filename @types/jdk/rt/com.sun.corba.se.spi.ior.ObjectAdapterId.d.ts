@@ -4,12 +4,11 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace ior {
-interface ObjectAdapterId extends com.sun.corba.se.spi.ior.Writeable {
-    getNumLevels(): int
-    iterator(): java.util.Iterator
-    getAdapterName(): java.lang.String[]
-}
-
+                        interface ObjectAdapterId extends com.sun.corba.se.spi.ior.Writeable {
+                            getNumLevels(): int
+                            iterator(): java.util.Iterator
+                            getAdapterName(): java.lang.String[]
+                        }
                     }
                 }
             }

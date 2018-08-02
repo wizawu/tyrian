@@ -6,15 +6,13 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace annotation {
-class SecureLoader$3 implements java.security.PrivilegedAction {
-    public run(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
-class SecureLoader$3$$Lambda implements java.security.PrivilegedAction {
-    public (): java.lang.Object
-}
-
+                                class SecureLoader$3 implements java.security.PrivilegedAction {
+                                    public run(): java.lang.Object
+                                    public static class: java.lang.Class<any>
+                                }
+                                class SecureLoader$3$$Lambda implements java.security.PrivilegedAction {
+                                    public (): java.lang.Object
+                                }
                             }
                         }
                     }

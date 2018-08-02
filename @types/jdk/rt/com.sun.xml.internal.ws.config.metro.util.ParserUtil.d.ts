@@ -6,11 +6,10 @@ declare namespace com {
                     namespace config {
                         namespace metro {
                             namespace util {
-class ParserUtil {
-    public static parseBooleanValue(arg0: java.lang.String | string): boolean
-    public static class: java.lang.Class<any>
-}
-
+                                class ParserUtil {
+                                    public static parseBooleanValue(arg0: java.lang.String | string): boolean
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

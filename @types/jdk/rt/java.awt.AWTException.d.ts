@@ -1,9 +1,8 @@
 declare namespace java {
     namespace awt {
-class AWTException extends java.lang.Exception {
-    public constructor(arg0: java.lang.String | string)
-    public static class: java.lang.Class<any>
-}
-
+        class AWTException extends java.lang.Exception {
+            public constructor(arg0: java.lang.String | string)
+            public static class: java.lang.Class<any>
+        }
     }
 }

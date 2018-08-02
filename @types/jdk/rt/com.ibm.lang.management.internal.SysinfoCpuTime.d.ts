@@ -3,10 +3,9 @@ declare namespace com {
         namespace lang {
             namespace management {
                 namespace internal {
-class SysinfoCpuTime {
-    public static class: java.lang.Class<any>
-}
-
+                    class SysinfoCpuTime {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace api {
                     namespace message {
-interface PropertySet$Property extends java.lang.annotation.Annotation {
-    value(): java.lang.String[]
-}
-
+                        interface PropertySet$Property extends java.lang.annotation.Annotation {
+                            value(): java.lang.String[]
+                        }
                     }
                 }
             }

@@ -6,12 +6,11 @@ declare namespace com {
                     namespace v2 {
                         namespace runtime {
                             namespace reflect {
-class Lister$ArrayLister$1 implements com.sun.xml.internal.bind.v2.runtime.reflect.ListIterator<ItemT> {
-    public hasNext(): boolean
-    public next(): ItemT
-    public static class: java.lang.Class<any>
-}
-
+                                class Lister$ArrayLister$1 implements com.sun.xml.internal.bind.v2.runtime.reflect.ListIterator<ItemT> {
+                                    public hasNext(): boolean
+                                    public next(): ItemT
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

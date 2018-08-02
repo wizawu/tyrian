@@ -5,12 +5,11 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace server {
-class Adapter$1 extends com.sun.xml.internal.ws.util.Pool<TK> {
-    protected create(): TK
-    protected create(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                            class Adapter$1 extends com.sun.xml.internal.ws.util.Pool<TK> {
+                                protected create(): TK
+                                protected create(): java.lang.Object
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

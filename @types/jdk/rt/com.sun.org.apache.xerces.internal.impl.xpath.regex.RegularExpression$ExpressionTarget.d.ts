@@ -7,10 +7,9 @@ declare namespace com {
                         namespace impl {
                             namespace xpath {
                                 namespace regex {
-abstract class RegularExpression$ExpressionTarget {
-    public static class: java.lang.Class<any>
-}
-
+                                    abstract class RegularExpression$ExpressionTarget {
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

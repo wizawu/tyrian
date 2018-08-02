@@ -3,11 +3,10 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 namespace linker {
-class BoundCallable {
-    public toString(): string
-    public static class: java.lang.Class<any>
-}
-
+                    class BoundCallable {
+                        public toString(): string
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace policy {
                         namespace jaxws {
-class PolicyMapBuilder {
-    public static class: java.lang.Class<any>
-}
-
+                            class PolicyMapBuilder {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

@@ -3,13 +3,12 @@ declare namespace com {
         namespace istack {
             namespace internal {
                 namespace localization {
-interface Localizable {
-    NOT_LOCALIZABLE: string
-    getKey(): string
-    getArguments(): java.lang.Object[]
-    getResourceBundleName(): string
-}
-
+                    interface Localizable {
+                        NOT_LOCALIZABLE: string
+                        getKey(): string
+                        getArguments(): java.lang.Object[]
+                        getResourceBundleName(): string
+                    }
                 }
             }
         }

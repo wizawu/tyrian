@@ -3,11 +3,10 @@ declare namespace jdk {
         namespace internal {
             namespace ir {
                 namespace debug {
-class NashornClassReader$1 extends jdk.nashorn.internal.ir.debug.NashornClassReader$IndexInfo2 {
-    public toString(): string
-    public static class: java.lang.Class<any>
-}
-
+                    class NashornClassReader$1 extends jdk.nashorn.internal.ir.debug.NashornClassReader$IndexInfo2 {
+                        public toString(): string
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

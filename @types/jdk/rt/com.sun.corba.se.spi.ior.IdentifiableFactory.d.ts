@@ -4,11 +4,10 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace ior {
-interface IdentifiableFactory {
-    getId(): int
-    create(arg0: org.omg.CORBA_2_3.portable.InputStream): com.sun.corba.se.spi.ior.Identifiable
-}
-
+                        interface IdentifiableFactory {
+                            getId(): int
+                            create(arg0: org.omg.CORBA_2_3.portable.InputStream): com.sun.corba.se.spi.ior.Identifiable
+                        }
                     }
                 }
             }

@@ -1,8 +1,7 @@
 declare namespace java {
     namespace net {
-class DefaultInterface {
-    public static class: java.lang.Class<any>
-}
-
+        class DefaultInterface {
+            public static class: java.lang.Class<any>
+        }
     }
 }

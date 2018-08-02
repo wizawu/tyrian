@@ -6,14 +6,12 @@ declare namespace com {
                     namespace api {
                         namespace config {
                             namespace management {
-interface Reconfigurable {
-    reconfigure(): void
-}
-
-interface Reconfigurable$$Lambda {
-    (): void
-}
-
+                                interface Reconfigurable {
+                                    reconfigure(): void
+                                }
+                                interface Reconfigurable$$Lambda {
+                                    (): void
+                                }
                             }
                         }
                     }

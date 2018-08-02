@@ -3,9 +3,8 @@ declare namespace javax {
         namespace crypto {
             namespace dsig {
                 namespace spec {
-interface DigestMethodParameterSpec extends java.security.spec.AlgorithmParameterSpec {
-}
-
+                    interface DigestMethodParameterSpec extends java.security.spec.AlgorithmParameterSpec {
+                    }
                 }
             }
         }

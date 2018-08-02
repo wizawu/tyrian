@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace handler {
-class LogicalMessageImpl$1 {
-    public static class: java.lang.Class<any>
-}
-
+                        class LogicalMessageImpl$1 {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

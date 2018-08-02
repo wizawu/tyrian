@@ -5,12 +5,11 @@ declare namespace com {
                 namespace ws {
                     namespace transport {
                         namespace http {
-interface ResourceLoader {
-    getResource(arg0: java.lang.String | string): java.net.URL
-    getCatalogFile(): java.net.URL
-    getResourcePaths(arg0: java.lang.String | string): java.util.Set<java.lang.String>
-}
-
+                            interface ResourceLoader {
+                                getResource(arg0: java.lang.String | string): java.net.URL
+                                getCatalogFile(): java.net.URL
+                                getResourcePaths(arg0: java.lang.String | string): java.util.Set<java.lang.String>
+                            }
                         }
                     }
                 }

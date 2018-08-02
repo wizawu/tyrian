@@ -4,9 +4,8 @@ declare namespace com {
             namespace internal {
                 namespace txw2 {
                     namespace annotation {
-interface XmlValue extends java.lang.annotation.Annotation {
-}
-
+                        interface XmlValue extends java.lang.annotation.Annotation {
+                        }
                     }
                 }
             }

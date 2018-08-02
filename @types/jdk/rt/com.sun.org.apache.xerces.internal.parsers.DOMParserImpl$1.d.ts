@@ -5,10 +5,9 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace parsers {
-class DOMParserImpl$1 {
-    public static class: java.lang.Class<any>
-}
-
+                            class DOMParserImpl$1 {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

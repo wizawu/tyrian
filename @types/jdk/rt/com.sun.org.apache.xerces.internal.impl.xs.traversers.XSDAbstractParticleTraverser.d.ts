@@ -7,11 +7,10 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 namespace traversers {
-abstract class XSDAbstractParticleTraverser extends com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser {
-    protected hasAllContent(arg0: com.sun.org.apache.xerces.internal.impl.xs.XSParticleDecl): boolean
-    public static class: java.lang.Class<any>
-}
-
+                                    abstract class XSDAbstractParticleTraverser extends com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser {
+                                        protected hasAllContent(arg0: com.sun.org.apache.xerces.internal.impl.xs.XSParticleDecl): boolean
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

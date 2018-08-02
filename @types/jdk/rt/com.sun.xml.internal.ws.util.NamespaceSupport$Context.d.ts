@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace util {
-class NamespaceSupport$Context {
-    public static class: java.lang.Class<any>
-}
-
+                        class NamespaceSupport$Context {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

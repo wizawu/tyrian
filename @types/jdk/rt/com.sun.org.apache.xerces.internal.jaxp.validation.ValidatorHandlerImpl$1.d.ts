@@ -6,10 +6,9 @@ declare namespace com {
                     namespace internal {
                         namespace jaxp {
                             namespace validation {
-class ValidatorHandlerImpl$1 {
-    public static class: java.lang.Class<any>
-}
-
+                                class ValidatorHandlerImpl$1 {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

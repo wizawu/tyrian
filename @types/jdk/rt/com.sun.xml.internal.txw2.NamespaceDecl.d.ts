@@ -3,10 +3,9 @@ declare namespace com {
         namespace xml {
             namespace internal {
                 namespace txw2 {
-class NamespaceDecl {
-    public static class: java.lang.Class<any>
-}
-
+                    class NamespaceDecl {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

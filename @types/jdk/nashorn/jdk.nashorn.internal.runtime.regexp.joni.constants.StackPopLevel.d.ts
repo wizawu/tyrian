@@ -5,12 +5,11 @@ declare namespace jdk {
                 namespace regexp {
                     namespace joni {
                         namespace constants {
-interface StackPopLevel {
-    FREE: int
-    MEM_START: int
-    ALL: int
-}
-
+                            interface StackPopLevel {
+                                FREE: int
+                                MEM_START: int
+                                ALL: int
+                            }
                         }
                     }
                 }

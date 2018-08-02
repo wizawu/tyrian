@@ -6,10 +6,9 @@ declare namespace com {
                     namespace probe {
                         namespace provider {
                             namespace annotations {
-interface ProbeListener extends java.lang.annotation.Annotation {
-    value(): string
-}
-
+                                interface ProbeListener extends java.lang.annotation.Annotation {
+                                    value(): string
+                                }
                             }
                         }
                     }

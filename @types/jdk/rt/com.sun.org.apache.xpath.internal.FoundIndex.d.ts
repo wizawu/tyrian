@@ -4,11 +4,10 @@ declare namespace com {
             namespace apache {
                 namespace xpath {
                     namespace internal {
-class FoundIndex extends java.lang.RuntimeException {
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                        class FoundIndex extends java.lang.RuntimeException {
+                            public constructor()
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

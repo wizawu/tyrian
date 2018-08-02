@@ -4,11 +4,10 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace io {
-class ObjectStreamClass$MethodSignature implements java.util.Comparator {
-    public compare(arg0: java.lang.Object, arg1: java.lang.Object): int
-    public static class: java.lang.Class<any>
-}
-
+                        class ObjectStreamClass$MethodSignature implements java.util.Comparator {
+                            public compare(arg0: java.lang.Object, arg1: java.lang.Object): int
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

@@ -6,10 +6,9 @@ declare namespace com {
                     namespace internal {
                         namespace dtm {
                             namespace ref {
-class IncrementalSAXSource_Filter$StopException extends java.lang.RuntimeException {
-    public static class: java.lang.Class<any>
-}
-
+                                class IncrementalSAXSource_Filter$StopException extends java.lang.RuntimeException {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

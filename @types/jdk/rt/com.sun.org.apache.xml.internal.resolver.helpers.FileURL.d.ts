@@ -6,12 +6,11 @@ declare namespace com {
                     namespace internal {
                         namespace resolver {
                             namespace helpers {
-abstract class FileURL {
-    protected constructor()
-    public static makeURL(arg0: java.lang.String | string): java.net.URL
-    public static class: java.lang.Class<any>
-}
-
+                                abstract class FileURL {
+                                    protected constructor()
+                                    public static makeURL(arg0: java.lang.String | string): java.net.URL
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

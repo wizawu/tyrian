@@ -7,9 +7,8 @@ declare namespace com {
                         namespace security {
                             namespace keys {
                                 namespace content {
-interface KeyInfoContent {
-}
-
+                                    interface KeyInfoContent {
+                                    }
                                 }
                             }
                         }

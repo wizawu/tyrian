@@ -4,13 +4,12 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace util {
-class NoCloseInputStream extends java.io.FilterInputStream {
-    public constructor(arg0: java.io.InputStream)
-    public close(): void
-    public doClose(): void
-    public static class: java.lang.Class<any>
-}
-
+                        class NoCloseInputStream extends java.io.FilterInputStream {
+                            public constructor(arg0: java.io.InputStream)
+                            public close(): void
+                            public doClose(): void
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

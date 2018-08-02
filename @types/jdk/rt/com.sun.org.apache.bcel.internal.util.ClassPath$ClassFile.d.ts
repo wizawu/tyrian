@@ -5,14 +5,13 @@ declare namespace com {
                 namespace bcel {
                     namespace internal {
                         namespace util {
-interface ClassPath$ClassFile {
-    getInputStream(): java.io.InputStream
-    getPath(): string
-    getBase(): string
-    getTime(): long
-    getSize(): long
-}
-
+                            interface ClassPath$ClassFile {
+                                getInputStream(): java.io.InputStream
+                                getPath(): string
+                                getBase(): string
+                                getTime(): long
+                                getSize(): long
+                            }
                         }
                     }
                 }

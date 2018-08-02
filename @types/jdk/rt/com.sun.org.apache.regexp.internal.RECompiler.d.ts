@@ -4,12 +4,11 @@ declare namespace com {
             namespace apache {
                 namespace regexp {
                     namespace internal {
-class RECompiler {
-    public constructor()
-    public compile(arg0: java.lang.String | string): com.sun.org.apache.regexp.internal.REProgram
-    public static class: java.lang.Class<any>
-}
-
+                        class RECompiler {
+                            public constructor()
+                            public compile(arg0: java.lang.String | string): com.sun.org.apache.regexp.internal.REProgram
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

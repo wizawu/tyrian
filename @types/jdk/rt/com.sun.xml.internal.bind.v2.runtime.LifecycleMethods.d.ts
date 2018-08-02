@@ -5,10 +5,9 @@ declare namespace com {
                 namespace bind {
                     namespace v2 {
                         namespace runtime {
-class LifecycleMethods {
-    public static class: java.lang.Class<any>
-}
-
+                            class LifecycleMethods {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

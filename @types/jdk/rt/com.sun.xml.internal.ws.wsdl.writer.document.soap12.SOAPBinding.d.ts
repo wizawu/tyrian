@@ -7,11 +7,10 @@ declare namespace com {
                         namespace writer {
                             namespace document {
                                 namespace soap12 {
-interface SOAPBinding extends com.sun.xml.internal.txw2.TypedXmlWriter {
-    transport(arg0: java.lang.String | string): com.sun.xml.internal.ws.wsdl.writer.document.soap12.SOAPBinding
-    style(arg0: java.lang.String | string): com.sun.xml.internal.ws.wsdl.writer.document.soap12.SOAPBinding
-}
-
+                                    interface SOAPBinding extends com.sun.xml.internal.txw2.TypedXmlWriter {
+                                        transport(arg0: java.lang.String | string): com.sun.xml.internal.ws.wsdl.writer.document.soap12.SOAPBinding
+                                        style(arg0: java.lang.String | string): com.sun.xml.internal.ws.wsdl.writer.document.soap12.SOAPBinding
+                                    }
                                 }
                             }
                         }

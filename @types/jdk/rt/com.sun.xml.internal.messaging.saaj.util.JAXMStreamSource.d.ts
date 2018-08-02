@@ -5,15 +5,14 @@ declare namespace com {
                 namespace messaging {
                     namespace saaj {
                         namespace util {
-class JAXMStreamSource extends javax.xml.transform.stream.StreamSource {
-    public constructor(arg0: java.io.InputStream)
-    public constructor(arg0: java.io.Reader)
-    public getInputStream(): java.io.InputStream
-    public getReader(): java.io.Reader
-    public reset(): void
-    public static class: java.lang.Class<any>
-}
-
+                            class JAXMStreamSource extends javax.xml.transform.stream.StreamSource {
+                                public constructor(arg0: java.io.InputStream)
+                                public constructor(arg0: java.io.Reader)
+                                public getInputStream(): java.io.InputStream
+                                public getReader(): java.io.Reader
+                                public reset(): void
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

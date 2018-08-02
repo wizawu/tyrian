@@ -6,10 +6,9 @@ declare namespace com {
                     namespace v2 {
                         namespace schemagen {
                             namespace xmlschema {
-interface ComplexTypeHost extends com.sun.xml.internal.bind.v2.schemagen.xmlschema.TypeHost , com.sun.xml.internal.txw2.TypedXmlWriter {
-    complexType(): com.sun.xml.internal.bind.v2.schemagen.xmlschema.ComplexType
-}
-
+                                interface ComplexTypeHost extends com.sun.xml.internal.bind.v2.schemagen.xmlschema.TypeHost , com.sun.xml.internal.txw2.TypedXmlWriter {
+                                    complexType(): com.sun.xml.internal.bind.v2.schemagen.xmlschema.ComplexType
+                                }
                             }
                         }
                     }

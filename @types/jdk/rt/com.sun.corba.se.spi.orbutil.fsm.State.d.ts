@@ -5,11 +5,10 @@ declare namespace com {
                 namespace spi {
                     namespace orbutil {
                         namespace fsm {
-interface State {
-    preAction(arg0: com.sun.corba.se.spi.orbutil.fsm.FSM): void
-    postAction(arg0: com.sun.corba.se.spi.orbutil.fsm.FSM): void
-}
-
+                            interface State {
+                                preAction(arg0: com.sun.corba.se.spi.orbutil.fsm.FSM): void
+                                postAction(arg0: com.sun.corba.se.spi.orbutil.fsm.FSM): void
+                            }
                         }
                     }
                 }

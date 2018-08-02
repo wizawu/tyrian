@@ -3,9 +3,8 @@ declare namespace javax {
         namespace crypto {
             namespace dsig {
                 namespace spec {
-interface C14NMethodParameterSpec extends javax.xml.crypto.dsig.spec.TransformParameterSpec {
-}
-
+                    interface C14NMethodParameterSpec extends javax.xml.crypto.dsig.spec.TransformParameterSpec {
+                    }
                 }
             }
         }

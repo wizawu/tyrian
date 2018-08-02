@@ -3,13 +3,12 @@ declare namespace jdk {
         namespace org {
             namespace xml {
                 namespace sax {
-interface Locator {
-    getPublicId(): string
-    getSystemId(): string
-    getLineNumber(): int
-    getColumnNumber(): int
-}
-
+                    interface Locator {
+                        getPublicId(): string
+                        getSystemId(): string
+                        getLineNumber(): int
+                        getColumnNumber(): int
+                    }
                 }
             }
         }

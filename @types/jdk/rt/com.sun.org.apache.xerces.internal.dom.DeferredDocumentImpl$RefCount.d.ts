@@ -5,10 +5,9 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace dom {
-class DeferredDocumentImpl$RefCount {
-    public static class: java.lang.Class<any>
-}
-
+                            class DeferredDocumentImpl$RefCount {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

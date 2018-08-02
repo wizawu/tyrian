@@ -4,14 +4,13 @@ declare namespace com {
             namespace internal {
                 namespace fastinfoset {
                     namespace sax {
-class Features {
-    public static NAMESPACES_FEATURE: string
-    public static NAMESPACE_PREFIXES_FEATURE: string
-    public static STRING_INTERNING_FEATURE: string
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                        class Features {
+                            public static NAMESPACES_FEATURE: string
+                            public static NAMESPACE_PREFIXES_FEATURE: string
+                            public static STRING_INTERNING_FEATURE: string
+                            public constructor()
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

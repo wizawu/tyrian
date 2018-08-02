@@ -4,11 +4,10 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace orb {
-abstract class PropertyCallback {
-    public get(arg0: java.lang.String | string): string
-    public static class: java.lang.Class<any>
-}
-
+                        abstract class PropertyCallback {
+                            public get(arg0: java.lang.String | string): string
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

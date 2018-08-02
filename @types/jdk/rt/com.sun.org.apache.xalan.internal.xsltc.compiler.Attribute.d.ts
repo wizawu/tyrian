@@ -6,12 +6,11 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace compiler {
-class Attribute extends com.sun.org.apache.xalan.internal.xsltc.compiler.Instruction {
-    public display(arg0: int): void
-    public parseContents(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Parser): void
-    public static class: java.lang.Class<any>
-}
-
+                                class Attribute extends com.sun.org.apache.xalan.internal.xsltc.compiler.Instruction {
+                                    public display(arg0: int): void
+                                    public parseContents(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Parser): void
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

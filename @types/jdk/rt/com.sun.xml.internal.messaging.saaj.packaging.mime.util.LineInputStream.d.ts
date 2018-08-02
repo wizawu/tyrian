@@ -7,12 +7,11 @@ declare namespace com {
                         namespace packaging {
                             namespace mime {
                                 namespace util {
-class LineInputStream extends java.io.FilterInputStream {
-    public constructor(arg0: java.io.InputStream)
-    public readLine(): string
-    public static class: java.lang.Class<any>
-}
-
+                                    class LineInputStream extends java.io.FilterInputStream {
+                                        public constructor(arg0: java.io.InputStream)
+                                        public readLine(): string
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

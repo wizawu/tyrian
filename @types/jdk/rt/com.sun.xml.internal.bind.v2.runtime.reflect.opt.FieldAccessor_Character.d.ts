@@ -7,13 +7,12 @@ declare namespace com {
                         namespace runtime {
                             namespace reflect {
                                 namespace opt {
-class FieldAccessor_Character extends com.sun.xml.internal.bind.v2.runtime.reflect.Accessor {
-    public constructor()
-    public get(arg0: java.lang.Object): java.lang.Object
-    public set(arg0: java.lang.Object, arg1: java.lang.Object): void
-    public static class: java.lang.Class<any>
-}
-
+                                    class FieldAccessor_Character extends com.sun.xml.internal.bind.v2.runtime.reflect.Accessor {
+                                        public constructor()
+                                        public get(arg0: java.lang.Object): java.lang.Object
+                                        public set(arg0: java.lang.Object, arg1: java.lang.Object): void
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

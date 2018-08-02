@@ -6,11 +6,10 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace core {
-interface RegistryInfo<T, C> {
-    getReferences(): java.util.Set<com.sun.xml.internal.bind.v2.model.core.TypeInfo<T, C>>
-    getClazz(): C
-}
-
+                                interface RegistryInfo<T, C> {
+                                    getReferences(): java.util.Set<com.sun.xml.internal.bind.v2.model.core.TypeInfo<T, C>>
+                                    getClazz(): C
+                                }
                             }
                         }
                     }

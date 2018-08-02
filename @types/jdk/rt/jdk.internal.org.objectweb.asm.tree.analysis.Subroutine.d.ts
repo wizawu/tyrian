@@ -5,12 +5,11 @@ declare namespace jdk {
                 namespace asm {
                     namespace tree {
                         namespace analysis {
-class Subroutine {
-    public copy(): jdk.internal.org.objectweb.asm.tree.analysis.Subroutine
-    public merge(arg0: jdk.internal.org.objectweb.asm.tree.analysis.Subroutine): boolean
-    public static class: java.lang.Class<any>
-}
-
+                            class Subroutine {
+                                public copy(): jdk.internal.org.objectweb.asm.tree.analysis.Subroutine
+                                public merge(arg0: jdk.internal.org.objectweb.asm.tree.analysis.Subroutine): boolean
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

@@ -4,15 +4,14 @@ declare namespace jdk {
             namespace runtime {
                 namespace regexp {
                     namespace joni {
-class Region {
-    public numRegs: int
-    public beg: int[]
-    public end: int[]
-    public constructor(arg0: int)
-    public toString(): string
-    public static class: java.lang.Class<any>
-}
-
+                        class Region {
+                            public numRegs: int
+                            public beg: int[]
+                            public end: int[]
+                            public constructor(arg0: int)
+                            public toString(): string
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

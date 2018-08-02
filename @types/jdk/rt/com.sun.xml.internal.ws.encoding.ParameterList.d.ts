@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace encoding {
-class ParameterList {
-    public static class: java.lang.Class<any>
-}
-
+                        class ParameterList {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

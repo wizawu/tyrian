@@ -3,11 +3,10 @@ declare namespace com {
         namespace xml {
             namespace internal {
                 namespace stream {
-interface XMLBufferListener {
-    refresh(): void
-    refresh(arg0: int): void
-}
-
+                    interface XMLBufferListener {
+                        refresh(): void
+                        refresh(arg0: int): void
+                    }
                 }
             }
         }

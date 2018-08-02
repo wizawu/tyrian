@@ -5,12 +5,11 @@ declare namespace com {
                 namespace bcel {
                     namespace internal {
                         namespace util {
-class ByteSequence extends java.io.DataInputStream {
-    public constructor(arg0: byte[])
-    public getIndex(): int
-    public static class: java.lang.Class<any>
-}
-
+                            class ByteSequence extends java.io.DataInputStream {
+                                public constructor(arg0: byte[])
+                                public getIndex(): int
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

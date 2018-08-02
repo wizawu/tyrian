@@ -1,9 +1,8 @@
 declare namespace java {
     namespace awt {
-interface SecondaryLoop {
-    enter(): boolean
-    exit(): boolean
-}
-
+        interface SecondaryLoop {
+            enter(): boolean
+            exit(): boolean
+        }
     }
 }

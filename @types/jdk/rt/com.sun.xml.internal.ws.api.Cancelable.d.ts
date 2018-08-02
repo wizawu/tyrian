@@ -4,14 +4,12 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace api {
-interface Cancelable {
-    cancel(arg0: boolean): void
-}
-
-interface Cancelable$$Lambda {
-    (arg0: boolean): void
-}
-
+                        interface Cancelable {
+                            cancel(arg0: boolean): void
+                        }
+                        interface Cancelable$$Lambda {
+                            (arg0: boolean): void
+                        }
                     }
                 }
             }

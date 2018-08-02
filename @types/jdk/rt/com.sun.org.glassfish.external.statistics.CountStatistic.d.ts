@@ -4,10 +4,9 @@ declare namespace com {
             namespace glassfish {
                 namespace external {
                     namespace statistics {
-interface CountStatistic extends com.sun.org.glassfish.external.statistics.Statistic {
-    getCount(): long
-}
-
+                        interface CountStatistic extends com.sun.org.glassfish.external.statistics.Statistic {
+                            getCount(): long
+                        }
                     }
                 }
             }

@@ -3,10 +3,9 @@ declare namespace com {
         namespace xml {
             namespace internal {
                 namespace ws {
-interface Closeable extends java.io.Closeable {
-    close(): void
-}
-
+                    interface Closeable extends java.io.Closeable {
+                        close(): void
+                    }
                 }
             }
         }

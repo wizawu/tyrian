@@ -4,10 +4,9 @@ declare namespace com {
             namespace swing {
                 namespace plaf {
                     namespace motif {
-class MotifIconFactory$1 {
-    public static class: java.lang.Class<any>
-}
-
+                        class MotifIconFactory$1 {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

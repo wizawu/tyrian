@@ -5,12 +5,11 @@ declare namespace com {
                 namespace org {
                     namespace jvnet {
                         namespace mimepull {
-class Hdr implements com.sun.xml.internal.org.jvnet.mimepull.Header {
-    public getName(): string
-    public getValue(): string
-    public static class: java.lang.Class<any>
-}
-
+                            class Hdr implements com.sun.xml.internal.org.jvnet.mimepull.Header {
+                                public getName(): string
+                                public getValue(): string
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

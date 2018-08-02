@@ -4,10 +4,9 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace util {
-class StubEntry {
-    public static class: java.lang.Class<any>
-}
-
+                        class StubEntry {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

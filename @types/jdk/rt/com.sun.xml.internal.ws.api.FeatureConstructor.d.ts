@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace api {
-interface FeatureConstructor extends java.lang.annotation.Annotation {
-    value(): java.lang.String[]
-}
-
+                        interface FeatureConstructor extends java.lang.annotation.Annotation {
+                            value(): java.lang.String[]
+                        }
                     }
                 }
             }

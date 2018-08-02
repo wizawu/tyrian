@@ -4,10 +4,9 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace encoding {
-class BufferManagerWriteCollect$1 {
-    public static class: java.lang.Class<any>
-}
-
+                        class BufferManagerWriteCollect$1 {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

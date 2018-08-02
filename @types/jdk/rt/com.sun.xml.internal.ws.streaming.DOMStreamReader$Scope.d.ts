@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace streaming {
-class DOMStreamReader$Scope {
-    public static class: java.lang.Class<any>
-}
-
+                        class DOMStreamReader$Scope {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

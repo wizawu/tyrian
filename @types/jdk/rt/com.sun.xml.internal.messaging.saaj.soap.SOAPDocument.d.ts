@@ -5,11 +5,10 @@ declare namespace com {
                 namespace messaging {
                     namespace saaj {
                         namespace soap {
-interface SOAPDocument {
-    getSOAPPart(): com.sun.xml.internal.messaging.saaj.soap.SOAPPartImpl
-    getDocument(): com.sun.xml.internal.messaging.saaj.soap.SOAPDocumentImpl
-}
-
+                            interface SOAPDocument {
+                                getSOAPPart(): com.sun.xml.internal.messaging.saaj.soap.SOAPPartImpl
+                                getDocument(): com.sun.xml.internal.messaging.saaj.soap.SOAPDocumentImpl
+                            }
                         }
                     }
                 }

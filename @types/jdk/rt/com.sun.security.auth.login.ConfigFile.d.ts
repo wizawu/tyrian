@@ -3,14 +3,13 @@ declare namespace com {
         namespace security {
             namespace auth {
                 namespace login {
-class ConfigFile extends javax.security.auth.login.Configuration {
-    public constructor()
-    public constructor(arg0: java.net.URI)
-    public getAppConfigurationEntry(arg0: java.lang.String | string): javax.security.auth.login.AppConfigurationEntry[]
-    public refresh(): void
-    public static class: java.lang.Class<any>
-}
-
+                    class ConfigFile extends javax.security.auth.login.Configuration {
+                        public constructor()
+                        public constructor(arg0: java.net.URI)
+                        public getAppConfigurationEntry(arg0: java.lang.String | string): javax.security.auth.login.AppConfigurationEntry[]
+                        public refresh(): void
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

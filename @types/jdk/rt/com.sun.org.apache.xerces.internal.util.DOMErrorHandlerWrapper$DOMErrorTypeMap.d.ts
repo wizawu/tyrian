@@ -5,11 +5,10 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace util {
-class DOMErrorHandlerWrapper$DOMErrorTypeMap {
-    public static getDOMErrorType(arg0: com.sun.org.apache.xerces.internal.util.XMLErrorCode): string
-    public static class: java.lang.Class<any>
-}
-
+                            class DOMErrorHandlerWrapper$DOMErrorTypeMap {
+                                public static getDOMErrorType(arg0: com.sun.org.apache.xerces.internal.util.XMLErrorCode): string
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

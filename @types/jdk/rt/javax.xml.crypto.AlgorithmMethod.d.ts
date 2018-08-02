@@ -1,11 +1,10 @@
 declare namespace javax {
     namespace xml {
         namespace crypto {
-interface AlgorithmMethod {
-    getAlgorithm(): string
-    getParameterSpec(): java.security.spec.AlgorithmParameterSpec
-}
-
+            interface AlgorithmMethod {
+                getAlgorithm(): string
+                getParameterSpec(): java.security.spec.AlgorithmParameterSpec
+            }
         }
     }
 }

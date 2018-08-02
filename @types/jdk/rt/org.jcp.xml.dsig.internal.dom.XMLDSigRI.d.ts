@@ -4,11 +4,10 @@ declare namespace org {
             namespace dsig {
                 namespace internal {
                     namespace dom {
-class XMLDSigRI extends java.security.Provider {
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                        class XMLDSigRI extends java.security.Provider {
+                            public constructor()
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

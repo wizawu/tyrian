@@ -3,10 +3,9 @@ declare namespace jdk {
         namespace internal {
             namespace objects {
                 namespace annotations {
-interface ScriptClass extends java.lang.annotation.Annotation {
-    value(): string
-}
-
+                    interface ScriptClass extends java.lang.annotation.Annotation {
+                        value(): string
+                    }
                 }
             }
         }

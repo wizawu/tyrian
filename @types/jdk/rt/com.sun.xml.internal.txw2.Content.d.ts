@@ -3,11 +3,10 @@ declare namespace com {
         namespace xml {
             namespace internal {
                 namespace txw2 {
-abstract class Content {
-    public written(): void
-    public static class: java.lang.Class<any>
-}
-
+                    abstract class Content {
+                        public written(): void
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

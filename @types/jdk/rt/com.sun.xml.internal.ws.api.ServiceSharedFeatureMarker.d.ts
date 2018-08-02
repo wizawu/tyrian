@@ -4,9 +4,8 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace api {
-interface ServiceSharedFeatureMarker {
-}
-
+                        interface ServiceSharedFeatureMarker {
+                        }
                     }
                 }
             }

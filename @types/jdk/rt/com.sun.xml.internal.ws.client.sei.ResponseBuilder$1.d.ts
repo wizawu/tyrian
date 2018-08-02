@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace client {
                         namespace sei {
-class ResponseBuilder$1 {
-    public static class: java.lang.Class<any>
-}
-
+                            class ResponseBuilder$1 {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

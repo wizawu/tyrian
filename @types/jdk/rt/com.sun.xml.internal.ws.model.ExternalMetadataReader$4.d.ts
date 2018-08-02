@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace model {
-class ExternalMetadataReader$4 extends com.sun.xml.internal.ws.model.ExternalMetadataReader$Merger<java.lang.annotation.Annotation[][]> {
-    public static class: java.lang.Class<any>
-}
-
+                        class ExternalMetadataReader$4 extends com.sun.xml.internal.ws.model.ExternalMetadataReader$Merger<java.lang.annotation.Annotation[][]> {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

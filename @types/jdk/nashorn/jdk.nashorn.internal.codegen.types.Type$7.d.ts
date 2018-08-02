@@ -3,12 +3,11 @@ declare namespace jdk {
         namespace internal {
             namespace codegen {
                 namespace types {
-class Type$7 extends jdk.nashorn.internal.codegen.types.Type$ValueLessType {
-    public getDescriptor(): string
-    public getBytecodeStackType(): char
-    public static class: java.lang.Class<any>
-}
-
+                    class Type$7 extends jdk.nashorn.internal.codegen.types.Type$ValueLessType {
+                        public getDescriptor(): string
+                        public getBytecodeStackType(): char
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

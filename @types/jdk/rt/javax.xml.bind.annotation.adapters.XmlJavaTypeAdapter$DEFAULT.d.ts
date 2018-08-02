@@ -3,11 +3,10 @@ declare namespace javax {
         namespace bind {
             namespace annotation {
                 namespace adapters {
-class XmlJavaTypeAdapter$DEFAULT {
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                    class XmlJavaTypeAdapter$DEFAULT {
+                        public constructor()
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

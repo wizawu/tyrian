@@ -4,12 +4,11 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace policy {
-class PolicyMap$1 implements com.sun.xml.internal.ws.policy.PolicyMapKeyHandler {
-    public areEqual(arg0: com.sun.xml.internal.ws.policy.PolicyMapKey, arg1: com.sun.xml.internal.ws.policy.PolicyMapKey): boolean
-    public generateHashCode(arg0: com.sun.xml.internal.ws.policy.PolicyMapKey): int
-    public static class: java.lang.Class<any>
-}
-
+                        class PolicyMap$1 implements com.sun.xml.internal.ws.policy.PolicyMapKeyHandler {
+                            public areEqual(arg0: com.sun.xml.internal.ws.policy.PolicyMapKey, arg1: com.sun.xml.internal.ws.policy.PolicyMapKey): boolean
+                            public generateHashCode(arg0: com.sun.xml.internal.ws.policy.PolicyMapKey): int
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

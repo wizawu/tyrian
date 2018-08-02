@@ -4,12 +4,11 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace io {
-class InputStreamHook$InReadObjectNoMoreOptionalDataState extends com.sun.corba.se.impl.io.InputStreamHook$InReadObjectOptionalDataState {
-    protected constructor()
-    public readData(arg0: com.sun.corba.se.impl.io.InputStreamHook): void
-    public static class: java.lang.Class<any>
-}
-
+                        class InputStreamHook$InReadObjectNoMoreOptionalDataState extends com.sun.corba.se.impl.io.InputStreamHook$InReadObjectOptionalDataState {
+                            protected constructor()
+                            public readData(arg0: com.sun.corba.se.impl.io.InputStreamHook): void
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

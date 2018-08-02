@@ -4,11 +4,10 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace streaming {
-class XMLStreamReaderUtil$AttributesImpl$AttributeInfo {
-    public constructor(arg0: javax.xml.namespace.QName, arg1: java.lang.String | string)
-    public static class: java.lang.Class<any>
-}
-
+                        class XMLStreamReaderUtil$AttributesImpl$AttributeInfo {
+                            public constructor(arg0: javax.xml.namespace.QName, arg1: java.lang.String | string)
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

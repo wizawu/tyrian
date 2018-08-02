@@ -6,11 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace impl {
                             namespace dtd {
-interface XMLDTDValidatorFilter extends com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentFilter {
-    hasGrammar(): boolean
-    validate(): boolean
-}
-
+                                interface XMLDTDValidatorFilter extends com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentFilter {
+                                    hasGrammar(): boolean
+                                    validate(): boolean
+                                }
                             }
                         }
                     }

@@ -4,11 +4,10 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace resolver {
-interface Resolver {
-    resolve(arg0: java.lang.String | string): org.omg.CORBA.Object
-    list(): java.util.Set
-}
-
+                        interface Resolver {
+                            resolve(arg0: java.lang.String | string): org.omg.CORBA.Object
+                            list(): java.util.Set
+                        }
                     }
                 }
             }

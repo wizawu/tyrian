@@ -4,11 +4,10 @@ declare namespace com {
             namespace swing {
                 namespace plaf {
                     namespace nimbus {
-abstract class AbstractRegionPainter extends javax.swing.plaf.nimbus.AbstractRegionPainter {
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                        abstract class AbstractRegionPainter extends javax.swing.plaf.nimbus.AbstractRegionPainter {
+                            public constructor()
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

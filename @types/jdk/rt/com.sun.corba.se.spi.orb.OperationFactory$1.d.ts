@@ -4,10 +4,9 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace orb {
-class OperationFactory$1 {
-    public static class: java.lang.Class<any>
-}
-
+                        class OperationFactory$1 {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

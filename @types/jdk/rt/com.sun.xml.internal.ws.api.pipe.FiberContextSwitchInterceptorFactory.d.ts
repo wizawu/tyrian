@@ -5,14 +5,12 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace pipe {
-interface FiberContextSwitchInterceptorFactory {
-    create(): com.sun.xml.internal.ws.api.pipe.FiberContextSwitchInterceptor
-}
-
-interface FiberContextSwitchInterceptorFactory$$Lambda {
-    (): com.sun.xml.internal.ws.api.pipe.FiberContextSwitchInterceptor
-}
-
+                            interface FiberContextSwitchInterceptorFactory {
+                                create(): com.sun.xml.internal.ws.api.pipe.FiberContextSwitchInterceptor
+                            }
+                            interface FiberContextSwitchInterceptorFactory$$Lambda {
+                                (): com.sun.xml.internal.ws.api.pipe.FiberContextSwitchInterceptor
+                            }
                         }
                     }
                 }

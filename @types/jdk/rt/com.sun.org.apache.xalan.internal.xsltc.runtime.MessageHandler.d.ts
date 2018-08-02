@@ -6,12 +6,11 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace runtime {
-class MessageHandler {
-    public constructor()
-    public displayMessage(arg0: java.lang.String | string): void
-    public static class: java.lang.Class<any>
-}
-
+                                class MessageHandler {
+                                    public constructor()
+                                    public displayMessage(arg0: java.lang.String | string): void
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

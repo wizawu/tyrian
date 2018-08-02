@@ -3,10 +3,9 @@ declare namespace jdk {
         namespace internal {
             namespace ir {
                 namespace visitor {
-class NodeOperatorVisitor$1 {
-    public static class: java.lang.Class<any>
-}
-
+                    class NodeOperatorVisitor$1 {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

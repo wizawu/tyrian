@@ -4,12 +4,11 @@ declare namespace com {
             namespace internal {
                 namespace fastinfoset {
                     namespace alphabet {
-class BuiltInRestrictedAlphabets {
-    public static table: char[][]
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                        class BuiltInRestrictedAlphabets {
+                            public static table: char[][]
+                            public constructor()
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

@@ -6,10 +6,9 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace impl {
-class AttributePropertyInfoImpl$1 {
-    public static class: java.lang.Class<any>
-}
-
+                                class AttributePropertyInfoImpl$1 {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

@@ -3,10 +3,9 @@ declare namespace com {
         namespace org {
             namespace glassfish {
                 namespace gmbal {
-interface ManagedData extends java.lang.annotation.Annotation {
-    name(): string
-}
-
+                    interface ManagedData extends java.lang.annotation.Annotation {
+                        name(): string
+                    }
                 }
             }
         }

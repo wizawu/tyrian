@@ -6,15 +6,14 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace impl {
-class RuntimeBuiltinLeafInfoImpl$7 extends com.sun.xml.internal.bind.v2.model.impl.RuntimeBuiltinLeafInfoImpl$StringImpl<java.net.URL> {
-    public parse(arg0: java.lang.CharSequence): java.net.URL
-    public print(arg0: java.net.URL): string
-    public print(arg0: java.lang.Object): string
-    public parse(arg0: java.lang.CharSequence): java.lang.Object
-    public print(arg0: java.lang.Object): java.lang.CharSequence
-    public static class: java.lang.Class<any>
-}
-
+                                class RuntimeBuiltinLeafInfoImpl$7 extends com.sun.xml.internal.bind.v2.model.impl.RuntimeBuiltinLeafInfoImpl$StringImpl<java.net.URL> {
+                                    public parse(arg0: java.lang.CharSequence): java.net.URL
+                                    public print(arg0: java.net.URL): string
+                                    public print(arg0: java.lang.Object): string
+                                    public parse(arg0: java.lang.CharSequence): java.lang.Object
+                                    public print(arg0: java.lang.Object): java.lang.CharSequence
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

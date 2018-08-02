@@ -4,11 +4,10 @@ declare namespace org {
             namespace dsig {
                 namespace internal {
                     namespace dom {
-class DOMReference$2 implements javax.xml.crypto.NodeSetData {
-    public iterator(): java.util.Iterator
-    public static class: java.lang.Class<any>
-}
-
+                        class DOMReference$2 implements javax.xml.crypto.NodeSetData {
+                            public iterator(): java.util.Iterator
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

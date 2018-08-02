@@ -6,15 +6,14 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace compiler {
-class UnresolvedRef extends com.sun.org.apache.xalan.internal.xsltc.compiler.VariableRefBase {
-    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.QName)
-    public getName(): com.sun.org.apache.xalan.internal.xsltc.compiler.QName
-    public typeCheck(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable): com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type
-    public translate(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator): void
-    public toString(): string
-    public static class: java.lang.Class<any>
-}
-
+                                class UnresolvedRef extends com.sun.org.apache.xalan.internal.xsltc.compiler.VariableRefBase {
+                                    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.QName)
+                                    public getName(): com.sun.org.apache.xalan.internal.xsltc.compiler.QName
+                                    public typeCheck(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable): com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type
+                                    public translate(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator): void
+                                    public toString(): string
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

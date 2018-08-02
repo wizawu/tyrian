@@ -4,10 +4,9 @@ declare namespace com {
             namespace util {
                 namespace jar {
                     namespace pack {
-class ClassWriter {
-    public static class: java.lang.Class<any>
-}
-
+                        class ClassWriter {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

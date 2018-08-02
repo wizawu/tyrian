@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace model {
-class WrapperBeanGenerator$1 {
-    public static class: java.lang.Class<any>
-}
-
+                        class WrapperBeanGenerator$1 {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

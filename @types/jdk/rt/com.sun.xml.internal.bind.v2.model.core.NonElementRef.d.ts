@@ -6,11 +6,10 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace core {
-interface NonElementRef<T, C> {
-    getTarget(): com.sun.xml.internal.bind.v2.model.core.NonElement<T, C>
-    getSource(): com.sun.xml.internal.bind.v2.model.core.PropertyInfo<T, C>
-}
-
+                                interface NonElementRef<T, C> {
+                                    getTarget(): com.sun.xml.internal.bind.v2.model.core.NonElement<T, C>
+                                    getSource(): com.sun.xml.internal.bind.v2.model.core.PropertyInfo<T, C>
+                                }
                             }
                         }
                     }

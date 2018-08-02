@@ -4,14 +4,12 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace ior {
-interface MakeImmutable {
-    makeImmutable(): void
-}
-
-interface MakeImmutable$$Lambda {
-    (): void
-}
-
+                        interface MakeImmutable {
+                            makeImmutable(): void
+                        }
+                        interface MakeImmutable$$Lambda {
+                            (): void
+                        }
                     }
                 }
             }

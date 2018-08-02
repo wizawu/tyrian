@@ -5,12 +5,11 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace dom {
-class CharacterDataImpl$1 implements org.w3c.dom.NodeList {
-    public item(arg0: int): org.w3c.dom.Node
-    public getLength(): int
-    public static class: java.lang.Class<any>
-}
-
+                            class CharacterDataImpl$1 implements org.w3c.dom.NodeList {
+                                public item(arg0: int): org.w3c.dom.Node
+                                public getLength(): int
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

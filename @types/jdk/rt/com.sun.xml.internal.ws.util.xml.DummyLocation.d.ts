@@ -5,16 +5,15 @@ declare namespace com {
                 namespace ws {
                     namespace util {
                         namespace xml {
-class DummyLocation implements javax.xml.stream.Location {
-    public static INSTANCE: javax.xml.stream.Location
-    public getCharacterOffset(): int
-    public getColumnNumber(): int
-    public getLineNumber(): int
-    public getPublicId(): string
-    public getSystemId(): string
-    public static class: java.lang.Class<any>
-}
-
+                            class DummyLocation implements javax.xml.stream.Location {
+                                public static INSTANCE: javax.xml.stream.Location
+                                public getCharacterOffset(): int
+                                public getColumnNumber(): int
+                                public getLineNumber(): int
+                                public getPublicId(): string
+                                public getSystemId(): string
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

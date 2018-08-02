@@ -5,11 +5,10 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace impl {
-class XMLEntityManager$CharacterBuffer {
-    public constructor(arg0: boolean, arg1: int)
-    public static class: java.lang.Class<any>
-}
-
+                            class XMLEntityManager$CharacterBuffer {
+                                public constructor(arg0: boolean, arg1: int)
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

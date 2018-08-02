@@ -6,11 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace xni {
                             namespace parser {
-interface XMLDocumentSource {
-    setDocumentHandler(arg0: com.sun.org.apache.xerces.internal.xni.XMLDocumentHandler): void
-    getDocumentHandler(): com.sun.org.apache.xerces.internal.xni.XMLDocumentHandler
-}
-
+                                interface XMLDocumentSource {
+                                    setDocumentHandler(arg0: com.sun.org.apache.xerces.internal.xni.XMLDocumentHandler): void
+                                    getDocumentHandler(): com.sun.org.apache.xerces.internal.xni.XMLDocumentHandler
+                                }
                             }
                         }
                     }

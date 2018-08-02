@@ -4,12 +4,11 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace model {
-class ReflectAnnotationReader$1 implements java.security.PrivilegedAction<java.lang.annotation.Annotation[][]> {
-    public run(): java.lang.annotation.Annotation[][]
-    public run(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                        class ReflectAnnotationReader$1 implements java.security.PrivilegedAction<java.lang.annotation.Annotation[][]> {
+                            public run(): java.lang.annotation.Annotation[][]
+                            public run(): java.lang.Object
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

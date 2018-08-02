@@ -5,10 +5,9 @@ declare namespace com {
                 namespace impl {
                     namespace protocol {
                         namespace giopmsgheaders {
-interface ReferenceAddr {
-    value: short
-}
-
+                            interface ReferenceAddr {
+                                value: short
+                            }
                         }
                     }
                 }

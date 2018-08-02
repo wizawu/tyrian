@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace transport {
-class Headers$1 {
-    public static class: java.lang.Class<any>
-}
-
+                        class Headers$1 {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

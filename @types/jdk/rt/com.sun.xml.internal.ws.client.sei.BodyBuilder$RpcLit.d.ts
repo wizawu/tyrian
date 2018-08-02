@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace client {
                         namespace sei {
-class BodyBuilder$RpcLit extends com.sun.xml.internal.ws.client.sei.BodyBuilder$Wrapped {
-    public static class: java.lang.Class<any>
-}
-
+                            class BodyBuilder$RpcLit extends com.sun.xml.internal.ws.client.sei.BodyBuilder$Wrapped {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

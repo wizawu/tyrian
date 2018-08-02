@@ -3,10 +3,9 @@ declare namespace com {
         namespace imageio {
             namespace plugins {
                 namespace jpeg {
-class JFIFMarkerSegment$JFIFThumbPalette extends com.sun.imageio.plugins.jpeg.JFIFMarkerSegment$JFIFThumbUncompressed {
-    public static class: java.lang.Class<any>
-}
-
+                    class JFIFMarkerSegment$JFIFThumbPalette extends com.sun.imageio.plugins.jpeg.JFIFMarkerSegment$JFIFThumbUncompressed {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

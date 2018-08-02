@@ -6,11 +6,10 @@ declare namespace com {
                     namespace api {
                         namespace model {
                             namespace wsdl {
-interface WSDLMessage extends com.sun.xml.internal.ws.api.model.wsdl.WSDLObject , com.sun.xml.internal.ws.api.model.wsdl.WSDLExtensible {
-    getName(): javax.xml.namespace.QName
-    parts(): java.lang.Iterable<com.sun.xml.internal.ws.api.model.wsdl.WSDLPart>
-}
-
+                                interface WSDLMessage extends com.sun.xml.internal.ws.api.model.wsdl.WSDLObject , com.sun.xml.internal.ws.api.model.wsdl.WSDLExtensible {
+                                    getName(): javax.xml.namespace.QName
+                                    parts(): java.lang.Iterable<com.sun.xml.internal.ws.api.model.wsdl.WSDLPart>
+                                }
                             }
                         }
                     }

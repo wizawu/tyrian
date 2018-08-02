@@ -4,11 +4,10 @@ declare namespace com {
             namespace internal {
                 namespace txw2 {
                     namespace annotation {
-interface XmlElement extends java.lang.annotation.Annotation {
-    value(): string
-    ns(): string
-}
-
+                        interface XmlElement extends java.lang.annotation.Annotation {
+                            value(): string
+                            ns(): string
+                        }
                     }
                 }
             }

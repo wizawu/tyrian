@@ -5,11 +5,10 @@ declare namespace com {
                 namespace ws {
                     namespace server {
                         namespace sei {
-class ValueGetter$2 extends com.sun.xml.internal.ws.server.sei.ValueGetter {
-    public get(arg0: java.lang.Object): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                            class ValueGetter$2 extends com.sun.xml.internal.ws.server.sei.ValueGetter {
+                                public get(arg0: java.lang.Object): java.lang.Object
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

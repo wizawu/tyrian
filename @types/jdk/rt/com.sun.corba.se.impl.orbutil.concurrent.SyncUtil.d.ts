@@ -5,11 +5,10 @@ declare namespace com {
                 namespace impl {
                     namespace orbutil {
                         namespace concurrent {
-class SyncUtil {
-    public static acquire(arg0: com.sun.corba.se.impl.orbutil.concurrent.Sync): void
-    public static class: java.lang.Class<any>
-}
-
+                            class SyncUtil {
+                                public static acquire(arg0: com.sun.corba.se.impl.orbutil.concurrent.Sync): void
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

@@ -6,9 +6,8 @@ declare namespace com {
                     namespace internal {
                         namespace security {
                             namespace transforms {
-interface TransformParam {
-}
-
+                                interface TransformParam {
+                                }
                             }
                         }
                     }

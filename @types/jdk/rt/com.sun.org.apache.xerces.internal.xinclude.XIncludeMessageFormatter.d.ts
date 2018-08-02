@@ -5,17 +5,15 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace xinclude {
-class XIncludeMessageFormatter implements com.sun.org.apache.xerces.internal.util.MessageFormatter {
-    public static XINCLUDE_DOMAIN: string
-    public constructor()
-    public formatMessage(arg0: java.util.Locale, arg1: java.lang.String | string, arg2: java.lang.Object[]): string
-    public static class: java.lang.Class<any>
-}
-
-class XIncludeMessageFormatter$$Lambda implements com.sun.org.apache.xerces.internal.util.MessageFormatter {
-    public static XINCLUDE_DOMAIN: string
-}
-
+                            class XIncludeMessageFormatter implements com.sun.org.apache.xerces.internal.util.MessageFormatter {
+                                public static XINCLUDE_DOMAIN: string
+                                public constructor()
+                                public formatMessage(arg0: java.util.Locale, arg1: java.lang.String | string, arg2: java.lang.Object[]): string
+                                public static class: java.lang.Class<any>
+                            }
+                            class XIncludeMessageFormatter$$Lambda implements com.sun.org.apache.xerces.internal.util.MessageFormatter {
+                                public static XINCLUDE_DOMAIN: string
+                            }
                         }
                     }
                 }

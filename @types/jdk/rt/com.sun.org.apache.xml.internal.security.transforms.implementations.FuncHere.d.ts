@@ -7,13 +7,12 @@ declare namespace com {
                         namespace security {
                             namespace transforms {
                                 namespace implementations {
-class FuncHere extends com.sun.org.apache.xpath.internal.functions.Function {
-    public constructor()
-    public execute(arg0: com.sun.org.apache.xpath.internal.XPathContext): com.sun.org.apache.xpath.internal.objects.XObject
-    public fixupVariables(arg0: java.util.Vector, arg1: int): void
-    public static class: java.lang.Class<any>
-}
-
+                                    class FuncHere extends com.sun.org.apache.xpath.internal.functions.Function {
+                                        public constructor()
+                                        public execute(arg0: com.sun.org.apache.xpath.internal.XPathContext): com.sun.org.apache.xpath.internal.objects.XObject
+                                        public fixupVariables(arg0: java.util.Vector, arg1: int): void
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

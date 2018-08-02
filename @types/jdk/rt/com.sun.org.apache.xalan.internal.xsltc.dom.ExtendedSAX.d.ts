@@ -6,9 +6,8 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace dom {
-interface ExtendedSAX extends org.xml.sax.ContentHandler , org.xml.sax.ext.LexicalHandler , org.xml.sax.DTDHandler , org.xml.sax.ext.DeclHandler {
-}
-
+                                interface ExtendedSAX extends org.xml.sax.ContentHandler , org.xml.sax.ext.LexicalHandler , org.xml.sax.DTDHandler , org.xml.sax.ext.DeclHandler {
+                                }
                             }
                         }
                     }

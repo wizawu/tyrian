@@ -7,12 +7,11 @@ declare namespace com {
                         namespace packaging {
                             namespace mime {
                                 namespace internet {
-class InternetHeaders$1 extends java.util.AbstractList {
-    public get(arg0: int): java.lang.Object
-    public size(): int
-    public static class: java.lang.Class<any>
-}
-
+                                    class InternetHeaders$1 extends java.util.AbstractList {
+                                        public get(arg0: int): java.lang.Object
+                                        public size(): int
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

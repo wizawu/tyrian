@@ -5,9 +5,8 @@ declare namespace com {
                 namespace ws {
                     namespace wsdl {
                         namespace writer {
-interface WSDLResolver extends com.oracle.webservices.internal.api.databinding.WSDLResolver {
-}
-
+                            interface WSDLResolver extends com.oracle.webservices.internal.api.databinding.WSDLResolver {
+                            }
                         }
                     }
                 }

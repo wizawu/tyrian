@@ -5,11 +5,10 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace policy {
-class ValidationProcessor extends com.sun.xml.internal.ws.policy.AssertionValidationProcessor {
-    public static getInstance(): com.sun.xml.internal.ws.api.policy.ValidationProcessor
-    public static class: java.lang.Class<any>
-}
-
+                            class ValidationProcessor extends com.sun.xml.internal.ws.policy.AssertionValidationProcessor {
+                                public static getInstance(): com.sun.xml.internal.ws.api.policy.ValidationProcessor
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

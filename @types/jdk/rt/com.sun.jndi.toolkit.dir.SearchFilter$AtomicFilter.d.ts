@@ -3,12 +3,11 @@ declare namespace com {
         namespace jndi {
             namespace toolkit {
                 namespace dir {
-class SearchFilter$AtomicFilter implements com.sun.jndi.toolkit.dir.SearchFilter$StringFilter {
-    public parse(): void
-    public check(arg0: javax.naming.directory.Attributes): boolean
-    public static class: java.lang.Class<any>
-}
-
+                    class SearchFilter$AtomicFilter implements com.sun.jndi.toolkit.dir.SearchFilter$StringFilter {
+                        public parse(): void
+                        public check(arg0: javax.naming.directory.Attributes): boolean
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

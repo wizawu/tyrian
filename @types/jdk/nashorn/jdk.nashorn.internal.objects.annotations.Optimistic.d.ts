@@ -3,9 +3,8 @@ declare namespace jdk {
         namespace internal {
             namespace objects {
                 namespace annotations {
-interface Optimistic extends java.lang.annotation.Annotation {
-}
-
+                    interface Optimistic extends java.lang.annotation.Annotation {
+                    }
                 }
             }
         }

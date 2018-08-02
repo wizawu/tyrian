@@ -6,22 +6,21 @@ declare namespace com {
                     namespace v2 {
                         namespace runtime {
                             namespace output {
-class ForkXmlOutput extends com.sun.xml.internal.bind.v2.runtime.output.XmlOutputAbstractImpl {
-    public constructor(arg0: com.sun.xml.internal.bind.v2.runtime.output.XmlOutput, arg1: com.sun.xml.internal.bind.v2.runtime.output.XmlOutput)
-    public startDocument(arg0: com.sun.xml.internal.bind.v2.runtime.XMLSerializer, arg1: boolean, arg2: int[], arg3: com.sun.xml.internal.bind.v2.runtime.output.NamespaceContextImpl): void
-    public endDocument(arg0: boolean): void
-    public beginStartTag(arg0: com.sun.xml.internal.bind.v2.runtime.Name): void
-    public attribute(arg0: com.sun.xml.internal.bind.v2.runtime.Name, arg1: java.lang.String | string): void
-    public endTag(arg0: com.sun.xml.internal.bind.v2.runtime.Name): void
-    public beginStartTag(arg0: int, arg1: java.lang.String | string): void
-    public attribute(arg0: int, arg1: java.lang.String | string, arg2: java.lang.String | string): void
-    public endStartTag(): void
-    public endTag(arg0: int, arg1: java.lang.String | string): void
-    public text(arg0: java.lang.String | string, arg1: boolean): void
-    public text(arg0: com.sun.xml.internal.bind.v2.runtime.output.Pcdata, arg1: boolean): void
-    public static class: java.lang.Class<any>
-}
-
+                                class ForkXmlOutput extends com.sun.xml.internal.bind.v2.runtime.output.XmlOutputAbstractImpl {
+                                    public constructor(arg0: com.sun.xml.internal.bind.v2.runtime.output.XmlOutput, arg1: com.sun.xml.internal.bind.v2.runtime.output.XmlOutput)
+                                    public startDocument(arg0: com.sun.xml.internal.bind.v2.runtime.XMLSerializer, arg1: boolean, arg2: int[], arg3: com.sun.xml.internal.bind.v2.runtime.output.NamespaceContextImpl): void
+                                    public endDocument(arg0: boolean): void
+                                    public beginStartTag(arg0: com.sun.xml.internal.bind.v2.runtime.Name): void
+                                    public attribute(arg0: com.sun.xml.internal.bind.v2.runtime.Name, arg1: java.lang.String | string): void
+                                    public endTag(arg0: com.sun.xml.internal.bind.v2.runtime.Name): void
+                                    public beginStartTag(arg0: int, arg1: java.lang.String | string): void
+                                    public attribute(arg0: int, arg1: java.lang.String | string, arg2: java.lang.String | string): void
+                                    public endStartTag(): void
+                                    public endTag(arg0: int, arg1: java.lang.String | string): void
+                                    public text(arg0: java.lang.String | string, arg1: boolean): void
+                                    public text(arg0: com.sun.xml.internal.bind.v2.runtime.output.Pcdata, arg1: boolean): void
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

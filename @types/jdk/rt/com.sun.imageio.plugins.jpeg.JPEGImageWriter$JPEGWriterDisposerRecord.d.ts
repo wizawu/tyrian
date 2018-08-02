@@ -3,16 +3,14 @@ declare namespace com {
         namespace imageio {
             namespace plugins {
                 namespace jpeg {
-class JPEGImageWriter$JPEGWriterDisposerRecord implements sun.java2d.DisposerRecord {
-    public constructor(arg0: long)
-    public dispose(): void
-    public static class: java.lang.Class<any>
-}
-
-class JPEGImageWriter$JPEGWriterDisposerRecord$$Lambda implements sun.java2d.DisposerRecord {
-    public constructor(arg0: long)
-}
-
+                    class JPEGImageWriter$JPEGWriterDisposerRecord implements sun.java2d.DisposerRecord {
+                        public constructor(arg0: long)
+                        public dispose(): void
+                        public static class: java.lang.Class<any>
+                    }
+                    class JPEGImageWriter$JPEGWriterDisposerRecord$$Lambda implements sun.java2d.DisposerRecord {
+                        public constructor(arg0: long)
+                    }
                 }
             }
         }

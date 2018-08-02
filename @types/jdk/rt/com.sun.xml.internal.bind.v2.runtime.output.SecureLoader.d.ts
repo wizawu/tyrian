@@ -6,10 +6,9 @@ declare namespace com {
                     namespace v2 {
                         namespace runtime {
                             namespace output {
-class SecureLoader {
-    public static class: java.lang.Class<any>
-}
-
+                                class SecureLoader {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

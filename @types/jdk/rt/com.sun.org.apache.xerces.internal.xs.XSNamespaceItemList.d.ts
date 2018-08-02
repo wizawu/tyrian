@@ -5,11 +5,10 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace xs {
-interface XSNamespaceItemList extends java.util.List {
-    getLength(): int
-    item(arg0: int): com.sun.org.apache.xerces.internal.xs.XSNamespaceItem
-}
-
+                            interface XSNamespaceItemList extends java.util.List {
+                                getLength(): int
+                                item(arg0: int): com.sun.org.apache.xerces.internal.xs.XSNamespaceItem
+                            }
                         }
                     }
                 }

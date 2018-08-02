@@ -7,16 +7,14 @@ declare namespace com {
                         namespace impl {
                             namespace dv {
                                 namespace dtd {
-class NOTATIONDatatypeValidator implements com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator {
-    public constructor()
-    public validate(arg0: java.lang.String | string, arg1: com.sun.org.apache.xerces.internal.impl.dv.ValidationContext): void
-    public static class: java.lang.Class<any>
-}
-
-class NOTATIONDatatypeValidator$$Lambda implements com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator {
-    public constructor()
-}
-
+                                    class NOTATIONDatatypeValidator implements com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator {
+                                        public constructor()
+                                        public validate(arg0: java.lang.String | string, arg1: com.sun.org.apache.xerces.internal.impl.dv.ValidationContext): void
+                                        public static class: java.lang.Class<any>
+                                    }
+                                    class NOTATIONDatatypeValidator$$Lambda implements com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator {
+                                        public constructor()
+                                    }
                                 }
                             }
                         }

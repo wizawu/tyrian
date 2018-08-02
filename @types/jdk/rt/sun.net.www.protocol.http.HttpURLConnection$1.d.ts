@@ -3,12 +3,11 @@ declare namespace sun {
         namespace www {
             namespace protocol {
                 namespace http {
-class HttpURLConnection$1 implements java.security.PrivilegedAction<java.net.PasswordAuthentication> {
-    public run(): java.net.PasswordAuthentication
-    public run(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                    class HttpURLConnection$1 implements java.security.PrivilegedAction<java.net.PasswordAuthentication> {
+                        public run(): java.net.PasswordAuthentication
+                        public run(): java.lang.Object
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

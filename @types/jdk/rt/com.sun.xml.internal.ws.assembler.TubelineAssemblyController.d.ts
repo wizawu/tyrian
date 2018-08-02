@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace assembler {
-class TubelineAssemblyController {
-    public static class: java.lang.Class<any>
-}
-
+                        class TubelineAssemblyController {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

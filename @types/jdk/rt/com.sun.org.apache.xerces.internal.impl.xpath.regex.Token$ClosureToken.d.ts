@@ -7,11 +7,10 @@ declare namespace com {
                         namespace impl {
                             namespace xpath {
                                 namespace regex {
-class Token$ClosureToken extends com.sun.org.apache.xerces.internal.impl.xpath.regex.Token implements java.io.Serializable {
-    public toString(arg0: int): string
-    public static class: java.lang.Class<any>
-}
-
+                                    class Token$ClosureToken extends com.sun.org.apache.xerces.internal.impl.xpath.regex.Token implements java.io.Serializable {
+                                        public toString(arg0: int): string
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

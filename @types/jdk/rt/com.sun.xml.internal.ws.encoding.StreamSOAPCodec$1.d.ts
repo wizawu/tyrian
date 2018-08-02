@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace encoding {
-class StreamSOAPCodec$1 {
-    public static class: java.lang.Class<any>
-}
-
+                        class StreamSOAPCodec$1 {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

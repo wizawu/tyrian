@@ -5,12 +5,11 @@ declare namespace com {
                 namespace impl {
                     namespace orbutil {
                         namespace graph {
-class NodeData {
-    public constructor()
-    public clear(): void
-    public static class: java.lang.Class<any>
-}
-
+                            class NodeData {
+                                public constructor()
+                                public clear(): void
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

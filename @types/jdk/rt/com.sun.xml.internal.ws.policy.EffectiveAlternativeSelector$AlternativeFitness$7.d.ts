@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace policy {
-class EffectiveAlternativeSelector$AlternativeFitness$7 extends com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector$AlternativeFitness {
-    public static class: java.lang.Class<any>
-}
-
+                        class EffectiveAlternativeSelector$AlternativeFitness$7 extends com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector$AlternativeFitness {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

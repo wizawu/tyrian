@@ -3,10 +3,9 @@ declare namespace com {
         namespace lang {
             namespace management {
                 namespace internal {
-class OpenTypeMappingIHandler$1 {
-    public static class: java.lang.Class<any>
-}
-
+                    class OpenTypeMappingIHandler$1 {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

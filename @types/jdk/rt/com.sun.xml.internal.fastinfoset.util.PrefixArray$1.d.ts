@@ -4,13 +4,12 @@ declare namespace com {
             namespace internal {
                 namespace fastinfoset {
                     namespace util {
-class PrefixArray$1 implements java.util.Iterator {
-    public hasNext(): boolean
-    public next(): java.lang.Object
-    public remove(): void
-    public static class: java.lang.Class<any>
-}
-
+                        class PrefixArray$1 implements java.util.Iterator {
+                            public hasNext(): boolean
+                            public next(): java.lang.Object
+                            public remove(): void
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

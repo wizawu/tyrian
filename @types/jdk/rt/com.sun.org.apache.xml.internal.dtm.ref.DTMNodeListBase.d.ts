@@ -6,13 +6,12 @@ declare namespace com {
                     namespace internal {
                         namespace dtm {
                             namespace ref {
-class DTMNodeListBase implements org.w3c.dom.NodeList {
-    public constructor()
-    public item(arg0: int): org.w3c.dom.Node
-    public getLength(): int
-    public static class: java.lang.Class<any>
-}
-
+                                class DTMNodeListBase implements org.w3c.dom.NodeList {
+                                    public constructor()
+                                    public item(arg0: int): org.w3c.dom.Node
+                                    public getLength(): int
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

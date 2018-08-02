@@ -4,14 +4,12 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace api {
-interface Component {
-    getSPI<S>(arg0: java.lang.Class<S>): S
-}
-
-interface Component$$Lambda {
-    getSPI<S>(arg0: java.lang.Class<S>): S
-}
-
+                        interface Component {
+                            getSPI<S>(arg0: java.lang.Class<S>): S
+                        }
+                        interface Component$$Lambda {
+                            getSPI<S>(arg0: java.lang.Class<S>): S
+                        }
                     }
                 }
             }

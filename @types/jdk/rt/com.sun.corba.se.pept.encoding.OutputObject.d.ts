@@ -4,12 +4,11 @@ declare namespace com {
             namespace se {
                 namespace pept {
                     namespace encoding {
-interface OutputObject {
-    setMessageMediator(arg0: com.sun.corba.se.pept.protocol.MessageMediator): void
-    getMessageMediator(): com.sun.corba.se.pept.protocol.MessageMediator
-    close(): void
-}
-
+                        interface OutputObject {
+                            setMessageMediator(arg0: com.sun.corba.se.pept.protocol.MessageMediator): void
+                            getMessageMediator(): com.sun.corba.se.pept.protocol.MessageMediator
+                            close(): void
+                        }
                     }
                 }
             }

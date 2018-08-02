@@ -4,12 +4,11 @@ declare namespace org {
             namespace dsig {
                 namespace internal {
                     namespace dom {
-class XMLDSigRI$1 implements java.security.PrivilegedAction<java.lang.Void> {
-    public run(): java.lang.Void
-    public run(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                        class XMLDSigRI$1 implements java.security.PrivilegedAction<java.lang.Void> {
+                            public run(): java.lang.Void
+                            public run(): java.lang.Object
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

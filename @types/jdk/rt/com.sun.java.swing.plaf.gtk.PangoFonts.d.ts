@@ -4,11 +4,10 @@ declare namespace com {
             namespace swing {
                 namespace plaf {
                     namespace gtk {
-class PangoFonts {
-    public static CHARS_DIGITS: string
-    public static class: java.lang.Class<any>
-}
-
+                        class PangoFonts {
+                            public static CHARS_DIGITS: string
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

@@ -7,12 +7,11 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 namespace models {
-class XSDFACM$Occurence {
-    public constructor(arg0: com.sun.org.apache.xerces.internal.impl.xs.models.XSCMRepeatingLeaf, arg1: int)
-    public toString(): string
-    public static class: java.lang.Class<any>
-}
-
+                                    class XSDFACM$Occurence {
+                                        public constructor(arg0: com.sun.org.apache.xerces.internal.impl.xs.models.XSCMRepeatingLeaf, arg1: int)
+                                        public toString(): string
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

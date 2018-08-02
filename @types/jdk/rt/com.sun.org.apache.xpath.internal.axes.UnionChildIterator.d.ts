@@ -5,14 +5,13 @@ declare namespace com {
                 namespace xpath {
                     namespace internal {
                         namespace axes {
-class UnionChildIterator extends com.sun.org.apache.xpath.internal.axes.ChildTestIterator {
-    public constructor()
-    public addNodeTest(arg0: com.sun.org.apache.xpath.internal.axes.PredicatedNodeTest): void
-    public fixupVariables(arg0: java.util.Vector, arg1: int): void
-    public acceptNode(arg0: int): short
-    public static class: java.lang.Class<any>
-}
-
+                            class UnionChildIterator extends com.sun.org.apache.xpath.internal.axes.ChildTestIterator {
+                                public constructor()
+                                public addNodeTest(arg0: com.sun.org.apache.xpath.internal.axes.PredicatedNodeTest): void
+                                public fixupVariables(arg0: java.util.Vector, arg1: int): void
+                                public acceptNode(arg0: int): short
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

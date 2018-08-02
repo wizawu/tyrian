@@ -3,10 +3,9 @@ declare namespace com {
         namespace imageio {
             namespace plugins {
                 namespace jpeg {
-class JFIFMarkerSegment$IllegalThumbException extends java.lang.Exception {
-    public static class: java.lang.Class<any>
-}
-
+                    class JFIFMarkerSegment$IllegalThumbException extends java.lang.Exception {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

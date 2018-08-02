@@ -5,11 +5,10 @@ declare namespace com {
                 namespace xalan {
                     namespace internal {
                         namespace utils {
-class ConfigurationError extends java.lang.Error {
-    public getException(): java.lang.Exception
-    public static class: java.lang.Class<any>
-}
-
+                            class ConfigurationError extends java.lang.Error {
+                                public getException(): java.lang.Exception
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

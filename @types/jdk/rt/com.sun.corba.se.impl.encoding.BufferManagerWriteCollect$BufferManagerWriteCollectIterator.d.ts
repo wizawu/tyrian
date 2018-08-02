@@ -4,13 +4,12 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace encoding {
-class BufferManagerWriteCollect$BufferManagerWriteCollectIterator implements java.util.Iterator {
-    public hasNext(): boolean
-    public next(): java.lang.Object
-    public remove(): void
-    public static class: java.lang.Class<any>
-}
-
+                        class BufferManagerWriteCollect$BufferManagerWriteCollectIterator implements java.util.Iterator {
+                            public hasNext(): boolean
+                            public next(): java.lang.Object
+                            public remove(): void
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

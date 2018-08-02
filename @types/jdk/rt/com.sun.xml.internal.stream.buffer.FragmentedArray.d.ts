@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace stream {
                     namespace buffer {
-class FragmentedArray<T> {
-    public static class: java.lang.Class<any>
-}
-
+                        class FragmentedArray<T> {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

@@ -1,11 +1,10 @@
 declare namespace java {
     namespace io {
-class FileReader extends java.io.InputStreamReader {
-    public constructor(arg0: java.lang.String | string)
-    public constructor(arg0: java.io.File)
-    public constructor(arg0: java.io.FileDescriptor)
-    public static class: java.lang.Class<any>
-}
-
+        class FileReader extends java.io.InputStreamReader {
+            public constructor(arg0: java.lang.String | string)
+            public constructor(arg0: java.io.File)
+            public constructor(arg0: java.io.FileDescriptor)
+            public static class: java.lang.Class<any>
+        }
     }
 }

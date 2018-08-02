@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace client {
                         namespace sei {
-class SEIMethodHandler$1 {
-    public static class: java.lang.Class<any>
-}
-
+                            class SEIMethodHandler$1 {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

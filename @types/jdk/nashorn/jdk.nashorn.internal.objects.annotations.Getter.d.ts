@@ -3,12 +3,11 @@ declare namespace jdk {
         namespace internal {
             namespace objects {
                 namespace annotations {
-interface Getter extends java.lang.annotation.Annotation {
-    name(): string
-    attributes(): int
-    where(): jdk.nashorn.internal.objects.annotations.Where
-}
-
+                    interface Getter extends java.lang.annotation.Annotation {
+                        name(): string
+                        attributes(): int
+                        where(): jdk.nashorn.internal.objects.annotations.Where
+                    }
                 }
             }
         }

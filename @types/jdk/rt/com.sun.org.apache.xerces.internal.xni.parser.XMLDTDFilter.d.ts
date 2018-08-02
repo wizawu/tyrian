@@ -6,9 +6,8 @@ declare namespace com {
                     namespace internal {
                         namespace xni {
                             namespace parser {
-interface XMLDTDFilter extends com.sun.org.apache.xerces.internal.xni.XMLDTDHandler , com.sun.org.apache.xerces.internal.xni.parser.XMLDTDSource {
-}
-
+                                interface XMLDTDFilter extends com.sun.org.apache.xerces.internal.xni.XMLDTDHandler , com.sun.org.apache.xerces.internal.xni.parser.XMLDTDSource {
+                                }
                             }
                         }
                     }

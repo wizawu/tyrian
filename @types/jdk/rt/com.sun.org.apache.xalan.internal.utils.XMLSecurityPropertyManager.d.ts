@@ -5,12 +5,11 @@ declare namespace com {
                 namespace xalan {
                     namespace internal {
                         namespace utils {
-class XMLSecurityPropertyManager extends com.sun.org.apache.xalan.internal.utils.FeaturePropertyBase {
-    public constructor()
-    public getIndex(arg0: java.lang.String | string): int
-    public static class: java.lang.Class<any>
-}
-
+                            class XMLSecurityPropertyManager extends com.sun.org.apache.xalan.internal.utils.FeaturePropertyBase {
+                                public constructor()
+                                public getIndex(arg0: java.lang.String | string): int
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

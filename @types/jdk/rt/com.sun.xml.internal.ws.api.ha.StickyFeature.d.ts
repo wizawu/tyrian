@@ -5,9 +5,8 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace ha {
-interface StickyFeature {
-}
-
+                            interface StickyFeature {
+                            }
                         }
                     }
                 }

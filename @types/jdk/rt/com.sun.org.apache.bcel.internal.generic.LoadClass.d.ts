@@ -5,11 +5,10 @@ declare namespace com {
                 namespace bcel {
                     namespace internal {
                         namespace generic {
-interface LoadClass {
-    getLoadClassType(arg0: com.sun.org.apache.bcel.internal.generic.ConstantPoolGen): com.sun.org.apache.bcel.internal.generic.ObjectType
-    getType(arg0: com.sun.org.apache.bcel.internal.generic.ConstantPoolGen): com.sun.org.apache.bcel.internal.generic.Type
-}
-
+                            interface LoadClass {
+                                getLoadClassType(arg0: com.sun.org.apache.bcel.internal.generic.ConstantPoolGen): com.sun.org.apache.bcel.internal.generic.ObjectType
+                                getType(arg0: com.sun.org.apache.bcel.internal.generic.ConstantPoolGen): com.sun.org.apache.bcel.internal.generic.Type
+                            }
                         }
                     }
                 }

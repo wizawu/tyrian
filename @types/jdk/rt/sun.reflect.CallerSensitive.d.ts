@@ -1,7 +1,6 @@
 declare namespace sun {
     namespace reflect {
-interface CallerSensitive extends java.lang.annotation.Annotation {
-}
-
+        interface CallerSensitive extends java.lang.annotation.Annotation {
+        }
     }
 }

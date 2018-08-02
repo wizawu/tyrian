@@ -3,10 +3,9 @@ declare namespace com {
         namespace imageio {
             namespace plugins {
                 namespace jpeg {
-class COMMarkerSegment extends com.sun.imageio.plugins.jpeg.MarkerSegment {
-    public static class: java.lang.Class<any>
-}
-
+                    class COMMarkerSegment extends com.sun.imageio.plugins.jpeg.MarkerSegment {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

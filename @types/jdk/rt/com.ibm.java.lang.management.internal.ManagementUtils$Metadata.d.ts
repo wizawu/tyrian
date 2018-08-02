@@ -4,10 +4,9 @@ declare namespace com {
             namespace lang {
                 namespace management {
                     namespace internal {
-class ManagementUtils$Metadata {
-    public static class: java.lang.Class<any>
-}
-
+                        class ManagementUtils$Metadata {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

@@ -6,11 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace runtime {
-class InternalRuntimeError extends java.lang.Error {
-    public constructor(arg0: java.lang.String | string)
-    public static class: java.lang.Class<any>
-}
-
+                                class InternalRuntimeError extends java.lang.Error {
+                                    public constructor(arg0: java.lang.String | string)
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

@@ -4,14 +4,13 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace ior {
-class JIDLObjectKeyTemplate extends com.sun.corba.se.impl.ior.NewObjectKeyTemplateBase {
-    public constructor(arg0: com.sun.corba.se.spi.orb.ORB, arg1: int, arg2: int, arg3: org.omg.CORBA_2_3.portable.InputStream)
-    public constructor(arg0: com.sun.corba.se.spi.orb.ORB, arg1: int, arg2: int, arg3: org.omg.CORBA_2_3.portable.InputStream, arg4: org.omg.CORBA.OctetSeqHolder)
-    public constructor(arg0: com.sun.corba.se.spi.orb.ORB, arg1: int, arg2: int)
-    protected writeTemplate(arg0: org.omg.CORBA_2_3.portable.OutputStream): void
-    public static class: java.lang.Class<any>
-}
-
+                        class JIDLObjectKeyTemplate extends com.sun.corba.se.impl.ior.NewObjectKeyTemplateBase {
+                            public constructor(arg0: com.sun.corba.se.spi.orb.ORB, arg1: int, arg2: int, arg3: org.omg.CORBA_2_3.portable.InputStream)
+                            public constructor(arg0: com.sun.corba.se.spi.orb.ORB, arg1: int, arg2: int, arg3: org.omg.CORBA_2_3.portable.InputStream, arg4: org.omg.CORBA.OctetSeqHolder)
+                            public constructor(arg0: com.sun.corba.se.spi.orb.ORB, arg1: int, arg2: int)
+                            protected writeTemplate(arg0: org.omg.CORBA_2_3.portable.OutputStream): void
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

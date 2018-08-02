@@ -3,10 +3,9 @@ declare namespace jdk {
         namespace internal {
             namespace objects {
                 namespace annotations {
-class SpecializedFunction$1 {
-    public static class: java.lang.Class<any>
-}
-
+                    class SpecializedFunction$1 {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

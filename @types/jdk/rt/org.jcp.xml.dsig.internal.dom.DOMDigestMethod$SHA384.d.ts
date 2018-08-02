@@ -4,11 +4,10 @@ declare namespace org {
             namespace dsig {
                 namespace internal {
                     namespace dom {
-class DOMDigestMethod$SHA384 extends org.jcp.xml.dsig.internal.dom.DOMDigestMethod {
-    public getAlgorithm(): string
-    public static class: java.lang.Class<any>
-}
-
+                        class DOMDigestMethod$SHA384 extends org.jcp.xml.dsig.internal.dom.DOMDigestMethod {
+                            public getAlgorithm(): string
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

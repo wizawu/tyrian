@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace server {
-class MethodUtil {
-    public static class: java.lang.Class<any>
-}
-
+                            class MethodUtil {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

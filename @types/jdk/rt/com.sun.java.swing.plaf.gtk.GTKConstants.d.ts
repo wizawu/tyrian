@@ -4,10 +4,9 @@ declare namespace com {
             namespace swing {
                 namespace plaf {
                     namespace gtk {
-interface GTKConstants {
-    UNDEFINED: int
-}
-
+                        interface GTKConstants {
+                            UNDEFINED: int
+                        }
                     }
                 }
             }

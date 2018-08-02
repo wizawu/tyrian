@@ -6,11 +6,10 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace core {
-interface TypeInfo<T, C> extends com.sun.xml.internal.bind.v2.model.annotation.Locatable {
-    getType(): T
-    canBeReferencedByIDREF(): boolean
-}
-
+                                interface TypeInfo<T, C> extends com.sun.xml.internal.bind.v2.model.annotation.Locatable {
+                                    getType(): T
+                                    canBeReferencedByIDREF(): boolean
+                                }
                             }
                         }
                     }

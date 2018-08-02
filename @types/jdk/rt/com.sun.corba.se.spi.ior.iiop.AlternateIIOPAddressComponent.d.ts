@@ -5,10 +5,9 @@ declare namespace com {
                 namespace spi {
                     namespace ior {
                         namespace iiop {
-interface AlternateIIOPAddressComponent extends com.sun.corba.se.spi.ior.TaggedComponent {
-    getAddress(): com.sun.corba.se.spi.ior.iiop.IIOPAddress
-}
-
+                            interface AlternateIIOPAddressComponent extends com.sun.corba.se.spi.ior.TaggedComponent {
+                                getAddress(): com.sun.corba.se.spi.ior.iiop.IIOPAddress
+                            }
                         }
                     }
                 }

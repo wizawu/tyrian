@@ -5,12 +5,11 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace xs {
-interface PSVIProvider {
-    getElementPSVI(): com.sun.org.apache.xerces.internal.xs.ElementPSVI
-    getAttributePSVI(arg0: int): com.sun.org.apache.xerces.internal.xs.AttributePSVI
-    getAttributePSVIByName(arg0: java.lang.String | string, arg1: java.lang.String | string): com.sun.org.apache.xerces.internal.xs.AttributePSVI
-}
-
+                            interface PSVIProvider {
+                                getElementPSVI(): com.sun.org.apache.xerces.internal.xs.ElementPSVI
+                                getAttributePSVI(arg0: int): com.sun.org.apache.xerces.internal.xs.AttributePSVI
+                                getAttributePSVIByName(arg0: java.lang.String | string, arg1: java.lang.String | string): com.sun.org.apache.xerces.internal.xs.AttributePSVI
+                            }
                         }
                     }
                 }

@@ -4,11 +4,10 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace orb {
-class DataCollectorBase$1 extends com.sun.corba.se.impl.orb.PropertyCallback {
-    public get(arg0: java.lang.String | string): string
-    public static class: java.lang.Class<any>
-}
-
+                        class DataCollectorBase$1 extends com.sun.corba.se.impl.orb.PropertyCallback {
+                            public get(arg0: java.lang.String | string): string
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

@@ -5,11 +5,10 @@ declare namespace com {
                 namespace ws {
                     namespace util {
                         namespace pipe {
-class AbstractSchemaValidationTube$1 extends javax.xml.transform.stream.StreamSource {
-    public getReader(): java.io.Reader
-    public static class: java.lang.Class<any>
-}
-
+                            class AbstractSchemaValidationTube$1 extends javax.xml.transform.stream.StreamSource {
+                                public getReader(): java.io.Reader
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

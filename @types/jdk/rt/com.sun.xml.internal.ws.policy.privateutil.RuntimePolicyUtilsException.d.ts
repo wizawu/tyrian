@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace policy {
                         namespace privateutil {
-class RuntimePolicyUtilsException extends java.lang.RuntimeException {
-    public static class: java.lang.Class<any>
-}
-
+                            class RuntimePolicyUtilsException extends java.lang.RuntimeException {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

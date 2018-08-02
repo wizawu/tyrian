@@ -4,13 +4,12 @@ declare namespace com {
             namespace glassfish {
                 namespace external {
                     namespace statistics {
-interface TimeStatistic extends com.sun.org.glassfish.external.statistics.Statistic {
-    getCount(): long
-    getMaxTime(): long
-    getMinTime(): long
-    getTotalTime(): long
-}
-
+                        interface TimeStatistic extends com.sun.org.glassfish.external.statistics.Statistic {
+                            getCount(): long
+                            getMaxTime(): long
+                            getMinTime(): long
+                            getTotalTime(): long
+                        }
                     }
                 }
             }

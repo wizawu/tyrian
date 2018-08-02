@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace developer {
-interface Serialization extends java.lang.annotation.Annotation {
-    encoding(): string
-}
-
+                        interface Serialization extends java.lang.annotation.Annotation {
+                            encoding(): string
+                        }
                     }
                 }
             }

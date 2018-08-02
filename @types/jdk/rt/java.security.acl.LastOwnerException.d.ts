@@ -1,11 +1,10 @@
 declare namespace java {
     namespace security {
         namespace acl {
-class LastOwnerException extends java.lang.Exception {
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+            class LastOwnerException extends java.lang.Exception {
+                public constructor()
+                public static class: java.lang.Class<any>
+            }
         }
     }
 }

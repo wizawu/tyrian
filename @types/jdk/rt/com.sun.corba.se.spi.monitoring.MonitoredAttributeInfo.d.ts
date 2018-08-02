@@ -4,13 +4,12 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace monitoring {
-interface MonitoredAttributeInfo {
-    isWritable(): boolean
-    isStatistic(): boolean
-    type(): java.lang.Class
-    getDescription(): string
-}
-
+                        interface MonitoredAttributeInfo {
+                            isWritable(): boolean
+                            isStatistic(): boolean
+                            type(): java.lang.Class
+                            getDescription(): string
+                        }
                     }
                 }
             }

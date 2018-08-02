@@ -3,12 +3,11 @@ declare namespace com {
         namespace java {
             namespace browser {
                 namespace net {
-interface ProxyInfo {
-    getHost(): string
-    getPort(): int
-    isSocks(): boolean
-}
-
+                    interface ProxyInfo {
+                        getHost(): string
+                        getPort(): int
+                        isSocks(): boolean
+                    }
                 }
             }
         }

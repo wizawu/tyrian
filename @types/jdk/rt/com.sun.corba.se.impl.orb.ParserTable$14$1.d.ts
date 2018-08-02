@@ -4,15 +4,13 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace orb {
-class ParserTable$14$1 implements java.security.PrivilegedExceptionAction {
-    public run(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
-class ParserTable$14$1$$Lambda implements java.security.PrivilegedExceptionAction {
-    public (): java.lang.Object
-}
-
+                        class ParserTable$14$1 implements java.security.PrivilegedExceptionAction {
+                            public run(): java.lang.Object
+                            public static class: java.lang.Class<any>
+                        }
+                        class ParserTable$14$1$$Lambda implements java.security.PrivilegedExceptionAction {
+                            public (): java.lang.Object
+                        }
                     }
                 }
             }

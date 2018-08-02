@@ -4,11 +4,10 @@ declare namespace com {
             namespace se {
                 namespace internal {
                     namespace POA {
-class POAORB extends com.sun.corba.se.internal.iiop.ORB {
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                        class POAORB extends com.sun.corba.se.internal.iiop.ORB {
+                            public constructor()
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

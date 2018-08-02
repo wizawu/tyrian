@@ -6,11 +6,10 @@ declare namespace com {
                     namespace saaj {
                         namespace packaging {
                             namespace mime {
-interface Header {
-    getName(): string
-    getValue(): string
-}
-
+                                interface Header {
+                                    getName(): string
+                                    getValue(): string
+                                }
                             }
                         }
                     }

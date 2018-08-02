@@ -5,15 +5,13 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace streaming {
-class XMLStreamWriterFactory$HasEncodingWriter extends com.sun.xml.internal.ws.util.xml.XMLStreamWriterFilter implements com.sun.xml.internal.ws.encoding.HasEncoding {
-    public getEncoding(): string
-    public static class: java.lang.Class<any>
-}
-
-class XMLStreamWriterFactory$HasEncodingWriter$$Lambda extends com.sun.xml.internal.ws.util.xml.XMLStreamWriterFilter implements com.sun.xml.internal.ws.encoding.HasEncoding {
-    public (): string
-}
-
+                            class XMLStreamWriterFactory$HasEncodingWriter extends com.sun.xml.internal.ws.util.xml.XMLStreamWriterFilter implements com.sun.xml.internal.ws.encoding.HasEncoding {
+                                public getEncoding(): string
+                                public static class: java.lang.Class<any>
+                            }
+                            class XMLStreamWriterFactory$HasEncodingWriter$$Lambda extends com.sun.xml.internal.ws.util.xml.XMLStreamWriterFilter implements com.sun.xml.internal.ws.encoding.HasEncoding {
+                                public (): string
+                            }
                         }
                     }
                 }

@@ -3,16 +3,14 @@ declare namespace com {
         namespace jndi {
             namespace ldap {
                 namespace sasl {
-class DefaultCallbackHandler implements javax.security.auth.callback.CallbackHandler {
-    public handle(arg0: javax.security.auth.callback.Callback[]): void
-    protected finalize(): void
-    public static class: java.lang.Class<any>
-}
-
-class DefaultCallbackHandler$$Lambda implements javax.security.auth.callback.CallbackHandler {
-    public (arg0: javax.security.auth.callback.Callback[]): void
-}
-
+                    class DefaultCallbackHandler implements javax.security.auth.callback.CallbackHandler {
+                        public handle(arg0: javax.security.auth.callback.Callback[]): void
+                        protected finalize(): void
+                        public static class: java.lang.Class<any>
+                    }
+                    class DefaultCallbackHandler$$Lambda implements javax.security.auth.callback.CallbackHandler {
+                        public (arg0: javax.security.auth.callback.Callback[]): void
+                    }
                 }
             }
         }

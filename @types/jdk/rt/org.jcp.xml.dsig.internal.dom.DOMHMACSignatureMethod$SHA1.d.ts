@@ -4,11 +4,10 @@ declare namespace org {
             namespace dsig {
                 namespace internal {
                     namespace dom {
-class DOMHMACSignatureMethod$SHA1 extends org.jcp.xml.dsig.internal.dom.DOMHMACSignatureMethod {
-    public getAlgorithm(): string
-    public static class: java.lang.Class<any>
-}
-
+                        class DOMHMACSignatureMethod$SHA1 extends org.jcp.xml.dsig.internal.dom.DOMHMACSignatureMethod {
+                            public getAlgorithm(): string
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

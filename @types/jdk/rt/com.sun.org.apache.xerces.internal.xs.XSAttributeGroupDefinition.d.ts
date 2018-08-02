@@ -5,13 +5,12 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace xs {
-interface XSAttributeGroupDefinition extends com.sun.org.apache.xerces.internal.xs.XSObject {
-    getAttributeUses(): com.sun.org.apache.xerces.internal.xs.XSObjectList
-    getAttributeWildcard(): com.sun.org.apache.xerces.internal.xs.XSWildcard
-    getAnnotation(): com.sun.org.apache.xerces.internal.xs.XSAnnotation
-    getAnnotations(): com.sun.org.apache.xerces.internal.xs.XSObjectList
-}
-
+                            interface XSAttributeGroupDefinition extends com.sun.org.apache.xerces.internal.xs.XSObject {
+                                getAttributeUses(): com.sun.org.apache.xerces.internal.xs.XSObjectList
+                                getAttributeWildcard(): com.sun.org.apache.xerces.internal.xs.XSWildcard
+                                getAnnotation(): com.sun.org.apache.xerces.internal.xs.XSAnnotation
+                                getAnnotations(): com.sun.org.apache.xerces.internal.xs.XSObjectList
+                            }
                         }
                     }
                 }

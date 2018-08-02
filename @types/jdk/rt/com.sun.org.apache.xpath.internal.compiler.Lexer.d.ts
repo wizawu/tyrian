@@ -5,10 +5,9 @@ declare namespace com {
                 namespace xpath {
                     namespace internal {
                         namespace compiler {
-class Lexer {
-    public static class: java.lang.Class<any>
-}
-
+                            class Lexer {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

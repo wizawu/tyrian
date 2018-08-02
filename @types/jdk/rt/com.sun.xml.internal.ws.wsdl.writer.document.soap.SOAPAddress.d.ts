@@ -7,10 +7,9 @@ declare namespace com {
                         namespace writer {
                             namespace document {
                                 namespace soap {
-interface SOAPAddress extends com.sun.xml.internal.txw2.TypedXmlWriter {
-    location(arg0: java.lang.String | string): com.sun.xml.internal.ws.wsdl.writer.document.soap.SOAPAddress
-}
-
+                                    interface SOAPAddress extends com.sun.xml.internal.txw2.TypedXmlWriter {
+                                        location(arg0: java.lang.String | string): com.sun.xml.internal.ws.wsdl.writer.document.soap.SOAPAddress
+                                    }
                                 }
                             }
                         }

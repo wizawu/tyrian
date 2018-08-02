@@ -4,14 +4,12 @@ declare namespace com {
             namespace se {
                 namespace pept {
                     namespace transport {
-interface ContactInfoList {
-    iterator(): java.util.Iterator
-}
-
-interface ContactInfoList$$Lambda {
-    (): java.util.Iterator
-}
-
+                        interface ContactInfoList {
+                            iterator(): java.util.Iterator
+                        }
+                        interface ContactInfoList$$Lambda {
+                            (): java.util.Iterator
+                        }
                     }
                 }
             }

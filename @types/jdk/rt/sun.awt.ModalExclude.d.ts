@@ -1,7 +1,6 @@
 declare namespace sun {
     namespace awt {
-interface ModalExclude {
-}
-
+        interface ModalExclude {
+        }
     }
 }

@@ -6,13 +6,12 @@ declare namespace com {
                     namespace internal {
                         namespace jaxp {
                             namespace validation {
-class WeakReferenceXMLSchema extends com.sun.org.apache.xerces.internal.jaxp.validation.AbstractXMLSchema {
-    public constructor()
-    public getGrammarPool(): com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool
-    public isFullyComposed(): boolean
-    public static class: java.lang.Class<any>
-}
-
+                                class WeakReferenceXMLSchema extends com.sun.org.apache.xerces.internal.jaxp.validation.AbstractXMLSchema {
+                                    public constructor()
+                                    public getGrammarPool(): com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool
+                                    public isFullyComposed(): boolean
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

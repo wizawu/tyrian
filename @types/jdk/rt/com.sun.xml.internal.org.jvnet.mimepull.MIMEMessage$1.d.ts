@@ -5,10 +5,9 @@ declare namespace com {
                 namespace org {
                     namespace jvnet {
                         namespace mimepull {
-class MIMEMessage$1 {
-    public static class: java.lang.Class<any>
-}
-
+                            class MIMEMessage$1 {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

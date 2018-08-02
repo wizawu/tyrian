@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace model {
-class FieldSignature {
-    public static class: java.lang.Class<any>
-}
-
+                        class FieldSignature {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

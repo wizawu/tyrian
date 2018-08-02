@@ -7,12 +7,11 @@ declare namespace com {
                         namespace dtm {
                             namespace ref {
                                 namespace sax2dtm {
-class SAX2DTM2$TypedPrecedingIterator extends com.sun.org.apache.xml.internal.dtm.ref.sax2dtm.SAX2DTM2$PrecedingIterator {
-    public constructor(arg0: com.sun.org.apache.xml.internal.dtm.ref.sax2dtm.SAX2DTM2, arg1: int)
-    public next(): int
-    public static class: java.lang.Class<any>
-}
-
+                                    class SAX2DTM2$TypedPrecedingIterator extends com.sun.org.apache.xml.internal.dtm.ref.sax2dtm.SAX2DTM2$PrecedingIterator {
+                                        public constructor(arg0: com.sun.org.apache.xml.internal.dtm.ref.sax2dtm.SAX2DTM2, arg1: int)
+                                        public next(): int
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

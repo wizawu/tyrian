@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace util {
-class ServiceFinder$1 {
-    public static class: java.lang.Class<any>
-}
-
+                        class ServiceFinder$1 {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

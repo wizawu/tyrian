@@ -1,12 +1,11 @@
 declare namespace sun {
     namespace awt {
         namespace shell {
-class ShellFolder$1 implements java.util.concurrent.Callable<java.lang.Void> {
-    public call(): java.lang.Void
-    public call(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+            class ShellFolder$1 implements java.util.concurrent.Callable<java.lang.Void> {
+                public call(): java.lang.Void
+                public call(): java.lang.Object
+                public static class: java.lang.Class<any>
+            }
         }
     }
 }

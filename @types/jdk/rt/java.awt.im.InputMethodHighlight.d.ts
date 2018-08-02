@@ -1,23 +1,22 @@
 declare namespace java {
     namespace awt {
         namespace im {
-class InputMethodHighlight {
-    public static RAW_TEXT: int
-    public static CONVERTED_TEXT: int
-    public static UNSELECTED_RAW_TEXT_HIGHLIGHT: java.awt.im.InputMethodHighlight
-    public static SELECTED_RAW_TEXT_HIGHLIGHT: java.awt.im.InputMethodHighlight
-    public static UNSELECTED_CONVERTED_TEXT_HIGHLIGHT: java.awt.im.InputMethodHighlight
-    public static SELECTED_CONVERTED_TEXT_HIGHLIGHT: java.awt.im.InputMethodHighlight
-    public constructor(arg0: boolean, arg1: int)
-    public constructor(arg0: boolean, arg1: int, arg2: int)
-    public constructor(arg0: boolean, arg1: int, arg2: int, arg3: java.util.Map<java.awt.font.TextAttribute, any>)
-    public isSelected(): boolean
-    public getState(): int
-    public getVariation(): int
-    public getStyle(): java.util.Map<java.awt.font.TextAttribute, any>
-    public static class: java.lang.Class<any>
-}
-
+            class InputMethodHighlight {
+                public static RAW_TEXT: int
+                public static CONVERTED_TEXT: int
+                public static UNSELECTED_RAW_TEXT_HIGHLIGHT: java.awt.im.InputMethodHighlight
+                public static SELECTED_RAW_TEXT_HIGHLIGHT: java.awt.im.InputMethodHighlight
+                public static UNSELECTED_CONVERTED_TEXT_HIGHLIGHT: java.awt.im.InputMethodHighlight
+                public static SELECTED_CONVERTED_TEXT_HIGHLIGHT: java.awt.im.InputMethodHighlight
+                public constructor(arg0: boolean, arg1: int)
+                public constructor(arg0: boolean, arg1: int, arg2: int)
+                public constructor(arg0: boolean, arg1: int, arg2: int, arg3: java.util.Map<java.awt.font.TextAttribute, any>)
+                public isSelected(): boolean
+                public getState(): int
+                public getVariation(): int
+                public getStyle(): java.util.Map<java.awt.font.TextAttribute, any>
+                public static class: java.lang.Class<any>
+            }
         }
     }
 }

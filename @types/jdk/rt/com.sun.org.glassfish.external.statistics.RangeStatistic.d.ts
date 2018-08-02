@@ -4,12 +4,11 @@ declare namespace com {
             namespace glassfish {
                 namespace external {
                     namespace statistics {
-interface RangeStatistic extends com.sun.org.glassfish.external.statistics.Statistic {
-    getHighWaterMark(): long
-    getLowWaterMark(): long
-    getCurrent(): long
-}
-
+                        interface RangeStatistic extends com.sun.org.glassfish.external.statistics.Statistic {
+                            getHighWaterMark(): long
+                            getLowWaterMark(): long
+                            getCurrent(): long
+                        }
                     }
                 }
             }

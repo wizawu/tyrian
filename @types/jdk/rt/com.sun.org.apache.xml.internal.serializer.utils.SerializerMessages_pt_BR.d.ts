@@ -6,12 +6,11 @@ declare namespace com {
                     namespace internal {
                         namespace serializer {
                             namespace utils {
-class SerializerMessages_pt_BR extends java.util.ListResourceBundle {
-    public constructor()
-    public getContents(): java.lang.Object[][]
-    public static class: java.lang.Class<any>
-}
-
+                                class SerializerMessages_pt_BR extends java.util.ListResourceBundle {
+                                    public constructor()
+                                    public getContents(): java.lang.Object[][]
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

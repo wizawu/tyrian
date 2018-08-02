@@ -7,11 +7,10 @@ declare namespace com {
                         namespace writer {
                             namespace document {
                                 namespace xsd {
-interface Import extends com.sun.xml.internal.txw2.TypedXmlWriter , com.sun.xml.internal.ws.wsdl.writer.document.Documented {
-    schemaLocation(arg0: java.lang.String | string): com.sun.xml.internal.ws.wsdl.writer.document.xsd.Import
-    namespace(arg0: java.lang.String | string): com.sun.xml.internal.ws.wsdl.writer.document.xsd.Import
-}
-
+                                    interface Import extends com.sun.xml.internal.txw2.TypedXmlWriter , com.sun.xml.internal.ws.wsdl.writer.document.Documented {
+                                        schemaLocation(arg0: java.lang.String | string): com.sun.xml.internal.ws.wsdl.writer.document.xsd.Import
+                                        namespace(arg0: java.lang.String | string): com.sun.xml.internal.ws.wsdl.writer.document.xsd.Import
+                                    }
                                 }
                             }
                         }

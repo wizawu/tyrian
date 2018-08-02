@@ -6,10 +6,9 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace dom {
-class SortSettings {
-    public static class: java.lang.Class<any>
-}
-
+                                class SortSettings {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

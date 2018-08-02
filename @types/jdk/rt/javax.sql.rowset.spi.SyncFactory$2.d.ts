@@ -2,12 +2,11 @@ declare namespace javax {
     namespace sql {
         namespace rowset {
             namespace spi {
-class SyncFactory$2 implements java.security.PrivilegedAction<java.lang.String> {
-    public run(): string
-    public run(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                class SyncFactory$2 implements java.security.PrivilegedAction<java.lang.String> {
+                    public run(): string
+                    public run(): java.lang.Object
+                    public static class: java.lang.Class<any>
+                }
             }
         }
     }

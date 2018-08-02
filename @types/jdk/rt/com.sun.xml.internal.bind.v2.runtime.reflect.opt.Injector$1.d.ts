@@ -7,12 +7,11 @@ declare namespace com {
                         namespace runtime {
                             namespace reflect {
                                 namespace opt {
-class Injector$1 implements java.security.PrivilegedAction<java.lang.Void> {
-    public run(): java.lang.Void
-    public run(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                                    class Injector$1 implements java.security.PrivilegedAction<java.lang.Void> {
+                                        public run(): java.lang.Void
+                                        public run(): java.lang.Object
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

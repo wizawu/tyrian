@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace client {
-abstract class HandlerConfigurator {
-    public static class: java.lang.Class<any>
-}
-
+                        abstract class HandlerConfigurator {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

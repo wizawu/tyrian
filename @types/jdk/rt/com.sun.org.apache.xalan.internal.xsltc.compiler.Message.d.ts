@@ -6,13 +6,12 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace compiler {
-class Message extends com.sun.org.apache.xalan.internal.xsltc.compiler.Instruction {
-    public parseContents(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Parser): void
-    public typeCheck(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable): com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type
-    public translate(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator): void
-    public static class: java.lang.Class<any>
-}
-
+                                class Message extends com.sun.org.apache.xalan.internal.xsltc.compiler.Instruction {
+                                    public parseContents(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Parser): void
+                                    public typeCheck(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable): com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type
+                                    public translate(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator): void
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

@@ -5,13 +5,12 @@ declare namespace jdk {
                 namespace regexp {
                     namespace joni {
                         namespace constants {
-interface RegexState {
-    NORMAL: int
-    SEARCHING: int
-    COMPILING: int
-    MODIFY: int
-}
-
+                            interface RegexState {
+                                NORMAL: int
+                                SEARCHING: int
+                                COMPILING: int
+                                MODIFY: int
+                            }
                         }
                     }
                 }

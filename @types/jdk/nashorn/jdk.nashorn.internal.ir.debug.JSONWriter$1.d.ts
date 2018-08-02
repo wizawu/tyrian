@@ -3,10 +3,9 @@ declare namespace jdk {
         namespace internal {
             namespace ir {
                 namespace debug {
-class JSONWriter$1 {
-    public static class: java.lang.Class<any>
-}
-
+                    class JSONWriter$1 {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

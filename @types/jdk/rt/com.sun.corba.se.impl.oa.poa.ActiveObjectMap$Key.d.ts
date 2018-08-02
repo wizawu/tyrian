@@ -5,14 +5,13 @@ declare namespace com {
                 namespace impl {
                     namespace oa {
                         namespace poa {
-class ActiveObjectMap$Key {
-    public id: byte[]
-    public toString(): string
-    public equals(arg0: java.lang.Object): boolean
-    public hashCode(): int
-    public static class: java.lang.Class<any>
-}
-
+                            class ActiveObjectMap$Key {
+                                public id: byte[]
+                                public toString(): string
+                                public equals(arg0: java.lang.Object): boolean
+                                public hashCode(): int
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

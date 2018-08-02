@@ -3,10 +3,9 @@ declare namespace com {
         namespace java {
             namespace accessibility {
                 namespace util {
-class EventQueueMonitorItem {
-    public static class: java.lang.Class<any>
-}
-
+                    class EventQueueMonitorItem {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

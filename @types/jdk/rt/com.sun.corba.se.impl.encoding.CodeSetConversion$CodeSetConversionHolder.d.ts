@@ -4,10 +4,9 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace encoding {
-class CodeSetConversion$CodeSetConversionHolder {
-    public static class: java.lang.Class<any>
-}
-
+                        class CodeSetConversion$CodeSetConversionHolder {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

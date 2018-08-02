@@ -4,9 +4,8 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace activation {
-interface InitialNameService extends com.sun.corba.se.spi.activation.InitialNameServiceOperations , org.omg.CORBA.Object , org.omg.CORBA.portable.IDLEntity {
-}
-
+                        interface InitialNameService extends com.sun.corba.se.spi.activation.InitialNameServiceOperations , org.omg.CORBA.Object , org.omg.CORBA.portable.IDLEntity {
+                        }
                     }
                 }
             }

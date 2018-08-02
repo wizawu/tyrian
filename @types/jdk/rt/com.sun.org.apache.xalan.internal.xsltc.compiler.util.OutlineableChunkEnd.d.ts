@@ -7,14 +7,13 @@ declare namespace com {
                         namespace xsltc {
                             namespace compiler {
                                 namespace util {
-class OutlineableChunkEnd extends com.sun.org.apache.xalan.internal.xsltc.compiler.util.MarkerInstruction {
-    public static OUTLINEABLECHUNKEND: com.sun.org.apache.bcel.internal.generic.Instruction
-    public getName(): string
-    public toString(): string
-    public toString(arg0: boolean): string
-    public static class: java.lang.Class<any>
-}
-
+                                    class OutlineableChunkEnd extends com.sun.org.apache.xalan.internal.xsltc.compiler.util.MarkerInstruction {
+                                        public static OUTLINEABLECHUNKEND: com.sun.org.apache.bcel.internal.generic.Instruction
+                                        public getName(): string
+                                        public toString(): string
+                                        public toString(arg0: boolean): string
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

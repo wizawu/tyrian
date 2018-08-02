@@ -4,15 +4,13 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace logging {
-class OMGSystemException$1 implements com.sun.corba.se.spi.logging.LogWrapperFactory {
-    public create(arg0: java.util.logging.Logger): com.sun.corba.se.spi.logging.LogWrapperBase
-    public static class: java.lang.Class<any>
-}
-
-class OMGSystemException$1$$Lambda implements com.sun.corba.se.spi.logging.LogWrapperFactory {
-    public (arg0: java.util.logging.Logger): com.sun.corba.se.spi.logging.LogWrapperBase
-}
-
+                        class OMGSystemException$1 implements com.sun.corba.se.spi.logging.LogWrapperFactory {
+                            public create(arg0: java.util.logging.Logger): com.sun.corba.se.spi.logging.LogWrapperBase
+                            public static class: java.lang.Class<any>
+                        }
+                        class OMGSystemException$1$$Lambda implements com.sun.corba.se.spi.logging.LogWrapperFactory {
+                            public (arg0: java.util.logging.Logger): com.sun.corba.se.spi.logging.LogWrapperBase
+                        }
                     }
                 }
             }

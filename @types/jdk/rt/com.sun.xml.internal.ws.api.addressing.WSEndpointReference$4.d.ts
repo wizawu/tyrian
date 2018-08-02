@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace addressing {
-class WSEndpointReference$4 {
-    public static class: java.lang.Class<any>
-}
-
+                            class WSEndpointReference$4 {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

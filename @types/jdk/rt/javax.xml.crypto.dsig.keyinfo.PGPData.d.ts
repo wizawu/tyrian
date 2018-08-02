@@ -3,13 +3,12 @@ declare namespace javax {
         namespace crypto {
             namespace dsig {
                 namespace keyinfo {
-interface PGPData extends javax.xml.crypto.XMLStructure {
-    TYPE: string
-    getKeyId(): byte[]
-    getKeyPacket(): byte[]
-    getExternalElements(): java.util.List
-}
-
+                    interface PGPData extends javax.xml.crypto.XMLStructure {
+                        TYPE: string
+                        getKeyId(): byte[]
+                        getKeyPacket(): byte[]
+                        getExternalElements(): java.util.List
+                    }
                 }
             }
         }

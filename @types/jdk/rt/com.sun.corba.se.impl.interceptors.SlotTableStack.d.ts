@@ -4,10 +4,9 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace interceptors {
-class SlotTableStack {
-    public static class: java.lang.Class<any>
-}
-
+                        class SlotTableStack {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

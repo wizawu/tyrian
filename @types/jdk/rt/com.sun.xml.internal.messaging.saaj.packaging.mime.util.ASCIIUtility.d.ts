@@ -7,14 +7,13 @@ declare namespace com {
                         namespace packaging {
                             namespace mime {
                                 namespace util {
-class ASCIIUtility {
-    public static parseInt(arg0: byte[], arg1: int, arg2: int, arg3: int): int
-    public static toString(arg0: byte[], arg1: int, arg2: int): string
-    public static getBytes(arg0: java.lang.String | string): byte[]
-    public static getBytes(arg0: java.io.InputStream): byte[]
-    public static class: java.lang.Class<any>
-}
-
+                                    class ASCIIUtility {
+                                        public static parseInt(arg0: byte[], arg1: int, arg2: int, arg3: int): int
+                                        public static toString(arg0: byte[], arg1: int, arg2: int): string
+                                        public static getBytes(arg0: java.lang.String | string): byte[]
+                                        public static getBytes(arg0: java.io.InputStream): byte[]
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

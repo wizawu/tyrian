@@ -4,10 +4,9 @@ declare namespace com {
             namespace glassfish {
                 namespace external {
                     namespace statistics {
-interface AverageRangeStatistic extends com.sun.org.glassfish.external.statistics.RangeStatistic {
-    getAverage(): long
-}
-
+                        interface AverageRangeStatistic extends com.sun.org.glassfish.external.statistics.RangeStatistic {
+                            getAverage(): long
+                        }
                     }
                 }
             }

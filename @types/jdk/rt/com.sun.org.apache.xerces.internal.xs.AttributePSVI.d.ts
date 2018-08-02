@@ -5,10 +5,9 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace xs {
-interface AttributePSVI extends com.sun.org.apache.xerces.internal.xs.ItemPSVI {
-    getAttributeDeclaration(): com.sun.org.apache.xerces.internal.xs.XSAttributeDeclaration
-}
-
+                            interface AttributePSVI extends com.sun.org.apache.xerces.internal.xs.ItemPSVI {
+                                getAttributeDeclaration(): com.sun.org.apache.xerces.internal.xs.XSAttributeDeclaration
+                            }
                         }
                     }
                 }

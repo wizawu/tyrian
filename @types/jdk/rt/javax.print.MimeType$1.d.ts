@@ -1,8 +1,7 @@
 declare namespace javax {
     namespace print {
-class MimeType$1 {
-    public static class: java.lang.Class<any>
-}
-
+        class MimeType$1 {
+            public static class: java.lang.Class<any>
+        }
     }
 }

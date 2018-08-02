@@ -6,13 +6,12 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace compiler {
-interface Closure {
-    inInnerClass(): boolean
-    getParentClosure(): com.sun.org.apache.xalan.internal.xsltc.compiler.Closure
-    getInnerClassName(): string
-    addVariable(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.VariableRefBase): void
-}
-
+                                interface Closure {
+                                    inInnerClass(): boolean
+                                    getParentClosure(): com.sun.org.apache.xalan.internal.xsltc.compiler.Closure
+                                    getInnerClassName(): string
+                                    addVariable(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.VariableRefBase): void
+                                }
                             }
                         }
                     }

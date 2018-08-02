@@ -5,10 +5,9 @@ declare namespace com {
                 namespace bind {
                     namespace v2 {
                         namespace runtime {
-class Utils {
-    public static class: java.lang.Class<any>
-}
-
+                            class Utils {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

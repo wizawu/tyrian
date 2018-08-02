@@ -6,14 +6,12 @@ declare namespace com {
                     namespace v2 {
                         namespace runtime {
                             namespace unmarshaller {
-interface XmlVisitor$TextPredictor {
-    expectText(): boolean
-}
-
-interface XmlVisitor$TextPredictor$$Lambda {
-    (): boolean
-}
-
+                                interface XmlVisitor$TextPredictor {
+                                    expectText(): boolean
+                                }
+                                interface XmlVisitor$TextPredictor$$Lambda {
+                                    (): boolean
+                                }
                             }
                         }
                     }

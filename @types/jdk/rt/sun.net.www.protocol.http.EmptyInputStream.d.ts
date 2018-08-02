@@ -3,12 +3,11 @@ declare namespace sun {
         namespace www {
             namespace protocol {
                 namespace http {
-class EmptyInputStream extends java.io.InputStream {
-    public available(): int
-    public read(): int
-    public static class: java.lang.Class<any>
-}
-
+                    class EmptyInputStream extends java.io.InputStream {
+                        public available(): int
+                        public read(): int
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

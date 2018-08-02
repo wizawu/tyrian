@@ -5,9 +5,8 @@ declare namespace com {
                 namespace bcel {
                     namespace internal {
                         namespace generic {
-interface PushInstruction extends com.sun.org.apache.bcel.internal.generic.StackProducer {
-}
-
+                            interface PushInstruction extends com.sun.org.apache.bcel.internal.generic.StackProducer {
+                            }
                         }
                     }
                 }

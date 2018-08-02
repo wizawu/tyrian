@@ -6,14 +6,13 @@ declare namespace com {
                     namespace internal {
                         namespace impl {
                             namespace dtd {
-class DTDGrammar$ChildrenList {
-    public length: int
-    public qname: com.sun.org.apache.xerces.internal.xni.QName[]
-    public type: int[]
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                                class DTDGrammar$ChildrenList {
+                                    public length: int
+                                    public qname: com.sun.org.apache.xerces.internal.xni.QName[]
+                                    public type: int[]
+                                    public constructor()
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

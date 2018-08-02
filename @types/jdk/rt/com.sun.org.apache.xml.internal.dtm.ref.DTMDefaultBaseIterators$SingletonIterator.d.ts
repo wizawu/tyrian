@@ -6,16 +6,15 @@ declare namespace com {
                     namespace internal {
                         namespace dtm {
                             namespace ref {
-class DTMDefaultBaseIterators$SingletonIterator extends com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseIterators$InternalAxisIteratorBase {
-    public constructor(arg0: com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseIterators)
-    public constructor(arg0: com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseIterators, arg1: int)
-    public constructor(arg0: com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseIterators, arg1: int, arg2: boolean)
-    public setStartNode(arg0: int): com.sun.org.apache.xml.internal.dtm.DTMAxisIterator
-    public reset(): com.sun.org.apache.xml.internal.dtm.DTMAxisIterator
-    public next(): int
-    public static class: java.lang.Class<any>
-}
-
+                                class DTMDefaultBaseIterators$SingletonIterator extends com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseIterators$InternalAxisIteratorBase {
+                                    public constructor(arg0: com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseIterators)
+                                    public constructor(arg0: com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseIterators, arg1: int)
+                                    public constructor(arg0: com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseIterators, arg1: int, arg2: boolean)
+                                    public setStartNode(arg0: int): com.sun.org.apache.xml.internal.dtm.DTMAxisIterator
+                                    public reset(): com.sun.org.apache.xml.internal.dtm.DTMAxisIterator
+                                    public next(): int
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

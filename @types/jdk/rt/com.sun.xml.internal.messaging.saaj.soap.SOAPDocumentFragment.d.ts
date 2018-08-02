@@ -5,12 +5,11 @@ declare namespace com {
                 namespace messaging {
                     namespace saaj {
                         namespace soap {
-class SOAPDocumentFragment extends com.sun.org.apache.xerces.internal.dom.DocumentFragmentImpl {
-    public constructor(arg0: com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl)
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                            class SOAPDocumentFragment extends com.sun.org.apache.xerces.internal.dom.DocumentFragmentImpl {
+                                public constructor(arg0: com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl)
+                                public constructor()
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

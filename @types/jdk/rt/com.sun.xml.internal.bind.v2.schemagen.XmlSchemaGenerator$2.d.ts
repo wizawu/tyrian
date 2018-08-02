@@ -5,10 +5,9 @@ declare namespace com {
                 namespace bind {
                     namespace v2 {
                         namespace schemagen {
-class XmlSchemaGenerator$2 {
-    public static class: java.lang.Class<any>
-}
-
+                            class XmlSchemaGenerator$2 {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

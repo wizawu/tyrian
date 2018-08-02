@@ -4,11 +4,10 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace dynamicany {
-class DynAnyUtil {
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                        class DynAnyUtil {
+                            public constructor()
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

@@ -5,12 +5,11 @@ declare namespace com {
                 namespace plaf {
                     namespace gtk {
                         namespace resources {
-class gtk_de extends java.util.ListResourceBundle {
-    public constructor()
-    protected getContents(): java.lang.Object[][]
-    public static class: java.lang.Class<any>
-}
-
+                            class gtk_de extends java.util.ListResourceBundle {
+                                public constructor()
+                                protected getContents(): java.lang.Object[][]
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

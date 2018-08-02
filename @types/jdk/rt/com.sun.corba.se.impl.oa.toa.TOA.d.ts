@@ -5,11 +5,10 @@ declare namespace com {
                 namespace impl {
                     namespace oa {
                         namespace toa {
-interface TOA extends com.sun.corba.se.spi.oa.ObjectAdapter {
-    connect(arg0: org.omg.CORBA.Object): void
-    disconnect(arg0: org.omg.CORBA.Object): void
-}
-
+                            interface TOA extends com.sun.corba.se.spi.oa.ObjectAdapter {
+                                connect(arg0: org.omg.CORBA.Object): void
+                                disconnect(arg0: org.omg.CORBA.Object): void
+                            }
                         }
                     }
                 }

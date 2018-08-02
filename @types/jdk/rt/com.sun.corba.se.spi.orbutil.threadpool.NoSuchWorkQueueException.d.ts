@@ -5,11 +5,10 @@ declare namespace com {
                 namespace spi {
                     namespace orbutil {
                         namespace threadpool {
-class NoSuchWorkQueueException extends java.lang.Exception {
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                            class NoSuchWorkQueueException extends java.lang.Exception {
+                                public constructor()
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

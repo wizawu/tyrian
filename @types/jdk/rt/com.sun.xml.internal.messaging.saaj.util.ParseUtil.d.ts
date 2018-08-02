@@ -5,12 +5,11 @@ declare namespace com {
                 namespace messaging {
                     namespace saaj {
                         namespace util {
-class ParseUtil {
-    public constructor()
-    public static decode(arg0: java.lang.String | string): string
-    public static class: java.lang.Class<any>
-}
-
+                            class ParseUtil {
+                                public constructor()
+                                public static decode(arg0: java.lang.String | string): string
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

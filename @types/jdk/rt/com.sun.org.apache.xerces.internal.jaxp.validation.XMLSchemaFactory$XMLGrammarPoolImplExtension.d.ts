@@ -6,12 +6,11 @@ declare namespace com {
                     namespace internal {
                         namespace jaxp {
                             namespace validation {
-class XMLSchemaFactory$XMLGrammarPoolImplExtension extends com.sun.org.apache.xerces.internal.util.XMLGrammarPoolImpl {
-    public constructor()
-    public constructor(arg0: int)
-    public static class: java.lang.Class<any>
-}
-
+                                class XMLSchemaFactory$XMLGrammarPoolImplExtension extends com.sun.org.apache.xerces.internal.util.XMLGrammarPoolImpl {
+                                    public constructor()
+                                    public constructor(arg0: int)
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

@@ -5,11 +5,10 @@ declare namespace com {
                 namespace xml {
                     namespace internal {
                         namespace utils {
-class WrongParserException extends java.lang.RuntimeException {
-    public constructor(arg0: java.lang.String | string)
-    public static class: java.lang.Class<any>
-}
-
+                            class WrongParserException extends java.lang.RuntimeException {
+                                public constructor(arg0: java.lang.String | string)
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

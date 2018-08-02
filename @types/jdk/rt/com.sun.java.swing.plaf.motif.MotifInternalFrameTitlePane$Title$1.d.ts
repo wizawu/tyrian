@@ -4,12 +4,11 @@ declare namespace com {
             namespace swing {
                 namespace plaf {
                     namespace motif {
-class MotifInternalFrameTitlePane$Title$1 implements java.awt.event.MouseMotionListener {
-    public mouseDragged(arg0: java.awt.event.MouseEvent): void
-    public mouseMoved(arg0: java.awt.event.MouseEvent): void
-    public static class: java.lang.Class<any>
-}
-
+                        class MotifInternalFrameTitlePane$Title$1 implements java.awt.event.MouseMotionListener {
+                            public mouseDragged(arg0: java.awt.event.MouseEvent): void
+                            public mouseMoved(arg0: java.awt.event.MouseEvent): void
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

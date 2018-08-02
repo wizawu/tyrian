@@ -5,14 +5,13 @@ declare namespace com {
                 namespace messaging {
                     namespace saaj {
                         namespace soap {
-class MessageImpl$1 implements javax.activation.DataSource {
-    public getInputStream(): java.io.InputStream
-    public getOutputStream(): java.io.OutputStream
-    public getContentType(): string
-    public getName(): string
-    public static class: java.lang.Class<any>
-}
-
+                            class MessageImpl$1 implements javax.activation.DataSource {
+                                public getInputStream(): java.io.InputStream
+                                public getOutputStream(): java.io.OutputStream
+                                public getContentType(): string
+                                public getName(): string
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

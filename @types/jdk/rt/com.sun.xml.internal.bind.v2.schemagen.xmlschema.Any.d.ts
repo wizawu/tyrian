@@ -6,9 +6,8 @@ declare namespace com {
                     namespace v2 {
                         namespace schemagen {
                             namespace xmlschema {
-interface Any extends com.sun.xml.internal.bind.v2.schemagen.xmlschema.Occurs , com.sun.xml.internal.bind.v2.schemagen.xmlschema.Wildcard , com.sun.xml.internal.txw2.TypedXmlWriter {
-}
-
+                                interface Any extends com.sun.xml.internal.bind.v2.schemagen.xmlschema.Occurs , com.sun.xml.internal.bind.v2.schemagen.xmlschema.Wildcard , com.sun.xml.internal.txw2.TypedXmlWriter {
+                                }
                             }
                         }
                     }

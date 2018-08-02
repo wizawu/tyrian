@@ -4,10 +4,9 @@ declare namespace org {
             namespace dsig {
                 namespace internal {
                     namespace dom {
-class DOMKeyInfoFactory$UnmarshalContext extends javax.xml.crypto.dom.DOMCryptoContext {
-    public static class: java.lang.Class<any>
-}
-
+                        class DOMKeyInfoFactory$UnmarshalContext extends javax.xml.crypto.dom.DOMCryptoContext {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

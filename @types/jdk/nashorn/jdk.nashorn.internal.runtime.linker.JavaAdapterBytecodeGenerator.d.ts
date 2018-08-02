@@ -3,10 +3,9 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 namespace linker {
-class JavaAdapterBytecodeGenerator {
-    public static class: java.lang.Class<any>
-}
-
+                    class JavaAdapterBytecodeGenerator {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

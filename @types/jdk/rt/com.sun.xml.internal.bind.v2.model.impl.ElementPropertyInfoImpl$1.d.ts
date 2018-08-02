@@ -6,13 +6,12 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace impl {
-class ElementPropertyInfoImpl$1 extends java.util.AbstractList<com.sun.xml.internal.bind.v2.model.core.TypeInfo<TypeT, ClassDeclT>> {
-    public get(arg0: int): com.sun.xml.internal.bind.v2.model.core.TypeInfo<TypeT, ClassDeclT>
-    public size(): int
-    public get(arg0: int): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                                class ElementPropertyInfoImpl$1 extends java.util.AbstractList<com.sun.xml.internal.bind.v2.model.core.TypeInfo<TypeT, ClassDeclT>> {
+                                    public get(arg0: int): com.sun.xml.internal.bind.v2.model.core.TypeInfo<TypeT, ClassDeclT>
+                                    public size(): int
+                                    public get(arg0: int): java.lang.Object
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

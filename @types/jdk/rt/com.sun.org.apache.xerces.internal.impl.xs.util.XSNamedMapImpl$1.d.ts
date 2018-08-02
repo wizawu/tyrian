@@ -7,12 +7,11 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 namespace util {
-class XSNamedMapImpl$1 extends java.util.AbstractSet {
-    public iterator(): java.util.Iterator
-    public size(): int
-    public static class: java.lang.Class<any>
-}
-
+                                    class XSNamedMapImpl$1 extends java.util.AbstractSet {
+                                        public iterator(): java.util.Iterator
+                                        public size(): int
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

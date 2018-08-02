@@ -6,17 +6,16 @@ declare namespace com {
                     namespace jvnet {
                         namespace fastinfoset {
                             namespace stax {
-interface FastInfosetStreamReader {
-    peekNext(): int
-    accessNamespaceCount(): int
-    accessLocalName(): string
-    accessNamespaceURI(): string
-    accessPrefix(): string
-    accessTextCharacters(): char[]
-    accessTextStart(): int
-    accessTextLength(): int
-}
-
+                                interface FastInfosetStreamReader {
+                                    peekNext(): int
+                                    accessNamespaceCount(): int
+                                    accessLocalName(): string
+                                    accessNamespaceURI(): string
+                                    accessPrefix(): string
+                                    accessTextCharacters(): char[]
+                                    accessTextStart(): int
+                                    accessTextLength(): int
+                                }
                             }
                         }
                     }

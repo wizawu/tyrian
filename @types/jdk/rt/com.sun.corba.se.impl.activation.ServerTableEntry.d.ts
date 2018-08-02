@@ -4,12 +4,11 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace activation {
-class ServerTableEntry {
-    public toString(): string
-    public verify(): int
-    public static class: java.lang.Class<any>
-}
-
+                        class ServerTableEntry {
+                            public toString(): string
+                            public verify(): int
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

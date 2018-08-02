@@ -3,10 +3,9 @@ declare namespace com {
         namespace lang {
             namespace management {
                 namespace internal {
-class MemoryPoolMXBeanImpl extends com.ibm.java.lang.management.internal.MemoryPoolMXBeanImpl implements com.ibm.lang.management.MemoryPoolMXBean {
-    public static class: java.lang.Class<any>
-}
-
+                    class MemoryPoolMXBeanImpl extends com.ibm.java.lang.management.internal.MemoryPoolMXBeanImpl implements com.ibm.lang.management.MemoryPoolMXBean {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

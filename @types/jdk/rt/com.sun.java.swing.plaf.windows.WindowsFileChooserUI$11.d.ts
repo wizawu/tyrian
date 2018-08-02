@@ -4,11 +4,10 @@ declare namespace com {
             namespace swing {
                 namespace plaf {
                     namespace windows {
-class WindowsFileChooserUI$11 implements java.beans.PropertyChangeListener {
-    public propertyChange(arg0: java.beans.PropertyChangeEvent): void
-    public static class: java.lang.Class<any>
-}
-
+                        class WindowsFileChooserUI$11 implements java.beans.PropertyChangeListener {
+                            public propertyChange(arg0: java.beans.PropertyChangeEvent): void
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

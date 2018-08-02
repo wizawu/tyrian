@@ -5,10 +5,9 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace dom {
-class DocumentImpl$EnclosingAttr implements java.io.Serializable {
-    public static class: java.lang.Class<any>
-}
-
+                            class DocumentImpl$EnclosingAttr implements java.io.Serializable {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

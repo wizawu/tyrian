@@ -6,9 +6,8 @@ declare namespace com {
                     namespace api {
                         namespace wsdl {
                             namespace parser {
-interface PolicyWSDLParserExtension {
-}
-
+                                interface PolicyWSDLParserExtension {
+                                }
                             }
                         }
                     }

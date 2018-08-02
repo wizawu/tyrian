@@ -5,14 +5,13 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace fastinfoset {
-class FastInfosetFeature extends javax.xml.ws.WebServiceFeature {
-    public static ID: string
-    public constructor()
-    public constructor(arg0: boolean)
-    public getID(): string
-    public static class: java.lang.Class<any>
-}
-
+                            class FastInfosetFeature extends javax.xml.ws.WebServiceFeature {
+                                public static ID: string
+                                public constructor()
+                                public constructor(arg0: boolean)
+                                public getID(): string
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

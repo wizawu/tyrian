@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace api {
                     namespace databinding {
-interface DatabindingMode extends java.lang.annotation.Annotation {
-    value(): string
-}
-
+                        interface DatabindingMode extends java.lang.annotation.Annotation {
+                            value(): string
+                        }
                     }
                 }
             }

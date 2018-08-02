@@ -3,10 +3,9 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 namespace logging {
-interface Logger extends java.lang.annotation.Annotation {
-    name(): string
-}
-
+                    interface Logger extends java.lang.annotation.Annotation {
+                        name(): string
+                    }
                 }
             }
         }

@@ -1,13 +1,12 @@
 declare namespace javax {
     namespace swing {
-abstract class LayoutStyle {
-    public static setInstance(arg0: javax.swing.LayoutStyle): void
-    public static getInstance(): javax.swing.LayoutStyle
-    public constructor()
-    public getPreferredGap(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg2: javax.swing.LayoutStyle$ComponentPlacement, arg3: int, arg4: java.awt.Container): int
-    public getContainerGap(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: int, arg2: java.awt.Container): int
-    public static class: java.lang.Class<any>
-}
-
+        abstract class LayoutStyle {
+            public static setInstance(arg0: javax.swing.LayoutStyle): void
+            public static getInstance(): javax.swing.LayoutStyle
+            public constructor()
+            public getPreferredGap(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg2: javax.swing.LayoutStyle$ComponentPlacement, arg3: int, arg4: java.awt.Container): int
+            public getContainerGap(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: int, arg2: java.awt.Container): int
+            public static class: java.lang.Class<any>
+        }
     }
 }

@@ -3,14 +3,12 @@ declare namespace sun {
         namespace www {
             namespace protocol {
                 namespace jar {
-interface URLJarFileCallBack {
-    retrieve(arg0: java.net.URL): java.util.jar.JarFile
-}
-
-interface URLJarFileCallBack$$Lambda {
-    (arg0: java.net.URL): java.util.jar.JarFile
-}
-
+                    interface URLJarFileCallBack {
+                        retrieve(arg0: java.net.URL): java.util.jar.JarFile
+                    }
+                    interface URLJarFileCallBack$$Lambda {
+                        (arg0: java.net.URL): java.util.jar.JarFile
+                    }
                 }
             }
         }

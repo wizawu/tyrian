@@ -3,10 +3,9 @@ declare namespace jdk {
         namespace org {
             namespace objectweb {
                 namespace asm {
-class Item {
-    public static class: java.lang.Class<any>
-}
-
+                    class Item {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

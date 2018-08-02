@@ -5,12 +5,11 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace server {
-class AbstractInstanceResolver$1 implements java.security.PrivilegedAction<java.lang.Void> {
-    public run(): java.lang.Void
-    public run(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                            class AbstractInstanceResolver$1 implements java.security.PrivilegedAction<java.lang.Void> {
+                                public run(): java.lang.Void
+                                public run(): java.lang.Object
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

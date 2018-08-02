@@ -5,15 +5,13 @@ declare namespace com {
                 namespace ws {
                     namespace transport {
                         namespace http {
-class HttpAdapter$Oneway implements com.sun.xml.internal.ws.api.server.TransportBackChannel {
-    public close(): void
-    public static class: java.lang.Class<any>
-}
-
-class HttpAdapter$Oneway$$Lambda implements com.sun.xml.internal.ws.api.server.TransportBackChannel {
-    public (): void
-}
-
+                            class HttpAdapter$Oneway implements com.sun.xml.internal.ws.api.server.TransportBackChannel {
+                                public close(): void
+                                public static class: java.lang.Class<any>
+                            }
+                            class HttpAdapter$Oneway$$Lambda implements com.sun.xml.internal.ws.api.server.TransportBackChannel {
+                                public (): void
+                            }
                         }
                     }
                 }

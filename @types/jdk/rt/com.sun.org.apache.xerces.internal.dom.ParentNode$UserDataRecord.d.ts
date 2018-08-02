@@ -5,10 +5,9 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace dom {
-class ParentNode$UserDataRecord implements java.io.Serializable {
-    public static class: java.lang.Class<any>
-}
-
+                            class ParentNode$UserDataRecord implements java.io.Serializable {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

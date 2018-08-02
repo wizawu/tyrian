@@ -3,10 +3,9 @@ declare namespace javax {
         namespace crypto {
             namespace dsig {
                 namespace keyinfo {
-interface KeyName extends javax.xml.crypto.XMLStructure {
-    getName(): string
-}
-
+                    interface KeyName extends javax.xml.crypto.XMLStructure {
+                        getName(): string
+                    }
                 }
             }
         }

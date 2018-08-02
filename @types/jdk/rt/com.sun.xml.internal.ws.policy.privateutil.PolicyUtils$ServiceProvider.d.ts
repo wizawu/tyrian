@@ -5,13 +5,12 @@ declare namespace com {
                 namespace ws {
                     namespace policy {
                         namespace privateutil {
-class PolicyUtils$ServiceProvider {
-    public constructor()
-    public static load<T>(arg0: java.lang.Class<T>, arg1: java.lang.ClassLoader): T[]
-    public static load<T>(arg0: java.lang.Class<T>): T[]
-    public static class: java.lang.Class<any>
-}
-
+                            class PolicyUtils$ServiceProvider {
+                                public constructor()
+                                public static load<T>(arg0: java.lang.Class<T>, arg1: java.lang.ClassLoader): T[]
+                                public static load<T>(arg0: java.lang.Class<T>): T[]
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

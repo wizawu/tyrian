@@ -5,13 +5,12 @@ declare namespace com {
                 namespace ws {
                     namespace server {
                         namespace sei {
-class EndpointArgumentsBuilder$Composite extends com.sun.xml.internal.ws.server.sei.EndpointArgumentsBuilder {
-    public constructor(...arg0: com.sun.xml.internal.ws.server.sei.EndpointArgumentsBuilder[])
-    public constructor(arg0: java.util.Collection<com.sun.xml.internal.ws.server.sei.EndpointArgumentsBuilder>)
-    public readRequest(arg0: com.sun.xml.internal.ws.api.message.Message, arg1: java.lang.Object[]): void
-    public static class: java.lang.Class<any>
-}
-
+                            class EndpointArgumentsBuilder$Composite extends com.sun.xml.internal.ws.server.sei.EndpointArgumentsBuilder {
+                                public constructor(...arg0: com.sun.xml.internal.ws.server.sei.EndpointArgumentsBuilder[])
+                                public constructor(arg0: java.util.Collection<com.sun.xml.internal.ws.server.sei.EndpointArgumentsBuilder>)
+                                public readRequest(arg0: com.sun.xml.internal.ws.api.message.Message, arg1: java.lang.Object[]): void
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

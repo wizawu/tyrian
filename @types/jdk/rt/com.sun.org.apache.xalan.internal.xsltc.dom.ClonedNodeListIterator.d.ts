@@ -6,20 +6,19 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace dom {
-class ClonedNodeListIterator extends com.sun.org.apache.xml.internal.dtm.ref.DTMAxisIteratorBase {
-    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.dom.CachedNodeListIterator)
-    public setRestartable(arg0: boolean): void
-    public setStartNode(arg0: int): com.sun.org.apache.xml.internal.dtm.DTMAxisIterator
-    public next(): int
-    public getPosition(): int
-    public getNodeByPosition(arg0: int): int
-    public cloneIterator(): com.sun.org.apache.xml.internal.dtm.DTMAxisIterator
-    public reset(): com.sun.org.apache.xml.internal.dtm.DTMAxisIterator
-    public setMark(): void
-    public gotoMark(): void
-    public static class: java.lang.Class<any>
-}
-
+                                class ClonedNodeListIterator extends com.sun.org.apache.xml.internal.dtm.ref.DTMAxisIteratorBase {
+                                    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.dom.CachedNodeListIterator)
+                                    public setRestartable(arg0: boolean): void
+                                    public setStartNode(arg0: int): com.sun.org.apache.xml.internal.dtm.DTMAxisIterator
+                                    public next(): int
+                                    public getPosition(): int
+                                    public getNodeByPosition(arg0: int): int
+                                    public cloneIterator(): com.sun.org.apache.xml.internal.dtm.DTMAxisIterator
+                                    public reset(): com.sun.org.apache.xml.internal.dtm.DTMAxisIterator
+                                    public setMark(): void
+                                    public gotoMark(): void
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

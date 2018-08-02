@@ -3,12 +3,11 @@ declare namespace com {
         namespace lang {
             namespace management {
                 namespace internal {
-class ProcessingCapacityNotificationInfoUtil {
-    public static registerConverters(): void
-    public static toCompositeData(arg0: com.ibm.lang.management.ProcessingCapacityNotificationInfo): javax.management.openmbean.CompositeData
-    public static class: java.lang.Class<any>
-}
-
+                    class ProcessingCapacityNotificationInfoUtil {
+                        public static registerConverters(): void
+                        public static toCompositeData(arg0: com.ibm.lang.management.ProcessingCapacityNotificationInfo): javax.management.openmbean.CompositeData
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

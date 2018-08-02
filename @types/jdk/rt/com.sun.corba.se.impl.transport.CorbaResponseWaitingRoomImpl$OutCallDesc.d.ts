@@ -4,10 +4,9 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace transport {
-class CorbaResponseWaitingRoomImpl$OutCallDesc {
-    public static class: java.lang.Class<any>
-}
-
+                        class CorbaResponseWaitingRoomImpl$OutCallDesc {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

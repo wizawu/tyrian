@@ -3,10 +3,9 @@ declare namespace com {
         namespace tools {
             namespace attach {
                 namespace target {
-class Attachment$MethodRefsHolder {
-    public static class: java.lang.Class<any>
-}
-
+                    class Attachment$MethodRefsHolder {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

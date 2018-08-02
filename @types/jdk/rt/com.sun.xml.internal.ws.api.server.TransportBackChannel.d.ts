@@ -5,14 +5,12 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace server {
-interface TransportBackChannel {
-    close(): void
-}
-
-interface TransportBackChannel$$Lambda {
-    (): void
-}
-
+                            interface TransportBackChannel {
+                                close(): void
+                            }
+                            interface TransportBackChannel$$Lambda {
+                                (): void
+                            }
                         }
                     }
                 }

@@ -6,10 +6,9 @@ declare namespace com {
                     namespace internal {
                         namespace impl {
                             namespace xs {
-class SubstitutionGroupHandler$OneSubGroup {
-    public static class: java.lang.Class<any>
-}
-
+                                class SubstitutionGroupHandler$OneSubGroup {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

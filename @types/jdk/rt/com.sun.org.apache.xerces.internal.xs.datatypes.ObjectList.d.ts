@@ -6,12 +6,11 @@ declare namespace com {
                     namespace internal {
                         namespace xs {
                             namespace datatypes {
-interface ObjectList extends java.util.List {
-    getLength(): int
-    contains(arg0: java.lang.Object): boolean
-    item(arg0: int): java.lang.Object
-}
-
+                                interface ObjectList extends java.util.List {
+                                    getLength(): int
+                                    contains(arg0: java.lang.Object): boolean
+                                    item(arg0: int): java.lang.Object
+                                }
                             }
                         }
                     }

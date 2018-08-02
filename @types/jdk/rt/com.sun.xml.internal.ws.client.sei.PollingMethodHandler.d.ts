@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace client {
                         namespace sei {
-class PollingMethodHandler extends com.sun.xml.internal.ws.client.sei.AsyncMethodHandler {
-    public static class: java.lang.Class<any>
-}
-
+                            class PollingMethodHandler extends com.sun.xml.internal.ws.client.sei.AsyncMethodHandler {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

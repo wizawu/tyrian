@@ -7,13 +7,12 @@ declare namespace com {
                         namespace security {
                             namespace c14n {
                                 namespace implementations {
-class Canonicalizer11_WithComments extends com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer11 {
-    public constructor()
-    public engineGetURI(): string
-    public engineGetIncludeComments(): boolean
-    public static class: java.lang.Class<any>
-}
-
+                                    class Canonicalizer11_WithComments extends com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer11 {
+                                        public constructor()
+                                        public engineGetURI(): string
+                                        public engineGetIncludeComments(): boolean
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

@@ -4,13 +4,12 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace transport {
-interface SocketInfo {
-    IIOP_CLEAR_TEXT: string
-    getType(): string
-    getHost(): string
-    getPort(): int
-}
-
+                        interface SocketInfo {
+                            IIOP_CLEAR_TEXT: string
+                            getType(): string
+                            getHost(): string
+                            getPort(): int
+                        }
                     }
                 }
             }

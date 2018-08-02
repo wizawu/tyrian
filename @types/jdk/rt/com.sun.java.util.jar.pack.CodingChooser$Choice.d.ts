@@ -4,11 +4,10 @@ declare namespace com {
             namespace util {
                 namespace jar {
                     namespace pack {
-class CodingChooser$Choice {
-    public toString(): string
-    public static class: java.lang.Class<any>
-}
-
+                        class CodingChooser$Choice {
+                            public toString(): string
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

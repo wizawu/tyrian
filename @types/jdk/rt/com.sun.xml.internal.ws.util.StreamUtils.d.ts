@@ -4,12 +4,11 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace util {
-class StreamUtils {
-    public constructor()
-    public static hasSomeData(arg0: java.io.InputStream): java.io.InputStream
-    public static class: java.lang.Class<any>
-}
-
+                        class StreamUtils {
+                            public constructor()
+                            public static hasSomeData(arg0: java.io.InputStream): java.io.InputStream
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

@@ -3,14 +3,12 @@ declare namespace com {
         namespace xml {
             namespace internal {
                 namespace fastinfoset {
-interface OctetBufferListener {
-    onBeforeOctetBufferOverwrite(): void
-}
-
-interface OctetBufferListener$$Lambda {
-    (): void
-}
-
+                    interface OctetBufferListener {
+                        onBeforeOctetBufferOverwrite(): void
+                    }
+                    interface OctetBufferListener$$Lambda {
+                        (): void
+                    }
                 }
             }
         }

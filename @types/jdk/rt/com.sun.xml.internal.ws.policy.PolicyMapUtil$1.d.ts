@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace policy {
-class PolicyMapUtil$1 {
-    public static class: java.lang.Class<any>
-}
-
+                        class PolicyMapUtil$1 {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

@@ -5,10 +5,9 @@ declare namespace com {
                 namespace impl {
                     namespace oa {
                         namespace poa {
-abstract class POAPolicyMediatorFactory {
-    public static class: java.lang.Class<any>
-}
-
+                            abstract class POAPolicyMediatorFactory {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

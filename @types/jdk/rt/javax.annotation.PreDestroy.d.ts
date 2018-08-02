@@ -1,7 +1,6 @@
 declare namespace javax {
     namespace annotation {
-interface PreDestroy extends java.lang.annotation.Annotation {
-}
-
+        interface PreDestroy extends java.lang.annotation.Annotation {
+        }
     }
 }

@@ -5,14 +5,12 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace impl {
-interface XMLDocumentFragmentScannerImpl$Driver {
-    next(): int
-}
-
-interface XMLDocumentFragmentScannerImpl$Driver$$Lambda {
-    (): int
-}
-
+                            interface XMLDocumentFragmentScannerImpl$Driver {
+                                next(): int
+                            }
+                            interface XMLDocumentFragmentScannerImpl$Driver$$Lambda {
+                                (): int
+                            }
                         }
                     }
                 }

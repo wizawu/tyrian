@@ -7,14 +7,13 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 namespace util {
-class XInt {
-    public intValue(): int
-    public shortValue(): short
-    public equals(arg0: com.sun.org.apache.xerces.internal.impl.xs.util.XInt): boolean
-    public toString(): string
-    public static class: java.lang.Class<any>
-}
-
+                                    class XInt {
+                                        public intValue(): int
+                                        public shortValue(): short
+                                        public equals(arg0: com.sun.org.apache.xerces.internal.impl.xs.util.XInt): boolean
+                                        public toString(): string
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

@@ -5,10 +5,9 @@ declare namespace com {
                 namespace org {
                     namespace jvnet {
                         namespace mimepull {
-class InternetHeaders {
-    public static class: java.lang.Class<any>
-}
-
+                            class InternetHeaders {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

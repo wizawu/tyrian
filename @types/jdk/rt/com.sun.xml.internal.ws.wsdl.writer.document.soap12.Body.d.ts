@@ -7,9 +7,8 @@ declare namespace com {
                         namespace writer {
                             namespace document {
                                 namespace soap12 {
-interface Body extends com.sun.xml.internal.txw2.TypedXmlWriter , com.sun.xml.internal.ws.wsdl.writer.document.soap12.BodyType {
-}
-
+                                    interface Body extends com.sun.xml.internal.txw2.TypedXmlWriter , com.sun.xml.internal.ws.wsdl.writer.document.soap12.BodyType {
+                                    }
                                 }
                             }
                         }

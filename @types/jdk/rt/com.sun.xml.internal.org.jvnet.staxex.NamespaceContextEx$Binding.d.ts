@@ -5,11 +5,10 @@ declare namespace com {
                 namespace org {
                     namespace jvnet {
                         namespace staxex {
-interface NamespaceContextEx$Binding {
-    getPrefix(): string
-    getNamespaceURI(): string
-}
-
+                            interface NamespaceContextEx$Binding {
+                                getPrefix(): string
+                                getNamespaceURI(): string
+                            }
                         }
                     }
                 }

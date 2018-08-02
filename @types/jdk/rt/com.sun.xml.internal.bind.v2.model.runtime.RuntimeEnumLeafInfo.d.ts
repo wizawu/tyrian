@@ -6,9 +6,8 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace runtime {
-interface RuntimeEnumLeafInfo extends com.sun.xml.internal.bind.v2.model.core.EnumLeafInfo<java.lang.reflect.Type, java.lang.Class> , com.sun.xml.internal.bind.v2.model.runtime.RuntimeLeafInfo {
-}
-
+                                interface RuntimeEnumLeafInfo extends com.sun.xml.internal.bind.v2.model.core.EnumLeafInfo<java.lang.reflect.Type, java.lang.Class> , com.sun.xml.internal.bind.v2.model.runtime.RuntimeLeafInfo {
+                                }
                             }
                         }
                     }

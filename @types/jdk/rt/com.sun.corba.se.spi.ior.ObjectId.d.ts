@@ -4,10 +4,9 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace ior {
-interface ObjectId extends com.sun.corba.se.spi.ior.Writeable {
-    getId(): byte[]
-}
-
+                        interface ObjectId extends com.sun.corba.se.spi.ior.Writeable {
+                            getId(): byte[]
+                        }
                     }
                 }
             }

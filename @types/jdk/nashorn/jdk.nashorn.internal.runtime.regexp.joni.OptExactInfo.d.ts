@@ -4,10 +4,9 @@ declare namespace jdk {
             namespace runtime {
                 namespace regexp {
                     namespace joni {
-class OptExactInfo {
-    public static class: java.lang.Class<any>
-}
-
+                        class OptExactInfo {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

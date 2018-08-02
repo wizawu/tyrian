@@ -1,12 +1,11 @@
 declare namespace sun {
     namespace management {
         namespace resources {
-class agent extends java.util.ListResourceBundle {
-    public constructor()
-    protected getContents(): java.lang.Object[][]
-    public static class: java.lang.Class<any>
-}
-
+            class agent extends java.util.ListResourceBundle {
+                public constructor()
+                protected getContents(): java.lang.Object[][]
+                public static class: java.lang.Class<any>
+            }
         }
     }
 }

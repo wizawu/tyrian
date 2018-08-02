@@ -3,10 +3,9 @@ declare namespace com {
         namespace imageio {
             namespace plugins {
                 namespace jpeg {
-class JPEGBuffer {
-    public static class: java.lang.Class<any>
-}
-
+                    class JPEGBuffer {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

@@ -8,15 +8,14 @@ declare namespace com {
                             namespace keys {
                                 namespace storage {
                                     namespace implementations {
-class CertsInFilesystemDirectoryResolver$FilesystemIterator implements java.util.Iterator<java.security.cert.Certificate> {
-    public constructor(arg0: java.util.List<java.security.cert.X509Certificate>)
-    public hasNext(): boolean
-    public next(): java.security.cert.Certificate
-    public remove(): void
-    public next(): java.lang.Object
-    public static class: java.lang.Class<any>
-}
-
+                                        class CertsInFilesystemDirectoryResolver$FilesystemIterator implements java.util.Iterator<java.security.cert.Certificate> {
+                                            public constructor(arg0: java.util.List<java.security.cert.X509Certificate>)
+                                            public hasNext(): boolean
+                                            public next(): java.security.cert.Certificate
+                                            public remove(): void
+                                            public next(): java.lang.Object
+                                            public static class: java.lang.Class<any>
+                                        }
                                     }
                                 }
                             }

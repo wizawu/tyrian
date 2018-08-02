@@ -3,14 +3,12 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 namespace arrays {
-interface AnyElements {
-    getElementWeight(): int
-}
-
-interface AnyElements$$Lambda {
-    (): int
-}
-
+                    interface AnyElements {
+                        getElementWeight(): int
+                    }
+                    interface AnyElements$$Lambda {
+                        (): int
+                    }
                 }
             }
         }

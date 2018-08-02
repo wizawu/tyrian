@@ -5,12 +5,11 @@ declare namespace com {
                 namespace xpath {
                     namespace internal {
                         namespace axes {
-class FilterExprWalker$filterExprOwner implements com.sun.org.apache.xpath.internal.ExpressionOwner {
-    public getExpression(): com.sun.org.apache.xpath.internal.Expression
-    public setExpression(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda): void
-    public static class: java.lang.Class<any>
-}
-
+                            class FilterExprWalker$filterExprOwner implements com.sun.org.apache.xpath.internal.ExpressionOwner {
+                                public getExpression(): com.sun.org.apache.xpath.internal.Expression
+                                public setExpression(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda): void
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

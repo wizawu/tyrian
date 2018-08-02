@@ -4,15 +4,14 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace addressing {
-class ProblemAction {
-    public constructor()
-    public constructor(arg0: java.lang.String | string)
-    public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
-    public getAction(): string
-    public getSoapAction(): string
-    public static class: java.lang.Class<any>
-}
-
+                        class ProblemAction {
+                            public constructor()
+                            public constructor(arg0: java.lang.String | string)
+                            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
+                            public getAction(): string
+                            public getSoapAction(): string
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

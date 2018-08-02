@@ -6,10 +6,9 @@ declare namespace com {
                     namespace v2 {
                         namespace runtime {
                             namespace unmarshaller {
-interface LocatorEx extends org.xml.sax.Locator {
-    getLocation(): javax.xml.bind.ValidationEventLocator
-}
-
+                                interface LocatorEx extends org.xml.sax.Locator {
+                                    getLocation(): javax.xml.bind.ValidationEventLocator
+                                }
                             }
                         }
                     }

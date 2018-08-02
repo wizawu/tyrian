@@ -4,12 +4,11 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace io {
-class OptionalDataException extends java.io.IOException {
-    public length: int
-    public eof: boolean
-    public static class: java.lang.Class<any>
-}
-
+                        class OptionalDataException extends java.io.IOException {
+                            public length: int
+                            public eof: boolean
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

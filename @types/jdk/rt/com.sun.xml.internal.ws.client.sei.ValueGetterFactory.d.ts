@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace client {
                         namespace sei {
-abstract class ValueGetterFactory {
-    public static class: java.lang.Class<any>
-}
-
+                            abstract class ValueGetterFactory {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace server {
                         namespace provider {
-class XMLProviderArgumentBuilder$1 {
-    public static class: java.lang.Class<any>
-}
-
+                            class XMLProviderArgumentBuilder$1 {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

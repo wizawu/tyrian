@@ -4,11 +4,10 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace server {
-interface ServerPropertyConstants {
-    SET_ATTACHMENT_PROPERTY: string
-    GET_ATTACHMENT_PROPERTY: string
-}
-
+                        interface ServerPropertyConstants {
+                            SET_ATTACHMENT_PROPERTY: string
+                            GET_ATTACHMENT_PROPERTY: string
+                        }
                     }
                 }
             }

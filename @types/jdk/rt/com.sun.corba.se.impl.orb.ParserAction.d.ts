@@ -4,13 +4,12 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace orb {
-interface ParserAction {
-    getPropertyName(): string
-    isPrefix(): boolean
-    getFieldName(): string
-    apply(arg0: java.util.Properties): java.lang.Object
-}
-
+                        interface ParserAction {
+                            getPropertyName(): string
+                            isPrefix(): boolean
+                            getFieldName(): string
+                            apply(arg0: java.util.Properties): java.lang.Object
+                        }
                     }
                 }
             }

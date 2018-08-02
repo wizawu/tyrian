@@ -5,12 +5,11 @@ declare namespace com {
                 namespace ws {
                     namespace encoding {
                         namespace xml {
-class XMLMessage$FaultMessage extends com.sun.xml.internal.ws.message.EmptyMessageImpl {
-    public constructor(arg0: com.sun.xml.internal.ws.api.SOAPVersion)
-    public isFault(): boolean
-    public static class: java.lang.Class<any>
-}
-
+                            class XMLMessage$FaultMessage extends com.sun.xml.internal.ws.message.EmptyMessageImpl {
+                                public constructor(arg0: com.sun.xml.internal.ws.api.SOAPVersion)
+                                public isFault(): boolean
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

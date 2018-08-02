@@ -6,12 +6,11 @@ declare namespace com {
                     namespace internal {
                         namespace dtm {
                             namespace ref {
-class DTMDefaultBaseIterators$TypedPrecedingSiblingIterator extends com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseIterators$PrecedingSiblingIterator {
-    public constructor(arg0: com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseIterators, arg1: int)
-    public next(): int
-    public static class: java.lang.Class<any>
-}
-
+                                class DTMDefaultBaseIterators$TypedPrecedingSiblingIterator extends com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseIterators$PrecedingSiblingIterator {
+                                    public constructor(arg0: com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseIterators, arg1: int)
+                                    public next(): int
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

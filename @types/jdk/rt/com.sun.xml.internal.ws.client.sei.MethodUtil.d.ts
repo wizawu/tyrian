@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace client {
                         namespace sei {
-class MethodUtil {
-    public static class: java.lang.Class<any>
-}
-
+                            class MethodUtil {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

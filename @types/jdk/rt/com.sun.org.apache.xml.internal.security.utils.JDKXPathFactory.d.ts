@@ -6,12 +6,11 @@ declare namespace com {
                     namespace internal {
                         namespace security {
                             namespace utils {
-class JDKXPathFactory extends com.sun.org.apache.xml.internal.security.utils.XPathFactory {
-    public constructor()
-    public newXPathAPI(): com.sun.org.apache.xml.internal.security.utils.XPathAPI
-    public static class: java.lang.Class<any>
-}
-
+                                class JDKXPathFactory extends com.sun.org.apache.xml.internal.security.utils.XPathFactory {
+                                    public constructor()
+                                    public newXPathAPI(): com.sun.org.apache.xml.internal.security.utils.XPathAPI
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

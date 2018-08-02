@@ -6,11 +6,10 @@ declare namespace com {
                     namespace transport {
                         namespace http {
                             namespace server {
-class ServerContainer$1 extends com.sun.xml.internal.ws.api.server.Module {
-    public getBoundEndpoints(): java.util.List<com.sun.xml.internal.ws.api.server.BoundEndpoint>
-    public static class: java.lang.Class<any>
-}
-
+                                class ServerContainer$1 extends com.sun.xml.internal.ws.api.server.Module {
+                                    public getBoundEndpoints(): java.util.List<com.sun.xml.internal.ws.api.server.BoundEndpoint>
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

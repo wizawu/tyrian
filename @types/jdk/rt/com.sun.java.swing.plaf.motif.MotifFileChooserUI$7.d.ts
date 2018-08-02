@@ -4,11 +4,10 @@ declare namespace com {
             namespace swing {
                 namespace plaf {
                     namespace motif {
-class MotifFileChooserUI$7 extends javax.swing.JButton {
-    public getMaximumSize(): java.awt.Dimension
-    public static class: java.lang.Class<any>
-}
-
+                        class MotifFileChooserUI$7 extends javax.swing.JButton {
+                            public getMaximumSize(): java.awt.Dimension
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

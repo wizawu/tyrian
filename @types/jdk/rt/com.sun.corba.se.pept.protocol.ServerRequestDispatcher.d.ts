@@ -4,14 +4,12 @@ declare namespace com {
             namespace se {
                 namespace pept {
                     namespace protocol {
-interface ServerRequestDispatcher {
-    dispatch(arg0: com.sun.corba.se.pept.protocol.MessageMediator): void
-}
-
-interface ServerRequestDispatcher$$Lambda {
-    (arg0: com.sun.corba.se.pept.protocol.MessageMediator): void
-}
-
+                        interface ServerRequestDispatcher {
+                            dispatch(arg0: com.sun.corba.se.pept.protocol.MessageMediator): void
+                        }
+                        interface ServerRequestDispatcher$$Lambda {
+                            (arg0: com.sun.corba.se.pept.protocol.MessageMediator): void
+                        }
                     }
                 }
             }

@@ -4,11 +4,10 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace encoding {
-interface RestorableInputStream {
-    createStreamMemento(): java.lang.Object
-    restoreInternalState(arg0: java.lang.Object): void
-}
-
+                        interface RestorableInputStream {
+                            createStreamMemento(): java.lang.Object
+                            restoreInternalState(arg0: java.lang.Object): void
+                        }
                     }
                 }
             }

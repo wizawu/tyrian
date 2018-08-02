@@ -3,9 +3,8 @@ declare namespace jdk {
         namespace internal {
             namespace ir {
                 namespace annotations {
-interface Reference extends java.lang.annotation.Annotation {
-}
-
+                    interface Reference extends java.lang.annotation.Annotation {
+                    }
                 }
             }
         }

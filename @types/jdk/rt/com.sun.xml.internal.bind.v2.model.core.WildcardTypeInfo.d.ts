@@ -6,9 +6,8 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace core {
-interface WildcardTypeInfo<T, C> extends com.sun.xml.internal.bind.v2.model.core.TypeInfo<T, C> {
-}
-
+                                interface WildcardTypeInfo<T, C> extends com.sun.xml.internal.bind.v2.model.core.TypeInfo<T, C> {
+                                }
                             }
                         }
                     }

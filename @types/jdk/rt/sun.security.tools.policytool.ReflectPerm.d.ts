@@ -2,11 +2,10 @@ declare namespace sun {
     namespace security {
         namespace tools {
             namespace policytool {
-class ReflectPerm extends sun.security.tools.policytool.Perm {
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                class ReflectPerm extends sun.security.tools.policytool.Perm {
+                    public constructor()
+                    public static class: java.lang.Class<any>
+                }
             }
         }
     }

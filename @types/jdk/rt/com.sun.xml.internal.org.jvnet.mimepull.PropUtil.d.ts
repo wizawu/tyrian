@@ -5,11 +5,10 @@ declare namespace com {
                 namespace org {
                     namespace jvnet {
                         namespace mimepull {
-class PropUtil {
-    public static getBooleanSystemProperty(arg0: java.lang.String | string, arg1: boolean): boolean
-    public static class: java.lang.Class<any>
-}
-
+                            class PropUtil {
+                                public static getBooleanSystemProperty(arg0: java.lang.String | string, arg1: boolean): boolean
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

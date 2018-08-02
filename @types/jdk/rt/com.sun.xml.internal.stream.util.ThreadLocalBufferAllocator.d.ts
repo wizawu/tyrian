@@ -4,12 +4,11 @@ declare namespace com {
             namespace internal {
                 namespace stream {
                     namespace util {
-class ThreadLocalBufferAllocator {
-    public constructor()
-    public static getBufferAllocator(): com.sun.xml.internal.stream.util.BufferAllocator
-    public static class: java.lang.Class<any>
-}
-
+                        class ThreadLocalBufferAllocator {
+                            public constructor()
+                            public static getBufferAllocator(): com.sun.xml.internal.stream.util.BufferAllocator
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

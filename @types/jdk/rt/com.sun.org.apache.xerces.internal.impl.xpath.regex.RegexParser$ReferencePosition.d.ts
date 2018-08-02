@@ -7,10 +7,9 @@ declare namespace com {
                         namespace impl {
                             namespace xpath {
                                 namespace regex {
-class RegexParser$ReferencePosition {
-    public static class: java.lang.Class<any>
-}
-
+                                    class RegexParser$ReferencePosition {
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

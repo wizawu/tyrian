@@ -6,12 +6,11 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace runtime {
-class BasisLibrary$3 implements org.w3c.dom.NodeList {
-    public getLength(): int
-    public item(arg0: int): org.w3c.dom.Node
-    public static class: java.lang.Class<any>
-}
-
+                                class BasisLibrary$3 implements org.w3c.dom.NodeList {
+                                    public getLength(): int
+                                    public item(arg0: int): org.w3c.dom.Node
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

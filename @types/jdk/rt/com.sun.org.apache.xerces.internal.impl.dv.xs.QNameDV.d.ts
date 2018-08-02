@@ -7,14 +7,13 @@ declare namespace com {
                         namespace impl {
                             namespace dv {
                                 namespace xs {
-class QNameDV extends com.sun.org.apache.xerces.internal.impl.dv.xs.TypeValidator {
-    public constructor()
-    public getAllowedFacets(): short
-    public getActualValue(arg0: java.lang.String | string, arg1: com.sun.org.apache.xerces.internal.impl.dv.ValidationContext): java.lang.Object
-    public getDataLength(arg0: java.lang.Object): int
-    public static class: java.lang.Class<any>
-}
-
+                                    class QNameDV extends com.sun.org.apache.xerces.internal.impl.dv.xs.TypeValidator {
+                                        public constructor()
+                                        public getAllowedFacets(): short
+                                        public getActualValue(arg0: java.lang.String | string, arg1: com.sun.org.apache.xerces.internal.impl.dv.ValidationContext): java.lang.Object
+                                        public getDataLength(arg0: java.lang.Object): int
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

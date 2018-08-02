@@ -5,10 +5,9 @@ declare namespace com {
                 namespace org {
                     namespace jvnet {
                         namespace mimepull {
-class MIMEEvent$EndPart extends com.sun.xml.internal.org.jvnet.mimepull.MIMEEvent {
-    public static class: java.lang.Class<any>
-}
-
+                            class MIMEEvent$EndPart extends com.sun.xml.internal.org.jvnet.mimepull.MIMEEvent {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

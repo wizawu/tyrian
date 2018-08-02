@@ -5,14 +5,12 @@ declare namespace com {
                 namespace ws {
                     namespace policy {
                         namespace spi {
-interface PrefixMapper {
-    getPrefixMap(): java.util.Map<java.lang.String, java.lang.String>
-}
-
-interface PrefixMapper$$Lambda {
-    (): java.util.Map<java.lang.String, java.lang.String>
-}
-
+                            interface PrefixMapper {
+                                getPrefixMap(): java.util.Map<java.lang.String, java.lang.String>
+                            }
+                            interface PrefixMapper$$Lambda {
+                                (): java.util.Map<java.lang.String, java.lang.String>
+                            }
                         }
                     }
                 }

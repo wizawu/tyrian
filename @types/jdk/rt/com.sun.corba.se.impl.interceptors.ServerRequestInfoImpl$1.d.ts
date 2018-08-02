@@ -4,10 +4,9 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace interceptors {
-class ServerRequestInfoImpl$1 {
-    public static class: java.lang.Class<any>
-}
-
+                        class ServerRequestInfoImpl$1 {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

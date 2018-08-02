@@ -6,10 +6,9 @@ declare namespace com {
                     namespace internal {
                         namespace xsltc {
                             namespace trax {
-class SAX2StAXBaseWriter$1 {
-    public static class: java.lang.Class<any>
-}
-
+                                class SAX2StAXBaseWriter$1 {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

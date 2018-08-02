@@ -5,13 +5,12 @@ declare namespace com {
                 namespace xerces {
                     namespace internal {
                         namespace dom {
-class DeferredCDATASectionImpl extends com.sun.org.apache.xerces.internal.dom.CDATASectionImpl implements com.sun.org.apache.xerces.internal.dom.DeferredNode {
-    protected fNodeIndex: int
-    public getNodeIndex(): int
-    protected synchronizeData(): void
-    public static class: java.lang.Class<any>
-}
-
+                            class DeferredCDATASectionImpl extends com.sun.org.apache.xerces.internal.dom.CDATASectionImpl implements com.sun.org.apache.xerces.internal.dom.DeferredNode {
+                                protected fNodeIndex: int
+                                public getNodeIndex(): int
+                                protected synchronizeData(): void
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

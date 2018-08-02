@@ -3,10 +3,9 @@ declare namespace sun {
         namespace www {
             namespace protocol {
                 namespace http {
-class AuthenticationHeader$SchemeMapValue {
-    public static class: java.lang.Class<any>
-}
-
+                    class AuthenticationHeader$SchemeMapValue {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

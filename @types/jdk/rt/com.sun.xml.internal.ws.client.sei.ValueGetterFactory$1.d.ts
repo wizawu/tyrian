@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace client {
                         namespace sei {
-class ValueGetterFactory$1 extends com.sun.xml.internal.ws.client.sei.ValueGetterFactory {
-    public static class: java.lang.Class<any>
-}
-
+                            class ValueGetterFactory$1 extends com.sun.xml.internal.ws.client.sei.ValueGetterFactory {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

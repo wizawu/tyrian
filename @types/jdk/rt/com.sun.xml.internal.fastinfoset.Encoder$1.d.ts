@@ -3,10 +3,9 @@ declare namespace com {
         namespace xml {
             namespace internal {
                 namespace fastinfoset {
-class Encoder$1 {
-    public static class: java.lang.Class<any>
-}
-
+                    class Encoder$1 {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

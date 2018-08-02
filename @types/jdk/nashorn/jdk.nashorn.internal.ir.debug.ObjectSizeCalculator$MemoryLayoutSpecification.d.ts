@@ -3,14 +3,13 @@ declare namespace jdk {
         namespace internal {
             namespace ir {
                 namespace debug {
-interface ObjectSizeCalculator$MemoryLayoutSpecification {
-    getArrayHeaderSize(): int
-    getObjectHeaderSize(): int
-    getObjectPadding(): int
-    getReferenceSize(): int
-    getSuperclassFieldPadding(): int
-}
-
+                    interface ObjectSizeCalculator$MemoryLayoutSpecification {
+                        getArrayHeaderSize(): int
+                        getObjectHeaderSize(): int
+                        getObjectPadding(): int
+                        getReferenceSize(): int
+                        getSuperclassFieldPadding(): int
+                    }
                 }
             }
         }

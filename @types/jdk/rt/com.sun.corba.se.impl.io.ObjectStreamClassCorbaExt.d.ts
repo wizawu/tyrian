@@ -4,10 +4,9 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace io {
-class ObjectStreamClassCorbaExt {
-    public static class: java.lang.Class<any>
-}
-
+                        class ObjectStreamClassCorbaExt {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

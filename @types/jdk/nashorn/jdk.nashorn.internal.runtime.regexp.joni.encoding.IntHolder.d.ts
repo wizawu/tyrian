@@ -5,12 +5,11 @@ declare namespace jdk {
                 namespace regexp {
                     namespace joni {
                         namespace encoding {
-class IntHolder {
-    public value: int
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                            class IntHolder {
+                                public value: int
+                                public constructor()
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

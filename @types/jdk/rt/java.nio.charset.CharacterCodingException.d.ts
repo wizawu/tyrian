@@ -1,11 +1,10 @@
 declare namespace java {
     namespace nio {
         namespace charset {
-class CharacterCodingException extends java.io.IOException {
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+            class CharacterCodingException extends java.io.IOException {
+                public constructor()
+                public static class: java.lang.Class<any>
+            }
         }
     }
 }

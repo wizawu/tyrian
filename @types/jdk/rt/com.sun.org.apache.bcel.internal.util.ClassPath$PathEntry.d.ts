@@ -5,10 +5,9 @@ declare namespace com {
                 namespace bcel {
                     namespace internal {
                         namespace util {
-abstract class ClassPath$PathEntry implements java.io.Serializable {
-    public static class: java.lang.Class<any>
-}
-
+                            abstract class ClassPath$PathEntry implements java.io.Serializable {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

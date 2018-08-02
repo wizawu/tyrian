@@ -6,11 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace jaxp {
                             namespace validation {
-class JAXPValidationMessageFormatter {
-    public static formatMessage(arg0: java.util.Locale, arg1: java.lang.String | string, arg2: java.lang.Object[]): string
-    public static class: java.lang.Class<any>
-}
-
+                                class JAXPValidationMessageFormatter {
+                                    public static formatMessage(arg0: java.util.Locale, arg1: java.lang.String | string, arg2: java.lang.Object[]): string
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

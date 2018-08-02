@@ -6,15 +6,14 @@ declare namespace com {
                     namespace internal {
                         namespace xs {
                             namespace datatypes {
-interface XSDecimal {
-    getBigDecimal(): java.math.BigDecimal
-    getBigInteger(): java.math.BigInteger
-    getLong(): long
-    getInt(): int
-    getShort(): short
-    getByte(): byte
-}
-
+                                interface XSDecimal {
+                                    getBigDecimal(): java.math.BigDecimal
+                                    getBigInteger(): java.math.BigInteger
+                                    getLong(): long
+                                    getInt(): int
+                                    getShort(): short
+                                    getByte(): byte
+                                }
                             }
                         }
                     }

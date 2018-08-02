@@ -5,12 +5,11 @@ declare namespace com {
                 namespace ws {
                     namespace addressing {
                         namespace v200408 {
-class ProblemHeaderQName {
-    public constructor()
-    public constructor(arg0: javax.xml.namespace.QName)
-    public static class: java.lang.Class<any>
-}
-
+                            class ProblemHeaderQName {
+                                public constructor()
+                                public constructor(arg0: javax.xml.namespace.QName)
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

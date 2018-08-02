@@ -6,10 +6,9 @@ declare namespace com {
                     namespace jvnet {
                         namespace fastinfoset {
                             namespace sax {
-interface ExtendedContentHandler extends org.xml.sax.ContentHandler {
-    characters(arg0: char[], arg1: int, arg2: int, arg3: boolean): void
-}
-
+                                interface ExtendedContentHandler extends org.xml.sax.ContentHandler {
+                                    characters(arg0: char[], arg1: int, arg2: int, arg3: boolean): void
+                                }
                             }
                         }
                     }

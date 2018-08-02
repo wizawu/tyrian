@@ -4,10 +4,9 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace activation {
-interface IIOP_CLEAR_TEXT {
-    value: string
-}
-
+                        interface IIOP_CLEAR_TEXT {
+                            value: string
+                        }
                     }
                 }
             }

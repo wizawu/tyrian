@@ -6,10 +6,9 @@ declare namespace com {
                     namespace saaj {
                         namespace soap {
                             namespace name {
-class NameImpl$Envelope1_1Name extends com.sun.xml.internal.messaging.saaj.soap.name.NameImpl$SOAP1_1Name {
-    public static class: java.lang.Class<any>
-}
-
+                                class NameImpl$Envelope1_1Name extends com.sun.xml.internal.messaging.saaj.soap.name.NameImpl$SOAP1_1Name {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

@@ -5,10 +5,9 @@ declare namespace com {
                 namespace impl {
                     namespace naming {
                         namespace namingutil {
-class Utility {
-    public static class: java.lang.Class<any>
-}
-
+                            class Utility {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

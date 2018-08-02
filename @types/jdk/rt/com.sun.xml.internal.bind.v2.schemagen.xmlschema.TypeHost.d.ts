@@ -6,9 +6,8 @@ declare namespace com {
                     namespace v2 {
                         namespace schemagen {
                             namespace xmlschema {
-interface TypeHost extends com.sun.xml.internal.txw2.TypedXmlWriter {
-}
-
+                                interface TypeHost extends com.sun.xml.internal.txw2.TypedXmlWriter {
+                                }
                             }
                         }
                     }

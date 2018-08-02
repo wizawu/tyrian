@@ -4,12 +4,11 @@ declare namespace com {
             namespace util {
                 namespace jar {
                     namespace pack {
-class Attribute$Layout$Element {
-    public hasBand(): boolean
-    public toString(): string
-    public static class: java.lang.Class<any>
-}
-
+                        class Attribute$Layout$Element {
+                            public hasBand(): boolean
+                            public toString(): string
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

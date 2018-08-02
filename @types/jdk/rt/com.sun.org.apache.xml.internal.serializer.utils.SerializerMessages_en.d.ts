@@ -6,11 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace serializer {
                             namespace utils {
-class SerializerMessages_en extends com.sun.org.apache.xml.internal.serializer.utils.SerializerMessages {
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                                class SerializerMessages_en extends com.sun.org.apache.xml.internal.serializer.utils.SerializerMessages {
+                                    public constructor()
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

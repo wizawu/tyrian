@@ -6,10 +6,9 @@ declare namespace com {
                     namespace internal {
                         namespace security {
                             namespace encryption {
-class XMLCipher$Factory {
-    public static class: java.lang.Class<any>
-}
-
+                                class XMLCipher$Factory {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

@@ -4,10 +4,9 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace protocol {
-interface InitialServerRequestDispatcher extends com.sun.corba.se.spi.protocol.CorbaServerRequestDispatcher {
-    init(arg0: com.sun.corba.se.spi.resolver.Resolver): void
-}
-
+                        interface InitialServerRequestDispatcher extends com.sun.corba.se.spi.protocol.CorbaServerRequestDispatcher {
+                            init(arg0: com.sun.corba.se.spi.resolver.Resolver): void
+                        }
                     }
                 }
             }

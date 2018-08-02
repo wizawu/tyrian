@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace server {
                         namespace sei {
-class EndpointArgumentsBuilder$1 {
-    public static class: java.lang.Class<any>
-}
-
+                            class EndpointArgumentsBuilder$1 {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

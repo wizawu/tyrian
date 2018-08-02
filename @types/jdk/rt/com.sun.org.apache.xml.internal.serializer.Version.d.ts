@@ -5,19 +5,18 @@ declare namespace com {
                 namespace xml {
                     namespace internal {
                         namespace serializer {
-class Version {
-    public constructor()
-    public static getVersion(): string
-    public static _main(arg0: java.lang.String[]): void
-    public static getProduct(): string
-    public static getImplementationLanguage(): string
-    public static getMajorVersionNum(): int
-    public static getReleaseVersionNum(): int
-    public static getMaintenanceVersionNum(): int
-    public static getDevelopmentVersionNum(): int
-    public static class: java.lang.Class<any>
-}
-
+                            class Version {
+                                public constructor()
+                                public static getVersion(): string
+                                public static _main(arg0: java.lang.String[]): void
+                                public static getProduct(): string
+                                public static getImplementationLanguage(): string
+                                public static getMajorVersionNum(): int
+                                public static getReleaseVersionNum(): int
+                                public static getMaintenanceVersionNum(): int
+                                public static getDevelopmentVersionNum(): int
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

@@ -4,11 +4,10 @@ declare namespace com {
             namespace se {
                 namespace impl {
                     namespace corba {
-class TCUtility {
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                        class TCUtility {
+                            public constructor()
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

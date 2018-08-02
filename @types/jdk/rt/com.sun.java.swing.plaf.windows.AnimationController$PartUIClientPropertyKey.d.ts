@@ -4,11 +4,10 @@ declare namespace com {
             namespace swing {
                 namespace plaf {
                     namespace windows {
-class AnimationController$PartUIClientPropertyKey implements sun.swing.UIClientPropertyKey {
-    public toString(): string
-    public static class: java.lang.Class<any>
-}
-
+                        class AnimationController$PartUIClientPropertyKey implements sun.swing.UIClientPropertyKey {
+                            public toString(): string
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

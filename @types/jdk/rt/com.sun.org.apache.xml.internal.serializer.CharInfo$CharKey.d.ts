@@ -5,15 +5,14 @@ declare namespace com {
                 namespace xml {
                     namespace internal {
                         namespace serializer {
-class CharInfo$CharKey {
-    public constructor(arg0: char)
-    public constructor()
-    public setChar(arg0: char): void
-    public hashCode(): int
-    public equals(arg0: java.lang.Object): boolean
-    public static class: java.lang.Class<any>
-}
-
+                            class CharInfo$CharKey {
+                                public constructor(arg0: char)
+                                public constructor()
+                                public setChar(arg0: char): void
+                                public hashCode(): int
+                                public equals(arg0: java.lang.Object): boolean
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

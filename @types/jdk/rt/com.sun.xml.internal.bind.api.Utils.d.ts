@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace bind {
                     namespace api {
-class Utils {
-    public static class: java.lang.Class<any>
-}
-
+                        class Utils {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

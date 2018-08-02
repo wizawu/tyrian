@@ -7,12 +7,11 @@ declare namespace com {
                         namespace impl {
                             namespace dv {
                                 namespace dtd {
-class XML11IDDatatypeValidator extends com.sun.org.apache.xerces.internal.impl.dv.dtd.IDDatatypeValidator {
-    public constructor()
-    public validate(arg0: java.lang.String | string, arg1: com.sun.org.apache.xerces.internal.impl.dv.ValidationContext): void
-    public static class: java.lang.Class<any>
-}
-
+                                    class XML11IDDatatypeValidator extends com.sun.org.apache.xerces.internal.impl.dv.dtd.IDDatatypeValidator {
+                                        public constructor()
+                                        public validate(arg0: java.lang.String | string, arg1: com.sun.org.apache.xerces.internal.impl.dv.ValidationContext): void
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

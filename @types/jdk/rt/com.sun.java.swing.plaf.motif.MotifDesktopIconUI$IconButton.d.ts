@@ -4,11 +4,10 @@ declare namespace com {
             namespace swing {
                 namespace plaf {
                     namespace motif {
-class MotifDesktopIconUI$IconButton extends javax.swing.JButton {
-    public isFocusTraversable(): boolean
-    public static class: java.lang.Class<any>
-}
-
+                        class MotifDesktopIconUI$IconButton extends javax.swing.JButton {
+                            public isFocusTraversable(): boolean
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

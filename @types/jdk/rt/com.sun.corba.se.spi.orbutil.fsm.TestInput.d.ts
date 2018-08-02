@@ -5,12 +5,11 @@ declare namespace com {
                 namespace spi {
                     namespace orbutil {
                         namespace fsm {
-class TestInput {
-    public toString(): string
-    public getInput(): com.sun.corba.se.spi.orbutil.fsm.Input
-    public static class: java.lang.Class<any>
-}
-
+                            class TestInput {
+                                public toString(): string
+                                public getInput(): com.sun.corba.se.spi.orbutil.fsm.Input
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

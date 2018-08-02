@@ -5,14 +5,12 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace streaming {
-interface XMLStreamWriterFactory$RecycleAware {
-    onRecycled(): void
-}
-
-interface XMLStreamWriterFactory$RecycleAware$$Lambda {
-    (): void
-}
-
+                            interface XMLStreamWriterFactory$RecycleAware {
+                                onRecycled(): void
+                            }
+                            interface XMLStreamWriterFactory$RecycleAware$$Lambda {
+                                (): void
+                            }
                         }
                     }
                 }

@@ -6,11 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace xs {
                             namespace datatypes {
-interface XSQName {
-    getXNIQName(): com.sun.org.apache.xerces.internal.xni.QName
-    getJAXPQName(): javax.xml.namespace.QName
-}
-
+                                interface XSQName {
+                                    getXNIQName(): com.sun.org.apache.xerces.internal.xni.QName
+                                    getJAXPQName(): javax.xml.namespace.QName
+                                }
                             }
                         }
                     }

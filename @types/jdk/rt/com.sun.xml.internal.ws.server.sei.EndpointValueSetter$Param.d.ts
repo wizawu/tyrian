@@ -5,12 +5,11 @@ declare namespace com {
                 namespace ws {
                     namespace server {
                         namespace sei {
-class EndpointValueSetter$Param extends com.sun.xml.internal.ws.server.sei.EndpointValueSetter {
-    protected idx: int
-    public constructor(arg0: int)
-    public static class: java.lang.Class<any>
-}
-
+                            class EndpointValueSetter$Param extends com.sun.xml.internal.ws.server.sei.EndpointValueSetter {
+                                protected idx: int
+                                public constructor(arg0: int)
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

@@ -5,10 +5,9 @@ declare namespace com {
                 namespace xml {
                     namespace internal {
                         namespace utils {
-class Trie$Node {
-    public static class: java.lang.Class<any>
-}
-
+                            class Trie$Node {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

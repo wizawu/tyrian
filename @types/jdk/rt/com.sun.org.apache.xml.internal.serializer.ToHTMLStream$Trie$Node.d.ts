@@ -5,10 +5,9 @@ declare namespace com {
                 namespace xml {
                     namespace internal {
                         namespace serializer {
-class ToHTMLStream$Trie$Node {
-    public static class: java.lang.Class<any>
-}
-
+                            class ToHTMLStream$Trie$Node {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

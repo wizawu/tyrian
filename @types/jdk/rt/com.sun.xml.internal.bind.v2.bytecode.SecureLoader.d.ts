@@ -5,10 +5,9 @@ declare namespace com {
                 namespace bind {
                     namespace v2 {
                         namespace bytecode {
-class SecureLoader {
-    public static class: java.lang.Class<any>
-}
-
+                            class SecureLoader {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

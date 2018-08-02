@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace wsdl {
                         namespace writer {
-class WSDLGenerator$1 {
-    public static class: java.lang.Class<any>
-}
-
+                            class WSDLGenerator$1 {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

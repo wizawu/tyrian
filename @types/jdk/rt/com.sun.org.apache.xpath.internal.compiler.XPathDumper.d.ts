@@ -5,11 +5,10 @@ declare namespace com {
                 namespace xpath {
                     namespace internal {
                         namespace compiler {
-class XPathDumper {
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                            class XPathDumper {
+                                public constructor()
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

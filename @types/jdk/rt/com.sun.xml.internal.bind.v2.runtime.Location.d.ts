@@ -5,14 +5,12 @@ declare namespace com {
                 namespace bind {
                     namespace v2 {
                         namespace runtime {
-interface Location {
-    toString(): string
-}
-
-interface Location$$Lambda {
-    (): string
-}
-
+                            interface Location {
+                                toString(): string
+                            }
+                            interface Location$$Lambda {
+                                (): string
+                            }
                         }
                     }
                 }

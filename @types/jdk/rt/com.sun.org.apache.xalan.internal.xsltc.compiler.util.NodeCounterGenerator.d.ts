@@ -7,14 +7,13 @@ declare namespace com {
                         namespace xsltc {
                             namespace compiler {
                                 namespace util {
-class NodeCounterGenerator extends com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator {
-    public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: int, arg4: java.lang.String[], arg5: com.sun.org.apache.xalan.internal.xsltc.compiler.Stylesheet)
-    public setTransletIndex(arg0: int): void
-    public loadTranslet(): com.sun.org.apache.bcel.internal.generic.Instruction
-    public isExternal(): boolean
-    public static class: java.lang.Class<any>
-}
-
+                                    class NodeCounterGenerator extends com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator {
+                                        public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: int, arg4: java.lang.String[], arg5: com.sun.org.apache.xalan.internal.xsltc.compiler.Stylesheet)
+                                        public setTransletIndex(arg0: int): void
+                                        public loadTranslet(): com.sun.org.apache.bcel.internal.generic.Instruction
+                                        public isExternal(): boolean
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

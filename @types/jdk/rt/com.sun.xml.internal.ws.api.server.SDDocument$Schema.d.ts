@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace server {
-interface SDDocument$Schema extends com.sun.xml.internal.ws.api.server.SDDocument {
-    getTargetNamespace(): string
-}
-
+                            interface SDDocument$Schema extends com.sun.xml.internal.ws.api.server.SDDocument {
+                                getTargetNamespace(): string
+                            }
                         }
                     }
                 }

@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace util {
                         namespace xml {
-class XMLReaderComposite$2 {
-    public static class: java.lang.Class<any>
-}
-
+                            class XMLReaderComposite$2 {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

@@ -4,11 +4,10 @@ declare namespace jdk {
             namespace runtime {
                 namespace regexp {
                     namespace joni {
-interface WarnCallback {
-    DEFAULT: jdk.nashorn.internal.runtime.regexp.joni.WarnCallback
-    warn(arg0: java.lang.String | string): void
-}
-
+                        interface WarnCallback {
+                            DEFAULT: jdk.nashorn.internal.runtime.regexp.joni.WarnCallback
+                            warn(arg0: java.lang.String | string): void
+                        }
                     }
                 }
             }

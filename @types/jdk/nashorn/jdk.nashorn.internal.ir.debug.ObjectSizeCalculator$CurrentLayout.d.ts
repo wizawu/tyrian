@@ -3,10 +3,9 @@ declare namespace jdk {
         namespace internal {
             namespace ir {
                 namespace debug {
-class ObjectSizeCalculator$CurrentLayout {
-    public static class: java.lang.Class<any>
-}
-
+                    class ObjectSizeCalculator$CurrentLayout {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

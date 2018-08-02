@@ -5,11 +5,10 @@ declare namespace com {
                 namespace ws {
                     namespace transport {
                         namespace http {
-class HttpAdapter$Http10OutputStream extends com.sun.xml.internal.ws.util.ByteArrayBuffer {
-    public close(): void
-    public static class: java.lang.Class<any>
-}
-
+                            class HttpAdapter$Http10OutputStream extends com.sun.xml.internal.ws.util.ByteArrayBuffer {
+                                public close(): void
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

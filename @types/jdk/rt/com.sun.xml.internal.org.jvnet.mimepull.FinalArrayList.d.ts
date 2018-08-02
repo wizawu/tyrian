@@ -5,13 +5,12 @@ declare namespace com {
                 namespace org {
                     namespace jvnet {
                         namespace mimepull {
-class FinalArrayList<T> extends java.util.ArrayList<T> {
-    public constructor(arg0: int)
-    public constructor()
-    public constructor(arg0: java.util.Collection<T>)
-    public static class: java.lang.Class<any>
-}
-
+                            class FinalArrayList<T> extends java.util.ArrayList<T> {
+                                public constructor(arg0: int)
+                                public constructor()
+                                public constructor(arg0: java.util.Collection<T>)
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

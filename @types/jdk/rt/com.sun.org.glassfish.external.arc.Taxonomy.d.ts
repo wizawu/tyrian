@@ -4,11 +4,10 @@ declare namespace com {
             namespace glassfish {
                 namespace external {
                     namespace arc {
-interface Taxonomy extends java.lang.annotation.Annotation {
-    stability(): com.sun.org.glassfish.external.arc.Stability
-    description(): string
-}
-
+                        interface Taxonomy extends java.lang.annotation.Annotation {
+                            stability(): com.sun.org.glassfish.external.arc.Stability
+                            description(): string
+                        }
                     }
                 }
             }

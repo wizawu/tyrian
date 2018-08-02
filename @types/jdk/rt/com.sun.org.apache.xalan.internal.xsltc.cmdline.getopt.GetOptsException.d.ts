@@ -7,11 +7,10 @@ declare namespace com {
                         namespace xsltc {
                             namespace cmdline {
                                 namespace getopt {
-class GetOptsException extends java.lang.Exception {
-    public constructor(arg0: java.lang.String | string)
-    public static class: java.lang.Class<any>
-}
-
+                                    class GetOptsException extends java.lang.Exception {
+                                        public constructor(arg0: java.lang.String | string)
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

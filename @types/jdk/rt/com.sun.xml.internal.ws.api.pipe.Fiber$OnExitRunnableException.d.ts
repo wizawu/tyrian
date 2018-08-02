@@ -5,11 +5,10 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace pipe {
-class Fiber$OnExitRunnableException extends java.lang.RuntimeException {
-    public constructor(arg0: java.lang.Throwable)
-    public static class: java.lang.Class<any>
-}
-
+                            class Fiber$OnExitRunnableException extends java.lang.RuntimeException {
+                                public constructor(arg0: java.lang.Throwable)
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

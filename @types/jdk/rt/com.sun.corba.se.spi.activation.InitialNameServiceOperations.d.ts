@@ -4,14 +4,12 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace activation {
-interface InitialNameServiceOperations {
-    bind(arg0: java.lang.String | string, arg1: org.omg.CORBA.Object, arg2: boolean): void
-}
-
-interface InitialNameServiceOperations$$Lambda {
-    (arg0: java.lang.String | string, arg1: org.omg.CORBA.Object, arg2: boolean): void
-}
-
+                        interface InitialNameServiceOperations {
+                            bind(arg0: java.lang.String | string, arg1: org.omg.CORBA.Object, arg2: boolean): void
+                        }
+                        interface InitialNameServiceOperations$$Lambda {
+                            (arg0: java.lang.String | string, arg1: org.omg.CORBA.Object, arg2: boolean): void
+                        }
                     }
                 }
             }

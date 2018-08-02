@@ -6,10 +6,9 @@ declare namespace com {
                     namespace api {
                         namespace message {
                             namespace saaj {
-class SaajStaxWriter$AttributeDeclaration {
-    public static class: java.lang.Class<any>
-}
-
+                                class SaajStaxWriter$AttributeDeclaration {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

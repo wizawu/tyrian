@@ -5,14 +5,12 @@ declare namespace com {
                 namespace org {
                     namespace jvnet {
                         namespace fastinfoset {
-interface VocabularyApplicationData {
-    clear(): void
-}
-
-interface VocabularyApplicationData$$Lambda {
-    (): void
-}
-
+                            interface VocabularyApplicationData {
+                                clear(): void
+                            }
+                            interface VocabularyApplicationData$$Lambda {
+                                (): void
+                            }
                         }
                     }
                 }

@@ -5,11 +5,10 @@ declare namespace com {
                 namespace spi {
                     namespace ior {
                         namespace iiop {
-interface IIOPAddress extends com.sun.corba.se.spi.ior.Writeable {
-    getHost(): string
-    getPort(): int
-}
-
+                            interface IIOPAddress extends com.sun.corba.se.spi.ior.Writeable {
+                                getHost(): string
+                                getPort(): int
+                            }
                         }
                     }
                 }

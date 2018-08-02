@@ -6,11 +6,10 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace annotation {
-interface AnnotationSource {
-    readAnnotation<A extends java.lang.annotation.Annotation>(arg0: java.lang.Class<A>): A
-    hasAnnotation(arg0: java.lang.Class<java.lang.annotation.Annotation>): boolean
-}
-
+                                interface AnnotationSource {
+                                    readAnnotation<A extends java.lang.annotation.Annotation>(arg0: java.lang.Class<A>): A
+                                    hasAnnotation(arg0: java.lang.Class<java.lang.annotation.Annotation>): boolean
+                                }
                             }
                         }
                     }

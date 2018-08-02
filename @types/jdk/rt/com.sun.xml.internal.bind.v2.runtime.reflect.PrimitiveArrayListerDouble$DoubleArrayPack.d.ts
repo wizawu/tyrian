@@ -6,10 +6,9 @@ declare namespace com {
                     namespace v2 {
                         namespace runtime {
                             namespace reflect {
-class PrimitiveArrayListerDouble$DoubleArrayPack {
-    public static class: java.lang.Class<any>
-}
-
+                                class PrimitiveArrayListerDouble$DoubleArrayPack {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

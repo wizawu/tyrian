@@ -5,12 +5,11 @@ declare namespace jdk {
                 namespace regexp {
                     namespace joni {
                         namespace constants {
-interface Traverse {
-    TRAVERSE_CALLBACK_AT_FIRST: int
-    TRAVERSE_CALLBACK_AT_LAST: int
-    TRAVERSE_CALLBACK_AT_BOTH: int
-}
-
+                            interface Traverse {
+                                TRAVERSE_CALLBACK_AT_FIRST: int
+                                TRAVERSE_CALLBACK_AT_LAST: int
+                                TRAVERSE_CALLBACK_AT_BOTH: int
+                            }
                         }
                     }
                 }

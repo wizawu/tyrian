@@ -3,11 +3,10 @@ declare namespace com {
         namespace jndi {
             namespace url {
                 namespace ldaps {
-class ldapsURLContextFactory extends com.sun.jndi.url.ldap.ldapURLContextFactory {
-    public constructor()
-    public static class: java.lang.Class<any>
-}
-
+                    class ldapsURLContextFactory extends com.sun.jndi.url.ldap.ldapURLContextFactory {
+                        public constructor()
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

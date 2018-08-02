@@ -5,12 +5,11 @@ declare namespace com {
                 namespace plaf {
                     namespace metal {
                         namespace resources {
-class metal_zh_TW extends java.util.ListResourceBundle {
-    public constructor()
-    protected getContents(): java.lang.Object[][]
-    public static class: java.lang.Class<any>
-}
-
+                            class metal_zh_TW extends java.util.ListResourceBundle {
+                                public constructor()
+                                protected getContents(): java.lang.Object[][]
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

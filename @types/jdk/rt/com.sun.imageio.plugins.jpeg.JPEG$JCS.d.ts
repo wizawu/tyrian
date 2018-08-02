@@ -3,13 +3,12 @@ declare namespace com {
         namespace imageio {
             namespace plugins {
                 namespace jpeg {
-class JPEG$JCS {
-    public static sRGB: java.awt.color.ColorSpace
-    public constructor()
-    public static getYCC(): java.awt.color.ColorSpace
-    public static class: java.lang.Class<any>
-}
-
+                    class JPEG$JCS {
+                        public static sRGB: java.awt.color.ColorSpace
+                        public constructor()
+                        public static getYCC(): java.awt.color.ColorSpace
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

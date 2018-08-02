@@ -6,9 +6,8 @@ declare namespace com {
                     namespace v2 {
                         namespace model {
                             namespace runtime {
-interface RuntimeElement extends com.sun.xml.internal.bind.v2.model.core.Element<java.lang.reflect.Type, java.lang.Class> , com.sun.xml.internal.bind.v2.model.runtime.RuntimeTypeInfo {
-}
-
+                                interface RuntimeElement extends com.sun.xml.internal.bind.v2.model.core.Element<java.lang.reflect.Type, java.lang.Class> , com.sun.xml.internal.bind.v2.model.runtime.RuntimeTypeInfo {
+                                }
                             }
                         }
                     }

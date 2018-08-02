@@ -5,10 +5,9 @@ declare namespace com {
                 namespace bcel {
                     namespace internal {
                         namespace generic {
-class InstructionConstants$Clinit {
-    public static class: java.lang.Class<any>
-}
-
+                            class InstructionConstants$Clinit {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

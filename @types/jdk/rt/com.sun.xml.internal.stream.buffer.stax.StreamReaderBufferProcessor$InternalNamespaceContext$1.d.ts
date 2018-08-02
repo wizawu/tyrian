@@ -5,13 +5,12 @@ declare namespace com {
                 namespace stream {
                     namespace buffer {
                         namespace stax {
-class StreamReaderBufferProcessor$InternalNamespaceContext$1 implements java.util.Iterator {
-    public hasNext(): boolean
-    public next(): java.lang.Object
-    public remove(): void
-    public static class: java.lang.Class<any>
-}
-
+                            class StreamReaderBufferProcessor$InternalNamespaceContext$1 implements java.util.Iterator {
+                                public hasNext(): boolean
+                                public next(): java.lang.Object
+                                public remove(): void
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

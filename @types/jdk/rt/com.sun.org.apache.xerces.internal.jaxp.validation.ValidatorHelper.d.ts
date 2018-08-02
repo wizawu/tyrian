@@ -6,14 +6,12 @@ declare namespace com {
                     namespace internal {
                         namespace jaxp {
                             namespace validation {
-interface ValidatorHelper {
-    validate(arg0: javax.xml.transform.Source, arg1: javax.xml.transform.Result): void
-}
-
-interface ValidatorHelper$$Lambda {
-    (arg0: javax.xml.transform.Source, arg1: javax.xml.transform.Result): void
-}
-
+                                interface ValidatorHelper {
+                                    validate(arg0: javax.xml.transform.Source, arg1: javax.xml.transform.Result): void
+                                }
+                                interface ValidatorHelper$$Lambda {
+                                    (arg0: javax.xml.transform.Source, arg1: javax.xml.transform.Result): void
+                                }
                             }
                         }
                     }

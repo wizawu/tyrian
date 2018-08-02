@@ -3,11 +3,10 @@ declare namespace jdk {
         namespace internal {
             namespace ir {
                 namespace debug {
-class NashornTextifier$Graph {
-    public toString(): string
-    public static class: java.lang.Class<any>
-}
-
+                    class NashornTextifier$Graph {
+                        public toString(): string
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

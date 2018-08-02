@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace client {
                         namespace dispatch {
-class JAXBDispatch$1 {
-    public static class: java.lang.Class<any>
-}
-
+                            class JAXBDispatch$1 {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

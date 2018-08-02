@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace server {
-class Container$1 {
-    public static class: java.lang.Class<any>
-}
-
+                            class Container$1 {
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

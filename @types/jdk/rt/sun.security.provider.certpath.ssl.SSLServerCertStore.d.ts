@@ -3,12 +3,11 @@ declare namespace sun {
         namespace provider {
             namespace certpath {
                 namespace ssl {
-class SSLServerCertStore extends java.security.cert.CertStoreSpi {
-    public engineGetCertificates(arg0: java.security.cert.CertSelector): java.util.Collection<java.security.cert.X509Certificate>
-    public engineGetCRLs(arg0: java.security.cert.CRLSelector): java.util.Collection<java.security.cert.X509CRL>
-    public static class: java.lang.Class<any>
-}
-
+                    class SSLServerCertStore extends java.security.cert.CertStoreSpi {
+                        public engineGetCertificates(arg0: java.security.cert.CertSelector): java.util.Collection<java.security.cert.X509Certificate>
+                        public engineGetCRLs(arg0: java.security.cert.CRLSelector): java.util.Collection<java.security.cert.X509CRL>
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

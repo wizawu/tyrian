@@ -5,14 +5,13 @@ declare namespace com {
                 namespace ws {
                     namespace encoding {
                         namespace policy {
-class EncodingPolicyValidator implements com.sun.xml.internal.ws.policy.spi.PolicyAssertionValidator {
-    public constructor()
-    public validateClientSide(arg0: com.sun.xml.internal.ws.policy.PolicyAssertion): com.sun.xml.internal.ws.policy.spi.PolicyAssertionValidator$Fitness
-    public validateServerSide(arg0: com.sun.xml.internal.ws.policy.PolicyAssertion): com.sun.xml.internal.ws.policy.spi.PolicyAssertionValidator$Fitness
-    public declareSupportedDomains(): java.lang.String[]
-    public static class: java.lang.Class<any>
-}
-
+                            class EncodingPolicyValidator implements com.sun.xml.internal.ws.policy.spi.PolicyAssertionValidator {
+                                public constructor()
+                                public validateClientSide(arg0: com.sun.xml.internal.ws.policy.PolicyAssertion): com.sun.xml.internal.ws.policy.spi.PolicyAssertionValidator$Fitness
+                                public validateServerSide(arg0: com.sun.xml.internal.ws.policy.PolicyAssertion): com.sun.xml.internal.ws.policy.spi.PolicyAssertionValidator$Fitness
+                                public declareSupportedDomains(): java.lang.String[]
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

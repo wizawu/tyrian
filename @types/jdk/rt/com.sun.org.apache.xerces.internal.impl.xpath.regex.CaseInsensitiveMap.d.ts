@@ -7,12 +7,11 @@ declare namespace com {
                         namespace impl {
                             namespace xpath {
                                 namespace regex {
-class CaseInsensitiveMap {
-    public constructor()
-    public static get(arg0: int): int[]
-    public static class: java.lang.Class<any>
-}
-
+                                    class CaseInsensitiveMap {
+                                        public constructor()
+                                        public static get(arg0: int): int[]
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

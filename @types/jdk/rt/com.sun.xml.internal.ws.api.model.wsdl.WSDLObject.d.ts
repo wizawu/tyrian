@@ -6,14 +6,12 @@ declare namespace com {
                     namespace api {
                         namespace model {
                             namespace wsdl {
-interface WSDLObject {
-    getLocation(): org.xml.sax.Locator
-}
-
-interface WSDLObject$$Lambda {
-    (): org.xml.sax.Locator
-}
-
+                                interface WSDLObject {
+                                    getLocation(): org.xml.sax.Locator
+                                }
+                                interface WSDLObject$$Lambda {
+                                    (): org.xml.sax.Locator
+                                }
                             }
                         }
                     }

@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace fault {
-class SOAPFaultBuilder$2 {
-    public static class: java.lang.Class<any>
-}
-
+                        class SOAPFaultBuilder$2 {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

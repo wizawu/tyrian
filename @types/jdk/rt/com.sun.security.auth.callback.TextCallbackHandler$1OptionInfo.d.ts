@@ -3,10 +3,9 @@ declare namespace com {
         namespace security {
             namespace auth {
                 namespace callback {
-class TextCallbackHandler$1OptionInfo {
-    public static class: java.lang.Class<any>
-}
-
+                    class TextCallbackHandler$1OptionInfo {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

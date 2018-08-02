@@ -4,10 +4,9 @@ declare namespace com {
             namespace internal {
                 namespace ws {
                     namespace util {
-class ReadAllStream$1 {
-    public static class: java.lang.Class<any>
-}
-
+                        class ReadAllStream$1 {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

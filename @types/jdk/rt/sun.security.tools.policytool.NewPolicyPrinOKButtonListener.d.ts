@@ -2,11 +2,10 @@ declare namespace sun {
     namespace security {
         namespace tools {
             namespace policytool {
-class NewPolicyPrinOKButtonListener implements java.awt.event.ActionListener {
-    public actionPerformed(arg0: java.awt.event.ActionEvent): void
-    public static class: java.lang.Class<any>
-}
-
+                class NewPolicyPrinOKButtonListener implements java.awt.event.ActionListener {
+                    public actionPerformed(arg0: java.awt.event.ActionEvent): void
+                    public static class: java.lang.Class<any>
+                }
             }
         }
     }

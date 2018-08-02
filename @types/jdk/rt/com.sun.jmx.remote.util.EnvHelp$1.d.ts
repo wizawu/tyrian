@@ -3,10 +3,9 @@ declare namespace com {
         namespace jmx {
             namespace remote {
                 namespace util {
-class EnvHelp$1 {
-    public static class: java.lang.Class<any>
-}
-
+                    class EnvHelp$1 {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

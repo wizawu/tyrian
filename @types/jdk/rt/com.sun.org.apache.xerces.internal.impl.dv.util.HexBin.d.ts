@@ -7,13 +7,12 @@ declare namespace com {
                         namespace impl {
                             namespace dv {
                                 namespace util {
-class HexBin {
-    public constructor()
-    public static encode(arg0: byte[]): string
-    public static decode(arg0: java.lang.String | string): byte[]
-    public static class: java.lang.Class<any>
-}
-
+                                    class HexBin {
+                                        public constructor()
+                                        public static encode(arg0: byte[]): string
+                                        public static decode(arg0: java.lang.String | string): byte[]
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

@@ -5,10 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         namespace server {
-interface EndpointAwareCodec extends com.sun.xml.internal.ws.api.pipe.Codec {
-    setEndpoint(arg0: com.sun.xml.internal.ws.api.server.WSEndpoint): void
-}
-
+                            interface EndpointAwareCodec extends com.sun.xml.internal.ws.api.pipe.Codec {
+                                setEndpoint(arg0: com.sun.xml.internal.ws.api.server.WSEndpoint): void
+                            }
                         }
                     }
                 }

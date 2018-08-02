@@ -4,14 +4,13 @@ declare namespace com {
             namespace se {
                 namespace spi {
                     namespace activation {
-class ServerHeldDown extends org.omg.CORBA.UserException {
-    public serverId: int
-    public constructor()
-    public constructor(arg0: int)
-    public constructor(arg0: java.lang.String | string, arg1: int)
-    public static class: java.lang.Class<any>
-}
-
+                        class ServerHeldDown extends org.omg.CORBA.UserException {
+                            public serverId: int
+                            public constructor()
+                            public constructor(arg0: int)
+                            public constructor(arg0: java.lang.String | string, arg1: int)
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

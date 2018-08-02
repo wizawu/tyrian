@@ -4,10 +4,9 @@ declare namespace com {
             namespace util {
                 namespace jar {
                     namespace pack {
-class PackerImpl$DoPack {
-    public static class: java.lang.Class<any>
-}
-
+                        class PackerImpl$DoPack {
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

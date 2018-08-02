@@ -6,11 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace security {
                             namespace encryption {
-interface CipherValue {
-    getValue(): string
-    setValue(arg0: java.lang.String | string): void
-}
-
+                                interface CipherValue {
+                                    getValue(): string
+                                    setValue(arg0: java.lang.String | string): void
+                                }
                             }
                         }
                     }

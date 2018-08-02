@@ -3,10 +3,9 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 namespace linker {
-class AdaptationResult {
-    public static class: java.lang.Class<any>
-}
-
+                    class AdaptationResult {
+                        public static class: java.lang.Class<any>
+                    }
                 }
             }
         }

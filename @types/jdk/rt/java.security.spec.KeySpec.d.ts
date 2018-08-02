@@ -1,9 +1,8 @@
 declare namespace java {
     namespace security {
         namespace spec {
-interface KeySpec {
-}
-
+            interface KeySpec {
+            }
         }
     }
 }

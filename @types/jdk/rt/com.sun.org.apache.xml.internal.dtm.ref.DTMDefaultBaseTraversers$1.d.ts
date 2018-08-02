@@ -6,10 +6,9 @@ declare namespace com {
                     namespace internal {
                         namespace dtm {
                             namespace ref {
-class DTMDefaultBaseTraversers$1 {
-    public static class: java.lang.Class<any>
-}
-
+                                class DTMDefaultBaseTraversers$1 {
+                                    public static class: java.lang.Class<any>
+                                }
                             }
                         }
                     }

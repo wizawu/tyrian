@@ -5,12 +5,11 @@ declare namespace com {
                 namespace ws {
                     namespace client {
                         namespace sei {
-abstract class MessageFiller {
-    protected methodPos: int
-    protected constructor(arg0: int)
-    public static class: java.lang.Class<any>
-}
-
+                            abstract class MessageFiller {
+                                protected methodPos: int
+                                protected constructor(arg0: int)
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

@@ -4,12 +4,11 @@ declare namespace com {
             namespace internal {
                 namespace webservices {
                     namespace jaxws_databinding {
-class XmlOneway implements javax.jws.Oneway {
-    public constructor()
-    public annotationType(): java.lang.Class<java.lang.annotation.Annotation>
-    public static class: java.lang.Class<any>
-}
-
+                        class XmlOneway implements javax.jws.Oneway {
+                            public constructor()
+                            public annotationType(): java.lang.Class<java.lang.annotation.Annotation>
+                            public static class: java.lang.Class<any>
+                        }
                     }
                 }
             }

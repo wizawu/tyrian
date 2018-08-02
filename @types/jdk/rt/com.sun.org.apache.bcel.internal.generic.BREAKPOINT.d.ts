@@ -5,12 +5,11 @@ declare namespace com {
                 namespace bcel {
                     namespace internal {
                         namespace generic {
-class BREAKPOINT extends com.sun.org.apache.bcel.internal.generic.Instruction {
-    public constructor()
-    public accept(arg0: com.sun.org.apache.bcel.internal.generic.Visitor): void
-    public static class: java.lang.Class<any>
-}
-
+                            class BREAKPOINT extends com.sun.org.apache.bcel.internal.generic.Instruction {
+                                public constructor()
+                                public accept(arg0: com.sun.org.apache.bcel.internal.generic.Visitor): void
+                                public static class: java.lang.Class<any>
+                            }
                         }
                     }
                 }

@@ -1,10 +1,9 @@
 declare namespace sun {
     namespace security {
         namespace ssl {
-class RSAClientKeyExchange extends sun.security.ssl.HandshakeMessage {
-    public static class: java.lang.Class<any>
-}
-
+            class RSAClientKeyExchange extends sun.security.ssl.HandshakeMessage {
+                public static class: java.lang.Class<any>
+            }
         }
     }
 }

@@ -1,9 +1,8 @@
 declare namespace java {
     namespace beans {
-class MetaData$java_util_Collections$CheckedSet_PersistenceDelegate extends java.beans.MetaData$java_util_Collections {
-    protected instantiate(arg0: java.lang.Object, arg1: java.beans.Encoder): java.beans.Expression
-    public static class: java.lang.Class<any>
-}
-
+        class MetaData$java_util_Collections$CheckedSet_PersistenceDelegate extends java.beans.MetaData$java_util_Collections {
+            protected instantiate(arg0: java.lang.Object, arg1: java.beans.Encoder): java.beans.Expression
+            public static class: java.lang.Class<any>
+        }
     }
 }

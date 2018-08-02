@@ -7,12 +7,11 @@ declare namespace com {
                         namespace security {
                             namespace keys {
                                 namespace storage {
-abstract class StorageResolverSpi {
-    public constructor()
-    public getIterator(): java.util.Iterator<java.security.cert.Certificate>
-    public static class: java.lang.Class<any>
-}
-
+                                    abstract class StorageResolverSpi {
+                                        public constructor()
+                                        public getIterator(): java.util.Iterator<java.security.cert.Certificate>
+                                        public static class: java.lang.Class<any>
+                                    }
                                 }
                             }
                         }

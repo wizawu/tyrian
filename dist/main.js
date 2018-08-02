@@ -22,7 +22,7 @@ else if (command === "env") {
     console.log(env_1.default());
 }
 else if (command === "install") {
-    install_1.default(instdir);
+    install_1.default(instdir, process.argv[3] === "-D");
 }
 else if (command === "build" && process.argv[3]) {
     var options = {

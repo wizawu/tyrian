@@ -43,7 +43,8 @@ var package_json = JSON.stringify({
     "mvnDependencies": []
 }, null, 2);
 var build_gradle = function (deps) { return "\n    apply plugin: \"java\"\n\n    repositories {\n        jcenter()\n        mavenCentral()\n    }\n\n    task install(type: Copy) {\n        into \"" + process.cwd() + "/lib\"\n        from configurations.runtime\n    }\n\n    dependencies {\n        " + deps + "\n    }\n"; };
-function default_1(instdir) {
+function default_1(instdir, noTypes) {
+    if (noTypes === void 0) { noTypes = false; }
     if (!fs.existsSync("tsconfig.json")) {
         fs.writeFileSync("tsconfig.json", exports.tsconfig(instdir));
     }
@@ -77,6 +78,8 @@ function default_1(instdir) {
         if (child.status !== 0)
             process.exit(child.status);
     }
+    if (noTypes)
+        return;
     if (fs.existsSync("lib")) {
         if (!fs.existsSync("lib/@types"))
             fs.mkdirSync("lib/@types");

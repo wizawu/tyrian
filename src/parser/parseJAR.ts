@@ -37,6 +37,7 @@ function outputPackage(pkg: any, namespaces: string[], outputDir: string) {
                 text = text.replace(new RegExp(`\\.${ns}\\.`, "g"), `.${ns}$.`)
             })
             result += text + "\n" + tail.reverse().join("\n")
+            if (key.indexOf("<") > 0) key = key.substring(0, key.indexOf("<"))
             fs.writeFileSync(path.join(outputDir, [...namespaces, key, "d.ts"].join(".")), result)
         } else {
             outputPackage(pkg[key], [...namespaces, key], outputDir)

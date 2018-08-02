@@ -1,5 +1,3 @@
-/// <reference path="jdk/index.d.ts" />
-
 /**
  *  Reference:
  *    http://docs.oracle.com/javase/8/docs/technotes/guides/scripting/nashorn/api.html

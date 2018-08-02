@@ -22,14 +22,15 @@ export const tsconfig = instdir => JSON.stringify({
         "strictNullChecks": true,
         "target": "es5",
         "typeRoots": [
-            `${instdir}/@types`,
+            `${instdir}/@types/jdk/rt`,
             "lib/@types",
             "node_modules/@types",
         ]
     },
     "include": [
         `${instdir}/node_modules/typescript/lib/lib.es6.d.ts`,
-        `${instdir}/@types/**/*.d.ts`,
+        `${instdir}/@types/jdk/rt/java.*.d.ts`,
+        `${instdir}/@types/jdk/rt/jdk.*.d.ts`,
         "lib/@types/**/*.d.ts",
         "**/*.ts",
         "**/*.tsx",

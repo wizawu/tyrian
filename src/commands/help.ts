@@ -18,7 +18,6 @@ Usage:
   1c run [-w] [jjs options] <output>    run an output file (.js)
 
 build options:
-  --skipJDK             skip JDK definition checking
   -u                    uglify build results
   -w                    watch changes and re-build
 

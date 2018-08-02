@@ -1,4 +1,3 @@
-import * as crypto from "crypto"
 import * as filesize from "filesize"
 import * as fs from "fs"
 import * as path from "path"
@@ -16,7 +15,6 @@ export interface Options {
     output: string[]
     watch: boolean
     uglify: boolean
-    skipJDK?: boolean
 }
 
 function getCompiler(instdir: string, instmod: string, options: Options) {
@@ -68,16 +66,6 @@ function getCompiler(instdir: string, instmod: string, options: Options) {
         webpackConfig = packageJSON.webpack || {}
     }
 
-    // Create a tsconfig file for builds with --skipJDK
-    let tsconfigFile = "tsconfig.json"
-    if (options.skipJDK) {
-        let tsBuildConfig = fs.readFileSync("tsconfig.json", "utf-8")
-            .replace(/(1c\/@types)/g, options.skipJDK ? "1c/@types-lite" : "$1")
-        let sha1 = crypto.createHash("sha1").update(tsBuildConfig).digest().toString("hex")
-        tsconfigFile = "tsconfig.build." + sha1.slice(0, 7) + ".json"
-        fs.writeFileSync(tsconfigFile, tsBuildConfig)
-    }
-
     return webpack({
         mode: options.uglify ? "production" : "development",
         devtool: "source-map",
@@ -97,7 +85,7 @@ function getCompiler(instdir: string, instmod: string, options: Options) {
                 test: /\.tsx?$/,
                 use: [{
                     loader: "ts-loader",
-                    options: { configFile: tsconfigFile },
+                    options: { configFile: "tsconfig.json" },
                 }]
             }, {
                 test: /^[^!]+\.css$/,

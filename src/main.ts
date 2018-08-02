@@ -39,7 +39,7 @@ if (command === "help") {
         } else if (arg === "-u") {
             options.uglify = true
         } else if (arg === "--skipJDK") {
-            options.skipJDK = true
+            console.error(chalk.yellow("`--skipJDK` is no longer supported"))
         } else if (arg === "-c") {
             _c = true
             if (_c && _o) {

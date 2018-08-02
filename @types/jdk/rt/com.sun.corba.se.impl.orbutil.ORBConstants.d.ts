@@ -1,0 +1,169 @@
+declare namespace com {
+    namespace sun {
+        namespace corba {
+            namespace se {
+                namespace impl {
+                    namespace orbutil {
+class ORBConstants {
+    public static STRINGIFY_PREFIX: string
+    public static NEO_FIRST_SERVICE_CONTEXT: int
+    public static NUM_NEO_SERVICE_CONTEXTS: int
+    public static TAG_ORB_VERSION: int
+    public static SUN_TAGGED_COMPONENT_ID_BASE: int
+    public static SUN_SERVICE_CONTEXT_ID_BASE: int
+    public static TAG_CONTAINER_ID: int
+    public static TAG_REQUEST_PARTITIONING_ID: int
+    public static TAG_JAVA_SERIALIZATION_ID: int
+    public static CONTAINER_ID_SERVICE_CONTEXT: int
+    public static SERVANT_CACHING_POLICY: int
+    public static ZERO_PORT_POLICY: int
+    public static COPY_OBJECT_POLICY: int
+    public static REQUEST_PARTITIONING_POLICY: int
+    public static TOA_SCID: int
+    public static DEFAULT_SCID: int
+    public static FIRST_POA_SCID: int
+    public static MAX_POA_SCID: int
+    public static TRANSIENT_SCID: int
+    public static PERSISTENT_SCID: int
+    public static SC_TRANSIENT_SCID: int
+    public static SC_PERSISTENT_SCID: int
+    public static IISC_TRANSIENT_SCID: int
+    public static IISC_PERSISTENT_SCID: int
+    public static MINSC_TRANSIENT_SCID: int
+    public static MINSC_PERSISTENT_SCID: int
+    public static ORG_OMG_PREFIX: string
+    public static ORG_OMG_CORBA_PREFIX: string
+    public static INITIAL_HOST_PROPERTY: string
+    public static INITIAL_PORT_PROPERTY: string
+    public static INITIAL_SERVICES_PROPERTY: string
+    public static DEFAULT_INIT_REF_PROPERTY: string
+    public static ORB_INIT_REF_PROPERTY: string
+    public static SUN_PREFIX: string
+    public static ALLOW_LOCAL_OPTIMIZATION: string
+    public static SERVER_PORT_PROPERTY: string
+    public static SERVER_HOST_PROPERTY: string
+    public static ORB_ID_PROPERTY: string
+    public static OLD_ORB_ID_PROPERTY: string
+    public static ORB_SERVER_ID_PROPERTY: string
+    public static DEBUG_PROPERTY: string
+    public static USE_REP_ID: string
+    public static LISTEN_ON_ALL_INTERFACES: string
+    public static GIOP_VERSION: string
+    public static GIOP_FRAGMENT_SIZE: string
+    public static GIOP_BUFFER_SIZE: string
+    public static GIOP_11_BUFFMGR: string
+    public static GIOP_12_BUFFMGR: string
+    public static GIOP_TARGET_ADDRESSING: string
+    public static GIOP_DEFAULT_FRAGMENT_SIZE: int
+    public static GIOP_DEFAULT_BUFFER_SIZE: int
+    public static DEFAULT_GIOP_11_BUFFMGR: int
+    public static DEFAULT_GIOP_12_BUFFMGR: int
+    public static ADDR_DISP_OBJKEY: short
+    public static ADDR_DISP_PROFILE: short
+    public static ADDR_DISP_IOR: short
+    public static ADDR_DISP_HANDLE_ALL: short
+    public static GIOP_12_MSG_BODY_ALIGNMENT: int
+    public static GIOP_FRAGMENT_DIVISOR: int
+    public static GIOP_FRAGMENT_MINIMUM_SIZE: int
+    public static HIGH_WATER_MARK_PROPERTY: string
+    public static LOW_WATER_MARK_PROPERTY: string
+    public static NUMBER_TO_RECLAIM_PROPERTY: string
+    public static ACCEPTOR_CLASS_PREFIX_PROPERTY: string
+    public static CONTACT_INFO_LIST_FACTORY_CLASS_PROPERTY: string
+    public static LEGACY_SOCKET_FACTORY_CLASS_PROPERTY: string
+    public static SOCKET_FACTORY_CLASS_PROPERTY: string
+    public static LISTEN_SOCKET_PROPERTY: string
+    public static IOR_TO_SOCKET_INFO_CLASS_PROPERTY: string
+    public static IIOP_PRIMARY_TO_CONTACT_INFO_CLASS_PROPERTY: string
+    public static REQUEST_PARTITIONING_MIN_THREAD_POOL_ID: int
+    public static REQUEST_PARTITIONING_MAX_THREAD_POOL_ID: int
+    public static TRANSPORT_TCP_READ_TIMEOUTS_PROPERTY: string
+    public static TRANSPORT_TCP_INITIAL_TIME_TO_WAIT: int
+    public static TRANSPORT_TCP_MAX_TIME_TO_WAIT: int
+    public static TRANSPORT_TCP_GIOP_HEADER_MAX_TIME_TO_WAIT: int
+    public static TRANSPORT_TCP_TIME_TO_WAIT_BACKOFF_FACTOR: int
+    public static USE_NIO_SELECT_TO_WAIT_PROPERTY: string
+    public static ACCEPTOR_SOCKET_TYPE_PROPERTY: string
+    public static ACCEPTOR_SOCKET_USE_WORKER_THREAD_FOR_EVENT_PROPERTY: string
+    public static CONNECTION_SOCKET_TYPE_PROPERTY: string
+    public static CONNECTION_SOCKET_USE_WORKER_THREAD_FOR_EVENT_PROPERTY: string
+    public static DISABLE_DIRECT_BYTE_BUFFER_USE_PROPERTY: string
+    public static SOCKET: string
+    public static SOCKETCHANNEL: string
+    public static PERSISTENT_SERVER_PORT_PROPERTY: string
+    public static SERVER_ID_PROPERTY: string
+    public static BAD_SERVER_ID_HANDLER_CLASS_PROPERTY: string
+    public static ACTIVATED_PROPERTY: string
+    public static SERVER_NAME_PROPERTY: string
+    public static SERVER_DEF_VERIFY_PROPERTY: string
+    public static SUN_LC_PREFIX: string
+    public static SUN_LC_VERSION_PREFIX: string
+    public static JTS_CLASS_PROPERTY: string
+    public static ENABLE_JAVA_SERIALIZATION_PROPERTY: string
+    public static PI_ORB_INITIALIZER_CLASS_PREFIX: string
+    public static USE_DYNAMIC_STUB_PROPERTY: string
+    public static DYNAMIC_STUB_FACTORY_FACTORY_CLASS: string
+    public static DEFAULT_INITIAL_PORT: int
+    public static DEFAULT_INS_HOST: string
+    public static DEFAULT_INS_PORT: int
+    public static DEFAULT_INS_GIOP_MAJOR_VERSION: int
+    public static DEFAULT_INS_GIOP_MINOR_VERSION: int
+    public static MAJORNUMBER_SUPPORTED: int
+    public static MINORNUMBERMAX: int
+    public static TRANSIENT: int
+    public static PERSISTENT: int
+    public static DB_DIR_PROPERTY: string
+    public static DB_PROPERTY: string
+    public static ORBD_PORT_PROPERTY: string
+    public static SERVER_POLLING_TIME: string
+    public static SERVER_STARTUP_DELAY: string
+    public static DEFAULT_ACTIVATION_PORT: int
+    public static RI_NAMESERVICE_PORT: int
+    public static DEFAULT_SERVER_POLLING_TIME: int
+    public static DEFAULT_SERVER_STARTUP_DELAY: int
+    public static LOG_LEVEL_PROPERTY: string
+    public static LOG_RESOURCE_FILE: string
+    public static TRANSIENT_NAME_SERVICE_NAME: string
+    public static PERSISTENT_NAME_SERVICE_NAME: string
+    public static NAME_SERVICE_SERVER_ID: string
+    public static ROOT_POA_NAME: string
+    public static POA_CURRENT_NAME: string
+    public static SERVER_ACTIVATOR_NAME: string
+    public static SERVER_LOCATOR_NAME: string
+    public static SERVER_REPOSITORY_NAME: string
+    public static INITIAL_NAME_SERVICE_NAME: string
+    public static TRANSACTION_CURRENT_NAME: string
+    public static DYN_ANY_FACTORY_NAME: string
+    public static PI_CURRENT_NAME: string
+    public static CODEC_FACTORY_NAME: string
+    public static DEFAULT_DB_DIR: string
+    public static DEFAULT_DB_NAME: string
+    public static INITIAL_ORB_DB: string
+    public static SERVER_LOG_DIR: string
+    public static ORBID_DIR_BASE: string
+    public static ORBID_DB_FILE_NAME: string
+    public static DEFAULT_INACTIVITY_TIMEOUT: int
+    public static THREADPOOL_DEFAULT_NAME: string
+    public static WORKQUEUE_DEFAULT_NAME: string
+    public static LEGACY_SUN_NOT_SERIALIZABLE: int
+    public static DEFAULT_ALWAYS_SEND_CODESET_CTX: boolean
+    public static ALWAYS_SEND_CODESET_CTX_PROPERTY: string
+    public static DEFAULT_USE_BYTE_ORDER_MARKERS: boolean
+    public static USE_BOMS: string
+    public static DEFAULT_USE_BYTE_ORDER_MARKERS_IN_ENCAPS: boolean
+    public static USE_BOMS_IN_ENCAPS: string
+    public static CHAR_CODESETS: string
+    public static WCHAR_CODESETS: string
+    public static STREAM_FORMAT_VERSION_1: byte
+    public static STREAM_FORMAT_VERSION_2: byte
+    public static isTransient(arg0: int): boolean
+    public static makePersistent(arg0: int): int
+    public static class: java.lang.Class<any>
+}
+
+                    }
+                }
+            }
+        }
+    }
+}

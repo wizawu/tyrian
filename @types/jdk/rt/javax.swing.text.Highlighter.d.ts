@@ -1,0 +1,17 @@
+declare namespace javax {
+    namespace swing {
+        namespace text {
+interface Highlighter {
+    install(arg0: javax.swing.text.JTextComponent | javax.swing.text.JTextComponent$$Lambda): void
+    deinstall(arg0: javax.swing.text.JTextComponent | javax.swing.text.JTextComponent$$Lambda): void
+    paint(arg0: java.awt.Graphics): void
+    addHighlight(arg0: int, arg1: int, arg2: javax.swing.text.Highlighter$HighlightPainter | javax.swing.text.Highlighter$HighlightPainter$$Lambda): java.lang.Object
+    removeHighlight(arg0: java.lang.Object): void
+    removeAllHighlights(): void
+    changeHighlight(arg0: java.lang.Object, arg1: int, arg2: int): void
+    getHighlights(): javax.swing.text.Highlighter$Highlight[]
+}
+
+        }
+    }
+}

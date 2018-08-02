@@ -1,0 +1,13 @@
+declare namespace org {
+    namespace w3c {
+        namespace dom {
+            namespace xpath {
+interface XPathNamespace extends org.w3c.dom.Node {
+    XPATH_NAMESPACE_NODE: short
+    getOwnerElement(): org.w3c.dom.Element
+}
+
+            }
+        }
+    }
+}

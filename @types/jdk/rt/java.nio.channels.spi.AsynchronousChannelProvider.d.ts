@@ -1,0 +1,18 @@
+declare namespace java {
+    namespace nio {
+        namespace channels {
+            namespace spi {
+abstract class AsynchronousChannelProvider {
+    protected constructor()
+    public static provider(): java.nio.channels.spi.AsynchronousChannelProvider
+    public openAsynchronousChannelGroup(arg0: int, arg1: java.util.concurrent.ThreadFactory | java.util.concurrent.ThreadFactory$$Lambda): java.nio.channels.AsynchronousChannelGroup
+    public openAsynchronousChannelGroup(arg0: java.util.concurrent.ExecutorService, arg1: int): java.nio.channels.AsynchronousChannelGroup
+    public openAsynchronousServerSocketChannel(arg0: java.nio.channels.AsynchronousChannelGroup): java.nio.channels.AsynchronousServerSocketChannel
+    public openAsynchronousSocketChannel(arg0: java.nio.channels.AsynchronousChannelGroup): java.nio.channels.AsynchronousSocketChannel
+    public static class: java.lang.Class<any>
+}
+
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+declare namespace java {
+    namespace awt {
+        namespace event {
+class PaintEvent extends java.awt.event.ComponentEvent {
+    public static PAINT_FIRST: int
+    public static PAINT_LAST: int
+    public static PAINT: int
+    public static UPDATE: int
+    public constructor(arg0: java.awt.Component, arg1: int, arg2: java.awt.Rectangle)
+    public getUpdateRect(): java.awt.Rectangle
+    public setUpdateRect(arg0: java.awt.Rectangle): void
+    public paramString(): string
+    public static class: java.lang.Class<any>
+}
+
+        }
+    }
+}

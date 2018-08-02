@@ -1,0 +1,16 @@
+declare namespace com {
+    namespace sun {
+        namespace corba {
+            namespace se {
+                namespace impl {
+                    namespace interceptors {
+class ServerRequestInfoImpl$1 {
+    public static class: java.lang.Class<any>
+}
+
+                    }
+                }
+            }
+        }
+    }
+}

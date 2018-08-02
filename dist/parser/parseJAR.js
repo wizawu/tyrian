@@ -18,15 +18,40 @@ function commandOutput(command, args) {
     var child = child_process_1.spawnSync(command, args, { stdio: "pipe" });
     return child.stdout.toString() + child.stderr.toString();
 }
-function parsePackage(pkg, level) {
-    var result = "";
+function outputPackage(pkg, namespaces, outputDir) {
     Object.keys(pkg).forEach(function (key) {
         if (typeof pkg[key] === "string") {
+            var result_1 = "declare ";
+            var tail_1 = [];
+            var space_1 = "";
+            namespaces.forEach(function (ns) {
+                if (ILLEGAL_NAMESPACES.indexOf(ns) >= 0)
+                    ns += "$";
+                result_1 += space_1 + "namespace " + ns + " {\n";
+                tail_1.push(space_1 + "}");
+                space_1 += "    ";
+            });
             var text_1 = pkg[key];
             ILLEGAL_NAMESPACES.forEach(function (ns) {
                 text_1 = text_1.replace(new RegExp("\\." + ns + "\\.", "g"), "." + ns + "$.");
             });
-            result += text_1;
+            result_1 += text_1 + "\n" + tail_1.reverse().join("\n");
+            fs.writeFileSync(path.join(outputDir, namespaces.concat([key, "d.ts"]).join(".")), result_1);
+        }
+        else {
+            outputPackage(pkg[key], namespaces.concat([key]), outputDir);
+        }
+    });
+}
+function parsePackage(pkg, level) {
+    var result = "";
+    Object.keys(pkg).forEach(function (key) {
+        if (typeof pkg[key] === "string") {
+            var text_2 = pkg[key];
+            ILLEGAL_NAMESPACES.forEach(function (ns) {
+                text_2 = text_2.replace(new RegExp("\\." + ns + "\\.", "g"), "." + ns + "$.");
+            });
+            result += text_2;
         }
         else {
             var namespace = key;
@@ -39,7 +64,7 @@ function parsePackage(pkg, level) {
     });
     return result;
 }
-function parseJAR(jar) {
+function parseJAR(jar, outputDir) {
     var classes = commandOutput("jar", ["tf", jar]).split("\n");
     classes = classes.filter(function (c) { return /\.class$/.test(c); }).map(function (c) { return c.replace(/\//g, ".").replace(/\.class$/, ""); });
     console.log(chalk_1.default.gray("Disassembling " + jar + ": " + classes.length + " classes"));
@@ -48,7 +73,7 @@ function parseJAR(jar) {
         var javaCode = commandOutput("javap", ["-protected", "-cp", jar].concat(classes.slice(i, i + 2000)));
         parseClass_1.default(javaCode, pkg);
     }
-    return parsePackage(pkg, 0);
+    return outputDir ? outputPackage(pkg, [], outputDir) : parsePackage(pkg, 0);
 }
 exports.default = parseJAR;
 function generateJDKDefinition(root) {
@@ -56,10 +81,9 @@ function generateJDKDefinition(root) {
     jars.forEach(function (jar) { return parseJAR(jar); });
     jars.forEach(function (jar) { return parseJAR(jar); });
     fs.writeFileSync(fs.realpathSync(root + "/dist/parser/isLambda.js"), "module.exports = " + JSON.stringify(lambda.isLambda, null, 4));
-    jars.forEach(function (jar) {
-        var target = path.basename(jar).replace(/\.jar$/, ".d.ts");
-        fs.writeFileSync(target, parseJAR(jar).replace(/^\s+\n/gm, ""));
-    });
+    var basename = function (jar) { return path.basename(jar, ".jar"); };
+    jars.forEach(function (jar) { return fs.existsSync(basename(jar)) || fs.mkdirSync(basename(jar)); });
+    jars.forEach(function (jar) { return parseJAR(jar, basename(jar)); });
 }
 exports.generateJDKDefinition = generateJDKDefinition;
 function getTopPackages(jar) {

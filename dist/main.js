@@ -43,7 +43,7 @@ else if (command === "build" && process.argv[3]) {
             options.uglify = true;
         }
         else if (arg === "--skipJDK") {
-            options.skipJDK = true;
+            console.error(chalk_1.default.yellow("`--skipJDK` is no longer supported"));
         }
         else if (arg === "-c") {
             _c = true;

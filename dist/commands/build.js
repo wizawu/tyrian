@@ -8,7 +8,6 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
     return t;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var crypto = require("crypto");
 var filesize = require("filesize");
 var fs = require("fs");
 var path = require("path");
@@ -60,14 +59,6 @@ function getCompiler(instdir, instmod, options) {
         var packageJSON = JSON.parse(fs.readFileSync("package.json", "utf-8"));
         webpackConfig = packageJSON.webpack || {};
     }
-    var tsconfigFile = "tsconfig.json";
-    if (options.skipJDK) {
-        var tsBuildConfig = fs.readFileSync("tsconfig.json", "utf-8")
-            .replace(/(1c\/@types)/g, options.skipJDK ? "1c/@types-lite" : "$1");
-        var sha1 = crypto.createHash("sha1").update(tsBuildConfig).digest().toString("hex");
-        tsconfigFile = "tsconfig.build." + sha1.slice(0, 7) + ".json";
-        fs.writeFileSync(tsconfigFile, tsBuildConfig);
-    }
     return webpack({
         mode: options.uglify ? "production" : "development",
         devtool: "source-map",
@@ -84,7 +75,7 @@ function getCompiler(instdir, instmod, options) {
                     test: /\.tsx?$/,
                     use: [{
                             loader: "ts-loader",
-                            options: { configFile: tsconfigFile },
+                            options: { configFile: "tsconfig.json" },
                         }]
                 }, {
                     test: /^[^!]+\.css$/,

@@ -86,9 +86,9 @@ export function generateJDKDefinition(root: string) {
         fs.realpathSync(`${root}/dist/parser/isLambda.js`),
         `module.exports = ${JSON.stringify(lambda.isLambda, null, 4)}`
     )
-    let basename = jar => path.basename(jar, ".jar")
-    jars.forEach(jar => fs.existsSync(basename(jar)) || fs.mkdirSync(basename(jar)))
-    jars.forEach(jar => parseJAR(jar, basename(jar)))
+    let targetDir = jar => path.basename(jar, ".jar")
+    jars.forEach(jar => fs.existsSync(targetDir(jar)) || fs.mkdirSync(targetDir(jar)))
+    jars.forEach(jar => parseJAR(jar, targetDir(jar)))
 }
 
 export function getTopPackages(jar: string): string[] {

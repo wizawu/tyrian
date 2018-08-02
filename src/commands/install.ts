@@ -1,6 +1,7 @@
 import * as crypto from "crypto"
 import * as fs from "fs"
 import * as os from "os"
+import * as path from "path"
 import chalk from "chalk"
 import { spawnSync } from "child_process"
 
@@ -23,7 +24,7 @@ export const tsconfig = instdir => JSON.stringify({
         "target": "es5",
         "typeRoots": [
             `${instdir}/@types/jdk/rt`,
-            "lib/@types",
+            "lib/@types/**",
             "node_modules/@types",
         ]
     },
@@ -114,9 +115,10 @@ export default function (instdir: string) {
             parseJAR(`lib/${jar}`)
         })
         fs.readdirSync("lib").filter(jar => /\.jar$/.test(jar)).map(jar => {
-            let filename = "lib/@types/" + jar.replace(/\.jar$/, ".d.ts")
-            fs.writeFileSync(filename, parseJAR(`lib/${jar}`))
-            console.log(chalk.green("Generated " + filename))
+            let targetDir = jar => path.join("lib", "@types", path.basename(jar, ".jar"))
+            if (!fs.existsSync(targetDir(jar))) fs.mkdirSync(targetDir(jar))
+            parseJAR(path.join("lib", jar), targetDir(jar))
+            console.log(chalk.green("Generated " + targetDir(jar)))
         })
     }
 }

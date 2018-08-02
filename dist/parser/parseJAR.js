@@ -36,6 +36,8 @@ function outputPackage(pkg, namespaces, outputDir) {
                 text_1 = text_1.replace(new RegExp("\\." + ns + "\\.", "g"), "." + ns + "$.");
             });
             result_1 += text_1 + "\n" + tail_1.reverse().join("\n");
+            if (key.indexOf("<") > 0)
+                key = key.substring(0, key.indexOf("<"));
             fs.writeFileSync(path.join(outputDir, namespaces.concat([key, "d.ts"]).join(".")), result_1);
         }
         else {

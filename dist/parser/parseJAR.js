@@ -81,9 +81,9 @@ function generateJDKDefinition(root) {
     jars.forEach(function (jar) { return parseJAR(jar); });
     jars.forEach(function (jar) { return parseJAR(jar); });
     fs.writeFileSync(fs.realpathSync(root + "/dist/parser/isLambda.js"), "module.exports = " + JSON.stringify(lambda.isLambda, null, 4));
-    var basename = function (jar) { return path.basename(jar, ".jar"); };
-    jars.forEach(function (jar) { return fs.existsSync(basename(jar)) || fs.mkdirSync(basename(jar)); });
-    jars.forEach(function (jar) { return parseJAR(jar, basename(jar)); });
+    var targetDir = function (jar) { return path.basename(jar, ".jar"); };
+    jars.forEach(function (jar) { return fs.existsSync(targetDir(jar)) || fs.mkdirSync(targetDir(jar)); });
+    jars.forEach(function (jar) { return parseJAR(jar, targetDir(jar)); });
 }
 exports.generateJDKDefinition = generateJDKDefinition;
 function getTopPackages(jar) {

@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var crypto = require("crypto");
 var fs = require("fs");
 var os = require("os");
+var path = require("path");
 var chalk_1 = require("chalk");
 var child_process_1 = require("child_process");
 var parseJAR_1 = require("../parser/parseJAR");
@@ -22,7 +23,7 @@ exports.tsconfig = function (instdir) { return JSON.stringify({
         "target": "es5",
         "typeRoots": [
             instdir + "/@types/jdk/rt",
-            "lib/@types",
+            "lib/@types/**",
             "node_modules/@types",
         ]
     },
@@ -69,9 +70,9 @@ function default_1(instdir) {
     });
     if (Object.keys(mvnDependencies).length > 0) {
         var deps = Object.keys(mvnDependencies).map(function (key) { return "compile '" + key + ":" + mvnDependencies[key] + "'"; });
-        var path = os.tmpdir() + "/build.gradle." + crypto.randomBytes(16).toString("hex");
-        fs.writeFileSync(path, build_gradle(deps.join("\n")));
-        child = child_process_1.spawnSync("gradle", ["-b", path, "--no-daemon", "install"], { stdio: "inherit" });
+        var path_1 = os.tmpdir() + "/build.gradle." + crypto.randomBytes(16).toString("hex");
+        fs.writeFileSync(path_1, build_gradle(deps.join("\n")));
+        child = child_process_1.spawnSync("gradle", ["-b", path_1, "--no-daemon", "install"], { stdio: "inherit" });
         if (child.status !== 0)
             process.exit(child.status);
     }
@@ -82,9 +83,11 @@ function default_1(instdir) {
             parseJAR_1.default("lib/" + jar);
         });
         fs.readdirSync("lib").filter(function (jar) { return /\.jar$/.test(jar); }).map(function (jar) {
-            var filename = "lib/@types/" + jar.replace(/\.jar$/, ".d.ts");
-            fs.writeFileSync(filename, parseJAR_1.default("lib/" + jar));
-            console.log(chalk_1.default.green("Generated " + filename));
+            var targetDir = function (jar) { return path.join("lib", "@types", path.basename(jar, ".jar")); };
+            if (!fs.existsSync(targetDir(jar)))
+                fs.mkdirSync(targetDir(jar));
+            parseJAR_1.default(path.join("lib", jar), targetDir(jar));
+            console.log(chalk_1.default.green("Generated " + targetDir(jar)));
         });
     }
 }

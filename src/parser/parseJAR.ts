@@ -20,6 +20,30 @@ function commandOutput(command: string, args: string[]): string {
     return child.stdout.toString() + child.stderr.toString()
 }
 
+function outputPackage(pkg: any, namespaces: string[], outputDir: string) {
+    Object.keys(pkg).forEach(key => {
+        if (typeof pkg[key] === "string") {
+            let result = "declare "
+            let tail: string[] = []
+            let space = ""
+            namespaces.forEach(ns => {
+                if (ILLEGAL_NAMESPACES.indexOf(ns) >= 0) ns += "$"
+                result += `${space}namespace ${ns} {\n`
+                tail.push(`${space}}`)
+                space += "    "
+            })
+            let text = pkg[key]
+            ILLEGAL_NAMESPACES.forEach(ns => {
+                text = text.replace(new RegExp(`\\.${ns}\\.`, "g"), `.${ns}$.`)
+            })
+            result += text + "\n" + tail.reverse().join("\n")
+            fs.writeFileSync(path.join(outputDir, [...namespaces, key, "d.ts"].join(".")), result)
+        } else {
+            outputPackage(pkg[key], [...namespaces, key], outputDir)
+        }
+    })
+}
+
 function parsePackage(pkg: any, level: number): string {
     let result = ""
     Object.keys(pkg).forEach(key => {
@@ -40,7 +64,7 @@ function parsePackage(pkg: any, level: number): string {
     return result
 }
 
-function parseJAR(jar: string): string {
+export default function parseJAR(jar: string, outputDir?: string) {
     let classes = commandOutput("jar", ["tf", jar]).split("\n")
     classes = classes.filter(c => /\.class$/.test(c)).map(c => c.replace(/\//g, ".").replace(/\.class$/, ""))
     console.log(chalk.gray(`Disassembling ${jar}: ${classes.length} classes`))
@@ -51,10 +75,8 @@ function parseJAR(jar: string): string {
         parseClass(javaCode, pkg)
     }
 
-    return parsePackage(pkg, 0)
+    return outputDir ? outputPackage(pkg, [], outputDir) : parsePackage(pkg, 0)
 }
-
-export default parseJAR
 
 export function generateJDKDefinition(root: string) {
     let jars = process.argv.slice(1)
@@ -64,10 +86,9 @@ export function generateJDKDefinition(root: string) {
         fs.realpathSync(`${root}/dist/parser/isLambda.js`),
         `module.exports = ${JSON.stringify(lambda.isLambda, null, 4)}`
     )
-    jars.forEach(jar => {
-        let target = path.basename(jar).replace(/\.jar$/, ".d.ts")
-        fs.writeFileSync(target, parseJAR(jar).replace(/^\s+\n/gm, ""))
-    })
+    let basename = jar => path.basename(jar, ".jar")
+    jars.forEach(jar => fs.existsSync(basename(jar)) || fs.mkdirSync(basename(jar)))
+    jars.forEach(jar => parseJAR(jar, basename(jar)))
 }
 
 export function getTopPackages(jar: string): string[] {

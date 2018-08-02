@@ -16,7 +16,7 @@ jars=$(find $JAVA_HOME/jre/lib -name "*.jar")
 
 node -e "require('$dir/../dist/parser/parseJAR').generateJDKDefinition('$dir/..')" $jars
 
-ls *.d.ts | grep -v index.d.ts | xargs -I {} echo "/// <reference path=\"{}\" />" > index.d.ts
+find . -name "*.d.ts" | grep -v index.d.ts | xargs -I {} echo "/// <reference path=\"{}\" />" > index.d.ts
 
 # run test
 

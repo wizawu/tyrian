@@ -5,7 +5,7 @@ declare namespace sun {
                 class KeepAliveStreamCleaner extends java.util.LinkedList<sun.net.www.http.KeepAliveCleanerEntry> implements java.lang.Runnable {
                     protected static MAX_DATA_REMAINING: int
                     protected static MAX_CAPACITY: int
-                    protected static TIMEOUT: int
+                    protected static readonly TIMEOUT: int
                     public offer(arg0: sun.net.www.http.KeepAliveCleanerEntry): boolean
                     public run(): void
                     public offer(arg0: java.lang.Object): boolean

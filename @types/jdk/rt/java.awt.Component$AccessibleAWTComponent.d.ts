@@ -4,8 +4,8 @@ declare namespace java {
             protected accessibleAWTComponentHandler: java.awt.event.ComponentListener
             protected accessibleAWTFocusHandler: java.awt.event.FocusListener
             protected constructor(arg0: java.awt.Component)
-            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
-            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
             public getAccessibleName(): string
             public getAccessibleDescription(): string
             public getAccessibleRole(): javax.accessibility.AccessibleRole

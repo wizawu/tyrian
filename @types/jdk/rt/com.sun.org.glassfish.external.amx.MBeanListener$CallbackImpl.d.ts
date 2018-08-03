@@ -5,7 +5,7 @@ declare namespace com {
                 namespace external {
                     namespace amx {
                         class MBeanListener$CallbackImpl implements com.sun.org.glassfish.external.amx.MBeanListener$Callback {
-                            protected mLatch: java.util.concurrent.CountDownLatch
+                            protected readonly mLatch: java.util.concurrent.CountDownLatch
                             public constructor()
                             public constructor(arg0: boolean)
                             public getRegistered(): javax.management.ObjectName

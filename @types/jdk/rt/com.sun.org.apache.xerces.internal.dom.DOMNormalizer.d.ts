@@ -6,23 +6,23 @@ declare namespace com {
                     namespace internal {
                         namespace dom {
                             class DOMNormalizer implements com.sun.org.apache.xerces.internal.xni.XMLDocumentHandler {
-                                protected static DEBUG_ND: boolean
-                                protected static DEBUG: boolean
-                                protected static DEBUG_EVENTS: boolean
-                                protected static PREFIX: string
+                                protected static readonly DEBUG_ND: boolean
+                                protected static readonly DEBUG: boolean
+                                protected static readonly DEBUG_EVENTS: boolean
+                                protected static readonly PREFIX: string
                                 protected fConfiguration: com.sun.org.apache.xerces.internal.dom.DOMConfigurationImpl
                                 protected fDocument: com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl
-                                protected fAttrProxy: com.sun.org.apache.xerces.internal.dom.DOMNormalizer$XMLAttributesProxy
-                                protected fQName: com.sun.org.apache.xerces.internal.xni.QName
+                                protected readonly fAttrProxy: com.sun.org.apache.xerces.internal.dom.DOMNormalizer$XMLAttributesProxy
+                                protected readonly fQName: com.sun.org.apache.xerces.internal.xni.QName
                                 protected fValidationHandler: com.sun.org.apache.xerces.internal.impl.RevalidationHandler
                                 protected fSymbolTable: com.sun.org.apache.xerces.internal.util.SymbolTable
                                 protected fErrorHandler: org.w3c.dom.DOMErrorHandler
                                 protected fNamespaceValidation: boolean
                                 protected fPSVI: boolean
-                                protected fNamespaceContext: com.sun.org.apache.xerces.internal.xni.NamespaceContext
-                                protected fLocalNSBinder: com.sun.org.apache.xerces.internal.xni.NamespaceContext
-                                protected fAttributeList: java.util.ArrayList
-                                protected fLocator: com.sun.org.apache.xerces.internal.dom.DOMLocatorImpl
+                                protected readonly fNamespaceContext: com.sun.org.apache.xerces.internal.xni.NamespaceContext
+                                protected readonly fLocalNSBinder: com.sun.org.apache.xerces.internal.xni.NamespaceContext
+                                protected readonly fAttributeList: java.util.ArrayList
+                                protected readonly fLocator: com.sun.org.apache.xerces.internal.dom.DOMLocatorImpl
                                 protected fCurrentNode: org.w3c.dom.Node
                                 public constructor()
                                 protected normalizeDocument(arg0: com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl, arg1: com.sun.org.apache.xerces.internal.dom.DOMConfigurationImpl): void

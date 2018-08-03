@@ -3,8 +3,8 @@ declare namespace sun {
         namespace provider {
             class JavaKeyStore$CaseExactJKS extends sun.security.provider.JavaKeyStore {
                 public constructor()
-                public engineLoad(arg0: java.io.InputStream, arg1: char[]): void
-                public engineStore(arg0: java.io.OutputStream, arg1: char[]): void
+                public engineLoad(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: char[]): void
+                public engineStore(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: char[]): void
                 public engineGetCertificateAlias(arg0: java.security.cert.Certificate): string
                 public engineIsCertificateEntry(arg0: java.lang.String | string): boolean
                 public engineIsKeyEntry(arg0: java.lang.String | string): boolean

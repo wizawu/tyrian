@@ -6,17 +6,17 @@ declare namespace com {
                     namespace internal {
                         namespace parsers {
                             class AbstractDOMParser extends com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser {
-                                protected static NAMESPACES: string
-                                protected static CREATE_ENTITY_REF_NODES: string
-                                protected static INCLUDE_COMMENTS_FEATURE: string
-                                protected static CREATE_CDATA_NODES_FEATURE: string
-                                protected static INCLUDE_IGNORABLE_WHITESPACE: string
-                                protected static DEFER_NODE_EXPANSION: string
-                                protected static DOCUMENT_CLASS_NAME: string
-                                protected static CURRENT_ELEMENT_NODE: string
-                                protected static DEFAULT_DOCUMENT_CLASS_NAME: string
-                                protected static CORE_DOCUMENT_CLASS_NAME: string
-                                protected static PSVI_DOCUMENT_CLASS_NAME: string
+                                protected static readonly NAMESPACES: string
+                                protected static readonly CREATE_ENTITY_REF_NODES: string
+                                protected static readonly INCLUDE_COMMENTS_FEATURE: string
+                                protected static readonly CREATE_CDATA_NODES_FEATURE: string
+                                protected static readonly INCLUDE_IGNORABLE_WHITESPACE: string
+                                protected static readonly DEFER_NODE_EXPANSION: string
+                                protected static readonly DOCUMENT_CLASS_NAME: string
+                                protected static readonly CURRENT_ELEMENT_NODE: string
+                                protected static readonly DEFAULT_DOCUMENT_CLASS_NAME: string
+                                protected static readonly CORE_DOCUMENT_CLASS_NAME: string
+                                protected static readonly PSVI_DOCUMENT_CLASS_NAME: string
                                 protected fErrorHandler: com.sun.org.apache.xerces.internal.util.DOMErrorHandlerWrapper
                                 protected fInDTD: boolean
                                 protected fCreateEntityRefNodes: boolean
@@ -32,7 +32,7 @@ declare namespace com {
                                 protected fCurrentCDATASection: org.w3c.dom.CDATASection
                                 protected fCurrentEntityDecl: com.sun.org.apache.xerces.internal.dom.EntityImpl
                                 protected fDeferredEntityDecl: int
-                                protected fStringBuilder: java.lang.StringBuilder
+                                protected readonly fStringBuilder: java.lang.StringBuilder
                                 protected fInternalSubset: java.lang.StringBuilder
                                 protected fDeferNodeExpansion: boolean
                                 protected fNamespaceAware: boolean
@@ -46,7 +46,7 @@ declare namespace com {
                                 protected fInCDATASection: boolean
                                 protected fFirstChunk: boolean
                                 protected fFilterReject: boolean
-                                protected fBaseURIStack: java.util.Stack
+                                protected readonly fBaseURIStack: java.util.Stack
                                 protected fRejectedElementDepth: int
                                 protected fSkippedElemStack: java.util.Stack
                                 protected fInEntityRef: boolean

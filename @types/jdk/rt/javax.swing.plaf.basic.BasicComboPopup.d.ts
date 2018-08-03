@@ -20,8 +20,8 @@ declare namespace javax {
                     protected hasEntered: boolean
                     protected isAutoScrolling: boolean
                     protected scrollDirection: int
-                    protected static SCROLL_UP: int
-                    protected static SCROLL_DOWN: int
+                    protected static readonly SCROLL_UP: int
+                    protected static readonly SCROLL_DOWN: int
                     public show(): void
                     public hide(): void
                     public getList(): javax.swing.JList

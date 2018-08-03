@@ -4,10 +4,10 @@ declare namespace java {
             public static empty<T>(): java.util.Optional<T>
             public static of<T>(arg0: T): java.util.Optional<T>
             public static ofNullable<T>(arg0: T): java.util.Optional<T>
-            public get(): T
-            public isPresent(): boolean
-            public ifPresent(arg0: java.util.function$.Consumer$$Lambda<T>): void
-            public filter(arg0: java.util.function$.Predicate<T>): java.util.Optional<T>
+            public get<T>(): T
+            public isPresent<T>(): boolean
+            public ifPresent<T>(arg0: java.util.function$.Consumer$$Lambda<T>): void
+            public filter<T>(arg0: java.util.function$.Predicate<T>): java.util.Optional<T>
             public map<U>(arg0: java.util.function$.Function<T, U>): java.util.Optional<U>
             public flatMap<U>(arg0: java.util.function$.Function<T, java.util.Optional<U>>): java.util.Optional<U>
             public orElse<U>(arg0: T): T

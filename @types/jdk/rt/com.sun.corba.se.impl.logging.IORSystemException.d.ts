@@ -5,21 +5,21 @@ declare namespace com {
                 namespace impl {
                     namespace logging {
                         class IORSystemException extends com.sun.corba.se.spi.logging.LogWrapperBase {
-                            public static ORT_NOT_INITIALIZED: int
-                            public static NULL_POA: int
-                            public static BAD_MAGIC: int
-                            public static STRINGIFY_WRITE_ERROR: int
-                            public static TAGGED_PROFILE_TEMPLATE_FACTORY_NOT_FOUND: int
-                            public static INVALID_JDK1_3_1_PATCH_LEVEL: int
-                            public static GET_LOCAL_SERVANT_FAILURE: int
-                            public static ADAPTER_ID_NOT_AVAILABLE: int
-                            public static SERVER_ID_NOT_AVAILABLE: int
-                            public static ORB_ID_NOT_AVAILABLE: int
-                            public static OBJECT_ADAPTER_ID_NOT_AVAILABLE: int
-                            public static BAD_OID_IN_IOR_TEMPLATE_LIST: int
-                            public static INVALID_TAGGED_PROFILE: int
-                            public static BAD_IIOP_ADDRESS_PORT: int
-                            public static IOR_MUST_HAVE_IIOP_PROFILE: int
+                            public static readonly ORT_NOT_INITIALIZED: int
+                            public static readonly NULL_POA: int
+                            public static readonly BAD_MAGIC: int
+                            public static readonly STRINGIFY_WRITE_ERROR: int
+                            public static readonly TAGGED_PROFILE_TEMPLATE_FACTORY_NOT_FOUND: int
+                            public static readonly INVALID_JDK1_3_1_PATCH_LEVEL: int
+                            public static readonly GET_LOCAL_SERVANT_FAILURE: int
+                            public static readonly ADAPTER_ID_NOT_AVAILABLE: int
+                            public static readonly SERVER_ID_NOT_AVAILABLE: int
+                            public static readonly ORB_ID_NOT_AVAILABLE: int
+                            public static readonly OBJECT_ADAPTER_ID_NOT_AVAILABLE: int
+                            public static readonly BAD_OID_IN_IOR_TEMPLATE_LIST: int
+                            public static readonly INVALID_TAGGED_PROFILE: int
+                            public static readonly BAD_IIOP_ADDRESS_PORT: int
+                            public static readonly IOR_MUST_HAVE_IIOP_PROFILE: int
                             public constructor(arg0: java.util.logging.Logger)
                             public static get(arg0: com.sun.corba.se.spi.orb.ORB, arg1: java.lang.String | string): com.sun.corba.se.impl.logging.IORSystemException
                             public static get(arg0: java.lang.String | string): com.sun.corba.se.impl.logging.IORSystemException

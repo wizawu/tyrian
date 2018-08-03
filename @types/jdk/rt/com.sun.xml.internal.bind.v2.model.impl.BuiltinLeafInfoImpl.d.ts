@@ -13,12 +13,12 @@ declare namespace com {
                                     public getElementName(): javax.xml.namespace.QName
                                     public asElement(): com.sun.xml.internal.bind.v2.model.core.Element<TypeT, ClassDeclT>
                                     public static createLeaves<TypeT, ClassDeclT>(arg0: com.sun.xml.internal.bind.v2.model.nav.Navigator<TypeT, ClassDeclT, any, any>): java.util.Map<TypeT, com.sun.xml.internal.bind.v2.model.impl.BuiltinLeafInfoImpl<TypeT, ClassDeclT>>
-                                    public toString(): string
-                                    public isSimpleType(): boolean
-                                    public getLocation(): com.sun.xml.internal.bind.v2.runtime.Location
-                                    public getUpstream(): com.sun.xml.internal.bind.v2.model.annotation.Locatable
-                                    public getTypeName(): javax.xml.namespace.QName
-                                    public getType(): java.lang.Object
+                                    public toString<TypeT, ClassDeclT>(): string
+                                    public isSimpleType<TypeT, ClassDeclT>(): boolean
+                                    public getLocation<TypeT, ClassDeclT>(): com.sun.xml.internal.bind.v2.runtime.Location
+                                    public getUpstream<TypeT, ClassDeclT>(): com.sun.xml.internal.bind.v2.model.annotation.Locatable
+                                    public getTypeName<TypeT, ClassDeclT>(): javax.xml.namespace.QName
+                                    public getType<TypeT, ClassDeclT>(): java.lang.Object
                                     public static class: java.lang.Class<any>
                                 }
                             }

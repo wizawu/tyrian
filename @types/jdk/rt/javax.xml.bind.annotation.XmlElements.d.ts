@@ -5,9 +5,6 @@ declare namespace javax {
                 interface XmlElements extends java.lang.annotation.Annotation {
                     value(): javax.xml.bind.annotation.XmlElement[]
                 }
-                interface XmlElements$$Lambda extends java.lang.annotation.Annotation {
-                    (): javax.xml.bind.annotation.XmlElement[]
-                }
             }
         }
     }

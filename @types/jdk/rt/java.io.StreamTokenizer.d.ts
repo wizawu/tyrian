@@ -2,13 +2,13 @@ declare namespace java {
     namespace io {
         class StreamTokenizer {
             public ttype: int
-            public static TT_EOF: int
-            public static TT_EOL: int
-            public static TT_NUMBER: int
-            public static TT_WORD: int
+            public static readonly TT_EOF: int
+            public static readonly TT_EOL: int
+            public static readonly TT_NUMBER: int
+            public static readonly TT_WORD: int
             public sval: string
             public nval: double
-            public constructor(arg0: java.io.InputStream)
+            public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
             public constructor(arg0: java.io.Reader)
             public resetSyntax(): void
             public wordChars(arg0: int, arg1: int): void

@@ -2,40 +2,40 @@ declare namespace javax {
     namespace swing {
         namespace text {
             class StyleConstants {
-                public static ComponentElementName: string
-                public static IconElementName: string
-                public static NameAttribute: java.lang.Object
-                public static ResolveAttribute: java.lang.Object
-                public static ModelAttribute: java.lang.Object
-                public static BidiLevel: java.lang.Object
-                public static FontFamily: java.lang.Object
-                public static Family: java.lang.Object
-                public static FontSize: java.lang.Object
-                public static Size: java.lang.Object
-                public static Bold: java.lang.Object
-                public static Italic: java.lang.Object
-                public static Underline: java.lang.Object
-                public static StrikeThrough: java.lang.Object
-                public static Superscript: java.lang.Object
-                public static Subscript: java.lang.Object
-                public static Foreground: java.lang.Object
-                public static Background: java.lang.Object
-                public static ComponentAttribute: java.lang.Object
-                public static IconAttribute: java.lang.Object
-                public static ComposedTextAttribute: java.lang.Object
-                public static FirstLineIndent: java.lang.Object
-                public static LeftIndent: java.lang.Object
-                public static RightIndent: java.lang.Object
-                public static LineSpacing: java.lang.Object
-                public static SpaceAbove: java.lang.Object
-                public static SpaceBelow: java.lang.Object
-                public static Alignment: java.lang.Object
-                public static TabSet: java.lang.Object
-                public static Orientation: java.lang.Object
-                public static ALIGN_LEFT: int
-                public static ALIGN_CENTER: int
-                public static ALIGN_RIGHT: int
-                public static ALIGN_JUSTIFIED: int
+                public static readonly ComponentElementName: string
+                public static readonly IconElementName: string
+                public static readonly NameAttribute: java.lang.Object
+                public static readonly ResolveAttribute: java.lang.Object
+                public static readonly ModelAttribute: java.lang.Object
+                public static readonly BidiLevel: java.lang.Object
+                public static readonly FontFamily: java.lang.Object
+                public static readonly Family: java.lang.Object
+                public static readonly FontSize: java.lang.Object
+                public static readonly Size: java.lang.Object
+                public static readonly Bold: java.lang.Object
+                public static readonly Italic: java.lang.Object
+                public static readonly Underline: java.lang.Object
+                public static readonly StrikeThrough: java.lang.Object
+                public static readonly Superscript: java.lang.Object
+                public static readonly Subscript: java.lang.Object
+                public static readonly Foreground: java.lang.Object
+                public static readonly Background: java.lang.Object
+                public static readonly ComponentAttribute: java.lang.Object
+                public static readonly IconAttribute: java.lang.Object
+                public static readonly ComposedTextAttribute: java.lang.Object
+                public static readonly FirstLineIndent: java.lang.Object
+                public static readonly LeftIndent: java.lang.Object
+                public static readonly RightIndent: java.lang.Object
+                public static readonly LineSpacing: java.lang.Object
+                public static readonly SpaceAbove: java.lang.Object
+                public static readonly SpaceBelow: java.lang.Object
+                public static readonly Alignment: java.lang.Object
+                public static readonly TabSet: java.lang.Object
+                public static readonly Orientation: java.lang.Object
+                public static readonly ALIGN_LEFT: int
+                public static readonly ALIGN_CENTER: int
+                public static readonly ALIGN_RIGHT: int
+                public static readonly ALIGN_JUSTIFIED: int
                 public toString(): string
                 public static getBidiLevel(arg0: javax.swing.text.AttributeSet): int
                 public static setBidiLevel(arg0: javax.swing.text.MutableAttributeSet, arg1: int): void

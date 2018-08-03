@@ -16,7 +16,7 @@ declare namespace jdk {
                     public static from(arg0: java.lang.Object, arg1: java.lang.Object): jdk.nashorn.internal.objects.NativeArray
                     public static extend(arg0: java.lang.Object, ...arg1: java.lang.Object[]): java.lang.Object
                     public static _super(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
-                    public public static asJSONCompatible(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
+                    public static public static asJSONCompatible(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
                     public static $clinit$(): void
                     public static class: java.lang.Class<any>
                 }

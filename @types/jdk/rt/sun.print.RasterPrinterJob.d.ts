@@ -1,14 +1,14 @@
 declare namespace sun {
     namespace print {
         abstract class RasterPrinterJob extends java.awt.print.PrinterJob {
-            protected static PRINTER: int
-            protected static FILE: int
-            protected static STREAM: int
-            protected static MAX_UNKNOWN_PAGES: int
-            protected static PD_ALLPAGES: int
-            protected static PD_SELECTION: int
-            protected static PD_PAGENUMS: int
-            protected static PD_NOSELECTION: int
+            protected static readonly PRINTER: int
+            protected static readonly FILE: int
+            protected static readonly STREAM: int
+            protected static readonly MAX_UNKNOWN_PAGES: int
+            protected static readonly PD_ALLPAGES: int
+            protected static readonly PD_SELECTION: int
+            protected static readonly PD_PAGENUMS: int
+            protected static readonly PD_NOSELECTION: int
             public static forcePDL: boolean
             public static forceRaster: boolean
             public static shapeTextProp: boolean
@@ -26,17 +26,17 @@ declare namespace sun {
             protected myService: javax.print.PrintService
             public static debugPrint: boolean
             public constructor()
-            protected getXRes(): double
-            protected getYRes(): double
-            protected getPhysicalPrintableX(arg0: java.awt.print.Paper): double
-            protected getPhysicalPrintableY(arg0: java.awt.print.Paper): double
-            protected getPhysicalPrintableWidth(arg0: java.awt.print.Paper): double
-            protected getPhysicalPrintableHeight(arg0: java.awt.print.Paper): double
-            protected getPhysicalPageWidth(arg0: java.awt.print.Paper): double
-            protected getPhysicalPageHeight(arg0: java.awt.print.Paper): double
-            protected startPage(arg0: java.awt.print.PageFormat, arg1: java.awt.print.Printable | java.awt.print.Printable$$Lambda, arg2: int, arg3: boolean): void
-            protected endPage(arg0: java.awt.print.PageFormat, arg1: java.awt.print.Printable | java.awt.print.Printable$$Lambda, arg2: int): void
-            protected printBand(arg0: byte[], arg1: int, arg2: int, arg3: int, arg4: int): void
+            protected abstract getXRes(): double
+            protected abstract getYRes(): double
+            protected abstract getPhysicalPrintableX(arg0: java.awt.print.Paper): double
+            protected abstract getPhysicalPrintableY(arg0: java.awt.print.Paper): double
+            protected abstract getPhysicalPrintableWidth(arg0: java.awt.print.Paper): double
+            protected abstract getPhysicalPrintableHeight(arg0: java.awt.print.Paper): double
+            protected abstract getPhysicalPageWidth(arg0: java.awt.print.Paper): double
+            protected abstract getPhysicalPageHeight(arg0: java.awt.print.Paper): double
+            protected abstract startPage(arg0: java.awt.print.PageFormat, arg1: java.awt.print.Printable | java.awt.print.Printable$$Lambda, arg2: int, arg3: boolean): void
+            protected abstract endPage(arg0: java.awt.print.PageFormat, arg1: java.awt.print.Printable | java.awt.print.Printable$$Lambda, arg2: int): void
+            protected abstract printBand(arg0: byte[], arg1: int, arg2: int, arg3: int, arg4: int): void
             public saveState(arg0: java.awt.geom.AffineTransform, arg1: java.awt.Shape, arg2: java.awt.geom.Rectangle2D, arg3: double, arg4: double): void
             protected static lookupDefaultPrintService(): javax.print.PrintService
             public getPrintService(): javax.print.PrintService
@@ -82,9 +82,9 @@ declare namespace sun {
             protected getToPageAttrib(): int
             protected getMinPageAttrib(): int
             protected getMaxPageAttrib(): int
-            protected startDoc(): void
-            protected endDoc(): void
-            protected abortDoc(): void
+            protected abstract startDoc(): void
+            protected abstract endDoc(): void
+            protected abstract abortDoc(): void
             protected cancelDoc(): void
             protected getCollatedCopies(): int
             protected getNoncollatedCopies(): int

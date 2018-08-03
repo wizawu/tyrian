@@ -1,7 +1,7 @@
 declare namespace java {
     namespace io {
         class ObjectInputStream extends java.io.InputStream implements java.io.ObjectInput , java.io.ObjectStreamConstants {
-            public constructor(arg0: java.io.InputStream)
+            public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
             protected constructor()
             public readObject(): java.lang.Object
             protected readObjectOverride(): java.lang.Object

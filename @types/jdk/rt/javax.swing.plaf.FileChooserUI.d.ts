@@ -3,12 +3,12 @@ declare namespace javax {
         namespace plaf {
             abstract class FileChooserUI extends javax.swing.plaf.ComponentUI {
                 public constructor()
-                public getAcceptAllFileFilter(arg0: javax.swing.JFileChooser): javax.swing.filechooser.FileFilter
-                public getFileView(arg0: javax.swing.JFileChooser): javax.swing.filechooser.FileView
-                public getApproveButtonText(arg0: javax.swing.JFileChooser): string
-                public getDialogTitle(arg0: javax.swing.JFileChooser): string
-                public rescanCurrentDirectory(arg0: javax.swing.JFileChooser): void
-                public ensureFileIsVisible(arg0: javax.swing.JFileChooser, arg1: java.io.File): void
+                public abstract getAcceptAllFileFilter(arg0: javax.swing.JFileChooser): javax.swing.filechooser.FileFilter
+                public abstract getFileView(arg0: javax.swing.JFileChooser): javax.swing.filechooser.FileView
+                public abstract getApproveButtonText(arg0: javax.swing.JFileChooser): string
+                public abstract getDialogTitle(arg0: javax.swing.JFileChooser): string
+                public abstract rescanCurrentDirectory(arg0: javax.swing.JFileChooser): void
+                public abstract ensureFileIsVisible(arg0: javax.swing.JFileChooser, arg1: java.io.File): void
                 public getDefaultButton(arg0: javax.swing.JFileChooser): javax.swing.JButton
                 public static class: java.lang.Class<any>
             }

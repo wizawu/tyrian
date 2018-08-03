@@ -6,11 +6,11 @@ declare namespace com {
                     namespace api {
                         namespace impl {
                             class NameUtil {
-                                protected static UPPER_LETTER: int
-                                protected static LOWER_LETTER: int
-                                protected static OTHER_LETTER: int
-                                protected static DIGIT: int
-                                protected static OTHER: int
+                                protected static readonly UPPER_LETTER: int
+                                protected static readonly LOWER_LETTER: int
+                                protected static readonly OTHER_LETTER: int
+                                protected static readonly DIGIT: int
+                                protected static readonly OTHER: int
                                 protected isPunct(arg0: char): boolean
                                 protected static isDigit(arg0: char): boolean
                                 protected static isUpper(arg0: char): boolean

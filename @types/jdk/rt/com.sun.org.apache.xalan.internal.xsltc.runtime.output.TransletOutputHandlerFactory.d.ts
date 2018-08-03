@@ -8,17 +8,17 @@ declare namespace com {
                             namespace runtime {
                                 namespace output {
                                     class TransletOutputHandlerFactory {
-                                        public static STREAM: int
-                                        public static SAX: int
-                                        public static DOM: int
-                                        public static STAX: int
+                                        public static readonly STREAM: int
+                                        public static readonly SAX: int
+                                        public static readonly DOM: int
+                                        public static readonly STAX: int
                                         public static newInstance(): com.sun.org.apache.xalan.internal.xsltc.runtime.output.TransletOutputHandlerFactory
                                         public static newInstance(arg0: boolean): com.sun.org.apache.xalan.internal.xsltc.runtime.output.TransletOutputHandlerFactory
                                         public constructor(arg0: boolean)
                                         public setOutputType(arg0: int): void
                                         public setEncoding(arg0: java.lang.String | string): void
                                         public setOutputMethod(arg0: java.lang.String | string): void
-                                        public setOutputStream(arg0: java.io.OutputStream): void
+                                        public setOutputStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                                         public setWriter(arg0: java.io.Writer): void
                                         public setHandler(arg0: org.xml.sax.ContentHandler): void
                                         public setLexicalHandler(arg0: org.xml.sax.ext.LexicalHandler): void

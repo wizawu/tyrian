@@ -4,16 +4,16 @@ declare namespace org {
             namespace portable {
                 abstract class Delegate {
                     public constructor()
-                    public get_interface_def(arg0: org.omg.CORBA.Object): org.omg.CORBA.Object
-                    public duplicate(arg0: org.omg.CORBA.Object): org.omg.CORBA.Object
-                    public release(arg0: org.omg.CORBA.Object): void
-                    public is_a(arg0: org.omg.CORBA.Object, arg1: java.lang.String | string): boolean
-                    public non_existent(arg0: org.omg.CORBA.Object): boolean
-                    public is_equivalent(arg0: org.omg.CORBA.Object, arg1: org.omg.CORBA.Object): boolean
-                    public hash(arg0: org.omg.CORBA.Object, arg1: int): int
-                    public request(arg0: org.omg.CORBA.Object, arg1: java.lang.String | string): org.omg.CORBA.Request
-                    public create_request(arg0: org.omg.CORBA.Object, arg1: org.omg.CORBA.Context, arg2: java.lang.String | string, arg3: org.omg.CORBA.NVList, arg4: org.omg.CORBA.NamedValue): org.omg.CORBA.Request
-                    public create_request(arg0: org.omg.CORBA.Object, arg1: org.omg.CORBA.Context, arg2: java.lang.String | string, arg3: org.omg.CORBA.NVList, arg4: org.omg.CORBA.NamedValue, arg5: org.omg.CORBA.ExceptionList, arg6: org.omg.CORBA.ContextList): org.omg.CORBA.Request
+                    public abstract get_interface_def(arg0: org.omg.CORBA.Object): org.omg.CORBA.Object
+                    public abstract duplicate(arg0: org.omg.CORBA.Object): org.omg.CORBA.Object
+                    public abstract release(arg0: org.omg.CORBA.Object): void
+                    public abstract is_a(arg0: org.omg.CORBA.Object, arg1: java.lang.String | string): boolean
+                    public abstract non_existent(arg0: org.omg.CORBA.Object): boolean
+                    public abstract is_equivalent(arg0: org.omg.CORBA.Object, arg1: org.omg.CORBA.Object): boolean
+                    public abstract hash(arg0: org.omg.CORBA.Object, arg1: int): int
+                    public abstract request(arg0: org.omg.CORBA.Object, arg1: java.lang.String | string): org.omg.CORBA.Request
+                    public abstract create_request(arg0: org.omg.CORBA.Object, arg1: org.omg.CORBA.Context, arg2: java.lang.String | string, arg3: org.omg.CORBA.NVList, arg4: org.omg.CORBA.NamedValue): org.omg.CORBA.Request
+                    public abstract create_request(arg0: org.omg.CORBA.Object, arg1: org.omg.CORBA.Context, arg2: java.lang.String | string, arg3: org.omg.CORBA.NVList, arg4: org.omg.CORBA.NamedValue, arg5: org.omg.CORBA.ExceptionList, arg6: org.omg.CORBA.ContextList): org.omg.CORBA.Request
                     public orb(arg0: org.omg.CORBA.Object): org.omg.CORBA.ORB
                     public get_policy(arg0: org.omg.CORBA.Object, arg1: int): org.omg.CORBA.Policy
                     public get_domain_managers(arg0: org.omg.CORBA.Object): org.omg.CORBA.DomainManager[]

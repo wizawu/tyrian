@@ -3,9 +3,9 @@ declare namespace javax {
         namespace text {
             abstract class NavigationFilter$FilterBypass {
                 public constructor()
-                public getCaret(): javax.swing.text.Caret
-                public setDot(arg0: int, arg1: javax.swing.text.Position$Bias): void
-                public moveDot(arg0: int, arg1: javax.swing.text.Position$Bias): void
+                public abstract getCaret(): javax.swing.text.Caret
+                public abstract setDot(arg0: int, arg1: javax.swing.text.Position$Bias): void
+                public abstract moveDot(arg0: int, arg1: javax.swing.text.Position$Bias): void
                 public static class: java.lang.Class<any>
             }
         }

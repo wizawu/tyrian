@@ -3,8 +3,8 @@ declare namespace org {
         namespace sax {
             namespace helpers {
                 class NamespaceSupport {
-                    public static XMLNS: string
-                    public static NSDECL: string
+                    public static readonly XMLNS: string
+                    public static readonly NSDECL: string
                     public constructor()
                     public reset(): void
                     public pushContext(): void

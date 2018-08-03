@@ -6,10 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace xinclude {
                             class XPointerElementHandler implements com.sun.org.apache.xerces.internal.xinclude.XPointerSchema {
-                                protected static ERROR_REPORTER: string
-                                protected static GRAMMAR_POOL: string
-                                protected static ENTITY_RESOLVER: string
-                                protected static XPOINTER_SCHEMA: string
+                                protected static readonly ERROR_REPORTER: string
+                                protected static readonly GRAMMAR_POOL: string
+                                protected static readonly ENTITY_RESOLVER: string
+                                protected static readonly XPOINTER_SCHEMA: string
                                 protected fDocumentHandler: com.sun.org.apache.xerces.internal.xni.XMLDocumentHandler
                                 protected fDocumentSource: com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentSource
                                 protected fParentXIncludeHandler: com.sun.org.apache.xerces.internal.xinclude.XIncludeHandler

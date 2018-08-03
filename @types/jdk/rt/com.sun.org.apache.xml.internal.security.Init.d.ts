@@ -6,7 +6,7 @@ declare namespace com {
                     namespace internal {
                         namespace security {
                             class Init {
-                                public static CONF_NS: string
+                                public static readonly CONF_NS: string
                                 public constructor()
                                 public static isInitialized(): boolean
                                 public static init(): void

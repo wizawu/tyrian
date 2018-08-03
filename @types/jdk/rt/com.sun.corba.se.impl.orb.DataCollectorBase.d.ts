@@ -11,8 +11,8 @@ declare namespace com {
                             public initialHostIsLocal(): boolean
                             public setParser(arg0: com.sun.corba.se.spi.orb.PropertyParser): void
                             public getProperties(): java.util.Properties
-                            public isApplet(): boolean
-                            protected collect(): void
+                            public abstract isApplet(): boolean
+                            protected abstract collect(): void
                             protected checkPropertyDefaults(): void
                             protected findPropertiesFromArgs(arg0: java.lang.String[]): void
                             protected findPropertiesFromApplet(arg0: java.applet.Applet): void

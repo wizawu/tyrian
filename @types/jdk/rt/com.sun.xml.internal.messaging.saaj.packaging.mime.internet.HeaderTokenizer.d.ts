@@ -8,8 +8,8 @@ declare namespace com {
                             namespace mime {
                                 namespace internet {
                                     class HeaderTokenizer {
-                                        public static RFC822: string
-                                        public static MIME: string
+                                        public static readonly RFC822: string
+                                        public static readonly MIME: string
                                         public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: boolean)
                                         public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
                                         public constructor(arg0: java.lang.String | string)

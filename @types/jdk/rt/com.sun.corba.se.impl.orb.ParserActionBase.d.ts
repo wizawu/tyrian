@@ -11,9 +11,12 @@ declare namespace com {
                             public getPropertyName(): string
                             public isPrefix(): boolean
                             public getFieldName(): string
-                            public apply(arg0: java.util.Properties): java.lang.Object
+                            public abstract apply(arg0: java.util.Properties): java.lang.Object
                             protected getOperation(): com.sun.corba.se.spi.orb.Operation
                             public static class: java.lang.Class<any>
+                        }
+                        interface ParserActionBase$$Lambda implements com.sun.corba.se.impl.orb.ParserAction {
+                            (arg0: java.util.Properties): java.lang.Object
                         }
                     }
                 }

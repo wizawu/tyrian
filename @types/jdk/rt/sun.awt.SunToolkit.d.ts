@@ -1,39 +1,39 @@
 declare namespace sun {
     namespace awt {
         abstract class SunToolkit extends java.awt.Toolkit implements sun.awt.WindowClosingSupport , sun.awt.WindowClosingListener , sun.awt.ComponentFactory , sun.awt.InputMethodSupport , sun.awt.KeyboardFocusManagerPeerProvider {
-            public static GRAB_EVENT_MASK: int
+            public static readonly GRAB_EVENT_MASK: int
             protected static numberOfButtons: int
-            public static MAX_BUTTONS_SUPPORTED: int
-            public static DEFAULT_WAIT_TIME: int
-            public static DESKTOPFONTHINTS: string
+            public static readonly MAX_BUTTONS_SUPPORTED: int
+            public static readonly DEFAULT_WAIT_TIME: int
+            public static readonly DESKTOPFONTHINTS: string
             public constructor()
             public useBufferPerWindow(): boolean
-            public createWindow(arg0: java.awt.Window): java.awt.peer.WindowPeer
-            public createFrame(arg0: java.awt.Frame): java.awt.peer.FramePeer
-            public createLightweightFrame(arg0: sun.awt.LightweightFrame): java.awt.peer.FramePeer
-            public createDialog(arg0: java.awt.Dialog): java.awt.peer.DialogPeer
-            public createButton(arg0: java.awt.Button): java.awt.peer.ButtonPeer
-            public createTextField(arg0: java.awt.TextField): java.awt.peer.TextFieldPeer
-            public createChoice(arg0: java.awt.Choice): java.awt.peer.ChoicePeer
-            public createLabel(arg0: java.awt.Label): java.awt.peer.LabelPeer
-            public createList(arg0: java.awt.List): java.awt.peer.ListPeer
-            public createCheckbox(arg0: java.awt.Checkbox): java.awt.peer.CheckboxPeer
-            public createScrollbar(arg0: java.awt.Scrollbar): java.awt.peer.ScrollbarPeer
-            public createScrollPane(arg0: java.awt.ScrollPane): java.awt.peer.ScrollPanePeer
-            public createTextArea(arg0: java.awt.TextArea): java.awt.peer.TextAreaPeer
-            public createFileDialog(arg0: java.awt.FileDialog): java.awt.peer.FileDialogPeer
-            public createMenuBar(arg0: java.awt.MenuBar): java.awt.peer.MenuBarPeer
-            public createMenu(arg0: java.awt.Menu): java.awt.peer.MenuPeer
-            public createPopupMenu(arg0: java.awt.PopupMenu): java.awt.peer.PopupMenuPeer
-            public createMenuItem(arg0: java.awt.MenuItem): java.awt.peer.MenuItemPeer
-            public createCheckboxMenuItem(arg0: java.awt.CheckboxMenuItem): java.awt.peer.CheckboxMenuItemPeer
-            public createDragSourceContextPeer(arg0: java.awt.dnd.DragGestureEvent): java.awt.dnd.peer.DragSourceContextPeer
-            public createTrayIcon(arg0: java.awt.TrayIcon): java.awt.peer.TrayIconPeer
-            public createSystemTray(arg0: java.awt.SystemTray): java.awt.peer.SystemTrayPeer
-            public isTraySupported(): boolean
-            public getFontPeer(arg0: java.lang.String | string, arg1: int): java.awt.peer.FontPeer
-            public createRobot(arg0: java.awt.Robot, arg1: java.awt.GraphicsDevice): java.awt.peer.RobotPeer
-            public getKeyboardFocusManagerPeer(): java.awt.peer.KeyboardFocusManagerPeer
+            public abstract createWindow(arg0: java.awt.Window): java.awt.peer.WindowPeer
+            public abstract createFrame(arg0: java.awt.Frame): java.awt.peer.FramePeer
+            public abstract createLightweightFrame(arg0: sun.awt.LightweightFrame): java.awt.peer.FramePeer
+            public abstract createDialog(arg0: java.awt.Dialog): java.awt.peer.DialogPeer
+            public abstract createButton(arg0: java.awt.Button): java.awt.peer.ButtonPeer
+            public abstract createTextField(arg0: java.awt.TextField): java.awt.peer.TextFieldPeer
+            public abstract createChoice(arg0: java.awt.Choice): java.awt.peer.ChoicePeer
+            public abstract createLabel(arg0: java.awt.Label): java.awt.peer.LabelPeer
+            public abstract createList(arg0: java.awt.List): java.awt.peer.ListPeer
+            public abstract createCheckbox(arg0: java.awt.Checkbox): java.awt.peer.CheckboxPeer
+            public abstract createScrollbar(arg0: java.awt.Scrollbar): java.awt.peer.ScrollbarPeer
+            public abstract createScrollPane(arg0: java.awt.ScrollPane): java.awt.peer.ScrollPanePeer
+            public abstract createTextArea(arg0: java.awt.TextArea): java.awt.peer.TextAreaPeer
+            public abstract createFileDialog(arg0: java.awt.FileDialog): java.awt.peer.FileDialogPeer
+            public abstract createMenuBar(arg0: java.awt.MenuBar): java.awt.peer.MenuBarPeer
+            public abstract createMenu(arg0: java.awt.Menu): java.awt.peer.MenuPeer
+            public abstract createPopupMenu(arg0: java.awt.PopupMenu): java.awt.peer.PopupMenuPeer
+            public abstract createMenuItem(arg0: java.awt.MenuItem): java.awt.peer.MenuItemPeer
+            public abstract createCheckboxMenuItem(arg0: java.awt.CheckboxMenuItem): java.awt.peer.CheckboxMenuItemPeer
+            public abstract createDragSourceContextPeer(arg0: java.awt.dnd.DragGestureEvent): java.awt.dnd.peer.DragSourceContextPeer
+            public abstract createTrayIcon(arg0: java.awt.TrayIcon): java.awt.peer.TrayIconPeer
+            public abstract createSystemTray(arg0: java.awt.SystemTray): java.awt.peer.SystemTrayPeer
+            public abstract isTraySupported(): boolean
+            public abstract getFontPeer(arg0: java.lang.String | string, arg1: int): java.awt.peer.FontPeer
+            public abstract createRobot(arg0: java.awt.Robot, arg1: java.awt.GraphicsDevice): java.awt.peer.RobotPeer
+            public abstract getKeyboardFocusManagerPeer(): java.awt.peer.KeyboardFocusManagerPeer
             public static awtLock(): void
             public static awtTryLock(): boolean
             public static awtUnlock(): void
@@ -61,8 +61,8 @@ declare namespace sun {
             public static executeOnEDTAndWait(arg0: java.lang.Object, arg1: java.lang.Runnable | java.lang.Runnable$$Lambda): void
             public static isDispatchThreadForAppContext(arg0: java.lang.Object): boolean
             public getScreenSize(): java.awt.Dimension
-            protected getScreenWidth(): int
-            protected getScreenHeight(): int
+            protected abstract getScreenWidth(): int
+            protected abstract getScreenHeight(): int
             public getFontMetrics(arg0: java.awt.Font): java.awt.FontMetrics
             public getFontList(): java.lang.String[]
             public createPanel(arg0: java.awt.Panel): java.awt.peer.PanelPeer
@@ -120,15 +120,15 @@ declare namespace sun {
             public static isLightweightOrUnknown(arg0: java.awt.Component): boolean
             public realSync(): void
             public realSync(arg0: long): void
-            protected syncNativeQueue(arg0: long): boolean
+            protected abstract syncNativeQueue(arg0: long): boolean
             protected waitForIdle(arg0: long): boolean
-            public grab(arg0: java.awt.Window): void
-            public ungrab(arg0: java.awt.Window): void
+            public abstract grab(arg0: java.awt.Window): void
+            public abstract ungrab(arg0: java.awt.Window): void
             public static closeSplashScreen(): void
             public static setAAFontSettingsCondition(arg0: boolean): void
             protected getDesktopAAHints(): java.awt.RenderingHints
             public static getDesktopFontHints(): java.awt.RenderingHints
-            public isDesktopSupported(): boolean
+            public abstract isDesktopSupported(): boolean
             public static consumeNextKeyTyped(arg0: java.awt.event.KeyEvent): void
             protected static dumpPeers(arg0: sun.util.logging.PlatformLogger): void
             public static getContainingWindow(arg0: java.awt.Component): java.awt.Window

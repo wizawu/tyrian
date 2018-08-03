@@ -1,18 +1,18 @@
 declare namespace java {
     namespace time {
         class Month extends java.lang.Enum<java.time.Month> implements java.time.temporal.TemporalAccessor , java.time.temporal.TemporalAdjuster {
-            public static JANUARY: java.time.Month
-            public static FEBRUARY: java.time.Month
-            public static MARCH: java.time.Month
-            public static APRIL: java.time.Month
-            public static MAY: java.time.Month
-            public static JUNE: java.time.Month
-            public static JULY: java.time.Month
-            public static AUGUST: java.time.Month
-            public static SEPTEMBER: java.time.Month
-            public static OCTOBER: java.time.Month
-            public static NOVEMBER: java.time.Month
-            public static DECEMBER: java.time.Month
+            public static readonly JANUARY: java.time.Month
+            public static readonly FEBRUARY: java.time.Month
+            public static readonly MARCH: java.time.Month
+            public static readonly APRIL: java.time.Month
+            public static readonly MAY: java.time.Month
+            public static readonly JUNE: java.time.Month
+            public static readonly JULY: java.time.Month
+            public static readonly AUGUST: java.time.Month
+            public static readonly SEPTEMBER: java.time.Month
+            public static readonly OCTOBER: java.time.Month
+            public static readonly NOVEMBER: java.time.Month
+            public static readonly DECEMBER: java.time.Month
             public static values(): java.time.Month[]
             public static valueOf(arg0: java.lang.String | string): java.time.Month
             public static of(arg0: int): java.time.Month

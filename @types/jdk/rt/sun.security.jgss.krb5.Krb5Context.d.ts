@@ -3,9 +3,9 @@ declare namespace sun {
         namespace jgss {
             namespace krb5 {
                 class Krb5Context implements sun.security.jgss.spi.GSSContextSpi {
-                    public static SESSION_KEY: int
-                    public static INITIATOR_SUBKEY: int
-                    public static ACCEPTOR_SUBKEY: int
+                    public static readonly SESSION_KEY: int
+                    public static readonly INITIATOR_SUBKEY: int
+                    public static readonly ACCEPTOR_SUBKEY: int
                     public constructor(arg0: sun.security.jgss.GSSCaller, arg1: byte[])
                     public isTransferable(): boolean
                     public getLifetime(): int
@@ -34,22 +34,22 @@ declare namespace sun {
                     public getDelegCred(): sun.security.jgss.spi.GSSCredentialSpi
                     public isInitiator(): boolean
                     public isProtReady(): boolean
-                    public initSecContext(arg0: java.io.InputStream, arg1: int): byte[]
+                    public initSecContext(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: int): byte[]
                     public isEstablished(): boolean
-                    public acceptSecContext(arg0: java.io.InputStream, arg1: int): byte[]
+                    public acceptSecContext(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: int): byte[]
                     public getWrapSizeLimit(arg0: int, arg1: boolean, arg2: int): int
                     public wrap(arg0: byte[], arg1: int, arg2: int, arg3: org.ietf.jgss.MessageProp): byte[]
                     public wrap(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int, arg5: org.ietf.jgss.MessageProp): int
-                    public wrap(arg0: byte[], arg1: int, arg2: int, arg3: java.io.OutputStream, arg4: org.ietf.jgss.MessageProp): void
-                    public wrap(arg0: java.io.InputStream, arg1: java.io.OutputStream, arg2: org.ietf.jgss.MessageProp): void
+                    public wrap(arg0: byte[], arg1: int, arg2: int, arg3: java.io.OutputStream | java.io.OutputStream$$Lambda, arg4: org.ietf.jgss.MessageProp): void
+                    public wrap(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda, arg2: org.ietf.jgss.MessageProp): void
                     public unwrap(arg0: byte[], arg1: int, arg2: int, arg3: org.ietf.jgss.MessageProp): byte[]
                     public unwrap(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int, arg5: org.ietf.jgss.MessageProp): int
-                    public unwrap(arg0: java.io.InputStream, arg1: byte[], arg2: int, arg3: org.ietf.jgss.MessageProp): int
-                    public unwrap(arg0: java.io.InputStream, arg1: java.io.OutputStream, arg2: org.ietf.jgss.MessageProp): void
+                    public unwrap(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: byte[], arg2: int, arg3: org.ietf.jgss.MessageProp): int
+                    public unwrap(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda, arg2: org.ietf.jgss.MessageProp): void
                     public getMIC(arg0: byte[], arg1: int, arg2: int, arg3: org.ietf.jgss.MessageProp): byte[]
-                    public getMIC(arg0: java.io.InputStream, arg1: java.io.OutputStream, arg2: org.ietf.jgss.MessageProp): void
+                    public getMIC(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda, arg2: org.ietf.jgss.MessageProp): void
                     public verifyMIC(arg0: byte[], arg1: int, arg2: int, arg3: byte[], arg4: int, arg5: int, arg6: org.ietf.jgss.MessageProp): void
-                    public verifyMIC(arg0: java.io.InputStream, arg1: java.io.InputStream, arg2: org.ietf.jgss.MessageProp): void
+                    public verifyMIC(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: org.ietf.jgss.MessageProp): void
                     public export(): byte[]
                     public dispose(): void
                     public getProvider(): java.security.Provider

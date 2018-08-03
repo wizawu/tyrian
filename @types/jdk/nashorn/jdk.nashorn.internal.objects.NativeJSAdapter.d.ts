@@ -3,21 +3,21 @@ declare namespace jdk {
         namespace internal {
             namespace objects {
                 class NativeJSAdapter extends jdk.nashorn.internal.runtime.ScriptObject {
-                    public static __get__: string
-                    public static __put__: string
-                    public static __call__: string
-                    public static __new__: string
-                    public static __getIds__: string
-                    public static __getKeys__: string
-                    public static __getValues__: string
-                    public static __has__: string
-                    public static __delete__: string
-                    public static __preventExtensions__: string
-                    public static __isExtensible__: string
-                    public static __seal__: string
-                    public static __isSealed__: string
-                    public static __freeze__: string
-                    public static __isFrozen__: string
+                    public static readonly __get__: string
+                    public static readonly __put__: string
+                    public static readonly __call__: string
+                    public static readonly __new__: string
+                    public static readonly __getIds__: string
+                    public static readonly __getKeys__: string
+                    public static readonly __getValues__: string
+                    public static readonly __has__: string
+                    public static readonly __delete__: string
+                    public static readonly __preventExtensions__: string
+                    public static readonly __isExtensible__: string
+                    public static readonly __seal__: string
+                    public static readonly __isSealed__: string
+                    public static readonly __freeze__: string
+                    public static readonly __isFrozen__: string
                     public getClassName(): string
                     public getInt(arg0: java.lang.Object, arg1: int): int
                     public getInt(arg0: double, arg1: int): int

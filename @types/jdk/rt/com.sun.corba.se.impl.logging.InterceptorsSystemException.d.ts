@@ -5,37 +5,37 @@ declare namespace com {
                 namespace impl {
                     namespace logging {
                         class InterceptorsSystemException extends com.sun.corba.se.spi.logging.LogWrapperBase {
-                            public static TYPE_OUT_OF_RANGE: int
-                            public static NAME_NULL: int
-                            public static RIR_INVALID_PRE_INIT: int
-                            public static BAD_STATE1: int
-                            public static BAD_STATE2: int
-                            public static IOEXCEPTION_DURING_CANCEL_REQUEST: int
-                            public static EXCEPTION_WAS_NULL: int
-                            public static OBJECT_HAS_NO_DELEGATE: int
-                            public static DELEGATE_NOT_CLIENTSUB: int
-                            public static OBJECT_NOT_OBJECTIMPL: int
-                            public static EXCEPTION_INVALID: int
-                            public static REPLY_STATUS_NOT_INIT: int
-                            public static EXCEPTION_IN_ARGUMENTS: int
-                            public static EXCEPTION_IN_EXCEPTIONS: int
-                            public static EXCEPTION_IN_CONTEXTS: int
-                            public static EXCEPTION_WAS_NULL_2: int
-                            public static SERVANT_INVALID: int
-                            public static CANT_POP_ONLY_PICURRENT: int
-                            public static CANT_POP_ONLY_CURRENT_2: int
-                            public static PI_DSI_RESULT_IS_NULL: int
-                            public static PI_DII_RESULT_IS_NULL: int
-                            public static EXCEPTION_UNAVAILABLE: int
-                            public static CLIENT_INFO_STACK_NULL: int
-                            public static SERVER_INFO_STACK_NULL: int
-                            public static MARK_AND_RESET_FAILED: int
-                            public static SLOT_TABLE_INVARIANT: int
-                            public static INTERCEPTOR_LIST_LOCKED: int
-                            public static SORT_SIZE_MISMATCH: int
-                            public static PI_ORB_NOT_POLICY_BASED: int
-                            public static ORBINITINFO_INVALID: int
-                            public static UNKNOWN_REQUEST_INVOKE: int
+                            public static readonly TYPE_OUT_OF_RANGE: int
+                            public static readonly NAME_NULL: int
+                            public static readonly RIR_INVALID_PRE_INIT: int
+                            public static readonly BAD_STATE1: int
+                            public static readonly BAD_STATE2: int
+                            public static readonly IOEXCEPTION_DURING_CANCEL_REQUEST: int
+                            public static readonly EXCEPTION_WAS_NULL: int
+                            public static readonly OBJECT_HAS_NO_DELEGATE: int
+                            public static readonly DELEGATE_NOT_CLIENTSUB: int
+                            public static readonly OBJECT_NOT_OBJECTIMPL: int
+                            public static readonly EXCEPTION_INVALID: int
+                            public static readonly REPLY_STATUS_NOT_INIT: int
+                            public static readonly EXCEPTION_IN_ARGUMENTS: int
+                            public static readonly EXCEPTION_IN_EXCEPTIONS: int
+                            public static readonly EXCEPTION_IN_CONTEXTS: int
+                            public static readonly EXCEPTION_WAS_NULL_2: int
+                            public static readonly SERVANT_INVALID: int
+                            public static readonly CANT_POP_ONLY_PICURRENT: int
+                            public static readonly CANT_POP_ONLY_CURRENT_2: int
+                            public static readonly PI_DSI_RESULT_IS_NULL: int
+                            public static readonly PI_DII_RESULT_IS_NULL: int
+                            public static readonly EXCEPTION_UNAVAILABLE: int
+                            public static readonly CLIENT_INFO_STACK_NULL: int
+                            public static readonly SERVER_INFO_STACK_NULL: int
+                            public static readonly MARK_AND_RESET_FAILED: int
+                            public static readonly SLOT_TABLE_INVARIANT: int
+                            public static readonly INTERCEPTOR_LIST_LOCKED: int
+                            public static readonly SORT_SIZE_MISMATCH: int
+                            public static readonly PI_ORB_NOT_POLICY_BASED: int
+                            public static readonly ORBINITINFO_INVALID: int
+                            public static readonly UNKNOWN_REQUEST_INVOKE: int
                             public constructor(arg0: java.util.logging.Logger)
                             public static get(arg0: com.sun.corba.se.spi.orb.ORB, arg1: java.lang.String | string): com.sun.corba.se.impl.logging.InterceptorsSystemException
                             public static get(arg0: java.lang.String | string): com.sun.corba.se.impl.logging.InterceptorsSystemException

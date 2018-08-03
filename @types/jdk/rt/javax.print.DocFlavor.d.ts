@@ -1,7 +1,7 @@
 declare namespace javax {
     namespace print {
         class DocFlavor implements java.io.Serializable , java.lang.Cloneable {
-            public static hostEncoding: string
+            public static readonly hostEncoding: string
             public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
             public getMimeType(): string
             public getMediaType(): string

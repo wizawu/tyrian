@@ -4,10 +4,10 @@ declare namespace com {
             namespace plugins {
                 namespace png {
                     class PNGMetadata extends javax.imageio.metadata.IIOMetadata implements java.lang.Cloneable {
-                        public static nativeMetadataFormatName: string
-                        protected static nativeMetadataFormatClassName: string
-                        public static PHYS_UNIT_UNKNOWN: int
-                        public static PHYS_UNIT_METER: int
+                        public static readonly nativeMetadataFormatName: string
+                        protected static readonly nativeMetadataFormatClassName: string
+                        public static readonly PHYS_UNIT_UNKNOWN: int
+                        public static readonly PHYS_UNIT_METER: int
                         public IHDR_present: boolean
                         public IHDR_width: int
                         public IHDR_height: int

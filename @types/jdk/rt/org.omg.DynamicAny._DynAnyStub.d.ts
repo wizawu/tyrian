@@ -2,7 +2,7 @@ declare namespace org {
     namespace omg {
         namespace DynamicAny {
             class _DynAnyStub extends org.omg.CORBA.portable.ObjectImpl implements org.omg.DynamicAny.DynAny {
-                public static _opsClass: java.lang.Class
+                public static readonly _opsClass: java.lang.Class
                 public constructor()
                 public type(): org.omg.CORBA.TypeCode
                 public assign(arg0: org.omg.DynamicAny.DynAny): void

@@ -1,9 +1,9 @@
 declare namespace sun {
     namespace misc {
         class VM {
-            public static STATE_GREEN: int
-            public static STATE_YELLOW: int
-            public static STATE_RED: int
+            public static readonly STATE_GREEN: int
+            public static readonly STATE_YELLOW: int
+            public static readonly STATE_RED: int
             public constructor()
             public static threadsSuspended(): boolean
             public static allowThreadSuspension(arg0: java.lang.ThreadGroup, arg1: boolean): boolean

@@ -2,7 +2,7 @@ declare namespace org {
     namespace omg {
         namespace DynamicAny {
             class _DynEnumStub extends org.omg.CORBA.portable.ObjectImpl implements org.omg.DynamicAny.DynEnum {
-                public static _opsClass: java.lang.Class
+                public static readonly _opsClass: java.lang.Class
                 public constructor()
                 public get_as_string(): string
                 public set_as_string(arg0: java.lang.String | string): void

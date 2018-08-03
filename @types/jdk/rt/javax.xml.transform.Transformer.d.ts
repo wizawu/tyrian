@@ -4,18 +4,18 @@ declare namespace javax {
             abstract class Transformer {
                 protected constructor()
                 public reset(): void
-                public transform(arg0: javax.xml.transform.Source, arg1: javax.xml.transform.Result): void
-                public setParameter(arg0: java.lang.String | string, arg1: java.lang.Object): void
-                public getParameter(arg0: java.lang.String | string): java.lang.Object
-                public clearParameters(): void
-                public setURIResolver(arg0: javax.xml.transform.URIResolver | javax.xml.transform.URIResolver$$Lambda): void
-                public getURIResolver(): javax.xml.transform.URIResolver
-                public setOutputProperties(arg0: java.util.Properties): void
-                public getOutputProperties(): java.util.Properties
-                public setOutputProperty(arg0: java.lang.String | string, arg1: java.lang.String | string): void
-                public getOutputProperty(arg0: java.lang.String | string): string
-                public setErrorListener(arg0: javax.xml.transform.ErrorListener): void
-                public getErrorListener(): javax.xml.transform.ErrorListener
+                public abstract transform(arg0: javax.xml.transform.Source, arg1: javax.xml.transform.Result): void
+                public abstract setParameter(arg0: java.lang.String | string, arg1: java.lang.Object): void
+                public abstract getParameter(arg0: java.lang.String | string): java.lang.Object
+                public abstract clearParameters(): void
+                public abstract setURIResolver(arg0: javax.xml.transform.URIResolver | javax.xml.transform.URIResolver$$Lambda): void
+                public abstract getURIResolver(): javax.xml.transform.URIResolver
+                public abstract setOutputProperties(arg0: java.util.Properties): void
+                public abstract getOutputProperties(): java.util.Properties
+                public abstract setOutputProperty(arg0: java.lang.String | string, arg1: java.lang.String | string): void
+                public abstract getOutputProperty(arg0: java.lang.String | string): string
+                public abstract setErrorListener(arg0: javax.xml.transform.ErrorListener): void
+                public abstract getErrorListener(): javax.xml.transform.ErrorListener
                 public static class: java.lang.Class<any>
             }
         }

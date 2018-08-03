@@ -10,12 +10,12 @@ declare namespace com {
                                 protected count: int
                                 public constructor()
                                 public constructor(arg0: int)
-                                public write(arg0: java.io.InputStream): void
+                                public write(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
                                 public write(arg0: int): void
                                 public write(arg0: byte[], arg1: int, arg2: int): void
                                 public write(arg0: byte[]): void
                                 public writeAsAscii(arg0: java.lang.String | string): void
-                                public writeTo(arg0: java.io.OutputStream): void
+                                public writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                                 public reset(): void
                                 public toByteArray(): byte[]
                                 public size(): int

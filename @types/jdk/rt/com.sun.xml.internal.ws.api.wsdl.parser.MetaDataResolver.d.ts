@@ -8,8 +8,11 @@ declare namespace com {
                             namespace parser {
                                 abstract class MetaDataResolver {
                                     public constructor()
-                                    public resolve(arg0: java.net.URI): com.sun.xml.internal.ws.api.wsdl.parser.ServiceDescriptor
+                                    public abstract resolve(arg0: java.net.URI): com.sun.xml.internal.ws.api.wsdl.parser.ServiceDescriptor
                                     public static class: java.lang.Class<any>
+                                }
+                                interface MetaDataResolver$$Lambda {
+                                    (arg0: java.net.URI): com.sun.xml.internal.ws.api.wsdl.parser.ServiceDescriptor
                                 }
                             }
                         }

@@ -6,10 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace impl {
                             class PropertyManager {
-                                public static STAX_NOTATIONS: string
-                                public static STAX_ENTITIES: string
-                                public static CONTEXT_READER: int
-                                public static CONTEXT_WRITER: int
+                                public static readonly STAX_NOTATIONS: string
+                                public static readonly STAX_ENTITIES: string
+                                public static readonly CONTEXT_READER: int
+                                public static readonly CONTEXT_WRITER: int
                                 public constructor(arg0: int)
                                 public constructor(arg0: com.sun.org.apache.xerces.internal.impl.PropertyManager)
                                 public containsProperty(arg0: java.lang.String | string): boolean

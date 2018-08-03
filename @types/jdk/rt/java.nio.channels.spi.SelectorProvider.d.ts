@@ -5,12 +5,12 @@ declare namespace java {
                 abstract class SelectorProvider {
                     protected constructor()
                     public static provider(): java.nio.channels.spi.SelectorProvider
-                    public openDatagramChannel(): java.nio.channels.DatagramChannel
-                    public openDatagramChannel(arg0: java.net.ProtocolFamily | java.net.ProtocolFamily$$Lambda): java.nio.channels.DatagramChannel
-                    public openPipe(): java.nio.channels.Pipe
-                    public openSelector(): java.nio.channels.spi.AbstractSelector
-                    public openServerSocketChannel(): java.nio.channels.ServerSocketChannel
-                    public openSocketChannel(): java.nio.channels.SocketChannel
+                    public abstract openDatagramChannel(): java.nio.channels.DatagramChannel
+                    public abstract openDatagramChannel(arg0: java.net.ProtocolFamily | java.net.ProtocolFamily$$Lambda): java.nio.channels.DatagramChannel
+                    public abstract openPipe(): java.nio.channels.Pipe
+                    public abstract openSelector(): java.nio.channels.spi.AbstractSelector
+                    public abstract openServerSocketChannel(): java.nio.channels.ServerSocketChannel
+                    public abstract openSocketChannel(): java.nio.channels.SocketChannel
                     public inheritedChannel(): java.nio.channels.Channel
                     public static class: java.lang.Class<any>
                 }

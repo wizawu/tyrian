@@ -5,9 +5,9 @@ declare namespace jdk {
                 namespace asm {
                     namespace util {
                         class CheckSignatureAdapter extends jdk.internal.org.objectweb.asm.signature.SignatureVisitor {
-                            public static CLASS_SIGNATURE: int
-                            public static METHOD_SIGNATURE: int
-                            public static TYPE_SIGNATURE: int
+                            public static readonly CLASS_SIGNATURE: int
+                            public static readonly METHOD_SIGNATURE: int
+                            public static readonly TYPE_SIGNATURE: int
                             public constructor(arg0: int, arg1: jdk.internal.org.objectweb.asm.signature.SignatureVisitor)
                             protected constructor(arg0: int, arg1: int, arg2: jdk.internal.org.objectweb.asm.signature.SignatureVisitor)
                             public visitFormalTypeParameter(arg0: java.lang.String | string): void

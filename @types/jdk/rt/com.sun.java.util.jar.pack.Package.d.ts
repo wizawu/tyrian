@@ -5,11 +5,11 @@ declare namespace com {
                 namespace jar {
                     namespace pack {
                         class Package {
-                            public static attrCodeEmpty: com.sun.java.util.jar.pack.Attribute$Layout
-                            public static attrBootstrapMethodsEmpty: com.sun.java.util.jar.pack.Attribute$Layout
-                            public static attrInnerClassesEmpty: com.sun.java.util.jar.pack.Attribute$Layout
-                            public static attrSourceFileSpecial: com.sun.java.util.jar.pack.Attribute$Layout
-                            public static attrDefs: java.util.Map<com.sun.java.util.jar.pack.Attribute$Layout, com.sun.java.util.jar.pack.Attribute>
+                            public static readonly attrCodeEmpty: com.sun.java.util.jar.pack.Attribute$Layout
+                            public static readonly attrBootstrapMethodsEmpty: com.sun.java.util.jar.pack.Attribute$Layout
+                            public static readonly attrInnerClassesEmpty: com.sun.java.util.jar.pack.Attribute$Layout
+                            public static readonly attrSourceFileSpecial: com.sun.java.util.jar.pack.Attribute$Layout
+                            public static readonly attrDefs: java.util.Map<com.sun.java.util.jar.pack.Attribute$Layout, com.sun.java.util.jar.pack.Attribute>
                             public constructor()
                             public constructor(arg0: com.sun.java.util.jar.pack.Package$Version, arg1: com.sun.java.util.jar.pack.Package$Version, arg2: com.sun.java.util.jar.pack.Package$Version)
                             public reset(): void

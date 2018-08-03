@@ -2,11 +2,11 @@ declare namespace com {
     namespace ibm {
         namespace jvm {
             class Trace {
-                public static EVENT: string
-                public static EXCEPTION: string
-                public static ENTRY: string
-                public static EXIT: string
-                public static EXCEPTION_EXIT: string
+                public static readonly EVENT: string
+                public static readonly EXCEPTION: string
+                public static readonly ENTRY: string
+                public static readonly EXIT: string
+                public static readonly EXCEPTION_EXIT: string
                 public static initializeTrace(): void
                 public static set(arg0: java.lang.String | string): int
                 public static snap(): void

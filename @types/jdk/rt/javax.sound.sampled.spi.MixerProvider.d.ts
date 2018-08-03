@@ -5,8 +5,8 @@ declare namespace javax {
                 abstract class MixerProvider {
                     public constructor()
                     public isMixerSupported(arg0: javax.sound.sampled.Mixer$Info): boolean
-                    public getMixerInfo(): javax.sound.sampled.Mixer$Info[]
-                    public getMixer(arg0: javax.sound.sampled.Mixer$Info): javax.sound.sampled.Mixer
+                    public abstract getMixerInfo(): javax.sound.sampled.Mixer$Info[]
+                    public abstract getMixer(arg0: javax.sound.sampled.Mixer$Info): javax.sound.sampled.Mixer
                     public static class: java.lang.Class<any>
                 }
             }

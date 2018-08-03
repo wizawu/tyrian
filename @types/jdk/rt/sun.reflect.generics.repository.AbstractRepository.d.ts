@@ -6,8 +6,11 @@ declare namespace sun {
                     protected getTree(): T
                     protected getReifier(): sun.reflect.generics.visitor.Reifier
                     protected constructor(arg0: java.lang.String | string, arg1: sun.reflect.generics.factory.GenericsFactory)
-                    protected parse(arg0: java.lang.String | string): T
+                    protected abstract parse(arg0: java.lang.String | string): T
                     public static class: java.lang.Class<any>
+                }
+                interface AbstractRepository$$Lambda<T extends sun.reflect.generics.tree.Tree> {
+                    (arg0: java.lang.String | string): T
                 }
             }
         }

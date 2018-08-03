@@ -2,8 +2,8 @@ declare namespace sun {
     namespace security {
         namespace x509 {
             class OCSPNoCheckExtension extends sun.security.x509.Extension implements sun.security.x509.CertAttrSet<java.lang.String> {
-                public static IDENT: string
-                public static NAME: string
+                public static readonly IDENT: string
+                public static readonly NAME: string
                 public constructor()
                 public constructor(arg0: java.lang.Boolean | boolean, arg1: java.lang.Object)
                 public set(arg0: java.lang.String | string, arg1: java.lang.Object): void

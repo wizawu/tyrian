@@ -3,6 +3,8 @@ declare namespace java {
         namespace reflect {
             interface WeakCache$Value<V> extends java.util.function$.Supplier<V> {
             }
+            interface WeakCache$Value$$Lambda<V> extends java.util.function$.Supplier<V> {
+            }
         }
     }
 }

@@ -13,6 +13,7 @@ declare namespace sun {
                 public getPrimeExponentQ(): java.math.BigInteger
                 public getCrtCoefficient(): java.math.BigInteger
                 protected parseKeyBits(): void
+                public static class: java.lang.Class<any>
             }
         }
     }

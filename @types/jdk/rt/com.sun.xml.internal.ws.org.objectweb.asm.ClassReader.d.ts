@@ -7,19 +7,19 @@ declare namespace com {
                         namespace objectweb {
                             namespace asm {
                                 class ClassReader {
-                                    public static SKIP_CODE: int
-                                    public static SKIP_DEBUG: int
-                                    public static SKIP_FRAMES: int
-                                    public static EXPAND_FRAMES: int
-                                    public b: byte[]
-                                    public header: int
+                                    public static readonly SKIP_CODE: int
+                                    public static readonly SKIP_DEBUG: int
+                                    public static readonly SKIP_FRAMES: int
+                                    public static readonly EXPAND_FRAMES: int
+                                    public readonly b: byte[]
+                                    public readonly header: int
                                     public constructor(arg0: byte[])
                                     public constructor(arg0: byte[], arg1: int, arg2: int)
                                     public getAccess(): int
                                     public getClassName(): string
                                     public getSuperName(): string
                                     public getInterfaces(): java.lang.String[]
-                                    public constructor(arg0: java.io.InputStream)
+                                    public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                                     public constructor(arg0: java.lang.String | string)
                                     public accept(arg0: com.sun.xml.internal.ws.org.objectweb.asm.ClassVisitor, arg1: int): void
                                     public accept(arg0: com.sun.xml.internal.ws.org.objectweb.asm.ClassVisitor, arg1: com.sun.xml.internal.ws.org.objectweb.asm.Attribute[], arg2: int): void

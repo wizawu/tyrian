@@ -1,9 +1,9 @@
 declare namespace java {
     namespace awt {
         class ScrollPane extends java.awt.Container implements javax.accessibility.Accessible {
-            public static SCROLLBARS_AS_NEEDED: int
-            public static SCROLLBARS_ALWAYS: int
-            public static SCROLLBARS_NEVER: int
+            public static readonly SCROLLBARS_AS_NEEDED: int
+            public static readonly SCROLLBARS_ALWAYS: int
+            public static readonly SCROLLBARS_NEVER: int
             public constructor()
             public constructor(arg0: int)
             protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object, arg2: int): void

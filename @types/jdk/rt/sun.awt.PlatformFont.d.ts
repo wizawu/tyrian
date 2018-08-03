@@ -10,7 +10,7 @@ declare namespace sun {
             protected static FONTCACHEMASK: int
             protected static osVersion: string
             public constructor(arg0: java.lang.String | string, arg1: int)
-            protected getMissingGlyphCharacter(): char
+            protected abstract getMissingGlyphCharacter(): char
             public makeMultiCharsetString(arg0: java.lang.String | string): sun.awt.CharsetString[]
             public makeMultiCharsetString(arg0: java.lang.String | string, arg1: boolean): sun.awt.CharsetString[]
             public makeMultiCharsetString(arg0: char[], arg1: int, arg2: int): sun.awt.CharsetString[]
@@ -20,6 +20,9 @@ declare namespace sun {
             public makeConvertedMultiFontChars(arg0: char[], arg1: int, arg2: int): java.lang.Object[]
             protected getFontCache(): java.lang.Object[]
             public static class: java.lang.Class<any>
+        }
+        interface PlatformFont$$Lambda implements java.awt.peer.FontPeer {
+            (): char
         }
     }
 }

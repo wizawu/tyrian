@@ -6,10 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace parsers {
                             class SAXParser extends com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser {
-                                protected static NOTIFY_BUILTIN_REFS: string
-                                protected static REPORT_WHITESPACE: string
-                                protected static SYMBOL_TABLE: string
-                                protected static XMLGRAMMAR_POOL: string
+                                protected static readonly NOTIFY_BUILTIN_REFS: string
+                                protected static readonly REPORT_WHITESPACE: string
+                                protected static readonly SYMBOL_TABLE: string
+                                protected static readonly XMLGRAMMAR_POOL: string
                                 public constructor(arg0: com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration)
                                 public constructor()
                                 public constructor(arg0: com.sun.org.apache.xerces.internal.util.SymbolTable)

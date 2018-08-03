@@ -5,7 +5,7 @@ declare namespace com {
                 namespace ws {
                     namespace encoding {
                         class MtomCodec$ByteArrayBuffer {
-                            public write(arg0: java.io.OutputStream): void
+                            public write(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                             public static class: java.lang.Class<any>
                         }
                     }

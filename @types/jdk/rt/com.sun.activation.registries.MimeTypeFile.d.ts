@@ -4,7 +4,7 @@ declare namespace com {
             namespace registries {
                 class MimeTypeFile {
                     public constructor(arg0: java.lang.String | string)
-                    public constructor(arg0: java.io.InputStream)
+                    public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                     public constructor()
                     public getMimeTypeEntry(arg0: java.lang.String | string): com.sun.activation.registries.MimeTypeEntry
                     public getMIMETypeString(arg0: java.lang.String | string): string

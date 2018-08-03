@@ -6,8 +6,8 @@ declare namespace sun {
                     abstract class AbstractDelegateHttpsURLConnection extends sun.net.www.protocol.http.HttpURLConnection {
                         protected constructor(arg0: java.net.URL, arg1: sun.net.www.protocol.http.Handler)
                         protected constructor(arg0: java.net.URL, arg1: java.net.Proxy, arg2: sun.net.www.protocol.http.Handler)
-                        protected getSSLSocketFactory(): javax.net.ssl.SSLSocketFactory
-                        protected getHostnameVerifier(): javax.net.ssl.HostnameVerifier
+                        protected abstract getSSLSocketFactory(): javax.net.ssl.SSLSocketFactory
+                        protected abstract getHostnameVerifier(): javax.net.ssl.HostnameVerifier
                         public setNewClient(arg0: java.net.URL): void
                         public setNewClient(arg0: java.net.URL, arg1: boolean): void
                         public setProxiedClient(arg0: java.net.URL, arg1: java.lang.String | string, arg2: int): void

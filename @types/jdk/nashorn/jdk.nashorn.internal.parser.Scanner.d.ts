@@ -3,9 +3,9 @@ declare namespace jdk {
         namespace internal {
             namespace parser {
                 class Scanner {
-                    protected content: char[]
+                    protected readonly content: char[]
                     protected position: int
-                    protected limit: int
+                    protected readonly limit: int
                     protected line: int
                     protected ch0: char
                     protected ch1: char

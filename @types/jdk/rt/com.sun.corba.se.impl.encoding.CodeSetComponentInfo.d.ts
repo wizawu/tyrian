@@ -5,8 +5,8 @@ declare namespace com {
                 namespace impl {
                     namespace encoding {
                         class CodeSetComponentInfo {
-                            public static JAVASOFT_DEFAULT_CODESETS: com.sun.corba.se.impl.encoding.CodeSetComponentInfo
-                            public static LOCAL_CODE_SETS: com.sun.corba.se.impl.encoding.CodeSetComponentInfo$CodeSetContext
+                            public static readonly JAVASOFT_DEFAULT_CODESETS: com.sun.corba.se.impl.encoding.CodeSetComponentInfo
+                            public static readonly LOCAL_CODE_SETS: com.sun.corba.se.impl.encoding.CodeSetComponentInfo$CodeSetContext
                             public equals(arg0: java.lang.Object): boolean
                             public hashCode(): int
                             public toString(): string

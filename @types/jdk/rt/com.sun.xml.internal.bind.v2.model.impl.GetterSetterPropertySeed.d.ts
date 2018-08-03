@@ -7,8 +7,8 @@ declare namespace com {
                         namespace model {
                             namespace impl {
                                 class GetterSetterPropertySeed<TypeT, ClassDeclT, FieldT, MethodT> implements com.sun.xml.internal.bind.v2.model.impl.PropertySeed<TypeT, ClassDeclT, FieldT, MethodT> {
-                                    protected getter: MethodT
-                                    protected setter: MethodT
+                                    protected readonly getter: MethodT
+                                    protected readonly setter: MethodT
                                     public getRawType(): TypeT
                                     public readAnnotation<A extends java.lang.annotation.Annotation>(arg0: java.lang.Class<A>): A
                                     public hasAnnotation<A extends java.lang.annotation.Annotation>(arg0: java.lang.Class<java.lang.annotation.Annotation>): boolean

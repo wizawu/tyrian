@@ -8,8 +8,8 @@ declare namespace com {
                             namespace impl {
                                 abstract class DetailImpl extends com.sun.xml.internal.messaging.saaj.soap.impl.FaultElementImpl implements javax.xml.soap.Detail {
                                     public constructor(arg0: com.sun.xml.internal.messaging.saaj.soap.SOAPDocumentImpl, arg1: com.sun.xml.internal.messaging.saaj.soap.name.NameImpl)
-                                    protected createDetailEntry(arg0: javax.xml.soap.Name): javax.xml.soap.DetailEntry
-                                    protected createDetailEntry(arg0: javax.xml.namespace.QName): javax.xml.soap.DetailEntry
+                                    protected abstract createDetailEntry(arg0: javax.xml.soap.Name): javax.xml.soap.DetailEntry
+                                    protected abstract createDetailEntry(arg0: javax.xml.namespace.QName): javax.xml.soap.DetailEntry
                                     public addDetailEntry(arg0: javax.xml.soap.Name): javax.xml.soap.DetailEntry
                                     public addDetailEntry(arg0: javax.xml.namespace.QName): javax.xml.soap.DetailEntry
                                     protected addElement(arg0: javax.xml.soap.Name): javax.xml.soap.SOAPElement

@@ -4,7 +4,7 @@ declare namespace sun {
             namespace internal {
                 namespace crypto {
                     abstract class DesCbcEType extends sun.security.krb5.internal.crypto.EType {
-                        protected calculateChecksum(arg0: byte[], arg1: int): byte[]
+                        protected abstract calculateChecksum(arg0: byte[], arg1: int): byte[]
                         public blockSize(): int
                         public keyType(): int
                         public keySize(): int
@@ -14,6 +14,9 @@ declare namespace sun {
                         public decrypt(arg0: byte[], arg1: byte[], arg2: byte[], arg3: int): byte[]
                         protected isChecksumValid(arg0: byte[]): boolean
                         public static class: java.lang.Class<any>
+                    }
+                    interface DesCbcEType$$Lambda extends sun.security.krb5.internal.crypto.EType {
+                        (arg0: byte[], arg1: int): byte[]
                     }
                 }
             }

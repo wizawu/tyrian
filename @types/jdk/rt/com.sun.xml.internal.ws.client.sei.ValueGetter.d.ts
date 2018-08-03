@@ -6,8 +6,8 @@ declare namespace com {
                     namespace client {
                         namespace sei {
                             abstract class ValueGetter extends java.lang.Enum<com.sun.xml.internal.ws.client.sei.ValueGetter> {
-                                public static PLAIN: com.sun.xml.internal.ws.client.sei.ValueGetter
-                                public static HOLDER: com.sun.xml.internal.ws.client.sei.ValueGetter
+                                public static readonly PLAIN: com.sun.xml.internal.ws.client.sei.ValueGetter
+                                public static readonly HOLDER: com.sun.xml.internal.ws.client.sei.ValueGetter
                                 public static values(): com.sun.xml.internal.ws.client.sei.ValueGetter[]
                                 public static valueOf(arg0: java.lang.String | string): com.sun.xml.internal.ws.client.sei.ValueGetter
                                 public static class: java.lang.Class<any>

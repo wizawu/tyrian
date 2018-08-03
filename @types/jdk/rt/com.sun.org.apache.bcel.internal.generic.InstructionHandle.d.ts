@@ -10,9 +10,9 @@ declare namespace com {
                                 public getNext(): com.sun.org.apache.bcel.internal.generic.InstructionHandle
                                 public getPrev(): com.sun.org.apache.bcel.internal.generic.InstructionHandle
                                 public getInstruction(): com.sun.org.apache.bcel.internal.generic.Instruction
-                                public setInstruction(arg0: com.sun.org.apache.bcel.internal.generic.Instruction): void
-                                public swapInstruction(arg0: com.sun.org.apache.bcel.internal.generic.Instruction): com.sun.org.apache.bcel.internal.generic.Instruction
-                                protected constructor(arg0: com.sun.org.apache.bcel.internal.generic.Instruction)
+                                public setInstruction(arg0: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda): void
+                                public swapInstruction(arg0: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda): com.sun.org.apache.bcel.internal.generic.Instruction
+                                protected constructor(arg0: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda)
                                 protected updatePosition(arg0: int, arg1: int): int
                                 public getPosition(): int
                                 protected addHandle(): void

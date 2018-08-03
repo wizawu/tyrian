@@ -6,7 +6,7 @@ declare namespace com {
                     namespace util {
                         class ReadAllStream extends java.io.InputStream {
                             public constructor()
-                            public readAll(arg0: java.io.InputStream, arg1: long): void
+                            public readAll(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: long): void
                             public read(): int
                             public read(arg0: byte[], arg1: int, arg2: int): int
                             public close(): void

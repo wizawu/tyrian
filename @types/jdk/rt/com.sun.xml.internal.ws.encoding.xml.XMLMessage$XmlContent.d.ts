@@ -6,7 +6,7 @@ declare namespace com {
                     namespace encoding {
                         namespace xml {
                             class XMLMessage$XmlContent extends com.sun.xml.internal.ws.message.AbstractMessageImpl implements com.sun.xml.internal.ws.encoding.xml.XMLMessage$MessageDataSource {
-                                public constructor(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: com.sun.xml.internal.ws.api.WSFeatureList)
+                                public constructor(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: com.sun.xml.internal.ws.api.WSFeatureList)
                                 public hasUnconsumedDataSource(): boolean
                                 public getDataSource(): javax.activation.DataSource
                                 public hasHeaders(): boolean

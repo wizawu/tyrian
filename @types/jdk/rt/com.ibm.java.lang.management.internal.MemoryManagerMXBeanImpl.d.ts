@@ -5,7 +5,7 @@ declare namespace com {
                 namespace management {
                     namespace internal {
                         class MemoryManagerMXBeanImpl implements java.lang.management.MemoryManagerMXBean {
-                            protected id: int
+                            protected readonly id: int
                             protected addMemoryPool(arg0: java.lang.management.MemoryPoolMXBean): void
                             public getMemoryPoolNames(): java.lang.String[]
                             public getName(): string

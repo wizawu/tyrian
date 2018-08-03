@@ -19,8 +19,8 @@ declare namespace java {
             protected disableEvents(arg0: long): void
             public setActionCommand(arg0: java.lang.String | string): void
             public getActionCommand(): string
-            public addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
-            public removeActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
+            public addActionListener(arg0: java.awt.event.ActionListener): void
+            public removeActionListener(arg0: java.awt.event.ActionListener): void
             public getActionListeners(): java.awt.event.ActionListener[]
             public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]
             protected processEvent<T extends java.util.EventListener>(arg0: java.awt.AWTEvent): void

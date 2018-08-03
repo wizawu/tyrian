@@ -7,40 +7,40 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 class XMLSchemaValidator implements com.sun.org.apache.xerces.internal.xni.parser.XMLComponent , com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentFilter , com.sun.org.apache.xerces.internal.impl.xs.identity.FieldActivator , com.sun.org.apache.xerces.internal.impl.RevalidationHandler {
-                                    protected static VALIDATION: string
-                                    protected static SCHEMA_VALIDATION: string
-                                    protected static SCHEMA_FULL_CHECKING: string
-                                    protected static DYNAMIC_VALIDATION: string
-                                    protected static NORMALIZE_DATA: string
-                                    protected static SCHEMA_ELEMENT_DEFAULT: string
-                                    protected static SCHEMA_AUGMENT_PSVI: string
-                                    protected static ALLOW_JAVA_ENCODINGS: string
-                                    protected static STANDARD_URI_CONFORMANT_FEATURE: string
-                                    protected static GENERATE_SYNTHETIC_ANNOTATIONS: string
-                                    protected static VALIDATE_ANNOTATIONS: string
-                                    protected static HONOUR_ALL_SCHEMALOCATIONS: string
-                                    protected static USE_GRAMMAR_POOL_ONLY: string
-                                    protected static CONTINUE_AFTER_FATAL_ERROR: string
-                                    protected static PARSER_SETTINGS: string
-                                    protected static NAMESPACE_GROWTH: string
-                                    protected static TOLERATE_DUPLICATES: string
-                                    protected static REPORT_WHITESPACE: string
-                                    public static SYMBOL_TABLE: string
-                                    public static ERROR_REPORTER: string
-                                    public static ENTITY_RESOLVER: string
-                                    public static XMLGRAMMAR_POOL: string
-                                    protected static VALIDATION_MANAGER: string
-                                    protected static ENTITY_MANAGER: string
-                                    protected static SCHEMA_LOCATION: string
-                                    protected static SCHEMA_NONS_LOCATION: string
-                                    protected static JAXP_SCHEMA_SOURCE: string
-                                    protected static JAXP_SCHEMA_LANGUAGE: string
-                                    protected static SCHEMA_DV_FACTORY: string
-                                    protected static OVERRIDE_PARSER: string
-                                    protected static ID_CONSTRAINT_NUM: int
+                                    protected static readonly VALIDATION: string
+                                    protected static readonly SCHEMA_VALIDATION: string
+                                    protected static readonly SCHEMA_FULL_CHECKING: string
+                                    protected static readonly DYNAMIC_VALIDATION: string
+                                    protected static readonly NORMALIZE_DATA: string
+                                    protected static readonly SCHEMA_ELEMENT_DEFAULT: string
+                                    protected static readonly SCHEMA_AUGMENT_PSVI: string
+                                    protected static readonly ALLOW_JAVA_ENCODINGS: string
+                                    protected static readonly STANDARD_URI_CONFORMANT_FEATURE: string
+                                    protected static readonly GENERATE_SYNTHETIC_ANNOTATIONS: string
+                                    protected static readonly VALIDATE_ANNOTATIONS: string
+                                    protected static readonly HONOUR_ALL_SCHEMALOCATIONS: string
+                                    protected static readonly USE_GRAMMAR_POOL_ONLY: string
+                                    protected static readonly CONTINUE_AFTER_FATAL_ERROR: string
+                                    protected static readonly PARSER_SETTINGS: string
+                                    protected static readonly NAMESPACE_GROWTH: string
+                                    protected static readonly TOLERATE_DUPLICATES: string
+                                    protected static readonly REPORT_WHITESPACE: string
+                                    public static readonly SYMBOL_TABLE: string
+                                    public static readonly ERROR_REPORTER: string
+                                    public static readonly ENTITY_RESOLVER: string
+                                    public static readonly XMLGRAMMAR_POOL: string
+                                    protected static readonly VALIDATION_MANAGER: string
+                                    protected static readonly ENTITY_MANAGER: string
+                                    protected static readonly SCHEMA_LOCATION: string
+                                    protected static readonly SCHEMA_NONS_LOCATION: string
+                                    protected static readonly JAXP_SCHEMA_SOURCE: string
+                                    protected static readonly JAXP_SCHEMA_LANGUAGE: string
+                                    protected static readonly SCHEMA_DV_FACTORY: string
+                                    protected static readonly OVERRIDE_PARSER: string
+                                    protected static readonly ID_CONSTRAINT_NUM: int
                                     protected fCurrentPSVI: com.sun.org.apache.xerces.internal.impl.xs.ElementPSVImpl
-                                    protected fAugmentations: com.sun.org.apache.xerces.internal.util.AugmentationsImpl
-                                    protected fMayMatchFieldMap: java.util.HashMap
+                                    protected readonly fAugmentations: com.sun.org.apache.xerces.internal.util.AugmentationsImpl
+                                    protected readonly fMayMatchFieldMap: java.util.HashMap
                                     protected fDefaultValue: com.sun.org.apache.xerces.internal.xni.XMLString
                                     protected fDynamicValidation: boolean
                                     protected fSchemaDynamicValidation: boolean
@@ -56,7 +56,7 @@ declare namespace com {
                                     protected fInCDATA: boolean
                                     protected fSawOnlyWhitespaceInElementContent: boolean
                                     protected fSymbolTable: com.sun.org.apache.xerces.internal.util.SymbolTable
-                                    protected fXSIErrorReporter: com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter
+                                    protected readonly fXSIErrorReporter: com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter
                                     protected fEntityResolver: com.sun.org.apache.xerces.internal.xni.parser.XMLEntityResolver
                                     protected fValidationManager: com.sun.org.apache.xerces.internal.impl.validation.ValidationManager
                                     protected fValidationState: com.sun.org.apache.xerces.internal.impl.validation.ValidationState
@@ -64,8 +64,8 @@ declare namespace com {
                                     protected fExternalSchemas: string
                                     protected fExternalNoNamespaceSchema: string
                                     protected fJaxpSchemaSource: java.lang.Object
-                                    protected fXSDDescription: com.sun.org.apache.xerces.internal.impl.xs.XSDDescription
-                                    protected fLocationPairs: java.util.Map<java.lang.String, com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader$LocationArray>
+                                    protected readonly fXSDDescription: com.sun.org.apache.xerces.internal.impl.xs.XSDDescription
+                                    protected readonly fLocationPairs: java.util.Map<java.lang.String, com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader$LocationArray>
                                     protected fDocumentHandler: com.sun.org.apache.xerces.internal.xni.XMLDocumentHandler
                                     protected fDocumentSource: com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentSource
                                     protected fMatcherStack: com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XPathMatcherStack

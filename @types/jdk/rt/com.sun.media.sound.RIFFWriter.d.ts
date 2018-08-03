@@ -5,7 +5,7 @@ declare namespace com {
                 class RIFFWriter extends java.io.OutputStream {
                     public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
                     public constructor(arg0: java.io.File, arg1: java.lang.String | string)
-                    public constructor(arg0: java.io.OutputStream, arg1: java.lang.String | string)
+                    public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: java.lang.String | string)
                     public seek(arg0: long): void
                     public getFilePointer(): long
                     public setWriteOverride(arg0: boolean): void

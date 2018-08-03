@@ -7,7 +7,7 @@ declare namespace com {
                         namespace model {
                             namespace impl {
                                 class ClassInfoImpl<T, C, F, M> extends com.sun.xml.internal.bind.v2.model.impl.TypeInfoImpl<T, C, F, M> implements com.sun.xml.internal.bind.v2.model.core.ClassInfo<T, C> , com.sun.xml.internal.bind.v2.model.core.Element<T, C> {
-                                    protected clazz: C
+                                    protected readonly clazz: C
                                     protected attributeWildcard: com.sun.xml.internal.bind.v2.model.impl.PropertySeed<T, C, F, M>
                                     public getBaseClass(): com.sun.xml.internal.bind.v2.model.impl.ClassInfoImpl<T, C, F, M>
                                     public getSubstitutionHead(): com.sun.xml.internal.bind.v2.model.core.Element<T, C>

@@ -7,9 +7,6 @@ declare namespace com {
                         interface AverageRangeStatistic extends com.sun.org.glassfish.external.statistics.RangeStatistic {
                             getAverage(): long
                         }
-                        interface AverageRangeStatistic$$Lambda extends com.sun.org.glassfish.external.statistics.RangeStatistic {
-                            (): long
-                        }
                     }
                 }
             }

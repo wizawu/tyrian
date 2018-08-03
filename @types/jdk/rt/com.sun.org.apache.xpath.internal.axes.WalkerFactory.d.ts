@@ -6,29 +6,29 @@ declare namespace com {
                     namespace internal {
                         namespace axes {
                             class WalkerFactory {
-                                public static BITS_COUNT: int
-                                public static BITS_RESERVED: int
-                                public static BIT_PREDICATE: int
-                                public static BIT_ANCESTOR: int
-                                public static BIT_ANCESTOR_OR_SELF: int
-                                public static BIT_ATTRIBUTE: int
-                                public static BIT_CHILD: int
-                                public static BIT_DESCENDANT: int
-                                public static BIT_DESCENDANT_OR_SELF: int
-                                public static BIT_FOLLOWING: int
-                                public static BIT_FOLLOWING_SIBLING: int
-                                public static BIT_NAMESPACE: int
-                                public static BIT_PARENT: int
-                                public static BIT_PRECEDING: int
-                                public static BIT_PRECEDING_SIBLING: int
-                                public static BIT_SELF: int
-                                public static BIT_FILTER: int
-                                public static BIT_ROOT: int
-                                public static BITMASK_TRAVERSES_OUTSIDE_SUBTREE: int
-                                public static BIT_BACKWARDS_SELF: int
-                                public static BIT_ANY_DESCENDANT_FROM_ROOT: int
-                                public static BIT_NODETEST_ANY: int
-                                public static BIT_MATCH_PATTERN: int
+                                public static readonly BITS_COUNT: int
+                                public static readonly BITS_RESERVED: int
+                                public static readonly BIT_PREDICATE: int
+                                public static readonly BIT_ANCESTOR: int
+                                public static readonly BIT_ANCESTOR_OR_SELF: int
+                                public static readonly BIT_ATTRIBUTE: int
+                                public static readonly BIT_CHILD: int
+                                public static readonly BIT_DESCENDANT: int
+                                public static readonly BIT_DESCENDANT_OR_SELF: int
+                                public static readonly BIT_FOLLOWING: int
+                                public static readonly BIT_FOLLOWING_SIBLING: int
+                                public static readonly BIT_NAMESPACE: int
+                                public static readonly BIT_PARENT: int
+                                public static readonly BIT_PRECEDING: int
+                                public static readonly BIT_PRECEDING_SIBLING: int
+                                public static readonly BIT_SELF: int
+                                public static readonly BIT_FILTER: int
+                                public static readonly BIT_ROOT: int
+                                public static readonly BITMASK_TRAVERSES_OUTSIDE_SUBTREE: int
+                                public static readonly BIT_BACKWARDS_SELF: int
+                                public static readonly BIT_ANY_DESCENDANT_FROM_ROOT: int
+                                public static readonly BIT_NODETEST_ANY: int
+                                public static readonly BIT_MATCH_PATTERN: int
                                 public constructor()
                                 public static isSet(arg0: int, arg1: int): boolean
                                 public static diagnoseIterator(arg0: java.lang.String | string, arg1: int, arg2: com.sun.org.apache.xpath.internal.compiler.Compiler): void

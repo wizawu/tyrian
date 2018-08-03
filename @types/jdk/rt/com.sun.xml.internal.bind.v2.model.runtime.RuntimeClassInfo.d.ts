@@ -13,8 +13,8 @@ declare namespace com {
                                     getFactoryMethod(): java.lang.reflect.Method
                                     getAttributeWildcard<BeanT>(): com.sun.xml.internal.bind.v2.runtime.reflect.Accessor<BeanT, java.util.Map<javax.xml.namespace.QName, java.lang.String>>
                                     getLocatorField<BeanT>(): com.sun.xml.internal.bind.v2.runtime.reflect.Accessor<BeanT, org.xml.sax.Locator>
-                                    getProperty(arg0: java.lang.String | string): com.sun.xml.internal.bind.v2.model.core.PropertyInfo
-                                    getBaseClass(): com.sun.xml.internal.bind.v2.model.core.ClassInfo
+                                    getProperty<BeanT>(arg0: java.lang.String | string): com.sun.xml.internal.bind.v2.model.core.PropertyInfo
+                                    getBaseClass<BeanT>(): com.sun.xml.internal.bind.v2.model.core.ClassInfo
                                 }
                             }
                         }

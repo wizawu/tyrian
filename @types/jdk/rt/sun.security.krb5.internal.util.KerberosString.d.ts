@@ -4,7 +4,7 @@ declare namespace sun {
             namespace internal {
                 namespace util {
                     class KerberosString {
-                        public static MSNAME: boolean
+                        public static readonly MSNAME: boolean
                         public constructor(arg0: java.lang.String | string)
                         public constructor(arg0: sun.security.util.DerValue)
                         public toString(): string

@@ -6,7 +6,7 @@ declare namespace com {
                     namespace internal {
                         namespace util {
                             class ParserConfigurationSettings implements com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager {
-                                protected static PARSER_SETTINGS: string
+                                protected static readonly PARSER_SETTINGS: string
                                 protected fRecognizedProperties: java.util.Set<java.lang.String>
                                 protected fProperties: java.util.Map<java.lang.String, java.lang.Object>
                                 protected fRecognizedFeatures: java.util.Set<java.lang.String>

@@ -6,10 +6,10 @@ declare namespace com {
                     namespace api {
                         namespace model {
                             class ParameterBinding {
-                                public static BODY: com.sun.xml.internal.ws.api.model.ParameterBinding
-                                public static HEADER: com.sun.xml.internal.ws.api.model.ParameterBinding
-                                public static UNBOUND: com.sun.xml.internal.ws.api.model.ParameterBinding
-                                public kind: com.sun.xml.internal.ws.api.model.ParameterBinding$Kind
+                                public static readonly BODY: com.sun.xml.internal.ws.api.model.ParameterBinding
+                                public static readonly HEADER: com.sun.xml.internal.ws.api.model.ParameterBinding
+                                public static readonly UNBOUND: com.sun.xml.internal.ws.api.model.ParameterBinding
+                                public readonly kind: com.sun.xml.internal.ws.api.model.ParameterBinding$Kind
                                 public static createAttachment(arg0: java.lang.String | string): com.sun.xml.internal.ws.api.model.ParameterBinding
                                 public toString(): string
                                 public getMimeType(): string

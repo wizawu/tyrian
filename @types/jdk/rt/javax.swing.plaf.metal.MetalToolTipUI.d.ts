@@ -3,7 +3,7 @@ declare namespace javax {
         namespace plaf {
             namespace metal {
                 class MetalToolTipUI extends javax.swing.plaf.basic.BasicToolTipUI {
-                    public static padSpaceBetweenStrings: int
+                    public static readonly padSpaceBetweenStrings: int
                     public constructor()
                     public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
                     public installUI(arg0: javax.swing.JComponent): void

@@ -5,23 +5,23 @@ declare namespace java {
                 protected constructor()
                 public equals(arg0: java.lang.Object): boolean
                 public hashCode(): int
-                public getEncoded(): byte[]
-                public verify(arg0: java.security.PublicKey): void
-                public verify(arg0: java.security.PublicKey, arg1: java.lang.String | string): void
+                public abstract getEncoded(): byte[]
+                public abstract verify(arg0: java.security.PublicKey): void
+                public abstract verify(arg0: java.security.PublicKey, arg1: java.lang.String | string): void
                 public verify(arg0: java.security.PublicKey, arg1: java.security.Provider): void
-                public getVersion(): int
-                public getIssuerDN(): java.security.Principal
+                public abstract getVersion(): int
+                public abstract getIssuerDN(): java.security.Principal
                 public getIssuerX500Principal(): javax.security.auth.x500.X500Principal
-                public getThisUpdate(): java.util.Date
-                public getNextUpdate(): java.util.Date
-                public getRevokedCertificate(arg0: java.math.BigInteger): java.security.cert.X509CRLEntry
+                public abstract getThisUpdate(): java.util.Date
+                public abstract getNextUpdate(): java.util.Date
+                public abstract getRevokedCertificate(arg0: java.math.BigInteger): java.security.cert.X509CRLEntry
                 public getRevokedCertificate(arg0: java.security.cert.X509Certificate): java.security.cert.X509CRLEntry
-                public getRevokedCertificates(): java.util.Set<java.security.cert.X509CRLEntry>
-                public getTBSCertList(): byte[]
-                public getSignature(): byte[]
-                public getSigAlgName(): string
-                public getSigAlgOID(): string
-                public getSigAlgParams(): byte[]
+                public abstract getRevokedCertificates(): java.util.Set<java.security.cert.X509CRLEntry>
+                public abstract getTBSCertList(): byte[]
+                public abstract getSignature(): byte[]
+                public abstract getSigAlgName(): string
+                public abstract getSigAlgOID(): string
+                public abstract getSigAlgParams(): byte[]
                 public static class: java.lang.Class<any>
             }
         }

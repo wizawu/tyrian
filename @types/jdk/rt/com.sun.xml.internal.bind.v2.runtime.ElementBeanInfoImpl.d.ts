@@ -6,7 +6,7 @@ declare namespace com {
                     namespace v2 {
                         namespace runtime {
                             class ElementBeanInfoImpl extends com.sun.xml.internal.bind.v2.runtime.JaxBeanInfo<javax.xml.bind.JAXBElement> {
-                                public expectedType: java.lang.Class
+                                public readonly expectedType: java.lang.Class
                                 protected constructor(arg0: com.sun.xml.internal.bind.v2.runtime.JAXBContextImpl)
                                 public getElementNamespaceURI(arg0: javax.xml.bind.JAXBElement): string
                                 public getElementLocalName(arg0: javax.xml.bind.JAXBElement): string

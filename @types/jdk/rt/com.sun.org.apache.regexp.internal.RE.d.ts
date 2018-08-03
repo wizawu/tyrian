@@ -5,13 +5,13 @@ declare namespace com {
                 namespace regexp {
                     namespace internal {
                         class RE implements java.io.Serializable {
-                            public static MATCH_NORMAL: int
-                            public static MATCH_CASEINDEPENDENT: int
-                            public static MATCH_MULTILINE: int
-                            public static MATCH_SINGLELINE: int
-                            public static REPLACE_ALL: int
-                            public static REPLACE_FIRSTONLY: int
-                            public static REPLACE_BACKREFERENCES: int
+                            public static readonly MATCH_NORMAL: int
+                            public static readonly MATCH_CASEINDEPENDENT: int
+                            public static readonly MATCH_MULTILINE: int
+                            public static readonly MATCH_SINGLELINE: int
+                            public static readonly REPLACE_ALL: int
+                            public static readonly REPLACE_FIRSTONLY: int
+                            public static readonly REPLACE_BACKREFERENCES: int
                             public constructor(arg0: java.lang.String | string)
                             public constructor(arg0: java.lang.String | string, arg1: int)
                             public constructor(arg0: com.sun.org.apache.regexp.internal.REProgram, arg1: int)

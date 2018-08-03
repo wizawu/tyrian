@@ -6,7 +6,7 @@ declare namespace com {
                     namespace api {
                         namespace server {
                             abstract class Adapter<TK extends com.sun.xml.internal.ws.api.server.Adapter$Toolkit> implements com.sun.xml.internal.ws.api.config.management.Reconfigurable , com.sun.xml.internal.ws.api.Component {
-                                protected endpoint: com.sun.xml.internal.ws.api.server.WSEndpoint<any>
+                                protected readonly endpoint: com.sun.xml.internal.ws.api.server.WSEndpoint<any>
                                 protected pool: com.sun.xml.internal.ws.util.Pool<TK>
                                 protected constructor(arg0: com.sun.xml.internal.ws.api.server.WSEndpoint)
                                 protected getEndpointComponent(): com.sun.xml.internal.ws.api.Component
@@ -14,8 +14,11 @@ declare namespace com {
                                 public getSPI<S>(arg0: java.lang.Class<S>): S
                                 public getEndpoint<S>(): com.sun.xml.internal.ws.api.server.WSEndpoint<any>
                                 protected getPool<S>(): com.sun.xml.internal.ws.util.Pool<TK>
-                                protected createToolkit<S>(): TK
+                                protected abstract createToolkit<S>(): TK
                                 public static class: java.lang.Class<any>
+                            }
+                            interface Adapter$$Lambda<TK extends com.sun.xml.internal.ws.api.server.Adapter$Toolkit> implements com.sun.xml.internal.ws.api.config.management.Reconfigurable , com.sun.xml.internal.ws.api.Component {
+                                (): TK
                             }
                         }
                     }

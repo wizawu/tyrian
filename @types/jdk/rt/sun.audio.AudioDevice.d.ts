@@ -1,9 +1,9 @@
 declare namespace sun {
     namespace audio {
         class AudioDevice {
-            public static device: sun.audio.AudioDevice
-            public openChannel(arg0: java.io.InputStream): void
-            public closeChannel(arg0: java.io.InputStream): void
+            public static readonly device: sun.audio.AudioDevice
+            public openChannel(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
+            public closeChannel(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
             public open(): void
             public close(): void
             public play(): void

@@ -2,7 +2,7 @@ declare namespace javax {
     namespace imageio {
         namespace metadata {
             abstract class IIOMetadataFormatImpl implements javax.imageio.metadata.IIOMetadataFormat {
-                public static standardMetadataFormatName: string
+                public static readonly standardMetadataFormatName: string
                 public constructor(arg0: java.lang.String | string, arg1: int)
                 public constructor(arg0: java.lang.String | string, arg1: int, arg2: int)
                 protected setResourceBaseName(arg0: java.lang.String | string): void
@@ -23,7 +23,7 @@ declare namespace javax {
                 protected addObjectValue<T extends java.lang.Comparable<T>>(arg0: java.lang.String | string, arg1: java.lang.Class<any>, arg2: int, arg3: int): void
                 protected removeObjectValue<T extends java.lang.Comparable<T>>(arg0: java.lang.String | string): void
                 public getRootName<T extends java.lang.Comparable<T>>(): string
-                public canNodeAppear<T extends java.lang.Comparable<T>>(arg0: java.lang.String | string, arg1: javax.imageio.ImageTypeSpecifier): boolean
+                public abstract canNodeAppear<T extends java.lang.Comparable<T>>(arg0: java.lang.String | string, arg1: javax.imageio.ImageTypeSpecifier): boolean
                 public getElementMinChildren<T extends java.lang.Comparable<T>>(arg0: java.lang.String | string): int
                 public getElementMaxChildren<T extends java.lang.Comparable<T>>(arg0: java.lang.String | string): int
                 public getElementDescription<T extends java.lang.Comparable<T>>(arg0: java.lang.String | string, arg1: java.util.Locale): string
@@ -50,6 +50,9 @@ declare namespace javax {
                 public getObjectArrayMaxLength<T extends java.lang.Comparable<T>>(arg0: java.lang.String | string): int
                 public static getStandardFormatInstance<T extends java.lang.Comparable<T>>(): javax.imageio.metadata.IIOMetadataFormat
                 public static class: java.lang.Class<any>
+            }
+            interface IIOMetadataFormatImpl$$Lambda implements javax.imageio.metadata.IIOMetadataFormat {
+                (arg0: java.lang.String | string, arg1: javax.imageio.ImageTypeSpecifier): boolean
             }
         }
     }

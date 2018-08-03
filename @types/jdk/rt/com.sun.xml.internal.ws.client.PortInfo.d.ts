@@ -5,11 +5,11 @@ declare namespace com {
                 namespace ws {
                     namespace client {
                         class PortInfo implements com.sun.xml.internal.ws.api.client.WSPortInfo {
-                            public portName: javax.xml.namespace.QName
-                            public targetEndpoint: com.sun.xml.internal.ws.api.EndpointAddress
-                            public bindingId: com.sun.xml.internal.ws.api.BindingID
-                            public policyMap: com.sun.xml.internal.ws.policy.PolicyMap
-                            public portModel: com.sun.xml.internal.ws.api.model.wsdl.WSDLPort
+                            public readonly portName: javax.xml.namespace.QName
+                            public readonly targetEndpoint: com.sun.xml.internal.ws.api.EndpointAddress
+                            public readonly bindingId: com.sun.xml.internal.ws.api.BindingID
+                            public readonly policyMap: com.sun.xml.internal.ws.policy.PolicyMap
+                            public readonly portModel: com.sun.xml.internal.ws.api.model.wsdl.WSDLPort
                             public constructor(arg0: com.sun.xml.internal.ws.client.WSServiceDelegate, arg1: com.sun.xml.internal.ws.api.EndpointAddress, arg2: javax.xml.namespace.QName, arg3: com.sun.xml.internal.ws.api.BindingID)
                             public constructor(arg0: com.sun.xml.internal.ws.client.WSServiceDelegate, arg1: com.sun.xml.internal.ws.api.model.wsdl.WSDLPort)
                             public getPolicyMap(): com.sun.xml.internal.ws.policy.PolicyMap

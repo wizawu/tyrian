@@ -10,8 +10,11 @@ declare namespace javax {
                 public onDeregistration(arg0: javax.imageio.spi.ServiceRegistry, arg1: java.lang.Class<any>): void
                 public getVendorName(): string
                 public getVersion(): string
-                public getDescription(arg0: java.util.Locale): string
+                public abstract getDescription(arg0: java.util.Locale): string
                 public static class: java.lang.Class<any>
+            }
+            interface IIOServiceProvider$$Lambda implements javax.imageio.spi.RegisterableService {
+                (arg0: java.util.Locale): string
             }
         }
     }

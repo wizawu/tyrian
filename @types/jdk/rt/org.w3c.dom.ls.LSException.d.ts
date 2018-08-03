@@ -4,8 +4,8 @@ declare namespace org {
             namespace ls {
                 class LSException extends java.lang.RuntimeException {
                     public code: short
-                    public static PARSE_ERR: short
-                    public static SERIALIZE_ERR: short
+                    public static readonly PARSE_ERR: short
+                    public static readonly SERIALIZE_ERR: short
                     public constructor(arg0: short, arg1: java.lang.String | string)
                     public static class: java.lang.Class<any>
                 }

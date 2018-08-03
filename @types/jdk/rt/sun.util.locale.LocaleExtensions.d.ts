@@ -2,8 +2,8 @@ declare namespace sun {
     namespace util {
         namespace locale {
             class LocaleExtensions {
-                public static CALENDAR_JAPANESE: sun.util.locale.LocaleExtensions
-                public static NUMBER_THAI: sun.util.locale.LocaleExtensions
+                public static readonly CALENDAR_JAPANESE: sun.util.locale.LocaleExtensions
+                public static readonly NUMBER_THAI: sun.util.locale.LocaleExtensions
                 public getKeys(): java.util.Set<java.lang.Character>
                 public getExtension(arg0: java.lang.Character): sun.util.locale.Extension
                 public getExtensionValue(arg0: java.lang.Character): string

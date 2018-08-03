@@ -15,21 +15,21 @@ declare namespace com {
                             public makeObject(arg0: java.lang.String | string, arg1: byte[]): org.omg.CORBA.Object
                             public getAdapterId(): byte[]
                             public getORB(): com.sun.corba.se.spi.orb.ORB
-                            public getEffectivePolicy(arg0: int): org.omg.CORBA.Policy
+                            public abstract getEffectivePolicy(arg0: int): org.omg.CORBA.Policy
                             public getIORTemplate(): com.sun.corba.se.spi.ior.IORTemplate
-                            public getManagerId(): int
-                            public getState(): short
+                            public abstract getManagerId(): int
+                            public abstract getState(): short
                             public getAdapterTemplate(): org.omg.PortableInterceptor.ObjectReferenceTemplate
                             public getCurrentFactory(): org.omg.PortableInterceptor.ObjectReferenceFactory
-                            public setCurrentFactory(arg0: org.omg.PortableInterceptor.ObjectReferenceFactory | org.omg.PortableInterceptor.ObjectReferenceFactory$$Lambda): void
-                            public getLocalServant(arg0: byte[]): org.omg.CORBA.Object
-                            public getInvocationServant(arg0: com.sun.corba.se.spi.oa.OAInvocationInfo): void
-                            public returnServant(): void
-                            public enter(): void
-                            public exit(): void
-                            protected getObjectCopierFactory(): com.sun.corba.se.spi.copyobject.ObjectCopierFactory
+                            public setCurrentFactory(arg0: org.omg.PortableInterceptor.ObjectReferenceFactory): void
+                            public abstract getLocalServant(arg0: byte[]): org.omg.CORBA.Object
+                            public abstract getInvocationServant(arg0: com.sun.corba.se.spi.oa.OAInvocationInfo): void
+                            public abstract returnServant(): void
+                            public abstract enter(): void
+                            public abstract exit(): void
+                            protected abstract getObjectCopierFactory(): com.sun.corba.se.spi.copyobject.ObjectCopierFactory
                             public makeInvocationInfo(arg0: byte[]): com.sun.corba.se.spi.oa.OAInvocationInfo
-                            public getInterfaces(arg0: java.lang.Object, arg1: byte[]): java.lang.String[]
+                            public abstract getInterfaces(arg0: java.lang.Object, arg1: byte[]): java.lang.String[]
                             public static class: java.lang.Class<any>
                         }
                     }

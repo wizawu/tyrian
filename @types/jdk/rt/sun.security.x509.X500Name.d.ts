@@ -2,23 +2,23 @@ declare namespace sun {
     namespace security {
         namespace x509 {
             class X500Name implements sun.security.x509.GeneralNameInterface , java.security.Principal {
-                public static commonName_oid: sun.security.util.ObjectIdentifier
-                public static countryName_oid: sun.security.util.ObjectIdentifier
-                public static localityName_oid: sun.security.util.ObjectIdentifier
-                public static orgName_oid: sun.security.util.ObjectIdentifier
-                public static orgUnitName_oid: sun.security.util.ObjectIdentifier
-                public static stateName_oid: sun.security.util.ObjectIdentifier
-                public static streetAddress_oid: sun.security.util.ObjectIdentifier
-                public static title_oid: sun.security.util.ObjectIdentifier
-                public static DNQUALIFIER_OID: sun.security.util.ObjectIdentifier
-                public static SURNAME_OID: sun.security.util.ObjectIdentifier
-                public static GIVENNAME_OID: sun.security.util.ObjectIdentifier
-                public static INITIALS_OID: sun.security.util.ObjectIdentifier
-                public static GENERATIONQUALIFIER_OID: sun.security.util.ObjectIdentifier
-                public static ipAddress_oid: sun.security.util.ObjectIdentifier
-                public static DOMAIN_COMPONENT_OID: sun.security.util.ObjectIdentifier
-                public static userid_oid: sun.security.util.ObjectIdentifier
-                public static SERIALNUMBER_OID: sun.security.util.ObjectIdentifier
+                public static readonly commonName_oid: sun.security.util.ObjectIdentifier
+                public static readonly countryName_oid: sun.security.util.ObjectIdentifier
+                public static readonly localityName_oid: sun.security.util.ObjectIdentifier
+                public static readonly orgName_oid: sun.security.util.ObjectIdentifier
+                public static readonly orgUnitName_oid: sun.security.util.ObjectIdentifier
+                public static readonly stateName_oid: sun.security.util.ObjectIdentifier
+                public static readonly streetAddress_oid: sun.security.util.ObjectIdentifier
+                public static readonly title_oid: sun.security.util.ObjectIdentifier
+                public static readonly DNQUALIFIER_OID: sun.security.util.ObjectIdentifier
+                public static readonly SURNAME_OID: sun.security.util.ObjectIdentifier
+                public static readonly GIVENNAME_OID: sun.security.util.ObjectIdentifier
+                public static readonly INITIALS_OID: sun.security.util.ObjectIdentifier
+                public static readonly GENERATIONQUALIFIER_OID: sun.security.util.ObjectIdentifier
+                public static readonly ipAddress_oid: sun.security.util.ObjectIdentifier
+                public static readonly DOMAIN_COMPONENT_OID: sun.security.util.ObjectIdentifier
+                public static readonly userid_oid: sun.security.util.ObjectIdentifier
+                public static readonly SERIALNUMBER_OID: sun.security.util.ObjectIdentifier
                 public constructor(arg0: java.lang.String | string)
                 public constructor(arg0: java.lang.String | string, arg1: java.util.Map<java.lang.String, java.lang.String>)
                 public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)

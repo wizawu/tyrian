@@ -15,8 +15,8 @@ declare namespace java {
             writeTime(arg0: java.sql.Time): void
             writeTimestamp(arg0: java.sql.Timestamp): void
             writeCharacterStream(arg0: java.io.Reader): void
-            writeAsciiStream(arg0: java.io.InputStream): void
-            writeBinaryStream(arg0: java.io.InputStream): void
+            writeAsciiStream(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
+            writeBinaryStream(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
             writeObject(arg0: java.sql.SQLData): void
             writeRef(arg0: java.sql.Ref): void
             writeBlob(arg0: java.sql.Blob): void

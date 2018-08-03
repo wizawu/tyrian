@@ -6,7 +6,7 @@ declare namespace jdk {
                     namespace joni {
                         namespace ast {
                             class EncloseNode extends jdk.nashorn.internal.runtime.regexp.joni.ast.StateNode implements jdk.nashorn.internal.runtime.regexp.joni.constants.EncloseType {
-                                public type: int
+                                public readonly type: int
                                 public regNum: int
                                 public option: int
                                 public target: jdk.nashorn.internal.runtime.regexp.joni.ast.Node

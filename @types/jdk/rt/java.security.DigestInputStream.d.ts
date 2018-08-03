@@ -2,7 +2,7 @@ declare namespace java {
     namespace security {
         class DigestInputStream extends java.io.FilterInputStream {
             protected digest: java.security.MessageDigest
-            public constructor(arg0: java.io.InputStream, arg1: java.security.MessageDigest)
+            public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.security.MessageDigest)
             public getMessageDigest(): java.security.MessageDigest
             public setMessageDigest(arg0: java.security.MessageDigest): void
             public read(): int

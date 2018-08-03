@@ -6,25 +6,25 @@ declare namespace java {
                 public static open(): java.nio.channels.SocketChannel
                 public static open(arg0: java.net.SocketAddress): java.nio.channels.SocketChannel
                 public validOps(): int
-                public bind(arg0: java.net.SocketAddress): java.nio.channels.SocketChannel
-                public setOption<T>(arg0: java.net.SocketOption<T>, arg1: T): java.nio.channels.SocketChannel
-                public shutdownInput(): java.nio.channels.SocketChannel
-                public shutdownOutput(): java.nio.channels.SocketChannel
-                public socket(): java.net.Socket
-                public isConnected(): boolean
-                public isConnectionPending(): boolean
-                public connect(arg0: java.net.SocketAddress): boolean
-                public finishConnect(): boolean
-                public getRemoteAddress(): java.net.SocketAddress
-                public read(arg0: java.nio.ByteBuffer): int
-                public read(arg0: java.nio.ByteBuffer[], arg1: int, arg2: int): long
-                public read(arg0: java.nio.ByteBuffer[]): long
-                public write(arg0: java.nio.ByteBuffer): int
-                public write(arg0: java.nio.ByteBuffer[], arg1: int, arg2: int): long
-                public write(arg0: java.nio.ByteBuffer[]): long
-                public getLocalAddress(): java.net.SocketAddress
-                public setOption(arg0: java.net.SocketOption, arg1: java.lang.Object): java.nio.channels.NetworkChannel
-                public bind(arg0: java.net.SocketAddress): java.nio.channels.NetworkChannel
+                public abstract bind(arg0: java.net.SocketAddress): java.nio.channels.SocketChannel
+                public abstract setOption<T>(arg0: java.net.SocketOption<T>, arg1: T): java.nio.channels.SocketChannel
+                public abstract shutdownInput<T>(): java.nio.channels.SocketChannel
+                public abstract shutdownOutput<T>(): java.nio.channels.SocketChannel
+                public abstract socket<T>(): java.net.Socket
+                public abstract isConnected<T>(): boolean
+                public abstract isConnectionPending<T>(): boolean
+                public abstract connect<T>(arg0: java.net.SocketAddress): boolean
+                public abstract finishConnect<T>(): boolean
+                public abstract getRemoteAddress<T>(): java.net.SocketAddress
+                public abstract read<T>(arg0: java.nio.ByteBuffer): int
+                public abstract read<T>(arg0: java.nio.ByteBuffer[], arg1: int, arg2: int): long
+                public read<T>(arg0: java.nio.ByteBuffer[]): long
+                public abstract write<T>(arg0: java.nio.ByteBuffer): int
+                public abstract write<T>(arg0: java.nio.ByteBuffer[], arg1: int, arg2: int): long
+                public write<T>(arg0: java.nio.ByteBuffer[]): long
+                public abstract getLocalAddress<T>(): java.net.SocketAddress
+                public setOption<T>(arg0: java.net.SocketOption, arg1: java.lang.Object): java.nio.channels.NetworkChannel
+                public bind<T>(arg0: java.net.SocketAddress): java.nio.channels.NetworkChannel
                 public static class: java.lang.Class<any>
             }
         }

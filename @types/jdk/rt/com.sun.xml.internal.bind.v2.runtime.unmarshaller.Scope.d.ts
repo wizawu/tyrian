@@ -7,7 +7,7 @@ declare namespace com {
                         namespace runtime {
                             namespace unmarshaller {
                                 class Scope<BeanT, PropT, ItemT, PackT> {
-                                    public context: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext
+                                    public readonly context: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext
                                     public hasStarted(): boolean
                                     public reset(): void
                                     public finish(): void

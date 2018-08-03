@@ -46,11 +46,11 @@ declare namespace javax {
             public hidePopup(): void
             public setPopupVisible(arg0: boolean): void
             public isPopupVisible(): boolean
-            public addItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): void
-            public removeItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): void
+            public addItemListener(arg0: java.awt.event.ItemListener): void
+            public removeItemListener(arg0: java.awt.event.ItemListener): void
             public getItemListeners(): java.awt.event.ItemListener[]
-            public addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
-            public removeActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
+            public addActionListener(arg0: java.awt.event.ActionListener): void
+            public removeActionListener(arg0: java.awt.event.ActionListener): void
             public getActionListeners(): java.awt.event.ActionListener[]
             public addPopupMenuListener(arg0: javax.swing.event.PopupMenuListener): void
             public removePopupMenuListener(arg0: javax.swing.event.PopupMenuListener): void

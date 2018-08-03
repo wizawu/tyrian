@@ -1,25 +1,25 @@
 declare namespace javax {
     namespace swing {
         abstract class AbstractButton extends javax.swing.JComponent implements java.awt.ItemSelectable , javax.swing.SwingConstants {
-            public static MODEL_CHANGED_PROPERTY: string
-            public static TEXT_CHANGED_PROPERTY: string
-            public static MNEMONIC_CHANGED_PROPERTY: string
-            public static MARGIN_CHANGED_PROPERTY: string
-            public static VERTICAL_ALIGNMENT_CHANGED_PROPERTY: string
-            public static HORIZONTAL_ALIGNMENT_CHANGED_PROPERTY: string
-            public static VERTICAL_TEXT_POSITION_CHANGED_PROPERTY: string
-            public static HORIZONTAL_TEXT_POSITION_CHANGED_PROPERTY: string
-            public static BORDER_PAINTED_CHANGED_PROPERTY: string
-            public static FOCUS_PAINTED_CHANGED_PROPERTY: string
-            public static ROLLOVER_ENABLED_CHANGED_PROPERTY: string
-            public static CONTENT_AREA_FILLED_CHANGED_PROPERTY: string
-            public static ICON_CHANGED_PROPERTY: string
-            public static PRESSED_ICON_CHANGED_PROPERTY: string
-            public static SELECTED_ICON_CHANGED_PROPERTY: string
-            public static ROLLOVER_ICON_CHANGED_PROPERTY: string
-            public static ROLLOVER_SELECTED_ICON_CHANGED_PROPERTY: string
-            public static DISABLED_ICON_CHANGED_PROPERTY: string
-            public static DISABLED_SELECTED_ICON_CHANGED_PROPERTY: string
+            public static readonly MODEL_CHANGED_PROPERTY: string
+            public static readonly TEXT_CHANGED_PROPERTY: string
+            public static readonly MNEMONIC_CHANGED_PROPERTY: string
+            public static readonly MARGIN_CHANGED_PROPERTY: string
+            public static readonly VERTICAL_ALIGNMENT_CHANGED_PROPERTY: string
+            public static readonly HORIZONTAL_ALIGNMENT_CHANGED_PROPERTY: string
+            public static readonly VERTICAL_TEXT_POSITION_CHANGED_PROPERTY: string
+            public static readonly HORIZONTAL_TEXT_POSITION_CHANGED_PROPERTY: string
+            public static readonly BORDER_PAINTED_CHANGED_PROPERTY: string
+            public static readonly FOCUS_PAINTED_CHANGED_PROPERTY: string
+            public static readonly ROLLOVER_ENABLED_CHANGED_PROPERTY: string
+            public static readonly CONTENT_AREA_FILLED_CHANGED_PROPERTY: string
+            public static readonly ICON_CHANGED_PROPERTY: string
+            public static readonly PRESSED_ICON_CHANGED_PROPERTY: string
+            public static readonly SELECTED_ICON_CHANGED_PROPERTY: string
+            public static readonly ROLLOVER_ICON_CHANGED_PROPERTY: string
+            public static readonly ROLLOVER_SELECTED_ICON_CHANGED_PROPERTY: string
+            public static readonly DISABLED_ICON_CHANGED_PROPERTY: string
+            public static readonly DISABLED_SELECTED_ICON_CHANGED_PROPERTY: string
             protected model: javax.swing.ButtonModel
             protected changeListener: javax.swing.event.ChangeListener
             protected actionListener: java.awt.event.ActionListener
@@ -93,12 +93,12 @@ declare namespace javax {
             public updateUI(): void
             protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object, arg2: int): void
             public setLayout(arg0: java.awt.LayoutManager): void
-            public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
-            public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+            public addChangeListener(arg0: javax.swing.event.ChangeListener): void
+            public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
             public getChangeListeners(): javax.swing.event.ChangeListener[]
             protected fireStateChanged(): void
-            public addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
-            public removeActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
+            public addActionListener(arg0: java.awt.event.ActionListener): void
+            public removeActionListener(arg0: java.awt.event.ActionListener): void
             public getActionListeners(): java.awt.event.ActionListener[]
             protected createChangeListener(): javax.swing.event.ChangeListener
             protected fireActionPerformed(arg0: java.awt.event.ActionEvent): void
@@ -108,8 +108,8 @@ declare namespace javax {
             public setEnabled(arg0: boolean): void
             public getLabel(): string
             public setLabel(arg0: java.lang.String | string): void
-            public addItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): void
-            public removeItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): void
+            public addItemListener(arg0: java.awt.event.ItemListener): void
+            public removeItemListener(arg0: java.awt.event.ItemListener): void
             public getItemListeners(): java.awt.event.ItemListener[]
             public getSelectedObjects(): java.lang.Object[]
             protected init(arg0: java.lang.String | string, arg1: javax.swing.Icon): void

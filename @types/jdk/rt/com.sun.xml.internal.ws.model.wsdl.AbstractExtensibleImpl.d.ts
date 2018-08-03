@@ -6,7 +6,7 @@ declare namespace com {
                     namespace model {
                         namespace wsdl {
                             abstract class AbstractExtensibleImpl extends com.sun.xml.internal.ws.model.wsdl.AbstractObjectImpl implements com.sun.xml.internal.ws.api.model.wsdl.WSDLExtensible {
-                                protected extensions: java.util.Set<com.sun.xml.internal.ws.api.model.wsdl.WSDLExtension>
+                                protected readonly extensions: java.util.Set<com.sun.xml.internal.ws.api.model.wsdl.WSDLExtension>
                                 protected notUnderstoodExtensions: java.util.List<com.sun.xml.internal.ws.model.wsdl.AbstractExtensibleImpl$UnknownWSDLExtension>
                                 protected constructor(arg0: javax.xml.stream.XMLStreamReader)
                                 protected constructor(arg0: java.lang.String | string, arg1: int)

@@ -8,6 +8,7 @@ declare namespace sun {
                 public getParams(): java.security.interfaces.DSAParams
                 public getX(): java.math.BigInteger
                 protected parseKeyBits(): void
+                public static class: java.lang.Class<any>
             }
         }
     }

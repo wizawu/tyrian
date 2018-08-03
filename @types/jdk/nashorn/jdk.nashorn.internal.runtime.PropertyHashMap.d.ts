@@ -3,7 +3,7 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 class PropertyHashMap implements java.util.Map<java.lang.String, jdk.nashorn.internal.runtime.Property> {
-                    public static EMPTY_HASHMAP: jdk.nashorn.internal.runtime.PropertyHashMap
+                    public static readonly EMPTY_HASHMAP: jdk.nashorn.internal.runtime.PropertyHashMap
                     public immutableReplace(arg0: jdk.nashorn.internal.runtime.Property, arg1: jdk.nashorn.internal.runtime.Property): jdk.nashorn.internal.runtime.PropertyHashMap
                     public immutableAdd(arg0: jdk.nashorn.internal.runtime.Property): jdk.nashorn.internal.runtime.PropertyHashMap
                     public immutableAdd(...arg0: jdk.nashorn.internal.runtime.Property[]): jdk.nashorn.internal.runtime.PropertyHashMap

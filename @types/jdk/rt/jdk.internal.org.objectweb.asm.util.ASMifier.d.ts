@@ -5,8 +5,8 @@ declare namespace jdk {
                 namespace asm {
                     namespace util {
                         class ASMifier extends jdk.internal.org.objectweb.asm.util.Printer {
-                            protected name: string
-                            protected id: int
+                            protected readonly name: string
+                            protected readonly id: int
                             protected labelNames: java.util.Map<jdk.internal.org.objectweb.asm.Label, java.lang.String>
                             public constructor()
                             protected constructor(arg0: int, arg1: java.lang.String | string, arg2: int)

@@ -6,7 +6,7 @@ declare namespace com {
                     namespace v2 {
                         namespace schemagen {
                             class Messages extends java.lang.Enum<com.sun.xml.internal.bind.v2.schemagen.Messages> {
-                                public static ANONYMOUS_TYPE_CYCLE: com.sun.xml.internal.bind.v2.schemagen.Messages
+                                public static readonly ANONYMOUS_TYPE_CYCLE: com.sun.xml.internal.bind.v2.schemagen.Messages
                                 public static values(): com.sun.xml.internal.bind.v2.schemagen.Messages[]
                                 public static valueOf(arg0: java.lang.String | string): com.sun.xml.internal.bind.v2.schemagen.Messages
                                 public toString(): string

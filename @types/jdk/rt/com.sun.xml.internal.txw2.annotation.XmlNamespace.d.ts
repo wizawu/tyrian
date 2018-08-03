@@ -7,9 +7,6 @@ declare namespace com {
                         interface XmlNamespace extends java.lang.annotation.Annotation {
                             value(): string
                         }
-                        interface XmlNamespace$$Lambda extends java.lang.annotation.Annotation {
-                            (): string
-                        }
                     }
                 }
             }

@@ -1,7 +1,7 @@
 declare namespace sun {
     namespace corba {
         class Bridge {
-            public static INVALID_FIELD_OFFSET: long
+            public static readonly INVALID_FIELD_OFFSET: long
             public static get(): sun.corba.Bridge
             public getLatestUserDefinedLoader(): java.lang.ClassLoader
             public getInt(arg0: java.lang.Object, arg1: long): int

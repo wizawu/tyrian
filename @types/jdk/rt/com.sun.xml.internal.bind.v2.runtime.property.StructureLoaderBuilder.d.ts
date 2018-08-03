@@ -12,7 +12,7 @@ declare namespace com {
                                     buildChildElementUnmarshallers(arg0: com.sun.xml.internal.bind.v2.runtime.property.UnmarshallerChain, arg1: com.sun.xml.internal.bind.v2.util.QNameMap<com.sun.xml.internal.bind.v2.runtime.unmarshaller.ChildLoader>): void
                                 }
                                 interface StructureLoaderBuilder$$Lambda {
-                                    TEXT_HANDLER: javax.xml.namespace.QName
+                                    (arg0: com.sun.xml.internal.bind.v2.runtime.property.UnmarshallerChain, arg1: com.sun.xml.internal.bind.v2.util.QNameMap<com.sun.xml.internal.bind.v2.runtime.unmarshaller.ChildLoader>): void
                                 }
                             }
                         }

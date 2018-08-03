@@ -3,10 +3,10 @@ declare namespace sun {
         namespace locale {
             namespace provider {
                 class JRELocaleConstants {
-                    public static JA_JP_JP: java.util.Locale
-                    public static NO_NO_NY: java.util.Locale
-                    public static TH_TH: java.util.Locale
-                    public static TH_TH_TH: java.util.Locale
+                    public static readonly JA_JP_JP: java.util.Locale
+                    public static readonly NO_NO_NY: java.util.Locale
+                    public static readonly TH_TH: java.util.Locale
+                    public static readonly TH_TH_TH: java.util.Locale
                     public static class: java.lang.Class<any>
                 }
             }

@@ -8,7 +8,7 @@ declare namespace com {
                             namespace dv {
                                 namespace xs {
                                     class XSSimpleTypeDelegate implements com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType {
-                                        protected type: com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType
+                                        protected readonly type: com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType
                                         public constructor(arg0: com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType)
                                         public getWrappedXSSimpleType(): com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType
                                         public getAnnotations(): com.sun.org.apache.xerces.internal.xs.XSObjectList

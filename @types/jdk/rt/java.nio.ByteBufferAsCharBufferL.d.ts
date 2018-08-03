@@ -1,8 +1,8 @@
 declare namespace java {
     namespace nio {
         class ByteBufferAsCharBufferL extends java.nio.CharBuffer {
-            protected bb: java.nio.ByteBuffer
-            protected offset: int
+            protected readonly bb: java.nio.ByteBuffer
+            protected readonly offset: int
             public slice(): java.nio.CharBuffer
             public duplicate(): java.nio.CharBuffer
             public asReadOnlyBuffer(): java.nio.CharBuffer

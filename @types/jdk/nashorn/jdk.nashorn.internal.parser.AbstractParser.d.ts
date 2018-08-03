@@ -3,8 +3,8 @@ declare namespace jdk {
         namespace internal {
             namespace parser {
                 abstract class AbstractParser {
-                    protected source: jdk.nashorn.internal.runtime.Source
-                    protected errors: jdk.nashorn.internal.runtime.ErrorManager
+                    protected readonly source: jdk.nashorn.internal.runtime.Source
+                    protected readonly errors: jdk.nashorn.internal.runtime.ErrorManager
                     protected stream: jdk.nashorn.internal.parser.TokenStream
                     protected k: int
                     protected previousToken: long
@@ -17,7 +17,7 @@ declare namespace jdk {
                     protected linePosition: int
                     protected lexer: jdk.nashorn.internal.parser.Lexer
                     protected isStrictMode: boolean
-                    protected lineOffset: int
+                    protected readonly lineOffset: int
                     protected constructor(arg0: jdk.nashorn.internal.runtime.Source, arg1: jdk.nashorn.internal.runtime.ErrorManager, arg2: boolean, arg3: int)
                     protected getToken(arg0: int): long
                     protected T(arg0: int): jdk.nashorn.internal.parser.TokenType

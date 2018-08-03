@@ -11,11 +11,11 @@ declare namespace sun {
             protected preferLocaleFonts: boolean
             protected preferPropFonts: boolean
             public static verbose: boolean
-            protected static NUM_FONTS: int
-            protected static NUM_STYLES: int
-            protected static fontNames: java.lang.String[]
-            protected static publicFontNames: java.lang.String[]
-            protected static styleNames: java.lang.String[]
+            protected static readonly NUM_FONTS: int
+            protected static readonly NUM_STYLES: int
+            protected static readonly fontNames: java.lang.String[]
+            protected static readonly publicFontNames: java.lang.String[]
+            protected static readonly styleNames: java.lang.String[]
             protected static installedFallbackFontFiles: java.lang.String[]
             protected reorderMap: java.util.HashMap
             protected static table_awtfontpaths: short[]
@@ -26,9 +26,9 @@ declare namespace sun {
             public foundOsSpecificFile(): boolean
             public fontFilesArePresent(): boolean
             protected getInstalledFallbackFonts(arg0: java.lang.String | string): void
-            public static loadBinary(arg0: java.io.InputStream): void
-            public static saveBinary(arg0: java.io.OutputStream): void
-            public static loadProperties(arg0: java.io.InputStream): void
+            public static loadBinary(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
+            public static saveBinary(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+            public static loadProperties(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
             public static hasMonoToPropMap(): boolean
             public static isLogicalFontFamilyName(arg0: java.lang.String | string): boolean
             public static isLogicalFontFamilyNameLC(arg0: java.lang.String | string): boolean
@@ -41,21 +41,21 @@ declare namespace sun {
             protected static getStyleName(arg0: int): string
             public static getLogicalFontFaceName(arg0: java.lang.String | string, arg1: int): string
             public static getStyleString(arg0: int): string
-            public getFallbackFamilyName(arg0: java.lang.String | string, arg1: java.lang.String | string): string
+            public abstract getFallbackFamilyName(arg0: java.lang.String | string, arg1: java.lang.String | string): string
             protected getCompatibilityFamilyName(arg0: java.lang.String | string): string
             protected mapFileName(arg0: java.lang.String | string): string
-            protected initReorderMap(): void
+            protected abstract initReorderMap(): void
             public static willReorderForStartupLocale(): boolean
             protected split(arg0: java.lang.String | string): java.lang.String[]
             public getFontDescriptors(arg0: java.lang.String | string, arg1: int): sun.awt.FontDescriptor[]
             protected buildFontDescriptors(arg0: int, arg1: int): sun.awt.FontDescriptor[]
             protected makeAWTFontName(arg0: java.lang.String | string, arg1: java.lang.String | string): string
-            protected getEncoding(arg0: java.lang.String | string, arg1: java.lang.String | string): string
-            protected getDefaultFontCharset(arg0: java.lang.String | string): java.nio.charset.Charset
+            protected abstract getEncoding(arg0: java.lang.String | string, arg1: java.lang.String | string): string
+            protected abstract getDefaultFontCharset(arg0: java.lang.String | string): java.nio.charset.Charset
             public getAWTFontPathSet(): java.util.HashSet<java.lang.String>
             public get2DCompositeFontInfo(): sun.font.CompositeFontDescriptor[]
-            protected getFaceNameFromComponentFontName(arg0: java.lang.String | string): string
-            protected getFileNameFromComponentFontName(arg0: java.lang.String | string): string
+            protected abstract getFaceNameFromComponentFontName(arg0: java.lang.String | string): string
+            protected abstract getFileNameFromComponentFontName(arg0: java.lang.String | string): string
             public needToSearchForFile(arg0: java.lang.String | string): boolean
             public getNumberCoreFonts(): int
             public getPlatformFontNames(): java.lang.String[]

@@ -7,6 +7,8 @@ declare namespace com {
                         namespace generic {
                             interface PopInstruction extends com.sun.org.apache.bcel.internal.generic.StackConsumer {
                             }
+                            interface PopInstruction$$Lambda extends com.sun.org.apache.bcel.internal.generic.StackConsumer {
+                            }
                         }
                     }
                 }

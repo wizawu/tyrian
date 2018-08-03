@@ -7,14 +7,14 @@ declare namespace com {
                         namespace impl {
                             namespace dtd {
                                 class DTDGrammar implements com.sun.org.apache.xerces.internal.xni.XMLDTDHandler , com.sun.org.apache.xerces.internal.xni.XMLDTDContentModelHandler , com.sun.org.apache.xerces.internal.impl.validation.EntityState , com.sun.org.apache.xerces.internal.xni.grammars.Grammar {
-                                    public static TOP_LEVEL_SCOPE: int
+                                    public static readonly TOP_LEVEL_SCOPE: int
                                     protected fDTDSource: com.sun.org.apache.xerces.internal.xni.parser.XMLDTDSource
                                     protected fDTDContentModelSource: com.sun.org.apache.xerces.internal.xni.parser.XMLDTDContentModelSource
                                     protected fCurrentElementIndex: int
                                     protected fCurrentAttributeIndex: int
                                     protected fReadingExternalDTD: boolean
                                     protected fGrammarDescription: com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDDescription
-                                    protected fAttributeDecl: com.sun.org.apache.xerces.internal.impl.dtd.XMLAttributeDecl
+                                    protected readonly fAttributeDecl: com.sun.org.apache.xerces.internal.impl.dtd.XMLAttributeDecl
                                     public constructor(arg0: com.sun.org.apache.xerces.internal.util.SymbolTable, arg1: com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDDescription)
                                     public getGrammarDescription(): com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarDescription
                                     public getElementDeclIsExternal(arg0: int): boolean

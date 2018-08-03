@@ -3,8 +3,5 @@ declare namespace javax {
         interface JTable$Resizable3 extends javax.swing.JTable$Resizable2 {
             getMidPointAt(arg0: int): int
         }
-        interface JTable$Resizable3$$Lambda extends javax.swing.JTable$Resizable2 {
-            (arg0: int): int
-        }
     }
 }

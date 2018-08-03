@@ -4,7 +4,7 @@ declare namespace jdk {
             namespace runtime {
                 namespace arrays {
                     class ScriptObjectIterator extends jdk.nashorn.internal.runtime.arrays.ArrayLikeIterator<java.lang.Object> {
-                        protected obj: jdk.nashorn.internal.runtime.ScriptObject
+                        protected readonly obj: jdk.nashorn.internal.runtime.ScriptObject
                         protected indexInArray(): boolean
                         public getLength(): long
                         public hasNext(): boolean

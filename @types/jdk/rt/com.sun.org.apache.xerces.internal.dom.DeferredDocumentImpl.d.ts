@@ -6,10 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace dom {
                             class DeferredDocumentImpl extends com.sun.org.apache.xerces.internal.dom.DocumentImpl implements com.sun.org.apache.xerces.internal.dom.DeferredNode {
-                                protected static CHUNK_SHIFT: int
-                                protected static CHUNK_SIZE: int
-                                protected static CHUNK_MASK: int
-                                protected static INITIAL_CHUNK_COUNT: int
+                                protected static readonly CHUNK_SHIFT: int
+                                protected static readonly CHUNK_SIZE: int
+                                protected static readonly CHUNK_MASK: int
+                                protected static readonly INITIAL_CHUNK_COUNT: int
                                 protected fNodeCount: int
                                 protected fNodeType: int[][]
                                 protected fNodeName: java.lang.Object[][]

@@ -6,12 +6,12 @@ declare namespace com {
                     namespace internal {
                         namespace parsers {
                             class XIncludeAwareParserConfiguration extends com.sun.org.apache.xerces.internal.parsers.XML11Configuration {
-                                protected static ALLOW_UE_AND_NOTATION_EVENTS: string
-                                protected static XINCLUDE_FIXUP_BASE_URIS: string
-                                protected static XINCLUDE_FIXUP_LANGUAGE: string
-                                protected static XINCLUDE_FEATURE: string
-                                protected static XINCLUDE_HANDLER: string
-                                protected static NAMESPACE_CONTEXT: string
+                                protected static readonly ALLOW_UE_AND_NOTATION_EVENTS: string
+                                protected static readonly XINCLUDE_FIXUP_BASE_URIS: string
+                                protected static readonly XINCLUDE_FIXUP_LANGUAGE: string
+                                protected static readonly XINCLUDE_FEATURE: string
+                                protected static readonly XINCLUDE_HANDLER: string
+                                protected static readonly NAMESPACE_CONTEXT: string
                                 protected fXIncludeHandler: com.sun.org.apache.xerces.internal.xinclude.XIncludeHandler
                                 protected fNonXIncludeNSContext: com.sun.org.apache.xerces.internal.util.NamespaceSupport
                                 protected fXIncludeNSContext: com.sun.org.apache.xerces.internal.xinclude.XIncludeNamespaceSupport

@@ -3,7 +3,7 @@ declare namespace javax {
         namespace model {
             namespace util {
                 class ElementScanner6<R, P> extends javax.lang.model.util.AbstractElementVisitor6<R, P> {
-                    protected DEFAULT_VALUE: R
+                    protected readonly DEFAULT_VALUE: R
                     protected constructor()
                     protected constructor(arg0: R)
                     public scan(arg0: java.lang.Iterable<javax.lang.model.element.Element>, arg1: P): R

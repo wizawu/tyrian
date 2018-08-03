@@ -2,28 +2,28 @@ declare namespace sun {
     namespace security {
         namespace x509 {
             class X509CertImpl extends java.security.cert.X509Certificate implements sun.security.util.DerEncoder {
-                public static NAME: string
-                public static INFO: string
-                public static ALG_ID: string
-                public static SIGNATURE: string
-                public static SIGNED_CERT: string
-                public static SUBJECT_DN: string
-                public static ISSUER_DN: string
-                public static SERIAL_ID: string
-                public static PUBLIC_KEY: string
-                public static VERSION: string
-                public static SIG_ALG: string
-                public static SIG: string
+                public static readonly NAME: string
+                public static readonly INFO: string
+                public static readonly ALG_ID: string
+                public static readonly SIGNATURE: string
+                public static readonly SIGNED_CERT: string
+                public static readonly SUBJECT_DN: string
+                public static readonly ISSUER_DN: string
+                public static readonly SERIAL_ID: string
+                public static readonly PUBLIC_KEY: string
+                public static readonly VERSION: string
+                public static readonly SIG_ALG: string
+                public static readonly SIG: string
                 protected info: sun.security.x509.X509CertInfo
                 protected algId: sun.security.x509.AlgorithmId
                 protected signature: byte[]
                 public constructor()
                 public constructor(arg0: byte[])
-                public constructor(arg0: java.io.InputStream)
+                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                 public constructor(arg0: sun.security.x509.X509CertInfo)
                 public constructor(arg0: sun.security.util.DerValue)
-                public encode(arg0: java.io.OutputStream): void
-                public derEncode(arg0: java.io.OutputStream): void
+                public encode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public derEncode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                 public getEncoded(): byte[]
                 public getEncodedInternal(): byte[]
                 public verify(arg0: java.security.PublicKey): void

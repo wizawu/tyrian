@@ -5,9 +5,9 @@ declare namespace com {
                 namespace dom {
                     abstract class DOMServiceProvider {
                         public constructor()
-                        public canHandle(arg0: java.lang.Object): boolean
-                        public getDocument(arg0: java.lang.Object): org.w3c.dom.Document
-                        public getDOMImplementation(): org.w3c.dom.DOMImplementation
+                        public abstract canHandle(arg0: java.lang.Object): boolean
+                        public abstract getDocument(arg0: java.lang.Object): org.w3c.dom.Document
+                        public abstract getDOMImplementation(): org.w3c.dom.DOMImplementation
                         public static class: java.lang.Class<any>
                     }
                 }

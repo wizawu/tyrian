@@ -7,11 +7,11 @@ declare namespace com {
                         namespace runtime {
                             namespace output {
                                 class UTF8XmlOutput extends com.sun.xml.internal.bind.v2.runtime.output.XmlOutputAbstractImpl {
-                                    protected out: java.io.OutputStream
-                                    protected octetBuffer: byte[]
+                                    protected readonly out: java.io.OutputStream
+                                    protected readonly octetBuffer: byte[]
                                     protected octetBufferIndex: int
                                     protected closeStartTagPending: boolean
-                                    public constructor(arg0: java.io.OutputStream, arg1: com.sun.xml.internal.bind.v2.runtime.output.Encoded[], arg2: com.sun.xml.internal.bind.marshaller.CharacterEscapeHandler | com.sun.xml.internal.bind.marshaller.CharacterEscapeHandler$$Lambda)
+                                    public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: com.sun.xml.internal.bind.v2.runtime.output.Encoded[], arg2: com.sun.xml.internal.bind.marshaller.CharacterEscapeHandler | com.sun.xml.internal.bind.marshaller.CharacterEscapeHandler$$Lambda)
                                     public setHeader(arg0: java.lang.String | string): void
                                     public startDocument(arg0: com.sun.xml.internal.bind.v2.runtime.XMLSerializer, arg1: boolean, arg2: int[], arg3: com.sun.xml.internal.bind.v2.runtime.output.NamespaceContextImpl): void
                                     public endDocument(arg0: boolean): void

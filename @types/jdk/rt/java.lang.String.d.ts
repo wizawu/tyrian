@@ -1,7 +1,7 @@
 declare namespace java {
     namespace lang {
         class String implements java.io.Serializable , java.lang.Comparable<java.lang.String> , java.lang.CharSequence {
-            public static CASE_INSENSITIVE_ORDER: java.util.Comparator<java.lang.String>
+            public static readonly CASE_INSENSITIVE_ORDER: java.util.Comparator<java.lang.String>
             public constructor()
             public constructor(arg0: byte[])
             public constructor(arg0: byte[], arg1: int)

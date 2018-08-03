@@ -2,34 +2,34 @@ declare namespace sun {
     namespace text {
         namespace normalizer {
             class NormalizerImpl {
-                public static QC_NFC: int
-                public static QC_NFKC: int
-                public static QC_NFD: int
-                public static QC_NFKD: int
-                public static QC_ANY_NO: int
-                public static QC_MAYBE: int
-                public static QC_ANY_MAYBE: int
-                public static QC_MASK: int
-                public static COMBINES_ANY: int
-                public static CC_MASK: int
-                public static INDEX_MIN_NFC_NO_MAYBE: int
-                public static INDEX_MIN_NFKC_NO_MAYBE: int
-                public static INDEX_MIN_NFD_NO_MAYBE: int
-                public static INDEX_MIN_NFKD_NO_MAYBE: int
-                public static MIN_WITH_LEAD_CC: int
-                public static JAMO_L_BASE: int
-                public static JAMO_V_BASE: int
-                public static JAMO_T_BASE: int
-                public static HANGUL_BASE: int
-                public static JAMO_L_COUNT: int
-                public static JAMO_V_COUNT: int
-                public static JAMO_T_COUNT: int
-                public static HANGUL_COUNT: int
-                public static OPTIONS_SETS_MASK: int
-                public static BEFORE_PRI_29: int
-                public static OPTIONS_COMPAT: int
-                public static OPTIONS_COMPOSE_CONTIGUOUS: int
-                public static WITHOUT_CORRIGENDUM4_CORRECTIONS: int
+                public static readonly QC_NFC: int
+                public static readonly QC_NFKC: int
+                public static readonly QC_NFD: int
+                public static readonly QC_NFKD: int
+                public static readonly QC_ANY_NO: int
+                public static readonly QC_MAYBE: int
+                public static readonly QC_ANY_MAYBE: int
+                public static readonly QC_MASK: int
+                public static readonly COMBINES_ANY: int
+                public static readonly CC_MASK: int
+                public static readonly INDEX_MIN_NFC_NO_MAYBE: int
+                public static readonly INDEX_MIN_NFKC_NO_MAYBE: int
+                public static readonly INDEX_MIN_NFD_NO_MAYBE: int
+                public static readonly INDEX_MIN_NFKD_NO_MAYBE: int
+                public static readonly MIN_WITH_LEAD_CC: int
+                public static readonly JAMO_L_BASE: int
+                public static readonly JAMO_V_BASE: int
+                public static readonly JAMO_T_BASE: int
+                public static readonly HANGUL_BASE: int
+                public static readonly JAMO_L_COUNT: int
+                public static readonly JAMO_V_COUNT: int
+                public static readonly JAMO_T_COUNT: int
+                public static readonly HANGUL_COUNT: int
+                public static readonly OPTIONS_SETS_MASK: int
+                public static readonly BEFORE_PRI_29: int
+                public static readonly OPTIONS_COMPAT: int
+                public static readonly OPTIONS_COMPOSE_CONTIGUOUS: int
+                public static readonly WITHOUT_CORRIGENDUM4_CORRECTIONS: int
                 public static getFromIndexesArr(arg0: int): int
                 public static getNorm32(arg0: char): long
                 public static getNorm32FromSurrogatePair(arg0: long, arg1: char): long

@@ -7,7 +7,7 @@ declare namespace java {
             shouldAccept(arg0: java.net.URI, arg1: java.net.HttpCookie): boolean
         }
         interface CookiePolicy$$Lambda {
-            ACCEPT_ALL: java.net.CookiePolicy
+            (arg0: java.net.URI, arg1: java.net.HttpCookie): boolean
         }
     }
 }

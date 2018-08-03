@@ -2,7 +2,7 @@ declare namespace org {
     namespace omg {
         namespace DynamicAny {
             class _DynValueStub extends org.omg.CORBA.portable.ObjectImpl implements org.omg.DynamicAny.DynValue {
-                public static _opsClass: java.lang.Class
+                public static readonly _opsClass: java.lang.Class
                 public constructor()
                 public current_member_name(): string
                 public current_member_kind(): org.omg.CORBA.TCKind

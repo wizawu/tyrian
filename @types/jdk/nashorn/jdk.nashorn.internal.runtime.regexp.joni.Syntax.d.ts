@@ -5,20 +5,20 @@ declare namespace jdk {
                 namespace regexp {
                     namespace joni {
                         class Syntax implements jdk.nashorn.internal.runtime.regexp.joni.constants.SyntaxProperties {
-                            public options: int
-                            public metaCharTable: jdk.nashorn.internal.runtime.regexp.joni.Syntax$MetaCharTable
-                            public static RUBY: jdk.nashorn.internal.runtime.regexp.joni.Syntax
-                            public static DEFAULT: jdk.nashorn.internal.runtime.regexp.joni.Syntax
-                            public static ASIS: jdk.nashorn.internal.runtime.regexp.joni.Syntax
-                            public static PosixBasic: jdk.nashorn.internal.runtime.regexp.joni.Syntax
-                            public static PosixExtended: jdk.nashorn.internal.runtime.regexp.joni.Syntax
-                            public static Emacs: jdk.nashorn.internal.runtime.regexp.joni.Syntax
-                            public static Grep: jdk.nashorn.internal.runtime.regexp.joni.Syntax
-                            public static GnuRegex: jdk.nashorn.internal.runtime.regexp.joni.Syntax
-                            public static Java: jdk.nashorn.internal.runtime.regexp.joni.Syntax
-                            public static Perl: jdk.nashorn.internal.runtime.regexp.joni.Syntax
-                            public static PerlNG: jdk.nashorn.internal.runtime.regexp.joni.Syntax
-                            public static JAVASCRIPT: jdk.nashorn.internal.runtime.regexp.joni.Syntax
+                            public readonly options: int
+                            public readonly metaCharTable: jdk.nashorn.internal.runtime.regexp.joni.Syntax$MetaCharTable
+                            public static readonly RUBY: jdk.nashorn.internal.runtime.regexp.joni.Syntax
+                            public static readonly DEFAULT: jdk.nashorn.internal.runtime.regexp.joni.Syntax
+                            public static readonly ASIS: jdk.nashorn.internal.runtime.regexp.joni.Syntax
+                            public static readonly PosixBasic: jdk.nashorn.internal.runtime.regexp.joni.Syntax
+                            public static readonly PosixExtended: jdk.nashorn.internal.runtime.regexp.joni.Syntax
+                            public static readonly Emacs: jdk.nashorn.internal.runtime.regexp.joni.Syntax
+                            public static readonly Grep: jdk.nashorn.internal.runtime.regexp.joni.Syntax
+                            public static readonly GnuRegex: jdk.nashorn.internal.runtime.regexp.joni.Syntax
+                            public static readonly Java: jdk.nashorn.internal.runtime.regexp.joni.Syntax
+                            public static readonly Perl: jdk.nashorn.internal.runtime.regexp.joni.Syntax
+                            public static readonly PerlNG: jdk.nashorn.internal.runtime.regexp.joni.Syntax
+                            public static readonly JAVASCRIPT: jdk.nashorn.internal.runtime.regexp.joni.Syntax
                             public constructor(arg0: int, arg1: int, arg2: int, arg3: int, arg4: jdk.nashorn.internal.runtime.regexp.joni.Syntax$MetaCharTable)
                             protected isOp(arg0: int): boolean
                             public opVariableMetaCharacters(): boolean

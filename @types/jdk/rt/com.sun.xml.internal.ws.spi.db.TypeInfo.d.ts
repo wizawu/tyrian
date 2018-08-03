@@ -6,9 +6,9 @@ declare namespace com {
                     namespace spi {
                         namespace db {
                             class TypeInfo {
-                                public tagName: javax.xml.namespace.QName
+                                public readonly tagName: javax.xml.namespace.QName
                                 public type: java.lang.reflect.Type
-                                public annotations: java.lang.annotation.Annotation[]
+                                public readonly annotations: java.lang.annotation.Annotation[]
                                 public constructor(arg0: javax.xml.namespace.QName, arg1: java.lang.reflect.Type | java.lang.reflect.Type$$Lambda, ...arg2: java.lang.annotation.Annotation[])
                                 public get<A extends java.lang.annotation.Annotation>(arg0: java.lang.Class<A>): A
                                 public toItemType<A extends java.lang.annotation.Annotation>(): com.sun.xml.internal.ws.spi.db.TypeInfo

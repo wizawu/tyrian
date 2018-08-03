@@ -12,10 +12,10 @@ declare namespace sun {
                 protected constructor(arg0: sun.awt.image.SunVolatileImage, arg1: java.lang.Object)
                 public initialize(): void
                 public getPrimarySurfaceData(): sun.java2d.SurfaceData
-                protected isAccelerationEnabled(): boolean
+                protected abstract isAccelerationEnabled(): boolean
                 public validate(arg0: java.awt.GraphicsConfiguration): int
                 public contentsLost(): boolean
-                protected initAcceleratedSurface(): sun.java2d.SurfaceData
+                protected abstract initAcceleratedSurface(): sun.java2d.SurfaceData
                 protected getBackupSurface(): sun.java2d.SurfaceData
                 public initContents(): void
                 public restoreContents(): sun.java2d.SurfaceData

@@ -6,7 +6,7 @@ declare namespace com {
                     namespace internal {
                         namespace serialize {
                             class Printer {
-                                protected _format: com.sun.org.apache.xml.internal.serialize.OutputFormat
+                                protected readonly _format: com.sun.org.apache.xml.internal.serialize.OutputFormat
                                 protected _writer: java.io.Writer
                                 protected _dtdWriter: java.io.StringWriter
                                 protected _docWriter: java.io.Writer

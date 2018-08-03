@@ -7,7 +7,7 @@ declare namespace com {
                         namespace serializer {
                             namespace utils {
                                 class StringToIntTable {
-                                    public static INVALID_KEY: int
+                                    public static readonly INVALID_KEY: int
                                     public constructor()
                                     public constructor(arg0: int)
                                     public getLength(): int

@@ -13,8 +13,8 @@ declare namespace java {
             public static of<E extends java.lang.Enum<E>>(arg0: E, arg1: E, arg2: E, arg3: E, arg4: E): java.util.EnumSet<E>
             public static of<E extends java.lang.Enum<E>>(arg0: E, ...arg1: E[]): java.util.EnumSet<E>
             public static range<E extends java.lang.Enum<E>>(arg0: E, arg1: E): java.util.EnumSet<E>
-            public clone(): java.util.EnumSet<E>
-            public clone(): java.lang.Object
+            public clone<E extends java.lang.Enum<E>>(): java.util.EnumSet<E>
+            public clone<E extends java.lang.Enum<E>>(): java.lang.Object
             public static class: java.lang.Class<any>
         }
     }

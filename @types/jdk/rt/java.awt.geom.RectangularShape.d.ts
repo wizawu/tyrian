@@ -3,10 +3,10 @@ declare namespace java {
         namespace geom {
             abstract class RectangularShape implements java.awt.Shape , java.lang.Cloneable {
                 protected constructor()
-                public getX(): double
-                public getY(): double
-                public getWidth(): double
-                public getHeight(): double
+                public abstract getX(): double
+                public abstract getY(): double
+                public abstract getWidth(): double
+                public abstract getHeight(): double
                 public getMinX(): double
                 public getMinY(): double
                 public getMaxX(): double
@@ -14,8 +14,8 @@ declare namespace java {
                 public getCenterX(): double
                 public getCenterY(): double
                 public getFrame(): java.awt.geom.Rectangle2D
-                public isEmpty(): boolean
-                public setFrame(arg0: double, arg1: double, arg2: double, arg3: double): void
+                public abstract isEmpty(): boolean
+                public abstract setFrame(arg0: double, arg1: double, arg2: double, arg3: double): void
                 public setFrame(arg0: java.awt.geom.Point2D, arg1: java.awt.geom.Dimension2D): void
                 public setFrame(arg0: java.awt.geom.Rectangle2D): void
                 public setFrameFromDiagonal(arg0: double, arg1: double, arg2: double, arg3: double): void

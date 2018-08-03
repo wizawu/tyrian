@@ -3,7 +3,7 @@ declare namespace sun {
         namespace locale {
             namespace provider {
                 class RuleBasedBreakIterator extends java.text.BreakIterator {
-                    protected static IGNORE: byte
+                    protected static readonly IGNORE: byte
                     protected readTables(arg0: java.lang.String | string): void
                     protected readFile(arg0: java.lang.String | string): byte[]
                     public clone(): java.lang.Object

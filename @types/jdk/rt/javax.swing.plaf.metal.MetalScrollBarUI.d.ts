@@ -7,7 +7,7 @@ declare namespace javax {
                     protected increaseButton: javax.swing.plaf.metal.MetalScrollButton
                     protected decreaseButton: javax.swing.plaf.metal.MetalScrollButton
                     protected scrollBarWidth: int
-                    public static FREE_STANDING_PROP: string
+                    public static readonly FREE_STANDING_PROP: string
                     protected isFreeStanding: boolean
                     public constructor()
                     public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI

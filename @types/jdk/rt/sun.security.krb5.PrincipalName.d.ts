@@ -2,20 +2,20 @@ declare namespace sun {
     namespace security {
         namespace krb5 {
             class PrincipalName implements java.lang.Cloneable {
-                public static KRB_NT_UNKNOWN: int
-                public static KRB_NT_PRINCIPAL: int
-                public static KRB_NT_SRV_INST: int
-                public static KRB_NT_SRV_HST: int
-                public static KRB_NT_SRV_XHST: int
-                public static KRB_NT_UID: int
-                public static TGS_DEFAULT_SRV_NAME: string
-                public static TGS_DEFAULT_NT: int
-                public static NAME_COMPONENT_SEPARATOR: char
-                public static NAME_REALM_SEPARATOR: char
-                public static REALM_COMPONENT_SEPARATOR: char
-                public static NAME_COMPONENT_SEPARATOR_STR: string
-                public static NAME_REALM_SEPARATOR_STR: string
-                public static REALM_COMPONENT_SEPARATOR_STR: string
+                public static readonly KRB_NT_UNKNOWN: int
+                public static readonly KRB_NT_PRINCIPAL: int
+                public static readonly KRB_NT_SRV_INST: int
+                public static readonly KRB_NT_SRV_HST: int
+                public static readonly KRB_NT_SRV_XHST: int
+                public static readonly KRB_NT_UID: int
+                public static readonly TGS_DEFAULT_SRV_NAME: string
+                public static readonly TGS_DEFAULT_NT: int
+                public static readonly NAME_COMPONENT_SEPARATOR: char
+                public static readonly NAME_REALM_SEPARATOR: char
+                public static readonly REALM_COMPONENT_SEPARATOR: char
+                public static readonly NAME_COMPONENT_SEPARATOR_STR: string
+                public static readonly NAME_REALM_SEPARATOR_STR: string
+                public static readonly REALM_COMPONENT_SEPARATOR_STR: string
                 public constructor(arg0: int, arg1: java.lang.String[], arg2: sun.security.krb5.Realm)
                 public constructor(arg0: java.lang.String[], arg1: java.lang.String | string)
                 public clone(): java.lang.Object

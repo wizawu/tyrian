@@ -2,137 +2,137 @@ declare namespace java {
     namespace awt {
         namespace color {
             class ICC_Profile implements java.io.Serializable {
-                public static CLASS_INPUT: int
-                public static CLASS_DISPLAY: int
-                public static CLASS_OUTPUT: int
-                public static CLASS_DEVICELINK: int
-                public static CLASS_COLORSPACECONVERSION: int
-                public static CLASS_ABSTRACT: int
-                public static CLASS_NAMEDCOLOR: int
-                public static icSigXYZData: int
-                public static icSigLabData: int
-                public static icSigLuvData: int
-                public static icSigYCbCrData: int
-                public static icSigYxyData: int
-                public static icSigRgbData: int
-                public static icSigGrayData: int
-                public static icSigHsvData: int
-                public static icSigHlsData: int
-                public static icSigCmykData: int
-                public static icSigCmyData: int
-                public static icSigSpace2CLR: int
-                public static icSigSpace3CLR: int
-                public static icSigSpace4CLR: int
-                public static icSigSpace5CLR: int
-                public static icSigSpace6CLR: int
-                public static icSigSpace7CLR: int
-                public static icSigSpace8CLR: int
-                public static icSigSpace9CLR: int
-                public static icSigSpaceACLR: int
-                public static icSigSpaceBCLR: int
-                public static icSigSpaceCCLR: int
-                public static icSigSpaceDCLR: int
-                public static icSigSpaceECLR: int
-                public static icSigSpaceFCLR: int
-                public static icSigInputClass: int
-                public static icSigDisplayClass: int
-                public static icSigOutputClass: int
-                public static icSigLinkClass: int
-                public static icSigAbstractClass: int
-                public static icSigColorSpaceClass: int
-                public static icSigNamedColorClass: int
-                public static icPerceptual: int
-                public static icRelativeColorimetric: int
-                public static icMediaRelativeColorimetric: int
-                public static icSaturation: int
-                public static icAbsoluteColorimetric: int
-                public static icICCAbsoluteColorimetric: int
-                public static icSigHead: int
-                public static icSigAToB0Tag: int
-                public static icSigAToB1Tag: int
-                public static icSigAToB2Tag: int
-                public static icSigBlueColorantTag: int
-                public static icSigBlueMatrixColumnTag: int
-                public static icSigBlueTRCTag: int
-                public static icSigBToA0Tag: int
-                public static icSigBToA1Tag: int
-                public static icSigBToA2Tag: int
-                public static icSigCalibrationDateTimeTag: int
-                public static icSigCharTargetTag: int
-                public static icSigCopyrightTag: int
-                public static icSigCrdInfoTag: int
-                public static icSigDeviceMfgDescTag: int
-                public static icSigDeviceModelDescTag: int
-                public static icSigDeviceSettingsTag: int
-                public static icSigGamutTag: int
-                public static icSigGrayTRCTag: int
-                public static icSigGreenColorantTag: int
-                public static icSigGreenMatrixColumnTag: int
-                public static icSigGreenTRCTag: int
-                public static icSigLuminanceTag: int
-                public static icSigMeasurementTag: int
-                public static icSigMediaBlackPointTag: int
-                public static icSigMediaWhitePointTag: int
-                public static icSigNamedColor2Tag: int
-                public static icSigOutputResponseTag: int
-                public static icSigPreview0Tag: int
-                public static icSigPreview1Tag: int
-                public static icSigPreview2Tag: int
-                public static icSigProfileDescriptionTag: int
-                public static icSigProfileSequenceDescTag: int
-                public static icSigPs2CRD0Tag: int
-                public static icSigPs2CRD1Tag: int
-                public static icSigPs2CRD2Tag: int
-                public static icSigPs2CRD3Tag: int
-                public static icSigPs2CSATag: int
-                public static icSigPs2RenderingIntentTag: int
-                public static icSigRedColorantTag: int
-                public static icSigRedMatrixColumnTag: int
-                public static icSigRedTRCTag: int
-                public static icSigScreeningDescTag: int
-                public static icSigScreeningTag: int
-                public static icSigTechnologyTag: int
-                public static icSigUcrBgTag: int
-                public static icSigViewingCondDescTag: int
-                public static icSigViewingConditionsTag: int
-                public static icSigChromaticityTag: int
-                public static icSigChromaticAdaptationTag: int
-                public static icSigColorantOrderTag: int
-                public static icSigColorantTableTag: int
-                public static icHdrSize: int
-                public static icHdrCmmId: int
-                public static icHdrVersion: int
-                public static icHdrDeviceClass: int
-                public static icHdrColorSpace: int
-                public static icHdrPcs: int
-                public static icHdrDate: int
-                public static icHdrMagic: int
-                public static icHdrPlatform: int
-                public static icHdrFlags: int
-                public static icHdrManufacturer: int
-                public static icHdrModel: int
-                public static icHdrAttributes: int
-                public static icHdrRenderingIntent: int
-                public static icHdrIlluminant: int
-                public static icHdrCreator: int
-                public static icHdrProfileID: int
-                public static icTagType: int
-                public static icTagReserved: int
-                public static icCurveCount: int
-                public static icCurveData: int
-                public static icXYZNumberX: int
+                public static readonly CLASS_INPUT: int
+                public static readonly CLASS_DISPLAY: int
+                public static readonly CLASS_OUTPUT: int
+                public static readonly CLASS_DEVICELINK: int
+                public static readonly CLASS_COLORSPACECONVERSION: int
+                public static readonly CLASS_ABSTRACT: int
+                public static readonly CLASS_NAMEDCOLOR: int
+                public static readonly icSigXYZData: int
+                public static readonly icSigLabData: int
+                public static readonly icSigLuvData: int
+                public static readonly icSigYCbCrData: int
+                public static readonly icSigYxyData: int
+                public static readonly icSigRgbData: int
+                public static readonly icSigGrayData: int
+                public static readonly icSigHsvData: int
+                public static readonly icSigHlsData: int
+                public static readonly icSigCmykData: int
+                public static readonly icSigCmyData: int
+                public static readonly icSigSpace2CLR: int
+                public static readonly icSigSpace3CLR: int
+                public static readonly icSigSpace4CLR: int
+                public static readonly icSigSpace5CLR: int
+                public static readonly icSigSpace6CLR: int
+                public static readonly icSigSpace7CLR: int
+                public static readonly icSigSpace8CLR: int
+                public static readonly icSigSpace9CLR: int
+                public static readonly icSigSpaceACLR: int
+                public static readonly icSigSpaceBCLR: int
+                public static readonly icSigSpaceCCLR: int
+                public static readonly icSigSpaceDCLR: int
+                public static readonly icSigSpaceECLR: int
+                public static readonly icSigSpaceFCLR: int
+                public static readonly icSigInputClass: int
+                public static readonly icSigDisplayClass: int
+                public static readonly icSigOutputClass: int
+                public static readonly icSigLinkClass: int
+                public static readonly icSigAbstractClass: int
+                public static readonly icSigColorSpaceClass: int
+                public static readonly icSigNamedColorClass: int
+                public static readonly icPerceptual: int
+                public static readonly icRelativeColorimetric: int
+                public static readonly icMediaRelativeColorimetric: int
+                public static readonly icSaturation: int
+                public static readonly icAbsoluteColorimetric: int
+                public static readonly icICCAbsoluteColorimetric: int
+                public static readonly icSigHead: int
+                public static readonly icSigAToB0Tag: int
+                public static readonly icSigAToB1Tag: int
+                public static readonly icSigAToB2Tag: int
+                public static readonly icSigBlueColorantTag: int
+                public static readonly icSigBlueMatrixColumnTag: int
+                public static readonly icSigBlueTRCTag: int
+                public static readonly icSigBToA0Tag: int
+                public static readonly icSigBToA1Tag: int
+                public static readonly icSigBToA2Tag: int
+                public static readonly icSigCalibrationDateTimeTag: int
+                public static readonly icSigCharTargetTag: int
+                public static readonly icSigCopyrightTag: int
+                public static readonly icSigCrdInfoTag: int
+                public static readonly icSigDeviceMfgDescTag: int
+                public static readonly icSigDeviceModelDescTag: int
+                public static readonly icSigDeviceSettingsTag: int
+                public static readonly icSigGamutTag: int
+                public static readonly icSigGrayTRCTag: int
+                public static readonly icSigGreenColorantTag: int
+                public static readonly icSigGreenMatrixColumnTag: int
+                public static readonly icSigGreenTRCTag: int
+                public static readonly icSigLuminanceTag: int
+                public static readonly icSigMeasurementTag: int
+                public static readonly icSigMediaBlackPointTag: int
+                public static readonly icSigMediaWhitePointTag: int
+                public static readonly icSigNamedColor2Tag: int
+                public static readonly icSigOutputResponseTag: int
+                public static readonly icSigPreview0Tag: int
+                public static readonly icSigPreview1Tag: int
+                public static readonly icSigPreview2Tag: int
+                public static readonly icSigProfileDescriptionTag: int
+                public static readonly icSigProfileSequenceDescTag: int
+                public static readonly icSigPs2CRD0Tag: int
+                public static readonly icSigPs2CRD1Tag: int
+                public static readonly icSigPs2CRD2Tag: int
+                public static readonly icSigPs2CRD3Tag: int
+                public static readonly icSigPs2CSATag: int
+                public static readonly icSigPs2RenderingIntentTag: int
+                public static readonly icSigRedColorantTag: int
+                public static readonly icSigRedMatrixColumnTag: int
+                public static readonly icSigRedTRCTag: int
+                public static readonly icSigScreeningDescTag: int
+                public static readonly icSigScreeningTag: int
+                public static readonly icSigTechnologyTag: int
+                public static readonly icSigUcrBgTag: int
+                public static readonly icSigViewingCondDescTag: int
+                public static readonly icSigViewingConditionsTag: int
+                public static readonly icSigChromaticityTag: int
+                public static readonly icSigChromaticAdaptationTag: int
+                public static readonly icSigColorantOrderTag: int
+                public static readonly icSigColorantTableTag: int
+                public static readonly icHdrSize: int
+                public static readonly icHdrCmmId: int
+                public static readonly icHdrVersion: int
+                public static readonly icHdrDeviceClass: int
+                public static readonly icHdrColorSpace: int
+                public static readonly icHdrPcs: int
+                public static readonly icHdrDate: int
+                public static readonly icHdrMagic: int
+                public static readonly icHdrPlatform: int
+                public static readonly icHdrFlags: int
+                public static readonly icHdrManufacturer: int
+                public static readonly icHdrModel: int
+                public static readonly icHdrAttributes: int
+                public static readonly icHdrRenderingIntent: int
+                public static readonly icHdrIlluminant: int
+                public static readonly icHdrCreator: int
+                public static readonly icHdrProfileID: int
+                public static readonly icTagType: int
+                public static readonly icTagReserved: int
+                public static readonly icCurveCount: int
+                public static readonly icCurveData: int
+                public static readonly icXYZNumberX: int
                 protected finalize(): void
                 public static getInstance(arg0: byte[]): java.awt.color.ICC_Profile
                 public static getInstance(arg0: int): java.awt.color.ICC_Profile
                 public static getInstance(arg0: java.lang.String | string): java.awt.color.ICC_Profile
-                public static getInstance(arg0: java.io.InputStream): java.awt.color.ICC_Profile
+                public static getInstance(arg0: java.io.InputStream | java.io.InputStream$$Lambda): java.awt.color.ICC_Profile
                 public getMajorVersion(): int
                 public getMinorVersion(): int
                 public getProfileClass(): int
                 public getColorSpaceType(): int
                 public getPCSType(): int
                 public write(arg0: java.lang.String | string): void
-                public write(arg0: java.io.OutputStream): void
+                public write(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                 public getData(): byte[]
                 public getData(arg0: int): byte[]
                 public setData(arg0: int, arg1: byte[]): void

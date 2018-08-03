@@ -5,7 +5,7 @@ declare namespace jdk {
                 namespace asm {
                     namespace util {
                         class TraceMethodVisitor extends jdk.internal.org.objectweb.asm.MethodVisitor {
-                            public p: jdk.internal.org.objectweb.asm.util.Printer
+                            public readonly p: jdk.internal.org.objectweb.asm.util.Printer
                             public constructor(arg0: jdk.internal.org.objectweb.asm.util.Printer)
                             public constructor(arg0: jdk.internal.org.objectweb.asm.MethodVisitor, arg1: jdk.internal.org.objectweb.asm.util.Printer)
                             public visitParameter(arg0: java.lang.String | string, arg1: int): void

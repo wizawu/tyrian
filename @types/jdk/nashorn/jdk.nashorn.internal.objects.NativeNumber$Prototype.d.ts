@@ -14,7 +14,7 @@ declare namespace jdk {
                     public G$toLocaleString(): java.lang.Object
                     public S$toLocaleString(arg0: java.lang.Object): void
                     public G$valueOf(): java.lang.Object
-                    public public S$valueOf(arg0: java.lang.Object): void
+                    public static public S$valueOf(arg0: java.lang.Object): void
                     public getClassName(): string
                     public static class: java.lang.Class<any>
                 }

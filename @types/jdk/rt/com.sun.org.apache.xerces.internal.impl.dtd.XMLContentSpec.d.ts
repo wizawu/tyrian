@@ -7,21 +7,21 @@ declare namespace com {
                         namespace impl {
                             namespace dtd {
                                 class XMLContentSpec {
-                                    public static CONTENTSPECNODE_LEAF: short
-                                    public static CONTENTSPECNODE_ZERO_OR_ONE: short
-                                    public static CONTENTSPECNODE_ZERO_OR_MORE: short
-                                    public static CONTENTSPECNODE_ONE_OR_MORE: short
-                                    public static CONTENTSPECNODE_CHOICE: short
-                                    public static CONTENTSPECNODE_SEQ: short
-                                    public static CONTENTSPECNODE_ANY: short
-                                    public static CONTENTSPECNODE_ANY_OTHER: short
-                                    public static CONTENTSPECNODE_ANY_LOCAL: short
-                                    public static CONTENTSPECNODE_ANY_LAX: short
-                                    public static CONTENTSPECNODE_ANY_OTHER_LAX: short
-                                    public static CONTENTSPECNODE_ANY_LOCAL_LAX: short
-                                    public static CONTENTSPECNODE_ANY_SKIP: short
-                                    public static CONTENTSPECNODE_ANY_OTHER_SKIP: short
-                                    public static CONTENTSPECNODE_ANY_LOCAL_SKIP: short
+                                    public static readonly CONTENTSPECNODE_LEAF: short
+                                    public static readonly CONTENTSPECNODE_ZERO_OR_ONE: short
+                                    public static readonly CONTENTSPECNODE_ZERO_OR_MORE: short
+                                    public static readonly CONTENTSPECNODE_ONE_OR_MORE: short
+                                    public static readonly CONTENTSPECNODE_CHOICE: short
+                                    public static readonly CONTENTSPECNODE_SEQ: short
+                                    public static readonly CONTENTSPECNODE_ANY: short
+                                    public static readonly CONTENTSPECNODE_ANY_OTHER: short
+                                    public static readonly CONTENTSPECNODE_ANY_LOCAL: short
+                                    public static readonly CONTENTSPECNODE_ANY_LAX: short
+                                    public static readonly CONTENTSPECNODE_ANY_OTHER_LAX: short
+                                    public static readonly CONTENTSPECNODE_ANY_LOCAL_LAX: short
+                                    public static readonly CONTENTSPECNODE_ANY_SKIP: short
+                                    public static readonly CONTENTSPECNODE_ANY_OTHER_SKIP: short
+                                    public static readonly CONTENTSPECNODE_ANY_LOCAL_SKIP: short
                                     public type: short
                                     public value: java.lang.Object
                                     public otherValue: java.lang.Object

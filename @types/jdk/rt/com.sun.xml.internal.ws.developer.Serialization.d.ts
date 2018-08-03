@@ -7,9 +7,6 @@ declare namespace com {
                         interface Serialization extends java.lang.annotation.Annotation {
                             encoding(): string
                         }
-                        interface Serialization$$Lambda extends java.lang.annotation.Annotation {
-                            (): string
-                        }
                     }
                 }
             }

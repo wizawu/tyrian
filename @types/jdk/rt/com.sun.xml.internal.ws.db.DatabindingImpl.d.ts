@@ -16,8 +16,8 @@ declare namespace com {
                             public getClientBridge(arg0: java.lang.reflect.Method): com.sun.xml.internal.ws.api.databinding.ClientCallBridge
                             public generateWSDL(arg0: com.sun.xml.internal.ws.api.databinding.WSDLGenInfo): void
                             public getEndpointBridge(arg0: com.sun.xml.internal.ws.api.message.Packet): com.sun.xml.internal.ws.api.databinding.EndpointCallBridge
-                            public encode(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: java.io.OutputStream): com.sun.xml.internal.ws.api.pipe.ContentType
-                            public decode(arg0: java.io.InputStream, arg1: java.lang.String | string, arg2: com.sun.xml.internal.ws.api.message.Packet): void
+                            public encode(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): com.sun.xml.internal.ws.api.pipe.ContentType
+                            public decode(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.lang.String | string, arg2: com.sun.xml.internal.ws.api.message.Packet): void
                             public createJavaCallInfo(arg0: java.lang.reflect.Method, arg1: java.lang.Object[]): com.oracle.webservices.internal.api.databinding.JavaCallInfo
                             public deserializeResponse(arg0: com.oracle.webservices.internal.api.message.MessageContext, arg1: com.oracle.webservices.internal.api.databinding.JavaCallInfo): com.oracle.webservices.internal.api.databinding.JavaCallInfo
                             public deserializeRequest(arg0: com.oracle.webservices.internal.api.message.MessageContext): com.oracle.webservices.internal.api.databinding.JavaCallInfo

@@ -5,9 +5,9 @@ declare namespace com {
                 namespace webservices {
                     namespace jaxws_databinding {
                         class WebParamMode extends java.lang.Enum<com.oracle.xmlns.internal.webservices.jaxws_databinding.WebParamMode> {
-                            public static IN: com.oracle.xmlns.internal.webservices.jaxws_databinding.WebParamMode
-                            public static OUT: com.oracle.xmlns.internal.webservices.jaxws_databinding.WebParamMode
-                            public static INOUT: com.oracle.xmlns.internal.webservices.jaxws_databinding.WebParamMode
+                            public static readonly IN: com.oracle.xmlns.internal.webservices.jaxws_databinding.WebParamMode
+                            public static readonly OUT: com.oracle.xmlns.internal.webservices.jaxws_databinding.WebParamMode
+                            public static readonly INOUT: com.oracle.xmlns.internal.webservices.jaxws_databinding.WebParamMode
                             public static values(): com.oracle.xmlns.internal.webservices.jaxws_databinding.WebParamMode[]
                             public static valueOf(arg0: java.lang.String | string): com.oracle.xmlns.internal.webservices.jaxws_databinding.WebParamMode
                             public value(): string

@@ -5,11 +5,11 @@ declare namespace com {
                 namespace impl {
                     namespace io {
                         class ObjectStreamClass implements java.io.Serializable {
-                            public static kDefaultUID: long
-                            public static CLASS_MASK: int
-                            public static FIELD_MASK: int
-                            public static METHOD_MASK: int
-                            public static NO_FIELDS: com.sun.corba.se.impl.io.ObjectStreamField[]
+                            public static readonly kDefaultUID: long
+                            public static readonly CLASS_MASK: int
+                            public static readonly FIELD_MASK: int
+                            public static readonly METHOD_MASK: int
+                            public static readonly NO_FIELDS: com.sun.corba.se.impl.io.ObjectStreamField[]
                             public getName(): string
                             public static getSerialVersionUID(arg0: java.lang.Class<any>): long
                             public getSerialVersionUID(): long

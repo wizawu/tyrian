@@ -6,47 +6,47 @@ declare namespace com {
                     namespace internal {
                         namespace dom {
                             class DOMConfigurationImpl extends com.sun.org.apache.xerces.internal.util.ParserConfigurationSettings implements com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration , org.w3c.dom.DOMConfiguration {
-                                protected static XERCES_VALIDATION: string
-                                protected static XERCES_NAMESPACES: string
-                                protected static SCHEMA: string
-                                protected static SCHEMA_FULL_CHECKING: string
-                                protected static DYNAMIC_VALIDATION: string
-                                protected static NORMALIZE_DATA: string
-                                protected static SEND_PSVI: string
-                                protected static DTD_VALIDATOR_FACTORY_PROPERTY: string
-                                protected static NAMESPACE_GROWTH: string
-                                protected static TOLERATE_DUPLICATES: string
-                                protected static ENTITY_MANAGER: string
-                                protected static ERROR_REPORTER: string
-                                protected static XML_STRING: string
-                                protected static SYMBOL_TABLE: string
-                                protected static GRAMMAR_POOL: string
-                                protected static ERROR_HANDLER: string
-                                protected static ENTITY_RESOLVER: string
-                                protected static JAXP_SCHEMA_LANGUAGE: string
-                                protected static JAXP_SCHEMA_SOURCE: string
-                                protected static VALIDATION_MANAGER: string
-                                protected static SCHEMA_DV_FACTORY: string
+                                protected static readonly XERCES_VALIDATION: string
+                                protected static readonly XERCES_NAMESPACES: string
+                                protected static readonly SCHEMA: string
+                                protected static readonly SCHEMA_FULL_CHECKING: string
+                                protected static readonly DYNAMIC_VALIDATION: string
+                                protected static readonly NORMALIZE_DATA: string
+                                protected static readonly SEND_PSVI: string
+                                protected static readonly DTD_VALIDATOR_FACTORY_PROPERTY: string
+                                protected static readonly NAMESPACE_GROWTH: string
+                                protected static readonly TOLERATE_DUPLICATES: string
+                                protected static readonly ENTITY_MANAGER: string
+                                protected static readonly ERROR_REPORTER: string
+                                protected static readonly XML_STRING: string
+                                protected static readonly SYMBOL_TABLE: string
+                                protected static readonly GRAMMAR_POOL: string
+                                protected static readonly ERROR_HANDLER: string
+                                protected static readonly ENTITY_RESOLVER: string
+                                protected static readonly JAXP_SCHEMA_LANGUAGE: string
+                                protected static readonly JAXP_SCHEMA_SOURCE: string
+                                protected static readonly VALIDATION_MANAGER: string
+                                protected static readonly SCHEMA_DV_FACTORY: string
                                 protected features: short
-                                protected static NAMESPACES: short
-                                protected static DTNORMALIZATION: short
-                                protected static ENTITIES: short
-                                protected static CDATA: short
-                                protected static SPLITCDATA: short
-                                protected static COMMENTS: short
-                                protected static VALIDATE: short
-                                protected static PSVI: short
-                                protected static WELLFORMED: short
-                                protected static NSDECL: short
-                                protected static INFOSET_TRUE_PARAMS: short
-                                protected static INFOSET_FALSE_PARAMS: short
-                                protected static INFOSET_MASK: short
+                                protected static readonly NAMESPACES: short
+                                protected static readonly DTNORMALIZATION: short
+                                protected static readonly ENTITIES: short
+                                protected static readonly CDATA: short
+                                protected static readonly SPLITCDATA: short
+                                protected static readonly COMMENTS: short
+                                protected static readonly VALIDATE: short
+                                protected static readonly PSVI: short
+                                protected static readonly WELLFORMED: short
+                                protected static readonly NSDECL: short
+                                protected static readonly INFOSET_TRUE_PARAMS: short
+                                protected static readonly INFOSET_FALSE_PARAMS: short
+                                protected static readonly INFOSET_MASK: short
                                 protected fSymbolTable: com.sun.org.apache.xerces.internal.util.SymbolTable
                                 protected fComponents: java.util.ArrayList
                                 protected fValidationManager: com.sun.org.apache.xerces.internal.impl.validation.ValidationManager
                                 protected fLocale: java.util.Locale
                                 protected fErrorReporter: com.sun.org.apache.xerces.internal.impl.XMLErrorReporter
-                                protected fErrorHandlerWrapper: com.sun.org.apache.xerces.internal.util.DOMErrorHandlerWrapper
+                                protected readonly fErrorHandlerWrapper: com.sun.org.apache.xerces.internal.util.DOMErrorHandlerWrapper
                                 protected constructor()
                                 protected constructor(arg0: com.sun.org.apache.xerces.internal.util.SymbolTable)
                                 protected constructor(arg0: com.sun.org.apache.xerces.internal.util.SymbolTable, arg1: com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager)

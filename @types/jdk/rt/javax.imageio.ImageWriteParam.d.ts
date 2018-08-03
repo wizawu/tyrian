@@ -1,10 +1,10 @@
 declare namespace javax {
     namespace imageio {
         class ImageWriteParam extends javax.imageio.IIOParam {
-            public static MODE_DISABLED: int
-            public static MODE_DEFAULT: int
-            public static MODE_EXPLICIT: int
-            public static MODE_COPY_FROM_METADATA: int
+            public static readonly MODE_DISABLED: int
+            public static readonly MODE_DEFAULT: int
+            public static readonly MODE_EXPLICIT: int
+            public static readonly MODE_COPY_FROM_METADATA: int
             protected canWriteTiles: boolean
             protected tilingMode: int
             protected preferredTileSizes: java.awt.Dimension[]

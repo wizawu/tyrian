@@ -47,8 +47,8 @@ declare namespace java {
             setDate(arg0: java.lang.String | string, arg1: java.sql.Date): void
             setTime(arg0: java.lang.String | string, arg1: java.sql.Time): void
             setTimestamp(arg0: java.lang.String | string, arg1: java.sql.Timestamp): void
-            setAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: int): void
-            setBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: int): void
+            setAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
+            setBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
             setObject(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: int, arg3: int): void
             setObject(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: int): void
             setObject(arg0: java.lang.String | string, arg1: java.lang.Object): void
@@ -87,7 +87,7 @@ declare namespace java {
             setNCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: long): void
             setNClob(arg0: java.lang.String | string, arg1: java.sql.NClob): void
             setClob(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: long): void
-            setBlob(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: long): void
+            setBlob(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
             setNClob(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: long): void
             getNClob(arg0: int): java.sql.NClob
             getNClob(arg0: java.lang.String | string): java.sql.NClob
@@ -102,26 +102,26 @@ declare namespace java {
             getCharacterStream(arg0: java.lang.String | string): java.io.Reader
             setBlob(arg0: java.lang.String | string, arg1: java.sql.Blob): void
             setClob(arg0: java.lang.String | string, arg1: java.sql.Clob): void
-            setAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: long): void
-            setBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: long): void
+            setAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
+            setBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
             setCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: long): void
-            setAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream): void
-            setBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream): void
+            setAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
+            setBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
             setCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader): void
             setNCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader): void
             setClob(arg0: java.lang.String | string, arg1: java.io.Reader): void
-            setBlob(arg0: java.lang.String | string, arg1: java.io.InputStream): void
+            setBlob(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
             setNClob(arg0: java.lang.String | string, arg1: java.io.Reader): void
             getObject<T>(arg0: int, arg1: java.lang.Class<T>): T
             getObject<T>(arg0: java.lang.String | string, arg1: java.lang.Class<T>): T
-            setObject(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: java.sql.SQLType, arg3: int): void
-            setObject(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: java.sql.SQLType): void
-            registerOutParameter(arg0: int, arg1: java.sql.SQLType): void
-            registerOutParameter(arg0: int, arg1: java.sql.SQLType, arg2: int): void
-            registerOutParameter(arg0: int, arg1: java.sql.SQLType, arg2: java.lang.String | string): void
-            registerOutParameter(arg0: java.lang.String | string, arg1: java.sql.SQLType): void
-            registerOutParameter(arg0: java.lang.String | string, arg1: java.sql.SQLType, arg2: int): void
-            registerOutParameter(arg0: java.lang.String | string, arg1: java.sql.SQLType, arg2: java.lang.String | string): void
+            setObject<T>(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: java.sql.SQLType, arg3: int): void
+            setObject<T>(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: java.sql.SQLType): void
+            registerOutParameter<T>(arg0: int, arg1: java.sql.SQLType): void
+            registerOutParameter<T>(arg0: int, arg1: java.sql.SQLType, arg2: int): void
+            registerOutParameter<T>(arg0: int, arg1: java.sql.SQLType, arg2: java.lang.String | string): void
+            registerOutParameter<T>(arg0: java.lang.String | string, arg1: java.sql.SQLType): void
+            registerOutParameter<T>(arg0: java.lang.String | string, arg1: java.sql.SQLType, arg2: int): void
+            registerOutParameter<T>(arg0: java.lang.String | string, arg1: java.sql.SQLType, arg2: java.lang.String | string): void
         }
     }
 }

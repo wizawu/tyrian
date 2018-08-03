@@ -12,9 +12,12 @@ declare namespace com {
                             public supports(arg0: java.lang.Object): boolean
                             public remove(arg0: java.lang.Object): java.lang.Object
                             protected createEntrySet(arg0: java.util.Set<java.util.Map$Entry<java.lang.String, java.lang.Object>>): void
-                            protected getPropertyMap(): com.sun.xml.internal.ws.api.PropertySet$PropertyMap
+                            protected abstract getPropertyMap(): com.sun.xml.internal.ws.api.PropertySet$PropertyMap
                             protected getPropertyMap(): com.oracle.webservices.internal.api.message.BasePropertySet$PropertyMap
                             public static class: java.lang.Class<any>
+                        }
+                        interface PropertySet$$Lambda extends com.oracle.webservices.internal.api.message.BasePropertySet {
+                            (): com.sun.xml.internal.ws.api.PropertySet$PropertyMap
                         }
                     }
                 }

@@ -44,7 +44,7 @@ declare namespace jdk {
                     public G$getRuntimeEvents(): java.lang.Object
                     public S$getRuntimeEvents(arg0: java.lang.Object): void
                     public G$getLastRuntimeEvent(): java.lang.Object
-                    public public S$getLastRuntimeEvent(arg0: java.lang.Object): void
+                    public static public S$getLastRuntimeEvent(arg0: java.lang.Object): void
                     public getClassName(): string
                     public static class: java.lang.Class<any>
                 }

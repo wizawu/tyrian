@@ -7,7 +7,7 @@ declare namespace java {
             public getInfo(): string
             public toString(): string
             public clear(): void
-            public load(arg0: java.io.InputStream): void
+            public load(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
             public putAll(arg0: java.util.Map<any, any>): void
             public entrySet(): java.util.Set<java.util.Map$Entry<java.lang.Object, java.lang.Object>>
             public keySet(): java.util.Set<java.lang.Object>

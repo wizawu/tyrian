@@ -4,19 +4,19 @@ declare namespace javax {
             namespace metal {
                 abstract class MetalTheme {
                     public constructor()
-                    public getName(): string
-                    protected getPrimary1(): javax.swing.plaf.ColorUIResource
-                    protected getPrimary2(): javax.swing.plaf.ColorUIResource
-                    protected getPrimary3(): javax.swing.plaf.ColorUIResource
-                    protected getSecondary1(): javax.swing.plaf.ColorUIResource
-                    protected getSecondary2(): javax.swing.plaf.ColorUIResource
-                    protected getSecondary3(): javax.swing.plaf.ColorUIResource
-                    public getControlTextFont(): javax.swing.plaf.FontUIResource
-                    public getSystemTextFont(): javax.swing.plaf.FontUIResource
-                    public getUserTextFont(): javax.swing.plaf.FontUIResource
-                    public getMenuTextFont(): javax.swing.plaf.FontUIResource
-                    public getWindowTitleFont(): javax.swing.plaf.FontUIResource
-                    public getSubTextFont(): javax.swing.plaf.FontUIResource
+                    public abstract getName(): string
+                    protected abstract getPrimary1(): javax.swing.plaf.ColorUIResource
+                    protected abstract getPrimary2(): javax.swing.plaf.ColorUIResource
+                    protected abstract getPrimary3(): javax.swing.plaf.ColorUIResource
+                    protected abstract getSecondary1(): javax.swing.plaf.ColorUIResource
+                    protected abstract getSecondary2(): javax.swing.plaf.ColorUIResource
+                    protected abstract getSecondary3(): javax.swing.plaf.ColorUIResource
+                    public abstract getControlTextFont(): javax.swing.plaf.FontUIResource
+                    public abstract getSystemTextFont(): javax.swing.plaf.FontUIResource
+                    public abstract getUserTextFont(): javax.swing.plaf.FontUIResource
+                    public abstract getMenuTextFont(): javax.swing.plaf.FontUIResource
+                    public abstract getWindowTitleFont(): javax.swing.plaf.FontUIResource
+                    public abstract getSubTextFont(): javax.swing.plaf.FontUIResource
                     protected getWhite(): javax.swing.plaf.ColorUIResource
                     protected getBlack(): javax.swing.plaf.ColorUIResource
                     public getFocusColor(): javax.swing.plaf.ColorUIResource

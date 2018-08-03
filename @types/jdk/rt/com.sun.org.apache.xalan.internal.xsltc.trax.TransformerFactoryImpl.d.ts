@@ -7,17 +7,17 @@ declare namespace com {
                         namespace xsltc {
                             namespace trax {
                                 class TransformerFactoryImpl extends javax.xml.transform.sax.SAXTransformerFactory implements com.sun.org.apache.xalan.internal.xsltc.compiler.SourceLoader , javax.xml.transform.ErrorListener {
-                                    public static TRANSLET_NAME: string
-                                    public static DESTINATION_DIRECTORY: string
-                                    public static PACKAGE_NAME: string
-                                    public static JAR_NAME: string
-                                    public static GENERATE_TRANSLET: string
-                                    public static AUTO_TRANSLET: string
-                                    public static USE_CLASSPATH: string
-                                    public static DEBUG: string
-                                    public static ENABLE_INLINING: string
-                                    public static INDENT_NUMBER: string
-                                    protected static DEFAULT_TRANSLET_NAME: string
+                                    public static readonly TRANSLET_NAME: string
+                                    public static readonly DESTINATION_DIRECTORY: string
+                                    public static readonly PACKAGE_NAME: string
+                                    public static readonly JAR_NAME: string
+                                    public static readonly GENERATE_TRANSLET: string
+                                    public static readonly AUTO_TRANSLET: string
+                                    public static readonly USE_CLASSPATH: string
+                                    public static readonly DEBUG: string
+                                    public static readonly ENABLE_INLINING: string
+                                    public static readonly INDENT_NUMBER: string
+                                    protected static readonly DEFAULT_TRANSLET_NAME: string
                                     public constructor()
                                     public getExternalExtensionsMap(): java.util.Map<java.lang.String, java.lang.Class>
                                     public setErrorListener(arg0: javax.xml.transform.ErrorListener): void

@@ -7,14 +7,14 @@ declare namespace com {
                         namespace objects {
                             class XObject extends com.sun.org.apache.xpath.internal.Expression implements java.io.Serializable , java.lang.Cloneable {
                                 protected m_obj: java.lang.Object
-                                public static CLASS_NULL: int
-                                public static CLASS_UNKNOWN: int
-                                public static CLASS_BOOLEAN: int
-                                public static CLASS_NUMBER: int
-                                public static CLASS_STRING: int
-                                public static CLASS_NODESET: int
-                                public static CLASS_RTREEFRAG: int
-                                public static CLASS_UNRESOLVEDVARIABLE: int
+                                public static readonly CLASS_NULL: int
+                                public static readonly CLASS_UNKNOWN: int
+                                public static readonly CLASS_BOOLEAN: int
+                                public static readonly CLASS_NUMBER: int
+                                public static readonly CLASS_STRING: int
+                                public static readonly CLASS_NODESET: int
+                                public static readonly CLASS_RTREEFRAG: int
+                                public static readonly CLASS_UNRESOLVEDVARIABLE: int
                                 public constructor()
                                 public constructor(arg0: java.lang.Object)
                                 protected setObject(arg0: java.lang.Object): void

@@ -8,9 +8,9 @@ declare namespace com {
                             namespace transforms {
                                 namespace params {
                                     class InclusiveNamespaces extends com.sun.org.apache.xml.internal.security.utils.ElementProxy implements com.sun.org.apache.xml.internal.security.transforms.TransformParam {
-                                        public static _TAG_EC_INCLUSIVENAMESPACES: string
-                                        public static _ATT_EC_PREFIXLIST: string
-                                        public static ExclusiveCanonicalizationNamespace: string
+                                        public static readonly _TAG_EC_INCLUSIVENAMESPACES: string
+                                        public static readonly _ATT_EC_PREFIXLIST: string
+                                        public static readonly ExclusiveCanonicalizationNamespace: string
                                         public constructor(arg0: org.w3c.dom.Document, arg1: java.lang.String | string)
                                         public constructor(arg0: org.w3c.dom.Document, arg1: java.util.Set<java.lang.String>)
                                         public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)

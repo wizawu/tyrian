@@ -3,45 +3,45 @@ declare namespace sun {
         namespace x509 {
             class AlgorithmId implements java.io.Serializable , sun.security.util.DerEncoder {
                 protected params: sun.security.util.DerValue
-                public static MD2_oid: sun.security.util.ObjectIdentifier
-                public static MD5_oid: sun.security.util.ObjectIdentifier
-                public static SHA_oid: sun.security.util.ObjectIdentifier
-                public static SHA224_oid: sun.security.util.ObjectIdentifier
-                public static SHA256_oid: sun.security.util.ObjectIdentifier
-                public static SHA384_oid: sun.security.util.ObjectIdentifier
-                public static SHA512_oid: sun.security.util.ObjectIdentifier
-                public static DH_oid: sun.security.util.ObjectIdentifier
-                public static DH_PKIX_oid: sun.security.util.ObjectIdentifier
-                public static DSA_oid: sun.security.util.ObjectIdentifier
-                public static DSA_OIW_oid: sun.security.util.ObjectIdentifier
-                public static EC_oid: sun.security.util.ObjectIdentifier
-                public static ECDH_oid: sun.security.util.ObjectIdentifier
-                public static RSA_oid: sun.security.util.ObjectIdentifier
-                public static RSAEncryption_oid: sun.security.util.ObjectIdentifier
-                public static AES_oid: sun.security.util.ObjectIdentifier
-                public static md2WithRSAEncryption_oid: sun.security.util.ObjectIdentifier
-                public static md5WithRSAEncryption_oid: sun.security.util.ObjectIdentifier
-                public static sha1WithRSAEncryption_oid: sun.security.util.ObjectIdentifier
-                public static sha1WithRSAEncryption_OIW_oid: sun.security.util.ObjectIdentifier
-                public static sha224WithRSAEncryption_oid: sun.security.util.ObjectIdentifier
-                public static sha256WithRSAEncryption_oid: sun.security.util.ObjectIdentifier
-                public static sha384WithRSAEncryption_oid: sun.security.util.ObjectIdentifier
-                public static sha512WithRSAEncryption_oid: sun.security.util.ObjectIdentifier
-                public static shaWithDSA_OIW_oid: sun.security.util.ObjectIdentifier
-                public static sha1WithDSA_OIW_oid: sun.security.util.ObjectIdentifier
-                public static sha1WithDSA_oid: sun.security.util.ObjectIdentifier
-                public static sha224WithDSA_oid: sun.security.util.ObjectIdentifier
-                public static sha256WithDSA_oid: sun.security.util.ObjectIdentifier
-                public static sha1WithECDSA_oid: sun.security.util.ObjectIdentifier
-                public static sha224WithECDSA_oid: sun.security.util.ObjectIdentifier
-                public static sha256WithECDSA_oid: sun.security.util.ObjectIdentifier
-                public static sha384WithECDSA_oid: sun.security.util.ObjectIdentifier
-                public static sha512WithECDSA_oid: sun.security.util.ObjectIdentifier
-                public static specifiedWithECDSA_oid: sun.security.util.ObjectIdentifier
-                public static pbeWithMD5AndDES_oid: sun.security.util.ObjectIdentifier
-                public static pbeWithMD5AndRC2_oid: sun.security.util.ObjectIdentifier
-                public static pbeWithSHA1AndDES_oid: sun.security.util.ObjectIdentifier
-                public static pbeWithSHA1AndRC2_oid: sun.security.util.ObjectIdentifier
+                public static readonly MD2_oid: sun.security.util.ObjectIdentifier
+                public static readonly MD5_oid: sun.security.util.ObjectIdentifier
+                public static readonly SHA_oid: sun.security.util.ObjectIdentifier
+                public static readonly SHA224_oid: sun.security.util.ObjectIdentifier
+                public static readonly SHA256_oid: sun.security.util.ObjectIdentifier
+                public static readonly SHA384_oid: sun.security.util.ObjectIdentifier
+                public static readonly SHA512_oid: sun.security.util.ObjectIdentifier
+                public static readonly DH_oid: sun.security.util.ObjectIdentifier
+                public static readonly DH_PKIX_oid: sun.security.util.ObjectIdentifier
+                public static readonly DSA_oid: sun.security.util.ObjectIdentifier
+                public static readonly DSA_OIW_oid: sun.security.util.ObjectIdentifier
+                public static readonly EC_oid: sun.security.util.ObjectIdentifier
+                public static readonly ECDH_oid: sun.security.util.ObjectIdentifier
+                public static readonly RSA_oid: sun.security.util.ObjectIdentifier
+                public static readonly RSAEncryption_oid: sun.security.util.ObjectIdentifier
+                public static readonly AES_oid: sun.security.util.ObjectIdentifier
+                public static readonly md2WithRSAEncryption_oid: sun.security.util.ObjectIdentifier
+                public static readonly md5WithRSAEncryption_oid: sun.security.util.ObjectIdentifier
+                public static readonly sha1WithRSAEncryption_oid: sun.security.util.ObjectIdentifier
+                public static readonly sha1WithRSAEncryption_OIW_oid: sun.security.util.ObjectIdentifier
+                public static readonly sha224WithRSAEncryption_oid: sun.security.util.ObjectIdentifier
+                public static readonly sha256WithRSAEncryption_oid: sun.security.util.ObjectIdentifier
+                public static readonly sha384WithRSAEncryption_oid: sun.security.util.ObjectIdentifier
+                public static readonly sha512WithRSAEncryption_oid: sun.security.util.ObjectIdentifier
+                public static readonly shaWithDSA_OIW_oid: sun.security.util.ObjectIdentifier
+                public static readonly sha1WithDSA_OIW_oid: sun.security.util.ObjectIdentifier
+                public static readonly sha1WithDSA_oid: sun.security.util.ObjectIdentifier
+                public static readonly sha224WithDSA_oid: sun.security.util.ObjectIdentifier
+                public static readonly sha256WithDSA_oid: sun.security.util.ObjectIdentifier
+                public static readonly sha1WithECDSA_oid: sun.security.util.ObjectIdentifier
+                public static readonly sha224WithECDSA_oid: sun.security.util.ObjectIdentifier
+                public static readonly sha256WithECDSA_oid: sun.security.util.ObjectIdentifier
+                public static readonly sha384WithECDSA_oid: sun.security.util.ObjectIdentifier
+                public static readonly sha512WithECDSA_oid: sun.security.util.ObjectIdentifier
+                public static readonly specifiedWithECDSA_oid: sun.security.util.ObjectIdentifier
+                public static readonly pbeWithMD5AndDES_oid: sun.security.util.ObjectIdentifier
+                public static readonly pbeWithMD5AndRC2_oid: sun.security.util.ObjectIdentifier
+                public static readonly pbeWithSHA1AndDES_oid: sun.security.util.ObjectIdentifier
+                public static readonly pbeWithSHA1AndRC2_oid: sun.security.util.ObjectIdentifier
                 public static pbeWithSHA1AndDESede_oid: sun.security.util.ObjectIdentifier
                 public static pbeWithSHA1AndRC2_40_oid: sun.security.util.ObjectIdentifier
                 public constructor()
@@ -49,7 +49,7 @@ declare namespace sun {
                 public constructor(arg0: sun.security.util.ObjectIdentifier, arg1: java.security.AlgorithmParameters)
                 protected decodeParams(): void
                 public encode(arg0: sun.security.util.DerOutputStream): void
-                public derEncode(arg0: java.io.OutputStream): void
+                public derEncode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                 public encode(): byte[]
                 public getOID(): sun.security.util.ObjectIdentifier
                 public getName(): string

@@ -2,10 +2,10 @@ declare namespace javax {
     namespace naming {
         namespace event {
             class NamingEvent extends java.util.EventObject {
-                public static OBJECT_ADDED: int
-                public static OBJECT_REMOVED: int
-                public static OBJECT_RENAMED: int
-                public static OBJECT_CHANGED: int
+                public static readonly OBJECT_ADDED: int
+                public static readonly OBJECT_REMOVED: int
+                public static readonly OBJECT_RENAMED: int
+                public static readonly OBJECT_CHANGED: int
                 protected changeInfo: java.lang.Object
                 protected type: int
                 protected oldBinding: javax.naming.Binding
@@ -16,7 +16,7 @@ declare namespace javax {
                 public getOldBinding(): javax.naming.Binding
                 public getNewBinding(): javax.naming.Binding
                 public getChangeInfo(): java.lang.Object
-                public dispatch(arg0: javax.naming.event.NamingListener | javax.naming.event.NamingListener$$Lambda): void
+                public dispatch(arg0: javax.naming.event.NamingListener): void
                 public static class: java.lang.Class<any>
             }
         }

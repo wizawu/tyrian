@@ -6,7 +6,7 @@ declare namespace com {
                     namespace wsdl {
                         namespace parser {
                             class DelegatingParserExtension extends com.sun.xml.internal.ws.api.wsdl.parser.WSDLParserExtension {
-                                protected core: com.sun.xml.internal.ws.api.wsdl.parser.WSDLParserExtension
+                                protected readonly core: com.sun.xml.internal.ws.api.wsdl.parser.WSDLParserExtension
                                 public constructor(arg0: com.sun.xml.internal.ws.api.wsdl.parser.WSDLParserExtension)
                                 public start(arg0: com.sun.xml.internal.ws.api.wsdl.parser.WSDLParserExtensionContext): void
                                 public serviceAttributes(arg0: com.sun.xml.internal.ws.api.model.wsdl.editable.EditableWSDLService, arg1: javax.xml.stream.XMLStreamReader): void

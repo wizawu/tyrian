@@ -2,8 +2,8 @@ declare namespace sun {
     namespace java2d {
         namespace jules {
             class TrapezoidList {
-                public static TRAP_START_INDEX: int
-                public static TRAP_SIZE: int
+                public static readonly TRAP_START_INDEX: int
+                public static readonly TRAP_SIZE: int
                 public constructor(arg0: int[])
                 public getTrapArray(): int[]
                 public getSize(): int

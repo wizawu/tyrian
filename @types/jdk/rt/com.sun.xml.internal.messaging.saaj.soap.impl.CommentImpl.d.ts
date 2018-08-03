@@ -7,7 +7,7 @@ declare namespace com {
                         namespace soap {
                             namespace impl {
                                 class CommentImpl extends com.sun.org.apache.xerces.internal.dom.CommentImpl implements javax.xml.soap.Text , org.w3c.dom.Comment {
-                                    protected static log: java.util.logging.Logger
+                                    protected static readonly log: java.util.logging.Logger
                                     protected static rb: java.util.ResourceBundle
                                     public constructor(arg0: com.sun.xml.internal.messaging.saaj.soap.SOAPDocumentImpl, arg1: java.lang.String | string)
                                     public getValue(): string

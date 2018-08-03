@@ -5,16 +5,16 @@ declare namespace jdk {
                 namespace asm {
                     namespace util {
                         class Textifier extends jdk.internal.org.objectweb.asm.util.Printer {
-                            public static INTERNAL_NAME: int
-                            public static FIELD_DESCRIPTOR: int
-                            public static FIELD_SIGNATURE: int
-                            public static METHOD_DESCRIPTOR: int
-                            public static METHOD_SIGNATURE: int
-                            public static CLASS_SIGNATURE: int
-                            public static TYPE_DECLARATION: int
-                            public static CLASS_DECLARATION: int
-                            public static PARAMETERS_DECLARATION: int
-                            public static HANDLE_DESCRIPTOR: int
+                            public static readonly INTERNAL_NAME: int
+                            public static readonly FIELD_DESCRIPTOR: int
+                            public static readonly FIELD_SIGNATURE: int
+                            public static readonly METHOD_DESCRIPTOR: int
+                            public static readonly METHOD_SIGNATURE: int
+                            public static readonly CLASS_SIGNATURE: int
+                            public static readonly TYPE_DECLARATION: int
+                            public static readonly CLASS_DECLARATION: int
+                            public static readonly PARAMETERS_DECLARATION: int
+                            public static readonly HANDLE_DESCRIPTOR: int
                             protected tab: string
                             protected tab2: string
                             protected tab3: string

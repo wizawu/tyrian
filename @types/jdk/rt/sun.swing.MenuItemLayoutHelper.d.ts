@@ -1,12 +1,12 @@
 declare namespace sun {
     namespace swing {
         class MenuItemLayoutHelper {
-            public static MAX_ARROW_WIDTH: sun.swing.StringUIClientPropertyKey
-            public static MAX_CHECK_WIDTH: sun.swing.StringUIClientPropertyKey
-            public static MAX_ICON_WIDTH: sun.swing.StringUIClientPropertyKey
-            public static MAX_TEXT_WIDTH: sun.swing.StringUIClientPropertyKey
-            public static MAX_ACC_WIDTH: sun.swing.StringUIClientPropertyKey
-            public static MAX_LABEL_WIDTH: sun.swing.StringUIClientPropertyKey
+            public static readonly MAX_ARROW_WIDTH: sun.swing.StringUIClientPropertyKey
+            public static readonly MAX_CHECK_WIDTH: sun.swing.StringUIClientPropertyKey
+            public static readonly MAX_ICON_WIDTH: sun.swing.StringUIClientPropertyKey
+            public static readonly MAX_TEXT_WIDTH: sun.swing.StringUIClientPropertyKey
+            public static readonly MAX_ACC_WIDTH: sun.swing.StringUIClientPropertyKey
+            public static readonly MAX_LABEL_WIDTH: sun.swing.StringUIClientPropertyKey
             protected constructor()
             public constructor(arg0: javax.swing.JMenuItem, arg1: javax.swing.Icon, arg2: javax.swing.Icon, arg3: java.awt.Rectangle, arg4: int, arg5: java.lang.String | string, arg6: boolean, arg7: java.awt.Font, arg8: java.awt.Font, arg9: boolean, arg10: java.lang.String | string)
             protected reset(arg0: javax.swing.JMenuItem, arg1: javax.swing.Icon, arg2: javax.swing.Icon, arg3: java.awt.Rectangle, arg4: int, arg5: java.lang.String | string, arg6: boolean, arg7: java.awt.Font, arg8: java.awt.Font, arg9: boolean, arg10: java.lang.String | string): void

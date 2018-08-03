@@ -7,7 +7,7 @@ declare namespace com {
                         namespace security {
                             namespace signature {
                                 class Manifest extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy {
-                                    public static MAXIMUM_REFERENCE_COUNT: int
+                                    public static readonly MAXIMUM_REFERENCE_COUNT: int
                                     public constructor(arg0: org.w3c.dom.Document)
                                     public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
                                     public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string, arg2: boolean)

@@ -1,7 +1,7 @@
 declare namespace javax {
     namespace management {
         class ObjectName implements java.lang.Comparable<javax.management.ObjectName> , javax.management.QueryExp {
-            public static WILDCARD: javax.management.ObjectName
+            public static readonly WILDCARD: javax.management.ObjectName
             public static getInstance(arg0: java.lang.String | string): javax.management.ObjectName
             public static getInstance(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): javax.management.ObjectName
             public static getInstance(arg0: java.lang.String | string, arg1: java.util.Hashtable<java.lang.String, java.lang.String>): javax.management.ObjectName

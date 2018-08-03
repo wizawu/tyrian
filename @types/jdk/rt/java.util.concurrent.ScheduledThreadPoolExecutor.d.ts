@@ -2,8 +2,8 @@ declare namespace java {
     namespace util {
         namespace concurrent {
             class ScheduledThreadPoolExecutor extends java.util.concurrent.ThreadPoolExecutor implements java.util.concurrent.ScheduledExecutorService {
-                protected decorateTask<V>(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda, arg1: java.util.concurrent.RunnableScheduledFuture<V> | java.util.concurrent.RunnableScheduledFuture$$Lambda<V>): java.util.concurrent.RunnableScheduledFuture<V>
-                protected decorateTask<V>(arg0: java.util.concurrent.Callable<V> | java.util.concurrent.Callable$$Lambda<V>, arg1: java.util.concurrent.RunnableScheduledFuture<V> | java.util.concurrent.RunnableScheduledFuture$$Lambda<V>): java.util.concurrent.RunnableScheduledFuture<V>
+                protected decorateTask<V>(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda, arg1: java.util.concurrent.RunnableScheduledFuture<V>): java.util.concurrent.RunnableScheduledFuture<V>
+                protected decorateTask<V>(arg0: java.util.concurrent.Callable<V> | java.util.concurrent.Callable$$Lambda<V>, arg1: java.util.concurrent.RunnableScheduledFuture<V>): java.util.concurrent.RunnableScheduledFuture<V>
                 public constructor(arg0: int)
                 public constructor(arg0: int, arg1: java.util.concurrent.ThreadFactory | java.util.concurrent.ThreadFactory$$Lambda)
                 public constructor(arg0: int, arg1: java.util.concurrent.RejectedExecutionHandler | java.util.concurrent.RejectedExecutionHandler$$Lambda)

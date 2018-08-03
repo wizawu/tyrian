@@ -8,9 +8,6 @@ declare namespace com {
                             interface SDDocument$Schema extends com.sun.xml.internal.ws.api.server.SDDocument {
                                 getTargetNamespace(): string
                             }
-                            interface SDDocument$Schema$$Lambda extends com.sun.xml.internal.ws.api.server.SDDocument {
-                                (): string
-                            }
                         }
                     }
                 }

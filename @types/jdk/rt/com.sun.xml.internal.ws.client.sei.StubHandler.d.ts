@@ -6,10 +6,10 @@ declare namespace com {
                     namespace client {
                         namespace sei {
                             class StubHandler implements com.sun.xml.internal.ws.api.databinding.ClientCallBridge {
-                                protected soapAction: string
-                                protected isOneWay: boolean
-                                protected javaMethod: com.sun.xml.internal.ws.model.JavaMethodImpl
-                                protected checkedExceptions: java.util.Map<javax.xml.namespace.QName, com.sun.xml.internal.ws.model.CheckedExceptionImpl>
+                                protected readonly soapAction: string
+                                protected readonly isOneWay: boolean
+                                protected readonly javaMethod: com.sun.xml.internal.ws.model.JavaMethodImpl
+                                protected readonly checkedExceptions: java.util.Map<javax.xml.namespace.QName, com.sun.xml.internal.ws.model.CheckedExceptionImpl>
                                 protected soapVersion: com.sun.xml.internal.ws.api.SOAPVersion
                                 protected responseBuilder: com.sun.xml.internal.ws.client.sei.ResponseBuilder
                                 protected packetFactory: com.sun.xml.internal.ws.api.message.MessageContextFactory

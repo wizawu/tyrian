@@ -7,15 +7,15 @@ declare namespace com {
                         namespace impl {
                             abstract class StatisticImpl implements com.sun.org.glassfish.external.statistics.Statistic {
                                 protected sampleTime: long
-                                public static UNIT_COUNT: string
-                                public static UNIT_SECOND: string
-                                public static UNIT_MILLISECOND: string
-                                public static UNIT_MICROSECOND: string
-                                public static UNIT_NANOSECOND: string
-                                public static START_TIME: string
-                                public static LAST_SAMPLE_TIME: string
-                                protected statMap: java.util.Map<java.lang.String, java.lang.Object>
-                                protected static NEWLINE: string
+                                public static readonly UNIT_COUNT: string
+                                public static readonly UNIT_SECOND: string
+                                public static readonly UNIT_MILLISECOND: string
+                                public static readonly UNIT_MICROSECOND: string
+                                public static readonly UNIT_NANOSECOND: string
+                                public static readonly START_TIME: string
+                                public static readonly LAST_SAMPLE_TIME: string
+                                protected readonly statMap: java.util.Map<java.lang.String, java.lang.Object>
+                                protected static readonly NEWLINE: string
                                 protected constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: long, arg4: long)
                                 protected constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
                                 public getStaticAsMap(): java.util.Map

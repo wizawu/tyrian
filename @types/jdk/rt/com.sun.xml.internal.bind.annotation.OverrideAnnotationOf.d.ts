@@ -7,9 +7,6 @@ declare namespace com {
                         interface OverrideAnnotationOf extends java.lang.annotation.Annotation {
                             value(): string
                         }
-                        interface OverrideAnnotationOf$$Lambda extends java.lang.annotation.Annotation {
-                            (): string
-                        }
                     }
                 }
             }

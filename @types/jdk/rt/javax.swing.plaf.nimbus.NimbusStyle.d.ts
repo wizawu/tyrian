@@ -3,12 +3,12 @@ declare namespace javax {
         namespace plaf {
             namespace nimbus {
                 class NimbusStyle extends javax.swing.plaf.synth.SynthStyle {
-                    public static LARGE_KEY: string
-                    public static SMALL_KEY: string
-                    public static MINI_KEY: string
-                    public static LARGE_SCALE: double
-                    public static SMALL_SCALE: double
-                    public static MINI_SCALE: double
+                    public static readonly LARGE_KEY: string
+                    public static readonly SMALL_KEY: string
+                    public static readonly MINI_KEY: string
+                    public static readonly LARGE_SCALE: double
+                    public static readonly SMALL_SCALE: double
+                    public static readonly MINI_SCALE: double
                     public installDefaults(arg0: javax.swing.plaf.synth.SynthContext): void
                     public getInsets(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Insets): java.awt.Insets
                     protected getColorForState(arg0: javax.swing.plaf.synth.SynthContext, arg1: javax.swing.plaf.synth.ColorType): java.awt.Color

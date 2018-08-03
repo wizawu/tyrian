@@ -2,128 +2,128 @@ declare namespace sun {
     namespace awt {
         namespace X11 {
             class XProtocolConstants {
-                public static X_Reply: int
-                public static X_Error: int
-                public static X_CreateWindow: int
-                public static X_ChangeWindowAttributes: int
-                public static X_GetWindowAttributes: int
-                public static X_DestroyWindow: int
-                public static X_DestroySubwindows: int
-                public static X_ChangeSaveSet: int
-                public static X_ReparentWindow: int
-                public static X_MapWindow: int
-                public static X_MapSubwindows: int
-                public static X_UnmapWindow: int
-                public static X_UnmapSubwindows: int
-                public static X_ConfigureWindow: int
-                public static X_CirculateWindow: int
-                public static X_GetGeometry: int
-                public static X_QueryTree: int
-                public static X_InternAtom: int
-                public static X_GetAtomName: int
-                public static X_ChangeProperty: int
-                public static X_DeleteProperty: int
-                public static X_GetProperty: int
-                public static X_ListProperties: int
-                public static X_SetSelectionOwner: int
-                public static X_GetSelectionOwner: int
-                public static X_ConvertSelection: int
-                public static X_SendEvent: int
-                public static X_GrabPointer: int
-                public static X_UngrabPointer: int
-                public static X_GrabButton: int
-                public static X_UngrabButton: int
-                public static X_ChangeActivePointerGrab: int
-                public static X_GrabKeyboard: int
-                public static X_UngrabKeyboard: int
-                public static X_GrabKey: int
-                public static X_UngrabKey: int
-                public static X_AllowEvents: int
-                public static X_GrabServer: int
-                public static X_UngrabServer: int
-                public static X_QueryPointer: int
-                public static X_GetMotionEvents: int
-                public static X_TranslateCoords: int
-                public static X_WarpPointer: int
-                public static X_SetInputFocus: int
-                public static X_GetInputFocus: int
-                public static X_QueryKeymap: int
-                public static X_OpenFont: int
-                public static X_CloseFont: int
-                public static X_QueryFont: int
-                public static X_QueryTextExtents: int
-                public static X_ListFonts: int
-                public static X_ListFontsWithInfo: int
-                public static X_SetFontPath: int
-                public static X_GetFontPath: int
-                public static X_CreatePixmap: int
-                public static X_FreePixmap: int
-                public static X_CreateGC: int
-                public static X_ChangeGC: int
-                public static X_CopyGC: int
-                public static X_SetDashes: int
-                public static X_SetClipRectangles: int
-                public static X_FreeGC: int
-                public static X_ClearArea: int
-                public static X_CopyArea: int
-                public static X_CopyPlane: int
-                public static X_PolyPoint: int
-                public static X_PolyLine: int
-                public static X_PolySegment: int
-                public static X_PolyRectangle: int
-                public static X_PolyArc: int
-                public static X_FillPoly: int
-                public static X_PolyFillRectangle: int
-                public static X_PolyFillArc: int
-                public static X_PutImage: int
-                public static X_GetImage: int
-                public static X_PolyText8: int
-                public static X_PolyText16: int
-                public static X_ImageText8: int
-                public static X_ImageText16: int
-                public static X_CreateColormap: int
-                public static X_FreeColormap: int
-                public static X_CopyColormapAndFree: int
-                public static X_InstallColormap: int
-                public static X_UninstallColormap: int
-                public static X_ListInstalledColormaps: int
-                public static X_AllocColor: int
-                public static X_AllocNamedColor: int
-                public static X_AllocColorCells: int
-                public static X_AllocColorPlanes: int
-                public static X_FreeColors: int
-                public static X_StoreColors: int
-                public static X_StoreNamedColor: int
-                public static X_QueryColors: int
-                public static X_LookupColor: int
-                public static X_CreateCursor: int
-                public static X_CreateGlyphCursor: int
-                public static X_FreeCursor: int
-                public static X_RecolorCursor: int
-                public static X_QueryBestSize: int
-                public static X_QueryExtension: int
-                public static X_ListExtensions: int
-                public static X_ChangeKeyboardMapping: int
-                public static X_GetKeyboardMapping: int
-                public static X_ChangeKeyboardControl: int
-                public static X_GetKeyboardControl: int
-                public static X_Bell: int
-                public static X_ChangePointerControl: int
-                public static X_GetPointerControl: int
-                public static X_SetScreenSaver: int
-                public static X_GetScreenSaver: int
-                public static X_ChangeHosts: int
-                public static X_ListHosts: int
-                public static X_SetAccessControl: int
-                public static X_SetCloseDownMode: int
-                public static X_KillClient: int
-                public static X_RotateProperties: int
-                public static X_ForceScreenSaver: int
-                public static X_SetPointerMapping: int
-                public static X_GetPointerMapping: int
-                public static X_SetModifierMapping: int
-                public static X_GetModifierMapping: int
-                public static X_NoOperation: int
+                public static readonly X_Reply: int
+                public static readonly X_Error: int
+                public static readonly X_CreateWindow: int
+                public static readonly X_ChangeWindowAttributes: int
+                public static readonly X_GetWindowAttributes: int
+                public static readonly X_DestroyWindow: int
+                public static readonly X_DestroySubwindows: int
+                public static readonly X_ChangeSaveSet: int
+                public static readonly X_ReparentWindow: int
+                public static readonly X_MapWindow: int
+                public static readonly X_MapSubwindows: int
+                public static readonly X_UnmapWindow: int
+                public static readonly X_UnmapSubwindows: int
+                public static readonly X_ConfigureWindow: int
+                public static readonly X_CirculateWindow: int
+                public static readonly X_GetGeometry: int
+                public static readonly X_QueryTree: int
+                public static readonly X_InternAtom: int
+                public static readonly X_GetAtomName: int
+                public static readonly X_ChangeProperty: int
+                public static readonly X_DeleteProperty: int
+                public static readonly X_GetProperty: int
+                public static readonly X_ListProperties: int
+                public static readonly X_SetSelectionOwner: int
+                public static readonly X_GetSelectionOwner: int
+                public static readonly X_ConvertSelection: int
+                public static readonly X_SendEvent: int
+                public static readonly X_GrabPointer: int
+                public static readonly X_UngrabPointer: int
+                public static readonly X_GrabButton: int
+                public static readonly X_UngrabButton: int
+                public static readonly X_ChangeActivePointerGrab: int
+                public static readonly X_GrabKeyboard: int
+                public static readonly X_UngrabKeyboard: int
+                public static readonly X_GrabKey: int
+                public static readonly X_UngrabKey: int
+                public static readonly X_AllowEvents: int
+                public static readonly X_GrabServer: int
+                public static readonly X_UngrabServer: int
+                public static readonly X_QueryPointer: int
+                public static readonly X_GetMotionEvents: int
+                public static readonly X_TranslateCoords: int
+                public static readonly X_WarpPointer: int
+                public static readonly X_SetInputFocus: int
+                public static readonly X_GetInputFocus: int
+                public static readonly X_QueryKeymap: int
+                public static readonly X_OpenFont: int
+                public static readonly X_CloseFont: int
+                public static readonly X_QueryFont: int
+                public static readonly X_QueryTextExtents: int
+                public static readonly X_ListFonts: int
+                public static readonly X_ListFontsWithInfo: int
+                public static readonly X_SetFontPath: int
+                public static readonly X_GetFontPath: int
+                public static readonly X_CreatePixmap: int
+                public static readonly X_FreePixmap: int
+                public static readonly X_CreateGC: int
+                public static readonly X_ChangeGC: int
+                public static readonly X_CopyGC: int
+                public static readonly X_SetDashes: int
+                public static readonly X_SetClipRectangles: int
+                public static readonly X_FreeGC: int
+                public static readonly X_ClearArea: int
+                public static readonly X_CopyArea: int
+                public static readonly X_CopyPlane: int
+                public static readonly X_PolyPoint: int
+                public static readonly X_PolyLine: int
+                public static readonly X_PolySegment: int
+                public static readonly X_PolyRectangle: int
+                public static readonly X_PolyArc: int
+                public static readonly X_FillPoly: int
+                public static readonly X_PolyFillRectangle: int
+                public static readonly X_PolyFillArc: int
+                public static readonly X_PutImage: int
+                public static readonly X_GetImage: int
+                public static readonly X_PolyText8: int
+                public static readonly X_PolyText16: int
+                public static readonly X_ImageText8: int
+                public static readonly X_ImageText16: int
+                public static readonly X_CreateColormap: int
+                public static readonly X_FreeColormap: int
+                public static readonly X_CopyColormapAndFree: int
+                public static readonly X_InstallColormap: int
+                public static readonly X_UninstallColormap: int
+                public static readonly X_ListInstalledColormaps: int
+                public static readonly X_AllocColor: int
+                public static readonly X_AllocNamedColor: int
+                public static readonly X_AllocColorCells: int
+                public static readonly X_AllocColorPlanes: int
+                public static readonly X_FreeColors: int
+                public static readonly X_StoreColors: int
+                public static readonly X_StoreNamedColor: int
+                public static readonly X_QueryColors: int
+                public static readonly X_LookupColor: int
+                public static readonly X_CreateCursor: int
+                public static readonly X_CreateGlyphCursor: int
+                public static readonly X_FreeCursor: int
+                public static readonly X_RecolorCursor: int
+                public static readonly X_QueryBestSize: int
+                public static readonly X_QueryExtension: int
+                public static readonly X_ListExtensions: int
+                public static readonly X_ChangeKeyboardMapping: int
+                public static readonly X_GetKeyboardMapping: int
+                public static readonly X_ChangeKeyboardControl: int
+                public static readonly X_GetKeyboardControl: int
+                public static readonly X_Bell: int
+                public static readonly X_ChangePointerControl: int
+                public static readonly X_GetPointerControl: int
+                public static readonly X_SetScreenSaver: int
+                public static readonly X_GetScreenSaver: int
+                public static readonly X_ChangeHosts: int
+                public static readonly X_ListHosts: int
+                public static readonly X_SetAccessControl: int
+                public static readonly X_SetCloseDownMode: int
+                public static readonly X_KillClient: int
+                public static readonly X_RotateProperties: int
+                public static readonly X_ForceScreenSaver: int
+                public static readonly X_SetPointerMapping: int
+                public static readonly X_GetPointerMapping: int
+                public static readonly X_SetModifierMapping: int
+                public static readonly X_GetModifierMapping: int
+                public static readonly X_NoOperation: int
                 public static class: java.lang.Class<any>
             }
         }

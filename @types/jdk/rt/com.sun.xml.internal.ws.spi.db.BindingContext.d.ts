@@ -24,10 +24,10 @@ declare namespace com {
                                 createBridge(arg0: com.sun.xml.internal.ws.spi.db.TypeInfo): com.sun.xml.internal.ws.spi.db.XMLBridge
                                 createFragmentBridge(): com.sun.xml.internal.ws.spi.db.XMLBridge
                                 getElementPropertyAccessor<B, V>(arg0: java.lang.Class<B>, arg1: java.lang.String | string, arg2: java.lang.String | string): com.sun.xml.internal.ws.spi.db.PropertyAccessor<B, V>
-                                getKnownNamespaceURIs(): java.util.List<java.lang.String>
-                                generateSchema(arg0: javax.xml.bind.SchemaOutputResolver): void
-                                getTypeName(arg0: com.sun.xml.internal.ws.spi.db.TypeInfo): javax.xml.namespace.QName
-                                getBuildId(): string
+                                getKnownNamespaceURIs<B, V>(): java.util.List<java.lang.String>
+                                generateSchema<B, V>(arg0: javax.xml.bind.SchemaOutputResolver | javax.xml.bind.SchemaOutputResolver$$Lambda): void
+                                getTypeName<B, V>(arg0: com.sun.xml.internal.ws.spi.db.TypeInfo): javax.xml.namespace.QName
+                                getBuildId<B, V>(): string
                             }
                         }
                     }

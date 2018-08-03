@@ -7,31 +7,31 @@ declare namespace com {
                         namespace xsltc {
                             namespace runtime {
                                 class BasisLibrary {
-                                    public static RUN_TIME_INTERNAL_ERR: string
-                                    public static RUN_TIME_COPY_ERR: string
-                                    public static DATA_CONVERSION_ERR: string
-                                    public static EXTERNAL_FUNC_ERR: string
-                                    public static EQUALITY_EXPR_ERR: string
-                                    public static INVALID_ARGUMENT_ERR: string
-                                    public static FORMAT_NUMBER_ERR: string
-                                    public static ITERATOR_CLONE_ERR: string
-                                    public static AXIS_SUPPORT_ERR: string
-                                    public static TYPED_AXIS_SUPPORT_ERR: string
-                                    public static STRAY_ATTRIBUTE_ERR: string
-                                    public static STRAY_NAMESPACE_ERR: string
-                                    public static NAMESPACE_PREFIX_ERR: string
-                                    public static DOM_ADAPTER_INIT_ERR: string
-                                    public static PARSER_DTD_SUPPORT_ERR: string
-                                    public static NAMESPACES_SUPPORT_ERR: string
-                                    public static CANT_RESOLVE_RELATIVE_URI_ERR: string
-                                    public static UNSUPPORTED_XSL_ERR: string
-                                    public static UNSUPPORTED_EXT_ERR: string
-                                    public static UNKNOWN_TRANSLET_VERSION_ERR: string
-                                    public static INVALID_QNAME_ERR: string
-                                    public static INVALID_NCNAME_ERR: string
-                                    public static UNALLOWED_EXTENSION_FUNCTION_ERR: string
-                                    public static UNALLOWED_EXTENSION_ELEMENT_ERR: string
-                                    public static ERROR_MESSAGES_KEY: string
+                                    public static readonly RUN_TIME_INTERNAL_ERR: string
+                                    public static readonly RUN_TIME_COPY_ERR: string
+                                    public static readonly DATA_CONVERSION_ERR: string
+                                    public static readonly EXTERNAL_FUNC_ERR: string
+                                    public static readonly EQUALITY_EXPR_ERR: string
+                                    public static readonly INVALID_ARGUMENT_ERR: string
+                                    public static readonly FORMAT_NUMBER_ERR: string
+                                    public static readonly ITERATOR_CLONE_ERR: string
+                                    public static readonly AXIS_SUPPORT_ERR: string
+                                    public static readonly TYPED_AXIS_SUPPORT_ERR: string
+                                    public static readonly STRAY_ATTRIBUTE_ERR: string
+                                    public static readonly STRAY_NAMESPACE_ERR: string
+                                    public static readonly NAMESPACE_PREFIX_ERR: string
+                                    public static readonly DOM_ADAPTER_INIT_ERR: string
+                                    public static readonly PARSER_DTD_SUPPORT_ERR: string
+                                    public static readonly NAMESPACES_SUPPORT_ERR: string
+                                    public static readonly CANT_RESOLVE_RELATIVE_URI_ERR: string
+                                    public static readonly UNSUPPORTED_XSL_ERR: string
+                                    public static readonly UNSUPPORTED_EXT_ERR: string
+                                    public static readonly UNKNOWN_TRANSLET_VERSION_ERR: string
+                                    public static readonly INVALID_QNAME_ERR: string
+                                    public static readonly INVALID_NCNAME_ERR: string
+                                    public static readonly UNALLOWED_EXTENSION_FUNCTION_ERR: string
+                                    public static readonly UNALLOWED_EXTENSION_ELEMENT_ERR: string
+                                    public static readonly ERROR_MESSAGES_KEY: string
                                     public constructor()
                                     public static countF(arg0: com.sun.org.apache.xml.internal.dtm.DTMAxisIterator): int
                                     public static positionF(arg0: com.sun.org.apache.xml.internal.dtm.DTMAxisIterator): int

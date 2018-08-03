@@ -7,10 +7,10 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 class SchemaGrammar implements com.sun.org.apache.xerces.internal.xni.grammars.XSGrammar , com.sun.org.apache.xerces.internal.xs.XSNamespaceItem {
-                                    public static fAnyType: com.sun.org.apache.xerces.internal.impl.xs.XSComplexTypeDecl
-                                    public static SG_SchemaNS: com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar$BuiltinSchemaGrammar
-                                    public static fAnySimpleType: com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType
-                                    public static SG_XSI: com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar$BuiltinSchemaGrammar
+                                    public static readonly fAnyType: com.sun.org.apache.xerces.internal.impl.xs.XSComplexTypeDecl
+                                    public static readonly SG_SchemaNS: com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar$BuiltinSchemaGrammar
+                                    public static readonly fAnySimpleType: com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType
+                                    public static readonly SG_XSI: com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar$BuiltinSchemaGrammar
                                     protected constructor()
                                     public constructor(arg0: java.lang.String | string, arg1: com.sun.org.apache.xerces.internal.impl.xs.XSDDescription, arg2: com.sun.org.apache.xerces.internal.util.SymbolTable)
                                     public constructor(arg0: com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar)

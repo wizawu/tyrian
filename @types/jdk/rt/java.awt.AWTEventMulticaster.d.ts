@@ -1,8 +1,8 @@
 declare namespace java {
     namespace awt {
         class AWTEventMulticaster implements java.awt.event.ComponentListener , java.awt.event.ContainerListener , java.awt.event.FocusListener , java.awt.event.KeyListener , java.awt.event.MouseListener , java.awt.event.MouseMotionListener , java.awt.event.WindowListener , java.awt.event.WindowFocusListener , java.awt.event.WindowStateListener , java.awt.event.ActionListener , java.awt.event.ItemListener , java.awt.event.AdjustmentListener , java.awt.event.TextListener , java.awt.event.InputMethodListener , java.awt.event.HierarchyListener , java.awt.event.HierarchyBoundsListener , java.awt.event.MouseWheelListener {
-            protected a: java.util.EventListener
-            protected b: java.util.EventListener
+            protected readonly a: java.util.EventListener
+            protected readonly b: java.util.EventListener
             protected constructor(arg0: java.util.EventListener, arg1: java.util.EventListener)
             protected remove(arg0: java.util.EventListener): java.util.EventListener
             public componentResized(arg0: java.awt.event.ComponentEvent): void
@@ -50,16 +50,16 @@ declare namespace java {
             public static add(arg0: java.awt.event.MouseListener, arg1: java.awt.event.MouseListener): java.awt.event.MouseListener
             public static add(arg0: java.awt.event.MouseMotionListener, arg1: java.awt.event.MouseMotionListener): java.awt.event.MouseMotionListener
             public static add(arg0: java.awt.event.WindowListener, arg1: java.awt.event.WindowListener): java.awt.event.WindowListener
-            public static add(arg0: java.awt.event.WindowStateListener | java.awt.event.WindowStateListener$$Lambda, arg1: java.awt.event.WindowStateListener | java.awt.event.WindowStateListener$$Lambda): java.awt.event.WindowStateListener
+            public static add(arg0: java.awt.event.WindowStateListener, arg1: java.awt.event.WindowStateListener): java.awt.event.WindowStateListener
             public static add(arg0: java.awt.event.WindowFocusListener, arg1: java.awt.event.WindowFocusListener): java.awt.event.WindowFocusListener
-            public static add(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda, arg1: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): java.awt.event.ActionListener
-            public static add(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda, arg1: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): java.awt.event.ItemListener
-            public static add(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$Lambda, arg1: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$Lambda): java.awt.event.AdjustmentListener
-            public static add(arg0: java.awt.event.TextListener | java.awt.event.TextListener$$Lambda, arg1: java.awt.event.TextListener | java.awt.event.TextListener$$Lambda): java.awt.event.TextListener
+            public static add(arg0: java.awt.event.ActionListener, arg1: java.awt.event.ActionListener): java.awt.event.ActionListener
+            public static add(arg0: java.awt.event.ItemListener, arg1: java.awt.event.ItemListener): java.awt.event.ItemListener
+            public static add(arg0: java.awt.event.AdjustmentListener, arg1: java.awt.event.AdjustmentListener): java.awt.event.AdjustmentListener
+            public static add(arg0: java.awt.event.TextListener, arg1: java.awt.event.TextListener): java.awt.event.TextListener
             public static add(arg0: java.awt.event.InputMethodListener, arg1: java.awt.event.InputMethodListener): java.awt.event.InputMethodListener
-            public static add(arg0: java.awt.event.HierarchyListener | java.awt.event.HierarchyListener$$Lambda, arg1: java.awt.event.HierarchyListener | java.awt.event.HierarchyListener$$Lambda): java.awt.event.HierarchyListener
+            public static add(arg0: java.awt.event.HierarchyListener, arg1: java.awt.event.HierarchyListener): java.awt.event.HierarchyListener
             public static add(arg0: java.awt.event.HierarchyBoundsListener, arg1: java.awt.event.HierarchyBoundsListener): java.awt.event.HierarchyBoundsListener
-            public static add(arg0: java.awt.event.MouseWheelListener | java.awt.event.MouseWheelListener$$Lambda, arg1: java.awt.event.MouseWheelListener | java.awt.event.MouseWheelListener$$Lambda): java.awt.event.MouseWheelListener
+            public static add(arg0: java.awt.event.MouseWheelListener, arg1: java.awt.event.MouseWheelListener): java.awt.event.MouseWheelListener
             public static remove(arg0: java.awt.event.ComponentListener, arg1: java.awt.event.ComponentListener): java.awt.event.ComponentListener
             public static remove(arg0: java.awt.event.ContainerListener, arg1: java.awt.event.ContainerListener): java.awt.event.ContainerListener
             public static remove(arg0: java.awt.event.FocusListener, arg1: java.awt.event.FocusListener): java.awt.event.FocusListener
@@ -67,16 +67,16 @@ declare namespace java {
             public static remove(arg0: java.awt.event.MouseListener, arg1: java.awt.event.MouseListener): java.awt.event.MouseListener
             public static remove(arg0: java.awt.event.MouseMotionListener, arg1: java.awt.event.MouseMotionListener): java.awt.event.MouseMotionListener
             public static remove(arg0: java.awt.event.WindowListener, arg1: java.awt.event.WindowListener): java.awt.event.WindowListener
-            public static remove(arg0: java.awt.event.WindowStateListener | java.awt.event.WindowStateListener$$Lambda, arg1: java.awt.event.WindowStateListener | java.awt.event.WindowStateListener$$Lambda): java.awt.event.WindowStateListener
+            public static remove(arg0: java.awt.event.WindowStateListener, arg1: java.awt.event.WindowStateListener): java.awt.event.WindowStateListener
             public static remove(arg0: java.awt.event.WindowFocusListener, arg1: java.awt.event.WindowFocusListener): java.awt.event.WindowFocusListener
-            public static remove(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda, arg1: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): java.awt.event.ActionListener
-            public static remove(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda, arg1: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): java.awt.event.ItemListener
-            public static remove(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$Lambda, arg1: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$Lambda): java.awt.event.AdjustmentListener
-            public static remove(arg0: java.awt.event.TextListener | java.awt.event.TextListener$$Lambda, arg1: java.awt.event.TextListener | java.awt.event.TextListener$$Lambda): java.awt.event.TextListener
+            public static remove(arg0: java.awt.event.ActionListener, arg1: java.awt.event.ActionListener): java.awt.event.ActionListener
+            public static remove(arg0: java.awt.event.ItemListener, arg1: java.awt.event.ItemListener): java.awt.event.ItemListener
+            public static remove(arg0: java.awt.event.AdjustmentListener, arg1: java.awt.event.AdjustmentListener): java.awt.event.AdjustmentListener
+            public static remove(arg0: java.awt.event.TextListener, arg1: java.awt.event.TextListener): java.awt.event.TextListener
             public static remove(arg0: java.awt.event.InputMethodListener, arg1: java.awt.event.InputMethodListener): java.awt.event.InputMethodListener
-            public static remove(arg0: java.awt.event.HierarchyListener | java.awt.event.HierarchyListener$$Lambda, arg1: java.awt.event.HierarchyListener | java.awt.event.HierarchyListener$$Lambda): java.awt.event.HierarchyListener
+            public static remove(arg0: java.awt.event.HierarchyListener, arg1: java.awt.event.HierarchyListener): java.awt.event.HierarchyListener
             public static remove(arg0: java.awt.event.HierarchyBoundsListener, arg1: java.awt.event.HierarchyBoundsListener): java.awt.event.HierarchyBoundsListener
-            public static remove(arg0: java.awt.event.MouseWheelListener | java.awt.event.MouseWheelListener$$Lambda, arg1: java.awt.event.MouseWheelListener | java.awt.event.MouseWheelListener$$Lambda): java.awt.event.MouseWheelListener
+            public static remove(arg0: java.awt.event.MouseWheelListener, arg1: java.awt.event.MouseWheelListener): java.awt.event.MouseWheelListener
             protected static addInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener
             protected static removeInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener
             protected saveInternal(arg0: java.io.ObjectOutputStream, arg1: java.lang.String | string): void

@@ -7,7 +7,7 @@ declare namespace com {
                         namespace runtime {
                             namespace output {
                                 class SAXOutput extends com.sun.xml.internal.bind.v2.runtime.output.XmlOutputAbstractImpl {
-                                    protected out: org.xml.sax.ContentHandler
+                                    protected readonly out: org.xml.sax.ContentHandler
                                     public constructor(arg0: org.xml.sax.ContentHandler)
                                     public startDocument(arg0: com.sun.xml.internal.bind.v2.runtime.XMLSerializer, arg1: boolean, arg2: int[], arg3: com.sun.xml.internal.bind.v2.runtime.output.NamespaceContextImpl): void
                                     public endDocument(arg0: boolean): void

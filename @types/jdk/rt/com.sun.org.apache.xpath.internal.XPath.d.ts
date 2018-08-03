@@ -5,13 +5,13 @@ declare namespace com {
                 namespace xpath {
                     namespace internal {
                         class XPath implements java.io.Serializable , com.sun.org.apache.xpath.internal.ExpressionOwner {
-                            public static SELECT: int
-                            public static MATCH: int
-                            public static MATCH_SCORE_NONE: double
-                            public static MATCH_SCORE_QNAME: double
-                            public static MATCH_SCORE_NSWILD: double
-                            public static MATCH_SCORE_NODETEST: double
-                            public static MATCH_SCORE_OTHER: double
+                            public static readonly SELECT: int
+                            public static readonly MATCH: int
+                            public static readonly MATCH_SCORE_NONE: double
+                            public static readonly MATCH_SCORE_QNAME: double
+                            public static readonly MATCH_SCORE_NSWILD: double
+                            public static readonly MATCH_SCORE_NODETEST: double
+                            public static readonly MATCH_SCORE_OTHER: double
                             public getExpression(): com.sun.org.apache.xpath.internal.Expression
                             public fixupVariables(arg0: java.util.Vector, arg1: int): void
                             public setExpression(arg0: com.sun.org.apache.xpath.internal.Expression): void

@@ -6,8 +6,8 @@ declare namespace com {
                     namespace wsdl {
                         namespace parser {
                             class W3CAddressingWSDLParserExtension extends com.sun.xml.internal.ws.api.wsdl.parser.WSDLParserExtension {
-                                protected static COLON_DELIMITER: string
-                                protected static SLASH_DELIMITER: string
+                                protected static readonly COLON_DELIMITER: string
+                                protected static readonly SLASH_DELIMITER: string
                                 public constructor()
                                 public bindingElements(arg0: com.sun.xml.internal.ws.api.model.wsdl.editable.EditableWSDLBoundPortType, arg1: javax.xml.stream.XMLStreamReader): boolean
                                 public portElements(arg0: com.sun.xml.internal.ws.api.model.wsdl.editable.EditableWSDLPort, arg1: javax.xml.stream.XMLStreamReader): boolean

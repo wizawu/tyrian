@@ -7,12 +7,12 @@ declare namespace com {
                         namespace xsltc {
                             namespace compiler {
                                 class XPathParser extends com.sun.java_cup.internal.runtime.lr_parser {
-                                    protected static _production_table: short[][]
-                                    protected static _action_table: short[][]
-                                    protected static _reduce_table: short[][]
+                                    protected static readonly _production_table: short[][]
+                                    protected static readonly _action_table: short[][]
+                                    protected static readonly _reduce_table: short[][]
                                     protected action_obj: com.sun.org.apache.xalan.internal.xsltc.compiler.CUP$XPathParser$actions
-                                    public static EmptyArgs: java.util.Vector
-                                    public static DummyVarRef: com.sun.org.apache.xalan.internal.xsltc.compiler.VariableRef
+                                    public static readonly EmptyArgs: java.util.Vector
+                                    public static readonly DummyVarRef: com.sun.org.apache.xalan.internal.xsltc.compiler.VariableRef
                                     public _symbolTable: com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable
                                     public constructor()
                                     public constructor(arg0: com.sun.java_cup.internal.runtime.Scanner | com.sun.java_cup.internal.runtime.Scanner$$Lambda)

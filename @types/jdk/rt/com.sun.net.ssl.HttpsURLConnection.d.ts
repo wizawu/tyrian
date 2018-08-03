@@ -5,8 +5,8 @@ declare namespace com {
                 abstract class HttpsURLConnection extends java.net.HttpURLConnection {
                     protected hostnameVerifier: com.sun.net.ssl.HostnameVerifier
                     public constructor(arg0: java.net.URL)
-                    public getCipherSuite(): string
-                    public getServerCertificateChain(): javax.security.cert.X509Certificate[]
+                    public abstract getCipherSuite(): string
+                    public abstract getServerCertificateChain(): javax.security.cert.X509Certificate[]
                     public static setDefaultHostnameVerifier(arg0: com.sun.net.ssl.HostnameVerifier | com.sun.net.ssl.HostnameVerifier$$Lambda): void
                     public static getDefaultHostnameVerifier(): com.sun.net.ssl.HostnameVerifier
                     public setHostnameVerifier(arg0: com.sun.net.ssl.HostnameVerifier | com.sun.net.ssl.HostnameVerifier$$Lambda): void

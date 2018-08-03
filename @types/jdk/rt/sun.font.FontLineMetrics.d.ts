@@ -2,8 +2,8 @@ declare namespace sun {
     namespace font {
         class FontLineMetrics extends java.awt.font.LineMetrics implements java.lang.Cloneable {
             public numchars: int
-            public cm: sun.font.CoreMetrics
-            public frc: java.awt.font.FontRenderContext
+            public readonly cm: sun.font.CoreMetrics
+            public readonly frc: java.awt.font.FontRenderContext
             public constructor(arg0: int, arg1: sun.font.CoreMetrics, arg2: java.awt.font.FontRenderContext)
             public getNumChars(): int
             public getAscent(): float

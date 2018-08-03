@@ -33,7 +33,7 @@ declare namespace sun {
                 public putGeneralizedTime(arg0: java.util.Date): void
                 public putLength(arg0: int): void
                 public putTag(arg0: byte, arg1: boolean, arg2: byte): void
-                public derEncode(arg0: java.io.OutputStream): void
+                public derEncode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                 public static class: java.lang.Class<any>
             }
         }

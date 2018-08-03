@@ -5,17 +5,17 @@ declare namespace com {
                 namespace ctx {
                     abstract class AtomicDirContext extends com.sun.jndi.toolkit.ctx.ComponentDirContext {
                         protected constructor()
-                        protected a_getAttributes(arg0: java.lang.String | string, arg1: java.lang.String[], arg2: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.directory.Attributes
-                        protected a_modifyAttributes(arg0: java.lang.String | string, arg1: int, arg2: javax.naming.directory.Attributes, arg3: com.sun.jndi.toolkit.ctx.Continuation): void
-                        protected a_modifyAttributes(arg0: java.lang.String | string, arg1: javax.naming.directory.ModificationItem[], arg2: com.sun.jndi.toolkit.ctx.Continuation): void
-                        protected a_bind(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: javax.naming.directory.Attributes, arg3: com.sun.jndi.toolkit.ctx.Continuation): void
-                        protected a_rebind(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: javax.naming.directory.Attributes, arg3: com.sun.jndi.toolkit.ctx.Continuation): void
-                        protected a_createSubcontext(arg0: java.lang.String | string, arg1: javax.naming.directory.Attributes, arg2: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.directory.DirContext
-                        protected a_search(arg0: javax.naming.directory.Attributes, arg1: java.lang.String[], arg2: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.NamingEnumeration<javax.naming.directory.SearchResult>
-                        protected a_search(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object[], arg3: javax.naming.directory.SearchControls, arg4: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.NamingEnumeration<javax.naming.directory.SearchResult>
-                        protected a_search(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.naming.directory.SearchControls, arg3: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.NamingEnumeration<javax.naming.directory.SearchResult>
-                        protected a_getSchema(arg0: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.directory.DirContext
-                        protected a_getSchemaClassDefinition(arg0: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.directory.DirContext
+                        protected abstract a_getAttributes(arg0: java.lang.String | string, arg1: java.lang.String[], arg2: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.directory.Attributes
+                        protected abstract a_modifyAttributes(arg0: java.lang.String | string, arg1: int, arg2: javax.naming.directory.Attributes, arg3: com.sun.jndi.toolkit.ctx.Continuation): void
+                        protected abstract a_modifyAttributes(arg0: java.lang.String | string, arg1: javax.naming.directory.ModificationItem[], arg2: com.sun.jndi.toolkit.ctx.Continuation): void
+                        protected abstract a_bind(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: javax.naming.directory.Attributes, arg3: com.sun.jndi.toolkit.ctx.Continuation): void
+                        protected abstract a_rebind(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: javax.naming.directory.Attributes, arg3: com.sun.jndi.toolkit.ctx.Continuation): void
+                        protected abstract a_createSubcontext(arg0: java.lang.String | string, arg1: javax.naming.directory.Attributes, arg2: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.directory.DirContext
+                        protected abstract a_search(arg0: javax.naming.directory.Attributes, arg1: java.lang.String[], arg2: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.NamingEnumeration<javax.naming.directory.SearchResult>
+                        protected abstract a_search(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object[], arg3: javax.naming.directory.SearchControls, arg4: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.NamingEnumeration<javax.naming.directory.SearchResult>
+                        protected abstract a_search(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.naming.directory.SearchControls, arg3: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.NamingEnumeration<javax.naming.directory.SearchResult>
+                        protected abstract a_getSchema(arg0: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.directory.DirContext
+                        protected abstract a_getSchemaClassDefinition(arg0: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.directory.DirContext
                         protected a_getAttributes_nns(arg0: java.lang.String | string, arg1: java.lang.String[], arg2: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.directory.Attributes
                         protected a_modifyAttributes_nns(arg0: java.lang.String | string, arg1: int, arg2: javax.naming.directory.Attributes, arg3: com.sun.jndi.toolkit.ctx.Continuation): void
                         protected a_modifyAttributes_nns(arg0: java.lang.String | string, arg1: javax.naming.directory.ModificationItem[], arg2: com.sun.jndi.toolkit.ctx.Continuation): void

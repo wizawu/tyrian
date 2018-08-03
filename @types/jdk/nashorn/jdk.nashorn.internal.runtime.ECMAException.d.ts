@@ -3,9 +3,9 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 class ECMAException extends jdk.nashorn.api.scripting.NashornException {
-                    public static CREATE: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static THROWN: jdk.nashorn.internal.codegen.CompilerConstants$FieldAccess
-                    public thrown: java.lang.Object
+                    public static readonly CREATE: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly THROWN: jdk.nashorn.internal.codegen.CompilerConstants$FieldAccess
+                    public readonly thrown: java.lang.Object
                     public constructor(arg0: java.lang.Object, arg1: java.lang.Throwable)
                     public static create(arg0: java.lang.Object, arg1: java.lang.String | string, arg2: int, arg3: int): jdk.nashorn.internal.runtime.ECMAException
                     public getThrown(): java.lang.Object

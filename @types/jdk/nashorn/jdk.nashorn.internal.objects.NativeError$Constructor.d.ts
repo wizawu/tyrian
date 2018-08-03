@@ -6,7 +6,7 @@ declare namespace jdk {
                     public G$captureStackTrace(): java.lang.Object
                     public S$captureStackTrace(arg0: java.lang.Object): void
                     public G$dumpStack(): java.lang.Object
-                    public public S$dumpStack(arg0: java.lang.Object): void
+                    public static public S$dumpStack(arg0: java.lang.Object): void
                     public static class: java.lang.Class<any>
                 }
             }

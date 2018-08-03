@@ -5,320 +5,320 @@ declare namespace com {
                 namespace impl {
                     namespace logging {
                         class ORBUtilSystemException extends com.sun.corba.se.spi.logging.LogWrapperBase {
-                            public static ADAPTER_ID_NOT_AVAILABLE: int
-                            public static SERVER_ID_NOT_AVAILABLE: int
-                            public static ORB_ID_NOT_AVAILABLE: int
-                            public static OBJECT_ADAPTER_ID_NOT_AVAILABLE: int
-                            public static CONNECTING_SERVANT: int
-                            public static EXTRACT_WRONG_TYPE: int
-                            public static EXTRACT_WRONG_TYPE_LIST: int
-                            public static BAD_STRING_BOUNDS: int
-                            public static INSERT_OBJECT_INCOMPATIBLE: int
-                            public static INSERT_OBJECT_FAILED: int
-                            public static EXTRACT_OBJECT_INCOMPATIBLE: int
-                            public static FIXED_NOT_MATCH: int
-                            public static FIXED_BAD_TYPECODE: int
-                            public static SET_EXCEPTION_CALLED_NULL_ARGS: int
-                            public static SET_EXCEPTION_CALLED_BAD_TYPE: int
-                            public static CONTEXT_CALLED_OUT_OF_ORDER: int
-                            public static BAD_ORB_CONFIGURATOR: int
-                            public static ORB_CONFIGURATOR_ERROR: int
-                            public static ORB_DESTROYED: int
-                            public static NEGATIVE_BOUNDS: int
-                            public static EXTRACT_NOT_INITIALIZED: int
-                            public static EXTRACT_OBJECT_FAILED: int
-                            public static METHOD_NOT_FOUND_IN_TIE: int
-                            public static CLASS_NOT_FOUND1: int
-                            public static CLASS_NOT_FOUND2: int
-                            public static CLASS_NOT_FOUND3: int
-                            public static GET_DELEGATE_SERVANT_NOT_ACTIVE: int
-                            public static GET_DELEGATE_WRONG_POLICY: int
-                            public static SET_DELEGATE_REQUIRES_STUB: int
-                            public static GET_DELEGATE_REQUIRES_STUB: int
-                            public static GET_TYPE_IDS_REQUIRES_STUB: int
-                            public static GET_ORB_REQUIRES_STUB: int
-                            public static CONNECT_REQUIRES_STUB: int
-                            public static IS_LOCAL_REQUIRES_STUB: int
-                            public static REQUEST_REQUIRES_STUB: int
-                            public static BAD_ACTIVATE_TIE_CALL: int
-                            public static IO_EXCEPTION_ON_CLOSE: int
-                            public static NULL_PARAM: int
-                            public static UNABLE_FIND_VALUE_FACTORY: int
-                            public static ABSTRACT_FROM_NON_ABSTRACT: int
-                            public static INVALID_TAGGED_PROFILE: int
-                            public static OBJREF_FROM_FOREIGN_ORB: int
-                            public static LOCAL_OBJECT_NOT_ALLOWED: int
-                            public static NULL_OBJECT_REFERENCE: int
-                            public static COULD_NOT_LOAD_CLASS: int
-                            public static BAD_URL: int
-                            public static FIELD_NOT_FOUND: int
-                            public static ERROR_SETTING_FIELD: int
-                            public static BOUNDS_ERROR_IN_DII_REQUEST: int
-                            public static PERSISTENT_SERVER_INIT_ERROR: int
-                            public static COULD_NOT_CREATE_ARRAY: int
-                            public static COULD_NOT_SET_ARRAY: int
-                            public static ILLEGAL_BOOTSTRAP_OPERATION: int
-                            public static BOOTSTRAP_RUNTIME_EXCEPTION: int
-                            public static BOOTSTRAP_EXCEPTION: int
-                            public static STRING_EXPECTED: int
-                            public static INVALID_TYPECODE_KIND: int
-                            public static SOCKET_FACTORY_AND_CONTACT_INFO_LIST_AT_SAME_TIME: int
-                            public static ACCEPTORS_AND_LEGACY_SOCKET_FACTORY_AT_SAME_TIME: int
-                            public static BAD_ORB_FOR_SERVANT: int
-                            public static INVALID_REQUEST_PARTITIONING_POLICY_VALUE: int
-                            public static INVALID_REQUEST_PARTITIONING_COMPONENT_VALUE: int
-                            public static INVALID_REQUEST_PARTITIONING_ID: int
-                            public static ERROR_IN_SETTING_DYNAMIC_STUB_FACTORY_FACTORY: int
-                            public static DSIMETHOD_NOTCALLED: int
-                            public static ARGUMENTS_CALLED_MULTIPLE: int
-                            public static ARGUMENTS_CALLED_AFTER_EXCEPTION: int
-                            public static ARGUMENTS_CALLED_NULL_ARGS: int
-                            public static ARGUMENTS_NOT_CALLED: int
-                            public static SET_RESULT_CALLED_MULTIPLE: int
-                            public static SET_RESULT_AFTER_EXCEPTION: int
-                            public static SET_RESULT_CALLED_NULL_ARGS: int
-                            public static BAD_REMOTE_TYPECODE: int
-                            public static UNRESOLVED_RECURSIVE_TYPECODE: int
-                            public static CONNECT_FAILURE: int
-                            public static CONNECTION_CLOSE_REBIND: int
-                            public static WRITE_ERROR_SEND: int
-                            public static GET_PROPERTIES_ERROR: int
-                            public static BOOTSTRAP_SERVER_NOT_AVAIL: int
-                            public static INVOKE_ERROR: int
-                            public static DEFAULT_CREATE_SERVER_SOCKET_GIVEN_NON_IIOP_CLEAR_TEXT: int
-                            public static CONNECTION_ABORT: int
-                            public static CONNECTION_REBIND: int
-                            public static RECV_MSG_ERROR: int
-                            public static IOEXCEPTION_WHEN_READING_CONNECTION: int
-                            public static SELECTION_KEY_INVALID: int
-                            public static EXCEPTION_IN_ACCEPT: int
-                            public static SECURITY_EXCEPTION_IN_ACCEPT: int
-                            public static TRANSPORT_READ_TIMEOUT_EXCEEDED: int
-                            public static CREATE_LISTENER_FAILED: int
-                            public static BUFFER_READ_MANAGER_TIMEOUT: int
-                            public static BAD_STRINGIFIED_IOR_LEN: int
-                            public static BAD_STRINGIFIED_IOR: int
-                            public static BAD_MODIFIER: int
-                            public static CODESET_INCOMPATIBLE: int
-                            public static BAD_HEX_DIGIT: int
-                            public static BAD_UNICODE_PAIR: int
-                            public static BTC_RESULT_MORE_THAN_ONE_CHAR: int
-                            public static BAD_CODESETS_FROM_CLIENT: int
-                            public static INVALID_SINGLE_CHAR_CTB: int
-                            public static BAD_GIOP_1_1_CTB: int
-                            public static BAD_SEQUENCE_BOUNDS: int
-                            public static ILLEGAL_SOCKET_FACTORY_TYPE: int
-                            public static BAD_CUSTOM_SOCKET_FACTORY: int
-                            public static FRAGMENT_SIZE_MINIMUM: int
-                            public static FRAGMENT_SIZE_DIV: int
-                            public static ORB_INITIALIZER_FAILURE: int
-                            public static ORB_INITIALIZER_TYPE: int
-                            public static ORB_INITIALREFERENCE_SYNTAX: int
-                            public static ACCEPTOR_INSTANTIATION_FAILURE: int
-                            public static ACCEPTOR_INSTANTIATION_TYPE_FAILURE: int
-                            public static ILLEGAL_CONTACT_INFO_LIST_FACTORY_TYPE: int
-                            public static BAD_CONTACT_INFO_LIST_FACTORY: int
-                            public static ILLEGAL_IOR_TO_SOCKET_INFO_TYPE: int
-                            public static BAD_CUSTOM_IOR_TO_SOCKET_INFO: int
-                            public static ILLEGAL_IIOP_PRIMARY_TO_CONTACT_INFO_TYPE: int
-                            public static BAD_CUSTOM_IIOP_PRIMARY_TO_CONTACT_INFO: int
-                            public static BAD_CORBALOC_STRING: int
-                            public static NO_PROFILE_PRESENT: int
-                            public static CANNOT_CREATE_ORBID_DB: int
-                            public static CANNOT_READ_ORBID_DB: int
-                            public static CANNOT_WRITE_ORBID_DB: int
-                            public static GET_SERVER_PORT_CALLED_BEFORE_ENDPOINTS_INITIALIZED: int
-                            public static PERSISTENT_SERVERPORT_NOT_SET: int
-                            public static PERSISTENT_SERVERID_NOT_SET: int
-                            public static NON_EXISTENT_ORBID: int
-                            public static NO_SERVER_SUBCONTRACT: int
-                            public static SERVER_SC_TEMP_SIZE: int
-                            public static NO_CLIENT_SC_CLASS: int
-                            public static SERVER_SC_NO_IIOP_PROFILE: int
-                            public static GET_SYSTEM_EX_RETURNED_NULL: int
-                            public static PEEKSTRING_FAILED: int
-                            public static GET_LOCAL_HOST_FAILED: int
-                            public static BAD_LOCATE_REQUEST_STATUS: int
-                            public static STRINGIFY_WRITE_ERROR: int
-                            public static BAD_GIOP_REQUEST_TYPE: int
-                            public static ERROR_UNMARSHALING_USEREXC: int
-                            public static RequestDispatcherRegistry_ERROR: int
-                            public static LOCATIONFORWARD_ERROR: int
-                            public static WRONG_CLIENTSC: int
-                            public static BAD_SERVANT_READ_OBJECT: int
-                            public static MULT_IIOP_PROF_NOT_SUPPORTED: int
-                            public static GIOP_MAGIC_ERROR: int
-                            public static GIOP_VERSION_ERROR: int
-                            public static ILLEGAL_REPLY_STATUS: int
-                            public static ILLEGAL_GIOP_MSG_TYPE: int
-                            public static FRAGMENTATION_DISALLOWED: int
-                            public static BAD_REPLYSTATUS: int
-                            public static CTB_CONVERTER_FAILURE: int
-                            public static BTC_CONVERTER_FAILURE: int
-                            public static WCHAR_ARRAY_UNSUPPORTED_ENCODING: int
-                            public static ILLEGAL_TARGET_ADDRESS_DISPOSITION: int
-                            public static NULL_REPLY_IN_GET_ADDR_DISPOSITION: int
-                            public static ORB_TARGET_ADDR_PREFERENCE_IN_EXTRACT_OBJECTKEY_INVALID: int
-                            public static INVALID_ISSTREAMED_TCKIND: int
-                            public static INVALID_JDK1_3_1_PATCH_LEVEL: int
-                            public static SVCCTX_UNMARSHAL_ERROR: int
-                            public static NULL_IOR: int
-                            public static UNSUPPORTED_GIOP_VERSION: int
-                            public static APPLICATION_EXCEPTION_IN_SPECIAL_METHOD: int
-                            public static STATEMENT_NOT_REACHABLE1: int
-                            public static STATEMENT_NOT_REACHABLE2: int
-                            public static STATEMENT_NOT_REACHABLE3: int
-                            public static STATEMENT_NOT_REACHABLE4: int
-                            public static STATEMENT_NOT_REACHABLE5: int
-                            public static STATEMENT_NOT_REACHABLE6: int
-                            public static UNEXPECTED_DII_EXCEPTION: int
-                            public static METHOD_SHOULD_NOT_BE_CALLED: int
-                            public static CANCEL_NOT_SUPPORTED: int
-                            public static EMPTY_STACK_RUN_SERVANT_POST_INVOKE: int
-                            public static PROBLEM_WITH_EXCEPTION_TYPECODE: int
-                            public static ILLEGAL_SUBCONTRACT_ID: int
-                            public static BAD_SYSTEM_EXCEPTION_IN_LOCATE_REPLY: int
-                            public static BAD_SYSTEM_EXCEPTION_IN_REPLY: int
-                            public static BAD_COMPLETION_STATUS_IN_LOCATE_REPLY: int
-                            public static BAD_COMPLETION_STATUS_IN_REPLY: int
-                            public static BADKIND_CANNOT_OCCUR: int
-                            public static ERROR_RESOLVING_ALIAS: int
-                            public static TK_LONG_DOUBLE_NOT_SUPPORTED: int
-                            public static TYPECODE_NOT_SUPPORTED: int
-                            public static BOUNDS_CANNOT_OCCUR: int
-                            public static NUM_INVOCATIONS_ALREADY_ZERO: int
-                            public static ERROR_INIT_BADSERVERIDHANDLER: int
-                            public static NO_TOA: int
-                            public static NO_POA: int
-                            public static INVOCATION_INFO_STACK_EMPTY: int
-                            public static BAD_CODE_SET_STRING: int
-                            public static UNKNOWN_NATIVE_CODESET: int
-                            public static UNKNOWN_CONVERSION_CODE_SET: int
-                            public static INVALID_CODE_SET_NUMBER: int
-                            public static INVALID_CODE_SET_STRING: int
-                            public static INVALID_CTB_CONVERTER_NAME: int
-                            public static INVALID_BTC_CONVERTER_NAME: int
-                            public static COULD_NOT_DUPLICATE_CDR_INPUT_STREAM: int
-                            public static BOOTSTRAP_APPLICATION_EXCEPTION: int
-                            public static DUPLICATE_INDIRECTION_OFFSET: int
-                            public static BAD_MESSAGE_TYPE_FOR_CANCEL: int
-                            public static DUPLICATE_EXCEPTION_DETAIL_MESSAGE: int
-                            public static BAD_EXCEPTION_DETAIL_MESSAGE_SERVICE_CONTEXT_TYPE: int
-                            public static UNEXPECTED_DIRECT_BYTE_BUFFER_WITH_NON_CHANNEL_SOCKET: int
-                            public static UNEXPECTED_NON_DIRECT_BYTE_BUFFER_WITH_CHANNEL_SOCKET: int
-                            public static INVALID_CONTACT_INFO_LIST_ITERATOR_FAILURE_EXCEPTION: int
-                            public static REMARSHAL_WITH_NOWHERE_TO_GO: int
-                            public static EXCEPTION_WHEN_SENDING_CLOSE_CONNECTION: int
-                            public static INVOCATION_ERROR_IN_REFLECTIVE_TIE: int
-                            public static BAD_HELPER_WRITE_METHOD: int
-                            public static BAD_HELPER_READ_METHOD: int
-                            public static BAD_HELPER_ID_METHOD: int
-                            public static WRITE_UNDECLARED_EXCEPTION: int
-                            public static READ_UNDECLARED_EXCEPTION: int
-                            public static UNABLE_TO_SET_SOCKET_FACTORY_ORB: int
-                            public static UNEXPECTED_EXCEPTION: int
-                            public static NO_INVOCATION_HANDLER: int
-                            public static INVALID_BUFF_MGR_STRATEGY: int
-                            public static JAVA_STREAM_INIT_FAILED: int
-                            public static DUPLICATE_ORB_VERSION_SERVICE_CONTEXT: int
-                            public static DUPLICATE_SENDING_CONTEXT_SERVICE_CONTEXT: int
-                            public static WORK_QUEUE_THREAD_INTERRUPTED: int
-                            public static WORKER_THREAD_CREATED: int
-                            public static WORKER_THREAD_THROWABLE_FROM_REQUEST_WORK: int
-                            public static WORKER_THREAD_NOT_NEEDED: int
-                            public static WORKER_THREAD_DO_WORK_THROWABLE: int
-                            public static WORKER_THREAD_CAUGHT_UNEXPECTED_THROWABLE: int
-                            public static WORKER_THREAD_CREATION_FAILURE: int
-                            public static WORKER_THREAD_SET_NAME_FAILURE: int
-                            public static WORK_QUEUE_REQUEST_WORK_NO_WORK_FOUND: int
-                            public static THREAD_POOL_CLOSE_ERROR: int
-                            public static THREAD_GROUP_IS_DESTROYED: int
-                            public static THREAD_GROUP_HAS_ACTIVE_THREADS_IN_CLOSE: int
-                            public static THREAD_GROUP_HAS_SUB_GROUPS_IN_CLOSE: int
-                            public static THREAD_GROUP_DESTROY_FAILED: int
-                            public static INTERRUPTED_JOIN_CALL_WHILE_CLOSING_THREAD_POOL: int
-                            public static CHUNK_OVERFLOW: int
-                            public static UNEXPECTED_EOF: int
-                            public static READ_OBJECT_EXCEPTION: int
-                            public static CHARACTER_OUTOFRANGE: int
-                            public static DSI_RESULT_EXCEPTION: int
-                            public static IIOPINPUTSTREAM_GROW: int
-                            public static END_OF_STREAM: int
-                            public static INVALID_OBJECT_KEY: int
-                            public static MALFORMED_URL: int
-                            public static VALUEHANDLER_READ_ERROR: int
-                            public static VALUEHANDLER_READ_EXCEPTION: int
-                            public static BAD_KIND: int
-                            public static CNFE_READ_CLASS: int
-                            public static BAD_REP_ID_INDIRECTION: int
-                            public static BAD_CODEBASE_INDIRECTION: int
-                            public static UNKNOWN_CODESET: int
-                            public static WCHAR_DATA_IN_GIOP_1_0: int
-                            public static NEGATIVE_STRING_LENGTH: int
-                            public static EXPECTED_TYPE_NULL_AND_NO_REP_ID: int
-                            public static READ_VALUE_AND_NO_REP_ID: int
-                            public static UNEXPECTED_ENCLOSING_VALUETYPE: int
-                            public static POSITIVE_END_TAG: int
-                            public static NULL_OUT_CALL: int
-                            public static WRITE_LOCAL_OBJECT: int
-                            public static BAD_INSERTOBJ_PARAM: int
-                            public static CUSTOM_WRAPPER_WITH_CODEBASE: int
-                            public static CUSTOM_WRAPPER_INDIRECTION: int
-                            public static CUSTOM_WRAPPER_NOT_SINGLE_REPID: int
-                            public static BAD_VALUE_TAG: int
-                            public static BAD_TYPECODE_FOR_CUSTOM_VALUE: int
-                            public static ERROR_INVOKING_HELPER_WRITE: int
-                            public static BAD_DIGIT_IN_FIXED: int
-                            public static REF_TYPE_INDIR_TYPE: int
-                            public static BAD_RESERVED_LENGTH: int
-                            public static NULL_NOT_ALLOWED: int
-                            public static UNION_DISCRIMINATOR_ERROR: int
-                            public static CANNOT_MARSHAL_NATIVE: int
-                            public static CANNOT_MARSHAL_BAD_TCKIND: int
-                            public static INVALID_INDIRECTION: int
-                            public static INDIRECTION_NOT_FOUND: int
-                            public static RECURSIVE_TYPECODE_ERROR: int
-                            public static INVALID_SIMPLE_TYPECODE: int
-                            public static INVALID_COMPLEX_TYPECODE: int
-                            public static INVALID_TYPECODE_KIND_MARSHAL: int
-                            public static UNEXPECTED_UNION_DEFAULT: int
-                            public static ILLEGAL_UNION_DISCRIMINATOR_TYPE: int
-                            public static COULD_NOT_SKIP_BYTES: int
-                            public static BAD_CHUNK_LENGTH: int
-                            public static UNABLE_TO_LOCATE_REP_ID_ARRAY: int
-                            public static BAD_FIXED: int
-                            public static READ_OBJECT_LOAD_CLASS_FAILURE: int
-                            public static COULD_NOT_INSTANTIATE_HELPER: int
-                            public static BAD_TOA_OAID: int
-                            public static COULD_NOT_INVOKE_HELPER_READ_METHOD: int
-                            public static COULD_NOT_FIND_CLASS: int
-                            public static BAD_ARGUMENTS_NVLIST: int
-                            public static STUB_CREATE_ERROR: int
-                            public static JAVA_SERIALIZATION_EXCEPTION: int
-                            public static GENERIC_NO_IMPL: int
-                            public static CONTEXT_NOT_IMPLEMENTED: int
-                            public static GETINTERFACE_NOT_IMPLEMENTED: int
-                            public static SEND_DEFERRED_NOTIMPLEMENTED: int
-                            public static LONG_DOUBLE_NOT_IMPLEMENTED: int
-                            public static NO_SERVER_SC_IN_DISPATCH: int
-                            public static ORB_CONNECT_ERROR: int
-                            public static ADAPTER_INACTIVE_IN_ACTIVATION: int
-                            public static LOCATE_UNKNOWN_OBJECT: int
-                            public static BAD_SERVER_ID: int
-                            public static BAD_SKELETON: int
-                            public static SERVANT_NOT_FOUND: int
-                            public static NO_OBJECT_ADAPTER_FACTORY: int
-                            public static BAD_ADAPTER_ID: int
-                            public static DYN_ANY_DESTROYED: int
-                            public static REQUEST_CANCELED: int
-                            public static UNKNOWN_CORBA_EXC: int
-                            public static RUNTIMEEXCEPTION: int
-                            public static UNKNOWN_SERVER_ERROR: int
-                            public static UNKNOWN_DSI_SYSEX: int
-                            public static UNKNOWN_SYSEX: int
-                            public static WRONG_INTERFACE_DEF: int
-                            public static NO_INTERFACE_DEF_STUB: int
-                            public static UNKNOWN_EXCEPTION_IN_DISPATCH: int
+                            public static readonly ADAPTER_ID_NOT_AVAILABLE: int
+                            public static readonly SERVER_ID_NOT_AVAILABLE: int
+                            public static readonly ORB_ID_NOT_AVAILABLE: int
+                            public static readonly OBJECT_ADAPTER_ID_NOT_AVAILABLE: int
+                            public static readonly CONNECTING_SERVANT: int
+                            public static readonly EXTRACT_WRONG_TYPE: int
+                            public static readonly EXTRACT_WRONG_TYPE_LIST: int
+                            public static readonly BAD_STRING_BOUNDS: int
+                            public static readonly INSERT_OBJECT_INCOMPATIBLE: int
+                            public static readonly INSERT_OBJECT_FAILED: int
+                            public static readonly EXTRACT_OBJECT_INCOMPATIBLE: int
+                            public static readonly FIXED_NOT_MATCH: int
+                            public static readonly FIXED_BAD_TYPECODE: int
+                            public static readonly SET_EXCEPTION_CALLED_NULL_ARGS: int
+                            public static readonly SET_EXCEPTION_CALLED_BAD_TYPE: int
+                            public static readonly CONTEXT_CALLED_OUT_OF_ORDER: int
+                            public static readonly BAD_ORB_CONFIGURATOR: int
+                            public static readonly ORB_CONFIGURATOR_ERROR: int
+                            public static readonly ORB_DESTROYED: int
+                            public static readonly NEGATIVE_BOUNDS: int
+                            public static readonly EXTRACT_NOT_INITIALIZED: int
+                            public static readonly EXTRACT_OBJECT_FAILED: int
+                            public static readonly METHOD_NOT_FOUND_IN_TIE: int
+                            public static readonly CLASS_NOT_FOUND1: int
+                            public static readonly CLASS_NOT_FOUND2: int
+                            public static readonly CLASS_NOT_FOUND3: int
+                            public static readonly GET_DELEGATE_SERVANT_NOT_ACTIVE: int
+                            public static readonly GET_DELEGATE_WRONG_POLICY: int
+                            public static readonly SET_DELEGATE_REQUIRES_STUB: int
+                            public static readonly GET_DELEGATE_REQUIRES_STUB: int
+                            public static readonly GET_TYPE_IDS_REQUIRES_STUB: int
+                            public static readonly GET_ORB_REQUIRES_STUB: int
+                            public static readonly CONNECT_REQUIRES_STUB: int
+                            public static readonly IS_LOCAL_REQUIRES_STUB: int
+                            public static readonly REQUEST_REQUIRES_STUB: int
+                            public static readonly BAD_ACTIVATE_TIE_CALL: int
+                            public static readonly IO_EXCEPTION_ON_CLOSE: int
+                            public static readonly NULL_PARAM: int
+                            public static readonly UNABLE_FIND_VALUE_FACTORY: int
+                            public static readonly ABSTRACT_FROM_NON_ABSTRACT: int
+                            public static readonly INVALID_TAGGED_PROFILE: int
+                            public static readonly OBJREF_FROM_FOREIGN_ORB: int
+                            public static readonly LOCAL_OBJECT_NOT_ALLOWED: int
+                            public static readonly NULL_OBJECT_REFERENCE: int
+                            public static readonly COULD_NOT_LOAD_CLASS: int
+                            public static readonly BAD_URL: int
+                            public static readonly FIELD_NOT_FOUND: int
+                            public static readonly ERROR_SETTING_FIELD: int
+                            public static readonly BOUNDS_ERROR_IN_DII_REQUEST: int
+                            public static readonly PERSISTENT_SERVER_INIT_ERROR: int
+                            public static readonly COULD_NOT_CREATE_ARRAY: int
+                            public static readonly COULD_NOT_SET_ARRAY: int
+                            public static readonly ILLEGAL_BOOTSTRAP_OPERATION: int
+                            public static readonly BOOTSTRAP_RUNTIME_EXCEPTION: int
+                            public static readonly BOOTSTRAP_EXCEPTION: int
+                            public static readonly STRING_EXPECTED: int
+                            public static readonly INVALID_TYPECODE_KIND: int
+                            public static readonly SOCKET_FACTORY_AND_CONTACT_INFO_LIST_AT_SAME_TIME: int
+                            public static readonly ACCEPTORS_AND_LEGACY_SOCKET_FACTORY_AT_SAME_TIME: int
+                            public static readonly BAD_ORB_FOR_SERVANT: int
+                            public static readonly INVALID_REQUEST_PARTITIONING_POLICY_VALUE: int
+                            public static readonly INVALID_REQUEST_PARTITIONING_COMPONENT_VALUE: int
+                            public static readonly INVALID_REQUEST_PARTITIONING_ID: int
+                            public static readonly ERROR_IN_SETTING_DYNAMIC_STUB_FACTORY_FACTORY: int
+                            public static readonly DSIMETHOD_NOTCALLED: int
+                            public static readonly ARGUMENTS_CALLED_MULTIPLE: int
+                            public static readonly ARGUMENTS_CALLED_AFTER_EXCEPTION: int
+                            public static readonly ARGUMENTS_CALLED_NULL_ARGS: int
+                            public static readonly ARGUMENTS_NOT_CALLED: int
+                            public static readonly SET_RESULT_CALLED_MULTIPLE: int
+                            public static readonly SET_RESULT_AFTER_EXCEPTION: int
+                            public static readonly SET_RESULT_CALLED_NULL_ARGS: int
+                            public static readonly BAD_REMOTE_TYPECODE: int
+                            public static readonly UNRESOLVED_RECURSIVE_TYPECODE: int
+                            public static readonly CONNECT_FAILURE: int
+                            public static readonly CONNECTION_CLOSE_REBIND: int
+                            public static readonly WRITE_ERROR_SEND: int
+                            public static readonly GET_PROPERTIES_ERROR: int
+                            public static readonly BOOTSTRAP_SERVER_NOT_AVAIL: int
+                            public static readonly INVOKE_ERROR: int
+                            public static readonly DEFAULT_CREATE_SERVER_SOCKET_GIVEN_NON_IIOP_CLEAR_TEXT: int
+                            public static readonly CONNECTION_ABORT: int
+                            public static readonly CONNECTION_REBIND: int
+                            public static readonly RECV_MSG_ERROR: int
+                            public static readonly IOEXCEPTION_WHEN_READING_CONNECTION: int
+                            public static readonly SELECTION_KEY_INVALID: int
+                            public static readonly EXCEPTION_IN_ACCEPT: int
+                            public static readonly SECURITY_EXCEPTION_IN_ACCEPT: int
+                            public static readonly TRANSPORT_READ_TIMEOUT_EXCEEDED: int
+                            public static readonly CREATE_LISTENER_FAILED: int
+                            public static readonly BUFFER_READ_MANAGER_TIMEOUT: int
+                            public static readonly BAD_STRINGIFIED_IOR_LEN: int
+                            public static readonly BAD_STRINGIFIED_IOR: int
+                            public static readonly BAD_MODIFIER: int
+                            public static readonly CODESET_INCOMPATIBLE: int
+                            public static readonly BAD_HEX_DIGIT: int
+                            public static readonly BAD_UNICODE_PAIR: int
+                            public static readonly BTC_RESULT_MORE_THAN_ONE_CHAR: int
+                            public static readonly BAD_CODESETS_FROM_CLIENT: int
+                            public static readonly INVALID_SINGLE_CHAR_CTB: int
+                            public static readonly BAD_GIOP_1_1_CTB: int
+                            public static readonly BAD_SEQUENCE_BOUNDS: int
+                            public static readonly ILLEGAL_SOCKET_FACTORY_TYPE: int
+                            public static readonly BAD_CUSTOM_SOCKET_FACTORY: int
+                            public static readonly FRAGMENT_SIZE_MINIMUM: int
+                            public static readonly FRAGMENT_SIZE_DIV: int
+                            public static readonly ORB_INITIALIZER_FAILURE: int
+                            public static readonly ORB_INITIALIZER_TYPE: int
+                            public static readonly ORB_INITIALREFERENCE_SYNTAX: int
+                            public static readonly ACCEPTOR_INSTANTIATION_FAILURE: int
+                            public static readonly ACCEPTOR_INSTANTIATION_TYPE_FAILURE: int
+                            public static readonly ILLEGAL_CONTACT_INFO_LIST_FACTORY_TYPE: int
+                            public static readonly BAD_CONTACT_INFO_LIST_FACTORY: int
+                            public static readonly ILLEGAL_IOR_TO_SOCKET_INFO_TYPE: int
+                            public static readonly BAD_CUSTOM_IOR_TO_SOCKET_INFO: int
+                            public static readonly ILLEGAL_IIOP_PRIMARY_TO_CONTACT_INFO_TYPE: int
+                            public static readonly BAD_CUSTOM_IIOP_PRIMARY_TO_CONTACT_INFO: int
+                            public static readonly BAD_CORBALOC_STRING: int
+                            public static readonly NO_PROFILE_PRESENT: int
+                            public static readonly CANNOT_CREATE_ORBID_DB: int
+                            public static readonly CANNOT_READ_ORBID_DB: int
+                            public static readonly CANNOT_WRITE_ORBID_DB: int
+                            public static readonly GET_SERVER_PORT_CALLED_BEFORE_ENDPOINTS_INITIALIZED: int
+                            public static readonly PERSISTENT_SERVERPORT_NOT_SET: int
+                            public static readonly PERSISTENT_SERVERID_NOT_SET: int
+                            public static readonly NON_EXISTENT_ORBID: int
+                            public static readonly NO_SERVER_SUBCONTRACT: int
+                            public static readonly SERVER_SC_TEMP_SIZE: int
+                            public static readonly NO_CLIENT_SC_CLASS: int
+                            public static readonly SERVER_SC_NO_IIOP_PROFILE: int
+                            public static readonly GET_SYSTEM_EX_RETURNED_NULL: int
+                            public static readonly PEEKSTRING_FAILED: int
+                            public static readonly GET_LOCAL_HOST_FAILED: int
+                            public static readonly BAD_LOCATE_REQUEST_STATUS: int
+                            public static readonly STRINGIFY_WRITE_ERROR: int
+                            public static readonly BAD_GIOP_REQUEST_TYPE: int
+                            public static readonly ERROR_UNMARSHALING_USEREXC: int
+                            public static readonly RequestDispatcherRegistry_ERROR: int
+                            public static readonly LOCATIONFORWARD_ERROR: int
+                            public static readonly WRONG_CLIENTSC: int
+                            public static readonly BAD_SERVANT_READ_OBJECT: int
+                            public static readonly MULT_IIOP_PROF_NOT_SUPPORTED: int
+                            public static readonly GIOP_MAGIC_ERROR: int
+                            public static readonly GIOP_VERSION_ERROR: int
+                            public static readonly ILLEGAL_REPLY_STATUS: int
+                            public static readonly ILLEGAL_GIOP_MSG_TYPE: int
+                            public static readonly FRAGMENTATION_DISALLOWED: int
+                            public static readonly BAD_REPLYSTATUS: int
+                            public static readonly CTB_CONVERTER_FAILURE: int
+                            public static readonly BTC_CONVERTER_FAILURE: int
+                            public static readonly WCHAR_ARRAY_UNSUPPORTED_ENCODING: int
+                            public static readonly ILLEGAL_TARGET_ADDRESS_DISPOSITION: int
+                            public static readonly NULL_REPLY_IN_GET_ADDR_DISPOSITION: int
+                            public static readonly ORB_TARGET_ADDR_PREFERENCE_IN_EXTRACT_OBJECTKEY_INVALID: int
+                            public static readonly INVALID_ISSTREAMED_TCKIND: int
+                            public static readonly INVALID_JDK1_3_1_PATCH_LEVEL: int
+                            public static readonly SVCCTX_UNMARSHAL_ERROR: int
+                            public static readonly NULL_IOR: int
+                            public static readonly UNSUPPORTED_GIOP_VERSION: int
+                            public static readonly APPLICATION_EXCEPTION_IN_SPECIAL_METHOD: int
+                            public static readonly STATEMENT_NOT_REACHABLE1: int
+                            public static readonly STATEMENT_NOT_REACHABLE2: int
+                            public static readonly STATEMENT_NOT_REACHABLE3: int
+                            public static readonly STATEMENT_NOT_REACHABLE4: int
+                            public static readonly STATEMENT_NOT_REACHABLE5: int
+                            public static readonly STATEMENT_NOT_REACHABLE6: int
+                            public static readonly UNEXPECTED_DII_EXCEPTION: int
+                            public static readonly METHOD_SHOULD_NOT_BE_CALLED: int
+                            public static readonly CANCEL_NOT_SUPPORTED: int
+                            public static readonly EMPTY_STACK_RUN_SERVANT_POST_INVOKE: int
+                            public static readonly PROBLEM_WITH_EXCEPTION_TYPECODE: int
+                            public static readonly ILLEGAL_SUBCONTRACT_ID: int
+                            public static readonly BAD_SYSTEM_EXCEPTION_IN_LOCATE_REPLY: int
+                            public static readonly BAD_SYSTEM_EXCEPTION_IN_REPLY: int
+                            public static readonly BAD_COMPLETION_STATUS_IN_LOCATE_REPLY: int
+                            public static readonly BAD_COMPLETION_STATUS_IN_REPLY: int
+                            public static readonly BADKIND_CANNOT_OCCUR: int
+                            public static readonly ERROR_RESOLVING_ALIAS: int
+                            public static readonly TK_LONG_DOUBLE_NOT_SUPPORTED: int
+                            public static readonly TYPECODE_NOT_SUPPORTED: int
+                            public static readonly BOUNDS_CANNOT_OCCUR: int
+                            public static readonly NUM_INVOCATIONS_ALREADY_ZERO: int
+                            public static readonly ERROR_INIT_BADSERVERIDHANDLER: int
+                            public static readonly NO_TOA: int
+                            public static readonly NO_POA: int
+                            public static readonly INVOCATION_INFO_STACK_EMPTY: int
+                            public static readonly BAD_CODE_SET_STRING: int
+                            public static readonly UNKNOWN_NATIVE_CODESET: int
+                            public static readonly UNKNOWN_CONVERSION_CODE_SET: int
+                            public static readonly INVALID_CODE_SET_NUMBER: int
+                            public static readonly INVALID_CODE_SET_STRING: int
+                            public static readonly INVALID_CTB_CONVERTER_NAME: int
+                            public static readonly INVALID_BTC_CONVERTER_NAME: int
+                            public static readonly COULD_NOT_DUPLICATE_CDR_INPUT_STREAM: int
+                            public static readonly BOOTSTRAP_APPLICATION_EXCEPTION: int
+                            public static readonly DUPLICATE_INDIRECTION_OFFSET: int
+                            public static readonly BAD_MESSAGE_TYPE_FOR_CANCEL: int
+                            public static readonly DUPLICATE_EXCEPTION_DETAIL_MESSAGE: int
+                            public static readonly BAD_EXCEPTION_DETAIL_MESSAGE_SERVICE_CONTEXT_TYPE: int
+                            public static readonly UNEXPECTED_DIRECT_BYTE_BUFFER_WITH_NON_CHANNEL_SOCKET: int
+                            public static readonly UNEXPECTED_NON_DIRECT_BYTE_BUFFER_WITH_CHANNEL_SOCKET: int
+                            public static readonly INVALID_CONTACT_INFO_LIST_ITERATOR_FAILURE_EXCEPTION: int
+                            public static readonly REMARSHAL_WITH_NOWHERE_TO_GO: int
+                            public static readonly EXCEPTION_WHEN_SENDING_CLOSE_CONNECTION: int
+                            public static readonly INVOCATION_ERROR_IN_REFLECTIVE_TIE: int
+                            public static readonly BAD_HELPER_WRITE_METHOD: int
+                            public static readonly BAD_HELPER_READ_METHOD: int
+                            public static readonly BAD_HELPER_ID_METHOD: int
+                            public static readonly WRITE_UNDECLARED_EXCEPTION: int
+                            public static readonly READ_UNDECLARED_EXCEPTION: int
+                            public static readonly UNABLE_TO_SET_SOCKET_FACTORY_ORB: int
+                            public static readonly UNEXPECTED_EXCEPTION: int
+                            public static readonly NO_INVOCATION_HANDLER: int
+                            public static readonly INVALID_BUFF_MGR_STRATEGY: int
+                            public static readonly JAVA_STREAM_INIT_FAILED: int
+                            public static readonly DUPLICATE_ORB_VERSION_SERVICE_CONTEXT: int
+                            public static readonly DUPLICATE_SENDING_CONTEXT_SERVICE_CONTEXT: int
+                            public static readonly WORK_QUEUE_THREAD_INTERRUPTED: int
+                            public static readonly WORKER_THREAD_CREATED: int
+                            public static readonly WORKER_THREAD_THROWABLE_FROM_REQUEST_WORK: int
+                            public static readonly WORKER_THREAD_NOT_NEEDED: int
+                            public static readonly WORKER_THREAD_DO_WORK_THROWABLE: int
+                            public static readonly WORKER_THREAD_CAUGHT_UNEXPECTED_THROWABLE: int
+                            public static readonly WORKER_THREAD_CREATION_FAILURE: int
+                            public static readonly WORKER_THREAD_SET_NAME_FAILURE: int
+                            public static readonly WORK_QUEUE_REQUEST_WORK_NO_WORK_FOUND: int
+                            public static readonly THREAD_POOL_CLOSE_ERROR: int
+                            public static readonly THREAD_GROUP_IS_DESTROYED: int
+                            public static readonly THREAD_GROUP_HAS_ACTIVE_THREADS_IN_CLOSE: int
+                            public static readonly THREAD_GROUP_HAS_SUB_GROUPS_IN_CLOSE: int
+                            public static readonly THREAD_GROUP_DESTROY_FAILED: int
+                            public static readonly INTERRUPTED_JOIN_CALL_WHILE_CLOSING_THREAD_POOL: int
+                            public static readonly CHUNK_OVERFLOW: int
+                            public static readonly UNEXPECTED_EOF: int
+                            public static readonly READ_OBJECT_EXCEPTION: int
+                            public static readonly CHARACTER_OUTOFRANGE: int
+                            public static readonly DSI_RESULT_EXCEPTION: int
+                            public static readonly IIOPINPUTSTREAM_GROW: int
+                            public static readonly END_OF_STREAM: int
+                            public static readonly INVALID_OBJECT_KEY: int
+                            public static readonly MALFORMED_URL: int
+                            public static readonly VALUEHANDLER_READ_ERROR: int
+                            public static readonly VALUEHANDLER_READ_EXCEPTION: int
+                            public static readonly BAD_KIND: int
+                            public static readonly CNFE_READ_CLASS: int
+                            public static readonly BAD_REP_ID_INDIRECTION: int
+                            public static readonly BAD_CODEBASE_INDIRECTION: int
+                            public static readonly UNKNOWN_CODESET: int
+                            public static readonly WCHAR_DATA_IN_GIOP_1_0: int
+                            public static readonly NEGATIVE_STRING_LENGTH: int
+                            public static readonly EXPECTED_TYPE_NULL_AND_NO_REP_ID: int
+                            public static readonly READ_VALUE_AND_NO_REP_ID: int
+                            public static readonly UNEXPECTED_ENCLOSING_VALUETYPE: int
+                            public static readonly POSITIVE_END_TAG: int
+                            public static readonly NULL_OUT_CALL: int
+                            public static readonly WRITE_LOCAL_OBJECT: int
+                            public static readonly BAD_INSERTOBJ_PARAM: int
+                            public static readonly CUSTOM_WRAPPER_WITH_CODEBASE: int
+                            public static readonly CUSTOM_WRAPPER_INDIRECTION: int
+                            public static readonly CUSTOM_WRAPPER_NOT_SINGLE_REPID: int
+                            public static readonly BAD_VALUE_TAG: int
+                            public static readonly BAD_TYPECODE_FOR_CUSTOM_VALUE: int
+                            public static readonly ERROR_INVOKING_HELPER_WRITE: int
+                            public static readonly BAD_DIGIT_IN_FIXED: int
+                            public static readonly REF_TYPE_INDIR_TYPE: int
+                            public static readonly BAD_RESERVED_LENGTH: int
+                            public static readonly NULL_NOT_ALLOWED: int
+                            public static readonly UNION_DISCRIMINATOR_ERROR: int
+                            public static readonly CANNOT_MARSHAL_NATIVE: int
+                            public static readonly CANNOT_MARSHAL_BAD_TCKIND: int
+                            public static readonly INVALID_INDIRECTION: int
+                            public static readonly INDIRECTION_NOT_FOUND: int
+                            public static readonly RECURSIVE_TYPECODE_ERROR: int
+                            public static readonly INVALID_SIMPLE_TYPECODE: int
+                            public static readonly INVALID_COMPLEX_TYPECODE: int
+                            public static readonly INVALID_TYPECODE_KIND_MARSHAL: int
+                            public static readonly UNEXPECTED_UNION_DEFAULT: int
+                            public static readonly ILLEGAL_UNION_DISCRIMINATOR_TYPE: int
+                            public static readonly COULD_NOT_SKIP_BYTES: int
+                            public static readonly BAD_CHUNK_LENGTH: int
+                            public static readonly UNABLE_TO_LOCATE_REP_ID_ARRAY: int
+                            public static readonly BAD_FIXED: int
+                            public static readonly READ_OBJECT_LOAD_CLASS_FAILURE: int
+                            public static readonly COULD_NOT_INSTANTIATE_HELPER: int
+                            public static readonly BAD_TOA_OAID: int
+                            public static readonly COULD_NOT_INVOKE_HELPER_READ_METHOD: int
+                            public static readonly COULD_NOT_FIND_CLASS: int
+                            public static readonly BAD_ARGUMENTS_NVLIST: int
+                            public static readonly STUB_CREATE_ERROR: int
+                            public static readonly JAVA_SERIALIZATION_EXCEPTION: int
+                            public static readonly GENERIC_NO_IMPL: int
+                            public static readonly CONTEXT_NOT_IMPLEMENTED: int
+                            public static readonly GETINTERFACE_NOT_IMPLEMENTED: int
+                            public static readonly SEND_DEFERRED_NOTIMPLEMENTED: int
+                            public static readonly LONG_DOUBLE_NOT_IMPLEMENTED: int
+                            public static readonly NO_SERVER_SC_IN_DISPATCH: int
+                            public static readonly ORB_CONNECT_ERROR: int
+                            public static readonly ADAPTER_INACTIVE_IN_ACTIVATION: int
+                            public static readonly LOCATE_UNKNOWN_OBJECT: int
+                            public static readonly BAD_SERVER_ID: int
+                            public static readonly BAD_SKELETON: int
+                            public static readonly SERVANT_NOT_FOUND: int
+                            public static readonly NO_OBJECT_ADAPTER_FACTORY: int
+                            public static readonly BAD_ADAPTER_ID: int
+                            public static readonly DYN_ANY_DESTROYED: int
+                            public static readonly REQUEST_CANCELED: int
+                            public static readonly UNKNOWN_CORBA_EXC: int
+                            public static readonly RUNTIMEEXCEPTION: int
+                            public static readonly UNKNOWN_SERVER_ERROR: int
+                            public static readonly UNKNOWN_DSI_SYSEX: int
+                            public static readonly UNKNOWN_SYSEX: int
+                            public static readonly WRONG_INTERFACE_DEF: int
+                            public static readonly NO_INTERFACE_DEF_STUB: int
+                            public static readonly UNKNOWN_EXCEPTION_IN_DISPATCH: int
                             public constructor(arg0: java.util.logging.Logger)
                             public static get(arg0: com.sun.corba.se.spi.orb.ORB, arg1: java.lang.String | string): com.sun.corba.se.impl.logging.ORBUtilSystemException
                             public static get(arg0: java.lang.String | string): com.sun.corba.se.impl.logging.ORBUtilSystemException

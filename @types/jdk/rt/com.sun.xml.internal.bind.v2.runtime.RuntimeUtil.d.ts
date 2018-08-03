@@ -6,8 +6,8 @@ declare namespace com {
                     namespace v2 {
                         namespace runtime {
                             class RuntimeUtil {
-                                public static boxToPrimitive: java.util.Map<java.lang.Class, java.lang.Class>
-                                public static primitiveToBox: java.util.Map<java.lang.Class, java.lang.Class>
+                                public static readonly boxToPrimitive: java.util.Map<java.lang.Class, java.lang.Class>
+                                public static readonly primitiveToBox: java.util.Map<java.lang.Class, java.lang.Class>
                                 public constructor()
                                 public static class: java.lang.Class<any>
                             }

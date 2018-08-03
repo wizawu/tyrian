@@ -9,8 +9,8 @@ declare namespace jdk {
                     public static byteLength(arg0: java.lang.Object): int
                     public static length(arg0: java.lang.Object): int
                     public getLength(): java.lang.Object
-                    protected factory(): jdk.nashorn.internal.objects.ArrayBufferView$Factory
-                    protected getPrototype(arg0: jdk.nashorn.internal.objects.Global): jdk.nashorn.internal.runtime.ScriptObject
+                    protected abstract factory(): jdk.nashorn.internal.objects.ArrayBufferView$Factory
+                    protected abstract getPrototype(arg0: jdk.nashorn.internal.objects.Global): jdk.nashorn.internal.runtime.ScriptObject
                     public getClassName(): string
                     protected isFloatArray(): boolean
                     protected static constructorImpl(arg0: boolean, arg1: java.lang.Object[], arg2: jdk.nashorn.internal.objects.ArrayBufferView$Factory): jdk.nashorn.internal.objects.ArrayBufferView

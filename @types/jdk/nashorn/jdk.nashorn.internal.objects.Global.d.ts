@@ -19,9 +19,9 @@ declare namespace jdk {
                     public loadWithNewGlobal: java.lang.Object
                     public exit: java.lang.Object
                     public quit: java.lang.Object
-                    public static NaN: double
-                    public static Infinity: double
-                    public static undefined: java.lang.Object
+                    public static readonly NaN: double
+                    public static readonly Infinity: double
+                    public static readonly undefined: java.lang.Object
                     public eval: java.lang.Object
                     public object: java.lang.Object
                     public function: java.lang.Object
@@ -41,9 +41,9 @@ declare namespace jdk {
                     public javafx: java.lang.Object
                     public javax: java.lang.Object
                     public org: java.lang.Object
-                    public static __FILE__: java.lang.Object
-                    public static __DIR__: java.lang.Object
-                    public static __LINE__: java.lang.Object
+                    public static readonly __FILE__: java.lang.Object
+                    public static readonly __DIR__: java.lang.Object
+                    public static readonly __LINE__: java.lang.Object
                     public static getDate(arg0: java.lang.Object): java.lang.Object
                     public static setDate(arg0: java.lang.Object, arg1: java.lang.Object): void
                     public static getRegExp(arg0: java.lang.Object): java.lang.Object

@@ -1,10 +1,10 @@
 declare namespace java {
     namespace text {
         class Bidi {
-            public static DIRECTION_LEFT_TO_RIGHT: int
-            public static DIRECTION_RIGHT_TO_LEFT: int
-            public static DIRECTION_DEFAULT_LEFT_TO_RIGHT: int
-            public static DIRECTION_DEFAULT_RIGHT_TO_LEFT: int
+            public static readonly DIRECTION_LEFT_TO_RIGHT: int
+            public static readonly DIRECTION_RIGHT_TO_LEFT: int
+            public static readonly DIRECTION_DEFAULT_LEFT_TO_RIGHT: int
+            public static readonly DIRECTION_DEFAULT_RIGHT_TO_LEFT: int
             public constructor(arg0: java.lang.String | string, arg1: int)
             public constructor(arg0: java.text.AttributedCharacterIterator)
             public constructor(arg0: char[], arg1: int, arg2: byte[], arg3: int, arg4: int, arg5: int)

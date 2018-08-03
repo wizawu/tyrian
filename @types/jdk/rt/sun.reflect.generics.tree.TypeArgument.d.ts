@@ -4,6 +4,8 @@ declare namespace sun {
             namespace tree {
                 interface TypeArgument extends sun.reflect.generics.tree.TypeTree {
                 }
+                interface TypeArgument$$Lambda extends sun.reflect.generics.tree.TypeTree {
+                }
             }
         }
     }

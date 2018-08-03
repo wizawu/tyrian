@@ -2,8 +2,8 @@ declare namespace sun {
     namespace java2d {
         namespace loops {
             class DrawPath extends sun.java2d.loops.GraphicsPrimitive {
-                public static methodSignature: string
-                public static primTypeID: int
+                public static readonly methodSignature: string
+                public static readonly primTypeID: int
                 public static locate(arg0: sun.java2d.loops.SurfaceType, arg1: sun.java2d.loops.CompositeType, arg2: sun.java2d.loops.SurfaceType): sun.java2d.loops.DrawPath
                 protected constructor(arg0: sun.java2d.loops.SurfaceType, arg1: sun.java2d.loops.CompositeType, arg2: sun.java2d.loops.SurfaceType)
                 public constructor(arg0: long, arg1: sun.java2d.loops.SurfaceType, arg2: sun.java2d.loops.CompositeType, arg3: sun.java2d.loops.SurfaceType)

@@ -6,7 +6,7 @@ declare namespace com {
                     namespace internal {
                         namespace serializer {
                             class ToHTMLStream$Trie {
-                                public static ALPHA_SIZE: int
+                                public static readonly ALPHA_SIZE: int
                                 public constructor()
                                 public constructor(arg0: boolean)
                                 public put(arg0: java.lang.String | string, arg1: java.lang.Object): java.lang.Object

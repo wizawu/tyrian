@@ -3,11 +3,11 @@ declare namespace javax {
         abstract class ReferralException extends javax.naming.NamingException {
             protected constructor(arg0: java.lang.String | string)
             protected constructor()
-            public getReferralInfo(): java.lang.Object
-            public getReferralContext(): javax.naming.Context
-            public getReferralContext(arg0: java.util.Hashtable<any, any>): javax.naming.Context
-            public skipReferral(): boolean
-            public retryReferral(): void
+            public abstract getReferralInfo(): java.lang.Object
+            public abstract getReferralContext(): javax.naming.Context
+            public abstract getReferralContext(arg0: java.util.Hashtable<any, any>): javax.naming.Context
+            public abstract skipReferral(): boolean
+            public abstract retryReferral(): void
             public static class: java.lang.Class<any>
         }
     }

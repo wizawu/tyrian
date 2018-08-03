@@ -3,13 +3,13 @@ declare namespace org {
         namespace CORBA {
             abstract class Context {
                 public constructor()
-                public context_name(): string
-                public parent(): org.omg.CORBA.Context
-                public create_child(arg0: java.lang.String | string): org.omg.CORBA.Context
-                public set_one_value(arg0: java.lang.String | string, arg1: org.omg.CORBA.Any): void
-                public set_values(arg0: org.omg.CORBA.NVList): void
-                public delete_values(arg0: java.lang.String | string): void
-                public get_values(arg0: java.lang.String | string, arg1: int, arg2: java.lang.String | string): org.omg.CORBA.NVList
+                public abstract context_name(): string
+                public abstract parent(): org.omg.CORBA.Context
+                public abstract create_child(arg0: java.lang.String | string): org.omg.CORBA.Context
+                public abstract set_one_value(arg0: java.lang.String | string, arg1: org.omg.CORBA.Any): void
+                public abstract set_values(arg0: org.omg.CORBA.NVList): void
+                public abstract delete_values(arg0: java.lang.String | string): void
+                public abstract get_values(arg0: java.lang.String | string, arg1: int, arg2: java.lang.String | string): org.omg.CORBA.NVList
                 public static class: java.lang.Class<any>
             }
         }

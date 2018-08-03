@@ -9,7 +9,7 @@ declare namespace javax {
                     protected getKeymapName(): string
                     protected createKeymap(): javax.swing.text.Keymap
                     protected propertyChange(arg0: java.beans.PropertyChangeEvent): void
-                    protected getPropertyPrefix(): string
+                    protected abstract getPropertyPrefix(): string
                     protected installDefaults(): void
                     protected uninstallDefaults(): void
                     protected installListeners(): void
@@ -42,6 +42,9 @@ declare namespace javax {
                     public create(arg0: javax.swing.text.Element): javax.swing.text.View
                     public create(arg0: javax.swing.text.Element, arg1: int, arg2: int): javax.swing.text.View
                     public static class: java.lang.Class<any>
+                }
+                interface BasicTextUI$$Lambda extends javax.swing.plaf.TextUI implements javax.swing.text.ViewFactory {
+                    (): string
                 }
             }
         }

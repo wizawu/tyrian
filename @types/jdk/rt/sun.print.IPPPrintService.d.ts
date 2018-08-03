@@ -1,10 +1,10 @@
 declare namespace sun {
     namespace print {
         class IPPPrintService implements javax.print.PrintService , sun.print.SunPrinterJobService {
-            public static debugPrint: boolean
-            public static OP_GET_ATTRIBUTES: string
-            public static OP_CUPS_GET_DEFAULT: string
-            public static OP_CUPS_GET_PRINTERS: string
+            public static readonly debugPrint: boolean
+            public static readonly OP_GET_ATTRIBUTES: string
+            public static readonly OP_CUPS_GET_DEFAULT: string
+            public static readonly OP_CUPS_GET_PRINTERS: string
             protected static debug_println(arg0: java.lang.String | string): void
             public createPrintJob(): javax.print.DocPrintJob
             public getSupportedAttributeValues(arg0: java.lang.Class<javax.print.attribute.Attribute>, arg1: javax.print.DocFlavor, arg2: javax.print.attribute.AttributeSet): java.lang.Object
@@ -27,8 +27,8 @@ declare namespace sun {
             public usesClass(arg0: java.lang.Class): boolean
             public static getIPPConnection(arg0: java.net.URL): java.net.HttpURLConnection
             public isPostscript(): boolean
-            public static writeIPPRequest(arg0: java.io.OutputStream, arg1: java.lang.String | string, arg2: sun.print.AttributeClass[]): boolean
-            public static readIPPResponse(arg0: java.io.InputStream): java.util.HashMap[]
+            public static writeIPPRequest(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: java.lang.String | string, arg2: sun.print.AttributeClass[]): boolean
+            public static readIPPResponse(arg0: java.io.InputStream | java.io.InputStream$$Lambda): java.util.HashMap[]
             public toString(): string
             public equals(arg0: java.lang.Object): boolean
             public hashCode(): int

@@ -4,7 +4,7 @@ declare namespace jdk {
             namespace objects {
                 class NativeArrayBuffer$Constructor extends jdk.nashorn.internal.runtime.ScriptFunction {
                     public G$isView(): java.lang.Object
-                    public public S$isView(arg0: java.lang.Object): void
+                    public static public S$isView(arg0: java.lang.Object): void
                     public static class: java.lang.Class<any>
                 }
             }

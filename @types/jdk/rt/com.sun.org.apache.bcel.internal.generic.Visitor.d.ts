@@ -11,7 +11,7 @@ declare namespace com {
                                 visitBranchInstruction(arg0: com.sun.org.apache.bcel.internal.generic.BranchInstruction): void
                                 visitLoadClass(arg0: com.sun.org.apache.bcel.internal.generic.LoadClass): void
                                 visitFieldInstruction(arg0: com.sun.org.apache.bcel.internal.generic.FieldInstruction): void
-                                visitIfInstruction(arg0: com.sun.org.apache.bcel.internal.generic.IfInstruction): void
+                                visitIfInstruction(arg0: com.sun.org.apache.bcel.internal.generic.IfInstruction | com.sun.org.apache.bcel.internal.generic.IfInstruction$$Lambda): void
                                 visitConversionInstruction(arg0: com.sun.org.apache.bcel.internal.generic.ConversionInstruction): void
                                 visitPopInstruction(arg0: com.sun.org.apache.bcel.internal.generic.PopInstruction): void
                                 visitStoreInstruction(arg0: com.sun.org.apache.bcel.internal.generic.StoreInstruction): void
@@ -28,7 +28,7 @@ declare namespace com {
                                 visitAllocationInstruction(arg0: com.sun.org.apache.bcel.internal.generic.AllocationInstruction): void
                                 visitReturnInstruction(arg0: com.sun.org.apache.bcel.internal.generic.ReturnInstruction): void
                                 visitFieldOrMethod(arg0: com.sun.org.apache.bcel.internal.generic.FieldOrMethod): void
-                                visitConstantPushInstruction(arg0: com.sun.org.apache.bcel.internal.generic.ConstantPushInstruction | com.sun.org.apache.bcel.internal.generic.ConstantPushInstruction$$Lambda): void
+                                visitConstantPushInstruction(arg0: com.sun.org.apache.bcel.internal.generic.ConstantPushInstruction): void
                                 visitExceptionThrower(arg0: com.sun.org.apache.bcel.internal.generic.ExceptionThrower | com.sun.org.apache.bcel.internal.generic.ExceptionThrower$$Lambda): void
                                 visitLoadInstruction(arg0: com.sun.org.apache.bcel.internal.generic.LoadInstruction): void
                                 visitVariableLengthInstruction(arg0: com.sun.org.apache.bcel.internal.generic.VariableLengthInstruction): void

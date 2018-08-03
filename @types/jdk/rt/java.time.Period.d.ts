@@ -1,7 +1,7 @@
 declare namespace java {
     namespace time {
         class Period implements java.time.chrono.ChronoPeriod , java.io.Serializable {
-            public static ZERO: java.time.Period
+            public static readonly ZERO: java.time.Period
             public static ofYears(arg0: int): java.time.Period
             public static ofMonths(arg0: int): java.time.Period
             public static ofWeeks(arg0: int): java.time.Period

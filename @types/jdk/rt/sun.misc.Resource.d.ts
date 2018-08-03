@@ -2,11 +2,11 @@ declare namespace sun {
     namespace misc {
         abstract class Resource {
             public constructor()
-            public getName(): string
-            public getURL(): java.net.URL
-            public getCodeSourceURL(): java.net.URL
-            public getInputStream(): java.io.InputStream
-            public getContentLength(): int
+            public abstract getName(): string
+            public abstract getURL(): java.net.URL
+            public abstract getCodeSourceURL(): java.net.URL
+            public abstract getInputStream(): java.io.InputStream
+            public abstract getContentLength(): int
             public setClasspathLoadIndex(arg0: int): void
             public getClasspathLoadIndex(): int
             public getBytes(): byte[]

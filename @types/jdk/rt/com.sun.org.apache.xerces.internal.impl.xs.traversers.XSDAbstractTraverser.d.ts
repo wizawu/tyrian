@@ -8,12 +8,12 @@ declare namespace com {
                             namespace xs {
                                 namespace traversers {
                                     abstract class XSDAbstractTraverser {
-                                        protected static NO_NAME: string
-                                        protected static NOT_ALL_CONTEXT: int
-                                        protected static PROCESSING_ALL_EL: int
-                                        protected static GROUP_REF_WITH_ALL: int
-                                        protected static CHILD_OF_GROUP: int
-                                        protected static PROCESSING_ALL_GP: int
+                                        protected static readonly NO_NAME: string
+                                        protected static readonly NOT_ALL_CONTEXT: int
+                                        protected static readonly PROCESSING_ALL_EL: int
+                                        protected static readonly GROUP_REF_WITH_ALL: int
+                                        protected static readonly CHILD_OF_GROUP: int
+                                        protected static readonly PROCESSING_ALL_GP: int
                                         protected fSchemaHandler: com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler
                                         protected fSymbolTable: com.sun.org.apache.xerces.internal.util.SymbolTable
                                         protected fAttrChecker: com.sun.org.apache.xerces.internal.impl.xs.traversers.XSAttributeChecker

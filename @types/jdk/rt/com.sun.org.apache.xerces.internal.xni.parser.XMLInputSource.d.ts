@@ -15,7 +15,7 @@ declare namespace com {
                                     protected fEncoding: string
                                     public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
                                     public constructor(arg0: com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier)
-                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.io.InputStream, arg4: java.lang.String | string)
+                                    public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.io.InputStream | java.io.InputStream$$Lambda, arg4: java.lang.String | string)
                                     public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.io.Reader, arg4: java.lang.String | string)
                                     public setPublicId(arg0: java.lang.String | string): void
                                     public getPublicId(): string
@@ -23,7 +23,7 @@ declare namespace com {
                                     public getSystemId(): string
                                     public setBaseSystemId(arg0: java.lang.String | string): void
                                     public getBaseSystemId(): string
-                                    public setByteStream(arg0: java.io.InputStream): void
+                                    public setByteStream(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
                                     public getByteStream(): java.io.InputStream
                                     public setCharacterStream(arg0: java.io.Reader): void
                                     public getCharacterStream(): java.io.Reader

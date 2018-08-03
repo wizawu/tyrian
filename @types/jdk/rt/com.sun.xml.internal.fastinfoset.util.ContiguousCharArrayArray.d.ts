@@ -5,8 +5,8 @@ declare namespace com {
                 namespace fastinfoset {
                     namespace util {
                         class ContiguousCharArrayArray extends com.sun.xml.internal.fastinfoset.util.ValueArray {
-                            public static INITIAL_CHARACTER_SIZE: int
-                            public static MAXIMUM_CHARACTER_SIZE: int
+                            public static readonly INITIAL_CHARACTER_SIZE: int
+                            public static readonly MAXIMUM_CHARACTER_SIZE: int
                             protected _maximumCharacterSize: int
                             public _offset: int[]
                             public _length: int[]

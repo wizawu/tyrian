@@ -8,7 +8,7 @@ declare namespace com {
                             namespace compiler {
                                 class AbsoluteLocationPath extends com.sun.org.apache.xalan.internal.xsltc.compiler.Expression {
                                     public constructor()
-                                    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression)
+                                    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression | com.sun.org.apache.xalan.internal.xsltc.compiler.Expression$$Lambda)
                                     public setParser(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Parser): void
                                     public getPath(): com.sun.org.apache.xalan.internal.xsltc.compiler.Expression
                                     public toString(): string

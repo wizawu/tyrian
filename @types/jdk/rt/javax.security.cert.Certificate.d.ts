@@ -5,11 +5,11 @@ declare namespace javax {
                 public constructor()
                 public equals(arg0: java.lang.Object): boolean
                 public hashCode(): int
-                public getEncoded(): byte[]
-                public verify(arg0: java.security.PublicKey): void
-                public verify(arg0: java.security.PublicKey, arg1: java.lang.String | string): void
-                public toString(): string
-                public getPublicKey(): java.security.PublicKey
+                public abstract getEncoded(): byte[]
+                public abstract verify(arg0: java.security.PublicKey): void
+                public abstract verify(arg0: java.security.PublicKey, arg1: java.lang.String | string): void
+                public abstract toString(): string
+                public abstract getPublicKey(): java.security.PublicKey
                 public static class: java.lang.Class<any>
             }
         }

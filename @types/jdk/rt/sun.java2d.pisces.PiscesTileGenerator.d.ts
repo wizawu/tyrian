@@ -2,7 +2,7 @@ declare namespace sun {
     namespace java2d {
         namespace pisces {
             class PiscesTileGenerator implements sun.java2d.pipe.AATileGenerator {
-                public static TILE_SIZE: int
+                public static readonly TILE_SIZE: int
                 public constructor(arg0: sun.java2d.pisces.Renderer, arg1: int)
                 public static getAlphaMap(arg0: int): byte[]
                 public getBbox(arg0: int[]): void

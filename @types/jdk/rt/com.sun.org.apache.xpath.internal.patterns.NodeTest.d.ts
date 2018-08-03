@@ -6,16 +6,16 @@ declare namespace com {
                     namespace internal {
                         namespace patterns {
                             class NodeTest extends com.sun.org.apache.xpath.internal.Expression {
-                                public static WILD: string
-                                public static SUPPORTS_PRE_STRIPPING: string
+                                public static readonly WILD: string
+                                public static readonly SUPPORTS_PRE_STRIPPING: string
                                 protected m_whatToShow: int
-                                public static SHOW_BYFUNCTION: int
+                                public static readonly SHOW_BYFUNCTION: int
                                 protected m_name: string
-                                public static SCORE_NODETEST: com.sun.org.apache.xpath.internal.objects.XNumber
-                                public static SCORE_NSWILD: com.sun.org.apache.xpath.internal.objects.XNumber
-                                public static SCORE_QNAME: com.sun.org.apache.xpath.internal.objects.XNumber
-                                public static SCORE_OTHER: com.sun.org.apache.xpath.internal.objects.XNumber
-                                public static SCORE_NONE: com.sun.org.apache.xpath.internal.objects.XNumber
+                                public static readonly SCORE_NODETEST: com.sun.org.apache.xpath.internal.objects.XNumber
+                                public static readonly SCORE_NSWILD: com.sun.org.apache.xpath.internal.objects.XNumber
+                                public static readonly SCORE_QNAME: com.sun.org.apache.xpath.internal.objects.XNumber
+                                public static readonly SCORE_OTHER: com.sun.org.apache.xpath.internal.objects.XNumber
+                                public static readonly SCORE_NONE: com.sun.org.apache.xpath.internal.objects.XNumber
                                 public getWhatToShow(): int
                                 public setWhatToShow(arg0: int): void
                                 public getNamespace(): string

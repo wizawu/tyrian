@@ -3,7 +3,7 @@ declare namespace javax {
         namespace ws {
             namespace soap {
                 class AddressingFeature extends javax.xml.ws.WebServiceFeature {
-                    public static ID: string
+                    public static readonly ID: string
                     protected required: boolean
                     public constructor()
                     public constructor(arg0: boolean)

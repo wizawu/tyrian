@@ -3,8 +3,8 @@ declare namespace sun {
         namespace cs {
             namespace ext {
                 class SJIS_0213$Encoder extends java.nio.charset.CharsetEncoder {
-                    protected static UNMAPPABLE: int
-                    protected static MAX_SINGLEBYTE: int
+                    protected static readonly UNMAPPABLE: int
+                    protected static readonly MAX_SINGLEBYTE: int
                     protected constructor(arg0: java.nio.charset.Charset)
                     public canEncode(arg0: char): boolean
                     protected encodeChar(arg0: char): int

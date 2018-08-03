@@ -4,8 +4,11 @@ declare namespace javax {
             abstract class SOAPConnectionFactory {
                 public constructor()
                 public static newInstance(): javax.xml.soap.SOAPConnectionFactory
-                public createConnection(): javax.xml.soap.SOAPConnection
+                public abstract createConnection(): javax.xml.soap.SOAPConnection
                 public static class: java.lang.Class<any>
+            }
+            interface SOAPConnectionFactory$$Lambda {
+                (): javax.xml.soap.SOAPConnection
             }
         }
     }

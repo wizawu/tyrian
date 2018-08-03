@@ -7,12 +7,12 @@ declare namespace com {
                         namespace xsltc {
                             namespace compiler {
                                 class XSLTC {
-                                    public static FILE_OUTPUT: int
-                                    public static JAR_OUTPUT: int
-                                    public static BYTEARRAY_OUTPUT: int
-                                    public static CLASSLOADER_OUTPUT: int
-                                    public static BYTEARRAY_AND_FILE_OUTPUT: int
-                                    public static BYTEARRAY_AND_JAR_OUTPUT: int
+                                    public static readonly FILE_OUTPUT: int
+                                    public static readonly JAR_OUTPUT: int
+                                    public static readonly BYTEARRAY_OUTPUT: int
+                                    public static readonly CLASSLOADER_OUTPUT: int
+                                    public static readonly BYTEARRAY_AND_FILE_OUTPUT: int
+                                    public static readonly BYTEARRAY_AND_JAR_OUTPUT: int
                                     public constructor(arg0: jdk.xml.internal.JdkXmlFeatures)
                                     public setSecureProcessing(arg0: boolean): void
                                     public isSecureProcessing(): boolean
@@ -30,7 +30,7 @@ declare namespace com {
                                     public setPIParameters(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void
                                     public compile(arg0: java.net.URL): boolean
                                     public compile(arg0: java.net.URL, arg1: java.lang.String | string): boolean
-                                    public compile(arg0: java.io.InputStream, arg1: java.lang.String | string): boolean
+                                    public compile(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.lang.String | string): boolean
                                     public compile(arg0: org.xml.sax.InputSource, arg1: java.lang.String | string): boolean
                                     public compile(arg0: java.util.Vector): boolean
                                     public getBytecodes(): byte[][]

@@ -3,19 +3,19 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 class ScriptRuntime {
-                    public static EMPTY_ARRAY: java.lang.Object[]
-                    public static UNDEFINED: jdk.nashorn.internal.runtime.Undefined
-                    public static EMPTY: jdk.nashorn.internal.runtime.Undefined
-                    public static ADD: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static EQ_STRICT: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static OPEN_WITH: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static MERGE_SCOPE: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_PROPERTY_ITERATOR: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_VALUE_ITERATOR: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static APPLY: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static THROW_REFERENCE_ERROR: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static THROW_CONST_TYPE_ERROR: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static INVALIDATE_RESERVED_BUILTIN_NAME: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly EMPTY_ARRAY: java.lang.Object[]
+                    public static readonly UNDEFINED: jdk.nashorn.internal.runtime.Undefined
+                    public static readonly EMPTY: jdk.nashorn.internal.runtime.Undefined
+                    public static readonly ADD: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly EQ_STRICT: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly OPEN_WITH: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly MERGE_SCOPE: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_PROPERTY_ITERATOR: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_VALUE_ITERATOR: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly APPLY: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly THROW_REFERENCE_ERROR: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly THROW_CONST_TYPE_ERROR: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly INVALIDATE_RESERVED_BUILTIN_NAME: jdk.nashorn.internal.codegen.CompilerConstants$Call
                     public static switchTagAsInt(arg0: java.lang.Object, arg1: int): int
                     public static switchTagAsInt(arg0: boolean, arg1: int): int
                     public static switchTagAsInt(arg0: long, arg1: int): int

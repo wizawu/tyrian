@@ -6,7 +6,7 @@ declare namespace jdk {
                     namespace joni {
                         namespace ast {
                             class BackRefNode extends jdk.nashorn.internal.runtime.regexp.joni.ast.StateNode {
-                                public backRef: int
+                                public readonly backRef: int
                                 public constructor(arg0: int, arg1: jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment)
                                 public getType(): int
                                 public getName(): string

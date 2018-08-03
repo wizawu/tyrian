@@ -1,11 +1,11 @@
 declare namespace sun {
     namespace font {
         class CompositeGlyphMapper extends sun.font.CharToGlyphMapper {
-            public static SLOTMASK: int
-            public static GLYPHMASK: int
-            public static NBLOCKS: int
-            public static BLOCKSZ: int
-            public static MAXUNICODE: int
+            public static readonly SLOTMASK: int
+            public static readonly GLYPHMASK: int
+            public static readonly NBLOCKS: int
+            public static readonly BLOCKSZ: int
+            public static readonly MAXUNICODE: int
             public constructor(arg0: sun.font.CompositeFont)
             public compositeGlyphCode(arg0: int, arg1: int): int
             public getNumGlyphs(): int

@@ -3,9 +3,9 @@ declare namespace jdk {
         namespace internal {
             namespace ir {
                 class ForNode extends jdk.nashorn.internal.ir.LoopNode {
-                    public static IS_FOR_IN: int
-                    public static IS_FOR_EACH: int
-                    public static PER_ITERATION_SCOPE: int
+                    public static readonly IS_FOR_IN: int
+                    public static readonly IS_FOR_EACH: int
+                    public static readonly PER_ITERATION_SCOPE: int
                     public constructor(arg0: int, arg1: long, arg2: int, arg3: jdk.nashorn.internal.ir.Block, arg4: int)
                     public ensureUniqueLabels(arg0: jdk.nashorn.internal.ir.LexicalContext): jdk.nashorn.internal.ir.Node
                     public accept(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.LexicalContext>): jdk.nashorn.internal.ir.Node
@@ -13,7 +13,7 @@ declare namespace jdk {
                     public hasGoto(): boolean
                     public mustEnter(): boolean
                     public getInit(): jdk.nashorn.internal.ir.Expression
-                    public setInit(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: jdk.nashorn.internal.ir.Expression): jdk.nashorn.internal.ir.ForNode
+                    public setInit(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: jdk.nashorn.internal.ir.Expression | jdk.nashorn.internal.ir.Expression$$Lambda): jdk.nashorn.internal.ir.ForNode
                     public isForIn(): boolean
                     public setIsForIn(arg0: jdk.nashorn.internal.ir.LexicalContext): jdk.nashorn.internal.ir.ForNode
                     public isForEach(): boolean

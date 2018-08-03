@@ -9,9 +9,9 @@ declare namespace java {
             public environment(): java.util.Map<java.lang.String, java.lang.String>
             public directory(): java.io.File
             public directory(arg0: java.io.File): java.lang.ProcessBuilder
-            public redirectInput(arg0: java.lang.ProcessBuilder$Redirect): java.lang.ProcessBuilder
-            public redirectOutput(arg0: java.lang.ProcessBuilder$Redirect): java.lang.ProcessBuilder
-            public redirectError(arg0: java.lang.ProcessBuilder$Redirect): java.lang.ProcessBuilder
+            public redirectInput(arg0: java.lang.ProcessBuilder$Redirect | java.lang.ProcessBuilder$Redirect$$Lambda): java.lang.ProcessBuilder
+            public redirectOutput(arg0: java.lang.ProcessBuilder$Redirect | java.lang.ProcessBuilder$Redirect$$Lambda): java.lang.ProcessBuilder
+            public redirectError(arg0: java.lang.ProcessBuilder$Redirect | java.lang.ProcessBuilder$Redirect$$Lambda): java.lang.ProcessBuilder
             public redirectInput(arg0: java.io.File): java.lang.ProcessBuilder
             public redirectOutput(arg0: java.io.File): java.lang.ProcessBuilder
             public redirectError(arg0: java.io.File): java.lang.ProcessBuilder

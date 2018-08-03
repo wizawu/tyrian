@@ -5,7 +5,7 @@ declare namespace jdk {
                 namespace regexp {
                     namespace joni {
                         class BitSet {
-                            public static SINGLE_BYTE_SIZE: int
+                            public static readonly SINGLE_BYTE_SIZE: int
                             public constructor()
                             public toString(): string
                             public at(arg0: int): boolean

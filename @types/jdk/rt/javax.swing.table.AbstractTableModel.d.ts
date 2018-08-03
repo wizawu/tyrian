@@ -9,8 +9,8 @@ declare namespace javax {
                 public getColumnClass(arg0: int): java.lang.Class<any>
                 public isCellEditable(arg0: int, arg1: int): boolean
                 public setValueAt(arg0: java.lang.Object, arg1: int, arg2: int): void
-                public addTableModelListener(arg0: javax.swing.event.TableModelListener | javax.swing.event.TableModelListener$$Lambda): void
-                public removeTableModelListener(arg0: javax.swing.event.TableModelListener | javax.swing.event.TableModelListener$$Lambda): void
+                public addTableModelListener(arg0: javax.swing.event.TableModelListener): void
+                public removeTableModelListener(arg0: javax.swing.event.TableModelListener): void
                 public getTableModelListeners(): javax.swing.event.TableModelListener[]
                 public fireTableDataChanged(): void
                 public fireTableStructureChanged(): void

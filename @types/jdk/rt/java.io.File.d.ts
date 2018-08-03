@@ -1,10 +1,10 @@
 declare namespace java {
     namespace io {
         class File implements java.io.Serializable , java.lang.Comparable<java.io.File> {
-            public static separatorChar: char
-            public static separator: string
-            public static pathSeparatorChar: char
-            public static pathSeparator: string
+            public static readonly separatorChar: char
+            public static readonly separator: string
+            public static readonly pathSeparatorChar: char
+            public static readonly pathSeparator: string
             public constructor(arg0: java.lang.String | string)
             public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
             public constructor(arg0: java.io.File, arg1: java.lang.String | string)

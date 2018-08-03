@@ -1,43 +1,43 @@
 declare namespace javax {
     namespace swing {
         class JFileChooser extends javax.swing.JComponent implements javax.accessibility.Accessible {
-            public static OPEN_DIALOG: int
-            public static SAVE_DIALOG: int
-            public static CUSTOM_DIALOG: int
-            public static CANCEL_OPTION: int
-            public static APPROVE_OPTION: int
-            public static ERROR_OPTION: int
-            public static FILES_ONLY: int
-            public static DIRECTORIES_ONLY: int
-            public static FILES_AND_DIRECTORIES: int
-            public static CANCEL_SELECTION: string
-            public static APPROVE_SELECTION: string
-            public static APPROVE_BUTTON_TEXT_CHANGED_PROPERTY: string
-            public static APPROVE_BUTTON_TOOL_TIP_TEXT_CHANGED_PROPERTY: string
-            public static APPROVE_BUTTON_MNEMONIC_CHANGED_PROPERTY: string
-            public static CONTROL_BUTTONS_ARE_SHOWN_CHANGED_PROPERTY: string
-            public static DIRECTORY_CHANGED_PROPERTY: string
-            public static SELECTED_FILE_CHANGED_PROPERTY: string
-            public static SELECTED_FILES_CHANGED_PROPERTY: string
-            public static MULTI_SELECTION_ENABLED_CHANGED_PROPERTY: string
-            public static FILE_SYSTEM_VIEW_CHANGED_PROPERTY: string
-            public static FILE_VIEW_CHANGED_PROPERTY: string
-            public static FILE_HIDING_CHANGED_PROPERTY: string
-            public static FILE_FILTER_CHANGED_PROPERTY: string
-            public static FILE_SELECTION_MODE_CHANGED_PROPERTY: string
-            public static ACCESSORY_CHANGED_PROPERTY: string
-            public static ACCEPT_ALL_FILE_FILTER_USED_CHANGED_PROPERTY: string
-            public static DIALOG_TITLE_CHANGED_PROPERTY: string
-            public static DIALOG_TYPE_CHANGED_PROPERTY: string
-            public static CHOOSABLE_FILE_FILTER_CHANGED_PROPERTY: string
+            public static readonly OPEN_DIALOG: int
+            public static readonly SAVE_DIALOG: int
+            public static readonly CUSTOM_DIALOG: int
+            public static readonly CANCEL_OPTION: int
+            public static readonly APPROVE_OPTION: int
+            public static readonly ERROR_OPTION: int
+            public static readonly FILES_ONLY: int
+            public static readonly DIRECTORIES_ONLY: int
+            public static readonly FILES_AND_DIRECTORIES: int
+            public static readonly CANCEL_SELECTION: string
+            public static readonly APPROVE_SELECTION: string
+            public static readonly APPROVE_BUTTON_TEXT_CHANGED_PROPERTY: string
+            public static readonly APPROVE_BUTTON_TOOL_TIP_TEXT_CHANGED_PROPERTY: string
+            public static readonly APPROVE_BUTTON_MNEMONIC_CHANGED_PROPERTY: string
+            public static readonly CONTROL_BUTTONS_ARE_SHOWN_CHANGED_PROPERTY: string
+            public static readonly DIRECTORY_CHANGED_PROPERTY: string
+            public static readonly SELECTED_FILE_CHANGED_PROPERTY: string
+            public static readonly SELECTED_FILES_CHANGED_PROPERTY: string
+            public static readonly MULTI_SELECTION_ENABLED_CHANGED_PROPERTY: string
+            public static readonly FILE_SYSTEM_VIEW_CHANGED_PROPERTY: string
+            public static readonly FILE_VIEW_CHANGED_PROPERTY: string
+            public static readonly FILE_HIDING_CHANGED_PROPERTY: string
+            public static readonly FILE_FILTER_CHANGED_PROPERTY: string
+            public static readonly FILE_SELECTION_MODE_CHANGED_PROPERTY: string
+            public static readonly ACCESSORY_CHANGED_PROPERTY: string
+            public static readonly ACCEPT_ALL_FILE_FILTER_USED_CHANGED_PROPERTY: string
+            public static readonly DIALOG_TITLE_CHANGED_PROPERTY: string
+            public static readonly DIALOG_TYPE_CHANGED_PROPERTY: string
+            public static readonly CHOOSABLE_FILE_FILTER_CHANGED_PROPERTY: string
             protected accessibleContext: javax.accessibility.AccessibleContext
             public constructor()
             public constructor(arg0: java.lang.String | string)
             public constructor(arg0: java.io.File)
-            public constructor(arg0: javax.swing.filechooser.FileSystemView)
-            public constructor(arg0: java.io.File, arg1: javax.swing.filechooser.FileSystemView)
-            public constructor(arg0: java.lang.String | string, arg1: javax.swing.filechooser.FileSystemView)
-            protected setup(arg0: javax.swing.filechooser.FileSystemView): void
+            public constructor(arg0: javax.swing.filechooser.FileSystemView | javax.swing.filechooser.FileSystemView$$Lambda)
+            public constructor(arg0: java.io.File, arg1: javax.swing.filechooser.FileSystemView | javax.swing.filechooser.FileSystemView$$Lambda)
+            public constructor(arg0: java.lang.String | string, arg1: javax.swing.filechooser.FileSystemView | javax.swing.filechooser.FileSystemView$$Lambda)
+            protected setup(arg0: javax.swing.filechooser.FileSystemView | javax.swing.filechooser.FileSystemView$$Lambda): void
             public setDragEnabled(arg0: boolean): void
             public getDragEnabled(): boolean
             public getSelectedFile(): java.io.File
@@ -93,12 +93,12 @@ declare namespace javax {
             public getIcon(arg0: java.io.File): javax.swing.Icon
             public isTraversable(arg0: java.io.File): boolean
             public accept(arg0: java.io.File): boolean
-            public setFileSystemView(arg0: javax.swing.filechooser.FileSystemView): void
+            public setFileSystemView(arg0: javax.swing.filechooser.FileSystemView | javax.swing.filechooser.FileSystemView$$Lambda): void
             public getFileSystemView(): javax.swing.filechooser.FileSystemView
             public approveSelection(): void
             public cancelSelection(): void
-            public addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
-            public removeActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
+            public addActionListener(arg0: java.awt.event.ActionListener): void
+            public removeActionListener(arg0: java.awt.event.ActionListener): void
             public getActionListeners(): java.awt.event.ActionListener[]
             protected fireActionPerformed(arg0: java.lang.String | string): void
             public updateUI(): void

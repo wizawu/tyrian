@@ -1,29 +1,29 @@
 declare namespace sun {
     namespace java2d {
         class SunGraphics2D extends java.awt.Graphics2D implements sun.awt.ConstrainableGraphics , java.lang.Cloneable , sun.java2d.DestSurfaceProvider {
-            public static PAINT_CUSTOM: int
-            public static PAINT_TEXTURE: int
-            public static PAINT_RAD_GRADIENT: int
-            public static PAINT_LIN_GRADIENT: int
-            public static PAINT_GRADIENT: int
-            public static PAINT_ALPHACOLOR: int
-            public static PAINT_OPAQUECOLOR: int
-            public static COMP_CUSTOM: int
-            public static COMP_XOR: int
-            public static COMP_ALPHA: int
-            public static COMP_ISCOPY: int
-            public static STROKE_CUSTOM: int
-            public static STROKE_WIDE: int
-            public static STROKE_THINDASHED: int
-            public static STROKE_THIN: int
-            public static TRANSFORM_GENERIC: int
-            public static TRANSFORM_TRANSLATESCALE: int
-            public static TRANSFORM_ANY_TRANSLATE: int
-            public static TRANSFORM_INT_TRANSLATE: int
-            public static TRANSFORM_ISIDENT: int
-            public static CLIP_SHAPE: int
-            public static CLIP_RECTANGULAR: int
-            public static CLIP_DEVICE: int
+            public static readonly PAINT_CUSTOM: int
+            public static readonly PAINT_TEXTURE: int
+            public static readonly PAINT_RAD_GRADIENT: int
+            public static readonly PAINT_LIN_GRADIENT: int
+            public static readonly PAINT_GRADIENT: int
+            public static readonly PAINT_ALPHACOLOR: int
+            public static readonly PAINT_OPAQUECOLOR: int
+            public static readonly COMP_CUSTOM: int
+            public static readonly COMP_XOR: int
+            public static readonly COMP_ALPHA: int
+            public static readonly COMP_ISCOPY: int
+            public static readonly STROKE_CUSTOM: int
+            public static readonly STROKE_WIDE: int
+            public static readonly STROKE_THINDASHED: int
+            public static readonly STROKE_THIN: int
+            public static readonly TRANSFORM_GENERIC: int
+            public static readonly TRANSFORM_TRANSLATESCALE: int
+            public static readonly TRANSFORM_ANY_TRANSLATE: int
+            public static readonly TRANSFORM_INT_TRANSLATE: int
+            public static readonly TRANSFORM_ISIDENT: int
+            public static readonly CLIP_SHAPE: int
+            public static readonly CLIP_RECTANGULAR: int
+            public static readonly CLIP_DEVICE: int
             public eargb: int
             public pixel: int
             public surfaceData: sun.java2d.SurfaceData
@@ -45,8 +45,8 @@ declare namespace sun {
             public transform: java.awt.geom.AffineTransform
             public transX: int
             public transY: int
-            protected static defaultStroke: java.awt.Stroke
-            protected static defaultComposite: java.awt.Composite
+            protected static readonly defaultStroke: java.awt.Stroke
+            protected static readonly defaultComposite: java.awt.Composite
             public paint: java.awt.Paint
             public stroke: java.awt.Stroke
             public composite: java.awt.Composite
@@ -67,9 +67,9 @@ declare namespace sun {
             public usrClip: java.awt.Shape
             protected devClip: sun.java2d.pipe.Region
             protected static invalidpipe: sun.java2d.pipe.ValidatePipe
-            public static MinPenSizeAA: double
-            public static MinPenSizeAASquared: double
-            public static MinPenSizeSquared: double
+            public static readonly MinPenSizeAA: double
+            public static readonly MinPenSizeAASquared: double
+            public static readonly MinPenSizeSquared: double
             public constructor(arg0: sun.java2d.SurfaceData, arg1: java.awt.Color, arg2: java.awt.Color, arg3: java.awt.Font)
             protected clone(): java.lang.Object
             public create(): java.awt.Graphics
@@ -94,10 +94,10 @@ declare namespace sun {
             public getDeviceConfiguration(): java.awt.GraphicsConfiguration
             public getSurfaceData(): sun.java2d.SurfaceData
             public setComposite(arg0: java.awt.Composite | java.awt.Composite$$Lambda): void
-            public setPaint(arg0: java.awt.Paint | java.awt.Paint$$Lambda): void
+            public setPaint(arg0: java.awt.Paint): void
             public setStroke(arg0: java.awt.Stroke | java.awt.Stroke$$Lambda): void
-            public setRenderingHint(arg0: java.awt.RenderingHints$Key, arg1: java.lang.Object): void
-            public getRenderingHint(arg0: java.awt.RenderingHints$Key): java.lang.Object
+            public setRenderingHint(arg0: java.awt.RenderingHints$Key | java.awt.RenderingHints$Key$$Lambda, arg1: java.lang.Object): void
+            public getRenderingHint(arg0: java.awt.RenderingHints$Key | java.awt.RenderingHints$Key$$Lambda): java.lang.Object
             public setRenderingHints(arg0: java.util.Map<any, any>): void
             public addRenderingHints(arg0: java.util.Map<any, any>): void
             public getRenderingHints(): java.awt.RenderingHints

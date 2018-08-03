@@ -6,23 +6,23 @@ declare namespace com {
                     namespace internal {
                         namespace util {
                             class XMLSymbols {
-                                public static EMPTY_STRING: string
-                                public static PREFIX_XML: string
-                                public static PREFIX_XMLNS: string
-                                public static fANYSymbol: string
-                                public static fCDATASymbol: string
-                                public static fIDSymbol: string
-                                public static fIDREFSymbol: string
-                                public static fIDREFSSymbol: string
-                                public static fENTITYSymbol: string
-                                public static fENTITIESSymbol: string
-                                public static fNMTOKENSymbol: string
-                                public static fNMTOKENSSymbol: string
-                                public static fNOTATIONSymbol: string
-                                public static fENUMERATIONSymbol: string
-                                public static fIMPLIEDSymbol: string
-                                public static fREQUIREDSymbol: string
-                                public static fFIXEDSymbol: string
+                                public static readonly EMPTY_STRING: string
+                                public static readonly PREFIX_XML: string
+                                public static readonly PREFIX_XMLNS: string
+                                public static readonly fANYSymbol: string
+                                public static readonly fCDATASymbol: string
+                                public static readonly fIDSymbol: string
+                                public static readonly fIDREFSymbol: string
+                                public static readonly fIDREFSSymbol: string
+                                public static readonly fENTITYSymbol: string
+                                public static readonly fENTITIESSymbol: string
+                                public static readonly fNMTOKENSymbol: string
+                                public static readonly fNMTOKENSSymbol: string
+                                public static readonly fNOTATIONSymbol: string
+                                public static readonly fENUMERATIONSymbol: string
+                                public static readonly fIMPLIEDSymbol: string
+                                public static readonly fREQUIREDSymbol: string
+                                public static readonly fFIXEDSymbol: string
                                 public constructor()
                                 public static class: java.lang.Class<any>
                             }

@@ -6,7 +6,7 @@ declare namespace com {
                     namespace api {
                         namespace addressing {
                             class OneWayFeature extends javax.xml.ws.WebServiceFeature {
-                                public static ID: string
+                                public static readonly ID: string
                                 public constructor()
                                 public constructor(arg0: boolean)
                                 public constructor(arg0: boolean, arg1: com.sun.xml.internal.ws.api.addressing.WSEndpointReference)

@@ -8,7 +8,7 @@ declare namespace com {
                             protected flags: int
                             protected attributes: java.util.List<com.sun.java.util.jar.pack.Attribute>
                             public constructor()
-                            protected getCPMap(): com.sun.java.util.jar.pack.ConstantPool$Entry[]
+                            protected abstract getCPMap(): com.sun.java.util.jar.pack.ConstantPool$Entry[]
                             public attributeSize(): int
                             public trimToSize(): void
                             public addAttribute(arg0: com.sun.java.util.jar.pack.Attribute): void
@@ -23,6 +23,9 @@ declare namespace com {
                             public removeAttribute(arg0: com.sun.java.util.jar.pack.Attribute$Layout): com.sun.java.util.jar.pack.Attribute
                             public strip(arg0: java.lang.String | string): void
                             public static class: java.lang.Class<any>
+                        }
+                        interface Attribute$Holder$$Lambda {
+                            (): com.sun.java.util.jar.pack.ConstantPool$Entry[]
                         }
                     }
                 }

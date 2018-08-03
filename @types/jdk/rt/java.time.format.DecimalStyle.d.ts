@@ -2,7 +2,7 @@ declare namespace java {
     namespace time {
         namespace format {
             class DecimalStyle {
-                public static STANDARD: java.time.format.DecimalStyle
+                public static readonly STANDARD: java.time.format.DecimalStyle
                 public static getAvailableLocales(): java.util.Set<java.util.Locale>
                 public static ofDefaultLocale(): java.time.format.DecimalStyle
                 public static of(arg0: java.util.Locale): java.time.format.DecimalStyle

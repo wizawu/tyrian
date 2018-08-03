@@ -1,27 +1,27 @@
 declare namespace java {
     namespace util {
         class Collections {
-            public static EMPTY_SET: java.util.Set
-            public static EMPTY_LIST: java.util.List
-            public static EMPTY_MAP: java.util.Map
+            public static readonly EMPTY_SET: java.util.Set
+            public static readonly EMPTY_LIST: java.util.List
+            public static readonly EMPTY_MAP: java.util.Map
             public static sort<T extends java.lang.Comparable<T>>(arg0: java.util.List<T>): void
             public static sort<T>(arg0: java.util.List<T>, arg1: java.util.Comparator<T>): void
             public static binarySearch<T>(arg0: java.util.List<java.lang.Comparable<T>>, arg1: T): int
             public static binarySearch<T>(arg0: java.util.List<T>, arg1: T, arg2: java.util.Comparator<T>): int
-            public static reverse(arg0: java.util.List<any>): void
-            public static shuffle(arg0: java.util.List<any>): void
-            public static shuffle(arg0: java.util.List<any>, arg1: java.util.Random): void
-            public static swap(arg0: java.util.List<any>, arg1: int, arg2: int): void
+            public static reverse<T>(arg0: java.util.List<any>): void
+            public static shuffle<T>(arg0: java.util.List<any>): void
+            public static shuffle<T>(arg0: java.util.List<any>, arg1: java.util.Random): void
+            public static swap<T>(arg0: java.util.List<any>, arg1: int, arg2: int): void
             public static fill<T>(arg0: java.util.List<T>, arg1: T): void
             public static copy<T>(arg0: java.util.List<T>, arg1: java.util.List<T>): void
             public static min<T extends java.lang.Comparable<T>>(arg0: java.util.Collection<T>): T
             public static min<T>(arg0: java.util.Collection<T>, arg1: java.util.Comparator<T>): T
             public static max<T extends java.lang.Comparable<T>>(arg0: java.util.Collection<T>): T
             public static max<T>(arg0: java.util.Collection<T>, arg1: java.util.Comparator<T>): T
-            public static rotate(arg0: java.util.List<any>, arg1: int): void
+            public static rotate<T>(arg0: java.util.List<any>, arg1: int): void
             public static replaceAll<T>(arg0: java.util.List<T>, arg1: T, arg2: T): boolean
-            public static indexOfSubList(arg0: java.util.List<any>, arg1: java.util.List<any>): int
-            public static lastIndexOfSubList(arg0: java.util.List<any>, arg1: java.util.List<any>): int
+            public static indexOfSubList<T>(arg0: java.util.List<any>, arg1: java.util.List<any>): int
+            public static lastIndexOfSubList<T>(arg0: java.util.List<any>, arg1: java.util.List<any>): int
             public static unmodifiableCollection<T>(arg0: java.util.Collection<T>): java.util.Collection<T>
             public static unmodifiableSet<T>(arg0: java.util.Set<T>): java.util.Set<T>
             public static unmodifiableSortedSet<T>(arg0: java.util.SortedSet<T>): java.util.SortedSet<T>
@@ -65,8 +65,8 @@ declare namespace java {
             public static reverseOrder<T>(arg0: java.util.Comparator<T>): java.util.Comparator<T>
             public static enumeration<T>(arg0: java.util.Collection<T>): java.util.Enumeration<T>
             public static list<T>(arg0: java.util.Enumeration<T>): java.util.ArrayList<T>
-            public static frequency(arg0: java.util.Collection<any>, arg1: java.lang.Object): int
-            public static disjoint(arg0: java.util.Collection<any>, arg1: java.util.Collection<any>): boolean
+            public static frequency<T>(arg0: java.util.Collection<any>, arg1: java.lang.Object): int
+            public static disjoint<T>(arg0: java.util.Collection<any>, arg1: java.util.Collection<any>): boolean
             public static addAll<T>(arg0: java.util.Collection<T>, ...arg1: T[]): boolean
             public static newSetFromMap<E>(arg0: java.util.Map<E, java.lang.Boolean>): java.util.Set<E>
             public static asLifoQueue<T>(arg0: java.util.Deque<T>): java.util.Queue<T>

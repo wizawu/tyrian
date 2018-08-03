@@ -6,14 +6,14 @@ declare namespace com {
                     namespace internal {
                         namespace util {
                             class XMLChar {
-                                public static MASK_VALID: int
-                                public static MASK_SPACE: int
-                                public static MASK_NAME_START: int
-                                public static MASK_NAME: int
-                                public static MASK_PUBID: int
-                                public static MASK_CONTENT: int
-                                public static MASK_NCNAME_START: int
-                                public static MASK_NCNAME: int
+                                public static readonly MASK_VALID: int
+                                public static readonly MASK_SPACE: int
+                                public static readonly MASK_NAME_START: int
+                                public static readonly MASK_NAME: int
+                                public static readonly MASK_PUBID: int
+                                public static readonly MASK_CONTENT: int
+                                public static readonly MASK_NCNAME_START: int
+                                public static readonly MASK_NCNAME: int
                                 public constructor()
                                 public static isSupplemental(arg0: int): boolean
                                 public static supplemental(arg0: char, arg1: char): int

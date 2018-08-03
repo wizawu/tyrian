@@ -3,12 +3,12 @@ declare namespace jdk {
         namespace internal {
             namespace ir {
                 class Block extends jdk.nashorn.internal.ir.Node implements jdk.nashorn.internal.ir.BreakableNode , jdk.nashorn.internal.ir.Terminal , jdk.nashorn.internal.ir.Flags<jdk.nashorn.internal.ir.Block> {
-                    protected statements: java.util.List<jdk.nashorn.internal.ir.Statement>
-                    protected symbols: java.util.Map<java.lang.String, jdk.nashorn.internal.ir.Symbol>
-                    protected flags: int
-                    public static NEEDS_SCOPE: int
-                    public static IS_TERMINAL: int
-                    public static IS_GLOBAL_SCOPE: int
+                    protected readonly statements: java.util.List<jdk.nashorn.internal.ir.Statement>
+                    protected readonly symbols: java.util.Map<java.lang.String, jdk.nashorn.internal.ir.Symbol>
+                    protected readonly flags: int
+                    public static readonly NEEDS_SCOPE: int
+                    public static readonly IS_TERMINAL: int
+                    public static readonly IS_GLOBAL_SCOPE: int
                     public constructor(arg0: long, arg1: int, ...arg2: jdk.nashorn.internal.ir.Statement[])
                     public constructor(arg0: long, arg1: int, arg2: java.util.List<jdk.nashorn.internal.ir.Statement>)
                     public isGlobalScope(): boolean

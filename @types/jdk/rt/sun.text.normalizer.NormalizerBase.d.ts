@@ -2,18 +2,18 @@ declare namespace sun {
     namespace text {
         namespace normalizer {
             class NormalizerBase implements java.lang.Cloneable {
-                public static UNICODE_3_2: int
-                public static DONE: int
-                public static NONE: sun.text.normalizer.NormalizerBase$Mode
-                public static NFD: sun.text.normalizer.NormalizerBase$Mode
-                public static NFKD: sun.text.normalizer.NormalizerBase$Mode
-                public static NFC: sun.text.normalizer.NormalizerBase$Mode
-                public static NFKC: sun.text.normalizer.NormalizerBase$Mode
-                public static NO: sun.text.normalizer.NormalizerBase$QuickCheckResult
-                public static YES: sun.text.normalizer.NormalizerBase$QuickCheckResult
-                public static MAYBE: sun.text.normalizer.NormalizerBase$QuickCheckResult
-                public static UNICODE_3_2_0_ORIGINAL: int
-                public static UNICODE_LATEST: int
+                public static readonly UNICODE_3_2: int
+                public static readonly DONE: int
+                public static readonly NONE: sun.text.normalizer.NormalizerBase$Mode
+                public static readonly NFD: sun.text.normalizer.NormalizerBase$Mode
+                public static readonly NFKD: sun.text.normalizer.NormalizerBase$Mode
+                public static readonly NFC: sun.text.normalizer.NormalizerBase$Mode
+                public static readonly NFKC: sun.text.normalizer.NormalizerBase$Mode
+                public static readonly NO: sun.text.normalizer.NormalizerBase$QuickCheckResult
+                public static readonly YES: sun.text.normalizer.NormalizerBase$QuickCheckResult
+                public static readonly MAYBE: sun.text.normalizer.NormalizerBase$QuickCheckResult
+                public static readonly UNICODE_3_2_0_ORIGINAL: int
+                public static readonly UNICODE_LATEST: int
                 public constructor(arg0: java.lang.String | string, arg1: sun.text.normalizer.NormalizerBase$Mode, arg2: int)
                 public constructor(arg0: java.text.CharacterIterator, arg1: sun.text.normalizer.NormalizerBase$Mode)
                 public constructor(arg0: java.text.CharacterIterator, arg1: sun.text.normalizer.NormalizerBase$Mode, arg2: int)

@@ -6,8 +6,8 @@ declare namespace com {
                     namespace internal {
                         namespace jaxp {
                             class DocumentBuilderImpl extends javax.xml.parsers.DocumentBuilder implements com.sun.org.apache.xerces.internal.jaxp.JAXPConstants {
-                                public static ACCESS_EXTERNAL_DTD: string
-                                public static ACCESS_EXTERNAL_SCHEMA: string
+                                public static readonly ACCESS_EXTERNAL_DTD: string
+                                public static readonly ACCESS_EXTERNAL_SCHEMA: string
                                 public newDocument(): org.w3c.dom.Document
                                 public getDOMImplementation(): org.w3c.dom.DOMImplementation
                                 public parse(arg0: org.xml.sax.InputSource): org.w3c.dom.Document

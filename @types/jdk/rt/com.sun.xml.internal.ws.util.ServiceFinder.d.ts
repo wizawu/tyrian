@@ -9,8 +9,8 @@ declare namespace com {
                             public static find<T>(arg0: java.lang.Class<T>, arg1: com.sun.xml.internal.ws.api.Component | com.sun.xml.internal.ws.api.Component$$Lambda): com.sun.xml.internal.ws.util.ServiceFinder<T>
                             public static find<T>(arg0: java.lang.Class<T>, arg1: java.lang.ClassLoader): com.sun.xml.internal.ws.util.ServiceFinder<T>
                             public static find<T>(arg0: java.lang.Class<T>): com.sun.xml.internal.ws.util.ServiceFinder<T>
-                            public iterator(): java.util.Iterator<T>
-                            public toArray(): T[]
+                            public iterator<T>(): java.util.Iterator<T>
+                            public toArray<T>(): T[]
                             public static class: java.lang.Class<any>
                         }
                     }

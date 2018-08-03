@@ -1,11 +1,11 @@
 declare namespace java {
     namespace lang {
         class Long extends java.lang.Number implements java.lang.Comparable<java.lang.Long> {
-            public static MIN_VALUE: long
-            public static MAX_VALUE: long
-            public static TYPE: java.lang.Class<java.lang.Long>
-            public static SIZE: int
-            public static BYTES: int
+            public static readonly MIN_VALUE: long
+            public static readonly MAX_VALUE: long
+            public static readonly TYPE: java.lang.Class<java.lang.Long>
+            public static readonly SIZE: int
+            public static readonly BYTES: int
             public static toString(arg0: long, arg1: int): string
             public static toUnsignedString(arg0: long, arg1: int): string
             public static toHexString(arg0: long): string

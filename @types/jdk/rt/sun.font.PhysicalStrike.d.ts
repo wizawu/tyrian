@@ -6,7 +6,7 @@ declare namespace sun {
             protected longGlyphImages: long[]
             protected intGlyphImages: int[]
             protected getImageWithAdvance: boolean
-            protected static complexTX: int
+            protected static readonly complexTX: int
             protected constructor()
             public getNumGlyphs(): int
             protected adjustPoint(arg0: java.awt.geom.Point2D$Float): void

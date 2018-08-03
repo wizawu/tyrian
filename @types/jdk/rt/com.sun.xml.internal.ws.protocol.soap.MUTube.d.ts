@@ -6,8 +6,8 @@ declare namespace com {
                     namespace protocol {
                         namespace soap {
                             abstract class MUTube extends com.sun.xml.internal.ws.api.pipe.helper.AbstractFilterTubeImpl {
-                                protected static logger: java.util.logging.Logger
-                                protected soapVersion: com.sun.xml.internal.ws.api.SOAPVersion
+                                protected static readonly logger: java.util.logging.Logger
+                                protected readonly soapVersion: com.sun.xml.internal.ws.api.SOAPVersion
                                 protected binding: com.sun.xml.internal.ws.binding.SOAPBindingImpl
                                 protected constructor(arg0: com.sun.xml.internal.ws.api.WSBinding, arg1: com.sun.xml.internal.ws.api.pipe.Tube)
                                 protected constructor(arg0: com.sun.xml.internal.ws.protocol.soap.MUTube, arg1: com.sun.xml.internal.ws.api.pipe.TubeCloner)

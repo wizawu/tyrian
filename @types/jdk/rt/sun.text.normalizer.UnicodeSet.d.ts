@@ -2,9 +2,9 @@ declare namespace sun {
     namespace text {
         namespace normalizer {
             class UnicodeSet implements sun.text.normalizer.UnicodeMatcher {
-                public static MIN_VALUE: int
-                public static MAX_VALUE: int
-                public static IGNORE_SPACE: int
+                public static readonly MIN_VALUE: int
+                public static readonly MAX_VALUE: int
+                public static readonly IGNORE_SPACE: int
                 public constructor()
                 public constructor(arg0: int, arg1: int)
                 public constructor(arg0: java.lang.String | string)

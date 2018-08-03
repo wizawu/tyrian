@@ -16,8 +16,8 @@ declare namespace javax {
             public setValueIsAdjusting(arg0: boolean): void
             public getValueIsAdjusting(): boolean
             public setRangeProperties(arg0: int, arg1: int, arg2: int, arg3: int, arg4: boolean): void
-            public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
-            public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+            public addChangeListener(arg0: javax.swing.event.ChangeListener): void
+            public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
             public getChangeListeners(): javax.swing.event.ChangeListener[]
             protected fireStateChanged(): void
             public toString(): string

@@ -5,7 +5,7 @@ declare namespace com {
                 namespace ws {
                     namespace message {
                         class XMLReaderImpl extends org.xml.sax.helpers.XMLFilterImpl {
-                            protected static THE_SOURCE: org.xml.sax.InputSource
+                            protected static readonly THE_SOURCE: org.xml.sax.InputSource
                             public parse(arg0: java.lang.String | string): void
                             public parse(arg0: org.xml.sax.InputSource): void
                             public getContentHandler(): org.xml.sax.ContentHandler

@@ -5,8 +5,8 @@ declare namespace com {
                 namespace external {
                     namespace amx {
                         class AMXGlassfish {
-                            public static DEFAULT_JMX_DOMAIN: string
-                            public static DEFAULT: com.sun.org.glassfish.external.amx.AMXGlassfish
+                            public static readonly DEFAULT_JMX_DOMAIN: string
+                            public static readonly DEFAULT: com.sun.org.glassfish.external.amx.AMXGlassfish
                             public constructor(arg0: java.lang.String | string)
                             public static getGlassfishVersion(): string
                             public amxJMXDomain(): string

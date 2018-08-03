@@ -8,7 +8,7 @@ declare namespace com {
                             namespace algorithms {
                                 namespace implementations {
                                     abstract class SignatureBaseRSA extends com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithmSpi {
-                                        public engineGetURI(): string
+                                        public abstract engineGetURI(): string
                                         public constructor()
                                         protected engineSetParameter(arg0: java.security.spec.AlgorithmParameterSpec): void
                                         protected engineVerify(arg0: byte[]): boolean
@@ -24,6 +24,9 @@ declare namespace com {
                                         protected engineSetHMACOutputLength(arg0: int): void
                                         protected engineInitSign(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
                                         public static class: java.lang.Class<any>
+                                    }
+                                    interface SignatureBaseRSA$$Lambda extends com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithmSpi {
+                                        (): string
                                     }
                                 }
                             }

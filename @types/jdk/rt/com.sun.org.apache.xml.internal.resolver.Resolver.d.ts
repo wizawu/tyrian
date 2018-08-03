@@ -6,10 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace resolver {
                             class Resolver extends com.sun.org.apache.xml.internal.resolver.Catalog {
-                                public static URISUFFIX: int
-                                public static SYSTEMSUFFIX: int
-                                public static RESOLVER: int
-                                public static SYSTEMREVERSE: int
+                                public static readonly URISUFFIX: int
+                                public static readonly SYSTEMSUFFIX: int
+                                public static readonly RESOLVER: int
+                                public static readonly SYSTEMREVERSE: int
                                 public constructor()
                                 public setupReaders(): void
                                 public addEntry(arg0: com.sun.org.apache.xml.internal.resolver.CatalogEntry): void

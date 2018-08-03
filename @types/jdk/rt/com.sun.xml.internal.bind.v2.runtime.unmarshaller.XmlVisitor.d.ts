@@ -7,10 +7,10 @@ declare namespace com {
                         namespace runtime {
                             namespace unmarshaller {
                                 interface XmlVisitor {
-                                    startDocument(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.LocatorEx | com.sun.xml.internal.bind.v2.runtime.unmarshaller.LocatorEx$$Lambda, arg1: javax.xml.namespace.NamespaceContext): void
+                                    startDocument(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.LocatorEx, arg1: javax.xml.namespace.NamespaceContext): void
                                     endDocument(): void
-                                    startElement(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName): void
-                                    endElement(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName): void
+                                    startElement(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName | com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName$$Lambda): void
+                                    endElement(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName | com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName$$Lambda): void
                                     startPrefixMapping(arg0: java.lang.String | string, arg1: java.lang.String | string): void
                                     endPrefixMapping(arg0: java.lang.String | string): void
                                     text(arg0: java.lang.CharSequence): void

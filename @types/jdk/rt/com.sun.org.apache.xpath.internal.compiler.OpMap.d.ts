@@ -7,7 +7,7 @@ declare namespace com {
                         namespace compiler {
                             class OpMap {
                                 protected m_currentPattern: string
-                                public static MAPINDEX_LENGTH: int
+                                public static readonly MAPINDEX_LENGTH: int
                                 public constructor()
                                 public toString(): string
                                 public getPatternString(): string

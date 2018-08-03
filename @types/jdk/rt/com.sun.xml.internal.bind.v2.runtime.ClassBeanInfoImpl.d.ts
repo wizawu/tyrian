@@ -6,8 +6,8 @@ declare namespace com {
                     namespace v2 {
                         namespace runtime {
                             class ClassBeanInfoImpl<BeanT> extends com.sun.xml.internal.bind.v2.runtime.JaxBeanInfo<BeanT> implements com.sun.xml.internal.bind.v2.runtime.AttributeAccessor<BeanT> {
-                                public properties: com.sun.xml.internal.bind.v2.runtime.property.Property<BeanT>[]
-                                public superClazz: com.sun.xml.internal.bind.v2.runtime.ClassBeanInfoImpl<BeanT>
+                                public readonly properties: com.sun.xml.internal.bind.v2.runtime.property.Property<BeanT>[]
+                                public readonly superClazz: com.sun.xml.internal.bind.v2.runtime.ClassBeanInfoImpl<BeanT>
                                 protected link(arg0: com.sun.xml.internal.bind.v2.runtime.JAXBContextImpl): void
                                 public wrapUp(): void
                                 public getElementNamespaceURI(arg0: BeanT): string

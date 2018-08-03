@@ -5,7 +5,7 @@ declare namespace jdk {
                 namespace regexp {
                     namespace joni {
                         abstract class ScannerSupport extends jdk.nashorn.internal.runtime.regexp.joni.encoding.IntHolder implements jdk.nashorn.internal.runtime.regexp.joni.exception.ErrorMessages {
-                            protected chars: char[]
+                            protected readonly chars: char[]
                             protected p: int
                             protected stop: int
                             protected c: int

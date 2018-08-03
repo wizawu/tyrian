@@ -7,7 +7,7 @@ declare namespace com {
                         namespace jaxp {
                             namespace datatype {
                                 class XMLGregorianCalendarImpl extends javax.xml.datatype.XMLGregorianCalendar implements java.io.Serializable , java.lang.Cloneable {
-                                    public static LEAP_YEAR_DEFAULT: javax.xml.datatype.XMLGregorianCalendar
+                                    public static readonly LEAP_YEAR_DEFAULT: javax.xml.datatype.XMLGregorianCalendar
                                     protected constructor(arg0: java.lang.String | string)
                                     public constructor()
                                     protected constructor(arg0: java.math.BigInteger, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: java.math.BigDecimal, arg7: int)

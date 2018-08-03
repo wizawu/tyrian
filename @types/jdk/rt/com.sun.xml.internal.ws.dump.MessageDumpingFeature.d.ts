@@ -5,7 +5,7 @@ declare namespace com {
                 namespace ws {
                     namespace dump {
                         class MessageDumpingFeature extends javax.xml.ws.WebServiceFeature {
-                            public static ID: string
+                            public static readonly ID: string
                             public constructor()
                             public constructor(arg0: java.lang.String | string, arg1: java.util.logging.Level, arg2: boolean)
                             public constructor(arg0: boolean)

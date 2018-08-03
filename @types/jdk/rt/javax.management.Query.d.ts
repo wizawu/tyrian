@@ -1,15 +1,15 @@
 declare namespace javax {
     namespace management {
         class Query {
-            public static GT: int
-            public static LT: int
-            public static GE: int
-            public static LE: int
-            public static EQ: int
-            public static PLUS: int
-            public static MINUS: int
-            public static TIMES: int
-            public static DIV: int
+            public static readonly GT: int
+            public static readonly LT: int
+            public static readonly GE: int
+            public static readonly LE: int
+            public static readonly EQ: int
+            public static readonly PLUS: int
+            public static readonly MINUS: int
+            public static readonly TIMES: int
+            public static readonly DIV: int
             public constructor()
             public static and(arg0: javax.management.QueryExp, arg1: javax.management.QueryExp): javax.management.QueryExp
             public static or(arg0: javax.management.QueryExp, arg1: javax.management.QueryExp): javax.management.QueryExp

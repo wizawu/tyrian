@@ -7,7 +7,7 @@ declare namespace com {
                         namespace runtime {
                             namespace property {
                                 abstract class PropertyImpl<BeanT> implements com.sun.xml.internal.bind.v2.runtime.property.Property<BeanT> {
-                                    protected fieldName: string
+                                    protected readonly fieldName: string
                                     public constructor(arg0: com.sun.xml.internal.bind.v2.runtime.JAXBContextImpl, arg1: com.sun.xml.internal.bind.v2.model.runtime.RuntimePropertyInfo)
                                     public getInfo(): com.sun.xml.internal.bind.v2.model.runtime.RuntimePropertyInfo
                                     public serializeBody(arg0: BeanT, arg1: com.sun.xml.internal.bind.v2.runtime.XMLSerializer, arg2: java.lang.Object): void

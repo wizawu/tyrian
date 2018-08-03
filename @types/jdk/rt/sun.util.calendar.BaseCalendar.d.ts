@@ -2,25 +2,25 @@ declare namespace sun {
     namespace util {
         namespace calendar {
             abstract class BaseCalendar extends sun.util.calendar.AbstractCalendar {
-                public static JANUARY: int
-                public static FEBRUARY: int
-                public static MARCH: int
-                public static APRIL: int
-                public static MAY: int
-                public static JUNE: int
-                public static JULY: int
-                public static AUGUST: int
-                public static SEPTEMBER: int
-                public static OCTOBER: int
-                public static NOVEMBER: int
-                public static DECEMBER: int
-                public static SUNDAY: int
-                public static MONDAY: int
-                public static TUESDAY: int
-                public static WEDNESDAY: int
-                public static THURSDAY: int
-                public static FRIDAY: int
-                public static SATURDAY: int
+                public static readonly JANUARY: int
+                public static readonly FEBRUARY: int
+                public static readonly MARCH: int
+                public static readonly APRIL: int
+                public static readonly MAY: int
+                public static readonly JUNE: int
+                public static readonly JULY: int
+                public static readonly AUGUST: int
+                public static readonly SEPTEMBER: int
+                public static readonly OCTOBER: int
+                public static readonly NOVEMBER: int
+                public static readonly DECEMBER: int
+                public static readonly SUNDAY: int
+                public static readonly MONDAY: int
+                public static readonly TUESDAY: int
+                public static readonly WEDNESDAY: int
+                public static readonly THURSDAY: int
+                public static readonly FRIDAY: int
+                public static readonly SATURDAY: int
                 public constructor()
                 public validate(arg0: sun.util.calendar.CalendarDate): boolean
                 public normalize(arg0: sun.util.calendar.CalendarDate): boolean

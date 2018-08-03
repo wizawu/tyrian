@@ -6,9 +6,6 @@ declare namespace com {
                     NONE: com.sun.jmx.interceptor.DefaultMBeanServerInterceptor$ResourceContext
                     done(): void
                 }
-                interface DefaultMBeanServerInterceptor$ResourceContext$$Lambda extends com.sun.jmx.mbeanserver.Repository$RegistrationContext {
-                    NONE: com.sun.jmx.interceptor.DefaultMBeanServerInterceptor$ResourceContext
-                }
             }
         }
     }

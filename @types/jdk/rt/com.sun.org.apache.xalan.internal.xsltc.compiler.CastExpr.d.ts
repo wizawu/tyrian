@@ -7,7 +7,7 @@ declare namespace com {
                         namespace xsltc {
                             namespace compiler {
                                 class CastExpr extends com.sun.org.apache.xalan.internal.xsltc.compiler.Expression {
-                                    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type)
+                                    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression | com.sun.org.apache.xalan.internal.xsltc.compiler.Expression$$Lambda, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type)
                                     public getExpr(): com.sun.org.apache.xalan.internal.xsltc.compiler.Expression
                                     public hasPositionCall(): boolean
                                     public hasLastCall(): boolean

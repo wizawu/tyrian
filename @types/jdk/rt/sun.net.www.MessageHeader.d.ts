@@ -3,7 +3,7 @@ declare namespace sun {
         namespace www {
             class MessageHeader {
                 public constructor()
-                public constructor(arg0: java.io.InputStream)
+                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                 public getHeaderNamesInList(): string
                 public reset(): void
                 public findValue(arg0: java.lang.String | string): string
@@ -24,8 +24,8 @@ declare namespace sun {
                 public set(arg0: java.lang.String | string, arg1: java.lang.String | string): void
                 public setIfNotSet(arg0: java.lang.String | string, arg1: java.lang.String | string): void
                 public static canonicalID(arg0: java.lang.String | string): string
-                public parseHeader(arg0: java.io.InputStream): void
-                public mergeHeader(arg0: java.io.InputStream): void
+                public parseHeader(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
+                public mergeHeader(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
                 public toString(): string
                 public static class: java.lang.Class<any>
             }

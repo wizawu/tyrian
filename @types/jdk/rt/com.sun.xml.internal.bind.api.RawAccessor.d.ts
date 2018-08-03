@@ -6,8 +6,8 @@ declare namespace com {
                     namespace api {
                         abstract class RawAccessor<B, V> {
                             public constructor()
-                            public get(arg0: B): V
-                            public set(arg0: B, arg1: V): void
+                            public abstract get(arg0: B): V
+                            public abstract set(arg0: B, arg1: V): void
                             public static class: java.lang.Class<any>
                         }
                     }

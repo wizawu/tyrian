@@ -1,14 +1,14 @@
 declare namespace java {
     namespace awt {
         abstract class GraphicsDevice {
-            public static TYPE_RASTER_SCREEN: int
-            public static TYPE_PRINTER: int
-            public static TYPE_IMAGE_BUFFER: int
+            public static readonly TYPE_RASTER_SCREEN: int
+            public static readonly TYPE_PRINTER: int
+            public static readonly TYPE_IMAGE_BUFFER: int
             protected constructor()
-            public getType(): int
-            public getIDstring(): string
-            public getConfigurations(): java.awt.GraphicsConfiguration[]
-            public getDefaultConfiguration(): java.awt.GraphicsConfiguration
+            public abstract getType(): int
+            public abstract getIDstring(): string
+            public abstract getConfigurations(): java.awt.GraphicsConfiguration[]
+            public abstract getDefaultConfiguration(): java.awt.GraphicsConfiguration
             public getBestConfiguration(arg0: java.awt.GraphicsConfigTemplate): java.awt.GraphicsConfiguration
             public isFullScreenSupported(): boolean
             public setFullScreenWindow(arg0: java.awt.Window): void

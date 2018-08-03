@@ -1,9 +1,9 @@
 declare namespace java {
     namespace time {
         class ZoneOffset extends java.time.ZoneId implements java.time.temporal.TemporalAccessor , java.time.temporal.TemporalAdjuster , java.lang.Comparable<java.time.ZoneOffset> , java.io.Serializable {
-            public static UTC: java.time.ZoneOffset
-            public static MIN: java.time.ZoneOffset
-            public static MAX: java.time.ZoneOffset
+            public static readonly UTC: java.time.ZoneOffset
+            public static readonly MIN: java.time.ZoneOffset
+            public static readonly MAX: java.time.ZoneOffset
             public static of(arg0: java.lang.String | string): java.time.ZoneOffset
             public static ofHours(arg0: int): java.time.ZoneOffset
             public static ofHoursMinutes(arg0: int, arg1: int): java.time.ZoneOffset

@@ -5,12 +5,12 @@ declare namespace com {
                 namespace fastinfoset {
                     namespace stax {
                         class StAXDocumentParser extends com.sun.xml.internal.fastinfoset.Decoder implements javax.xml.stream.XMLStreamReader , com.sun.xml.internal.org.jvnet.fastinfoset.stax.FastInfosetStreamReader , com.sun.xml.internal.fastinfoset.OctetBufferListener {
-                            protected static INTERNAL_STATE_START_DOCUMENT: int
-                            protected static INTERNAL_STATE_START_ELEMENT_TERMINATE: int
-                            protected static INTERNAL_STATE_SINGLE_TERMINATE_ELEMENT_WITH_NAMESPACES: int
-                            protected static INTERNAL_STATE_DOUBLE_TERMINATE_ELEMENT: int
-                            protected static INTERNAL_STATE_END_DOCUMENT: int
-                            protected static INTERNAL_STATE_VOID: int
+                            protected static readonly INTERNAL_STATE_START_DOCUMENT: int
+                            protected static readonly INTERNAL_STATE_START_ELEMENT_TERMINATE: int
+                            protected static readonly INTERNAL_STATE_SINGLE_TERMINATE_ELEMENT_WITH_NAMESPACES: int
+                            protected static readonly INTERNAL_STATE_DOUBLE_TERMINATE_ELEMENT: int
+                            protected static readonly INTERNAL_STATE_END_DOCUMENT: int
+                            protected static readonly INTERNAL_STATE_VOID: int
                             protected _internalState: int
                             protected _eventType: int
                             protected _qNameStack: com.sun.xml.internal.fastinfoset.QualifiedName[]
@@ -40,9 +40,9 @@ declare namespace com {
                             protected _characterEncodingScheme: string
                             protected _manager: com.sun.xml.internal.fastinfoset.stax.StAXManager
                             public constructor()
-                            public constructor(arg0: java.io.InputStream)
-                            public constructor(arg0: java.io.InputStream, arg1: com.sun.xml.internal.fastinfoset.stax.StAXManager)
-                            public setInputStream(arg0: java.io.InputStream): void
+                            public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
+                            public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: com.sun.xml.internal.fastinfoset.stax.StAXManager)
+                            public setInputStream(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
                             public reset(): void
                             protected resetOnError(): void
                             public getProperty(arg0: java.lang.String | string): java.lang.Object

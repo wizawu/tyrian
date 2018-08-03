@@ -8,7 +8,7 @@ declare namespace com {
                             namespace xs {
                                 namespace util {
                                     class ShortListImpl extends java.util.AbstractList implements com.sun.org.apache.xerces.internal.xs.ShortList {
-                                        public static EMPTY_LIST: com.sun.org.apache.xerces.internal.impl.xs.util.ShortListImpl
+                                        public static readonly EMPTY_LIST: com.sun.org.apache.xerces.internal.impl.xs.util.ShortListImpl
                                         public constructor(arg0: short[], arg1: int)
                                         public getLength(): int
                                         public contains(arg0: short): boolean

@@ -3,7 +3,7 @@ declare namespace com {
         namespace jndi {
             namespace ldap {
                 class ClientId {
-                    public static debug: boolean
+                    public static readonly debug: boolean
                     public equals(arg0: java.lang.Object): boolean
                     public hashCode(): int
                     public toString(): string

@@ -3,8 +3,11 @@ declare namespace javax {
         namespace validation {
             abstract class SchemaFactoryLoader {
                 protected constructor()
-                public newFactory(arg0: java.lang.String | string): javax.xml.validation.SchemaFactory
+                public abstract newFactory(arg0: java.lang.String | string): javax.xml.validation.SchemaFactory
                 public static class: java.lang.Class<any>
+            }
+            interface SchemaFactoryLoader$$Lambda {
+                (arg0: java.lang.String | string): javax.xml.validation.SchemaFactory
             }
         }
     }

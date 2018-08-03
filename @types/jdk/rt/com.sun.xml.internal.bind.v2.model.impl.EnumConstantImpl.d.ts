@@ -7,10 +7,10 @@ declare namespace com {
                         namespace model {
                             namespace impl {
                                 class EnumConstantImpl<T, C, F, M> implements com.sun.xml.internal.bind.v2.model.core.EnumConstant<T, C> {
-                                    protected lexical: string
-                                    protected owner: com.sun.xml.internal.bind.v2.model.impl.EnumLeafInfoImpl<T, C, F, M>
-                                    protected name: string
-                                    protected next: com.sun.xml.internal.bind.v2.model.impl.EnumConstantImpl<T, C, F, M>
+                                    protected readonly lexical: string
+                                    protected readonly owner: com.sun.xml.internal.bind.v2.model.impl.EnumLeafInfoImpl<T, C, F, M>
+                                    protected readonly name: string
+                                    protected readonly next: com.sun.xml.internal.bind.v2.model.impl.EnumConstantImpl<T, C, F, M>
                                     public constructor(arg0: com.sun.xml.internal.bind.v2.model.impl.EnumLeafInfoImpl<T, C, F, M>, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: com.sun.xml.internal.bind.v2.model.impl.EnumConstantImpl<T, C, F, M>)
                                     public getEnclosingClass(): com.sun.xml.internal.bind.v2.model.core.EnumLeafInfo<T, C>
                                     public getLexicalValue(): string

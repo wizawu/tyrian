@@ -4,8 +4,8 @@ declare namespace jdk {
             namespace xml {
                 class PropertiesDefaultHandler extends jdk.internal.org.xml.sax.helpers.DefaultHandler {
                     public constructor()
-                    public load(arg0: java.util.Properties, arg1: java.io.InputStream): void
-                    public store(arg0: java.util.Properties, arg1: java.io.OutputStream, arg2: java.lang.String | string, arg3: java.lang.String | string): void
+                    public load(arg0: java.util.Properties, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
+                    public store(arg0: java.util.Properties, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda, arg2: java.lang.String | string, arg3: java.lang.String | string): void
                     public startElement(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: jdk.internal.org.xml.sax.Attributes): void
                     public characters(arg0: char[], arg1: int, arg2: int): void
                     public endElement(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void

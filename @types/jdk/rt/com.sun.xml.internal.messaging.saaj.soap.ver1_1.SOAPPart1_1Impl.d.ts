@@ -7,7 +7,7 @@ declare namespace com {
                         namespace soap {
                             namespace ver1_1 {
                                 class SOAPPart1_1Impl extends com.sun.xml.internal.messaging.saaj.soap.SOAPPartImpl implements javax.xml.soap.SOAPConstants {
-                                    protected static log: java.util.logging.Logger
+                                    protected static readonly log: java.util.logging.Logger
                                     public constructor()
                                     public constructor(arg0: com.sun.xml.internal.messaging.saaj.soap.MessageImpl)
                                     protected getContentType(): string

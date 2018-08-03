@@ -8,8 +8,11 @@ declare namespace com {
                             abstract class CleanUpExecutorFactory {
                                 protected constructor()
                                 public static newInstance(): com.sun.xml.internal.org.jvnet.mimepull.CleanUpExecutorFactory
-                                public getExecutor(): java.util.concurrent.Executor
+                                public abstract getExecutor(): java.util.concurrent.Executor
                                 public static class: java.lang.Class<any>
+                            }
+                            interface CleanUpExecutorFactory$$Lambda {
+                                (): java.util.concurrent.Executor
                             }
                         }
                     }

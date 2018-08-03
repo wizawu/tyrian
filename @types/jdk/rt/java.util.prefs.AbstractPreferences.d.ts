@@ -3,7 +3,7 @@ declare namespace java {
         namespace prefs {
             abstract class AbstractPreferences extends java.util.prefs.Preferences {
                 protected newNode: boolean
-                protected lock: java.lang.Object
+                protected readonly lock: java.lang.Object
                 protected constructor(arg0: java.util.prefs.AbstractPreferences, arg1: java.lang.String | string)
                 public put(arg0: java.lang.String | string, arg1: java.lang.String | string): void
                 public get(arg0: java.lang.String | string, arg1: java.lang.String | string): string
@@ -31,26 +31,26 @@ declare namespace java {
                 public name(): string
                 public absolutePath(): string
                 public isUserNode(): boolean
-                public addPreferenceChangeListener(arg0: java.util.prefs.PreferenceChangeListener | java.util.prefs.PreferenceChangeListener$$Lambda): void
-                public removePreferenceChangeListener(arg0: java.util.prefs.PreferenceChangeListener | java.util.prefs.PreferenceChangeListener$$Lambda): void
+                public addPreferenceChangeListener(arg0: java.util.prefs.PreferenceChangeListener): void
+                public removePreferenceChangeListener(arg0: java.util.prefs.PreferenceChangeListener): void
                 public addNodeChangeListener(arg0: java.util.prefs.NodeChangeListener): void
                 public removeNodeChangeListener(arg0: java.util.prefs.NodeChangeListener): void
-                protected putSpi(arg0: java.lang.String | string, arg1: java.lang.String | string): void
-                protected getSpi(arg0: java.lang.String | string): string
-                protected removeSpi(arg0: java.lang.String | string): void
-                protected removeNodeSpi(): void
-                protected keysSpi(): java.lang.String[]
-                protected childrenNamesSpi(): java.lang.String[]
+                protected abstract putSpi(arg0: java.lang.String | string, arg1: java.lang.String | string): void
+                protected abstract getSpi(arg0: java.lang.String | string): string
+                protected abstract removeSpi(arg0: java.lang.String | string): void
+                protected abstract removeNodeSpi(): void
+                protected abstract keysSpi(): java.lang.String[]
+                protected abstract childrenNamesSpi(): java.lang.String[]
                 protected getChild(arg0: java.lang.String | string): java.util.prefs.AbstractPreferences
-                protected childSpi(arg0: java.lang.String | string): java.util.prefs.AbstractPreferences
+                protected abstract childSpi(arg0: java.lang.String | string): java.util.prefs.AbstractPreferences
                 public toString(): string
                 public sync(): void
-                protected syncSpi(): void
+                protected abstract syncSpi(): void
                 public flush(): void
-                protected flushSpi(): void
+                protected abstract flushSpi(): void
                 protected isRemoved(): boolean
-                public exportNode(arg0: java.io.OutputStream): void
-                public exportSubtree(arg0: java.io.OutputStream): void
+                public exportNode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public exportSubtree(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                 public static class: java.lang.Class<any>
             }
         }

@@ -26,8 +26,8 @@ declare namespace com {
                                 public endElement(arg0: java.lang.String | string): void
                                 public processAttributes(arg0: java.io.Writer, arg1: int): void
                                 protected closeStartTag(): void
-                                protected init(arg0: java.io.OutputStream, arg1: java.util.Properties): void
-                                public setOutputStream(arg0: java.io.OutputStream): void
+                                protected init(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: java.util.Properties): void
+                                public setOutputStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                                 public namespaceAfterStartElement(arg0: java.lang.String | string, arg1: java.lang.String | string): void
                                 public startDTD(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void
                                 public endDTD(): void

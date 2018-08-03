@@ -22,11 +22,14 @@ declare namespace java {
                 protected implFlush(arg0: java.nio.ByteBuffer): java.nio.charset.CoderResult
                 public reset(): java.nio.charset.CharsetEncoder
                 protected implReset(): void
-                protected encodeLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
+                protected abstract encodeLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
                 public encode(arg0: java.nio.CharBuffer): java.nio.ByteBuffer
                 public canEncode(arg0: char): boolean
                 public canEncode(arg0: java.lang.CharSequence): boolean
                 public static class: java.lang.Class<any>
+            }
+            interface CharsetEncoder$$Lambda {
+                (arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
             }
         }
     }

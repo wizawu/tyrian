@@ -10,10 +10,10 @@ declare namespace com {
                                     getExtensions(): java.lang.Iterable<com.sun.xml.internal.ws.api.model.wsdl.WSDLExtension>
                                     getExtensions<T extends com.sun.xml.internal.ws.api.model.wsdl.WSDLExtension>(arg0: java.lang.Class<T>): java.lang.Iterable<T>
                                     getExtension<T extends com.sun.xml.internal.ws.api.model.wsdl.WSDLExtension>(arg0: java.lang.Class<T>): T
-                                    addExtension(arg0: com.sun.xml.internal.ws.api.model.wsdl.WSDLExtension | com.sun.xml.internal.ws.api.model.wsdl.WSDLExtension$$Lambda): void
-                                    areRequiredExtensionsUnderstood(): boolean
-                                    addNotUnderstoodExtension(arg0: javax.xml.namespace.QName, arg1: org.xml.sax.Locator): void
-                                    getNotUnderstoodExtensions(): java.util.List<com.sun.xml.internal.ws.api.model.wsdl.WSDLExtension>
+                                    addExtension<T extends com.sun.xml.internal.ws.api.model.wsdl.WSDLExtension>(arg0: com.sun.xml.internal.ws.api.model.wsdl.WSDLExtension | com.sun.xml.internal.ws.api.model.wsdl.WSDLExtension$$Lambda): void
+                                    areRequiredExtensionsUnderstood<T extends com.sun.xml.internal.ws.api.model.wsdl.WSDLExtension>(): boolean
+                                    addNotUnderstoodExtension<T extends com.sun.xml.internal.ws.api.model.wsdl.WSDLExtension>(arg0: javax.xml.namespace.QName, arg1: org.xml.sax.Locator): void
+                                    getNotUnderstoodExtensions<T extends com.sun.xml.internal.ws.api.model.wsdl.WSDLExtension>(): java.util.List<com.sun.xml.internal.ws.api.model.wsdl.WSDLExtension>
                                 }
                             }
                         }

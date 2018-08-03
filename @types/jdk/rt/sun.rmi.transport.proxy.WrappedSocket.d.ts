@@ -6,7 +6,7 @@ declare namespace sun {
                     protected socket: java.net.Socket
                     protected in: java.io.InputStream
                     protected out: java.io.OutputStream
-                    public constructor(arg0: java.net.Socket, arg1: java.io.InputStream, arg2: java.io.OutputStream)
+                    public constructor(arg0: java.net.Socket, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: java.io.OutputStream | java.io.OutputStream$$Lambda)
                     public getInetAddress(): java.net.InetAddress
                     public getLocalAddress(): java.net.InetAddress
                     public getPort(): int

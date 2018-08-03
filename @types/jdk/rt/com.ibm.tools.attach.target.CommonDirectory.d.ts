@@ -4,7 +4,7 @@ declare namespace com {
             namespace attach {
                 namespace target {
                     abstract class CommonDirectory {
-                        public static J9PORT_INFO_SHSEM_OPENED_STALE: int
+                        public static readonly J9PORT_INFO_SHSEM_OPENED_STALE: int
                         public constructor()
                         public static getCommonDirFileObject(): java.io.File
                         public static obtainMasterLock(): void

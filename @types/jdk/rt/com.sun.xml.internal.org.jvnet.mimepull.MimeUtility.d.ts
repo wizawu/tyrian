@@ -6,7 +6,7 @@ declare namespace com {
                     namespace jvnet {
                         namespace mimepull {
                             class MimeUtility {
-                                public static decode(arg0: java.io.InputStream, arg1: java.lang.String | string): java.io.InputStream
+                                public static decode(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.lang.String | string): java.io.InputStream
                                 public static class: java.lang.Class<any>
                             }
                         }

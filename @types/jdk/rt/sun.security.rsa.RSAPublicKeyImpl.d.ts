@@ -10,6 +10,7 @@ declare namespace sun {
                 protected parseKeyBits(): void
                 public toString(): string
                 protected writeReplace(): java.lang.Object
+                public static class: java.lang.Class<any>
             }
         }
     }

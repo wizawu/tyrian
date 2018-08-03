@@ -4,8 +4,8 @@ declare namespace jdk {
             namespace codegen {
                 abstract class CompilerConstants$FieldAccess extends jdk.nashorn.internal.codegen.CompilerConstants$Access {
                     protected constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
-                    protected get(arg0: jdk.nashorn.internal.codegen.MethodEmitter): jdk.nashorn.internal.codegen.MethodEmitter
-                    protected put(arg0: jdk.nashorn.internal.codegen.MethodEmitter): void
+                    protected abstract get(arg0: jdk.nashorn.internal.codegen.MethodEmitter): jdk.nashorn.internal.codegen.MethodEmitter
+                    protected abstract put(arg0: jdk.nashorn.internal.codegen.MethodEmitter): void
                     public descriptor(): string
                     public name(): string
                     public className(): string

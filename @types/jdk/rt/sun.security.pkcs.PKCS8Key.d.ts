@@ -5,7 +5,7 @@ declare namespace sun {
                 protected algid: sun.security.x509.AlgorithmId
                 protected key: byte[]
                 protected encodedKey: byte[]
-                public static version: java.math.BigInteger
+                public static readonly version: java.math.BigInteger
                 public constructor()
                 public static parse(arg0: sun.security.util.DerValue): sun.security.pkcs.PKCS8Key
                 public static parseKey(arg0: sun.security.util.DerValue): java.security.PrivateKey
@@ -16,7 +16,7 @@ declare namespace sun {
                 public getEncoded(): byte[]
                 public getFormat(): string
                 public encode(): byte[]
-                public decode(arg0: java.io.InputStream): void
+                public decode(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
                 public decode(arg0: byte[]): void
                 protected writeReplace(): java.lang.Object
                 public equals(arg0: java.lang.Object): boolean

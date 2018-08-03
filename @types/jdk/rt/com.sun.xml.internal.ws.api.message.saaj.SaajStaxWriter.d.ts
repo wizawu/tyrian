@@ -11,10 +11,10 @@ declare namespace com {
                                     protected envURI: string
                                     protected currentElement: javax.xml.soap.SOAPElement
                                     protected deferredElement: com.sun.xml.internal.ws.api.message.saaj.SaajStaxWriter$DeferredElement
-                                    protected static Envelope: string
-                                    protected static Header: string
-                                    protected static Body: string
-                                    protected static xmlns: string
+                                    protected static readonly Envelope: string
+                                    protected static readonly Header: string
+                                    protected static readonly Body: string
+                                    protected static readonly xmlns: string
                                     public constructor(arg0: javax.xml.soap.SOAPMessage)
                                     public getSOAPMessage(): javax.xml.soap.SOAPMessage
                                     public writeStartElement(arg0: java.lang.String | string): void

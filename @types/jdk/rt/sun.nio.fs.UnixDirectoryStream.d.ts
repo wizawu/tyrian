@@ -8,7 +8,7 @@ declare namespace sun {
                 protected isOpen(): boolean
                 protected closeImpl(): boolean
                 public close(): void
-                protected iterator(arg0: java.nio.file.DirectoryStream<java.nio.file.Path> | java.nio.file.DirectoryStream$$Lambda<java.nio.file.Path>): java.util.Iterator<java.nio.file.Path>
+                protected iterator(arg0: java.nio.file.DirectoryStream<java.nio.file.Path>): java.util.Iterator<java.nio.file.Path>
                 public iterator(): java.util.Iterator<java.nio.file.Path>
                 public static class: java.lang.Class<any>
             }

@@ -6,8 +6,8 @@ declare namespace com {
                     namespace v2 {
                         namespace util {
                             class QNameMap$Entry<V> {
-                                public nsUri: string
-                                public localName: string
+                                public readonly nsUri: string
+                                public readonly localName: string
                                 public createQName(): javax.xml.namespace.QName
                                 public getValue(): V
                                 public setValue(arg0: V): V

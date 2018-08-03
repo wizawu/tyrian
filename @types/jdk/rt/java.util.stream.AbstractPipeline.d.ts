@@ -2,7 +2,7 @@ declare namespace java {
     namespace util {
         namespace stream {
             abstract class AbstractPipeline<E_IN, E_OUT, S extends java.util.stream.BaseStream<E_OUT, S>> extends java.util.stream.PipelineHelper<E_OUT> implements java.util.stream.BaseStream<E_OUT, S> {
-                protected sourceOrOpFlags: int
+                protected readonly sourceOrOpFlags: int
                 public sequential(): S
                 public parallel(): S
                 public close(): void

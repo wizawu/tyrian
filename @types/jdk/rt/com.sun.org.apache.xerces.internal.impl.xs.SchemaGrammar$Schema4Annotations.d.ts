@@ -7,7 +7,7 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 class SchemaGrammar$Schema4Annotations extends com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar {
-                                    public static INSTANCE: com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar$Schema4Annotations
+                                    public static readonly INSTANCE: com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar$Schema4Annotations
                                     public getGrammarDescription(): com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarDescription
                                     public setImportedGrammars(arg0: java.util.Vector): void
                                     public addGlobalAttributeDecl(arg0: com.sun.org.apache.xerces.internal.impl.xs.XSAttributeDecl): void

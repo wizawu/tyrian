@@ -7,7 +7,7 @@ declare namespace com {
                         namespace soap {
                             namespace ver1_1 {
                                 class Header1_1Impl extends com.sun.xml.internal.messaging.saaj.soap.impl.HeaderImpl {
-                                    protected static log: java.util.logging.Logger
+                                    protected static readonly log: java.util.logging.Logger
                                     public constructor(arg0: com.sun.xml.internal.messaging.saaj.soap.SOAPDocumentImpl, arg1: java.lang.String | string)
                                     protected getNotUnderstoodName(): com.sun.xml.internal.messaging.saaj.soap.name.NameImpl
                                     protected getUpgradeName(): com.sun.xml.internal.messaging.saaj.soap.name.NameImpl

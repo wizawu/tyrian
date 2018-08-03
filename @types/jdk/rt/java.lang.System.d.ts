@@ -1,10 +1,10 @@
 declare namespace java {
     namespace lang {
         class System {
-            public static in: java.io.InputStream
-            public static out: java.io.PrintStream
-            public static err: java.io.PrintStream
-            public static setIn(arg0: java.io.InputStream): void
+            public static readonly in: java.io.InputStream
+            public static readonly out: java.io.PrintStream
+            public static readonly err: java.io.PrintStream
+            public static setIn(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
             public static setOut(arg0: java.io.PrintStream): void
             public static setErr(arg0: java.io.PrintStream): void
             public static arraycopy(arg0: java.lang.Object, arg1: int, arg2: java.lang.Object, arg3: int, arg4: int): void

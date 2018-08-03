@@ -6,7 +6,7 @@ declare namespace com {
                     namespace encoding {
                         namespace xml {
                             class XMLMessage$UnknownContent extends com.sun.xml.internal.ws.message.AbstractMessageImpl implements com.sun.xml.internal.ws.encoding.xml.XMLMessage$MessageDataSource {
-                                public constructor(arg0: java.lang.String | string, arg1: java.io.InputStream)
+                                public constructor(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda)
                                 public constructor(arg0: javax.activation.DataSource)
                                 public hasUnconsumedDataSource(): boolean
                                 public getDataSource(): javax.activation.DataSource

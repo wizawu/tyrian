@@ -1,9 +1,9 @@
 declare namespace sun {
     namespace print {
         class ServiceDialog extends javax.swing.JDialog implements java.awt.event.ActionListener {
-            public static WAITING: int
-            public static APPROVE: int
-            public static CANCEL: int
+            public static readonly WAITING: int
+            public static readonly APPROVE: int
+            public static readonly CANCEL: int
             public constructor(arg0: java.awt.GraphicsConfiguration, arg1: int, arg2: int, arg3: javax.print.PrintService[], arg4: int, arg5: javax.print.DocFlavor, arg6: javax.print.attribute.PrintRequestAttributeSet, arg7: java.awt.Dialog)
             public constructor(arg0: java.awt.GraphicsConfiguration, arg1: int, arg2: int, arg3: javax.print.PrintService[], arg4: int, arg5: javax.print.DocFlavor, arg6: javax.print.attribute.PrintRequestAttributeSet, arg7: java.awt.Frame)
             public constructor(arg0: java.awt.GraphicsConfiguration, arg1: int, arg2: int, arg3: javax.print.PrintService, arg4: javax.print.DocFlavor, arg5: javax.print.attribute.PrintRequestAttributeSet, arg6: java.awt.Dialog)

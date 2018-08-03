@@ -2,8 +2,8 @@ declare namespace javax {
     namespace print {
         namespace attribute {
             abstract class ResolutionSyntax implements java.io.Serializable , java.lang.Cloneable {
-                public static DPI: int
-                public static DPCM: int
+                public static readonly DPI: int
+                public static readonly DPCM: int
                 public constructor(arg0: int, arg1: int, arg2: int)
                 public getResolution(arg0: int): int[]
                 public getCrossFeedResolution(arg0: int): int

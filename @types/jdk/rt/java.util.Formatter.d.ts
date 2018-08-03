@@ -12,9 +12,9 @@ declare namespace java {
             public constructor(arg0: java.io.File, arg1: java.lang.String | string)
             public constructor(arg0: java.io.File, arg1: java.lang.String | string, arg2: java.util.Locale)
             public constructor(arg0: java.io.PrintStream)
-            public constructor(arg0: java.io.OutputStream)
-            public constructor(arg0: java.io.OutputStream, arg1: java.lang.String | string)
-            public constructor(arg0: java.io.OutputStream, arg1: java.lang.String | string, arg2: java.util.Locale)
+            public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda)
+            public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: java.lang.String | string)
+            public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: java.lang.String | string, arg2: java.util.Locale)
             public locale(): java.util.Locale
             public out(): java.lang.Appendable
             public toString(): string

@@ -4,7 +4,7 @@ declare namespace jdk {
             namespace objectweb {
                 namespace asm {
                     abstract class FieldVisitor {
-                        protected api: int
+                        protected readonly api: int
                         protected fv: jdk.internal.org.objectweb.asm.FieldVisitor
                         public constructor(arg0: int)
                         public constructor(arg0: int, arg1: jdk.internal.org.objectweb.asm.FieldVisitor)

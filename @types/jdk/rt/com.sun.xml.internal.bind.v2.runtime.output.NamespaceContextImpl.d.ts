@@ -9,7 +9,7 @@ declare namespace com {
                                 class NamespaceContextImpl implements com.sun.xml.internal.bind.v2.runtime.NamespaceContext2 {
                                     public collectionMode: boolean
                                     public constructor(arg0: com.sun.xml.internal.bind.v2.runtime.XMLSerializer)
-                                    public setPrefixMapper(arg0: com.sun.xml.internal.bind.marshaller.NamespacePrefixMapper): void
+                                    public setPrefixMapper(arg0: com.sun.xml.internal.bind.marshaller.NamespacePrefixMapper | com.sun.xml.internal.bind.marshaller.NamespacePrefixMapper$$Lambda): void
                                     public getPrefixMapper(): com.sun.xml.internal.bind.marshaller.NamespacePrefixMapper
                                     public reset(): void
                                     public declareNsUri(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: boolean): int

@@ -3,7 +3,7 @@ declare namespace javax {
         class MailcapCommandMap extends javax.activation.CommandMap {
             public constructor()
             public constructor(arg0: java.lang.String | string)
-            public constructor(arg0: java.io.InputStream)
+            public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
             public getPreferredCommands(arg0: java.lang.String | string): javax.activation.CommandInfo[]
             public getAllCommands(arg0: java.lang.String | string): javax.activation.CommandInfo[]
             public getCommand(arg0: java.lang.String | string, arg1: java.lang.String | string): javax.activation.CommandInfo

@@ -5,7 +5,7 @@ declare namespace com {
                 namespace ws {
                     namespace util {
                         class Constants {
-                            public static LoggingDomain: string
+                            public static readonly LoggingDomain: string
                             public constructor()
                             public static class: java.lang.Class<any>
                         }

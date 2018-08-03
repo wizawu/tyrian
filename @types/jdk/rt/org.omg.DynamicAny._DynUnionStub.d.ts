@@ -2,7 +2,7 @@ declare namespace org {
     namespace omg {
         namespace DynamicAny {
             class _DynUnionStub extends org.omg.CORBA.portable.ObjectImpl implements org.omg.DynamicAny.DynUnion {
-                public static _opsClass: java.lang.Class
+                public static readonly _opsClass: java.lang.Class
                 public constructor()
                 public get_discriminator(): org.omg.DynamicAny.DynAny
                 public set_discriminator(arg0: org.omg.DynamicAny.DynAny): void

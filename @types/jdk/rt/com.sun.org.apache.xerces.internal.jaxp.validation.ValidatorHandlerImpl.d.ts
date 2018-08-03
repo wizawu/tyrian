@@ -7,7 +7,7 @@ declare namespace com {
                         namespace jaxp {
                             namespace validation {
                                 class ValidatorHandlerImpl extends javax.xml.validation.ValidatorHandler implements org.xml.sax.DTDHandler , com.sun.org.apache.xerces.internal.impl.validation.EntityState , com.sun.org.apache.xerces.internal.xs.PSVIProvider , com.sun.org.apache.xerces.internal.jaxp.validation.ValidatorHelper , com.sun.org.apache.xerces.internal.xni.XMLDocumentHandler {
-                                    protected static STRING_INTERNING: string
+                                    protected static readonly STRING_INTERNING: string
                                     public constructor(arg0: com.sun.org.apache.xerces.internal.jaxp.validation.XSGrammarPoolContainer)
                                     public constructor(arg0: com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaValidatorComponentManager)
                                     public setContentHandler(arg0: org.xml.sax.ContentHandler): void

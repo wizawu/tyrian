@@ -12,9 +12,9 @@ declare namespace com {
                                 public next_n(arg0: int, arg1: org.omg.CosNaming.BindingListHolder): boolean
                                 public list(arg0: int, arg1: org.omg.CosNaming.BindingListHolder): boolean
                                 public destroy(): void
-                                protected NextOne(arg0: org.omg.CosNaming.BindingHolder): boolean
-                                protected Destroy(): void
-                                protected RemainingElements(): int
+                                protected abstract NextOne(arg0: org.omg.CosNaming.BindingHolder): boolean
+                                protected abstract Destroy(): void
+                                protected abstract RemainingElements(): int
                                 public static class: java.lang.Class<any>
                             }
                         }

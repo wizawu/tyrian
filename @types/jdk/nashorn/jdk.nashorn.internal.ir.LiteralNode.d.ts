@@ -3,8 +3,8 @@ declare namespace jdk {
         namespace internal {
             namespace ir {
                 abstract class LiteralNode<T> extends jdk.nashorn.internal.ir.Expression implements jdk.nashorn.internal.ir.PropertyKey {
-                    protected value: T
-                    public static POSTSET_MARKER: java.lang.Object
+                    protected readonly value: T
+                    public static readonly POSTSET_MARKER: java.lang.Object
                     protected constructor(arg0: long, arg1: int, arg2: T)
                     protected constructor(arg0: jdk.nashorn.internal.ir.LiteralNode<T>)
                     protected constructor(arg0: jdk.nashorn.internal.ir.LiteralNode<T>, arg1: T)

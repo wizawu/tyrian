@@ -9,8 +9,11 @@ declare namespace com {
                                 namespace storage {
                                     abstract class StorageResolverSpi {
                                         public constructor()
-                                        public getIterator(): java.util.Iterator<java.security.cert.Certificate>
+                                        public abstract getIterator(): java.util.Iterator<java.security.cert.Certificate>
                                         public static class: java.lang.Class<any>
+                                    }
+                                    interface StorageResolverSpi$$Lambda {
+                                        (): java.util.Iterator<java.security.cert.Certificate>
                                     }
                                 }
                             }

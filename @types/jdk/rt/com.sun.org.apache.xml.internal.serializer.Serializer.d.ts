@@ -6,7 +6,7 @@ declare namespace com {
                     namespace internal {
                         namespace serializer {
                             interface Serializer {
-                                setOutputStream(arg0: java.io.OutputStream): void
+                                setOutputStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                                 getOutputStream(): java.io.OutputStream
                                 setWriter(arg0: java.io.Writer): void
                                 getWriter(): java.io.Writer

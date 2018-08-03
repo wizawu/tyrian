@@ -4,7 +4,7 @@ declare namespace com {
             namespace cosnaming {
                 class CNCtx implements javax.naming.Context {
                     public _nc: org.omg.CosNaming.NamingContext
-                    public static trustURLCodebase: boolean
+                    public static readonly trustURLCodebase: boolean
                     public static createUsingURL(arg0: java.lang.String | string, arg1: java.util.Hashtable<any, any>): javax.naming.spi.ResolveResult
                     public getNameInNamespace(): string
                     public lookup(arg0: java.lang.String | string): java.lang.Object

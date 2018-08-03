@@ -2,10 +2,10 @@ declare namespace java {
     namespace lang {
         namespace invoke {
             class MethodHandles$Lookup {
-                public static PUBLIC: int
-                public static PRIVATE: int
-                public static PROTECTED: int
-                public static PACKAGE: int
+                public static readonly PUBLIC: int
+                public static readonly PRIVATE: int
+                public static readonly PROTECTED: int
+                public static readonly PACKAGE: int
                 public lookupModes(): int
                 public bind(arg0: java.lang.Object, arg1: java.lang.String | string, arg2: java.lang.invoke.MethodType): java.lang.invoke.MethodHandle
                 public findSpecial(arg0: java.lang.Class<any>, arg1: java.lang.String | string, arg2: java.lang.invoke.MethodType, arg3: java.lang.Class<any>): java.lang.invoke.MethodHandle

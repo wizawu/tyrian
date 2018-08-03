@@ -12,7 +12,7 @@ declare namespace com {
                                 asDataHandler(): javax.activation.DataHandler
                                 asSource(): javax.xml.transform.Source
                                 asInputStream(): java.io.InputStream
-                                writeTo(arg0: java.io.OutputStream): void
+                                writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                                 writeTo(arg0: javax.xml.soap.SOAPMessage): void
                             }
                         }

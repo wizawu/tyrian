@@ -2,10 +2,10 @@ declare namespace sun {
     namespace util {
         namespace locale {
             class LanguageTag {
-                public static SEP: string
-                public static PRIVATEUSE: string
-                public static UNDETERMINED: string
-                public static PRIVUSE_VARIANT_PREFIX: string
+                public static readonly SEP: string
+                public static readonly PRIVATEUSE: string
+                public static readonly UNDETERMINED: string
+                public static readonly PRIVUSE_VARIANT_PREFIX: string
                 public static parse(arg0: java.lang.String | string, arg1: sun.util.locale.ParseStatus): sun.util.locale.LanguageTag
                 public static parseLocale(arg0: sun.util.locale.BaseLocale, arg1: sun.util.locale.LocaleExtensions): sun.util.locale.LanguageTag
                 public getLanguage(): string

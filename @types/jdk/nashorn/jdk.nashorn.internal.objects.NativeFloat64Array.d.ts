@@ -3,7 +3,7 @@ declare namespace jdk {
         namespace internal {
             namespace objects {
                 class NativeFloat64Array extends jdk.nashorn.internal.objects.ArrayBufferView {
-                    public static BYTES_PER_ELEMENT: int
+                    public static readonly BYTES_PER_ELEMENT: int
                     public static constructor(arg0: boolean, arg1: java.lang.Object, ...arg2: java.lang.Object[]): jdk.nashorn.internal.objects.NativeFloat64Array
                     protected factory(): jdk.nashorn.internal.objects.ArrayBufferView$Factory
                     protected isFloatArray(): boolean

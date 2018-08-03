@@ -6,13 +6,13 @@ declare namespace com {
                     namespace internal {
                         namespace parsers {
                             abstract class AbstractSAXParser extends com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser implements com.sun.org.apache.xerces.internal.xs.PSVIProvider , org.xml.sax.Parser , org.xml.sax.XMLReader {
-                                protected static NAMESPACES: string
-                                protected static NAMESPACE_PREFIXES: string
-                                protected static STRING_INTERNING: string
-                                protected static ALLOW_UE_AND_NOTATION_EVENTS: string
-                                protected static LEXICAL_HANDLER: string
-                                protected static DECLARATION_HANDLER: string
-                                protected static DOM_NODE: string
+                                protected static readonly NAMESPACES: string
+                                protected static readonly NAMESPACE_PREFIXES: string
+                                protected static readonly STRING_INTERNING: string
+                                protected static readonly ALLOW_UE_AND_NOTATION_EVENTS: string
+                                protected static readonly LEXICAL_HANDLER: string
+                                protected static readonly DECLARATION_HANDLER: string
+                                protected static readonly DOM_NODE: string
                                 protected fNamespaces: boolean
                                 protected fNamespacePrefixes: boolean
                                 protected fLexicalHandlerParameterEntities: boolean

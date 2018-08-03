@@ -6,7 +6,7 @@ declare namespace jdk {
                     public instMessage: java.lang.Object
                     public nashornException: java.lang.Object
                     public getClassName(): string
-                    public public static constructor(arg0: boolean, arg1: java.lang.Object, arg2: java.lang.Object): jdk.nashorn.internal.objects.NativeTypeError
+                    public static public static constructor(arg0: boolean, arg1: java.lang.Object, arg2: java.lang.Object): jdk.nashorn.internal.objects.NativeTypeError
                     public static $clinit$(): void
                     public G$instMessage(): java.lang.Object
                     public S$instMessage(arg0: java.lang.Object): void

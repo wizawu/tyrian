@@ -9,9 +9,6 @@ declare namespace com {
                                 interface ValuePropertyInfo<T, C> extends com.sun.xml.internal.bind.v2.model.core.PropertyInfo<T, C> , com.sun.xml.internal.bind.v2.model.core.NonElementRef<T, C> {
                                     getAdapter(): com.sun.xml.internal.bind.v2.model.core.Adapter<T, C>
                                 }
-                                interface ValuePropertyInfo$$Lambda<T, C> extends com.sun.xml.internal.bind.v2.model.core.PropertyInfo<T, C> , com.sun.xml.internal.bind.v2.model.core.NonElementRef<T, C> {
-                                    (): com.sun.xml.internal.bind.v2.model.core.Adapter<T, C>
-                                }
                             }
                         }
                     }

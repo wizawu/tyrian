@@ -2,7 +2,7 @@ declare namespace javax {
     namespace swing {
         namespace tree {
             class DefaultMutableTreeNode implements java.lang.Cloneable , javax.swing.tree.MutableTreeNode , java.io.Serializable {
-                public static EMPTY_ENUMERATION: java.util.Enumeration<javax.swing.tree.TreeNode>
+                public static readonly EMPTY_ENUMERATION: java.util.Enumeration<javax.swing.tree.TreeNode>
                 protected parent: javax.swing.tree.MutableTreeNode
                 protected children: java.util.Vector
                 protected userObject: java.lang.Object

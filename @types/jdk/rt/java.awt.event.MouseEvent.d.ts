@@ -2,20 +2,20 @@ declare namespace java {
     namespace awt {
         namespace event {
             class MouseEvent extends java.awt.event.InputEvent {
-                public static MOUSE_FIRST: int
-                public static MOUSE_LAST: int
-                public static MOUSE_CLICKED: int
-                public static MOUSE_PRESSED: int
-                public static MOUSE_RELEASED: int
-                public static MOUSE_MOVED: int
-                public static MOUSE_ENTERED: int
-                public static MOUSE_EXITED: int
-                public static MOUSE_DRAGGED: int
-                public static MOUSE_WHEEL: int
-                public static NOBUTTON: int
-                public static BUTTON1: int
-                public static BUTTON2: int
-                public static BUTTON3: int
+                public static readonly MOUSE_FIRST: int
+                public static readonly MOUSE_LAST: int
+                public static readonly MOUSE_CLICKED: int
+                public static readonly MOUSE_PRESSED: int
+                public static readonly MOUSE_RELEASED: int
+                public static readonly MOUSE_MOVED: int
+                public static readonly MOUSE_ENTERED: int
+                public static readonly MOUSE_EXITED: int
+                public static readonly MOUSE_DRAGGED: int
+                public static readonly MOUSE_WHEEL: int
+                public static readonly NOBUTTON: int
+                public static readonly BUTTON1: int
+                public static readonly BUTTON2: int
+                public static readonly BUTTON3: int
                 public getLocationOnScreen(): java.awt.Point
                 public getXOnScreen(): int
                 public getYOnScreen(): int

@@ -3,7 +3,7 @@ declare namespace javax {
         namespace transform {
             namespace sax {
                 class SAXResult implements javax.xml.transform.Result {
-                    public static FEATURE: string
+                    public static readonly FEATURE: string
                     public constructor()
                     public constructor(arg0: org.xml.sax.ContentHandler)
                     public setHandler(arg0: org.xml.sax.ContentHandler): void

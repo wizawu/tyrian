@@ -9,32 +9,32 @@ declare namespace com {
                                 protected fElementAttributeLimit: int
                                 protected fXMLNameLimit: int
                                 protected fExternalSubsetResolver: com.sun.org.apache.xerces.internal.impl.ExternalSubsetResolver
-                                protected static SCANNER_STATE_START_OF_MARKUP: int
-                                protected static SCANNER_STATE_CONTENT: int
-                                protected static SCANNER_STATE_PI: int
-                                protected static SCANNER_STATE_DOCTYPE: int
-                                protected static SCANNER_STATE_XML_DECL: int
-                                protected static SCANNER_STATE_ROOT_ELEMENT: int
-                                protected static SCANNER_STATE_COMMENT: int
-                                protected static SCANNER_STATE_REFERENCE: int
-                                protected static SCANNER_STATE_ATTRIBUTE: int
-                                protected static SCANNER_STATE_ATTRIBUTE_VALUE: int
-                                protected static SCANNER_STATE_END_OF_INPUT: int
-                                protected static SCANNER_STATE_TERMINATED: int
-                                protected static SCANNER_STATE_CDATA: int
-                                protected static SCANNER_STATE_TEXT_DECL: int
-                                protected static SCANNER_STATE_CHARACTER_DATA: int
-                                protected static SCANNER_STATE_START_ELEMENT_TAG: int
-                                protected static SCANNER_STATE_END_ELEMENT_TAG: int
-                                protected static SCANNER_STATE_CHAR_REFERENCE: int
-                                protected static SCANNER_STATE_BUILT_IN_REFS: int
-                                protected static NOTIFY_BUILTIN_REFS: string
-                                protected static ENTITY_RESOLVER: string
-                                protected static STANDARD_URI_CONFORMANT: string
-                                protected static DEBUG_START_END_ELEMENT: boolean
-                                protected static DEBUG_NEXT: boolean
-                                protected static DEBUG: boolean
-                                protected static DEBUG_COALESCE: boolean
+                                protected static readonly SCANNER_STATE_START_OF_MARKUP: int
+                                protected static readonly SCANNER_STATE_CONTENT: int
+                                protected static readonly SCANNER_STATE_PI: int
+                                protected static readonly SCANNER_STATE_DOCTYPE: int
+                                protected static readonly SCANNER_STATE_XML_DECL: int
+                                protected static readonly SCANNER_STATE_ROOT_ELEMENT: int
+                                protected static readonly SCANNER_STATE_COMMENT: int
+                                protected static readonly SCANNER_STATE_REFERENCE: int
+                                protected static readonly SCANNER_STATE_ATTRIBUTE: int
+                                protected static readonly SCANNER_STATE_ATTRIBUTE_VALUE: int
+                                protected static readonly SCANNER_STATE_END_OF_INPUT: int
+                                protected static readonly SCANNER_STATE_TERMINATED: int
+                                protected static readonly SCANNER_STATE_CDATA: int
+                                protected static readonly SCANNER_STATE_TEXT_DECL: int
+                                protected static readonly SCANNER_STATE_CHARACTER_DATA: int
+                                protected static readonly SCANNER_STATE_START_ELEMENT_TAG: int
+                                protected static readonly SCANNER_STATE_END_ELEMENT_TAG: int
+                                protected static readonly SCANNER_STATE_CHAR_REFERENCE: int
+                                protected static readonly SCANNER_STATE_BUILT_IN_REFS: int
+                                protected static readonly NOTIFY_BUILTIN_REFS: string
+                                protected static readonly ENTITY_RESOLVER: string
+                                protected static readonly STANDARD_URI_CONFORMANT: string
+                                protected static readonly DEBUG_START_END_ELEMENT: boolean
+                                protected static readonly DEBUG_NEXT: boolean
+                                protected static readonly DEBUG: boolean
+                                protected static readonly DEBUG_COALESCE: boolean
                                 protected fDocumentHandler: com.sun.org.apache.xerces.internal.xni.XMLDocumentHandler
                                 protected fScannerLastState: int
                                 protected fEntityStore: com.sun.xml.internal.stream.XMLEntityStorage

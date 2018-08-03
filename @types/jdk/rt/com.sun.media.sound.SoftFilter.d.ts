@@ -3,13 +3,13 @@ declare namespace com {
         namespace media {
             namespace sound {
                 class SoftFilter {
-                    public static FILTERTYPE_LP6: int
-                    public static FILTERTYPE_LP12: int
-                    public static FILTERTYPE_HP12: int
-                    public static FILTERTYPE_BP12: int
-                    public static FILTERTYPE_NP12: int
-                    public static FILTERTYPE_LP24: int
-                    public static FILTERTYPE_HP24: int
+                    public static readonly FILTERTYPE_LP6: int
+                    public static readonly FILTERTYPE_LP12: int
+                    public static readonly FILTERTYPE_HP12: int
+                    public static readonly FILTERTYPE_BP12: int
+                    public static readonly FILTERTYPE_NP12: int
+                    public static readonly FILTERTYPE_LP24: int
+                    public static readonly FILTERTYPE_HP24: int
                     public constructor(arg0: float)
                     public setFrequency(arg0: double): void
                     public setResonance(arg0: double): void

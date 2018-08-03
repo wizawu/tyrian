@@ -6,12 +6,12 @@ declare namespace com {
                     namespace internal {
                         namespace compiler {
                             class PsuedoNames {
-                                public static PSEUDONAME_ANY: string
-                                public static PSEUDONAME_ROOT: string
-                                public static PSEUDONAME_TEXT: string
-                                public static PSEUDONAME_COMMENT: string
-                                public static PSEUDONAME_PI: string
-                                public static PSEUDONAME_OTHER: string
+                                public static readonly PSEUDONAME_ANY: string
+                                public static readonly PSEUDONAME_ROOT: string
+                                public static readonly PSEUDONAME_TEXT: string
+                                public static readonly PSEUDONAME_COMMENT: string
+                                public static readonly PSEUDONAME_PI: string
+                                public static readonly PSEUDONAME_OTHER: string
                                 public constructor()
                                 public static class: java.lang.Class<any>
                             }

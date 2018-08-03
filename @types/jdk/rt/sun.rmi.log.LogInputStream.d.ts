@@ -2,7 +2,7 @@ declare namespace sun {
     namespace rmi {
         namespace log {
             class LogInputStream extends java.io.InputStream {
-                public constructor(arg0: java.io.InputStream, arg1: int)
+                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: int)
                 public read(): int
                 public read(arg0: byte[]): int
                 public read(arg0: byte[], arg1: int, arg2: int): int

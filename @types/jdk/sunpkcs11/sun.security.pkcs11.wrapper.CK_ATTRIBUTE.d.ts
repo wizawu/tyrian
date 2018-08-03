@@ -3,22 +3,22 @@ declare namespace sun {
         namespace pkcs11 {
             namespace wrapper {
                 class CK_ATTRIBUTE {
-                    public static TOKEN_FALSE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
-                    public static SENSITIVE_FALSE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
-                    public static EXTRACTABLE_TRUE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
-                    public static ENCRYPT_TRUE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
-                    public static DECRYPT_TRUE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
-                    public static WRAP_TRUE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
-                    public static UNWRAP_TRUE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
-                    public static SIGN_TRUE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
-                    public static VERIFY_TRUE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
-                    public static SIGN_RECOVER_TRUE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
-                    public static VERIFY_RECOVER_TRUE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
-                    public static DERIVE_TRUE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
-                    public static ENCRYPT_NULL: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
-                    public static DECRYPT_NULL: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
-                    public static WRAP_NULL: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
-                    public static UNWRAP_NULL: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
+                    public static readonly TOKEN_FALSE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
+                    public static readonly SENSITIVE_FALSE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
+                    public static readonly EXTRACTABLE_TRUE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
+                    public static readonly ENCRYPT_TRUE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
+                    public static readonly DECRYPT_TRUE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
+                    public static readonly WRAP_TRUE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
+                    public static readonly UNWRAP_TRUE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
+                    public static readonly SIGN_TRUE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
+                    public static readonly VERIFY_TRUE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
+                    public static readonly SIGN_RECOVER_TRUE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
+                    public static readonly VERIFY_RECOVER_TRUE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
+                    public static readonly DERIVE_TRUE: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
+                    public static readonly ENCRYPT_NULL: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
+                    public static readonly DECRYPT_NULL: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
+                    public static readonly WRAP_NULL: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
+                    public static readonly UNWRAP_NULL: sun.security.pkcs11.wrapper.CK_ATTRIBUTE
                     public type: long
                     public pValue: java.lang.Object
                     public constructor()

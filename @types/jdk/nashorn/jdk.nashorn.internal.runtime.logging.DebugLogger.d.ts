@@ -4,7 +4,7 @@ declare namespace jdk {
             namespace runtime {
                 namespace logging {
                     class DebugLogger {
-                        public static DISABLED_LOGGER: jdk.nashorn.internal.runtime.logging.DebugLogger
+                        public static readonly DISABLED_LOGGER: jdk.nashorn.internal.runtime.logging.DebugLogger
                         public constructor(arg0: java.lang.String | string, arg1: java.util.logging.Level, arg2: boolean)
                         public getLevel(): java.util.logging.Level
                         public getOutputStream(): java.io.PrintWriter

@@ -12,7 +12,7 @@ declare namespace jdk {
                     public G$getStackTrace(): java.lang.Object
                     public S$getStackTrace(arg0: java.lang.Object): void
                     public G$toString(): java.lang.Object
-                    public public S$toString(arg0: java.lang.Object): void
+                    public static public S$toString(arg0: java.lang.Object): void
                     public getClassName(): string
                     public static class: java.lang.Class<any>
                 }

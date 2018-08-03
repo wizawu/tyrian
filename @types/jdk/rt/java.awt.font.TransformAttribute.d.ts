@@ -2,7 +2,7 @@ declare namespace java {
     namespace awt {
         namespace font {
             class TransformAttribute implements java.io.Serializable {
-                public static IDENTITY: java.awt.font.TransformAttribute
+                public static readonly IDENTITY: java.awt.font.TransformAttribute
                 public constructor(arg0: java.awt.geom.AffineTransform)
                 public getTransform(): java.awt.geom.AffineTransform
                 public isIdentity(): boolean

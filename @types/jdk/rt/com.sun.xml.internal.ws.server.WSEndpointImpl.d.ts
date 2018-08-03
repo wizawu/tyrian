@@ -5,10 +5,10 @@ declare namespace com {
                 namespace ws {
                     namespace server {
                         class WSEndpointImpl<T> extends com.sun.xml.internal.ws.api.server.WSEndpoint<T> implements com.sun.xml.internal.ws.api.server.LazyMOMProvider$WSEndpointScopeChangeListener {
-                            protected binding: com.sun.xml.internal.ws.api.WSBinding
-                            protected masterTubeline: com.sun.xml.internal.ws.api.pipe.Tube
-                            protected constructor(arg0: javax.xml.namespace.QName, arg1: javax.xml.namespace.QName, arg2: com.sun.xml.internal.ws.api.WSBinding, arg3: com.sun.xml.internal.ws.api.server.Container, arg4: com.sun.xml.internal.ws.api.model.SEIModel, arg5: com.sun.xml.internal.ws.api.model.wsdl.WSDLPort, arg6: java.lang.Class<T>, arg7: com.sun.xml.internal.ws.server.ServiceDefinitionImpl, arg8: com.sun.xml.internal.ws.server.EndpointAwareTube | com.sun.xml.internal.ws.server.EndpointAwareTube$$Lambda, arg9: boolean, arg10: com.sun.xml.internal.ws.policy.PolicyMap)
-                            protected createServerTubeAssemblerContext(arg0: com.sun.xml.internal.ws.server.EndpointAwareTube | com.sun.xml.internal.ws.server.EndpointAwareTube$$Lambda, arg1: boolean): com.sun.xml.internal.ws.api.pipe.ServerTubeAssemblerContext
+                            protected readonly binding: com.sun.xml.internal.ws.api.WSBinding
+                            protected readonly masterTubeline: com.sun.xml.internal.ws.api.pipe.Tube
+                            protected constructor(arg0: javax.xml.namespace.QName, arg1: javax.xml.namespace.QName, arg2: com.sun.xml.internal.ws.api.WSBinding, arg3: com.sun.xml.internal.ws.api.server.Container, arg4: com.sun.xml.internal.ws.api.model.SEIModel, arg5: com.sun.xml.internal.ws.api.model.wsdl.WSDLPort, arg6: java.lang.Class<T>, arg7: com.sun.xml.internal.ws.server.ServiceDefinitionImpl, arg8: com.sun.xml.internal.ws.server.EndpointAwareTube, arg9: boolean, arg10: com.sun.xml.internal.ws.policy.PolicyMap)
+                            protected createServerTubeAssemblerContext(arg0: com.sun.xml.internal.ws.server.EndpointAwareTube, arg1: boolean): com.sun.xml.internal.ws.api.pipe.ServerTubeAssemblerContext
                             protected constructor(arg0: javax.xml.namespace.QName, arg1: javax.xml.namespace.QName, arg2: com.sun.xml.internal.ws.api.WSBinding, arg3: com.sun.xml.internal.ws.api.server.Container, arg4: com.sun.xml.internal.ws.api.model.SEIModel, arg5: com.sun.xml.internal.ws.api.model.wsdl.WSDLPort, arg6: com.sun.xml.internal.ws.api.pipe.Tube)
                             public getEndpointReferenceExtensions(): java.util.Collection<com.sun.xml.internal.ws.api.addressing.WSEndpointReference$EPRExtension>
                             public getOperationDispatcher(): com.sun.xml.internal.ws.wsdl.OperationDispatcher

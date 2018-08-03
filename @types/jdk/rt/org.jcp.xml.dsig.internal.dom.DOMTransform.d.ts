@@ -12,7 +12,7 @@ declare namespace org {
                             public getAlgorithm(): string
                             public marshal(arg0: org.w3c.dom.Node, arg1: java.lang.String | string, arg2: javax.xml.crypto.dom.DOMCryptoContext): void
                             public transform(arg0: javax.xml.crypto.Data, arg1: javax.xml.crypto.XMLCryptoContext): javax.xml.crypto.Data
-                            public transform(arg0: javax.xml.crypto.Data, arg1: javax.xml.crypto.XMLCryptoContext, arg2: java.io.OutputStream): javax.xml.crypto.Data
+                            public transform(arg0: javax.xml.crypto.Data, arg1: javax.xml.crypto.XMLCryptoContext, arg2: java.io.OutputStream | java.io.OutputStream$$Lambda): javax.xml.crypto.Data
                             public equals(arg0: java.lang.Object): boolean
                             public hashCode(): int
                             public static class: java.lang.Class<any>

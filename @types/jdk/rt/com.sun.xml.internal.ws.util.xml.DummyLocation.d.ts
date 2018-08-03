@@ -6,7 +6,7 @@ declare namespace com {
                     namespace util {
                         namespace xml {
                             class DummyLocation implements javax.xml.stream.Location {
-                                public static INSTANCE: javax.xml.stream.Location
+                                public static readonly INSTANCE: javax.xml.stream.Location
                                 public getCharacterOffset(): int
                                 public getColumnNumber(): int
                                 public getLineNumber(): int

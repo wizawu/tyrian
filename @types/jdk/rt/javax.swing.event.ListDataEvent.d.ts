@@ -2,9 +2,9 @@ declare namespace javax {
     namespace swing {
         namespace event {
             class ListDataEvent extends java.util.EventObject {
-                public static CONTENTS_CHANGED: int
-                public static INTERVAL_ADDED: int
-                public static INTERVAL_REMOVED: int
+                public static readonly CONTENTS_CHANGED: int
+                public static readonly INTERVAL_ADDED: int
+                public static readonly INTERVAL_REMOVED: int
                 public getType(): int
                 public getIndex0(): int
                 public getIndex1(): int

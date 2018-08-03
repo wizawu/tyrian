@@ -6,16 +6,16 @@ declare namespace com {
                     namespace internal {
                         namespace util {
                             class SymbolTable {
-                                protected static TABLE_SIZE: int
-                                protected static MAX_HASH_COLLISIONS: int
-                                protected static MULTIPLIERS_SIZE: int
-                                protected static MULTIPLIERS_MASK: int
+                                protected static readonly TABLE_SIZE: int
+                                protected static readonly MAX_HASH_COLLISIONS: int
+                                protected static readonly MULTIPLIERS_SIZE: int
+                                protected static readonly MULTIPLIERS_MASK: int
                                 protected fBuckets: com.sun.org.apache.xerces.internal.util.SymbolTable$Entry[]
                                 protected fTableSize: int
                                 protected fCount: int
                                 protected fThreshold: int
                                 protected fLoadFactor: float
-                                protected fCollisionThreshold: int
+                                protected readonly fCollisionThreshold: int
                                 protected fHashMultipliers: int[]
                                 public constructor(arg0: int, arg1: float)
                                 public constructor(arg0: int)

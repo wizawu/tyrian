@@ -6,8 +6,11 @@ declare namespace com {
                     namespace api {
                         abstract class ResourceLoader {
                             public constructor()
-                            public getResource(arg0: java.lang.String | string): java.net.URL
+                            public abstract getResource(arg0: java.lang.String | string): java.net.URL
                             public static class: java.lang.Class<any>
+                        }
+                        interface ResourceLoader$$Lambda {
+                            (arg0: java.lang.String | string): java.net.URL
                         }
                     }
                 }

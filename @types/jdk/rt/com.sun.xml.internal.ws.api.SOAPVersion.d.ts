@@ -5,20 +5,20 @@ declare namespace com {
                 namespace ws {
                     namespace api {
                         class SOAPVersion extends java.lang.Enum<com.sun.xml.internal.ws.api.SOAPVersion> {
-                            public static SOAP_11: com.sun.xml.internal.ws.api.SOAPVersion
-                            public static SOAP_12: com.sun.xml.internal.ws.api.SOAPVersion
-                            public httpBindingId: string
-                            public nsUri: string
-                            public contentType: string
-                            public faultCodeMustUnderstand: javax.xml.namespace.QName
-                            public saajMessageFactory: javax.xml.soap.MessageFactory
-                            public saajSoapFactory: javax.xml.soap.SOAPFactory
-                            public implicitRole: string
-                            public implicitRoleSet: java.util.Set<java.lang.String>
-                            public requiredRoles: java.util.Set<java.lang.String>
-                            public roleAttributeName: string
-                            public faultCodeClient: javax.xml.namespace.QName
-                            public faultCodeServer: javax.xml.namespace.QName
+                            public static readonly SOAP_11: com.sun.xml.internal.ws.api.SOAPVersion
+                            public static readonly SOAP_12: com.sun.xml.internal.ws.api.SOAPVersion
+                            public readonly httpBindingId: string
+                            public readonly nsUri: string
+                            public readonly contentType: string
+                            public readonly faultCodeMustUnderstand: javax.xml.namespace.QName
+                            public readonly saajMessageFactory: javax.xml.soap.MessageFactory
+                            public readonly saajSoapFactory: javax.xml.soap.SOAPFactory
+                            public readonly implicitRole: string
+                            public readonly implicitRoleSet: java.util.Set<java.lang.String>
+                            public readonly requiredRoles: java.util.Set<java.lang.String>
+                            public readonly roleAttributeName: string
+                            public readonly faultCodeClient: javax.xml.namespace.QName
+                            public readonly faultCodeServer: javax.xml.namespace.QName
                             public static values(): com.sun.xml.internal.ws.api.SOAPVersion[]
                             public static valueOf(arg0: java.lang.String | string): com.sun.xml.internal.ws.api.SOAPVersion
                             public getSOAPFactory(): javax.xml.soap.SOAPFactory

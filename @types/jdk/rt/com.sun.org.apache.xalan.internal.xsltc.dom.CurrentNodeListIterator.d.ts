@@ -7,8 +7,8 @@ declare namespace com {
                         namespace xsltc {
                             namespace dom {
                                 class CurrentNodeListIterator extends com.sun.org.apache.xml.internal.dtm.ref.DTMAxisIteratorBase {
-                                    public constructor(arg0: com.sun.org.apache.xml.internal.dtm.DTMAxisIterator, arg1: com.sun.org.apache.xalan.internal.xsltc.dom.CurrentNodeListFilter | com.sun.org.apache.xalan.internal.xsltc.dom.CurrentNodeListFilter$$Lambda, arg2: int, arg3: com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet)
-                                    public constructor(arg0: com.sun.org.apache.xml.internal.dtm.DTMAxisIterator, arg1: boolean, arg2: com.sun.org.apache.xalan.internal.xsltc.dom.CurrentNodeListFilter | com.sun.org.apache.xalan.internal.xsltc.dom.CurrentNodeListFilter$$Lambda, arg3: int, arg4: com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet)
+                                    public constructor(arg0: com.sun.org.apache.xml.internal.dtm.DTMAxisIterator, arg1: com.sun.org.apache.xalan.internal.xsltc.dom.CurrentNodeListFilter | com.sun.org.apache.xalan.internal.xsltc.dom.CurrentNodeListFilter$$Lambda, arg2: int, arg3: com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet | com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet$$Lambda)
+                                    public constructor(arg0: com.sun.org.apache.xml.internal.dtm.DTMAxisIterator, arg1: boolean, arg2: com.sun.org.apache.xalan.internal.xsltc.dom.CurrentNodeListFilter | com.sun.org.apache.xalan.internal.xsltc.dom.CurrentNodeListFilter$$Lambda, arg3: int, arg4: com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet | com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet$$Lambda)
                                     public forceNaturalOrder(): com.sun.org.apache.xml.internal.dtm.DTMAxisIterator
                                     public setRestartable(arg0: boolean): void
                                     public isReverse(): boolean

@@ -10,8 +10,8 @@ declare namespace sun {
             public static useT2K: boolean
             public static isWindows: boolean
             public static isOpenJDK: boolean
-            public static MIN_LAYOUT_CHARCODE: int
-            public static MAX_LAYOUT_CHARCODE: int
+            public static readonly MIN_LAYOUT_CHARCODE: int
+            public static readonly MAX_LAYOUT_CHARCODE: int
             public constructor()
             public static getFont2D(arg0: java.awt.Font): sun.font.Font2D
             public static isComplexText(arg0: char[], arg1: int, arg2: int): boolean

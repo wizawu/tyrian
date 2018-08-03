@@ -25,9 +25,12 @@ declare namespace com {
                     protected createReceiver(): javax.sound.midi.Receiver
                     protected hasTransmitters(): boolean
                     protected createTransmitter(): javax.sound.midi.Transmitter
-                    protected implOpen(): void
+                    protected abstract implOpen(): void
                     protected finalize(): void
                     public static class: java.lang.Class<any>
+                }
+                interface AbstractMidiDevice$$Lambda implements javax.sound.midi.MidiDevice , com.sun.media.sound.ReferenceCountingDevice {
+                    (): void
                 }
             }
         }

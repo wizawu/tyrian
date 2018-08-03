@@ -2,8 +2,8 @@ declare namespace javax {
     namespace swing {
         abstract class Spring$SpringMap extends javax.swing.Spring {
             public constructor(arg0: javax.swing.Spring)
-            protected map(arg0: int): int
-            protected inv(arg0: int): int
+            protected abstract map(arg0: int): int
+            protected abstract inv(arg0: int): int
             public getMinimumValue(): int
             public getPreferredValue(): int
             public getMaximumValue(): int

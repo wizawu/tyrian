@@ -17,8 +17,8 @@ declare namespace java {
             public getSelectedIndex(): int
             public select(arg0: int): void
             public select(arg0: java.lang.String | string): void
-            public addItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): void
-            public removeItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): void
+            public addItemListener(arg0: java.awt.event.ItemListener): void
+            public removeItemListener(arg0: java.awt.event.ItemListener): void
             public getItemListeners(): java.awt.event.ItemListener[]
             public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]
             protected processEvent<T extends java.util.EventListener>(arg0: java.awt.AWTEvent): void

@@ -2,11 +2,11 @@ declare namespace java {
     namespace net {
         abstract class AbstractPlainSocketImpl extends java.net.SocketImpl {
             protected fdUseCount: int
-            protected fdLock: java.lang.Object
+            protected readonly fdLock: java.lang.Object
             protected closePending: boolean
             protected stream: boolean
-            public static SHUT_RD: int
-            public static SHUT_WR: int
+            public static readonly SHUT_RD: int
+            public static readonly SHUT_WR: int
             protected create(arg0: boolean): void
             protected connect(arg0: java.lang.String | string, arg1: int): void
             protected connect(arg0: java.net.InetAddress, arg1: int): void

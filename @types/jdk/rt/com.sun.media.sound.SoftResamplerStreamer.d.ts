@@ -5,9 +5,6 @@ declare namespace com {
                 interface SoftResamplerStreamer extends com.sun.media.sound.ModelOscillatorStream {
                     open(arg0: com.sun.media.sound.ModelWavetable, arg1: float): void
                 }
-                interface SoftResamplerStreamer$$Lambda extends com.sun.media.sound.ModelOscillatorStream {
-                    (arg0: com.sun.media.sound.ModelWavetable, arg1: float): void
-                }
             }
         }
     }

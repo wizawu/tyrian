@@ -6,7 +6,7 @@ declare namespace com {
                     namespace internal {
                         namespace serializer {
                             class EmptySerializer implements com.sun.org.apache.xml.internal.serializer.SerializationHandler {
-                                protected static ERR: string
+                                protected static readonly ERR: string
                                 public constructor()
                                 protected couldThrowIOException(): void
                                 protected couldThrowSAXException(): void
@@ -26,7 +26,7 @@ declare namespace com {
                                 public setIndentAmount(arg0: int): void
                                 public setIsStandalone(arg0: boolean): void
                                 public setOutputFormat(arg0: java.util.Properties): void
-                                public setOutputStream(arg0: java.io.OutputStream): void
+                                public setOutputStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                                 public setVersion(arg0: java.lang.String | string): void
                                 public setWriter(arg0: java.io.Writer): void
                                 public setTransformer(arg0: javax.xml.transform.Transformer): void

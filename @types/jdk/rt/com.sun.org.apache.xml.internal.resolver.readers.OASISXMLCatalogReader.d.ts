@@ -8,8 +8,8 @@ declare namespace com {
                             namespace readers {
                                 class OASISXMLCatalogReader extends com.sun.org.apache.xml.internal.resolver.readers.SAXCatalogReader implements com.sun.org.apache.xml.internal.resolver.readers.SAXCatalogParser {
                                     protected catalog: com.sun.org.apache.xml.internal.resolver.Catalog
-                                    public static namespaceName: string
-                                    public static tr9401NamespaceName: string
+                                    public static readonly namespaceName: string
+                                    public static readonly tr9401NamespaceName: string
                                     protected baseURIStack: java.util.Stack
                                     protected overrideStack: java.util.Stack
                                     protected namespaceStack: java.util.Stack

@@ -7,11 +7,11 @@ declare namespace com {
                         namespace impl {
                             namespace dtd {
                                 class XMLDTDLoader extends com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDProcessor implements com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarLoader {
-                                    protected static STANDARD_URI_CONFORMANT_FEATURE: string
-                                    protected static BALANCE_SYNTAX_TREES: string
-                                    protected static ERROR_HANDLER: string
-                                    public static ENTITY_RESOLVER: string
-                                    public static LOCALE: string
+                                    protected static readonly STANDARD_URI_CONFORMANT_FEATURE: string
+                                    protected static readonly BALANCE_SYNTAX_TREES: string
+                                    protected static readonly ERROR_HANDLER: string
+                                    public static readonly ENTITY_RESOLVER: string
+                                    public static readonly LOCALE: string
                                     protected fEntityResolver: com.sun.org.apache.xerces.internal.xni.parser.XMLEntityResolver
                                     protected fDTDScanner: com.sun.org.apache.xerces.internal.impl.XMLDTDScannerImpl
                                     protected fEntityManager: com.sun.org.apache.xerces.internal.impl.XMLEntityManager

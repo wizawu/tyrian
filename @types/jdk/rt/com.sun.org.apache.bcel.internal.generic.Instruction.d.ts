@@ -21,11 +21,14 @@ declare namespace com {
                                 public produceStack(arg0: com.sun.org.apache.bcel.internal.generic.ConstantPoolGen): int
                                 public getOpcode(): short
                                 public getLength(): int
-                                public accept(arg0: com.sun.org.apache.bcel.internal.generic.Visitor): void
+                                public abstract accept(arg0: com.sun.org.apache.bcel.internal.generic.Visitor): void
                                 public static getComparator(): com.sun.org.apache.bcel.internal.generic.InstructionComparator
                                 public static setComparator(arg0: com.sun.org.apache.bcel.internal.generic.InstructionComparator | com.sun.org.apache.bcel.internal.generic.InstructionComparator$$Lambda): void
                                 public equals(arg0: java.lang.Object): boolean
                                 public static class: java.lang.Class<any>
+                            }
+                            interface Instruction$$Lambda implements java.lang.Cloneable , java.io.Serializable {
+                                (arg0: com.sun.org.apache.bcel.internal.generic.Visitor): void
                             }
                         }
                     }

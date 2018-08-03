@@ -22,7 +22,7 @@ declare namespace org {
                     acceptNode(arg0: org.w3c.dom.Node): short
                 }
                 interface NodeFilter$$Lambda {
-                    FILTER_ACCEPT: short
+                    (arg0: org.w3c.dom.Node): short
                 }
             }
         }

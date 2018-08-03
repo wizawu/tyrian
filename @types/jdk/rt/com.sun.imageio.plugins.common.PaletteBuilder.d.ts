@@ -4,7 +4,7 @@ declare namespace com {
             namespace plugins {
                 namespace common {
                     class PaletteBuilder {
-                        protected static MAXLEVEL: int
+                        protected static readonly MAXLEVEL: int
                         protected src: java.awt.image.RenderedImage
                         protected srcColorModel: java.awt.image.ColorModel
                         protected srcRaster: java.awt.image.Raster

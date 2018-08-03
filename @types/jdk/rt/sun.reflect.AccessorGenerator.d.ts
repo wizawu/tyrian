@@ -1,13 +1,13 @@
 declare namespace sun {
     namespace reflect {
         class AccessorGenerator implements sun.reflect.ClassFileConstants {
-            protected static S0: short
-            protected static S1: short
-            protected static S2: short
-            protected static S3: short
-            protected static S4: short
-            protected static S5: short
-            protected static S6: short
+            protected static readonly S0: short
+            protected static readonly S1: short
+            protected static readonly S2: short
+            protected static readonly S3: short
+            protected static readonly S4: short
+            protected static readonly S5: short
+            protected static readonly S6: short
             protected asm: sun.reflect.ClassFileAssembler
             protected modifiers: int
             protected thisClass: short
@@ -54,9 +54,9 @@ declare namespace sun {
             protected shortIdx: short
             protected shortCtorIdx: short
             protected shortUnboxIdx: short
-            protected NUM_COMMON_CPOOL_ENTRIES: short
-            protected NUM_BOXING_CPOOL_ENTRIES: short
-            protected static primitiveTypes: java.lang.Class<any>[]
+            protected readonly NUM_COMMON_CPOOL_ENTRIES: short
+            protected readonly NUM_BOXING_CPOOL_ENTRIES: short
+            protected static readonly primitiveTypes: java.lang.Class<any>[]
             protected emitCommonConstantPoolEntries(): void
             protected emitBoxingContantPoolEntries(): void
             protected static add(arg0: short, arg1: short): short

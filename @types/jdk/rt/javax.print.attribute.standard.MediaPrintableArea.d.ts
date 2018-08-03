@@ -3,8 +3,8 @@ declare namespace javax {
         namespace attribute {
             namespace standard {
                 class MediaPrintableArea implements javax.print.attribute.DocAttribute , javax.print.attribute.PrintRequestAttribute , javax.print.attribute.PrintJobAttribute {
-                    public static INCH: int
-                    public static MM: int
+                    public static readonly INCH: int
+                    public static readonly MM: int
                     public constructor(arg0: float, arg1: float, arg2: float, arg3: float, arg4: int)
                     public constructor(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int)
                     public getPrintableArea(arg0: int): float[]

@@ -2,9 +2,9 @@ declare namespace java {
     namespace time {
         namespace temporal {
             class JulianFields$Field extends java.lang.Enum<java.time.temporal.JulianFields$Field> implements java.time.temporal.TemporalField {
-                public static JULIAN_DAY: java.time.temporal.JulianFields$Field
-                public static MODIFIED_JULIAN_DAY: java.time.temporal.JulianFields$Field
-                public static RATA_DIE: java.time.temporal.JulianFields$Field
+                public static readonly JULIAN_DAY: java.time.temporal.JulianFields$Field
+                public static readonly MODIFIED_JULIAN_DAY: java.time.temporal.JulianFields$Field
+                public static readonly RATA_DIE: java.time.temporal.JulianFields$Field
                 public static values(): java.time.temporal.JulianFields$Field[]
                 public static valueOf(arg0: java.lang.String | string): java.time.temporal.JulianFields$Field
                 public getBaseUnit(): java.time.temporal.TemporalUnit

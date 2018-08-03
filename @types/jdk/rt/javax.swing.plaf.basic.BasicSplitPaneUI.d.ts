@@ -3,7 +3,7 @@ declare namespace javax {
         namespace plaf {
             namespace basic {
                 class BasicSplitPaneUI extends javax.swing.plaf.SplitPaneUI {
-                    protected static NON_CONTINUOUS_DIVIDER: string
+                    protected static readonly NON_CONTINUOUS_DIVIDER: string
                     protected static KEYBOARD_DIVIDER_MOVE_OFFSET: int
                     protected splitPane: javax.swing.JSplitPane
                     protected layoutManager: javax.swing.plaf.basic.BasicSplitPaneUI$BasicHorizontalLayoutManager

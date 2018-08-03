@@ -4,9 +4,9 @@ declare namespace sun {
             class DomainKeyStore$DKS extends sun.security.provider.DomainKeyStore {
                 public constructor()
                 public engineLoad(arg0: java.security.KeyStore$LoadStoreParameter | java.security.KeyStore$LoadStoreParameter$$Lambda): void
-                public engineLoad(arg0: java.io.InputStream, arg1: char[]): void
+                public engineLoad(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: char[]): void
                 public engineStore(arg0: java.security.KeyStore$LoadStoreParameter | java.security.KeyStore$LoadStoreParameter$$Lambda): void
-                public engineStore(arg0: java.io.OutputStream, arg1: char[]): void
+                public engineStore(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: char[]): void
                 public engineGetCertificateAlias(arg0: java.security.cert.Certificate): string
                 public engineIsCertificateEntry(arg0: java.lang.String | string): boolean
                 public engineIsKeyEntry(arg0: java.lang.String | string): boolean

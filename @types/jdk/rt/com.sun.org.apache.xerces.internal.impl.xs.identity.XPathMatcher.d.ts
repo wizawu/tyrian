@@ -8,17 +8,17 @@ declare namespace com {
                             namespace xs {
                                 namespace identity {
                                     class XPathMatcher {
-                                        protected static DEBUG_ALL: boolean
-                                        protected static DEBUG_METHODS: boolean
-                                        protected static DEBUG_METHODS2: boolean
-                                        protected static DEBUG_METHODS3: boolean
-                                        protected static DEBUG_MATCH: boolean
-                                        protected static DEBUG_STACK: boolean
-                                        protected static DEBUG_ANY: boolean
-                                        protected static MATCHED: int
-                                        protected static MATCHED_ATTRIBUTE: int
-                                        protected static MATCHED_DESCENDANT: int
-                                        protected static MATCHED_DESCENDANT_PREVIOUS: int
+                                        protected static readonly DEBUG_ALL: boolean
+                                        protected static readonly DEBUG_METHODS: boolean
+                                        protected static readonly DEBUG_METHODS2: boolean
+                                        protected static readonly DEBUG_METHODS3: boolean
+                                        protected static readonly DEBUG_MATCH: boolean
+                                        protected static readonly DEBUG_STACK: boolean
+                                        protected static readonly DEBUG_ANY: boolean
+                                        protected static readonly MATCHED: int
+                                        protected static readonly MATCHED_ATTRIBUTE: int
+                                        protected static readonly MATCHED_DESCENDANT: int
+                                        protected static readonly MATCHED_DESCENDANT_PREVIOUS: int
                                         protected fMatchedString: java.lang.Object
                                         public constructor(arg0: com.sun.org.apache.xerces.internal.impl.xpath.XPath)
                                         public isMatched(): boolean

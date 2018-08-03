@@ -5,18 +5,18 @@ declare namespace com {
                 namespace ctx {
                     abstract class AtomicContext extends com.sun.jndi.toolkit.ctx.ComponentContext {
                         protected constructor()
-                        protected a_lookup(arg0: java.lang.String | string, arg1: com.sun.jndi.toolkit.ctx.Continuation): java.lang.Object
-                        protected a_lookupLink(arg0: java.lang.String | string, arg1: com.sun.jndi.toolkit.ctx.Continuation): java.lang.Object
-                        protected a_list(arg0: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.NamingEnumeration<javax.naming.NameClassPair>
-                        protected a_listBindings(arg0: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.NamingEnumeration<javax.naming.Binding>
-                        protected a_bind(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: com.sun.jndi.toolkit.ctx.Continuation): void
-                        protected a_rebind(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: com.sun.jndi.toolkit.ctx.Continuation): void
-                        protected a_unbind(arg0: java.lang.String | string, arg1: com.sun.jndi.toolkit.ctx.Continuation): void
-                        protected a_destroySubcontext(arg0: java.lang.String | string, arg1: com.sun.jndi.toolkit.ctx.Continuation): void
-                        protected a_createSubcontext(arg0: java.lang.String | string, arg1: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.Context
-                        protected a_rename(arg0: java.lang.String | string, arg1: javax.naming.Name, arg2: com.sun.jndi.toolkit.ctx.Continuation): void
-                        protected a_getNameParser(arg0: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.NameParser
-                        protected c_parseComponent(arg0: java.lang.String | string, arg1: com.sun.jndi.toolkit.ctx.Continuation): com.sun.jndi.toolkit.ctx.StringHeadTail
+                        protected abstract a_lookup(arg0: java.lang.String | string, arg1: com.sun.jndi.toolkit.ctx.Continuation): java.lang.Object
+                        protected abstract a_lookupLink(arg0: java.lang.String | string, arg1: com.sun.jndi.toolkit.ctx.Continuation): java.lang.Object
+                        protected abstract a_list(arg0: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.NamingEnumeration<javax.naming.NameClassPair>
+                        protected abstract a_listBindings(arg0: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.NamingEnumeration<javax.naming.Binding>
+                        protected abstract a_bind(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: com.sun.jndi.toolkit.ctx.Continuation): void
+                        protected abstract a_rebind(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: com.sun.jndi.toolkit.ctx.Continuation): void
+                        protected abstract a_unbind(arg0: java.lang.String | string, arg1: com.sun.jndi.toolkit.ctx.Continuation): void
+                        protected abstract a_destroySubcontext(arg0: java.lang.String | string, arg1: com.sun.jndi.toolkit.ctx.Continuation): void
+                        protected abstract a_createSubcontext(arg0: java.lang.String | string, arg1: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.Context
+                        protected abstract a_rename(arg0: java.lang.String | string, arg1: javax.naming.Name, arg2: com.sun.jndi.toolkit.ctx.Continuation): void
+                        protected abstract a_getNameParser(arg0: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.NameParser
+                        protected abstract c_parseComponent(arg0: java.lang.String | string, arg1: com.sun.jndi.toolkit.ctx.Continuation): com.sun.jndi.toolkit.ctx.StringHeadTail
                         protected a_resolveIntermediate_nns(arg0: java.lang.String | string, arg1: com.sun.jndi.toolkit.ctx.Continuation): java.lang.Object
                         protected a_lookup_nns(arg0: java.lang.String | string, arg1: com.sun.jndi.toolkit.ctx.Continuation): java.lang.Object
                         protected a_lookupLink_nns(arg0: java.lang.String | string, arg1: com.sun.jndi.toolkit.ctx.Continuation): java.lang.Object

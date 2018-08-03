@@ -3,7 +3,7 @@ declare namespace javax {
         namespace plaf {
             namespace metal {
                 class MetalSliderUI extends javax.swing.plaf.basic.BasicSliderUI {
-                    protected TICK_BUFFER: int
+                    protected readonly TICK_BUFFER: int
                     protected filledSlider: boolean
                     protected static thumbColor: java.awt.Color
                     protected static highlightColor: java.awt.Color
@@ -12,7 +12,7 @@ declare namespace javax {
                     protected static tickLength: int
                     protected static horizThumbIcon: javax.swing.Icon
                     protected static vertThumbIcon: javax.swing.Icon
-                    protected SLIDER_FILL: string
+                    protected readonly SLIDER_FILL: string
                     public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
                     public constructor()
                     public installUI(arg0: javax.swing.JComponent): void

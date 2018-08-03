@@ -4,9 +4,6 @@ declare namespace org {
             interface IdAssignmentPolicyOperations extends org.omg.CORBA.PolicyOperations {
                 value(): org.omg.PortableServer.IdAssignmentPolicyValue
             }
-            interface IdAssignmentPolicyOperations$$Lambda extends org.omg.CORBA.PolicyOperations {
-                (): org.omg.PortableServer.IdAssignmentPolicyValue
-            }
         }
     }
 }

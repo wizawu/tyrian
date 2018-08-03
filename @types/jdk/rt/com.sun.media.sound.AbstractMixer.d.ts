@@ -3,9 +3,9 @@ declare namespace com {
         namespace media {
             namespace sound {
                 abstract class AbstractMixer extends com.sun.media.sound.AbstractLine implements javax.sound.sampled.Mixer {
-                    protected static PCM: int
-                    protected static ULAW: int
-                    protected static ALAW: int
+                    protected static readonly PCM: int
+                    protected static readonly ULAW: int
+                    protected static readonly ALAW: int
                     protected sourceLineInfo: javax.sound.sampled.Line$Info[]
                     protected targetLineInfo: javax.sound.sampled.Line$Info[]
                     protected constructor(arg0: javax.sound.sampled.Mixer$Info, arg1: javax.sound.sampled.Control[], arg2: javax.sound.sampled.Line$Info[], arg3: javax.sound.sampled.Line$Info[])
@@ -15,12 +15,12 @@ declare namespace com {
                     public getSourceLineInfo(arg0: javax.sound.sampled.Line$Info): javax.sound.sampled.Line$Info[]
                     public getTargetLineInfo(arg0: javax.sound.sampled.Line$Info): javax.sound.sampled.Line$Info[]
                     public isLineSupported(arg0: javax.sound.sampled.Line$Info): boolean
-                    public getLine(arg0: javax.sound.sampled.Line$Info): javax.sound.sampled.Line
-                    public getMaxLines(arg0: javax.sound.sampled.Line$Info): int
-                    protected implOpen(): void
-                    protected implStart(): void
-                    protected implStop(): void
-                    protected implClose(): void
+                    public abstract getLine(arg0: javax.sound.sampled.Line$Info): javax.sound.sampled.Line
+                    public abstract getMaxLines(arg0: javax.sound.sampled.Line$Info): int
+                    protected abstract implOpen(): void
+                    protected abstract implStart(): void
+                    protected abstract implStop(): void
+                    protected abstract implClose(): void
                     public getSourceLines(): javax.sound.sampled.Line[]
                     public getTargetLines(): javax.sound.sampled.Line[]
                     public synchronize(arg0: javax.sound.sampled.Line[], arg1: boolean): void

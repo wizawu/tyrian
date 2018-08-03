@@ -3,10 +3,10 @@ declare namespace sun {
         namespace cs {
             namespace ext {
                 class ISO2022$Encoder extends java.nio.charset.CharsetEncoder {
-                    public static SS2: byte
-                    public static PLANE2: byte
-                    public static PLANE3: byte
-                    protected maximumDesignatorLength: byte
+                    public static readonly SS2: byte
+                    public static readonly PLANE2: byte
+                    public static readonly PLANE3: byte
+                    protected readonly maximumDesignatorLength: byte
                     protected SODesig: string
                     protected SS2Desig: string
                     protected SS3Desig: string

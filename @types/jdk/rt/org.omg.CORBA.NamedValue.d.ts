@@ -3,9 +3,9 @@ declare namespace org {
         namespace CORBA {
             abstract class NamedValue {
                 public constructor()
-                public name(): string
-                public value(): org.omg.CORBA.Any
-                public flags(): int
+                public abstract name(): string
+                public abstract value(): org.omg.CORBA.Any
+                public abstract flags(): int
                 public static class: java.lang.Class<any>
             }
         }

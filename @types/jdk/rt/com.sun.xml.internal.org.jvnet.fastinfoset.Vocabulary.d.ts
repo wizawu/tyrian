@@ -6,18 +6,18 @@ declare namespace com {
                     namespace jvnet {
                         namespace fastinfoset {
                             class Vocabulary {
-                                public restrictedAlphabets: java.util.Set
-                                public encodingAlgorithms: java.util.Set
-                                public prefixes: java.util.Set
-                                public namespaceNames: java.util.Set
-                                public localNames: java.util.Set
-                                public otherNCNames: java.util.Set
-                                public otherURIs: java.util.Set
-                                public attributeValues: java.util.Set
-                                public otherStrings: java.util.Set
-                                public characterContentChunks: java.util.Set
-                                public elements: java.util.Set
-                                public attributes: java.util.Set
+                                public readonly restrictedAlphabets: java.util.Set
+                                public readonly encodingAlgorithms: java.util.Set
+                                public readonly prefixes: java.util.Set
+                                public readonly namespaceNames: java.util.Set
+                                public readonly localNames: java.util.Set
+                                public readonly otherNCNames: java.util.Set
+                                public readonly otherURIs: java.util.Set
+                                public readonly attributeValues: java.util.Set
+                                public readonly otherStrings: java.util.Set
+                                public readonly characterContentChunks: java.util.Set
+                                public readonly elements: java.util.Set
+                                public readonly attributes: java.util.Set
                                 public constructor()
                                 public static class: java.lang.Class<any>
                             }

@@ -11,8 +11,8 @@ declare namespace com {
                             getORBId(): string
                             getObjectAdapterId(): com.sun.corba.se.spi.ior.ObjectAdapterId
                             getAdapterId(): byte[]
-                            write(arg0: com.sun.corba.se.spi.ior.ObjectId | com.sun.corba.se.spi.ior.ObjectId$$Lambda, arg1: org.omg.CORBA_2_3.portable.OutputStream): void
-                            getServerRequestDispatcher(arg0: com.sun.corba.se.spi.orb.ORB, arg1: com.sun.corba.se.spi.ior.ObjectId | com.sun.corba.se.spi.ior.ObjectId$$Lambda): com.sun.corba.se.spi.protocol.CorbaServerRequestDispatcher
+                            write(arg0: com.sun.corba.se.spi.ior.ObjectId, arg1: org.omg.CORBA_2_3.portable.OutputStream): void
+                            getServerRequestDispatcher(arg0: com.sun.corba.se.spi.orb.ORB, arg1: com.sun.corba.se.spi.ior.ObjectId): com.sun.corba.se.spi.protocol.CorbaServerRequestDispatcher
                         }
                     }
                 }

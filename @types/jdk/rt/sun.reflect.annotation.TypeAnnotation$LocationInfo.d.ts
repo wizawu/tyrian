@@ -2,7 +2,7 @@ declare namespace sun {
     namespace reflect {
         namespace annotation {
             class TypeAnnotation$LocationInfo {
-                public static BASE_LOCATION: sun.reflect.annotation.TypeAnnotation$LocationInfo
+                public static readonly BASE_LOCATION: sun.reflect.annotation.TypeAnnotation$LocationInfo
                 public static parseLocationInfo(arg0: java.nio.ByteBuffer): sun.reflect.annotation.TypeAnnotation$LocationInfo
                 public pushArray(): sun.reflect.annotation.TypeAnnotation$LocationInfo
                 public pushInner(): sun.reflect.annotation.TypeAnnotation$LocationInfo

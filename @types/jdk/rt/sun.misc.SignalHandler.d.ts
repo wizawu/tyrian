@@ -6,7 +6,7 @@ declare namespace sun {
             handle(arg0: sun.misc.Signal): void
         }
         interface SignalHandler$$Lambda {
-            SIG_DFL: sun.misc.SignalHandler
+            (arg0: sun.misc.Signal): void
         }
     }
 }

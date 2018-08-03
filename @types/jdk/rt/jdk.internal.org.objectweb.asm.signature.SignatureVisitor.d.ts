@@ -5,10 +5,10 @@ declare namespace jdk {
                 namespace asm {
                     namespace signature {
                         abstract class SignatureVisitor {
-                            public static EXTENDS: char
-                            public static SUPER: char
-                            public static INSTANCEOF: char
-                            protected api: int
+                            public static readonly EXTENDS: char
+                            public static readonly SUPER: char
+                            public static readonly INSTANCEOF: char
+                            protected readonly api: int
                             public constructor(arg0: int)
                             public visitFormalTypeParameter(arg0: java.lang.String | string): void
                             public visitClassBound(): jdk.internal.org.objectweb.asm.signature.SignatureVisitor

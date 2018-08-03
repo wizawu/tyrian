@@ -3,18 +3,18 @@ declare namespace java {
         namespace file {
             abstract class FileSystem implements java.io.Closeable {
                 protected constructor()
-                public provider(): java.nio.file.spi.FileSystemProvider
-                public close(): void
-                public isOpen(): boolean
-                public isReadOnly(): boolean
-                public getSeparator(): string
-                public getRootDirectories(): java.lang.Iterable<java.nio.file.Path>
-                public getFileStores(): java.lang.Iterable<java.nio.file.FileStore>
-                public supportedFileAttributeViews(): java.util.Set<java.lang.String>
-                public getPath(arg0: java.lang.String | string, ...arg1: java.lang.String[]): java.nio.file.Path
-                public getPathMatcher(arg0: java.lang.String | string): java.nio.file.PathMatcher
-                public getUserPrincipalLookupService(): java.nio.file.attribute.UserPrincipalLookupService
-                public newWatchService(): java.nio.file.WatchService
+                public abstract provider(): java.nio.file.spi.FileSystemProvider
+                public abstract close(): void
+                public abstract isOpen(): boolean
+                public abstract isReadOnly(): boolean
+                public abstract getSeparator(): string
+                public abstract getRootDirectories(): java.lang.Iterable<java.nio.file.Path>
+                public abstract getFileStores(): java.lang.Iterable<java.nio.file.FileStore>
+                public abstract supportedFileAttributeViews(): java.util.Set<java.lang.String>
+                public abstract getPath(arg0: java.lang.String | string, ...arg1: java.lang.String[]): java.nio.file.Path
+                public abstract getPathMatcher(arg0: java.lang.String | string): java.nio.file.PathMatcher
+                public abstract getUserPrincipalLookupService(): java.nio.file.attribute.UserPrincipalLookupService
+                public abstract newWatchService(): java.nio.file.WatchService
                 public static class: java.lang.Class<any>
             }
         }

@@ -6,8 +6,8 @@ declare namespace com {
                     namespace jvnet {
                         namespace mimepull {
                             class MIMEMessage {
-                                public constructor(arg0: java.io.InputStream, arg1: java.lang.String | string)
-                                public constructor(arg0: java.io.InputStream, arg1: java.lang.String | string, arg2: com.sun.xml.internal.org.jvnet.mimepull.MIMEConfig)
+                                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.lang.String | string)
+                                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.lang.String | string, arg2: com.sun.xml.internal.org.jvnet.mimepull.MIMEConfig)
                                 public getAttachments(): java.util.List<com.sun.xml.internal.org.jvnet.mimepull.MIMEPart>
                                 public getPart(arg0: int): com.sun.xml.internal.org.jvnet.mimepull.MIMEPart
                                 public getPart(arg0: java.lang.String | string): com.sun.xml.internal.org.jvnet.mimepull.MIMEPart

@@ -8,7 +8,7 @@ declare namespace com {
                             class JAXBRIContextWrapper implements com.sun.xml.internal.ws.spi.db.BindingContext {
                                 public createMarshaller(): javax.xml.bind.Marshaller
                                 public createUnmarshaller(): javax.xml.bind.Unmarshaller
-                                public generateSchema(arg0: javax.xml.bind.SchemaOutputResolver): void
+                                public generateSchema(arg0: javax.xml.bind.SchemaOutputResolver | javax.xml.bind.SchemaOutputResolver$$Lambda): void
                                 public getBuildId(): string
                                 public getElementName(arg0: java.lang.Class): javax.xml.namespace.QName
                                 public getElementName(arg0: java.lang.Object): javax.xml.namespace.QName

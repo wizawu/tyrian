@@ -1,7 +1,7 @@
 declare namespace java {
     namespace io {
         class ObjectStreamClass implements java.io.Serializable {
-            public static NO_FIELDS: java.io.ObjectStreamField[]
+            public static readonly NO_FIELDS: java.io.ObjectStreamField[]
             public static lookup(arg0: java.lang.Class<any>): java.io.ObjectStreamClass
             public static lookupAny(arg0: java.lang.Class<any>): java.io.ObjectStreamClass
             public getName(): string

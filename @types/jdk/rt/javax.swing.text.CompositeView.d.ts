@@ -14,10 +14,10 @@ declare namespace javax {
                 public viewToModel(arg0: float, arg1: float, arg2: java.awt.Shape, arg3: javax.swing.text.Position$Bias[]): int
                 public getNextVisualPositionFrom(arg0: int, arg1: javax.swing.text.Position$Bias, arg2: java.awt.Shape, arg3: int, arg4: javax.swing.text.Position$Bias[]): int
                 public getViewIndex(arg0: int, arg1: javax.swing.text.Position$Bias): int
-                protected isBefore(arg0: int, arg1: int, arg2: java.awt.Rectangle): boolean
-                protected isAfter(arg0: int, arg1: int, arg2: java.awt.Rectangle): boolean
-                protected getViewAtPoint(arg0: int, arg1: int, arg2: java.awt.Rectangle): javax.swing.text.View
-                protected childAllocation(arg0: int, arg1: java.awt.Rectangle): void
+                protected abstract isBefore(arg0: int, arg1: int, arg2: java.awt.Rectangle): boolean
+                protected abstract isAfter(arg0: int, arg1: int, arg2: java.awt.Rectangle): boolean
+                protected abstract getViewAtPoint(arg0: int, arg1: int, arg2: java.awt.Rectangle): javax.swing.text.View
+                protected abstract childAllocation(arg0: int, arg1: java.awt.Rectangle): void
                 protected getViewAtPosition(arg0: int, arg1: java.awt.Rectangle): javax.swing.text.View
                 protected getViewIndexAtPosition(arg0: int): int
                 protected getInsideAllocation(arg0: java.awt.Shape): java.awt.Rectangle

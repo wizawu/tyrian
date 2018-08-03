@@ -1,98 +1,98 @@
 declare namespace sun {
     namespace awt {
         class SunHints {
-            public static INTKEY_RENDERING: int
-            public static INTVAL_RENDER_DEFAULT: int
-            public static INTVAL_RENDER_SPEED: int
-            public static INTVAL_RENDER_QUALITY: int
-            public static INTKEY_ANTIALIASING: int
-            public static INTVAL_ANTIALIAS_DEFAULT: int
-            public static INTVAL_ANTIALIAS_OFF: int
-            public static INTVAL_ANTIALIAS_ON: int
-            public static INTKEY_TEXT_ANTIALIASING: int
-            public static INTVAL_TEXT_ANTIALIAS_DEFAULT: int
-            public static INTVAL_TEXT_ANTIALIAS_OFF: int
-            public static INTVAL_TEXT_ANTIALIAS_ON: int
-            public static INTVAL_TEXT_ANTIALIAS_GASP: int
-            public static INTVAL_TEXT_ANTIALIAS_LCD_HRGB: int
-            public static INTVAL_TEXT_ANTIALIAS_LCD_HBGR: int
-            public static INTVAL_TEXT_ANTIALIAS_LCD_VRGB: int
-            public static INTVAL_TEXT_ANTIALIAS_LCD_VBGR: int
-            public static INTKEY_FRACTIONALMETRICS: int
-            public static INTVAL_FRACTIONALMETRICS_DEFAULT: int
-            public static INTVAL_FRACTIONALMETRICS_OFF: int
-            public static INTVAL_FRACTIONALMETRICS_ON: int
-            public static INTKEY_DITHERING: int
-            public static INTVAL_DITHER_DEFAULT: int
-            public static INTVAL_DITHER_DISABLE: int
-            public static INTVAL_DITHER_ENABLE: int
-            public static INTKEY_INTERPOLATION: int
-            public static INTVAL_INTERPOLATION_NEAREST_NEIGHBOR: int
-            public static INTVAL_INTERPOLATION_BILINEAR: int
-            public static INTVAL_INTERPOLATION_BICUBIC: int
-            public static INTKEY_ALPHA_INTERPOLATION: int
-            public static INTVAL_ALPHA_INTERPOLATION_DEFAULT: int
-            public static INTVAL_ALPHA_INTERPOLATION_SPEED: int
-            public static INTVAL_ALPHA_INTERPOLATION_QUALITY: int
-            public static INTKEY_COLOR_RENDERING: int
-            public static INTVAL_COLOR_RENDER_DEFAULT: int
-            public static INTVAL_COLOR_RENDER_SPEED: int
-            public static INTVAL_COLOR_RENDER_QUALITY: int
-            public static INTKEY_STROKE_CONTROL: int
-            public static INTVAL_STROKE_DEFAULT: int
-            public static INTVAL_STROKE_NORMALIZE: int
-            public static INTVAL_STROKE_PURE: int
-            public static INTKEY_RESOLUTION_VARIANT: int
-            public static INTVAL_RESOLUTION_VARIANT_DEFAULT: int
-            public static INTVAL_RESOLUTION_VARIANT_OFF: int
-            public static INTVAL_RESOLUTION_VARIANT_ON: int
-            public static INTKEY_AATEXT_LCD_CONTRAST: int
-            public static KEY_RENDERING: sun.awt.SunHints$Key
-            public static VALUE_RENDER_SPEED: java.lang.Object
-            public static VALUE_RENDER_QUALITY: java.lang.Object
-            public static VALUE_RENDER_DEFAULT: java.lang.Object
-            public static KEY_ANTIALIASING: sun.awt.SunHints$Key
-            public static VALUE_ANTIALIAS_ON: java.lang.Object
-            public static VALUE_ANTIALIAS_OFF: java.lang.Object
-            public static VALUE_ANTIALIAS_DEFAULT: java.lang.Object
-            public static KEY_TEXT_ANTIALIASING: sun.awt.SunHints$Key
-            public static VALUE_TEXT_ANTIALIAS_ON: java.lang.Object
-            public static VALUE_TEXT_ANTIALIAS_OFF: java.lang.Object
-            public static VALUE_TEXT_ANTIALIAS_DEFAULT: java.lang.Object
-            public static VALUE_TEXT_ANTIALIAS_GASP: java.lang.Object
-            public static VALUE_TEXT_ANTIALIAS_LCD_HRGB: java.lang.Object
-            public static VALUE_TEXT_ANTIALIAS_LCD_HBGR: java.lang.Object
-            public static VALUE_TEXT_ANTIALIAS_LCD_VRGB: java.lang.Object
-            public static VALUE_TEXT_ANTIALIAS_LCD_VBGR: java.lang.Object
-            public static KEY_FRACTIONALMETRICS: sun.awt.SunHints$Key
-            public static VALUE_FRACTIONALMETRICS_ON: java.lang.Object
-            public static VALUE_FRACTIONALMETRICS_OFF: java.lang.Object
-            public static VALUE_FRACTIONALMETRICS_DEFAULT: java.lang.Object
-            public static KEY_DITHERING: sun.awt.SunHints$Key
-            public static VALUE_DITHER_ENABLE: java.lang.Object
-            public static VALUE_DITHER_DISABLE: java.lang.Object
-            public static VALUE_DITHER_DEFAULT: java.lang.Object
-            public static KEY_INTERPOLATION: sun.awt.SunHints$Key
-            public static VALUE_INTERPOLATION_NEAREST_NEIGHBOR: java.lang.Object
-            public static VALUE_INTERPOLATION_BILINEAR: java.lang.Object
-            public static VALUE_INTERPOLATION_BICUBIC: java.lang.Object
-            public static KEY_ALPHA_INTERPOLATION: sun.awt.SunHints$Key
-            public static VALUE_ALPHA_INTERPOLATION_SPEED: java.lang.Object
-            public static VALUE_ALPHA_INTERPOLATION_QUALITY: java.lang.Object
-            public static VALUE_ALPHA_INTERPOLATION_DEFAULT: java.lang.Object
-            public static KEY_COLOR_RENDERING: sun.awt.SunHints$Key
-            public static VALUE_COLOR_RENDER_SPEED: java.lang.Object
-            public static VALUE_COLOR_RENDER_QUALITY: java.lang.Object
-            public static VALUE_COLOR_RENDER_DEFAULT: java.lang.Object
-            public static KEY_STROKE_CONTROL: sun.awt.SunHints$Key
-            public static VALUE_STROKE_DEFAULT: java.lang.Object
-            public static VALUE_STROKE_NORMALIZE: java.lang.Object
-            public static VALUE_STROKE_PURE: java.lang.Object
-            public static KEY_RESOLUTION_VARIANT: sun.awt.SunHints$Key
-            public static VALUE_RESOLUTION_VARIANT_DEFAULT: java.lang.Object
-            public static VALUE_RESOLUTION_VARIANT_OFF: java.lang.Object
-            public static VALUE_RESOLUTION_VARIANT_ON: java.lang.Object
-            public static KEY_TEXT_ANTIALIAS_LCD_CONTRAST: java.awt.RenderingHints$Key
+            public static readonly INTKEY_RENDERING: int
+            public static readonly INTVAL_RENDER_DEFAULT: int
+            public static readonly INTVAL_RENDER_SPEED: int
+            public static readonly INTVAL_RENDER_QUALITY: int
+            public static readonly INTKEY_ANTIALIASING: int
+            public static readonly INTVAL_ANTIALIAS_DEFAULT: int
+            public static readonly INTVAL_ANTIALIAS_OFF: int
+            public static readonly INTVAL_ANTIALIAS_ON: int
+            public static readonly INTKEY_TEXT_ANTIALIASING: int
+            public static readonly INTVAL_TEXT_ANTIALIAS_DEFAULT: int
+            public static readonly INTVAL_TEXT_ANTIALIAS_OFF: int
+            public static readonly INTVAL_TEXT_ANTIALIAS_ON: int
+            public static readonly INTVAL_TEXT_ANTIALIAS_GASP: int
+            public static readonly INTVAL_TEXT_ANTIALIAS_LCD_HRGB: int
+            public static readonly INTVAL_TEXT_ANTIALIAS_LCD_HBGR: int
+            public static readonly INTVAL_TEXT_ANTIALIAS_LCD_VRGB: int
+            public static readonly INTVAL_TEXT_ANTIALIAS_LCD_VBGR: int
+            public static readonly INTKEY_FRACTIONALMETRICS: int
+            public static readonly INTVAL_FRACTIONALMETRICS_DEFAULT: int
+            public static readonly INTVAL_FRACTIONALMETRICS_OFF: int
+            public static readonly INTVAL_FRACTIONALMETRICS_ON: int
+            public static readonly INTKEY_DITHERING: int
+            public static readonly INTVAL_DITHER_DEFAULT: int
+            public static readonly INTVAL_DITHER_DISABLE: int
+            public static readonly INTVAL_DITHER_ENABLE: int
+            public static readonly INTKEY_INTERPOLATION: int
+            public static readonly INTVAL_INTERPOLATION_NEAREST_NEIGHBOR: int
+            public static readonly INTVAL_INTERPOLATION_BILINEAR: int
+            public static readonly INTVAL_INTERPOLATION_BICUBIC: int
+            public static readonly INTKEY_ALPHA_INTERPOLATION: int
+            public static readonly INTVAL_ALPHA_INTERPOLATION_DEFAULT: int
+            public static readonly INTVAL_ALPHA_INTERPOLATION_SPEED: int
+            public static readonly INTVAL_ALPHA_INTERPOLATION_QUALITY: int
+            public static readonly INTKEY_COLOR_RENDERING: int
+            public static readonly INTVAL_COLOR_RENDER_DEFAULT: int
+            public static readonly INTVAL_COLOR_RENDER_SPEED: int
+            public static readonly INTVAL_COLOR_RENDER_QUALITY: int
+            public static readonly INTKEY_STROKE_CONTROL: int
+            public static readonly INTVAL_STROKE_DEFAULT: int
+            public static readonly INTVAL_STROKE_NORMALIZE: int
+            public static readonly INTVAL_STROKE_PURE: int
+            public static readonly INTKEY_RESOLUTION_VARIANT: int
+            public static readonly INTVAL_RESOLUTION_VARIANT_DEFAULT: int
+            public static readonly INTVAL_RESOLUTION_VARIANT_OFF: int
+            public static readonly INTVAL_RESOLUTION_VARIANT_ON: int
+            public static readonly INTKEY_AATEXT_LCD_CONTRAST: int
+            public static readonly KEY_RENDERING: sun.awt.SunHints$Key
+            public static readonly VALUE_RENDER_SPEED: java.lang.Object
+            public static readonly VALUE_RENDER_QUALITY: java.lang.Object
+            public static readonly VALUE_RENDER_DEFAULT: java.lang.Object
+            public static readonly KEY_ANTIALIASING: sun.awt.SunHints$Key
+            public static readonly VALUE_ANTIALIAS_ON: java.lang.Object
+            public static readonly VALUE_ANTIALIAS_OFF: java.lang.Object
+            public static readonly VALUE_ANTIALIAS_DEFAULT: java.lang.Object
+            public static readonly KEY_TEXT_ANTIALIASING: sun.awt.SunHints$Key
+            public static readonly VALUE_TEXT_ANTIALIAS_ON: java.lang.Object
+            public static readonly VALUE_TEXT_ANTIALIAS_OFF: java.lang.Object
+            public static readonly VALUE_TEXT_ANTIALIAS_DEFAULT: java.lang.Object
+            public static readonly VALUE_TEXT_ANTIALIAS_GASP: java.lang.Object
+            public static readonly VALUE_TEXT_ANTIALIAS_LCD_HRGB: java.lang.Object
+            public static readonly VALUE_TEXT_ANTIALIAS_LCD_HBGR: java.lang.Object
+            public static readonly VALUE_TEXT_ANTIALIAS_LCD_VRGB: java.lang.Object
+            public static readonly VALUE_TEXT_ANTIALIAS_LCD_VBGR: java.lang.Object
+            public static readonly KEY_FRACTIONALMETRICS: sun.awt.SunHints$Key
+            public static readonly VALUE_FRACTIONALMETRICS_ON: java.lang.Object
+            public static readonly VALUE_FRACTIONALMETRICS_OFF: java.lang.Object
+            public static readonly VALUE_FRACTIONALMETRICS_DEFAULT: java.lang.Object
+            public static readonly KEY_DITHERING: sun.awt.SunHints$Key
+            public static readonly VALUE_DITHER_ENABLE: java.lang.Object
+            public static readonly VALUE_DITHER_DISABLE: java.lang.Object
+            public static readonly VALUE_DITHER_DEFAULT: java.lang.Object
+            public static readonly KEY_INTERPOLATION: sun.awt.SunHints$Key
+            public static readonly VALUE_INTERPOLATION_NEAREST_NEIGHBOR: java.lang.Object
+            public static readonly VALUE_INTERPOLATION_BILINEAR: java.lang.Object
+            public static readonly VALUE_INTERPOLATION_BICUBIC: java.lang.Object
+            public static readonly KEY_ALPHA_INTERPOLATION: sun.awt.SunHints$Key
+            public static readonly VALUE_ALPHA_INTERPOLATION_SPEED: java.lang.Object
+            public static readonly VALUE_ALPHA_INTERPOLATION_QUALITY: java.lang.Object
+            public static readonly VALUE_ALPHA_INTERPOLATION_DEFAULT: java.lang.Object
+            public static readonly KEY_COLOR_RENDERING: sun.awt.SunHints$Key
+            public static readonly VALUE_COLOR_RENDER_SPEED: java.lang.Object
+            public static readonly VALUE_COLOR_RENDER_QUALITY: java.lang.Object
+            public static readonly VALUE_COLOR_RENDER_DEFAULT: java.lang.Object
+            public static readonly KEY_STROKE_CONTROL: sun.awt.SunHints$Key
+            public static readonly VALUE_STROKE_DEFAULT: java.lang.Object
+            public static readonly VALUE_STROKE_NORMALIZE: java.lang.Object
+            public static readonly VALUE_STROKE_PURE: java.lang.Object
+            public static readonly KEY_RESOLUTION_VARIANT: sun.awt.SunHints$Key
+            public static readonly VALUE_RESOLUTION_VARIANT_DEFAULT: java.lang.Object
+            public static readonly VALUE_RESOLUTION_VARIANT_OFF: java.lang.Object
+            public static readonly VALUE_RESOLUTION_VARIANT_ON: java.lang.Object
+            public static readonly KEY_TEXT_ANTIALIAS_LCD_CONTRAST: java.awt.RenderingHints$Key
             public constructor()
             public static class: java.lang.Class<any>
         }

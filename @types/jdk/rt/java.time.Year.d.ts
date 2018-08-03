@@ -1,8 +1,8 @@
 declare namespace java {
     namespace time {
         class Year implements java.time.temporal.Temporal , java.time.temporal.TemporalAdjuster , java.lang.Comparable<java.time.Year> , java.io.Serializable {
-            public static MIN_VALUE: int
-            public static MAX_VALUE: int
+            public static readonly MIN_VALUE: int
+            public static readonly MAX_VALUE: int
             public static now(): java.time.Year
             public static now(arg0: java.time.ZoneId): java.time.Year
             public static now(arg0: java.time.Clock): java.time.Year

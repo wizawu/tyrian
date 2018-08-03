@@ -2,14 +2,14 @@ declare namespace com {
     namespace ibm {
         namespace cuda {
             class CudaGrid {
-                public blockDimX: int
-                public blockDimY: int
-                public blockDimZ: int
-                public gridDimX: int
-                public gridDimY: int
-                public gridDimZ: int
-                public sharedMemBytes: int
-                public stream: com.ibm.cuda.CudaStream
+                public readonly blockDimX: int
+                public readonly blockDimY: int
+                public readonly blockDimZ: int
+                public readonly gridDimX: int
+                public readonly gridDimY: int
+                public readonly gridDimZ: int
+                public readonly sharedMemBytes: int
+                public readonly stream: com.ibm.cuda.CudaStream
                 public constructor(arg0: com.ibm.cuda.Dim3, arg1: com.ibm.cuda.Dim3)
                 public constructor(arg0: com.ibm.cuda.Dim3, arg1: com.ibm.cuda.Dim3, arg2: com.ibm.cuda.CudaStream)
                 public constructor(arg0: com.ibm.cuda.Dim3, arg1: com.ibm.cuda.Dim3, arg2: int)

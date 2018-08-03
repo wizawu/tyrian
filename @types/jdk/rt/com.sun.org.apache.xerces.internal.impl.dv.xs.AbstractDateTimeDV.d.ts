@@ -8,10 +8,10 @@ declare namespace com {
                             namespace dv {
                                 namespace xs {
                                     abstract class AbstractDateTimeDV extends com.sun.org.apache.xerces.internal.impl.dv.xs.TypeValidator {
-                                        protected static YEAR: int
-                                        protected static MONTH: int
-                                        protected static DAY: int
-                                        protected static datatypeFactory: javax.xml.datatype.DatatypeFactory
+                                        protected static readonly YEAR: int
+                                        protected static readonly MONTH: int
+                                        protected static readonly DAY: int
+                                        protected static readonly datatypeFactory: javax.xml.datatype.DatatypeFactory
                                         public constructor()
                                         public getAllowedFacets(): short
                                         public isIdentical(arg0: java.lang.Object, arg1: java.lang.Object): boolean

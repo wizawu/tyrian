@@ -6,7 +6,7 @@ declare namespace com {
                     namespace server {
                         namespace sei {
                             class EndpointValueSetter$Param extends com.sun.xml.internal.ws.server.sei.EndpointValueSetter {
-                                protected idx: int
+                                protected readonly idx: int
                                 public constructor(arg0: int)
                                 public static class: java.lang.Class<any>
                             }

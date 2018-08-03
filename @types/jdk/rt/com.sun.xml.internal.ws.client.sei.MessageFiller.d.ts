@@ -6,7 +6,7 @@ declare namespace com {
                     namespace client {
                         namespace sei {
                             abstract class MessageFiller {
-                                protected methodPos: int
+                                protected readonly methodPos: int
                                 protected constructor(arg0: int)
                                 public static class: java.lang.Class<any>
                             }

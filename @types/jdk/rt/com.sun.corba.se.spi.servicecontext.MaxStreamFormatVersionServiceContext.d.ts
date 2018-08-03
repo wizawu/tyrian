@@ -5,8 +5,8 @@ declare namespace com {
                 namespace spi {
                     namespace servicecontext {
                         class MaxStreamFormatVersionServiceContext extends com.sun.corba.se.spi.servicecontext.ServiceContext {
-                            public static singleton: com.sun.corba.se.spi.servicecontext.MaxStreamFormatVersionServiceContext
-                            public static SERVICE_CONTEXT_ID: int
+                            public static readonly singleton: com.sun.corba.se.spi.servicecontext.MaxStreamFormatVersionServiceContext
+                            public static readonly SERVICE_CONTEXT_ID: int
                             public constructor()
                             public constructor(arg0: byte)
                             public constructor(arg0: org.omg.CORBA_2_3.portable.InputStream, arg1: com.sun.corba.se.spi.ior.iiop.GIOPVersion)

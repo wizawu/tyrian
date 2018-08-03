@@ -9,8 +9,8 @@ declare namespace com {
                                 namespace internet {
                                     class InternetHeaders {
                                         public constructor()
-                                        public constructor(arg0: java.io.InputStream)
-                                        public load(arg0: java.io.InputStream): void
+                                        public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
+                                        public load(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
                                         public getHeader(arg0: java.lang.String | string): java.lang.String[]
                                         public getHeader(arg0: java.lang.String | string, arg1: java.lang.String | string): string
                                         public setHeader(arg0: java.lang.String | string, arg1: java.lang.String | string): void

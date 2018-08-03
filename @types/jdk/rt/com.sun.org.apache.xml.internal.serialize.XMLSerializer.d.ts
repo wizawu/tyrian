@@ -6,17 +6,17 @@ declare namespace com {
                     namespace internal {
                         namespace serialize {
                             class XMLSerializer extends com.sun.org.apache.xml.internal.serialize.BaseMarkupSerializer {
-                                protected static DEBUG: boolean
+                                protected static readonly DEBUG: boolean
                                 protected fNSBinder: com.sun.org.apache.xerces.internal.util.NamespaceSupport
                                 protected fLocalNSBinder: com.sun.org.apache.xerces.internal.util.NamespaceSupport
                                 protected fSymbolTable: com.sun.org.apache.xerces.internal.util.SymbolTable
-                                protected static PREFIX: string
+                                protected static readonly PREFIX: string
                                 protected fNamespaces: boolean
                                 protected fNamespacePrefixes: boolean
                                 public constructor()
                                 public constructor(arg0: com.sun.org.apache.xml.internal.serialize.OutputFormat)
                                 public constructor(arg0: java.io.Writer, arg1: com.sun.org.apache.xml.internal.serialize.OutputFormat)
-                                public constructor(arg0: java.io.OutputStream, arg1: com.sun.org.apache.xml.internal.serialize.OutputFormat)
+                                public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: com.sun.org.apache.xml.internal.serialize.OutputFormat)
                                 public setOutputFormat(arg0: com.sun.org.apache.xml.internal.serialize.OutputFormat): void
                                 public setNamespaces(arg0: boolean): void
                                 public startElement(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: org.xml.sax.Attributes): void

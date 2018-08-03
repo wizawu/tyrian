@@ -16,7 +16,7 @@ declare namespace com {
                                     public setCaseSensitive(arg0: boolean): void
                                     public getCaseSensitive(): boolean
                                     public readCatalog(arg0: com.sun.org.apache.xml.internal.resolver.Catalog, arg1: java.lang.String | string): void
-                                    public readCatalog(arg0: com.sun.org.apache.xml.internal.resolver.Catalog, arg1: java.io.InputStream): void
+                                    public readCatalog(arg0: com.sun.org.apache.xml.internal.resolver.Catalog, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
                                     protected finalize(): void
                                     protected nextToken(): string
                                     protected nextChar(): int

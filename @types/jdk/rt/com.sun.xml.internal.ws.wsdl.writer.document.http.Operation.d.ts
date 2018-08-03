@@ -10,9 +10,6 @@ declare namespace com {
                                     interface Operation extends com.sun.xml.internal.txw2.TypedXmlWriter {
                                         location(arg0: java.lang.String | string): com.sun.xml.internal.ws.wsdl.writer.document.http.Operation
                                     }
-                                    interface Operation$$Lambda extends com.sun.xml.internal.txw2.TypedXmlWriter {
-                                        (arg0: java.lang.String | string): com.sun.xml.internal.ws.wsdl.writer.document.http.Operation
-                                    }
                                 }
                             }
                         }

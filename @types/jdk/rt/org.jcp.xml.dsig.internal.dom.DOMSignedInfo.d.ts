@@ -5,8 +5,8 @@ declare namespace org {
                 namespace internal {
                     namespace dom {
                         class DOMSignedInfo extends org.jcp.xml.dsig.internal.dom.DOMStructure implements javax.xml.crypto.dsig.SignedInfo {
-                            public constructor(arg0: javax.xml.crypto.dsig.CanonicalizationMethod | javax.xml.crypto.dsig.CanonicalizationMethod$$Lambda, arg1: javax.xml.crypto.dsig.SignatureMethod | javax.xml.crypto.dsig.SignatureMethod$$Lambda, arg2: java.util.List<javax.xml.crypto.dsig.Reference>)
-                            public constructor(arg0: javax.xml.crypto.dsig.CanonicalizationMethod | javax.xml.crypto.dsig.CanonicalizationMethod$$Lambda, arg1: javax.xml.crypto.dsig.SignatureMethod | javax.xml.crypto.dsig.SignatureMethod$$Lambda, arg2: java.util.List<javax.xml.crypto.dsig.Reference>, arg3: java.lang.String | string)
+                            public constructor(arg0: javax.xml.crypto.dsig.CanonicalizationMethod, arg1: javax.xml.crypto.dsig.SignatureMethod, arg2: java.util.List<javax.xml.crypto.dsig.Reference>)
+                            public constructor(arg0: javax.xml.crypto.dsig.CanonicalizationMethod, arg1: javax.xml.crypto.dsig.SignatureMethod, arg2: java.util.List<javax.xml.crypto.dsig.Reference>, arg3: java.lang.String | string)
                             public constructor(arg0: org.w3c.dom.Element, arg1: javax.xml.crypto.XMLCryptoContext, arg2: java.security.Provider)
                             public getCanonicalizationMethod(): javax.xml.crypto.dsig.CanonicalizationMethod
                             public getSignatureMethod(): javax.xml.crypto.dsig.SignatureMethod

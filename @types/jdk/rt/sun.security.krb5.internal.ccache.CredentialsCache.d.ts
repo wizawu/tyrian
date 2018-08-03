@@ -12,13 +12,13 @@ declare namespace sun {
                         public static create(arg0: sun.security.krb5.PrincipalName, arg1: java.lang.String | string): sun.security.krb5.internal.ccache.CredentialsCache
                         public static create(arg0: sun.security.krb5.PrincipalName): sun.security.krb5.internal.ccache.CredentialsCache
                         public static cacheName(): string
-                        public getPrimaryPrincipal(): sun.security.krb5.PrincipalName
-                        public update(arg0: sun.security.krb5.internal.ccache.Credentials): void
-                        public save(): void
-                        public getCredsList(): sun.security.krb5.internal.ccache.Credentials[]
-                        public getDefaultCreds(): sun.security.krb5.internal.ccache.Credentials
-                        public getCreds(arg0: sun.security.krb5.PrincipalName): sun.security.krb5.internal.ccache.Credentials
-                        public getCreds(arg0: sun.security.krb5.internal.LoginOptions, arg1: sun.security.krb5.PrincipalName): sun.security.krb5.internal.ccache.Credentials
+                        public abstract getPrimaryPrincipal(): sun.security.krb5.PrincipalName
+                        public abstract update(arg0: sun.security.krb5.internal.ccache.Credentials): void
+                        public abstract save(): void
+                        public abstract getCredsList(): sun.security.krb5.internal.ccache.Credentials[]
+                        public abstract getDefaultCreds(): sun.security.krb5.internal.ccache.Credentials
+                        public abstract getCreds(arg0: sun.security.krb5.PrincipalName): sun.security.krb5.internal.ccache.Credentials
+                        public abstract getCreds(arg0: sun.security.krb5.internal.LoginOptions, arg1: sun.security.krb5.PrincipalName): sun.security.krb5.internal.ccache.Credentials
                         public static class: java.lang.Class<any>
                     }
                 }

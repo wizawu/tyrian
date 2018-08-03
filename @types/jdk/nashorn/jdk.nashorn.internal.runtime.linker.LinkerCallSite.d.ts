@@ -4,7 +4,7 @@ declare namespace jdk {
             namespace runtime {
                 namespace linker {
                     class LinkerCallSite extends jdk.internal.dynalink.ChainedCallSite {
-                        public static ARGLIMIT: int
+                        public static readonly ARGLIMIT: int
                         protected getPruneCatches(): java.lang.invoke.MethodHandle
                         public static getCatchInvalidationCount(arg0: java.lang.Object): int
                         public toString(): string

@@ -7,11 +7,14 @@ declare namespace com {
                         namespace pipe {
                             abstract class TransportTubeFactory {
                                 public constructor()
-                                public doCreate(arg0: com.sun.xml.internal.ws.api.pipe.ClientTubeAssemblerContext): com.sun.xml.internal.ws.api.pipe.Tube
+                                public abstract doCreate(arg0: com.sun.xml.internal.ws.api.pipe.ClientTubeAssemblerContext): com.sun.xml.internal.ws.api.pipe.Tube
                                 public static create(arg0: java.lang.ClassLoader, arg1: com.sun.xml.internal.ws.api.pipe.ClientTubeAssemblerContext): com.sun.xml.internal.ws.api.pipe.Tube
                                 protected createDefault(arg0: com.sun.xml.internal.ws.api.pipe.ClientTubeAssemblerContext): com.sun.xml.internal.ws.api.pipe.Tube
                                 protected createHttpTransport(arg0: com.sun.xml.internal.ws.api.pipe.ClientTubeAssemblerContext): com.sun.xml.internal.ws.api.pipe.Tube
                                 public static class: java.lang.Class<any>
+                            }
+                            interface TransportTubeFactory$$Lambda {
+                                (arg0: com.sun.xml.internal.ws.api.pipe.ClientTubeAssemblerContext): com.sun.xml.internal.ws.api.pipe.Tube
                             }
                         }
                     }

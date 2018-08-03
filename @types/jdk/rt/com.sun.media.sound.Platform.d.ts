@@ -3,12 +3,12 @@ declare namespace com {
         namespace media {
             namespace sound {
                 class Platform {
-                    public static LIB_MAIN: int
-                    public static LIB_ALSA: int
-                    public static LIB_DSOUND: int
-                    public static FEATURE_MIDIIO: int
-                    public static FEATURE_PORTS: int
-                    public static FEATURE_DIRECT_AUDIO: int
+                    public static readonly LIB_MAIN: int
+                    public static readonly LIB_ALSA: int
+                    public static readonly LIB_DSOUND: int
+                    public static readonly FEATURE_MIDIIO: int
+                    public static readonly FEATURE_PORTS: int
+                    public static readonly FEATURE_DIRECT_AUDIO: int
                     public static class: java.lang.Class<any>
                 }
             }

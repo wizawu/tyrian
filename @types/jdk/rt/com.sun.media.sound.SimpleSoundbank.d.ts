@@ -15,8 +15,8 @@ declare namespace com {
                     public getResources(): javax.sound.midi.SoundbankResource[]
                     public getInstruments(): javax.sound.midi.Instrument[]
                     public getInstrument(arg0: javax.sound.midi.Patch): javax.sound.midi.Instrument
-                    public addResource(arg0: javax.sound.midi.SoundbankResource): void
-                    public removeResource(arg0: javax.sound.midi.SoundbankResource): void
+                    public addResource(arg0: javax.sound.midi.SoundbankResource | javax.sound.midi.SoundbankResource$$Lambda): void
+                    public removeResource(arg0: javax.sound.midi.SoundbankResource | javax.sound.midi.SoundbankResource$$Lambda): void
                     public addInstrument(arg0: javax.sound.midi.Instrument): void
                     public removeInstrument(arg0: javax.sound.midi.Instrument): void
                     public addAllInstruments(arg0: javax.sound.midi.Soundbank): void

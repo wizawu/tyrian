@@ -6,7 +6,7 @@ declare namespace com {
                     namespace tools {
                         class SAXEventSerializer extends org.xml.sax.helpers.DefaultHandler implements org.xml.sax.ext.LexicalHandler {
                             protected _namespaceAttributes: java.util.List
-                            public constructor(arg0: java.io.OutputStream)
+                            public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda)
                             public startDocument(): void
                             public endDocument(): void
                             public startPrefixMapping(arg0: java.lang.String | string, arg1: java.lang.String | string): void

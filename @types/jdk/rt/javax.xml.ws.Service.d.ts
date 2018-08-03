@@ -8,14 +8,14 @@ declare namespace javax {
                 public getPort<T>(arg0: javax.xml.namespace.QName, arg1: java.lang.Class<T>, ...arg2: javax.xml.ws.WebServiceFeature[]): T
                 public getPort<T>(arg0: java.lang.Class<T>): T
                 public getPort<T>(arg0: java.lang.Class<T>, ...arg1: javax.xml.ws.WebServiceFeature[]): T
-                public getPort<T>(arg0: javax.xml.ws.EndpointReference, arg1: java.lang.Class<T>, ...arg2: javax.xml.ws.WebServiceFeature[]): T
+                public getPort<T>(arg0: javax.xml.ws.EndpointReference | javax.xml.ws.EndpointReference$$Lambda, arg1: java.lang.Class<T>, ...arg2: javax.xml.ws.WebServiceFeature[]): T
                 public addPort<T>(arg0: javax.xml.namespace.QName, arg1: java.lang.String | string, arg2: java.lang.String | string): void
                 public createDispatch<T>(arg0: javax.xml.namespace.QName, arg1: java.lang.Class<T>, arg2: javax.xml.ws.Service$Mode): javax.xml.ws.Dispatch<T>
                 public createDispatch<T>(arg0: javax.xml.namespace.QName, arg1: java.lang.Class<T>, arg2: javax.xml.ws.Service$Mode, ...arg3: javax.xml.ws.WebServiceFeature[]): javax.xml.ws.Dispatch<T>
-                public createDispatch<T>(arg0: javax.xml.ws.EndpointReference, arg1: java.lang.Class<T>, arg2: javax.xml.ws.Service$Mode, ...arg3: javax.xml.ws.WebServiceFeature[]): javax.xml.ws.Dispatch<T>
+                public createDispatch<T>(arg0: javax.xml.ws.EndpointReference | javax.xml.ws.EndpointReference$$Lambda, arg1: java.lang.Class<T>, arg2: javax.xml.ws.Service$Mode, ...arg3: javax.xml.ws.WebServiceFeature[]): javax.xml.ws.Dispatch<T>
                 public createDispatch<T>(arg0: javax.xml.namespace.QName, arg1: javax.xml.bind.JAXBContext, arg2: javax.xml.ws.Service$Mode): javax.xml.ws.Dispatch<java.lang.Object>
                 public createDispatch<T>(arg0: javax.xml.namespace.QName, arg1: javax.xml.bind.JAXBContext, arg2: javax.xml.ws.Service$Mode, ...arg3: javax.xml.ws.WebServiceFeature[]): javax.xml.ws.Dispatch<java.lang.Object>
-                public createDispatch<T>(arg0: javax.xml.ws.EndpointReference, arg1: javax.xml.bind.JAXBContext, arg2: javax.xml.ws.Service$Mode, ...arg3: javax.xml.ws.WebServiceFeature[]): javax.xml.ws.Dispatch<java.lang.Object>
+                public createDispatch<T>(arg0: javax.xml.ws.EndpointReference | javax.xml.ws.EndpointReference$$Lambda, arg1: javax.xml.bind.JAXBContext, arg2: javax.xml.ws.Service$Mode, ...arg3: javax.xml.ws.WebServiceFeature[]): javax.xml.ws.Dispatch<java.lang.Object>
                 public getServiceName<T>(): javax.xml.namespace.QName
                 public getPorts<T>(): java.util.Iterator<javax.xml.namespace.QName>
                 public getWSDLDocumentLocation<T>(): java.net.URL

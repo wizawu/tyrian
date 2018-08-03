@@ -10,9 +10,6 @@ declare namespace com {
                                     ENABLED_ATTRIBUTE_NAME: javax.xml.namespace.QName
                                     parse(arg0: javax.xml.stream.XMLEventReader): T
                                 }
-                                interface FeatureReader$$Lambda<T extends javax.xml.ws.WebServiceFeature> {
-                                    ENABLED_ATTRIBUTE_NAME: javax.xml.namespace.QName
-                                }
                             }
                         }
                     }

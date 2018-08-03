@@ -7,7 +7,7 @@ declare namespace com {
                         abstract class AbstractSEIModelImpl implements com.sun.xml.internal.ws.api.model.SEIModel {
                             protected jaxbContext: com.sun.xml.internal.bind.api.JAXBRIContext
                             protected bindingContext: com.sun.xml.internal.ws.spi.db.BindingContext
-                            protected emptyBodyName: javax.xml.namespace.QName
+                            protected readonly emptyBodyName: javax.xml.namespace.QName
                             protected contractClass: java.lang.Class
                             protected endpointClass: java.lang.Class
                             protected classLoader: java.lang.ClassLoader
@@ -16,7 +16,7 @@ declare namespace com {
                             protected defaultSchemaNamespaceSuffix: string
                             protected constructor(arg0: com.sun.xml.internal.ws.binding.WebServiceFeatureList)
                             public freeze(arg0: com.sun.xml.internal.ws.api.model.wsdl.WSDLPort): void
-                            protected populateMaps(): void
+                            protected abstract populateMaps(): void
                             public getMarshallerPool(): com.sun.xml.internal.ws.util.Pool$Marshaller
                             public getJAXBContext(): javax.xml.bind.JAXBContext
                             public getBindingContext(): com.sun.xml.internal.ws.spi.db.BindingContext
@@ -46,6 +46,9 @@ declare namespace com {
                             public getJavaMethod(arg0: javax.xml.namespace.QName): com.sun.xml.internal.ws.api.model.JavaMethod
                             public getJavaMethod(arg0: java.lang.reflect.Method): com.sun.xml.internal.ws.api.model.JavaMethod
                             public static class: java.lang.Class<any>
+                        }
+                        interface AbstractSEIModelImpl$$Lambda implements com.sun.xml.internal.ws.api.model.SEIModel {
+                            (): void
                         }
                     }
                 }

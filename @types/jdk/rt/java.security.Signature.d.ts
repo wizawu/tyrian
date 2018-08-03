@@ -1,9 +1,9 @@
 declare namespace java {
     namespace security {
         abstract class Signature extends java.security.SignatureSpi {
-            protected static UNINITIALIZED: int
-            protected static SIGN: int
-            protected static VERIFY: int
+            protected static readonly UNINITIALIZED: int
+            protected static readonly SIGN: int
+            protected static readonly VERIFY: int
             protected state: int
             protected constructor(arg0: java.lang.String | string)
             public static getInstance(arg0: java.lang.String | string): java.security.Signature

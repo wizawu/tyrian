@@ -3,22 +3,22 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 abstract class Property implements java.io.Serializable {
-                    public static WRITABLE_ENUMERABLE_CONFIGURABLE: int
-                    public static NOT_WRITABLE: int
-                    public static NOT_ENUMERABLE: int
-                    public static NOT_CONFIGURABLE: int
-                    public static IS_PARAMETER: int
-                    public static HAS_ARGUMENTS: int
-                    public static IS_FUNCTION_DECLARATION: int
-                    public static IS_NASGEN_PRIMITIVE: int
-                    public static IS_BUILTIN: int
-                    public static IS_BOUND: int
-                    public static NEEDS_DECLARATION: int
-                    public static IS_LEXICAL_BINDING: int
-                    public static DUAL_FIELDS: int
+                    public static readonly WRITABLE_ENUMERABLE_CONFIGURABLE: int
+                    public static readonly NOT_WRITABLE: int
+                    public static readonly NOT_ENUMERABLE: int
+                    public static readonly NOT_CONFIGURABLE: int
+                    public static readonly IS_PARAMETER: int
+                    public static readonly HAS_ARGUMENTS: int
+                    public static readonly IS_FUNCTION_DECLARATION: int
+                    public static readonly IS_NASGEN_PRIMITIVE: int
+                    public static readonly IS_BUILTIN: int
+                    public static readonly IS_BOUND: int
+                    public static readonly NEEDS_DECLARATION: int
+                    public static readonly IS_LEXICAL_BINDING: int
+                    public static readonly DUAL_FIELDS: int
                     protected builtinSwitchPoint: java.lang.invoke.SwitchPoint
-                    public copy(): jdk.nashorn.internal.runtime.Property
-                    public copy(arg0: java.lang.Class<any>): jdk.nashorn.internal.runtime.Property
+                    public abstract copy(): jdk.nashorn.internal.runtime.Property
+                    public abstract copy(arg0: java.lang.Class<any>): jdk.nashorn.internal.runtime.Property
                     public setBuiltinSwitchPoint(arg0: java.lang.invoke.SwitchPoint): void
                     public getBuiltinSwitchPoint(): java.lang.invoke.SwitchPoint
                     public isBuiltin(): boolean
@@ -36,17 +36,17 @@ declare namespace jdk {
                     public getFlags(): int
                     public removeFlags(arg0: int): jdk.nashorn.internal.runtime.Property
                     public setFlags(arg0: int): jdk.nashorn.internal.runtime.Property
-                    public getGetter(arg0: java.lang.Class<any>): java.lang.invoke.MethodHandle
-                    public getOptimisticGetter(arg0: java.lang.Class<any>, arg1: int): java.lang.invoke.MethodHandle
+                    public abstract getGetter(arg0: java.lang.Class<any>): java.lang.invoke.MethodHandle
+                    public abstract getOptimisticGetter(arg0: java.lang.Class<any>, arg1: int): java.lang.invoke.MethodHandle
                     public getKey(): string
                     public getSlot(): int
-                    public getIntValue(arg0: jdk.nashorn.internal.runtime.ScriptObject, arg1: jdk.nashorn.internal.runtime.ScriptObject): int
-                    public getDoubleValue(arg0: jdk.nashorn.internal.runtime.ScriptObject, arg1: jdk.nashorn.internal.runtime.ScriptObject): double
-                    public getObjectValue(arg0: jdk.nashorn.internal.runtime.ScriptObject, arg1: jdk.nashorn.internal.runtime.ScriptObject): java.lang.Object
-                    public setValue(arg0: jdk.nashorn.internal.runtime.ScriptObject, arg1: jdk.nashorn.internal.runtime.ScriptObject, arg2: int, arg3: boolean): void
-                    public setValue(arg0: jdk.nashorn.internal.runtime.ScriptObject, arg1: jdk.nashorn.internal.runtime.ScriptObject, arg2: double, arg3: boolean): void
-                    public setValue(arg0: jdk.nashorn.internal.runtime.ScriptObject, arg1: jdk.nashorn.internal.runtime.ScriptObject, arg2: java.lang.Object, arg3: boolean): void
-                    public getSetter(arg0: java.lang.Class<any>, arg1: jdk.nashorn.internal.runtime.PropertyMap): java.lang.invoke.MethodHandle
+                    public abstract getIntValue(arg0: jdk.nashorn.internal.runtime.ScriptObject, arg1: jdk.nashorn.internal.runtime.ScriptObject): int
+                    public abstract getDoubleValue(arg0: jdk.nashorn.internal.runtime.ScriptObject, arg1: jdk.nashorn.internal.runtime.ScriptObject): double
+                    public abstract getObjectValue(arg0: jdk.nashorn.internal.runtime.ScriptObject, arg1: jdk.nashorn.internal.runtime.ScriptObject): java.lang.Object
+                    public abstract setValue(arg0: jdk.nashorn.internal.runtime.ScriptObject, arg1: jdk.nashorn.internal.runtime.ScriptObject, arg2: int, arg3: boolean): void
+                    public abstract setValue(arg0: jdk.nashorn.internal.runtime.ScriptObject, arg1: jdk.nashorn.internal.runtime.ScriptObject, arg2: double, arg3: boolean): void
+                    public abstract setValue(arg0: jdk.nashorn.internal.runtime.ScriptObject, arg1: jdk.nashorn.internal.runtime.ScriptObject, arg2: java.lang.Object, arg3: boolean): void
+                    public abstract getSetter(arg0: java.lang.Class<any>, arg1: jdk.nashorn.internal.runtime.PropertyMap): java.lang.invoke.MethodHandle
                     public getGetterFunction(arg0: jdk.nashorn.internal.runtime.ScriptObject): jdk.nashorn.internal.runtime.ScriptFunction
                     public getSetterFunction(arg0: jdk.nashorn.internal.runtime.ScriptObject): jdk.nashorn.internal.runtime.ScriptFunction
                     public hashCode(): int

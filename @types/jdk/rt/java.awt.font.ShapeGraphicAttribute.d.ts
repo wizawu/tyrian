@@ -2,8 +2,8 @@ declare namespace java {
     namespace awt {
         namespace font {
             class ShapeGraphicAttribute extends java.awt.font.GraphicAttribute {
-                public static STROKE: boolean
-                public static FILL: boolean
+                public static readonly STROKE: boolean
+                public static readonly FILL: boolean
                 public constructor(arg0: java.awt.Shape, arg1: int, arg2: boolean)
                 public getAscent(): float
                 public getDescent(): float

@@ -8,9 +8,6 @@ declare namespace com {
                             interface WSWebServiceContext extends javax.xml.ws.WebServiceContext {
                                 getRequestPacket(): com.sun.xml.internal.ws.api.message.Packet
                             }
-                            interface WSWebServiceContext$$Lambda extends javax.xml.ws.WebServiceContext {
-                                (): com.sun.xml.internal.ws.api.message.Packet
-                            }
                         }
                     }
                 }

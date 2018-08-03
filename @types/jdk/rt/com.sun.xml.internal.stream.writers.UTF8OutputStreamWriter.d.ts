@@ -5,7 +5,7 @@ declare namespace com {
                 namespace stream {
                     namespace writers {
                         class UTF8OutputStreamWriter extends java.io.Writer {
-                            public constructor(arg0: java.io.OutputStream)
+                            public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda)
                             public getEncoding(): string
                             public write(arg0: int): void
                             public write(arg0: char[]): void

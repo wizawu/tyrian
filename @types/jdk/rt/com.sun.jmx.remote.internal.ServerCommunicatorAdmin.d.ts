@@ -7,9 +7,12 @@ declare namespace com {
                         public constructor(arg0: long)
                         public reqIncoming(): boolean
                         public rspOutgoing(): boolean
-                        protected doStop(): void
+                        protected abstract doStop(): void
                         public terminate(): void
                         public static class: java.lang.Class<any>
+                    }
+                    interface ServerCommunicatorAdmin$$Lambda {
+                        (): void
                     }
                 }
             }

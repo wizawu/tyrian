@@ -6,10 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace parsers {
                             class XMLGrammarCachingConfiguration extends com.sun.org.apache.xerces.internal.parsers.XIncludeAwareParserConfiguration {
-                                public static BIG_PRIME: int
-                                protected static fStaticSymbolTable: com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable
-                                protected static fStaticGrammarPool: com.sun.org.apache.xerces.internal.util.XMLGrammarPoolImpl
-                                protected static SCHEMA_FULL_CHECKING: string
+                                public static readonly BIG_PRIME: int
+                                protected static readonly fStaticSymbolTable: com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable
+                                protected static readonly fStaticGrammarPool: com.sun.org.apache.xerces.internal.util.XMLGrammarPoolImpl
+                                protected static readonly SCHEMA_FULL_CHECKING: string
                                 protected fSchemaLoader: com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader
                                 protected fDTDLoader: com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDLoader
                                 public constructor()

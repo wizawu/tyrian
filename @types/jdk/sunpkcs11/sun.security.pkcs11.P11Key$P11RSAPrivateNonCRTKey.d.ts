@@ -5,6 +5,7 @@ declare namespace sun {
                 public getFormat(): string
                 public getModulus(): java.math.BigInteger
                 public getPrivateExponent(): java.math.BigInteger
+                public static class: java.lang.Class<any>
             }
         }
     }

@@ -6,8 +6,11 @@ declare namespace sun {
                 public handleGetObject(arg0: java.lang.String | string): java.lang.Object
                 protected createMap<K, V>(arg0: int): java.util.Map<K, V>
                 protected createSet<E>(): java.util.Set<E>
-                protected getContents<E>(): java.lang.Object[][]
+                protected abstract getContents<E>(): java.lang.Object[][]
                 public static class: java.lang.Class<any>
+            }
+            interface TimeZoneNamesBundle$$Lambda extends sun.util.resources.OpenListResourceBundle {
+                (): java.lang.Object[][]
             }
         }
     }

@@ -7,7 +7,7 @@ declare namespace com {
                         namespace xsltc {
                             namespace trax {
                                 class TemplatesImpl implements javax.xml.transform.Templates , java.io.Serializable {
-                                    public static DESERIALIZE_TRANSLET: string
+                                    public static readonly DESERIALIZE_TRANSLET: string
                                     protected constructor(arg0: byte[][], arg1: java.lang.String | string, arg2: java.util.Properties, arg3: int, arg4: com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl)
                                     protected constructor(arg0: java.lang.Class[], arg1: java.lang.String | string, arg2: java.util.Properties, arg3: int, arg4: com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl)
                                     public constructor()

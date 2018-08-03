@@ -3,11 +3,11 @@ declare namespace jdk {
         namespace internal {
             namespace objects {
                 class NativeNumber extends jdk.nashorn.internal.runtime.ScriptObject {
-                    public static MAX_VALUE: double
-                    public static MIN_VALUE: double
-                    public static NaN: double
-                    public static NEGATIVE_INFINITY: double
-                    public static POSITIVE_INFINITY: double
+                    public static readonly MAX_VALUE: double
+                    public static readonly MIN_VALUE: double
+                    public static readonly NaN: double
+                    public static readonly NEGATIVE_INFINITY: double
+                    public static readonly POSITIVE_INFINITY: double
                     public safeToString(): string
                     public toString(): string
                     public getValue(): double

@@ -5,7 +5,7 @@ declare namespace sun {
                 namespace util {
                     class KrbDataInputStream extends java.io.BufferedInputStream {
                         public setNativeByteOrder(): void
-                        public constructor(arg0: java.io.InputStream)
+                        public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                         public readLength4(): int
                         public read(arg0: int): int
                         public readVersion(): int

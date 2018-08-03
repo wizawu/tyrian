@@ -4,6 +4,8 @@ declare namespace java {
             namespace attribute {
                 interface FileStoreAttributeView extends java.nio.file.attribute.AttributeView {
                 }
+                interface FileStoreAttributeView$$Lambda extends java.nio.file.attribute.AttributeView {
+                }
             }
         }
     }

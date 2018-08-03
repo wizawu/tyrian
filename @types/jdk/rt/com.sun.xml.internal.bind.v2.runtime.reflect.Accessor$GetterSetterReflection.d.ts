@@ -7,8 +7,8 @@ declare namespace com {
                         namespace runtime {
                             namespace reflect {
                                 class Accessor$GetterSetterReflection<BeanT, ValueT> extends com.sun.xml.internal.bind.v2.runtime.reflect.Accessor<BeanT, ValueT> {
-                                    public getter: java.lang.reflect.Method
-                                    public setter: java.lang.reflect.Method
+                                    public readonly getter: java.lang.reflect.Method
+                                    public readonly setter: java.lang.reflect.Method
                                     public constructor(arg0: java.lang.reflect.Method, arg1: java.lang.reflect.Method)
                                     public get(arg0: BeanT): ValueT
                                     public set(arg0: BeanT, arg1: ValueT): void

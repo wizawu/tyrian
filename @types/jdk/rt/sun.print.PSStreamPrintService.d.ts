@@ -1,7 +1,7 @@
 declare namespace sun {
     namespace print {
         class PSStreamPrintService extends javax.print.StreamPrintService implements sun.print.SunPrinterJobService {
-            public constructor(arg0: java.io.OutputStream)
+            public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda)
             public getOutputFormat(): string
             public getSupportedDocFlavors(): javax.print.DocFlavor[]
             public createPrintJob(): javax.print.DocPrintJob

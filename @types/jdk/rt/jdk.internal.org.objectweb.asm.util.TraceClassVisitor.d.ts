@@ -5,7 +5,7 @@ declare namespace jdk {
                 namespace asm {
                     namespace util {
                         class TraceClassVisitor extends jdk.internal.org.objectweb.asm.ClassVisitor {
-                            public p: jdk.internal.org.objectweb.asm.util.Printer
+                            public readonly p: jdk.internal.org.objectweb.asm.util.Printer
                             public constructor(arg0: java.io.PrintWriter)
                             public constructor(arg0: jdk.internal.org.objectweb.asm.ClassVisitor, arg1: java.io.PrintWriter)
                             public constructor(arg0: jdk.internal.org.objectweb.asm.ClassVisitor, arg1: jdk.internal.org.objectweb.asm.util.Printer, arg2: java.io.PrintWriter)

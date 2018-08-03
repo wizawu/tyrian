@@ -3,12 +3,12 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 class ScriptFunction extends jdk.nashorn.internal.runtime.ScriptObject {
-                    public static G$PROTOTYPE: java.lang.invoke.MethodHandle
-                    public static S$PROTOTYPE: java.lang.invoke.MethodHandle
-                    public static G$LENGTH: java.lang.invoke.MethodHandle
-                    public static G$NAME: java.lang.invoke.MethodHandle
-                    public static INVOKE_SYNC: java.lang.invoke.MethodHandle
-                    public static GET_SCOPE: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly G$PROTOTYPE: java.lang.invoke.MethodHandle
+                    public static readonly S$PROTOTYPE: java.lang.invoke.MethodHandle
+                    public static readonly G$LENGTH: java.lang.invoke.MethodHandle
+                    public static readonly G$NAME: java.lang.invoke.MethodHandle
+                    public static readonly INVOKE_SYNC: java.lang.invoke.MethodHandle
+                    public static readonly GET_SCOPE: jdk.nashorn.internal.codegen.CompilerConstants$Call
                     protected allocatorMap: jdk.nashorn.internal.runtime.PropertyMap
                     protected constructor(arg0: java.lang.String | string, arg1: java.lang.invoke.MethodHandle, arg2: jdk.nashorn.internal.runtime.Specialization[])
                     protected constructor(arg0: java.lang.String | string, arg1: java.lang.invoke.MethodHandle, arg2: jdk.nashorn.internal.runtime.PropertyMap, arg3: jdk.nashorn.internal.runtime.Specialization[])

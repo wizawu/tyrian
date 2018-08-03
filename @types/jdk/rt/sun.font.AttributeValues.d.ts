@@ -1,7 +1,7 @@
 declare namespace sun {
     namespace font {
         class AttributeValues implements java.lang.Cloneable {
-            public static MASK_ALL: int
+            public static readonly MASK_ALL: int
             public constructor()
             public getFamily(): string
             public setFamily(arg0: java.lang.String | string): void
@@ -23,9 +23,9 @@ declare namespace sun {
             public getCharReplacement(): java.awt.font.GraphicAttribute
             public setCharReplacement(arg0: java.awt.font.GraphicAttribute): void
             public getForeground(): java.awt.Paint
-            public setForeground(arg0: java.awt.Paint | java.awt.Paint$$Lambda): void
+            public setForeground(arg0: java.awt.Paint): void
             public getBackground(): java.awt.Paint
-            public setBackground(arg0: java.awt.Paint | java.awt.Paint$$Lambda): void
+            public setBackground(arg0: java.awt.Paint): void
             public getUnderline(): int
             public setUnderline(arg0: int): void
             public getStrikethrough(): boolean

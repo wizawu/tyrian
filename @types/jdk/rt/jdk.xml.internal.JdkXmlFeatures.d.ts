@@ -2,12 +2,12 @@ declare namespace jdk {
     namespace xml {
         namespace internal {
             class JdkXmlFeatures {
-                public static ORACLE_JAXP_PROPERTY_PREFIX: string
-                public static XML_FEATURE_MANAGER: string
-                public static ORACLE_FEATURE_SERVICE_MECHANISM: string
-                public static ORACLE_ENABLE_EXTENSION_FUNCTION: string
-                public static SP_ENABLE_EXTENSION_FUNCTION: string
-                public static SP_ENABLE_EXTENSION_FUNCTION_SPEC: string
+                public static readonly ORACLE_JAXP_PROPERTY_PREFIX: string
+                public static readonly XML_FEATURE_MANAGER: string
+                public static readonly ORACLE_FEATURE_SERVICE_MECHANISM: string
+                public static readonly ORACLE_ENABLE_EXTENSION_FUNCTION: string
+                public static readonly SP_ENABLE_EXTENSION_FUNCTION: string
+                public static readonly SP_ENABLE_EXTENSION_FUNCTION_SPEC: string
                 public constructor(arg0: boolean)
                 public update(): void
                 public setFeature(arg0: java.lang.String | string, arg1: jdk.xml.internal.JdkXmlFeatures$State, arg2: java.lang.Object): boolean

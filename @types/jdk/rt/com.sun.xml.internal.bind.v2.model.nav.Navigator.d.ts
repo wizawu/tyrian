@@ -45,18 +45,18 @@ declare namespace com {
                                     isPublicField(arg0: F): boolean
                                     isEnum(arg0: C): boolean
                                     erasure<P>(arg0: T): T
-                                    isAbstract(arg0: C): boolean
-                                    isFinal(arg0: C): boolean
-                                    getEnumConstants(arg0: C): F[]
-                                    getVoidType(): T
-                                    getPackageName(arg0: C): string
-                                    loadObjectFactory(arg0: C, arg1: java.lang.String | string): C
-                                    isBridgeMethod(arg0: M): boolean
-                                    isOverriding(arg0: M, arg1: C): boolean
-                                    isInterface(arg0: C): boolean
-                                    isTransient(arg0: F): boolean
-                                    isInnerClass(arg0: C): boolean
-                                    isSameType(arg0: T, arg1: T): boolean
+                                    isAbstract<P>(arg0: C): boolean
+                                    isFinal<P>(arg0: C): boolean
+                                    getEnumConstants<P>(arg0: C): F[]
+                                    getVoidType<P>(): T
+                                    getPackageName<P>(arg0: C): string
+                                    loadObjectFactory<P>(arg0: C, arg1: java.lang.String | string): C
+                                    isBridgeMethod<P>(arg0: M): boolean
+                                    isOverriding<P>(arg0: M, arg1: C): boolean
+                                    isInterface<P>(arg0: C): boolean
+                                    isTransient<P>(arg0: F): boolean
+                                    isInnerClass<P>(arg0: C): boolean
+                                    isSameType<P>(arg0: T, arg1: T): boolean
                                 }
                             }
                         }

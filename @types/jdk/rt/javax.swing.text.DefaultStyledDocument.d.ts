@@ -2,7 +2,7 @@ declare namespace javax {
     namespace swing {
         namespace text {
             class DefaultStyledDocument extends javax.swing.text.AbstractDocument implements javax.swing.text.StyledDocument {
-                public static BUFFER_SIZE_DEFAULT: int
+                public static readonly BUFFER_SIZE_DEFAULT: int
                 protected buffer: javax.swing.text.DefaultStyledDocument$ElementBuffer
                 public constructor(arg0: javax.swing.text.AbstractDocument$Content, arg1: javax.swing.text.StyleContext)
                 public constructor(arg0: javax.swing.text.StyleContext)

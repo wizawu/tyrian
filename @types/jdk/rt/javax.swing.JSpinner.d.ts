@@ -13,8 +13,8 @@ declare namespace javax {
             public getValue(): java.lang.Object
             public setValue(arg0: java.lang.Object): void
             public getNextValue(): java.lang.Object
-            public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
-            public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+            public addChangeListener(arg0: javax.swing.event.ChangeListener): void
+            public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
             public getChangeListeners(): javax.swing.event.ChangeListener[]
             protected fireStateChanged(): void
             public getPreviousValue(): java.lang.Object

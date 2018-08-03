@@ -9,7 +9,7 @@ declare namespace com {
                                 namespace resolver {
                                     abstract class ResourceResolverSpi {
                                         protected properties: java.util.Map<java.lang.String, java.lang.String>
-                                        protected secureValidation: boolean
+                                        protected readonly secureValidation: boolean
                                         public constructor()
                                         public engineResolve(arg0: org.w3c.dom.Attr, arg1: java.lang.String | string): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
                                         public engineResolveURI(arg0: com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput

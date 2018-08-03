@@ -30,8 +30,8 @@ declare namespace javax {
             public getUIClass(arg0: java.lang.String | string): java.lang.Class<javax.swing.plaf.ComponentUI>
             protected getUIError(arg0: java.lang.String | string): void
             public getUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
-            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
-            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
             public getPropertyChangeListeners(): java.beans.PropertyChangeListener[]
             protected firePropertyChange(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: java.lang.Object): void
             public addResourceBundle(arg0: java.lang.String | string): void

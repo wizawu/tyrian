@@ -6,7 +6,7 @@ declare namespace com {
                     namespace ior {
                         namespace iiop {
                             class MaxStreamFormatVersionComponentImpl extends com.sun.corba.se.spi.ior.TaggedComponentBase implements com.sun.corba.se.spi.ior.iiop.MaxStreamFormatVersionComponent {
-                                public static singleton: com.sun.corba.se.impl.ior.iiop.MaxStreamFormatVersionComponentImpl
+                                public static readonly singleton: com.sun.corba.se.impl.ior.iiop.MaxStreamFormatVersionComponentImpl
                                 public equals(arg0: java.lang.Object): boolean
                                 public hashCode(): int
                                 public toString(): string

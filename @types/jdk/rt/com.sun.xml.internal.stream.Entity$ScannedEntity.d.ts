@@ -4,10 +4,10 @@ declare namespace com {
             namespace internal {
                 namespace stream {
                     class Entity$ScannedEntity extends com.sun.xml.internal.stream.Entity {
-                        public static DEFAULT_BUFFER_SIZE: int
+                        public static readonly DEFAULT_BUFFER_SIZE: int
                         public fBufferSize: int
-                        public static DEFAULT_XMLDECL_BUFFER_SIZE: int
-                        public static DEFAULT_INTERNAL_BUFFER_SIZE: int
+                        public static readonly DEFAULT_XMLDECL_BUFFER_SIZE: int
+                        public static readonly DEFAULT_INTERNAL_BUFFER_SIZE: int
                         public stream: java.io.InputStream
                         public reader: java.io.Reader
                         public entityLocation: com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier
@@ -33,7 +33,7 @@ declare namespace com {
                         public setEntityVersion(arg0: java.lang.String | string): void
                         public getEntityReader(): java.io.Reader
                         public getEntityInputStream(): java.io.InputStream
-                        public constructor(arg0: boolean, arg1: java.lang.String | string, arg2: com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier, arg3: java.io.InputStream, arg4: java.io.Reader, arg5: java.lang.String | string, arg6: boolean, arg7: boolean, arg8: boolean)
+                        public constructor(arg0: boolean, arg1: java.lang.String | string, arg2: com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier, arg3: java.io.InputStream | java.io.InputStream$$Lambda, arg4: java.io.Reader, arg5: java.lang.String | string, arg6: boolean, arg7: boolean, arg8: boolean)
                         public close(): void
                         public isEncodingExternallySpecified(): boolean
                         public setEncodingExternallySpecified(arg0: boolean): void

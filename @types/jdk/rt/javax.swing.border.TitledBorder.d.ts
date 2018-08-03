@@ -8,22 +8,22 @@ declare namespace javax {
                 protected titleJustification: int
                 protected titleFont: java.awt.Font
                 protected titleColor: java.awt.Color
-                public static DEFAULT_POSITION: int
-                public static ABOVE_TOP: int
-                public static TOP: int
-                public static BELOW_TOP: int
-                public static ABOVE_BOTTOM: int
-                public static BOTTOM: int
-                public static BELOW_BOTTOM: int
-                public static DEFAULT_JUSTIFICATION: int
-                public static LEFT: int
-                public static CENTER: int
-                public static RIGHT: int
-                public static LEADING: int
-                public static TRAILING: int
-                protected static EDGE_SPACING: int
-                protected static TEXT_SPACING: int
-                protected static TEXT_INSET_H: int
+                public static readonly DEFAULT_POSITION: int
+                public static readonly ABOVE_TOP: int
+                public static readonly TOP: int
+                public static readonly BELOW_TOP: int
+                public static readonly ABOVE_BOTTOM: int
+                public static readonly BOTTOM: int
+                public static readonly BELOW_BOTTOM: int
+                public static readonly DEFAULT_JUSTIFICATION: int
+                public static readonly LEFT: int
+                public static readonly CENTER: int
+                public static readonly RIGHT: int
+                public static readonly LEADING: int
+                public static readonly TRAILING: int
+                protected static readonly EDGE_SPACING: int
+                protected static readonly TEXT_SPACING: int
+                protected static readonly TEXT_INSET_H: int
                 public constructor(arg0: java.lang.String | string)
                 public constructor(arg0: javax.swing.border.Border)
                 public constructor(arg0: javax.swing.border.Border, arg1: java.lang.String | string)

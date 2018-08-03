@@ -7,7 +7,7 @@ declare namespace jdk {
                     public input: java.lang.Object
                     public getClassName(): string
                     public static length(arg0: java.lang.Object): java.lang.Object
-                    public public static length(arg0: java.lang.Object, arg1: java.lang.Object): void
+                    public static public static length(arg0: java.lang.Object, arg1: java.lang.Object): void
                     public static $clinit$(): void
                     public G$index(): java.lang.Object
                     public S$index(arg0: java.lang.Object): void

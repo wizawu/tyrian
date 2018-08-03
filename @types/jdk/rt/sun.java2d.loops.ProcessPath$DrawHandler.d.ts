@@ -16,9 +16,9 @@ declare namespace sun {
                 public setBounds(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int): void
                 public adjustBounds(arg0: int, arg1: int, arg2: int, arg3: int): void
                 public constructor(arg0: int, arg1: int, arg2: int, arg3: int)
-                public drawLine(arg0: int, arg1: int, arg2: int, arg3: int): void
-                public drawPixel(arg0: int, arg1: int): void
-                public drawScanline(arg0: int, arg1: int, arg2: int): void
+                public abstract drawLine(arg0: int, arg1: int, arg2: int, arg3: int): void
+                public abstract drawPixel(arg0: int, arg1: int): void
+                public abstract drawScanline(arg0: int, arg1: int, arg2: int): void
                 public static class: java.lang.Class<any>
             }
         }

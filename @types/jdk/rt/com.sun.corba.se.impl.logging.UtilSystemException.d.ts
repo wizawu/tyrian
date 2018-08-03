@@ -5,35 +5,35 @@ declare namespace com {
                 namespace impl {
                     namespace logging {
                         class UtilSystemException extends com.sun.corba.se.spi.logging.LogWrapperBase {
-                            public static STUB_FACTORY_COULD_NOT_MAKE_STUB: int
-                            public static ERROR_IN_MAKE_STUB_FROM_REPOSITORY_ID: int
-                            public static CLASS_CAST_EXCEPTION_IN_LOAD_STUB: int
-                            public static EXCEPTION_IN_LOAD_STUB: int
-                            public static NO_POA: int
-                            public static CONNECT_WRONG_ORB: int
-                            public static CONNECT_NO_TIE: int
-                            public static CONNECT_TIE_WRONG_ORB: int
-                            public static CONNECT_TIE_NO_SERVANT: int
-                            public static LOAD_TIE_FAILED: int
-                            public static BAD_HEX_DIGIT: int
-                            public static UNABLE_LOCATE_VALUE_HELPER: int
-                            public static INVALID_INDIRECTION: int
-                            public static OBJECT_NOT_CONNECTED: int
-                            public static COULD_NOT_LOAD_STUB: int
-                            public static OBJECT_NOT_EXPORTED: int
-                            public static ERROR_SET_OBJECT_FIELD: int
-                            public static ERROR_SET_BOOLEAN_FIELD: int
-                            public static ERROR_SET_BYTE_FIELD: int
-                            public static ERROR_SET_CHAR_FIELD: int
-                            public static ERROR_SET_SHORT_FIELD: int
-                            public static ERROR_SET_INT_FIELD: int
-                            public static ERROR_SET_LONG_FIELD: int
-                            public static ERROR_SET_FLOAT_FIELD: int
-                            public static ERROR_SET_DOUBLE_FIELD: int
-                            public static ILLEGAL_FIELD_ACCESS: int
-                            public static BAD_BEGIN_UNMARSHAL_CUSTOM_VALUE: int
-                            public static CLASS_NOT_FOUND: int
-                            public static UNKNOWN_SYSEX: int
+                            public static readonly STUB_FACTORY_COULD_NOT_MAKE_STUB: int
+                            public static readonly ERROR_IN_MAKE_STUB_FROM_REPOSITORY_ID: int
+                            public static readonly CLASS_CAST_EXCEPTION_IN_LOAD_STUB: int
+                            public static readonly EXCEPTION_IN_LOAD_STUB: int
+                            public static readonly NO_POA: int
+                            public static readonly CONNECT_WRONG_ORB: int
+                            public static readonly CONNECT_NO_TIE: int
+                            public static readonly CONNECT_TIE_WRONG_ORB: int
+                            public static readonly CONNECT_TIE_NO_SERVANT: int
+                            public static readonly LOAD_TIE_FAILED: int
+                            public static readonly BAD_HEX_DIGIT: int
+                            public static readonly UNABLE_LOCATE_VALUE_HELPER: int
+                            public static readonly INVALID_INDIRECTION: int
+                            public static readonly OBJECT_NOT_CONNECTED: int
+                            public static readonly COULD_NOT_LOAD_STUB: int
+                            public static readonly OBJECT_NOT_EXPORTED: int
+                            public static readonly ERROR_SET_OBJECT_FIELD: int
+                            public static readonly ERROR_SET_BOOLEAN_FIELD: int
+                            public static readonly ERROR_SET_BYTE_FIELD: int
+                            public static readonly ERROR_SET_CHAR_FIELD: int
+                            public static readonly ERROR_SET_SHORT_FIELD: int
+                            public static readonly ERROR_SET_INT_FIELD: int
+                            public static readonly ERROR_SET_LONG_FIELD: int
+                            public static readonly ERROR_SET_FLOAT_FIELD: int
+                            public static readonly ERROR_SET_DOUBLE_FIELD: int
+                            public static readonly ILLEGAL_FIELD_ACCESS: int
+                            public static readonly BAD_BEGIN_UNMARSHAL_CUSTOM_VALUE: int
+                            public static readonly CLASS_NOT_FOUND: int
+                            public static readonly UNKNOWN_SYSEX: int
                             public constructor(arg0: java.util.logging.Logger)
                             public static get(arg0: com.sun.corba.se.spi.orb.ORB, arg1: java.lang.String | string): com.sun.corba.se.impl.logging.UtilSystemException
                             public static get(arg0: java.lang.String | string): com.sun.corba.se.impl.logging.UtilSystemException

@@ -6,10 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace serialize {
                             class OutputFormat$DTD {
-                                public static HTMLPublicId: string
-                                public static HTMLSystemId: string
-                                public static XHTMLPublicId: string
-                                public static XHTMLSystemId: string
+                                public static readonly HTMLPublicId: string
+                                public static readonly HTMLSystemId: string
+                                public static readonly XHTMLPublicId: string
+                                public static readonly XHTMLSystemId: string
                                 public constructor()
                                 public static class: java.lang.Class<any>
                             }

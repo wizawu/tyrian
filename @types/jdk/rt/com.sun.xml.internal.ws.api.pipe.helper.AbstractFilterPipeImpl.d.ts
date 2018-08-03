@@ -7,7 +7,7 @@ declare namespace com {
                         namespace pipe {
                             namespace helper {
                                 abstract class AbstractFilterPipeImpl extends com.sun.xml.internal.ws.api.pipe.helper.AbstractPipeImpl {
-                                    protected next: com.sun.xml.internal.ws.api.pipe.Pipe
+                                    protected readonly next: com.sun.xml.internal.ws.api.pipe.Pipe
                                     protected constructor(arg0: com.sun.xml.internal.ws.api.pipe.Pipe)
                                     protected constructor(arg0: com.sun.xml.internal.ws.api.pipe.helper.AbstractFilterPipeImpl, arg1: com.sun.xml.internal.ws.api.pipe.PipeCloner)
                                     public process(arg0: com.sun.xml.internal.ws.api.message.Packet): com.sun.xml.internal.ws.api.message.Packet

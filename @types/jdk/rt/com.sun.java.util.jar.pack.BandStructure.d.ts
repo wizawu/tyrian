@@ -8,38 +8,38 @@ declare namespace com {
                             protected bandHeaderBytes: byte[]
                             protected bandHeaderBytePos: int
                             protected bandHeaderBytePos0: int
-                            public static NO_PHASE: int
-                            public static COLLECT_PHASE: int
-                            public static FROZEN_PHASE: int
-                            public static WRITE_PHASE: int
-                            public static EXPECT_PHASE: int
-                            public static READ_PHASE: int
-                            public static DISBURSE_PHASE: int
-                            public static DONE_PHASE: int
+                            public static readonly NO_PHASE: int
+                            public static readonly COLLECT_PHASE: int
+                            public static readonly FROZEN_PHASE: int
+                            public static readonly WRITE_PHASE: int
+                            public static readonly EXPECT_PHASE: int
+                            public static readonly READ_PHASE: int
+                            public static readonly DISBURSE_PHASE: int
+                            public static readonly DONE_PHASE: int
                             protected archiveOptions: int
                             protected archiveSize0: long
                             protected archiveSize1: long
                             protected archiveNextCount: int
                             protected metadataBands: com.sun.java.util.jar.pack.BandStructure$MultiBand[]
                             protected typeMetadataBands: com.sun.java.util.jar.pack.BandStructure$MultiBand[]
-                            public static ADH_CONTEXT_MASK: int
-                            public static ADH_BIT_SHIFT: int
-                            public static ADH_BIT_IS_LSB: int
-                            public static ATTR_INDEX_OVERFLOW: int
+                            public static readonly ADH_CONTEXT_MASK: int
+                            public static readonly ADH_BIT_SHIFT: int
+                            public static readonly ADH_BIT_IS_LSB: int
+                            public static readonly ATTR_INDEX_OVERFLOW: int
                             public attrIndexLimit: int[]
                             protected attrFlagMask: long[]
                             protected attrDefSeen: long[]
                             protected attrOverflowMask: int[]
                             protected attrClassFileVersionMask: int
                             protected attrBandTable: java.util.Map<com.sun.java.util.jar.pack.Attribute$Layout, com.sun.java.util.jar.pack.BandStructure$Band[]>
-                            protected attrCodeEmpty: com.sun.java.util.jar.pack.Attribute$Layout
-                            protected attrInnerClassesEmpty: com.sun.java.util.jar.pack.Attribute$Layout
-                            protected attrClassFileVersion: com.sun.java.util.jar.pack.Attribute$Layout
-                            protected attrConstantValue: com.sun.java.util.jar.pack.Attribute$Layout
+                            protected readonly attrCodeEmpty: com.sun.java.util.jar.pack.Attribute$Layout
+                            protected readonly attrInnerClassesEmpty: com.sun.java.util.jar.pack.Attribute$Layout
+                            protected readonly attrClassFileVersion: com.sun.java.util.jar.pack.Attribute$Layout
+                            protected readonly attrConstantValue: com.sun.java.util.jar.pack.Attribute$Layout
                             protected attrDefs: java.util.List<java.util.List<com.sun.java.util.jar.pack.Attribute$Layout>>
                             protected attrBands: com.sun.java.util.jar.pack.BandStructure$MultiBand[]
-                            public shortCodeHeader_h_limit: int
-                            protected getCPIndex(arg0: byte): com.sun.java.util.jar.pack.ConstantPool$Index
+                            public readonly shortCodeHeader_h_limit: int
+                            protected abstract getCPIndex(arg0: byte): com.sun.java.util.jar.pack.ConstantPool$Index
                             public initHighestClassVersion(arg0: com.sun.java.util.jar.pack.Package$Version): void
                             public getHighestClassVersion(): com.sun.java.util.jar.pack.Package$Version
                             protected constructor()
@@ -78,6 +78,9 @@ declare namespace com {
                             protected static realloc(arg0: byte[], arg1: int): byte[]
                             protected static realloc(arg0: byte[]): byte[]
                             public static class: java.lang.Class<any>
+                        }
+                        interface BandStructure$$Lambda {
+                            (arg0: byte): com.sun.java.util.jar.pack.ConstantPool$Index
                         }
                     }
                 }

@@ -6,36 +6,36 @@ declare namespace com {
                     namespace internal {
                         namespace dom {
                             abstract class NodeImpl implements org.w3c.dom.Node , org.w3c.dom.NodeList , org.w3c.dom.events.EventTarget , java.lang.Cloneable , java.io.Serializable {
-                                public static TREE_POSITION_PRECEDING: short
-                                public static TREE_POSITION_FOLLOWING: short
-                                public static TREE_POSITION_ANCESTOR: short
-                                public static TREE_POSITION_DESCENDANT: short
-                                public static TREE_POSITION_EQUIVALENT: short
-                                public static TREE_POSITION_SAME_NODE: short
-                                public static TREE_POSITION_DISCONNECTED: short
-                                public static DOCUMENT_POSITION_DISCONNECTED: short
-                                public static DOCUMENT_POSITION_PRECEDING: short
-                                public static DOCUMENT_POSITION_FOLLOWING: short
-                                public static DOCUMENT_POSITION_CONTAINS: short
-                                public static DOCUMENT_POSITION_IS_CONTAINED: short
-                                public static DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: short
-                                public static ELEMENT_DEFINITION_NODE: short
+                                public static readonly TREE_POSITION_PRECEDING: short
+                                public static readonly TREE_POSITION_FOLLOWING: short
+                                public static readonly TREE_POSITION_ANCESTOR: short
+                                public static readonly TREE_POSITION_DESCENDANT: short
+                                public static readonly TREE_POSITION_EQUIVALENT: short
+                                public static readonly TREE_POSITION_SAME_NODE: short
+                                public static readonly TREE_POSITION_DISCONNECTED: short
+                                public static readonly DOCUMENT_POSITION_DISCONNECTED: short
+                                public static readonly DOCUMENT_POSITION_PRECEDING: short
+                                public static readonly DOCUMENT_POSITION_FOLLOWING: short
+                                public static readonly DOCUMENT_POSITION_CONTAINS: short
+                                public static readonly DOCUMENT_POSITION_IS_CONTAINED: short
+                                public static readonly DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: short
+                                public static readonly ELEMENT_DEFINITION_NODE: short
                                 protected ownerNode: com.sun.org.apache.xerces.internal.dom.NodeImpl
                                 protected flags: short
-                                protected static READONLY: short
-                                protected static SYNCDATA: short
-                                protected static SYNCCHILDREN: short
-                                protected static OWNED: short
-                                protected static FIRSTCHILD: short
-                                protected static SPECIFIED: short
-                                protected static IGNORABLEWS: short
-                                protected static HASSTRING: short
-                                protected static NORMALIZED: short
-                                protected static ID: short
+                                protected static readonly READONLY: short
+                                protected static readonly SYNCDATA: short
+                                protected static readonly SYNCCHILDREN: short
+                                protected static readonly OWNED: short
+                                protected static readonly FIRSTCHILD: short
+                                protected static readonly SPECIFIED: short
+                                protected static readonly IGNORABLEWS: short
+                                protected static readonly HASSTRING: short
+                                protected static readonly NORMALIZED: short
+                                protected static readonly ID: short
                                 protected constructor(arg0: com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl)
                                 public constructor()
-                                public getNodeType(): short
-                                public getNodeName(): string
+                                public abstract getNodeType(): short
+                                public abstract getNodeName(): string
                                 public getNodeValue(): string
                                 public setNodeValue(arg0: java.lang.String | string): void
                                 public appendChild(arg0: org.w3c.dom.Node): org.w3c.dom.Node

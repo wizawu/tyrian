@@ -5,8 +5,8 @@ declare namespace com {
                 namespace ws {
                     namespace dump {
                         class MessageDumper$ProcessingState extends java.lang.Enum<com.sun.xml.internal.ws.dump.MessageDumper$ProcessingState> {
-                            public static Received: com.sun.xml.internal.ws.dump.MessageDumper$ProcessingState
-                            public static Processed: com.sun.xml.internal.ws.dump.MessageDumper$ProcessingState
+                            public static readonly Received: com.sun.xml.internal.ws.dump.MessageDumper$ProcessingState
+                            public static readonly Processed: com.sun.xml.internal.ws.dump.MessageDumper$ProcessingState
                             public static values(): com.sun.xml.internal.ws.dump.MessageDumper$ProcessingState[]
                             public static valueOf(arg0: java.lang.String | string): com.sun.xml.internal.ws.dump.MessageDumper$ProcessingState
                             public toString(): string

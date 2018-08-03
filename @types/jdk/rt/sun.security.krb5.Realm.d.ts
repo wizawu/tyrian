@@ -2,7 +2,7 @@ declare namespace sun {
     namespace security {
         namespace krb5 {
             class Realm implements java.lang.Cloneable {
-                public static AUTODEDUCEREALM: boolean
+                public static readonly AUTODEDUCEREALM: boolean
                 public constructor(arg0: java.lang.String | string)
                 public static getDefault(): sun.security.krb5.Realm
                 public clone(): java.lang.Object

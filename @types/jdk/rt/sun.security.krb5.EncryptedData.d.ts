@@ -2,15 +2,15 @@ declare namespace sun {
     namespace security {
         namespace krb5 {
             class EncryptedData implements java.lang.Cloneable {
-                public static ETYPE_NULL: int
-                public static ETYPE_DES_CBC_CRC: int
-                public static ETYPE_DES_CBC_MD4: int
-                public static ETYPE_DES_CBC_MD5: int
-                public static ETYPE_ARCFOUR_HMAC: int
-                public static ETYPE_ARCFOUR_HMAC_EXP: int
-                public static ETYPE_DES3_CBC_HMAC_SHA1_KD: int
-                public static ETYPE_AES128_CTS_HMAC_SHA1_96: int
-                public static ETYPE_AES256_CTS_HMAC_SHA1_96: int
+                public static readonly ETYPE_NULL: int
+                public static readonly ETYPE_DES_CBC_CRC: int
+                public static readonly ETYPE_DES_CBC_MD4: int
+                public static readonly ETYPE_DES_CBC_MD5: int
+                public static readonly ETYPE_ARCFOUR_HMAC: int
+                public static readonly ETYPE_ARCFOUR_HMAC_EXP: int
+                public static readonly ETYPE_DES3_CBC_HMAC_SHA1_KD: int
+                public static readonly ETYPE_AES128_CTS_HMAC_SHA1_96: int
+                public static readonly ETYPE_AES256_CTS_HMAC_SHA1_96: int
                 public clone(): java.lang.Object
                 public constructor(arg0: int, arg1: java.lang.Integer, arg2: byte[])
                 public constructor(arg0: sun.security.krb5.EncryptionKey, arg1: byte[], arg2: int)

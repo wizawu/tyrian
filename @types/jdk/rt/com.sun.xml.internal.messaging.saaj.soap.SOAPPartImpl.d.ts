@@ -6,7 +6,7 @@ declare namespace com {
                     namespace saaj {
                         namespace soap {
                             abstract class SOAPPartImpl extends javax.xml.soap.SOAPPart implements com.sun.xml.internal.messaging.saaj.soap.SOAPDocument {
-                                protected static log: java.util.logging.Logger
+                                protected static readonly log: java.util.logging.Logger
                                 protected headers: javax.xml.soap.MimeHeaders
                                 protected envelope: com.sun.xml.internal.messaging.saaj.soap.Envelope
                                 protected source: javax.xml.transform.Source
@@ -16,10 +16,10 @@ declare namespace com {
                                 protected message: com.sun.xml.internal.messaging.saaj.soap.MessageImpl
                                 protected constructor()
                                 protected constructor(arg0: com.sun.xml.internal.messaging.saaj.soap.MessageImpl)
-                                protected getContentType(): string
-                                protected createEnvelopeFromSource(): com.sun.xml.internal.messaging.saaj.soap.Envelope
-                                protected createEmptyEnvelope(arg0: java.lang.String | string): com.sun.xml.internal.messaging.saaj.soap.Envelope
-                                protected duplicateType(): com.sun.xml.internal.messaging.saaj.soap.SOAPPartImpl
+                                protected abstract getContentType(): string
+                                protected abstract createEnvelopeFromSource(): com.sun.xml.internal.messaging.saaj.soap.Envelope
+                                protected abstract createEmptyEnvelope(arg0: java.lang.String | string): com.sun.xml.internal.messaging.saaj.soap.Envelope
+                                protected abstract duplicateType(): com.sun.xml.internal.messaging.saaj.soap.SOAPPartImpl
                                 protected getContentTypeString(): string
                                 public isFastInfoset(): boolean
                                 public getEnvelope(): javax.xml.soap.SOAPEnvelope

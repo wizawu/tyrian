@@ -8,22 +8,22 @@ declare namespace com {
                             abstract class Type implements java.io.Serializable {
                                 protected type: byte
                                 protected signature: string
-                                public static VOID: com.sun.org.apache.bcel.internal.generic.BasicType
-                                public static BOOLEAN: com.sun.org.apache.bcel.internal.generic.BasicType
-                                public static INT: com.sun.org.apache.bcel.internal.generic.BasicType
-                                public static SHORT: com.sun.org.apache.bcel.internal.generic.BasicType
-                                public static BYTE: com.sun.org.apache.bcel.internal.generic.BasicType
-                                public static LONG: com.sun.org.apache.bcel.internal.generic.BasicType
-                                public static DOUBLE: com.sun.org.apache.bcel.internal.generic.BasicType
-                                public static FLOAT: com.sun.org.apache.bcel.internal.generic.BasicType
-                                public static CHAR: com.sun.org.apache.bcel.internal.generic.BasicType
-                                public static OBJECT: com.sun.org.apache.bcel.internal.generic.ObjectType
-                                public static STRING: com.sun.org.apache.bcel.internal.generic.ObjectType
-                                public static STRINGBUFFER: com.sun.org.apache.bcel.internal.generic.ObjectType
-                                public static THROWABLE: com.sun.org.apache.bcel.internal.generic.ObjectType
-                                public static NO_ARGS: com.sun.org.apache.bcel.internal.generic.Type[]
-                                public static NULL: com.sun.org.apache.bcel.internal.generic.ReferenceType
-                                public static UNKNOWN: com.sun.org.apache.bcel.internal.generic.Type
+                                public static readonly VOID: com.sun.org.apache.bcel.internal.generic.BasicType
+                                public static readonly BOOLEAN: com.sun.org.apache.bcel.internal.generic.BasicType
+                                public static readonly INT: com.sun.org.apache.bcel.internal.generic.BasicType
+                                public static readonly SHORT: com.sun.org.apache.bcel.internal.generic.BasicType
+                                public static readonly BYTE: com.sun.org.apache.bcel.internal.generic.BasicType
+                                public static readonly LONG: com.sun.org.apache.bcel.internal.generic.BasicType
+                                public static readonly DOUBLE: com.sun.org.apache.bcel.internal.generic.BasicType
+                                public static readonly FLOAT: com.sun.org.apache.bcel.internal.generic.BasicType
+                                public static readonly CHAR: com.sun.org.apache.bcel.internal.generic.BasicType
+                                public static readonly OBJECT: com.sun.org.apache.bcel.internal.generic.ObjectType
+                                public static readonly STRING: com.sun.org.apache.bcel.internal.generic.ObjectType
+                                public static readonly STRINGBUFFER: com.sun.org.apache.bcel.internal.generic.ObjectType
+                                public static readonly THROWABLE: com.sun.org.apache.bcel.internal.generic.ObjectType
+                                public static readonly NO_ARGS: com.sun.org.apache.bcel.internal.generic.Type[]
+                                public static readonly NULL: com.sun.org.apache.bcel.internal.generic.ReferenceType
+                                public static readonly UNKNOWN: com.sun.org.apache.bcel.internal.generic.Type
                                 protected constructor(arg0: byte, arg1: java.lang.String | string)
                                 public getSignature(): string
                                 public getType(): byte

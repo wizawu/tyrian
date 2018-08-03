@@ -5,7 +5,7 @@ declare namespace com {
                 namespace ws {
                     namespace developer {
                         class HttpConfigFeature extends javax.xml.ws.WebServiceFeature {
-                            public static ID: string
+                            public static readonly ID: string
                             public constructor()
                             public constructor(arg0: java.net.CookieHandler)
                             public getID(): string

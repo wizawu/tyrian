@@ -3,16 +3,16 @@ declare namespace sun {
         namespace plaf {
             namespace synth {
                 class Paint9Painter extends sun.swing.CachedPainter {
-                    public static PAINT_TOP_LEFT: int
-                    public static PAINT_TOP: int
-                    public static PAINT_TOP_RIGHT: int
-                    public static PAINT_LEFT: int
-                    public static PAINT_CENTER: int
-                    public static PAINT_RIGHT: int
-                    public static PAINT_BOTTOM_RIGHT: int
-                    public static PAINT_BOTTOM: int
-                    public static PAINT_BOTTOM_LEFT: int
-                    public static PAINT_ALL: int
+                    public static readonly PAINT_TOP_LEFT: int
+                    public static readonly PAINT_TOP: int
+                    public static readonly PAINT_TOP_RIGHT: int
+                    public static readonly PAINT_LEFT: int
+                    public static readonly PAINT_CENTER: int
+                    public static readonly PAINT_RIGHT: int
+                    public static readonly PAINT_BOTTOM_RIGHT: int
+                    public static readonly PAINT_BOTTOM: int
+                    public static readonly PAINT_BOTTOM_LEFT: int
+                    public static readonly PAINT_ALL: int
                     public static validImage(arg0: java.awt.Image): boolean
                     public constructor(arg0: int)
                     public paint(arg0: java.awt.Component, arg1: java.awt.Graphics, arg2: int, arg3: int, arg4: int, arg5: int, arg6: java.awt.Image, arg7: java.awt.Insets, arg8: java.awt.Insets, arg9: sun.swing.plaf.synth.Paint9Painter$PaintType, arg10: int): void

@@ -6,9 +6,9 @@ declare namespace com {
                     namespace presentation {
                         namespace rmi {
                             class IDLTypesUtil {
-                                public static VALID_TYPE: int
-                                public static INVALID_TYPE: int
-                                public static FOLLOW_RMIC: boolean
+                                public static readonly VALID_TYPE: int
+                                public static readonly INVALID_TYPE: int
+                                public static readonly FOLLOW_RMIC: boolean
                                 public constructor()
                                 public validateRemoteInterface(arg0: java.lang.Class): void
                                 public isRemoteInterface(arg0: java.lang.Class): boolean

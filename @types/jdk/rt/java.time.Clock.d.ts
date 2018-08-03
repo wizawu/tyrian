@@ -10,10 +10,10 @@ declare namespace java {
             public static fixed(arg0: java.time.Instant, arg1: java.time.ZoneId): java.time.Clock
             public static offset(arg0: java.time.Clock, arg1: java.time.Duration): java.time.Clock
             protected constructor()
-            public getZone(): java.time.ZoneId
-            public withZone(arg0: java.time.ZoneId): java.time.Clock
+            public abstract getZone(): java.time.ZoneId
+            public abstract withZone(arg0: java.time.ZoneId): java.time.Clock
             public millis(): long
-            public instant(): java.time.Instant
+            public abstract instant(): java.time.Instant
             public equals(arg0: java.lang.Object): boolean
             public hashCode(): int
             public static class: java.lang.Class<any>

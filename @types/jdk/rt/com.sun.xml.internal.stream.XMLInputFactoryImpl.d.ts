@@ -5,19 +5,19 @@ declare namespace com {
                 namespace stream {
                     class XMLInputFactoryImpl extends javax.xml.stream.XMLInputFactory {
                         public constructor()
-                        public createXMLEventReader(arg0: java.io.InputStream): javax.xml.stream.XMLEventReader
+                        public createXMLEventReader(arg0: java.io.InputStream | java.io.InputStream$$Lambda): javax.xml.stream.XMLEventReader
                         public createXMLEventReader(arg0: java.io.Reader): javax.xml.stream.XMLEventReader
                         public createXMLEventReader(arg0: javax.xml.transform.Source): javax.xml.stream.XMLEventReader
-                        public createXMLEventReader(arg0: java.lang.String | string, arg1: java.io.InputStream): javax.xml.stream.XMLEventReader
-                        public createXMLEventReader(arg0: java.io.InputStream, arg1: java.lang.String | string): javax.xml.stream.XMLEventReader
+                        public createXMLEventReader(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): javax.xml.stream.XMLEventReader
+                        public createXMLEventReader(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.lang.String | string): javax.xml.stream.XMLEventReader
                         public createXMLEventReader(arg0: java.lang.String | string, arg1: java.io.Reader): javax.xml.stream.XMLEventReader
                         public createXMLEventReader(arg0: javax.xml.stream.XMLStreamReader): javax.xml.stream.XMLEventReader
-                        public createXMLStreamReader(arg0: java.io.InputStream): javax.xml.stream.XMLStreamReader
+                        public createXMLStreamReader(arg0: java.io.InputStream | java.io.InputStream$$Lambda): javax.xml.stream.XMLStreamReader
                         public createXMLStreamReader(arg0: java.io.Reader): javax.xml.stream.XMLStreamReader
                         public createXMLStreamReader(arg0: java.lang.String | string, arg1: java.io.Reader): javax.xml.stream.XMLStreamReader
                         public createXMLStreamReader(arg0: javax.xml.transform.Source): javax.xml.stream.XMLStreamReader
-                        public createXMLStreamReader(arg0: java.lang.String | string, arg1: java.io.InputStream): javax.xml.stream.XMLStreamReader
-                        public createXMLStreamReader(arg0: java.io.InputStream, arg1: java.lang.String | string): javax.xml.stream.XMLStreamReader
+                        public createXMLStreamReader(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): javax.xml.stream.XMLStreamReader
+                        public createXMLStreamReader(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.lang.String | string): javax.xml.stream.XMLStreamReader
                         public getEventAllocator(): javax.xml.stream.util.XMLEventAllocator
                         public getXMLReporter(): javax.xml.stream.XMLReporter
                         public getXMLResolver(): javax.xml.stream.XMLResolver

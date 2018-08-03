@@ -2,15 +2,15 @@ declare namespace sun {
     namespace security {
         namespace x509 {
             class ReasonFlags {
-                public static UNUSED: string
-                public static KEY_COMPROMISE: string
-                public static CA_COMPROMISE: string
-                public static AFFILIATION_CHANGED: string
-                public static SUPERSEDED: string
-                public static CESSATION_OF_OPERATION: string
-                public static CERTIFICATE_HOLD: string
-                public static PRIVILEGE_WITHDRAWN: string
-                public static AA_COMPROMISE: string
+                public static readonly UNUSED: string
+                public static readonly KEY_COMPROMISE: string
+                public static readonly CA_COMPROMISE: string
+                public static readonly AFFILIATION_CHANGED: string
+                public static readonly SUPERSEDED: string
+                public static readonly CESSATION_OF_OPERATION: string
+                public static readonly CERTIFICATE_HOLD: string
+                public static readonly PRIVILEGE_WITHDRAWN: string
+                public static readonly AA_COMPROMISE: string
                 public constructor(arg0: byte[])
                 public constructor(arg0: boolean[])
                 public constructor(arg0: sun.security.util.BitArray)

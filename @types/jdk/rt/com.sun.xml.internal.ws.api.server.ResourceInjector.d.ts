@@ -6,10 +6,13 @@ declare namespace com {
                     namespace api {
                         namespace server {
                             abstract class ResourceInjector {
-                                public static STANDALONE: com.sun.xml.internal.ws.api.server.ResourceInjector
+                                public static readonly STANDALONE: com.sun.xml.internal.ws.api.server.ResourceInjector
                                 public constructor()
-                                public inject(arg0: com.sun.xml.internal.ws.api.server.WSWebServiceContext | com.sun.xml.internal.ws.api.server.WSWebServiceContext$$Lambda, arg1: java.lang.Object): void
+                                public abstract inject(arg0: com.sun.xml.internal.ws.api.server.WSWebServiceContext, arg1: java.lang.Object): void
                                 public static class: java.lang.Class<any>
+                            }
+                            interface ResourceInjector$$Lambda {
+                                (arg0: com.sun.xml.internal.ws.api.server.WSWebServiceContext, arg1: java.lang.Object): void
                             }
                         }
                     }

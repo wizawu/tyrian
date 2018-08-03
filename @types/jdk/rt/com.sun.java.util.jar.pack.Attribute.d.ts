@@ -23,7 +23,7 @@ declare namespace com {
                             public static lookup(arg0: java.util.Map<com.sun.java.util.jar.pack.Attribute$Layout, com.sun.java.util.jar.pack.Attribute>, arg1: int, arg2: java.lang.String | string): com.sun.java.util.jar.pack.Attribute
                             public static define(arg0: java.util.Map<com.sun.java.util.jar.pack.Attribute$Layout, com.sun.java.util.jar.pack.Attribute>, arg1: int, arg2: java.lang.String | string, arg3: java.lang.String | string): com.sun.java.util.jar.pack.Attribute
                             public static contextName(arg0: int): string
-                            public parse(arg0: com.sun.java.util.jar.pack.Attribute$Holder, arg1: byte[], arg2: int, arg3: int, arg4: com.sun.java.util.jar.pack.Attribute$ValueStream): void
+                            public parse(arg0: com.sun.java.util.jar.pack.Attribute$Holder | com.sun.java.util.jar.pack.Attribute$Holder$$Lambda, arg1: byte[], arg2: int, arg3: int, arg4: com.sun.java.util.jar.pack.Attribute$ValueStream): void
                             public unparse(arg0: com.sun.java.util.jar.pack.Attribute$ValueStream, arg1: java.io.ByteArrayOutputStream): java.lang.Object
                             public toString(): string
                             public static normalizeLayoutString(arg0: java.lang.String | string): string

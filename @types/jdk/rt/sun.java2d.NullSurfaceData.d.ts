@@ -1,7 +1,7 @@
 declare namespace sun {
     namespace java2d {
         class NullSurfaceData extends sun.java2d.SurfaceData {
-            public static theInstance: sun.java2d.SurfaceData
+            public static readonly theInstance: sun.java2d.SurfaceData
             public invalidate(): void
             public getReplacement(): sun.java2d.SurfaceData
             public validatePipe(arg0: sun.java2d.SunGraphics2D): void

@@ -9,7 +9,7 @@ declare namespace com {
                                 public getCharacterStream(): java.io.Reader
                                 public setCharacterStream(arg0: java.io.Reader): void
                                 public getByteStream(): java.io.InputStream
-                                public setByteStream(arg0: java.io.InputStream): void
+                                public setByteStream(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
                                 public getStringData(): string
                                 public setStringData(arg0: java.lang.String | string): void
                                 public getSystemId(): string

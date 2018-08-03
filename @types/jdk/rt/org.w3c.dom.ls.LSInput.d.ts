@@ -6,7 +6,7 @@ declare namespace org {
                     getCharacterStream(): java.io.Reader
                     setCharacterStream(arg0: java.io.Reader): void
                     getByteStream(): java.io.InputStream
-                    setByteStream(arg0: java.io.InputStream): void
+                    setByteStream(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
                     getStringData(): string
                     setStringData(arg0: java.lang.String | string): void
                     getSystemId(): string

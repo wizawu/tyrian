@@ -2,8 +2,8 @@ declare namespace javax {
     namespace swing {
         namespace border {
             class BevelBorder extends javax.swing.border.AbstractBorder {
-                public static RAISED: int
-                public static LOWERED: int
+                public static readonly RAISED: int
+                public static readonly LOWERED: int
                 protected bevelType: int
                 protected highlightOuter: java.awt.Color
                 protected highlightInner: java.awt.Color

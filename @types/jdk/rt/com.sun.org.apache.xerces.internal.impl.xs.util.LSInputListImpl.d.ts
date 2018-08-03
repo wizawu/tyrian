@@ -8,7 +8,7 @@ declare namespace com {
                             namespace xs {
                                 namespace util {
                                     class LSInputListImpl extends java.util.AbstractList implements com.sun.org.apache.xerces.internal.xs.LSInputList {
-                                        public static EMPTY_LIST: com.sun.org.apache.xerces.internal.impl.xs.util.LSInputListImpl
+                                        public static readonly EMPTY_LIST: com.sun.org.apache.xerces.internal.impl.xs.util.LSInputListImpl
                                         public constructor(arg0: org.w3c.dom.ls.LSInput[], arg1: int)
                                         public getLength(): int
                                         public item(arg0: int): org.w3c.dom.ls.LSInput

@@ -3,8 +3,8 @@ declare namespace javax {
         namespace plaf {
             namespace metal {
                 class MetalIconFactory implements java.io.Serializable {
-                    public static DARK: boolean
-                    public static LIGHT: boolean
+                    public static readonly DARK: boolean
+                    public static readonly LIGHT: boolean
                     public constructor()
                     public static getFileChooserDetailViewIcon(): javax.swing.Icon
                     public static getFileChooserHomeFolderIcon(): javax.swing.Icon

@@ -1,8 +1,8 @@
 declare namespace javax {
     namespace swing {
         class ImageIcon implements javax.swing.Icon , java.io.Serializable , javax.accessibility.Accessible {
-            protected static component: java.awt.Component
-            protected static tracker: java.awt.MediaTracker
+            protected static readonly component: java.awt.Component
+            protected static readonly tracker: java.awt.MediaTracker
             public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
             public constructor(arg0: java.lang.String | string)
             public constructor(arg0: java.net.URL, arg1: java.lang.String | string)

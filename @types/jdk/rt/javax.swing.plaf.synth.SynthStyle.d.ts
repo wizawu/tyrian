@@ -6,9 +6,9 @@ declare namespace javax {
                     public constructor()
                     public getGraphicsUtils(arg0: javax.swing.plaf.synth.SynthContext): javax.swing.plaf.synth.SynthGraphicsUtils
                     public getColor(arg0: javax.swing.plaf.synth.SynthContext, arg1: javax.swing.plaf.synth.ColorType): java.awt.Color
-                    protected getColorForState(arg0: javax.swing.plaf.synth.SynthContext, arg1: javax.swing.plaf.synth.ColorType): java.awt.Color
+                    protected abstract getColorForState(arg0: javax.swing.plaf.synth.SynthContext, arg1: javax.swing.plaf.synth.ColorType): java.awt.Color
                     public getFont(arg0: javax.swing.plaf.synth.SynthContext): java.awt.Font
-                    protected getFontForState(arg0: javax.swing.plaf.synth.SynthContext): java.awt.Font
+                    protected abstract getFontForState(arg0: javax.swing.plaf.synth.SynthContext): java.awt.Font
                     public getInsets(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Insets): java.awt.Insets
                     public getPainter(arg0: javax.swing.plaf.synth.SynthContext): javax.swing.plaf.synth.SynthPainter
                     public isOpaque(arg0: javax.swing.plaf.synth.SynthContext): boolean

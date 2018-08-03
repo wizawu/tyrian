@@ -2,9 +2,9 @@ declare namespace java {
     namespace awt {
         namespace event {
             class InvocationEvent extends java.awt.AWTEvent implements java.awt.ActiveEvent {
-                public static INVOCATION_FIRST: int
-                public static INVOCATION_DEFAULT: int
-                public static INVOCATION_LAST: int
+                public static readonly INVOCATION_FIRST: int
+                public static readonly INVOCATION_DEFAULT: int
+                public static readonly INVOCATION_LAST: int
                 protected runnable: java.lang.Runnable
                 protected notifier: java.lang.Object
                 protected catchExceptions: boolean

@@ -1,8 +1,8 @@
 declare namespace java {
     namespace time {
         class LocalDate implements java.time.temporal.Temporal , java.time.temporal.TemporalAdjuster , java.time.chrono.ChronoLocalDate , java.io.Serializable {
-            public static MIN: java.time.LocalDate
-            public static MAX: java.time.LocalDate
+            public static readonly MIN: java.time.LocalDate
+            public static readonly MAX: java.time.LocalDate
             public static now(): java.time.LocalDate
             public static now(arg0: java.time.ZoneId): java.time.LocalDate
             public static now(arg0: java.time.Clock): java.time.LocalDate

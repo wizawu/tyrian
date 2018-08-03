@@ -7,7 +7,7 @@ declare namespace com {
                         namespace model {
                             namespace impl {
                                 class RuntimeModelBuilder extends com.sun.xml.internal.bind.v2.model.impl.ModelBuilder<java.lang.reflect.Type, java.lang.Class, java.lang.reflect.Field, java.lang.reflect.Method> {
-                                    public context: com.sun.xml.internal.bind.v2.runtime.JAXBContextImpl
+                                    public readonly context: com.sun.xml.internal.bind.v2.runtime.JAXBContextImpl
                                     public constructor(arg0: com.sun.xml.internal.bind.v2.runtime.JAXBContextImpl, arg1: com.sun.xml.internal.bind.v2.model.annotation.RuntimeAnnotationReader, arg2: java.util.Map<java.lang.Class, java.lang.Class>, arg3: java.lang.String | string)
                                     public getClassInfo(arg0: java.lang.Class, arg1: com.sun.xml.internal.bind.v2.model.annotation.Locatable): com.sun.xml.internal.bind.v2.model.runtime.RuntimeNonElement
                                     public getClassInfo(arg0: java.lang.Class, arg1: boolean, arg2: com.sun.xml.internal.bind.v2.model.annotation.Locatable): com.sun.xml.internal.bind.v2.model.runtime.RuntimeNonElement

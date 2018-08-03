@@ -23,8 +23,8 @@ declare namespace java {
             public traceMethodCalls(arg0: boolean): void
             public load(arg0: java.lang.String | string): void
             public loadLibrary(arg0: java.lang.String | string): void
-            public getLocalizedInputStream(arg0: java.io.InputStream): java.io.InputStream
-            public getLocalizedOutputStream(arg0: java.io.OutputStream): java.io.OutputStream
+            public getLocalizedInputStream(arg0: java.io.InputStream | java.io.InputStream$$Lambda): java.io.InputStream
+            public getLocalizedOutputStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): java.io.OutputStream
             public static class: java.lang.Class<any>
         }
     }

@@ -2,7 +2,7 @@ declare namespace sun {
     namespace net {
         namespace idn {
             class StringPrepDataReader implements sun.text.normalizer.ICUBinary$Authenticate {
-                public constructor(arg0: java.io.InputStream)
+                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                 public read(arg0: byte[], arg1: char[]): void
                 public getDataFormatVersion(): byte[]
                 public isDataVersionAcceptable(arg0: byte[]): boolean

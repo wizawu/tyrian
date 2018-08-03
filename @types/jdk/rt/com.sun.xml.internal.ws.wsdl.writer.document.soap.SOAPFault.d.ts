@@ -10,9 +10,6 @@ declare namespace com {
                                     interface SOAPFault extends com.sun.xml.internal.txw2.TypedXmlWriter , com.sun.xml.internal.ws.wsdl.writer.document.soap.BodyType {
                                         name(arg0: java.lang.String | string): com.sun.xml.internal.ws.wsdl.writer.document.soap.SOAPFault
                                     }
-                                    interface SOAPFault$$Lambda extends com.sun.xml.internal.txw2.TypedXmlWriter , com.sun.xml.internal.ws.wsdl.writer.document.soap.BodyType {
-                                        (arg0: java.lang.String | string): com.sun.xml.internal.ws.wsdl.writer.document.soap.SOAPFault
-                                    }
                                 }
                             }
                         }

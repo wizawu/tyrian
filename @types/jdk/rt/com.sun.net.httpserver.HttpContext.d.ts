@@ -4,14 +4,14 @@ declare namespace com {
             namespace httpserver {
                 abstract class HttpContext {
                     protected constructor()
-                    public getHandler(): com.sun.net.httpserver.HttpHandler
-                    public setHandler(arg0: com.sun.net.httpserver.HttpHandler | com.sun.net.httpserver.HttpHandler$$Lambda): void
-                    public getPath(): string
-                    public getServer(): com.sun.net.httpserver.HttpServer
-                    public getAttributes(): java.util.Map<java.lang.String, java.lang.Object>
-                    public getFilters(): java.util.List<com.sun.net.httpserver.Filter>
-                    public setAuthenticator(arg0: com.sun.net.httpserver.Authenticator): com.sun.net.httpserver.Authenticator
-                    public getAuthenticator(): com.sun.net.httpserver.Authenticator
+                    public abstract getHandler(): com.sun.net.httpserver.HttpHandler
+                    public abstract setHandler(arg0: com.sun.net.httpserver.HttpHandler | com.sun.net.httpserver.HttpHandler$$Lambda): void
+                    public abstract getPath(): string
+                    public abstract getServer(): com.sun.net.httpserver.HttpServer
+                    public abstract getAttributes(): java.util.Map<java.lang.String, java.lang.Object>
+                    public abstract getFilters(): java.util.List<com.sun.net.httpserver.Filter>
+                    public abstract setAuthenticator(arg0: com.sun.net.httpserver.Authenticator | com.sun.net.httpserver.Authenticator$$Lambda): com.sun.net.httpserver.Authenticator
+                    public abstract getAuthenticator(): com.sun.net.httpserver.Authenticator
                     public static class: java.lang.Class<any>
                 }
             }

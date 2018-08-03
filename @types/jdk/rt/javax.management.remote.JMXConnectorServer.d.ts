@@ -2,7 +2,7 @@ declare namespace javax {
     namespace management {
         namespace remote {
             abstract class JMXConnectorServer extends javax.management.NotificationBroadcasterSupport implements javax.management.remote.JMXConnectorServerMBean , javax.management.MBeanRegistration , javax.management.remote.JMXAddressable {
-                public static AUTHENTICATOR: string
+                public static readonly AUTHENTICATOR: string
                 public constructor()
                 public constructor(arg0: javax.management.MBeanServer)
                 public getMBeanServer(): javax.management.MBeanServer

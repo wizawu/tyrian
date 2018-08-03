@@ -2,8 +2,8 @@ declare namespace sun {
     namespace rmi {
         namespace server {
             class UnicastServerRef extends sun.rmi.server.UnicastRef implements java.rmi.server.ServerRef , sun.rmi.server.Dispatcher {
-                public static logCalls: boolean
-                public static callLog: sun.rmi.runtime.Log
+                public static readonly logCalls: boolean
+                public static readonly callLog: sun.rmi.runtime.Log
                 public constructor()
                 public constructor(arg0: sun.rmi.transport.LiveRef)
                 public constructor(arg0: sun.rmi.transport.LiveRef, arg1: sun.misc.ObjectInputFilter | sun.misc.ObjectInputFilter$$Lambda)

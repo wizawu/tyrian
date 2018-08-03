@@ -10,7 +10,7 @@ declare namespace com {
                             protected corbaMessageMediator: com.sun.corba.se.spi.protocol.CorbaMessageMediator
                             public constructor(arg0: com.sun.corba.se.spi.orb.ORB, arg1: com.sun.corba.se.spi.ior.iiop.GIOPVersion, arg2: byte, arg3: boolean, arg4: com.sun.corba.se.impl.encoding.BufferManagerWrite, arg5: byte, arg6: boolean)
                             public constructor(arg0: com.sun.corba.se.spi.orb.ORB, arg1: com.sun.corba.se.spi.ior.iiop.GIOPVersion, arg2: byte, arg3: boolean, arg4: com.sun.corba.se.impl.encoding.BufferManagerWrite, arg5: byte)
-                            public create_input_stream(): org.omg.CORBA.portable.InputStream
+                            public abstract create_input_stream(): org.omg.CORBA.portable.InputStream
                             public write_boolean(arg0: boolean): void
                             public write_char(arg0: char): void
                             public write_wchar(arg0: char): void
@@ -57,7 +57,7 @@ declare namespace com {
                             public start_block(): void
                             public end_block(): void
                             public putEndian(): void
-                            public writeTo(arg0: java.io.OutputStream): void
+                            public writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                             public toByteArray(): byte[]
                             public write_Abstract(arg0: java.lang.Object): void
                             public write_Value(arg0: java.io.Serializable): void
@@ -81,7 +81,7 @@ declare namespace com {
                             public getGIOPVersion(): com.sun.corba.se.spi.ior.iiop.GIOPVersion
                             public writeIndirection(arg0: int, arg1: int): void
                             protected createCharCTBConverter(): com.sun.corba.se.impl.encoding.CodeSetConversion$CTBConverter
-                            protected createWCharCTBConverter(): com.sun.corba.se.impl.encoding.CodeSetConversion$CTBConverter
+                            protected abstract createWCharCTBConverter(): com.sun.corba.se.impl.encoding.CodeSetConversion$CTBConverter
                             protected freeInternalCaches(): void
                             public alignOnBoundary(arg0: int): void
                             public setHeaderPadding(arg0: boolean): void

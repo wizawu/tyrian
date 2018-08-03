@@ -5,6 +5,7 @@ declare namespace sun {
                 public getFormat(): string
                 public getS(): java.math.BigInteger
                 public getParams(): java.security.spec.ECParameterSpec
+                public static class: java.lang.Class<any>
             }
         }
     }

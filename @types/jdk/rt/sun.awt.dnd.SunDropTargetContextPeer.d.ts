@@ -2,15 +2,15 @@ declare namespace sun {
     namespace awt {
         namespace dnd {
             abstract class SunDropTargetContextPeer implements java.awt.dnd.peer.DropTargetContextPeer , java.awt.datatransfer.Transferable {
-                public static DISPATCH_SYNC: boolean
+                public static readonly DISPATCH_SYNC: boolean
                 protected dropStatus: int
                 protected dropComplete: boolean
-                protected static _globalLock: java.lang.Object
+                protected static readonly _globalLock: java.lang.Object
                 protected static currentJVMLocalSourceTransferable: java.awt.datatransfer.Transferable
-                protected static STATUS_NONE: int
-                protected static STATUS_WAIT: int
-                protected static STATUS_ACCEPT: int
-                protected static STATUS_REJECT: int
+                protected static readonly STATUS_NONE: int
+                protected static readonly STATUS_WAIT: int
+                protected static readonly STATUS_ACCEPT: int
+                protected static readonly STATUS_REJECT: int
                 public static setCurrentJVMLocalSourceTransferable(arg0: java.awt.datatransfer.Transferable): void
                 public constructor()
                 public getDropTarget(): java.awt.dnd.DropTarget
@@ -20,7 +20,7 @@ declare namespace sun {
                 public getTransferDataFlavors(): java.awt.datatransfer.DataFlavor[]
                 public isDataFlavorSupported(arg0: java.awt.datatransfer.DataFlavor): boolean
                 public getTransferData(arg0: java.awt.datatransfer.DataFlavor): java.lang.Object
-                protected getNativeData(arg0: long): java.lang.Object
+                protected abstract getNativeData(arg0: long): java.lang.Object
                 public isTransferableJVMLocal(): boolean
                 protected processEnterMessage(arg0: sun.awt.dnd.SunDropTargetEvent): void
                 protected processExitMessage(arg0: sun.awt.dnd.SunDropTargetEvent): void
@@ -32,7 +32,7 @@ declare namespace sun {
                 public acceptDrop(arg0: int): void
                 public rejectDrop(): void
                 public dropComplete(arg0: boolean): void
-                protected doDropDone(arg0: boolean, arg1: int, arg2: boolean): void
+                protected abstract doDropDone(arg0: boolean, arg1: int, arg2: boolean): void
                 protected getNativeDragContext(): long
                 protected eventPosted(arg0: sun.awt.dnd.SunDropTargetEvent): void
                 protected eventProcessed(arg0: sun.awt.dnd.SunDropTargetEvent, arg1: int, arg2: boolean): void

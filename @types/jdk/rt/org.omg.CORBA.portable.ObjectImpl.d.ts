@@ -6,7 +6,7 @@ declare namespace org {
                     public constructor()
                     public _get_delegate(): org.omg.CORBA.portable.Delegate
                     public _set_delegate(arg0: org.omg.CORBA.portable.Delegate): void
-                    public _ids(): java.lang.String[]
+                    public abstract _ids(): java.lang.String[]
                     public _duplicate(): org.omg.CORBA.Object
                     public _release(): void
                     public _is_a(arg0: java.lang.String | string): boolean
@@ -31,6 +31,9 @@ declare namespace org {
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
                     public static class: java.lang.Class<any>
+                }
+                interface ObjectImpl$$Lambda implements org.omg.CORBA.Object {
+                    (): java.lang.String[]
                 }
             }
         }

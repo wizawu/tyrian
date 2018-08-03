@@ -3,8 +3,11 @@ declare namespace javax {
         namespace table {
             abstract class TableStringConverter {
                 public constructor()
-                public toString(arg0: javax.swing.table.TableModel, arg1: int, arg2: int): string
+                public abstract toString(arg0: javax.swing.table.TableModel, arg1: int, arg2: int): string
                 public static class: java.lang.Class<any>
+            }
+            interface TableStringConverter$$Lambda {
+                (arg0: javax.swing.table.TableModel, arg1: int, arg2: int): string
             }
         }
     }

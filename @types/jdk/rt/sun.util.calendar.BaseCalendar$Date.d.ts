@@ -5,8 +5,8 @@ declare namespace sun {
                 protected constructor()
                 protected constructor(arg0: java.util.TimeZone)
                 public setNormalizedDate(arg0: int, arg1: int, arg2: int): sun.util.calendar.BaseCalendar$Date
-                public getNormalizedYear(): int
-                public setNormalizedYear(arg0: int): void
+                public abstract getNormalizedYear(): int
+                public abstract setNormalizedYear(arg0: int): void
                 protected hit(arg0: int): boolean
                 protected hit(arg0: long): boolean
                 protected getCachedYear(): int

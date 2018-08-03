@@ -9,8 +9,8 @@ declare namespace com {
                                 protected fDomErrorHandler: org.w3c.dom.DOMErrorHandler
                                 protected fOut: java.io.PrintWriter
                                 public fCurrentNode: org.w3c.dom.Node
-                                protected fErrorCode: com.sun.org.apache.xerces.internal.util.XMLErrorCode
-                                protected fDOMError: com.sun.org.apache.xerces.internal.dom.DOMErrorImpl
+                                protected readonly fErrorCode: com.sun.org.apache.xerces.internal.util.XMLErrorCode
+                                protected readonly fDOMError: com.sun.org.apache.xerces.internal.dom.DOMErrorImpl
                                 public constructor()
                                 public constructor(arg0: org.w3c.dom.DOMErrorHandler | org.w3c.dom.DOMErrorHandler$$Lambda)
                                 public setErrorHandler(arg0: org.w3c.dom.DOMErrorHandler | org.w3c.dom.DOMErrorHandler$$Lambda): void

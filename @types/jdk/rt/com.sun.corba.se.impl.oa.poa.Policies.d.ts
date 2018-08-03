@@ -6,8 +6,8 @@ declare namespace com {
                     namespace oa {
                         namespace poa {
                             class Policies {
-                                public static defaultPolicies: com.sun.corba.se.impl.oa.poa.Policies
-                                public static rootPOAPolicies: com.sun.corba.se.impl.oa.poa.Policies
+                                public static readonly defaultPolicies: com.sun.corba.se.impl.oa.poa.Policies
+                                public static readonly rootPOAPolicies: com.sun.corba.se.impl.oa.poa.Policies
                                 public toString(): string
                                 public get_effective_policy(arg0: int): org.omg.CORBA.Policy
                                 public isOrbControlledThreads(): boolean

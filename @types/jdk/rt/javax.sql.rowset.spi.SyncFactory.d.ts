@@ -3,9 +3,9 @@ declare namespace javax {
         namespace rowset {
             namespace spi {
                 class SyncFactory {
-                    public static ROWSET_SYNC_PROVIDER: string
-                    public static ROWSET_SYNC_VENDOR: string
-                    public static ROWSET_SYNC_PROVIDER_VERSION: string
+                    public static readonly ROWSET_SYNC_PROVIDER: string
+                    public static readonly ROWSET_SYNC_VENDOR: string
+                    public static readonly ROWSET_SYNC_PROVIDER_VERSION: string
                     public static registerProvider(arg0: java.lang.String | string): void
                     public static getSyncFactory(): javax.sql.rowset.spi.SyncFactory
                     public static unregisterProvider(arg0: java.lang.String | string): void

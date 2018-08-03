@@ -19,8 +19,8 @@ declare namespace javax {
                     public intervalRemoved(arg0: javax.swing.event.ListDataEvent): void
                     protected sort(arg0: java.util.Vector<java.io.File>): void
                     protected lt(arg0: java.io.File, arg1: java.io.File): boolean
-                    public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
-                    public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+                    public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+                    public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
                     public getPropertyChangeListeners(): java.beans.PropertyChangeListener[]
                     protected firePropertyChange(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: java.lang.Object): void
                     public static class: java.lang.Class<any>

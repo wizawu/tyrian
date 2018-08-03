@@ -1,17 +1,17 @@
 declare namespace java {
     namespace lang {
         class Float extends java.lang.Number implements java.lang.Comparable<java.lang.Float> {
-            public static POSITIVE_INFINITY: float
-            public static NEGATIVE_INFINITY: float
-            public static NaN: float
-            public static MAX_VALUE: float
-            public static MIN_NORMAL: float
-            public static MIN_VALUE: float
-            public static MAX_EXPONENT: int
-            public static MIN_EXPONENT: int
-            public static SIZE: int
-            public static BYTES: int
-            public static TYPE: java.lang.Class<java.lang.Float>
+            public static readonly POSITIVE_INFINITY: float
+            public static readonly NEGATIVE_INFINITY: float
+            public static readonly NaN: float
+            public static readonly MAX_VALUE: float
+            public static readonly MIN_NORMAL: float
+            public static readonly MIN_VALUE: float
+            public static readonly MAX_EXPONENT: int
+            public static readonly MIN_EXPONENT: int
+            public static readonly SIZE: int
+            public static readonly BYTES: int
+            public static readonly TYPE: java.lang.Class<java.lang.Float>
             public static toString(arg0: float): string
             public static toHexString(arg0: float): string
             public static valueOf(arg0: java.lang.String | string): java.lang.Float

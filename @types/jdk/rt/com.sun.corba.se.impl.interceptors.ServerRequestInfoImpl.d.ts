@@ -5,17 +5,17 @@ declare namespace com {
                 namespace impl {
                     namespace interceptors {
                         class ServerRequestInfoImpl extends com.sun.corba.se.impl.interceptors.RequestInfoImpl implements org.omg.PortableInterceptor.ServerRequestInfo {
-                            protected static MID_SENDING_EXCEPTION: int
-                            protected static MID_OBJECT_ID: int
-                            protected static MID_ADAPTER_ID: int
-                            protected static MID_TARGET_MOST_DERIVED_INTERFACE: int
-                            protected static MID_GET_SERVER_POLICY: int
-                            protected static MID_SET_SLOT: int
-                            protected static MID_TARGET_IS_A: int
-                            protected static MID_ADD_REPLY_SERVICE_CONTEXT: int
-                            protected static MID_SERVER_ID: int
-                            protected static MID_ORB_ID: int
-                            protected static MID_ADAPTER_NAME: int
+                            protected static readonly MID_SENDING_EXCEPTION: int
+                            protected static readonly MID_OBJECT_ID: int
+                            protected static readonly MID_ADAPTER_ID: int
+                            protected static readonly MID_TARGET_MOST_DERIVED_INTERFACE: int
+                            protected static readonly MID_GET_SERVER_POLICY: int
+                            protected static readonly MID_SET_SLOT: int
+                            protected static readonly MID_TARGET_IS_A: int
+                            protected static readonly MID_ADD_REPLY_SERVICE_CONTEXT: int
+                            protected static readonly MID_SERVER_ID: int
+                            protected static readonly MID_ORB_ID: int
+                            protected static readonly MID_ADAPTER_NAME: int
                             public sending_exception(): org.omg.CORBA.Any
                             public object_id(): byte[]
                             public server_id(): string

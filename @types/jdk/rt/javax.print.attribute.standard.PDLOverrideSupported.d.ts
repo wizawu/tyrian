@@ -3,8 +3,8 @@ declare namespace javax {
         namespace attribute {
             namespace standard {
                 class PDLOverrideSupported extends javax.print.attribute.EnumSyntax implements javax.print.attribute.PrintServiceAttribute {
-                    public static NOT_ATTEMPTED: javax.print.attribute.standard.PDLOverrideSupported
-                    public static ATTEMPTED: javax.print.attribute.standard.PDLOverrideSupported
+                    public static readonly NOT_ATTEMPTED: javax.print.attribute.standard.PDLOverrideSupported
+                    public static readonly ATTEMPTED: javax.print.attribute.standard.PDLOverrideSupported
                     protected constructor(arg0: int)
                     protected getStringTable(): java.lang.String[]
                     protected getEnumValueTable(): javax.print.attribute.EnumSyntax[]

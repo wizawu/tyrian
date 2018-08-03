@@ -10,7 +10,7 @@ declare namespace com {
                                     class QPDecoderStream extends java.io.FilterInputStream {
                                         protected ba: byte[]
                                         protected spaces: int
-                                        public constructor(arg0: java.io.InputStream)
+                                        public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                                         public read(): int
                                         public read(arg0: byte[], arg1: int, arg2: int): int
                                         public markSupported(): boolean

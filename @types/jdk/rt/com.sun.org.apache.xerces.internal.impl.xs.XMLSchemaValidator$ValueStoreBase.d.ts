@@ -14,7 +14,7 @@ declare namespace com {
                                     protected fLocalValueTypes: short[]
                                     protected fLocalItemValueTypes: com.sun.org.apache.xerces.internal.xs.ShortList[]
                                     protected fValuesCount: int
-                                    public fValues: java.util.Vector
+                                    public readonly fValues: java.util.Vector
                                     public fValueTypes: com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$ShortVector
                                     public fItemValueTypes: java.util.Vector
                                     protected constructor(arg0: com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator, arg1: com.sun.org.apache.xerces.internal.impl.xs.identity.IdentityConstraint)

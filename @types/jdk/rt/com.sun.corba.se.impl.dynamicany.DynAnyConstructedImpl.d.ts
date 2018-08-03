@@ -5,14 +5,14 @@ declare namespace com {
                 namespace impl {
                     namespace dynamicany {
                         abstract class DynAnyConstructedImpl extends com.sun.corba.se.impl.dynamicany.DynAnyImpl {
-                            protected static REPRESENTATION_NONE: byte
-                            protected static REPRESENTATION_TYPECODE: byte
-                            protected static REPRESENTATION_ANY: byte
-                            protected static REPRESENTATION_COMPONENTS: byte
-                            protected static RECURSIVE_UNDEF: byte
-                            protected static RECURSIVE_NO: byte
-                            protected static RECURSIVE_YES: byte
-                            protected static emptyComponents: org.omg.DynamicAny.DynAny[]
+                            protected static readonly REPRESENTATION_NONE: byte
+                            protected static readonly REPRESENTATION_TYPECODE: byte
+                            protected static readonly REPRESENTATION_ANY: byte
+                            protected static readonly REPRESENTATION_COMPONENTS: byte
+                            protected static readonly RECURSIVE_UNDEF: byte
+                            protected static readonly RECURSIVE_NO: byte
+                            protected static readonly RECURSIVE_YES: byte
+                            protected static readonly emptyComponents: org.omg.DynamicAny.DynAny[]
                             protected constructor(arg0: com.sun.corba.se.spi.orb.ORB, arg1: org.omg.CORBA.Any, arg2: boolean)
                             protected constructor(arg0: com.sun.corba.se.spi.orb.ORB, arg1: org.omg.CORBA.TypeCode)
                             protected isRecursive(): boolean
@@ -25,8 +25,8 @@ declare namespace com {
                             protected writeAny(arg0: org.omg.CORBA.portable.OutputStream): void
                             protected checkInitComponents(): boolean
                             protected checkInitAny(): void
-                            protected initializeComponentsFromAny(): boolean
-                            protected initializeComponentsFromTypeCode(): boolean
+                            protected abstract initializeComponentsFromAny(): boolean
+                            protected abstract initializeComponentsFromTypeCode(): boolean
                             protected initializeAnyFromComponents(): boolean
                             public assign(arg0: org.omg.DynamicAny.DynAny): void
                             public from_any(arg0: org.omg.CORBA.Any): void

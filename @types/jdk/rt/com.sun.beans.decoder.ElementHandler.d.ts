@@ -14,8 +14,11 @@ declare namespace com {
                     public addCharacter(arg0: char): void
                     protected addArgument(arg0: java.lang.Object): void
                     protected isArgument(): boolean
-                    protected getValueObject(): com.sun.beans.decoder.ValueObject
+                    protected abstract getValueObject(): com.sun.beans.decoder.ValueObject
                     public static class: java.lang.Class<any>
+                }
+                interface ElementHandler$$Lambda {
+                    (): com.sun.beans.decoder.ValueObject
                 }
             }
         }

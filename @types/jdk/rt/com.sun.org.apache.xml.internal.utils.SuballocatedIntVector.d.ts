@@ -9,7 +9,7 @@ declare namespace com {
                                 protected m_blocksize: int
                                 protected m_SHIFT: int
                                 protected m_MASK: int
-                                protected static NUMBLOCKS_DEFAULT: int
+                                protected static readonly NUMBLOCKS_DEFAULT: int
                                 protected m_numblocks: int
                                 protected m_map: int[][]
                                 protected m_firstFree: int

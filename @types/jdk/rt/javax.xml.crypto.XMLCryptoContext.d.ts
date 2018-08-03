@@ -5,7 +5,7 @@ declare namespace javax {
                 getBaseURI(): string
                 setBaseURI(arg0: java.lang.String | string): void
                 getKeySelector(): javax.xml.crypto.KeySelector
-                setKeySelector(arg0: javax.xml.crypto.KeySelector): void
+                setKeySelector(arg0: javax.xml.crypto.KeySelector | javax.xml.crypto.KeySelector$$Lambda): void
                 getURIDereferencer(): javax.xml.crypto.URIDereferencer
                 setURIDereferencer(arg0: javax.xml.crypto.URIDereferencer | javax.xml.crypto.URIDereferencer$$Lambda): void
                 getNamespacePrefix(arg0: java.lang.String | string, arg1: java.lang.String | string): string

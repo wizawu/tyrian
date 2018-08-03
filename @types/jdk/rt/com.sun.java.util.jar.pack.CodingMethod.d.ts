@@ -5,8 +5,8 @@ declare namespace com {
                 namespace jar {
                     namespace pack {
                         interface CodingMethod {
-                            readArrayFrom(arg0: java.io.InputStream, arg1: int[], arg2: int, arg3: int): void
-                            writeArrayTo(arg0: java.io.OutputStream, arg1: int[], arg2: int, arg3: int): void
+                            readArrayFrom(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: int[], arg2: int, arg3: int): void
+                            writeArrayTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: int[], arg2: int, arg3: int): void
                             getMetaCoding(arg0: com.sun.java.util.jar.pack.Coding): byte[]
                         }
                     }

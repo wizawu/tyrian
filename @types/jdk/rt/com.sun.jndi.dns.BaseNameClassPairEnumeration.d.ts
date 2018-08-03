@@ -8,9 +8,12 @@ declare namespace com {
                     public close(): void
                     public hasMore(): boolean
                     public hasMoreElements(): boolean
-                    public next(): T
+                    public abstract next(): T
                     public nextElement(): T
                     public static class: java.lang.Class<any>
+                }
+                interface BaseNameClassPairEnumeration$$Lambda<T> implements javax.naming.NamingEnumeration<T> {
+                    (): T
                 }
             }
         }

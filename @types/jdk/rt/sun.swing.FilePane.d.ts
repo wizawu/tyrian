@@ -1,16 +1,16 @@
 declare namespace sun {
     namespace swing {
         class FilePane extends javax.swing.JPanel implements java.beans.PropertyChangeListener {
-            public static ACTION_APPROVE_SELECTION: string
-            public static ACTION_CANCEL: string
-            public static ACTION_EDIT_FILE_NAME: string
-            public static ACTION_REFRESH: string
-            public static ACTION_CHANGE_TO_PARENT_DIRECTORY: string
-            public static ACTION_NEW_FOLDER: string
-            public static ACTION_VIEW_LIST: string
-            public static ACTION_VIEW_DETAILS: string
-            public static VIEWTYPE_LIST: int
-            public static VIEWTYPE_DETAILS: int
+            public static readonly ACTION_APPROVE_SELECTION: string
+            public static readonly ACTION_CANCEL: string
+            public static readonly ACTION_EDIT_FILE_NAME: string
+            public static readonly ACTION_REFRESH: string
+            public static readonly ACTION_CHANGE_TO_PARENT_DIRECTORY: string
+            public static readonly ACTION_NEW_FOLDER: string
+            public static readonly ACTION_VIEW_LIST: string
+            public static readonly ACTION_VIEW_DETAILS: string
+            public static readonly VIEWTYPE_LIST: int
+            public static readonly VIEWTYPE_DETAILS: int
             protected newFolderAction: javax.swing.Action
             public constructor(arg0: sun.swing.FilePane$FileChooserUIAccessor)
             public uninstallUI(): void

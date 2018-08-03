@@ -1,11 +1,11 @@
 declare namespace java {
     namespace util {
         class JapaneseImperialCalendar extends java.util.Calendar {
-            public static BEFORE_MEIJI: int
-            public static MEIJI: int
-            public static TAISHO: int
-            public static SHOWA: int
-            public static HEISEI: int
+            public static readonly BEFORE_MEIJI: int
+            public static readonly MEIJI: int
+            public static readonly TAISHO: int
+            public static readonly SHOWA: int
+            public static readonly HEISEI: int
             public getCalendarType(): string
             public equals(arg0: java.lang.Object): boolean
             public hashCode(): int

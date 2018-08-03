@@ -3,8 +3,8 @@ declare namespace javax {
         namespace plaf {
             namespace basic {
                 class BasicOptionPaneUI extends javax.swing.plaf.OptionPaneUI {
-                    public static MinimumWidth: int
-                    public static MinimumHeight: int
+                    public static readonly MinimumWidth: int
+                    public static readonly MinimumHeight: int
                     protected optionPane: javax.swing.JOptionPane
                     protected minimumSize: java.awt.Dimension
                     protected inputComponent: javax.swing.JComponent

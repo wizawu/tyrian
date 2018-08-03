@@ -3,7 +3,7 @@ declare namespace sun {
         namespace transport {
             namespace proxy {
                 class HttpReceiveSocket extends sun.rmi.transport.proxy.WrappedSocket implements sun.rmi.transport.proxy.RMISocketInfo {
-                    public constructor(arg0: java.net.Socket, arg1: java.io.InputStream, arg2: java.io.OutputStream)
+                    public constructor(arg0: java.net.Socket, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: java.io.OutputStream | java.io.OutputStream$$Lambda)
                     public isReusable(): boolean
                     public getInetAddress(): java.net.InetAddress
                     public getOutputStream(): java.io.OutputStream

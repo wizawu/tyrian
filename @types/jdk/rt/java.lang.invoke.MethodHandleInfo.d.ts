@@ -18,8 +18,8 @@ declare namespace java {
                 getReferenceKind(): int
                 isVarArgs(): boolean
                 reflectAs<T extends java.lang.reflect.Member>(arg0: java.lang.Class<T>, arg1: java.lang.invoke.MethodHandles$Lookup): T
-                referenceKindToString(arg0: int): string
-                toString(arg0: int, arg1: java.lang.Class<any>, arg2: java.lang.String | string, arg3: java.lang.invoke.MethodType): string
+                referenceKindToString<T extends java.lang.reflect.Member>(arg0: int): string
+                toString<T extends java.lang.reflect.Member>(arg0: int, arg1: java.lang.Class<any>, arg2: java.lang.String | string, arg3: java.lang.invoke.MethodType): string
             }
         }
     }

@@ -13,7 +13,7 @@ declare namespace javax {
             public getMaxSortKeys(): int
             public setSortsOnUpdates(arg0: boolean): void
             public getSortsOnUpdates(): boolean
-            public setRowFilter(arg0: javax.swing.RowFilter<M, I>): void
+            public setRowFilter(arg0: javax.swing.RowFilter<M, I> | javax.swing.RowFilter$$Lambda<M, I>): void
             public getRowFilter(): javax.swing.RowFilter<M, I>
             public toggleSortOrder(arg0: int): void
             public convertRowIndexToView(arg0: int): int

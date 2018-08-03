@@ -4,7 +4,7 @@ declare namespace sun {
             namespace protocol {
                 namespace http {
                     class HttpURLConnection$ErrorStream extends java.io.InputStream {
-                        public static getErrorStream(arg0: java.io.InputStream, arg1: long, arg2: sun.net.www.http.HttpClient): java.io.InputStream
+                        public static getErrorStream(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: long, arg2: sun.net.www.http.HttpClient): java.io.InputStream
                         public available(): int
                         public read(): int
                         public read(arg0: byte[]): int

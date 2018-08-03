@@ -16,9 +16,9 @@ declare namespace sun {
                 public engineIsKeyEntry(arg0: java.lang.String | string): boolean
                 public engineIsCertificateEntry(arg0: java.lang.String | string): boolean
                 public engineGetCertificateAlias(arg0: java.security.cert.Certificate): string
-                public engineStore(arg0: java.io.OutputStream, arg1: char[]): void
+                public engineStore(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: char[]): void
                 public engineStore(arg0: java.security.KeyStore$LoadStoreParameter | java.security.KeyStore$LoadStoreParameter$$Lambda): void
-                public engineLoad(arg0: java.io.InputStream, arg1: char[]): void
+                public engineLoad(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: char[]): void
                 public engineLoad(arg0: java.security.KeyStore$LoadStoreParameter | java.security.KeyStore$LoadStoreParameter$$Lambda): void
                 public engineGetEntry(arg0: java.lang.String | string, arg1: java.security.KeyStore$ProtectionParameter): java.security.KeyStore$Entry
                 public engineSetEntry(arg0: java.lang.String | string, arg1: java.security.KeyStore$Entry | java.security.KeyStore$Entry$$Lambda, arg2: java.security.KeyStore$ProtectionParameter): void

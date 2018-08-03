@@ -3,7 +3,7 @@ declare namespace javax {
         namespace plaf {
             namespace synth {
                 class SynthParser extends org.xml.sax.helpers.DefaultHandler {
-                    public parse(arg0: java.io.InputStream, arg1: javax.swing.plaf.synth.DefaultSynthStyleFactory, arg2: java.net.URL, arg3: java.lang.Class<any>, arg4: java.util.Map<java.lang.String, java.lang.Object>): void
+                    public parse(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: javax.swing.plaf.synth.DefaultSynthStyleFactory, arg2: java.net.URL, arg3: java.lang.Class<any>, arg4: java.util.Map<java.lang.String, java.lang.Object>): void
                     public resolveEntity(arg0: java.lang.String | string, arg1: java.lang.String | string): org.xml.sax.InputSource
                     public notationDecl(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void
                     public unparsedEntityDecl(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string): void

@@ -8,7 +8,7 @@ declare namespace com {
                             interface PropertyGetter {
                                 getType(): java.lang.Class
                                 getAnnotation<A>(arg0: java.lang.Class<A>): A
-                                get(arg0: java.lang.Object): java.lang.Object
+                                get<A>(arg0: java.lang.Object): java.lang.Object
                             }
                         }
                     }

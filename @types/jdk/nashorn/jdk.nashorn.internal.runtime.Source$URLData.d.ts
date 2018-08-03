@@ -3,7 +3,7 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 class Source$URLData implements jdk.nashorn.internal.runtime.Source$Data {
-                    protected cs: java.nio.charset.Charset
+                    protected readonly cs: java.nio.charset.Charset
                     protected array: char[]
                     protected length: int
                     protected lastModified: long

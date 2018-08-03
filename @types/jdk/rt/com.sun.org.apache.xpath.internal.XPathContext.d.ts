@@ -7,7 +7,7 @@ declare namespace com {
                         class XPathContext extends com.sun.org.apache.xml.internal.dtm.DTMManager {
                             protected m_dtmManager: com.sun.org.apache.xml.internal.dtm.DTMManager
                             public m_primaryReader: org.xml.sax.XMLReader
-                            public static RECURSIONLIMIT: int
+                            public static readonly RECURSIONLIMIT: int
                             public getDTMManager(): com.sun.org.apache.xml.internal.dtm.DTMManager
                             public setSecureProcessing(arg0: boolean): void
                             public isSecureProcessing(): boolean

@@ -55,16 +55,16 @@ declare namespace javax {
             setTime(arg0: int, arg1: java.sql.Time): void
             setTimestamp(arg0: int, arg1: java.sql.Timestamp): void
             setTimestamp(arg0: java.lang.String | string, arg1: java.sql.Timestamp): void
-            setAsciiStream(arg0: int, arg1: java.io.InputStream, arg2: int): void
-            setAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: int): void
-            setBinaryStream(arg0: int, arg1: java.io.InputStream, arg2: int): void
-            setBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: int): void
+            setAsciiStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
+            setAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
+            setBinaryStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
+            setBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
             setCharacterStream(arg0: int, arg1: java.io.Reader, arg2: int): void
             setCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: int): void
-            setAsciiStream(arg0: int, arg1: java.io.InputStream): void
-            setAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream): void
-            setBinaryStream(arg0: int, arg1: java.io.InputStream): void
-            setBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream): void
+            setAsciiStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
+            setAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
+            setBinaryStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
+            setBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
             setCharacterStream(arg0: int, arg1: java.io.Reader): void
             setCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader): void
             setNCharacterStream(arg0: int, arg1: java.io.Reader): void
@@ -76,11 +76,11 @@ declare namespace javax {
             setObject(arg0: int, arg1: java.lang.Object): void
             setRef(arg0: int, arg1: java.sql.Ref): void
             setBlob(arg0: int, arg1: java.sql.Blob): void
-            setBlob(arg0: int, arg1: java.io.InputStream, arg2: long): void
-            setBlob(arg0: int, arg1: java.io.InputStream): void
-            setBlob(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: long): void
+            setBlob(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
+            setBlob(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
+            setBlob(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
             setBlob(arg0: java.lang.String | string, arg1: java.sql.Blob): void
-            setBlob(arg0: java.lang.String | string, arg1: java.io.InputStream): void
+            setBlob(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
             setClob(arg0: int, arg1: java.sql.Clob): void
             setClob(arg0: int, arg1: java.io.Reader, arg2: long): void
             setClob(arg0: int, arg1: java.io.Reader): void

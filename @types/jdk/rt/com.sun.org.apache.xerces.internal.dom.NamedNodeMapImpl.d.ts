@@ -7,9 +7,9 @@ declare namespace com {
                         namespace dom {
                             class NamedNodeMapImpl implements org.w3c.dom.NamedNodeMap , java.io.Serializable {
                                 protected flags: short
-                                protected static READONLY: short
-                                protected static CHANGED: short
-                                protected static HASDEFAULTS: short
+                                protected static readonly READONLY: short
+                                protected static readonly CHANGED: short
+                                protected static readonly HASDEFAULTS: short
                                 protected nodes: java.util.List
                                 protected ownerNode: com.sun.org.apache.xerces.internal.dom.NodeImpl
                                 protected constructor(arg0: com.sun.org.apache.xerces.internal.dom.NodeImpl)

@@ -5,8 +5,8 @@ declare namespace javax {
                 namespace adapters {
                     abstract class XmlAdapter<ValueType, BoundType> {
                         protected constructor()
-                        public unmarshal(arg0: ValueType): BoundType
-                        public marshal(arg0: BoundType): ValueType
+                        public abstract unmarshal(arg0: ValueType): BoundType
+                        public abstract marshal(arg0: BoundType): ValueType
                         public static class: java.lang.Class<any>
                     }
                 }

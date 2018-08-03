@@ -1,8 +1,8 @@
 declare namespace sun {
     namespace java2d {
         class Disposer implements java.lang.Runnable {
-            public static WEAK: int
-            public static PHANTOM: int
+            public static readonly WEAK: int
+            public static readonly PHANTOM: int
             public static refType: int
             public static pollingQueue: boolean
             public constructor()

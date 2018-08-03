@@ -3,13 +3,13 @@ declare namespace javax {
         namespace transform {
             namespace stream {
                 class StreamResult implements javax.xml.transform.Result {
-                    public static FEATURE: string
+                    public static readonly FEATURE: string
                     public constructor()
-                    public constructor(arg0: java.io.OutputStream)
+                    public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda)
                     public constructor(arg0: java.io.Writer)
                     public constructor(arg0: java.lang.String | string)
                     public constructor(arg0: java.io.File)
-                    public setOutputStream(arg0: java.io.OutputStream): void
+                    public setOutputStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                     public getOutputStream(): java.io.OutputStream
                     public setWriter(arg0: java.io.Writer): void
                     public getWriter(): java.io.Writer

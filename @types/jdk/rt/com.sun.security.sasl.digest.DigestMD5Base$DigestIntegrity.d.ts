@@ -8,8 +8,8 @@ declare namespace com {
                         protected peerKi: byte[]
                         protected mySeqNum: int
                         protected peerSeqNum: int
-                        protected messageType: byte[]
-                        protected sequenceNum: byte[]
+                        protected readonly messageType: byte[]
+                        protected readonly sequenceNum: byte[]
                         public wrap(arg0: byte[], arg1: int, arg2: int): byte[]
                         public unwrap(arg0: byte[], arg1: int, arg2: int): byte[]
                         protected getHMAC(arg0: byte[], arg1: byte[], arg2: byte[], arg3: int, arg4: int): byte[]

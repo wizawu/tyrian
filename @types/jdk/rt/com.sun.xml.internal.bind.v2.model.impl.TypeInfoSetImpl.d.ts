@@ -7,8 +7,8 @@ declare namespace com {
                         namespace model {
                             namespace impl {
                                 class TypeInfoSetImpl<T, C, F, M> implements com.sun.xml.internal.bind.v2.model.core.TypeInfoSet<T, C, F, M> {
-                                    public nav: com.sun.xml.internal.bind.v2.model.nav.Navigator<T, C, F, M>
-                                    public reader: com.sun.xml.internal.bind.v2.model.annotation.AnnotationReader<T, C, F, M>
+                                    public readonly nav: com.sun.xml.internal.bind.v2.model.nav.Navigator<T, C, F, M>
+                                    public readonly reader: com.sun.xml.internal.bind.v2.model.annotation.AnnotationReader<T, C, F, M>
                                     public constructor(arg0: com.sun.xml.internal.bind.v2.model.nav.Navigator<T, C, F, M>, arg1: com.sun.xml.internal.bind.v2.model.annotation.AnnotationReader<T, C, F, M>, arg2: java.util.Map<T, com.sun.xml.internal.bind.v2.model.impl.BuiltinLeafInfoImpl<T, C>>)
                                     protected createAnyType(): com.sun.xml.internal.bind.v2.model.core.NonElement<T, C>
                                     public getNavigator(): com.sun.xml.internal.bind.v2.model.nav.Navigator<T, C, F, M>

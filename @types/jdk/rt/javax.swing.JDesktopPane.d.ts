@@ -1,8 +1,8 @@
 declare namespace javax {
     namespace swing {
         class JDesktopPane extends javax.swing.JLayeredPane implements javax.accessibility.Accessible {
-            public static LIVE_DRAG_MODE: int
-            public static OUTLINE_DRAG_MODE: int
+            public static readonly LIVE_DRAG_MODE: int
+            public static readonly OUTLINE_DRAG_MODE: int
             public constructor()
             public getUI(): javax.swing.plaf.DesktopPaneUI
             public setUI(arg0: javax.swing.plaf.DesktopPaneUI): void

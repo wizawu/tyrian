@@ -9,9 +9,6 @@ declare namespace com {
                                 interface LocatorEx extends org.xml.sax.Locator {
                                     getLocation(): javax.xml.bind.ValidationEventLocator
                                 }
-                                interface LocatorEx$$Lambda extends org.xml.sax.Locator {
-                                    (): javax.xml.bind.ValidationEventLocator
-                                }
                             }
                         }
                     }

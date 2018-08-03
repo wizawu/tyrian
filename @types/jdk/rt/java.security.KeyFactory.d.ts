@@ -10,7 +10,7 @@ declare namespace java {
             public generatePublic(arg0: java.security.spec.KeySpec): java.security.PublicKey
             public generatePrivate(arg0: java.security.spec.KeySpec): java.security.PrivateKey
             public getKeySpec<T extends java.security.spec.KeySpec>(arg0: java.security.Key, arg1: java.lang.Class<T>): T
-            public translateKey(arg0: java.security.Key): java.security.Key
+            public translateKey<T extends java.security.spec.KeySpec>(arg0: java.security.Key): java.security.Key
             public static class: java.lang.Class<any>
         }
     }

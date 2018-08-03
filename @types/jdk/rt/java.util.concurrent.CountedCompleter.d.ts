@@ -2,12 +2,12 @@ declare namespace java {
     namespace util {
         namespace concurrent {
             abstract class CountedCompleter<T> extends java.util.concurrent.ForkJoinTask<T> {
-                protected constructor(arg0: java.util.concurrent.CountedCompleter<any>, arg1: int)
-                protected constructor(arg0: java.util.concurrent.CountedCompleter<any>)
+                protected constructor(arg0: java.util.concurrent.CountedCompleter<any> | java.util.concurrent.CountedCompleter$$Lambda<any>, arg1: int)
+                protected constructor(arg0: java.util.concurrent.CountedCompleter<any> | java.util.concurrent.CountedCompleter$$Lambda<any>)
                 protected constructor()
-                public compute(): void
-                public onCompletion(arg0: java.util.concurrent.CountedCompleter<any>): void
-                public onExceptionalCompletion(arg0: java.lang.Throwable, arg1: java.util.concurrent.CountedCompleter<any>): boolean
+                public abstract compute(): void
+                public onCompletion(arg0: java.util.concurrent.CountedCompleter<any> | java.util.concurrent.CountedCompleter$$Lambda<any>): void
+                public onExceptionalCompletion(arg0: java.lang.Throwable, arg1: java.util.concurrent.CountedCompleter<any> | java.util.concurrent.CountedCompleter$$Lambda<any>): boolean
                 public getCompleter(): java.util.concurrent.CountedCompleter<any>
                 public getPendingCount(): int
                 public setPendingCount(arg0: int): void
@@ -26,6 +26,9 @@ declare namespace java {
                 public getRawResult(): T
                 protected setRawResult(arg0: T): void
                 public static class: java.lang.Class<any>
+            }
+            interface CountedCompleter$$Lambda<T> extends java.util.concurrent.ForkJoinTask<T> {
+                (): void
             }
         }
     }

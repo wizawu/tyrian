@@ -8,7 +8,7 @@ declare namespace com {
                             namespace reflect {
                                 namespace opt {
                                     class AccessorInjector {
-                                        protected static noOptimize: boolean
+                                        protected static readonly noOptimize: boolean
                                         public static prepare(arg0: java.lang.Class, arg1: java.lang.String | string, arg2: java.lang.String | string, ...arg3: java.lang.String[]): java.lang.Class<any>
                                         public static class: java.lang.Class<any>
                                     }

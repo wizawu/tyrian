@@ -14,12 +14,12 @@ declare namespace com {
                                     public startDocument(arg0: com.sun.xml.internal.bind.v2.runtime.XMLSerializer, arg1: boolean, arg2: int[], arg3: com.sun.xml.internal.bind.v2.runtime.output.NamespaceContextImpl): void
                                     public endDocument(arg0: boolean): void
                                     public beginStartTag(arg0: com.sun.xml.internal.bind.v2.runtime.Name): void
-                                    public beginStartTag(arg0: int, arg1: java.lang.String | string): void
+                                    public abstract beginStartTag(arg0: int, arg1: java.lang.String | string): void
                                     public attribute(arg0: com.sun.xml.internal.bind.v2.runtime.Name, arg1: java.lang.String | string): void
-                                    public attribute(arg0: int, arg1: java.lang.String | string, arg2: java.lang.String | string): void
-                                    public endStartTag(): void
+                                    public abstract attribute(arg0: int, arg1: java.lang.String | string, arg2: java.lang.String | string): void
+                                    public abstract endStartTag(): void
                                     public endTag(arg0: com.sun.xml.internal.bind.v2.runtime.Name): void
-                                    public endTag(arg0: int, arg1: java.lang.String | string): void
+                                    public abstract endTag(arg0: int, arg1: java.lang.String | string): void
                                     public static class: java.lang.Class<any>
                                 }
                             }

@@ -5,46 +5,46 @@ declare namespace com {
                 namespace impl {
                     namespace util {
                         class RepositoryId {
-                            public static kInitialValueTag: int
-                            public static kNoTypeInfo: int
-                            public static kSingleRepTypeInfo: int
-                            public static kPartialListTypeInfo: int
-                            public static kChunkedMask: int
-                            public static kPreComputed_StandardRMIUnchunked: int
-                            public static kPreComputed_CodeBaseRMIUnchunked: int
-                            public static kPreComputed_StandardRMIChunked: int
-                            public static kPreComputed_CodeBaseRMIChunked: int
-                            public static kPreComputed_StandardRMIUnchunked_NoRep: int
-                            public static kPreComputed_CodeBaseRMIUnchunked_NoRep: int
-                            public static kPreComputed_StandardRMIChunked_NoRep: int
-                            public static kPreComputed_CodeBaseRMIChunked_NoRep: int
-                            public static kWStringValueVersion: string
-                            public static kWStringValueHash: string
-                            public static kWStringStubValue: string
-                            public static kWStringTypeStr: string
-                            public static kWStringValueRepID: string
-                            public static kAnyRepID: string
-                            public static kClassDescValueHash: string
-                            public static kClassDescStubValue: string
-                            public static kClassDescTypeStr: string
-                            public static kClassDescValueRepID: string
-                            public static kObjectValueHash: string
-                            public static kObjectStubValue: string
-                            public static kSequenceValueHash: string
-                            public static kPrimitiveSequenceValueHash: string
-                            public static kSerializableValueHash: string
-                            public static kSerializableStubValue: string
-                            public static kExternalizableValueHash: string
-                            public static kExternalizableStubValue: string
-                            public static kRemoteValueHash: string
-                            public static kRemoteStubValue: string
-                            public static kRemoteTypeStr: string
-                            public static kRemoteValueRepID: string
-                            public static cache: com.sun.corba.se.impl.util.RepositoryIdCache
-                            public static kjava_rmi_Remote: string
-                            public static korg_omg_CORBA_Object: string
-                            public static kNoParamTypes: java.lang.Class[]
-                            public static kNoArgs: java.lang.Object[]
+                            public static readonly kInitialValueTag: int
+                            public static readonly kNoTypeInfo: int
+                            public static readonly kSingleRepTypeInfo: int
+                            public static readonly kPartialListTypeInfo: int
+                            public static readonly kChunkedMask: int
+                            public static readonly kPreComputed_StandardRMIUnchunked: int
+                            public static readonly kPreComputed_CodeBaseRMIUnchunked: int
+                            public static readonly kPreComputed_StandardRMIChunked: int
+                            public static readonly kPreComputed_CodeBaseRMIChunked: int
+                            public static readonly kPreComputed_StandardRMIUnchunked_NoRep: int
+                            public static readonly kPreComputed_CodeBaseRMIUnchunked_NoRep: int
+                            public static readonly kPreComputed_StandardRMIChunked_NoRep: int
+                            public static readonly kPreComputed_CodeBaseRMIChunked_NoRep: int
+                            public static readonly kWStringValueVersion: string
+                            public static readonly kWStringValueHash: string
+                            public static readonly kWStringStubValue: string
+                            public static readonly kWStringTypeStr: string
+                            public static readonly kWStringValueRepID: string
+                            public static readonly kAnyRepID: string
+                            public static readonly kClassDescValueHash: string
+                            public static readonly kClassDescStubValue: string
+                            public static readonly kClassDescTypeStr: string
+                            public static readonly kClassDescValueRepID: string
+                            public static readonly kObjectValueHash: string
+                            public static readonly kObjectStubValue: string
+                            public static readonly kSequenceValueHash: string
+                            public static readonly kPrimitiveSequenceValueHash: string
+                            public static readonly kSerializableValueHash: string
+                            public static readonly kSerializableStubValue: string
+                            public static readonly kExternalizableValueHash: string
+                            public static readonly kExternalizableStubValue: string
+                            public static readonly kRemoteValueHash: string
+                            public static readonly kRemoteStubValue: string
+                            public static readonly kRemoteTypeStr: string
+                            public static readonly kRemoteValueRepID: string
+                            public static readonly cache: com.sun.corba.se.impl.util.RepositoryIdCache
+                            public static readonly kjava_rmi_Remote: string
+                            public static readonly korg_omg_CORBA_Object: string
+                            public static readonly kNoParamTypes: java.lang.Class[]
+                            public static readonly kNoArgs: java.lang.Object[]
                             public getUnqualifiedName(): string
                             public getDefinedInId(): string
                             public getTypeString(): string

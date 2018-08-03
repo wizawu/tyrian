@@ -4,8 +4,8 @@ declare namespace jdk {
             namespace xml {
                 namespace impl {
                     class ParserSAX extends jdk.internal.util.xml.impl.Parser implements jdk.internal.org.xml.sax.XMLReader , jdk.internal.org.xml.sax.Locator {
-                        public static FEATURE_NS: string
-                        public static FEATURE_PREF: string
+                        public static readonly FEATURE_NS: string
+                        public static readonly FEATURE_PREF: string
                         public constructor()
                         public getContentHandler(): jdk.internal.org.xml.sax.ContentHandler
                         public setContentHandler(arg0: jdk.internal.org.xml.sax.ContentHandler): void
@@ -21,7 +21,7 @@ declare namespace jdk {
                         public getColumnNumber(): int
                         public parse(arg0: java.lang.String | string): void
                         public parse(arg0: jdk.internal.org.xml.sax.InputSource): void
-                        public parse(arg0: java.io.InputStream, arg1: jdk.internal.org.xml.sax.helpers.DefaultHandler): void
+                        public parse(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: jdk.internal.org.xml.sax.helpers.DefaultHandler): void
                         public parse(arg0: jdk.internal.org.xml.sax.InputSource, arg1: jdk.internal.org.xml.sax.helpers.DefaultHandler): void
                         protected docType(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void
                         protected comm(arg0: char[], arg1: int): void

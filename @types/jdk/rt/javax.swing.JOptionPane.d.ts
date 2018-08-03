@@ -1,32 +1,32 @@
 declare namespace javax {
     namespace swing {
         class JOptionPane extends javax.swing.JComponent implements javax.accessibility.Accessible {
-            public static UNINITIALIZED_VALUE: java.lang.Object
-            public static DEFAULT_OPTION: int
-            public static YES_NO_OPTION: int
-            public static YES_NO_CANCEL_OPTION: int
-            public static OK_CANCEL_OPTION: int
-            public static YES_OPTION: int
-            public static NO_OPTION: int
-            public static CANCEL_OPTION: int
-            public static OK_OPTION: int
-            public static CLOSED_OPTION: int
-            public static ERROR_MESSAGE: int
-            public static INFORMATION_MESSAGE: int
-            public static WARNING_MESSAGE: int
-            public static QUESTION_MESSAGE: int
-            public static PLAIN_MESSAGE: int
-            public static ICON_PROPERTY: string
-            public static MESSAGE_PROPERTY: string
-            public static VALUE_PROPERTY: string
-            public static OPTIONS_PROPERTY: string
-            public static INITIAL_VALUE_PROPERTY: string
-            public static MESSAGE_TYPE_PROPERTY: string
-            public static OPTION_TYPE_PROPERTY: string
-            public static SELECTION_VALUES_PROPERTY: string
-            public static INITIAL_SELECTION_VALUE_PROPERTY: string
-            public static INPUT_VALUE_PROPERTY: string
-            public static WANTS_INPUT_PROPERTY: string
+            public static readonly UNINITIALIZED_VALUE: java.lang.Object
+            public static readonly DEFAULT_OPTION: int
+            public static readonly YES_NO_OPTION: int
+            public static readonly YES_NO_CANCEL_OPTION: int
+            public static readonly OK_CANCEL_OPTION: int
+            public static readonly YES_OPTION: int
+            public static readonly NO_OPTION: int
+            public static readonly CANCEL_OPTION: int
+            public static readonly OK_OPTION: int
+            public static readonly CLOSED_OPTION: int
+            public static readonly ERROR_MESSAGE: int
+            public static readonly INFORMATION_MESSAGE: int
+            public static readonly WARNING_MESSAGE: int
+            public static readonly QUESTION_MESSAGE: int
+            public static readonly PLAIN_MESSAGE: int
+            public static readonly ICON_PROPERTY: string
+            public static readonly MESSAGE_PROPERTY: string
+            public static readonly VALUE_PROPERTY: string
+            public static readonly OPTIONS_PROPERTY: string
+            public static readonly INITIAL_VALUE_PROPERTY: string
+            public static readonly MESSAGE_TYPE_PROPERTY: string
+            public static readonly OPTION_TYPE_PROPERTY: string
+            public static readonly SELECTION_VALUES_PROPERTY: string
+            public static readonly INITIAL_SELECTION_VALUE_PROPERTY: string
+            public static readonly INPUT_VALUE_PROPERTY: string
+            public static readonly WANTS_INPUT_PROPERTY: string
             protected icon: javax.swing.Icon
             protected message: java.lang.Object
             protected options: java.lang.Object[]

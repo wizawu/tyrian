@@ -1,13 +1,13 @@
 declare namespace sun {
     namespace font {
         abstract class Font2D {
-            public static FONT_CONFIG_RANK: int
-            public static JRE_RANK: int
-            public static TTF_RANK: int
-            public static TYPE1_RANK: int
-            public static NATIVE_RANK: int
-            public static UNKNOWN_RANK: int
-            public static DEFAULT_RANK: int
+            public static readonly FONT_CONFIG_RANK: int
+            public static readonly JRE_RANK: int
+            public static readonly TTF_RANK: int
+            public static readonly TYPE1_RANK: int
+            public static readonly NATIVE_RANK: int
+            public static readonly UNKNOWN_RANK: int
+            public static readonly DEFAULT_RANK: int
             public handle: sun.font.Font2DHandle
             protected familyName: string
             protected fullName: string
@@ -17,9 +17,9 @@ declare namespace sun {
             protected mapper: sun.font.CharToGlyphMapper
             protected strikeCache: java.util.concurrent.ConcurrentHashMap<sun.font.FontStrikeDesc, java.lang.ref.Reference>
             protected lastFontStrike: java.lang.ref.Reference
-            public static FWIDTH_NORMAL: int
-            public static FWEIGHT_NORMAL: int
-            public static FWEIGHT_BOLD: int
+            public static readonly FWIDTH_NORMAL: int
+            public static readonly FWEIGHT_NORMAL: int
+            public static readonly FWEIGHT_BOLD: int
             public constructor()
             public getStyle(): int
             protected setStyle(): void

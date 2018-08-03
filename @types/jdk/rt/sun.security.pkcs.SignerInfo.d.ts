@@ -7,7 +7,7 @@ declare namespace sun {
                 public constructor(arg0: sun.security.util.DerInputStream)
                 public constructor(arg0: sun.security.util.DerInputStream, arg1: boolean)
                 public encode(arg0: sun.security.util.DerOutputStream): void
-                public derEncode(arg0: java.io.OutputStream): void
+                public derEncode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                 public getCertificate(arg0: sun.security.pkcs.PKCS7): java.security.cert.X509Certificate
                 public getCertificateChain(arg0: sun.security.pkcs.PKCS7): java.util.ArrayList<java.security.cert.X509Certificate>
                 public getVersion(): java.math.BigInteger

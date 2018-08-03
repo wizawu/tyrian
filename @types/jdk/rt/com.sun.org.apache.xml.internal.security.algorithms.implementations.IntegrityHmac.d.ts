@@ -8,7 +8,7 @@ declare namespace com {
                             namespace algorithms {
                                 namespace implementations {
                                     abstract class IntegrityHmac extends com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithmSpi {
-                                        public engineGetURI(): string
+                                        public abstract engineGetURI(): string
                                         public constructor()
                                         protected engineSetParameter(arg0: java.security.spec.AlgorithmParameterSpec): void
                                         public reset(): void
@@ -27,6 +27,9 @@ declare namespace com {
                                         protected engineGetContextFromElement(arg0: org.w3c.dom.Element): void
                                         public engineAddContextToElement(arg0: org.w3c.dom.Element): void
                                         public static class: java.lang.Class<any>
+                                    }
+                                    interface IntegrityHmac$$Lambda extends com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithmSpi {
+                                        (): string
                                     }
                                 }
                             }

@@ -2,9 +2,9 @@ declare namespace java {
     namespace time {
         namespace temporal {
             class WeekFields implements java.io.Serializable {
-                public static ISO: java.time.temporal.WeekFields
-                public static SUNDAY_START: java.time.temporal.WeekFields
-                public static WEEK_BASED_YEARS: java.time.temporal.TemporalUnit
+                public static readonly ISO: java.time.temporal.WeekFields
+                public static readonly SUNDAY_START: java.time.temporal.WeekFields
+                public static readonly WEEK_BASED_YEARS: java.time.temporal.TemporalUnit
                 public static of(arg0: java.util.Locale): java.time.temporal.WeekFields
                 public static of(arg0: java.time.DayOfWeek, arg1: int): java.time.temporal.WeekFields
                 public getFirstDayOfWeek(): java.time.DayOfWeek

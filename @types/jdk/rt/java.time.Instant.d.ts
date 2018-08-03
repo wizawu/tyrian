@@ -1,9 +1,9 @@
 declare namespace java {
     namespace time {
         class Instant implements java.time.temporal.Temporal , java.time.temporal.TemporalAdjuster , java.lang.Comparable<java.time.Instant> , java.io.Serializable {
-            public static EPOCH: java.time.Instant
-            public static MIN: java.time.Instant
-            public static MAX: java.time.Instant
+            public static readonly EPOCH: java.time.Instant
+            public static readonly MIN: java.time.Instant
+            public static readonly MAX: java.time.Instant
             public static now(): java.time.Instant
             public static now(arg0: java.time.Clock): java.time.Instant
             public static ofEpochSecond(arg0: long): java.time.Instant

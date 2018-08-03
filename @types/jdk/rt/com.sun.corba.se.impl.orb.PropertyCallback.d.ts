@@ -5,8 +5,11 @@ declare namespace com {
                 namespace impl {
                     namespace orb {
                         abstract class PropertyCallback {
-                            public get(arg0: java.lang.String | string): string
+                            public abstract get(arg0: java.lang.String | string): string
                             public static class: java.lang.Class<any>
+                        }
+                        interface PropertyCallback$$Lambda {
+                            (arg0: java.lang.String | string): string
                         }
                     }
                 }

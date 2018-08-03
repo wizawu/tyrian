@@ -16,7 +16,7 @@ declare namespace sun {
                 protected convertFileListToBytes(arg0: java.util.ArrayList<java.lang.String>): java.io.ByteArrayOutputStream
                 protected platformImageBytesToImage(arg0: byte[], arg1: long): java.awt.Image
                 protected dragQueryFile(arg0: byte[]): java.lang.String[]
-                protected dragQueryURIs(arg0: java.io.InputStream, arg1: long, arg2: java.awt.datatransfer.Transferable): java.net.URI[]
+                protected dragQueryURIs(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: long, arg2: java.awt.datatransfer.Transferable): java.net.URI[]
                 public getPlatformMappingsForNative(arg0: java.lang.String | string): java.util.LinkedHashSet<java.awt.datatransfer.DataFlavor>
                 public getPlatformMappingsForFlavor(arg0: java.awt.datatransfer.DataFlavor): java.util.LinkedHashSet<java.lang.String>
                 public static class: java.lang.Class<any>

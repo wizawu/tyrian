@@ -1,8 +1,8 @@
 declare namespace sun {
     namespace awt {
         abstract class UNIXToolkit extends sun.awt.SunToolkit {
-            public static GTK_LOCK: java.lang.Object
-            public static FONTCONFIGAAHINT: string
+            public static readonly GTK_LOCK: java.lang.Object
+            public static readonly FONTCONFIGAAHINT: string
             public constructor()
             public static getDatatransferTimeout(): int
             public isNativeGTKAvailable(): boolean

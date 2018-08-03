@@ -11,7 +11,7 @@ declare namespace sun {
                     public installComponents(arg0: javax.swing.JFileChooser): void
                     public uninstallComponents(arg0: javax.swing.JFileChooser): void
                     protected installListeners(arg0: javax.swing.JFileChooser): void
-                    protected createActionMap(): javax.swing.ActionMap
+                    protected abstract createActionMap(): javax.swing.ActionMap
                     protected installDefaults(arg0: javax.swing.JFileChooser): void
                     protected uninstallDefaults(arg0: javax.swing.JFileChooser): void
                     protected installIcons(arg0: javax.swing.JFileChooser): void
@@ -19,8 +19,8 @@ declare namespace sun {
                     public paintBorder(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: int, arg3: int, arg4: int, arg5: int): void
                     public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
                     protected paint(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics): void
-                    public setFileName(arg0: java.lang.String | string): void
-                    public getFileName(): string
+                    public abstract setFileName(arg0: java.lang.String | string): void
+                    public abstract getFileName(): string
                     protected doSelectedFileChanged(arg0: java.beans.PropertyChangeEvent): void
                     protected doSelectedFilesChanged(arg0: java.beans.PropertyChangeEvent): void
                     protected doDirectoryChanged(arg0: java.beans.PropertyChangeEvent): void

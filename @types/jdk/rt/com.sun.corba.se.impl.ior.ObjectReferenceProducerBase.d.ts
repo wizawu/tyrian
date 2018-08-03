@@ -6,8 +6,8 @@ declare namespace com {
                     namespace ior {
                         abstract class ObjectReferenceProducerBase {
                             protected orb: com.sun.corba.se.spi.orb.ORB
-                            public getIORFactory(): com.sun.corba.se.spi.ior.IORFactory
-                            public getIORTemplateList(): com.sun.corba.se.spi.ior.IORTemplateList
+                            public abstract getIORFactory(): com.sun.corba.se.spi.ior.IORFactory
+                            public abstract getIORTemplateList(): com.sun.corba.se.spi.ior.IORTemplateList
                             public constructor(arg0: com.sun.corba.se.spi.orb.ORB)
                             public make_object(arg0: java.lang.String | string, arg1: byte[]): org.omg.CORBA.Object
                             public static class: java.lang.Class<any>

@@ -10,7 +10,7 @@ declare namespace org {
                 handle(arg0: short, arg1: java.lang.String | string, arg2: java.lang.Object, arg3: org.w3c.dom.Node, arg4: org.w3c.dom.Node): void
             }
             interface UserDataHandler$$Lambda {
-                NODE_CLONED: short
+                (arg0: short, arg1: java.lang.String | string, arg2: java.lang.Object, arg3: org.w3c.dom.Node, arg4: org.w3c.dom.Node): void
             }
         }
     }

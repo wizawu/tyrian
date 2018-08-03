@@ -9,9 +9,6 @@ declare namespace com {
                                 interface SimpleTypeHost extends com.sun.xml.internal.bind.v2.schemagen.xmlschema.TypeHost , com.sun.xml.internal.txw2.TypedXmlWriter {
                                     simpleType(): com.sun.xml.internal.bind.v2.schemagen.xmlschema.SimpleType
                                 }
-                                interface SimpleTypeHost$$Lambda extends com.sun.xml.internal.bind.v2.schemagen.xmlschema.TypeHost , com.sun.xml.internal.txw2.TypedXmlWriter {
-                                    (): com.sun.xml.internal.bind.v2.schemagen.xmlschema.SimpleType
-                                }
                             }
                         }
                     }

@@ -8,9 +8,9 @@ declare namespace com {
                             class POAFactory implements com.sun.corba.se.spi.oa.ObjectAdapterFactory {
                                 public getWrapper(): com.sun.corba.se.impl.logging.POASystemException
                                 public constructor()
-                                public lookupPOA(arg0: org.omg.PortableServer.Servant): org.omg.PortableServer.POA
-                                public registerPOAForServant(arg0: org.omg.PortableServer.POA, arg1: org.omg.PortableServer.Servant): void
-                                public unregisterPOAForServant(arg0: org.omg.PortableServer.POA, arg1: org.omg.PortableServer.Servant): void
+                                public lookupPOA(arg0: org.omg.PortableServer.Servant | org.omg.PortableServer.Servant$$Lambda): org.omg.PortableServer.POA
+                                public registerPOAForServant(arg0: org.omg.PortableServer.POA, arg1: org.omg.PortableServer.Servant | org.omg.PortableServer.Servant$$Lambda): void
+                                public unregisterPOAForServant(arg0: org.omg.PortableServer.POA, arg1: org.omg.PortableServer.Servant | org.omg.PortableServer.Servant$$Lambda): void
                                 public init(arg0: com.sun.corba.se.spi.orb.ORB): void
                                 public find(arg0: com.sun.corba.se.spi.ior.ObjectAdapterId): com.sun.corba.se.spi.oa.ObjectAdapter
                                 public shutdown(arg0: boolean): void

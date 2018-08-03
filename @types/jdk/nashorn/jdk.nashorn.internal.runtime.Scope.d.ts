@@ -3,8 +3,8 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 class Scope extends jdk.nashorn.internal.runtime.ScriptObject {
-                    public static GET_SPLIT_STATE: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static SET_SPLIT_STATE: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly GET_SPLIT_STATE: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly SET_SPLIT_STATE: jdk.nashorn.internal.codegen.CompilerConstants$Call
                     public constructor(arg0: jdk.nashorn.internal.runtime.PropertyMap)
                     public constructor(arg0: jdk.nashorn.internal.runtime.ScriptObject, arg1: jdk.nashorn.internal.runtime.PropertyMap)
                     public constructor(arg0: jdk.nashorn.internal.runtime.PropertyMap, arg1: long[], arg2: java.lang.Object[])

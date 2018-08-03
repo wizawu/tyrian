@@ -13,7 +13,7 @@ declare namespace jdk {
                     public static isView(arg0: java.lang.Object, arg1: java.lang.Object): boolean
                     public static slice(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): jdk.nashorn.internal.objects.NativeArrayBuffer
                     public static slice(arg0: java.lang.Object, arg1: int, arg2: int): java.lang.Object
-                    public public static slice(arg0: java.lang.Object, arg1: int): java.lang.Object
+                    public static public static slice(arg0: java.lang.Object, arg1: int): java.lang.Object
                     public static $clinit$(): void
                     public static class: java.lang.Class<any>
                 }

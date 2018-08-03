@@ -46,7 +46,7 @@ declare namespace jdk {
                     public G$trimLeft(): java.lang.Object
                     public S$trimLeft(arg0: java.lang.Object): void
                     public G$trimRight(): java.lang.Object
-                    public public S$trimRight(arg0: java.lang.Object): void
+                    public static public S$trimRight(arg0: java.lang.Object): void
                     public getClassName(): string
                     public static class: java.lang.Class<any>
                 }

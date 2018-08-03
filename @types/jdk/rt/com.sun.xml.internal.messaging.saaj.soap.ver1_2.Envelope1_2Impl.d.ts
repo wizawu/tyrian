@@ -7,7 +7,7 @@ declare namespace com {
                         namespace soap {
                             namespace ver1_2 {
                                 class Envelope1_2Impl extends com.sun.xml.internal.messaging.saaj.soap.impl.EnvelopeImpl {
-                                    protected static log: java.util.logging.Logger
+                                    protected static readonly log: java.util.logging.Logger
                                     public constructor(arg0: com.sun.xml.internal.messaging.saaj.soap.SOAPDocumentImpl, arg1: java.lang.String | string)
                                     public constructor(arg0: com.sun.xml.internal.messaging.saaj.soap.SOAPDocumentImpl, arg1: java.lang.String | string, arg2: boolean, arg3: boolean)
                                     protected getBodyName(arg0: java.lang.String | string): com.sun.xml.internal.messaging.saaj.soap.name.NameImpl

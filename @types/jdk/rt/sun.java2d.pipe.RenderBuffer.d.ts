@@ -2,17 +2,17 @@ declare namespace sun {
     namespace java2d {
         namespace pipe {
             class RenderBuffer {
-                protected static SIZEOF_BYTE: long
-                protected static SIZEOF_SHORT: long
-                protected static SIZEOF_INT: long
-                protected static SIZEOF_FLOAT: long
-                protected static SIZEOF_LONG: long
-                protected static SIZEOF_DOUBLE: long
-                protected unsafe: sun.misc.Unsafe
-                protected baseAddress: long
-                protected endAddress: long
+                protected static readonly SIZEOF_BYTE: long
+                protected static readonly SIZEOF_SHORT: long
+                protected static readonly SIZEOF_INT: long
+                protected static readonly SIZEOF_FLOAT: long
+                protected static readonly SIZEOF_LONG: long
+                protected static readonly SIZEOF_DOUBLE: long
+                protected readonly unsafe: sun.misc.Unsafe
+                protected readonly baseAddress: long
+                protected readonly endAddress: long
                 protected curAddress: long
-                protected capacity: int
+                protected readonly capacity: int
                 protected constructor(arg0: int)
                 public static allocate(arg0: int): sun.java2d.pipe.RenderBuffer
                 public getAddress(): long

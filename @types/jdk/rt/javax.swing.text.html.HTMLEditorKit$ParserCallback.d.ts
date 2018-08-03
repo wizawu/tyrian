@@ -3,7 +3,7 @@ declare namespace javax {
         namespace text {
             namespace html {
                 class HTMLEditorKit$ParserCallback {
-                    public static IMPLIED: java.lang.Object
+                    public static readonly IMPLIED: java.lang.Object
                     public constructor()
                     public flush(): void
                     public handleText(arg0: char[], arg1: int): void

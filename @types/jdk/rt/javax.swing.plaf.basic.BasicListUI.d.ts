@@ -14,13 +14,13 @@ declare namespace javax {
                     protected cellHeight: int
                     protected cellWidth: int
                     protected updateLayoutStateNeeded: int
-                    protected static modelChanged: int
-                    protected static selectionModelChanged: int
-                    protected static fontChanged: int
-                    protected static fixedCellWidthChanged: int
-                    protected static fixedCellHeightChanged: int
-                    protected static prototypeCellValueChanged: int
-                    protected static cellRendererChanged: int
+                    protected static readonly modelChanged: int
+                    protected static readonly selectionModelChanged: int
+                    protected static readonly fontChanged: int
+                    protected static readonly fixedCellWidthChanged: int
+                    protected static readonly fixedCellHeightChanged: int
+                    protected static readonly prototypeCellValueChanged: int
+                    protected static readonly cellRendererChanged: int
                     public constructor()
                     protected paintCell(arg0: java.awt.Graphics, arg1: int, arg2: java.awt.Rectangle, arg3: javax.swing.ListCellRenderer | javax.swing.ListCellRenderer$$Lambda, arg4: javax.swing.ListModel, arg5: javax.swing.ListSelectionModel, arg6: int): void
                     public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void

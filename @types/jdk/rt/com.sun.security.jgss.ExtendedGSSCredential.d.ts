@@ -5,9 +5,6 @@ declare namespace com {
                 interface ExtendedGSSCredential extends org.ietf.jgss.GSSCredential {
                     impersonate(arg0: org.ietf.jgss.GSSName): org.ietf.jgss.GSSCredential
                 }
-                interface ExtendedGSSCredential$$Lambda extends org.ietf.jgss.GSSCredential {
-                    (arg0: org.ietf.jgss.GSSName): org.ietf.jgss.GSSCredential
-                }
             }
         }
     }

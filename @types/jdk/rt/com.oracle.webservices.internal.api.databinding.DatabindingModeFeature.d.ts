@@ -5,8 +5,8 @@ declare namespace com {
                 namespace api {
                     namespace databinding {
                         class DatabindingModeFeature extends javax.xml.ws.WebServiceFeature implements com.sun.xml.internal.ws.api.ServiceSharedFeatureMarker {
-                            public static ID: string
-                            public static GLASSFISH_JAXB: string
+                            public static readonly ID: string
+                            public static readonly GLASSFISH_JAXB: string
                             public constructor(arg0: java.lang.String | string)
                             public getMode(): string
                             public getID(): string

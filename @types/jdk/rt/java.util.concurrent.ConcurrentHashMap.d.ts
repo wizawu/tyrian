@@ -39,8 +39,8 @@ declare namespace java {
                 public mappingCount(): long
                 public static newKeySet<K>(): java.util.concurrent.ConcurrentHashMap$KeySetView<K, java.lang.Boolean>
                 public static newKeySet<K>(arg0: int): java.util.concurrent.ConcurrentHashMap$KeySetView<K, java.lang.Boolean>
-                public keySet(arg0: V): java.util.concurrent.ConcurrentHashMap$KeySetView<K, V>
-                public forEach(arg0: long, arg1: java.util.function$.BiConsumer<K, V>): void
+                public keySet<K>(arg0: V): java.util.concurrent.ConcurrentHashMap$KeySetView<K, V>
+                public forEach<K>(arg0: long, arg1: java.util.function$.BiConsumer<K, V>): void
                 public forEach<U>(arg0: long, arg1: java.util.function$.BiFunction<K, V, U>, arg2: java.util.function$.Consumer$$Lambda<U>): void
                 public search<U>(arg0: long, arg1: java.util.function$.BiFunction<K, V, U>): U
                 public reduce<U>(arg0: long, arg1: java.util.function$.BiFunction<K, V, U>, arg2: java.util.function$.BiFunction<U, U, U>): U

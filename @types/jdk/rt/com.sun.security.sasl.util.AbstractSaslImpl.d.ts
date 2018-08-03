@@ -14,14 +14,14 @@ declare namespace com {
                         protected recvMaxBufSize: int
                         protected rawSendSize: int
                         protected myClassName: string
-                        protected static MAX_SEND_BUF: string
-                        protected static logger: java.util.logging.Logger
-                        protected static NO_PROTECTION: byte
-                        protected static INTEGRITY_ONLY_PROTECTION: byte
-                        protected static PRIVACY_PROTECTION: byte
-                        protected static LOW_STRENGTH: byte
-                        protected static MEDIUM_STRENGTH: byte
-                        protected static HIGH_STRENGTH: byte
+                        protected static readonly MAX_SEND_BUF: string
+                        protected static readonly logger: java.util.logging.Logger
+                        protected static readonly NO_PROTECTION: byte
+                        protected static readonly INTEGRITY_ONLY_PROTECTION: byte
+                        protected static readonly PRIVACY_PROTECTION: byte
+                        protected static readonly LOW_STRENGTH: byte
+                        protected static readonly MEDIUM_STRENGTH: byte
+                        protected static readonly HIGH_STRENGTH: byte
                         protected constructor(arg0: java.util.Map<java.lang.String, any>, arg1: java.lang.String | string)
                         public isComplete(): boolean
                         public getNegotiatedProperty(arg0: java.lang.String | string): java.lang.Object

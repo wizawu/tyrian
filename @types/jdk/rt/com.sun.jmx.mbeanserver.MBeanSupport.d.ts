@@ -4,8 +4,8 @@ declare namespace com {
             namespace mbeanserver {
                 abstract class MBeanSupport<M> implements com.sun.jmx.mbeanserver.DynamicMBean2 , javax.management.MBeanRegistration {
                     public isMXBean(): boolean
-                    public register(arg0: javax.management.MBeanServer, arg1: javax.management.ObjectName): void
-                    public unregister(): void
+                    public abstract register(arg0: javax.management.MBeanServer, arg1: javax.management.ObjectName): void
+                    public abstract unregister(): void
                     public preRegister(arg0: javax.management.MBeanServer, arg1: javax.management.ObjectName): javax.management.ObjectName
                     public preRegister2(arg0: javax.management.MBeanServer, arg1: javax.management.ObjectName): void
                     public registerFailed(): void

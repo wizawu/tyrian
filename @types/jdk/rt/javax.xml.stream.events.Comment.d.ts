@@ -5,9 +5,6 @@ declare namespace javax {
                 interface Comment extends javax.xml.stream.events.XMLEvent {
                     getText(): string
                 }
-                interface Comment$$Lambda extends javax.xml.stream.events.XMLEvent {
-                    (): string
-                }
             }
         }
     }

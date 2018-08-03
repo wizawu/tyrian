@@ -3,8 +3,11 @@ declare namespace org {
         namespace PortableServer {
             abstract class DynamicImplementation extends org.omg.PortableServer.Servant {
                 public constructor()
-                public invoke(arg0: org.omg.CORBA.ServerRequest): void
+                public abstract invoke(arg0: org.omg.CORBA.ServerRequest | org.omg.CORBA.ServerRequest$$Lambda): void
                 public static class: java.lang.Class<any>
+            }
+            interface DynamicImplementation$$Lambda extends org.omg.PortableServer.Servant {
+                (arg0: org.omg.CORBA.ServerRequest | org.omg.CORBA.ServerRequest$$Lambda): void
             }
         }
     }

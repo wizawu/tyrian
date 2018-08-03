@@ -5,7 +5,7 @@ declare namespace javax {
                 public constructor(arg0: java.util.Iterator<java.lang.Class<any>>)
                 public static lookupProviders<T>(arg0: java.lang.Class<T>, arg1: java.lang.ClassLoader): java.util.Iterator<T>
                 public static lookupProviders<T>(arg0: java.lang.Class<T>): java.util.Iterator<T>
-                public getCategories(): java.util.Iterator<java.lang.Class<any>>
+                public getCategories<T>(): java.util.Iterator<java.lang.Class<any>>
                 public registerServiceProvider<T>(arg0: T, arg1: java.lang.Class<T>): boolean
                 public registerServiceProvider<T>(arg0: java.lang.Object): void
                 public registerServiceProviders<T>(arg0: java.util.Iterator<any>): void

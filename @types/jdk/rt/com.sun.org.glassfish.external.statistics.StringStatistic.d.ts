@@ -7,9 +7,6 @@ declare namespace com {
                         interface StringStatistic extends com.sun.org.glassfish.external.statistics.Statistic {
                             getCurrent(): string
                         }
-                        interface StringStatistic$$Lambda extends com.sun.org.glassfish.external.statistics.Statistic {
-                            (): string
-                        }
                     }
                 }
             }

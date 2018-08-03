@@ -8,10 +8,10 @@ declare namespace com {
                             namespace mime {
                                 namespace internet {
                                     class HeaderTokenizer$Token {
-                                        public static ATOM: int
-                                        public static QUOTEDSTRING: int
-                                        public static COMMENT: int
-                                        public static EOF: int
+                                        public static readonly ATOM: int
+                                        public static readonly QUOTEDSTRING: int
+                                        public static readonly COMMENT: int
+                                        public static readonly EOF: int
                                         public constructor(arg0: int, arg1: java.lang.String | string)
                                         public getType(): int
                                         public getValue(): string

@@ -7,18 +7,18 @@ declare namespace com {
                         namespace runtime {
                             class JAXBContextImpl extends com.sun.xml.internal.bind.api.JAXBRIContext {
                                 protected beanInfos: java.util.Map<com.sun.xml.internal.bind.v2.model.runtime.RuntimeTypeInfo, com.sun.xml.internal.bind.v2.runtime.JaxBeanInfo>
-                                public marshallerPool: com.sun.istack.internal.Pool<javax.xml.bind.Marshaller>
-                                public unmarshallerPool: com.sun.istack.internal.Pool<javax.xml.bind.Unmarshaller>
+                                public readonly marshallerPool: com.sun.istack.internal.Pool<javax.xml.bind.Marshaller>
+                                public readonly unmarshallerPool: com.sun.istack.internal.Pool<javax.xml.bind.Unmarshaller>
                                 public nameBuilder: com.sun.xml.internal.bind.v2.runtime.NameBuilder
-                                public nameList: com.sun.xml.internal.bind.v2.runtime.NameList
-                                protected c14nSupport: boolean
-                                public xmlAccessorFactorySupport: boolean
-                                public allNillable: boolean
-                                public retainPropertyInfo: boolean
-                                public supressAccessorWarnings: boolean
-                                public improvedXsiTypeHandling: boolean
-                                public disableSecurityProcessing: boolean
-                                public fastBoot: boolean
+                                public readonly nameList: com.sun.xml.internal.bind.v2.runtime.NameList
+                                protected readonly c14nSupport: boolean
+                                public readonly xmlAccessorFactorySupport: boolean
+                                public readonly allNillable: boolean
+                                public readonly retainPropertyInfo: boolean
+                                public readonly supressAccessorWarnings: boolean
+                                public readonly improvedXsiTypeHandling: boolean
+                                public readonly disableSecurityProcessing: boolean
+                                public readonly fastBoot: boolean
                                 public getXmlNsSet(): java.util.Set<javax.xml.bind.annotation.XmlNs>
                                 public hasSwaRef(): boolean
                                 public getRuntimeTypeInfoSet(): com.sun.xml.internal.bind.v2.model.runtime.RuntimeTypeInfoSet
@@ -32,22 +32,22 @@ declare namespace com {
                                 public getBeanInfo(arg0: java.lang.Object, arg1: boolean): com.sun.xml.internal.bind.v2.runtime.JaxBeanInfo
                                 public getBeanInfo<T>(arg0: java.lang.Class<T>): com.sun.xml.internal.bind.v2.runtime.JaxBeanInfo<T>
                                 public getBeanInfo<T>(arg0: java.lang.Class<T>, arg1: boolean): com.sun.xml.internal.bind.v2.runtime.JaxBeanInfo<T>
-                                public selectRootLoader(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$State, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName): com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader
-                                public getGlobalType(arg0: javax.xml.namespace.QName): com.sun.xml.internal.bind.v2.runtime.JaxBeanInfo
-                                public getNearestTypeName(arg0: javax.xml.namespace.QName): string
-                                public getValidRootNames(): java.util.Set<javax.xml.namespace.QName>
-                                public getUTF8NameTable(): com.sun.xml.internal.bind.v2.runtime.output.Encoded[]
-                                public getNumberOfLocalNames(): int
-                                public getNumberOfElementNames(): int
-                                public getNumberOfAttributeNames(): int
-                                public static createTransformerHandler(arg0: boolean): javax.xml.transform.sax.TransformerHandler
-                                public createMarshaller(): com.sun.xml.internal.bind.v2.runtime.MarshallerImpl
-                                public createUnmarshaller(): com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl
-                                public createValidator(): javax.xml.bind.Validator
-                                public createJAXBIntrospector(): javax.xml.bind.JAXBIntrospector
-                                public generateEpisode(arg0: javax.xml.transform.Result): void
-                                public generateSchema(arg0: javax.xml.bind.SchemaOutputResolver): void
-                                public getTypeName(arg0: com.sun.xml.internal.bind.api.TypeReference): javax.xml.namespace.QName
+                                public selectRootLoader<T>(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$State, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName | com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName$$Lambda): com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader
+                                public getGlobalType<T>(arg0: javax.xml.namespace.QName): com.sun.xml.internal.bind.v2.runtime.JaxBeanInfo
+                                public getNearestTypeName<T>(arg0: javax.xml.namespace.QName): string
+                                public getValidRootNames<T>(): java.util.Set<javax.xml.namespace.QName>
+                                public getUTF8NameTable<T>(): com.sun.xml.internal.bind.v2.runtime.output.Encoded[]
+                                public getNumberOfLocalNames<T>(): int
+                                public getNumberOfElementNames<T>(): int
+                                public getNumberOfAttributeNames<T>(): int
+                                public static createTransformerHandler<T>(arg0: boolean): javax.xml.transform.sax.TransformerHandler
+                                public createMarshaller<T>(): com.sun.xml.internal.bind.v2.runtime.MarshallerImpl
+                                public createUnmarshaller<T>(): com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl
+                                public createValidator<T>(): javax.xml.bind.Validator
+                                public createJAXBIntrospector<T>(): javax.xml.bind.JAXBIntrospector
+                                public generateEpisode<T>(arg0: javax.xml.transform.Result): void
+                                public generateSchema<T>(arg0: javax.xml.bind.SchemaOutputResolver | javax.xml.bind.SchemaOutputResolver$$Lambda): void
+                                public getTypeName<T>(arg0: com.sun.xml.internal.bind.api.TypeReference): javax.xml.namespace.QName
                                 public createBinder<T>(arg0: java.lang.Class<T>): javax.xml.bind.Binder<T>
                                 public createBinder<T>(): javax.xml.bind.Binder<org.w3c.dom.Node>
                                 public getElementName<T>(arg0: java.lang.Object): javax.xml.namespace.QName

@@ -6,8 +6,8 @@ declare namespace com {
                     public addAttribute(arg0: java.lang.String | string, arg1: java.lang.String | string): void
                     protected addArgument(arg0: java.lang.Object): void
                     protected getValueObject(): com.sun.beans.decoder.ValueObject
-                    protected getValue(arg0: java.lang.String | string): java.lang.Object
-                    protected setValue(arg0: java.lang.String | string, arg1: java.lang.Object): void
+                    protected abstract getValue(arg0: java.lang.String | string): java.lang.Object
+                    protected abstract setValue(arg0: java.lang.String | string, arg1: java.lang.Object): void
                     public static class: java.lang.Class<any>
                 }
             }

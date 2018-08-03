@@ -2,12 +2,12 @@ declare namespace sun {
     namespace java2d {
         namespace opengl {
             class OGLUtilities {
-                public static UNDEFINED: int
-                public static WINDOW: int
-                public static PBUFFER: int
-                public static TEXTURE: int
-                public static FLIP_BACKBUFFER: int
-                public static FBOBJECT: int
+                public static readonly UNDEFINED: int
+                public static readonly WINDOW: int
+                public static readonly PBUFFER: int
+                public static readonly TEXTURE: int
+                public static readonly FLIP_BACKBUFFER: int
+                public static readonly FBOBJECT: int
                 public static isQueueFlusherThread(): boolean
                 public static invokeWithOGLContextCurrent(arg0: java.awt.Graphics, arg1: java.lang.Runnable | java.lang.Runnable$$Lambda): boolean
                 public static invokeWithOGLSharedContextCurrent(arg0: java.awt.GraphicsConfiguration, arg1: java.lang.Runnable | java.lang.Runnable$$Lambda): boolean

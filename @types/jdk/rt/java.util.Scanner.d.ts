@@ -2,15 +2,15 @@ declare namespace java {
     namespace util {
         class Scanner implements java.util.Iterator<java.lang.String> , java.io.Closeable {
             public constructor(arg0: java.lang.Readable | java.lang.Readable$$Lambda)
-            public constructor(arg0: java.io.InputStream)
-            public constructor(arg0: java.io.InputStream, arg1: java.lang.String | string)
+            public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
+            public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.lang.String | string)
             public constructor(arg0: java.io.File)
             public constructor(arg0: java.io.File, arg1: java.lang.String | string)
             public constructor(arg0: java.nio.file.Path)
             public constructor(arg0: java.nio.file.Path, arg1: java.lang.String | string)
             public constructor(arg0: java.lang.String | string)
-            public constructor(arg0: java.nio.channels.ReadableByteChannel | java.nio.channels.ReadableByteChannel$$Lambda)
-            public constructor(arg0: java.nio.channels.ReadableByteChannel | java.nio.channels.ReadableByteChannel$$Lambda, arg1: java.lang.String | string)
+            public constructor(arg0: java.nio.channels.ReadableByteChannel)
+            public constructor(arg0: java.nio.channels.ReadableByteChannel, arg1: java.lang.String | string)
             public close(): void
             public ioException(): java.io.IOException
             public delimiter(): java.util.regex.Pattern

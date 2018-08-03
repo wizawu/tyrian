@@ -2,8 +2,8 @@ declare namespace sun {
     namespace java2d {
         namespace pipe {
             class Region {
-                public static EMPTY_REGION: sun.java2d.pipe.Region
-                public static WHOLE_REGION: sun.java2d.pipe.Region
+                public static readonly EMPTY_REGION: sun.java2d.pipe.Region
+                public static readonly WHOLE_REGION: sun.java2d.pipe.Region
                 public static dimAdd(arg0: int, arg1: int): int
                 public static clipAdd(arg0: int, arg1: int): int
                 public static clipScale(arg0: int, arg1: double): int

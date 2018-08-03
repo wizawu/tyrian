@@ -5,7 +5,7 @@ declare namespace jdk {
                 namespace asm {
                     namespace commons {
                         class InstructionAdapter extends jdk.internal.org.objectweb.asm.MethodVisitor {
-                            public static OBJECT_TYPE: jdk.internal.org.objectweb.asm.Type
+                            public static readonly OBJECT_TYPE: jdk.internal.org.objectweb.asm.Type
                             public constructor(arg0: jdk.internal.org.objectweb.asm.MethodVisitor)
                             protected constructor(arg0: int, arg1: jdk.internal.org.objectweb.asm.MethodVisitor)
                             public visitInsn(arg0: int): void

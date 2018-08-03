@@ -6,14 +6,14 @@ declare namespace com {
                     namespace internal {
                         namespace parsers {
                             abstract class BasicParserConfiguration extends com.sun.org.apache.xerces.internal.util.ParserConfigurationSettings implements com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration {
-                                protected static VALIDATION: string
-                                protected static NAMESPACES: string
-                                protected static EXTERNAL_GENERAL_ENTITIES: string
-                                protected static EXTERNAL_PARAMETER_ENTITIES: string
-                                protected static XML_STRING: string
-                                protected static SYMBOL_TABLE: string
-                                protected static ERROR_HANDLER: string
-                                protected static ENTITY_RESOLVER: string
+                                protected static readonly VALIDATION: string
+                                protected static readonly NAMESPACES: string
+                                protected static readonly EXTERNAL_GENERAL_ENTITIES: string
+                                protected static readonly EXTERNAL_PARAMETER_ENTITIES: string
+                                protected static readonly XML_STRING: string
+                                protected static readonly SYMBOL_TABLE: string
+                                protected static readonly ERROR_HANDLER: string
+                                protected static readonly ENTITY_RESOLVER: string
                                 protected fSymbolTable: com.sun.org.apache.xerces.internal.util.SymbolTable
                                 protected fLocale: java.util.Locale
                                 protected fComponents: java.util.ArrayList
@@ -25,7 +25,7 @@ declare namespace com {
                                 protected constructor(arg0: com.sun.org.apache.xerces.internal.util.SymbolTable)
                                 protected constructor(arg0: com.sun.org.apache.xerces.internal.util.SymbolTable, arg1: com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager)
                                 protected addComponent(arg0: com.sun.org.apache.xerces.internal.xni.parser.XMLComponent): void
-                                public parse(arg0: com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource): void
+                                public abstract parse(arg0: com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource): void
                                 public setDocumentHandler(arg0: com.sun.org.apache.xerces.internal.xni.XMLDocumentHandler): void
                                 public getDocumentHandler(): com.sun.org.apache.xerces.internal.xni.XMLDocumentHandler
                                 public setDTDHandler(arg0: com.sun.org.apache.xerces.internal.xni.XMLDTDHandler): void
@@ -44,6 +44,9 @@ declare namespace com {
                                 protected checkProperty(arg0: java.lang.String | string): com.sun.org.apache.xerces.internal.util.PropertyState
                                 protected checkFeature(arg0: java.lang.String | string): com.sun.org.apache.xerces.internal.util.FeatureState
                                 public static class: java.lang.Class<any>
+                            }
+                            interface BasicParserConfiguration$$Lambda extends com.sun.org.apache.xerces.internal.util.ParserConfigurationSettings implements com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration {
+                                (arg0: com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource): void
                             }
                         }
                     }

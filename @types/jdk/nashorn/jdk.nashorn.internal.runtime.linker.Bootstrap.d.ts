@@ -4,7 +4,7 @@ declare namespace jdk {
             namespace runtime {
                 namespace linker {
                     class Bootstrap {
-                        public static BOOTSTRAP: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                        public static readonly BOOTSTRAP: jdk.nashorn.internal.codegen.CompilerConstants$Call
                         public static isCallable(arg0: java.lang.Object): boolean
                         public static isStrictCallable(arg0: java.lang.Object): boolean
                         public static isDynamicMethod(arg0: java.lang.Object): boolean

@@ -10,8 +10,11 @@ declare namespace com {
                                     public constructor()
                                     protected static isXalanInstalled(): boolean
                                     public static newInstance(): com.sun.org.apache.xml.internal.security.utils.XPathFactory
-                                    public newXPathAPI(): com.sun.org.apache.xml.internal.security.utils.XPathAPI
+                                    public abstract newXPathAPI(): com.sun.org.apache.xml.internal.security.utils.XPathAPI
                                     public static class: java.lang.Class<any>
+                                }
+                                interface XPathFactory$$Lambda {
+                                    (): com.sun.org.apache.xml.internal.security.utils.XPathAPI
                                 }
                             }
                         }

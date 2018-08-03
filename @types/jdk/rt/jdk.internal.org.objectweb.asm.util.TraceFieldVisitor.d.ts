@@ -5,7 +5,7 @@ declare namespace jdk {
                 namespace asm {
                     namespace util {
                         class TraceFieldVisitor extends jdk.internal.org.objectweb.asm.FieldVisitor {
-                            public p: jdk.internal.org.objectweb.asm.util.Printer
+                            public readonly p: jdk.internal.org.objectweb.asm.util.Printer
                             public constructor(arg0: jdk.internal.org.objectweb.asm.util.Printer)
                             public constructor(arg0: jdk.internal.org.objectweb.asm.FieldVisitor, arg1: jdk.internal.org.objectweb.asm.util.Printer)
                             public visitAnnotation(arg0: java.lang.String | string, arg1: boolean): jdk.internal.org.objectweb.asm.AnnotationVisitor

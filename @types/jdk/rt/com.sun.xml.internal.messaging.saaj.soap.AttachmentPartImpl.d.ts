@@ -6,7 +6,7 @@ declare namespace com {
                     namespace saaj {
                         namespace soap {
                             class AttachmentPartImpl extends javax.xml.soap.AttachmentPart {
-                                protected static log: java.util.logging.Logger
+                                protected static readonly log: java.util.logging.Logger
                                 public constructor()
                                 public constructor(arg0: com.sun.xml.internal.org.jvnet.mimepull.MIMEPart)
                                 public getSize(): int
@@ -25,9 +25,9 @@ declare namespace com {
                                 public getNonMatchingMimeHeaders(arg0: java.lang.String[]): java.util.Iterator
                                 public static copyMimeHeaders(arg0: javax.xml.soap.MimeHeaders, arg1: com.sun.xml.internal.messaging.saaj.packaging.mime.internet.MimeBodyPart): void
                                 public static copyMimeHeaders(arg0: com.sun.xml.internal.messaging.saaj.packaging.mime.internet.MimeBodyPart, arg1: com.sun.xml.internal.messaging.saaj.soap.AttachmentPartImpl): void
-                                public setBase64Content(arg0: java.io.InputStream, arg1: java.lang.String | string): void
+                                public setBase64Content(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.lang.String | string): void
                                 public getBase64Content(): java.io.InputStream
-                                public setRawContent(arg0: java.io.InputStream, arg1: java.lang.String | string): void
+                                public setRawContent(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.lang.String | string): void
                                 public setRawContentBytes(arg0: byte[], arg1: int, arg2: int, arg3: java.lang.String | string): void
                                 public getRawContent(): java.io.InputStream
                                 public getRawContentBytes(): byte[]

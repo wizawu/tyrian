@@ -6,7 +6,7 @@ declare namespace com {
                     namespace server {
                         namespace sei {
                             class MessageFiller$DataHandlerFiller extends com.sun.xml.internal.ws.server.sei.MessageFiller$AttachmentFiller {
-                                protected constructor(arg0: com.sun.xml.internal.ws.model.ParameterImpl, arg1: com.sun.xml.internal.ws.server.sei.ValueGetter)
+                                protected constructor(arg0: com.sun.xml.internal.ws.model.ParameterImpl, arg1: com.sun.xml.internal.ws.server.sei.ValueGetter | com.sun.xml.internal.ws.server.sei.ValueGetter$$Lambda)
                                 public fillIn(arg0: java.lang.Object[], arg1: java.lang.Object, arg2: com.sun.xml.internal.ws.api.message.Message): void
                                 public static class: java.lang.Class<any>
                             }

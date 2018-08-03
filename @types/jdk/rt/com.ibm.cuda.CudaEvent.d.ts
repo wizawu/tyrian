@@ -2,10 +2,10 @@ declare namespace com {
     namespace ibm {
         namespace cuda {
             class CudaEvent implements java.lang.AutoCloseable {
-                public static FLAG_DEFAULT: int
-                public static FLAG_BLOCKING_SYNC: int
-                public static FLAG_DISABLE_TIMING: int
-                public static FLAG_INTERPROCESS: int
+                public static readonly FLAG_DEFAULT: int
+                public static readonly FLAG_BLOCKING_SYNC: int
+                public static readonly FLAG_DISABLE_TIMING: int
+                public static readonly FLAG_INTERPROCESS: int
                 public constructor(arg0: com.ibm.cuda.CudaDevice)
                 public constructor(arg0: com.ibm.cuda.CudaDevice, arg1: int)
                 public close(): void

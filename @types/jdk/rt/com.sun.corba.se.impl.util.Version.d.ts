@@ -5,11 +5,11 @@ declare namespace com {
                 namespace impl {
                     namespace util {
                         class Version {
-                            public static PROJECT_NAME: string
-                            public static VERSION: string
-                            public static BUILD: string
-                            public static BUILD_TIME: string
-                            public static FULL: string
+                            public static readonly PROJECT_NAME: string
+                            public static readonly VERSION: string
+                            public static readonly BUILD: string
+                            public static readonly BUILD_TIME: string
+                            public static readonly FULL: string
                             public constructor()
                             public static asString(): string
                             public static main(arg0: java.lang.String[]): void

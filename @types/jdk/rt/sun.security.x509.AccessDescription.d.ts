@@ -2,10 +2,10 @@ declare namespace sun {
     namespace security {
         namespace x509 {
             class AccessDescription {
-                public static Ad_OCSP_Id: sun.security.util.ObjectIdentifier
-                public static Ad_CAISSUERS_Id: sun.security.util.ObjectIdentifier
-                public static Ad_TIMESTAMPING_Id: sun.security.util.ObjectIdentifier
-                public static Ad_CAREPOSITORY_Id: sun.security.util.ObjectIdentifier
+                public static readonly Ad_OCSP_Id: sun.security.util.ObjectIdentifier
+                public static readonly Ad_CAISSUERS_Id: sun.security.util.ObjectIdentifier
+                public static readonly Ad_TIMESTAMPING_Id: sun.security.util.ObjectIdentifier
+                public static readonly Ad_CAREPOSITORY_Id: sun.security.util.ObjectIdentifier
                 public constructor(arg0: sun.security.util.ObjectIdentifier, arg1: sun.security.x509.GeneralName)
                 public constructor(arg0: sun.security.util.DerValue)
                 public getAccessMethod(): sun.security.util.ObjectIdentifier

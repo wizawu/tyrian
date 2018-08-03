@@ -7,18 +7,18 @@ declare namespace com {
                         namespace impl {
                             namespace dtd {
                                 class XMLSimpleType {
-                                    public static TYPE_CDATA: short
-                                    public static TYPE_ENTITY: short
-                                    public static TYPE_ENUMERATION: short
-                                    public static TYPE_ID: short
-                                    public static TYPE_IDREF: short
-                                    public static TYPE_NMTOKEN: short
-                                    public static TYPE_NOTATION: short
-                                    public static TYPE_NAMED: short
-                                    public static DEFAULT_TYPE_DEFAULT: short
-                                    public static DEFAULT_TYPE_FIXED: short
-                                    public static DEFAULT_TYPE_IMPLIED: short
-                                    public static DEFAULT_TYPE_REQUIRED: short
+                                    public static readonly TYPE_CDATA: short
+                                    public static readonly TYPE_ENTITY: short
+                                    public static readonly TYPE_ENUMERATION: short
+                                    public static readonly TYPE_ID: short
+                                    public static readonly TYPE_IDREF: short
+                                    public static readonly TYPE_NMTOKEN: short
+                                    public static readonly TYPE_NOTATION: short
+                                    public static readonly TYPE_NAMED: short
+                                    public static readonly DEFAULT_TYPE_DEFAULT: short
+                                    public static readonly DEFAULT_TYPE_FIXED: short
+                                    public static readonly DEFAULT_TYPE_IMPLIED: short
+                                    public static readonly DEFAULT_TYPE_REQUIRED: short
                                     public type: short
                                     public name: string
                                     public enumeration: java.lang.String[]

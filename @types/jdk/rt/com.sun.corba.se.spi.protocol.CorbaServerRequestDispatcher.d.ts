@@ -7,9 +7,6 @@ declare namespace com {
                         interface CorbaServerRequestDispatcher extends com.sun.corba.se.pept.protocol.ServerRequestDispatcher {
                             locate(arg0: com.sun.corba.se.spi.ior.ObjectKey): com.sun.corba.se.spi.ior.IOR
                         }
-                        interface CorbaServerRequestDispatcher$$Lambda extends com.sun.corba.se.pept.protocol.ServerRequestDispatcher {
-                            (arg0: com.sun.corba.se.spi.ior.ObjectKey): com.sun.corba.se.spi.ior.IOR
-                        }
                     }
                 }
             }

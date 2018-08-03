@@ -6,8 +6,8 @@ declare namespace com {
                     namespace stax {
                         namespace events {
                             class XMLConstants {
-                                public static ENCODING: string
-                                public static XMLVERSION: string
+                                public static readonly ENCODING: string
+                                public static readonly XMLVERSION: string
                                 public constructor()
                                 public static class: java.lang.Class<any>
                             }

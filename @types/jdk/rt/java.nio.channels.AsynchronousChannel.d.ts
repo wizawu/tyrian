@@ -4,9 +4,6 @@ declare namespace java {
             interface AsynchronousChannel extends java.nio.channels.Channel {
                 close(): void
             }
-            interface AsynchronousChannel$$Lambda extends java.nio.channels.Channel {
-                (): void
-            }
         }
     }
 }

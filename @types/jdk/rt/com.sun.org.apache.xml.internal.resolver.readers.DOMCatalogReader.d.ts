@@ -11,7 +11,7 @@ declare namespace com {
                                     public setCatalogParser(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void
                                     public getCatalogParser(arg0: java.lang.String | string, arg1: java.lang.String | string): string
                                     public constructor()
-                                    public readCatalog(arg0: com.sun.org.apache.xml.internal.resolver.Catalog, arg1: java.io.InputStream): void
+                                    public readCatalog(arg0: com.sun.org.apache.xml.internal.resolver.Catalog, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
                                     public readCatalog(arg0: com.sun.org.apache.xml.internal.resolver.Catalog, arg1: java.lang.String | string): void
                                     public static class: java.lang.Class<any>
                                 }

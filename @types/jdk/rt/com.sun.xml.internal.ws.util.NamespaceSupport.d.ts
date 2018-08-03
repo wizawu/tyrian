@@ -5,7 +5,7 @@ declare namespace com {
                 namespace ws {
                     namespace util {
                         class NamespaceSupport {
-                            public static XMLNS: string
+                            public static readonly XMLNS: string
                             public constructor()
                             public constructor(arg0: com.sun.xml.internal.ws.util.NamespaceSupport)
                             public reset(): void

@@ -2,33 +2,33 @@ declare namespace sun {
     namespace security {
         namespace util {
             class DerValue {
-                public static TAG_UNIVERSAL: byte
-                public static TAG_APPLICATION: byte
-                public static TAG_CONTEXT: byte
-                public static TAG_PRIVATE: byte
+                public static readonly TAG_UNIVERSAL: byte
+                public static readonly TAG_APPLICATION: byte
+                public static readonly TAG_CONTEXT: byte
+                public static readonly TAG_PRIVATE: byte
                 public tag: byte
                 protected buffer: sun.security.util.DerInputBuffer
-                public data: sun.security.util.DerInputStream
-                public static tag_Boolean: byte
-                public static tag_Integer: byte
-                public static tag_BitString: byte
-                public static tag_OctetString: byte
-                public static tag_Null: byte
-                public static tag_ObjectId: byte
-                public static tag_Enumerated: byte
-                public static tag_UTF8String: byte
-                public static tag_PrintableString: byte
-                public static tag_T61String: byte
-                public static tag_IA5String: byte
-                public static tag_UtcTime: byte
-                public static tag_GeneralizedTime: byte
-                public static tag_GeneralString: byte
-                public static tag_UniversalString: byte
-                public static tag_BMPString: byte
-                public static tag_Sequence: byte
-                public static tag_SequenceOf: byte
-                public static tag_Set: byte
-                public static tag_SetOf: byte
+                public readonly data: sun.security.util.DerInputStream
+                public static readonly tag_Boolean: byte
+                public static readonly tag_Integer: byte
+                public static readonly tag_BitString: byte
+                public static readonly tag_OctetString: byte
+                public static readonly tag_Null: byte
+                public static readonly tag_ObjectId: byte
+                public static readonly tag_Enumerated: byte
+                public static readonly tag_UTF8String: byte
+                public static readonly tag_PrintableString: byte
+                public static readonly tag_T61String: byte
+                public static readonly tag_IA5String: byte
+                public static readonly tag_UtcTime: byte
+                public static readonly tag_GeneralizedTime: byte
+                public static readonly tag_GeneralString: byte
+                public static readonly tag_UniversalString: byte
+                public static readonly tag_BMPString: byte
+                public static readonly tag_Sequence: byte
+                public static readonly tag_SequenceOf: byte
+                public static readonly tag_Set: byte
+                public static readonly tag_SetOf: byte
                 public isUniversal(): boolean
                 public isApplication(): boolean
                 public isContextSpecific(): boolean
@@ -40,7 +40,7 @@ declare namespace sun {
                 public constructor(arg0: byte, arg1: byte[])
                 public constructor(arg0: byte[])
                 public constructor(arg0: byte[], arg1: int, arg2: int)
-                public constructor(arg0: java.io.InputStream)
+                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                 public encode(arg0: sun.security.util.DerOutputStream): void
                 public getData(): sun.security.util.DerInputStream
                 public getTag(): byte

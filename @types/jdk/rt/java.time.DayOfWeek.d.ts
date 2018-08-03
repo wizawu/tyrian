@@ -1,13 +1,13 @@
 declare namespace java {
     namespace time {
         class DayOfWeek extends java.lang.Enum<java.time.DayOfWeek> implements java.time.temporal.TemporalAccessor , java.time.temporal.TemporalAdjuster {
-            public static MONDAY: java.time.DayOfWeek
-            public static TUESDAY: java.time.DayOfWeek
-            public static WEDNESDAY: java.time.DayOfWeek
-            public static THURSDAY: java.time.DayOfWeek
-            public static FRIDAY: java.time.DayOfWeek
-            public static SATURDAY: java.time.DayOfWeek
-            public static SUNDAY: java.time.DayOfWeek
+            public static readonly MONDAY: java.time.DayOfWeek
+            public static readonly TUESDAY: java.time.DayOfWeek
+            public static readonly WEDNESDAY: java.time.DayOfWeek
+            public static readonly THURSDAY: java.time.DayOfWeek
+            public static readonly FRIDAY: java.time.DayOfWeek
+            public static readonly SATURDAY: java.time.DayOfWeek
+            public static readonly SUNDAY: java.time.DayOfWeek
             public static values(): java.time.DayOfWeek[]
             public static valueOf(arg0: java.lang.String | string): java.time.DayOfWeek
             public static of(arg0: int): java.time.DayOfWeek

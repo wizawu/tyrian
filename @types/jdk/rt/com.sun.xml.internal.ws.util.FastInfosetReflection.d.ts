@@ -5,9 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace util {
                         class FastInfosetReflection {
-                            public static fiStAXDocumentParser_new: java.lang.reflect.Constructor
-                            public static fiStAXDocumentParser_setInputStream: java.lang.reflect.Method
-                            public static fiStAXDocumentParser_setStringInterning: java.lang.reflect.Method
+                            public static readonly fiStAXDocumentParser_new: java.lang.reflect.Constructor
+                            public static readonly fiStAXDocumentParser_setInputStream: java.lang.reflect.Method
+                            public static readonly fiStAXDocumentParser_setStringInterning: java.lang.reflect.Method
                             public constructor()
                             public static class: java.lang.Class<any>
                         }

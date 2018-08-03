@@ -3,8 +3,8 @@ declare namespace javax {
         namespace plaf {
             namespace basic {
                 class BasicHTML {
-                    public static propertyKey: string
-                    public static documentBaseKey: string
+                    public static readonly propertyKey: string
+                    public static readonly documentBaseKey: string
                     public constructor()
                     public static createHTMLView(arg0: javax.swing.JComponent, arg1: java.lang.String | string): javax.swing.text.View
                     public static getHTMLBaseline(arg0: javax.swing.text.View, arg1: int, arg2: int): int

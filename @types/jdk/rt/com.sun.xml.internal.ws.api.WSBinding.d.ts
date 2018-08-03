@@ -13,14 +13,14 @@ declare namespace com {
                             isOperationFeatureEnabled(arg0: java.lang.Class<javax.xml.ws.WebServiceFeature>, arg1: javax.xml.namespace.QName): boolean
                             getFeature<F extends javax.xml.ws.WebServiceFeature>(arg0: java.lang.Class<F>): F
                             getOperationFeature<F extends javax.xml.ws.WebServiceFeature>(arg0: java.lang.Class<F>, arg1: javax.xml.namespace.QName): F
-                            getFeatures(): com.sun.xml.internal.ws.api.WSFeatureList
-                            getOperationFeatures(arg0: javax.xml.namespace.QName): com.sun.xml.internal.ws.api.WSFeatureList
-                            getInputMessageFeatures(arg0: javax.xml.namespace.QName): com.sun.xml.internal.ws.api.WSFeatureList
-                            getOutputMessageFeatures(arg0: javax.xml.namespace.QName): com.sun.xml.internal.ws.api.WSFeatureList
-                            getFaultMessageFeatures(arg0: javax.xml.namespace.QName, arg1: javax.xml.namespace.QName): com.sun.xml.internal.ws.api.WSFeatureList
-                            getKnownHeaders(): java.util.Set<javax.xml.namespace.QName>
-                            addKnownHeader(arg0: javax.xml.namespace.QName): boolean
-                            getMessageContextFactory(): com.oracle.webservices.internal.api.message.MessageContextFactory
+                            getFeatures<F extends javax.xml.ws.WebServiceFeature>(): com.sun.xml.internal.ws.api.WSFeatureList
+                            getOperationFeatures<F extends javax.xml.ws.WebServiceFeature>(arg0: javax.xml.namespace.QName): com.sun.xml.internal.ws.api.WSFeatureList
+                            getInputMessageFeatures<F extends javax.xml.ws.WebServiceFeature>(arg0: javax.xml.namespace.QName): com.sun.xml.internal.ws.api.WSFeatureList
+                            getOutputMessageFeatures<F extends javax.xml.ws.WebServiceFeature>(arg0: javax.xml.namespace.QName): com.sun.xml.internal.ws.api.WSFeatureList
+                            getFaultMessageFeatures<F extends javax.xml.ws.WebServiceFeature>(arg0: javax.xml.namespace.QName, arg1: javax.xml.namespace.QName): com.sun.xml.internal.ws.api.WSFeatureList
+                            getKnownHeaders<F extends javax.xml.ws.WebServiceFeature>(): java.util.Set<javax.xml.namespace.QName>
+                            addKnownHeader<F extends javax.xml.ws.WebServiceFeature>(arg0: javax.xml.namespace.QName): boolean
+                            getMessageContextFactory<F extends javax.xml.ws.WebServiceFeature>(): com.oracle.webservices.internal.api.message.MessageContextFactory
                         }
                     }
                 }

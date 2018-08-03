@@ -14,7 +14,7 @@ declare namespace com {
                                 public asSource(): javax.xml.transform.Source
                                 public asInputStream(): java.io.InputStream
                                 public asBase64Data(): com.sun.xml.internal.org.jvnet.staxex.Base64Data
-                                public writeTo(arg0: java.io.OutputStream): void
+                                public writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                                 public writeTo(arg0: javax.xml.soap.SOAPMessage): void
                                 public static class: java.lang.Class<any>
                             }

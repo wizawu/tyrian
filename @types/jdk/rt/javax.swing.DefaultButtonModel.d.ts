@@ -7,11 +7,11 @@ declare namespace javax {
             protected mnemonic: int
             protected changeEvent: javax.swing.event.ChangeEvent
             protected listenerList: javax.swing.event.EventListenerList
-            public static ARMED: int
-            public static SELECTED: int
-            public static PRESSED: int
-            public static ENABLED: int
-            public static ROLLOVER: int
+            public static readonly ARMED: int
+            public static readonly SELECTED: int
+            public static readonly PRESSED: int
+            public static readonly ENABLED: int
+            public static readonly ROLLOVER: int
             public constructor()
             public setActionCommand(arg0: java.lang.String | string): void
             public getActionCommand(): string
@@ -27,16 +27,16 @@ declare namespace javax {
             public setRollover(arg0: boolean): void
             public setMnemonic(arg0: int): void
             public getMnemonic(): int
-            public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
-            public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+            public addChangeListener(arg0: javax.swing.event.ChangeListener): void
+            public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
             public getChangeListeners(): javax.swing.event.ChangeListener[]
             protected fireStateChanged(): void
-            public addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
-            public removeActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
+            public addActionListener(arg0: java.awt.event.ActionListener): void
+            public removeActionListener(arg0: java.awt.event.ActionListener): void
             public getActionListeners(): java.awt.event.ActionListener[]
             protected fireActionPerformed(arg0: java.awt.event.ActionEvent): void
-            public addItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): void
-            public removeItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): void
+            public addItemListener(arg0: java.awt.event.ItemListener): void
+            public removeItemListener(arg0: java.awt.event.ItemListener): void
             public getItemListeners(): java.awt.event.ItemListener[]
             protected fireItemStateChanged(arg0: java.awt.event.ItemEvent): void
             public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]

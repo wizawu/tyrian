@@ -4,7 +4,7 @@ declare namespace jdk {
             namespace ir {
                 namespace visitor {
                     abstract class NodeVisitor<T extends jdk.nashorn.internal.ir.LexicalContext> {
-                        protected lc: T
+                        protected readonly lc: T
                         public constructor(arg0: T)
                         public getLexicalContext(): T
                         protected enterDefault(arg0: jdk.nashorn.internal.ir.Node): boolean

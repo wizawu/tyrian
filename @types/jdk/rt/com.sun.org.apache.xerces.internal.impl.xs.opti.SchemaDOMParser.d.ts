@@ -8,8 +8,8 @@ declare namespace com {
                             namespace xs {
                                 namespace opti {
                                     class SchemaDOMParser extends com.sun.org.apache.xerces.internal.impl.xs.opti.DefaultXMLDocumentHandler {
-                                        public static ERROR_REPORTER: string
-                                        public static GENERATE_SYNTHETIC_ANNOTATION: string
+                                        public static readonly ERROR_REPORTER: string
+                                        public static readonly GENERATE_SYNTHETIC_ANNOTATION: string
                                         protected fLocator: com.sun.org.apache.xerces.internal.xni.XMLLocator
                                         protected fNamespaceContext: com.sun.org.apache.xerces.internal.xni.NamespaceContext
                                         public constructor(arg0: com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration)

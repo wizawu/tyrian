@@ -7,9 +7,9 @@ declare namespace com {
                 public writeXml(arg0: java.sql.ResultSet, arg1: java.io.Writer): void
                 public writeXml(arg0: java.io.Writer): void
                 public readXml(arg0: java.io.Reader): void
-                public readXml(arg0: java.io.InputStream): void
-                public writeXml(arg0: java.io.OutputStream): void
-                public writeXml(arg0: java.sql.ResultSet, arg1: java.io.OutputStream): void
+                public readXml(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
+                public writeXml(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public writeXml(arg0: java.sql.ResultSet, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                 public static class: java.lang.Class<any>
             }
         }

@@ -4,50 +4,50 @@ declare namespace com {
             namespace internal {
                 namespace fastinfoset {
                     class DecoderStateTables {
-                        public static STATE_ILLEGAL: int
-                        public static STATE_UNSUPPORTED: int
-                        public static EII_NO_AIIS_INDEX_SMALL: int
-                        public static EII_AIIS_INDEX_SMALL: int
-                        public static EII_INDEX_MEDIUM: int
-                        public static EII_INDEX_LARGE: int
-                        public static EII_NAMESPACES: int
-                        public static EII_LITERAL: int
-                        public static CII_UTF8_SMALL_LENGTH: int
-                        public static CII_UTF8_MEDIUM_LENGTH: int
-                        public static CII_UTF8_LARGE_LENGTH: int
-                        public static CII_UTF16_SMALL_LENGTH: int
-                        public static CII_UTF16_MEDIUM_LENGTH: int
-                        public static CII_UTF16_LARGE_LENGTH: int
-                        public static CII_RA: int
-                        public static CII_EA: int
-                        public static CII_INDEX_SMALL: int
-                        public static CII_INDEX_MEDIUM: int
-                        public static CII_INDEX_LARGE: int
-                        public static CII_INDEX_LARGE_LARGE: int
-                        public static COMMENT_II: int
-                        public static PROCESSING_INSTRUCTION_II: int
-                        public static DOCUMENT_TYPE_DECLARATION_II: int
-                        public static UNEXPANDED_ENTITY_REFERENCE_II: int
-                        public static TERMINATOR_SINGLE: int
-                        public static TERMINATOR_DOUBLE: int
-                        public static AII_INDEX_SMALL: int
-                        public static AII_INDEX_MEDIUM: int
-                        public static AII_INDEX_LARGE: int
-                        public static AII_LITERAL: int
-                        public static AII_TERMINATOR_SINGLE: int
-                        public static AII_TERMINATOR_DOUBLE: int
-                        public static NISTRING_UTF8_SMALL_LENGTH: int
-                        public static NISTRING_UTF8_MEDIUM_LENGTH: int
-                        public static NISTRING_UTF8_LARGE_LENGTH: int
-                        public static NISTRING_UTF16_SMALL_LENGTH: int
-                        public static NISTRING_UTF16_MEDIUM_LENGTH: int
-                        public static NISTRING_UTF16_LARGE_LENGTH: int
-                        public static NISTRING_RA: int
-                        public static NISTRING_EA: int
-                        public static NISTRING_INDEX_SMALL: int
-                        public static NISTRING_INDEX_MEDIUM: int
-                        public static NISTRING_INDEX_LARGE: int
-                        public static NISTRING_EMPTY: int
+                        public static readonly STATE_ILLEGAL: int
+                        public static readonly STATE_UNSUPPORTED: int
+                        public static readonly EII_NO_AIIS_INDEX_SMALL: int
+                        public static readonly EII_AIIS_INDEX_SMALL: int
+                        public static readonly EII_INDEX_MEDIUM: int
+                        public static readonly EII_INDEX_LARGE: int
+                        public static readonly EII_NAMESPACES: int
+                        public static readonly EII_LITERAL: int
+                        public static readonly CII_UTF8_SMALL_LENGTH: int
+                        public static readonly CII_UTF8_MEDIUM_LENGTH: int
+                        public static readonly CII_UTF8_LARGE_LENGTH: int
+                        public static readonly CII_UTF16_SMALL_LENGTH: int
+                        public static readonly CII_UTF16_MEDIUM_LENGTH: int
+                        public static readonly CII_UTF16_LARGE_LENGTH: int
+                        public static readonly CII_RA: int
+                        public static readonly CII_EA: int
+                        public static readonly CII_INDEX_SMALL: int
+                        public static readonly CII_INDEX_MEDIUM: int
+                        public static readonly CII_INDEX_LARGE: int
+                        public static readonly CII_INDEX_LARGE_LARGE: int
+                        public static readonly COMMENT_II: int
+                        public static readonly PROCESSING_INSTRUCTION_II: int
+                        public static readonly DOCUMENT_TYPE_DECLARATION_II: int
+                        public static readonly UNEXPANDED_ENTITY_REFERENCE_II: int
+                        public static readonly TERMINATOR_SINGLE: int
+                        public static readonly TERMINATOR_DOUBLE: int
+                        public static readonly AII_INDEX_SMALL: int
+                        public static readonly AII_INDEX_MEDIUM: int
+                        public static readonly AII_INDEX_LARGE: int
+                        public static readonly AII_LITERAL: int
+                        public static readonly AII_TERMINATOR_SINGLE: int
+                        public static readonly AII_TERMINATOR_DOUBLE: int
+                        public static readonly NISTRING_UTF8_SMALL_LENGTH: int
+                        public static readonly NISTRING_UTF8_MEDIUM_LENGTH: int
+                        public static readonly NISTRING_UTF8_LARGE_LENGTH: int
+                        public static readonly NISTRING_UTF16_SMALL_LENGTH: int
+                        public static readonly NISTRING_UTF16_MEDIUM_LENGTH: int
+                        public static readonly NISTRING_UTF16_LARGE_LENGTH: int
+                        public static readonly NISTRING_RA: int
+                        public static readonly NISTRING_EA: int
+                        public static readonly NISTRING_INDEX_SMALL: int
+                        public static readonly NISTRING_INDEX_MEDIUM: int
+                        public static readonly NISTRING_INDEX_LARGE: int
+                        public static readonly NISTRING_EMPTY: int
                         public static DII(arg0: int): int
                         public static EII(arg0: int): int
                         public static AII(arg0: int): int

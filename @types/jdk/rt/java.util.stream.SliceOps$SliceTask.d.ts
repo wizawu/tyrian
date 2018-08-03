@@ -5,7 +5,7 @@ declare namespace java {
                 protected makeChild(arg0: java.util.Spliterator<P_IN>): java.util.stream.SliceOps$SliceTask<P_IN, P_OUT>
                 protected getEmptyResult(): java.util.stream.Node<P_OUT>
                 protected doLeaf(): java.util.stream.Node<P_OUT>
-                public onCompletion(arg0: java.util.concurrent.CountedCompleter<any>): void
+                public onCompletion(arg0: java.util.concurrent.CountedCompleter<any> | java.util.concurrent.CountedCompleter$$Lambda<any>): void
                 protected cancel(): void
                 protected getEmptyResult(): java.lang.Object
                 protected doLeaf(): java.lang.Object

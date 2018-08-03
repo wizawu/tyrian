@@ -2,9 +2,9 @@ declare namespace java {
     namespace rmi {
         namespace server {
             class ObjID implements java.io.Serializable {
-                public static REGISTRY_ID: int
-                public static ACTIVATOR_ID: int
-                public static DGC_ID: int
+                public static readonly REGISTRY_ID: int
+                public static readonly ACTIVATOR_ID: int
+                public static readonly DGC_ID: int
                 public constructor()
                 public constructor(arg0: int)
                 public write(arg0: java.io.ObjectOutput): void

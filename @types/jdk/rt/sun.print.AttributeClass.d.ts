@@ -1,26 +1,26 @@
 declare namespace sun {
     namespace print {
         class AttributeClass {
-            public static TAG_UNSUPPORTED_VALUE: int
-            public static TAG_INT: int
-            public static TAG_BOOL: int
-            public static TAG_ENUM: int
-            public static TAG_OCTET: int
-            public static TAG_DATE: int
-            public static TAG_RESOLUTION: int
-            public static TAG_RANGE_INTEGER: int
-            public static TAG_TEXT_LANGUAGE: int
-            public static TAG_NAME_LANGUAGE: int
-            public static TAG_TEXT_WO_LANGUAGE: int
-            public static TAG_NAME_WO_LANGUAGE: int
-            public static TAG_KEYWORD: int
-            public static TAG_URI: int
-            public static TAG_CHARSET: int
-            public static TAG_NATURALLANGUAGE: int
-            public static TAG_MIME_MEDIATYPE: int
-            public static TAG_MEMBER_ATTRNAME: int
-            public static ATTRIBUTES_CHARSET: sun.print.AttributeClass
-            public static ATTRIBUTES_NATURAL_LANGUAGE: sun.print.AttributeClass
+            public static readonly TAG_UNSUPPORTED_VALUE: int
+            public static readonly TAG_INT: int
+            public static readonly TAG_BOOL: int
+            public static readonly TAG_ENUM: int
+            public static readonly TAG_OCTET: int
+            public static readonly TAG_DATE: int
+            public static readonly TAG_RESOLUTION: int
+            public static readonly TAG_RANGE_INTEGER: int
+            public static readonly TAG_TEXT_LANGUAGE: int
+            public static readonly TAG_NAME_LANGUAGE: int
+            public static readonly TAG_TEXT_WO_LANGUAGE: int
+            public static readonly TAG_NAME_WO_LANGUAGE: int
+            public static readonly TAG_KEYWORD: int
+            public static readonly TAG_URI: int
+            public static readonly TAG_CHARSET: int
+            public static readonly TAG_NATURALLANGUAGE: int
+            public static readonly TAG_MIME_MEDIATYPE: int
+            public static readonly TAG_MEMBER_ATTRNAME: int
+            public static readonly ATTRIBUTES_CHARSET: sun.print.AttributeClass
+            public static readonly ATTRIBUTES_NATURAL_LANGUAGE: sun.print.AttributeClass
             protected constructor(arg0: java.lang.String | string, arg1: int, arg2: java.lang.Object)
             public getType(): byte
             public getLenChars(): char[]

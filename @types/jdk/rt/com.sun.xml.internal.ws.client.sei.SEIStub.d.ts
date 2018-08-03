@@ -6,8 +6,8 @@ declare namespace com {
                     namespace client {
                         namespace sei {
                             class SEIStub extends com.sun.xml.internal.ws.client.Stub implements java.lang.reflect.InvocationHandler {
-                                public seiModel: com.sun.xml.internal.ws.model.SOAPSEIModel
-                                public soapVersion: com.sun.xml.internal.ws.api.SOAPVersion
+                                public readonly seiModel: com.sun.xml.internal.ws.model.SOAPSEIModel
+                                public readonly soapVersion: com.sun.xml.internal.ws.api.SOAPVersion
                                 public constructor(arg0: com.sun.xml.internal.ws.client.WSServiceDelegate, arg1: com.sun.xml.internal.ws.binding.BindingImpl, arg2: com.sun.xml.internal.ws.model.SOAPSEIModel, arg3: com.sun.xml.internal.ws.api.pipe.Tube, arg4: com.sun.xml.internal.ws.api.addressing.WSEndpointReference)
                                 public constructor(arg0: com.sun.xml.internal.ws.api.client.WSPortInfo, arg1: com.sun.xml.internal.ws.binding.BindingImpl, arg2: com.sun.xml.internal.ws.model.SOAPSEIModel, arg3: com.sun.xml.internal.ws.api.addressing.WSEndpointReference)
                                 public getOperationDispatcher(): com.sun.xml.internal.ws.wsdl.OperationDispatcher

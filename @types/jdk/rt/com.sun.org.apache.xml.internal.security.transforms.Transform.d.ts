@@ -16,7 +16,7 @@ declare namespace com {
                                     public static registerDefaultAlgorithms(): void
                                     public getURI(): string
                                     public performTransform(arg0: com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
-                                    public performTransform(arg0: com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput, arg1: java.io.OutputStream): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
+                                    public performTransform(arg0: com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
                                     public getBaseLocalName(): string
                                     public static class: java.lang.Class<any>
                                 }

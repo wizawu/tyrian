@@ -3,15 +3,15 @@ declare namespace jdk {
         namespace internal {
             namespace lookup {
                 class Lookup {
-                    public static MH: jdk.nashorn.internal.lookup.MethodHandleFunctionality
-                    public static EMPTY_GETTER: java.lang.invoke.MethodHandle
-                    public static EMPTY_SETTER: java.lang.invoke.MethodHandle
-                    public static TYPE_ERROR_THROWER_GETTER: java.lang.invoke.MethodHandle
-                    public static TYPE_ERROR_THROWER_SETTER: java.lang.invoke.MethodHandle
-                    public static GET_OBJECT_TYPE: java.lang.invoke.MethodType
-                    public static SET_OBJECT_TYPE: java.lang.invoke.MethodType
-                    public static GET_PRIMITIVE_TYPE: java.lang.invoke.MethodType
-                    public static SET_PRIMITIVE_TYPE: java.lang.invoke.MethodType
+                    public static readonly MH: jdk.nashorn.internal.lookup.MethodHandleFunctionality
+                    public static readonly EMPTY_GETTER: java.lang.invoke.MethodHandle
+                    public static readonly EMPTY_SETTER: java.lang.invoke.MethodHandle
+                    public static readonly TYPE_ERROR_THROWER_GETTER: java.lang.invoke.MethodHandle
+                    public static readonly TYPE_ERROR_THROWER_SETTER: java.lang.invoke.MethodHandle
+                    public static readonly GET_OBJECT_TYPE: java.lang.invoke.MethodType
+                    public static readonly SET_OBJECT_TYPE: java.lang.invoke.MethodType
+                    public static readonly GET_PRIMITIVE_TYPE: java.lang.invoke.MethodType
+                    public static readonly SET_PRIMITIVE_TYPE: java.lang.invoke.MethodType
                     public static emptyGetter(arg0: java.lang.Object): java.lang.Object
                     public static emptySetter(arg0: java.lang.Object, arg1: java.lang.Object): void
                     public static emptyGetter(arg0: java.lang.Class<any>): java.lang.invoke.MethodHandle

@@ -6,14 +6,14 @@ declare namespace com {
                     namespace internal {
                         namespace impl {
                             abstract class XMLScanner implements com.sun.org.apache.xerces.internal.xni.parser.XMLComponent {
-                                protected static NAMESPACES: string
-                                protected static VALIDATION: string
-                                protected static NOTIFY_CHAR_REFS: string
-                                protected static PARSER_SETTINGS: string
-                                protected static SYMBOL_TABLE: string
-                                protected static ERROR_REPORTER: string
-                                protected static ENTITY_MANAGER: string
-                                protected static DEBUG_ATTR_NORMALIZATION: boolean
+                                protected static readonly NAMESPACES: string
+                                protected static readonly VALIDATION: string
+                                protected static readonly NOTIFY_CHAR_REFS: string
+                                protected static readonly PARSER_SETTINGS: string
+                                protected static readonly SYMBOL_TABLE: string
+                                protected static readonly ERROR_REPORTER: string
+                                protected static readonly ENTITY_MANAGER: string
+                                protected static readonly DEBUG_ATTR_NORMALIZATION: boolean
                                 protected attributeValueCache: java.util.ArrayList<com.sun.org.apache.xerces.internal.xni.XMLString>
                                 protected stringBufferCache: java.util.ArrayList<com.sun.org.apache.xerces.internal.util.XMLStringBuffer>
                                 protected fStringBufferIndex: int
@@ -36,14 +36,14 @@ declare namespace com {
                                 protected fCharRefLiteral: string
                                 protected fScanningAttribute: boolean
                                 protected fReportEntity: boolean
-                                protected static fVersionSymbol: string
-                                protected static fEncodingSymbol: string
-                                protected static fStandaloneSymbol: string
-                                protected static fAmpSymbol: string
-                                protected static fLtSymbol: string
-                                protected static fGtSymbol: string
-                                protected static fQuotSymbol: string
-                                protected static fAposSymbol: string
+                                protected static readonly fVersionSymbol: string
+                                protected static readonly fEncodingSymbol: string
+                                protected static readonly fStandaloneSymbol: string
+                                protected static readonly fAmpSymbol: string
+                                protected static readonly fLtSymbol: string
+                                protected static readonly fGtSymbol: string
+                                protected static readonly fQuotSymbol: string
+                                protected static readonly fAposSymbol: string
                                 protected fResourceIdentifier: com.sun.org.apache.xerces.internal.util.XMLResourceIdentifierImpl
                                 public constructor()
                                 public reset(arg0: com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager): void

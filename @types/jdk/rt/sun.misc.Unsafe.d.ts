@@ -1,26 +1,26 @@
 declare namespace sun {
     namespace misc {
         class Unsafe {
-            public static INVALID_FIELD_OFFSET: int
-            public static ARRAY_BOOLEAN_BASE_OFFSET: int
-            public static ARRAY_BYTE_BASE_OFFSET: int
-            public static ARRAY_SHORT_BASE_OFFSET: int
-            public static ARRAY_CHAR_BASE_OFFSET: int
-            public static ARRAY_INT_BASE_OFFSET: int
-            public static ARRAY_LONG_BASE_OFFSET: int
-            public static ARRAY_FLOAT_BASE_OFFSET: int
-            public static ARRAY_DOUBLE_BASE_OFFSET: int
-            public static ARRAY_OBJECT_BASE_OFFSET: int
-            public static ARRAY_BOOLEAN_INDEX_SCALE: int
-            public static ARRAY_BYTE_INDEX_SCALE: int
-            public static ARRAY_SHORT_INDEX_SCALE: int
-            public static ARRAY_CHAR_INDEX_SCALE: int
-            public static ARRAY_INT_INDEX_SCALE: int
-            public static ARRAY_LONG_INDEX_SCALE: int
-            public static ARRAY_FLOAT_INDEX_SCALE: int
-            public static ARRAY_DOUBLE_INDEX_SCALE: int
-            public static ARRAY_OBJECT_INDEX_SCALE: int
-            public static ADDRESS_SIZE: int
+            public static readonly INVALID_FIELD_OFFSET: int
+            public static readonly ARRAY_BOOLEAN_BASE_OFFSET: int
+            public static readonly ARRAY_BYTE_BASE_OFFSET: int
+            public static readonly ARRAY_SHORT_BASE_OFFSET: int
+            public static readonly ARRAY_CHAR_BASE_OFFSET: int
+            public static readonly ARRAY_INT_BASE_OFFSET: int
+            public static readonly ARRAY_LONG_BASE_OFFSET: int
+            public static readonly ARRAY_FLOAT_BASE_OFFSET: int
+            public static readonly ARRAY_DOUBLE_BASE_OFFSET: int
+            public static readonly ARRAY_OBJECT_BASE_OFFSET: int
+            public static readonly ARRAY_BOOLEAN_INDEX_SCALE: int
+            public static readonly ARRAY_BYTE_INDEX_SCALE: int
+            public static readonly ARRAY_SHORT_INDEX_SCALE: int
+            public static readonly ARRAY_CHAR_INDEX_SCALE: int
+            public static readonly ARRAY_INT_INDEX_SCALE: int
+            public static readonly ARRAY_LONG_INDEX_SCALE: int
+            public static readonly ARRAY_FLOAT_INDEX_SCALE: int
+            public static readonly ARRAY_DOUBLE_INDEX_SCALE: int
+            public static readonly ARRAY_OBJECT_INDEX_SCALE: int
+            public static readonly ADDRESS_SIZE: int
             public static getUnsafe(): sun.misc.Unsafe
             public getInt(arg0: java.lang.Object, arg1: long): int
             public putInt(arg0: java.lang.Object, arg1: long, arg2: int): void

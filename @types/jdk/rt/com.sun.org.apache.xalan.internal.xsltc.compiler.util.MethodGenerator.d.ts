@@ -8,7 +8,7 @@ declare namespace com {
                             namespace compiler {
                                 namespace util {
                                     class MethodGenerator extends com.sun.org.apache.bcel.internal.generic.MethodGen implements com.sun.org.apache.xalan.internal.xsltc.compiler.Constants {
-                                        protected static INVALID_INDEX: int
+                                        protected static readonly INVALID_INDEX: int
                                         public constructor(arg0: int, arg1: com.sun.org.apache.bcel.internal.generic.Type, arg2: com.sun.org.apache.bcel.internal.generic.Type[], arg3: java.lang.String[], arg4: java.lang.String | string, arg5: java.lang.String | string, arg6: com.sun.org.apache.bcel.internal.generic.InstructionList, arg7: com.sun.org.apache.bcel.internal.generic.ConstantPoolGen)
                                         public addLocalVariable(arg0: java.lang.String | string, arg1: com.sun.org.apache.bcel.internal.generic.Type, arg2: com.sun.org.apache.bcel.internal.generic.InstructionHandle, arg3: com.sun.org.apache.bcel.internal.generic.InstructionHandle): com.sun.org.apache.bcel.internal.generic.LocalVariableGen
                                         public addLocalVariable2(arg0: java.lang.String | string, arg1: com.sun.org.apache.bcel.internal.generic.Type, arg2: com.sun.org.apache.bcel.internal.generic.InstructionHandle): com.sun.org.apache.bcel.internal.generic.LocalVariableGen

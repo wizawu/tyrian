@@ -6,8 +6,8 @@ declare namespace com {
                     namespace wsdl {
                         namespace writer {
                             class WSDLGenerator {
-                                public constructor(arg0: com.sun.xml.internal.ws.model.AbstractSEIModelImpl, arg1: com.oracle.webservices.internal.api.databinding.WSDLResolver, arg2: com.sun.xml.internal.ws.api.WSBinding, arg3: com.sun.xml.internal.ws.api.server.Container, arg4: java.lang.Class, arg5: boolean, ...arg6: com.sun.xml.internal.ws.api.wsdl.writer.WSDLGeneratorExtension[])
-                                public constructor(arg0: com.sun.xml.internal.ws.model.AbstractSEIModelImpl, arg1: com.oracle.webservices.internal.api.databinding.WSDLResolver, arg2: com.sun.xml.internal.ws.api.WSBinding, arg3: com.sun.xml.internal.ws.api.server.Container, arg4: java.lang.Class, arg5: boolean, arg6: boolean, ...arg7: com.sun.xml.internal.ws.api.wsdl.writer.WSDLGeneratorExtension[])
+                                public constructor(arg0: com.sun.xml.internal.ws.model.AbstractSEIModelImpl | com.sun.xml.internal.ws.model.AbstractSEIModelImpl$$Lambda, arg1: com.oracle.webservices.internal.api.databinding.WSDLResolver, arg2: com.sun.xml.internal.ws.api.WSBinding, arg3: com.sun.xml.internal.ws.api.server.Container, arg4: java.lang.Class, arg5: boolean, ...arg6: com.sun.xml.internal.ws.api.wsdl.writer.WSDLGeneratorExtension[])
+                                public constructor(arg0: com.sun.xml.internal.ws.model.AbstractSEIModelImpl | com.sun.xml.internal.ws.model.AbstractSEIModelImpl$$Lambda, arg1: com.oracle.webservices.internal.api.databinding.WSDLResolver, arg2: com.sun.xml.internal.ws.api.WSBinding, arg3: com.sun.xml.internal.ws.api.server.Container, arg4: java.lang.Class, arg5: boolean, arg6: boolean, ...arg7: com.sun.xml.internal.ws.api.wsdl.writer.WSDLGeneratorExtension[])
                                 public setEndpointAddress(arg0: java.lang.String | string): void
                                 protected mangleName(arg0: java.lang.String | string): string
                                 public doGeneration(): void

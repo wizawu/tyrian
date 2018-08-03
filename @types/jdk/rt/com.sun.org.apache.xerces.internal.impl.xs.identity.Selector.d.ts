@@ -8,8 +8,8 @@ declare namespace com {
                             namespace xs {
                                 namespace identity {
                                     class Selector {
-                                        protected fXPath: com.sun.org.apache.xerces.internal.impl.xs.identity.Selector$XPath
-                                        protected fIdentityConstraint: com.sun.org.apache.xerces.internal.impl.xs.identity.IdentityConstraint
+                                        protected readonly fXPath: com.sun.org.apache.xerces.internal.impl.xs.identity.Selector$XPath
+                                        protected readonly fIdentityConstraint: com.sun.org.apache.xerces.internal.impl.xs.identity.IdentityConstraint
                                         protected fIDConstraint: com.sun.org.apache.xerces.internal.impl.xs.identity.IdentityConstraint
                                         public constructor(arg0: com.sun.org.apache.xerces.internal.impl.xs.identity.Selector$XPath, arg1: com.sun.org.apache.xerces.internal.impl.xs.identity.IdentityConstraint)
                                         public getXPath(): com.sun.org.apache.xerces.internal.impl.xpath.XPath

@@ -5,21 +5,21 @@ declare namespace jdk {
                 namespace regexp {
                     namespace joni {
                         class Option {
-                            public static NONE: int
-                            public static IGNORECASE: int
-                            public static EXTEND: int
-                            public static MULTILINE: int
-                            public static SINGLELINE: int
-                            public static FIND_LONGEST: int
-                            public static FIND_NOT_EMPTY: int
-                            public static NEGATE_SINGLELINE: int
-                            public static DONT_CAPTURE_GROUP: int
-                            public static CAPTURE_GROUP: int
-                            public static NOTBOL: int
-                            public static NOTEOL: int
-                            public static POSIX_REGION: int
-                            public static MAXBIT: int
-                            public static DEFAULT: int
+                            public static readonly NONE: int
+                            public static readonly IGNORECASE: int
+                            public static readonly EXTEND: int
+                            public static readonly MULTILINE: int
+                            public static readonly SINGLELINE: int
+                            public static readonly FIND_LONGEST: int
+                            public static readonly FIND_NOT_EMPTY: int
+                            public static readonly NEGATE_SINGLELINE: int
+                            public static readonly DONT_CAPTURE_GROUP: int
+                            public static readonly CAPTURE_GROUP: int
+                            public static readonly NOTBOL: int
+                            public static readonly NOTEOL: int
+                            public static readonly POSIX_REGION: int
+                            public static readonly MAXBIT: int
+                            public static readonly DEFAULT: int
                             public constructor()
                             public static toString(arg0: int): string
                             public static isIgnoreCase(arg0: int): boolean

@@ -2,20 +2,20 @@ declare namespace java {
     namespace awt {
         namespace image {
             class BufferedImage extends java.awt.Image implements java.awt.image.WritableRenderedImage , java.awt.Transparency {
-                public static TYPE_CUSTOM: int
-                public static TYPE_INT_RGB: int
-                public static TYPE_INT_ARGB: int
-                public static TYPE_INT_ARGB_PRE: int
-                public static TYPE_INT_BGR: int
-                public static TYPE_3BYTE_BGR: int
-                public static TYPE_4BYTE_ABGR: int
-                public static TYPE_4BYTE_ABGR_PRE: int
-                public static TYPE_USHORT_565_RGB: int
-                public static TYPE_USHORT_555_RGB: int
-                public static TYPE_BYTE_GRAY: int
-                public static TYPE_USHORT_GRAY: int
-                public static TYPE_BYTE_BINARY: int
-                public static TYPE_BYTE_INDEXED: int
+                public static readonly TYPE_CUSTOM: int
+                public static readonly TYPE_INT_RGB: int
+                public static readonly TYPE_INT_ARGB: int
+                public static readonly TYPE_INT_ARGB_PRE: int
+                public static readonly TYPE_INT_BGR: int
+                public static readonly TYPE_3BYTE_BGR: int
+                public static readonly TYPE_4BYTE_ABGR: int
+                public static readonly TYPE_4BYTE_ABGR_PRE: int
+                public static readonly TYPE_USHORT_565_RGB: int
+                public static readonly TYPE_USHORT_555_RGB: int
+                public static readonly TYPE_BYTE_GRAY: int
+                public static readonly TYPE_USHORT_GRAY: int
+                public static readonly TYPE_BYTE_BINARY: int
+                public static readonly TYPE_BYTE_INDEXED: int
                 public constructor(arg0: int, arg1: int, arg2: int)
                 public constructor(arg0: int, arg1: int, arg2: int, arg3: java.awt.image.IndexColorModel)
                 public constructor(arg0: java.awt.image.ColorModel, arg1: java.awt.image.WritableRaster, arg2: boolean, arg3: java.util.Hashtable<any, any>)

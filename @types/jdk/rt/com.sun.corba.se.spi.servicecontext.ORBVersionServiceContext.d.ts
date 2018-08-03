@@ -5,7 +5,7 @@ declare namespace com {
                 namespace spi {
                     namespace servicecontext {
                         class ORBVersionServiceContext extends com.sun.corba.se.spi.servicecontext.ServiceContext {
-                            public static SERVICE_CONTEXT_ID: int
+                            public static readonly SERVICE_CONTEXT_ID: int
                             public constructor()
                             public constructor(arg0: com.sun.corba.se.spi.orb.ORBVersion)
                             public constructor(arg0: org.omg.CORBA_2_3.portable.InputStream, arg1: com.sun.corba.se.spi.ior.iiop.GIOPVersion)

@@ -13,6 +13,7 @@ declare namespace sun {
                 protected decodeParams(): void
                 public toString(): string
                 protected paramsToString(): string
+                public static class: java.lang.Class<any>
             }
         }
     }

@@ -4,8 +4,8 @@ declare namespace sun {
             namespace certpath {
                 class X509CertPath extends java.security.cert.CertPath {
                     public constructor(arg0: java.util.List<java.security.cert.Certificate>)
-                    public constructor(arg0: java.io.InputStream)
-                    public constructor(arg0: java.io.InputStream, arg1: java.lang.String | string)
+                    public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
+                    public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.lang.String | string)
                     public getEncoded(): byte[]
                     public getEncoded(arg0: java.lang.String | string): byte[]
                     public static getEncodingsStatic(): java.util.Iterator<java.lang.String>

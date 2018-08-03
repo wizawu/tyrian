@@ -39,12 +39,12 @@ declare namespace com {
                 public updateTime(arg0: java.lang.String | string, arg1: java.sql.Time): void
                 public updateTimestamp(arg0: int, arg1: java.sql.Timestamp): void
                 public updateTimestamp(arg0: java.lang.String | string, arg1: java.sql.Timestamp): void
-                public updateAsciiStream(arg0: int, arg1: java.io.InputStream, arg2: int): void
-                public updateAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: int): void
+                public updateAsciiStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
+                public updateAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
                 public updateCharacterStream(arg0: int, arg1: java.io.Reader, arg2: int): void
                 public updateCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: int): void
-                public updateBinaryStream(arg0: int, arg1: java.io.InputStream, arg2: int): void
-                public updateBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: int): void
+                public updateBinaryStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
+                public updateBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
                 public updateObject(arg0: int, arg1: java.lang.Object): void
                 public updateObject(arg0: java.lang.String | string, arg1: java.lang.Object): void
                 public updateObject(arg0: int, arg1: java.lang.Object, arg2: int): void

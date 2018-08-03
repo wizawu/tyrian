@@ -1,7 +1,7 @@
 declare namespace sun {
     namespace misc {
         class FDBigInteger {
-            public static ZERO: sun.misc.FDBigInteger
+            public static readonly ZERO: sun.misc.FDBigInteger
             public constructor(arg0: long, arg1: char[], arg2: int, arg3: int)
             public static valueOfPow52(arg0: int, arg1: int): sun.misc.FDBigInteger
             public static valueOfMulPow52(arg0: long, arg1: int, arg2: int): sun.misc.FDBigInteger

@@ -3,18 +3,18 @@ declare namespace sun {
         namespace pipe {
             namespace hw {
                 class ContextCapabilities {
-                    public static CAPS_EMPTY: int
-                    public static CAPS_RT_PLAIN_ALPHA: int
-                    public static CAPS_RT_TEXTURE_ALPHA: int
-                    public static CAPS_RT_TEXTURE_OPAQUE: int
-                    public static CAPS_MULTITEXTURE: int
-                    public static CAPS_TEXNONPOW2: int
-                    public static CAPS_TEXNONSQUARE: int
-                    public static CAPS_PS20: int
-                    public static CAPS_PS30: int
-                    protected static FIRST_PRIVATE_CAP: int
-                    protected caps: int
-                    protected adapterId: string
+                    public static readonly CAPS_EMPTY: int
+                    public static readonly CAPS_RT_PLAIN_ALPHA: int
+                    public static readonly CAPS_RT_TEXTURE_ALPHA: int
+                    public static readonly CAPS_RT_TEXTURE_OPAQUE: int
+                    public static readonly CAPS_MULTITEXTURE: int
+                    public static readonly CAPS_TEXNONPOW2: int
+                    public static readonly CAPS_TEXNONSQUARE: int
+                    public static readonly CAPS_PS20: int
+                    public static readonly CAPS_PS30: int
+                    protected static readonly FIRST_PRIVATE_CAP: int
+                    protected readonly caps: int
+                    protected readonly adapterId: string
                     protected constructor(arg0: int, arg1: java.lang.String | string)
                     public getAdapterId(): string
                     public getCaps(): int

@@ -1,17 +1,17 @@
 declare namespace java {
     namespace lang {
         class Double extends java.lang.Number implements java.lang.Comparable<java.lang.Double> {
-            public static POSITIVE_INFINITY: double
-            public static NEGATIVE_INFINITY: double
-            public static NaN: double
-            public static MAX_VALUE: double
-            public static MIN_NORMAL: double
-            public static MIN_VALUE: double
-            public static MAX_EXPONENT: int
-            public static MIN_EXPONENT: int
-            public static SIZE: int
-            public static BYTES: int
-            public static TYPE: java.lang.Class<java.lang.Double>
+            public static readonly POSITIVE_INFINITY: double
+            public static readonly NEGATIVE_INFINITY: double
+            public static readonly NaN: double
+            public static readonly MAX_VALUE: double
+            public static readonly MIN_NORMAL: double
+            public static readonly MIN_VALUE: double
+            public static readonly MAX_EXPONENT: int
+            public static readonly MIN_EXPONENT: int
+            public static readonly SIZE: int
+            public static readonly BYTES: int
+            public static readonly TYPE: java.lang.Class<java.lang.Double>
             public static toString(arg0: double): string
             public static toHexString(arg0: double): string
             public static valueOf(arg0: java.lang.String | string): java.lang.Double

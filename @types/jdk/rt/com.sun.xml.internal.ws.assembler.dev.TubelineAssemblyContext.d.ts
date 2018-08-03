@@ -8,7 +8,7 @@ declare namespace com {
                             interface TubelineAssemblyContext {
                                 getAdaptedTubelineHead(): com.sun.xml.internal.ws.api.pipe.Pipe
                                 getImplementation<T>(arg0: java.lang.Class<T>): T
-                                getTubelineHead(): com.sun.xml.internal.ws.api.pipe.Tube
+                                getTubelineHead<T>(): com.sun.xml.internal.ws.api.pipe.Tube
                             }
                         }
                     }

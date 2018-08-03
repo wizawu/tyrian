@@ -6,11 +6,11 @@ declare namespace com {
                     namespace internal {
                         namespace parsers {
                             class XMLGrammarPreparser {
-                                protected static SYMBOL_TABLE: string
-                                protected static ERROR_REPORTER: string
-                                protected static ERROR_HANDLER: string
-                                protected static ENTITY_RESOLVER: string
-                                protected static GRAMMAR_POOL: string
+                                protected static readonly SYMBOL_TABLE: string
+                                protected static readonly ERROR_REPORTER: string
+                                protected static readonly ERROR_HANDLER: string
+                                protected static readonly ENTITY_RESOLVER: string
+                                protected static readonly GRAMMAR_POOL: string
                                 protected fSymbolTable: com.sun.org.apache.xerces.internal.util.SymbolTable
                                 protected fErrorReporter: com.sun.org.apache.xerces.internal.impl.XMLErrorReporter
                                 protected fEntityResolver: com.sun.org.apache.xerces.internal.xni.parser.XMLEntityResolver

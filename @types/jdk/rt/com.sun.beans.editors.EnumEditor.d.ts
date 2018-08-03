@@ -14,8 +14,8 @@ declare namespace com {
                     public paintValue(arg0: java.awt.Graphics, arg1: java.awt.Rectangle): void
                     public supportsCustomEditor(): boolean
                     public getCustomEditor(): java.awt.Component
-                    public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
-                    public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+                    public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+                    public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
                     public static class: java.lang.Class<any>
                 }
             }

@@ -6,7 +6,7 @@ declare namespace jdk {
                     public G$parse(): java.lang.Object
                     public S$parse(arg0: java.lang.Object): void
                     public G$stringify(): java.lang.Object
-                    public public S$stringify(arg0: java.lang.Object): void
+                    public static public S$stringify(arg0: java.lang.Object): void
                     public getClassName(): string
                     public static class: java.lang.Class<any>
                 }

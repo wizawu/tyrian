@@ -4,9 +4,6 @@ declare namespace java {
             interface AnnotatedArrayType extends java.lang.reflect.AnnotatedType {
                 getAnnotatedGenericComponentType(): java.lang.reflect.AnnotatedType
             }
-            interface AnnotatedArrayType$$Lambda extends java.lang.reflect.AnnotatedType {
-                (): java.lang.reflect.AnnotatedType
-            }
         }
     }
 }

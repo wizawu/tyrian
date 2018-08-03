@@ -5,9 +5,9 @@ declare namespace sun {
                 public static traceflags: int
                 public static tracefile: string
                 public static traceout: java.io.PrintStream
-                public static TRACELOG: int
-                public static TRACETIMESTAMP: int
-                public static TRACECOUNTS: int
+                public static readonly TRACELOG: int
+                public static readonly TRACETIMESTAMP: int
+                public static readonly TRACECOUNTS: int
                 public static makePrimTypeID(): int
                 public static makeUniqueID(arg0: int, arg1: sun.java2d.loops.SurfaceType, arg2: sun.java2d.loops.CompositeType, arg3: sun.java2d.loops.SurfaceType): int
                 protected constructor(arg0: java.lang.String | string, arg1: int, arg2: sun.java2d.loops.SurfaceType, arg3: sun.java2d.loops.CompositeType, arg4: sun.java2d.loops.SurfaceType)
@@ -20,8 +20,8 @@ declare namespace sun {
                 public getCompositeType(): sun.java2d.loops.CompositeType
                 public getDestType(): sun.java2d.loops.SurfaceType
                 public satisfies(arg0: java.lang.String | string, arg1: sun.java2d.loops.SurfaceType, arg2: sun.java2d.loops.CompositeType, arg3: sun.java2d.loops.SurfaceType): boolean
-                public makePrimitive(arg0: sun.java2d.loops.SurfaceType, arg1: sun.java2d.loops.CompositeType, arg2: sun.java2d.loops.SurfaceType): sun.java2d.loops.GraphicsPrimitive
-                public traceWrap(): sun.java2d.loops.GraphicsPrimitive
+                public abstract makePrimitive(arg0: sun.java2d.loops.SurfaceType, arg1: sun.java2d.loops.CompositeType, arg2: sun.java2d.loops.SurfaceType): sun.java2d.loops.GraphicsPrimitive
+                public abstract traceWrap(): sun.java2d.loops.GraphicsPrimitive
                 public static tracingEnabled(): boolean
                 public static tracePrimitive(arg0: java.lang.Object): void
                 protected setupGeneralBinaryOp(arg0: sun.java2d.loops.GraphicsPrimitive$GeneralBinaryOp): void

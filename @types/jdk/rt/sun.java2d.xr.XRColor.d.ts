@@ -2,8 +2,8 @@ declare namespace sun {
     namespace java2d {
         namespace xr {
             class XRColor {
-                public static FULL_ALPHA: sun.java2d.xr.XRColor
-                public static NO_ALPHA: sun.java2d.xr.XRColor
+                public static readonly FULL_ALPHA: sun.java2d.xr.XRColor
+                public static readonly NO_ALPHA: sun.java2d.xr.XRColor
                 public constructor()
                 public constructor(arg0: int, arg1: int, arg2: int, arg3: int)
                 public constructor(arg0: java.awt.Color)

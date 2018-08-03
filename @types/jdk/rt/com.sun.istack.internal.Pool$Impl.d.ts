@@ -6,8 +6,11 @@ declare namespace com {
                     public constructor()
                     public take(): T
                     public recycle(arg0: T): void
-                    protected create(): T
+                    protected abstract create(): T
                     public static class: java.lang.Class<any>
+                }
+                interface Pool$Impl$$Lambda<T> implements com.sun.istack.internal.Pool<T> {
+                    (): T
                 }
             }
         }

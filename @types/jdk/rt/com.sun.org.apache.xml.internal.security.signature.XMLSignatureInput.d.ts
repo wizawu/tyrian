@@ -8,7 +8,7 @@ declare namespace com {
                             namespace signature {
                                 class XMLSignatureInput {
                                     public constructor(arg0: byte[])
-                                    public constructor(arg0: java.io.InputStream)
+                                    public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                                     public constructor(arg0: org.w3c.dom.Node)
                                     public constructor(arg0: java.util.Set<org.w3c.dom.Node>)
                                     public isNeedsToBeExpanded(): boolean
@@ -37,9 +37,9 @@ declare namespace com {
                                     public getSubNode(): org.w3c.dom.Node
                                     public isExcludeComments(): boolean
                                     public setExcludeComments(arg0: boolean): void
-                                    public updateOutputStream(arg0: java.io.OutputStream): void
-                                    public updateOutputStream(arg0: java.io.OutputStream, arg1: boolean): void
-                                    public setOutputStream(arg0: java.io.OutputStream): void
+                                    public updateOutputStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                                    public updateOutputStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: boolean): void
+                                    public setOutputStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                                     public addNodeFilter(arg0: com.sun.org.apache.xml.internal.security.signature.NodeFilter): void
                                     public getNodeFilters(): java.util.List<com.sun.org.apache.xml.internal.security.signature.NodeFilter>
                                     public setNodeSet(arg0: boolean): void

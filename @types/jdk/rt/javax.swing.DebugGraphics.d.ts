@@ -1,10 +1,10 @@
 declare namespace javax {
     namespace swing {
         class DebugGraphics extends java.awt.Graphics {
-            public static LOG_OPTION: int
-            public static FLASH_OPTION: int
-            public static BUFFERED_OPTION: int
-            public static NONE_OPTION: int
+            public static readonly LOG_OPTION: int
+            public static readonly FLASH_OPTION: int
+            public static readonly BUFFERED_OPTION: int
+            public static readonly NONE_OPTION: int
             public constructor()
             public constructor(arg0: java.awt.Graphics, arg1: javax.swing.JComponent)
             public constructor(arg0: java.awt.Graphics)

@@ -7,7 +7,7 @@ declare namespace com {
                         abstract class MonitorBase {
                             public constructor()
                             public createManagedObjectManager(arg0: com.sun.xml.internal.ws.api.server.WSEndpoint): com.sun.org.glassfish.gmbal.ManagedObjectManager
-                            public createManagedObjectManager(arg0: com.sun.xml.internal.ws.client.Stub): com.sun.org.glassfish.gmbal.ManagedObjectManager
+                            public createManagedObjectManager(arg0: com.sun.xml.internal.ws.client.Stub | com.sun.xml.internal.ws.client.Stub$$Lambda): com.sun.org.glassfish.gmbal.ManagedObjectManager
                             public static class: java.lang.Class<any>
                         }
                     }

@@ -8,7 +8,7 @@ declare namespace com {
                             getSPI<S>(arg0: java.lang.Class<S>): S
                         }
                         interface Component$$Lambda {
-                            getSPI<S>(arg0: java.lang.Class<S>): S
+                            (arg0: java.lang.Class<S>): S
                         }
                     }
                 }

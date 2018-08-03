@@ -6,9 +6,6 @@ declare namespace com {
                     interface ManagedData extends java.lang.annotation.Annotation {
                         name(): string
                     }
-                    interface ManagedData$$Lambda extends java.lang.annotation.Annotation {
-                        (): string
-                    }
                 }
             }
         }

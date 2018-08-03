@@ -1,7 +1,7 @@
 declare namespace java {
     namespace io {
         class ObjectOutputStream extends java.io.OutputStream implements java.io.ObjectOutput , java.io.ObjectStreamConstants {
-            public constructor(arg0: java.io.OutputStream)
+            public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda)
             protected constructor()
             public useProtocolVersion(arg0: int): void
             public writeObject(arg0: java.lang.Object): void

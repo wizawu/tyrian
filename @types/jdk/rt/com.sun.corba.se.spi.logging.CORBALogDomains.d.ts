@@ -5,31 +5,31 @@ declare namespace com {
                 namespace spi {
                     namespace logging {
                         abstract class CORBALogDomains {
-                            public static TOP_LEVEL_DOMAIN: string
-                            public static RPC: string
-                            public static RPC_PRESENTATION: string
-                            public static RPC_ENCODING: string
-                            public static RPC_PROTOCOL: string
-                            public static RPC_TRANSPORT: string
-                            public static NAMING: string
-                            public static NAMING_LIFECYCLE: string
-                            public static NAMING_READ: string
-                            public static NAMING_UPDATE: string
-                            public static ORBD: string
-                            public static ORBD_LOCATOR: string
-                            public static ORBD_ACTIVATOR: string
-                            public static ORBD_REPOSITORY: string
-                            public static ORBD_SERVERTOOL: string
-                            public static ORB: string
-                            public static ORB_LIFECYCLE: string
-                            public static ORB_RESOLVER: string
-                            public static OA: string
-                            public static OA_LIFECYCLE: string
-                            public static OA_IOR: string
-                            public static OA_INVOCATION: string
-                            public static RMIIIOP: string
-                            public static RMIIIOP_DELEGATE: string
-                            public static UTIL: string
+                            public static readonly TOP_LEVEL_DOMAIN: string
+                            public static readonly RPC: string
+                            public static readonly RPC_PRESENTATION: string
+                            public static readonly RPC_ENCODING: string
+                            public static readonly RPC_PROTOCOL: string
+                            public static readonly RPC_TRANSPORT: string
+                            public static readonly NAMING: string
+                            public static readonly NAMING_LIFECYCLE: string
+                            public static readonly NAMING_READ: string
+                            public static readonly NAMING_UPDATE: string
+                            public static readonly ORBD: string
+                            public static readonly ORBD_LOCATOR: string
+                            public static readonly ORBD_ACTIVATOR: string
+                            public static readonly ORBD_REPOSITORY: string
+                            public static readonly ORBD_SERVERTOOL: string
+                            public static readonly ORB: string
+                            public static readonly ORB_LIFECYCLE: string
+                            public static readonly ORB_RESOLVER: string
+                            public static readonly OA: string
+                            public static readonly OA_LIFECYCLE: string
+                            public static readonly OA_IOR: string
+                            public static readonly OA_INVOCATION: string
+                            public static readonly RMIIIOP: string
+                            public static readonly RMIIIOP_DELEGATE: string
+                            public static readonly UTIL: string
                             public static class: java.lang.Class<any>
                         }
                     }

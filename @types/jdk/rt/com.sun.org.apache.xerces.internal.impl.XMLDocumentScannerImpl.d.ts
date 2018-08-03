@@ -6,19 +6,19 @@ declare namespace com {
                     namespace internal {
                         namespace impl {
                             class XMLDocumentScannerImpl extends com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl {
-                                protected static SCANNER_STATE_XML_DECL: int
-                                protected static SCANNER_STATE_PROLOG: int
-                                protected static SCANNER_STATE_TRAILING_MISC: int
-                                protected static SCANNER_STATE_DTD_INTERNAL_DECLS: int
-                                protected static SCANNER_STATE_DTD_EXTERNAL: int
-                                protected static SCANNER_STATE_DTD_EXTERNAL_DECLS: int
-                                protected static SCANNER_STATE_NO_SUCH_ELEMENT_EXCEPTION: int
-                                protected static DOCUMENT_SCANNER: string
-                                protected static LOAD_EXTERNAL_DTD: string
-                                protected static DISALLOW_DOCTYPE_DECL_FEATURE: string
-                                protected static DTD_SCANNER: string
-                                protected static VALIDATION_MANAGER: string
-                                protected static NAMESPACE_CONTEXT: string
+                                protected static readonly SCANNER_STATE_XML_DECL: int
+                                protected static readonly SCANNER_STATE_PROLOG: int
+                                protected static readonly SCANNER_STATE_TRAILING_MISC: int
+                                protected static readonly SCANNER_STATE_DTD_INTERNAL_DECLS: int
+                                protected static readonly SCANNER_STATE_DTD_EXTERNAL: int
+                                protected static readonly SCANNER_STATE_DTD_EXTERNAL_DECLS: int
+                                protected static readonly SCANNER_STATE_NO_SUCH_ELEMENT_EXCEPTION: int
+                                protected static readonly DOCUMENT_SCANNER: string
+                                protected static readonly LOAD_EXTERNAL_DTD: string
+                                protected static readonly DISALLOW_DOCTYPE_DECL_FEATURE: string
+                                protected static readonly DTD_SCANNER: string
+                                protected static readonly VALIDATION_MANAGER: string
+                                protected static readonly NAMESPACE_CONTEXT: string
                                 protected fDTDScanner: com.sun.org.apache.xerces.internal.xni.parser.XMLDTDScanner
                                 protected fValidationManager: com.sun.org.apache.xerces.internal.impl.validation.ValidationManager
                                 protected fDTDDecl: com.sun.org.apache.xerces.internal.util.XMLStringBuffer

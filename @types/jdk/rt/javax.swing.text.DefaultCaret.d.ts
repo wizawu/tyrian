@@ -2,9 +2,9 @@ declare namespace javax {
     namespace swing {
         namespace text {
             class DefaultCaret extends java.awt.Rectangle implements javax.swing.text.Caret , java.awt.event.FocusListener , java.awt.event.MouseListener , java.awt.event.MouseMotionListener {
-                public static UPDATE_WHEN_ON_EDT: int
-                public static NEVER_UPDATE: int
-                public static ALWAYS_UPDATE: int
+                public static readonly UPDATE_WHEN_ON_EDT: int
+                public static readonly NEVER_UPDATE: int
+                public static readonly ALWAYS_UPDATE: int
                 protected listenerList: javax.swing.event.EventListenerList
                 protected changeEvent: javax.swing.event.ChangeEvent
                 public constructor()
@@ -29,8 +29,8 @@ declare namespace javax {
                 public paint(arg0: java.awt.Graphics): void
                 public install(arg0: javax.swing.text.JTextComponent): void
                 public deinstall(arg0: javax.swing.text.JTextComponent): void
-                public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
-                public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+                public addChangeListener(arg0: javax.swing.event.ChangeListener): void
+                public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
                 public getChangeListeners(): javax.swing.event.ChangeListener[]
                 protected fireStateChanged(): void
                 public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]

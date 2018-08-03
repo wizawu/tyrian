@@ -33,8 +33,8 @@ declare namespace javax {
             public getValueIsAdjusting(): boolean
             public setValueIsAdjusting(arg0: boolean): void
             public setValues(arg0: int, arg1: int, arg2: int, arg3: int): void
-            public addAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$Lambda): void
-            public removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$Lambda): void
+            public addAdjustmentListener(arg0: java.awt.event.AdjustmentListener): void
+            public removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener): void
             public getAdjustmentListeners(): java.awt.event.AdjustmentListener[]
             protected fireAdjustmentValueChanged(arg0: int, arg1: int, arg2: int): void
             public getMinimumSize(): java.awt.Dimension

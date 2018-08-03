@@ -18,8 +18,8 @@ declare namespace javax {
                     public writeTime(arg0: java.sql.Time): void
                     public writeTimestamp(arg0: java.sql.Timestamp): void
                     public writeCharacterStream(arg0: java.io.Reader): void
-                    public writeAsciiStream(arg0: java.io.InputStream): void
-                    public writeBinaryStream(arg0: java.io.InputStream): void
+                    public writeAsciiStream(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
+                    public writeBinaryStream(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
                     public writeObject(arg0: java.sql.SQLData): void
                     public writeRef(arg0: java.sql.Ref): void
                     public writeBlob(arg0: java.sql.Blob): void

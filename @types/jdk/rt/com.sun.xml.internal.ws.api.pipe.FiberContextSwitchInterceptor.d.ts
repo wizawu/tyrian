@@ -9,7 +9,7 @@ declare namespace com {
                                 execute<R, P>(arg0: com.sun.xml.internal.ws.api.pipe.Fiber, arg1: P, arg2: com.sun.xml.internal.ws.api.pipe.FiberContextSwitchInterceptor$Work<R, P> | com.sun.xml.internal.ws.api.pipe.FiberContextSwitchInterceptor$Work$$Lambda<R, P>): R
                             }
                             interface FiberContextSwitchInterceptor$$Lambda {
-                                execute<R, P>(arg0: com.sun.xml.internal.ws.api.pipe.Fiber, arg1: P, arg2: com.sun.xml.internal.ws.api.pipe.FiberContextSwitchInterceptor$Work<R, P> | com.sun.xml.internal.ws.api.pipe.FiberContextSwitchInterceptor$Work$$Lambda<R, P>): R
+                                (arg0: com.sun.xml.internal.ws.api.pipe.Fiber, arg1: P, arg2: com.sun.xml.internal.ws.api.pipe.FiberContextSwitchInterceptor$Work<R, P> | com.sun.xml.internal.ws.api.pipe.FiberContextSwitchInterceptor$Work$$Lambda<R, P>): R
                             }
                         }
                     }

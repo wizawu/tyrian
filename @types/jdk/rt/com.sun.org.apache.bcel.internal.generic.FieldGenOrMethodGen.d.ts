@@ -20,9 +20,12 @@ declare namespace com {
                                 public removeAttribute(arg0: com.sun.org.apache.bcel.internal.classfile.Attribute): void
                                 public removeAttributes(): void
                                 public getAttributes(): com.sun.org.apache.bcel.internal.classfile.Attribute[]
-                                public getSignature(): string
+                                public abstract getSignature(): string
                                 public clone(): java.lang.Object
                                 public static class: java.lang.Class<any>
+                            }
+                            interface FieldGenOrMethodGen$$Lambda extends com.sun.org.apache.bcel.internal.classfile.AccessFlags implements com.sun.org.apache.bcel.internal.generic.NamedAndTyped , java.lang.Cloneable {
+                                (): string
                             }
                         }
                     }

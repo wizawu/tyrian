@@ -8,7 +8,7 @@ declare namespace com {
                             namespace mime {
                                 namespace util {
                                     class LineInputStream extends java.io.FilterInputStream {
-                                        public constructor(arg0: java.io.InputStream)
+                                        public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                                         public readLine(): string
                                         public static class: java.lang.Class<any>
                                     }

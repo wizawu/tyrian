@@ -6,9 +6,9 @@ declare namespace javax {
                     protected constructor()
                     public paint(arg0: java.awt.Graphics2D, arg1: javax.swing.JComponent, arg2: int, arg3: int): void
                     protected getExtendedCacheKeys(arg0: javax.swing.JComponent): java.lang.Object[]
-                    protected getPaintContext(): javax.swing.plaf.nimbus.AbstractRegionPainter$PaintContext
+                    protected abstract getPaintContext(): javax.swing.plaf.nimbus.AbstractRegionPainter$PaintContext
                     protected configureGraphics(arg0: java.awt.Graphics2D): void
-                    protected doPaint(arg0: java.awt.Graphics2D, arg1: javax.swing.JComponent, arg2: int, arg3: int, arg4: java.lang.Object[]): void
+                    protected abstract doPaint(arg0: java.awt.Graphics2D, arg1: javax.swing.JComponent, arg2: int, arg3: int, arg4: java.lang.Object[]): void
                     protected decodeX(arg0: float): float
                     protected decodeY(arg0: float): float
                     protected decodeAnchorX(arg0: float, arg1: float): float

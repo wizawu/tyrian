@@ -1,11 +1,11 @@
 declare namespace javax {
     namespace swing {
         class JTable extends javax.swing.JComponent implements javax.swing.event.TableModelListener , javax.swing.Scrollable , javax.swing.event.TableColumnModelListener , javax.swing.event.ListSelectionListener , javax.swing.event.CellEditorListener , javax.accessibility.Accessible , javax.swing.event.RowSorterListener {
-            public static AUTO_RESIZE_OFF: int
-            public static AUTO_RESIZE_NEXT_COLUMN: int
-            public static AUTO_RESIZE_SUBSEQUENT_COLUMNS: int
-            public static AUTO_RESIZE_LAST_COLUMN: int
-            public static AUTO_RESIZE_ALL_COLUMNS: int
+            public static readonly AUTO_RESIZE_OFF: int
+            public static readonly AUTO_RESIZE_NEXT_COLUMN: int
+            public static readonly AUTO_RESIZE_SUBSEQUENT_COLUMNS: int
+            public static readonly AUTO_RESIZE_LAST_COLUMN: int
+            public static readonly AUTO_RESIZE_ALL_COLUMNS: int
             protected dataModel: javax.swing.table.TableModel
             protected columnModel: javax.swing.table.TableColumnModel
             protected selectionModel: javax.swing.ListSelectionModel
@@ -64,7 +64,7 @@ declare namespace javax {
             public createDefaultColumnsFromModel(): void
             public setDefaultRenderer(arg0: java.lang.Class<any>, arg1: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$Lambda): void
             public getDefaultRenderer(arg0: java.lang.Class<any>): javax.swing.table.TableCellRenderer
-            public setDefaultEditor(arg0: java.lang.Class<any>, arg1: javax.swing.table.TableCellEditor | javax.swing.table.TableCellEditor$$Lambda): void
+            public setDefaultEditor(arg0: java.lang.Class<any>, arg1: javax.swing.table.TableCellEditor): void
             public getDefaultEditor(arg0: java.lang.Class<any>): javax.swing.table.TableCellEditor
             public setDragEnabled(arg0: boolean): void
             public getDragEnabled(): boolean
@@ -174,13 +174,13 @@ declare namespace javax {
             protected createDefaultTableHeader(): javax.swing.table.JTableHeader
             protected resizeAndRepaint(): void
             public getCellEditor(): javax.swing.table.TableCellEditor
-            public setCellEditor(arg0: javax.swing.table.TableCellEditor | javax.swing.table.TableCellEditor$$Lambda): void
+            public setCellEditor(arg0: javax.swing.table.TableCellEditor): void
             public setEditingColumn(arg0: int): void
             public setEditingRow(arg0: int): void
             public getCellRenderer(arg0: int, arg1: int): javax.swing.table.TableCellRenderer
             public prepareRenderer(arg0: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$Lambda, arg1: int, arg2: int): java.awt.Component
             public getCellEditor(arg0: int, arg1: int): javax.swing.table.TableCellEditor
-            public prepareEditor(arg0: javax.swing.table.TableCellEditor | javax.swing.table.TableCellEditor$$Lambda, arg1: int, arg2: int): java.awt.Component
+            public prepareEditor(arg0: javax.swing.table.TableCellEditor, arg1: int, arg2: int): java.awt.Component
             public removeEditor(): void
             protected paramString(): string
             public print(): boolean

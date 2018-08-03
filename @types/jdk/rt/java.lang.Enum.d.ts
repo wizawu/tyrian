@@ -11,8 +11,8 @@ declare namespace java {
             public compareTo(arg0: E): int
             public getDeclaringClass(): java.lang.Class<E>
             public static valueOf<T extends java.lang.Enum<T>>(arg0: java.lang.Class<T>, arg1: java.lang.String | string): T
-            protected finalize(): void
-            public compareTo(arg0: java.lang.Object): int
+            protected finalize<T extends java.lang.Enum<T>>(): void
+            public compareTo<T extends java.lang.Enum<T>>(arg0: java.lang.Object): int
             public static class: java.lang.Class<any>
         }
     }

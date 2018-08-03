@@ -7,8 +7,8 @@ declare namespace com {
                         namespace runtime {
                             namespace reflect {
                                 class TransducedAccessor$CompositeTransducedAccessorImpl<BeanT, ValueT> extends com.sun.xml.internal.bind.v2.runtime.reflect.TransducedAccessor<BeanT> {
-                                    protected xducer: com.sun.xml.internal.bind.v2.runtime.Transducer<ValueT>
-                                    protected acc: com.sun.xml.internal.bind.v2.runtime.reflect.Accessor<BeanT, ValueT>
+                                    protected readonly xducer: com.sun.xml.internal.bind.v2.runtime.Transducer<ValueT>
+                                    protected readonly acc: com.sun.xml.internal.bind.v2.runtime.reflect.Accessor<BeanT, ValueT>
                                     public constructor(arg0: com.sun.xml.internal.bind.v2.runtime.JAXBContextImpl, arg1: com.sun.xml.internal.bind.v2.runtime.Transducer<ValueT>, arg2: com.sun.xml.internal.bind.v2.runtime.reflect.Accessor<BeanT, ValueT>)
                                     public print(arg0: BeanT): java.lang.CharSequence
                                     public parse(arg0: BeanT, arg1: java.lang.CharSequence): void

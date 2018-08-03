@@ -5,24 +5,24 @@ declare namespace jdk {
                 namespace asm {
                     namespace commons {
                         class GeneratorAdapter extends jdk.internal.org.objectweb.asm.commons.LocalVariablesSorter {
-                            public static ADD: int
-                            public static SUB: int
-                            public static MUL: int
-                            public static DIV: int
-                            public static REM: int
-                            public static NEG: int
-                            public static SHL: int
-                            public static SHR: int
-                            public static USHR: int
-                            public static AND: int
-                            public static OR: int
-                            public static XOR: int
-                            public static EQ: int
-                            public static NE: int
-                            public static LT: int
-                            public static GE: int
-                            public static GT: int
-                            public static LE: int
+                            public static readonly ADD: int
+                            public static readonly SUB: int
+                            public static readonly MUL: int
+                            public static readonly DIV: int
+                            public static readonly REM: int
+                            public static readonly NEG: int
+                            public static readonly SHL: int
+                            public static readonly SHR: int
+                            public static readonly USHR: int
+                            public static readonly AND: int
+                            public static readonly OR: int
+                            public static readonly XOR: int
+                            public static readonly EQ: int
+                            public static readonly NE: int
+                            public static readonly LT: int
+                            public static readonly GE: int
+                            public static readonly GT: int
+                            public static readonly LE: int
                             public constructor(arg0: jdk.internal.org.objectweb.asm.MethodVisitor, arg1: int, arg2: java.lang.String | string, arg3: java.lang.String | string)
                             protected constructor(arg0: int, arg1: jdk.internal.org.objectweb.asm.MethodVisitor, arg2: int, arg3: java.lang.String | string, arg4: java.lang.String | string)
                             public constructor(arg0: int, arg1: jdk.internal.org.objectweb.asm.commons.Method, arg2: jdk.internal.org.objectweb.asm.MethodVisitor)

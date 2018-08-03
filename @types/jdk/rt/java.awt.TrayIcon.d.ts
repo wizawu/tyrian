@@ -20,8 +20,8 @@ declare namespace java {
             public getMouseMotionListeners(): java.awt.event.MouseMotionListener[]
             public getActionCommand(): string
             public setActionCommand(arg0: java.lang.String | string): void
-            public addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
-            public removeActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
+            public addActionListener(arg0: java.awt.event.ActionListener): void
+            public removeActionListener(arg0: java.awt.event.ActionListener): void
             public getActionListeners(): java.awt.event.ActionListener[]
             public displayMessage(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.awt.TrayIcon$MessageType): void
             public getSize(): java.awt.Dimension

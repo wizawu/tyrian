@@ -12,11 +12,14 @@ declare namespace sun {
             public toString(): string
             public values(): java.util.Collection<any>
             protected writeReplace(): java.lang.Object
-            protected getCompositeData(): javax.management.openmbean.CompositeData
+            protected abstract getCompositeData(): javax.management.openmbean.CompositeData
             protected static isTypeMatched(arg0: javax.management.openmbean.CompositeType, arg1: javax.management.openmbean.CompositeType): boolean
             protected static isTypeMatched(arg0: javax.management.openmbean.TabularType, arg1: javax.management.openmbean.TabularType): boolean
             protected static isTypeMatched(arg0: javax.management.openmbean.ArrayType<any>, arg1: javax.management.openmbean.ArrayType<any>): boolean
             public static class: java.lang.Class<any>
+        }
+        interface LazyCompositeData$$Lambda implements javax.management.openmbean.CompositeData , java.io.Serializable {
+            (): javax.management.openmbean.CompositeData
         }
     }
 }

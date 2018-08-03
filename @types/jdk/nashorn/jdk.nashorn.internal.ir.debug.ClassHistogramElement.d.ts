@@ -4,9 +4,9 @@ declare namespace jdk {
             namespace ir {
                 namespace debug {
                     class ClassHistogramElement {
-                        public static COMPARE_INSTANCES: java.util.Comparator<jdk.nashorn.internal.ir.debug.ClassHistogramElement>
-                        public static COMPARE_BYTES: java.util.Comparator<jdk.nashorn.internal.ir.debug.ClassHistogramElement>
-                        public static COMPARE_CLASSNAMES: java.util.Comparator<jdk.nashorn.internal.ir.debug.ClassHistogramElement>
+                        public static readonly COMPARE_INSTANCES: java.util.Comparator<jdk.nashorn.internal.ir.debug.ClassHistogramElement>
+                        public static readonly COMPARE_BYTES: java.util.Comparator<jdk.nashorn.internal.ir.debug.ClassHistogramElement>
+                        public static readonly COMPARE_CLASSNAMES: java.util.Comparator<jdk.nashorn.internal.ir.debug.ClassHistogramElement>
                         public constructor(arg0: java.lang.Class<any>)
                         public addInstance(arg0: long): void
                         public getBytes(): long

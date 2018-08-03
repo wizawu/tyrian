@@ -4,9 +4,9 @@ declare namespace sun {
             abstract class InputMethodManager {
                 public constructor()
                 public static getInstance(): sun.awt.im.InputMethodManager
-                public getTriggerMenuString(): string
-                public notifyChangeRequest(arg0: java.awt.Component): void
-                public notifyChangeRequestByHotKey(arg0: java.awt.Component): void
+                public abstract getTriggerMenuString(): string
+                public abstract notifyChangeRequest(arg0: java.awt.Component): void
+                public abstract notifyChangeRequestByHotKey(arg0: java.awt.Component): void
                 public static class: java.lang.Class<any>
             }
         }

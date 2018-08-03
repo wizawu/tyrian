@@ -2,9 +2,9 @@ declare namespace sun {
     namespace security {
         namespace x509 {
             class PolicyInformation {
-                public static NAME: string
-                public static ID: string
-                public static QUALIFIERS: string
+                public static readonly NAME: string
+                public static readonly ID: string
+                public static readonly QUALIFIERS: string
                 public constructor(arg0: sun.security.x509.CertificatePolicyId, arg1: java.util.Set<java.security.cert.PolicyQualifierInfo>)
                 public constructor(arg0: sun.security.util.DerValue)
                 public equals(arg0: java.lang.Object): boolean

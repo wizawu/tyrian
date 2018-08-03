@@ -5,7 +5,7 @@ declare namespace jdk {
                 namespace regexp {
                     namespace joni {
                         class BitStatus {
-                            public static BIT_STATUS_BITS_NUM: int
+                            public static readonly BIT_STATUS_BITS_NUM: int
                             public static bsClear(): int
                             public static bsAll(): int
                             public static bsAt(arg0: int, arg1: int): boolean

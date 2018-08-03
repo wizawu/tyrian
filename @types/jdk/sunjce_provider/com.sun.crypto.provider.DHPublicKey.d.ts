@@ -11,6 +11,7 @@ declare namespace com {
                     public toString(): string
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
+                    public static class: java.lang.Class<any>
                 }
             }
         }

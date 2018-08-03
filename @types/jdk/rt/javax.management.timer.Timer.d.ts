@@ -2,11 +2,11 @@ declare namespace javax {
     namespace management {
         namespace timer {
             class Timer extends javax.management.NotificationBroadcasterSupport implements javax.management.timer.TimerMBean , javax.management.MBeanRegistration {
-                public static ONE_SECOND: long
-                public static ONE_MINUTE: long
-                public static ONE_HOUR: long
-                public static ONE_DAY: long
-                public static ONE_WEEK: long
+                public static readonly ONE_SECOND: long
+                public static readonly ONE_MINUTE: long
+                public static readonly ONE_HOUR: long
+                public static readonly ONE_DAY: long
+                public static readonly ONE_WEEK: long
                 public constructor()
                 public preRegister(arg0: javax.management.MBeanServer, arg1: javax.management.ObjectName): javax.management.ObjectName
                 public postRegister(arg0: java.lang.Boolean | boolean): void

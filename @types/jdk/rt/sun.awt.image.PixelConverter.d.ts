@@ -2,7 +2,7 @@ declare namespace sun {
     namespace awt {
         namespace image {
             class PixelConverter {
-                public static instance: sun.awt.image.PixelConverter
+                public static readonly instance: sun.awt.image.PixelConverter
                 protected alphaMask: int
                 protected constructor()
                 public rgbToPixel(arg0: int, arg1: java.awt.image.ColorModel): int

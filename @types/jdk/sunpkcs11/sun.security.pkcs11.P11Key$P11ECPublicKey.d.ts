@@ -6,6 +6,7 @@ declare namespace sun {
                 public getW(): java.security.spec.ECPoint
                 public getParams(): java.security.spec.ECParameterSpec
                 public toString(): string
+                public static class: java.lang.Class<any>
             }
         }
     }

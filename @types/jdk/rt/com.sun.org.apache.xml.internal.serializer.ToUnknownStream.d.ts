@@ -16,7 +16,7 @@ declare namespace com {
                                 public serialize(arg0: org.w3c.dom.Node): void
                                 public setEscaping(arg0: boolean): boolean
                                 public setOutputFormat(arg0: java.util.Properties): void
-                                public setOutputStream(arg0: java.io.OutputStream): void
+                                public setOutputStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                                 public setWriter(arg0: java.io.Writer): void
                                 public addAttribute(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.String | string): void
                                 public addAttribute(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.String | string, arg5: boolean): void

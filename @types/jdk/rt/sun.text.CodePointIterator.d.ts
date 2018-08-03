@@ -1,13 +1,13 @@
 declare namespace sun {
     namespace text {
         abstract class CodePointIterator {
-            public static DONE: int
+            public static readonly DONE: int
             public constructor()
-            public setToStart(): void
-            public setToLimit(): void
-            public next(): int
-            public prev(): int
-            public charIndex(): int
+            public abstract setToStart(): void
+            public abstract setToLimit(): void
+            public abstract next(): int
+            public abstract prev(): int
+            public abstract charIndex(): int
             public static create(arg0: char[]): sun.text.CodePointIterator
             public static create(arg0: char[], arg1: int, arg2: int): sun.text.CodePointIterator
             public static create(arg0: java.lang.CharSequence): sun.text.CodePointIterator

@@ -4,7 +4,7 @@ declare namespace sun {
             namespace http {
                 class KeepAliveStream extends sun.net.www.MeteredStream implements sun.net.www.http.Hurryable {
                     protected queuedForCleanup: boolean
-                    public constructor(arg0: java.io.InputStream, arg1: sun.net.ProgressSource, arg2: long, arg3: sun.net.www.http.HttpClient)
+                    public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: sun.net.ProgressSource, arg2: long, arg3: sun.net.www.http.HttpClient)
                     public close(): void
                     public markSupported(): boolean
                     public mark(arg0: int): void

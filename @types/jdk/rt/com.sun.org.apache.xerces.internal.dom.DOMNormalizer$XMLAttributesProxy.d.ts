@@ -9,7 +9,7 @@ declare namespace com {
                                 protected fAttributes: com.sun.org.apache.xerces.internal.dom.AttributeMap
                                 protected fDocument: com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl
                                 protected fElement: com.sun.org.apache.xerces.internal.dom.ElementImpl
-                                protected fAugmentations: java.util.Vector
+                                protected readonly fAugmentations: java.util.Vector
                                 protected constructor(arg0: com.sun.org.apache.xerces.internal.dom.DOMNormalizer)
                                 public setAttributes(arg0: com.sun.org.apache.xerces.internal.dom.AttributeMap, arg1: com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl, arg2: com.sun.org.apache.xerces.internal.dom.ElementImpl): void
                                 public addAttribute(arg0: com.sun.org.apache.xerces.internal.xni.QName, arg1: java.lang.String | string, arg2: java.lang.String | string): int

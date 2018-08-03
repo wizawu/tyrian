@@ -5,7 +5,7 @@ declare namespace java {
                 protected constructor()
                 protected constructor(arg0: java.rmi.server.RemoteRef)
                 public static getClientHost(): string
-                public static setLog(arg0: java.io.OutputStream): void
+                public static setLog(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                 public static getLog(): java.io.PrintStream
                 public static class: java.lang.Class<any>
             }

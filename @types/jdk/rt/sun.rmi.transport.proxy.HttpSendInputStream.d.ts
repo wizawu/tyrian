@@ -3,7 +3,7 @@ declare namespace sun {
         namespace transport {
             namespace proxy {
                 class HttpSendInputStream extends java.io.FilterInputStream {
-                    public constructor(arg0: java.io.InputStream, arg1: sun.rmi.transport.proxy.HttpSendSocket)
+                    public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: sun.rmi.transport.proxy.HttpSendSocket)
                     public deactivate(): void
                     public read(): int
                     public read(arg0: byte[], arg1: int, arg2: int): int

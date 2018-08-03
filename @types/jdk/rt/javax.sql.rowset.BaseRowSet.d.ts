@@ -2,9 +2,9 @@ declare namespace javax {
     namespace sql {
         namespace rowset {
             abstract class BaseRowSet implements java.io.Serializable , java.lang.Cloneable {
-                public static UNICODE_STREAM_PARAM: int
-                public static BINARY_STREAM_PARAM: int
-                public static ASCII_STREAM_PARAM: int
+                public static readonly UNICODE_STREAM_PARAM: int
+                public static readonly BINARY_STREAM_PARAM: int
+                public static readonly ASCII_STREAM_PARAM: int
                 protected binaryStream: java.io.InputStream
                 protected unicodeStream: java.io.InputStream
                 protected asciiStream: java.io.InputStream
@@ -65,11 +65,11 @@ declare namespace javax {
                 public setDate(arg0: int, arg1: java.sql.Date): void
                 public setTime(arg0: int, arg1: java.sql.Time): void
                 public setTimestamp(arg0: int, arg1: java.sql.Timestamp): void
-                public setAsciiStream(arg0: int, arg1: java.io.InputStream, arg2: int): void
-                public setAsciiStream(arg0: int, arg1: java.io.InputStream): void
-                public setBinaryStream(arg0: int, arg1: java.io.InputStream, arg2: int): void
-                public setBinaryStream(arg0: int, arg1: java.io.InputStream): void
-                public setUnicodeStream(arg0: int, arg1: java.io.InputStream, arg2: int): void
+                public setAsciiStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
+                public setAsciiStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
+                public setBinaryStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
+                public setBinaryStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
+                public setUnicodeStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
                 public setCharacterStream(arg0: int, arg1: java.io.Reader, arg2: int): void
                 public setCharacterStream(arg0: int, arg1: java.io.Reader): void
                 public setObject(arg0: int, arg1: java.lang.Object, arg2: int, arg3: int): void
@@ -97,21 +97,21 @@ declare namespace javax {
                 public setString(arg0: java.lang.String | string, arg1: java.lang.String | string): void
                 public setBytes(arg0: java.lang.String | string, arg1: byte[]): void
                 public setTimestamp(arg0: java.lang.String | string, arg1: java.sql.Timestamp): void
-                public setAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: int): void
-                public setBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: int): void
+                public setAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
+                public setBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
                 public setCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: int): void
-                public setAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream): void
-                public setBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream): void
+                public setAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
+                public setBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
                 public setCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader): void
                 public setNCharacterStream(arg0: int, arg1: java.io.Reader): void
                 public setObject(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: int, arg3: int): void
                 public setObject(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: int): void
                 public setObject(arg0: java.lang.String | string, arg1: java.lang.Object): void
-                public setBlob(arg0: int, arg1: java.io.InputStream, arg2: long): void
-                public setBlob(arg0: int, arg1: java.io.InputStream): void
-                public setBlob(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: long): void
+                public setBlob(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
+                public setBlob(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
+                public setBlob(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
                 public setBlob(arg0: java.lang.String | string, arg1: java.sql.Blob): void
-                public setBlob(arg0: java.lang.String | string, arg1: java.io.InputStream): void
+                public setBlob(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
                 public setClob(arg0: int, arg1: java.io.Reader, arg2: long): void
                 public setClob(arg0: int, arg1: java.io.Reader): void
                 public setClob(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: long): void

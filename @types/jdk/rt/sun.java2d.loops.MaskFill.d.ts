@@ -2,10 +2,10 @@ declare namespace sun {
     namespace java2d {
         namespace loops {
             class MaskFill extends sun.java2d.loops.GraphicsPrimitive {
-                public static methodSignature: string
-                public static fillPgramSignature: string
-                public static drawPgramSignature: string
-                public static primTypeID: int
+                public static readonly methodSignature: string
+                public static readonly fillPgramSignature: string
+                public static readonly drawPgramSignature: string
+                public static readonly primTypeID: int
                 public static locate(arg0: sun.java2d.loops.SurfaceType, arg1: sun.java2d.loops.CompositeType, arg2: sun.java2d.loops.SurfaceType): sun.java2d.loops.MaskFill
                 public static locatePrim(arg0: sun.java2d.loops.SurfaceType, arg1: sun.java2d.loops.CompositeType, arg2: sun.java2d.loops.SurfaceType): sun.java2d.loops.MaskFill
                 public static getFromCache(arg0: sun.java2d.loops.SurfaceType, arg1: sun.java2d.loops.CompositeType, arg2: sun.java2d.loops.SurfaceType): sun.java2d.loops.MaskFill

@@ -5,12 +5,12 @@ declare namespace jdk {
                 namespace regexp {
                     namespace joni {
                         abstract class StackMachine extends jdk.nashorn.internal.runtime.regexp.joni.Matcher implements jdk.nashorn.internal.runtime.regexp.joni.constants.StackType {
-                            protected static INVALID_INDEX: int
+                            protected static readonly INVALID_INDEX: int
                             protected stack: jdk.nashorn.internal.runtime.regexp.joni.StackEntry[]
                             protected stk: int
-                            protected repeatStk: int[]
-                            protected memStartStk: int
-                            protected memEndStk: int
+                            protected readonly repeatStk: int[]
+                            protected readonly memStartStk: int
+                            protected readonly memEndStk: int
                             protected constructor(arg0: jdk.nashorn.internal.runtime.regexp.joni.Regex, arg1: char[], arg2: int, arg3: int)
                             protected init(): void
                             protected ensure1(): jdk.nashorn.internal.runtime.regexp.joni.StackEntry

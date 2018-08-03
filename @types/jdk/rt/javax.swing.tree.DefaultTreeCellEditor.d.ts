@@ -16,7 +16,7 @@ declare namespace javax {
                 protected editingIcon: javax.swing.Icon
                 protected font: java.awt.Font
                 public constructor(arg0: javax.swing.JTree, arg1: javax.swing.tree.DefaultTreeCellRenderer)
-                public constructor(arg0: javax.swing.JTree, arg1: javax.swing.tree.DefaultTreeCellRenderer, arg2: javax.swing.tree.TreeCellEditor | javax.swing.tree.TreeCellEditor$$Lambda)
+                public constructor(arg0: javax.swing.JTree, arg1: javax.swing.tree.DefaultTreeCellRenderer, arg2: javax.swing.tree.TreeCellEditor)
                 public setBorderSelectionColor(arg0: java.awt.Color): void
                 public getBorderSelectionColor(): java.awt.Color
                 public setFont(arg0: java.awt.Font): void

@@ -2,75 +2,75 @@ declare namespace sun {
     namespace awt {
         namespace X11 {
             class XAtom {
-                public static XA_PRIMARY: long
-                public static XA_SECONDARY: long
-                public static XA_ARC: long
-                public static XA_ATOM: long
-                public static XA_BITMAP: long
-                public static XA_CARDINAL: long
-                public static XA_COLORMAP: long
-                public static XA_CURSOR: long
-                public static XA_CUT_BUFFER0: long
-                public static XA_CUT_BUFFER1: long
-                public static XA_CUT_BUFFER2: long
-                public static XA_CUT_BUFFER3: long
-                public static XA_CUT_BUFFER4: long
-                public static XA_CUT_BUFFER5: long
-                public static XA_CUT_BUFFER6: long
-                public static XA_CUT_BUFFER7: long
-                public static XA_DRAWABLE: long
-                public static XA_FONT: long
-                public static XA_INTEGER: long
-                public static XA_PIXMAP: long
-                public static XA_POINT: long
-                public static XA_RECTANGLE: long
-                public static XA_RESOURCE_MANAGER: long
-                public static XA_RGB_COLOR_MAP: long
-                public static XA_RGB_BEST_MAP: long
-                public static XA_RGB_BLUE_MAP: long
-                public static XA_RGB_DEFAULT_MAP: long
-                public static XA_RGB_GRAY_MAP: long
-                public static XA_RGB_GREEN_MAP: long
-                public static XA_RGB_RED_MAP: long
-                public static XA_STRING: long
-                public static XA_VISUALID: long
-                public static XA_WINDOW: long
-                public static XA_WM_COMMAND: long
-                public static XA_WM_HINTS: long
-                public static XA_WM_CLIENT_MACHINE: long
-                public static XA_WM_ICON_NAME: long
-                public static XA_WM_ICON_SIZE: long
-                public static XA_WM_NAME: long
-                public static XA_WM_NORMAL_HINTS: long
-                public static XA_WM_SIZE_HINTS: long
-                public static XA_WM_ZOOM_HINTS: long
-                public static XA_MIN_SPACE: long
-                public static XA_NORM_SPACE: long
-                public static XA_MAX_SPACE: long
-                public static XA_END_SPACE: long
-                public static XA_SUPERSCRIPT_X: long
-                public static XA_SUPERSCRIPT_Y: long
-                public static XA_SUBSCRIPT_X: long
-                public static XA_SUBSCRIPT_Y: long
-                public static XA_UNDERLINE_POSITION: long
-                public static XA_UNDERLINE_THICKNESS: long
-                public static XA_STRIKEOUT_ASCENT: long
-                public static XA_STRIKEOUT_DESCENT: long
-                public static XA_ITALIC_ANGLE: long
-                public static XA_X_HEIGHT: long
-                public static XA_QUAD_WIDTH: long
-                public static XA_WEIGHT: long
-                public static XA_POINT_SIZE: long
-                public static XA_RESOLUTION: long
-                public static XA_COPYRIGHT: long
-                public static XA_NOTICE: long
-                public static XA_FONT_NAME: long
-                public static XA_FAMILY_NAME: long
-                public static XA_FULL_NAME: long
-                public static XA_CAP_HEIGHT: long
-                public static XA_WM_CLASS: long
-                public static XA_WM_TRANSIENT_FOR: long
-                public static XA_LAST_PREDEFINED: long
+                public static readonly XA_PRIMARY: long
+                public static readonly XA_SECONDARY: long
+                public static readonly XA_ARC: long
+                public static readonly XA_ATOM: long
+                public static readonly XA_BITMAP: long
+                public static readonly XA_CARDINAL: long
+                public static readonly XA_COLORMAP: long
+                public static readonly XA_CURSOR: long
+                public static readonly XA_CUT_BUFFER0: long
+                public static readonly XA_CUT_BUFFER1: long
+                public static readonly XA_CUT_BUFFER2: long
+                public static readonly XA_CUT_BUFFER3: long
+                public static readonly XA_CUT_BUFFER4: long
+                public static readonly XA_CUT_BUFFER5: long
+                public static readonly XA_CUT_BUFFER6: long
+                public static readonly XA_CUT_BUFFER7: long
+                public static readonly XA_DRAWABLE: long
+                public static readonly XA_FONT: long
+                public static readonly XA_INTEGER: long
+                public static readonly XA_PIXMAP: long
+                public static readonly XA_POINT: long
+                public static readonly XA_RECTANGLE: long
+                public static readonly XA_RESOURCE_MANAGER: long
+                public static readonly XA_RGB_COLOR_MAP: long
+                public static readonly XA_RGB_BEST_MAP: long
+                public static readonly XA_RGB_BLUE_MAP: long
+                public static readonly XA_RGB_DEFAULT_MAP: long
+                public static readonly XA_RGB_GRAY_MAP: long
+                public static readonly XA_RGB_GREEN_MAP: long
+                public static readonly XA_RGB_RED_MAP: long
+                public static readonly XA_STRING: long
+                public static readonly XA_VISUALID: long
+                public static readonly XA_WINDOW: long
+                public static readonly XA_WM_COMMAND: long
+                public static readonly XA_WM_HINTS: long
+                public static readonly XA_WM_CLIENT_MACHINE: long
+                public static readonly XA_WM_ICON_NAME: long
+                public static readonly XA_WM_ICON_SIZE: long
+                public static readonly XA_WM_NAME: long
+                public static readonly XA_WM_NORMAL_HINTS: long
+                public static readonly XA_WM_SIZE_HINTS: long
+                public static readonly XA_WM_ZOOM_HINTS: long
+                public static readonly XA_MIN_SPACE: long
+                public static readonly XA_NORM_SPACE: long
+                public static readonly XA_MAX_SPACE: long
+                public static readonly XA_END_SPACE: long
+                public static readonly XA_SUPERSCRIPT_X: long
+                public static readonly XA_SUPERSCRIPT_Y: long
+                public static readonly XA_SUBSCRIPT_X: long
+                public static readonly XA_SUBSCRIPT_Y: long
+                public static readonly XA_UNDERLINE_POSITION: long
+                public static readonly XA_UNDERLINE_THICKNESS: long
+                public static readonly XA_STRIKEOUT_ASCENT: long
+                public static readonly XA_STRIKEOUT_DESCENT: long
+                public static readonly XA_ITALIC_ANGLE: long
+                public static readonly XA_X_HEIGHT: long
+                public static readonly XA_QUAD_WIDTH: long
+                public static readonly XA_WEIGHT: long
+                public static readonly XA_POINT_SIZE: long
+                public static readonly XA_RESOLUTION: long
+                public static readonly XA_COPYRIGHT: long
+                public static readonly XA_NOTICE: long
+                public static readonly XA_FONT_NAME: long
+                public static readonly XA_FAMILY_NAME: long
+                public static readonly XA_FULL_NAME: long
+                public static readonly XA_CAP_HEIGHT: long
+                public static readonly XA_WM_CLASS: long
+                public static readonly XA_WM_TRANSIENT_FOR: long
+                public static readonly XA_LAST_PREDEFINED: long
                 public static get(arg0: java.lang.String | string): sun.awt.X11.XAtom
                 public getName(): string
                 public toString(): string

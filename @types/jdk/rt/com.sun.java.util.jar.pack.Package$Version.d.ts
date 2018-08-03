@@ -5,8 +5,8 @@ declare namespace com {
                 namespace jar {
                     namespace pack {
                         class Package$Version {
-                            public major: short
-                            public minor: short
+                            public readonly major: short
+                            public readonly minor: short
                             public toString(): string
                             public equals(arg0: java.lang.Object): boolean
                             public intValue(): int

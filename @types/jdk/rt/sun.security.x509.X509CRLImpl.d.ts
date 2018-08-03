@@ -4,13 +4,13 @@ declare namespace sun {
             class X509CRLImpl extends java.security.cert.X509CRL implements sun.security.util.DerEncoder {
                 public constructor(arg0: byte[])
                 public constructor(arg0: sun.security.util.DerValue)
-                public constructor(arg0: java.io.InputStream)
+                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                 public constructor(arg0: sun.security.x509.X500Name, arg1: java.util.Date, arg2: java.util.Date)
                 public constructor(arg0: sun.security.x509.X500Name, arg1: java.util.Date, arg2: java.util.Date, arg3: java.security.cert.X509CRLEntry[])
                 public constructor(arg0: sun.security.x509.X500Name, arg1: java.util.Date, arg2: java.util.Date, arg3: java.security.cert.X509CRLEntry[], arg4: sun.security.x509.CRLExtensions)
                 public getEncodedInternal(): byte[]
                 public getEncoded(): byte[]
-                public encodeInfo(arg0: java.io.OutputStream): void
+                public encodeInfo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                 public verify(arg0: java.security.PublicKey): void
                 public verify(arg0: java.security.PublicKey, arg1: java.lang.String | string): void
                 public verify(arg0: java.security.PublicKey, arg1: java.security.Provider): void
@@ -50,7 +50,7 @@ declare namespace sun {
                 public static getIssuerX500Principal(arg0: java.security.cert.X509CRL): javax.security.auth.x500.X500Principal
                 public static getEncodedInternal(arg0: java.security.cert.X509CRL): byte[]
                 public static toImpl(arg0: java.security.cert.X509CRL): sun.security.x509.X509CRLImpl
-                public derEncode(arg0: java.io.OutputStream): void
+                public derEncode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                 public static class: java.lang.Class<any>
             }
         }

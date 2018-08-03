@@ -3,8 +3,11 @@ declare namespace sun {
         namespace annotation {
             abstract class ExceptionProxy implements java.io.Serializable {
                 public constructor()
-                protected generateException(): java.lang.RuntimeException
+                protected abstract generateException(): java.lang.RuntimeException
                 public static class: java.lang.Class<any>
+            }
+            interface ExceptionProxy$$Lambda implements java.io.Serializable {
+                (): java.lang.RuntimeException
             }
         }
     }

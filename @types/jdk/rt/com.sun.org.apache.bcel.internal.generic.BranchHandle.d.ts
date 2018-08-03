@@ -12,7 +12,7 @@ declare namespace com {
                                 public setTarget(arg0: com.sun.org.apache.bcel.internal.generic.InstructionHandle): void
                                 public updateTarget(arg0: com.sun.org.apache.bcel.internal.generic.InstructionHandle, arg1: com.sun.org.apache.bcel.internal.generic.InstructionHandle): void
                                 public getTarget(): com.sun.org.apache.bcel.internal.generic.InstructionHandle
-                                public setInstruction(arg0: com.sun.org.apache.bcel.internal.generic.Instruction): void
+                                public setInstruction(arg0: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda): void
                                 public static class: java.lang.Class<any>
                             }
                         }

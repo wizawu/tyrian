@@ -6,7 +6,7 @@ declare namespace com {
                     namespace api {
                         namespace client {
                             class SelectOptimalEncodingFeature extends javax.xml.ws.WebServiceFeature {
-                                public static ID: string
+                                public static readonly ID: string
                                 public constructor()
                                 public constructor(arg0: boolean)
                                 public getID(): string

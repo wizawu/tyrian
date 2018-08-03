@@ -27,14 +27,14 @@ declare namespace com {
                                 public get_servant_manager(): org.omg.PortableServer.ServantManager
                                 public set_servant_manager(arg0: org.omg.PortableServer.ServantManager): void
                                 public get_servant(): org.omg.PortableServer.Servant
-                                public set_servant(arg0: org.omg.PortableServer.Servant): void
-                                public activate_object(arg0: org.omg.PortableServer.Servant): byte[]
-                                public activate_object_with_id(arg0: byte[], arg1: org.omg.PortableServer.Servant): void
+                                public set_servant(arg0: org.omg.PortableServer.Servant | org.omg.PortableServer.Servant$$Lambda): void
+                                public activate_object(arg0: org.omg.PortableServer.Servant | org.omg.PortableServer.Servant$$Lambda): byte[]
+                                public activate_object_with_id(arg0: byte[], arg1: org.omg.PortableServer.Servant | org.omg.PortableServer.Servant$$Lambda): void
                                 public deactivate_object(arg0: byte[]): void
                                 public create_reference(arg0: java.lang.String | string): org.omg.CORBA.Object
                                 public create_reference_with_id(arg0: byte[], arg1: java.lang.String | string): org.omg.CORBA.Object
-                                public servant_to_id(arg0: org.omg.PortableServer.Servant): byte[]
-                                public servant_to_reference(arg0: org.omg.PortableServer.Servant): org.omg.CORBA.Object
+                                public servant_to_id(arg0: org.omg.PortableServer.Servant | org.omg.PortableServer.Servant$$Lambda): byte[]
+                                public servant_to_reference(arg0: org.omg.PortableServer.Servant | org.omg.PortableServer.Servant$$Lambda): org.omg.CORBA.Object
                                 public reference_to_servant(arg0: org.omg.CORBA.Object): org.omg.PortableServer.Servant
                                 public reference_to_id(arg0: org.omg.CORBA.Object): byte[]
                                 public id_to_servant(arg0: byte[]): org.omg.PortableServer.Servant

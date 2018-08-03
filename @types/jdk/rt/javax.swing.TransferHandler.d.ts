@@ -1,11 +1,11 @@
 declare namespace javax {
     namespace swing {
         class TransferHandler implements java.io.Serializable {
-            public static NONE: int
-            public static COPY: int
-            public static MOVE: int
-            public static COPY_OR_MOVE: int
-            public static LINK: int
+            public static readonly NONE: int
+            public static readonly COPY: int
+            public static readonly MOVE: int
+            public static readonly COPY_OR_MOVE: int
+            public static readonly LINK: int
             public static getCutAction(): javax.swing.Action
             public static getCopyAction(): javax.swing.Action
             public static getPasteAction(): javax.swing.Action

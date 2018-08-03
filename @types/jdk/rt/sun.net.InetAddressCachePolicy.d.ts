@@ -1,9 +1,9 @@
 declare namespace sun {
     namespace net {
         class InetAddressCachePolicy {
-            public static FOREVER: int
-            public static NEVER: int
-            public static DEFAULT_POSITIVE: int
+            public static readonly FOREVER: int
+            public static readonly NEVER: int
+            public static readonly DEFAULT_POSITIVE: int
             public constructor()
             public static get(): int
             public static getNegative(): int

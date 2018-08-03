@@ -2,10 +2,10 @@ declare namespace java {
     namespace awt {
         namespace event {
             class FocusEvent extends java.awt.event.ComponentEvent {
-                public static FOCUS_FIRST: int
-                public static FOCUS_LAST: int
-                public static FOCUS_GAINED: int
-                public static FOCUS_LOST: int
+                public static readonly FOCUS_FIRST: int
+                public static readonly FOCUS_LAST: int
+                public static readonly FOCUS_GAINED: int
+                public static readonly FOCUS_LOST: int
                 public constructor(arg0: java.awt.Component, arg1: int, arg2: boolean, arg3: java.awt.Component)
                 public constructor(arg0: java.awt.Component, arg1: int, arg2: boolean)
                 public constructor(arg0: java.awt.Component, arg1: int)

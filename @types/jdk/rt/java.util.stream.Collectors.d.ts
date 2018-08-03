@@ -5,9 +5,9 @@ declare namespace java {
                 public static toCollection<T, C extends java.util.Collection<T>>(arg0: java.util.function$.Supplier<C> | java.util.function$.Supplier$$Lambda<C>): java.util.stream.Collector<T, any, C>
                 public static toList<T>(): java.util.stream.Collector<T, any, java.util.List<T>>
                 public static toSet<T>(): java.util.stream.Collector<T, any, java.util.Set<T>>
-                public static joining(): java.util.stream.Collector<java.lang.CharSequence, any, java.lang.String>
-                public static joining(arg0: java.lang.CharSequence): java.util.stream.Collector<java.lang.CharSequence, any, java.lang.String>
-                public static joining(arg0: java.lang.CharSequence, arg1: java.lang.CharSequence, arg2: java.lang.CharSequence): java.util.stream.Collector<java.lang.CharSequence, any, java.lang.String>
+                public static joining<T>(): java.util.stream.Collector<java.lang.CharSequence, any, java.lang.String>
+                public static joining<T>(arg0: java.lang.CharSequence): java.util.stream.Collector<java.lang.CharSequence, any, java.lang.String>
+                public static joining<T>(arg0: java.lang.CharSequence, arg1: java.lang.CharSequence, arg2: java.lang.CharSequence): java.util.stream.Collector<java.lang.CharSequence, any, java.lang.String>
                 public static mapping<T, U, A, R>(arg0: java.util.function$.Function<T, U>, arg1: java.util.stream.Collector<U, A, R>): java.util.stream.Collector<T, any, R>
                 public static collectingAndThen<T, A, R, RR>(arg0: java.util.stream.Collector<T, A, R>, arg1: java.util.function$.Function<R, RR>): java.util.stream.Collector<T, A, RR>
                 public static counting<T>(): java.util.stream.Collector<T, any, java.lang.Long>

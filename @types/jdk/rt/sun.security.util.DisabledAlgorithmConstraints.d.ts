@@ -2,9 +2,9 @@ declare namespace sun {
     namespace security {
         namespace util {
             class DisabledAlgorithmConstraints extends sun.security.util.AbstractAlgorithmConstraints {
-                public static PROPERTY_CERTPATH_DISABLED_ALGS: string
-                public static PROPERTY_TLS_DISABLED_ALGS: string
-                public static PROPERTY_JAR_DISABLED_ALGS: string
+                public static readonly PROPERTY_CERTPATH_DISABLED_ALGS: string
+                public static readonly PROPERTY_TLS_DISABLED_ALGS: string
+                public static readonly PROPERTY_JAR_DISABLED_ALGS: string
                 public constructor(arg0: java.lang.String | string)
                 public constructor(arg0: java.lang.String | string, arg1: sun.security.util.AlgorithmDecomposer)
                 public permits(arg0: java.util.Set<java.security.CryptoPrimitive>, arg1: java.lang.String | string, arg2: java.security.AlgorithmParameters): boolean

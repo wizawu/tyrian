@@ -5,9 +5,6 @@ declare namespace org {
                 interface ViewCSS extends org.w3c.dom.views.AbstractView {
                     getComputedStyle(arg0: org.w3c.dom.Element, arg1: java.lang.String | string): org.w3c.dom.css.CSSStyleDeclaration
                 }
-                interface ViewCSS$$Lambda extends org.w3c.dom.views.AbstractView {
-                    (arg0: org.w3c.dom.Element, arg1: java.lang.String | string): org.w3c.dom.css.CSSStyleDeclaration
-                }
             }
         }
     }

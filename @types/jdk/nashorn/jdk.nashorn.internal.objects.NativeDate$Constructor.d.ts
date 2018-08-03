@@ -8,7 +8,7 @@ declare namespace jdk {
                     public G$UTC(): java.lang.Object
                     public S$UTC(arg0: java.lang.Object): void
                     public G$now(): java.lang.Object
-                    public public S$now(arg0: java.lang.Object): void
+                    public static public S$now(arg0: java.lang.Object): void
                     public static class: java.lang.Class<any>
                 }
             }

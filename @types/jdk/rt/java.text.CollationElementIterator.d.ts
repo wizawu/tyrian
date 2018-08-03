@@ -1,7 +1,7 @@
 declare namespace java {
     namespace text {
         class CollationElementIterator {
-            public static NULLORDER: int
+            public static readonly NULLORDER: int
             public reset(): void
             public next(): int
             public previous(): int

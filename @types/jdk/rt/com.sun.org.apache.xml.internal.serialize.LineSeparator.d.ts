@@ -6,10 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace serialize {
                             class LineSeparator {
-                                public static Unix: string
-                                public static Windows: string
-                                public static Macintosh: string
-                                public static Web: string
+                                public static readonly Unix: string
+                                public static readonly Windows: string
+                                public static readonly Macintosh: string
+                                public static readonly Web: string
                                 public constructor()
                                 public static class: java.lang.Class<any>
                             }

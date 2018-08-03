@@ -22,7 +22,7 @@ declare namespace com {
                             public hasCallables(): boolean
                             public getCallables(): com.sun.java.util.jar.pack.Attribute$Layout$Element[]
                             public getEntryPoint(): com.sun.java.util.jar.pack.Attribute$Layout$Element[]
-                            public parse(arg0: com.sun.java.util.jar.pack.Attribute$Holder, arg1: byte[], arg2: int, arg3: int, arg4: com.sun.java.util.jar.pack.Attribute$ValueStream): void
+                            public parse(arg0: com.sun.java.util.jar.pack.Attribute$Holder | com.sun.java.util.jar.pack.Attribute$Holder$$Lambda, arg1: byte[], arg2: int, arg3: int, arg4: com.sun.java.util.jar.pack.Attribute$ValueStream): void
                             public unparse(arg0: com.sun.java.util.jar.pack.Attribute$ValueStream, arg1: java.io.ByteArrayOutputStream): java.lang.Object
                             public layoutForClassVersion(arg0: com.sun.java.util.jar.pack.Package$Version): string
                             public compareTo(arg0: java.lang.Object): int

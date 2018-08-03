@@ -1,227 +1,227 @@
 declare namespace java {
     namespace lang {
         class Character$UnicodeBlock extends java.lang.Character$Subset {
-            public static BASIC_LATIN: java.lang.Character$UnicodeBlock
-            public static LATIN_1_SUPPLEMENT: java.lang.Character$UnicodeBlock
-            public static LATIN_EXTENDED_A: java.lang.Character$UnicodeBlock
-            public static LATIN_EXTENDED_B: java.lang.Character$UnicodeBlock
-            public static IPA_EXTENSIONS: java.lang.Character$UnicodeBlock
-            public static SPACING_MODIFIER_LETTERS: java.lang.Character$UnicodeBlock
-            public static COMBINING_DIACRITICAL_MARKS: java.lang.Character$UnicodeBlock
-            public static GREEK: java.lang.Character$UnicodeBlock
-            public static CYRILLIC: java.lang.Character$UnicodeBlock
-            public static ARMENIAN: java.lang.Character$UnicodeBlock
-            public static HEBREW: java.lang.Character$UnicodeBlock
-            public static ARABIC: java.lang.Character$UnicodeBlock
-            public static DEVANAGARI: java.lang.Character$UnicodeBlock
-            public static BENGALI: java.lang.Character$UnicodeBlock
-            public static GURMUKHI: java.lang.Character$UnicodeBlock
-            public static GUJARATI: java.lang.Character$UnicodeBlock
-            public static ORIYA: java.lang.Character$UnicodeBlock
-            public static TAMIL: java.lang.Character$UnicodeBlock
-            public static TELUGU: java.lang.Character$UnicodeBlock
-            public static KANNADA: java.lang.Character$UnicodeBlock
-            public static MALAYALAM: java.lang.Character$UnicodeBlock
-            public static THAI: java.lang.Character$UnicodeBlock
-            public static LAO: java.lang.Character$UnicodeBlock
-            public static TIBETAN: java.lang.Character$UnicodeBlock
-            public static GEORGIAN: java.lang.Character$UnicodeBlock
-            public static HANGUL_JAMO: java.lang.Character$UnicodeBlock
-            public static LATIN_EXTENDED_ADDITIONAL: java.lang.Character$UnicodeBlock
-            public static GREEK_EXTENDED: java.lang.Character$UnicodeBlock
-            public static GENERAL_PUNCTUATION: java.lang.Character$UnicodeBlock
-            public static SUPERSCRIPTS_AND_SUBSCRIPTS: java.lang.Character$UnicodeBlock
-            public static CURRENCY_SYMBOLS: java.lang.Character$UnicodeBlock
-            public static COMBINING_MARKS_FOR_SYMBOLS: java.lang.Character$UnicodeBlock
-            public static LETTERLIKE_SYMBOLS: java.lang.Character$UnicodeBlock
-            public static NUMBER_FORMS: java.lang.Character$UnicodeBlock
-            public static ARROWS: java.lang.Character$UnicodeBlock
-            public static MATHEMATICAL_OPERATORS: java.lang.Character$UnicodeBlock
-            public static MISCELLANEOUS_TECHNICAL: java.lang.Character$UnicodeBlock
-            public static CONTROL_PICTURES: java.lang.Character$UnicodeBlock
-            public static OPTICAL_CHARACTER_RECOGNITION: java.lang.Character$UnicodeBlock
-            public static ENCLOSED_ALPHANUMERICS: java.lang.Character$UnicodeBlock
-            public static BOX_DRAWING: java.lang.Character$UnicodeBlock
-            public static BLOCK_ELEMENTS: java.lang.Character$UnicodeBlock
-            public static GEOMETRIC_SHAPES: java.lang.Character$UnicodeBlock
-            public static MISCELLANEOUS_SYMBOLS: java.lang.Character$UnicodeBlock
-            public static DINGBATS: java.lang.Character$UnicodeBlock
-            public static CJK_SYMBOLS_AND_PUNCTUATION: java.lang.Character$UnicodeBlock
-            public static HIRAGANA: java.lang.Character$UnicodeBlock
-            public static KATAKANA: java.lang.Character$UnicodeBlock
-            public static BOPOMOFO: java.lang.Character$UnicodeBlock
-            public static HANGUL_COMPATIBILITY_JAMO: java.lang.Character$UnicodeBlock
-            public static KANBUN: java.lang.Character$UnicodeBlock
-            public static ENCLOSED_CJK_LETTERS_AND_MONTHS: java.lang.Character$UnicodeBlock
-            public static CJK_COMPATIBILITY: java.lang.Character$UnicodeBlock
-            public static CJK_UNIFIED_IDEOGRAPHS: java.lang.Character$UnicodeBlock
-            public static HANGUL_SYLLABLES: java.lang.Character$UnicodeBlock
-            public static PRIVATE_USE_AREA: java.lang.Character$UnicodeBlock
-            public static CJK_COMPATIBILITY_IDEOGRAPHS: java.lang.Character$UnicodeBlock
-            public static ALPHABETIC_PRESENTATION_FORMS: java.lang.Character$UnicodeBlock
-            public static ARABIC_PRESENTATION_FORMS_A: java.lang.Character$UnicodeBlock
-            public static COMBINING_HALF_MARKS: java.lang.Character$UnicodeBlock
-            public static CJK_COMPATIBILITY_FORMS: java.lang.Character$UnicodeBlock
-            public static SMALL_FORM_VARIANTS: java.lang.Character$UnicodeBlock
-            public static ARABIC_PRESENTATION_FORMS_B: java.lang.Character$UnicodeBlock
-            public static HALFWIDTH_AND_FULLWIDTH_FORMS: java.lang.Character$UnicodeBlock
-            public static SPECIALS: java.lang.Character$UnicodeBlock
-            public static SURROGATES_AREA: java.lang.Character$UnicodeBlock
-            public static SYRIAC: java.lang.Character$UnicodeBlock
-            public static THAANA: java.lang.Character$UnicodeBlock
-            public static SINHALA: java.lang.Character$UnicodeBlock
-            public static MYANMAR: java.lang.Character$UnicodeBlock
-            public static ETHIOPIC: java.lang.Character$UnicodeBlock
-            public static CHEROKEE: java.lang.Character$UnicodeBlock
-            public static UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS: java.lang.Character$UnicodeBlock
-            public static OGHAM: java.lang.Character$UnicodeBlock
-            public static RUNIC: java.lang.Character$UnicodeBlock
-            public static KHMER: java.lang.Character$UnicodeBlock
-            public static MONGOLIAN: java.lang.Character$UnicodeBlock
-            public static BRAILLE_PATTERNS: java.lang.Character$UnicodeBlock
-            public static CJK_RADICALS_SUPPLEMENT: java.lang.Character$UnicodeBlock
-            public static KANGXI_RADICALS: java.lang.Character$UnicodeBlock
-            public static IDEOGRAPHIC_DESCRIPTION_CHARACTERS: java.lang.Character$UnicodeBlock
-            public static BOPOMOFO_EXTENDED: java.lang.Character$UnicodeBlock
-            public static CJK_UNIFIED_IDEOGRAPHS_EXTENSION_A: java.lang.Character$UnicodeBlock
-            public static YI_SYLLABLES: java.lang.Character$UnicodeBlock
-            public static YI_RADICALS: java.lang.Character$UnicodeBlock
-            public static CYRILLIC_SUPPLEMENTARY: java.lang.Character$UnicodeBlock
-            public static TAGALOG: java.lang.Character$UnicodeBlock
-            public static HANUNOO: java.lang.Character$UnicodeBlock
-            public static BUHID: java.lang.Character$UnicodeBlock
-            public static TAGBANWA: java.lang.Character$UnicodeBlock
-            public static LIMBU: java.lang.Character$UnicodeBlock
-            public static TAI_LE: java.lang.Character$UnicodeBlock
-            public static KHMER_SYMBOLS: java.lang.Character$UnicodeBlock
-            public static PHONETIC_EXTENSIONS: java.lang.Character$UnicodeBlock
-            public static MISCELLANEOUS_MATHEMATICAL_SYMBOLS_A: java.lang.Character$UnicodeBlock
-            public static SUPPLEMENTAL_ARROWS_A: java.lang.Character$UnicodeBlock
-            public static SUPPLEMENTAL_ARROWS_B: java.lang.Character$UnicodeBlock
-            public static MISCELLANEOUS_MATHEMATICAL_SYMBOLS_B: java.lang.Character$UnicodeBlock
-            public static SUPPLEMENTAL_MATHEMATICAL_OPERATORS: java.lang.Character$UnicodeBlock
-            public static MISCELLANEOUS_SYMBOLS_AND_ARROWS: java.lang.Character$UnicodeBlock
-            public static KATAKANA_PHONETIC_EXTENSIONS: java.lang.Character$UnicodeBlock
-            public static YIJING_HEXAGRAM_SYMBOLS: java.lang.Character$UnicodeBlock
-            public static VARIATION_SELECTORS: java.lang.Character$UnicodeBlock
-            public static LINEAR_B_SYLLABARY: java.lang.Character$UnicodeBlock
-            public static LINEAR_B_IDEOGRAMS: java.lang.Character$UnicodeBlock
-            public static AEGEAN_NUMBERS: java.lang.Character$UnicodeBlock
-            public static OLD_ITALIC: java.lang.Character$UnicodeBlock
-            public static GOTHIC: java.lang.Character$UnicodeBlock
-            public static UGARITIC: java.lang.Character$UnicodeBlock
-            public static DESERET: java.lang.Character$UnicodeBlock
-            public static SHAVIAN: java.lang.Character$UnicodeBlock
-            public static OSMANYA: java.lang.Character$UnicodeBlock
-            public static CYPRIOT_SYLLABARY: java.lang.Character$UnicodeBlock
-            public static BYZANTINE_MUSICAL_SYMBOLS: java.lang.Character$UnicodeBlock
-            public static MUSICAL_SYMBOLS: java.lang.Character$UnicodeBlock
-            public static TAI_XUAN_JING_SYMBOLS: java.lang.Character$UnicodeBlock
-            public static MATHEMATICAL_ALPHANUMERIC_SYMBOLS: java.lang.Character$UnicodeBlock
-            public static CJK_UNIFIED_IDEOGRAPHS_EXTENSION_B: java.lang.Character$UnicodeBlock
-            public static CJK_COMPATIBILITY_IDEOGRAPHS_SUPPLEMENT: java.lang.Character$UnicodeBlock
-            public static TAGS: java.lang.Character$UnicodeBlock
-            public static VARIATION_SELECTORS_SUPPLEMENT: java.lang.Character$UnicodeBlock
-            public static SUPPLEMENTARY_PRIVATE_USE_AREA_A: java.lang.Character$UnicodeBlock
-            public static SUPPLEMENTARY_PRIVATE_USE_AREA_B: java.lang.Character$UnicodeBlock
-            public static HIGH_SURROGATES: java.lang.Character$UnicodeBlock
-            public static HIGH_PRIVATE_USE_SURROGATES: java.lang.Character$UnicodeBlock
-            public static LOW_SURROGATES: java.lang.Character$UnicodeBlock
-            public static ARABIC_SUPPLEMENT: java.lang.Character$UnicodeBlock
-            public static NKO: java.lang.Character$UnicodeBlock
-            public static SAMARITAN: java.lang.Character$UnicodeBlock
-            public static MANDAIC: java.lang.Character$UnicodeBlock
-            public static ETHIOPIC_SUPPLEMENT: java.lang.Character$UnicodeBlock
-            public static UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS_EXTENDED: java.lang.Character$UnicodeBlock
-            public static NEW_TAI_LUE: java.lang.Character$UnicodeBlock
-            public static BUGINESE: java.lang.Character$UnicodeBlock
-            public static TAI_THAM: java.lang.Character$UnicodeBlock
-            public static BALINESE: java.lang.Character$UnicodeBlock
-            public static SUNDANESE: java.lang.Character$UnicodeBlock
-            public static BATAK: java.lang.Character$UnicodeBlock
-            public static LEPCHA: java.lang.Character$UnicodeBlock
-            public static OL_CHIKI: java.lang.Character$UnicodeBlock
-            public static VEDIC_EXTENSIONS: java.lang.Character$UnicodeBlock
-            public static PHONETIC_EXTENSIONS_SUPPLEMENT: java.lang.Character$UnicodeBlock
-            public static COMBINING_DIACRITICAL_MARKS_SUPPLEMENT: java.lang.Character$UnicodeBlock
-            public static GLAGOLITIC: java.lang.Character$UnicodeBlock
-            public static LATIN_EXTENDED_C: java.lang.Character$UnicodeBlock
-            public static COPTIC: java.lang.Character$UnicodeBlock
-            public static GEORGIAN_SUPPLEMENT: java.lang.Character$UnicodeBlock
-            public static TIFINAGH: java.lang.Character$UnicodeBlock
-            public static ETHIOPIC_EXTENDED: java.lang.Character$UnicodeBlock
-            public static CYRILLIC_EXTENDED_A: java.lang.Character$UnicodeBlock
-            public static SUPPLEMENTAL_PUNCTUATION: java.lang.Character$UnicodeBlock
-            public static CJK_STROKES: java.lang.Character$UnicodeBlock
-            public static LISU: java.lang.Character$UnicodeBlock
-            public static VAI: java.lang.Character$UnicodeBlock
-            public static CYRILLIC_EXTENDED_B: java.lang.Character$UnicodeBlock
-            public static BAMUM: java.lang.Character$UnicodeBlock
-            public static MODIFIER_TONE_LETTERS: java.lang.Character$UnicodeBlock
-            public static LATIN_EXTENDED_D: java.lang.Character$UnicodeBlock
-            public static SYLOTI_NAGRI: java.lang.Character$UnicodeBlock
-            public static COMMON_INDIC_NUMBER_FORMS: java.lang.Character$UnicodeBlock
-            public static PHAGS_PA: java.lang.Character$UnicodeBlock
-            public static SAURASHTRA: java.lang.Character$UnicodeBlock
-            public static DEVANAGARI_EXTENDED: java.lang.Character$UnicodeBlock
-            public static KAYAH_LI: java.lang.Character$UnicodeBlock
-            public static REJANG: java.lang.Character$UnicodeBlock
-            public static HANGUL_JAMO_EXTENDED_A: java.lang.Character$UnicodeBlock
-            public static JAVANESE: java.lang.Character$UnicodeBlock
-            public static CHAM: java.lang.Character$UnicodeBlock
-            public static MYANMAR_EXTENDED_A: java.lang.Character$UnicodeBlock
-            public static TAI_VIET: java.lang.Character$UnicodeBlock
-            public static ETHIOPIC_EXTENDED_A: java.lang.Character$UnicodeBlock
-            public static MEETEI_MAYEK: java.lang.Character$UnicodeBlock
-            public static HANGUL_JAMO_EXTENDED_B: java.lang.Character$UnicodeBlock
-            public static VERTICAL_FORMS: java.lang.Character$UnicodeBlock
-            public static ANCIENT_GREEK_NUMBERS: java.lang.Character$UnicodeBlock
-            public static ANCIENT_SYMBOLS: java.lang.Character$UnicodeBlock
-            public static PHAISTOS_DISC: java.lang.Character$UnicodeBlock
-            public static LYCIAN: java.lang.Character$UnicodeBlock
-            public static CARIAN: java.lang.Character$UnicodeBlock
-            public static OLD_PERSIAN: java.lang.Character$UnicodeBlock
-            public static IMPERIAL_ARAMAIC: java.lang.Character$UnicodeBlock
-            public static PHOENICIAN: java.lang.Character$UnicodeBlock
-            public static LYDIAN: java.lang.Character$UnicodeBlock
-            public static KHAROSHTHI: java.lang.Character$UnicodeBlock
-            public static OLD_SOUTH_ARABIAN: java.lang.Character$UnicodeBlock
-            public static AVESTAN: java.lang.Character$UnicodeBlock
-            public static INSCRIPTIONAL_PARTHIAN: java.lang.Character$UnicodeBlock
-            public static INSCRIPTIONAL_PAHLAVI: java.lang.Character$UnicodeBlock
-            public static OLD_TURKIC: java.lang.Character$UnicodeBlock
-            public static RUMI_NUMERAL_SYMBOLS: java.lang.Character$UnicodeBlock
-            public static BRAHMI: java.lang.Character$UnicodeBlock
-            public static KAITHI: java.lang.Character$UnicodeBlock
-            public static CUNEIFORM: java.lang.Character$UnicodeBlock
-            public static CUNEIFORM_NUMBERS_AND_PUNCTUATION: java.lang.Character$UnicodeBlock
-            public static EGYPTIAN_HIEROGLYPHS: java.lang.Character$UnicodeBlock
-            public static BAMUM_SUPPLEMENT: java.lang.Character$UnicodeBlock
-            public static KANA_SUPPLEMENT: java.lang.Character$UnicodeBlock
-            public static ANCIENT_GREEK_MUSICAL_NOTATION: java.lang.Character$UnicodeBlock
-            public static COUNTING_ROD_NUMERALS: java.lang.Character$UnicodeBlock
-            public static MAHJONG_TILES: java.lang.Character$UnicodeBlock
-            public static DOMINO_TILES: java.lang.Character$UnicodeBlock
-            public static PLAYING_CARDS: java.lang.Character$UnicodeBlock
-            public static ENCLOSED_ALPHANUMERIC_SUPPLEMENT: java.lang.Character$UnicodeBlock
-            public static ENCLOSED_IDEOGRAPHIC_SUPPLEMENT: java.lang.Character$UnicodeBlock
-            public static MISCELLANEOUS_SYMBOLS_AND_PICTOGRAPHS: java.lang.Character$UnicodeBlock
-            public static EMOTICONS: java.lang.Character$UnicodeBlock
-            public static TRANSPORT_AND_MAP_SYMBOLS: java.lang.Character$UnicodeBlock
-            public static ALCHEMICAL_SYMBOLS: java.lang.Character$UnicodeBlock
-            public static CJK_UNIFIED_IDEOGRAPHS_EXTENSION_C: java.lang.Character$UnicodeBlock
-            public static CJK_UNIFIED_IDEOGRAPHS_EXTENSION_D: java.lang.Character$UnicodeBlock
-            public static ARABIC_EXTENDED_A: java.lang.Character$UnicodeBlock
-            public static SUNDANESE_SUPPLEMENT: java.lang.Character$UnicodeBlock
-            public static MEETEI_MAYEK_EXTENSIONS: java.lang.Character$UnicodeBlock
-            public static MEROITIC_HIEROGLYPHS: java.lang.Character$UnicodeBlock
-            public static MEROITIC_CURSIVE: java.lang.Character$UnicodeBlock
-            public static SORA_SOMPENG: java.lang.Character$UnicodeBlock
-            public static CHAKMA: java.lang.Character$UnicodeBlock
-            public static SHARADA: java.lang.Character$UnicodeBlock
-            public static TAKRI: java.lang.Character$UnicodeBlock
-            public static MIAO: java.lang.Character$UnicodeBlock
-            public static ARABIC_MATHEMATICAL_ALPHABETIC_SYMBOLS: java.lang.Character$UnicodeBlock
+            public static readonly BASIC_LATIN: java.lang.Character$UnicodeBlock
+            public static readonly LATIN_1_SUPPLEMENT: java.lang.Character$UnicodeBlock
+            public static readonly LATIN_EXTENDED_A: java.lang.Character$UnicodeBlock
+            public static readonly LATIN_EXTENDED_B: java.lang.Character$UnicodeBlock
+            public static readonly IPA_EXTENSIONS: java.lang.Character$UnicodeBlock
+            public static readonly SPACING_MODIFIER_LETTERS: java.lang.Character$UnicodeBlock
+            public static readonly COMBINING_DIACRITICAL_MARKS: java.lang.Character$UnicodeBlock
+            public static readonly GREEK: java.lang.Character$UnicodeBlock
+            public static readonly CYRILLIC: java.lang.Character$UnicodeBlock
+            public static readonly ARMENIAN: java.lang.Character$UnicodeBlock
+            public static readonly HEBREW: java.lang.Character$UnicodeBlock
+            public static readonly ARABIC: java.lang.Character$UnicodeBlock
+            public static readonly DEVANAGARI: java.lang.Character$UnicodeBlock
+            public static readonly BENGALI: java.lang.Character$UnicodeBlock
+            public static readonly GURMUKHI: java.lang.Character$UnicodeBlock
+            public static readonly GUJARATI: java.lang.Character$UnicodeBlock
+            public static readonly ORIYA: java.lang.Character$UnicodeBlock
+            public static readonly TAMIL: java.lang.Character$UnicodeBlock
+            public static readonly TELUGU: java.lang.Character$UnicodeBlock
+            public static readonly KANNADA: java.lang.Character$UnicodeBlock
+            public static readonly MALAYALAM: java.lang.Character$UnicodeBlock
+            public static readonly THAI: java.lang.Character$UnicodeBlock
+            public static readonly LAO: java.lang.Character$UnicodeBlock
+            public static readonly TIBETAN: java.lang.Character$UnicodeBlock
+            public static readonly GEORGIAN: java.lang.Character$UnicodeBlock
+            public static readonly HANGUL_JAMO: java.lang.Character$UnicodeBlock
+            public static readonly LATIN_EXTENDED_ADDITIONAL: java.lang.Character$UnicodeBlock
+            public static readonly GREEK_EXTENDED: java.lang.Character$UnicodeBlock
+            public static readonly GENERAL_PUNCTUATION: java.lang.Character$UnicodeBlock
+            public static readonly SUPERSCRIPTS_AND_SUBSCRIPTS: java.lang.Character$UnicodeBlock
+            public static readonly CURRENCY_SYMBOLS: java.lang.Character$UnicodeBlock
+            public static readonly COMBINING_MARKS_FOR_SYMBOLS: java.lang.Character$UnicodeBlock
+            public static readonly LETTERLIKE_SYMBOLS: java.lang.Character$UnicodeBlock
+            public static readonly NUMBER_FORMS: java.lang.Character$UnicodeBlock
+            public static readonly ARROWS: java.lang.Character$UnicodeBlock
+            public static readonly MATHEMATICAL_OPERATORS: java.lang.Character$UnicodeBlock
+            public static readonly MISCELLANEOUS_TECHNICAL: java.lang.Character$UnicodeBlock
+            public static readonly CONTROL_PICTURES: java.lang.Character$UnicodeBlock
+            public static readonly OPTICAL_CHARACTER_RECOGNITION: java.lang.Character$UnicodeBlock
+            public static readonly ENCLOSED_ALPHANUMERICS: java.lang.Character$UnicodeBlock
+            public static readonly BOX_DRAWING: java.lang.Character$UnicodeBlock
+            public static readonly BLOCK_ELEMENTS: java.lang.Character$UnicodeBlock
+            public static readonly GEOMETRIC_SHAPES: java.lang.Character$UnicodeBlock
+            public static readonly MISCELLANEOUS_SYMBOLS: java.lang.Character$UnicodeBlock
+            public static readonly DINGBATS: java.lang.Character$UnicodeBlock
+            public static readonly CJK_SYMBOLS_AND_PUNCTUATION: java.lang.Character$UnicodeBlock
+            public static readonly HIRAGANA: java.lang.Character$UnicodeBlock
+            public static readonly KATAKANA: java.lang.Character$UnicodeBlock
+            public static readonly BOPOMOFO: java.lang.Character$UnicodeBlock
+            public static readonly HANGUL_COMPATIBILITY_JAMO: java.lang.Character$UnicodeBlock
+            public static readonly KANBUN: java.lang.Character$UnicodeBlock
+            public static readonly ENCLOSED_CJK_LETTERS_AND_MONTHS: java.lang.Character$UnicodeBlock
+            public static readonly CJK_COMPATIBILITY: java.lang.Character$UnicodeBlock
+            public static readonly CJK_UNIFIED_IDEOGRAPHS: java.lang.Character$UnicodeBlock
+            public static readonly HANGUL_SYLLABLES: java.lang.Character$UnicodeBlock
+            public static readonly PRIVATE_USE_AREA: java.lang.Character$UnicodeBlock
+            public static readonly CJK_COMPATIBILITY_IDEOGRAPHS: java.lang.Character$UnicodeBlock
+            public static readonly ALPHABETIC_PRESENTATION_FORMS: java.lang.Character$UnicodeBlock
+            public static readonly ARABIC_PRESENTATION_FORMS_A: java.lang.Character$UnicodeBlock
+            public static readonly COMBINING_HALF_MARKS: java.lang.Character$UnicodeBlock
+            public static readonly CJK_COMPATIBILITY_FORMS: java.lang.Character$UnicodeBlock
+            public static readonly SMALL_FORM_VARIANTS: java.lang.Character$UnicodeBlock
+            public static readonly ARABIC_PRESENTATION_FORMS_B: java.lang.Character$UnicodeBlock
+            public static readonly HALFWIDTH_AND_FULLWIDTH_FORMS: java.lang.Character$UnicodeBlock
+            public static readonly SPECIALS: java.lang.Character$UnicodeBlock
+            public static readonly SURROGATES_AREA: java.lang.Character$UnicodeBlock
+            public static readonly SYRIAC: java.lang.Character$UnicodeBlock
+            public static readonly THAANA: java.lang.Character$UnicodeBlock
+            public static readonly SINHALA: java.lang.Character$UnicodeBlock
+            public static readonly MYANMAR: java.lang.Character$UnicodeBlock
+            public static readonly ETHIOPIC: java.lang.Character$UnicodeBlock
+            public static readonly CHEROKEE: java.lang.Character$UnicodeBlock
+            public static readonly UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS: java.lang.Character$UnicodeBlock
+            public static readonly OGHAM: java.lang.Character$UnicodeBlock
+            public static readonly RUNIC: java.lang.Character$UnicodeBlock
+            public static readonly KHMER: java.lang.Character$UnicodeBlock
+            public static readonly MONGOLIAN: java.lang.Character$UnicodeBlock
+            public static readonly BRAILLE_PATTERNS: java.lang.Character$UnicodeBlock
+            public static readonly CJK_RADICALS_SUPPLEMENT: java.lang.Character$UnicodeBlock
+            public static readonly KANGXI_RADICALS: java.lang.Character$UnicodeBlock
+            public static readonly IDEOGRAPHIC_DESCRIPTION_CHARACTERS: java.lang.Character$UnicodeBlock
+            public static readonly BOPOMOFO_EXTENDED: java.lang.Character$UnicodeBlock
+            public static readonly CJK_UNIFIED_IDEOGRAPHS_EXTENSION_A: java.lang.Character$UnicodeBlock
+            public static readonly YI_SYLLABLES: java.lang.Character$UnicodeBlock
+            public static readonly YI_RADICALS: java.lang.Character$UnicodeBlock
+            public static readonly CYRILLIC_SUPPLEMENTARY: java.lang.Character$UnicodeBlock
+            public static readonly TAGALOG: java.lang.Character$UnicodeBlock
+            public static readonly HANUNOO: java.lang.Character$UnicodeBlock
+            public static readonly BUHID: java.lang.Character$UnicodeBlock
+            public static readonly TAGBANWA: java.lang.Character$UnicodeBlock
+            public static readonly LIMBU: java.lang.Character$UnicodeBlock
+            public static readonly TAI_LE: java.lang.Character$UnicodeBlock
+            public static readonly KHMER_SYMBOLS: java.lang.Character$UnicodeBlock
+            public static readonly PHONETIC_EXTENSIONS: java.lang.Character$UnicodeBlock
+            public static readonly MISCELLANEOUS_MATHEMATICAL_SYMBOLS_A: java.lang.Character$UnicodeBlock
+            public static readonly SUPPLEMENTAL_ARROWS_A: java.lang.Character$UnicodeBlock
+            public static readonly SUPPLEMENTAL_ARROWS_B: java.lang.Character$UnicodeBlock
+            public static readonly MISCELLANEOUS_MATHEMATICAL_SYMBOLS_B: java.lang.Character$UnicodeBlock
+            public static readonly SUPPLEMENTAL_MATHEMATICAL_OPERATORS: java.lang.Character$UnicodeBlock
+            public static readonly MISCELLANEOUS_SYMBOLS_AND_ARROWS: java.lang.Character$UnicodeBlock
+            public static readonly KATAKANA_PHONETIC_EXTENSIONS: java.lang.Character$UnicodeBlock
+            public static readonly YIJING_HEXAGRAM_SYMBOLS: java.lang.Character$UnicodeBlock
+            public static readonly VARIATION_SELECTORS: java.lang.Character$UnicodeBlock
+            public static readonly LINEAR_B_SYLLABARY: java.lang.Character$UnicodeBlock
+            public static readonly LINEAR_B_IDEOGRAMS: java.lang.Character$UnicodeBlock
+            public static readonly AEGEAN_NUMBERS: java.lang.Character$UnicodeBlock
+            public static readonly OLD_ITALIC: java.lang.Character$UnicodeBlock
+            public static readonly GOTHIC: java.lang.Character$UnicodeBlock
+            public static readonly UGARITIC: java.lang.Character$UnicodeBlock
+            public static readonly DESERET: java.lang.Character$UnicodeBlock
+            public static readonly SHAVIAN: java.lang.Character$UnicodeBlock
+            public static readonly OSMANYA: java.lang.Character$UnicodeBlock
+            public static readonly CYPRIOT_SYLLABARY: java.lang.Character$UnicodeBlock
+            public static readonly BYZANTINE_MUSICAL_SYMBOLS: java.lang.Character$UnicodeBlock
+            public static readonly MUSICAL_SYMBOLS: java.lang.Character$UnicodeBlock
+            public static readonly TAI_XUAN_JING_SYMBOLS: java.lang.Character$UnicodeBlock
+            public static readonly MATHEMATICAL_ALPHANUMERIC_SYMBOLS: java.lang.Character$UnicodeBlock
+            public static readonly CJK_UNIFIED_IDEOGRAPHS_EXTENSION_B: java.lang.Character$UnicodeBlock
+            public static readonly CJK_COMPATIBILITY_IDEOGRAPHS_SUPPLEMENT: java.lang.Character$UnicodeBlock
+            public static readonly TAGS: java.lang.Character$UnicodeBlock
+            public static readonly VARIATION_SELECTORS_SUPPLEMENT: java.lang.Character$UnicodeBlock
+            public static readonly SUPPLEMENTARY_PRIVATE_USE_AREA_A: java.lang.Character$UnicodeBlock
+            public static readonly SUPPLEMENTARY_PRIVATE_USE_AREA_B: java.lang.Character$UnicodeBlock
+            public static readonly HIGH_SURROGATES: java.lang.Character$UnicodeBlock
+            public static readonly HIGH_PRIVATE_USE_SURROGATES: java.lang.Character$UnicodeBlock
+            public static readonly LOW_SURROGATES: java.lang.Character$UnicodeBlock
+            public static readonly ARABIC_SUPPLEMENT: java.lang.Character$UnicodeBlock
+            public static readonly NKO: java.lang.Character$UnicodeBlock
+            public static readonly SAMARITAN: java.lang.Character$UnicodeBlock
+            public static readonly MANDAIC: java.lang.Character$UnicodeBlock
+            public static readonly ETHIOPIC_SUPPLEMENT: java.lang.Character$UnicodeBlock
+            public static readonly UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS_EXTENDED: java.lang.Character$UnicodeBlock
+            public static readonly NEW_TAI_LUE: java.lang.Character$UnicodeBlock
+            public static readonly BUGINESE: java.lang.Character$UnicodeBlock
+            public static readonly TAI_THAM: java.lang.Character$UnicodeBlock
+            public static readonly BALINESE: java.lang.Character$UnicodeBlock
+            public static readonly SUNDANESE: java.lang.Character$UnicodeBlock
+            public static readonly BATAK: java.lang.Character$UnicodeBlock
+            public static readonly LEPCHA: java.lang.Character$UnicodeBlock
+            public static readonly OL_CHIKI: java.lang.Character$UnicodeBlock
+            public static readonly VEDIC_EXTENSIONS: java.lang.Character$UnicodeBlock
+            public static readonly PHONETIC_EXTENSIONS_SUPPLEMENT: java.lang.Character$UnicodeBlock
+            public static readonly COMBINING_DIACRITICAL_MARKS_SUPPLEMENT: java.lang.Character$UnicodeBlock
+            public static readonly GLAGOLITIC: java.lang.Character$UnicodeBlock
+            public static readonly LATIN_EXTENDED_C: java.lang.Character$UnicodeBlock
+            public static readonly COPTIC: java.lang.Character$UnicodeBlock
+            public static readonly GEORGIAN_SUPPLEMENT: java.lang.Character$UnicodeBlock
+            public static readonly TIFINAGH: java.lang.Character$UnicodeBlock
+            public static readonly ETHIOPIC_EXTENDED: java.lang.Character$UnicodeBlock
+            public static readonly CYRILLIC_EXTENDED_A: java.lang.Character$UnicodeBlock
+            public static readonly SUPPLEMENTAL_PUNCTUATION: java.lang.Character$UnicodeBlock
+            public static readonly CJK_STROKES: java.lang.Character$UnicodeBlock
+            public static readonly LISU: java.lang.Character$UnicodeBlock
+            public static readonly VAI: java.lang.Character$UnicodeBlock
+            public static readonly CYRILLIC_EXTENDED_B: java.lang.Character$UnicodeBlock
+            public static readonly BAMUM: java.lang.Character$UnicodeBlock
+            public static readonly MODIFIER_TONE_LETTERS: java.lang.Character$UnicodeBlock
+            public static readonly LATIN_EXTENDED_D: java.lang.Character$UnicodeBlock
+            public static readonly SYLOTI_NAGRI: java.lang.Character$UnicodeBlock
+            public static readonly COMMON_INDIC_NUMBER_FORMS: java.lang.Character$UnicodeBlock
+            public static readonly PHAGS_PA: java.lang.Character$UnicodeBlock
+            public static readonly SAURASHTRA: java.lang.Character$UnicodeBlock
+            public static readonly DEVANAGARI_EXTENDED: java.lang.Character$UnicodeBlock
+            public static readonly KAYAH_LI: java.lang.Character$UnicodeBlock
+            public static readonly REJANG: java.lang.Character$UnicodeBlock
+            public static readonly HANGUL_JAMO_EXTENDED_A: java.lang.Character$UnicodeBlock
+            public static readonly JAVANESE: java.lang.Character$UnicodeBlock
+            public static readonly CHAM: java.lang.Character$UnicodeBlock
+            public static readonly MYANMAR_EXTENDED_A: java.lang.Character$UnicodeBlock
+            public static readonly TAI_VIET: java.lang.Character$UnicodeBlock
+            public static readonly ETHIOPIC_EXTENDED_A: java.lang.Character$UnicodeBlock
+            public static readonly MEETEI_MAYEK: java.lang.Character$UnicodeBlock
+            public static readonly HANGUL_JAMO_EXTENDED_B: java.lang.Character$UnicodeBlock
+            public static readonly VERTICAL_FORMS: java.lang.Character$UnicodeBlock
+            public static readonly ANCIENT_GREEK_NUMBERS: java.lang.Character$UnicodeBlock
+            public static readonly ANCIENT_SYMBOLS: java.lang.Character$UnicodeBlock
+            public static readonly PHAISTOS_DISC: java.lang.Character$UnicodeBlock
+            public static readonly LYCIAN: java.lang.Character$UnicodeBlock
+            public static readonly CARIAN: java.lang.Character$UnicodeBlock
+            public static readonly OLD_PERSIAN: java.lang.Character$UnicodeBlock
+            public static readonly IMPERIAL_ARAMAIC: java.lang.Character$UnicodeBlock
+            public static readonly PHOENICIAN: java.lang.Character$UnicodeBlock
+            public static readonly LYDIAN: java.lang.Character$UnicodeBlock
+            public static readonly KHAROSHTHI: java.lang.Character$UnicodeBlock
+            public static readonly OLD_SOUTH_ARABIAN: java.lang.Character$UnicodeBlock
+            public static readonly AVESTAN: java.lang.Character$UnicodeBlock
+            public static readonly INSCRIPTIONAL_PARTHIAN: java.lang.Character$UnicodeBlock
+            public static readonly INSCRIPTIONAL_PAHLAVI: java.lang.Character$UnicodeBlock
+            public static readonly OLD_TURKIC: java.lang.Character$UnicodeBlock
+            public static readonly RUMI_NUMERAL_SYMBOLS: java.lang.Character$UnicodeBlock
+            public static readonly BRAHMI: java.lang.Character$UnicodeBlock
+            public static readonly KAITHI: java.lang.Character$UnicodeBlock
+            public static readonly CUNEIFORM: java.lang.Character$UnicodeBlock
+            public static readonly CUNEIFORM_NUMBERS_AND_PUNCTUATION: java.lang.Character$UnicodeBlock
+            public static readonly EGYPTIAN_HIEROGLYPHS: java.lang.Character$UnicodeBlock
+            public static readonly BAMUM_SUPPLEMENT: java.lang.Character$UnicodeBlock
+            public static readonly KANA_SUPPLEMENT: java.lang.Character$UnicodeBlock
+            public static readonly ANCIENT_GREEK_MUSICAL_NOTATION: java.lang.Character$UnicodeBlock
+            public static readonly COUNTING_ROD_NUMERALS: java.lang.Character$UnicodeBlock
+            public static readonly MAHJONG_TILES: java.lang.Character$UnicodeBlock
+            public static readonly DOMINO_TILES: java.lang.Character$UnicodeBlock
+            public static readonly PLAYING_CARDS: java.lang.Character$UnicodeBlock
+            public static readonly ENCLOSED_ALPHANUMERIC_SUPPLEMENT: java.lang.Character$UnicodeBlock
+            public static readonly ENCLOSED_IDEOGRAPHIC_SUPPLEMENT: java.lang.Character$UnicodeBlock
+            public static readonly MISCELLANEOUS_SYMBOLS_AND_PICTOGRAPHS: java.lang.Character$UnicodeBlock
+            public static readonly EMOTICONS: java.lang.Character$UnicodeBlock
+            public static readonly TRANSPORT_AND_MAP_SYMBOLS: java.lang.Character$UnicodeBlock
+            public static readonly ALCHEMICAL_SYMBOLS: java.lang.Character$UnicodeBlock
+            public static readonly CJK_UNIFIED_IDEOGRAPHS_EXTENSION_C: java.lang.Character$UnicodeBlock
+            public static readonly CJK_UNIFIED_IDEOGRAPHS_EXTENSION_D: java.lang.Character$UnicodeBlock
+            public static readonly ARABIC_EXTENDED_A: java.lang.Character$UnicodeBlock
+            public static readonly SUNDANESE_SUPPLEMENT: java.lang.Character$UnicodeBlock
+            public static readonly MEETEI_MAYEK_EXTENSIONS: java.lang.Character$UnicodeBlock
+            public static readonly MEROITIC_HIEROGLYPHS: java.lang.Character$UnicodeBlock
+            public static readonly MEROITIC_CURSIVE: java.lang.Character$UnicodeBlock
+            public static readonly SORA_SOMPENG: java.lang.Character$UnicodeBlock
+            public static readonly CHAKMA: java.lang.Character$UnicodeBlock
+            public static readonly SHARADA: java.lang.Character$UnicodeBlock
+            public static readonly TAKRI: java.lang.Character$UnicodeBlock
+            public static readonly MIAO: java.lang.Character$UnicodeBlock
+            public static readonly ARABIC_MATHEMATICAL_ALPHABETIC_SYMBOLS: java.lang.Character$UnicodeBlock
             public static of(arg0: char): java.lang.Character$UnicodeBlock
             public static of(arg0: int): java.lang.Character$UnicodeBlock
             public static forName(arg0: java.lang.String | string): java.lang.Character$UnicodeBlock

@@ -3,7 +3,7 @@ declare namespace javax {
         namespace plaf {
             namespace basic {
                 class BasicInternalFrameUI$BorderListener extends javax.swing.event.MouseInputAdapter implements javax.swing.SwingConstants {
-                    protected RESIZE_NONE: int
+                    protected readonly RESIZE_NONE: int
                     protected constructor(arg0: javax.swing.plaf.basic.BasicInternalFrameUI)
                     public mouseClicked(arg0: java.awt.event.MouseEvent): void
                     public mouseReleased(arg0: java.awt.event.MouseEvent): void

@@ -7,12 +7,12 @@ declare namespace com {
                         namespace xsltc {
                             namespace compiler {
                                 class BinOpExpr extends com.sun.org.apache.xalan.internal.xsltc.compiler.Expression {
-                                    public static PLUS: int
-                                    public static MINUS: int
-                                    public static TIMES: int
-                                    public static DIV: int
-                                    public static MOD: int
-                                    public constructor(arg0: int, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression, arg2: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression)
+                                    public static readonly PLUS: int
+                                    public static readonly MINUS: int
+                                    public static readonly TIMES: int
+                                    public static readonly DIV: int
+                                    public static readonly MOD: int
+                                    public constructor(arg0: int, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression | com.sun.org.apache.xalan.internal.xsltc.compiler.Expression$$Lambda, arg2: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression | com.sun.org.apache.xalan.internal.xsltc.compiler.Expression$$Lambda)
                                     public hasPositionCall(): boolean
                                     public hasLastCall(): boolean
                                     public setParser(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Parser): void

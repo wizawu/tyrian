@@ -97,8 +97,8 @@ declare namespace com {
                 public updateDate(arg0: int, arg1: java.sql.Date): void
                 public updateTime(arg0: int, arg1: java.sql.Time): void
                 public updateTimestamp(arg0: int, arg1: java.sql.Timestamp): void
-                public updateAsciiStream(arg0: int, arg1: java.io.InputStream, arg2: int): void
-                public updateBinaryStream(arg0: int, arg1: java.io.InputStream, arg2: int): void
+                public updateAsciiStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
+                public updateBinaryStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
                 public updateCharacterStream(arg0: int, arg1: java.io.Reader, arg2: int): void
                 public updateObject(arg0: int, arg1: java.lang.Object, arg2: int): void
                 public updateObject(arg0: int, arg1: java.lang.Object): void
@@ -116,8 +116,8 @@ declare namespace com {
                 public updateDate(arg0: java.lang.String | string, arg1: java.sql.Date): void
                 public updateTime(arg0: java.lang.String | string, arg1: java.sql.Time): void
                 public updateTimestamp(arg0: java.lang.String | string, arg1: java.sql.Timestamp): void
-                public updateAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: int): void
-                public updateBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: int): void
+                public updateAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
+                public updateBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
                 public updateCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: int): void
                 public updateObject(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: int): void
                 public updateObject(arg0: java.lang.String | string, arg1: java.lang.Object): void
@@ -164,9 +164,9 @@ declare namespace com {
                 public writeXml(arg0: java.sql.ResultSet, arg1: java.io.Writer): void
                 public writeXml(arg0: java.io.Writer): void
                 public readXml(arg0: java.io.Reader): void
-                public readXml(arg0: java.io.InputStream): void
-                public writeXml(arg0: java.io.OutputStream): void
-                public writeXml(arg0: java.sql.ResultSet, arg1: java.io.OutputStream): void
+                public readXml(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
+                public writeXml(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public writeXml(arg0: java.sql.ResultSet, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                 public getJoinType(): int
                 public addRowSetListener(arg0: javax.sql.RowSetListener): void
                 public removeRowSetListener(arg0: javax.sql.RowSetListener): void

@@ -5,7 +5,7 @@ declare namespace sun {
                 namespace audio {
                     class aiff extends java.net.ContentHandler {
                         public constructor()
-                        public getContent(arg0: java.net.URLConnection): java.lang.Object
+                        public getContent(arg0: java.net.URLConnection | java.net.URLConnection$$Lambda): java.lang.Object
                         public static class: java.lang.Class<any>
                     }
                 }

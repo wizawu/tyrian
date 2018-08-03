@@ -2,12 +2,12 @@ declare namespace javax {
     namespace swing {
         abstract class DefaultRowSorter$ModelWrapper<M, I> {
             protected constructor()
-            public getModel(): M
-            public getColumnCount(): int
-            public getRowCount(): int
-            public getValueAt(arg0: int, arg1: int): java.lang.Object
+            public abstract getModel(): M
+            public abstract getColumnCount(): int
+            public abstract getRowCount(): int
+            public abstract getValueAt(arg0: int, arg1: int): java.lang.Object
             public getStringValueAt(arg0: int, arg1: int): string
-            public getIdentifier(arg0: int): I
+            public abstract getIdentifier(arg0: int): I
             public static class: java.lang.Class<any>
         }
     }

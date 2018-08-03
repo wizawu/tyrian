@@ -11,7 +11,7 @@ declare namespace com {
                                 protected tag: byte
                                 protected constant_pool: com.sun.org.apache.bcel.internal.classfile.ConstantPool
                                 protected constructor(arg0: byte, arg1: int, arg2: int, arg3: com.sun.org.apache.bcel.internal.classfile.ConstantPool)
-                                public accept(arg0: com.sun.org.apache.bcel.internal.classfile.Visitor): void
+                                public abstract accept(arg0: com.sun.org.apache.bcel.internal.classfile.Visitor): void
                                 public dump(arg0: java.io.DataOutputStream): void
                                 public static addAttributeReader(arg0: java.lang.String | string, arg1: com.sun.org.apache.bcel.internal.classfile.AttributeReader | com.sun.org.apache.bcel.internal.classfile.AttributeReader$$Lambda): void
                                 public static removeAttributeReader(arg0: java.lang.String | string): void
@@ -24,7 +24,7 @@ declare namespace com {
                                 public getConstantPool(): com.sun.org.apache.bcel.internal.classfile.ConstantPool
                                 public setConstantPool(arg0: com.sun.org.apache.bcel.internal.classfile.ConstantPool): void
                                 public clone(): java.lang.Object
-                                public copy(arg0: com.sun.org.apache.bcel.internal.classfile.ConstantPool): com.sun.org.apache.bcel.internal.classfile.Attribute
+                                public abstract copy(arg0: com.sun.org.apache.bcel.internal.classfile.ConstantPool): com.sun.org.apache.bcel.internal.classfile.Attribute
                                 public toString(): string
                                 public static class: java.lang.Class<any>
                             }

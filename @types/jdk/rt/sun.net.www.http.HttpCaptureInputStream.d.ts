@@ -3,7 +3,7 @@ declare namespace sun {
         namespace www {
             namespace http {
                 class HttpCaptureInputStream extends java.io.FilterInputStream {
-                    public constructor(arg0: java.io.InputStream, arg1: sun.net.www.http.HttpCapture)
+                    public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: sun.net.www.http.HttpCapture)
                     public read(): int
                     public close(): void
                     public read(arg0: byte[]): int

@@ -38,8 +38,8 @@ declare namespace javax {
             public static addAuxiliaryLookAndFeel(arg0: javax.swing.LookAndFeel): void
             public static removeAuxiliaryLookAndFeel(arg0: javax.swing.LookAndFeel): boolean
             public static getAuxiliaryLookAndFeels(): javax.swing.LookAndFeel[]
-            public static addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
-            public static removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            public static addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+            public static removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
             public static getPropertyChangeListeners(): java.beans.PropertyChangeListener[]
             public static class: java.lang.Class<any>
         }

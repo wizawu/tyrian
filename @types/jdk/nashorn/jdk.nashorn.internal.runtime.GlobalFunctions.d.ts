@@ -3,24 +3,24 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 class GlobalFunctions {
-                    public static PARSEINT: java.lang.invoke.MethodHandle
-                    public static PARSEINT_OI: java.lang.invoke.MethodHandle
-                    public static PARSEINT_Z: java.lang.invoke.MethodHandle
-                    public static PARSEINT_I: java.lang.invoke.MethodHandle
-                    public static PARSEINT_O: java.lang.invoke.MethodHandle
-                    public static PARSEFLOAT: java.lang.invoke.MethodHandle
-                    public static IS_NAN_I: java.lang.invoke.MethodHandle
-                    public static IS_NAN_J: java.lang.invoke.MethodHandle
-                    public static IS_NAN_D: java.lang.invoke.MethodHandle
-                    public static IS_NAN: java.lang.invoke.MethodHandle
-                    public static IS_FINITE: java.lang.invoke.MethodHandle
-                    public static ENCODE_URI: java.lang.invoke.MethodHandle
-                    public static ENCODE_URICOMPONENT: java.lang.invoke.MethodHandle
-                    public static DECODE_URI: java.lang.invoke.MethodHandle
-                    public static DECODE_URICOMPONENT: java.lang.invoke.MethodHandle
-                    public static ESCAPE: java.lang.invoke.MethodHandle
-                    public static UNESCAPE: java.lang.invoke.MethodHandle
-                    public static ANONYMOUS: java.lang.invoke.MethodHandle
+                    public static readonly PARSEINT: java.lang.invoke.MethodHandle
+                    public static readonly PARSEINT_OI: java.lang.invoke.MethodHandle
+                    public static readonly PARSEINT_Z: java.lang.invoke.MethodHandle
+                    public static readonly PARSEINT_I: java.lang.invoke.MethodHandle
+                    public static readonly PARSEINT_O: java.lang.invoke.MethodHandle
+                    public static readonly PARSEFLOAT: java.lang.invoke.MethodHandle
+                    public static readonly IS_NAN_I: java.lang.invoke.MethodHandle
+                    public static readonly IS_NAN_J: java.lang.invoke.MethodHandle
+                    public static readonly IS_NAN_D: java.lang.invoke.MethodHandle
+                    public static readonly IS_NAN: java.lang.invoke.MethodHandle
+                    public static readonly IS_FINITE: java.lang.invoke.MethodHandle
+                    public static readonly ENCODE_URI: java.lang.invoke.MethodHandle
+                    public static readonly ENCODE_URICOMPONENT: java.lang.invoke.MethodHandle
+                    public static readonly DECODE_URI: java.lang.invoke.MethodHandle
+                    public static readonly DECODE_URICOMPONENT: java.lang.invoke.MethodHandle
+                    public static readonly ESCAPE: java.lang.invoke.MethodHandle
+                    public static readonly UNESCAPE: java.lang.invoke.MethodHandle
+                    public static readonly ANONYMOUS: java.lang.invoke.MethodHandle
                     public static parseInt(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): double
                     public static parseInt(arg0: java.lang.Object, arg1: java.lang.Object, arg2: int): double
                     public static parseInt(arg0: java.lang.Object, arg1: java.lang.Object): double

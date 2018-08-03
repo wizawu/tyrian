@@ -3,7 +3,7 @@ declare namespace jdk {
         namespace api {
             namespace scripting {
                 class NashornScriptEngine extends javax.script.AbstractScriptEngine implements javax.script.Compilable , javax.script.Invocable {
-                    public static NASHORN_GLOBAL: string
+                    public static readonly NASHORN_GLOBAL: string
                     public eval(arg0: java.io.Reader, arg1: javax.script.ScriptContext): java.lang.Object
                     public eval(arg0: java.lang.String | string, arg1: javax.script.ScriptContext): java.lang.Object
                     public getFactory(): javax.script.ScriptEngineFactory

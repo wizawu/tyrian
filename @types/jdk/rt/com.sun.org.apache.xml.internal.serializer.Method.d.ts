@@ -6,11 +6,11 @@ declare namespace com {
                     namespace internal {
                         namespace serializer {
                             class Method {
-                                public static XML: string
-                                public static HTML: string
-                                public static XHTML: string
-                                public static TEXT: string
-                                public static UNKNOWN: string
+                                public static readonly XML: string
+                                public static readonly HTML: string
+                                public static readonly XHTML: string
+                                public static readonly TEXT: string
+                                public static readonly UNKNOWN: string
                                 public static class: java.lang.Class<any>
                             }
                         }

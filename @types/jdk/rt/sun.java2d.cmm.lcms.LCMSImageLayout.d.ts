@@ -3,20 +3,20 @@ declare namespace sun {
         namespace cmm {
             namespace lcms {
                 class LCMSImageLayout {
-                    public static SWAPFIRST: int
-                    public static DOSWAP: int
-                    public static PT_RGB_8: int
-                    public static PT_GRAY_8: int
-                    public static PT_GRAY_16: int
-                    public static PT_RGBA_8: int
-                    public static PT_ARGB_8: int
-                    public static PT_BGR_8: int
-                    public static PT_ABGR_8: int
-                    public static PT_BGRA_8: int
-                    public static DT_BYTE: int
-                    public static DT_SHORT: int
-                    public static DT_INT: int
-                    public static DT_DOUBLE: int
+                    public static readonly SWAPFIRST: int
+                    public static readonly DOSWAP: int
+                    public static readonly PT_RGB_8: int
+                    public static readonly PT_GRAY_8: int
+                    public static readonly PT_GRAY_16: int
+                    public static readonly PT_RGBA_8: int
+                    public static readonly PT_ARGB_8: int
+                    public static readonly PT_BGR_8: int
+                    public static readonly PT_ABGR_8: int
+                    public static readonly PT_BGRA_8: int
+                    public static readonly DT_BYTE: int
+                    public static readonly DT_SHORT: int
+                    public static readonly DT_INT: int
+                    public static readonly DT_DOUBLE: int
                     public static BYTES_SH(arg0: int): int
                     public static EXTRA_SH(arg0: int): int
                     public static CHANNELS_SH(arg0: int): int

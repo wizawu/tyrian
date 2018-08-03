@@ -7,15 +7,15 @@ declare namespace com {
                         namespace impl {
                             namespace dtd {
                                 class XMLDTDProcessor implements com.sun.org.apache.xerces.internal.xni.parser.XMLComponent , com.sun.org.apache.xerces.internal.xni.parser.XMLDTDFilter , com.sun.org.apache.xerces.internal.xni.parser.XMLDTDContentModelFilter {
-                                    protected static VALIDATION: string
-                                    protected static NOTIFY_CHAR_REFS: string
-                                    protected static WARN_ON_DUPLICATE_ATTDEF: string
-                                    protected static WARN_ON_UNDECLARED_ELEMDEF: string
-                                    protected static PARSER_SETTINGS: string
-                                    protected static SYMBOL_TABLE: string
-                                    protected static ERROR_REPORTER: string
-                                    protected static GRAMMAR_POOL: string
-                                    protected static DTD_VALIDATOR: string
+                                    protected static readonly VALIDATION: string
+                                    protected static readonly NOTIFY_CHAR_REFS: string
+                                    protected static readonly WARN_ON_DUPLICATE_ATTDEF: string
+                                    protected static readonly WARN_ON_UNDECLARED_ELEMDEF: string
+                                    protected static readonly PARSER_SETTINGS: string
+                                    protected static readonly SYMBOL_TABLE: string
+                                    protected static readonly ERROR_REPORTER: string
+                                    protected static readonly GRAMMAR_POOL: string
+                                    protected static readonly DTD_VALIDATOR: string
                                     protected fValidation: boolean
                                     protected fDTDValidation: boolean
                                     protected fWarnDuplicateAttdef: boolean

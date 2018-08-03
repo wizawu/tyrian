@@ -1,8 +1,8 @@
 declare namespace sun {
     namespace print {
         class PSPrinterJob extends sun.print.RasterPrinterJob {
-            protected static FILL_EVEN_ODD: int
-            protected static FILL_WINDING: int
+            protected static readonly FILL_EVEN_ODD: int
+            protected static readonly FILL_WINDING: int
             public constructor()
             public printDialog(): boolean
             protected startDoc(): void

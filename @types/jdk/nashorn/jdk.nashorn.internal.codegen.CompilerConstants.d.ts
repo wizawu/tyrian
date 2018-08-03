@@ -3,51 +3,51 @@ declare namespace jdk {
         namespace internal {
             namespace codegen {
                 class CompilerConstants extends java.lang.Enum<jdk.nashorn.internal.codegen.CompilerConstants> {
-                    public static __FILE__: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static __DIR__: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static __LINE__: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static INIT: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static CLINIT: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static EVAL: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static SOURCE: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static CONSTANTS: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static STRICT_MODE: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static DEFAULT_SCRIPT_NAME: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static ANON_FUNCTION_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static NESTED_FUNCTION_SEPARATOR: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static ID_FUNCTION_SEPARATOR: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static PROGRAM: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static CREATE_PROGRAM_FUNCTION: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static THIS: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static THIS_DEBUGGER: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static SCOPE: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static RETURN: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static CALLEE: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static VARARGS: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static ARGUMENTS_VAR: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static ARGUMENTS: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static EXPLODED_ARGUMENT_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static ITERATOR_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static SWITCH_TAG_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static EXCEPTION_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static QUICK_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static TEMP_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static LITERAL_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static REGEX_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static JAVA_THIS: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static INIT_MAP: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static INIT_SCOPE: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static INIT_ARGUMENTS: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static JS_OBJECT_DUAL_FIELD_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static JS_OBJECT_SINGLE_FIELD_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static ALLOCATE: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static SPLIT_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static SPLIT_ARRAY_ARG: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static GET_STRING: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static GET_MAP: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static SET_MAP: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static GET_ARRAY_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
-                    public static GET_ARRAY_SUFFIX: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly __FILE__: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly __DIR__: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly __LINE__: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly INIT: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly CLINIT: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly EVAL: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly SOURCE: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly CONSTANTS: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly STRICT_MODE: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly DEFAULT_SCRIPT_NAME: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly ANON_FUNCTION_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly NESTED_FUNCTION_SEPARATOR: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly ID_FUNCTION_SEPARATOR: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly PROGRAM: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly CREATE_PROGRAM_FUNCTION: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly THIS: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly THIS_DEBUGGER: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly SCOPE: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly RETURN: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly CALLEE: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly VARARGS: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly ARGUMENTS_VAR: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly ARGUMENTS: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly EXPLODED_ARGUMENT_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly ITERATOR_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly SWITCH_TAG_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly EXCEPTION_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly QUICK_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly TEMP_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly LITERAL_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly REGEX_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly JAVA_THIS: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly INIT_MAP: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly INIT_SCOPE: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly INIT_ARGUMENTS: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly JS_OBJECT_DUAL_FIELD_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly JS_OBJECT_SINGLE_FIELD_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly ALLOCATE: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly SPLIT_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly SPLIT_ARRAY_ARG: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly GET_STRING: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly GET_MAP: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly SET_MAP: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly GET_ARRAY_PREFIX: jdk.nashorn.internal.codegen.CompilerConstants
+                    public static readonly GET_ARRAY_SUFFIX: jdk.nashorn.internal.codegen.CompilerConstants
                     public static values(): jdk.nashorn.internal.codegen.CompilerConstants[]
                     public static valueOf(arg0: java.lang.String | string): jdk.nashorn.internal.codegen.CompilerConstants
                     public static isCompilerConstant(arg0: java.lang.String | string): boolean

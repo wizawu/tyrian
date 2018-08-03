@@ -30,7 +30,7 @@ declare namespace jdk {
                     public G$_super(): java.lang.Object
                     public S$_super(arg0: java.lang.Object): void
                     public G$asJSONCompatible(): java.lang.Object
-                    public public S$asJSONCompatible(arg0: java.lang.Object): void
+                    public static public S$asJSONCompatible(arg0: java.lang.Object): void
                     public getClassName(): string
                     public static class: java.lang.Class<any>
                 }

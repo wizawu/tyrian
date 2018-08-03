@@ -9,10 +9,10 @@ declare namespace com {
                                 class Stylesheet extends com.sun.org.apache.xalan.internal.xsltc.compiler.SyntaxTreeNode {
                                     public _importedFrom: com.sun.org.apache.xalan.internal.xsltc.compiler.Stylesheet
                                     public _includedFrom: com.sun.org.apache.xalan.internal.xsltc.compiler.Stylesheet
-                                    public static UNKNOWN_OUTPUT: int
-                                    public static XML_OUTPUT: int
-                                    public static HTML_OUTPUT: int
-                                    public static TEXT_OUTPUT: int
+                                    public static readonly UNKNOWN_OUTPUT: int
+                                    public static readonly XML_OUTPUT: int
+                                    public static readonly HTML_OUTPUT: int
+                                    public static readonly TEXT_OUTPUT: int
                                     public constructor()
                                     public getOutputMethod(): int
                                     public getTemplateInlining(): boolean

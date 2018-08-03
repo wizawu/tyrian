@@ -5,7 +5,7 @@ declare namespace jdk {
                 namespace asm {
                     namespace commons {
                         class RemappingAnnotationAdapter extends jdk.internal.org.objectweb.asm.AnnotationVisitor {
-                            protected remapper: jdk.internal.org.objectweb.asm.commons.Remapper
+                            protected readonly remapper: jdk.internal.org.objectweb.asm.commons.Remapper
                             public constructor(arg0: jdk.internal.org.objectweb.asm.AnnotationVisitor, arg1: jdk.internal.org.objectweb.asm.commons.Remapper)
                             protected constructor(arg0: int, arg1: jdk.internal.org.objectweb.asm.AnnotationVisitor, arg2: jdk.internal.org.objectweb.asm.commons.Remapper)
                             public visit(arg0: java.lang.String | string, arg1: java.lang.Object): void

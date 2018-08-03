@@ -13,8 +13,8 @@ declare namespace sun {
                 public ensureCapacity(arg0: int): void
                 public ensureCapacityAndAlignment(arg0: int, arg1: int): void
                 public ensureAlignment(arg0: int): void
-                public flushNow(): void
-                public flushAndInvokeNow(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda): void
+                public abstract flushNow(): void
+                public abstract flushAndInvokeNow(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda): void
                 public flushNow(arg0: int): void
                 public static class: java.lang.Class<any>
             }

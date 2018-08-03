@@ -3,10 +3,10 @@ declare namespace java {
         class URL implements java.io.Serializable {
             public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: int, arg3: java.lang.String | string)
             public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: int, arg3: java.lang.String | string, arg4: java.net.URLStreamHandler)
+            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: int, arg3: java.lang.String | string, arg4: java.net.URLStreamHandler | java.net.URLStreamHandler$$Lambda)
             public constructor(arg0: java.lang.String | string)
             public constructor(arg0: java.net.URL, arg1: java.lang.String | string)
-            public constructor(arg0: java.net.URL, arg1: java.lang.String | string, arg2: java.net.URLStreamHandler)
+            public constructor(arg0: java.net.URL, arg1: java.lang.String | string, arg2: java.net.URLStreamHandler | java.net.URLStreamHandler$$Lambda)
             public getQuery(): string
             public getPath(): string
             public getUserInfo(): string

@@ -1,33 +1,33 @@
 declare namespace java {
     namespace awt {
         class Font implements java.io.Serializable {
-            public static DIALOG: string
-            public static DIALOG_INPUT: string
-            public static SANS_SERIF: string
-            public static SERIF: string
-            public static MONOSPACED: string
-            public static PLAIN: int
-            public static BOLD: int
-            public static ITALIC: int
-            public static ROMAN_BASELINE: int
-            public static CENTER_BASELINE: int
-            public static HANGING_BASELINE: int
-            public static TRUETYPE_FONT: int
-            public static TYPE1_FONT: int
+            public static readonly DIALOG: string
+            public static readonly DIALOG_INPUT: string
+            public static readonly SANS_SERIF: string
+            public static readonly SERIF: string
+            public static readonly MONOSPACED: string
+            public static readonly PLAIN: int
+            public static readonly BOLD: int
+            public static readonly ITALIC: int
+            public static readonly ROMAN_BASELINE: int
+            public static readonly CENTER_BASELINE: int
+            public static readonly HANGING_BASELINE: int
+            public static readonly TRUETYPE_FONT: int
+            public static readonly TYPE1_FONT: int
             protected name: string
             protected style: int
             protected size: int
             protected pointSize: float
-            public static LAYOUT_LEFT_TO_RIGHT: int
-            public static LAYOUT_RIGHT_TO_LEFT: int
-            public static LAYOUT_NO_START_CONTEXT: int
-            public static LAYOUT_NO_LIMIT_CONTEXT: int
+            public static readonly LAYOUT_LEFT_TO_RIGHT: int
+            public static readonly LAYOUT_RIGHT_TO_LEFT: int
+            public static readonly LAYOUT_NO_START_CONTEXT: int
+            public static readonly LAYOUT_NO_LIMIT_CONTEXT: int
             public getPeer(): java.awt.peer.FontPeer
             public constructor(arg0: java.lang.String | string, arg1: int, arg2: int)
             public constructor(arg0: java.util.Map<java.text.AttributedCharacterIterator$Attribute, any>)
             protected constructor(arg0: java.awt.Font)
             public static getFont(arg0: java.util.Map<java.text.AttributedCharacterIterator$Attribute, any>): java.awt.Font
-            public static createFont(arg0: int, arg1: java.io.InputStream): java.awt.Font
+            public static createFont(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda): java.awt.Font
             public static createFont(arg0: int, arg1: java.io.File): java.awt.Font
             public getTransform(): java.awt.geom.AffineTransform
             public getFamily(): string

@@ -3,14 +3,14 @@ declare namespace jdk {
         namespace internal {
             namespace objects {
                 class NativeMath extends jdk.nashorn.internal.runtime.ScriptObject {
-                    public static E: double
-                    public static LN10: double
-                    public static LN2: double
-                    public static LOG2E: double
-                    public static LOG10E: double
-                    public static PI: double
-                    public static SQRT1_2: double
-                    public static SQRT2: double
+                    public static readonly E: double
+                    public static readonly LN10: double
+                    public static readonly LN2: double
+                    public static readonly LOG2E: double
+                    public static readonly LOG10E: double
+                    public static readonly PI: double
+                    public static readonly SQRT1_2: double
+                    public static readonly SQRT2: double
                     public static abs(arg0: java.lang.Object, arg1: java.lang.Object): double
                     public static abs(arg0: java.lang.Object, arg1: int): int
                     public static abs(arg0: java.lang.Object, arg1: long): long
@@ -57,7 +57,7 @@ declare namespace jdk {
                     public static sqrt(arg0: java.lang.Object, arg1: java.lang.Object): double
                     public static sqrt(arg0: java.lang.Object, arg1: double): double
                     public static tan(arg0: java.lang.Object, arg1: java.lang.Object): double
-                    public public static tan(arg0: java.lang.Object, arg1: double): double
+                    public static public static tan(arg0: java.lang.Object, arg1: double): double
                     public static $clinit$(): void
                     public static class: java.lang.Class<any>
                 }

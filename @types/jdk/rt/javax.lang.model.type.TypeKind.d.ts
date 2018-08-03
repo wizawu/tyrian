@@ -3,27 +3,27 @@ declare namespace javax {
         namespace model {
             namespace type {
                 class TypeKind extends java.lang.Enum<javax.lang.model.type.TypeKind> {
-                    public static BOOLEAN: javax.lang.model.type.TypeKind
-                    public static BYTE: javax.lang.model.type.TypeKind
-                    public static SHORT: javax.lang.model.type.TypeKind
-                    public static INT: javax.lang.model.type.TypeKind
-                    public static LONG: javax.lang.model.type.TypeKind
-                    public static CHAR: javax.lang.model.type.TypeKind
-                    public static FLOAT: javax.lang.model.type.TypeKind
-                    public static DOUBLE: javax.lang.model.type.TypeKind
-                    public static VOID: javax.lang.model.type.TypeKind
-                    public static NONE: javax.lang.model.type.TypeKind
-                    public static NULL: javax.lang.model.type.TypeKind
-                    public static ARRAY: javax.lang.model.type.TypeKind
-                    public static DECLARED: javax.lang.model.type.TypeKind
-                    public static ERROR: javax.lang.model.type.TypeKind
-                    public static TYPEVAR: javax.lang.model.type.TypeKind
-                    public static WILDCARD: javax.lang.model.type.TypeKind
-                    public static PACKAGE: javax.lang.model.type.TypeKind
-                    public static EXECUTABLE: javax.lang.model.type.TypeKind
-                    public static OTHER: javax.lang.model.type.TypeKind
-                    public static UNION: javax.lang.model.type.TypeKind
-                    public static INTERSECTION: javax.lang.model.type.TypeKind
+                    public static readonly BOOLEAN: javax.lang.model.type.TypeKind
+                    public static readonly BYTE: javax.lang.model.type.TypeKind
+                    public static readonly SHORT: javax.lang.model.type.TypeKind
+                    public static readonly INT: javax.lang.model.type.TypeKind
+                    public static readonly LONG: javax.lang.model.type.TypeKind
+                    public static readonly CHAR: javax.lang.model.type.TypeKind
+                    public static readonly FLOAT: javax.lang.model.type.TypeKind
+                    public static readonly DOUBLE: javax.lang.model.type.TypeKind
+                    public static readonly VOID: javax.lang.model.type.TypeKind
+                    public static readonly NONE: javax.lang.model.type.TypeKind
+                    public static readonly NULL: javax.lang.model.type.TypeKind
+                    public static readonly ARRAY: javax.lang.model.type.TypeKind
+                    public static readonly DECLARED: javax.lang.model.type.TypeKind
+                    public static readonly ERROR: javax.lang.model.type.TypeKind
+                    public static readonly TYPEVAR: javax.lang.model.type.TypeKind
+                    public static readonly WILDCARD: javax.lang.model.type.TypeKind
+                    public static readonly PACKAGE: javax.lang.model.type.TypeKind
+                    public static readonly EXECUTABLE: javax.lang.model.type.TypeKind
+                    public static readonly OTHER: javax.lang.model.type.TypeKind
+                    public static readonly UNION: javax.lang.model.type.TypeKind
+                    public static readonly INTERSECTION: javax.lang.model.type.TypeKind
                     public static values(): javax.lang.model.type.TypeKind[]
                     public static valueOf(arg0: java.lang.String | string): javax.lang.model.type.TypeKind
                     public isPrimitive(): boolean

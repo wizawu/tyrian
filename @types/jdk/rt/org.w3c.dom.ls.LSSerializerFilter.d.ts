@@ -5,9 +5,6 @@ declare namespace org {
                 interface LSSerializerFilter extends org.w3c.dom.traversal.NodeFilter {
                     getWhatToShow(): int
                 }
-                interface LSSerializerFilter$$Lambda extends org.w3c.dom.traversal.NodeFilter {
-                    (): int
-                }
             }
         }
     }

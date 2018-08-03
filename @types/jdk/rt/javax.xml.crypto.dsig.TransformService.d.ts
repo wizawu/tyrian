@@ -10,9 +10,9 @@ declare namespace javax {
                     public getMechanismType(): string
                     public getAlgorithm(): string
                     public getProvider(): java.security.Provider
-                    public init(arg0: javax.xml.crypto.dsig.spec.TransformParameterSpec): void
-                    public marshalParams(arg0: javax.xml.crypto.XMLStructure | javax.xml.crypto.XMLStructure$$Lambda, arg1: javax.xml.crypto.XMLCryptoContext): void
-                    public init(arg0: javax.xml.crypto.XMLStructure | javax.xml.crypto.XMLStructure$$Lambda, arg1: javax.xml.crypto.XMLCryptoContext): void
+                    public abstract init(arg0: javax.xml.crypto.dsig.spec.TransformParameterSpec): void
+                    public abstract marshalParams(arg0: javax.xml.crypto.XMLStructure | javax.xml.crypto.XMLStructure$$Lambda, arg1: javax.xml.crypto.XMLCryptoContext): void
+                    public abstract init(arg0: javax.xml.crypto.XMLStructure | javax.xml.crypto.XMLStructure$$Lambda, arg1: javax.xml.crypto.XMLCryptoContext): void
                     public static class: java.lang.Class<any>
                 }
             }

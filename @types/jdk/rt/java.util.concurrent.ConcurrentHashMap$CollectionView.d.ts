@@ -6,15 +6,15 @@ declare namespace java {
                 public clear(): void
                 public size(): int
                 public isEmpty(): boolean
-                public iterator(): java.util.Iterator<E>
-                public contains(arg0: java.lang.Object): boolean
-                public remove(arg0: java.lang.Object): boolean
+                public abstract iterator(): java.util.Iterator<E>
+                public abstract contains(arg0: java.lang.Object): boolean
+                public abstract remove(arg0: java.lang.Object): boolean
                 public toArray(): java.lang.Object[]
                 public toArray<T>(arg0: T[]): T[]
-                public toString(): string
-                public containsAll(arg0: java.util.Collection<any>): boolean
-                public removeAll(arg0: java.util.Collection<any>): boolean
-                public retainAll(arg0: java.util.Collection<any>): boolean
+                public toString<T>(): string
+                public containsAll<T>(arg0: java.util.Collection<any>): boolean
+                public removeAll<T>(arg0: java.util.Collection<any>): boolean
+                public retainAll<T>(arg0: java.util.Collection<any>): boolean
                 public static class: java.lang.Class<any>
             }
         }

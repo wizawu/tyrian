@@ -1,8 +1,8 @@
 declare namespace java {
     namespace util {
         class Locale$LanguageRange {
-            public static MAX_WEIGHT: double
-            public static MIN_WEIGHT: double
+            public static readonly MAX_WEIGHT: double
+            public static readonly MIN_WEIGHT: double
             public constructor(arg0: java.lang.String | string)
             public constructor(arg0: java.lang.String | string, arg1: double)
             public getRange(): string

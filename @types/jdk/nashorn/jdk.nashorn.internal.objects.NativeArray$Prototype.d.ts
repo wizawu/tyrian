@@ -46,7 +46,7 @@ declare namespace jdk {
                     public G$reduce(): java.lang.Object
                     public S$reduce(arg0: java.lang.Object): void
                     public G$reduceRight(): java.lang.Object
-                    public public S$reduceRight(arg0: java.lang.Object): void
+                    public static public S$reduceRight(arg0: java.lang.Object): void
                     public getClassName(): string
                     public static class: java.lang.Class<any>
                 }

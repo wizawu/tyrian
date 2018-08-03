@@ -8,8 +8,8 @@ declare namespace com {
                             namespace xs {
                                 namespace identity {
                                     class Selector$Matcher extends com.sun.org.apache.xerces.internal.impl.xs.identity.XPathMatcher {
-                                        protected fFieldActivator: com.sun.org.apache.xerces.internal.impl.xs.identity.FieldActivator
-                                        protected fInitialDepth: int
+                                        protected readonly fFieldActivator: com.sun.org.apache.xerces.internal.impl.xs.identity.FieldActivator
+                                        protected readonly fInitialDepth: int
                                         protected fElementDepth: int
                                         protected fMatchedDepth: int
                                         public constructor(arg0: com.sun.org.apache.xerces.internal.impl.xs.identity.Selector, arg1: com.sun.org.apache.xerces.internal.impl.xs.identity.Selector$XPath, arg2: com.sun.org.apache.xerces.internal.impl.xs.identity.FieldActivator, arg3: int)

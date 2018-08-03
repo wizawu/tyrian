@@ -3,14 +3,14 @@ declare namespace jdk {
         namespace internal {
             namespace parser {
                 class DateParser {
-                    public static YEAR: int
-                    public static MONTH: int
-                    public static DAY: int
-                    public static HOUR: int
-                    public static MINUTE: int
-                    public static SECOND: int
-                    public static MILLISECOND: int
-                    public static TIMEZONE: int
+                    public static readonly YEAR: int
+                    public static readonly MONTH: int
+                    public static readonly DAY: int
+                    public static readonly HOUR: int
+                    public static readonly MINUTE: int
+                    public static readonly SECOND: int
+                    public static readonly MILLISECOND: int
+                    public static readonly TIMEZONE: int
                     public constructor(arg0: java.lang.String | string)
                     public parse(): boolean
                     public parseEcmaDate(): boolean

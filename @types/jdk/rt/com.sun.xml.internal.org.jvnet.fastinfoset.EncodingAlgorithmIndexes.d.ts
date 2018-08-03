@@ -6,16 +6,16 @@ declare namespace com {
                     namespace jvnet {
                         namespace fastinfoset {
                             class EncodingAlgorithmIndexes {
-                                public static HEXADECIMAL: int
-                                public static BASE64: int
-                                public static SHORT: int
-                                public static INT: int
-                                public static LONG: int
-                                public static BOOLEAN: int
-                                public static FLOAT: int
-                                public static DOUBLE: int
-                                public static UUID: int
-                                public static CDATA: int
+                                public static readonly HEXADECIMAL: int
+                                public static readonly BASE64: int
+                                public static readonly SHORT: int
+                                public static readonly INT: int
+                                public static readonly LONG: int
+                                public static readonly BOOLEAN: int
+                                public static readonly FLOAT: int
+                                public static readonly DOUBLE: int
+                                public static readonly UUID: int
+                                public static readonly CDATA: int
                                 public constructor()
                                 public static class: java.lang.Class<any>
                             }

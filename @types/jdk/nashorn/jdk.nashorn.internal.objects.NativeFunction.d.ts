@@ -3,7 +3,7 @@ declare namespace jdk {
         namespace internal {
             namespace objects {
                 class NativeFunction {
-                    public static TO_APPLY_ARGS: java.lang.invoke.MethodHandle
+                    public static readonly TO_APPLY_ARGS: java.lang.invoke.MethodHandle
                     public static toString(arg0: java.lang.Object): string
                     public static apply(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): java.lang.Object
                     public static toApplyArgs(arg0: java.lang.Object): java.lang.Object[]

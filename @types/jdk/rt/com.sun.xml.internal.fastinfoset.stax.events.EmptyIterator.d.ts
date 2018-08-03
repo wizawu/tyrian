@@ -6,7 +6,7 @@ declare namespace com {
                     namespace stax {
                         namespace events {
                             class EmptyIterator implements java.util.Iterator {
-                                public static instance: com.sun.xml.internal.fastinfoset.stax.events.EmptyIterator
+                                public static readonly instance: com.sun.xml.internal.fastinfoset.stax.events.EmptyIterator
                                 public static getInstance(): com.sun.xml.internal.fastinfoset.stax.events.EmptyIterator
                                 public hasNext(): boolean
                                 public next(): java.lang.Object

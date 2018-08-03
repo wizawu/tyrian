@@ -19,7 +19,7 @@ declare namespace com {
                             public isEnabled(arg0: java.lang.Class<javax.xml.ws.WebServiceFeature>): boolean
                             public contains(arg0: java.lang.Class<javax.xml.ws.WebServiceFeature>): boolean
                             public get<F extends javax.xml.ws.WebServiceFeature>(arg0: java.lang.Class<F>): F
-                            public add<F extends javax.xml.ws.WebServiceFeature>(arg0: javax.xml.ws.WebServiceFeature): void
+                            public add<F extends javax.xml.ws.WebServiceFeature>(arg0: javax.xml.ws.WebServiceFeature | javax.xml.ws.WebServiceFeature$$Lambda): void
                             public addAll<F extends javax.xml.ws.WebServiceFeature>(arg0: java.lang.Iterable<javax.xml.ws.WebServiceFeature>): void
                             public equals<F extends javax.xml.ws.WebServiceFeature>(arg0: java.lang.Object): boolean
                             public toString<F extends javax.xml.ws.WebServiceFeature>(): string
@@ -29,7 +29,7 @@ declare namespace com {
                             public setParentFeaturedObject<F extends javax.xml.ws.WebServiceFeature>(arg0: com.sun.xml.internal.ws.api.model.wsdl.WSDLFeaturedObject): void
                             public static getFeature<F extends javax.xml.ws.WebServiceFeature>(arg0: javax.xml.ws.WebServiceFeature[], arg1: java.lang.Class<F>): F
                             public entrySet<F extends javax.xml.ws.WebServiceFeature>(): java.util.Set<java.util.Map$Entry<java.lang.Class<javax.xml.ws.WebServiceFeature>, javax.xml.ws.WebServiceFeature>>
-                            public put<F extends javax.xml.ws.WebServiceFeature>(arg0: java.lang.Class<javax.xml.ws.WebServiceFeature>, arg1: javax.xml.ws.WebServiceFeature): javax.xml.ws.WebServiceFeature
+                            public put<F extends javax.xml.ws.WebServiceFeature>(arg0: java.lang.Class<javax.xml.ws.WebServiceFeature>, arg1: javax.xml.ws.WebServiceFeature | javax.xml.ws.WebServiceFeature$$Lambda): javax.xml.ws.WebServiceFeature
                             public static getSoapVersion<F extends javax.xml.ws.WebServiceFeature>(arg0: com.sun.xml.internal.ws.api.WSFeatureList): com.sun.xml.internal.ws.api.SOAPVersion
                             public static isFeatureEnabled<F extends javax.xml.ws.WebServiceFeature>(arg0: java.lang.Class<javax.xml.ws.WebServiceFeature>, arg1: javax.xml.ws.WebServiceFeature[]): boolean
                             public static toFeatureArray<F extends javax.xml.ws.WebServiceFeature>(arg0: com.sun.xml.internal.ws.api.WSBinding): javax.xml.ws.WebServiceFeature[]

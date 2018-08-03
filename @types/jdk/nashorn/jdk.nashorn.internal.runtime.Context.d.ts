@@ -3,13 +3,13 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 class Context {
-                    public static NASHORN_SET_CONFIG: string
-                    public static NASHORN_CREATE_CONTEXT: string
-                    public static NASHORN_CREATE_GLOBAL: string
-                    public static NASHORN_GET_CONTEXT: string
-                    public static NASHORN_JAVA_REFLECTION: string
-                    public static NASHORN_DEBUG_MODE: string
-                    public static DEBUG: boolean
+                    public static readonly NASHORN_SET_CONFIG: string
+                    public static readonly NASHORN_CREATE_CONTEXT: string
+                    public static readonly NASHORN_CREATE_GLOBAL: string
+                    public static readonly NASHORN_GET_CONTEXT: string
+                    public static readonly NASHORN_JAVA_REFLECTION: string
+                    public static readonly NASHORN_DEBUG_MODE: string
+                    public static readonly DEBUG: boolean
                     public static getGlobal(): jdk.nashorn.internal.objects.Global
                     public static setGlobal(arg0: jdk.nashorn.internal.runtime.ScriptObject): void
                     public static setGlobal(arg0: jdk.nashorn.internal.objects.Global): void

@@ -22,10 +22,10 @@ declare namespace java {
                 FALSE: string
                 LATEST: string
                 properties(): java.util.SortedMap<java.lang.String, java.lang.String>
-                pack(arg0: java.util.jar.JarFile, arg1: java.io.OutputStream): void
-                pack(arg0: java.util.jar.JarInputStream, arg1: java.io.OutputStream): void
-                addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
-                removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+                pack(arg0: java.util.jar.JarFile, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                pack(arg0: java.util.jar.JarInputStream, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+                removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
             }
         }
     }

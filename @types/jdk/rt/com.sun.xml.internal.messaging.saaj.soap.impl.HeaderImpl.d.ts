@@ -7,13 +7,13 @@ declare namespace com {
                         namespace soap {
                             namespace impl {
                                 abstract class HeaderImpl extends com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl implements javax.xml.soap.SOAPHeader {
-                                    protected static MUST_UNDERSTAND_ONLY: boolean
+                                    protected static readonly MUST_UNDERSTAND_ONLY: boolean
                                     protected constructor(arg0: com.sun.xml.internal.messaging.saaj.soap.SOAPDocumentImpl, arg1: com.sun.xml.internal.messaging.saaj.soap.name.NameImpl)
-                                    protected createHeaderElement(arg0: javax.xml.soap.Name): javax.xml.soap.SOAPHeaderElement
-                                    protected createHeaderElement(arg0: javax.xml.namespace.QName): javax.xml.soap.SOAPHeaderElement
-                                    protected getNotUnderstoodName(): com.sun.xml.internal.messaging.saaj.soap.name.NameImpl
-                                    protected getUpgradeName(): com.sun.xml.internal.messaging.saaj.soap.name.NameImpl
-                                    protected getSupportedEnvelopeName(): com.sun.xml.internal.messaging.saaj.soap.name.NameImpl
+                                    protected abstract createHeaderElement(arg0: javax.xml.soap.Name): javax.xml.soap.SOAPHeaderElement
+                                    protected abstract createHeaderElement(arg0: javax.xml.namespace.QName): javax.xml.soap.SOAPHeaderElement
+                                    protected abstract getNotUnderstoodName(): com.sun.xml.internal.messaging.saaj.soap.name.NameImpl
+                                    protected abstract getUpgradeName(): com.sun.xml.internal.messaging.saaj.soap.name.NameImpl
+                                    protected abstract getSupportedEnvelopeName(): com.sun.xml.internal.messaging.saaj.soap.name.NameImpl
                                     public addHeaderElement(arg0: javax.xml.soap.Name): javax.xml.soap.SOAPHeaderElement
                                     public addHeaderElement(arg0: javax.xml.namespace.QName): javax.xml.soap.SOAPHeaderElement
                                     protected addElement(arg0: javax.xml.soap.Name): javax.xml.soap.SOAPElement

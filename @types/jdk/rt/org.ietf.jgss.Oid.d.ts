@@ -3,7 +3,7 @@ declare namespace org {
         namespace jgss {
             class Oid {
                 public constructor(arg0: java.lang.String | string)
-                public constructor(arg0: java.io.InputStream)
+                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                 public constructor(arg0: byte[])
                 public toString(): string
                 public equals(arg0: java.lang.Object): boolean

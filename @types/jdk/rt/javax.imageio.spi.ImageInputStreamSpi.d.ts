@@ -8,9 +8,12 @@ declare namespace javax {
                 public getInputClass(): java.lang.Class<any>
                 public canUseCacheFile(): boolean
                 public needsCacheFile(): boolean
-                public createInputStreamInstance(arg0: java.lang.Object, arg1: boolean, arg2: java.io.File): javax.imageio.stream.ImageInputStream
+                public abstract createInputStreamInstance(arg0: java.lang.Object, arg1: boolean, arg2: java.io.File): javax.imageio.stream.ImageInputStream
                 public createInputStreamInstance(arg0: java.lang.Object): javax.imageio.stream.ImageInputStream
                 public static class: java.lang.Class<any>
+            }
+            interface ImageInputStreamSpi$$Lambda extends javax.imageio.spi.IIOServiceProvider {
+                (arg0: java.lang.Object, arg1: boolean, arg2: java.io.File): javax.imageio.stream.ImageInputStream
             }
         }
     }

@@ -21,14 +21,14 @@ declare namespace org {
                 get_servant_manager(): org.omg.PortableServer.ServantManager
                 set_servant_manager(arg0: org.omg.PortableServer.ServantManager): void
                 get_servant(): org.omg.PortableServer.Servant
-                set_servant(arg0: org.omg.PortableServer.Servant): void
-                activate_object(arg0: org.omg.PortableServer.Servant): byte[]
-                activate_object_with_id(arg0: byte[], arg1: org.omg.PortableServer.Servant): void
+                set_servant(arg0: org.omg.PortableServer.Servant | org.omg.PortableServer.Servant$$Lambda): void
+                activate_object(arg0: org.omg.PortableServer.Servant | org.omg.PortableServer.Servant$$Lambda): byte[]
+                activate_object_with_id(arg0: byte[], arg1: org.omg.PortableServer.Servant | org.omg.PortableServer.Servant$$Lambda): void
                 deactivate_object(arg0: byte[]): void
                 create_reference(arg0: java.lang.String | string): org.omg.CORBA.Object
                 create_reference_with_id(arg0: byte[], arg1: java.lang.String | string): org.omg.CORBA.Object
-                servant_to_id(arg0: org.omg.PortableServer.Servant): byte[]
-                servant_to_reference(arg0: org.omg.PortableServer.Servant): org.omg.CORBA.Object
+                servant_to_id(arg0: org.omg.PortableServer.Servant | org.omg.PortableServer.Servant$$Lambda): byte[]
+                servant_to_reference(arg0: org.omg.PortableServer.Servant | org.omg.PortableServer.Servant$$Lambda): org.omg.CORBA.Object
                 reference_to_servant(arg0: org.omg.CORBA.Object): org.omg.PortableServer.Servant
                 reference_to_id(arg0: org.omg.CORBA.Object): byte[]
                 id_to_servant(arg0: byte[]): org.omg.PortableServer.Servant

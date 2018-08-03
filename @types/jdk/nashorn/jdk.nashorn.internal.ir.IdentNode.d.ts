@@ -26,7 +26,7 @@ declare namespace jdk {
                     public setIsDeclaredHere(): jdk.nashorn.internal.ir.IdentNode
                     public isCompileTimePropertyName(): boolean
                     public isFunction(): boolean
-                    public setType(arg0: jdk.nashorn.internal.codegen.types.Type): jdk.nashorn.internal.ir.IdentNode
+                    public setType(arg0: jdk.nashorn.internal.codegen.types.Type | jdk.nashorn.internal.codegen.types.Type$$Lambda): jdk.nashorn.internal.ir.IdentNode
                     public setIsFunction(): jdk.nashorn.internal.ir.IdentNode
                     public setIsNotFunction(): jdk.nashorn.internal.ir.IdentNode
                     public getProgramPoint(): int
@@ -37,7 +37,7 @@ declare namespace jdk {
                     public setLocalVariableConversion(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: jdk.nashorn.internal.ir.LocalVariableConversion): jdk.nashorn.internal.ir.JoinPredecessor
                     public isInternal(): boolean
                     public getLocalVariableConversion(): jdk.nashorn.internal.ir.LocalVariableConversion
-                    public setType(arg0: jdk.nashorn.internal.codegen.types.Type): jdk.nashorn.internal.ir.Optimistic
+                    public setType(arg0: jdk.nashorn.internal.codegen.types.Type | jdk.nashorn.internal.codegen.types.Type$$Lambda): jdk.nashorn.internal.ir.Optimistic
                     public static class: java.lang.Class<any>
                 }
             }

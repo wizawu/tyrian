@@ -6,7 +6,7 @@ declare namespace com {
                     namespace dtd {
                         namespace nonvalidating {
                             class DTDGrammar {
-                                public static TOP_LEVEL_SCOPE: int
+                                public static readonly TOP_LEVEL_SCOPE: int
                                 protected fDTDSource: com.sun.org.apache.xerces.internal.xni.parser.XMLDTDSource
                                 protected fDTDContentModelSource: com.sun.org.apache.xerces.internal.xni.parser.XMLDTDContentModelSource
                                 protected fCurrentElementIndex: int

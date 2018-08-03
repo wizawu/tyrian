@@ -1,12 +1,12 @@
 declare namespace javax {
     namespace swing {
         class JColorChooser extends javax.swing.JComponent implements javax.accessibility.Accessible {
-            public static SELECTION_MODEL_PROPERTY: string
-            public static PREVIEW_PANEL_PROPERTY: string
-            public static CHOOSER_PANELS_PROPERTY: string
+            public static readonly SELECTION_MODEL_PROPERTY: string
+            public static readonly PREVIEW_PANEL_PROPERTY: string
+            public static readonly CHOOSER_PANELS_PROPERTY: string
             protected accessibleContext: javax.accessibility.AccessibleContext
             public static showDialog(arg0: java.awt.Component, arg1: java.lang.String | string, arg2: java.awt.Color): java.awt.Color
-            public static createDialog(arg0: java.awt.Component, arg1: java.lang.String | string, arg2: boolean, arg3: javax.swing.JColorChooser, arg4: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda, arg5: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): javax.swing.JDialog
+            public static createDialog(arg0: java.awt.Component, arg1: java.lang.String | string, arg2: boolean, arg3: javax.swing.JColorChooser, arg4: java.awt.event.ActionListener, arg5: java.awt.event.ActionListener): javax.swing.JDialog
             public constructor()
             public constructor(arg0: java.awt.Color)
             public constructor(arg0: javax.swing.colorchooser.ColorSelectionModel)

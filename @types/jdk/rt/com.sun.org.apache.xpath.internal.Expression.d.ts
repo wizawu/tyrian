@@ -9,7 +9,7 @@ declare namespace com {
                             public canTraverseOutsideSubtree(): boolean
                             public execute(arg0: com.sun.org.apache.xpath.internal.XPathContext, arg1: int): com.sun.org.apache.xpath.internal.objects.XObject
                             public execute(arg0: com.sun.org.apache.xpath.internal.XPathContext, arg1: int, arg2: com.sun.org.apache.xml.internal.dtm.DTM, arg3: int): com.sun.org.apache.xpath.internal.objects.XObject
-                            public execute(arg0: com.sun.org.apache.xpath.internal.XPathContext): com.sun.org.apache.xpath.internal.objects.XObject
+                            public abstract execute(arg0: com.sun.org.apache.xpath.internal.XPathContext): com.sun.org.apache.xpath.internal.objects.XObject
                             public execute(arg0: com.sun.org.apache.xpath.internal.XPathContext, arg1: boolean): com.sun.org.apache.xpath.internal.objects.XObject
                             public num(arg0: com.sun.org.apache.xpath.internal.XPathContext): double
                             public bool(arg0: com.sun.org.apache.xpath.internal.XPathContext): boolean
@@ -20,8 +20,8 @@ declare namespace com {
                             public asIteratorRaw(arg0: com.sun.org.apache.xpath.internal.XPathContext, arg1: int): com.sun.org.apache.xml.internal.dtm.DTMIterator
                             public executeCharsToContentHandler(arg0: com.sun.org.apache.xpath.internal.XPathContext, arg1: org.xml.sax.ContentHandler): void
                             public isStableNumber(): boolean
-                            public fixupVariables(arg0: java.util.Vector, arg1: int): void
-                            public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression): boolean
+                            public abstract fixupVariables(arg0: java.util.Vector, arg1: int): void
+                            public abstract deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression): boolean
                             protected isSameClass(arg0: com.sun.org.apache.xpath.internal.Expression): boolean
                             public warn(arg0: com.sun.org.apache.xpath.internal.XPathContext, arg1: java.lang.String | string, arg2: java.lang.Object[]): void
                             public assertion(arg0: boolean, arg1: java.lang.String | string): void

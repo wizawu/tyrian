@@ -3,7 +3,7 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 class GlobalConstants implements jdk.nashorn.internal.runtime.logging.Loggable {
-                    public static GLOBAL_ONLY: boolean
+                    public static readonly GLOBAL_ONLY: boolean
                     public constructor(arg0: jdk.nashorn.internal.runtime.logging.DebugLogger)
                     public getLogger(): jdk.nashorn.internal.runtime.logging.DebugLogger
                     public initLogger(arg0: jdk.nashorn.internal.runtime.Context): jdk.nashorn.internal.runtime.logging.DebugLogger

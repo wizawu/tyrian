@@ -8,11 +8,11 @@ declare namespace com {
                             namespace transforms {
                                 namespace params {
                                     class XPathFilterCHGPContainer extends com.sun.org.apache.xml.internal.security.utils.ElementProxy implements com.sun.org.apache.xml.internal.security.transforms.TransformParam {
-                                        public static TRANSFORM_XPATHFILTERCHGP: string
-                                        public static _TAG_XPATHCHGP: string
-                                        public static _ATT_INCLUDESLASH: string
-                                        public static IncludeSlash: boolean
-                                        public static ExcludeSlash: boolean
+                                        public static readonly TRANSFORM_XPATHFILTERCHGP: string
+                                        public static readonly _TAG_XPATHCHGP: string
+                                        public static readonly _ATT_INCLUDESLASH: string
+                                        public static readonly IncludeSlash: boolean
+                                        public static readonly ExcludeSlash: boolean
                                         public static getInstance(arg0: org.w3c.dom.Document, arg1: boolean, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.String | string): com.sun.org.apache.xml.internal.security.transforms.params.XPathFilterCHGPContainer
                                         public static getInstance(arg0: org.w3c.dom.Element, arg1: java.lang.String | string): com.sun.org.apache.xml.internal.security.transforms.params.XPathFilterCHGPContainer
                                         public getIncludeButSearch(): string

@@ -4,7 +4,7 @@ declare namespace com {
             namespace plugins {
                 namespace bmp {
                     class BMPMetadata extends javax.imageio.metadata.IIOMetadata implements com.sun.imageio.plugins.bmp.BMPConstants {
-                        public static nativeMetadataFormatName: string
+                        public static readonly nativeMetadataFormatName: string
                         public bmpVersion: string
                         public width: int
                         public height: int

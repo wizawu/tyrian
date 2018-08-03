@@ -5,7 +5,7 @@ declare namespace com {
                 namespace ws {
                     namespace model {
                         class WrapperParameter extends com.sun.xml.internal.ws.model.ParameterImpl {
-                            protected wrapperChildren: java.util.List<com.sun.xml.internal.ws.model.ParameterImpl>
+                            protected readonly wrapperChildren: java.util.List<com.sun.xml.internal.ws.model.ParameterImpl>
                             public constructor(arg0: com.sun.xml.internal.ws.model.JavaMethodImpl, arg1: com.sun.xml.internal.ws.spi.db.TypeInfo, arg2: javax.jws.WebParam$Mode, arg3: int)
                             public isWrapperStyle(): boolean
                             public getWrapperChildren(): java.util.List<com.sun.xml.internal.ws.model.ParameterImpl>

@@ -3,8 +3,8 @@ declare namespace sun {
         namespace tools {
             namespace keytool {
                 class Pair<A, B> {
-                    public fst: A
-                    public snd: B
+                    public readonly fst: A
+                    public readonly snd: B
                     public constructor(arg0: A, arg1: B)
                     public toString(): string
                     public equals(arg0: java.lang.Object): boolean

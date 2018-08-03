@@ -3,11 +3,11 @@ declare namespace sun {
         namespace provider {
             namespace certpath {
                 class BuildStep {
-                    public static POSSIBLE: int
-                    public static BACK: int
-                    public static FOLLOW: int
-                    public static FAIL: int
-                    public static SUCCEED: int
+                    public static readonly POSSIBLE: int
+                    public static readonly BACK: int
+                    public static readonly FOLLOW: int
+                    public static readonly FAIL: int
+                    public static readonly SUCCEED: int
                     public constructor(arg0: sun.security.provider.certpath.Vertex, arg1: int)
                     public getVertex(): sun.security.provider.certpath.Vertex
                     public getCertificate(): java.security.cert.X509Certificate

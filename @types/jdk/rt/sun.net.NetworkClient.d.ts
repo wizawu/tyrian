@@ -1,8 +1,8 @@
 declare namespace sun {
     namespace net {
         class NetworkClient {
-            public static DEFAULT_READ_TIMEOUT: int
-            public static DEFAULT_CONNECT_TIMEOUT: int
+            public static readonly DEFAULT_READ_TIMEOUT: int
+            public static readonly DEFAULT_CONNECT_TIMEOUT: int
             protected proxy: java.net.Proxy
             protected serverSocket: java.net.Socket
             public serverOutput: java.io.PrintStream

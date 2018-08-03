@@ -5,13 +5,13 @@ declare namespace com {
                 namespace impl {
                     namespace logging {
                         class ActivationSystemException extends com.sun.corba.se.spi.logging.LogWrapperBase {
-                            public static CANNOT_READ_REPOSITORY_DB: int
-                            public static CANNOT_ADD_INITIAL_NAMING: int
-                            public static CANNOT_WRITE_REPOSITORY_DB: int
-                            public static SERVER_NOT_EXPECTED_TO_REGISTER: int
-                            public static UNABLE_TO_START_PROCESS: int
-                            public static SERVER_NOT_RUNNING: int
-                            public static ERROR_IN_BAD_SERVER_ID_HANDLER: int
+                            public static readonly CANNOT_READ_REPOSITORY_DB: int
+                            public static readonly CANNOT_ADD_INITIAL_NAMING: int
+                            public static readonly CANNOT_WRITE_REPOSITORY_DB: int
+                            public static readonly SERVER_NOT_EXPECTED_TO_REGISTER: int
+                            public static readonly UNABLE_TO_START_PROCESS: int
+                            public static readonly SERVER_NOT_RUNNING: int
+                            public static readonly ERROR_IN_BAD_SERVER_ID_HANDLER: int
                             public constructor(arg0: java.util.logging.Logger)
                             public static get(arg0: com.sun.corba.se.spi.orb.ORB, arg1: java.lang.String | string): com.sun.corba.se.impl.logging.ActivationSystemException
                             public static get(arg0: java.lang.String | string): com.sun.corba.se.impl.logging.ActivationSystemException

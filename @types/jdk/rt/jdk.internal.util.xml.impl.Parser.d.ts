@@ -4,34 +4,34 @@ declare namespace jdk {
             namespace xml {
                 namespace impl {
                     abstract class Parser {
-                        public static FAULT: string
-                        protected static BUFFSIZE_READER: int
-                        protected static BUFFSIZE_PARSER: int
-                        public static EOS: char
+                        public static readonly FAULT: string
+                        protected static readonly BUFFSIZE_READER: int
+                        protected static readonly BUFFSIZE_PARSER: int
+                        public static readonly EOS: char
                         protected mIsSAlone: boolean
                         protected mIsSAloneSet: boolean
                         protected mIsNSAware: boolean
                         protected mPh: int
-                        protected static PH_BEFORE_DOC: int
-                        protected static PH_DOC_START: int
-                        protected static PH_MISC_DTD: int
-                        protected static PH_DTD: int
-                        protected static PH_DTD_MISC: int
-                        protected static PH_DOCELM: int
-                        protected static PH_DOCELM_MISC: int
-                        protected static PH_AFTER_DOC: int
+                        protected static readonly PH_BEFORE_DOC: int
+                        protected static readonly PH_DOC_START: int
+                        protected static readonly PH_MISC_DTD: int
+                        protected static readonly PH_DTD: int
+                        protected static readonly PH_DTD_MISC: int
+                        protected static readonly PH_DOCELM: int
+                        protected static readonly PH_DOCELM_MISC: int
+                        protected static readonly PH_AFTER_DOC: int
                         protected mEvt: int
-                        protected static EV_NULL: int
-                        protected static EV_ELM: int
-                        protected static EV_ELMS: int
-                        protected static EV_ELME: int
-                        protected static EV_TEXT: int
-                        protected static EV_WSPC: int
-                        protected static EV_PI: int
-                        protected static EV_CDAT: int
-                        protected static EV_COMM: int
-                        protected static EV_DTD: int
-                        protected static EV_ENT: int
+                        protected static readonly EV_NULL: int
+                        protected static readonly EV_ELM: int
+                        protected static readonly EV_ELMS: int
+                        protected static readonly EV_ELME: int
+                        protected static readonly EV_TEXT: int
+                        protected static readonly EV_WSPC: int
+                        protected static readonly EV_PI: int
+                        protected static readonly EV_CDAT: int
+                        protected static readonly EV_COMM: int
+                        protected static readonly EV_DTD: int
+                        protected static readonly EV_ENT: int
                         protected mBuff: char[]
                         protected mBuffIdx: int
                         protected mPref: jdk.internal.util.xml.impl.Pair
@@ -48,17 +48,17 @@ declare namespace jdk {
                         protected qname(arg0: boolean): char[]
                         protected eqstr(arg0: char): string
                         protected wsskip(): char
-                        protected docType(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void
-                        protected comm(arg0: char[], arg1: int): void
-                        protected pi(arg0: java.lang.String | string, arg1: java.lang.String | string): void
-                        protected newPrefix(): void
-                        protected skippedEnt(arg0: java.lang.String | string): void
-                        protected resolveEnt(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): jdk.internal.org.xml.sax.InputSource
-                        protected notDecl(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void
-                        protected unparsedEntDecl(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string): void
-                        protected panic(arg0: java.lang.String | string): void
-                        protected bflash(): void
-                        protected bflash_ws(): void
+                        protected abstract docType(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void
+                        protected abstract comm(arg0: char[], arg1: int): void
+                        protected abstract pi(arg0: java.lang.String | string, arg1: java.lang.String | string): void
+                        protected abstract newPrefix(): void
+                        protected abstract skippedEnt(arg0: java.lang.String | string): void
+                        protected abstract resolveEnt(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): jdk.internal.org.xml.sax.InputSource
+                        protected abstract notDecl(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void
+                        protected abstract unparsedEntDecl(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string): void
+                        protected abstract panic(arg0: java.lang.String | string): void
+                        protected abstract bflash(): void
+                        protected abstract bflash_ws(): void
                         protected setinp(arg0: jdk.internal.org.xml.sax.InputSource): void
                         protected push(arg0: jdk.internal.util.xml.impl.Input): void
                         protected pop(): void

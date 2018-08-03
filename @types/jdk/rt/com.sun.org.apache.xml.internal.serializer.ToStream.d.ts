@@ -28,11 +28,11 @@ declare namespace com {
                                 public internalEntityDecl(arg0: java.lang.String | string, arg1: java.lang.String | string): void
                                 protected outputLineSep(): void
                                 public setOutputFormat(arg0: java.util.Properties): void
-                                protected init(arg0: java.io.OutputStream, arg1: java.util.Properties, arg2: boolean): void
+                                protected init(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: java.util.Properties, arg2: boolean): void
                                 public getOutputFormat(): java.util.Properties
                                 public setWriter(arg0: java.io.Writer): void
                                 public setLineSepUse(arg0: boolean): boolean
-                                public setOutputStream(arg0: java.io.OutputStream): void
+                                public setOutputStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                                 public setEscaping(arg0: boolean): boolean
                                 protected indent(arg0: int): void
                                 protected indent(): void

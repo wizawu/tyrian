@@ -3,7 +3,7 @@ declare namespace javax {
         namespace transform {
             namespace dom {
                 class DOMResult implements javax.xml.transform.Result {
-                    public static FEATURE: string
+                    public static readonly FEATURE: string
                     public constructor()
                     public constructor(arg0: org.w3c.dom.Node)
                     public constructor(arg0: org.w3c.dom.Node, arg1: java.lang.String | string)

@@ -2,8 +2,8 @@ declare namespace java {
     namespace util {
         namespace zip {
             class ZipInputStream extends java.util.zip.InflaterInputStream implements java.util.zip.ZipConstants {
-                public constructor(arg0: java.io.InputStream)
-                public constructor(arg0: java.io.InputStream, arg1: java.nio.charset.Charset)
+                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
+                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.nio.charset.Charset)
                 public getNextEntry(): java.util.zip.ZipEntry
                 public closeEntry(): void
                 public available(): int

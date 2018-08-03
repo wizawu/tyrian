@@ -15,7 +15,7 @@ declare namespace com {
                                     protected _isRestartable: boolean
                                     public constructor()
                                     public setRestartable(arg0: boolean): void
-                                    public setStartNode(arg0: int): com.sun.org.apache.xalan.internal.xsltc.NodeIterator
+                                    public abstract setStartNode(arg0: int): com.sun.org.apache.xalan.internal.xsltc.NodeIterator
                                     public reset(): com.sun.org.apache.xalan.internal.xsltc.NodeIterator
                                     public includeSelf(): com.sun.org.apache.xalan.internal.xsltc.NodeIterator
                                     public getLast(): int
@@ -25,6 +25,9 @@ declare namespace com {
                                     protected returnNode(arg0: int): int
                                     protected resetPosition(): com.sun.org.apache.xalan.internal.xsltc.NodeIterator
                                     public static class: java.lang.Class<any>
+                                }
+                                interface NodeIteratorBase$$Lambda implements com.sun.org.apache.xalan.internal.xsltc.NodeIterator {
+                                    (arg0: int): com.sun.org.apache.xalan.internal.xsltc.NodeIterator
                                 }
                             }
                         }

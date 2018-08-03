@@ -3,9 +3,9 @@ declare namespace javax {
         namespace remote {
             namespace rmi {
                 class RMIConnectorServer extends javax.management.remote.JMXConnectorServer {
-                    public static JNDI_REBIND_ATTRIBUTE: string
-                    public static RMI_CLIENT_SOCKET_FACTORY_ATTRIBUTE: string
-                    public static RMI_SERVER_SOCKET_FACTORY_ATTRIBUTE: string
+                    public static readonly JNDI_REBIND_ATTRIBUTE: string
+                    public static readonly RMI_CLIENT_SOCKET_FACTORY_ATTRIBUTE: string
+                    public static readonly RMI_SERVER_SOCKET_FACTORY_ATTRIBUTE: string
                     public constructor(arg0: javax.management.remote.JMXServiceURL, arg1: java.util.Map<java.lang.String, any>)
                     public constructor(arg0: javax.management.remote.JMXServiceURL, arg1: java.util.Map<java.lang.String, any>, arg2: javax.management.MBeanServer)
                     public constructor(arg0: javax.management.remote.JMXServiceURL, arg1: java.util.Map<java.lang.String, any>, arg2: javax.management.remote.rmi.RMIServerImpl, arg3: javax.management.MBeanServer)

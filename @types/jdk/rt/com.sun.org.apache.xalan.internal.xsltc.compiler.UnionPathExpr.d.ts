@@ -7,7 +7,7 @@ declare namespace com {
                         namespace xsltc {
                             namespace compiler {
                                 class UnionPathExpr extends com.sun.org.apache.xalan.internal.xsltc.compiler.Expression {
-                                    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression)
+                                    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression | com.sun.org.apache.xalan.internal.xsltc.compiler.Expression$$Lambda, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression | com.sun.org.apache.xalan.internal.xsltc.compiler.Expression$$Lambda)
                                     public setParser(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Parser): void
                                     public typeCheck(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable): com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type
                                     public toString(): string

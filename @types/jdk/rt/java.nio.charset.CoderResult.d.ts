@@ -2,8 +2,8 @@ declare namespace java {
     namespace nio {
         namespace charset {
             class CoderResult {
-                public static UNDERFLOW: java.nio.charset.CoderResult
-                public static OVERFLOW: java.nio.charset.CoderResult
+                public static readonly UNDERFLOW: java.nio.charset.CoderResult
+                public static readonly OVERFLOW: java.nio.charset.CoderResult
                 public toString(): string
                 public isUnderflow(): boolean
                 public isOverflow(): boolean

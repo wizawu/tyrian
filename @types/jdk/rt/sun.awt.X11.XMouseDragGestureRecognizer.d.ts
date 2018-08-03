@@ -3,7 +3,7 @@ declare namespace sun {
         namespace X11 {
             class XMouseDragGestureRecognizer extends java.awt.dnd.MouseDragGestureRecognizer {
                 protected static motionThreshold: int
-                protected static ButtonMask: int
+                protected static readonly ButtonMask: int
                 protected constructor(arg0: java.awt.dnd.DragSource, arg1: java.awt.Component, arg2: int, arg3: java.awt.dnd.DragGestureListener | java.awt.dnd.DragGestureListener$$Lambda)
                 protected constructor(arg0: java.awt.dnd.DragSource, arg1: java.awt.Component, arg2: int)
                 protected constructor(arg0: java.awt.dnd.DragSource, arg1: java.awt.Component)

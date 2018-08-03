@@ -5,7 +5,7 @@ declare namespace sun {
                 abstract class AuxLocaleProviderAdapter extends sun.util.locale.provider.LocaleProviderAdapter {
                     public constructor()
                     public getLocaleServiceProvider<P extends java.util.spi.LocaleServiceProvider>(arg0: java.lang.Class<P>): P
-                    protected findInstalledProvider<P extends java.util.spi.LocaleServiceProvider>(arg0: java.lang.Class<P>): P
+                    protected abstract findInstalledProvider<P extends java.util.spi.LocaleServiceProvider>(arg0: java.lang.Class<P>): P
                     public getBreakIteratorProvider<P extends java.util.spi.LocaleServiceProvider>(): java.text.spi.BreakIteratorProvider
                     public getCollatorProvider<P extends java.util.spi.LocaleServiceProvider>(): java.text.spi.CollatorProvider
                     public getDateFormatProvider<P extends java.util.spi.LocaleServiceProvider>(): java.text.spi.DateFormatProvider
@@ -21,6 +21,9 @@ declare namespace sun {
                     public getLocaleResources<P extends java.util.spi.LocaleServiceProvider>(arg0: java.util.Locale): sun.util.locale.provider.LocaleResources
                     public getAvailableLocales<P extends java.util.spi.LocaleServiceProvider>(): java.util.Locale[]
                     public static class: java.lang.Class<any>
+                }
+                interface AuxLocaleProviderAdapter$$Lambda extends sun.util.locale.provider.LocaleProviderAdapter {
+                    (arg0: java.lang.Class<P>): P
                 }
             }
         }

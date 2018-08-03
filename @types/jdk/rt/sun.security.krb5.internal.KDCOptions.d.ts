@@ -3,23 +3,23 @@ declare namespace sun {
         namespace krb5 {
             namespace internal {
                 class KDCOptions extends sun.security.krb5.internal.util.KerberosFlags {
-                    public static RESERVED: int
-                    public static FORWARDABLE: int
-                    public static FORWARDED: int
-                    public static PROXIABLE: int
-                    public static PROXY: int
-                    public static ALLOW_POSTDATE: int
-                    public static POSTDATED: int
-                    public static UNUSED7: int
-                    public static RENEWABLE: int
-                    public static UNUSED9: int
-                    public static UNUSED10: int
-                    public static UNUSED11: int
-                    public static CNAME_IN_ADDL_TKT: int
-                    public static RENEWABLE_OK: int
-                    public static ENC_TKT_IN_SKEY: int
-                    public static RENEW: int
-                    public static VALIDATE: int
+                    public static readonly RESERVED: int
+                    public static readonly FORWARDABLE: int
+                    public static readonly FORWARDED: int
+                    public static readonly PROXIABLE: int
+                    public static readonly PROXY: int
+                    public static readonly ALLOW_POSTDATE: int
+                    public static readonly POSTDATED: int
+                    public static readonly UNUSED7: int
+                    public static readonly RENEWABLE: int
+                    public static readonly UNUSED9: int
+                    public static readonly UNUSED10: int
+                    public static readonly UNUSED11: int
+                    public static readonly CNAME_IN_ADDL_TKT: int
+                    public static readonly RENEWABLE_OK: int
+                    public static readonly ENC_TKT_IN_SKEY: int
+                    public static readonly RENEW: int
+                    public static readonly VALIDATE: int
                     public static with(...arg0: int[]): sun.security.krb5.internal.KDCOptions
                     public constructor()
                     public constructor(arg0: int, arg1: byte[])

@@ -36,8 +36,8 @@ declare namespace com {
                             public writeTo(arg0: org.xml.sax.ContentHandler, arg1: org.xml.sax.ErrorHandler): void
                             public writeTo(arg0: org.w3c.dom.Node): org.w3c.dom.Node
                             public static createNewBufferFromXMLStreamReader(arg0: javax.xml.stream.XMLStreamReader): com.sun.xml.internal.stream.buffer.XMLStreamBuffer
-                            public static createNewBufferFromXMLReader(arg0: org.xml.sax.XMLReader, arg1: java.io.InputStream): com.sun.xml.internal.stream.buffer.XMLStreamBuffer
-                            public static createNewBufferFromXMLReader(arg0: org.xml.sax.XMLReader, arg1: java.io.InputStream, arg2: java.lang.String | string): com.sun.xml.internal.stream.buffer.XMLStreamBuffer
+                            public static createNewBufferFromXMLReader(arg0: org.xml.sax.XMLReader, arg1: java.io.InputStream | java.io.InputStream$$Lambda): com.sun.xml.internal.stream.buffer.XMLStreamBuffer
+                            public static createNewBufferFromXMLReader(arg0: org.xml.sax.XMLReader, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: java.lang.String | string): com.sun.xml.internal.stream.buffer.XMLStreamBuffer
                             protected getStructure(): com.sun.xml.internal.stream.buffer.FragmentedArray<byte[]>
                             protected getStructurePtr(): int
                             protected getStructureStrings(): com.sun.xml.internal.stream.buffer.FragmentedArray<java.lang.String[]>

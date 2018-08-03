@@ -7,9 +7,6 @@ declare namespace com {
                         interface FeatureListValidatorAnnotation extends java.lang.annotation.Annotation {
                             bean(): java.lang.Class<com.sun.xml.internal.ws.api.FeatureListValidator>
                         }
-                        interface FeatureListValidatorAnnotation$$Lambda extends java.lang.annotation.Annotation {
-                            (): java.lang.Class<com.sun.xml.internal.ws.api.FeatureListValidator>
-                        }
                     }
                 }
             }

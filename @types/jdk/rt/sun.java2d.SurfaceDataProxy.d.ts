@@ -3,8 +3,8 @@ declare namespace sun {
         abstract class SurfaceDataProxy implements sun.awt.DisplayChangedListener , sun.awt.image.SurfaceManager$FlushableCacheData {
             public static UNCACHED: sun.java2d.SurfaceDataProxy
             public static isCachingAllowed(): boolean
-            public isSupportedOperation(arg0: sun.java2d.SurfaceData, arg1: int, arg2: sun.java2d.loops.CompositeType, arg3: java.awt.Color): boolean
-            public validateSurfaceData(arg0: sun.java2d.SurfaceData, arg1: sun.java2d.SurfaceData, arg2: int, arg3: int): sun.java2d.SurfaceData
+            public abstract isSupportedOperation(arg0: sun.java2d.SurfaceData, arg1: int, arg2: sun.java2d.loops.CompositeType, arg3: java.awt.Color): boolean
+            public abstract validateSurfaceData(arg0: sun.java2d.SurfaceData, arg1: sun.java2d.SurfaceData, arg2: int, arg3: int): sun.java2d.SurfaceData
             public getRetryTracker(arg0: sun.java2d.SurfaceData): sun.java2d.StateTracker
             public constructor()
             public constructor(arg0: int)

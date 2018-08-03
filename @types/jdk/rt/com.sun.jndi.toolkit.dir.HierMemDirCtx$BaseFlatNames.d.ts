@@ -7,9 +7,12 @@ declare namespace com {
                         public hasMoreElements(): boolean
                         public hasMore(): boolean
                         public nextElement(): T
-                        public next(): T
+                        public abstract next(): T
                         public close(): void
                         public static class: java.lang.Class<any>
+                    }
+                    interface HierMemDirCtx$BaseFlatNames$$Lambda<T> implements javax.naming.NamingEnumeration<T> {
+                        (): T
                     }
                 }
             }

@@ -2,16 +2,16 @@ declare namespace java {
     namespace awt {
         namespace geom {
             class AffineTransform implements java.lang.Cloneable , java.io.Serializable {
-                public static TYPE_IDENTITY: int
-                public static TYPE_TRANSLATION: int
-                public static TYPE_UNIFORM_SCALE: int
-                public static TYPE_GENERAL_SCALE: int
-                public static TYPE_MASK_SCALE: int
-                public static TYPE_FLIP: int
-                public static TYPE_QUADRANT_ROTATION: int
-                public static TYPE_GENERAL_ROTATION: int
-                public static TYPE_MASK_ROTATION: int
-                public static TYPE_GENERAL_TRANSFORM: int
+                public static readonly TYPE_IDENTITY: int
+                public static readonly TYPE_TRANSLATION: int
+                public static readonly TYPE_UNIFORM_SCALE: int
+                public static readonly TYPE_GENERAL_SCALE: int
+                public static readonly TYPE_MASK_SCALE: int
+                public static readonly TYPE_FLIP: int
+                public static readonly TYPE_QUADRANT_ROTATION: int
+                public static readonly TYPE_GENERAL_ROTATION: int
+                public static readonly TYPE_MASK_ROTATION: int
+                public static readonly TYPE_GENERAL_TRANSFORM: int
                 public constructor()
                 public constructor(arg0: java.awt.geom.AffineTransform)
                 public constructor(arg0: float, arg1: float, arg2: float, arg3: float, arg4: float, arg5: float)

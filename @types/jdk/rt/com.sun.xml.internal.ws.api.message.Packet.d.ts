@@ -7,9 +7,9 @@ declare namespace com {
                         namespace message {
                             class Packet extends com.oracle.webservices.internal.api.message.BaseDistributedPropertySet implements com.oracle.webservices.internal.api.message.MessageContext , com.sun.xml.internal.ws.api.message.MessageMetadata {
                                 public wasTransportSecure: boolean
-                                public static INBOUND_TRANSPORT_HEADERS: string
-                                public static OUTBOUND_TRANSPORT_HEADERS: string
-                                public static HA_INFO: string
+                                public static readonly INBOUND_TRANSPORT_HEADERS: string
+                                public static readonly OUTBOUND_TRANSPORT_HEADERS: string
+                                public static readonly HA_INFO: string
                                 public handlerConfig: com.sun.xml.internal.ws.client.HandlerConfiguration
                                 public proxy: javax.xml.ws.BindingProvider
                                 public isAdapterDeliversNonAnonymousResponse: boolean
@@ -26,7 +26,7 @@ declare namespace com {
                                 public isOneWay: boolean
                                 public isSynchronousMEP: boolean
                                 public nonNullAsyncHandlerGiven: boolean
-                                public invocationProperties: java.util.Map<java.lang.String, java.lang.Object>
+                                public readonly invocationProperties: java.util.Map<java.lang.String, java.lang.Object>
                                 public codec: com.sun.xml.internal.ws.api.pipe.Codec
                                 public constructor(arg0: com.sun.xml.internal.ws.api.message.Message)
                                 public constructor()
@@ -63,8 +63,8 @@ declare namespace com {
                                 public getSOAPMessage(): javax.xml.soap.SOAPMessage
                                 public getAsSOAPMessage(): javax.xml.soap.SOAPMessage
                                 public getCodec(): com.sun.xml.internal.ws.api.pipe.Codec
-                                public writeTo(arg0: java.io.OutputStream): com.oracle.webservices.internal.api.message.ContentType
-                                public writeTo(arg0: java.nio.channels.WritableByteChannel | java.nio.channels.WritableByteChannel$$Lambda): com.oracle.webservices.internal.api.message.ContentType
+                                public writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): com.oracle.webservices.internal.api.message.ContentType
+                                public writeTo(arg0: java.nio.channels.WritableByteChannel): com.oracle.webservices.internal.api.message.ContentType
                                 public getMtomRequest(): boolean
                                 public setMtomRequest(arg0: java.lang.Boolean | boolean): void
                                 public getMtomAcceptable(): boolean
@@ -78,10 +78,10 @@ declare namespace com {
                                 public getState(): com.sun.xml.internal.ws.api.message.Packet$State
                                 public setState(arg0: com.sun.xml.internal.ws.api.message.Packet$State): void
                                 public shouldUseMtom(): boolean
-                                public addSatellite(arg0: com.sun.xml.internal.ws.api.PropertySet): void
-                                public addSatellite(arg0: java.lang.Class, arg1: com.sun.xml.internal.ws.api.PropertySet): void
+                                public addSatellite(arg0: com.sun.xml.internal.ws.api.PropertySet | com.sun.xml.internal.ws.api.PropertySet$$Lambda): void
+                                public addSatellite(arg0: java.lang.Class, arg1: com.sun.xml.internal.ws.api.PropertySet | com.sun.xml.internal.ws.api.PropertySet$$Lambda): void
                                 public copySatelliteInto(arg0: com.sun.xml.internal.ws.api.DistributedPropertySet): void
-                                public removeSatellite(arg0: com.sun.xml.internal.ws.api.PropertySet): void
+                                public removeSatellite(arg0: com.sun.xml.internal.ws.api.PropertySet | com.sun.xml.internal.ws.api.PropertySet$$Lambda): void
                                 public setFastInfosetDisabled(arg0: boolean): void
                                 public static class: java.lang.Class<any>
                             }

@@ -3,19 +3,19 @@ declare namespace javax {
         namespace text {
             namespace html {
                 class HTMLEditorKit extends javax.swing.text.StyledEditorKit implements javax.accessibility.Accessible {
-                    public static DEFAULT_CSS: string
-                    public static BOLD_ACTION: string
-                    public static ITALIC_ACTION: string
-                    public static PARA_INDENT_LEFT: string
-                    public static PARA_INDENT_RIGHT: string
-                    public static FONT_CHANGE_BIGGER: string
-                    public static FONT_CHANGE_SMALLER: string
-                    public static COLOR_ACTION: string
-                    public static LOGICAL_STYLE_ACTION: string
-                    public static IMG_ALIGN_TOP: string
-                    public static IMG_ALIGN_MIDDLE: string
-                    public static IMG_ALIGN_BOTTOM: string
-                    public static IMG_BORDER: string
+                    public static readonly DEFAULT_CSS: string
+                    public static readonly BOLD_ACTION: string
+                    public static readonly ITALIC_ACTION: string
+                    public static readonly PARA_INDENT_LEFT: string
+                    public static readonly PARA_INDENT_RIGHT: string
+                    public static readonly FONT_CHANGE_BIGGER: string
+                    public static readonly FONT_CHANGE_SMALLER: string
+                    public static readonly COLOR_ACTION: string
+                    public static readonly LOGICAL_STYLE_ACTION: string
+                    public static readonly IMG_ALIGN_TOP: string
+                    public static readonly IMG_ALIGN_MIDDLE: string
+                    public static readonly IMG_ALIGN_BOTTOM: string
+                    public static readonly IMG_BORDER: string
                     public constructor()
                     public getContentType(): string
                     public getViewFactory(): javax.swing.text.ViewFactory

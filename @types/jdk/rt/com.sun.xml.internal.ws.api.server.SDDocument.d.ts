@@ -11,8 +11,8 @@ declare namespace com {
                                 isSchema(): boolean
                                 getImports(): java.util.Set<java.lang.String>
                                 getURL(): java.net.URL
-                                writeTo(arg0: com.sun.xml.internal.ws.api.server.PortAddressResolver, arg1: com.sun.xml.internal.ws.api.server.DocumentAddressResolver | com.sun.xml.internal.ws.api.server.DocumentAddressResolver$$Lambda, arg2: java.io.OutputStream): void
-                                writeTo(arg0: com.sun.xml.internal.ws.api.server.PortAddressResolver, arg1: com.sun.xml.internal.ws.api.server.DocumentAddressResolver | com.sun.xml.internal.ws.api.server.DocumentAddressResolver$$Lambda, arg2: javax.xml.stream.XMLStreamWriter): void
+                                writeTo(arg0: com.sun.xml.internal.ws.api.server.PortAddressResolver | com.sun.xml.internal.ws.api.server.PortAddressResolver$$Lambda, arg1: com.sun.xml.internal.ws.api.server.DocumentAddressResolver | com.sun.xml.internal.ws.api.server.DocumentAddressResolver$$Lambda, arg2: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                                writeTo(arg0: com.sun.xml.internal.ws.api.server.PortAddressResolver | com.sun.xml.internal.ws.api.server.PortAddressResolver$$Lambda, arg1: com.sun.xml.internal.ws.api.server.DocumentAddressResolver | com.sun.xml.internal.ws.api.server.DocumentAddressResolver$$Lambda, arg2: javax.xml.stream.XMLStreamWriter): void
                             }
                         }
                     }

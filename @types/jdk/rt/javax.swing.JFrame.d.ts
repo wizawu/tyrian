@@ -1,7 +1,7 @@
 declare namespace javax {
     namespace swing {
         class JFrame extends java.awt.Frame implements javax.swing.WindowConstants , javax.accessibility.Accessible , javax.swing.RootPaneContainer , javax.swing.TransferHandler$HasGetTransferHandler {
-            public static EXIT_ON_CLOSE: int
+            public static readonly EXIT_ON_CLOSE: int
             protected rootPane: javax.swing.JRootPane
             protected rootPaneCheckingEnabled: boolean
             protected accessibleContext: javax.accessibility.AccessibleContext

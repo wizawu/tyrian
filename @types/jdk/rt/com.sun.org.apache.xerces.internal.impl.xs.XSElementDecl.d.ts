@@ -7,9 +7,9 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 class XSElementDecl implements com.sun.org.apache.xerces.internal.xs.XSElementDeclaration {
-                                    public static SCOPE_ABSENT: short
-                                    public static SCOPE_GLOBAL: short
-                                    public static SCOPE_LOCAL: short
+                                    public static readonly SCOPE_ABSENT: short
+                                    public static readonly SCOPE_GLOBAL: short
+                                    public static readonly SCOPE_LOCAL: short
                                     public fName: string
                                     public fTargetNamespace: string
                                     public fType: com.sun.org.apache.xerces.internal.xs.XSTypeDefinition

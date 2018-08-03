@@ -19,9 +19,9 @@ declare namespace java {
                 public static defaultThreadFactory(): java.util.concurrent.ThreadFactory
                 public static privilegedThreadFactory(): java.util.concurrent.ThreadFactory
                 public static callable<T>(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda, arg1: T): java.util.concurrent.Callable<T>
-                public static callable(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda): java.util.concurrent.Callable<java.lang.Object>
-                public static callable(arg0: java.security.PrivilegedAction<any> | java.security.PrivilegedAction$$Lambda<any>): java.util.concurrent.Callable<java.lang.Object>
-                public static callable(arg0: java.security.PrivilegedExceptionAction<any> | java.security.PrivilegedExceptionAction$$Lambda<any>): java.util.concurrent.Callable<java.lang.Object>
+                public static callable<T>(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda): java.util.concurrent.Callable<java.lang.Object>
+                public static callable<T>(arg0: java.security.PrivilegedAction<any> | java.security.PrivilegedAction$$Lambda<any>): java.util.concurrent.Callable<java.lang.Object>
+                public static callable<T>(arg0: java.security.PrivilegedExceptionAction<any> | java.security.PrivilegedExceptionAction$$Lambda<any>): java.util.concurrent.Callable<java.lang.Object>
                 public static privilegedCallable<T>(arg0: java.util.concurrent.Callable<T> | java.util.concurrent.Callable$$Lambda<T>): java.util.concurrent.Callable<T>
                 public static privilegedCallableUsingCurrentClassLoader<T>(arg0: java.util.concurrent.Callable<T> | java.util.concurrent.Callable$$Lambda<T>): java.util.concurrent.Callable<T>
                 public static class: java.lang.Class<any>

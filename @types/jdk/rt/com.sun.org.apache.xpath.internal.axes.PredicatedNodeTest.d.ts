@@ -17,7 +17,7 @@ declare namespace com {
                                 public getPredicate(arg0: int): com.sun.org.apache.xpath.internal.Expression
                                 public getProximityPosition(): int
                                 public getProximityPosition(arg0: com.sun.org.apache.xpath.internal.XPathContext): int
-                                public getLastPos(arg0: com.sun.org.apache.xpath.internal.XPathContext): int
+                                public abstract getLastPos(arg0: com.sun.org.apache.xpath.internal.XPathContext): int
                                 protected getProximityPosition(arg0: int): int
                                 public resetProximityPositions(): void
                                 public initProximityPosition(arg0: int): void
@@ -28,11 +28,14 @@ declare namespace com {
                                 protected nodeToString(arg0: int): string
                                 public acceptNode(arg0: int): short
                                 public getLocPathIterator(): com.sun.org.apache.xpath.internal.axes.LocPathIterator
-                                public setLocPathIterator(arg0: com.sun.org.apache.xpath.internal.axes.LocPathIterator): void
+                                public setLocPathIterator(arg0: com.sun.org.apache.xpath.internal.axes.LocPathIterator | com.sun.org.apache.xpath.internal.axes.LocPathIterator$$Lambda): void
                                 public canTraverseOutsideSubtree(): boolean
                                 public callPredicateVisitors(arg0: com.sun.org.apache.xpath.internal.XPathVisitor): void
                                 public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression): boolean
                                 public static class: java.lang.Class<any>
+                            }
+                            interface PredicatedNodeTest$$Lambda extends com.sun.org.apache.xpath.internal.patterns.NodeTest implements com.sun.org.apache.xpath.internal.axes.SubContextList {
+                                (arg0: com.sun.org.apache.xpath.internal.XPathContext): int
                             }
                         }
                     }

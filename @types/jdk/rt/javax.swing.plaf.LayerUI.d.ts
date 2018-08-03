@@ -17,11 +17,11 @@ declare namespace javax {
                 public updateUI(arg0: javax.swing.JLayer<V>): void
                 public installUI(arg0: javax.swing.JComponent): void
                 public uninstallUI(arg0: javax.swing.JComponent): void
-                public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
-                public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+                public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+                public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
                 public getPropertyChangeListeners(): java.beans.PropertyChangeListener[]
-                public addPropertyChangeListener(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
-                public removePropertyChangeListener(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+                public addPropertyChangeListener(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener): void
+                public removePropertyChangeListener(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener): void
                 public getPropertyChangeListeners(arg0: java.lang.String | string): java.beans.PropertyChangeListener[]
                 protected firePropertyChange(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: java.lang.Object): void
                 public applyPropertyChange(arg0: java.beans.PropertyChangeEvent, arg1: javax.swing.JLayer<V>): void

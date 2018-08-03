@@ -6,40 +6,40 @@ declare namespace com {
                     namespace internal {
                         namespace xinclude {
                             class XIncludeHandler implements com.sun.org.apache.xerces.internal.xni.parser.XMLComponent , com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentFilter , com.sun.org.apache.xerces.internal.xni.parser.XMLDTDFilter {
-                                public static XINCLUDE_DEFAULT_CONFIGURATION: string
-                                public static HTTP_ACCEPT: string
-                                public static HTTP_ACCEPT_LANGUAGE: string
-                                public static XPOINTER: string
-                                public static XINCLUDE_NS_URI: string
-                                public static XINCLUDE_INCLUDE: string
-                                public static XINCLUDE_FALLBACK: string
-                                public static XINCLUDE_PARSE_XML: string
-                                public static XINCLUDE_PARSE_TEXT: string
-                                public static XINCLUDE_ATTR_HREF: string
-                                public static XINCLUDE_ATTR_PARSE: string
-                                public static XINCLUDE_ATTR_ENCODING: string
-                                public static XINCLUDE_ATTR_ACCEPT: string
-                                public static XINCLUDE_ATTR_ACCEPT_LANGUAGE: string
-                                public static XINCLUDE_INCLUDED: string
-                                public static CURRENT_BASE_URI: string
-                                public static XINCLUDE_BASE: string
-                                public static XML_BASE_QNAME: com.sun.org.apache.xerces.internal.xni.QName
-                                public static XINCLUDE_LANG: string
-                                public static XML_LANG_QNAME: com.sun.org.apache.xerces.internal.xni.QName
-                                public static NEW_NS_ATTR_QNAME: com.sun.org.apache.xerces.internal.xni.QName
-                                protected static VALIDATION: string
-                                protected static SCHEMA_VALIDATION: string
-                                protected static DYNAMIC_VALIDATION: string
-                                protected static ALLOW_UE_AND_NOTATION_EVENTS: string
-                                protected static XINCLUDE_FIXUP_BASE_URIS: string
-                                protected static XINCLUDE_FIXUP_LANGUAGE: string
-                                protected static SYMBOL_TABLE: string
-                                protected static ERROR_REPORTER: string
-                                protected static ENTITY_RESOLVER: string
-                                protected static SECURITY_MANAGER: string
-                                public static BUFFER_SIZE: string
-                                protected static PARSER_SETTINGS: string
-                                protected static XML_SECURITY_PROPERTY_MANAGER: string
+                                public static readonly XINCLUDE_DEFAULT_CONFIGURATION: string
+                                public static readonly HTTP_ACCEPT: string
+                                public static readonly HTTP_ACCEPT_LANGUAGE: string
+                                public static readonly XPOINTER: string
+                                public static readonly XINCLUDE_NS_URI: string
+                                public static readonly XINCLUDE_INCLUDE: string
+                                public static readonly XINCLUDE_FALLBACK: string
+                                public static readonly XINCLUDE_PARSE_XML: string
+                                public static readonly XINCLUDE_PARSE_TEXT: string
+                                public static readonly XINCLUDE_ATTR_HREF: string
+                                public static readonly XINCLUDE_ATTR_PARSE: string
+                                public static readonly XINCLUDE_ATTR_ENCODING: string
+                                public static readonly XINCLUDE_ATTR_ACCEPT: string
+                                public static readonly XINCLUDE_ATTR_ACCEPT_LANGUAGE: string
+                                public static readonly XINCLUDE_INCLUDED: string
+                                public static readonly CURRENT_BASE_URI: string
+                                public static readonly XINCLUDE_BASE: string
+                                public static readonly XML_BASE_QNAME: com.sun.org.apache.xerces.internal.xni.QName
+                                public static readonly XINCLUDE_LANG: string
+                                public static readonly XML_LANG_QNAME: com.sun.org.apache.xerces.internal.xni.QName
+                                public static readonly NEW_NS_ATTR_QNAME: com.sun.org.apache.xerces.internal.xni.QName
+                                protected static readonly VALIDATION: string
+                                protected static readonly SCHEMA_VALIDATION: string
+                                protected static readonly DYNAMIC_VALIDATION: string
+                                protected static readonly ALLOW_UE_AND_NOTATION_EVENTS: string
+                                protected static readonly XINCLUDE_FIXUP_BASE_URIS: string
+                                protected static readonly XINCLUDE_FIXUP_LANGUAGE: string
+                                protected static readonly SYMBOL_TABLE: string
+                                protected static readonly ERROR_REPORTER: string
+                                protected static readonly ENTITY_RESOLVER: string
+                                protected static readonly SECURITY_MANAGER: string
+                                public static readonly BUFFER_SIZE: string
+                                protected static readonly PARSER_SETTINGS: string
+                                protected static readonly XML_SECURITY_PROPERTY_MANAGER: string
                                 protected fDocumentHandler: com.sun.org.apache.xerces.internal.xni.XMLDocumentHandler
                                 protected fDocumentSource: com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentSource
                                 protected fDTDHandler: com.sun.org.apache.xerces.internal.xni.XMLDTDHandler

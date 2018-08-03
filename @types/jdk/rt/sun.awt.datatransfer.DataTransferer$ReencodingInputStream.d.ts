@@ -3,7 +3,7 @@ declare namespace sun {
         namespace datatransfer {
             class DataTransferer$ReencodingInputStream extends java.io.InputStream {
                 protected wrapped: java.io.BufferedReader
-                protected in: char[]
+                protected readonly in: char[]
                 protected out: byte[]
                 protected encoder: java.nio.charset.CharsetEncoder
                 protected inBuf: java.nio.CharBuffer
@@ -13,7 +13,7 @@ declare namespace sun {
                 protected eos: boolean
                 protected index: int
                 protected limit: int
-                public constructor(arg0: sun.awt.datatransfer.DataTransferer, arg1: java.io.InputStream, arg2: long, arg3: java.lang.String | string, arg4: java.awt.datatransfer.Transferable)
+                public constructor(arg0: sun.awt.datatransfer.DataTransferer, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long, arg3: java.lang.String | string, arg4: java.awt.datatransfer.Transferable)
                 public read(): int
                 public available(): int
                 public close(): void

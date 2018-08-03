@@ -5,8 +5,8 @@ declare namespace com {
                 namespace impl {
                     namespace io {
                         class ValueUtility {
-                            public static PRIVATE_MEMBER: short
-                            public static PUBLIC_MEMBER: short
+                            public static readonly PRIVATE_MEMBER: short
+                            public static readonly PUBLIC_MEMBER: short
                             public constructor()
                             public static getSignature(arg0: org.omg.CORBA.ValueMember): string
                             public static translate(arg0: org.omg.CORBA.ORB, arg1: com.sun.corba.se.impl.io.ObjectStreamClass, arg2: javax.rmi.CORBA.ValueHandler): com.sun.org.omg.CORBA.ValueDefPackage.FullValueDescription

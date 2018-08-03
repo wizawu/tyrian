@@ -6,7 +6,7 @@ declare namespace com {
                     namespace internal {
                         namespace util {
                             class ClassPath implements java.io.Serializable {
-                                public static SYSTEM_CLASS_PATH: com.sun.org.apache.bcel.internal.util.ClassPath
+                                public static readonly SYSTEM_CLASS_PATH: com.sun.org.apache.bcel.internal.util.ClassPath
                                 public constructor(arg0: java.lang.String | string)
                                 public constructor()
                                 public toString(): string

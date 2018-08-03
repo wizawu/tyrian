@@ -8,40 +8,40 @@ declare namespace com {
                             namespace dv {
                                 namespace xs {
                                     class XSSimpleTypeDecl implements com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType , org.w3c.dom.TypeInfo {
-                                        protected static DV_STRING: short
-                                        protected static DV_BOOLEAN: short
-                                        protected static DV_DECIMAL: short
-                                        protected static DV_FLOAT: short
-                                        protected static DV_DOUBLE: short
-                                        protected static DV_DURATION: short
-                                        protected static DV_DATETIME: short
-                                        protected static DV_TIME: short
-                                        protected static DV_DATE: short
-                                        protected static DV_GYEARMONTH: short
-                                        protected static DV_GYEAR: short
-                                        protected static DV_GMONTHDAY: short
-                                        protected static DV_GDAY: short
-                                        protected static DV_GMONTH: short
-                                        protected static DV_HEXBINARY: short
-                                        protected static DV_BASE64BINARY: short
-                                        protected static DV_ANYURI: short
-                                        protected static DV_QNAME: short
-                                        protected static DV_PRECISIONDECIMAL: short
-                                        protected static DV_NOTATION: short
-                                        protected static DV_ANYSIMPLETYPE: short
-                                        protected static DV_ID: short
-                                        protected static DV_IDREF: short
-                                        protected static DV_ENTITY: short
-                                        protected static DV_INTEGER: short
-                                        protected static DV_LIST: short
-                                        protected static DV_UNION: short
-                                        protected static DV_YEARMONTHDURATION: short
-                                        protected static DV_DAYTIMEDURATION: short
-                                        protected static DV_ANYATOMICTYPE: short
-                                        public static YEARMONTHDURATION_DT: short
-                                        public static DAYTIMEDURATION_DT: short
-                                        public static PRECISIONDECIMAL_DT: short
-                                        public static ANYATOMICTYPE_DT: short
+                                        protected static readonly DV_STRING: short
+                                        protected static readonly DV_BOOLEAN: short
+                                        protected static readonly DV_DECIMAL: short
+                                        protected static readonly DV_FLOAT: short
+                                        protected static readonly DV_DOUBLE: short
+                                        protected static readonly DV_DURATION: short
+                                        protected static readonly DV_DATETIME: short
+                                        protected static readonly DV_TIME: short
+                                        protected static readonly DV_DATE: short
+                                        protected static readonly DV_GYEARMONTH: short
+                                        protected static readonly DV_GYEAR: short
+                                        protected static readonly DV_GMONTHDAY: short
+                                        protected static readonly DV_GDAY: short
+                                        protected static readonly DV_GMONTH: short
+                                        protected static readonly DV_HEXBINARY: short
+                                        protected static readonly DV_BASE64BINARY: short
+                                        protected static readonly DV_ANYURI: short
+                                        protected static readonly DV_QNAME: short
+                                        protected static readonly DV_PRECISIONDECIMAL: short
+                                        protected static readonly DV_NOTATION: short
+                                        protected static readonly DV_ANYSIMPLETYPE: short
+                                        protected static readonly DV_ID: short
+                                        protected static readonly DV_IDREF: short
+                                        protected static readonly DV_ENTITY: short
+                                        protected static readonly DV_INTEGER: short
+                                        protected static readonly DV_LIST: short
+                                        protected static readonly DV_UNION: short
+                                        protected static readonly DV_YEARMONTHDURATION: short
+                                        protected static readonly DV_DAYTIMEDURATION: short
+                                        protected static readonly DV_ANYATOMICTYPE: short
+                                        public static readonly YEARMONTHDURATION_DT: short
+                                        public static readonly DAYTIMEDURATION_DT: short
+                                        public static readonly PRECISIONDECIMAL_DT: short
+                                        public static readonly ANYATOMICTYPE_DT: short
                                         public lengthAnnotation: com.sun.org.apache.xerces.internal.xs.XSAnnotation
                                         public minLengthAnnotation: com.sun.org.apache.xerces.internal.xs.XSAnnotation
                                         public maxLengthAnnotation: com.sun.org.apache.xerces.internal.xs.XSAnnotation

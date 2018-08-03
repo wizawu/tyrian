@@ -6,8 +6,11 @@ declare namespace javax {
                 public getSoundbank(): javax.sound.midi.Soundbank
                 public getName(): string
                 public getDataClass(): java.lang.Class<any>
-                public getData(): java.lang.Object
+                public abstract getData(): java.lang.Object
                 public static class: java.lang.Class<any>
+            }
+            interface SoundbankResource$$Lambda {
+                (): java.lang.Object
             }
         }
     }

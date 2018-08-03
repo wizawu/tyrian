@@ -9,8 +9,8 @@ declare namespace com {
                                 public constructor(arg0: com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource, arg1: com.sun.org.apache.xerces.internal.xinclude.XIncludeHandler, arg2: int)
                                 public setErrorReporter(arg0: com.sun.org.apache.xerces.internal.impl.XMLErrorReporter): void
                                 protected getReader(arg0: com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource): java.io.Reader
-                                protected getEncodingName(arg0: java.io.InputStream): string
-                                protected consumeBOM(arg0: java.io.InputStream, arg1: java.lang.String | string): string
+                                protected getEncodingName(arg0: java.io.InputStream | java.io.InputStream$$Lambda): string
+                                protected consumeBOM(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.lang.String | string): string
                                 protected getEncodingName(arg0: byte[]): string
                                 public parse(): void
                                 public setInputSource(arg0: com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource): void

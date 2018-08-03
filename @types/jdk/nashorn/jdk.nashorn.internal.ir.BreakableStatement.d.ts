@@ -3,7 +3,7 @@ declare namespace jdk {
         namespace internal {
             namespace ir {
                 abstract class BreakableStatement extends jdk.nashorn.internal.ir.LexicalContextStatement implements jdk.nashorn.internal.ir.BreakableNode {
-                    protected breakLabel: jdk.nashorn.internal.codegen.Label
+                    protected readonly breakLabel: jdk.nashorn.internal.codegen.Label
                     protected constructor(arg0: int, arg1: long, arg2: int, arg3: jdk.nashorn.internal.codegen.Label)
                     protected constructor(arg0: jdk.nashorn.internal.ir.BreakableStatement, arg1: jdk.nashorn.internal.ir.LocalVariableConversion)
                     public isBreakableWithoutLabel(): boolean

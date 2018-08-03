@@ -7,8 +7,8 @@ declare namespace com {
                         namespace runtime {
                             namespace property {
                                 class Messages extends java.lang.Enum<com.sun.xml.internal.bind.v2.runtime.property.Messages> {
-                                    public static UNSUBSTITUTABLE_TYPE: com.sun.xml.internal.bind.v2.runtime.property.Messages
-                                    public static UNEXPECTED_JAVA_TYPE: com.sun.xml.internal.bind.v2.runtime.property.Messages
+                                    public static readonly UNSUBSTITUTABLE_TYPE: com.sun.xml.internal.bind.v2.runtime.property.Messages
+                                    public static readonly UNEXPECTED_JAVA_TYPE: com.sun.xml.internal.bind.v2.runtime.property.Messages
                                     public static values(): com.sun.xml.internal.bind.v2.runtime.property.Messages[]
                                     public static valueOf(arg0: java.lang.String | string): com.sun.xml.internal.bind.v2.runtime.property.Messages
                                     public toString(): string

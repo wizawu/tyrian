@@ -1,11 +1,11 @@
 declare namespace java {
     namespace awt {
         class FlowLayout implements java.awt.LayoutManager , java.io.Serializable {
-            public static LEFT: int
-            public static CENTER: int
-            public static RIGHT: int
-            public static LEADING: int
-            public static TRAILING: int
+            public static readonly LEFT: int
+            public static readonly CENTER: int
+            public static readonly RIGHT: int
+            public static readonly LEADING: int
+            public static readonly TRAILING: int
             public constructor()
             public constructor(arg0: int)
             public constructor(arg0: int, arg1: int, arg2: int)

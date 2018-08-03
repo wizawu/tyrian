@@ -1,45 +1,45 @@
 declare namespace java {
     namespace sql {
         class JDBCType extends java.lang.Enum<java.sql.JDBCType> implements java.sql.SQLType {
-            public static BIT: java.sql.JDBCType
-            public static TINYINT: java.sql.JDBCType
-            public static SMALLINT: java.sql.JDBCType
-            public static INTEGER: java.sql.JDBCType
-            public static BIGINT: java.sql.JDBCType
-            public static FLOAT: java.sql.JDBCType
-            public static REAL: java.sql.JDBCType
-            public static DOUBLE: java.sql.JDBCType
-            public static NUMERIC: java.sql.JDBCType
-            public static DECIMAL: java.sql.JDBCType
-            public static CHAR: java.sql.JDBCType
-            public static VARCHAR: java.sql.JDBCType
-            public static LONGVARCHAR: java.sql.JDBCType
-            public static DATE: java.sql.JDBCType
-            public static TIME: java.sql.JDBCType
-            public static TIMESTAMP: java.sql.JDBCType
-            public static BINARY: java.sql.JDBCType
-            public static VARBINARY: java.sql.JDBCType
-            public static LONGVARBINARY: java.sql.JDBCType
-            public static NULL: java.sql.JDBCType
-            public static OTHER: java.sql.JDBCType
-            public static JAVA_OBJECT: java.sql.JDBCType
-            public static DISTINCT: java.sql.JDBCType
-            public static STRUCT: java.sql.JDBCType
-            public static ARRAY: java.sql.JDBCType
-            public static BLOB: java.sql.JDBCType
-            public static CLOB: java.sql.JDBCType
-            public static REF: java.sql.JDBCType
-            public static DATALINK: java.sql.JDBCType
-            public static BOOLEAN: java.sql.JDBCType
-            public static ROWID: java.sql.JDBCType
-            public static NCHAR: java.sql.JDBCType
-            public static NVARCHAR: java.sql.JDBCType
-            public static LONGNVARCHAR: java.sql.JDBCType
-            public static NCLOB: java.sql.JDBCType
-            public static SQLXML: java.sql.JDBCType
-            public static REF_CURSOR: java.sql.JDBCType
-            public static TIME_WITH_TIMEZONE: java.sql.JDBCType
-            public static TIMESTAMP_WITH_TIMEZONE: java.sql.JDBCType
+            public static readonly BIT: java.sql.JDBCType
+            public static readonly TINYINT: java.sql.JDBCType
+            public static readonly SMALLINT: java.sql.JDBCType
+            public static readonly INTEGER: java.sql.JDBCType
+            public static readonly BIGINT: java.sql.JDBCType
+            public static readonly FLOAT: java.sql.JDBCType
+            public static readonly REAL: java.sql.JDBCType
+            public static readonly DOUBLE: java.sql.JDBCType
+            public static readonly NUMERIC: java.sql.JDBCType
+            public static readonly DECIMAL: java.sql.JDBCType
+            public static readonly CHAR: java.sql.JDBCType
+            public static readonly VARCHAR: java.sql.JDBCType
+            public static readonly LONGVARCHAR: java.sql.JDBCType
+            public static readonly DATE: java.sql.JDBCType
+            public static readonly TIME: java.sql.JDBCType
+            public static readonly TIMESTAMP: java.sql.JDBCType
+            public static readonly BINARY: java.sql.JDBCType
+            public static readonly VARBINARY: java.sql.JDBCType
+            public static readonly LONGVARBINARY: java.sql.JDBCType
+            public static readonly NULL: java.sql.JDBCType
+            public static readonly OTHER: java.sql.JDBCType
+            public static readonly JAVA_OBJECT: java.sql.JDBCType
+            public static readonly DISTINCT: java.sql.JDBCType
+            public static readonly STRUCT: java.sql.JDBCType
+            public static readonly ARRAY: java.sql.JDBCType
+            public static readonly BLOB: java.sql.JDBCType
+            public static readonly CLOB: java.sql.JDBCType
+            public static readonly REF: java.sql.JDBCType
+            public static readonly DATALINK: java.sql.JDBCType
+            public static readonly BOOLEAN: java.sql.JDBCType
+            public static readonly ROWID: java.sql.JDBCType
+            public static readonly NCHAR: java.sql.JDBCType
+            public static readonly NVARCHAR: java.sql.JDBCType
+            public static readonly LONGNVARCHAR: java.sql.JDBCType
+            public static readonly NCLOB: java.sql.JDBCType
+            public static readonly SQLXML: java.sql.JDBCType
+            public static readonly REF_CURSOR: java.sql.JDBCType
+            public static readonly TIME_WITH_TIMEZONE: java.sql.JDBCType
+            public static readonly TIMESTAMP_WITH_TIMEZONE: java.sql.JDBCType
             public static values(): java.sql.JDBCType[]
             public static valueOf(arg0: java.lang.String | string): java.sql.JDBCType
             public getName(): string

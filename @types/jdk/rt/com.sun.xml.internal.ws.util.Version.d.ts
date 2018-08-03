@@ -5,12 +5,12 @@ declare namespace com {
                 namespace ws {
                     namespace util {
                         class Version {
-                            public BUILD_ID: string
-                            public BUILD_VERSION: string
-                            public MAJOR_VERSION: string
-                            public SVN_REVISION: string
-                            public static RUNTIME_VERSION: com.sun.xml.internal.ws.util.Version
-                            public static create(arg0: java.io.InputStream): com.sun.xml.internal.ws.util.Version
+                            public readonly BUILD_ID: string
+                            public readonly BUILD_VERSION: string
+                            public readonly MAJOR_VERSION: string
+                            public readonly SVN_REVISION: string
+                            public static readonly RUNTIME_VERSION: com.sun.xml.internal.ws.util.Version
+                            public static create(arg0: java.io.InputStream | java.io.InputStream$$Lambda): com.sun.xml.internal.ws.util.Version
                             public toString(): string
                             public static class: java.lang.Class<any>
                         }

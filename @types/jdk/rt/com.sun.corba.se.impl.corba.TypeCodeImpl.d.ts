@@ -5,7 +5,7 @@ declare namespace com {
                 namespace impl {
                     namespace corba {
                         class TypeCodeImpl extends org.omg.CORBA.TypeCode {
-                            protected static tk_indirect: int
+                            protected static readonly tk_indirect: int
                             public constructor(arg0: com.sun.corba.se.spi.orb.ORB)
                             public constructor(arg0: com.sun.corba.se.spi.orb.ORB, arg1: org.omg.CORBA.TypeCode)
                             public constructor(arg0: com.sun.corba.se.spi.orb.ORB, arg1: int)

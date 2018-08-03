@@ -1,7 +1,7 @@
 declare namespace javax {
     namespace management {
         class ImmutableDescriptor implements javax.management.Descriptor {
-            public static EMPTY_DESCRIPTOR: javax.management.ImmutableDescriptor
+            public static readonly EMPTY_DESCRIPTOR: javax.management.ImmutableDescriptor
             public constructor(arg0: java.lang.String[], arg1: java.lang.Object[])
             public constructor(...arg0: java.lang.String[])
             public constructor(arg0: java.util.Map<java.lang.String, any>)

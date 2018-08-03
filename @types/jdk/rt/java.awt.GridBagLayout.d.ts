@@ -1,9 +1,9 @@
 declare namespace java {
     namespace awt {
         class GridBagLayout implements java.awt.LayoutManager2 , java.io.Serializable {
-            protected static MAXGRIDSIZE: int
-            protected static MINSIZE: int
-            protected static PREFERREDSIZE: int
+            protected static readonly MAXGRIDSIZE: int
+            protected static readonly MINSIZE: int
+            protected static readonly PREFERREDSIZE: int
             protected comptable: java.util.Hashtable<java.awt.Component, java.awt.GridBagConstraints>
             protected defaultConstraints: java.awt.GridBagConstraints
             protected layoutInfo: java.awt.GridBagLayoutInfo

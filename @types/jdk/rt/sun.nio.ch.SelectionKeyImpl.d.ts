@@ -2,7 +2,7 @@ declare namespace sun {
     namespace nio {
         namespace ch {
             class SelectionKeyImpl extends java.nio.channels.spi.AbstractSelectionKey {
-                public selector: sun.nio.ch.SelectorImpl
+                public readonly selector: sun.nio.ch.SelectorImpl
                 public channel(): java.nio.channels.SelectableChannel
                 public selector(): java.nio.channels.Selector
                 public interestOps(): int

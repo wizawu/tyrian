@@ -6,7 +6,7 @@ declare namespace com {
                     namespace handler {
                         abstract class HandlerTube extends com.sun.xml.internal.ws.api.pipe.helper.AbstractFilterTubeImpl {
                             protected handlers: java.util.List<javax.xml.ws.handler.Handler>
-                            protected port: com.sun.xml.internal.ws.api.model.wsdl.WSDLPort
+                            protected readonly port: com.sun.xml.internal.ws.api.model.wsdl.WSDLPort
                             public constructor(arg0: com.sun.xml.internal.ws.api.pipe.Tube, arg1: com.sun.xml.internal.ws.api.model.wsdl.WSDLPort, arg2: com.sun.xml.internal.ws.api.WSBinding)
                             public constructor(arg0: com.sun.xml.internal.ws.api.pipe.Tube, arg1: com.sun.xml.internal.ws.handler.HandlerTube, arg2: com.sun.xml.internal.ws.api.WSBinding)
                             protected constructor(arg0: com.sun.xml.internal.ws.handler.HandlerTube, arg1: com.sun.xml.internal.ws.api.pipe.TubeCloner)

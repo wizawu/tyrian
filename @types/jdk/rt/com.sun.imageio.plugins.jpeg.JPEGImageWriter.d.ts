@@ -4,22 +4,22 @@ declare namespace com {
             namespace plugins {
                 namespace jpeg {
                     class JPEGImageWriter extends javax.imageio.ImageWriter {
-                        protected static WARNING_DEST_IGNORED: int
-                        protected static WARNING_STREAM_METADATA_IGNORED: int
-                        protected static WARNING_DEST_METADATA_COMP_MISMATCH: int
-                        protected static WARNING_DEST_METADATA_JFIF_MISMATCH: int
-                        protected static WARNING_DEST_METADATA_ADOBE_MISMATCH: int
-                        protected static WARNING_IMAGE_METADATA_JFIF_MISMATCH: int
-                        protected static WARNING_IMAGE_METADATA_ADOBE_MISMATCH: int
-                        protected static WARNING_METADATA_NOT_JPEG_FOR_RASTER: int
-                        protected static WARNING_NO_BANDS_ON_INDEXED: int
-                        protected static WARNING_ILLEGAL_THUMBNAIL: int
-                        protected static WARNING_IGNORING_THUMBS: int
-                        protected static WARNING_FORCING_JFIF: int
-                        protected static WARNING_THUMB_CLIPPED: int
-                        protected static WARNING_METADATA_ADJUSTED_FOR_THUMB: int
-                        protected static WARNING_NO_RGB_THUMB_AS_INDEXED: int
-                        protected static WARNING_NO_GRAY_THUMB_AS_INDEXED: int
+                        protected static readonly WARNING_DEST_IGNORED: int
+                        protected static readonly WARNING_STREAM_METADATA_IGNORED: int
+                        protected static readonly WARNING_DEST_METADATA_COMP_MISMATCH: int
+                        protected static readonly WARNING_DEST_METADATA_JFIF_MISMATCH: int
+                        protected static readonly WARNING_DEST_METADATA_ADOBE_MISMATCH: int
+                        protected static readonly WARNING_IMAGE_METADATA_JFIF_MISMATCH: int
+                        protected static readonly WARNING_IMAGE_METADATA_ADOBE_MISMATCH: int
+                        protected static readonly WARNING_METADATA_NOT_JPEG_FOR_RASTER: int
+                        protected static readonly WARNING_NO_BANDS_ON_INDEXED: int
+                        protected static readonly WARNING_ILLEGAL_THUMBNAIL: int
+                        protected static readonly WARNING_IGNORING_THUMBS: int
+                        protected static readonly WARNING_FORCING_JFIF: int
+                        protected static readonly WARNING_THUMB_CLIPPED: int
+                        protected static readonly WARNING_METADATA_ADJUSTED_FOR_THUMB: int
+                        protected static readonly WARNING_NO_RGB_THUMB_AS_INDEXED: int
+                        protected static readonly WARNING_NO_GRAY_THUMB_AS_INDEXED: int
                         public constructor(arg0: javax.imageio.spi.ImageWriterSpi)
                         public setOutput(arg0: java.lang.Object): void
                         public getDefaultWriteParam(): javax.imageio.ImageWriteParam

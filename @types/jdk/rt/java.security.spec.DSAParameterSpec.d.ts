@@ -6,6 +6,7 @@ declare namespace java {
                 public getP(): java.math.BigInteger
                 public getQ(): java.math.BigInteger
                 public getG(): java.math.BigInteger
+                public static class: java.lang.Class<any>
             }
         }
     }

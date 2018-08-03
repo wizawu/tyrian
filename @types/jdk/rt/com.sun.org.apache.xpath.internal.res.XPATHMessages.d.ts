@@ -9,7 +9,7 @@ declare namespace com {
                                 public constructor()
                                 public static createXPATHMessage(arg0: java.lang.String | string, arg1: java.lang.Object[]): string
                                 public static createXPATHWarning(arg0: java.lang.String | string, arg1: java.lang.Object[]): string
-                                public static createXPATHMsg(arg0: java.util.ListResourceBundle, arg1: java.lang.String | string, arg2: java.lang.Object[]): string
+                                public static createXPATHMsg(arg0: java.util.ListResourceBundle | java.util.ListResourceBundle$$Lambda, arg1: java.lang.String | string, arg2: java.lang.Object[]): string
                                 public static class: java.lang.Class<any>
                             }
                         }

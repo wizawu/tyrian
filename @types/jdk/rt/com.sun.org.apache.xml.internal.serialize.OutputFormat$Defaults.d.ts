@@ -6,9 +6,9 @@ declare namespace com {
                     namespace internal {
                         namespace serialize {
                             class OutputFormat$Defaults {
-                                public static Indent: int
-                                public static Encoding: string
-                                public static LineWidth: int
+                                public static readonly Indent: int
+                                public static readonly Encoding: string
+                                public static readonly LineWidth: int
                                 public constructor()
                                 public static class: java.lang.Class<any>
                             }

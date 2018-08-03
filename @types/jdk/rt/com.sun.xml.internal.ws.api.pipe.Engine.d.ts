@@ -6,7 +6,7 @@ declare namespace com {
                     namespace api {
                         namespace pipe {
                             class Engine {
-                                public id: string
+                                public readonly id: string
                                 public constructor(arg0: java.lang.String | string, arg1: java.util.concurrent.Executor | java.util.concurrent.Executor$$Lambda)
                                 public constructor(arg0: java.lang.String | string, arg1: com.sun.xml.internal.ws.api.server.Container, arg2: java.util.concurrent.Executor | java.util.concurrent.Executor$$Lambda)
                                 public constructor(arg0: java.lang.String | string)

@@ -8,8 +8,8 @@ declare namespace javax {
                 protected realSource: java.lang.Object
                 public constructor()
                 public constructor(arg0: java.lang.Object)
-                public addUndoableEditListener(arg0: javax.swing.event.UndoableEditListener | javax.swing.event.UndoableEditListener$$Lambda): void
-                public removeUndoableEditListener(arg0: javax.swing.event.UndoableEditListener | javax.swing.event.UndoableEditListener$$Lambda): void
+                public addUndoableEditListener(arg0: javax.swing.event.UndoableEditListener): void
+                public removeUndoableEditListener(arg0: javax.swing.event.UndoableEditListener): void
                 public getUndoableEditListeners(): javax.swing.event.UndoableEditListener[]
                 protected _postEdit(arg0: javax.swing.undo.UndoableEdit): void
                 public postEdit(arg0: javax.swing.undo.UndoableEdit): void

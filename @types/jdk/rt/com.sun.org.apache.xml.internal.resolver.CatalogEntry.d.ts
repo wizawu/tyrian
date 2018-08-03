@@ -7,7 +7,7 @@ declare namespace com {
                         namespace resolver {
                             class CatalogEntry {
                                 protected static nextEntry: java.util.concurrent.atomic.AtomicInteger
-                                protected static entryTypes: java.util.Map<java.lang.String, java.lang.Integer>
+                                protected static readonly entryTypes: java.util.Map<java.lang.String, java.lang.Integer>
                                 protected static entryArgs: java.util.Vector
                                 protected entryType: int
                                 protected args: java.util.Vector

@@ -4,10 +4,10 @@ declare namespace sun {
             abstract class XBaseMenuWindow extends sun.awt.X11.XWindow {
                 protected grabInputPoint: java.awt.Point
                 protected hasPointerMoved: boolean
-                protected getParentMenuWindow(): sun.awt.X11.XBaseMenuWindow
-                protected map(): sun.awt.X11.XBaseMenuWindow$MappingData
-                protected getSubmenuBounds(arg0: java.awt.Rectangle, arg1: java.awt.Dimension): java.awt.Rectangle
-                protected updateSize(): void
+                protected abstract getParentMenuWindow(): sun.awt.X11.XBaseMenuWindow
+                protected abstract map(): sun.awt.X11.XBaseMenuWindow$MappingData
+                protected abstract getSubmenuBounds(arg0: java.awt.Rectangle, arg1: java.awt.Dimension): java.awt.Rectangle
+                protected abstract updateSize(): void
                 protected resetMapping(): void
                 public addItem(arg0: java.awt.MenuItem): void
                 public delItem(arg0: int): void

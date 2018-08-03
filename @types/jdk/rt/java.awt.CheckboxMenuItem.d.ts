@@ -8,8 +8,8 @@ declare namespace java {
             public getState(): boolean
             public setState(arg0: boolean): void
             public getSelectedObjects(): java.lang.Object[]
-            public addItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): void
-            public removeItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): void
+            public addItemListener(arg0: java.awt.event.ItemListener): void
+            public removeItemListener(arg0: java.awt.event.ItemListener): void
             public getItemListeners(): java.awt.event.ItemListener[]
             public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]
             protected processEvent<T extends java.util.EventListener>(arg0: java.awt.AWTEvent): void

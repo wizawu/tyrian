@@ -8,7 +8,7 @@ declare namespace com {
                         public constructor(arg0: java.util.Hashtable<any, any>)
                         public close(): void
                         public getNameInNamespace(): string
-                        protected getRootURLContext(arg0: java.lang.String | string, arg1: java.util.Hashtable<any, any>): javax.naming.spi.ResolveResult
+                        protected abstract getRootURLContext(arg0: java.lang.String | string, arg1: java.util.Hashtable<any, any>): javax.naming.spi.ResolveResult
                         protected getURLSuffix(arg0: java.lang.String | string, arg1: java.lang.String | string): javax.naming.Name
                         protected getURLPrefix(arg0: java.lang.String | string): string
                         protected urlEquals(arg0: java.lang.String | string, arg1: java.lang.String | string): boolean
@@ -41,6 +41,9 @@ declare namespace com {
                         public addToEnvironment(arg0: java.lang.String | string, arg1: java.lang.Object): java.lang.Object
                         public getEnvironment(): java.util.Hashtable<java.lang.String, java.lang.Object>
                         public static class: java.lang.Class<any>
+                    }
+                    interface GenericURLContext$$Lambda implements javax.naming.Context {
+                        (arg0: java.lang.String | string, arg1: java.util.Hashtable<any, any>): javax.naming.spi.ResolveResult
                     }
                 }
             }

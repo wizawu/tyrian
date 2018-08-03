@@ -13,8 +13,8 @@ declare namespace com {
                                 public createContext(arg0: javax.xml.soap.SOAPMessage): com.oracle.webservices.internal.api.message.MessageContext
                                 public createContext(arg0: javax.xml.transform.Source, arg1: com.oracle.webservices.internal.api.EnvelopeStyle$Style): com.oracle.webservices.internal.api.message.MessageContext
                                 public createContext(arg0: javax.xml.transform.Source): com.oracle.webservices.internal.api.message.MessageContext
-                                public createContext(arg0: java.io.InputStream, arg1: java.lang.String | string): com.oracle.webservices.internal.api.message.MessageContext
-                                public createContext(arg0: java.io.InputStream, arg1: javax.xml.soap.MimeHeaders): com.oracle.webservices.internal.api.message.MessageContext
+                                public createContext(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.lang.String | string): com.oracle.webservices.internal.api.message.MessageContext
+                                public createContext(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: javax.xml.soap.MimeHeaders): com.oracle.webservices.internal.api.message.MessageContext
                                 public createContext(arg0: com.sun.xml.internal.ws.api.message.Message): com.oracle.webservices.internal.api.message.MessageContext
                                 public doCreate(): com.oracle.webservices.internal.api.message.MessageContext
                                 public doCreate(arg0: javax.xml.soap.SOAPMessage): com.oracle.webservices.internal.api.message.MessageContext

@@ -5,77 +5,77 @@ declare namespace com {
                 namespace impl {
                     namespace logging {
                         class POASystemException extends com.sun.corba.se.spi.logging.LogWrapperBase {
-                            public static SERVANT_MANAGER_ALREADY_SET: int
-                            public static DESTROY_DEADLOCK: int
-                            public static SERVANT_ORB: int
-                            public static BAD_SERVANT: int
-                            public static ILLEGAL_FORWARD_REQUEST: int
-                            public static BAD_TRANSACTION_CONTEXT: int
-                            public static BAD_REPOSITORY_ID: int
-                            public static INVOKESETUP: int
-                            public static BAD_LOCALREPLYSTATUS: int
-                            public static PERSISTENT_SERVERPORT_ERROR: int
-                            public static SERVANT_DISPATCH: int
-                            public static WRONG_CLIENTSC: int
-                            public static CANT_CLONE_TEMPLATE: int
-                            public static POACURRENT_UNBALANCED_STACK: int
-                            public static POACURRENT_NULL_FIELD: int
-                            public static POA_INTERNAL_GET_SERVANT_ERROR: int
-                            public static MAKE_FACTORY_NOT_POA: int
-                            public static DUPLICATE_ORB_VERSION_SC: int
-                            public static PREINVOKE_CLONE_ERROR: int
-                            public static PREINVOKE_POA_DESTROYED: int
-                            public static PMF_CREATE_RETAIN: int
-                            public static PMF_CREATE_NON_RETAIN: int
-                            public static POLICY_MEDIATOR_BAD_POLICY_IN_FACTORY: int
-                            public static SERVANT_TO_ID_OAA: int
-                            public static SERVANT_TO_ID_SAA: int
-                            public static SERVANT_TO_ID_WP: int
-                            public static CANT_RESOLVE_ROOT_POA: int
-                            public static SERVANT_MUST_BE_LOCAL: int
-                            public static NO_PROFILES_IN_IOR: int
-                            public static AOM_ENTRY_DEC_ZERO: int
-                            public static ADD_POA_INACTIVE: int
-                            public static ILLEGAL_POA_STATE_TRANS: int
-                            public static UNEXPECTED_EXCEPTION: int
-                            public static SINGLE_THREAD_NOT_SUPPORTED: int
-                            public static METHOD_NOT_IMPLEMENTED: int
-                            public static POA_LOOKUP_ERROR: int
-                            public static POA_INACTIVE: int
-                            public static POA_NO_SERVANT_MANAGER: int
-                            public static POA_NO_DEFAULT_SERVANT: int
-                            public static POA_SERVANT_NOT_UNIQUE: int
-                            public static POA_WRONG_POLICY: int
-                            public static FINDPOA_ERROR: int
-                            public static POA_SERVANT_ACTIVATOR_LOOKUP_FAILED: int
-                            public static POA_BAD_SERVANT_MANAGER: int
-                            public static POA_SERVANT_LOCATOR_LOOKUP_FAILED: int
-                            public static POA_UNKNOWN_POLICY: int
-                            public static POA_NOT_FOUND: int
-                            public static SERVANT_LOOKUP: int
-                            public static LOCAL_SERVANT_LOOKUP: int
-                            public static SERVANT_MANAGER_BAD_TYPE: int
-                            public static DEFAULT_POA_NOT_POAIMPL: int
-                            public static WRONG_POLICIES_FOR_THIS_OBJECT: int
-                            public static THIS_OBJECT_SERVANT_NOT_ACTIVE: int
-                            public static THIS_OBJECT_WRONG_POLICY: int
-                            public static NO_CONTEXT: int
-                            public static INCARNATE_RETURNED_NULL: int
-                            public static JTS_INIT_ERROR: int
-                            public static PERSISTENT_SERVERID_NOT_SET: int
-                            public static PERSISTENT_SERVERPORT_NOT_SET: int
-                            public static ORBD_ERROR: int
-                            public static BOOTSTRAP_ERROR: int
-                            public static POA_DISCARDING: int
-                            public static OTSHOOKEXCEPTION: int
-                            public static UNKNOWN_SERVER_EXCEPTION: int
-                            public static UNKNOWN_SERVERAPP_EXCEPTION: int
-                            public static UNKNOWN_LOCALINVOCATION_ERROR: int
-                            public static ADAPTER_ACTIVATOR_NONEXISTENT: int
-                            public static ADAPTER_ACTIVATOR_FAILED: int
-                            public static BAD_SKELETON: int
-                            public static NULL_SERVANT: int
-                            public static ADAPTER_DESTROYED: int
+                            public static readonly SERVANT_MANAGER_ALREADY_SET: int
+                            public static readonly DESTROY_DEADLOCK: int
+                            public static readonly SERVANT_ORB: int
+                            public static readonly BAD_SERVANT: int
+                            public static readonly ILLEGAL_FORWARD_REQUEST: int
+                            public static readonly BAD_TRANSACTION_CONTEXT: int
+                            public static readonly BAD_REPOSITORY_ID: int
+                            public static readonly INVOKESETUP: int
+                            public static readonly BAD_LOCALREPLYSTATUS: int
+                            public static readonly PERSISTENT_SERVERPORT_ERROR: int
+                            public static readonly SERVANT_DISPATCH: int
+                            public static readonly WRONG_CLIENTSC: int
+                            public static readonly CANT_CLONE_TEMPLATE: int
+                            public static readonly POACURRENT_UNBALANCED_STACK: int
+                            public static readonly POACURRENT_NULL_FIELD: int
+                            public static readonly POA_INTERNAL_GET_SERVANT_ERROR: int
+                            public static readonly MAKE_FACTORY_NOT_POA: int
+                            public static readonly DUPLICATE_ORB_VERSION_SC: int
+                            public static readonly PREINVOKE_CLONE_ERROR: int
+                            public static readonly PREINVOKE_POA_DESTROYED: int
+                            public static readonly PMF_CREATE_RETAIN: int
+                            public static readonly PMF_CREATE_NON_RETAIN: int
+                            public static readonly POLICY_MEDIATOR_BAD_POLICY_IN_FACTORY: int
+                            public static readonly SERVANT_TO_ID_OAA: int
+                            public static readonly SERVANT_TO_ID_SAA: int
+                            public static readonly SERVANT_TO_ID_WP: int
+                            public static readonly CANT_RESOLVE_ROOT_POA: int
+                            public static readonly SERVANT_MUST_BE_LOCAL: int
+                            public static readonly NO_PROFILES_IN_IOR: int
+                            public static readonly AOM_ENTRY_DEC_ZERO: int
+                            public static readonly ADD_POA_INACTIVE: int
+                            public static readonly ILLEGAL_POA_STATE_TRANS: int
+                            public static readonly UNEXPECTED_EXCEPTION: int
+                            public static readonly SINGLE_THREAD_NOT_SUPPORTED: int
+                            public static readonly METHOD_NOT_IMPLEMENTED: int
+                            public static readonly POA_LOOKUP_ERROR: int
+                            public static readonly POA_INACTIVE: int
+                            public static readonly POA_NO_SERVANT_MANAGER: int
+                            public static readonly POA_NO_DEFAULT_SERVANT: int
+                            public static readonly POA_SERVANT_NOT_UNIQUE: int
+                            public static readonly POA_WRONG_POLICY: int
+                            public static readonly FINDPOA_ERROR: int
+                            public static readonly POA_SERVANT_ACTIVATOR_LOOKUP_FAILED: int
+                            public static readonly POA_BAD_SERVANT_MANAGER: int
+                            public static readonly POA_SERVANT_LOCATOR_LOOKUP_FAILED: int
+                            public static readonly POA_UNKNOWN_POLICY: int
+                            public static readonly POA_NOT_FOUND: int
+                            public static readonly SERVANT_LOOKUP: int
+                            public static readonly LOCAL_SERVANT_LOOKUP: int
+                            public static readonly SERVANT_MANAGER_BAD_TYPE: int
+                            public static readonly DEFAULT_POA_NOT_POAIMPL: int
+                            public static readonly WRONG_POLICIES_FOR_THIS_OBJECT: int
+                            public static readonly THIS_OBJECT_SERVANT_NOT_ACTIVE: int
+                            public static readonly THIS_OBJECT_WRONG_POLICY: int
+                            public static readonly NO_CONTEXT: int
+                            public static readonly INCARNATE_RETURNED_NULL: int
+                            public static readonly JTS_INIT_ERROR: int
+                            public static readonly PERSISTENT_SERVERID_NOT_SET: int
+                            public static readonly PERSISTENT_SERVERPORT_NOT_SET: int
+                            public static readonly ORBD_ERROR: int
+                            public static readonly BOOTSTRAP_ERROR: int
+                            public static readonly POA_DISCARDING: int
+                            public static readonly OTSHOOKEXCEPTION: int
+                            public static readonly UNKNOWN_SERVER_EXCEPTION: int
+                            public static readonly UNKNOWN_SERVERAPP_EXCEPTION: int
+                            public static readonly UNKNOWN_LOCALINVOCATION_ERROR: int
+                            public static readonly ADAPTER_ACTIVATOR_NONEXISTENT: int
+                            public static readonly ADAPTER_ACTIVATOR_FAILED: int
+                            public static readonly BAD_SKELETON: int
+                            public static readonly NULL_SERVANT: int
+                            public static readonly ADAPTER_DESTROYED: int
                             public constructor(arg0: java.util.logging.Logger)
                             public static get(arg0: com.sun.corba.se.spi.orb.ORB, arg1: java.lang.String | string): com.sun.corba.se.impl.logging.POASystemException
                             public static get(arg0: java.lang.String | string): com.sun.corba.se.impl.logging.POASystemException

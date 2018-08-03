@@ -6,7 +6,7 @@ declare namespace jdk {
                     namespace joni {
                         namespace ast {
                             class StringNode extends jdk.nashorn.internal.runtime.regexp.joni.ast.Node implements jdk.nashorn.internal.runtime.regexp.joni.constants.StringType {
-                                public static EMPTY: jdk.nashorn.internal.runtime.regexp.joni.ast.StringNode
+                                public static readonly EMPTY: jdk.nashorn.internal.runtime.regexp.joni.ast.StringNode
                                 public chars: char[]
                                 public p: int
                                 public end: int

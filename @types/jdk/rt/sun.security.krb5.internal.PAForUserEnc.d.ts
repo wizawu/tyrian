@@ -3,8 +3,8 @@ declare namespace sun {
         namespace krb5 {
             namespace internal {
                 class PAForUserEnc {
-                    public name: sun.security.krb5.PrincipalName
-                    public static AUTH_PACKAGE: string
+                    public readonly name: sun.security.krb5.PrincipalName
+                    public static readonly AUTH_PACKAGE: string
                     public constructor(arg0: sun.security.krb5.PrincipalName, arg1: sun.security.krb5.EncryptionKey)
                     public constructor(arg0: sun.security.util.DerValue, arg1: sun.security.krb5.EncryptionKey)
                     public asn1Encode(): byte[]

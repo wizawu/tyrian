@@ -6,7 +6,7 @@ declare namespace com {
                     namespace policy {
                         namespace privateutil {
                             class PolicyUtils$Text {
-                                public static NEW_LINE: string
+                                public static readonly NEW_LINE: string
                                 public constructor()
                                 public static createIndent(arg0: int): string
                                 public static class: java.lang.Class<any>

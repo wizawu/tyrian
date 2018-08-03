@@ -3,8 +3,8 @@ declare namespace com {
         namespace media {
             namespace sound {
                 class DLSSampleLoop {
-                    public static LOOP_TYPE_FORWARD: int
-                    public static LOOP_TYPE_RELEASE: int
+                    public static readonly LOOP_TYPE_FORWARD: int
+                    public static readonly LOOP_TYPE_RELEASE: int
                     public constructor()
                     public getLength(): long
                     public setLength(arg0: long): void

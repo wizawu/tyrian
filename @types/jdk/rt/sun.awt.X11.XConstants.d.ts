@@ -2,359 +2,359 @@ declare namespace sun {
     namespace awt {
         namespace X11 {
             class XConstants {
-                public static X_PROTOCOL: int
-                public static X_PROTOCOL_REVISION: int
-                public static None: long
-                public static ParentRelative: long
-                public static CopyFromParent: long
-                public static PointerWindow: long
-                public static InputFocus: long
-                public static PointerRoot: long
-                public static AnyPropertyType: long
-                public static AnyKey: long
-                public static AnyButton: long
-                public static AllTemporary: long
-                public static CurrentTime: long
-                public static NoSymbol: long
-                public static NoEventMask: long
-                public static KeyPressMask: long
-                public static KeyReleaseMask: long
-                public static ButtonPressMask: long
-                public static ButtonReleaseMask: long
-                public static EnterWindowMask: long
-                public static LeaveWindowMask: long
-                public static PointerMotionMask: long
-                public static PointerMotionHintMask: long
-                public static Button1MotionMask: long
-                public static Button2MotionMask: long
-                public static Button3MotionMask: long
-                public static Button4MotionMask: long
-                public static Button5MotionMask: long
-                public static ButtonMotionMask: long
-                public static KeymapStateMask: long
-                public static ExposureMask: long
-                public static VisibilityChangeMask: long
-                public static StructureNotifyMask: long
-                public static ResizeRedirectMask: long
-                public static SubstructureNotifyMask: long
-                public static SubstructureRedirectMask: long
-                public static FocusChangeMask: long
-                public static PropertyChangeMask: long
-                public static ColormapChangeMask: long
-                public static OwnerGrabButtonMask: long
-                public static MAX_BUTTONS: int
-                public static ALL_BUTTONS_MASK: int
-                public static KeyPress: int
-                public static KeyRelease: int
-                public static ButtonPress: int
-                public static ButtonRelease: int
-                public static MotionNotify: int
-                public static EnterNotify: int
-                public static LeaveNotify: int
-                public static FocusIn: int
-                public static FocusOut: int
-                public static KeymapNotify: int
-                public static Expose: int
-                public static GraphicsExpose: int
-                public static NoExpose: int
-                public static VisibilityNotify: int
-                public static CreateNotify: int
-                public static DestroyNotify: int
-                public static UnmapNotify: int
-                public static MapNotify: int
-                public static MapRequest: int
-                public static ReparentNotify: int
-                public static ConfigureNotify: int
-                public static ConfigureRequest: int
-                public static GravityNotify: int
-                public static ResizeRequest: int
-                public static CirculateNotify: int
-                public static CirculateRequest: int
-                public static PropertyNotify: int
-                public static SelectionClear: int
-                public static SelectionRequest: int
-                public static SelectionNotify: int
-                public static ColormapNotify: int
-                public static ClientMessage: int
-                public static MappingNotify: int
-                public static LASTEvent: int
-                public static ShiftMask: int
-                public static LockMask: int
-                public static ControlMask: int
-                public static Mod1Mask: int
-                public static Mod2Mask: int
-                public static Mod3Mask: int
-                public static Mod4Mask: int
-                public static Mod5Mask: int
-                public static ShiftMapIndex: int
-                public static LockMapIndex: int
-                public static ControlMapIndex: int
-                public static Mod1MapIndex: int
-                public static Mod2MapIndex: int
-                public static Mod3MapIndex: int
-                public static Mod4MapIndex: int
-                public static Mod5MapIndex: int
-                public static AnyModifier: int
-                public static buttons: int[]
-                public static NotifyNormal: int
-                public static NotifyGrab: int
-                public static NotifyUngrab: int
-                public static NotifyWhileGrabbed: int
-                public static NotifyHint: int
-                public static NotifyAncestor: int
-                public static NotifyVirtual: int
-                public static NotifyInferior: int
-                public static NotifyNonlinear: int
-                public static NotifyNonlinearVirtual: int
-                public static NotifyPointer: int
-                public static NotifyPointerRoot: int
-                public static NotifyDetailNone: int
-                public static VisibilityUnobscured: int
-                public static VisibilityPartiallyObscured: int
-                public static VisibilityFullyObscured: int
-                public static PlaceOnTop: int
-                public static PlaceOnBottom: int
-                public static FamilyInternet: int
-                public static FamilyDECnet: int
-                public static FamilyChaos: int
-                public static PropertyNewValue: int
-                public static PropertyDelete: int
-                public static ColormapUninstalled: int
-                public static ColormapInstalled: int
-                public static GrabModeSync: int
-                public static GrabModeAsync: int
-                public static GrabSuccess: int
-                public static AlreadyGrabbed: int
-                public static GrabInvalidTime: int
-                public static GrabNotViewable: int
-                public static GrabFrozen: int
-                public static AsyncPointer: int
-                public static SyncPointer: int
-                public static ReplayPointer: int
-                public static AsyncKeyboard: int
-                public static SyncKeyboard: int
-                public static ReplayKeyboard: int
-                public static AsyncBoth: int
-                public static SyncBoth: int
-                public static RevertToNone: int
-                public static RevertToPointerRoot: int
-                public static RevertToParent: int
-                public static QueuedAlready: int
-                public static QueuedAfterReading: int
-                public static QueuedAfterFlush: int
-                public static Success: int
-                public static BadRequest: int
-                public static BadValue: int
-                public static BadWindow: int
-                public static BadPixmap: int
-                public static BadAtom: int
-                public static BadCursor: int
-                public static BadFont: int
-                public static BadMatch: int
-                public static BadDrawable: int
-                public static BadAccess: int
-                public static BadAlloc: int
-                public static BadColor: int
-                public static BadGC: int
-                public static BadIDChoice: int
-                public static BadName: int
-                public static BadLength: int
-                public static BadImplementation: int
-                public static FirstExtensionError: int
-                public static LastExtensionError: int
-                public static InputOutput: int
-                public static InputOnly: int
-                public static CWBackPixmap: long
-                public static CWBackPixel: long
-                public static CWBorderPixmap: long
-                public static CWBorderPixel: long
-                public static CWBitGravity: long
-                public static CWWinGravity: long
-                public static CWBackingStore: long
-                public static CWBackingPlanes: long
-                public static CWBackingPixel: long
-                public static CWOverrideRedirect: long
-                public static CWSaveUnder: long
-                public static CWEventMask: long
-                public static CWDontPropagate: long
-                public static CWColormap: long
-                public static CWCursor: long
-                public static CWX: int
-                public static CWY: int
-                public static CWWidth: int
-                public static CWHeight: int
-                public static CWBorderWidth: int
-                public static CWSibling: int
-                public static CWStackMode: int
-                public static ForgetGravity: int
-                public static NorthWestGravity: int
-                public static NorthGravity: int
-                public static NorthEastGravity: int
-                public static WestGravity: int
-                public static CenterGravity: int
-                public static EastGravity: int
-                public static SouthWestGravity: int
-                public static SouthGravity: int
-                public static SouthEastGravity: int
-                public static StaticGravity: int
-                public static UnmapGravity: int
-                public static NotUseful: int
-                public static WhenMapped: int
-                public static Always: int
-                public static IsUnmapped: int
-                public static IsUnviewable: int
-                public static IsViewable: int
-                public static SetModeInsert: int
-                public static SetModeDelete: int
-                public static DestroyAll: int
-                public static RetainPermanent: int
-                public static RetainTemporary: int
-                public static Above: int
-                public static Below: int
-                public static TopIf: int
-                public static BottomIf: int
-                public static Opposite: int
-                public static RaiseLowest: int
-                public static LowerHighest: int
-                public static PropModeReplace: int
-                public static PropModePrepend: int
-                public static PropModeAppend: int
-                public static GXclear: int
-                public static GXand: int
-                public static GXandReverse: int
-                public static GXcopy: int
-                public static GXandInverted: int
-                public static GXnoop: int
-                public static GXxor: int
-                public static GXor: int
-                public static GXnor: int
-                public static GXequiv: int
-                public static GXinvert: int
-                public static GXorReverse: int
-                public static GXcopyInverted: int
-                public static GXorInverted: int
-                public static GXnand: int
-                public static GXset: int
-                public static LineSolid: int
-                public static LineOnOffDash: int
-                public static LineDoubleDash: int
-                public static CapNotLast: int
-                public static CapButt: int
-                public static CapRound: int
-                public static CapProjecting: int
-                public static JoinMiter: int
-                public static JoinRound: int
-                public static JoinBevel: int
-                public static FillSolid: int
-                public static FillTiled: int
-                public static FillStippled: int
-                public static FillOpaqueStippled: int
-                public static EvenOddRule: int
-                public static WindingRule: int
-                public static ClipByChildren: int
-                public static IncludeInferiors: int
-                public static Unsorted: int
-                public static YSorted: int
-                public static YXSorted: int
-                public static YXBanded: int
-                public static CoordModeOrigin: int
-                public static CoordModePrevious: int
-                public static Complex: int
-                public static Nonconvex: int
-                public static Convex: int
-                public static ArcChord: int
-                public static ArcPieSlice: int
-                public static GCFunction: long
-                public static GCPlaneMask: long
-                public static GCForeground: long
-                public static GCBackground: long
-                public static GCLineWidth: long
-                public static GCLineStyle: long
-                public static GCCapStyle: long
-                public static GCJoinStyle: long
-                public static GCFillStyle: long
-                public static GCFillRule: long
-                public static GCTile: long
-                public static GCStipple: long
-                public static GCTileStipXOrigin: long
-                public static GCTileStipYOrigin: long
-                public static GCFont: long
-                public static GCSubwindowMode: long
-                public static GCGraphicsExposures: long
-                public static GCClipXOrigin: long
-                public static GCClipYOrigin: long
-                public static GCClipMask: long
-                public static GCDashOffset: long
-                public static GCDashList: long
-                public static GCArcMode: long
-                public static GCLastBit: int
-                public static FontLeftToRight: int
-                public static FontRightToLeft: int
-                public static FontChange: int
-                public static XYBitmap: int
-                public static XYPixmap: int
-                public static ZPixmap: int
-                public static AllocNone: int
-                public static AllocAll: int
-                public static DoRed: int
-                public static DoGreen: int
-                public static DoBlue: int
-                public static CursorShape: int
-                public static TileShape: int
-                public static StippleShape: int
-                public static AutoRepeatModeOff: int
-                public static AutoRepeatModeOn: int
-                public static AutoRepeatModeDefault: int
-                public static LedModeOff: int
-                public static LedModeOn: int
-                public static KBKeyClickPercent: long
-                public static KBBellPercent: long
-                public static KBBellPitch: long
-                public static KBBellDuration: long
-                public static KBLed: long
-                public static KBLedMode: long
-                public static KBKey: long
-                public static KBAutoRepeatMode: long
-                public static MappingSuccess: int
-                public static MappingBusy: int
-                public static MappingFailed: int
-                public static MappingModifier: int
-                public static MappingKeyboard: int
-                public static MappingPointer: int
-                public static DontPreferBlanking: int
-                public static PreferBlanking: int
-                public static DefaultBlanking: int
-                public static DisableScreenSaver: int
-                public static DisableScreenInterval: int
-                public static DontAllowExposures: int
-                public static AllowExposures: int
-                public static DefaultExposures: int
-                public static ScreenSaverReset: int
-                public static ScreenSaverActive: int
-                public static HostInsert: int
-                public static HostDelete: int
-                public static EnableAccess: int
-                public static DisableAccess: int
-                public static StaticGray: int
-                public static GrayScale: int
-                public static StaticColor: int
-                public static PseudoColor: int
-                public static TrueColor: int
-                public static DirectColor: int
-                public static LSBFirst: int
-                public static MSBFirst: int
-                public static XkbUseCoreKbd: int
-                public static XkbNewKeyboardNotify: int
-                public static XkbMapNotify: int
-                public static XkbStateNotify: int
-                public static XkbNewKeyboardNotifyMask: long
-                public static XkbMapNotifyMask: long
-                public static XkbStateNotifyMask: long
-                public static XkbGroupStateMask: long
-                public static XkbKeyTypesMask: long
-                public static XkbKeySymsMask: long
-                public static XkbModifierMapMask: long
-                public static XkbVirtualModsMask: long
+                public static readonly X_PROTOCOL: int
+                public static readonly X_PROTOCOL_REVISION: int
+                public static readonly None: long
+                public static readonly ParentRelative: long
+                public static readonly CopyFromParent: long
+                public static readonly PointerWindow: long
+                public static readonly InputFocus: long
+                public static readonly PointerRoot: long
+                public static readonly AnyPropertyType: long
+                public static readonly AnyKey: long
+                public static readonly AnyButton: long
+                public static readonly AllTemporary: long
+                public static readonly CurrentTime: long
+                public static readonly NoSymbol: long
+                public static readonly NoEventMask: long
+                public static readonly KeyPressMask: long
+                public static readonly KeyReleaseMask: long
+                public static readonly ButtonPressMask: long
+                public static readonly ButtonReleaseMask: long
+                public static readonly EnterWindowMask: long
+                public static readonly LeaveWindowMask: long
+                public static readonly PointerMotionMask: long
+                public static readonly PointerMotionHintMask: long
+                public static readonly Button1MotionMask: long
+                public static readonly Button2MotionMask: long
+                public static readonly Button3MotionMask: long
+                public static readonly Button4MotionMask: long
+                public static readonly Button5MotionMask: long
+                public static readonly ButtonMotionMask: long
+                public static readonly KeymapStateMask: long
+                public static readonly ExposureMask: long
+                public static readonly VisibilityChangeMask: long
+                public static readonly StructureNotifyMask: long
+                public static readonly ResizeRedirectMask: long
+                public static readonly SubstructureNotifyMask: long
+                public static readonly SubstructureRedirectMask: long
+                public static readonly FocusChangeMask: long
+                public static readonly PropertyChangeMask: long
+                public static readonly ColormapChangeMask: long
+                public static readonly OwnerGrabButtonMask: long
+                public static readonly MAX_BUTTONS: int
+                public static readonly ALL_BUTTONS_MASK: int
+                public static readonly KeyPress: int
+                public static readonly KeyRelease: int
+                public static readonly ButtonPress: int
+                public static readonly ButtonRelease: int
+                public static readonly MotionNotify: int
+                public static readonly EnterNotify: int
+                public static readonly LeaveNotify: int
+                public static readonly FocusIn: int
+                public static readonly FocusOut: int
+                public static readonly KeymapNotify: int
+                public static readonly Expose: int
+                public static readonly GraphicsExpose: int
+                public static readonly NoExpose: int
+                public static readonly VisibilityNotify: int
+                public static readonly CreateNotify: int
+                public static readonly DestroyNotify: int
+                public static readonly UnmapNotify: int
+                public static readonly MapNotify: int
+                public static readonly MapRequest: int
+                public static readonly ReparentNotify: int
+                public static readonly ConfigureNotify: int
+                public static readonly ConfigureRequest: int
+                public static readonly GravityNotify: int
+                public static readonly ResizeRequest: int
+                public static readonly CirculateNotify: int
+                public static readonly CirculateRequest: int
+                public static readonly PropertyNotify: int
+                public static readonly SelectionClear: int
+                public static readonly SelectionRequest: int
+                public static readonly SelectionNotify: int
+                public static readonly ColormapNotify: int
+                public static readonly ClientMessage: int
+                public static readonly MappingNotify: int
+                public static readonly LASTEvent: int
+                public static readonly ShiftMask: int
+                public static readonly LockMask: int
+                public static readonly ControlMask: int
+                public static readonly Mod1Mask: int
+                public static readonly Mod2Mask: int
+                public static readonly Mod3Mask: int
+                public static readonly Mod4Mask: int
+                public static readonly Mod5Mask: int
+                public static readonly ShiftMapIndex: int
+                public static readonly LockMapIndex: int
+                public static readonly ControlMapIndex: int
+                public static readonly Mod1MapIndex: int
+                public static readonly Mod2MapIndex: int
+                public static readonly Mod3MapIndex: int
+                public static readonly Mod4MapIndex: int
+                public static readonly Mod5MapIndex: int
+                public static readonly AnyModifier: int
+                public static readonly buttons: int[]
+                public static readonly NotifyNormal: int
+                public static readonly NotifyGrab: int
+                public static readonly NotifyUngrab: int
+                public static readonly NotifyWhileGrabbed: int
+                public static readonly NotifyHint: int
+                public static readonly NotifyAncestor: int
+                public static readonly NotifyVirtual: int
+                public static readonly NotifyInferior: int
+                public static readonly NotifyNonlinear: int
+                public static readonly NotifyNonlinearVirtual: int
+                public static readonly NotifyPointer: int
+                public static readonly NotifyPointerRoot: int
+                public static readonly NotifyDetailNone: int
+                public static readonly VisibilityUnobscured: int
+                public static readonly VisibilityPartiallyObscured: int
+                public static readonly VisibilityFullyObscured: int
+                public static readonly PlaceOnTop: int
+                public static readonly PlaceOnBottom: int
+                public static readonly FamilyInternet: int
+                public static readonly FamilyDECnet: int
+                public static readonly FamilyChaos: int
+                public static readonly PropertyNewValue: int
+                public static readonly PropertyDelete: int
+                public static readonly ColormapUninstalled: int
+                public static readonly ColormapInstalled: int
+                public static readonly GrabModeSync: int
+                public static readonly GrabModeAsync: int
+                public static readonly GrabSuccess: int
+                public static readonly AlreadyGrabbed: int
+                public static readonly GrabInvalidTime: int
+                public static readonly GrabNotViewable: int
+                public static readonly GrabFrozen: int
+                public static readonly AsyncPointer: int
+                public static readonly SyncPointer: int
+                public static readonly ReplayPointer: int
+                public static readonly AsyncKeyboard: int
+                public static readonly SyncKeyboard: int
+                public static readonly ReplayKeyboard: int
+                public static readonly AsyncBoth: int
+                public static readonly SyncBoth: int
+                public static readonly RevertToNone: int
+                public static readonly RevertToPointerRoot: int
+                public static readonly RevertToParent: int
+                public static readonly QueuedAlready: int
+                public static readonly QueuedAfterReading: int
+                public static readonly QueuedAfterFlush: int
+                public static readonly Success: int
+                public static readonly BadRequest: int
+                public static readonly BadValue: int
+                public static readonly BadWindow: int
+                public static readonly BadPixmap: int
+                public static readonly BadAtom: int
+                public static readonly BadCursor: int
+                public static readonly BadFont: int
+                public static readonly BadMatch: int
+                public static readonly BadDrawable: int
+                public static readonly BadAccess: int
+                public static readonly BadAlloc: int
+                public static readonly BadColor: int
+                public static readonly BadGC: int
+                public static readonly BadIDChoice: int
+                public static readonly BadName: int
+                public static readonly BadLength: int
+                public static readonly BadImplementation: int
+                public static readonly FirstExtensionError: int
+                public static readonly LastExtensionError: int
+                public static readonly InputOutput: int
+                public static readonly InputOnly: int
+                public static readonly CWBackPixmap: long
+                public static readonly CWBackPixel: long
+                public static readonly CWBorderPixmap: long
+                public static readonly CWBorderPixel: long
+                public static readonly CWBitGravity: long
+                public static readonly CWWinGravity: long
+                public static readonly CWBackingStore: long
+                public static readonly CWBackingPlanes: long
+                public static readonly CWBackingPixel: long
+                public static readonly CWOverrideRedirect: long
+                public static readonly CWSaveUnder: long
+                public static readonly CWEventMask: long
+                public static readonly CWDontPropagate: long
+                public static readonly CWColormap: long
+                public static readonly CWCursor: long
+                public static readonly CWX: int
+                public static readonly CWY: int
+                public static readonly CWWidth: int
+                public static readonly CWHeight: int
+                public static readonly CWBorderWidth: int
+                public static readonly CWSibling: int
+                public static readonly CWStackMode: int
+                public static readonly ForgetGravity: int
+                public static readonly NorthWestGravity: int
+                public static readonly NorthGravity: int
+                public static readonly NorthEastGravity: int
+                public static readonly WestGravity: int
+                public static readonly CenterGravity: int
+                public static readonly EastGravity: int
+                public static readonly SouthWestGravity: int
+                public static readonly SouthGravity: int
+                public static readonly SouthEastGravity: int
+                public static readonly StaticGravity: int
+                public static readonly UnmapGravity: int
+                public static readonly NotUseful: int
+                public static readonly WhenMapped: int
+                public static readonly Always: int
+                public static readonly IsUnmapped: int
+                public static readonly IsUnviewable: int
+                public static readonly IsViewable: int
+                public static readonly SetModeInsert: int
+                public static readonly SetModeDelete: int
+                public static readonly DestroyAll: int
+                public static readonly RetainPermanent: int
+                public static readonly RetainTemporary: int
+                public static readonly Above: int
+                public static readonly Below: int
+                public static readonly TopIf: int
+                public static readonly BottomIf: int
+                public static readonly Opposite: int
+                public static readonly RaiseLowest: int
+                public static readonly LowerHighest: int
+                public static readonly PropModeReplace: int
+                public static readonly PropModePrepend: int
+                public static readonly PropModeAppend: int
+                public static readonly GXclear: int
+                public static readonly GXand: int
+                public static readonly GXandReverse: int
+                public static readonly GXcopy: int
+                public static readonly GXandInverted: int
+                public static readonly GXnoop: int
+                public static readonly GXxor: int
+                public static readonly GXor: int
+                public static readonly GXnor: int
+                public static readonly GXequiv: int
+                public static readonly GXinvert: int
+                public static readonly GXorReverse: int
+                public static readonly GXcopyInverted: int
+                public static readonly GXorInverted: int
+                public static readonly GXnand: int
+                public static readonly GXset: int
+                public static readonly LineSolid: int
+                public static readonly LineOnOffDash: int
+                public static readonly LineDoubleDash: int
+                public static readonly CapNotLast: int
+                public static readonly CapButt: int
+                public static readonly CapRound: int
+                public static readonly CapProjecting: int
+                public static readonly JoinMiter: int
+                public static readonly JoinRound: int
+                public static readonly JoinBevel: int
+                public static readonly FillSolid: int
+                public static readonly FillTiled: int
+                public static readonly FillStippled: int
+                public static readonly FillOpaqueStippled: int
+                public static readonly EvenOddRule: int
+                public static readonly WindingRule: int
+                public static readonly ClipByChildren: int
+                public static readonly IncludeInferiors: int
+                public static readonly Unsorted: int
+                public static readonly YSorted: int
+                public static readonly YXSorted: int
+                public static readonly YXBanded: int
+                public static readonly CoordModeOrigin: int
+                public static readonly CoordModePrevious: int
+                public static readonly Complex: int
+                public static readonly Nonconvex: int
+                public static readonly Convex: int
+                public static readonly ArcChord: int
+                public static readonly ArcPieSlice: int
+                public static readonly GCFunction: long
+                public static readonly GCPlaneMask: long
+                public static readonly GCForeground: long
+                public static readonly GCBackground: long
+                public static readonly GCLineWidth: long
+                public static readonly GCLineStyle: long
+                public static readonly GCCapStyle: long
+                public static readonly GCJoinStyle: long
+                public static readonly GCFillStyle: long
+                public static readonly GCFillRule: long
+                public static readonly GCTile: long
+                public static readonly GCStipple: long
+                public static readonly GCTileStipXOrigin: long
+                public static readonly GCTileStipYOrigin: long
+                public static readonly GCFont: long
+                public static readonly GCSubwindowMode: long
+                public static readonly GCGraphicsExposures: long
+                public static readonly GCClipXOrigin: long
+                public static readonly GCClipYOrigin: long
+                public static readonly GCClipMask: long
+                public static readonly GCDashOffset: long
+                public static readonly GCDashList: long
+                public static readonly GCArcMode: long
+                public static readonly GCLastBit: int
+                public static readonly FontLeftToRight: int
+                public static readonly FontRightToLeft: int
+                public static readonly FontChange: int
+                public static readonly XYBitmap: int
+                public static readonly XYPixmap: int
+                public static readonly ZPixmap: int
+                public static readonly AllocNone: int
+                public static readonly AllocAll: int
+                public static readonly DoRed: int
+                public static readonly DoGreen: int
+                public static readonly DoBlue: int
+                public static readonly CursorShape: int
+                public static readonly TileShape: int
+                public static readonly StippleShape: int
+                public static readonly AutoRepeatModeOff: int
+                public static readonly AutoRepeatModeOn: int
+                public static readonly AutoRepeatModeDefault: int
+                public static readonly LedModeOff: int
+                public static readonly LedModeOn: int
+                public static readonly KBKeyClickPercent: long
+                public static readonly KBBellPercent: long
+                public static readonly KBBellPitch: long
+                public static readonly KBBellDuration: long
+                public static readonly KBLed: long
+                public static readonly KBLedMode: long
+                public static readonly KBKey: long
+                public static readonly KBAutoRepeatMode: long
+                public static readonly MappingSuccess: int
+                public static readonly MappingBusy: int
+                public static readonly MappingFailed: int
+                public static readonly MappingModifier: int
+                public static readonly MappingKeyboard: int
+                public static readonly MappingPointer: int
+                public static readonly DontPreferBlanking: int
+                public static readonly PreferBlanking: int
+                public static readonly DefaultBlanking: int
+                public static readonly DisableScreenSaver: int
+                public static readonly DisableScreenInterval: int
+                public static readonly DontAllowExposures: int
+                public static readonly AllowExposures: int
+                public static readonly DefaultExposures: int
+                public static readonly ScreenSaverReset: int
+                public static readonly ScreenSaverActive: int
+                public static readonly HostInsert: int
+                public static readonly HostDelete: int
+                public static readonly EnableAccess: int
+                public static readonly DisableAccess: int
+                public static readonly StaticGray: int
+                public static readonly GrayScale: int
+                public static readonly StaticColor: int
+                public static readonly PseudoColor: int
+                public static readonly TrueColor: int
+                public static readonly DirectColor: int
+                public static readonly LSBFirst: int
+                public static readonly MSBFirst: int
+                public static readonly XkbUseCoreKbd: int
+                public static readonly XkbNewKeyboardNotify: int
+                public static readonly XkbMapNotify: int
+                public static readonly XkbStateNotify: int
+                public static readonly XkbNewKeyboardNotifyMask: long
+                public static readonly XkbMapNotifyMask: long
+                public static readonly XkbStateNotifyMask: long
+                public static readonly XkbGroupStateMask: long
+                public static readonly XkbKeyTypesMask: long
+                public static readonly XkbKeySymsMask: long
+                public static readonly XkbModifierMapMask: long
+                public static readonly XkbVirtualModsMask: long
                 public static class: java.lang.Class<any>
             }
         }

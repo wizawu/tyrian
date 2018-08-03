@@ -4,8 +4,8 @@ declare namespace com {
             namespace sound {
                 abstract class ModelAbstractChannelMixer implements com.sun.media.sound.ModelChannelMixer {
                     public constructor()
-                    public process(arg0: float[][], arg1: int, arg2: int): boolean
-                    public stop(): void
+                    public abstract process(arg0: float[][], arg1: int, arg2: int): boolean
+                    public abstract stop(): void
                     public allNotesOff(): void
                     public allSoundOff(): void
                     public controlChange(arg0: int, arg1: int): void

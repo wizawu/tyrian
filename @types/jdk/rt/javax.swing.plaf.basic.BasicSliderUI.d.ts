@@ -3,10 +3,10 @@ declare namespace javax {
         namespace plaf {
             namespace basic {
                 class BasicSliderUI extends javax.swing.plaf.SliderUI {
-                    public static POSITIVE_SCROLL: int
-                    public static NEGATIVE_SCROLL: int
-                    public static MIN_SCROLL: int
-                    public static MAX_SCROLL: int
+                    public static readonly POSITIVE_SCROLL: int
+                    public static readonly NEGATIVE_SCROLL: int
+                    public static readonly MIN_SCROLL: int
+                    public static readonly MAX_SCROLL: int
                     protected scrollTimer: javax.swing.Timer
                     protected slider: javax.swing.JSlider
                     protected focusInsets: java.awt.Insets

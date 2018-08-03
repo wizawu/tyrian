@@ -1,8 +1,8 @@
 declare namespace java {
     namespace io {
         abstract class ClassCache$Key {
-            public className: string
-            protected hashcode: int
+            public readonly className: string
+            protected readonly hashcode: int
             protected constructor(arg0: java.lang.String | string, arg1: int)
             public equals(arg0: java.lang.Object): boolean
             public hashCode(): int

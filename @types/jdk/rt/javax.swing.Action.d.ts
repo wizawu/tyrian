@@ -16,8 +16,8 @@ declare namespace javax {
             putValue(arg0: java.lang.String | string, arg1: java.lang.Object): void
             setEnabled(arg0: boolean): void
             isEnabled(): boolean
-            addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
-            removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+            removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
         }
     }
 }

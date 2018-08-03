@@ -8,9 +8,6 @@ declare namespace javax {
                         RAW_X509_CERTIFICATE_TYPE: string
                         getContent(): java.util.List
                     }
-                    interface X509Data$$Lambda extends javax.xml.crypto.XMLStructure {
-                        TYPE: string
-                    }
                 }
             }
         }

@@ -7,15 +7,15 @@ declare namespace com {
                         namespace security {
                             namespace utils {
                                 abstract class ElementProxy {
-                                    protected static log: java.util.logging.Logger
+                                    protected static readonly log: java.util.logging.Logger
                                     protected constructionElement: org.w3c.dom.Element
                                     protected baseURI: string
                                     protected doc: org.w3c.dom.Document
                                     public constructor()
                                     public constructor(arg0: org.w3c.dom.Document)
                                     public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
-                                    public getBaseNamespace(): string
-                                    public getBaseLocalName(): string
+                                    public abstract getBaseNamespace(): string
+                                    public abstract getBaseLocalName(): string
                                     protected createElementForFamilyLocal(arg0: org.w3c.dom.Document, arg1: java.lang.String | string, arg2: java.lang.String | string): org.w3c.dom.Element
                                     public static createElementForFamily(arg0: org.w3c.dom.Document, arg1: java.lang.String | string, arg2: java.lang.String | string): org.w3c.dom.Element
                                     public setElement(arg0: org.w3c.dom.Element, arg1: java.lang.String | string): void

@@ -1,7 +1,7 @@
 declare namespace java {
     namespace io {
         class PipedInputStream extends java.io.InputStream {
-            protected static PIPE_SIZE: int
+            protected static readonly PIPE_SIZE: int
             protected buffer: byte[]
             protected in: int
             protected out: int

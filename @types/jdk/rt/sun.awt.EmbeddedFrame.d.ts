@@ -1,8 +1,8 @@
 declare namespace sun {
     namespace awt {
         abstract class EmbeddedFrame extends java.awt.Frame implements java.awt.KeyEventDispatcher , java.beans.PropertyChangeListener {
-            protected static FORWARD: boolean
-            protected static BACKWARD: boolean
+            protected static readonly FORWARD: boolean
+            protected static readonly BACKWARD: boolean
             public supportsXEmbed(): boolean
             protected constructor(arg0: boolean)
             protected constructor()
@@ -36,8 +36,8 @@ declare namespace sun {
             protected getBoundsPrivate(): java.awt.Rectangle
             public toFront(): void
             public toBack(): void
-            public registerAccelerator(arg0: java.awt.AWTKeyStroke): void
-            public unregisterAccelerator(arg0: java.awt.AWTKeyStroke): void
+            public abstract registerAccelerator(arg0: java.awt.AWTKeyStroke): void
+            public abstract unregisterAccelerator(arg0: java.awt.AWTKeyStroke): void
             public static getAppletIfAncestorOf(arg0: java.awt.Component): java.applet.Applet
             public notifyModalBlocked(arg0: java.awt.Dialog, arg1: boolean): void
             public static class: java.lang.Class<any>

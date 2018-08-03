@@ -2,11 +2,11 @@ declare namespace java {
     namespace awt {
         abstract class PrintJob {
             public constructor()
-            public getGraphics(): java.awt.Graphics
-            public getPageDimension(): java.awt.Dimension
-            public getPageResolution(): int
-            public lastPageFirst(): boolean
-            public end(): void
+            public abstract getGraphics(): java.awt.Graphics
+            public abstract getPageDimension(): java.awt.Dimension
+            public abstract getPageResolution(): int
+            public abstract lastPageFirst(): boolean
+            public abstract end(): void
             public finalize(): void
             public static class: java.lang.Class<any>
         }

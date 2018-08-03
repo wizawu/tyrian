@@ -3,58 +3,58 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 class JSType extends java.lang.Enum<jdk.nashorn.internal.runtime.JSType> {
-                    public static UNDEFINED: jdk.nashorn.internal.runtime.JSType
-                    public static NULL: jdk.nashorn.internal.runtime.JSType
-                    public static BOOLEAN: jdk.nashorn.internal.runtime.JSType
-                    public static NUMBER: jdk.nashorn.internal.runtime.JSType
-                    public static STRING: jdk.nashorn.internal.runtime.JSType
-                    public static OBJECT: jdk.nashorn.internal.runtime.JSType
-                    public static FUNCTION: jdk.nashorn.internal.runtime.JSType
-                    public static MAX_UINT: long
-                    public static TO_BOOLEAN: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_BOOLEAN_D: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_INTEGER: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_LONG: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_LONG_D: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_NUMBER: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_NUMBER_OPTIMISTIC: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_STRING: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_INT32: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_INT32_L: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_INT32_OPTIMISTIC: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_INT32_D: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_UINT32_OPTIMISTIC: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_UINT32_DOUBLE: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_UINT32: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_UINT32_D: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_STRING_D: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_PRIMITIVE_TO_STRING: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_PRIMITIVE_TO_CHARSEQUENCE: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static THROW_UNWARRANTED: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static ADD_EXACT: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static SUB_EXACT: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static MUL_EXACT: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static DIV_EXACT: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static DIV_ZERO: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static REM_ZERO: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static REM_EXACT: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static DECREMENT_EXACT: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static INCREMENT_EXACT: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static NEGATE_EXACT: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_JAVA_ARRAY: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static VOID_RETURN: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static IS_STRING: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static IS_NUMBER: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TYPE_UNDEFINED_INDEX: int
-                    public static TYPE_INT_INDEX: int
-                    public static TYPE_DOUBLE_INDEX: int
-                    public static TYPE_OBJECT_INDEX: int
-                    public static CONVERT_OBJECT: java.util.List<java.lang.invoke.MethodHandle>
-                    public static CONVERT_OBJECT_OPTIMISTIC: java.util.List<java.lang.invoke.MethodHandle>
-                    public static UNDEFINED_INT: int
-                    public static UNDEFINED_LONG: long
-                    public static UNDEFINED_DOUBLE: double
-                    public static GET_UNDEFINED: java.util.List<java.lang.invoke.MethodHandle>
+                    public static readonly UNDEFINED: jdk.nashorn.internal.runtime.JSType
+                    public static readonly NULL: jdk.nashorn.internal.runtime.JSType
+                    public static readonly BOOLEAN: jdk.nashorn.internal.runtime.JSType
+                    public static readonly NUMBER: jdk.nashorn.internal.runtime.JSType
+                    public static readonly STRING: jdk.nashorn.internal.runtime.JSType
+                    public static readonly OBJECT: jdk.nashorn.internal.runtime.JSType
+                    public static readonly FUNCTION: jdk.nashorn.internal.runtime.JSType
+                    public static readonly MAX_UINT: long
+                    public static readonly TO_BOOLEAN: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_BOOLEAN_D: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_INTEGER: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_LONG: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_LONG_D: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_NUMBER: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_NUMBER_OPTIMISTIC: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_STRING: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_INT32: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_INT32_L: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_INT32_OPTIMISTIC: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_INT32_D: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_UINT32_OPTIMISTIC: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_UINT32_DOUBLE: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_UINT32: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_UINT32_D: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_STRING_D: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_PRIMITIVE_TO_STRING: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_PRIMITIVE_TO_CHARSEQUENCE: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly THROW_UNWARRANTED: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly ADD_EXACT: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly SUB_EXACT: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly MUL_EXACT: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly DIV_EXACT: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly DIV_ZERO: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly REM_ZERO: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly REM_EXACT: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly DECREMENT_EXACT: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly INCREMENT_EXACT: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly NEGATE_EXACT: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_JAVA_ARRAY: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly VOID_RETURN: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly IS_STRING: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly IS_NUMBER: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TYPE_UNDEFINED_INDEX: int
+                    public static readonly TYPE_INT_INDEX: int
+                    public static readonly TYPE_DOUBLE_INDEX: int
+                    public static readonly TYPE_OBJECT_INDEX: int
+                    public static readonly CONVERT_OBJECT: java.util.List<java.lang.invoke.MethodHandle>
+                    public static readonly CONVERT_OBJECT_OPTIMISTIC: java.util.List<java.lang.invoke.MethodHandle>
+                    public static readonly UNDEFINED_INT: int
+                    public static readonly UNDEFINED_LONG: long
+                    public static readonly UNDEFINED_DOUBLE: double
+                    public static readonly GET_UNDEFINED: java.util.List<java.lang.invoke.MethodHandle>
                     public static values(): jdk.nashorn.internal.runtime.JSType[]
                     public static valueOf(arg0: java.lang.String | string): jdk.nashorn.internal.runtime.JSType
                     public typeName(): string
@@ -134,7 +134,7 @@ declare namespace jdk {
                     public static decrementExact(arg0: int, arg1: int): int
                     public static incrementExact(arg0: int, arg1: int): int
                     public static negateExact(arg0: int, arg1: int): int
-                    public static getAccessorTypeIndex(arg0: jdk.nashorn.internal.codegen.types.Type): int
+                    public static getAccessorTypeIndex(arg0: jdk.nashorn.internal.codegen.types.Type | jdk.nashorn.internal.codegen.types.Type$$Lambda): int
                     public static getAccessorTypeIndex(arg0: java.lang.Class<any>): int
                     public static getAccessorType(arg0: int): jdk.nashorn.internal.codegen.types.Type
                     public static getNumberOfAccessorTypes(): int

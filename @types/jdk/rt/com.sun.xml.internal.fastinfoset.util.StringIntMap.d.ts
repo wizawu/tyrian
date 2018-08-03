@@ -5,7 +5,7 @@ declare namespace com {
                 namespace fastinfoset {
                     namespace util {
                         class StringIntMap extends com.sun.xml.internal.fastinfoset.util.KeyIntMap {
-                            protected static NULL_ENTRY: com.sun.xml.internal.fastinfoset.util.StringIntMap$Entry
+                            protected static readonly NULL_ENTRY: com.sun.xml.internal.fastinfoset.util.StringIntMap$Entry
                             protected _readOnlyMap: com.sun.xml.internal.fastinfoset.util.StringIntMap
                             protected _lastEntry: com.sun.xml.internal.fastinfoset.util.StringIntMap$Entry
                             protected _table: com.sun.xml.internal.fastinfoset.util.StringIntMap$Entry[]

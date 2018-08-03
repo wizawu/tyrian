@@ -7,7 +7,7 @@ declare namespace jdk {
                     public G$MIN_VALUE(): double
                     public G$NaN(): double
                     public G$NEGATIVE_INFINITY(): double
-                    public public G$POSITIVE_INFINITY(): double
+                    public static public G$POSITIVE_INFINITY(): double
                     public static class: java.lang.Class<any>
                 }
             }

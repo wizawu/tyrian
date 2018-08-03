@@ -5,7 +5,7 @@ declare namespace jdk {
                 namespace asm {
                     namespace commons {
                         class RemappingMethodAdapter extends jdk.internal.org.objectweb.asm.commons.LocalVariablesSorter {
-                            protected remapper: jdk.internal.org.objectweb.asm.commons.Remapper
+                            protected readonly remapper: jdk.internal.org.objectweb.asm.commons.Remapper
                             public constructor(arg0: int, arg1: java.lang.String | string, arg2: jdk.internal.org.objectweb.asm.MethodVisitor, arg3: jdk.internal.org.objectweb.asm.commons.Remapper)
                             protected constructor(arg0: int, arg1: int, arg2: java.lang.String | string, arg3: jdk.internal.org.objectweb.asm.MethodVisitor, arg4: jdk.internal.org.objectweb.asm.commons.Remapper)
                             public visitAnnotationDefault(): jdk.internal.org.objectweb.asm.AnnotationVisitor

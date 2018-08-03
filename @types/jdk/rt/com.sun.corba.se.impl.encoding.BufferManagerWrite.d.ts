@@ -9,13 +9,13 @@ declare namespace com {
                             protected wrapper: com.sun.corba.se.impl.logging.ORBUtilSystemException
                             protected outputObject: java.lang.Object
                             protected sentFullMessage: boolean
-                            public sentFragment(): boolean
+                            public abstract sentFragment(): boolean
                             public sentFullMessage(): boolean
-                            public getBufferSize(): int
-                            public overflow(arg0: com.sun.corba.se.impl.encoding.ByteBufferWithInfo): void
-                            public sendMessage(): void
+                            public abstract getBufferSize(): int
+                            public abstract overflow(arg0: com.sun.corba.se.impl.encoding.ByteBufferWithInfo): void
+                            public abstract sendMessage(): void
                             public setOutputObject(arg0: java.lang.Object): void
-                            public close(): void
+                            public abstract close(): void
                             public static class: java.lang.Class<any>
                         }
                     }

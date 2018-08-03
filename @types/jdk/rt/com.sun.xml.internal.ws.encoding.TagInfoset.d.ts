@@ -5,11 +5,11 @@ declare namespace com {
                 namespace ws {
                     namespace encoding {
                         class TagInfoset {
-                            public ns: java.lang.String[]
-                            public atts: org.xml.sax.helpers.AttributesImpl
-                            public prefix: string
-                            public nsUri: string
-                            public localName: string
+                            public readonly ns: java.lang.String[]
+                            public readonly atts: org.xml.sax.helpers.AttributesImpl
+                            public readonly prefix: string
+                            public readonly nsUri: string
+                            public readonly localName: string
                             public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: org.xml.sax.helpers.AttributesImpl, ...arg4: java.lang.String[])
                             public constructor(arg0: javax.xml.stream.XMLStreamReader)
                             public writeStart(arg0: org.xml.sax.ContentHandler): void

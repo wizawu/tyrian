@@ -3,13 +3,13 @@ declare namespace java {
         namespace geom {
             abstract class Line2D implements java.awt.Shape , java.lang.Cloneable {
                 protected constructor()
-                public getX1(): double
-                public getY1(): double
-                public getP1(): java.awt.geom.Point2D
-                public getX2(): double
-                public getY2(): double
-                public getP2(): java.awt.geom.Point2D
-                public setLine(arg0: double, arg1: double, arg2: double, arg3: double): void
+                public abstract getX1(): double
+                public abstract getY1(): double
+                public abstract getP1(): java.awt.geom.Point2D
+                public abstract getX2(): double
+                public abstract getY2(): double
+                public abstract getP2(): java.awt.geom.Point2D
+                public abstract setLine(arg0: double, arg1: double, arg2: double, arg3: double): void
                 public setLine(arg0: java.awt.geom.Point2D, arg1: java.awt.geom.Point2D): void
                 public setLine(arg0: java.awt.geom.Line2D): void
                 public static relativeCCW(arg0: double, arg1: double, arg2: double, arg3: double, arg4: double, arg5: double): int

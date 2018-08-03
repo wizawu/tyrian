@@ -3,10 +3,13 @@ declare namespace javax {
         namespace ws {
             abstract class WebServiceFeature {
                 protected enabled: boolean
-                public getID(): string
+                public abstract getID(): string
                 protected constructor()
                 public isEnabled(): boolean
                 public static class: java.lang.Class<any>
+            }
+            interface WebServiceFeature$$Lambda {
+                (): string
             }
         }
     }

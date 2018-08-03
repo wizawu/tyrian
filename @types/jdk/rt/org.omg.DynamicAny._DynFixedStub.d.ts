@@ -2,7 +2,7 @@ declare namespace org {
     namespace omg {
         namespace DynamicAny {
             class _DynFixedStub extends org.omg.CORBA.portable.ObjectImpl implements org.omg.DynamicAny.DynFixed {
-                public static _opsClass: java.lang.Class
+                public static readonly _opsClass: java.lang.Class
                 public constructor()
                 public get_value(): string
                 public set_value(arg0: java.lang.String | string): boolean

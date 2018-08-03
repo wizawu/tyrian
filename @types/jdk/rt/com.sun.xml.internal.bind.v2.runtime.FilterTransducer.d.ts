@@ -6,7 +6,7 @@ declare namespace com {
                     namespace v2 {
                         namespace runtime {
                             abstract class FilterTransducer<T> implements com.sun.xml.internal.bind.v2.runtime.Transducer<T> {
-                                protected core: com.sun.xml.internal.bind.v2.runtime.Transducer<T>
+                                protected readonly core: com.sun.xml.internal.bind.v2.runtime.Transducer<T>
                                 protected constructor(arg0: com.sun.xml.internal.bind.v2.runtime.Transducer<T>)
                                 public isDefault(): boolean
                                 public useNamespace(): boolean

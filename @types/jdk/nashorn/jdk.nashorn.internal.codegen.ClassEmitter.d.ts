@@ -3,8 +3,8 @@ declare namespace jdk {
         namespace internal {
             namespace codegen {
                 class ClassEmitter {
-                    protected cw: jdk.internal.org.objectweb.asm.ClassWriter
-                    protected context: jdk.nashorn.internal.runtime.Context
+                    protected readonly cw: jdk.internal.org.objectweb.asm.ClassWriter
+                    protected readonly context: jdk.nashorn.internal.runtime.Context
                     public getMethodNames(): java.util.Set<java.lang.String>
                     public getMethodCount(): int
                     public getClinitCount(): int

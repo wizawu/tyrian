@@ -7,7 +7,7 @@ declare namespace java {
             getTransparency(): int
         }
         interface Transparency$$Lambda {
-            OPAQUE: int
+            (): int
         }
     }
 }

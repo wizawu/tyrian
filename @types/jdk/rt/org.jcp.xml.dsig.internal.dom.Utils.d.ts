@@ -5,7 +5,7 @@ declare namespace org {
                 namespace internal {
                     namespace dom {
                         class Utils {
-                            public static readBytesFromStream(arg0: java.io.InputStream): byte[]
+                            public static readBytesFromStream(arg0: java.io.InputStream | java.io.InputStream$$Lambda): byte[]
                             public static parseIdFromSameDocumentURI(arg0: java.lang.String | string): string
                             public static sameDocumentURI(arg0: java.lang.String | string): boolean
                             public static class: java.lang.Class<any>

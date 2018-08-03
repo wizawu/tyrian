@@ -3,8 +3,8 @@ declare namespace javax {
         namespace text {
             namespace html {
                 class FormView extends javax.swing.text.ComponentView implements java.awt.event.ActionListener {
-                    public static SUBMIT: string
-                    public static RESET: string
+                    public static readonly SUBMIT: string
+                    public static readonly RESET: string
                     public constructor(arg0: javax.swing.text.Element)
                     protected createComponent(): java.awt.Component
                     public getMaximumSpan(arg0: int): float

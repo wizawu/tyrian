@@ -3,26 +3,26 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 abstract class ScriptObject implements jdk.nashorn.internal.runtime.PropertyAccess , java.lang.Cloneable {
-                    public static PROTO_PROPERTY_NAME: string
-                    public static NO_SUCH_METHOD_NAME: string
-                    public static NO_SUCH_PROPERTY_NAME: string
-                    public static IS_ARRAY: int
-                    public static IS_ARGUMENTS: int
-                    public static IS_LENGTH_NOT_WRITABLE: int
-                    public static IS_BUILTIN: int
-                    public static SPILL_RATE: int
+                    public static readonly PROTO_PROPERTY_NAME: string
+                    public static readonly NO_SUCH_METHOD_NAME: string
+                    public static readonly NO_SUCH_PROPERTY_NAME: string
+                    public static readonly IS_ARRAY: int
+                    public static readonly IS_ARGUMENTS: int
+                    public static readonly IS_LENGTH_NOT_WRITABLE: int
+                    public static readonly IS_BUILTIN: int
+                    public static readonly SPILL_RATE: int
                     protected primitiveSpill: long[]
                     protected objectSpill: java.lang.Object[]
-                    public static GETPROTO: java.lang.invoke.MethodHandle
-                    public static GET_ARRAY: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static GET_ARGUMENT: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static SET_ARGUMENT: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static GET_PROTO: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static GET_PROTO_DEPTH: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static SET_GLOBAL_OBJECT_PROTO: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static SET_PROTO_FROM_LITERAL: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static SET_USER_ACCESSORS: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static SET_MAP: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly GETPROTO: java.lang.invoke.MethodHandle
+                    public static readonly GET_ARRAY: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly GET_ARGUMENT: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly SET_ARGUMENT: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly GET_PROTO: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly GET_PROTO_DEPTH: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly SET_GLOBAL_OBJECT_PROTO: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly SET_PROTO_FROM_LITERAL: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly SET_USER_ACCESSORS: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly SET_MAP: jdk.nashorn.internal.codegen.CompilerConstants$Call
                     public constructor()
                     public constructor(arg0: jdk.nashorn.internal.runtime.PropertyMap)
                     protected constructor(arg0: jdk.nashorn.internal.runtime.ScriptObject, arg1: jdk.nashorn.internal.runtime.PropertyMap)

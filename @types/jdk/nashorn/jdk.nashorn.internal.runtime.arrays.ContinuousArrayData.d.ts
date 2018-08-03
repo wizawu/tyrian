@@ -4,17 +4,17 @@ declare namespace jdk {
             namespace runtime {
                 namespace arrays {
                     abstract class ContinuousArrayData extends jdk.nashorn.internal.runtime.arrays.ArrayData {
-                        protected static FAST_ACCESS_GUARD: java.lang.invoke.MethodHandle
+                        protected static readonly FAST_ACCESS_GUARD: java.lang.invoke.MethodHandle
                         protected constructor(arg0: long)
                         public hasRoomFor(arg0: int): boolean
                         public isEmpty(): boolean
-                        public getElementGetter(arg0: java.lang.Class<any>, arg1: int): java.lang.invoke.MethodHandle
-                        public getElementSetter(arg0: java.lang.Class<any>): java.lang.invoke.MethodHandle
+                        public abstract getElementGetter(arg0: java.lang.Class<any>, arg1: int): java.lang.invoke.MethodHandle
+                        public abstract getElementSetter(arg0: java.lang.Class<any>): java.lang.invoke.MethodHandle
                         protected throwHas(arg0: int): int
-                        public copy(): jdk.nashorn.internal.runtime.arrays.ContinuousArrayData
-                        public getElementType(): java.lang.Class<any>
+                        public abstract copy(): jdk.nashorn.internal.runtime.arrays.ContinuousArrayData
+                        public abstract getElementType(): java.lang.Class<any>
                         public getOptimisticType(): jdk.nashorn.internal.codegen.types.Type
-                        public getBoxedElementType(): java.lang.Class<any>
+                        public abstract getBoxedElementType(): java.lang.Class<any>
                         public widest(arg0: jdk.nashorn.internal.runtime.arrays.ContinuousArrayData): jdk.nashorn.internal.runtime.arrays.ContinuousArrayData
                         protected getContinuousElementGetter(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.Class<any>, arg2: int): java.lang.invoke.MethodHandle
                         protected getContinuousElementSetter(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.Class<any>): java.lang.invoke.MethodHandle

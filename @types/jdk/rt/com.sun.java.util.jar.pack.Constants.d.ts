@@ -5,355 +5,355 @@ declare namespace com {
                 namespace jar {
                     namespace pack {
                         class Constants {
-                            public static JAVA_MAGIC: int
-                            public static JAVA_MIN_CLASS_VERSION: com.sun.java.util.jar.pack.Package$Version
-                            public static JAVA5_MAX_CLASS_VERSION: com.sun.java.util.jar.pack.Package$Version
-                            public static JAVA6_MAX_CLASS_VERSION: com.sun.java.util.jar.pack.Package$Version
-                            public static JAVA7_MAX_CLASS_VERSION: com.sun.java.util.jar.pack.Package$Version
-                            public static JAVA8_MAX_CLASS_VERSION: com.sun.java.util.jar.pack.Package$Version
-                            public static JAVA_PACKAGE_MAGIC: int
-                            public static JAVA5_PACKAGE_VERSION: com.sun.java.util.jar.pack.Package$Version
-                            public static JAVA6_PACKAGE_VERSION: com.sun.java.util.jar.pack.Package$Version
-                            public static JAVA7_PACKAGE_VERSION: com.sun.java.util.jar.pack.Package$Version
-                            public static JAVA8_PACKAGE_VERSION: com.sun.java.util.jar.pack.Package$Version
-                            public static JAVA_MAX_CLASS_VERSION: com.sun.java.util.jar.pack.Package$Version
-                            public static MAX_PACKAGE_VERSION: com.sun.java.util.jar.pack.Package$Version
-                            public static CONSTANT_POOL_INDEX_LIMIT: int
-                            public static CONSTANT_POOL_NARROW_LIMIT: int
-                            public static JAVA_SIGNATURE_CHARS: string
-                            public static CONSTANT_Utf8: byte
-                            public static CONSTANT_unused2: byte
-                            public static CONSTANT_Integer: byte
-                            public static CONSTANT_Float: byte
-                            public static CONSTANT_Long: byte
-                            public static CONSTANT_Double: byte
-                            public static CONSTANT_Class: byte
-                            public static CONSTANT_String: byte
-                            public static CONSTANT_Fieldref: byte
-                            public static CONSTANT_Methodref: byte
-                            public static CONSTANT_InterfaceMethodref: byte
-                            public static CONSTANT_NameandType: byte
-                            public static CONSTANT_unused13: byte
-                            public static CONSTANT_unused14: byte
-                            public static CONSTANT_MethodHandle: byte
-                            public static CONSTANT_MethodType: byte
-                            public static CONSTANT_unused17: byte
-                            public static CONSTANT_InvokeDynamic: byte
-                            public static CONSTANT_None: byte
-                            public static CONSTANT_Signature: byte
-                            public static CONSTANT_BootstrapMethod: byte
-                            public static CONSTANT_Limit: byte
-                            public static CONSTANT_All: byte
-                            public static CONSTANT_LoadableValue: byte
-                            public static CONSTANT_AnyMember: byte
-                            public static CONSTANT_FieldSpecific: byte
-                            public static CONSTANT_GroupFirst: byte
-                            public static CONSTANT_GroupLimit: byte
-                            public static REF_getField: byte
-                            public static REF_getStatic: byte
-                            public static REF_putField: byte
-                            public static REF_putStatic: byte
-                            public static REF_invokeVirtual: byte
-                            public static REF_invokeStatic: byte
-                            public static REF_invokeSpecial: byte
-                            public static REF_newInvokeSpecial: byte
-                            public static REF_invokeInterface: byte
-                            public static ACC_IC_LONG_FORM: int
-                            public static ATTR_CONTEXT_CLASS: int
-                            public static ATTR_CONTEXT_FIELD: int
-                            public static ATTR_CONTEXT_METHOD: int
-                            public static ATTR_CONTEXT_CODE: int
-                            public static ATTR_CONTEXT_LIMIT: int
-                            public static ATTR_CONTEXT_NAME: java.lang.String[]
-                            public static X_ATTR_OVERFLOW: int
-                            public static CLASS_ATTR_SourceFile: int
-                            public static METHOD_ATTR_Code: int
-                            public static FIELD_ATTR_ConstantValue: int
-                            public static CLASS_ATTR_EnclosingMethod: int
-                            public static METHOD_ATTR_Exceptions: int
-                            public static X_ATTR_Signature: int
-                            public static X_ATTR_Deprecated: int
-                            public static X_ATTR_RuntimeVisibleAnnotations: int
-                            public static X_ATTR_RuntimeInvisibleAnnotations: int
-                            public static METHOD_ATTR_RuntimeVisibleParameterAnnotations: int
-                            public static CLASS_ATTR_InnerClasses: int
-                            public static METHOD_ATTR_RuntimeInvisibleParameterAnnotations: int
-                            public static CLASS_ATTR_ClassFile_version: int
-                            public static METHOD_ATTR_AnnotationDefault: int
-                            public static METHOD_ATTR_MethodParameters: int
-                            public static X_ATTR_RuntimeVisibleTypeAnnotations: int
-                            public static X_ATTR_RuntimeInvisibleTypeAnnotations: int
-                            public static CODE_ATTR_StackMapTable: int
-                            public static CODE_ATTR_LineNumberTable: int
-                            public static CODE_ATTR_LocalVariableTable: int
-                            public static CODE_ATTR_LocalVariableTypeTable: int
-                            public static FO_DEFLATE_HINT: int
-                            public static FO_IS_CLASS_STUB: int
-                            public static AO_HAVE_SPECIAL_FORMATS: int
-                            public static AO_HAVE_CP_NUMBERS: int
-                            public static AO_HAVE_ALL_CODE_FLAGS: int
-                            public static AO_HAVE_CP_EXTRAS: int
-                            public static AO_HAVE_FILE_HEADERS: int
-                            public static AO_DEFLATE_HINT: int
-                            public static AO_HAVE_FILE_MODTIME: int
-                            public static AO_HAVE_FILE_OPTIONS: int
-                            public static AO_HAVE_FILE_SIZE_HI: int
-                            public static AO_HAVE_CLASS_FLAGS_HI: int
-                            public static AO_HAVE_FIELD_FLAGS_HI: int
-                            public static AO_HAVE_METHOD_FLAGS_HI: int
-                            public static AO_HAVE_CODE_FLAGS_HI: int
-                            public static AO_UNUSED_MBZ: int
-                            public static LG_AO_HAVE_XXX_FLAGS_HI: int
-                            public static NO_MODTIME: int
-                            public static noInts: int[]
-                            public static noBytes: byte[]
-                            public static noValues: java.lang.Object[]
-                            public static noStrings: java.lang.String[]
-                            public static emptyList: java.util.List<java.lang.Object>
-                            public static _meta_default: int
-                            public static _meta_canon_min: int
-                            public static _meta_canon_max: int
-                            public static _meta_arb: int
-                            public static _meta_run: int
-                            public static _meta_pop: int
-                            public static _meta_limit: int
-                            public static _nop: int
-                            public static _aconst_null: int
-                            public static _iconst_m1: int
-                            public static _iconst_0: int
-                            public static _iconst_1: int
-                            public static _iconst_2: int
-                            public static _iconst_3: int
-                            public static _iconst_4: int
-                            public static _iconst_5: int
-                            public static _lconst_0: int
-                            public static _lconst_1: int
-                            public static _fconst_0: int
-                            public static _fconst_1: int
-                            public static _fconst_2: int
-                            public static _dconst_0: int
-                            public static _dconst_1: int
-                            public static _bipush: int
-                            public static _sipush: int
-                            public static _ldc: int
-                            public static _ldc_w: int
-                            public static _ldc2_w: int
-                            public static _iload: int
-                            public static _lload: int
-                            public static _fload: int
-                            public static _dload: int
-                            public static _aload: int
-                            public static _iload_0: int
-                            public static _iload_1: int
-                            public static _iload_2: int
-                            public static _iload_3: int
-                            public static _lload_0: int
-                            public static _lload_1: int
-                            public static _lload_2: int
-                            public static _lload_3: int
-                            public static _fload_0: int
-                            public static _fload_1: int
-                            public static _fload_2: int
-                            public static _fload_3: int
-                            public static _dload_0: int
-                            public static _dload_1: int
-                            public static _dload_2: int
-                            public static _dload_3: int
-                            public static _aload_0: int
-                            public static _aload_1: int
-                            public static _aload_2: int
-                            public static _aload_3: int
-                            public static _iaload: int
-                            public static _laload: int
-                            public static _faload: int
-                            public static _daload: int
-                            public static _aaload: int
-                            public static _baload: int
-                            public static _caload: int
-                            public static _saload: int
-                            public static _istore: int
-                            public static _lstore: int
-                            public static _fstore: int
-                            public static _dstore: int
-                            public static _astore: int
-                            public static _istore_0: int
-                            public static _istore_1: int
-                            public static _istore_2: int
-                            public static _istore_3: int
-                            public static _lstore_0: int
-                            public static _lstore_1: int
-                            public static _lstore_2: int
-                            public static _lstore_3: int
-                            public static _fstore_0: int
-                            public static _fstore_1: int
-                            public static _fstore_2: int
-                            public static _fstore_3: int
-                            public static _dstore_0: int
-                            public static _dstore_1: int
-                            public static _dstore_2: int
-                            public static _dstore_3: int
-                            public static _astore_0: int
-                            public static _astore_1: int
-                            public static _astore_2: int
-                            public static _astore_3: int
-                            public static _iastore: int
-                            public static _lastore: int
-                            public static _fastore: int
-                            public static _dastore: int
-                            public static _aastore: int
-                            public static _bastore: int
-                            public static _castore: int
-                            public static _sastore: int
-                            public static _pop: int
-                            public static _pop2: int
-                            public static _dup: int
-                            public static _dup_x1: int
-                            public static _dup_x2: int
-                            public static _dup2: int
-                            public static _dup2_x1: int
-                            public static _dup2_x2: int
-                            public static _swap: int
-                            public static _iadd: int
-                            public static _ladd: int
-                            public static _fadd: int
-                            public static _dadd: int
-                            public static _isub: int
-                            public static _lsub: int
-                            public static _fsub: int
-                            public static _dsub: int
-                            public static _imul: int
-                            public static _lmul: int
-                            public static _fmul: int
-                            public static _dmul: int
-                            public static _idiv: int
-                            public static _ldiv: int
-                            public static _fdiv: int
-                            public static _ddiv: int
-                            public static _irem: int
-                            public static _lrem: int
-                            public static _frem: int
-                            public static _drem: int
-                            public static _ineg: int
-                            public static _lneg: int
-                            public static _fneg: int
-                            public static _dneg: int
-                            public static _ishl: int
-                            public static _lshl: int
-                            public static _ishr: int
-                            public static _lshr: int
-                            public static _iushr: int
-                            public static _lushr: int
-                            public static _iand: int
-                            public static _land: int
-                            public static _ior: int
-                            public static _lor: int
-                            public static _ixor: int
-                            public static _lxor: int
-                            public static _iinc: int
-                            public static _i2l: int
-                            public static _i2f: int
-                            public static _i2d: int
-                            public static _l2i: int
-                            public static _l2f: int
-                            public static _l2d: int
-                            public static _f2i: int
-                            public static _f2l: int
-                            public static _f2d: int
-                            public static _d2i: int
-                            public static _d2l: int
-                            public static _d2f: int
-                            public static _i2b: int
-                            public static _i2c: int
-                            public static _i2s: int
-                            public static _lcmp: int
-                            public static _fcmpl: int
-                            public static _fcmpg: int
-                            public static _dcmpl: int
-                            public static _dcmpg: int
-                            public static _ifeq: int
-                            public static _ifne: int
-                            public static _iflt: int
-                            public static _ifge: int
-                            public static _ifgt: int
-                            public static _ifle: int
-                            public static _if_icmpeq: int
-                            public static _if_icmpne: int
-                            public static _if_icmplt: int
-                            public static _if_icmpge: int
-                            public static _if_icmpgt: int
-                            public static _if_icmple: int
-                            public static _if_acmpeq: int
-                            public static _if_acmpne: int
-                            public static _goto: int
-                            public static _jsr: int
-                            public static _ret: int
-                            public static _tableswitch: int
-                            public static _lookupswitch: int
-                            public static _ireturn: int
-                            public static _lreturn: int
-                            public static _freturn: int
-                            public static _dreturn: int
-                            public static _areturn: int
-                            public static _return: int
-                            public static _getstatic: int
-                            public static _putstatic: int
-                            public static _getfield: int
-                            public static _putfield: int
-                            public static _invokevirtual: int
-                            public static _invokespecial: int
-                            public static _invokestatic: int
-                            public static _invokeinterface: int
-                            public static _invokedynamic: int
-                            public static _new: int
-                            public static _newarray: int
-                            public static _anewarray: int
-                            public static _arraylength: int
-                            public static _athrow: int
-                            public static _checkcast: int
-                            public static _instanceof: int
-                            public static _monitorenter: int
-                            public static _monitorexit: int
-                            public static _wide: int
-                            public static _multianewarray: int
-                            public static _ifnull: int
-                            public static _ifnonnull: int
-                            public static _goto_w: int
-                            public static _jsr_w: int
-                            public static _bytecode_limit: int
-                            public static _end_marker: int
-                            public static _byte_escape: int
-                            public static _ref_escape: int
-                            public static _first_linker_op: int
-                            public static _last_linker_op: int
-                            public static _num_linker_ops: int
-                            public static _self_linker_op: int
-                            public static _self_linker_aload_flag: int
-                            public static _self_linker_super_flag: int
-                            public static _self_linker_limit: int
-                            public static _invokeinit_op: int
-                            public static _invokeinit_self_option: int
-                            public static _invokeinit_super_option: int
-                            public static _invokeinit_new_option: int
-                            public static _invokeinit_limit: int
-                            public static _pseudo_instruction_limit: int
-                            public static _xldc_op: int
-                            public static _sldc: int
-                            public static _cldc: int
-                            public static _ildc: int
-                            public static _fldc: int
-                            public static _sldc_w: int
-                            public static _cldc_w: int
-                            public static _ildc_w: int
-                            public static _fldc_w: int
-                            public static _lldc2_w: int
-                            public static _dldc2_w: int
-                            public static _qldc: int
-                            public static _qldc_w: int
-                            public static _xldc_limit: int
-                            public static _invoke_int_op: int
-                            public static _invokespecial_int: int
-                            public static _invokestatic_int: int
-                            public static _invoke_int_limit: int
+                            public static readonly JAVA_MAGIC: int
+                            public static readonly JAVA_MIN_CLASS_VERSION: com.sun.java.util.jar.pack.Package$Version
+                            public static readonly JAVA5_MAX_CLASS_VERSION: com.sun.java.util.jar.pack.Package$Version
+                            public static readonly JAVA6_MAX_CLASS_VERSION: com.sun.java.util.jar.pack.Package$Version
+                            public static readonly JAVA7_MAX_CLASS_VERSION: com.sun.java.util.jar.pack.Package$Version
+                            public static readonly JAVA8_MAX_CLASS_VERSION: com.sun.java.util.jar.pack.Package$Version
+                            public static readonly JAVA_PACKAGE_MAGIC: int
+                            public static readonly JAVA5_PACKAGE_VERSION: com.sun.java.util.jar.pack.Package$Version
+                            public static readonly JAVA6_PACKAGE_VERSION: com.sun.java.util.jar.pack.Package$Version
+                            public static readonly JAVA7_PACKAGE_VERSION: com.sun.java.util.jar.pack.Package$Version
+                            public static readonly JAVA8_PACKAGE_VERSION: com.sun.java.util.jar.pack.Package$Version
+                            public static readonly JAVA_MAX_CLASS_VERSION: com.sun.java.util.jar.pack.Package$Version
+                            public static readonly MAX_PACKAGE_VERSION: com.sun.java.util.jar.pack.Package$Version
+                            public static readonly CONSTANT_POOL_INDEX_LIMIT: int
+                            public static readonly CONSTANT_POOL_NARROW_LIMIT: int
+                            public static readonly JAVA_SIGNATURE_CHARS: string
+                            public static readonly CONSTANT_Utf8: byte
+                            public static readonly CONSTANT_unused2: byte
+                            public static readonly CONSTANT_Integer: byte
+                            public static readonly CONSTANT_Float: byte
+                            public static readonly CONSTANT_Long: byte
+                            public static readonly CONSTANT_Double: byte
+                            public static readonly CONSTANT_Class: byte
+                            public static readonly CONSTANT_String: byte
+                            public static readonly CONSTANT_Fieldref: byte
+                            public static readonly CONSTANT_Methodref: byte
+                            public static readonly CONSTANT_InterfaceMethodref: byte
+                            public static readonly CONSTANT_NameandType: byte
+                            public static readonly CONSTANT_unused13: byte
+                            public static readonly CONSTANT_unused14: byte
+                            public static readonly CONSTANT_MethodHandle: byte
+                            public static readonly CONSTANT_MethodType: byte
+                            public static readonly CONSTANT_unused17: byte
+                            public static readonly CONSTANT_InvokeDynamic: byte
+                            public static readonly CONSTANT_None: byte
+                            public static readonly CONSTANT_Signature: byte
+                            public static readonly CONSTANT_BootstrapMethod: byte
+                            public static readonly CONSTANT_Limit: byte
+                            public static readonly CONSTANT_All: byte
+                            public static readonly CONSTANT_LoadableValue: byte
+                            public static readonly CONSTANT_AnyMember: byte
+                            public static readonly CONSTANT_FieldSpecific: byte
+                            public static readonly CONSTANT_GroupFirst: byte
+                            public static readonly CONSTANT_GroupLimit: byte
+                            public static readonly REF_getField: byte
+                            public static readonly REF_getStatic: byte
+                            public static readonly REF_putField: byte
+                            public static readonly REF_putStatic: byte
+                            public static readonly REF_invokeVirtual: byte
+                            public static readonly REF_invokeStatic: byte
+                            public static readonly REF_invokeSpecial: byte
+                            public static readonly REF_newInvokeSpecial: byte
+                            public static readonly REF_invokeInterface: byte
+                            public static readonly ACC_IC_LONG_FORM: int
+                            public static readonly ATTR_CONTEXT_CLASS: int
+                            public static readonly ATTR_CONTEXT_FIELD: int
+                            public static readonly ATTR_CONTEXT_METHOD: int
+                            public static readonly ATTR_CONTEXT_CODE: int
+                            public static readonly ATTR_CONTEXT_LIMIT: int
+                            public static readonly ATTR_CONTEXT_NAME: java.lang.String[]
+                            public static readonly X_ATTR_OVERFLOW: int
+                            public static readonly CLASS_ATTR_SourceFile: int
+                            public static readonly METHOD_ATTR_Code: int
+                            public static readonly FIELD_ATTR_ConstantValue: int
+                            public static readonly CLASS_ATTR_EnclosingMethod: int
+                            public static readonly METHOD_ATTR_Exceptions: int
+                            public static readonly X_ATTR_Signature: int
+                            public static readonly X_ATTR_Deprecated: int
+                            public static readonly X_ATTR_RuntimeVisibleAnnotations: int
+                            public static readonly X_ATTR_RuntimeInvisibleAnnotations: int
+                            public static readonly METHOD_ATTR_RuntimeVisibleParameterAnnotations: int
+                            public static readonly CLASS_ATTR_InnerClasses: int
+                            public static readonly METHOD_ATTR_RuntimeInvisibleParameterAnnotations: int
+                            public static readonly CLASS_ATTR_ClassFile_version: int
+                            public static readonly METHOD_ATTR_AnnotationDefault: int
+                            public static readonly METHOD_ATTR_MethodParameters: int
+                            public static readonly X_ATTR_RuntimeVisibleTypeAnnotations: int
+                            public static readonly X_ATTR_RuntimeInvisibleTypeAnnotations: int
+                            public static readonly CODE_ATTR_StackMapTable: int
+                            public static readonly CODE_ATTR_LineNumberTable: int
+                            public static readonly CODE_ATTR_LocalVariableTable: int
+                            public static readonly CODE_ATTR_LocalVariableTypeTable: int
+                            public static readonly FO_DEFLATE_HINT: int
+                            public static readonly FO_IS_CLASS_STUB: int
+                            public static readonly AO_HAVE_SPECIAL_FORMATS: int
+                            public static readonly AO_HAVE_CP_NUMBERS: int
+                            public static readonly AO_HAVE_ALL_CODE_FLAGS: int
+                            public static readonly AO_HAVE_CP_EXTRAS: int
+                            public static readonly AO_HAVE_FILE_HEADERS: int
+                            public static readonly AO_DEFLATE_HINT: int
+                            public static readonly AO_HAVE_FILE_MODTIME: int
+                            public static readonly AO_HAVE_FILE_OPTIONS: int
+                            public static readonly AO_HAVE_FILE_SIZE_HI: int
+                            public static readonly AO_HAVE_CLASS_FLAGS_HI: int
+                            public static readonly AO_HAVE_FIELD_FLAGS_HI: int
+                            public static readonly AO_HAVE_METHOD_FLAGS_HI: int
+                            public static readonly AO_HAVE_CODE_FLAGS_HI: int
+                            public static readonly AO_UNUSED_MBZ: int
+                            public static readonly LG_AO_HAVE_XXX_FLAGS_HI: int
+                            public static readonly NO_MODTIME: int
+                            public static readonly noInts: int[]
+                            public static readonly noBytes: byte[]
+                            public static readonly noValues: java.lang.Object[]
+                            public static readonly noStrings: java.lang.String[]
+                            public static readonly emptyList: java.util.List<java.lang.Object>
+                            public static readonly _meta_default: int
+                            public static readonly _meta_canon_min: int
+                            public static readonly _meta_canon_max: int
+                            public static readonly _meta_arb: int
+                            public static readonly _meta_run: int
+                            public static readonly _meta_pop: int
+                            public static readonly _meta_limit: int
+                            public static readonly _nop: int
+                            public static readonly _aconst_null: int
+                            public static readonly _iconst_m1: int
+                            public static readonly _iconst_0: int
+                            public static readonly _iconst_1: int
+                            public static readonly _iconst_2: int
+                            public static readonly _iconst_3: int
+                            public static readonly _iconst_4: int
+                            public static readonly _iconst_5: int
+                            public static readonly _lconst_0: int
+                            public static readonly _lconst_1: int
+                            public static readonly _fconst_0: int
+                            public static readonly _fconst_1: int
+                            public static readonly _fconst_2: int
+                            public static readonly _dconst_0: int
+                            public static readonly _dconst_1: int
+                            public static readonly _bipush: int
+                            public static readonly _sipush: int
+                            public static readonly _ldc: int
+                            public static readonly _ldc_w: int
+                            public static readonly _ldc2_w: int
+                            public static readonly _iload: int
+                            public static readonly _lload: int
+                            public static readonly _fload: int
+                            public static readonly _dload: int
+                            public static readonly _aload: int
+                            public static readonly _iload_0: int
+                            public static readonly _iload_1: int
+                            public static readonly _iload_2: int
+                            public static readonly _iload_3: int
+                            public static readonly _lload_0: int
+                            public static readonly _lload_1: int
+                            public static readonly _lload_2: int
+                            public static readonly _lload_3: int
+                            public static readonly _fload_0: int
+                            public static readonly _fload_1: int
+                            public static readonly _fload_2: int
+                            public static readonly _fload_3: int
+                            public static readonly _dload_0: int
+                            public static readonly _dload_1: int
+                            public static readonly _dload_2: int
+                            public static readonly _dload_3: int
+                            public static readonly _aload_0: int
+                            public static readonly _aload_1: int
+                            public static readonly _aload_2: int
+                            public static readonly _aload_3: int
+                            public static readonly _iaload: int
+                            public static readonly _laload: int
+                            public static readonly _faload: int
+                            public static readonly _daload: int
+                            public static readonly _aaload: int
+                            public static readonly _baload: int
+                            public static readonly _caload: int
+                            public static readonly _saload: int
+                            public static readonly _istore: int
+                            public static readonly _lstore: int
+                            public static readonly _fstore: int
+                            public static readonly _dstore: int
+                            public static readonly _astore: int
+                            public static readonly _istore_0: int
+                            public static readonly _istore_1: int
+                            public static readonly _istore_2: int
+                            public static readonly _istore_3: int
+                            public static readonly _lstore_0: int
+                            public static readonly _lstore_1: int
+                            public static readonly _lstore_2: int
+                            public static readonly _lstore_3: int
+                            public static readonly _fstore_0: int
+                            public static readonly _fstore_1: int
+                            public static readonly _fstore_2: int
+                            public static readonly _fstore_3: int
+                            public static readonly _dstore_0: int
+                            public static readonly _dstore_1: int
+                            public static readonly _dstore_2: int
+                            public static readonly _dstore_3: int
+                            public static readonly _astore_0: int
+                            public static readonly _astore_1: int
+                            public static readonly _astore_2: int
+                            public static readonly _astore_3: int
+                            public static readonly _iastore: int
+                            public static readonly _lastore: int
+                            public static readonly _fastore: int
+                            public static readonly _dastore: int
+                            public static readonly _aastore: int
+                            public static readonly _bastore: int
+                            public static readonly _castore: int
+                            public static readonly _sastore: int
+                            public static readonly _pop: int
+                            public static readonly _pop2: int
+                            public static readonly _dup: int
+                            public static readonly _dup_x1: int
+                            public static readonly _dup_x2: int
+                            public static readonly _dup2: int
+                            public static readonly _dup2_x1: int
+                            public static readonly _dup2_x2: int
+                            public static readonly _swap: int
+                            public static readonly _iadd: int
+                            public static readonly _ladd: int
+                            public static readonly _fadd: int
+                            public static readonly _dadd: int
+                            public static readonly _isub: int
+                            public static readonly _lsub: int
+                            public static readonly _fsub: int
+                            public static readonly _dsub: int
+                            public static readonly _imul: int
+                            public static readonly _lmul: int
+                            public static readonly _fmul: int
+                            public static readonly _dmul: int
+                            public static readonly _idiv: int
+                            public static readonly _ldiv: int
+                            public static readonly _fdiv: int
+                            public static readonly _ddiv: int
+                            public static readonly _irem: int
+                            public static readonly _lrem: int
+                            public static readonly _frem: int
+                            public static readonly _drem: int
+                            public static readonly _ineg: int
+                            public static readonly _lneg: int
+                            public static readonly _fneg: int
+                            public static readonly _dneg: int
+                            public static readonly _ishl: int
+                            public static readonly _lshl: int
+                            public static readonly _ishr: int
+                            public static readonly _lshr: int
+                            public static readonly _iushr: int
+                            public static readonly _lushr: int
+                            public static readonly _iand: int
+                            public static readonly _land: int
+                            public static readonly _ior: int
+                            public static readonly _lor: int
+                            public static readonly _ixor: int
+                            public static readonly _lxor: int
+                            public static readonly _iinc: int
+                            public static readonly _i2l: int
+                            public static readonly _i2f: int
+                            public static readonly _i2d: int
+                            public static readonly _l2i: int
+                            public static readonly _l2f: int
+                            public static readonly _l2d: int
+                            public static readonly _f2i: int
+                            public static readonly _f2l: int
+                            public static readonly _f2d: int
+                            public static readonly _d2i: int
+                            public static readonly _d2l: int
+                            public static readonly _d2f: int
+                            public static readonly _i2b: int
+                            public static readonly _i2c: int
+                            public static readonly _i2s: int
+                            public static readonly _lcmp: int
+                            public static readonly _fcmpl: int
+                            public static readonly _fcmpg: int
+                            public static readonly _dcmpl: int
+                            public static readonly _dcmpg: int
+                            public static readonly _ifeq: int
+                            public static readonly _ifne: int
+                            public static readonly _iflt: int
+                            public static readonly _ifge: int
+                            public static readonly _ifgt: int
+                            public static readonly _ifle: int
+                            public static readonly _if_icmpeq: int
+                            public static readonly _if_icmpne: int
+                            public static readonly _if_icmplt: int
+                            public static readonly _if_icmpge: int
+                            public static readonly _if_icmpgt: int
+                            public static readonly _if_icmple: int
+                            public static readonly _if_acmpeq: int
+                            public static readonly _if_acmpne: int
+                            public static readonly _goto: int
+                            public static readonly _jsr: int
+                            public static readonly _ret: int
+                            public static readonly _tableswitch: int
+                            public static readonly _lookupswitch: int
+                            public static readonly _ireturn: int
+                            public static readonly _lreturn: int
+                            public static readonly _freturn: int
+                            public static readonly _dreturn: int
+                            public static readonly _areturn: int
+                            public static readonly _return: int
+                            public static readonly _getstatic: int
+                            public static readonly _putstatic: int
+                            public static readonly _getfield: int
+                            public static readonly _putfield: int
+                            public static readonly _invokevirtual: int
+                            public static readonly _invokespecial: int
+                            public static readonly _invokestatic: int
+                            public static readonly _invokeinterface: int
+                            public static readonly _invokedynamic: int
+                            public static readonly _new: int
+                            public static readonly _newarray: int
+                            public static readonly _anewarray: int
+                            public static readonly _arraylength: int
+                            public static readonly _athrow: int
+                            public static readonly _checkcast: int
+                            public static readonly _instanceof: int
+                            public static readonly _monitorenter: int
+                            public static readonly _monitorexit: int
+                            public static readonly _wide: int
+                            public static readonly _multianewarray: int
+                            public static readonly _ifnull: int
+                            public static readonly _ifnonnull: int
+                            public static readonly _goto_w: int
+                            public static readonly _jsr_w: int
+                            public static readonly _bytecode_limit: int
+                            public static readonly _end_marker: int
+                            public static readonly _byte_escape: int
+                            public static readonly _ref_escape: int
+                            public static readonly _first_linker_op: int
+                            public static readonly _last_linker_op: int
+                            public static readonly _num_linker_ops: int
+                            public static readonly _self_linker_op: int
+                            public static readonly _self_linker_aload_flag: int
+                            public static readonly _self_linker_super_flag: int
+                            public static readonly _self_linker_limit: int
+                            public static readonly _invokeinit_op: int
+                            public static readonly _invokeinit_self_option: int
+                            public static readonly _invokeinit_super_option: int
+                            public static readonly _invokeinit_new_option: int
+                            public static readonly _invokeinit_limit: int
+                            public static readonly _pseudo_instruction_limit: int
+                            public static readonly _xldc_op: int
+                            public static readonly _sldc: int
+                            public static readonly _cldc: int
+                            public static readonly _ildc: int
+                            public static readonly _fldc: int
+                            public static readonly _sldc_w: int
+                            public static readonly _cldc_w: int
+                            public static readonly _ildc_w: int
+                            public static readonly _fldc_w: int
+                            public static readonly _lldc2_w: int
+                            public static readonly _dldc2_w: int
+                            public static readonly _qldc: int
+                            public static readonly _qldc_w: int
+                            public static readonly _xldc_limit: int
+                            public static readonly _invoke_int_op: int
+                            public static readonly _invokespecial_int: int
+                            public static readonly _invokestatic_int: int
+                            public static readonly _invoke_int_limit: int
                             public static class: java.lang.Class<any>
                         }
                     }

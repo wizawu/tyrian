@@ -16,14 +16,14 @@ declare namespace javax {
             public setLocale(arg0: java.util.Locale): void
             public getLocale(): java.util.Locale
             public getDefaultWriteParam(): javax.imageio.ImageWriteParam
-            public getDefaultStreamMetadata(arg0: javax.imageio.ImageWriteParam): javax.imageio.metadata.IIOMetadata
-            public getDefaultImageMetadata(arg0: javax.imageio.ImageTypeSpecifier, arg1: javax.imageio.ImageWriteParam): javax.imageio.metadata.IIOMetadata
-            public convertStreamMetadata(arg0: javax.imageio.metadata.IIOMetadata, arg1: javax.imageio.ImageWriteParam): javax.imageio.metadata.IIOMetadata
-            public convertImageMetadata(arg0: javax.imageio.metadata.IIOMetadata, arg1: javax.imageio.ImageTypeSpecifier, arg2: javax.imageio.ImageWriteParam): javax.imageio.metadata.IIOMetadata
+            public abstract getDefaultStreamMetadata(arg0: javax.imageio.ImageWriteParam): javax.imageio.metadata.IIOMetadata
+            public abstract getDefaultImageMetadata(arg0: javax.imageio.ImageTypeSpecifier, arg1: javax.imageio.ImageWriteParam): javax.imageio.metadata.IIOMetadata
+            public abstract convertStreamMetadata(arg0: javax.imageio.metadata.IIOMetadata, arg1: javax.imageio.ImageWriteParam): javax.imageio.metadata.IIOMetadata
+            public abstract convertImageMetadata(arg0: javax.imageio.metadata.IIOMetadata, arg1: javax.imageio.ImageTypeSpecifier, arg2: javax.imageio.ImageWriteParam): javax.imageio.metadata.IIOMetadata
             public getNumThumbnailsSupported(arg0: javax.imageio.ImageTypeSpecifier, arg1: javax.imageio.ImageWriteParam, arg2: javax.imageio.metadata.IIOMetadata, arg3: javax.imageio.metadata.IIOMetadata): int
             public getPreferredThumbnailSizes(arg0: javax.imageio.ImageTypeSpecifier, arg1: javax.imageio.ImageWriteParam, arg2: javax.imageio.metadata.IIOMetadata, arg3: javax.imageio.metadata.IIOMetadata): java.awt.Dimension[]
             public canWriteRasters(): boolean
-            public write(arg0: javax.imageio.metadata.IIOMetadata, arg1: javax.imageio.IIOImage, arg2: javax.imageio.ImageWriteParam): void
+            public abstract write(arg0: javax.imageio.metadata.IIOMetadata, arg1: javax.imageio.IIOImage, arg2: javax.imageio.ImageWriteParam): void
             public write(arg0: javax.imageio.IIOImage): void
             public write(arg0: java.awt.image.RenderedImage): void
             public canWriteSequence(): boolean
@@ -52,8 +52,8 @@ declare namespace javax {
             public abort(): void
             protected abortRequested(): boolean
             protected clearAbortRequest(): void
-            public addIIOWriteWarningListener(arg0: javax.imageio.event.IIOWriteWarningListener | javax.imageio.event.IIOWriteWarningListener$$Lambda): void
-            public removeIIOWriteWarningListener(arg0: javax.imageio.event.IIOWriteWarningListener | javax.imageio.event.IIOWriteWarningListener$$Lambda): void
+            public addIIOWriteWarningListener(arg0: javax.imageio.event.IIOWriteWarningListener): void
+            public removeIIOWriteWarningListener(arg0: javax.imageio.event.IIOWriteWarningListener): void
             public removeAllIIOWriteWarningListeners(): void
             public addIIOWriteProgressListener(arg0: javax.imageio.event.IIOWriteProgressListener): void
             public removeIIOWriteProgressListener(arg0: javax.imageio.event.IIOWriteProgressListener): void

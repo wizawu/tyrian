@@ -3,7 +3,7 @@ declare namespace com {
         namespace media {
             namespace sound {
                 class RIFFReader extends java.io.InputStream {
-                    public constructor(arg0: java.io.InputStream)
+                    public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                     public getFilePointer(): long
                     public hasNextChunk(): boolean
                     public nextChunk(): com.sun.media.sound.RIFFReader

@@ -6,9 +6,9 @@ declare namespace javax {
             protected backingStore: boolean
             protected backingStoreImage: java.awt.Image
             protected scrollUnderway: boolean
-            public static BLIT_SCROLL_MODE: int
-            public static BACKINGSTORE_SCROLL_MODE: int
-            public static SIMPLE_SCROLL_MODE: int
+            public static readonly BLIT_SCROLL_MODE: int
+            public static readonly BACKINGSTORE_SCROLL_MODE: int
+            public static readonly SIMPLE_SCROLL_MODE: int
             public constructor()
             public getUI(): javax.swing.plaf.ViewportUI
             public setUI(arg0: javax.swing.plaf.ViewportUI): void
@@ -42,8 +42,8 @@ declare namespace javax {
             public setExtentSize(arg0: java.awt.Dimension): void
             protected createViewListener(): javax.swing.JViewport$ViewListener
             protected createLayoutManager(): java.awt.LayoutManager
-            public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
-            public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+            public addChangeListener(arg0: javax.swing.event.ChangeListener): void
+            public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
             public getChangeListeners(): javax.swing.event.ChangeListener[]
             protected fireStateChanged(): void
             public repaint(arg0: long, arg1: int, arg2: int, arg3: int, arg4: int): void

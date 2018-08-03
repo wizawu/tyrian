@@ -2,22 +2,22 @@ declare namespace sun {
     namespace awt {
         namespace dnd {
             abstract class SunDragSourceContextPeer implements java.awt.dnd.peer.DragSourceContextPeer {
-                protected static DISPATCH_ENTER: int
-                protected static DISPATCH_MOTION: int
-                protected static DISPATCH_CHANGED: int
-                protected static DISPATCH_EXIT: int
-                protected static DISPATCH_FINISH: int
-                protected static DISPATCH_MOUSE_MOVED: int
+                protected static readonly DISPATCH_ENTER: int
+                protected static readonly DISPATCH_MOTION: int
+                protected static readonly DISPATCH_CHANGED: int
+                protected static readonly DISPATCH_EXIT: int
+                protected static readonly DISPATCH_FINISH: int
+                protected static readonly DISPATCH_MOUSE_MOVED: int
                 public constructor(arg0: java.awt.dnd.DragGestureEvent)
                 public startSecondaryEventLoop(): void
                 public quitSecondaryEventLoop(): void
                 public startDrag(arg0: java.awt.dnd.DragSourceContext, arg1: java.awt.Cursor, arg2: java.awt.Image, arg3: java.awt.Point): void
-                protected startDrag(arg0: java.awt.datatransfer.Transferable, arg1: long[], arg2: java.util.Map): void
+                protected abstract startDrag(arg0: java.awt.datatransfer.Transferable, arg1: long[], arg2: java.util.Map): void
                 public setCursor(arg0: java.awt.Cursor): void
                 public getCursor(): java.awt.Cursor
                 public getDragImage(): java.awt.Image
                 public getDragImageOffset(): java.awt.Point
-                protected setNativeCursor(arg0: long, arg1: java.awt.Cursor, arg2: int): void
+                protected abstract setNativeCursor(arg0: long, arg1: java.awt.Cursor, arg2: int): void
                 protected setTrigger(arg0: java.awt.dnd.DragGestureEvent): void
                 protected getTrigger(): java.awt.dnd.DragGestureEvent
                 protected getComponent(): java.awt.Component

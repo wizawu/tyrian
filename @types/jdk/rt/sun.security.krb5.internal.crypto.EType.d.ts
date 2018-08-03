@@ -7,18 +7,18 @@ declare namespace sun {
                         public constructor()
                         public static initStatic(): void
                         public static getInstance(arg0: int): sun.security.krb5.internal.crypto.EType
-                        public eType(): int
-                        public minimumPadSize(): int
-                        public confounderSize(): int
-                        public checksumType(): int
-                        public checksumSize(): int
-                        public blockSize(): int
-                        public keyType(): int
-                        public keySize(): int
-                        public encrypt(arg0: byte[], arg1: byte[], arg2: int): byte[]
-                        public encrypt(arg0: byte[], arg1: byte[], arg2: byte[], arg3: int): byte[]
-                        public decrypt(arg0: byte[], arg1: byte[], arg2: int): byte[]
-                        public decrypt(arg0: byte[], arg1: byte[], arg2: byte[], arg3: int): byte[]
+                        public abstract eType(): int
+                        public abstract minimumPadSize(): int
+                        public abstract confounderSize(): int
+                        public abstract checksumType(): int
+                        public abstract checksumSize(): int
+                        public abstract blockSize(): int
+                        public abstract keyType(): int
+                        public abstract keySize(): int
+                        public abstract encrypt(arg0: byte[], arg1: byte[], arg2: int): byte[]
+                        public abstract encrypt(arg0: byte[], arg1: byte[], arg2: byte[], arg3: int): byte[]
+                        public abstract decrypt(arg0: byte[], arg1: byte[], arg2: int): byte[]
+                        public abstract decrypt(arg0: byte[], arg1: byte[], arg2: byte[], arg3: int): byte[]
                         public dataSize(arg0: byte[]): int
                         public padSize(arg0: byte[]): int
                         public startOfChecksum(): int

@@ -5,10 +5,10 @@ declare namespace com {
                 namespace spi {
                     namespace extension {
                         class ServantCachingPolicy extends org.omg.CORBA.LocalObject implements org.omg.CORBA.Policy {
-                            public static NO_SERVANT_CACHING: int
-                            public static FULL_SEMANTICS: int
-                            public static INFO_ONLY_SEMANTICS: int
-                            public static MINIMAL_SEMANTICS: int
+                            public static readonly NO_SERVANT_CACHING: int
+                            public static readonly FULL_SEMANTICS: int
+                            public static readonly INFO_ONLY_SEMANTICS: int
+                            public static readonly MINIMAL_SEMANTICS: int
                             public typeToName(): string
                             public toString(): string
                             public getType(): int

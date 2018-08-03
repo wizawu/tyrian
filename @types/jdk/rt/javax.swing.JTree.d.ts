@@ -16,22 +16,22 @@ declare namespace javax {
             protected scrollsOnExpand: boolean
             protected toggleClickCount: int
             protected treeModelListener: javax.swing.event.TreeModelListener
-            public static CELL_RENDERER_PROPERTY: string
-            public static TREE_MODEL_PROPERTY: string
-            public static ROOT_VISIBLE_PROPERTY: string
-            public static SHOWS_ROOT_HANDLES_PROPERTY: string
-            public static ROW_HEIGHT_PROPERTY: string
-            public static CELL_EDITOR_PROPERTY: string
-            public static EDITABLE_PROPERTY: string
-            public static LARGE_MODEL_PROPERTY: string
-            public static SELECTION_MODEL_PROPERTY: string
-            public static VISIBLE_ROW_COUNT_PROPERTY: string
-            public static INVOKES_STOP_CELL_EDITING_PROPERTY: string
-            public static SCROLLS_ON_EXPAND_PROPERTY: string
-            public static TOGGLE_CLICK_COUNT_PROPERTY: string
-            public static LEAD_SELECTION_PATH_PROPERTY: string
-            public static ANCHOR_SELECTION_PATH_PROPERTY: string
-            public static EXPANDS_SELECTED_PATHS_PROPERTY: string
+            public static readonly CELL_RENDERER_PROPERTY: string
+            public static readonly TREE_MODEL_PROPERTY: string
+            public static readonly ROOT_VISIBLE_PROPERTY: string
+            public static readonly SHOWS_ROOT_HANDLES_PROPERTY: string
+            public static readonly ROW_HEIGHT_PROPERTY: string
+            public static readonly CELL_EDITOR_PROPERTY: string
+            public static readonly EDITABLE_PROPERTY: string
+            public static readonly LARGE_MODEL_PROPERTY: string
+            public static readonly SELECTION_MODEL_PROPERTY: string
+            public static readonly VISIBLE_ROW_COUNT_PROPERTY: string
+            public static readonly INVOKES_STOP_CELL_EDITING_PROPERTY: string
+            public static readonly SCROLLS_ON_EXPAND_PROPERTY: string
+            public static readonly TOGGLE_CLICK_COUNT_PROPERTY: string
+            public static readonly LEAD_SELECTION_PATH_PROPERTY: string
+            public static readonly ANCHOR_SELECTION_PATH_PROPERTY: string
+            public static readonly EXPANDS_SELECTED_PATHS_PROPERTY: string
             protected static getDefaultTreeModel(): javax.swing.tree.TreeModel
             protected static createTreeModel(arg0: java.lang.Object): javax.swing.tree.TreeModel
             public constructor()
@@ -49,7 +49,7 @@ declare namespace javax {
             public setCellRenderer(arg0: javax.swing.tree.TreeCellRenderer | javax.swing.tree.TreeCellRenderer$$Lambda): void
             public setEditable(arg0: boolean): void
             public isEditable(): boolean
-            public setCellEditor(arg0: javax.swing.tree.TreeCellEditor | javax.swing.tree.TreeCellEditor$$Lambda): void
+            public setCellEditor(arg0: javax.swing.tree.TreeCellEditor): void
             public getCellEditor(): javax.swing.tree.TreeCellEditor
             public getModel(): javax.swing.tree.TreeModel
             public setModel(arg0: javax.swing.tree.TreeModel): void
@@ -150,8 +150,8 @@ declare namespace javax {
             public fireTreeCollapsed(arg0: javax.swing.tree.TreePath): void
             public fireTreeWillExpand(arg0: javax.swing.tree.TreePath): void
             public fireTreeWillCollapse(arg0: javax.swing.tree.TreePath): void
-            public addTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$Lambda): void
-            public removeTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$Lambda): void
+            public addTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener): void
+            public removeTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener): void
             public getTreeSelectionListeners(): javax.swing.event.TreeSelectionListener[]
             protected fireValueChanged(arg0: javax.swing.event.TreeSelectionEvent): void
             public treeDidChange(): void

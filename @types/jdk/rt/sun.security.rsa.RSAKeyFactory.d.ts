@@ -2,10 +2,10 @@ declare namespace sun {
     namespace security {
         namespace rsa {
             class RSAKeyFactory extends java.security.KeyFactorySpi {
-                public static MIN_MODLEN: int
-                public static MAX_MODLEN: int
-                public static MAX_MODLEN_RESTRICT_EXP: int
-                public static MAX_RESTRICTED_EXPLEN: int
+                public static readonly MIN_MODLEN: int
+                public static readonly MAX_MODLEN: int
+                public static readonly MAX_MODLEN_RESTRICT_EXP: int
+                public static readonly MAX_RESTRICTED_EXPLEN: int
                 public constructor()
                 public static toRSAKey(arg0: java.security.Key): java.security.interfaces.RSAKey
                 public static checkKeyLengths(arg0: int, arg1: java.math.BigInteger, arg2: int, arg3: int): void

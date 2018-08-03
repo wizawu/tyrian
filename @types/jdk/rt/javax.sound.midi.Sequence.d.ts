@@ -2,11 +2,11 @@ declare namespace javax {
     namespace sound {
         namespace midi {
             class Sequence {
-                public static PPQ: float
-                public static SMPTE_24: float
-                public static SMPTE_25: float
-                public static SMPTE_30DROP: float
-                public static SMPTE_30: float
+                public static readonly PPQ: float
+                public static readonly SMPTE_24: float
+                public static readonly SMPTE_25: float
+                public static readonly SMPTE_30DROP: float
+                public static readonly SMPTE_30: float
                 protected divisionType: float
                 protected resolution: int
                 protected tracks: java.util.Vector<javax.sound.midi.Track>

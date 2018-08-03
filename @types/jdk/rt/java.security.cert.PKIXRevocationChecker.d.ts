@@ -13,10 +13,13 @@ declare namespace java {
                 public getOcspResponses(): java.util.Map<java.security.cert.X509Certificate, byte[]>
                 public setOptions(arg0: java.util.Set<java.security.cert.PKIXRevocationChecker$Option>): void
                 public getOptions(): java.util.Set<java.security.cert.PKIXRevocationChecker$Option>
-                public getSoftFailExceptions(): java.util.List<java.security.cert.CertPathValidatorException>
+                public abstract getSoftFailExceptions(): java.util.List<java.security.cert.CertPathValidatorException>
                 public clone(): java.security.cert.PKIXRevocationChecker
                 public clone(): java.lang.Object
                 public static class: java.lang.Class<any>
+            }
+            interface PKIXRevocationChecker$$Lambda extends java.security.cert.PKIXCertPathChecker {
+                (): java.util.List<java.security.cert.CertPathValidatorException>
             }
         }
     }

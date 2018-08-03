@@ -7,8 +7,8 @@ declare namespace com {
                         namespace runtime {
                             namespace unmarshaller {
                                 class ChildLoader {
-                                    public loader: com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader
-                                    public receiver: com.sun.xml.internal.bind.v2.runtime.unmarshaller.Receiver
+                                    public readonly loader: com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader
+                                    public readonly receiver: com.sun.xml.internal.bind.v2.runtime.unmarshaller.Receiver
                                     public constructor(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.Receiver | com.sun.xml.internal.bind.v2.runtime.unmarshaller.Receiver$$Lambda)
                                     public static class: java.lang.Class<any>
                                 }

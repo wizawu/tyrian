@@ -8,9 +8,6 @@ declare namespace com {
                             interface CodeSetsComponent extends com.sun.corba.se.spi.ior.TaggedComponent {
                                 getCodeSetComponentInfo(): com.sun.corba.se.impl.encoding.CodeSetComponentInfo
                             }
-                            interface CodeSetsComponent$$Lambda extends com.sun.corba.se.spi.ior.TaggedComponent {
-                                (): com.sun.corba.se.impl.encoding.CodeSetComponentInfo
-                            }
                         }
                     }
                 }

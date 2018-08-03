@@ -5,10 +5,10 @@ declare namespace com {
                 namespace impl {
                     namespace io {
                         class ValueHandlerImpl implements javax.rmi.CORBA.ValueHandlerMultiFormat {
-                            public static FORMAT_VERSION_PROPERTY: string
-                            public static kRemoteType: short
-                            public static kAbstractType: short
-                            public static kValueType: short
+                            public static readonly FORMAT_VERSION_PROPERTY: string
+                            public static readonly kRemoteType: short
+                            public static readonly kAbstractType: short
+                            public static readonly kValueType: short
                             public getMaximumStreamFormatVersion(): byte
                             public writeValue(arg0: org.omg.CORBA.portable.OutputStream, arg1: java.io.Serializable, arg2: byte): void
                             public writeValue(arg0: org.omg.CORBA.portable.OutputStream, arg1: java.io.Serializable): void

@@ -6,10 +6,10 @@ declare namespace com {
                     namespace v2 {
                         namespace schemagen {
                             abstract class Form extends java.lang.Enum<com.sun.xml.internal.bind.v2.schemagen.Form> {
-                                public static QUALIFIED: com.sun.xml.internal.bind.v2.schemagen.Form
-                                public static UNQUALIFIED: com.sun.xml.internal.bind.v2.schemagen.Form
-                                public static UNSET: com.sun.xml.internal.bind.v2.schemagen.Form
-                                public isEffectivelyQualified: boolean
+                                public static readonly QUALIFIED: com.sun.xml.internal.bind.v2.schemagen.Form
+                                public static readonly UNQUALIFIED: com.sun.xml.internal.bind.v2.schemagen.Form
+                                public static readonly UNSET: com.sun.xml.internal.bind.v2.schemagen.Form
+                                public readonly isEffectivelyQualified: boolean
                                 public static values(): com.sun.xml.internal.bind.v2.schemagen.Form[]
                                 public static valueOf(arg0: java.lang.String | string): com.sun.xml.internal.bind.v2.schemagen.Form
                                 public writeForm(arg0: com.sun.xml.internal.bind.v2.schemagen.xmlschema.LocalElement, arg1: javax.xml.namespace.QName): void

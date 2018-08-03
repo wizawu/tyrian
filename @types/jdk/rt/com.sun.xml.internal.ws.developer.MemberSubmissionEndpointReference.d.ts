@@ -12,7 +12,7 @@ declare namespace com {
                             public serviceName: com.sun.xml.internal.ws.developer.MemberSubmissionEndpointReference$ServiceNameType
                             public attributes: java.util.Map<javax.xml.namespace.QName, java.lang.String>
                             public elements: java.util.List<org.w3c.dom.Element>
-                            protected static MSNS: string
+                            protected static readonly MSNS: string
                             public constructor()
                             public constructor(arg0: javax.xml.transform.Source)
                             public writeTo(arg0: javax.xml.transform.Result): void

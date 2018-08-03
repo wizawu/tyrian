@@ -10,14 +10,14 @@ declare namespace com {
                                     protected expectText: boolean
                                     protected constructor(arg0: boolean)
                                     protected constructor()
-                                    public startElement(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$State, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName): void
-                                    public childElement(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$State, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName): void
-                                    protected reportUnexpectedChildElement(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName, arg1: boolean): void
+                                    public startElement(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$State, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName | com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName$$Lambda): void
+                                    public childElement(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$State, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName | com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName$$Lambda): void
+                                    protected reportUnexpectedChildElement(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName | com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName$$Lambda, arg1: boolean): void
                                     public getExpectedChildElements(): java.util.Collection<javax.xml.namespace.QName>
                                     public getExpectedAttributes(): java.util.Collection<javax.xml.namespace.QName>
                                     public text(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$State, arg1: java.lang.CharSequence): void
                                     public expectText(): boolean
-                                    public leaveElement(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$State, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName): void
+                                    public leaveElement(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$State, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName | com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName$$Lambda): void
                                     protected fireBeforeUnmarshal(arg0: com.sun.xml.internal.bind.v2.runtime.JaxBeanInfo, arg1: java.lang.Object, arg2: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$State): void
                                     protected fireAfterUnmarshal(arg0: com.sun.xml.internal.bind.v2.runtime.JaxBeanInfo, arg1: java.lang.Object, arg2: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$State): void
                                     protected static handleGenericException(arg0: java.lang.Exception): void

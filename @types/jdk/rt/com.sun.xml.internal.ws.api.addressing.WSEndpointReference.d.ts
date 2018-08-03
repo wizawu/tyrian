@@ -6,10 +6,10 @@ declare namespace com {
                     namespace api {
                         namespace addressing {
                             class WSEndpointReference implements com.sun.xml.internal.ws.api.model.wsdl.WSDLExtension {
-                                public constructor(arg0: javax.xml.ws.EndpointReference, arg1: com.sun.xml.internal.ws.api.addressing.AddressingVersion)
-                                public constructor(arg0: javax.xml.ws.EndpointReference)
+                                public constructor(arg0: javax.xml.ws.EndpointReference | javax.xml.ws.EndpointReference$$Lambda, arg1: com.sun.xml.internal.ws.api.addressing.AddressingVersion)
+                                public constructor(arg0: javax.xml.ws.EndpointReference | javax.xml.ws.EndpointReference$$Lambda)
                                 public constructor(arg0: com.sun.xml.internal.stream.buffer.XMLStreamBuffer, arg1: com.sun.xml.internal.ws.api.addressing.AddressingVersion)
-                                public constructor(arg0: java.io.InputStream, arg1: com.sun.xml.internal.ws.api.addressing.AddressingVersion)
+                                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: com.sun.xml.internal.ws.api.addressing.AddressingVersion)
                                 public constructor(arg0: javax.xml.stream.XMLStreamReader, arg1: com.sun.xml.internal.ws.api.addressing.AddressingVersion)
                                 public constructor(arg0: java.net.URL, arg1: com.sun.xml.internal.ws.api.addressing.AddressingVersion)
                                 public constructor(arg0: java.net.URI, arg1: com.sun.xml.internal.ws.api.addressing.AddressingVersion)
@@ -17,7 +17,7 @@ declare namespace com {
                                 public constructor(arg0: com.sun.xml.internal.ws.api.addressing.AddressingVersion, arg1: java.lang.String | string, arg2: javax.xml.namespace.QName, arg3: javax.xml.namespace.QName, arg4: javax.xml.namespace.QName, arg5: java.util.List<org.w3c.dom.Element>, arg6: java.lang.String | string, arg7: java.util.List<org.w3c.dom.Element>)
                                 public constructor(arg0: com.sun.xml.internal.ws.api.addressing.AddressingVersion, arg1: java.lang.String | string, arg2: javax.xml.namespace.QName, arg3: javax.xml.namespace.QName, arg4: javax.xml.namespace.QName, arg5: java.util.List<org.w3c.dom.Element>, arg6: java.lang.String | string, arg7: java.util.List<org.w3c.dom.Element>, arg8: java.util.Collection<com.sun.xml.internal.ws.api.addressing.WSEndpointReference$EPRExtension>, arg9: java.util.Map<javax.xml.namespace.QName, java.lang.String>)
                                 public constructor(arg0: com.sun.xml.internal.ws.api.addressing.AddressingVersion, arg1: java.lang.String | string, arg2: javax.xml.namespace.QName, arg3: javax.xml.namespace.QName, arg4: javax.xml.namespace.QName, arg5: java.util.List<org.w3c.dom.Element>, arg6: java.lang.String | string, arg7: java.lang.String | string, arg8: java.util.List<org.w3c.dom.Element>, arg9: java.util.List<org.w3c.dom.Element>, arg10: java.util.Map<javax.xml.namespace.QName, java.lang.String>)
-                                public static create(arg0: javax.xml.ws.EndpointReference): com.sun.xml.internal.ws.api.addressing.WSEndpointReference
+                                public static create(arg0: javax.xml.ws.EndpointReference | javax.xml.ws.EndpointReference$$Lambda): com.sun.xml.internal.ws.api.addressing.WSEndpointReference
                                 public createWithAddress(arg0: java.net.URI): com.sun.xml.internal.ws.api.addressing.WSEndpointReference
                                 public createWithAddress(arg0: java.net.URL): com.sun.xml.internal.ws.api.addressing.WSEndpointReference
                                 public createWithAddress(arg0: java.lang.String | string): com.sun.xml.internal.ws.api.addressing.WSEndpointReference

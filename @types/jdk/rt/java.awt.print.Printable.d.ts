@@ -7,7 +7,7 @@ declare namespace java {
                 print(arg0: java.awt.Graphics, arg1: java.awt.print.PageFormat, arg2: int): int
             }
             interface Printable$$Lambda {
-                PAGE_EXISTS: int
+                (arg0: java.awt.Graphics, arg1: java.awt.print.PageFormat, arg2: int): int
             }
         }
     }

@@ -2,13 +2,13 @@ declare namespace sun {
     namespace text {
         namespace bidi {
             class BidiBase {
-                public static INTERNAL_LEVEL_DEFAULT_LTR: byte
-                public static INTERNAL_LEVEL_DEFAULT_RTL: byte
-                public static MAX_EXPLICIT_LEVEL: byte
-                public static INTERNAL_LEVEL_OVERRIDE: byte
-                public static MAP_NOWHERE: int
-                public static MIXED: byte
-                public static DO_MIRRORING: short
+                public static readonly INTERNAL_LEVEL_DEFAULT_LTR: byte
+                public static readonly INTERNAL_LEVEL_DEFAULT_RTL: byte
+                public static readonly MAX_EXPLICIT_LEVEL: byte
+                public static readonly INTERNAL_LEVEL_OVERRIDE: byte
+                public static readonly MAP_NOWHERE: int
+                public static readonly MIXED: byte
+                public static readonly DO_MIRRORING: short
                 public length: int
                 public verifyValidPara(): void
                 public verifyValidParaOrLine(): void

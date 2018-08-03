@@ -2,7 +2,7 @@ declare namespace sun {
     namespace reflect {
         namespace misc {
             class ReflectUtil {
-                public static PROXY_PACKAGE: string
+                public static readonly PROXY_PACKAGE: string
                 public static forName(arg0: java.lang.String | string): java.lang.Class<any>
                 public static newInstance(arg0: java.lang.Class<any>): java.lang.Object
                 public static ensureMemberAccess(arg0: java.lang.Class<any>, arg1: java.lang.Class<any>, arg2: java.lang.Object, arg3: int): void

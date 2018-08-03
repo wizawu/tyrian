@@ -6,27 +6,27 @@ declare namespace com {
                     namespace transport {
                         namespace http {
                             class DeploymentDescriptorParser<A> {
-                                public static NS_RUNTIME: string
-                                public static JAXWS_WSDL_DD_DIR: string
-                                public static QNAME_ENDPOINTS: javax.xml.namespace.QName
-                                public static QNAME_ENDPOINT: javax.xml.namespace.QName
-                                public static QNAME_EXT_METADA: javax.xml.namespace.QName
-                                public static ATTR_FILE: string
-                                public static ATTR_RESOURCE: string
-                                public static ATTR_VERSION: string
-                                public static ATTR_NAME: string
-                                public static ATTR_IMPLEMENTATION: string
-                                public static ATTR_WSDL: string
-                                public static ATTR_SERVICE: string
-                                public static ATTR_PORT: string
-                                public static ATTR_URL_PATTERN: string
-                                public static ATTR_ENABLE_MTOM: string
-                                public static ATTR_MTOM_THRESHOLD_VALUE: string
-                                public static ATTR_BINDING: string
-                                public static ATTR_DATABINDING: string
-                                public static ATTRVALUE_SUPPORTED_VERSIONS: java.util.List<java.lang.String>
+                                public static readonly NS_RUNTIME: string
+                                public static readonly JAXWS_WSDL_DD_DIR: string
+                                public static readonly QNAME_ENDPOINTS: javax.xml.namespace.QName
+                                public static readonly QNAME_ENDPOINT: javax.xml.namespace.QName
+                                public static readonly QNAME_EXT_METADA: javax.xml.namespace.QName
+                                public static readonly ATTR_FILE: string
+                                public static readonly ATTR_RESOURCE: string
+                                public static readonly ATTR_VERSION: string
+                                public static readonly ATTR_NAME: string
+                                public static readonly ATTR_IMPLEMENTATION: string
+                                public static readonly ATTR_WSDL: string
+                                public static readonly ATTR_SERVICE: string
+                                public static readonly ATTR_PORT: string
+                                public static readonly ATTR_URL_PATTERN: string
+                                public static readonly ATTR_ENABLE_MTOM: string
+                                public static readonly ATTR_MTOM_THRESHOLD_VALUE: string
+                                public static readonly ATTR_BINDING: string
+                                public static readonly ATTR_DATABINDING: string
+                                public static readonly ATTRVALUE_SUPPORTED_VERSIONS: java.util.List<java.lang.String>
                                 public constructor(arg0: java.lang.ClassLoader, arg1: com.sun.xml.internal.ws.transport.http.ResourceLoader, arg2: com.sun.xml.internal.ws.api.server.Container, arg3: com.sun.xml.internal.ws.transport.http.DeploymentDescriptorParser$AdapterFactory<A> | com.sun.xml.internal.ws.transport.http.DeploymentDescriptorParser$AdapterFactory$$Lambda<A>)
-                                public parse(arg0: java.lang.String | string, arg1: java.io.InputStream): java.util.List<A>
+                                public parse(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): java.util.List<A>
                                 public parse(arg0: java.io.File): java.util.List<A>
                                 public static getBindingIdForToken(arg0: java.lang.String | string): string
                                 protected getAttribute(arg0: com.sun.xml.internal.ws.streaming.Attributes, arg1: java.lang.String | string): string

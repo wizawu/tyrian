@@ -2,7 +2,7 @@ declare namespace sun {
     namespace java2d {
         namespace loops {
             class RenderLoops {
-                public static primTypeID: int
+                public static readonly primTypeID: int
                 public drawLineLoop: sun.java2d.loops.DrawLine
                 public fillRectLoop: sun.java2d.loops.FillRect
                 public drawRectLoop: sun.java2d.loops.DrawRect

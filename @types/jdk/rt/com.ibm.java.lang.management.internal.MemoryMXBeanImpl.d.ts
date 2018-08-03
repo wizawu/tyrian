@@ -23,9 +23,9 @@ declare namespace com {
                             public getMinHeapSize(): long
                             public setMaxHeapSize(arg0: long): void
                             public isSetMaxHeapSizeSupported(): boolean
-                            public removeNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda, arg1: javax.management.NotificationFilter | javax.management.NotificationFilter$$Lambda, arg2: java.lang.Object): void
-                            public addNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda, arg1: javax.management.NotificationFilter | javax.management.NotificationFilter$$Lambda, arg2: java.lang.Object): void
-                            public removeNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda): void
+                            public removeNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
+                            public addNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
+                            public removeNotificationListener(arg0: javax.management.NotificationListener): void
                             public getNotificationInfo(): javax.management.MBeanNotificationInfo[]
                             public sendNotification(arg0: javax.management.Notification): void
                             public getSharedClassCacheSize(): long

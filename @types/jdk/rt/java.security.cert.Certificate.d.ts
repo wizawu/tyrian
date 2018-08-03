@@ -6,12 +6,12 @@ declare namespace java {
                 public getType(): string
                 public equals(arg0: java.lang.Object): boolean
                 public hashCode(): int
-                public getEncoded(): byte[]
-                public verify(arg0: java.security.PublicKey): void
-                public verify(arg0: java.security.PublicKey, arg1: java.lang.String | string): void
+                public abstract getEncoded(): byte[]
+                public abstract verify(arg0: java.security.PublicKey): void
+                public abstract verify(arg0: java.security.PublicKey, arg1: java.lang.String | string): void
                 public verify(arg0: java.security.PublicKey, arg1: java.security.Provider): void
-                public toString(): string
-                public getPublicKey(): java.security.PublicKey
+                public abstract toString(): string
+                public abstract getPublicKey(): java.security.PublicKey
                 protected writeReplace(): java.lang.Object
                 public static class: java.lang.Class<any>
             }

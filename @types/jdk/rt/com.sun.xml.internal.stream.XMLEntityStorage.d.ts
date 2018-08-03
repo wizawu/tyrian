@@ -4,8 +4,8 @@ declare namespace com {
             namespace internal {
                 namespace stream {
                     class XMLEntityStorage {
-                        protected static ERROR_REPORTER: string
-                        protected static WARN_ON_DUPLICATE_ENTITYDEF: string
+                        protected static readonly ERROR_REPORTER: string
+                        protected static readonly WARN_ON_DUPLICATE_ENTITYDEF: string
                         protected fWarnDuplicateEntityDef: boolean
                         protected fEntities: java.util.Map<java.lang.String, com.sun.xml.internal.stream.Entity>
                         protected fCurrentEntity: com.sun.xml.internal.stream.Entity$ScannedEntity

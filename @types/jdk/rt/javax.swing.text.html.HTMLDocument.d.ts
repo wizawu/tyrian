@@ -3,7 +3,7 @@ declare namespace javax {
         namespace text {
             namespace html {
                 class HTMLDocument extends javax.swing.text.DefaultStyledDocument {
-                    public static AdditionalComments: string
+                    public static readonly AdditionalComments: string
                     public constructor()
                     public constructor(arg0: javax.swing.text.html.StyleSheet)
                     public constructor(arg0: javax.swing.text.AbstractDocument$Content, arg1: javax.swing.text.html.StyleSheet)
@@ -25,7 +25,7 @@ declare namespace javax {
                     public setPreservesUnknownTags(arg0: boolean): void
                     public getPreservesUnknownTags(): boolean
                     public processHTMLFrameHyperlinkEvent(arg0: javax.swing.text.html.HTMLFrameHyperlinkEvent): void
-                    public setParser(arg0: javax.swing.text.html.HTMLEditorKit$Parser): void
+                    public setParser(arg0: javax.swing.text.html.HTMLEditorKit$Parser | javax.swing.text.html.HTMLEditorKit$Parser$$Lambda): void
                     public getParser(): javax.swing.text.html.HTMLEditorKit$Parser
                     public setInnerHTML(arg0: javax.swing.text.Element, arg1: java.lang.String | string): void
                     public setOuterHTML(arg0: javax.swing.text.Element, arg1: java.lang.String | string): void

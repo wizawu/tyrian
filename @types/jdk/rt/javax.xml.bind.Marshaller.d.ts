@@ -8,7 +8,7 @@ declare namespace javax {
                 JAXB_NO_NAMESPACE_SCHEMA_LOCATION: string
                 JAXB_FRAGMENT: string
                 marshal(arg0: java.lang.Object, arg1: javax.xml.transform.Result): void
-                marshal(arg0: java.lang.Object, arg1: java.io.OutputStream): void
+                marshal(arg0: java.lang.Object, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                 marshal(arg0: java.lang.Object, arg1: java.io.File): void
                 marshal(arg0: java.lang.Object, arg1: java.io.Writer): void
                 marshal(arg0: java.lang.Object, arg1: org.xml.sax.ContentHandler): void
@@ -23,12 +23,12 @@ declare namespace javax {
                 setAdapter(arg0: javax.xml.bind.annotation.adapters.XmlAdapter): void
                 setAdapter<A extends javax.xml.bind.annotation.adapters.XmlAdapter>(arg0: java.lang.Class<A>, arg1: A): void
                 getAdapter<A extends javax.xml.bind.annotation.adapters.XmlAdapter>(arg0: java.lang.Class<A>): A
-                setAttachmentMarshaller(arg0: javax.xml.bind.attachment.AttachmentMarshaller): void
-                getAttachmentMarshaller(): javax.xml.bind.attachment.AttachmentMarshaller
-                setSchema(arg0: javax.xml.validation.Schema): void
-                getSchema(): javax.xml.validation.Schema
-                setListener(arg0: javax.xml.bind.Marshaller$Listener): void
-                getListener(): javax.xml.bind.Marshaller$Listener
+                setAttachmentMarshaller<A extends javax.xml.bind.annotation.adapters.XmlAdapter>(arg0: javax.xml.bind.attachment.AttachmentMarshaller): void
+                getAttachmentMarshaller<A extends javax.xml.bind.annotation.adapters.XmlAdapter>(): javax.xml.bind.attachment.AttachmentMarshaller
+                setSchema<A extends javax.xml.bind.annotation.adapters.XmlAdapter>(arg0: javax.xml.validation.Schema): void
+                getSchema<A extends javax.xml.bind.annotation.adapters.XmlAdapter>(): javax.xml.validation.Schema
+                setListener<A extends javax.xml.bind.annotation.adapters.XmlAdapter>(arg0: javax.xml.bind.Marshaller$Listener): void
+                getListener<A extends javax.xml.bind.annotation.adapters.XmlAdapter>(): javax.xml.bind.Marshaller$Listener
             }
         }
     }

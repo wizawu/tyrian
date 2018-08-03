@@ -2,10 +2,10 @@ declare namespace sun {
     namespace awt {
         namespace X11 {
             class XChoicePeer extends sun.awt.X11.XComponentPeer implements java.awt.peer.ChoicePeer , sun.awt.X11.ToplevelStateListener {
-                public static TEXT_SPACE: int
-                public static BORDER_WIDTH: int
-                public static ITEM_MARGIN: int
-                public static SCROLLBAR_WIDTH: int
+                public static readonly TEXT_SPACE: int
+                public static readonly BORDER_WIDTH: int
+                public static readonly ITEM_MARGIN: int
+                public static readonly SCROLLBAR_WIDTH: int
                 public isFocusable(): boolean
                 public setBounds(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int): void
                 public focusGained(arg0: java.awt.event.FocusEvent): void

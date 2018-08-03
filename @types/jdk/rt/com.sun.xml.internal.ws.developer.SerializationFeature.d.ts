@@ -5,7 +5,7 @@ declare namespace com {
                 namespace ws {
                     namespace developer {
                         class SerializationFeature extends javax.xml.ws.WebServiceFeature {
-                            public static ID: string
+                            public static readonly ID: string
                             public constructor()
                             public constructor(arg0: java.lang.String | string)
                             public getID(): string

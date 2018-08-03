@@ -3,8 +3,8 @@ declare namespace javax {
         namespace attribute {
             namespace standard {
                 class JobSheets extends javax.print.attribute.EnumSyntax implements javax.print.attribute.PrintRequestAttribute , javax.print.attribute.PrintJobAttribute {
-                    public static NONE: javax.print.attribute.standard.JobSheets
-                    public static STANDARD: javax.print.attribute.standard.JobSheets
+                    public static readonly NONE: javax.print.attribute.standard.JobSheets
+                    public static readonly STANDARD: javax.print.attribute.standard.JobSheets
                     protected constructor(arg0: int)
                     protected getStringTable(): java.lang.String[]
                     protected getEnumValueTable(): javax.print.attribute.EnumSyntax[]

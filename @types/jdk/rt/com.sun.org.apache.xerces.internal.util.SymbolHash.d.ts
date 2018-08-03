@@ -6,10 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace util {
                             class SymbolHash {
-                                protected static TABLE_SIZE: int
-                                protected static MAX_HASH_COLLISIONS: int
-                                protected static MULTIPLIERS_SIZE: int
-                                protected static MULTIPLIERS_MASK: int
+                                protected static readonly TABLE_SIZE: int
+                                protected static readonly MAX_HASH_COLLISIONS: int
+                                protected static readonly MULTIPLIERS_SIZE: int
+                                protected static readonly MULTIPLIERS_MASK: int
                                 protected fTableSize: int
                                 protected fBuckets: com.sun.org.apache.xerces.internal.util.SymbolHash$Entry[]
                                 protected fNum: int

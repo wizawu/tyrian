@@ -7,7 +7,7 @@ declare namespace com {
                         namespace runtime {
                             namespace unmarshaller {
                                 class LocatorEx$Snapshot implements com.sun.xml.internal.bind.v2.runtime.unmarshaller.LocatorEx , javax.xml.bind.ValidationEventLocator {
-                                    public constructor(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.LocatorEx | com.sun.xml.internal.bind.v2.runtime.unmarshaller.LocatorEx$$Lambda)
+                                    public constructor(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.LocatorEx)
                                     public getObject(): java.lang.Object
                                     public getNode(): org.w3c.dom.Node
                                     public getOffset(): int

@@ -3,9 +3,9 @@ declare namespace jdk {
         namespace internal {
             namespace parser {
                 class Scanner$State {
-                    public position: int
+                    public readonly position: int
                     public limit: int
-                    public line: int
+                    public readonly line: int
                     public static class: java.lang.Class<any>
                 }
             }

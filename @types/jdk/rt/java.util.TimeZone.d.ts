@@ -1,13 +1,13 @@
 declare namespace java {
     namespace util {
         abstract class TimeZone implements java.io.Serializable , java.lang.Cloneable {
-            public static SHORT: int
-            public static LONG: int
+            public static readonly SHORT: int
+            public static readonly LONG: int
             public constructor()
-            public getOffset(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int): int
+            public abstract getOffset(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int): int
             public getOffset(arg0: long): int
-            public setRawOffset(arg0: int): void
-            public getRawOffset(): int
+            public abstract setRawOffset(arg0: int): void
+            public abstract getRawOffset(): int
             public getID(): string
             public setID(arg0: java.lang.String | string): void
             public getDisplayName(): string
@@ -15,9 +15,9 @@ declare namespace java {
             public getDisplayName(arg0: boolean, arg1: int): string
             public getDisplayName(arg0: boolean, arg1: int, arg2: java.util.Locale): string
             public getDSTSavings(): int
-            public useDaylightTime(): boolean
+            public abstract useDaylightTime(): boolean
             public observesDaylightTime(): boolean
-            public inDaylightTime(arg0: java.util.Date): boolean
+            public abstract inDaylightTime(arg0: java.util.Date): boolean
             public static getTimeZone(arg0: java.lang.String | string): java.util.TimeZone
             public static getTimeZone(arg0: java.time.ZoneId): java.util.TimeZone
             public toZoneId(): java.time.ZoneId

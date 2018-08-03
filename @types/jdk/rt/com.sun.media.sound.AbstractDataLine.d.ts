@@ -3,7 +3,7 @@ declare namespace com {
         namespace media {
             namespace sound {
                 abstract class AbstractDataLine extends com.sun.media.sound.AbstractLine implements javax.sound.sampled.DataLine {
-                    protected lock: java.lang.Object
+                    protected readonly lock: java.lang.Object
                     protected format: javax.sound.sampled.AudioFormat
                     protected bufferSize: int
                     protected running: boolean

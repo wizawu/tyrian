@@ -5,7 +5,7 @@ declare namespace java {
                 getId(): string
                 isCritical(): boolean
                 getValue(): byte[]
-                encode(arg0: java.io.OutputStream): void
+                encode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
             }
         }
     }

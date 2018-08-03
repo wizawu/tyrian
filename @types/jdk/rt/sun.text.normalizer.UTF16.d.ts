@@ -2,14 +2,14 @@ declare namespace sun {
     namespace text {
         namespace normalizer {
             class UTF16 {
-                public static CODEPOINT_MIN_VALUE: int
-                public static CODEPOINT_MAX_VALUE: int
-                public static SUPPLEMENTARY_MIN_VALUE: int
-                public static LEAD_SURROGATE_MIN_VALUE: int
-                public static TRAIL_SURROGATE_MIN_VALUE: int
-                public static LEAD_SURROGATE_MAX_VALUE: int
-                public static TRAIL_SURROGATE_MAX_VALUE: int
-                public static SURROGATE_MIN_VALUE: int
+                public static readonly CODEPOINT_MIN_VALUE: int
+                public static readonly CODEPOINT_MAX_VALUE: int
+                public static readonly SUPPLEMENTARY_MIN_VALUE: int
+                public static readonly LEAD_SURROGATE_MIN_VALUE: int
+                public static readonly TRAIL_SURROGATE_MIN_VALUE: int
+                public static readonly LEAD_SURROGATE_MAX_VALUE: int
+                public static readonly TRAIL_SURROGATE_MAX_VALUE: int
+                public static readonly SURROGATE_MIN_VALUE: int
                 public constructor()
                 public static charAt(arg0: java.lang.String | string, arg1: int): int
                 public static charAt(arg0: char[], arg1: int, arg2: int, arg3: int): int

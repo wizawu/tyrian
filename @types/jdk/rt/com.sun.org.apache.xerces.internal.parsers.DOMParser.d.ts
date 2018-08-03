@@ -6,10 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace parsers {
                             class DOMParser extends com.sun.org.apache.xerces.internal.parsers.AbstractDOMParser {
-                                protected static USE_ENTITY_RESOLVER2: string
-                                protected static REPORT_WHITESPACE: string
-                                protected static SYMBOL_TABLE: string
-                                protected static XMLGRAMMAR_POOL: string
+                                protected static readonly USE_ENTITY_RESOLVER2: string
+                                protected static readonly REPORT_WHITESPACE: string
+                                protected static readonly SYMBOL_TABLE: string
+                                protected static readonly XMLGRAMMAR_POOL: string
                                 protected fUseEntityResolver2: boolean
                                 public constructor(arg0: com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration)
                                 public constructor()

@@ -2,16 +2,16 @@ declare namespace sun {
     namespace invoke {
         namespace util {
             class Wrapper extends java.lang.Enum<sun.invoke.util.Wrapper> {
-                public static BOOLEAN: sun.invoke.util.Wrapper
-                public static BYTE: sun.invoke.util.Wrapper
-                public static SHORT: sun.invoke.util.Wrapper
-                public static CHAR: sun.invoke.util.Wrapper
-                public static INT: sun.invoke.util.Wrapper
-                public static LONG: sun.invoke.util.Wrapper
-                public static FLOAT: sun.invoke.util.Wrapper
-                public static DOUBLE: sun.invoke.util.Wrapper
-                public static OBJECT: sun.invoke.util.Wrapper
-                public static VOID: sun.invoke.util.Wrapper
+                public static readonly BOOLEAN: sun.invoke.util.Wrapper
+                public static readonly BYTE: sun.invoke.util.Wrapper
+                public static readonly SHORT: sun.invoke.util.Wrapper
+                public static readonly CHAR: sun.invoke.util.Wrapper
+                public static readonly INT: sun.invoke.util.Wrapper
+                public static readonly LONG: sun.invoke.util.Wrapper
+                public static readonly FLOAT: sun.invoke.util.Wrapper
+                public static readonly DOUBLE: sun.invoke.util.Wrapper
+                public static readonly OBJECT: sun.invoke.util.Wrapper
+                public static readonly VOID: sun.invoke.util.Wrapper
                 public static values(): sun.invoke.util.Wrapper[]
                 public static valueOf(arg0: java.lang.String | string): sun.invoke.util.Wrapper
                 public detailString(): string

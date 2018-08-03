@@ -11,8 +11,11 @@ declare namespace org {
                 public set_result(arg0: org.omg.CORBA.Any): void
                 public except(arg0: org.omg.CORBA.Any): void
                 public set_exception(arg0: org.omg.CORBA.Any): void
-                public ctx(): org.omg.CORBA.Context
+                public abstract ctx(): org.omg.CORBA.Context
                 public static class: java.lang.Class<any>
+            }
+            interface ServerRequest$$Lambda {
+                (): org.omg.CORBA.Context
             }
         }
     }

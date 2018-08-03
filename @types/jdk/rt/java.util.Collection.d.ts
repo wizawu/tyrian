@@ -7,19 +7,19 @@ declare namespace java {
             iterator(): java.util.Iterator<E>
             toArray(): java.lang.Object[]
             toArray<T>(arg0: T[]): T[]
-            add(arg0: E): boolean
-            remove(arg0: java.lang.Object): boolean
-            containsAll(arg0: java.util.Collection<any>): boolean
-            addAll(arg0: java.util.Collection<E>): boolean
-            removeAll(arg0: java.util.Collection<any>): boolean
-            removeIf(arg0: java.util.function$.Predicate<E>): boolean
-            retainAll(arg0: java.util.Collection<any>): boolean
-            clear(): void
-            equals(arg0: java.lang.Object): boolean
-            hashCode(): int
-            spliterator(): java.util.Spliterator<E>
-            stream(): java.util.stream.Stream<E>
-            parallelStream(): java.util.stream.Stream<E>
+            add<T>(arg0: E): boolean
+            remove<T>(arg0: java.lang.Object): boolean
+            containsAll<T>(arg0: java.util.Collection<any>): boolean
+            addAll<T>(arg0: java.util.Collection<E>): boolean
+            removeAll<T>(arg0: java.util.Collection<any>): boolean
+            removeIf<T>(arg0: java.util.function$.Predicate<E>): boolean
+            retainAll<T>(arg0: java.util.Collection<any>): boolean
+            clear<T>(): void
+            equals<T>(arg0: java.lang.Object): boolean
+            hashCode<T>(): int
+            spliterator<T>(): java.util.Spliterator<E>
+            stream<T>(): java.util.stream.Stream<E>
+            parallelStream<T>(): java.util.stream.Stream<E>
         }
     }
 }

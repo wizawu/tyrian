@@ -5,13 +5,13 @@ declare namespace com {
                 namespace impl {
                     namespace activation {
                         class ServerMain {
-                            public static OK: int
-                            public static MAIN_CLASS_NOT_FOUND: int
-                            public static NO_MAIN_METHOD: int
-                            public static APPLICATION_ERROR: int
-                            public static UNKNOWN_ERROR: int
-                            public static NO_SERVER_ID: int
-                            public static REGISTRATION_FAILED: int
+                            public static readonly OK: int
+                            public static readonly MAIN_CLASS_NOT_FOUND: int
+                            public static readonly NO_MAIN_METHOD: int
+                            public static readonly APPLICATION_ERROR: int
+                            public static readonly UNKNOWN_ERROR: int
+                            public static readonly NO_SERVER_ID: int
+                            public static readonly REGISTRATION_FAILED: int
                             public constructor()
                             public static printResult(arg0: int): string
                             public static logInformation(arg0: java.lang.String | string): void

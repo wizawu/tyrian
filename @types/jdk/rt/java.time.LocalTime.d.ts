@@ -1,10 +1,10 @@
 declare namespace java {
     namespace time {
         class LocalTime implements java.time.temporal.Temporal , java.time.temporal.TemporalAdjuster , java.lang.Comparable<java.time.LocalTime> , java.io.Serializable {
-            public static MIN: java.time.LocalTime
-            public static MAX: java.time.LocalTime
-            public static MIDNIGHT: java.time.LocalTime
-            public static NOON: java.time.LocalTime
+            public static readonly MIN: java.time.LocalTime
+            public static readonly MAX: java.time.LocalTime
+            public static readonly MIDNIGHT: java.time.LocalTime
+            public static readonly NOON: java.time.LocalTime
             public static now(): java.time.LocalTime
             public static now(arg0: java.time.ZoneId): java.time.LocalTime
             public static now(arg0: java.time.Clock): java.time.LocalTime

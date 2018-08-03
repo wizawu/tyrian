@@ -8,7 +8,7 @@ declare namespace java {
             public showDocument(arg0: java.net.URL): void
             public showDocument(arg0: java.net.URL, arg1: java.lang.String | string): void
             public showStatus(arg0: java.lang.String | string): void
-            public setStream(arg0: java.lang.String | string, arg1: java.io.InputStream): void
+            public setStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
             public getStream(arg0: java.lang.String | string): java.io.InputStream
             public getStreamKeys(): java.util.Iterator<java.lang.String>
             public static class: java.lang.Class<any>

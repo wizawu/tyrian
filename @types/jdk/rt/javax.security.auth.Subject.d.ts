@@ -11,7 +11,7 @@ declare namespace javax {
                 public static doAs<T>(arg0: javax.security.auth.Subject, arg1: java.security.PrivilegedExceptionAction<T> | java.security.PrivilegedExceptionAction$$Lambda<T>): T
                 public static doAsPrivileged<T>(arg0: javax.security.auth.Subject, arg1: java.security.PrivilegedAction<T> | java.security.PrivilegedAction$$Lambda<T>, arg2: java.security.AccessControlContext): T
                 public static doAsPrivileged<T>(arg0: javax.security.auth.Subject, arg1: java.security.PrivilegedExceptionAction<T> | java.security.PrivilegedExceptionAction$$Lambda<T>, arg2: java.security.AccessControlContext): T
-                public getPrincipals(): java.util.Set<java.security.Principal>
+                public getPrincipals<T>(): java.util.Set<java.security.Principal>
                 public getPrincipals<T extends java.security.Principal>(arg0: java.lang.Class<T>): java.util.Set<T>
                 public getPublicCredentials<T extends java.security.Principal>(): java.util.Set<java.lang.Object>
                 public getPrivateCredentials<T extends java.security.Principal>(): java.util.Set<java.lang.Object>

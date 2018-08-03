@@ -4,7 +4,7 @@ declare namespace javax {
             interface Sequencer extends javax.sound.midi.MidiDevice {
                 LOOP_CONTINUOUSLY: int
                 setSequence(arg0: javax.sound.midi.Sequence): void
-                setSequence(arg0: java.io.InputStream): void
+                setSequence(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
                 getSequence(): javax.sound.midi.Sequence
                 start(): void
                 stop(): void
@@ -36,10 +36,10 @@ declare namespace javax {
                 getTrackMute(arg0: int): boolean
                 setTrackSolo(arg0: int, arg1: boolean): void
                 getTrackSolo(arg0: int): boolean
-                addMetaEventListener(arg0: javax.sound.midi.MetaEventListener | javax.sound.midi.MetaEventListener$$Lambda): boolean
-                removeMetaEventListener(arg0: javax.sound.midi.MetaEventListener | javax.sound.midi.MetaEventListener$$Lambda): void
-                addControllerEventListener(arg0: javax.sound.midi.ControllerEventListener | javax.sound.midi.ControllerEventListener$$Lambda, arg1: int[]): int[]
-                removeControllerEventListener(arg0: javax.sound.midi.ControllerEventListener | javax.sound.midi.ControllerEventListener$$Lambda, arg1: int[]): int[]
+                addMetaEventListener(arg0: javax.sound.midi.MetaEventListener): boolean
+                removeMetaEventListener(arg0: javax.sound.midi.MetaEventListener): void
+                addControllerEventListener(arg0: javax.sound.midi.ControllerEventListener, arg1: int[]): int[]
+                removeControllerEventListener(arg0: javax.sound.midi.ControllerEventListener, arg1: int[]): int[]
                 setLoopStartPoint(arg0: long): void
                 getLoopStartPoint(): long
                 setLoopEndPoint(arg0: long): void

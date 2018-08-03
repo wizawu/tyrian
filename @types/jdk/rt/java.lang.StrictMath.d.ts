@@ -1,8 +1,8 @@
 declare namespace java {
     namespace lang {
         class StrictMath {
-            public static E: double
-            public static PI: double
+            public static readonly E: double
+            public static readonly PI: double
             public static sin(arg0: double): double
             public static cos(arg0: double): double
             public static tan(arg0: double): double

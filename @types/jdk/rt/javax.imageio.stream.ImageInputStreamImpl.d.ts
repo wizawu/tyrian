@@ -10,9 +10,9 @@ declare namespace javax {
                 protected checkClosed(): void
                 public setByteOrder(arg0: java.nio.ByteOrder): void
                 public getByteOrder(): java.nio.ByteOrder
-                public read(): int
+                public abstract read(): int
                 public read(arg0: byte[]): int
-                public read(arg0: byte[], arg1: int, arg2: int): int
+                public abstract read(arg0: byte[], arg1: int, arg2: int): int
                 public readBytes(arg0: javax.imageio.stream.IIOByteBuffer, arg1: int): void
                 public readBoolean(): boolean
                 public readByte(): byte

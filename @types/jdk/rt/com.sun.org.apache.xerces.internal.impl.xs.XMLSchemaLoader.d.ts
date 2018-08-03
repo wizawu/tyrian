@@ -7,33 +7,33 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 class XMLSchemaLoader implements com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarLoader , com.sun.org.apache.xerces.internal.xni.parser.XMLComponent , com.sun.org.apache.xerces.internal.xs.XSLoader , org.w3c.dom.DOMConfiguration {
-                                    protected static SCHEMA_FULL_CHECKING: string
-                                    protected static CONTINUE_AFTER_FATAL_ERROR: string
-                                    protected static ALLOW_JAVA_ENCODINGS: string
-                                    protected static STANDARD_URI_CONFORMANT_FEATURE: string
-                                    protected static VALIDATE_ANNOTATIONS: string
-                                    protected static DISALLOW_DOCTYPE: string
-                                    protected static GENERATE_SYNTHETIC_ANNOTATIONS: string
-                                    protected static HONOUR_ALL_SCHEMALOCATIONS: string
-                                    protected static AUGMENT_PSVI: string
-                                    protected static PARSER_SETTINGS: string
-                                    protected static NAMESPACE_GROWTH: string
-                                    protected static TOLERATE_DUPLICATES: string
-                                    protected static SCHEMA_DV_FACTORY: string
-                                    protected static OVERRIDE_PARSER: string
-                                    public static SYMBOL_TABLE: string
-                                    public static ERROR_REPORTER: string
-                                    protected static ERROR_HANDLER: string
-                                    public static ENTITY_RESOLVER: string
-                                    public static XMLGRAMMAR_POOL: string
-                                    protected static SCHEMA_LOCATION: string
-                                    protected static SCHEMA_NONS_LOCATION: string
-                                    protected static JAXP_SCHEMA_SOURCE: string
-                                    protected static SECURITY_MANAGER: string
-                                    protected static LOCALE: string
-                                    protected static ENTITY_MANAGER: string
-                                    public static ACCESS_EXTERNAL_DTD: string
-                                    public static ACCESS_EXTERNAL_SCHEMA: string
+                                    protected static readonly SCHEMA_FULL_CHECKING: string
+                                    protected static readonly CONTINUE_AFTER_FATAL_ERROR: string
+                                    protected static readonly ALLOW_JAVA_ENCODINGS: string
+                                    protected static readonly STANDARD_URI_CONFORMANT_FEATURE: string
+                                    protected static readonly VALIDATE_ANNOTATIONS: string
+                                    protected static readonly DISALLOW_DOCTYPE: string
+                                    protected static readonly GENERATE_SYNTHETIC_ANNOTATIONS: string
+                                    protected static readonly HONOUR_ALL_SCHEMALOCATIONS: string
+                                    protected static readonly AUGMENT_PSVI: string
+                                    protected static readonly PARSER_SETTINGS: string
+                                    protected static readonly NAMESPACE_GROWTH: string
+                                    protected static readonly TOLERATE_DUPLICATES: string
+                                    protected static readonly SCHEMA_DV_FACTORY: string
+                                    protected static readonly OVERRIDE_PARSER: string
+                                    public static readonly SYMBOL_TABLE: string
+                                    public static readonly ERROR_REPORTER: string
+                                    protected static readonly ERROR_HANDLER: string
+                                    public static readonly ENTITY_RESOLVER: string
+                                    public static readonly XMLGRAMMAR_POOL: string
+                                    protected static readonly SCHEMA_LOCATION: string
+                                    protected static readonly SCHEMA_NONS_LOCATION: string
+                                    protected static readonly JAXP_SCHEMA_SOURCE: string
+                                    protected static readonly SECURITY_MANAGER: string
+                                    protected static readonly LOCALE: string
+                                    protected static readonly ENTITY_MANAGER: string
+                                    public static readonly ACCESS_EXTERNAL_DTD: string
+                                    public static readonly ACCESS_EXTERNAL_SCHEMA: string
                                     public constructor()
                                     public constructor(arg0: com.sun.org.apache.xerces.internal.util.SymbolTable)
                                     public getRecognizedFeatures(): java.lang.String[]

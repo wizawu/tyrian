@@ -6,12 +6,15 @@ declare namespace javax {
             public constructor(arg0: javax.swing.Spring, arg1: javax.swing.Spring)
             public toString(): string
             protected clear(): void
-            protected op(arg0: int, arg1: int): int
+            protected abstract op(arg0: int, arg1: int): int
             public getMinimumValue(): int
             public getPreferredValue(): int
             public getMaximumValue(): int
             public getValue(): int
             public static class: java.lang.Class<any>
+        }
+        interface Spring$CompoundSpring$$Lambda extends javax.swing.Spring$StaticSpring {
+            (arg0: int, arg1: int): int
         }
     }
 }

@@ -8,7 +8,7 @@ declare namespace com {
                             abstract class BaseMarkupSerializer implements org.xml.sax.ContentHandler , org.xml.sax.DocumentHandler , org.xml.sax.ext.LexicalHandler , org.xml.sax.DTDHandler , org.xml.sax.ext.DeclHandler , com.sun.org.apache.xml.internal.serialize.DOMSerializer , com.sun.org.apache.xml.internal.serialize.Serializer {
                                 protected features: short
                                 protected fDOMErrorHandler: org.w3c.dom.DOMErrorHandler
-                                protected fDOMError: com.sun.org.apache.xerces.internal.dom.DOMErrorImpl
+                                protected readonly fDOMError: com.sun.org.apache.xerces.internal.dom.DOMErrorImpl
                                 protected fDOMFilter: org.w3c.dom.ls.LSSerializerFilter
                                 protected _encodingInfo: com.sun.org.apache.xml.internal.serialize.EncodingInfo
                                 protected _started: boolean
@@ -18,13 +18,13 @@ declare namespace com {
                                 protected _format: com.sun.org.apache.xml.internal.serialize.OutputFormat
                                 protected _printer: com.sun.org.apache.xml.internal.serialize.Printer
                                 protected _indenting: boolean
-                                protected fStrBuffer: java.lang.StringBuffer
+                                protected readonly fStrBuffer: java.lang.StringBuffer
                                 protected fCurrentNode: org.w3c.dom.Node
                                 protected constructor(arg0: com.sun.org.apache.xml.internal.serialize.OutputFormat)
                                 public asDocumentHandler(): org.xml.sax.DocumentHandler
                                 public asContentHandler(): org.xml.sax.ContentHandler
                                 public asDOMSerializer(): com.sun.org.apache.xml.internal.serialize.DOMSerializer
-                                public setOutputByteStream(arg0: java.io.OutputStream): void
+                                public setOutputByteStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                                 public setOutputCharStream(arg0: java.io.Writer): void
                                 public setOutputFormat(arg0: com.sun.org.apache.xml.internal.serialize.OutputFormat): void
                                 public reset(): boolean
@@ -66,8 +66,8 @@ declare namespace com {
                                 protected serializeDTD(arg0: java.lang.String | string): void
                                 protected content(): com.sun.org.apache.xml.internal.serialize.ElementState
                                 protected characters(arg0: java.lang.String | string): void
-                                protected getEntityRef(arg0: int): string
-                                protected serializeElement(arg0: org.w3c.dom.Element): void
+                                protected abstract getEntityRef(arg0: int): string
+                                protected abstract serializeElement(arg0: org.w3c.dom.Element): void
                                 protected serializePreRoot(): void
                                 protected printCDATAText(arg0: java.lang.String | string): void
                                 protected surrogates(arg0: int, arg1: int): void

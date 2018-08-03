@@ -2,13 +2,13 @@ declare namespace sun {
     namespace management {
         namespace jdp {
             class JdpJmxPacket extends sun.management.jdp.JdpGenericPacket implements sun.management.jdp.JdpPacket {
-                public static UUID_KEY: string
-                public static MAIN_CLASS_KEY: string
-                public static JMX_SERVICE_URL_KEY: string
-                public static INSTANCE_NAME_KEY: string
-                public static PROCESS_ID_KEY: string
-                public static RMI_HOSTNAME_KEY: string
-                public static BROADCAST_INTERVAL_KEY: string
+                public static readonly UUID_KEY: string
+                public static readonly MAIN_CLASS_KEY: string
+                public static readonly JMX_SERVICE_URL_KEY: string
+                public static readonly INSTANCE_NAME_KEY: string
+                public static readonly PROCESS_ID_KEY: string
+                public static readonly RMI_HOSTNAME_KEY: string
+                public static readonly BROADCAST_INTERVAL_KEY: string
                 public constructor(arg0: java.util.UUID, arg1: java.lang.String | string)
                 public constructor(arg0: byte[])
                 public setMainClass(arg0: java.lang.String | string): void

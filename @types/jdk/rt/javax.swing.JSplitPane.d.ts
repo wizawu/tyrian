@@ -1,20 +1,20 @@
 declare namespace javax {
     namespace swing {
         class JSplitPane extends javax.swing.JComponent implements javax.accessibility.Accessible {
-            public static VERTICAL_SPLIT: int
-            public static HORIZONTAL_SPLIT: int
-            public static LEFT: string
-            public static RIGHT: string
-            public static TOP: string
-            public static BOTTOM: string
-            public static DIVIDER: string
-            public static ORIENTATION_PROPERTY: string
-            public static CONTINUOUS_LAYOUT_PROPERTY: string
-            public static DIVIDER_SIZE_PROPERTY: string
-            public static ONE_TOUCH_EXPANDABLE_PROPERTY: string
-            public static LAST_DIVIDER_LOCATION_PROPERTY: string
-            public static DIVIDER_LOCATION_PROPERTY: string
-            public static RESIZE_WEIGHT_PROPERTY: string
+            public static readonly VERTICAL_SPLIT: int
+            public static readonly HORIZONTAL_SPLIT: int
+            public static readonly LEFT: string
+            public static readonly RIGHT: string
+            public static readonly TOP: string
+            public static readonly BOTTOM: string
+            public static readonly DIVIDER: string
+            public static readonly ORIENTATION_PROPERTY: string
+            public static readonly CONTINUOUS_LAYOUT_PROPERTY: string
+            public static readonly DIVIDER_SIZE_PROPERTY: string
+            public static readonly ONE_TOUCH_EXPANDABLE_PROPERTY: string
+            public static readonly LAST_DIVIDER_LOCATION_PROPERTY: string
+            public static readonly DIVIDER_LOCATION_PROPERTY: string
+            public static readonly RESIZE_WEIGHT_PROPERTY: string
             protected orientation: int
             protected continuousLayout: boolean
             protected leftComponent: java.awt.Component

@@ -5,8 +5,8 @@ declare namespace com {
                 namespace ws {
                     namespace util {
                         class VersionUtil {
-                            public static JAXWS_VERSION_20: string
-                            public static JAXWS_VERSION_DEFAULT: string
+                            public static readonly JAXWS_VERSION_20: string
+                            public static readonly JAXWS_VERSION_DEFAULT: string
                             public constructor()
                             public static isVersion20(arg0: java.lang.String | string): boolean
                             public static isValidVersion(arg0: java.lang.String | string): boolean

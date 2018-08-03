@@ -6,30 +6,30 @@ declare namespace com {
                     namespace internal {
                         namespace parsers {
                             class XML11DTDConfiguration extends com.sun.org.apache.xerces.internal.util.ParserConfigurationSettings implements com.sun.org.apache.xerces.internal.xni.parser.XMLPullParserConfiguration , com.sun.org.apache.xerces.internal.parsers.XML11Configurable {
-                                protected static XML11_DATATYPE_VALIDATOR_FACTORY: string
-                                protected static VALIDATION: string
-                                protected static NAMESPACES: string
-                                protected static EXTERNAL_GENERAL_ENTITIES: string
-                                protected static EXTERNAL_PARAMETER_ENTITIES: string
-                                protected static CONTINUE_AFTER_FATAL_ERROR: string
-                                protected static LOAD_EXTERNAL_DTD: string
-                                protected static XML_STRING: string
-                                protected static SYMBOL_TABLE: string
-                                protected static ERROR_HANDLER: string
-                                protected static ENTITY_RESOLVER: string
-                                protected static ERROR_REPORTER: string
-                                protected static ENTITY_MANAGER: string
-                                protected static DOCUMENT_SCANNER: string
-                                protected static DTD_SCANNER: string
-                                protected static XMLGRAMMAR_POOL: string
-                                protected static DTD_PROCESSOR: string
-                                protected static DTD_VALIDATOR: string
-                                protected static NAMESPACE_BINDER: string
-                                protected static DATATYPE_VALIDATOR_FACTORY: string
-                                protected static VALIDATION_MANAGER: string
-                                protected static JAXP_SCHEMA_LANGUAGE: string
-                                protected static JAXP_SCHEMA_SOURCE: string
-                                protected static PRINT_EXCEPTION_STACK_TRACE: boolean
+                                protected static readonly XML11_DATATYPE_VALIDATOR_FACTORY: string
+                                protected static readonly VALIDATION: string
+                                protected static readonly NAMESPACES: string
+                                protected static readonly EXTERNAL_GENERAL_ENTITIES: string
+                                protected static readonly EXTERNAL_PARAMETER_ENTITIES: string
+                                protected static readonly CONTINUE_AFTER_FATAL_ERROR: string
+                                protected static readonly LOAD_EXTERNAL_DTD: string
+                                protected static readonly XML_STRING: string
+                                protected static readonly SYMBOL_TABLE: string
+                                protected static readonly ERROR_HANDLER: string
+                                protected static readonly ENTITY_RESOLVER: string
+                                protected static readonly ERROR_REPORTER: string
+                                protected static readonly ENTITY_MANAGER: string
+                                protected static readonly DOCUMENT_SCANNER: string
+                                protected static readonly DTD_SCANNER: string
+                                protected static readonly XMLGRAMMAR_POOL: string
+                                protected static readonly DTD_PROCESSOR: string
+                                protected static readonly DTD_VALIDATOR: string
+                                protected static readonly NAMESPACE_BINDER: string
+                                protected static readonly DATATYPE_VALIDATOR_FACTORY: string
+                                protected static readonly VALIDATION_MANAGER: string
+                                protected static readonly JAXP_SCHEMA_LANGUAGE: string
+                                protected static readonly JAXP_SCHEMA_SOURCE: string
+                                protected static readonly PRINT_EXCEPTION_STACK_TRACE: boolean
                                 protected fSymbolTable: com.sun.org.apache.xerces.internal.util.SymbolTable
                                 protected fInputSource: com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource
                                 protected fValidationManager: com.sun.org.apache.xerces.internal.impl.validation.ValidationManager

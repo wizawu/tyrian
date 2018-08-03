@@ -10,10 +10,13 @@ declare namespace com {
                                 protected constructor(arg0: com.sun.org.apache.xml.internal.utils.PrefixResolver)
                                 protected constructor(arg0: com.sun.org.apache.xpath.internal.compiler.Compiler, arg1: int, arg2: int)
                                 protected constructor(arg0: com.sun.org.apache.xpath.internal.compiler.Compiler, arg1: int, arg2: int, arg3: boolean)
-                                protected getNextNode(): int
+                                protected abstract getNextNode(): int
                                 public nextNode(): int
                                 public cloneWithReset(): com.sun.org.apache.xml.internal.dtm.DTMIterator
                                 public static class: java.lang.Class<any>
+                            }
+                            interface BasicTestIterator$$Lambda extends com.sun.org.apache.xpath.internal.axes.LocPathIterator {
+                                (): int
                             }
                         }
                     }

@@ -8,8 +8,8 @@ declare namespace sun {
                 protected static wm_take_focus: sun.awt.X11.XAtom
                 protected graphicsConfig: sun.awt.X11GraphicsConfig
                 protected graphicsConfigData: sun.awt.X11.AwtGraphicsConfigData
-                public static TARGET: string
-                public static REPARENTED: string
+                public static readonly TARGET: string
+                public static readonly REPARENTED: string
                 protected initGraphicsConfiguration(): void
                 public getGraphicsConfiguration(): java.awt.GraphicsConfiguration
                 public getGraphicsConfigurationData(): sun.awt.X11.AwtGraphicsConfigData

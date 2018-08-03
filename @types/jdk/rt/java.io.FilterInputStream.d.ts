@@ -2,7 +2,7 @@ declare namespace java {
     namespace io {
         class FilterInputStream extends java.io.InputStream {
             protected in: java.io.InputStream
-            protected constructor(arg0: java.io.InputStream)
+            protected constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
             public read(): int
             public read(arg0: byte[]): int
             public read(arg0: byte[], arg1: int, arg2: int): int

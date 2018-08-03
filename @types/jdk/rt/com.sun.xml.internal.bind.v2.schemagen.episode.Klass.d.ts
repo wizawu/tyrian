@@ -9,9 +9,6 @@ declare namespace com {
                                 interface Klass extends com.sun.xml.internal.txw2.TypedXmlWriter {
                                     ref(arg0: java.lang.String | string): void
                                 }
-                                interface Klass$$Lambda extends com.sun.xml.internal.txw2.TypedXmlWriter {
-                                    (arg0: java.lang.String | string): void
-                                }
                             }
                         }
                     }

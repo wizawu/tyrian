@@ -6,7 +6,7 @@ declare namespace com {
                     namespace internal {
                         namespace generic {
                             class ReturnaddressType extends com.sun.org.apache.bcel.internal.generic.Type {
-                                public static NO_TARGET: com.sun.org.apache.bcel.internal.generic.ReturnaddressType
+                                public static readonly NO_TARGET: com.sun.org.apache.bcel.internal.generic.ReturnaddressType
                                 public constructor(arg0: com.sun.org.apache.bcel.internal.generic.InstructionHandle)
                                 public hashCode(): int
                                 public equals(arg0: java.lang.Object): boolean

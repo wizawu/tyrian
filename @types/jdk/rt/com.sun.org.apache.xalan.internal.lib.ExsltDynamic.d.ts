@@ -6,7 +6,7 @@ declare namespace com {
                     namespace internal {
                         namespace lib {
                             class ExsltDynamic extends com.sun.org.apache.xalan.internal.lib.ExsltBase {
-                                public static EXSL_URI: string
+                                public static readonly EXSL_URI: string
                                 public constructor()
                                 public static max(arg0: com.sun.org.apache.xalan.internal.extensions.ExpressionContext, arg1: org.w3c.dom.NodeList, arg2: java.lang.String | string): double
                                 public static min(arg0: com.sun.org.apache.xalan.internal.extensions.ExpressionContext, arg1: org.w3c.dom.NodeList, arg2: java.lang.String | string): double

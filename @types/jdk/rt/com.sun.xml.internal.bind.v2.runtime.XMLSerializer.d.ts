@@ -6,9 +6,9 @@ declare namespace com {
                     namespace v2 {
                         namespace runtime {
                             class XMLSerializer extends com.sun.xml.internal.bind.v2.runtime.Coordinator {
-                                public grammar: com.sun.xml.internal.bind.v2.runtime.JAXBContextImpl
-                                public nameList: com.sun.xml.internal.bind.v2.runtime.NameList
-                                public knownUri2prefixIndexMap: int[]
+                                public readonly grammar: com.sun.xml.internal.bind.v2.runtime.JAXBContextImpl
+                                public readonly nameList: com.sun.xml.internal.bind.v2.runtime.NameList
+                                public readonly knownUri2prefixIndexMap: int[]
                                 public attachmentMarshaller: javax.xml.bind.attachment.AttachmentMarshaller
                                 public getCachedBase64DataInstance(): com.sun.xml.internal.bind.v2.runtime.unmarshaller.Base64Data
                                 public reportError(arg0: javax.xml.bind.ValidationEvent): void
@@ -37,7 +37,7 @@ declare namespace com {
                                 public writeXsiNilTrue(): void
                                 public writeDom<E>(arg0: E, arg1: javax.xml.bind.annotation.DomHandler<E, any>, arg2: java.lang.Object, arg3: java.lang.String | string): void
                                 public getIdentityTransformer<E>(): javax.xml.transform.Transformer
-                                public setPrefixMapper<E>(arg0: com.sun.xml.internal.bind.marshaller.NamespacePrefixMapper): void
+                                public setPrefixMapper<E>(arg0: com.sun.xml.internal.bind.marshaller.NamespacePrefixMapper | com.sun.xml.internal.bind.marshaller.NamespacePrefixMapper$$Lambda): void
                                 public startDocument<E>(arg0: com.sun.xml.internal.bind.v2.runtime.output.XmlOutput, arg1: boolean, arg2: java.lang.String | string, arg3: java.lang.String | string): void
                                 public endDocument<E>(): void
                                 public close<E>(): void

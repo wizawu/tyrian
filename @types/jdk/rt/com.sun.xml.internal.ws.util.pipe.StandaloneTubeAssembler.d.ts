@@ -6,7 +6,7 @@ declare namespace com {
                     namespace util {
                         namespace pipe {
                             class StandaloneTubeAssembler implements com.sun.xml.internal.ws.api.pipe.TubelineAssembler {
-                                public static dump: boolean
+                                public static readonly dump: boolean
                                 public constructor()
                                 public createClient(arg0: com.sun.xml.internal.ws.api.pipe.ClientTubeAssemblerContext): com.sun.xml.internal.ws.api.pipe.Tube
                                 public createServer(arg0: com.sun.xml.internal.ws.api.pipe.ServerTubeAssemblerContext): com.sun.xml.internal.ws.api.pipe.Tube

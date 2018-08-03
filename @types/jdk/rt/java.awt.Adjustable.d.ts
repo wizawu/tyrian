@@ -17,8 +17,8 @@ declare namespace java {
             getVisibleAmount(): int
             setValue(arg0: int): void
             getValue(): int
-            addAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$Lambda): void
-            removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$Lambda): void
+            addAdjustmentListener(arg0: java.awt.event.AdjustmentListener): void
+            removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener): void
         }
     }
 }

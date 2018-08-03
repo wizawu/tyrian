@@ -6,10 +6,10 @@ declare namespace com {
                     namespace api {
                         namespace pipe {
                             class ThrowableContainerPropertySet extends com.oracle.webservices.internal.api.message.BasePropertySet {
-                                public static FIBER_COMPLETION_THROWABLE: string
-                                public static FAULT_MESSAGE: string
-                                public static RESPONSE_PACKET: string
-                                public static IS_FAULT_CREATED: string
+                                public static readonly FIBER_COMPLETION_THROWABLE: string
+                                public static readonly FAULT_MESSAGE: string
+                                public static readonly RESPONSE_PACKET: string
+                                public static readonly IS_FAULT_CREATED: string
                                 public constructor(arg0: java.lang.Throwable)
                                 public getThrowable(): java.lang.Throwable
                                 public setThrowable(arg0: java.lang.Throwable): void

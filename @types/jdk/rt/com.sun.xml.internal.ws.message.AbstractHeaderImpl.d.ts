@@ -5,7 +5,7 @@ declare namespace com {
                 namespace ws {
                     namespace message {
                         abstract class AbstractHeaderImpl implements com.sun.xml.internal.ws.api.message.Header {
-                            protected static EMPTY_ATTS: org.xml.sax.helpers.AttributesImpl
+                            protected static readonly EMPTY_ATTS: org.xml.sax.helpers.AttributesImpl
                             protected constructor()
                             public readAsJAXB<T>(arg0: com.sun.xml.internal.bind.api.Bridge<T>, arg1: com.sun.xml.internal.bind.api.BridgeContext): T
                             public readAsJAXB<T>(arg0: javax.xml.bind.Unmarshaller): T

@@ -6,13 +6,13 @@ declare namespace com {
                     namespace internal {
                         namespace xslt {
                             class EnvironmentCheck {
-                                public static ERROR: string
-                                public static WARNING: string
-                                public static ERROR_FOUND: string
-                                public static VERSION: string
-                                public static FOUNDCLASSES: string
-                                public static CLASS_PRESENT: string
-                                public static CLASS_NOTPRESENT: string
+                                public static readonly ERROR: string
+                                public static readonly WARNING: string
+                                public static readonly ERROR_FOUND: string
+                                public static readonly VERSION: string
+                                public static readonly FOUNDCLASSES: string
+                                public static readonly CLASS_PRESENT: string
+                                public static readonly CLASS_NOTPRESENT: string
                                 public jarNames: java.lang.String[]
                                 protected outWriter: java.io.PrintWriter
                                 public constructor()

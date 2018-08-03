@@ -5,8 +5,8 @@ declare namespace com {
                 namespace webservices {
                     namespace jaxws_databinding {
                         class SoapBindingParameterStyle extends java.lang.Enum<com.oracle.xmlns.internal.webservices.jaxws_databinding.SoapBindingParameterStyle> {
-                            public static BARE: com.oracle.xmlns.internal.webservices.jaxws_databinding.SoapBindingParameterStyle
-                            public static WRAPPED: com.oracle.xmlns.internal.webservices.jaxws_databinding.SoapBindingParameterStyle
+                            public static readonly BARE: com.oracle.xmlns.internal.webservices.jaxws_databinding.SoapBindingParameterStyle
+                            public static readonly WRAPPED: com.oracle.xmlns.internal.webservices.jaxws_databinding.SoapBindingParameterStyle
                             public static values(): com.oracle.xmlns.internal.webservices.jaxws_databinding.SoapBindingParameterStyle[]
                             public static valueOf(arg0: java.lang.String | string): com.oracle.xmlns.internal.webservices.jaxws_databinding.SoapBindingParameterStyle
                             public value(): string

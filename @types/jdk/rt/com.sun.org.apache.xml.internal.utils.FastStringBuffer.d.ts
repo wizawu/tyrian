@@ -6,9 +6,9 @@ declare namespace com {
                     namespace internal {
                         namespace utils {
                             class FastStringBuffer {
-                                public static SUPPRESS_LEADING_WS: int
-                                public static SUPPRESS_TRAILING_WS: int
-                                public static SUPPRESS_BOTH: int
+                                public static readonly SUPPRESS_LEADING_WS: int
+                                public static readonly SUPPRESS_TRAILING_WS: int
+                                public static readonly SUPPRESS_BOTH: int
                                 public constructor(arg0: int, arg1: int, arg2: int)
                                 public constructor(arg0: int, arg1: int)
                                 public constructor(arg0: int)

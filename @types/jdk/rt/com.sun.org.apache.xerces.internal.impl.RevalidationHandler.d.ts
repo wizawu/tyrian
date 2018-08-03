@@ -8,9 +8,6 @@ declare namespace com {
                             interface RevalidationHandler extends com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentFilter {
                                 characterData(arg0: java.lang.String | string, arg1: com.sun.org.apache.xerces.internal.xni.Augmentations): boolean
                             }
-                            interface RevalidationHandler$$Lambda extends com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentFilter {
-                                (arg0: java.lang.String | string, arg1: com.sun.org.apache.xerces.internal.xni.Augmentations): boolean
-                            }
                         }
                     }
                 }

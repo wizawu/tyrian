@@ -5,6 +5,8 @@ declare namespace jdk {
                 namespace arrays {
                     interface NumericElements extends jdk.nashorn.internal.runtime.arrays.AnyElements {
                     }
+                    interface NumericElements$$Lambda extends jdk.nashorn.internal.runtime.arrays.AnyElements {
+                    }
                 }
             }
         }

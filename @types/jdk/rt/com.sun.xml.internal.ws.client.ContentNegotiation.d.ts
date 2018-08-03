@@ -5,10 +5,10 @@ declare namespace com {
                 namespace ws {
                     namespace client {
                         class ContentNegotiation extends java.lang.Enum<com.sun.xml.internal.ws.client.ContentNegotiation> {
-                            public static none: com.sun.xml.internal.ws.client.ContentNegotiation
-                            public static pessimistic: com.sun.xml.internal.ws.client.ContentNegotiation
-                            public static optimistic: com.sun.xml.internal.ws.client.ContentNegotiation
-                            public static PROPERTY: string
+                            public static readonly none: com.sun.xml.internal.ws.client.ContentNegotiation
+                            public static readonly pessimistic: com.sun.xml.internal.ws.client.ContentNegotiation
+                            public static readonly optimistic: com.sun.xml.internal.ws.client.ContentNegotiation
+                            public static readonly PROPERTY: string
                             public static values(): com.sun.xml.internal.ws.client.ContentNegotiation[]
                             public static valueOf(arg0: java.lang.String | string): com.sun.xml.internal.ws.client.ContentNegotiation
                             public static obtainFromSystemProperty(): com.sun.xml.internal.ws.client.ContentNegotiation

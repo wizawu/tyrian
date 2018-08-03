@@ -6,8 +6,8 @@ declare namespace com {
                     protected constructor()
                     public static create(): com.sun.net.httpserver.HttpsServer
                     public static create(arg0: java.net.InetSocketAddress, arg1: int): com.sun.net.httpserver.HttpsServer
-                    public setHttpsConfigurator(arg0: com.sun.net.httpserver.HttpsConfigurator): void
-                    public getHttpsConfigurator(): com.sun.net.httpserver.HttpsConfigurator
+                    public abstract setHttpsConfigurator(arg0: com.sun.net.httpserver.HttpsConfigurator): void
+                    public abstract getHttpsConfigurator(): com.sun.net.httpserver.HttpsConfigurator
                     public static class: java.lang.Class<any>
                 }
             }

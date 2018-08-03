@@ -1,8 +1,8 @@
 declare namespace javax {
     namespace swing {
         class JEditorPane extends javax.swing.text.JTextComponent {
-            public static W3C_LENGTH_UNITS: string
-            public static HONOR_DISPLAY_PROPERTIES: string
+            public static readonly W3C_LENGTH_UNITS: string
+            public static readonly HONOR_DISPLAY_PROPERTIES: string
             public constructor()
             public constructor(arg0: java.net.URL)
             public constructor(arg0: java.lang.String | string)
@@ -12,7 +12,7 @@ declare namespace javax {
             public getHyperlinkListeners(): javax.swing.event.HyperlinkListener[]
             public fireHyperlinkUpdate(arg0: javax.swing.event.HyperlinkEvent): void
             public setPage(arg0: java.net.URL): void
-            public read(arg0: java.io.InputStream, arg1: java.lang.Object): void
+            public read(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.lang.Object): void
             protected getStream(arg0: java.net.URL): java.io.InputStream
             public scrollToReference(arg0: java.lang.String | string): void
             public getPage(): java.net.URL

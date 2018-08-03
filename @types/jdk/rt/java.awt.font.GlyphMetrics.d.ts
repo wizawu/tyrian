@@ -2,11 +2,11 @@ declare namespace java {
     namespace awt {
         namespace font {
             class GlyphMetrics {
-                public static STANDARD: byte
-                public static LIGATURE: byte
-                public static COMBINING: byte
-                public static COMPONENT: byte
-                public static WHITESPACE: byte
+                public static readonly STANDARD: byte
+                public static readonly LIGATURE: byte
+                public static readonly COMBINING: byte
+                public static readonly COMPONENT: byte
+                public static readonly WHITESPACE: byte
                 public constructor(arg0: float, arg1: java.awt.geom.Rectangle2D, arg2: byte)
                 public constructor(arg0: boolean, arg1: float, arg2: float, arg3: java.awt.geom.Rectangle2D, arg4: byte)
                 public getAdvance(): float

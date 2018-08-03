@@ -9,7 +9,7 @@ declare namespace com {
                                 protected m_nextWalker: com.sun.org.apache.xpath.internal.axes.AxesWalker
                                 protected m_axis: int
                                 protected m_traverser: com.sun.org.apache.xml.internal.dtm.DTMAxisTraverser
-                                public constructor(arg0: com.sun.org.apache.xpath.internal.axes.LocPathIterator, arg1: int)
+                                public constructor(arg0: com.sun.org.apache.xpath.internal.axes.LocPathIterator | com.sun.org.apache.xpath.internal.axes.LocPathIterator$$Lambda, arg1: int)
                                 public wi(): com.sun.org.apache.xpath.internal.axes.WalkingIterator
                                 public init(arg0: com.sun.org.apache.xpath.internal.compiler.Compiler, arg1: int, arg2: int): void
                                 public clone(): java.lang.Object

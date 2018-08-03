@@ -1,9 +1,9 @@
 declare namespace javax {
     namespace swing {
         class JList<E> extends javax.swing.JComponent implements javax.swing.Scrollable , javax.accessibility.Accessible {
-            public static VERTICAL: int
-            public static VERTICAL_WRAP: int
-            public static HORIZONTAL_WRAP: int
+            public static readonly VERTICAL: int
+            public static readonly VERTICAL_WRAP: int
+            public static readonly HORIZONTAL_WRAP: int
             public constructor(arg0: javax.swing.ListModel<E>)
             public constructor(arg0: E[])
             public constructor(arg0: java.util.Vector<E>)
@@ -48,8 +48,8 @@ declare namespace javax {
             protected createSelectionModel(): javax.swing.ListSelectionModel
             public getSelectionModel(): javax.swing.ListSelectionModel
             protected fireSelectionValueChanged(arg0: int, arg1: int, arg2: boolean): void
-            public addListSelectionListener(arg0: javax.swing.event.ListSelectionListener | javax.swing.event.ListSelectionListener$$Lambda): void
-            public removeListSelectionListener(arg0: javax.swing.event.ListSelectionListener | javax.swing.event.ListSelectionListener$$Lambda): void
+            public addListSelectionListener(arg0: javax.swing.event.ListSelectionListener): void
+            public removeListSelectionListener(arg0: javax.swing.event.ListSelectionListener): void
             public getListSelectionListeners(): javax.swing.event.ListSelectionListener[]
             public setSelectionModel(arg0: javax.swing.ListSelectionModel): void
             public setSelectionMode(arg0: int): void

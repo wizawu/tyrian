@@ -7,13 +7,13 @@ declare namespace com {
                         namespace xsltc {
                             namespace compiler {
                                 class Whitespace extends com.sun.org.apache.xalan.internal.xsltc.compiler.TopLevelElement {
-                                    public static USE_PREDICATE: int
-                                    public static STRIP_SPACE: int
-                                    public static PRESERVE_SPACE: int
-                                    public static RULE_NONE: int
-                                    public static RULE_ELEMENT: int
-                                    public static RULE_NAMESPACE: int
-                                    public static RULE_ALL: int
+                                    public static readonly USE_PREDICATE: int
+                                    public static readonly STRIP_SPACE: int
+                                    public static readonly PRESERVE_SPACE: int
+                                    public static readonly RULE_NONE: int
+                                    public static readonly RULE_ELEMENT: int
+                                    public static readonly RULE_NAMESPACE: int
+                                    public static readonly RULE_ALL: int
                                     public parseContents(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Parser): void
                                     public getRules(): java.util.Vector
                                     public static compileStripSpace(arg0: com.sun.org.apache.bcel.internal.generic.BranchHandle[], arg1: int, arg2: com.sun.org.apache.bcel.internal.generic.InstructionList): void

@@ -5,18 +5,18 @@ declare namespace com {
                 namespace fastinfoset {
                     namespace vocab {
                         abstract class Vocabulary {
-                            public static RESTRICTED_ALPHABET: int
-                            public static ENCODING_ALGORITHM: int
-                            public static PREFIX: int
-                            public static NAMESPACE_NAME: int
-                            public static LOCAL_NAME: int
-                            public static OTHER_NCNAME: int
-                            public static OTHER_URI: int
-                            public static ATTRIBUTE_VALUE: int
-                            public static OTHER_STRING: int
-                            public static CHARACTER_CONTENT_CHUNK: int
-                            public static ELEMENT_NAME: int
-                            public static ATTRIBUTE_NAME: int
+                            public static readonly RESTRICTED_ALPHABET: int
+                            public static readonly ENCODING_ALGORITHM: int
+                            public static readonly PREFIX: int
+                            public static readonly NAMESPACE_NAME: int
+                            public static readonly LOCAL_NAME: int
+                            public static readonly OTHER_NCNAME: int
+                            public static readonly OTHER_URI: int
+                            public static readonly ATTRIBUTE_VALUE: int
+                            public static readonly OTHER_STRING: int
+                            public static readonly CHARACTER_CONTENT_CHUNK: int
+                            public static readonly ELEMENT_NAME: int
+                            public static readonly ATTRIBUTE_NAME: int
                             protected _hasInitialReadOnlyVocabulary: boolean
                             protected _referencedVocabularyURI: string
                             public constructor()

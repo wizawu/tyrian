@@ -5,20 +5,20 @@ declare namespace com {
                 namespace ws {
                     namespace model {
                         class RuntimeModeler {
-                            public static PD_JAXWS_PACKAGE_PD: string
-                            public static JAXWS_PACKAGE_PD: string
-                            public static RESPONSE: string
-                            public static RETURN: string
-                            public static BEAN: string
-                            public static SERVICE: string
-                            public static PORT: string
-                            public static HOLDER_CLASS: java.lang.Class
-                            public static REMOTE_EXCEPTION_CLASS: java.lang.Class<java.rmi.RemoteException>
-                            public static RUNTIME_EXCEPTION_CLASS: java.lang.Class<java.lang.RuntimeException>
-                            public static EXCEPTION_CLASS: java.lang.Class<java.lang.Exception>
-                            public static DecapitalizeExceptionBeanProperties: string
-                            public static SuppressDocLitWrapperGeneration: string
-                            public static DocWrappeeNamespapceQualified: string
+                            public static readonly PD_JAXWS_PACKAGE_PD: string
+                            public static readonly JAXWS_PACKAGE_PD: string
+                            public static readonly RESPONSE: string
+                            public static readonly RETURN: string
+                            public static readonly BEAN: string
+                            public static readonly SERVICE: string
+                            public static readonly PORT: string
+                            public static readonly HOLDER_CLASS: java.lang.Class
+                            public static readonly REMOTE_EXCEPTION_CLASS: java.lang.Class<java.rmi.RemoteException>
+                            public static readonly RUNTIME_EXCEPTION_CLASS: java.lang.Class<java.lang.RuntimeException>
+                            public static readonly EXCEPTION_CLASS: java.lang.Class<java.lang.Exception>
+                            public static readonly DecapitalizeExceptionBeanProperties: string
+                            public static readonly SuppressDocLitWrapperGeneration: string
+                            public static readonly DocWrappeeNamespapceQualified: string
                             public constructor(arg0: com.sun.xml.internal.ws.api.databinding.DatabindingConfig)
                             public setClassLoader(arg0: java.lang.ClassLoader): void
                             public setPortName(arg0: javax.xml.namespace.QName): void

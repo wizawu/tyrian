@@ -2,11 +2,11 @@ declare namespace sun {
     namespace awt {
         namespace X11 {
             class XNETProtocol extends sun.awt.X11.XProtocol implements sun.awt.X11.XStateProtocol , sun.awt.X11.XLayerProtocol {
-                public XA_NET_WM_WINDOW_TYPE: sun.awt.X11.XAtom
-                public XA_NET_WM_WINDOW_TYPE_NORMAL: sun.awt.X11.XAtom
-                public XA_NET_WM_WINDOW_TYPE_DIALOG: sun.awt.X11.XAtom
-                public XA_NET_WM_WINDOW_TYPE_UTILITY: sun.awt.X11.XAtom
-                public XA_NET_WM_WINDOW_TYPE_POPUP_MENU: sun.awt.X11.XAtom
+                public readonly XA_NET_WM_WINDOW_TYPE: sun.awt.X11.XAtom
+                public readonly XA_NET_WM_WINDOW_TYPE_NORMAL: sun.awt.X11.XAtom
+                public readonly XA_NET_WM_WINDOW_TYPE_DIALOG: sun.awt.X11.XAtom
+                public readonly XA_NET_WM_WINDOW_TYPE_UTILITY: sun.awt.X11.XAtom
+                public readonly XA_NET_WM_WINDOW_TYPE_POPUP_MENU: sun.awt.X11.XAtom
                 public supportsState(arg0: int): boolean
                 public setState(arg0: sun.awt.X11.XWindowPeer, arg1: int): void
                 public getState(arg0: sun.awt.X11.XWindowPeer): int

@@ -3,7 +3,7 @@ declare namespace com {
         namespace oti {
             namespace shared {
                 class SharedClassURLHelperImpl extends com.ibm.oti.shared.SharedClassAbstractHelper implements com.ibm.oti.shared.SharedClassURLHelper {
-                    public static MINIMIZE_ENABLED: boolean
+                    public static readonly MINIMIZE_ENABLED: boolean
                     public setMinimizeUpdateChecks(): boolean
                     public findSharedClass(arg0: java.net.URL, arg1: java.lang.String | string): byte[]
                     public findSharedClass(arg0: java.lang.String | string, arg1: java.net.URL, arg2: java.lang.String | string): byte[]

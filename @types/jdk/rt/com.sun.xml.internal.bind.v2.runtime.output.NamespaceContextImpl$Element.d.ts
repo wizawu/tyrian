@@ -7,7 +7,7 @@ declare namespace com {
                         namespace runtime {
                             namespace output {
                                 class NamespaceContextImpl$Element {
-                                    public context: com.sun.xml.internal.bind.v2.runtime.output.NamespaceContextImpl
+                                    public readonly context: com.sun.xml.internal.bind.v2.runtime.output.NamespaceContextImpl
                                     public isRootElement(): boolean
                                     public push(): com.sun.xml.internal.bind.v2.runtime.output.NamespaceContextImpl$Element
                                     public pop(): com.sun.xml.internal.bind.v2.runtime.output.NamespaceContextImpl$Element

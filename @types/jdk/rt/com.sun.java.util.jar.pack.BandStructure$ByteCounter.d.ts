@@ -5,7 +5,7 @@ declare namespace com {
                 namespace jar {
                     namespace pack {
                         class BandStructure$ByteCounter extends java.io.FilterOutputStream {
-                            public constructor(arg0: java.io.OutputStream)
+                            public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda)
                             public getCount(): long
                             public setCount(arg0: long): void
                             public write(arg0: int): void

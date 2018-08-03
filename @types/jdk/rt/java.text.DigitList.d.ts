@@ -1,7 +1,7 @@
 declare namespace java {
     namespace text {
         class DigitList implements java.lang.Cloneable {
-            public static MAX_COUNT: int
+            public static readonly MAX_COUNT: int
             public decimalAt: int
             public count: int
             public digits: char[]

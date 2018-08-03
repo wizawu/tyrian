@@ -8,8 +8,11 @@ declare namespace com {
                             namespace parser {
                                 abstract class MetadataResolverFactory {
                                     public constructor()
-                                    public metadataResolver(arg0: org.xml.sax.EntityResolver | org.xml.sax.EntityResolver$$Lambda): com.sun.xml.internal.ws.api.wsdl.parser.MetaDataResolver
+                                    public abstract metadataResolver(arg0: org.xml.sax.EntityResolver | org.xml.sax.EntityResolver$$Lambda): com.sun.xml.internal.ws.api.wsdl.parser.MetaDataResolver
                                     public static class: java.lang.Class<any>
+                                }
+                                interface MetadataResolverFactory$$Lambda {
+                                    (arg0: org.xml.sax.EntityResolver | org.xml.sax.EntityResolver$$Lambda): com.sun.xml.internal.ws.api.wsdl.parser.MetaDataResolver
                                 }
                             }
                         }

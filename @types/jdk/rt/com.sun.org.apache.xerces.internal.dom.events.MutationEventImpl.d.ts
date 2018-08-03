@@ -8,13 +8,13 @@ declare namespace com {
                             namespace events {
                                 class MutationEventImpl extends com.sun.org.apache.xerces.internal.dom.events.EventImpl implements org.w3c.dom.events.MutationEvent {
                                     public attrChange: short
-                                    public static DOM_SUBTREE_MODIFIED: string
-                                    public static DOM_NODE_INSERTED: string
-                                    public static DOM_NODE_REMOVED: string
-                                    public static DOM_NODE_REMOVED_FROM_DOCUMENT: string
-                                    public static DOM_NODE_INSERTED_INTO_DOCUMENT: string
-                                    public static DOM_ATTR_MODIFIED: string
-                                    public static DOM_CHARACTER_DATA_MODIFIED: string
+                                    public static readonly DOM_SUBTREE_MODIFIED: string
+                                    public static readonly DOM_NODE_INSERTED: string
+                                    public static readonly DOM_NODE_REMOVED: string
+                                    public static readonly DOM_NODE_REMOVED_FROM_DOCUMENT: string
+                                    public static readonly DOM_NODE_INSERTED_INTO_DOCUMENT: string
+                                    public static readonly DOM_ATTR_MODIFIED: string
+                                    public static readonly DOM_CHARACTER_DATA_MODIFIED: string
                                     public constructor()
                                     public getAttrName(): string
                                     public getAttrChange(): short

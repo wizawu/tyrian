@@ -2,8 +2,8 @@ declare namespace sun {
     namespace security {
         namespace util {
             class HostnameChecker {
-                public static TYPE_TLS: byte
-                public static TYPE_LDAP: byte
+                public static readonly TYPE_TLS: byte
+                public static readonly TYPE_LDAP: byte
                 public static getInstance(arg0: byte): sun.security.util.HostnameChecker
                 public match(arg0: java.lang.String | string, arg1: java.security.cert.X509Certificate): void
                 public static match(arg0: java.lang.String | string, arg1: java.security.Principal): boolean

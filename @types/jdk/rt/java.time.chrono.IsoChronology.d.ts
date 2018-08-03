@@ -2,7 +2,7 @@ declare namespace java {
     namespace time {
         namespace chrono {
             class IsoChronology extends java.time.chrono.AbstractChronology implements java.io.Serializable {
-                public static INSTANCE: java.time.chrono.IsoChronology
+                public static readonly INSTANCE: java.time.chrono.IsoChronology
                 public getId(): string
                 public getCalendarType(): string
                 public date(arg0: java.time.chrono.Era, arg1: int, arg2: int, arg3: int): java.time.LocalDate

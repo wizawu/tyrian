@@ -26,12 +26,12 @@ declare namespace javax {
             public static getImageWriters(arg0: javax.imageio.ImageTypeSpecifier, arg1: java.lang.String | string): java.util.Iterator<javax.imageio.ImageWriter>
             public static getImageTranscoders(arg0: javax.imageio.ImageReader, arg1: javax.imageio.ImageWriter): java.util.Iterator<javax.imageio.ImageTranscoder>
             public static read(arg0: java.io.File): java.awt.image.BufferedImage
-            public static read(arg0: java.io.InputStream): java.awt.image.BufferedImage
+            public static read(arg0: java.io.InputStream | java.io.InputStream$$Lambda): java.awt.image.BufferedImage
             public static read(arg0: java.net.URL): java.awt.image.BufferedImage
             public static read(arg0: javax.imageio.stream.ImageInputStream): java.awt.image.BufferedImage
             public static write(arg0: java.awt.image.RenderedImage, arg1: java.lang.String | string, arg2: javax.imageio.stream.ImageOutputStream): boolean
             public static write(arg0: java.awt.image.RenderedImage, arg1: java.lang.String | string, arg2: java.io.File): boolean
-            public static write(arg0: java.awt.image.RenderedImage, arg1: java.lang.String | string, arg2: java.io.OutputStream): boolean
+            public static write(arg0: java.awt.image.RenderedImage, arg1: java.lang.String | string, arg2: java.io.OutputStream | java.io.OutputStream$$Lambda): boolean
             public static class: java.lang.Class<any>
         }
     }

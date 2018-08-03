@@ -11,7 +11,7 @@ declare namespace com {
                                     protected _trueList: com.sun.org.apache.xalan.internal.xsltc.compiler.FlowList
                                     protected _falseList: com.sun.org.apache.xalan.internal.xsltc.compiler.FlowList
                                     public getType(): com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type
-                                    public toString(): string
+                                    public abstract toString(): string
                                     public hasPositionCall(): boolean
                                     public hasLastCall(): boolean
                                     public evaluateAtCompileTime(): java.lang.Object
@@ -28,6 +28,9 @@ declare namespace com {
                                     public backPatchTrueList(arg0: com.sun.org.apache.bcel.internal.generic.InstructionHandle): void
                                     public lookupPrimop(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable, arg1: java.lang.String | string, arg2: com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodType): com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodType
                                     public static class: java.lang.Class<any>
+                                }
+                                interface Expression$$Lambda extends com.sun.org.apache.xalan.internal.xsltc.compiler.SyntaxTreeNode {
+                                    (): string
                                 }
                             }
                         }

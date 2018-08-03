@@ -4,7 +4,7 @@ declare namespace com {
             namespace attach {
                 namespace target {
                     class TargetDirectory {
-                        public static SYNC_FILE_PERMISSIONS: int
+                        public static readonly SYNC_FILE_PERMISSIONS: int
                         public constructor()
                         public static deleteTargetDirectory(arg0: java.lang.String | string): void
                         public static createSyncFileObject(arg0: java.lang.String | string): java.io.File

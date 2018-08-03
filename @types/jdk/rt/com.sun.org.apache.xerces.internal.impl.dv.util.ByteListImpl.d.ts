@@ -8,7 +8,7 @@ declare namespace com {
                             namespace dv {
                                 namespace util {
                                     class ByteListImpl extends java.util.AbstractList implements com.sun.org.apache.xerces.internal.xs.datatypes.ByteList {
-                                        protected data: byte[]
+                                        protected readonly data: byte[]
                                         protected canonical: string
                                         public constructor(arg0: byte[])
                                         public getLength(): int

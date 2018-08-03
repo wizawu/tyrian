@@ -4,7 +4,7 @@ declare namespace java {
             protected modCount: int
             protected constructor()
             public add(arg0: E): boolean
-            public get(arg0: int): E
+            public abstract get(arg0: int): E
             public set(arg0: int, arg1: E): E
             public add(arg0: int, arg1: E): void
             public remove(arg0: int): E
@@ -20,6 +20,9 @@ declare namespace java {
             public hashCode(): int
             protected removeRange(arg0: int, arg1: int): void
             public static class: java.lang.Class<any>
+        }
+        interface AbstractList$$Lambda<E> extends java.util.AbstractCollection<E> implements java.util.List<E> {
+            (arg0: int): E
         }
     }
 }

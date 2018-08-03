@@ -10,8 +10,8 @@ declare namespace com {
                                 protected _namespaceAttributesPtr: int
                                 public constructor()
                                 public constructor(arg0: com.sun.xml.internal.stream.buffer.MutableXMLStreamBuffer)
-                                public create(arg0: org.xml.sax.XMLReader, arg1: java.io.InputStream): com.sun.xml.internal.stream.buffer.MutableXMLStreamBuffer
-                                public create(arg0: org.xml.sax.XMLReader, arg1: java.io.InputStream, arg2: java.lang.String | string): com.sun.xml.internal.stream.buffer.MutableXMLStreamBuffer
+                                public create(arg0: org.xml.sax.XMLReader, arg1: java.io.InputStream | java.io.InputStream$$Lambda): com.sun.xml.internal.stream.buffer.MutableXMLStreamBuffer
+                                public create(arg0: org.xml.sax.XMLReader, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: java.lang.String | string): com.sun.xml.internal.stream.buffer.MutableXMLStreamBuffer
                                 public reset(): void
                                 public startDocument(): void
                                 public endDocument(): void

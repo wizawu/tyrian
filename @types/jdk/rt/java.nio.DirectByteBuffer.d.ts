@@ -1,8 +1,8 @@
 declare namespace java {
     namespace nio {
         class DirectByteBuffer extends java.nio.MappedByteBuffer implements sun.nio.ch.DirectBuffer {
-            protected static unsafe: sun.misc.Unsafe
-            protected static unaligned: boolean
+            protected static readonly unsafe: sun.misc.Unsafe
+            protected static readonly unaligned: boolean
             public attachment(): java.lang.Object
             public cleaner(): sun.misc.Cleaner
             protected constructor(arg0: int, arg1: long, arg2: java.io.FileDescriptor, arg3: java.lang.Runnable | java.lang.Runnable$$Lambda)

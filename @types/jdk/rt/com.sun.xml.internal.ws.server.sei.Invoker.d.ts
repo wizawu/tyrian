@@ -7,8 +7,11 @@ declare namespace com {
                         namespace sei {
                             abstract class Invoker {
                                 public constructor()
-                                public invoke(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: java.lang.reflect.Method, ...arg2: java.lang.Object[]): java.lang.Object
+                                public abstract invoke(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: java.lang.reflect.Method, ...arg2: java.lang.Object[]): java.lang.Object
                                 public static class: java.lang.Class<any>
+                            }
+                            interface Invoker$$Lambda {
+                                (arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: java.lang.reflect.Method, ...arg2: java.lang.Object[]): java.lang.Object
                             }
                         }
                     }

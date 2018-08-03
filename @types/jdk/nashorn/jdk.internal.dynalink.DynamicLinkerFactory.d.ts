@@ -2,7 +2,7 @@ declare namespace jdk {
     namespace internal {
         namespace dynalink {
             class DynamicLinkerFactory {
-                public static DEFAULT_UNSTABLE_RELINK_THRESHOLD: int
+                public static readonly DEFAULT_UNSTABLE_RELINK_THRESHOLD: int
                 public constructor()
                 public setClassLoader(arg0: java.lang.ClassLoader): void
                 public setPrioritizedLinkers(arg0: java.util.List<jdk.internal.dynalink.linker.GuardingDynamicLinker>): void

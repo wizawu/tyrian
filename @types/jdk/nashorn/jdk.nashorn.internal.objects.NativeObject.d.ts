@@ -3,8 +3,8 @@ declare namespace jdk {
         namespace internal {
             namespace objects {
                 class NativeObject {
-                    public static GET__PROTO__: java.lang.invoke.MethodHandle
-                    public static SET__PROTO__: java.lang.invoke.MethodHandle
+                    public static readonly GET__PROTO__: java.lang.invoke.MethodHandle
+                    public static readonly SET__PROTO__: java.lang.invoke.MethodHandle
                     public static setIndexedPropertiesToExternalArrayData(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): jdk.nashorn.internal.runtime.ScriptObject
                     public static getPrototypeOf(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
                     public static setPrototypeOf(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): java.lang.Object

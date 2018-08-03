@@ -4,7 +4,7 @@ declare namespace com {
             namespace attach {
                 namespace target {
                     class AttachHandler extends java.lang.Thread {
-                        public static allowAttachSelf: string
+                        public static readonly allowAttachSelf: string
                         public run(): void
                         public connectToAttacher(): com.ibm.tools.attach.target.Attachment
                         protected terminate(arg0: boolean): boolean

@@ -5,9 +5,9 @@ declare namespace java {
                 protected inf: java.util.zip.Inflater
                 protected buf: byte[]
                 protected len: int
-                public constructor(arg0: java.io.InputStream, arg1: java.util.zip.Inflater, arg2: int)
-                public constructor(arg0: java.io.InputStream, arg1: java.util.zip.Inflater)
-                public constructor(arg0: java.io.InputStream)
+                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.util.zip.Inflater, arg2: int)
+                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.util.zip.Inflater)
+                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                 public read(): int
                 public read(arg0: byte[], arg1: int, arg2: int): int
                 public available(): int

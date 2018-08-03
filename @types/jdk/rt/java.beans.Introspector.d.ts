@@ -1,9 +1,9 @@
 declare namespace java {
     namespace beans {
         class Introspector {
-            public static USE_ALL_BEANINFO: int
-            public static IGNORE_IMMEDIATE_BEANINFO: int
-            public static IGNORE_ALL_BEANINFO: int
+            public static readonly USE_ALL_BEANINFO: int
+            public static readonly IGNORE_IMMEDIATE_BEANINFO: int
+            public static readonly IGNORE_ALL_BEANINFO: int
             public static getBeanInfo(arg0: java.lang.Class<any>): java.beans.BeanInfo
             public static getBeanInfo(arg0: java.lang.Class<any>, arg1: int): java.beans.BeanInfo
             public static getBeanInfo(arg0: java.lang.Class<any>, arg1: java.lang.Class<any>): java.beans.BeanInfo

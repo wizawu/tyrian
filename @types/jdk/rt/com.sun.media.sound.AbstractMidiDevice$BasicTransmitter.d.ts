@@ -3,7 +3,7 @@ declare namespace com {
         namespace media {
             namespace sound {
                 class AbstractMidiDevice$BasicTransmitter implements javax.sound.midi.MidiDeviceTransmitter {
-                    protected constructor(arg0: com.sun.media.sound.AbstractMidiDevice)
+                    protected constructor(arg0: com.sun.media.sound.AbstractMidiDevice | com.sun.media.sound.AbstractMidiDevice$$Lambda)
                     public setReceiver(arg0: javax.sound.midi.Receiver): void
                     public getReceiver(): javax.sound.midi.Receiver
                     public close(): void

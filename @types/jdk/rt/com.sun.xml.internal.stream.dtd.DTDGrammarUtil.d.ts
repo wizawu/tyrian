@@ -5,8 +5,8 @@ declare namespace com {
                 namespace stream {
                     namespace dtd {
                         class DTDGrammarUtil {
-                            protected static SYMBOL_TABLE: string
-                            protected static NAMESPACES: string
+                            protected static readonly SYMBOL_TABLE: string
+                            protected static readonly NAMESPACES: string
                             protected fDTDGrammar: com.sun.xml.internal.stream.dtd.nonvalidating.DTDGrammar
                             protected fNamespaces: boolean
                             protected fSymbolTable: com.sun.org.apache.xerces.internal.util.SymbolTable

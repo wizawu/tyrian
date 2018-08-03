@@ -7,7 +7,7 @@ declare namespace com {
                         namespace generic {
                             class InstructionList implements java.io.Serializable {
                                 public constructor()
-                                public constructor(arg0: com.sun.org.apache.bcel.internal.generic.Instruction)
+                                public constructor(arg0: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda)
                                 public constructor(arg0: com.sun.org.apache.bcel.internal.generic.BranchInstruction)
                                 public constructor(arg0: com.sun.org.apache.bcel.internal.generic.CompoundInstruction | com.sun.org.apache.bcel.internal.generic.CompoundInstruction$$Lambda)
                                 public isEmpty(): boolean
@@ -15,35 +15,35 @@ declare namespace com {
                                 public findHandle(arg0: int): com.sun.org.apache.bcel.internal.generic.InstructionHandle
                                 public constructor(arg0: byte[])
                                 public append(arg0: com.sun.org.apache.bcel.internal.generic.InstructionHandle, arg1: com.sun.org.apache.bcel.internal.generic.InstructionList): com.sun.org.apache.bcel.internal.generic.InstructionHandle
-                                public append(arg0: com.sun.org.apache.bcel.internal.generic.Instruction, arg1: com.sun.org.apache.bcel.internal.generic.InstructionList): com.sun.org.apache.bcel.internal.generic.InstructionHandle
+                                public append(arg0: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda, arg1: com.sun.org.apache.bcel.internal.generic.InstructionList): com.sun.org.apache.bcel.internal.generic.InstructionHandle
                                 public append(arg0: com.sun.org.apache.bcel.internal.generic.InstructionList): com.sun.org.apache.bcel.internal.generic.InstructionHandle
-                                public append(arg0: com.sun.org.apache.bcel.internal.generic.Instruction): com.sun.org.apache.bcel.internal.generic.InstructionHandle
+                                public append(arg0: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda): com.sun.org.apache.bcel.internal.generic.InstructionHandle
                                 public append(arg0: com.sun.org.apache.bcel.internal.generic.BranchInstruction): com.sun.org.apache.bcel.internal.generic.BranchHandle
-                                public append(arg0: com.sun.org.apache.bcel.internal.generic.Instruction, arg1: com.sun.org.apache.bcel.internal.generic.Instruction): com.sun.org.apache.bcel.internal.generic.InstructionHandle
-                                public append(arg0: com.sun.org.apache.bcel.internal.generic.Instruction, arg1: com.sun.org.apache.bcel.internal.generic.CompoundInstruction | com.sun.org.apache.bcel.internal.generic.CompoundInstruction$$Lambda): com.sun.org.apache.bcel.internal.generic.InstructionHandle
+                                public append(arg0: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda, arg1: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda): com.sun.org.apache.bcel.internal.generic.InstructionHandle
+                                public append(arg0: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda, arg1: com.sun.org.apache.bcel.internal.generic.CompoundInstruction | com.sun.org.apache.bcel.internal.generic.CompoundInstruction$$Lambda): com.sun.org.apache.bcel.internal.generic.InstructionHandle
                                 public append(arg0: com.sun.org.apache.bcel.internal.generic.CompoundInstruction | com.sun.org.apache.bcel.internal.generic.CompoundInstruction$$Lambda): com.sun.org.apache.bcel.internal.generic.InstructionHandle
                                 public append(arg0: com.sun.org.apache.bcel.internal.generic.InstructionHandle, arg1: com.sun.org.apache.bcel.internal.generic.CompoundInstruction | com.sun.org.apache.bcel.internal.generic.CompoundInstruction$$Lambda): com.sun.org.apache.bcel.internal.generic.InstructionHandle
-                                public append(arg0: com.sun.org.apache.bcel.internal.generic.InstructionHandle, arg1: com.sun.org.apache.bcel.internal.generic.Instruction): com.sun.org.apache.bcel.internal.generic.InstructionHandle
+                                public append(arg0: com.sun.org.apache.bcel.internal.generic.InstructionHandle, arg1: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda): com.sun.org.apache.bcel.internal.generic.InstructionHandle
                                 public append(arg0: com.sun.org.apache.bcel.internal.generic.InstructionHandle, arg1: com.sun.org.apache.bcel.internal.generic.BranchInstruction): com.sun.org.apache.bcel.internal.generic.BranchHandle
                                 public insert(arg0: com.sun.org.apache.bcel.internal.generic.InstructionHandle, arg1: com.sun.org.apache.bcel.internal.generic.InstructionList): com.sun.org.apache.bcel.internal.generic.InstructionHandle
                                 public insert(arg0: com.sun.org.apache.bcel.internal.generic.InstructionList): com.sun.org.apache.bcel.internal.generic.InstructionHandle
-                                public insert(arg0: com.sun.org.apache.bcel.internal.generic.Instruction, arg1: com.sun.org.apache.bcel.internal.generic.InstructionList): com.sun.org.apache.bcel.internal.generic.InstructionHandle
-                                public insert(arg0: com.sun.org.apache.bcel.internal.generic.Instruction): com.sun.org.apache.bcel.internal.generic.InstructionHandle
+                                public insert(arg0: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda, arg1: com.sun.org.apache.bcel.internal.generic.InstructionList): com.sun.org.apache.bcel.internal.generic.InstructionHandle
+                                public insert(arg0: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda): com.sun.org.apache.bcel.internal.generic.InstructionHandle
                                 public insert(arg0: com.sun.org.apache.bcel.internal.generic.BranchInstruction): com.sun.org.apache.bcel.internal.generic.BranchHandle
-                                public insert(arg0: com.sun.org.apache.bcel.internal.generic.Instruction, arg1: com.sun.org.apache.bcel.internal.generic.Instruction): com.sun.org.apache.bcel.internal.generic.InstructionHandle
-                                public insert(arg0: com.sun.org.apache.bcel.internal.generic.Instruction, arg1: com.sun.org.apache.bcel.internal.generic.CompoundInstruction | com.sun.org.apache.bcel.internal.generic.CompoundInstruction$$Lambda): com.sun.org.apache.bcel.internal.generic.InstructionHandle
+                                public insert(arg0: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda, arg1: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda): com.sun.org.apache.bcel.internal.generic.InstructionHandle
+                                public insert(arg0: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda, arg1: com.sun.org.apache.bcel.internal.generic.CompoundInstruction | com.sun.org.apache.bcel.internal.generic.CompoundInstruction$$Lambda): com.sun.org.apache.bcel.internal.generic.InstructionHandle
                                 public insert(arg0: com.sun.org.apache.bcel.internal.generic.CompoundInstruction | com.sun.org.apache.bcel.internal.generic.CompoundInstruction$$Lambda): com.sun.org.apache.bcel.internal.generic.InstructionHandle
-                                public insert(arg0: com.sun.org.apache.bcel.internal.generic.InstructionHandle, arg1: com.sun.org.apache.bcel.internal.generic.Instruction): com.sun.org.apache.bcel.internal.generic.InstructionHandle
+                                public insert(arg0: com.sun.org.apache.bcel.internal.generic.InstructionHandle, arg1: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda): com.sun.org.apache.bcel.internal.generic.InstructionHandle
                                 public insert(arg0: com.sun.org.apache.bcel.internal.generic.InstructionHandle, arg1: com.sun.org.apache.bcel.internal.generic.CompoundInstruction | com.sun.org.apache.bcel.internal.generic.CompoundInstruction$$Lambda): com.sun.org.apache.bcel.internal.generic.InstructionHandle
                                 public insert(arg0: com.sun.org.apache.bcel.internal.generic.InstructionHandle, arg1: com.sun.org.apache.bcel.internal.generic.BranchInstruction): com.sun.org.apache.bcel.internal.generic.BranchHandle
                                 public move(arg0: com.sun.org.apache.bcel.internal.generic.InstructionHandle, arg1: com.sun.org.apache.bcel.internal.generic.InstructionHandle, arg2: com.sun.org.apache.bcel.internal.generic.InstructionHandle): void
                                 public move(arg0: com.sun.org.apache.bcel.internal.generic.InstructionHandle, arg1: com.sun.org.apache.bcel.internal.generic.InstructionHandle): void
                                 public delete(arg0: com.sun.org.apache.bcel.internal.generic.InstructionHandle): void
-                                public delete(arg0: com.sun.org.apache.bcel.internal.generic.Instruction): void
+                                public delete(arg0: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda): void
                                 public delete(arg0: com.sun.org.apache.bcel.internal.generic.InstructionHandle, arg1: com.sun.org.apache.bcel.internal.generic.InstructionHandle): void
-                                public delete(arg0: com.sun.org.apache.bcel.internal.generic.Instruction, arg1: com.sun.org.apache.bcel.internal.generic.Instruction): void
+                                public delete(arg0: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda, arg1: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda): void
                                 public contains(arg0: com.sun.org.apache.bcel.internal.generic.InstructionHandle): boolean
-                                public contains(arg0: com.sun.org.apache.bcel.internal.generic.Instruction): boolean
+                                public contains(arg0: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda): boolean
                                 public setPositions(): void
                                 public setPositions(arg0: boolean): void
                                 public getByteCode(): byte[]

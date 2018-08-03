@@ -4,9 +4,9 @@ declare namespace javax {
             abstract class HttpsURLConnection extends java.net.HttpURLConnection {
                 protected hostnameVerifier: javax.net.ssl.HostnameVerifier
                 protected constructor(arg0: java.net.URL)
-                public getCipherSuite(): string
-                public getLocalCertificates(): java.security.cert.Certificate[]
-                public getServerCertificates(): java.security.cert.Certificate[]
+                public abstract getCipherSuite(): string
+                public abstract getLocalCertificates(): java.security.cert.Certificate[]
+                public abstract getServerCertificates(): java.security.cert.Certificate[]
                 public getPeerPrincipal(): java.security.Principal
                 public getLocalPrincipal(): java.security.Principal
                 public static setDefaultHostnameVerifier(arg0: javax.net.ssl.HostnameVerifier | javax.net.ssl.HostnameVerifier$$Lambda): void

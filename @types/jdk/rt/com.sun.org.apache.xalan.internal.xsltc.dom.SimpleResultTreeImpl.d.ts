@@ -7,9 +7,9 @@ declare namespace com {
                         namespace xsltc {
                             namespace dom {
                                 class SimpleResultTreeImpl extends com.sun.org.apache.xml.internal.serializer.EmptySerializer implements com.sun.org.apache.xalan.internal.xsltc.DOM , com.sun.org.apache.xml.internal.dtm.DTM {
-                                    public static RTF_ROOT: int
-                                    public static RTF_TEXT: int
-                                    public static NUMBER_OF_NODES: int
+                                    public static readonly RTF_ROOT: int
+                                    public static readonly RTF_TEXT: int
+                                    public static readonly NUMBER_OF_NODES: int
                                     protected _textArray: java.lang.String[]
                                     protected _dtmManager: com.sun.org.apache.xalan.internal.xsltc.dom.XSLTCDTMManager
                                     protected _size: int

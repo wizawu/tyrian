@@ -5,7 +5,7 @@ declare namespace java {
                 protected makeChild(arg0: java.util.Spliterator<P_IN>): java.util.stream.FindOps$FindTask<P_IN, P_OUT, O>
                 protected getEmptyResult(): O
                 protected doLeaf(): O
-                public onCompletion(arg0: java.util.concurrent.CountedCompleter<any>): void
+                public onCompletion(arg0: java.util.concurrent.CountedCompleter<any> | java.util.concurrent.CountedCompleter$$Lambda<any>): void
                 protected makeChild(arg0: java.util.Spliterator): java.util.stream.AbstractTask
                 public static class: java.lang.Class<any>
             }

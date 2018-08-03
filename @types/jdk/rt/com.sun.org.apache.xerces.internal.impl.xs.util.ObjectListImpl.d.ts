@@ -8,7 +8,7 @@ declare namespace com {
                             namespace xs {
                                 namespace util {
                                     class ObjectListImpl extends java.util.AbstractList implements com.sun.org.apache.xerces.internal.xs.datatypes.ObjectList {
-                                        public static EMPTY_LIST: com.sun.org.apache.xerces.internal.impl.xs.util.ObjectListImpl
+                                        public static readonly EMPTY_LIST: com.sun.org.apache.xerces.internal.impl.xs.util.ObjectListImpl
                                         public constructor(arg0: java.lang.Object[], arg1: int)
                                         public getLength(): int
                                         public contains(arg0: java.lang.Object): boolean

@@ -6,8 +6,8 @@ declare namespace jdk {
                     namespace tree {
                         namespace analysis {
                             class SourceValue implements jdk.internal.org.objectweb.asm.tree.analysis.Value {
-                                public size: int
-                                public insns: java.util.Set<jdk.internal.org.objectweb.asm.tree.AbstractInsnNode>
+                                public readonly size: int
+                                public readonly insns: java.util.Set<jdk.internal.org.objectweb.asm.tree.AbstractInsnNode>
                                 public constructor(arg0: int)
                                 public constructor(arg0: int, arg1: jdk.internal.org.objectweb.asm.tree.AbstractInsnNode)
                                 public constructor(arg0: int, arg1: java.util.Set<jdk.internal.org.objectweb.asm.tree.AbstractInsnNode>)

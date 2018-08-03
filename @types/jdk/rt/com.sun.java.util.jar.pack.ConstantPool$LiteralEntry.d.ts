@@ -6,8 +6,11 @@ declare namespace com {
                     namespace pack {
                         abstract class ConstantPool$LiteralEntry extends com.sun.java.util.jar.pack.ConstantPool$Entry {
                             protected constructor(arg0: byte)
-                            public literalValue(): java.lang.Comparable<any>
+                            public abstract literalValue(): java.lang.Comparable<any>
                             public static class: java.lang.Class<any>
+                        }
+                        interface ConstantPool$LiteralEntry$$Lambda extends com.sun.java.util.jar.pack.ConstantPool$Entry {
+                            (): java.lang.Comparable<any>
                         }
                     }
                 }

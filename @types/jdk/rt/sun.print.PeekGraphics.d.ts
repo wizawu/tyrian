@@ -63,10 +63,10 @@ declare namespace sun {
             public fill(arg0: java.awt.Shape): void
             public hit(arg0: java.awt.Rectangle, arg1: java.awt.Shape, arg2: boolean): boolean
             public setComposite(arg0: java.awt.Composite | java.awt.Composite$$Lambda): void
-            public setPaint(arg0: java.awt.Paint | java.awt.Paint$$Lambda): void
+            public setPaint(arg0: java.awt.Paint): void
             public setStroke(arg0: java.awt.Stroke | java.awt.Stroke$$Lambda): void
-            public setRenderingHint(arg0: java.awt.RenderingHints$Key, arg1: java.lang.Object): void
-            public getRenderingHint(arg0: java.awt.RenderingHints$Key): java.lang.Object
+            public setRenderingHint(arg0: java.awt.RenderingHints$Key | java.awt.RenderingHints$Key$$Lambda, arg1: java.lang.Object): void
+            public getRenderingHint(arg0: java.awt.RenderingHints$Key | java.awt.RenderingHints$Key$$Lambda): java.lang.Object
             public setRenderingHints(arg0: java.util.Map<any, any>): void
             public addRenderingHints(arg0: java.util.Map<any, any>): void
             public getRenderingHints(): java.awt.RenderingHints

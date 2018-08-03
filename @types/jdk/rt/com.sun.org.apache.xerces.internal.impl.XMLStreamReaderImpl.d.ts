@@ -6,10 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace impl {
                             class XMLStreamReaderImpl implements javax.xml.stream.XMLStreamReader {
-                                protected static ENTITY_MANAGER: string
-                                protected static ERROR_REPORTER: string
-                                protected static SYMBOL_TABLE: string
-                                protected static READER_IN_DEFINED_STATE: string
+                                protected static readonly ENTITY_MANAGER: string
+                                protected static readonly ERROR_REPORTER: string
+                                protected static readonly SYMBOL_TABLE: string
+                                protected static readonly READER_IN_DEFINED_STATE: string
                                 protected fScanner: com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl
                                 protected fNamespaceContextWrapper: com.sun.org.apache.xerces.internal.util.NamespaceContextWrapper
                                 protected fEntityManager: com.sun.org.apache.xerces.internal.impl.XMLEntityManager
@@ -17,10 +17,10 @@ declare namespace com {
                                 protected fEntityScanner: com.sun.org.apache.xerces.internal.impl.XMLEntityScanner
                                 protected fInputSource: com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource
                                 protected fPropertyManager: com.sun.org.apache.xerces.internal.impl.PropertyManager
-                                public constructor(arg0: java.io.InputStream, arg1: com.sun.org.apache.xerces.internal.impl.PropertyManager)
+                                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: com.sun.org.apache.xerces.internal.impl.PropertyManager)
                                 public getScanner(): com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl
                                 public constructor(arg0: java.lang.String | string, arg1: com.sun.org.apache.xerces.internal.impl.PropertyManager)
-                                public constructor(arg0: java.io.InputStream, arg1: java.lang.String | string, arg2: com.sun.org.apache.xerces.internal.impl.PropertyManager)
+                                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.lang.String | string, arg2: com.sun.org.apache.xerces.internal.impl.PropertyManager)
                                 public constructor(arg0: java.io.Reader, arg1: com.sun.org.apache.xerces.internal.impl.PropertyManager)
                                 public constructor(arg0: com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource, arg1: com.sun.org.apache.xerces.internal.impl.PropertyManager)
                                 public setInputSource(arg0: com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource): void

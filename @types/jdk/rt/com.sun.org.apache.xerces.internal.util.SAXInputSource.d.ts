@@ -15,7 +15,7 @@ declare namespace com {
                                 public getInputSource(): org.xml.sax.InputSource
                                 public setPublicId(arg0: java.lang.String | string): void
                                 public setSystemId(arg0: java.lang.String | string): void
-                                public setByteStream(arg0: java.io.InputStream): void
+                                public setByteStream(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
                                 public setCharacterStream(arg0: java.io.Reader): void
                                 public setEncoding(arg0: java.lang.String | string): void
                                 public static class: java.lang.Class<any>

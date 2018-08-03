@@ -6,11 +6,11 @@ declare namespace com {
                     namespace internal {
                         namespace util {
                             class XMLAttributesImpl implements com.sun.org.apache.xerces.internal.xni.XMLAttributes , com.sun.xml.internal.stream.XMLBufferListener {
-                                protected static TABLE_SIZE: int
-                                protected static MAX_HASH_COLLISIONS: int
-                                protected static MULTIPLIERS_SIZE: int
-                                protected static MULTIPLIERS_MASK: int
-                                protected static SIZE_LIMIT: int
+                                protected static readonly TABLE_SIZE: int
+                                protected static readonly MAX_HASH_COLLISIONS: int
+                                protected static readonly MULTIPLIERS_SIZE: int
+                                protected static readonly MULTIPLIERS_MASK: int
+                                protected static readonly SIZE_LIMIT: int
                                 protected fNamespaces: boolean
                                 protected fLargeCount: int
                                 protected fLength: int

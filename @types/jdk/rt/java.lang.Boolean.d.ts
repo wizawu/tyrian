@@ -1,9 +1,9 @@
 declare namespace java {
     namespace lang {
         class Boolean implements java.io.Serializable , java.lang.Comparable<java.lang.Boolean> {
-            public static TRUE: boolean
-            public static FALSE: boolean
-            public static TYPE: java.lang.Class<java.lang.Boolean>
+            public static readonly TRUE: boolean
+            public static readonly FALSE: boolean
+            public static readonly TYPE: java.lang.Class<java.lang.Boolean>
             public constructor(arg0: boolean)
             public constructor(arg0: java.lang.String | string)
             public static parseBoolean(arg0: java.lang.String | string): boolean

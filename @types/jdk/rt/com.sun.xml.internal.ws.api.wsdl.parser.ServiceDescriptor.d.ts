@@ -8,8 +8,8 @@ declare namespace com {
                             namespace parser {
                                 abstract class ServiceDescriptor {
                                     public constructor()
-                                    public getWSDLs(): java.util.List<javax.xml.transform.Source>
-                                    public getSchemas(): java.util.List<javax.xml.transform.Source>
+                                    public abstract getWSDLs(): java.util.List<javax.xml.transform.Source>
+                                    public abstract getSchemas(): java.util.List<javax.xml.transform.Source>
                                     public static class: java.lang.Class<any>
                                 }
                             }

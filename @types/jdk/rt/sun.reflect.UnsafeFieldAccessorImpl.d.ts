@@ -1,9 +1,9 @@
 declare namespace sun {
     namespace reflect {
         abstract class UnsafeFieldAccessorImpl extends sun.reflect.FieldAccessorImpl {
-            protected field: java.lang.reflect.Field
-            protected fieldOffset: long
-            protected isFinal: boolean
+            protected readonly field: java.lang.reflect.Field
+            protected readonly fieldOffset: long
+            protected readonly isFinal: boolean
             protected ensureObj(arg0: java.lang.Object): void
             protected newGetIllegalArgumentException(arg0: java.lang.String | string): java.lang.IllegalArgumentException
             protected throwFinalFieldIllegalAccessException(arg0: java.lang.String | string, arg1: java.lang.String | string): void

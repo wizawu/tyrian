@@ -7,8 +7,8 @@ declare namespace sun {
                 public m_trieData_: char[]
                 public m_trieInitialValue_: int
                 public m_unicodeVersion_: sun.text.normalizer.VersionInfo
-                public static SRC_PROPSVEC: int
-                public static SRC_COUNT: int
+                public static readonly SRC_PROPSVEC: int
+                public static readonly SRC_COUNT: int
                 public setIndexData(arg0: sun.text.normalizer.CharTrie$FriendAgent): void
                 public getProperty(arg0: int): int
                 public static getUnsignedValue(arg0: int): int

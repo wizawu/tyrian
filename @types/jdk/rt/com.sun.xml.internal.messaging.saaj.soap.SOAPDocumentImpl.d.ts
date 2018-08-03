@@ -6,7 +6,7 @@ declare namespace com {
                     namespace saaj {
                         namespace soap {
                             class SOAPDocumentImpl extends com.sun.org.apache.xerces.internal.dom.DocumentImpl implements com.sun.xml.internal.messaging.saaj.soap.SOAPDocument {
-                                protected static log: java.util.logging.Logger
+                                protected static readonly log: java.util.logging.Logger
                                 public constructor(arg0: com.sun.xml.internal.messaging.saaj.soap.SOAPPartImpl)
                                 public getSOAPPart(): com.sun.xml.internal.messaging.saaj.soap.SOAPPartImpl
                                 public getDocument(): com.sun.xml.internal.messaging.saaj.soap.SOAPDocumentImpl

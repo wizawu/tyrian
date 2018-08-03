@@ -9,9 +9,6 @@ declare namespace com {
                                 interface XMLDTDDescription extends com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarDescription {
                                     getRootName(): string
                                 }
-                                interface XMLDTDDescription$$Lambda extends com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarDescription {
-                                    (): string
-                                }
                             }
                         }
                     }

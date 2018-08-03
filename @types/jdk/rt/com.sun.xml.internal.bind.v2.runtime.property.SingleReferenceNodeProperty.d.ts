@@ -7,7 +7,7 @@ declare namespace com {
                         namespace runtime {
                             namespace property {
                                 class SingleReferenceNodeProperty<BeanT, ValueT> extends com.sun.xml.internal.bind.v2.runtime.property.PropertyImpl<BeanT> {
-                                    public constructor(arg0: com.sun.xml.internal.bind.v2.runtime.JAXBContextImpl, arg1: com.sun.xml.internal.bind.v2.model.runtime.RuntimeReferencePropertyInfo | com.sun.xml.internal.bind.v2.model.runtime.RuntimeReferencePropertyInfo$$Lambda)
+                                    public constructor(arg0: com.sun.xml.internal.bind.v2.runtime.JAXBContextImpl, arg1: com.sun.xml.internal.bind.v2.model.runtime.RuntimeReferencePropertyInfo)
                                     public reset(arg0: BeanT): void
                                     public getIdValue(arg0: BeanT): string
                                     public serializeBody(arg0: BeanT, arg1: com.sun.xml.internal.bind.v2.runtime.XMLSerializer, arg2: java.lang.Object): void

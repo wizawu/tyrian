@@ -7,7 +7,7 @@ declare namespace com {
                         namespace dtm {
                             namespace ref {
                                 class CustomStringPool extends com.sun.org.apache.xml.internal.dtm.ref.DTMStringPool {
-                                    public static NULL: int
+                                    public static readonly NULL: int
                                     public constructor()
                                     public removeAllElements(): void
                                     public indexToString(arg0: int): string

@@ -5,8 +5,8 @@ declare namespace jdk {
                 class RuntimeNode extends jdk.nashorn.internal.ir.Expression {
                     public constructor(arg0: long, arg1: int, arg2: jdk.nashorn.internal.ir.RuntimeNode$Request, arg3: java.util.List<jdk.nashorn.internal.ir.Expression>)
                     public constructor(arg0: long, arg1: int, arg2: jdk.nashorn.internal.ir.RuntimeNode$Request, ...arg3: jdk.nashorn.internal.ir.Expression[])
-                    public constructor(arg0: jdk.nashorn.internal.ir.Expression, arg1: jdk.nashorn.internal.ir.RuntimeNode$Request, ...arg2: jdk.nashorn.internal.ir.Expression[])
-                    public constructor(arg0: jdk.nashorn.internal.ir.Expression, arg1: jdk.nashorn.internal.ir.RuntimeNode$Request, arg2: java.util.List<jdk.nashorn.internal.ir.Expression>)
+                    public constructor(arg0: jdk.nashorn.internal.ir.Expression | jdk.nashorn.internal.ir.Expression$$Lambda, arg1: jdk.nashorn.internal.ir.RuntimeNode$Request, ...arg2: jdk.nashorn.internal.ir.Expression[])
+                    public constructor(arg0: jdk.nashorn.internal.ir.Expression | jdk.nashorn.internal.ir.Expression$$Lambda, arg1: jdk.nashorn.internal.ir.RuntimeNode$Request, arg2: java.util.List<jdk.nashorn.internal.ir.Expression>)
                     public constructor(arg0: jdk.nashorn.internal.ir.UnaryNode, arg1: jdk.nashorn.internal.ir.RuntimeNode$Request)
                     public constructor(arg0: jdk.nashorn.internal.ir.BinaryNode)
                     public setRequest(arg0: jdk.nashorn.internal.ir.RuntimeNode$Request): jdk.nashorn.internal.ir.RuntimeNode

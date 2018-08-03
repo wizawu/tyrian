@@ -7,10 +7,10 @@ declare namespace com {
                         namespace generic {
                             interface InstructionComparator {
                                 DEFAULT: com.sun.org.apache.bcel.internal.generic.InstructionComparator
-                                equals(arg0: com.sun.org.apache.bcel.internal.generic.Instruction, arg1: com.sun.org.apache.bcel.internal.generic.Instruction): boolean
+                                equals(arg0: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda, arg1: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda): boolean
                             }
                             interface InstructionComparator$$Lambda {
-                                DEFAULT: com.sun.org.apache.bcel.internal.generic.InstructionComparator
+                                (arg0: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda, arg1: com.sun.org.apache.bcel.internal.generic.Instruction | com.sun.org.apache.bcel.internal.generic.Instruction$$Lambda): boolean
                             }
                         }
                     }

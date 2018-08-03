@@ -4,8 +4,8 @@ declare namespace javax {
             public constructor()
             public install(arg0: javax.swing.JFormattedTextField): void
             public uninstall(): void
-            public stringToValue(arg0: java.lang.String | string): java.lang.Object
-            public valueToString(arg0: java.lang.Object): string
+            public abstract stringToValue(arg0: java.lang.String | string): java.lang.Object
+            public abstract valueToString(arg0: java.lang.Object): string
             protected getFormattedTextField(): javax.swing.JFormattedTextField
             protected invalidEdit(): void
             protected setEditValid(arg0: boolean): void

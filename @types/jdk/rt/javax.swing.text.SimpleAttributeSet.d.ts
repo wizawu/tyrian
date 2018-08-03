@@ -2,7 +2,7 @@ declare namespace javax {
     namespace swing {
         namespace text {
             class SimpleAttributeSet implements javax.swing.text.MutableAttributeSet , java.io.Serializable , java.lang.Cloneable {
-                public static EMPTY: javax.swing.text.AttributeSet
+                public static readonly EMPTY: javax.swing.text.AttributeSet
                 public constructor()
                 public constructor(arg0: javax.swing.text.AttributeSet)
                 public isEmpty(): boolean

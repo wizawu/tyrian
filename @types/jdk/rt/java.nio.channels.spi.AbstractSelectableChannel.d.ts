@@ -9,11 +9,11 @@ declare namespace java {
                     public keyFor(arg0: java.nio.channels.Selector): java.nio.channels.SelectionKey
                     public register(arg0: java.nio.channels.Selector, arg1: int, arg2: java.lang.Object): java.nio.channels.SelectionKey
                     protected implCloseChannel(): void
-                    protected implCloseSelectableChannel(): void
+                    protected abstract implCloseSelectableChannel(): void
                     public isBlocking(): boolean
                     public blockingLock(): java.lang.Object
                     public configureBlocking(arg0: boolean): java.nio.channels.SelectableChannel
-                    protected implConfigureBlocking(arg0: boolean): void
+                    protected abstract implConfigureBlocking(arg0: boolean): void
                     public static class: java.lang.Class<any>
                 }
             }

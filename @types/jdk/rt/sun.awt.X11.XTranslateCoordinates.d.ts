@@ -4,7 +4,7 @@ declare namespace sun {
             class XTranslateCoordinates {
                 public constructor(arg0: long, arg1: long, arg2: int, arg3: int)
                 public execute(): int
-                public execute(arg0: sun.awt.X11.XErrorHandler): int
+                public execute(arg0: sun.awt.X11.XErrorHandler | sun.awt.X11.XErrorHandler$$Lambda): int
                 public isExecuted(): boolean
                 public isDisposed(): boolean
                 public dispose(): void

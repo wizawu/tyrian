@@ -2,7 +2,7 @@ declare namespace javax {
     namespace xml {
         namespace bind {
             class DatatypeConverterImpl implements javax.xml.bind.DatatypeConverterInterface {
-                public static theInstance: javax.xml.bind.DatatypeConverterInterface
+                public static readonly theInstance: javax.xml.bind.DatatypeConverterInterface
                 protected constructor()
                 public parseString(arg0: java.lang.String | string): string
                 public parseInteger(arg0: java.lang.String | string): java.math.BigInteger

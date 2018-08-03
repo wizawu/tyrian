@@ -5,9 +5,6 @@ declare namespace java {
                 serialVersionUID: long
                 getY(): java.math.BigInteger
             }
-            interface DSAPublicKey$$Lambda extends java.security.interfaces.DSAKey , java.security.PublicKey {
-                serialVersionUID: long
-            }
         }
     }
 }

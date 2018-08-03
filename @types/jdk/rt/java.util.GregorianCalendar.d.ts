@@ -1,8 +1,8 @@
 declare namespace java {
     namespace util {
         class GregorianCalendar extends java.util.Calendar {
-            public static BC: int
-            public static AD: int
+            public static readonly BC: int
+            public static readonly AD: int
             public constructor()
             public constructor(arg0: java.util.TimeZone)
             public constructor(arg0: java.util.Locale)

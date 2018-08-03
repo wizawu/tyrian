@@ -5,8 +5,8 @@ declare namespace com {
                 namespace management {
                     namespace internal {
                         class ManagementPermissionHelper {
-                            public static MPMONITOR: java.lang.management.ManagementPermission
-                            public static MPCONTROL: java.lang.management.ManagementPermission
+                            public static readonly MPMONITOR: java.lang.management.ManagementPermission
+                            public static readonly MPCONTROL: java.lang.management.ManagementPermission
                             public constructor()
                             public static class: java.lang.Class<any>
                         }

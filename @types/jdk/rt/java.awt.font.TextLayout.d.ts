@@ -2,7 +2,7 @@ declare namespace java {
     namespace awt {
         namespace font {
             class TextLayout implements java.lang.Cloneable {
-                public static DEFAULT_CARET_POLICY: java.awt.font.TextLayout$CaretPolicy
+                public static readonly DEFAULT_CARET_POLICY: java.awt.font.TextLayout$CaretPolicy
                 public constructor(arg0: java.lang.String | string, arg1: java.awt.Font, arg2: java.awt.font.FontRenderContext)
                 public constructor(arg0: java.lang.String | string, arg1: java.util.Map<java.text.AttributedCharacterIterator$Attribute, any>, arg2: java.awt.font.FontRenderContext)
                 public constructor(arg0: java.text.AttributedCharacterIterator, arg1: java.awt.font.FontRenderContext)

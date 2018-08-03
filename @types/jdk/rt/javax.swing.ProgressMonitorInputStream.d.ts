@@ -1,7 +1,7 @@
 declare namespace javax {
     namespace swing {
         class ProgressMonitorInputStream extends java.io.FilterInputStream {
-            public constructor(arg0: java.awt.Component, arg1: java.lang.Object, arg2: java.io.InputStream)
+            public constructor(arg0: java.awt.Component, arg1: java.lang.Object, arg2: java.io.InputStream | java.io.InputStream$$Lambda)
             public getProgressMonitor(): javax.swing.ProgressMonitor
             public read(): int
             public read(arg0: byte[]): int

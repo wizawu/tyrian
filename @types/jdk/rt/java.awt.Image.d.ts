@@ -2,18 +2,18 @@ declare namespace java {
     namespace awt {
         abstract class Image {
             protected accelerationPriority: float
-            public static UndefinedProperty: java.lang.Object
-            public static SCALE_DEFAULT: int
-            public static SCALE_FAST: int
-            public static SCALE_SMOOTH: int
-            public static SCALE_REPLICATE: int
-            public static SCALE_AREA_AVERAGING: int
+            public static readonly UndefinedProperty: java.lang.Object
+            public static readonly SCALE_DEFAULT: int
+            public static readonly SCALE_FAST: int
+            public static readonly SCALE_SMOOTH: int
+            public static readonly SCALE_REPLICATE: int
+            public static readonly SCALE_AREA_AVERAGING: int
             public constructor()
-            public getWidth(arg0: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): int
-            public getHeight(arg0: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): int
-            public getSource(): java.awt.image.ImageProducer
-            public getGraphics(): java.awt.Graphics
-            public getProperty(arg0: java.lang.String | string, arg1: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): java.lang.Object
+            public abstract getWidth(arg0: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): int
+            public abstract getHeight(arg0: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): int
+            public abstract getSource(): java.awt.image.ImageProducer
+            public abstract getGraphics(): java.awt.Graphics
+            public abstract getProperty(arg0: java.lang.String | string, arg1: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): java.lang.Object
             public getScaledInstance(arg0: int, arg1: int, arg2: int): java.awt.Image
             public flush(): void
             public getCapabilities(arg0: java.awt.GraphicsConfiguration): java.awt.ImageCapabilities

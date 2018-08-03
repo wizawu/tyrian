@@ -6,7 +6,7 @@ declare namespace jdk {
                     public G$set(): java.lang.Object
                     public S$set(arg0: java.lang.Object): void
                     public G$subarray(): java.lang.Object
-                    public public S$subarray(arg0: java.lang.Object): void
+                    public static public S$subarray(arg0: java.lang.Object): void
                     public getClassName(): string
                     public static class: java.lang.Class<any>
                 }

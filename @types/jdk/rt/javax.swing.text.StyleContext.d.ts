@@ -2,15 +2,15 @@ declare namespace javax {
     namespace swing {
         namespace text {
             class StyleContext implements java.io.Serializable , javax.swing.text.AbstractDocument$AttributeContext {
-                public static DEFAULT_STYLE: string
+                public static readonly DEFAULT_STYLE: string
                 public static getDefaultStyleContext(): javax.swing.text.StyleContext
                 public constructor()
                 public addStyle(arg0: java.lang.String | string, arg1: javax.swing.text.Style): javax.swing.text.Style
                 public removeStyle(arg0: java.lang.String | string): void
                 public getStyle(arg0: java.lang.String | string): javax.swing.text.Style
                 public getStyleNames(): java.util.Enumeration<any>
-                public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
-                public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+                public addChangeListener(arg0: javax.swing.event.ChangeListener): void
+                public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
                 public getChangeListeners(): javax.swing.event.ChangeListener[]
                 public getFont(arg0: javax.swing.text.AttributeSet): java.awt.Font
                 public getForeground(arg0: javax.swing.text.AttributeSet): java.awt.Color

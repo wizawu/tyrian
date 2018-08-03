@@ -11,9 +11,6 @@ declare namespace com {
                                     XML_DTD: string
                                     getGrammarType(): string
                                 }
-                                interface XMLGrammarDescription$$Lambda extends com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier {
-                                    XML_SCHEMA: string
-                                }
                             }
                         }
                     }

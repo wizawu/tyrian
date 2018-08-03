@@ -24,7 +24,7 @@ declare namespace jdk {
                     public static clearRuntimeEvents(arg0: java.lang.Object): void
                     public static removeRuntimeEvent(arg0: java.lang.Object, arg1: java.lang.Object): void
                     public static getRuntimeEvents(arg0: java.lang.Object): java.lang.Object
-                    public public static getLastRuntimeEvent(arg0: java.lang.Object): java.lang.Object
+                    public static public static getLastRuntimeEvent(arg0: java.lang.Object): java.lang.Object
                     public static $clinit$(): void
                     public static class: java.lang.Class<any>
                 }

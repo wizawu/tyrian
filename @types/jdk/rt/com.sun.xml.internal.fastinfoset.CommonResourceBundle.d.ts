@@ -4,7 +4,7 @@ declare namespace com {
             namespace internal {
                 namespace fastinfoset {
                     class CommonResourceBundle extends com.sun.xml.internal.fastinfoset.AbstractResourceBundle {
-                        public static BASE_NAME: string
+                        public static readonly BASE_NAME: string
                         protected constructor()
                         protected constructor(arg0: java.util.Locale)
                         public static getInstance(): com.sun.xml.internal.fastinfoset.CommonResourceBundle

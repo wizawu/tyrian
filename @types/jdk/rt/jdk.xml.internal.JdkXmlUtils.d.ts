@@ -2,12 +2,12 @@ declare namespace jdk {
     namespace xml {
         namespace internal {
             class JdkXmlUtils {
-                public static NAMESPACES_FEATURE: string
-                public static NAMESPACE_PREFIXES_FEATURE: string
-                public static OVERRIDE_PARSER: string
-                public static OVERRIDE_PARSER_DEFAULT: boolean
-                public static FEATURE_TRUE: string
-                public static FEATURE_FALSE: string
+                public static readonly NAMESPACES_FEATURE: string
+                public static readonly NAMESPACE_PREFIXES_FEATURE: string
+                public static readonly OVERRIDE_PARSER: string
+                public static readonly OVERRIDE_PARSER_DEFAULT: boolean
+                public static readonly FEATURE_TRUE: string
+                public static readonly FEATURE_FALSE: string
                 public constructor()
                 public static getValue(arg0: java.lang.Object, arg1: int): int
                 public static setXMLReaderPropertyIfSupport(arg0: org.xml.sax.XMLReader, arg1: java.lang.String | string, arg2: java.lang.Object, arg3: boolean): void

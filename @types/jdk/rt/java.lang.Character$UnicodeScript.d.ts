@@ -1,109 +1,109 @@
 declare namespace java {
     namespace lang {
         class Character$UnicodeScript extends java.lang.Enum<java.lang.Character$UnicodeScript> {
-            public static COMMON: java.lang.Character$UnicodeScript
-            public static LATIN: java.lang.Character$UnicodeScript
-            public static GREEK: java.lang.Character$UnicodeScript
-            public static CYRILLIC: java.lang.Character$UnicodeScript
-            public static ARMENIAN: java.lang.Character$UnicodeScript
-            public static HEBREW: java.lang.Character$UnicodeScript
-            public static ARABIC: java.lang.Character$UnicodeScript
-            public static SYRIAC: java.lang.Character$UnicodeScript
-            public static THAANA: java.lang.Character$UnicodeScript
-            public static DEVANAGARI: java.lang.Character$UnicodeScript
-            public static BENGALI: java.lang.Character$UnicodeScript
-            public static GURMUKHI: java.lang.Character$UnicodeScript
-            public static GUJARATI: java.lang.Character$UnicodeScript
-            public static ORIYA: java.lang.Character$UnicodeScript
-            public static TAMIL: java.lang.Character$UnicodeScript
-            public static TELUGU: java.lang.Character$UnicodeScript
-            public static KANNADA: java.lang.Character$UnicodeScript
-            public static MALAYALAM: java.lang.Character$UnicodeScript
-            public static SINHALA: java.lang.Character$UnicodeScript
-            public static THAI: java.lang.Character$UnicodeScript
-            public static LAO: java.lang.Character$UnicodeScript
-            public static TIBETAN: java.lang.Character$UnicodeScript
-            public static MYANMAR: java.lang.Character$UnicodeScript
-            public static GEORGIAN: java.lang.Character$UnicodeScript
-            public static HANGUL: java.lang.Character$UnicodeScript
-            public static ETHIOPIC: java.lang.Character$UnicodeScript
-            public static CHEROKEE: java.lang.Character$UnicodeScript
-            public static CANADIAN_ABORIGINAL: java.lang.Character$UnicodeScript
-            public static OGHAM: java.lang.Character$UnicodeScript
-            public static RUNIC: java.lang.Character$UnicodeScript
-            public static KHMER: java.lang.Character$UnicodeScript
-            public static MONGOLIAN: java.lang.Character$UnicodeScript
-            public static HIRAGANA: java.lang.Character$UnicodeScript
-            public static KATAKANA: java.lang.Character$UnicodeScript
-            public static BOPOMOFO: java.lang.Character$UnicodeScript
-            public static HAN: java.lang.Character$UnicodeScript
-            public static YI: java.lang.Character$UnicodeScript
-            public static OLD_ITALIC: java.lang.Character$UnicodeScript
-            public static GOTHIC: java.lang.Character$UnicodeScript
-            public static DESERET: java.lang.Character$UnicodeScript
-            public static INHERITED: java.lang.Character$UnicodeScript
-            public static TAGALOG: java.lang.Character$UnicodeScript
-            public static HANUNOO: java.lang.Character$UnicodeScript
-            public static BUHID: java.lang.Character$UnicodeScript
-            public static TAGBANWA: java.lang.Character$UnicodeScript
-            public static LIMBU: java.lang.Character$UnicodeScript
-            public static TAI_LE: java.lang.Character$UnicodeScript
-            public static LINEAR_B: java.lang.Character$UnicodeScript
-            public static UGARITIC: java.lang.Character$UnicodeScript
-            public static SHAVIAN: java.lang.Character$UnicodeScript
-            public static OSMANYA: java.lang.Character$UnicodeScript
-            public static CYPRIOT: java.lang.Character$UnicodeScript
-            public static BRAILLE: java.lang.Character$UnicodeScript
-            public static BUGINESE: java.lang.Character$UnicodeScript
-            public static COPTIC: java.lang.Character$UnicodeScript
-            public static NEW_TAI_LUE: java.lang.Character$UnicodeScript
-            public static GLAGOLITIC: java.lang.Character$UnicodeScript
-            public static TIFINAGH: java.lang.Character$UnicodeScript
-            public static SYLOTI_NAGRI: java.lang.Character$UnicodeScript
-            public static OLD_PERSIAN: java.lang.Character$UnicodeScript
-            public static KHAROSHTHI: java.lang.Character$UnicodeScript
-            public static BALINESE: java.lang.Character$UnicodeScript
-            public static CUNEIFORM: java.lang.Character$UnicodeScript
-            public static PHOENICIAN: java.lang.Character$UnicodeScript
-            public static PHAGS_PA: java.lang.Character$UnicodeScript
-            public static NKO: java.lang.Character$UnicodeScript
-            public static SUNDANESE: java.lang.Character$UnicodeScript
-            public static BATAK: java.lang.Character$UnicodeScript
-            public static LEPCHA: java.lang.Character$UnicodeScript
-            public static OL_CHIKI: java.lang.Character$UnicodeScript
-            public static VAI: java.lang.Character$UnicodeScript
-            public static SAURASHTRA: java.lang.Character$UnicodeScript
-            public static KAYAH_LI: java.lang.Character$UnicodeScript
-            public static REJANG: java.lang.Character$UnicodeScript
-            public static LYCIAN: java.lang.Character$UnicodeScript
-            public static CARIAN: java.lang.Character$UnicodeScript
-            public static LYDIAN: java.lang.Character$UnicodeScript
-            public static CHAM: java.lang.Character$UnicodeScript
-            public static TAI_THAM: java.lang.Character$UnicodeScript
-            public static TAI_VIET: java.lang.Character$UnicodeScript
-            public static AVESTAN: java.lang.Character$UnicodeScript
-            public static EGYPTIAN_HIEROGLYPHS: java.lang.Character$UnicodeScript
-            public static SAMARITAN: java.lang.Character$UnicodeScript
-            public static MANDAIC: java.lang.Character$UnicodeScript
-            public static LISU: java.lang.Character$UnicodeScript
-            public static BAMUM: java.lang.Character$UnicodeScript
-            public static JAVANESE: java.lang.Character$UnicodeScript
-            public static MEETEI_MAYEK: java.lang.Character$UnicodeScript
-            public static IMPERIAL_ARAMAIC: java.lang.Character$UnicodeScript
-            public static OLD_SOUTH_ARABIAN: java.lang.Character$UnicodeScript
-            public static INSCRIPTIONAL_PARTHIAN: java.lang.Character$UnicodeScript
-            public static INSCRIPTIONAL_PAHLAVI: java.lang.Character$UnicodeScript
-            public static OLD_TURKIC: java.lang.Character$UnicodeScript
-            public static BRAHMI: java.lang.Character$UnicodeScript
-            public static KAITHI: java.lang.Character$UnicodeScript
-            public static MEROITIC_HIEROGLYPHS: java.lang.Character$UnicodeScript
-            public static MEROITIC_CURSIVE: java.lang.Character$UnicodeScript
-            public static SORA_SOMPENG: java.lang.Character$UnicodeScript
-            public static CHAKMA: java.lang.Character$UnicodeScript
-            public static SHARADA: java.lang.Character$UnicodeScript
-            public static TAKRI: java.lang.Character$UnicodeScript
-            public static MIAO: java.lang.Character$UnicodeScript
-            public static UNKNOWN: java.lang.Character$UnicodeScript
+            public static readonly COMMON: java.lang.Character$UnicodeScript
+            public static readonly LATIN: java.lang.Character$UnicodeScript
+            public static readonly GREEK: java.lang.Character$UnicodeScript
+            public static readonly CYRILLIC: java.lang.Character$UnicodeScript
+            public static readonly ARMENIAN: java.lang.Character$UnicodeScript
+            public static readonly HEBREW: java.lang.Character$UnicodeScript
+            public static readonly ARABIC: java.lang.Character$UnicodeScript
+            public static readonly SYRIAC: java.lang.Character$UnicodeScript
+            public static readonly THAANA: java.lang.Character$UnicodeScript
+            public static readonly DEVANAGARI: java.lang.Character$UnicodeScript
+            public static readonly BENGALI: java.lang.Character$UnicodeScript
+            public static readonly GURMUKHI: java.lang.Character$UnicodeScript
+            public static readonly GUJARATI: java.lang.Character$UnicodeScript
+            public static readonly ORIYA: java.lang.Character$UnicodeScript
+            public static readonly TAMIL: java.lang.Character$UnicodeScript
+            public static readonly TELUGU: java.lang.Character$UnicodeScript
+            public static readonly KANNADA: java.lang.Character$UnicodeScript
+            public static readonly MALAYALAM: java.lang.Character$UnicodeScript
+            public static readonly SINHALA: java.lang.Character$UnicodeScript
+            public static readonly THAI: java.lang.Character$UnicodeScript
+            public static readonly LAO: java.lang.Character$UnicodeScript
+            public static readonly TIBETAN: java.lang.Character$UnicodeScript
+            public static readonly MYANMAR: java.lang.Character$UnicodeScript
+            public static readonly GEORGIAN: java.lang.Character$UnicodeScript
+            public static readonly HANGUL: java.lang.Character$UnicodeScript
+            public static readonly ETHIOPIC: java.lang.Character$UnicodeScript
+            public static readonly CHEROKEE: java.lang.Character$UnicodeScript
+            public static readonly CANADIAN_ABORIGINAL: java.lang.Character$UnicodeScript
+            public static readonly OGHAM: java.lang.Character$UnicodeScript
+            public static readonly RUNIC: java.lang.Character$UnicodeScript
+            public static readonly KHMER: java.lang.Character$UnicodeScript
+            public static readonly MONGOLIAN: java.lang.Character$UnicodeScript
+            public static readonly HIRAGANA: java.lang.Character$UnicodeScript
+            public static readonly KATAKANA: java.lang.Character$UnicodeScript
+            public static readonly BOPOMOFO: java.lang.Character$UnicodeScript
+            public static readonly HAN: java.lang.Character$UnicodeScript
+            public static readonly YI: java.lang.Character$UnicodeScript
+            public static readonly OLD_ITALIC: java.lang.Character$UnicodeScript
+            public static readonly GOTHIC: java.lang.Character$UnicodeScript
+            public static readonly DESERET: java.lang.Character$UnicodeScript
+            public static readonly INHERITED: java.lang.Character$UnicodeScript
+            public static readonly TAGALOG: java.lang.Character$UnicodeScript
+            public static readonly HANUNOO: java.lang.Character$UnicodeScript
+            public static readonly BUHID: java.lang.Character$UnicodeScript
+            public static readonly TAGBANWA: java.lang.Character$UnicodeScript
+            public static readonly LIMBU: java.lang.Character$UnicodeScript
+            public static readonly TAI_LE: java.lang.Character$UnicodeScript
+            public static readonly LINEAR_B: java.lang.Character$UnicodeScript
+            public static readonly UGARITIC: java.lang.Character$UnicodeScript
+            public static readonly SHAVIAN: java.lang.Character$UnicodeScript
+            public static readonly OSMANYA: java.lang.Character$UnicodeScript
+            public static readonly CYPRIOT: java.lang.Character$UnicodeScript
+            public static readonly BRAILLE: java.lang.Character$UnicodeScript
+            public static readonly BUGINESE: java.lang.Character$UnicodeScript
+            public static readonly COPTIC: java.lang.Character$UnicodeScript
+            public static readonly NEW_TAI_LUE: java.lang.Character$UnicodeScript
+            public static readonly GLAGOLITIC: java.lang.Character$UnicodeScript
+            public static readonly TIFINAGH: java.lang.Character$UnicodeScript
+            public static readonly SYLOTI_NAGRI: java.lang.Character$UnicodeScript
+            public static readonly OLD_PERSIAN: java.lang.Character$UnicodeScript
+            public static readonly KHAROSHTHI: java.lang.Character$UnicodeScript
+            public static readonly BALINESE: java.lang.Character$UnicodeScript
+            public static readonly CUNEIFORM: java.lang.Character$UnicodeScript
+            public static readonly PHOENICIAN: java.lang.Character$UnicodeScript
+            public static readonly PHAGS_PA: java.lang.Character$UnicodeScript
+            public static readonly NKO: java.lang.Character$UnicodeScript
+            public static readonly SUNDANESE: java.lang.Character$UnicodeScript
+            public static readonly BATAK: java.lang.Character$UnicodeScript
+            public static readonly LEPCHA: java.lang.Character$UnicodeScript
+            public static readonly OL_CHIKI: java.lang.Character$UnicodeScript
+            public static readonly VAI: java.lang.Character$UnicodeScript
+            public static readonly SAURASHTRA: java.lang.Character$UnicodeScript
+            public static readonly KAYAH_LI: java.lang.Character$UnicodeScript
+            public static readonly REJANG: java.lang.Character$UnicodeScript
+            public static readonly LYCIAN: java.lang.Character$UnicodeScript
+            public static readonly CARIAN: java.lang.Character$UnicodeScript
+            public static readonly LYDIAN: java.lang.Character$UnicodeScript
+            public static readonly CHAM: java.lang.Character$UnicodeScript
+            public static readonly TAI_THAM: java.lang.Character$UnicodeScript
+            public static readonly TAI_VIET: java.lang.Character$UnicodeScript
+            public static readonly AVESTAN: java.lang.Character$UnicodeScript
+            public static readonly EGYPTIAN_HIEROGLYPHS: java.lang.Character$UnicodeScript
+            public static readonly SAMARITAN: java.lang.Character$UnicodeScript
+            public static readonly MANDAIC: java.lang.Character$UnicodeScript
+            public static readonly LISU: java.lang.Character$UnicodeScript
+            public static readonly BAMUM: java.lang.Character$UnicodeScript
+            public static readonly JAVANESE: java.lang.Character$UnicodeScript
+            public static readonly MEETEI_MAYEK: java.lang.Character$UnicodeScript
+            public static readonly IMPERIAL_ARAMAIC: java.lang.Character$UnicodeScript
+            public static readonly OLD_SOUTH_ARABIAN: java.lang.Character$UnicodeScript
+            public static readonly INSCRIPTIONAL_PARTHIAN: java.lang.Character$UnicodeScript
+            public static readonly INSCRIPTIONAL_PAHLAVI: java.lang.Character$UnicodeScript
+            public static readonly OLD_TURKIC: java.lang.Character$UnicodeScript
+            public static readonly BRAHMI: java.lang.Character$UnicodeScript
+            public static readonly KAITHI: java.lang.Character$UnicodeScript
+            public static readonly MEROITIC_HIEROGLYPHS: java.lang.Character$UnicodeScript
+            public static readonly MEROITIC_CURSIVE: java.lang.Character$UnicodeScript
+            public static readonly SORA_SOMPENG: java.lang.Character$UnicodeScript
+            public static readonly CHAKMA: java.lang.Character$UnicodeScript
+            public static readonly SHARADA: java.lang.Character$UnicodeScript
+            public static readonly TAKRI: java.lang.Character$UnicodeScript
+            public static readonly MIAO: java.lang.Character$UnicodeScript
+            public static readonly UNKNOWN: java.lang.Character$UnicodeScript
             public static values(): java.lang.Character$UnicodeScript[]
             public static valueOf(arg0: java.lang.String | string): java.lang.Character$UnicodeScript
             public static of(arg0: int): java.lang.Character$UnicodeScript

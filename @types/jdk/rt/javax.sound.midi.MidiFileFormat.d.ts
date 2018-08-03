@@ -2,7 +2,7 @@ declare namespace javax {
     namespace sound {
         namespace midi {
             class MidiFileFormat {
-                public static UNKNOWN_LENGTH: int
+                public static readonly UNKNOWN_LENGTH: int
                 protected type: int
                 protected divisionType: float
                 protected resolution: int

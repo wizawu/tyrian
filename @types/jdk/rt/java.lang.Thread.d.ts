@@ -1,9 +1,9 @@
 declare namespace java {
     namespace lang {
         class Thread implements java.lang.Runnable {
-            public static MAX_PRIORITY: int
-            public static MIN_PRIORITY: int
-            public static NORM_PRIORITY: int
+            public static readonly MAX_PRIORITY: int
+            public static readonly MIN_PRIORITY: int
+            public static readonly NORM_PRIORITY: int
             public constructor()
             public constructor(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda)
             public constructor(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda, arg1: java.lang.String | string)

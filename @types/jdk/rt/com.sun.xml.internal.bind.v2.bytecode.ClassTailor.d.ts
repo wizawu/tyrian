@@ -9,7 +9,7 @@ declare namespace com {
                                 public static toVMClassName(arg0: java.lang.Class): string
                                 public static toVMTypeName(arg0: java.lang.Class): string
                                 public static tailor(arg0: java.lang.Class, arg1: java.lang.String | string, ...arg2: java.lang.String[]): byte[]
-                                public static tailor(arg0: java.io.InputStream, arg1: java.lang.String | string, arg2: java.lang.String | string, ...arg3: java.lang.String[]): byte[]
+                                public static tailor(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.lang.String | string, arg2: java.lang.String | string, ...arg3: java.lang.String[]): byte[]
                                 public static class: java.lang.Class<any>
                             }
                         }

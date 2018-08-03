@@ -9,7 +9,7 @@ declare namespace com {
                                 public static isStubClass(arg0: java.lang.Class): boolean
                                 public static isStub(arg0: java.lang.Object): boolean
                                 public static setDelegate(arg0: java.lang.Object, arg1: org.omg.CORBA.portable.Delegate): void
-                                public static activateServant(arg0: org.omg.PortableServer.Servant): org.omg.CORBA.Object
+                                public static activateServant(arg0: org.omg.PortableServer.Servant | org.omg.PortableServer.Servant$$Lambda): org.omg.CORBA.Object
                                 public static activateTie(arg0: javax.rmi.CORBA.Tie): org.omg.CORBA.Object
                                 public static getDelegate(arg0: java.lang.Object): org.omg.CORBA.portable.Delegate
                                 public static getORB(arg0: java.lang.Object): org.omg.CORBA.ORB

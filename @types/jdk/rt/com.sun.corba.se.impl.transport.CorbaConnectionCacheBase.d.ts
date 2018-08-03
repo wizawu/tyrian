@@ -19,9 +19,9 @@ declare namespace com {
                             public numberOfBusyConnections(): long
                             public reclaim(): boolean
                             public getMonitoringName(): string
-                            public values(): java.util.Collection
-                            protected backingStore(): java.lang.Object
-                            protected registerWithMonitoring(): void
+                            public abstract values(): java.util.Collection
+                            protected abstract backingStore(): java.lang.Object
+                            protected abstract registerWithMonitoring(): void
                             protected dprintCreation(): void
                             protected dprintStatistics(): void
                             protected dprint(arg0: java.lang.String | string): void

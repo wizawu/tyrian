@@ -2,28 +2,28 @@ declare namespace org {
     namespace ietf {
         namespace jgss {
             class GSSException extends java.lang.Exception {
-                public static BAD_BINDINGS: int
-                public static BAD_MECH: int
-                public static BAD_NAME: int
-                public static BAD_NAMETYPE: int
-                public static BAD_STATUS: int
-                public static BAD_MIC: int
-                public static CONTEXT_EXPIRED: int
-                public static CREDENTIALS_EXPIRED: int
-                public static DEFECTIVE_CREDENTIAL: int
-                public static DEFECTIVE_TOKEN: int
-                public static FAILURE: int
-                public static NO_CONTEXT: int
-                public static NO_CRED: int
-                public static BAD_QOP: int
-                public static UNAUTHORIZED: int
-                public static UNAVAILABLE: int
-                public static DUPLICATE_ELEMENT: int
-                public static NAME_NOT_MN: int
-                public static DUPLICATE_TOKEN: int
-                public static OLD_TOKEN: int
-                public static UNSEQ_TOKEN: int
-                public static GAP_TOKEN: int
+                public static readonly BAD_BINDINGS: int
+                public static readonly BAD_MECH: int
+                public static readonly BAD_NAME: int
+                public static readonly BAD_NAMETYPE: int
+                public static readonly BAD_STATUS: int
+                public static readonly BAD_MIC: int
+                public static readonly CONTEXT_EXPIRED: int
+                public static readonly CREDENTIALS_EXPIRED: int
+                public static readonly DEFECTIVE_CREDENTIAL: int
+                public static readonly DEFECTIVE_TOKEN: int
+                public static readonly FAILURE: int
+                public static readonly NO_CONTEXT: int
+                public static readonly NO_CRED: int
+                public static readonly BAD_QOP: int
+                public static readonly UNAUTHORIZED: int
+                public static readonly UNAVAILABLE: int
+                public static readonly DUPLICATE_ELEMENT: int
+                public static readonly NAME_NOT_MN: int
+                public static readonly DUPLICATE_TOKEN: int
+                public static readonly OLD_TOKEN: int
+                public static readonly UNSEQ_TOKEN: int
+                public static readonly GAP_TOKEN: int
                 public constructor(arg0: int)
                 public constructor(arg0: int, arg1: int, arg2: java.lang.String | string)
                 public getMajor(): int

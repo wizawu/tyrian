@@ -5,7 +5,7 @@ declare namespace com {
                 namespace ws {
                     namespace util {
                         class RuntimeVersion {
-                            public static VERSION: com.sun.xml.internal.ws.util.Version
+                            public static readonly VERSION: com.sun.xml.internal.ws.util.Version
                             public constructor()
                             public getVersion(): string
                             public static class: java.lang.Class<any>

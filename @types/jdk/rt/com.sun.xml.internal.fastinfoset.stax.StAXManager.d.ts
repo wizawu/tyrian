@@ -5,10 +5,10 @@ declare namespace com {
                 namespace fastinfoset {
                     namespace stax {
                         class StAXManager {
-                            protected static STAX_NOTATIONS: string
-                            protected static STAX_ENTITIES: string
-                            public static CONTEXT_READER: int
-                            public static CONTEXT_WRITER: int
+                            protected static readonly STAX_NOTATIONS: string
+                            protected static readonly STAX_ENTITIES: string
+                            public static readonly CONTEXT_READER: int
+                            public static readonly CONTEXT_WRITER: int
                             public constructor()
                             public constructor(arg0: int)
                             public constructor(arg0: com.sun.xml.internal.fastinfoset.stax.StAXManager)

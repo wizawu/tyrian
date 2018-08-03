@@ -12,8 +12,8 @@ declare namespace javax {
             public setEnabled(arg0: boolean): void
             public getKeys(): java.lang.Object[]
             protected firePropertyChange(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: java.lang.Object): void
-            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
-            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
             public getPropertyChangeListeners(): java.beans.PropertyChangeListener[]
             protected clone(): java.lang.Object
             public static class: java.lang.Class<any>

@@ -3,14 +3,14 @@ declare namespace java {
         namespace channels {
             abstract class MembershipKey {
                 protected constructor()
-                public isValid(): boolean
-                public drop(): void
-                public block(arg0: java.net.InetAddress): java.nio.channels.MembershipKey
-                public unblock(arg0: java.net.InetAddress): java.nio.channels.MembershipKey
-                public channel(): java.nio.channels.MulticastChannel
-                public group(): java.net.InetAddress
-                public networkInterface(): java.net.NetworkInterface
-                public sourceAddress(): java.net.InetAddress
+                public abstract isValid(): boolean
+                public abstract drop(): void
+                public abstract block(arg0: java.net.InetAddress): java.nio.channels.MembershipKey
+                public abstract unblock(arg0: java.net.InetAddress): java.nio.channels.MembershipKey
+                public abstract channel(): java.nio.channels.MulticastChannel
+                public abstract group(): java.net.InetAddress
+                public abstract networkInterface(): java.net.NetworkInterface
+                public abstract sourceAddress(): java.net.InetAddress
                 public static class: java.lang.Class<any>
             }
         }

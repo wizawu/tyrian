@@ -9,6 +9,7 @@ declare namespace sun {
                 public getY(): java.math.BigInteger
                 public toString(): string
                 protected parseKeyBits(): void
+                public static class: java.lang.Class<any>
             }
         }
     }

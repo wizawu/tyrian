@@ -10,7 +10,7 @@ declare namespace com {
                                 public constructor(arg0: int)
                                 public set(arg0: com.sun.xml.internal.org.jvnet.staxex.Base64Data, arg1: java.lang.String | string): void
                                 public getBuffer(): byte[]
-                                public readFrom(arg0: java.io.InputStream): void
+                                public readFrom(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
                                 public static class: java.lang.Class<any>
                             }
                         }

@@ -3,9 +3,9 @@ declare namespace com {
         namespace jndi {
             namespace ldap {
                 class LdapCtx extends com.sun.jndi.toolkit.ctx.ComponentDirContext implements javax.naming.event.EventDirContext , javax.naming.ldap.LdapContext {
-                    public static DEFAULT_PORT: int
-                    public static DEFAULT_SSL_PORT: int
-                    public static DEFAULT_HOST: string
+                    public static readonly DEFAULT_PORT: int
+                    public static readonly DEFAULT_SSL_PORT: int
+                    public static readonly DEFAULT_HOST: string
                     public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: int, arg3: java.util.Hashtable<any, any>, arg4: boolean)
                     public newInstance(arg0: javax.naming.ldap.Control[]): javax.naming.ldap.LdapContext
                     protected c_bind(arg0: javax.naming.Name, arg1: java.lang.Object, arg2: com.sun.jndi.toolkit.ctx.Continuation): void
@@ -48,13 +48,13 @@ declare namespace com {
                     public getRequestControls(): javax.naming.ldap.Control[]
                     public getConnectControls(): javax.naming.ldap.Control[]
                     public getResponseControls(): javax.naming.ldap.Control[]
-                    public addNamingListener(arg0: javax.naming.Name, arg1: int, arg2: javax.naming.event.NamingListener | javax.naming.event.NamingListener$$Lambda): void
-                    public addNamingListener(arg0: java.lang.String | string, arg1: int, arg2: javax.naming.event.NamingListener | javax.naming.event.NamingListener$$Lambda): void
-                    public removeNamingListener(arg0: javax.naming.event.NamingListener | javax.naming.event.NamingListener$$Lambda): void
-                    public addNamingListener(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.naming.directory.SearchControls, arg3: javax.naming.event.NamingListener | javax.naming.event.NamingListener$$Lambda): void
-                    public addNamingListener(arg0: javax.naming.Name, arg1: java.lang.String | string, arg2: javax.naming.directory.SearchControls, arg3: javax.naming.event.NamingListener | javax.naming.event.NamingListener$$Lambda): void
-                    public addNamingListener(arg0: javax.naming.Name, arg1: java.lang.String | string, arg2: java.lang.Object[], arg3: javax.naming.directory.SearchControls, arg4: javax.naming.event.NamingListener | javax.naming.event.NamingListener$$Lambda): void
-                    public addNamingListener(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object[], arg3: javax.naming.directory.SearchControls, arg4: javax.naming.event.NamingListener | javax.naming.event.NamingListener$$Lambda): void
+                    public addNamingListener(arg0: javax.naming.Name, arg1: int, arg2: javax.naming.event.NamingListener): void
+                    public addNamingListener(arg0: java.lang.String | string, arg1: int, arg2: javax.naming.event.NamingListener): void
+                    public removeNamingListener(arg0: javax.naming.event.NamingListener): void
+                    public addNamingListener(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.naming.directory.SearchControls, arg3: javax.naming.event.NamingListener): void
+                    public addNamingListener(arg0: javax.naming.Name, arg1: java.lang.String | string, arg2: javax.naming.directory.SearchControls, arg3: javax.naming.event.NamingListener): void
+                    public addNamingListener(arg0: javax.naming.Name, arg1: java.lang.String | string, arg2: java.lang.Object[], arg3: javax.naming.directory.SearchControls, arg4: javax.naming.event.NamingListener): void
+                    public addNamingListener(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object[], arg3: javax.naming.directory.SearchControls, arg4: javax.naming.event.NamingListener): void
                     public targetMustExist(): boolean
                     public static class: java.lang.Class<any>
                 }

@@ -6,7 +6,7 @@ declare namespace com {
                     namespace buffer {
                         namespace sax {
                             class Properties {
-                                public static LEXICAL_HANDLER_PROPERTY: string
+                                public static readonly LEXICAL_HANDLER_PROPERTY: string
                                 public constructor()
                                 public static class: java.lang.Class<any>
                             }

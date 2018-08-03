@@ -13,10 +13,10 @@ declare namespace com {
                                         protected m_SHIFT: int
                                         protected m_MASK: int
                                         protected m_blocksize: int
-                                        protected static TEXT_LENGTH_BITS: int
-                                        protected static TEXT_OFFSET_BITS: int
-                                        protected static TEXT_LENGTH_MAX: int
-                                        protected static TEXT_OFFSET_MAX: int
+                                        protected static readonly TEXT_LENGTH_BITS: int
+                                        protected static readonly TEXT_OFFSET_BITS: int
+                                        protected static readonly TEXT_LENGTH_MAX: int
+                                        protected static readonly TEXT_OFFSET_MAX: int
                                         protected m_buildIdIndex: boolean
                                         public constructor(arg0: com.sun.org.apache.xml.internal.dtm.DTMManager, arg1: javax.xml.transform.Source, arg2: int, arg3: com.sun.org.apache.xml.internal.dtm.DTMWSFilter | com.sun.org.apache.xml.internal.dtm.DTMWSFilter$$Lambda, arg4: com.sun.org.apache.xml.internal.utils.XMLStringFactory, arg5: boolean)
                                         public constructor(arg0: com.sun.org.apache.xml.internal.dtm.DTMManager, arg1: javax.xml.transform.Source, arg2: int, arg3: com.sun.org.apache.xml.internal.dtm.DTMWSFilter | com.sun.org.apache.xml.internal.dtm.DTMWSFilter$$Lambda, arg4: com.sun.org.apache.xml.internal.utils.XMLStringFactory, arg5: boolean, arg6: int, arg7: boolean, arg8: boolean, arg9: boolean)

@@ -23,18 +23,18 @@ declare namespace javax {
                 public getParentElement(): javax.swing.text.Element
                 public getAttributes(): javax.swing.text.AttributeSet
                 public getName(): string
-                public getStartOffset(): int
-                public getEndOffset(): int
-                public getElement(arg0: int): javax.swing.text.Element
-                public getElementCount(): int
-                public getElementIndex(arg0: int): int
-                public isLeaf(): boolean
+                public abstract getStartOffset(): int
+                public abstract getEndOffset(): int
+                public abstract getElement(arg0: int): javax.swing.text.Element
+                public abstract getElementCount(): int
+                public abstract getElementIndex(arg0: int): int
+                public abstract isLeaf(): boolean
                 public getChildAt(arg0: int): javax.swing.tree.TreeNode
                 public getChildCount(): int
                 public getParent(): javax.swing.tree.TreeNode
                 public getIndex(arg0: javax.swing.tree.TreeNode): int
-                public getAllowsChildren(): boolean
-                public children(): java.util.Enumeration
+                public abstract getAllowsChildren(): boolean
+                public abstract children(): java.util.Enumeration
                 public static class: java.lang.Class<any>
             }
         }

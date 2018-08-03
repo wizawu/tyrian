@@ -10,7 +10,7 @@ declare namespace com {
                                 protected fHTTPRequestProperties: java.util.Map<java.lang.String, java.lang.String>
                                 public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
                                 public constructor(arg0: com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier)
-                                public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.io.InputStream, arg4: java.lang.String | string)
+                                public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.io.InputStream | java.io.InputStream$$Lambda, arg4: java.lang.String | string)
                                 public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.io.Reader, arg4: java.lang.String | string)
                                 public getFollowHTTPRedirects(): boolean
                                 public setFollowHTTPRedirects(arg0: boolean): void

@@ -8,6 +8,7 @@ declare namespace com {
                     public getAlgorithm(): string
                     public getFormat(): string
                     public getEncoded(): byte[]
+                    public static class: java.lang.Class<any>
                 }
             }
         }

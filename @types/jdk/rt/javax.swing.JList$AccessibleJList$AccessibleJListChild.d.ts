@@ -13,8 +13,8 @@ declare namespace javax {
             public getAccessibleChildrenCount(): int
             public getAccessibleChild(arg0: int): javax.accessibility.Accessible
             public getLocale(): java.util.Locale
-            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
-            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
             public getAccessibleComponent(): javax.accessibility.AccessibleComponent
             public getAccessibleSelection(): javax.accessibility.AccessibleSelection
             public getAccessibleText(): javax.accessibility.AccessibleText

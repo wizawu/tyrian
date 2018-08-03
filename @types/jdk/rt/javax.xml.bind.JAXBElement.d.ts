@@ -2,9 +2,9 @@ declare namespace javax {
     namespace xml {
         namespace bind {
             class JAXBElement<T> implements java.io.Serializable {
-                protected name: javax.xml.namespace.QName
-                protected declaredType: java.lang.Class<T>
-                protected scope: java.lang.Class
+                protected readonly name: javax.xml.namespace.QName
+                protected readonly declaredType: java.lang.Class<T>
+                protected readonly scope: java.lang.Class
                 protected value: T
                 protected nil: boolean
                 public constructor(arg0: javax.xml.namespace.QName, arg1: java.lang.Class<T>, arg2: java.lang.Class, arg3: T)

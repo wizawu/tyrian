@@ -8,7 +8,7 @@ declare namespace sun {
             protected getPageFormat(): java.awt.print.PageFormat
             protected getPageIndex(): int
             public canDoRedraws(): boolean
-            public redrawRegion(arg0: java.awt.geom.Rectangle2D, arg1: double, arg2: double, arg3: java.awt.Shape, arg4: java.awt.geom.AffineTransform): void
+            public abstract redrawRegion(arg0: java.awt.geom.Rectangle2D, arg1: double, arg2: double, arg3: java.awt.Shape, arg4: java.awt.geom.AffineTransform): void
             public drawLine(arg0: int, arg1: int, arg2: int, arg3: int): void
             public drawRect(arg0: int, arg1: int, arg2: int, arg3: int): void
             public fillRect(arg0: int, arg1: int, arg2: int, arg3: int): void
@@ -36,16 +36,16 @@ declare namespace sun {
             public draw(arg0: java.awt.Shape): void
             public fill(arg0: java.awt.Shape): void
             public fill(arg0: java.awt.Shape, arg1: java.awt.Color): void
-            protected deviceFill(arg0: java.awt.geom.PathIterator, arg1: java.awt.Color): void
-            protected deviceClip(arg0: java.awt.geom.PathIterator): void
-            protected deviceFrameRect(arg0: int, arg1: int, arg2: int, arg3: int, arg4: java.awt.Color): void
-            protected deviceDrawLine(arg0: int, arg1: int, arg2: int, arg3: int, arg4: java.awt.Color): void
-            protected deviceFillRect(arg0: int, arg1: int, arg2: int, arg3: int, arg4: java.awt.Color): void
+            protected abstract deviceFill(arg0: java.awt.geom.PathIterator, arg1: java.awt.Color): void
+            protected abstract deviceClip(arg0: java.awt.geom.PathIterator): void
+            protected abstract deviceFrameRect(arg0: int, arg1: int, arg2: int, arg3: int, arg4: java.awt.Color): void
+            protected abstract deviceDrawLine(arg0: int, arg1: int, arg2: int, arg3: int, arg4: java.awt.Color): void
+            protected abstract deviceFillRect(arg0: int, arg1: int, arg2: int, arg3: int, arg4: java.awt.Color): void
             protected getBufferedImage(arg0: java.awt.Image): java.awt.image.BufferedImage
             protected hasTransparentPixels(arg0: java.awt.image.BufferedImage): boolean
             protected isBitmaskTransparency(arg0: java.awt.image.BufferedImage): boolean
             protected drawBitmaskImage(arg0: java.awt.image.BufferedImage, arg1: java.awt.geom.AffineTransform, arg2: java.awt.Color, arg3: int, arg4: int, arg5: int, arg6: int): boolean
-            protected drawImageToPlatform(arg0: java.awt.Image, arg1: java.awt.geom.AffineTransform, arg2: java.awt.Color, arg3: int, arg4: int, arg5: int, arg6: int, arg7: boolean): boolean
+            protected abstract drawImageToPlatform(arg0: java.awt.Image, arg1: java.awt.geom.AffineTransform, arg2: java.awt.Color, arg3: int, arg4: int, arg5: int, arg6: int, arg7: boolean): boolean
             public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
             public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
             public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.Color, arg4: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean

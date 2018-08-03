@@ -1,11 +1,11 @@
 declare namespace java {
     namespace lang {
         class Byte extends java.lang.Number implements java.lang.Comparable<java.lang.Byte> {
-            public static MIN_VALUE: byte
-            public static MAX_VALUE: byte
-            public static TYPE: java.lang.Class<java.lang.Byte>
-            public static SIZE: int
-            public static BYTES: int
+            public static readonly MIN_VALUE: byte
+            public static readonly MAX_VALUE: byte
+            public static readonly TYPE: java.lang.Class<java.lang.Byte>
+            public static readonly SIZE: int
+            public static readonly BYTES: int
             public static toString(arg0: byte): string
             public static valueOf(arg0: byte): java.lang.Byte
             public static parseByte(arg0: java.lang.String | string, arg1: int): byte

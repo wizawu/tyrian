@@ -1,11 +1,11 @@
 declare namespace java {
     namespace lang {
         class Integer extends java.lang.Number implements java.lang.Comparable<java.lang.Integer> {
-            public static MIN_VALUE: int
-            public static MAX_VALUE: int
-            public static TYPE: java.lang.Class<java.lang.Integer>
-            public static SIZE: int
-            public static BYTES: int
+            public static readonly MIN_VALUE: int
+            public static readonly MAX_VALUE: int
+            public static readonly TYPE: java.lang.Class<java.lang.Integer>
+            public static readonly SIZE: int
+            public static readonly BYTES: int
             public static toString(arg0: int, arg1: int): string
             public static toUnsignedString(arg0: int, arg1: int): string
             public static toHexString(arg0: int): string

@@ -5,8 +5,8 @@ declare namespace javax {
             setSelectedIndex(arg0: int): void
             clearSelection(): void
             isSelected(): boolean
-            addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
-            removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+            addChangeListener(arg0: javax.swing.event.ChangeListener): void
+            removeChangeListener(arg0: javax.swing.event.ChangeListener): void
         }
     }
 }

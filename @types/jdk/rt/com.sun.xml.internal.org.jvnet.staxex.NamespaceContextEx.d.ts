@@ -8,9 +8,6 @@ declare namespace com {
                             interface NamespaceContextEx extends javax.xml.namespace.NamespaceContext , java.lang.Iterable<com.sun.xml.internal.org.jvnet.staxex.NamespaceContextEx$Binding> {
                                 iterator(): java.util.Iterator<com.sun.xml.internal.org.jvnet.staxex.NamespaceContextEx$Binding>
                             }
-                            interface NamespaceContextEx$$Lambda extends javax.xml.namespace.NamespaceContext , java.lang.Iterable<com.sun.xml.internal.org.jvnet.staxex.NamespaceContextEx$Binding> {
-                                (): java.util.Iterator<com.sun.xml.internal.org.jvnet.staxex.NamespaceContextEx$Binding>
-                            }
                         }
                     }
                 }

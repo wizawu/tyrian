@@ -2,8 +2,8 @@ declare namespace java {
     namespace awt {
         namespace image {
             class ConvolveOp implements java.awt.image.BufferedImageOp , java.awt.image.RasterOp {
-                public static EDGE_ZERO_FILL: int
-                public static EDGE_NO_OP: int
+                public static readonly EDGE_ZERO_FILL: int
+                public static readonly EDGE_NO_OP: int
                 public constructor(arg0: java.awt.image.Kernel, arg1: int, arg2: java.awt.RenderingHints)
                 public constructor(arg0: java.awt.image.Kernel)
                 public getEdgeCondition(): int

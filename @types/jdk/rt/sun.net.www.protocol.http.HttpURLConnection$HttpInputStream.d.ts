@@ -4,8 +4,8 @@ declare namespace sun {
             namespace protocol {
                 namespace http {
                     class HttpURLConnection$HttpInputStream extends java.io.FilterInputStream {
-                        public constructor(arg0: sun.net.www.protocol.http.HttpURLConnection, arg1: java.io.InputStream)
-                        public constructor(arg0: sun.net.www.protocol.http.HttpURLConnection, arg1: java.io.InputStream, arg2: java.net.CacheRequest)
+                        public constructor(arg0: sun.net.www.protocol.http.HttpURLConnection, arg1: java.io.InputStream | java.io.InputStream$$Lambda)
+                        public constructor(arg0: sun.net.www.protocol.http.HttpURLConnection, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: java.net.CacheRequest)
                         public mark(arg0: int): void
                         public reset(): void
                         public read(): int

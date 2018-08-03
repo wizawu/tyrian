@@ -8,29 +8,29 @@ declare namespace com {
                             namespace xs {
                                 namespace traversers {
                                     class XSDHandler {
-                                        protected static VALIDATION: string
-                                        protected static XMLSCHEMA_VALIDATION: string
-                                        protected static ALLOW_JAVA_ENCODINGS: string
-                                        protected static CONTINUE_AFTER_FATAL_ERROR: string
-                                        protected static STANDARD_URI_CONFORMANT_FEATURE: string
-                                        protected static DISALLOW_DOCTYPE: string
-                                        protected static GENERATE_SYNTHETIC_ANNOTATIONS: string
-                                        protected static VALIDATE_ANNOTATIONS: string
-                                        protected static HONOUR_ALL_SCHEMALOCATIONS: string
-                                        protected static NAMESPACE_GROWTH: string
-                                        protected static TOLERATE_DUPLICATES: string
-                                        protected static STRING_INTERNING: string
-                                        protected static ERROR_HANDLER: string
-                                        protected static JAXP_SCHEMA_SOURCE: string
-                                        public static ENTITY_RESOLVER: string
-                                        protected static ENTITY_MANAGER: string
-                                        public static ERROR_REPORTER: string
-                                        public static XMLGRAMMAR_POOL: string
-                                        public static SYMBOL_TABLE: string
-                                        protected static SECURITY_MANAGER: string
-                                        protected static LOCALE: string
-                                        protected static DEBUG_NODE_POOL: boolean
-                                        public static REDEF_IDENTIFIER: string
+                                        protected static readonly VALIDATION: string
+                                        protected static readonly XMLSCHEMA_VALIDATION: string
+                                        protected static readonly ALLOW_JAVA_ENCODINGS: string
+                                        protected static readonly CONTINUE_AFTER_FATAL_ERROR: string
+                                        protected static readonly STANDARD_URI_CONFORMANT_FEATURE: string
+                                        protected static readonly DISALLOW_DOCTYPE: string
+                                        protected static readonly GENERATE_SYNTHETIC_ANNOTATIONS: string
+                                        protected static readonly VALIDATE_ANNOTATIONS: string
+                                        protected static readonly HONOUR_ALL_SCHEMALOCATIONS: string
+                                        protected static readonly NAMESPACE_GROWTH: string
+                                        protected static readonly TOLERATE_DUPLICATES: string
+                                        protected static readonly STRING_INTERNING: string
+                                        protected static readonly ERROR_HANDLER: string
+                                        protected static readonly JAXP_SCHEMA_SOURCE: string
+                                        public static readonly ENTITY_RESOLVER: string
+                                        protected static readonly ENTITY_MANAGER: string
+                                        public static readonly ERROR_REPORTER: string
+                                        public static readonly XMLGRAMMAR_POOL: string
+                                        public static readonly SYMBOL_TABLE: string
+                                        protected static readonly SECURITY_MANAGER: string
+                                        protected static readonly LOCALE: string
+                                        protected static readonly DEBUG_NODE_POOL: boolean
+                                        public static readonly REDEF_IDENTIFIER: string
                                         protected fDeclPool: com.sun.org.apache.xerces.internal.impl.xs.XSDeclarationPool
                                         protected fSecurityManager: com.sun.org.apache.xerces.internal.utils.XMLSecurityManager
                                         public constructor()

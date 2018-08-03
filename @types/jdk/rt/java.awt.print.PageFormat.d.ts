@@ -2,9 +2,9 @@ declare namespace java {
     namespace awt {
         namespace print {
             class PageFormat implements java.lang.Cloneable {
-                public static LANDSCAPE: int
-                public static PORTRAIT: int
-                public static REVERSE_LANDSCAPE: int
+                public static readonly LANDSCAPE: int
+                public static readonly PORTRAIT: int
+                public static readonly REVERSE_LANDSCAPE: int
                 public constructor()
                 public clone(): java.lang.Object
                 public getWidth(): double

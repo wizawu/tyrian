@@ -2,16 +2,16 @@ declare namespace sun {
     namespace awt {
         namespace X11 {
             class XListPeer extends sun.awt.X11.XComponentPeer implements java.awt.peer.ListPeer , sun.awt.X11.XScrollbarClient {
-                public static MARGIN: int
-                public static SPACE: int
-                public static SCROLLBAR_AREA: int
-                public static SCROLLBAR_WIDTH: int
-                public static NONE: int
-                public static WINDOW: int
-                public static VERSCROLLBAR: int
-                public static HORSCROLLBAR: int
-                public static DEFAULT_VISIBLE_ROWS: int
-                public static HORIZ_SCROLL_AMT: int
+                public static readonly MARGIN: int
+                public static readonly SPACE: int
+                public static readonly SCROLLBAR_AREA: int
+                public static readonly SCROLLBAR_WIDTH: int
+                public static readonly NONE: int
+                public static readonly WINDOW: int
+                public static readonly VERSCROLLBAR: int
+                public static readonly HORSCROLLBAR: int
+                public static readonly DEFAULT_VISIBLE_ROWS: int
+                public static readonly HORIZ_SCROLL_AMT: int
                 public preInit(arg0: sun.awt.X11.XCreateWindowParams): void
                 public postInit(arg0: sun.awt.X11.XCreateWindowParams): void
                 public add(arg0: java.lang.String | string, arg1: int): void

@@ -6,7 +6,7 @@ declare namespace java {
                 getLocalAddress(): java.net.SocketAddress
                 setOption<T>(arg0: java.net.SocketOption<T>, arg1: T): java.nio.channels.NetworkChannel
                 getOption<T>(arg0: java.net.SocketOption<T>): T
-                supportedOptions(): java.util.Set<java.net.SocketOption<any>>
+                supportedOptions<T>(): java.util.Set<java.net.SocketOption<any>>
             }
         }
     }

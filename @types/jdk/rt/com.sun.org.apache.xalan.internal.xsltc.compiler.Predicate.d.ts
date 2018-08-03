@@ -7,7 +7,7 @@ declare namespace com {
                         namespace xsltc {
                             namespace compiler {
                                 class Predicate extends com.sun.org.apache.xalan.internal.xsltc.compiler.Expression implements com.sun.org.apache.xalan.internal.xsltc.compiler.Closure {
-                                    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression)
+                                    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression | com.sun.org.apache.xalan.internal.xsltc.compiler.Expression$$Lambda)
                                     public setParser(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Parser): void
                                     public isNthPositionFilter(): boolean
                                     public isNthDescendant(): boolean

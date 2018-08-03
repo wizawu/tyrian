@@ -7,7 +7,7 @@ declare namespace com {
                         namespace model {
                             namespace nav {
                                 class ReflectionNavigator$BinderArg {
-                                    public constructor(arg0: java.lang.reflect.GenericDeclaration | java.lang.reflect.GenericDeclaration$$Lambda, arg1: java.lang.reflect.Type[])
+                                    public constructor(arg0: java.lang.reflect.GenericDeclaration, arg1: java.lang.reflect.Type[])
                                     public static class: java.lang.Class<any>
                                 }
                             }

@@ -9,9 +9,9 @@ declare namespace sun {
             protected nativeFonts: sun.font.NativeFont[]
             protected glyphToCharMap: char[]
             protected checkUseNatives(): boolean
-            protected close(): void
+            protected abstract close(): void
             public canDoStyle(arg0: int): boolean
-            protected getScaler(): sun.font.FontScaler
+            protected abstract getScaler(): sun.font.FontScaler
             protected getUnitsPerEm(): long
             protected getPublicFileName(): string
             public static class: java.lang.Class<any>

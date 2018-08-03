@@ -6,12 +6,12 @@ declare namespace com {
                     namespace oa {
                         namespace poa {
                             class AOMEntry extends com.sun.corba.se.spi.orbutil.fsm.FSMImpl {
-                                public static INVALID: com.sun.corba.se.spi.orbutil.fsm.State
-                                public static INCARN: com.sun.corba.se.spi.orbutil.fsm.State
-                                public static VALID: com.sun.corba.se.spi.orbutil.fsm.State
-                                public static ETHP: com.sun.corba.se.spi.orbutil.fsm.State
-                                public static ETH: com.sun.corba.se.spi.orbutil.fsm.State
-                                public static DESTROYED: com.sun.corba.se.spi.orbutil.fsm.State
+                                public static readonly INVALID: com.sun.corba.se.spi.orbutil.fsm.State
+                                public static readonly INCARN: com.sun.corba.se.spi.orbutil.fsm.State
+                                public static readonly VALID: com.sun.corba.se.spi.orbutil.fsm.State
+                                public static readonly ETHP: com.sun.corba.se.spi.orbutil.fsm.State
+                                public static readonly ETH: com.sun.corba.se.spi.orbutil.fsm.State
+                                public static readonly DESTROYED: com.sun.corba.se.spi.orbutil.fsm.State
                                 public constructor(arg0: com.sun.corba.se.impl.oa.poa.POAImpl)
                                 public startEtherealize(arg0: java.lang.Thread): void
                                 public etherealizeComplete(): void

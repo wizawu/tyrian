@@ -3,12 +3,12 @@ declare namespace javax {
         namespace text {
             namespace rtf {
                 class RTFGenerator {
-                    public static defaultRTFColor: java.awt.Color
-                    public static defaultFontSize: float
-                    public static defaultFontFamily: string
+                    public static readonly defaultRTFColor: java.awt.Color
+                    public static readonly defaultFontSize: float
+                    public static readonly defaultFontFamily: string
                     protected static textKeywords: javax.swing.text.rtf.RTFGenerator$CharacterKeywordPair[]
-                    public static writeDocument(arg0: javax.swing.text.Document, arg1: java.io.OutputStream): void
-                    public constructor(arg0: java.io.OutputStream)
+                    public static writeDocument(arg0: javax.swing.text.Document, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                    public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda)
                     public examineElement(arg0: javax.swing.text.Element): void
                     public writeLineBreak(): void
                     public writeRTFHeader(): void

@@ -2,7 +2,7 @@ declare namespace javax {
     namespace swing {
         namespace text {
             abstract class AbstractWriter {
-                protected static NEWLINE: char
+                protected static readonly NEWLINE: char
                 protected constructor(arg0: java.io.Writer, arg1: javax.swing.text.Document)
                 protected constructor(arg0: java.io.Writer, arg1: javax.swing.text.Document, arg2: int, arg3: int)
                 protected constructor(arg0: java.io.Writer, arg1: javax.swing.text.Element)
@@ -13,7 +13,7 @@ declare namespace javax {
                 protected getWriter(): java.io.Writer
                 protected getDocument(): javax.swing.text.Document
                 protected inRange(arg0: javax.swing.text.Element): boolean
-                protected write(): void
+                protected abstract write(): void
                 protected getText(arg0: javax.swing.text.Element): string
                 protected text(arg0: javax.swing.text.Element): void
                 protected setLineLength(arg0: int): void
@@ -38,6 +38,9 @@ declare namespace javax {
                 protected writeAttributes(arg0: javax.swing.text.AttributeSet): void
                 protected output(arg0: char[], arg1: int, arg2: int): void
                 public static class: java.lang.Class<any>
+            }
+            interface AbstractWriter$$Lambda {
+                (): void
             }
         }
     }

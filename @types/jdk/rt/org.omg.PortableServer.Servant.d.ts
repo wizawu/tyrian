@@ -14,8 +14,11 @@ declare namespace org {
                 public _is_a(arg0: java.lang.String | string): boolean
                 public _non_existent(): boolean
                 public _get_interface_def(): org.omg.CORBA.Object
-                public _all_interfaces(arg0: org.omg.PortableServer.POA, arg1: byte[]): java.lang.String[]
+                public abstract _all_interfaces(arg0: org.omg.PortableServer.POA, arg1: byte[]): java.lang.String[]
                 public static class: java.lang.Class<any>
+            }
+            interface Servant$$Lambda {
+                (arg0: org.omg.PortableServer.POA, arg1: byte[]): java.lang.String[]
             }
         }
     }

@@ -2,11 +2,11 @@ declare namespace javax {
     namespace swing {
         namespace event {
             class TableModelEvent extends java.util.EventObject {
-                public static INSERT: int
-                public static UPDATE: int
-                public static DELETE: int
-                public static HEADER_ROW: int
-                public static ALL_COLUMNS: int
+                public static readonly INSERT: int
+                public static readonly UPDATE: int
+                public static readonly DELETE: int
+                public static readonly HEADER_ROW: int
+                public static readonly ALL_COLUMNS: int
                 protected type: int
                 protected firstRow: int
                 protected lastRow: int

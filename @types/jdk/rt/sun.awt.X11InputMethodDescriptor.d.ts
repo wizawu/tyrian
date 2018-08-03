@@ -6,8 +6,11 @@ declare namespace sun {
             public hasDynamicLocaleList(): boolean
             public getInputMethodDisplayName(arg0: java.util.Locale, arg1: java.util.Locale): string
             public getInputMethodIcon(arg0: java.util.Locale): java.awt.Image
-            public createInputMethod(): java.awt.im.spi.InputMethod
+            public abstract createInputMethod(): java.awt.im.spi.InputMethod
             public static class: java.lang.Class<any>
+        }
+        interface X11InputMethodDescriptor$$Lambda implements java.awt.im.spi.InputMethodDescriptor {
+            (): java.awt.im.spi.InputMethod
         }
     }
 }

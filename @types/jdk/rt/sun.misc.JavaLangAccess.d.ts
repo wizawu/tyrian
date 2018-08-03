@@ -9,13 +9,13 @@ declare namespace sun {
             getRawClassTypeAnnotations(arg0: java.lang.Class<any>): byte[]
             getRawExecutableTypeAnnotations(arg0: java.lang.reflect.Executable): byte[]
             getEnumConstantsShared<E extends java.lang.Enum<E>>(arg0: java.lang.Class<E>): E[]
-            blockedOn(arg0: java.lang.Thread, arg1: sun.nio.ch.Interruptible | sun.nio.ch.Interruptible$$Lambda): void
-            registerShutdownHook(arg0: int, arg1: boolean, arg2: java.lang.Runnable | java.lang.Runnable$$Lambda): void
-            getStackTraceDepth(arg0: java.lang.Throwable): int
-            getStackTraceElement(arg0: java.lang.Throwable, arg1: int): java.lang.StackTraceElement
-            newStringUnsafe(arg0: char[]): string
-            newThreadWithAcc(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda, arg1: java.security.AccessControlContext): java.lang.Thread
-            invokeFinalize(arg0: java.lang.Object): void
+            blockedOn<E extends java.lang.Enum<E>>(arg0: java.lang.Thread, arg1: sun.nio.ch.Interruptible | sun.nio.ch.Interruptible$$Lambda): void
+            registerShutdownHook<E extends java.lang.Enum<E>>(arg0: int, arg1: boolean, arg2: java.lang.Runnable | java.lang.Runnable$$Lambda): void
+            getStackTraceDepth<E extends java.lang.Enum<E>>(arg0: java.lang.Throwable): int
+            getStackTraceElement<E extends java.lang.Enum<E>>(arg0: java.lang.Throwable, arg1: int): java.lang.StackTraceElement
+            newStringUnsafe<E extends java.lang.Enum<E>>(arg0: char[]): string
+            newThreadWithAcc<E extends java.lang.Enum<E>>(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda, arg1: java.security.AccessControlContext): java.lang.Thread
+            invokeFinalize<E extends java.lang.Enum<E>>(arg0: java.lang.Object): void
         }
     }
 }

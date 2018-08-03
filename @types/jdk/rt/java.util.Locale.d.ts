@@ -1,30 +1,30 @@
 declare namespace java {
     namespace util {
         class Locale implements java.lang.Cloneable , java.io.Serializable {
-            public static ENGLISH: java.util.Locale
-            public static FRENCH: java.util.Locale
-            public static GERMAN: java.util.Locale
-            public static ITALIAN: java.util.Locale
-            public static JAPANESE: java.util.Locale
-            public static KOREAN: java.util.Locale
-            public static CHINESE: java.util.Locale
-            public static SIMPLIFIED_CHINESE: java.util.Locale
-            public static TRADITIONAL_CHINESE: java.util.Locale
-            public static FRANCE: java.util.Locale
-            public static GERMANY: java.util.Locale
-            public static ITALY: java.util.Locale
-            public static JAPAN: java.util.Locale
-            public static KOREA: java.util.Locale
-            public static CHINA: java.util.Locale
-            public static PRC: java.util.Locale
-            public static TAIWAN: java.util.Locale
-            public static UK: java.util.Locale
-            public static US: java.util.Locale
-            public static CANADA: java.util.Locale
-            public static CANADA_FRENCH: java.util.Locale
-            public static ROOT: java.util.Locale
-            public static PRIVATE_USE_EXTENSION: char
-            public static UNICODE_LOCALE_EXTENSION: char
+            public static readonly ENGLISH: java.util.Locale
+            public static readonly FRENCH: java.util.Locale
+            public static readonly GERMAN: java.util.Locale
+            public static readonly ITALIAN: java.util.Locale
+            public static readonly JAPANESE: java.util.Locale
+            public static readonly KOREAN: java.util.Locale
+            public static readonly CHINESE: java.util.Locale
+            public static readonly SIMPLIFIED_CHINESE: java.util.Locale
+            public static readonly TRADITIONAL_CHINESE: java.util.Locale
+            public static readonly FRANCE: java.util.Locale
+            public static readonly GERMANY: java.util.Locale
+            public static readonly ITALY: java.util.Locale
+            public static readonly JAPAN: java.util.Locale
+            public static readonly KOREA: java.util.Locale
+            public static readonly CHINA: java.util.Locale
+            public static readonly PRC: java.util.Locale
+            public static readonly TAIWAN: java.util.Locale
+            public static readonly UK: java.util.Locale
+            public static readonly US: java.util.Locale
+            public static readonly CANADA: java.util.Locale
+            public static readonly CANADA_FRENCH: java.util.Locale
+            public static readonly ROOT: java.util.Locale
+            public static readonly PRIVATE_USE_EXTENSION: char
+            public static readonly UNICODE_LOCALE_EXTENSION: char
             public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
             public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
             public constructor(arg0: java.lang.String | string)

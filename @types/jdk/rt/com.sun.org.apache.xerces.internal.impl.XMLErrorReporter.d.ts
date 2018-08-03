@@ -6,11 +6,11 @@ declare namespace com {
                     namespace internal {
                         namespace impl {
                             class XMLErrorReporter implements com.sun.org.apache.xerces.internal.xni.parser.XMLComponent {
-                                public static SEVERITY_WARNING: short
-                                public static SEVERITY_ERROR: short
-                                public static SEVERITY_FATAL_ERROR: short
-                                protected static CONTINUE_AFTER_FATAL_ERROR: string
-                                protected static ERROR_HANDLER: string
+                                public static readonly SEVERITY_WARNING: short
+                                public static readonly SEVERITY_ERROR: short
+                                public static readonly SEVERITY_FATAL_ERROR: short
+                                protected static readonly CONTINUE_AFTER_FATAL_ERROR: string
+                                protected static readonly ERROR_HANDLER: string
                                 protected fLocale: java.util.Locale
                                 protected fMessageFormatters: java.util.Map<java.lang.String, com.sun.org.apache.xerces.internal.util.MessageFormatter>
                                 protected fErrorHandler: com.sun.org.apache.xerces.internal.xni.parser.XMLErrorHandler

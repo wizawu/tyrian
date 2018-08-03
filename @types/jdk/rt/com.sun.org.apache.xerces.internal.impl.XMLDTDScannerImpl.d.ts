@@ -6,9 +6,9 @@ declare namespace com {
                     namespace internal {
                         namespace impl {
                             class XMLDTDScannerImpl extends com.sun.org.apache.xerces.internal.impl.XMLScanner implements com.sun.org.apache.xerces.internal.xni.parser.XMLDTDScanner , com.sun.org.apache.xerces.internal.xni.parser.XMLComponent , com.sun.org.apache.xerces.internal.impl.XMLEntityHandler {
-                                protected static SCANNER_STATE_END_OF_INPUT: int
-                                protected static SCANNER_STATE_TEXT_DECL: int
-                                protected static SCANNER_STATE_MARKUP_DECL: int
+                                protected static readonly SCANNER_STATE_END_OF_INPUT: int
+                                protected static readonly SCANNER_STATE_TEXT_DECL: int
+                                protected static readonly SCANNER_STATE_MARKUP_DECL: int
                                 public fDTDHandler: com.sun.org.apache.xerces.internal.xni.XMLDTDHandler
                                 protected fDTDContentModelHandler: com.sun.org.apache.xerces.internal.xni.XMLDTDContentModelHandler
                                 protected fScannerState: int

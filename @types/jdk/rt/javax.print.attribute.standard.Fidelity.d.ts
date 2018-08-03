@@ -3,8 +3,8 @@ declare namespace javax {
         namespace attribute {
             namespace standard {
                 class Fidelity extends javax.print.attribute.EnumSyntax implements javax.print.attribute.PrintJobAttribute , javax.print.attribute.PrintRequestAttribute {
-                    public static FIDELITY_TRUE: javax.print.attribute.standard.Fidelity
-                    public static FIDELITY_FALSE: javax.print.attribute.standard.Fidelity
+                    public static readonly FIDELITY_TRUE: javax.print.attribute.standard.Fidelity
+                    public static readonly FIDELITY_FALSE: javax.print.attribute.standard.Fidelity
                     protected constructor(arg0: int)
                     protected getStringTable(): java.lang.String[]
                     protected getEnumValueTable(): javax.print.attribute.EnumSyntax[]

@@ -8,7 +8,7 @@ declare namespace com {
                             namespace unmarshaller {
                                 class WildcardLoader extends com.sun.xml.internal.bind.v2.runtime.unmarshaller.ProxyLoader {
                                     public constructor(arg0: javax.xml.bind.annotation.DomHandler, arg1: com.sun.xml.internal.bind.v2.model.core.WildcardMode)
-                                    protected selectLoader(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$State, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName): com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader
+                                    protected selectLoader(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$State, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName | com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName$$Lambda): com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader
                                     public static class: java.lang.Class<any>
                                 }
                             }

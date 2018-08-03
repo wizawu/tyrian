@@ -3,7 +3,7 @@ declare namespace sun {
         namespace cs {
             namespace ext {
                 class SJIS_0213$Decoder extends java.nio.charset.CharsetDecoder {
-                    protected static UNMAPPABLE: char
+                    protected static readonly UNMAPPABLE: char
                     protected constructor(arg0: java.nio.charset.Charset)
                     protected decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
                     protected decodeSingle(arg0: int): char

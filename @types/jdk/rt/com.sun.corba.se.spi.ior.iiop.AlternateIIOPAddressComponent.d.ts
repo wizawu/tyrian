@@ -8,9 +8,6 @@ declare namespace com {
                             interface AlternateIIOPAddressComponent extends com.sun.corba.se.spi.ior.TaggedComponent {
                                 getAddress(): com.sun.corba.se.spi.ior.iiop.IIOPAddress
                             }
-                            interface AlternateIIOPAddressComponent$$Lambda extends com.sun.corba.se.spi.ior.TaggedComponent {
-                                (): com.sun.corba.se.spi.ior.iiop.IIOPAddress
-                            }
                         }
                     }
                 }

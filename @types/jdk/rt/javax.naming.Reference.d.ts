@@ -6,9 +6,9 @@ declare namespace javax {
             protected classFactory: string
             protected classFactoryLocation: string
             public constructor(arg0: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: javax.naming.RefAddr)
+            public constructor(arg0: java.lang.String | string, arg1: javax.naming.RefAddr | javax.naming.RefAddr$$Lambda)
             public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
-            public constructor(arg0: java.lang.String | string, arg1: javax.naming.RefAddr, arg2: java.lang.String | string, arg3: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: javax.naming.RefAddr | javax.naming.RefAddr$$Lambda, arg2: java.lang.String | string, arg3: java.lang.String | string)
             public getClassName(): string
             public getFactoryClassName(): string
             public getFactoryClassLocation(): string
@@ -16,8 +16,8 @@ declare namespace javax {
             public get(arg0: int): javax.naming.RefAddr
             public getAll(): java.util.Enumeration<javax.naming.RefAddr>
             public size(): int
-            public add(arg0: javax.naming.RefAddr): void
-            public add(arg0: int, arg1: javax.naming.RefAddr): void
+            public add(arg0: javax.naming.RefAddr | javax.naming.RefAddr$$Lambda): void
+            public add(arg0: int, arg1: javax.naming.RefAddr | javax.naming.RefAddr$$Lambda): void
             public remove(arg0: int): java.lang.Object
             public clear(): void
             public equals(arg0: java.lang.Object): boolean

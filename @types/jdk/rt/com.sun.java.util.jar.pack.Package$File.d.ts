@@ -18,8 +18,8 @@ declare namespace com {
                             public addBytes(arg0: byte[]): void
                             public addBytes(arg0: byte[], arg1: int, arg2: int): void
                             public getFileLength(): long
-                            public writeTo(arg0: java.io.OutputStream): void
-                            public readFrom(arg0: java.io.InputStream): void
+                            public writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                            public readFrom(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
                             public getInputStream(): java.io.InputStream
                             protected visitRefs(arg0: int, arg1: java.util.Collection<com.sun.java.util.jar.pack.ConstantPool$Entry>): void
                             public compareTo(arg0: java.lang.Object): int

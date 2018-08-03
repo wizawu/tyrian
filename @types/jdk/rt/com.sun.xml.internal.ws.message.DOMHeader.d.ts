@@ -5,7 +5,7 @@ declare namespace com {
                 namespace ws {
                     namespace message {
                         class DOMHeader<N extends org.w3c.dom.Element> extends com.sun.xml.internal.ws.message.AbstractHeaderImpl {
-                            protected node: N
+                            protected readonly node: N
                             public constructor(arg0: N)
                             public getNamespaceURI(): string
                             public getLocalPart(): string

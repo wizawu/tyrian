@@ -3,9 +3,9 @@ declare namespace java {
         namespace geom {
             abstract class RoundRectangle2D extends java.awt.geom.RectangularShape {
                 protected constructor()
-                public getArcWidth(): double
-                public getArcHeight(): double
-                public setRoundRect(arg0: double, arg1: double, arg2: double, arg3: double, arg4: double, arg5: double): void
+                public abstract getArcWidth(): double
+                public abstract getArcHeight(): double
+                public abstract setRoundRect(arg0: double, arg1: double, arg2: double, arg3: double, arg4: double, arg5: double): void
                 public setRoundRect(arg0: java.awt.geom.RoundRectangle2D): void
                 public setFrame(arg0: double, arg1: double, arg2: double, arg3: double): void
                 public contains(arg0: double, arg1: double): boolean

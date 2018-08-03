@@ -6,17 +6,17 @@ declare namespace com {
                     namespace saaj {
                         namespace soap {
                             abstract class MessageImpl extends javax.xml.soap.SOAPMessage implements javax.xml.soap.SOAPConstants {
-                                public static CONTENT_ID: string
-                                public static CONTENT_LOCATION: string
-                                protected static log: java.util.logging.Logger
-                                protected static PLAIN_XML_FLAG: int
-                                protected static MIME_MULTIPART_FLAG: int
-                                protected static SOAP1_1_FLAG: int
-                                protected static SOAP1_2_FLAG: int
-                                protected static MIME_MULTIPART_XOP_SOAP1_1_FLAG: int
-                                protected static MIME_MULTIPART_XOP_SOAP1_2_FLAG: int
-                                protected static XOP_FLAG: int
-                                protected static FI_ENCODED_FLAG: int
+                                public static readonly CONTENT_ID: string
+                                public static readonly CONTENT_LOCATION: string
+                                protected static readonly log: java.util.logging.Logger
+                                protected static readonly PLAIN_XML_FLAG: int
+                                protected static readonly MIME_MULTIPART_FLAG: int
+                                protected static readonly SOAP1_1_FLAG: int
+                                protected static readonly SOAP1_2_FLAG: int
+                                protected static readonly MIME_MULTIPART_XOP_SOAP1_1_FLAG: int
+                                protected static readonly MIME_MULTIPART_XOP_SOAP1_2_FLAG: int
+                                protected static readonly XOP_FLAG: int
+                                protected static readonly FI_ENCODED_FLAG: int
                                 protected headers: javax.xml.soap.MimeHeaders
                                 protected contentType: com.sun.xml.internal.messaging.saaj.packaging.mime.internet.ContentType
                                 protected soapPartImpl: com.sun.xml.internal.messaging.saaj.soap.SOAPPartImpl
@@ -35,16 +35,16 @@ declare namespace com {
                                 protected constructor(arg0: javax.xml.soap.SOAPMessage)
                                 protected static isSoap1_1Content(arg0: int): boolean
                                 protected static isSoap1_2Content(arg0: int): boolean
-                                protected constructor(arg0: javax.xml.soap.MimeHeaders, arg1: java.io.InputStream)
-                                protected constructor(arg0: javax.xml.soap.MimeHeaders, arg1: com.sun.xml.internal.messaging.saaj.packaging.mime.internet.ContentType, arg2: int, arg3: java.io.InputStream)
+                                protected constructor(arg0: javax.xml.soap.MimeHeaders, arg1: java.io.InputStream | java.io.InputStream$$Lambda)
+                                protected constructor(arg0: javax.xml.soap.MimeHeaders, arg1: com.sun.xml.internal.messaging.saaj.packaging.mime.internet.ContentType, arg2: int, arg3: java.io.InputStream | java.io.InputStream$$Lambda)
                                 public isFastInfoset(): boolean
                                 public acceptFastInfoset(): boolean
                                 public setIsFastInfoset(arg0: boolean): void
                                 public getProperty(arg0: java.lang.String | string): java.lang.Object
                                 public setProperty(arg0: java.lang.String | string, arg1: java.lang.Object): void
-                                protected isCorrectSoapVersion(arg0: int): boolean
-                                protected getExpectedContentType(): string
-                                protected getExpectedAcceptHeader(): string
+                                protected abstract isCorrectSoapVersion(arg0: int): boolean
+                                protected abstract getExpectedContentType(): string
+                                protected abstract getExpectedAcceptHeader(): string
                                 public getMimeHeaders(): javax.xml.soap.MimeHeaders
                                 public getContentType(): string
                                 public setContentType(arg0: java.lang.String | string): void
@@ -57,7 +57,7 @@ declare namespace com {
                                 public saveRequired(): boolean
                                 public getContentDescription(): string
                                 public setContentDescription(arg0: java.lang.String | string): void
-                                public getSOAPPart(): javax.xml.soap.SOAPPart
+                                public abstract getSOAPPart(): javax.xml.soap.SOAPPart
                                 public removeAllAttachments(): void
                                 public countAttachments(): int
                                 public addAttachmentPart(arg0: javax.xml.soap.AttachmentPart): void
@@ -67,7 +67,7 @@ declare namespace com {
                                 public createAttachmentPart(): javax.xml.soap.AttachmentPart
                                 public getAttachment(arg0: javax.xml.soap.SOAPElement): javax.xml.soap.AttachmentPart
                                 public saveChanges(): void
-                                public writeTo(arg0: java.io.OutputStream): void
+                                public writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                                 public getSOAPBody(): javax.xml.soap.SOAPBody
                                 public getSOAPHeader(): javax.xml.soap.SOAPHeader
                                 public setLazyAttachments(arg0: boolean): void

@@ -13,7 +13,7 @@ declare namespace java {
                 public listIterator(arg0: int): java.util.ListIterator<E>
                 public subList(arg0: int, arg1: int): java.util.List<E>
                 public forEach(arg0: java.util.function$.Consumer$$Lambda<E>): void
-                public replaceAll(arg0: java.util.function$.UnaryOperator<E> | java.util.function$.UnaryOperator$$Lambda<E>): void
+                public replaceAll(arg0: java.util.function$.UnaryOperator<E>): void
                 public sort(arg0: java.util.Comparator<E>): void
                 public removeAll(arg0: java.util.Collection<any>): boolean
                 public retainAll(arg0: java.util.Collection<any>): boolean

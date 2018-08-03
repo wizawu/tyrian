@@ -5,7 +5,7 @@ declare namespace com {
                 namespace txw2 {
                     namespace output {
                         class TXWSerializer implements com.sun.xml.internal.txw2.output.XmlSerializer {
-                            public txw: com.sun.xml.internal.txw2.TypedXmlWriter
+                            public readonly txw: com.sun.xml.internal.txw2.TypedXmlWriter
                             public constructor(arg0: com.sun.xml.internal.txw2.TypedXmlWriter)
                             public startDocument(): void
                             public endDocument(): void

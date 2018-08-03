@@ -2,9 +2,9 @@ declare namespace sun {
     namespace security {
         namespace provider {
             class PolicyParser$PrincipalEntry implements java.security.Principal {
-                public static WILDCARD_CLASS: string
-                public static WILDCARD_NAME: string
-                public static REPLACE_NAME: string
+                public static readonly WILDCARD_CLASS: string
+                public static readonly WILDCARD_NAME: string
+                public static readonly REPLACE_NAME: string
                 public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
                 public getPrincipalClass(): string
                 public getPrincipalName(): string

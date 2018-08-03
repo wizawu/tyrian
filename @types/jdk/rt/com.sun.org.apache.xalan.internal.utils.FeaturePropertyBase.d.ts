@@ -15,9 +15,12 @@ declare namespace com {
                                 public getValue(arg0: java.lang.String | string): string
                                 public getValueAsString(arg0: java.lang.String | string): string
                                 public getValueByIndex(arg0: int): string
-                                public getIndex(arg0: java.lang.String | string): int
+                                public abstract getIndex(arg0: java.lang.String | string): int
                                 public getIndex<E extends java.lang.Enum<E>>(arg0: java.lang.Class<E>, arg1: java.lang.String | string): int
                                 public static class: java.lang.Class<any>
+                            }
+                            interface FeaturePropertyBase$$Lambda {
+                                (arg0: java.lang.String | string): int
                             }
                         }
                     }

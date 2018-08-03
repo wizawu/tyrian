@@ -4,7 +4,7 @@ declare namespace com {
             namespace glassfish {
                 namespace gmbal {
                     class AMXClient implements com.sun.org.glassfish.gmbal.AMXMBeanInterface {
-                        public static NULL_OBJECTNAME: javax.management.ObjectName
+                        public static readonly NULL_OBJECTNAME: javax.management.ObjectName
                         public equals(arg0: java.lang.Object): boolean
                         public hashCode(): int
                         public toString(): string

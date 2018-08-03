@@ -6,18 +6,18 @@ declare namespace com {
                     namespace internal {
                         namespace serialize {
                             class XML11Serializer extends com.sun.org.apache.xml.internal.serialize.XMLSerializer {
-                                protected static DEBUG: boolean
+                                protected static readonly DEBUG: boolean
                                 protected fNSBinder: com.sun.org.apache.xerces.internal.util.NamespaceSupport
                                 protected fLocalNSBinder: com.sun.org.apache.xerces.internal.util.NamespaceSupport
                                 protected fSymbolTable: com.sun.org.apache.xerces.internal.util.SymbolTable
                                 protected fDOML1: boolean
                                 protected fNamespaceCounter: int
-                                protected static PREFIX: string
+                                protected static readonly PREFIX: string
                                 protected fNamespaces: boolean
                                 public constructor()
                                 public constructor(arg0: com.sun.org.apache.xml.internal.serialize.OutputFormat)
                                 public constructor(arg0: java.io.Writer, arg1: com.sun.org.apache.xml.internal.serialize.OutputFormat)
-                                public constructor(arg0: java.io.OutputStream, arg1: com.sun.org.apache.xml.internal.serialize.OutputFormat)
+                                public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: com.sun.org.apache.xml.internal.serialize.OutputFormat)
                                 public characters(arg0: char[], arg1: int, arg2: int): void
                                 protected printEscaped(arg0: java.lang.String | string): void
                                 protected printCDATAText(arg0: java.lang.String | string): void

@@ -3,7 +3,7 @@ declare namespace jdk {
         namespace internal {
             namespace ir {
                 class LocalVariableConversion {
-                    public constructor(arg0: jdk.nashorn.internal.ir.Symbol, arg1: jdk.nashorn.internal.codegen.types.Type, arg2: jdk.nashorn.internal.codegen.types.Type, arg3: jdk.nashorn.internal.ir.LocalVariableConversion)
+                    public constructor(arg0: jdk.nashorn.internal.ir.Symbol, arg1: jdk.nashorn.internal.codegen.types.Type | jdk.nashorn.internal.codegen.types.Type$$Lambda, arg2: jdk.nashorn.internal.codegen.types.Type | jdk.nashorn.internal.codegen.types.Type$$Lambda, arg3: jdk.nashorn.internal.ir.LocalVariableConversion)
                     public getFrom(): jdk.nashorn.internal.codegen.types.Type
                     public getTo(): jdk.nashorn.internal.codegen.types.Type
                     public getNext(): jdk.nashorn.internal.ir.LocalVariableConversion

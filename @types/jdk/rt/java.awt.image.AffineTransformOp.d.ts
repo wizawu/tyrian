@@ -2,9 +2,9 @@ declare namespace java {
     namespace awt {
         namespace image {
             class AffineTransformOp implements java.awt.image.BufferedImageOp , java.awt.image.RasterOp {
-                public static TYPE_NEAREST_NEIGHBOR: int
-                public static TYPE_BILINEAR: int
-                public static TYPE_BICUBIC: int
+                public static readonly TYPE_NEAREST_NEIGHBOR: int
+                public static readonly TYPE_BILINEAR: int
+                public static readonly TYPE_BICUBIC: int
                 public constructor(arg0: java.awt.geom.AffineTransform, arg1: java.awt.RenderingHints)
                 public constructor(arg0: java.awt.geom.AffineTransform, arg1: int)
                 public getInterpolationType(): int

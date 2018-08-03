@@ -7,9 +7,9 @@ declare namespace com {
                         namespace runtime {
                             namespace unmarshaller {
                                 class UnmarshallerImpl extends javax.xml.bind.helpers.AbstractUnmarshallerImpl implements javax.xml.bind.ValidationEventHandler , java.io.Closeable {
-                                    protected context: com.sun.xml.internal.bind.v2.runtime.JAXBContextImpl
-                                    public coordinator: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext
-                                    public static FACTORY: string
+                                    protected readonly context: com.sun.xml.internal.bind.v2.runtime.JAXBContextImpl
+                                    public readonly coordinator: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext
+                                    public static readonly FACTORY: string
                                     public constructor(arg0: com.sun.xml.internal.bind.v2.runtime.JAXBContextImpl, arg1: com.sun.xml.internal.bind.v2.runtime.AssociationMap)
                                     public getUnmarshallerHandler(): javax.xml.bind.UnmarshallerHandler
                                     protected getXMLReader(): org.xml.sax.XMLReader
@@ -30,7 +30,7 @@ declare namespace com {
                                     public unmarshal0<T>(arg0: javax.xml.stream.XMLStreamReader, arg1: com.sun.xml.internal.bind.v2.runtime.JaxBeanInfo): java.lang.Object
                                     public unmarshal<T>(arg0: javax.xml.stream.XMLEventReader, arg1: java.lang.Class<T>): javax.xml.bind.JAXBElement<T>
                                     public unmarshal<T>(arg0: javax.xml.stream.XMLEventReader): java.lang.Object
-                                    public unmarshal0<T>(arg0: java.io.InputStream, arg1: com.sun.xml.internal.bind.v2.runtime.JaxBeanInfo): java.lang.Object
+                                    public unmarshal0<T>(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: com.sun.xml.internal.bind.v2.runtime.JaxBeanInfo): java.lang.Object
                                     public getProperty<T>(arg0: java.lang.String | string): java.lang.Object
                                     public setProperty<T>(arg0: java.lang.String | string, arg1: java.lang.Object): void
                                     public setSchema<T>(arg0: javax.xml.validation.Schema): void

@@ -3,10 +3,10 @@ declare namespace java {
         namespace logging {
             abstract class Handler {
                 protected constructor()
-                public publish(arg0: java.util.logging.LogRecord): void
-                public flush(): void
-                public close(): void
-                public setFormatter(arg0: java.util.logging.Formatter): void
+                public abstract publish(arg0: java.util.logging.LogRecord): void
+                public abstract flush(): void
+                public abstract close(): void
+                public setFormatter(arg0: java.util.logging.Formatter | java.util.logging.Formatter$$Lambda): void
                 public getFormatter(): java.util.logging.Formatter
                 public setEncoding(arg0: java.lang.String | string): void
                 public getEncoding(): string

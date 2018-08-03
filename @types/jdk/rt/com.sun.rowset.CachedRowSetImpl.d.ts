@@ -110,8 +110,8 @@ declare namespace com {
                 public updateDate(arg0: int, arg1: java.sql.Date): void
                 public updateTime(arg0: int, arg1: java.sql.Time): void
                 public updateTimestamp(arg0: int, arg1: java.sql.Timestamp): void
-                public updateAsciiStream(arg0: int, arg1: java.io.InputStream, arg2: int): void
-                public updateBinaryStream(arg0: int, arg1: java.io.InputStream, arg2: int): void
+                public updateAsciiStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
+                public updateBinaryStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
                 public updateCharacterStream(arg0: int, arg1: java.io.Reader, arg2: int): void
                 public updateObject(arg0: int, arg1: java.lang.Object, arg2: int): void
                 public updateObject(arg0: int, arg1: java.lang.Object): void
@@ -129,8 +129,8 @@ declare namespace com {
                 public updateDate(arg0: java.lang.String | string, arg1: java.sql.Date): void
                 public updateTime(arg0: java.lang.String | string, arg1: java.sql.Time): void
                 public updateTimestamp(arg0: java.lang.String | string, arg1: java.sql.Timestamp): void
-                public updateAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: int): void
-                public updateBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: int): void
+                public updateAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
+                public updateBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
                 public updateCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: int): void
                 public updateObject(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: int): void
                 public updateObject(arg0: java.lang.String | string, arg1: java.lang.Object): void
@@ -231,10 +231,10 @@ declare namespace com {
                 public updateNCharacterStream<T>(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: long): void
                 public updateNCharacterStream<T>(arg0: int, arg1: java.io.Reader): void
                 public updateNCharacterStream<T>(arg0: java.lang.String | string, arg1: java.io.Reader): void
-                public updateBlob<T>(arg0: int, arg1: java.io.InputStream, arg2: long): void
-                public updateBlob<T>(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: long): void
-                public updateBlob<T>(arg0: int, arg1: java.io.InputStream): void
-                public updateBlob<T>(arg0: java.lang.String | string, arg1: java.io.InputStream): void
+                public updateBlob<T>(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
+                public updateBlob<T>(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
+                public updateBlob<T>(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
+                public updateBlob<T>(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
                 public updateClob<T>(arg0: int, arg1: java.io.Reader, arg2: long): void
                 public updateClob<T>(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: long): void
                 public updateClob<T>(arg0: int, arg1: java.io.Reader): void
@@ -243,18 +243,18 @@ declare namespace com {
                 public updateNClob<T>(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: long): void
                 public updateNClob<T>(arg0: int, arg1: java.io.Reader): void
                 public updateNClob<T>(arg0: java.lang.String | string, arg1: java.io.Reader): void
-                public updateAsciiStream<T>(arg0: int, arg1: java.io.InputStream, arg2: long): void
-                public updateBinaryStream<T>(arg0: int, arg1: java.io.InputStream, arg2: long): void
+                public updateAsciiStream<T>(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
+                public updateBinaryStream<T>(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
                 public updateCharacterStream<T>(arg0: int, arg1: java.io.Reader, arg2: long): void
                 public updateCharacterStream<T>(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: long): void
-                public updateAsciiStream<T>(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: long): void
-                public updateBinaryStream<T>(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: long): void
-                public updateBinaryStream<T>(arg0: int, arg1: java.io.InputStream): void
-                public updateBinaryStream<T>(arg0: java.lang.String | string, arg1: java.io.InputStream): void
+                public updateAsciiStream<T>(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
+                public updateBinaryStream<T>(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
+                public updateBinaryStream<T>(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
+                public updateBinaryStream<T>(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
                 public updateCharacterStream<T>(arg0: int, arg1: java.io.Reader): void
                 public updateCharacterStream<T>(arg0: java.lang.String | string, arg1: java.io.Reader): void
-                public updateAsciiStream<T>(arg0: int, arg1: java.io.InputStream): void
-                public updateAsciiStream<T>(arg0: java.lang.String | string, arg1: java.io.InputStream): void
+                public updateAsciiStream<T>(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
+                public updateAsciiStream<T>(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
                 public setURL<T>(arg0: int, arg1: java.net.URL): void
                 public setNClob<T>(arg0: int, arg1: java.io.Reader): void
                 public setNClob<T>(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: long): void
@@ -276,19 +276,19 @@ declare namespace com {
                 public setTime<T>(arg0: java.lang.String | string, arg1: java.sql.Time, arg2: java.util.Calendar): void
                 public setClob<T>(arg0: int, arg1: java.io.Reader): void
                 public setClob<T>(arg0: int, arg1: java.io.Reader, arg2: long): void
-                public setBlob<T>(arg0: int, arg1: java.io.InputStream, arg2: long): void
-                public setBlob<T>(arg0: int, arg1: java.io.InputStream): void
-                public setBlob<T>(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: long): void
+                public setBlob<T>(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
+                public setBlob<T>(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
+                public setBlob<T>(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
                 public setBlob<T>(arg0: java.lang.String | string, arg1: java.sql.Blob): void
-                public setBlob<T>(arg0: java.lang.String | string, arg1: java.io.InputStream): void
+                public setBlob<T>(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
                 public setObject<T>(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: int, arg3: int): void
                 public setObject<T>(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: int): void
                 public setObject<T>(arg0: java.lang.String | string, arg1: java.lang.Object): void
-                public setAsciiStream<T>(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: int): void
-                public setBinaryStream<T>(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: int): void
+                public setAsciiStream<T>(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
+                public setBinaryStream<T>(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
                 public setCharacterStream<T>(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: int): void
-                public setAsciiStream<T>(arg0: java.lang.String | string, arg1: java.io.InputStream): void
-                public setBinaryStream<T>(arg0: java.lang.String | string, arg1: java.io.InputStream): void
+                public setAsciiStream<T>(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
+                public setBinaryStream<T>(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
                 public setCharacterStream<T>(arg0: java.lang.String | string, arg1: java.io.Reader): void
                 public setBigDecimal<T>(arg0: java.lang.String | string, arg1: java.math.BigDecimal): void
                 public setString<T>(arg0: java.lang.String | string, arg1: java.lang.String | string): void

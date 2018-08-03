@@ -13,12 +13,15 @@ declare namespace java {
             public clear(): void
             public keySet(): java.util.Set<K>
             public values(): java.util.Collection<V>
-            public entrySet(): java.util.Set<java.util.Map$Entry<K, V>>
+            public abstract entrySet(): java.util.Set<java.util.Map$Entry<K, V>>
             public equals(arg0: java.lang.Object): boolean
             public hashCode(): int
             public toString(): string
             protected clone(): java.lang.Object
             public static class: java.lang.Class<any>
+        }
+        interface AbstractMap$$Lambda<K, V> implements java.util.Map<K, V> {
+            (): java.util.Set<java.util.Map$Entry<K, V>>
         }
     }
 }

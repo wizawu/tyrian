@@ -1,7 +1,7 @@
 declare namespace sun {
     namespace text {
         class CompactByteArray implements java.lang.Cloneable {
-            public static UNICODECOUNT: int
+            public static readonly UNICODECOUNT: int
             public constructor(arg0: byte)
             public constructor(arg0: short[], arg1: byte[])
             public elementAt(arg0: char): byte

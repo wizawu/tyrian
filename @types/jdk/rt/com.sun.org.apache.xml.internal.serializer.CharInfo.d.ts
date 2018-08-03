@@ -6,11 +6,11 @@ declare namespace com {
                     namespace internal {
                         namespace serializer {
                             class CharInfo {
-                                public static HTML_ENTITIES_RESOURCE: string
-                                public static XML_ENTITIES_RESOURCE: string
-                                public static S_HORIZONAL_TAB: char
-                                public static S_LINEFEED: char
-                                public static S_CARRIAGERETURN: char
+                                public static readonly HTML_ENTITIES_RESOURCE: string
+                                public static readonly XML_ENTITIES_RESOURCE: string
+                                public static readonly S_HORIZONAL_TAB: char
+                                public static readonly S_LINEFEED: char
+                                public static readonly S_CARRIAGERETURN: char
                                 public static class: java.lang.Class<any>
                             }
                         }

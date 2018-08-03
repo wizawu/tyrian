@@ -4,7 +4,7 @@ declare namespace com {
             namespace internal {
                 namespace bind {
                     class DatatypeConverterImpl implements javax.xml.bind.DatatypeConverterInterface {
-                        public static theInstance: javax.xml.bind.DatatypeConverterInterface
+                        public static readonly theInstance: javax.xml.bind.DatatypeConverterInterface
                         protected constructor()
                         public static _parseInteger(arg0: java.lang.CharSequence): java.math.BigInteger
                         public static _printInteger(arg0: java.math.BigInteger): string

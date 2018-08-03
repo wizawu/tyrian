@@ -5,7 +5,7 @@ declare namespace jdk {
                 namespace asm {
                     namespace commons {
                         class LocalVariablesSorter extends jdk.internal.org.objectweb.asm.MethodVisitor {
-                            protected firstLocal: int
+                            protected readonly firstLocal: int
                             protected nextLocal: int
                             public constructor(arg0: int, arg1: java.lang.String | string, arg2: jdk.internal.org.objectweb.asm.MethodVisitor)
                             protected constructor(arg0: int, arg1: int, arg2: java.lang.String | string, arg3: jdk.internal.org.objectweb.asm.MethodVisitor)

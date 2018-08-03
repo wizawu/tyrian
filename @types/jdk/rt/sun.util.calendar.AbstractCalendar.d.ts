@@ -16,11 +16,11 @@ declare namespace sun {
                 public getTimeOfDayValue(arg0: sun.util.calendar.CalendarDate): long
                 public setTimeOfDay(arg0: sun.util.calendar.CalendarDate, arg1: int): sun.util.calendar.CalendarDate
                 public getWeekLength(): int
-                protected isLeapYear(arg0: sun.util.calendar.CalendarDate): boolean
+                protected abstract isLeapYear(arg0: sun.util.calendar.CalendarDate): boolean
                 public getNthDayOfWeek(arg0: int, arg1: int, arg2: sun.util.calendar.CalendarDate): sun.util.calendar.CalendarDate
                 public static getDayOfWeekDateOnOrBefore(arg0: long, arg1: int): long
-                protected getFixedDate(arg0: sun.util.calendar.CalendarDate): long
-                protected getCalendarDateFromFixedDate(arg0: sun.util.calendar.CalendarDate, arg1: long): void
+                protected abstract getFixedDate(arg0: sun.util.calendar.CalendarDate): long
+                protected abstract getCalendarDateFromFixedDate(arg0: sun.util.calendar.CalendarDate, arg1: long): void
                 public validateTime(arg0: sun.util.calendar.CalendarDate): boolean
                 public static class: java.lang.Class<any>
             }

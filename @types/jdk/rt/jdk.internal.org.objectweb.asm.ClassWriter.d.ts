@@ -4,8 +4,8 @@ declare namespace jdk {
             namespace objectweb {
                 namespace asm {
                     class ClassWriter extends jdk.internal.org.objectweb.asm.ClassVisitor {
-                        public static COMPUTE_MAXS: int
-                        public static COMPUTE_FRAMES: int
+                        public static readonly COMPUTE_MAXS: int
+                        public static readonly COMPUTE_FRAMES: int
                         public constructor(arg0: int)
                         public constructor(arg0: jdk.internal.org.objectweb.asm.ClassReader, arg1: int)
                         public visit(arg0: int, arg1: int, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.String | string, arg5: java.lang.String[]): void

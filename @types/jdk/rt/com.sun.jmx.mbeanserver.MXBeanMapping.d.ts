@@ -7,8 +7,8 @@ declare namespace com {
                     public getJavaType(): java.lang.reflect.Type
                     public getOpenType(): javax.management.openmbean.OpenType<any>
                     public getOpenClass(): java.lang.Class<any>
-                    public fromOpenValue(arg0: java.lang.Object): java.lang.Object
-                    public toOpenValue(arg0: java.lang.Object): java.lang.Object
+                    public abstract fromOpenValue(arg0: java.lang.Object): java.lang.Object
+                    public abstract toOpenValue(arg0: java.lang.Object): java.lang.Object
                     public checkReconstructible(): void
                     public static class: java.lang.Class<any>
                 }

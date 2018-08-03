@@ -3,18 +3,18 @@ declare namespace com {
         namespace media {
             namespace sound {
                 class ModelSource {
-                    public static SOURCE_NONE: com.sun.media.sound.ModelIdentifier
-                    public static SOURCE_NOTEON_KEYNUMBER: com.sun.media.sound.ModelIdentifier
-                    public static SOURCE_NOTEON_VELOCITY: com.sun.media.sound.ModelIdentifier
-                    public static SOURCE_EG1: com.sun.media.sound.ModelIdentifier
-                    public static SOURCE_EG2: com.sun.media.sound.ModelIdentifier
-                    public static SOURCE_LFO1: com.sun.media.sound.ModelIdentifier
-                    public static SOURCE_LFO2: com.sun.media.sound.ModelIdentifier
-                    public static SOURCE_MIDI_PITCH: com.sun.media.sound.ModelIdentifier
-                    public static SOURCE_MIDI_CHANNEL_PRESSURE: com.sun.media.sound.ModelIdentifier
-                    public static SOURCE_MIDI_POLY_PRESSURE: com.sun.media.sound.ModelIdentifier
-                    public static SOURCE_MIDI_CC_0: com.sun.media.sound.ModelIdentifier
-                    public static SOURCE_MIDI_RPN_0: com.sun.media.sound.ModelIdentifier
+                    public static readonly SOURCE_NONE: com.sun.media.sound.ModelIdentifier
+                    public static readonly SOURCE_NOTEON_KEYNUMBER: com.sun.media.sound.ModelIdentifier
+                    public static readonly SOURCE_NOTEON_VELOCITY: com.sun.media.sound.ModelIdentifier
+                    public static readonly SOURCE_EG1: com.sun.media.sound.ModelIdentifier
+                    public static readonly SOURCE_EG2: com.sun.media.sound.ModelIdentifier
+                    public static readonly SOURCE_LFO1: com.sun.media.sound.ModelIdentifier
+                    public static readonly SOURCE_LFO2: com.sun.media.sound.ModelIdentifier
+                    public static readonly SOURCE_MIDI_PITCH: com.sun.media.sound.ModelIdentifier
+                    public static readonly SOURCE_MIDI_CHANNEL_PRESSURE: com.sun.media.sound.ModelIdentifier
+                    public static readonly SOURCE_MIDI_POLY_PRESSURE: com.sun.media.sound.ModelIdentifier
+                    public static readonly SOURCE_MIDI_CC_0: com.sun.media.sound.ModelIdentifier
+                    public static readonly SOURCE_MIDI_RPN_0: com.sun.media.sound.ModelIdentifier
                     public constructor()
                     public constructor(arg0: com.sun.media.sound.ModelIdentifier)
                     public constructor(arg0: com.sun.media.sound.ModelIdentifier, arg1: boolean)

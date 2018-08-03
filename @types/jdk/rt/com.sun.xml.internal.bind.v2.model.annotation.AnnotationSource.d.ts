@@ -8,7 +8,7 @@ declare namespace com {
                             namespace annotation {
                                 interface AnnotationSource {
                                     readAnnotation<A extends java.lang.annotation.Annotation>(arg0: java.lang.Class<A>): A
-                                    hasAnnotation(arg0: java.lang.Class<java.lang.annotation.Annotation>): boolean
+                                    hasAnnotation<A extends java.lang.annotation.Annotation>(arg0: java.lang.Class<java.lang.annotation.Annotation>): boolean
                                 }
                             }
                         }

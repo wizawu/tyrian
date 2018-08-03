@@ -8,8 +8,11 @@ declare namespace com {
                             public getId(): int
                             public constructor(arg0: int)
                             public create(arg0: org.omg.CORBA_2_3.portable.InputStream): com.sun.corba.se.spi.ior.Identifiable
-                            protected readContents(arg0: org.omg.CORBA_2_3.portable.InputStream): com.sun.corba.se.spi.ior.Identifiable
+                            protected abstract readContents(arg0: org.omg.CORBA_2_3.portable.InputStream): com.sun.corba.se.spi.ior.Identifiable
                             public static class: java.lang.Class<any>
+                        }
+                        interface EncapsulationFactoryBase$$Lambda implements com.sun.corba.se.spi.ior.IdentifiableFactory {
+                            (arg0: org.omg.CORBA_2_3.portable.InputStream): com.sun.corba.se.spi.ior.Identifiable
                         }
                     }
                 }

@@ -2,8 +2,8 @@ declare namespace sun {
     namespace java2d {
         namespace loops {
             class TransformHelper extends sun.java2d.loops.GraphicsPrimitive {
-                public static methodSignature: string
-                public static primTypeID: int
+                public static readonly methodSignature: string
+                public static readonly primTypeID: int
                 public static locate(arg0: sun.java2d.loops.SurfaceType): sun.java2d.loops.TransformHelper
                 public static getFromCache(arg0: sun.java2d.loops.SurfaceType): sun.java2d.loops.TransformHelper
                 protected constructor(arg0: sun.java2d.loops.SurfaceType)

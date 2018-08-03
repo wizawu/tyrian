@@ -8,7 +8,7 @@ declare namespace com {
                             abstract class NamingContextImpl extends org.omg.CosNaming.NamingContextExtPOA implements com.sun.corba.se.impl.naming.cosnaming.NamingContextDataStore {
                                 protected nsPOA: org.omg.PortableServer.POA
                                 protected orb: com.sun.corba.se.spi.orb.ORB
-                                public static debug: boolean
+                                public static readonly debug: boolean
                                 public constructor(arg0: com.sun.corba.se.spi.orb.ORB, arg1: org.omg.PortableServer.POA)
                                 public getNSPOA(): org.omg.PortableServer.POA
                                 public bind(arg0: org.omg.CosNaming.NameComponent[], arg1: org.omg.CORBA.Object): void

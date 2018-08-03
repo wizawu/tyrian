@@ -1,8 +1,8 @@
 declare namespace java {
     namespace awt {
         class Scrollbar extends java.awt.Component implements java.awt.Adjustable , javax.accessibility.Accessible {
-            public static HORIZONTAL: int
-            public static VERTICAL: int
+            public static readonly HORIZONTAL: int
+            public static readonly VERTICAL: int
             public constructor()
             public constructor(arg0: int)
             public constructor(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int)
@@ -29,8 +29,8 @@ declare namespace java {
             public setValues(arg0: int, arg1: int, arg2: int, arg3: int): void
             public getValueIsAdjusting(): boolean
             public setValueIsAdjusting(arg0: boolean): void
-            public addAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$Lambda): void
-            public removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$Lambda): void
+            public addAdjustmentListener(arg0: java.awt.event.AdjustmentListener): void
+            public removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener): void
             public getAdjustmentListeners(): java.awt.event.AdjustmentListener[]
             public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]
             protected processEvent<T extends java.util.EventListener>(arg0: java.awt.AWTEvent): void

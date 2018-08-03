@@ -6,13 +6,13 @@ declare namespace jdk {
                     namespace tree {
                         namespace analysis {
                             class BasicValue implements jdk.internal.org.objectweb.asm.tree.analysis.Value {
-                                public static UNINITIALIZED_VALUE: jdk.internal.org.objectweb.asm.tree.analysis.BasicValue
-                                public static INT_VALUE: jdk.internal.org.objectweb.asm.tree.analysis.BasicValue
-                                public static FLOAT_VALUE: jdk.internal.org.objectweb.asm.tree.analysis.BasicValue
-                                public static LONG_VALUE: jdk.internal.org.objectweb.asm.tree.analysis.BasicValue
-                                public static DOUBLE_VALUE: jdk.internal.org.objectweb.asm.tree.analysis.BasicValue
-                                public static REFERENCE_VALUE: jdk.internal.org.objectweb.asm.tree.analysis.BasicValue
-                                public static RETURNADDRESS_VALUE: jdk.internal.org.objectweb.asm.tree.analysis.BasicValue
+                                public static readonly UNINITIALIZED_VALUE: jdk.internal.org.objectweb.asm.tree.analysis.BasicValue
+                                public static readonly INT_VALUE: jdk.internal.org.objectweb.asm.tree.analysis.BasicValue
+                                public static readonly FLOAT_VALUE: jdk.internal.org.objectweb.asm.tree.analysis.BasicValue
+                                public static readonly LONG_VALUE: jdk.internal.org.objectweb.asm.tree.analysis.BasicValue
+                                public static readonly DOUBLE_VALUE: jdk.internal.org.objectweb.asm.tree.analysis.BasicValue
+                                public static readonly REFERENCE_VALUE: jdk.internal.org.objectweb.asm.tree.analysis.BasicValue
+                                public static readonly RETURNADDRESS_VALUE: jdk.internal.org.objectweb.asm.tree.analysis.BasicValue
                                 public constructor(arg0: jdk.internal.org.objectweb.asm.Type)
                                 public getType(): jdk.internal.org.objectweb.asm.Type
                                 public getSize(): int

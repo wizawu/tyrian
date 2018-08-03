@@ -6,7 +6,7 @@ declare namespace com {
                     namespace internal {
                         namespace jaxp {
                             class JAXPPrefixResolver implements com.sun.org.apache.xml.internal.utils.PrefixResolver {
-                                public static S_XMLNAMESPACEURI: string
+                                public static readonly S_XMLNAMESPACEURI: string
                                 public constructor(arg0: javax.xml.namespace.NamespaceContext)
                                 public getNamespaceForPrefix(arg0: java.lang.String | string): string
                                 public getBaseIdentifier(): string

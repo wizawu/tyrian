@@ -1,8 +1,8 @@
 declare namespace javax {
     namespace swing {
         class GroupLayout implements java.awt.LayoutManager2 {
-            public static DEFAULT_SIZE: int
-            public static PREFERRED_SIZE: int
+            public static readonly DEFAULT_SIZE: int
+            public static readonly PREFERRED_SIZE: int
             public constructor(arg0: java.awt.Container)
             public setHonorsVisibility(arg0: boolean): void
             public getHonorsVisibility(): boolean

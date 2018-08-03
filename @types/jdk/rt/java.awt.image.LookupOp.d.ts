@@ -2,7 +2,7 @@ declare namespace java {
     namespace awt {
         namespace image {
             class LookupOp implements java.awt.image.BufferedImageOp , java.awt.image.RasterOp {
-                public constructor(arg0: java.awt.image.LookupTable, arg1: java.awt.RenderingHints)
+                public constructor(arg0: java.awt.image.LookupTable | java.awt.image.LookupTable$$Lambda, arg1: java.awt.RenderingHints)
                 public getTable(): java.awt.image.LookupTable
                 public filter(arg0: java.awt.image.BufferedImage, arg1: java.awt.image.BufferedImage): java.awt.image.BufferedImage
                 public filter(arg0: java.awt.image.Raster, arg1: java.awt.image.WritableRaster): java.awt.image.WritableRaster

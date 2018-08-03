@@ -3,11 +3,11 @@ declare namespace javax {
         namespace plaf {
             namespace synth {
                 class SynthMenuItemLayoutHelper extends sun.swing.MenuItemLayoutHelper {
-                    public static MAX_ACC_OR_ARROW_WIDTH: sun.swing.StringUIClientPropertyKey
-                    public static LTR_ALIGNMENT_1: sun.swing.MenuItemLayoutHelper$ColumnAlignment
-                    public static LTR_ALIGNMENT_2: sun.swing.MenuItemLayoutHelper$ColumnAlignment
-                    public static RTL_ALIGNMENT_1: sun.swing.MenuItemLayoutHelper$ColumnAlignment
-                    public static RTL_ALIGNMENT_2: sun.swing.MenuItemLayoutHelper$ColumnAlignment
+                    public static readonly MAX_ACC_OR_ARROW_WIDTH: sun.swing.StringUIClientPropertyKey
+                    public static readonly LTR_ALIGNMENT_1: sun.swing.MenuItemLayoutHelper$ColumnAlignment
+                    public static readonly LTR_ALIGNMENT_2: sun.swing.MenuItemLayoutHelper$ColumnAlignment
+                    public static readonly RTL_ALIGNMENT_1: sun.swing.MenuItemLayoutHelper$ColumnAlignment
+                    public static readonly RTL_ALIGNMENT_2: sun.swing.MenuItemLayoutHelper$ColumnAlignment
                     public constructor(arg0: javax.swing.plaf.synth.SynthContext, arg1: javax.swing.plaf.synth.SynthContext, arg2: javax.swing.JMenuItem, arg3: javax.swing.Icon, arg4: javax.swing.Icon, arg5: java.awt.Rectangle, arg6: int, arg7: java.lang.String | string, arg8: boolean, arg9: boolean, arg10: java.lang.String | string)
                     protected calcWidthsAndHeights(): void
                     protected calcMaxWidths(): void

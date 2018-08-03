@@ -8,7 +8,7 @@ declare namespace com {
                             namespace xs {
                                 namespace util {
                                     class StringListImpl extends java.util.AbstractList implements com.sun.org.apache.xerces.internal.xs.StringList {
-                                        public static EMPTY_LIST: com.sun.org.apache.xerces.internal.impl.xs.util.StringListImpl
+                                        public static readonly EMPTY_LIST: com.sun.org.apache.xerces.internal.impl.xs.util.StringListImpl
                                         public constructor(arg0: java.util.Vector)
                                         public constructor(arg0: java.lang.String[], arg1: int)
                                         public getLength(): int

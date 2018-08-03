@@ -4,8 +4,8 @@ declare namespace java {
             namespace spi {
                 abstract class CharsetProvider {
                     protected constructor()
-                    public charsets(): java.util.Iterator<java.nio.charset.Charset>
-                    public charsetForName(arg0: java.lang.String | string): java.nio.charset.Charset
+                    public abstract charsets(): java.util.Iterator<java.nio.charset.Charset>
+                    public abstract charsetForName(arg0: java.lang.String | string): java.nio.charset.Charset
                     public static class: java.lang.Class<any>
                 }
             }

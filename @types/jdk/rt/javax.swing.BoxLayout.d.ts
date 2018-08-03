@@ -1,10 +1,10 @@
 declare namespace javax {
     namespace swing {
         class BoxLayout implements java.awt.LayoutManager2 , java.io.Serializable {
-            public static X_AXIS: int
-            public static Y_AXIS: int
-            public static LINE_AXIS: int
-            public static PAGE_AXIS: int
+            public static readonly X_AXIS: int
+            public static readonly Y_AXIS: int
+            public static readonly LINE_AXIS: int
+            public static readonly PAGE_AXIS: int
             public constructor(arg0: java.awt.Container, arg1: int)
             public getTarget(): java.awt.Container
             public getAxis(): int

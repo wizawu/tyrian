@@ -4,7 +4,7 @@ declare namespace jdk {
             namespace runtime {
                 namespace arrays {
                     abstract class TypedArrayData<T extends java.nio.Buffer> extends jdk.nashorn.internal.runtime.arrays.ContinuousArrayData {
-                        protected nb: T
+                        protected readonly nb: T
                         protected constructor(arg0: T, arg1: int)
                         public getElementLength(): int
                         public isUnsigned(): boolean
@@ -23,8 +23,8 @@ declare namespace jdk {
                         public convert(arg0: java.lang.Class<any>): jdk.nashorn.internal.runtime.arrays.TypedArrayData<T>
                         public pop(): java.lang.Object
                         public slice(arg0: long, arg1: long): jdk.nashorn.internal.runtime.arrays.ArrayData
-                        protected getGetElem(): java.lang.invoke.MethodHandle
-                        protected getSetElem(): java.lang.invoke.MethodHandle
+                        protected abstract getGetElem(): java.lang.invoke.MethodHandle
+                        protected abstract getSetElem(): java.lang.invoke.MethodHandle
                         public getElementGetter(arg0: java.lang.Class<any>, arg1: int): java.lang.invoke.MethodHandle
                         public getElementSetter(arg0: java.lang.Class<any>): java.lang.invoke.MethodHandle
                         protected getContinuousElementSetter(arg0: java.lang.Class<jdk.nashorn.internal.runtime.arrays.ContinuousArrayData>, arg1: java.lang.invoke.MethodHandle, arg2: java.lang.Class<any>): java.lang.invoke.MethodHandle

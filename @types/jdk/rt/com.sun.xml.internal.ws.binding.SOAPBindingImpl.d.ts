@@ -5,8 +5,8 @@ declare namespace com {
                 namespace ws {
                     namespace binding {
                         class SOAPBindingImpl extends com.sun.xml.internal.ws.binding.BindingImpl implements javax.xml.ws.soap.SOAPBinding {
-                            public static X_SOAP12HTTP_BINDING: string
-                            protected soapVersion: com.sun.xml.internal.ws.api.SOAPVersion
+                            public static readonly X_SOAP12HTTP_BINDING: string
+                            protected readonly soapVersion: com.sun.xml.internal.ws.api.SOAPVersion
                             public setPortKnownHeaders(arg0: java.util.Set<javax.xml.namespace.QName>): void
                             public understandsHeader(arg0: javax.xml.namespace.QName): boolean
                             public setHandlerChain(arg0: java.util.List<javax.xml.ws.handler.Handler>): void

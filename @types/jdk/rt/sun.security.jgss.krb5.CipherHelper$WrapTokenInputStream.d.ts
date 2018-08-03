@@ -3,7 +3,7 @@ declare namespace sun {
         namespace jgss {
             namespace krb5 {
                 class CipherHelper$WrapTokenInputStream extends java.io.InputStream {
-                    public constructor(arg0: sun.security.jgss.krb5.CipherHelper, arg1: java.io.InputStream, arg2: int)
+                    public constructor(arg0: sun.security.jgss.krb5.CipherHelper, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int)
                     public read(): int
                     public read(arg0: byte[]): int
                     public read(arg0: byte[], arg1: int, arg2: int): int

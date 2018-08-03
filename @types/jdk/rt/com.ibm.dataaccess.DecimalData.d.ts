@@ -2,13 +2,13 @@ declare namespace com {
     namespace ibm {
         namespace dataaccess {
             class DecimalData {
-                public static EBCDIC_SIGN_EMBEDDED_TRAILING: int
-                public static EBCDIC_SIGN_EMBEDDED_LEADING: int
-                public static EBCDIC_SIGN_SEPARATE_TRAILING: int
-                public static EBCDIC_SIGN_SEPARATE_LEADING: int
-                public static UNICODE_UNSIGNED: int
-                public static UNICODE_SIGN_SEPARATE_LEADING: int
-                public static UNICODE_SIGN_SEPARATE_TRAILING: int
+                public static readonly EBCDIC_SIGN_EMBEDDED_TRAILING: int
+                public static readonly EBCDIC_SIGN_EMBEDDED_LEADING: int
+                public static readonly EBCDIC_SIGN_SEPARATE_TRAILING: int
+                public static readonly EBCDIC_SIGN_SEPARATE_LEADING: int
+                public static readonly UNICODE_UNSIGNED: int
+                public static readonly UNICODE_SIGN_SEPARATE_LEADING: int
+                public static readonly UNICODE_SIGN_SEPARATE_TRAILING: int
                 public static convertIntegerToPackedDecimal(arg0: int, arg1: byte[], arg2: int, arg3: int, arg4: boolean): void
                 public static convertIntegerToExternalDecimal(arg0: int, arg1: byte[], arg2: int, arg3: int, arg4: boolean, arg5: int): void
                 public static convertIntegerToUnicodeDecimal(arg0: int, arg1: char[], arg2: int, arg3: int, arg4: boolean, arg5: int): void

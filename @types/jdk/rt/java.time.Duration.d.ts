@@ -1,7 +1,7 @@
 declare namespace java {
     namespace time {
         class Duration implements java.time.temporal.TemporalAmount , java.lang.Comparable<java.time.Duration> , java.io.Serializable {
-            public static ZERO: java.time.Duration
+            public static readonly ZERO: java.time.Duration
             public static ofDays(arg0: long): java.time.Duration
             public static ofHours(arg0: long): java.time.Duration
             public static ofMinutes(arg0: long): java.time.Duration

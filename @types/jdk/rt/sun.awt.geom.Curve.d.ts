@@ -2,11 +2,11 @@ declare namespace sun {
     namespace awt {
         namespace geom {
             abstract class Curve {
-                public static INCREASING: int
-                public static DECREASING: int
+                public static readonly INCREASING: int
+                public static readonly DECREASING: int
                 protected direction: int
-                public static RECT_INTERSECTS: int
-                public static TMIN: double
+                public static readonly RECT_INTERSECTS: int
+                public static readonly TMIN: double
                 public static insertMove(arg0: java.util.Vector, arg1: double, arg2: double): void
                 public static insertLine(arg0: java.util.Vector, arg1: double, arg2: double, arg3: double, arg4: double): void
                 public static insertQuad(arg0: java.util.Vector, arg1: double, arg2: double, arg3: double[]): void
@@ -30,35 +30,35 @@ declare namespace sun {
                 public static next(arg0: double): double
                 public toString(): string
                 public controlPointString(): string
-                public getOrder(): int
-                public getXTop(): double
-                public getYTop(): double
-                public getXBot(): double
-                public getYBot(): double
-                public getXMin(): double
-                public getXMax(): double
-                public getX0(): double
-                public getY0(): double
-                public getX1(): double
-                public getY1(): double
-                public XforY(arg0: double): double
-                public TforY(arg0: double): double
-                public XforT(arg0: double): double
-                public YforT(arg0: double): double
-                public dXforT(arg0: double, arg1: int): double
-                public dYforT(arg0: double, arg1: int): double
-                public nextVertical(arg0: double, arg1: double): double
+                public abstract getOrder(): int
+                public abstract getXTop(): double
+                public abstract getYTop(): double
+                public abstract getXBot(): double
+                public abstract getYBot(): double
+                public abstract getXMin(): double
+                public abstract getXMax(): double
+                public abstract getX0(): double
+                public abstract getY0(): double
+                public abstract getX1(): double
+                public abstract getY1(): double
+                public abstract XforY(arg0: double): double
+                public abstract TforY(arg0: double): double
+                public abstract XforT(arg0: double): double
+                public abstract YforT(arg0: double): double
+                public abstract dXforT(arg0: double, arg1: int): double
+                public abstract dYforT(arg0: double, arg1: int): double
+                public abstract nextVertical(arg0: double, arg1: double): double
                 public crossingsFor(arg0: double, arg1: double): int
                 public accumulateCrossings(arg0: sun.awt.geom.Crossings): boolean
-                public enlarge(arg0: java.awt.geom.Rectangle2D): void
+                public abstract enlarge(arg0: java.awt.geom.Rectangle2D): void
                 public getSubCurve(arg0: double, arg1: double): sun.awt.geom.Curve
-                public getReversedCurve(): sun.awt.geom.Curve
-                public getSubCurve(arg0: double, arg1: double, arg2: int): sun.awt.geom.Curve
+                public abstract getReversedCurve(): sun.awt.geom.Curve
+                public abstract getSubCurve(arg0: double, arg1: double, arg2: int): sun.awt.geom.Curve
                 public compareTo(arg0: sun.awt.geom.Curve, arg1: double[]): int
                 public findIntersect(arg0: sun.awt.geom.Curve, arg1: double[], arg2: double, arg3: int, arg4: int, arg5: double, arg6: double, arg7: double, arg8: double, arg9: double, arg10: double, arg11: double, arg12: double, arg13: double, arg14: double, arg15: double, arg16: double): boolean
                 public refineTforY(arg0: double, arg1: double, arg2: double): double
                 public fairlyClose(arg0: double, arg1: double): boolean
-                public getSegment(arg0: double[]): int
+                public abstract getSegment(arg0: double[]): int
                 public static class: java.lang.Class<any>
             }
         }

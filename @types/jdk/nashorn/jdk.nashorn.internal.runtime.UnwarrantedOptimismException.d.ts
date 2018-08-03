@@ -3,11 +3,11 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 class UnwarrantedOptimismException extends java.lang.RuntimeException {
-                    public static INVALID_PROGRAM_POINT: int
-                    public static FIRST_PROGRAM_POINT: int
+                    public static readonly INVALID_PROGRAM_POINT: int
+                    public static readonly FIRST_PROGRAM_POINT: int
                     public constructor(arg0: java.lang.Object, arg1: int)
                     public static isValid(arg0: int): boolean
-                    public constructor(arg0: java.lang.Object, arg1: int, arg2: jdk.nashorn.internal.codegen.types.Type)
+                    public constructor(arg0: java.lang.Object, arg1: int, arg2: jdk.nashorn.internal.codegen.types.Type | jdk.nashorn.internal.codegen.types.Type$$Lambda)
                     public static createNarrowest(arg0: java.lang.Object, arg1: int): jdk.nashorn.internal.runtime.UnwarrantedOptimismException
                     public getReturnValueDestructive(): java.lang.Object
                     public getReturnType(): jdk.nashorn.internal.codegen.types.Type

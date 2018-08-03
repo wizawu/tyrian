@@ -6,7 +6,7 @@ declare namespace com {
                     namespace api {
                         namespace pipe {
                             class Fiber implements java.lang.Runnable , com.sun.xml.internal.ws.api.Cancelable , com.sun.xml.internal.ws.api.ComponentRegistry {
-                                public owner: com.sun.xml.internal.ws.api.pipe.Engine
+                                public readonly owner: com.sun.xml.internal.ws.api.pipe.Engine
                                 public static serializeExecution: boolean
                                 public addListener(arg0: com.sun.xml.internal.ws.api.pipe.Fiber$Listener): void
                                 public removeListener(arg0: com.sun.xml.internal.ws.api.pipe.Fiber$Listener): void

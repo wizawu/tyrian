@@ -2,17 +2,17 @@ declare namespace java {
     namespace util {
         namespace zip {
             class Deflater {
-                public static DEFLATED: int
-                public static NO_COMPRESSION: int
-                public static BEST_SPEED: int
-                public static BEST_COMPRESSION: int
-                public static DEFAULT_COMPRESSION: int
-                public static FILTERED: int
-                public static HUFFMAN_ONLY: int
-                public static DEFAULT_STRATEGY: int
-                public static NO_FLUSH: int
-                public static SYNC_FLUSH: int
-                public static FULL_FLUSH: int
+                public static readonly DEFLATED: int
+                public static readonly NO_COMPRESSION: int
+                public static readonly BEST_SPEED: int
+                public static readonly BEST_COMPRESSION: int
+                public static readonly DEFAULT_COMPRESSION: int
+                public static readonly FILTERED: int
+                public static readonly HUFFMAN_ONLY: int
+                public static readonly DEFAULT_STRATEGY: int
+                public static readonly NO_FLUSH: int
+                public static readonly SYNC_FLUSH: int
+                public static readonly FULL_FLUSH: int
                 public constructor(arg0: int, arg1: boolean)
                 public constructor(arg0: int)
                 public constructor()

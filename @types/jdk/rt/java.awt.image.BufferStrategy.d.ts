@@ -3,11 +3,11 @@ declare namespace java {
         namespace image {
             abstract class BufferStrategy {
                 public constructor()
-                public getCapabilities(): java.awt.BufferCapabilities
-                public getDrawGraphics(): java.awt.Graphics
-                public contentsLost(): boolean
-                public contentsRestored(): boolean
-                public show(): void
+                public abstract getCapabilities(): java.awt.BufferCapabilities
+                public abstract getDrawGraphics(): java.awt.Graphics
+                public abstract contentsLost(): boolean
+                public abstract contentsRestored(): boolean
+                public abstract show(): void
                 public dispose(): void
                 public static class: java.lang.Class<any>
             }

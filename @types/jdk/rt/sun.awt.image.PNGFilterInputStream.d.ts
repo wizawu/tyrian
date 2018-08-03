@@ -3,7 +3,7 @@ declare namespace sun {
         namespace image {
             class PNGFilterInputStream extends java.io.FilterInputStream {
                 public underlyingInputStream: java.io.InputStream
-                public constructor(arg0: sun.awt.image.PNGImageDecoder, arg1: java.io.InputStream)
+                public constructor(arg0: sun.awt.image.PNGImageDecoder, arg1: java.io.InputStream | java.io.InputStream$$Lambda)
                 public available(): int
                 public markSupported(): boolean
                 public read(): int

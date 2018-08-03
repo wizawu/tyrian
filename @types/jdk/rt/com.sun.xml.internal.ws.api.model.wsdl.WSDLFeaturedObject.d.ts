@@ -8,8 +8,8 @@ declare namespace com {
                             namespace wsdl {
                                 interface WSDLFeaturedObject extends com.sun.xml.internal.ws.api.model.wsdl.WSDLObject {
                                     getFeature<F extends javax.xml.ws.WebServiceFeature>(arg0: java.lang.Class<F>): F
-                                    getFeatures(): com.sun.xml.internal.ws.api.WSFeatureList
-                                    addFeature(arg0: javax.xml.ws.WebServiceFeature): void
+                                    getFeatures<F extends javax.xml.ws.WebServiceFeature>(): com.sun.xml.internal.ws.api.WSFeatureList
+                                    addFeature<F extends javax.xml.ws.WebServiceFeature>(arg0: javax.xml.ws.WebServiceFeature | javax.xml.ws.WebServiceFeature$$Lambda): void
                                 }
                             }
                         }

@@ -1,9 +1,9 @@
 declare namespace java {
     namespace math {
         class BigInteger extends java.lang.Number implements java.lang.Comparable<java.math.BigInteger> {
-            public static ZERO: java.math.BigInteger
-            public static ONE: java.math.BigInteger
-            public static TEN: java.math.BigInteger
+            public static readonly ZERO: java.math.BigInteger
+            public static readonly ONE: java.math.BigInteger
+            public static readonly TEN: java.math.BigInteger
             public constructor(arg0: byte[])
             public constructor(arg0: int, arg1: byte[])
             public constructor(arg0: java.lang.String | string, arg1: int)

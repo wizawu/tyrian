@@ -2,21 +2,21 @@ declare namespace java {
     namespace time {
         namespace format {
             class DateTimeFormatter {
-                public static ISO_LOCAL_DATE: java.time.format.DateTimeFormatter
-                public static ISO_OFFSET_DATE: java.time.format.DateTimeFormatter
-                public static ISO_DATE: java.time.format.DateTimeFormatter
-                public static ISO_LOCAL_TIME: java.time.format.DateTimeFormatter
-                public static ISO_OFFSET_TIME: java.time.format.DateTimeFormatter
-                public static ISO_TIME: java.time.format.DateTimeFormatter
-                public static ISO_LOCAL_DATE_TIME: java.time.format.DateTimeFormatter
-                public static ISO_OFFSET_DATE_TIME: java.time.format.DateTimeFormatter
-                public static ISO_ZONED_DATE_TIME: java.time.format.DateTimeFormatter
-                public static ISO_DATE_TIME: java.time.format.DateTimeFormatter
-                public static ISO_ORDINAL_DATE: java.time.format.DateTimeFormatter
-                public static ISO_WEEK_DATE: java.time.format.DateTimeFormatter
-                public static ISO_INSTANT: java.time.format.DateTimeFormatter
-                public static BASIC_ISO_DATE: java.time.format.DateTimeFormatter
-                public static RFC_1123_DATE_TIME: java.time.format.DateTimeFormatter
+                public static readonly ISO_LOCAL_DATE: java.time.format.DateTimeFormatter
+                public static readonly ISO_OFFSET_DATE: java.time.format.DateTimeFormatter
+                public static readonly ISO_DATE: java.time.format.DateTimeFormatter
+                public static readonly ISO_LOCAL_TIME: java.time.format.DateTimeFormatter
+                public static readonly ISO_OFFSET_TIME: java.time.format.DateTimeFormatter
+                public static readonly ISO_TIME: java.time.format.DateTimeFormatter
+                public static readonly ISO_LOCAL_DATE_TIME: java.time.format.DateTimeFormatter
+                public static readonly ISO_OFFSET_DATE_TIME: java.time.format.DateTimeFormatter
+                public static readonly ISO_ZONED_DATE_TIME: java.time.format.DateTimeFormatter
+                public static readonly ISO_DATE_TIME: java.time.format.DateTimeFormatter
+                public static readonly ISO_ORDINAL_DATE: java.time.format.DateTimeFormatter
+                public static readonly ISO_WEEK_DATE: java.time.format.DateTimeFormatter
+                public static readonly ISO_INSTANT: java.time.format.DateTimeFormatter
+                public static readonly BASIC_ISO_DATE: java.time.format.DateTimeFormatter
+                public static readonly RFC_1123_DATE_TIME: java.time.format.DateTimeFormatter
                 public static ofPattern(arg0: java.lang.String | string): java.time.format.DateTimeFormatter
                 public static ofPattern(arg0: java.lang.String | string, arg1: java.util.Locale): java.time.format.DateTimeFormatter
                 public static ofLocalizedDate(arg0: java.time.format.FormatStyle): java.time.format.DateTimeFormatter

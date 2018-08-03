@@ -7,9 +7,9 @@ declare namespace com {
                         namespace dtm {
                             namespace ref {
                                 class DTMDocumentImpl implements com.sun.org.apache.xml.internal.dtm.DTM , org.xml.sax.ContentHandler , org.xml.sax.ext.LexicalHandler {
-                                    protected static DOCHANDLE_SHIFT: byte
-                                    protected static NODEHANDLE_MASK: int
-                                    protected static DOCHANDLE_MASK: int
+                                    protected static readonly DOCHANDLE_SHIFT: byte
+                                    protected static readonly NODEHANDLE_MASK: int
+                                    protected static readonly DOCHANDLE_MASK: int
                                     protected m_currentNode: int
                                     protected m_documentBaseURI: string
                                     public constructor(arg0: com.sun.org.apache.xml.internal.dtm.DTMManager, arg1: int, arg2: com.sun.org.apache.xml.internal.dtm.DTMWSFilter | com.sun.org.apache.xml.internal.dtm.DTMWSFilter$$Lambda, arg3: com.sun.org.apache.xml.internal.utils.XMLStringFactory)

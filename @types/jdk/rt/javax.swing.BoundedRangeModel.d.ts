@@ -12,8 +12,8 @@ declare namespace javax {
             getExtent(): int
             setExtent(arg0: int): void
             setRangeProperties(arg0: int, arg1: int, arg2: int, arg3: int, arg4: boolean): void
-            addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
-            removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+            addChangeListener(arg0: javax.swing.event.ChangeListener): void
+            removeChangeListener(arg0: javax.swing.event.ChangeListener): void
         }
     }
 }

@@ -4,18 +4,18 @@ declare namespace com {
             namespace toolkit {
                 namespace dir {
                     class SearchFilter implements com.sun.jndi.toolkit.dir.AttrFilter {
-                        protected static debug: boolean
-                        protected static BEGIN_FILTER_TOKEN: char
-                        protected static END_FILTER_TOKEN: char
-                        protected static AND_TOKEN: char
-                        protected static OR_TOKEN: char
-                        protected static NOT_TOKEN: char
-                        protected static EQUAL_TOKEN: char
-                        protected static APPROX_TOKEN: char
-                        protected static LESS_TOKEN: char
-                        protected static GREATER_TOKEN: char
-                        protected static EXTEND_TOKEN: char
-                        protected static WILDCARD_TOKEN: char
+                        protected static readonly debug: boolean
+                        protected static readonly BEGIN_FILTER_TOKEN: char
+                        protected static readonly END_FILTER_TOKEN: char
+                        protected static readonly AND_TOKEN: char
+                        protected static readonly OR_TOKEN: char
+                        protected static readonly NOT_TOKEN: char
+                        protected static readonly EQUAL_TOKEN: char
+                        protected static readonly APPROX_TOKEN: char
+                        protected static readonly LESS_TOKEN: char
+                        protected static readonly GREATER_TOKEN: char
+                        protected static readonly EXTEND_TOKEN: char
+                        protected static readonly WILDCARD_TOKEN: char
                         public constructor(arg0: java.lang.String | string)
                         public check(arg0: javax.naming.directory.Attributes): boolean
                         protected normalizeFilter(): void

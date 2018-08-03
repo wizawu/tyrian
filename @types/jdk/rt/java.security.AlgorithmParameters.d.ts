@@ -11,9 +11,9 @@ declare namespace java {
             public init(arg0: byte[]): void
             public init(arg0: byte[], arg1: java.lang.String | string): void
             public getParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
-            public getEncoded(): byte[]
-            public getEncoded(arg0: java.lang.String | string): byte[]
-            public toString(): string
+            public getEncoded<T extends java.security.spec.AlgorithmParameterSpec>(): byte[]
+            public getEncoded<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.String | string): byte[]
+            public toString<T extends java.security.spec.AlgorithmParameterSpec>(): string
             public static class: java.lang.Class<any>
         }
     }

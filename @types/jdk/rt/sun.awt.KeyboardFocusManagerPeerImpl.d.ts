@@ -1,9 +1,9 @@
 declare namespace sun {
     namespace awt {
         abstract class KeyboardFocusManagerPeerImpl implements java.awt.peer.KeyboardFocusManagerPeer {
-            public static SNFH_FAILURE: int
-            public static SNFH_SUCCESS_HANDLED: int
-            public static SNFH_SUCCESS_PROCEED: int
+            public static readonly SNFH_FAILURE: int
+            public static readonly SNFH_SUCCESS_HANDLED: int
+            public static readonly SNFH_SUCCESS_PROCEED: int
             public constructor()
             public clearGlobalFocusOwner(arg0: java.awt.Window): void
             public static shouldFocusOnClick(arg0: java.awt.Component): boolean

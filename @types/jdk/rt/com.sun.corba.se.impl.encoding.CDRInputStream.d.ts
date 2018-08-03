@@ -77,7 +77,7 @@ declare namespace com {
                             public mark(arg0: int): void
                             public reset(): void
                             public markSupported(): boolean
-                            public dup(): com.sun.corba.se.impl.encoding.CDRInputStream
+                            public abstract dup(): com.sun.corba.se.impl.encoding.CDRInputStream
                             public read_fixed(arg0: short, arg1: short): java.math.BigDecimal
                             public isLittleEndian(): boolean
                             protected getByteBuffer(): java.nio.ByteBuffer
@@ -93,7 +93,7 @@ declare namespace com {
                             public getBufferManager(): com.sun.corba.se.impl.encoding.BufferManagerRead
                             public getCodeBase(): com.sun.org.omg.SendingContext.CodeBase
                             protected createCharBTCConverter(): com.sun.corba.se.impl.encoding.CodeSetConversion$BTCConverter
-                            protected createWCharBTCConverter(): com.sun.corba.se.impl.encoding.CodeSetConversion$BTCConverter
+                            protected abstract createWCharBTCConverter(): com.sun.corba.se.impl.encoding.CodeSetConversion$BTCConverter
                             public alignOnBoundary(arg0: int): void
                             public setHeaderPadding(arg0: boolean): void
                             public performORBVersionSpecificInit(): void

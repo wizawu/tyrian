@@ -3,14 +3,14 @@ declare namespace javax {
         namespace attribute {
             namespace standard {
                 class JobState extends javax.print.attribute.EnumSyntax implements javax.print.attribute.PrintJobAttribute {
-                    public static UNKNOWN: javax.print.attribute.standard.JobState
-                    public static PENDING: javax.print.attribute.standard.JobState
-                    public static PENDING_HELD: javax.print.attribute.standard.JobState
-                    public static PROCESSING: javax.print.attribute.standard.JobState
-                    public static PROCESSING_STOPPED: javax.print.attribute.standard.JobState
-                    public static CANCELED: javax.print.attribute.standard.JobState
-                    public static ABORTED: javax.print.attribute.standard.JobState
-                    public static COMPLETED: javax.print.attribute.standard.JobState
+                    public static readonly UNKNOWN: javax.print.attribute.standard.JobState
+                    public static readonly PENDING: javax.print.attribute.standard.JobState
+                    public static readonly PENDING_HELD: javax.print.attribute.standard.JobState
+                    public static readonly PROCESSING: javax.print.attribute.standard.JobState
+                    public static readonly PROCESSING_STOPPED: javax.print.attribute.standard.JobState
+                    public static readonly CANCELED: javax.print.attribute.standard.JobState
+                    public static readonly ABORTED: javax.print.attribute.standard.JobState
+                    public static readonly COMPLETED: javax.print.attribute.standard.JobState
                     protected constructor(arg0: int)
                     protected getStringTable(): java.lang.String[]
                     protected getEnumValueTable(): javax.print.attribute.EnumSyntax[]

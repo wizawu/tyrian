@@ -8,13 +8,13 @@ declare namespace com {
                             namespace dv {
                                 namespace xs {
                                     abstract class TypeValidator {
-                                        public static LESS_THAN: short
-                                        public static EQUAL: short
-                                        public static GREATER_THAN: short
-                                        public static INDETERMINATE: short
+                                        public static readonly LESS_THAN: short
+                                        public static readonly EQUAL: short
+                                        public static readonly GREATER_THAN: short
+                                        public static readonly INDETERMINATE: short
                                         public constructor()
-                                        public getAllowedFacets(): short
-                                        public getActualValue(arg0: java.lang.String | string, arg1: com.sun.org.apache.xerces.internal.impl.dv.ValidationContext): java.lang.Object
+                                        public abstract getAllowedFacets(): short
+                                        public abstract getActualValue(arg0: java.lang.String | string, arg1: com.sun.org.apache.xerces.internal.impl.dv.ValidationContext): java.lang.Object
                                         public checkExtraRules(arg0: java.lang.Object, arg1: com.sun.org.apache.xerces.internal.impl.dv.ValidationContext): void
                                         public isIdentical(arg0: java.lang.Object, arg1: java.lang.Object): boolean
                                         public compare(arg0: java.lang.Object, arg1: java.lang.Object): int

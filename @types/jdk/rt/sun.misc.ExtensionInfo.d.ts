@@ -1,11 +1,11 @@
 declare namespace sun {
     namespace misc {
         class ExtensionInfo {
-            public static COMPATIBLE: int
-            public static REQUIRE_SPECIFICATION_UPGRADE: int
-            public static REQUIRE_IMPLEMENTATION_UPGRADE: int
-            public static REQUIRE_VENDOR_SWITCH: int
-            public static INCOMPATIBLE: int
+            public static readonly COMPATIBLE: int
+            public static readonly REQUIRE_SPECIFICATION_UPGRADE: int
+            public static readonly REQUIRE_IMPLEMENTATION_UPGRADE: int
+            public static readonly REQUIRE_VENDOR_SWITCH: int
+            public static readonly INCOMPATIBLE: int
             public title: string
             public name: string
             public specVersion: string

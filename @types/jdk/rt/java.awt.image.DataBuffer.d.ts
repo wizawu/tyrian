@@ -2,13 +2,13 @@ declare namespace java {
     namespace awt {
         namespace image {
             abstract class DataBuffer {
-                public static TYPE_BYTE: int
-                public static TYPE_USHORT: int
-                public static TYPE_SHORT: int
-                public static TYPE_INT: int
-                public static TYPE_FLOAT: int
-                public static TYPE_DOUBLE: int
-                public static TYPE_UNDEFINED: int
+                public static readonly TYPE_BYTE: int
+                public static readonly TYPE_USHORT: int
+                public static readonly TYPE_SHORT: int
+                public static readonly TYPE_INT: int
+                public static readonly TYPE_FLOAT: int
+                public static readonly TYPE_DOUBLE: int
+                public static readonly TYPE_UNDEFINED: int
                 protected dataType: int
                 protected banks: int
                 protected offset: int
@@ -25,9 +25,9 @@ declare namespace java {
                 public getOffsets(): int[]
                 public getNumBanks(): int
                 public getElem(arg0: int): int
-                public getElem(arg0: int, arg1: int): int
+                public abstract getElem(arg0: int, arg1: int): int
                 public setElem(arg0: int, arg1: int): void
-                public setElem(arg0: int, arg1: int, arg2: int): void
+                public abstract setElem(arg0: int, arg1: int, arg2: int): void
                 public getElemFloat(arg0: int): float
                 public getElemFloat(arg0: int, arg1: int): float
                 public setElemFloat(arg0: int, arg1: float): void

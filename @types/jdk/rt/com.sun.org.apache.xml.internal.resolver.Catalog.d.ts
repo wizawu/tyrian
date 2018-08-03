@@ -6,26 +6,26 @@ declare namespace com {
                     namespace internal {
                         namespace resolver {
                             class Catalog {
-                                public static BASE: int
-                                public static CATALOG: int
-                                public static DOCUMENT: int
-                                public static OVERRIDE: int
-                                public static SGMLDECL: int
-                                public static DELEGATE_PUBLIC: int
-                                public static DELEGATE_SYSTEM: int
-                                public static DELEGATE_URI: int
-                                public static DOCTYPE: int
-                                public static DTDDECL: int
-                                public static ENTITY: int
-                                public static LINKTYPE: int
-                                public static NOTATION: int
-                                public static PUBLIC: int
-                                public static SYSTEM: int
-                                public static URI: int
-                                public static REWRITE_SYSTEM: int
-                                public static REWRITE_URI: int
-                                public static SYSTEM_SUFFIX: int
-                                public static URI_SUFFIX: int
+                                public static readonly BASE: int
+                                public static readonly CATALOG: int
+                                public static readonly DOCUMENT: int
+                                public static readonly OVERRIDE: int
+                                public static readonly SGMLDECL: int
+                                public static readonly DELEGATE_PUBLIC: int
+                                public static readonly DELEGATE_SYSTEM: int
+                                public static readonly DELEGATE_URI: int
+                                public static readonly DOCTYPE: int
+                                public static readonly DTDDECL: int
+                                public static readonly ENTITY: int
+                                public static readonly LINKTYPE: int
+                                public static readonly NOTATION: int
+                                public static readonly PUBLIC: int
+                                public static readonly SYSTEM: int
+                                public static readonly URI: int
+                                public static readonly REWRITE_SYSTEM: int
+                                public static readonly REWRITE_URI: int
+                                public static readonly SYSTEM_SUFFIX: int
+                                public static readonly URI_SUFFIX: int
                                 protected base: java.net.URL
                                 protected catalogCwd: java.net.URL
                                 protected catalogEntries: java.util.Vector
@@ -49,7 +49,7 @@ declare namespace com {
                                 public getDefaultOverride(): string
                                 public loadSystemCatalogs(): void
                                 public parseCatalog(arg0: java.lang.String | string): void
-                                public parseCatalog(arg0: java.lang.String | string, arg1: java.io.InputStream): void
+                                public parseCatalog(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
                                 public parseCatalog(arg0: java.net.URL): void
                                 protected parsePendingCatalogs(): void
                                 protected parseCatalogFile(arg0: java.lang.String | string): void

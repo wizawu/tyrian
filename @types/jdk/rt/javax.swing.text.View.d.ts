@@ -2,21 +2,21 @@ declare namespace javax {
     namespace swing {
         namespace text {
             abstract class View implements javax.swing.SwingConstants {
-                public static BadBreakWeight: int
-                public static GoodBreakWeight: int
-                public static ExcellentBreakWeight: int
-                public static ForcedBreakWeight: int
-                public static X_AXIS: int
-                public static Y_AXIS: int
+                public static readonly BadBreakWeight: int
+                public static readonly GoodBreakWeight: int
+                public static readonly ExcellentBreakWeight: int
+                public static readonly ForcedBreakWeight: int
+                public static readonly X_AXIS: int
+                public static readonly Y_AXIS: int
                 public constructor(arg0: javax.swing.text.Element)
                 public getParent(): javax.swing.text.View
                 public isVisible(): boolean
-                public getPreferredSpan(arg0: int): float
+                public abstract getPreferredSpan(arg0: int): float
                 public getMinimumSpan(arg0: int): float
                 public getMaximumSpan(arg0: int): float
                 public preferenceChanged(arg0: javax.swing.text.View, arg1: boolean, arg2: boolean): void
                 public getAlignment(arg0: int): float
-                public paint(arg0: java.awt.Graphics, arg1: java.awt.Shape): void
+                public abstract paint(arg0: java.awt.Graphics, arg1: java.awt.Shape): void
                 public setParent(arg0: javax.swing.text.View): void
                 public getViewCount(): int
                 public getView(arg0: int): javax.swing.text.View
@@ -28,9 +28,9 @@ declare namespace javax {
                 public getViewIndex(arg0: int, arg1: javax.swing.text.Position$Bias): int
                 public getChildAllocation(arg0: int, arg1: java.awt.Shape): java.awt.Shape
                 public getNextVisualPositionFrom(arg0: int, arg1: javax.swing.text.Position$Bias, arg2: java.awt.Shape, arg3: int, arg4: javax.swing.text.Position$Bias[]): int
-                public modelToView(arg0: int, arg1: java.awt.Shape, arg2: javax.swing.text.Position$Bias): java.awt.Shape
+                public abstract modelToView(arg0: int, arg1: java.awt.Shape, arg2: javax.swing.text.Position$Bias): java.awt.Shape
                 public modelToView(arg0: int, arg1: javax.swing.text.Position$Bias, arg2: int, arg3: javax.swing.text.Position$Bias, arg4: java.awt.Shape): java.awt.Shape
-                public viewToModel(arg0: float, arg1: float, arg2: java.awt.Shape, arg3: javax.swing.text.Position$Bias[]): int
+                public abstract viewToModel(arg0: float, arg1: float, arg2: java.awt.Shape, arg3: javax.swing.text.Position$Bias[]): int
                 public insertUpdate(arg0: javax.swing.event.DocumentEvent, arg1: java.awt.Shape, arg2: javax.swing.text.ViewFactory | javax.swing.text.ViewFactory$$Lambda): void
                 public removeUpdate(arg0: javax.swing.event.DocumentEvent, arg1: java.awt.Shape, arg2: javax.swing.text.ViewFactory | javax.swing.text.ViewFactory$$Lambda): void
                 public changedUpdate(arg0: javax.swing.event.DocumentEvent, arg1: java.awt.Shape, arg2: javax.swing.text.ViewFactory | javax.swing.text.ViewFactory$$Lambda): void

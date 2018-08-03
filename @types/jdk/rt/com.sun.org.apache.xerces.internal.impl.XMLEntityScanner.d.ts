@@ -14,9 +14,9 @@ declare namespace com {
                                 protected fSymbolTable: com.sun.org.apache.xerces.internal.util.SymbolTable
                                 protected fErrorReporter: com.sun.org.apache.xerces.internal.impl.XMLErrorReporter
                                 protected fAllowJavaEncodings: boolean
-                                protected static SYMBOL_TABLE: string
-                                protected static ERROR_REPORTER: string
-                                protected static ALLOW_JAVA_ENCODINGS: string
+                                protected static readonly SYMBOL_TABLE: string
+                                protected static readonly ERROR_REPORTER: string
+                                protected static readonly ALLOW_JAVA_ENCODINGS: string
                                 protected fPropertyManager: com.sun.org.apache.xerces.internal.impl.PropertyManager
                                 protected xmlVersionSetExplicitly: boolean
                                 public constructor()
@@ -67,7 +67,7 @@ declare namespace com {
                                 public arrangeCapacity(arg0: int, arg1: boolean): boolean
                                 protected skipString(arg0: java.lang.String | string): boolean
                                 protected skipString(arg0: char[]): boolean
-                                protected createReader(arg0: java.io.InputStream, arg1: java.lang.String | string, arg2: java.lang.Boolean | boolean): java.io.Reader
+                                protected createReader(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.lang.String | string, arg2: java.lang.Boolean | boolean): java.io.Reader
                                 protected getEncodingName(arg0: byte[], arg1: int): java.lang.Object[]
                                 public registerListener(arg0: com.sun.xml.internal.stream.XMLBufferListener): void
                                 public invokeListeners(arg0: int): void

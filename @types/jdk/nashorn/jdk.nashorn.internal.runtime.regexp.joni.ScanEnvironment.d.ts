@@ -5,8 +5,8 @@ declare namespace jdk {
                 namespace regexp {
                     namespace joni {
                         class ScanEnvironment {
-                            public syntax: jdk.nashorn.internal.runtime.regexp.joni.Syntax
-                            public reg: jdk.nashorn.internal.runtime.regexp.joni.Regex
+                            public readonly syntax: jdk.nashorn.internal.runtime.regexp.joni.Syntax
+                            public readonly reg: jdk.nashorn.internal.runtime.regexp.joni.Regex
                             public numMem: int
                             public memNodes: jdk.nashorn.internal.runtime.regexp.joni.ast.Node[]
                             public constructor(arg0: jdk.nashorn.internal.runtime.regexp.joni.Regex, arg1: jdk.nashorn.internal.runtime.regexp.joni.Syntax)

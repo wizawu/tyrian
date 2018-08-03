@@ -5,9 +5,9 @@ declare namespace com {
                 namespace impl {
                     namespace interceptors {
                         class ORBInitInfoImpl extends org.omg.CORBA.LocalObject implements org.omg.PortableInterceptor.ORBInitInfo , com.sun.corba.se.spi.legacy.interceptor.ORBInitInfoExt {
-                            public static STAGE_PRE_INIT: int
-                            public static STAGE_POST_INIT: int
-                            public static STAGE_CLOSED: int
+                            public static readonly STAGE_PRE_INIT: int
+                            public static readonly STAGE_POST_INIT: int
+                            public static readonly STAGE_CLOSED: int
                             public getORB(): com.sun.corba.se.spi.orb.ORB
                             public arguments(): java.lang.String[]
                             public orb_id(): string

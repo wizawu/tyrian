@@ -2,8 +2,8 @@ declare namespace javax {
     namespace swing {
         namespace undo {
             class AbstractUndoableEdit implements javax.swing.undo.UndoableEdit , java.io.Serializable {
-                protected static UndoName: string
-                protected static RedoName: string
+                protected static readonly UndoName: string
+                protected static readonly RedoName: string
                 public constructor()
                 public die(): void
                 public undo(): void

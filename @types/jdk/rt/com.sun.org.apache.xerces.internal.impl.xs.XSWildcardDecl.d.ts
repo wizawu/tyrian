@@ -7,7 +7,7 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 class XSWildcardDecl implements com.sun.org.apache.xerces.internal.xs.XSWildcard {
-                                    public static ABSENT: string
+                                    public static readonly ABSENT: string
                                     public fType: short
                                     public fProcessContents: short
                                     public fNamespaceList: java.lang.String[]

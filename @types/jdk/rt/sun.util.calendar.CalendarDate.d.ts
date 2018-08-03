@@ -2,8 +2,8 @@ declare namespace sun {
     namespace util {
         namespace calendar {
             abstract class CalendarDate implements java.lang.Cloneable {
-                public static FIELD_UNDEFINED: int
-                public static TIME_UNDEFINED: long
+                public static readonly FIELD_UNDEFINED: int
+                public static readonly TIME_UNDEFINED: long
                 protected constructor()
                 protected constructor(arg0: java.util.TimeZone)
                 public getEra(): sun.util.calendar.Era

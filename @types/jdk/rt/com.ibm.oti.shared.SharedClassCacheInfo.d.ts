@@ -3,15 +3,15 @@ declare namespace com {
         namespace oti {
             namespace shared {
                 class SharedClassCacheInfo {
-                    public static JVMLEVEL_JAVA5: int
-                    public static JVMLEVEL_JAVA6: int
-                    public static JVMLEVEL_JAVA7: int
-                    public static JVMLEVEL_JAVA8: int
-                    public static ADDRESS_MODE_32: int
-                    public static ADDRESS_MODE_64: int
-                    public static COMPRESSED_REFS: int
-                    public static NON_COMPRESSED_REFS: int
-                    public static COMPRESSED_REFS_UNKNOWN: int
+                    public static readonly JVMLEVEL_JAVA5: int
+                    public static readonly JVMLEVEL_JAVA6: int
+                    public static readonly JVMLEVEL_JAVA7: int
+                    public static readonly JVMLEVEL_JAVA8: int
+                    public static readonly ADDRESS_MODE_32: int
+                    public static readonly ADDRESS_MODE_64: int
+                    public static readonly COMPRESSED_REFS: int
+                    public static readonly NON_COMPRESSED_REFS: int
+                    public static readonly COMPRESSED_REFS_UNKNOWN: int
                     public getCacheName(): string
                     public isCacheCompatible(): boolean
                     public isCachePersistent(): boolean

@@ -1,15 +1,15 @@
 declare namespace javax {
     namespace swing {
         class JRootPane extends javax.swing.JComponent implements javax.accessibility.Accessible {
-            public static NONE: int
-            public static FRAME: int
-            public static PLAIN_DIALOG: int
-            public static INFORMATION_DIALOG: int
-            public static ERROR_DIALOG: int
-            public static COLOR_CHOOSER_DIALOG: int
-            public static FILE_CHOOSER_DIALOG: int
-            public static QUESTION_DIALOG: int
-            public static WARNING_DIALOG: int
+            public static readonly NONE: int
+            public static readonly FRAME: int
+            public static readonly PLAIN_DIALOG: int
+            public static readonly INFORMATION_DIALOG: int
+            public static readonly ERROR_DIALOG: int
+            public static readonly COLOR_CHOOSER_DIALOG: int
+            public static readonly FILE_CHOOSER_DIALOG: int
+            public static readonly QUESTION_DIALOG: int
+            public static readonly WARNING_DIALOG: int
             protected menuBar: javax.swing.JMenuBar
             protected contentPane: java.awt.Container
             protected layeredPane: javax.swing.JLayeredPane

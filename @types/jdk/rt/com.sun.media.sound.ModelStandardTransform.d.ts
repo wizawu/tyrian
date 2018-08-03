@@ -3,15 +3,15 @@ declare namespace com {
         namespace media {
             namespace sound {
                 class ModelStandardTransform implements com.sun.media.sound.ModelTransform {
-                    public static DIRECTION_MIN2MAX: boolean
-                    public static DIRECTION_MAX2MIN: boolean
-                    public static POLARITY_UNIPOLAR: boolean
-                    public static POLARITY_BIPOLAR: boolean
-                    public static TRANSFORM_LINEAR: int
-                    public static TRANSFORM_CONCAVE: int
-                    public static TRANSFORM_CONVEX: int
-                    public static TRANSFORM_SWITCH: int
-                    public static TRANSFORM_ABSOLUTE: int
+                    public static readonly DIRECTION_MIN2MAX: boolean
+                    public static readonly DIRECTION_MAX2MIN: boolean
+                    public static readonly POLARITY_UNIPOLAR: boolean
+                    public static readonly POLARITY_BIPOLAR: boolean
+                    public static readonly TRANSFORM_LINEAR: int
+                    public static readonly TRANSFORM_CONCAVE: int
+                    public static readonly TRANSFORM_CONVEX: int
+                    public static readonly TRANSFORM_SWITCH: int
+                    public static readonly TRANSFORM_ABSOLUTE: int
                     public constructor()
                     public constructor(arg0: boolean)
                     public constructor(arg0: boolean, arg1: boolean)

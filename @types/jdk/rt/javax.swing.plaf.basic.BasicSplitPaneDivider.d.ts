@@ -3,8 +3,8 @@ declare namespace javax {
         namespace plaf {
             namespace basic {
                 class BasicSplitPaneDivider extends java.awt.Container implements java.beans.PropertyChangeListener {
-                    protected static ONE_TOUCH_SIZE: int
-                    protected static ONE_TOUCH_OFFSET: int
+                    protected static readonly ONE_TOUCH_SIZE: int
+                    protected static readonly ONE_TOUCH_OFFSET: int
                     protected dragger: javax.swing.plaf.basic.BasicSplitPaneDivider$DragController
                     protected splitPaneUI: javax.swing.plaf.basic.BasicSplitPaneUI
                     protected dividerSize: int

@@ -5,7 +5,7 @@ declare namespace com {
                 namespace impl {
                     namespace ior {
                         class ObjectReferenceTemplateImpl extends com.sun.corba.se.impl.ior.ObjectReferenceProducerBase implements org.omg.PortableInterceptor.ObjectReferenceTemplate , org.omg.CORBA.portable.StreamableValue {
-                            public static repositoryId: string
+                            public static readonly repositoryId: string
                             public constructor(arg0: org.omg.CORBA.portable.InputStream)
                             public constructor(arg0: com.sun.corba.se.spi.orb.ORB, arg1: com.sun.corba.se.spi.ior.IORTemplate)
                             public equals(arg0: java.lang.Object): boolean

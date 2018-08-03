@@ -5,7 +5,7 @@ declare namespace com {
                 namespace protocol {
                     namespace iiop {
                         class ProxyInputStream extends org.omg.CORBA_2_3.portable.InputStream {
-                            protected in: org.omg.CORBA.portable.InputStream
+                            protected readonly in: org.omg.CORBA.portable.InputStream
                             public constructor(arg0: org.omg.CORBA.portable.InputStream)
                             public read_boolean(): boolean
                             public read_char(): char

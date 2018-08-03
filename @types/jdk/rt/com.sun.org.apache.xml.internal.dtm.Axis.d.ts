@@ -6,27 +6,27 @@ declare namespace com {
                     namespace internal {
                         namespace dtm {
                             class Axis {
-                                public static ANCESTOR: int
-                                public static ANCESTORORSELF: int
-                                public static ATTRIBUTE: int
-                                public static CHILD: int
-                                public static DESCENDANT: int
-                                public static DESCENDANTORSELF: int
-                                public static FOLLOWING: int
-                                public static FOLLOWINGSIBLING: int
-                                public static NAMESPACEDECLS: int
-                                public static NAMESPACE: int
-                                public static PARENT: int
-                                public static PRECEDING: int
-                                public static PRECEDINGSIBLING: int
-                                public static SELF: int
-                                public static ALLFROMNODE: int
-                                public static PRECEDINGANDANCESTOR: int
-                                public static ALL: int
-                                public static DESCENDANTSFROMROOT: int
-                                public static DESCENDANTSORSELFFROMROOT: int
-                                public static ROOT: int
-                                public static FILTEREDLIST: int
+                                public static readonly ANCESTOR: int
+                                public static readonly ANCESTORORSELF: int
+                                public static readonly ATTRIBUTE: int
+                                public static readonly CHILD: int
+                                public static readonly DESCENDANT: int
+                                public static readonly DESCENDANTORSELF: int
+                                public static readonly FOLLOWING: int
+                                public static readonly FOLLOWINGSIBLING: int
+                                public static readonly NAMESPACEDECLS: int
+                                public static readonly NAMESPACE: int
+                                public static readonly PARENT: int
+                                public static readonly PRECEDING: int
+                                public static readonly PRECEDINGSIBLING: int
+                                public static readonly SELF: int
+                                public static readonly ALLFROMNODE: int
+                                public static readonly PRECEDINGANDANCESTOR: int
+                                public static readonly ALL: int
+                                public static readonly DESCENDANTSFROMROOT: int
+                                public static readonly DESCENDANTSORSELFFROMROOT: int
+                                public static readonly ROOT: int
+                                public static readonly FILTEREDLIST: int
                                 public constructor()
                                 public static isReverse(arg0: int): boolean
                                 public static getNames(arg0: int): string

@@ -7,7 +7,7 @@ declare namespace com {
                         namespace objectweb {
                             namespace asm {
                                 class Attribute {
-                                    public type: string
+                                    public readonly type: string
                                     protected constructor(arg0: java.lang.String | string)
                                     public isUnknown(): boolean
                                     public isCodeAttribute(): boolean

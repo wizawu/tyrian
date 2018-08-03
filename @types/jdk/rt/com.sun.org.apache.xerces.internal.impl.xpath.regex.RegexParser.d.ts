@@ -8,9 +8,9 @@ declare namespace com {
                             namespace xpath {
                                 namespace regex {
                                     class RegexParser {
-                                        protected static S_NORMAL: int
-                                        protected static S_INBRACKETS: int
-                                        protected static S_INXBRACKETS: int
+                                        protected static readonly S_NORMAL: int
+                                        protected static readonly S_INBRACKETS: int
+                                        protected static readonly S_INXBRACKETS: int
                                         public constructor()
                                         public constructor(arg0: java.util.Locale)
                                         public setLocale(arg0: java.util.Locale): void

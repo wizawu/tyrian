@@ -17,12 +17,12 @@ declare namespace javax {
             public static getDesktopPropertyValue(arg0: java.lang.String | string, arg1: java.lang.Object): java.lang.Object
             public getDisabledIcon(arg0: javax.swing.JComponent, arg1: javax.swing.Icon): javax.swing.Icon
             public getDisabledSelectedIcon(arg0: javax.swing.JComponent, arg1: javax.swing.Icon): javax.swing.Icon
-            public getName(): string
-            public getID(): string
-            public getDescription(): string
+            public abstract getName(): string
+            public abstract getID(): string
+            public abstract getDescription(): string
             public getSupportsWindowDecorations(): boolean
-            public isNativeLookAndFeel(): boolean
-            public isSupportedLookAndFeel(): boolean
+            public abstract isNativeLookAndFeel(): boolean
+            public abstract isSupportedLookAndFeel(): boolean
             public initialize(): void
             public uninitialize(): void
             public getDefaults(): javax.swing.UIDefaults

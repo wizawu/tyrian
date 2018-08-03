@@ -3,12 +3,12 @@ declare namespace javax {
         namespace text {
             abstract class AbstractDocument implements javax.swing.text.Document , java.io.Serializable {
                 protected listenerList: javax.swing.event.EventListenerList
-                protected static BAD_LOCATION: string
-                public static ParagraphElementName: string
-                public static ContentElementName: string
-                public static SectionElementName: string
-                public static BidiElementName: string
-                public static ElementNameAttribute: string
+                protected static readonly BAD_LOCATION: string
+                public static readonly ParagraphElementName: string
+                public static readonly ContentElementName: string
+                public static readonly SectionElementName: string
+                public static readonly BidiElementName: string
+                public static readonly ElementNameAttribute: string
                 protected constructor(arg0: javax.swing.text.AbstractDocument$Content)
                 protected constructor(arg0: javax.swing.text.AbstractDocument$Content, arg1: javax.swing.text.AbstractDocument$AttributeContext)
                 public getDocumentProperties(): java.util.Dictionary<java.lang.Object, java.lang.Object>
@@ -41,9 +41,9 @@ declare namespace javax {
                 public getStartPosition<T extends java.util.EventListener>(): javax.swing.text.Position
                 public getEndPosition<T extends java.util.EventListener>(): javax.swing.text.Position
                 public getRootElements<T extends java.util.EventListener>(): javax.swing.text.Element[]
-                public getDefaultRootElement<T extends java.util.EventListener>(): javax.swing.text.Element
+                public abstract getDefaultRootElement<T extends java.util.EventListener>(): javax.swing.text.Element
                 public getBidiRootElement<T extends java.util.EventListener>(): javax.swing.text.Element
-                public getParagraphElement<T extends java.util.EventListener>(arg0: int): javax.swing.text.Element
+                public abstract getParagraphElement<T extends java.util.EventListener>(arg0: int): javax.swing.text.Element
                 protected getAttributeContext<T extends java.util.EventListener>(): javax.swing.text.AbstractDocument$AttributeContext
                 protected insertUpdate<T extends java.util.EventListener>(arg0: javax.swing.text.AbstractDocument$DefaultDocumentEvent, arg1: javax.swing.text.AttributeSet): void
                 protected removeUpdate<T extends java.util.EventListener>(arg0: javax.swing.text.AbstractDocument$DefaultDocumentEvent): void

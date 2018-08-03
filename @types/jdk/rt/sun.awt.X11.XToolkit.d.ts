@@ -70,7 +70,7 @@ declare namespace sun {
                 protected initializeDesktopProperties<T extends java.awt.dnd.DragGestureRecognizer>(): void
                 public getNumberOfButtons<T extends java.awt.dnd.DragGestureRecognizer>(): int
                 protected lazilyLoadDesktopProperty<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.String | string): java.lang.Object
-                public addPropertyChangeListener<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+                public addPropertyChangeListener<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener): void
                 protected needsXEmbedImpl<T extends java.awt.dnd.DragGestureRecognizer>(): boolean
                 public isModalityTypeSupported<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Dialog$ModalityType): boolean
                 public isModalExclusionTypeSupported<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Dialog$ModalExclusionType): boolean

@@ -2,8 +2,8 @@ declare namespace javax {
     namespace swing {
         namespace border {
             class EtchedBorder extends javax.swing.border.AbstractBorder {
-                public static RAISED: int
-                public static LOWERED: int
+                public static readonly RAISED: int
+                public static readonly LOWERED: int
                 protected etchType: int
                 protected highlight: java.awt.Color
                 protected shadow: java.awt.Color

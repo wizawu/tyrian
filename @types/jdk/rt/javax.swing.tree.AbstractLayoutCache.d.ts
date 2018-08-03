@@ -8,7 +8,7 @@ declare namespace javax {
                 protected rootVisible: boolean
                 protected rowHeight: int
                 public constructor()
-                public setNodeDimensions(arg0: javax.swing.tree.AbstractLayoutCache$NodeDimensions): void
+                public setNodeDimensions(arg0: javax.swing.tree.AbstractLayoutCache$NodeDimensions | javax.swing.tree.AbstractLayoutCache$NodeDimensions$$Lambda): void
                 public getNodeDimensions(): javax.swing.tree.AbstractLayoutCache$NodeDimensions
                 public setModel(arg0: javax.swing.tree.TreeModel): void
                 public getModel(): javax.swing.tree.TreeModel
@@ -20,22 +20,22 @@ declare namespace javax {
                 public getSelectionModel(): javax.swing.tree.TreeSelectionModel
                 public getPreferredHeight(): int
                 public getPreferredWidth(arg0: java.awt.Rectangle): int
-                public isExpanded(arg0: javax.swing.tree.TreePath): boolean
-                public getBounds(arg0: javax.swing.tree.TreePath, arg1: java.awt.Rectangle): java.awt.Rectangle
-                public getPathForRow(arg0: int): javax.swing.tree.TreePath
-                public getRowForPath(arg0: javax.swing.tree.TreePath): int
-                public getPathClosestTo(arg0: int, arg1: int): javax.swing.tree.TreePath
-                public getVisiblePathsFrom(arg0: javax.swing.tree.TreePath): java.util.Enumeration<javax.swing.tree.TreePath>
-                public getVisibleChildCount(arg0: javax.swing.tree.TreePath): int
-                public setExpandedState(arg0: javax.swing.tree.TreePath, arg1: boolean): void
-                public getExpandedState(arg0: javax.swing.tree.TreePath): boolean
-                public getRowCount(): int
-                public invalidateSizes(): void
-                public invalidatePathBounds(arg0: javax.swing.tree.TreePath): void
-                public treeNodesChanged(arg0: javax.swing.event.TreeModelEvent): void
-                public treeNodesInserted(arg0: javax.swing.event.TreeModelEvent): void
-                public treeNodesRemoved(arg0: javax.swing.event.TreeModelEvent): void
-                public treeStructureChanged(arg0: javax.swing.event.TreeModelEvent): void
+                public abstract isExpanded(arg0: javax.swing.tree.TreePath): boolean
+                public abstract getBounds(arg0: javax.swing.tree.TreePath, arg1: java.awt.Rectangle): java.awt.Rectangle
+                public abstract getPathForRow(arg0: int): javax.swing.tree.TreePath
+                public abstract getRowForPath(arg0: javax.swing.tree.TreePath): int
+                public abstract getPathClosestTo(arg0: int, arg1: int): javax.swing.tree.TreePath
+                public abstract getVisiblePathsFrom(arg0: javax.swing.tree.TreePath): java.util.Enumeration<javax.swing.tree.TreePath>
+                public abstract getVisibleChildCount(arg0: javax.swing.tree.TreePath): int
+                public abstract setExpandedState(arg0: javax.swing.tree.TreePath, arg1: boolean): void
+                public abstract getExpandedState(arg0: javax.swing.tree.TreePath): boolean
+                public abstract getRowCount(): int
+                public abstract invalidateSizes(): void
+                public abstract invalidatePathBounds(arg0: javax.swing.tree.TreePath): void
+                public abstract treeNodesChanged(arg0: javax.swing.event.TreeModelEvent): void
+                public abstract treeNodesInserted(arg0: javax.swing.event.TreeModelEvent): void
+                public abstract treeNodesRemoved(arg0: javax.swing.event.TreeModelEvent): void
+                public abstract treeStructureChanged(arg0: javax.swing.event.TreeModelEvent): void
                 public getRowsForPaths(arg0: javax.swing.tree.TreePath[]): int[]
                 protected getNodeDimensions(arg0: java.lang.Object, arg1: int, arg2: int, arg3: boolean, arg4: java.awt.Rectangle): java.awt.Rectangle
                 protected isFixedRowHeight(): boolean

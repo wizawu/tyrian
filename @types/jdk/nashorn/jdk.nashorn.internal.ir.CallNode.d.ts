@@ -3,10 +3,10 @@ declare namespace jdk {
         namespace internal {
             namespace ir {
                 class CallNode extends jdk.nashorn.internal.ir.LexicalContextExpression implements jdk.nashorn.internal.ir.Optimistic {
-                    public constructor(arg0: int, arg1: long, arg2: int, arg3: jdk.nashorn.internal.ir.Expression, arg4: java.util.List<jdk.nashorn.internal.ir.Expression>, arg5: boolean)
+                    public constructor(arg0: int, arg1: long, arg2: int, arg3: jdk.nashorn.internal.ir.Expression | jdk.nashorn.internal.ir.Expression$$Lambda, arg4: java.util.List<jdk.nashorn.internal.ir.Expression>, arg5: boolean)
                     public getLineNumber(): int
                     public getType(): jdk.nashorn.internal.codegen.types.Type
-                    public setType(arg0: jdk.nashorn.internal.codegen.types.Type): jdk.nashorn.internal.ir.Optimistic
+                    public setType(arg0: jdk.nashorn.internal.codegen.types.Type | jdk.nashorn.internal.codegen.types.Type$$Lambda): jdk.nashorn.internal.ir.Optimistic
                     public accept(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.LexicalContext>): jdk.nashorn.internal.ir.Node
                     public toString(arg0: java.lang.StringBuilder, arg1: boolean): void
                     public getArgs(): java.util.List<jdk.nashorn.internal.ir.Expression>
@@ -17,7 +17,7 @@ declare namespace jdk {
                     public isApplyToCall(): boolean
                     public setIsApplyToCall(): jdk.nashorn.internal.ir.CallNode
                     public getFunction(): jdk.nashorn.internal.ir.Expression
-                    public setFunction(arg0: jdk.nashorn.internal.ir.Expression): jdk.nashorn.internal.ir.CallNode
+                    public setFunction(arg0: jdk.nashorn.internal.ir.Expression | jdk.nashorn.internal.ir.Expression$$Lambda): jdk.nashorn.internal.ir.CallNode
                     public isNew(): boolean
                     public getProgramPoint(): int
                     public setProgramPoint(arg0: int): jdk.nashorn.internal.ir.CallNode

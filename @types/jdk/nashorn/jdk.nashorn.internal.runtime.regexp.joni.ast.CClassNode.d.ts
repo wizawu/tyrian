@@ -6,7 +6,7 @@ declare namespace jdk {
                     namespace joni {
                         namespace ast {
                             class CClassNode extends jdk.nashorn.internal.runtime.regexp.joni.ast.Node {
-                                public bs: jdk.nashorn.internal.runtime.regexp.joni.BitSet
+                                public readonly bs: jdk.nashorn.internal.runtime.regexp.joni.BitSet
                                 public mbuf: jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer
                                 public constructor()
                                 public clear(): void

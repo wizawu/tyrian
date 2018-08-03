@@ -2,7 +2,7 @@ declare namespace javax {
     namespace imageio {
         namespace stream {
             class FileCacheImageInputStream extends javax.imageio.stream.ImageInputStreamImpl {
-                public constructor(arg0: java.io.InputStream, arg1: java.io.File)
+                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.io.File)
                 public read(): int
                 public read(arg0: byte[], arg1: int, arg2: int): int
                 public isCached(): boolean

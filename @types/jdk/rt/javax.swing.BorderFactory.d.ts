@@ -31,10 +31,10 @@ declare namespace javax {
             public static createMatteBorder(arg0: int, arg1: int, arg2: int, arg3: int, arg4: java.awt.Color): javax.swing.border.MatteBorder
             public static createMatteBorder(arg0: int, arg1: int, arg2: int, arg3: int, arg4: javax.swing.Icon): javax.swing.border.MatteBorder
             public static createStrokeBorder(arg0: java.awt.BasicStroke): javax.swing.border.Border
-            public static createStrokeBorder(arg0: java.awt.BasicStroke, arg1: java.awt.Paint | java.awt.Paint$$Lambda): javax.swing.border.Border
-            public static createDashedBorder(arg0: java.awt.Paint | java.awt.Paint$$Lambda): javax.swing.border.Border
-            public static createDashedBorder(arg0: java.awt.Paint | java.awt.Paint$$Lambda, arg1: float, arg2: float): javax.swing.border.Border
-            public static createDashedBorder(arg0: java.awt.Paint | java.awt.Paint$$Lambda, arg1: float, arg2: float, arg3: float, arg4: boolean): javax.swing.border.Border
+            public static createStrokeBorder(arg0: java.awt.BasicStroke, arg1: java.awt.Paint): javax.swing.border.Border
+            public static createDashedBorder(arg0: java.awt.Paint): javax.swing.border.Border
+            public static createDashedBorder(arg0: java.awt.Paint, arg1: float, arg2: float): javax.swing.border.Border
+            public static createDashedBorder(arg0: java.awt.Paint, arg1: float, arg2: float, arg3: float, arg4: boolean): javax.swing.border.Border
             public static class: java.lang.Class<any>
         }
     }

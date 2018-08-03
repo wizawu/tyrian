@@ -6,7 +6,7 @@ declare namespace com {
                     namespace jvnet {
                         namespace mimepull {
                             class LineInputStream extends java.io.FilterInputStream {
-                                public constructor(arg0: java.io.InputStream)
+                                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                                 public readLine(): string
                                 public static class: java.lang.Class<any>
                             }

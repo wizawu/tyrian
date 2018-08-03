@@ -15,7 +15,7 @@ declare namespace com {
                                 public setEscaping(arg0: boolean): boolean
                                 public setIndent(arg0: boolean): void
                                 public setOutputFormat(arg0: java.util.Properties): void
-                                public setOutputStream(arg0: java.io.OutputStream): void
+                                public setOutputStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                                 public setWriter(arg0: java.io.Writer): void
                                 public attributeDecl(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.String | string): void
                                 public elementDecl(arg0: java.lang.String | string, arg1: java.lang.String | string): void

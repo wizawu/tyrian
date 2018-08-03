@@ -6,7 +6,7 @@ declare namespace com {
                     namespace internal {
                         namespace util {
                             class XMLStringBuffer extends com.sun.org.apache.xerces.internal.xni.XMLString {
-                                public static DEFAULT_SIZE: int
+                                public static readonly DEFAULT_SIZE: int
                                 public constructor()
                                 public constructor(arg0: int)
                                 public constructor(arg0: char)

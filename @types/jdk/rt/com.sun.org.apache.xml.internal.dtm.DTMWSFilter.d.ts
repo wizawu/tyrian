@@ -12,7 +12,7 @@ declare namespace com {
                                 getShouldStripSpace(arg0: int, arg1: com.sun.org.apache.xml.internal.dtm.DTM): short
                             }
                             interface DTMWSFilter$$Lambda {
-                                NOTSTRIP: short
+                                (arg0: int, arg1: com.sun.org.apache.xml.internal.dtm.DTM): short
                             }
                         }
                     }

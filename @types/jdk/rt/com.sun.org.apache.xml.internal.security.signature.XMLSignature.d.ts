@@ -7,25 +7,25 @@ declare namespace com {
                         namespace security {
                             namespace signature {
                                 class XMLSignature extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy {
-                                    public static ALGO_ID_MAC_HMAC_SHA1: string
-                                    public static ALGO_ID_SIGNATURE_DSA: string
-                                    public static ALGO_ID_SIGNATURE_DSA_SHA256: string
-                                    public static ALGO_ID_SIGNATURE_RSA: string
-                                    public static ALGO_ID_SIGNATURE_RSA_SHA1: string
-                                    public static ALGO_ID_SIGNATURE_NOT_RECOMMENDED_RSA_MD5: string
-                                    public static ALGO_ID_SIGNATURE_RSA_RIPEMD160: string
-                                    public static ALGO_ID_SIGNATURE_RSA_SHA256: string
-                                    public static ALGO_ID_SIGNATURE_RSA_SHA384: string
-                                    public static ALGO_ID_SIGNATURE_RSA_SHA512: string
-                                    public static ALGO_ID_MAC_HMAC_NOT_RECOMMENDED_MD5: string
-                                    public static ALGO_ID_MAC_HMAC_RIPEMD160: string
-                                    public static ALGO_ID_MAC_HMAC_SHA256: string
-                                    public static ALGO_ID_MAC_HMAC_SHA384: string
-                                    public static ALGO_ID_MAC_HMAC_SHA512: string
-                                    public static ALGO_ID_SIGNATURE_ECDSA_SHA1: string
-                                    public static ALGO_ID_SIGNATURE_ECDSA_SHA256: string
-                                    public static ALGO_ID_SIGNATURE_ECDSA_SHA384: string
-                                    public static ALGO_ID_SIGNATURE_ECDSA_SHA512: string
+                                    public static readonly ALGO_ID_MAC_HMAC_SHA1: string
+                                    public static readonly ALGO_ID_SIGNATURE_DSA: string
+                                    public static readonly ALGO_ID_SIGNATURE_DSA_SHA256: string
+                                    public static readonly ALGO_ID_SIGNATURE_RSA: string
+                                    public static readonly ALGO_ID_SIGNATURE_RSA_SHA1: string
+                                    public static readonly ALGO_ID_SIGNATURE_NOT_RECOMMENDED_RSA_MD5: string
+                                    public static readonly ALGO_ID_SIGNATURE_RSA_RIPEMD160: string
+                                    public static readonly ALGO_ID_SIGNATURE_RSA_SHA256: string
+                                    public static readonly ALGO_ID_SIGNATURE_RSA_SHA384: string
+                                    public static readonly ALGO_ID_SIGNATURE_RSA_SHA512: string
+                                    public static readonly ALGO_ID_MAC_HMAC_NOT_RECOMMENDED_MD5: string
+                                    public static readonly ALGO_ID_MAC_HMAC_RIPEMD160: string
+                                    public static readonly ALGO_ID_MAC_HMAC_SHA256: string
+                                    public static readonly ALGO_ID_MAC_HMAC_SHA384: string
+                                    public static readonly ALGO_ID_MAC_HMAC_SHA512: string
+                                    public static readonly ALGO_ID_SIGNATURE_ECDSA_SHA1: string
+                                    public static readonly ALGO_ID_SIGNATURE_ECDSA_SHA256: string
+                                    public static readonly ALGO_ID_SIGNATURE_ECDSA_SHA384: string
+                                    public static readonly ALGO_ID_SIGNATURE_ECDSA_SHA512: string
                                     public constructor(arg0: org.w3c.dom.Document, arg1: java.lang.String | string, arg2: java.lang.String | string)
                                     public constructor(arg0: org.w3c.dom.Document, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: int)
                                     public constructor(arg0: org.w3c.dom.Document, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string)

@@ -1,8 +1,8 @@
 declare namespace java {
     namespace time {
         class OffsetDateTime implements java.time.temporal.Temporal , java.time.temporal.TemporalAdjuster , java.lang.Comparable<java.time.OffsetDateTime> , java.io.Serializable {
-            public static MIN: java.time.OffsetDateTime
-            public static MAX: java.time.OffsetDateTime
+            public static readonly MIN: java.time.OffsetDateTime
+            public static readonly MAX: java.time.OffsetDateTime
             public static timeLineOrder(): java.util.Comparator<java.time.OffsetDateTime>
             public static now(): java.time.OffsetDateTime
             public static now(arg0: java.time.ZoneId): java.time.OffsetDateTime

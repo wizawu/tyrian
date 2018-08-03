@@ -10,8 +10,8 @@ declare namespace sun {
                 protected stopListening(): void
                 public notifyClientWindowChange(arg0: java.awt.Rectangle): void
                 public reconvert(): void
-                public disableInputMethod(): void
-                public getNativeInputMethodInfo(): string
+                public abstract disableInputMethod(): void
+                public abstract getNativeInputMethodInfo(): string
                 public static class: java.lang.Class<any>
             }
         }

@@ -7,19 +7,19 @@ declare namespace com {
                         namespace impl {
                             namespace dtd {
                                 class XMLDTDValidator implements com.sun.org.apache.xerces.internal.xni.parser.XMLComponent , com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentFilter , com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidatorFilter , com.sun.org.apache.xerces.internal.impl.RevalidationHandler {
-                                    protected static NAMESPACES: string
-                                    protected static VALIDATION: string
-                                    protected static DYNAMIC_VALIDATION: string
-                                    protected static BALANCE_SYNTAX_TREES: string
-                                    protected static WARN_ON_DUPLICATE_ATTDEF: string
-                                    protected static PARSER_SETTINGS: string
-                                    protected static SYMBOL_TABLE: string
-                                    protected static ERROR_REPORTER: string
-                                    protected static GRAMMAR_POOL: string
-                                    protected static DATATYPE_VALIDATOR_FACTORY: string
-                                    protected static VALIDATION_MANAGER: string
+                                    protected static readonly NAMESPACES: string
+                                    protected static readonly VALIDATION: string
+                                    protected static readonly DYNAMIC_VALIDATION: string
+                                    protected static readonly BALANCE_SYNTAX_TREES: string
+                                    protected static readonly WARN_ON_DUPLICATE_ATTDEF: string
+                                    protected static readonly PARSER_SETTINGS: string
+                                    protected static readonly SYMBOL_TABLE: string
+                                    protected static readonly ERROR_REPORTER: string
+                                    protected static readonly GRAMMAR_POOL: string
+                                    protected static readonly DATATYPE_VALIDATOR_FACTORY: string
+                                    protected static readonly VALIDATION_MANAGER: string
                                     protected fValidationManager: com.sun.org.apache.xerces.internal.impl.validation.ValidationManager
-                                    protected fValidationState: com.sun.org.apache.xerces.internal.impl.validation.ValidationState
+                                    protected readonly fValidationState: com.sun.org.apache.xerces.internal.impl.validation.ValidationState
                                     protected fNamespaces: boolean
                                     protected fValidation: boolean
                                     protected fDTDValidation: boolean

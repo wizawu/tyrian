@@ -4,7 +4,7 @@ declare namespace sun {
             class XQueryTree {
                 public constructor(arg0: long)
                 public execute(): int
-                public execute(arg0: sun.awt.X11.XErrorHandler): int
+                public execute(arg0: sun.awt.X11.XErrorHandler | sun.awt.X11.XErrorHandler$$Lambda): int
                 public isExecuted(): boolean
                 public isDisposed(): boolean
                 public dispose(): void

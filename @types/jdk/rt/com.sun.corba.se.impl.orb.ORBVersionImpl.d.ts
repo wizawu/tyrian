@@ -5,12 +5,12 @@ declare namespace com {
                 namespace impl {
                     namespace orb {
                         class ORBVersionImpl implements com.sun.corba.se.spi.orb.ORBVersion {
-                            public static FOREIGN: com.sun.corba.se.spi.orb.ORBVersion
-                            public static OLD: com.sun.corba.se.spi.orb.ORBVersion
-                            public static NEW: com.sun.corba.se.spi.orb.ORBVersion
-                            public static JDK1_3_1_01: com.sun.corba.se.spi.orb.ORBVersion
-                            public static NEWER: com.sun.corba.se.spi.orb.ORBVersion
-                            public static PEORB: com.sun.corba.se.spi.orb.ORBVersion
+                            public static readonly FOREIGN: com.sun.corba.se.spi.orb.ORBVersion
+                            public static readonly OLD: com.sun.corba.se.spi.orb.ORBVersion
+                            public static readonly NEW: com.sun.corba.se.spi.orb.ORBVersion
+                            public static readonly JDK1_3_1_01: com.sun.corba.se.spi.orb.ORBVersion
+                            public static readonly NEWER: com.sun.corba.se.spi.orb.ORBVersion
+                            public static readonly PEORB: com.sun.corba.se.spi.orb.ORBVersion
                             public constructor(arg0: byte)
                             public getORBType(): byte
                             public write(arg0: org.omg.CORBA.portable.OutputStream): void

@@ -6,7 +6,7 @@ declare namespace com {
                     namespace saaj {
                         namespace util {
                             class RejectDoctypeSaxFilter extends org.xml.sax.helpers.XMLFilterImpl implements org.xml.sax.XMLReader , org.xml.sax.ext.LexicalHandler {
-                                protected static log: java.util.logging.Logger
+                                protected static readonly log: java.util.logging.Logger
                                 public constructor(arg0: javax.xml.parsers.SAXParser)
                                 public setProperty(arg0: java.lang.String | string, arg1: java.lang.Object): void
                                 public startDTD(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void

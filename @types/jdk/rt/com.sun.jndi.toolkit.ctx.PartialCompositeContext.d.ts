@@ -4,23 +4,23 @@ declare namespace com {
             namespace toolkit {
                 namespace ctx {
                     abstract class PartialCompositeContext implements javax.naming.Context , javax.naming.spi.Resolver {
-                        protected static _PARTIAL: int
-                        protected static _COMPONENT: int
-                        protected static _ATOMIC: int
+                        protected static readonly _PARTIAL: int
+                        protected static readonly _COMPONENT: int
+                        protected static readonly _ATOMIC: int
                         protected _contextType: int
                         protected constructor()
-                        protected p_resolveToClass(arg0: javax.naming.Name, arg1: java.lang.Class<any>, arg2: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.spi.ResolveResult
-                        protected p_lookup(arg0: javax.naming.Name, arg1: com.sun.jndi.toolkit.ctx.Continuation): java.lang.Object
-                        protected p_lookupLink(arg0: javax.naming.Name, arg1: com.sun.jndi.toolkit.ctx.Continuation): java.lang.Object
-                        protected p_list(arg0: javax.naming.Name, arg1: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.NamingEnumeration<javax.naming.NameClassPair>
-                        protected p_listBindings(arg0: javax.naming.Name, arg1: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.NamingEnumeration<javax.naming.Binding>
-                        protected p_bind(arg0: javax.naming.Name, arg1: java.lang.Object, arg2: com.sun.jndi.toolkit.ctx.Continuation): void
-                        protected p_rebind(arg0: javax.naming.Name, arg1: java.lang.Object, arg2: com.sun.jndi.toolkit.ctx.Continuation): void
-                        protected p_unbind(arg0: javax.naming.Name, arg1: com.sun.jndi.toolkit.ctx.Continuation): void
-                        protected p_destroySubcontext(arg0: javax.naming.Name, arg1: com.sun.jndi.toolkit.ctx.Continuation): void
-                        protected p_createSubcontext(arg0: javax.naming.Name, arg1: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.Context
-                        protected p_rename(arg0: javax.naming.Name, arg1: javax.naming.Name, arg2: com.sun.jndi.toolkit.ctx.Continuation): void
-                        protected p_getNameParser(arg0: javax.naming.Name, arg1: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.NameParser
+                        protected abstract p_resolveToClass(arg0: javax.naming.Name, arg1: java.lang.Class<any>, arg2: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.spi.ResolveResult
+                        protected abstract p_lookup(arg0: javax.naming.Name, arg1: com.sun.jndi.toolkit.ctx.Continuation): java.lang.Object
+                        protected abstract p_lookupLink(arg0: javax.naming.Name, arg1: com.sun.jndi.toolkit.ctx.Continuation): java.lang.Object
+                        protected abstract p_list(arg0: javax.naming.Name, arg1: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.NamingEnumeration<javax.naming.NameClassPair>
+                        protected abstract p_listBindings(arg0: javax.naming.Name, arg1: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.NamingEnumeration<javax.naming.Binding>
+                        protected abstract p_bind(arg0: javax.naming.Name, arg1: java.lang.Object, arg2: com.sun.jndi.toolkit.ctx.Continuation): void
+                        protected abstract p_rebind(arg0: javax.naming.Name, arg1: java.lang.Object, arg2: com.sun.jndi.toolkit.ctx.Continuation): void
+                        protected abstract p_unbind(arg0: javax.naming.Name, arg1: com.sun.jndi.toolkit.ctx.Continuation): void
+                        protected abstract p_destroySubcontext(arg0: javax.naming.Name, arg1: com.sun.jndi.toolkit.ctx.Continuation): void
+                        protected abstract p_createSubcontext(arg0: javax.naming.Name, arg1: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.Context
+                        protected abstract p_rename(arg0: javax.naming.Name, arg1: javax.naming.Name, arg2: com.sun.jndi.toolkit.ctx.Continuation): void
+                        protected abstract p_getNameParser(arg0: javax.naming.Name, arg1: com.sun.jndi.toolkit.ctx.Continuation): javax.naming.NameParser
                         protected p_getEnvironment(): java.util.Hashtable<any, any>
                         public resolveToClass(arg0: java.lang.String | string, arg1: java.lang.Class<javax.naming.Context>): javax.naming.spi.ResolveResult
                         public resolveToClass(arg0: javax.naming.Name, arg1: java.lang.Class<javax.naming.Context>): javax.naming.spi.ResolveResult

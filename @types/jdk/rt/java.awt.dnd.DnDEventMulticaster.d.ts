@@ -10,9 +10,9 @@ declare namespace java {
                 public dragDropEnd(arg0: java.awt.dnd.DragSourceDropEvent): void
                 public dragMouseMoved(arg0: java.awt.dnd.DragSourceDragEvent): void
                 public static add(arg0: java.awt.dnd.DragSourceListener, arg1: java.awt.dnd.DragSourceListener): java.awt.dnd.DragSourceListener
-                public static add(arg0: java.awt.dnd.DragSourceMotionListener | java.awt.dnd.DragSourceMotionListener$$Lambda, arg1: java.awt.dnd.DragSourceMotionListener | java.awt.dnd.DragSourceMotionListener$$Lambda): java.awt.dnd.DragSourceMotionListener
+                public static add(arg0: java.awt.dnd.DragSourceMotionListener, arg1: java.awt.dnd.DragSourceMotionListener): java.awt.dnd.DragSourceMotionListener
                 public static remove(arg0: java.awt.dnd.DragSourceListener, arg1: java.awt.dnd.DragSourceListener): java.awt.dnd.DragSourceListener
-                public static remove(arg0: java.awt.dnd.DragSourceMotionListener | java.awt.dnd.DragSourceMotionListener$$Lambda, arg1: java.awt.dnd.DragSourceMotionListener | java.awt.dnd.DragSourceMotionListener$$Lambda): java.awt.dnd.DragSourceMotionListener
+                public static remove(arg0: java.awt.dnd.DragSourceMotionListener, arg1: java.awt.dnd.DragSourceMotionListener): java.awt.dnd.DragSourceMotionListener
                 protected static addInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener
                 protected remove(arg0: java.util.EventListener): java.util.EventListener
                 protected static removeInternal(arg0: java.util.EventListener, arg1: java.util.EventListener): java.util.EventListener

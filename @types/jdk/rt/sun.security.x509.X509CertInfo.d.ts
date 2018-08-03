@@ -2,19 +2,19 @@ declare namespace sun {
     namespace security {
         namespace x509 {
             class X509CertInfo implements sun.security.x509.CertAttrSet<java.lang.String> {
-                public static IDENT: string
-                public static NAME: string
-                public static DN_NAME: string
-                public static VERSION: string
-                public static SERIAL_NUMBER: string
-                public static ALGORITHM_ID: string
-                public static ISSUER: string
-                public static SUBJECT: string
-                public static VALIDITY: string
-                public static KEY: string
-                public static ISSUER_ID: string
-                public static SUBJECT_ID: string
-                public static EXTENSIONS: string
+                public static readonly IDENT: string
+                public static readonly NAME: string
+                public static readonly DN_NAME: string
+                public static readonly VERSION: string
+                public static readonly SERIAL_NUMBER: string
+                public static readonly ALGORITHM_ID: string
+                public static readonly ISSUER: string
+                public static readonly SUBJECT: string
+                public static readonly VALIDITY: string
+                public static readonly KEY: string
+                public static readonly ISSUER_ID: string
+                public static readonly SUBJECT_ID: string
+                public static readonly EXTENSIONS: string
                 protected version: sun.security.x509.CertificateVersion
                 protected serialNum: sun.security.x509.CertificateSerialNumber
                 protected algId: sun.security.x509.CertificateAlgorithmId
@@ -28,7 +28,7 @@ declare namespace sun {
                 public constructor()
                 public constructor(arg0: byte[])
                 public constructor(arg0: sun.security.util.DerValue)
-                public encode(arg0: java.io.OutputStream): void
+                public encode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                 public getElements(): java.util.Enumeration<java.lang.String>
                 public getName(): string
                 public getEncodedInfo(): byte[]

@@ -5,14 +5,14 @@ declare namespace com {
                 namespace ws {
                     namespace client {
                         abstract class Stub implements com.sun.xml.internal.ws.developer.WSBindingProvider , com.sun.xml.internal.ws.client.ResponseContextReceiver , com.sun.xml.internal.ws.api.ComponentRegistry {
-                            public static PREVENT_SYNC_START_FOR_ASYNC_INVOKE: string
-                            protected owner: com.sun.xml.internal.ws.client.WSServiceDelegate
+                            public static readonly PREVENT_SYNC_START_FOR_ASYNC_INVOKE: string
+                            protected readonly owner: com.sun.xml.internal.ws.client.WSServiceDelegate
                             protected endpointReference: com.sun.xml.internal.ws.api.addressing.WSEndpointReference
-                            protected binding: com.sun.xml.internal.ws.binding.BindingImpl
-                            protected portInfo: com.sun.xml.internal.ws.api.client.WSPortInfo
+                            protected readonly binding: com.sun.xml.internal.ws.binding.BindingImpl
+                            protected readonly portInfo: com.sun.xml.internal.ws.api.client.WSPortInfo
                             protected addrVersion: com.sun.xml.internal.ws.api.addressing.AddressingVersion
                             public requestContext: com.sun.xml.internal.ws.client.RequestContext
-                            protected wsdlPort: com.sun.xml.internal.ws.api.model.wsdl.WSDLPort
+                            protected readonly wsdlPort: com.sun.xml.internal.ws.api.model.wsdl.WSDLPort
                             protected portname: javax.xml.namespace.QName
                             protected operationDispatcher: com.sun.xml.internal.ws.wsdl.OperationDispatcher
                             protected constructor(arg0: com.sun.xml.internal.ws.client.WSServiceDelegate, arg1: com.sun.xml.internal.ws.api.pipe.Tube, arg2: com.sun.xml.internal.ws.binding.BindingImpl, arg3: com.sun.xml.internal.ws.api.model.wsdl.WSDLPort, arg4: com.sun.xml.internal.ws.api.EndpointAddress, arg5: com.sun.xml.internal.ws.api.addressing.WSEndpointReference)
@@ -24,7 +24,7 @@ declare namespace com {
                             public getTubes(): com.sun.xml.internal.ws.util.Pool<com.sun.xml.internal.ws.api.pipe.Tube>
                             public getPortInfo(): com.sun.xml.internal.ws.api.client.WSPortInfo
                             public getOperationDispatcher(): com.sun.xml.internal.ws.wsdl.OperationDispatcher
-                            protected getPortName(): javax.xml.namespace.QName
+                            protected abstract getPortName(): javax.xml.namespace.QName
                             protected getServiceName(): javax.xml.namespace.QName
                             public getExecutor(): java.util.concurrent.Executor
                             protected process(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: com.sun.xml.internal.ws.client.RequestContext, arg2: com.sun.xml.internal.ws.client.ResponseContextReceiver | com.sun.xml.internal.ws.client.ResponseContextReceiver$$Lambda): com.sun.xml.internal.ws.api.message.Packet
@@ -40,17 +40,20 @@ declare namespace com {
                             public getWSEndpointReference(): com.sun.xml.internal.ws.api.addressing.WSEndpointReference
                             public getEndpointReference(): javax.xml.ws.wsaddressing.W3CEndpointReference
                             public getEndpointReference<T extends javax.xml.ws.EndpointReference>(arg0: java.lang.Class<T>): T
-                            public getManagedObjectManager(): com.sun.org.glassfish.gmbal.ManagedObjectManager
-                            public setOutboundHeaders(arg0: java.util.List<com.sun.xml.internal.ws.api.message.Header>): void
-                            public setOutboundHeaders(...arg0: com.sun.xml.internal.ws.api.message.Header[]): void
-                            public getInboundHeaders(): java.util.List<com.sun.xml.internal.ws.api.message.Header>
-                            public setAddress(arg0: java.lang.String | string): void
+                            public getManagedObjectManager<T extends javax.xml.ws.EndpointReference>(): com.sun.org.glassfish.gmbal.ManagedObjectManager
+                            public setOutboundHeaders<T extends javax.xml.ws.EndpointReference>(arg0: java.util.List<com.sun.xml.internal.ws.api.message.Header>): void
+                            public setOutboundHeaders<T extends javax.xml.ws.EndpointReference>(...arg0: com.sun.xml.internal.ws.api.message.Header[]): void
+                            public getInboundHeaders<T extends javax.xml.ws.EndpointReference>(): java.util.List<com.sun.xml.internal.ws.api.message.Header>
+                            public setAddress<T extends javax.xml.ws.EndpointReference>(arg0: java.lang.String | string): void
                             public getSPI<S>(arg0: java.lang.Class<S>): S
                             public getComponents<S>(): java.util.Set<com.sun.xml.internal.ws.api.Component>
                             public getEndpointReference<S>(): javax.xml.ws.EndpointReference
                             public getBinding<S>(): javax.xml.ws.Binding
                             public getResponseContext<S>(): java.util.Map
                             public static class: java.lang.Class<any>
+                        }
+                        interface Stub$$Lambda implements com.sun.xml.internal.ws.developer.WSBindingProvider , com.sun.xml.internal.ws.client.ResponseContextReceiver , com.sun.xml.internal.ws.api.ComponentRegistry {
+                            (): javax.xml.namespace.QName
                         }
                     }
                 }

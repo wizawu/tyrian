@@ -3,8 +3,5 @@ declare namespace java {
         interface SuppressWarnings extends java.lang.annotation.Annotation {
             value(): java.lang.String[]
         }
-        interface SuppressWarnings$$Lambda extends java.lang.annotation.Annotation {
-            (): java.lang.String[]
-        }
     }
 }

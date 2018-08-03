@@ -7,7 +7,7 @@ declare namespace com {
                         namespace security {
                             namespace encryption {
                                 abstract class XMLCipher$Factory$ReferenceListImpl$ReferenceImpl implements com.sun.org.apache.xml.internal.security.encryption.Reference {
-                                    public getType(): string
+                                    public abstract getType(): string
                                     public getURI(): string
                                     public getElementRetrievalInformation(): java.util.Iterator<org.w3c.dom.Element>
                                     public setURI(arg0: java.lang.String | string): void
@@ -15,6 +15,9 @@ declare namespace com {
                                     public addElementRetrievalInformation(arg0: org.w3c.dom.Element): void
                                     public toElement(): org.w3c.dom.Element
                                     public static class: java.lang.Class<any>
+                                }
+                                interface XMLCipher$Factory$ReferenceListImpl$ReferenceImpl$$Lambda implements com.sun.org.apache.xml.internal.security.encryption.Reference {
+                                    (): string
                                 }
                             }
                         }

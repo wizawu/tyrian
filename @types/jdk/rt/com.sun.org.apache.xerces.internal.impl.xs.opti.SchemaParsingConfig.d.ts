@@ -8,31 +8,31 @@ declare namespace com {
                             namespace xs {
                                 namespace opti {
                                     class SchemaParsingConfig extends com.sun.org.apache.xerces.internal.parsers.BasicParserConfiguration implements com.sun.org.apache.xerces.internal.xni.parser.XMLPullParserConfiguration {
-                                        protected static XML11_DATATYPE_VALIDATOR_FACTORY: string
-                                        protected static WARN_ON_DUPLICATE_ATTDEF: string
-                                        protected static WARN_ON_UNDECLARED_ELEMDEF: string
-                                        protected static ALLOW_JAVA_ENCODINGS: string
-                                        protected static CONTINUE_AFTER_FATAL_ERROR: string
-                                        protected static LOAD_EXTERNAL_DTD: string
-                                        protected static NOTIFY_BUILTIN_REFS: string
-                                        protected static NOTIFY_CHAR_REFS: string
-                                        protected static NORMALIZE_DATA: string
-                                        protected static SCHEMA_ELEMENT_DEFAULT: string
-                                        protected static GENERATE_SYNTHETIC_ANNOTATIONS: string
-                                        protected static ERROR_REPORTER: string
-                                        protected static ENTITY_MANAGER: string
-                                        protected static DOCUMENT_SCANNER: string
-                                        protected static DTD_SCANNER: string
-                                        protected static XMLGRAMMAR_POOL: string
-                                        protected static DTD_VALIDATOR: string
-                                        protected static NAMESPACE_BINDER: string
-                                        protected static DATATYPE_VALIDATOR_FACTORY: string
-                                        protected static VALIDATION_MANAGER: string
-                                        protected static SCHEMA_VALIDATOR: string
-                                        protected static LOCALE: string
-                                        protected fDatatypeValidatorFactory: com.sun.org.apache.xerces.internal.impl.dv.DTDDVFactory
-                                        protected fNamespaceScanner: com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl
-                                        protected fDTDScanner: com.sun.org.apache.xerces.internal.impl.XMLDTDScannerImpl
+                                        protected static readonly XML11_DATATYPE_VALIDATOR_FACTORY: string
+                                        protected static readonly WARN_ON_DUPLICATE_ATTDEF: string
+                                        protected static readonly WARN_ON_UNDECLARED_ELEMDEF: string
+                                        protected static readonly ALLOW_JAVA_ENCODINGS: string
+                                        protected static readonly CONTINUE_AFTER_FATAL_ERROR: string
+                                        protected static readonly LOAD_EXTERNAL_DTD: string
+                                        protected static readonly NOTIFY_BUILTIN_REFS: string
+                                        protected static readonly NOTIFY_CHAR_REFS: string
+                                        protected static readonly NORMALIZE_DATA: string
+                                        protected static readonly SCHEMA_ELEMENT_DEFAULT: string
+                                        protected static readonly GENERATE_SYNTHETIC_ANNOTATIONS: string
+                                        protected static readonly ERROR_REPORTER: string
+                                        protected static readonly ENTITY_MANAGER: string
+                                        protected static readonly DOCUMENT_SCANNER: string
+                                        protected static readonly DTD_SCANNER: string
+                                        protected static readonly XMLGRAMMAR_POOL: string
+                                        protected static readonly DTD_VALIDATOR: string
+                                        protected static readonly NAMESPACE_BINDER: string
+                                        protected static readonly DATATYPE_VALIDATOR_FACTORY: string
+                                        protected static readonly VALIDATION_MANAGER: string
+                                        protected static readonly SCHEMA_VALIDATOR: string
+                                        protected static readonly LOCALE: string
+                                        protected readonly fDatatypeValidatorFactory: com.sun.org.apache.xerces.internal.impl.dv.DTDDVFactory
+                                        protected readonly fNamespaceScanner: com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl
+                                        protected readonly fDTDScanner: com.sun.org.apache.xerces.internal.impl.XMLDTDScannerImpl
                                         protected fXML11DatatypeFactory: com.sun.org.apache.xerces.internal.impl.dv.DTDDVFactory
                                         protected fXML11NSDocScanner: com.sun.org.apache.xerces.internal.impl.XML11NSDocumentScannerImpl
                                         protected fXML11DTDScanner: com.sun.org.apache.xerces.internal.impl.XML11DTDScannerImpl
@@ -40,11 +40,11 @@ declare namespace com {
                                         protected fCurrentScanner: com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentScanner
                                         protected fCurrentDTDScanner: com.sun.org.apache.xerces.internal.xni.parser.XMLDTDScanner
                                         protected fGrammarPool: com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool
-                                        protected fVersionDetector: com.sun.org.apache.xerces.internal.impl.XMLVersionDetector
-                                        protected fErrorReporter: com.sun.org.apache.xerces.internal.impl.XMLErrorReporter
-                                        protected fEntityManager: com.sun.org.apache.xerces.internal.impl.XMLEntityManager
+                                        protected readonly fVersionDetector: com.sun.org.apache.xerces.internal.impl.XMLVersionDetector
+                                        protected readonly fErrorReporter: com.sun.org.apache.xerces.internal.impl.XMLErrorReporter
+                                        protected readonly fEntityManager: com.sun.org.apache.xerces.internal.impl.XMLEntityManager
                                         protected fInputSource: com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource
-                                        protected fValidationManager: com.sun.org.apache.xerces.internal.impl.validation.ValidationManager
+                                        protected readonly fValidationManager: com.sun.org.apache.xerces.internal.impl.validation.ValidationManager
                                         protected fLocator: com.sun.org.apache.xerces.internal.xni.XMLLocator
                                         protected fParseInProgress: boolean
                                         protected fConfigUpdated: boolean

@@ -3,7 +3,7 @@ declare namespace javax {
         namespace text {
             namespace html {
                 class HTML {
-                    public static NULL_ATTRIBUTE_VALUE: string
+                    public static readonly NULL_ATTRIBUTE_VALUE: string
                     public constructor()
                     public static getAllTags(): javax.swing.text.html.HTML$Tag[]
                     public static getTag(arg0: java.lang.String | string): javax.swing.text.html.HTML$Tag

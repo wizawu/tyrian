@@ -7,9 +7,6 @@ declare namespace com {
                         interface DatabindingMode extends java.lang.annotation.Annotation {
                             value(): string
                         }
-                        interface DatabindingMode$$Lambda extends java.lang.annotation.Annotation {
-                            (): string
-                        }
                     }
                 }
             }

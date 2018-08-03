@@ -12,8 +12,8 @@ declare namespace java {
                 rangeRefinedBy(arg0: java.time.temporal.TemporalAccessor): java.time.temporal.ValueRange
                 getFrom(arg0: java.time.temporal.TemporalAccessor): long
                 adjustInto<R extends java.time.temporal.Temporal>(arg0: R, arg1: long): R
-                resolve(arg0: java.util.Map<java.time.temporal.TemporalField, java.lang.Long>, arg1: java.time.temporal.TemporalAccessor, arg2: java.time.format.ResolverStyle): java.time.temporal.TemporalAccessor
-                toString(): string
+                resolve<R extends java.time.temporal.Temporal>(arg0: java.util.Map<java.time.temporal.TemporalField, java.lang.Long>, arg1: java.time.temporal.TemporalAccessor, arg2: java.time.format.ResolverStyle): java.time.temporal.TemporalAccessor
+                toString<R extends java.time.temporal.Temporal>(): string
             }
         }
     }

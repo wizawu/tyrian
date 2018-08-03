@@ -6,7 +6,7 @@ declare namespace javax {
                 public setModel(arg0: javax.swing.tree.TreeModel): void
                 public setRootVisible(arg0: boolean): void
                 public setRowHeight(arg0: int): void
-                public setNodeDimensions(arg0: javax.swing.tree.AbstractLayoutCache$NodeDimensions): void
+                public setNodeDimensions(arg0: javax.swing.tree.AbstractLayoutCache$NodeDimensions | javax.swing.tree.AbstractLayoutCache$NodeDimensions$$Lambda): void
                 public setExpandedState(arg0: javax.swing.tree.TreePath, arg1: boolean): void
                 public getExpandedState(arg0: javax.swing.tree.TreePath): boolean
                 public getBounds(arg0: javax.swing.tree.TreePath, arg1: java.awt.Rectangle): java.awt.Rectangle

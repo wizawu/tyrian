@@ -4,9 +4,6 @@ declare namespace java {
             interface WritableByteChannel extends java.nio.channels.Channel {
                 write(arg0: java.nio.ByteBuffer): int
             }
-            interface WritableByteChannel$$Lambda extends java.nio.channels.Channel {
-                (arg0: java.nio.ByteBuffer): int
-            }
         }
     }
 }

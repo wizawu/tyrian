@@ -14,8 +14,8 @@ declare namespace sun {
                 public size(): long
                 public truncate(arg0: long): java.nio.channels.FileChannel
                 public force(arg0: boolean): void
-                public transferTo(arg0: long, arg1: long, arg2: java.nio.channels.WritableByteChannel | java.nio.channels.WritableByteChannel$$Lambda): long
-                public transferFrom(arg0: java.nio.channels.ReadableByteChannel | java.nio.channels.ReadableByteChannel$$Lambda, arg1: long, arg2: long): long
+                public transferTo(arg0: long, arg1: long, arg2: java.nio.channels.WritableByteChannel): long
+                public transferFrom(arg0: java.nio.channels.ReadableByteChannel, arg1: long, arg2: long): long
                 public read(arg0: java.nio.ByteBuffer, arg1: long): int
                 public write(arg0: java.nio.ByteBuffer, arg1: long): int
                 public map(arg0: java.nio.channels.FileChannel$MapMode, arg1: long, arg2: long): java.nio.MappedByteBuffer

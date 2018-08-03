@@ -4,8 +4,8 @@ declare namespace com {
             namespace internal {
                 namespace fastinfoset {
                     abstract class Encoder extends org.xml.sax.helpers.DefaultHandler implements com.sun.xml.internal.org.jvnet.fastinfoset.FastInfosetSerializer {
-                        public static CHARACTER_ENCODING_SCHEME_SYSTEM_PROPERTY: string
-                        protected static _characterEncodingSchemeSystemDefault: string
+                        public static readonly CHARACTER_ENCODING_SCHEME_SYSTEM_PROPERTY: string
+                        protected static readonly _characterEncodingSchemeSystemDefault: string
                         protected _v: com.sun.xml.internal.fastinfoset.vocab.SerializerVocabulary
                         protected _vData: com.sun.xml.internal.org.jvnet.fastinfoset.VocabularyApplicationData
                         protected _terminate: boolean
@@ -55,7 +55,7 @@ declare namespace com {
                         public setVocabularyApplicationData(arg0: com.sun.xml.internal.org.jvnet.fastinfoset.VocabularyApplicationData | com.sun.xml.internal.org.jvnet.fastinfoset.VocabularyApplicationData$$Lambda): void
                         public getVocabularyApplicationData(): com.sun.xml.internal.org.jvnet.fastinfoset.VocabularyApplicationData
                         public reset(): void
-                        public setOutputStream(arg0: java.io.OutputStream): void
+                        public setOutputStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                         public setVocabulary(arg0: com.sun.xml.internal.fastinfoset.vocab.SerializerVocabulary): void
                         protected encodeHeader(arg0: boolean): void
                         protected encodeInitialVocabulary(): void

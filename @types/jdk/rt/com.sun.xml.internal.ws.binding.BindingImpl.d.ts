@@ -5,12 +5,12 @@ declare namespace com {
                 namespace ws {
                     namespace binding {
                         abstract class BindingImpl implements com.sun.xml.internal.ws.api.WSBinding {
-                            protected static EMPTY_FEATURES: javax.xml.ws.WebServiceFeature[]
-                            protected features: com.sun.xml.internal.ws.binding.WebServiceFeatureList
-                            protected operationFeatures: java.util.Map<javax.xml.namespace.QName, com.sun.xml.internal.ws.binding.WebServiceFeatureList>
-                            protected inputMessageFeatures: java.util.Map<javax.xml.namespace.QName, com.sun.xml.internal.ws.binding.WebServiceFeatureList>
-                            protected outputMessageFeatures: java.util.Map<javax.xml.namespace.QName, com.sun.xml.internal.ws.binding.WebServiceFeatureList>
-                            protected faultMessageFeatures: java.util.Map<com.sun.xml.internal.ws.binding.BindingImpl$MessageKey, com.sun.xml.internal.ws.binding.WebServiceFeatureList>
+                            protected static readonly EMPTY_FEATURES: javax.xml.ws.WebServiceFeature[]
+                            protected readonly features: com.sun.xml.internal.ws.binding.WebServiceFeatureList
+                            protected readonly operationFeatures: java.util.Map<javax.xml.namespace.QName, com.sun.xml.internal.ws.binding.WebServiceFeatureList>
+                            protected readonly inputMessageFeatures: java.util.Map<javax.xml.namespace.QName, com.sun.xml.internal.ws.binding.WebServiceFeatureList>
+                            protected readonly outputMessageFeatures: java.util.Map<javax.xml.namespace.QName, com.sun.xml.internal.ws.binding.WebServiceFeatureList>
+                            protected readonly faultMessageFeatures: java.util.Map<com.sun.xml.internal.ws.binding.BindingImpl$MessageKey, com.sun.xml.internal.ws.binding.WebServiceFeatureList>
                             protected serviceMode: javax.xml.ws.Service$Mode
                             protected messageContextFactory: com.oracle.webservices.internal.api.message.MessageContextFactory
                             protected constructor(arg0: com.sun.xml.internal.ws.api.BindingID, ...arg1: javax.xml.ws.WebServiceFeature[])

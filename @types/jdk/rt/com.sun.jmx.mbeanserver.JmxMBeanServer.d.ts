@@ -3,7 +3,7 @@ declare namespace com {
         namespace jmx {
             namespace mbeanserver {
                 class JmxMBeanServer implements com.sun.jmx.mbeanserver.SunJmxMBeanServer {
-                    public static DEFAULT_FAIR_LOCK_POLICY: boolean
+                    public static readonly DEFAULT_FAIR_LOCK_POLICY: boolean
                     public interceptorsEnabled(): boolean
                     public getMBeanInstantiator(): com.sun.jmx.mbeanserver.MBeanInstantiator
                     public createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName): javax.management.ObjectInstance
@@ -24,12 +24,12 @@ declare namespace com {
                     public invoke(arg0: javax.management.ObjectName, arg1: java.lang.String | string, arg2: java.lang.Object[], arg3: java.lang.String[]): java.lang.Object
                     public getDefaultDomain(): string
                     public getDomains(): java.lang.String[]
-                    public addNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda, arg2: javax.management.NotificationFilter | javax.management.NotificationFilter$$Lambda, arg3: java.lang.Object): void
-                    public addNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName, arg2: javax.management.NotificationFilter | javax.management.NotificationFilter$$Lambda, arg3: java.lang.Object): void
-                    public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda): void
-                    public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda, arg2: javax.management.NotificationFilter | javax.management.NotificationFilter$$Lambda, arg3: java.lang.Object): void
+                    public addNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
+                    public addNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
+                    public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener): void
+                    public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
                     public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName): void
-                    public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName, arg2: javax.management.NotificationFilter | javax.management.NotificationFilter$$Lambda, arg3: java.lang.Object): void
+                    public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
                     public getMBeanInfo(arg0: javax.management.ObjectName): javax.management.MBeanInfo
                     public instantiate(arg0: java.lang.String | string): java.lang.Object
                     public instantiate(arg0: java.lang.String | string, arg1: javax.management.ObjectName): java.lang.Object

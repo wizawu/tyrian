@@ -4,16 +4,16 @@ declare namespace sun {
             abstract class ShellFolder extends java.io.File {
                 protected parent: sun.awt.shell.ShellFolder
                 public isFileSystem(): boolean
-                protected writeReplace(): java.lang.Object
+                protected abstract writeReplace(): java.lang.Object
                 public getParent(): string
                 public getParentFile(): java.io.File
                 public listFiles(): java.io.File[]
                 public listFiles(arg0: boolean): java.io.File[]
-                public isLink(): boolean
-                public getLinkLocation(): sun.awt.shell.ShellFolder
-                public getDisplayName(): string
-                public getFolderType(): string
-                public getExecutableType(): string
+                public abstract isLink(): boolean
+                public abstract getLinkLocation(): sun.awt.shell.ShellFolder
+                public abstract getDisplayName(): string
+                public abstract getFolderType(): string
+                public abstract getExecutableType(): string
                 public compareTo(arg0: java.io.File): int
                 public getIcon(arg0: boolean): java.awt.Image
                 public static getShellFolder(arg0: java.io.File): sun.awt.shell.ShellFolder
@@ -47,7 +47,7 @@ declare namespace sun {
                 public getFolderColumnValue(arg0: int): java.lang.Object
                 public static invoke<T>(arg0: java.util.concurrent.Callable<T> | java.util.concurrent.Callable$$Lambda<T>): T
                 public static invoke<T, E extends java.lang.Throwable>(arg0: java.util.concurrent.Callable<T> | java.util.concurrent.Callable$$Lambda<T>, arg1: java.lang.Class<E>): T
-                public compareTo(arg0: java.lang.Object): int
+                public compareTo<T, E extends java.lang.Throwable>(arg0: java.lang.Object): int
                 public static class: java.lang.Class<any>
             }
         }

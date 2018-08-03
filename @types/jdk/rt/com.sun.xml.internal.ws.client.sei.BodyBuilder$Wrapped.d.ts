@@ -6,8 +6,8 @@ declare namespace com {
                     namespace client {
                         namespace sei {
                             abstract class BodyBuilder$Wrapped extends com.sun.xml.internal.ws.client.sei.BodyBuilder$JAXB {
-                                protected indices: int[]
-                                protected getters: com.sun.xml.internal.ws.client.sei.ValueGetter[]
+                                protected readonly indices: int[]
+                                protected readonly getters: com.sun.xml.internal.ws.client.sei.ValueGetter[]
                                 protected parameterBridges: com.sun.xml.internal.ws.spi.db.XMLBridge[]
                                 protected children: java.util.List<com.sun.xml.internal.ws.model.ParameterImpl>
                                 protected constructor(arg0: com.sun.xml.internal.ws.model.WrapperParameter, arg1: com.sun.xml.internal.ws.api.SOAPVersion, arg2: com.sun.xml.internal.ws.client.sei.ValueGetterFactory)

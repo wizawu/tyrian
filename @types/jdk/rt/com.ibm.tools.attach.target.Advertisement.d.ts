@@ -4,7 +4,7 @@ declare namespace com {
             namespace attach {
                 namespace target {
                     class Advertisement {
-                        public static readAdvertisementFile(arg0: java.io.InputStream): com.ibm.tools.attach.target.Advertisement
+                        public static readAdvertisementFile(arg0: java.io.InputStream | java.io.InputStream$$Lambda): com.ibm.tools.attach.target.Advertisement
                         public static getFilename(): string
                         public getDisplayName(): string
                         public getProcessId(): long

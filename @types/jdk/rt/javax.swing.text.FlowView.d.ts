@@ -9,7 +9,7 @@ declare namespace javax {
                 public getFlowAxis(): int
                 public getFlowSpan(arg0: int): int
                 public getFlowStart(arg0: int): int
-                protected createRow(): javax.swing.text.View
+                protected abstract createRow(): javax.swing.text.View
                 protected loadChildren(arg0: javax.swing.text.ViewFactory | javax.swing.text.ViewFactory$$Lambda): void
                 protected getViewIndexAtPosition(arg0: int): int
                 protected layout(arg0: int, arg1: int): void
@@ -19,6 +19,9 @@ declare namespace javax {
                 public changedUpdate(arg0: javax.swing.event.DocumentEvent, arg1: java.awt.Shape, arg2: javax.swing.text.ViewFactory | javax.swing.text.ViewFactory$$Lambda): void
                 public setParent(arg0: javax.swing.text.View): void
                 public static class: java.lang.Class<any>
+            }
+            interface FlowView$$Lambda extends javax.swing.text.BoxView {
+                (): javax.swing.text.View
             }
         }
     }

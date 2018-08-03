@@ -5,7 +5,7 @@ declare namespace com {
                 namespace plaf {
                     namespace gtk {
                         class PangoFonts {
-                            public static CHARS_DIGITS: string
+                            public static readonly CHARS_DIGITS: string
                             public static class: java.lang.Class<any>
                         }
                     }

@@ -1,17 +1,17 @@
 declare namespace sun {
     namespace font {
         abstract class SunFontManager implements sun.java2d.FontSupport , sun.font.FontManagerForSGE {
-            public static FONTFORMAT_NONE: int
-            public static FONTFORMAT_TRUETYPE: int
-            public static FONTFORMAT_TYPE1: int
-            public static FONTFORMAT_T2K: int
-            public static FONTFORMAT_TTC: int
-            public static FONTFORMAT_COMPOSITE: int
-            public static FONTFORMAT_NATIVE: int
-            protected static CHANNELPOOLSIZE: int
+            public static readonly FONTFORMAT_NONE: int
+            public static readonly FONTFORMAT_TRUETYPE: int
+            public static readonly FONTFORMAT_TYPE1: int
+            public static readonly FONTFORMAT_T2K: int
+            public static readonly FONTFORMAT_TTC: int
+            public static readonly FONTFORMAT_COMPOSITE: int
+            public static readonly FONTFORMAT_NATIVE: int
+            protected static readonly CHANNELPOOLSIZE: int
             protected fontFileCache: sun.font.FileFont[]
             protected fullNameToFont: java.util.concurrent.ConcurrentHashMap<java.lang.String, sun.font.Font2D>
-            public static lucidaFontName: string
+            public static readonly lucidaFontName: string
             public static jreLibDirName: string
             public static jreFontDirName: string
             protected registeredFontFiles: java.util.HashSet
@@ -52,7 +52,7 @@ declare namespace sun {
             public findFont2D(arg0: java.lang.String | string, arg1: int, arg2: int): sun.font.Font2D
             public usePlatformFontMetrics(): boolean
             public getNumFonts(): int
-            protected getFontPath(arg0: boolean): string
+            protected abstract getFontPath(arg0: boolean): string
             public createFont2D(arg0: java.io.File, arg1: int, arg2: boolean, arg3: sun.font.CreatedFontTracker): sun.font.Font2D
             public getFullNameByFileName(arg0: java.lang.String | string): string
             public deRegisterBadFont(arg0: sun.font.Font2D): void
@@ -67,7 +67,7 @@ declare namespace sun {
             public getCreatedFontFamilyNames(): java.util.TreeMap<java.lang.String, java.lang.String>
             public getCreatedFonts(): java.awt.Font[]
             protected getPlatformFontDirs(arg0: boolean): java.lang.String[]
-            protected getDefaultPlatformFont(): java.lang.String[]
+            protected abstract getDefaultPlatformFont(): java.lang.String[]
             protected getNativeNames(arg0: java.lang.String | string, arg1: java.lang.String | string): java.lang.String[]
             protected getFileNameFromPlatformName(arg0: java.lang.String | string): string
             public getFontConfiguration(): sun.awt.FontConfiguration
@@ -80,8 +80,8 @@ declare namespace sun {
             protected registerFontDir(arg0: java.lang.String | string): void
             public getDefaultFontFile(): string
             protected useAbsoluteFontFileNames(): boolean
-            protected createFontConfiguration(): sun.awt.FontConfiguration
-            public createFontConfiguration(arg0: boolean, arg1: boolean): sun.awt.FontConfiguration
+            protected abstract createFontConfiguration(): sun.awt.FontConfiguration
+            public abstract createFontConfiguration(arg0: boolean, arg1: boolean): sun.awt.FontConfiguration
             public getDefaultFontFaceName(): string
             public loadFontFiles(): void
             protected addFontToPlatformFontPath(arg0: java.lang.String | string): void

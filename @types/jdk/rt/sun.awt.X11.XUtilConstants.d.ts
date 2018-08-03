@@ -2,64 +2,64 @@ declare namespace sun {
     namespace awt {
         namespace X11 {
             class XUtilConstants {
-                public static NoValue: int
-                public static XValue: int
-                public static YValue: int
-                public static WidthValue: int
-                public static HeightValue: int
-                public static AllValues: int
-                public static XNegative: int
-                public static YNegative: int
-                public static USPosition: long
-                public static USSize: long
-                public static PPosition: long
-                public static PSize: long
-                public static PMinSize: long
-                public static PMaxSize: long
-                public static PResizeInc: long
-                public static PAspect: long
-                public static PBaseSize: long
-                public static PWinGravity: long
-                public static PAllHints: long
-                public static InputHint: long
-                public static StateHint: long
-                public static IconPixmapHint: long
-                public static IconWindowHint: long
-                public static IconPositionHint: long
-                public static IconMaskHint: long
-                public static WindowGroupHint: long
-                public static AllHints: long
-                public static XUrgencyHint: long
-                public static WithdrawnState: int
-                public static NormalState: int
-                public static IconicState: int
-                public static DontCareState: int
-                public static ZoomState: int
-                public static InactiveState: int
-                public static XNoMemory: int
-                public static XLocaleNotSupported: int
-                public static XConverterNotFound: int
-                public static RectangleOut: int
-                public static RectangleIn: int
-                public static RectanglePart: int
-                public static VisualNoMask: int
-                public static VisualIDMask: int
-                public static VisualScreenMask: int
-                public static VisualDepthMask: int
-                public static VisualClassMask: int
-                public static VisualRedMaskMask: int
-                public static VisualGreenMaskMask: int
-                public static VisualBlueMaskMask: int
-                public static VisualColormapSizeMask: int
-                public static VisualBitsPerRGBMask: int
-                public static VisualAllMask: int
-                public static BitmapSuccess: int
-                public static BitmapOpenFailed: int
-                public static BitmapFileInvalid: int
-                public static BitmapNoMemory: int
-                public static XCSUCCESS: int
-                public static XCNOMEM: int
-                public static XCNOENT: int
+                public static readonly NoValue: int
+                public static readonly XValue: int
+                public static readonly YValue: int
+                public static readonly WidthValue: int
+                public static readonly HeightValue: int
+                public static readonly AllValues: int
+                public static readonly XNegative: int
+                public static readonly YNegative: int
+                public static readonly USPosition: long
+                public static readonly USSize: long
+                public static readonly PPosition: long
+                public static readonly PSize: long
+                public static readonly PMinSize: long
+                public static readonly PMaxSize: long
+                public static readonly PResizeInc: long
+                public static readonly PAspect: long
+                public static readonly PBaseSize: long
+                public static readonly PWinGravity: long
+                public static readonly PAllHints: long
+                public static readonly InputHint: long
+                public static readonly StateHint: long
+                public static readonly IconPixmapHint: long
+                public static readonly IconWindowHint: long
+                public static readonly IconPositionHint: long
+                public static readonly IconMaskHint: long
+                public static readonly WindowGroupHint: long
+                public static readonly AllHints: long
+                public static readonly XUrgencyHint: long
+                public static readonly WithdrawnState: int
+                public static readonly NormalState: int
+                public static readonly IconicState: int
+                public static readonly DontCareState: int
+                public static readonly ZoomState: int
+                public static readonly InactiveState: int
+                public static readonly XNoMemory: int
+                public static readonly XLocaleNotSupported: int
+                public static readonly XConverterNotFound: int
+                public static readonly RectangleOut: int
+                public static readonly RectangleIn: int
+                public static readonly RectanglePart: int
+                public static readonly VisualNoMask: int
+                public static readonly VisualIDMask: int
+                public static readonly VisualScreenMask: int
+                public static readonly VisualDepthMask: int
+                public static readonly VisualClassMask: int
+                public static readonly VisualRedMaskMask: int
+                public static readonly VisualGreenMaskMask: int
+                public static readonly VisualBlueMaskMask: int
+                public static readonly VisualColormapSizeMask: int
+                public static readonly VisualBitsPerRGBMask: int
+                public static readonly VisualAllMask: int
+                public static readonly BitmapSuccess: int
+                public static readonly BitmapOpenFailed: int
+                public static readonly BitmapFileInvalid: int
+                public static readonly BitmapNoMemory: int
+                public static readonly XCSUCCESS: int
+                public static readonly XCNOMEM: int
+                public static readonly XCNOENT: int
                 public static class: java.lang.Class<any>
             }
         }

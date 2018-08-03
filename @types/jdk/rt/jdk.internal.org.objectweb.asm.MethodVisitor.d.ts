@@ -4,7 +4,7 @@ declare namespace jdk {
             namespace objectweb {
                 namespace asm {
                     abstract class MethodVisitor {
-                        protected api: int
+                        protected readonly api: int
                         protected mv: jdk.internal.org.objectweb.asm.MethodVisitor
                         public constructor(arg0: int)
                         public constructor(arg0: int, arg1: jdk.internal.org.objectweb.asm.MethodVisitor)

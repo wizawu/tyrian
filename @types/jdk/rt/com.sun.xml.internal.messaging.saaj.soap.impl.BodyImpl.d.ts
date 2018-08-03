@@ -8,12 +8,12 @@ declare namespace com {
                             namespace impl {
                                 abstract class BodyImpl extends com.sun.xml.internal.messaging.saaj.soap.impl.ElementImpl implements javax.xml.soap.SOAPBody {
                                     protected constructor(arg0: com.sun.xml.internal.messaging.saaj.soap.SOAPDocumentImpl, arg1: com.sun.xml.internal.messaging.saaj.soap.name.NameImpl)
-                                    protected getFaultName(arg0: java.lang.String | string): com.sun.xml.internal.messaging.saaj.soap.name.NameImpl
-                                    protected isFault(arg0: javax.xml.soap.SOAPElement): boolean
-                                    protected createBodyElement(arg0: javax.xml.soap.Name): javax.xml.soap.SOAPBodyElement
-                                    protected createBodyElement(arg0: javax.xml.namespace.QName): javax.xml.soap.SOAPBodyElement
-                                    protected createFaultElement(): javax.xml.soap.SOAPFault
-                                    protected getDefaultFaultCode(): javax.xml.namespace.QName
+                                    protected abstract getFaultName(arg0: java.lang.String | string): com.sun.xml.internal.messaging.saaj.soap.name.NameImpl
+                                    protected abstract isFault(arg0: javax.xml.soap.SOAPElement): boolean
+                                    protected abstract createBodyElement(arg0: javax.xml.soap.Name): javax.xml.soap.SOAPBodyElement
+                                    protected abstract createBodyElement(arg0: javax.xml.namespace.QName): javax.xml.soap.SOAPBodyElement
+                                    protected abstract createFaultElement(): javax.xml.soap.SOAPFault
+                                    protected abstract getDefaultFaultCode(): javax.xml.namespace.QName
                                     public addFault(): javax.xml.soap.SOAPFault
                                     public addFault(arg0: javax.xml.soap.Name, arg1: java.lang.String | string, arg2: java.util.Locale): javax.xml.soap.SOAPFault
                                     public addFault(arg0: javax.xml.namespace.QName, arg1: java.lang.String | string, arg2: java.util.Locale): javax.xml.soap.SOAPFault

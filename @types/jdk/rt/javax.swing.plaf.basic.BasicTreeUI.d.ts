@@ -54,7 +54,7 @@ declare namespace javax {
                     protected isRootVisible(): boolean
                     protected setShowsRootHandles(arg0: boolean): void
                     protected getShowsRootHandles(): boolean
-                    protected setCellEditor(arg0: javax.swing.tree.TreeCellEditor | javax.swing.tree.TreeCellEditor$$Lambda): void
+                    protected setCellEditor(arg0: javax.swing.tree.TreeCellEditor): void
                     protected getCellEditor(): javax.swing.tree.TreeCellEditor
                     protected setEditable(arg0: boolean): void
                     protected isEditable(): boolean

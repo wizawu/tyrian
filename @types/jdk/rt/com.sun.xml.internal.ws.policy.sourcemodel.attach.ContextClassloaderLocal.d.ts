@@ -9,8 +9,11 @@ declare namespace com {
                                 abstract class ContextClassloaderLocal<V> {
                                     public get(): V
                                     public set(arg0: V): void
-                                    protected initialValue(): V
+                                    protected abstract initialValue(): V
                                     public static class: java.lang.Class<any>
+                                }
+                                interface ContextClassloaderLocal$$Lambda<V> {
+                                    (): V
                                 }
                             }
                         }

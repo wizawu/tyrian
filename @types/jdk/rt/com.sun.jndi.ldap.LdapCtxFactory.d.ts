@@ -3,7 +3,7 @@ declare namespace com {
         namespace jndi {
             namespace ldap {
                 class LdapCtxFactory implements javax.naming.spi.ObjectFactory , javax.naming.spi.InitialContextFactory {
-                    public static ADDRESS_TYPE: string
+                    public static readonly ADDRESS_TYPE: string
                     public constructor()
                     public getObjectInstance(arg0: java.lang.Object, arg1: javax.naming.Name, arg2: javax.naming.Context, arg3: java.util.Hashtable<any, any>): java.lang.Object
                     public getInitialContext(arg0: java.util.Hashtable<any, any>): javax.naming.Context

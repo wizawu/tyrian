@@ -6,11 +6,11 @@ declare namespace com {
                     namespace buffer {
                         namespace sax {
                             class Features {
-                                public static NAMESPACES_FEATURE: string
-                                public static NAMESPACE_PREFIXES_FEATURE: string
-                                public static EXTERNAL_GENERAL_ENTITIES: string
-                                public static EXTERNAL_PARAMETER_ENTITIES: string
-                                public static STRING_INTERNING_FEATURE: string
+                                public static readonly NAMESPACES_FEATURE: string
+                                public static readonly NAMESPACE_PREFIXES_FEATURE: string
+                                public static readonly EXTERNAL_GENERAL_ENTITIES: string
+                                public static readonly EXTERNAL_PARAMETER_ENTITIES: string
+                                public static readonly STRING_INTERNING_FEATURE: string
                                 public constructor()
                                 public static class: java.lang.Class<any>
                             }

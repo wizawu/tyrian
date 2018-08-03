@@ -2,8 +2,8 @@ declare namespace java {
     namespace util {
         namespace logging {
             class Logger {
-                public static GLOBAL_LOGGER_NAME: string
-                public static global: java.util.logging.Logger
+                public static readonly GLOBAL_LOGGER_NAME: string
+                public static readonly global: java.util.logging.Logger
                 public static getGlobal(): java.util.logging.Logger
                 protected constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
                 public static getLogger(arg0: java.lang.String | string): java.util.logging.Logger

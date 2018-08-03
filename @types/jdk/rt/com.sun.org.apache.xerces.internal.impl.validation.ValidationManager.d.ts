@@ -7,7 +7,7 @@ declare namespace com {
                         namespace impl {
                             namespace validation {
                                 class ValidationManager {
-                                    protected fVSs: java.util.Vector
+                                    protected readonly fVSs: java.util.Vector
                                     protected fGrammarFound: boolean
                                     protected fCachedDTD: boolean
                                     public constructor()

@@ -5,8 +5,8 @@ declare namespace com {
                 namespace jar {
                     namespace pack {
                         abstract class ConstantPool {
-                            protected static noRefs: com.sun.java.util.jar.pack.ConstantPool$Entry[]
-                            protected static noClassRefs: com.sun.java.util.jar.pack.ConstantPool$ClassEntry[]
+                            protected static readonly noRefs: com.sun.java.util.jar.pack.ConstantPool$Entry[]
+                            protected static readonly noClassRefs: com.sun.java.util.jar.pack.ConstantPool$ClassEntry[]
                             public static getUtf8Entry(arg0: java.lang.String | string): com.sun.java.util.jar.pack.ConstantPool$Utf8Entry
                             public static getClassEntry(arg0: java.lang.String | string): com.sun.java.util.jar.pack.ConstantPool$ClassEntry
                             public static getLiteralEntry(arg0: java.lang.Comparable<any> | java.lang.Comparable$$Lambda<any>): com.sun.java.util.jar.pack.ConstantPool$LiteralEntry

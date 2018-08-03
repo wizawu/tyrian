@@ -1,32 +1,32 @@
 declare namespace java {
     namespace awt {
         class Color implements java.awt.Paint , java.io.Serializable {
-            public static white: java.awt.Color
-            public static WHITE: java.awt.Color
-            public static lightGray: java.awt.Color
-            public static LIGHT_GRAY: java.awt.Color
-            public static gray: java.awt.Color
-            public static GRAY: java.awt.Color
-            public static darkGray: java.awt.Color
-            public static DARK_GRAY: java.awt.Color
-            public static black: java.awt.Color
-            public static BLACK: java.awt.Color
-            public static red: java.awt.Color
-            public static RED: java.awt.Color
-            public static pink: java.awt.Color
-            public static PINK: java.awt.Color
-            public static orange: java.awt.Color
-            public static ORANGE: java.awt.Color
-            public static yellow: java.awt.Color
-            public static YELLOW: java.awt.Color
-            public static green: java.awt.Color
-            public static GREEN: java.awt.Color
-            public static magenta: java.awt.Color
-            public static MAGENTA: java.awt.Color
-            public static cyan: java.awt.Color
-            public static CYAN: java.awt.Color
-            public static blue: java.awt.Color
-            public static BLUE: java.awt.Color
+            public static readonly white: java.awt.Color
+            public static readonly WHITE: java.awt.Color
+            public static readonly lightGray: java.awt.Color
+            public static readonly LIGHT_GRAY: java.awt.Color
+            public static readonly gray: java.awt.Color
+            public static readonly GRAY: java.awt.Color
+            public static readonly darkGray: java.awt.Color
+            public static readonly DARK_GRAY: java.awt.Color
+            public static readonly black: java.awt.Color
+            public static readonly BLACK: java.awt.Color
+            public static readonly red: java.awt.Color
+            public static readonly RED: java.awt.Color
+            public static readonly pink: java.awt.Color
+            public static readonly PINK: java.awt.Color
+            public static readonly orange: java.awt.Color
+            public static readonly ORANGE: java.awt.Color
+            public static readonly yellow: java.awt.Color
+            public static readonly YELLOW: java.awt.Color
+            public static readonly green: java.awt.Color
+            public static readonly GREEN: java.awt.Color
+            public static readonly magenta: java.awt.Color
+            public static readonly MAGENTA: java.awt.Color
+            public static readonly cyan: java.awt.Color
+            public static readonly CYAN: java.awt.Color
+            public static readonly blue: java.awt.Color
+            public static readonly BLUE: java.awt.Color
             public constructor(arg0: int, arg1: int, arg2: int)
             public constructor(arg0: int, arg1: int, arg2: int, arg3: int)
             public constructor(arg0: int)

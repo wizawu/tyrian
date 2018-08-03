@@ -17,11 +17,11 @@ declare namespace com {
                                 readAsJAXB<T>(arg0: javax.xml.bind.Unmarshaller): T
                                 readAsJAXB<T>(arg0: com.sun.xml.internal.bind.api.Bridge<T>): T
                                 readAsJAXB<T>(arg0: com.sun.xml.internal.ws.spi.db.XMLBridge<T>): T
-                                readAsEPR(arg0: com.sun.xml.internal.ws.api.addressing.AddressingVersion): com.sun.xml.internal.ws.api.addressing.WSEndpointReference
-                                writeTo(arg0: javax.xml.stream.XMLStreamWriter): void
-                                writeTo(arg0: javax.xml.soap.SOAPMessage): void
-                                writeTo(arg0: org.xml.sax.ContentHandler, arg1: org.xml.sax.ErrorHandler): void
-                                getStringContent(): string
+                                readAsEPR<T>(arg0: com.sun.xml.internal.ws.api.addressing.AddressingVersion): com.sun.xml.internal.ws.api.addressing.WSEndpointReference
+                                writeTo<T>(arg0: javax.xml.stream.XMLStreamWriter): void
+                                writeTo<T>(arg0: javax.xml.soap.SOAPMessage): void
+                                writeTo<T>(arg0: org.xml.sax.ContentHandler, arg1: org.xml.sax.ErrorHandler): void
+                                getStringContent<T>(): string
                             }
                         }
                     }

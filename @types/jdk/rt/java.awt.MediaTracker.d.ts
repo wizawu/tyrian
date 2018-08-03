@@ -1,10 +1,10 @@
 declare namespace java {
     namespace awt {
         class MediaTracker implements java.io.Serializable {
-            public static LOADING: int
-            public static ABORTED: int
-            public static ERRORED: int
-            public static COMPLETE: int
+            public static readonly LOADING: int
+            public static readonly ABORTED: int
+            public static readonly ERRORED: int
+            public static readonly COMPLETE: int
             public constructor(arg0: java.awt.Component)
             public addImage(arg0: java.awt.Image, arg1: int): void
             public addImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int): void

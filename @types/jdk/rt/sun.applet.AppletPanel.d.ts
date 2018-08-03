@@ -3,32 +3,32 @@ declare namespace sun {
         abstract class AppletPanel extends java.awt.Panel implements java.applet.AppletStub , java.lang.Runnable {
             protected doInit: boolean
             protected loader: sun.applet.AppletClassLoader
-            public static APPLET_DISPOSE: int
-            public static APPLET_LOAD: int
-            public static APPLET_INIT: int
-            public static APPLET_START: int
-            public static APPLET_STOP: int
-            public static APPLET_DESTROY: int
-            public static APPLET_QUIT: int
-            public static APPLET_ERROR: int
-            public static APPLET_RESIZE: int
-            public static APPLET_LOADING: int
-            public static APPLET_LOADING_COMPLETED: int
+            public static readonly APPLET_DISPOSE: int
+            public static readonly APPLET_LOAD: int
+            public static readonly APPLET_INIT: int
+            public static readonly APPLET_START: int
+            public static readonly APPLET_STOP: int
+            public static readonly APPLET_DESTROY: int
+            public static readonly APPLET_QUIT: int
+            public static readonly APPLET_ERROR: int
+            public static readonly APPLET_RESIZE: int
+            public static readonly APPLET_LOADING: int
+            public static readonly APPLET_LOADING_COMPLETED: int
             protected status: int
             protected handler: java.lang.Thread
             public constructor()
-            protected getCode(): string
-            protected getJarFiles(): string
-            protected getSerializedObject(): string
-            public getWidth(): int
-            public getHeight(): int
-            public hasInitialFocus(): boolean
+            protected abstract getCode(): string
+            protected abstract getJarFiles(): string
+            protected abstract getSerializedObject(): string
+            public abstract getWidth(): int
+            public abstract getHeight(): int
+            public abstract hasInitialFocus(): boolean
             protected setupAppletAppContext(): void
             public init(): void
             public minimumSize(): java.awt.Dimension
             public preferredSize(): java.awt.Dimension
-            public addAppletListener(arg0: sun.applet.AppletListener | sun.applet.AppletListener$$Lambda): void
-            public removeAppletListener(arg0: sun.applet.AppletListener | sun.applet.AppletListener$$Lambda): void
+            public addAppletListener(arg0: sun.applet.AppletListener): void
+            public removeAppletListener(arg0: sun.applet.AppletListener): void
             public dispatchAppletEvent(arg0: int, arg1: java.lang.Object): void
             public sendEvent(arg0: int): void
             public run(): void

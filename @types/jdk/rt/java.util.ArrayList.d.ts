@@ -33,7 +33,7 @@ declare namespace java {
             public forEach<T>(arg0: java.util.function$.Consumer$$Lambda<E>): void
             public spliterator<T>(): java.util.Spliterator<E>
             public removeIf<T>(arg0: java.util.function$.Predicate<E>): boolean
-            public replaceAll<T>(arg0: java.util.function$.UnaryOperator<E> | java.util.function$.UnaryOperator$$Lambda<E>): void
+            public replaceAll<T>(arg0: java.util.function$.UnaryOperator<E>): void
             public sort<T>(arg0: java.util.Comparator<E>): void
             public static class: java.lang.Class<any>
         }

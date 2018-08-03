@@ -4,8 +4,8 @@ declare namespace jdk {
             namespace runtime {
                 namespace arrays {
                     class JavaArrayIterator extends jdk.nashorn.internal.runtime.arrays.ArrayLikeIterator<java.lang.Object> {
-                        protected array: java.lang.Object
-                        protected length: long
+                        protected readonly array: java.lang.Object
+                        protected readonly length: long
                         protected constructor(arg0: java.lang.Object, arg1: boolean)
                         protected indexInArray(): boolean
                         public next(): java.lang.Object

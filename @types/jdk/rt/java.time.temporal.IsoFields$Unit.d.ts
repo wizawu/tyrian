@@ -2,8 +2,8 @@ declare namespace java {
     namespace time {
         namespace temporal {
             class IsoFields$Unit extends java.lang.Enum<java.time.temporal.IsoFields$Unit> implements java.time.temporal.TemporalUnit {
-                public static WEEK_BASED_YEARS: java.time.temporal.IsoFields$Unit
-                public static QUARTER_YEARS: java.time.temporal.IsoFields$Unit
+                public static readonly WEEK_BASED_YEARS: java.time.temporal.IsoFields$Unit
+                public static readonly QUARTER_YEARS: java.time.temporal.IsoFields$Unit
                 public static values(): java.time.temporal.IsoFields$Unit[]
                 public static valueOf(arg0: java.lang.String | string): java.time.temporal.IsoFields$Unit
                 public getDuration(): java.time.Duration

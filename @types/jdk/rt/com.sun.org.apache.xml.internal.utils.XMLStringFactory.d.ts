@@ -7,10 +7,10 @@ declare namespace com {
                         namespace utils {
                             abstract class XMLStringFactory {
                                 public constructor()
-                                public newstr(arg0: java.lang.String | string): com.sun.org.apache.xml.internal.utils.XMLString
-                                public newstr(arg0: com.sun.org.apache.xml.internal.utils.FastStringBuffer, arg1: int, arg2: int): com.sun.org.apache.xml.internal.utils.XMLString
-                                public newstr(arg0: char[], arg1: int, arg2: int): com.sun.org.apache.xml.internal.utils.XMLString
-                                public emptystr(): com.sun.org.apache.xml.internal.utils.XMLString
+                                public abstract newstr(arg0: java.lang.String | string): com.sun.org.apache.xml.internal.utils.XMLString
+                                public abstract newstr(arg0: com.sun.org.apache.xml.internal.utils.FastStringBuffer, arg1: int, arg2: int): com.sun.org.apache.xml.internal.utils.XMLString
+                                public abstract newstr(arg0: char[], arg1: int, arg2: int): com.sun.org.apache.xml.internal.utils.XMLString
+                                public abstract emptystr(): com.sun.org.apache.xml.internal.utils.XMLString
                                 public static class: java.lang.Class<any>
                             }
                         }

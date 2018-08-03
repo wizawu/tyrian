@@ -4,9 +4,9 @@ declare namespace com {
             namespace httpserver {
                 abstract class HttpsParameters {
                     protected constructor()
-                    public getHttpsConfigurator(): com.sun.net.httpserver.HttpsConfigurator
-                    public getClientAddress(): java.net.InetSocketAddress
-                    public setSSLParameters(arg0: javax.net.ssl.SSLParameters): void
+                    public abstract getHttpsConfigurator(): com.sun.net.httpserver.HttpsConfigurator
+                    public abstract getClientAddress(): java.net.InetSocketAddress
+                    public abstract setSSLParameters(arg0: javax.net.ssl.SSLParameters): void
                     public getCipherSuites(): java.lang.String[]
                     public setCipherSuites(arg0: java.lang.String[]): void
                     public getProtocols(): java.lang.String[]

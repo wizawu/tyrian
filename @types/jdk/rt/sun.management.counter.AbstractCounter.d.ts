@@ -11,9 +11,12 @@ declare namespace sun {
                 public getVectorLength(): int
                 public isInternal(): boolean
                 public getFlags(): int
-                public getValue(): java.lang.Object
+                public abstract getValue(): java.lang.Object
                 public toString(): string
                 public static class: java.lang.Class<any>
+            }
+            interface AbstractCounter$$Lambda implements sun.management.counter.Counter {
+                (): java.lang.Object
             }
         }
     }

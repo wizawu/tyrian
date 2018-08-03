@@ -14,7 +14,7 @@ declare namespace com {
                                 public getCharacterStream(): java.io.Writer
                                 public setCharacterStream(arg0: java.io.Writer): void
                                 public getByteStream(): java.io.OutputStream
-                                public setByteStream(arg0: java.io.OutputStream): void
+                                public setByteStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                                 public getSystemId(): string
                                 public setSystemId(arg0: java.lang.String | string): void
                                 public getEncoding(): string

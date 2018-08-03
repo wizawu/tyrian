@@ -12,9 +12,9 @@ declare namespace java {
                 public displayName(): string
                 public isRegistered(): boolean
                 public displayName(arg0: java.util.Locale): string
-                public contains(arg0: java.nio.charset.Charset): boolean
-                public newDecoder(): java.nio.charset.CharsetDecoder
-                public newEncoder(): java.nio.charset.CharsetEncoder
+                public abstract contains(arg0: java.nio.charset.Charset): boolean
+                public abstract newDecoder(): java.nio.charset.CharsetDecoder
+                public abstract newEncoder(): java.nio.charset.CharsetEncoder
                 public canEncode(): boolean
                 public decode(arg0: java.nio.ByteBuffer): java.nio.CharBuffer
                 public encode(arg0: java.nio.CharBuffer): java.nio.ByteBuffer

@@ -5,8 +5,8 @@ declare namespace com {
                 namespace ws {
                     namespace developer {
                         class MemberSubmissionAddressingFeature extends javax.xml.ws.WebServiceFeature {
-                            public static ID: string
-                            public static IS_REQUIRED: string
+                            public static readonly ID: string
+                            public static readonly IS_REQUIRED: string
                             public constructor()
                             public constructor(arg0: boolean)
                             public constructor(arg0: boolean, arg1: boolean)

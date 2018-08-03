@@ -8,18 +8,18 @@ declare namespace javax {
                         public elements: java.util.Vector<javax.swing.text.html.parser.Element>
                         public elementHash: java.util.Hashtable<java.lang.String, javax.swing.text.html.parser.Element>
                         public entityHash: java.util.Hashtable<java.lang.Object, javax.swing.text.html.parser.Entity>
-                        public pcdata: javax.swing.text.html.parser.Element
-                        public html: javax.swing.text.html.parser.Element
-                        public meta: javax.swing.text.html.parser.Element
-                        public base: javax.swing.text.html.parser.Element
-                        public isindex: javax.swing.text.html.parser.Element
-                        public head: javax.swing.text.html.parser.Element
-                        public body: javax.swing.text.html.parser.Element
-                        public applet: javax.swing.text.html.parser.Element
-                        public param: javax.swing.text.html.parser.Element
-                        public p: javax.swing.text.html.parser.Element
-                        public title: javax.swing.text.html.parser.Element
-                        public static FILE_VERSION: int
+                        public readonly pcdata: javax.swing.text.html.parser.Element
+                        public readonly html: javax.swing.text.html.parser.Element
+                        public readonly meta: javax.swing.text.html.parser.Element
+                        public readonly base: javax.swing.text.html.parser.Element
+                        public readonly isindex: javax.swing.text.html.parser.Element
+                        public readonly head: javax.swing.text.html.parser.Element
+                        public readonly body: javax.swing.text.html.parser.Element
+                        public readonly applet: javax.swing.text.html.parser.Element
+                        public readonly param: javax.swing.text.html.parser.Element
+                        public readonly p: javax.swing.text.html.parser.Element
+                        public readonly title: javax.swing.text.html.parser.Element
+                        public static readonly FILE_VERSION: int
                         protected constructor(arg0: java.lang.String | string)
                         public getName(): string
                         public getEntity(arg0: java.lang.String | string): javax.swing.text.html.parser.Entity

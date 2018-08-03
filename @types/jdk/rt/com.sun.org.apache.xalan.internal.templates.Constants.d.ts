@@ -6,340 +6,340 @@ declare namespace com {
                     namespace internal {
                         namespace templates {
                             class Constants extends com.sun.org.apache.xml.internal.utils.Constants {
-                                public static ELEMNAME_UNDEFINED: int
-                                public static ELEMNAME_WITHPARAM: int
-                                public static ELEMNAME_ADDATTRIBUTE: int
-                                public static ELEMNAME_ANCHOR: int
-                                public static ELEMNAME_APPLY_TEMPLATES: int
-                                public static ELEMNAME_USE: int
-                                public static ELEMNAME_CHILDREN: int
-                                public static ELEMNAME_CHOOSE: int
-                                public static ELEMNAME_COMMENT: int
-                                public static ELEMNAME_CONSTRUCT: int
-                                public static ELEMNAME_CONTENTS: int
-                                public static ELEMNAME_COPY: int
-                                public static ELEMNAME_COPY_OF: int
-                                public static ELEMNAME_DECIMALFORMAT: int
-                                public static ELEMNAME_DEFINEATTRIBUTESET: int
-                                public static ELEMNAME_DEFINESCRIPT: int
-                                public static ELEMNAME_DISPLAYIF: int
-                                public static ELEMNAME_EMPTY: int
-                                public static ELEMNAME_EVAL: int
-                                public static ELEMNAME_EXPECTEDCHILDREN: int
-                                public static ELEMNAME_EXTENSION: int
-                                public static ELEMNAME_EXTENSIONHANDLER: int
-                                public static ELEMNAME_FOREACH: int
-                                public static ELEMNAME_KEY: int
-                                public static ELEMNAME_IF: int
-                                public static ELEMNAME_IMPORT: int
-                                public static ELEMNAME_INCLUDE: int
-                                public static ELEMNAME_CALLTEMPLATE: int
-                                public static ELEMNAME_PARAMVARIABLE: int
-                                public static ELEMNAME_NUMBER: int
-                                public static ELEMNAME_NSALIAS: int
-                                public static ELEMNAME_OTHERWISE: int
-                                public static ELEMNAME_PI: int
-                                public static ELEMNAME_PRESERVESPACE: int
-                                public static ELEMNAME_REMOVEATTRIBUTE: int
-                                public static ELEMNAME_TEMPLATE: int
-                                public static ELEMNAME_SORT: int
-                                public static ELEMNAME_STRIPSPACE: int
-                                public static ELEMNAME_STYLESHEET: int
-                                public static ELEMNAME_TEXT: int
-                                public static ELEMNAME_VALUEOF: int
-                                public static ELEMNAME_WHEN: int
-                                public static ELEMNAME_ROOT: int
-                                public static ELEMNAME_ANY: int
-                                public static ELEMNAME_ELEMENT: int
-                                public static ELEMNAME_TARGETELEMENT: int
-                                public static ELEMNAME_ATTRIBUTE: int
-                                public static ELEMNAME_TARGETATTRIBUTE: int
-                                public static ELEMNAME_URL: int
-                                public static ELEMNAME_CALL: int
-                                public static ELEMNAME_FALLBACK: int
-                                public static ELEMNAME_TARGETPI: int
-                                public static ELEMNAME_TARGETCOMMENT: int
-                                public static ELEMNAME_TARGETTEXT: int
-                                public static ELEMNAME_CSSSTYLECONVERSION: int
-                                public static ELEMNAME_COUNTER: int
-                                public static ELEMNAME_COUNTERS: int
-                                public static ELEMNAME_COUNTERINCREMENT: int
-                                public static ELEMNAME_COUNTERRESET: int
-                                public static ELEMNAME_COUNTERSCOPE: int
-                                public static ELEMNAME_APPLY_IMPORTS: int
-                                public static ELEMNAME_VARIABLE: int
-                                public static ELEMNAME_MESSAGE: int
-                                public static ELEMNAME_LOCALE: int
-                                public static ELEMNAME_LITERALRESULT: int
-                                public static ELEMNAME_TEXTLITERALRESULT: int
-                                public static ELEMNAME_EXTENSIONCALL: int
-                                public static ELEMNAME_EXTENSIONDECL: int
-                                public static ELEMNAME_EXTENSIONSCRIPT: int
-                                public static ELEMNAME_OUTPUT: int
-                                public static ELEMNAME_COMPONENT: int
-                                public static ELEMNAME_SCRIPT: int
-                                public static ELEMNAME_ANCHOR_STRING: string
-                                public static ELEMNAME_ANY_STRING: string
-                                public static ELEMNAME_APPLY_IMPORTS_STRING: string
-                                public static ELEMNAME_APPLY_TEMPLATES_STRING: string
-                                public static ELEMNAME_ARG_STRING: string
-                                public static ELEMNAME_ATTRIBUTESET_STRING: string
-                                public static ELEMNAME_ATTRIBUTE_STRING: string
-                                public static ELEMNAME_CALLTEMPLATEARG_STRING: string
-                                public static ELEMNAME_CALLTEMPLATE_STRING: string
-                                public static ELEMNAME_CALL_STRING: string
-                                public static ELEMNAME_CHILDREN_STRING: string
-                                public static ELEMNAME_CHOOSE_STRING: string
-                                public static ELEMNAME_COMMENT_STRING: string
-                                public static ELEMNAME_COMPONENT_STRING: string
-                                public static ELEMNAME_CONSTRUCT_STRING: string
-                                public static ELEMNAME_CONTENTS_STRING: string
-                                public static ELEMNAME_COPY_OF_STRING: string
-                                public static ELEMNAME_COPY_STRING: string
-                                public static ELEMNAME_COUNTERINCREMENT_STRING: string
-                                public static ELEMNAME_COUNTERRESET_STRING: string
-                                public static ELEMNAME_COUNTERSCOPE_STRING: string
-                                public static ELEMNAME_COUNTERS_STRING: string
-                                public static ELEMNAME_COUNTER_STRING: string
-                                public static ELEMNAME_CSSSTYLECONVERSION_STRING: string
-                                public static ELEMNAME_DECIMALFORMAT_STRING: string
-                                public static ELEMNAME_DISPLAYIF_STRING: string
-                                public static ELEMNAME_ELEMENT_STRING: string
-                                public static ELEMNAME_EMPTY_STRING: string
-                                public static ELEMNAME_EVAL_STRING: string
-                                public static ELEMNAME_EXPECTEDCHILDREN_STRING: string
-                                public static ELEMNAME_EXTENSIONHANDLER_STRING: string
-                                public static ELEMNAME_EXTENSION_STRING: string
-                                public static ELEMNAME_FALLBACK_STRING: string
-                                public static ELEMNAME_FOREACH_STRING: string
-                                public static ELEMNAME_IF_STRING: string
-                                public static ELEMNAME_IMPORT_STRING: string
-                                public static ELEMNAME_INCLUDE_STRING: string
-                                public static ELEMNAME_KEY_STRING: string
-                                public static ELEMNAME_LOCALE_STRING: string
-                                public static ELEMNAME_MESSAGE_STRING: string
-                                public static ELEMNAME_NSALIAS_STRING: string
-                                public static ELEMNAME_NUMBER_STRING: string
-                                public static ELEMNAME_OTHERWISE_STRING: string
-                                public static ELEMNAME_OUTPUT_STRING: string
-                                public static ELEMNAME_PARAMVARIABLE_STRING: string
-                                public static ELEMNAME_PI_OLD_STRING: string
-                                public static ELEMNAME_PI_STRING: string
-                                public static ELEMNAME_PRESERVESPACE_STRING: string
-                                public static ELEMNAME_ROOT_STRING: string
-                                public static ELEMNAME_SCRIPT_STRING: string
-                                public static ELEMNAME_SORT_STRING: string
-                                public static ELEMNAME_STRIPSPACE_STRING: string
-                                public static ELEMNAME_STYLESHEET_STRING: string
-                                public static ELEMNAME_TARGETATTRIBUTE_STRING: string
-                                public static ELEMNAME_TARGETCOMMENT_STRING: string
-                                public static ELEMNAME_TARGETELEMENT_STRING: string
-                                public static ELEMNAME_TARGETPI_STRING: string
-                                public static ELEMNAME_TARGETTEXT_STRING: string
-                                public static ELEMNAME_TEMPLATE_STRING: string
-                                public static ELEMNAME_TEXT_STRING: string
-                                public static ELEMNAME_TRANSFORM_STRING: string
-                                public static ELEMNAME_URL_STRING: string
-                                public static ELEMNAME_USE_STRING: string
-                                public static ELEMNAME_VALUEOF_STRING: string
-                                public static ELEMNAME_VARIABLE_STRING: string
-                                public static ELEMNAME_WHEN_STRING: string
-                                public static ELEMNAME_WITHPARAM_STRING: string
-                                public static EXSLT_ELEMNAME_FUNCTION_STRING: string
-                                public static EXSLT_ELEMNAME_FUNCRESULT_STRING: string
-                                public static EXSLT_ELEMNAME_FUNCTION: int
-                                public static EXSLT_ELEMNAME_FUNCRESULT: int
-                                public static ATTRNAME_AMOUNT: string
-                                public static ATTRNAME_ANCESTOR: string
-                                public static ATTRNAME_ARCHIVE: string
-                                public static ATTRNAME_ATTRIBUTE: string
-                                public static ATTRNAME_ATTRIBUTE_SET: string
-                                public static ATTRNAME_CASEORDER: string
-                                public static ATTRNAME_CLASS: string
-                                public static ATTRNAME_CLASSID: string
-                                public static ATTRNAME_CODEBASE: string
-                                public static ATTRNAME_CODETYPE: string
-                                public static ATTRNAME_CONDITION: string
-                                public static ATTRNAME_COPYTYPE: string
-                                public static ATTRNAME_COUNT: string
-                                public static ATTRNAME_DATATYPE: string
-                                public static ATTRNAME_DECIMALSEPARATOR: string
-                                public static ATTRNAME_DEFAULT: string
-                                public static ATTRNAME_DEFAULTSPACE: string
-                                public static ATTRNAME_DEPTH: string
-                                public static ATTRNAME_DIGIT: string
-                                public static ATTRNAME_DIGITGROUPSEP: string
-                                public static ATTRNAME_DISABLE_OUTPUT_ESCAPING: string
-                                public static ATTRNAME_ELEMENT: string
-                                public static ATTRNAME_ELEMENTS: string
-                                public static ATTRNAME_EXCLUDE_RESULT_PREFIXES: string
-                                public static ATTRNAME_EXPR: string
-                                public static ATTRNAME_EXTENSIONELEMENTPREFIXES: string
-                                public static ATTRNAME_FORMAT: string
-                                public static ATTRNAME_FROM: string
-                                public static ATTRNAME_GROUPINGSEPARATOR: string
-                                public static ATTRNAME_GROUPINGSIZE: string
-                                public static ATTRNAME_HREF: string
-                                public static ATTRNAME_ID: string
-                                public static ATTRNAME_IMPORTANCE: string
-                                public static ATTRNAME_INDENTRESULT: string
-                                public static ATTRNAME_INFINITY: string
-                                public static ATTRNAME_LANG: string
-                                public static ATTRNAME_LETTERVALUE: string
-                                public static ATTRNAME_LEVEL: string
-                                public static ATTRNAME_MATCH: string
-                                public static ATTRNAME_METHOD: string
-                                public static ATTRNAME_MINUSSIGN: string
-                                public static ATTRNAME_MODE: string
-                                public static ATTRNAME_NAME: string
-                                public static ATTRNAME_NAMESPACE: string
-                                public static ATTRNAME_NAN: string
-                                public static ATTRNAME_NDIGITSPERGROUP: string
-                                public static ATTRNAME_NS: string
-                                public static ATTRNAME_ONLY: string
-                                public static ATTRNAME_ORDER: string
-                                public static ATTRNAME_OUTPUT_CDATA_SECTION_ELEMENTS: string
-                                public static ATTRNAME_OUTPUT_DOCTYPE_PUBLIC: string
-                                public static ATTRNAME_OUTPUT_DOCTYPE_SYSTEM: string
-                                public static ATTRNAME_OUTPUT_ENCODING: string
-                                public static ATTRNAME_OUTPUT_INDENT: string
-                                public static ATTRNAME_OUTPUT_MEDIATYPE: string
-                                public static ATTRNAME_OUTPUT_METHOD: string
-                                public static ATTRNAME_OUTPUT_OMITXMLDECL: string
-                                public static ATTRNAME_OUTPUT_STANDALONE: string
-                                public static ATTRNAME_OUTPUT_VERSION: string
-                                public static ATTRNAME_PATTERNSEPARATOR: string
-                                public static ATTRNAME_PERCENT: string
-                                public static ATTRNAME_PERMILLE: string
-                                public static ATTRNAME_PRIORITY: string
-                                public static ATTRNAME_REFID: string
-                                public static ATTRNAME_RESULTNS: string
-                                public static ATTRNAME_RESULT_PREFIX: string
-                                public static ATTRNAME_SELECT: string
-                                public static ATTRNAME_SEQUENCESRC: string
-                                public static ATTRNAME_STYLE: string
-                                public static ATTRNAME_STYLESHEET_PREFIX: string
-                                public static ATTRNAME_TERMINATE: string
-                                public static ATTRNAME_TEST: string
-                                public static ATTRNAME_TOSTRING: string
-                                public static ATTRNAME_TYPE: string
-                                public static ATTRNAME_USE: string
-                                public static ATTRNAME_USEATTRIBUTESETS: string
-                                public static ATTRNAME_VALUE: string
-                                public static ATTRNAME_VERSION: string
-                                public static ATTRNAME_XMLNS: string
-                                public static ATTRNAME_XMLNSDEF: string
-                                public static ATTRNAME_XMLSPACE: string
-                                public static ATTRNAME_ZERODIGIT: string
-                                public static TATTRNAME_OUTPUT_METHOD: int
-                                public static TATTRNAME_AMOUNT: int
-                                public static TATTRNAME_ANCESTOR: int
-                                public static TATTRNAME_ARCHIVE: int
-                                public static TATTRNAME_ATTRIBUTE: int
-                                public static TATTRNAME_ATTRIBUTE_SET: int
-                                public static TATTRNAME_CASEORDER: int
-                                public static TATTRNAME_CLASS: int
-                                public static TATTRNAME_CLASSID: int
-                                public static TATTRNAME_CODEBASE: int
-                                public static TATTRNAME_CODETYPE: int
-                                public static TATTRNAME_CONDITION: int
-                                public static TATTRNAME_COPYTYPE: int
-                                public static TATTRNAME_COUNT: int
-                                public static TATTRNAME_DATATYPE: int
-                                public static TATTRNAME_DEFAULT: int
-                                public static TATTRNAME_DEFAULTSPACE: int
-                                public static TATTRNAME_DEPTH: int
-                                public static TATTRNAME_DIGITGROUPSEP: int
-                                public static TATTRNAME_DISABLE_OUTPUT_ESCAPING: int
-                                public static TATTRNAME_ELEMENT: int
-                                public static TATTRNAME_ELEMENTS: int
-                                public static TATTRNAME_EXPR: int
-                                public static TATTRNAME_EXTENSIONELEMENTPREFIXES: int
-                                public static TATTRNAME_FORMAT: int
-                                public static TATTRNAME_FROM: int
-                                public static TATTRNAME_GROUPINGSEPARATOR: int
-                                public static TATTRNAME_GROUPINGSIZE: int
-                                public static TATTRNAME_HREF: int
-                                public static TATTRNAME_ID: int
-                                public static TATTRNAME_IMPORTANCE: int
-                                public static TATTRNAME_INDENTRESULT: int
-                                public static TATTRNAME_LANG: int
-                                public static TATTRNAME_LETTERVALUE: int
-                                public static TATTRNAME_LEVEL: int
-                                public static TATTRNAME_MATCH: int
-                                public static TATTRNAME_METHOD: int
-                                public static TATTRNAME_MODE: int
-                                public static TATTRNAME_NAME: int
-                                public static TATTRNAME_NAMESPACE: int
-                                public static TATTRNAME_NDIGITSPERGROUP: int
-                                public static TATTRNAME_NS: int
-                                public static TATTRNAME_ONLY: int
-                                public static TATTRNAME_ORDER: int
-                                public static TATTRNAME_OUTPUT_CDATA_SECTION_ELEMENTS: int
-                                public static TATTRNAME_OUTPUT_DOCTYPE_PUBLIC: int
-                                public static TATTRNAME_OUTPUT_DOCTYPE_SYSTEM: int
-                                public static TATTRNAME_OUTPUT_ENCODING: int
-                                public static TATTRNAME_OUTPUT_INDENT: int
-                                public static TATTRNAME_OUTPUT_MEDIATYPE: int
-                                public static TATTRNAME_OUTPUT_STANDALONE: int
-                                public static TATTRNAME_OUTPUT_VERSION: int
-                                public static TATTRNAME_OUTPUT_OMITXMLDECL: int
-                                public static TATTRNAME_PRIORITY: int
-                                public static TATTRNAME_REFID: int
-                                public static TATTRNAME_RESULTNS: int
-                                public static TATTRNAME_SELECT: int
-                                public static TATTRNAME_SEQUENCESRC: int
-                                public static TATTRNAME_STYLE: int
-                                public static TATTRNAME_TEST: int
-                                public static TATTRNAME_TOSTRING: int
-                                public static TATTRNAME_TYPE: int
-                                public static TATTRNAME_USE: int
-                                public static TATTRNAME_USEATTRIBUTESETS: int
-                                public static TATTRNAME_VALUE: int
-                                public static TATTRNAME_XMLNSDEF: int
-                                public static TATTRNAME_XMLNS: int
-                                public static TATTRNAME_XMLSPACE: int
-                                public static TATTRNAME_EXCLUDE_RESULT_PREFIXES: int
-                                public static ATTRVAL_OUTPUT_METHOD_HTML: string
-                                public static ATTRVAL_OUTPUT_METHOD_XML: string
-                                public static ATTRVAL_OUTPUT_METHOD_TEXT: string
-                                public static ATTRVAL_PRESERVE: int
-                                public static ATTRVAL_STRIP: int
-                                public static ATTRVAL_YES: boolean
-                                public static ATTRVAL_NO: boolean
-                                public static ATTRVAL_ALPHABETIC: string
-                                public static ATTRVAL_OTHER: string
-                                public static ATTRVAL_TRADITIONAL: string
-                                public static ATTRVAL_SINGLE: string
-                                public static ATTRVAL_MULTI: string
-                                public static ATTRVAL_ANY: string
-                                public static ATTRVAL_DEFAULT_PREFIX: string
-                                public static NUMBERLETTER_ALPHABETIC: int
-                                public static NUMBERLETTER_TRADITIONAL: int
-                                public static NUMBERLEVEL_SINGLE: int
-                                public static NUMBERLEVEL_MULTI: int
-                                public static NUMBERLEVEL_ANY: int
-                                public static MAX_MULTI_COUNTING_DEPTH: int
-                                public static ATTRVAL_THIS: string
-                                public static ATTRVAL_PARENT: string
-                                public static ATTRVAL_ANCESTOR: string
-                                public static ATTRVAL_ID: string
-                                public static ATTRVAL_DATATYPE_TEXT: string
-                                public static ATTRVAL_DATATYPE_NUMBER: string
-                                public static ATTRVAL_ORDER_ASCENDING: string
-                                public static ATTRVAL_ORDER_DESCENDING: string
-                                public static ATTRVAL_CASEORDER_UPPER: string
-                                public static ATTRVAL_CASEORDER_LOWER: string
-                                public static SORTDATATYPE_TEXT: int
-                                public static SORTDATATYPE_NUMBER: int
-                                public static SORTORDER_ASCENDING: int
-                                public static SORTORDER_DESCENDING: int
-                                public static SORTCASEORDER_UPPERFIRST: int
-                                public static SORTCASEORDER_LOWERFIRST: int
-                                public static ATTRVAL_INFINITY: string
-                                public static ATTRVAL_NAN: string
-                                public static DEFAULT_DECIMAL_FORMAT: string
-                                public static ATTRNAME_XXXX: string
+                                public static readonly ELEMNAME_UNDEFINED: int
+                                public static readonly ELEMNAME_WITHPARAM: int
+                                public static readonly ELEMNAME_ADDATTRIBUTE: int
+                                public static readonly ELEMNAME_ANCHOR: int
+                                public static readonly ELEMNAME_APPLY_TEMPLATES: int
+                                public static readonly ELEMNAME_USE: int
+                                public static readonly ELEMNAME_CHILDREN: int
+                                public static readonly ELEMNAME_CHOOSE: int
+                                public static readonly ELEMNAME_COMMENT: int
+                                public static readonly ELEMNAME_CONSTRUCT: int
+                                public static readonly ELEMNAME_CONTENTS: int
+                                public static readonly ELEMNAME_COPY: int
+                                public static readonly ELEMNAME_COPY_OF: int
+                                public static readonly ELEMNAME_DECIMALFORMAT: int
+                                public static readonly ELEMNAME_DEFINEATTRIBUTESET: int
+                                public static readonly ELEMNAME_DEFINESCRIPT: int
+                                public static readonly ELEMNAME_DISPLAYIF: int
+                                public static readonly ELEMNAME_EMPTY: int
+                                public static readonly ELEMNAME_EVAL: int
+                                public static readonly ELEMNAME_EXPECTEDCHILDREN: int
+                                public static readonly ELEMNAME_EXTENSION: int
+                                public static readonly ELEMNAME_EXTENSIONHANDLER: int
+                                public static readonly ELEMNAME_FOREACH: int
+                                public static readonly ELEMNAME_KEY: int
+                                public static readonly ELEMNAME_IF: int
+                                public static readonly ELEMNAME_IMPORT: int
+                                public static readonly ELEMNAME_INCLUDE: int
+                                public static readonly ELEMNAME_CALLTEMPLATE: int
+                                public static readonly ELEMNAME_PARAMVARIABLE: int
+                                public static readonly ELEMNAME_NUMBER: int
+                                public static readonly ELEMNAME_NSALIAS: int
+                                public static readonly ELEMNAME_OTHERWISE: int
+                                public static readonly ELEMNAME_PI: int
+                                public static readonly ELEMNAME_PRESERVESPACE: int
+                                public static readonly ELEMNAME_REMOVEATTRIBUTE: int
+                                public static readonly ELEMNAME_TEMPLATE: int
+                                public static readonly ELEMNAME_SORT: int
+                                public static readonly ELEMNAME_STRIPSPACE: int
+                                public static readonly ELEMNAME_STYLESHEET: int
+                                public static readonly ELEMNAME_TEXT: int
+                                public static readonly ELEMNAME_VALUEOF: int
+                                public static readonly ELEMNAME_WHEN: int
+                                public static readonly ELEMNAME_ROOT: int
+                                public static readonly ELEMNAME_ANY: int
+                                public static readonly ELEMNAME_ELEMENT: int
+                                public static readonly ELEMNAME_TARGETELEMENT: int
+                                public static readonly ELEMNAME_ATTRIBUTE: int
+                                public static readonly ELEMNAME_TARGETATTRIBUTE: int
+                                public static readonly ELEMNAME_URL: int
+                                public static readonly ELEMNAME_CALL: int
+                                public static readonly ELEMNAME_FALLBACK: int
+                                public static readonly ELEMNAME_TARGETPI: int
+                                public static readonly ELEMNAME_TARGETCOMMENT: int
+                                public static readonly ELEMNAME_TARGETTEXT: int
+                                public static readonly ELEMNAME_CSSSTYLECONVERSION: int
+                                public static readonly ELEMNAME_COUNTER: int
+                                public static readonly ELEMNAME_COUNTERS: int
+                                public static readonly ELEMNAME_COUNTERINCREMENT: int
+                                public static readonly ELEMNAME_COUNTERRESET: int
+                                public static readonly ELEMNAME_COUNTERSCOPE: int
+                                public static readonly ELEMNAME_APPLY_IMPORTS: int
+                                public static readonly ELEMNAME_VARIABLE: int
+                                public static readonly ELEMNAME_MESSAGE: int
+                                public static readonly ELEMNAME_LOCALE: int
+                                public static readonly ELEMNAME_LITERALRESULT: int
+                                public static readonly ELEMNAME_TEXTLITERALRESULT: int
+                                public static readonly ELEMNAME_EXTENSIONCALL: int
+                                public static readonly ELEMNAME_EXTENSIONDECL: int
+                                public static readonly ELEMNAME_EXTENSIONSCRIPT: int
+                                public static readonly ELEMNAME_OUTPUT: int
+                                public static readonly ELEMNAME_COMPONENT: int
+                                public static readonly ELEMNAME_SCRIPT: int
+                                public static readonly ELEMNAME_ANCHOR_STRING: string
+                                public static readonly ELEMNAME_ANY_STRING: string
+                                public static readonly ELEMNAME_APPLY_IMPORTS_STRING: string
+                                public static readonly ELEMNAME_APPLY_TEMPLATES_STRING: string
+                                public static readonly ELEMNAME_ARG_STRING: string
+                                public static readonly ELEMNAME_ATTRIBUTESET_STRING: string
+                                public static readonly ELEMNAME_ATTRIBUTE_STRING: string
+                                public static readonly ELEMNAME_CALLTEMPLATEARG_STRING: string
+                                public static readonly ELEMNAME_CALLTEMPLATE_STRING: string
+                                public static readonly ELEMNAME_CALL_STRING: string
+                                public static readonly ELEMNAME_CHILDREN_STRING: string
+                                public static readonly ELEMNAME_CHOOSE_STRING: string
+                                public static readonly ELEMNAME_COMMENT_STRING: string
+                                public static readonly ELEMNAME_COMPONENT_STRING: string
+                                public static readonly ELEMNAME_CONSTRUCT_STRING: string
+                                public static readonly ELEMNAME_CONTENTS_STRING: string
+                                public static readonly ELEMNAME_COPY_OF_STRING: string
+                                public static readonly ELEMNAME_COPY_STRING: string
+                                public static readonly ELEMNAME_COUNTERINCREMENT_STRING: string
+                                public static readonly ELEMNAME_COUNTERRESET_STRING: string
+                                public static readonly ELEMNAME_COUNTERSCOPE_STRING: string
+                                public static readonly ELEMNAME_COUNTERS_STRING: string
+                                public static readonly ELEMNAME_COUNTER_STRING: string
+                                public static readonly ELEMNAME_CSSSTYLECONVERSION_STRING: string
+                                public static readonly ELEMNAME_DECIMALFORMAT_STRING: string
+                                public static readonly ELEMNAME_DISPLAYIF_STRING: string
+                                public static readonly ELEMNAME_ELEMENT_STRING: string
+                                public static readonly ELEMNAME_EMPTY_STRING: string
+                                public static readonly ELEMNAME_EVAL_STRING: string
+                                public static readonly ELEMNAME_EXPECTEDCHILDREN_STRING: string
+                                public static readonly ELEMNAME_EXTENSIONHANDLER_STRING: string
+                                public static readonly ELEMNAME_EXTENSION_STRING: string
+                                public static readonly ELEMNAME_FALLBACK_STRING: string
+                                public static readonly ELEMNAME_FOREACH_STRING: string
+                                public static readonly ELEMNAME_IF_STRING: string
+                                public static readonly ELEMNAME_IMPORT_STRING: string
+                                public static readonly ELEMNAME_INCLUDE_STRING: string
+                                public static readonly ELEMNAME_KEY_STRING: string
+                                public static readonly ELEMNAME_LOCALE_STRING: string
+                                public static readonly ELEMNAME_MESSAGE_STRING: string
+                                public static readonly ELEMNAME_NSALIAS_STRING: string
+                                public static readonly ELEMNAME_NUMBER_STRING: string
+                                public static readonly ELEMNAME_OTHERWISE_STRING: string
+                                public static readonly ELEMNAME_OUTPUT_STRING: string
+                                public static readonly ELEMNAME_PARAMVARIABLE_STRING: string
+                                public static readonly ELEMNAME_PI_OLD_STRING: string
+                                public static readonly ELEMNAME_PI_STRING: string
+                                public static readonly ELEMNAME_PRESERVESPACE_STRING: string
+                                public static readonly ELEMNAME_ROOT_STRING: string
+                                public static readonly ELEMNAME_SCRIPT_STRING: string
+                                public static readonly ELEMNAME_SORT_STRING: string
+                                public static readonly ELEMNAME_STRIPSPACE_STRING: string
+                                public static readonly ELEMNAME_STYLESHEET_STRING: string
+                                public static readonly ELEMNAME_TARGETATTRIBUTE_STRING: string
+                                public static readonly ELEMNAME_TARGETCOMMENT_STRING: string
+                                public static readonly ELEMNAME_TARGETELEMENT_STRING: string
+                                public static readonly ELEMNAME_TARGETPI_STRING: string
+                                public static readonly ELEMNAME_TARGETTEXT_STRING: string
+                                public static readonly ELEMNAME_TEMPLATE_STRING: string
+                                public static readonly ELEMNAME_TEXT_STRING: string
+                                public static readonly ELEMNAME_TRANSFORM_STRING: string
+                                public static readonly ELEMNAME_URL_STRING: string
+                                public static readonly ELEMNAME_USE_STRING: string
+                                public static readonly ELEMNAME_VALUEOF_STRING: string
+                                public static readonly ELEMNAME_VARIABLE_STRING: string
+                                public static readonly ELEMNAME_WHEN_STRING: string
+                                public static readonly ELEMNAME_WITHPARAM_STRING: string
+                                public static readonly EXSLT_ELEMNAME_FUNCTION_STRING: string
+                                public static readonly EXSLT_ELEMNAME_FUNCRESULT_STRING: string
+                                public static readonly EXSLT_ELEMNAME_FUNCTION: int
+                                public static readonly EXSLT_ELEMNAME_FUNCRESULT: int
+                                public static readonly ATTRNAME_AMOUNT: string
+                                public static readonly ATTRNAME_ANCESTOR: string
+                                public static readonly ATTRNAME_ARCHIVE: string
+                                public static readonly ATTRNAME_ATTRIBUTE: string
+                                public static readonly ATTRNAME_ATTRIBUTE_SET: string
+                                public static readonly ATTRNAME_CASEORDER: string
+                                public static readonly ATTRNAME_CLASS: string
+                                public static readonly ATTRNAME_CLASSID: string
+                                public static readonly ATTRNAME_CODEBASE: string
+                                public static readonly ATTRNAME_CODETYPE: string
+                                public static readonly ATTRNAME_CONDITION: string
+                                public static readonly ATTRNAME_COPYTYPE: string
+                                public static readonly ATTRNAME_COUNT: string
+                                public static readonly ATTRNAME_DATATYPE: string
+                                public static readonly ATTRNAME_DECIMALSEPARATOR: string
+                                public static readonly ATTRNAME_DEFAULT: string
+                                public static readonly ATTRNAME_DEFAULTSPACE: string
+                                public static readonly ATTRNAME_DEPTH: string
+                                public static readonly ATTRNAME_DIGIT: string
+                                public static readonly ATTRNAME_DIGITGROUPSEP: string
+                                public static readonly ATTRNAME_DISABLE_OUTPUT_ESCAPING: string
+                                public static readonly ATTRNAME_ELEMENT: string
+                                public static readonly ATTRNAME_ELEMENTS: string
+                                public static readonly ATTRNAME_EXCLUDE_RESULT_PREFIXES: string
+                                public static readonly ATTRNAME_EXPR: string
+                                public static readonly ATTRNAME_EXTENSIONELEMENTPREFIXES: string
+                                public static readonly ATTRNAME_FORMAT: string
+                                public static readonly ATTRNAME_FROM: string
+                                public static readonly ATTRNAME_GROUPINGSEPARATOR: string
+                                public static readonly ATTRNAME_GROUPINGSIZE: string
+                                public static readonly ATTRNAME_HREF: string
+                                public static readonly ATTRNAME_ID: string
+                                public static readonly ATTRNAME_IMPORTANCE: string
+                                public static readonly ATTRNAME_INDENTRESULT: string
+                                public static readonly ATTRNAME_INFINITY: string
+                                public static readonly ATTRNAME_LANG: string
+                                public static readonly ATTRNAME_LETTERVALUE: string
+                                public static readonly ATTRNAME_LEVEL: string
+                                public static readonly ATTRNAME_MATCH: string
+                                public static readonly ATTRNAME_METHOD: string
+                                public static readonly ATTRNAME_MINUSSIGN: string
+                                public static readonly ATTRNAME_MODE: string
+                                public static readonly ATTRNAME_NAME: string
+                                public static readonly ATTRNAME_NAMESPACE: string
+                                public static readonly ATTRNAME_NAN: string
+                                public static readonly ATTRNAME_NDIGITSPERGROUP: string
+                                public static readonly ATTRNAME_NS: string
+                                public static readonly ATTRNAME_ONLY: string
+                                public static readonly ATTRNAME_ORDER: string
+                                public static readonly ATTRNAME_OUTPUT_CDATA_SECTION_ELEMENTS: string
+                                public static readonly ATTRNAME_OUTPUT_DOCTYPE_PUBLIC: string
+                                public static readonly ATTRNAME_OUTPUT_DOCTYPE_SYSTEM: string
+                                public static readonly ATTRNAME_OUTPUT_ENCODING: string
+                                public static readonly ATTRNAME_OUTPUT_INDENT: string
+                                public static readonly ATTRNAME_OUTPUT_MEDIATYPE: string
+                                public static readonly ATTRNAME_OUTPUT_METHOD: string
+                                public static readonly ATTRNAME_OUTPUT_OMITXMLDECL: string
+                                public static readonly ATTRNAME_OUTPUT_STANDALONE: string
+                                public static readonly ATTRNAME_OUTPUT_VERSION: string
+                                public static readonly ATTRNAME_PATTERNSEPARATOR: string
+                                public static readonly ATTRNAME_PERCENT: string
+                                public static readonly ATTRNAME_PERMILLE: string
+                                public static readonly ATTRNAME_PRIORITY: string
+                                public static readonly ATTRNAME_REFID: string
+                                public static readonly ATTRNAME_RESULTNS: string
+                                public static readonly ATTRNAME_RESULT_PREFIX: string
+                                public static readonly ATTRNAME_SELECT: string
+                                public static readonly ATTRNAME_SEQUENCESRC: string
+                                public static readonly ATTRNAME_STYLE: string
+                                public static readonly ATTRNAME_STYLESHEET_PREFIX: string
+                                public static readonly ATTRNAME_TERMINATE: string
+                                public static readonly ATTRNAME_TEST: string
+                                public static readonly ATTRNAME_TOSTRING: string
+                                public static readonly ATTRNAME_TYPE: string
+                                public static readonly ATTRNAME_USE: string
+                                public static readonly ATTRNAME_USEATTRIBUTESETS: string
+                                public static readonly ATTRNAME_VALUE: string
+                                public static readonly ATTRNAME_VERSION: string
+                                public static readonly ATTRNAME_XMLNS: string
+                                public static readonly ATTRNAME_XMLNSDEF: string
+                                public static readonly ATTRNAME_XMLSPACE: string
+                                public static readonly ATTRNAME_ZERODIGIT: string
+                                public static readonly TATTRNAME_OUTPUT_METHOD: int
+                                public static readonly TATTRNAME_AMOUNT: int
+                                public static readonly TATTRNAME_ANCESTOR: int
+                                public static readonly TATTRNAME_ARCHIVE: int
+                                public static readonly TATTRNAME_ATTRIBUTE: int
+                                public static readonly TATTRNAME_ATTRIBUTE_SET: int
+                                public static readonly TATTRNAME_CASEORDER: int
+                                public static readonly TATTRNAME_CLASS: int
+                                public static readonly TATTRNAME_CLASSID: int
+                                public static readonly TATTRNAME_CODEBASE: int
+                                public static readonly TATTRNAME_CODETYPE: int
+                                public static readonly TATTRNAME_CONDITION: int
+                                public static readonly TATTRNAME_COPYTYPE: int
+                                public static readonly TATTRNAME_COUNT: int
+                                public static readonly TATTRNAME_DATATYPE: int
+                                public static readonly TATTRNAME_DEFAULT: int
+                                public static readonly TATTRNAME_DEFAULTSPACE: int
+                                public static readonly TATTRNAME_DEPTH: int
+                                public static readonly TATTRNAME_DIGITGROUPSEP: int
+                                public static readonly TATTRNAME_DISABLE_OUTPUT_ESCAPING: int
+                                public static readonly TATTRNAME_ELEMENT: int
+                                public static readonly TATTRNAME_ELEMENTS: int
+                                public static readonly TATTRNAME_EXPR: int
+                                public static readonly TATTRNAME_EXTENSIONELEMENTPREFIXES: int
+                                public static readonly TATTRNAME_FORMAT: int
+                                public static readonly TATTRNAME_FROM: int
+                                public static readonly TATTRNAME_GROUPINGSEPARATOR: int
+                                public static readonly TATTRNAME_GROUPINGSIZE: int
+                                public static readonly TATTRNAME_HREF: int
+                                public static readonly TATTRNAME_ID: int
+                                public static readonly TATTRNAME_IMPORTANCE: int
+                                public static readonly TATTRNAME_INDENTRESULT: int
+                                public static readonly TATTRNAME_LANG: int
+                                public static readonly TATTRNAME_LETTERVALUE: int
+                                public static readonly TATTRNAME_LEVEL: int
+                                public static readonly TATTRNAME_MATCH: int
+                                public static readonly TATTRNAME_METHOD: int
+                                public static readonly TATTRNAME_MODE: int
+                                public static readonly TATTRNAME_NAME: int
+                                public static readonly TATTRNAME_NAMESPACE: int
+                                public static readonly TATTRNAME_NDIGITSPERGROUP: int
+                                public static readonly TATTRNAME_NS: int
+                                public static readonly TATTRNAME_ONLY: int
+                                public static readonly TATTRNAME_ORDER: int
+                                public static readonly TATTRNAME_OUTPUT_CDATA_SECTION_ELEMENTS: int
+                                public static readonly TATTRNAME_OUTPUT_DOCTYPE_PUBLIC: int
+                                public static readonly TATTRNAME_OUTPUT_DOCTYPE_SYSTEM: int
+                                public static readonly TATTRNAME_OUTPUT_ENCODING: int
+                                public static readonly TATTRNAME_OUTPUT_INDENT: int
+                                public static readonly TATTRNAME_OUTPUT_MEDIATYPE: int
+                                public static readonly TATTRNAME_OUTPUT_STANDALONE: int
+                                public static readonly TATTRNAME_OUTPUT_VERSION: int
+                                public static readonly TATTRNAME_OUTPUT_OMITXMLDECL: int
+                                public static readonly TATTRNAME_PRIORITY: int
+                                public static readonly TATTRNAME_REFID: int
+                                public static readonly TATTRNAME_RESULTNS: int
+                                public static readonly TATTRNAME_SELECT: int
+                                public static readonly TATTRNAME_SEQUENCESRC: int
+                                public static readonly TATTRNAME_STYLE: int
+                                public static readonly TATTRNAME_TEST: int
+                                public static readonly TATTRNAME_TOSTRING: int
+                                public static readonly TATTRNAME_TYPE: int
+                                public static readonly TATTRNAME_USE: int
+                                public static readonly TATTRNAME_USEATTRIBUTESETS: int
+                                public static readonly TATTRNAME_VALUE: int
+                                public static readonly TATTRNAME_XMLNSDEF: int
+                                public static readonly TATTRNAME_XMLNS: int
+                                public static readonly TATTRNAME_XMLSPACE: int
+                                public static readonly TATTRNAME_EXCLUDE_RESULT_PREFIXES: int
+                                public static readonly ATTRVAL_OUTPUT_METHOD_HTML: string
+                                public static readonly ATTRVAL_OUTPUT_METHOD_XML: string
+                                public static readonly ATTRVAL_OUTPUT_METHOD_TEXT: string
+                                public static readonly ATTRVAL_PRESERVE: int
+                                public static readonly ATTRVAL_STRIP: int
+                                public static readonly ATTRVAL_YES: boolean
+                                public static readonly ATTRVAL_NO: boolean
+                                public static readonly ATTRVAL_ALPHABETIC: string
+                                public static readonly ATTRVAL_OTHER: string
+                                public static readonly ATTRVAL_TRADITIONAL: string
+                                public static readonly ATTRVAL_SINGLE: string
+                                public static readonly ATTRVAL_MULTI: string
+                                public static readonly ATTRVAL_ANY: string
+                                public static readonly ATTRVAL_DEFAULT_PREFIX: string
+                                public static readonly NUMBERLETTER_ALPHABETIC: int
+                                public static readonly NUMBERLETTER_TRADITIONAL: int
+                                public static readonly NUMBERLEVEL_SINGLE: int
+                                public static readonly NUMBERLEVEL_MULTI: int
+                                public static readonly NUMBERLEVEL_ANY: int
+                                public static readonly MAX_MULTI_COUNTING_DEPTH: int
+                                public static readonly ATTRVAL_THIS: string
+                                public static readonly ATTRVAL_PARENT: string
+                                public static readonly ATTRVAL_ANCESTOR: string
+                                public static readonly ATTRVAL_ID: string
+                                public static readonly ATTRVAL_DATATYPE_TEXT: string
+                                public static readonly ATTRVAL_DATATYPE_NUMBER: string
+                                public static readonly ATTRVAL_ORDER_ASCENDING: string
+                                public static readonly ATTRVAL_ORDER_DESCENDING: string
+                                public static readonly ATTRVAL_CASEORDER_UPPER: string
+                                public static readonly ATTRVAL_CASEORDER_LOWER: string
+                                public static readonly SORTDATATYPE_TEXT: int
+                                public static readonly SORTDATATYPE_NUMBER: int
+                                public static readonly SORTORDER_ASCENDING: int
+                                public static readonly SORTORDER_DESCENDING: int
+                                public static readonly SORTCASEORDER_UPPERFIRST: int
+                                public static readonly SORTCASEORDER_LOWERFIRST: int
+                                public static readonly ATTRVAL_INFINITY: string
+                                public static readonly ATTRVAL_NAN: string
+                                public static readonly DEFAULT_DECIMAL_FORMAT: string
+                                public static readonly ATTRNAME_XXXX: string
                                 public constructor()
                                 public static class: java.lang.Class<any>
                             }

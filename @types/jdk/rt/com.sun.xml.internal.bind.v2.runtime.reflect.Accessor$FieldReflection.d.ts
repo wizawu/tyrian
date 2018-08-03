@@ -7,7 +7,7 @@ declare namespace com {
                         namespace runtime {
                             namespace reflect {
                                 class Accessor$FieldReflection<BeanT, ValueT> extends com.sun.xml.internal.bind.v2.runtime.reflect.Accessor<BeanT, ValueT> {
-                                    public f: java.lang.reflect.Field
+                                    public readonly f: java.lang.reflect.Field
                                     public constructor(arg0: java.lang.reflect.Field)
                                     public constructor(arg0: java.lang.reflect.Field, arg1: boolean)
                                     public get(arg0: BeanT): ValueT

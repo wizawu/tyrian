@@ -5,10 +5,10 @@ declare namespace com {
                 namespace jar {
                     namespace pack {
                         class Histogram {
-                            protected matrix: int[][]
-                            protected totalWeight: int
-                            protected values: int[]
-                            protected counts: int[]
+                            protected readonly matrix: int[][]
+                            protected readonly totalWeight: int
+                            protected readonly values: int[]
+                            protected readonly counts: int[]
                             public constructor(arg0: int[])
                             public constructor(arg0: int[], arg1: int, arg2: int)
                             public constructor(arg0: int[][])
@@ -33,7 +33,7 @@ declare namespace com {
                             public print(arg0: java.io.PrintStream): void
                             public print(arg0: java.lang.String | string, arg1: java.io.PrintStream): void
                             public print(arg0: java.lang.String | string, arg1: java.lang.String[], arg2: java.io.PrintStream): void
-                            public static makeByteHistogram(arg0: java.io.InputStream): com.sun.java.util.jar.pack.Histogram
+                            public static makeByteHistogram(arg0: java.io.InputStream | java.io.InputStream$$Lambda): com.sun.java.util.jar.pack.Histogram
                             public static class: java.lang.Class<any>
                         }
                     }

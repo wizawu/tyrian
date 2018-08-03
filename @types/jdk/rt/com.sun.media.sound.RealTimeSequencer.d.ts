@@ -4,7 +4,7 @@ declare namespace com {
             namespace sound {
                 class RealTimeSequencer extends com.sun.media.sound.AbstractMidiDevice implements javax.sound.midi.Sequencer , com.sun.media.sound.AutoConnectSequencer {
                     public setSequence(arg0: javax.sound.midi.Sequence): void
-                    public setSequence(arg0: java.io.InputStream): void
+                    public setSequence(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
                     public getSequence(): javax.sound.midi.Sequence
                     public start(): void
                     public stop(): void
@@ -36,10 +36,10 @@ declare namespace com {
                     public getTrackMute(arg0: int): boolean
                     public setTrackSolo(arg0: int, arg1: boolean): void
                     public getTrackSolo(arg0: int): boolean
-                    public addMetaEventListener(arg0: javax.sound.midi.MetaEventListener | javax.sound.midi.MetaEventListener$$Lambda): boolean
-                    public removeMetaEventListener(arg0: javax.sound.midi.MetaEventListener | javax.sound.midi.MetaEventListener$$Lambda): void
-                    public addControllerEventListener(arg0: javax.sound.midi.ControllerEventListener | javax.sound.midi.ControllerEventListener$$Lambda, arg1: int[]): int[]
-                    public removeControllerEventListener(arg0: javax.sound.midi.ControllerEventListener | javax.sound.midi.ControllerEventListener$$Lambda, arg1: int[]): int[]
+                    public addMetaEventListener(arg0: javax.sound.midi.MetaEventListener): boolean
+                    public removeMetaEventListener(arg0: javax.sound.midi.MetaEventListener): void
+                    public addControllerEventListener(arg0: javax.sound.midi.ControllerEventListener, arg1: int[]): int[]
+                    public removeControllerEventListener(arg0: javax.sound.midi.ControllerEventListener, arg1: int[]): int[]
                     public setLoopStartPoint(arg0: long): void
                     public getLoopStartPoint(): long
                     public setLoopEndPoint(arg0: long): void

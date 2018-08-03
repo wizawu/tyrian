@@ -6,15 +6,15 @@ declare namespace com {
                     namespace interceptors {
                         class ClientRequestInfoImpl extends com.sun.corba.se.impl.interceptors.RequestInfoImpl implements org.omg.PortableInterceptor.ClientRequestInfo {
                             protected piCurrentPushed: boolean
-                            protected static MID_TARGET: int
-                            protected static MID_EFFECTIVE_TARGET: int
-                            protected static MID_EFFECTIVE_PROFILE: int
-                            protected static MID_RECEIVED_EXCEPTION: int
-                            protected static MID_RECEIVED_EXCEPTION_ID: int
-                            protected static MID_GET_EFFECTIVE_COMPONENT: int
-                            protected static MID_GET_EFFECTIVE_COMPONENTS: int
-                            protected static MID_GET_REQUEST_POLICY: int
-                            protected static MID_ADD_REQUEST_SERVICE_CONTEXT: int
+                            protected static readonly MID_TARGET: int
+                            protected static readonly MID_EFFECTIVE_TARGET: int
+                            protected static readonly MID_EFFECTIVE_PROFILE: int
+                            protected static readonly MID_RECEIVED_EXCEPTION: int
+                            protected static readonly MID_RECEIVED_EXCEPTION_ID: int
+                            protected static readonly MID_GET_EFFECTIVE_COMPONENT: int
+                            protected static readonly MID_GET_EFFECTIVE_COMPONENTS: int
+                            protected static readonly MID_GET_REQUEST_POLICY: int
+                            protected static readonly MID_ADD_REQUEST_SERVICE_CONTEXT: int
                             protected constructor(arg0: com.sun.corba.se.spi.orb.ORB)
                             public target(): org.omg.CORBA.Object
                             public effective_target(): org.omg.CORBA.Object

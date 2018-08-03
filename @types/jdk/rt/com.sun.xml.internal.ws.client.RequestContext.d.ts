@@ -6,7 +6,7 @@ declare namespace com {
                     namespace client {
                         class RequestContext extends com.oracle.webservices.internal.api.message.BaseDistributedPropertySet {
                             public contentNegotiation: com.sun.xml.internal.ws.client.ContentNegotiation
-                            public addSatellite(arg0: com.sun.xml.internal.ws.api.PropertySet): void
+                            public addSatellite(arg0: com.sun.xml.internal.ws.api.PropertySet | com.sun.xml.internal.ws.api.PropertySet$$Lambda): void
                             public getEndPointAddressString(): string
                             public setEndPointAddressString(arg0: java.lang.String | string): void
                             public setEndpointAddress(arg0: com.sun.xml.internal.ws.api.EndpointAddress): void

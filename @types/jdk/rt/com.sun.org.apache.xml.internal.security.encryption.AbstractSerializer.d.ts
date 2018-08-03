@@ -16,8 +16,8 @@ declare namespace com {
                                     public serializeToByteArray(arg0: org.w3c.dom.NodeList): byte[]
                                     public canonSerialize(arg0: org.w3c.dom.Node): string
                                     public canonSerializeToByteArray(arg0: org.w3c.dom.Node): byte[]
-                                    public deserialize(arg0: java.lang.String | string, arg1: org.w3c.dom.Node): org.w3c.dom.Node
-                                    public deserialize(arg0: byte[], arg1: org.w3c.dom.Node): org.w3c.dom.Node
+                                    public abstract deserialize(arg0: java.lang.String | string, arg1: org.w3c.dom.Node): org.w3c.dom.Node
+                                    public abstract deserialize(arg0: byte[], arg1: org.w3c.dom.Node): org.w3c.dom.Node
                                     protected static createContext(arg0: byte[], arg1: org.w3c.dom.Node): byte[]
                                     protected static createContext(arg0: java.lang.String | string, arg1: org.w3c.dom.Node): string
                                     public static class: java.lang.Class<any>

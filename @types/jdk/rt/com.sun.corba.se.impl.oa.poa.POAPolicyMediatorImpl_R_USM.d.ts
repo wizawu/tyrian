@@ -13,8 +13,8 @@ declare namespace com {
                                 public getServantManager(): org.omg.PortableServer.ServantManager
                                 public setServantManager(arg0: org.omg.PortableServer.ServantManager): void
                                 public getDefaultServant(): org.omg.PortableServer.Servant
-                                public setDefaultServant(arg0: org.omg.PortableServer.Servant): void
-                                public deactivateHelper(arg0: com.sun.corba.se.impl.oa.poa.ActiveObjectMap$Key, arg1: com.sun.corba.se.impl.oa.poa.AOMEntry, arg2: org.omg.PortableServer.Servant): void
+                                public setDefaultServant(arg0: org.omg.PortableServer.Servant | org.omg.PortableServer.Servant$$Lambda): void
+                                public deactivateHelper(arg0: com.sun.corba.se.impl.oa.poa.ActiveObjectMap$Key, arg1: com.sun.corba.se.impl.oa.poa.AOMEntry, arg2: org.omg.PortableServer.Servant | org.omg.PortableServer.Servant$$Lambda): void
                                 public idToServant(arg0: byte[]): org.omg.PortableServer.Servant
                                 public static class: java.lang.Class<any>
                             }

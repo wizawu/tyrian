@@ -16,10 +16,10 @@ declare namespace java {
                 public getTransparency(): int
                 public getNumComponents(): int
                 public getNumColorComponents(): int
-                public getRed(arg0: int): int
-                public getGreen(arg0: int): int
-                public getBlue(arg0: int): int
-                public getAlpha(arg0: int): int
+                public abstract getRed(arg0: int): int
+                public abstract getGreen(arg0: int): int
+                public abstract getBlue(arg0: int): int
+                public abstract getAlpha(arg0: int): int
                 public getRGB(arg0: int): int
                 public getRed(arg0: java.lang.Object): int
                 public getGreen(arg0: java.lang.Object): int

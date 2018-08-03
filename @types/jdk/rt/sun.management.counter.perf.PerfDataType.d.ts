@@ -3,15 +3,15 @@ declare namespace sun {
         namespace counter {
             namespace perf {
                 class PerfDataType {
-                    public static BOOLEAN: sun.management.counter.perf.PerfDataType
-                    public static CHAR: sun.management.counter.perf.PerfDataType
-                    public static FLOAT: sun.management.counter.perf.PerfDataType
-                    public static DOUBLE: sun.management.counter.perf.PerfDataType
-                    public static BYTE: sun.management.counter.perf.PerfDataType
-                    public static SHORT: sun.management.counter.perf.PerfDataType
-                    public static INT: sun.management.counter.perf.PerfDataType
-                    public static LONG: sun.management.counter.perf.PerfDataType
-                    public static ILLEGAL: sun.management.counter.perf.PerfDataType
+                    public static readonly BOOLEAN: sun.management.counter.perf.PerfDataType
+                    public static readonly CHAR: sun.management.counter.perf.PerfDataType
+                    public static readonly FLOAT: sun.management.counter.perf.PerfDataType
+                    public static readonly DOUBLE: sun.management.counter.perf.PerfDataType
+                    public static readonly BYTE: sun.management.counter.perf.PerfDataType
+                    public static readonly SHORT: sun.management.counter.perf.PerfDataType
+                    public static readonly INT: sun.management.counter.perf.PerfDataType
+                    public static readonly LONG: sun.management.counter.perf.PerfDataType
+                    public static readonly ILLEGAL: sun.management.counter.perf.PerfDataType
                     public toString(): string
                     public byteValue(): byte
                     public size(): int

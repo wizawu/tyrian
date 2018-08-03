@@ -3,8 +3,8 @@ declare namespace sun {
         namespace jgss {
             namespace krb5 {
                 class Krb5ProxyCredential implements sun.security.jgss.krb5.Krb5CredElement {
-                    public self: sun.security.jgss.krb5.Krb5InitCredential
-                    public tkt: sun.security.krb5.internal.Ticket
+                    public readonly self: sun.security.jgss.krb5.Krb5InitCredential
+                    public readonly tkt: sun.security.krb5.internal.Ticket
                     public getName(): sun.security.jgss.krb5.Krb5NameElement
                     public getInitLifetime(): int
                     public getAcceptLifetime(): int

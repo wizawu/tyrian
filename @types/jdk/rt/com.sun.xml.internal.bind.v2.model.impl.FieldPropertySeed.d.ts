@@ -7,7 +7,7 @@ declare namespace com {
                         namespace model {
                             namespace impl {
                                 class FieldPropertySeed<TypeT, ClassDeclT, FieldT, MethodT> implements com.sun.xml.internal.bind.v2.model.impl.PropertySeed<TypeT, ClassDeclT, FieldT, MethodT> {
-                                    protected field: FieldT
+                                    protected readonly field: FieldT
                                     public readAnnotation<A extends java.lang.annotation.Annotation>(arg0: java.lang.Class<A>): A
                                     public hasAnnotation<A extends java.lang.annotation.Annotation>(arg0: java.lang.Class<java.lang.annotation.Annotation>): boolean
                                     public getName<A extends java.lang.annotation.Annotation>(): string

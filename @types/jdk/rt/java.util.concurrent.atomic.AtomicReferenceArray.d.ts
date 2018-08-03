@@ -12,8 +12,8 @@ declare namespace java {
                     public getAndSet(arg0: int, arg1: E): E
                     public compareAndSet(arg0: int, arg1: E, arg2: E): boolean
                     public weakCompareAndSet(arg0: int, arg1: E, arg2: E): boolean
-                    public getAndUpdate(arg0: int, arg1: java.util.function$.UnaryOperator<E> | java.util.function$.UnaryOperator$$Lambda<E>): E
-                    public updateAndGet(arg0: int, arg1: java.util.function$.UnaryOperator<E> | java.util.function$.UnaryOperator$$Lambda<E>): E
+                    public getAndUpdate(arg0: int, arg1: java.util.function$.UnaryOperator<E>): E
+                    public updateAndGet(arg0: int, arg1: java.util.function$.UnaryOperator<E>): E
                     public getAndAccumulate(arg0: int, arg1: E, arg2: java.util.function$.BinaryOperator<E>): E
                     public accumulateAndGet(arg0: int, arg1: E, arg2: java.util.function$.BinaryOperator<E>): E
                     public toString(): string

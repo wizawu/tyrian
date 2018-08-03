@@ -9,9 +9,6 @@ declare namespace com {
                                 interface ArrayInfo<T, C> extends com.sun.xml.internal.bind.v2.model.core.NonElement<T, C> {
                                     getItemType(): com.sun.xml.internal.bind.v2.model.core.NonElement<T, C>
                                 }
-                                interface ArrayInfo$$Lambda<T, C> extends com.sun.xml.internal.bind.v2.model.core.NonElement<T, C> {
-                                    (): com.sun.xml.internal.bind.v2.model.core.NonElement<T, C>
-                                }
                             }
                         }
                     }

@@ -1,8 +1,8 @@
 declare namespace java {
     namespace awt {
         class FileDialog extends java.awt.Dialog {
-            public static LOAD: int
-            public static SAVE: int
+            public static readonly LOAD: int
+            public static readonly SAVE: int
             public constructor(arg0: java.awt.Frame)
             public constructor(arg0: java.awt.Frame, arg1: java.lang.String | string)
             public constructor(arg0: java.awt.Frame, arg1: java.lang.String | string, arg2: int)

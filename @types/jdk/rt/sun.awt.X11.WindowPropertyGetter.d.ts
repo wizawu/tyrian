@@ -5,7 +5,7 @@ declare namespace sun {
                 public constructor(arg0: long, arg1: sun.awt.X11.XAtom, arg2: long, arg3: long, arg4: boolean, arg5: long)
                 public constructor(arg0: long, arg1: sun.awt.X11.XAtom, arg2: long, arg3: long, arg4: boolean, arg5: sun.awt.X11.XAtom)
                 public execute(): int
-                public execute(arg0: sun.awt.X11.XErrorHandler): int
+                public execute(arg0: sun.awt.X11.XErrorHandler | sun.awt.X11.XErrorHandler$$Lambda): int
                 public isExecuted(): boolean
                 public isDisposed(): boolean
                 public getActualFormat(): int

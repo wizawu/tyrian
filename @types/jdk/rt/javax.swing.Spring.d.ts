@@ -1,13 +1,13 @@
 declare namespace javax {
     namespace swing {
         abstract class Spring {
-            public static UNSET: int
+            public static readonly UNSET: int
             protected constructor()
-            public getMinimumValue(): int
-            public getPreferredValue(): int
-            public getMaximumValue(): int
-            public getValue(): int
-            public setValue(arg0: int): void
+            public abstract getMinimumValue(): int
+            public abstract getPreferredValue(): int
+            public abstract getMaximumValue(): int
+            public abstract getValue(): int
+            public abstract setValue(arg0: int): void
             public static constant(arg0: int): javax.swing.Spring
             public static constant(arg0: int, arg1: int, arg2: int): javax.swing.Spring
             public static minus(arg0: javax.swing.Spring): javax.swing.Spring

@@ -2,8 +2,8 @@ declare namespace javax {
     namespace swing {
         namespace text {
             abstract class JTextComponent extends javax.swing.JComponent implements javax.swing.Scrollable , javax.accessibility.Accessible {
-                public static FOCUS_ACCELERATOR_KEY: string
-                public static DEFAULT_KEYMAP: string
+                public static readonly FOCUS_ACCELERATOR_KEY: string
+                public static readonly DEFAULT_KEYMAP: string
                 public constructor()
                 public getUI(): javax.swing.plaf.TextUI
                 public setUI(arg0: javax.swing.plaf.TextUI): void

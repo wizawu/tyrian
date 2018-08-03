@@ -5,13 +5,13 @@ declare namespace com {
                 namespace fastinfoset {
                     namespace util {
                         abstract class KeyIntMap {
-                            public static NOT_PRESENT: int
+                            public static readonly NOT_PRESENT: int
                             public constructor(arg0: int, arg1: float)
                             public constructor(arg0: int)
                             public constructor()
                             public size(): int
-                            public clear(): void
-                            public setReadOnlyMap(arg0: com.sun.xml.internal.fastinfoset.util.KeyIntMap, arg1: boolean): void
+                            public abstract clear(): void
+                            public abstract setReadOnlyMap(arg0: com.sun.xml.internal.fastinfoset.util.KeyIntMap, arg1: boolean): void
                             public static hashHash(arg0: int): int
                             public static indexFor(arg0: int, arg1: int): int
                             public static class: java.lang.Class<any>

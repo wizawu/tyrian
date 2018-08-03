@@ -46,7 +46,7 @@ declare namespace jdk {
                     public G$sqrt(): java.lang.Object
                     public S$sqrt(arg0: java.lang.Object): void
                     public G$tan(): java.lang.Object
-                    public public S$tan(arg0: java.lang.Object): void
+                    public static public S$tan(arg0: java.lang.Object): void
                     public getClassName(): string
                     public static class: java.lang.Class<any>
                 }

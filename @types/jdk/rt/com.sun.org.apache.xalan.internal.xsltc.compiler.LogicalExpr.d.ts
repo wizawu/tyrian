@@ -7,9 +7,9 @@ declare namespace com {
                         namespace xsltc {
                             namespace compiler {
                                 class LogicalExpr extends com.sun.org.apache.xalan.internal.xsltc.compiler.Expression {
-                                    public static OR: int
-                                    public static AND: int
-                                    public constructor(arg0: int, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression, arg2: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression)
+                                    public static readonly OR: int
+                                    public static readonly AND: int
+                                    public constructor(arg0: int, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression | com.sun.org.apache.xalan.internal.xsltc.compiler.Expression$$Lambda, arg2: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression | com.sun.org.apache.xalan.internal.xsltc.compiler.Expression$$Lambda)
                                     public hasPositionCall(): boolean
                                     public hasLastCall(): boolean
                                     public evaluateAtCompileTime(): java.lang.Object

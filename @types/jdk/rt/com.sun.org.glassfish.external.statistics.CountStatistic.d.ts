@@ -7,9 +7,6 @@ declare namespace com {
                         interface CountStatistic extends com.sun.org.glassfish.external.statistics.Statistic {
                             getCount(): long
                         }
-                        interface CountStatistic$$Lambda extends com.sun.org.glassfish.external.statistics.Statistic {
-                            (): long
-                        }
                     }
                 }
             }

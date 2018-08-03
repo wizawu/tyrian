@@ -8,7 +8,7 @@ declare namespace com {
                             namespace compiler {
                                 namespace util {
                                     class OutlineableChunkStart extends com.sun.org.apache.xalan.internal.xsltc.compiler.util.MarkerInstruction {
-                                        public static OUTLINEABLECHUNKSTART: com.sun.org.apache.bcel.internal.generic.Instruction
+                                        public static readonly OUTLINEABLECHUNKSTART: com.sun.org.apache.bcel.internal.generic.Instruction
                                         public getName(): string
                                         public toString(): string
                                         public toString(arg0: boolean): string

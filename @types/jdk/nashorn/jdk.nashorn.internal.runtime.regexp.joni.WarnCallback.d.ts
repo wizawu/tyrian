@@ -9,7 +9,7 @@ declare namespace jdk {
                             warn(arg0: java.lang.String | string): void
                         }
                         interface WarnCallback$$Lambda {
-                            DEFAULT: jdk.nashorn.internal.runtime.regexp.joni.WarnCallback
+                            (arg0: java.lang.String | string): void
                         }
                     }
                 }

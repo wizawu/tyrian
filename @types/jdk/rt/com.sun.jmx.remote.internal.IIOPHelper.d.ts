@@ -15,9 +15,9 @@ declare namespace com {
                         public static stringToObject(arg0: java.lang.Object, arg1: java.lang.String | string): java.lang.Object
                         public static objectToString(arg0: java.lang.Object, arg1: java.lang.Object): string
                         public static narrow<T>(arg0: java.lang.Object, arg1: java.lang.Class<T>): T
-                        public static exportObject(arg0: java.rmi.Remote): void
-                        public static unexportObject(arg0: java.rmi.Remote): void
-                        public static toStub(arg0: java.rmi.Remote): java.rmi.Remote
+                        public static exportObject<T>(arg0: java.rmi.Remote): void
+                        public static unexportObject<T>(arg0: java.rmi.Remote): void
+                        public static toStub<T>(arg0: java.rmi.Remote): java.rmi.Remote
                         public static class: java.lang.Class<any>
                     }
                 }

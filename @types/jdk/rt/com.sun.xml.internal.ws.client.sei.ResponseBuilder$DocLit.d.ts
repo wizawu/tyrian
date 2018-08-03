@@ -6,7 +6,7 @@ declare namespace com {
                     namespace client {
                         namespace sei {
                             class ResponseBuilder$DocLit extends com.sun.xml.internal.ws.client.sei.ResponseBuilder {
-                                public constructor(arg0: com.sun.xml.internal.ws.model.WrapperParameter, arg1: com.sun.xml.internal.ws.client.sei.ValueSetterFactory)
+                                public constructor(arg0: com.sun.xml.internal.ws.model.WrapperParameter, arg1: com.sun.xml.internal.ws.client.sei.ValueSetterFactory | com.sun.xml.internal.ws.client.sei.ValueSetterFactory$$Lambda)
                                 public readResponse(arg0: com.sun.xml.internal.ws.api.message.Message, arg1: java.lang.Object[]): java.lang.Object
                                 public static class: java.lang.Class<any>
                             }

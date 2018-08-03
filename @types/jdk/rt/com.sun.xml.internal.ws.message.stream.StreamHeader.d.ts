@@ -6,7 +6,7 @@ declare namespace com {
                     namespace message {
                         namespace stream {
                             abstract class StreamHeader extends com.sun.xml.internal.ws.message.AbstractHeaderImpl {
-                                protected _mark: com.sun.xml.internal.stream.buffer.XMLStreamBuffer
+                                protected readonly _mark: com.sun.xml.internal.stream.buffer.XMLStreamBuffer
                                 protected _isMustUnderstand: boolean
                                 protected _role: string
                                 protected _isRelay: boolean
@@ -25,8 +25,11 @@ declare namespace com {
                                 public writeTo(arg0: javax.xml.soap.SOAPMessage): void
                                 public writeTo(arg0: org.xml.sax.ContentHandler, arg1: org.xml.sax.ErrorHandler): void
                                 public readAsEPR(arg0: com.sun.xml.internal.ws.api.addressing.AddressingVersion): com.sun.xml.internal.ws.api.addressing.WSEndpointReference
-                                protected processHeaderAttributes(arg0: javax.xml.stream.XMLStreamReader): com.sun.istack.internal.FinalArrayList<com.sun.xml.internal.ws.message.stream.StreamHeader$Attribute>
+                                protected abstract processHeaderAttributes(arg0: javax.xml.stream.XMLStreamReader): com.sun.istack.internal.FinalArrayList<com.sun.xml.internal.ws.message.stream.StreamHeader$Attribute>
                                 public static class: java.lang.Class<any>
+                            }
+                            interface StreamHeader$$Lambda extends com.sun.xml.internal.ws.message.AbstractHeaderImpl {
+                                (arg0: javax.xml.stream.XMLStreamReader): com.sun.istack.internal.FinalArrayList<com.sun.xml.internal.ws.message.stream.StreamHeader$Attribute>
                             }
                         }
                     }

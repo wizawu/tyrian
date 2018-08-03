@@ -6,9 +6,6 @@ declare namespace com {
                     interface ValidationEventLocatorEx extends javax.xml.bind.ValidationEventLocator {
                         getFieldName(): string
                     }
-                    interface ValidationEventLocatorEx$$Lambda extends javax.xml.bind.ValidationEventLocator {
-                        (): string
-                    }
                 }
             }
         }

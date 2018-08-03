@@ -5,23 +5,23 @@ declare namespace com {
                 namespace stream {
                     namespace writers {
                         class XMLStreamWriterImpl extends java.util.AbstractMap implements javax.xml.stream.XMLStreamWriter {
-                            public static START_COMMENT: string
-                            public static END_COMMENT: string
-                            public static DEFAULT_ENCODING: string
-                            public static DEFAULT_XMLDECL: string
-                            public static DEFAULT_XML_VERSION: string
-                            public static CLOSE_START_TAG: char
-                            public static OPEN_START_TAG: char
-                            public static OPEN_END_TAG: string
-                            public static CLOSE_END_TAG: char
-                            public static START_CDATA: string
-                            public static END_CDATA: string
-                            public static CLOSE_EMPTY_ELEMENT: string
-                            public static SPACE: string
-                            public static UTF_8: string
-                            public static OUTPUTSTREAM_PROPERTY: string
-                            public constructor(arg0: java.io.OutputStream, arg1: com.sun.org.apache.xerces.internal.impl.PropertyManager)
-                            public constructor(arg0: java.io.OutputStream, arg1: java.lang.String | string, arg2: com.sun.org.apache.xerces.internal.impl.PropertyManager)
+                            public static readonly START_COMMENT: string
+                            public static readonly END_COMMENT: string
+                            public static readonly DEFAULT_ENCODING: string
+                            public static readonly DEFAULT_XMLDECL: string
+                            public static readonly DEFAULT_XML_VERSION: string
+                            public static readonly CLOSE_START_TAG: char
+                            public static readonly OPEN_START_TAG: char
+                            public static readonly OPEN_END_TAG: string
+                            public static readonly CLOSE_END_TAG: char
+                            public static readonly START_CDATA: string
+                            public static readonly END_CDATA: string
+                            public static readonly CLOSE_EMPTY_ELEMENT: string
+                            public static readonly SPACE: string
+                            public static readonly UTF_8: string
+                            public static readonly OUTPUTSTREAM_PROPERTY: string
+                            public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: com.sun.org.apache.xerces.internal.impl.PropertyManager)
+                            public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: java.lang.String | string, arg2: com.sun.org.apache.xerces.internal.impl.PropertyManager)
                             public constructor(arg0: java.io.Writer, arg1: com.sun.org.apache.xerces.internal.impl.PropertyManager)
                             public constructor(arg0: javax.xml.transform.stream.StreamResult, arg1: java.lang.String | string, arg2: com.sun.org.apache.xerces.internal.impl.PropertyManager)
                             public reset(): void

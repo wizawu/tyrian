@@ -10,7 +10,7 @@ declare namespace jdk {
                     public G$test(): java.lang.Object
                     public S$test(arg0: java.lang.Object): void
                     public G$toString(): java.lang.Object
-                    public public S$toString(arg0: java.lang.Object): void
+                    public static public S$toString(arg0: java.lang.Object): void
                     public getClassName(): string
                     public static class: java.lang.Class<any>
                 }

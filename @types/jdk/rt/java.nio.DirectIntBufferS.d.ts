@@ -1,8 +1,8 @@
 declare namespace java {
     namespace nio {
         class DirectIntBufferS extends java.nio.IntBuffer implements sun.nio.ch.DirectBuffer {
-            protected static unsafe: sun.misc.Unsafe
-            protected static unaligned: boolean
+            protected static readonly unsafe: sun.misc.Unsafe
+            protected static readonly unaligned: boolean
             public attachment(): java.lang.Object
             public cleaner(): sun.misc.Cleaner
             public slice(): java.nio.IntBuffer

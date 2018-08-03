@@ -21,9 +21,9 @@ declare namespace javax {
                     protected thumbRect: java.awt.Rectangle
                     protected trackRect: java.awt.Rectangle
                     protected trackHighlight: int
-                    protected static NO_HIGHLIGHT: int
-                    protected static DECREASE_HIGHLIGHT: int
-                    protected static INCREASE_HIGHLIGHT: int
+                    protected static readonly NO_HIGHLIGHT: int
+                    protected static readonly DECREASE_HIGHLIGHT: int
+                    protected static readonly INCREASE_HIGHLIGHT: int
                     protected scrollListener: javax.swing.plaf.basic.BasicScrollBarUI$ScrollListener
                     protected propertyChangeListener: java.beans.PropertyChangeListener
                     protected scrollTimer: javax.swing.Timer

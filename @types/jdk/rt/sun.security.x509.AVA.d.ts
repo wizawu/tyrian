@@ -9,7 +9,7 @@ declare namespace sun {
                 public equals(arg0: java.lang.Object): boolean
                 public hashCode(): int
                 public encode(arg0: sun.security.util.DerOutputStream): void
-                public derEncode(arg0: java.io.OutputStream): void
+                public derEncode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                 public toString(): string
                 public toRFC1779String(): string
                 public toRFC1779String(arg0: java.util.Map<java.lang.String, java.lang.String>): string

@@ -12,13 +12,13 @@ declare namespace javax {
                 protected constructor()
                 protected constructor(arg0: boolean, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String[], arg4: java.lang.String[])
                 public isStandardMetadataFormatSupported(): boolean
-                public isReadOnly(): boolean
+                public abstract isReadOnly(): boolean
                 public getNativeMetadataFormatName(): string
                 public getExtraMetadataFormatNames(): java.lang.String[]
                 public getMetadataFormatNames(): java.lang.String[]
                 public getMetadataFormat(arg0: java.lang.String | string): javax.imageio.metadata.IIOMetadataFormat
-                public getAsTree(arg0: java.lang.String | string): org.w3c.dom.Node
-                public mergeTree(arg0: java.lang.String | string, arg1: org.w3c.dom.Node): void
+                public abstract getAsTree(arg0: java.lang.String | string): org.w3c.dom.Node
+                public abstract mergeTree(arg0: java.lang.String | string, arg1: org.w3c.dom.Node): void
                 protected getStandardChromaNode(): javax.imageio.metadata.IIOMetadataNode
                 protected getStandardCompressionNode(): javax.imageio.metadata.IIOMetadataNode
                 protected getStandardDataNode(): javax.imageio.metadata.IIOMetadataNode
@@ -29,7 +29,7 @@ declare namespace javax {
                 protected getStandardTransparencyNode(): javax.imageio.metadata.IIOMetadataNode
                 protected getStandardTree(): javax.imageio.metadata.IIOMetadataNode
                 public setFromTree(arg0: java.lang.String | string, arg1: org.w3c.dom.Node): void
-                public reset(): void
+                public abstract reset(): void
                 public setController(arg0: javax.imageio.metadata.IIOMetadataController | javax.imageio.metadata.IIOMetadataController$$Lambda): void
                 public getController(): javax.imageio.metadata.IIOMetadataController
                 public getDefaultController(): javax.imageio.metadata.IIOMetadataController

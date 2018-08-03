@@ -8,8 +8,8 @@ declare namespace com {
                             namespace res {
                                 abstract class XResourceBundleBase extends java.util.ListResourceBundle {
                                     public constructor()
-                                    public getMessageKey(arg0: int): string
-                                    public getWarningKey(arg0: int): string
+                                    public abstract getMessageKey(arg0: int): string
+                                    public abstract getWarningKey(arg0: int): string
                                     public static class: java.lang.Class<any>
                                 }
                             }

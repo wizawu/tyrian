@@ -4,7 +4,7 @@ declare namespace com {
             namespace finder {
                 class PersistenceDelegateFinder extends com.sun.beans.finder.InstanceFinder<java.beans.PersistenceDelegate> {
                     public constructor()
-                    public register(arg0: java.lang.Class<any>, arg1: java.beans.PersistenceDelegate): void
+                    public register(arg0: java.lang.Class<any>, arg1: java.beans.PersistenceDelegate | java.beans.PersistenceDelegate$$Lambda): void
                     public find(arg0: java.lang.Class<any>): java.beans.PersistenceDelegate
                     public find(arg0: java.lang.Class): java.lang.Object
                     public setPackages(arg0: java.lang.String[]): void

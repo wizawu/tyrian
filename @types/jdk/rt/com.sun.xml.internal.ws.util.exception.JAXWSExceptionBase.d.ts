@@ -12,11 +12,14 @@ declare namespace com {
                                 protected constructor(arg0: com.sun.istack.internal.localization.Localizable)
                                 protected constructor(arg0: com.sun.istack.internal.localization.Localizable, arg1: java.lang.Throwable)
                                 public getMessage(): string
-                                protected getDefaultResourceBundleName(): string
+                                protected abstract getDefaultResourceBundleName(): string
                                 public getKey(): string
                                 public getArguments(): java.lang.Object[]
                                 public getResourceBundleName(): string
                                 public static class: java.lang.Class<any>
+                            }
+                            interface JAXWSExceptionBase$$Lambda extends javax.xml.ws.WebServiceException implements com.sun.istack.internal.localization.Localizable {
+                                (): string
                             }
                         }
                     }

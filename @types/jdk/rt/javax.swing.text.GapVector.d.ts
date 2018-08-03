@@ -4,8 +4,8 @@ declare namespace javax {
             abstract class GapVector implements java.io.Serializable {
                 public constructor()
                 public constructor(arg0: int)
-                protected allocateArray(arg0: int): java.lang.Object
-                protected getArrayLength(): int
+                protected abstract allocateArray(arg0: int): java.lang.Object
+                protected abstract getArrayLength(): int
                 protected getArray(): java.lang.Object
                 protected getGapStart(): int
                 protected getGapEnd(): int

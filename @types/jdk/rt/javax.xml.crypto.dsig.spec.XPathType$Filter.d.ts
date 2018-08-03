@@ -4,9 +4,9 @@ declare namespace javax {
             namespace dsig {
                 namespace spec {
                     class XPathType$Filter {
-                        public static INTERSECT: javax.xml.crypto.dsig.spec.XPathType$Filter
-                        public static SUBTRACT: javax.xml.crypto.dsig.spec.XPathType$Filter
-                        public static UNION: javax.xml.crypto.dsig.spec.XPathType$Filter
+                        public static readonly INTERSECT: javax.xml.crypto.dsig.spec.XPathType$Filter
+                        public static readonly SUBTRACT: javax.xml.crypto.dsig.spec.XPathType$Filter
+                        public static readonly UNION: javax.xml.crypto.dsig.spec.XPathType$Filter
                         public toString(): string
                         public static class: java.lang.Class<any>
                     }

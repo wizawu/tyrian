@@ -7,12 +7,12 @@ declare namespace com {
                         namespace security {
                             namespace algorithms {
                                 class MessageDigestAlgorithm extends com.sun.org.apache.xml.internal.security.algorithms.Algorithm {
-                                    public static ALGO_ID_DIGEST_NOT_RECOMMENDED_MD5: string
-                                    public static ALGO_ID_DIGEST_SHA1: string
-                                    public static ALGO_ID_DIGEST_SHA256: string
-                                    public static ALGO_ID_DIGEST_SHA384: string
-                                    public static ALGO_ID_DIGEST_SHA512: string
-                                    public static ALGO_ID_DIGEST_RIPEMD160: string
+                                    public static readonly ALGO_ID_DIGEST_NOT_RECOMMENDED_MD5: string
+                                    public static readonly ALGO_ID_DIGEST_SHA1: string
+                                    public static readonly ALGO_ID_DIGEST_SHA256: string
+                                    public static readonly ALGO_ID_DIGEST_SHA384: string
+                                    public static readonly ALGO_ID_DIGEST_SHA512: string
+                                    public static readonly ALGO_ID_DIGEST_RIPEMD160: string
                                     public static getInstance(arg0: org.w3c.dom.Document, arg1: java.lang.String | string): com.sun.org.apache.xml.internal.security.algorithms.MessageDigestAlgorithm
                                     public getAlgorithm(): java.security.MessageDigest
                                     public static isEqual(arg0: byte[], arg1: byte[]): boolean

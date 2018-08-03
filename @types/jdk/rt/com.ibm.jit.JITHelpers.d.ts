@@ -2,7 +2,7 @@ declare namespace com {
     namespace ibm {
         namespace jit {
             class JITHelpers {
-                public static IS_PLATFORM_LITTLE_ENDIAN: boolean
+                public static readonly IS_PLATFORM_LITTLE_ENDIAN: boolean
                 public static getHelpers(): com.ibm.jit.JITHelpers
                 public transformedEncodeUTF16Big(arg0: long, arg1: long, arg2: int): int
                 public transformedEncodeUTF16Little(arg0: long, arg1: long, arg2: int): int

@@ -4,7 +4,7 @@ declare namespace sun {
             namespace protocol {
                 namespace http {
                     class HttpURLConnection extends java.net.HttpURLConnection {
-                        public static userAgent: string
+                        public static readonly userAgent: string
                         protected http: sun.net.www.http.HttpClient
                         protected handler: sun.net.www.protocol.http.Handler
                         protected instProxy: java.net.Proxy
@@ -25,7 +25,7 @@ declare namespace sun {
                         public constructor(arg0: java.net.URL, arg1: java.net.Proxy)
                         protected constructor(arg0: java.net.URL, arg1: java.net.Proxy, arg2: sun.net.www.protocol.http.Handler)
                         public static setDefaultAuthenticator(arg0: sun.net.www.protocol.http.HttpAuthenticator): void
-                        public static openConnectionCheckRedirects(arg0: java.net.URLConnection): java.io.InputStream
+                        public static openConnectionCheckRedirects(arg0: java.net.URLConnection | java.net.URLConnection$$Lambda): java.io.InputStream
                         public connect(): void
                         protected plainConnect(): void
                         protected plainConnect0(): void

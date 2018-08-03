@@ -7,13 +7,13 @@ declare namespace com {
                         namespace soap {
                             namespace impl {
                                 class ElementImpl extends com.sun.org.apache.xerces.internal.dom.ElementNSImpl implements javax.xml.soap.SOAPElement , javax.xml.soap.SOAPBodyElement {
-                                    public static DSIG_NS: string
-                                    public static XENC_NS: string
-                                    public static WSU_NS: string
+                                    public static readonly DSIG_NS: string
+                                    public static readonly XENC_NS: string
+                                    public static readonly WSU_NS: string
                                     protected elementQName: javax.xml.namespace.QName
-                                    protected static log: java.util.logging.Logger
-                                    public static XMLNS_URI: string
-                                    public static XML_URI: string
+                                    protected static readonly log: java.util.logging.Logger
+                                    public static readonly XMLNS_URI: string
+                                    public static readonly XML_URI: string
                                     public constructor(arg0: com.sun.xml.internal.messaging.saaj.soap.SOAPDocumentImpl, arg1: javax.xml.soap.Name)
                                     public constructor(arg0: com.sun.xml.internal.messaging.saaj.soap.SOAPDocumentImpl, arg1: javax.xml.namespace.QName)
                                     public constructor(arg0: com.sun.xml.internal.messaging.saaj.soap.SOAPDocumentImpl, arg1: java.lang.String | string, arg2: java.lang.String | string)

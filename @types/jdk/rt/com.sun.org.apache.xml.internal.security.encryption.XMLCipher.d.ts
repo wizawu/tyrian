@@ -7,36 +7,36 @@ declare namespace com {
                         namespace security {
                             namespace encryption {
                                 class XMLCipher {
-                                    public static TRIPLEDES: string
-                                    public static AES_128: string
-                                    public static AES_256: string
-                                    public static AES_192: string
-                                    public static AES_128_GCM: string
-                                    public static AES_192_GCM: string
-                                    public static AES_256_GCM: string
-                                    public static RSA_v1dot5: string
-                                    public static RSA_OAEP: string
-                                    public static RSA_OAEP_11: string
-                                    public static DIFFIE_HELLMAN: string
-                                    public static TRIPLEDES_KeyWrap: string
-                                    public static AES_128_KeyWrap: string
-                                    public static AES_256_KeyWrap: string
-                                    public static AES_192_KeyWrap: string
-                                    public static SHA1: string
-                                    public static SHA256: string
-                                    public static SHA512: string
-                                    public static RIPEMD_160: string
-                                    public static XML_DSIG: string
-                                    public static N14C_XML: string
-                                    public static N14C_XML_WITH_COMMENTS: string
-                                    public static EXCL_XML_N14C: string
-                                    public static EXCL_XML_N14C_WITH_COMMENTS: string
-                                    public static PHYSICAL_XML_N14C: string
-                                    public static BASE64_ENCODING: string
-                                    public static ENCRYPT_MODE: int
-                                    public static DECRYPT_MODE: int
-                                    public static UNWRAP_MODE: int
-                                    public static WRAP_MODE: int
+                                    public static readonly TRIPLEDES: string
+                                    public static readonly AES_128: string
+                                    public static readonly AES_256: string
+                                    public static readonly AES_192: string
+                                    public static readonly AES_128_GCM: string
+                                    public static readonly AES_192_GCM: string
+                                    public static readonly AES_256_GCM: string
+                                    public static readonly RSA_v1dot5: string
+                                    public static readonly RSA_OAEP: string
+                                    public static readonly RSA_OAEP_11: string
+                                    public static readonly DIFFIE_HELLMAN: string
+                                    public static readonly TRIPLEDES_KeyWrap: string
+                                    public static readonly AES_128_KeyWrap: string
+                                    public static readonly AES_256_KeyWrap: string
+                                    public static readonly AES_192_KeyWrap: string
+                                    public static readonly SHA1: string
+                                    public static readonly SHA256: string
+                                    public static readonly SHA512: string
+                                    public static readonly RIPEMD_160: string
+                                    public static readonly XML_DSIG: string
+                                    public static readonly N14C_XML: string
+                                    public static readonly N14C_XML_WITH_COMMENTS: string
+                                    public static readonly EXCL_XML_N14C: string
+                                    public static readonly EXCL_XML_N14C_WITH_COMMENTS: string
+                                    public static readonly PHYSICAL_XML_N14C: string
+                                    public static readonly BASE64_ENCODING: string
+                                    public static readonly ENCRYPT_MODE: int
+                                    public static readonly DECRYPT_MODE: int
+                                    public static readonly UNWRAP_MODE: int
+                                    public static readonly WRAP_MODE: int
                                     public setSerializer(arg0: com.sun.org.apache.xml.internal.security.encryption.Serializer): void
                                     public getSerializer(): com.sun.org.apache.xml.internal.security.encryption.Serializer
                                     public static getInstance(arg0: java.lang.String | string): com.sun.org.apache.xml.internal.security.encryption.XMLCipher
@@ -63,7 +63,7 @@ declare namespace com {
                                     public doFinal(arg0: org.w3c.dom.Document, arg1: org.w3c.dom.Element): org.w3c.dom.Document
                                     public doFinal(arg0: org.w3c.dom.Document, arg1: org.w3c.dom.Element, arg2: boolean): org.w3c.dom.Document
                                     public encryptData(arg0: org.w3c.dom.Document, arg1: org.w3c.dom.Element): com.sun.org.apache.xml.internal.security.encryption.EncryptedData
-                                    public encryptData(arg0: org.w3c.dom.Document, arg1: java.lang.String | string, arg2: java.io.InputStream): com.sun.org.apache.xml.internal.security.encryption.EncryptedData
+                                    public encryptData(arg0: org.w3c.dom.Document, arg1: java.lang.String | string, arg2: java.io.InputStream | java.io.InputStream$$Lambda): com.sun.org.apache.xml.internal.security.encryption.EncryptedData
                                     public encryptData(arg0: org.w3c.dom.Document, arg1: org.w3c.dom.Element, arg2: boolean): com.sun.org.apache.xml.internal.security.encryption.EncryptedData
                                     public loadEncryptedData(arg0: org.w3c.dom.Document, arg1: org.w3c.dom.Element): com.sun.org.apache.xml.internal.security.encryption.EncryptedData
                                     public loadEncryptedKey(arg0: org.w3c.dom.Document, arg1: org.w3c.dom.Element): com.sun.org.apache.xml.internal.security.encryption.EncryptedKey

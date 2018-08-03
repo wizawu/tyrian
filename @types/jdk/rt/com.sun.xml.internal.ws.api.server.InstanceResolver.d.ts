@@ -7,9 +7,9 @@ declare namespace com {
                         namespace server {
                             abstract class InstanceResolver<T> {
                                 public constructor()
-                                public resolve(arg0: com.sun.xml.internal.ws.api.message.Packet): T
+                                public abstract resolve(arg0: com.sun.xml.internal.ws.api.message.Packet): T
                                 public postInvoke(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: T): void
-                                public start(arg0: com.sun.xml.internal.ws.api.server.WSWebServiceContext | com.sun.xml.internal.ws.api.server.WSWebServiceContext$$Lambda, arg1: com.sun.xml.internal.ws.api.server.WSEndpoint): void
+                                public start(arg0: com.sun.xml.internal.ws.api.server.WSWebServiceContext, arg1: com.sun.xml.internal.ws.api.server.WSEndpoint): void
                                 public start(arg0: javax.xml.ws.WebServiceContext): void
                                 public dispose(): void
                                 public static createSingleton<T>(arg0: T): com.sun.xml.internal.ws.api.server.InstanceResolver<T>
@@ -17,8 +17,11 @@ declare namespace com {
                                 public static createDefault<T>(arg0: java.lang.Class<T>): com.sun.xml.internal.ws.api.server.InstanceResolver<T>
                                 public static createFromInstanceResolverAnnotation<T>(arg0: java.lang.Class<T>): com.sun.xml.internal.ws.api.server.InstanceResolver<T>
                                 protected static createNewInstance<T>(arg0: java.lang.Class<T>): T
-                                public createInvoker(): com.sun.xml.internal.ws.api.server.Invoker
+                                public createInvoker<T>(): com.sun.xml.internal.ws.api.server.Invoker
                                 public static class: java.lang.Class<any>
+                            }
+                            interface InstanceResolver$$Lambda<T> {
+                                (arg0: com.sun.xml.internal.ws.api.message.Packet): T
                             }
                         }
                     }

@@ -5,8 +5,8 @@ declare namespace com {
                 namespace impl {
                     namespace orbutil {
                         class ObjectStreamClass_1_3_1 implements java.io.Serializable {
-                            public static kDefaultUID: long
-                            public static NO_FIELDS: com.sun.corba.se.impl.orbutil.ObjectStreamField[]
+                            public static readonly kDefaultUID: long
+                            public static readonly NO_FIELDS: com.sun.corba.se.impl.orbutil.ObjectStreamField[]
                             public getName(): string
                             public static getSerialVersionUID(arg0: java.lang.Class<any>): long
                             public getSerialVersionUID(): long

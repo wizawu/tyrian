@@ -4,7 +4,7 @@ declare namespace sun {
             class PNGImageDecoder extends sun.awt.image.ImageDecoder {
                 protected handleChunk(arg0: int, arg1: byte[], arg2: int, arg3: int): boolean
                 public produceImage(): void
-                public constructor(arg0: sun.awt.image.InputStreamImageSource, arg1: java.io.InputStream)
+                public constructor(arg0: sun.awt.image.InputStreamImageSource | sun.awt.image.InputStreamImageSource$$Lambda, arg1: java.io.InputStream | java.io.InputStream$$Lambda)
                 public static getCheckCRC(): boolean
                 public static setCheckCRC(arg0: boolean): void
                 protected wrc(arg0: int): void

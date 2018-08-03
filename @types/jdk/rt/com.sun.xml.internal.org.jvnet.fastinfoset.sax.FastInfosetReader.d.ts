@@ -9,7 +9,7 @@ declare namespace com {
                                 interface FastInfosetReader extends org.xml.sax.XMLReader , com.sun.xml.internal.org.jvnet.fastinfoset.FastInfosetParser {
                                     ENCODING_ALGORITHM_CONTENT_HANDLER_PROPERTY: string
                                     PRIMITIVE_TYPE_CONTENT_HANDLER_PROPERTY: string
-                                    parse(arg0: java.io.InputStream): void
+                                    parse(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
                                     setLexicalHandler(arg0: org.xml.sax.ext.LexicalHandler): void
                                     getLexicalHandler(): org.xml.sax.ext.LexicalHandler
                                     setDeclHandler(arg0: org.xml.sax.ext.DeclHandler): void

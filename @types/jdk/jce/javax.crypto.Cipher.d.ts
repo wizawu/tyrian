@@ -1,13 +1,13 @@
 declare namespace javax {
     namespace crypto {
         class Cipher {
-            public static ENCRYPT_MODE: int
-            public static DECRYPT_MODE: int
-            public static WRAP_MODE: int
-            public static UNWRAP_MODE: int
-            public static PUBLIC_KEY: int
-            public static PRIVATE_KEY: int
-            public static SECRET_KEY: int
+            public static readonly ENCRYPT_MODE: int
+            public static readonly DECRYPT_MODE: int
+            public static readonly WRAP_MODE: int
+            public static readonly UNWRAP_MODE: int
+            public static readonly PUBLIC_KEY: int
+            public static readonly PRIVATE_KEY: int
+            public static readonly SECRET_KEY: int
             protected constructor(arg0: javax.crypto.CipherSpi, arg1: java.security.Provider, arg2: java.lang.String | string)
             public static getInstance(arg0: java.lang.String | string): javax.crypto.Cipher
             public static getInstance(arg0: java.lang.String | string, arg1: java.lang.String | string): javax.crypto.Cipher

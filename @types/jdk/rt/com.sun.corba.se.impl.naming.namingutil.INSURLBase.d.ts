@@ -15,9 +15,12 @@ declare namespace com {
                                 public getEndpointInfo(): java.util.List
                                 public getKeyString(): string
                                 public getStringifiedName(): string
-                                public isCorbanameURL(): boolean
+                                public abstract isCorbanameURL(): boolean
                                 public dPrint(): void
                                 public static class: java.lang.Class<any>
+                            }
+                            interface INSURLBase$$Lambda implements com.sun.corba.se.impl.naming.namingutil.INSURL {
+                                (): boolean
                             }
                         }
                     }

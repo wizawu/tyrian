@@ -1,8 +1,8 @@
 declare namespace javax {
     namespace swing {
         class JTabbedPane extends javax.swing.JComponent implements java.io.Serializable , javax.accessibility.Accessible , javax.swing.SwingConstants {
-            public static WRAP_TAB_LAYOUT: int
-            public static SCROLL_TAB_LAYOUT: int
+            public static readonly WRAP_TAB_LAYOUT: int
+            public static readonly SCROLL_TAB_LAYOUT: int
             protected tabPlacement: int
             protected model: javax.swing.SingleSelectionModel
             protected changeListener: javax.swing.event.ChangeListener
@@ -15,8 +15,8 @@ declare namespace javax {
             public updateUI(): void
             public getUIClassID(): string
             protected createChangeListener(): javax.swing.event.ChangeListener
-            public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
-            public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+            public addChangeListener(arg0: javax.swing.event.ChangeListener): void
+            public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
             public getChangeListeners(): javax.swing.event.ChangeListener[]
             protected fireStateChanged(): void
             public getModel(): javax.swing.SingleSelectionModel

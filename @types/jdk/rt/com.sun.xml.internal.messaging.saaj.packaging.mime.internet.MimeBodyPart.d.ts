@@ -8,10 +8,10 @@ declare namespace com {
                             namespace mime {
                                 namespace internet {
                                     class MimeBodyPart {
-                                        public static ATTACHMENT: string
-                                        public static INLINE: string
+                                        public static readonly ATTACHMENT: string
+                                        public static readonly INLINE: string
                                         public constructor()
-                                        public constructor(arg0: java.io.InputStream)
+                                        public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                                         public constructor(arg0: com.sun.xml.internal.messaging.saaj.packaging.mime.internet.InternetHeaders, arg1: byte[], arg2: int)
                                         public constructor(arg0: com.sun.xml.internal.messaging.saaj.packaging.mime.internet.InternetHeaders, arg1: byte[], arg2: int, arg3: int)
                                         public constructor(arg0: com.sun.xml.internal.org.jvnet.mimepull.MIMEPart)
@@ -44,7 +44,7 @@ declare namespace com {
                                         public setText(arg0: java.lang.String | string): void
                                         public setText(arg0: java.lang.String | string, arg1: java.lang.String | string): void
                                         public setContent(arg0: com.sun.xml.internal.messaging.saaj.packaging.mime.internet.MimeMultipart): void
-                                        public writeTo(arg0: java.io.OutputStream): void
+                                        public writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                                         public getHeader(arg0: java.lang.String | string): java.lang.String[]
                                         public getHeader(arg0: java.lang.String | string, arg1: java.lang.String | string): string
                                         public setHeader(arg0: java.lang.String | string, arg1: java.lang.String | string): void

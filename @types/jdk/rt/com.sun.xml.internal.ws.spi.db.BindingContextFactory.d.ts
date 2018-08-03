@@ -6,15 +6,15 @@ declare namespace com {
                     namespace spi {
                         namespace db {
                             abstract class BindingContextFactory {
-                                public static DefaultDatabindingMode: string
-                                public static JAXB_CONTEXT_FACTORY_PROPERTY: string
-                                public static LOGGER: java.util.logging.Logger
+                                public static readonly DefaultDatabindingMode: string
+                                public static readonly JAXB_CONTEXT_FACTORY_PROPERTY: string
+                                public static readonly LOGGER: java.util.logging.Logger
                                 public constructor()
                                 public static serviceIterator(): java.util.Iterator<com.sun.xml.internal.ws.spi.db.BindingContextFactory>
-                                protected newContext(arg0: javax.xml.bind.JAXBContext): com.sun.xml.internal.ws.spi.db.BindingContext
-                                protected newContext(arg0: com.sun.xml.internal.ws.spi.db.BindingInfo): com.sun.xml.internal.ws.spi.db.BindingContext
-                                protected isFor(arg0: java.lang.String | string): boolean
-                                protected getContext(arg0: javax.xml.bind.Marshaller): com.sun.xml.internal.ws.spi.db.BindingContext
+                                protected abstract newContext(arg0: javax.xml.bind.JAXBContext): com.sun.xml.internal.ws.spi.db.BindingContext
+                                protected abstract newContext(arg0: com.sun.xml.internal.ws.spi.db.BindingInfo): com.sun.xml.internal.ws.spi.db.BindingContext
+                                protected abstract isFor(arg0: java.lang.String | string): boolean
+                                protected abstract getContext(arg0: javax.xml.bind.Marshaller): com.sun.xml.internal.ws.spi.db.BindingContext
                                 public static create(arg0: javax.xml.bind.JAXBContext): com.sun.xml.internal.ws.spi.db.BindingContext
                                 public static create(arg0: com.sun.xml.internal.ws.spi.db.BindingInfo): com.sun.xml.internal.ws.spi.db.BindingContext
                                 public static isContextSupported(arg0: java.lang.Object): boolean

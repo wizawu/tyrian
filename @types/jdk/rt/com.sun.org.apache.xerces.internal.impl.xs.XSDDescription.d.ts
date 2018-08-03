@@ -7,15 +7,15 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 class XSDDescription extends com.sun.org.apache.xerces.internal.util.XMLResourceIdentifierImpl implements com.sun.org.apache.xerces.internal.xni.grammars.XMLSchemaDescription {
-                                    public static CONTEXT_INITIALIZE: short
-                                    public static CONTEXT_INCLUDE: short
-                                    public static CONTEXT_REDEFINE: short
-                                    public static CONTEXT_IMPORT: short
-                                    public static CONTEXT_PREPARSE: short
-                                    public static CONTEXT_INSTANCE: short
-                                    public static CONTEXT_ELEMENT: short
-                                    public static CONTEXT_ATTRIBUTE: short
-                                    public static CONTEXT_XSITYPE: short
+                                    public static readonly CONTEXT_INITIALIZE: short
+                                    public static readonly CONTEXT_INCLUDE: short
+                                    public static readonly CONTEXT_REDEFINE: short
+                                    public static readonly CONTEXT_IMPORT: short
+                                    public static readonly CONTEXT_PREPARSE: short
+                                    public static readonly CONTEXT_INSTANCE: short
+                                    public static readonly CONTEXT_ELEMENT: short
+                                    public static readonly CONTEXT_ATTRIBUTE: short
+                                    public static readonly CONTEXT_XSITYPE: short
                                     protected fContextType: short
                                     protected fLocationHints: java.lang.String[]
                                     protected fTriggeringComponent: com.sun.org.apache.xerces.internal.xni.QName

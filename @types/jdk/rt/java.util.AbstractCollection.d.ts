@@ -2,8 +2,8 @@ declare namespace java {
     namespace util {
         abstract class AbstractCollection<E> implements java.util.Collection<E> {
             protected constructor()
-            public iterator(): java.util.Iterator<E>
-            public size(): int
+            public abstract iterator(): java.util.Iterator<E>
+            public abstract size(): int
             public isEmpty(): boolean
             public contains(arg0: java.lang.Object): boolean
             public toArray(): java.lang.Object[]

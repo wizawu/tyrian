@@ -1,25 +1,25 @@
 declare namespace java {
     namespace awt {
         class Frame extends java.awt.Window implements java.awt.MenuContainer {
-            public static DEFAULT_CURSOR: int
-            public static CROSSHAIR_CURSOR: int
-            public static TEXT_CURSOR: int
-            public static WAIT_CURSOR: int
-            public static SW_RESIZE_CURSOR: int
-            public static SE_RESIZE_CURSOR: int
-            public static NW_RESIZE_CURSOR: int
-            public static NE_RESIZE_CURSOR: int
-            public static N_RESIZE_CURSOR: int
-            public static S_RESIZE_CURSOR: int
-            public static W_RESIZE_CURSOR: int
-            public static E_RESIZE_CURSOR: int
-            public static HAND_CURSOR: int
-            public static MOVE_CURSOR: int
-            public static NORMAL: int
-            public static ICONIFIED: int
-            public static MAXIMIZED_HORIZ: int
-            public static MAXIMIZED_VERT: int
-            public static MAXIMIZED_BOTH: int
+            public static readonly DEFAULT_CURSOR: int
+            public static readonly CROSSHAIR_CURSOR: int
+            public static readonly TEXT_CURSOR: int
+            public static readonly WAIT_CURSOR: int
+            public static readonly SW_RESIZE_CURSOR: int
+            public static readonly SE_RESIZE_CURSOR: int
+            public static readonly NW_RESIZE_CURSOR: int
+            public static readonly NE_RESIZE_CURSOR: int
+            public static readonly N_RESIZE_CURSOR: int
+            public static readonly S_RESIZE_CURSOR: int
+            public static readonly W_RESIZE_CURSOR: int
+            public static readonly E_RESIZE_CURSOR: int
+            public static readonly HAND_CURSOR: int
+            public static readonly MOVE_CURSOR: int
+            public static readonly NORMAL: int
+            public static readonly ICONIFIED: int
+            public static readonly MAXIMIZED_HORIZ: int
+            public static readonly MAXIMIZED_VERT: int
+            public static readonly MAXIMIZED_BOTH: int
             public constructor()
             public constructor(arg0: java.awt.GraphicsConfiguration)
             public constructor(arg0: java.lang.String | string)

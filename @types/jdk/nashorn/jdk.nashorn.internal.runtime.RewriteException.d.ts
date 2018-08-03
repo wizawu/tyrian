@@ -3,15 +3,15 @@ declare namespace jdk {
         namespace internal {
             namespace runtime {
                 class RewriteException extends java.lang.Exception {
-                    public static GET_BYTECODE_SLOTS: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static GET_PROGRAM_POINT: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static GET_RETURN_VALUE: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static BOOTSTRAP: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_LONG_ARRAY: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_DOUBLE_ARRAY: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static TO_OBJECT_ARRAY: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static INSTANCE_OR_NULL: jdk.nashorn.internal.codegen.CompilerConstants$Call
-                    public static ASSERT_ARRAY_LENGTH: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly GET_BYTECODE_SLOTS: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly GET_PROGRAM_POINT: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly GET_RETURN_VALUE: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly BOOTSTRAP: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_LONG_ARRAY: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_DOUBLE_ARRAY: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly TO_OBJECT_ARRAY: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly INSTANCE_OR_NULL: jdk.nashorn.internal.codegen.CompilerConstants$Call
+                    public static readonly ASSERT_ARRAY_LENGTH: jdk.nashorn.internal.codegen.CompilerConstants$Call
                     public static create(arg0: jdk.nashorn.internal.runtime.UnwarrantedOptimismException, arg1: java.lang.Object[], arg2: java.lang.String[]): jdk.nashorn.internal.runtime.RewriteException
                     public static create(arg0: jdk.nashorn.internal.runtime.UnwarrantedOptimismException, arg1: java.lang.Object[], arg2: java.lang.String[], arg3: int[]): jdk.nashorn.internal.runtime.RewriteException
                     public static populateArrayBootstrap(arg0: java.lang.invoke.MethodHandles$Lookup, arg1: java.lang.String | string, arg2: java.lang.invoke.MethodType, arg3: int): java.lang.invoke.CallSite

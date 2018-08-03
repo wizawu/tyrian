@@ -3,7 +3,7 @@ declare namespace sun {
         namespace cs {
             namespace ext {
                 class DoubleByte {
-                    public static B2C_UNMAPPABLE: char[]
+                    public static readonly B2C_UNMAPPABLE: char[]
                     public constructor()
                     public static class: java.lang.Class<any>
                 }

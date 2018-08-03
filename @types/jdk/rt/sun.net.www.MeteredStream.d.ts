@@ -8,7 +8,7 @@ declare namespace sun {
                 protected markedCount: long
                 protected markLimit: int
                 protected pi: sun.net.ProgressSource
-                public constructor(arg0: java.io.InputStream, arg1: sun.net.ProgressSource, arg2: long)
+                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: sun.net.ProgressSource, arg2: long)
                 public read(): int
                 public read(arg0: byte[], arg1: int, arg2: int): int
                 public skip(arg0: long): long

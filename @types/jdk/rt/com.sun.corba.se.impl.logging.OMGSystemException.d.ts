@@ -5,137 +5,137 @@ declare namespace com {
                 namespace impl {
                     namespace logging {
                         class OMGSystemException extends com.sun.corba.se.spi.logging.LogWrapperBase {
-                            public static IDL_CONTEXT_NOT_FOUND: int
-                            public static NO_MATCHING_IDL_CONTEXT: int
-                            public static DEP_PREVENT_DESTRUCTION: int
-                            public static DESTROY_INDESTRUCTIBLE: int
-                            public static SHUTDOWN_WAIT_FOR_COMPLETION_DEADLOCK: int
-                            public static BAD_OPERATION_AFTER_SHUTDOWN: int
-                            public static BAD_INVOKE: int
-                            public static BAD_SET_SERVANT_MANAGER: int
-                            public static BAD_ARGUMENTS_CALL: int
-                            public static BAD_CTX_CALL: int
-                            public static BAD_RESULT_CALL: int
-                            public static BAD_SEND: int
-                            public static BAD_POLL_BEFORE: int
-                            public static BAD_POLL_AFTER: int
-                            public static BAD_POLL_SYNC: int
-                            public static INVALID_PI_CALL1: int
-                            public static INVALID_PI_CALL2: int
-                            public static INVALID_PI_CALL3: int
-                            public static INVALID_PI_CALL4: int
-                            public static SERVICE_CONTEXT_ADD_FAILED: int
-                            public static POLICY_FACTORY_REG_FAILED: int
-                            public static CREATE_POA_DESTROY: int
-                            public static PRIORITY_REASSIGN: int
-                            public static XA_START_OUTSIZE: int
-                            public static XA_START_PROTO: int
-                            public static BAD_SERVANT_MANAGER_TYPE: int
-                            public static OPERATION_UNKNOWN_TO_TARGET: int
-                            public static UNABLE_REGISTER_VALUE_FACTORY: int
-                            public static RID_ALREADY_DEFINED: int
-                            public static NAME_USED_IFR: int
-                            public static TARGET_NOT_CONTAINER: int
-                            public static NAME_CLASH: int
-                            public static NOT_SERIALIZABLE: int
-                            public static SO_BAD_SCHEME_NAME: int
-                            public static SO_BAD_ADDRESS: int
-                            public static SO_BAD_SCHEMA_SPECIFIC: int
-                            public static SO_NON_SPECIFIC: int
-                            public static IR_DERIVE_ABS_INT_BASE: int
-                            public static IR_VALUE_SUPPORT: int
-                            public static INCOMPLETE_TYPECODE: int
-                            public static INVALID_OBJECT_ID: int
-                            public static TYPECODE_BAD_NAME: int
-                            public static TYPECODE_BAD_REPID: int
-                            public static TYPECODE_INV_MEMBER: int
-                            public static TC_UNION_DUP_LABEL: int
-                            public static TC_UNION_INCOMPATIBLE: int
-                            public static TC_UNION_BAD_DISC: int
-                            public static SET_EXCEPTION_BAD_ANY: int
-                            public static SET_EXCEPTION_UNLISTED: int
-                            public static NO_CLIENT_WCHAR_CODESET_CTX: int
-                            public static ILLEGAL_SERVICE_CONTEXT: int
-                            public static ENUM_OUT_OF_RANGE: int
-                            public static INVALID_SERVICE_CONTEXT_ID: int
-                            public static RIR_WITH_NULL_OBJECT: int
-                            public static INVALID_COMPONENT_ID: int
-                            public static INVALID_PROFILE_ID: int
-                            public static POLICY_TYPE_DUPLICATE: int
-                            public static BAD_ONEWAY_DEFINITION: int
-                            public static DII_FOR_IMPLICIT_OPERATION: int
-                            public static XA_CALL_INVAL: int
-                            public static UNION_BAD_DISCRIMINATOR: int
-                            public static CTX_ILLEGAL_PROPERTY_NAME: int
-                            public static CTX_ILLEGAL_SEARCH_STRING: int
-                            public static CTX_ILLEGAL_NAME: int
-                            public static CTX_NON_EMPTY: int
-                            public static INVALID_STREAM_FORMAT_VERSION: int
-                            public static NOT_A_VALUEOUTPUTSTREAM: int
-                            public static NOT_A_VALUEINPUTSTREAM: int
-                            public static MARSHALL_INCOMPLETE_TYPECODE: int
-                            public static BAD_MEMBER_TYPECODE: int
-                            public static ILLEGAL_PARAMETER: int
-                            public static CHAR_NOT_IN_CODESET: int
-                            public static PRIORITY_MAP_FAILRE: int
-                            public static NO_USABLE_PROFILE: int
-                            public static PRIORITY_RANGE_RESTRICT: int
-                            public static NO_SERVER_WCHAR_CODESET_CMP: int
-                            public static CODESET_COMPONENT_REQUIRED: int
-                            public static IOR_POLICY_RECONCILE_ERROR: int
-                            public static POLICY_UNKNOWN: int
-                            public static NO_POLICY_FACTORY: int
-                            public static XA_RMERR: int
-                            public static XA_RMFAIL: int
-                            public static NO_IR: int
-                            public static NO_INTERFACE_IN_IR: int
-                            public static UNABLE_LOCATE_VALUE_FACTORY: int
-                            public static SET_RESULT_BEFORE_CTX: int
-                            public static BAD_NVLIST: int
-                            public static NOT_AN_OBJECT_IMPL: int
-                            public static WCHAR_BAD_GIOP_VERSION_SENT: int
-                            public static WCHAR_BAD_GIOP_VERSION_RETURNED: int
-                            public static UNSUPPORTED_FORMAT_VERSION: int
-                            public static RMIIIOP_OPTIONAL_DATA_INCOMPATIBLE1: int
-                            public static RMIIIOP_OPTIONAL_DATA_INCOMPATIBLE2: int
-                            public static RMIIIOP_OPTIONAL_DATA_INCOMPATIBLE3: int
-                            public static MISSING_LOCAL_VALUE_IMPL: int
-                            public static INCOMPATIBLE_VALUE_IMPL: int
-                            public static NO_USABLE_PROFILE_2: int
-                            public static DII_LOCAL_OBJECT: int
-                            public static BIO_RESET: int
-                            public static BIO_META_NOT_AVAILABLE: int
-                            public static BIO_GENOMIC_NO_ITERATOR: int
-                            public static PI_OPERATION_NOT_SUPPORTED1: int
-                            public static PI_OPERATION_NOT_SUPPORTED2: int
-                            public static PI_OPERATION_NOT_SUPPORTED3: int
-                            public static PI_OPERATION_NOT_SUPPORTED4: int
-                            public static PI_OPERATION_NOT_SUPPORTED5: int
-                            public static PI_OPERATION_NOT_SUPPORTED6: int
-                            public static PI_OPERATION_NOT_SUPPORTED7: int
-                            public static PI_OPERATION_NOT_SUPPORTED8: int
-                            public static NO_CONNECTION_PRIORITY: int
-                            public static XA_RB: int
-                            public static XA_NOTA: int
-                            public static XA_END_TRUE_ROLLBACK_DEFERRED: int
-                            public static POA_REQUEST_DISCARD: int
-                            public static NO_USABLE_PROFILE_3: int
-                            public static REQUEST_CANCELLED: int
-                            public static POA_DESTROYED: int
-                            public static UNREGISTERED_VALUE_AS_OBJREF: int
-                            public static NO_OBJECT_ADAPTOR: int
-                            public static BIO_NOT_AVAILABLE: int
-                            public static OBJECT_ADAPTER_INACTIVE: int
-                            public static ADAPTER_ACTIVATOR_EXCEPTION: int
-                            public static BAD_SERVANT_TYPE: int
-                            public static NO_DEFAULT_SERVANT: int
-                            public static NO_SERVANT_MANAGER: int
-                            public static BAD_POLICY_INCARNATE: int
-                            public static PI_EXC_COMP_ESTABLISHED: int
-                            public static NULL_SERVANT_RETURNED: int
-                            public static UNKNOWN_USER_EXCEPTION: int
-                            public static UNSUPPORTED_SYSTEM_EXCEPTION: int
-                            public static PI_UNKNOWN_USER_EXCEPTION: int
+                            public static readonly IDL_CONTEXT_NOT_FOUND: int
+                            public static readonly NO_MATCHING_IDL_CONTEXT: int
+                            public static readonly DEP_PREVENT_DESTRUCTION: int
+                            public static readonly DESTROY_INDESTRUCTIBLE: int
+                            public static readonly SHUTDOWN_WAIT_FOR_COMPLETION_DEADLOCK: int
+                            public static readonly BAD_OPERATION_AFTER_SHUTDOWN: int
+                            public static readonly BAD_INVOKE: int
+                            public static readonly BAD_SET_SERVANT_MANAGER: int
+                            public static readonly BAD_ARGUMENTS_CALL: int
+                            public static readonly BAD_CTX_CALL: int
+                            public static readonly BAD_RESULT_CALL: int
+                            public static readonly BAD_SEND: int
+                            public static readonly BAD_POLL_BEFORE: int
+                            public static readonly BAD_POLL_AFTER: int
+                            public static readonly BAD_POLL_SYNC: int
+                            public static readonly INVALID_PI_CALL1: int
+                            public static readonly INVALID_PI_CALL2: int
+                            public static readonly INVALID_PI_CALL3: int
+                            public static readonly INVALID_PI_CALL4: int
+                            public static readonly SERVICE_CONTEXT_ADD_FAILED: int
+                            public static readonly POLICY_FACTORY_REG_FAILED: int
+                            public static readonly CREATE_POA_DESTROY: int
+                            public static readonly PRIORITY_REASSIGN: int
+                            public static readonly XA_START_OUTSIZE: int
+                            public static readonly XA_START_PROTO: int
+                            public static readonly BAD_SERVANT_MANAGER_TYPE: int
+                            public static readonly OPERATION_UNKNOWN_TO_TARGET: int
+                            public static readonly UNABLE_REGISTER_VALUE_FACTORY: int
+                            public static readonly RID_ALREADY_DEFINED: int
+                            public static readonly NAME_USED_IFR: int
+                            public static readonly TARGET_NOT_CONTAINER: int
+                            public static readonly NAME_CLASH: int
+                            public static readonly NOT_SERIALIZABLE: int
+                            public static readonly SO_BAD_SCHEME_NAME: int
+                            public static readonly SO_BAD_ADDRESS: int
+                            public static readonly SO_BAD_SCHEMA_SPECIFIC: int
+                            public static readonly SO_NON_SPECIFIC: int
+                            public static readonly IR_DERIVE_ABS_INT_BASE: int
+                            public static readonly IR_VALUE_SUPPORT: int
+                            public static readonly INCOMPLETE_TYPECODE: int
+                            public static readonly INVALID_OBJECT_ID: int
+                            public static readonly TYPECODE_BAD_NAME: int
+                            public static readonly TYPECODE_BAD_REPID: int
+                            public static readonly TYPECODE_INV_MEMBER: int
+                            public static readonly TC_UNION_DUP_LABEL: int
+                            public static readonly TC_UNION_INCOMPATIBLE: int
+                            public static readonly TC_UNION_BAD_DISC: int
+                            public static readonly SET_EXCEPTION_BAD_ANY: int
+                            public static readonly SET_EXCEPTION_UNLISTED: int
+                            public static readonly NO_CLIENT_WCHAR_CODESET_CTX: int
+                            public static readonly ILLEGAL_SERVICE_CONTEXT: int
+                            public static readonly ENUM_OUT_OF_RANGE: int
+                            public static readonly INVALID_SERVICE_CONTEXT_ID: int
+                            public static readonly RIR_WITH_NULL_OBJECT: int
+                            public static readonly INVALID_COMPONENT_ID: int
+                            public static readonly INVALID_PROFILE_ID: int
+                            public static readonly POLICY_TYPE_DUPLICATE: int
+                            public static readonly BAD_ONEWAY_DEFINITION: int
+                            public static readonly DII_FOR_IMPLICIT_OPERATION: int
+                            public static readonly XA_CALL_INVAL: int
+                            public static readonly UNION_BAD_DISCRIMINATOR: int
+                            public static readonly CTX_ILLEGAL_PROPERTY_NAME: int
+                            public static readonly CTX_ILLEGAL_SEARCH_STRING: int
+                            public static readonly CTX_ILLEGAL_NAME: int
+                            public static readonly CTX_NON_EMPTY: int
+                            public static readonly INVALID_STREAM_FORMAT_VERSION: int
+                            public static readonly NOT_A_VALUEOUTPUTSTREAM: int
+                            public static readonly NOT_A_VALUEINPUTSTREAM: int
+                            public static readonly MARSHALL_INCOMPLETE_TYPECODE: int
+                            public static readonly BAD_MEMBER_TYPECODE: int
+                            public static readonly ILLEGAL_PARAMETER: int
+                            public static readonly CHAR_NOT_IN_CODESET: int
+                            public static readonly PRIORITY_MAP_FAILRE: int
+                            public static readonly NO_USABLE_PROFILE: int
+                            public static readonly PRIORITY_RANGE_RESTRICT: int
+                            public static readonly NO_SERVER_WCHAR_CODESET_CMP: int
+                            public static readonly CODESET_COMPONENT_REQUIRED: int
+                            public static readonly IOR_POLICY_RECONCILE_ERROR: int
+                            public static readonly POLICY_UNKNOWN: int
+                            public static readonly NO_POLICY_FACTORY: int
+                            public static readonly XA_RMERR: int
+                            public static readonly XA_RMFAIL: int
+                            public static readonly NO_IR: int
+                            public static readonly NO_INTERFACE_IN_IR: int
+                            public static readonly UNABLE_LOCATE_VALUE_FACTORY: int
+                            public static readonly SET_RESULT_BEFORE_CTX: int
+                            public static readonly BAD_NVLIST: int
+                            public static readonly NOT_AN_OBJECT_IMPL: int
+                            public static readonly WCHAR_BAD_GIOP_VERSION_SENT: int
+                            public static readonly WCHAR_BAD_GIOP_VERSION_RETURNED: int
+                            public static readonly UNSUPPORTED_FORMAT_VERSION: int
+                            public static readonly RMIIIOP_OPTIONAL_DATA_INCOMPATIBLE1: int
+                            public static readonly RMIIIOP_OPTIONAL_DATA_INCOMPATIBLE2: int
+                            public static readonly RMIIIOP_OPTIONAL_DATA_INCOMPATIBLE3: int
+                            public static readonly MISSING_LOCAL_VALUE_IMPL: int
+                            public static readonly INCOMPATIBLE_VALUE_IMPL: int
+                            public static readonly NO_USABLE_PROFILE_2: int
+                            public static readonly DII_LOCAL_OBJECT: int
+                            public static readonly BIO_RESET: int
+                            public static readonly BIO_META_NOT_AVAILABLE: int
+                            public static readonly BIO_GENOMIC_NO_ITERATOR: int
+                            public static readonly PI_OPERATION_NOT_SUPPORTED1: int
+                            public static readonly PI_OPERATION_NOT_SUPPORTED2: int
+                            public static readonly PI_OPERATION_NOT_SUPPORTED3: int
+                            public static readonly PI_OPERATION_NOT_SUPPORTED4: int
+                            public static readonly PI_OPERATION_NOT_SUPPORTED5: int
+                            public static readonly PI_OPERATION_NOT_SUPPORTED6: int
+                            public static readonly PI_OPERATION_NOT_SUPPORTED7: int
+                            public static readonly PI_OPERATION_NOT_SUPPORTED8: int
+                            public static readonly NO_CONNECTION_PRIORITY: int
+                            public static readonly XA_RB: int
+                            public static readonly XA_NOTA: int
+                            public static readonly XA_END_TRUE_ROLLBACK_DEFERRED: int
+                            public static readonly POA_REQUEST_DISCARD: int
+                            public static readonly NO_USABLE_PROFILE_3: int
+                            public static readonly REQUEST_CANCELLED: int
+                            public static readonly POA_DESTROYED: int
+                            public static readonly UNREGISTERED_VALUE_AS_OBJREF: int
+                            public static readonly NO_OBJECT_ADAPTOR: int
+                            public static readonly BIO_NOT_AVAILABLE: int
+                            public static readonly OBJECT_ADAPTER_INACTIVE: int
+                            public static readonly ADAPTER_ACTIVATOR_EXCEPTION: int
+                            public static readonly BAD_SERVANT_TYPE: int
+                            public static readonly NO_DEFAULT_SERVANT: int
+                            public static readonly NO_SERVANT_MANAGER: int
+                            public static readonly BAD_POLICY_INCARNATE: int
+                            public static readonly PI_EXC_COMP_ESTABLISHED: int
+                            public static readonly NULL_SERVANT_RETURNED: int
+                            public static readonly UNKNOWN_USER_EXCEPTION: int
+                            public static readonly UNSUPPORTED_SYSTEM_EXCEPTION: int
+                            public static readonly PI_UNKNOWN_USER_EXCEPTION: int
                             public constructor(arg0: java.util.logging.Logger)
                             public static get(arg0: com.sun.corba.se.spi.orb.ORB, arg1: java.lang.String | string): com.sun.corba.se.impl.logging.OMGSystemException
                             public static get(arg0: java.lang.String | string): com.sun.corba.se.impl.logging.OMGSystemException

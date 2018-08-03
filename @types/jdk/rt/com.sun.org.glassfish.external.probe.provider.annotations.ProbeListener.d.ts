@@ -9,9 +9,6 @@ declare namespace com {
                                 interface ProbeListener extends java.lang.annotation.Annotation {
                                     value(): string
                                 }
-                                interface ProbeListener$$Lambda extends java.lang.annotation.Annotation {
-                                    (): string
-                                }
                             }
                         }
                     }

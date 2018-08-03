@@ -6,21 +6,21 @@ declare namespace com {
                     namespace internal {
                         namespace parsers {
                             class DOMParserImpl extends com.sun.org.apache.xerces.internal.parsers.AbstractDOMParser implements org.w3c.dom.ls.LSParser , org.w3c.dom.DOMConfiguration {
-                                protected static NAMESPACES: string
-                                protected static VALIDATION_FEATURE: string
-                                protected static XMLSCHEMA: string
-                                protected static XMLSCHEMA_FULL_CHECKING: string
-                                protected static DYNAMIC_VALIDATION: string
-                                protected static NORMALIZE_DATA: string
-                                protected static DISALLOW_DOCTYPE_DECL_FEATURE: string
-                                protected static NAMESPACE_GROWTH: string
-                                protected static TOLERATE_DUPLICATES: string
-                                protected static SYMBOL_TABLE: string
-                                protected static PSVI_AUGMENT: string
+                                protected static readonly NAMESPACES: string
+                                protected static readonly VALIDATION_FEATURE: string
+                                protected static readonly XMLSCHEMA: string
+                                protected static readonly XMLSCHEMA_FULL_CHECKING: string
+                                protected static readonly DYNAMIC_VALIDATION: string
+                                protected static readonly NORMALIZE_DATA: string
+                                protected static readonly DISALLOW_DOCTYPE_DECL_FEATURE: string
+                                protected static readonly NAMESPACE_GROWTH: string
+                                protected static readonly TOLERATE_DUPLICATES: string
+                                protected static readonly SYMBOL_TABLE: string
+                                protected static readonly PSVI_AUGMENT: string
                                 protected fNamespaceDeclarations: boolean
                                 protected fSchemaType: string
                                 protected fBusy: boolean
-                                protected static DEBUG: boolean
+                                protected static readonly DEBUG: boolean
                                 public constructor(arg0: com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration, arg1: java.lang.String | string)
                                 public constructor(arg0: com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration)
                                 public constructor(arg0: com.sun.org.apache.xerces.internal.util.SymbolTable)

@@ -94,7 +94,7 @@ declare namespace jdk {
                     public G$toISOString(): java.lang.Object
                     public S$toISOString(arg0: java.lang.Object): void
                     public G$toJSON(): java.lang.Object
-                    public public S$toJSON(arg0: java.lang.Object): void
+                    public static public S$toJSON(arg0: java.lang.Object): void
                     public getClassName(): string
                     public static class: java.lang.Class<any>
                 }

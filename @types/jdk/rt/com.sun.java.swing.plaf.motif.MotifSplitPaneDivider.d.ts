@@ -5,9 +5,9 @@ declare namespace com {
                 namespace plaf {
                     namespace motif {
                         class MotifSplitPaneDivider extends javax.swing.plaf.basic.BasicSplitPaneDivider {
-                            public static minimumThumbSize: int
-                            public static defaultDividerSize: int
-                            protected static pad: int
+                            public static readonly minimumThumbSize: int
+                            public static readonly defaultDividerSize: int
+                            protected static readonly pad: int
                             protected hThumbWidth: int
                             protected hThumbHeight: int
                             protected vThumbWidth: int

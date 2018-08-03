@@ -6,8 +6,8 @@ declare namespace com {
                     namespace internal {
                         namespace parsers {
                             abstract class XMLParser {
-                                protected static ENTITY_RESOLVER: string
-                                protected static ERROR_HANDLER: string
+                                protected static readonly ENTITY_RESOLVER: string
+                                protected static readonly ERROR_HANDLER: string
                                 protected fConfiguration: com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration
                                 public getFeature(arg0: java.lang.String | string): boolean
                                 protected constructor(arg0: com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration)

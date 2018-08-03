@@ -4,11 +4,14 @@ declare namespace jdk {
             namespace codegen {
                 abstract class FoldConstants$ConstantEvaluator<T extends jdk.nashorn.internal.ir.Node> {
                     protected parent: T
-                    protected token: long
-                    protected finish: int
+                    protected readonly token: long
+                    protected readonly finish: int
                     protected constructor(arg0: T)
-                    protected eval(): jdk.nashorn.internal.ir.LiteralNode<any>
+                    protected abstract eval(): jdk.nashorn.internal.ir.LiteralNode<any>
                     public static class: java.lang.Class<any>
+                }
+                interface FoldConstants$ConstantEvaluator$$Lambda<T extends jdk.nashorn.internal.ir.Node> {
+                    (): jdk.nashorn.internal.ir.LiteralNode<any>
                 }
             }
         }

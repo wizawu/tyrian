@@ -14,13 +14,13 @@ declare namespace com {
                                         public initStream(): java.io.InputStream
                                         protected parse(): void
                                         public lastBodyPartFound(): boolean
-                                        public getNextPart(arg0: java.io.InputStream, arg1: byte[], arg2: com.sun.xml.internal.messaging.saaj.packaging.mime.internet.SharedInputStream): com.sun.xml.internal.messaging.saaj.packaging.mime.internet.MimeBodyPart
-                                        public parse(arg0: java.io.InputStream, arg1: byte[], arg2: com.sun.xml.internal.messaging.saaj.packaging.mime.internet.SharedInputStream): boolean
-                                        public readNext(arg0: java.io.InputStream, arg1: byte[], arg2: int, arg3: java.util.BitSet, arg4: long[], arg5: com.sun.xml.internal.messaging.saaj.packaging.mime.internet.SharedInputStream): int
-                                        public find(arg0: java.io.InputStream, arg1: byte[], arg2: com.sun.xml.internal.messaging.saaj.packaging.mime.internet.SharedInputStream): boolean
-                                        public find(arg0: java.io.InputStream, arg1: byte[], arg2: long[], arg3: com.sun.xml.internal.messaging.saaj.util.ByteOutputStream, arg4: com.sun.xml.internal.messaging.saaj.packaging.mime.internet.SharedInputStream): boolean
-                                        public writeTo(arg0: java.io.OutputStream): void
-                                        public setInputStream(arg0: java.io.InputStream): void
+                                        public getNextPart(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: byte[], arg2: com.sun.xml.internal.messaging.saaj.packaging.mime.internet.SharedInputStream): com.sun.xml.internal.messaging.saaj.packaging.mime.internet.MimeBodyPart
+                                        public parse(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: byte[], arg2: com.sun.xml.internal.messaging.saaj.packaging.mime.internet.SharedInputStream): boolean
+                                        public readNext(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: byte[], arg2: int, arg3: java.util.BitSet, arg4: long[], arg5: com.sun.xml.internal.messaging.saaj.packaging.mime.internet.SharedInputStream): int
+                                        public find(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: byte[], arg2: com.sun.xml.internal.messaging.saaj.packaging.mime.internet.SharedInputStream): boolean
+                                        public find(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: byte[], arg2: long[], arg3: com.sun.xml.internal.messaging.saaj.util.ByteOutputStream, arg4: com.sun.xml.internal.messaging.saaj.packaging.mime.internet.SharedInputStream): boolean
+                                        public writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                                        public setInputStream(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
                                         public getInputStream(): java.io.InputStream
                                         public setBoundary(arg0: java.lang.String | string): void
                                         public getBoundary(): string

@@ -1,17 +1,17 @@
 declare namespace java {
     namespace math {
         class BigDecimal extends java.lang.Number implements java.lang.Comparable<java.math.BigDecimal> {
-            public static ZERO: java.math.BigDecimal
-            public static ONE: java.math.BigDecimal
-            public static TEN: java.math.BigDecimal
-            public static ROUND_UP: int
-            public static ROUND_DOWN: int
-            public static ROUND_CEILING: int
-            public static ROUND_FLOOR: int
-            public static ROUND_HALF_UP: int
-            public static ROUND_HALF_DOWN: int
-            public static ROUND_HALF_EVEN: int
-            public static ROUND_UNNECESSARY: int
+            public static readonly ZERO: java.math.BigDecimal
+            public static readonly ONE: java.math.BigDecimal
+            public static readonly TEN: java.math.BigDecimal
+            public static readonly ROUND_UP: int
+            public static readonly ROUND_DOWN: int
+            public static readonly ROUND_CEILING: int
+            public static readonly ROUND_FLOOR: int
+            public static readonly ROUND_HALF_UP: int
+            public static readonly ROUND_HALF_DOWN: int
+            public static readonly ROUND_HALF_EVEN: int
+            public static readonly ROUND_UNNECESSARY: int
             public constructor(arg0: char[], arg1: int, arg2: int)
             public constructor(arg0: char[], arg1: int, arg2: int, arg3: java.math.MathContext)
             public constructor(arg0: char[])

@@ -14,8 +14,11 @@ declare namespace com {
                             public isNonNullAsyncHandlerGiven(): boolean
                             public setNonNullAsyncHandlerGiven(arg0: boolean): void
                             public run(): void
-                            public do_run(): void
+                            public abstract do_run(): void
                             public static class: java.lang.Class<any>
+                        }
+                        interface AsyncInvoker$$Lambda implements java.lang.Runnable {
+                            (): void
                         }
                     }
                 }

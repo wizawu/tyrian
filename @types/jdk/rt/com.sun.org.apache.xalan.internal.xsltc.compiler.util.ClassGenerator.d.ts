@@ -8,7 +8,7 @@ declare namespace com {
                             namespace compiler {
                                 namespace util {
                                     class ClassGenerator extends com.sun.org.apache.bcel.internal.generic.ClassGen {
-                                        protected static TRANSLET_INDEX: int
+                                        protected static readonly TRANSLET_INDEX: int
                                         protected static INVALID_INDEX: int
                                         public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: int, arg4: java.lang.String[], arg5: com.sun.org.apache.xalan.internal.xsltc.compiler.Stylesheet)
                                         public getParser(): com.sun.org.apache.xalan.internal.xsltc.compiler.Parser

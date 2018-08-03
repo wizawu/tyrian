@@ -1,19 +1,19 @@
 declare namespace java {
     namespace awt {
         class BorderLayout implements java.awt.LayoutManager2 , java.io.Serializable {
-            public static NORTH: string
-            public static SOUTH: string
-            public static EAST: string
-            public static WEST: string
-            public static CENTER: string
-            public static BEFORE_FIRST_LINE: string
-            public static AFTER_LAST_LINE: string
-            public static BEFORE_LINE_BEGINS: string
-            public static AFTER_LINE_ENDS: string
-            public static PAGE_START: string
-            public static PAGE_END: string
-            public static LINE_START: string
-            public static LINE_END: string
+            public static readonly NORTH: string
+            public static readonly SOUTH: string
+            public static readonly EAST: string
+            public static readonly WEST: string
+            public static readonly CENTER: string
+            public static readonly BEFORE_FIRST_LINE: string
+            public static readonly AFTER_LAST_LINE: string
+            public static readonly BEFORE_LINE_BEGINS: string
+            public static readonly AFTER_LINE_ENDS: string
+            public static readonly PAGE_START: string
+            public static readonly PAGE_END: string
+            public static readonly LINE_START: string
+            public static readonly LINE_END: string
             public constructor()
             public constructor(arg0: int, arg1: int)
             public getHgap(): int

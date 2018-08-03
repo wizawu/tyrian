@@ -5,16 +5,16 @@ declare namespace java {
                 public constructor()
                 public static supplyAsync<U>(arg0: java.util.function$.Supplier<U> | java.util.function$.Supplier$$Lambda<U>): java.util.concurrent.CompletableFuture<U>
                 public static supplyAsync<U>(arg0: java.util.function$.Supplier<U> | java.util.function$.Supplier$$Lambda<U>, arg1: java.util.concurrent.Executor | java.util.concurrent.Executor$$Lambda): java.util.concurrent.CompletableFuture<U>
-                public static runAsync(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda): java.util.concurrent.CompletableFuture<java.lang.Void>
-                public static runAsync(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda, arg1: java.util.concurrent.Executor | java.util.concurrent.Executor$$Lambda): java.util.concurrent.CompletableFuture<java.lang.Void>
+                public static runAsync<U>(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda): java.util.concurrent.CompletableFuture<java.lang.Void>
+                public static runAsync<U>(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda, arg1: java.util.concurrent.Executor | java.util.concurrent.Executor$$Lambda): java.util.concurrent.CompletableFuture<java.lang.Void>
                 public static completedFuture<U>(arg0: U): java.util.concurrent.CompletableFuture<U>
-                public isDone(): boolean
-                public get(): T
-                public get(arg0: long, arg1: java.util.concurrent.TimeUnit): T
-                public join(): T
-                public getNow(arg0: T): T
-                public complete(arg0: T): boolean
-                public completeExceptionally(arg0: java.lang.Throwable): boolean
+                public isDone<U>(): boolean
+                public get<U>(): T
+                public get<U>(arg0: long, arg1: java.util.concurrent.TimeUnit): T
+                public join<U>(): T
+                public getNow<U>(arg0: T): T
+                public complete<U>(arg0: T): boolean
+                public completeExceptionally<U>(arg0: java.lang.Throwable): boolean
                 public thenApply<U>(arg0: java.util.function$.Function<T, U>): java.util.concurrent.CompletableFuture<U>
                 public thenApplyAsync<U>(arg0: java.util.function$.Function<T, U>): java.util.concurrent.CompletableFuture<U>
                 public thenApplyAsync<U>(arg0: java.util.function$.Function<T, U>, arg1: java.util.concurrent.Executor | java.util.concurrent.Executor$$Lambda): java.util.concurrent.CompletableFuture<U>

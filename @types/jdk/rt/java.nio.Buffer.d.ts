@@ -13,11 +13,11 @@ declare namespace java {
             public rewind(): java.nio.Buffer
             public remaining(): int
             public hasRemaining(): boolean
-            public isReadOnly(): boolean
-            public hasArray(): boolean
-            public array(): java.lang.Object
-            public arrayOffset(): int
-            public isDirect(): boolean
+            public abstract isReadOnly(): boolean
+            public abstract hasArray(): boolean
+            public abstract array(): java.lang.Object
+            public abstract arrayOffset(): int
+            public abstract isDirect(): boolean
             public static class: java.lang.Class<any>
         }
     }

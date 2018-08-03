@@ -2,24 +2,24 @@ declare namespace sun {
     namespace awt {
         namespace X11 {
             class XBaseWindow {
-                public static PARENT_WINDOW: string
-                public static BOUNDS: string
-                public static OVERRIDE_REDIRECT: string
-                public static EVENT_MASK: string
-                public static VALUE_MASK: string
-                public static BORDER_PIXEL: string
-                public static COLORMAP: string
-                public static DEPTH: string
-                public static VISUAL_CLASS: string
-                public static VISUAL: string
-                public static EMBEDDED: string
-                public static DELAYED: string
-                public static PARENT: string
-                public static BACKGROUND_PIXMAP: string
-                public static VISIBLE: string
-                public static SAVE_UNDER: string
-                public static BACKING_STORE: string
-                public static BIT_GRAVITY: string
+                public static readonly PARENT_WINDOW: string
+                public static readonly BOUNDS: string
+                public static readonly OVERRIDE_REDIRECT: string
+                public static readonly EVENT_MASK: string
+                public static readonly VALUE_MASK: string
+                public static readonly BORDER_PIXEL: string
+                public static readonly COLORMAP: string
+                public static readonly DEPTH: string
+                public static readonly VISUAL_CLASS: string
+                public static readonly VISUAL: string
+                public static readonly EMBEDDED: string
+                public static readonly DELAYED: string
+                public static readonly PARENT: string
+                public static readonly BACKGROUND_PIXMAP: string
+                public static readonly VISIBLE: string
+                public static readonly SAVE_UNDER: string
+                public static readonly BACKING_STORE: string
+                public static readonly BIT_GRAVITY: string
                 protected state_lock: sun.awt.X11.XBaseWindow$StateLock
                 protected init(arg0: long, arg1: java.awt.Rectangle): void
                 protected preInit(): void

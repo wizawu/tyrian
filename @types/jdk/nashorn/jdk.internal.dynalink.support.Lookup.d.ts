@@ -3,7 +3,7 @@ declare namespace jdk {
         namespace dynalink {
             namespace support {
                 class Lookup {
-                    public static PUBLIC: jdk.internal.dynalink.support.Lookup
+                    public static readonly PUBLIC: jdk.internal.dynalink.support.Lookup
                     public constructor(arg0: java.lang.invoke.MethodHandles$Lookup)
                     public unreflect(arg0: java.lang.reflect.Method): java.lang.invoke.MethodHandle
                     public static unreflect(arg0: java.lang.invoke.MethodHandles$Lookup, arg1: java.lang.reflect.Method): java.lang.invoke.MethodHandle

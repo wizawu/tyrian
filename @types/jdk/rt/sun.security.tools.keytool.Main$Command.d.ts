@@ -3,26 +3,26 @@ declare namespace sun {
         namespace tools {
             namespace keytool {
                 class Main$Command extends java.lang.Enum<sun.security.tools.keytool.Main$Command> {
-                    public static CERTREQ: sun.security.tools.keytool.Main$Command
-                    public static CHANGEALIAS: sun.security.tools.keytool.Main$Command
-                    public static DELETE: sun.security.tools.keytool.Main$Command
-                    public static EXPORTCERT: sun.security.tools.keytool.Main$Command
-                    public static GENKEYPAIR: sun.security.tools.keytool.Main$Command
-                    public static GENSECKEY: sun.security.tools.keytool.Main$Command
-                    public static GENCERT: sun.security.tools.keytool.Main$Command
-                    public static IMPORTCERT: sun.security.tools.keytool.Main$Command
-                    public static IMPORTPASS: sun.security.tools.keytool.Main$Command
-                    public static IMPORTKEYSTORE: sun.security.tools.keytool.Main$Command
-                    public static KEYPASSWD: sun.security.tools.keytool.Main$Command
-                    public static LIST: sun.security.tools.keytool.Main$Command
-                    public static PRINTCERT: sun.security.tools.keytool.Main$Command
-                    public static PRINTCERTREQ: sun.security.tools.keytool.Main$Command
-                    public static PRINTCRL: sun.security.tools.keytool.Main$Command
-                    public static STOREPASSWD: sun.security.tools.keytool.Main$Command
-                    public static KEYCLONE: sun.security.tools.keytool.Main$Command
-                    public static SELFCERT: sun.security.tools.keytool.Main$Command
-                    public static GENCRL: sun.security.tools.keytool.Main$Command
-                    public static IDENTITYDB: sun.security.tools.keytool.Main$Command
+                    public static readonly CERTREQ: sun.security.tools.keytool.Main$Command
+                    public static readonly CHANGEALIAS: sun.security.tools.keytool.Main$Command
+                    public static readonly DELETE: sun.security.tools.keytool.Main$Command
+                    public static readonly EXPORTCERT: sun.security.tools.keytool.Main$Command
+                    public static readonly GENKEYPAIR: sun.security.tools.keytool.Main$Command
+                    public static readonly GENSECKEY: sun.security.tools.keytool.Main$Command
+                    public static readonly GENCERT: sun.security.tools.keytool.Main$Command
+                    public static readonly IMPORTCERT: sun.security.tools.keytool.Main$Command
+                    public static readonly IMPORTPASS: sun.security.tools.keytool.Main$Command
+                    public static readonly IMPORTKEYSTORE: sun.security.tools.keytool.Main$Command
+                    public static readonly KEYPASSWD: sun.security.tools.keytool.Main$Command
+                    public static readonly LIST: sun.security.tools.keytool.Main$Command
+                    public static readonly PRINTCERT: sun.security.tools.keytool.Main$Command
+                    public static readonly PRINTCERTREQ: sun.security.tools.keytool.Main$Command
+                    public static readonly PRINTCRL: sun.security.tools.keytool.Main$Command
+                    public static readonly STOREPASSWD: sun.security.tools.keytool.Main$Command
+                    public static readonly KEYCLONE: sun.security.tools.keytool.Main$Command
+                    public static readonly SELFCERT: sun.security.tools.keytool.Main$Command
+                    public static readonly GENCRL: sun.security.tools.keytool.Main$Command
+                    public static readonly IDENTITYDB: sun.security.tools.keytool.Main$Command
                     public static values(): sun.security.tools.keytool.Main$Command[]
                     public static valueOf(arg0: java.lang.String | string): sun.security.tools.keytool.Main$Command
                     public toString(): string

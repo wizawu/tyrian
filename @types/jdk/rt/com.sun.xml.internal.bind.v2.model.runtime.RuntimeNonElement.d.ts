@@ -9,9 +9,6 @@ declare namespace com {
                                 interface RuntimeNonElement extends com.sun.xml.internal.bind.v2.model.core.NonElement<java.lang.reflect.Type, java.lang.Class> , com.sun.xml.internal.bind.v2.model.runtime.RuntimeTypeInfo {
                                     getTransducer<V>(): com.sun.xml.internal.bind.v2.runtime.Transducer<V>
                                 }
-                                interface RuntimeNonElement$$Lambda extends com.sun.xml.internal.bind.v2.model.core.NonElement<java.lang.reflect.Type, java.lang.Class> , com.sun.xml.internal.bind.v2.model.runtime.RuntimeTypeInfo {
-                                    getTransducer<V>(): com.sun.xml.internal.bind.v2.runtime.Transducer<V>
-                                }
                             }
                         }
                     }

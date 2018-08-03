@@ -6,10 +6,10 @@ declare namespace com {
                     namespace internal {
                         namespace compiler {
                             class XPathParser {
-                                public static CONTINUE_AFTER_FATAL_ERROR: string
-                                protected static FILTER_MATCH_FAILED: int
-                                protected static FILTER_MATCH_PRIMARY: int
-                                protected static FILTER_MATCH_PREDICATES: int
+                                public static readonly CONTINUE_AFTER_FATAL_ERROR: string
+                                protected static readonly FILTER_MATCH_FAILED: int
+                                protected static readonly FILTER_MATCH_PRIMARY: int
+                                protected static readonly FILTER_MATCH_PREDICATES: int
                                 public constructor(arg0: javax.xml.transform.ErrorListener, arg1: javax.xml.transform.SourceLocator)
                                 public initXPath(arg0: com.sun.org.apache.xpath.internal.compiler.Compiler, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.utils.PrefixResolver): void
                                 public initMatchPattern(arg0: com.sun.org.apache.xpath.internal.compiler.Compiler, arg1: java.lang.String | string, arg2: com.sun.org.apache.xml.internal.utils.PrefixResolver): void

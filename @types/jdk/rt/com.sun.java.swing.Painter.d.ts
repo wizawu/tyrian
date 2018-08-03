@@ -4,6 +4,8 @@ declare namespace com {
             namespace swing {
                 interface Painter<T> extends javax.swing.Painter<T> {
                 }
+                interface Painter$$Lambda<T> extends javax.swing.Painter<T> {
+                }
             }
         }
     }

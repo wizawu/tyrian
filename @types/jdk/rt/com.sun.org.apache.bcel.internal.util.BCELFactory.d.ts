@@ -14,7 +14,7 @@ declare namespace com {
                                 public visitAllocationInstruction(arg0: com.sun.org.apache.bcel.internal.generic.AllocationInstruction): void
                                 public visitLDC(arg0: com.sun.org.apache.bcel.internal.generic.LDC): void
                                 public visitLDC2_W(arg0: com.sun.org.apache.bcel.internal.generic.LDC2_W): void
-                                public visitConstantPushInstruction(arg0: com.sun.org.apache.bcel.internal.generic.ConstantPushInstruction | com.sun.org.apache.bcel.internal.generic.ConstantPushInstruction$$Lambda): void
+                                public visitConstantPushInstruction(arg0: com.sun.org.apache.bcel.internal.generic.ConstantPushInstruction): void
                                 public visitINSTANCEOF(arg0: com.sun.org.apache.bcel.internal.generic.INSTANCEOF): void
                                 public visitCHECKCAST(arg0: com.sun.org.apache.bcel.internal.generic.CHECKCAST): void
                                 public visitReturnInstruction(arg0: com.sun.org.apache.bcel.internal.generic.ReturnInstruction): void

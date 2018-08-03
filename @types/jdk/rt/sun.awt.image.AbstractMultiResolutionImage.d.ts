@@ -8,8 +8,11 @@ declare namespace sun {
                 public getSource(): java.awt.image.ImageProducer
                 public getGraphics(): java.awt.Graphics
                 public getProperty(arg0: java.lang.String | string, arg1: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): java.lang.Object
-                protected getBaseImage(): java.awt.Image
+                protected abstract getBaseImage(): java.awt.Image
                 public static class: java.lang.Class<any>
+            }
+            interface AbstractMultiResolutionImage$$Lambda extends java.awt.Image implements sun.awt.image.MultiResolutionImage {
+                (): java.awt.Image
             }
         }
     }

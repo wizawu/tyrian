@@ -1,11 +1,11 @@
 declare namespace java {
     namespace util {
         class ResourceBundle$Control {
-            public static FORMAT_DEFAULT: java.util.List<java.lang.String>
-            public static FORMAT_CLASS: java.util.List<java.lang.String>
-            public static FORMAT_PROPERTIES: java.util.List<java.lang.String>
-            public static TTL_DONT_CACHE: long
-            public static TTL_NO_EXPIRATION_CONTROL: long
+            public static readonly FORMAT_DEFAULT: java.util.List<java.lang.String>
+            public static readonly FORMAT_CLASS: java.util.List<java.lang.String>
+            public static readonly FORMAT_PROPERTIES: java.util.List<java.lang.String>
+            public static readonly TTL_DONT_CACHE: long
+            public static readonly TTL_NO_EXPIRATION_CONTROL: long
             protected constructor()
             public static getControl(arg0: java.util.List<java.lang.String>): java.util.ResourceBundle$Control
             public static getNoFallbackControl(arg0: java.util.List<java.lang.String>): java.util.ResourceBundle$Control

@@ -9,8 +9,11 @@ declare namespace javax {
                 public getMessage(): byte[]
                 public getStatus(): int
                 public getLength(): int
-                public clone(): java.lang.Object
+                public abstract clone(): java.lang.Object
                 public static class: java.lang.Class<any>
+            }
+            interface MidiMessage$$Lambda implements java.lang.Cloneable {
+                (): java.lang.Object
             }
         }
     }

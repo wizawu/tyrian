@@ -4,8 +4,8 @@ declare namespace sun {
             class SunPKCS11 extends java.security.AuthProvider {
                 public constructor()
                 public constructor(arg0: java.lang.String | string)
-                public constructor(arg0: java.io.InputStream)
-                public constructor(arg0: java.lang.String | string, arg1: java.io.InputStream)
+                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
+                public constructor(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda)
                 public equals(arg0: java.lang.Object): boolean
                 public hashCode(): int
                 public login(arg0: javax.security.auth.Subject, arg1: javax.security.auth.callback.CallbackHandler | javax.security.auth.callback.CallbackHandler$$Lambda): void

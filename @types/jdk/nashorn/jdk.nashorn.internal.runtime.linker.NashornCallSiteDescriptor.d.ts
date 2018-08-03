@@ -4,20 +4,20 @@ declare namespace jdk {
             namespace runtime {
                 namespace linker {
                     class NashornCallSiteDescriptor extends jdk.internal.dynalink.support.AbstractCallSiteDescriptor {
-                        public static CALLSITE_SCOPE: int
-                        public static CALLSITE_STRICT: int
-                        public static CALLSITE_FAST_SCOPE: int
-                        public static CALLSITE_OPTIMISTIC: int
-                        public static CALLSITE_APPLY_TO_CALL: int
-                        public static CALLSITE_DECLARE: int
-                        public static CALLSITE_PROFILE: int
-                        public static CALLSITE_TRACE: int
-                        public static CALLSITE_TRACE_MISSES: int
-                        public static CALLSITE_TRACE_ENTEREXIT: int
-                        public static CALLSITE_TRACE_VALUES: int
-                        public static CALLSITE_PROGRAM_POINT_SHIFT: int
-                        public static MAX_PROGRAM_POINT_VALUE: int
-                        public static FLAGS_MASK: int
+                        public static readonly CALLSITE_SCOPE: int
+                        public static readonly CALLSITE_STRICT: int
+                        public static readonly CALLSITE_FAST_SCOPE: int
+                        public static readonly CALLSITE_OPTIMISTIC: int
+                        public static readonly CALLSITE_APPLY_TO_CALL: int
+                        public static readonly CALLSITE_DECLARE: int
+                        public static readonly CALLSITE_PROFILE: int
+                        public static readonly CALLSITE_TRACE: int
+                        public static readonly CALLSITE_TRACE_MISSES: int
+                        public static readonly CALLSITE_TRACE_ENTEREXIT: int
+                        public static readonly CALLSITE_TRACE_VALUES: int
+                        public static readonly CALLSITE_PROGRAM_POINT_SHIFT: int
+                        public static readonly MAX_PROGRAM_POINT_VALUE: int
+                        public static readonly FLAGS_MASK: int
                         public static toString(arg0: int): string
                         public static get(arg0: java.lang.invoke.MethodHandles$Lookup, arg1: java.lang.String | string, arg2: java.lang.invoke.MethodType, arg3: int): jdk.nashorn.internal.runtime.linker.NashornCallSiteDescriptor
                         public getNameTokenCount(): int

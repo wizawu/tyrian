@@ -13,8 +13,8 @@ declare namespace com {
                             protected _namespacePrefixes: int[]
                             protected _namespacePrefixesIndex: int
                             public constructor()
-                            public parse(arg0: org.w3c.dom.Document, arg1: java.io.InputStream): void
-                            protected parse(arg0: java.io.InputStream): void
+                            public parse(arg0: org.w3c.dom.Document, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
+                            protected parse(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
                             protected resetOnError(): void
                             protected parse(): void
                             protected processDII(): void

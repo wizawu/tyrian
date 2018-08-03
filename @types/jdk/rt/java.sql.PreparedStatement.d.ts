@@ -17,9 +17,9 @@ declare namespace java {
             setDate(arg0: int, arg1: java.sql.Date): void
             setTime(arg0: int, arg1: java.sql.Time): void
             setTimestamp(arg0: int, arg1: java.sql.Timestamp): void
-            setAsciiStream(arg0: int, arg1: java.io.InputStream, arg2: int): void
-            setUnicodeStream(arg0: int, arg1: java.io.InputStream, arg2: int): void
-            setBinaryStream(arg0: int, arg1: java.io.InputStream, arg2: int): void
+            setAsciiStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
+            setUnicodeStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
+            setBinaryStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
             clearParameters(): void
             setObject(arg0: int, arg1: java.lang.Object, arg2: int): void
             setObject(arg0: int, arg1: java.lang.Object): void
@@ -42,19 +42,19 @@ declare namespace java {
             setNCharacterStream(arg0: int, arg1: java.io.Reader, arg2: long): void
             setNClob(arg0: int, arg1: java.sql.NClob): void
             setClob(arg0: int, arg1: java.io.Reader, arg2: long): void
-            setBlob(arg0: int, arg1: java.io.InputStream, arg2: long): void
+            setBlob(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
             setNClob(arg0: int, arg1: java.io.Reader, arg2: long): void
             setSQLXML(arg0: int, arg1: java.sql.SQLXML): void
             setObject(arg0: int, arg1: java.lang.Object, arg2: int, arg3: int): void
-            setAsciiStream(arg0: int, arg1: java.io.InputStream, arg2: long): void
-            setBinaryStream(arg0: int, arg1: java.io.InputStream, arg2: long): void
+            setAsciiStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
+            setBinaryStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
             setCharacterStream(arg0: int, arg1: java.io.Reader, arg2: long): void
-            setAsciiStream(arg0: int, arg1: java.io.InputStream): void
-            setBinaryStream(arg0: int, arg1: java.io.InputStream): void
+            setAsciiStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
+            setBinaryStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
             setCharacterStream(arg0: int, arg1: java.io.Reader): void
             setNCharacterStream(arg0: int, arg1: java.io.Reader): void
             setClob(arg0: int, arg1: java.io.Reader): void
-            setBlob(arg0: int, arg1: java.io.InputStream): void
+            setBlob(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
             setNClob(arg0: int, arg1: java.io.Reader): void
             setObject(arg0: int, arg1: java.lang.Object, arg2: java.sql.SQLType, arg3: int): void
             setObject(arg0: int, arg1: java.lang.Object, arg2: java.sql.SQLType): void

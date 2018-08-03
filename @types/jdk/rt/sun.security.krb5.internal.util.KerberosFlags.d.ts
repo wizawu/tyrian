@@ -4,7 +4,7 @@ declare namespace sun {
             namespace internal {
                 namespace util {
                     class KerberosFlags {
-                        protected static BITS_PER_UNIT: int
+                        protected static readonly BITS_PER_UNIT: int
                         public constructor(arg0: int)
                         public constructor(arg0: int, arg1: byte[])
                         public constructor(arg0: boolean[])

@@ -5,7 +5,7 @@ declare namespace com {
                 namespace fastinfoset {
                     namespace algorithm {
                         class BuiltInEncodingAlgorithmState {
-                            public static INITIAL_LENGTH: int
+                            public static readonly INITIAL_LENGTH: int
                             public booleanArray: boolean[]
                             public shortArray: short[]
                             public intArray: int[]

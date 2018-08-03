@@ -9,7 +9,7 @@ declare namespace com {
                             public hashCode(): int
                             public getTemplate(): com.sun.corba.se.spi.ior.ObjectKeyTemplate
                             public getId(): com.sun.corba.se.spi.ior.ObjectId
-                            public constructor(arg0: com.sun.corba.se.spi.ior.ObjectKeyTemplate, arg1: com.sun.corba.se.spi.ior.ObjectId | com.sun.corba.se.spi.ior.ObjectId$$Lambda)
+                            public constructor(arg0: com.sun.corba.se.spi.ior.ObjectKeyTemplate, arg1: com.sun.corba.se.spi.ior.ObjectId)
                             public write(arg0: org.omg.CORBA_2_3.portable.OutputStream): void
                             public getBytes(arg0: org.omg.CORBA.ORB): byte[]
                             public getServerRequestDispatcher(arg0: com.sun.corba.se.spi.orb.ORB): com.sun.corba.se.spi.protocol.CorbaServerRequestDispatcher

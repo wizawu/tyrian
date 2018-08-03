@@ -7,7 +7,7 @@ declare namespace com {
                         namespace xsltc {
                             namespace compiler {
                                 class RelationalExpr extends com.sun.org.apache.xalan.internal.xsltc.compiler.Expression {
-                                    public constructor(arg0: int, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression, arg2: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression)
+                                    public constructor(arg0: int, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression | com.sun.org.apache.xalan.internal.xsltc.compiler.Expression$$Lambda, arg2: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression | com.sun.org.apache.xalan.internal.xsltc.compiler.Expression$$Lambda)
                                     public setParser(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Parser): void
                                     public hasPositionCall(): boolean
                                     public hasLastCall(): boolean

@@ -12,6 +12,7 @@ declare namespace com {
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
                     protected finalize(): void
+                    public static class: java.lang.Class<any>
                 }
             }
         }

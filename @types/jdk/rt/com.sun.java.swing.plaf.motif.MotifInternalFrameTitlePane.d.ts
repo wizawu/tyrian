@@ -5,7 +5,7 @@ declare namespace com {
                 namespace plaf {
                     namespace motif {
                         class MotifInternalFrameTitlePane extends javax.swing.plaf.basic.BasicInternalFrameTitlePane implements java.awt.LayoutManager , java.awt.event.ActionListener , java.beans.PropertyChangeListener {
-                            public static BUTTON_SIZE: int
+                            public static readonly BUTTON_SIZE: int
                             public constructor(arg0: javax.swing.JInternalFrame)
                             protected installDefaults(): void
                             protected uninstallListeners(): void

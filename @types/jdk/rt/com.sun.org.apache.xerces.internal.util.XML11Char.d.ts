@@ -6,15 +6,15 @@ declare namespace com {
                     namespace internal {
                         namespace util {
                             class XML11Char {
-                                public static MASK_XML11_VALID: int
-                                public static MASK_XML11_SPACE: int
-                                public static MASK_XML11_NAME_START: int
-                                public static MASK_XML11_NAME: int
-                                public static MASK_XML11_CONTROL: int
-                                public static MASK_XML11_CONTENT: int
-                                public static MASK_XML11_NCNAME_START: int
-                                public static MASK_XML11_NCNAME: int
-                                public static MASK_XML11_CONTENT_INTERNAL: int
+                                public static readonly MASK_XML11_VALID: int
+                                public static readonly MASK_XML11_SPACE: int
+                                public static readonly MASK_XML11_NAME_START: int
+                                public static readonly MASK_XML11_NAME: int
+                                public static readonly MASK_XML11_CONTROL: int
+                                public static readonly MASK_XML11_CONTENT: int
+                                public static readonly MASK_XML11_NCNAME_START: int
+                                public static readonly MASK_XML11_NCNAME: int
+                                public static readonly MASK_XML11_CONTENT_INTERNAL: int
                                 public constructor()
                                 public static isXML11Space(arg0: int): boolean
                                 public static isXML11Valid(arg0: int): boolean

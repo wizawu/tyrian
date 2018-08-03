@@ -9,7 +9,7 @@ declare namespace com {
                                 protected _localName: string
                                 protected _namespaceURI: string
                                 protected _prefix: string
-                                public static S_XMLNAMESPACEURI: string
+                                public static readonly S_XMLNAMESPACEURI: string
                                 public constructor()
                                 public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
                                 public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: boolean)

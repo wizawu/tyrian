@@ -4,8 +4,8 @@ declare namespace com {
             namespace internal {
                 namespace fastinfoset {
                     abstract class Decoder implements com.sun.xml.internal.org.jvnet.fastinfoset.FastInfosetParser {
-                        public static STRING_INTERNING_SYSTEM_PROPERTY: string
-                        public static BUFFER_SIZE_SYSTEM_PROPERTY: string
+                        public static readonly STRING_INTERNING_SYSTEM_PROPERTY: string
+                        public static readonly BUFFER_SIZE_SYSTEM_PROPERTY: string
                         protected _parseFragments: boolean
                         protected _needForceStreamClose: boolean
                         protected _notations: java.util.List
@@ -32,10 +32,10 @@ declare namespace com {
                         protected _charBuffer: char[]
                         protected _charBufferLength: int
                         protected _duplicateAttributeVerifier: com.sun.xml.internal.fastinfoset.util.DuplicateAttributeVerifier
-                        protected static NISTRING_STRING: int
-                        protected static NISTRING_INDEX: int
-                        protected static NISTRING_ENCODING_ALGORITHM: int
-                        protected static NISTRING_EMPTY_STRING: int
+                        protected static readonly NISTRING_STRING: int
+                        protected static readonly NISTRING_INDEX: int
+                        protected static readonly NISTRING_ENCODING_ALGORITHM: int
+                        protected static readonly NISTRING_EMPTY_STRING: int
                         protected _prefixIndex: int
                         protected _namespaceNameIndex: int
                         protected constructor()
@@ -53,7 +53,7 @@ declare namespace com {
                         public getForceStreamClose(): boolean
                         public reset(): void
                         public setVocabulary(arg0: com.sun.xml.internal.fastinfoset.vocab.ParserVocabulary): void
-                        public setInputStream(arg0: java.io.InputStream): void
+                        public setInputStream(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
                         protected decodeDII(): void
                         protected decodeAdditionalData(): void
                         protected decodeInitialVocabulary(): void
@@ -98,7 +98,7 @@ declare namespace com {
                         protected peek(arg0: com.sun.xml.internal.fastinfoset.OctetBufferListener | com.sun.xml.internal.fastinfoset.OctetBufferListener$$Lambda): int
                         protected peek2(arg0: com.sun.xml.internal.fastinfoset.OctetBufferListener | com.sun.xml.internal.fastinfoset.OctetBufferListener$$Lambda): int
                         protected _isFastInfosetDocument(): boolean
-                        public static isFastInfosetDocument(arg0: java.io.InputStream): boolean
+                        public static isFastInfosetDocument(arg0: java.io.InputStream | java.io.InputStream$$Lambda): boolean
                         public static class: java.lang.Class<any>
                     }
                 }

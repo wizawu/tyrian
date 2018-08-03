@@ -9,9 +9,6 @@ declare namespace javax {
                     EXCLUSIVE_WITH_COMMENTS: string
                     getParameterSpec(): java.security.spec.AlgorithmParameterSpec
                 }
-                interface CanonicalizationMethod$$Lambda extends javax.xml.crypto.dsig.Transform {
-                    INCLUSIVE: string
-                }
             }
         }
     }

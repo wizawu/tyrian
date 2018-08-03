@@ -12,7 +12,7 @@ declare namespace javax {
                 public isParent(arg0: java.io.File, arg1: java.io.File): boolean
                 public getChild(arg0: java.io.File, arg1: java.lang.String | string): java.io.File
                 public isFileSystem(arg0: java.io.File): boolean
-                public createNewFolder(arg0: java.io.File): java.io.File
+                public abstract createNewFolder(arg0: java.io.File): java.io.File
                 public isHiddenFile(arg0: java.io.File): boolean
                 public isFileSystemRoot(arg0: java.io.File): boolean
                 public isDrive(arg0: java.io.File): boolean
@@ -27,6 +27,9 @@ declare namespace javax {
                 public getParentDirectory(arg0: java.io.File): java.io.File
                 protected createFileSystemRoot(arg0: java.io.File): java.io.File
                 public static class: java.lang.Class<any>
+            }
+            interface FileSystemView$$Lambda {
+                (arg0: java.io.File): java.io.File
             }
         }
     }

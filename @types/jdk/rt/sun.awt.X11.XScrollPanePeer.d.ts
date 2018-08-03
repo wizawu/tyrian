@@ -2,12 +2,12 @@ declare namespace sun {
     namespace awt {
         namespace X11 {
             class XScrollPanePeer extends sun.awt.X11.XComponentPeer implements java.awt.peer.ScrollPanePeer , sun.awt.X11.XScrollbarClient {
-                public static MARGIN: int
-                public static SCROLLBAR: int
-                public static SPACE: int
-                public static SCROLLBAR_INSET: int
-                public static VERTICAL: int
-                public static HORIZONTAL: int
+                public static readonly MARGIN: int
+                public static readonly SCROLLBAR: int
+                public static readonly SPACE: int
+                public static readonly SCROLLBAR_INSET: int
+                public static readonly VERTICAL: int
+                public static readonly HORIZONTAL: int
                 public getContentWindow(): long
                 public setBounds(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int): void
                 public getInsets(): java.awt.Insets

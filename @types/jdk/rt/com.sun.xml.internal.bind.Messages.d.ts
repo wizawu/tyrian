@@ -4,7 +4,7 @@ declare namespace com {
             namespace internal {
                 namespace bind {
                     class Messages extends java.lang.Enum<com.sun.xml.internal.bind.Messages> {
-                        public static FAILED_TO_INITIALE_DATATYPE_FACTORY: com.sun.xml.internal.bind.Messages
+                        public static readonly FAILED_TO_INITIALE_DATATYPE_FACTORY: com.sun.xml.internal.bind.Messages
                         public static values(): com.sun.xml.internal.bind.Messages[]
                         public static valueOf(arg0: java.lang.String | string): com.sun.xml.internal.bind.Messages
                         public toString(): string

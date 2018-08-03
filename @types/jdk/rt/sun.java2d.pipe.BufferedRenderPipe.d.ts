@@ -6,8 +6,8 @@ declare namespace sun {
                 protected buf: sun.java2d.pipe.RenderBuffer
                 public constructor(arg0: sun.java2d.pipe.RenderQueue)
                 public getAAParallelogramPipe(): sun.java2d.pipe.ParallelogramPipe
-                protected validateContext(arg0: sun.java2d.SunGraphics2D): void
-                protected validateContextAA(arg0: sun.java2d.SunGraphics2D): void
+                protected abstract validateContext(arg0: sun.java2d.SunGraphics2D): void
+                protected abstract validateContextAA(arg0: sun.java2d.SunGraphics2D): void
                 public drawLine(arg0: sun.java2d.SunGraphics2D, arg1: int, arg2: int, arg3: int, arg4: int): void
                 public drawRect(arg0: sun.java2d.SunGraphics2D, arg1: int, arg2: int, arg3: int, arg4: int): void
                 public fillRect(arg0: sun.java2d.SunGraphics2D, arg1: int, arg2: int, arg3: int, arg4: int): void
@@ -18,7 +18,7 @@ declare namespace sun {
                 public drawArc(arg0: sun.java2d.SunGraphics2D, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int): void
                 public fillArc(arg0: sun.java2d.SunGraphics2D, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int): void
                 protected drawPoly(arg0: sun.java2d.SunGraphics2D, arg1: int[], arg2: int[], arg3: int, arg4: boolean): void
-                protected drawPoly(arg0: int[], arg1: int[], arg2: int, arg3: boolean, arg4: int, arg5: int): void
+                protected abstract drawPoly(arg0: int[], arg1: int[], arg2: int, arg3: boolean, arg4: int, arg5: int): void
                 public drawPolyline(arg0: sun.java2d.SunGraphics2D, arg1: int[], arg2: int[], arg3: int): void
                 public drawPolygon(arg0: sun.java2d.SunGraphics2D, arg1: int[], arg2: int[], arg3: int): void
                 public fillPolygon(arg0: sun.java2d.SunGraphics2D, arg1: int[], arg2: int[], arg3: int): void

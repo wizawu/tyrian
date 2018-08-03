@@ -2,7 +2,7 @@ declare namespace javax {
     namespace swing {
         namespace tree {
             class DefaultTreeSelectionModel implements java.lang.Cloneable , java.io.Serializable , javax.swing.tree.TreeSelectionModel {
-                public static SELECTION_MODE_PROPERTY: string
+                public static readonly SELECTION_MODE_PROPERTY: string
                 protected changeSupport: javax.swing.event.SwingPropertyChangeSupport
                 protected selection: javax.swing.tree.TreePath[]
                 protected listenerList: javax.swing.event.EventListenerList
@@ -29,8 +29,8 @@ declare namespace javax {
                 public isPathSelected(arg0: javax.swing.tree.TreePath): boolean
                 public isSelectionEmpty(): boolean
                 public clearSelection(): void
-                public addTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$Lambda): void
-                public removeTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$Lambda): void
+                public addTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener): void
+                public removeTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener): void
                 public getTreeSelectionListeners(): javax.swing.event.TreeSelectionListener[]
                 protected fireValueChanged(arg0: javax.swing.event.TreeSelectionEvent): void
                 public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]
@@ -41,8 +41,8 @@ declare namespace javax {
                 public resetRowSelection<T extends java.util.EventListener>(): void
                 public getLeadSelectionRow<T extends java.util.EventListener>(): int
                 public getLeadSelectionPath<T extends java.util.EventListener>(): javax.swing.tree.TreePath
-                public addPropertyChangeListener<T extends java.util.EventListener>(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
-                public removePropertyChangeListener<T extends java.util.EventListener>(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+                public addPropertyChangeListener<T extends java.util.EventListener>(arg0: java.beans.PropertyChangeListener): void
+                public removePropertyChangeListener<T extends java.util.EventListener>(arg0: java.beans.PropertyChangeListener): void
                 public getPropertyChangeListeners<T extends java.util.EventListener>(): java.beans.PropertyChangeListener[]
                 protected insureRowContinuity<T extends java.util.EventListener>(): void
                 protected arePathsContiguous<T extends java.util.EventListener>(arg0: javax.swing.tree.TreePath[]): boolean

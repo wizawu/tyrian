@@ -6,9 +6,9 @@ declare namespace com {
                     namespace internal {
                         namespace impl {
                             class XMLNamespaceBinder implements com.sun.org.apache.xerces.internal.xni.parser.XMLComponent , com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentFilter {
-                                protected static NAMESPACES: string
-                                protected static SYMBOL_TABLE: string
-                                protected static ERROR_REPORTER: string
+                                protected static readonly NAMESPACES: string
+                                protected static readonly SYMBOL_TABLE: string
+                                protected static readonly ERROR_REPORTER: string
                                 protected fNamespaces: boolean
                                 protected fSymbolTable: com.sun.org.apache.xerces.internal.util.SymbolTable
                                 protected fErrorReporter: com.sun.org.apache.xerces.internal.impl.XMLErrorReporter

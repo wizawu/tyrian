@@ -3,37 +3,37 @@ declare namespace jdk {
         namespace internal {
             namespace ir {
                 class FunctionNode extends jdk.nashorn.internal.ir.LexicalContextExpression implements jdk.nashorn.internal.ir.Flags<jdk.nashorn.internal.ir.FunctionNode> , jdk.nashorn.internal.ir.CompileUnitHolder {
-                    public static FUNCTION_TYPE: jdk.nashorn.internal.codegen.types.Type
-                    public static IS_ANONYMOUS: int
-                    public static IS_DECLARED: int
-                    public static IS_STRICT: int
-                    public static USES_ARGUMENTS: int
-                    public static IS_SPLIT: int
-                    public static HAS_EVAL: int
-                    public static HAS_NESTED_EVAL: int
-                    public static HAS_SCOPE_BLOCK: int
-                    public static DEFINES_ARGUMENTS: int
-                    public static USES_ANCESTOR_SCOPE: int
-                    public static HAS_FUNCTION_DECLARATIONS: int
-                    public static IS_DEOPTIMIZABLE: int
-                    public static HAS_APPLY_TO_CALL_SPECIALIZATION: int
-                    public static IS_PROGRAM: int
-                    public static USES_SELF_SYMBOL: int
-                    public static USES_THIS: int
-                    public static IN_DYNAMIC_CONTEXT: int
-                    public static IS_PRINT_PARSE: int
-                    public static IS_PRINT_LOWER_PARSE: int
-                    public static IS_PRINT_AST: int
-                    public static IS_PRINT_LOWER_AST: int
-                    public static IS_PRINT_SYMBOLS: int
-                    public static IS_PROFILE: int
-                    public static IS_TRACE_ENTEREXIT: int
-                    public static IS_TRACE_MISSES: int
-                    public static IS_TRACE_VALUES: int
-                    public static NEEDS_CALLEE: int
-                    public static IS_CACHED: int
-                    public static EXTENSION_CALLSITE_FLAGS: int
-                    public static NEEDS_PARENT_SCOPE: int
+                    public static readonly FUNCTION_TYPE: jdk.nashorn.internal.codegen.types.Type
+                    public static readonly IS_ANONYMOUS: int
+                    public static readonly IS_DECLARED: int
+                    public static readonly IS_STRICT: int
+                    public static readonly USES_ARGUMENTS: int
+                    public static readonly IS_SPLIT: int
+                    public static readonly HAS_EVAL: int
+                    public static readonly HAS_NESTED_EVAL: int
+                    public static readonly HAS_SCOPE_BLOCK: int
+                    public static readonly DEFINES_ARGUMENTS: int
+                    public static readonly USES_ANCESTOR_SCOPE: int
+                    public static readonly HAS_FUNCTION_DECLARATIONS: int
+                    public static readonly IS_DEOPTIMIZABLE: int
+                    public static readonly HAS_APPLY_TO_CALL_SPECIALIZATION: int
+                    public static readonly IS_PROGRAM: int
+                    public static readonly USES_SELF_SYMBOL: int
+                    public static readonly USES_THIS: int
+                    public static readonly IN_DYNAMIC_CONTEXT: int
+                    public static readonly IS_PRINT_PARSE: int
+                    public static readonly IS_PRINT_LOWER_PARSE: int
+                    public static readonly IS_PRINT_AST: int
+                    public static readonly IS_PRINT_LOWER_AST: int
+                    public static readonly IS_PRINT_SYMBOLS: int
+                    public static readonly IS_PROFILE: int
+                    public static readonly IS_TRACE_ENTEREXIT: int
+                    public static readonly IS_TRACE_MISSES: int
+                    public static readonly IS_TRACE_VALUES: int
+                    public static readonly NEEDS_CALLEE: int
+                    public static readonly IS_CACHED: int
+                    public static readonly EXTENSION_CALLSITE_FLAGS: int
+                    public static readonly NEEDS_PARENT_SCOPE: int
                     public constructor(arg0: jdk.nashorn.internal.runtime.Source, arg1: int, arg2: long, arg3: int, arg4: long, arg5: jdk.nashorn.internal.codegen.Namespace, arg6: jdk.nashorn.internal.ir.IdentNode, arg7: java.lang.String | string, arg8: java.util.List<jdk.nashorn.internal.ir.IdentNode>, arg9: jdk.nashorn.internal.ir.FunctionNode$Kind, arg10: int)
                     public accept(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.LexicalContext>): jdk.nashorn.internal.ir.Node
                     public visitParameters(arg0: jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.LexicalContext>): java.util.List<jdk.nashorn.internal.ir.IdentNode>
@@ -93,7 +93,7 @@ declare namespace jdk {
                     public getType(): jdk.nashorn.internal.codegen.types.Type
                     public getWidestOperationType(): jdk.nashorn.internal.codegen.types.Type
                     public getReturnType(): jdk.nashorn.internal.codegen.types.Type
-                    public setReturnType(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: jdk.nashorn.internal.codegen.types.Type): jdk.nashorn.internal.ir.FunctionNode
+                    public setReturnType(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: jdk.nashorn.internal.codegen.types.Type | jdk.nashorn.internal.codegen.types.Type$$Lambda): jdk.nashorn.internal.ir.FunctionNode
                     public isStrict(): boolean
                     public isCached(): boolean
                     public setCached(arg0: jdk.nashorn.internal.ir.LexicalContext): jdk.nashorn.internal.ir.FunctionNode

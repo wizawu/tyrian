@@ -10,8 +10,11 @@ declare namespace com {
                                 public error(arg0: org.xml.sax.SAXParseException): void
                                 public fatalError(arg0: org.xml.sax.SAXParseException): void
                                 public warning(arg0: org.xml.sax.SAXParseException): void
-                                protected getErrorHandler(): com.sun.org.apache.xerces.internal.xni.parser.XMLErrorHandler
+                                protected abstract getErrorHandler(): com.sun.org.apache.xerces.internal.xni.parser.XMLErrorHandler
                                 public static class: java.lang.Class<any>
+                            }
+                            interface ErrorHandlerProxy$$Lambda implements org.xml.sax.ErrorHandler {
+                                (): com.sun.org.apache.xerces.internal.xni.parser.XMLErrorHandler
                             }
                         }
                     }

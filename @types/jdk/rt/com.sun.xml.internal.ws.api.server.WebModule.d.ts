@@ -7,8 +7,11 @@ declare namespace com {
                         namespace server {
                             abstract class WebModule extends com.sun.xml.internal.ws.api.server.Module {
                                 public constructor()
-                                public getContextPath(): string
+                                public abstract getContextPath(): string
                                 public static class: java.lang.Class<any>
+                            }
+                            interface WebModule$$Lambda extends com.sun.xml.internal.ws.api.server.Module {
+                                (): string
                             }
                         }
                     }

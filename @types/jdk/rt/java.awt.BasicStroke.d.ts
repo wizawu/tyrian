@@ -1,12 +1,12 @@
 declare namespace java {
     namespace awt {
         class BasicStroke implements java.awt.Stroke {
-            public static JOIN_MITER: int
-            public static JOIN_ROUND: int
-            public static JOIN_BEVEL: int
-            public static CAP_BUTT: int
-            public static CAP_ROUND: int
-            public static CAP_SQUARE: int
+            public static readonly JOIN_MITER: int
+            public static readonly JOIN_ROUND: int
+            public static readonly JOIN_BEVEL: int
+            public static readonly CAP_BUTT: int
+            public static readonly CAP_ROUND: int
+            public static readonly CAP_SQUARE: int
             public constructor(arg0: float, arg1: int, arg2: int, arg3: float, arg4: float[], arg5: float)
             public constructor(arg0: float, arg1: int, arg2: int, arg3: float)
             public constructor(arg0: float, arg1: int, arg2: int)

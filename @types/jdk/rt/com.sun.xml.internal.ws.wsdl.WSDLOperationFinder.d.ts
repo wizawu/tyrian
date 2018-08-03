@@ -5,9 +5,9 @@ declare namespace com {
                 namespace ws {
                     namespace wsdl {
                         abstract class WSDLOperationFinder {
-                            protected wsdlModel: com.sun.xml.internal.ws.api.model.wsdl.WSDLPort
-                            protected binding: com.sun.xml.internal.ws.api.WSBinding
-                            protected seiModel: com.sun.xml.internal.ws.api.model.SEIModel
+                            protected readonly wsdlModel: com.sun.xml.internal.ws.api.model.wsdl.WSDLPort
+                            protected readonly binding: com.sun.xml.internal.ws.api.WSBinding
+                            protected readonly seiModel: com.sun.xml.internal.ws.api.model.SEIModel
                             public constructor(arg0: com.sun.xml.internal.ws.api.model.wsdl.WSDLPort, arg1: com.sun.xml.internal.ws.api.WSBinding, arg2: com.sun.xml.internal.ws.api.model.SEIModel)
                             public getWSDLOperationQName(arg0: com.sun.xml.internal.ws.api.message.Packet): javax.xml.namespace.QName
                             public getWSDLOperationMapping(arg0: com.sun.xml.internal.ws.api.message.Packet): com.sun.xml.internal.ws.api.model.WSDLOperationMapping

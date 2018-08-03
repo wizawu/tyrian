@@ -18,7 +18,7 @@ declare namespace sun {
                 public getFormat(): string
                 public encode(): byte[]
                 public toString(): string
-                public decode(arg0: java.io.InputStream): void
+                public decode(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
                 public decode(arg0: byte[]): void
                 public equals(arg0: java.lang.Object): boolean
                 public hashCode(): int

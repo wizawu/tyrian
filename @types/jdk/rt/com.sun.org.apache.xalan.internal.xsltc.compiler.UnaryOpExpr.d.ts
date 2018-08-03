@@ -7,7 +7,7 @@ declare namespace com {
                         namespace xsltc {
                             namespace compiler {
                                 class UnaryOpExpr extends com.sun.org.apache.xalan.internal.xsltc.compiler.Expression {
-                                    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression)
+                                    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Expression | com.sun.org.apache.xalan.internal.xsltc.compiler.Expression$$Lambda)
                                     public hasPositionCall(): boolean
                                     public hasLastCall(): boolean
                                     public setParser(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Parser): void

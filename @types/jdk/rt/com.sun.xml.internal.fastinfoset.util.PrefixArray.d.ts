@@ -5,7 +5,7 @@ declare namespace com {
                 namespace fastinfoset {
                     namespace util {
                         class PrefixArray extends com.sun.xml.internal.fastinfoset.util.ValueArray {
-                            public static PREFIX_MAP_SIZE: int
+                            public static readonly PREFIX_MAP_SIZE: int
                             public _array: java.lang.String[]
                             public _currentInScope: int[]
                             public _declarationId: int

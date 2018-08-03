@@ -3,9 +3,9 @@ declare namespace jdk {
         namespace internal {
             namespace objects {
                 class NativeDataView extends jdk.nashorn.internal.runtime.ScriptObject {
-                    public buffer: java.lang.Object
-                    public byteOffset: int
-                    public byteLength: int
+                    public readonly buffer: java.lang.Object
+                    public readonly byteOffset: int
+                    public readonly byteLength: int
                     public static constructor(arg0: boolean, arg1: java.lang.Object, ...arg2: java.lang.Object[]): jdk.nashorn.internal.objects.NativeDataView
                     public static constructor(arg0: boolean, arg1: java.lang.Object, arg2: java.lang.Object, arg3: int): jdk.nashorn.internal.objects.NativeDataView
                     public static constructor(arg0: boolean, arg1: java.lang.Object, arg2: java.lang.Object, arg3: int, arg4: int): jdk.nashorn.internal.objects.NativeDataView
@@ -52,7 +52,7 @@ declare namespace jdk {
                     public static setFloat32(arg0: java.lang.Object, arg1: int, arg2: double, arg3: boolean): java.lang.Object
                     public static setFloat64(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object, arg3: java.lang.Object): java.lang.Object
                     public static setFloat64(arg0: java.lang.Object, arg1: int, arg2: double): java.lang.Object
-                    public public static setFloat64(arg0: java.lang.Object, arg1: int, arg2: double, arg3: boolean): java.lang.Object
+                    public static public static setFloat64(arg0: java.lang.Object, arg1: int, arg2: double, arg3: boolean): java.lang.Object
                     public static $clinit$(): void
                     public G$buffer(): java.lang.Object
                     public G$byteOffset(): int

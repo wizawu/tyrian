@@ -14,17 +14,17 @@ declare namespace javax {
             protected frameIcon: javax.swing.Icon
             protected title: string
             protected desktopIcon: javax.swing.JInternalFrame$JDesktopIcon
-            public static CONTENT_PANE_PROPERTY: string
-            public static MENU_BAR_PROPERTY: string
-            public static TITLE_PROPERTY: string
-            public static LAYERED_PANE_PROPERTY: string
-            public static ROOT_PANE_PROPERTY: string
-            public static GLASS_PANE_PROPERTY: string
-            public static FRAME_ICON_PROPERTY: string
-            public static IS_SELECTED_PROPERTY: string
-            public static IS_CLOSED_PROPERTY: string
-            public static IS_MAXIMUM_PROPERTY: string
-            public static IS_ICON_PROPERTY: string
+            public static readonly CONTENT_PANE_PROPERTY: string
+            public static readonly MENU_BAR_PROPERTY: string
+            public static readonly TITLE_PROPERTY: string
+            public static readonly LAYERED_PANE_PROPERTY: string
+            public static readonly ROOT_PANE_PROPERTY: string
+            public static readonly GLASS_PANE_PROPERTY: string
+            public static readonly FRAME_ICON_PROPERTY: string
+            public static readonly IS_SELECTED_PROPERTY: string
+            public static readonly IS_CLOSED_PROPERTY: string
+            public static readonly IS_MAXIMUM_PROPERTY: string
+            public static readonly IS_ICON_PROPERTY: string
             public constructor()
             public constructor(arg0: java.lang.String | string)
             public constructor(arg0: java.lang.String | string, arg1: boolean)

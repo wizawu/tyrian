@@ -6,10 +6,10 @@ declare namespace com {
                     namespace api {
                         namespace addressing {
                             class AddressingPropertySet extends com.oracle.webservices.internal.api.message.BasePropertySet {
-                                public static ADDRESSING_FAULT_TO: string
-                                public static ADDRESSING_MESSAGE_ID: string
-                                public static ADDRESSING_RELATES_TO: string
-                                public static ADDRESSING_REPLY_TO: string
+                                public static readonly ADDRESSING_FAULT_TO: string
+                                public static readonly ADDRESSING_MESSAGE_ID: string
+                                public static readonly ADDRESSING_RELATES_TO: string
+                                public static readonly ADDRESSING_REPLY_TO: string
                                 public constructor()
                                 public getFaultTo(): string
                                 public setFaultTo(arg0: java.lang.String | string): void

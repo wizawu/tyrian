@@ -10,8 +10,8 @@ declare namespace com {
                                     protected _parent: com.sun.org.apache.xalan.internal.xsltc.compiler.SyntaxTreeNode
                                     protected _qname: com.sun.org.apache.xalan.internal.xsltc.compiler.QName
                                     protected _attributes: org.xml.sax.helpers.AttributesImpl
-                                    protected static Dummy: com.sun.org.apache.xalan.internal.xsltc.compiler.SyntaxTreeNode
-                                    protected static IndentIncrement: int
+                                    protected static readonly Dummy: com.sun.org.apache.xalan.internal.xsltc.compiler.SyntaxTreeNode
+                                    protected static readonly IndentIncrement: int
                                     public constructor()
                                     public constructor(arg0: int)
                                     public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
@@ -44,9 +44,9 @@ declare namespace com {
                                     public parseContents(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Parser): void
                                     protected parseChildren(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Parser): void
                                     protected updateScope(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Parser, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.SyntaxTreeNode): com.sun.org.apache.xalan.internal.xsltc.compiler.QName
-                                    public typeCheck(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable): com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type
+                                    public abstract typeCheck(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable): com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type
                                     protected typeCheckContents(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable): com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type
-                                    public translate(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator): void
+                                    public abstract translate(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator): void
                                     protected translateContents(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator): void
                                     protected compileResultTree(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, arg1: com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator): void
                                     protected contextDependent(): boolean

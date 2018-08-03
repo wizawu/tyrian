@@ -5,7 +5,7 @@ declare namespace com {
                 namespace fastinfoset {
                     namespace alphabet {
                         class BuiltInRestrictedAlphabets {
-                            public static table: char[][]
+                            public static readonly table: char[][]
                             public constructor()
                             public static class: java.lang.Class<any>
                         }

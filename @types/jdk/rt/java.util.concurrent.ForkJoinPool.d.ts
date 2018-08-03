@@ -2,7 +2,7 @@ declare namespace java {
     namespace util {
         namespace concurrent {
             class ForkJoinPool extends java.util.concurrent.AbstractExecutorService {
-                public static defaultForkJoinWorkerThreadFactory: java.util.concurrent.ForkJoinPool$ForkJoinWorkerThreadFactory
+                public static readonly defaultForkJoinWorkerThreadFactory: java.util.concurrent.ForkJoinPool$ForkJoinWorkerThreadFactory
                 public constructor()
                 public constructor(arg0: int)
                 public constructor(arg0: int, arg1: java.util.concurrent.ForkJoinPool$ForkJoinWorkerThreadFactory | java.util.concurrent.ForkJoinPool$ForkJoinWorkerThreadFactory$$Lambda, arg2: java.lang.Thread$UncaughtExceptionHandler | java.lang.Thread$UncaughtExceptionHandler$$Lambda, arg3: boolean)

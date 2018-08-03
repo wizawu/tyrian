@@ -3,15 +3,15 @@ declare namespace com {
         namespace media {
             namespace sound {
                 class SoftEnvelopeGenerator implements com.sun.media.sound.SoftProcess {
-                    public static EG_OFF: int
-                    public static EG_DELAY: int
-                    public static EG_ATTACK: int
-                    public static EG_HOLD: int
-                    public static EG_DECAY: int
-                    public static EG_SUSTAIN: int
-                    public static EG_RELEASE: int
-                    public static EG_SHUTDOWN: int
-                    public static EG_END: int
+                    public static readonly EG_OFF: int
+                    public static readonly EG_DELAY: int
+                    public static readonly EG_ATTACK: int
+                    public static readonly EG_HOLD: int
+                    public static readonly EG_DECAY: int
+                    public static readonly EG_SUSTAIN: int
+                    public static readonly EG_RELEASE: int
+                    public static readonly EG_SHUTDOWN: int
+                    public static readonly EG_END: int
                     public constructor()
                     public reset(): void
                     public init(arg0: com.sun.media.sound.SoftSynthesizer): void

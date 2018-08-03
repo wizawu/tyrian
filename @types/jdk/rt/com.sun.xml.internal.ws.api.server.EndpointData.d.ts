@@ -7,10 +7,10 @@ declare namespace com {
                         namespace server {
                             abstract class EndpointData {
                                 public constructor()
-                                public getNamespace(): string
-                                public getServiceName(): string
-                                public getPortName(): string
-                                public getImplClass(): string
+                                public abstract getNamespace(): string
+                                public abstract getServiceName(): string
+                                public abstract getPortName(): string
+                                public abstract getImplClass(): string
                                 public static class: java.lang.Class<any>
                             }
                         }

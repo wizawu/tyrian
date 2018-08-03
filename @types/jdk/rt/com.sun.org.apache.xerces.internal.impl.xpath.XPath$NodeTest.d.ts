@@ -7,12 +7,12 @@ declare namespace com {
                         namespace impl {
                             namespace xpath {
                                 class XPath$NodeTest implements java.lang.Cloneable {
-                                    public static QNAME: short
-                                    public static WILDCARD: short
-                                    public static NODE: short
-                                    public static NAMESPACE: short
+                                    public static readonly QNAME: short
+                                    public static readonly WILDCARD: short
+                                    public static readonly NODE: short
+                                    public static readonly NAMESPACE: short
                                     public type: short
-                                    public name: com.sun.org.apache.xerces.internal.xni.QName
+                                    public readonly name: com.sun.org.apache.xerces.internal.xni.QName
                                     public constructor(arg0: short)
                                     public constructor(arg0: com.sun.org.apache.xerces.internal.xni.QName)
                                     public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)

@@ -5,7 +5,7 @@ declare namespace javax {
                 class SimpleTypeVisitor7<R, P> extends javax.lang.model.util.SimpleTypeVisitor6<R, P> {
                     protected constructor()
                     protected constructor(arg0: R)
-                    public visitUnion(arg0: javax.lang.model.type.UnionType | javax.lang.model.type.UnionType$$Lambda, arg1: P): R
+                    public visitUnion(arg0: javax.lang.model.type.UnionType, arg1: P): R
                     public static class: java.lang.Class<any>
                 }
             }

@@ -14,7 +14,7 @@ declare namespace jdk {
                                 public headExact: jdk.nashorn.internal.runtime.regexp.joni.ast.Node
                                 public nextHeadExact: jdk.nashorn.internal.runtime.regexp.joni.ast.Node
                                 public isRefered: boolean
-                                public static REPEAT_INFINITE: int
+                                public static readonly REPEAT_INFINITE: int
                                 public constructor(arg0: int, arg1: int, arg2: boolean)
                                 public getType(): int
                                 protected setChild(arg0: jdk.nashorn.internal.runtime.regexp.joni.ast.Node): void

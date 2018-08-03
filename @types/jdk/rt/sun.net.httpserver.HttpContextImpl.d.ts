@@ -9,7 +9,7 @@ declare namespace sun {
                 public getProtocol(): string
                 public getAttributes(): java.util.Map<java.lang.String, java.lang.Object>
                 public getFilters(): java.util.List<com.sun.net.httpserver.Filter>
-                public setAuthenticator(arg0: com.sun.net.httpserver.Authenticator): com.sun.net.httpserver.Authenticator
+                public setAuthenticator(arg0: com.sun.net.httpserver.Authenticator | com.sun.net.httpserver.Authenticator$$Lambda): com.sun.net.httpserver.Authenticator
                 public getAuthenticator(): com.sun.net.httpserver.Authenticator
                 public static class: java.lang.Class<any>
             }

@@ -4,23 +4,23 @@ declare namespace com {
             namespace sasl {
                 namespace digest {
                     abstract class DigestMD5Base extends com.sun.security.sasl.util.AbstractSaslImpl {
-                        protected static MAX_CHALLENGE_LENGTH: int
-                        protected static MAX_RESPONSE_LENGTH: int
-                        protected static DEFAULT_MAXBUF: int
-                        protected static DES3: int
-                        protected static RC4: int
-                        protected static DES: int
-                        protected static RC4_56: int
-                        protected static RC4_40: int
-                        protected static CIPHER_TOKENS: java.lang.String[]
-                        protected static DES_3_STRENGTH: byte
-                        protected static RC4_STRENGTH: byte
-                        protected static DES_STRENGTH: byte
-                        protected static RC4_56_STRENGTH: byte
-                        protected static RC4_40_STRENGTH: byte
-                        protected static UNSET: byte
-                        protected static CIPHER_MASKS: byte[]
-                        protected static EMPTY_BYTE_ARRAY: byte[]
+                        protected static readonly MAX_CHALLENGE_LENGTH: int
+                        protected static readonly MAX_RESPONSE_LENGTH: int
+                        protected static readonly DEFAULT_MAXBUF: int
+                        protected static readonly DES3: int
+                        protected static readonly RC4: int
+                        protected static readonly DES: int
+                        protected static readonly RC4_56: int
+                        protected static readonly RC4_40: int
+                        protected static readonly CIPHER_TOKENS: java.lang.String[]
+                        protected static readonly DES_3_STRENGTH: byte
+                        protected static readonly RC4_STRENGTH: byte
+                        protected static readonly DES_STRENGTH: byte
+                        protected static readonly RC4_56_STRENGTH: byte
+                        protected static readonly RC4_40_STRENGTH: byte
+                        protected static readonly UNSET: byte
+                        protected static readonly CIPHER_MASKS: byte[]
+                        protected static readonly EMPTY_BYTE_ARRAY: byte[]
                         protected step: int
                         protected cbh: javax.security.auth.callback.CallbackHandler
                         protected secCtx: com.sun.security.sasl.digest.SecurityCtx

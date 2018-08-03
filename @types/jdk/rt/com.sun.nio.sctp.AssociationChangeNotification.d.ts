@@ -4,8 +4,8 @@ declare namespace com {
             namespace sctp {
                 abstract class AssociationChangeNotification implements com.sun.nio.sctp.Notification {
                     protected constructor()
-                    public association(): com.sun.nio.sctp.Association
-                    public event(): com.sun.nio.sctp.AssociationChangeNotification$AssocChangeEvent
+                    public abstract association(): com.sun.nio.sctp.Association
+                    public abstract event(): com.sun.nio.sctp.AssociationChangeNotification$AssocChangeEvent
                     public static class: java.lang.Class<any>
                 }
             }

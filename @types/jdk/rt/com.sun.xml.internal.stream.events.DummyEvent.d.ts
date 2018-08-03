@@ -26,9 +26,12 @@ declare namespace com {
                             public isCharacters(): boolean
                             public isNamespace(): boolean
                             public writeAsEncodedUnicode(arg0: java.io.Writer): void
-                            protected writeAsEncodedUnicodeEx(arg0: java.io.Writer): void
+                            protected abstract writeAsEncodedUnicodeEx(arg0: java.io.Writer): void
                             protected charEncode(arg0: java.io.Writer, arg1: java.lang.String | string): void
                             public static class: java.lang.Class<any>
+                        }
+                        interface DummyEvent$$Lambda implements javax.xml.stream.events.XMLEvent {
+                            (arg0: java.io.Writer): void
                         }
                     }
                 }

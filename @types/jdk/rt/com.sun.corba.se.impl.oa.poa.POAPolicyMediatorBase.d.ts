@@ -15,10 +15,13 @@ declare namespace com {
                                 public getScid(): int
                                 public getServerId(): int
                                 public getInvocationServant(arg0: byte[], arg1: java.lang.String | string): java.lang.Object
-                                protected setDelegate(arg0: org.omg.PortableServer.Servant, arg1: byte[]): void
+                                protected setDelegate(arg0: org.omg.PortableServer.Servant | org.omg.PortableServer.Servant$$Lambda, arg1: byte[]): void
                                 public newSystemId(): byte[]
-                                protected internalGetServant(arg0: byte[], arg1: java.lang.String | string): java.lang.Object
+                                protected abstract internalGetServant(arg0: byte[], arg1: java.lang.String | string): java.lang.Object
                                 public static class: java.lang.Class<any>
+                            }
+                            interface POAPolicyMediatorBase$$Lambda implements com.sun.corba.se.impl.oa.poa.POAPolicyMediator {
+                                (arg0: byte[], arg1: java.lang.String | string): java.lang.Object
                             }
                         }
                     }

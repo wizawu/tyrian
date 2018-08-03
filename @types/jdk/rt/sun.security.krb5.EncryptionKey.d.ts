@@ -2,7 +2,7 @@ declare namespace sun {
     namespace security {
         namespace krb5 {
             class EncryptionKey implements java.lang.Cloneable {
-                public static NULL_KEY: sun.security.krb5.EncryptionKey
+                public static readonly NULL_KEY: sun.security.krb5.EncryptionKey
                 public getEType(): int
                 public getKeyVersionNumber(): java.lang.Integer
                 public getBytes(): byte[]

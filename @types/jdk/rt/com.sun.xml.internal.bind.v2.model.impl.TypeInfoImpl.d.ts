@@ -7,7 +7,7 @@ declare namespace com {
                         namespace model {
                             namespace impl {
                                 abstract class TypeInfoImpl<TypeT, ClassDeclT, FieldT, MethodT> implements com.sun.xml.internal.bind.v2.model.core.TypeInfo<TypeT, ClassDeclT> , com.sun.xml.internal.bind.v2.model.annotation.Locatable {
-                                    protected owner: com.sun.xml.internal.bind.v2.model.impl.TypeInfoSetImpl<TypeT, ClassDeclT, FieldT, MethodT>
+                                    protected readonly owner: com.sun.xml.internal.bind.v2.model.impl.TypeInfoSetImpl<TypeT, ClassDeclT, FieldT, MethodT>
                                     protected builder: com.sun.xml.internal.bind.v2.model.impl.ModelBuilder<TypeT, ClassDeclT, FieldT, MethodT>
                                     protected constructor(arg0: com.sun.xml.internal.bind.v2.model.impl.ModelBuilder<TypeT, ClassDeclT, FieldT, MethodT>, arg1: com.sun.xml.internal.bind.v2.model.annotation.Locatable)
                                     public getUpstream(): com.sun.xml.internal.bind.v2.model.annotation.Locatable

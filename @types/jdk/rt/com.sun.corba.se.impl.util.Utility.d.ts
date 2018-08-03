@@ -5,11 +5,11 @@ declare namespace com {
                 namespace impl {
                     namespace util {
                         class Utility {
-                            public static STUB_PREFIX: string
-                            public static RMI_STUB_SUFFIX: string
-                            public static DYNAMIC_STUB_SUFFIX: string
-                            public static IDL_STUB_SUFFIX: string
-                            public static TIE_SUFIX: string
+                            public static readonly STUB_PREFIX: string
+                            public static readonly RMI_STUB_SUFFIX: string
+                            public static readonly DYNAMIC_STUB_SUFFIX: string
+                            public static readonly IDL_STUB_SUFFIX: string
+                            public static readonly TIE_SUFIX: string
                             public constructor()
                             public static autoConnect(arg0: java.lang.Object, arg1: org.omg.CORBA.ORB, arg2: boolean): java.lang.Object
                             public static loadTie(arg0: java.rmi.Remote): javax.rmi.CORBA.Tie

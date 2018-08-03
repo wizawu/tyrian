@@ -2,10 +2,10 @@ declare namespace java {
     namespace time {
         namespace chrono {
             class JapaneseEra implements java.time.chrono.Era , java.io.Serializable {
-                public static MEIJI: java.time.chrono.JapaneseEra
-                public static TAISHO: java.time.chrono.JapaneseEra
-                public static SHOWA: java.time.chrono.JapaneseEra
-                public static HEISEI: java.time.chrono.JapaneseEra
+                public static readonly MEIJI: java.time.chrono.JapaneseEra
+                public static readonly TAISHO: java.time.chrono.JapaneseEra
+                public static readonly SHOWA: java.time.chrono.JapaneseEra
+                public static readonly HEISEI: java.time.chrono.JapaneseEra
                 public static of(arg0: int): java.time.chrono.JapaneseEra
                 public static valueOf(arg0: java.lang.String | string): java.time.chrono.JapaneseEra
                 public static values(): java.time.chrono.JapaneseEra[]

@@ -9,8 +9,8 @@ declare namespace com {
                                 namespace storage {
                                     class StorageResolver {
                                         public constructor()
-                                        public constructor(arg0: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi)
-                                        public add(arg0: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi): void
+                                        public constructor(arg0: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi | com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi$$Lambda)
+                                        public add(arg0: com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi | com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi$$Lambda): void
                                         public constructor(arg0: java.security.KeyStore)
                                         public add(arg0: java.security.KeyStore): void
                                         public constructor(arg0: java.security.cert.X509Certificate)

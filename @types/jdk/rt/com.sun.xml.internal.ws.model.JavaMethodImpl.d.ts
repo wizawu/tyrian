@@ -5,7 +5,7 @@ declare namespace com {
                 namespace ws {
                     namespace model {
                         class JavaMethodImpl implements com.sun.xml.internal.ws.api.model.JavaMethod {
-                            public constructor(arg0: com.sun.xml.internal.ws.model.AbstractSEIModelImpl, arg1: java.lang.reflect.Method, arg2: java.lang.reflect.Method, arg3: com.sun.xml.internal.ws.api.databinding.MetadataReader)
+                            public constructor(arg0: com.sun.xml.internal.ws.model.AbstractSEIModelImpl | com.sun.xml.internal.ws.model.AbstractSEIModelImpl$$Lambda, arg1: java.lang.reflect.Method, arg2: java.lang.reflect.Method, arg3: com.sun.xml.internal.ws.api.databinding.MetadataReader)
                             public getOperationSignature(): com.sun.xml.internal.ws.wsdl.ActionBasedOperationSignature
                             public getOwner(): com.sun.xml.internal.ws.api.model.SEIModel
                             public getMethod(): java.lang.reflect.Method

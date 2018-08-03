@@ -2,11 +2,11 @@ declare namespace sun {
     namespace security {
         namespace jgss {
             class GSSUtil {
-                public static GSS_KRB5_MECH_OID: org.ietf.jgss.Oid
-                public static GSS_KRB5_MECH_OID2: org.ietf.jgss.Oid
-                public static GSS_KRB5_MECH_OID_MS: org.ietf.jgss.Oid
-                public static GSS_SPNEGO_MECH_OID: org.ietf.jgss.Oid
-                public static NT_GSS_KRB5_PRINCIPAL: org.ietf.jgss.Oid
+                public static readonly GSS_KRB5_MECH_OID: org.ietf.jgss.Oid
+                public static readonly GSS_KRB5_MECH_OID2: org.ietf.jgss.Oid
+                public static readonly GSS_KRB5_MECH_OID_MS: org.ietf.jgss.Oid
+                public static readonly GSS_SPNEGO_MECH_OID: org.ietf.jgss.Oid
+                public static readonly NT_GSS_KRB5_PRINCIPAL: org.ietf.jgss.Oid
                 public constructor()
                 public static createOid(arg0: java.lang.String | string): org.ietf.jgss.Oid
                 public static isSpNegoMech(arg0: org.ietf.jgss.Oid): boolean

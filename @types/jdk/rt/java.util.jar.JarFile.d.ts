@@ -2,7 +2,7 @@ declare namespace java {
     namespace util {
         namespace jar {
             class JarFile extends java.util.zip.ZipFile {
-                public static MANIFEST_NAME: string
+                public static readonly MANIFEST_NAME: string
                 public constructor(arg0: java.lang.String | string)
                 public constructor(arg0: java.lang.String | string, arg1: boolean)
                 public constructor(arg0: java.io.File)

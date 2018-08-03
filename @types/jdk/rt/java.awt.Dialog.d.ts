@@ -1,7 +1,7 @@
 declare namespace java {
     namespace awt {
         class Dialog extends java.awt.Window {
-            public static DEFAULT_MODALITY_TYPE: java.awt.Dialog$ModalityType
+            public static readonly DEFAULT_MODALITY_TYPE: java.awt.Dialog$ModalityType
             public constructor(arg0: java.awt.Frame)
             public constructor(arg0: java.awt.Frame, arg1: boolean)
             public constructor(arg0: java.awt.Frame, arg1: java.lang.String | string)

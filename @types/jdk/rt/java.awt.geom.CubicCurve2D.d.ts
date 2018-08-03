@@ -3,19 +3,19 @@ declare namespace java {
         namespace geom {
             abstract class CubicCurve2D implements java.awt.Shape , java.lang.Cloneable {
                 protected constructor()
-                public getX1(): double
-                public getY1(): double
-                public getP1(): java.awt.geom.Point2D
-                public getCtrlX1(): double
-                public getCtrlY1(): double
-                public getCtrlP1(): java.awt.geom.Point2D
-                public getCtrlX2(): double
-                public getCtrlY2(): double
-                public getCtrlP2(): java.awt.geom.Point2D
-                public getX2(): double
-                public getY2(): double
-                public getP2(): java.awt.geom.Point2D
-                public setCurve(arg0: double, arg1: double, arg2: double, arg3: double, arg4: double, arg5: double, arg6: double, arg7: double): void
+                public abstract getX1(): double
+                public abstract getY1(): double
+                public abstract getP1(): java.awt.geom.Point2D
+                public abstract getCtrlX1(): double
+                public abstract getCtrlY1(): double
+                public abstract getCtrlP1(): java.awt.geom.Point2D
+                public abstract getCtrlX2(): double
+                public abstract getCtrlY2(): double
+                public abstract getCtrlP2(): java.awt.geom.Point2D
+                public abstract getX2(): double
+                public abstract getY2(): double
+                public abstract getP2(): java.awt.geom.Point2D
+                public abstract setCurve(arg0: double, arg1: double, arg2: double, arg3: double, arg4: double, arg5: double, arg6: double, arg7: double): void
                 public setCurve(arg0: double[], arg1: int): void
                 public setCurve(arg0: java.awt.geom.Point2D, arg1: java.awt.geom.Point2D, arg2: java.awt.geom.Point2D, arg3: java.awt.geom.Point2D): void
                 public setCurve(arg0: java.awt.geom.Point2D[], arg1: int): void

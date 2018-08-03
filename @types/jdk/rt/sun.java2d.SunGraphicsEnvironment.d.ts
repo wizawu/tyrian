@@ -6,8 +6,8 @@ declare namespace sun {
             protected displayChanger: sun.awt.SunDisplayChanger
             public constructor()
             public getScreenDevices(): java.awt.GraphicsDevice[]
-            protected getNumScreens(): int
-            protected makeScreenDevice(arg0: int): java.awt.GraphicsDevice
+            protected abstract getNumScreens(): int
+            protected abstract makeScreenDevice(arg0: int): java.awt.GraphicsDevice
             public getDefaultScreenDevice(): java.awt.GraphicsDevice
             public createGraphics(arg0: java.awt.image.BufferedImage): java.awt.Graphics2D
             public static getFontManagerForSGE(): sun.font.FontManagerForSGE
@@ -18,7 +18,7 @@ declare namespace sun {
             public static getUsableBounds(arg0: java.awt.GraphicsDevice): java.awt.Rectangle
             public displayChanged(): void
             public paletteChanged(): void
-            public isDisplayLocal(): boolean
+            public abstract isDisplayLocal(): boolean
             public addDisplayChangedListener(arg0: sun.awt.DisplayChangedListener): void
             public removeDisplayChangedListener(arg0: sun.awt.DisplayChangedListener): void
             public isFlipStrategyPreferred(arg0: java.awt.peer.ComponentPeer): boolean

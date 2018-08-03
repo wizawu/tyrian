@@ -5,19 +5,19 @@ declare namespace com {
                 namespace fastinfoset {
                     namespace vocab {
                         class SerializerVocabulary extends com.sun.xml.internal.fastinfoset.vocab.Vocabulary {
-                            public restrictedAlphabet: com.sun.xml.internal.fastinfoset.util.StringIntMap
-                            public encodingAlgorithm: com.sun.xml.internal.fastinfoset.util.StringIntMap
-                            public namespaceName: com.sun.xml.internal.fastinfoset.util.StringIntMap
-                            public prefix: com.sun.xml.internal.fastinfoset.util.StringIntMap
-                            public localName: com.sun.xml.internal.fastinfoset.util.StringIntMap
-                            public otherNCName: com.sun.xml.internal.fastinfoset.util.StringIntMap
-                            public otherURI: com.sun.xml.internal.fastinfoset.util.StringIntMap
-                            public attributeValue: com.sun.xml.internal.fastinfoset.util.StringIntMap
-                            public otherString: com.sun.xml.internal.fastinfoset.util.CharArrayIntMap
-                            public characterContentChunk: com.sun.xml.internal.fastinfoset.util.CharArrayIntMap
-                            public elementName: com.sun.xml.internal.fastinfoset.util.LocalNameQualifiedNamesMap
-                            public attributeName: com.sun.xml.internal.fastinfoset.util.LocalNameQualifiedNamesMap
-                            public tables: com.sun.xml.internal.fastinfoset.util.KeyIntMap[]
+                            public readonly restrictedAlphabet: com.sun.xml.internal.fastinfoset.util.StringIntMap
+                            public readonly encodingAlgorithm: com.sun.xml.internal.fastinfoset.util.StringIntMap
+                            public readonly namespaceName: com.sun.xml.internal.fastinfoset.util.StringIntMap
+                            public readonly prefix: com.sun.xml.internal.fastinfoset.util.StringIntMap
+                            public readonly localName: com.sun.xml.internal.fastinfoset.util.StringIntMap
+                            public readonly otherNCName: com.sun.xml.internal.fastinfoset.util.StringIntMap
+                            public readonly otherURI: com.sun.xml.internal.fastinfoset.util.StringIntMap
+                            public readonly attributeValue: com.sun.xml.internal.fastinfoset.util.StringIntMap
+                            public readonly otherString: com.sun.xml.internal.fastinfoset.util.CharArrayIntMap
+                            public readonly characterContentChunk: com.sun.xml.internal.fastinfoset.util.CharArrayIntMap
+                            public readonly elementName: com.sun.xml.internal.fastinfoset.util.LocalNameQualifiedNamesMap
+                            public readonly attributeName: com.sun.xml.internal.fastinfoset.util.LocalNameQualifiedNamesMap
+                            public readonly tables: com.sun.xml.internal.fastinfoset.util.KeyIntMap[]
                             protected _useLocalNameAsKey: boolean
                             protected _readOnlyVocabulary: com.sun.xml.internal.fastinfoset.vocab.SerializerVocabulary
                             public constructor()

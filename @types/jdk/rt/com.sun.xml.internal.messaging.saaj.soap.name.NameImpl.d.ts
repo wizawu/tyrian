@@ -7,18 +7,18 @@ declare namespace com {
                         namespace soap {
                             namespace name {
                                 class NameImpl implements javax.xml.soap.Name {
-                                    public static XML_NAMESPACE_PREFIX: string
-                                    public static XML_SCHEMA_NAMESPACE_PREFIX: string
-                                    public static SOAP_ENVELOPE_PREFIX: string
-                                    public static XML_NAMESPACE: string
-                                    public static SOAP11_NAMESPACE: string
-                                    public static SOAP12_NAMESPACE: string
-                                    public static XML_SCHEMA_NAMESPACE: string
+                                    public static readonly XML_NAMESPACE_PREFIX: string
+                                    public static readonly XML_SCHEMA_NAMESPACE_PREFIX: string
+                                    public static readonly SOAP_ENVELOPE_PREFIX: string
+                                    public static readonly XML_NAMESPACE: string
+                                    public static readonly SOAP11_NAMESPACE: string
+                                    public static readonly SOAP12_NAMESPACE: string
+                                    public static readonly XML_SCHEMA_NAMESPACE: string
                                     protected uri: string
                                     protected localName: string
                                     protected prefix: string
-                                    protected static log: java.util.logging.Logger
-                                    public static XMLNS_URI: string
+                                    protected static readonly log: java.util.logging.Logger
+                                    public static readonly XMLNS_URI: string
                                     protected constructor(arg0: java.lang.String | string)
                                     protected constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
                                     public static convertToName(arg0: javax.xml.namespace.QName): javax.xml.soap.Name

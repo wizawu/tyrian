@@ -3,12 +3,12 @@ declare namespace sun {
         namespace xr {
             abstract class XRSurfaceData extends sun.java2d.x11.XSurfaceData {
                 protected depth: int
-                public static DESC_BYTE_A8_X11: string
-                public static DESC_INT_RGB_X11: string
-                public static DESC_INT_ARGB_X11: string
-                public static ByteA8X11: sun.java2d.loops.SurfaceType
-                public static IntRgbX11: sun.java2d.loops.SurfaceType
-                public static IntArgbPreX11: sun.java2d.loops.SurfaceType
+                public static readonly DESC_BYTE_A8_X11: string
+                public static readonly DESC_INT_RGB_X11: string
+                public static readonly DESC_INT_ARGB_X11: string
+                public static readonly ByteA8X11: sun.java2d.loops.SurfaceType
+                public static readonly IntRgbX11: sun.java2d.loops.SurfaceType
+                public static readonly IntArgbPreX11: sun.java2d.loops.SurfaceType
                 protected xrpipe: sun.java2d.xr.XRRenderer
                 protected xrtxpipe: sun.java2d.pipe.PixelToShapeConverter
                 protected xrtextpipe: sun.java2d.pipe.TextPipe
@@ -33,7 +33,7 @@ declare namespace sun {
                 protected constructor(arg0: sun.java2d.xr.XRBackend)
                 public initXRender(arg0: int): void
                 public static getGC(arg0: sun.awt.X11ComponentPeer): sun.java2d.xr.XRGraphicsConfig
-                public canSourceSendExposures(arg0: int, arg1: int, arg2: int, arg3: int): boolean
+                public abstract canSourceSendExposures(arg0: int, arg1: int, arg2: int, arg3: int): boolean
                 public validateCopyAreaGC(arg0: sun.java2d.pipe.Region, arg1: boolean): void
                 public copyArea(arg0: sun.java2d.SunGraphics2D, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int): boolean
                 public static getSurfaceType(arg0: sun.java2d.xr.XRGraphicsConfig, arg1: int): sun.java2d.loops.SurfaceType
@@ -46,6 +46,9 @@ declare namespace sun {
                 public getGraphicsConfig(): sun.java2d.xr.XRGraphicsConfig
                 public setStaticSrcTx(arg0: java.awt.geom.AffineTransform): void
                 public static class: java.lang.Class<any>
+            }
+            interface XRSurfaceData$$Lambda extends sun.java2d.x11.XSurfaceData {
+                (arg0: int, arg1: int, arg2: int, arg3: int): boolean
             }
         }
     }

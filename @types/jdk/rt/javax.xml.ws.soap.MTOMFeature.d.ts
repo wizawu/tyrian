@@ -3,7 +3,7 @@ declare namespace javax {
         namespace ws {
             namespace soap {
                 class MTOMFeature extends javax.xml.ws.WebServiceFeature {
-                    public static ID: string
+                    public static readonly ID: string
                     protected threshold: int
                     public constructor()
                     public constructor(arg0: boolean)

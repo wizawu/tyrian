@@ -48,7 +48,7 @@ declare namespace com {
                             public read(arg0: int, arg1: int, arg2: int, arg3: long): java.nio.ByteBuffer
                             public read(arg0: java.nio.ByteBuffer, arg1: int, arg2: int, arg3: long): java.nio.ByteBuffer
                             public readFully(arg0: java.nio.ByteBuffer, arg1: int, arg2: long): void
-                            public readFully(arg0: java.io.InputStream, arg1: byte[], arg2: int, arg3: int, arg4: long): void
+                            public readFully(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: byte[], arg2: int, arg3: int, arg4: long): void
                             public write(arg0: java.nio.ByteBuffer): void
                             public close(): void
                             public closeConnectionResources(): void

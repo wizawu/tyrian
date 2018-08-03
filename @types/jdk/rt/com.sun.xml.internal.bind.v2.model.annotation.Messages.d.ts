@@ -7,8 +7,8 @@ declare namespace com {
                         namespace model {
                             namespace annotation {
                                 class Messages extends java.lang.Enum<com.sun.xml.internal.bind.v2.model.annotation.Messages> {
-                                    public static DUPLICATE_ANNOTATIONS: com.sun.xml.internal.bind.v2.model.annotation.Messages
-                                    public static CLASS_NOT_FOUND: com.sun.xml.internal.bind.v2.model.annotation.Messages
+                                    public static readonly DUPLICATE_ANNOTATIONS: com.sun.xml.internal.bind.v2.model.annotation.Messages
+                                    public static readonly CLASS_NOT_FOUND: com.sun.xml.internal.bind.v2.model.annotation.Messages
                                     public static values(): com.sun.xml.internal.bind.v2.model.annotation.Messages[]
                                     public static valueOf(arg0: java.lang.String | string): com.sun.xml.internal.bind.v2.model.annotation.Messages
                                     public toString(): string

@@ -7,9 +7,9 @@ declare namespace com {
                         namespace model {
                             namespace impl {
                                 class ModelBuilder<T, C, F, M> implements com.sun.xml.internal.bind.v2.model.impl.ModelBuilderI<T, C, F, M> {
-                                    public reader: com.sun.xml.internal.bind.v2.model.annotation.AnnotationReader<T, C, F, M>
-                                    public nav: com.sun.xml.internal.bind.v2.model.nav.Navigator<T, C, F, M>
-                                    public defaultNsUri: string
+                                    public readonly reader: com.sun.xml.internal.bind.v2.model.annotation.AnnotationReader<T, C, F, M>
+                                    public readonly nav: com.sun.xml.internal.bind.v2.model.nav.Navigator<T, C, F, M>
+                                    public readonly defaultNsUri: string
                                     public hasSwaRef: boolean
                                     public constructor(arg0: com.sun.xml.internal.bind.v2.model.annotation.AnnotationReader<T, C, F, M>, arg1: com.sun.xml.internal.bind.v2.model.nav.Navigator<T, C, F, M>, arg2: java.util.Map<C, C>, arg3: java.lang.String | string)
                                     protected createTypeInfoSet(): com.sun.xml.internal.bind.v2.model.impl.TypeInfoSetImpl<T, C, F, M>

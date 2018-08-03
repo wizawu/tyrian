@@ -6,13 +6,13 @@ declare namespace com {
                     namespace pack {
                         abstract class Instruction$Switch extends com.sun.java.util.jar.pack.Instruction {
                             protected apc: int
-                            public getCaseCount(): int
-                            public getCaseValue(arg0: int): int
-                            public getCaseLabel(arg0: int): int
-                            public setCaseCount(arg0: int): void
-                            public setCaseValue(arg0: int, arg1: int): void
-                            public setCaseLabel(arg0: int, arg1: int): void
-                            protected getLength(arg0: int): int
+                            public abstract getCaseCount(): int
+                            public abstract getCaseValue(arg0: int): int
+                            public abstract getCaseLabel(arg0: int): int
+                            public abstract setCaseCount(arg0: int): void
+                            public abstract setCaseValue(arg0: int, arg1: int): void
+                            public abstract setCaseLabel(arg0: int, arg1: int): void
+                            protected abstract getLength(arg0: int): int
                             public getDefaultLabel(): int
                             public setDefaultLabel(arg0: int): void
                             protected intAt(arg0: int): int

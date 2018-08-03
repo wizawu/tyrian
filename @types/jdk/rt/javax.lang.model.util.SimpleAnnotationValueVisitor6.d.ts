@@ -3,7 +3,7 @@ declare namespace javax {
         namespace model {
             namespace util {
                 class SimpleAnnotationValueVisitor6<R, P> extends javax.lang.model.util.AbstractAnnotationValueVisitor6<R, P> {
-                    protected DEFAULT_VALUE: R
+                    protected readonly DEFAULT_VALUE: R
                     protected constructor()
                     protected constructor(arg0: R)
                     protected defaultAction(arg0: java.lang.Object, arg1: P): R

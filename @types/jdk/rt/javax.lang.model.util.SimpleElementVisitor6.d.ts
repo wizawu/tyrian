@@ -3,7 +3,7 @@ declare namespace javax {
         namespace model {
             namespace util {
                 class SimpleElementVisitor6<R, P> extends javax.lang.model.util.AbstractElementVisitor6<R, P> {
-                    protected DEFAULT_VALUE: R
+                    protected readonly DEFAULT_VALUE: R
                     protected constructor()
                     protected constructor(arg0: R)
                     protected defaultAction(arg0: javax.lang.model.element.Element, arg1: P): R

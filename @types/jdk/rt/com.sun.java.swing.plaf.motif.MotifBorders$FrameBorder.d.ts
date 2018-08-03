@@ -5,7 +5,7 @@ declare namespace com {
                 namespace plaf {
                     namespace motif {
                         class MotifBorders$FrameBorder extends javax.swing.border.AbstractBorder implements javax.swing.plaf.UIResource {
-                            public static BORDER_SIZE: int
+                            public static readonly BORDER_SIZE: int
                             public constructor(arg0: javax.swing.JComponent)
                             public setComponent(arg0: javax.swing.JComponent): void
                             public component(): javax.swing.JComponent

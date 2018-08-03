@@ -19,9 +19,9 @@ declare namespace com {
                                     public _mediaType: string
                                     public _cdata: java.util.Vector
                                     public _indentamount: int
-                                    public static FIRST_TRANSLET_VERSION: int
-                                    public static VER_SPLIT_NAMES_ARRAY: int
-                                    public static CURRENT_TRANSLET_VERSION: int
+                                    public static readonly FIRST_TRANSLET_VERSION: int
+                                    public static readonly VER_SPLIT_NAMES_ARRAY: int
+                                    public static readonly CURRENT_TRANSLET_VERSION: int
                                     protected transletVersion: int
                                     protected namesArray: java.lang.String[]
                                     protected urisArray: java.lang.String[]
@@ -62,7 +62,7 @@ declare namespace com {
                                     public openOutputHandler(arg0: java.lang.String | string, arg1: boolean): com.sun.org.apache.xml.internal.serializer.SerializationHandler
                                     public openOutputHandler(arg0: java.lang.String | string): com.sun.org.apache.xml.internal.serializer.SerializationHandler
                                     public closeOutputHandler(arg0: com.sun.org.apache.xml.internal.serializer.SerializationHandler): void
-                                    public transform(arg0: com.sun.org.apache.xalan.internal.xsltc.DOM, arg1: com.sun.org.apache.xml.internal.dtm.DTMAxisIterator, arg2: com.sun.org.apache.xml.internal.serializer.SerializationHandler): void
+                                    public abstract transform(arg0: com.sun.org.apache.xalan.internal.xsltc.DOM, arg1: com.sun.org.apache.xml.internal.dtm.DTMAxisIterator, arg2: com.sun.org.apache.xml.internal.serializer.SerializationHandler): void
                                     public transform(arg0: com.sun.org.apache.xalan.internal.xsltc.DOM, arg1: com.sun.org.apache.xml.internal.serializer.SerializationHandler): void
                                     public characters(arg0: java.lang.String | string, arg1: com.sun.org.apache.xml.internal.serializer.SerializationHandler): void
                                     public addCdataElement(arg0: java.lang.String | string): void
@@ -83,6 +83,9 @@ declare namespace com {
                                     public setAllowedProtocols(arg0: java.lang.String | string): void
                                     public newDocument(arg0: java.lang.String | string, arg1: java.lang.String | string): org.w3c.dom.Document
                                     public static class: java.lang.Class<any>
+                                }
+                                interface AbstractTranslet$$Lambda implements com.sun.org.apache.xalan.internal.xsltc.Translet {
+                                    (arg0: com.sun.org.apache.xalan.internal.xsltc.DOM, arg1: com.sun.org.apache.xml.internal.dtm.DTMAxisIterator, arg2: com.sun.org.apache.xml.internal.serializer.SerializationHandler): void
                                 }
                             }
                         }

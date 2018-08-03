@@ -4,7 +4,7 @@ declare namespace com {
             namespace registries {
                 class MailcapFile {
                     public constructor(arg0: java.lang.String | string)
-                    public constructor(arg0: java.io.InputStream)
+                    public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                     public constructor()
                     public getMailcapList(arg0: java.lang.String | string): java.util.Map
                     public getMailcapFallbackList(arg0: java.lang.String | string): java.util.Map

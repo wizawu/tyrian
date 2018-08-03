@@ -34,7 +34,7 @@ declare namespace jdk {
                     public G$setFloat32(): java.lang.Object
                     public S$setFloat32(arg0: java.lang.Object): void
                     public G$setFloat64(): java.lang.Object
-                    public public S$setFloat64(arg0: java.lang.Object): void
+                    public static public S$setFloat64(arg0: java.lang.Object): void
                     public getClassName(): string
                     public static class: java.lang.Class<any>
                 }

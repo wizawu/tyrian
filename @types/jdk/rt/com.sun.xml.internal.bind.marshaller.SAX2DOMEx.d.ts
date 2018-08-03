@@ -5,8 +5,8 @@ declare namespace com {
                 namespace bind {
                     namespace marshaller {
                         class SAX2DOMEx implements org.xml.sax.ContentHandler {
-                            protected nodeStack: java.util.Stack<org.w3c.dom.Node>
-                            protected document: org.w3c.dom.Document
+                            protected readonly nodeStack: java.util.Stack<org.w3c.dom.Node>
+                            protected readonly document: org.w3c.dom.Document
                             public constructor(arg0: org.w3c.dom.Node)
                             public constructor(arg0: org.w3c.dom.Node, arg1: boolean)
                             public constructor(arg0: javax.xml.parsers.DocumentBuilderFactory)

@@ -14,7 +14,7 @@ declare namespace jdk {
                     public G$isPrototypeOf(): java.lang.Object
                     public S$isPrototypeOf(arg0: java.lang.Object): void
                     public G$propertyIsEnumerable(): java.lang.Object
-                    public public S$propertyIsEnumerable(arg0: java.lang.Object): void
+                    public static public S$propertyIsEnumerable(arg0: java.lang.Object): void
                     public getClassName(): string
                     public static class: java.lang.Class<any>
                 }

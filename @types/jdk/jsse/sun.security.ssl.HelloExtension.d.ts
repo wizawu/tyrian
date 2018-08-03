@@ -2,8 +2,11 @@ declare namespace sun {
     namespace security {
         namespace ssl {
             abstract class HelloExtension {
-                public toString(): string
+                public abstract toString(): string
                 public static class: java.lang.Class<any>
+            }
+            interface HelloExtension$$Lambda {
+                (): string
             }
         }
     }

@@ -2,7 +2,7 @@ declare namespace javax {
     namespace sound {
         namespace sampled {
             class AudioSystem {
-                public static NOT_SPECIFIED: int
+                public static readonly NOT_SPECIFIED: int
                 public static getMixerInfo(): javax.sound.sampled.Mixer$Info[]
                 public static getMixer(arg0: javax.sound.sampled.Mixer$Info): javax.sound.sampled.Mixer
                 public static getSourceLineInfo(arg0: javax.sound.sampled.Line$Info): javax.sound.sampled.Line$Info[]
@@ -22,17 +22,17 @@ declare namespace javax {
                 public static getTargetFormats(arg0: javax.sound.sampled.AudioFormat$Encoding, arg1: javax.sound.sampled.AudioFormat): javax.sound.sampled.AudioFormat[]
                 public static isConversionSupported(arg0: javax.sound.sampled.AudioFormat, arg1: javax.sound.sampled.AudioFormat): boolean
                 public static getAudioInputStream(arg0: javax.sound.sampled.AudioFormat, arg1: javax.sound.sampled.AudioInputStream): javax.sound.sampled.AudioInputStream
-                public static getAudioFileFormat(arg0: java.io.InputStream): javax.sound.sampled.AudioFileFormat
+                public static getAudioFileFormat(arg0: java.io.InputStream | java.io.InputStream$$Lambda): javax.sound.sampled.AudioFileFormat
                 public static getAudioFileFormat(arg0: java.net.URL): javax.sound.sampled.AudioFileFormat
                 public static getAudioFileFormat(arg0: java.io.File): javax.sound.sampled.AudioFileFormat
-                public static getAudioInputStream(arg0: java.io.InputStream): javax.sound.sampled.AudioInputStream
+                public static getAudioInputStream(arg0: java.io.InputStream | java.io.InputStream$$Lambda): javax.sound.sampled.AudioInputStream
                 public static getAudioInputStream(arg0: java.net.URL): javax.sound.sampled.AudioInputStream
                 public static getAudioInputStream(arg0: java.io.File): javax.sound.sampled.AudioInputStream
                 public static getAudioFileTypes(): javax.sound.sampled.AudioFileFormat$Type[]
                 public static isFileTypeSupported(arg0: javax.sound.sampled.AudioFileFormat$Type): boolean
                 public static getAudioFileTypes(arg0: javax.sound.sampled.AudioInputStream): javax.sound.sampled.AudioFileFormat$Type[]
                 public static isFileTypeSupported(arg0: javax.sound.sampled.AudioFileFormat$Type, arg1: javax.sound.sampled.AudioInputStream): boolean
-                public static write(arg0: javax.sound.sampled.AudioInputStream, arg1: javax.sound.sampled.AudioFileFormat$Type, arg2: java.io.OutputStream): int
+                public static write(arg0: javax.sound.sampled.AudioInputStream, arg1: javax.sound.sampled.AudioFileFormat$Type, arg2: java.io.OutputStream | java.io.OutputStream$$Lambda): int
                 public static write(arg0: javax.sound.sampled.AudioInputStream, arg1: javax.sound.sampled.AudioFileFormat$Type, arg2: java.io.File): int
                 public static class: java.lang.Class<any>
             }

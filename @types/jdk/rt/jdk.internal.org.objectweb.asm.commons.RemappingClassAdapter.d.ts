@@ -5,7 +5,7 @@ declare namespace jdk {
                 namespace asm {
                     namespace commons {
                         class RemappingClassAdapter extends jdk.internal.org.objectweb.asm.ClassVisitor {
-                            protected remapper: jdk.internal.org.objectweb.asm.commons.Remapper
+                            protected readonly remapper: jdk.internal.org.objectweb.asm.commons.Remapper
                             protected className: string
                             public constructor(arg0: jdk.internal.org.objectweb.asm.ClassVisitor, arg1: jdk.internal.org.objectweb.asm.commons.Remapper)
                             protected constructor(arg0: int, arg1: jdk.internal.org.objectweb.asm.ClassVisitor, arg2: jdk.internal.org.objectweb.asm.commons.Remapper)

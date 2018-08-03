@@ -2,8 +2,8 @@ declare namespace java {
     namespace lang {
         namespace invoke {
             abstract class FoldHandle extends java.lang.invoke.MethodHandle {
-                protected next: java.lang.invoke.MethodHandle
-                protected combiner: java.lang.invoke.MethodHandle
+                protected readonly next: java.lang.invoke.MethodHandle
+                protected readonly combiner: java.lang.invoke.MethodHandle
                 protected constructor(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.invoke.MethodHandle, arg2: java.lang.invoke.MethodType, arg3: int, ...arg4: int[])
                 public static get(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.invoke.MethodHandle, arg2: java.lang.invoke.MethodType, arg3: int, ...arg4: int[]): java.lang.invoke.FoldHandle
                 protected thunkTable(): java.lang.invoke.ThunkTable

@@ -5,9 +5,6 @@ declare namespace javax {
                 interface XmlReader extends javax.sql.RowSetReader {
                     readXML(arg0: javax.sql.rowset.WebRowSet, arg1: java.io.Reader): void
                 }
-                interface XmlReader$$Lambda extends javax.sql.RowSetReader {
-                    (arg0: javax.sql.rowset.WebRowSet, arg1: java.io.Reader): void
-                }
             }
         }
     }

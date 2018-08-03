@@ -2,8 +2,8 @@ declare namespace com {
     namespace ibm {
         namespace cuda {
             class CudaStream implements java.lang.AutoCloseable {
-                public static FLAG_DEFAULT: int
-                public static FLAG_NON_BLOCKING: int
+                public static readonly FLAG_DEFAULT: int
+                public static readonly FLAG_NON_BLOCKING: int
                 public constructor(arg0: com.ibm.cuda.CudaDevice)
                 public constructor(arg0: com.ibm.cuda.CudaDevice, arg1: int, arg2: int)
                 public addCallback(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda): void

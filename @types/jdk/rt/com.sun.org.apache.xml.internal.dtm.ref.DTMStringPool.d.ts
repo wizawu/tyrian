@@ -7,7 +7,7 @@ declare namespace com {
                         namespace dtm {
                             namespace ref {
                                 class DTMStringPool {
-                                    public static NULL: int
+                                    public static readonly NULL: int
                                     public constructor(arg0: int)
                                     public constructor()
                                     public removeAllElements(): void

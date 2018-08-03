@@ -8,7 +8,7 @@ declare namespace jdk {
                     canBeOptimistic(): boolean
                     getMostOptimisticType(): jdk.nashorn.internal.codegen.types.Type
                     getMostPessimisticType(): jdk.nashorn.internal.codegen.types.Type
-                    setType(arg0: jdk.nashorn.internal.codegen.types.Type): jdk.nashorn.internal.ir.Optimistic
+                    setType(arg0: jdk.nashorn.internal.codegen.types.Type | jdk.nashorn.internal.codegen.types.Type$$Lambda): jdk.nashorn.internal.ir.Optimistic
                 }
             }
         }

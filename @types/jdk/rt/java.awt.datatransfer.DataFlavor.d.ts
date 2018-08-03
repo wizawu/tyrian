@@ -2,13 +2,13 @@ declare namespace java {
     namespace awt {
         namespace datatransfer {
             class DataFlavor implements java.io.Externalizable , java.lang.Cloneable {
-                public static stringFlavor: java.awt.datatransfer.DataFlavor
-                public static imageFlavor: java.awt.datatransfer.DataFlavor
-                public static plainTextFlavor: java.awt.datatransfer.DataFlavor
-                public static javaSerializedObjectMimeType: string
-                public static javaFileListFlavor: java.awt.datatransfer.DataFlavor
-                public static javaJVMLocalObjectMimeType: string
-                public static javaRemoteObjectMimeType: string
+                public static readonly stringFlavor: java.awt.datatransfer.DataFlavor
+                public static readonly imageFlavor: java.awt.datatransfer.DataFlavor
+                public static readonly plainTextFlavor: java.awt.datatransfer.DataFlavor
+                public static readonly javaSerializedObjectMimeType: string
+                public static readonly javaFileListFlavor: java.awt.datatransfer.DataFlavor
+                public static readonly javaJVMLocalObjectMimeType: string
+                public static readonly javaRemoteObjectMimeType: string
                 public static selectionHtmlFlavor: java.awt.datatransfer.DataFlavor
                 public static fragmentHtmlFlavor: java.awt.datatransfer.DataFlavor
                 public static allHtmlFlavor: java.awt.datatransfer.DataFlavor

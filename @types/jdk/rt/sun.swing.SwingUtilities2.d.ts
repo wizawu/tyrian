@@ -1,13 +1,13 @@
 declare namespace sun {
     namespace swing {
         class SwingUtilities2 {
-            public static LAF_STATE_KEY: java.lang.Object
-            public static MENU_SELECTION_MANAGER_LISTENER_KEY: java.lang.Object
-            public static DEFAULT_FRC: java.awt.font.FontRenderContext
-            public static AA_TEXT_PROPERTY_KEY: java.lang.Object
-            public static IMPLIED_CR: string
-            public static COMPONENT_UI_PROPERTY_KEY: java.lang.Object
-            public static BASICMENUITEMUI_MAX_TEXT_OFFSET: sun.swing.StringUIClientPropertyKey
+            public static readonly LAF_STATE_KEY: java.lang.Object
+            public static readonly MENU_SELECTION_MANAGER_LISTENER_KEY: java.lang.Object
+            public static readonly DEFAULT_FRC: java.awt.font.FontRenderContext
+            public static readonly AA_TEXT_PROPERTY_KEY: java.lang.Object
+            public static readonly IMPLIED_CR: string
+            public static readonly COMPONENT_UI_PROPERTY_KEY: java.lang.Object
+            public static readonly BASICMENUITEMUI_MAX_TEXT_OFFSET: sun.swing.StringUIClientPropertyKey
             public constructor()
             public static isComplexLayout(arg0: char[], arg1: int, arg2: int): boolean
             public static drawTextAntialiased(arg0: javax.swing.JComponent): sun.swing.SwingUtilities2$AATextInfo
@@ -49,14 +49,14 @@ declare namespace sun {
             public static tabbedPaneChangeFocusTo(arg0: java.awt.Component): boolean
             public static submit<V>(arg0: java.util.concurrent.Callable<V> | java.util.concurrent.Callable$$Lambda<V>): java.util.concurrent.Future<V>
             public static submit<V>(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda, arg1: V): java.util.concurrent.Future<V>
-            public static setSkipClickCount(arg0: java.awt.Component, arg1: int): void
-            public static getAdjustedClickCount(arg0: javax.swing.text.JTextComponent, arg1: java.awt.event.MouseEvent): int
-            public static liesInHorizontal(arg0: java.awt.Rectangle, arg1: java.awt.Point, arg2: boolean, arg3: boolean): sun.swing.SwingUtilities2$Section
-            public static liesInVertical(arg0: java.awt.Rectangle, arg1: java.awt.Point, arg2: boolean): sun.swing.SwingUtilities2$Section
-            public static convertColumnIndexToModel(arg0: javax.swing.table.TableColumnModel, arg1: int): int
-            public static convertColumnIndexToView(arg0: javax.swing.table.TableColumnModel, arg1: int): int
-            public static getSystemMnemonicKeyMask(): int
-            public static getTreePath(arg0: javax.swing.event.TreeModelEvent, arg1: javax.swing.tree.TreeModel): javax.swing.tree.TreePath
+            public static setSkipClickCount<V>(arg0: java.awt.Component, arg1: int): void
+            public static getAdjustedClickCount<V>(arg0: javax.swing.text.JTextComponent, arg1: java.awt.event.MouseEvent): int
+            public static liesInHorizontal<V>(arg0: java.awt.Rectangle, arg1: java.awt.Point, arg2: boolean, arg3: boolean): sun.swing.SwingUtilities2$Section
+            public static liesInVertical<V>(arg0: java.awt.Rectangle, arg1: java.awt.Point, arg2: boolean): sun.swing.SwingUtilities2$Section
+            public static convertColumnIndexToModel<V>(arg0: javax.swing.table.TableColumnModel, arg1: int): int
+            public static convertColumnIndexToView<V>(arg0: javax.swing.table.TableColumnModel, arg1: int): int
+            public static getSystemMnemonicKeyMask<V>(): int
+            public static getTreePath<V>(arg0: javax.swing.event.TreeModelEvent, arg1: javax.swing.tree.TreeModel): javax.swing.tree.TreePath
             public static class: java.lang.Class<any>
         }
     }

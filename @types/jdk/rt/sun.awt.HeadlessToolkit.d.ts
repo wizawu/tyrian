@@ -67,8 +67,8 @@ declare namespace sun {
             public getDataTransferer<T extends java.awt.dnd.DragGestureRecognizer>(): sun.awt.datatransfer.DataTransferer
             public getFontMetrics<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Font): java.awt.FontMetrics
             public getFontList<T extends java.awt.dnd.DragGestureRecognizer>(): java.lang.String[]
-            public addPropertyChangeListener<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
-            public removePropertyChangeListener<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            public addPropertyChangeListener<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener): void
+            public removePropertyChangeListener<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener): void
             public isModalityTypeSupported<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Dialog$ModalityType): boolean
             public isModalExclusionTypeSupported<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Dialog$ModalExclusionType): boolean
             public isAlwaysOnTopSupported<T extends java.awt.dnd.DragGestureRecognizer>(): boolean

@@ -24,12 +24,12 @@ declare namespace javax {
                     protected restoreAction: javax.swing.Action
                     protected moveAction: javax.swing.Action
                     protected sizeAction: javax.swing.Action
-                    protected static CLOSE_CMD: string
-                    protected static ICONIFY_CMD: string
-                    protected static RESTORE_CMD: string
-                    protected static MAXIMIZE_CMD: string
-                    protected static MOVE_CMD: string
-                    protected static SIZE_CMD: string
+                    protected static readonly CLOSE_CMD: string
+                    protected static readonly ICONIFY_CMD: string
+                    protected static readonly RESTORE_CMD: string
+                    protected static readonly MAXIMIZE_CMD: string
+                    protected static readonly MOVE_CMD: string
+                    protected static readonly SIZE_CMD: string
                     public constructor(arg0: javax.swing.JInternalFrame)
                     protected installTitlePane(): void
                     protected addSubComponents(): void

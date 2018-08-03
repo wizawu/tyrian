@@ -7,7 +7,7 @@ declare namespace com {
                         namespace soap {
                             namespace ver1_2 {
                                 class Fault1_2Impl extends com.sun.xml.internal.messaging.saaj.soap.impl.FaultImpl {
-                                    protected static log: java.util.logging.Logger
+                                    protected static readonly log: java.util.logging.Logger
                                     public constructor(arg0: com.sun.xml.internal.messaging.saaj.soap.SOAPDocumentImpl, arg1: java.lang.String | string, arg2: java.lang.String | string)
                                     public constructor(arg0: com.sun.xml.internal.messaging.saaj.soap.SOAPDocumentImpl, arg1: java.lang.String | string)
                                     protected getDetailName(): com.sun.xml.internal.messaging.saaj.soap.name.NameImpl

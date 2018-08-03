@@ -3,7 +3,7 @@ declare namespace jdk {
         namespace internal {
             namespace objects {
                 class NativeUint16Array extends jdk.nashorn.internal.objects.ArrayBufferView {
-                    public static BYTES_PER_ELEMENT: int
+                    public static readonly BYTES_PER_ELEMENT: int
                     public static constructor(arg0: boolean, arg1: java.lang.Object, ...arg2: java.lang.Object[]): jdk.nashorn.internal.objects.NativeUint16Array
                     protected factory(): jdk.nashorn.internal.objects.ArrayBufferView$Factory
                     protected static set(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): java.lang.Object

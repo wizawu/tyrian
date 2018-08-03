@@ -7,7 +7,7 @@ declare namespace java {
             public constructor(arg0: int)
             public write(arg0: int): void
             public write(arg0: byte[], arg1: int, arg2: int): void
-            public writeTo(arg0: java.io.OutputStream): void
+            public writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
             public reset(): void
             public toByteArray(): byte[]
             public size(): int

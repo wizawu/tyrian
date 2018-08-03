@@ -2,12 +2,12 @@ declare namespace sun {
     namespace security {
         namespace pkcs {
             class PKCS7 {
-                public constructor(arg0: java.io.InputStream)
+                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                 public constructor(arg0: sun.security.util.DerInputStream)
                 public constructor(arg0: byte[])
                 public constructor(arg0: sun.security.x509.AlgorithmId[], arg1: sun.security.pkcs.ContentInfo, arg2: java.security.cert.X509Certificate[], arg3: java.security.cert.X509CRL[], arg4: sun.security.pkcs.SignerInfo[])
                 public constructor(arg0: sun.security.x509.AlgorithmId[], arg1: sun.security.pkcs.ContentInfo, arg2: java.security.cert.X509Certificate[], arg3: sun.security.pkcs.SignerInfo[])
-                public encodeSignedData(arg0: java.io.OutputStream): void
+                public encodeSignedData(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                 public encodeSignedData(arg0: sun.security.util.DerOutputStream): void
                 public verify(arg0: sun.security.pkcs.SignerInfo, arg1: byte[]): sun.security.pkcs.SignerInfo
                 public verify(arg0: byte[]): sun.security.pkcs.SignerInfo[]

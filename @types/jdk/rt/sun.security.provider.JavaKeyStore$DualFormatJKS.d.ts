@@ -3,8 +3,8 @@ declare namespace sun {
         namespace provider {
             class JavaKeyStore$DualFormatJKS extends sun.security.provider.KeyStoreDelegator {
                 public constructor()
-                public engineLoad(arg0: java.io.InputStream, arg1: char[]): void
-                public engineStore(arg0: java.io.OutputStream, arg1: char[]): void
+                public engineLoad(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: char[]): void
+                public engineStore(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: char[]): void
                 public engineEntryInstanceOf(arg0: java.lang.String | string, arg1: java.lang.Class): boolean
                 public engineSetEntry(arg0: java.lang.String | string, arg1: java.security.KeyStore$Entry | java.security.KeyStore$Entry$$Lambda, arg2: java.security.KeyStore$ProtectionParameter): void
                 public engineGetEntry(arg0: java.lang.String | string, arg1: java.security.KeyStore$ProtectionParameter): java.security.KeyStore$Entry

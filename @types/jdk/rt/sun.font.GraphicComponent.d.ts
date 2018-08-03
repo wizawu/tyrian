@@ -1,7 +1,7 @@
 declare namespace sun {
     namespace font {
         class GraphicComponent implements sun.font.TextLineComponent , sun.font.Decoration$Label {
-            public static GRAPHIC_LEADING: float
+            public static readonly GRAPHIC_LEADING: float
             public constructor(arg0: java.awt.font.GraphicAttribute, arg1: sun.font.Decoration, arg2: int[], arg3: byte[], arg4: int, arg5: int, arg6: java.awt.geom.AffineTransform)
             public isSimple(): boolean
             public getPixelBounds(arg0: java.awt.font.FontRenderContext, arg1: float, arg2: float): java.awt.Rectangle

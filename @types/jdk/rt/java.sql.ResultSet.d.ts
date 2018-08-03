@@ -92,8 +92,8 @@ declare namespace java {
             updateDate(arg0: int, arg1: java.sql.Date): void
             updateTime(arg0: int, arg1: java.sql.Time): void
             updateTimestamp(arg0: int, arg1: java.sql.Timestamp): void
-            updateAsciiStream(arg0: int, arg1: java.io.InputStream, arg2: int): void
-            updateBinaryStream(arg0: int, arg1: java.io.InputStream, arg2: int): void
+            updateAsciiStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
+            updateBinaryStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
             updateCharacterStream(arg0: int, arg1: java.io.Reader, arg2: int): void
             updateObject(arg0: int, arg1: java.lang.Object, arg2: int): void
             updateObject(arg0: int, arg1: java.lang.Object): void
@@ -111,8 +111,8 @@ declare namespace java {
             updateDate(arg0: java.lang.String | string, arg1: java.sql.Date): void
             updateTime(arg0: java.lang.String | string, arg1: java.sql.Time): void
             updateTimestamp(arg0: java.lang.String | string, arg1: java.sql.Timestamp): void
-            updateAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: int): void
-            updateBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: int): void
+            updateAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
+            updateBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: int): void
             updateCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: int): void
             updateObject(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: int): void
             updateObject(arg0: java.lang.String | string, arg1: java.lang.Object): void
@@ -172,38 +172,38 @@ declare namespace java {
             getNCharacterStream(arg0: java.lang.String | string): java.io.Reader
             updateNCharacterStream(arg0: int, arg1: java.io.Reader, arg2: long): void
             updateNCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: long): void
-            updateAsciiStream(arg0: int, arg1: java.io.InputStream, arg2: long): void
-            updateBinaryStream(arg0: int, arg1: java.io.InputStream, arg2: long): void
+            updateAsciiStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
+            updateBinaryStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
             updateCharacterStream(arg0: int, arg1: java.io.Reader, arg2: long): void
-            updateAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: long): void
-            updateBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: long): void
+            updateAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
+            updateBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
             updateCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: long): void
-            updateBlob(arg0: int, arg1: java.io.InputStream, arg2: long): void
-            updateBlob(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: long): void
+            updateBlob(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
+            updateBlob(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda, arg2: long): void
             updateClob(arg0: int, arg1: java.io.Reader, arg2: long): void
             updateClob(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: long): void
             updateNClob(arg0: int, arg1: java.io.Reader, arg2: long): void
             updateNClob(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: long): void
             updateNCharacterStream(arg0: int, arg1: java.io.Reader): void
             updateNCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader): void
-            updateAsciiStream(arg0: int, arg1: java.io.InputStream): void
-            updateBinaryStream(arg0: int, arg1: java.io.InputStream): void
+            updateAsciiStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
+            updateBinaryStream(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
             updateCharacterStream(arg0: int, arg1: java.io.Reader): void
-            updateAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream): void
-            updateBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream): void
+            updateAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
+            updateBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
             updateCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader): void
-            updateBlob(arg0: int, arg1: java.io.InputStream): void
-            updateBlob(arg0: java.lang.String | string, arg1: java.io.InputStream): void
+            updateBlob(arg0: int, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
+            updateBlob(arg0: java.lang.String | string, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
             updateClob(arg0: int, arg1: java.io.Reader): void
             updateClob(arg0: java.lang.String | string, arg1: java.io.Reader): void
             updateNClob(arg0: int, arg1: java.io.Reader): void
             updateNClob(arg0: java.lang.String | string, arg1: java.io.Reader): void
             getObject<T>(arg0: int, arg1: java.lang.Class<T>): T
             getObject<T>(arg0: java.lang.String | string, arg1: java.lang.Class<T>): T
-            updateObject(arg0: int, arg1: java.lang.Object, arg2: java.sql.SQLType, arg3: int): void
-            updateObject(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: java.sql.SQLType, arg3: int): void
-            updateObject(arg0: int, arg1: java.lang.Object, arg2: java.sql.SQLType): void
-            updateObject(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: java.sql.SQLType): void
+            updateObject<T>(arg0: int, arg1: java.lang.Object, arg2: java.sql.SQLType, arg3: int): void
+            updateObject<T>(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: java.sql.SQLType, arg3: int): void
+            updateObject<T>(arg0: int, arg1: java.lang.Object, arg2: java.sql.SQLType): void
+            updateObject<T>(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: java.sql.SQLType): void
         }
     }
 }

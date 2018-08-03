@@ -3,7 +3,7 @@ declare namespace com {
         namespace media {
             namespace sound {
                 class DLSRegion {
-                    public static OPTION_SELFNONEXCLUSIVE: int
+                    public static readonly OPTION_SELFNONEXCLUSIVE: int
                     public constructor()
                     public getModulators(): java.util.List<com.sun.media.sound.DLSModulator>
                     public getChannel(): long

@@ -3,8 +3,8 @@ declare namespace sun {
         namespace pkcs11 {
             namespace wrapper {
                 class Constants {
-                    public static NEWLINE: string
-                    public static INDENT: string
+                    public static readonly NEWLINE: string
+                    public static readonly INDENT: string
                     public constructor()
                     public static class: java.lang.Class<any>
                 }

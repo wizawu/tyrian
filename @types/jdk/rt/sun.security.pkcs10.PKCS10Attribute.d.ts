@@ -7,7 +7,7 @@ declare namespace sun {
                 public constructor(arg0: sun.security.util.DerValue)
                 public constructor(arg0: sun.security.util.ObjectIdentifier, arg1: java.lang.Object)
                 public constructor(arg0: sun.security.pkcs.PKCS9Attribute)
-                public derEncode(arg0: java.io.OutputStream): void
+                public derEncode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                 public getAttributeId(): sun.security.util.ObjectIdentifier
                 public getAttributeValue(): java.lang.Object
                 public toString(): string

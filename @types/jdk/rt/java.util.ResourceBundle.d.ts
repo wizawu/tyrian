@@ -17,8 +17,8 @@ declare namespace java {
             public static getBundle(arg0: java.lang.String | string, arg1: java.util.Locale, arg2: java.lang.ClassLoader, arg3: java.util.ResourceBundle$Control): java.util.ResourceBundle
             public static clearCache(): void
             public static clearCache(arg0: java.lang.ClassLoader): void
-            protected handleGetObject(arg0: java.lang.String | string): java.lang.Object
-            public getKeys(): java.util.Enumeration<java.lang.String>
+            protected abstract handleGetObject(arg0: java.lang.String | string): java.lang.Object
+            public abstract getKeys(): java.util.Enumeration<java.lang.String>
             public containsKey(arg0: java.lang.String | string): boolean
             public keySet(): java.util.Set<java.lang.String>
             protected handleKeySet(): java.util.Set<java.lang.String>

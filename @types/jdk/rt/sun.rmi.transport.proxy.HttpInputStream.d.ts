@@ -5,7 +5,7 @@ declare namespace sun {
                 class HttpInputStream extends java.io.FilterInputStream {
                     protected bytesLeft: int
                     protected bytesLeftAtMark: int
-                    public constructor(arg0: java.io.InputStream)
+                    public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                     public available(): int
                     public read(): int
                     public read(arg0: byte[], arg1: int, arg2: int): int

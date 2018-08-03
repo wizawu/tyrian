@@ -1,10 +1,10 @@
 declare namespace java {
     namespace awt {
         class TextArea extends java.awt.TextComponent {
-            public static SCROLLBARS_BOTH: int
-            public static SCROLLBARS_VERTICAL_ONLY: int
-            public static SCROLLBARS_HORIZONTAL_ONLY: int
-            public static SCROLLBARS_NONE: int
+            public static readonly SCROLLBARS_BOTH: int
+            public static readonly SCROLLBARS_VERTICAL_ONLY: int
+            public static readonly SCROLLBARS_HORIZONTAL_ONLY: int
+            public static readonly SCROLLBARS_NONE: int
             public constructor()
             public constructor(arg0: java.lang.String | string)
             public constructor(arg0: int, arg1: int)

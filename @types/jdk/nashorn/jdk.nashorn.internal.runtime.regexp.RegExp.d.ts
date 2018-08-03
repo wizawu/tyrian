@@ -12,9 +12,12 @@ declare namespace jdk {
                         public isIgnoreCase(): boolean
                         public isMultiline(): boolean
                         public getGroupsInNegativeLookahead(): jdk.nashorn.internal.runtime.BitVector
-                        public match(arg0: java.lang.String | string): jdk.nashorn.internal.runtime.regexp.RegExpMatcher
+                        public abstract match(arg0: java.lang.String | string): jdk.nashorn.internal.runtime.regexp.RegExpMatcher
                         protected static throwParserException(arg0: java.lang.String | string, arg1: java.lang.String | string): void
                         public static class: java.lang.Class<any>
+                    }
+                    interface RegExp$$Lambda {
+                        (arg0: java.lang.String | string): jdk.nashorn.internal.runtime.regexp.RegExpMatcher
                     }
                 }
             }

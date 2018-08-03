@@ -9,7 +9,7 @@ declare namespace com {
                                 protected features: com.sun.xml.internal.ws.binding.WebServiceFeatureList
                                 protected constructor(arg0: javax.xml.stream.XMLStreamReader)
                                 protected constructor(arg0: java.lang.String | string, arg1: int)
-                                public addFeature(arg0: javax.xml.ws.WebServiceFeature): void
+                                public addFeature(arg0: javax.xml.ws.WebServiceFeature | javax.xml.ws.WebServiceFeature$$Lambda): void
                                 public getFeatures(): com.sun.xml.internal.ws.binding.WebServiceFeatureList
                                 public getFeature(arg0: java.lang.String | string): javax.xml.ws.WebServiceFeature
                                 public getFeature<F extends javax.xml.ws.WebServiceFeature>(arg0: java.lang.Class<F>): F

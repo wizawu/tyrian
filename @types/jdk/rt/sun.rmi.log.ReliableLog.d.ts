@@ -2,8 +2,8 @@ declare namespace sun {
     namespace rmi {
         namespace log {
             class ReliableLog {
-                public static PreferredMajorVersion: int
-                public static PreferredMinorVersion: int
+                public static readonly PreferredMajorVersion: int
+                public static readonly PreferredMinorVersion: int
                 public constructor(arg0: java.lang.String | string, arg1: sun.rmi.log.LogHandler, arg2: boolean)
                 public constructor(arg0: java.lang.String | string, arg1: sun.rmi.log.LogHandler)
                 public recover(): java.lang.Object

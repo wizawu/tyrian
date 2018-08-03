@@ -2,7 +2,7 @@ declare namespace java {
     namespace awt {
         namespace geom {
             class EllipseIterator implements java.awt.geom.PathIterator {
-                public static CtrlVal: double
+                public static readonly CtrlVal: double
                 public getWindingRule(): int
                 public isDone(): boolean
                 public next(): void

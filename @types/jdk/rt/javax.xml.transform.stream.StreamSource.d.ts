@@ -3,15 +3,15 @@ declare namespace javax {
         namespace transform {
             namespace stream {
                 class StreamSource implements javax.xml.transform.Source {
-                    public static FEATURE: string
+                    public static readonly FEATURE: string
                     public constructor()
-                    public constructor(arg0: java.io.InputStream)
-                    public constructor(arg0: java.io.InputStream, arg1: java.lang.String | string)
+                    public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
+                    public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.lang.String | string)
                     public constructor(arg0: java.io.Reader)
                     public constructor(arg0: java.io.Reader, arg1: java.lang.String | string)
                     public constructor(arg0: java.lang.String | string)
                     public constructor(arg0: java.io.File)
-                    public setInputStream(arg0: java.io.InputStream): void
+                    public setInputStream(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
                     public getInputStream(): java.io.InputStream
                     public setReader(arg0: java.io.Reader): void
                     public getReader(): java.io.Reader

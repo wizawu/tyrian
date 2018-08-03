@@ -21,7 +21,7 @@ declare namespace com {
                                     public setCatalogParser(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void
                                     public getCatalogParser(arg0: java.lang.String | string, arg1: java.lang.String | string): string
                                     public readCatalog(arg0: com.sun.org.apache.xml.internal.resolver.Catalog, arg1: java.lang.String | string): void
-                                    public readCatalog(arg0: com.sun.org.apache.xml.internal.resolver.Catalog, arg1: java.io.InputStream): void
+                                    public readCatalog(arg0: com.sun.org.apache.xml.internal.resolver.Catalog, arg1: java.io.InputStream | java.io.InputStream$$Lambda): void
                                     public setDocumentLocator(arg0: org.xml.sax.Locator): void
                                     public startDocument(): void
                                     public endDocument(): void

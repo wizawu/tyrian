@@ -7,10 +7,10 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 class XMLSchemaValidator$ValueStoreCache {
-                                    protected fValueStores: java.util.Vector
-                                    protected fIdentityConstraint2ValueStoreMap: java.util.Map<com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$LocalIDKey, com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$ValueStoreBase>
-                                    protected fGlobalMapStack: java.util.Stack<java.util.Map<com.sun.org.apache.xerces.internal.impl.xs.identity.IdentityConstraint, com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$ValueStoreBase>>
-                                    protected fGlobalIDConstraintMap: java.util.Map<com.sun.org.apache.xerces.internal.impl.xs.identity.IdentityConstraint, com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$ValueStoreBase>
+                                    protected readonly fValueStores: java.util.Vector
+                                    protected readonly fIdentityConstraint2ValueStoreMap: java.util.Map<com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$LocalIDKey, com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$ValueStoreBase>
+                                    protected readonly fGlobalMapStack: java.util.Stack<java.util.Map<com.sun.org.apache.xerces.internal.impl.xs.identity.IdentityConstraint, com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$ValueStoreBase>>
+                                    protected readonly fGlobalIDConstraintMap: java.util.Map<com.sun.org.apache.xerces.internal.impl.xs.identity.IdentityConstraint, com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$ValueStoreBase>
                                     public constructor(arg0: com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator)
                                     public startDocument(): void
                                     public startElement(): void

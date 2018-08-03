@@ -6,7 +6,7 @@ declare namespace com {
                     namespace encoding {
                         namespace xml {
                             class XMLConstants {
-                                public static OUTPUT_XML_CHARACTER_ENCODING: string
+                                public static readonly OUTPUT_XML_CHARACTER_ENCODING: string
                                 public constructor()
                                 public static class: java.lang.Class<any>
                             }

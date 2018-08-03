@@ -3,7 +3,7 @@ declare namespace sun {
         namespace server {
             class MarshalInputStream extends java.io.ObjectInputStream {
                 protected static permittedSunClasses: java.util.Map<java.lang.String, java.lang.Class<any>>
-                public constructor(arg0: java.io.InputStream)
+                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                 public getDoneCallback(arg0: java.lang.Object): java.lang.Runnable
                 public setDoneCallback(arg0: java.lang.Object, arg1: java.lang.Runnable | java.lang.Runnable$$Lambda): void
                 public done(): void

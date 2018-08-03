@@ -25,20 +25,20 @@ declare namespace javax {
             public getAvailableLocales(): java.util.Locale[]
             public setLocale(arg0: java.util.Locale): void
             public getLocale(): java.util.Locale
-            public getNumImages(arg0: boolean): int
-            public getWidth(arg0: int): int
-            public getHeight(arg0: int): int
+            public abstract getNumImages(arg0: boolean): int
+            public abstract getWidth(arg0: int): int
+            public abstract getHeight(arg0: int): int
             public isRandomAccessEasy(arg0: int): boolean
             public getAspectRatio(arg0: int): float
             public getRawImageType(arg0: int): javax.imageio.ImageTypeSpecifier
-            public getImageTypes(arg0: int): java.util.Iterator<javax.imageio.ImageTypeSpecifier>
+            public abstract getImageTypes(arg0: int): java.util.Iterator<javax.imageio.ImageTypeSpecifier>
             public getDefaultReadParam(): javax.imageio.ImageReadParam
-            public getStreamMetadata(): javax.imageio.metadata.IIOMetadata
+            public abstract getStreamMetadata(): javax.imageio.metadata.IIOMetadata
             public getStreamMetadata(arg0: java.lang.String | string, arg1: java.util.Set<java.lang.String>): javax.imageio.metadata.IIOMetadata
-            public getImageMetadata(arg0: int): javax.imageio.metadata.IIOMetadata
+            public abstract getImageMetadata(arg0: int): javax.imageio.metadata.IIOMetadata
             public getImageMetadata(arg0: int, arg1: java.lang.String | string, arg2: java.util.Set<java.lang.String>): javax.imageio.metadata.IIOMetadata
             public read(arg0: int): java.awt.image.BufferedImage
-            public read(arg0: int, arg1: javax.imageio.ImageReadParam): java.awt.image.BufferedImage
+            public abstract read(arg0: int, arg1: javax.imageio.ImageReadParam): java.awt.image.BufferedImage
             public readAll(arg0: int, arg1: javax.imageio.ImageReadParam): javax.imageio.IIOImage
             public readAll(arg0: java.util.Iterator<javax.imageio.ImageReadParam>): java.util.Iterator<javax.imageio.IIOImage>
             public canReadRaster(): boolean
@@ -60,8 +60,8 @@ declare namespace javax {
             public abort(): void
             protected abortRequested(): boolean
             protected clearAbortRequest(): void
-            public addIIOReadWarningListener(arg0: javax.imageio.event.IIOReadWarningListener | javax.imageio.event.IIOReadWarningListener$$Lambda): void
-            public removeIIOReadWarningListener(arg0: javax.imageio.event.IIOReadWarningListener | javax.imageio.event.IIOReadWarningListener$$Lambda): void
+            public addIIOReadWarningListener(arg0: javax.imageio.event.IIOReadWarningListener): void
+            public removeIIOReadWarningListener(arg0: javax.imageio.event.IIOReadWarningListener): void
             public removeAllIIOReadWarningListeners(): void
             public addIIOReadProgressListener(arg0: javax.imageio.event.IIOReadProgressListener): void
             public removeIIOReadProgressListener(arg0: javax.imageio.event.IIOReadProgressListener): void

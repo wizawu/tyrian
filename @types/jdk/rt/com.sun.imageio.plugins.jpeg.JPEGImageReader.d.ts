@@ -4,9 +4,9 @@ declare namespace com {
             namespace plugins {
                 namespace jpeg {
                     class JPEGImageReader extends javax.imageio.ImageReader {
-                        protected static WARNING_NO_EOI: int
-                        protected static WARNING_NO_JFIF_IN_THUMB: int
-                        protected static WARNING_IGNORE_INVALID_ICC: int
+                        protected static readonly WARNING_NO_EOI: int
+                        protected static readonly WARNING_NO_JFIF_IN_THUMB: int
+                        protected static readonly WARNING_IGNORE_INVALID_ICC: int
                         public constructor(arg0: javax.imageio.spi.ImageReaderSpi)
                         protected warningOccurred(arg0: int): void
                         protected warningWithMessage(arg0: java.lang.String | string): void

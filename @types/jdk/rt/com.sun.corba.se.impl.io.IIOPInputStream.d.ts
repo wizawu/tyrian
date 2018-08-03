@@ -5,8 +5,8 @@ declare namespace com {
                 namespace impl {
                     namespace io {
                         class IIOPInputStream extends com.sun.corba.se.impl.io.InputStreamHook {
-                            public static kRemoteTypeCode: org.omg.CORBA.TypeCode
-                            public static kValueTypeCode: org.omg.CORBA.TypeCode
+                            public static readonly kRemoteTypeCode: org.omg.CORBA.TypeCode
+                            public static readonly kValueTypeCode: org.omg.CORBA.TypeCode
                             protected getStreamFormatVersion(): byte
                             public static setTestFVDFlag(arg0: boolean): void
                             public constructor()

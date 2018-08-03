@@ -8,7 +8,7 @@ declare namespace com {
                             namespace algorithms {
                                 namespace implementations {
                                     abstract class SignatureECDSA extends com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithmSpi {
-                                        public engineGetURI(): string
+                                        public abstract engineGetURI(): string
                                         public static convertASN1toXMLDSIG(arg0: byte[]): byte[]
                                         public static convertXMLDSIGtoASN1(arg0: byte[]): byte[]
                                         public constructor()
@@ -26,6 +26,9 @@ declare namespace com {
                                         protected engineSetHMACOutputLength(arg0: int): void
                                         protected engineInitSign(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
                                         public static class: java.lang.Class<any>
+                                    }
+                                    interface SignatureECDSA$$Lambda extends com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithmSpi {
+                                        (): string
                                     }
                                 }
                             }

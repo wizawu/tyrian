@@ -7,8 +7,8 @@ declare namespace com {
                         namespace runtime {
                             namespace property {
                                 class AttributeProperty<BeanT> extends com.sun.xml.internal.bind.v2.runtime.property.PropertyImpl<BeanT> implements java.lang.Comparable<com.sun.xml.internal.bind.v2.runtime.property.AttributeProperty> {
-                                    public attName: com.sun.xml.internal.bind.v2.runtime.Name
-                                    public xacc: com.sun.xml.internal.bind.v2.runtime.reflect.TransducedAccessor<BeanT>
+                                    public readonly attName: com.sun.xml.internal.bind.v2.runtime.Name
+                                    public readonly xacc: com.sun.xml.internal.bind.v2.runtime.reflect.TransducedAccessor<BeanT>
                                     public constructor(arg0: com.sun.xml.internal.bind.v2.runtime.JAXBContextImpl, arg1: com.sun.xml.internal.bind.v2.model.runtime.RuntimeAttributePropertyInfo)
                                     public serializeAttributes(arg0: BeanT, arg1: com.sun.xml.internal.bind.v2.runtime.XMLSerializer): void
                                     public serializeURIs(arg0: BeanT, arg1: com.sun.xml.internal.bind.v2.runtime.XMLSerializer): void

@@ -15,9 +15,9 @@ declare namespace com {
                                     public getPriority(): double
                                     public getDefaultPriority(): double
                                     public noSmallerThan(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.LocationPathPattern): boolean
-                                    public getKernelPattern(): com.sun.org.apache.xalan.internal.xsltc.compiler.StepPattern
-                                    public reduceKernelPattern(): void
-                                    public isWildcard(): boolean
+                                    public abstract getKernelPattern(): com.sun.org.apache.xalan.internal.xsltc.compiler.StepPattern
+                                    public abstract reduceKernelPattern(): void
+                                    public abstract isWildcard(): boolean
                                     public getAxis(): int
                                     public toString(): string
                                     public static class: java.lang.Class<any>

@@ -6,25 +6,25 @@ declare namespace com {
                     namespace internal {
                         namespace impl {
                             class XMLEntityManager implements com.sun.org.apache.xerces.internal.xni.parser.XMLComponent , com.sun.org.apache.xerces.internal.xni.parser.XMLEntityResolver {
-                                public static DEFAULT_BUFFER_SIZE: int
-                                public static DEFAULT_XMLDECL_BUFFER_SIZE: int
-                                public static DEFAULT_INTERNAL_BUFFER_SIZE: int
-                                protected static VALIDATION: string
+                                public static readonly DEFAULT_BUFFER_SIZE: int
+                                public static readonly DEFAULT_XMLDECL_BUFFER_SIZE: int
+                                public static readonly DEFAULT_INTERNAL_BUFFER_SIZE: int
+                                protected static readonly VALIDATION: string
                                 protected fStrictURI: boolean
-                                protected static EXTERNAL_GENERAL_ENTITIES: string
-                                protected static EXTERNAL_PARAMETER_ENTITIES: string
-                                protected static ALLOW_JAVA_ENCODINGS: string
-                                protected static WARN_ON_DUPLICATE_ENTITYDEF: string
-                                protected static LOAD_EXTERNAL_DTD: string
-                                protected static SYMBOL_TABLE: string
-                                protected static ERROR_REPORTER: string
-                                protected static STANDARD_URI_CONFORMANT: string
-                                protected static ENTITY_RESOLVER: string
-                                protected static STAX_ENTITY_RESOLVER: string
-                                protected static VALIDATION_MANAGER: string
-                                protected static BUFFER_SIZE: string
-                                protected static SECURITY_MANAGER: string
-                                protected static PARSER_SETTINGS: string
+                                protected static readonly EXTERNAL_GENERAL_ENTITIES: string
+                                protected static readonly EXTERNAL_PARAMETER_ENTITIES: string
+                                protected static readonly ALLOW_JAVA_ENCODINGS: string
+                                protected static readonly WARN_ON_DUPLICATE_ENTITYDEF: string
+                                protected static readonly LOAD_EXTERNAL_DTD: string
+                                protected static readonly SYMBOL_TABLE: string
+                                protected static readonly ERROR_REPORTER: string
+                                protected static readonly STANDARD_URI_CONFORMANT: string
+                                protected static readonly ENTITY_RESOLVER: string
+                                protected static readonly STAX_ENTITY_RESOLVER: string
+                                protected static readonly VALIDATION_MANAGER: string
+                                protected static readonly BUFFER_SIZE: string
+                                protected static readonly SECURITY_MANAGER: string
+                                protected static readonly PARSER_SETTINGS: string
                                 protected fWarnDuplicateEntityDef: boolean
                                 protected fValidation: boolean
                                 protected fExternalGeneralEntities: boolean
@@ -53,7 +53,7 @@ declare namespace com {
                                 protected fEntityStack: java.util.Stack<com.sun.xml.internal.stream.Entity>
                                 protected fCurrentEntity: com.sun.xml.internal.stream.Entity$ScannedEntity
                                 protected fEntityStorage: com.sun.xml.internal.stream.XMLEntityStorage
-                                protected defaultEncoding: java.lang.Object[]
+                                protected readonly defaultEncoding: java.lang.Object[]
                                 public constructor()
                                 public constructor(arg0: com.sun.org.apache.xerces.internal.impl.PropertyManager)
                                 public addInternalEntity(arg0: java.lang.String | string, arg1: java.lang.String | string): void
@@ -99,7 +99,7 @@ declare namespace com {
                                 public static expandSystemId(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: boolean): string
                                 public static setInstanceFollowRedirects(arg0: java.net.HttpURLConnection, arg1: boolean): void
                                 protected getEncodingName(arg0: byte[], arg1: int): java.lang.Object[]
-                                protected createReader(arg0: java.io.InputStream, arg1: java.lang.String | string, arg2: java.lang.Boolean | boolean): java.io.Reader
+                                protected createReader(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: java.lang.String | string, arg2: java.lang.Boolean | boolean): java.io.Reader
                                 public getPublicId(): string
                                 public getExpandedSystemId(): string
                                 public getLiteralSystemId(): string

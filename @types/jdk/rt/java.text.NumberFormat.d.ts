@@ -1,16 +1,16 @@
 declare namespace java {
     namespace text {
         abstract class NumberFormat extends java.text.Format {
-            public static INTEGER_FIELD: int
-            public static FRACTION_FIELD: int
+            public static readonly INTEGER_FIELD: int
+            public static readonly FRACTION_FIELD: int
             protected constructor()
             public format(arg0: java.lang.Object, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
             public parseObject(arg0: java.lang.String | string, arg1: java.text.ParsePosition): java.lang.Object
             public format(arg0: double): string
             public format(arg0: long): string
-            public format(arg0: double, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
-            public format(arg0: long, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
-            public parse(arg0: java.lang.String | string, arg1: java.text.ParsePosition): java.lang.Number
+            public abstract format(arg0: double, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
+            public abstract format(arg0: long, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
+            public abstract parse(arg0: java.lang.String | string, arg1: java.text.ParsePosition): java.lang.Number
             public parse(arg0: java.lang.String | string): java.lang.Number
             public isParseIntegerOnly(): boolean
             public setParseIntegerOnly(arg0: boolean): void

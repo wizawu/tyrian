@@ -10,8 +10,8 @@ declare namespace java {
                 public size(): long
                 public isShared(): boolean
                 public overlaps(arg0: long, arg1: long): boolean
-                public isValid(): boolean
-                public release(): void
+                public abstract isValid(): boolean
+                public abstract release(): void
                 public close(): void
                 public toString(): string
                 public static class: java.lang.Class<any>

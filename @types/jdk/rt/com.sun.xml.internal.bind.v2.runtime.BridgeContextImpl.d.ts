@@ -6,8 +6,8 @@ declare namespace com {
                     namespace v2 {
                         namespace runtime {
                             class BridgeContextImpl extends com.sun.xml.internal.bind.api.BridgeContext {
-                                public unmarshaller: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl
-                                public marshaller: com.sun.xml.internal.bind.v2.runtime.MarshallerImpl
+                                public readonly unmarshaller: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl
+                                public readonly marshaller: com.sun.xml.internal.bind.v2.runtime.MarshallerImpl
                                 public setErrorHandler(arg0: javax.xml.bind.ValidationEventHandler | javax.xml.bind.ValidationEventHandler$$Lambda): void
                                 public setAttachmentMarshaller(arg0: javax.xml.bind.attachment.AttachmentMarshaller): void
                                 public setAttachmentUnmarshaller(arg0: javax.xml.bind.attachment.AttachmentUnmarshaller): void

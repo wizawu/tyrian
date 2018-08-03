@@ -6,7 +6,7 @@ declare namespace java {
                 public accept(arg0: int): void
                 public get(): java.lang.Integer
                 public combine(arg0: java.util.stream.ReduceOps$5ReducingSink): void
-                public combine(arg0: java.util.stream.ReduceOps$AccumulatingSink | java.util.stream.ReduceOps$AccumulatingSink$$Lambda): void
+                public combine(arg0: java.util.stream.ReduceOps$AccumulatingSink): void
                 public get(): java.lang.Object
                 public static class: java.lang.Class<any>
             }

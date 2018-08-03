@@ -6,7 +6,7 @@ declare namespace sun {
                 public constructor(arg0: int)
                 public constructor(arg0: sun.security.util.DerInputStream)
                 public constructor(arg0: sun.security.util.DerValue)
-                public constructor(arg0: java.io.InputStream)
+                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                 public toString(): string
                 public encode(arg0: sun.security.util.DerOutputStream): void
                 public getNumber(): java.math.BigInteger

@@ -19,8 +19,8 @@ declare namespace com {
                         protected constructor(arg0: boolean, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String[], arg4: java.lang.String[])
                         public mergeTree(arg0: java.lang.String | string, arg1: org.w3c.dom.Node): void
                         protected getColorTable(arg0: org.w3c.dom.Node, arg1: java.lang.String | string, arg2: boolean, arg3: int): byte[]
-                        protected mergeNativeTree(arg0: org.w3c.dom.Node): void
-                        protected mergeStandardTree(arg0: org.w3c.dom.Node): void
+                        protected abstract mergeNativeTree(arg0: org.w3c.dom.Node): void
+                        protected abstract mergeStandardTree(arg0: org.w3c.dom.Node): void
                         public static class: java.lang.Class<any>
                     }
                 }

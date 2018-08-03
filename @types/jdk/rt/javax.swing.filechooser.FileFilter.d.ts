@@ -3,8 +3,8 @@ declare namespace javax {
         namespace filechooser {
             abstract class FileFilter {
                 public constructor()
-                public accept(arg0: java.io.File): boolean
-                public getDescription(): string
+                public abstract accept(arg0: java.io.File): boolean
+                public abstract getDescription(): string
                 public static class: java.lang.Class<any>
             }
         }

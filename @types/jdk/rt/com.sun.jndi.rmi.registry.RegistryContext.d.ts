@@ -4,7 +4,7 @@ declare namespace com {
             namespace rmi {
                 namespace registry {
                     class RegistryContext implements javax.naming.Context , javax.naming.Referenceable {
-                        public static SECURITY_MGR: string
+                        public static readonly SECURITY_MGR: string
                         public constructor(arg0: java.lang.String | string, arg1: int, arg2: java.util.Hashtable<any, any>)
                         protected finalize(): void
                         public lookup(arg0: javax.naming.Name): java.lang.Object

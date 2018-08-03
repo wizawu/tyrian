@@ -14,9 +14,9 @@ declare namespace com {
                         stringToObject(arg0: java.lang.Object, arg1: java.lang.String | string): java.lang.Object
                         objectToString(arg0: java.lang.Object, arg1: java.lang.Object): string
                         narrow<T>(arg0: java.lang.Object, arg1: java.lang.Class<T>): T
-                        exportObject(arg0: java.rmi.Remote): void
-                        unexportObject(arg0: java.rmi.Remote): void
-                        toStub(arg0: java.rmi.Remote): java.rmi.Remote
+                        exportObject<T>(arg0: java.rmi.Remote): void
+                        unexportObject<T>(arg0: java.rmi.Remote): void
+                        toStub<T>(arg0: java.rmi.Remote): java.rmi.Remote
                     }
                 }
             }

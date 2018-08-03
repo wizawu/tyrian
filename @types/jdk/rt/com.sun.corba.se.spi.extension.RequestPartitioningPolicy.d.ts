@@ -5,7 +5,7 @@ declare namespace com {
                 namespace spi {
                     namespace extension {
                         class RequestPartitioningPolicy extends org.omg.CORBA.LocalObject implements org.omg.CORBA.Policy {
-                            public static DEFAULT_VALUE: int
+                            public static readonly DEFAULT_VALUE: int
                             public constructor(arg0: int)
                             public getValue(): int
                             public policy_type(): int

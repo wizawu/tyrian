@@ -2,7 +2,7 @@ declare namespace java {
     namespace time {
         namespace temporal {
             class TemporalAdjusters {
-                public static ofDateAdjuster(arg0: java.util.function$.UnaryOperator<java.time.LocalDate> | java.util.function$.UnaryOperator$$Lambda<java.time.LocalDate>): java.time.temporal.TemporalAdjuster
+                public static ofDateAdjuster(arg0: java.util.function$.UnaryOperator<java.time.LocalDate>): java.time.temporal.TemporalAdjuster
                 public static firstDayOfMonth(): java.time.temporal.TemporalAdjuster
                 public static lastDayOfMonth(): java.time.temporal.TemporalAdjuster
                 public static firstDayOfNextMonth(): java.time.temporal.TemporalAdjuster

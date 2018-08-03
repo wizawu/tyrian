@@ -2,7 +2,7 @@ declare namespace sun {
     namespace text {
         namespace normalizer {
             class NormalizerDataReader implements sun.text.normalizer.ICUBinary$Authenticate {
-                protected constructor(arg0: java.io.InputStream)
+                protected constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                 protected readIndexes(arg0: int): int[]
                 protected read(arg0: byte[], arg1: byte[], arg2: byte[], arg3: char[], arg4: char[]): void
                 public getDataFormatVersion(): byte[]

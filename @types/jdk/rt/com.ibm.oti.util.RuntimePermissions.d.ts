@@ -3,19 +3,19 @@ declare namespace com {
         namespace oti {
             namespace util {
                 class RuntimePermissions {
-                    public static permissionAccessDeclaredMembers: java.lang.RuntimePermission
-                    public static permissionEnableContextClassLoaderOverride: java.lang.RuntimePermission
-                    public static permissionGetClassLoader: java.lang.RuntimePermission
-                    public static permissionGetProtectionDomain: java.lang.RuntimePermission
-                    public static permissionGetStackTrace: java.lang.RuntimePermission
-                    public static permissionModifyThreadGroup: java.lang.RuntimePermission
-                    public static permissionSetContextClassLoader: java.lang.RuntimePermission
-                    public static permissionSetDefaultUncaughtExceptionHandler: java.lang.RuntimePermission
-                    public static permissionSetIO: java.lang.RuntimePermission
-                    public static permissionSetSecurityManager: java.lang.RuntimePermission
-                    public static permissionStopThread: java.lang.RuntimePermission
-                    public static permissionLoggerFinder: java.lang.RuntimePermission
-                    public static permissionDefineClass: java.lang.RuntimePermission
+                    public static readonly permissionAccessDeclaredMembers: java.lang.RuntimePermission
+                    public static readonly permissionEnableContextClassLoaderOverride: java.lang.RuntimePermission
+                    public static readonly permissionGetClassLoader: java.lang.RuntimePermission
+                    public static readonly permissionGetProtectionDomain: java.lang.RuntimePermission
+                    public static readonly permissionGetStackTrace: java.lang.RuntimePermission
+                    public static readonly permissionModifyThreadGroup: java.lang.RuntimePermission
+                    public static readonly permissionSetContextClassLoader: java.lang.RuntimePermission
+                    public static readonly permissionSetDefaultUncaughtExceptionHandler: java.lang.RuntimePermission
+                    public static readonly permissionSetIO: java.lang.RuntimePermission
+                    public static readonly permissionSetSecurityManager: java.lang.RuntimePermission
+                    public static readonly permissionStopThread: java.lang.RuntimePermission
+                    public static readonly permissionLoggerFinder: java.lang.RuntimePermission
+                    public static readonly permissionDefineClass: java.lang.RuntimePermission
                     public constructor()
                     public static class: java.lang.Class<any>
                 }

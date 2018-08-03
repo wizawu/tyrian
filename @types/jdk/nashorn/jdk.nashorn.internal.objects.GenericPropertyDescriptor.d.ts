@@ -22,7 +22,7 @@ declare namespace jdk {
                     public hasAndEquals(arg0: jdk.nashorn.internal.runtime.PropertyDescriptor): boolean
                     public equals(arg0: java.lang.Object): boolean
                     public toString(): string
-                    public public hashCode(): int
+                    public static public hashCode(): int
                     public static $clinit$(): void
                     public G$configurable(): java.lang.Object
                     public S$configurable(arg0: java.lang.Object): void

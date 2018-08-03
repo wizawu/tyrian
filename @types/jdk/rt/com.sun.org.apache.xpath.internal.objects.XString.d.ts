@@ -6,7 +6,7 @@ declare namespace com {
                     namespace internal {
                         namespace objects {
                             class XString extends com.sun.org.apache.xpath.internal.objects.XObject implements com.sun.org.apache.xml.internal.utils.XMLString {
-                                public static EMPTYSTRING: com.sun.org.apache.xpath.internal.objects.XString
+                                public static readonly EMPTYSTRING: com.sun.org.apache.xpath.internal.objects.XString
                                 protected constructor(arg0: java.lang.Object)
                                 public constructor(arg0: java.lang.String | string)
                                 public getType(): int

@@ -7,13 +7,13 @@ declare namespace com {
                         namespace impl {
                             namespace xs {
                                 class XSParticleDecl implements com.sun.org.apache.xerces.internal.xs.XSParticle {
-                                    public static PARTICLE_EMPTY: short
-                                    public static PARTICLE_ELEMENT: short
-                                    public static PARTICLE_WILDCARD: short
-                                    public static PARTICLE_MODELGROUP: short
-                                    public static PARTICLE_ZERO_OR_MORE: short
-                                    public static PARTICLE_ZERO_OR_ONE: short
-                                    public static PARTICLE_ONE_OR_MORE: short
+                                    public static readonly PARTICLE_EMPTY: short
+                                    public static readonly PARTICLE_ELEMENT: short
+                                    public static readonly PARTICLE_WILDCARD: short
+                                    public static readonly PARTICLE_MODELGROUP: short
+                                    public static readonly PARTICLE_ZERO_OR_MORE: short
+                                    public static readonly PARTICLE_ZERO_OR_ONE: short
+                                    public static readonly PARTICLE_ONE_OR_MORE: short
                                     public fType: short
                                     public fValue: com.sun.org.apache.xerces.internal.xs.XSTerm
                                     public fMinOccurs: int

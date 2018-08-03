@@ -34,7 +34,7 @@ declare namespace jdk {
                     public G$keys(): java.lang.Object
                     public S$keys(arg0: java.lang.Object): void
                     public G$bindProperties(): java.lang.Object
-                    public public S$bindProperties(arg0: java.lang.Object): void
+                    public static public S$bindProperties(arg0: java.lang.Object): void
                     public static class: java.lang.Class<any>
                 }
             }

@@ -10,7 +10,7 @@ declare namespace java {
             protected connected: boolean
             public static getFileNameMap(): java.net.FileNameMap
             public static setFileNameMap(arg0: java.net.FileNameMap | java.net.FileNameMap$$Lambda): void
-            public connect(): void
+            public abstract connect(): void
             public setConnectTimeout(arg0: int): void
             public getConnectTimeout(): int
             public setReadTimeout(arg0: int): void
@@ -59,8 +59,11 @@ declare namespace java {
             public static getDefaultRequestProperty(arg0: java.lang.String | string): string
             public static setContentHandlerFactory(arg0: java.net.ContentHandlerFactory | java.net.ContentHandlerFactory$$Lambda): void
             public static guessContentTypeFromName(arg0: java.lang.String | string): string
-            public static guessContentTypeFromStream(arg0: java.io.InputStream): string
+            public static guessContentTypeFromStream(arg0: java.io.InputStream | java.io.InputStream$$Lambda): string
             public static class: java.lang.Class<any>
+        }
+        interface URLConnection$$Lambda {
+            (): void
         }
     }
 }

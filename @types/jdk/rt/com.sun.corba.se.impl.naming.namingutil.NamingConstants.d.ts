@@ -6,10 +6,10 @@ declare namespace com {
                     namespace naming {
                         namespace namingutil {
                             class NamingConstants {
-                                public static IIOP_LENGTH: int
-                                public static RIRCOLON_LENGTH: int
-                                public static MAJORNUMBER_SUPPORTED: int
-                                public static MINORNUMBERMAX: int
+                                public static readonly IIOP_LENGTH: int
+                                public static readonly RIRCOLON_LENGTH: int
+                                public static readonly MAJORNUMBER_SUPPORTED: int
+                                public static readonly MINORNUMBERMAX: int
                                 public constructor()
                                 public static class: java.lang.Class<any>
                             }

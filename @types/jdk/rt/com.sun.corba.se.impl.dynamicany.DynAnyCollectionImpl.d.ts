@@ -11,11 +11,14 @@ declare namespace com {
                             protected getContentType(): org.omg.CORBA.TypeCode
                             protected getBound(): int
                             public get_elements(): org.omg.CORBA.Any[]
-                            protected checkValue(arg0: java.lang.Object[]): void
+                            protected abstract checkValue(arg0: java.lang.Object[]): void
                             public set_elements(arg0: org.omg.CORBA.Any[]): void
                             public get_elements_as_dyn_any(): org.omg.DynamicAny.DynAny[]
                             public set_elements_as_dyn_any(arg0: org.omg.DynamicAny.DynAny[]): void
                             public static class: java.lang.Class<any>
+                        }
+                        interface DynAnyCollectionImpl$$Lambda extends com.sun.corba.se.impl.dynamicany.DynAnyConstructedImpl {
+                            (arg0: java.lang.Object[]): void
                         }
                     }
                 }

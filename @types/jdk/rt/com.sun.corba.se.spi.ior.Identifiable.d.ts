@@ -7,9 +7,6 @@ declare namespace com {
                         interface Identifiable extends com.sun.corba.se.spi.ior.Writeable {
                             getId(): int
                         }
-                        interface Identifiable$$Lambda extends com.sun.corba.se.spi.ior.Writeable {
-                            (): int
-                        }
                     }
                 }
             }

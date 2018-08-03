@@ -8,8 +8,11 @@ declare namespace java {
             public remove(arg0: int): E
             public addAll(arg0: int, arg1: java.util.Collection<E>): boolean
             public iterator(): java.util.Iterator<E>
-            public listIterator(arg0: int): java.util.ListIterator<E>
+            public abstract listIterator(arg0: int): java.util.ListIterator<E>
             public static class: java.lang.Class<any>
+        }
+        interface AbstractSequentialList$$Lambda<E> extends java.util.AbstractList<E> {
+            (arg0: int): java.util.ListIterator<E>
         }
     }
 }

@@ -6,7 +6,7 @@ declare namespace com {
                     namespace wsdl {
                         namespace writer {
                             class WSDLPatcher extends com.sun.xml.internal.ws.util.xml.XMLStreamReaderToXMLStreamWriter {
-                                public constructor(arg0: com.sun.xml.internal.ws.api.server.PortAddressResolver, arg1: com.sun.xml.internal.ws.wsdl.writer.DocumentLocationResolver | com.sun.xml.internal.ws.wsdl.writer.DocumentLocationResolver$$Lambda)
+                                public constructor(arg0: com.sun.xml.internal.ws.api.server.PortAddressResolver | com.sun.xml.internal.ws.api.server.PortAddressResolver$$Lambda, arg1: com.sun.xml.internal.ws.wsdl.writer.DocumentLocationResolver | com.sun.xml.internal.ws.wsdl.writer.DocumentLocationResolver$$Lambda)
                                 protected handleAttribute(arg0: int): void
                                 protected handleStartElement(): void
                                 protected handleEndElement(): void

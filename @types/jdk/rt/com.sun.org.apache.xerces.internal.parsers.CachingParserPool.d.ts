@@ -6,8 +6,8 @@ declare namespace com {
                     namespace internal {
                         namespace parsers {
                             class CachingParserPool {
-                                public static DEFAULT_SHADOW_SYMBOL_TABLE: boolean
-                                public static DEFAULT_SHADOW_GRAMMAR_POOL: boolean
+                                public static readonly DEFAULT_SHADOW_SYMBOL_TABLE: boolean
+                                public static readonly DEFAULT_SHADOW_GRAMMAR_POOL: boolean
                                 protected fSynchronizedSymbolTable: com.sun.org.apache.xerces.internal.util.SymbolTable
                                 protected fSynchronizedGrammarPool: com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool
                                 protected fShadowSymbolTable: boolean

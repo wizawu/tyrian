@@ -8,8 +8,11 @@ declare namespace sun {
             protected boldness: float
             protected italic: float
             public constructor()
-            public getNumGlyphs(): int
+            public abstract getNumGlyphs(): int
             public static class: java.lang.Class<any>
+        }
+        interface FontStrike$$Lambda {
+            (): int
         }
     }
 }

@@ -6,8 +6,8 @@ declare namespace java {
             public getAccessibleChildrenCount(): int
             public getAccessibleChild(arg0: int): javax.accessibility.Accessible
             public getAccessibleAt(arg0: java.awt.Point): javax.accessibility.Accessible
-            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
-            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
             public static class: java.lang.Class<any>
         }
     }

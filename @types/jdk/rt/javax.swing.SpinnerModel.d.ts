@@ -5,8 +5,8 @@ declare namespace javax {
             setValue(arg0: java.lang.Object): void
             getNextValue(): java.lang.Object
             getPreviousValue(): java.lang.Object
-            addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
-            removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+            addChangeListener(arg0: javax.swing.event.ChangeListener): void
+            removeChangeListener(arg0: javax.swing.event.ChangeListener): void
         }
     }
 }

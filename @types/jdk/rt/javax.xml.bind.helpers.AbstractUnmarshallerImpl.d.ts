@@ -7,11 +7,11 @@ declare namespace javax {
                     public constructor()
                     protected getXMLReader(): org.xml.sax.XMLReader
                     public unmarshal(arg0: javax.xml.transform.Source): java.lang.Object
-                    protected unmarshal(arg0: org.xml.sax.XMLReader, arg1: org.xml.sax.InputSource): java.lang.Object
+                    protected abstract unmarshal(arg0: org.xml.sax.XMLReader, arg1: org.xml.sax.InputSource): java.lang.Object
                     public unmarshal(arg0: org.xml.sax.InputSource): java.lang.Object
                     public unmarshal(arg0: java.net.URL): java.lang.Object
                     public unmarshal(arg0: java.io.File): java.lang.Object
-                    public unmarshal(arg0: java.io.InputStream): java.lang.Object
+                    public unmarshal(arg0: java.io.InputStream | java.io.InputStream$$Lambda): java.lang.Object
                     public unmarshal(arg0: java.io.Reader): java.lang.Object
                     public isValidating(): boolean
                     public setEventHandler(arg0: javax.xml.bind.ValidationEventHandler | javax.xml.bind.ValidationEventHandler$$Lambda): void
@@ -36,6 +36,9 @@ declare namespace javax {
                     public setListener<A extends javax.xml.bind.annotation.adapters.XmlAdapter>(arg0: javax.xml.bind.Unmarshaller$Listener): void
                     public getListener<A extends javax.xml.bind.annotation.adapters.XmlAdapter>(): javax.xml.bind.Unmarshaller$Listener
                     public static class: java.lang.Class<any>
+                }
+                interface AbstractUnmarshallerImpl$$Lambda implements javax.xml.bind.Unmarshaller {
+                    (arg0: org.xml.sax.XMLReader, arg1: org.xml.sax.InputSource): java.lang.Object
                 }
             }
         }

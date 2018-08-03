@@ -7,8 +7,8 @@ declare namespace com {
                         namespace xsltc {
                             namespace compiler {
                                 class StepPattern extends com.sun.org.apache.xalan.internal.xsltc.compiler.RelativePathPattern {
-                                    protected _axis: int
-                                    protected _nodeType: int
+                                    protected readonly _axis: int
+                                    protected readonly _nodeType: int
                                     protected _predicates: java.util.Vector
                                     public constructor(arg0: int, arg1: int, arg2: java.util.Vector)
                                     public setParser(arg0: com.sun.org.apache.xalan.internal.xsltc.compiler.Parser): void

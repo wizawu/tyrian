@@ -4,7 +4,7 @@ declare namespace jdk {
             namespace runtime {
                 namespace events {
                     class RuntimeEvent<T> {
-                        public static RUNTIME_EVENT_QUEUE_SIZE: int
+                        public static readonly RUNTIME_EVENT_QUEUE_SIZE: int
                         public constructor(arg0: java.util.logging.Level, arg1: T)
                         public getValue(): T
                         public toString(): string

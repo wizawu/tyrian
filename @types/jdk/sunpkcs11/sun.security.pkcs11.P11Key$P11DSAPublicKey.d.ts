@@ -6,6 +6,7 @@ declare namespace sun {
                 public getY(): java.math.BigInteger
                 public getParams(): java.security.interfaces.DSAParams
                 public toString(): string
+                public static class: java.lang.Class<any>
             }
         }
     }

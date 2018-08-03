@@ -3,7 +3,7 @@ declare namespace com {
         namespace oti {
             namespace util {
                 class ReflectPermissions {
-                    public static permissionSuppressAccessChecks: java.lang.reflect.ReflectPermission
+                    public static readonly permissionSuppressAccessChecks: java.lang.reflect.ReflectPermission
                     public constructor()
                     public static class: java.lang.Class<any>
                 }

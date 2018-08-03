@@ -6,29 +6,29 @@ declare namespace com {
                     namespace internal {
                         namespace parsers {
                             class DTDConfiguration extends com.sun.org.apache.xerces.internal.parsers.BasicParserConfiguration implements com.sun.org.apache.xerces.internal.xni.parser.XMLPullParserConfiguration {
-                                protected static WARN_ON_DUPLICATE_ATTDEF: string
-                                protected static WARN_ON_DUPLICATE_ENTITYDEF: string
-                                protected static WARN_ON_UNDECLARED_ELEMDEF: string
-                                protected static ALLOW_JAVA_ENCODINGS: string
-                                protected static CONTINUE_AFTER_FATAL_ERROR: string
-                                protected static LOAD_EXTERNAL_DTD: string
-                                protected static NOTIFY_BUILTIN_REFS: string
-                                protected static NOTIFY_CHAR_REFS: string
-                                protected static ERROR_REPORTER: string
-                                protected static ENTITY_MANAGER: string
-                                protected static DOCUMENT_SCANNER: string
-                                protected static DTD_SCANNER: string
-                                protected static XMLGRAMMAR_POOL: string
-                                protected static DTD_PROCESSOR: string
-                                protected static DTD_VALIDATOR: string
-                                protected static NAMESPACE_BINDER: string
-                                protected static DATATYPE_VALIDATOR_FACTORY: string
-                                protected static VALIDATION_MANAGER: string
-                                protected static JAXP_SCHEMA_LANGUAGE: string
-                                protected static JAXP_SCHEMA_SOURCE: string
-                                protected static LOCALE: string
-                                protected static XML_SECURITY_PROPERTY_MANAGER: string
-                                protected static PRINT_EXCEPTION_STACK_TRACE: boolean
+                                protected static readonly WARN_ON_DUPLICATE_ATTDEF: string
+                                protected static readonly WARN_ON_DUPLICATE_ENTITYDEF: string
+                                protected static readonly WARN_ON_UNDECLARED_ELEMDEF: string
+                                protected static readonly ALLOW_JAVA_ENCODINGS: string
+                                protected static readonly CONTINUE_AFTER_FATAL_ERROR: string
+                                protected static readonly LOAD_EXTERNAL_DTD: string
+                                protected static readonly NOTIFY_BUILTIN_REFS: string
+                                protected static readonly NOTIFY_CHAR_REFS: string
+                                protected static readonly ERROR_REPORTER: string
+                                protected static readonly ENTITY_MANAGER: string
+                                protected static readonly DOCUMENT_SCANNER: string
+                                protected static readonly DTD_SCANNER: string
+                                protected static readonly XMLGRAMMAR_POOL: string
+                                protected static readonly DTD_PROCESSOR: string
+                                protected static readonly DTD_VALIDATOR: string
+                                protected static readonly NAMESPACE_BINDER: string
+                                protected static readonly DATATYPE_VALIDATOR_FACTORY: string
+                                protected static readonly VALIDATION_MANAGER: string
+                                protected static readonly JAXP_SCHEMA_LANGUAGE: string
+                                protected static readonly JAXP_SCHEMA_SOURCE: string
+                                protected static readonly LOCALE: string
+                                protected static readonly XML_SECURITY_PROPERTY_MANAGER: string
+                                protected static readonly PRINT_EXCEPTION_STACK_TRACE: boolean
                                 protected fGrammarPool: com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool
                                 protected fDatatypeValidatorFactory: com.sun.org.apache.xerces.internal.impl.dv.DTDDVFactory
                                 protected fErrorReporter: com.sun.org.apache.xerces.internal.impl.XMLErrorReporter

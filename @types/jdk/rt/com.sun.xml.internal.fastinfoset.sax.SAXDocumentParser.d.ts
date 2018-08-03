@@ -35,7 +35,7 @@ declare namespace com {
                             public getErrorHandler(): org.xml.sax.ErrorHandler
                             public parse(arg0: org.xml.sax.InputSource): void
                             public parse(arg0: java.lang.String | string): void
-                            public parse(arg0: java.io.InputStream): void
+                            public parse(arg0: java.io.InputStream | java.io.InputStream$$Lambda): void
                             public setLexicalHandler(arg0: org.xml.sax.ext.LexicalHandler): void
                             public getLexicalHandler(): org.xml.sax.ext.LexicalHandler
                             public setDeclHandler(arg0: org.xml.sax.ext.DeclHandler): void

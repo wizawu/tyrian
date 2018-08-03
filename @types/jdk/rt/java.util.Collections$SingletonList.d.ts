@@ -7,7 +7,7 @@ declare namespace java {
             public get(arg0: int): E
             public forEach(arg0: java.util.function$.Consumer$$Lambda<E>): void
             public removeIf(arg0: java.util.function$.Predicate<E>): boolean
-            public replaceAll(arg0: java.util.function$.UnaryOperator<E> | java.util.function$.UnaryOperator$$Lambda<E>): void
+            public replaceAll(arg0: java.util.function$.UnaryOperator<E>): void
             public sort(arg0: java.util.Comparator<E>): void
             public spliterator(): java.util.Spliterator<E>
             public static class: java.lang.Class<any>

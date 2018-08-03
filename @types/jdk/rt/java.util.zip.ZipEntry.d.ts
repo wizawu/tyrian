@@ -2,8 +2,8 @@ declare namespace java {
     namespace util {
         namespace zip {
             class ZipEntry implements java.util.zip.ZipConstants , java.lang.Cloneable {
-                public static STORED: int
-                public static DEFLATED: int
+                public static readonly STORED: int
+                public static readonly DEFLATED: int
                 public constructor(arg0: java.lang.String | string)
                 public constructor(arg0: java.util.zip.ZipEntry)
                 public getName(): string

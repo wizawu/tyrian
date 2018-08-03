@@ -2,18 +2,18 @@ declare namespace java {
     namespace lang {
         namespace reflect {
             class Modifier {
-                public static PUBLIC: int
-                public static PRIVATE: int
-                public static PROTECTED: int
-                public static STATIC: int
-                public static FINAL: int
-                public static SYNCHRONIZED: int
-                public static VOLATILE: int
-                public static TRANSIENT: int
-                public static NATIVE: int
-                public static INTERFACE: int
-                public static ABSTRACT: int
-                public static STRICT: int
+                public static readonly PUBLIC: int
+                public static readonly PRIVATE: int
+                public static readonly PROTECTED: int
+                public static readonly STATIC: int
+                public static readonly FINAL: int
+                public static readonly SYNCHRONIZED: int
+                public static readonly VOLATILE: int
+                public static readonly TRANSIENT: int
+                public static readonly NATIVE: int
+                public static readonly INTERFACE: int
+                public static readonly ABSTRACT: int
+                public static readonly STRICT: int
                 public constructor()
                 public static isPublic(arg0: int): boolean
                 public static isPrivate(arg0: int): boolean

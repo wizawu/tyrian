@@ -4,8 +4,8 @@ declare namespace com {
             namespace auth {
                 namespace module {
                     class JndiLoginModule implements javax.security.auth.spi.LoginModule {
-                        public USER_PROVIDER: string
-                        public GROUP_PROVIDER: string
+                        public readonly USER_PROVIDER: string
+                        public readonly GROUP_PROVIDER: string
                         public constructor()
                         public initialize(arg0: javax.security.auth.Subject, arg1: javax.security.auth.callback.CallbackHandler | javax.security.auth.callback.CallbackHandler$$Lambda, arg2: java.util.Map<java.lang.String, any>, arg3: java.util.Map<java.lang.String, any>): void
                         public login(): boolean

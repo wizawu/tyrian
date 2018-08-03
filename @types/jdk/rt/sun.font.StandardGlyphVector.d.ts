@@ -1,9 +1,9 @@
 declare namespace sun {
     namespace font {
         class StandardGlyphVector extends java.awt.font.GlyphVector {
-            public static FLAG_USES_VERTICAL_BASELINE: int
-            public static FLAG_USES_VERTICAL_METRICS: int
-            public static FLAG_USES_ALTERNATE_ORIENTATION: int
+            public static readonly FLAG_USES_VERTICAL_BASELINE: int
+            public static readonly FLAG_USES_VERTICAL_METRICS: int
+            public static readonly FLAG_USES_ALTERNATE_ORIENTATION: int
             public constructor(arg0: java.awt.Font, arg1: java.lang.String | string, arg2: java.awt.font.FontRenderContext)
             public constructor(arg0: java.awt.Font, arg1: char[], arg2: java.awt.font.FontRenderContext)
             public constructor(arg0: java.awt.Font, arg1: char[], arg2: int, arg3: int, arg4: java.awt.font.FontRenderContext)

@@ -6,16 +6,16 @@ declare namespace com {
                     namespace internal {
                         namespace classfile {
                             class JavaClass extends com.sun.org.apache.bcel.internal.classfile.AccessFlags implements java.lang.Cloneable , com.sun.org.apache.bcel.internal.classfile.Node {
-                                public static HEAP: byte
-                                public static FILE: byte
-                                public static ZIP: byte
+                                public static readonly HEAP: byte
+                                public static readonly FILE: byte
+                                public static readonly ZIP: byte
                                 public constructor(arg0: int, arg1: int, arg2: java.lang.String | string, arg3: int, arg4: int, arg5: int, arg6: com.sun.org.apache.bcel.internal.classfile.ConstantPool, arg7: int[], arg8: com.sun.org.apache.bcel.internal.classfile.Field[], arg9: com.sun.org.apache.bcel.internal.classfile.Method[], arg10: com.sun.org.apache.bcel.internal.classfile.Attribute[], arg11: byte)
                                 public constructor(arg0: int, arg1: int, arg2: java.lang.String | string, arg3: int, arg4: int, arg5: int, arg6: com.sun.org.apache.bcel.internal.classfile.ConstantPool, arg7: int[], arg8: com.sun.org.apache.bcel.internal.classfile.Field[], arg9: com.sun.org.apache.bcel.internal.classfile.Method[], arg10: com.sun.org.apache.bcel.internal.classfile.Attribute[])
                                 public accept(arg0: com.sun.org.apache.bcel.internal.classfile.Visitor): void
                                 public dump(arg0: java.io.File): void
                                 public dump(arg0: java.lang.String | string): void
                                 public getBytes(): byte[]
-                                public dump(arg0: java.io.OutputStream): void
+                                public dump(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
                                 public dump(arg0: java.io.DataOutputStream): void
                                 public getAttributes(): com.sun.org.apache.bcel.internal.classfile.Attribute[]
                                 public getClassName(): string

@@ -2,7 +2,7 @@ declare namespace sun {
     namespace util {
         namespace locale {
             class BaseLocale {
-                public static SEP: string
+                public static readonly SEP: string
                 public static createInstance(arg0: java.lang.String | string, arg1: java.lang.String | string): sun.util.locale.BaseLocale
                 public static getInstance(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string): sun.util.locale.BaseLocale
                 public getLanguage(): string

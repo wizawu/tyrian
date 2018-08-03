@@ -3,10 +3,10 @@ declare namespace javax {
         namespace plugins {
             namespace jpeg {
                 class JPEGHuffmanTable {
-                    public static StdDCLuminance: javax.imageio.plugins.jpeg.JPEGHuffmanTable
-                    public static StdDCChrominance: javax.imageio.plugins.jpeg.JPEGHuffmanTable
-                    public static StdACLuminance: javax.imageio.plugins.jpeg.JPEGHuffmanTable
-                    public static StdACChrominance: javax.imageio.plugins.jpeg.JPEGHuffmanTable
+                    public static readonly StdDCLuminance: javax.imageio.plugins.jpeg.JPEGHuffmanTable
+                    public static readonly StdDCChrominance: javax.imageio.plugins.jpeg.JPEGHuffmanTable
+                    public static readonly StdACLuminance: javax.imageio.plugins.jpeg.JPEGHuffmanTable
+                    public static readonly StdACChrominance: javax.imageio.plugins.jpeg.JPEGHuffmanTable
                     public constructor(arg0: short[], arg1: short[])
                     public getLengths(): short[]
                     public getValues(): short[]

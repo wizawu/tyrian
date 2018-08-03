@@ -12,7 +12,7 @@ declare namespace sun {
                     public getCharacterInstance(arg0: java.util.Locale): java.text.BreakIterator
                     public getSentenceInstance(arg0: java.util.Locale): java.text.BreakIterator
                     public getImpl(arg0: java.util.Locale): java.util.spi.LocaleServiceProvider
-                    public addImpl(arg0: java.util.spi.LocaleServiceProvider): void
+                    public addImpl(arg0: java.util.spi.LocaleServiceProvider | java.util.spi.LocaleServiceProvider$$Lambda): void
                     public static class: java.lang.Class<any>
                 }
             }

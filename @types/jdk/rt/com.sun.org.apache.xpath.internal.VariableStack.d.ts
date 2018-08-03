@@ -5,7 +5,7 @@ declare namespace com {
                 namespace xpath {
                     namespace internal {
                         class VariableStack implements java.lang.Cloneable {
-                            public static CLEARLIMITATION: int
+                            public static readonly CLEARLIMITATION: int
                             public constructor()
                             public clone(): java.lang.Object
                             public elementAt(arg0: int): com.sun.org.apache.xpath.internal.objects.XObject

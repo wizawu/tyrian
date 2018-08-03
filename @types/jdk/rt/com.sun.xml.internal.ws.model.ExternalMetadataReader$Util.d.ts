@@ -10,8 +10,8 @@ declare namespace com {
                             public static annotation<T>(arg0: com.oracle.xmlns.internal.webservices.jaxws_databinding.JavaWsdlMappingType, arg1: java.lang.Class<T>): T
                             public static annotation<T>(arg0: com.oracle.xmlns.internal.webservices.jaxws_databinding.JavaMethod, arg1: java.lang.Class<T>): T
                             public static annotation<T>(arg0: com.oracle.xmlns.internal.webservices.jaxws_databinding.JavaParam, arg1: java.lang.Class<T>): T
-                            public static annotation(arg0: com.oracle.xmlns.internal.webservices.jaxws_databinding.JavaMethod): org.w3c.dom.Element[]
-                            public static annotation(arg0: com.oracle.xmlns.internal.webservices.jaxws_databinding.JavaParam): org.w3c.dom.Element[]
+                            public static annotation<T>(arg0: com.oracle.xmlns.internal.webservices.jaxws_databinding.JavaMethod): org.w3c.dom.Element[]
+                            public static annotation<T>(arg0: com.oracle.xmlns.internal.webservices.jaxws_databinding.JavaParam): org.w3c.dom.Element[]
                             public static class: java.lang.Class<any>
                         }
                     }

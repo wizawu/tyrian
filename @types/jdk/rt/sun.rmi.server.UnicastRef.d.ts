@@ -2,8 +2,8 @@ declare namespace sun {
     namespace rmi {
         namespace server {
             class UnicastRef implements java.rmi.server.RemoteRef {
-                public static clientRefLog: sun.rmi.runtime.Log
-                public static clientCallLog: sun.rmi.runtime.Log
+                public static readonly clientRefLog: sun.rmi.runtime.Log
+                public static readonly clientCallLog: sun.rmi.runtime.Log
                 protected ref: sun.rmi.transport.LiveRef
                 public constructor()
                 public constructor(arg0: sun.rmi.transport.LiveRef)

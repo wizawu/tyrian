@@ -7,7 +7,7 @@ declare namespace com {
                         namespace fastinfoset {
                             class FastInfosetStreamReaderRecyclable extends com.sun.xml.internal.fastinfoset.stax.StAXDocumentParser implements com.sun.xml.internal.ws.api.streaming.XMLStreamReaderFactory$RecycleAware {
                                 public constructor()
-                                public constructor(arg0: java.io.InputStream)
+                                public constructor(arg0: java.io.InputStream | java.io.InputStream$$Lambda)
                                 public onRecycled(): void
                                 public static class: java.lang.Class<any>
                             }

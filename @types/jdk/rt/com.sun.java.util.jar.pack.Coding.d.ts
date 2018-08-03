@@ -5,14 +5,14 @@ declare namespace com {
                 namespace jar {
                     namespace pack {
                         class Coding implements java.lang.Comparable<com.sun.java.util.jar.pack.Coding> , com.sun.java.util.jar.pack.CodingMethod , com.sun.java.util.jar.pack.Histogram$BitMetric {
-                            public static B_MAX: int
-                            public static H_MAX: int
-                            public static S_MAX: int
+                            public static readonly B_MAX: int
+                            public static readonly H_MAX: int
+                            public static readonly S_MAX: int
                             public static codeMax(arg0: int, arg1: int, arg2: int, arg3: int): int
                             public static codeMin(arg0: int, arg1: int, arg2: int, arg3: int): int
                             public static writeInt(arg0: byte[], arg1: int[], arg2: int, arg3: int, arg4: int, arg5: int): void
                             public static readInt(arg0: byte[], arg1: int[], arg2: int, arg3: int, arg4: int): int
-                            public static readIntFrom(arg0: java.io.InputStream, arg1: int, arg2: int, arg3: int): int
+                            public static readIntFrom(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: int, arg2: int, arg3: int): int
                             public equals(arg0: java.lang.Object): boolean
                             public hashCode(): int
                             public static of(arg0: int, arg1: int): com.sun.java.util.jar.pack.Coding
@@ -22,10 +22,10 @@ declare namespace com {
                             public canRepresentUnsigned(arg0: int): boolean
                             public readFrom(arg0: byte[], arg1: int[]): int
                             public writeTo(arg0: byte[], arg1: int[], arg2: int): void
-                            public readFrom(arg0: java.io.InputStream): int
-                            public writeTo(arg0: java.io.OutputStream, arg1: int): void
-                            public readArrayFrom(arg0: java.io.InputStream, arg1: int[], arg2: int, arg3: int): void
-                            public writeArrayTo(arg0: java.io.OutputStream, arg1: int[], arg2: int, arg3: int): void
+                            public readFrom(arg0: java.io.InputStream | java.io.InputStream$$Lambda): int
+                            public writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: int): void
+                            public readArrayFrom(arg0: java.io.InputStream | java.io.InputStream$$Lambda, arg1: int[], arg2: int, arg3: int): void
+                            public writeArrayTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: int[], arg2: int, arg3: int): void
                             public B(): int
                             public H(): int
                             public L(): int

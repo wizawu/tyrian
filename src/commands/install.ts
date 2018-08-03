@@ -22,10 +22,6 @@ export const tsconfig = instdir => JSON.stringify({
         "sourceMap": true,
         "strictNullChecks": true,
         "target": "es5",
-        "typeRoots": [
-            "lib/@types/**",
-            "node_modules/@types",
-        ]
     },
     "include": [
         `${instdir}/@types/common/*.d.ts`,

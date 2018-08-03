@@ -28,7 +28,7 @@ function safeType(type, isParameter) {
     if (type === "java.lang.Boolean")
         return isParameter ? type + " | boolean" : "boolean";
     if (/^java\.util\.function\.Consumer<\w+>$/.test(type) && isParameter) {
-        return type.replace("Consumer", "Consumer$$$TypeScript");
+        return type.replace("Consumer", "Consumer$$$Lambda");
     }
     var classID = type.indexOf("<") < 0 ? type : type.substring(0, type.indexOf("<"));
     if (isParameter && lambda.isLambda[classID]) {
@@ -224,7 +224,7 @@ function default_1(source, pkg) {
     var buffer = [];
     var ignore = false;
     var isInterface = false;
-    for (var i = 0; i < ctx.stack.length; i++) {
+    var _loop_1 = function (i) {
         var item = ctx.stack[i];
         switch (item.type) {
             case "BEGIN":
@@ -259,10 +259,13 @@ function default_1(source, pkg) {
                         object_path_1.get(pkg, ns)[className] = "type Object = any";
                     }
                     else {
-                        if ((isInterface && buffer.length === 3 &&
-                            buffer[1].line.indexOf("(") > 0 &&
-                            buffer[0].line.indexOf(" extends ") < 0) || (buffer[0].line.indexOf(" implements ") > 0 &&
-                            lambda.isLambda[buffer[0].line.split(" ").reverse()[1]])) {
+                        var countNonStaticMethods_1 = 0;
+                        buffer.slice(1).forEach(function (b) {
+                            if (b.line.indexOf("(") > 0 && !/\bstatic\b/.test(b.line)) {
+                                countNonStaticMethods_1 += 1;
+                            }
+                        });
+                        if (isInterface && countNonStaticMethods_1 === 1) {
                             var classID = className.indexOf("<") < 0 ? className :
                                 className.substring(0, className.indexOf("<"));
                             buffer.push({ line: buffer[0].line.replace(classID, classID + "$$$Lambda") });
@@ -278,6 +281,9 @@ function default_1(source, pkg) {
                 console.error(JSON.stringify(item));
                 process.exit(const_1.EXIT_STATUS.PARSE_CLASS_ERROR);
         }
+    };
+    for (var i = 0; i < ctx.stack.length; i++) {
+        _loop_1(i);
     }
     return buffer.join("\n");
 }

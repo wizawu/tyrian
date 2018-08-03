@@ -15,7 +15,7 @@ test: build
 	./bin/1c help
 	./bin/1c version
 	./bin/1c env
-	rm -rf test/dist
+	rm -rf test/dist test/lib test/tsconfig.json
 	cd test && ../bin/1c install
 	cd test && ../bin/1c build -c dist -u main.ts
 	cd test && ../bin/1c build -o dist/test.js nashorn.ts

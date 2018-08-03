@@ -80,13 +80,12 @@ function parseJAR(jar, outputDir) {
 }
 exports.default = parseJAR;
 function generateJDKDefinition(root) {
+    var targetDir = function (jar) { return path.basename(jar, ".jar"); };
     var jars = process.argv.slice(1);
     jars.forEach(function (jar) { return parseJAR(jar); });
-    jars.forEach(function (jar) { return parseJAR(jar); });
-    fs.writeFileSync(fs.realpathSync(root + "/dist/parser/isLambda.js"), "module.exports = " + JSON.stringify(lambda.isLambda, null, 4));
-    var targetDir = function (jar) { return path.basename(jar, ".jar"); };
     jars.forEach(function (jar) { return fs.existsSync(targetDir(jar)) || fs.mkdirSync(targetDir(jar)); });
     jars.forEach(function (jar) { return parseJAR(jar, targetDir(jar)); });
+    fs.writeFileSync(fs.realpathSync(root + "/dist/parser/isLambda.js"), "module.exports = " + JSON.stringify(lambda.isLambda, null, 4));
 }
 exports.generateJDKDefinition = generateJDKDefinition;
 function getTopPackages(jar) {

@@ -45,9 +45,6 @@ declare namespace com {
                                 public getMetaData<T>(): com.sun.xml.internal.ws.api.addressing.WSEndpointReference$Metadata
                                 public static class: java.lang.Class<any>
                             }
-                            class WSEndpointReference$$Lambda implements com.sun.xml.internal.ws.api.model.wsdl.WSDLExtension {
-                                public constructor(arg0: javax.xml.ws.EndpointReference, arg1: com.sun.xml.internal.ws.api.addressing.AddressingVersion)
-                            }
                         }
                     }
                 }

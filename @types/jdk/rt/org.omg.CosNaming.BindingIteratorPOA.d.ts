@@ -9,9 +9,6 @@ declare namespace org {
                 public _this(arg0: org.omg.CORBA.ORB): org.omg.CosNaming.BindingIterator
                 public static class: java.lang.Class<any>
             }
-            abstract class BindingIteratorPOA$$Lambda extends org.omg.PortableServer.Servant implements org.omg.CosNaming.BindingIteratorOperations , org.omg.CORBA.portable.InvokeHandler {
-                public constructor()
-            }
         }
     }
 }

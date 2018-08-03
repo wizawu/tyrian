@@ -12,7 +12,7 @@ declare namespace javax {
                     public getChangeToParentDirectoryAction(): javax.swing.Action
                     public getApproveSelectionAction(): javax.swing.Action
                     public getNewFolderAction(): javax.swing.Action
-                    public createDoubleClickListener(arg0: javax.swing.JList | javax.swing.JList$$Lambda): java.awt.event.MouseListener
+                    public createDoubleClickListener(arg0: javax.swing.JList): java.awt.event.MouseListener
                     public createListSelectionListener(): javax.swing.event.ListSelectionListener
                     public static class: java.lang.Class<any>
                 }

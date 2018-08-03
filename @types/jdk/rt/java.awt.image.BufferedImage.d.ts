@@ -29,10 +29,10 @@ declare namespace java {
                 public setRGB(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int[], arg5: int, arg6: int): void
                 public getWidth(): int
                 public getHeight(): int
-                public getWidth(arg0: java.awt.image.ImageObserver): int
-                public getHeight(arg0: java.awt.image.ImageObserver): int
+                public getWidth(arg0: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): int
+                public getHeight(arg0: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): int
                 public getSource(): java.awt.image.ImageProducer
-                public getProperty(arg0: java.lang.String | string, arg1: java.awt.image.ImageObserver): java.lang.Object
+                public getProperty(arg0: java.lang.String | string, arg1: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): java.lang.Object
                 public getProperty(arg0: java.lang.String | string): java.lang.Object
                 public getGraphics(): java.awt.Graphics
                 public createGraphics(): java.awt.Graphics2D

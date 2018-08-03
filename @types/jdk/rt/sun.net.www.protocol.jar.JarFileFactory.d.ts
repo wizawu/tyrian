@@ -9,9 +9,6 @@ declare namespace sun {
                         public close(arg0: java.util.jar.JarFile): void
                         public static class: java.lang.Class<any>
                     }
-                    class JarFileFactory$$Lambda implements sun.net.www.protocol.jar.URLJarFile$URLJarFileCloseController {
-                        public static (): sun.net.www.protocol.jar.JarFileFactory
-                    }
                 }
             }
         }

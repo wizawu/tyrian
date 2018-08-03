@@ -21,9 +21,6 @@ declare namespace com {
                                 public handleError(arg0: org.w3c.dom.DOMError): boolean
                                 public static class: java.lang.Class<any>
                             }
-                            class DOMErrorHandlerWrapper$$Lambda implements com.sun.org.apache.xerces.internal.xni.parser.XMLErrorHandler , org.w3c.dom.DOMErrorHandler {
-                                protected fDomErrorHandler: org.w3c.dom.DOMErrorHandler
-                            }
                         }
                     }
                 }

@@ -10,9 +10,6 @@ declare namespace com {
                                 public evaluate(arg0: com.sun.corba.se.spi.orbutil.fsm.FSM, arg1: com.sun.corba.se.spi.orbutil.fsm.Input): com.sun.corba.se.spi.orbutil.fsm.Guard$Result
                                 public static class: java.lang.Class<any>
                             }
-                            class NegateGuard$$Lambda implements com.sun.corba.se.spi.orbutil.fsm.Guard {
-                                public constructor(arg0: com.sun.corba.se.spi.orbutil.fsm.Guard | com.sun.corba.se.spi.orbutil.fsm.Guard$$Lambda)
-                            }
                         }
                     }
                 }

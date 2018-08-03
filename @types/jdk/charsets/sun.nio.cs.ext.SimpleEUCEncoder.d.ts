@@ -13,7 +13,7 @@ declare namespace sun {
                     protected shift: int
                     protected constructor(arg0: java.nio.charset.Charset)
                     public canEncode(arg0: char): boolean
-                    protected encodeLoop(arg0: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
+                    protected encodeLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
                     public encode(arg0: char): byte
                     public static class: java.lang.Class<any>
                 }

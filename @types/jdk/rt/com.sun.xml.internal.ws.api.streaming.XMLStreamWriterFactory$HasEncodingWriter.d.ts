@@ -9,9 +9,6 @@ declare namespace com {
                                 public getEncoding(): string
                                 public static class: java.lang.Class<any>
                             }
-                            class XMLStreamWriterFactory$HasEncodingWriter$$Lambda extends com.sun.xml.internal.ws.util.xml.XMLStreamWriterFilter implements com.sun.xml.internal.ws.encoding.HasEncoding {
-                                public (): string
-                            }
                         }
                     }
                 }

@@ -14,11 +14,11 @@ declare namespace sun {
             public getRootPane(): javax.swing.JRootPane
             public setContentPane(arg0: java.awt.Container): void
             public getContentPane(): java.awt.Container
-            public setLayeredPane(arg0: javax.swing.JLayeredPane | javax.swing.JLayeredPane$$Lambda): void
+            public setLayeredPane(arg0: javax.swing.JLayeredPane): void
             public getLayeredPane(): javax.swing.JLayeredPane
             public setGlassPane(arg0: java.awt.Component): void
             public getGlassPane(): java.awt.Component
-            public createDragGestureRecognizer<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.Class<T>, arg1: java.awt.dnd.DragSource, arg2: java.awt.Component, arg3: int, arg4: java.awt.dnd.DragGestureListener): T
+            public createDragGestureRecognizer<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.Class<T>, arg1: java.awt.dnd.DragSource, arg2: java.awt.Component, arg3: int, arg4: java.awt.dnd.DragGestureListener | java.awt.dnd.DragGestureListener$$Lambda): T
             public createDragSourceContextPeer<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.dnd.DragGestureEvent): java.awt.dnd.peer.DragSourceContextPeer
             public addDropTarget<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.dnd.DropTarget): void
             public removeDropTarget<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.dnd.DropTarget): void

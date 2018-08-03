@@ -12,9 +12,6 @@ declare namespace com {
                                     public receive(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$State, arg1: java.lang.Object): void
                                     public static class: java.lang.Class<any>
                                 }
-                                class UnmarshallingContext$DefaultRootLoader$$Lambda extends com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader implements com.sun.xml.internal.bind.v2.runtime.unmarshaller.Receiver {
-                                    public (arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$State, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName): void
-                                }
                             }
                         }
                     }

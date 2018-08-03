@@ -8,9 +8,6 @@ declare namespace com {
                             public create(arg0: java.util.logging.Logger): com.sun.corba.se.spi.logging.LogWrapperBase
                             public static class: java.lang.Class<any>
                         }
-                        class POASystemException$1$$Lambda implements com.sun.corba.se.spi.logging.LogWrapperFactory {
-                            public (arg0: java.util.logging.Logger): com.sun.corba.se.spi.logging.LogWrapperBase
-                        }
                     }
                 }
             }

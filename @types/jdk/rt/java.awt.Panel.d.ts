@@ -7,8 +7,5 @@ declare namespace java {
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
         }
-        class Panel$$Lambda extends java.awt.Container implements javax.accessibility.Accessible {
-            public constructor()
-        }
     }
 }

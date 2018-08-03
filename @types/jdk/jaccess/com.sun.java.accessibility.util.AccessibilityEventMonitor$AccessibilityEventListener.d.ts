@@ -9,8 +9,8 @@ declare namespace com {
                         protected installListeners(arg0: javax.accessibility.Accessible | javax.accessibility.Accessible$$Lambda): void
                         protected removeListeners(): void
                         protected removeListeners(arg0: javax.accessibility.Accessible | javax.accessibility.Accessible$$Lambda): void
-                        public topLevelWindowCreated(arg0: java.awt.Window | java.awt.Window$$Lambda): void
-                        public topLevelWindowDestroyed(arg0: java.awt.Window | java.awt.Window$$Lambda): void
+                        public topLevelWindowCreated(arg0: java.awt.Window): void
+                        public topLevelWindowDestroyed(arg0: java.awt.Window): void
                         public propertyChange(arg0: java.beans.PropertyChangeEvent): void
                         public static class: java.lang.Class<any>
                     }

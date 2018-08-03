@@ -8,8 +8,8 @@ declare namespace sun {
             public setEnabled(arg0: boolean): void
             public isEnabled(): boolean
             public isEnabled(arg0: java.lang.Object): boolean
-            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
             public static class: java.lang.Class<any>
         }
     }

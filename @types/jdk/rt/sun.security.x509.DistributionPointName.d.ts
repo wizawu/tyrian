@@ -7,7 +7,7 @@ declare namespace sun {
                 public constructor(arg0: sun.security.util.DerValue)
                 public getFullName(): sun.security.x509.GeneralNames
                 public getRelativeName(): sun.security.x509.RDN
-                public encode(arg0: sun.security.util.DerOutputStream | sun.security.util.DerOutputStream$$Lambda): void
+                public encode(arg0: sun.security.util.DerOutputStream): void
                 public equals(arg0: java.lang.Object): boolean
                 public hashCode(): int
                 public toString(): string

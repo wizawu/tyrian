@@ -15,7 +15,7 @@ declare namespace com {
                                 public write(arg0: byte[], arg1: int, arg2: int): void
                                 public write(arg0: byte[]): void
                                 public writeAsAscii(arg0: java.lang.String | string): void
-                                public writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                                public writeTo(arg0: java.io.OutputStream): void
                                 public reset(): void
                                 public toByteArray(): byte[]
                                 public size(): int

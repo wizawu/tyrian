@@ -57,11 +57,11 @@ declare namespace sun {
             public getNativeOps(): long
             public invalidate(): void
             public getReplacement(): sun.java2d.SurfaceData
-            public canRenderLCDText(arg0: sun.java2d.SunGraphics2D | sun.java2d.SunGraphics2D$$Lambda): boolean
-            public canRenderParallelograms(arg0: sun.java2d.SunGraphics2D | sun.java2d.SunGraphics2D$$Lambda): boolean
-            public validatePipe(arg0: sun.java2d.SunGraphics2D | sun.java2d.SunGraphics2D$$Lambda): void
-            protected getMaskFill(arg0: sun.java2d.SunGraphics2D | sun.java2d.SunGraphics2D$$Lambda): sun.java2d.loops.MaskFill
-            public getRenderLoops(arg0: sun.java2d.SunGraphics2D | sun.java2d.SunGraphics2D$$Lambda): sun.java2d.loops.RenderLoops
+            public canRenderLCDText(arg0: sun.java2d.SunGraphics2D): boolean
+            public canRenderParallelograms(arg0: sun.java2d.SunGraphics2D): boolean
+            public validatePipe(arg0: sun.java2d.SunGraphics2D): void
+            protected getMaskFill(arg0: sun.java2d.SunGraphics2D): sun.java2d.loops.MaskFill
+            public getRenderLoops(arg0: sun.java2d.SunGraphics2D): sun.java2d.loops.RenderLoops
             public static makeRenderLoops(arg0: sun.java2d.loops.SurfaceType, arg1: sun.java2d.loops.CompositeType, arg2: sun.java2d.loops.SurfaceType): sun.java2d.loops.RenderLoops
             public getDeviceConfiguration(): java.awt.GraphicsConfiguration
             public getSurfaceType(): sun.java2d.loops.SurfaceType
@@ -76,7 +76,7 @@ declare namespace sun {
             protected checkCustomComposite(): void
             protected static isOpaqueGray(arg0: java.awt.image.IndexColorModel): boolean
             public static isNull(arg0: sun.java2d.SurfaceData): boolean
-            public copyArea(arg0: sun.java2d.SunGraphics2D | sun.java2d.SunGraphics2D$$Lambda, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int): boolean
+            public copyArea(arg0: sun.java2d.SunGraphics2D, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int): boolean
             public flush(): void
             public getDestination(): java.lang.Object
             public getDefaultScale(): int

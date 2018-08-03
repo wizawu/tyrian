@@ -26,9 +26,6 @@ declare namespace com {
                                     public setDocumentLocator(arg0: org.xml.sax.Locator): void
                                     public static class: java.lang.Class<any>
                                 }
-                                class TemplatesHandlerImpl$$Lambda implements org.xml.sax.ContentHandler , javax.xml.transform.sax.TemplatesHandler , com.sun.org.apache.xalan.internal.xsltc.compiler.SourceLoader {
-                                    protected constructor(arg0: int, arg1: com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl)
-                                }
                             }
                         }
                     }

@@ -31,19 +31,19 @@ declare namespace javax {
             public getViewportBorderBounds(): java.awt.Rectangle
             public createHorizontalScrollBar(): javax.swing.JScrollBar
             public getHorizontalScrollBar(): javax.swing.JScrollBar
-            public setHorizontalScrollBar(arg0: javax.swing.JScrollBar | javax.swing.JScrollBar$$Lambda): void
+            public setHorizontalScrollBar(arg0: javax.swing.JScrollBar): void
             public createVerticalScrollBar(): javax.swing.JScrollBar
             public getVerticalScrollBar(): javax.swing.JScrollBar
-            public setVerticalScrollBar(arg0: javax.swing.JScrollBar | javax.swing.JScrollBar$$Lambda): void
+            public setVerticalScrollBar(arg0: javax.swing.JScrollBar): void
             protected createViewport(): javax.swing.JViewport
             public getViewport(): javax.swing.JViewport
-            public setViewport(arg0: javax.swing.JViewport | javax.swing.JViewport$$Lambda): void
+            public setViewport(arg0: javax.swing.JViewport): void
             public setViewportView(arg0: java.awt.Component): void
             public getRowHeader(): javax.swing.JViewport
-            public setRowHeader(arg0: javax.swing.JViewport | javax.swing.JViewport$$Lambda): void
+            public setRowHeader(arg0: javax.swing.JViewport): void
             public setRowHeaderView(arg0: java.awt.Component): void
             public getColumnHeader(): javax.swing.JViewport
-            public setColumnHeader(arg0: javax.swing.JViewport | javax.swing.JViewport$$Lambda): void
+            public setColumnHeader(arg0: javax.swing.JViewport): void
             public setColumnHeaderView(arg0: java.awt.Component): void
             public getCorner(arg0: java.lang.String | string): java.awt.Component
             public setCorner(arg0: java.lang.String | string, arg1: java.awt.Component): void
@@ -53,9 +53,6 @@ declare namespace javax {
             protected paramString(): string
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
-        }
-        class JScrollPane$$Lambda extends javax.swing.JComponent implements javax.swing.ScrollPaneConstants , javax.accessibility.Accessible {
-            protected verticalScrollBarPolicy: int
         }
     }
 }

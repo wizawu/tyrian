@@ -10,9 +10,6 @@ declare namespace com {
                                 public next(): int
                                 public static class: java.lang.Class<any>
                             }
-                            class XMLDocumentScannerImpl$PrologDriver$$Lambda implements com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$Driver {
-                                protected constructor(arg0: com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl)
-                            }
                         }
                     }
                 }

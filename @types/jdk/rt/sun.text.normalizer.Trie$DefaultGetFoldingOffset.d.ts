@@ -5,9 +5,6 @@ declare namespace sun {
                 public getFoldingOffset(arg0: int): int
                 public static class: java.lang.Class<any>
             }
-            class Trie$DefaultGetFoldingOffset$$Lambda implements sun.text.normalizer.Trie$DataManipulate {
-                public (arg0: int): int
-            }
         }
     }
 }

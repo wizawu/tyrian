@@ -3,7 +3,7 @@ declare namespace java {
         namespace function$ {
             interface Consumer<T> {
                 accept(arg0: T): void
-                andThen(arg0: java.util.function$.Consumer$$TypeScript<T>): java.util.function$.Consumer<T>
+                andThen(arg0: java.util.function$.Consumer$$Lambda<T>): java.util.function$.Consumer<T>
             }
         }
     }

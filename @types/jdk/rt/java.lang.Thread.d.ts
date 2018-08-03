@@ -8,10 +8,10 @@ declare namespace java {
             public constructor(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda)
             public constructor(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda, arg1: java.lang.String | string)
             public constructor(arg0: java.lang.String | string)
-            public constructor(arg0: java.lang.ThreadGroup | java.lang.ThreadGroup$$Lambda, arg1: java.lang.Runnable | java.lang.Runnable$$Lambda)
-            public constructor(arg0: java.lang.ThreadGroup | java.lang.ThreadGroup$$Lambda, arg1: java.lang.Runnable | java.lang.Runnable$$Lambda, arg2: java.lang.String | string, arg3: long)
-            public constructor(arg0: java.lang.ThreadGroup | java.lang.ThreadGroup$$Lambda, arg1: java.lang.Runnable | java.lang.Runnable$$Lambda, arg2: java.lang.String | string)
-            public constructor(arg0: java.lang.ThreadGroup | java.lang.ThreadGroup$$Lambda, arg1: java.lang.String | string)
+            public constructor(arg0: java.lang.ThreadGroup, arg1: java.lang.Runnable | java.lang.Runnable$$Lambda)
+            public constructor(arg0: java.lang.ThreadGroup, arg1: java.lang.Runnable | java.lang.Runnable$$Lambda, arg2: java.lang.String | string, arg3: long)
+            public constructor(arg0: java.lang.ThreadGroup, arg1: java.lang.Runnable | java.lang.Runnable$$Lambda, arg2: java.lang.String | string)
+            public constructor(arg0: java.lang.ThreadGroup, arg1: java.lang.String | string)
             public static activeCount(): int
             public checkAccess(): void
             public countStackFrames(): int
@@ -56,9 +56,6 @@ declare namespace java {
             public getState(): java.lang.Thread$State
             protected clone(): java.lang.Object
             public static class: java.lang.Class<any>
-        }
-        class Thread$$Lambda implements java.lang.Runnable {
-            public static MAX_PRIORITY: int
         }
     }
 }

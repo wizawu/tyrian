@@ -7,7 +7,7 @@ declare namespace com {
                         namespace runtime {
                             namespace unmarshaller {
                                 class LeafPropertyXsiLoader extends com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader {
-                                    public constructor(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader, arg1: com.sun.xml.internal.bind.v2.runtime.reflect.TransducedAccessor, arg2: com.sun.xml.internal.bind.v2.runtime.reflect.Accessor | com.sun.xml.internal.bind.v2.runtime.reflect.Accessor$$Lambda)
+                                    public constructor(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader, arg1: com.sun.xml.internal.bind.v2.runtime.reflect.TransducedAccessor, arg2: com.sun.xml.internal.bind.v2.runtime.reflect.Accessor)
                                     public startElement(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$State, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName): void
                                     protected selectLoader(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$State, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName): com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader
                                     public getExpectedChildElements(): java.util.Collection<javax.xml.namespace.QName>

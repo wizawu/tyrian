@@ -11,9 +11,9 @@ declare namespace sun {
                     protected encodeSurrogate(arg0: char, arg1: char): int
                     protected encodeComposite(arg0: char, arg1: char): int
                     protected isCompositeBase(arg0: char): boolean
-                    protected encodeArrayLoop(arg0: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
-                    protected encodeBufferLoop(arg0: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
-                    protected encodeLoop(arg0: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
+                    protected encodeArrayLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
+                    protected encodeBufferLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
+                    protected encodeLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
                     protected implFlush(arg0: java.nio.ByteBuffer): java.nio.charset.CoderResult
                     protected implReset(): void
                     public static class: java.lang.Class<any>

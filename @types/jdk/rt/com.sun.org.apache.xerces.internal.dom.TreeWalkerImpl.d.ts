@@ -6,7 +6,7 @@ declare namespace com {
                     namespace internal {
                         namespace dom {
                             class TreeWalkerImpl implements org.w3c.dom.traversal.TreeWalker {
-                                public constructor(arg0: org.w3c.dom.Node, arg1: int, arg2: org.w3c.dom.traversal.NodeFilter, arg3: boolean)
+                                public constructor(arg0: org.w3c.dom.Node, arg1: int, arg2: org.w3c.dom.traversal.NodeFilter | org.w3c.dom.traversal.NodeFilter$$Lambda, arg3: boolean)
                                 public getRoot(): org.w3c.dom.Node
                                 public getWhatToShow(): int
                                 public setWhatShow(arg0: int): void

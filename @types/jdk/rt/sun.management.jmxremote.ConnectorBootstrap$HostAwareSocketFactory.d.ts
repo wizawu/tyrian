@@ -5,9 +5,6 @@ declare namespace sun {
                 public createServerSocket(arg0: int): java.net.ServerSocket
                 public static class: java.lang.Class<any>
             }
-            class ConnectorBootstrap$HostAwareSocketFactory$$Lambda implements java.rmi.server.RMIServerSocketFactory {
-                public (arg0: int): java.net.ServerSocket
-            }
         }
     }
 }

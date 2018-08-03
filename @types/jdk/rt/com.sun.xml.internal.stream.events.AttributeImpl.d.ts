@@ -22,7 +22,7 @@ declare namespace com {
                             public getDTDType(): string
                             public setSpecified(arg0: boolean): void
                             public isSpecified(): boolean
-                            protected writeAsEncodedUnicodeEx(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+                            protected writeAsEncodedUnicodeEx(arg0: java.io.Writer): void
                             protected init(): void
                             public static class: java.lang.Class<any>
                         }

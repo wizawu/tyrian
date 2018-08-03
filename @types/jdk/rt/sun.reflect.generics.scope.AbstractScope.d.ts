@@ -10,9 +10,6 @@ declare namespace sun {
                     public lookup(arg0: java.lang.String | string): java.lang.reflect.TypeVariable<any>
                     public static class: java.lang.Class<any>
                 }
-                abstract class AbstractScope$$Lambda<D extends java.lang.reflect.GenericDeclaration> implements sun.reflect.generics.scope.Scope {
-                    protected constructor(arg0: D)
-                }
             }
         }
     }

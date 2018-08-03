@@ -41,9 +41,6 @@ declare namespace javax {
                 protected isFixedRowHeight(): boolean
                 public static class: java.lang.Class<any>
             }
-            abstract class AbstractLayoutCache$$Lambda implements javax.swing.tree.RowMapper {
-                protected nodeDimensions: javax.swing.tree.AbstractLayoutCache$NodeDimensions
-            }
         }
     }
 }

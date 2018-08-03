@@ -14,13 +14,13 @@ declare namespace com {
                             public static MATCH_SCORE_OTHER: double
                             public getExpression(): com.sun.org.apache.xpath.internal.Expression
                             public fixupVariables(arg0: java.util.Vector, arg1: int): void
-                            public setExpression(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda): void
+                            public setExpression(arg0: com.sun.org.apache.xpath.internal.Expression): void
                             public getLocator(): javax.xml.transform.SourceLocator
                             public getPatternString(): string
                             public constructor(arg0: java.lang.String | string, arg1: javax.xml.transform.SourceLocator, arg2: com.sun.org.apache.xml.internal.utils.PrefixResolver, arg3: int, arg4: javax.xml.transform.ErrorListener)
                             public constructor(arg0: java.lang.String | string, arg1: javax.xml.transform.SourceLocator, arg2: com.sun.org.apache.xml.internal.utils.PrefixResolver, arg3: int, arg4: javax.xml.transform.ErrorListener, arg5: com.sun.org.apache.xpath.internal.compiler.FunctionTable)
                             public constructor(arg0: java.lang.String | string, arg1: javax.xml.transform.SourceLocator, arg2: com.sun.org.apache.xml.internal.utils.PrefixResolver, arg3: int)
-                            public constructor(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda)
+                            public constructor(arg0: com.sun.org.apache.xpath.internal.Expression)
                             public execute(arg0: com.sun.org.apache.xpath.internal.XPathContext, arg1: org.w3c.dom.Node, arg2: com.sun.org.apache.xml.internal.utils.PrefixResolver): com.sun.org.apache.xpath.internal.objects.XObject
                             public execute(arg0: com.sun.org.apache.xpath.internal.XPathContext, arg1: int, arg2: com.sun.org.apache.xml.internal.utils.PrefixResolver): com.sun.org.apache.xpath.internal.objects.XObject
                             public bool(arg0: com.sun.org.apache.xpath.internal.XPathContext, arg1: int, arg2: com.sun.org.apache.xml.internal.utils.PrefixResolver): boolean

@@ -1,7 +1,7 @@
 declare namespace java {
     namespace awt {
         class List$AccessibleAWTList$AccessibleAWTListChild extends java.awt.Component$AccessibleAWTComponent implements javax.accessibility.Accessible {
-            public constructor(arg0: java.awt.List$AccessibleAWTList, arg1: java.awt.List | java.awt.List$$Lambda, arg2: int)
+            public constructor(arg0: java.awt.List$AccessibleAWTList, arg1: java.awt.List, arg2: int)
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public getAccessibleRole(): javax.accessibility.AccessibleRole
             public getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
@@ -37,9 +37,6 @@ declare namespace java {
             public addFocusListener(arg0: java.awt.event.FocusListener): void
             public removeFocusListener(arg0: java.awt.event.FocusListener): void
             public static class: java.lang.Class<any>
-        }
-        class List$AccessibleAWTList$AccessibleAWTListChild$$Lambda extends java.awt.Component$AccessibleAWTComponent implements javax.accessibility.Accessible {
-            public constructor(arg0: java.awt.List$AccessibleAWTList, arg1: java.awt.List | java.awt.List$$Lambda, arg2: int)
         }
     }
 }

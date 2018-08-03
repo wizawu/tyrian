@@ -10,9 +10,6 @@ declare namespace javax {
                 public lostOwnership(arg0: java.awt.datatransfer.Clipboard, arg1: java.awt.datatransfer.Transferable): void
                 public static class: java.lang.Class<any>
             }
-            class DefaultCaret$Handler$$Lambda implements java.beans.PropertyChangeListener , javax.swing.event.DocumentListener , java.awt.event.ActionListener , java.awt.datatransfer.ClipboardOwner {
-                public (arg0: java.awt.event.ActionEvent): void
-            }
         }
     }
 }

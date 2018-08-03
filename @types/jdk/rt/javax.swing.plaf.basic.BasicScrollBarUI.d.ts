@@ -31,10 +31,10 @@ declare namespace javax {
                     protected incrGap: int
                     protected decrGap: int
                     public constructor()
-                    public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
+                    public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
                     protected configureScrollBarColors(): void
-                    public installUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    public uninstallUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public installUI(arg0: javax.swing.JComponent): void
+                    public uninstallUI(arg0: javax.swing.JComponent): void
                     protected installDefaults(): void
                     protected installComponents(): void
                     protected uninstallComponents(): void
@@ -50,23 +50,23 @@ declare namespace javax {
                     protected createPropertyChangeListener(): java.beans.PropertyChangeListener
                     protected setThumbRollover(arg0: boolean): void
                     public isThumbRollover(): boolean
-                    public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    public getPreferredSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
-                    public getMaximumSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
+                    public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
+                    public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
+                    public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
                     protected createDecreaseButton(arg0: int): javax.swing.JButton
                     protected createIncreaseButton(arg0: int): javax.swing.JButton
                     protected paintDecreaseHighlight(arg0: java.awt.Graphics): void
                     protected paintIncreaseHighlight(arg0: java.awt.Graphics): void
-                    protected paintTrack(arg0: java.awt.Graphics, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg2: java.awt.Rectangle): void
-                    protected paintThumb(arg0: java.awt.Graphics, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg2: java.awt.Rectangle): void
+                    protected paintTrack(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: java.awt.Rectangle): void
+                    protected paintThumb(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: java.awt.Rectangle): void
                     protected getMinimumThumbSize(): java.awt.Dimension
                     protected getMaximumThumbSize(): java.awt.Dimension
                     public addLayoutComponent(arg0: java.lang.String | string, arg1: java.awt.Component): void
                     public removeLayoutComponent(arg0: java.awt.Component): void
                     public preferredLayoutSize(arg0: java.awt.Container): java.awt.Dimension
                     public minimumLayoutSize(arg0: java.awt.Container): java.awt.Dimension
-                    protected layoutVScrollbar(arg0: javax.swing.JScrollBar | javax.swing.JScrollBar$$Lambda): void
-                    protected layoutHScrollbar(arg0: javax.swing.JScrollBar | javax.swing.JScrollBar$$Lambda): void
+                    protected layoutVScrollbar(arg0: javax.swing.JScrollBar): void
+                    protected layoutHScrollbar(arg0: javax.swing.JScrollBar): void
                     public layoutContainer(arg0: java.awt.Container): void
                     protected setThumbBounds(arg0: int, arg1: int, arg2: int, arg3: int): void
                     protected getThumbBounds(): java.awt.Rectangle

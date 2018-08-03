@@ -9,7 +9,7 @@ declare namespace com {
                     public constructor(arg0: java.io.InputStream)
                     public save(arg0: java.lang.String | string): void
                     public save(arg0: java.io.File): void
-                    public save(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                    public save(arg0: java.io.OutputStream): void
                     public getName(): string
                     public getVersion(): string
                     public getVendor(): string

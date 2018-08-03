@@ -5,9 +5,6 @@ declare namespace sun {
                 public dispatchEvent(arg0: sun.awt.X11.XEvent): void
                 public static class: java.lang.Class<any>
             }
-            class XTrayIconPeer$3$$Lambda implements sun.awt.X11.XEventDispatcher {
-                public (arg0: sun.awt.X11.XEvent): void
-            }
         }
     }
 }

@@ -3,8 +3,8 @@ declare namespace javax {
         namespace remote {
             namespace rmi {
                 class RMIConnector$RemoteMBeanServerConnection implements javax.management.MBeanServerConnection {
-                    public constructor(arg0: javax.management.remote.rmi.RMIConnector | javax.management.remote.rmi.RMIConnector$$Lambda)
-                    public constructor(arg0: javax.management.remote.rmi.RMIConnector | javax.management.remote.rmi.RMIConnector$$Lambda, arg1: javax.security.auth.Subject)
+                    public constructor(arg0: javax.management.remote.rmi.RMIConnector)
+                    public constructor(arg0: javax.management.remote.rmi.RMIConnector, arg1: javax.security.auth.Subject)
                     public createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName): javax.management.ObjectInstance
                     public createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName, arg2: javax.management.ObjectName): javax.management.ObjectInstance
                     public createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName, arg2: java.lang.Object[], arg3: java.lang.String[]): javax.management.ObjectInstance
@@ -24,12 +24,12 @@ declare namespace javax {
                     public getDomains(): java.lang.String[]
                     public getMBeanInfo(arg0: javax.management.ObjectName): javax.management.MBeanInfo
                     public isInstanceOf(arg0: javax.management.ObjectName, arg1: java.lang.String | string): boolean
-                    public addNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
+                    public addNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName, arg2: javax.management.NotificationFilter | javax.management.NotificationFilter$$Lambda, arg3: java.lang.Object): void
                     public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName): void
-                    public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
-                    public addNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
-                    public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener): void
-                    public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
+                    public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName, arg2: javax.management.NotificationFilter | javax.management.NotificationFilter$$Lambda, arg3: java.lang.Object): void
+                    public addNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda, arg2: javax.management.NotificationFilter | javax.management.NotificationFilter$$Lambda, arg3: java.lang.Object): void
+                    public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda): void
+                    public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda, arg2: javax.management.NotificationFilter | javax.management.NotificationFilter$$Lambda, arg3: java.lang.Object): void
                     public static class: java.lang.Class<any>
                 }
             }

@@ -9,9 +9,6 @@ declare namespace com {
                                 public newThread(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda): java.lang.Thread
                                 public static class: java.lang.Class<any>
                             }
-                            class Engine$DaemonThreadFactory$$Lambda implements java.util.concurrent.ThreadFactory {
-                                public (arg0: java.lang.Runnable | java.lang.Runnable$$Lambda): java.lang.Thread
-                            }
                         }
                     }
                 }

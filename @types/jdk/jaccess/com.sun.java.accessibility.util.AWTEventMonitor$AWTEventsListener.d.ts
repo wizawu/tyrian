@@ -13,8 +13,8 @@ declare namespace com {
                         protected removeListeners(arg0: int): void
                         protected removeListeners(arg0: java.awt.Component): void
                         protected removeListeners(arg0: java.awt.Component, arg1: int): void
-                        public topLevelWindowCreated(arg0: java.awt.Window | java.awt.Window$$Lambda): void
-                        public topLevelWindowDestroyed(arg0: java.awt.Window | java.awt.Window$$Lambda): void
+                        public topLevelWindowCreated(arg0: java.awt.Window): void
+                        public topLevelWindowDestroyed(arg0: java.awt.Window): void
                         public actionPerformed(arg0: java.awt.event.ActionEvent): void
                         public adjustmentValueChanged(arg0: java.awt.event.AdjustmentEvent): void
                         public componentHidden(arg0: java.awt.event.ComponentEvent): void

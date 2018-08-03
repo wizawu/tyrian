@@ -26,15 +26,12 @@ declare namespace javax {
             public addSeparator(arg0: java.awt.Dimension): void
             public add(arg0: javax.swing.Action): javax.swing.JButton
             protected createActionComponent(arg0: javax.swing.Action): javax.swing.JButton
-            protected createActionChangeListener(arg0: javax.swing.JButton | javax.swing.JButton$$Lambda): java.beans.PropertyChangeListener
+            protected createActionChangeListener(arg0: javax.swing.JButton): java.beans.PropertyChangeListener
             protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object, arg2: int): void
             protected paramString(): string
             public setLayout(arg0: java.awt.LayoutManager): void
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
-        }
-        class JToolBar$$Lambda extends javax.swing.JComponent implements javax.swing.SwingConstants , javax.accessibility.Accessible {
-            public constructor()
         }
     }
 }

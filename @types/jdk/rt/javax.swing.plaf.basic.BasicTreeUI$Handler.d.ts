@@ -28,9 +28,6 @@ declare namespace javax {
                     public treeStructureChanged(arg0: javax.swing.event.TreeModelEvent): void
                     public static class: java.lang.Class<any>
                 }
-                class BasicTreeUI$Handler$$Lambda implements javax.swing.event.CellEditorListener , java.awt.event.FocusListener , java.awt.event.KeyListener , java.awt.event.MouseListener , java.awt.event.MouseMotionListener , java.beans.PropertyChangeListener , javax.swing.event.TreeExpansionListener , javax.swing.event.TreeModelListener , javax.swing.event.TreeSelectionListener , javax.swing.plaf.basic.DragRecognitionSupport$BeforeDrag {
-                    public (arg0: java.awt.event.KeyEvent): void
-                }
             }
         }
     }

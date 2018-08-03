@@ -23,7 +23,7 @@ declare namespace com {
                     public static ASN_PRIVATE: int
                     public static ASN_ENUMERATED: int
                     protected constructor()
-                    public static dumpBER(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: java.lang.String | string, arg2: byte[], arg3: int, arg4: int): void
+                    public static dumpBER(arg0: java.io.OutputStream, arg1: java.lang.String | string, arg2: byte[], arg3: int, arg4: int): void
                     public static class: java.lang.Class<any>
                 }
             }

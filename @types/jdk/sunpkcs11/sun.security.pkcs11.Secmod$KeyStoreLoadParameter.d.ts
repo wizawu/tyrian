@@ -8,9 +8,6 @@ declare namespace sun {
                 public getTrustType(): sun.security.pkcs11.Secmod$TrustType
                 public static class: java.lang.Class<any>
             }
-            class Secmod$KeyStoreLoadParameter$$Lambda implements java.security.KeyStore$LoadStoreParameter {
-                public constructor(arg0: sun.security.pkcs11.Secmod$TrustType, arg1: char[])
-            }
         }
     }
 }

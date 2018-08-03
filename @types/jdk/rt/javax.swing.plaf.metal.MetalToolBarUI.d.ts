@@ -6,9 +6,9 @@ declare namespace javax {
                     protected contListener: java.awt.event.ContainerListener
                     protected rolloverListener: java.beans.PropertyChangeListener
                     public constructor()
-                    public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
-                    public installUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    public uninstallUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
+                    public installUI(arg0: javax.swing.JComponent): void
+                    public uninstallUI(arg0: javax.swing.JComponent): void
                     protected installListeners(): void
                     protected uninstallListeners(): void
                     protected createRolloverBorder(): javax.swing.border.Border
@@ -18,7 +18,7 @@ declare namespace javax {
                     protected createRolloverListener(): java.beans.PropertyChangeListener
                     protected createDockingListener(): javax.swing.event.MouseInputListener
                     protected setDragOffset(arg0: java.awt.Point): void
-                    public update(arg0: java.awt.Graphics, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public update(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
                     public static class: java.lang.Class<any>
                 }
             }

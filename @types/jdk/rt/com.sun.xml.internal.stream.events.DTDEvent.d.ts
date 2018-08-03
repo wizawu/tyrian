@@ -16,7 +16,7 @@ declare namespace com {
                             public getProcessedDTD(): java.lang.Object
                             protected init(): void
                             public toString(): string
-                            protected writeAsEncodedUnicodeEx(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+                            protected writeAsEncodedUnicodeEx(arg0: java.io.Writer): void
                             public static class: java.lang.Class<any>
                         }
                     }

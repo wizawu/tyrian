@@ -16,7 +16,7 @@ declare namespace javax {
                 public getOldBinding(): javax.naming.Binding
                 public getNewBinding(): javax.naming.Binding
                 public getChangeInfo(): java.lang.Object
-                public dispatch(arg0: javax.naming.event.NamingListener): void
+                public dispatch(arg0: javax.naming.event.NamingListener | javax.naming.event.NamingListener$$Lambda): void
                 public static class: java.lang.Class<any>
             }
         }

@@ -10,7 +10,7 @@ declare namespace sun {
                     public getIssuerNameHash(): byte[]
                     public getIssuerKeyHash(): byte[]
                     public getSerialNumber(): java.math.BigInteger
-                    public encode(arg0: sun.security.util.DerOutputStream | sun.security.util.DerOutputStream$$Lambda): void
+                    public encode(arg0: sun.security.util.DerOutputStream): void
                     public hashCode(): int
                     public equals(arg0: java.lang.Object): boolean
                     public toString(): string

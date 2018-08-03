@@ -12,8 +12,5 @@ declare namespace java {
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
         }
-        class Canvas$$Lambda extends java.awt.Component implements javax.accessibility.Accessible {
-            public constructor()
-        }
     }
 }

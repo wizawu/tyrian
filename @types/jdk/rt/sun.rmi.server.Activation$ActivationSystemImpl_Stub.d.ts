@@ -3,7 +3,7 @@ declare namespace sun {
         namespace server {
             class Activation$ActivationSystemImpl_Stub extends java.rmi.server.RemoteStub implements java.rmi.activation.ActivationSystem , java.rmi.Remote {
                 public constructor(arg0: java.rmi.server.RemoteRef)
-                public activeGroup(arg0: java.rmi.activation.ActivationGroupID, arg1: java.rmi.activation.ActivationInstantiator, arg2: long): java.rmi.activation.ActivationMonitor
+                public activeGroup(arg0: java.rmi.activation.ActivationGroupID, arg1: java.rmi.activation.ActivationInstantiator | java.rmi.activation.ActivationInstantiator$$Lambda, arg2: long): java.rmi.activation.ActivationMonitor
                 public getActivationDesc(arg0: java.rmi.activation.ActivationID): java.rmi.activation.ActivationDesc
                 public getActivationGroupDesc(arg0: java.rmi.activation.ActivationGroupID): java.rmi.activation.ActivationGroupDesc
                 public registerGroup(arg0: java.rmi.activation.ActivationGroupDesc): java.rmi.activation.ActivationGroupID

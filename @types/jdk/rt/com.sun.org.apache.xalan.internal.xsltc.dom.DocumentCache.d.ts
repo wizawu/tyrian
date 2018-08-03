@@ -13,9 +13,6 @@ declare namespace com {
                                     public getStatistics(arg0: java.io.PrintWriter): void
                                     public static class: java.lang.Class<any>
                                 }
-                                class DocumentCache$$Lambda implements com.sun.org.apache.xalan.internal.xsltc.DOMCache {
-                                    public constructor(arg0: int)
-                                }
                             }
                         }
                     }

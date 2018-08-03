@@ -14,9 +14,6 @@ declare namespace sun {
                 public doFetch(): void
                 public static class: java.lang.Class<any>
             }
-            abstract class InputStreamImageSource$$Lambda implements java.awt.image.ImageProducer , sun.awt.image.ImageFetchable {
-                public constructor()
-            }
         }
     }
 }

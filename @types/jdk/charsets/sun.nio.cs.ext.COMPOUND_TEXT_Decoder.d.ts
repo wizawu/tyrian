@@ -4,8 +4,8 @@ declare namespace sun {
             namespace ext {
                 class COMPOUND_TEXT_Decoder extends java.nio.charset.CharsetDecoder {
                     public constructor(arg0: java.nio.charset.Charset)
-                    protected decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda): java.nio.charset.CoderResult
-                    protected implFlush(arg0: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda): java.nio.charset.CoderResult
+                    protected decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
+                    protected implFlush(arg0: java.nio.CharBuffer): java.nio.charset.CoderResult
                     protected implReset(): void
                     protected implOnMalformedInput(arg0: java.nio.charset.CodingErrorAction): void
                     protected implOnUnmappableCharacter(arg0: java.nio.charset.CodingErrorAction): void

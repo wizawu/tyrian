@@ -12,8 +12,5 @@ declare namespace javax {
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
         }
-        class JInternalFrame$JDesktopIcon$$Lambda extends javax.swing.JComponent implements javax.accessibility.Accessible {
-            public constructor(arg0: javax.swing.JInternalFrame)
-        }
     }
 }

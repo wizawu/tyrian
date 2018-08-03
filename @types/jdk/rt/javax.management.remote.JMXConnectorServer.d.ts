@@ -19,9 +19,6 @@ declare namespace javax {
                 public postDeregister(): void
                 public static class: java.lang.Class<any>
             }
-            abstract class JMXConnectorServer$$Lambda extends javax.management.NotificationBroadcasterSupport implements javax.management.remote.JMXConnectorServerMBean , javax.management.MBeanRegistration , javax.management.remote.JMXAddressable {
-                public static AUTHENTICATOR: string
-            }
         }
     }
 }

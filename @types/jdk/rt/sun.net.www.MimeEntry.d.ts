@@ -22,7 +22,7 @@ declare namespace sun {
                 public getExtensions(): java.lang.String[]
                 public getExtensionsAsList(): string
                 public setExtensions(arg0: java.lang.String | string): void
-                public launch(arg0: java.net.URLConnection, arg1: java.io.InputStream, arg2: sun.net.www.MimeTable | sun.net.www.MimeTable$$Lambda): java.lang.Object
+                public launch(arg0: java.net.URLConnection, arg1: java.io.InputStream, arg2: sun.net.www.MimeTable): java.lang.Object
                 public matches(arg0: java.lang.String | string): boolean
                 public clone(): java.lang.Object
                 public toProperty(): string

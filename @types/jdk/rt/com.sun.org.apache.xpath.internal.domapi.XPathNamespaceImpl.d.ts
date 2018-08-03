@@ -42,7 +42,7 @@ declare namespace com {
                                 public lookupNamespaceURI(arg0: java.lang.String | string): string
                                 public isEqualNode(arg0: org.w3c.dom.Node): boolean
                                 public getFeature(arg0: java.lang.String | string, arg1: java.lang.String | string): java.lang.Object
-                                public setUserData(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: org.w3c.dom.UserDataHandler): java.lang.Object
+                                public setUserData(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: org.w3c.dom.UserDataHandler | org.w3c.dom.UserDataHandler$$Lambda): java.lang.Object
                                 public getUserData(arg0: java.lang.String | string): java.lang.Object
                                 public static class: java.lang.Class<any>
                             }

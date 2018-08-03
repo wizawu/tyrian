@@ -7,8 +7,8 @@ declare namespace java {
             public remove(arg0: java.awt.TrayIcon): void
             public getTrayIcons(): java.awt.TrayIcon[]
             public getTrayIconSize(): java.awt.Dimension
-            public addPropertyChangeListener(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener): void
-            public removePropertyChangeListener(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener): void
+            public addPropertyChangeListener(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            public removePropertyChangeListener(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
             public getPropertyChangeListeners(arg0: java.lang.String | string): java.beans.PropertyChangeListener[]
             public static class: java.lang.Class<any>
         }

@@ -12,9 +12,9 @@ declare namespace javax {
                     protected hasCustomComponents: boolean
                     protected propertyChangeListener: java.beans.PropertyChangeListener
                     public constructor()
-                    public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
-                    public installUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    public uninstallUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
+                    public installUI(arg0: javax.swing.JComponent): void
+                    public uninstallUI(arg0: javax.swing.JComponent): void
                     protected installDefaults(): void
                     protected uninstallDefaults(): void
                     protected installComponents(): void
@@ -26,7 +26,7 @@ declare namespace javax {
                     protected installKeyboardActions(): void
                     protected uninstallKeyboardActions(): void
                     public getMinimumOptionPaneSize(): java.awt.Dimension
-                    public getPreferredSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
+                    public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
                     protected createMessageArea(): java.awt.Container
                     protected addMessageComponents(arg0: java.awt.Container, arg1: java.awt.GridBagConstraints, arg2: java.lang.Object, arg3: int, arg4: boolean): void
                     protected getMessage(): java.lang.Object
@@ -43,8 +43,8 @@ declare namespace javax {
                     protected getSizeButtonsToSameWidth(): boolean
                     protected getInitialValueIndex(): int
                     protected resetInputValue(): void
-                    public selectInitialValue(arg0: javax.swing.JOptionPane | javax.swing.JOptionPane$$Lambda): void
-                    public containsCustomComponents(arg0: javax.swing.JOptionPane | javax.swing.JOptionPane$$Lambda): boolean
+                    public selectInitialValue(arg0: javax.swing.JOptionPane): void
+                    public containsCustomComponents(arg0: javax.swing.JOptionPane): boolean
                     public static class: java.lang.Class<any>
                 }
             }

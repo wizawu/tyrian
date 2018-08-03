@@ -17,7 +17,7 @@ declare namespace sun {
                 public getProtocol(): string
                 public getAttribute(arg0: java.lang.String | string): java.lang.Object
                 public setAttribute(arg0: java.lang.String | string, arg1: java.lang.Object): void
-                public setStreams(arg0: java.io.InputStream, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public setStreams(arg0: java.io.InputStream, arg1: java.io.OutputStream): void
                 public getPrincipal(): com.sun.net.httpserver.HttpPrincipal
                 public getHttpContext(): com.sun.net.httpserver.HttpContext
                 public static class: java.lang.Class<any>

@@ -16,7 +16,7 @@ declare namespace sun {
                 public engineIsKeyEntry(arg0: java.lang.String | string): boolean
                 public engineIsCertificateEntry(arg0: java.lang.String | string): boolean
                 public engineGetCertificateAlias(arg0: java.security.cert.Certificate): string
-                public engineStore(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: char[]): void
+                public engineStore(arg0: java.io.OutputStream, arg1: char[]): void
                 public engineLoad(arg0: java.io.InputStream, arg1: char[]): void
                 public static class: java.lang.Class<any>
             }

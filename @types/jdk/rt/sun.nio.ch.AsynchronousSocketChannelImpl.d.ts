@@ -30,9 +30,6 @@ declare namespace sun {
                 public bind(arg0: java.net.SocketAddress): java.nio.channels.NetworkChannel
                 public static class: java.lang.Class<any>
             }
-            abstract class AsynchronousSocketChannelImpl$$Lambda extends java.nio.channels.AsynchronousSocketChannel implements sun.nio.ch.Cancellable , sun.nio.ch.Groupable {
-                protected fd: java.io.FileDescriptor
-            }
         }
     }
 }

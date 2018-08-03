@@ -6,9 +6,6 @@ declare namespace sun {
                 public start(): void
                 public static class: java.lang.Class<any>
             }
-            abstract class AbstractPoller$$Lambda implements java.lang.Runnable {
-                protected constructor()
-            }
         }
     }
 }

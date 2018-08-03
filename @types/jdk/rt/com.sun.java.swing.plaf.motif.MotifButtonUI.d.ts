@@ -7,13 +7,13 @@ declare namespace com {
                         class MotifButtonUI extends javax.swing.plaf.basic.BasicButtonUI {
                             protected selectColor: java.awt.Color
                             public constructor()
-                            public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
+                            public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
                             protected createButtonListener(arg0: javax.swing.AbstractButton): javax.swing.plaf.basic.BasicButtonListener
                             public installDefaults(arg0: javax.swing.AbstractButton): void
                             protected uninstallDefaults(arg0: javax.swing.AbstractButton): void
                             protected getSelectColor(): java.awt.Color
-                            public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                            protected paintIcon(arg0: java.awt.Graphics, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg2: java.awt.Rectangle): void
+                            public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
+                            protected paintIcon(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: java.awt.Rectangle): void
                             protected paintFocus(arg0: java.awt.Graphics, arg1: javax.swing.AbstractButton, arg2: java.awt.Rectangle, arg3: java.awt.Rectangle, arg4: java.awt.Rectangle): void
                             protected paintButtonPressed(arg0: java.awt.Graphics, arg1: javax.swing.AbstractButton): void
                             protected fillContentArea(arg0: java.awt.Graphics, arg1: javax.swing.AbstractButton, arg2: java.awt.Color): void

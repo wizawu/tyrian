@@ -11,7 +11,7 @@ declare namespace sun {
                 public toString(): string
                 public valid(): void
                 public valid(arg0: java.util.Date): void
-                public encode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public encode(arg0: java.io.OutputStream): void
                 public set(arg0: java.lang.String | string, arg1: java.lang.Object): void
                 public get(arg0: java.lang.String | string): java.util.Date
                 public delete(arg0: java.lang.String | string): void

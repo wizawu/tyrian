@@ -17,7 +17,7 @@ declare namespace com {
                                     public selectRootLoader(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$State, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName): com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader
                                     public clearStates(): void
                                     public setFactories(arg0: java.lang.Object): void
-                                    public startDocument(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.LocatorEx, arg1: javax.xml.namespace.NamespaceContext): void
+                                    public startDocument(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.LocatorEx | com.sun.xml.internal.bind.v2.runtime.unmarshaller.LocatorEx$$Lambda, arg1: javax.xml.namespace.NamespaceContext): void
                                     public startElement(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName): void
                                     public text(arg0: java.lang.CharSequence): void
                                     public endElement(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName): void
@@ -35,7 +35,7 @@ declare namespace com {
                                     public handleError(arg0: java.lang.String | string): void
                                     protected getLocation(): javax.xml.bind.ValidationEventLocator
                                     public getLocator(): com.sun.xml.internal.bind.v2.runtime.unmarshaller.LocatorEx
-                                    public errorUnresolvedIDREF(arg0: java.lang.Object, arg1: java.lang.String | string, arg2: com.sun.xml.internal.bind.v2.runtime.unmarshaller.LocatorEx): void
+                                    public errorUnresolvedIDREF(arg0: java.lang.Object, arg1: java.lang.String | string, arg2: com.sun.xml.internal.bind.v2.runtime.unmarshaller.LocatorEx | com.sun.xml.internal.bind.v2.runtime.unmarshaller.LocatorEx$$Lambda): void
                                     public addPatcher(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.Patcher | com.sun.xml.internal.bind.v2.runtime.unmarshaller.Patcher$$Lambda): void
                                     public addToIdTable(arg0: java.lang.String | string): string
                                     public getObjectFromId(arg0: java.lang.String | string, arg1: java.lang.Class): java.util.concurrent.Callable
@@ -60,9 +60,6 @@ declare namespace com {
                                     public getStructureLoader(): com.sun.xml.internal.bind.v2.runtime.unmarshaller.StructureLoader
                                     public shouldErrorBeReported(): boolean
                                     public static class: java.lang.Class<any>
-                                }
-                                class UnmarshallingContext$$Lambda extends com.sun.xml.internal.bind.v2.runtime.Coordinator implements javax.xml.namespace.NamespaceContext , javax.xml.bind.ValidationEventHandler , org.xml.sax.ErrorHandler , com.sun.xml.internal.bind.v2.runtime.unmarshaller.XmlVisitor , com.sun.xml.internal.bind.v2.runtime.unmarshaller.XmlVisitor$TextPredictor {
-                                    public parent: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl
                                 }
                             }
                         }

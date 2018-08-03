@@ -25,9 +25,6 @@ declare namespace sun {
                     protected createLanguageTagSet<P extends java.util.spi.LocaleServiceProvider>(arg0: java.lang.String | string): java.util.Set<java.lang.String>
                     public static class: java.lang.Class<any>
                 }
-                class JRELocaleProviderAdapter$$Lambda extends sun.util.locale.provider.LocaleProviderAdapter implements sun.util.locale.provider.ResourceBundleBasedAdapter {
-                    public constructor()
-                }
             }
         }
     }

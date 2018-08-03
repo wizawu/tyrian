@@ -132,7 +132,7 @@ declare namespace java {
                 public getColorSpaceType(): int
                 public getPCSType(): int
                 public write(arg0: java.lang.String | string): void
-                public write(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public write(arg0: java.io.OutputStream): void
                 public getData(): byte[]
                 public getData(arg0: int): byte[]
                 public setData(arg0: int, arg1: byte[]): void

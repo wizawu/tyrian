@@ -11,8 +11,8 @@ declare namespace sun {
                 public constructor(arg0: java.lang.Boolean | boolean, arg1: java.lang.Object)
                 protected constructor(arg0: sun.security.util.ObjectIdentifier, arg1: java.lang.Boolean | boolean, arg2: java.lang.Object, arg3: java.lang.String | string)
                 public getName(): string
-                public encode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
-                protected encode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: sun.security.util.ObjectIdentifier, arg2: boolean): void
+                public encode(arg0: java.io.OutputStream): void
+                protected encode(arg0: java.io.OutputStream, arg1: sun.security.util.ObjectIdentifier, arg2: boolean): void
                 public set(arg0: java.lang.String | string, arg1: java.lang.Object): void
                 public get(arg0: java.lang.String | string): java.util.List<sun.security.x509.DistributionPoint>
                 public delete(arg0: java.lang.String | string): void

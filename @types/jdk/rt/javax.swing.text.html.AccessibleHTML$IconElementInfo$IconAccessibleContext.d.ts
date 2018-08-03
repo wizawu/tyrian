@@ -3,7 +3,7 @@ declare namespace javax {
         namespace text {
             namespace html {
                 class AccessibleHTML$IconElementInfo$IconAccessibleContext extends javax.swing.text.html.AccessibleHTML$HTMLAccessibleContext implements javax.accessibility.AccessibleIcon {
-                    public constructor(arg0: javax.swing.text.html.AccessibleHTML$IconElementInfo | javax.swing.text.html.AccessibleHTML$IconElementInfo$$Lambda, arg1: javax.swing.text.html.AccessibleHTML$ElementInfo)
+                    public constructor(arg0: javax.swing.text.html.AccessibleHTML$IconElementInfo, arg1: javax.swing.text.html.AccessibleHTML$ElementInfo)
                     public getAccessibleName(): string
                     public getAccessibleDescription(): string
                     public getAccessibleRole(): javax.accessibility.AccessibleRole

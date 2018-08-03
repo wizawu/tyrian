@@ -22,7 +22,7 @@ declare namespace javax {
             public static isMiddleMouseButton(arg0: java.awt.event.MouseEvent): boolean
             public static isRightMouseButton(arg0: java.awt.event.MouseEvent): boolean
             public static computeStringWidth(arg0: java.awt.FontMetrics, arg1: java.lang.String | string): int
-            public static layoutCompoundLabel(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: java.awt.FontMetrics, arg2: java.lang.String | string, arg3: javax.swing.Icon, arg4: int, arg5: int, arg6: int, arg7: int, arg8: java.awt.Rectangle, arg9: java.awt.Rectangle, arg10: java.awt.Rectangle, arg11: int): string
+            public static layoutCompoundLabel(arg0: javax.swing.JComponent, arg1: java.awt.FontMetrics, arg2: java.lang.String | string, arg3: javax.swing.Icon, arg4: int, arg5: int, arg6: int, arg7: int, arg8: java.awt.Rectangle, arg9: java.awt.Rectangle, arg10: java.awt.Rectangle, arg11: int): string
             public static layoutCompoundLabel(arg0: java.awt.FontMetrics, arg1: java.lang.String | string, arg2: javax.swing.Icon, arg3: int, arg4: int, arg5: int, arg6: int, arg7: java.awt.Rectangle, arg8: java.awt.Rectangle, arg9: java.awt.Rectangle, arg10: int): string
             public static paintComponent(arg0: java.awt.Graphics, arg1: java.awt.Component, arg2: java.awt.Container, arg3: int, arg4: int, arg5: int, arg6: int): void
             public static paintComponent(arg0: java.awt.Graphics, arg1: java.awt.Component, arg2: java.awt.Container, arg3: java.awt.Rectangle): void
@@ -40,13 +40,13 @@ declare namespace javax {
             public static getRoot(arg0: java.awt.Component): java.awt.Component
             public static processKeyBindings(arg0: java.awt.event.KeyEvent): boolean
             public static notifyAction(arg0: javax.swing.Action, arg1: javax.swing.KeyStroke, arg2: java.awt.event.KeyEvent, arg3: java.lang.Object, arg4: int): boolean
-            public static replaceUIInputMap(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: int, arg2: javax.swing.InputMap): void
-            public static replaceUIActionMap(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: javax.swing.ActionMap): void
-            public static getUIInputMap(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: int): javax.swing.InputMap
-            public static getUIActionMap(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.ActionMap
-            public static calculateInnerArea(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: java.awt.Rectangle): java.awt.Rectangle
+            public static replaceUIInputMap(arg0: javax.swing.JComponent, arg1: int, arg2: javax.swing.InputMap): void
+            public static replaceUIActionMap(arg0: javax.swing.JComponent, arg1: javax.swing.ActionMap): void
+            public static getUIInputMap(arg0: javax.swing.JComponent, arg1: int): javax.swing.InputMap
+            public static getUIActionMap(arg0: javax.swing.JComponent): javax.swing.ActionMap
+            public static calculateInnerArea(arg0: javax.swing.JComponent, arg1: java.awt.Rectangle): java.awt.Rectangle
             public static getUnwrappedParent(arg0: java.awt.Component): java.awt.Container
-            public static getUnwrappedView(arg0: javax.swing.JViewport | javax.swing.JViewport$$Lambda): java.awt.Component
+            public static getUnwrappedView(arg0: javax.swing.JViewport): java.awt.Component
             public static class: java.lang.Class<any>
         }
     }

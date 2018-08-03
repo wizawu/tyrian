@@ -10,9 +10,6 @@ declare namespace sun {
                     public getAvailableLanguageTags(): java.util.Set<java.lang.String>
                     public static class: java.lang.Class<any>
                 }
-                class DateFormatSymbolsProviderImpl$$Lambda extends java.text.spi.DateFormatSymbolsProvider implements sun.util.locale.provider.AvailableLanguageTags {
-                    public constructor(arg0: sun.util.locale.provider.LocaleProviderAdapter$Type, arg1: java.util.Set<java.lang.String>)
-                }
             }
         }
     }

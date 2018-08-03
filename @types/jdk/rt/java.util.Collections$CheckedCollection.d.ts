@@ -15,7 +15,7 @@ declare namespace java {
             public iterator<T>(): java.util.Iterator<E>
             public add<T>(arg0: E): boolean
             public addAll<T>(arg0: java.util.Collection<E>): boolean
-            public forEach<T>(arg0: java.util.function$.Consumer$$TypeScript<E>): void
+            public forEach<T>(arg0: java.util.function$.Consumer$$Lambda<E>): void
             public removeIf<T>(arg0: java.util.function$.Predicate<E>): boolean
             public spliterator<T>(): java.util.Spliterator<E>
             public stream<T>(): java.util.stream.Stream<E>

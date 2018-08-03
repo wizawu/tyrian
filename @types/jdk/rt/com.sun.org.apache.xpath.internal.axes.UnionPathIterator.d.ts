@@ -22,11 +22,8 @@ declare namespace com {
                                 public fixupVariables(arg0: java.util.Vector, arg1: int): void
                                 public getAxis(): int
                                 public callVisitors(arg0: com.sun.org.apache.xpath.internal.ExpressionOwner, arg1: com.sun.org.apache.xpath.internal.XPathVisitor): void
-                                public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda): boolean
+                                public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression): boolean
                                 public static class: java.lang.Class<any>
-                            }
-                            class UnionPathIterator$$Lambda extends com.sun.org.apache.xpath.internal.axes.LocPathIterator implements java.lang.Cloneable , com.sun.org.apache.xml.internal.dtm.DTMIterator , java.io.Serializable , com.sun.org.apache.xpath.internal.axes.PathComponent {
-                                protected m_exprs: com.sun.org.apache.xpath.internal.axes.LocPathIterator[]
                             }
                         }
                     }

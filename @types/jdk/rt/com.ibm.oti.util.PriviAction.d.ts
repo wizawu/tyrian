@@ -13,9 +13,6 @@ declare namespace com {
                     public run(): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
-                class PriviAction$$Lambda implements java.security.PrivilegedAction {
-                    public static (arg0: java.lang.String | string): java.security.PrivilegedAction
-                }
             }
         }
     }

@@ -4,6 +4,9 @@ declare namespace sun {
             interface LongCounter extends sun.management.counter.Counter {
                 longValue(): long
             }
+            interface LongCounter$$Lambda extends sun.management.counter.Counter {
+                (): long
+            }
         }
     }
 }

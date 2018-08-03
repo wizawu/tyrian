@@ -16,7 +16,7 @@ declare namespace java {
             public containsAll<T>(arg0: java.util.Collection<any>): boolean
             public removeAll<T>(arg0: java.util.Collection<any>): boolean
             public retainAll<T>(arg0: java.util.Collection<any>): boolean
-            public forEach<T>(arg0: java.util.function$.Consumer$$TypeScript<E>): void
+            public forEach<T>(arg0: java.util.function$.Consumer$$Lambda<E>): void
             public removeIf<T>(arg0: java.util.function$.Predicate<E>): boolean
             public spliterator<T>(): java.util.Spliterator<E>
             public stream<T>(): java.util.stream.Stream<E>

@@ -12,8 +12,8 @@ declare namespace javax {
                     public selectAll(): void
                     public focusGained(arg0: java.awt.event.FocusEvent): void
                     public focusLost(arg0: java.awt.event.FocusEvent): void
-                    public addActionListener(arg0: java.awt.event.ActionListener): void
-                    public removeActionListener(arg0: java.awt.event.ActionListener): void
+                    public addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
+                    public removeActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
                     public static class: java.lang.Class<any>
                 }
             }

@@ -13,9 +13,9 @@ declare namespace com {
                                     public static setXenc11Prefix(arg0: java.lang.String | string): void
                                     public static getNextElement(arg0: org.w3c.dom.Node): org.w3c.dom.Element
                                     public static getSet(arg0: org.w3c.dom.Node, arg1: java.util.Set<org.w3c.dom.Node>, arg2: org.w3c.dom.Node, arg3: boolean): void
-                                    public static outputDOM(arg0: org.w3c.dom.Node, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): void
-                                    public static outputDOM(arg0: org.w3c.dom.Node, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda, arg2: boolean): void
-                                    public static outputDOMc14nWithComments(arg0: org.w3c.dom.Node, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                                    public static outputDOM(arg0: org.w3c.dom.Node, arg1: java.io.OutputStream): void
+                                    public static outputDOM(arg0: org.w3c.dom.Node, arg1: java.io.OutputStream, arg2: boolean): void
+                                    public static outputDOMc14nWithComments(arg0: org.w3c.dom.Node, arg1: java.io.OutputStream): void
                                     public static getFullTextChildrenFromElement(arg0: org.w3c.dom.Element): string
                                     public static createElementInSignatureSpace(arg0: org.w3c.dom.Document, arg1: java.lang.String | string): org.w3c.dom.Element
                                     public static createElementInSignature11Space(arg0: org.w3c.dom.Document, arg1: java.lang.String | string): org.w3c.dom.Element

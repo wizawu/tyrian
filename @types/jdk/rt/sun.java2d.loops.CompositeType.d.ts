@@ -39,7 +39,7 @@ declare namespace sun {
                 public static SrcOverNoEa: sun.java2d.loops.CompositeType
                 public static OpaqueSrcOverNoEa: sun.java2d.loops.CompositeType
                 public deriveSubType(arg0: java.lang.String | string): sun.java2d.loops.CompositeType
-                public static forAlphaComposite(arg0: java.awt.AlphaComposite | java.awt.AlphaComposite$$Lambda): sun.java2d.loops.CompositeType
+                public static forAlphaComposite(arg0: java.awt.AlphaComposite): sun.java2d.loops.CompositeType
                 public static makeUniqueID(arg0: java.lang.String | string): int
                 public getUniqueID(): int
                 public getDescriptor(): string

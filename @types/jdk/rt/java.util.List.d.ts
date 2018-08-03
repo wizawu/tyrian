@@ -14,7 +14,7 @@ declare namespace java {
             addAll(arg0: int, arg1: java.util.Collection<E>): boolean
             removeAll(arg0: java.util.Collection<any>): boolean
             retainAll(arg0: java.util.Collection<any>): boolean
-            replaceAll(arg0: java.util.function$.UnaryOperator<E>): void
+            replaceAll(arg0: java.util.function$.UnaryOperator<E> | java.util.function$.UnaryOperator$$Lambda<E>): void
             sort(arg0: java.util.Comparator<E>): void
             clear(): void
             equals(arg0: java.lang.Object): boolean

@@ -40,9 +40,6 @@ declare namespace com {
                         public static wrapRemoteException(arg0: java.rmi.RemoteException): javax.naming.NamingException
                         public static class: java.lang.Class<any>
                     }
-                    class RegistryContext$$Lambda implements javax.naming.Context , javax.naming.Referenceable {
-                        public static SECURITY_MGR: string
-                    }
                 }
             }
         }

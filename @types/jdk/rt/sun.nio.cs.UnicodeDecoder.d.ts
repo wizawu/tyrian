@@ -9,7 +9,7 @@ declare namespace sun {
                 protected static LITTLE: int
                 public constructor(arg0: java.nio.charset.Charset, arg1: int)
                 public constructor(arg0: java.nio.charset.Charset, arg1: int, arg2: int)
-                protected decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda): java.nio.charset.CoderResult
+                protected decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
                 protected implReset(): void
                 public static class: java.lang.Class<any>
             }

@@ -101,7 +101,7 @@ declare namespace com {
                             public setCorbaContactInfoListFactory(arg0: com.sun.corba.se.spi.transport.CorbaContactInfoListFactory): void
                             public getCorbaContactInfoListFactory(): com.sun.corba.se.spi.transport.CorbaContactInfoListFactory
                             public getURLOperation(): com.sun.corba.se.spi.orb.Operation
-                            public setINSDelegate(arg0: com.sun.corba.se.spi.protocol.CorbaServerRequestDispatcher): void
+                            public setINSDelegate(arg0: com.sun.corba.se.spi.protocol.CorbaServerRequestDispatcher | com.sun.corba.se.spi.protocol.CorbaServerRequestDispatcher$$Lambda): void
                             public getTaggedComponentFactoryFinder(): com.sun.corba.se.spi.ior.TaggedComponentFactoryFinder
                             public getTaggedProfileFactoryFinder(): com.sun.corba.se.spi.ior.IdentifiableFactoryFinder
                             public getTaggedProfileTemplateFactoryFinder(): com.sun.corba.se.spi.ior.IdentifiableFactoryFinder
@@ -117,7 +117,7 @@ declare namespace com {
                             public getConnectionCache(arg0: com.sun.corba.se.pept.transport.ContactInfo): com.sun.corba.se.pept.transport.ConnectionCache
                             public setResolver(arg0: com.sun.corba.se.spi.resolver.Resolver): void
                             public getResolver(): com.sun.corba.se.spi.resolver.Resolver
-                            public setLocalResolver(arg0: com.sun.corba.se.spi.resolver.LocalResolver): void
+                            public setLocalResolver(arg0: com.sun.corba.se.spi.resolver.LocalResolver | com.sun.corba.se.spi.resolver.LocalResolver$$Lambda): void
                             public getLocalResolver(): com.sun.corba.se.spi.resolver.LocalResolver
                             public setURLOperation(arg0: com.sun.corba.se.spi.orb.Operation | com.sun.corba.se.spi.orb.Operation$$Lambda): void
                             public setBadServerIdHandler(arg0: com.sun.corba.se.impl.oa.poa.BadServerIdHandler | com.sun.corba.se.impl.oa.poa.BadServerIdHandler$$Lambda): void

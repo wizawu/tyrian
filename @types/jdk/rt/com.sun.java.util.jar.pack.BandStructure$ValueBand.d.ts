@@ -5,7 +5,7 @@ declare namespace com {
                 namespace jar {
                     namespace pack {
                         class BandStructure$ValueBand extends com.sun.java.util.jar.pack.BandStructure$Band {
-                            protected constructor(arg0: com.sun.java.util.jar.pack.BandStructure, arg1: java.lang.String | string, arg2: com.sun.java.util.jar.pack.Coding | com.sun.java.util.jar.pack.Coding$$Lambda)
+                            protected constructor(arg0: com.sun.java.util.jar.pack.BandStructure, arg1: java.lang.String | string, arg2: com.sun.java.util.jar.pack.Coding)
                             public capacity(): int
                             protected setCapacity(arg0: int): void
                             public length(): int
@@ -16,7 +16,7 @@ declare namespace com {
                             protected chooseBandCodings(): void
                             protected computeOutputSize(): long
                             protected computeEscapeSize(): int
-                            protected writeDataTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                            protected writeDataTo(arg0: java.io.OutputStream): void
                             protected readDataFrom(arg0: java.io.InputStream): void
                             public doneDisbursing(): void
                             protected getValue(): int

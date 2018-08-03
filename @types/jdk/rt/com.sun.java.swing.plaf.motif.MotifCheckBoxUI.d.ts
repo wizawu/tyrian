@@ -6,7 +6,7 @@ declare namespace com {
                     namespace motif {
                         class MotifCheckBoxUI extends com.sun.java.swing.plaf.motif.MotifRadioButtonUI {
                             public constructor()
-                            public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
+                            public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
                             public getPropertyPrefix(): string
                             public installDefaults(arg0: javax.swing.AbstractButton): void
                             protected uninstallDefaults(arg0: javax.swing.AbstractButton): void

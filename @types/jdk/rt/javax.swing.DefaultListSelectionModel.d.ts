@@ -11,8 +11,8 @@ declare namespace javax {
             public setSelectionMode(arg0: int): void
             public isSelectedIndex(arg0: int): boolean
             public isSelectionEmpty(): boolean
-            public addListSelectionListener(arg0: javax.swing.event.ListSelectionListener): void
-            public removeListSelectionListener(arg0: javax.swing.event.ListSelectionListener): void
+            public addListSelectionListener(arg0: javax.swing.event.ListSelectionListener | javax.swing.event.ListSelectionListener$$Lambda): void
+            public removeListSelectionListener(arg0: javax.swing.event.ListSelectionListener | javax.swing.event.ListSelectionListener$$Lambda): void
             public getListSelectionListeners(): javax.swing.event.ListSelectionListener[]
             protected fireValueChanged(arg0: boolean): void
             protected fireValueChanged(arg0: int, arg1: int): void

@@ -5,8 +5,8 @@ declare namespace com {
                 namespace jar {
                     namespace pack {
                         class UnpackerImpl extends com.sun.java.util.jar.pack.TLGlobals implements java.util.jar.Pack200$Unpacker {
-                            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-                            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+                            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+                            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
                             public constructor()
                             public properties(): java.util.SortedMap<java.lang.String, java.lang.String>
                             public toString(): string

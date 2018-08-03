@@ -17,7 +17,7 @@ declare namespace java {
                     protected getQueuedWriterThreads(): java.util.Collection<java.lang.Thread>
                     protected getQueuedReaderThreads(): java.util.Collection<java.lang.Thread>
                     public hasQueuedThreads(): boolean
-                    public hasQueuedThread(arg0: java.lang.Thread | java.lang.Thread$$Lambda): boolean
+                    public hasQueuedThread(arg0: java.lang.Thread): boolean
                     public getQueueLength(): int
                     protected getQueuedThreads(): java.util.Collection<java.lang.Thread>
                     public hasWaiters(arg0: java.util.concurrent.locks.Condition): boolean

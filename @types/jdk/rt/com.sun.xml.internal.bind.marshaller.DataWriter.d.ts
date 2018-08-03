@@ -5,8 +5,8 @@ declare namespace com {
                 namespace bind {
                     namespace marshaller {
                         class DataWriter extends com.sun.xml.internal.bind.marshaller.XMLWriter {
-                            public constructor(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: java.lang.String | string, arg2: com.sun.xml.internal.bind.marshaller.CharacterEscapeHandler | com.sun.xml.internal.bind.marshaller.CharacterEscapeHandler$$Lambda)
-                            public constructor(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: java.lang.String | string)
+                            public constructor(arg0: java.io.Writer, arg1: java.lang.String | string, arg2: com.sun.xml.internal.bind.marshaller.CharacterEscapeHandler | com.sun.xml.internal.bind.marshaller.CharacterEscapeHandler$$Lambda)
+                            public constructor(arg0: java.io.Writer, arg1: java.lang.String | string)
                             public getIndentStep(): int
                             public setIndentStep(arg0: int): void
                             public setIndentStep(arg0: java.lang.String | string): void

@@ -4,7 +4,7 @@ declare namespace javax {
             namespace synth {
                 abstract class SynthStyleFactory {
                     public constructor()
-                    public getStyle(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: javax.swing.plaf.synth.Region): javax.swing.plaf.synth.SynthStyle
+                    public getStyle(arg0: javax.swing.JComponent, arg1: javax.swing.plaf.synth.Region): javax.swing.plaf.synth.SynthStyle
                     public static class: java.lang.Class<any>
                 }
             }

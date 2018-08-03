@@ -5,6 +5,9 @@ declare namespace java {
                 serialVersionUID: long
                 getS(): java.math.BigInteger
             }
+            interface ECPrivateKey$$Lambda extends java.security.PrivateKey , java.security.interfaces.ECKey {
+                serialVersionUID: long
+            }
         }
     }
 }

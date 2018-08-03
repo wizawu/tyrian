@@ -29,8 +29,5 @@ declare namespace java {
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
         }
-        class ScrollPane$$Lambda extends java.awt.Container implements javax.accessibility.Accessible {
-            public static SCROLLBARS_AS_NEEDED: int
-        }
     }
 }

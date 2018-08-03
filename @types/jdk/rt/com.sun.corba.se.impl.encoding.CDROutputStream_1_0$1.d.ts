@@ -8,9 +8,6 @@ declare namespace com {
                             public run(): java.lang.Object
                             public static class: java.lang.Class<any>
                         }
-                        class CDROutputStream_1_0$1$$Lambda implements java.security.PrivilegedExceptionAction {
-                            public (): java.lang.Object
-                        }
                     }
                 }
             }

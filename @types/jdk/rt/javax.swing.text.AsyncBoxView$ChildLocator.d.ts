@@ -6,7 +6,7 @@ declare namespace javax {
                 protected lastAlloc: java.awt.Rectangle
                 protected childAlloc: java.awt.Rectangle
                 public constructor(arg0: javax.swing.text.AsyncBoxView)
-                public childChanged(arg0: javax.swing.text.AsyncBoxView$ChildState | javax.swing.text.AsyncBoxView$ChildState$$Lambda): void
+                public childChanged(arg0: javax.swing.text.AsyncBoxView$ChildState): void
                 public paintChildren(arg0: java.awt.Graphics): void
                 public getChildAllocation(arg0: int, arg1: java.awt.Shape): java.awt.Shape
                 public getViewIndexAtPoint(arg0: float, arg1: float, arg2: java.awt.Shape): int

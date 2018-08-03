@@ -5,10 +5,10 @@ declare namespace com {
                 namespace bind {
                     namespace marshaller {
                         interface CharacterEscapeHandler {
-                            escape(arg0: char[], arg1: int, arg2: int, arg3: boolean, arg4: java.io.Writer | java.io.Writer$$Lambda): void
+                            escape(arg0: char[], arg1: int, arg2: int, arg3: boolean, arg4: java.io.Writer): void
                         }
                         interface CharacterEscapeHandler$$Lambda {
-                            (arg0: char[], arg1: int, arg2: int, arg3: boolean, arg4: java.io.Writer | java.io.Writer$$Lambda): void
+                            (arg0: char[], arg1: int, arg2: int, arg3: boolean, arg4: java.io.Writer): void
                         }
                     }
                 }

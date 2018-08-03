@@ -10,9 +10,6 @@ declare namespace sun {
                 public getUnicodeVersion(): byte[]
                 public static class: java.lang.Class<any>
             }
-            class StringPrepDataReader$$Lambda implements sun.text.normalizer.ICUBinary$Authenticate {
-                public constructor(arg0: java.io.InputStream)
-            }
         }
     }
 }

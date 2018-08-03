@@ -9,9 +9,6 @@ declare namespace com {
                                 public close(): void
                                 public static class: java.lang.Class<any>
                             }
-                            class HttpAdapter$Oneway$$Lambda implements com.sun.xml.internal.ws.api.server.TransportBackChannel {
-                                public (): void
-                            }
                         }
                     }
                 }

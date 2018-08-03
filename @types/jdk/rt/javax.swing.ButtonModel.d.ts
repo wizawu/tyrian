@@ -16,12 +16,12 @@ declare namespace javax {
             setActionCommand(arg0: java.lang.String | string): void
             getActionCommand(): string
             setGroup(arg0: javax.swing.ButtonGroup): void
-            addActionListener(arg0: java.awt.event.ActionListener): void
-            removeActionListener(arg0: java.awt.event.ActionListener): void
-            addItemListener(arg0: java.awt.event.ItemListener): void
-            removeItemListener(arg0: java.awt.event.ItemListener): void
-            addChangeListener(arg0: javax.swing.event.ChangeListener): void
-            removeChangeListener(arg0: javax.swing.event.ChangeListener): void
+            addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
+            removeActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
+            addItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): void
+            removeItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): void
+            addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+            removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
         }
     }
 }

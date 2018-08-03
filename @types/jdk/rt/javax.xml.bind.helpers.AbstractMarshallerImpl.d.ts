@@ -4,9 +4,9 @@ declare namespace javax {
             namespace helpers {
                 abstract class AbstractMarshallerImpl implements javax.xml.bind.Marshaller {
                     public constructor()
-                    public marshal(arg0: java.lang.Object, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                    public marshal(arg0: java.lang.Object, arg1: java.io.OutputStream): void
                     public marshal(arg0: java.lang.Object, arg1: java.io.File): void
-                    public marshal(arg0: java.lang.Object, arg1: java.io.Writer | java.io.Writer$$Lambda): void
+                    public marshal(arg0: java.lang.Object, arg1: java.io.Writer): void
                     public marshal(arg0: java.lang.Object, arg1: org.xml.sax.ContentHandler): void
                     public marshal(arg0: java.lang.Object, arg1: org.w3c.dom.Node): void
                     public getNode(arg0: java.lang.Object): org.w3c.dom.Node

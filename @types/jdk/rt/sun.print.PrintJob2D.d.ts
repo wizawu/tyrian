@@ -16,8 +16,5 @@ declare namespace sun {
             public static unMapMedia(arg0: javax.print.attribute.standard.MediaSizeName): java.awt.PageAttributes$MediaType
             public static class: java.lang.Class<any>
         }
-        class PrintJob2D$$Lambda extends java.awt.PrintJob implements java.awt.print.Printable , java.lang.Runnable {
-            public constructor(arg0: java.awt.Frame, arg1: java.lang.String | string, arg2: java.util.Properties)
-        }
     }
 }

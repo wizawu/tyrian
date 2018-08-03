@@ -33,9 +33,6 @@ declare namespace sun {
                     public toString(): string
                     public static class: java.lang.Class<any>
                 }
-                class HttpSendSocket$$Lambda extends java.net.Socket implements sun.rmi.transport.proxy.RMISocketInfo {
-                    protected host: string
-                }
             }
         }
     }

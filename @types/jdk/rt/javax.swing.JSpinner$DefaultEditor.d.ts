@@ -1,8 +1,8 @@
 declare namespace javax {
     namespace swing {
         class JSpinner$DefaultEditor extends javax.swing.JPanel implements javax.swing.event.ChangeListener , java.beans.PropertyChangeListener , java.awt.LayoutManager {
-            public constructor(arg0: javax.swing.JSpinner | javax.swing.JSpinner$$Lambda)
-            public dismiss(arg0: javax.swing.JSpinner | javax.swing.JSpinner$$Lambda): void
+            public constructor(arg0: javax.swing.JSpinner)
+            public dismiss(arg0: javax.swing.JSpinner): void
             public getSpinner(): javax.swing.JSpinner
             public getTextField(): javax.swing.JFormattedTextField
             public stateChanged(arg0: javax.swing.event.ChangeEvent): void

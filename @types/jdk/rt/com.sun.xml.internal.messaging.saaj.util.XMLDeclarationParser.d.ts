@@ -10,7 +10,7 @@ declare namespace com {
                                 public getEncoding(): string
                                 public getXmlDeclaration(): string
                                 public parse(): void
-                                public writeTo(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+                                public writeTo(arg0: java.io.Writer): void
                                 public static class: java.lang.Class<any>
                             }
                         }

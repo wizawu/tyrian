@@ -18,7 +18,7 @@ declare namespace com {
                                         public engineCanonicalizeSubTree(arg0: org.w3c.dom.Node): byte[]
                                         public engineCanonicalizeXPathNodeSet(arg0: java.util.Set<org.w3c.dom.Node>): byte[]
                                         public engineCanonicalize(arg0: com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput): byte[]
-                                        public setWriter(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                                        public setWriter(arg0: java.io.OutputStream): void
                                         protected engineCanonicalizeSubTree(arg0: org.w3c.dom.Node, arg1: org.w3c.dom.Node): byte[]
                                         protected canonicalizeSubTree(arg0: org.w3c.dom.Node, arg1: com.sun.org.apache.xml.internal.security.c14n.implementations.NameSpaceSymbTable, arg2: org.w3c.dom.Node, arg3: int): void
                                         protected canonicalizeXPathNodeSet(arg0: org.w3c.dom.Node, arg1: org.w3c.dom.Node): void
@@ -27,10 +27,10 @@ declare namespace com {
                                         protected isVisible(arg0: org.w3c.dom.Node): boolean
                                         protected handleParent(arg0: org.w3c.dom.Element, arg1: com.sun.org.apache.xml.internal.security.c14n.implementations.NameSpaceSymbTable): void
                                         protected getParentNameSpaces(arg0: org.w3c.dom.Element, arg1: com.sun.org.apache.xml.internal.security.c14n.implementations.NameSpaceSymbTable): void
-                                        protected static outputAttrToWriter(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.io.OutputStream | java.io.OutputStream$$Lambda, arg3: java.util.Map<java.lang.String, byte[]>): void
-                                        protected outputPItoWriter(arg0: org.w3c.dom.ProcessingInstruction, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda, arg2: int): void
-                                        protected outputCommentToWriter(arg0: org.w3c.dom.Comment, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda, arg2: int): void
-                                        protected static outputTextToWriter(arg0: java.lang.String | string, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                                        protected static outputAttrToWriter(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.io.OutputStream, arg3: java.util.Map<java.lang.String, byte[]>): void
+                                        protected outputPItoWriter(arg0: org.w3c.dom.ProcessingInstruction, arg1: java.io.OutputStream, arg2: int): void
+                                        protected outputCommentToWriter(arg0: org.w3c.dom.Comment, arg1: java.io.OutputStream, arg2: int): void
+                                        protected static outputTextToWriter(arg0: java.lang.String | string, arg1: java.io.OutputStream): void
                                         protected getNullNode(arg0: org.w3c.dom.Document): org.w3c.dom.Attr
                                         public static class: java.lang.Class<any>
                                     }

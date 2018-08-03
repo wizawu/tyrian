@@ -7,9 +7,9 @@ declare namespace com {
                         namespace server {
                             abstract class InstanceResolver<T> {
                                 public constructor()
-                                public resolve(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): T
-                                public postInvoke(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda, arg1: T): void
-                                public start(arg0: com.sun.xml.internal.ws.api.server.WSWebServiceContext, arg1: com.sun.xml.internal.ws.api.server.WSEndpoint): void
+                                public resolve(arg0: com.sun.xml.internal.ws.api.message.Packet): T
+                                public postInvoke(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: T): void
+                                public start(arg0: com.sun.xml.internal.ws.api.server.WSWebServiceContext | com.sun.xml.internal.ws.api.server.WSWebServiceContext$$Lambda, arg1: com.sun.xml.internal.ws.api.server.WSEndpoint): void
                                 public start(arg0: javax.xml.ws.WebServiceContext): void
                                 public dispose(): void
                                 public static createSingleton<T>(arg0: T): com.sun.xml.internal.ws.api.server.InstanceResolver<T>

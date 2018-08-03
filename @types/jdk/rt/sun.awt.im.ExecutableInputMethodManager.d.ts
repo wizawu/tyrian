@@ -8,9 +8,6 @@ declare namespace sun {
                 public getTriggerMenuString(): string
                 public static class: java.lang.Class<any>
             }
-            class ExecutableInputMethodManager$$Lambda extends sun.awt.im.InputMethodManager implements java.lang.Runnable {
-                public (): void
-            }
         }
     }
 }

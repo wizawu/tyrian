@@ -67,7 +67,7 @@ declare namespace com {
                                 public createAttachmentPart(): javax.xml.soap.AttachmentPart
                                 public getAttachment(arg0: javax.xml.soap.SOAPElement): javax.xml.soap.AttachmentPart
                                 public saveChanges(): void
-                                public writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                                public writeTo(arg0: java.io.OutputStream): void
                                 public getSOAPBody(): javax.xml.soap.SOAPBody
                                 public getSOAPHeader(): javax.xml.soap.SOAPHeader
                                 public setLazyAttachments(arg0: boolean): void

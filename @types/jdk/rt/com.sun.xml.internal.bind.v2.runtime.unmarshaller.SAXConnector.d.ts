@@ -7,7 +7,7 @@ declare namespace com {
                         namespace runtime {
                             namespace unmarshaller {
                                 class SAXConnector implements javax.xml.bind.UnmarshallerHandler {
-                                    public constructor(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.XmlVisitor, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.LocatorEx)
+                                    public constructor(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.XmlVisitor, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.LocatorEx | com.sun.xml.internal.bind.v2.runtime.unmarshaller.LocatorEx$$Lambda)
                                     public getResult(): java.lang.Object
                                     public getContext(): com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext
                                     public setDocumentLocator(arg0: org.xml.sax.Locator): void

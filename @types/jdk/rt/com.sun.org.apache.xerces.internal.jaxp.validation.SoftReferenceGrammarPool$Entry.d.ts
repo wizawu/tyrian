@@ -13,7 +13,7 @@ declare namespace com {
                                     public next: com.sun.org.apache.xerces.internal.jaxp.validation.SoftReferenceGrammarPool$Entry
                                     public desc: com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarDescription
                                     public grammar: com.sun.org.apache.xerces.internal.jaxp.validation.SoftReferenceGrammarPool$SoftGrammarReference
-                                    protected constructor(arg0: int, arg1: int, arg2: com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarDescription, arg3: com.sun.org.apache.xerces.internal.xni.grammars.Grammar | com.sun.org.apache.xerces.internal.xni.grammars.Grammar$$Lambda, arg4: com.sun.org.apache.xerces.internal.jaxp.validation.SoftReferenceGrammarPool$Entry, arg5: java.lang.ref.ReferenceQueue)
+                                    protected constructor(arg0: int, arg1: int, arg2: com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarDescription | com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarDescription$$Lambda, arg3: com.sun.org.apache.xerces.internal.xni.grammars.Grammar | com.sun.org.apache.xerces.internal.xni.grammars.Grammar$$Lambda, arg4: com.sun.org.apache.xerces.internal.jaxp.validation.SoftReferenceGrammarPool$Entry, arg5: java.lang.ref.ReferenceQueue)
                                     protected clear(): void
                                     public static class: java.lang.Class<any>
                                 }

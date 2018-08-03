@@ -12,8 +12,5 @@ declare namespace javax {
             public hashCode(): int
             public static class: java.lang.Class<any>
         }
-        class MBeanFeatureInfo$$Lambda implements java.io.Serializable , javax.management.DescriptorRead {
-            protected name: string
-        }
     }
 }

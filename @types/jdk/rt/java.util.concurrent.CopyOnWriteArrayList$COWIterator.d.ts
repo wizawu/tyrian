@@ -11,7 +11,7 @@ declare namespace java {
                 public remove(): void
                 public set(arg0: E): void
                 public add(arg0: E): void
-                public forEachRemaining(arg0: java.util.function$.Consumer$$TypeScript<E>): void
+                public forEachRemaining(arg0: java.util.function$.Consumer$$Lambda<E>): void
                 public static class: java.lang.Class<any>
             }
         }

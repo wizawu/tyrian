@@ -5,9 +5,6 @@ declare namespace sun {
                 public run(): void
                 public static class: java.lang.Class<any>
             }
-            class XTrayIconPeer$5$$Lambda implements java.lang.Runnable {
-                public (): void
-            }
         }
     }
 }

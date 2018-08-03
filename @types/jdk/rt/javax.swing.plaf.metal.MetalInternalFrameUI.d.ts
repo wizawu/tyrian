@@ -5,9 +5,9 @@ declare namespace javax {
                 class MetalInternalFrameUI extends javax.swing.plaf.basic.BasicInternalFrameUI {
                     protected static IS_PALETTE: string
                     public constructor(arg0: javax.swing.JInternalFrame)
-                    public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
-                    public installUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    public uninstallUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
+                    public installUI(arg0: javax.swing.JComponent): void
+                    public uninstallUI(arg0: javax.swing.JComponent): void
                     protected installListeners(): void
                     protected uninstallListeners(): void
                     protected installKeyboardActions(): void

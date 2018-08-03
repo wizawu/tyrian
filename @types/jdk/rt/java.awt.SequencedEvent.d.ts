@@ -6,8 +6,5 @@ declare namespace java {
             public isFirstOrDisposed(): boolean
             public static class: java.lang.Class<any>
         }
-        class SequencedEvent$$Lambda extends java.awt.AWTEvent implements java.awt.ActiveEvent {
-            public constructor(arg0: java.awt.AWTEvent)
-        }
     }
 }

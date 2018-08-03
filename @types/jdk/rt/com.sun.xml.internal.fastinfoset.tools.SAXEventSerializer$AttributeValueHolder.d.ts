@@ -16,9 +16,6 @@ declare namespace com {
                             public hashCode(): int
                             public static class: java.lang.Class<any>
                         }
-                        class SAXEventSerializer$AttributeValueHolder$$Lambda implements java.lang.Comparable {
-                            public qName: string
-                        }
                     }
                 }
             }

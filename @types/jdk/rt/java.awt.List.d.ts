@@ -44,11 +44,11 @@ declare namespace java {
             public minimumSize(arg0: int): java.awt.Dimension
             public getMinimumSize(): java.awt.Dimension
             public minimumSize(): java.awt.Dimension
-            public addItemListener(arg0: java.awt.event.ItemListener): void
-            public removeItemListener(arg0: java.awt.event.ItemListener): void
+            public addItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): void
+            public removeItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): void
             public getItemListeners(): java.awt.event.ItemListener[]
-            public addActionListener(arg0: java.awt.event.ActionListener): void
-            public removeActionListener(arg0: java.awt.event.ActionListener): void
+            public addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
+            public removeActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
             public getActionListeners(): java.awt.event.ActionListener[]
             public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]
             protected processEvent<T extends java.util.EventListener>(arg0: java.awt.AWTEvent): void
@@ -58,9 +58,6 @@ declare namespace java {
             public delItems<T extends java.util.EventListener>(arg0: int, arg1: int): void
             public getAccessibleContext<T extends java.util.EventListener>(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
-        }
-        class List$$Lambda extends java.awt.Component implements java.awt.ItemSelectable , javax.accessibility.Accessible {
-            public constructor()
         }
     }
 }

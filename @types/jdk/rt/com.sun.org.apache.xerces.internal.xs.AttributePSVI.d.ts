@@ -8,6 +8,9 @@ declare namespace com {
                             interface AttributePSVI extends com.sun.org.apache.xerces.internal.xs.ItemPSVI {
                                 getAttributeDeclaration(): com.sun.org.apache.xerces.internal.xs.XSAttributeDeclaration
                             }
+                            interface AttributePSVI$$Lambda extends com.sun.org.apache.xerces.internal.xs.ItemPSVI {
+                                (): com.sun.org.apache.xerces.internal.xs.XSAttributeDeclaration
+                            }
                         }
                     }
                 }

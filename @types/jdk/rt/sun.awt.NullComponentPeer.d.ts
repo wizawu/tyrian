@@ -34,8 +34,8 @@ declare namespace sun {
             public requestFocus(arg0: java.awt.Component, arg1: boolean, arg2: boolean, arg3: long, arg4: sun.awt.CausedFocusEvent$Cause): boolean
             public createImage(arg0: java.awt.image.ImageProducer): java.awt.Image
             public createImage(arg0: int, arg1: int): java.awt.Image
-            public prepareImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver): boolean
-            public checkImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver): int
+            public prepareImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+            public checkImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): int
             public preferredSize(): java.awt.Dimension
             public minimumSize(): java.awt.Dimension
             public getLocationOnScreen(): java.awt.Point

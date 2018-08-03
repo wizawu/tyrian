@@ -27,7 +27,7 @@ declare namespace sun {
             public fontFilesArePresent(): boolean
             protected getInstalledFallbackFonts(arg0: java.lang.String | string): void
             public static loadBinary(arg0: java.io.InputStream): void
-            public static saveBinary(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+            public static saveBinary(arg0: java.io.OutputStream): void
             public static loadProperties(arg0: java.io.InputStream): void
             public static hasMonoToPropMap(): boolean
             public static isLogicalFontFamilyName(arg0: java.lang.String | string): boolean

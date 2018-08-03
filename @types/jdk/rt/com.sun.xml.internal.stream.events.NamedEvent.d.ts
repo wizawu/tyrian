@@ -13,7 +13,7 @@ declare namespace com {
                             public setName(arg0: javax.xml.namespace.QName): void
                             public nameAsString(): string
                             public getNamespace(): string
-                            protected writeAsEncodedUnicodeEx(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+                            protected writeAsEncodedUnicodeEx(arg0: java.io.Writer): void
                             public static class: java.lang.Class<any>
                         }
                     }

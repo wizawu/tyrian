@@ -7,9 +7,6 @@ declare namespace sun {
                 protected read(arg0: sun.text.normalizer.UCharacterProperty): void
                 public static class: java.lang.Class<any>
             }
-            class UCharacterPropertyReader$$Lambda implements sun.text.normalizer.ICUBinary$Authenticate {
-                public (arg0: byte[]): boolean
-            }
         }
     }
 }

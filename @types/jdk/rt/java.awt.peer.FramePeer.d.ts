@@ -3,7 +3,7 @@ declare namespace java {
         namespace peer {
             interface FramePeer extends java.awt.peer.WindowPeer {
                 setTitle(arg0: java.lang.String | string): void
-                setMenuBar(arg0: java.awt.MenuBar | java.awt.MenuBar$$Lambda): void
+                setMenuBar(arg0: java.awt.MenuBar): void
                 setResizable(arg0: boolean): void
                 setState(arg0: int): void
                 getState(): int

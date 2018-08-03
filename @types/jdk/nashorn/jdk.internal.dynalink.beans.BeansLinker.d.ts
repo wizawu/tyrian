@@ -17,9 +17,6 @@ declare namespace jdk {
                     public getGuardedInvocation(arg0: jdk.internal.dynalink.linker.LinkRequest, arg1: jdk.internal.dynalink.linker.LinkerServices): jdk.internal.dynalink.linker.GuardedInvocation
                     public static class: java.lang.Class<any>
                 }
-                class BeansLinker$$Lambda implements jdk.internal.dynalink.linker.GuardingDynamicLinker {
-                    public constructor()
-                }
             }
         }
     }

@@ -22,8 +22,8 @@ declare namespace sun {
                 protected getClipboardFormatsOpenClose(): long[]
                 protected getClipboardFormats(): long[]
                 protected getClipboardData(arg0: long): byte[]
-                public addFlavorListener(arg0: java.awt.datatransfer.FlavorListener): void
-                public removeFlavorListener(arg0: java.awt.datatransfer.FlavorListener): void
+                public addFlavorListener(arg0: java.awt.datatransfer.FlavorListener | java.awt.datatransfer.FlavorListener$$Lambda): void
+                public removeFlavorListener(arg0: java.awt.datatransfer.FlavorListener | java.awt.datatransfer.FlavorListener$$Lambda): void
                 public getFlavorListeners(): java.awt.datatransfer.FlavorListener[]
                 public areFlavorListenersRegistered(): boolean
                 protected registerClipboardViewerChecked(): void

@@ -18,9 +18,6 @@ declare namespace com {
                                     public getUpstream(): com.sun.xml.internal.bind.v2.model.annotation.Locatable
                                     public static class: java.lang.Class<any>
                                 }
-                                class ArrayInfoImpl$$Lambda<TypeT, ClassDeclT, FieldT, MethodT> extends com.sun.xml.internal.bind.v2.model.impl.TypeInfoImpl<TypeT, ClassDeclT, FieldT, MethodT> implements com.sun.xml.internal.bind.v2.model.core.ArrayInfo<TypeT, ClassDeclT> , com.sun.xml.internal.bind.v2.runtime.Location {
-                                    public constructor(arg0: com.sun.xml.internal.bind.v2.model.impl.ModelBuilder<TypeT, ClassDeclT, FieldT, MethodT>, arg1: com.sun.xml.internal.bind.v2.model.annotation.Locatable, arg2: TypeT)
-                                }
                             }
                         }
                     }

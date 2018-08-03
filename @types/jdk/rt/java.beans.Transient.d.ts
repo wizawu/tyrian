@@ -3,5 +3,8 @@ declare namespace java {
         interface Transient extends java.lang.annotation.Annotation {
             value(): boolean
         }
+        interface Transient$$Lambda extends java.lang.annotation.Annotation {
+            (): boolean
+        }
     }
 }

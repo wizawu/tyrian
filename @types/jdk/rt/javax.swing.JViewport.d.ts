@@ -42,8 +42,8 @@ declare namespace javax {
             public setExtentSize(arg0: java.awt.Dimension): void
             protected createViewListener(): javax.swing.JViewport$ViewListener
             protected createLayoutManager(): java.awt.LayoutManager
-            public addChangeListener(arg0: javax.swing.event.ChangeListener): void
-            public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
+            public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+            public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
             public getChangeListeners(): javax.swing.event.ChangeListener[]
             protected fireStateChanged(): void
             public repaint(arg0: long, arg1: int, arg2: int, arg3: int, arg4: int): void
@@ -51,9 +51,6 @@ declare namespace javax {
             protected firePropertyChange(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: java.lang.Object): void
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
-        }
-        class JViewport$$Lambda extends javax.swing.JComponent implements javax.accessibility.Accessible {
-            protected isViewSizeSet: boolean
         }
     }
 }

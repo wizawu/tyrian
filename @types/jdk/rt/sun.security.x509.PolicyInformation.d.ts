@@ -17,7 +17,7 @@ declare namespace sun {
                 public getElements(): java.util.Enumeration<java.lang.String>
                 public getName(): string
                 public toString(): string
-                public encode(arg0: sun.security.util.DerOutputStream | sun.security.util.DerOutputStream$$Lambda): void
+                public encode(arg0: sun.security.util.DerOutputStream): void
                 public static class: java.lang.Class<any>
             }
         }

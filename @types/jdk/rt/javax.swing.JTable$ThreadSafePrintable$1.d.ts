@@ -4,8 +4,5 @@ declare namespace javax {
             public run(): void
             public static class: java.lang.Class<any>
         }
-        class JTable$ThreadSafePrintable$1$$Lambda implements java.lang.Runnable {
-            public (): void
-        }
     }
 }

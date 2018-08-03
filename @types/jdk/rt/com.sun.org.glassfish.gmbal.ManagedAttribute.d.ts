@@ -6,6 +6,9 @@ declare namespace com {
                     interface ManagedAttribute extends java.lang.annotation.Annotation {
                         id(): string
                     }
+                    interface ManagedAttribute$$Lambda extends java.lang.annotation.Annotation {
+                        (): string
+                    }
                 }
             }
         }

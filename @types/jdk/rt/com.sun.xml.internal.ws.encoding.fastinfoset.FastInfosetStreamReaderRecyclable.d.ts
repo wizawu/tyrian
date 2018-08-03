@@ -11,9 +11,6 @@ declare namespace com {
                                 public onRecycled(): void
                                 public static class: java.lang.Class<any>
                             }
-                            class FastInfosetStreamReaderRecyclable$$Lambda extends com.sun.xml.internal.fastinfoset.stax.StAXDocumentParser implements com.sun.xml.internal.ws.api.streaming.XMLStreamReaderFactory$RecycleAware {
-                                public constructor()
-                            }
                         }
                     }
                 }

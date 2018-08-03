@@ -3,7 +3,7 @@ declare namespace javax {
         namespace text {
             namespace html {
                 class TableView$RowView extends javax.swing.text.BoxView {
-                    public constructor(arg0: javax.swing.text.html.TableView | javax.swing.text.html.TableView$$Lambda, arg1: javax.swing.text.Element)
+                    public constructor(arg0: javax.swing.text.html.TableView, arg1: javax.swing.text.Element)
                     public getAttributes(): javax.swing.text.AttributeSet
                     protected getStyleSheet(): javax.swing.text.html.StyleSheet
                     public preferenceChanged(arg0: javax.swing.text.View, arg1: boolean, arg2: boolean): void

@@ -9,6 +9,9 @@ declare namespace com {
                                 interface Fault extends com.sun.xml.internal.txw2.TypedXmlWriter , com.sun.xml.internal.ws.wsdl.writer.document.StartWithExtensionsType {
                                     name(arg0: java.lang.String | string): com.sun.xml.internal.ws.wsdl.writer.document.Fault
                                 }
+                                interface Fault$$Lambda extends com.sun.xml.internal.txw2.TypedXmlWriter , com.sun.xml.internal.ws.wsdl.writer.document.StartWithExtensionsType {
+                                    (arg0: java.lang.String | string): com.sun.xml.internal.ws.wsdl.writer.document.Fault
+                                }
                             }
                         }
                     }

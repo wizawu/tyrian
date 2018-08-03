@@ -7,9 +7,6 @@ declare namespace com {
                         public accept(arg0: java.io.File): boolean
                         public static class: java.lang.Class<any>
                     }
-                    class CommonDirectory$DirectorySampler$$Lambda implements java.io.FileFilter {
-                        public (arg0: java.io.File): boolean
-                    }
                 }
             }
         }

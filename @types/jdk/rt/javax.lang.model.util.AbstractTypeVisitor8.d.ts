@@ -4,7 +4,7 @@ declare namespace javax {
             namespace util {
                 abstract class AbstractTypeVisitor8<R, P> extends javax.lang.model.util.AbstractTypeVisitor7<R, P> {
                     protected constructor()
-                    public visitIntersection(arg0: javax.lang.model.type.IntersectionType, arg1: P): R
+                    public visitIntersection(arg0: javax.lang.model.type.IntersectionType | javax.lang.model.type.IntersectionType$$Lambda, arg1: P): R
                     public static class: java.lang.Class<any>
                 }
             }

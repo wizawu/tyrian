@@ -49,9 +49,6 @@ declare namespace com {
                                     public deliverMoreNodes(arg0: boolean): java.lang.Object
                                     public static class: java.lang.Class<any>
                                 }
-                                class IncrementalSAXSource_Filter$$Lambda implements com.sun.org.apache.xml.internal.dtm.ref.IncrementalSAXSource , org.xml.sax.ContentHandler , org.xml.sax.DTDHandler , org.xml.sax.ext.LexicalHandler , org.xml.sax.ErrorHandler , java.lang.Runnable {
-                                    public constructor()
-                                }
                             }
                         }
                     }

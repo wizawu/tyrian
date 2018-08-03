@@ -4,7 +4,7 @@ declare namespace javax {
             namespace html {
                 abstract class AccessibleHTML$HTMLAccessibleContext extends javax.accessibility.AccessibleContext implements javax.accessibility.Accessible , javax.accessibility.AccessibleComponent {
                     protected elementInfo: javax.swing.text.html.AccessibleHTML$ElementInfo
-                    public constructor(arg0: javax.swing.text.html.AccessibleHTML | javax.swing.text.html.AccessibleHTML$$Lambda, arg1: javax.swing.text.html.AccessibleHTML$ElementInfo)
+                    public constructor(arg0: javax.swing.text.html.AccessibleHTML, arg1: javax.swing.text.html.AccessibleHTML$ElementInfo)
                     public getAccessibleContext(): javax.accessibility.AccessibleContext
                     public getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
                     public getAccessibleIndexInParent(): int

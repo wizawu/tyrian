@@ -1,7 +1,7 @@
 declare namespace javax {
     namespace swing {
         class ImageIcon$AccessibleImageIcon extends javax.accessibility.AccessibleContext implements javax.accessibility.AccessibleIcon , java.io.Serializable {
-            protected constructor(arg0: javax.swing.ImageIcon | javax.swing.ImageIcon$$Lambda)
+            protected constructor(arg0: javax.swing.ImageIcon)
             public getAccessibleRole(): javax.accessibility.AccessibleRole
             public getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
             public getAccessibleParent(): javax.accessibility.Accessible

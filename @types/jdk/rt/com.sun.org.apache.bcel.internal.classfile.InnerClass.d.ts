@@ -6,7 +6,7 @@ declare namespace com {
                     namespace internal {
                         namespace classfile {
                             class InnerClass implements java.lang.Cloneable , com.sun.org.apache.bcel.internal.classfile.Node {
-                                public constructor(arg0: com.sun.org.apache.bcel.internal.classfile.InnerClass | com.sun.org.apache.bcel.internal.classfile.InnerClass$$Lambda)
+                                public constructor(arg0: com.sun.org.apache.bcel.internal.classfile.InnerClass)
                                 public constructor(arg0: int, arg1: int, arg2: int, arg3: int)
                                 public accept(arg0: com.sun.org.apache.bcel.internal.classfile.Visitor): void
                                 public dump(arg0: java.io.DataOutputStream): void
@@ -22,9 +22,6 @@ declare namespace com {
                                 public toString(arg0: com.sun.org.apache.bcel.internal.classfile.ConstantPool): string
                                 public copy(): com.sun.org.apache.bcel.internal.classfile.InnerClass
                                 public static class: java.lang.Class<any>
-                            }
-                            class InnerClass$$Lambda implements java.lang.Cloneable , com.sun.org.apache.bcel.internal.classfile.Node {
-                                public constructor(arg0: com.sun.org.apache.bcel.internal.classfile.InnerClass | com.sun.org.apache.bcel.internal.classfile.InnerClass$$Lambda)
                             }
                         }
                     }

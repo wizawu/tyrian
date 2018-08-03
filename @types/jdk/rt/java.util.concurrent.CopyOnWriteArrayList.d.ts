@@ -29,9 +29,9 @@ declare namespace java {
                 public clear<T>(): void
                 public addAll<T>(arg0: java.util.Collection<E>): boolean
                 public addAll<T>(arg0: int, arg1: java.util.Collection<E>): boolean
-                public forEach<T>(arg0: java.util.function$.Consumer$$TypeScript<E>): void
+                public forEach<T>(arg0: java.util.function$.Consumer$$Lambda<E>): void
                 public removeIf<T>(arg0: java.util.function$.Predicate<E>): boolean
-                public replaceAll<T>(arg0: java.util.function$.UnaryOperator<E>): void
+                public replaceAll<T>(arg0: java.util.function$.UnaryOperator<E> | java.util.function$.UnaryOperator$$Lambda<E>): void
                 public sort<T>(arg0: java.util.Comparator<E>): void
                 public toString<T>(): string
                 public equals<T>(arg0: java.lang.Object): boolean

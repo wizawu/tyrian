@@ -5,7 +5,7 @@ declare namespace sun {
                 public static NAME: string
                 public constructor(arg0: java.util.List<sun.security.x509.DistributionPoint>)
                 public constructor(arg0: java.lang.Boolean | boolean, arg1: java.lang.Object)
-                public encode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public encode(arg0: java.io.OutputStream): void
                 public static class: java.lang.Class<any>
             }
         }

@@ -20,9 +20,6 @@ declare namespace java {
                 public paramString(): string
                 public static class: java.lang.Class<any>
             }
-            class InvocationEvent$$Lambda extends java.awt.AWTEvent implements java.awt.ActiveEvent {
-                public static INVOCATION_FIRST: int
-            }
         }
     }
 }

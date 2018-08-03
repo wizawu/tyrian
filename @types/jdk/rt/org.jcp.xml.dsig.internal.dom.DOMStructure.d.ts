@@ -10,9 +10,6 @@ declare namespace org {
                             public marshal(arg0: org.w3c.dom.Node, arg1: java.lang.String | string, arg2: javax.xml.crypto.dom.DOMCryptoContext): void
                             public static class: java.lang.Class<any>
                         }
-                        abstract class DOMStructure$$Lambda implements javax.xml.crypto.XMLStructure {
-                            public constructor()
-                        }
                     }
                 }
             }

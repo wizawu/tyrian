@@ -1,7 +1,7 @@
 declare namespace javax {
     namespace swing {
         class JLabel$AccessibleJLabel extends javax.swing.JComponent$AccessibleJComponent implements javax.accessibility.AccessibleText , javax.accessibility.AccessibleExtendedComponent {
-            protected constructor(arg0: javax.swing.JLabel | javax.swing.JLabel$$Lambda)
+            protected constructor(arg0: javax.swing.JLabel)
             public getAccessibleName(): string
             public getAccessibleRole(): javax.accessibility.AccessibleRole
             public getAccessibleIcon(): javax.accessibility.AccessibleIcon[]

@@ -5,9 +5,9 @@ declare namespace com {
                 namespace txw2 {
                     namespace output {
                         class StreamSerializer implements com.sun.xml.internal.txw2.output.XmlSerializer {
-                            public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda)
-                            public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: java.lang.String | string)
-                            public constructor(arg0: java.io.Writer | java.io.Writer$$Lambda)
+                            public constructor(arg0: java.io.OutputStream)
+                            public constructor(arg0: java.io.OutputStream, arg1: java.lang.String | string)
+                            public constructor(arg0: java.io.Writer)
                             public constructor(arg0: javax.xml.transform.stream.StreamResult)
                             public startDocument(): void
                             public beginStartTag(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void

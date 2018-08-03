@@ -1,7 +1,7 @@
 declare namespace javax {
     namespace swing {
         class JRootPane$RootLayout implements java.awt.LayoutManager2 , java.io.Serializable {
-            protected constructor(arg0: javax.swing.JRootPane | javax.swing.JRootPane$$Lambda)
+            protected constructor(arg0: javax.swing.JRootPane)
             public preferredLayoutSize(arg0: java.awt.Container): java.awt.Dimension
             public minimumLayoutSize(arg0: java.awt.Container): java.awt.Dimension
             public maximumLayoutSize(arg0: java.awt.Container): java.awt.Dimension

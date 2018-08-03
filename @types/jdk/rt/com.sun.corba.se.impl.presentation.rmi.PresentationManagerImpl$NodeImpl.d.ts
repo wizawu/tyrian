@@ -15,9 +15,6 @@ declare namespace com {
                                 public equals(arg0: java.lang.Object): boolean
                                 public static class: java.lang.Class<any>
                             }
-                            class PresentationManagerImpl$NodeImpl$$Lambda implements com.sun.corba.se.impl.orbutil.graph.Node {
-                                public (): java.lang.Class
-                            }
                         }
                     }
                 }

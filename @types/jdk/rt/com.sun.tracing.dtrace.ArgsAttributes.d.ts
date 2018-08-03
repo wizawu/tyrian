@@ -5,6 +5,9 @@ declare namespace com {
                 interface ArgsAttributes extends java.lang.annotation.Annotation {
                     value(): com.sun.tracing.dtrace.Attributes
                 }
+                interface ArgsAttributes$$Lambda extends java.lang.annotation.Annotation {
+                    (): com.sun.tracing.dtrace.Attributes
+                }
             }
         }
     }

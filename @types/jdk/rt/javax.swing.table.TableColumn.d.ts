@@ -20,7 +20,7 @@ declare namespace javax {
                 public constructor()
                 public constructor(arg0: int)
                 public constructor(arg0: int, arg1: int)
-                public constructor(arg0: int, arg1: int, arg2: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$Lambda, arg3: javax.swing.table.TableCellEditor)
+                public constructor(arg0: int, arg1: int, arg2: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$Lambda, arg3: javax.swing.table.TableCellEditor | javax.swing.table.TableCellEditor$$Lambda)
                 public setModelIndex(arg0: int): void
                 public getModelIndex(): int
                 public setIdentifier(arg0: java.lang.Object): void
@@ -31,7 +31,7 @@ declare namespace javax {
                 public getHeaderRenderer(): javax.swing.table.TableCellRenderer
                 public setCellRenderer(arg0: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$Lambda): void
                 public getCellRenderer(): javax.swing.table.TableCellRenderer
-                public setCellEditor(arg0: javax.swing.table.TableCellEditor): void
+                public setCellEditor(arg0: javax.swing.table.TableCellEditor | javax.swing.table.TableCellEditor$$Lambda): void
                 public getCellEditor(): javax.swing.table.TableCellEditor
                 public setWidth(arg0: int): void
                 public getWidth(): int
@@ -46,8 +46,8 @@ declare namespace javax {
                 public sizeWidthToFit(): void
                 public disableResizedPosting(): void
                 public enableResizedPosting(): void
-                public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-                public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+                public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+                public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
                 public getPropertyChangeListeners(): java.beans.PropertyChangeListener[]
                 protected createDefaultHeaderRenderer(): javax.swing.table.TableCellRenderer
                 public static class: java.lang.Class<any>

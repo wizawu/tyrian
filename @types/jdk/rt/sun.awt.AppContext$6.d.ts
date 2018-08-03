@@ -4,8 +4,5 @@ declare namespace sun {
             public getAppletContext(): java.lang.Object
             public static class: java.lang.Class<any>
         }
-        class AppContext$6$$Lambda implements sun.misc.JavaAWTAccess {
-            public (): java.lang.Object
-        }
     }
 }

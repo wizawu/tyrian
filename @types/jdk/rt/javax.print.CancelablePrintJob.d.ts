@@ -3,5 +3,8 @@ declare namespace javax {
         interface CancelablePrintJob extends javax.print.DocPrintJob {
             cancel(): void
         }
+        interface CancelablePrintJob$$Lambda extends javax.print.DocPrintJob {
+            (): void
+        }
     }
 }

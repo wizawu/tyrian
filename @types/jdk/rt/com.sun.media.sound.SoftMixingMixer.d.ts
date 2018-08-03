@@ -17,7 +17,7 @@ declare namespace com {
                     public isSynchronizationSupported(arg0: javax.sound.sampled.Line[], arg1: boolean): boolean
                     public synchronize(arg0: javax.sound.sampled.Line[], arg1: boolean): void
                     public unsynchronize(arg0: javax.sound.sampled.Line[]): void
-                    public addLineListener(arg0: javax.sound.sampled.LineListener): void
+                    public addLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$Lambda): void
                     public close(): void
                     public getControl(arg0: javax.sound.sampled.Control$Type): javax.sound.sampled.Control
                     public getControls(): javax.sound.sampled.Control[]
@@ -27,7 +27,7 @@ declare namespace com {
                     public open(): void
                     public open(arg0: javax.sound.sampled.SourceDataLine): void
                     public openStream(arg0: javax.sound.sampled.AudioFormat): javax.sound.sampled.AudioInputStream
-                    public removeLineListener(arg0: javax.sound.sampled.LineListener): void
+                    public removeLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$Lambda): void
                     public getLatency(): long
                     public getFormat(): javax.sound.sampled.AudioFormat
                     public static class: java.lang.Class<any>

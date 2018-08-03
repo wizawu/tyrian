@@ -16,8 +16,8 @@ declare namespace jdk {
                         public static AMPERSAND: char
                         public static DOUBLEQUOT: char
                         public static SEMICOLON: char
-                        public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda)
-                        public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: java.lang.String | string)
+                        public constructor(arg0: java.io.OutputStream)
+                        public constructor(arg0: java.io.OutputStream, arg1: java.lang.String | string)
                         public writeStartDocument(): void
                         public writeStartDocument(arg0: java.lang.String | string): void
                         public writeStartDocument(arg0: java.lang.String | string, arg1: java.lang.String | string): void

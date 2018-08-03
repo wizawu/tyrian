@@ -7,8 +7,5 @@ declare namespace sun {
             public dispatch(): void
             public static class: java.lang.Class<any>
         }
-        class ModalityEvent$$Lambda extends java.awt.AWTEvent implements java.awt.ActiveEvent {
-            public static MODALITY_PUSHED: int
-        }
     }
 }

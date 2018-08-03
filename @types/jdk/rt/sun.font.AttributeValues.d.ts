@@ -23,9 +23,9 @@ declare namespace sun {
             public getCharReplacement(): java.awt.font.GraphicAttribute
             public setCharReplacement(arg0: java.awt.font.GraphicAttribute): void
             public getForeground(): java.awt.Paint
-            public setForeground(arg0: java.awt.Paint): void
+            public setForeground(arg0: java.awt.Paint | java.awt.Paint$$Lambda): void
             public getBackground(): java.awt.Paint
-            public setBackground(arg0: java.awt.Paint): void
+            public setBackground(arg0: java.awt.Paint | java.awt.Paint$$Lambda): void
             public getUnderline(): int
             public setUnderline(arg0: int): void
             public getStrikethrough(): boolean

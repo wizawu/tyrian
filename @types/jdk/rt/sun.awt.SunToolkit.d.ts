@@ -8,25 +8,25 @@ declare namespace sun {
             public static DESKTOPFONTHINTS: string
             public constructor()
             public useBufferPerWindow(): boolean
-            public createWindow(arg0: java.awt.Window | java.awt.Window$$Lambda): java.awt.peer.WindowPeer
+            public createWindow(arg0: java.awt.Window): java.awt.peer.WindowPeer
             public createFrame(arg0: java.awt.Frame): java.awt.peer.FramePeer
             public createLightweightFrame(arg0: sun.awt.LightweightFrame): java.awt.peer.FramePeer
             public createDialog(arg0: java.awt.Dialog): java.awt.peer.DialogPeer
-            public createButton(arg0: java.awt.Button | java.awt.Button$$Lambda): java.awt.peer.ButtonPeer
+            public createButton(arg0: java.awt.Button): java.awt.peer.ButtonPeer
             public createTextField(arg0: java.awt.TextField): java.awt.peer.TextFieldPeer
-            public createChoice(arg0: java.awt.Choice | java.awt.Choice$$Lambda): java.awt.peer.ChoicePeer
-            public createLabel(arg0: java.awt.Label | java.awt.Label$$Lambda): java.awt.peer.LabelPeer
-            public createList(arg0: java.awt.List | java.awt.List$$Lambda): java.awt.peer.ListPeer
-            public createCheckbox(arg0: java.awt.Checkbox | java.awt.Checkbox$$Lambda): java.awt.peer.CheckboxPeer
-            public createScrollbar(arg0: java.awt.Scrollbar | java.awt.Scrollbar$$Lambda): java.awt.peer.ScrollbarPeer
-            public createScrollPane(arg0: java.awt.ScrollPane | java.awt.ScrollPane$$Lambda): java.awt.peer.ScrollPanePeer
+            public createChoice(arg0: java.awt.Choice): java.awt.peer.ChoicePeer
+            public createLabel(arg0: java.awt.Label): java.awt.peer.LabelPeer
+            public createList(arg0: java.awt.List): java.awt.peer.ListPeer
+            public createCheckbox(arg0: java.awt.Checkbox): java.awt.peer.CheckboxPeer
+            public createScrollbar(arg0: java.awt.Scrollbar): java.awt.peer.ScrollbarPeer
+            public createScrollPane(arg0: java.awt.ScrollPane): java.awt.peer.ScrollPanePeer
             public createTextArea(arg0: java.awt.TextArea): java.awt.peer.TextAreaPeer
             public createFileDialog(arg0: java.awt.FileDialog): java.awt.peer.FileDialogPeer
-            public createMenuBar(arg0: java.awt.MenuBar | java.awt.MenuBar$$Lambda): java.awt.peer.MenuBarPeer
-            public createMenu(arg0: java.awt.Menu | java.awt.Menu$$Lambda): java.awt.peer.MenuPeer
+            public createMenuBar(arg0: java.awt.MenuBar): java.awt.peer.MenuBarPeer
+            public createMenu(arg0: java.awt.Menu): java.awt.peer.MenuPeer
             public createPopupMenu(arg0: java.awt.PopupMenu): java.awt.peer.PopupMenuPeer
-            public createMenuItem(arg0: java.awt.MenuItem | java.awt.MenuItem$$Lambda): java.awt.peer.MenuItemPeer
-            public createCheckboxMenuItem(arg0: java.awt.CheckboxMenuItem | java.awt.CheckboxMenuItem$$Lambda): java.awt.peer.CheckboxMenuItemPeer
+            public createMenuItem(arg0: java.awt.MenuItem): java.awt.peer.MenuItemPeer
+            public createCheckboxMenuItem(arg0: java.awt.CheckboxMenuItem): java.awt.peer.CheckboxMenuItemPeer
             public createDragSourceContextPeer(arg0: java.awt.dnd.DragGestureEvent): java.awt.dnd.peer.DragSourceContextPeer
             public createTrayIcon(arg0: java.awt.TrayIcon): java.awt.peer.TrayIconPeer
             public createSystemTray(arg0: java.awt.SystemTray): java.awt.peer.SystemTrayPeer
@@ -47,7 +47,7 @@ declare namespace sun {
             protected static targetCreatedPeer(arg0: java.lang.Object, arg1: java.lang.Object): void
             protected static targetDisposedPeer(arg0: java.lang.Object, arg1: java.lang.Object): void
             public static targetToAppContext(arg0: java.lang.Object): sun.awt.AppContext
-            public static setLWRequestStatus(arg0: java.awt.Window | java.awt.Window$$Lambda, arg1: boolean): void
+            public static setLWRequestStatus(arg0: java.awt.Window, arg1: boolean): void
             public static checkAndSetPolicy(arg0: java.awt.Container): void
             public static insertTargetMapping(arg0: java.lang.Object, arg1: sun.awt.AppContext): void
             public static postEvent(arg0: sun.awt.AppContext, arg1: java.awt.AWTEvent): void
@@ -65,9 +65,9 @@ declare namespace sun {
             protected getScreenHeight(): int
             public getFontMetrics(arg0: java.awt.Font): java.awt.FontMetrics
             public getFontList(): java.lang.String[]
-            public createPanel(arg0: java.awt.Panel | java.awt.Panel$$Lambda): java.awt.peer.PanelPeer
-            public createCanvas(arg0: java.awt.Canvas | java.awt.Canvas$$Lambda): java.awt.peer.CanvasPeer
-            public disableBackgroundErase(arg0: java.awt.Canvas | java.awt.Canvas$$Lambda): void
+            public createPanel(arg0: java.awt.Panel): java.awt.peer.PanelPeer
+            public createCanvas(arg0: java.awt.Canvas): java.awt.peer.CanvasPeer
+            public disableBackgroundErase(arg0: java.awt.Canvas): void
             public disableBackgroundErase(arg0: java.awt.Component): void
             public static getSunAwtNoerasebackground(): boolean
             public static getSunAwtErasebackgroundonresize(): boolean
@@ -80,8 +80,8 @@ declare namespace sun {
             public createImage(arg0: byte[], arg1: int, arg2: int): java.awt.Image
             public createImage(arg0: java.awt.image.ImageProducer): java.awt.Image
             public static createImageWithResolutionVariant(arg0: java.awt.Image, arg1: java.awt.Image): java.awt.Image
-            public checkImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver): int
-            public prepareImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver): boolean
+            public checkImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): int
+            public prepareImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
             protected static imageCached(arg0: java.lang.String | string): boolean
             protected static imageCached(arg0: java.net.URL): boolean
             protected static imageExists(arg0: java.lang.String | string): boolean
@@ -109,8 +109,8 @@ declare namespace sun {
             protected isXEmbedServerRequested(): boolean
             public static isModalExcludedSupported(): boolean
             protected isModalExcludedSupportedImpl(): boolean
-            public static setModalExcluded(arg0: java.awt.Window | java.awt.Window$$Lambda): void
-            public static isModalExcluded(arg0: java.awt.Window | java.awt.Window$$Lambda): boolean
+            public static setModalExcluded(arg0: java.awt.Window): void
+            public static isModalExcluded(arg0: java.awt.Window): boolean
             public isModalityTypeSupported(arg0: java.awt.Dialog$ModalityType): boolean
             public isModalExclusionTypeSupported(arg0: java.awt.Dialog$ModalExclusionType): boolean
             public addModalityListener(arg0: sun.awt.ModalityListener): void
@@ -122,8 +122,8 @@ declare namespace sun {
             public realSync(arg0: long): void
             protected syncNativeQueue(arg0: long): boolean
             protected waitForIdle(arg0: long): boolean
-            public grab(arg0: java.awt.Window | java.awt.Window$$Lambda): void
-            public ungrab(arg0: java.awt.Window | java.awt.Window$$Lambda): void
+            public grab(arg0: java.awt.Window): void
+            public ungrab(arg0: java.awt.Window): void
             public static closeSplashScreen(): void
             public static setAAFontSettingsCondition(arg0: boolean): void
             protected getDesktopAAHints(): java.awt.RenderingHints
@@ -134,8 +134,8 @@ declare namespace sun {
             public static getContainingWindow(arg0: java.awt.Component): java.awt.Window
             public static getSunAwtDisableMixing(): boolean
             public isNativeGTKAvailable(): boolean
-            public setWindowDeactivationTime(arg0: java.awt.Window | java.awt.Window$$Lambda, arg1: long): void
-            public getWindowDeactivationTime(arg0: java.awt.Window | java.awt.Window$$Lambda): long
+            public setWindowDeactivationTime(arg0: java.awt.Window, arg1: long): void
+            public getWindowDeactivationTime(arg0: java.awt.Window): long
             public isWindowOpacitySupported(): boolean
             public isWindowShapingSupported(): boolean
             public isWindowTranslucencySupported(): boolean
@@ -150,9 +150,6 @@ declare namespace sun {
             public static setSystemGenerated(arg0: java.awt.AWTEvent): void
             public static isSystemGenerated(arg0: java.awt.AWTEvent): boolean
             public static class: java.lang.Class<any>
-        }
-        abstract class SunToolkit$$Lambda extends java.awt.Toolkit implements sun.awt.WindowClosingSupport , sun.awt.WindowClosingListener , sun.awt.ComponentFactory , sun.awt.InputMethodSupport , sun.awt.KeyboardFocusManagerPeerProvider {
-            public static GRAB_EVENT_MASK: int
         }
     }
 }

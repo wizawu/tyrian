@@ -29,8 +29,8 @@ declare namespace java {
             public setValues(arg0: int, arg1: int, arg2: int, arg3: int): void
             public getValueIsAdjusting(): boolean
             public setValueIsAdjusting(arg0: boolean): void
-            public addAdjustmentListener(arg0: java.awt.event.AdjustmentListener): void
-            public removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener): void
+            public addAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$Lambda): void
+            public removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$Lambda): void
             public getAdjustmentListeners(): java.awt.event.AdjustmentListener[]
             public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]
             protected processEvent<T extends java.util.EventListener>(arg0: java.awt.AWTEvent): void
@@ -38,9 +38,6 @@ declare namespace java {
             protected paramString<T extends java.util.EventListener>(): string
             public getAccessibleContext<T extends java.util.EventListener>(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
-        }
-        class Scrollbar$$Lambda extends java.awt.Component implements java.awt.Adjustable , javax.accessibility.Accessible {
-            public static HORIZONTAL: int
         }
     }
 }

@@ -10,9 +10,6 @@ declare namespace com {
                                     public toString(): string
                                     public static class: java.lang.Class<any>
                                 }
-                                class ReflectionNavigator$4$$Lambda implements com.sun.xml.internal.bind.v2.runtime.Location {
-                                    public (): string
-                                }
                             }
                         }
                     }

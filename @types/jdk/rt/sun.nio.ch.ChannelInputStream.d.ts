@@ -3,8 +3,8 @@ declare namespace sun {
         namespace ch {
             class ChannelInputStream extends java.io.InputStream {
                 protected ch: java.nio.channels.ReadableByteChannel
-                public static read(arg0: java.nio.channels.ReadableByteChannel, arg1: java.nio.ByteBuffer, arg2: boolean): int
-                public constructor(arg0: java.nio.channels.ReadableByteChannel)
+                public static read(arg0: java.nio.channels.ReadableByteChannel | java.nio.channels.ReadableByteChannel$$Lambda, arg1: java.nio.ByteBuffer, arg2: boolean): int
+                public constructor(arg0: java.nio.channels.ReadableByteChannel | java.nio.channels.ReadableByteChannel$$Lambda)
                 public read(): int
                 public read(arg0: byte[], arg1: int, arg2: int): int
                 protected read(arg0: java.nio.ByteBuffer): int

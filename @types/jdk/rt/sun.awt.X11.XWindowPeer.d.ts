@@ -22,8 +22,8 @@ declare namespace sun {
                 public handleWindowFocusIn_Dispatch(): void
                 public handleWindowFocusInSync(arg0: long): void
                 public handleWindowFocusIn(arg0: long): void
-                public handleWindowFocusOut(arg0: java.awt.Window | java.awt.Window$$Lambda, arg1: long): void
-                public handleWindowFocusOutSync(arg0: java.awt.Window | java.awt.Window$$Lambda, arg1: long): void
+                public handleWindowFocusOut(arg0: java.awt.Window, arg1: long): void
+                public handleWindowFocusOutSync(arg0: java.awt.Window, arg1: long): void
                 public checkIfOnNewScreen(arg0: java.awt.Rectangle): void
                 public displayChanged(): void
                 public paletteChanged(): void

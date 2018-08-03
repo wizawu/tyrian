@@ -8,7 +8,7 @@ declare namespace java {
             public write(arg0: int): void
             public write(arg0: char[], arg1: int, arg2: int): void
             public write(arg0: java.lang.String | string, arg1: int, arg2: int): void
-            public writeTo(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+            public writeTo(arg0: java.io.Writer): void
             public append(arg0: java.lang.CharSequence): java.io.CharArrayWriter
             public append(arg0: java.lang.CharSequence, arg1: int, arg2: int): java.io.CharArrayWriter
             public append(arg0: char): java.io.CharArrayWriter

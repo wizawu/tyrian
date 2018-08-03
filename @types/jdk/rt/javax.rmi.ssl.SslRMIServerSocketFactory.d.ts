@@ -13,9 +13,6 @@ declare namespace javax {
                 public hashCode(): int
                 public static class: java.lang.Class<any>
             }
-            class SslRMIServerSocketFactory$$Lambda implements java.rmi.server.RMIServerSocketFactory {
-                public constructor()
-            }
         }
     }
 }

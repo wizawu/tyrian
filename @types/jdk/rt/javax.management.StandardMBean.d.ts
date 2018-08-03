@@ -15,9 +15,9 @@ declare namespace javax {
             public setAttributes<T>(arg0: javax.management.AttributeList): javax.management.AttributeList
             public invoke<T>(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.String[]): java.lang.Object
             public getMBeanInfo<T>(): javax.management.MBeanInfo
-            protected getClassName<T>(arg0: javax.management.MBeanInfo | javax.management.MBeanInfo$$Lambda): string
-            protected getDescription<T>(arg0: javax.management.MBeanInfo | javax.management.MBeanInfo$$Lambda): string
-            protected getDescription<T>(arg0: javax.management.MBeanFeatureInfo | javax.management.MBeanFeatureInfo$$Lambda): string
+            protected getClassName<T>(arg0: javax.management.MBeanInfo): string
+            protected getDescription<T>(arg0: javax.management.MBeanInfo): string
+            protected getDescription<T>(arg0: javax.management.MBeanFeatureInfo): string
             protected getDescription<T>(arg0: javax.management.MBeanAttributeInfo): string
             protected getDescription<T>(arg0: javax.management.MBeanConstructorInfo): string
             protected getDescription<T>(arg0: javax.management.MBeanConstructorInfo, arg1: javax.management.MBeanParameterInfo, arg2: int): string
@@ -28,7 +28,7 @@ declare namespace javax {
             protected getDescription<T>(arg0: javax.management.MBeanOperationInfo, arg1: javax.management.MBeanParameterInfo, arg2: int): string
             protected getConstructors<T>(arg0: javax.management.MBeanConstructorInfo[], arg1: java.lang.Object): javax.management.MBeanConstructorInfo[]
             protected getCachedMBeanInfo<T>(): javax.management.MBeanInfo
-            protected cacheMBeanInfo<T>(arg0: javax.management.MBeanInfo | javax.management.MBeanInfo$$Lambda): void
+            protected cacheMBeanInfo<T>(arg0: javax.management.MBeanInfo): void
             public preRegister<T>(arg0: javax.management.MBeanServer, arg1: javax.management.ObjectName): javax.management.ObjectName
             public postRegister<T>(arg0: java.lang.Boolean | boolean): void
             public preDeregister<T>(): void

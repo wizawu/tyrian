@@ -3,7 +3,7 @@ declare namespace sun {
         namespace X11 {
             class XTrayIconPeer implements java.awt.peer.TrayIconPeer , sun.awt.X11.InfoWindow$Balloon$LiveArguments , sun.awt.X11.InfoWindow$Tooltip$LiveArguments {
                 public dispose(): void
-                public static suppressWarningString(arg0: java.awt.Window | java.awt.Window$$Lambda): void
+                public static suppressWarningString(arg0: java.awt.Window): void
                 public setToolTip(arg0: java.lang.String | string): void
                 public getTooltipString(): string
                 public updateImage(): void

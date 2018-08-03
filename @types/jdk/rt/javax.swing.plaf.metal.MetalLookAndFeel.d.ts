@@ -18,8 +18,8 @@ declare namespace javax {
                     public provideErrorFeedback(arg0: java.awt.Component): void
                     public static setCurrentTheme(arg0: javax.swing.plaf.metal.MetalTheme): void
                     public static getCurrentTheme(): javax.swing.plaf.metal.MetalTheme
-                    public getDisabledIcon(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: javax.swing.Icon): javax.swing.Icon
-                    public getDisabledSelectedIcon(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: javax.swing.Icon): javax.swing.Icon
+                    public getDisabledIcon(arg0: javax.swing.JComponent, arg1: javax.swing.Icon): javax.swing.Icon
+                    public getDisabledSelectedIcon(arg0: javax.swing.JComponent, arg1: javax.swing.Icon): javax.swing.Icon
                     public static getControlTextFont(): javax.swing.plaf.FontUIResource
                     public static getSystemTextFont(): javax.swing.plaf.FontUIResource
                     public static getUserTextFont(): javax.swing.plaf.FontUIResource

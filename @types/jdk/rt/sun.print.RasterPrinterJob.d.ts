@@ -34,8 +34,8 @@ declare namespace sun {
             protected getPhysicalPrintableHeight(arg0: java.awt.print.Paper): double
             protected getPhysicalPageWidth(arg0: java.awt.print.Paper): double
             protected getPhysicalPageHeight(arg0: java.awt.print.Paper): double
-            protected startPage(arg0: java.awt.print.PageFormat, arg1: java.awt.print.Printable, arg2: int, arg3: boolean): void
-            protected endPage(arg0: java.awt.print.PageFormat, arg1: java.awt.print.Printable, arg2: int): void
+            protected startPage(arg0: java.awt.print.PageFormat, arg1: java.awt.print.Printable | java.awt.print.Printable$$Lambda, arg2: int, arg3: boolean): void
+            protected endPage(arg0: java.awt.print.PageFormat, arg1: java.awt.print.Printable | java.awt.print.Printable$$Lambda, arg2: int): void
             protected printBand(arg0: byte[], arg1: int, arg2: int, arg3: int, arg4: int): void
             public saveState(arg0: java.awt.geom.AffineTransform, arg1: java.awt.Shape, arg2: java.awt.geom.Rectangle2D, arg3: double, arg4: double): void
             protected static lookupDefaultPrintService(): javax.print.PrintService
@@ -50,8 +50,8 @@ declare namespace sun {
             protected getPageFormatFromAttributes(): java.awt.print.PageFormat
             public printDialog(arg0: javax.print.attribute.PrintRequestAttributeSet): boolean
             public printDialog(): boolean
-            public setPrintable(arg0: java.awt.print.Printable): void
-            public setPrintable(arg0: java.awt.print.Printable, arg1: java.awt.print.PageFormat): void
+            public setPrintable(arg0: java.awt.print.Printable | java.awt.print.Printable$$Lambda): void
+            public setPrintable(arg0: java.awt.print.Printable | java.awt.print.Printable$$Lambda, arg1: java.awt.print.PageFormat): void
             public setPageable(arg0: java.awt.print.Pageable): void
             protected initPrinter(): void
             protected isSupportedValue(arg0: javax.print.attribute.Attribute, arg1: javax.print.attribute.PrintRequestAttributeSet): boolean
@@ -92,7 +92,7 @@ declare namespace sun {
             public cancel(): void
             public isCancelled(): boolean
             protected getPageable(): java.awt.print.Pageable
-            protected createPathGraphics(arg0: sun.print.PeekGraphics, arg1: java.awt.print.PrinterJob, arg2: java.awt.print.Printable, arg3: java.awt.print.PageFormat, arg4: int): java.awt.Graphics2D
+            protected createPathGraphics(arg0: sun.print.PeekGraphics, arg1: java.awt.print.PrinterJob, arg2: java.awt.print.Printable | java.awt.print.Printable$$Lambda, arg3: java.awt.print.PageFormat, arg4: int): java.awt.Graphics2D
             protected createPeekGraphics(arg0: java.awt.Graphics2D, arg1: java.awt.print.PrinterJob): sun.print.PeekGraphics
             protected initPrinterGraphics(arg0: java.awt.Graphics2D, arg1: java.awt.geom.Rectangle2D): void
             public checkAllowedToPrintToFile(): boolean

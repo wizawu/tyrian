@@ -29,32 +29,32 @@ declare namespace javax {
                     protected getHighlightColor(): java.awt.Color
                     protected getFocusColor(): java.awt.Color
                     protected isDragging(): boolean
-                    public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
-                    public constructor(arg0: javax.swing.JSlider | javax.swing.JSlider$$Lambda)
-                    public installUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    public uninstallUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    protected installDefaults(arg0: javax.swing.JSlider | javax.swing.JSlider$$Lambda): void
-                    protected uninstallDefaults(arg0: javax.swing.JSlider | javax.swing.JSlider$$Lambda): void
-                    protected createTrackListener(arg0: javax.swing.JSlider | javax.swing.JSlider$$Lambda): javax.swing.plaf.basic.BasicSliderUI$TrackListener
-                    protected createChangeListener(arg0: javax.swing.JSlider | javax.swing.JSlider$$Lambda): javax.swing.event.ChangeListener
-                    protected createComponentListener(arg0: javax.swing.JSlider | javax.swing.JSlider$$Lambda): java.awt.event.ComponentListener
-                    protected createFocusListener(arg0: javax.swing.JSlider | javax.swing.JSlider$$Lambda): java.awt.event.FocusListener
-                    protected createScrollListener(arg0: javax.swing.JSlider | javax.swing.JSlider$$Lambda): javax.swing.plaf.basic.BasicSliderUI$ScrollListener
-                    protected createPropertyChangeListener(arg0: javax.swing.JSlider | javax.swing.JSlider$$Lambda): java.beans.PropertyChangeListener
-                    protected installListeners(arg0: javax.swing.JSlider | javax.swing.JSlider$$Lambda): void
-                    protected uninstallListeners(arg0: javax.swing.JSlider | javax.swing.JSlider$$Lambda): void
-                    protected installKeyboardActions(arg0: javax.swing.JSlider | javax.swing.JSlider$$Lambda): void
-                    protected uninstallKeyboardActions(arg0: javax.swing.JSlider | javax.swing.JSlider$$Lambda): void
-                    public getBaseline(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: int, arg2: int): int
-                    public getBaselineResizeBehavior(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Component$BaselineResizeBehavior
+                    public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
+                    public constructor(arg0: javax.swing.JSlider)
+                    public installUI(arg0: javax.swing.JComponent): void
+                    public uninstallUI(arg0: javax.swing.JComponent): void
+                    protected installDefaults(arg0: javax.swing.JSlider): void
+                    protected uninstallDefaults(arg0: javax.swing.JSlider): void
+                    protected createTrackListener(arg0: javax.swing.JSlider): javax.swing.plaf.basic.BasicSliderUI$TrackListener
+                    protected createChangeListener(arg0: javax.swing.JSlider): javax.swing.event.ChangeListener
+                    protected createComponentListener(arg0: javax.swing.JSlider): java.awt.event.ComponentListener
+                    protected createFocusListener(arg0: javax.swing.JSlider): java.awt.event.FocusListener
+                    protected createScrollListener(arg0: javax.swing.JSlider): javax.swing.plaf.basic.BasicSliderUI$ScrollListener
+                    protected createPropertyChangeListener(arg0: javax.swing.JSlider): java.beans.PropertyChangeListener
+                    protected installListeners(arg0: javax.swing.JSlider): void
+                    protected uninstallListeners(arg0: javax.swing.JSlider): void
+                    protected installKeyboardActions(arg0: javax.swing.JSlider): void
+                    protected uninstallKeyboardActions(arg0: javax.swing.JSlider): void
+                    public getBaseline(arg0: javax.swing.JComponent, arg1: int, arg2: int): int
+                    public getBaselineResizeBehavior(arg0: javax.swing.JComponent): java.awt.Component$BaselineResizeBehavior
                     protected labelsHaveSameBaselines(): boolean
                     public getPreferredHorizontalSize(): java.awt.Dimension
                     public getPreferredVerticalSize(): java.awt.Dimension
                     public getMinimumHorizontalSize(): java.awt.Dimension
                     public getMinimumVerticalSize(): java.awt.Dimension
-                    public getPreferredSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
-                    public getMinimumSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
-                    public getMaximumSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
+                    public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
+                    public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
+                    public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
                     protected calculateGeometry(): void
                     protected calculateFocusRect(): void
                     protected calculateThumbSize(): void
@@ -77,7 +77,7 @@ declare namespace javax {
                     protected getLowestValue(): java.lang.Integer
                     protected getLowestValueLabel(): java.awt.Component
                     protected getHighestValueLabel(): java.awt.Component
-                    public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
                     protected recalculateIfInsetsChanged(): void
                     protected recalculateIfOrientationChanged(): void
                     public paintFocus(arg0: java.awt.Graphics): void

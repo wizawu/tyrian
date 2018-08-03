@@ -72,7 +72,7 @@ declare namespace com {
                             public write_string_array(arg0: java.lang.String[], arg1: int, arg2: int): void
                             public write_wstring_array(arg0: java.lang.String[], arg1: int, arg2: int): void
                             public write_any_array(arg0: org.omg.CORBA.Any[], arg1: int, arg2: int): void
-                            public writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                            public writeTo(arg0: java.io.OutputStream): void
                             public writeOctetSequenceTo(arg0: org.omg.CORBA.portable.OutputStream): void
                             public getSize(): int
                             public getIndex(): int

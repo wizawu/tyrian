@@ -21,8 +21,5 @@ declare namespace sun {
             public updateSurfaceDataBg(arg0: sun.java2d.SurfaceData, arg1: sun.java2d.SurfaceData, arg2: int, arg3: int, arg4: java.awt.Color): void
             public static class: java.lang.Class<any>
         }
-        abstract class SurfaceDataProxy$$Lambda implements sun.awt.DisplayChangedListener , sun.awt.image.SurfaceManager$FlushableCacheData {
-            public static UNCACHED: sun.java2d.SurfaceDataProxy
-        }
     }
 }

@@ -6,7 +6,7 @@ declare namespace javax {
             public static BUFFERED_OPTION: int
             public static NONE_OPTION: int
             public constructor()
-            public constructor(arg0: java.awt.Graphics, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda)
+            public constructor(arg0: java.awt.Graphics, arg1: javax.swing.JComponent)
             public constructor(arg0: java.awt.Graphics)
             public create(): java.awt.Graphics
             public create(arg0: int, arg1: int, arg2: int, arg3: int): java.awt.Graphics
@@ -51,12 +51,12 @@ declare namespace javax {
             public drawString(arg0: java.text.AttributedCharacterIterator, arg1: int, arg2: int): void
             public drawBytes(arg0: byte[], arg1: int, arg2: int, arg3: int, arg4: int): void
             public drawChars(arg0: char[], arg1: int, arg2: int, arg3: int, arg4: int): void
-            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver): boolean
-            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: java.awt.image.ImageObserver): boolean
-            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.Color, arg4: java.awt.image.ImageObserver): boolean
-            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: java.awt.Color, arg6: java.awt.image.ImageObserver): boolean
-            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: int, arg9: java.awt.image.ImageObserver): boolean
-            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: int, arg9: java.awt.Color, arg10: java.awt.image.ImageObserver): boolean
+            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.Color, arg4: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: java.awt.Color, arg6: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: int, arg9: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: int, arg9: java.awt.Color, arg10: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
             public copyArea(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int): void
             public dispose(): void
             public isDrawingBuffer(): boolean

@@ -13,13 +13,13 @@ declare namespace com {
                             public constructor(arg0: com.sun.xml.internal.ws.addressing.WsaTube, arg1: com.sun.xml.internal.ws.api.pipe.TubeCloner)
                             public processException(arg0: java.lang.Throwable): com.sun.xml.internal.ws.api.pipe.NextAction
                             protected getTubeHelper(): com.sun.xml.internal.ws.addressing.WsaTubeHelper
-                            protected validateInboundHeaders(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): com.sun.xml.internal.ws.api.message.Packet
-                            protected checkMessageAddressingProperties(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): void
-                            protected checkCardinality(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): void
-                            protected getWSDLBoundOperation(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): com.sun.xml.internal.ws.api.model.wsdl.WSDLBoundOperation
-                            protected validateSOAPAction(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): void
-                            protected validateAction(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): void
-                            protected checkMandatoryHeaders(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda, arg1: boolean, arg2: boolean, arg3: boolean, arg4: boolean, arg5: boolean, arg6: boolean): void
+                            protected validateInboundHeaders(arg0: com.sun.xml.internal.ws.api.message.Packet): com.sun.xml.internal.ws.api.message.Packet
+                            protected checkMessageAddressingProperties(arg0: com.sun.xml.internal.ws.api.message.Packet): void
+                            protected checkCardinality(arg0: com.sun.xml.internal.ws.api.message.Packet): void
+                            protected getWSDLBoundOperation(arg0: com.sun.xml.internal.ws.api.message.Packet): com.sun.xml.internal.ws.api.model.wsdl.WSDLBoundOperation
+                            protected validateSOAPAction(arg0: com.sun.xml.internal.ws.api.message.Packet): void
+                            protected validateAction(arg0: com.sun.xml.internal.ws.api.message.Packet): void
+                            protected checkMandatoryHeaders(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: boolean, arg2: boolean, arg3: boolean, arg4: boolean, arg5: boolean, arg6: boolean): void
                             public static class: java.lang.Class<any>
                         }
                     }

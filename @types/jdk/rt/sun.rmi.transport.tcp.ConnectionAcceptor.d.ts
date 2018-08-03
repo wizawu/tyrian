@@ -9,9 +9,6 @@ declare namespace sun {
                     public run(): void
                     public static class: java.lang.Class<any>
                 }
-                class ConnectionAcceptor$$Lambda implements java.lang.Runnable {
-                    public constructor(arg0: sun.rmi.transport.tcp.TCPTransport)
-                }
             }
         }
     }

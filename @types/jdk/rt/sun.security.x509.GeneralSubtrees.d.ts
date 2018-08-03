@@ -13,7 +13,7 @@ declare namespace sun {
                 public trees(): java.util.List<sun.security.x509.GeneralSubtree>
                 public clone(): java.lang.Object
                 public toString(): string
-                public encode(arg0: sun.security.util.DerOutputStream | sun.security.util.DerOutputStream$$Lambda): void
+                public encode(arg0: sun.security.util.DerOutputStream): void
                 public equals(arg0: java.lang.Object): boolean
                 public hashCode(): int
                 public intersect(arg0: sun.security.x509.GeneralSubtrees): sun.security.x509.GeneralSubtrees

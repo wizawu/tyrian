@@ -9,8 +9,5 @@ declare namespace sun {
             public dispose(): void
             public static class: java.lang.Class<any>
         }
-        class ProxyPrintGraphics$$Lambda extends sun.print.ProxyGraphics implements java.awt.PrintGraphics {
-            public constructor(arg0: java.awt.Graphics, arg1: java.awt.PrintJob)
-        }
     }
 }

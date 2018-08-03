@@ -11,7 +11,7 @@ declare namespace com {
                                 protected attributes_count: int
                                 protected attributes: com.sun.org.apache.bcel.internal.classfile.Attribute[]
                                 protected constant_pool: com.sun.org.apache.bcel.internal.classfile.ConstantPool
-                                protected constructor(arg0: com.sun.org.apache.bcel.internal.classfile.FieldOrMethod | com.sun.org.apache.bcel.internal.classfile.FieldOrMethod$$Lambda)
+                                protected constructor(arg0: com.sun.org.apache.bcel.internal.classfile.FieldOrMethod)
                                 protected constructor(arg0: java.io.DataInputStream, arg1: com.sun.org.apache.bcel.internal.classfile.ConstantPool)
                                 protected constructor(arg0: int, arg1: int, arg2: int, arg3: com.sun.org.apache.bcel.internal.classfile.Attribute[], arg4: com.sun.org.apache.bcel.internal.classfile.ConstantPool)
                                 public dump(arg0: java.io.DataOutputStream): void
@@ -27,9 +27,6 @@ declare namespace com {
                                 public getSignature(): string
                                 protected copy_(arg0: com.sun.org.apache.bcel.internal.classfile.ConstantPool): com.sun.org.apache.bcel.internal.classfile.FieldOrMethod
                                 public static class: java.lang.Class<any>
-                            }
-                            abstract class FieldOrMethod$$Lambda extends com.sun.org.apache.bcel.internal.classfile.AccessFlags implements java.lang.Cloneable , com.sun.org.apache.bcel.internal.classfile.Node {
-                                protected name_index: int
                             }
                         }
                     }

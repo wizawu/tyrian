@@ -4,7 +4,7 @@ declare namespace sun {
             abstract class ImageDecoder {
                 protected aborted: boolean
                 protected finished: boolean
-                public constructor(arg0: sun.awt.image.InputStreamImageSource | sun.awt.image.InputStreamImageSource$$Lambda, arg1: java.io.InputStream)
+                public constructor(arg0: sun.awt.image.InputStreamImageSource, arg1: java.io.InputStream)
                 public isConsumer(arg0: java.awt.image.ImageConsumer): boolean
                 public removeConsumer(arg0: java.awt.image.ImageConsumer): void
                 protected nextConsumer(arg0: sun.awt.image.ImageConsumerQueue): sun.awt.image.ImageConsumerQueue

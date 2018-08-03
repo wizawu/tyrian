@@ -8,7 +8,7 @@ declare namespace com {
                             class ClassQueue implements java.io.Serializable {
                                 protected vec: java.util.LinkedList
                                 public constructor()
-                                public enqueue(arg0: com.sun.org.apache.bcel.internal.classfile.JavaClass | com.sun.org.apache.bcel.internal.classfile.JavaClass$$Lambda): void
+                                public enqueue(arg0: com.sun.org.apache.bcel.internal.classfile.JavaClass): void
                                 public dequeue(): com.sun.org.apache.bcel.internal.classfile.JavaClass
                                 public empty(): boolean
                                 public toString(): string

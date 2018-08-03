@@ -9,9 +9,9 @@ declare namespace com {
                             getClientRequestDispatcher(arg0: int): com.sun.corba.se.pept.protocol.ClientRequestDispatcher
                             registerLocalClientRequestDispatcherFactory(arg0: com.sun.corba.se.spi.protocol.LocalClientRequestDispatcherFactory | com.sun.corba.se.spi.protocol.LocalClientRequestDispatcherFactory$$Lambda, arg1: int): void
                             getLocalClientRequestDispatcherFactory(arg0: int): com.sun.corba.se.spi.protocol.LocalClientRequestDispatcherFactory
-                            registerServerRequestDispatcher(arg0: com.sun.corba.se.spi.protocol.CorbaServerRequestDispatcher, arg1: int): void
+                            registerServerRequestDispatcher(arg0: com.sun.corba.se.spi.protocol.CorbaServerRequestDispatcher | com.sun.corba.se.spi.protocol.CorbaServerRequestDispatcher$$Lambda, arg1: int): void
                             getServerRequestDispatcher(arg0: int): com.sun.corba.se.spi.protocol.CorbaServerRequestDispatcher
-                            registerServerRequestDispatcher(arg0: com.sun.corba.se.spi.protocol.CorbaServerRequestDispatcher, arg1: java.lang.String | string): void
+                            registerServerRequestDispatcher(arg0: com.sun.corba.se.spi.protocol.CorbaServerRequestDispatcher | com.sun.corba.se.spi.protocol.CorbaServerRequestDispatcher$$Lambda, arg1: java.lang.String | string): void
                             getServerRequestDispatcher(arg0: java.lang.String | string): com.sun.corba.se.spi.protocol.CorbaServerRequestDispatcher
                             registerObjectAdapterFactory(arg0: com.sun.corba.se.spi.oa.ObjectAdapterFactory, arg1: int): void
                             getObjectAdapterFactory(arg0: int): com.sun.corba.se.spi.oa.ObjectAdapterFactory

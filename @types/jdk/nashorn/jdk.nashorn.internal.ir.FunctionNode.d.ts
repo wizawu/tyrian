@@ -108,9 +108,6 @@ declare namespace jdk {
                     public clearFlag(arg0: jdk.nashorn.internal.ir.LexicalContext, arg1: int): jdk.nashorn.internal.ir.LexicalContextNode
                     public static class: java.lang.Class<any>
                 }
-                class FunctionNode$$Lambda extends jdk.nashorn.internal.ir.LexicalContextExpression implements jdk.nashorn.internal.ir.Flags<jdk.nashorn.internal.ir.FunctionNode> , jdk.nashorn.internal.ir.CompileUnitHolder {
-                    public static FUNCTION_TYPE: jdk.nashorn.internal.codegen.types.Type
-                }
             }
         }
     }

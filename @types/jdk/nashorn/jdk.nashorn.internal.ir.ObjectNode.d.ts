@@ -13,9 +13,6 @@ declare namespace jdk {
                     public getSplitRanges(): java.util.List<jdk.nashorn.internal.ir.Splittable$SplitRange>
                     public static class: java.lang.Class<any>
                 }
-                class ObjectNode$$Lambda extends jdk.nashorn.internal.ir.Expression implements jdk.nashorn.internal.ir.LexicalContextNode , jdk.nashorn.internal.ir.Splittable {
-                    public constructor(arg0: long, arg1: int, arg2: java.util.List<jdk.nashorn.internal.ir.PropertyNode>)
-                }
             }
         }
     }

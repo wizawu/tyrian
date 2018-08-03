@@ -10,8 +10,8 @@ declare namespace jdk {
                 public static INTERNAL_ERROR: int
                 protected constructor()
                 public static main(arg0: java.lang.String[]): void
-                public static main(arg0: java.io.InputStream, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda, arg2: java.io.OutputStream | java.io.OutputStream$$Lambda, arg3: java.lang.String[]): int
-                protected run(arg0: java.io.InputStream, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda, arg2: java.io.OutputStream | java.io.OutputStream$$Lambda, arg3: java.lang.String[]): int
+                public static main(arg0: java.io.InputStream, arg1: java.io.OutputStream, arg2: java.io.OutputStream, arg3: java.lang.String[]): int
+                protected run(arg0: java.io.InputStream, arg1: java.io.OutputStream, arg2: java.io.OutputStream, arg3: java.lang.String[]): int
                 protected apply(arg0: jdk.nashorn.internal.runtime.ScriptFunction, arg1: java.lang.Object): java.lang.Object
                 public static class: java.lang.Class<any>
             }

@@ -16,9 +16,9 @@ declare namespace sun {
                 public getForcedAccelSurfaceType(): int
                 protected createSurfaceManager(arg0: java.lang.Object, arg1: java.awt.ImageCapabilities): sun.awt.image.VolatileSurfaceManager
                 public createGraphics(): java.awt.Graphics2D
-                public getProperty(arg0: java.lang.String | string, arg1: java.awt.image.ImageObserver): java.lang.Object
-                public getWidth(arg0: java.awt.image.ImageObserver): int
-                public getHeight(arg0: java.awt.image.ImageObserver): int
+                public getProperty(arg0: java.lang.String | string, arg1: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): java.lang.Object
+                public getWidth(arg0: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): int
+                public getHeight(arg0: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): int
                 public getBackupImage(): java.awt.image.BufferedImage
                 public getSnapshot(): java.awt.image.BufferedImage
                 public validate(arg0: java.awt.GraphicsConfiguration): int
@@ -26,9 +26,6 @@ declare namespace sun {
                 public getCapabilities(): java.awt.ImageCapabilities
                 public getDestSurface(): sun.java2d.Surface
                 public static class: java.lang.Class<any>
-            }
-            class SunVolatileImage$$Lambda extends java.awt.image.VolatileImage implements sun.java2d.DestSurfaceProvider {
-                protected volSurfaceManager: sun.awt.image.VolatileSurfaceManager
             }
         }
     }

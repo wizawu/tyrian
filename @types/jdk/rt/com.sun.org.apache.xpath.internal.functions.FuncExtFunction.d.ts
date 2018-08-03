@@ -14,7 +14,7 @@ declare namespace com {
                                 public getArgCount(): int
                                 public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object)
                                 public execute(arg0: com.sun.org.apache.xpath.internal.XPathContext): com.sun.org.apache.xpath.internal.objects.XObject
-                                public setArg(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda, arg1: int): void
+                                public setArg(arg0: com.sun.org.apache.xpath.internal.Expression, arg1: int): void
                                 public checkNumberArgs(arg0: int): void
                                 public callArgVisitors(arg0: com.sun.org.apache.xpath.internal.XPathVisitor): void
                                 public exprSetParent(arg0: com.sun.org.apache.xpath.internal.ExpressionNode): void

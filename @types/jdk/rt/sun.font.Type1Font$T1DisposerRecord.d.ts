@@ -4,8 +4,5 @@ declare namespace sun {
             public dispose(): void
             public static class: java.lang.Class<any>
         }
-        class Type1Font$T1DisposerRecord$$Lambda implements sun.java2d.DisposerRecord {
-            public (): void
-        }
     }
 }

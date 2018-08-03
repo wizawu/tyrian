@@ -2,7 +2,7 @@ declare namespace javax {
     namespace swing {
         namespace table {
             class JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry extends javax.accessibility.AccessibleContext implements javax.accessibility.Accessible , javax.accessibility.AccessibleComponent {
-                public constructor(arg0: javax.swing.table.JTableHeader$AccessibleJTableHeader, arg1: int, arg2: javax.swing.table.JTableHeader | javax.swing.table.JTableHeader$$Lambda, arg3: javax.swing.JTable)
+                public constructor(arg0: javax.swing.table.JTableHeader$AccessibleJTableHeader, arg1: int, arg2: javax.swing.table.JTableHeader, arg3: javax.swing.JTable)
                 public getAccessibleContext(): javax.accessibility.AccessibleContext
                 public getAccessibleName(): string
                 public setAccessibleName(arg0: java.lang.String | string): void
@@ -14,8 +14,8 @@ declare namespace javax {
                 public getAccessibleChildrenCount(): int
                 public getAccessibleChild(arg0: int): javax.accessibility.Accessible
                 public getLocale(): java.util.Locale
-                public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-                public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+                public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+                public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
                 public getAccessibleAction(): javax.accessibility.AccessibleAction
                 public getAccessibleComponent(): javax.accessibility.AccessibleComponent
                 public getAccessibleSelection(): javax.accessibility.AccessibleSelection

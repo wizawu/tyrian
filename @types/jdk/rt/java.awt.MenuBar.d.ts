@@ -5,8 +5,8 @@ declare namespace java {
             public addNotify(): void
             public removeNotify(): void
             public getHelpMenu(): java.awt.Menu
-            public setHelpMenu(arg0: java.awt.Menu | java.awt.Menu$$Lambda): void
-            public add(arg0: java.awt.Menu | java.awt.Menu$$Lambda): java.awt.Menu
+            public setHelpMenu(arg0: java.awt.Menu): void
+            public add(arg0: java.awt.Menu): java.awt.Menu
             public remove(arg0: int): void
             public remove(arg0: java.awt.MenuComponent): void
             public getMenuCount(): int
@@ -17,9 +17,6 @@ declare namespace java {
             public deleteShortcut(arg0: java.awt.MenuShortcut): void
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
-        }
-        class MenuBar$$Lambda extends java.awt.MenuComponent implements java.awt.MenuContainer , javax.accessibility.Accessible {
-            public constructor()
         }
     }
 }

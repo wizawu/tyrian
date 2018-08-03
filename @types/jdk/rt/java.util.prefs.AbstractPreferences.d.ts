@@ -31,8 +31,8 @@ declare namespace java {
                 public name(): string
                 public absolutePath(): string
                 public isUserNode(): boolean
-                public addPreferenceChangeListener(arg0: java.util.prefs.PreferenceChangeListener): void
-                public removePreferenceChangeListener(arg0: java.util.prefs.PreferenceChangeListener): void
+                public addPreferenceChangeListener(arg0: java.util.prefs.PreferenceChangeListener | java.util.prefs.PreferenceChangeListener$$Lambda): void
+                public removePreferenceChangeListener(arg0: java.util.prefs.PreferenceChangeListener | java.util.prefs.PreferenceChangeListener$$Lambda): void
                 public addNodeChangeListener(arg0: java.util.prefs.NodeChangeListener): void
                 public removeNodeChangeListener(arg0: java.util.prefs.NodeChangeListener): void
                 protected putSpi(arg0: java.lang.String | string, arg1: java.lang.String | string): void
@@ -49,8 +49,8 @@ declare namespace java {
                 public flush(): void
                 protected flushSpi(): void
                 protected isRemoved(): boolean
-                public exportNode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
-                public exportSubtree(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public exportNode(arg0: java.io.OutputStream): void
+                public exportSubtree(arg0: java.io.OutputStream): void
                 public static class: java.lang.Class<any>
             }
         }

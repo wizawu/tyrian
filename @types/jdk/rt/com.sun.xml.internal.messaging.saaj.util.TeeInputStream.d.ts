@@ -8,7 +8,7 @@ declare namespace com {
                             class TeeInputStream extends java.io.InputStream {
                                 protected source: java.io.InputStream
                                 protected copySink: java.io.OutputStream
-                                public constructor(arg0: java.io.InputStream, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda)
+                                public constructor(arg0: java.io.InputStream, arg1: java.io.OutputStream)
                                 public read(): int
                                 public available(): int
                                 public close(): void

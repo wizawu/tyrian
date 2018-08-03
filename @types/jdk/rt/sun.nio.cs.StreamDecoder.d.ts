@@ -5,7 +5,7 @@ declare namespace sun {
                 public static forInputStreamReader(arg0: java.io.InputStream, arg1: java.lang.Object, arg2: java.lang.String | string): sun.nio.cs.StreamDecoder
                 public static forInputStreamReader(arg0: java.io.InputStream, arg1: java.lang.Object, arg2: java.nio.charset.Charset): sun.nio.cs.StreamDecoder
                 public static forInputStreamReader(arg0: java.io.InputStream, arg1: java.lang.Object, arg2: java.nio.charset.CharsetDecoder): sun.nio.cs.StreamDecoder
-                public static forDecoder(arg0: java.nio.channels.ReadableByteChannel, arg1: java.nio.charset.CharsetDecoder, arg2: int): sun.nio.cs.StreamDecoder
+                public static forDecoder(arg0: java.nio.channels.ReadableByteChannel | java.nio.channels.ReadableByteChannel$$Lambda, arg1: java.nio.charset.CharsetDecoder, arg2: int): sun.nio.cs.StreamDecoder
                 public getEncoding(): string
                 public read(): int
                 public read(arg0: char[], arg1: int, arg2: int): int

@@ -8,9 +8,6 @@ declare namespace com {
                             public operate(arg0: java.lang.Object): java.lang.Object
                             public static class: java.lang.Class<any>
                         }
-                        class ParserTable$4$$Lambda implements com.sun.corba.se.spi.orb.Operation {
-                            public (arg0: java.lang.Object): java.lang.Object
-                        }
                     }
                 }
             }

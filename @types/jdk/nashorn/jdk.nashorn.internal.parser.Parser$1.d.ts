@@ -6,9 +6,6 @@ declare namespace jdk {
                     public lineInfo(arg0: int, arg1: int): void
                     public static class: java.lang.Class<any>
                 }
-                class Parser$1$$Lambda implements jdk.nashorn.internal.parser.Lexer$LineInfoReceiver {
-                    public (arg0: int, arg1: int): void
-                }
             }
         }
     }

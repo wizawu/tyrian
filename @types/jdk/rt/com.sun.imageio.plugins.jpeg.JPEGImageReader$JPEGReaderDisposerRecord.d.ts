@@ -8,9 +8,6 @@ declare namespace com {
                         public dispose(): void
                         public static class: java.lang.Class<any>
                     }
-                    class JPEGImageReader$JPEGReaderDisposerRecord$$Lambda implements sun.java2d.DisposerRecord {
-                        public constructor(arg0: long)
-                    }
                 }
             }
         }

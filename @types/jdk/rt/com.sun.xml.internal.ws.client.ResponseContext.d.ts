@@ -5,7 +5,7 @@ declare namespace com {
                 namespace ws {
                     namespace client {
                         class ResponseContext extends java.util.AbstractMap<java.lang.String, java.lang.Object> {
-                            public constructor(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda)
+                            public constructor(arg0: com.sun.xml.internal.ws.api.message.Packet)
                             public containsKey(arg0: java.lang.Object): boolean
                             public get(arg0: java.lang.Object): java.lang.Object
                             public put(arg0: java.lang.String | string, arg1: java.lang.Object): java.lang.Object

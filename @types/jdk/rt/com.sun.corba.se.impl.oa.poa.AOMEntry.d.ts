@@ -13,7 +13,7 @@ declare namespace com {
                                 public static ETH: com.sun.corba.se.spi.orbutil.fsm.State
                                 public static DESTROYED: com.sun.corba.se.spi.orbutil.fsm.State
                                 public constructor(arg0: com.sun.corba.se.impl.oa.poa.POAImpl)
-                                public startEtherealize(arg0: java.lang.Thread | java.lang.Thread$$Lambda): void
+                                public startEtherealize(arg0: java.lang.Thread): void
                                 public etherealizeComplete(): void
                                 public incarnateComplete(): void
                                 public incarnateFailure(): void

@@ -10,7 +10,7 @@ declare namespace sun {
                 public size(): int
                 public iterator(): java.util.Iterator<sun.security.x509.GeneralName>
                 public names(): java.util.List<sun.security.x509.GeneralName>
-                public encode(arg0: sun.security.util.DerOutputStream | sun.security.util.DerOutputStream$$Lambda): void
+                public encode(arg0: sun.security.util.DerOutputStream): void
                 public equals(arg0: java.lang.Object): boolean
                 public hashCode(): int
                 public toString(): string

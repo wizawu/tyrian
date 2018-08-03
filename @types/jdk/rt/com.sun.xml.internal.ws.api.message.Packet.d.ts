@@ -50,12 +50,12 @@ declare namespace com {
                                 public getApplicationScopePropertyNames(arg0: boolean): java.util.Set<java.lang.String>
                                 public createResponse(arg0: com.sun.xml.internal.ws.api.message.Message): com.sun.xml.internal.ws.api.message.Packet
                                 public createClientResponse(arg0: com.sun.xml.internal.ws.api.message.Message): com.sun.xml.internal.ws.api.message.Packet
-                                public relateClientResponse(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): com.sun.xml.internal.ws.api.message.Packet
+                                public relateClientResponse(arg0: com.sun.xml.internal.ws.api.message.Packet): com.sun.xml.internal.ws.api.message.Packet
                                 public createServerResponse(arg0: com.sun.xml.internal.ws.api.message.Message, arg1: com.sun.xml.internal.ws.api.model.wsdl.WSDLPort, arg2: com.sun.xml.internal.ws.api.model.SEIModel, arg3: com.sun.xml.internal.ws.api.WSBinding): com.sun.xml.internal.ws.api.message.Packet
-                                public copyPropertiesTo(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): void
-                                public relateServerResponse(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda, arg1: com.sun.xml.internal.ws.api.model.wsdl.WSDLPort, arg2: com.sun.xml.internal.ws.api.model.SEIModel, arg3: com.sun.xml.internal.ws.api.WSBinding): com.sun.xml.internal.ws.api.message.Packet
+                                public copyPropertiesTo(arg0: com.sun.xml.internal.ws.api.message.Packet): void
+                                public relateServerResponse(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: com.sun.xml.internal.ws.api.model.wsdl.WSDLPort, arg2: com.sun.xml.internal.ws.api.model.SEIModel, arg3: com.sun.xml.internal.ws.api.WSBinding): com.sun.xml.internal.ws.api.message.Packet
                                 public createServerResponse(arg0: com.sun.xml.internal.ws.api.message.Message, arg1: com.sun.xml.internal.ws.api.addressing.AddressingVersion, arg2: com.sun.xml.internal.ws.api.SOAPVersion, arg3: java.lang.String | string): com.sun.xml.internal.ws.api.message.Packet
-                                public setResponseMessage(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda, arg1: com.sun.xml.internal.ws.api.message.Message, arg2: com.sun.xml.internal.ws.api.addressing.AddressingVersion, arg3: com.sun.xml.internal.ws.api.SOAPVersion, arg4: java.lang.String | string): void
+                                public setResponseMessage(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: com.sun.xml.internal.ws.api.message.Message, arg2: com.sun.xml.internal.ws.api.addressing.AddressingVersion, arg3: com.sun.xml.internal.ws.api.SOAPVersion, arg4: java.lang.String | string): void
                                 public toShortString(): string
                                 public toString(): string
                                 protected getPropertyMap(): com.oracle.webservices.internal.api.message.BasePropertySet$PropertyMap
@@ -63,8 +63,8 @@ declare namespace com {
                                 public getSOAPMessage(): javax.xml.soap.SOAPMessage
                                 public getAsSOAPMessage(): javax.xml.soap.SOAPMessage
                                 public getCodec(): com.sun.xml.internal.ws.api.pipe.Codec
-                                public writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): com.oracle.webservices.internal.api.message.ContentType
-                                public writeTo(arg0: java.nio.channels.WritableByteChannel): com.oracle.webservices.internal.api.message.ContentType
+                                public writeTo(arg0: java.io.OutputStream): com.oracle.webservices.internal.api.message.ContentType
+                                public writeTo(arg0: java.nio.channels.WritableByteChannel | java.nio.channels.WritableByteChannel$$Lambda): com.oracle.webservices.internal.api.message.ContentType
                                 public getMtomRequest(): boolean
                                 public setMtomRequest(arg0: java.lang.Boolean | boolean): void
                                 public getMtomAcceptable(): boolean
@@ -84,9 +84,6 @@ declare namespace com {
                                 public removeSatellite(arg0: com.sun.xml.internal.ws.api.PropertySet): void
                                 public setFastInfosetDisabled(arg0: boolean): void
                                 public static class: java.lang.Class<any>
-                            }
-                            class Packet$$Lambda extends com.oracle.webservices.internal.api.message.BaseDistributedPropertySet implements com.oracle.webservices.internal.api.message.MessageContext , com.sun.xml.internal.ws.api.message.MessageMetadata {
-                                public wasTransportSecure: boolean
                             }
                         }
                     }

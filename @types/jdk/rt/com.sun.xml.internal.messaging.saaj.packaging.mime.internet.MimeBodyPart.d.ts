@@ -44,7 +44,7 @@ declare namespace com {
                                         public setText(arg0: java.lang.String | string): void
                                         public setText(arg0: java.lang.String | string, arg1: java.lang.String | string): void
                                         public setContent(arg0: com.sun.xml.internal.messaging.saaj.packaging.mime.internet.MimeMultipart): void
-                                        public writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                                        public writeTo(arg0: java.io.OutputStream): void
                                         public getHeader(arg0: java.lang.String | string): java.lang.String[]
                                         public getHeader(arg0: java.lang.String | string, arg1: java.lang.String | string): string
                                         public setHeader(arg0: java.lang.String | string, arg1: java.lang.String | string): void

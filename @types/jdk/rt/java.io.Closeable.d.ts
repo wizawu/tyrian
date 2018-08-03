@@ -3,5 +3,8 @@ declare namespace java {
         interface Closeable extends java.lang.AutoCloseable {
             close(): void
         }
+        interface Closeable$$Lambda extends java.lang.AutoCloseable {
+            (): void
+        }
     }
 }

@@ -5,8 +5,5 @@ declare namespace sun {
             public toString(): string
             public static class: java.lang.Class<any>
         }
-        class ObjectInputFilter$Config$Global$$Lambda implements sun.misc.ObjectInputFilter {
-            public (arg0: sun.misc.ObjectInputFilter$FilterInfo): sun.misc.ObjectInputFilter$Status
-        }
     }
 }

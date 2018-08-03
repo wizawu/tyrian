@@ -7,7 +7,7 @@ declare namespace com {
                         namespace xsltc {
                             namespace dom {
                                 class AdaptiveResultTreeImpl extends com.sun.org.apache.xalan.internal.xsltc.dom.SimpleResultTreeImpl {
-                                    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.dom.XSLTCDTMManager, arg1: int, arg2: com.sun.org.apache.xml.internal.dtm.DTMWSFilter, arg3: int, arg4: boolean)
+                                    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.dom.XSLTCDTMManager, arg1: int, arg2: com.sun.org.apache.xml.internal.dtm.DTMWSFilter | com.sun.org.apache.xml.internal.dtm.DTMWSFilter$$Lambda, arg3: int, arg4: boolean)
                                     public getNestedDOM(): com.sun.org.apache.xalan.internal.xsltc.DOM
                                     public getDocument(): int
                                     public getStringValue(): string

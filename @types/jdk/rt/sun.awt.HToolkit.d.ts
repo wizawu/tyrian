@@ -2,25 +2,25 @@ declare namespace sun {
     namespace awt {
         class HToolkit extends sun.awt.SunToolkit implements sun.awt.ComponentFactory {
             public constructor()
-            public createWindow(arg0: java.awt.Window | java.awt.Window$$Lambda): java.awt.peer.WindowPeer
+            public createWindow(arg0: java.awt.Window): java.awt.peer.WindowPeer
             public createLightweightFrame(arg0: sun.awt.LightweightFrame): java.awt.peer.FramePeer
             public createFrame(arg0: java.awt.Frame): java.awt.peer.FramePeer
             public createDialog(arg0: java.awt.Dialog): java.awt.peer.DialogPeer
-            public createButton(arg0: java.awt.Button | java.awt.Button$$Lambda): java.awt.peer.ButtonPeer
+            public createButton(arg0: java.awt.Button): java.awt.peer.ButtonPeer
             public createTextField(arg0: java.awt.TextField): java.awt.peer.TextFieldPeer
-            public createChoice(arg0: java.awt.Choice | java.awt.Choice$$Lambda): java.awt.peer.ChoicePeer
-            public createLabel(arg0: java.awt.Label | java.awt.Label$$Lambda): java.awt.peer.LabelPeer
-            public createList(arg0: java.awt.List | java.awt.List$$Lambda): java.awt.peer.ListPeer
-            public createCheckbox(arg0: java.awt.Checkbox | java.awt.Checkbox$$Lambda): java.awt.peer.CheckboxPeer
-            public createScrollbar(arg0: java.awt.Scrollbar | java.awt.Scrollbar$$Lambda): java.awt.peer.ScrollbarPeer
-            public createScrollPane(arg0: java.awt.ScrollPane | java.awt.ScrollPane$$Lambda): java.awt.peer.ScrollPanePeer
+            public createChoice(arg0: java.awt.Choice): java.awt.peer.ChoicePeer
+            public createLabel(arg0: java.awt.Label): java.awt.peer.LabelPeer
+            public createList(arg0: java.awt.List): java.awt.peer.ListPeer
+            public createCheckbox(arg0: java.awt.Checkbox): java.awt.peer.CheckboxPeer
+            public createScrollbar(arg0: java.awt.Scrollbar): java.awt.peer.ScrollbarPeer
+            public createScrollPane(arg0: java.awt.ScrollPane): java.awt.peer.ScrollPanePeer
             public createTextArea(arg0: java.awt.TextArea): java.awt.peer.TextAreaPeer
             public createFileDialog(arg0: java.awt.FileDialog): java.awt.peer.FileDialogPeer
-            public createMenuBar(arg0: java.awt.MenuBar | java.awt.MenuBar$$Lambda): java.awt.peer.MenuBarPeer
-            public createMenu(arg0: java.awt.Menu | java.awt.Menu$$Lambda): java.awt.peer.MenuPeer
+            public createMenuBar(arg0: java.awt.MenuBar): java.awt.peer.MenuBarPeer
+            public createMenu(arg0: java.awt.Menu): java.awt.peer.MenuPeer
             public createPopupMenu(arg0: java.awt.PopupMenu): java.awt.peer.PopupMenuPeer
-            public createMenuItem(arg0: java.awt.MenuItem | java.awt.MenuItem$$Lambda): java.awt.peer.MenuItemPeer
-            public createCheckboxMenuItem(arg0: java.awt.CheckboxMenuItem | java.awt.CheckboxMenuItem$$Lambda): java.awt.peer.CheckboxMenuItemPeer
+            public createMenuItem(arg0: java.awt.MenuItem): java.awt.peer.MenuItemPeer
+            public createCheckboxMenuItem(arg0: java.awt.CheckboxMenuItem): java.awt.peer.CheckboxMenuItemPeer
             public createDragSourceContextPeer(arg0: java.awt.dnd.DragGestureEvent): java.awt.dnd.peer.DragSourceContextPeer
             public createRobot(arg0: java.awt.Robot, arg1: java.awt.GraphicsDevice): java.awt.peer.RobotPeer
             public getKeyboardFocusManagerPeer(): java.awt.peer.KeyboardFocusManagerPeer
@@ -39,7 +39,7 @@ declare namespace sun {
             public createCustomCursor(arg0: java.awt.Image, arg1: java.awt.Point, arg2: java.lang.String | string): java.awt.Cursor
             public getBestCursorSize(arg0: int, arg1: int): java.awt.Dimension
             public getMaximumCursorColors(): int
-            public createDragGestureRecognizer<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.Class<T>, arg1: java.awt.dnd.DragSource, arg2: java.awt.Component, arg3: int, arg4: java.awt.dnd.DragGestureListener): T
+            public createDragGestureRecognizer<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.Class<T>, arg1: java.awt.dnd.DragSource, arg2: java.awt.Component, arg3: int, arg4: java.awt.dnd.DragGestureListener | java.awt.dnd.DragGestureListener$$Lambda): T
             public getScreenHeight<T extends java.awt.dnd.DragGestureRecognizer>(): int
             public getScreenWidth<T extends java.awt.dnd.DragGestureRecognizer>(): int
             public getScreenSize<T extends java.awt.dnd.DragGestureRecognizer>(): java.awt.Dimension
@@ -61,8 +61,8 @@ declare namespace sun {
             public isWindowOpacityControlSupported<T extends java.awt.dnd.DragGestureRecognizer>(): boolean
             public isWindowShapingSupported<T extends java.awt.dnd.DragGestureRecognizer>(): boolean
             public isWindowTranslucencySupported<T extends java.awt.dnd.DragGestureRecognizer>(): boolean
-            public grab<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Window | java.awt.Window$$Lambda): void
-            public ungrab<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Window | java.awt.Window$$Lambda): void
+            public grab<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Window): void
+            public ungrab<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Window): void
             protected syncNativeQueue<T extends java.awt.dnd.DragGestureRecognizer>(): boolean
             public getInputMethodAdapterDescriptor<T extends java.awt.dnd.DragGestureRecognizer>(): java.awt.im.spi.InputMethodDescriptor
             public static class: java.lang.Class<any>

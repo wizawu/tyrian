@@ -30,7 +30,7 @@ declare namespace com {
                                 public getTypeDefinition(): com.sun.org.apache.xerces.internal.xs.XSTypeDefinition
                                 public getMemberTypeDefinition(): com.sun.org.apache.xerces.internal.xs.XSSimpleTypeDefinition
                                 public getAttributeDeclaration(): com.sun.org.apache.xerces.internal.xs.XSAttributeDeclaration
-                                public setPSVI(arg0: com.sun.org.apache.xerces.internal.xs.AttributePSVI): void
+                                public setPSVI(arg0: com.sun.org.apache.xerces.internal.xs.AttributePSVI | com.sun.org.apache.xerces.internal.xs.AttributePSVI$$Lambda): void
                                 public getActualNormalizedValue(): java.lang.Object
                                 public getActualNormalizedValueType(): short
                                 public getItemValueTypes(): com.sun.org.apache.xerces.internal.xs.ShortList

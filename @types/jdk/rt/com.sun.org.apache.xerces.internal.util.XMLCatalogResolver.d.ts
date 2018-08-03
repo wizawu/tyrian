@@ -27,9 +27,6 @@ declare namespace com {
                                 public resolveURI(arg0: java.lang.String | string): string
                                 public static class: java.lang.Class<any>
                             }
-                            class XMLCatalogResolver$$Lambda implements com.sun.org.apache.xerces.internal.xni.parser.XMLEntityResolver , org.xml.sax.ext.EntityResolver2 , org.w3c.dom.ls.LSResourceResolver {
-                                public constructor()
-                            }
                         }
                     }
                 }

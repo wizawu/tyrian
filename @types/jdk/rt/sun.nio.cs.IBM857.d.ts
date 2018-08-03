@@ -9,9 +9,6 @@ declare namespace sun {
                 public newEncoder(): java.nio.charset.CharsetEncoder
                 public static class: java.lang.Class<any>
             }
-            class IBM857$$Lambda extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                public constructor()
-            }
         }
     }
 }

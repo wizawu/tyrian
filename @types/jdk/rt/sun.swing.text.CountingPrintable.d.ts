@@ -4,6 +4,9 @@ declare namespace sun {
             interface CountingPrintable extends java.awt.print.Printable {
                 getNumberOfPages(): int
             }
+            interface CountingPrintable$$Lambda extends java.awt.print.Printable {
+                (): int
+            }
         }
     }
 }

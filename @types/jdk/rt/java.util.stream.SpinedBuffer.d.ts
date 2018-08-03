@@ -12,7 +12,7 @@ declare namespace java {
                 public asArray(arg0: java.util.function$.IntFunction<E[]> | java.util.function$.IntFunction$$Lambda<E[]>): E[]
                 public clear(): void
                 public iterator(): java.util.Iterator<E>
-                public forEach(arg0: java.util.function$.Consumer$$TypeScript<E>): void
+                public forEach(arg0: java.util.function$.Consumer$$Lambda<E>): void
                 public accept(arg0: E): void
                 public toString(): string
                 public spliterator(): java.util.Spliterator<E>

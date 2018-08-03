@@ -101,7 +101,7 @@ declare namespace com {
                                 protected isKidOK(arg0: org.w3c.dom.Node, arg1: org.w3c.dom.Node): boolean
                                 protected changed(): void
                                 protected changes(): int
-                                public setUserData(arg0: org.w3c.dom.Node, arg1: java.lang.String | string, arg2: java.lang.Object, arg3: org.w3c.dom.UserDataHandler): java.lang.Object
+                                public setUserData(arg0: org.w3c.dom.Node, arg1: java.lang.String | string, arg2: java.lang.Object, arg3: org.w3c.dom.UserDataHandler | org.w3c.dom.UserDataHandler$$Lambda): java.lang.Object
                                 public getUserData(arg0: org.w3c.dom.Node, arg1: java.lang.String | string): java.lang.Object
                                 protected getUserDataRecord(arg0: org.w3c.dom.Node): java.util.Map<java.lang.String, com.sun.org.apache.xerces.internal.dom.ParentNode$UserDataRecord>
                                 protected checkNamespaceWF(arg0: java.lang.String | string, arg1: int, arg2: int): void

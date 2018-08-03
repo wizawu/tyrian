@@ -7,9 +7,6 @@ declare namespace sun {
                 public getProxyKey(): java.lang.Object
                 public static class: java.lang.Class<any>
             }
-            class XRGraphicsConfig$$Lambda extends sun.awt.X11GraphicsConfig implements sun.awt.image.SurfaceManager$ProxiedGraphicsConfig {
-                public (arg0: sun.awt.X11ComponentPeer): sun.java2d.SurfaceData
-            }
         }
     }
 }

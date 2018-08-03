@@ -25,12 +25,12 @@ declare namespace javax {
             public remove(arg0: java.awt.Component): void
             public setLayout(arg0: java.awt.LayoutManager): void
             public getRootPane(): javax.swing.JRootPane
-            protected setRootPane(arg0: javax.swing.JRootPane | javax.swing.JRootPane$$Lambda): void
+            protected setRootPane(arg0: javax.swing.JRootPane): void
             public setIconImage(arg0: java.awt.Image): void
             public getContentPane(): java.awt.Container
             public setContentPane(arg0: java.awt.Container): void
             public getLayeredPane(): javax.swing.JLayeredPane
-            public setLayeredPane(arg0: javax.swing.JLayeredPane | javax.swing.JLayeredPane$$Lambda): void
+            public setLayeredPane(arg0: javax.swing.JLayeredPane): void
             public getGlassPane(): java.awt.Component
             public setGlassPane(arg0: java.awt.Component): void
             public getGraphics(): java.awt.Graphics
@@ -40,9 +40,6 @@ declare namespace javax {
             protected paramString(): string
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
-        }
-        class JFrame$$Lambda extends java.awt.Frame implements javax.swing.WindowConstants , javax.accessibility.Accessible , javax.swing.RootPaneContainer , javax.swing.TransferHandler$HasGetTransferHandler {
-            public static EXIT_ON_CLOSE: int
         }
     }
 }

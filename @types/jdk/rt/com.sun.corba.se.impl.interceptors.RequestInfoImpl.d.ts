@@ -82,9 +82,6 @@ declare namespace com {
                             protected iorToObject(arg0: com.sun.corba.se.spi.ior.IOR): org.omg.CORBA.Object
                             public static class: java.lang.Class<any>
                         }
-                        abstract class RequestInfoImpl$$Lambda extends org.omg.CORBA.LocalObject implements org.omg.PortableInterceptor.RequestInfo , com.sun.corba.se.spi.legacy.interceptor.RequestInfoExt {
-                            protected myORB: com.sun.corba.se.spi.orb.ORB
-                        }
                     }
                 }
             }

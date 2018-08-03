@@ -33,13 +33,13 @@ declare namespace javax {
             public static get(arg0: java.lang.Object): java.lang.Object
             public static get(arg0: java.lang.Object, arg1: java.util.Locale): java.lang.Object
             public static put(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
-            public static getUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
+            public static getUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
             public static getLookAndFeelDefaults(): javax.swing.UIDefaults
             public static addAuxiliaryLookAndFeel(arg0: javax.swing.LookAndFeel): void
             public static removeAuxiliaryLookAndFeel(arg0: javax.swing.LookAndFeel): boolean
             public static getAuxiliaryLookAndFeels(): javax.swing.LookAndFeel[]
-            public static addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-            public static removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+            public static addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            public static removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
             public static getPropertyChangeListeners(): java.beans.PropertyChangeListener[]
             public static class: java.lang.Class<any>
         }

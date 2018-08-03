@@ -5,7 +5,7 @@ declare namespace java {
             public next(): E
             public hasPrevious(): boolean
             public previous(): E
-            public forEachRemaining(arg0: java.util.function$.Consumer$$TypeScript<E>): void
+            public forEachRemaining(arg0: java.util.function$.Consumer$$Lambda<E>): void
             public nextIndex(): int
             public previousIndex(): int
             public remove(): void

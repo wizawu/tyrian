@@ -16,9 +16,6 @@ declare namespace java {
                 public toString(): string
                 public static class: java.lang.Class<any>
             }
-            abstract class FileLock$$Lambda implements java.lang.AutoCloseable {
-                protected constructor(arg0: java.nio.channels.FileChannel, arg1: long, arg2: long, arg3: boolean)
-            }
         }
     }
 }

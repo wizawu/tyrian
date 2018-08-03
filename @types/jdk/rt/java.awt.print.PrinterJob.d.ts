@@ -8,8 +8,8 @@ declare namespace java {
                 public constructor()
                 public getPrintService(): javax.print.PrintService
                 public setPrintService(arg0: javax.print.PrintService): void
-                public setPrintable(arg0: java.awt.print.Printable): void
-                public setPrintable(arg0: java.awt.print.Printable, arg1: java.awt.print.PageFormat): void
+                public setPrintable(arg0: java.awt.print.Printable | java.awt.print.Printable$$Lambda): void
+                public setPrintable(arg0: java.awt.print.Printable | java.awt.print.Printable$$Lambda, arg1: java.awt.print.PageFormat): void
                 public setPageable(arg0: java.awt.print.Pageable): void
                 public printDialog(): boolean
                 public printDialog(arg0: javax.print.attribute.PrintRequestAttributeSet): boolean

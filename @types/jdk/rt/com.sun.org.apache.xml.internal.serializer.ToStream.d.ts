@@ -28,11 +28,11 @@ declare namespace com {
                                 public internalEntityDecl(arg0: java.lang.String | string, arg1: java.lang.String | string): void
                                 protected outputLineSep(): void
                                 public setOutputFormat(arg0: java.util.Properties): void
-                                protected init(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: java.util.Properties, arg2: boolean): void
+                                protected init(arg0: java.io.OutputStream, arg1: java.util.Properties, arg2: boolean): void
                                 public getOutputFormat(): java.util.Properties
-                                public setWriter(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+                                public setWriter(arg0: java.io.Writer): void
                                 public setLineSepUse(arg0: boolean): boolean
-                                public setOutputStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                                public setOutputStream(arg0: java.io.OutputStream): void
                                 public setEscaping(arg0: boolean): boolean
                                 protected indent(arg0: int): void
                                 protected indent(): void
@@ -41,19 +41,19 @@ declare namespace com {
                                 public externalEntityDecl(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void
                                 protected escapingNotNeeded(arg0: char): boolean
                                 protected writeUTF16Surrogate(arg0: char, arg1: char[], arg2: int, arg3: int): int
-                                protected accumDefaultEntity(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: char, arg2: int, arg3: char[], arg4: int, arg5: boolean, arg6: boolean): int
+                                protected accumDefaultEntity(arg0: java.io.Writer, arg1: char, arg2: int, arg3: char[], arg4: int, arg5: boolean, arg6: boolean): int
                                 public endNonEscaping(): void
                                 public startNonEscaping(): void
                                 protected cdata(arg0: char[], arg1: int, arg2: int): void
                                 protected charactersRaw(arg0: char[], arg1: int, arg2: int): void
                                 public characters(arg0: char[], arg1: int, arg2: int): void
                                 public characters(arg0: java.lang.String | string): void
-                                protected accumDefaultEscape(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: char, arg2: int, arg3: char[], arg4: int, arg5: boolean, arg6: boolean): int
+                                protected accumDefaultEscape(arg0: java.io.Writer, arg1: char, arg2: int, arg3: char[], arg4: int, arg5: boolean, arg6: boolean): int
                                 public startElement(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: org.xml.sax.Attributes): void
                                 public startElement(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void
                                 public startElement(arg0: java.lang.String | string): void
-                                public processAttributes(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: int): void
-                                public writeAttrString(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: java.lang.String | string, arg2: java.lang.String | string): void
+                                public processAttributes(arg0: java.io.Writer, arg1: int): void
+                                public writeAttrString(arg0: java.io.Writer, arg1: java.lang.String | string, arg2: java.lang.String | string): void
                                 public endElement(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void
                                 public endElement(arg0: java.lang.String | string): void
                                 public startPrefixMapping(arg0: java.lang.String | string, arg1: java.lang.String | string): void

@@ -7,9 +7,6 @@ declare namespace sun {
                 public dispose(): void
                 public static class: java.lang.Class<any>
             }
-            class UnsafeXDisposerRecord$$Lambda implements sun.java2d.DisposerRecord {
-                public constructor(arg0: java.lang.String | string, arg1: long[], arg2: long[])
-            }
         }
     }
 }

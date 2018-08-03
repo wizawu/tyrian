@@ -32,8 +32,8 @@ declare namespace com {
                                     public getReverseMapping(arg0: java.lang.String[], arg1: java.lang.String[], arg2: int[]): int[]
                                     public getNamespaceMapping(arg0: java.lang.String[]): short[]
                                     public getReverseNamespaceMapping(arg0: java.lang.String[]): short[]
-                                    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.dom.XSLTCDTMManager, arg1: javax.xml.transform.Source, arg2: int, arg3: com.sun.org.apache.xml.internal.dtm.DTMWSFilter, arg4: com.sun.org.apache.xml.internal.utils.XMLStringFactory, arg5: boolean, arg6: boolean)
-                                    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.dom.XSLTCDTMManager, arg1: javax.xml.transform.Source, arg2: int, arg3: com.sun.org.apache.xml.internal.dtm.DTMWSFilter, arg4: com.sun.org.apache.xml.internal.utils.XMLStringFactory, arg5: boolean, arg6: int, arg7: boolean, arg8: boolean)
+                                    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.dom.XSLTCDTMManager, arg1: javax.xml.transform.Source, arg2: int, arg3: com.sun.org.apache.xml.internal.dtm.DTMWSFilter | com.sun.org.apache.xml.internal.dtm.DTMWSFilter$$Lambda, arg4: com.sun.org.apache.xml.internal.utils.XMLStringFactory, arg5: boolean, arg6: boolean)
+                                    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.dom.XSLTCDTMManager, arg1: javax.xml.transform.Source, arg2: int, arg3: com.sun.org.apache.xml.internal.dtm.DTMWSFilter | com.sun.org.apache.xml.internal.dtm.DTMWSFilter$$Lambda, arg4: com.sun.org.apache.xml.internal.utils.XMLStringFactory, arg5: boolean, arg6: int, arg7: boolean, arg8: boolean)
                                     public migrateTo(arg0: com.sun.org.apache.xml.internal.dtm.DTMManager): void
                                     public getElementById(arg0: java.lang.String | string): int
                                     public hasDOMSource(): boolean

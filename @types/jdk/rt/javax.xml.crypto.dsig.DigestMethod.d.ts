@@ -9,6 +9,9 @@ declare namespace javax {
                     RIPEMD160: string
                     getParameterSpec(): java.security.spec.AlgorithmParameterSpec
                 }
+                interface DigestMethod$$Lambda extends javax.xml.crypto.XMLStructure , javax.xml.crypto.AlgorithmMethod {
+                    SHA1: string
+                }
             }
         }
     }

@@ -14,9 +14,6 @@ declare namespace com {
                                 public receive(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$State, arg1: java.lang.Object): void
                                 public static class: java.lang.Class<any>
                             }
-                            class ArrayBeanInfoImpl$ArrayLoader$$Lambda extends com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader implements com.sun.xml.internal.bind.v2.runtime.unmarshaller.Receiver {
-                                public constructor(arg0: com.sun.xml.internal.bind.v2.runtime.ArrayBeanInfoImpl, arg1: com.sun.xml.internal.bind.v2.runtime.JAXBContextImpl)
-                            }
                         }
                     }
                 }

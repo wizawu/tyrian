@@ -9,8 +9,8 @@ declare namespace java {
             public constructor(arg0: java.nio.file.Path)
             public constructor(arg0: java.nio.file.Path, arg1: java.lang.String | string)
             public constructor(arg0: java.lang.String | string)
-            public constructor(arg0: java.nio.channels.ReadableByteChannel)
-            public constructor(arg0: java.nio.channels.ReadableByteChannel, arg1: java.lang.String | string)
+            public constructor(arg0: java.nio.channels.ReadableByteChannel | java.nio.channels.ReadableByteChannel$$Lambda)
+            public constructor(arg0: java.nio.channels.ReadableByteChannel | java.nio.channels.ReadableByteChannel$$Lambda, arg1: java.lang.String | string)
             public close(): void
             public ioException(): java.io.IOException
             public delimiter(): java.util.regex.Pattern

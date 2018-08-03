@@ -7,8 +7,8 @@ declare namespace javax {
             public constructor()
             public constructor(arg0: java.awt.GraphicsConfiguration)
             public constructor(arg0: java.awt.Frame)
-            public constructor(arg0: java.awt.Window | java.awt.Window$$Lambda)
-            public constructor(arg0: java.awt.Window | java.awt.Window$$Lambda, arg1: java.awt.GraphicsConfiguration)
+            public constructor(arg0: java.awt.Window)
+            public constructor(arg0: java.awt.Window, arg1: java.awt.GraphicsConfiguration)
             protected windowInit(): void
             protected createRootPane(): javax.swing.JRootPane
             protected isRootPaneCheckingEnabled(): boolean
@@ -20,11 +20,11 @@ declare namespace javax {
             public remove(arg0: java.awt.Component): void
             public setLayout(arg0: java.awt.LayoutManager): void
             public getRootPane(): javax.swing.JRootPane
-            protected setRootPane(arg0: javax.swing.JRootPane | javax.swing.JRootPane$$Lambda): void
+            protected setRootPane(arg0: javax.swing.JRootPane): void
             public getContentPane(): java.awt.Container
             public setContentPane(arg0: java.awt.Container): void
             public getLayeredPane(): javax.swing.JLayeredPane
-            public setLayeredPane(arg0: javax.swing.JLayeredPane | javax.swing.JLayeredPane$$Lambda): void
+            public setLayeredPane(arg0: javax.swing.JLayeredPane): void
             public getGlassPane(): java.awt.Component
             public setGlassPane(arg0: java.awt.Component): void
             public getGraphics(): java.awt.Graphics
@@ -32,9 +32,6 @@ declare namespace javax {
             protected paramString(): string
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
-        }
-        class JWindow$$Lambda extends java.awt.Window implements javax.accessibility.Accessible , javax.swing.RootPaneContainer , javax.swing.TransferHandler$HasGetTransferHandler {
-            protected rootPane: javax.swing.JRootPane
         }
     }
 }

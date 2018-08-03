@@ -13,8 +13,5 @@ declare namespace javax {
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
         }
-        class JPanel$$Lambda extends javax.swing.JComponent implements javax.accessibility.Accessible {
-            public constructor(arg0: java.awt.LayoutManager, arg1: boolean)
-        }
     }
 }

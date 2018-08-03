@@ -14,9 +14,6 @@ declare namespace sun {
                     protected setClosed(): void
                     public static class: java.lang.Class<any>
                 }
-                class KeepAliveStream$$Lambda extends sun.net.www.MeteredStream implements sun.net.www.http.Hurryable {
-                    protected queuedForCleanup: boolean
-                }
             }
         }
     }

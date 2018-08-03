@@ -8,9 +8,6 @@ declare namespace sun {
                 public hashCode(): int
                 public static class: java.lang.Class<any>
             }
-            class LocalRMIServerSocketFactory$$Lambda implements java.rmi.server.RMIServerSocketFactory {
-                public constructor()
-            }
         }
     }
 }

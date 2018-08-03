@@ -6,9 +6,6 @@ declare namespace sun {
                 public getConfigInfo(): long
                 public static class: java.lang.Class<any>
             }
-            class GLXGraphicsConfig$GLXGetConfigInfo$$Lambda implements java.lang.Runnable {
-                public (): void
-            }
         }
     }
 }

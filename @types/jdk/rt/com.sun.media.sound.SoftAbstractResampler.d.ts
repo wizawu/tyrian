@@ -9,9 +9,6 @@ declare namespace com {
                     public openStreamer(): com.sun.media.sound.SoftResamplerStreamer
                     public static class: java.lang.Class<any>
                 }
-                abstract class SoftAbstractResampler$$Lambda implements com.sun.media.sound.SoftResampler {
-                    public constructor()
-                }
             }
         }
     }

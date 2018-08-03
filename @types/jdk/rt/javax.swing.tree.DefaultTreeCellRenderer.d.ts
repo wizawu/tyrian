@@ -36,7 +36,7 @@ declare namespace javax {
                 public setFont(arg0: java.awt.Font): void
                 public getFont(): java.awt.Font
                 public setBackground(arg0: java.awt.Color): void
-                public getTreeCellRendererComponent(arg0: javax.swing.JTree | javax.swing.JTree$$Lambda, arg1: java.lang.Object, arg2: boolean, arg3: boolean, arg4: boolean, arg5: int, arg6: boolean): java.awt.Component
+                public getTreeCellRendererComponent(arg0: javax.swing.JTree, arg1: java.lang.Object, arg2: boolean, arg3: boolean, arg4: boolean, arg5: int, arg6: boolean): java.awt.Component
                 public paint(arg0: java.awt.Graphics): void
                 public getPreferredSize(): java.awt.Dimension
                 public validate(): void
@@ -55,9 +55,6 @@ declare namespace javax {
                 public firePropertyChange(arg0: java.lang.String | string, arg1: double, arg2: double): void
                 public firePropertyChange(arg0: java.lang.String | string, arg1: boolean, arg2: boolean): void
                 public static class: java.lang.Class<any>
-            }
-            class DefaultTreeCellRenderer$$Lambda extends javax.swing.JLabel implements javax.swing.tree.TreeCellRenderer {
-                protected selected: boolean
             }
         }
     }

@@ -16,9 +16,6 @@ declare namespace com {
                                 public getMapLength(): int
                                 public static class: java.lang.Class<any>
                             }
-                            class StackMap$$Lambda extends com.sun.org.apache.bcel.internal.classfile.Attribute implements com.sun.org.apache.bcel.internal.classfile.Node {
-                                public constructor(arg0: int, arg1: int, arg2: com.sun.org.apache.bcel.internal.classfile.StackMapEntry[], arg3: com.sun.org.apache.bcel.internal.classfile.ConstantPool)
-                            }
                         }
                     }
                 }

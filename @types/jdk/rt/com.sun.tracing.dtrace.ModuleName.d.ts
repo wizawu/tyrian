@@ -5,6 +5,9 @@ declare namespace com {
                 interface ModuleName extends java.lang.annotation.Annotation {
                     value(): string
                 }
+                interface ModuleName$$Lambda extends java.lang.annotation.Annotation {
+                    (): string
+                }
             }
         }
     }

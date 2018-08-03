@@ -31,7 +31,7 @@ declare namespace javax {
             public static read(arg0: javax.imageio.stream.ImageInputStream): java.awt.image.BufferedImage
             public static write(arg0: java.awt.image.RenderedImage, arg1: java.lang.String | string, arg2: javax.imageio.stream.ImageOutputStream): boolean
             public static write(arg0: java.awt.image.RenderedImage, arg1: java.lang.String | string, arg2: java.io.File): boolean
-            public static write(arg0: java.awt.image.RenderedImage, arg1: java.lang.String | string, arg2: java.io.OutputStream | java.io.OutputStream$$Lambda): boolean
+            public static write(arg0: java.awt.image.RenderedImage, arg1: java.lang.String | string, arg2: java.io.OutputStream): boolean
             public static class: java.lang.Class<any>
         }
     }

@@ -1,7 +1,7 @@
 declare namespace javax {
     namespace swing {
         class JList$AccessibleJList$AccessibleJListChild extends javax.accessibility.AccessibleContext implements javax.accessibility.Accessible , javax.accessibility.AccessibleComponent {
-            public constructor(arg0: javax.swing.JList<E> | javax.swing.JList$$Lambda<E>, arg1: int)
+            public constructor(arg0: javax.swing.JList<E>, arg1: int)
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public getAccessibleName(): string
             public setAccessibleName(arg0: java.lang.String | string): void
@@ -13,8 +13,8 @@ declare namespace javax {
             public getAccessibleChildrenCount(): int
             public getAccessibleChild(arg0: int): javax.accessibility.Accessible
             public getLocale(): java.util.Locale
-            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
             public getAccessibleComponent(): javax.accessibility.AccessibleComponent
             public getAccessibleSelection(): javax.accessibility.AccessibleSelection
             public getAccessibleText(): javax.accessibility.AccessibleText

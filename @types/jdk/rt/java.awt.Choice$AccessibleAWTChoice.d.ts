@@ -1,7 +1,7 @@
 declare namespace java {
     namespace awt {
         class Choice$AccessibleAWTChoice extends java.awt.Component$AccessibleAWTComponent implements javax.accessibility.AccessibleAction {
-            public constructor(arg0: java.awt.Choice | java.awt.Choice$$Lambda)
+            public constructor(arg0: java.awt.Choice)
             public getAccessibleAction(): javax.accessibility.AccessibleAction
             public getAccessibleRole(): javax.accessibility.AccessibleRole
             public getAccessibleActionCount(): int

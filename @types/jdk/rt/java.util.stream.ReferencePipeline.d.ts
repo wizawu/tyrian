@@ -13,14 +13,14 @@ declare namespace java {
                 public flatMapToInt(arg0: java.util.function$.Function<P_OUT, java.util.stream.IntStream>): java.util.stream.IntStream
                 public flatMapToDouble(arg0: java.util.function$.Function<P_OUT, java.util.stream.DoubleStream>): java.util.stream.DoubleStream
                 public flatMapToLong(arg0: java.util.function$.Function<P_OUT, java.util.stream.LongStream>): java.util.stream.LongStream
-                public peek(arg0: java.util.function$.Consumer$$TypeScript<P_OUT>): java.util.stream.Stream<P_OUT>
+                public peek(arg0: java.util.function$.Consumer$$Lambda<P_OUT>): java.util.stream.Stream<P_OUT>
                 public distinct(): java.util.stream.Stream<P_OUT>
                 public sorted(): java.util.stream.Stream<P_OUT>
                 public sorted(arg0: java.util.Comparator<P_OUT>): java.util.stream.Stream<P_OUT>
                 public limit(arg0: long): java.util.stream.Stream<P_OUT>
                 public skip(arg0: long): java.util.stream.Stream<P_OUT>
-                public forEach(arg0: java.util.function$.Consumer$$TypeScript<P_OUT>): void
-                public forEachOrdered(arg0: java.util.function$.Consumer$$TypeScript<P_OUT>): void
+                public forEach(arg0: java.util.function$.Consumer$$Lambda<P_OUT>): void
+                public forEachOrdered(arg0: java.util.function$.Consumer$$Lambda<P_OUT>): void
                 public toArray<A>(arg0: java.util.function$.IntFunction<A[]> | java.util.function$.IntFunction$$Lambda<A[]>): A[]
                 public toArray(): java.lang.Object[]
                 public anyMatch(arg0: java.util.function$.Predicate<P_OUT>): boolean

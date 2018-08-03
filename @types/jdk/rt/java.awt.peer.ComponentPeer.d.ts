@@ -34,8 +34,8 @@ declare namespace java {
                 createImage(arg0: java.awt.image.ImageProducer): java.awt.Image
                 createImage(arg0: int, arg1: int): java.awt.Image
                 createVolatileImage(arg0: int, arg1: int): java.awt.image.VolatileImage
-                prepareImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver): boolean
-                checkImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver): int
+                prepareImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+                checkImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): int
                 getGraphicsConfiguration(): java.awt.GraphicsConfiguration
                 handlesWheelScrolling(): boolean
                 createBuffers(arg0: int, arg1: java.awt.BufferCapabilities): void

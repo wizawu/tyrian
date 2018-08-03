@@ -9,9 +9,6 @@ declare namespace com {
                                 public onCompletion(): void
                                 public static class: java.lang.Class<any>
                             }
-                            class HttpAdapter$2$$Lambda implements com.sun.xml.internal.ws.transport.http.HttpAdapter$CompletionCallback {
-                                public (): void
-                            }
                         }
                     }
                 }

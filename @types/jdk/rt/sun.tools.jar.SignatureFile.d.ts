@@ -16,7 +16,7 @@ declare namespace sun {
                 public getEntry(arg0: java.lang.String | string): sun.net.www.MessageHeader
                 public entryAt(arg0: int): sun.net.www.MessageHeader
                 public entries(): java.util.Enumeration<sun.net.www.MessageHeader>
-                public stream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public stream(arg0: java.io.OutputStream): void
                 public static class: java.lang.Class<any>
             }
         }

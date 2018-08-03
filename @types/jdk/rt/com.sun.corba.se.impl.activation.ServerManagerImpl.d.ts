@@ -20,9 +20,6 @@ declare namespace com {
                             public getServerPortForType(arg0: com.sun.corba.se.spi.activation.LocatorPackage.ServerLocationPerORB, arg1: java.lang.String | string): int
                             public static class: java.lang.Class<any>
                         }
-                        class ServerManagerImpl$$Lambda extends com.sun.corba.se.spi.activation._ServerManagerImplBase implements com.sun.corba.se.impl.oa.poa.BadServerIdHandler {
-                            public (arg0: int): void
-                        }
                     }
                 }
             }

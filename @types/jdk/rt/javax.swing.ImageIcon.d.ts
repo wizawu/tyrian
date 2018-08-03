@@ -21,14 +21,11 @@ declare namespace javax {
             public paintIcon(arg0: java.awt.Component, arg1: java.awt.Graphics, arg2: int, arg3: int): void
             public getIconWidth(): int
             public getIconHeight(): int
-            public setImageObserver(arg0: java.awt.image.ImageObserver): void
+            public setImageObserver(arg0: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): void
             public getImageObserver(): java.awt.image.ImageObserver
             public toString(): string
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
-        }
-        class ImageIcon$$Lambda implements javax.swing.Icon , java.io.Serializable , javax.accessibility.Accessible {
-            protected static component: java.awt.Component
         }
     }
 }

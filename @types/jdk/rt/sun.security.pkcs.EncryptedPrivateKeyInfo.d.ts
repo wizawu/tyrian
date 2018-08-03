@@ -3,7 +3,7 @@ declare namespace sun {
         namespace pkcs {
             class EncryptedPrivateKeyInfo {
                 public constructor(arg0: byte[])
-                public constructor(arg0: sun.security.x509.AlgorithmId | sun.security.x509.AlgorithmId$$Lambda, arg1: byte[])
+                public constructor(arg0: sun.security.x509.AlgorithmId, arg1: byte[])
                 public getAlgorithm(): sun.security.x509.AlgorithmId
                 public getEncryptedData(): byte[]
                 public getEncoded(): byte[]

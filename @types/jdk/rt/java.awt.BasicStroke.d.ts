@@ -23,8 +23,5 @@ declare namespace java {
             public equals(arg0: java.lang.Object): boolean
             public static class: java.lang.Class<any>
         }
-        class BasicStroke$$Lambda implements java.awt.Stroke {
-            public static JOIN_MITER: int
-        }
     }
 }

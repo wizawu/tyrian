@@ -48,14 +48,14 @@ declare namespace sun {
                 public constructor(arg0: sun.security.util.ObjectIdentifier)
                 public constructor(arg0: sun.security.util.ObjectIdentifier, arg1: java.security.AlgorithmParameters)
                 protected decodeParams(): void
-                public encode(arg0: sun.security.util.DerOutputStream | sun.security.util.DerOutputStream$$Lambda): void
-                public derEncode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public encode(arg0: sun.security.util.DerOutputStream): void
+                public derEncode(arg0: java.io.OutputStream): void
                 public encode(): byte[]
                 public getOID(): sun.security.util.ObjectIdentifier
                 public getName(): string
                 public getParameters(): java.security.AlgorithmParameters
                 public getEncodedParams(): byte[]
-                public equals(arg0: sun.security.x509.AlgorithmId | sun.security.x509.AlgorithmId$$Lambda): boolean
+                public equals(arg0: sun.security.x509.AlgorithmId): boolean
                 public equals(arg0: java.lang.Object): boolean
                 public equals(arg0: sun.security.util.ObjectIdentifier): boolean
                 public hashCode(): int
@@ -69,9 +69,6 @@ declare namespace sun {
                 public static getEncAlgFromSigAlg(arg0: java.lang.String | string): string
                 public static getDigAlgFromSigAlg(arg0: java.lang.String | string): string
                 public static class: java.lang.Class<any>
-            }
-            class AlgorithmId$$Lambda implements java.io.Serializable , sun.security.util.DerEncoder {
-                protected params: sun.security.util.DerValue
             }
         }
     }

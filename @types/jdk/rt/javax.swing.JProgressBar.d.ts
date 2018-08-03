@@ -28,8 +28,8 @@ declare namespace javax {
             public updateUI(): void
             public getUIClassID(): string
             protected createChangeListener(): javax.swing.event.ChangeListener
-            public addChangeListener(arg0: javax.swing.event.ChangeListener): void
-            public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
+            public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+            public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
             public getChangeListeners(): javax.swing.event.ChangeListener[]
             protected fireStateChanged(): void
             public getModel(): javax.swing.BoundedRangeModel
@@ -45,9 +45,6 @@ declare namespace javax {
             protected paramString(): string
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
-        }
-        class JProgressBar$$Lambda extends javax.swing.JComponent implements javax.swing.SwingConstants , javax.accessibility.Accessible {
-            protected orientation: int
         }
     }
 }

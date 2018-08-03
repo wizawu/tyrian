@@ -11,9 +11,6 @@ declare namespace sun {
                     public hurry(): boolean
                     public static class: java.lang.Class<any>
                 }
-                class ChunkedInputStream$$Lambda extends java.io.InputStream implements sun.net.www.http.Hurryable {
-                    public constructor(arg0: java.io.InputStream, arg1: sun.net.www.http.HttpClient, arg2: sun.net.www.MessageHeader)
-                }
             }
         }
     }

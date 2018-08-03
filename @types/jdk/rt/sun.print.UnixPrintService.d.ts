@@ -26,8 +26,5 @@ declare namespace sun {
             public usesClass<T extends javax.print.attribute.PrintServiceAttribute>(arg0: java.lang.Class): boolean
             public static class: java.lang.Class<any>
         }
-        class UnixPrintService$$Lambda implements javax.print.PrintService , sun.print.AttributeUpdater , sun.print.SunPrinterJobService {
-            public (): void
-        }
     }
 }

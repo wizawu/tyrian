@@ -11,7 +11,7 @@ declare namespace sun {
                     protected SS3Decoder: java.nio.charset.CharsetDecoder[]
                     protected constructor(arg0: java.nio.charset.Charset)
                     protected implReset(): void
-                    protected decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda): java.nio.charset.CoderResult
+                    protected decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
                     public static class: java.lang.Class<any>
                 }
             }

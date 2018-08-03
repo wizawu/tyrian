@@ -6,9 +6,6 @@ declare namespace javax {
                     public keyTabTakeSnapshot(arg0: javax.security.auth.kerberos.KeyTab): sun.security.krb5.internal.ktab.KeyTab
                     public static class: java.lang.Class<any>
                 }
-                class JavaxSecurityAuthKerberosAccessImpl$$Lambda implements sun.security.krb5.JavaxSecurityAuthKerberosAccess {
-                    public (arg0: javax.security.auth.kerberos.KeyTab): sun.security.krb5.internal.ktab.KeyTab
-                }
             }
         }
     }

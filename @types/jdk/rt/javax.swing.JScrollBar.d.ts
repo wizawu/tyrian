@@ -33,8 +33,8 @@ declare namespace javax {
             public getValueIsAdjusting(): boolean
             public setValueIsAdjusting(arg0: boolean): void
             public setValues(arg0: int, arg1: int, arg2: int, arg3: int): void
-            public addAdjustmentListener(arg0: java.awt.event.AdjustmentListener): void
-            public removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener): void
+            public addAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$Lambda): void
+            public removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$Lambda): void
             public getAdjustmentListeners(): java.awt.event.AdjustmentListener[]
             protected fireAdjustmentValueChanged(arg0: int, arg1: int, arg2: int): void
             public getMinimumSize(): java.awt.Dimension
@@ -43,9 +43,6 @@ declare namespace javax {
             protected paramString(): string
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
-        }
-        class JScrollBar$$Lambda extends javax.swing.JComponent implements java.awt.Adjustable , javax.accessibility.Accessible {
-            protected model: javax.swing.BoundedRangeModel
         }
     }
 }

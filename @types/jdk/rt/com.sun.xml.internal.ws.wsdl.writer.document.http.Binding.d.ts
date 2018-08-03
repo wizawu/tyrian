@@ -10,6 +10,9 @@ declare namespace com {
                                     interface Binding extends com.sun.xml.internal.txw2.TypedXmlWriter {
                                         verb(arg0: java.lang.String | string): com.sun.xml.internal.ws.wsdl.writer.document.http.Binding
                                     }
+                                    interface Binding$$Lambda extends com.sun.xml.internal.txw2.TypedXmlWriter {
+                                        (arg0: java.lang.String | string): com.sun.xml.internal.ws.wsdl.writer.document.http.Binding
+                                    }
                                 }
                             }
                         }

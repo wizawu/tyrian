@@ -41,7 +41,7 @@ declare namespace sun {
                 public constructor(arg0: byte[])
                 public constructor(arg0: byte[], arg1: int, arg2: int)
                 public constructor(arg0: java.io.InputStream)
-                public encode(arg0: sun.security.util.DerOutputStream | sun.security.util.DerOutputStream$$Lambda): void
+                public encode(arg0: sun.security.util.DerOutputStream): void
                 public getData(): sun.security.util.DerInputStream
                 public getTag(): byte
                 public getBoolean(): boolean

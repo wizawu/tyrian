@@ -4,7 +4,7 @@ declare namespace java {
             public iterator(): java.util.Iterator<E>
             public size(): int
             public contains(arg0: java.lang.Object): boolean
-            public forEach(arg0: java.util.function$.Consumer$$TypeScript<E>): void
+            public forEach(arg0: java.util.function$.Consumer$$Lambda<E>): void
             public spliterator(): java.util.Spliterator<E>
             public removeIf(arg0: java.util.function$.Predicate<E>): boolean
             public static class: java.lang.Class<any>

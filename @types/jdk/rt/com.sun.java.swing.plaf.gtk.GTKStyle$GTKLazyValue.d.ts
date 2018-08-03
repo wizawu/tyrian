@@ -8,9 +8,6 @@ declare namespace com {
                             public createValue(arg0: javax.swing.UIDefaults): java.lang.Object
                             public static class: java.lang.Class<any>
                         }
-                        class GTKStyle$GTKLazyValue$$Lambda implements javax.swing.UIDefaults$LazyValue {
-                            public (arg0: javax.swing.UIDefaults): java.lang.Object
-                        }
                     }
                 }
             }

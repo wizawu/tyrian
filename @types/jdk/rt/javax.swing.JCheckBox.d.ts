@@ -18,8 +18,5 @@ declare namespace javax {
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
         }
-        class JCheckBox$$Lambda extends javax.swing.JToggleButton implements javax.accessibility.Accessible {
-            public static BORDER_PAINTED_FLAT_CHANGED_PROPERTY: string
-        }
     }
 }

@@ -7,7 +7,7 @@ declare namespace com {
                     public getMidiFileTypes(): int[]
                     public getMidiFileTypes(arg0: javax.sound.midi.Sequence): int[]
                     public isFileTypeSupported(arg0: int): boolean
-                    public write(arg0: javax.sound.midi.Sequence, arg1: int, arg2: java.io.OutputStream | java.io.OutputStream$$Lambda): int
+                    public write(arg0: javax.sound.midi.Sequence, arg1: int, arg2: java.io.OutputStream): int
                     public write(arg0: javax.sound.midi.Sequence, arg1: int, arg2: java.io.File): int
                     public static class: java.lang.Class<any>
                 }

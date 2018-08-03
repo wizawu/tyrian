@@ -109,8 +109,5 @@ declare namespace javax {
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
         }
-        class JOptionPane$$Lambda extends javax.swing.JComponent implements javax.accessibility.Accessible {
-            public static UNINITIALIZED_VALUE: java.lang.Object
-        }
     }
 }

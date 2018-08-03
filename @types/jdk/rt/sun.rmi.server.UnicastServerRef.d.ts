@@ -22,9 +22,6 @@ declare namespace sun {
                 public readExternal(arg0: java.io.ObjectInput): void
                 public static class: java.lang.Class<any>
             }
-            class UnicastServerRef$$Lambda extends sun.rmi.server.UnicastRef implements java.rmi.server.ServerRef , sun.rmi.server.Dispatcher {
-                public static logCalls: boolean
-            }
         }
     }
 }

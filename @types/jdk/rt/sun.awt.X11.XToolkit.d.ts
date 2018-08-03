@@ -7,7 +7,7 @@ declare namespace sun {
                 public static getDisplay(): long
                 public static getDefaultRootWindow(): long
                 public constructor()
-                public createButton(arg0: java.awt.Button | java.awt.Button$$Lambda): java.awt.peer.ButtonPeer
+                public createButton(arg0: java.awt.Button): java.awt.peer.ButtonPeer
                 public createLightweightFrame(arg0: sun.awt.LightweightFrame): java.awt.peer.FramePeer
                 public createFrame(arg0: java.awt.Frame): java.awt.peer.FramePeer
                 public addXEventListener(arg0: sun.awt.X11.XToolkit$XEventListener | sun.awt.X11.XToolkit$XEventListener$$Lambda): void
@@ -25,25 +25,25 @@ declare namespace sun {
                 public isDynamicLayoutActive(): boolean
                 public getFontPeer(arg0: java.lang.String | string, arg1: int): java.awt.peer.FontPeer
                 public createDragSourceContextPeer(arg0: java.awt.dnd.DragGestureEvent): java.awt.dnd.peer.DragSourceContextPeer
-                public createDragGestureRecognizer<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.Class<T>, arg1: java.awt.dnd.DragSource, arg2: java.awt.Component, arg3: int, arg4: java.awt.dnd.DragGestureListener): T
-                public createCheckboxMenuItem<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.CheckboxMenuItem | java.awt.CheckboxMenuItem$$Lambda): java.awt.peer.CheckboxMenuItemPeer
-                public createMenuItem<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.MenuItem | java.awt.MenuItem$$Lambda): java.awt.peer.MenuItemPeer
+                public createDragGestureRecognizer<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.Class<T>, arg1: java.awt.dnd.DragSource, arg2: java.awt.Component, arg3: int, arg4: java.awt.dnd.DragGestureListener | java.awt.dnd.DragGestureListener$$Lambda): T
+                public createCheckboxMenuItem<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.CheckboxMenuItem): java.awt.peer.CheckboxMenuItemPeer
+                public createMenuItem<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.MenuItem): java.awt.peer.MenuItemPeer
                 public createTextField<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.TextField): java.awt.peer.TextFieldPeer
-                public createLabel<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Label | java.awt.Label$$Lambda): java.awt.peer.LabelPeer
-                public createList<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.List | java.awt.List$$Lambda): java.awt.peer.ListPeer
-                public createCheckbox<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Checkbox | java.awt.Checkbox$$Lambda): java.awt.peer.CheckboxPeer
-                public createScrollbar<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Scrollbar | java.awt.Scrollbar$$Lambda): java.awt.peer.ScrollbarPeer
-                public createScrollPane<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.ScrollPane | java.awt.ScrollPane$$Lambda): java.awt.peer.ScrollPanePeer
+                public createLabel<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Label): java.awt.peer.LabelPeer
+                public createList<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.List): java.awt.peer.ListPeer
+                public createCheckbox<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Checkbox): java.awt.peer.CheckboxPeer
+                public createScrollbar<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Scrollbar): java.awt.peer.ScrollbarPeer
+                public createScrollPane<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.ScrollPane): java.awt.peer.ScrollPanePeer
                 public createTextArea<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.TextArea): java.awt.peer.TextAreaPeer
-                public createChoice<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Choice | java.awt.Choice$$Lambda): java.awt.peer.ChoicePeer
-                public createCanvas<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Canvas | java.awt.Canvas$$Lambda): java.awt.peer.CanvasPeer
-                public createPanel<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Panel | java.awt.Panel$$Lambda): java.awt.peer.PanelPeer
-                public createWindow<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Window | java.awt.Window$$Lambda): java.awt.peer.WindowPeer
+                public createChoice<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Choice): java.awt.peer.ChoicePeer
+                public createCanvas<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Canvas): java.awt.peer.CanvasPeer
+                public createPanel<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Panel): java.awt.peer.PanelPeer
+                public createWindow<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Window): java.awt.peer.WindowPeer
                 public createDialog<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Dialog): java.awt.peer.DialogPeer
                 public static getSunAwtDisableGtkFileDialogs<T extends java.awt.dnd.DragGestureRecognizer>(): boolean
                 public createFileDialog<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.FileDialog): java.awt.peer.FileDialogPeer
-                public createMenuBar<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.MenuBar | java.awt.MenuBar$$Lambda): java.awt.peer.MenuBarPeer
-                public createMenu<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Menu | java.awt.Menu$$Lambda): java.awt.peer.MenuPeer
+                public createMenuBar<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.MenuBar): java.awt.peer.MenuBarPeer
+                public createMenu<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Menu): java.awt.peer.MenuPeer
                 public createPopupMenu<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.PopupMenu): java.awt.peer.PopupMenuPeer
                 public getMouseInfoPeer<T extends java.awt.dnd.DragGestureRecognizer>(): java.awt.peer.MouseInfoPeer
                 public createEmbeddedFrame<T extends java.awt.dnd.DragGestureRecognizer>(arg0: sun.awt.X11.XEmbeddedFrame): sun.awt.X11.XEmbeddedFramePeer
@@ -70,7 +70,7 @@ declare namespace sun {
                 protected initializeDesktopProperties<T extends java.awt.dnd.DragGestureRecognizer>(): void
                 public getNumberOfButtons<T extends java.awt.dnd.DragGestureRecognizer>(): int
                 protected lazilyLoadDesktopProperty<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.String | string): java.lang.Object
-                public addPropertyChangeListener<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener): void
+                public addPropertyChangeListener<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
                 protected needsXEmbedImpl<T extends java.awt.dnd.DragGestureRecognizer>(): boolean
                 public isModalityTypeSupported<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Dialog$ModalityType): boolean
                 public isModalExclusionTypeSupported<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Dialog$ModalExclusionType): boolean
@@ -78,8 +78,8 @@ declare namespace sun {
                 public useBufferPerWindow<T extends java.awt.dnd.DragGestureRecognizer>(): boolean
                 public static getEventNumber<T extends java.awt.dnd.DragGestureRecognizer>(): long
                 protected syncNativeQueue<T extends java.awt.dnd.DragGestureRecognizer>(arg0: long): boolean
-                public grab<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Window | java.awt.Window$$Lambda): void
-                public ungrab<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Window | java.awt.Window$$Lambda): void
+                public grab<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Window): void
+                public ungrab<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Window): void
                 public isDesktopSupported<T extends java.awt.dnd.DragGestureRecognizer>(): boolean
                 public createDesktopPeer<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.Desktop): java.awt.peer.DesktopPeer
                 public areExtraMouseButtonsEnabled<T extends java.awt.dnd.DragGestureRecognizer>(): boolean
@@ -89,9 +89,6 @@ declare namespace sun {
                 public isTranslucencyCapable<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.GraphicsConfiguration): boolean
                 public static getSunAwtDisableGrab<T extends java.awt.dnd.DragGestureRecognizer>(): boolean
                 public static class: java.lang.Class<any>
-            }
-            class XToolkit$$Lambda extends sun.awt.UNIXToolkit implements java.lang.Runnable {
-                protected static dynamicLayoutSetting: boolean
             }
         }
     }

@@ -22,12 +22,9 @@ declare namespace com {
                                 public isStableNumber(): boolean
                                 public getAnalysisBits(): int
                                 public callVisitors(arg0: com.sun.org.apache.xpath.internal.ExpressionOwner, arg1: com.sun.org.apache.xpath.internal.XPathVisitor): void
-                                public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda): boolean
+                                public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression): boolean
                                 public isPsuedoVarRef(): boolean
                                 public static class: java.lang.Class<any>
-                            }
-                            class Variable$$Lambda extends com.sun.org.apache.xpath.internal.Expression implements com.sun.org.apache.xpath.internal.axes.PathComponent {
-                                protected m_qname: com.sun.org.apache.xml.internal.utils.QName
                             }
                         }
                     }

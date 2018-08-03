@@ -21,11 +21,11 @@ declare namespace jdk {
                         public enterUnaryNode(arg0: jdk.nashorn.internal.ir.UnaryNode): boolean
                         public enterExpressionStatement(arg0: jdk.nashorn.internal.ir.ExpressionStatement): boolean
                         public enterForNode(arg0: jdk.nashorn.internal.ir.ForNode): boolean
-                        public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
+                        public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
                         public enterIfNode(arg0: jdk.nashorn.internal.ir.IfNode): boolean
                         public enterLabelNode(arg0: jdk.nashorn.internal.ir.LabelNode): boolean
-                        public enterSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode | jdk.nashorn.internal.ir.SplitNode$$Lambda): boolean
-                        public leaveSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode | jdk.nashorn.internal.ir.SplitNode$$Lambda): jdk.nashorn.internal.ir.Node
+                        public enterSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode): boolean
+                        public leaveSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode): jdk.nashorn.internal.ir.Node
                         public enterSwitchNode(arg0: jdk.nashorn.internal.ir.SwitchNode): boolean
                         public enterTryNode(arg0: jdk.nashorn.internal.ir.TryNode): boolean
                         public enterVarNode(arg0: jdk.nashorn.internal.ir.VarNode): boolean

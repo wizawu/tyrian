@@ -28,7 +28,7 @@ declare namespace com {
                                 public isAttribute(): boolean
                                 public isCharacters(): boolean
                                 public isNamespace(): boolean
-                                public writeAsEncodedUnicode(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+                                public writeAsEncodedUnicode(arg0: java.io.Writer): void
                                 public static class: java.lang.Class<any>
                             }
                         }

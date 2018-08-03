@@ -35,9 +35,6 @@ declare namespace sun {
                 public dispatchEvent(arg0: sun.awt.X11.XEvent): void
                 public static class: java.lang.Class<any>
             }
-            class XEmbedServerTester$$Lambda implements sun.awt.X11.XEventDispatcher {
-                public static (arg0: java.awt.Rectangle[], arg1: long): sun.awt.X11.XEmbedServerTester
-            }
         }
     }
 }

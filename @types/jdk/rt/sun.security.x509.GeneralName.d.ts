@@ -10,7 +10,7 @@ declare namespace sun {
                 public toString(): string
                 public equals(arg0: java.lang.Object): boolean
                 public hashCode(): int
-                public encode(arg0: sun.security.util.DerOutputStream | sun.security.util.DerOutputStream$$Lambda): void
+                public encode(arg0: sun.security.util.DerOutputStream): void
                 public static class: java.lang.Class<any>
             }
         }

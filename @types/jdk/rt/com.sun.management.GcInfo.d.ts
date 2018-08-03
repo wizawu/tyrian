@@ -21,9 +21,6 @@ declare namespace com {
                 public toCompositeData(arg0: javax.management.openmbean.CompositeType): javax.management.openmbean.CompositeData
                 public static class: java.lang.Class<any>
             }
-            class GcInfo$$Lambda implements javax.management.openmbean.CompositeData , javax.management.openmbean.CompositeDataView {
-                public (): long
-            }
         }
     }
 }

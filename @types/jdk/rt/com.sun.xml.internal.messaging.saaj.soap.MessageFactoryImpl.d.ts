@@ -10,7 +10,7 @@ declare namespace com {
                                 protected listener: java.io.OutputStream
                                 protected lazyAttachments: boolean
                                 public constructor()
-                                public listen(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): java.io.OutputStream
+                                public listen(arg0: java.io.OutputStream): java.io.OutputStream
                                 public createMessage(): javax.xml.soap.SOAPMessage
                                 public createMessage(arg0: boolean, arg1: boolean): javax.xml.soap.SOAPMessage
                                 public createMessage(arg0: javax.xml.soap.MimeHeaders, arg1: java.io.InputStream): javax.xml.soap.SOAPMessage

@@ -4,7 +4,7 @@ declare namespace javax {
             getRootPane(): javax.swing.JRootPane
             setContentPane(arg0: java.awt.Container): void
             getContentPane(): java.awt.Container
-            setLayeredPane(arg0: javax.swing.JLayeredPane | javax.swing.JLayeredPane$$Lambda): void
+            setLayeredPane(arg0: javax.swing.JLayeredPane): void
             getLayeredPane(): javax.swing.JLayeredPane
             setGlassPane(arg0: java.awt.Component): void
             getGlassPane(): java.awt.Component

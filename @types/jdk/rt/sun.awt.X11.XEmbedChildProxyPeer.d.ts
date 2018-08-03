@@ -29,8 +29,8 @@ declare namespace sun {
                 public createImage(arg0: java.awt.image.ImageProducer): java.awt.Image
                 public createImage(arg0: int, arg1: int): java.awt.Image
                 public createVolatileImage(arg0: int, arg1: int): java.awt.image.VolatileImage
-                public prepareImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver): boolean
-                public checkImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver): int
+                public prepareImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+                public checkImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): int
                 public getGraphicsConfiguration(): java.awt.GraphicsConfiguration
                 public handlesWheelScrolling(): boolean
                 public createBuffers(arg0: int, arg1: java.awt.BufferCapabilities): void
@@ -54,9 +54,6 @@ declare namespace sun {
                 public setZOrder(arg0: java.awt.peer.ComponentPeer): void
                 public updateGraphicsData(arg0: java.awt.GraphicsConfiguration): boolean
                 public static class: java.lang.Class<any>
-            }
-            class XEmbedChildProxyPeer$$Lambda implements java.awt.peer.ComponentPeer , sun.awt.X11.XEventDispatcher {
-                public (): boolean
             }
         }
     }

@@ -11,8 +11,8 @@ declare namespace javax {
                     public removeAttributes(arg0: javax.swing.text.AttributeSet): void
                     public setResolveParent(arg0: javax.swing.text.AttributeSet): void
                     public getName(): string
-                    public addChangeListener(arg0: javax.swing.event.ChangeListener): void
-                    public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
+                    public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+                    public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
                     public getChangeListeners(): javax.swing.event.ChangeListener[]
                     public static class: java.lang.Class<any>
                 }

@@ -7,7 +7,7 @@ declare namespace com {
                     public constructor(arg0: byte[], arg1: int, arg2: int)
                     public constructor(arg0: java.io.File)
                     public constructor(arg0: java.io.File, arg1: long, arg2: long)
-                    public writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                    public writeTo(arg0: java.io.OutputStream): void
                     public getInputStream(): java.io.InputStream
                     public subbuffer(arg0: long): com.sun.media.sound.ModelByteBuffer
                     public subbuffer(arg0: long, arg1: long): com.sun.media.sound.ModelByteBuffer

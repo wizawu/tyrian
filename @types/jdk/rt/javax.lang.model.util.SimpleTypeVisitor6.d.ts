@@ -9,7 +9,7 @@ declare namespace javax {
                     protected defaultAction(arg0: javax.lang.model.type.TypeMirror, arg1: P): R
                     public visitPrimitive(arg0: javax.lang.model.type.PrimitiveType, arg1: P): R
                     public visitNull(arg0: javax.lang.model.type.NullType, arg1: P): R
-                    public visitArray(arg0: javax.lang.model.type.ArrayType, arg1: P): R
+                    public visitArray(arg0: javax.lang.model.type.ArrayType | javax.lang.model.type.ArrayType$$Lambda, arg1: P): R
                     public visitDeclared(arg0: javax.lang.model.type.DeclaredType, arg1: P): R
                     public visitError(arg0: javax.lang.model.type.ErrorType, arg1: P): R
                     public visitTypeVariable(arg0: javax.lang.model.type.TypeVariable, arg1: P): R

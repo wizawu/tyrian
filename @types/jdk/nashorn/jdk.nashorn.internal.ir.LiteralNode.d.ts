@@ -6,8 +6,8 @@ declare namespace jdk {
                     protected value: T
                     public static POSTSET_MARKER: java.lang.Object
                     protected constructor(arg0: long, arg1: int, arg2: T)
-                    protected constructor(arg0: jdk.nashorn.internal.ir.LiteralNode<T> | jdk.nashorn.internal.ir.LiteralNode$$Lambda<T>)
-                    protected constructor(arg0: jdk.nashorn.internal.ir.LiteralNode<T> | jdk.nashorn.internal.ir.LiteralNode$$Lambda<T>, arg1: T)
+                    protected constructor(arg0: jdk.nashorn.internal.ir.LiteralNode<T>)
+                    protected constructor(arg0: jdk.nashorn.internal.ir.LiteralNode<T>, arg1: T)
                     public initialize(arg0: jdk.nashorn.internal.ir.LexicalContext): jdk.nashorn.internal.ir.LiteralNode<any>
                     public isNull(): boolean
                     public getType(): jdk.nashorn.internal.codegen.types.Type
@@ -42,9 +42,6 @@ declare namespace jdk {
                     public static newInstance(arg0: jdk.nashorn.internal.ir.Node, arg1: java.util.List<jdk.nashorn.internal.ir.Expression>): jdk.nashorn.internal.ir.LiteralNode<any>
                     public static newInstance(arg0: long, arg1: int, arg2: jdk.nashorn.internal.ir.Expression[]): jdk.nashorn.internal.ir.LiteralNode<jdk.nashorn.internal.ir.Expression[]>
                     public static class: java.lang.Class<any>
-                }
-                abstract class LiteralNode$$Lambda<T> extends jdk.nashorn.internal.ir.Expression implements jdk.nashorn.internal.ir.PropertyKey {
-                    protected value: T
                 }
             }
         }

@@ -7,7 +7,7 @@ declare namespace java {
             public contains(arg0: java.lang.Object): boolean
             public remove(arg0: java.lang.Object): boolean
             public spliterator(): java.util.Spliterator<K>
-            public forEach(arg0: java.util.function$.Consumer$$TypeScript<K>): void
+            public forEach(arg0: java.util.function$.Consumer$$Lambda<K>): void
             public static class: java.lang.Class<any>
         }
     }

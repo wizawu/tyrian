@@ -19,9 +19,6 @@ declare namespace jdk {
                     public initialize(arg0: jdk.nashorn.internal.ir.LexicalContext): jdk.nashorn.internal.ir.LiteralNode
                     public static class: java.lang.Class<any>
                 }
-                class LiteralNode$ArrayLiteralNode$$Lambda extends jdk.nashorn.internal.ir.LiteralNode<jdk.nashorn.internal.ir.Expression[]> implements jdk.nashorn.internal.ir.LexicalContextNode , jdk.nashorn.internal.ir.Splittable {
-                    protected constructor(arg0: long, arg1: int, arg2: jdk.nashorn.internal.ir.Expression[])
-                }
             }
         }
     }

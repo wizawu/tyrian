@@ -67,8 +67,5 @@ declare namespace javax {
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
         }
-        class JSplitPane$$Lambda extends javax.swing.JComponent implements javax.accessibility.Accessible {
-            public static VERTICAL_SPLIT: int
-        }
     }
 }

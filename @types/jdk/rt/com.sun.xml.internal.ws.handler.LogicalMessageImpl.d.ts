@@ -6,7 +6,7 @@ declare namespace com {
                     namespace handler {
                         class LogicalMessageImpl implements javax.xml.ws.LogicalMessage {
                             protected defaultJaxbContext: com.sun.xml.internal.ws.spi.db.BindingContext
-                            public constructor(arg0: com.sun.xml.internal.ws.spi.db.BindingContext, arg1: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda)
+                            public constructor(arg0: com.sun.xml.internal.ws.spi.db.BindingContext, arg1: com.sun.xml.internal.ws.api.message.Packet)
                             public getPayload(): javax.xml.transform.Source
                             public setPayload(arg0: javax.xml.transform.Source): void
                             public getPayload(arg0: com.sun.xml.internal.ws.spi.db.BindingContext): java.lang.Object

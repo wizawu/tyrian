@@ -30,7 +30,7 @@ declare namespace javax {
                     protected editingPath: javax.swing.tree.TreePath
                     protected editingRow: int
                     protected editorHasDifferentSize: boolean
-                    public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
+                    public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
                     public constructor()
                     protected getHashColor(): java.awt.Color
                     protected setHashColor(arg0: java.awt.Color): void
@@ -54,23 +54,23 @@ declare namespace javax {
                     protected isRootVisible(): boolean
                     protected setShowsRootHandles(arg0: boolean): void
                     protected getShowsRootHandles(): boolean
-                    protected setCellEditor(arg0: javax.swing.tree.TreeCellEditor): void
+                    protected setCellEditor(arg0: javax.swing.tree.TreeCellEditor | javax.swing.tree.TreeCellEditor$$Lambda): void
                     protected getCellEditor(): javax.swing.tree.TreeCellEditor
                     protected setEditable(arg0: boolean): void
                     protected isEditable(): boolean
                     protected setSelectionModel(arg0: javax.swing.tree.TreeSelectionModel): void
                     protected getSelectionModel(): javax.swing.tree.TreeSelectionModel
-                    public getPathBounds(arg0: javax.swing.JTree | javax.swing.JTree$$Lambda, arg1: javax.swing.tree.TreePath): java.awt.Rectangle
-                    public getPathForRow(arg0: javax.swing.JTree | javax.swing.JTree$$Lambda, arg1: int): javax.swing.tree.TreePath
-                    public getRowForPath(arg0: javax.swing.JTree | javax.swing.JTree$$Lambda, arg1: javax.swing.tree.TreePath): int
-                    public getRowCount(arg0: javax.swing.JTree | javax.swing.JTree$$Lambda): int
-                    public getClosestPathForLocation(arg0: javax.swing.JTree | javax.swing.JTree$$Lambda, arg1: int, arg2: int): javax.swing.tree.TreePath
-                    public isEditing(arg0: javax.swing.JTree | javax.swing.JTree$$Lambda): boolean
-                    public stopEditing(arg0: javax.swing.JTree | javax.swing.JTree$$Lambda): boolean
-                    public cancelEditing(arg0: javax.swing.JTree | javax.swing.JTree$$Lambda): void
-                    public startEditingAtPath(arg0: javax.swing.JTree | javax.swing.JTree$$Lambda, arg1: javax.swing.tree.TreePath): void
-                    public getEditingPath(arg0: javax.swing.JTree | javax.swing.JTree$$Lambda): javax.swing.tree.TreePath
-                    public installUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public getPathBounds(arg0: javax.swing.JTree, arg1: javax.swing.tree.TreePath): java.awt.Rectangle
+                    public getPathForRow(arg0: javax.swing.JTree, arg1: int): javax.swing.tree.TreePath
+                    public getRowForPath(arg0: javax.swing.JTree, arg1: javax.swing.tree.TreePath): int
+                    public getRowCount(arg0: javax.swing.JTree): int
+                    public getClosestPathForLocation(arg0: javax.swing.JTree, arg1: int, arg2: int): javax.swing.tree.TreePath
+                    public isEditing(arg0: javax.swing.JTree): boolean
+                    public stopEditing(arg0: javax.swing.JTree): boolean
+                    public cancelEditing(arg0: javax.swing.JTree): void
+                    public startEditingAtPath(arg0: javax.swing.JTree, arg1: javax.swing.tree.TreePath): void
+                    public getEditingPath(arg0: javax.swing.JTree): javax.swing.tree.TreePath
+                    public installUI(arg0: javax.swing.JComponent): void
                     protected prepareForUIInstall(): void
                     protected completeUIInstall(): void
                     protected installDefaults(): void
@@ -92,16 +92,16 @@ declare namespace javax {
                     protected createDefaultCellEditor(): javax.swing.tree.TreeCellEditor
                     protected createDefaultCellRenderer(): javax.swing.tree.TreeCellRenderer
                     protected createTreeModelListener(): javax.swing.event.TreeModelListener
-                    public uninstallUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public uninstallUI(arg0: javax.swing.JComponent): void
                     protected prepareForUIUninstall(): void
                     protected completeUIUninstall(): void
                     protected uninstallDefaults(): void
                     protected uninstallListeners(): void
                     protected uninstallKeyboardActions(): void
                     protected uninstallComponents(): void
-                    public getBaseline(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: int, arg2: int): int
-                    public getBaselineResizeBehavior(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Component$BaselineResizeBehavior
-                    public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public getBaseline(arg0: javax.swing.JComponent, arg1: int, arg2: int): int
+                    public getBaselineResizeBehavior(arg0: javax.swing.JComponent): java.awt.Component$BaselineResizeBehavior
+                    public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
                     protected isDropLine(arg0: javax.swing.JTree$DropLocation): boolean
                     protected paintDropLine(arg0: java.awt.Graphics): void
                     protected getDropLineRect(arg0: javax.swing.JTree$DropLocation): java.awt.Rectangle
@@ -110,8 +110,8 @@ declare namespace javax {
                     protected paintExpandControl(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: java.awt.Insets, arg3: java.awt.Rectangle, arg4: javax.swing.tree.TreePath, arg5: int, arg6: boolean, arg7: boolean, arg8: boolean): void
                     protected paintRow(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: java.awt.Insets, arg3: java.awt.Rectangle, arg4: javax.swing.tree.TreePath, arg5: int, arg6: boolean, arg7: boolean, arg8: boolean): void
                     protected shouldPaintExpandControl(arg0: javax.swing.tree.TreePath, arg1: int, arg2: boolean, arg3: boolean, arg4: boolean): boolean
-                    protected paintVerticalLine(arg0: java.awt.Graphics, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg2: int, arg3: int, arg4: int): void
-                    protected paintHorizontalLine(arg0: java.awt.Graphics, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg2: int, arg3: int, arg4: int): void
+                    protected paintVerticalLine(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: int, arg3: int, arg4: int): void
+                    protected paintHorizontalLine(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: int, arg3: int, arg4: int): void
                     protected getVerticalLegBuffer(): int
                     protected getHorizontalLegBuffer(): int
                     protected drawCentered(arg0: java.awt.Component, arg1: java.awt.Graphics, arg2: javax.swing.Icon, arg3: int, arg4: int): void
@@ -132,10 +132,10 @@ declare namespace javax {
                     protected ensureRowsAreVisible(arg0: int, arg1: int): void
                     public setPreferredMinSize(arg0: java.awt.Dimension): void
                     public getPreferredMinSize(): java.awt.Dimension
-                    public getPreferredSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
-                    public getPreferredSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: boolean): java.awt.Dimension
-                    public getMinimumSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
-                    public getMaximumSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
+                    public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
+                    public getPreferredSize(arg0: javax.swing.JComponent, arg1: boolean): java.awt.Dimension
+                    public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
+                    public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
                     protected completeEditing(): void
                     protected completeEditing(arg0: boolean, arg1: boolean, arg2: boolean): void
                     protected startEditing(arg0: javax.swing.tree.TreePath, arg1: java.awt.event.MouseEvent): boolean

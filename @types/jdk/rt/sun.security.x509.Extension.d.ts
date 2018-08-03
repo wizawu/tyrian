@@ -10,8 +10,8 @@ declare namespace sun {
                 public constructor(arg0: sun.security.util.ObjectIdentifier, arg1: boolean, arg2: byte[])
                 public constructor(arg0: sun.security.x509.Extension)
                 public static newExtension(arg0: sun.security.util.ObjectIdentifier, arg1: boolean, arg2: byte[]): sun.security.x509.Extension
-                public encode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
-                public encode(arg0: sun.security.util.DerOutputStream | sun.security.util.DerOutputStream$$Lambda): void
+                public encode(arg0: java.io.OutputStream): void
+                public encode(arg0: sun.security.util.DerOutputStream): void
                 public isCritical(): boolean
                 public getExtensionId(): sun.security.util.ObjectIdentifier
                 public getValue(): byte[]

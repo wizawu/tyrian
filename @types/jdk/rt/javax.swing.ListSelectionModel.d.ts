@@ -22,8 +22,8 @@ declare namespace javax {
             getValueIsAdjusting(): boolean
             setSelectionMode(arg0: int): void
             getSelectionMode(): int
-            addListSelectionListener(arg0: javax.swing.event.ListSelectionListener): void
-            removeListSelectionListener(arg0: javax.swing.event.ListSelectionListener): void
+            addListSelectionListener(arg0: javax.swing.event.ListSelectionListener | javax.swing.event.ListSelectionListener$$Lambda): void
+            removeListSelectionListener(arg0: javax.swing.event.ListSelectionListener | javax.swing.event.ListSelectionListener$$Lambda): void
         }
     }
 }

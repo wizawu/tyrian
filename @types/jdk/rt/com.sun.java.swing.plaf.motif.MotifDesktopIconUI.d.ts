@@ -10,7 +10,7 @@ declare namespace com {
                             protected defaultIcon: javax.swing.Icon
                             protected iconButton: com.sun.java.swing.plaf.motif.MotifDesktopIconUI$IconButton
                             protected iconLabel: com.sun.java.swing.plaf.motif.MotifDesktopIconUI$IconLabel
-                            public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
+                            public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
                             public constructor()
                             protected installDefaults(): void
                             protected installComponents(): void
@@ -24,9 +24,9 @@ declare namespace com {
                             protected createDesktopIconMouseListener(): com.sun.java.swing.plaf.motif.MotifDesktopIconUI$DesktopIconMouseListener
                             protected uninstallDefaults(): void
                             protected uninstallListeners(): void
-                            public getMinimumSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
-                            public getPreferredSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
-                            public getMaximumSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
+                            public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
+                            public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
+                            public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
                             public getDefaultIcon(): javax.swing.Icon
                             public setDefaultIcon(arg0: javax.swing.Icon): void
                             public static class: java.lang.Class<any>

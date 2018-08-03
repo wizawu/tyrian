@@ -18,9 +18,6 @@ declare namespace com {
                             public getNamespaceContext(): javax.xml.namespace.NamespaceContext
                             public static class: java.lang.Class<any>
                         }
-                        class MtomCodec$MtomStreamWriterImpl$$Lambda extends com.sun.xml.internal.ws.util.xml.XMLStreamWriterFilter implements com.sun.xml.internal.org.jvnet.staxex.XMLStreamWriterEx , com.sun.xml.internal.ws.streaming.MtomStreamWriter , com.sun.xml.internal.ws.encoding.HasEncoding {
-                            public constructor(arg0: javax.xml.stream.XMLStreamWriter, arg1: java.util.List<com.sun.xml.internal.ws.encoding.MtomCodec$ByteArrayBuffer>, arg2: java.lang.String | string, arg3: javax.xml.ws.soap.MTOMFeature)
-                        }
                     }
                 }
             }

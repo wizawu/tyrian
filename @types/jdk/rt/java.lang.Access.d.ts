@@ -1,7 +1,7 @@
 declare namespace java {
     namespace lang {
         class Access implements sun.misc.JavaLangAccess {
-            public blockedOn(arg0: java.lang.Thread | java.lang.Thread$$Lambda, arg1: sun.nio.ch.Interruptible | sun.nio.ch.Interruptible$$Lambda): void
+            public blockedOn(arg0: java.lang.Thread, arg1: sun.nio.ch.Interruptible | sun.nio.ch.Interruptible$$Lambda): void
             public getAnnotationType(arg0: java.lang.Class<any>): sun.reflect.annotation.AnnotationType
             public getConstantPool(arg0: java.lang.Class<any>): sun.reflect.ConstantPool
             public static getConstantPool(arg0: java.lang.Object): sun.reflect.ConstantPool

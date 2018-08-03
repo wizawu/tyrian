@@ -3,10 +3,10 @@ declare namespace javax {
         namespace text {
             abstract class AbstractWriter {
                 protected static NEWLINE: char
-                protected constructor(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: javax.swing.text.Document)
-                protected constructor(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: javax.swing.text.Document, arg2: int, arg3: int)
-                protected constructor(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: javax.swing.text.Element)
-                protected constructor(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: javax.swing.text.Element, arg2: int, arg3: int)
+                protected constructor(arg0: java.io.Writer, arg1: javax.swing.text.Document)
+                protected constructor(arg0: java.io.Writer, arg1: javax.swing.text.Document, arg2: int, arg3: int)
+                protected constructor(arg0: java.io.Writer, arg1: javax.swing.text.Element)
+                protected constructor(arg0: java.io.Writer, arg1: javax.swing.text.Element, arg2: int, arg3: int)
                 public getStartOffset(): int
                 public getEndOffset(): int
                 protected getElementIterator(): javax.swing.text.ElementIterator

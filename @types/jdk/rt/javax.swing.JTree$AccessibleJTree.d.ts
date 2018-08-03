@@ -1,7 +1,7 @@
 declare namespace javax {
     namespace swing {
         class JTree$AccessibleJTree extends javax.swing.JComponent$AccessibleJComponent implements javax.accessibility.AccessibleSelection , javax.swing.event.TreeSelectionListener , javax.swing.event.TreeModelListener , javax.swing.event.TreeExpansionListener {
-            public constructor(arg0: javax.swing.JTree | javax.swing.JTree$$Lambda)
+            public constructor(arg0: javax.swing.JTree)
             public valueChanged(arg0: javax.swing.event.TreeSelectionEvent): void
             public fireVisibleDataPropertyChange(): void
             public treeNodesChanged(arg0: javax.swing.event.TreeModelEvent): void

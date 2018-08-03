@@ -13,8 +13,8 @@ declare namespace sun {
                     public genSignAndSeqNumber(arg0: org.ietf.jgss.MessageProp, arg1: byte[], arg2: int, arg3: int): void
                     public verifySign(arg0: byte[], arg1: int, arg2: int): boolean
                     public getSequenceNumber(): int
-                    protected encodeHeader(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
-                    public encode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                    protected encodeHeader(arg0: java.io.OutputStream): void
+                    public encode(arg0: java.io.OutputStream): void
                     protected getTokenHeader(): byte[]
                     public static class: java.lang.Class<any>
                 }

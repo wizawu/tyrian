@@ -7,7 +7,7 @@ declare namespace sun {
                 public constructor(arg0: byte[])
                 public constructor(arg0: sun.security.util.DerValue)
                 public hasExtensions(): boolean
-                public encode(arg0: sun.security.util.DerOutputStream | sun.security.util.DerOutputStream$$Lambda): void
+                public encode(arg0: sun.security.util.DerOutputStream): void
                 public getEncoded(): byte[]
                 public getCertificateIssuer(): javax.security.auth.x500.X500Principal
                 public getSerialNumber(): java.math.BigInteger

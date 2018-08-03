@@ -14,11 +14,11 @@ declare namespace java {
                 distinct(): java.util.stream.Stream<T>
                 sorted(): java.util.stream.Stream<T>
                 sorted(arg0: java.util.Comparator<T>): java.util.stream.Stream<T>
-                peek(arg0: java.util.function$.Consumer$$TypeScript<T>): java.util.stream.Stream<T>
+                peek(arg0: java.util.function$.Consumer$$Lambda<T>): java.util.stream.Stream<T>
                 limit(arg0: long): java.util.stream.Stream<T>
                 skip(arg0: long): java.util.stream.Stream<T>
-                forEach(arg0: java.util.function$.Consumer$$TypeScript<T>): void
-                forEachOrdered(arg0: java.util.function$.Consumer$$TypeScript<T>): void
+                forEach(arg0: java.util.function$.Consumer$$Lambda<T>): void
+                forEachOrdered(arg0: java.util.function$.Consumer$$Lambda<T>): void
                 toArray(): java.lang.Object[]
                 toArray<A>(arg0: java.util.function$.IntFunction<A[]> | java.util.function$.IntFunction$$Lambda<A[]>): A[]
                 reduce(arg0: T, arg1: java.util.function$.BinaryOperator<T>): T
@@ -38,7 +38,7 @@ declare namespace java {
                 empty<T>(): java.util.stream.Stream<T>
                 of<T>(arg0: T): java.util.stream.Stream<T>
                 of<T>(...arg0: T[]): java.util.stream.Stream<T>
-                iterate<T>(arg0: T, arg1: java.util.function$.UnaryOperator<T>): java.util.stream.Stream<T>
+                iterate<T>(arg0: T, arg1: java.util.function$.UnaryOperator<T> | java.util.function$.UnaryOperator$$Lambda<T>): java.util.stream.Stream<T>
                 generate<T>(arg0: java.util.function$.Supplier<T> | java.util.function$.Supplier$$Lambda<T>): java.util.stream.Stream<T>
                 concat<T>(arg0: java.util.stream.Stream<T>, arg1: java.util.stream.Stream<T>): java.util.stream.Stream<T>
             }

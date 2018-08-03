@@ -8,9 +8,9 @@ declare namespace javax {
                 JAXB_NO_NAMESPACE_SCHEMA_LOCATION: string
                 JAXB_FRAGMENT: string
                 marshal(arg0: java.lang.Object, arg1: javax.xml.transform.Result): void
-                marshal(arg0: java.lang.Object, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                marshal(arg0: java.lang.Object, arg1: java.io.OutputStream): void
                 marshal(arg0: java.lang.Object, arg1: java.io.File): void
-                marshal(arg0: java.lang.Object, arg1: java.io.Writer | java.io.Writer$$Lambda): void
+                marshal(arg0: java.lang.Object, arg1: java.io.Writer): void
                 marshal(arg0: java.lang.Object, arg1: org.xml.sax.ContentHandler): void
                 marshal(arg0: java.lang.Object, arg1: org.w3c.dom.Node): void
                 marshal(arg0: java.lang.Object, arg1: javax.xml.stream.XMLStreamWriter): void

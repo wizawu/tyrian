@@ -55,7 +55,7 @@ declare namespace org {
                 lookupNamespaceURI(arg0: java.lang.String | string): string
                 isEqualNode(arg0: org.w3c.dom.Node): boolean
                 getFeature(arg0: java.lang.String | string, arg1: java.lang.String | string): java.lang.Object
-                setUserData(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: org.w3c.dom.UserDataHandler): java.lang.Object
+                setUserData(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: org.w3c.dom.UserDataHandler | org.w3c.dom.UserDataHandler$$Lambda): java.lang.Object
                 getUserData(arg0: java.lang.String | string): java.lang.Object
             }
         }

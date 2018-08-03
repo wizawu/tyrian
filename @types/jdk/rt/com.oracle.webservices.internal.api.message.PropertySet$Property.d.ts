@@ -7,6 +7,9 @@ declare namespace com {
                         interface PropertySet$Property extends java.lang.annotation.Annotation {
                             value(): java.lang.String[]
                         }
+                        interface PropertySet$Property$$Lambda extends java.lang.annotation.Annotation {
+                            (): java.lang.String[]
+                        }
                     }
                 }
             }

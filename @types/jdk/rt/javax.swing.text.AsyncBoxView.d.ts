@@ -20,8 +20,8 @@ declare namespace javax {
                 protected getChildState(arg0: int): javax.swing.text.AsyncBoxView$ChildState
                 protected getLayoutQueue(): javax.swing.text.LayoutQueue
                 protected createChildState(arg0: javax.swing.text.View): javax.swing.text.AsyncBoxView$ChildState
-                protected majorRequirementChange(arg0: javax.swing.text.AsyncBoxView$ChildState | javax.swing.text.AsyncBoxView$ChildState$$Lambda, arg1: float): void
-                protected minorRequirementChange(arg0: javax.swing.text.AsyncBoxView$ChildState | javax.swing.text.AsyncBoxView$ChildState$$Lambda): void
+                protected majorRequirementChange(arg0: javax.swing.text.AsyncBoxView$ChildState, arg1: float): void
+                protected minorRequirementChange(arg0: javax.swing.text.AsyncBoxView$ChildState): void
                 protected flushRequirementChanges(): void
                 public replace(arg0: int, arg1: int, arg2: javax.swing.text.View[]): void
                 protected loadChildren(arg0: javax.swing.text.ViewFactory | javax.swing.text.ViewFactory$$Lambda): void

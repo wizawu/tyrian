@@ -3,7 +3,7 @@ declare namespace sun {
         namespace pipe {
             class SpanClipRenderer implements sun.java2d.pipe.CompositePipe {
                 public constructor(arg0: sun.java2d.pipe.CompositePipe)
-                public startSequence(arg0: sun.java2d.SunGraphics2D | sun.java2d.SunGraphics2D$$Lambda, arg1: java.awt.Shape, arg2: java.awt.Rectangle, arg3: int[]): java.lang.Object
+                public startSequence(arg0: sun.java2d.SunGraphics2D, arg1: java.awt.Shape, arg2: java.awt.Rectangle, arg3: int[]): java.lang.Object
                 public needTile(arg0: java.lang.Object, arg1: int, arg2: int, arg3: int, arg4: int): boolean
                 public renderPathTile(arg0: java.lang.Object, arg1: byte[], arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: sun.java2d.pipe.ShapeSpanIterator): void
                 public renderPathTile(arg0: java.lang.Object, arg1: byte[], arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int): void

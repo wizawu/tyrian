@@ -9,15 +9,12 @@ declare namespace com {
                 public constructor(arg0: com.ibm.cuda.CudaDevice)
                 public constructor(arg0: com.ibm.cuda.CudaDevice, arg1: int)
                 public close(): void
-                public elapsedTimeSince(arg0: com.ibm.cuda.CudaEvent | com.ibm.cuda.CudaEvent$$Lambda): float
+                public elapsedTimeSince(arg0: com.ibm.cuda.CudaEvent): float
                 public query(): int
                 public record(arg0: com.ibm.cuda.CudaDevice): void
-                public record(arg0: com.ibm.cuda.CudaStream | com.ibm.cuda.CudaStream$$Lambda): void
+                public record(arg0: com.ibm.cuda.CudaStream): void
                 public synchronize(): void
                 public static class: java.lang.Class<any>
-            }
-            class CudaEvent$$Lambda implements java.lang.AutoCloseable {
-                public static FLAG_DEFAULT: int
             }
         }
     }

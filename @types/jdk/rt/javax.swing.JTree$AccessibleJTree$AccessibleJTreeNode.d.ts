@@ -1,7 +1,7 @@
 declare namespace javax {
     namespace swing {
         class JTree$AccessibleJTree$AccessibleJTreeNode extends javax.accessibility.AccessibleContext implements javax.accessibility.Accessible , javax.accessibility.AccessibleComponent , javax.accessibility.AccessibleSelection , javax.accessibility.AccessibleAction {
-            public constructor(arg0: javax.swing.JTree$AccessibleJTree, arg1: javax.swing.JTree | javax.swing.JTree$$Lambda, arg2: javax.swing.tree.TreePath, arg3: javax.accessibility.Accessible | javax.accessibility.Accessible$$Lambda)
+            public constructor(arg0: javax.swing.JTree$AccessibleJTree, arg1: javax.swing.JTree, arg2: javax.swing.tree.TreePath, arg3: javax.accessibility.Accessible | javax.accessibility.Accessible$$Lambda)
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public getAccessibleName(): string
             public setAccessibleName(arg0: java.lang.String | string): void
@@ -14,8 +14,8 @@ declare namespace javax {
             public getAccessibleChildrenCount(): int
             public getAccessibleChild(arg0: int): javax.accessibility.Accessible
             public getLocale(): java.util.Locale
-            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
             public getAccessibleAction(): javax.accessibility.AccessibleAction
             public getAccessibleComponent(): javax.accessibility.AccessibleComponent
             public getAccessibleSelection(): javax.accessibility.AccessibleSelection

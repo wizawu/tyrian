@@ -11,9 +11,6 @@ declare namespace com {
                                 public check(): void
                                 public static class: java.lang.Class<any>
                             }
-                            class IllegalAnnotationsException$Builder$$Lambda implements com.sun.xml.internal.bind.v2.model.core.ErrorHandler {
-                                public constructor()
-                            }
                         }
                     }
                 }

@@ -16,9 +16,6 @@ declare namespace jdk {
                     public getLabels(): java.util.List<jdk.nashorn.internal.codegen.Label>
                     public static class: java.lang.Class<any>
                 }
-                class CaseNode$$Lambda extends jdk.nashorn.internal.ir.Node implements jdk.nashorn.internal.ir.JoinPredecessor , jdk.nashorn.internal.ir.Labels , jdk.nashorn.internal.ir.Terminal {
-                    public constructor(arg0: long, arg1: int, arg2: jdk.nashorn.internal.ir.Expression, arg3: jdk.nashorn.internal.ir.Block)
-                }
             }
         }
     }

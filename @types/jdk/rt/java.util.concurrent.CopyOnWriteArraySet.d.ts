@@ -19,7 +19,7 @@ declare namespace java {
                 public iterator<T>(): java.util.Iterator<E>
                 public equals<T>(arg0: java.lang.Object): boolean
                 public removeIf<T>(arg0: java.util.function$.Predicate<E>): boolean
-                public forEach<T>(arg0: java.util.function$.Consumer$$TypeScript<E>): void
+                public forEach<T>(arg0: java.util.function$.Consumer$$Lambda<E>): void
                 public spliterator<T>(): java.util.Spliterator<E>
                 public static class: java.lang.Class<any>
             }

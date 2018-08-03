@@ -5,6 +5,9 @@ declare namespace javax {
                 interface UnionType extends javax.lang.model.type.TypeMirror {
                     getAlternatives(): java.util.List<javax.lang.model.type.TypeMirror>
                 }
+                interface UnionType$$Lambda extends javax.lang.model.type.TypeMirror {
+                    (): java.util.List<javax.lang.model.type.TypeMirror>
+                }
             }
         }
     }

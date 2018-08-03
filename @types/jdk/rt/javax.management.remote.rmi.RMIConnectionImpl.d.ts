@@ -35,9 +35,6 @@ declare namespace javax {
                     public toString(): string
                     public static class: java.lang.Class<any>
                 }
-                class RMIConnectionImpl$$Lambda implements javax.management.remote.rmi.RMIConnection , java.rmi.server.Unreferenced {
-                    public constructor(arg0: javax.management.remote.rmi.RMIServerImpl, arg1: java.lang.String | string, arg2: java.lang.ClassLoader, arg3: javax.security.auth.Subject, arg4: java.util.Map<java.lang.String, any>)
-                }
             }
         }
     }

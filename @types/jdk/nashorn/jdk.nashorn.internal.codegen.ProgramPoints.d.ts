@@ -3,8 +3,8 @@ declare namespace jdk {
         namespace internal {
             namespace codegen {
                 class ProgramPoints extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
-                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Node
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
+                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Node
                     public enterVarNode(arg0: jdk.nashorn.internal.ir.VarNode): boolean
                     public enterIdentNode(arg0: jdk.nashorn.internal.ir.IdentNode): boolean
                     public leaveIdentNode(arg0: jdk.nashorn.internal.ir.IdentNode): jdk.nashorn.internal.ir.Node

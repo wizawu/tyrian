@@ -12,7 +12,7 @@ declare namespace com {
                                     protected static DOCHANDLE_MASK: int
                                     protected m_currentNode: int
                                     protected m_documentBaseURI: string
-                                    public constructor(arg0: com.sun.org.apache.xml.internal.dtm.DTMManager, arg1: int, arg2: com.sun.org.apache.xml.internal.dtm.DTMWSFilter, arg3: com.sun.org.apache.xml.internal.utils.XMLStringFactory)
+                                    public constructor(arg0: com.sun.org.apache.xml.internal.dtm.DTMManager, arg1: int, arg2: com.sun.org.apache.xml.internal.dtm.DTMWSFilter | com.sun.org.apache.xml.internal.dtm.DTMWSFilter$$Lambda, arg3: com.sun.org.apache.xml.internal.utils.XMLStringFactory)
                                     public setIncrementalSAXSource(arg0: com.sun.org.apache.xml.internal.dtm.ref.IncrementalSAXSource): void
                                     public setFeature(arg0: java.lang.String | string, arg1: boolean): void
                                     public setLocalNameTable(arg0: com.sun.org.apache.xml.internal.dtm.ref.DTMStringPool): void

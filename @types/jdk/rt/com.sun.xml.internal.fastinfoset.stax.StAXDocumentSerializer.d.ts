@@ -20,8 +20,8 @@ declare namespace com {
                             protected _namespacesArray: java.lang.String[]
                             protected _namespacesArrayIndex: int
                             public constructor()
-                            public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda)
-                            public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: com.sun.xml.internal.fastinfoset.stax.StAXManager)
+                            public constructor(arg0: java.io.OutputStream)
+                            public constructor(arg0: java.io.OutputStream, arg1: com.sun.xml.internal.fastinfoset.stax.StAXManager)
                             public reset(): void
                             public writeStartDocument(): void
                             public writeStartDocument(arg0: java.lang.String | string): void

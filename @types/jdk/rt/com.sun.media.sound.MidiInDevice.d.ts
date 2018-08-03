@@ -11,9 +11,6 @@ declare namespace com {
                     public run(): void
                     public static class: java.lang.Class<any>
                 }
-                class MidiInDevice$$Lambda extends com.sun.media.sound.AbstractMidiDevice implements java.lang.Runnable {
-                    protected (): void
-                }
             }
         }
     }

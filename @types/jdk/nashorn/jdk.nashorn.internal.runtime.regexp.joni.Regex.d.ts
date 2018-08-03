@@ -12,9 +12,9 @@ declare namespace jdk {
                             public constructor(arg0: char[], arg1: int, arg2: int)
                             public constructor(arg0: char[], arg1: int, arg2: int, arg3: int)
                             public constructor(arg0: char[], arg1: int, arg2: int, arg3: int, arg4: jdk.nashorn.internal.runtime.regexp.joni.Syntax)
-                            public constructor(arg0: char[], arg1: int, arg2: int, arg3: int, arg4: jdk.nashorn.internal.runtime.regexp.joni.WarnCallback)
-                            public constructor(arg0: char[], arg1: int, arg2: int, arg3: int, arg4: jdk.nashorn.internal.runtime.regexp.joni.Syntax, arg5: jdk.nashorn.internal.runtime.regexp.joni.WarnCallback)
-                            public constructor(arg0: char[], arg1: int, arg2: int, arg3: int, arg4: int, arg5: jdk.nashorn.internal.runtime.regexp.joni.Syntax, arg6: jdk.nashorn.internal.runtime.regexp.joni.WarnCallback)
+                            public constructor(arg0: char[], arg1: int, arg2: int, arg3: int, arg4: jdk.nashorn.internal.runtime.regexp.joni.WarnCallback | jdk.nashorn.internal.runtime.regexp.joni.WarnCallback$$Lambda)
+                            public constructor(arg0: char[], arg1: int, arg2: int, arg3: int, arg4: jdk.nashorn.internal.runtime.regexp.joni.Syntax, arg5: jdk.nashorn.internal.runtime.regexp.joni.WarnCallback | jdk.nashorn.internal.runtime.regexp.joni.WarnCallback$$Lambda)
+                            public constructor(arg0: char[], arg1: int, arg2: int, arg3: int, arg4: int, arg5: jdk.nashorn.internal.runtime.regexp.joni.Syntax, arg6: jdk.nashorn.internal.runtime.regexp.joni.WarnCallback | jdk.nashorn.internal.runtime.regexp.joni.WarnCallback$$Lambda)
                             public compile(): jdk.nashorn.internal.runtime.regexp.joni.MatcherFactory
                             public matcher(arg0: char[]): jdk.nashorn.internal.runtime.regexp.joni.Matcher
                             public matcher(arg0: char[], arg1: int, arg2: int): jdk.nashorn.internal.runtime.regexp.joni.Matcher

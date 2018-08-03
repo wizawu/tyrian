@@ -21,7 +21,7 @@ declare namespace com {
                             public getState(): short
                             public getAdapterTemplate(): org.omg.PortableInterceptor.ObjectReferenceTemplate
                             public getCurrentFactory(): org.omg.PortableInterceptor.ObjectReferenceFactory
-                            public setCurrentFactory(arg0: org.omg.PortableInterceptor.ObjectReferenceFactory): void
+                            public setCurrentFactory(arg0: org.omg.PortableInterceptor.ObjectReferenceFactory | org.omg.PortableInterceptor.ObjectReferenceFactory$$Lambda): void
                             public getLocalServant(arg0: byte[]): org.omg.CORBA.Object
                             public getInvocationServant(arg0: com.sun.corba.se.spi.oa.OAInvocationInfo): void
                             public returnServant(): void

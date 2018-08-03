@@ -4,8 +4,5 @@ declare namespace java {
             public getContentTypeFor(arg0: java.lang.String | string): string
             public static class: java.lang.Class<any>
         }
-        class URLConnection$1$$Lambda implements java.net.FileNameMap {
-            public (arg0: java.lang.String | string): string
-        }
     }
 }

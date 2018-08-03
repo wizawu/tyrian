@@ -9,7 +9,7 @@ declare namespace sun {
                 public static writeBigEndian(arg0: int, arg1: byte[], arg2: int): void
                 public static readLittleEndian(arg0: byte[], arg1: int, arg2: int): int
                 public static readBigEndian(arg0: byte[], arg1: int, arg2: int): int
-                public static writeInt(arg0: int, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public static writeInt(arg0: int, arg1: java.io.OutputStream): void
                 public static writeInt(arg0: int, arg1: byte[], arg2: int): int
                 public static readInt(arg0: java.io.InputStream): int
                 public static readInt(arg0: byte[], arg1: int): int

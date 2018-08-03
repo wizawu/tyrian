@@ -4,8 +4,5 @@ declare namespace sun {
             public run(): void
             public static class: java.lang.Class<any>
         }
-        class AppletViewer$3$$Lambda implements java.lang.Runnable {
-            public (): void
-        }
     }
 }

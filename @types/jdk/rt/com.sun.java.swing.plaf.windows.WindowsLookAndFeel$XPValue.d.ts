@@ -12,9 +12,6 @@ declare namespace com {
                             protected getClassicValue(arg0: javax.swing.UIDefaults): java.lang.Object
                             public static class: java.lang.Class<any>
                         }
-                        class WindowsLookAndFeel$XPValue$$Lambda implements javax.swing.UIDefaults$ActiveValue {
-                            protected classicValue: java.lang.Object
-                        }
                     }
                 }
             }

@@ -5,6 +5,9 @@ declare namespace javax {
                 interface Parameterizable extends javax.lang.model.element.Element {
                     getTypeParameters(): java.util.List<javax.lang.model.element.TypeParameterElement>
                 }
+                interface Parameterizable$$Lambda extends javax.lang.model.element.Element {
+                    (): java.util.List<javax.lang.model.element.TypeParameterElement>
+                }
             }
         }
     }

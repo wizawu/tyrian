@@ -3,7 +3,7 @@ declare namespace java {
         namespace concurrent {
             class ScheduledThreadPoolExecutor$ScheduledFutureTask<V> extends java.util.concurrent.FutureTask<V> implements java.util.concurrent.RunnableScheduledFuture<V> {
                 public getDelay(arg0: java.util.concurrent.TimeUnit): long
-                public compareTo(arg0: java.util.concurrent.Delayed): int
+                public compareTo(arg0: java.util.concurrent.Delayed | java.util.concurrent.Delayed$$Lambda): int
                 public isPeriodic(): boolean
                 public cancel(arg0: boolean): boolean
                 public run(): void

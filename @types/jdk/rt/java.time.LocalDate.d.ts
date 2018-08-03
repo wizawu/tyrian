@@ -6,7 +6,7 @@ declare namespace java {
             public static now(): java.time.LocalDate
             public static now(arg0: java.time.ZoneId): java.time.LocalDate
             public static now(arg0: java.time.Clock): java.time.LocalDate
-            public static of(arg0: int, arg1: java.time.Month | java.time.Month$$Lambda, arg2: int): java.time.LocalDate
+            public static of(arg0: int, arg1: java.time.Month, arg2: int): java.time.LocalDate
             public static of(arg0: int, arg1: int, arg2: int): java.time.LocalDate
             public static ofYearDay(arg0: int, arg1: int): java.time.LocalDate
             public static ofEpochDay(arg0: long): java.time.LocalDate

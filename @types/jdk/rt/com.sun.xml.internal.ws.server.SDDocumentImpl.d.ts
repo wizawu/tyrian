@@ -16,8 +16,8 @@ declare namespace com {
                             public read(): javax.xml.stream.XMLStreamReader
                             public getSystemId(): java.net.URL
                             public getImports(): java.util.Set<java.lang.String>
-                            public writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
-                            public writeTo(arg0: com.sun.xml.internal.ws.api.server.PortAddressResolver, arg1: com.sun.xml.internal.ws.api.server.DocumentAddressResolver | com.sun.xml.internal.ws.api.server.DocumentAddressResolver$$Lambda, arg2: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                            public writeTo(arg0: java.io.OutputStream): void
+                            public writeTo(arg0: com.sun.xml.internal.ws.api.server.PortAddressResolver, arg1: com.sun.xml.internal.ws.api.server.DocumentAddressResolver | com.sun.xml.internal.ws.api.server.DocumentAddressResolver$$Lambda, arg2: java.io.OutputStream): void
                             public writeTo(arg0: com.sun.xml.internal.ws.api.server.PortAddressResolver, arg1: com.sun.xml.internal.ws.api.server.DocumentAddressResolver | com.sun.xml.internal.ws.api.server.DocumentAddressResolver$$Lambda, arg2: javax.xml.stream.XMLStreamWriter): void
                             public static class: java.lang.Class<any>
                         }

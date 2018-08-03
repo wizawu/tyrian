@@ -21,7 +21,7 @@ declare namespace com {
                                 public static makeJavaSerializationComponentFactory(): com.sun.corba.se.spi.ior.IdentifiableFactory
                                 public static makeJavaSerializationComponent(): com.sun.corba.se.impl.ior.iiop.JavaSerializationComponent
                                 public static makeIIOPProfileFactory(): com.sun.corba.se.spi.ior.IdentifiableFactory
-                                public static makeIIOPProfile(arg0: com.sun.corba.se.spi.orb.ORB, arg1: com.sun.corba.se.spi.ior.ObjectKeyTemplate, arg2: com.sun.corba.se.spi.ior.ObjectId, arg3: com.sun.corba.se.spi.ior.iiop.IIOPProfileTemplate): com.sun.corba.se.spi.ior.iiop.IIOPProfile
+                                public static makeIIOPProfile(arg0: com.sun.corba.se.spi.orb.ORB, arg1: com.sun.corba.se.spi.ior.ObjectKeyTemplate, arg2: com.sun.corba.se.spi.ior.ObjectId | com.sun.corba.se.spi.ior.ObjectId$$Lambda, arg3: com.sun.corba.se.spi.ior.iiop.IIOPProfileTemplate): com.sun.corba.se.spi.ior.iiop.IIOPProfile
                                 public static makeIIOPProfile(arg0: com.sun.corba.se.spi.orb.ORB, arg1: org.omg.IOP.TaggedProfile): com.sun.corba.se.spi.ior.iiop.IIOPProfile
                                 public static makeIIOPProfileTemplateFactory(): com.sun.corba.se.spi.ior.IdentifiableFactory
                                 public static makeIIOPProfileTemplate(arg0: com.sun.corba.se.spi.orb.ORB, arg1: com.sun.corba.se.spi.ior.iiop.GIOPVersion, arg2: com.sun.corba.se.spi.ior.iiop.IIOPAddress): com.sun.corba.se.spi.ior.iiop.IIOPProfileTemplate

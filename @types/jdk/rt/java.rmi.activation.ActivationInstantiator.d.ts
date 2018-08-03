@@ -4,6 +4,9 @@ declare namespace java {
             interface ActivationInstantiator extends java.rmi.Remote {
                 newInstance(arg0: java.rmi.activation.ActivationID, arg1: java.rmi.activation.ActivationDesc): java.rmi.MarshalledObject<java.rmi.Remote>
             }
+            interface ActivationInstantiator$$Lambda extends java.rmi.Remote {
+                (arg0: java.rmi.activation.ActivationID, arg1: java.rmi.activation.ActivationDesc): java.rmi.MarshalledObject<java.rmi.Remote>
+            }
         }
     }
 }

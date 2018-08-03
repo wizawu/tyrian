@@ -7,9 +7,6 @@ declare namespace javax {
                 public combine(arg0: java.security.ProtectionDomain[], arg1: java.security.ProtectionDomain[]): java.security.ProtectionDomain[]
                 public static class: java.lang.Class<any>
             }
-            class SubjectDomainCombiner$$Lambda implements java.security.DomainCombiner {
-                public constructor(arg0: javax.security.auth.Subject)
-            }
         }
     }
 }

@@ -4,8 +4,5 @@ declare namespace sun {
             public run(): java.lang.Object
             public static class: java.lang.Class<any>
         }
-        class SunFontManager$8$1$$Lambda implements java.security.PrivilegedAction {
-            public (): java.lang.Object
-        }
     }
 }

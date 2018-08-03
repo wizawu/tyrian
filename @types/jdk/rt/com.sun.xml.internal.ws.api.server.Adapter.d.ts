@@ -17,9 +17,6 @@ declare namespace com {
                                 protected createToolkit<S>(): TK
                                 public static class: java.lang.Class<any>
                             }
-                            abstract class Adapter$$Lambda<TK extends com.sun.xml.internal.ws.api.server.Adapter$Toolkit> implements com.sun.xml.internal.ws.api.config.management.Reconfigurable , com.sun.xml.internal.ws.api.Component {
-                                protected endpoint: com.sun.xml.internal.ws.api.server.WSEndpoint<any>
-                            }
                         }
                     }
                 }

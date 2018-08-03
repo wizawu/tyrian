@@ -14,7 +14,7 @@ declare namespace sun {
                 public addFiles(arg0: java.io.File, arg1: java.lang.String[]): void
                 public addFile(arg0: java.io.File): void
                 public doHashes(arg0: sun.net.www.MessageHeader): void
-                public stream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public stream(arg0: java.io.OutputStream): void
                 public static isManifestName(arg0: java.lang.String | string): boolean
                 public static class: java.lang.Class<any>
             }

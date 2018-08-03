@@ -16,7 +16,7 @@ declare namespace com {
                                 public getFaultMessage(): com.sun.xml.internal.ws.api.message.Message
                                 public setFaultMessage(arg0: com.sun.xml.internal.ws.api.message.Message): void
                                 public getResponsePacket(): com.sun.xml.internal.ws.api.message.Packet
-                                public setResponsePacket(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): void
+                                public setResponsePacket(arg0: com.sun.xml.internal.ws.api.message.Packet): void
                                 public isFaultCreated(): boolean
                                 public setFaultCreated(arg0: boolean): void
                                 protected getPropertyMap(): com.oracle.webservices.internal.api.message.BasePropertySet$PropertyMap

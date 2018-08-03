@@ -15,7 +15,7 @@ declare namespace com {
                                 public dump(arg0: java.io.File): void
                                 public dump(arg0: java.lang.String | string): void
                                 public getBytes(): byte[]
-                                public dump(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                                public dump(arg0: java.io.OutputStream): void
                                 public dump(arg0: java.io.DataOutputStream): void
                                 public getAttributes(): com.sun.org.apache.bcel.internal.classfile.Attribute[]
                                 public getClassName(): string
@@ -54,16 +54,13 @@ declare namespace com {
                                 public getSource(): byte
                                 public getRepository(): com.sun.org.apache.bcel.internal.util.Repository
                                 public setRepository(arg0: com.sun.org.apache.bcel.internal.util.Repository): void
-                                public instanceOf(arg0: com.sun.org.apache.bcel.internal.classfile.JavaClass | com.sun.org.apache.bcel.internal.classfile.JavaClass$$Lambda): boolean
-                                public implementationOf(arg0: com.sun.org.apache.bcel.internal.classfile.JavaClass | com.sun.org.apache.bcel.internal.classfile.JavaClass$$Lambda): boolean
+                                public instanceOf(arg0: com.sun.org.apache.bcel.internal.classfile.JavaClass): boolean
+                                public implementationOf(arg0: com.sun.org.apache.bcel.internal.classfile.JavaClass): boolean
                                 public getSuperClass(): com.sun.org.apache.bcel.internal.classfile.JavaClass
                                 public getSuperClasses(): com.sun.org.apache.bcel.internal.classfile.JavaClass[]
                                 public getInterfaces(): com.sun.org.apache.bcel.internal.classfile.JavaClass[]
                                 public getAllInterfaces(): com.sun.org.apache.bcel.internal.classfile.JavaClass[]
                                 public static class: java.lang.Class<any>
-                            }
-                            class JavaClass$$Lambda extends com.sun.org.apache.bcel.internal.classfile.AccessFlags implements java.lang.Cloneable , com.sun.org.apache.bcel.internal.classfile.Node {
-                                public static HEAP: byte
                             }
                         }
                     }

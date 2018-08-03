@@ -34,7 +34,7 @@ declare namespace com {
                                     public loadGrammar(arg0: com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource): com.sun.org.apache.xerces.internal.xni.grammars.Grammar
                                     public loadGrammarWithContext(arg0: com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.String | string, arg5: java.lang.String | string): void
                                     protected reset(): void
-                                    protected createDTDScanner(arg0: com.sun.org.apache.xerces.internal.util.SymbolTable, arg1: com.sun.org.apache.xerces.internal.impl.XMLErrorReporter, arg2: com.sun.org.apache.xerces.internal.impl.XMLEntityManager | com.sun.org.apache.xerces.internal.impl.XMLEntityManager$$Lambda): com.sun.org.apache.xerces.internal.impl.XMLDTDScannerImpl
+                                    protected createDTDScanner(arg0: com.sun.org.apache.xerces.internal.util.SymbolTable, arg1: com.sun.org.apache.xerces.internal.impl.XMLErrorReporter, arg2: com.sun.org.apache.xerces.internal.impl.XMLEntityManager): com.sun.org.apache.xerces.internal.impl.XMLDTDScannerImpl
                                     protected getScannerVersion(): short
                                     public static class: java.lang.Class<any>
                                 }

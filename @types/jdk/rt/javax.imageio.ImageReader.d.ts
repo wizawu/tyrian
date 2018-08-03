@@ -60,8 +60,8 @@ declare namespace javax {
             public abort(): void
             protected abortRequested(): boolean
             protected clearAbortRequest(): void
-            public addIIOReadWarningListener(arg0: javax.imageio.event.IIOReadWarningListener): void
-            public removeIIOReadWarningListener(arg0: javax.imageio.event.IIOReadWarningListener): void
+            public addIIOReadWarningListener(arg0: javax.imageio.event.IIOReadWarningListener | javax.imageio.event.IIOReadWarningListener$$Lambda): void
+            public removeIIOReadWarningListener(arg0: javax.imageio.event.IIOReadWarningListener | javax.imageio.event.IIOReadWarningListener$$Lambda): void
             public removeAllIIOReadWarningListeners(): void
             public addIIOReadProgressListener(arg0: javax.imageio.event.IIOReadProgressListener): void
             public removeIIOReadProgressListener(arg0: javax.imageio.event.IIOReadProgressListener): void

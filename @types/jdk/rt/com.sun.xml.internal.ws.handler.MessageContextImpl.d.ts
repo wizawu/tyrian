@@ -5,7 +5,7 @@ declare namespace com {
                 namespace ws {
                     namespace handler {
                         class MessageContextImpl implements javax.xml.ws.handler.MessageContext {
-                            public constructor(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda)
+                            public constructor(arg0: com.sun.xml.internal.ws.api.message.Packet)
                             protected updatePacket(): void
                             public setScope(arg0: java.lang.String | string, arg1: javax.xml.ws.handler.MessageContext$Scope): void
                             public getScope(arg0: java.lang.String | string): javax.xml.ws.handler.MessageContext$Scope

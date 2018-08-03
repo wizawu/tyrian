@@ -10,7 +10,7 @@ declare namespace com {
                             public constructor(arg0: com.sun.corba.se.spi.orb.ORB, arg1: int, arg2: int, arg3: int)
                             public constructor(arg0: com.sun.corba.se.spi.orb.ORB, arg1: int, arg2: int, arg3: org.omg.CORBA_2_3.portable.InputStream)
                             protected writeTemplate(arg0: org.omg.CORBA_2_3.portable.OutputStream): void
-                            public write(arg0: com.sun.corba.se.spi.ior.ObjectId, arg1: org.omg.CORBA_2_3.portable.OutputStream): void
+                            public write(arg0: com.sun.corba.se.spi.ior.ObjectId | com.sun.corba.se.spi.ior.ObjectId$$Lambda, arg1: org.omg.CORBA_2_3.portable.OutputStream): void
                             public static class: java.lang.Class<any>
                         }
                     }

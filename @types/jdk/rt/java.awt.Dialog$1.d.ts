@@ -4,8 +4,5 @@ declare namespace java {
             public evaluate(): boolean
             public static class: java.lang.Class<any>
         }
-        class Dialog$1$$Lambda implements java.awt.Conditional {
-            public (): boolean
-        }
     }
 }

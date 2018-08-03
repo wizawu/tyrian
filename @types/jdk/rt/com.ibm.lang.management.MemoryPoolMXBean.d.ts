@@ -5,6 +5,9 @@ declare namespace com {
                 interface MemoryPoolMXBean extends java.lang.management.MemoryPoolMXBean {
                     getPreCollectionUsage(): java.lang.management.MemoryUsage
                 }
+                interface MemoryPoolMXBean$$Lambda extends java.lang.management.MemoryPoolMXBean {
+                    (): java.lang.management.MemoryUsage
+                }
             }
         }
     }

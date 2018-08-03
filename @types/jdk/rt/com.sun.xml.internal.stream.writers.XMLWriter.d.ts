@@ -5,8 +5,8 @@ declare namespace com {
                 namespace stream {
                     namespace writers {
                         class XMLWriter extends java.io.Writer {
-                            public constructor(arg0: java.io.Writer | java.io.Writer$$Lambda)
-                            public constructor(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: int)
+                            public constructor(arg0: java.io.Writer)
+                            public constructor(arg0: java.io.Writer, arg1: int)
                             public write(arg0: int): void
                             public write(arg0: char[]): void
                             public write(arg0: char[], arg1: int, arg2: int): void
@@ -15,8 +15,8 @@ declare namespace com {
                             public close(): void
                             public flush(): void
                             public reset(): void
-                            public setWriter(arg0: java.io.Writer | java.io.Writer$$Lambda): void
-                            public setWriter(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: int): void
+                            public setWriter(arg0: java.io.Writer): void
+                            public setWriter(arg0: java.io.Writer, arg1: int): void
                             protected getWriter(): java.io.Writer
                             public static class: java.lang.Class<any>
                         }

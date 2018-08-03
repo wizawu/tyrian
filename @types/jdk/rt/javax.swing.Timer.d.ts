@@ -2,9 +2,9 @@ declare namespace javax {
     namespace swing {
         class Timer implements java.io.Serializable {
             protected listenerList: javax.swing.event.EventListenerList
-            public constructor(arg0: int, arg1: java.awt.event.ActionListener)
-            public addActionListener(arg0: java.awt.event.ActionListener): void
-            public removeActionListener(arg0: java.awt.event.ActionListener): void
+            public constructor(arg0: int, arg1: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda)
+            public addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
+            public removeActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
             public getActionListeners(): java.awt.event.ActionListener[]
             protected fireActionPerformed(arg0: java.awt.event.ActionEvent): void
             public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]

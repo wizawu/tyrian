@@ -13,9 +13,6 @@ declare namespace java {
                     public run(): void
                     public static class: java.lang.Class<any>
                 }
-                class RenderableImageProducer$$Lambda implements java.awt.image.ImageProducer , java.lang.Runnable {
-                    public constructor(arg0: java.awt.image.renderable.RenderableImage, arg1: java.awt.image.renderable.RenderContext)
-                }
             }
         }
     }

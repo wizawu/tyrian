@@ -6,6 +6,9 @@ declare namespace org {
                     XPATH_NAMESPACE_NODE: short
                     getOwnerElement(): org.w3c.dom.Element
                 }
+                interface XPathNamespace$$Lambda extends org.w3c.dom.Node {
+                    XPATH_NAMESPACE_NODE: short
+                }
             }
         }
     }

@@ -27,12 +27,12 @@ declare namespace javax {
                     protected keyboardEndListener: java.awt.event.ActionListener
                     protected keyboardResizeToggleListener: java.awt.event.ActionListener
                     public constructor()
-                    public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
-                    public installUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
+                    public installUI(arg0: javax.swing.JComponent): void
                     protected installDefaults(): void
                     protected installListeners(): void
                     protected installKeyboardActions(): void
-                    public uninstallUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public uninstallUI(arg0: javax.swing.JComponent): void
                     protected uninstallDefaults(): void
                     protected uninstallListeners(): void
                     protected uninstallKeyboardActions(): void
@@ -56,17 +56,17 @@ declare namespace javax {
                     public getNonContinuousLayoutDivider(): java.awt.Component
                     public getSplitPane(): javax.swing.JSplitPane
                     public createDefaultDivider(): javax.swing.plaf.basic.BasicSplitPaneDivider
-                    public resetToPreferredSizes(arg0: javax.swing.JSplitPane | javax.swing.JSplitPane$$Lambda): void
-                    public setDividerLocation(arg0: javax.swing.JSplitPane | javax.swing.JSplitPane$$Lambda, arg1: int): void
-                    public getDividerLocation(arg0: javax.swing.JSplitPane | javax.swing.JSplitPane$$Lambda): int
-                    public getMinimumDividerLocation(arg0: javax.swing.JSplitPane | javax.swing.JSplitPane$$Lambda): int
-                    public getMaximumDividerLocation(arg0: javax.swing.JSplitPane | javax.swing.JSplitPane$$Lambda): int
-                    public finishedPaintingChildren(arg0: javax.swing.JSplitPane | javax.swing.JSplitPane$$Lambda, arg1: java.awt.Graphics): void
-                    public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    public getPreferredSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
-                    public getMinimumSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
-                    public getMaximumSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
-                    public getInsets(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Insets
+                    public resetToPreferredSizes(arg0: javax.swing.JSplitPane): void
+                    public setDividerLocation(arg0: javax.swing.JSplitPane, arg1: int): void
+                    public getDividerLocation(arg0: javax.swing.JSplitPane): int
+                    public getMinimumDividerLocation(arg0: javax.swing.JSplitPane): int
+                    public getMaximumDividerLocation(arg0: javax.swing.JSplitPane): int
+                    public finishedPaintingChildren(arg0: javax.swing.JSplitPane, arg1: java.awt.Graphics): void
+                    public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
+                    public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
+                    public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
+                    public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
+                    public getInsets(arg0: javax.swing.JComponent): java.awt.Insets
                     protected resetLayoutManager(): void
                     protected startDragging(): void
                     protected dragDividerTo(arg0: int): void

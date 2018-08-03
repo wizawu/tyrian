@@ -15,9 +15,6 @@ declare namespace com {
                             public getContext(): java.util.Map
                             public static class: java.lang.Class<any>
                         }
-                        class AsyncResponseImpl$$Lambda<T> extends java.util.concurrent.FutureTask<T> implements javax.xml.ws.Response<T> , com.sun.xml.internal.ws.client.ResponseContextReceiver {
-                            public constructor(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda, arg1: javax.xml.ws.AsyncHandler<T> | javax.xml.ws.AsyncHandler$$Lambda<T>)
-                        }
                     }
                 }
             }

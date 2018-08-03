@@ -34,8 +34,5 @@ declare namespace java {
             public adjustInto<R>(arg0: java.time.temporal.Temporal): java.time.temporal.Temporal
             public static class: java.lang.Class<any>
         }
-        class Month$$Lambda extends java.lang.Enum<java.time.Month> implements java.time.temporal.TemporalAccessor , java.time.temporal.TemporalAdjuster {
-            public static JANUARY: java.time.Month
-        }
     }
 }

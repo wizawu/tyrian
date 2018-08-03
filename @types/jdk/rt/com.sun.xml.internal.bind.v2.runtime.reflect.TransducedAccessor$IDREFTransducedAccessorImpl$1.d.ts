@@ -10,9 +10,6 @@ declare namespace com {
                                     public run(): void
                                     public static class: java.lang.Class<any>
                                 }
-                                class TransducedAccessor$IDREFTransducedAccessorImpl$1$$Lambda implements com.sun.xml.internal.bind.v2.runtime.unmarshaller.Patcher {
-                                    public (): void
-                                }
                             }
                         }
                     }

@@ -20,7 +20,7 @@ declare namespace java {
                 public toHours(arg0: long): long
                 public toDays(arg0: long): long
                 public timedWait(arg0: java.lang.Object, arg1: long): void
-                public timedJoin(arg0: java.lang.Thread | java.lang.Thread$$Lambda, arg1: long): void
+                public timedJoin(arg0: java.lang.Thread, arg1: long): void
                 public sleep(arg0: long): void
                 public static class: java.lang.Class<any>
             }

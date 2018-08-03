@@ -3,7 +3,7 @@ declare namespace sun {
         abstract class PathGraphics extends sun.print.ProxyGraphics2D {
             protected printingGlyphVector: boolean
             protected static fontMapRef: java.lang.ref.SoftReference<java.util.Hashtable<sun.font.Font2DHandle, java.lang.Object>>
-            protected constructor(arg0: java.awt.Graphics2D, arg1: java.awt.print.PrinterJob, arg2: java.awt.print.Printable, arg3: java.awt.print.PageFormat, arg4: int, arg5: boolean)
+            protected constructor(arg0: java.awt.Graphics2D, arg1: java.awt.print.PrinterJob, arg2: java.awt.print.Printable | java.awt.print.Printable$$Lambda, arg3: java.awt.print.PageFormat, arg4: int, arg5: boolean)
             protected getPrintable(): java.awt.print.Printable
             protected getPageFormat(): java.awt.print.PageFormat
             protected getPageIndex(): int
@@ -46,13 +46,13 @@ declare namespace sun {
             protected isBitmaskTransparency(arg0: java.awt.image.BufferedImage): boolean
             protected drawBitmaskImage(arg0: java.awt.image.BufferedImage, arg1: java.awt.geom.AffineTransform, arg2: java.awt.Color, arg3: int, arg4: int, arg5: int, arg6: int): boolean
             protected drawImageToPlatform(arg0: java.awt.Image, arg1: java.awt.geom.AffineTransform, arg2: java.awt.Color, arg3: int, arg4: int, arg5: int, arg6: int, arg7: boolean): boolean
-            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver): boolean
-            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: java.awt.image.ImageObserver): boolean
-            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.Color, arg4: java.awt.image.ImageObserver): boolean
-            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: java.awt.Color, arg6: java.awt.image.ImageObserver): boolean
-            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: int, arg9: java.awt.image.ImageObserver): boolean
-            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: int, arg9: java.awt.Color, arg10: java.awt.image.ImageObserver): boolean
-            public drawImage(arg0: java.awt.Image, arg1: java.awt.geom.AffineTransform, arg2: java.awt.image.ImageObserver): boolean
+            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.Color, arg4: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: java.awt.Color, arg6: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: int, arg9: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: int, arg9: java.awt.Color, arg10: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+            public drawImage(arg0: java.awt.Image, arg1: java.awt.geom.AffineTransform, arg2: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
             public drawImage(arg0: java.awt.image.BufferedImage, arg1: java.awt.image.BufferedImageOp, arg2: int, arg3: int): void
             public drawRenderedImage(arg0: java.awt.image.RenderedImage, arg1: java.awt.geom.AffineTransform): void
             public static class: java.lang.Class<any>

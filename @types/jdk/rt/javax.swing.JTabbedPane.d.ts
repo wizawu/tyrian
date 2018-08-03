@@ -15,8 +15,8 @@ declare namespace javax {
             public updateUI(): void
             public getUIClassID(): string
             protected createChangeListener(): javax.swing.event.ChangeListener
-            public addChangeListener(arg0: javax.swing.event.ChangeListener): void
-            public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
+            public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+            public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
             public getChangeListeners(): javax.swing.event.ChangeListener[]
             protected fireStateChanged(): void
             public getModel(): javax.swing.SingleSelectionModel

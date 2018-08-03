@@ -5,8 +5,5 @@ declare namespace sun {
             public toString(): string
             public static class: java.lang.Class<any>
         }
-        class Spans$Span$$Lambda implements java.lang.Comparable {
-            public (arg0: java.lang.Object): int
-        }
     }
 }

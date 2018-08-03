@@ -8,7 +8,7 @@ declare namespace javax {
                     public paintBorder(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: int, arg3: int, arg4: int, arg5: int): void
                     public getMinimumSize(): java.awt.Dimension
                     public getMaximumSize(): java.awt.Dimension
-                    public getPreferredSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
+                    public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
                     public static class: java.lang.Class<any>
                 }
             }

@@ -11,8 +11,8 @@ declare namespace java {
             getTags(): java.lang.String[]
             getCustomEditor(): java.awt.Component
             supportsCustomEditor(): boolean
-            addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-            removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+            addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
         }
     }
 }

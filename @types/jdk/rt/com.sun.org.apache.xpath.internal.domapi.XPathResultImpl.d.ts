@@ -18,9 +18,6 @@ declare namespace com {
                                 public handleEvent(arg0: org.w3c.dom.events.Event): void
                                 public static class: java.lang.Class<any>
                             }
-                            class XPathResultImpl$$Lambda implements org.w3c.dom.xpath.XPathResult , org.w3c.dom.events.EventListener {
-                                public (): short
-                            }
                         }
                     }
                 }

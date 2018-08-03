@@ -19,7 +19,7 @@ declare namespace com {
                             public setSoapActionUse(arg0: java.lang.Boolean | boolean): void
                             public get(arg0: java.lang.Object): java.lang.Object
                             public put(arg0: java.lang.String | string, arg1: java.lang.Object): java.lang.Object
-                            public fill(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda, arg1: boolean): void
+                            public fill(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: boolean): void
                             public copy(): com.sun.xml.internal.ws.client.RequestContext
                             protected getPropertyMap(): com.oracle.webservices.internal.api.message.BasePropertySet$PropertyMap
                             protected mapAllowsAdditionalProperties(): boolean

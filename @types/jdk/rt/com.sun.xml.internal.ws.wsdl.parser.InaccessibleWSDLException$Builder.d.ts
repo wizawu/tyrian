@@ -11,9 +11,6 @@ declare namespace com {
                                 public check(): void
                                 public static class: java.lang.Class<any>
                             }
-                            class InaccessibleWSDLException$Builder$$Lambda implements com.sun.xml.internal.ws.wsdl.parser.ErrorHandler {
-                                public constructor()
-                            }
                         }
                     }
                 }

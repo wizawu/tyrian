@@ -10,9 +10,6 @@ declare namespace javax {
                 public run(): void
                 public static class: java.lang.Class<any>
             }
-            class ValueFormatter$$Lambda extends javax.swing.JFormattedTextField$AbstractFormatter implements java.awt.event.FocusListener , java.lang.Runnable {
-                public (arg0: java.lang.String | string): java.lang.Object
-            }
         }
     }
 }

@@ -11,11 +11,11 @@ declare namespace java {
             public constructor(arg0: java.awt.Dialog, arg1: java.lang.String | string)
             public constructor(arg0: java.awt.Dialog, arg1: java.lang.String | string, arg2: boolean)
             public constructor(arg0: java.awt.Dialog, arg1: java.lang.String | string, arg2: boolean, arg3: java.awt.GraphicsConfiguration)
-            public constructor(arg0: java.awt.Window | java.awt.Window$$Lambda)
-            public constructor(arg0: java.awt.Window | java.awt.Window$$Lambda, arg1: java.lang.String | string)
-            public constructor(arg0: java.awt.Window | java.awt.Window$$Lambda, arg1: java.awt.Dialog$ModalityType)
-            public constructor(arg0: java.awt.Window | java.awt.Window$$Lambda, arg1: java.lang.String | string, arg2: java.awt.Dialog$ModalityType)
-            public constructor(arg0: java.awt.Window | java.awt.Window$$Lambda, arg1: java.lang.String | string, arg2: java.awt.Dialog$ModalityType, arg3: java.awt.GraphicsConfiguration)
+            public constructor(arg0: java.awt.Window)
+            public constructor(arg0: java.awt.Window, arg1: java.lang.String | string)
+            public constructor(arg0: java.awt.Window, arg1: java.awt.Dialog$ModalityType)
+            public constructor(arg0: java.awt.Window, arg1: java.lang.String | string, arg2: java.awt.Dialog$ModalityType)
+            public constructor(arg0: java.awt.Window, arg1: java.lang.String | string, arg2: java.awt.Dialog$ModalityType, arg3: java.awt.GraphicsConfiguration)
             public addNotify(): void
             public isModal(): boolean
             public setModal(arg0: boolean): void

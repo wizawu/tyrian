@@ -8,8 +8,5 @@ declare namespace sun {
             protected submit(): void
             public static class: java.lang.Class<any>
         }
-        abstract class AccumulativeRunnable$$Lambda<T> implements java.lang.Runnable {
-            public constructor()
-        }
     }
 }

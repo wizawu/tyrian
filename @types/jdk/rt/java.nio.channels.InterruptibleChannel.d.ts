@@ -4,6 +4,9 @@ declare namespace java {
             interface InterruptibleChannel extends java.nio.channels.Channel {
                 close(): void
             }
+            interface InterruptibleChannel$$Lambda extends java.nio.channels.Channel {
+                (): void
+            }
         }
     }
 }

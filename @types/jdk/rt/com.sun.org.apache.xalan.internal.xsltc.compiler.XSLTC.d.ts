@@ -69,7 +69,7 @@ declare namespace com {
                                     public getNamesIndex(): java.util.Vector
                                     public getNamespaceIndex(): java.util.Vector
                                     public getHelperClassName(): string
-                                    public dumpClass(arg0: com.sun.org.apache.bcel.internal.classfile.JavaClass | com.sun.org.apache.bcel.internal.classfile.JavaClass$$Lambda): void
+                                    public dumpClass(arg0: com.sun.org.apache.bcel.internal.classfile.JavaClass): void
                                     public outputToJar(): void
                                     public setDebug(arg0: boolean): void
                                     public debug(): boolean

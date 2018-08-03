@@ -10,9 +10,6 @@ declare namespace com {
                                     public error(arg0: com.sun.xml.internal.bind.v2.runtime.IllegalAnnotationException): void
                                     public static class: java.lang.Class<any>
                                 }
-                                class ModelBuilder$1$$Lambda implements com.sun.xml.internal.bind.v2.model.core.ErrorHandler {
-                                    public (arg0: com.sun.xml.internal.bind.v2.runtime.IllegalAnnotationException): void
-                                }
                             }
                         }
                     }

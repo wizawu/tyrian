@@ -23,7 +23,8 @@ find . -name "*.d.ts" | grep -v index.d.ts | xargs -I {} echo "/// <reference pa
 test=/tmp/1c@types_test.ts
 
 echo "/// <reference path='$dir/jdk/index.d.ts' />" > $test
-echo "/// <reference path='$dir/common/index.d.ts' />" >> $test
+echo "/// <reference path='$dir/common/jdk.d.ts' />" >> $test
+echo "/// <reference path='$dir/common/jjs.d.ts' />" >> $test
 grep -h "declare namespace" rt/*.d.ts | sort | uniq | awk '{print $3}' | xargs -I {} echo "Boolean({})" >> $test
 
 tsc --noEmit --skipLibCheck $test

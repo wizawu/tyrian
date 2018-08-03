@@ -12,11 +12,8 @@ declare namespace com {
                 public getPriority(): int
                 public query(): int
                 public synchronize(): void
-                public waitFor(arg0: com.ibm.cuda.CudaEvent | com.ibm.cuda.CudaEvent$$Lambda): void
+                public waitFor(arg0: com.ibm.cuda.CudaEvent): void
                 public static class: java.lang.Class<any>
-            }
-            class CudaStream$$Lambda implements java.lang.AutoCloseable {
-                public static FLAG_DEFAULT: int
             }
         }
     }

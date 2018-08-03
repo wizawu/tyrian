@@ -14,7 +14,7 @@ declare namespace com {
                             public state(): short
                             public adapter_template(): org.omg.PortableInterceptor.ObjectReferenceTemplate
                             public current_factory(): org.omg.PortableInterceptor.ObjectReferenceFactory
-                            public current_factory(arg0: org.omg.PortableInterceptor.ObjectReferenceFactory): void
+                            public current_factory(arg0: org.omg.PortableInterceptor.ObjectReferenceFactory | org.omg.PortableInterceptor.ObjectReferenceFactory$$Lambda): void
                             public static class: java.lang.Class<any>
                         }
                     }

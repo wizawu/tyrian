@@ -6,9 +6,9 @@ declare namespace java {
             public static now(): java.time.LocalDateTime
             public static now(arg0: java.time.ZoneId): java.time.LocalDateTime
             public static now(arg0: java.time.Clock): java.time.LocalDateTime
-            public static of(arg0: int, arg1: java.time.Month | java.time.Month$$Lambda, arg2: int, arg3: int, arg4: int): java.time.LocalDateTime
-            public static of(arg0: int, arg1: java.time.Month | java.time.Month$$Lambda, arg2: int, arg3: int, arg4: int, arg5: int): java.time.LocalDateTime
-            public static of(arg0: int, arg1: java.time.Month | java.time.Month$$Lambda, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int): java.time.LocalDateTime
+            public static of(arg0: int, arg1: java.time.Month, arg2: int, arg3: int, arg4: int): java.time.LocalDateTime
+            public static of(arg0: int, arg1: java.time.Month, arg2: int, arg3: int, arg4: int, arg5: int): java.time.LocalDateTime
+            public static of(arg0: int, arg1: java.time.Month, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int): java.time.LocalDateTime
             public static of(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int): java.time.LocalDateTime
             public static of(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int): java.time.LocalDateTime
             public static of(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int): java.time.LocalDateTime

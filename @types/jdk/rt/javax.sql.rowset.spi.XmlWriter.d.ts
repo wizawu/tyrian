@@ -3,7 +3,10 @@ declare namespace javax {
         namespace rowset {
             namespace spi {
                 interface XmlWriter extends javax.sql.RowSetWriter {
-                    writeXML(arg0: javax.sql.rowset.WebRowSet, arg1: java.io.Writer | java.io.Writer$$Lambda): void
+                    writeXML(arg0: javax.sql.rowset.WebRowSet, arg1: java.io.Writer): void
+                }
+                interface XmlWriter$$Lambda extends javax.sql.RowSetWriter {
+                    (arg0: javax.sql.rowset.WebRowSet, arg1: java.io.Writer): void
                 }
             }
         }

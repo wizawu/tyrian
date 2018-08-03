@@ -11,9 +11,6 @@ declare namespace com {
                     public run(): void
                     public static class: java.lang.Class<any>
                 }
-                class DataPusher$$Lambda implements java.lang.Runnable {
-                    public constructor(arg0: javax.sound.sampled.SourceDataLine, arg1: javax.sound.sampled.AudioFormat, arg2: byte[], arg3: int)
-                }
             }
         }
     }

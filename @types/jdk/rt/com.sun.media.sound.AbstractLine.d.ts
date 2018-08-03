@@ -8,8 +8,8 @@ declare namespace com {
                     protected constructor(arg0: javax.sound.sampled.Line$Info, arg1: com.sun.media.sound.AbstractMixer, arg2: javax.sound.sampled.Control[])
                     public getLineInfo(): javax.sound.sampled.Line$Info
                     public isOpen(): boolean
-                    public addLineListener(arg0: javax.sound.sampled.LineListener): void
-                    public removeLineListener(arg0: javax.sound.sampled.LineListener): void
+                    public addLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$Lambda): void
+                    public removeLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$Lambda): void
                     public getControls(): javax.sound.sampled.Control[]
                     public isControlSupported(arg0: javax.sound.sampled.Control$Type): boolean
                     public getControl(arg0: javax.sound.sampled.Control$Type): javax.sound.sampled.Control

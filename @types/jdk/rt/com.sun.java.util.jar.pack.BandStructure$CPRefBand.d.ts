@@ -5,9 +5,9 @@ declare namespace com {
                 namespace jar {
                     namespace pack {
                         class BandStructure$CPRefBand extends com.sun.java.util.jar.pack.BandStructure$ValueBand {
-                            public constructor(arg0: com.sun.java.util.jar.pack.BandStructure, arg1: java.lang.String | string, arg2: com.sun.java.util.jar.pack.Coding | com.sun.java.util.jar.pack.Coding$$Lambda, arg3: byte, arg4: boolean)
-                            public constructor(arg0: com.sun.java.util.jar.pack.BandStructure, arg1: java.lang.String | string, arg2: com.sun.java.util.jar.pack.Coding | com.sun.java.util.jar.pack.Coding$$Lambda, arg3: byte)
-                            public constructor(arg0: com.sun.java.util.jar.pack.BandStructure, arg1: java.lang.String | string, arg2: com.sun.java.util.jar.pack.Coding | com.sun.java.util.jar.pack.Coding$$Lambda, arg3: java.lang.Object)
+                            public constructor(arg0: com.sun.java.util.jar.pack.BandStructure, arg1: java.lang.String | string, arg2: com.sun.java.util.jar.pack.Coding, arg3: byte, arg4: boolean)
+                            public constructor(arg0: com.sun.java.util.jar.pack.BandStructure, arg1: java.lang.String | string, arg2: com.sun.java.util.jar.pack.Coding, arg3: byte)
+                            public constructor(arg0: com.sun.java.util.jar.pack.BandStructure, arg1: java.lang.String | string, arg2: com.sun.java.util.jar.pack.Coding, arg3: java.lang.Object)
                             public setIndex(arg0: com.sun.java.util.jar.pack.ConstantPool$Index): void
                             protected readDataFrom(arg0: java.io.InputStream): void
                             public putRef(arg0: com.sun.java.util.jar.pack.ConstantPool$Entry): void

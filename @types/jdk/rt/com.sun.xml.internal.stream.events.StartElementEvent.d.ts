@@ -20,7 +20,7 @@ declare namespace com {
                             public nameAsString(): string
                             public getNamespaceContext(): javax.xml.namespace.NamespaceContext
                             public setNamespaceContext(arg0: javax.xml.namespace.NamespaceContext): void
-                            protected writeAsEncodedUnicodeEx(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+                            protected writeAsEncodedUnicodeEx(arg0: java.io.Writer): void
                             public static class: java.lang.Class<any>
                         }
                     }

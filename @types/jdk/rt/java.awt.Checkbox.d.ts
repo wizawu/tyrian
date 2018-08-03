@@ -14,8 +14,8 @@ declare namespace java {
             public getSelectedObjects(): java.lang.Object[]
             public getCheckboxGroup(): java.awt.CheckboxGroup
             public setCheckboxGroup(arg0: java.awt.CheckboxGroup): void
-            public addItemListener(arg0: java.awt.event.ItemListener): void
-            public removeItemListener(arg0: java.awt.event.ItemListener): void
+            public addItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): void
+            public removeItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): void
             public getItemListeners(): java.awt.event.ItemListener[]
             public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]
             protected processEvent<T extends java.util.EventListener>(arg0: java.awt.AWTEvent): void
@@ -23,9 +23,6 @@ declare namespace java {
             protected paramString<T extends java.util.EventListener>(): string
             public getAccessibleContext<T extends java.util.EventListener>(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
-        }
-        class Checkbox$$Lambda extends java.awt.Component implements java.awt.ItemSelectable , javax.accessibility.Accessible {
-            public constructor()
         }
     }
 }

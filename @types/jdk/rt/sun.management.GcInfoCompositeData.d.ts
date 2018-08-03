@@ -1,9 +1,9 @@
 declare namespace sun {
     namespace management {
         class GcInfoCompositeData extends sun.management.LazyCompositeData {
-            public constructor(arg0: com.sun.management.GcInfo | com.sun.management.GcInfo$$Lambda, arg1: sun.management.GcInfoBuilder, arg2: java.lang.Object[])
+            public constructor(arg0: com.sun.management.GcInfo, arg1: sun.management.GcInfoBuilder, arg2: java.lang.Object[])
             public getGcInfo(): com.sun.management.GcInfo
-            public static toCompositeData(arg0: com.sun.management.GcInfo | com.sun.management.GcInfo$$Lambda): javax.management.openmbean.CompositeData
+            public static toCompositeData(arg0: com.sun.management.GcInfo): javax.management.openmbean.CompositeData
             protected getCompositeData(): javax.management.openmbean.CompositeData
             public static getId(arg0: javax.management.openmbean.CompositeData): long
             public static getStartTime(arg0: javax.management.openmbean.CompositeData): long

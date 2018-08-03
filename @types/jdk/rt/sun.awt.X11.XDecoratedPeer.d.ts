@@ -47,7 +47,7 @@ declare namespace sun {
                 public handleQuit(): void
                 public requestWindowFocus(arg0: long, arg1: boolean): boolean
                 public handleWindowFocusIn(arg0: long): void
-                public handleWindowFocusOut(arg0: java.awt.Window | java.awt.Window$$Lambda, arg1: long): void
+                public handleWindowFocusOut(arg0: java.awt.Window, arg1: long): void
                 public static class: java.lang.Class<any>
             }
         }

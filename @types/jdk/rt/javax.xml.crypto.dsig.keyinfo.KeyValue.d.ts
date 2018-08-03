@@ -8,6 +8,9 @@ declare namespace javax {
                         RSA_TYPE: string
                         getPublicKey(): java.security.PublicKey
                     }
+                    interface KeyValue$$Lambda extends javax.xml.crypto.XMLStructure {
+                        DSA_TYPE: string
+                    }
                 }
             }
         }

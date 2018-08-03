@@ -12,7 +12,7 @@ declare namespace sun {
                 protected parseKeyBits(): void
                 public getAlgorithm(): string
                 public getAlgorithmId(): sun.security.x509.AlgorithmId
-                public encode(arg0: sun.security.util.DerOutputStream | sun.security.util.DerOutputStream$$Lambda): void
+                public encode(arg0: sun.security.util.DerOutputStream): void
                 public getEncoded(): byte[]
                 public getEncodedInternal(): byte[]
                 public getFormat(): string

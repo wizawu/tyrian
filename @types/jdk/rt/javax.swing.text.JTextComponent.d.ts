@@ -8,8 +8,8 @@ declare namespace javax {
                 public getUI(): javax.swing.plaf.TextUI
                 public setUI(arg0: javax.swing.plaf.TextUI): void
                 public updateUI(): void
-                public addCaretListener(arg0: javax.swing.event.CaretListener): void
-                public removeCaretListener(arg0: javax.swing.event.CaretListener): void
+                public addCaretListener(arg0: javax.swing.event.CaretListener | javax.swing.event.CaretListener$$Lambda): void
+                public removeCaretListener(arg0: javax.swing.event.CaretListener | javax.swing.event.CaretListener$$Lambda): void
                 public getCaretListeners(): javax.swing.event.CaretListener[]
                 protected fireCaretUpdate(arg0: javax.swing.event.CaretEvent): void
                 public setDocument(arg0: javax.swing.text.Document): void
@@ -54,7 +54,7 @@ declare namespace javax {
                 public setFocusAccelerator(arg0: char): void
                 public getFocusAccelerator(): char
                 public read(arg0: java.io.Reader, arg1: java.lang.Object): void
-                public write(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+                public write(arg0: java.io.Writer): void
                 public removeNotify(): void
                 public setCaretPosition(arg0: int): void
                 public getCaretPosition(): int
@@ -87,9 +87,6 @@ declare namespace javax {
                 protected saveComposedText(arg0: int): boolean
                 protected restoreComposedText(): void
                 public static class: java.lang.Class<any>
-            }
-            abstract class JTextComponent$$Lambda extends javax.swing.JComponent implements javax.swing.Scrollable , javax.accessibility.Accessible {
-                public static FOCUS_ACCELERATOR_KEY: string
             }
         }
     }

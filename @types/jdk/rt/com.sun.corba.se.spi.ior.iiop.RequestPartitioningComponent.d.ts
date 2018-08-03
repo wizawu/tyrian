@@ -8,6 +8,9 @@ declare namespace com {
                             interface RequestPartitioningComponent extends com.sun.corba.se.spi.ior.TaggedComponent {
                                 getRequestPartitioningId(): int
                             }
+                            interface RequestPartitioningComponent$$Lambda extends com.sun.corba.se.spi.ior.TaggedComponent {
+                                (): int
+                            }
                         }
                     }
                 }

@@ -33,7 +33,7 @@ declare namespace java {
             public until<R>(arg0: java.time.temporal.Temporal, arg1: java.time.temporal.TemporalUnit): long
             public format<R>(arg0: java.time.format.DateTimeFormatter): string
             public atDay<R>(arg0: int): java.time.LocalDate
-            public atMonth<R>(arg0: java.time.Month | java.time.Month$$Lambda): java.time.YearMonth
+            public atMonth<R>(arg0: java.time.Month): java.time.YearMonth
             public atMonth<R>(arg0: int): java.time.YearMonth
             public atMonthDay<R>(arg0: java.time.MonthDay): java.time.LocalDate
             public compareTo<R>(arg0: java.time.Year): int

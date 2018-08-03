@@ -7,7 +7,7 @@ declare namespace javax {
                     public iconifyFrame(arg0: javax.swing.JInternalFrame): void
                     public deiconifyFrame(arg0: javax.swing.JInternalFrame): void
                     protected removeIconFor(arg0: javax.swing.JInternalFrame): void
-                    public setBoundsForFrame(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: int, arg2: int, arg3: int, arg4: int): void
+                    public setBoundsForFrame(arg0: javax.swing.JComponent, arg1: int, arg2: int, arg3: int, arg4: int): void
                     public static class: java.lang.Class<any>
                 }
             }

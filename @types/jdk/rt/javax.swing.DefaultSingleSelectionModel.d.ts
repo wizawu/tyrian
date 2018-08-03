@@ -8,8 +8,8 @@ declare namespace javax {
             public setSelectedIndex(arg0: int): void
             public clearSelection(): void
             public isSelected(): boolean
-            public addChangeListener(arg0: javax.swing.event.ChangeListener): void
-            public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
+            public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+            public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
             public getChangeListeners(): javax.swing.event.ChangeListener[]
             protected fireStateChanged(): void
             public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]

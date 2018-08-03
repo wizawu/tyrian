@@ -4,6 +4,9 @@ declare namespace com {
             interface ProviderName extends java.lang.annotation.Annotation {
                 value(): string
             }
+            interface ProviderName$$Lambda extends java.lang.annotation.Annotation {
+                (): string
+            }
         }
     }
 }

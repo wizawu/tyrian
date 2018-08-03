@@ -6,6 +6,9 @@ declare namespace com {
                     interface IncludeSubclass extends java.lang.annotation.Annotation {
                         value(): java.lang.Class[]
                     }
+                    interface IncludeSubclass$$Lambda extends java.lang.annotation.Annotation {
+                        (): java.lang.Class[]
+                    }
                 }
             }
         }

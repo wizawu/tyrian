@@ -136,9 +136,6 @@ declare namespace com {
                             public setManager(arg0: com.sun.xml.internal.fastinfoset.stax.StAXManager): void
                             public static class: java.lang.Class<any>
                         }
-                        class StAXDocumentParser$$Lambda extends com.sun.xml.internal.fastinfoset.Decoder implements javax.xml.stream.XMLStreamReader , com.sun.xml.internal.org.jvnet.fastinfoset.stax.FastInfosetStreamReader , com.sun.xml.internal.fastinfoset.OctetBufferListener {
-                            protected static INTERNAL_STATE_START_DOCUMENT: int
-                        }
                     }
                 }
             }

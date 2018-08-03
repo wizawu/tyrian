@@ -11,7 +11,7 @@ declare namespace sun {
             public getInterfaceMethodRef(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): short
             public getNameAndType(arg0: java.lang.String | string, arg1: java.lang.String | string): short
             public setReadOnly(): void
-            public write(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+            public write(arg0: java.io.OutputStream): void
             public static class: java.lang.Class<any>
         }
     }

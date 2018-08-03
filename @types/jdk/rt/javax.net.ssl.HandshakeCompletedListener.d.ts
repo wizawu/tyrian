@@ -4,6 +4,9 @@ declare namespace javax {
             interface HandshakeCompletedListener extends java.util.EventListener {
                 handshakeCompleted(arg0: javax.net.ssl.HandshakeCompletedEvent): void
             }
+            interface HandshakeCompletedListener$$Lambda extends java.util.EventListener {
+                (arg0: javax.net.ssl.HandshakeCompletedEvent): void
+            }
         }
     }
 }

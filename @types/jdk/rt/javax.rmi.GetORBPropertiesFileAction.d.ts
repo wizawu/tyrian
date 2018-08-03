@@ -5,8 +5,5 @@ declare namespace javax {
             public run(): java.lang.Object
             public static class: java.lang.Class<any>
         }
-        class GetORBPropertiesFileAction$$Lambda implements java.security.PrivilegedAction {
-            public constructor()
-        }
     }
 }

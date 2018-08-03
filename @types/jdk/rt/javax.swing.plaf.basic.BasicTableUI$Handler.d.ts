@@ -21,9 +21,6 @@ declare namespace javax {
                     public propertyChange(arg0: java.beans.PropertyChangeEvent): void
                     public static class: java.lang.Class<any>
                 }
-                class BasicTableUI$Handler$$Lambda implements java.awt.event.FocusListener , javax.swing.event.MouseInputListener , java.beans.PropertyChangeListener , javax.swing.event.ListSelectionListener , java.awt.event.ActionListener , javax.swing.plaf.basic.DragRecognitionSupport$BeforeDrag {
-                    public (arg0: java.awt.event.FocusEvent): void
-                }
             }
         }
     }

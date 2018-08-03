@@ -1,7 +1,7 @@
 declare namespace javax {
     namespace swing {
         class JSpinner$AccessibleJSpinner extends javax.swing.JComponent$AccessibleJComponent implements javax.accessibility.AccessibleValue , javax.accessibility.AccessibleAction , javax.accessibility.AccessibleText , javax.accessibility.AccessibleEditableText , javax.swing.event.ChangeListener {
-            protected constructor(arg0: javax.swing.JSpinner | javax.swing.JSpinner$$Lambda)
+            protected constructor(arg0: javax.swing.JSpinner)
             public stateChanged(arg0: javax.swing.event.ChangeEvent): void
             public getAccessibleRole(): javax.accessibility.AccessibleRole
             public getAccessibleChildrenCount(): int

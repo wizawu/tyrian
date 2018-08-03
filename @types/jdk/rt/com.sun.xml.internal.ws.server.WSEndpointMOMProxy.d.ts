@@ -47,7 +47,7 @@ declare namespace com {
                             public getContainer(): com.sun.xml.internal.ws.api.server.Container
                             public getPort(): com.sun.xml.internal.ws.api.model.wsdl.WSDLPort
                             public setExecutor(arg0: java.util.concurrent.Executor | java.util.concurrent.Executor$$Lambda): void
-                            public schedule(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda, arg1: com.sun.xml.internal.ws.api.server.WSEndpoint$CompletionCallback | com.sun.xml.internal.ws.api.server.WSEndpoint$CompletionCallback$$Lambda, arg2: com.sun.xml.internal.ws.api.pipe.FiberContextSwitchInterceptor | com.sun.xml.internal.ws.api.pipe.FiberContextSwitchInterceptor$$Lambda): void
+                            public schedule(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: com.sun.xml.internal.ws.api.server.WSEndpoint$CompletionCallback | com.sun.xml.internal.ws.api.server.WSEndpoint$CompletionCallback$$Lambda, arg2: com.sun.xml.internal.ws.api.pipe.FiberContextSwitchInterceptor | com.sun.xml.internal.ws.api.pipe.FiberContextSwitchInterceptor$$Lambda): void
                             public createPipeHead(): com.sun.xml.internal.ws.api.server.WSEndpoint$PipeHead
                             public dispose(): void
                             public getServiceDefinition(): com.sun.xml.internal.ws.api.server.ServiceDefinition
@@ -59,7 +59,7 @@ declare namespace com {
                             public getEndpointReference(arg0: java.lang.Class, arg1: java.lang.String | string, arg2: java.lang.String | string, ...arg3: org.w3c.dom.Element[]): javax.xml.ws.EndpointReference
                             public getEndpointReference(arg0: java.lang.Class, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.util.List, arg4: java.util.List): javax.xml.ws.EndpointReference
                             public getOperationDispatcher(): com.sun.xml.internal.ws.wsdl.OperationDispatcher
-                            public createServiceResponseForException(arg0: com.sun.xml.internal.ws.api.pipe.ThrowableContainerPropertySet, arg1: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda, arg2: com.sun.xml.internal.ws.api.SOAPVersion, arg3: com.sun.xml.internal.ws.api.model.wsdl.WSDLPort, arg4: com.sun.xml.internal.ws.api.model.SEIModel, arg5: com.sun.xml.internal.ws.api.WSBinding): com.sun.xml.internal.ws.api.message.Packet
+                            public createServiceResponseForException(arg0: com.sun.xml.internal.ws.api.pipe.ThrowableContainerPropertySet, arg1: com.sun.xml.internal.ws.api.message.Packet, arg2: com.sun.xml.internal.ws.api.SOAPVersion, arg3: com.sun.xml.internal.ws.api.model.wsdl.WSDLPort, arg4: com.sun.xml.internal.ws.api.model.SEIModel, arg5: com.sun.xml.internal.ws.api.WSBinding): com.sun.xml.internal.ws.api.message.Packet
                             public static class: java.lang.Class<any>
                         }
                     }

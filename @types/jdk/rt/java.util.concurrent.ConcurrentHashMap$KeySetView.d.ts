@@ -11,7 +11,7 @@ declare namespace java {
                 public hashCode(): int
                 public equals(arg0: java.lang.Object): boolean
                 public spliterator(): java.util.Spliterator<K>
-                public forEach(arg0: java.util.function$.Consumer$$TypeScript<K>): void
+                public forEach(arg0: java.util.function$.Consumer$$Lambda<K>): void
                 public getMap(): java.util.concurrent.ConcurrentHashMap
                 public static class: java.lang.Class<any>
             }

@@ -10,8 +10,8 @@ declare namespace com {
                             public hashCode(): int
                             public constructor(arg0: com.sun.corba.se.spi.orb.ORB)
                             public constructor(arg0: com.sun.corba.se.spi.orb.ORB, arg1: java.lang.String | string)
-                            public constructor(arg0: com.sun.corba.se.spi.orb.ORB, arg1: java.lang.String | string, arg2: com.sun.corba.se.spi.ior.IORTemplate, arg3: com.sun.corba.se.spi.ior.ObjectId)
-                            public constructor(arg0: com.sun.corba.se.spi.orb.ORB, arg1: java.lang.String | string, arg2: com.sun.corba.se.spi.ior.IORTemplateList, arg3: com.sun.corba.se.spi.ior.ObjectId)
+                            public constructor(arg0: com.sun.corba.se.spi.orb.ORB, arg1: java.lang.String | string, arg2: com.sun.corba.se.spi.ior.IORTemplate, arg3: com.sun.corba.se.spi.ior.ObjectId | com.sun.corba.se.spi.ior.ObjectId$$Lambda)
+                            public constructor(arg0: com.sun.corba.se.spi.orb.ORB, arg1: java.lang.String | string, arg2: com.sun.corba.se.spi.ior.IORTemplateList, arg3: com.sun.corba.se.spi.ior.ObjectId | com.sun.corba.se.spi.ior.ObjectId$$Lambda)
                             public constructor(arg0: org.omg.CORBA_2_3.portable.InputStream)
                             public getTypeId(): string
                             public write(arg0: org.omg.CORBA_2_3.portable.OutputStream): void

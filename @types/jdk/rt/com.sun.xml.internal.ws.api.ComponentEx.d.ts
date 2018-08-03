@@ -7,6 +7,9 @@ declare namespace com {
                         interface ComponentEx extends com.sun.xml.internal.ws.api.Component {
                             getIterableSPI<S>(arg0: java.lang.Class<S>): java.lang.Iterable<S>
                         }
+                        interface ComponentEx$$Lambda extends com.sun.xml.internal.ws.api.Component {
+                            getIterableSPI<S>(arg0: java.lang.Class<S>): java.lang.Iterable<S>
+                        }
                     }
                 }
             }

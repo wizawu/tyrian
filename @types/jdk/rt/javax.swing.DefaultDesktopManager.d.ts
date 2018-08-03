@@ -10,13 +10,13 @@ declare namespace javax {
             public deiconifyFrame(arg0: javax.swing.JInternalFrame): void
             public activateFrame(arg0: javax.swing.JInternalFrame): void
             public deactivateFrame(arg0: javax.swing.JInternalFrame): void
-            public beginDraggingFrame(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-            public dragFrame(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: int, arg2: int): void
-            public endDraggingFrame(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-            public beginResizingFrame(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: int): void
-            public resizeFrame(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: int, arg2: int, arg3: int, arg4: int): void
-            public endResizingFrame(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-            public setBoundsForFrame(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: int, arg2: int, arg3: int, arg4: int): void
+            public beginDraggingFrame(arg0: javax.swing.JComponent): void
+            public dragFrame(arg0: javax.swing.JComponent, arg1: int, arg2: int): void
+            public endDraggingFrame(arg0: javax.swing.JComponent): void
+            public beginResizingFrame(arg0: javax.swing.JComponent, arg1: int): void
+            public resizeFrame(arg0: javax.swing.JComponent, arg1: int, arg2: int, arg3: int, arg4: int): void
+            public endResizingFrame(arg0: javax.swing.JComponent): void
+            public setBoundsForFrame(arg0: javax.swing.JComponent, arg1: int, arg2: int, arg3: int, arg4: int): void
             protected removeIconFor(arg0: javax.swing.JInternalFrame): void
             protected getBoundsForIconOf(arg0: javax.swing.JInternalFrame): java.awt.Rectangle
             protected setPreviousBounds(arg0: javax.swing.JInternalFrame, arg1: java.awt.Rectangle): void

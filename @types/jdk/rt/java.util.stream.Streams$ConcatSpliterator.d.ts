@@ -6,8 +6,8 @@ declare namespace java {
                 protected bSpliterator: T_SPLITR
                 public constructor(arg0: T_SPLITR, arg1: T_SPLITR)
                 public trySplit(): T_SPLITR
-                public tryAdvance(arg0: java.util.function$.Consumer$$TypeScript<T>): boolean
-                public forEachRemaining(arg0: java.util.function$.Consumer$$TypeScript<T>): void
+                public tryAdvance(arg0: java.util.function$.Consumer$$Lambda<T>): boolean
+                public forEachRemaining(arg0: java.util.function$.Consumer$$Lambda<T>): void
                 public estimateSize(): long
                 public characteristics(): int
                 public getComparator(): java.util.Comparator<T>

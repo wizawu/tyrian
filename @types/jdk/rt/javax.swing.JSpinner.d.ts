@@ -13,19 +13,16 @@ declare namespace javax {
             public getValue(): java.lang.Object
             public setValue(arg0: java.lang.Object): void
             public getNextValue(): java.lang.Object
-            public addChangeListener(arg0: javax.swing.event.ChangeListener): void
-            public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
+            public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+            public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
             public getChangeListeners(): javax.swing.event.ChangeListener[]
             protected fireStateChanged(): void
             public getPreviousValue(): java.lang.Object
-            public setEditor(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+            public setEditor(arg0: javax.swing.JComponent): void
             public getEditor(): javax.swing.JComponent
             public commitEdit(): void
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
-        }
-        class JSpinner$$Lambda extends javax.swing.JComponent implements javax.accessibility.Accessible {
-            public constructor(arg0: javax.swing.SpinnerModel)
         }
     }
 }

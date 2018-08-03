@@ -4,12 +4,9 @@ declare namespace jdk {
             namespace ir {
                 abstract class LexicalContextStatement extends jdk.nashorn.internal.ir.Statement implements jdk.nashorn.internal.ir.LexicalContextNode {
                     protected constructor(arg0: int, arg1: long, arg2: int)
-                    protected constructor(arg0: jdk.nashorn.internal.ir.LexicalContextStatement | jdk.nashorn.internal.ir.LexicalContextStatement$$Lambda)
+                    protected constructor(arg0: jdk.nashorn.internal.ir.LexicalContextStatement)
                     public accept(arg0: jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.LexicalContext>): jdk.nashorn.internal.ir.Node
                     public static class: java.lang.Class<any>
-                }
-                abstract class LexicalContextStatement$$Lambda extends jdk.nashorn.internal.ir.Statement implements jdk.nashorn.internal.ir.LexicalContextNode {
-                    protected constructor(arg0: int, arg1: long, arg2: int)
                 }
             }
         }

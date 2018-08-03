@@ -4,7 +4,7 @@ declare namespace sun {
             class XButtonPeer extends sun.awt.X11.XComponentPeer implements java.awt.peer.ButtonPeer {
                 protected focusColor: java.awt.Color
                 protected getPropertyPrefix(): string
-                public constructor(arg0: java.awt.Button | java.awt.Button$$Lambda)
+                public constructor(arg0: java.awt.Button)
                 public dispose(): void
                 public isFocusable(): boolean
                 public setLabel(arg0: java.lang.String | string): void

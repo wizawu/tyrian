@@ -17,8 +17,8 @@ declare namespace com {
                                         protected handleParent(arg0: org.w3c.dom.Element, arg1: com.sun.org.apache.xml.internal.security.c14n.implementations.NameSpaceSymbTable): void
                                         public engineGetURI(): string
                                         public engineGetIncludeComments(): boolean
-                                        protected outputPItoWriter(arg0: org.w3c.dom.ProcessingInstruction, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda, arg2: int): void
-                                        protected outputCommentToWriter(arg0: org.w3c.dom.Comment, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda, arg2: int): void
+                                        protected outputPItoWriter(arg0: org.w3c.dom.ProcessingInstruction, arg1: java.io.OutputStream, arg2: int): void
+                                        protected outputCommentToWriter(arg0: org.w3c.dom.Comment, arg1: java.io.OutputStream, arg2: int): void
                                         public static class: java.lang.Class<any>
                                     }
                                 }

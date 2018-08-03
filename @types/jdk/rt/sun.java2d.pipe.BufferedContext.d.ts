@@ -9,9 +9,9 @@ declare namespace sun {
                 protected buf: sun.java2d.pipe.RenderBuffer
                 protected static currentContext: sun.java2d.pipe.BufferedContext
                 protected constructor(arg0: sun.java2d.pipe.RenderQueue)
-                public static validateContext(arg0: sun.java2d.pipe.hw.AccelSurface, arg1: sun.java2d.pipe.hw.AccelSurface, arg2: sun.java2d.pipe.Region, arg3: java.awt.Composite | java.awt.Composite$$Lambda, arg4: java.awt.geom.AffineTransform, arg5: java.awt.Paint, arg6: sun.java2d.SunGraphics2D | sun.java2d.SunGraphics2D$$Lambda, arg7: int): void
+                public static validateContext(arg0: sun.java2d.pipe.hw.AccelSurface, arg1: sun.java2d.pipe.hw.AccelSurface, arg2: sun.java2d.pipe.Region, arg3: java.awt.Composite | java.awt.Composite$$Lambda, arg4: java.awt.geom.AffineTransform, arg5: java.awt.Paint | java.awt.Paint$$Lambda, arg6: sun.java2d.SunGraphics2D, arg7: int): void
                 public static validateContext(arg0: sun.java2d.pipe.hw.AccelSurface): void
-                public validate(arg0: sun.java2d.pipe.hw.AccelSurface, arg1: sun.java2d.pipe.hw.AccelSurface, arg2: sun.java2d.pipe.Region, arg3: java.awt.Composite | java.awt.Composite$$Lambda, arg4: java.awt.geom.AffineTransform, arg5: java.awt.Paint, arg6: sun.java2d.SunGraphics2D | sun.java2d.SunGraphics2D$$Lambda, arg7: int): void
+                public validate(arg0: sun.java2d.pipe.hw.AccelSurface, arg1: sun.java2d.pipe.hw.AccelSurface, arg2: sun.java2d.pipe.Region, arg3: java.awt.Composite | java.awt.Composite$$Lambda, arg4: java.awt.geom.AffineTransform, arg5: java.awt.Paint | java.awt.Paint$$Lambda, arg6: sun.java2d.SunGraphics2D, arg7: int): void
                 public invalidateContext(): void
                 public getRenderQueue(): sun.java2d.pipe.RenderQueue
                 public saveState(): void

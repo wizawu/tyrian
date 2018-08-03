@@ -9,7 +9,7 @@ declare namespace com {
                             public hashCode(): int
                             public constructor(arg0: com.sun.corba.se.spi.orb.ORB)
                             public constructor(arg0: org.omg.CORBA_2_3.portable.InputStream, arg1: org.omg.CORBA.OctetSeqHolder)
-                            public write(arg0: com.sun.corba.se.spi.ior.ObjectId, arg1: org.omg.CORBA_2_3.portable.OutputStream): void
+                            public write(arg0: com.sun.corba.se.spi.ior.ObjectId | com.sun.corba.se.spi.ior.ObjectId$$Lambda, arg1: org.omg.CORBA_2_3.portable.OutputStream): void
                             public write(arg0: org.omg.CORBA_2_3.portable.OutputStream): void
                             public getSubcontractId(): int
                             public getServerId(): int
@@ -17,7 +17,7 @@ declare namespace com {
                             public getObjectAdapterId(): com.sun.corba.se.spi.ior.ObjectAdapterId
                             public getAdapterId(): byte[]
                             public getORBVersion(): com.sun.corba.se.spi.orb.ORBVersion
-                            public getServerRequestDispatcher(arg0: com.sun.corba.se.spi.orb.ORB, arg1: com.sun.corba.se.spi.ior.ObjectId): com.sun.corba.se.spi.protocol.CorbaServerRequestDispatcher
+                            public getServerRequestDispatcher(arg0: com.sun.corba.se.spi.orb.ORB, arg1: com.sun.corba.se.spi.ior.ObjectId | com.sun.corba.se.spi.ior.ObjectId$$Lambda): com.sun.corba.se.spi.protocol.CorbaServerRequestDispatcher
                             public static class: java.lang.Class<any>
                         }
                     }

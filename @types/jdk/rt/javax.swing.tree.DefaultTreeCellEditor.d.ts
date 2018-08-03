@@ -15,13 +15,13 @@ declare namespace javax {
                 protected borderSelectionColor: java.awt.Color
                 protected editingIcon: javax.swing.Icon
                 protected font: java.awt.Font
-                public constructor(arg0: javax.swing.JTree | javax.swing.JTree$$Lambda, arg1: javax.swing.tree.DefaultTreeCellRenderer | javax.swing.tree.DefaultTreeCellRenderer$$Lambda)
-                public constructor(arg0: javax.swing.JTree | javax.swing.JTree$$Lambda, arg1: javax.swing.tree.DefaultTreeCellRenderer | javax.swing.tree.DefaultTreeCellRenderer$$Lambda, arg2: javax.swing.tree.TreeCellEditor)
+                public constructor(arg0: javax.swing.JTree, arg1: javax.swing.tree.DefaultTreeCellRenderer)
+                public constructor(arg0: javax.swing.JTree, arg1: javax.swing.tree.DefaultTreeCellRenderer, arg2: javax.swing.tree.TreeCellEditor | javax.swing.tree.TreeCellEditor$$Lambda)
                 public setBorderSelectionColor(arg0: java.awt.Color): void
                 public getBorderSelectionColor(): java.awt.Color
                 public setFont(arg0: java.awt.Font): void
                 public getFont(): java.awt.Font
-                public getTreeCellEditorComponent(arg0: javax.swing.JTree | javax.swing.JTree$$Lambda, arg1: java.lang.Object, arg2: boolean, arg3: boolean, arg4: boolean, arg5: int): java.awt.Component
+                public getTreeCellEditorComponent(arg0: javax.swing.JTree, arg1: java.lang.Object, arg2: boolean, arg3: boolean, arg4: boolean, arg5: int): java.awt.Component
                 public getCellEditorValue(): java.lang.Object
                 public isCellEditable(arg0: java.util.EventObject): boolean
                 public shouldSelectCell(arg0: java.util.EventObject): boolean
@@ -32,12 +32,12 @@ declare namespace javax {
                 public getCellEditorListeners(): javax.swing.event.CellEditorListener[]
                 public valueChanged(arg0: javax.swing.event.TreeSelectionEvent): void
                 public actionPerformed(arg0: java.awt.event.ActionEvent): void
-                protected setTree(arg0: javax.swing.JTree | javax.swing.JTree$$Lambda): void
+                protected setTree(arg0: javax.swing.JTree): void
                 protected shouldStartEditingTimer(arg0: java.util.EventObject): boolean
                 protected startEditingTimer(): void
                 protected canEditImmediately(arg0: java.util.EventObject): boolean
                 protected inHitRegion(arg0: int, arg1: int): boolean
-                protected determineOffset(arg0: javax.swing.JTree | javax.swing.JTree$$Lambda, arg1: java.lang.Object, arg2: boolean, arg3: boolean, arg4: boolean, arg5: int): void
+                protected determineOffset(arg0: javax.swing.JTree, arg1: java.lang.Object, arg2: boolean, arg3: boolean, arg4: boolean, arg5: int): void
                 protected prepareForEditing(): void
                 protected createContainer(): java.awt.Container
                 protected createTreeCellEditor(): javax.swing.tree.TreeCellEditor

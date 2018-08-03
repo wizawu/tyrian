@@ -22,9 +22,6 @@ declare namespace jdk {
                                 public toString(): string
                                 public static class: java.lang.Class<any>
                             }
-                            class BasicValue$$Lambda implements jdk.internal.org.objectweb.asm.tree.analysis.Value {
-                                public static UNINITIALIZED_VALUE: jdk.internal.org.objectweb.asm.tree.analysis.BasicValue
-                            }
                         }
                     }
                 }

@@ -4,6 +4,9 @@ declare namespace java {
             interface RunnableScheduledFuture<V> extends java.util.concurrent.RunnableFuture<V> , java.util.concurrent.ScheduledFuture<V> {
                 isPeriodic(): boolean
             }
+            interface RunnableScheduledFuture$$Lambda<V> extends java.util.concurrent.RunnableFuture<V> , java.util.concurrent.ScheduledFuture<V> {
+                (): boolean
+            }
         }
     }
 }

@@ -13,8 +13,8 @@ declare namespace javax {
             public remove(arg0: int): void
             public removeAll(): void
             public isOptimizedDrawingEnabled(): boolean
-            public static putLayer(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: int): void
-            public static getLayer(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): int
+            public static putLayer(arg0: javax.swing.JComponent, arg1: int): void
+            public static getLayer(arg0: javax.swing.JComponent): int
             public static getLayeredPaneAbove(arg0: java.awt.Component): javax.swing.JLayeredPane
             public setLayer(arg0: java.awt.Component, arg1: int): void
             public setLayer(arg0: java.awt.Component, arg1: int, arg2: int): void
@@ -35,9 +35,6 @@ declare namespace javax {
             protected paramString(): string
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
-        }
-        class JLayeredPane$$Lambda extends javax.swing.JComponent implements javax.accessibility.Accessible {
-            public static DEFAULT_LAYER: java.lang.Integer
         }
     }
 }

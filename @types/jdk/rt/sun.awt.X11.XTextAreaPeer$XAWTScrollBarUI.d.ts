@@ -8,8 +8,8 @@ declare namespace sun {
                 protected createIncreaseButton(arg0: int): javax.swing.JButton
                 public getDecreaseButton(): javax.swing.JButton
                 public getIncreaseButton(): javax.swing.JButton
-                public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                public paintThumb(arg0: java.awt.Graphics, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg2: java.awt.Rectangle): void
+                public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
+                public paintThumb(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: java.awt.Rectangle): void
                 public static class: java.lang.Class<any>
             }
         }

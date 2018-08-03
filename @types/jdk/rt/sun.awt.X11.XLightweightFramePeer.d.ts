@@ -20,8 +20,8 @@ declare namespace sun {
                 public setState(arg0: int): void
                 public getState(): int
                 public setMaximizedBounds(arg0: java.awt.Rectangle): void
-                public setMenuBar(arg0: java.awt.MenuBar | java.awt.MenuBar$$Lambda): void
-                public handleWindowFocusOut(arg0: java.awt.Window | java.awt.Window$$Lambda, arg1: long): void
+                public setMenuBar(arg0: java.awt.MenuBar): void
+                public handleWindowFocusOut(arg0: java.awt.Window, arg1: long): void
                 public handleWindowFocusIn(arg0: long): void
                 public requestWindowFocus(arg0: long, arg1: boolean): boolean
                 public handleQuit(): void
@@ -86,7 +86,7 @@ declare namespace sun {
                 public paletteChanged(): void
                 public displayChanged(): void
                 public checkIfOnNewScreen(arg0: java.awt.Rectangle): void
-                public handleWindowFocusOutSync(arg0: java.awt.Window | java.awt.Window$$Lambda, arg1: long): void
+                public handleWindowFocusOutSync(arg0: java.awt.Window, arg1: long): void
                 public handleWindowFocusInSync(arg0: long): void
                 public handleWindowFocusIn_Dispatch(): void
                 public insets(): java.awt.Insets

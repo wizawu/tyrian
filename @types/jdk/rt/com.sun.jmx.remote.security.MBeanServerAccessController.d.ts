@@ -11,8 +11,8 @@ declare namespace com {
                         protected checkWrite(): void
                         protected checkCreate(arg0: java.lang.String | string): void
                         protected checkUnregister(arg0: javax.management.ObjectName): void
-                        public addNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
-                        public addNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
+                        public addNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda, arg2: javax.management.NotificationFilter | javax.management.NotificationFilter$$Lambda, arg3: java.lang.Object): void
+                        public addNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName, arg2: javax.management.NotificationFilter | javax.management.NotificationFilter$$Lambda, arg3: java.lang.Object): void
                         public createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName): javax.management.ObjectInstance
                         public createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName, arg2: java.lang.Object[], arg3: java.lang.String[]): javax.management.ObjectInstance
                         public createMBean(arg0: java.lang.String | string, arg1: javax.management.ObjectName, arg2: javax.management.ObjectName): javax.management.ObjectInstance
@@ -40,10 +40,10 @@ declare namespace com {
                         public queryMBeans(arg0: javax.management.ObjectName, arg1: javax.management.QueryExp): java.util.Set<javax.management.ObjectInstance>
                         public queryNames(arg0: javax.management.ObjectName, arg1: javax.management.QueryExp): java.util.Set<javax.management.ObjectName>
                         public registerMBean(arg0: java.lang.Object, arg1: javax.management.ObjectName): javax.management.ObjectInstance
-                        public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener): void
-                        public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
+                        public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda): void
+                        public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda, arg2: javax.management.NotificationFilter | javax.management.NotificationFilter$$Lambda, arg3: java.lang.Object): void
                         public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName): void
-                        public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): void
+                        public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.ObjectName, arg2: javax.management.NotificationFilter | javax.management.NotificationFilter$$Lambda, arg3: java.lang.Object): void
                         public setAttribute(arg0: javax.management.ObjectName, arg1: javax.management.Attribute): void
                         public setAttributes(arg0: javax.management.ObjectName, arg1: javax.management.AttributeList): javax.management.AttributeList
                         public unregisterMBean(arg0: javax.management.ObjectName): void

@@ -18,7 +18,7 @@ declare namespace com {
                                 public copy(): com.sun.xml.internal.ws.api.message.Message
                                 public readEnvelopeAsSource(): javax.xml.transform.Source
                                 public readAsSOAPMessage(): javax.xml.soap.SOAPMessage
-                                public readAsSOAPMessage(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda, arg1: boolean): javax.xml.soap.SOAPMessage
+                                public readAsSOAPMessage(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: boolean): javax.xml.soap.SOAPMessage
                                 public readPayloadAsJAXB<T>(arg0: javax.xml.bind.Unmarshaller): T
                                 public readPayloadAsJAXB<T>(arg0: com.sun.xml.internal.bind.api.Bridge<T>): T
                                 public readPayloadAsJAXB<T>(arg0: com.sun.xml.internal.ws.spi.db.XMLBridge<T>): T

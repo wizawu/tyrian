@@ -18,8 +18,8 @@ declare namespace javax {
             protected getColumnWidth(): int
             public getPreferredSize(): java.awt.Dimension
             public setFont(arg0: java.awt.Font): void
-            public addActionListener(arg0: java.awt.event.ActionListener): void
-            public removeActionListener(arg0: java.awt.event.ActionListener): void
+            public addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
+            public removeActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
             public getActionListeners(): java.awt.event.ActionListener[]
             protected fireActionPerformed(): void
             public setActionCommand(arg0: java.lang.String | string): void

@@ -5,6 +5,9 @@ declare namespace javax {
                 interface IntersectionType extends javax.lang.model.type.TypeMirror {
                     getBounds(): java.util.List<javax.lang.model.type.TypeMirror>
                 }
+                interface IntersectionType$$Lambda extends javax.lang.model.type.TypeMirror {
+                    (): java.util.List<javax.lang.model.type.TypeMirror>
+                }
             }
         }
     }

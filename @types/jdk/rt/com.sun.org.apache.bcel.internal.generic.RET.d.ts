@@ -16,9 +16,6 @@ declare namespace com {
                                 public accept(arg0: com.sun.org.apache.bcel.internal.generic.Visitor): void
                                 public static class: java.lang.Class<any>
                             }
-                            class RET$$Lambda extends com.sun.org.apache.bcel.internal.generic.Instruction implements com.sun.org.apache.bcel.internal.generic.IndexedInstruction , com.sun.org.apache.bcel.internal.generic.TypedInstruction {
-                                public constructor(arg0: int)
-                            }
                         }
                     }
                 }

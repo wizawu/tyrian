@@ -15,7 +15,7 @@ declare namespace javax {
                     hides(arg0: javax.lang.model.element.Element, arg1: javax.lang.model.element.Element): boolean
                     overrides(arg0: javax.lang.model.element.ExecutableElement, arg1: javax.lang.model.element.ExecutableElement, arg2: javax.lang.model.element.TypeElement): boolean
                     getConstantExpression(arg0: java.lang.Object): string
-                    printElements(arg0: java.io.Writer | java.io.Writer$$Lambda, ...arg1: javax.lang.model.element.Element[]): void
+                    printElements(arg0: java.io.Writer, ...arg1: javax.lang.model.element.Element[]): void
                     getName(arg0: java.lang.CharSequence): javax.lang.model.element.Name
                     isFunctionalInterface(arg0: javax.lang.model.element.TypeElement): boolean
                 }

@@ -2,8 +2,8 @@ declare namespace sun {
     namespace rmi {
         namespace server {
             class MarshalOutputStream extends java.io.ObjectOutputStream {
-                public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda)
-                public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: int)
+                public constructor(arg0: java.io.OutputStream)
+                public constructor(arg0: java.io.OutputStream, arg1: int)
                 protected replaceObject(arg0: java.lang.Object): java.lang.Object
                 protected annotateClass(arg0: java.lang.Class<any>): void
                 protected annotateProxyClass(arg0: java.lang.Class<any>): void

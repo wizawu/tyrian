@@ -8,9 +8,6 @@ declare namespace com {
                     public event(): com.sun.nio.sctp.AssociationChangeNotification$AssocChangeEvent
                     public static class: java.lang.Class<any>
                 }
-                abstract class AssociationChangeNotification$$Lambda implements com.sun.nio.sctp.Notification {
-                    protected constructor()
-                }
             }
         }
     }

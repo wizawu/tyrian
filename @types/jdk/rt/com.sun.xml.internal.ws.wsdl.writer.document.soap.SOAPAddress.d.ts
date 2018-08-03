@@ -10,6 +10,9 @@ declare namespace com {
                                     interface SOAPAddress extends com.sun.xml.internal.txw2.TypedXmlWriter {
                                         location(arg0: java.lang.String | string): com.sun.xml.internal.ws.wsdl.writer.document.soap.SOAPAddress
                                     }
+                                    interface SOAPAddress$$Lambda extends com.sun.xml.internal.txw2.TypedXmlWriter {
+                                        (arg0: java.lang.String | string): com.sun.xml.internal.ws.wsdl.writer.document.soap.SOAPAddress
+                                    }
                                 }
                             }
                         }

@@ -7,7 +7,7 @@ declare namespace com {
                 public constructor(arg0: com.ibm.cuda.CudaKernel$Parameters)
                 public add(arg0: byte): com.ibm.cuda.CudaKernel$Parameters
                 public add(arg0: char): com.ibm.cuda.CudaKernel$Parameters
-                public add(arg0: com.ibm.cuda.CudaBuffer | com.ibm.cuda.CudaBuffer$$Lambda): com.ibm.cuda.CudaKernel$Parameters
+                public add(arg0: com.ibm.cuda.CudaBuffer): com.ibm.cuda.CudaKernel$Parameters
                 public add(arg0: double): com.ibm.cuda.CudaKernel$Parameters
                 public add(arg0: float): com.ibm.cuda.CudaKernel$Parameters
                 public add(arg0: int): com.ibm.cuda.CudaKernel$Parameters
@@ -16,7 +16,7 @@ declare namespace com {
                 public clone(): com.ibm.cuda.CudaKernel$Parameters
                 public set(arg0: int, arg1: byte): com.ibm.cuda.CudaKernel$Parameters
                 public set(arg0: int, arg1: char): com.ibm.cuda.CudaKernel$Parameters
-                public set(arg0: int, arg1: com.ibm.cuda.CudaBuffer | com.ibm.cuda.CudaBuffer$$Lambda): com.ibm.cuda.CudaKernel$Parameters
+                public set(arg0: int, arg1: com.ibm.cuda.CudaBuffer): com.ibm.cuda.CudaKernel$Parameters
                 public set(arg0: int, arg1: double): com.ibm.cuda.CudaKernel$Parameters
                 public set(arg0: int, arg1: float): com.ibm.cuda.CudaKernel$Parameters
                 public set(arg0: int, arg1: int): com.ibm.cuda.CudaKernel$Parameters

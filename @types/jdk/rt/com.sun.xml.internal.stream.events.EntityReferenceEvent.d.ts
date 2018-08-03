@@ -9,7 +9,7 @@ declare namespace com {
                             public constructor(arg0: java.lang.String | string, arg1: javax.xml.stream.events.EntityDeclaration)
                             public getName(): string
                             public toString(): string
-                            protected writeAsEncodedUnicodeEx(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+                            protected writeAsEncodedUnicodeEx(arg0: java.io.Writer): void
                             public getDeclaration(): javax.xml.stream.events.EntityDeclaration
                             protected init(): void
                             public static class: java.lang.Class<any>

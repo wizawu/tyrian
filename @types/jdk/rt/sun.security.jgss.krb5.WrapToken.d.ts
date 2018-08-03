@@ -8,7 +8,7 @@ declare namespace sun {
                     public getData(): byte[]
                     public getData(arg0: byte[], arg1: int): int
                     public constructor(arg0: sun.security.jgss.krb5.Krb5Context, arg1: org.ietf.jgss.MessageProp, arg2: byte[], arg3: int, arg4: int)
-                    public encode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                    public encode(arg0: java.io.OutputStream): void
                     public encode(): byte[]
                     public encode(arg0: byte[], arg1: int): int
                     protected getKrb5TokenSize(): int

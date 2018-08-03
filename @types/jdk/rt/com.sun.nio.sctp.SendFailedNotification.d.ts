@@ -11,9 +11,6 @@ declare namespace com {
                     public streamNumber(): int
                     public static class: java.lang.Class<any>
                 }
-                abstract class SendFailedNotification$$Lambda implements com.sun.nio.sctp.Notification {
-                    protected constructor()
-                }
             }
         }
     }

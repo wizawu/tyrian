@@ -3,7 +3,7 @@ declare namespace sun {
         namespace pkcs10 {
             class PKCS10 {
                 public constructor(arg0: java.security.PublicKey)
-                public constructor(arg0: java.security.PublicKey, arg1: sun.security.pkcs10.PKCS10Attributes | sun.security.pkcs10.PKCS10Attributes$$Lambda)
+                public constructor(arg0: java.security.PublicKey, arg1: sun.security.pkcs10.PKCS10Attributes)
                 public constructor(arg0: byte[])
                 public encodeAndSign(arg0: sun.security.x509.X500Name, arg1: java.security.Signature): void
                 public getSubjectName(): sun.security.x509.X500Name

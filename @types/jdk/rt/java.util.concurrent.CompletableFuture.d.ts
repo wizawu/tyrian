@@ -18,9 +18,9 @@ declare namespace java {
                 public thenApply<U>(arg0: java.util.function$.Function<T, U>): java.util.concurrent.CompletableFuture<U>
                 public thenApplyAsync<U>(arg0: java.util.function$.Function<T, U>): java.util.concurrent.CompletableFuture<U>
                 public thenApplyAsync<U>(arg0: java.util.function$.Function<T, U>, arg1: java.util.concurrent.Executor | java.util.concurrent.Executor$$Lambda): java.util.concurrent.CompletableFuture<U>
-                public thenAccept<U>(arg0: java.util.function$.Consumer$$TypeScript<T>): java.util.concurrent.CompletableFuture<java.lang.Void>
-                public thenAcceptAsync<U>(arg0: java.util.function$.Consumer$$TypeScript<T>): java.util.concurrent.CompletableFuture<java.lang.Void>
-                public thenAcceptAsync<U>(arg0: java.util.function$.Consumer$$TypeScript<T>, arg1: java.util.concurrent.Executor | java.util.concurrent.Executor$$Lambda): java.util.concurrent.CompletableFuture<java.lang.Void>
+                public thenAccept<U>(arg0: java.util.function$.Consumer$$Lambda<T>): java.util.concurrent.CompletableFuture<java.lang.Void>
+                public thenAcceptAsync<U>(arg0: java.util.function$.Consumer$$Lambda<T>): java.util.concurrent.CompletableFuture<java.lang.Void>
+                public thenAcceptAsync<U>(arg0: java.util.function$.Consumer$$Lambda<T>, arg1: java.util.concurrent.Executor | java.util.concurrent.Executor$$Lambda): java.util.concurrent.CompletableFuture<java.lang.Void>
                 public thenRun<U>(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda): java.util.concurrent.CompletableFuture<java.lang.Void>
                 public thenRunAsync<U>(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda): java.util.concurrent.CompletableFuture<java.lang.Void>
                 public thenRunAsync<U>(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda, arg1: java.util.concurrent.Executor | java.util.concurrent.Executor$$Lambda): java.util.concurrent.CompletableFuture<java.lang.Void>
@@ -36,9 +36,9 @@ declare namespace java {
                 public applyToEither<U>(arg0: java.util.concurrent.CompletionStage<T>, arg1: java.util.function$.Function<T, U>): java.util.concurrent.CompletableFuture<U>
                 public applyToEitherAsync<U>(arg0: java.util.concurrent.CompletionStage<T>, arg1: java.util.function$.Function<T, U>): java.util.concurrent.CompletableFuture<U>
                 public applyToEitherAsync<U>(arg0: java.util.concurrent.CompletionStage<T>, arg1: java.util.function$.Function<T, U>, arg2: java.util.concurrent.Executor | java.util.concurrent.Executor$$Lambda): java.util.concurrent.CompletableFuture<U>
-                public acceptEither<U>(arg0: java.util.concurrent.CompletionStage<T>, arg1: java.util.function$.Consumer$$TypeScript<T>): java.util.concurrent.CompletableFuture<java.lang.Void>
-                public acceptEitherAsync<U>(arg0: java.util.concurrent.CompletionStage<T>, arg1: java.util.function$.Consumer$$TypeScript<T>): java.util.concurrent.CompletableFuture<java.lang.Void>
-                public acceptEitherAsync<U>(arg0: java.util.concurrent.CompletionStage<T>, arg1: java.util.function$.Consumer$$TypeScript<T>, arg2: java.util.concurrent.Executor | java.util.concurrent.Executor$$Lambda): java.util.concurrent.CompletableFuture<java.lang.Void>
+                public acceptEither<U>(arg0: java.util.concurrent.CompletionStage<T>, arg1: java.util.function$.Consumer$$Lambda<T>): java.util.concurrent.CompletableFuture<java.lang.Void>
+                public acceptEitherAsync<U>(arg0: java.util.concurrent.CompletionStage<T>, arg1: java.util.function$.Consumer$$Lambda<T>): java.util.concurrent.CompletableFuture<java.lang.Void>
+                public acceptEitherAsync<U>(arg0: java.util.concurrent.CompletionStage<T>, arg1: java.util.function$.Consumer$$Lambda<T>, arg2: java.util.concurrent.Executor | java.util.concurrent.Executor$$Lambda): java.util.concurrent.CompletableFuture<java.lang.Void>
                 public runAfterEither<U>(arg0: java.util.concurrent.CompletionStage<any>, arg1: java.lang.Runnable | java.lang.Runnable$$Lambda): java.util.concurrent.CompletableFuture<java.lang.Void>
                 public runAfterEitherAsync<U>(arg0: java.util.concurrent.CompletionStage<any>, arg1: java.lang.Runnable | java.lang.Runnable$$Lambda): java.util.concurrent.CompletableFuture<java.lang.Void>
                 public runAfterEitherAsync<U>(arg0: java.util.concurrent.CompletionStage<any>, arg1: java.lang.Runnable | java.lang.Runnable$$Lambda, arg2: java.util.concurrent.Executor | java.util.concurrent.Executor$$Lambda): java.util.concurrent.CompletableFuture<java.lang.Void>

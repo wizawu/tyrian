@@ -6,7 +6,7 @@ declare namespace javax {
                     protected toolBar: javax.swing.JToolBar
                     protected isDragging: boolean
                     protected origin: java.awt.Point
-                    public constructor(arg0: javax.swing.plaf.basic.BasicToolBarUI, arg1: javax.swing.JToolBar | javax.swing.JToolBar$$Lambda)
+                    public constructor(arg0: javax.swing.plaf.basic.BasicToolBarUI, arg1: javax.swing.JToolBar)
                     public mouseClicked(arg0: java.awt.event.MouseEvent): void
                     public mousePressed(arg0: java.awt.event.MouseEvent): void
                     public mouseReleased(arg0: java.awt.event.MouseEvent): void

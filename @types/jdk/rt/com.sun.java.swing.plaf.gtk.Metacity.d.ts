@@ -11,9 +11,9 @@ declare namespace com {
                             protected tileImage(arg0: java.awt.Graphics, arg1: java.awt.Image, arg2: int, arg3: int, arg4: int, arg5: int, arg6: float[]): void
                             protected getImage(arg0: java.lang.String | string, arg1: java.awt.Color): java.awt.Image
                             protected getImage(arg0: java.lang.String | string): java.awt.Image
-                            protected static findChild(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: java.lang.String | string): javax.swing.JComponent
+                            protected static findChild(arg0: javax.swing.JComponent, arg1: java.lang.String | string): javax.swing.JComponent
                             protected getFrameGeometry(): java.util.Map
-                            protected setFrameGeometry(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: java.util.Map): void
+                            protected setFrameGeometry(arg0: javax.swing.JComponent, arg1: java.util.Map): void
                             protected getInt(arg0: java.lang.String | string): int
                             protected getBoolean(arg0: java.lang.String | string, arg1: boolean): boolean
                             protected drawArc(arg0: org.w3c.dom.Node, arg1: java.awt.Graphics): void
@@ -22,7 +22,7 @@ declare namespace com {
                             protected drawTile(arg0: org.w3c.dom.Node, arg1: java.awt.Graphics, arg2: javax.swing.JInternalFrame): void
                             protected drawTint(arg0: org.w3c.dom.Node, arg1: java.awt.Graphics): void
                             protected drawTitle(arg0: org.w3c.dom.Node, arg1: java.awt.Graphics, arg2: javax.swing.JInternalFrame): void
-                            protected calculateButtonSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
+                            protected calculateButtonSize(arg0: javax.swing.JComponent): java.awt.Dimension
                             protected calculateTitleArea(arg0: javax.swing.JInternalFrame): java.awt.Rectangle
                             protected calculateTitleTextWidth(arg0: java.awt.Graphics, arg1: javax.swing.JInternalFrame): int
                             protected setClip(arg0: org.w3c.dom.Node, arg1: java.awt.Graphics): void

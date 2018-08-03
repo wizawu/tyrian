@@ -4,7 +4,7 @@ declare namespace sun {
             class DrawPolygons$TraceDrawPolygons extends sun.java2d.loops.DrawPolygons {
                 public constructor(arg0: sun.java2d.loops.DrawPolygons)
                 public traceWrap(): sun.java2d.loops.GraphicsPrimitive
-                public DrawPolygons(arg0: sun.java2d.SunGraphics2D | sun.java2d.SunGraphics2D$$Lambda, arg1: sun.java2d.SurfaceData, arg2: int[], arg3: int[], arg4: int[], arg5: int, arg6: int, arg7: int, arg8: boolean): void
+                public DrawPolygons(arg0: sun.java2d.SunGraphics2D, arg1: sun.java2d.SurfaceData, arg2: int[], arg3: int[], arg4: int[], arg5: int, arg6: int, arg7: int, arg8: boolean): void
                 public static class: java.lang.Class<any>
             }
         }

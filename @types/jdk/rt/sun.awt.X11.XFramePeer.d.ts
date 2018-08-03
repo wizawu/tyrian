@@ -2,7 +2,7 @@ declare namespace sun {
     namespace awt {
         namespace X11 {
             class XFramePeer extends sun.awt.X11.XDecoratedPeer implements java.awt.peer.FramePeer {
-                public setMenuBar(arg0: java.awt.MenuBar | java.awt.MenuBar$$Lambda): void
+                public setMenuBar(arg0: java.awt.MenuBar): void
                 public setMaximizedBounds(arg0: java.awt.Rectangle): void
                 public getState(): int
                 public setState(arg0: int): void

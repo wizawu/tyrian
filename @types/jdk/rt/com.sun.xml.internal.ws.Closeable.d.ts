@@ -6,6 +6,9 @@ declare namespace com {
                     interface Closeable extends java.io.Closeable {
                         close(): void
                     }
+                    interface Closeable$$Lambda extends java.io.Closeable {
+                        (): void
+                    }
                 }
             }
         }

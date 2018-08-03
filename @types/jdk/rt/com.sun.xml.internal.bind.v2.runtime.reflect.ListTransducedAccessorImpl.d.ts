@@ -7,7 +7,7 @@ declare namespace com {
                         namespace runtime {
                             namespace reflect {
                                 class ListTransducedAccessorImpl<BeanT, ListT, ItemT, PackT> extends com.sun.xml.internal.bind.v2.runtime.reflect.DefaultTransducedAccessor<BeanT> {
-                                    public constructor(arg0: com.sun.xml.internal.bind.v2.runtime.Transducer<ItemT>, arg1: com.sun.xml.internal.bind.v2.runtime.reflect.Accessor<BeanT, ListT> | com.sun.xml.internal.bind.v2.runtime.reflect.Accessor$$Lambda<BeanT, ListT>, arg2: com.sun.xml.internal.bind.v2.runtime.reflect.Lister<BeanT, ListT, ItemT, PackT>)
+                                    public constructor(arg0: com.sun.xml.internal.bind.v2.runtime.Transducer<ItemT>, arg1: com.sun.xml.internal.bind.v2.runtime.reflect.Accessor<BeanT, ListT>, arg2: com.sun.xml.internal.bind.v2.runtime.reflect.Lister<BeanT, ListT, ItemT, PackT>)
                                     public useNamespace(): boolean
                                     public declareNamespace(arg0: BeanT, arg1: com.sun.xml.internal.bind.v2.runtime.XMLSerializer): void
                                     public print(arg0: BeanT): string

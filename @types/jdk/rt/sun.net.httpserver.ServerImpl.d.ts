@@ -17,9 +17,6 @@ declare namespace sun {
                 public getTime(): long
                 public static class: java.lang.Class<any>
             }
-            class ServerImpl$$Lambda implements sun.net.httpserver.TimeSource {
-                public (arg0: java.net.InetSocketAddress, arg1: int): void
-            }
         }
     }
 }

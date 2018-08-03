@@ -8,11 +8,11 @@ declare namespace sun {
             protected startDoc(): void
             protected abortDoc(): void
             protected endDoc(): void
-            protected startPage(arg0: java.awt.print.PageFormat, arg1: java.awt.print.Printable, arg2: int, arg3: boolean): void
-            protected endPage(arg0: java.awt.print.PageFormat, arg1: java.awt.print.Printable, arg2: int): void
+            protected startPage(arg0: java.awt.print.PageFormat, arg1: java.awt.print.Printable | java.awt.print.Printable$$Lambda, arg2: int, arg3: boolean): void
+            protected endPage(arg0: java.awt.print.PageFormat, arg1: java.awt.print.Printable | java.awt.print.Printable$$Lambda, arg2: int): void
             protected drawImageBGR(arg0: byte[], arg1: float, arg2: float, arg3: float, arg4: float, arg5: float, arg6: float, arg7: float, arg8: float, arg9: int, arg10: int): void
             protected printBand(arg0: byte[], arg1: int, arg2: int, arg3: int, arg4: int): void
-            protected createPathGraphics(arg0: sun.print.PeekGraphics, arg1: java.awt.print.PrinterJob, arg2: java.awt.print.Printable, arg3: java.awt.print.PageFormat, arg4: int): java.awt.Graphics2D
+            protected createPathGraphics(arg0: sun.print.PeekGraphics, arg1: java.awt.print.PrinterJob, arg2: java.awt.print.Printable | java.awt.print.Printable$$Lambda, arg3: java.awt.print.PageFormat, arg4: int): java.awt.Graphics2D
             protected selectClipPath(): void
             protected setClip(arg0: java.awt.Shape): void
             protected setTransform(arg0: java.awt.geom.AffineTransform): void

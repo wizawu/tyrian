@@ -4,6 +4,9 @@ declare namespace javax {
             interface CaretListener extends java.util.EventListener {
                 caretUpdate(arg0: javax.swing.event.CaretEvent): void
             }
+            interface CaretListener$$Lambda extends java.util.EventListener {
+                (arg0: javax.swing.event.CaretEvent): void
+            }
         }
     }
 }

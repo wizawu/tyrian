@@ -6,6 +6,9 @@ declare namespace com {
                     interface ParameterNames extends java.lang.annotation.Annotation {
                         value(): java.lang.String[]
                     }
+                    interface ParameterNames$$Lambda extends java.lang.annotation.Annotation {
+                        (): java.lang.String[]
+                    }
                 }
             }
         }

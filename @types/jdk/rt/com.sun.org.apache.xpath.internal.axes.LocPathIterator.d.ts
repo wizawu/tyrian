@@ -68,9 +68,6 @@ declare namespace com {
                                 public getLastPos(arg0: com.sun.org.apache.xpath.internal.XPathContext): int
                                 public static class: java.lang.Class<any>
                             }
-                            abstract class LocPathIterator$$Lambda extends com.sun.org.apache.xpath.internal.axes.PredicatedNodeTest implements java.lang.Cloneable , com.sun.org.apache.xml.internal.dtm.DTMIterator , java.io.Serializable , com.sun.org.apache.xpath.internal.axes.PathComponent {
-                                protected m_allowDetach: boolean
-                            }
                         }
                     }
                 }

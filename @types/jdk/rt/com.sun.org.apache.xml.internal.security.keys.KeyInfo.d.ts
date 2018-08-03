@@ -16,8 +16,8 @@ declare namespace com {
                                     public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.KeyName): void
                                     public addKeyValue(arg0: java.security.PublicKey): void
                                     public addKeyValue(arg0: org.w3c.dom.Element): void
-                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.keyvalues.DSAKeyValue | com.sun.org.apache.xml.internal.security.keys.content.keyvalues.DSAKeyValue$$Lambda): void
-                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.keyvalues.RSAKeyValue | com.sun.org.apache.xml.internal.security.keys.content.keyvalues.RSAKeyValue$$Lambda): void
+                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.keyvalues.DSAKeyValue): void
+                                    public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.keyvalues.RSAKeyValue): void
                                     public add(arg0: java.security.PublicKey): void
                                     public add(arg0: com.sun.org.apache.xml.internal.security.keys.content.KeyValue): void
                                     public addMgmtData(arg0: java.lang.String | string): void

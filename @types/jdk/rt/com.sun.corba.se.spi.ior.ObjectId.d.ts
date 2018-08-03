@@ -7,6 +7,9 @@ declare namespace com {
                         interface ObjectId extends com.sun.corba.se.spi.ior.Writeable {
                             getId(): byte[]
                         }
+                        interface ObjectId$$Lambda extends com.sun.corba.se.spi.ior.Writeable {
+                            (): byte[]
+                        }
                     }
                 }
             }

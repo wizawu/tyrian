@@ -8,6 +8,9 @@ declare namespace com {
                             interface MaxStreamFormatVersionComponent extends com.sun.corba.se.spi.ior.TaggedComponent {
                                 getMaxStreamFormatVersion(): byte
                             }
+                            interface MaxStreamFormatVersionComponent$$Lambda extends com.sun.corba.se.spi.ior.TaggedComponent {
+                                (): byte
+                            }
                         }
                     }
                 }

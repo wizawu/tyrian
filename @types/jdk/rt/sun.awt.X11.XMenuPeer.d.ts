@@ -5,7 +5,7 @@ declare namespace sun {
                 public dispose(): void
                 public setFont(arg0: java.awt.Font): void
                 public addSeparator(): void
-                public addItem(arg0: java.awt.MenuItem | java.awt.MenuItem$$Lambda): void
+                public addItem(arg0: java.awt.MenuItem): void
                 public delItem(arg0: int): void
                 public static class: java.lang.Class<any>
             }

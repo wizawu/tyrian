@@ -15,8 +15,8 @@ declare namespace com {
                                 protected fNamespacePrefixes: boolean
                                 public constructor()
                                 public constructor(arg0: com.sun.org.apache.xml.internal.serialize.OutputFormat)
-                                public constructor(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: com.sun.org.apache.xml.internal.serialize.OutputFormat)
-                                public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: com.sun.org.apache.xml.internal.serialize.OutputFormat)
+                                public constructor(arg0: java.io.Writer, arg1: com.sun.org.apache.xml.internal.serialize.OutputFormat)
+                                public constructor(arg0: java.io.OutputStream, arg1: com.sun.org.apache.xml.internal.serialize.OutputFormat)
                                 public setOutputFormat(arg0: com.sun.org.apache.xml.internal.serialize.OutputFormat): void
                                 public setNamespaces(arg0: boolean): void
                                 public startElement(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: org.xml.sax.Attributes): void

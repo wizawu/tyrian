@@ -6,9 +6,6 @@ declare namespace javax {
                     public createValue(arg0: javax.swing.UIDefaults): java.lang.Object
                     public static class: java.lang.Class<any>
                 }
-                class BasicLookAndFeel$2$$Lambda implements javax.swing.UIDefaults$ActiveValue {
-                    public (arg0: javax.swing.UIDefaults): java.lang.Object
-                }
             }
         }
     }

@@ -36,10 +36,10 @@ declare namespace com {
                     public getTrackMute(arg0: int): boolean
                     public setTrackSolo(arg0: int, arg1: boolean): void
                     public getTrackSolo(arg0: int): boolean
-                    public addMetaEventListener(arg0: javax.sound.midi.MetaEventListener): boolean
-                    public removeMetaEventListener(arg0: javax.sound.midi.MetaEventListener): void
-                    public addControllerEventListener(arg0: javax.sound.midi.ControllerEventListener, arg1: int[]): int[]
-                    public removeControllerEventListener(arg0: javax.sound.midi.ControllerEventListener, arg1: int[]): int[]
+                    public addMetaEventListener(arg0: javax.sound.midi.MetaEventListener | javax.sound.midi.MetaEventListener$$Lambda): boolean
+                    public removeMetaEventListener(arg0: javax.sound.midi.MetaEventListener | javax.sound.midi.MetaEventListener$$Lambda): void
+                    public addControllerEventListener(arg0: javax.sound.midi.ControllerEventListener | javax.sound.midi.ControllerEventListener$$Lambda, arg1: int[]): int[]
+                    public removeControllerEventListener(arg0: javax.sound.midi.ControllerEventListener | javax.sound.midi.ControllerEventListener$$Lambda, arg1: int[]): int[]
                     public setLoopStartPoint(arg0: long): void
                     public getLoopStartPoint(): long
                     public setLoopEndPoint(arg0: long): void
@@ -54,9 +54,6 @@ declare namespace com {
                     protected createTransmitter(): javax.sound.midi.Transmitter
                     public setAutoConnect(arg0: javax.sound.midi.Receiver): void
                     public static class: java.lang.Class<any>
-                }
-                class RealTimeSequencer$$Lambda extends com.sun.media.sound.AbstractMidiDevice implements javax.sound.midi.Sequencer , com.sun.media.sound.AutoConnectSequencer {
-                    public (arg0: javax.sound.midi.Sequence): void
                 }
             }
         }

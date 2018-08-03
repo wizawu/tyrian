@@ -10,8 +10,5 @@ declare namespace java {
             public toString(): string
             public static class: java.lang.Class<any>
         }
-        class KeyStore$PrivateKeyEntry$$Lambda implements java.security.KeyStore$Entry {
-            public constructor(arg0: java.security.PrivateKey, arg1: java.security.cert.Certificate[])
-        }
     }
 }

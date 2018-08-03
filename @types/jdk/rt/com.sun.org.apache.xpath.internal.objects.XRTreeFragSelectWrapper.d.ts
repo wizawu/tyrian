@@ -6,7 +6,7 @@ declare namespace com {
                     namespace internal {
                         namespace objects {
                             class XRTreeFragSelectWrapper extends com.sun.org.apache.xpath.internal.objects.XRTreeFrag implements java.lang.Cloneable {
-                                public constructor(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda)
+                                public constructor(arg0: com.sun.org.apache.xpath.internal.Expression)
                                 public fixupVariables(arg0: java.util.Vector, arg1: int): void
                                 public execute(arg0: com.sun.org.apache.xpath.internal.XPathContext): com.sun.org.apache.xpath.internal.objects.XObject
                                 public detach(): void

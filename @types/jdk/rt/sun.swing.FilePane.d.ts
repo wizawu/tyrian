@@ -28,7 +28,7 @@ declare namespace sun {
             public createListSelectionListener(): javax.swing.event.ListSelectionListener
             public getNewFolderAction(): javax.swing.Action
             public propertyChange(arg0: java.beans.PropertyChangeEvent): void
-            public ensureFileIsVisible(arg0: javax.swing.JFileChooser | javax.swing.JFileChooser$$Lambda, arg1: java.io.File): void
+            public ensureFileIsVisible(arg0: javax.swing.JFileChooser, arg1: java.io.File): void
             public rescanCurrentDirectory(): void
             public clearSelection(): void
             public getViewMenu(): javax.swing.JMenu
@@ -37,7 +37,7 @@ declare namespace sun {
             protected isDirectorySelected(): boolean
             protected getDirectory(): java.io.File
             public canWrite(arg0: java.io.File): boolean
-            public static usesShellFolder(arg0: javax.swing.JFileChooser | javax.swing.JFileChooser$$Lambda): boolean
+            public static usesShellFolder(arg0: javax.swing.JFileChooser): boolean
             public static class: java.lang.Class<any>
         }
     }

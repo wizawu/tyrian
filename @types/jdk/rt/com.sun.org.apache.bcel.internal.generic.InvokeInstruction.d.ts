@@ -16,9 +16,6 @@ declare namespace com {
                                 public getArgumentTypes(arg0: com.sun.org.apache.bcel.internal.generic.ConstantPoolGen): com.sun.org.apache.bcel.internal.generic.Type[]
                                 public static class: java.lang.Class<any>
                             }
-                            abstract class InvokeInstruction$$Lambda extends com.sun.org.apache.bcel.internal.generic.FieldOrMethod implements com.sun.org.apache.bcel.internal.generic.ExceptionThrower , com.sun.org.apache.bcel.internal.generic.TypedInstruction , com.sun.org.apache.bcel.internal.generic.StackConsumer , com.sun.org.apache.bcel.internal.generic.StackProducer {
-                                protected constructor(arg0: short, arg1: int)
-                            }
                         }
                     }
                 }

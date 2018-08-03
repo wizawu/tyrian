@@ -24,9 +24,6 @@ declare namespace javax {
                 protected lineToRect(arg0: java.awt.Shape, arg1: int): java.awt.Rectangle
                 public static class: java.lang.Class<any>
             }
-            class PlainView$$Lambda extends javax.swing.text.View implements javax.swing.text.TabExpander {
-                protected metrics: java.awt.FontMetrics
-            }
         }
     }
 }

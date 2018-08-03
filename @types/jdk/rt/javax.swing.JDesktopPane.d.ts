@@ -26,8 +26,5 @@ declare namespace javax {
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
         }
-        class JDesktopPane$$Lambda extends javax.swing.JLayeredPane implements javax.accessibility.Accessible {
-            public static LIVE_DRAG_MODE: int
-        }
     }
 }

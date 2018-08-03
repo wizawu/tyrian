@@ -2,7 +2,7 @@ declare namespace sun {
     namespace applet {
         class AppletViewer extends java.awt.Frame implements java.applet.AppletContext , java.awt.print.Printable {
             public constructor(arg0: int, arg1: int, arg2: java.net.URL, arg3: java.util.Hashtable, arg4: java.io.PrintStream, arg5: sun.applet.AppletViewerFactory)
-            public addMenuItem(arg0: java.awt.Menu | java.awt.Menu$$Lambda, arg1: java.lang.String | string): java.awt.MenuItem
+            public addMenuItem(arg0: java.awt.Menu, arg1: java.lang.String | string): java.awt.MenuItem
             public getAudioClip(arg0: java.net.URL): java.applet.AudioClip
             public getImage(arg0: java.net.URL): java.awt.Image
             public getApplet(arg0: java.lang.String | string): java.applet.Applet

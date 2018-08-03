@@ -31,7 +31,7 @@ declare namespace com {
                                 public getNotations(): org.w3c.dom.NamedNodeMap
                                 public setReadOnly(arg0: boolean, arg1: boolean): void
                                 public getElements(): org.w3c.dom.NamedNodeMap
-                                public setUserData(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: org.w3c.dom.UserDataHandler): java.lang.Object
+                                public setUserData(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: org.w3c.dom.UserDataHandler | org.w3c.dom.UserDataHandler$$Lambda): java.lang.Object
                                 public getUserData(arg0: java.lang.String | string): java.lang.Object
                                 protected getUserDataRecord(): java.util.Map<java.lang.String, com.sun.org.apache.xerces.internal.dom.ParentNode$UserDataRecord>
                                 public static class: java.lang.Class<any>

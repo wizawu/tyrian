@@ -8,7 +8,7 @@ declare namespace com {
                             class ClassGen extends com.sun.org.apache.bcel.internal.classfile.AccessFlags implements java.lang.Cloneable {
                                 public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: int, arg4: java.lang.String[], arg5: com.sun.org.apache.bcel.internal.generic.ConstantPoolGen)
                                 public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: int, arg4: java.lang.String[])
-                                public constructor(arg0: com.sun.org.apache.bcel.internal.classfile.JavaClass | com.sun.org.apache.bcel.internal.classfile.JavaClass$$Lambda)
+                                public constructor(arg0: com.sun.org.apache.bcel.internal.classfile.JavaClass)
                                 public getJavaClass(): com.sun.org.apache.bcel.internal.classfile.JavaClass
                                 public addInterface(arg0: java.lang.String | string): void
                                 public removeInterface(arg0: java.lang.String | string): void

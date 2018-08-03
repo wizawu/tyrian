@@ -10,9 +10,6 @@ declare namespace com {
                                 public evaluate(): java.lang.Object
                                 public static class: java.lang.Class<any>
                             }
-                            class Constant$$Lambda implements com.sun.corba.se.spi.orbutil.closure.Closure {
-                                public constructor(arg0: java.lang.Object)
-                            }
                         }
                     }
                 }

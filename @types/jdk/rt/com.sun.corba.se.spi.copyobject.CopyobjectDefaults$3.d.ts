@@ -8,9 +8,6 @@ declare namespace com {
                             public make(): com.sun.corba.se.spi.copyobject.ObjectCopier
                             public static class: java.lang.Class<any>
                         }
-                        class CopyobjectDefaults$3$$Lambda implements com.sun.corba.se.spi.copyobject.ObjectCopierFactory {
-                            public (): com.sun.corba.se.spi.copyobject.ObjectCopier
-                        }
                     }
                 }
             }

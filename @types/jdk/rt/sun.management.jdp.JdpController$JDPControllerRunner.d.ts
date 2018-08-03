@@ -6,9 +6,6 @@ declare namespace sun {
                 public stop(): void
                 public static class: java.lang.Class<any>
             }
-            class JdpController$JDPControllerRunner$$Lambda implements java.lang.Runnable {
-                public (): void
-            }
         }
     }
 }

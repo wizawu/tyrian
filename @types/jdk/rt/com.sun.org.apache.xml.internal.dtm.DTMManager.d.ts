@@ -17,7 +17,7 @@ declare namespace com {
                                 public getXMLStringFactory(): com.sun.org.apache.xml.internal.utils.XMLStringFactory
                                 public setXMLStringFactory(arg0: com.sun.org.apache.xml.internal.utils.XMLStringFactory): void
                                 public static newInstance(arg0: com.sun.org.apache.xml.internal.utils.XMLStringFactory): com.sun.org.apache.xml.internal.dtm.DTMManager
-                                public getDTM(arg0: javax.xml.transform.Source, arg1: boolean, arg2: com.sun.org.apache.xml.internal.dtm.DTMWSFilter, arg3: boolean, arg4: boolean): com.sun.org.apache.xml.internal.dtm.DTM
+                                public getDTM(arg0: javax.xml.transform.Source, arg1: boolean, arg2: com.sun.org.apache.xml.internal.dtm.DTMWSFilter | com.sun.org.apache.xml.internal.dtm.DTMWSFilter$$Lambda, arg3: boolean, arg4: boolean): com.sun.org.apache.xml.internal.dtm.DTM
                                 public getDTM(arg0: int): com.sun.org.apache.xml.internal.dtm.DTM
                                 public getDTMHandleFromNode(arg0: org.w3c.dom.Node): int
                                 public createDocumentFragment(): com.sun.org.apache.xml.internal.dtm.DTM

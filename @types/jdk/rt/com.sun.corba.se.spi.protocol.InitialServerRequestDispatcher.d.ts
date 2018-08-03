@@ -7,6 +7,9 @@ declare namespace com {
                         interface InitialServerRequestDispatcher extends com.sun.corba.se.spi.protocol.CorbaServerRequestDispatcher {
                             init(arg0: com.sun.corba.se.spi.resolver.Resolver): void
                         }
+                        interface InitialServerRequestDispatcher$$Lambda extends com.sun.corba.se.spi.protocol.CorbaServerRequestDispatcher {
+                            (arg0: com.sun.corba.se.spi.resolver.Resolver): void
+                        }
                     }
                 }
             }

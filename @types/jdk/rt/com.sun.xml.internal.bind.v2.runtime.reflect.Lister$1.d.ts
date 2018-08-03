@@ -8,10 +8,10 @@ declare namespace com {
                             namespace reflect {
                                 class Lister$1 extends com.sun.xml.internal.bind.v2.runtime.reflect.Lister {
                                     public iterator(arg0: java.lang.Object, arg1: com.sun.xml.internal.bind.v2.runtime.XMLSerializer): com.sun.xml.internal.bind.v2.runtime.reflect.ListIterator
-                                    public startPacking(arg0: java.lang.Object, arg1: com.sun.xml.internal.bind.v2.runtime.reflect.Accessor | com.sun.xml.internal.bind.v2.runtime.reflect.Accessor$$Lambda): java.lang.Object
+                                    public startPacking(arg0: java.lang.Object, arg1: com.sun.xml.internal.bind.v2.runtime.reflect.Accessor): java.lang.Object
                                     public addToPack(arg0: java.lang.Object, arg1: java.lang.Object): void
-                                    public endPacking(arg0: java.lang.Object, arg1: java.lang.Object, arg2: com.sun.xml.internal.bind.v2.runtime.reflect.Accessor | com.sun.xml.internal.bind.v2.runtime.reflect.Accessor$$Lambda): void
-                                    public reset(arg0: java.lang.Object, arg1: com.sun.xml.internal.bind.v2.runtime.reflect.Accessor | com.sun.xml.internal.bind.v2.runtime.reflect.Accessor$$Lambda): void
+                                    public endPacking(arg0: java.lang.Object, arg1: java.lang.Object, arg2: com.sun.xml.internal.bind.v2.runtime.reflect.Accessor): void
+                                    public reset(arg0: java.lang.Object, arg1: com.sun.xml.internal.bind.v2.runtime.reflect.Accessor): void
                                     public static class: java.lang.Class<any>
                                 }
                             }

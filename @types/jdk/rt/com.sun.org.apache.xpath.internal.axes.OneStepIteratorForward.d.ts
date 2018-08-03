@@ -11,7 +11,7 @@ declare namespace com {
                                 public setRoot(arg0: int, arg1: java.lang.Object): void
                                 protected getNextNode(): int
                                 public getAxis(): int
-                                public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda): boolean
+                                public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression): boolean
                                 public static class: java.lang.Class<any>
                             }
                         }

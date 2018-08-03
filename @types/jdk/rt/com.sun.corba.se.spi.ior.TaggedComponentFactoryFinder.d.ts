@@ -7,6 +7,9 @@ declare namespace com {
                         interface TaggedComponentFactoryFinder extends com.sun.corba.se.spi.ior.IdentifiableFactoryFinder {
                             create(arg0: org.omg.CORBA.ORB, arg1: org.omg.IOP.TaggedComponent): com.sun.corba.se.spi.ior.TaggedComponent
                         }
+                        interface TaggedComponentFactoryFinder$$Lambda extends com.sun.corba.se.spi.ior.IdentifiableFactoryFinder {
+                            (arg0: org.omg.CORBA.ORB, arg1: org.omg.IOP.TaggedComponent): com.sun.corba.se.spi.ior.TaggedComponent
+                        }
                     }
                 }
             }

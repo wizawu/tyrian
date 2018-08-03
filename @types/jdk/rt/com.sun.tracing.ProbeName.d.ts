@@ -4,6 +4,9 @@ declare namespace com {
             interface ProbeName extends java.lang.annotation.Annotation {
                 value(): string
             }
+            interface ProbeName$$Lambda extends java.lang.annotation.Annotation {
+                (): string
+            }
         }
     }
 }

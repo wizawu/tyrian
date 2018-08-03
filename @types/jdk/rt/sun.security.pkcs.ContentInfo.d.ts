@@ -20,7 +20,7 @@ declare namespace sun {
                 public getContent(): sun.security.util.DerValue
                 public getContentType(): sun.security.util.ObjectIdentifier
                 public getData(): byte[]
-                public encode(arg0: sun.security.util.DerOutputStream | sun.security.util.DerOutputStream$$Lambda): void
+                public encode(arg0: sun.security.util.DerOutputStream): void
                 public getContentBytes(): byte[]
                 public toString(): string
                 public static class: java.lang.Class<any>

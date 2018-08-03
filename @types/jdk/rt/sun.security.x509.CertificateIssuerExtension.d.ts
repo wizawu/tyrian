@@ -10,7 +10,7 @@ declare namespace sun {
                 public get(arg0: java.lang.String | string): sun.security.x509.GeneralNames
                 public delete(arg0: java.lang.String | string): void
                 public toString(): string
-                public encode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public encode(arg0: java.io.OutputStream): void
                 public getElements(): java.util.Enumeration<java.lang.String>
                 public getName(): string
                 public get(arg0: java.lang.String | string): java.lang.Object

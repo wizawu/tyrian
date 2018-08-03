@@ -9,8 +9,8 @@ declare namespace javax {
             public addComponent(arg0: boolean, arg1: java.awt.Component, arg2: int, arg3: int, arg4: int): javax.swing.GroupLayout$SequentialGroup
             public addGap(arg0: int): javax.swing.GroupLayout$SequentialGroup
             public addGap(arg0: int, arg1: int, arg2: int): javax.swing.GroupLayout$SequentialGroup
-            public addPreferredGap(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg2: javax.swing.LayoutStyle$ComponentPlacement): javax.swing.GroupLayout$SequentialGroup
-            public addPreferredGap(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg2: javax.swing.LayoutStyle$ComponentPlacement, arg3: int, arg4: int): javax.swing.GroupLayout$SequentialGroup
+            public addPreferredGap(arg0: javax.swing.JComponent, arg1: javax.swing.JComponent, arg2: javax.swing.LayoutStyle$ComponentPlacement): javax.swing.GroupLayout$SequentialGroup
+            public addPreferredGap(arg0: javax.swing.JComponent, arg1: javax.swing.JComponent, arg2: javax.swing.LayoutStyle$ComponentPlacement, arg3: int, arg4: int): javax.swing.GroupLayout$SequentialGroup
             public addPreferredGap(arg0: javax.swing.LayoutStyle$ComponentPlacement): javax.swing.GroupLayout$SequentialGroup
             public addPreferredGap(arg0: javax.swing.LayoutStyle$ComponentPlacement, arg1: int, arg2: int): javax.swing.GroupLayout$SequentialGroup
             public addContainerGap(): javax.swing.GroupLayout$SequentialGroup

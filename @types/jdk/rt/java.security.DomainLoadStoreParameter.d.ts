@@ -7,8 +7,5 @@ declare namespace java {
             public getProtectionParameter(): java.security.KeyStore$ProtectionParameter
             public static class: java.lang.Class<any>
         }
-        class DomainLoadStoreParameter$$Lambda implements java.security.KeyStore$LoadStoreParameter {
-            public constructor(arg0: java.net.URI, arg1: java.util.Map<java.lang.String, java.security.KeyStore$ProtectionParameter>)
-        }
     }
 }

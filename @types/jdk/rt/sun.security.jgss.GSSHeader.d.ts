@@ -9,7 +9,7 @@ declare namespace sun {
                 public getMechTokenLength(): int
                 public getLength(): int
                 public static getMaxMechTokenSize(arg0: sun.security.util.ObjectIdentifier, arg1: int): int
-                public encode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): int
+                public encode(arg0: java.io.OutputStream): int
                 public static class: java.lang.Class<any>
             }
         }

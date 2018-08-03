@@ -1,7 +1,7 @@
 declare namespace javax {
     namespace print {
         abstract class StreamPrintService implements javax.print.PrintService {
-            protected constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda)
+            protected constructor(arg0: java.io.OutputStream)
             public getOutputStream(): java.io.OutputStream
             public getOutputFormat(): string
             public dispose(): void

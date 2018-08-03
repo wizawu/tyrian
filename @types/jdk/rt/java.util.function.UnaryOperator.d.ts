@@ -4,6 +4,9 @@ declare namespace java {
             interface UnaryOperator<T> extends java.util.function$.Function<T, T> {
                 identity<T>(): java.util.function$.UnaryOperator<T>
             }
+            interface UnaryOperator$$Lambda<T> extends java.util.function$.Function<T, T> {
+                identity<T>(): java.util.function$.UnaryOperator<T>
+            }
         }
     }
 }

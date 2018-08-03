@@ -11,7 +11,7 @@ declare namespace java {
             public getDefaultConfiguration(): java.awt.GraphicsConfiguration
             public getBestConfiguration(arg0: java.awt.GraphicsConfigTemplate): java.awt.GraphicsConfiguration
             public isFullScreenSupported(): boolean
-            public setFullScreenWindow(arg0: java.awt.Window | java.awt.Window$$Lambda): void
+            public setFullScreenWindow(arg0: java.awt.Window): void
             public getFullScreenWindow(): java.awt.Window
             public isDisplayChangeSupported(): boolean
             public setDisplayMode(arg0: java.awt.DisplayMode): void

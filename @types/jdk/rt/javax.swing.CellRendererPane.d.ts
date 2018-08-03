@@ -13,8 +13,5 @@ declare namespace javax {
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
         }
-        class CellRendererPane$$Lambda extends java.awt.Container implements javax.accessibility.Accessible {
-            protected accessibleContext: javax.accessibility.AccessibleContext
-        }
     }
 }

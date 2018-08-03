@@ -37,7 +37,7 @@ declare namespace java {
                 public getTaskCount(): long
                 public getCompletedTaskCount(): long
                 public toString(): string
-                protected beforeExecute(arg0: java.lang.Thread | java.lang.Thread$$Lambda, arg1: java.lang.Runnable | java.lang.Runnable$$Lambda): void
+                protected beforeExecute(arg0: java.lang.Thread, arg1: java.lang.Runnable | java.lang.Runnable$$Lambda): void
                 protected afterExecute(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda, arg1: java.lang.Throwable): void
                 protected terminated(): void
                 public static class: java.lang.Class<any>

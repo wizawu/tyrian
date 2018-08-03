@@ -11,9 +11,6 @@ declare namespace com {
                                     public test(arg0: int): boolean
                                     public static class: java.lang.Class<any>
                                 }
-                                class EmptyFilter$$Lambda implements com.sun.org.apache.xalan.internal.xsltc.dom.Filter {
-                                    public constructor()
-                                }
                             }
                         }
                     }

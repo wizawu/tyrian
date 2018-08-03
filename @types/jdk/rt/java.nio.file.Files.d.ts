@@ -54,7 +54,7 @@ declare namespace java {
                 public static newBufferedWriter(arg0: java.nio.file.Path, arg1: java.nio.charset.Charset, ...arg2: java.nio.file.OpenOption[]): java.io.BufferedWriter
                 public static newBufferedWriter(arg0: java.nio.file.Path, ...arg1: java.nio.file.OpenOption[]): java.io.BufferedWriter
                 public static copy(arg0: java.io.InputStream, arg1: java.nio.file.Path, ...arg2: java.nio.file.CopyOption[]): long
-                public static copy(arg0: java.nio.file.Path, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): long
+                public static copy(arg0: java.nio.file.Path, arg1: java.io.OutputStream): long
                 public static readAllBytes(arg0: java.nio.file.Path): byte[]
                 public static readAllLines(arg0: java.nio.file.Path, arg1: java.nio.charset.Charset): java.util.List<java.lang.String>
                 public static readAllLines(arg0: java.nio.file.Path): java.util.List<java.lang.String>

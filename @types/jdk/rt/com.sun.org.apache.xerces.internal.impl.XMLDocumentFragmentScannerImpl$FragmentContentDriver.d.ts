@@ -15,9 +15,6 @@ declare namespace com {
                                 protected endOfFileHook(arg0: java.io.EOFException): void
                                 public static class: java.lang.Class<any>
                             }
-                            class XMLDocumentFragmentScannerImpl$FragmentContentDriver$$Lambda implements com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$Driver {
-                                protected constructor(arg0: com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl)
-                            }
                         }
                     }
                 }

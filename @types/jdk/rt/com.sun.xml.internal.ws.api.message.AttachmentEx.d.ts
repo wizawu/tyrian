@@ -8,6 +8,9 @@ declare namespace com {
                             interface AttachmentEx extends com.sun.xml.internal.ws.api.message.Attachment {
                                 getMimeHeaders(): java.util.Iterator<com.sun.xml.internal.ws.api.message.AttachmentEx$MimeHeader>
                             }
+                            interface AttachmentEx$$Lambda extends com.sun.xml.internal.ws.api.message.Attachment {
+                                (): java.util.Iterator<com.sun.xml.internal.ws.api.message.AttachmentEx$MimeHeader>
+                            }
                         }
                     }
                 }

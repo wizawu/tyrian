@@ -13,8 +13,5 @@ declare namespace sun {
             protected clearCache(arg0: sun.font.XRGlyphCacheEntry[]): void
             public static class: java.lang.Class<any>
         }
-        class XRGlyphCache$$Lambda implements sun.font.GlyphDisposedListener {
-            public constructor(arg0: sun.java2d.xr.XRCompositeManager)
-        }
     }
 }

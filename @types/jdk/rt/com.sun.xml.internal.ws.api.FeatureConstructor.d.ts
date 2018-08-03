@@ -7,6 +7,9 @@ declare namespace com {
                         interface FeatureConstructor extends java.lang.annotation.Annotation {
                             value(): java.lang.String[]
                         }
+                        interface FeatureConstructor$$Lambda extends java.lang.annotation.Annotation {
+                            (): java.lang.String[]
+                        }
                     }
                 }
             }

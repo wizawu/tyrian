@@ -16,9 +16,6 @@ declare namespace javax {
                     public getAccessibleContext(): javax.accessibility.AccessibleContext
                     public static class: java.lang.Class<any>
                 }
-                class AccessibleHTML$TableElementInfo$$Lambda extends javax.swing.text.html.AccessibleHTML$ElementInfo implements javax.accessibility.Accessible {
-                    protected caption: javax.swing.text.html.AccessibleHTML$ElementInfo
-                }
             }
         }
     }

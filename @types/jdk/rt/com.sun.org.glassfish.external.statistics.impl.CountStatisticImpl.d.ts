@@ -20,9 +20,6 @@ declare namespace com {
                                 public invoke(arg0: java.lang.Object, arg1: java.lang.reflect.Method, arg2: java.lang.Object[]): java.lang.Object
                                 public static class: java.lang.Class<any>
                             }
-                            class CountStatisticImpl$$Lambda extends com.sun.org.glassfish.external.statistics.impl.StatisticImpl implements com.sun.org.glassfish.external.statistics.CountStatistic , java.lang.reflect.InvocationHandler {
-                                public constructor(arg0: long, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: long, arg5: long)
-                            }
                         }
                     }
                 }

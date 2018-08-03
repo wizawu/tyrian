@@ -40,7 +40,7 @@ declare namespace com {
                             start_block(): void
                             end_block(): void
                             putEndian(): void
-                            writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                            writeTo(arg0: java.io.OutputStream): void
                             toByteArray(): byte[]
                         }
                     }

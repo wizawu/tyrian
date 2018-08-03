@@ -5,8 +5,5 @@ declare namespace java {
             public dispose(): void
             public static class: java.lang.Class<any>
         }
-        class Robot$RobotDisposer$$Lambda implements sun.java2d.DisposerRecord {
-            public constructor(arg0: java.awt.peer.RobotPeer)
-        }
     }
 }

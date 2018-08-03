@@ -3,9 +3,9 @@ declare namespace sun {
         namespace X11 {
             class XMenuBarPeer extends sun.awt.X11.XBaseMenuWindow implements java.awt.peer.MenuBarPeer {
                 public setFont(arg0: java.awt.Font): void
-                public addMenu(arg0: java.awt.Menu | java.awt.Menu$$Lambda): void
+                public addMenu(arg0: java.awt.Menu): void
                 public delMenu(arg0: int): void
-                public addHelpMenu(arg0: java.awt.Menu | java.awt.Menu$$Lambda): void
+                public addHelpMenu(arg0: java.awt.Menu): void
                 public init(arg0: java.awt.Frame): void
                 protected getParentMenuWindow(): sun.awt.X11.XBaseMenuWindow
                 protected map(): sun.awt.X11.XMenuBarPeer$MappingData

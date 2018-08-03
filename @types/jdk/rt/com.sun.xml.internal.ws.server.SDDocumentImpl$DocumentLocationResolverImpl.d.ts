@@ -8,9 +8,6 @@ declare namespace com {
                             public getLocationFor(arg0: java.lang.String | string, arg1: java.lang.String | string): string
                             public static class: java.lang.Class<any>
                         }
-                        class SDDocumentImpl$DocumentLocationResolverImpl$$Lambda implements com.sun.xml.internal.ws.wsdl.writer.DocumentLocationResolver {
-                            public (arg0: java.lang.String | string, arg1: java.lang.String | string): string
-                        }
                     }
                 }
             }

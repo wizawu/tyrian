@@ -20,7 +20,7 @@ declare namespace com {
                                 protected countProximityPosition(arg0: int): void
                                 public reset(): void
                                 public getAxis(): int
-                                public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda): boolean
+                                public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression): boolean
                                 public static class: java.lang.Class<any>
                             }
                         }

@@ -15,8 +15,8 @@ declare namespace java {
             public getTags(): java.lang.String[]
             public getCustomEditor(): java.awt.Component
             public supportsCustomEditor(): boolean
-            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
             public firePropertyChange(): void
             public static class: java.lang.Class<any>
         }

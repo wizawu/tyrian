@@ -16,7 +16,7 @@ declare namespace sun {
             public getDefaultConfiguration(): java.awt.GraphicsConfiguration
             public isFullScreenSupported(): boolean
             public isDisplayChangeSupported(): boolean
-            public setFullScreenWindow(arg0: java.awt.Window | java.awt.Window$$Lambda): void
+            public setFullScreenWindow(arg0: java.awt.Window): void
             public getDisplayMode(): java.awt.DisplayMode
             public getDisplayModes(): java.awt.DisplayMode[]
             public setDisplayMode(arg0: java.awt.DisplayMode): void

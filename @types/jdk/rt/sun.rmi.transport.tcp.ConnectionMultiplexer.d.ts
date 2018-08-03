@@ -3,7 +3,7 @@ declare namespace sun {
         namespace transport {
             namespace tcp {
                 class ConnectionMultiplexer {
-                    public constructor(arg0: sun.rmi.transport.tcp.TCPChannel, arg1: java.io.InputStream, arg2: java.io.OutputStream | java.io.OutputStream$$Lambda, arg3: boolean)
+                    public constructor(arg0: sun.rmi.transport.tcp.TCPChannel, arg1: java.io.InputStream, arg2: java.io.OutputStream, arg3: boolean)
                     public run(): void
                     public openConnection(): sun.rmi.transport.tcp.TCPConnection
                     public shutDown(): void

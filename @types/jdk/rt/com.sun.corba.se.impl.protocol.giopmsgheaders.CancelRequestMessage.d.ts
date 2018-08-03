@@ -9,6 +9,9 @@ declare namespace com {
                                 CANCEL_REQ_MSG_SIZE: int
                                 getRequestId(): int
                             }
+                            interface CancelRequestMessage$$Lambda extends com.sun.corba.se.impl.protocol.giopmsgheaders.Message {
+                                CANCEL_REQ_MSG_SIZE: int
+                            }
                         }
                     }
                 }

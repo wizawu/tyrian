@@ -7,7 +7,7 @@ declare namespace sun {
                 public constructor(arg0: sun.security.util.DerInputStream)
                 public constructor(arg0: sun.security.util.DerValue)
                 public toString(): string
-                public encode(arg0: sun.security.util.DerOutputStream | sun.security.util.DerOutputStream$$Lambda, arg1: byte): void
+                public encode(arg0: sun.security.util.DerOutputStream, arg1: byte): void
                 public getId(): boolean[]
                 public static class: java.lang.Class<any>
             }

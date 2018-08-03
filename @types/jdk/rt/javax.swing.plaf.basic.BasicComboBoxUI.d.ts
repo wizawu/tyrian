@@ -23,9 +23,9 @@ declare namespace javax {
                     protected squareButton: boolean
                     protected padding: java.awt.Insets
                     public constructor()
-                    public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
-                    public installUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    public uninstallUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
+                    public installUI(arg0: javax.swing.JComponent): void
+                    public uninstallUI(arg0: javax.swing.JComponent): void
                     protected installDefaults(): void
                     protected installListeners(): void
                     protected uninstallDefaults(): void
@@ -48,17 +48,17 @@ declare namespace javax {
                     public configureArrowButton(): void
                     public unconfigureArrowButton(): void
                     protected createArrowButton(): javax.swing.JButton
-                    public isPopupVisible(arg0: javax.swing.JComboBox | javax.swing.JComboBox$$Lambda): boolean
-                    public setPopupVisible(arg0: javax.swing.JComboBox | javax.swing.JComboBox$$Lambda, arg1: boolean): void
-                    public isFocusTraversable(arg0: javax.swing.JComboBox | javax.swing.JComboBox$$Lambda): boolean
-                    public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    public getPreferredSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
-                    public getMinimumSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
-                    public getMaximumSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
-                    public getBaseline(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: int, arg2: int): int
-                    public getBaselineResizeBehavior(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Component$BaselineResizeBehavior
-                    public getAccessibleChildrenCount(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): int
-                    public getAccessibleChild(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: int): javax.accessibility.Accessible
+                    public isPopupVisible(arg0: javax.swing.JComboBox): boolean
+                    public setPopupVisible(arg0: javax.swing.JComboBox, arg1: boolean): void
+                    public isFocusTraversable(arg0: javax.swing.JComboBox): boolean
+                    public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
+                    public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
+                    public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
+                    public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
+                    public getBaseline(arg0: javax.swing.JComponent, arg1: int, arg2: int): int
+                    public getBaselineResizeBehavior(arg0: javax.swing.JComponent): java.awt.Component$BaselineResizeBehavior
+                    public getAccessibleChildrenCount(arg0: javax.swing.JComponent): int
+                    public getAccessibleChild(arg0: javax.swing.JComponent, arg1: int): javax.accessibility.Accessible
                     protected isNavigationKey(arg0: int): boolean
                     protected selectNextPossibleValue(): void
                     protected selectPreviousPossibleValue(): void

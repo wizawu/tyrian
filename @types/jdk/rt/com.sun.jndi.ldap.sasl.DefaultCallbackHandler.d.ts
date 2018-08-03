@@ -8,9 +8,6 @@ declare namespace com {
                         protected finalize(): void
                         public static class: java.lang.Class<any>
                     }
-                    class DefaultCallbackHandler$$Lambda implements javax.security.auth.callback.CallbackHandler {
-                        public (arg0: javax.security.auth.callback.Callback[]): void
-                    }
                 }
             }
         }

@@ -4,8 +4,5 @@ declare namespace javax {
             public execute(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda): void
             public static class: java.lang.Class<any>
         }
-        class NotificationBroadcasterSupport$1$$Lambda implements java.util.concurrent.Executor {
-            public (arg0: java.lang.Runnable | java.lang.Runnable$$Lambda): void
-        }
     }
 }

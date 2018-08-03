@@ -15,8 +15,8 @@ declare namespace javax {
                 public setEnabledProtocols(arg0: java.lang.String[]): void
                 public getSession(): javax.net.ssl.SSLSession
                 public getHandshakeSession(): javax.net.ssl.SSLSession
-                public addHandshakeCompletedListener(arg0: javax.net.ssl.HandshakeCompletedListener): void
-                public removeHandshakeCompletedListener(arg0: javax.net.ssl.HandshakeCompletedListener): void
+                public addHandshakeCompletedListener(arg0: javax.net.ssl.HandshakeCompletedListener | javax.net.ssl.HandshakeCompletedListener$$Lambda): void
+                public removeHandshakeCompletedListener(arg0: javax.net.ssl.HandshakeCompletedListener | javax.net.ssl.HandshakeCompletedListener$$Lambda): void
                 public startHandshake(): void
                 public setUseClientMode(arg0: boolean): void
                 public getUseClientMode(): boolean

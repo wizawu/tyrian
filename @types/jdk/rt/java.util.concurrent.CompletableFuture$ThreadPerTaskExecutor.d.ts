@@ -5,9 +5,6 @@ declare namespace java {
                 public execute(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda): void
                 public static class: java.lang.Class<any>
             }
-            class CompletableFuture$ThreadPerTaskExecutor$$Lambda implements java.util.concurrent.Executor {
-                public (arg0: java.lang.Runnable | java.lang.Runnable$$Lambda): void
-            }
         }
     }
 }

@@ -6,7 +6,7 @@ declare namespace javax {
             public static CHOOSER_PANELS_PROPERTY: string
             protected accessibleContext: javax.accessibility.AccessibleContext
             public static showDialog(arg0: java.awt.Component, arg1: java.lang.String | string, arg2: java.awt.Color): java.awt.Color
-            public static createDialog(arg0: java.awt.Component, arg1: java.lang.String | string, arg2: boolean, arg3: javax.swing.JColorChooser | javax.swing.JColorChooser$$Lambda, arg4: java.awt.event.ActionListener, arg5: java.awt.event.ActionListener): javax.swing.JDialog
+            public static createDialog(arg0: java.awt.Component, arg1: java.lang.String | string, arg2: boolean, arg3: javax.swing.JColorChooser, arg4: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda, arg5: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): javax.swing.JDialog
             public constructor()
             public constructor(arg0: java.awt.Color)
             public constructor(arg0: javax.swing.colorchooser.ColorSelectionModel)
@@ -20,7 +20,7 @@ declare namespace javax {
             public setColor(arg0: int): void
             public setDragEnabled(arg0: boolean): void
             public getDragEnabled(): boolean
-            public setPreviewPanel(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+            public setPreviewPanel(arg0: javax.swing.JComponent): void
             public getPreviewPanel(): javax.swing.JComponent
             public addChooserPanel(arg0: javax.swing.colorchooser.AbstractColorChooserPanel): void
             public removeChooserPanel(arg0: javax.swing.colorchooser.AbstractColorChooserPanel): javax.swing.colorchooser.AbstractColorChooserPanel
@@ -31,9 +31,6 @@ declare namespace javax {
             protected paramString(): string
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
-        }
-        class JColorChooser$$Lambda extends javax.swing.JComponent implements javax.accessibility.Accessible {
-            public static SELECTION_MODEL_PROPERTY: string
         }
     }
 }

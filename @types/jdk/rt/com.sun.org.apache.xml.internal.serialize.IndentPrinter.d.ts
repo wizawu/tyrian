@@ -6,7 +6,7 @@ declare namespace com {
                     namespace internal {
                         namespace serialize {
                             class IndentPrinter extends com.sun.org.apache.xml.internal.serialize.Printer {
-                                public constructor(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: com.sun.org.apache.xml.internal.serialize.OutputFormat)
+                                public constructor(arg0: java.io.Writer, arg1: com.sun.org.apache.xml.internal.serialize.OutputFormat)
                                 public enterDTD(): void
                                 public leaveDTD(): string
                                 public printText(arg0: java.lang.String | string): void

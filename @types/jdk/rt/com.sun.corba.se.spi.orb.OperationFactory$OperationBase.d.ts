@@ -9,9 +9,6 @@ declare namespace com {
                             public hashCode(): int
                             public static class: java.lang.Class<any>
                         }
-                        abstract class OperationFactory$OperationBase$$Lambda implements com.sun.corba.se.spi.orb.Operation {
-                            public (arg0: java.lang.Object): boolean
-                        }
                     }
                 }
             }

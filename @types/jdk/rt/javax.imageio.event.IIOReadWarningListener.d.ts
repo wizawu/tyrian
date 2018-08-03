@@ -4,6 +4,9 @@ declare namespace javax {
             interface IIOReadWarningListener extends java.util.EventListener {
                 warningOccurred(arg0: javax.imageio.ImageReader, arg1: java.lang.String | string): void
             }
+            interface IIOReadWarningListener$$Lambda extends java.util.EventListener {
+                (arg0: javax.imageio.ImageReader, arg1: java.lang.String | string): void
+            }
         }
     }
 }

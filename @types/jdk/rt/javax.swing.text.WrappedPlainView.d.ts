@@ -22,9 +22,6 @@ declare namespace javax {
                 public changedUpdate(arg0: javax.swing.event.DocumentEvent, arg1: java.awt.Shape, arg2: javax.swing.text.ViewFactory | javax.swing.text.ViewFactory$$Lambda): void
                 public static class: java.lang.Class<any>
             }
-            class WrappedPlainView$$Lambda extends javax.swing.text.BoxView implements javax.swing.text.TabExpander {
-                public constructor(arg0: javax.swing.text.Element)
-            }
         }
     }
 }

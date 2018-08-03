@@ -9,9 +9,6 @@ declare namespace org {
                 public _this(arg0: org.omg.CORBA.ORB): org.omg.PortableServer.ServantActivator
                 public static class: java.lang.Class<any>
             }
-            abstract class ServantActivatorPOA$$Lambda extends org.omg.PortableServer.Servant implements org.omg.PortableServer.ServantActivatorOperations , org.omg.CORBA.portable.InvokeHandler {
-                public constructor()
-            }
         }
     }
 }

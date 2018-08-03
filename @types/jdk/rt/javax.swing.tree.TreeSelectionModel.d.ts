@@ -28,10 +28,10 @@ declare namespace javax {
                 resetRowSelection(): void
                 getLeadSelectionRow(): int
                 getLeadSelectionPath(): javax.swing.tree.TreePath
-                addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-                removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-                addTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener): void
-                removeTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener): void
+                addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+                removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+                addTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$Lambda): void
+                removeTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$Lambda): void
             }
         }
     }

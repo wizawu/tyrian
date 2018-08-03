@@ -2,7 +2,7 @@ declare namespace sun {
     namespace java2d {
         namespace jules {
             class JulesAATileGenerator implements sun.java2d.pipe.AATileGenerator {
-                public constructor(arg0: java.awt.Shape, arg1: java.awt.geom.AffineTransform, arg2: sun.java2d.pipe.Region, arg3: java.awt.BasicStroke | java.awt.BasicStroke$$Lambda, arg4: boolean, arg5: boolean, arg6: int[])
+                public constructor(arg0: java.awt.Shape, arg1: java.awt.geom.AffineTransform, arg2: sun.java2d.pipe.Region, arg3: java.awt.BasicStroke, arg4: boolean, arg5: boolean, arg6: int[])
                 public getAlpha(arg0: byte[], arg1: int, arg2: int): void
                 public calculateTypicalAlpha(): void
                 protected doTrapsCoverTile(arg0: sun.java2d.xr.GrowableIntArray, arg1: int): boolean

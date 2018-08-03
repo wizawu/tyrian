@@ -10,9 +10,6 @@ declare namespace com {
                                 public update(arg0: com.sun.xml.internal.ws.policy.PolicyMap, arg1: com.sun.xml.internal.ws.api.model.SEIModel, arg2: com.sun.xml.internal.ws.api.WSBinding): java.util.Collection<com.sun.xml.internal.ws.policy.PolicySubject>
                                 public static class: java.lang.Class<any>
                             }
-                            class MtomPolicyMapConfigurator$$Lambda implements com.sun.xml.internal.ws.policy.jaxws.spi.PolicyMapConfigurator {
-                                public constructor()
-                            }
                         }
                     }
                 }

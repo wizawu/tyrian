@@ -23,7 +23,7 @@ declare namespace javax {
                 public createAttachmentPart(arg0: java.lang.Object, arg1: java.lang.String | string): javax.xml.soap.AttachmentPart
                 public saveChanges(): void
                 public saveRequired(): boolean
-                public writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public writeTo(arg0: java.io.OutputStream): void
                 public setProperty(arg0: java.lang.String | string, arg1: java.lang.Object): void
                 public getProperty(arg0: java.lang.String | string): java.lang.Object
                 public static class: java.lang.Class<any>

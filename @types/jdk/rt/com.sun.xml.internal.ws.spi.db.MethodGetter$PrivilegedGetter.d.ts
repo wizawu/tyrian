@@ -10,9 +10,6 @@ declare namespace com {
                                 public run(): java.lang.Object
                                 public static class: java.lang.Class<any>
                             }
-                            class MethodGetter$PrivilegedGetter$$Lambda implements java.security.PrivilegedExceptionAction {
-                                public constructor(arg0: java.lang.reflect.Method, arg1: java.lang.Object)
-                            }
                         }
                     }
                 }

@@ -11,23 +11,23 @@ declare namespace com {
                                 public addListener(arg0: com.sun.xml.internal.ws.api.pipe.Fiber$Listener): void
                                 public removeListener(arg0: com.sun.xml.internal.ws.api.pipe.Fiber$Listener): void
                                 public setDeliverThrowableInPacket(arg0: boolean): void
-                                public start(arg0: com.sun.xml.internal.ws.api.pipe.Tube, arg1: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda, arg2: com.sun.xml.internal.ws.api.pipe.Fiber$CompletionCallback): void
-                                public start(arg0: com.sun.xml.internal.ws.api.pipe.Tube, arg1: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda, arg2: com.sun.xml.internal.ws.api.pipe.Fiber$CompletionCallback, arg3: boolean): void
-                                public resume(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): void
-                                public resume(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda, arg1: boolean): void
-                                public resume(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda, arg1: boolean, arg2: com.sun.xml.internal.ws.api.pipe.Fiber$CompletionCallback): void
-                                public resumeAndReturn(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda, arg1: boolean): void
+                                public start(arg0: com.sun.xml.internal.ws.api.pipe.Tube, arg1: com.sun.xml.internal.ws.api.message.Packet, arg2: com.sun.xml.internal.ws.api.pipe.Fiber$CompletionCallback): void
+                                public start(arg0: com.sun.xml.internal.ws.api.pipe.Tube, arg1: com.sun.xml.internal.ws.api.message.Packet, arg2: com.sun.xml.internal.ws.api.pipe.Fiber$CompletionCallback, arg3: boolean): void
+                                public resume(arg0: com.sun.xml.internal.ws.api.message.Packet): void
+                                public resume(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: boolean): void
+                                public resume(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: boolean, arg2: com.sun.xml.internal.ws.api.pipe.Fiber$CompletionCallback): void
+                                public resumeAndReturn(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: boolean): void
                                 public resume(arg0: java.lang.Throwable): void
-                                public resume(arg0: java.lang.Throwable, arg1: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): void
+                                public resume(arg0: java.lang.Throwable, arg1: com.sun.xml.internal.ws.api.message.Packet): void
                                 public resume(arg0: java.lang.Throwable, arg1: boolean): void
-                                public resume(arg0: java.lang.Throwable, arg1: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda, arg2: boolean): void
+                                public resume(arg0: java.lang.Throwable, arg1: com.sun.xml.internal.ws.api.message.Packet, arg2: boolean): void
                                 public cancel(arg0: boolean): void
                                 public addInterceptor(arg0: com.sun.xml.internal.ws.api.pipe.FiberContextSwitchInterceptor | com.sun.xml.internal.ws.api.pipe.FiberContextSwitchInterceptor$$Lambda): void
                                 public removeInterceptor(arg0: com.sun.xml.internal.ws.api.pipe.FiberContextSwitchInterceptor | com.sun.xml.internal.ws.api.pipe.FiberContextSwitchInterceptor$$Lambda): boolean
                                 public getContextClassLoader(): java.lang.ClassLoader
                                 public setContextClassLoader(arg0: java.lang.ClassLoader): java.lang.ClassLoader
                                 public run(): void
-                                public runSync(arg0: com.sun.xml.internal.ws.api.pipe.Tube, arg1: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): com.sun.xml.internal.ws.api.message.Packet
+                                public runSync(arg0: com.sun.xml.internal.ws.api.pipe.Tube, arg1: com.sun.xml.internal.ws.api.message.Packet): com.sun.xml.internal.ws.api.message.Packet
                                 public resetCont(arg0: com.sun.xml.internal.ws.api.pipe.Tube[], arg1: int): void
                                 public toString(): string
                                 public getPacket(): com.sun.xml.internal.ws.api.message.Packet

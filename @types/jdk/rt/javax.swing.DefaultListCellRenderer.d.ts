@@ -3,7 +3,7 @@ declare namespace javax {
         class DefaultListCellRenderer extends javax.swing.JLabel implements javax.swing.ListCellRenderer<java.lang.Object> , java.io.Serializable {
             protected static noFocusBorder: javax.swing.border.Border
             public constructor()
-            public getListCellRendererComponent(arg0: javax.swing.JList<any> | javax.swing.JList$$Lambda<any>, arg1: java.lang.Object, arg2: int, arg3: boolean, arg4: boolean): java.awt.Component
+            public getListCellRendererComponent(arg0: javax.swing.JList<any>, arg1: java.lang.Object, arg2: int, arg3: boolean, arg4: boolean): java.awt.Component
             public isOpaque(): boolean
             public validate(): void
             public invalidate(): void

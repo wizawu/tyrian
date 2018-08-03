@@ -12,8 +12,8 @@ declare namespace com {
                                         public static getEncoding(arg0: javax.activation.DataSource): string
                                         public static getEncoding(arg0: javax.activation.DataHandler): string
                                         public static decode(arg0: java.io.InputStream, arg1: java.lang.String | string): java.io.InputStream
-                                        public static encode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: java.lang.String | string): java.io.OutputStream
-                                        public static encode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: java.lang.String | string, arg2: java.lang.String | string): java.io.OutputStream
+                                        public static encode(arg0: java.io.OutputStream, arg1: java.lang.String | string): java.io.OutputStream
+                                        public static encode(arg0: java.io.OutputStream, arg1: java.lang.String | string, arg2: java.lang.String | string): java.io.OutputStream
                                         public static encodeText(arg0: java.lang.String | string): string
                                         public static encodeText(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): string
                                         public static decodeText(arg0: java.lang.String | string): string

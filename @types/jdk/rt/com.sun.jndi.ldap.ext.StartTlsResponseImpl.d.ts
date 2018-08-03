@@ -10,7 +10,7 @@ declare namespace com {
                         public negotiate(): javax.net.ssl.SSLSession
                         public negotiate(arg0: javax.net.ssl.SSLSocketFactory): javax.net.ssl.SSLSession
                         public close(): void
-                        public setConnection(arg0: com.sun.jndi.ldap.Connection | com.sun.jndi.ldap.Connection$$Lambda, arg1: java.lang.String | string): void
+                        public setConnection(arg0: com.sun.jndi.ldap.Connection, arg1: java.lang.String | string): void
                         public static class: java.lang.Class<any>
                     }
                 }

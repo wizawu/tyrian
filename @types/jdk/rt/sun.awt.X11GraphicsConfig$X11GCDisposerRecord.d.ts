@@ -5,8 +5,5 @@ declare namespace sun {
             public dispose(): void
             public static class: java.lang.Class<any>
         }
-        class X11GraphicsConfig$X11GCDisposerRecord$$Lambda implements sun.java2d.DisposerRecord {
-            public constructor(arg0: long)
-        }
     }
 }

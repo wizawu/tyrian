@@ -3,7 +3,7 @@ declare namespace sun {
         namespace ch {
             namespace sctp {
                 class SctpChannelImpl$InternalNotificationHandler extends com.sun.nio.sctp.AbstractNotificationHandler<java.lang.Object> {
-                    public handleNotification(arg0: com.sun.nio.sctp.AssociationChangeNotification | com.sun.nio.sctp.AssociationChangeNotification$$Lambda, arg1: java.lang.Object): com.sun.nio.sctp.HandlerResult
+                    public handleNotification(arg0: com.sun.nio.sctp.AssociationChangeNotification, arg1: java.lang.Object): com.sun.nio.sctp.HandlerResult
                     public static class: java.lang.Class<any>
                 }
             }

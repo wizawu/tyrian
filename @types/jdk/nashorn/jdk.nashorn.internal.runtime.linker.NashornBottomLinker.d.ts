@@ -8,9 +8,6 @@ declare namespace jdk {
                         public convertToType(arg0: java.lang.Class<any>, arg1: java.lang.Class<any>): jdk.internal.dynalink.linker.GuardedTypeConversion
                         public static class: java.lang.Class<any>
                     }
-                    class NashornBottomLinker$$Lambda implements jdk.internal.dynalink.linker.GuardingDynamicLinker , jdk.internal.dynalink.linker.GuardingTypeConverterFactory {
-                        public (arg0: jdk.internal.dynalink.linker.LinkRequest, arg1: jdk.internal.dynalink.linker.LinkerServices): jdk.internal.dynalink.linker.GuardedInvocation
-                    }
                 }
             }
         }

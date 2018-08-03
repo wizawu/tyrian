@@ -32,7 +32,7 @@ declare namespace javax {
                 public static isFileTypeSupported(arg0: javax.sound.sampled.AudioFileFormat$Type): boolean
                 public static getAudioFileTypes(arg0: javax.sound.sampled.AudioInputStream): javax.sound.sampled.AudioFileFormat$Type[]
                 public static isFileTypeSupported(arg0: javax.sound.sampled.AudioFileFormat$Type, arg1: javax.sound.sampled.AudioInputStream): boolean
-                public static write(arg0: javax.sound.sampled.AudioInputStream, arg1: javax.sound.sampled.AudioFileFormat$Type, arg2: java.io.OutputStream | java.io.OutputStream$$Lambda): int
+                public static write(arg0: javax.sound.sampled.AudioInputStream, arg1: javax.sound.sampled.AudioFileFormat$Type, arg2: java.io.OutputStream): int
                 public static write(arg0: javax.sound.sampled.AudioInputStream, arg1: javax.sound.sampled.AudioFileFormat$Type, arg2: java.io.File): int
                 public static class: java.lang.Class<any>
             }

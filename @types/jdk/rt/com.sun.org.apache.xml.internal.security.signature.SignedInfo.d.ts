@@ -16,7 +16,7 @@ declare namespace com {
                                     public verify(): boolean
                                     public verify(arg0: boolean): boolean
                                     public getCanonicalizedOctetStream(): byte[]
-                                    public signInOctetStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                                    public signInOctetStream(arg0: java.io.OutputStream): void
                                     public getCanonicalizationMethodURI(): string
                                     public getSignatureMethodURI(): string
                                     public getSignatureMethodElement(): org.w3c.dom.Element

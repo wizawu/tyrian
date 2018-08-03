@@ -24,9 +24,6 @@ declare namespace javax {
                     public focusLost(arg0: java.awt.event.FocusEvent): void
                     public static class: java.lang.Class<any>
                 }
-                class BasicListUI$Handler$$Lambda implements java.awt.event.FocusListener , java.awt.event.KeyListener , javax.swing.event.ListDataListener , javax.swing.event.ListSelectionListener , javax.swing.event.MouseInputListener , java.beans.PropertyChangeListener , javax.swing.plaf.basic.DragRecognitionSupport$BeforeDrag {
-                    public (arg0: java.awt.event.KeyEvent): void
-                }
             }
         }
     }

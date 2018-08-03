@@ -13,10 +13,10 @@ declare namespace javax {
                     protected static horizThumbIcon: javax.swing.Icon
                     protected static vertThumbIcon: javax.swing.Icon
                     protected SLIDER_FILL: string
-                    public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
+                    public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
                     public constructor()
-                    public installUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    protected createPropertyChangeListener(arg0: javax.swing.JSlider | javax.swing.JSlider$$Lambda): java.beans.PropertyChangeListener
+                    public installUI(arg0: javax.swing.JComponent): void
+                    protected createPropertyChangeListener(arg0: javax.swing.JSlider): java.beans.PropertyChangeListener
                     public paintThumb(arg0: java.awt.Graphics): void
                     public paintTrack(arg0: java.awt.Graphics): void
                     public paintFocus(arg0: java.awt.Graphics): void

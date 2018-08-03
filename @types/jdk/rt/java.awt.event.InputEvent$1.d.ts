@@ -5,9 +5,6 @@ declare namespace java {
                 public getButtonDownMasks(): int[]
                 public static class: java.lang.Class<any>
             }
-            class InputEvent$1$$Lambda implements sun.awt.AWTAccessor$InputEventAccessor {
-                public (): int[]
-            }
         }
     }
 }

@@ -4,6 +4,9 @@ declare namespace java {
             interface CertPathParameters extends java.lang.Cloneable {
                 clone(): java.lang.Object
             }
+            interface CertPathParameters$$Lambda extends java.lang.Cloneable {
+                (): java.lang.Object
+            }
         }
     }
 }

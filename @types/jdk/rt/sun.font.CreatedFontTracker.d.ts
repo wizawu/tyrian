@@ -10,7 +10,7 @@ declare namespace sun {
             public acquirePermit(): boolean
             public releasePermit(): void
             public add(arg0: java.io.File): void
-            public set(arg0: java.io.File, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+            public set(arg0: java.io.File, arg1: java.io.OutputStream): void
             public remove(arg0: java.io.File): void
             public static class: java.lang.Class<any>
         }

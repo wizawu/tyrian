@@ -5,9 +5,6 @@ declare namespace sun {
                 public name(): string
                 public static class: java.lang.Class<any>
             }
-            class Net$1$$Lambda implements java.net.ProtocolFamily {
-                public (): string
-            }
         }
     }
 }

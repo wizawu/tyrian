@@ -1,7 +1,7 @@
 declare namespace java {
     namespace awt {
         class List$AccessibleAWTList extends java.awt.Component$AccessibleAWTComponent implements javax.accessibility.AccessibleSelection , java.awt.event.ItemListener , java.awt.event.ActionListener {
-            public constructor(arg0: java.awt.List | java.awt.List$$Lambda)
+            public constructor(arg0: java.awt.List)
             public actionPerformed(arg0: java.awt.event.ActionEvent): void
             public itemStateChanged(arg0: java.awt.event.ItemEvent): void
             public getAccessibleStateSet(): javax.accessibility.AccessibleStateSet

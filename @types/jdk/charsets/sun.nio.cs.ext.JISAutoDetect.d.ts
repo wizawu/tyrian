@@ -16,9 +16,6 @@ declare namespace sun {
                     public static canBeEUCKana(arg0: int, arg1: int): boolean
                     public static class: java.lang.Class<any>
                 }
-                class JISAutoDetect$$Lambda extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    public constructor()
-                }
             }
         }
     }

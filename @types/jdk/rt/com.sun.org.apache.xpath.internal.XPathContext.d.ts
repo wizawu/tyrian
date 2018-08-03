@@ -11,7 +11,7 @@ declare namespace com {
                             public getDTMManager(): com.sun.org.apache.xml.internal.dtm.DTMManager
                             public setSecureProcessing(arg0: boolean): void
                             public isSecureProcessing(): boolean
-                            public getDTM(arg0: javax.xml.transform.Source, arg1: boolean, arg2: com.sun.org.apache.xml.internal.dtm.DTMWSFilter, arg3: boolean, arg4: boolean): com.sun.org.apache.xml.internal.dtm.DTM
+                            public getDTM(arg0: javax.xml.transform.Source, arg1: boolean, arg2: com.sun.org.apache.xml.internal.dtm.DTMWSFilter | com.sun.org.apache.xml.internal.dtm.DTMWSFilter$$Lambda, arg3: boolean, arg4: boolean): com.sun.org.apache.xml.internal.dtm.DTM
                             public getDTM(arg0: int): com.sun.org.apache.xml.internal.dtm.DTM
                             public getDTMHandleFromNode(arg0: org.w3c.dom.Node): int
                             public getDTMIdentity(arg0: com.sun.org.apache.xml.internal.dtm.DTM): int

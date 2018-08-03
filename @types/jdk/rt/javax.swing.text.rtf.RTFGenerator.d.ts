@@ -7,8 +7,8 @@ declare namespace javax {
                     public static defaultFontSize: float
                     public static defaultFontFamily: string
                     protected static textKeywords: javax.swing.text.rtf.RTFGenerator$CharacterKeywordPair[]
-                    public static writeDocument(arg0: javax.swing.text.Document, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): void
-                    public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda)
+                    public static writeDocument(arg0: javax.swing.text.Document, arg1: java.io.OutputStream): void
+                    public constructor(arg0: java.io.OutputStream)
                     public examineElement(arg0: javax.swing.text.Element): void
                     public writeLineBreak(): void
                     public writeRTFHeader(): void

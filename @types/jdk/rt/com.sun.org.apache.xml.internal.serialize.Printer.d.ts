@@ -11,7 +11,7 @@ declare namespace com {
                                 protected _dtdWriter: java.io.StringWriter
                                 protected _docWriter: java.io.Writer
                                 protected _exception: java.io.IOException
-                                public constructor(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: com.sun.org.apache.xml.internal.serialize.OutputFormat)
+                                public constructor(arg0: java.io.Writer, arg1: com.sun.org.apache.xml.internal.serialize.OutputFormat)
                                 public getException(): java.io.IOException
                                 public enterDTD(): void
                                 public leaveDTD(): string

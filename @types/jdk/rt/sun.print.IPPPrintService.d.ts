@@ -27,15 +27,12 @@ declare namespace sun {
             public usesClass(arg0: java.lang.Class): boolean
             public static getIPPConnection(arg0: java.net.URL): java.net.HttpURLConnection
             public isPostscript(): boolean
-            public static writeIPPRequest(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: java.lang.String | string, arg2: sun.print.AttributeClass[]): boolean
+            public static writeIPPRequest(arg0: java.io.OutputStream, arg1: java.lang.String | string, arg2: sun.print.AttributeClass[]): boolean
             public static readIPPResponse(arg0: java.io.InputStream): java.util.HashMap[]
             public toString(): string
             public equals(arg0: java.lang.Object): boolean
             public hashCode(): int
             public static class: java.lang.Class<any>
-        }
-        class IPPPrintService$$Lambda implements javax.print.PrintService , sun.print.SunPrinterJobService {
-            public static debugPrint: boolean
         }
     }
 }

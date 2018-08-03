@@ -8,9 +8,6 @@ declare namespace com {
                             public evaluate(): java.lang.Object
                             public static class: java.lang.Class<any>
                         }
-                        class ORBConfiguratorImpl$3$$Lambda implements com.sun.corba.se.spi.orbutil.closure.Closure {
-                            public (): java.lang.Object
-                        }
                     }
                 }
             }

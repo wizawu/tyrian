@@ -35,7 +35,7 @@ declare namespace javax {
             public getMenuBar(): javax.swing.JMenuBar
             public setContentPane(arg0: java.awt.Container): void
             public getContentPane(): java.awt.Container
-            public setLayeredPane(arg0: javax.swing.JLayeredPane | javax.swing.JLayeredPane$$Lambda): void
+            public setLayeredPane(arg0: javax.swing.JLayeredPane): void
             public getLayeredPane(): javax.swing.JLayeredPane
             public setGlassPane(arg0: java.awt.Component): void
             public getGlassPane(): java.awt.Component
@@ -43,15 +43,12 @@ declare namespace javax {
             public isOptimizedDrawingEnabled(): boolean
             public addNotify(): void
             public removeNotify(): void
-            public setDefaultButton(arg0: javax.swing.JButton | javax.swing.JButton$$Lambda): void
+            public setDefaultButton(arg0: javax.swing.JButton): void
             public getDefaultButton(): javax.swing.JButton
             protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object, arg2: int): void
             protected paramString(): string
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
-        }
-        class JRootPane$$Lambda extends javax.swing.JComponent implements javax.accessibility.Accessible {
-            public static NONE: int
         }
     }
 }

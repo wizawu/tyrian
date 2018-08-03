@@ -44,9 +44,6 @@ declare namespace jdk {
                         public copy(): jdk.nashorn.internal.runtime.arrays.ArrayData
                         public static class: java.lang.Class<any>
                     }
-                    class ObjectArrayData$$Lambda extends jdk.nashorn.internal.runtime.arrays.ContinuousArrayData implements jdk.nashorn.internal.runtime.arrays.AnyElements {
-                        public (): java.lang.Class<any>
-                    }
                 }
             }
         }

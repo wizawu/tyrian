@@ -8,7 +8,7 @@ declare namespace javax {
             public getName(): string
             public getContentType(): string
             public getInputStream(): java.io.InputStream
-            public writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+            public writeTo(arg0: java.io.OutputStream): void
             public getOutputStream(): java.io.OutputStream
             public getTransferDataFlavors(): java.awt.datatransfer.DataFlavor[]
             public isDataFlavorSupported(arg0: java.awt.datatransfer.DataFlavor): boolean

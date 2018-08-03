@@ -35,10 +35,10 @@ declare namespace sun {
                 public getTextureID(): int
                 public getNativeResource(arg0: int): long
                 public getRaster(arg0: int, arg1: int, arg2: int, arg3: int): java.awt.image.Raster
-                public canRenderLCDText(arg0: sun.java2d.SunGraphics2D | sun.java2d.SunGraphics2D$$Lambda): boolean
-                public validatePipe(arg0: sun.java2d.SunGraphics2D | sun.java2d.SunGraphics2D$$Lambda): void
-                protected getMaskFill(arg0: sun.java2d.SunGraphics2D | sun.java2d.SunGraphics2D$$Lambda): sun.java2d.loops.MaskFill
-                public copyArea(arg0: sun.java2d.SunGraphics2D | sun.java2d.SunGraphics2D$$Lambda, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int): boolean
+                public canRenderLCDText(arg0: sun.java2d.SunGraphics2D): boolean
+                public validatePipe(arg0: sun.java2d.SunGraphics2D): void
+                protected getMaskFill(arg0: sun.java2d.SunGraphics2D): sun.java2d.loops.MaskFill
+                public copyArea(arg0: sun.java2d.SunGraphics2D, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int): boolean
                 public flush(): void
                 public getNativeBounds(): java.awt.Rectangle
                 public getContext(): sun.java2d.pipe.BufferedContext

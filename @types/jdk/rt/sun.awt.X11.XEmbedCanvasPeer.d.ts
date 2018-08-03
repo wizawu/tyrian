@@ -13,8 +13,8 @@ declare namespace sun {
                 public windowGainedFocus(arg0: java.awt.event.WindowEvent): void
                 public windowLostFocus(arg0: java.awt.event.WindowEvent): void
                 public postProcessKeyEvent(arg0: java.awt.event.KeyEvent): boolean
-                public modalityPushed(arg0: sun.awt.ModalityEvent | sun.awt.ModalityEvent$$Lambda): void
-                public modalityPopped(arg0: sun.awt.ModalityEvent | sun.awt.ModalityEvent$$Lambda): void
+                public modalityPushed(arg0: sun.awt.ModalityEvent): void
+                public modalityPopped(arg0: sun.awt.ModalityEvent): void
                 public handleClientMessage(arg0: sun.awt.X11.XEvent): void
                 public setXEmbedDropTarget(): void
                 public removeXEmbedDropTarget(): void
@@ -22,9 +22,6 @@ declare namespace sun {
                 public disableBackgroundErase(): void
                 public getAppropriateGraphicsConfiguration(arg0: java.awt.GraphicsConfiguration): java.awt.GraphicsConfiguration
                 public static class: java.lang.Class<any>
-            }
-            class XEmbedCanvasPeer$$Lambda extends sun.awt.X11.XCanvasPeer implements java.awt.event.WindowFocusListener , java.awt.KeyEventPostProcessor , sun.awt.ModalityListener , sun.awt.WindowIDProvider {
-                protected (arg0: sun.awt.X11.XCreateWindowParams): void
             }
         }
     }

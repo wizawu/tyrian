@@ -14,14 +14,14 @@ declare namespace javax {
                 public getAttributes(arg0: java.lang.String[]): javax.management.AttributeList
                 public setAttribute(arg0: javax.management.Attribute): void
                 public setAttributes(arg0: javax.management.AttributeList): javax.management.AttributeList
-                public addNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
-                public removeNotificationListener(arg0: javax.management.NotificationListener): void
-                public removeNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
+                public addNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda, arg1: javax.management.NotificationFilter | javax.management.NotificationFilter$$Lambda, arg2: java.lang.Object): void
+                public removeNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda): void
+                public removeNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda, arg1: javax.management.NotificationFilter | javax.management.NotificationFilter$$Lambda, arg2: java.lang.Object): void
                 public sendNotification(arg0: javax.management.Notification): void
                 public sendNotification(arg0: java.lang.String | string): void
                 public getNotificationInfo(): javax.management.MBeanNotificationInfo[]
-                public addAttributeChangeNotificationListener(arg0: javax.management.NotificationListener, arg1: java.lang.String | string, arg2: java.lang.Object): void
-                public removeAttributeChangeNotificationListener(arg0: javax.management.NotificationListener, arg1: java.lang.String | string): void
+                public addAttributeChangeNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda, arg1: java.lang.String | string, arg2: java.lang.Object): void
+                public removeAttributeChangeNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda, arg1: java.lang.String | string): void
                 public sendAttributeChangeNotification(arg0: javax.management.AttributeChangeNotification): void
                 public sendAttributeChangeNotification(arg0: javax.management.Attribute, arg1: javax.management.Attribute): void
                 protected getClassLoaderRepository(): javax.management.loading.ClassLoaderRepository

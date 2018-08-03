@@ -7,14 +7,14 @@ declare namespace com {
                         namespace pipe {
                             class NextAction {
                                 public constructor()
-                                public invoke(arg0: com.sun.xml.internal.ws.api.pipe.Tube, arg1: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): void
-                                public invokeAndForget(arg0: com.sun.xml.internal.ws.api.pipe.Tube, arg1: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): void
-                                public returnWith(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): void
-                                public throwException(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda, arg1: java.lang.Throwable): void
+                                public invoke(arg0: com.sun.xml.internal.ws.api.pipe.Tube, arg1: com.sun.xml.internal.ws.api.message.Packet): void
+                                public invokeAndForget(arg0: com.sun.xml.internal.ws.api.pipe.Tube, arg1: com.sun.xml.internal.ws.api.message.Packet): void
+                                public returnWith(arg0: com.sun.xml.internal.ws.api.message.Packet): void
+                                public throwException(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: java.lang.Throwable): void
                                 public throwException(arg0: java.lang.Throwable): void
                                 public throwExceptionAbortResponse(arg0: java.lang.Throwable): void
-                                public abortResponse(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): void
-                                public invokeAsync(arg0: com.sun.xml.internal.ws.api.pipe.Tube, arg1: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): void
+                                public abortResponse(arg0: com.sun.xml.internal.ws.api.message.Packet): void
+                                public invokeAsync(arg0: com.sun.xml.internal.ws.api.pipe.Tube, arg1: com.sun.xml.internal.ws.api.message.Packet): void
                                 public suspend(): void
                                 public suspend(arg0: java.lang.Runnable | java.lang.Runnable$$Lambda): void
                                 public suspend(arg0: com.sun.xml.internal.ws.api.pipe.Tube): void

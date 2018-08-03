@@ -24,7 +24,7 @@ declare namespace sun {
             protected layoutIconAndTextInLabelRect(arg0: sun.swing.MenuItemLayoutHelper$LayoutResult): void
             public static getMenuItemParent(arg0: javax.swing.JMenuItem): javax.swing.JComponent
             public static clearUsedParentClientProperties(arg0: javax.swing.JMenuItem): void
-            public static clearUsedClientProperties(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+            public static clearUsedClientProperties(arg0: javax.swing.JComponent): void
             public static max(...arg0: int[]): int
             public static createMaxRect(): java.awt.Rectangle
             public static addMaxWidth(arg0: sun.swing.MenuItemLayoutHelper$RectSize, arg1: int, arg2: java.awt.Dimension): void
@@ -61,7 +61,7 @@ declare namespace sun {
             public getArrowSize(): sun.swing.MenuItemLayoutHelper$RectSize
             public getLabelSize(): sun.swing.MenuItemLayoutHelper$RectSize
             protected setMenuItem(arg0: javax.swing.JMenuItem): void
-            protected setMenuItemParent(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+            protected setMenuItemParent(arg0: javax.swing.JComponent): void
             protected setFont(arg0: java.awt.Font): void
             protected setAccFont(arg0: java.awt.Font): void
             protected setFontMetrics(arg0: java.awt.FontMetrics): void

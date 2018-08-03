@@ -3,8 +3,8 @@ declare namespace javax {
         namespace text {
             namespace html {
                 class MinimalHTMLWriter extends javax.swing.text.AbstractWriter {
-                    public constructor(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: javax.swing.text.StyledDocument)
-                    public constructor(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: javax.swing.text.StyledDocument, arg2: int, arg3: int)
+                    public constructor(arg0: java.io.Writer, arg1: javax.swing.text.StyledDocument)
+                    public constructor(arg0: java.io.Writer, arg1: javax.swing.text.StyledDocument, arg2: int, arg3: int)
                     public write(): void
                     protected writeAttributes(arg0: javax.swing.text.AttributeSet): void
                     protected text(arg0: javax.swing.text.Element): void

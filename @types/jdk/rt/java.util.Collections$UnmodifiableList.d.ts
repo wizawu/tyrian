@@ -10,7 +10,7 @@ declare namespace java {
             public indexOf(arg0: java.lang.Object): int
             public lastIndexOf(arg0: java.lang.Object): int
             public addAll(arg0: int, arg1: java.util.Collection<E>): boolean
-            public replaceAll(arg0: java.util.function$.UnaryOperator<E>): void
+            public replaceAll(arg0: java.util.function$.UnaryOperator<E> | java.util.function$.UnaryOperator$$Lambda<E>): void
             public sort(arg0: java.util.Comparator<E>): void
             public listIterator(): java.util.ListIterator<E>
             public listIterator(arg0: int): java.util.ListIterator<E>

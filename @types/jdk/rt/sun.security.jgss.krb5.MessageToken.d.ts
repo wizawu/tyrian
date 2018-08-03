@@ -11,7 +11,7 @@ declare namespace sun {
                     public genSignAndSeqNumber(arg0: org.ietf.jgss.MessageProp, arg1: byte[], arg2: byte[], arg3: int, arg4: int, arg5: byte[]): void
                     public verifySignAndSeqNumber(arg0: byte[], arg1: byte[], arg2: int, arg3: int, arg4: byte[]): boolean
                     public getSequenceNumber(): int
-                    public encode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                    public encode(arg0: java.io.OutputStream): void
                     protected getKrb5TokenSize(): int
                     protected getTokenSize(): int
                     protected static getTokenSize(arg0: sun.security.jgss.krb5.CipherHelper): int

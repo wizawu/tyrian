@@ -28,8 +28,8 @@ declare namespace com {
                                         protected m_sourceSystemId: com.sun.org.apache.xml.internal.utils.StringVector
                                         protected m_sourceLine: com.sun.org.apache.xml.internal.utils.IntVector
                                         protected m_sourceColumn: com.sun.org.apache.xml.internal.utils.IntVector
-                                        public constructor(arg0: com.sun.org.apache.xml.internal.dtm.DTMManager, arg1: javax.xml.transform.Source, arg2: int, arg3: com.sun.org.apache.xml.internal.dtm.DTMWSFilter, arg4: com.sun.org.apache.xml.internal.utils.XMLStringFactory, arg5: boolean)
-                                        public constructor(arg0: com.sun.org.apache.xml.internal.dtm.DTMManager, arg1: javax.xml.transform.Source, arg2: int, arg3: com.sun.org.apache.xml.internal.dtm.DTMWSFilter, arg4: com.sun.org.apache.xml.internal.utils.XMLStringFactory, arg5: boolean, arg6: int, arg7: boolean, arg8: boolean)
+                                        public constructor(arg0: com.sun.org.apache.xml.internal.dtm.DTMManager, arg1: javax.xml.transform.Source, arg2: int, arg3: com.sun.org.apache.xml.internal.dtm.DTMWSFilter | com.sun.org.apache.xml.internal.dtm.DTMWSFilter$$Lambda, arg4: com.sun.org.apache.xml.internal.utils.XMLStringFactory, arg5: boolean)
+                                        public constructor(arg0: com.sun.org.apache.xml.internal.dtm.DTMManager, arg1: javax.xml.transform.Source, arg2: int, arg3: com.sun.org.apache.xml.internal.dtm.DTMWSFilter | com.sun.org.apache.xml.internal.dtm.DTMWSFilter$$Lambda, arg4: com.sun.org.apache.xml.internal.utils.XMLStringFactory, arg5: boolean, arg6: int, arg7: boolean, arg8: boolean)
                                         public setUseSourceLocation(arg0: boolean): void
                                         protected _dataOrQName(arg0: int): int
                                         public clearCoRoutine(): void

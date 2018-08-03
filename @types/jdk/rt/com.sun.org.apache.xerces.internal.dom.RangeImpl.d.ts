@@ -6,7 +6,7 @@ declare namespace com {
                     namespace internal {
                         namespace dom {
                             class RangeImpl implements org.w3c.dom.ranges.Range {
-                                public constructor(arg0: com.sun.org.apache.xerces.internal.dom.DocumentImpl | com.sun.org.apache.xerces.internal.dom.DocumentImpl$$Lambda)
+                                public constructor(arg0: com.sun.org.apache.xerces.internal.dom.DocumentImpl)
                                 public getStartContainer(): org.w3c.dom.Node
                                 public getStartOffset(): int
                                 public getEndContainer(): org.w3c.dom.Node

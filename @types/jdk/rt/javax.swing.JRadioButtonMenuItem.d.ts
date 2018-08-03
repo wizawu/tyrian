@@ -14,8 +14,5 @@ declare namespace javax {
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
         }
-        class JRadioButtonMenuItem$$Lambda extends javax.swing.JMenuItem implements javax.accessibility.Accessible {
-            public constructor()
-        }
     }
 }

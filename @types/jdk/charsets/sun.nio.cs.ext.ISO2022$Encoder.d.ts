@@ -14,7 +14,7 @@ declare namespace sun {
                     protected constructor(arg0: java.nio.charset.Charset)
                     public canEncode(arg0: char): boolean
                     protected implReset(): void
-                    protected encodeLoop(arg0: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
+                    protected encodeLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
                     public static class: java.lang.Class<any>
                 }
             }

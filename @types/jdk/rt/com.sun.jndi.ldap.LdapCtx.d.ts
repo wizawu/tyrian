@@ -48,13 +48,13 @@ declare namespace com {
                     public getRequestControls(): javax.naming.ldap.Control[]
                     public getConnectControls(): javax.naming.ldap.Control[]
                     public getResponseControls(): javax.naming.ldap.Control[]
-                    public addNamingListener(arg0: javax.naming.Name, arg1: int, arg2: javax.naming.event.NamingListener): void
-                    public addNamingListener(arg0: java.lang.String | string, arg1: int, arg2: javax.naming.event.NamingListener): void
-                    public removeNamingListener(arg0: javax.naming.event.NamingListener): void
-                    public addNamingListener(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.naming.directory.SearchControls, arg3: javax.naming.event.NamingListener): void
-                    public addNamingListener(arg0: javax.naming.Name, arg1: java.lang.String | string, arg2: javax.naming.directory.SearchControls, arg3: javax.naming.event.NamingListener): void
-                    public addNamingListener(arg0: javax.naming.Name, arg1: java.lang.String | string, arg2: java.lang.Object[], arg3: javax.naming.directory.SearchControls, arg4: javax.naming.event.NamingListener): void
-                    public addNamingListener(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object[], arg3: javax.naming.directory.SearchControls, arg4: javax.naming.event.NamingListener): void
+                    public addNamingListener(arg0: javax.naming.Name, arg1: int, arg2: javax.naming.event.NamingListener | javax.naming.event.NamingListener$$Lambda): void
+                    public addNamingListener(arg0: java.lang.String | string, arg1: int, arg2: javax.naming.event.NamingListener | javax.naming.event.NamingListener$$Lambda): void
+                    public removeNamingListener(arg0: javax.naming.event.NamingListener | javax.naming.event.NamingListener$$Lambda): void
+                    public addNamingListener(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.naming.directory.SearchControls, arg3: javax.naming.event.NamingListener | javax.naming.event.NamingListener$$Lambda): void
+                    public addNamingListener(arg0: javax.naming.Name, arg1: java.lang.String | string, arg2: javax.naming.directory.SearchControls, arg3: javax.naming.event.NamingListener | javax.naming.event.NamingListener$$Lambda): void
+                    public addNamingListener(arg0: javax.naming.Name, arg1: java.lang.String | string, arg2: java.lang.Object[], arg3: javax.naming.directory.SearchControls, arg4: javax.naming.event.NamingListener | javax.naming.event.NamingListener$$Lambda): void
+                    public addNamingListener(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object[], arg3: javax.naming.directory.SearchControls, arg4: javax.naming.event.NamingListener | javax.naming.event.NamingListener$$Lambda): void
                     public targetMustExist(): boolean
                     public static class: java.lang.Class<any>
                 }

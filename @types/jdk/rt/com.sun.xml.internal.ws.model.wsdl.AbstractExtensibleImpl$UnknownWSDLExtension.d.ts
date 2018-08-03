@@ -12,9 +12,6 @@ declare namespace com {
                                 public toString(): string
                                 public static class: java.lang.Class<any>
                             }
-                            class AbstractExtensibleImpl$UnknownWSDLExtension$$Lambda implements com.sun.xml.internal.ws.api.model.wsdl.WSDLExtension , com.sun.xml.internal.ws.api.model.wsdl.WSDLObject {
-                                public constructor(arg0: javax.xml.namespace.QName, arg1: org.xml.sax.Locator)
-                            }
                         }
                     }
                 }

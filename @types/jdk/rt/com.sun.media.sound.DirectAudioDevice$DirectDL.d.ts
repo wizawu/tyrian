@@ -28,9 +28,6 @@ declare namespace com {
                     public checkLine(): void
                     public static class: java.lang.Class<any>
                 }
-                class DirectAudioDevice$DirectDL$$Lambda extends com.sun.media.sound.AbstractDataLine implements com.sun.media.sound.EventDispatcher$LineMonitor {
-                    protected mixerIndex: int
-                }
             }
         }
     }

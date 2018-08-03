@@ -15,8 +15,8 @@ declare namespace java {
             public checkPermission(arg0: java.security.Permission): void
             public checkPermission(arg0: java.security.Permission, arg1: java.lang.Object): void
             public checkCreateClassLoader(): void
-            public checkAccess(arg0: java.lang.Thread | java.lang.Thread$$Lambda): void
-            public checkAccess(arg0: java.lang.ThreadGroup | java.lang.ThreadGroup$$Lambda): void
+            public checkAccess(arg0: java.lang.Thread): void
+            public checkAccess(arg0: java.lang.ThreadGroup): void
             public checkExit(arg0: int): void
             public checkExec(arg0: java.lang.String | string): void
             public checkLink(arg0: java.lang.String | string): void

@@ -7,8 +7,5 @@ declare namespace sun {
             public static startProcessing(): void
             public static class: java.lang.Class<any>
         }
-        class RequestProcessor$$Lambda implements java.lang.Runnable {
-            public constructor()
-        }
     }
 }

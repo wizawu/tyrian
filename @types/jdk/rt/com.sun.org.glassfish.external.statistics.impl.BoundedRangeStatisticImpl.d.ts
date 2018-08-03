@@ -22,9 +22,6 @@ declare namespace com {
                                 public invoke(arg0: java.lang.Object, arg1: java.lang.reflect.Method, arg2: java.lang.Object[]): java.lang.Object
                                 public static class: java.lang.Class<any>
                             }
-                            class BoundedRangeStatisticImpl$$Lambda extends com.sun.org.glassfish.external.statistics.impl.StatisticImpl implements com.sun.org.glassfish.external.statistics.BoundedRangeStatistic , java.lang.reflect.InvocationHandler {
-                                public (): string
-                            }
                         }
                     }
                 }

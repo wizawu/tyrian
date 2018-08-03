@@ -34,8 +34,8 @@ declare namespace com {
                                 public callVisitors(arg0: com.sun.org.apache.xpath.internal.ExpressionOwner, arg1: com.sun.org.apache.xpath.internal.XPathVisitor): void
                                 protected callSubtreeVisitors(arg0: com.sun.org.apache.xpath.internal.XPathVisitor): void
                                 public getExpression(): com.sun.org.apache.xpath.internal.Expression
-                                public setExpression(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda): void
-                                public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda): boolean
+                                public setExpression(arg0: com.sun.org.apache.xpath.internal.Expression): void
+                                public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression): boolean
                                 public static class: java.lang.Class<any>
                             }
                         }

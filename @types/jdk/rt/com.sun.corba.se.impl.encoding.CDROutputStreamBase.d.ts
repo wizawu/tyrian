@@ -51,7 +51,7 @@ declare namespace com {
                             public start_block(): void
                             public end_block(): void
                             public putEndian(): void
-                            public writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                            public writeTo(arg0: java.io.OutputStream): void
                             public toByteArray(): byte[]
                             public write_Abstract(arg0: java.lang.Object): void
                             public write_Value(arg0: java.io.Serializable): void

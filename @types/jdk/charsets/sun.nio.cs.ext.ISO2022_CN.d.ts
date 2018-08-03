@@ -11,9 +11,6 @@ declare namespace sun {
                     public canEncode(): boolean
                     public static class: java.lang.Class<any>
                 }
-                class ISO2022_CN$$Lambda extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    public constructor()
-                }
             }
         }
     }

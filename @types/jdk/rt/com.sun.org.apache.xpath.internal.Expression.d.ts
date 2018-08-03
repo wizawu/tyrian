@@ -21,8 +21,8 @@ declare namespace com {
                             public executeCharsToContentHandler(arg0: com.sun.org.apache.xpath.internal.XPathContext, arg1: org.xml.sax.ContentHandler): void
                             public isStableNumber(): boolean
                             public fixupVariables(arg0: java.util.Vector, arg1: int): void
-                            public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda): boolean
-                            protected isSameClass(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda): boolean
+                            public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression): boolean
+                            protected isSameClass(arg0: com.sun.org.apache.xpath.internal.Expression): boolean
                             public warn(arg0: com.sun.org.apache.xpath.internal.XPathContext, arg1: java.lang.String | string, arg2: java.lang.Object[]): void
                             public assertion(arg0: boolean, arg1: java.lang.String | string): void
                             public error(arg0: com.sun.org.apache.xpath.internal.XPathContext, arg1: java.lang.String | string, arg2: java.lang.Object[]): void
@@ -37,9 +37,6 @@ declare namespace com {
                             public getLineNumber(): int
                             public getColumnNumber(): int
                             public static class: java.lang.Class<any>
-                        }
-                        abstract class Expression$$Lambda implements java.io.Serializable , com.sun.org.apache.xpath.internal.ExpressionNode , com.sun.org.apache.xpath.internal.XPathVisitable {
-                            public constructor()
                         }
                     }
                 }

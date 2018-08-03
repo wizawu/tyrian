@@ -10,8 +10,8 @@ declare namespace com {
                 public copyFrom(arg0: java.nio.ByteBuffer): void
                 public copyFrom(arg0: char[]): void
                 public copyFrom(arg0: char[], arg1: int, arg2: int): void
-                public copyFrom(arg0: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda): void
-                public copyFrom(arg0: com.ibm.cuda.CudaBuffer | com.ibm.cuda.CudaBuffer$$Lambda, arg1: long, arg2: long): void
+                public copyFrom(arg0: java.nio.CharBuffer): void
+                public copyFrom(arg0: com.ibm.cuda.CudaBuffer, arg1: long, arg2: long): void
                 public copyFrom(arg0: double[]): void
                 public copyFrom(arg0: double[], arg1: int, arg2: int): void
                 public copyFrom(arg0: java.nio.DoubleBuffer): void
@@ -32,7 +32,7 @@ declare namespace com {
                 public copyTo(arg0: java.nio.ByteBuffer): void
                 public copyTo(arg0: char[]): void
                 public copyTo(arg0: char[], arg1: int, arg2: int): void
-                public copyTo(arg0: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda): void
+                public copyTo(arg0: java.nio.CharBuffer): void
                 public copyTo(arg0: double[]): void
                 public copyTo(arg0: double[], arg1: int, arg2: int): void
                 public copyTo(arg0: java.nio.DoubleBuffer): void
@@ -56,9 +56,6 @@ declare namespace com {
                 public getLength(): long
                 public slice(arg0: long, arg1: long): com.ibm.cuda.CudaBuffer
                 public static class: java.lang.Class<any>
-            }
-            class CudaBuffer$$Lambda implements java.lang.AutoCloseable {
-                public constructor(arg0: com.ibm.cuda.CudaDevice, arg1: long)
             }
         }
     }

@@ -5,6 +5,9 @@ declare namespace org {
                 interface ValueBase extends org.omg.CORBA.portable.IDLEntity {
                     _truncatable_ids(): java.lang.String[]
                 }
+                interface ValueBase$$Lambda extends org.omg.CORBA.portable.IDLEntity {
+                    (): java.lang.String[]
+                }
             }
         }
     }

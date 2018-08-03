@@ -12,9 +12,6 @@ declare namespace java {
                 public isLocked(): boolean
                 public static class: java.lang.Class<any>
             }
-            class ThreadPoolExecutor$Worker$$Lambda extends java.util.concurrent.locks.AbstractQueuedSynchronizer implements java.lang.Runnable {
-                public (): void
-            }
         }
     }
 }

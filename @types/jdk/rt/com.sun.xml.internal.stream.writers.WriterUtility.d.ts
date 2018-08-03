@@ -20,8 +20,8 @@ declare namespace com {
                             public static SPACE: string
                             public static UTF_8: string
                             public constructor()
-                            public constructor(arg0: java.io.Writer | java.io.Writer$$Lambda)
-                            public setWriter(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+                            public constructor(arg0: java.io.Writer)
+                            public setWriter(arg0: java.io.Writer): void
                             public setEscapeCharacters(arg0: boolean): void
                             public getEscapeCharacters(): boolean
                             public writeXMLContent(arg0: char[], arg1: int, arg2: int): void

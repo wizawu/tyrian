@@ -11,8 +11,8 @@ declare namespace java {
                     public lazySet(arg0: T, arg1: V): void
                     public get(arg0: T): V
                     public getAndSet(arg0: T, arg1: V): V
-                    public getAndUpdate(arg0: T, arg1: java.util.function$.UnaryOperator<V>): V
-                    public updateAndGet(arg0: T, arg1: java.util.function$.UnaryOperator<V>): V
+                    public getAndUpdate(arg0: T, arg1: java.util.function$.UnaryOperator<V> | java.util.function$.UnaryOperator$$Lambda<V>): V
+                    public updateAndGet(arg0: T, arg1: java.util.function$.UnaryOperator<V> | java.util.function$.UnaryOperator$$Lambda<V>): V
                     public getAndAccumulate(arg0: T, arg1: V, arg2: java.util.function$.BinaryOperator<V>): V
                     public accumulateAndGet(arg0: T, arg1: V, arg2: java.util.function$.BinaryOperator<V>): V
                     public static class: java.lang.Class<any>

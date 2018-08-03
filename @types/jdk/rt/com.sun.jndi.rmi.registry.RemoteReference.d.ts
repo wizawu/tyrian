@@ -6,6 +6,9 @@ declare namespace com {
                     interface RemoteReference extends java.rmi.Remote {
                         getReference(): javax.naming.Reference
                     }
+                    interface RemoteReference$$Lambda extends java.rmi.Remote {
+                        (): javax.naming.Reference
+                    }
                 }
             }
         }

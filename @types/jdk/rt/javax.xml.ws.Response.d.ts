@@ -4,6 +4,9 @@ declare namespace javax {
             interface Response<T> extends java.util.concurrent.Future<T> {
                 getContext(): java.util.Map<java.lang.String, java.lang.Object>
             }
+            interface Response$$Lambda<T> extends java.util.concurrent.Future<T> {
+                (): java.util.Map<java.lang.String, java.lang.Object>
+            }
         }
     }
 }

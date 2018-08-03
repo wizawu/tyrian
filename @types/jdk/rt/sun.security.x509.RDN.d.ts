@@ -4,7 +4,7 @@ declare namespace sun {
             class RDN {
                 public constructor(arg0: java.lang.String | string)
                 public constructor(arg0: java.lang.String | string, arg1: java.util.Map<java.lang.String, java.lang.String>)
-                public constructor(arg0: sun.security.x509.AVA | sun.security.x509.AVA$$Lambda)
+                public constructor(arg0: sun.security.x509.AVA)
                 public constructor(arg0: sun.security.x509.AVA[])
                 public avas(): java.util.List<sun.security.x509.AVA>
                 public size(): int

@@ -14,8 +14,8 @@ declare namespace javax {
             public setReshowDelay(arg0: int): void
             public getReshowDelay(): int
             public static sharedInstance(): javax.swing.ToolTipManager
-            public registerComponent(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-            public unregisterComponent(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+            public registerComponent(arg0: javax.swing.JComponent): void
+            public unregisterComponent(arg0: javax.swing.JComponent): void
             public mouseEntered(arg0: java.awt.event.MouseEvent): void
             public mouseExited(arg0: java.awt.event.MouseEvent): void
             public mousePressed(arg0: java.awt.event.MouseEvent): void

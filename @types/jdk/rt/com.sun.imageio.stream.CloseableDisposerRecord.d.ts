@@ -3,12 +3,9 @@ declare namespace com {
         namespace imageio {
             namespace stream {
                 class CloseableDisposerRecord implements sun.java2d.DisposerRecord {
-                    public constructor(arg0: java.io.Closeable)
+                    public constructor(arg0: java.io.Closeable | java.io.Closeable$$Lambda)
                     public dispose(): void
                     public static class: java.lang.Class<any>
-                }
-                class CloseableDisposerRecord$$Lambda implements sun.java2d.DisposerRecord {
-                    public constructor(arg0: java.io.Closeable)
                 }
             }
         }

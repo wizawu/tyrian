@@ -11,9 +11,6 @@ declare namespace sun {
                     public offer(arg0: java.lang.Object): boolean
                     public static class: java.lang.Class<any>
                 }
-                class KeepAliveStreamCleaner$$Lambda extends java.util.LinkedList<sun.net.www.http.KeepAliveCleanerEntry> implements java.lang.Runnable {
-                    protected static MAX_DATA_REMAINING: int
-                }
             }
         }
     }

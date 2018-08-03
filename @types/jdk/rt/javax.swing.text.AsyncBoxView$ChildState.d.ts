@@ -14,9 +14,6 @@ declare namespace javax {
                 public isLayoutValid(): boolean
                 public static class: java.lang.Class<any>
             }
-            class AsyncBoxView$ChildState$$Lambda implements java.lang.Runnable {
-                public constructor(arg0: javax.swing.text.AsyncBoxView, arg1: javax.swing.text.View)
-            }
         }
     }
 }

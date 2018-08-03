@@ -9,8 +9,8 @@ declare namespace javax {
                 public removeStyle(arg0: java.lang.String | string): void
                 public getStyle(arg0: java.lang.String | string): javax.swing.text.Style
                 public getStyleNames(): java.util.Enumeration<any>
-                public addChangeListener(arg0: javax.swing.event.ChangeListener): void
-                public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
+                public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+                public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
                 public getChangeListeners(): javax.swing.event.ChangeListener[]
                 public getFont(arg0: javax.swing.text.AttributeSet): java.awt.Font
                 public getForeground(arg0: javax.swing.text.AttributeSet): java.awt.Color

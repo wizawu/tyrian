@@ -44,14 +44,14 @@ declare namespace com {
                             public getHighestClassVersion(): com.sun.java.util.jar.pack.Package$Version
                             protected constructor()
                             public static codingForIndex(arg0: int): com.sun.java.util.jar.pack.Coding
-                            public static indexOf(arg0: com.sun.java.util.jar.pack.Coding | com.sun.java.util.jar.pack.Coding$$Lambda): int
+                            public static indexOf(arg0: com.sun.java.util.jar.pack.Coding): int
                             public static getBasicCodings(): com.sun.java.util.jar.pack.Coding[]
-                            protected getBandHeader(arg0: int, arg1: com.sun.java.util.jar.pack.Coding | com.sun.java.util.jar.pack.Coding$$Lambda): com.sun.java.util.jar.pack.CodingMethod
-                            public static parseMetaCoding(arg0: byte[], arg1: int, arg2: com.sun.java.util.jar.pack.Coding | com.sun.java.util.jar.pack.Coding$$Lambda, arg3: com.sun.java.util.jar.pack.CodingMethod[]): int
+                            protected getBandHeader(arg0: int, arg1: com.sun.java.util.jar.pack.Coding): com.sun.java.util.jar.pack.CodingMethod
+                            public static parseMetaCoding(arg0: byte[], arg1: int, arg2: com.sun.java.util.jar.pack.Coding, arg3: com.sun.java.util.jar.pack.CodingMethod[]): int
                             protected getCodingChooser(): com.sun.java.util.jar.pack.CodingChooser
-                            public chooseCoding(arg0: int[], arg1: int, arg2: int, arg3: com.sun.java.util.jar.pack.Coding | com.sun.java.util.jar.pack.Coding$$Lambda, arg4: java.lang.String | string, arg5: int[]): com.sun.java.util.jar.pack.CodingMethod
-                            protected static decodeEscapeValue(arg0: int, arg1: com.sun.java.util.jar.pack.Coding | com.sun.java.util.jar.pack.Coding$$Lambda): int
-                            protected static encodeEscapeValue(arg0: int, arg1: com.sun.java.util.jar.pack.Coding | com.sun.java.util.jar.pack.Coding$$Lambda): int
+                            public chooseCoding(arg0: int[], arg1: int, arg2: int, arg3: com.sun.java.util.jar.pack.Coding, arg4: java.lang.String | string, arg5: int[]): com.sun.java.util.jar.pack.CodingMethod
+                            protected static decodeEscapeValue(arg0: int, arg1: com.sun.java.util.jar.pack.Coding): int
+                            protected static encodeEscapeValue(arg0: int, arg1: com.sun.java.util.jar.pack.Coding): int
                             protected setBandIndexes(): void
                             protected setBandIndex(arg0: com.sun.java.util.jar.pack.BandStructure$CPRefBand, arg1: byte): void
                             protected setConstantValueIndex(arg0: com.sun.java.util.jar.pack.Package$Class$Field): void

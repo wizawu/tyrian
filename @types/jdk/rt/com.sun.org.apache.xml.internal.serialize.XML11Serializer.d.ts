@@ -16,8 +16,8 @@ declare namespace com {
                                 protected fNamespaces: boolean
                                 public constructor()
                                 public constructor(arg0: com.sun.org.apache.xml.internal.serialize.OutputFormat)
-                                public constructor(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: com.sun.org.apache.xml.internal.serialize.OutputFormat)
-                                public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: com.sun.org.apache.xml.internal.serialize.OutputFormat)
+                                public constructor(arg0: java.io.Writer, arg1: com.sun.org.apache.xml.internal.serialize.OutputFormat)
+                                public constructor(arg0: java.io.OutputStream, arg1: com.sun.org.apache.xml.internal.serialize.OutputFormat)
                                 public characters(arg0: char[], arg1: int, arg2: int): void
                                 protected printEscaped(arg0: java.lang.String | string): void
                                 protected printCDATAText(arg0: java.lang.String | string): void

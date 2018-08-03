@@ -46,11 +46,11 @@ declare namespace javax {
             public hidePopup(): void
             public setPopupVisible(arg0: boolean): void
             public isPopupVisible(): boolean
-            public addItemListener(arg0: java.awt.event.ItemListener): void
-            public removeItemListener(arg0: java.awt.event.ItemListener): void
+            public addItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): void
+            public removeItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): void
             public getItemListeners(): java.awt.event.ItemListener[]
-            public addActionListener(arg0: java.awt.event.ActionListener): void
-            public removeActionListener(arg0: java.awt.event.ActionListener): void
+            public addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
+            public removeActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
             public getActionListeners(): java.awt.event.ActionListener[]
             public addPopupMenuListener(arg0: javax.swing.event.PopupMenuListener): void
             public removePopupMenuListener(arg0: javax.swing.event.PopupMenuListener): void
@@ -86,9 +86,6 @@ declare namespace javax {
             protected paramString(): string
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
-        }
-        class JComboBox$$Lambda<E> extends javax.swing.JComponent implements java.awt.ItemSelectable , javax.swing.event.ListDataListener , java.awt.event.ActionListener , javax.accessibility.Accessible {
-            protected dataModel: javax.swing.ComboBoxModel<E>
         }
     }
 }

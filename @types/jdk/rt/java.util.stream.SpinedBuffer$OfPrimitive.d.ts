@@ -3,7 +3,7 @@ declare namespace java {
         namespace stream {
             abstract class SpinedBuffer$OfPrimitive<E, T_ARR, T_CONS> extends java.util.stream.AbstractSpinedBuffer implements java.lang.Iterable<E> {
                 public iterator(): java.util.Iterator<E>
-                public forEach(arg0: java.util.function$.Consumer$$TypeScript<E>): void
+                public forEach(arg0: java.util.function$.Consumer$$Lambda<E>): void
                 protected newArrayArray(arg0: int): T_ARR[]
                 public newArray(arg0: int): T_ARR
                 protected arrayLength(arg0: T_ARR): int

@@ -5,8 +5,8 @@ declare namespace java {
                 public accept(arg0: T): void
                 public add(arg0: T): java.util.stream.Stream$Builder<T>
                 public build(): java.util.stream.Stream<T>
-                public tryAdvance(arg0: java.util.function$.Consumer$$TypeScript<T>): boolean
-                public forEachRemaining(arg0: java.util.function$.Consumer$$TypeScript<T>): void
+                public tryAdvance(arg0: java.util.function$.Consumer$$Lambda<T>): boolean
+                public forEachRemaining(arg0: java.util.function$.Consumer$$Lambda<T>): void
                 public static class: java.lang.Class<any>
             }
         }

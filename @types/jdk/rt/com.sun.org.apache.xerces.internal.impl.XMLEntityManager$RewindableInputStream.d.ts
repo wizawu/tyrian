@@ -6,7 +6,7 @@ declare namespace com {
                     namespace internal {
                         namespace impl {
                             class XMLEntityManager$RewindableInputStream extends java.io.InputStream {
-                                public constructor(arg0: com.sun.org.apache.xerces.internal.impl.XMLEntityManager | com.sun.org.apache.xerces.internal.impl.XMLEntityManager$$Lambda, arg1: java.io.InputStream)
+                                public constructor(arg0: com.sun.org.apache.xerces.internal.impl.XMLEntityManager, arg1: java.io.InputStream)
                                 public setStartOffset(arg0: int): void
                                 public rewind(): void
                                 public read(): int

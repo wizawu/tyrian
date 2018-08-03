@@ -22,7 +22,7 @@ declare namespace javax {
                 public static isFileTypeSupported(arg0: int): boolean
                 public static getMidiFileTypes(arg0: javax.sound.midi.Sequence): int[]
                 public static isFileTypeSupported(arg0: int, arg1: javax.sound.midi.Sequence): boolean
-                public static write(arg0: javax.sound.midi.Sequence, arg1: int, arg2: java.io.OutputStream | java.io.OutputStream$$Lambda): int
+                public static write(arg0: javax.sound.midi.Sequence, arg1: int, arg2: java.io.OutputStream): int
                 public static write(arg0: javax.sound.midi.Sequence, arg1: int, arg2: java.io.File): int
                 public static class: java.lang.Class<any>
             }

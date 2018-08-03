@@ -5,6 +5,9 @@ declare namespace javax {
                 interface XmlSeeAlso extends java.lang.annotation.Annotation {
                     value(): java.lang.Class[]
                 }
+                interface XmlSeeAlso$$Lambda extends java.lang.annotation.Annotation {
+                    (): java.lang.Class[]
+                }
             }
         }
     }

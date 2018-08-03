@@ -34,9 +34,6 @@ declare namespace javax {
                     public create(arg0: javax.swing.text.Element): javax.swing.text.View
                     public static class: java.lang.Class<any>
                 }
-                class TableView$$Lambda extends javax.swing.text.BoxView implements javax.swing.text.ViewFactory {
-                    public constructor(arg0: javax.swing.text.Element)
-                }
             }
         }
     }

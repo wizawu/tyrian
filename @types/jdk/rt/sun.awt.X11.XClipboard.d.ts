@@ -14,9 +14,6 @@ declare namespace sun {
                 protected unregisterClipboardViewerChecked(): void
                 public static class: java.lang.Class<any>
             }
-            class XClipboard$$Lambda extends sun.awt.datatransfer.SunClipboard implements sun.awt.X11.OwnershipListener {
-                public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
-            }
         }
     }
 }

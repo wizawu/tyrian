@@ -31,8 +31,8 @@ declare namespace com {
                                     public setOmitXmlDecl(arg0: java.lang.String | string): void
                                     public setXmlDecl(arg0: java.lang.String | string): void
                                     public setCharsetEncoding(arg0: java.lang.String | string): void
-                                    public output(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
-                                    public output(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: boolean): void
+                                    public output(arg0: java.io.OutputStream): void
+                                    public output(arg0: java.io.OutputStream, arg1: boolean): void
                                     public setElementQName(arg0: javax.xml.namespace.QName): javax.xml.soap.SOAPElement
                                     public static class: java.lang.Class<any>
                                 }

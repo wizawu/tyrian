@@ -15,9 +15,9 @@ declare namespace javax {
             public getWriter(): java.io.Writer
             public getReader(): java.io.Reader
             public setReader(arg0: java.io.Reader): void
-            public setWriter(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+            public setWriter(arg0: java.io.Writer): void
             public getErrorWriter(): java.io.Writer
-            public setErrorWriter(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+            public setErrorWriter(arg0: java.io.Writer): void
             public getAttributesScope(arg0: java.lang.String | string): int
             public getBindings(arg0: int): javax.script.Bindings
             public getScopes(): java.util.List<java.lang.Integer>

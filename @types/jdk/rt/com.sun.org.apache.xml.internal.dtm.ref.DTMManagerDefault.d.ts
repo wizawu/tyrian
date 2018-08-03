@@ -14,7 +14,7 @@ declare namespace com {
                                     public addDTM(arg0: com.sun.org.apache.xml.internal.dtm.DTM, arg1: int, arg2: int): void
                                     public getFirstFreeDTMID(): int
                                     public constructor()
-                                    public getDTM(arg0: javax.xml.transform.Source, arg1: boolean, arg2: com.sun.org.apache.xml.internal.dtm.DTMWSFilter, arg3: boolean, arg4: boolean): com.sun.org.apache.xml.internal.dtm.DTM
+                                    public getDTM(arg0: javax.xml.transform.Source, arg1: boolean, arg2: com.sun.org.apache.xml.internal.dtm.DTMWSFilter | com.sun.org.apache.xml.internal.dtm.DTMWSFilter$$Lambda, arg3: boolean, arg4: boolean): com.sun.org.apache.xml.internal.dtm.DTM
                                     public getDTMHandleFromNode(arg0: org.w3c.dom.Node): int
                                     public getXMLReader(arg0: javax.xml.transform.Source): org.xml.sax.XMLReader
                                     public releaseXMLReader(arg0: org.xml.sax.XMLReader): void

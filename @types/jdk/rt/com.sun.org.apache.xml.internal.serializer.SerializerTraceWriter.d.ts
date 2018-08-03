@@ -6,7 +6,7 @@ declare namespace com {
                     namespace internal {
                         namespace serializer {
                             class SerializerTraceWriter extends java.io.Writer implements com.sun.org.apache.xml.internal.serializer.WriterChain {
-                                public constructor(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: com.sun.org.apache.xml.internal.serializer.SerializerTrace)
+                                public constructor(arg0: java.io.Writer, arg1: com.sun.org.apache.xml.internal.serializer.SerializerTrace)
                                 public flush(): void
                                 public close(): void
                                 public write(arg0: int): void

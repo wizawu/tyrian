@@ -6,7 +6,7 @@ declare namespace com {
                     namespace internal {
                         namespace patterns {
                             class FunctionPattern extends com.sun.org.apache.xpath.internal.patterns.StepPattern {
-                                public constructor(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda, arg1: int, arg2: int)
+                                public constructor(arg0: com.sun.org.apache.xpath.internal.Expression, arg1: int, arg2: int)
                                 public calcScore(): void
                                 public fixupVariables(arg0: java.util.Vector, arg1: int): void
                                 public execute(arg0: com.sun.org.apache.xpath.internal.XPathContext, arg1: int): com.sun.org.apache.xpath.internal.objects.XObject

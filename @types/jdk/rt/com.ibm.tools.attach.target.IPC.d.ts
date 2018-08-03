@@ -15,7 +15,7 @@ declare namespace com {
                         public static logMessage(arg0: java.lang.String | string, arg1: int, arg2: java.lang.String | string): void
                         public static logMessage(arg0: java.lang.String | string, arg1: int, arg2: java.lang.String | string, arg3: java.lang.String | string): void
                         public static logMessage(arg0: java.lang.String | string, arg1: java.lang.Throwable): void
-                        public static sendProperties(arg0: java.util.Properties, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                        public static sendProperties(arg0: java.util.Properties, arg1: java.io.OutputStream): void
                         public static receiveProperties(arg0: java.io.InputStream, arg1: boolean): java.util.Properties
                         public static class: java.lang.Class<any>
                     }

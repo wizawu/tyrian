@@ -49,7 +49,7 @@ declare namespace com {
                                 setVocabularyApplicationData(arg0: com.sun.xml.internal.org.jvnet.fastinfoset.VocabularyApplicationData | com.sun.xml.internal.org.jvnet.fastinfoset.VocabularyApplicationData$$Lambda): void
                                 getVocabularyApplicationData(): com.sun.xml.internal.org.jvnet.fastinfoset.VocabularyApplicationData
                                 reset(): void
-                                setOutputStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                                setOutputStream(arg0: java.io.OutputStream): void
                             }
                         }
                     }

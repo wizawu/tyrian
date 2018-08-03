@@ -12,9 +12,6 @@ declare namespace com {
                         public getPrefix(arg0: java.lang.String | string): string
                         public static class: java.lang.Class<any>
                     }
-                    class StartTag$$Lambda extends com.sun.xml.internal.txw2.Content implements com.sun.xml.internal.txw2.NamespaceResolver {
-                        public constructor(arg0: com.sun.xml.internal.txw2.ContainerElement, arg1: java.lang.String | string, arg2: java.lang.String | string)
-                    }
                 }
             }
         }

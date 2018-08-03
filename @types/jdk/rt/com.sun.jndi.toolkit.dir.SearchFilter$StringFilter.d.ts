@@ -6,6 +6,9 @@ declare namespace com {
                     interface SearchFilter$StringFilter extends com.sun.jndi.toolkit.dir.AttrFilter {
                         parse(): void
                     }
+                    interface SearchFilter$StringFilter$$Lambda extends com.sun.jndi.toolkit.dir.AttrFilter {
+                        (): void
+                    }
                 }
             }
         }

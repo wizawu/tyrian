@@ -8,7 +8,7 @@ declare namespace com {
                             class NonAnonymousResponseProcessor {
                                 public static getDefault(): com.sun.xml.internal.ws.api.addressing.NonAnonymousResponseProcessor
                                 protected constructor()
-                                public process(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): com.sun.xml.internal.ws.api.message.Packet
+                                public process(arg0: com.sun.xml.internal.ws.api.message.Packet): com.sun.xml.internal.ws.api.message.Packet
                                 public static class: java.lang.Class<any>
                             }
                         }

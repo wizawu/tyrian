@@ -16,9 +16,6 @@ declare namespace com {
                                             public getBaseLocalName(): string
                                             public static class: java.lang.Class<any>
                                         }
-                                        class DSAKeyValue$$Lambda extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.keyvalues.KeyValueContent {
-                                            public constructor(arg0: org.w3c.dom.Element, arg1: java.lang.String | string)
-                                        }
                                     }
                                 }
                             }

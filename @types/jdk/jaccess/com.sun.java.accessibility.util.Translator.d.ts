@@ -24,8 +24,8 @@ declare namespace com {
                         public getAccessibleChildrenCount(): int
                         public getAccessibleChild(arg0: int): javax.accessibility.Accessible
                         public getLocale(): java.util.Locale
-                        public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-                        public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+                        public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+                        public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
                         public getBackground(): java.awt.Color
                         public setBackground(arg0: java.awt.Color): void
                         public getForeground(): java.awt.Color

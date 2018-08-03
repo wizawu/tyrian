@@ -9,9 +9,6 @@ declare namespace java {
                 public lostOwnership(arg0: java.awt.datatransfer.Clipboard, arg1: java.awt.datatransfer.Transferable): void
                 public static class: java.lang.Class<any>
             }
-            class StringSelection$$Lambda implements java.awt.datatransfer.Transferable , java.awt.datatransfer.ClipboardOwner {
-                public constructor(arg0: java.lang.String | string)
-            }
         }
     }
 }

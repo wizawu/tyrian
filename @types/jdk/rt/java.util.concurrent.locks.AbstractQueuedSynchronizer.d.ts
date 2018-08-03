@@ -23,7 +23,7 @@ declare namespace java {
                     public hasQueuedThreads(): boolean
                     public hasContended(): boolean
                     public getFirstQueuedThread(): java.lang.Thread
-                    public isQueued(arg0: java.lang.Thread | java.lang.Thread$$Lambda): boolean
+                    public isQueued(arg0: java.lang.Thread): boolean
                     public hasQueuedPredecessors(): boolean
                     public getQueueLength(): int
                     public getQueuedThreads(): java.util.Collection<java.lang.Thread>

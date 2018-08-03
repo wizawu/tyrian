@@ -11,15 +11,15 @@ declare namespace com {
                                 public constructor()
                                 public fixupVariables(arg0: java.util.Vector, arg1: int): void
                                 public canTraverseOutsideSubtree(): boolean
-                                public setLeftRight(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda, arg1: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda): void
+                                public setLeftRight(arg0: com.sun.org.apache.xpath.internal.Expression, arg1: com.sun.org.apache.xpath.internal.Expression): void
                                 public execute(arg0: com.sun.org.apache.xpath.internal.XPathContext): com.sun.org.apache.xpath.internal.objects.XObject
                                 public operate(arg0: com.sun.org.apache.xpath.internal.objects.XObject, arg1: com.sun.org.apache.xpath.internal.objects.XObject): com.sun.org.apache.xpath.internal.objects.XObject
                                 public getLeftOperand(): com.sun.org.apache.xpath.internal.Expression
                                 public getRightOperand(): com.sun.org.apache.xpath.internal.Expression
                                 public callVisitors(arg0: com.sun.org.apache.xpath.internal.ExpressionOwner, arg1: com.sun.org.apache.xpath.internal.XPathVisitor): void
                                 public getExpression(): com.sun.org.apache.xpath.internal.Expression
-                                public setExpression(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda): void
-                                public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda): boolean
+                                public setExpression(arg0: com.sun.org.apache.xpath.internal.Expression): void
+                                public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression): boolean
                                 public static class: java.lang.Class<any>
                             }
                         }

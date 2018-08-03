@@ -25,7 +25,7 @@ declare namespace sun {
                     public changeToParentDirectory(): sun.net.ftp.FtpClient
                     public getWorkingDirectory(): string
                     public setRestartOffset(arg0: long): sun.net.ftp.FtpClient
-                    public getFile(arg0: java.lang.String | string, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): sun.net.ftp.FtpClient
+                    public getFile(arg0: java.lang.String | string, arg1: java.io.OutputStream): sun.net.ftp.FtpClient
                     public getFileStream(arg0: java.lang.String | string): java.io.InputStream
                     public putFileStream(arg0: java.lang.String | string, arg1: boolean): java.io.OutputStream
                     public putFile(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: boolean): sun.net.ftp.FtpClient

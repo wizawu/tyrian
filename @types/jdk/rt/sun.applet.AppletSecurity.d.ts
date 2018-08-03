@@ -3,10 +3,10 @@ declare namespace sun {
         class AppletSecurity extends sun.awt.AWTSecurityManager {
             public constructor()
             public reset(): void
-            protected inThreadGroup(arg0: java.lang.ThreadGroup | java.lang.ThreadGroup$$Lambda): boolean
-            protected inThreadGroup(arg0: java.lang.Thread | java.lang.Thread$$Lambda): boolean
-            public checkAccess(arg0: java.lang.Thread | java.lang.Thread$$Lambda): void
-            public checkAccess(arg0: java.lang.ThreadGroup | java.lang.ThreadGroup$$Lambda): void
+            protected inThreadGroup(arg0: java.lang.ThreadGroup): boolean
+            protected inThreadGroup(arg0: java.lang.Thread): boolean
+            public checkAccess(arg0: java.lang.Thread): void
+            public checkAccess(arg0: java.lang.ThreadGroup): void
             public checkPackageAccess(arg0: java.lang.String | string): void
             public checkAwtEventQueueAccess(): void
             public getThreadGroup(): java.lang.ThreadGroup

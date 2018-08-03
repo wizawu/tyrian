@@ -18,7 +18,7 @@ declare namespace javax {
                     asEndElement(): javax.xml.stream.events.EndElement
                     asCharacters(): javax.xml.stream.events.Characters
                     getSchemaType(): javax.xml.namespace.QName
-                    writeAsEncodedUnicode(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+                    writeAsEncodedUnicode(arg0: java.io.Writer): void
                 }
             }
         }

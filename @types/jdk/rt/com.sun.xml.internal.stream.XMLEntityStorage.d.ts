@@ -13,7 +13,7 @@ declare namespace com {
                         protected fPropertyManager: com.sun.org.apache.xerces.internal.impl.PropertyManager
                         protected fInExternalSubset: boolean
                         public constructor(arg0: com.sun.org.apache.xerces.internal.impl.PropertyManager)
-                        public constructor(arg0: com.sun.org.apache.xerces.internal.impl.XMLEntityManager | com.sun.org.apache.xerces.internal.impl.XMLEntityManager$$Lambda)
+                        public constructor(arg0: com.sun.org.apache.xerces.internal.impl.XMLEntityManager)
                         public reset(arg0: com.sun.org.apache.xerces.internal.impl.PropertyManager): void
                         public reset(): void
                         public reset(arg0: com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager): void

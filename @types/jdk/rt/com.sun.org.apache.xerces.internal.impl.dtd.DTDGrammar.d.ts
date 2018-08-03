@@ -98,9 +98,6 @@ declare namespace com {
                                     public isEntityUnparsed(arg0: java.lang.String | string): boolean
                                     public static class: java.lang.Class<any>
                                 }
-                                class DTDGrammar$$Lambda implements com.sun.org.apache.xerces.internal.xni.XMLDTDHandler , com.sun.org.apache.xerces.internal.xni.XMLDTDContentModelHandler , com.sun.org.apache.xerces.internal.impl.validation.EntityState , com.sun.org.apache.xerces.internal.xni.grammars.Grammar {
-                                    public static TOP_LEVEL_SCOPE: int
-                                }
                             }
                         }
                     }

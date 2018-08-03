@@ -7,7 +7,7 @@ declare namespace com {
                         namespace impl {
                             class XML11DTDScannerImpl extends com.sun.org.apache.xerces.internal.impl.XMLDTDScannerImpl {
                                 public constructor()
-                                public constructor(arg0: com.sun.org.apache.xerces.internal.util.SymbolTable, arg1: com.sun.org.apache.xerces.internal.impl.XMLErrorReporter, arg2: com.sun.org.apache.xerces.internal.impl.XMLEntityManager | com.sun.org.apache.xerces.internal.impl.XMLEntityManager$$Lambda)
+                                public constructor(arg0: com.sun.org.apache.xerces.internal.util.SymbolTable, arg1: com.sun.org.apache.xerces.internal.impl.XMLErrorReporter, arg2: com.sun.org.apache.xerces.internal.impl.XMLEntityManager)
                                 protected scanPubidLiteral(arg0: com.sun.org.apache.xerces.internal.xni.XMLString): boolean
                                 protected normalizeWhitespace(arg0: com.sun.org.apache.xerces.internal.xni.XMLString): void
                                 protected normalizeWhitespace(arg0: com.sun.org.apache.xerces.internal.xni.XMLString, arg1: int): void

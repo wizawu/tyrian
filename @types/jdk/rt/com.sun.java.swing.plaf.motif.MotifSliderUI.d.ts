@@ -5,8 +5,8 @@ declare namespace com {
                 namespace plaf {
                     namespace motif {
                         class MotifSliderUI extends javax.swing.plaf.basic.BasicSliderUI {
-                            public constructor(arg0: javax.swing.JSlider | javax.swing.JSlider$$Lambda)
-                            public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
+                            public constructor(arg0: javax.swing.JSlider)
+                            public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
                             public getPreferredHorizontalSize(): java.awt.Dimension
                             public getPreferredVerticalSize(): java.awt.Dimension
                             public getMinimumHorizontalSize(): java.awt.Dimension

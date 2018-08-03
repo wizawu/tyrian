@@ -5,5 +5,8 @@ declare namespace sun {
             NEVER_CURRENT: sun.java2d.StateTracker
             isCurrent(): boolean
         }
+        interface StateTracker$$Lambda {
+            ALWAYS_CURRENT: sun.java2d.StateTracker
+        }
     }
 }

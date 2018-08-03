@@ -11,9 +11,9 @@ declare namespace com {
                         public setAttributes(arg0: javax.management.AttributeList): javax.management.AttributeList
                         public invoke(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.String[]): java.lang.Object
                         public getMBeanInfo(): javax.management.MBeanInfo
-                        public removeNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
-                        public addNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
-                        public removeNotificationListener(arg0: javax.management.NotificationListener): void
+                        public removeNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda, arg1: javax.management.NotificationFilter | javax.management.NotificationFilter$$Lambda, arg2: java.lang.Object): void
+                        public addNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda, arg1: javax.management.NotificationFilter | javax.management.NotificationFilter$$Lambda, arg2: java.lang.Object): void
+                        public removeNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda): void
                         public getNotificationInfo(): javax.management.MBeanNotificationInfo[]
                         public static class: java.lang.Class<any>
                     }

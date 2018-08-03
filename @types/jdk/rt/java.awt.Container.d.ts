@@ -72,8 +72,8 @@ declare namespace java {
             public isFocusTraversalPolicyProvider<T extends java.util.EventListener>(): boolean
             public transferFocusDownCycle<T extends java.util.EventListener>(): void
             public applyComponentOrientation<T extends java.util.EventListener>(arg0: java.awt.ComponentOrientation): void
-            public addPropertyChangeListener<T extends java.util.EventListener>(arg0: java.beans.PropertyChangeListener): void
-            public addPropertyChangeListener<T extends java.util.EventListener>(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener): void
+            public addPropertyChangeListener<T extends java.util.EventListener>(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            public addPropertyChangeListener<T extends java.util.EventListener>(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
             public static class: java.lang.Class<any>
         }
     }

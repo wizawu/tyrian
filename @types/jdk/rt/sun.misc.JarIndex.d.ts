@@ -10,7 +10,7 @@ declare namespace sun {
             public getJarFiles(): java.lang.String[]
             public get(arg0: java.lang.String | string): java.util.LinkedList<java.lang.String>
             public add(arg0: java.lang.String | string, arg1: java.lang.String | string): void
-            public write(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+            public write(arg0: java.io.OutputStream): void
             public read(arg0: java.io.InputStream): void
             public merge(arg0: sun.misc.JarIndex, arg1: java.lang.String | string): void
             public static class: java.lang.Class<any>

@@ -4,9 +4,9 @@ declare namespace java {
             class InflaterOutputStream extends java.io.FilterOutputStream {
                 protected inf: java.util.zip.Inflater
                 protected buf: byte[]
-                public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda)
-                public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: java.util.zip.Inflater)
-                public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: java.util.zip.Inflater, arg2: int)
+                public constructor(arg0: java.io.OutputStream)
+                public constructor(arg0: java.io.OutputStream, arg1: java.util.zip.Inflater)
+                public constructor(arg0: java.io.OutputStream, arg1: java.util.zip.Inflater, arg2: int)
                 public close(): void
                 public flush(): void
                 public finish(): void

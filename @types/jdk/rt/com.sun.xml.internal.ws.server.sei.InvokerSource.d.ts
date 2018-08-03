@@ -6,7 +6,10 @@ declare namespace com {
                     namespace server {
                         namespace sei {
                             interface InvokerSource<T extends com.sun.xml.internal.ws.server.sei.Invoker> {
-                                getInvoker(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): T
+                                getInvoker(arg0: com.sun.xml.internal.ws.api.message.Packet): T
+                            }
+                            interface InvokerSource$$Lambda<T extends com.sun.xml.internal.ws.server.sei.Invoker> {
+                                (arg0: com.sun.xml.internal.ws.api.message.Packet): T
                             }
                         }
                     }

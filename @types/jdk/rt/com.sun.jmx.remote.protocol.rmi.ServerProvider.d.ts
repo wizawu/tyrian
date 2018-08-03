@@ -9,9 +9,6 @@ declare namespace com {
                             public newJMXConnectorServer(arg0: javax.management.remote.JMXServiceURL, arg1: java.util.Map<java.lang.String, any>, arg2: javax.management.MBeanServer): javax.management.remote.JMXConnectorServer
                             public static class: java.lang.Class<any>
                         }
-                        class ServerProvider$$Lambda implements javax.management.remote.JMXConnectorServerProvider {
-                            public constructor()
-                        }
                     }
                 }
             }

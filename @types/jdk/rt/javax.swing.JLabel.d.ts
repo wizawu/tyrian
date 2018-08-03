@@ -42,8 +42,5 @@ declare namespace javax {
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
         }
-        class JLabel$$Lambda extends javax.swing.JComponent implements javax.swing.SwingConstants , javax.accessibility.Accessible {
-            protected labelFor: java.awt.Component
-        }
     }
 }

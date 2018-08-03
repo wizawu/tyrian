@@ -29,7 +29,7 @@ declare namespace com {
                                 public setNewLine(arg0: java.lang.String | string): void
                                 public getNewLine(): string
                                 public getFilter(): org.w3c.dom.ls.LSSerializerFilter
-                                public setFilter(arg0: org.w3c.dom.ls.LSSerializerFilter): void
+                                public setFilter(arg0: org.w3c.dom.ls.LSSerializerFilter | org.w3c.dom.ls.LSSerializerFilter$$Lambda): void
                                 public write(arg0: org.w3c.dom.Node, arg1: org.w3c.dom.ls.LSOutput): boolean
                                 public writeToURI(arg0: org.w3c.dom.Node, arg1: java.lang.String | string): boolean
                                 public static class: java.lang.Class<any>

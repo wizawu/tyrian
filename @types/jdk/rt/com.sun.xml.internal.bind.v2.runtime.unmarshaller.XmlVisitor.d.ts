@@ -7,7 +7,7 @@ declare namespace com {
                         namespace runtime {
                             namespace unmarshaller {
                                 interface XmlVisitor {
-                                    startDocument(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.LocatorEx, arg1: javax.xml.namespace.NamespaceContext): void
+                                    startDocument(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.LocatorEx | com.sun.xml.internal.bind.v2.runtime.unmarshaller.LocatorEx$$Lambda, arg1: javax.xml.namespace.NamespaceContext): void
                                     endDocument(): void
                                     startElement(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName): void
                                     endElement(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.TagName): void

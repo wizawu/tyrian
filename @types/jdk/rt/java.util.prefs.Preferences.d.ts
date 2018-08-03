@@ -38,12 +38,12 @@ declare namespace java {
                 public toString(): string
                 public flush(): void
                 public sync(): void
-                public addPreferenceChangeListener(arg0: java.util.prefs.PreferenceChangeListener): void
-                public removePreferenceChangeListener(arg0: java.util.prefs.PreferenceChangeListener): void
+                public addPreferenceChangeListener(arg0: java.util.prefs.PreferenceChangeListener | java.util.prefs.PreferenceChangeListener$$Lambda): void
+                public removePreferenceChangeListener(arg0: java.util.prefs.PreferenceChangeListener | java.util.prefs.PreferenceChangeListener$$Lambda): void
                 public addNodeChangeListener(arg0: java.util.prefs.NodeChangeListener): void
                 public removeNodeChangeListener(arg0: java.util.prefs.NodeChangeListener): void
-                public exportNode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
-                public exportSubtree(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public exportNode(arg0: java.io.OutputStream): void
+                public exportSubtree(arg0: java.io.OutputStream): void
                 public static importPreferences(arg0: java.io.InputStream): void
                 public static class: java.lang.Class<any>
             }

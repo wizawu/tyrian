@@ -6,15 +6,12 @@ declare namespace sun {
                 protected attributeValue: java.lang.Object
                 public constructor(arg0: sun.security.util.DerValue)
                 public constructor(arg0: sun.security.util.ObjectIdentifier, arg1: java.lang.Object)
-                public constructor(arg0: sun.security.pkcs.PKCS9Attribute | sun.security.pkcs.PKCS9Attribute$$Lambda)
-                public derEncode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public constructor(arg0: sun.security.pkcs.PKCS9Attribute)
+                public derEncode(arg0: java.io.OutputStream): void
                 public getAttributeId(): sun.security.util.ObjectIdentifier
                 public getAttributeValue(): java.lang.Object
                 public toString(): string
                 public static class: java.lang.Class<any>
-            }
-            class PKCS10Attribute$$Lambda implements sun.security.util.DerEncoder {
-                protected attributeId: sun.security.util.ObjectIdentifier
             }
         }
     }

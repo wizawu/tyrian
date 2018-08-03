@@ -27,7 +27,7 @@ declare namespace com {
                                     public addTransform(arg0: java.lang.String | string, arg1: org.w3c.dom.Element): void
                                     public addTransform(arg0: java.lang.String | string, arg1: org.w3c.dom.NodeList): void
                                     public performTransforms(arg0: com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
-                                    public performTransforms(arg0: com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
+                                    public performTransforms(arg0: com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput, arg1: java.io.OutputStream): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
                                     public getLength(): int
                                     public item(arg0: int): com.sun.org.apache.xml.internal.security.transforms.Transform
                                     public getBaseLocalName(): string

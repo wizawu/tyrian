@@ -8,6 +8,9 @@ declare namespace com {
                             interface ExtendedLexicalHandler extends org.xml.sax.ext.LexicalHandler {
                                 comment(arg0: java.lang.String | string): void
                             }
+                            interface ExtendedLexicalHandler$$Lambda extends org.xml.sax.ext.LexicalHandler {
+                                (arg0: java.lang.String | string): void
+                            }
                         }
                     }
                 }

@@ -7,8 +7,8 @@ declare namespace javax {
             public constructor(arg0: java.net.URL)
             public constructor(arg0: java.lang.String | string)
             public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
-            public addHyperlinkListener(arg0: javax.swing.event.HyperlinkListener): void
-            public removeHyperlinkListener(arg0: javax.swing.event.HyperlinkListener): void
+            public addHyperlinkListener(arg0: javax.swing.event.HyperlinkListener | javax.swing.event.HyperlinkListener$$Lambda): void
+            public removeHyperlinkListener(arg0: javax.swing.event.HyperlinkListener | javax.swing.event.HyperlinkListener$$Lambda): void
             public getHyperlinkListeners(): javax.swing.event.HyperlinkListener[]
             public fireHyperlinkUpdate(arg0: javax.swing.event.HyperlinkEvent): void
             public setPage(arg0: java.net.URL): void

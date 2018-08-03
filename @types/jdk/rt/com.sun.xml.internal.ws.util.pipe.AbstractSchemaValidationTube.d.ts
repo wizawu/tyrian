@@ -14,8 +14,8 @@ declare namespace com {
                                 protected constructor(arg0: com.sun.xml.internal.ws.util.pipe.AbstractSchemaValidationTube, arg1: com.sun.xml.internal.ws.api.pipe.TubeCloner)
                                 protected getValidator(): javax.xml.validation.Validator
                                 protected isNoValidation(): boolean
-                                protected getSchemaSources(arg0: java.lang.Iterable<com.sun.xml.internal.ws.api.server.SDDocument>, arg1: com.sun.xml.internal.ws.util.pipe.AbstractSchemaValidationTube$MetadataResolverImpl | com.sun.xml.internal.ws.util.pipe.AbstractSchemaValidationTube$MetadataResolverImpl$$Lambda): javax.xml.transform.Source[]
-                                protected doProcess(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): void
+                                protected getSchemaSources(arg0: java.lang.Iterable<com.sun.xml.internal.ws.api.server.SDDocument>, arg1: com.sun.xml.internal.ws.util.pipe.AbstractSchemaValidationTube$MetadataResolverImpl): javax.xml.transform.Source[]
+                                protected doProcess(arg0: com.sun.xml.internal.ws.api.message.Packet): void
                                 public static class: java.lang.Class<any>
                             }
                         }

@@ -9,7 +9,7 @@ declare namespace org {
                 state(): short
                 adapter_template(): org.omg.PortableInterceptor.ObjectReferenceTemplate
                 current_factory(): org.omg.PortableInterceptor.ObjectReferenceFactory
-                current_factory(arg0: org.omg.PortableInterceptor.ObjectReferenceFactory): void
+                current_factory(arg0: org.omg.PortableInterceptor.ObjectReferenceFactory | org.omg.PortableInterceptor.ObjectReferenceFactory$$Lambda): void
             }
         }
     }

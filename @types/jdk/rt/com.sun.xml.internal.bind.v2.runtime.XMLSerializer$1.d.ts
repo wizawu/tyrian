@@ -9,9 +9,6 @@ declare namespace com {
                                 public getMarshaller(): javax.xml.bind.Marshaller
                                 public static class: java.lang.Class<any>
                             }
-                            class XMLSerializer$1$$Lambda implements com.sun.xml.internal.bind.CycleRecoverable$Context {
-                                public (): javax.xml.bind.Marshaller
-                            }
                         }
                     }
                 }

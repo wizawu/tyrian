@@ -39,8 +39,5 @@ declare namespace sun {
             public isTranslucencyCapable(): boolean
             public static class: java.lang.Class<any>
         }
-        class X11GraphicsConfig$$Lambda extends java.awt.GraphicsConfiguration implements sun.awt.image.SurfaceManager$ProxiedGraphicsConfig {
-            protected screen: sun.awt.X11GraphicsDevice
-        }
     }
 }

@@ -8,9 +8,6 @@ declare namespace com {
                             public handle(arg0: int, arg1: int, arg2: org.omg.CORBA_2_3.portable.InputStream, arg3: org.omg.CORBA.OctetSeqHolder): com.sun.corba.se.spi.ior.ObjectKeyTemplate
                             public static class: java.lang.Class<any>
                         }
-                        class ObjectKeyFactoryImpl$2$$Lambda implements com.sun.corba.se.impl.ior.Handler {
-                            public (arg0: int, arg1: int, arg2: org.omg.CORBA_2_3.portable.InputStream, arg3: org.omg.CORBA.OctetSeqHolder): com.sun.corba.se.spi.ior.ObjectKeyTemplate
-                        }
                     }
                 }
             }

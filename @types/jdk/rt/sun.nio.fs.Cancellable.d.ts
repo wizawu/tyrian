@@ -8,9 +8,6 @@ declare namespace sun {
                 public run(): void
                 public static class: java.lang.Class<any>
             }
-            abstract class Cancellable$$Lambda implements java.lang.Runnable {
-                protected constructor()
-            }
         }
     }
 }

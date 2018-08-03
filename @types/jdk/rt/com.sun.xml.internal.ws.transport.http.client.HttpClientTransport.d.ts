@@ -7,11 +7,11 @@ declare namespace com {
                         namespace http {
                             namespace client {
                                 class HttpClientTransport {
-                                    public constructor(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda, arg1: java.util.Map<java.lang.String, java.util.List<java.lang.String>>)
+                                    public constructor(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: java.util.Map<java.lang.String, java.util.List<java.lang.String>>)
                                     public getHeaders(): java.util.Map<java.lang.String, java.util.List<java.lang.String>>
                                     protected readResponse(): java.io.InputStream
                                     protected readResponseCodeAndMessage(): void
-                                    protected openConnection(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): java.net.HttpURLConnection
+                                    protected openConnection(arg0: com.sun.xml.internal.ws.api.message.Packet): java.net.HttpURLConnection
                                     protected checkHTTPS(arg0: java.net.HttpURLConnection): boolean
                                     protected setStatusCode(arg0: int): void
                                     public getContentLength(): int

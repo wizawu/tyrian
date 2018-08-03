@@ -4,7 +4,7 @@ declare namespace sun {
             namespace internal {
                 namespace util {
                     class KrbDataOutputStream extends java.io.BufferedOutputStream {
-                        public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda)
+                        public constructor(arg0: java.io.OutputStream)
                         public write32(arg0: int): void
                         public write16(arg0: int): void
                         public write8(arg0: int): void

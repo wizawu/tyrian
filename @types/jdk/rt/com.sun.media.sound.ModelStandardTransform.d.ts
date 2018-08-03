@@ -25,9 +25,6 @@ declare namespace com {
                     public setTransform(arg0: int): void
                     public static class: java.lang.Class<any>
                 }
-                class ModelStandardTransform$$Lambda implements com.sun.media.sound.ModelTransform {
-                    public static DIRECTION_MIN2MAX: boolean
-                }
             }
         }
     }

@@ -43,9 +43,6 @@ declare namespace com {
                                 public onRecycled(): void
                                 public static class: java.lang.Class<any>
                             }
-                            class XMLStreamWriterFilter$$Lambda implements javax.xml.stream.XMLStreamWriter , com.sun.xml.internal.ws.api.streaming.XMLStreamWriterFactory$RecycleAware {
-                                protected writer: javax.xml.stream.XMLStreamWriter
-                            }
                         }
                     }
                 }

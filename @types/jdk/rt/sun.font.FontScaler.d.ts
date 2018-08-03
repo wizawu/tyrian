@@ -10,8 +10,5 @@ declare namespace sun {
             public dispose(): void
             public static class: java.lang.Class<any>
         }
-        abstract class FontScaler$$Lambda implements sun.java2d.DisposerRecord {
-            protected font: java.lang.ref.WeakReference<sun.font.Font2D>
-        }
     }
 }

@@ -7,8 +7,8 @@ declare namespace javax {
                 getLength(): int
                 addDocumentListener(arg0: javax.swing.event.DocumentListener): void
                 removeDocumentListener(arg0: javax.swing.event.DocumentListener): void
-                addUndoableEditListener(arg0: javax.swing.event.UndoableEditListener): void
-                removeUndoableEditListener(arg0: javax.swing.event.UndoableEditListener): void
+                addUndoableEditListener(arg0: javax.swing.event.UndoableEditListener | javax.swing.event.UndoableEditListener$$Lambda): void
+                removeUndoableEditListener(arg0: javax.swing.event.UndoableEditListener | javax.swing.event.UndoableEditListener$$Lambda): void
                 getProperty(arg0: java.lang.Object): java.lang.Object
                 putProperty(arg0: java.lang.Object, arg1: java.lang.Object): void
                 remove(arg0: int, arg1: int): void

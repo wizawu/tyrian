@@ -4,8 +4,5 @@ declare namespace javax {
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
         }
-        class JComboBox$AccessibleJComboBox$AccessibleEditor$$Lambda implements javax.accessibility.Accessible {
-            public (): javax.accessibility.AccessibleContext
-        }
     }
 }

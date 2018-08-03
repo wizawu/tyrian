@@ -41,22 +41,22 @@ declare namespace java {
                 public static newKeySet<K>(arg0: int): java.util.concurrent.ConcurrentHashMap$KeySetView<K, java.lang.Boolean>
                 public keySet(arg0: V): java.util.concurrent.ConcurrentHashMap$KeySetView<K, V>
                 public forEach(arg0: long, arg1: java.util.function$.BiConsumer<K, V>): void
-                public forEach<U>(arg0: long, arg1: java.util.function$.BiFunction<K, V, U>, arg2: java.util.function$.Consumer$$TypeScript<U>): void
+                public forEach<U>(arg0: long, arg1: java.util.function$.BiFunction<K, V, U>, arg2: java.util.function$.Consumer$$Lambda<U>): void
                 public search<U>(arg0: long, arg1: java.util.function$.BiFunction<K, V, U>): U
                 public reduce<U>(arg0: long, arg1: java.util.function$.BiFunction<K, V, U>, arg2: java.util.function$.BiFunction<U, U, U>): U
                 public reduceToDouble<U>(arg0: long, arg1: java.util.function$.ToDoubleBiFunction<K, V> | java.util.function$.ToDoubleBiFunction$$Lambda<K, V>, arg2: double, arg3: java.util.function$.DoubleBinaryOperator | java.util.function$.DoubleBinaryOperator$$Lambda): double
                 public reduceToLong<U>(arg0: long, arg1: java.util.function$.ToLongBiFunction<K, V> | java.util.function$.ToLongBiFunction$$Lambda<K, V>, arg2: long, arg3: java.util.function$.LongBinaryOperator | java.util.function$.LongBinaryOperator$$Lambda): long
                 public reduceToInt<U>(arg0: long, arg1: java.util.function$.ToIntBiFunction<K, V> | java.util.function$.ToIntBiFunction$$Lambda<K, V>, arg2: int, arg3: java.util.function$.IntBinaryOperator | java.util.function$.IntBinaryOperator$$Lambda): int
-                public forEachKey<U>(arg0: long, arg1: java.util.function$.Consumer$$TypeScript<K>): void
-                public forEachKey<U>(arg0: long, arg1: java.util.function$.Function<K, U>, arg2: java.util.function$.Consumer$$TypeScript<U>): void
+                public forEachKey<U>(arg0: long, arg1: java.util.function$.Consumer$$Lambda<K>): void
+                public forEachKey<U>(arg0: long, arg1: java.util.function$.Function<K, U>, arg2: java.util.function$.Consumer$$Lambda<U>): void
                 public searchKeys<U>(arg0: long, arg1: java.util.function$.Function<K, U>): U
                 public reduceKeys<U>(arg0: long, arg1: java.util.function$.BiFunction<K, K, K>): K
                 public reduceKeys<U>(arg0: long, arg1: java.util.function$.Function<K, U>, arg2: java.util.function$.BiFunction<U, U, U>): U
                 public reduceKeysToDouble<U>(arg0: long, arg1: java.util.function$.ToDoubleFunction<K> | java.util.function$.ToDoubleFunction$$Lambda<K>, arg2: double, arg3: java.util.function$.DoubleBinaryOperator | java.util.function$.DoubleBinaryOperator$$Lambda): double
                 public reduceKeysToLong<U>(arg0: long, arg1: java.util.function$.ToLongFunction<K> | java.util.function$.ToLongFunction$$Lambda<K>, arg2: long, arg3: java.util.function$.LongBinaryOperator | java.util.function$.LongBinaryOperator$$Lambda): long
                 public reduceKeysToInt<U>(arg0: long, arg1: java.util.function$.ToIntFunction<K> | java.util.function$.ToIntFunction$$Lambda<K>, arg2: int, arg3: java.util.function$.IntBinaryOperator | java.util.function$.IntBinaryOperator$$Lambda): int
-                public forEachValue<U>(arg0: long, arg1: java.util.function$.Consumer$$TypeScript<V>): void
-                public forEachValue<U>(arg0: long, arg1: java.util.function$.Function<V, U>, arg2: java.util.function$.Consumer$$TypeScript<U>): void
+                public forEachValue<U>(arg0: long, arg1: java.util.function$.Consumer$$Lambda<V>): void
+                public forEachValue<U>(arg0: long, arg1: java.util.function$.Function<V, U>, arg2: java.util.function$.Consumer$$Lambda<U>): void
                 public searchValues<U>(arg0: long, arg1: java.util.function$.Function<V, U>): U
                 public reduceValues<U>(arg0: long, arg1: java.util.function$.BiFunction<V, V, V>): V
                 public reduceValues<U>(arg0: long, arg1: java.util.function$.Function<V, U>, arg2: java.util.function$.BiFunction<U, U, U>): U
@@ -64,7 +64,7 @@ declare namespace java {
                 public reduceValuesToLong<U>(arg0: long, arg1: java.util.function$.ToLongFunction<V> | java.util.function$.ToLongFunction$$Lambda<V>, arg2: long, arg3: java.util.function$.LongBinaryOperator | java.util.function$.LongBinaryOperator$$Lambda): long
                 public reduceValuesToInt<U>(arg0: long, arg1: java.util.function$.ToIntFunction<V> | java.util.function$.ToIntFunction$$Lambda<V>, arg2: int, arg3: java.util.function$.IntBinaryOperator | java.util.function$.IntBinaryOperator$$Lambda): int
                 public forEachEntry<U>(arg0: long, arg1: java.util.function$.Consumer<java.util.Map$Entry<K, V>>): void
-                public forEachEntry<U>(arg0: long, arg1: java.util.function$.Function<java.util.Map$Entry<K, V>, U>, arg2: java.util.function$.Consumer$$TypeScript<U>): void
+                public forEachEntry<U>(arg0: long, arg1: java.util.function$.Function<java.util.Map$Entry<K, V>, U>, arg2: java.util.function$.Consumer$$Lambda<U>): void
                 public searchEntries<U>(arg0: long, arg1: java.util.function$.Function<java.util.Map$Entry<K, V>, U>): U
                 public reduceEntries<U>(arg0: long, arg1: java.util.function$.BiFunction<java.util.Map$Entry<K, V>, java.util.Map$Entry<K, V>, java.util.Map$Entry<K, V>>): java.util.Map$Entry<K, V>
                 public reduceEntries<U>(arg0: long, arg1: java.util.function$.Function<java.util.Map$Entry<K, V>, U>, arg2: java.util.function$.BiFunction<U, U, U>): U

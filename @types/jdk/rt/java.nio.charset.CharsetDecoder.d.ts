@@ -15,12 +15,12 @@ declare namespace java {
                 protected implOnUnmappableCharacter(arg0: java.nio.charset.CodingErrorAction): void
                 public averageCharsPerByte(): float
                 public maxCharsPerByte(): float
-                public decode(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda, arg2: boolean): java.nio.charset.CoderResult
-                public flush(arg0: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda): java.nio.charset.CoderResult
-                protected implFlush(arg0: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda): java.nio.charset.CoderResult
+                public decode(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer, arg2: boolean): java.nio.charset.CoderResult
+                public flush(arg0: java.nio.CharBuffer): java.nio.charset.CoderResult
+                protected implFlush(arg0: java.nio.CharBuffer): java.nio.charset.CoderResult
                 public reset(): java.nio.charset.CharsetDecoder
                 protected implReset(): void
-                protected decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda): java.nio.charset.CoderResult
+                protected decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
                 public decode(arg0: java.nio.ByteBuffer): java.nio.CharBuffer
                 public isAutoDetecting(): boolean
                 public isCharsetDetected(): boolean

@@ -109,9 +109,6 @@ declare namespace com {
                                 public test(): void
                                 public static class: java.lang.Class<any>
                             }
-                            class XMLEntityManager$$Lambda implements com.sun.org.apache.xerces.internal.xni.parser.XMLComponent , com.sun.org.apache.xerces.internal.xni.parser.XMLEntityResolver {
-                                public static DEFAULT_BUFFER_SIZE: int
-                            }
                         }
                     }
                 }

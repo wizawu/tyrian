@@ -11,8 +11,8 @@ declare namespace java {
                 public getAvailableDataFlavors(): java.awt.datatransfer.DataFlavor[]
                 public isDataFlavorAvailable(arg0: java.awt.datatransfer.DataFlavor): boolean
                 public getData(arg0: java.awt.datatransfer.DataFlavor): java.lang.Object
-                public addFlavorListener(arg0: java.awt.datatransfer.FlavorListener): void
-                public removeFlavorListener(arg0: java.awt.datatransfer.FlavorListener): void
+                public addFlavorListener(arg0: java.awt.datatransfer.FlavorListener | java.awt.datatransfer.FlavorListener$$Lambda): void
+                public removeFlavorListener(arg0: java.awt.datatransfer.FlavorListener | java.awt.datatransfer.FlavorListener$$Lambda): void
                 public getFlavorListeners(): java.awt.datatransfer.FlavorListener[]
                 public static class: java.lang.Class<any>
             }

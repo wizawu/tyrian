@@ -4,6 +4,9 @@ declare namespace javax {
             interface WebEndpoint extends java.lang.annotation.Annotation {
                 name(): string
             }
+            interface WebEndpoint$$Lambda extends java.lang.annotation.Annotation {
+                (): string
+            }
         }
     }
 }

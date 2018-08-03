@@ -53,9 +53,9 @@ declare namespace java {
             public listIterator(arg0: int): java.util.ListIterator<E>
             public listIterator(): java.util.ListIterator<E>
             public iterator(): java.util.Iterator<E>
-            public forEach(arg0: java.util.function$.Consumer$$TypeScript<E>): void
+            public forEach(arg0: java.util.function$.Consumer$$Lambda<E>): void
             public removeIf(arg0: java.util.function$.Predicate<E>): boolean
-            public replaceAll(arg0: java.util.function$.UnaryOperator<E>): void
+            public replaceAll(arg0: java.util.function$.UnaryOperator<E> | java.util.function$.UnaryOperator$$Lambda<E>): void
             public sort(arg0: java.util.Comparator<E>): void
             public spliterator(): java.util.Spliterator<E>
             public static class: java.lang.Class<any>

@@ -24,9 +24,6 @@ declare namespace com {
                             public register_policy_factory(arg0: int, arg1: org.omg.PortableInterceptor.PolicyFactory): void
                             public static class: java.lang.Class<any>
                         }
-                        class ORBInitInfoImpl$$Lambda extends org.omg.CORBA.LocalObject implements org.omg.PortableInterceptor.ORBInitInfo , com.sun.corba.se.spi.legacy.interceptor.ORBInitInfoExt {
-                            public static STAGE_PRE_INIT: int
-                        }
                     }
                 }
             }

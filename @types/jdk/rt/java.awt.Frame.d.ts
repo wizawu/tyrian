@@ -30,7 +30,7 @@ declare namespace java {
             public getIconImage(): java.awt.Image
             public setIconImage(arg0: java.awt.Image): void
             public getMenuBar(): java.awt.MenuBar
-            public setMenuBar(arg0: java.awt.MenuBar | java.awt.MenuBar$$Lambda): void
+            public setMenuBar(arg0: java.awt.MenuBar): void
             public isResizable(): boolean
             public setResizable(arg0: boolean): void
             public setState(arg0: int): void

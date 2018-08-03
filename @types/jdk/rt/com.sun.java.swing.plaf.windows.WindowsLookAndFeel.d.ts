@@ -22,7 +22,7 @@ declare namespace com {
                             public provideErrorFeedback(arg0: java.awt.Component): void
                             public getLayoutStyle(): javax.swing.LayoutStyle
                             protected createAudioAction(arg0: java.lang.Object): javax.swing.Action
-                            public getDisabledIcon(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: javax.swing.Icon): javax.swing.Icon
+                            public getDisabledIcon(arg0: javax.swing.JComponent, arg1: javax.swing.Icon): javax.swing.Icon
                             public static class: java.lang.Class<any>
                         }
                     }

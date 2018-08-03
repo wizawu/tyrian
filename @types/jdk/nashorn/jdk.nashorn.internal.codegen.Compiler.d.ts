@@ -11,8 +11,8 @@ declare namespace jdk {
                     public getLogger(): jdk.nashorn.internal.runtime.logging.DebugLogger
                     public initLogger(arg0: jdk.nashorn.internal.runtime.Context): jdk.nashorn.internal.runtime.logging.DebugLogger
                     public getInvalidatedProgramPoints(): java.util.Map<java.lang.Integer, jdk.nashorn.internal.codegen.types.Type>
-                    public compile(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda, arg1: jdk.nashorn.internal.codegen.Compiler$CompilationPhases): jdk.nashorn.internal.ir.FunctionNode
-                    public persistClassInfo(arg0: java.lang.String | string, arg1: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): void
+                    public compile(arg0: jdk.nashorn.internal.ir.FunctionNode, arg1: jdk.nashorn.internal.codegen.Compiler$CompilationPhases): jdk.nashorn.internal.ir.FunctionNode
+                    public persistClassInfo(arg0: java.lang.String | string, arg1: jdk.nashorn.internal.ir.FunctionNode): void
                     public static updateCompilationId(arg0: int): void
                     public static binaryName(arg0: java.lang.String | string): string
                     public static class: java.lang.Class<any>

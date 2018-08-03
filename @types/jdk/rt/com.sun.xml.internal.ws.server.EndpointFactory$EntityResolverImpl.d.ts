@@ -9,9 +9,6 @@ declare namespace com {
                             public resolveEntity(arg0: java.lang.String | string, arg1: java.lang.String | string): com.sun.xml.internal.ws.api.wsdl.parser.XMLEntityResolver$Parser
                             public static class: java.lang.Class<any>
                         }
-                        class EndpointFactory$EntityResolverImpl$$Lambda implements com.sun.xml.internal.ws.api.wsdl.parser.XMLEntityResolver {
-                            public constructor(arg0: java.util.List<com.sun.xml.internal.ws.api.server.SDDocumentSource>, arg1: org.xml.sax.EntityResolver | org.xml.sax.EntityResolver$$Lambda)
-                        }
                     }
                 }
             }

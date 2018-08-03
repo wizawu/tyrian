@@ -21,8 +21,8 @@ declare namespace java {
             public selectAll(): void
             public setCaretPosition(arg0: int): void
             public getCaretPosition(): int
-            public addTextListener(arg0: java.awt.event.TextListener): void
-            public removeTextListener(arg0: java.awt.event.TextListener): void
+            public addTextListener(arg0: java.awt.event.TextListener | java.awt.event.TextListener$$Lambda): void
+            public removeTextListener(arg0: java.awt.event.TextListener | java.awt.event.TextListener$$Lambda): void
             public getTextListeners(): java.awt.event.TextListener[]
             public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]
             protected processEvent<T extends java.util.EventListener>(arg0: java.awt.AWTEvent): void
@@ -30,9 +30,6 @@ declare namespace java {
             protected paramString<T extends java.util.EventListener>(): string
             public getAccessibleContext<T extends java.util.EventListener>(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
-        }
-        class TextComponent$$Lambda extends java.awt.Component implements javax.accessibility.Accessible {
-            protected textListener: java.awt.event.TextListener
         }
     }
 }

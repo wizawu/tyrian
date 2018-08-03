@@ -15,10 +15,10 @@ declare namespace javax {
                     protected eastPane: javax.swing.JComponent
                     protected titlePane: javax.swing.plaf.basic.BasicInternalFrameTitlePane
                     protected openMenuKey: javax.swing.KeyStroke
-                    public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
+                    public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
                     public constructor(arg0: javax.swing.JInternalFrame)
-                    public installUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    public uninstallUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public installUI(arg0: javax.swing.JComponent): void
+                    public uninstallUI(arg0: javax.swing.JComponent): void
                     protected installDefaults(): void
                     protected installKeyboardActions(): void
                     protected installComponents(): void
@@ -29,12 +29,12 @@ declare namespace javax {
                     protected uninstallKeyboardActions(): void
                     protected createLayoutManager(): java.awt.LayoutManager
                     protected createPropertyChangeListener(): java.beans.PropertyChangeListener
-                    public getPreferredSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
-                    public getMinimumSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
-                    public getMaximumSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
-                    protected replacePane(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    protected deinstallMouseHandlers(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    protected installMouseHandlers(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
+                    public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
+                    public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
+                    protected replacePane(arg0: javax.swing.JComponent, arg1: javax.swing.JComponent): void
+                    protected deinstallMouseHandlers(arg0: javax.swing.JComponent): void
+                    protected installMouseHandlers(arg0: javax.swing.JComponent): void
                     protected createNorthPane(arg0: javax.swing.JInternalFrame): javax.swing.JComponent
                     protected createSouthPane(arg0: javax.swing.JInternalFrame): javax.swing.JComponent
                     protected createWestPane(arg0: javax.swing.JInternalFrame): javax.swing.JComponent
@@ -48,13 +48,13 @@ declare namespace javax {
                     protected setupMenuOpenKey(): void
                     protected setupMenuCloseKey(): void
                     public getNorthPane(): javax.swing.JComponent
-                    public setNorthPane(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public setNorthPane(arg0: javax.swing.JComponent): void
                     public getSouthPane(): javax.swing.JComponent
-                    public setSouthPane(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public setSouthPane(arg0: javax.swing.JComponent): void
                     public getWestPane(): javax.swing.JComponent
-                    public setWestPane(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public setWestPane(arg0: javax.swing.JComponent): void
                     public getEastPane(): javax.swing.JComponent
-                    public setEastPane(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public setEastPane(arg0: javax.swing.JComponent): void
                     protected getDesktopManager(): javax.swing.DesktopManager
                     protected createDesktopManager(): javax.swing.DesktopManager
                     protected closeFrame(arg0: javax.swing.JInternalFrame): void

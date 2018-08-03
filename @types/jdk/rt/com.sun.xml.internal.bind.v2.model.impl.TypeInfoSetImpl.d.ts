@@ -14,7 +14,7 @@ declare namespace com {
                                     public getNavigator(): com.sun.xml.internal.bind.v2.model.nav.Navigator<T, C, F, M>
                                     public add(arg0: com.sun.xml.internal.bind.v2.model.impl.ClassInfoImpl<T, C, F, M>): void
                                     public add(arg0: com.sun.xml.internal.bind.v2.model.impl.EnumLeafInfoImpl<T, C, F, M>): void
-                                    public add(arg0: com.sun.xml.internal.bind.v2.model.impl.ArrayInfoImpl<T, C, F, M> | com.sun.xml.internal.bind.v2.model.impl.ArrayInfoImpl$$Lambda<T, C, F, M>): void
+                                    public add(arg0: com.sun.xml.internal.bind.v2.model.impl.ArrayInfoImpl<T, C, F, M>): void
                                     public getTypeInfo(arg0: T): com.sun.xml.internal.bind.v2.model.core.NonElement<T, C>
                                     public getAnyTypeInfo(): com.sun.xml.internal.bind.v2.model.core.NonElement<T, C>
                                     public getTypeInfo(arg0: com.sun.xml.internal.bind.v2.model.core.Ref<T, C>): com.sun.xml.internal.bind.v2.model.core.NonElement<T, C>

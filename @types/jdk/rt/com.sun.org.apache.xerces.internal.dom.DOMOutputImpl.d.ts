@@ -12,9 +12,9 @@ declare namespace com {
                                 protected fEncoding: string
                                 public constructor()
                                 public getCharacterStream(): java.io.Writer
-                                public setCharacterStream(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+                                public setCharacterStream(arg0: java.io.Writer): void
                                 public getByteStream(): java.io.OutputStream
-                                public setByteStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                                public setByteStream(arg0: java.io.OutputStream): void
                                 public getSystemId(): string
                                 public setSystemId(arg0: java.lang.String | string): void
                                 public getEncoding(): string

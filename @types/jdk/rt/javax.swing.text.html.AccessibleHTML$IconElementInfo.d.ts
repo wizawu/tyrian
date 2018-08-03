@@ -7,9 +7,6 @@ declare namespace javax {
                     public getAccessibleContext(): javax.accessibility.AccessibleContext
                     public static class: java.lang.Class<any>
                 }
-                class AccessibleHTML$IconElementInfo$$Lambda extends javax.swing.text.html.AccessibleHTML$ElementInfo implements javax.accessibility.Accessible {
-                    protected (arg0: boolean): void
-                }
             }
         }
     }

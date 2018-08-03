@@ -10,7 +10,7 @@ declare namespace com {
                             public getOctetLengthFromPrimitiveLength(arg0: int): int
                             public decodeFromBytes(arg0: byte[], arg1: int, arg2: int): java.lang.Object
                             public decodeFromInputStream(arg0: java.io.InputStream): java.lang.Object
-                            public encodeToOutputStream(arg0: java.lang.Object, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                            public encodeToOutputStream(arg0: java.lang.Object, arg1: java.io.OutputStream): void
                             public convertFromCharacters(arg0: char[], arg1: int, arg2: int): java.lang.Object
                             public convertToCharacters(arg0: java.lang.Object, arg1: java.lang.StringBuffer): void
                             public getPrimtiveLengthFromOctetLength(arg0: int, arg1: int): int

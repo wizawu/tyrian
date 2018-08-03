@@ -6,9 +6,6 @@ declare namespace sun {
                     public parseLine(arg0: java.lang.String | string): sun.net.ftp.FtpDirEntry
                     public static class: java.lang.Class<any>
                 }
-                class FtpClient$MLSxParser$$Lambda implements sun.net.ftp.FtpDirParser {
-                    public (arg0: java.lang.String | string): sun.net.ftp.FtpDirEntry
-                }
             }
         }
     }

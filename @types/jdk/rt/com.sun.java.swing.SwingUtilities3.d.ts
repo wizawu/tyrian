@@ -4,7 +4,7 @@ declare namespace com {
             namespace swing {
                 class SwingUtilities3 {
                     public constructor()
-                    public static setDelegateRepaintManager(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: javax.swing.RepaintManager): void
+                    public static setDelegateRepaintManager(arg0: javax.swing.JComponent, arg1: javax.swing.RepaintManager): void
                     public static setVsyncRequested(arg0: java.awt.Container, arg1: boolean): void
                     public static isVsyncRequested(arg0: java.awt.Container): boolean
                     public static getDelegateRepaintManager(arg0: java.awt.Component): javax.swing.RepaintManager

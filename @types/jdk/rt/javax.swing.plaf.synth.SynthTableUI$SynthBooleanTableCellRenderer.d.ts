@@ -8,9 +8,6 @@ declare namespace javax {
                     public isOpaque(): boolean
                     public static class: java.lang.Class<any>
                 }
-                class SynthTableUI$SynthBooleanTableCellRenderer$$Lambda extends javax.swing.JCheckBox implements javax.swing.table.TableCellRenderer {
-                    public constructor(arg0: javax.swing.plaf.synth.SynthTableUI)
-                }
             }
         }
     }

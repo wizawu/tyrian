@@ -1,7 +1,7 @@
 declare namespace java {
     namespace awt {
         class TextComponent$AccessibleAWTTextComponent extends java.awt.Component$AccessibleAWTComponent implements javax.accessibility.AccessibleText , java.awt.event.TextListener {
-            public constructor(arg0: java.awt.TextComponent | java.awt.TextComponent$$Lambda)
+            public constructor(arg0: java.awt.TextComponent)
             public textValueChanged(arg0: java.awt.event.TextEvent): void
             public getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
             public getAccessibleRole(): javax.accessibility.AccessibleRole

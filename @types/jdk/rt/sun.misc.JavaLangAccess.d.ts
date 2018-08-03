@@ -9,7 +9,7 @@ declare namespace sun {
             getRawClassTypeAnnotations(arg0: java.lang.Class<any>): byte[]
             getRawExecutableTypeAnnotations(arg0: java.lang.reflect.Executable): byte[]
             getEnumConstantsShared<E extends java.lang.Enum<E>>(arg0: java.lang.Class<E>): E[]
-            blockedOn(arg0: java.lang.Thread | java.lang.Thread$$Lambda, arg1: sun.nio.ch.Interruptible | sun.nio.ch.Interruptible$$Lambda): void
+            blockedOn(arg0: java.lang.Thread, arg1: sun.nio.ch.Interruptible | sun.nio.ch.Interruptible$$Lambda): void
             registerShutdownHook(arg0: int, arg1: boolean, arg2: java.lang.Runnable | java.lang.Runnable$$Lambda): void
             getStackTraceDepth(arg0: java.lang.Throwable): int
             getStackTraceElement(arg0: java.lang.Throwable, arg1: int): java.lang.StackTraceElement

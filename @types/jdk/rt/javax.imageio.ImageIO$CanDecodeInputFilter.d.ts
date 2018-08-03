@@ -5,8 +5,5 @@ declare namespace javax {
             public filter(arg0: java.lang.Object): boolean
             public static class: java.lang.Class<any>
         }
-        class ImageIO$CanDecodeInputFilter$$Lambda implements javax.imageio.spi.ServiceRegistry$Filter {
-            public constructor(arg0: java.lang.Object)
-        }
     }
 }

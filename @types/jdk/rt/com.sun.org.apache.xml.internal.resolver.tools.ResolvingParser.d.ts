@@ -33,9 +33,6 @@ declare namespace com {
                                     public resolveEntity(arg0: java.lang.String | string, arg1: java.lang.String | string): org.xml.sax.InputSource
                                     public static class: java.lang.Class<any>
                                 }
-                                class ResolvingParser$$Lambda implements org.xml.sax.Parser , org.xml.sax.DTDHandler , org.xml.sax.DocumentHandler , org.xml.sax.EntityResolver {
-                                    public static namespaceAware: boolean
-                                }
                             }
                         }
                     }

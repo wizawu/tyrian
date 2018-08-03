@@ -7,9 +7,6 @@ declare namespace com {
                     public getClassLoader(): java.lang.ClassLoader
                     public static class: java.lang.Class<any>
                 }
-                abstract class SharedAbstractHelper$$Lambda implements com.ibm.oti.shared.SharedHelper {
-                    public constructor()
-                }
             }
         }
     }

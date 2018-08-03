@@ -11,9 +11,6 @@ declare namespace com {
                                 public getSPI<S>(arg0: java.lang.Class<S>): S
                                 public static class: java.lang.Class<any>
                             }
-                            abstract class Module$$Lambda implements com.sun.xml.internal.ws.api.Component {
-                                public constructor()
-                            }
                         }
                     }
                 }

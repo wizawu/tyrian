@@ -6,9 +6,6 @@ declare namespace sun {
                 public contains(arg0: java.nio.charset.Charset): boolean
                 public static class: java.lang.Class<any>
             }
-            abstract class Unicode$$Lambda extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                public constructor(arg0: java.lang.String | string, arg1: java.lang.String[])
-            }
         }
     }
 }

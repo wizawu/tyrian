@@ -7,7 +7,7 @@ declare namespace java {
             public getFirstComponent(arg0: java.awt.Container): java.awt.Component
             public getLastComponent(arg0: java.awt.Container): java.awt.Component
             public getDefaultComponent(arg0: java.awt.Container): java.awt.Component
-            public getInitialComponent(arg0: java.awt.Window | java.awt.Window$$Lambda): java.awt.Component
+            public getInitialComponent(arg0: java.awt.Window): java.awt.Component
             public static class: java.lang.Class<any>
         }
     }

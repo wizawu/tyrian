@@ -4,7 +4,7 @@ declare namespace sun {
             namespace ext {
                 class COMPOUND_TEXT_Encoder extends java.nio.charset.CharsetEncoder {
                     public constructor(arg0: java.nio.charset.Charset)
-                    protected encodeLoop(arg0: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
+                    protected encodeLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
                     protected implFlush(arg0: java.nio.ByteBuffer): java.nio.charset.CoderResult
                     protected implReset(): void
                     public canEncode(arg0: char): boolean

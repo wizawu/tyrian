@@ -29,7 +29,7 @@ declare namespace com {
                                     public getHTMLRepresentation(): string
                                     public getTransformsOutput(): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
                                     public getReferenceData(): com.sun.org.apache.xml.internal.security.signature.reference.ReferenceData
-                                    protected dereferenceURIandPerformTransforms(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
+                                    protected dereferenceURIandPerformTransforms(arg0: java.io.OutputStream): com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput
                                     public getTransforms(): com.sun.org.apache.xml.internal.security.transforms.Transforms
                                     public getReferencedBytes(): byte[]
                                     public getDigestValue(): byte[]

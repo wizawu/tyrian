@@ -10,7 +10,7 @@ declare namespace com {
                             public constructor(arg0: java.lang.Class<T>)
                             protected prepare(arg0: T): void
                             protected create(): T
-                            public start(arg0: com.sun.xml.internal.ws.api.server.WSWebServiceContext, arg1: com.sun.xml.internal.ws.api.server.WSEndpoint): void
+                            public start(arg0: com.sun.xml.internal.ws.api.server.WSWebServiceContext | com.sun.xml.internal.ws.api.server.WSWebServiceContext$$Lambda, arg1: com.sun.xml.internal.ws.api.server.WSEndpoint): void
                             protected dispose(arg0: T): void
                             public static class: java.lang.Class<any>
                         }

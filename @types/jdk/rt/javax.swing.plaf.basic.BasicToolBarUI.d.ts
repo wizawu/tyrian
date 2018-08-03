@@ -20,9 +20,9 @@ declare namespace javax {
                     protected leftKey: javax.swing.KeyStroke
                     protected rightKey: javax.swing.KeyStroke
                     public constructor()
-                    public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
-                    public installUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    public uninstallUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
+                    public installUI(arg0: javax.swing.JComponent): void
+                    public uninstallUI(arg0: javax.swing.JComponent): void
                     protected installDefaults(): void
                     protected uninstallDefaults(): void
                     protected installComponents(): void
@@ -34,14 +34,14 @@ declare namespace javax {
                     protected navigateFocusedComp(arg0: int): void
                     protected createRolloverBorder(): javax.swing.border.Border
                     protected createNonRolloverBorder(): javax.swing.border.Border
-                    protected createFloatingFrame(arg0: javax.swing.JToolBar | javax.swing.JToolBar$$Lambda): javax.swing.JFrame
-                    protected createFloatingWindow(arg0: javax.swing.JToolBar | javax.swing.JToolBar$$Lambda): javax.swing.RootPaneContainer
-                    protected createDragWindow(arg0: javax.swing.JToolBar | javax.swing.JToolBar$$Lambda): javax.swing.plaf.basic.BasicToolBarUI$DragWindow
+                    protected createFloatingFrame(arg0: javax.swing.JToolBar): javax.swing.JFrame
+                    protected createFloatingWindow(arg0: javax.swing.JToolBar): javax.swing.RootPaneContainer
+                    protected createDragWindow(arg0: javax.swing.JToolBar): javax.swing.plaf.basic.BasicToolBarUI$DragWindow
                     public isRolloverBorders(): boolean
                     public setRolloverBorders(arg0: boolean): void
-                    protected installRolloverBorders(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    protected installNonRolloverBorders(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    protected installNormalBorders(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    protected installRolloverBorders(arg0: javax.swing.JComponent): void
+                    protected installNonRolloverBorders(arg0: javax.swing.JComponent): void
+                    protected installNormalBorders(arg0: javax.swing.JComponent): void
                     protected setBorderToRollover(arg0: java.awt.Component): void
                     protected getRolloverBorder(arg0: javax.swing.AbstractButton): javax.swing.border.Border
                     protected setBorderToNonRollover(arg0: java.awt.Component): void

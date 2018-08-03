@@ -6,7 +6,7 @@ declare namespace sun {
                 public constructor(arg0: java.lang.String | string)
                 public constructor(arg0: sun.security.util.DerValue)
                 public getType(): int
-                public encode(arg0: sun.security.util.DerOutputStream | sun.security.util.DerOutputStream$$Lambda): void
+                public encode(arg0: sun.security.util.DerOutputStream): void
                 public getAssignerName(): string
                 public getPartyName(): string
                 public equals(arg0: java.lang.Object): boolean

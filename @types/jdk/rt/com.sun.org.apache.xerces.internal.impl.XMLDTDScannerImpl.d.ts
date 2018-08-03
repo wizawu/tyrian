@@ -16,7 +16,7 @@ declare namespace com {
                                 protected fSeenExternalDTD: boolean
                                 protected fSeenExternalPE: boolean
                                 public constructor()
-                                public constructor(arg0: com.sun.org.apache.xerces.internal.util.SymbolTable, arg1: com.sun.org.apache.xerces.internal.impl.XMLErrorReporter, arg2: com.sun.org.apache.xerces.internal.impl.XMLEntityManager | com.sun.org.apache.xerces.internal.impl.XMLEntityManager$$Lambda)
+                                public constructor(arg0: com.sun.org.apache.xerces.internal.util.SymbolTable, arg1: com.sun.org.apache.xerces.internal.impl.XMLErrorReporter, arg2: com.sun.org.apache.xerces.internal.impl.XMLEntityManager)
                                 public setInputSource(arg0: com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource): void
                                 public setLimitAnalyzer(arg0: com.sun.org.apache.xerces.internal.utils.XMLLimitAnalyzer): void
                                 public scanDTDExternalSubset(arg0: boolean): boolean

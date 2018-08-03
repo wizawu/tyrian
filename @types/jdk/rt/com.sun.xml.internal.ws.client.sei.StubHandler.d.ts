@@ -15,7 +15,7 @@ declare namespace com {
                                 protected packetFactory: com.sun.xml.internal.ws.api.message.MessageContextFactory
                                 public constructor(arg0: com.sun.xml.internal.ws.model.JavaMethodImpl, arg1: com.sun.xml.internal.ws.api.message.MessageContextFactory)
                                 public createRequestPacket(arg0: com.oracle.webservices.internal.api.databinding.JavaCallInfo): com.sun.xml.internal.ws.api.message.Packet
-                                public readResponse(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda, arg1: com.oracle.webservices.internal.api.databinding.JavaCallInfo): com.oracle.webservices.internal.api.databinding.JavaCallInfo
+                                public readResponse(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: com.oracle.webservices.internal.api.databinding.JavaCallInfo): com.oracle.webservices.internal.api.databinding.JavaCallInfo
                                 public getOperationName(): javax.xml.namespace.QName
                                 public getSoapAction(): string
                                 public isOneWay(): boolean

@@ -18,8 +18,8 @@ declare namespace com {
                                         public setOutputType(arg0: int): void
                                         public setEncoding(arg0: java.lang.String | string): void
                                         public setOutputMethod(arg0: java.lang.String | string): void
-                                        public setOutputStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
-                                        public setWriter(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+                                        public setOutputStream(arg0: java.io.OutputStream): void
+                                        public setWriter(arg0: java.io.Writer): void
                                         public setHandler(arg0: org.xml.sax.ContentHandler): void
                                         public setLexicalHandler(arg0: org.xml.sax.ext.LexicalHandler): void
                                         public setNode(arg0: org.w3c.dom.Node): void

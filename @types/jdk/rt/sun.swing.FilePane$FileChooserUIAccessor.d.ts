@@ -10,7 +10,7 @@ declare namespace sun {
             getApproveSelectionAction(): javax.swing.Action
             getChangeToParentDirectoryAction(): javax.swing.Action
             getNewFolderAction(): javax.swing.Action
-            createDoubleClickListener(arg0: javax.swing.JList | javax.swing.JList$$Lambda): java.awt.event.MouseListener
+            createDoubleClickListener(arg0: javax.swing.JList): java.awt.event.MouseListener
             createListSelectionListener(): javax.swing.event.ListSelectionListener
         }
     }

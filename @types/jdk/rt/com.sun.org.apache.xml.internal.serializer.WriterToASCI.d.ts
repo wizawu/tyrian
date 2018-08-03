@@ -6,7 +6,7 @@ declare namespace com {
                     namespace internal {
                         namespace serializer {
                             class WriterToASCI extends java.io.Writer implements com.sun.org.apache.xml.internal.serializer.WriterChain {
-                                public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda)
+                                public constructor(arg0: java.io.OutputStream)
                                 public write(arg0: char[], arg1: int, arg2: int): void
                                 public write(arg0: int): void
                                 public write(arg0: java.lang.String | string): void

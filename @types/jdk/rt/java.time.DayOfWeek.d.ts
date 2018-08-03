@@ -24,8 +24,5 @@ declare namespace java {
             public adjustInto<R>(arg0: java.time.temporal.Temporal): java.time.temporal.Temporal
             public static class: java.lang.Class<any>
         }
-        class DayOfWeek$$Lambda extends java.lang.Enum<java.time.DayOfWeek> implements java.time.temporal.TemporalAccessor , java.time.temporal.TemporalAdjuster {
-            public static MONDAY: java.time.DayOfWeek
-        }
     }
 }

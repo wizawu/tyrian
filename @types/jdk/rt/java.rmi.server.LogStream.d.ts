@@ -9,7 +9,7 @@ declare namespace java {
                 public static getDefaultStream(): java.io.PrintStream
                 public static setDefaultStream(arg0: java.io.PrintStream): void
                 public getOutputStream(): java.io.OutputStream
-                public setOutputStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public setOutputStream(arg0: java.io.OutputStream): void
                 public write(arg0: int): void
                 public write(arg0: byte[], arg1: int, arg2: int): void
                 public toString(): string

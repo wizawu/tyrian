@@ -19,8 +19,8 @@ declare namespace jdk {
                         public leaveBreakNode(arg0: jdk.nashorn.internal.ir.BreakNode): jdk.nashorn.internal.ir.Node
                         public enterCallNode(arg0: jdk.nashorn.internal.ir.CallNode): boolean
                         public leaveCallNode(arg0: jdk.nashorn.internal.ir.CallNode): jdk.nashorn.internal.ir.Node
-                        public enterCaseNode(arg0: jdk.nashorn.internal.ir.CaseNode | jdk.nashorn.internal.ir.CaseNode$$Lambda): boolean
-                        public leaveCaseNode(arg0: jdk.nashorn.internal.ir.CaseNode | jdk.nashorn.internal.ir.CaseNode$$Lambda): jdk.nashorn.internal.ir.Node
+                        public enterCaseNode(arg0: jdk.nashorn.internal.ir.CaseNode): boolean
+                        public leaveCaseNode(arg0: jdk.nashorn.internal.ir.CaseNode): jdk.nashorn.internal.ir.Node
                         public enterCatchNode(arg0: jdk.nashorn.internal.ir.CatchNode): boolean
                         public leaveCatchNode(arg0: jdk.nashorn.internal.ir.CatchNode): jdk.nashorn.internal.ir.Node
                         public enterContinueNode(arg0: jdk.nashorn.internal.ir.ContinueNode): boolean
@@ -33,8 +33,8 @@ declare namespace jdk {
                         public leaveBlockStatement(arg0: jdk.nashorn.internal.ir.BlockStatement): jdk.nashorn.internal.ir.Node
                         public enterForNode(arg0: jdk.nashorn.internal.ir.ForNode): boolean
                         public leaveForNode(arg0: jdk.nashorn.internal.ir.ForNode): jdk.nashorn.internal.ir.Node
-                        public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
-                        public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Node
+                        public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
+                        public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Node
                         public enterGetSplitState(arg0: jdk.nashorn.internal.ir.GetSplitState): boolean
                         public leaveGetSplitState(arg0: jdk.nashorn.internal.ir.GetSplitState): jdk.nashorn.internal.ir.Node
                         public enterIdentNode(arg0: jdk.nashorn.internal.ir.IdentNode): boolean
@@ -47,10 +47,10 @@ declare namespace jdk {
                         public leaveJumpToInlinedFinally(arg0: jdk.nashorn.internal.ir.JumpToInlinedFinally): jdk.nashorn.internal.ir.Node
                         public enterLabelNode(arg0: jdk.nashorn.internal.ir.LabelNode): boolean
                         public leaveLabelNode(arg0: jdk.nashorn.internal.ir.LabelNode): jdk.nashorn.internal.ir.Node
-                        public enterLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode<any> | jdk.nashorn.internal.ir.LiteralNode$$Lambda<any>): boolean
-                        public leaveLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode<any> | jdk.nashorn.internal.ir.LiteralNode$$Lambda<any>): jdk.nashorn.internal.ir.Node
-                        public enterObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode | jdk.nashorn.internal.ir.ObjectNode$$Lambda): boolean
-                        public leaveObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode | jdk.nashorn.internal.ir.ObjectNode$$Lambda): jdk.nashorn.internal.ir.Node
+                        public enterLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode<any>): boolean
+                        public leaveLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode<any>): jdk.nashorn.internal.ir.Node
+                        public enterObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode): boolean
+                        public leaveObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode): jdk.nashorn.internal.ir.Node
                         public enterPropertyNode(arg0: jdk.nashorn.internal.ir.PropertyNode): boolean
                         public leavePropertyNode(arg0: jdk.nashorn.internal.ir.PropertyNode): jdk.nashorn.internal.ir.Node
                         public enterReturnNode(arg0: jdk.nashorn.internal.ir.ReturnNode): boolean
@@ -59,8 +59,8 @@ declare namespace jdk {
                         public leaveRuntimeNode(arg0: jdk.nashorn.internal.ir.RuntimeNode): jdk.nashorn.internal.ir.Node
                         public enterSetSplitState(arg0: jdk.nashorn.internal.ir.SetSplitState): boolean
                         public leaveSetSplitState(arg0: jdk.nashorn.internal.ir.SetSplitState): jdk.nashorn.internal.ir.Node
-                        public enterSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode | jdk.nashorn.internal.ir.SplitNode$$Lambda): boolean
-                        public leaveSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode | jdk.nashorn.internal.ir.SplitNode$$Lambda): jdk.nashorn.internal.ir.Node
+                        public enterSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode): boolean
+                        public leaveSplitNode(arg0: jdk.nashorn.internal.ir.SplitNode): jdk.nashorn.internal.ir.Node
                         public enterSplitReturn(arg0: jdk.nashorn.internal.ir.SplitReturn): boolean
                         public leaveSplitReturn(arg0: jdk.nashorn.internal.ir.SplitReturn): jdk.nashorn.internal.ir.Node
                         public enterSwitchNode(arg0: jdk.nashorn.internal.ir.SwitchNode): boolean

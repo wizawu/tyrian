@@ -161,12 +161,12 @@ declare namespace com {
                 public execute(arg0: java.sql.Connection): void
                 public getURL(arg0: int): java.net.URL
                 public getURL(arg0: java.lang.String | string): java.net.URL
-                public writeXml(arg0: java.sql.ResultSet, arg1: java.io.Writer | java.io.Writer$$Lambda): void
-                public writeXml(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+                public writeXml(arg0: java.sql.ResultSet, arg1: java.io.Writer): void
+                public writeXml(arg0: java.io.Writer): void
                 public readXml(arg0: java.io.Reader): void
                 public readXml(arg0: java.io.InputStream): void
-                public writeXml(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
-                public writeXml(arg0: java.sql.ResultSet, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public writeXml(arg0: java.io.OutputStream): void
+                public writeXml(arg0: java.sql.ResultSet, arg1: java.io.OutputStream): void
                 public getJoinType(): int
                 public addRowSetListener(arg0: javax.sql.RowSetListener): void
                 public removeRowSetListener(arg0: javax.sql.RowSetListener): void

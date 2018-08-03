@@ -16,12 +16,12 @@ declare namespace com {
                                 public getLastPos(arg0: com.sun.org.apache.xpath.internal.XPathContext): int
                                 public fixupVariables(arg0: java.util.Vector, arg1: int): void
                                 public getInnerExpression(): com.sun.org.apache.xpath.internal.Expression
-                                public setInnerExpression(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda): void
+                                public setInnerExpression(arg0: com.sun.org.apache.xpath.internal.Expression): void
                                 public getAnalysisBits(): int
                                 public isDocOrdered(): boolean
                                 public getAxis(): int
                                 public callPredicateVisitors(arg0: com.sun.org.apache.xpath.internal.XPathVisitor): void
-                                public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda): boolean
+                                public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression): boolean
                                 public static class: java.lang.Class<any>
                             }
                         }

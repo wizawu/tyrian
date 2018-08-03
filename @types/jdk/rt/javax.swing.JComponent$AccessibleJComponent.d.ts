@@ -2,9 +2,9 @@ declare namespace javax {
     namespace swing {
         abstract class JComponent$AccessibleJComponent extends java.awt.Container$AccessibleAWTContainer implements javax.accessibility.AccessibleExtendedComponent {
             protected accessibleFocusHandler: java.awt.event.FocusListener
-            protected constructor(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda)
-            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+            protected constructor(arg0: javax.swing.JComponent)
+            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
             protected getBorderTitle(arg0: javax.swing.border.Border): string
             public getAccessibleName(): string
             public getAccessibleDescription(): string

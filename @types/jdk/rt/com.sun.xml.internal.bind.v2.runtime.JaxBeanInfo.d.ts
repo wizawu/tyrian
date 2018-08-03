@@ -26,8 +26,8 @@ declare namespace com {
                                 public getElementLocalName(arg0: BeanT): string
                                 public getTypeNames(): java.util.Collection<javax.xml.namespace.QName>
                                 public getTypeName(arg0: BeanT): javax.xml.namespace.QName
-                                public createInstance(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext | com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$$Lambda): BeanT
-                                public reset(arg0: BeanT, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext | com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$$Lambda): boolean
+                                public createInstance(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext): BeanT
+                                public reset(arg0: BeanT, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext): boolean
                                 public getId(arg0: BeanT, arg1: com.sun.xml.internal.bind.v2.runtime.XMLSerializer): string
                                 public serializeBody(arg0: BeanT, arg1: com.sun.xml.internal.bind.v2.runtime.XMLSerializer): void
                                 public serializeAttributes(arg0: BeanT, arg1: com.sun.xml.internal.bind.v2.runtime.XMLSerializer): void

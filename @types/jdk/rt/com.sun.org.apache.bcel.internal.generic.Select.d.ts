@@ -24,9 +24,6 @@ declare namespace com {
                                 public getTargets(): com.sun.org.apache.bcel.internal.generic.InstructionHandle[]
                                 public static class: java.lang.Class<any>
                             }
-                            abstract class Select$$Lambda extends com.sun.org.apache.bcel.internal.generic.BranchInstruction implements com.sun.org.apache.bcel.internal.generic.VariableLengthInstruction , com.sun.org.apache.bcel.internal.generic.StackProducer {
-                                protected match: int[]
-                            }
                         }
                     }
                 }

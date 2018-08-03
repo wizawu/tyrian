@@ -11,7 +11,7 @@ declare namespace com {
                             public constructor(arg0: javax.xml.namespace.QName)
                             public getName(): javax.xml.namespace.QName
                             public setName(arg0: javax.xml.namespace.QName): void
-                            protected writeAsEncodedUnicodeEx(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+                            protected writeAsEncodedUnicodeEx(arg0: java.io.Writer): void
                             public getNamespaces(): java.util.Iterator
                             public toString(): string
                             public nameAsString(): string

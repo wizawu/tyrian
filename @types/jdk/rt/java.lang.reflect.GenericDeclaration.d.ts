@@ -4,6 +4,9 @@ declare namespace java {
             interface GenericDeclaration extends java.lang.reflect.AnnotatedElement {
                 getTypeParameters(): java.lang.reflect.TypeVariable<any>[]
             }
+            interface GenericDeclaration$$Lambda extends java.lang.reflect.AnnotatedElement {
+                (): java.lang.reflect.TypeVariable<any>[]
+            }
         }
     }
 }

@@ -22,7 +22,7 @@ declare namespace javax {
                     public createDefaultDocument(): javax.swing.text.Document
                     public read(arg0: java.io.Reader, arg1: javax.swing.text.Document, arg2: int): void
                     public insertHTML(arg0: javax.swing.text.html.HTMLDocument, arg1: int, arg2: java.lang.String | string, arg3: int, arg4: int, arg5: javax.swing.text.html.HTML$Tag): void
-                    public write(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: javax.swing.text.Document, arg2: int, arg3: int): void
+                    public write(arg0: java.io.Writer, arg1: javax.swing.text.Document, arg2: int, arg3: int): void
                     public install(arg0: javax.swing.JEditorPane): void
                     public deinstall(arg0: javax.swing.JEditorPane): void
                     public setStyleSheet(arg0: javax.swing.text.html.StyleSheet): void
@@ -40,9 +40,6 @@ declare namespace javax {
                     protected getParser(): javax.swing.text.html.HTMLEditorKit$Parser
                     public getAccessibleContext(): javax.accessibility.AccessibleContext
                     public static class: java.lang.Class<any>
-                }
-                class HTMLEditorKit$$Lambda extends javax.swing.text.StyledEditorKit implements javax.accessibility.Accessible {
-                    public static DEFAULT_CSS: string
                 }
             }
         }

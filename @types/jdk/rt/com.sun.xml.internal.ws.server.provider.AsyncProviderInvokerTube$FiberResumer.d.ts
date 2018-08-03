@@ -7,11 +7,8 @@ declare namespace com {
                         namespace provider {
                             class AsyncProviderInvokerTube$FiberResumer implements com.sun.xml.internal.ws.server.provider.AsyncProviderInvokerTube$Resumer {
                                 public constructor(arg0: com.sun.xml.internal.ws.server.provider.AsyncProviderInvokerTube)
-                                public onResume(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): void
+                                public onResume(arg0: com.sun.xml.internal.ws.api.message.Packet): void
                                 public static class: java.lang.Class<any>
-                            }
-                            class AsyncProviderInvokerTube$FiberResumer$$Lambda implements com.sun.xml.internal.ws.server.provider.AsyncProviderInvokerTube$Resumer {
-                                public constructor(arg0: com.sun.xml.internal.ws.server.provider.AsyncProviderInvokerTube)
                             }
                         }
                     }

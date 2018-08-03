@@ -1,7 +1,7 @@
 declare namespace javax {
     namespace swing {
         class JComboBox$AccessibleJComboBox extends javax.swing.JComponent$AccessibleJComponent implements javax.accessibility.AccessibleAction , javax.accessibility.AccessibleSelection {
-            public constructor(arg0: javax.swing.JComboBox | javax.swing.JComboBox$$Lambda)
+            public constructor(arg0: javax.swing.JComboBox)
             public getAccessibleChildrenCount(): int
             public getAccessibleChild(arg0: int): javax.accessibility.Accessible
             public getAccessibleRole(): javax.accessibility.AccessibleRole

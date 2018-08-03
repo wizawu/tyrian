@@ -8,8 +8,8 @@ declare namespace com {
                             class Converter {
                                 public static UTF_8: string
                                 public static toString(arg0: java.lang.Throwable): string
-                                public static toString(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): string
-                                public static toStringNoIndent(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): string
+                                public static toString(arg0: com.sun.xml.internal.ws.api.message.Packet): string
+                                public static toStringNoIndent(arg0: com.sun.xml.internal.ws.api.message.Packet): string
                                 public static toString(arg0: com.sun.xml.internal.ws.api.message.Message): string
                                 public static toStringNoIndent(arg0: com.sun.xml.internal.ws.api.message.Message): string
                                 public static toBytes(arg0: com.sun.xml.internal.ws.api.message.Message, arg1: java.lang.String | string): byte[]

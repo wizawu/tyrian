@@ -8,9 +8,6 @@ declare namespace com {
                             public create(arg0: int, arg1: com.sun.corba.se.spi.ior.IOR): com.sun.corba.se.spi.protocol.LocalClientRequestDispatcher
                             public static class: java.lang.Class<any>
                         }
-                        class RequestDispatcherDefault$3$$Lambda implements com.sun.corba.se.spi.protocol.LocalClientRequestDispatcherFactory {
-                            public (arg0: int, arg1: com.sun.corba.se.spi.ior.IOR): com.sun.corba.se.spi.protocol.LocalClientRequestDispatcher
-                        }
                     }
                 }
             }

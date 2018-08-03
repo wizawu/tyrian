@@ -7,8 +7,5 @@ declare namespace javax {
             public toString(): string
             public static class: java.lang.Class<any>
         }
-        class TimerQueue$$Lambda implements java.lang.Runnable {
-            public constructor()
-        }
     }
 }

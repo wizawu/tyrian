@@ -8,8 +8,5 @@ declare namespace java {
             public toString(): string
             public static class: java.lang.Class<any>
         }
-        class KeyStore$TrustedCertificateEntry$$Lambda implements java.security.KeyStore$Entry {
-            public constructor(arg0: java.security.cert.Certificate)
-        }
     }
 }

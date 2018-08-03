@@ -13,7 +13,7 @@ declare namespace javax {
             protected vsbPolicy: int
             protected hsbPolicy: int
             public constructor()
-            public syncWithScrollPane(arg0: javax.swing.JScrollPane | javax.swing.JScrollPane$$Lambda): void
+            public syncWithScrollPane(arg0: javax.swing.JScrollPane): void
             protected addSingletonComponent(arg0: java.awt.Component, arg1: java.awt.Component): java.awt.Component
             public addLayoutComponent(arg0: java.lang.String | string, arg1: java.awt.Component): void
             public removeLayoutComponent(arg0: java.awt.Component): void
@@ -30,7 +30,7 @@ declare namespace javax {
             public preferredLayoutSize(arg0: java.awt.Container): java.awt.Dimension
             public minimumLayoutSize(arg0: java.awt.Container): java.awt.Dimension
             public layoutContainer(arg0: java.awt.Container): void
-            public getViewportBorderBounds(arg0: javax.swing.JScrollPane | javax.swing.JScrollPane$$Lambda): java.awt.Rectangle
+            public getViewportBorderBounds(arg0: javax.swing.JScrollPane): java.awt.Rectangle
             public static class: java.lang.Class<any>
         }
     }

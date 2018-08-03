@@ -3,7 +3,7 @@ declare namespace javax {
         namespace plaf {
             namespace basic {
                 class BasicRootPaneUI$RootPaneInputMap extends javax.swing.plaf.ComponentInputMapUIResource {
-                    public constructor(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda)
+                    public constructor(arg0: javax.swing.JComponent)
                     public static class: java.lang.Class<any>
                 }
             }

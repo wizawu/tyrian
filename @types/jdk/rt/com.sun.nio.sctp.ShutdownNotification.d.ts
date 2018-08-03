@@ -7,9 +7,6 @@ declare namespace com {
                     public association(): com.sun.nio.sctp.Association
                     public static class: java.lang.Class<any>
                 }
-                abstract class ShutdownNotification$$Lambda implements com.sun.nio.sctp.Notification {
-                    protected constructor()
-                }
             }
         }
     }

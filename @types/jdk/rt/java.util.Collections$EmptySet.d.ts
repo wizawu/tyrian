@@ -8,7 +8,7 @@ declare namespace java {
             public containsAll(arg0: java.util.Collection<any>): boolean
             public toArray(): java.lang.Object[]
             public toArray<T>(arg0: T[]): T[]
-            public forEach<T>(arg0: java.util.function$.Consumer$$TypeScript<E>): void
+            public forEach<T>(arg0: java.util.function$.Consumer$$Lambda<E>): void
             public removeIf<T>(arg0: java.util.function$.Predicate<E>): boolean
             public spliterator<T>(): java.util.Spliterator<E>
             public static class: java.lang.Class<any>

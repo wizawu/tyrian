@@ -8,7 +8,7 @@ declare namespace sun {
                     protected constructor(arg0: java.nio.charset.Charset, arg1: short[], arg2: java.lang.String[], arg3: byte[])
                     protected constructor(arg0: java.nio.charset.Charset, arg1: short[], arg2: java.lang.String[], arg3: byte[], arg4: float, arg5: float)
                     public canEncode(arg0: char): boolean
-                    protected encodeLoop(arg0: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
+                    protected encodeLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
                     protected encodeDouble(arg0: char): int
                     protected encodeSingle(arg0: char): int
                     protected encodeSurrogate(arg0: char, arg1: char): byte[]

@@ -8,7 +8,7 @@ declare namespace sun {
                 public constructor(arg0: byte[])
                 public constructor(arg0: java.lang.Boolean | boolean, arg1: java.lang.Object)
                 public toString(): string
-                public encode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public encode(arg0: java.io.OutputStream): void
                 public set(arg0: java.lang.String | string, arg1: java.lang.Object): void
                 public get(arg0: java.lang.String | string): sun.security.x509.KeyIdentifier
                 public delete(arg0: java.lang.String | string): void

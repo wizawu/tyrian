@@ -4,6 +4,9 @@ declare namespace java {
             interface ReduceOps$AccumulatingSink<T, R, K extends java.util.stream.ReduceOps$AccumulatingSink<T, R, K>> extends java.util.stream.TerminalSink<T, R> {
                 combine(arg0: K): void
             }
+            interface ReduceOps$AccumulatingSink$$Lambda<T, R, K extends java.util.stream.ReduceOps$AccumulatingSink<T, R, K>> extends java.util.stream.TerminalSink<T, R> {
+                (arg0: K): void
+            }
         }
     }
 }

@@ -5,9 +5,6 @@ declare namespace javax {
                 public run(): void
                 public static class: java.lang.Class<any>
             }
-            class DefaultStyledDocument$ChangeUpdateRunnable$$Lambda implements java.lang.Runnable {
-                public (): void
-            }
         }
     }
 }

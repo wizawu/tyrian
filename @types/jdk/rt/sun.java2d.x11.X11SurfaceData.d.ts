@@ -56,17 +56,17 @@ declare namespace sun {
                 public static isDgaAvailable(): boolean
                 public static isAccelerationEnabled(): boolean
                 public makeProxyFor(arg0: sun.java2d.SurfaceData): sun.java2d.SurfaceDataProxy
-                public validatePipe(arg0: sun.java2d.SunGraphics2D | sun.java2d.SunGraphics2D$$Lambda): void
-                public getRenderLoops(arg0: sun.java2d.SunGraphics2D | sun.java2d.SunGraphics2D$$Lambda): sun.java2d.loops.RenderLoops
+                public validatePipe(arg0: sun.java2d.SunGraphics2D): void
+                public getRenderLoops(arg0: sun.java2d.SunGraphics2D): sun.java2d.loops.RenderLoops
                 public getDeviceConfiguration(): java.awt.GraphicsConfiguration
                 public static createData(arg0: sun.awt.X11ComponentPeer): sun.java2d.x11.X11SurfaceData$X11WindowSurfaceData
-                public static createData(arg0: sun.awt.X11GraphicsConfig | sun.awt.X11GraphicsConfig$$Lambda, arg1: int, arg2: int, arg3: java.awt.image.ColorModel, arg4: java.awt.Image, arg5: long, arg6: int): sun.java2d.x11.X11SurfaceData$X11PixmapSurfaceData
-                protected constructor(arg0: sun.awt.X11ComponentPeer, arg1: sun.awt.X11GraphicsConfig | sun.awt.X11GraphicsConfig$$Lambda, arg2: sun.java2d.loops.SurfaceType, arg3: java.awt.image.ColorModel)
+                public static createData(arg0: sun.awt.X11GraphicsConfig, arg1: int, arg2: int, arg3: java.awt.image.ColorModel, arg4: java.awt.Image, arg5: long, arg6: int): sun.java2d.x11.X11SurfaceData$X11PixmapSurfaceData
+                protected constructor(arg0: sun.awt.X11ComponentPeer, arg1: sun.awt.X11GraphicsConfig, arg2: sun.java2d.loops.SurfaceType, arg3: java.awt.image.ColorModel)
                 public static getGC(arg0: sun.awt.X11ComponentPeer): sun.awt.X11GraphicsConfig
                 public canSourceSendExposures(arg0: int, arg1: int, arg2: int, arg3: int): boolean
-                public copyArea(arg0: sun.java2d.SunGraphics2D | sun.java2d.SunGraphics2D$$Lambda, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int): boolean
-                public static getSurfaceType(arg0: sun.awt.X11GraphicsConfig | sun.awt.X11GraphicsConfig$$Lambda, arg1: int): sun.java2d.loops.SurfaceType
-                public static getSurfaceType(arg0: sun.awt.X11GraphicsConfig | sun.awt.X11GraphicsConfig$$Lambda, arg1: int, arg2: boolean): sun.java2d.loops.SurfaceType
+                public copyArea(arg0: sun.java2d.SunGraphics2D, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int): boolean
+                public static getSurfaceType(arg0: sun.awt.X11GraphicsConfig, arg1: int): sun.java2d.loops.SurfaceType
+                public static getSurfaceType(arg0: sun.awt.X11GraphicsConfig, arg1: int, arg2: boolean): sun.java2d.loops.SurfaceType
                 public invalidate(): void
                 public getRenderGC(arg0: sun.java2d.pipe.Region, arg1: int, arg2: java.awt.Composite | java.awt.Composite$$Lambda, arg3: int): long
                 public getBlitGC(arg0: sun.java2d.pipe.Region, arg1: boolean): long

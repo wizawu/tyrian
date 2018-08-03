@@ -7,6 +7,9 @@ declare namespace com {
                         interface XmlIsSet extends java.lang.annotation.Annotation {
                             value(): string
                         }
+                        interface XmlIsSet$$Lambda extends java.lang.annotation.Annotation {
+                            (): string
+                        }
                     }
                 }
             }

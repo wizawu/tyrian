@@ -18,9 +18,6 @@ declare namespace com {
                                     public resolve(arg0: java.lang.String | string, arg1: java.lang.String | string): javax.xml.transform.Source
                                     public static class: java.lang.Class<any>
                                 }
-                                class CatalogResolver$$Lambda implements org.xml.sax.EntityResolver , javax.xml.transform.URIResolver {
-                                    public namespaceAware: boolean
-                                }
                             }
                         }
                     }

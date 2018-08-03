@@ -11,9 +11,6 @@ declare namespace sun {
                 public length(): int
                 public static class: java.lang.Class<any>
             }
-            abstract class P11Key$$Lambda implements java.security.Key , sun.security.util.Length {
-                public (): string
-            }
         }
     }
 }

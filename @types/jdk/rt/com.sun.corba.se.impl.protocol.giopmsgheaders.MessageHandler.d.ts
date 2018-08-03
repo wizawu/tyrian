@@ -21,7 +21,7 @@ declare namespace com {
                                 handleInput(arg0: com.sun.corba.se.impl.protocol.giopmsgheaders.LocateReplyMessage_1_2): void
                                 handleInput(arg0: com.sun.corba.se.impl.protocol.giopmsgheaders.FragmentMessage_1_1): void
                                 handleInput(arg0: com.sun.corba.se.impl.protocol.giopmsgheaders.FragmentMessage_1_2): void
-                                handleInput(arg0: com.sun.corba.se.impl.protocol.giopmsgheaders.CancelRequestMessage): void
+                                handleInput(arg0: com.sun.corba.se.impl.protocol.giopmsgheaders.CancelRequestMessage | com.sun.corba.se.impl.protocol.giopmsgheaders.CancelRequestMessage$$Lambda): void
                             }
                         }
                     }

@@ -7,9 +7,6 @@ declare namespace sun {
                     public lookup(arg0: java.lang.String | string): java.lang.reflect.TypeVariable<any>
                     public static class: java.lang.Class<any>
                 }
-                class DummyScope$$Lambda implements sun.reflect.generics.scope.Scope {
-                    public static (): sun.reflect.generics.scope.DummyScope
-                }
             }
         }
     }

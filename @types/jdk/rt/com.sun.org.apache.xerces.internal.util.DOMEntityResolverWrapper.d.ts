@@ -14,9 +14,6 @@ declare namespace com {
                                 public resolveEntity(arg0: com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier): com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource
                                 public static class: java.lang.Class<any>
                             }
-                            class DOMEntityResolverWrapper$$Lambda implements com.sun.org.apache.xerces.internal.xni.parser.XMLEntityResolver {
-                                protected fEntityResolver: org.w3c.dom.ls.LSResourceResolver
-                            }
                         }
                     }
                 }

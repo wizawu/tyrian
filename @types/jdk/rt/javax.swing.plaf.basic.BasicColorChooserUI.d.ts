@@ -8,11 +8,11 @@ declare namespace javax {
                     protected previewListener: javax.swing.event.ChangeListener
                     protected propertyChangeListener: java.beans.PropertyChangeListener
                     public constructor()
-                    public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
+                    public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
                     protected createDefaultChoosers(): javax.swing.colorchooser.AbstractColorChooserPanel[]
                     protected uninstallDefaultChoosers(): void
-                    public installUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    public uninstallUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public installUI(arg0: javax.swing.JComponent): void
+                    public uninstallUI(arg0: javax.swing.JComponent): void
                     protected installPreviewPanel(): void
                     protected uninstallPreviewPanel(): void
                     protected installDefaults(): void

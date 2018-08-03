@@ -14,8 +14,8 @@ declare namespace jdk {
                     public enterExpressionStatement(arg0: jdk.nashorn.internal.ir.ExpressionStatement): boolean
                     public enterBlockStatement(arg0: jdk.nashorn.internal.ir.BlockStatement): boolean
                     public enterForNode(arg0: jdk.nashorn.internal.ir.ForNode): boolean
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
-                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Node
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
+                    public leaveFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Node
                     public enterIfNode(arg0: jdk.nashorn.internal.ir.IfNode): boolean
                     public enterReturnNode(arg0: jdk.nashorn.internal.ir.ReturnNode): boolean
                     public enterSplitReturn(arg0: jdk.nashorn.internal.ir.SplitReturn): boolean

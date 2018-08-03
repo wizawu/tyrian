@@ -4,6 +4,9 @@ declare namespace javax {
             interface ChangeListener extends java.util.EventListener {
                 stateChanged(arg0: javax.swing.event.ChangeEvent): void
             }
+            interface ChangeListener$$Lambda extends java.util.EventListener {
+                (arg0: javax.swing.event.ChangeEvent): void
+            }
         }
     }
 }

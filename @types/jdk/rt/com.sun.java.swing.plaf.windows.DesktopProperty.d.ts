@@ -16,9 +16,6 @@ declare namespace com {
                             protected getKey(): string
                             public static class: java.lang.Class<any>
                         }
-                        class DesktopProperty$$Lambda implements javax.swing.UIDefaults$ActiveValue {
-                            public constructor(arg0: java.lang.String | string, arg1: java.lang.Object)
-                        }
                     }
                 }
             }

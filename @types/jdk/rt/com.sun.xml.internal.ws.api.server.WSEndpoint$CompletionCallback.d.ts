@@ -6,10 +6,10 @@ declare namespace com {
                     namespace api {
                         namespace server {
                             interface WSEndpoint$CompletionCallback {
-                                onCompletion(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): void
+                                onCompletion(arg0: com.sun.xml.internal.ws.api.message.Packet): void
                             }
                             interface WSEndpoint$CompletionCallback$$Lambda {
-                                (arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): void
+                                (arg0: com.sun.xml.internal.ws.api.message.Packet): void
                             }
                         }
                     }

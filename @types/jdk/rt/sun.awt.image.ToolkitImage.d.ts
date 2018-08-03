@@ -6,13 +6,13 @@ declare namespace sun {
                 public constructor(arg0: java.awt.image.ImageProducer)
                 public getSource(): java.awt.image.ImageProducer
                 public getWidth(): int
-                public getWidth(arg0: java.awt.image.ImageObserver): int
+                public getWidth(arg0: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): int
                 public getHeight(): int
-                public getHeight(arg0: java.awt.image.ImageObserver): int
-                public getProperty(arg0: java.lang.String | string, arg1: java.awt.image.ImageObserver): java.lang.Object
+                public getHeight(arg0: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): int
+                public getProperty(arg0: java.lang.String | string, arg1: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): java.lang.Object
                 public hasError(): boolean
-                public check(arg0: java.awt.image.ImageObserver): int
-                public preload(arg0: java.awt.image.ImageObserver): void
+                public check(arg0: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): int
+                public preload(arg0: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): void
                 public flush(): void
                 protected makeImageRep(): sun.awt.image.ImageRepresentation
                 public getImageRep(): sun.awt.image.ImageRepresentation

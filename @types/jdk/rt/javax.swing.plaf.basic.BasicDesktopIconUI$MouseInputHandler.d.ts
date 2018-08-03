@@ -8,7 +8,7 @@ declare namespace javax {
                     public mousePressed(arg0: java.awt.event.MouseEvent): void
                     public mouseMoved(arg0: java.awt.event.MouseEvent): void
                     public mouseDragged(arg0: java.awt.event.MouseEvent): void
-                    public moveAndRepaint(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: int, arg2: int, arg3: int, arg4: int): void
+                    public moveAndRepaint(arg0: javax.swing.JComponent, arg1: int, arg2: int, arg3: int, arg4: int): void
                     public static class: java.lang.Class<any>
                 }
             }

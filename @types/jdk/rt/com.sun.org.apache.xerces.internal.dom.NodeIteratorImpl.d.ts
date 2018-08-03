@@ -6,7 +6,7 @@ declare namespace com {
                     namespace internal {
                         namespace dom {
                             class NodeIteratorImpl implements org.w3c.dom.traversal.NodeIterator {
-                                public constructor(arg0: com.sun.org.apache.xerces.internal.dom.DocumentImpl | com.sun.org.apache.xerces.internal.dom.DocumentImpl$$Lambda, arg1: org.w3c.dom.Node, arg2: int, arg3: org.w3c.dom.traversal.NodeFilter, arg4: boolean)
+                                public constructor(arg0: com.sun.org.apache.xerces.internal.dom.DocumentImpl, arg1: org.w3c.dom.Node, arg2: int, arg3: org.w3c.dom.traversal.NodeFilter | org.w3c.dom.traversal.NodeFilter$$Lambda, arg4: boolean)
                                 public getRoot(): org.w3c.dom.Node
                                 public getWhatToShow(): int
                                 public getFilter(): org.w3c.dom.traversal.NodeFilter

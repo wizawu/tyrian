@@ -50,9 +50,6 @@ declare namespace javax {
                 public getAccessibleContext(): javax.accessibility.AccessibleContext
                 public static class: java.lang.Class<any>
             }
-            class JTableHeader$$Lambda extends javax.swing.JComponent implements javax.swing.event.TableColumnModelListener , javax.accessibility.Accessible {
-                protected table: javax.swing.JTable
-            }
         }
     }
 }

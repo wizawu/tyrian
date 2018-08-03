@@ -5,6 +5,9 @@ declare namespace javax {
                 serialVersionUID: long
                 getY(): java.math.BigInteger
             }
+            interface DHPublicKey$$Lambda extends javax.crypto.interfaces.DHKey , java.security.PublicKey {
+                serialVersionUID: long
+            }
         }
     }
 }

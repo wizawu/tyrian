@@ -6,7 +6,7 @@ declare namespace java {
                 public static SUNDAY_START: java.time.temporal.WeekFields
                 public static WEEK_BASED_YEARS: java.time.temporal.TemporalUnit
                 public static of(arg0: java.util.Locale): java.time.temporal.WeekFields
-                public static of(arg0: java.time.DayOfWeek | java.time.DayOfWeek$$Lambda, arg1: int): java.time.temporal.WeekFields
+                public static of(arg0: java.time.DayOfWeek, arg1: int): java.time.temporal.WeekFields
                 public getFirstDayOfWeek(): java.time.DayOfWeek
                 public getMinimalDaysInFirstWeek(): int
                 public dayOfWeek(): java.time.temporal.TemporalField

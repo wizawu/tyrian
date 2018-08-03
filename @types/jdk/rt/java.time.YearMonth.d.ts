@@ -4,7 +4,7 @@ declare namespace java {
             public static now(): java.time.YearMonth
             public static now(arg0: java.time.ZoneId): java.time.YearMonth
             public static now(arg0: java.time.Clock): java.time.YearMonth
-            public static of(arg0: int, arg1: java.time.Month | java.time.Month$$Lambda): java.time.YearMonth
+            public static of(arg0: int, arg1: java.time.Month): java.time.YearMonth
             public static of(arg0: int, arg1: int): java.time.YearMonth
             public static from(arg0: java.time.temporal.TemporalAccessor): java.time.YearMonth
             public static parse(arg0: java.lang.CharSequence): java.time.YearMonth

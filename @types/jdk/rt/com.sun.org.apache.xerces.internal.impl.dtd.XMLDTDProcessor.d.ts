@@ -47,7 +47,7 @@ declare namespace com {
                                     public getDTDContentModelHandler(): com.sun.org.apache.xerces.internal.xni.XMLDTDContentModelHandler
                                     public startExternalSubset(arg0: com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier, arg1: com.sun.org.apache.xerces.internal.xni.Augmentations): void
                                     public endExternalSubset(arg0: com.sun.org.apache.xerces.internal.xni.Augmentations): void
-                                    protected static checkStandaloneEntityRef(arg0: java.lang.String | string, arg1: com.sun.org.apache.xerces.internal.impl.dtd.DTDGrammar | com.sun.org.apache.xerces.internal.impl.dtd.DTDGrammar$$Lambda, arg2: com.sun.org.apache.xerces.internal.impl.dtd.XMLEntityDecl, arg3: com.sun.org.apache.xerces.internal.impl.XMLErrorReporter): void
+                                    protected static checkStandaloneEntityRef(arg0: java.lang.String | string, arg1: com.sun.org.apache.xerces.internal.impl.dtd.DTDGrammar, arg2: com.sun.org.apache.xerces.internal.impl.dtd.XMLEntityDecl, arg3: com.sun.org.apache.xerces.internal.impl.XMLErrorReporter): void
                                     public comment(arg0: com.sun.org.apache.xerces.internal.xni.XMLString, arg1: com.sun.org.apache.xerces.internal.xni.Augmentations): void
                                     public processingInstruction(arg0: java.lang.String | string, arg1: com.sun.org.apache.xerces.internal.xni.XMLString, arg2: com.sun.org.apache.xerces.internal.xni.Augmentations): void
                                     public startDTD(arg0: com.sun.org.apache.xerces.internal.xni.XMLLocator, arg1: com.sun.org.apache.xerces.internal.xni.Augmentations): void

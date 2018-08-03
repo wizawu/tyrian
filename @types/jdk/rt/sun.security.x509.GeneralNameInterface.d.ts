@@ -17,7 +17,7 @@ declare namespace sun {
                 NAME_WIDENS: int
                 NAME_SAME_TYPE: int
                 getType(): int
-                encode(arg0: sun.security.util.DerOutputStream | sun.security.util.DerOutputStream$$Lambda): void
+                encode(arg0: sun.security.util.DerOutputStream): void
                 constrains(arg0: sun.security.x509.GeneralNameInterface): int
                 subtreeDepth(): int
             }

@@ -1,7 +1,7 @@
 declare namespace sun {
     namespace print {
         class PSStreamPrintService extends javax.print.StreamPrintService implements sun.print.SunPrinterJobService {
-            public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda)
+            public constructor(arg0: java.io.OutputStream)
             public getOutputFormat(): string
             public getSupportedDocFlavors(): javax.print.DocFlavor[]
             public createPrintJob(): javax.print.DocPrintJob
@@ -23,9 +23,6 @@ declare namespace sun {
             public equals<T extends javax.print.attribute.PrintServiceAttribute>(arg0: java.lang.Object): boolean
             public hashCode<T extends javax.print.attribute.PrintServiceAttribute>(): int
             public static class: java.lang.Class<any>
-        }
-        class PSStreamPrintService$$Lambda extends javax.print.StreamPrintService implements sun.print.SunPrinterJobService {
-            public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda)
         }
     }
 }

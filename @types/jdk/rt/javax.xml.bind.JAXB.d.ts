@@ -13,8 +13,8 @@ declare namespace javax {
                 public static marshal(arg0: java.lang.Object, arg1: java.net.URL): void
                 public static marshal(arg0: java.lang.Object, arg1: java.net.URI): void
                 public static marshal(arg0: java.lang.Object, arg1: java.lang.String | string): void
-                public static marshal(arg0: java.lang.Object, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): void
-                public static marshal(arg0: java.lang.Object, arg1: java.io.Writer | java.io.Writer$$Lambda): void
+                public static marshal(arg0: java.lang.Object, arg1: java.io.OutputStream): void
+                public static marshal(arg0: java.lang.Object, arg1: java.io.Writer): void
                 public static marshal(arg0: java.lang.Object, arg1: javax.xml.transform.Result): void
                 public static class: java.lang.Class<any>
             }

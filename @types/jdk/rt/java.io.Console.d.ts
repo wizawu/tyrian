@@ -12,8 +12,5 @@ declare namespace java {
             public flush(): void
             public static class: java.lang.Class<any>
         }
-        class Console$$Lambda implements java.io.Flushable {
-            public (): java.io.PrintWriter
-        }
     }
 }

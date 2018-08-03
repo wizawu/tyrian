@@ -4,8 +4,5 @@ declare namespace java {
             public evaluate(): boolean
             public static class: java.lang.Class<any>
         }
-        class DefaultKeyboardFocusManager$2$$Lambda implements java.awt.Conditional {
-            public (): boolean
-        }
     }
 }

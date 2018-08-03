@@ -12,9 +12,6 @@ declare namespace sun {
                     protected doSBKANA(): boolean
                     public static class: java.lang.Class<any>
                 }
-                class ISO2022_JP$$Lambda extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-                    public constructor()
-                }
             }
         }
     }

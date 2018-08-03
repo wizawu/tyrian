@@ -8,7 +8,7 @@ declare namespace sun {
                 public static createDataSC(arg0: java.awt.image.BufferedImage, arg1: sun.java2d.loops.SurfaceType, arg2: java.awt.image.IndexColorModel): sun.java2d.SurfaceData
                 public static createDataBC(arg0: java.awt.image.BufferedImage, arg1: sun.java2d.loops.SurfaceType, arg2: int): sun.java2d.SurfaceData
                 public static createDataBP(arg0: java.awt.image.BufferedImage, arg1: sun.java2d.loops.SurfaceType): sun.java2d.SurfaceData
-                public getRenderLoops(arg0: sun.java2d.SunGraphics2D | sun.java2d.SunGraphics2D$$Lambda): sun.java2d.loops.RenderLoops
+                public getRenderLoops(arg0: sun.java2d.SunGraphics2D): sun.java2d.loops.RenderLoops
                 public getRaster(arg0: int, arg1: int, arg2: int, arg3: int): java.awt.image.Raster
                 protected initRaster(arg0: java.lang.Object, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: java.awt.image.IndexColorModel): void
                 public constructor(arg0: java.awt.image.DataBuffer, arg1: java.awt.image.BufferedImage, arg2: sun.java2d.loops.SurfaceType)

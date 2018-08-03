@@ -6,8 +6,8 @@ declare namespace javax {
                     protected constructor()
                     public visit(arg0: javax.lang.model.type.TypeMirror, arg1: P): R
                     public visit(arg0: javax.lang.model.type.TypeMirror): R
-                    public visitUnion(arg0: javax.lang.model.type.UnionType, arg1: P): R
-                    public visitIntersection(arg0: javax.lang.model.type.IntersectionType, arg1: P): R
+                    public visitUnion(arg0: javax.lang.model.type.UnionType | javax.lang.model.type.UnionType$$Lambda, arg1: P): R
+                    public visitIntersection(arg0: javax.lang.model.type.IntersectionType | javax.lang.model.type.IntersectionType$$Lambda, arg1: P): R
                     public visitUnknown(arg0: javax.lang.model.type.TypeMirror, arg1: P): R
                     public static class: java.lang.Class<any>
                 }

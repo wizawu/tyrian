@@ -7,7 +7,7 @@ declare namespace com {
                         abstract class ValidationErrorHandler implements org.xml.sax.ErrorHandler {
                             protected packet: com.sun.xml.internal.ws.api.message.Packet
                             public constructor()
-                            public setPacket(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): void
+                            public setPacket(arg0: com.sun.xml.internal.ws.api.message.Packet): void
                             public static class: java.lang.Class<any>
                         }
                     }

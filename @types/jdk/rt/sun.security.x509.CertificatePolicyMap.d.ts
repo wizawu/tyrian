@@ -7,7 +7,7 @@ declare namespace sun {
                 public getIssuerIdentifier(): sun.security.x509.CertificatePolicyId
                 public getSubjectIdentifier(): sun.security.x509.CertificatePolicyId
                 public toString(): string
-                public encode(arg0: sun.security.util.DerOutputStream | sun.security.util.DerOutputStream$$Lambda): void
+                public encode(arg0: sun.security.util.DerOutputStream): void
                 public static class: java.lang.Class<any>
             }
         }

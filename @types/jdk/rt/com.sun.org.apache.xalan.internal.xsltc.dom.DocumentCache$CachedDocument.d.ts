@@ -7,7 +7,7 @@ declare namespace com {
                         namespace xsltc {
                             namespace dom {
                                 class DocumentCache$CachedDocument {
-                                    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.dom.DocumentCache | com.sun.org.apache.xalan.internal.xsltc.dom.DocumentCache$$Lambda, arg1: java.lang.String | string)
+                                    public constructor(arg0: com.sun.org.apache.xalan.internal.xsltc.dom.DocumentCache, arg1: java.lang.String | string)
                                     public loadDocument(arg0: java.lang.String | string): void
                                     public getDocument(): com.sun.org.apache.xalan.internal.xsltc.DOM
                                     public getFirstReferenced(): long

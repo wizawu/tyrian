@@ -7,7 +7,7 @@ declare namespace com {
                         namespace model {
                             namespace impl {
                                 class RuntimeClassInfoImpl$RuntimePropertySeed implements com.sun.xml.internal.bind.v2.model.impl.PropertySeed<java.lang.reflect.Type, java.lang.Class, java.lang.reflect.Field, java.lang.reflect.Method> {
-                                    public constructor(arg0: com.sun.xml.internal.bind.v2.model.impl.PropertySeed<java.lang.reflect.Type, java.lang.Class, java.lang.reflect.Field, java.lang.reflect.Method>, arg1: com.sun.xml.internal.bind.v2.runtime.reflect.Accessor | com.sun.xml.internal.bind.v2.runtime.reflect.Accessor$$Lambda)
+                                    public constructor(arg0: com.sun.xml.internal.bind.v2.model.impl.PropertySeed<java.lang.reflect.Type, java.lang.Class, java.lang.reflect.Field, java.lang.reflect.Method>, arg1: com.sun.xml.internal.bind.v2.runtime.reflect.Accessor)
                                     public getName(): string
                                     public readAnnotation<A extends java.lang.annotation.Annotation>(arg0: java.lang.Class<A>): A
                                     public hasAnnotation<A extends java.lang.annotation.Annotation>(arg0: java.lang.Class<java.lang.annotation.Annotation>): boolean

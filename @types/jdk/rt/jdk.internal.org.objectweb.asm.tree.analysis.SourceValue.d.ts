@@ -16,9 +16,6 @@ declare namespace jdk {
                                 public hashCode(): int
                                 public static class: java.lang.Class<any>
                             }
-                            class SourceValue$$Lambda implements jdk.internal.org.objectweb.asm.tree.analysis.Value {
-                                public size: int
-                            }
                         }
                     }
                 }

@@ -7,8 +7,8 @@ declare namespace javax {
                     protected menuButton: javax.swing.JButton
                     public constructor(arg0: javax.swing.JInternalFrame)
                     public getUIClassID(): string
-                    public getContext(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.synth.SynthContext
-                    public getContext(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: int): javax.swing.plaf.synth.SynthContext
+                    public getContext(arg0: javax.swing.JComponent): javax.swing.plaf.synth.SynthContext
+                    public getContext(arg0: javax.swing.JComponent, arg1: int): javax.swing.plaf.synth.SynthContext
                     protected addSubComponents(): void
                     protected installListeners(): void
                     protected uninstallListeners(): void

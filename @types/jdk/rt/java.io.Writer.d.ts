@@ -19,8 +19,5 @@ declare namespace java {
             public append(arg0: java.lang.CharSequence): java.lang.Appendable
             public static class: java.lang.Class<any>
         }
-        abstract class Writer$$Lambda implements java.lang.Appendable , java.io.Closeable , java.io.Flushable {
-            protected lock: java.lang.Object
-        }
     }
 }

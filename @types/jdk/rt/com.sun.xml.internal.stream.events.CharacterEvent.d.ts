@@ -14,7 +14,7 @@ declare namespace com {
                             public setData(arg0: java.lang.String | string): void
                             public isCData(): boolean
                             public toString(): string
-                            protected writeAsEncodedUnicodeEx(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+                            protected writeAsEncodedUnicodeEx(arg0: java.io.Writer): void
                             public isIgnorableWhiteSpace(): boolean
                             public isWhiteSpace(): boolean
                             public static class: java.lang.Class<any>

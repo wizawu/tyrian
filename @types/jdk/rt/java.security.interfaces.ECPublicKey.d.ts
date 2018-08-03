@@ -5,6 +5,9 @@ declare namespace java {
                 serialVersionUID: long
                 getW(): java.security.spec.ECPoint
             }
+            interface ECPublicKey$$Lambda extends java.security.PublicKey , java.security.interfaces.ECKey {
+                serialVersionUID: long
+            }
         }
     }
 }

@@ -33,7 +33,7 @@ declare namespace sun {
                 public constructor(arg0: sun.security.util.ObjectIdentifier, arg1: java.lang.Object)
                 public constructor(arg0: java.lang.String | string, arg1: java.lang.Object)
                 public constructor(arg0: sun.security.util.DerValue)
-                public derEncode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public derEncode(arg0: java.io.OutputStream): void
                 public isKnown(): boolean
                 public getValue(): java.lang.Object
                 public isSingleValued(): boolean
@@ -43,9 +43,6 @@ declare namespace sun {
                 public static getName(arg0: sun.security.util.ObjectIdentifier): string
                 public toString(): string
                 public static class: java.lang.Class<any>
-            }
-            class PKCS9Attribute$$Lambda implements sun.security.util.DerEncoder {
-                public static EMAIL_ADDRESS_OID: sun.security.util.ObjectIdentifier
             }
         }
     }

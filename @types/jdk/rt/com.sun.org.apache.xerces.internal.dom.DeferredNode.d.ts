@@ -9,6 +9,9 @@ declare namespace com {
                                 TYPE_NODE: short
                                 getNodeIndex(): int
                             }
+                            interface DeferredNode$$Lambda extends org.w3c.dom.Node {
+                                TYPE_NODE: short
+                            }
                         }
                     }
                 }

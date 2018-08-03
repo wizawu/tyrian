@@ -14,9 +14,6 @@ declare namespace com {
                                 public getFieldName(arg0: com.sun.org.apache.bcel.internal.generic.ConstantPoolGen): string
                                 public static class: java.lang.Class<any>
                             }
-                            abstract class FieldInstruction$$Lambda extends com.sun.org.apache.bcel.internal.generic.FieldOrMethod implements com.sun.org.apache.bcel.internal.generic.TypedInstruction {
-                                protected constructor(arg0: short, arg1: int)
-                            }
                         }
                     }
                 }

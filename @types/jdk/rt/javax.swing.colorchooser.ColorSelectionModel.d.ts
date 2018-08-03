@@ -4,8 +4,8 @@ declare namespace javax {
             interface ColorSelectionModel {
                 getSelectedColor(): java.awt.Color
                 setSelectedColor(arg0: java.awt.Color): void
-                addChangeListener(arg0: javax.swing.event.ChangeListener): void
-                removeChangeListener(arg0: javax.swing.event.ChangeListener): void
+                addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+                removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
             }
         }
     }

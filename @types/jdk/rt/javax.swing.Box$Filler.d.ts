@@ -7,8 +7,5 @@ declare namespace javax {
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
         }
-        class Box$Filler$$Lambda extends javax.swing.JComponent implements javax.accessibility.Accessible {
-            public constructor(arg0: java.awt.Dimension, arg1: java.awt.Dimension, arg2: java.awt.Dimension)
-        }
     }
 }

@@ -21,7 +21,7 @@ declare namespace com {
                             public static parseVersion(arg0: java.lang.String | string): int[]
                             public static compareVersion(arg0: int[], arg1: int[]): int
                             public static compareVersion(arg0: java.lang.String | string, arg1: java.lang.String | string): int
-                            public static getThreadName(arg0: java.lang.Thread | java.lang.Thread$$Lambda): string
+                            public static getThreadName(arg0: java.lang.Thread): string
                             public static dprint(arg0: java.lang.Object, arg1: java.lang.String | string): void
                             public static dprint(arg0: java.lang.String | string, arg1: java.lang.String | string): void
                             public dprint(arg0: java.lang.String | string): void

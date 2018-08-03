@@ -17,12 +17,12 @@ declare namespace sun {
                 public getOpaqueRGBImage(): java.awt.image.BufferedImage
                 public imageComplete(arg0: int): void
                 public notifyWatcherListEmpty(): void
-                public prepare(arg0: java.awt.image.ImageObserver): boolean
-                public check(arg0: java.awt.image.ImageObserver): int
-                public drawToBufImage(arg0: java.awt.Graphics, arg1: sun.awt.image.ToolkitImage, arg2: int, arg3: int, arg4: java.awt.Color, arg5: java.awt.image.ImageObserver): boolean
-                public drawToBufImage(arg0: java.awt.Graphics, arg1: sun.awt.image.ToolkitImage, arg2: int, arg3: int, arg4: int, arg5: int, arg6: java.awt.Color, arg7: java.awt.image.ImageObserver): boolean
-                public drawToBufImage(arg0: java.awt.Graphics, arg1: sun.awt.image.ToolkitImage, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: int, arg9: int, arg10: java.awt.Color, arg11: java.awt.image.ImageObserver): boolean
-                public drawToBufImage(arg0: java.awt.Graphics, arg1: sun.awt.image.ToolkitImage, arg2: java.awt.geom.AffineTransform, arg3: java.awt.image.ImageObserver): boolean
+                public prepare(arg0: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+                public check(arg0: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): int
+                public drawToBufImage(arg0: java.awt.Graphics, arg1: sun.awt.image.ToolkitImage, arg2: int, arg3: int, arg4: java.awt.Color, arg5: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+                public drawToBufImage(arg0: java.awt.Graphics, arg1: sun.awt.image.ToolkitImage, arg2: int, arg3: int, arg4: int, arg5: int, arg6: java.awt.Color, arg7: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+                public drawToBufImage(arg0: java.awt.Graphics, arg1: sun.awt.image.ToolkitImage, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: int, arg9: int, arg10: java.awt.Color, arg11: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+                public drawToBufImage(arg0: java.awt.Graphics, arg1: sun.awt.image.ToolkitImage, arg2: java.awt.geom.AffineTransform, arg3: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
                 public setAccelerationPriority(arg0: float): void
                 public static class: java.lang.Class<any>
             }

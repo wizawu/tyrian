@@ -10,9 +10,6 @@ declare namespace com {
                             public _ids(): java.lang.String[]
                             public static class: java.lang.Class<any>
                         }
-                        abstract class _LocatorImplBase$$Lambda extends org.omg.CORBA.portable.ObjectImpl implements com.sun.corba.se.spi.activation.Locator , org.omg.CORBA.portable.InvokeHandler {
-                            public constructor()
-                        }
                     }
                 }
             }

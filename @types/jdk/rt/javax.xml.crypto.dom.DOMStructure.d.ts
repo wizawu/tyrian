@@ -8,9 +8,6 @@ declare namespace javax {
                     public isFeatureSupported(arg0: java.lang.String | string): boolean
                     public static class: java.lang.Class<any>
                 }
-                class DOMStructure$$Lambda implements javax.xml.crypto.XMLStructure {
-                    public constructor(arg0: org.w3c.dom.Node)
-                }
             }
         }
     }

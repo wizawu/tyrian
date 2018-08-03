@@ -9,9 +9,6 @@ declare namespace com {
                                 public call(): T
                                 public static class: java.lang.Class<any>
                             }
-                            class DispatchImpl$Invoker$$Lambda implements java.util.concurrent.Callable {
-                                public (): T
-                            }
                         }
                     }
                 }

@@ -5,7 +5,7 @@ declare namespace com {
                 namespace ws {
                     namespace util {
                         class NoCloseOutputStream extends java.io.FilterOutputStream {
-                            public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda)
+                            public constructor(arg0: java.io.OutputStream)
                             public close(): void
                             public doClose(): void
                             public static class: java.lang.Class<any>

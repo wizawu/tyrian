@@ -9,9 +9,6 @@ declare namespace com {
                                 public getLocation(): org.xml.sax.Locator
                                 public static class: java.lang.Class<any>
                             }
-                            abstract class AbstractObjectImpl$$Lambda implements com.sun.xml.internal.ws.api.model.wsdl.WSDLObject {
-                                public (): org.xml.sax.Locator
-                            }
                         }
                     }
                 }

@@ -9,9 +9,6 @@ declare namespace com {
                     public event(): com.sun.nio.sctp.PeerAddressChangeNotification$AddressChangeEvent
                     public static class: java.lang.Class<any>
                 }
-                abstract class PeerAddressChangeNotification$$Lambda implements com.sun.nio.sctp.Notification {
-                    protected constructor()
-                }
             }
         }
     }

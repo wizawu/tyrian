@@ -32,8 +32,8 @@ declare namespace com {
                                     protected m_expandedNameTable: com.sun.org.apache.xml.internal.dtm.ref.ExpandedNameTable
                                     protected m_indexing: boolean
                                     protected m_traversers: com.sun.org.apache.xml.internal.dtm.DTMAxisTraverser[]
-                                    public constructor(arg0: com.sun.org.apache.xml.internal.dtm.DTMManager, arg1: javax.xml.transform.Source, arg2: int, arg3: com.sun.org.apache.xml.internal.dtm.DTMWSFilter, arg4: com.sun.org.apache.xml.internal.utils.XMLStringFactory, arg5: boolean)
-                                    public constructor(arg0: com.sun.org.apache.xml.internal.dtm.DTMManager, arg1: javax.xml.transform.Source, arg2: int, arg3: com.sun.org.apache.xml.internal.dtm.DTMWSFilter, arg4: com.sun.org.apache.xml.internal.utils.XMLStringFactory, arg5: boolean, arg6: int, arg7: boolean, arg8: boolean)
+                                    public constructor(arg0: com.sun.org.apache.xml.internal.dtm.DTMManager, arg1: javax.xml.transform.Source, arg2: int, arg3: com.sun.org.apache.xml.internal.dtm.DTMWSFilter | com.sun.org.apache.xml.internal.dtm.DTMWSFilter$$Lambda, arg4: com.sun.org.apache.xml.internal.utils.XMLStringFactory, arg5: boolean)
+                                    public constructor(arg0: com.sun.org.apache.xml.internal.dtm.DTMManager, arg1: javax.xml.transform.Source, arg2: int, arg3: com.sun.org.apache.xml.internal.dtm.DTMWSFilter | com.sun.org.apache.xml.internal.dtm.DTMWSFilter$$Lambda, arg4: com.sun.org.apache.xml.internal.utils.XMLStringFactory, arg5: boolean, arg6: int, arg7: boolean, arg8: boolean)
                                     protected ensureSizeOfIndex(arg0: int, arg1: int): void
                                     protected indexNode(arg0: int, arg1: int): void
                                     protected findGTE(arg0: int[], arg1: int, arg2: int, arg3: int): int
@@ -47,7 +47,7 @@ declare namespace com {
                                     protected _nextsib(arg0: int): int
                                     protected _prevsib(arg0: int): int
                                     protected _parent(arg0: int): int
-                                    public dumpDTM(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                                    public dumpDTM(arg0: java.io.OutputStream): void
                                     public dumpNode(arg0: int): string
                                     public setFeature(arg0: java.lang.String | string, arg1: boolean): void
                                     public hasChildNodes(arg0: int): boolean

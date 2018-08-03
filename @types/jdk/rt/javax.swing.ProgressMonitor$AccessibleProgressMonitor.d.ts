@@ -1,7 +1,7 @@
 declare namespace javax {
     namespace swing {
         class ProgressMonitor$AccessibleProgressMonitor extends javax.accessibility.AccessibleContext implements javax.accessibility.AccessibleText , javax.swing.event.ChangeListener , java.beans.PropertyChangeListener {
-            protected constructor(arg0: javax.swing.ProgressMonitor | javax.swing.ProgressMonitor$$Lambda)
+            protected constructor(arg0: javax.swing.ProgressMonitor)
             public stateChanged(arg0: javax.swing.event.ChangeEvent): void
             public propertyChange(arg0: java.beans.PropertyChangeEvent): void
             public getAccessibleName(): string

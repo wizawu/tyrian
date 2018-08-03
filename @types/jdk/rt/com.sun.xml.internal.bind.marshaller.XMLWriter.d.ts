@@ -5,11 +5,11 @@ declare namespace com {
                 namespace bind {
                     namespace marshaller {
                         class XMLWriter extends org.xml.sax.helpers.XMLFilterImpl {
-                            public constructor(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: java.lang.String | string, arg2: com.sun.xml.internal.bind.marshaller.CharacterEscapeHandler | com.sun.xml.internal.bind.marshaller.CharacterEscapeHandler$$Lambda)
-                            public constructor(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: java.lang.String | string)
+                            public constructor(arg0: java.io.Writer, arg1: java.lang.String | string, arg2: com.sun.xml.internal.bind.marshaller.CharacterEscapeHandler | com.sun.xml.internal.bind.marshaller.CharacterEscapeHandler$$Lambda)
+                            public constructor(arg0: java.io.Writer, arg1: java.lang.String | string)
                             public reset(): void
                             public flush(): void
-                            public setOutput(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: java.lang.String | string): void
+                            public setOutput(arg0: java.io.Writer, arg1: java.lang.String | string): void
                             public setXmlDecl(arg0: boolean): void
                             public setHeader(arg0: java.lang.String | string): void
                             public startPrefixMapping(arg0: java.lang.String | string, arg1: java.lang.String | string): void

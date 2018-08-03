@@ -8,9 +8,6 @@ declare namespace com {
                             public compareTo(arg0: java.lang.Object): int
                             public static class: java.lang.Class<any>
                         }
-                        class XColors$XColor$$Lambda implements java.lang.Comparable {
-                            public (arg0: java.lang.Object): int
-                        }
                     }
                 }
             }

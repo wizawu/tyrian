@@ -6,7 +6,7 @@ declare namespace com {
                     namespace windows {
                         class WindowsDesktopPaneUI extends javax.swing.plaf.basic.BasicDesktopPaneUI {
                             public constructor()
-                            public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
+                            public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
                             protected installDesktopManager(): void
                             protected installDefaults(): void
                             protected installKeyboardActions(): void

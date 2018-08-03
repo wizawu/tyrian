@@ -9,7 +9,7 @@ declare namespace javax {
             public setUI(arg0: javax.swing.plaf.LayerUI<V>): void
             public getUI(): javax.swing.plaf.LayerUI<V>
             public getGlassPane(): javax.swing.JPanel
-            public setGlassPane(arg0: javax.swing.JPanel | javax.swing.JPanel$$Lambda): void
+            public setGlassPane(arg0: javax.swing.JPanel): void
             public createGlassPane(): javax.swing.JPanel
             public setLayout(arg0: java.awt.LayoutManager): void
             public setBorder(arg0: javax.swing.border.Border): void
@@ -35,9 +35,6 @@ declare namespace javax {
             public doLayout(): void
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
-        }
-        class JLayer$$Lambda<V extends java.awt.Component> extends javax.swing.JComponent implements javax.swing.Scrollable , java.beans.PropertyChangeListener , javax.accessibility.Accessible {
-            public constructor()
         }
     }
 }

@@ -29,9 +29,6 @@ declare namespace javax {
                 public changedUpdate(arg0: javax.swing.event.DocumentEvent, arg1: java.awt.Shape, arg2: javax.swing.text.ViewFactory | javax.swing.text.ViewFactory$$Lambda): void
                 public static class: java.lang.Class<any>
             }
-            class ParagraphView$$Lambda extends javax.swing.text.FlowView implements javax.swing.text.TabExpander {
-                protected firstLineIndent: int
-            }
         }
     }
 }

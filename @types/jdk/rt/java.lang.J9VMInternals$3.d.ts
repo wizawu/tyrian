@@ -4,8 +4,5 @@ declare namespace java {
             public run(): java.lang.Object
             public static class: java.lang.Class<any>
         }
-        class J9VMInternals$3$$Lambda implements java.security.PrivilegedAction {
-            public (): java.lang.Object
-        }
     }
 }

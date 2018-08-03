@@ -10,9 +10,9 @@ declare namespace com {
                         protected addListenerForMBeanRemovedNotif(): java.lang.Integer
                         protected removeListenerForMBeanRemovedNotif(arg0: java.lang.Integer): void
                         protected lostNotifs(arg0: java.lang.String | string, arg1: long): void
-                        public addNotificationListener(arg0: java.lang.Integer, arg1: javax.management.ObjectName, arg2: javax.management.NotificationListener, arg3: javax.management.NotificationFilter, arg4: java.lang.Object, arg5: javax.security.auth.Subject): void
-                        public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener): java.lang.Integer[]
-                        public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener, arg2: javax.management.NotificationFilter, arg3: java.lang.Object): java.lang.Integer
+                        public addNotificationListener(arg0: java.lang.Integer, arg1: javax.management.ObjectName, arg2: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda, arg3: javax.management.NotificationFilter | javax.management.NotificationFilter$$Lambda, arg4: java.lang.Object, arg5: javax.security.auth.Subject): void
+                        public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda): java.lang.Integer[]
+                        public removeNotificationListener(arg0: javax.management.ObjectName, arg1: javax.management.NotificationListener | javax.management.NotificationListener$$Lambda, arg2: javax.management.NotificationFilter | javax.management.NotificationFilter$$Lambda, arg3: java.lang.Object): java.lang.Integer
                         public removeNotificationListener(arg0: javax.management.ObjectName): java.lang.Integer[]
                         public preReconnection(): com.sun.jmx.remote.internal.ClientListenerInfo[]
                         public postReconnection(arg0: com.sun.jmx.remote.internal.ClientListenerInfo[]): void

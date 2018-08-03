@@ -11,8 +11,8 @@ declare namespace com {
                             public constructor(arg0: com.sun.xml.internal.ws.api.pipe.Tube, arg1: com.sun.xml.internal.ws.handler.HandlerTube, arg2: com.sun.xml.internal.ws.api.WSBinding)
                             protected constructor(arg0: com.sun.xml.internal.ws.handler.HandlerTube, arg1: com.sun.xml.internal.ws.api.pipe.TubeCloner)
                             protected getBinding(): com.sun.xml.internal.ws.api.WSBinding
-                            public processRequest(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): com.sun.xml.internal.ws.api.pipe.NextAction
-                            public processResponse(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): com.sun.xml.internal.ws.api.pipe.NextAction
+                            public processRequest(arg0: com.sun.xml.internal.ws.api.message.Packet): com.sun.xml.internal.ws.api.pipe.NextAction
+                            public processResponse(arg0: com.sun.xml.internal.ws.api.message.Packet): com.sun.xml.internal.ws.api.pipe.NextAction
                             public processException(arg0: java.lang.Throwable): com.sun.xml.internal.ws.api.pipe.NextAction
                             protected initiateClosing(arg0: javax.xml.ws.handler.MessageContext): void
                             public close(arg0: javax.xml.ws.handler.MessageContext): void

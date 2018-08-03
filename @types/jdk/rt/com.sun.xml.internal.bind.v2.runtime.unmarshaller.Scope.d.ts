@@ -11,8 +11,8 @@ declare namespace com {
                                     public hasStarted(): boolean
                                     public reset(): void
                                     public finish(): void
-                                    public add(arg0: com.sun.xml.internal.bind.v2.runtime.reflect.Accessor<BeanT, PropT> | com.sun.xml.internal.bind.v2.runtime.reflect.Accessor$$Lambda<BeanT, PropT>, arg1: com.sun.xml.internal.bind.v2.runtime.reflect.Lister<BeanT, PropT, ItemT, PackT>, arg2: ItemT): void
-                                    public start(arg0: com.sun.xml.internal.bind.v2.runtime.reflect.Accessor<BeanT, PropT> | com.sun.xml.internal.bind.v2.runtime.reflect.Accessor$$Lambda<BeanT, PropT>, arg1: com.sun.xml.internal.bind.v2.runtime.reflect.Lister<BeanT, PropT, ItemT, PackT>): void
+                                    public add(arg0: com.sun.xml.internal.bind.v2.runtime.reflect.Accessor<BeanT, PropT>, arg1: com.sun.xml.internal.bind.v2.runtime.reflect.Lister<BeanT, PropT, ItemT, PackT>, arg2: ItemT): void
+                                    public start(arg0: com.sun.xml.internal.bind.v2.runtime.reflect.Accessor<BeanT, PropT>, arg1: com.sun.xml.internal.bind.v2.runtime.reflect.Lister<BeanT, PropT, ItemT, PackT>): void
                                     public static class: java.lang.Class<any>
                                 }
                             }

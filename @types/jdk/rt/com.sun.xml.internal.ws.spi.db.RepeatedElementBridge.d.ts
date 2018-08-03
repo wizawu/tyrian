@@ -10,7 +10,7 @@ declare namespace com {
                                 public collectionHandler(): com.sun.xml.internal.ws.spi.db.RepeatedElementBridge$CollectionHandler
                                 public context(): com.sun.xml.internal.ws.spi.db.BindingContext
                                 public marshal(arg0: T, arg1: javax.xml.stream.XMLStreamWriter, arg2: javax.xml.bind.attachment.AttachmentMarshaller): void
-                                public marshal(arg0: T, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda, arg2: javax.xml.namespace.NamespaceContext, arg3: javax.xml.bind.attachment.AttachmentMarshaller): void
+                                public marshal(arg0: T, arg1: java.io.OutputStream, arg2: javax.xml.namespace.NamespaceContext, arg3: javax.xml.bind.attachment.AttachmentMarshaller): void
                                 public marshal(arg0: T, arg1: org.w3c.dom.Node): void
                                 public marshal(arg0: T, arg1: org.xml.sax.ContentHandler, arg2: javax.xml.bind.attachment.AttachmentMarshaller): void
                                 public marshal(arg0: T, arg1: javax.xml.transform.Result): void

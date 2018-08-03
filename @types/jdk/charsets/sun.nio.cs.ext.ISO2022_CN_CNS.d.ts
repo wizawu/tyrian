@@ -10,9 +10,6 @@ declare namespace sun {
                     public newEncoder(): java.nio.charset.CharsetEncoder
                     public static class: java.lang.Class<any>
                 }
-                class ISO2022_CN_CNS$$Lambda extends sun.nio.cs.ext.ISO2022 implements sun.nio.cs.HistoricallyNamedCharset {
-                    public constructor()
-                }
             }
         }
     }

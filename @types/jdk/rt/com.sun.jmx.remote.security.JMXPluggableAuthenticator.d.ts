@@ -8,9 +8,6 @@ declare namespace com {
                         public authenticate(arg0: java.lang.Object): javax.security.auth.Subject
                         public static class: java.lang.Class<any>
                     }
-                    class JMXPluggableAuthenticator$$Lambda implements javax.management.remote.JMXAuthenticator {
-                        public constructor(arg0: java.util.Map<any, any>)
-                    }
                 }
             }
         }

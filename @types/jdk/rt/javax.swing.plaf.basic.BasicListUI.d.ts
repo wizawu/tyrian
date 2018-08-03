@@ -23,10 +23,10 @@ declare namespace javax {
                     protected static cellRendererChanged: int
                     public constructor()
                     protected paintCell(arg0: java.awt.Graphics, arg1: int, arg2: java.awt.Rectangle, arg3: javax.swing.ListCellRenderer | javax.swing.ListCellRenderer$$Lambda, arg4: javax.swing.ListModel, arg5: javax.swing.ListSelectionModel, arg6: int): void
-                    public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    public getBaseline(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: int, arg2: int): int
-                    public getBaselineResizeBehavior(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Component$BaselineResizeBehavior
-                    public getPreferredSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
+                    public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
+                    public getBaseline(arg0: javax.swing.JComponent, arg1: int, arg2: int): int
+                    public getBaselineResizeBehavior(arg0: javax.swing.JComponent): java.awt.Component$BaselineResizeBehavior
+                    public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
                     protected selectPreviousIndex(): void
                     protected selectNextIndex(): void
                     protected installKeyboardActions(): void
@@ -35,12 +35,12 @@ declare namespace javax {
                     protected uninstallListeners(): void
                     protected installDefaults(): void
                     protected uninstallDefaults(): void
-                    public installUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    public uninstallUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
-                    public locationToIndex(arg0: javax.swing.JList | javax.swing.JList$$Lambda, arg1: java.awt.Point): int
-                    public indexToLocation(arg0: javax.swing.JList | javax.swing.JList$$Lambda, arg1: int): java.awt.Point
-                    public getCellBounds(arg0: javax.swing.JList | javax.swing.JList$$Lambda, arg1: int, arg2: int): java.awt.Rectangle
+                    public installUI(arg0: javax.swing.JComponent): void
+                    public uninstallUI(arg0: javax.swing.JComponent): void
+                    public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
+                    public locationToIndex(arg0: javax.swing.JList, arg1: java.awt.Point): int
+                    public indexToLocation(arg0: javax.swing.JList, arg1: int): java.awt.Point
+                    public getCellBounds(arg0: javax.swing.JList, arg1: int, arg2: int): java.awt.Rectangle
                     protected getRowHeight(arg0: int): int
                     protected convertYToRow(arg0: int): int
                     protected convertRowToY(arg0: int): int

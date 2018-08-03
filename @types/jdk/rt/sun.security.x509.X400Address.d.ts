@@ -5,7 +5,7 @@ declare namespace sun {
                 public constructor(arg0: byte[])
                 public constructor(arg0: sun.security.util.DerValue)
                 public getType(): int
-                public encode(arg0: sun.security.util.DerOutputStream | sun.security.util.DerOutputStream$$Lambda): void
+                public encode(arg0: sun.security.util.DerOutputStream): void
                 public toString(): string
                 public constrains(arg0: sun.security.x509.GeneralNameInterface): int
                 public subtreeDepth(): int

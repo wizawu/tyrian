@@ -16,9 +16,6 @@ declare namespace sun {
                 public dispatchEvent(arg0: sun.awt.X11.XEvent): void
                 public static class: java.lang.Class<any>
             }
-            class MotifDnDDragSourceProtocol$$Lambda extends sun.awt.X11.XDragSourceProtocol implements sun.awt.X11.XEventDispatcher {
-                protected constructor(arg0: sun.awt.X11.XDragSourceProtocolListener)
-            }
         }
     }
 }

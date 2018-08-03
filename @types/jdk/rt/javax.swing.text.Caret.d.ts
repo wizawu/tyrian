@@ -2,11 +2,11 @@ declare namespace javax {
     namespace swing {
         namespace text {
             interface Caret {
-                install(arg0: javax.swing.text.JTextComponent | javax.swing.text.JTextComponent$$Lambda): void
-                deinstall(arg0: javax.swing.text.JTextComponent | javax.swing.text.JTextComponent$$Lambda): void
+                install(arg0: javax.swing.text.JTextComponent): void
+                deinstall(arg0: javax.swing.text.JTextComponent): void
                 paint(arg0: java.awt.Graphics): void
-                addChangeListener(arg0: javax.swing.event.ChangeListener): void
-                removeChangeListener(arg0: javax.swing.event.ChangeListener): void
+                addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+                removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
                 isVisible(): boolean
                 setVisible(arg0: boolean): void
                 isSelectionVisible(): boolean

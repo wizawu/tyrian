@@ -28,7 +28,7 @@ declare namespace sun {
                 public constructor()
                 public constructor(arg0: byte[])
                 public constructor(arg0: sun.security.util.DerValue)
-                public encode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public encode(arg0: java.io.OutputStream): void
                 public getElements(): java.util.Enumeration<java.lang.String>
                 public getName(): string
                 public getEncodedInfo(): byte[]

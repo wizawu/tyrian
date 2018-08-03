@@ -6,8 +6,8 @@ declare namespace javax {
                     public constructor(arg0: javax.swing.AbstractButton)
                     public propertyChange(arg0: java.beans.PropertyChangeEvent): void
                     protected checkOpacity(arg0: javax.swing.AbstractButton): void
-                    public installKeyboardActions(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    public uninstallKeyboardActions(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public installKeyboardActions(arg0: javax.swing.JComponent): void
+                    public uninstallKeyboardActions(arg0: javax.swing.JComponent): void
                     public stateChanged(arg0: javax.swing.event.ChangeEvent): void
                     public focusGained(arg0: java.awt.event.FocusEvent): void
                     public focusLost(arg0: java.awt.event.FocusEvent): void

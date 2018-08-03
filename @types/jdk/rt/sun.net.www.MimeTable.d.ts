@@ -21,9 +21,6 @@ declare namespace sun {
                 protected saveAsProperties(arg0: java.io.File): boolean
                 public static class: java.lang.Class<any>
             }
-            class MimeTable$$Lambda implements java.net.FileNameMap {
-                protected static mailcapLocations: java.lang.String[]
-            }
         }
     }
 }

@@ -12,8 +12,8 @@ declare namespace com {
                                 public serializeBody(arg0: java.lang.Object, arg1: com.sun.xml.internal.bind.v2.runtime.XMLSerializer): void
                                 public getElementNamespaceURI(arg0: java.lang.Object): string
                                 public getElementLocalName(arg0: java.lang.Object): string
-                                public createInstance(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext | com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$$Lambda): java.lang.Object
-                                public reset(arg0: java.lang.Object, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext | com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$$Lambda): boolean
+                                public createInstance(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext): java.lang.Object
+                                public reset(arg0: java.lang.Object, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext): boolean
                                 public getId(arg0: java.lang.Object, arg1: com.sun.xml.internal.bind.v2.runtime.XMLSerializer): string
                                 public serializeAttributes(arg0: java.lang.Object, arg1: com.sun.xml.internal.bind.v2.runtime.XMLSerializer): void
                                 public serializeRoot(arg0: java.lang.Object, arg1: com.sun.xml.internal.bind.v2.runtime.XMLSerializer): void

@@ -16,8 +16,8 @@ declare namespace java {
             public getValueIsAdjusting(): boolean
             public setValue(arg0: int): void
             public getValue(): int
-            public addAdjustmentListener(arg0: java.awt.event.AdjustmentListener): void
-            public removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener): void
+            public addAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$Lambda): void
+            public removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$Lambda): void
             public getAdjustmentListeners(): java.awt.event.AdjustmentListener[]
             public toString(): string
             public paramString(): string

@@ -4,7 +4,7 @@ declare namespace sun {
             public setTitle(arg0: java.lang.String | string): void
             public setIconImage(arg0: java.awt.Image): void
             public updateIconImages(): void
-            public setMenuBar(arg0: java.awt.MenuBar | java.awt.MenuBar$$Lambda): void
+            public setMenuBar(arg0: java.awt.MenuBar): void
             public setResizable(arg0: boolean): void
             public setState(arg0: int): void
             public getState(): int

@@ -12,9 +12,6 @@ declare namespace com {
                                 public getInstruction(): com.sun.org.apache.bcel.internal.generic.Instruction
                                 public static class: java.lang.Class<any>
                             }
-                            class SWITCH$$Lambda implements com.sun.org.apache.bcel.internal.generic.CompoundInstruction {
-                                public constructor(arg0: int[], arg1: com.sun.org.apache.bcel.internal.generic.InstructionHandle[], arg2: com.sun.org.apache.bcel.internal.generic.InstructionHandle, arg3: int)
-                            }
                         }
                     }
                 }

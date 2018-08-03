@@ -9,8 +9,8 @@ declare namespace com {
                                 public constructor(arg0: com.sun.xml.internal.bind.v2.runtime.JAXBContextImpl)
                                 public getElementNamespaceURI(arg0: com.sun.xml.internal.bind.api.CompositeStructure): string
                                 public getElementLocalName(arg0: com.sun.xml.internal.bind.api.CompositeStructure): string
-                                public createInstance(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext | com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$$Lambda): com.sun.xml.internal.bind.api.CompositeStructure
-                                public reset(arg0: com.sun.xml.internal.bind.api.CompositeStructure, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext | com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$$Lambda): boolean
+                                public createInstance(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext): com.sun.xml.internal.bind.api.CompositeStructure
+                                public reset(arg0: com.sun.xml.internal.bind.api.CompositeStructure, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext): boolean
                                 public getId(arg0: com.sun.xml.internal.bind.api.CompositeStructure, arg1: com.sun.xml.internal.bind.v2.runtime.XMLSerializer): string
                                 public getLoader(arg0: com.sun.xml.internal.bind.v2.runtime.JAXBContextImpl, arg1: boolean): com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader
                                 public serializeRoot(arg0: com.sun.xml.internal.bind.api.CompositeStructure, arg1: com.sun.xml.internal.bind.v2.runtime.XMLSerializer): void
@@ -23,8 +23,8 @@ declare namespace com {
                                 public serializeAttributes(arg0: java.lang.Object, arg1: com.sun.xml.internal.bind.v2.runtime.XMLSerializer): void
                                 public serializeBody(arg0: java.lang.Object, arg1: com.sun.xml.internal.bind.v2.runtime.XMLSerializer): void
                                 public getId(arg0: java.lang.Object, arg1: com.sun.xml.internal.bind.v2.runtime.XMLSerializer): string
-                                public reset(arg0: java.lang.Object, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext | com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$$Lambda): boolean
-                                public createInstance(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext | com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext$$Lambda): java.lang.Object
+                                public reset(arg0: java.lang.Object, arg1: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext): boolean
+                                public createInstance(arg0: com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext): java.lang.Object
                                 public getElementLocalName(arg0: java.lang.Object): string
                                 public getElementNamespaceURI(arg0: java.lang.Object): string
                                 public static class: java.lang.Class<any>

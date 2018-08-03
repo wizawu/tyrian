@@ -7,9 +7,6 @@ declare namespace jdk {
                     protected getGuardedInvocationComponent(arg0: jdk.internal.dynalink.CallSiteDescriptor, arg1: jdk.internal.dynalink.linker.LinkerServices, arg2: java.util.List<java.lang.String>): jdk.internal.dynalink.beans.GuardedInvocationComponent
                     public static class: java.lang.Class<any>
                 }
-                abstract class AbstractJavaLinker$$Lambda implements jdk.internal.dynalink.linker.GuardingDynamicLinker {
-                    public (arg0: jdk.internal.dynalink.linker.LinkRequest, arg1: jdk.internal.dynalink.linker.LinkerServices): jdk.internal.dynalink.linker.GuardedInvocation
-                }
             }
         }
     }

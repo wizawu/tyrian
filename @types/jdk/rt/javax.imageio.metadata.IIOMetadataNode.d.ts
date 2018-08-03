@@ -53,7 +53,7 @@ declare namespace javax {
                 public setIdAttributeNS(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: boolean): void
                 public setIdAttributeNode(arg0: org.w3c.dom.Attr, arg1: boolean): void
                 public getSchemaTypeInfo(): org.w3c.dom.TypeInfo
-                public setUserData(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: org.w3c.dom.UserDataHandler): java.lang.Object
+                public setUserData(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: org.w3c.dom.UserDataHandler | org.w3c.dom.UserDataHandler$$Lambda): java.lang.Object
                 public getUserData(arg0: java.lang.String | string): java.lang.Object
                 public getFeature(arg0: java.lang.String | string, arg1: java.lang.String | string): java.lang.Object
                 public isSameNode(arg0: org.w3c.dom.Node): boolean

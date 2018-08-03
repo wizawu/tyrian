@@ -10,9 +10,6 @@ declare namespace com {
                                 public accept(arg0: com.sun.org.apache.bcel.internal.generic.Visitor): void
                                 public static class: java.lang.Class<any>
                             }
-                            class IASTORE$$Lambda extends com.sun.org.apache.bcel.internal.generic.ArrayInstruction implements com.sun.org.apache.bcel.internal.generic.StackConsumer {
-                                public constructor()
-                            }
                         }
                     }
                 }

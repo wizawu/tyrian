@@ -20,9 +20,9 @@ declare namespace com {
                             public static SPACE: string
                             public static UTF_8: string
                             public static OUTPUTSTREAM_PROPERTY: string
-                            public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: com.sun.org.apache.xerces.internal.impl.PropertyManager)
-                            public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: java.lang.String | string, arg2: com.sun.org.apache.xerces.internal.impl.PropertyManager)
-                            public constructor(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: com.sun.org.apache.xerces.internal.impl.PropertyManager)
+                            public constructor(arg0: java.io.OutputStream, arg1: com.sun.org.apache.xerces.internal.impl.PropertyManager)
+                            public constructor(arg0: java.io.OutputStream, arg1: java.lang.String | string, arg2: com.sun.org.apache.xerces.internal.impl.PropertyManager)
+                            public constructor(arg0: java.io.Writer, arg1: com.sun.org.apache.xerces.internal.impl.PropertyManager)
                             public constructor(arg0: javax.xml.transform.stream.StreamResult, arg1: java.lang.String | string, arg2: com.sun.org.apache.xerces.internal.impl.PropertyManager)
                             public reset(): void
                             public setOutput(arg0: javax.xml.transform.stream.StreamResult, arg1: java.lang.String | string): void

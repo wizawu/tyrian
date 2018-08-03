@@ -6,9 +6,6 @@ declare namespace jdk {
                     public run(): void
                     public static class: java.lang.Class<any>
                 }
-                class ScriptingFunctions$1$$Lambda implements java.lang.Runnable {
-                    public (): void
-                }
             }
         }
     }

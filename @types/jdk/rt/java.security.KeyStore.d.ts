@@ -22,7 +22,7 @@ declare namespace java {
             public isKeyEntry(arg0: java.lang.String | string): boolean
             public isCertificateEntry(arg0: java.lang.String | string): boolean
             public getCertificateAlias(arg0: java.security.cert.Certificate): string
-            public store(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: char[]): void
+            public store(arg0: java.io.OutputStream, arg1: char[]): void
             public store(arg0: java.security.KeyStore$LoadStoreParameter | java.security.KeyStore$LoadStoreParameter$$Lambda): void
             public load(arg0: java.io.InputStream, arg1: char[]): void
             public load(arg0: java.security.KeyStore$LoadStoreParameter | java.security.KeyStore$LoadStoreParameter$$Lambda): void

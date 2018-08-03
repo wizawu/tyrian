@@ -17,7 +17,7 @@ declare namespace java {
                 public newEncoder(): java.nio.charset.CharsetEncoder
                 public canEncode(): boolean
                 public decode(arg0: java.nio.ByteBuffer): java.nio.CharBuffer
-                public encode(arg0: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda): java.nio.ByteBuffer
+                public encode(arg0: java.nio.CharBuffer): java.nio.ByteBuffer
                 public encode(arg0: java.lang.String | string): java.nio.ByteBuffer
                 public compareTo(arg0: java.nio.charset.Charset): int
                 public hashCode(): int

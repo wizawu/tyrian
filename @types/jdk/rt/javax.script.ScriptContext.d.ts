@@ -12,8 +12,8 @@ declare namespace javax {
             getAttributesScope(arg0: java.lang.String | string): int
             getWriter(): java.io.Writer
             getErrorWriter(): java.io.Writer
-            setWriter(arg0: java.io.Writer | java.io.Writer$$Lambda): void
-            setErrorWriter(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+            setWriter(arg0: java.io.Writer): void
+            setErrorWriter(arg0: java.io.Writer): void
             getReader(): java.io.Reader
             setReader(arg0: java.io.Reader): void
             getScopes(): java.util.List<java.lang.Integer>

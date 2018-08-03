@@ -9,7 +9,7 @@ declare namespace com {
                             public getDefaults(): javax.swing.UIDefaults
                             protected initComponentDefaults(arg0: javax.swing.UIDefaults): void
                             protected initSystemColorDefaults(arg0: javax.swing.UIDefaults): void
-                            public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
+                            public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
                             public initialize(): void
                             public isSupportedLookAndFeel(): boolean
                             public isNativeLookAndFeel(): boolean

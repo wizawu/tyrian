@@ -15,9 +15,6 @@ declare namespace com {
                                     public toString(): string
                                     public static class: java.lang.Class<any>
                                 }
-                                abstract class Quick$$Lambda implements java.lang.annotation.Annotation , com.sun.xml.internal.bind.v2.model.annotation.Locatable , com.sun.xml.internal.bind.v2.runtime.Location {
-                                    protected constructor(arg0: com.sun.xml.internal.bind.v2.model.annotation.Locatable)
-                                }
                             }
                         }
                     }

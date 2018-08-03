@@ -3,7 +3,7 @@ declare namespace javax {
         namespace plaf {
             namespace metal {
                 class MetalTitlePane extends javax.swing.JComponent {
-                    public constructor(arg0: javax.swing.JRootPane | javax.swing.JRootPane$$Lambda, arg1: javax.swing.plaf.metal.MetalRootPaneUI)
+                    public constructor(arg0: javax.swing.JRootPane, arg1: javax.swing.plaf.metal.MetalRootPaneUI)
                     public getRootPane(): javax.swing.JRootPane
                     public addNotify(): void
                     public removeNotify(): void

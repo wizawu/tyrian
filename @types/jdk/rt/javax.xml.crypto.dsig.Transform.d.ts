@@ -10,7 +10,7 @@ declare namespace javax {
                     XSLT: string
                     getParameterSpec(): java.security.spec.AlgorithmParameterSpec
                     transform(arg0: javax.xml.crypto.Data, arg1: javax.xml.crypto.XMLCryptoContext): javax.xml.crypto.Data
-                    transform(arg0: javax.xml.crypto.Data, arg1: javax.xml.crypto.XMLCryptoContext, arg2: java.io.OutputStream | java.io.OutputStream$$Lambda): javax.xml.crypto.Data
+                    transform(arg0: javax.xml.crypto.Data, arg1: javax.xml.crypto.XMLCryptoContext, arg2: java.io.OutputStream): javax.xml.crypto.Data
                 }
             }
         }

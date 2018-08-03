@@ -22,9 +22,9 @@ declare namespace com {
                             public writeTo<T>(arg0: javax.xml.stream.XMLStreamWriter): void
                             public writeTo<T>(arg0: org.xml.sax.ContentHandler, arg1: org.xml.sax.ErrorHandler): void
                             protected writePayloadTo<T>(arg0: org.xml.sax.ContentHandler, arg1: org.xml.sax.ErrorHandler, arg2: boolean): void
-                            public toSAAJ<T>(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda, arg1: java.lang.Boolean | boolean): com.sun.xml.internal.ws.api.message.Message
+                            public toSAAJ<T>(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: java.lang.Boolean | boolean): com.sun.xml.internal.ws.api.message.Message
                             public readAsSOAPMessage<T>(): javax.xml.soap.SOAPMessage
-                            public readAsSOAPMessage<T>(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda, arg1: boolean): javax.xml.soap.SOAPMessage
+                            public readAsSOAPMessage<T>(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: boolean): javax.xml.soap.SOAPMessage
                             public static class: java.lang.Class<any>
                         }
                     }

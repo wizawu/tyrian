@@ -1,7 +1,7 @@
 declare namespace java {
     namespace awt {
         class Checkbox$AccessibleAWTCheckbox extends java.awt.Component$AccessibleAWTComponent implements java.awt.event.ItemListener , javax.accessibility.AccessibleAction , javax.accessibility.AccessibleValue {
-            public constructor(arg0: java.awt.Checkbox | java.awt.Checkbox$$Lambda)
+            public constructor(arg0: java.awt.Checkbox)
             public itemStateChanged(arg0: java.awt.event.ItemEvent): void
             public getAccessibleAction(): javax.accessibility.AccessibleAction
             public getAccessibleValue(): javax.accessibility.AccessibleValue

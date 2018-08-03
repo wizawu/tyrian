@@ -6,7 +6,7 @@ declare namespace java {
             public asReadOnlyBuffer(): java.nio.CharBuffer
             public put(arg0: char): java.nio.CharBuffer
             public put(arg0: int, arg1: char): java.nio.CharBuffer
-            public put(arg0: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda): java.nio.CharBuffer
+            public put(arg0: java.nio.CharBuffer): java.nio.CharBuffer
             public put(arg0: char[], arg1: int, arg2: int): java.nio.CharBuffer
             public compact(): java.nio.CharBuffer
             public isDirect(): boolean

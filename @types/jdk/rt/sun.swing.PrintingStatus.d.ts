@@ -6,7 +6,7 @@ declare namespace sun {
             public showModal(arg0: boolean): void
             public dispose(): void
             public isAborted(): boolean
-            public createNotificationPrintable(arg0: java.awt.print.Printable): java.awt.print.Printable
+            public createNotificationPrintable(arg0: java.awt.print.Printable | java.awt.print.Printable$$Lambda): java.awt.print.Printable
             public static class: java.lang.Class<any>
         }
     }

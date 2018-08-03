@@ -9,6 +9,9 @@ declare namespace com {
                                 interface BuiltinLeafInfo<T, C> extends com.sun.xml.internal.bind.v2.model.core.LeafInfo<T, C> {
                                     getTypeName(): javax.xml.namespace.QName
                                 }
+                                interface BuiltinLeafInfo$$Lambda<T, C> extends com.sun.xml.internal.bind.v2.model.core.LeafInfo<T, C> {
+                                    (): javax.xml.namespace.QName
+                                }
                             }
                         }
                     }

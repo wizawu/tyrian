@@ -11,14 +11,11 @@ declare namespace com {
                             public getTypeString(): string
                             public isPrimitive(): boolean
                             public compareTo(arg0: java.lang.Object): int
-                            public typeEquals(arg0: com.sun.corba.se.impl.orbutil.ObjectStreamField | com.sun.corba.se.impl.orbutil.ObjectStreamField$$Lambda): boolean
+                            public typeEquals(arg0: com.sun.corba.se.impl.orbutil.ObjectStreamField): boolean
                             public getSignature(): string
                             public toString(): string
                             public getClazz(): java.lang.Class
                             public static class: java.lang.Class<any>
-                        }
-                        class ObjectStreamField$$Lambda implements java.lang.Comparable {
-                            public (): string
                         }
                     }
                 }

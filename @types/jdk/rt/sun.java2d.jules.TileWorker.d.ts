@@ -8,9 +8,6 @@ declare namespace sun {
                 public disposeConsumerResources(): void
                 public static class: java.lang.Class<any>
             }
-            class TileWorker$$Lambda implements java.lang.Runnable {
-                public constructor(arg0: sun.java2d.jules.JulesAATileGenerator, arg1: int, arg2: sun.java2d.jules.IdleTileCache)
-            }
         }
     }
 }

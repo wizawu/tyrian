@@ -15,8 +15,5 @@ declare namespace sun {
             public static getQueue(): java.lang.ref.ReferenceQueue
             public static class: java.lang.Class<any>
         }
-        class Disposer$$Lambda implements java.lang.Runnable {
-            public static WEAK: int
-        }
     }
 }

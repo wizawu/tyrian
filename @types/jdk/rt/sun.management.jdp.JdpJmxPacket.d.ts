@@ -28,9 +28,6 @@ declare namespace sun {
                 public equals(arg0: java.lang.Object): boolean
                 public static class: java.lang.Class<any>
             }
-            class JdpJmxPacket$$Lambda extends sun.management.jdp.JdpGenericPacket implements sun.management.jdp.JdpPacket {
-                public static UUID_KEY: string
-            }
         }
     }
 }

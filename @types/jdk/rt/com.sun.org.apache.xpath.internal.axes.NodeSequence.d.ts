@@ -49,9 +49,6 @@ declare namespace com {
                                 protected getIteratorCache(): com.sun.org.apache.xpath.internal.axes.NodeSequence$IteratorCache
                                 public static class: java.lang.Class<any>
                             }
-                            class NodeSequence$$Lambda extends com.sun.org.apache.xpath.internal.objects.XObject implements com.sun.org.apache.xml.internal.dtm.DTMIterator , java.lang.Cloneable , com.sun.org.apache.xpath.internal.axes.PathComponent {
-                                protected m_last: int
-                            }
                         }
                     }
                 }

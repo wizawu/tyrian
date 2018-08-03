@@ -24,10 +24,10 @@ declare namespace com {
                                 protected createToolkit(): com.sun.xml.internal.ws.transport.http.HttpAdapter$HttpToolkit
                                 public handle(arg0: com.sun.xml.internal.ws.transport.http.WSHTTPConnection): void
                                 public handleGet(arg0: com.sun.xml.internal.ws.transport.http.WSHTTPConnection): boolean
-                                protected addSatellites(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): void
+                                protected addSatellites(arg0: com.sun.xml.internal.ws.api.message.Packet): void
                                 public static fixQuotesAroundSoapAction(arg0: java.lang.String | string): string
                                 protected getNonAnonymousResponseProcessor(): com.sun.xml.internal.ws.api.addressing.NonAnonymousResponseProcessor
-                                protected writeClientError(arg0: int, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda, arg2: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): void
+                                protected writeClientError(arg0: int, arg1: java.io.OutputStream, arg2: com.sun.xml.internal.ws.api.message.Packet): void
                                 public invokeAsync(arg0: com.sun.xml.internal.ws.transport.http.WSHTTPConnection): void
                                 public invokeAsync(arg0: com.sun.xml.internal.ws.transport.http.WSHTTPConnection, arg1: com.sun.xml.internal.ws.transport.http.HttpAdapter$CompletionCallback | com.sun.xml.internal.ws.transport.http.HttpAdapter$CompletionCallback$$Lambda): void
                                 public publishWSDL(arg0: com.sun.xml.internal.ws.transport.http.WSHTTPConnection): void

@@ -49,7 +49,7 @@ declare namespace javax {
             public setCellRenderer(arg0: javax.swing.tree.TreeCellRenderer | javax.swing.tree.TreeCellRenderer$$Lambda): void
             public setEditable(arg0: boolean): void
             public isEditable(): boolean
-            public setCellEditor(arg0: javax.swing.tree.TreeCellEditor): void
+            public setCellEditor(arg0: javax.swing.tree.TreeCellEditor | javax.swing.tree.TreeCellEditor$$Lambda): void
             public getCellEditor(): javax.swing.tree.TreeCellEditor
             public getModel(): javax.swing.tree.TreeModel
             public setModel(arg0: javax.swing.tree.TreeModel): void
@@ -150,8 +150,8 @@ declare namespace javax {
             public fireTreeCollapsed(arg0: javax.swing.tree.TreePath): void
             public fireTreeWillExpand(arg0: javax.swing.tree.TreePath): void
             public fireTreeWillCollapse(arg0: javax.swing.tree.TreePath): void
-            public addTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener): void
-            public removeTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener): void
+            public addTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$Lambda): void
+            public removeTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$Lambda): void
             public getTreeSelectionListeners(): javax.swing.event.TreeSelectionListener[]
             protected fireValueChanged(arg0: javax.swing.event.TreeSelectionEvent): void
             public treeDidChange(): void
@@ -172,9 +172,6 @@ declare namespace javax {
             protected paramString(): string
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
-        }
-        class JTree$$Lambda extends javax.swing.JComponent implements javax.swing.Scrollable , javax.accessibility.Accessible {
-            protected treeModel: javax.swing.tree.TreeModel
         }
     }
 }

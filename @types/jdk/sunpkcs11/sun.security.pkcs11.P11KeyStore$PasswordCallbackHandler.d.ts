@@ -6,9 +6,6 @@ declare namespace sun {
                 protected finalize(): void
                 public static class: java.lang.Class<any>
             }
-            class P11KeyStore$PasswordCallbackHandler$$Lambda implements javax.security.auth.callback.CallbackHandler {
-                public (arg0: javax.security.auth.callback.Callback[]): void
-            }
         }
     }
 }

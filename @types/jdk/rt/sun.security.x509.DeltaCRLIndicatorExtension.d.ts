@@ -6,7 +6,7 @@ declare namespace sun {
                 public constructor(arg0: int)
                 public constructor(arg0: java.math.BigInteger)
                 public constructor(arg0: java.lang.Boolean | boolean, arg1: java.lang.Object)
-                public encode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public encode(arg0: java.io.OutputStream): void
                 public static class: java.lang.Class<any>
             }
         }

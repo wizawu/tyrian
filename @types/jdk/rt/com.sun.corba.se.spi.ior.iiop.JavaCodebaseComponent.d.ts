@@ -8,6 +8,9 @@ declare namespace com {
                             interface JavaCodebaseComponent extends com.sun.corba.se.spi.ior.TaggedComponent {
                                 getURLs(): string
                             }
+                            interface JavaCodebaseComponent$$Lambda extends com.sun.corba.se.spi.ior.TaggedComponent {
+                                (): string
+                            }
                         }
                     }
                 }

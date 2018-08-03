@@ -9,7 +9,7 @@ declare namespace sun {
                 protected getSubmenuBounds(arg0: java.awt.Rectangle, arg1: java.awt.Dimension): java.awt.Rectangle
                 protected updateSize(): void
                 protected resetMapping(): void
-                public addItem(arg0: java.awt.MenuItem | java.awt.MenuItem$$Lambda): void
+                public addItem(arg0: java.awt.MenuItem): void
                 public delItem(arg0: int): void
                 public reloadItems(arg0: java.util.Vector): void
                 protected isEventDisabled(arg0: sun.awt.X11.XEvent): boolean

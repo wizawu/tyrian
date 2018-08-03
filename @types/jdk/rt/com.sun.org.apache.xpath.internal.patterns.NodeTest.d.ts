@@ -24,7 +24,7 @@ declare namespace com {
                                 public setLocalName(arg0: java.lang.String | string): void
                                 public constructor(arg0: int, arg1: java.lang.String | string, arg2: java.lang.String | string)
                                 public constructor(arg0: int)
-                                public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda): boolean
+                                public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression): boolean
                                 public constructor()
                                 public initNodeTest(arg0: int): void
                                 public initNodeTest(arg0: int, arg1: java.lang.String | string, arg2: java.lang.String | string): void

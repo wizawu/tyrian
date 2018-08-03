@@ -32,9 +32,6 @@ declare namespace com {
                         public static selectAttributes(arg0: javax.naming.directory.Attributes, arg1: java.lang.String[]): javax.naming.directory.Attributes
                         public static class: java.lang.Class<any>
                     }
-                    class SearchFilter$$Lambda implements com.sun.jndi.toolkit.dir.AttrFilter {
-                        protected static debug: boolean
-                    }
                 }
             }
         }

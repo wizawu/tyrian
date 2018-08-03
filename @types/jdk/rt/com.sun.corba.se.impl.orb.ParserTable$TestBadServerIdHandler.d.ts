@@ -11,9 +11,6 @@ declare namespace com {
                             public handle(arg0: com.sun.corba.se.spi.ior.ObjectKey): void
                             public static class: java.lang.Class<any>
                         }
-                        class ParserTable$TestBadServerIdHandler$$Lambda implements com.sun.corba.se.impl.oa.poa.BadServerIdHandler {
-                            public constructor(arg0: com.sun.corba.se.impl.orb.ParserTable)
-                        }
                     }
                 }
             }

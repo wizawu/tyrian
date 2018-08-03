@@ -2,7 +2,7 @@ declare namespace javax {
     namespace swing {
         namespace text {
             class JTextComponent$AccessibleJTextComponent extends javax.swing.JComponent$AccessibleJComponent implements javax.accessibility.AccessibleText , javax.swing.event.CaretListener , javax.swing.event.DocumentListener , javax.accessibility.AccessibleAction , javax.accessibility.AccessibleEditableText , javax.accessibility.AccessibleExtendedText {
-                public constructor(arg0: javax.swing.text.JTextComponent | javax.swing.text.JTextComponent$$Lambda)
+                public constructor(arg0: javax.swing.text.JTextComponent)
                 public caretUpdate(arg0: javax.swing.event.CaretEvent): void
                 public insertUpdate(arg0: javax.swing.event.DocumentEvent): void
                 public removeUpdate(arg0: javax.swing.event.DocumentEvent): void

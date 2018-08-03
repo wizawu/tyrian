@@ -7,9 +7,6 @@ declare namespace sun {
                 public equals(arg0: java.lang.Object): boolean
                 public static class: java.lang.Class<any>
             }
-            class MultiResolutionCachedImage$ImageCacheKey$$Lambda implements sun.awt.image.ImageCache$PixelsKey {
-                public (): int
-            }
         }
     }
 }

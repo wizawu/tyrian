@@ -11,9 +11,6 @@ declare namespace com {
                                 public formatMessage(arg0: java.util.Locale, arg1: java.lang.String | string, arg2: java.lang.Object[]): string
                                 public static class: java.lang.Class<any>
                             }
-                            class XIncludeMessageFormatter$$Lambda implements com.sun.org.apache.xerces.internal.util.MessageFormatter {
-                                public static XINCLUDE_DOMAIN: string
-                            }
                         }
                     }
                 }

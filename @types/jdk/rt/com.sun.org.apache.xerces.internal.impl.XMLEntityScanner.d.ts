@@ -20,11 +20,11 @@ declare namespace com {
                                 protected fPropertyManager: com.sun.org.apache.xerces.internal.impl.PropertyManager
                                 protected xmlVersionSetExplicitly: boolean
                                 public constructor()
-                                public constructor(arg0: com.sun.org.apache.xerces.internal.impl.PropertyManager, arg1: com.sun.org.apache.xerces.internal.impl.XMLEntityManager | com.sun.org.apache.xerces.internal.impl.XMLEntityManager$$Lambda)
+                                public constructor(arg0: com.sun.org.apache.xerces.internal.impl.PropertyManager, arg1: com.sun.org.apache.xerces.internal.impl.XMLEntityManager)
                                 public setBufferSize(arg0: int): void
                                 public reset(arg0: com.sun.org.apache.xerces.internal.impl.PropertyManager): void
                                 public reset(arg0: com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager): void
-                                public reset(arg0: com.sun.org.apache.xerces.internal.util.SymbolTable, arg1: com.sun.org.apache.xerces.internal.impl.XMLEntityManager | com.sun.org.apache.xerces.internal.impl.XMLEntityManager$$Lambda, arg2: com.sun.org.apache.xerces.internal.impl.XMLErrorReporter): void
+                                public reset(arg0: com.sun.org.apache.xerces.internal.util.SymbolTable, arg1: com.sun.org.apache.xerces.internal.impl.XMLEntityManager, arg2: com.sun.org.apache.xerces.internal.impl.XMLErrorReporter): void
                                 public getXMLVersion(): string
                                 public setXMLVersion(arg0: java.lang.String | string): void
                                 public setCurrentEntity(arg0: com.sun.xml.internal.stream.Entity$ScannedEntity): void

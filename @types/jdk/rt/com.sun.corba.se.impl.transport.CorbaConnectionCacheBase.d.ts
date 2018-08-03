@@ -27,9 +27,6 @@ declare namespace com {
                             protected dprint(arg0: java.lang.String | string): void
                             public static class: java.lang.Class<any>
                         }
-                        abstract class CorbaConnectionCacheBase$$Lambda implements com.sun.corba.se.pept.transport.ConnectionCache , com.sun.corba.se.spi.transport.CorbaConnectionCache {
-                            protected orb: com.sun.corba.se.spi.orb.ORB
-                        }
                     }
                 }
             }

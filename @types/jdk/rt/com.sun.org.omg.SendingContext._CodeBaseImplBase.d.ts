@@ -9,9 +9,6 @@ declare namespace com {
                         public _ids(): java.lang.String[]
                         public static class: java.lang.Class<any>
                     }
-                    abstract class _CodeBaseImplBase$$Lambda extends org.omg.CORBA.portable.ObjectImpl implements com.sun.org.omg.SendingContext.CodeBase , org.omg.CORBA.portable.InvokeHandler {
-                        public constructor()
-                    }
                 }
             }
         }

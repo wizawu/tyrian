@@ -31,7 +31,7 @@ declare namespace javax {
                     public uninstallingUI(): void
                     protected uninstallComboBoxModelListeners(arg0: javax.swing.ComboBoxModel): void
                     protected uninstallKeyboardActions(): void
-                    public constructor(arg0: javax.swing.JComboBox | javax.swing.JComboBox$$Lambda)
+                    public constructor(arg0: javax.swing.JComboBox)
                     protected firePopupMenuWillBecomeVisible(): void
                     protected firePopupMenuWillBecomeInvisible(): void
                     protected firePopupMenuCanceled(): void

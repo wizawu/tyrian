@@ -21,10 +21,10 @@ declare namespace com {
                                     public getInput(): java.io.InputStream
                                     public getOutput(): java.io.OutputStream
                                     public getWebServiceContextDelegate(): com.sun.xml.internal.ws.api.server.WebServiceContextDelegate
-                                    public getUserPrincipal(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda): java.security.Principal
-                                    public isUserInRole(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda, arg1: java.lang.String | string): boolean
-                                    public getEPRAddress(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda, arg1: com.sun.xml.internal.ws.api.server.WSEndpoint): string
-                                    public getWSDLAddress(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda, arg1: com.sun.xml.internal.ws.api.server.WSEndpoint): string
+                                    public getUserPrincipal(arg0: com.sun.xml.internal.ws.api.message.Packet): java.security.Principal
+                                    public isUserInRole(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: java.lang.String | string): boolean
+                                    public getEPRAddress(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: com.sun.xml.internal.ws.api.server.WSEndpoint): string
+                                    public getWSDLAddress(arg0: com.sun.xml.internal.ws.api.message.Packet, arg1: com.sun.xml.internal.ws.api.server.WSEndpoint): string
                                     public isSecure(): boolean
                                     public getRequestMethod(): string
                                     public getQueryString(): string

@@ -9,9 +9,6 @@ declare namespace com {
                     public run(): void
                     public static class: java.lang.Class<any>
                 }
-                class SoftAudioPusher$$Lambda implements java.lang.Runnable {
-                    public constructor(arg0: javax.sound.sampled.SourceDataLine, arg1: javax.sound.sampled.AudioInputStream, arg2: int)
-                }
             }
         }
     }

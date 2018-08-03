@@ -17,9 +17,6 @@ declare namespace com {
                                     public toString(): string
                                     public static class: java.lang.Class<any>
                                 }
-                                abstract class LeafInfoImpl$$Lambda<TypeT, ClassDeclT> implements com.sun.xml.internal.bind.v2.model.core.LeafInfo<TypeT, ClassDeclT> , com.sun.xml.internal.bind.v2.runtime.Location {
-                                    protected constructor(arg0: TypeT, arg1: javax.xml.namespace.QName)
-                                }
                             }
                         }
                     }

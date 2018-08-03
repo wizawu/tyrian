@@ -93,12 +93,12 @@ declare namespace javax {
             public updateUI(): void
             protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object, arg2: int): void
             public setLayout(arg0: java.awt.LayoutManager): void
-            public addChangeListener(arg0: javax.swing.event.ChangeListener): void
-            public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
+            public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+            public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
             public getChangeListeners(): javax.swing.event.ChangeListener[]
             protected fireStateChanged(): void
-            public addActionListener(arg0: java.awt.event.ActionListener): void
-            public removeActionListener(arg0: java.awt.event.ActionListener): void
+            public addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
+            public removeActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
             public getActionListeners(): java.awt.event.ActionListener[]
             protected createChangeListener(): javax.swing.event.ChangeListener
             protected fireActionPerformed(arg0: java.awt.event.ActionEvent): void
@@ -108,8 +108,8 @@ declare namespace javax {
             public setEnabled(arg0: boolean): void
             public getLabel(): string
             public setLabel(arg0: java.lang.String | string): void
-            public addItemListener(arg0: java.awt.event.ItemListener): void
-            public removeItemListener(arg0: java.awt.event.ItemListener): void
+            public addItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): void
+            public removeItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$Lambda): void
             public getItemListeners(): java.awt.event.ItemListener[]
             public getSelectedObjects(): java.lang.Object[]
             protected init(arg0: java.lang.String | string, arg1: javax.swing.Icon): void

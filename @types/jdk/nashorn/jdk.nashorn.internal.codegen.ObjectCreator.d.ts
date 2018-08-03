@@ -16,9 +16,6 @@ declare namespace jdk {
                     protected loadValue(arg0: T, arg1: jdk.nashorn.internal.codegen.types.Type): void
                     public static class: java.lang.Class<any>
                 }
-                abstract class ObjectCreator$$Lambda<T> implements jdk.nashorn.internal.codegen.CodeGenerator$SplitLiteralCreator {
-                    protected propertyMap: jdk.nashorn.internal.runtime.PropertyMap
-                }
             }
         }
     }

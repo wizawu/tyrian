@@ -10,9 +10,6 @@ declare namespace sun {
                     public close(): void
                     public static class: java.lang.Class<any>
                 }
-                abstract class NetClient$$Lambda implements java.lang.AutoCloseable {
-                    public constructor()
-                }
             }
         }
     }

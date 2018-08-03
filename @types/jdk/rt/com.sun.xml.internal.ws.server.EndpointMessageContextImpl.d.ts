@@ -5,7 +5,7 @@ declare namespace com {
                 namespace ws {
                     namespace server {
                         class EndpointMessageContextImpl extends java.util.AbstractMap<java.lang.String, java.lang.Object> implements javax.xml.ws.handler.MessageContext {
-                            public constructor(arg0: com.sun.xml.internal.ws.api.message.Packet | com.sun.xml.internal.ws.api.message.Packet$$Lambda)
+                            public constructor(arg0: com.sun.xml.internal.ws.api.message.Packet)
                             public get(arg0: java.lang.Object): java.lang.Object
                             public put(arg0: java.lang.String | string, arg1: java.lang.Object): java.lang.Object
                             public remove(arg0: java.lang.Object): java.lang.Object

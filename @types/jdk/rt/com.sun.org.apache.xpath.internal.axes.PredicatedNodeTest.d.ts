@@ -28,10 +28,10 @@ declare namespace com {
                                 protected nodeToString(arg0: int): string
                                 public acceptNode(arg0: int): short
                                 public getLocPathIterator(): com.sun.org.apache.xpath.internal.axes.LocPathIterator
-                                public setLocPathIterator(arg0: com.sun.org.apache.xpath.internal.axes.LocPathIterator | com.sun.org.apache.xpath.internal.axes.LocPathIterator$$Lambda): void
+                                public setLocPathIterator(arg0: com.sun.org.apache.xpath.internal.axes.LocPathIterator): void
                                 public canTraverseOutsideSubtree(): boolean
                                 public callPredicateVisitors(arg0: com.sun.org.apache.xpath.internal.XPathVisitor): void
-                                public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda): boolean
+                                public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression): boolean
                                 public static class: java.lang.Class<any>
                             }
                         }

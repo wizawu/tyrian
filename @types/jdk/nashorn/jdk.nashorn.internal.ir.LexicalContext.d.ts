@@ -7,7 +7,7 @@ declare namespace jdk {
                     public setFlag(arg0: jdk.nashorn.internal.ir.LexicalContextNode | jdk.nashorn.internal.ir.LexicalContextNode$$Lambda, arg1: int): void
                     public setBlockNeedsScope(arg0: jdk.nashorn.internal.ir.Block): void
                     public getFlags(arg0: jdk.nashorn.internal.ir.LexicalContextNode | jdk.nashorn.internal.ir.LexicalContextNode$$Lambda): int
-                    public getFunctionBody(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.Block
+                    public getFunctionBody(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.Block
                     public getAllNodes(): java.util.Iterator<jdk.nashorn.internal.ir.LexicalContextNode>
                     public getOutermostFunction(): jdk.nashorn.internal.ir.FunctionNode
                     public push<T extends jdk.nashorn.internal.ir.LexicalContextNode>(arg0: T): T
@@ -31,7 +31,7 @@ declare namespace jdk {
                     public getDefiningFunction<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: jdk.nashorn.internal.ir.Symbol): jdk.nashorn.internal.ir.FunctionNode
                     public isFunctionBody<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): boolean
                     public isSplitBody<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): boolean
-                    public getParentFunction<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): jdk.nashorn.internal.ir.FunctionNode
+                    public getParentFunction<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: jdk.nashorn.internal.ir.FunctionNode): jdk.nashorn.internal.ir.FunctionNode
                     public getScopeNestingLevelTo<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: jdk.nashorn.internal.ir.LexicalContextNode | jdk.nashorn.internal.ir.LexicalContextNode$$Lambda): int
                     public inLoop<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): boolean
                     public getCurrentLoop<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): jdk.nashorn.internal.ir.LoopNode
@@ -40,7 +40,7 @@ declare namespace jdk {
                     public getInlinedFinally<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: java.lang.String | string): jdk.nashorn.internal.ir.Block
                     public getTryNodeForInlinedFinally<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: java.lang.String | string): jdk.nashorn.internal.ir.TryNode
                     public findLabel<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: java.lang.String | string): jdk.nashorn.internal.ir.LabelNode
-                    public isExternalTarget<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: jdk.nashorn.internal.ir.SplitNode | jdk.nashorn.internal.ir.SplitNode$$Lambda, arg1: jdk.nashorn.internal.ir.BreakableNode): boolean
+                    public isExternalTarget<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(arg0: jdk.nashorn.internal.ir.SplitNode, arg1: jdk.nashorn.internal.ir.BreakableNode): boolean
                     public inUnprotectedSwitchContext<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): boolean
                     public toString<T extends jdk.nashorn.internal.ir.LexicalContextNode & jdk.nashorn.internal.ir.Flags<T>>(): string
                     public static class: java.lang.Class<any>

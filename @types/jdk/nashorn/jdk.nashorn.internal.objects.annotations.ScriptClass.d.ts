@@ -6,6 +6,9 @@ declare namespace jdk {
                     interface ScriptClass extends java.lang.annotation.Annotation {
                         value(): string
                     }
+                    interface ScriptClass$$Lambda extends java.lang.annotation.Annotation {
+                        (): string
+                    }
                 }
             }
         }

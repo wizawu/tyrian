@@ -24,10 +24,10 @@ declare namespace com {
                                     public static decode(arg0: java.lang.String | string): byte[]
                                     protected static getBytesInternal(arg0: java.lang.String | string, arg1: byte[]): int
                                     protected static decodeInternal(arg0: byte[], arg1: int): byte[]
-                                    public static decode(arg0: java.lang.String | string, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): void
-                                    public static decode(arg0: byte[], arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): void
-                                    protected static decode(arg0: byte[], arg1: java.io.OutputStream | java.io.OutputStream$$Lambda, arg2: int): void
-                                    public static decode(arg0: java.io.InputStream, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                                    public static decode(arg0: java.lang.String | string, arg1: java.io.OutputStream): void
+                                    public static decode(arg0: byte[], arg1: java.io.OutputStream): void
+                                    protected static decode(arg0: byte[], arg1: java.io.OutputStream, arg2: int): void
+                                    public static decode(arg0: java.io.InputStream, arg1: java.io.OutputStream): void
                                     protected static removeWhiteSpace(arg0: byte[]): int
                                     public static class: java.lang.Class<any>
                                 }

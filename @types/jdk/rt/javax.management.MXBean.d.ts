@@ -3,5 +3,8 @@ declare namespace javax {
         interface MXBean extends java.lang.annotation.Annotation {
             value(): boolean
         }
+        interface MXBean$$Lambda extends java.lang.annotation.Annotation {
+            (): boolean
+        }
     }
 }

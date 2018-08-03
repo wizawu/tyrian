@@ -22,8 +22,8 @@ declare namespace sun {
                 public constructor(arg0: java.io.InputStream)
                 public constructor(arg0: sun.security.x509.X509CertInfo)
                 public constructor(arg0: sun.security.util.DerValue)
-                public encode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
-                public derEncode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public encode(arg0: java.io.OutputStream): void
+                public derEncode(arg0: java.io.OutputStream): void
                 public getEncoded(): byte[]
                 public getEncodedInternal(): byte[]
                 public verify(arg0: java.security.PublicKey): void
@@ -95,9 +95,6 @@ declare namespace sun {
                 public getFingerprint(arg0: java.lang.String | string): string
                 public static getFingerprint(arg0: java.lang.String | string, arg1: java.security.cert.X509Certificate): string
                 public static class: java.lang.Class<any>
-            }
-            class X509CertImpl$$Lambda extends java.security.cert.X509Certificate implements sun.security.util.DerEncoder {
-                public static NAME: string
             }
         }
     }

@@ -74,7 +74,7 @@ declare namespace javax {
             public isAcceptAllFileFilterUsed(): boolean
             public setAcceptAllFileFilterUsed(arg0: boolean): void
             public getAccessory(): javax.swing.JComponent
-            public setAccessory(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+            public setAccessory(arg0: javax.swing.JComponent): void
             public setFileSelectionMode(arg0: int): void
             public getFileSelectionMode(): int
             public isFileSelectionEnabled(): boolean
@@ -97,8 +97,8 @@ declare namespace javax {
             public getFileSystemView(): javax.swing.filechooser.FileSystemView
             public approveSelection(): void
             public cancelSelection(): void
-            public addActionListener(arg0: java.awt.event.ActionListener): void
-            public removeActionListener(arg0: java.awt.event.ActionListener): void
+            public addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
+            public removeActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda): void
             public getActionListeners(): java.awt.event.ActionListener[]
             protected fireActionPerformed(arg0: java.lang.String | string): void
             public updateUI(): void
@@ -107,9 +107,6 @@ declare namespace javax {
             protected paramString(): string
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public static class: java.lang.Class<any>
-        }
-        class JFileChooser$$Lambda extends javax.swing.JComponent implements javax.accessibility.Accessible {
-            public static OPEN_DIALOG: int
         }
     }
 }

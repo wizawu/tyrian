@@ -7,7 +7,7 @@ declare namespace sun {
                 public parseName(arg0: java.lang.String | string): void
                 public getType(): int
                 public getName(): string
-                public encode(arg0: sun.security.util.DerOutputStream | sun.security.util.DerOutputStream$$Lambda): void
+                public encode(arg0: sun.security.util.DerOutputStream): void
                 public toString(): string
                 public equals(arg0: java.lang.Object): boolean
                 public hashCode(): int

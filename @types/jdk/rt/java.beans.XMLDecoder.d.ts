@@ -15,8 +15,5 @@ declare namespace java {
             public static createHandler(arg0: java.lang.Object, arg1: java.beans.ExceptionListener | java.beans.ExceptionListener$$Lambda, arg2: java.lang.ClassLoader): org.xml.sax.helpers.DefaultHandler
             public static class: java.lang.Class<any>
         }
-        class XMLDecoder$$Lambda implements java.lang.AutoCloseable {
-            public constructor(arg0: java.io.InputStream)
-        }
     }
 }

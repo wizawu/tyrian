@@ -5,9 +5,6 @@ declare namespace java {
                 public activate(): void
                 public static class: java.lang.Class<any>
             }
-            class ICC_Profile$1$$Lambda implements sun.java2d.cmm.ProfileActivator {
-                public (): void
-            }
         }
     }
 }

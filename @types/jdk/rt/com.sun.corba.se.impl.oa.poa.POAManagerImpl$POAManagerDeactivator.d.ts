@@ -9,9 +9,6 @@ declare namespace com {
                                 public run(): void
                                 public static class: java.lang.Class<any>
                             }
-                            class POAManagerImpl$POAManagerDeactivator$$Lambda implements java.lang.Runnable {
-                                public (): void
-                            }
                         }
                     }
                 }

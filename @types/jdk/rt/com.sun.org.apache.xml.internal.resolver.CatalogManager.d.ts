@@ -9,7 +9,7 @@ declare namespace com {
                                 public debug: com.sun.org.apache.xml.internal.resolver.helpers.Debug
                                 public constructor()
                                 public constructor(arg0: java.lang.String | string)
-                                public setBootstrapResolver(arg0: com.sun.org.apache.xml.internal.resolver.helpers.BootstrapResolver | com.sun.org.apache.xml.internal.resolver.helpers.BootstrapResolver$$Lambda): void
+                                public setBootstrapResolver(arg0: com.sun.org.apache.xml.internal.resolver.helpers.BootstrapResolver): void
                                 public getBootstrapResolver(): com.sun.org.apache.xml.internal.resolver.helpers.BootstrapResolver
                                 public static getStaticManager(): com.sun.org.apache.xml.internal.resolver.CatalogManager
                                 public getIgnoreMissingProperties(): boolean

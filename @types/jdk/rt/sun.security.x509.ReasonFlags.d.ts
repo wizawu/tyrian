@@ -21,7 +21,7 @@ declare namespace sun {
                 public get(arg0: java.lang.String | string): java.lang.Object
                 public delete(arg0: java.lang.String | string): void
                 public toString(): string
-                public encode(arg0: sun.security.util.DerOutputStream | sun.security.util.DerOutputStream$$Lambda): void
+                public encode(arg0: sun.security.util.DerOutputStream): void
                 public getElements(): java.util.Enumeration<java.lang.String>
                 public static class: java.lang.Class<any>
             }

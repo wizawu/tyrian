@@ -2,8 +2,8 @@ declare namespace java {
     namespace awt {
         class Window extends java.awt.Container implements javax.accessibility.Accessible {
             public constructor(arg0: java.awt.Frame)
-            public constructor(arg0: java.awt.Window | java.awt.Window$$Lambda)
-            public constructor(arg0: java.awt.Window | java.awt.Window$$Lambda, arg1: java.awt.GraphicsConfiguration)
+            public constructor(arg0: java.awt.Window)
+            public constructor(arg0: java.awt.Window, arg1: java.awt.GraphicsConfiguration)
             public getIconImages(): java.util.List<java.awt.Image>
             public setIconImages(arg0: java.util.List<java.awt.Image>): void
             public setIconImage(arg0: java.awt.Image): void
@@ -34,10 +34,10 @@ declare namespace java {
             public setModalExclusionType(arg0: java.awt.Dialog$ModalExclusionType): void
             public getModalExclusionType(): java.awt.Dialog$ModalExclusionType
             public addWindowListener(arg0: java.awt.event.WindowListener): void
-            public addWindowStateListener(arg0: java.awt.event.WindowStateListener): void
+            public addWindowStateListener(arg0: java.awt.event.WindowStateListener | java.awt.event.WindowStateListener$$Lambda): void
             public addWindowFocusListener(arg0: java.awt.event.WindowFocusListener): void
             public removeWindowListener(arg0: java.awt.event.WindowListener): void
-            public removeWindowStateListener(arg0: java.awt.event.WindowStateListener): void
+            public removeWindowStateListener(arg0: java.awt.event.WindowStateListener | java.awt.event.WindowStateListener$$Lambda): void
             public removeWindowFocusListener(arg0: java.awt.event.WindowFocusListener): void
             public getWindowListeners(): java.awt.event.WindowListener[]
             public getWindowFocusListeners(): java.awt.event.WindowFocusListener[]
@@ -63,8 +63,8 @@ declare namespace java {
             public setFocusableWindowState<T extends java.util.EventListener>(arg0: boolean): void
             public setAutoRequestFocus<T extends java.util.EventListener>(arg0: boolean): void
             public isAutoRequestFocus<T extends java.util.EventListener>(): boolean
-            public addPropertyChangeListener<T extends java.util.EventListener>(arg0: java.beans.PropertyChangeListener): void
-            public addPropertyChangeListener<T extends java.util.EventListener>(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener): void
+            public addPropertyChangeListener<T extends java.util.EventListener>(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            public addPropertyChangeListener<T extends java.util.EventListener>(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
             public isValidateRoot<T extends java.util.EventListener>(): boolean
             public postEvent<T extends java.util.EventListener>(arg0: java.awt.Event): boolean
             public isShowing<T extends java.util.EventListener>(): boolean
@@ -90,9 +90,6 @@ declare namespace java {
             public isOpaque<T extends java.util.EventListener>(): boolean
             public paint<T extends java.util.EventListener>(arg0: java.awt.Graphics): void
             public static class: java.lang.Class<any>
-        }
-        class Window$$Lambda extends java.awt.Container implements javax.accessibility.Accessible {
-            public constructor(arg0: java.awt.Frame)
         }
     }
 }

@@ -7,8 +7,5 @@ declare namespace java {
             public scheduledExecutionTime(): long
             public static class: java.lang.Class<any>
         }
-        abstract class TimerTask$$Lambda implements java.lang.Runnable {
-            protected constructor()
-        }
     }
 }

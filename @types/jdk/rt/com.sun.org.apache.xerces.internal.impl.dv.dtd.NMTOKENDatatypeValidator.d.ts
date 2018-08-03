@@ -12,9 +12,6 @@ declare namespace com {
                                         public validate(arg0: java.lang.String | string, arg1: com.sun.org.apache.xerces.internal.impl.dv.ValidationContext): void
                                         public static class: java.lang.Class<any>
                                     }
-                                    class NMTOKENDatatypeValidator$$Lambda implements com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator {
-                                        public constructor()
-                                    }
                                 }
                             }
                         }

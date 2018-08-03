@@ -6,6 +6,9 @@ declare namespace java {
                 NO_SUCH_PAGE: int
                 print(arg0: java.awt.Graphics, arg1: java.awt.print.PageFormat, arg2: int): int
             }
+            interface Printable$$Lambda {
+                PAGE_EXISTS: int
+            }
         }
     }
 }

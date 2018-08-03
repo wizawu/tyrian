@@ -10,7 +10,7 @@ declare namespace com {
                             protected unselectedTabShadow: java.awt.Color
                             protected unselectedTabHighlight: java.awt.Color
                             public constructor()
-                            public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
+                            public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
                             protected installDefaults(): void
                             protected uninstallDefaults(): void
                             protected paintContentBorderTopEdge(arg0: java.awt.Graphics, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int): void

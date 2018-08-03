@@ -27,8 +27,8 @@ declare namespace sun {
             public init(): void
             public minimumSize(): java.awt.Dimension
             public preferredSize(): java.awt.Dimension
-            public addAppletListener(arg0: sun.applet.AppletListener): void
-            public removeAppletListener(arg0: sun.applet.AppletListener): void
+            public addAppletListener(arg0: sun.applet.AppletListener | sun.applet.AppletListener$$Lambda): void
+            public removeAppletListener(arg0: sun.applet.AppletListener | sun.applet.AppletListener$$Lambda): void
             public dispatchAppletEvent(arg0: int, arg1: java.lang.Object): void
             public sendEvent(arg0: int): void
             public run(): void
@@ -59,9 +59,6 @@ declare namespace sun {
             protected isJDK11Applet(): boolean
             protected isJDK12Applet(): boolean
             public static class: java.lang.Class<any>
-        }
-        abstract class AppletPanel$$Lambda extends java.awt.Panel implements java.applet.AppletStub , java.lang.Runnable {
-            protected doInit: boolean
         }
     }
 }

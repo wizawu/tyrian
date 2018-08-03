@@ -11,9 +11,6 @@ declare namespace com {
                     public static createTypeNameAttr(arg0: java.lang.Class<any>): javax.naming.directory.Attribute
                     public static class: java.lang.Class<any>
                 }
-                class LdapCtxFactory$$Lambda implements javax.naming.spi.ObjectFactory , javax.naming.spi.InitialContextFactory {
-                    public static ADDRESS_TYPE: string
-                }
             }
         }
     }

@@ -24,8 +24,8 @@ declare namespace com {
                                 public asDocumentHandler(): org.xml.sax.DocumentHandler
                                 public asContentHandler(): org.xml.sax.ContentHandler
                                 public asDOMSerializer(): com.sun.org.apache.xml.internal.serialize.DOMSerializer
-                                public setOutputByteStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
-                                public setOutputCharStream(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+                                public setOutputByteStream(arg0: java.io.OutputStream): void
+                                public setOutputCharStream(arg0: java.io.Writer): void
                                 public setOutputFormat(arg0: com.sun.org.apache.xml.internal.serialize.OutputFormat): void
                                 public reset(): boolean
                                 protected prepare(): void

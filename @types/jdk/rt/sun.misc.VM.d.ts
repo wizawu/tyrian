@@ -6,7 +6,7 @@ declare namespace sun {
             public static STATE_RED: int
             public constructor()
             public static threadsSuspended(): boolean
-            public static allowThreadSuspension(arg0: java.lang.ThreadGroup | java.lang.ThreadGroup$$Lambda, arg1: boolean): boolean
+            public static allowThreadSuspension(arg0: java.lang.ThreadGroup, arg1: boolean): boolean
             public static suspendThreads(): boolean
             public static unsuspendThreads(): void
             public static unsuspendSomeThreads(): void

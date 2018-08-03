@@ -14,7 +14,7 @@ declare namespace sun {
             maximumSizeChanged(arg0: int, arg1: int): void
             minimumSizeChanged(arg0: int, arg1: int): void
             setCursor(arg0: java.awt.Cursor): void
-            createDragGestureRecognizer<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.Class<T>, arg1: java.awt.dnd.DragSource, arg2: java.awt.Component, arg3: int, arg4: java.awt.dnd.DragGestureListener): T
+            createDragGestureRecognizer<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.Class<T>, arg1: java.awt.dnd.DragSource, arg2: java.awt.Component, arg3: int, arg4: java.awt.dnd.DragGestureListener | java.awt.dnd.DragGestureListener$$Lambda): T
             createDragSourceContextPeer<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.dnd.DragGestureEvent): java.awt.dnd.peer.DragSourceContextPeer
             addDropTarget<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.dnd.DropTarget): void
             removeDropTarget<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.dnd.DropTarget): void

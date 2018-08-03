@@ -67,8 +67,5 @@ declare namespace java {
             public isMemberClass<U>(): boolean
             public static class: java.lang.Class<any>
         }
-        class Class$$Lambda<T> implements java.io.Serializable , java.lang.reflect.GenericDeclaration , java.lang.reflect.Type {
-            public static (arg0: java.lang.String | string): java.lang.Class<any>
-        }
     }
 }

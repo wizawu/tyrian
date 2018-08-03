@@ -10,9 +10,6 @@ declare namespace javax {
                     public handleEvent(arg0: javax.xml.bind.ValidationEvent): boolean
                     public static class: java.lang.Class<any>
                 }
-                class ValidationEventCollector$$Lambda implements javax.xml.bind.ValidationEventHandler {
-                    public constructor()
-                }
             }
         }
     }

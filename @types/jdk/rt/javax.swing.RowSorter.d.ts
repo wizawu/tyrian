@@ -16,8 +16,8 @@ declare namespace javax {
             public rowsDeleted(arg0: int, arg1: int): void
             public rowsUpdated(arg0: int, arg1: int): void
             public rowsUpdated(arg0: int, arg1: int, arg2: int): void
-            public addRowSorterListener(arg0: javax.swing.event.RowSorterListener): void
-            public removeRowSorterListener(arg0: javax.swing.event.RowSorterListener): void
+            public addRowSorterListener(arg0: javax.swing.event.RowSorterListener | javax.swing.event.RowSorterListener$$Lambda): void
+            public removeRowSorterListener(arg0: javax.swing.event.RowSorterListener | javax.swing.event.RowSorterListener$$Lambda): void
             protected fireSortOrderChanged(): void
             protected fireRowSorterChanged(arg0: int[]): void
             public static class: java.lang.Class<any>

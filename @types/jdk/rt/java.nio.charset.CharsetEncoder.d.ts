@@ -17,13 +17,13 @@ declare namespace java {
                 protected implOnUnmappableCharacter(arg0: java.nio.charset.CodingErrorAction): void
                 public averageBytesPerChar(): float
                 public maxBytesPerChar(): float
-                public encode(arg0: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda, arg1: java.nio.ByteBuffer, arg2: boolean): java.nio.charset.CoderResult
+                public encode(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer, arg2: boolean): java.nio.charset.CoderResult
                 public flush(arg0: java.nio.ByteBuffer): java.nio.charset.CoderResult
                 protected implFlush(arg0: java.nio.ByteBuffer): java.nio.charset.CoderResult
                 public reset(): java.nio.charset.CharsetEncoder
                 protected implReset(): void
-                protected encodeLoop(arg0: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
-                public encode(arg0: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda): java.nio.ByteBuffer
+                protected encodeLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
+                public encode(arg0: java.nio.CharBuffer): java.nio.ByteBuffer
                 public canEncode(arg0: char): boolean
                 public canEncode(arg0: java.lang.CharSequence): boolean
                 public static class: java.lang.Class<any>

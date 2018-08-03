@@ -62,8 +62,8 @@ declare namespace javax {
             public getGraphics(): java.awt.Graphics
             public setDebugGraphicsOptions(arg0: int): void
             public getDebugGraphicsOptions(): int
-            public registerKeyboardAction(arg0: java.awt.event.ActionListener, arg1: java.lang.String | string, arg2: javax.swing.KeyStroke, arg3: int): void
-            public registerKeyboardAction(arg0: java.awt.event.ActionListener, arg1: javax.swing.KeyStroke, arg2: int): void
+            public registerKeyboardAction(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda, arg1: java.lang.String | string, arg2: javax.swing.KeyStroke, arg3: int): void
+            public registerKeyboardAction(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda, arg1: javax.swing.KeyStroke, arg2: int): void
             public unregisterKeyboardAction(arg0: javax.swing.KeyStroke): void
             public getRegisteredKeyStrokes(): javax.swing.KeyStroke[]
             public getConditionForKeyStroke(arg0: javax.swing.KeyStroke): int
@@ -122,8 +122,8 @@ declare namespace javax {
             public firePropertyChange(arg0: java.lang.String | string, arg1: int, arg2: int): void
             public firePropertyChange(arg0: java.lang.String | string, arg1: char, arg2: char): void
             protected fireVetoableChange(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: java.lang.Object): void
-            public addVetoableChangeListener(arg0: java.beans.VetoableChangeListener): void
-            public removeVetoableChangeListener(arg0: java.beans.VetoableChangeListener): void
+            public addVetoableChangeListener(arg0: java.beans.VetoableChangeListener | java.beans.VetoableChangeListener$$Lambda): void
+            public removeVetoableChangeListener(arg0: java.beans.VetoableChangeListener | java.beans.VetoableChangeListener$$Lambda): void
             public getVetoableChangeListeners(): java.beans.VetoableChangeListener[]
             public getTopLevelAncestor(): java.awt.Container
             public addAncestorListener(arg0: javax.swing.event.AncestorListener): void
@@ -146,9 +146,6 @@ declare namespace javax {
             protected paramString<T extends java.util.EventListener>(): string
             public hide<T extends java.util.EventListener>(): void
             public static class: java.lang.Class<any>
-        }
-        abstract class JComponent$$Lambda extends java.awt.Container implements java.io.Serializable , javax.swing.TransferHandler$HasGetTransferHandler {
-            protected ui: javax.swing.plaf.ComponentUI
         }
     }
 }

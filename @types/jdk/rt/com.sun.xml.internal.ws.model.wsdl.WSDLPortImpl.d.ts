@@ -12,7 +12,7 @@ declare namespace com {
                                 public getAddress(): com.sun.xml.internal.ws.api.EndpointAddress
                                 public getOwner(): com.sun.xml.internal.ws.api.model.wsdl.editable.EditableWSDLService
                                 public setAddress(arg0: com.sun.xml.internal.ws.api.EndpointAddress): void
-                                public setEPR(arg0: com.sun.xml.internal.ws.api.addressing.WSEndpointReference | com.sun.xml.internal.ws.api.addressing.WSEndpointReference$$Lambda): void
+                                public setEPR(arg0: com.sun.xml.internal.ws.api.addressing.WSEndpointReference): void
                                 public getEPR(): com.sun.xml.internal.ws.api.addressing.WSEndpointReference
                                 public getBinding(): com.sun.xml.internal.ws.api.model.wsdl.editable.EditableWSDLBoundPortType
                                 public freeze(arg0: com.sun.xml.internal.ws.api.model.wsdl.editable.EditableWSDLModel): void

@@ -3,7 +3,7 @@ declare namespace java {
         namespace stream {
             class Nodes$SpinedNodeBuilder<T> extends java.util.stream.SpinedBuffer<T> implements java.util.stream.Node<T> , java.util.stream.Node$Builder<T> {
                 public spliterator(): java.util.Spliterator<T>
-                public forEach(arg0: java.util.function$.Consumer$$TypeScript<T>): void
+                public forEach(arg0: java.util.function$.Consumer$$Lambda<T>): void
                 public begin(arg0: long): void
                 public accept(arg0: T): void
                 public end(): void

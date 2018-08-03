@@ -17,17 +17,17 @@ declare namespace com {
                                 protected static OBJECT_IDENTITY_CYCLE_DETECTION: string
                                 public constructor(arg0: com.sun.xml.internal.bind.v2.runtime.JAXBContextImpl, arg1: com.sun.xml.internal.bind.v2.runtime.AssociationMap)
                                 public getContext(): com.sun.xml.internal.bind.v2.runtime.JAXBContextImpl
-                                public marshal(arg0: java.lang.Object, arg1: java.io.OutputStream | java.io.OutputStream$$Lambda, arg2: javax.xml.namespace.NamespaceContext): void
+                                public marshal(arg0: java.lang.Object, arg1: java.io.OutputStream, arg2: javax.xml.namespace.NamespaceContext): void
                                 public marshal(arg0: java.lang.Object, arg1: javax.xml.stream.XMLStreamWriter): void
                                 public marshal(arg0: java.lang.Object, arg1: javax.xml.stream.XMLEventWriter): void
                                 public marshal(arg0: java.lang.Object, arg1: com.sun.xml.internal.bind.v2.runtime.output.XmlOutput): void
                                 public marshal(arg0: java.lang.Object, arg1: javax.xml.transform.Result): void
                                 protected write<T>(arg0: com.sun.xml.internal.bind.v2.runtime.Name, arg1: com.sun.xml.internal.bind.v2.runtime.JaxBeanInfo<T>, arg2: T, arg3: com.sun.xml.internal.bind.v2.runtime.output.XmlOutput, arg4: java.lang.Runnable | java.lang.Runnable$$Lambda): void
                                 protected createEscapeHandler(arg0: java.lang.String | string): com.sun.xml.internal.bind.marshaller.CharacterEscapeHandler
-                                public createWriter(arg0: java.io.Writer | java.io.Writer$$Lambda, arg1: java.lang.String | string): com.sun.xml.internal.bind.v2.runtime.output.XmlOutput
-                                public createWriter(arg0: java.io.Writer | java.io.Writer$$Lambda): com.sun.xml.internal.bind.v2.runtime.output.XmlOutput
-                                public createWriter(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): com.sun.xml.internal.bind.v2.runtime.output.XmlOutput
-                                public createWriter(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: java.lang.String | string): com.sun.xml.internal.bind.v2.runtime.output.XmlOutput
+                                public createWriter(arg0: java.io.Writer, arg1: java.lang.String | string): com.sun.xml.internal.bind.v2.runtime.output.XmlOutput
+                                public createWriter(arg0: java.io.Writer): com.sun.xml.internal.bind.v2.runtime.output.XmlOutput
+                                public createWriter(arg0: java.io.OutputStream): com.sun.xml.internal.bind.v2.runtime.output.XmlOutput
+                                public createWriter(arg0: java.io.OutputStream, arg1: java.lang.String | string): com.sun.xml.internal.bind.v2.runtime.output.XmlOutput
                                 public getProperty(arg0: java.lang.String | string): java.lang.Object
                                 public setProperty(arg0: java.lang.String | string, arg1: java.lang.Object): void
                                 public setAdapter<A extends javax.xml.bind.annotation.adapters.XmlAdapter>(arg0: java.lang.Class<A>, arg1: A): void
@@ -40,9 +40,6 @@ declare namespace com {
                                 public getListener<A extends javax.xml.bind.annotation.adapters.XmlAdapter>(): javax.xml.bind.Marshaller$Listener
                                 public setListener<A extends javax.xml.bind.annotation.adapters.XmlAdapter>(arg0: javax.xml.bind.Marshaller$Listener): void
                                 public static class: java.lang.Class<any>
-                            }
-                            class MarshallerImpl$$Lambda extends javax.xml.bind.helpers.AbstractMarshallerImpl implements javax.xml.bind.ValidationEventHandler {
-                                protected serializer: com.sun.xml.internal.bind.v2.runtime.XMLSerializer
                             }
                         }
                     }

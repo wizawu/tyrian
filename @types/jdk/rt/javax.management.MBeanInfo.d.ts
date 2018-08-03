@@ -16,8 +16,5 @@ declare namespace javax {
             public hashCode(): int
             public static class: java.lang.Class<any>
         }
-        class MBeanInfo$$Lambda implements java.lang.Cloneable , java.io.Serializable , javax.management.DescriptorRead {
-            public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.management.MBeanAttributeInfo[], arg3: javax.management.MBeanConstructorInfo[], arg4: javax.management.MBeanOperationInfo[], arg5: javax.management.MBeanNotificationInfo[])
-        }
     }
 }

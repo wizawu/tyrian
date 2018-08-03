@@ -1,7 +1,7 @@
 declare namespace java {
     namespace awt {
         class MenuItem$AccessibleAWTMenuItem extends java.awt.MenuComponent$AccessibleAWTMenuComponent implements javax.accessibility.AccessibleAction , javax.accessibility.AccessibleValue {
-            protected constructor(arg0: java.awt.MenuItem | java.awt.MenuItem$$Lambda)
+            protected constructor(arg0: java.awt.MenuItem)
             public getAccessibleName(): string
             public getAccessibleRole(): javax.accessibility.AccessibleRole
             public getAccessibleAction(): javax.accessibility.AccessibleAction

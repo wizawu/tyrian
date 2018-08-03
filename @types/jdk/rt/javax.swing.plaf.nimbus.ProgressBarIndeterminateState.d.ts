@@ -3,7 +3,7 @@ declare namespace javax {
         namespace plaf {
             namespace nimbus {
                 class ProgressBarIndeterminateState extends javax.swing.plaf.nimbus.State {
-                    protected isInState(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): boolean
+                    protected isInState(arg0: javax.swing.JComponent): boolean
                     public static class: java.lang.Class<any>
                 }
             }

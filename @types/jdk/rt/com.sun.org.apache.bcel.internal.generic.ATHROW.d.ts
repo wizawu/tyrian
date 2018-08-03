@@ -11,9 +11,6 @@ declare namespace com {
                                 public accept(arg0: com.sun.org.apache.bcel.internal.generic.Visitor): void
                                 public static class: java.lang.Class<any>
                             }
-                            class ATHROW$$Lambda extends com.sun.org.apache.bcel.internal.generic.Instruction implements com.sun.org.apache.bcel.internal.generic.UnconditionalBranch , com.sun.org.apache.bcel.internal.generic.ExceptionThrower {
-                                public constructor()
-                            }
                         }
                     }
                 }

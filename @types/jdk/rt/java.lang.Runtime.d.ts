@@ -3,8 +3,8 @@ declare namespace java {
         class Runtime {
             public static getRuntime(): java.lang.Runtime
             public exit(arg0: int): void
-            public addShutdownHook(arg0: java.lang.Thread | java.lang.Thread$$Lambda): void
-            public removeShutdownHook(arg0: java.lang.Thread | java.lang.Thread$$Lambda): boolean
+            public addShutdownHook(arg0: java.lang.Thread): void
+            public removeShutdownHook(arg0: java.lang.Thread): boolean
             public halt(arg0: int): void
             public static runFinalizersOnExit(arg0: boolean): void
             public exec(arg0: java.lang.String | string): java.lang.Process
@@ -24,7 +24,7 @@ declare namespace java {
             public load(arg0: java.lang.String | string): void
             public loadLibrary(arg0: java.lang.String | string): void
             public getLocalizedInputStream(arg0: java.io.InputStream): java.io.InputStream
-            public getLocalizedOutputStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): java.io.OutputStream
+            public getLocalizedOutputStream(arg0: java.io.OutputStream): java.io.OutputStream
             public static class: java.lang.Class<any>
         }
     }

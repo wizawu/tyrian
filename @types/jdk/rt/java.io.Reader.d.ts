@@ -4,7 +4,7 @@ declare namespace java {
             protected lock: java.lang.Object
             protected constructor()
             protected constructor(arg0: java.lang.Object)
-            public read(arg0: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda): int
+            public read(arg0: java.nio.CharBuffer): int
             public read(): int
             public read(arg0: char[]): int
             public read(arg0: char[], arg1: int, arg2: int): int

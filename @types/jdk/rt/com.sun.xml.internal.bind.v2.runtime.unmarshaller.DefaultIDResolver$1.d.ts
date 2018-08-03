@@ -10,9 +10,6 @@ declare namespace com {
                                     public call(): java.lang.Object
                                     public static class: java.lang.Class<any>
                                 }
-                                class DefaultIDResolver$1$$Lambda implements java.util.concurrent.Callable {
-                                    public (): java.lang.Object
-                                }
                             }
                         }
                     }

@@ -9,9 +9,6 @@ declare namespace sun {
                 public static getVersion(): short
                 public static class: java.lang.Class<any>
             }
-            abstract class JdpGenericPacket$$Lambda implements sun.management.jdp.JdpPacket {
-                protected constructor()
-            }
         }
     }
 }

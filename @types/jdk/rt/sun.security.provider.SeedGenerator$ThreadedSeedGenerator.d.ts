@@ -5,9 +5,6 @@ declare namespace sun {
                 public run(): void
                 public static class: java.lang.Class<any>
             }
-            class SeedGenerator$ThreadedSeedGenerator$$Lambda extends sun.security.provider.SeedGenerator implements java.lang.Runnable {
-                public (): void
-            }
         }
     }
 }

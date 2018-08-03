@@ -8,9 +8,6 @@ declare namespace com {
                     public hashCode(): int
                     public static class: java.lang.Class<any>
                 }
-                class DnsNameParser$$Lambda implements javax.naming.NameParser {
-                    public (arg0: java.lang.String | string): javax.naming.Name
-                }
             }
         }
     }

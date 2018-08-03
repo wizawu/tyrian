@@ -8,7 +8,7 @@ declare namespace jdk {
                     public hasCode(): boolean
                     public setUsed(): void
                     public getCode(): java.lang.Class<any>
-                    public isInitializing(arg0: jdk.nashorn.internal.runtime.RecompilableScriptFunctionData, arg1: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
+                    public isInitializing(arg0: jdk.nashorn.internal.runtime.RecompilableScriptFunctionData, arg1: jdk.nashorn.internal.ir.FunctionNode): boolean
                     public canHold(arg0: long): boolean
                     public getClassEmitter(): jdk.nashorn.internal.codegen.ClassEmitter
                     public getUnitClassName(): string

@@ -2,7 +2,7 @@ declare namespace java {
     namespace time {
         namespace zone {
             class ZoneOffsetTransitionRule implements java.io.Serializable {
-                public static of(arg0: java.time.Month | java.time.Month$$Lambda, arg1: int, arg2: java.time.DayOfWeek | java.time.DayOfWeek$$Lambda, arg3: java.time.LocalTime, arg4: boolean, arg5: java.time.zone.ZoneOffsetTransitionRule$TimeDefinition, arg6: java.time.ZoneOffset, arg7: java.time.ZoneOffset, arg8: java.time.ZoneOffset): java.time.zone.ZoneOffsetTransitionRule
+                public static of(arg0: java.time.Month, arg1: int, arg2: java.time.DayOfWeek, arg3: java.time.LocalTime, arg4: boolean, arg5: java.time.zone.ZoneOffsetTransitionRule$TimeDefinition, arg6: java.time.ZoneOffset, arg7: java.time.ZoneOffset, arg8: java.time.ZoneOffset): java.time.zone.ZoneOffsetTransitionRule
                 public getMonth(): java.time.Month
                 public getDayOfMonthIndicator(): int
                 public getDayOfWeek(): java.time.DayOfWeek

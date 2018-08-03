@@ -3,9 +3,9 @@ declare namespace sun {
         namespace cs {
             namespace ext {
                 interface DelegatableDecoder {
-                    decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda): java.nio.charset.CoderResult
+                    decodeLoop(arg0: java.nio.ByteBuffer, arg1: java.nio.CharBuffer): java.nio.charset.CoderResult
                     implReset(): void
-                    implFlush(arg0: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda): java.nio.charset.CoderResult
+                    implFlush(arg0: java.nio.CharBuffer): java.nio.charset.CoderResult
                 }
             }
         }

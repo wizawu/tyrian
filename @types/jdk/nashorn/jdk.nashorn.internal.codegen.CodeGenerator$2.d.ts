@@ -6,7 +6,7 @@ declare namespace jdk {
                     public enterIdentNode(arg0: jdk.nashorn.internal.ir.IdentNode): boolean
                     public enterAccessNode(arg0: jdk.nashorn.internal.ir.AccessNode): boolean
                     public enterIndexNode(arg0: jdk.nashorn.internal.ir.IndexNode): boolean
-                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode | jdk.nashorn.internal.ir.FunctionNode$$Lambda): boolean
+                    public enterFunctionNode(arg0: jdk.nashorn.internal.ir.FunctionNode): boolean
                     public enterASSIGN(arg0: jdk.nashorn.internal.ir.BinaryNode): boolean
                     public enterASSIGN_ADD(arg0: jdk.nashorn.internal.ir.BinaryNode): boolean
                     public enterASSIGN_BIT_AND(arg0: jdk.nashorn.internal.ir.BinaryNode): boolean
@@ -20,7 +20,7 @@ declare namespace jdk {
                     public enterASSIGN_SHR(arg0: jdk.nashorn.internal.ir.BinaryNode): boolean
                     public enterASSIGN_SUB(arg0: jdk.nashorn.internal.ir.BinaryNode): boolean
                     public enterCallNode(arg0: jdk.nashorn.internal.ir.CallNode): boolean
-                    public enterLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode<any> | jdk.nashorn.internal.ir.LiteralNode$$Lambda<any>): boolean
+                    public enterLiteralNode(arg0: jdk.nashorn.internal.ir.LiteralNode<any>): boolean
                     public enterTernaryNode(arg0: jdk.nashorn.internal.ir.TernaryNode): boolean
                     public enterADD(arg0: jdk.nashorn.internal.ir.BinaryNode): boolean
                     public enterSUB(arg0: jdk.nashorn.internal.ir.UnaryNode): boolean
@@ -50,7 +50,7 @@ declare namespace jdk {
                     public enterLT(arg0: jdk.nashorn.internal.ir.BinaryNode): boolean
                     public enterNE(arg0: jdk.nashorn.internal.ir.BinaryNode): boolean
                     public enterNE_STRICT(arg0: jdk.nashorn.internal.ir.BinaryNode): boolean
-                    public enterObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode | jdk.nashorn.internal.ir.ObjectNode$$Lambda): boolean
+                    public enterObjectNode(arg0: jdk.nashorn.internal.ir.ObjectNode): boolean
                     public enterRuntimeNode(arg0: jdk.nashorn.internal.ir.RuntimeNode): boolean
                     public enterNEW(arg0: jdk.nashorn.internal.ir.UnaryNode): boolean
                     public enterDECINC(arg0: jdk.nashorn.internal.ir.UnaryNode): boolean

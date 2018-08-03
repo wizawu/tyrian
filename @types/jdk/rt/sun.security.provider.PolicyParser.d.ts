@@ -18,7 +18,7 @@ declare namespace sun {
                 public setStorePassURL(arg0: java.lang.String | string): void
                 public grantElements(): java.util.Enumeration<sun.security.provider.PolicyParser$GrantEntry>
                 public getDomainEntries(): java.util.Collection<sun.security.provider.PolicyParser$DomainEntry>
-                public write(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+                public write(arg0: java.io.Writer): void
                 public static main(arg0: java.lang.String[]): void
                 public static class: java.lang.Class<any>
             }

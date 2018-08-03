@@ -12,9 +12,6 @@ declare namespace com {
                                 public getBoundOperation(): com.sun.xml.internal.ws.api.model.wsdl.WSDLBoundOperation
                                 public static class: java.lang.Class<any>
                             }
-                            class WSDLBoundFaultContainer$$Lambda implements com.sun.xml.internal.ws.api.model.wsdl.WSDLObject {
-                                public constructor(arg0: com.sun.xml.internal.ws.api.model.wsdl.WSDLBoundFault, arg1: com.sun.xml.internal.ws.api.model.wsdl.WSDLBoundOperation)
-                            }
                         }
                     }
                 }

@@ -6,7 +6,7 @@ declare namespace com {
                     namespace orbutil {
                         namespace threadpool {
                             class ThreadPoolImpl implements com.sun.corba.se.spi.orbutil.threadpool.ThreadPool {
-                                public constructor(arg0: java.lang.ThreadGroup | java.lang.ThreadGroup$$Lambda, arg1: java.lang.String | string)
+                                public constructor(arg0: java.lang.ThreadGroup, arg1: java.lang.String | string)
                                 public constructor(arg0: java.lang.String | string)
                                 public constructor(arg0: int, arg1: int, arg2: long, arg3: java.lang.String | string)
                                 public close(): void

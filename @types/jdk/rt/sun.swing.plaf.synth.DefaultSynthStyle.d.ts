@@ -7,13 +7,13 @@ declare namespace sun {
                     public constructor(arg0: sun.swing.plaf.synth.DefaultSynthStyle)
                     public constructor(arg0: java.awt.Insets, arg1: boolean, arg2: sun.swing.plaf.synth.DefaultSynthStyle$StateInfo[], arg3: java.util.Map)
                     public getColor(arg0: javax.swing.plaf.synth.SynthContext, arg1: javax.swing.plaf.synth.ColorType): java.awt.Color
-                    public getColor(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: javax.swing.plaf.synth.Region, arg2: int, arg3: javax.swing.plaf.synth.ColorType): java.awt.Color
+                    public getColor(arg0: javax.swing.JComponent, arg1: javax.swing.plaf.synth.Region, arg2: int, arg3: javax.swing.plaf.synth.ColorType): java.awt.Color
                     protected getColorForState(arg0: javax.swing.plaf.synth.SynthContext, arg1: javax.swing.plaf.synth.ColorType): java.awt.Color
-                    protected getColorForState(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: javax.swing.plaf.synth.Region, arg2: int, arg3: javax.swing.plaf.synth.ColorType): java.awt.Color
+                    protected getColorForState(arg0: javax.swing.JComponent, arg1: javax.swing.plaf.synth.Region, arg2: int, arg3: javax.swing.plaf.synth.ColorType): java.awt.Color
                     public setFont(arg0: java.awt.Font): void
                     public getFont(arg0: javax.swing.plaf.synth.SynthContext): java.awt.Font
-                    public getFont(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: javax.swing.plaf.synth.Region, arg2: int): java.awt.Font
-                    protected getFontForState(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: javax.swing.plaf.synth.Region, arg2: int): java.awt.Font
+                    public getFont(arg0: javax.swing.JComponent, arg1: javax.swing.plaf.synth.Region, arg2: int): java.awt.Font
+                    protected getFontForState(arg0: javax.swing.JComponent, arg1: javax.swing.plaf.synth.Region, arg2: int): java.awt.Font
                     protected getFontForState(arg0: javax.swing.plaf.synth.SynthContext): java.awt.Font
                     public setGraphicsUtils(arg0: javax.swing.plaf.synth.SynthGraphicsUtils): void
                     public getGraphicsUtils(arg0: javax.swing.plaf.synth.SynthContext): javax.swing.plaf.synth.SynthGraphicsUtils

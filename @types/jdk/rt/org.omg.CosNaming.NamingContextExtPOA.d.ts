@@ -9,9 +9,6 @@ declare namespace org {
                 public _this(arg0: org.omg.CORBA.ORB): org.omg.CosNaming.NamingContextExt
                 public static class: java.lang.Class<any>
             }
-            abstract class NamingContextExtPOA$$Lambda extends org.omg.PortableServer.Servant implements org.omg.CosNaming.NamingContextExtOperations , org.omg.CORBA.portable.InvokeHandler {
-                public constructor()
-            }
         }
     }
 }

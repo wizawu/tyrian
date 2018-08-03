@@ -8,7 +8,7 @@ declare namespace sun {
             public addPrintJobAttributeListener(arg0: javax.print.event.PrintJobAttributeListener | javax.print.event.PrintJobAttributeListener$$Lambda, arg1: javax.print.attribute.PrintJobAttributeSet): void
             public removePrintJobAttributeListener(arg0: javax.print.event.PrintJobAttributeListener | javax.print.event.PrintJobAttributeListener$$Lambda): void
             public print(arg0: javax.print.Doc, arg1: javax.print.attribute.PrintRequestAttributeSet): void
-            public printableJob(arg0: java.awt.print.Printable, arg1: javax.print.attribute.PrintRequestAttributeSet): void
+            public printableJob(arg0: java.awt.print.Printable | java.awt.print.Printable$$Lambda, arg1: javax.print.attribute.PrintRequestAttributeSet): void
             public pageableJob(arg0: java.awt.print.Pageable, arg1: javax.print.attribute.PrintRequestAttributeSet): void
             public cancel(): void
             public static class: java.lang.Class<any>

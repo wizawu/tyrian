@@ -8,7 +8,7 @@ declare namespace sun {
                     public canEncode(arg0: java.lang.CharSequence): boolean
                     public toEUC(arg0: char, arg1: char, arg2: byte[]): int
                     public toEUC(arg0: char, arg1: byte[]): int
-                    protected encodeLoop(arg0: java.nio.CharBuffer | java.nio.CharBuffer$$Lambda, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
+                    protected encodeLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
                     public static class: java.lang.Class<any>
                 }
             }

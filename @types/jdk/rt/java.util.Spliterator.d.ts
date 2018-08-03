@@ -9,8 +9,8 @@ declare namespace java {
             IMMUTABLE: int
             CONCURRENT: int
             SUBSIZED: int
-            tryAdvance(arg0: java.util.function$.Consumer$$TypeScript<T>): boolean
-            forEachRemaining(arg0: java.util.function$.Consumer$$TypeScript<T>): void
+            tryAdvance(arg0: java.util.function$.Consumer$$Lambda<T>): boolean
+            forEachRemaining(arg0: java.util.function$.Consumer$$Lambda<T>): void
             trySplit(): java.util.Spliterator<T>
             estimateSize(): long
             getExactSizeIfKnown(): long

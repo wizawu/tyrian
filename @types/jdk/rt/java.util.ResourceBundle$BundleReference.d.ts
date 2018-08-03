@@ -4,8 +4,5 @@ declare namespace java {
             public getCacheKey(): java.util.ResourceBundle$CacheKey
             public static class: java.lang.Class<any>
         }
-        class ResourceBundle$BundleReference$$Lambda extends java.lang.ref.SoftReference<java.util.ResourceBundle> implements java.util.ResourceBundle$CacheKeyReference {
-            public (): java.util.ResourceBundle$CacheKey
-        }
     }
 }

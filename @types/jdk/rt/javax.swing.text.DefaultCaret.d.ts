@@ -27,10 +27,10 @@ declare namespace javax {
                 public mouseDragged(arg0: java.awt.event.MouseEvent): void
                 public mouseMoved(arg0: java.awt.event.MouseEvent): void
                 public paint(arg0: java.awt.Graphics): void
-                public install(arg0: javax.swing.text.JTextComponent | javax.swing.text.JTextComponent$$Lambda): void
-                public deinstall(arg0: javax.swing.text.JTextComponent | javax.swing.text.JTextComponent$$Lambda): void
-                public addChangeListener(arg0: javax.swing.event.ChangeListener): void
-                public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
+                public install(arg0: javax.swing.text.JTextComponent): void
+                public deinstall(arg0: javax.swing.text.JTextComponent): void
+                public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
+                public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$Lambda): void
                 public getChangeListeners(): javax.swing.event.ChangeListener[]
                 protected fireStateChanged(): void
                 public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]

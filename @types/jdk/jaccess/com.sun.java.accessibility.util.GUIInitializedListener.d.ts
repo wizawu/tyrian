@@ -6,6 +6,9 @@ declare namespace com {
                     interface GUIInitializedListener extends java.util.EventListener {
                         guiInitialized(): void
                     }
+                    interface GUIInitializedListener$$Lambda extends java.util.EventListener {
+                        (): void
+                    }
                 }
             }
         }

@@ -12,7 +12,7 @@ declare namespace com {
                             public valuesRemainingForDebug(): int
                             protected chooseBandCodings(): void
                             protected computeOutputSize(): long
-                            protected writeDataTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                            protected writeDataTo(arg0: java.io.OutputStream): void
                             protected readDataFrom(arg0: java.io.InputStream): void
                             public toString(): string
                             public static class: java.lang.Class<any>

@@ -11,9 +11,6 @@ declare namespace com {
                     public sensitivityValueInSeconds(): int
                     public static class: java.lang.Class<any>
                 }
-                class SensitivityWatchEventModifier$$Lambda extends java.lang.Enum<com.sun.nio.file.SensitivityWatchEventModifier> implements java.nio.file.WatchEvent$Modifier {
-                    public static HIGH: com.sun.nio.file.SensitivityWatchEventModifier
-                }
             }
         }
     }

@@ -25,9 +25,6 @@ declare namespace com {
                                     public static getErrorInstance<A, B>(): com.sun.xml.internal.bind.v2.runtime.reflect.Accessor<A, B>
                                     public static class: java.lang.Class<any>
                                 }
-                                abstract class Accessor$$Lambda<BeanT, ValueT> implements com.sun.xml.internal.bind.v2.runtime.unmarshaller.Receiver {
-                                    public valueType: java.lang.Class<ValueT>
-                                }
                             }
                         }
                     }

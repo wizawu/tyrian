@@ -19,9 +19,6 @@ declare namespace com {
                                 public fatalError<T extends javax.xml.bind.annotation.adapters.XmlAdapter>(arg0: org.xml.sax.SAXParseException): void
                                 public static class: java.lang.Class<any>
                             }
-                            abstract class Coordinator$$Lambda implements org.xml.sax.ErrorHandler , javax.xml.bind.ValidationEventHandler {
-                                public constructor()
-                            }
                         }
                     }
                 }

@@ -57,7 +57,7 @@ declare namespace com {
                                 public fixupVariables(arg0: java.util.Vector, arg1: int): void
                                 public appendToFsb(arg0: com.sun.org.apache.xml.internal.utils.FastStringBuffer): void
                                 public callVisitors(arg0: com.sun.org.apache.xpath.internal.ExpressionOwner, arg1: com.sun.org.apache.xpath.internal.XPathVisitor): void
-                                public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda): boolean
+                                public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression): boolean
                                 public static class: java.lang.Class<any>
                             }
                         }

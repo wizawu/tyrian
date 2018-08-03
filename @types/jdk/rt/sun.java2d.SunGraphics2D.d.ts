@@ -94,7 +94,7 @@ declare namespace sun {
             public getDeviceConfiguration(): java.awt.GraphicsConfiguration
             public getSurfaceData(): sun.java2d.SurfaceData
             public setComposite(arg0: java.awt.Composite | java.awt.Composite$$Lambda): void
-            public setPaint(arg0: java.awt.Paint): void
+            public setPaint(arg0: java.awt.Paint | java.awt.Paint$$Lambda): void
             public setStroke(arg0: java.awt.Stroke | java.awt.Stroke$$Lambda): void
             public setRenderingHint(arg0: java.awt.RenderingHints$Key, arg1: java.lang.Object): void
             public getRenderingHint(arg0: java.awt.RenderingHints$Key): java.lang.Object
@@ -160,14 +160,14 @@ declare namespace sun {
             public drawGlyphVector(arg0: java.awt.font.GlyphVector, arg1: float, arg2: float): void
             public drawChars(arg0: char[], arg1: int, arg2: int, arg3: int, arg4: int): void
             public drawBytes(arg0: byte[], arg1: int, arg2: int, arg3: int, arg4: int): void
-            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: java.awt.image.ImageObserver): boolean
-            public copyImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: java.awt.Color, arg8: java.awt.image.ImageObserver): boolean
-            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: java.awt.Color, arg6: java.awt.image.ImageObserver): boolean
-            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver): boolean
-            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.Color, arg4: java.awt.image.ImageObserver): boolean
-            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: int, arg9: java.awt.image.ImageObserver): boolean
-            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: int, arg9: java.awt.Color, arg10: java.awt.image.ImageObserver): boolean
-            public drawImage(arg0: java.awt.Image, arg1: java.awt.geom.AffineTransform, arg2: java.awt.image.ImageObserver): boolean
+            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+            public copyImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: java.awt.Color, arg8: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: java.awt.Color, arg6: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: java.awt.Color, arg4: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: int, arg9: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+            public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: int, arg9: java.awt.Color, arg10: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
+            public drawImage(arg0: java.awt.Image, arg1: java.awt.geom.AffineTransform, arg2: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$Lambda): boolean
             public drawImage(arg0: java.awt.image.BufferedImage, arg1: java.awt.image.BufferedImageOp, arg2: int, arg3: int): void
             public getFontRenderContext(): java.awt.font.FontRenderContext
             public dispose(): void
@@ -175,9 +175,6 @@ declare namespace sun {
             public getDestination(): java.lang.Object
             public getDestSurface(): sun.java2d.Surface
             public static class: java.lang.Class<any>
-        }
-        class SunGraphics2D$$Lambda extends java.awt.Graphics2D implements sun.awt.ConstrainableGraphics , java.lang.Cloneable , sun.java2d.DestSurfaceProvider {
-            public static PAINT_CUSTOM: int
         }
     }
 }

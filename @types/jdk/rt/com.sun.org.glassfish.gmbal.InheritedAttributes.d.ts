@@ -6,6 +6,9 @@ declare namespace com {
                     interface InheritedAttributes extends java.lang.annotation.Annotation {
                         value(): com.sun.org.glassfish.gmbal.InheritedAttribute[]
                     }
+                    interface InheritedAttributes$$Lambda extends java.lang.annotation.Annotation {
+                        (): com.sun.org.glassfish.gmbal.InheritedAttribute[]
+                    }
                 }
             }
         }

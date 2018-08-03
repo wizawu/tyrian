@@ -26,9 +26,9 @@ declare namespace com {
                                 public setIndentAmount(arg0: int): void
                                 public setIsStandalone(arg0: boolean): void
                                 public setOutputFormat(arg0: java.util.Properties): void
-                                public setOutputStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                                public setOutputStream(arg0: java.io.OutputStream): void
                                 public setVersion(arg0: java.lang.String | string): void
-                                public setWriter(arg0: java.io.Writer | java.io.Writer$$Lambda): void
+                                public setWriter(arg0: java.io.Writer): void
                                 public setTransformer(arg0: javax.xml.transform.Transformer): void
                                 public getTransformer(): javax.xml.transform.Transformer
                                 public flushPending(): void

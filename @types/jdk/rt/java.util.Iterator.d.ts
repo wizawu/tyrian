@@ -4,7 +4,7 @@ declare namespace java {
             hasNext(): boolean
             next(): E
             remove(): void
-            forEachRemaining(arg0: java.util.function$.Consumer$$TypeScript<E>): void
+            forEachRemaining(arg0: java.util.function$.Consumer$$Lambda<E>): void
         }
     }
 }

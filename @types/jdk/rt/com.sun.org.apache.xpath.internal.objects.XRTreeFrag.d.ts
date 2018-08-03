@@ -10,7 +10,7 @@ declare namespace com {
                                 public constructor(arg0: int, arg1: com.sun.org.apache.xpath.internal.XPathContext, arg2: com.sun.org.apache.xpath.internal.ExpressionNode)
                                 public constructor(arg0: int, arg1: com.sun.org.apache.xpath.internal.XPathContext)
                                 public object(): java.lang.Object
-                                public constructor(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda)
+                                public constructor(arg0: com.sun.org.apache.xpath.internal.Expression)
                                 public allowDetachToRelease(arg0: boolean): void
                                 public detach(): void
                                 public getType(): int

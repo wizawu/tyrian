@@ -8,7 +8,7 @@ declare namespace javax {
                     protected selectColor: java.awt.Color
                     protected selectHighlight: java.awt.Color
                     public constructor()
-                    public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
+                    public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
                     protected createLayoutManager(): java.awt.LayoutManager
                     protected installDefaults(): void
                     protected paintTabBorder(arg0: java.awt.Graphics, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: boolean): void
@@ -18,12 +18,12 @@ declare namespace javax {
                     protected paintLeftTabBorder(arg0: int, arg1: java.awt.Graphics, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: boolean): void
                     protected paintBottomTabBorder(arg0: int, arg1: java.awt.Graphics, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: boolean): void
                     protected paintRightTabBorder(arg0: int, arg1: java.awt.Graphics, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: boolean): void
-                    public update(arg0: java.awt.Graphics, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public update(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
                     protected paintTabBackground(arg0: java.awt.Graphics, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: boolean): void
                     protected getTabLabelShiftX(arg0: int, arg1: int, arg2: boolean): int
                     protected getTabLabelShiftY(arg0: int, arg1: int, arg2: boolean): int
                     protected getBaselineOffset(): int
-                    public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
                     protected paintHighlightBelowTab(): void
                     protected paintFocusIndicator(arg0: java.awt.Graphics, arg1: int, arg2: java.awt.Rectangle[], arg3: int, arg4: java.awt.Rectangle, arg5: java.awt.Rectangle, arg6: boolean): void
                     protected paintContentBorderTopEdge(arg0: java.awt.Graphics, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int): void

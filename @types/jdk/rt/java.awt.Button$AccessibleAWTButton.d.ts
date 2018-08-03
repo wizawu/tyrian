@@ -1,7 +1,7 @@
 declare namespace java {
     namespace awt {
         class Button$AccessibleAWTButton extends java.awt.Component$AccessibleAWTComponent implements javax.accessibility.AccessibleAction , javax.accessibility.AccessibleValue {
-            protected constructor(arg0: java.awt.Button | java.awt.Button$$Lambda)
+            protected constructor(arg0: java.awt.Button)
             public getAccessibleName(): string
             public getAccessibleAction(): javax.accessibility.AccessibleAction
             public getAccessibleValue(): javax.accessibility.AccessibleValue

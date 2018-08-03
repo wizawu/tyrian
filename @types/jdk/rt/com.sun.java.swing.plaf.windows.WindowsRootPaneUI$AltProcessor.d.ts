@@ -8,9 +8,6 @@ declare namespace com {
                             public postProcessKeyEvent(arg0: java.awt.event.KeyEvent): boolean
                             public static class: java.lang.Class<any>
                         }
-                        class WindowsRootPaneUI$AltProcessor$$Lambda implements java.awt.KeyEventPostProcessor {
-                            public (arg0: java.awt.event.KeyEvent): boolean
-                        }
                     }
                 }
             }

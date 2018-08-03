@@ -4,7 +4,7 @@ declare namespace sun {
             class CRLExtensions {
                 public constructor()
                 public constructor(arg0: sun.security.util.DerInputStream)
-                public encode(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda, arg1: boolean): void
+                public encode(arg0: java.io.OutputStream, arg1: boolean): void
                 public get(arg0: java.lang.String | string): sun.security.x509.Extension
                 public set(arg0: java.lang.String | string, arg1: java.lang.Object): void
                 public delete(arg0: java.lang.String | string): void

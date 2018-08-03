@@ -5,6 +5,9 @@ declare namespace javax {
                 interface XmlEnumValue extends java.lang.annotation.Annotation {
                     value(): string
                 }
+                interface XmlEnumValue$$Lambda extends java.lang.annotation.Annotation {
+                    (): string
+                }
             }
         }
     }

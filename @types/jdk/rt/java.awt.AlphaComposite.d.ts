@@ -36,8 +36,5 @@ declare namespace java {
             public equals(arg0: java.lang.Object): boolean
             public static class: java.lang.Class<any>
         }
-        class AlphaComposite$$Lambda implements java.awt.Composite {
-            public static CLEAR: int
-        }
     }
 }

@@ -11,8 +11,5 @@ declare namespace sun {
             public run(): void
             public static class: java.lang.Class<any>
         }
-        class UnixPrintServiceLookup$$Lambda extends javax.print.PrintServiceLookup implements sun.print.BackgroundServiceLookup , java.lang.Runnable {
-            public constructor()
-        }
     }
 }

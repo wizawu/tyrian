@@ -10,9 +10,6 @@ declare namespace sun {
                     public run(): void
                     public static class: java.lang.Class<any>
                 }
-                class KeepAliveCache$$Lambda extends java.util.HashMap<sun.net.www.http.KeepAliveKey, sun.net.www.http.ClientVector> implements java.lang.Runnable {
-                    public constructor()
-                }
             }
         }
     }

@@ -10,9 +10,6 @@ declare namespace javax {
                     protected isDragPossible(arg0: java.awt.event.MouseEvent): boolean
                     public static class: java.lang.Class<any>
                 }
-                class BasicTextUI$DragListener$$Lambda extends javax.swing.event.MouseInputAdapter implements javax.swing.plaf.basic.DragRecognitionSupport$BeforeDrag {
-                    public (arg0: java.awt.event.MouseEvent): void
-                }
             }
         }
     }

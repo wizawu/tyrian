@@ -9,7 +9,7 @@ declare namespace sun {
                 protected sdPrevious: sun.java2d.SurfaceData
                 protected lostSurface: boolean
                 protected context: java.lang.Object
-                protected constructor(arg0: sun.awt.image.SunVolatileImage | sun.awt.image.SunVolatileImage$$Lambda, arg1: java.lang.Object)
+                protected constructor(arg0: sun.awt.image.SunVolatileImage, arg1: java.lang.Object)
                 public initialize(): void
                 public getPrimarySurfaceData(): sun.java2d.SurfaceData
                 protected isAccelerationEnabled(): boolean

@@ -8,7 +8,7 @@ declare namespace sun {
                 public isLoggable(arg0: java.util.logging.Level): boolean
                 public log(arg0: java.util.logging.Level, arg1: java.lang.String | string): void
                 public log(arg0: java.util.logging.Level, arg1: java.lang.String | string, arg2: java.lang.Throwable): void
-                public setOutputStream(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                public setOutputStream(arg0: java.io.OutputStream): void
                 public getPrintStream(): java.io.PrintStream
                 public static getLog(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: int): sun.rmi.runtime.Log
                 public static getLog(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: boolean): sun.rmi.runtime.Log

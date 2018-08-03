@@ -16,14 +16,14 @@ declare namespace com {
                             public getServerId(): int
                             public getORBId(): string
                             public getObjectAdapterId(): com.sun.corba.se.spi.ior.ObjectAdapterId
-                            public write(arg0: com.sun.corba.se.spi.ior.ObjectId, arg1: org.omg.CORBA_2_3.portable.OutputStream): void
+                            public write(arg0: com.sun.corba.se.spi.ior.ObjectId | com.sun.corba.se.spi.ior.ObjectId$$Lambda, arg1: org.omg.CORBA_2_3.portable.OutputStream): void
                             public write(arg0: org.omg.CORBA_2_3.portable.OutputStream): void
                             protected writeTemplate(arg0: org.omg.CORBA_2_3.portable.OutputStream): void
                             protected getMagic(): int
                             public setORBVersion(arg0: com.sun.corba.se.spi.orb.ORBVersion): void
                             public getORBVersion(): com.sun.corba.se.spi.orb.ORBVersion
                             protected readObjectKey(arg0: org.omg.CORBA_2_3.portable.InputStream): byte[]
-                            public getServerRequestDispatcher(arg0: com.sun.corba.se.spi.orb.ORB, arg1: com.sun.corba.se.spi.ior.ObjectId): com.sun.corba.se.spi.protocol.CorbaServerRequestDispatcher
+                            public getServerRequestDispatcher(arg0: com.sun.corba.se.spi.orb.ORB, arg1: com.sun.corba.se.spi.ior.ObjectId | com.sun.corba.se.spi.ior.ObjectId$$Lambda): com.sun.corba.se.spi.protocol.CorbaServerRequestDispatcher
                             public static class: java.lang.Class<any>
                         }
                     }

@@ -8,9 +8,9 @@ declare namespace javax {
                 public getDisplayedMnemonicIndex(): int
                 public getSmallDisplayIcon(): javax.swing.Icon
                 public getLargeDisplayIcon(): javax.swing.Icon
-                public installChooserPanel(arg0: javax.swing.JColorChooser | javax.swing.JColorChooser$$Lambda): void
+                public installChooserPanel(arg0: javax.swing.JColorChooser): void
                 protected buildChooser(): void
-                public uninstallChooserPanel(arg0: javax.swing.JColorChooser | javax.swing.JColorChooser$$Lambda): void
+                public uninstallChooserPanel(arg0: javax.swing.JColorChooser): void
                 public updateChooser(): void
                 public static class: java.lang.Class<any>
             }

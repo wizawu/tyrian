@@ -10,9 +10,6 @@ declare namespace com {
                     public static platformServersAvailable(): boolean
                     public static class: java.lang.Class<any>
                 }
-                class DnsContextFactory$$Lambda implements javax.naming.spi.InitialContextFactory {
-                    public constructor()
-                }
             }
         }
     }

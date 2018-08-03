@@ -48,11 +48,11 @@ declare namespace javax {
             public getContentPane(): java.awt.Container
             public setContentPane(arg0: java.awt.Container): void
             public getLayeredPane(): javax.swing.JLayeredPane
-            public setLayeredPane(arg0: javax.swing.JLayeredPane | javax.swing.JLayeredPane$$Lambda): void
+            public setLayeredPane(arg0: javax.swing.JLayeredPane): void
             public getGlassPane(): java.awt.Component
             public setGlassPane(arg0: java.awt.Component): void
             public getRootPane(): javax.swing.JRootPane
-            protected setRootPane(arg0: javax.swing.JRootPane | javax.swing.JRootPane$$Lambda): void
+            protected setRootPane(arg0: javax.swing.JRootPane): void
             public setClosable(arg0: boolean): void
             public isClosable(): boolean
             public isClosed(): boolean
@@ -81,7 +81,7 @@ declare namespace javax {
             public setLayer(arg0: int): void
             public getLayer(): int
             public getDesktopPane(): javax.swing.JDesktopPane
-            public setDesktopIcon(arg0: javax.swing.JInternalFrame$JDesktopIcon | javax.swing.JInternalFrame$JDesktopIcon$$Lambda): void
+            public setDesktopIcon(arg0: javax.swing.JInternalFrame$JDesktopIcon): void
             public getDesktopIcon(): javax.swing.JInternalFrame$JDesktopIcon
             public getNormalBounds(): java.awt.Rectangle
             public setNormalBounds(arg0: java.awt.Rectangle): void

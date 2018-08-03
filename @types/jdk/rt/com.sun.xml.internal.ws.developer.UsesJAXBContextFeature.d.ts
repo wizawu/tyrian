@@ -7,7 +7,7 @@ declare namespace com {
                         class UsesJAXBContextFeature extends javax.xml.ws.WebServiceFeature {
                             public static ID: string
                             public constructor(arg0: java.lang.Class<com.sun.xml.internal.ws.developer.JAXBContextFactory>)
-                            public constructor(arg0: com.sun.xml.internal.ws.developer.JAXBContextFactory)
+                            public constructor(arg0: com.sun.xml.internal.ws.developer.JAXBContextFactory | com.sun.xml.internal.ws.developer.JAXBContextFactory$$Lambda)
                             public constructor(arg0: com.sun.xml.internal.bind.api.JAXBRIContext)
                             public getFactory(): com.sun.xml.internal.ws.developer.JAXBContextFactory
                             public getID(): string

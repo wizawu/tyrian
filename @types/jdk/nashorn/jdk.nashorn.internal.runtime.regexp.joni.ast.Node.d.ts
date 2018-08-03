@@ -13,7 +13,7 @@ declare namespace jdk {
                                 protected setChild(arg0: jdk.nashorn.internal.runtime.regexp.joni.ast.Node): void
                                 protected getChild(): jdk.nashorn.internal.runtime.regexp.joni.ast.Node
                                 public swap(arg0: jdk.nashorn.internal.runtime.regexp.joni.ast.Node): void
-                                public verifyTree(arg0: java.util.Set<jdk.nashorn.internal.runtime.regexp.joni.ast.Node>, arg1: jdk.nashorn.internal.runtime.regexp.joni.WarnCallback): void
+                                public verifyTree(arg0: java.util.Set<jdk.nashorn.internal.runtime.regexp.joni.ast.Node>, arg1: jdk.nashorn.internal.runtime.regexp.joni.WarnCallback | jdk.nashorn.internal.runtime.regexp.joni.WarnCallback$$Lambda): void
                                 public getName(): string
                                 protected toString(arg0: int): string
                                 public getAddressName(): string

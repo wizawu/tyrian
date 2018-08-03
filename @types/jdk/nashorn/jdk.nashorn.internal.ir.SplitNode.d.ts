@@ -13,9 +13,6 @@ declare namespace jdk {
                     public accept(arg0: jdk.nashorn.internal.ir.visitor.NodeVisitor): jdk.nashorn.internal.ir.Node
                     public static class: java.lang.Class<any>
                 }
-                class SplitNode$$Lambda extends jdk.nashorn.internal.ir.LexicalContextStatement implements jdk.nashorn.internal.ir.CompileUnitHolder {
-                    public constructor(arg0: java.lang.String | string, arg1: jdk.nashorn.internal.ir.Block, arg2: jdk.nashorn.internal.codegen.CompileUnit)
-                }
             }
         }
     }

@@ -1,7 +1,7 @@
 declare namespace javax {
     namespace swing {
         class JList$AccessibleJList extends javax.swing.JComponent$AccessibleJComponent implements javax.accessibility.AccessibleSelection , java.beans.PropertyChangeListener , javax.swing.event.ListSelectionListener , javax.swing.event.ListDataListener {
-            public constructor(arg0: javax.swing.JList | javax.swing.JList$$Lambda)
+            public constructor(arg0: javax.swing.JList)
             public propertyChange(arg0: java.beans.PropertyChangeEvent): void
             public valueChanged(arg0: javax.swing.event.ListSelectionEvent): void
             public intervalAdded(arg0: javax.swing.event.ListDataEvent): void

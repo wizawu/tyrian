@@ -10,17 +10,17 @@ declare namespace com {
                             public seqForDebug: int
                             public elementCountForDebug: int
                             protected lengthForDebug: int
-                            protected constructor(arg0: com.sun.java.util.jar.pack.BandStructure, arg1: java.lang.String | string, arg2: com.sun.java.util.jar.pack.Coding | com.sun.java.util.jar.pack.Coding$$Lambda)
+                            protected constructor(arg0: com.sun.java.util.jar.pack.BandStructure, arg1: java.lang.String | string, arg2: com.sun.java.util.jar.pack.Coding)
                             public init(): com.sun.java.util.jar.pack.BandStructure$Band
                             public capacity(): int
                             protected setCapacity(arg0: int): void
                             public length(): int
                             protected valuesRemainingForDebug(): int
                             public valuesExpected(): int
-                            public writeTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                            public writeTo(arg0: java.io.OutputStream): void
                             public outputSize(): long
                             protected computeOutputSize(): long
-                            protected writeDataTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                            protected writeDataTo(arg0: java.io.OutputStream): void
                             protected doneWriting(): void
                             public readFrom(arg0: java.io.InputStream): void
                             protected readDataFrom(arg0: java.io.InputStream): void

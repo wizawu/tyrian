@@ -9,8 +9,5 @@ declare namespace java {
             public close(): void
             public static class: java.lang.Class<any>
         }
-        abstract class OutputStream$$Lambda implements java.io.Closeable , java.io.Flushable {
-            public constructor()
-        }
     }
 }

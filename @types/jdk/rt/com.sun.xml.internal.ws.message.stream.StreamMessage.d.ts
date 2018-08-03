@@ -33,9 +33,6 @@ declare namespace com {
                                 public getReader<T>(): javax.xml.stream.XMLStreamReader
                                 public static class: java.lang.Class<any>
                             }
-                            class StreamMessage$$Lambda extends com.sun.xml.internal.ws.message.AbstractMessageImpl implements com.sun.xml.internal.ws.api.message.StreamingSOAP {
-                                public constructor(arg0: com.sun.xml.internal.ws.api.SOAPVersion)
-                            }
                         }
                     }
                 }

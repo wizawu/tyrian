@@ -106,7 +106,7 @@ declare namespace com {
                             public handleInput(arg0: com.sun.corba.se.impl.protocol.giopmsgheaders.LocateReplyMessage_1_2): void
                             public handleInput(arg0: com.sun.corba.se.impl.protocol.giopmsgheaders.FragmentMessage_1_1): void
                             public handleInput(arg0: com.sun.corba.se.impl.protocol.giopmsgheaders.FragmentMessage_1_2): void
-                            public handleInput(arg0: com.sun.corba.se.impl.protocol.giopmsgheaders.CancelRequestMessage): void
+                            public handleInput(arg0: com.sun.corba.se.impl.protocol.giopmsgheaders.CancelRequestMessage | com.sun.corba.se.impl.protocol.giopmsgheaders.CancelRequestMessage$$Lambda): void
                             protected opAndId(arg0: com.sun.corba.se.spi.protocol.CorbaMessageMediator): string
                             public handleRequest(arg0: com.sun.corba.se.impl.protocol.giopmsgheaders.RequestMessage, arg1: com.sun.corba.se.spi.protocol.CorbaMessageMediator): void
                             public handleRequest(arg0: com.sun.corba.se.impl.protocol.giopmsgheaders.LocateRequestMessage, arg1: com.sun.corba.se.spi.protocol.CorbaMessageMediator): void

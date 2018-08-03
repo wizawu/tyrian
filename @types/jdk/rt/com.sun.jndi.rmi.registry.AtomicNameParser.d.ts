@@ -7,9 +7,6 @@ declare namespace com {
                         public parse(arg0: java.lang.String | string): javax.naming.Name
                         public static class: java.lang.Class<any>
                     }
-                    class AtomicNameParser$$Lambda implements javax.naming.NameParser {
-                        public (arg0: java.lang.String | string): javax.naming.Name
-                    }
                 }
             }
         }

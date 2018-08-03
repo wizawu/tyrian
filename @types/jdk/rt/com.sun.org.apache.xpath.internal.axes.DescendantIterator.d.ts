@@ -16,7 +16,7 @@ declare namespace com {
                                 public asNode(arg0: com.sun.org.apache.xpath.internal.XPathContext): int
                                 public detach(): void
                                 public getAxis(): int
-                                public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression | com.sun.org.apache.xpath.internal.Expression$$Lambda): boolean
+                                public deepEquals(arg0: com.sun.org.apache.xpath.internal.Expression): boolean
                                 public static class: java.lang.Class<any>
                             }
                         }

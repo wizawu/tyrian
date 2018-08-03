@@ -57,8 +57,8 @@ declare namespace sun {
                 public getRFC2253CanonicalName(): string
                 public getName(): string
                 public findMostSpecificAttribute(arg0: sun.security.util.ObjectIdentifier): sun.security.util.DerValue
-                public emit(arg0: sun.security.util.DerOutputStream | sun.security.util.DerOutputStream$$Lambda): void
-                public encode(arg0: sun.security.util.DerOutputStream | sun.security.util.DerOutputStream$$Lambda): void
+                public emit(arg0: sun.security.util.DerOutputStream): void
+                public encode(arg0: sun.security.util.DerOutputStream): void
                 public getEncodedInternal(): byte[]
                 public getEncoded(): byte[]
                 public constrains(arg0: sun.security.x509.GeneralNameInterface): int

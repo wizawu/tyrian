@@ -10,9 +10,6 @@ declare namespace jdk {
                         public compareConversion(arg0: java.lang.Class<any>, arg1: java.lang.Class<any>, arg2: java.lang.Class<any>): jdk.internal.dynalink.linker.ConversionComparator$Comparison
                         public static class: java.lang.Class<any>
                     }
-                    class NashornPrimitiveLinker$$Lambda implements jdk.internal.dynalink.linker.TypeBasedGuardingDynamicLinker , jdk.internal.dynalink.linker.GuardingTypeConverterFactory , jdk.internal.dynalink.linker.ConversionComparator {
-                        public (arg0: java.lang.Class<any>): boolean
-                    }
                 }
             }
         }

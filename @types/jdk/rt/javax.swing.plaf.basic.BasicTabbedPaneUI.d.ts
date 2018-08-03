@@ -31,9 +31,9 @@ declare namespace javax {
                     protected focusListener: java.awt.event.FocusListener
                     protected calcRect: java.awt.Rectangle
                     public constructor()
-                    public static createUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): javax.swing.plaf.ComponentUI
-                    public installUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
-                    public uninstallUI(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
+                    public installUI(arg0: javax.swing.JComponent): void
+                    public uninstallUI(arg0: javax.swing.JComponent): void
                     protected createLayoutManager(): java.awt.LayoutManager
                     protected installComponents(): void
                     protected createScrollButton(arg0: int): javax.swing.JButton
@@ -50,13 +50,13 @@ declare namespace javax {
                     protected uninstallKeyboardActions(): void
                     protected setRolloverTab(arg0: int): void
                     protected getRolloverTab(): int
-                    public getMinimumSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
-                    public getMaximumSize(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Dimension
-                    public getBaseline(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda, arg1: int, arg2: int): int
-                    public getBaselineResizeBehavior(arg0: javax.swing.JComponent | javax.swing.JComponent$$Lambda): java.awt.Component$BaselineResizeBehavior
+                    public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
+                    public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
+                    public getBaseline(arg0: javax.swing.JComponent, arg1: int, arg2: int): int
+                    public getBaselineResizeBehavior(arg0: javax.swing.JComponent): java.awt.Component$BaselineResizeBehavior
                     protected getBaseline(arg0: int): int
                     protected getBaselineOffset(): int
-                    public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent | javax.swing.JComponent$$Lambda): void
+                    public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
                     protected paintTabArea(arg0: java.awt.Graphics, arg1: int, arg2: int): void
                     protected paintTab(arg0: java.awt.Graphics, arg1: int, arg2: java.awt.Rectangle[], arg3: int, arg4: java.awt.Rectangle, arg5: java.awt.Rectangle): void
                     protected layoutLabel(arg0: int, arg1: java.awt.FontMetrics, arg2: int, arg3: java.lang.String | string, arg4: javax.swing.Icon, arg5: java.awt.Rectangle, arg6: java.awt.Rectangle, arg7: java.awt.Rectangle, arg8: boolean): void

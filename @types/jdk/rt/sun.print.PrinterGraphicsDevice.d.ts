@@ -6,7 +6,7 @@ declare namespace sun {
             public getIDstring(): string
             public getConfigurations(): java.awt.GraphicsConfiguration[]
             public getDefaultConfiguration(): java.awt.GraphicsConfiguration
-            public setFullScreenWindow(arg0: java.awt.Window | java.awt.Window$$Lambda): void
+            public setFullScreenWindow(arg0: java.awt.Window): void
             public getFullScreenWindow(): java.awt.Window
             public static class: java.lang.Class<any>
         }

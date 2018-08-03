@@ -9,7 +9,7 @@ declare namespace com {
                                 namespace dom2dtm {
                                     class DOM2DTM extends com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseIterators {
                                         protected m_nodes: java.util.Vector
-                                        public constructor(arg0: com.sun.org.apache.xml.internal.dtm.DTMManager, arg1: javax.xml.transform.dom.DOMSource, arg2: int, arg3: com.sun.org.apache.xml.internal.dtm.DTMWSFilter, arg4: com.sun.org.apache.xml.internal.utils.XMLStringFactory, arg5: boolean)
+                                        public constructor(arg0: com.sun.org.apache.xml.internal.dtm.DTMManager, arg1: javax.xml.transform.dom.DOMSource, arg2: int, arg3: com.sun.org.apache.xml.internal.dtm.DTMWSFilter | com.sun.org.apache.xml.internal.dtm.DTMWSFilter$$Lambda, arg4: com.sun.org.apache.xml.internal.utils.XMLStringFactory, arg5: boolean)
                                         protected addNode(arg0: org.w3c.dom.Node, arg1: int, arg2: int, arg3: int): int
                                         public getNumberOfNodes(): int
                                         protected nextNode(): boolean

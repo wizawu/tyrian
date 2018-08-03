@@ -14,7 +14,7 @@ declare namespace com {
                             protected valuesRemainingForDebug(): int
                             protected chooseBandCodings(): void
                             protected computeOutputSize(): long
-                            public writeDataTo(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda): void
+                            public writeDataTo(arg0: java.io.OutputStream): void
                             public readDataFrom(arg0: java.io.InputStream): void
                             public readyToDisburse(): void
                             public doneDisbursing(): void

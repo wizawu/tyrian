@@ -15,8 +15,8 @@ declare namespace javax {
             public isDone(): boolean
             public get(): T
             public get(arg0: long, arg1: java.util.concurrent.TimeUnit): T
-            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
             public firePropertyChange(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: java.lang.Object): void
             public getPropertyChangeSupport(): java.beans.PropertyChangeSupport
             public getState(): javax.swing.SwingWorker$StateValue

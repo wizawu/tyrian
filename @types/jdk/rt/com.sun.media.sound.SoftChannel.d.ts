@@ -43,9 +43,6 @@ declare namespace com {
                     public getSolo(): boolean
                     public static class: java.lang.Class<any>
                 }
-                class SoftChannel$$Lambda implements javax.sound.midi.MidiChannel , com.sun.media.sound.ModelDirectedPlayer {
-                    public constructor(arg0: com.sun.media.sound.SoftSynthesizer, arg1: int)
-                }
             }
         }
     }

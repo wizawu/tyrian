@@ -9,6 +9,9 @@ declare namespace com {
                                 interface Package extends com.sun.xml.internal.txw2.TypedXmlWriter {
                                     name(arg0: java.lang.String | string): void
                                 }
+                                interface Package$$Lambda extends com.sun.xml.internal.txw2.TypedXmlWriter {
+                                    (arg0: java.lang.String | string): void
+                                }
                             }
                         }
                     }

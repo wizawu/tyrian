@@ -78,15 +78,15 @@ export default function (instdir: string, noTypes = false) {
     if (fs.existsSync("node_modules")) {
         fs.readdirSync("node_modules").forEach(dir => {
             let json = fs.existsSync(`node_modules/${dir}/package.json`) ?
-                JSON.parse(fs.readFileSync(`node_modules/${dir}/package.json`, "utf-8")) : {};
-            (json.mvnDependencies || []).forEach(dep => {
+                JSON.parse(fs.readFileSync(`node_modules/${dir}/package.json`, "utf-8")) : {}
+            Array.from(json.mvnDependencies || []).forEach((dep: string) => {
                 let [groupId, artifactId, version] = dep.split(":")
                 mvnDependencies[`${groupId}:${artifactId}`] = version
             })
         })
     }
-    let json = JSON.parse(fs.readFileSync("package.json", "utf-8"));
-    (json.mvnDependencies || []).forEach(dep => {
+    let json = JSON.parse(fs.readFileSync("package.json", "utf-8"))
+    Array.from(json.mvnDependencies || []).forEach((dep: string) => {
         let [groupId, artifactId, version] = dep.split(":")
         mvnDependencies[`${groupId}:${artifactId}`] = version
     })

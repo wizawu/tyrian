@@ -52,14 +52,14 @@ function default_1(instdir, noTypes) {
         fs.readdirSync("node_modules").forEach(function (dir) {
             var json = fs.existsSync("node_modules/" + dir + "/package.json") ?
                 JSON.parse(fs.readFileSync("node_modules/" + dir + "/package.json", "utf-8")) : {};
-            (json.mvnDependencies || []).forEach(function (dep) {
+            Array.from(json.mvnDependencies || []).forEach(function (dep) {
                 var _a = dep.split(":"), groupId = _a[0], artifactId = _a[1], version = _a[2];
                 mvnDependencies[groupId + ":" + artifactId] = version;
             });
         });
     }
     var json = JSON.parse(fs.readFileSync("package.json", "utf-8"));
-    (json.mvnDependencies || []).forEach(function (dep) {
+    Array.from(json.mvnDependencies || []).forEach(function (dep) {
         var _a = dep.split(":"), groupId = _a[0], artifactId = _a[1], version = _a[2];
         mvnDependencies[groupId + ":" + artifactId] = version;
     });

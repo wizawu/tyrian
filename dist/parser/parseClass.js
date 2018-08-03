@@ -12,7 +12,6 @@ var object_path_1 = require("object-path");
 var const_1 = require("../const");
 var lambda = require("./lambda");
 var UNSUPPORTED_MODIFIERS = [
-    "abstract",
     "final",
     "native",
     "strictfp",
@@ -112,11 +111,7 @@ function parseMember(ctx, isInterface, typeVariable) {
     var token = { value: "", skip: 0 };
     while (token = nextToken(ctx)) {
         ctx.offset += token.skip;
-        if (["public", "protected", "static"].indexOf(token.value) >= 0) {
-            if (!isInterface)
-                line += token.value + " ";
-        }
-        else if (token.value.charAt(0) === "<") {
+        if (token.value.charAt(0) === "<") {
             typeVariable = token.value;
         }
         else if (UNSUPPORTED_MODIFIERS.indexOf(token.value) >= 0) {
@@ -166,9 +161,9 @@ function parseClass(ctx, modifier) {
             ctx.stack.push({ line: "}\n", type: "END", name: className });
             break;
         }
-        else if (token.value === "public" || token.value === "protected") {
+        else if (["public", "protected", "static", "abstract", "final"].indexOf(token.value) >= 0) {
             ctx.offset += token.skip;
-            memberModifier = token.value + " ";
+            memberModifier += (token.value === "final" ? "readonly" : token.value) + " ";
         }
         else if (token.value.charAt(0) === "<") {
             ctx.offset += token.skip;
@@ -191,6 +186,9 @@ function parseClass(ctx, modifier) {
                 return null;
             if (!isInterface) {
                 var lastItem = ctx.stack[ctx.stack.length - 1];
+                if (lastItem.line.indexOf("(") >= 0) {
+                    memberModifier = memberModifier.replace(/\breadonly /, "");
+                }
                 lastItem.line = lastItem.line.replace(/^(\s+)/, "$1" + memberModifier);
             }
             memberModifier = "";
@@ -224,13 +222,15 @@ function default_1(source, pkg) {
     var buffer = [];
     var ignore = false;
     var isInterface = false;
+    var isAbstractClass = false;
     var _loop_1 = function (i) {
         var item = ctx.stack[i];
         switch (item.type) {
             case "BEGIN":
                 buffer = [];
                 ignore = false;
-                isInterface = item.line.indexOf("interface") >= 0;
+                isInterface = /\binterface\b/.test(item.line);
+                isAbstractClass = /\babstract\b/.test(item.line) && !isInterface;
                 if (item.name.indexOf("-") >= 0)
                     ignore = true;
                 if (/>\.\w+/.test(item.line))
@@ -253,27 +253,55 @@ function default_1(source, pkg) {
                         buffer.push({ line: "    public static class: java.lang.Class<any>" });
                     buffer.push(item);
                     var className = item.name.replace(/^(\w+\.)+/, "");
-                    var ns = item.name.substring(0, item.name.length - className.length - 1);
-                    object_path_1.ensureExists(pkg, ns, {});
-                    if (ns === "java.lang" && className === "Object") {
-                        object_path_1.get(pkg, ns)[className] = "type Object = any";
+                    var classID = className.replace(/<.+$/, "");
+                    var ns_1 = item.name.substring(0, item.name.length - className.length - 1);
+                    object_path_1.ensureExists(pkg, ns_1, {});
+                    if (ns_1 === "java.lang" && className === "Object") {
+                        object_path_1.get(pkg, ns_1)[className] = "type Object = any";
                     }
                     else {
-                        var countNonStaticMethods_1 = 0;
-                        buffer.slice(1).forEach(function (b) {
-                            if (b.line.indexOf("(") > 0 && !/\bstatic\b/.test(b.line)) {
-                                countNonStaticMethods_1 += 1;
+                        var countUnimplMethods_1 = 0, methodIndex_1 = 1;
+                        if (isInterface && /\bextends\b/.test(buffer[0].line)) {
+                            buffer[0].line.substring(buffer[0].line.indexOf("extends") + "extends".length, buffer[0].line.indexOf("{")).split(",").map(function (i) { return i.trim(); }).forEach(function (name) {
+                                name = name.replace(/<.+$/, "");
+                                if (lambda.isLambda.hasOwnProperty(name)) {
+                                    countUnimplMethods_1 += lambda.isLambda[name];
+                                }
+                                else if (lambda.isLambda.hasOwnProperty(ns_1 + "." + name)) {
+                                    countUnimplMethods_1 += lambda.isLambda[ns_1 + "." + name];
+                                }
+                                else {
+                                    countUnimplMethods_1 += 2;
+                                }
+                            });
+                        }
+                        buffer.slice(1).forEach(function (b, i) {
+                            if (b.line.indexOf("(") >= 0) {
+                                if (isInterface && !/\bstatic\b/.test(b.line)) {
+                                    countUnimplMethods_1 += 1;
+                                    methodIndex_1 = i + 1;
+                                }
+                                if (isAbstractClass && /\babstract\b/.test(b.line)) {
+                                    countUnimplMethods_1 += 1;
+                                    methodIndex_1 = i + 1;
+                                }
                             }
                         });
-                        if (isInterface && countNonStaticMethods_1 === 1) {
-                            var classID = className.indexOf("<") < 0 ? className :
-                                className.substring(0, className.indexOf("<"));
-                            buffer.push({ line: buffer[0].line.replace(classID, classID + "$$$Lambda") });
-                            buffer.push({ line: buffer[1].line.replace(buffer[1].name + "(", "(") });
+                        if ((isInterface || isAbstractClass) && countUnimplMethods_1 === 1) {
+                            buffer.push({
+                                line: buffer[0].line.replace(classID, classID + "$$$Lambda")
+                                    .replace(/\babstract /, "").replace(/\bclass /, "interface ")
+                                    .replace(/\bextends [^{]+$/, "")
+                                    .replace(/\bimplements [^{]+$/, "")
+                            });
+                            buffer.push({ line: buffer[methodIndex_1].line.replace(/\S[^(]+/, "") });
                             buffer.push({ line: "}\n" });
-                            lambda.addLambda(ns + "." + classID);
+                            lambda.addLambda(ns_1 + "." + classID);
                         }
-                        object_path_1.get(pkg, ns)[className] = buffer.map(function (b) { return b.line; }).join("\n");
+                        else if (isInterface && countUnimplMethods_1 === 0) {
+                            lambda.addLambda(ns_1 + "." + classID, 0);
+                        }
+                        object_path_1.get(pkg, ns_1)[className] = buffer.map(function (b) { return b.line; }).join("\n");
                     }
                 }
                 break;

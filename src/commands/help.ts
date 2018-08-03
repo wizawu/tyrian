@@ -18,7 +18,7 @@ Usage:
   1c run [-w] [jjs options] <output>    run an output file (.js)
 
 install options:
-  -D                    do not generate typescript definitions for JARs
+  -D                    do not generate typescript definitions for lib/*.jar
 
 build options:
   -u                    uglify build results

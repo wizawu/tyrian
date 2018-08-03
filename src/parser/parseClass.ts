@@ -240,13 +240,13 @@ export default function (source: string, pkg: any) {
                     if (ns === "java.lang" && className === "Object") {
                         get(pkg, ns)[className] = "type Object = any"
                     } else {
-                        if ((isInterface && buffer.length === 3 &&      // Can be interface
-                            buffer[1].line.indexOf("(") > 0 &&          // with only 1 method
-                            buffer[0].line.indexOf(" extends ") < 0     // and no extends
-                        ) || (
-                            buffer[0].line.indexOf(" implements ") > 0 &&               // or an implementing class
-                            lambda.isLambda[buffer[0].line.split(" ").reverse()[1]]     // of a lambda interface
-                        )) {
+                        let countNonStaticMethods = 0
+                        buffer.slice(1).forEach(b => {
+                            if (b.line.indexOf("(") > 0 && !/\bstatic\b/.test(b.line)) {
+                                countNonStaticMethods += 1
+                            }
+                        })
+                        if (isInterface && countNonStaticMethods === 1) {
                             let classID = className.indexOf("<") < 0 ? className :
                                 className.substring(0, className.indexOf("<"))
                             buffer.push({ line: buffer[0].line.replace(classID, `${classID}$$$Lambda`) })

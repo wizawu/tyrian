@@ -81,16 +81,15 @@ export default function parseJAR(jar: string, outputDir?: string) {
 }
 
 export function generateJDKDefinition(root: string) {
+    let targetDir = jar => path.basename(jar, ".jar")
     let jars = process.argv.slice(1)
     jars.forEach(jar => parseJAR(jar))
-    jars.forEach(jar => parseJAR(jar))
+    jars.forEach(jar => fs.existsSync(targetDir(jar)) || fs.mkdirSync(targetDir(jar)))
+    jars.forEach(jar => parseJAR(jar, targetDir(jar)))
     fs.writeFileSync(
         fs.realpathSync(`${root}/dist/parser/isLambda.js`),
         `module.exports = ${JSON.stringify(lambda.isLambda, null, 4)}`
     )
-    let targetDir = jar => path.basename(jar, ".jar")
-    jars.forEach(jar => fs.existsSync(targetDir(jar)) || fs.mkdirSync(targetDir(jar)))
-    jars.forEach(jar => parseJAR(jar, targetDir(jar)))
 }
 
 export function getTopPackages(jar: string): string[] {

@@ -19,7 +19,7 @@ function safeType(type: string, isParameter?: boolean): string {
     if (type === "java.lang.String") return isParameter ? `${type} | string` : "string"
     if (type === "java.lang.Boolean") return isParameter ? `${type} | boolean` : "boolean"
     if (/^java\.util\.function\.Consumer<\w+>$/.test(type) && isParameter) {
-        return type.replace("Consumer", "Consumer$$$TypeScript")
+        return type.replace("Consumer", "Consumer$$$Lambda")
     }
 
     let classID = type.indexOf("<") < 0 ? type : type.substring(0, type.indexOf("<"))

@@ -5,7 +5,6 @@ import { EXIT_STATUS } from "../const"
 import * as lambda from "./lambda"
 
 const UNSUPPORTED_MODIFIERS = [
-    "abstract",
     "final",
     "native",
     "strictfp",
@@ -102,9 +101,7 @@ function parseMember(ctx: Context, isInterface: boolean, typeVariable: string): 
     let token: Token = { value: "", skip: 0 }
     while (token = nextToken(ctx)) {
         ctx.offset += token.skip
-        if (["public", "protected", "static"].indexOf(token.value) >= 0) {
-            if (!isInterface) line += token.value + " "
-        } else if (token.value.charAt(0) === "<") {
+        if (token.value.charAt(0) === "<") {
             typeVariable = token.value
         } else if (UNSUPPORTED_MODIFIERS.indexOf(token.value) >= 0) {
             continue
@@ -156,9 +153,9 @@ function parseClass(ctx: Context, modifier: string): Context | null {
             ctx.offset += token.skip
             ctx.stack.push({ line: "}\n", type: "END", name: className })
             break
-        } else if (token.value === "public" || token.value === "protected") {
+        } else if (["public", "protected", "static", "abstract", "final"].indexOf(token.value) >= 0) {
             ctx.offset += token.skip
-            memberModifier = token.value + " "
+            memberModifier += (token.value === "final" ? "readonly" : token.value) + " "
         } else if (token.value.charAt(0) === "<") {
             ctx.offset += token.skip
             typeVariable = token.value
@@ -178,6 +175,9 @@ function parseClass(ctx: Context, modifier: string): Context | null {
             if (!ctx) return null
             if (!isInterface) {
                 let lastItem = ctx.stack[ctx.stack.length - 1]
+                if (lastItem.line.indexOf("(") >= 0) {
+                    memberModifier = memberModifier.replace(/\breadonly /, "")
+                }
                 lastItem.line = lastItem.line.replace(/^(\s+)/, "$1" + memberModifier)
             }
             memberModifier = ""
@@ -210,6 +210,7 @@ export default function (source: string, pkg: any) {
     let buffer: any[] = []
     let ignore = false
     let isInterface = false
+    let isAbstractClass = false
 
     for (let i = 0; i < ctx.stack.length; i++) {
         let item = ctx.stack[i]
@@ -217,7 +218,8 @@ export default function (source: string, pkg: any) {
             case "BEGIN":
                 buffer = []
                 ignore = false
-                isInterface = item.line.indexOf("interface") >= 0
+                isInterface = /\binterface\b/.test(item.line)
+                isAbstractClass = /\babstract\b/.test(item.line) && !isInterface
                 if (item.name.indexOf("-") >= 0) ignore = true
                 if (/>\.\w+/.test(item.line)) ignore = true
                 if (!ignore) buffer.push(item as never)
@@ -235,24 +237,55 @@ export default function (source: string, pkg: any) {
                     if (!isInterface) buffer.push({ line: "    public static class: java.lang.Class<any>" })
                     buffer.push(item as never)
                     let className = item.name.replace(/^(\w+\.)+/, "")
+                    let classID = className.replace(/<.+$/, "")
                     let ns = item.name.substring(0, item.name.length - className.length - 1)
                     ensureExists(pkg, ns, {})
                     if (ns === "java.lang" && className === "Object") {
                         get(pkg, ns)[className] = "type Object = any"
                     } else {
-                        let countNonStaticMethods = 0
-                        buffer.slice(1).forEach(b => {
-                            if (b.line.indexOf("(") > 0 && !/\bstatic\b/.test(b.line)) {
-                                countNonStaticMethods += 1
+                        let countUnimplMethods = 0, methodIndex = 1
+                        // count unimplemented methods of superinterfaces
+                        if (isInterface && /\bextends\b/.test(buffer[0].line)) {
+                            buffer[0].line.substring(
+                                buffer[0].line.indexOf("extends") + "extends".length,
+                                buffer[0].line.indexOf("{")
+                            ).split(",").map(i => i.trim()).forEach(name => {
+                                name = name.replace(/<.+$/, "")
+                                if (lambda.isLambda.hasOwnProperty(name)) {
+                                    countUnimplMethods += lambda.isLambda[name]
+                                } else if (lambda.isLambda.hasOwnProperty(ns + "." + name)) {
+                                    countUnimplMethods += lambda.isLambda[ns + "." + name]
+                                } else {
+                                    // superinterface has more than 1 unimplemented methods
+                                    countUnimplMethods += 2
+                                }
+                            })
+                        }
+                        // count unimplemented methods of current interface/class
+                        buffer.slice(1).forEach((b, i) => {
+                            if (b.line.indexOf("(") >= 0) {
+                                if (isInterface && !/\bstatic\b/.test(b.line)) {
+                                    countUnimplMethods += 1
+                                    methodIndex = i + 1
+                                }
+                                if (isAbstractClass && /\babstract\b/.test(b.line)) {
+                                    countUnimplMethods += 1
+                                    methodIndex = i + 1
+                                }
                             }
                         })
-                        if (isInterface && countNonStaticMethods === 1) {
-                            let classID = className.indexOf("<") < 0 ? className :
-                                className.substring(0, className.indexOf("<"))
-                            buffer.push({ line: buffer[0].line.replace(classID, `${classID}$$$Lambda`) })
-                            buffer.push({ line: buffer[1].line.replace(buffer[1].name + "(", "(") })
+                        if ((isInterface || isAbstractClass) && countUnimplMethods === 1) {
+                            buffer.push({
+                                line: buffer[0].line.replace(classID, `${classID}$$$Lambda`)
+                                    .replace(/\babstract /, "").replace(/\bclass /, "interface ")
+                                    .replace(/\bextends [^{]+$/, "")
+                                    .replace(/\bimplements [^{]+$/, "")
+                            })
+                            buffer.push({ line: buffer[methodIndex].line.replace(/\S[^(]+/, "") })
                             buffer.push({ line: "}\n" })
                             lambda.addLambda(ns + "." + classID)
+                        } else if (isInterface && countUnimplMethods === 0) {
+                            lambda.addLambda(ns + "." + classID, 0)
                         }
                         get(pkg, ns)[className] = buffer.map(b => b.line).join("\n")
                     }

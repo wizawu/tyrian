@@ -6,7 +6,7 @@ try {
     console.log(ex.message)
 }
 
-export function addLambda(key: string) {
+export function addLambda(key: string, count = 1) {
     if (key === "java.lang.Class") return
-    isLambda[key] = true
+    isLambda[key] = count
 }

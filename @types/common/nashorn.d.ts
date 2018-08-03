@@ -26,19 +26,9 @@ declare function readFully(filepath: string): string
 declare function readLine(prompt?: string): string
 
 declare class Java {
-    static extend(type: any, impl?: object): any
+    static extend(javaType: any, impl?: object): any
     static super(variable: object): any
-    static from(value: any): any
+    static from(javaValue: any): any
     static to(jsValue: any, javaType: any): any
     static type(className: string): any
-}
-
-declare namespace java {
-    namespace util {
-        namespace function$ {
-            interface Consumer$$TypeScript<T> {
-                (arg: T): any
-            }
-        }
-    }
 }

@@ -5,13 +5,14 @@
   "bin": "./bin/1c",
   "dependencies": {
     "@types/filesize": "^3.6.0",
-    "@types/node": "^9.6.20",
+    "@types/node": "^9.6.28",
     "@types/object-path": "^0.9.29",
-    "@types/webpack": "^4.4.0",
+    "@types/webpack": "^4.4.10",
     "autoprefixer": "^8.6.0",
     "chalk": "^2.4.1",
     "css-loader": "^0.28.9",
     "filesize": "^3.6.1",
+    "fork-ts-checker-webpack-plugin": "^0.4.8",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
     "object-path": "^0.11.4",
@@ -19,7 +20,7 @@
     "style-loader": "^0.20.1",
     "ts-loader": "^4.3.1",
     "typescript": "^2.9.1",
-    "url-loader": "^1.0.1",
-    "webpack": "^4.11.0"
+    "url-loader": "^1.1.0",
+    "webpack": "^4.16.5"
   }
 }

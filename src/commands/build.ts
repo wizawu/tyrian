@@ -68,7 +68,7 @@ function getCompiler(instdir: string, instmod: string, options: Options) {
 
     return webpack({
         mode: options.uglify ? "production" : "development",
-        devtool: "source-map",
+        devtool: webpackConfig.devtool || (options.watch ? "source-map" : undefined),
         context: context,
         resolve: {
             extensions: [".js", ".ts", ".tsx"],

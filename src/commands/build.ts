@@ -8,6 +8,7 @@ import { EXIT_STATUS } from "../const"
 import { getTopPackages } from "../parser/parseJAR"
 import { tsconfig } from "./install"
 
+const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin")
 const autoprefixer = require("autoprefixer")
 
 export interface Options {
@@ -85,7 +86,7 @@ function getCompiler(instdir: string, instmod: string, options: Options) {
                 test: /\.tsx?$/,
                 use: [{
                     loader: "ts-loader",
-                    options: { configFile: "tsconfig.json" },
+                    options: { transpileOnly: true },
                 }]
             }, {
                 test: /^[^!]+\.css$/,
@@ -98,7 +99,10 @@ function getCompiler(instdir: string, instmod: string, options: Options) {
                 use: "url-loader",
             }]
         },
-        plugins: [new webpack.DefinePlugin(javaPackages)],
+        plugins: [
+            new ForkTsCheckerWebpackPlugin(),
+            new webpack.DefinePlugin(javaPackages),
+        ],
         optimization: {
             nodeEnv: options.watch ? "development" : "production",
             minimize: options.uglify,

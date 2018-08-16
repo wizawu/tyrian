@@ -7,6 +7,10 @@ Changelog
 * Expose internal functions
 * Move to OpenJDK 10, when Gradle 4.8 is ready on Debian/Ubuntu
 
+### 8.15.10
+
+* Speed up builds with `fork-ts-checker-webpack-plugin`.
+
 ### 8.15.4
 
 * Multiple TypeScript definitions would be generated for single JAR.

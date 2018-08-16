@@ -16,6 +16,7 @@ var chalk_1 = require("chalk");
 var const_1 = require("../const");
 var parseJAR_1 = require("../parser/parseJAR");
 var install_1 = require("./install");
+var ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 var autoprefixer = require("autoprefixer");
 function getCompiler(instdir, instmod, options) {
     var context = process.cwd();
@@ -75,7 +76,7 @@ function getCompiler(instdir, instmod, options) {
                     test: /\.tsx?$/,
                     use: [{
                             loader: "ts-loader",
-                            options: { configFile: "tsconfig.json" },
+                            options: { transpileOnly: true },
                         }]
                 }, {
                     test: /^[^!]+\.css$/,
@@ -88,7 +89,10 @@ function getCompiler(instdir, instmod, options) {
                     use: "url-loader",
                 }]
         },
-        plugins: [new webpack.DefinePlugin(javaPackages)],
+        plugins: [
+            new ForkTsCheckerWebpackPlugin(),
+            new webpack.DefinePlugin(javaPackages),
+        ],
         optimization: __assign({ nodeEnv: options.watch ? "development" : "production", minimize: options.uglify }, webpackConfig.optimization)
     });
 }

@@ -3,9 +3,12 @@ Changelog
 
 ### Roadmap
 
-* TypeScript 3
 * Expose internal functions
 * Move to OpenJDK 10, when Gradle 4.8 is ready on Debian/Ubuntu
+
+### 8.16.0
+
+* Upgraded TypeScript to 3.
 
 ### 8.15.10
 

@@ -122,8 +122,8 @@ declare namespace javax {
             public firePropertyChange(arg0: java.lang.String | string, arg1: int, arg2: int): void
             public firePropertyChange(arg0: java.lang.String | string, arg1: char, arg2: char): void
             protected fireVetoableChange(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: java.lang.Object): void
-            public addVetoableChangeListener(arg0: java.beans.VetoableChangeListener): void
-            public removeVetoableChangeListener(arg0: java.beans.VetoableChangeListener): void
+            public addVetoableChangeListener(arg0: java.beans.VetoableChangeListener | java.beans.VetoableChangeListener$$Lambda): void
+            public removeVetoableChangeListener(arg0: java.beans.VetoableChangeListener | java.beans.VetoableChangeListener$$Lambda): void
             public getVetoableChangeListeners(): java.beans.VetoableChangeListener[]
             public getTopLevelAncestor(): java.awt.Container
             public addAncestorListener(arg0: javax.swing.event.AncestorListener): void

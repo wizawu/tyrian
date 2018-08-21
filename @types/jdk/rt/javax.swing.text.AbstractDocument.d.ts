@@ -27,8 +27,8 @@ declare namespace javax {
                 public addDocumentListener<T extends java.util.EventListener>(arg0: javax.swing.event.DocumentListener): void
                 public removeDocumentListener<T extends java.util.EventListener>(arg0: javax.swing.event.DocumentListener): void
                 public getDocumentListeners<T extends java.util.EventListener>(): javax.swing.event.DocumentListener[]
-                public addUndoableEditListener<T extends java.util.EventListener>(arg0: javax.swing.event.UndoableEditListener | javax.swing.event.UndoableEditListener$$Lambda): void
-                public removeUndoableEditListener<T extends java.util.EventListener>(arg0: javax.swing.event.UndoableEditListener | javax.swing.event.UndoableEditListener$$Lambda): void
+                public addUndoableEditListener<T extends java.util.EventListener>(arg0: javax.swing.event.UndoableEditListener): void
+                public removeUndoableEditListener<T extends java.util.EventListener>(arg0: javax.swing.event.UndoableEditListener): void
                 public getUndoableEditListeners<T extends java.util.EventListener>(): javax.swing.event.UndoableEditListener[]
                 public getProperty<T extends java.util.EventListener>(arg0: java.lang.Object): java.lang.Object
                 public putProperty<T extends java.util.EventListener>(arg0: java.lang.Object, arg1: java.lang.Object): void

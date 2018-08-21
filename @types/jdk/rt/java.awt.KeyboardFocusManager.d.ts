@@ -36,11 +36,11 @@ declare namespace java {
             public removePropertyChangeListener(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener): void
             public getPropertyChangeListeners(arg0: java.lang.String | string): java.beans.PropertyChangeListener[]
             protected firePropertyChange(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: java.lang.Object): void
-            public addVetoableChangeListener(arg0: java.beans.VetoableChangeListener): void
-            public removeVetoableChangeListener(arg0: java.beans.VetoableChangeListener): void
+            public addVetoableChangeListener(arg0: java.beans.VetoableChangeListener | java.beans.VetoableChangeListener$$Lambda): void
+            public removeVetoableChangeListener(arg0: java.beans.VetoableChangeListener | java.beans.VetoableChangeListener$$Lambda): void
             public getVetoableChangeListeners(): java.beans.VetoableChangeListener[]
-            public addVetoableChangeListener(arg0: java.lang.String | string, arg1: java.beans.VetoableChangeListener): void
-            public removeVetoableChangeListener(arg0: java.lang.String | string, arg1: java.beans.VetoableChangeListener): void
+            public addVetoableChangeListener(arg0: java.lang.String | string, arg1: java.beans.VetoableChangeListener | java.beans.VetoableChangeListener$$Lambda): void
+            public removeVetoableChangeListener(arg0: java.lang.String | string, arg1: java.beans.VetoableChangeListener | java.beans.VetoableChangeListener$$Lambda): void
             public getVetoableChangeListeners(arg0: java.lang.String | string): java.beans.VetoableChangeListener[]
             protected fireVetoableChange(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: java.lang.Object): void
             public addKeyEventDispatcher(arg0: java.awt.KeyEventDispatcher | java.awt.KeyEventDispatcher$$Lambda): void

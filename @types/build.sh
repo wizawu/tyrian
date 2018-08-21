@@ -10,13 +10,15 @@ touch $dir/../dist/parser/isLambda.js
 
 # build jdk
 
+rm -rf $dir/jdk
+mkdir $dir/jdk
 cd $dir/jdk
 
-jars=$(find $JAVA_HOME/jre/lib -name "*.jar")
+jars=$(find /usr/lib/jvm/java-8-openjdk-amd64/jre/lib -name "*.jar")
 
 node -e "require('$dir/../dist/parser/parseJAR').generateJDKDefinition('$dir/..')" $jars
 
-find . -name "*.d.ts" | grep -v index.d.ts | xargs -I {} echo "/// <reference path=\"{}\" />" > index.d.ts
+find . -name "*.d.ts" | sort | xargs -I {} echo "/// <reference path=\"{}\" />" > index.d.ts
 
 # run test
 

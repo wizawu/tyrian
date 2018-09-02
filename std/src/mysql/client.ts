@@ -26,8 +26,10 @@ export interface Options {
 
     autoReconnect?: boolean
     characterEncoding?: string
+    character_set_server?: string
     testOnBorrow?: boolean
     useSSL?: boolean
+    useUnicode?: boolean
 }
 
 export class Client {
@@ -37,6 +39,8 @@ export class Client {
         const { host, port, database, user, password } = options
         let url = `jdbc:mysql://${host}:${port}/${database}?user=${user}&password=${password}`
         url += `&characterEncoding=${options.characterEncoding || "UTF-8"}`
+        url += `&character_set_server=${options.character_set_server || "utf8mb4"}`
+        url += `&useUnicode=${options.useUnicode === undefined ? true : options.useUnicode}`
         if (options.autoReconnect !== undefined) url += `&autoReconnect=${options.autoReconnect}`
         if (options.testOnBorrow !== undefined) url += `&testOnBorrow=${options.testOnBorrow}`
         if (options.useSSL !== undefined) url += `&useSSL=${options.useSSL}`

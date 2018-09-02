@@ -7,7 +7,6 @@ export interface Options {
     password: string;
     autoReconnect?: boolean;
     characterEncoding?: string;
-    character_set_server?: string;
     testOnBorrow?: boolean;
     useSSL?: boolean;
     useUnicode?: boolean;

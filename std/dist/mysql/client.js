@@ -23,7 +23,6 @@ var Client = (function () {
         var host = options.host, port = options.port, database = options.database, user = options.user, password = options.password;
         var url = "jdbc:mysql://" + host + ":" + port + "/" + database + "?user=" + user + "&password=" + password;
         url += "&characterEncoding=" + (options.characterEncoding || "UTF-8");
-        url += "&character_set_server=" + (options.character_set_server || "utf8mb4");
         url += "&useUnicode=" + (options.useUnicode === undefined ? true : options.useUnicode);
         if (options.autoReconnect !== undefined)
             url += "&autoReconnect=" + options.autoReconnect;

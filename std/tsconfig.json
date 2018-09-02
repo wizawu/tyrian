@@ -14,16 +14,13 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strictNullChecks": true,
-    "target": "es5",
-    "typeRoots": [
-      "/usr/lib/node_modules/1c/@types",
-      "lib/@types",
-      "node_modules/@types"
-    ]
+    "target": "es5"
   },
   "include": [
-    "/usr/lib/node_modules/1c/@types/**/*.d.ts",
-    "lib/@types/**/*.d.ts",
+    "/usr/local/share/.config/yarn/global/node_modules/1c/@types/common/*.d.ts",
+    "/usr/local/share/.config/yarn/global/node_modules/1c/@types/jdk/rt/java.*.d.ts",
+    "/usr/local/share/.config/yarn/global/node_modules/1c/@types/jdk/rt/javax.*.d.ts",
+    "/usr/local/share/.config/yarn/global/node_modules/1c/@types/jdk/rt/jdk.*.d.ts",
     "**/*.ts",
     "**/*.tsx"
   ]

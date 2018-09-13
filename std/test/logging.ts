@@ -1,6 +1,4 @@
-import { logging } from "../src/index"
-
-const Logger = logging.Logger
+import { Logger } from "../src/logging"
 
 Logger.info("info message")
 

@@ -2,8 +2,10 @@ import "core-js/es6/map"
 import "core-js/es6/set"
 import "core-js/es6/symbol"
 
-import * as _logging from "./logging"
-import * as _mysql from "./mysql"
+import * as logging from "./logging"
+import * as mysql from "./mysql"
 
-export const logging = _logging
-export const mysql = _mysql
+export default {
+    logging,
+    mysql,
+}

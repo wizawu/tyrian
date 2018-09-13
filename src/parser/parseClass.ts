@@ -243,12 +243,29 @@ export default function (source: string, pkg: any) {
                     if (ns === "java.lang" && className === "Object") {
                         get(pkg, ns)[className] = "type Object = any"
                     } else {
-                        let countUnimplMethods = 0, methodIndex = 1
+                        // remove template arguments
+                        let buffer0line = buffer[0].line, templateRegex = /<[^<>]+ extends/
+                        while (buffer0line.search(templateRegex) >= 0) {
+                            let openAngles = 1, start = buffer0line.search(templateRegex), end = 0
+                            for (let i = start + 1; i < buffer0line.length; i++) {
+                                if (buffer0line.charAt(i) === "<") {
+                                    openAngles += 1
+                                } else if (buffer0line.charAt(i) === ">") {
+                                    openAngles -= 1
+                                    if (openAngles === 0) {
+                                        end = i + 1
+                                        break
+                                    }
+                                }
+                            }
+                            buffer0line = buffer0line.substring(0, start) + buffer0line.substring(end)
+                        }
                         // count unimplemented methods of superinterfaces
-                        if (isInterface && /\bextends\b/.test(buffer[0].line)) {
-                            buffer[0].line.substring(
-                                buffer[0].line.indexOf("extends") + "extends".length,
-                                buffer[0].line.indexOf("{")
+                        let countUnimplMethods = 0, methodIndex = 1
+                        if (isInterface && /\bextends\b/.test(buffer0line)) {
+                            buffer0line.substring(
+                                buffer0line.indexOf("extends") + "extends".length,
+                                buffer0line.indexOf("{")
                             ).split(",").map(i => i.trim()).forEach(name => {
                                 name = name.replace(/<.+$/, "")
                                 if (lambda.isLambda.hasOwnProperty(name)) {

@@ -260,9 +260,26 @@ function default_1(source, pkg) {
                         object_path_1.get(pkg, ns_1)[className] = "type Object = any";
                     }
                     else {
+                        var buffer0line = buffer[0].line, templateRegex = /<[^<>]+ extends/;
+                        while (buffer0line.search(templateRegex) >= 0) {
+                            var openAngles = 1, start = buffer0line.search(templateRegex), end = 0;
+                            for (var i_1 = start + 1; i_1 < buffer0line.length; i_1++) {
+                                if (buffer0line.charAt(i_1) === "<") {
+                                    openAngles += 1;
+                                }
+                                else if (buffer0line.charAt(i_1) === ">") {
+                                    openAngles -= 1;
+                                    if (openAngles === 0) {
+                                        end = i_1 + 1;
+                                        break;
+                                    }
+                                }
+                            }
+                            buffer0line = buffer0line.substring(0, start) + buffer0line.substring(end);
+                        }
                         var countUnimplMethods_1 = 0, methodIndex_1 = 1;
-                        if (isInterface && /\bextends\b/.test(buffer[0].line)) {
-                            buffer[0].line.substring(buffer[0].line.indexOf("extends") + "extends".length, buffer[0].line.indexOf("{")).split(",").map(function (i) { return i.trim(); }).forEach(function (name) {
+                        if (isInterface && /\bextends\b/.test(buffer0line)) {
+                            buffer0line.substring(buffer0line.indexOf("extends") + "extends".length, buffer0line.indexOf("{")).split(",").map(function (i) { return i.trim(); }).forEach(function (name) {
                                 name = name.replace(/<.+$/, "");
                                 if (lambda.isLambda.hasOwnProperty(name)) {
                                     countUnimplMethods_1 += lambda.isLambda[name];

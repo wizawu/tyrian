@@ -1,6 +1,6 @@
 {
   "name": "1c",
-  "version": "8.16.3",
+  "version": "8.16.4",
   "repository": "github:wizawu/1c",
   "license": "MIT",
   "bin": "./bin/1c",
@@ -14,7 +14,7 @@
     "css-loader": "^0.28.9",
     "filesize": "^3.6.1",
     "fork-ts-checker-webpack-plugin": "^0.4.8",
-    "less": "^3.8.1",
+    "less": "2.x.x",
     "less-loader": "^4.0.5",
     "object-path": "^0.11.4",
     "postcss-loader": "^2.1.5",

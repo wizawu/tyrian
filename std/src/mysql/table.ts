@@ -202,6 +202,9 @@ export const Column = {
     JSON(model, key) {
         model.setColumn(key, "JSON", () => null)
     },
+    MEDIUMTEXT(model, key) {
+        model.setColumn(key, "MEDIUMTEXT", () => "")
+    },
     VARCHAR(n: number) {
         return function (model, key) {
             model.setColumn(key, `VARCHAR(${n})`, () => "")

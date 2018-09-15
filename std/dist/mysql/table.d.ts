@@ -28,6 +28,7 @@ export declare const Column: {
     BOOL(model: any, key: any): void;
     DOUBLE(model: any, key: any): void;
     JSON(model: any, key: any): void;
+    MEDIUMTEXT(model: any, key: any): void;
     VARCHAR(n: number): (model: any, key: any) => void;
     UUID(model: any, key: any): void;
     TEXT(model: any, key: any): void;

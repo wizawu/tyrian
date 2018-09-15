@@ -150,6 +150,9 @@ exports.Column = {
     JSON: function (model, key) {
         model.setColumn(key, "JSON", function () { return null; });
     },
+    MEDIUMTEXT: function (model, key) {
+        model.setColumn(key, "MEDIUMTEXT", function () { return ""; });
+    },
     VARCHAR: function (n) {
         return function (model, key) {
             model.setColumn(key, "VARCHAR(" + n + ")", function () { return ""; });

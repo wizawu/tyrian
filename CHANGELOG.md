@@ -3,8 +3,9 @@ Changelog
 
 ### Roadmap
 
-* Expose internal functions
+* Implement `1c-std/node`
 * Move to OpenJDK 10, when Gradle 4.8 is ready on Debian/Ubuntu
+* Expose internal functions
 
 ### 8.16.0
 

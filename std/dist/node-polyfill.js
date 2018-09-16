@@ -1,6 +1,9 @@
 var random = new java.security.SecureRandom();
 var _ = global;
+_.innerHeight = 0;
+_.innerWidth = 0;
 _.self = global;
+_.window = global;
 _.setTimeout = function (runnable, delay) {
     if (delay === void 0) { delay = 0; }
     var thread = new java.lang.Thread(function () {

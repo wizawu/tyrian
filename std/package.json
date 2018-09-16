@@ -1,6 +1,6 @@
 {
   "name": "1c-std",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "repository": "https://github.com/wizawu/1c/tree/master/std",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -1,10 +1,7 @@
 const random = new java.security.SecureRandom()
 const _ = global as any
 
-_.innerHeight = 0
-_.innerWidth = 0
 _.self = global
-_.window = global
 
 _.setTimeout = (runnable: java.lang.Runnable, delay = 0) => {
     let thread = new java.lang.Thread(() => {

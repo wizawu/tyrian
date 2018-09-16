@@ -10,6 +10,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 require("core-js/es6/map");
 require("core-js/es6/set");
 require("core-js/es6/symbol");
+require("./node-polyfill");
 var logging = __importStar(require("./logging"));
 var mysql = __importStar(require("./mysql"));
 exports.default = {

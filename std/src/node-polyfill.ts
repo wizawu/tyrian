@@ -3,6 +3,23 @@ const _ = global as any
 
 _.self = global
 
+_.setTimeout = (runnable: java.lang.Runnable, delay = 0) => {
+    let thread = new java.lang.Thread(() => {
+        java.lang.Thread.sleep(delay)
+        runnable.run()
+    })
+    thread.start()
+    return thread
+}
+
+_.clearTimeout = (thread: java.lang.Thread) => {
+    try {
+        if (thread.isAlive()) thread.interrupt()
+    } catch (ignored) {
+    }
+    thread.join()
+}
+
 _.crypto = {
     getRandomValues(array: Int8Array | Uint8Array | Int16Array | Uint16Array | Int32Array | Uint32Array) {
         let result: number[] = []

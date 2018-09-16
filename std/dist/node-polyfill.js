@@ -1,6 +1,24 @@
 var random = new java.security.SecureRandom();
 var _ = global;
 _.self = global;
+_.setTimeout = function (runnable, delay) {
+    if (delay === void 0) { delay = 0; }
+    var thread = new java.lang.Thread(function () {
+        java.lang.Thread.sleep(delay);
+        runnable.run();
+    });
+    thread.start();
+    return thread;
+};
+_.clearTimeout = function (thread) {
+    try {
+        if (thread.isAlive())
+            thread.interrupt();
+    }
+    catch (ignored) {
+    }
+    thread.join();
+};
 _.crypto = {
     getRandomValues: function (array) {
         var result = [];

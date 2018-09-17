@@ -2,6 +2,8 @@ const secureRandom = new java.security.SecureRandom()
 const that = global as any
 
 that.self = global
+that.innerWidth = 0
+that.innerHeight = 0
 
 that.console = {
     log(message) {

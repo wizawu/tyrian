@@ -2,8 +2,21 @@ const secureRandom = new java.security.SecureRandom()
 const that = global as any
 
 that.self = global
+
 that.innerWidth = 0
 that.innerHeight = 0
+
+that.location = {
+    hash: "",
+    host: "",
+    hostname: "",
+    href: "",
+    origin: "",
+    pathname: "",
+    port: "",
+    protocol: "",
+    search: "",
+}
 
 that.console = {
     log(message) {

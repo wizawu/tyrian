@@ -3,6 +3,17 @@ var that = global;
 that.self = global;
 that.innerWidth = 0;
 that.innerHeight = 0;
+that.location = {
+    hash: "",
+    host: "",
+    hostname: "",
+    href: "",
+    origin: "",
+    pathname: "",
+    port: "",
+    protocol: "",
+    search: "",
+};
 that.console = {
     log: function (message) {
         java.lang.System.out.println(message);

@@ -16,6 +16,9 @@
     "strictNullChecks": true,
     "target": "es5"
   },
+  "exclude": [
+    "dist/**"
+  ],
   "include": [
     "/usr/local/share/.config/yarn/global/node_modules/1c/@types/common/*.d.ts",
     "/usr/local/share/.config/yarn/global/node_modules/1c/@types/jdk/rt/java.*.d.ts",

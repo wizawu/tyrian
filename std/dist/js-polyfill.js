@@ -56,4 +56,4 @@ that.crypto = {
         return array;
     }
 };
-//# sourceMappingURL=node-polyfill.js.map
+//# sourceMappingURL=js-polyfill.js.map

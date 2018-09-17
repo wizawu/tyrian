@@ -1,7 +1,7 @@
 import { assert } from "chai"
 import { describe, it, report } from "lightest"
 
-import "../src/node-polyfill"
+import "../src/js-polyfill"
 
 describe("Node Polyfill", () => {
     it("console", () => {

@@ -1,2 +1,2 @@
-declare const random: java.security.SecureRandom;
-declare const _: any;
+declare const secureRandom: java.security.SecureRandom;
+declare const that: any;

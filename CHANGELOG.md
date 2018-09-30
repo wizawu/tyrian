@@ -3,7 +3,7 @@ Changelog
 
 ### Roadmap
 
-* Move to OpenJDK 10, when Gradle 4.8 is ready on Debian/Ubuntu
+* OpenJDK 10 + Gradle 4.4
 * Expose internal functions
 
 ### 8.16.0

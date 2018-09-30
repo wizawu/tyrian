@@ -1,6 +1,6 @@
 {
   "name": "1c-polyfill",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": "https://github.com/wizawu/1c/tree/master/polyfill",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -1,4 +1,5 @@
-export const that = global as any
+declare const global: any
+export const that = global
 
 that.self = global
 

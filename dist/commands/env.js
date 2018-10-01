@@ -1,11 +1,14 @@
 "use strict";
-var __assign = (this && this.__assign) || Object.assign || function(t) {
-    for (var s, i = 1, n = arguments.length; i < n; i++) {
-        s = arguments[i];
-        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-            t[p] = s[p];
-    }
-    return t;
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var chalk_1 = require("chalk");
@@ -35,7 +38,7 @@ function default_1() {
     if (child.status !== 0)
         ok = false;
     child = child_process_1.spawnSync("jjs", ["-fv"], __assign({ input: "quit()" }, options));
-    output += "jjs      - " + notFound(child.stdout, child.stderr).replace(/jjs>\s+/, "");
+    output += "jjs      - " + notFound("", child.stderr);
     if (child.status !== 0)
         ok = false;
     child = child_process_1.spawnSync("which", ["javap"], options);

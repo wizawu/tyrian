@@ -33,7 +33,7 @@ export default function () {
 
     // jjs
     child = spawnSync("jjs", ["-fv"], { ...{ input: "quit()" }, ...options })
-    output += "jjs      - " + notFound(child.stdout, child.stderr).replace(/jjs>\s+/, "")
+    output += "jjs      - " + notFound("", child.stderr)
     if (child.status !== 0) ok = false
 
     // javap

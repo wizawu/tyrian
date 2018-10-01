@@ -16,7 +16,7 @@ var ILLEGAL_NAMESPACES = [
 ];
 function commandOutput(command, args) {
     var child = child_process_1.spawnSync(command, args, { stdio: "pipe" });
-    return child.stdout.toString() + child.stderr.toString();
+    return (child.stdout || "").toString() + (child.stderr || "").toString();
 }
 function outputPackage(pkg, namespaces, outputDir) {
     Object.keys(pkg).forEach(function (key) {

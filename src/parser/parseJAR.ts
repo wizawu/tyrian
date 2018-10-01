@@ -17,7 +17,7 @@ const ILLEGAL_NAMESPACES = [
 
 function commandOutput(command: string, args: string[]): string {
     let child = spawnSync(command, args, { stdio: "pipe" })
-    return child.stdout.toString() + child.stderr.toString()
+    return (child.stdout || "").toString() + (child.stderr || "").toString()
 }
 
 function outputPackage(pkg: any, namespaces: string[], outputDir: string) {

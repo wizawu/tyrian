@@ -29,7 +29,7 @@ else if (command === "build" && process.argv[3]) {
         input: [],
         output: [],
         watch: false,
-        uglify: /(?:)/,
+        uglify: false,
     };
     var outDir = "";
     var _c = false;

@@ -16,7 +16,7 @@ export interface Options {
     input: string[]
     output: string[]
     watch: boolean
-    uglify: RegExp
+    uglify: RegExp | false
 }
 
 function getCompiler(instdir: string, instmod: string, options: Options) {
@@ -102,12 +102,12 @@ function getCompiler(instdir: string, instmod: string, options: Options) {
         },
         plugins: [
             new webpack.DefinePlugin(javaPackages),
-            new UglifyJsPlugin({
+            options.uglify ? new UglifyJsPlugin({
                 test: options.uglify,
                 parallel: true,
-            }),
+            }) : null,
             new ForkTsCheckerWebpackPlugin(),
-        ],
+        ].filter(p => p !== null),
         optimization: {
             nodeEnv: options.watch ? "development" : "production",
             ...webpackConfig.optimization,

@@ -95,12 +95,12 @@ function getCompiler(instdir, instmod, options) {
         },
         plugins: [
             new webpack.DefinePlugin(javaPackages),
-            new UglifyJsPlugin({
+            options.uglify ? new UglifyJsPlugin({
                 test: options.uglify,
                 parallel: true,
-            }),
+            }) : null,
             new ForkTsCheckerWebpackPlugin(),
-        ],
+        ].filter(function (p) { return p !== null; }),
         optimization: __assign({ nodeEnv: options.watch ? "development" : "production" }, webpackConfig.optimization)
     });
 }

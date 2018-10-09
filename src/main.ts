@@ -27,7 +27,7 @@ if (command === "help") {
         input: [],
         output: [],
         watch: false,
-        uglify: /(?:)/,
+        uglify: false,
     }
     let outDir = ""
     let _c = false

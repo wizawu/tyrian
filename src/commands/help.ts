@@ -21,7 +21,8 @@ install options:
   -D                    do not generate typescript definitions for lib/*.jar
 
 build options:
-  -u                    uglify build results
+  -u                    uglify all build results
+  -u/<regex>/           uglify build results of entries matching <regex>
   -w                    watch changes and re-build
 
 build output/entry:

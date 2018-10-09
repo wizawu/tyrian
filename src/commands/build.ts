@@ -9,13 +9,14 @@ import { getTopPackages } from "../parser/parseJAR"
 import { tsconfig } from "./install"
 
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin")
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin")
 const autoprefixer = require("autoprefixer")
 
 export interface Options {
     input: string[]
     output: string[]
     watch: boolean
-    uglify: boolean
+    uglify: RegExp
 }
 
 function getCompiler(instdir: string, instmod: string, options: Options) {
@@ -100,8 +101,12 @@ function getCompiler(instdir: string, instmod: string, options: Options) {
             }]
         },
         plugins: [
-            new ForkTsCheckerWebpackPlugin(),
             new webpack.DefinePlugin(javaPackages),
+            new UglifyJsPlugin({
+                test: options.uglify,
+                parallel: true,
+            }),
+            new ForkTsCheckerWebpackPlugin(),
         ],
         optimization: {
             nodeEnv: options.watch ? "development" : "production",

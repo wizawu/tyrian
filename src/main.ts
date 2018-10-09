@@ -27,7 +27,7 @@ if (command === "help") {
         input: [],
         output: [],
         watch: false,
-        uglify: false,
+        uglify: /(?:)/,
     }
     let outDir = ""
     let _c = false
@@ -36,8 +36,8 @@ if (command === "help") {
         let arg = process.argv[i]
         if (arg === "-w") {
             options.watch = true
-        } else if (arg === "-u") {
-            options.uglify = true
+        } else if (/^-u(\/\S+\/)?$/.test(arg)) {
+            options.uglify = new RegExp(arg.replace(/^-u\/?/, "").replace(/\/$/, ""))
         } else if (arg === "--skipJDK") {
             console.error(chalk.yellow("`--skipJDK` is no longer supported"))
         } else if (arg === "-c") {

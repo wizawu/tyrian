@@ -110,7 +110,6 @@ function getCompiler(instdir: string, instmod: string, options: Options) {
         ],
         optimization: {
             nodeEnv: options.watch ? "development" : "production",
-            minimize: options.uglify,
             ...webpackConfig.optimization,
         }
     })

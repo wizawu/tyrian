@@ -101,7 +101,7 @@ function getCompiler(instdir, instmod, options) {
             }),
             new ForkTsCheckerWebpackPlugin(),
         ],
-        optimization: __assign({ nodeEnv: options.watch ? "development" : "production", minimize: options.uglify }, webpackConfig.optimization)
+        optimization: __assign({ nodeEnv: options.watch ? "development" : "production" }, webpackConfig.optimization)
     });
 }
 function default_1(instdir, instmod, options) {

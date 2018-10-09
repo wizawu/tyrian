@@ -65,7 +65,7 @@ function getCompiler(instdir, instmod, options) {
         webpackConfig = packageJSON.webpack || {};
     }
     return webpack({
-        mode: options.uglify ? "production" : "development",
+        mode: options.watch ? "development" : "production",
         devtool: webpackConfig.devtool || "source-map",
         context: context,
         resolve: __assign({ extensions: [".js", ".ts", ".tsx"] }, webpackConfig.resolve),
@@ -95,13 +95,14 @@ function getCompiler(instdir, instmod, options) {
         },
         plugins: [
             new webpack.DefinePlugin(javaPackages),
-            options.uglify ? new UglifyJsPlugin({
-                test: options.uglify,
-                parallel: true,
-            }) : null,
             new ForkTsCheckerWebpackPlugin(),
-        ].filter(function (p) { return p !== null; }),
-        optimization: __assign({ nodeEnv: options.watch ? "development" : "production" }, webpackConfig.optimization)
+        ],
+        optimization: __assign({ minimize: options.uglify ? true : false, minimizer: options.uglify ? [
+                new UglifyJsPlugin({
+                    test: options.uglify,
+                    parallel: true,
+                })
+            ] : undefined, nodeEnv: options.watch ? "development" : "production" }, webpackConfig.optimization)
     });
 }
 function default_1(instdir, instmod, options) {

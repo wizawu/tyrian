@@ -22,7 +22,7 @@ install options:
 
 build options:
   -u                    uglify all build results
-  -u/<regex>/           uglify build results of entries matching <regex>
+  -u/<regex>/           uglify build results matching <regex>
   -w                    watch changes and re-build
 
 build output/entry:

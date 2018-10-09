@@ -69,7 +69,7 @@ function getCompiler(instdir: string, instmod: string, options: Options) {
     }
 
     return webpack({
-        mode: options.uglify ? "production" : "development",
+        mode: options.watch ? "development" : "production",
         devtool: webpackConfig.devtool || "source-map",
         context: context,
         resolve: {
@@ -102,13 +102,16 @@ function getCompiler(instdir: string, instmod: string, options: Options) {
         },
         plugins: [
             new webpack.DefinePlugin(javaPackages),
-            options.uglify ? new UglifyJsPlugin({
-                test: options.uglify,
-                parallel: true,
-            }) : null,
             new ForkTsCheckerWebpackPlugin(),
-        ].filter(p => p !== null),
+        ],
         optimization: {
+            minimize: options.uglify ? true : false,
+            minimizer: options.uglify ? [
+                new UglifyJsPlugin({
+                    test: options.uglify,
+                    parallel: true,
+                })
+            ] : undefined,
             nodeEnv: options.watch ? "development" : "production",
             ...webpackConfig.optimization,
         }

@@ -20,6 +20,7 @@ var const_1 = require("../const");
 var parseJAR_1 = require("../parser/parseJAR");
 var install_1 = require("./install");
 var ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
+var UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 var autoprefixer = require("autoprefixer");
 function getCompiler(instdir, instmod, options) {
     var context = process.cwd();
@@ -93,8 +94,12 @@ function getCompiler(instdir, instmod, options) {
                 }]
         },
         plugins: [
-            new ForkTsCheckerWebpackPlugin(),
             new webpack.DefinePlugin(javaPackages),
+            new UglifyJsPlugin({
+                test: options.uglify,
+                parallel: true,
+            }),
+            new ForkTsCheckerWebpackPlugin(),
         ],
         optimization: __assign({ nodeEnv: options.watch ? "development" : "production", minimize: options.uglify }, webpackConfig.optimization)
     });

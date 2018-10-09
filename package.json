@@ -1,6 +1,6 @@
 {
   "name": "1c",
-  "version": "8.16.5",
+  "version": "8.17.0",
   "repository": "github:wizawu/1c",
   "license": "MIT",
   "bin": "./bin/1c",
@@ -21,6 +21,7 @@
     "style-loader": "^0.20.1",
     "ts-loader": "^4.5.0",
     "typescript": "^3.0.1",
+    "uglifyjs-webpack-plugin": "^2.0.1",
     "url-loader": "^1.1.0",
     "webpack": "^4.16.5"
   }

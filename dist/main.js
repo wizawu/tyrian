@@ -29,7 +29,7 @@ else if (command === "build" && process.argv[3]) {
         input: [],
         output: [],
         watch: false,
-        uglify: false,
+        uglify: /(?:)/,
     };
     var outDir = "";
     var _c = false;
@@ -39,8 +39,8 @@ else if (command === "build" && process.argv[3]) {
         if (arg === "-w") {
             options.watch = true;
         }
-        else if (arg === "-u") {
-            options.uglify = true;
+        else if (/^-u(\/\S+\/)?$/.test(arg)) {
+            options.uglify = new RegExp(arg.replace(/^-u\/?/, "").replace(/\/$/, ""));
         }
         else if (arg === "--skipJDK") {
             console.error(chalk_1.default.yellow("`--skipJDK` is no longer supported"));

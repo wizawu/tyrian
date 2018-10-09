@@ -8,8 +8,8 @@ import { EXIT_STATUS } from "../const"
 import { getTopPackages } from "../parser/parseJAR"
 import { tsconfig } from "./install"
 
+const BabelMinifyPlugin = require("babel-minify-webpack-plugin")
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin")
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin")
 const autoprefixer = require("autoprefixer")
 
 export interface Options {
@@ -107,9 +107,9 @@ function getCompiler(instdir: string, instmod: string, options: Options) {
         optimization: {
             minimize: options.uglify ? true : false,
             minimizer: options.uglify ? [
-                new UglifyJsPlugin({
+                new BabelMinifyPlugin({}, {
                     test: options.uglify,
-                    parallel: true,
+                    sourceMap: false,
                 })
             ] : undefined,
             nodeEnv: options.watch ? "development" : "production",

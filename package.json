@@ -1,6 +1,6 @@
 {
   "name": "1c",
-  "version": "8.17.2",
+  "version": "8.17.3",
   "repository": "github:wizawu/1c",
   "license": "MIT",
   "bin": "./bin/1c",
@@ -10,6 +10,7 @@
     "@types/object-path": "^0.9.29",
     "@types/webpack": "^4.4.10",
     "autoprefixer": "^8.6.0",
+    "babel-minify-webpack-plugin": "^0.3.1",
     "chalk": "^2.4.1",
     "css-loader": "^0.28.9",
     "filesize": "^3.6.1",
@@ -21,7 +22,6 @@
     "style-loader": "^0.20.1",
     "ts-loader": "^4.5.0",
     "typescript": "^3.0.1",
-    "uglifyjs-webpack-plugin": "^2.0.1",
     "url-loader": "^1.1.0",
     "webpack": "^4.16.5"
   }

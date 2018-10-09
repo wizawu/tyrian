@@ -19,8 +19,8 @@ var chalk_1 = require("chalk");
 var const_1 = require("../const");
 var parseJAR_1 = require("../parser/parseJAR");
 var install_1 = require("./install");
+var BabelMinifyPlugin = require("babel-minify-webpack-plugin");
 var ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
-var UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 var autoprefixer = require("autoprefixer");
 function getCompiler(instdir, instmod, options) {
     var context = process.cwd();
@@ -98,9 +98,9 @@ function getCompiler(instdir, instmod, options) {
             new ForkTsCheckerWebpackPlugin(),
         ],
         optimization: __assign({ minimize: options.uglify ? true : false, minimizer: options.uglify ? [
-                new UglifyJsPlugin({
+                new BabelMinifyPlugin({}, {
                     test: options.uglify,
-                    parallel: true,
+                    sourceMap: false,
                 })
             ] : undefined, nodeEnv: options.watch ? "development" : "production" }, webpackConfig.optimization)
     });

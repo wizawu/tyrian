@@ -8,8 +8,8 @@ import { EXIT_STATUS } from "../const"
 import { getTopPackages } from "../parser/parseJAR"
 import { tsconfig } from "./install"
 
-const BabelMinifyPlugin = require("babel-minify-webpack-plugin")
-const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin")
+const ForkTsCheckerPlugin = require("fork-ts-checker-webpack-plugin")
+const TerserPlugin = require("terser-webpack-plugin")
 const autoprefixer = require("autoprefixer")
 
 export interface Options {
@@ -102,13 +102,14 @@ function getCompiler(instdir: string, instmod: string, options: Options) {
         },
         plugins: [
             new webpack.DefinePlugin(javaPackages),
-            new ForkTsCheckerWebpackPlugin(),
+            new ForkTsCheckerPlugin(),
         ],
         optimization: {
             minimize: options.uglify ? true : false,
             minimizer: options.uglify ? [
-                new BabelMinifyPlugin({}, {
+                new TerserPlugin({
                     test: options.uglify,
+                    parallel: true,
                     sourceMap: false,
                 })
             ] : undefined,

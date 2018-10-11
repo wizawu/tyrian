@@ -28,6 +28,10 @@ declare namespace sun {
             public static setJavaUtilZipFileAccess(arg0: sun.misc.JavaUtilZipFileAccess | sun.misc.JavaUtilZipFileAccess$$Lambda): void
             public static setJavaAWTAccess(arg0: sun.misc.JavaAWTAccess | sun.misc.JavaAWTAccess$$Lambda): void
             public static getJavaAWTAccess(): sun.misc.JavaAWTAccess
+            public static getJavaObjectInputStreamAccess(): sun.misc.JavaObjectInputStreamAccess
+            public static setJavaObjectInputStreamAccess(arg0: sun.misc.JavaObjectInputStreamAccess | sun.misc.JavaObjectInputStreamAccess$$Lambda): void
+            public static setJavaxCryptoSealedObjectAccess(arg0: sun.misc.JavaxCryptoSealedObjectAccess | sun.misc.JavaxCryptoSealedObjectAccess$$Lambda): void
+            public static getJavaxCryptoSealedObjectAccess(): sun.misc.JavaxCryptoSealedObjectAccess
             public static class: java.lang.Class<any>
         }
     }

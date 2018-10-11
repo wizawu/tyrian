@@ -11,6 +11,7 @@ declare namespace sun {
                 protected resolveClass(arg0: java.io.ObjectStreamClass): java.lang.Class<any>
                 protected resolveProxyClass(arg0: java.lang.String[]): java.lang.Class<any>
                 protected readLocation(): java.lang.Object
+                protected readClassDescriptor(): java.io.ObjectStreamClass
                 public static class: java.lang.Class<any>
             }
         }

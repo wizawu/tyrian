@@ -1,7 +1,7 @@
 declare namespace sun {
     namespace awt {
         namespace X11 {
-            class XLightweightFramePeer extends sun.awt.X11.XFramePeer {
+            class XLightweightFramePeer extends sun.awt.X11.XFramePeer implements sun.awt.OverrideNativeWindowHandle {
                 public getGraphics(): java.awt.Graphics
                 public xSetVisible(arg0: boolean): void
                 protected requestXFocus(arg0: long, arg1: boolean): void
@@ -9,6 +9,8 @@ declare namespace sun {
                 public updateCursorImmediately(): void
                 public addDropTarget(arg0: java.awt.dnd.DropTarget): void
                 public removeDropTarget(arg0: java.awt.dnd.DropTarget): void
+                public overrideWindowHandle(arg0: long): void
+                public getOverriddenWindowHandle(): long
                 public emulateActivation(arg0: boolean): void
                 public getBoundsPrivate(): java.awt.Rectangle
                 public setBoundsPrivate(arg0: int, arg1: int, arg2: int, arg3: int): void

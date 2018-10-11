@@ -7,6 +7,7 @@ declare namespace com {
                         namespace streaming {
                             class XMLStreamWriterFactory$HasEncodingWriter extends com.sun.xml.internal.ws.util.xml.XMLStreamWriterFilter implements com.sun.xml.internal.ws.encoding.HasEncoding {
                                 public getEncoding(): string
+                                public getWriter(): javax.xml.stream.XMLStreamWriter
                                 public static class: java.lang.Class<any>
                             }
                         }

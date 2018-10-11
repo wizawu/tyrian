@@ -1,11 +1,17 @@
 declare namespace org {
     namespace GNOME {
         namespace Accessibility {
-            class AtkWrapper$2 extends java.awt.event.ComponentAdapter {
-                public componentResized(arg0: java.awt.event.ComponentEvent): void
-                public componentMoved(arg0: java.awt.event.ComponentEvent): void
-                public componentShown(arg0: java.awt.event.ComponentEvent): void
-                public componentHidden(arg0: java.awt.event.ComponentEvent): void
+            class AtkWrapper$2 extends java.awt.event.WindowAdapter {
+                public windowActivated(arg0: java.awt.event.WindowEvent): void
+                public windowDeactivated(arg0: java.awt.event.WindowEvent): void
+                public windowStateChanged(arg0: java.awt.event.WindowEvent): void
+                public windowDeiconified(arg0: java.awt.event.WindowEvent): void
+                public windowIconified(arg0: java.awt.event.WindowEvent): void
+                public windowOpened(arg0: java.awt.event.WindowEvent): void
+                public windowClosed(arg0: java.awt.event.WindowEvent): void
+                public windowClosing(arg0: java.awt.event.WindowEvent): void
+                public windowGainedFocus(arg0: java.awt.event.WindowEvent): void
+                public windowLostFocus(arg0: java.awt.event.WindowEvent): void
                 public static class: java.lang.Class<any>
             }
         }

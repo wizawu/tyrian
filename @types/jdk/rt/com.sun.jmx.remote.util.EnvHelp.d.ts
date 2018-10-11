@@ -5,8 +5,6 @@ declare namespace com {
                 namespace util {
                     class EnvHelp {
                         public static readonly CREDENTIAL_TYPES: string
-                        public static readonly CREDENTIALS_FILTER_PATTERN: string
-                        public static readonly SERIAL_FILTER_PATTERN: string
                         public static readonly BUFFER_SIZE_PROPERTY: string
                         public static readonly MAX_FETCH_NOTIFS: string
                         public static readonly FETCH_TIMEOUT: string

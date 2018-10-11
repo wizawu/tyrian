@@ -28,6 +28,7 @@ declare namespace sun {
             public static getPeakFinalRefCount(): int
             public static addFinalRefCount(arg0: int): void
             public static toThreadState(arg0: int): java.lang.Thread$State
+            public static latestUserDefinedLoader0(): java.lang.ClassLoader
             public static latestUserDefinedLoader(): java.lang.ClassLoader
             public static class: java.lang.Class<any>
         }

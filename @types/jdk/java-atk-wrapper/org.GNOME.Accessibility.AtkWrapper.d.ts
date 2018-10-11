@@ -6,6 +6,7 @@ declare namespace org {
                 public static registerPropertyChangeListener(arg0: javax.accessibility.AccessibleContext): void
                 public static initNativeLibrary(): boolean
                 public static loadAtkBridge(): void
+                public static GC(): void
                 public static focusNotify(arg0: javax.accessibility.AccessibleContext): void
                 public static windowOpen(arg0: javax.accessibility.AccessibleContext, arg1: boolean): void
                 public static windowClose(arg0: javax.accessibility.AccessibleContext, arg1: boolean): void

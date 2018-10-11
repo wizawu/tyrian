@@ -11,6 +11,8 @@ declare namespace sun {
             public static getAWTEventAccessor(): sun.awt.AWTAccessor$AWTEventAccessor
             public static setInputEventAccessor(arg0: sun.awt.AWTAccessor$InputEventAccessor | sun.awt.AWTAccessor$InputEventAccessor$$Lambda): void
             public static getInputEventAccessor(): sun.awt.AWTAccessor$InputEventAccessor
+            public static setMouseEventAccessor(arg0: sun.awt.AWTAccessor$MouseEventAccessor): void
+            public static getMouseEventAccessor(): sun.awt.AWTAccessor$MouseEventAccessor
             public static setFrameAccessor(arg0: sun.awt.AWTAccessor$FrameAccessor): void
             public static getFrameAccessor(): sun.awt.AWTAccessor$FrameAccessor
             public static setKeyboardFocusManagerAccessor(arg0: sun.awt.AWTAccessor$KeyboardFocusManagerAccessor): void

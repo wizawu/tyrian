@@ -8,9 +8,9 @@ declare namespace sun {
             public static getManagementProperties(): java.util.Properties
             public static startAgent(): void
             public static error(arg0: java.lang.String | string): void
-            public static error(arg0: java.lang.String | string, arg1: java.lang.String[]): void
             public static error(arg0: java.lang.String | string, arg1: java.lang.String | string): void
             public static error(arg0: java.lang.Exception): void
+            public static error(arg0: sun.management.AgentConfigurationError): void
             public static warning(arg0: java.lang.String | string, arg1: java.lang.String | string): void
             public static getText(arg0: java.lang.String | string): string
             public static getText(arg0: java.lang.String | string, ...arg1: java.lang.String[]): string

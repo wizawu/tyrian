@@ -17,7 +17,6 @@ declare namespace sun {
                 SSL_ENABLED_PROTOCOLS: string
                 SSL_NEED_CLIENT_AUTH: string
                 SSL_CONFIG_FILE_NAME: string
-                SERIAL_FILTER_PATTERN: string
             }
         }
     }

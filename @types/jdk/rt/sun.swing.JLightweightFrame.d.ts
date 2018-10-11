@@ -18,6 +18,7 @@ declare namespace sun {
             public getLayeredPane(): javax.swing.JLayeredPane
             public setGlassPane(arg0: java.awt.Component): void
             public getGlassPane(): java.awt.Component
+            public overrideNativeWindowHandle(arg0: long, arg1: java.lang.Runnable | java.lang.Runnable$$Lambda): void
             public createDragGestureRecognizer<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.Class<T>, arg1: java.awt.dnd.DragSource, arg2: java.awt.Component, arg3: int, arg4: java.awt.dnd.DragGestureListener | java.awt.dnd.DragGestureListener$$Lambda): T
             public createDragSourceContextPeer<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.dnd.DragGestureEvent): java.awt.dnd.peer.DragSourceContextPeer
             public addDropTarget<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.awt.dnd.DropTarget): void

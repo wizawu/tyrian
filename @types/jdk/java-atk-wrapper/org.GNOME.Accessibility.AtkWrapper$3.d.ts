@@ -1,8 +1,11 @@
 declare namespace org {
     namespace GNOME {
         namespace Accessibility {
-            class AtkWrapper$3 implements java.awt.event.AWTEventListener {
-                public eventDispatched(arg0: java.awt.AWTEvent): void
+            class AtkWrapper$3 extends java.awt.event.ComponentAdapter {
+                public componentResized(arg0: java.awt.event.ComponentEvent): void
+                public componentMoved(arg0: java.awt.event.ComponentEvent): void
+                public componentShown(arg0: java.awt.event.ComponentEvent): void
+                public componentHidden(arg0: java.awt.event.ComponentEvent): void
                 public static class: java.lang.Class<any>
             }
         }

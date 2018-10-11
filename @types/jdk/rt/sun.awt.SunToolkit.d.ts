@@ -124,6 +124,8 @@ declare namespace sun {
             protected waitForIdle(arg0: long): boolean
             public abstract grab(arg0: java.awt.Window): void
             public abstract ungrab(arg0: java.awt.Window): void
+            public showOrHideTouchKeyboard(arg0: java.awt.Component, arg1: java.awt.AWTEvent): void
+            public static isTouchKeyboardAutoShowEnabled(): boolean
             public static closeSplashScreen(): void
             public static setAAFontSettingsCondition(arg0: boolean): void
             protected getDesktopAAHints(): java.awt.RenderingHints

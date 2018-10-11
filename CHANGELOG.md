@@ -6,6 +6,10 @@ Changelog
 * OpenJDK 10 + Gradle 4.4
 * Expose internal functions
 
+### 8.17.0
+
+* Add build option `-u/<regex>`.
+
 ### 8.16.0
 
 * Upgraded TypeScript to 3.

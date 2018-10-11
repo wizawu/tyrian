@@ -38,7 +38,7 @@ function default_1() {
     if (child.status !== 0)
         ok = false;
     child = child_process_1.spawnSync("jjs", ["-fv"], __assign({ input: "quit()" }, options));
-    output += "jjs      - " + notFound("", child.stderr);
+    output += "jjs      - " + notFound("", child.stderr).replace(/\n.+$/, "\n");
     if (child.status !== 0)
         ok = false;
     child = child_process_1.spawnSync("which", ["javap"], options);
@@ -51,7 +51,7 @@ function default_1() {
         ok = false;
     child = child_process_1.spawnSync("gradle", ["-version"], options);
     output += header("gradle", "https://gradle.org/install");
-    output += notFound(child.stdout, child.stderr);
+    output += notFound(child.stdout, child.stderr).replace(/(^|\n)\n/g, "$1");
     if (child.status !== 0)
         ok = false;
     if (!ok) {

@@ -8,7 +8,7 @@ function header(tool: string, link: string) {
 
 const notFound = (stdout, stderr) => (stdout + stderr) || chalk.red("** not found **\n")
 
-export default function () {
+export default function() {
     let ok = true
     let output = ""
     let options = { stdio: "pipe" }
@@ -33,7 +33,7 @@ export default function () {
 
     // jjs
     child = spawnSync("jjs", ["-fv"], { ...{ input: "quit()" }, ...options })
-    output += "jjs      - " + notFound("", child.stderr)
+    output += "jjs      - " + notFound("", child.stderr).replace(/\n.+$/, "\n")
     if (child.status !== 0) ok = false
 
     // javap
@@ -49,7 +49,7 @@ export default function () {
     // gradle
     child = spawnSync("gradle", ["-version"], options)
     output += header("gradle", "https://gradle.org/install")
-    output += notFound(child.stdout, child.stderr)
+    output += notFound(child.stdout, child.stderr).replace(/(^|\n)\n/g, "$1")
     if (child.status !== 0) ok = false
 
     if (!ok) {

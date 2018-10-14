@@ -71,7 +71,7 @@ function getCompiler(instdir: string, instmod: string, options: Options) {
 
     return webpack({
         mode: options.watch ? "development" : "production",
-        devtool: webpackConfig.devtool || "source-map",
+        devtool: "source-map",
         context: context,
         resolve: {
             extensions: [".js", ".ts", ".tsx"],

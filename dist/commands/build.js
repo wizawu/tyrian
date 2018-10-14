@@ -67,7 +67,7 @@ function getCompiler(instdir, instmod, options) {
     }
     return webpack({
         mode: options.watch ? "development" : "production",
-        devtool: webpackConfig.devtool || "source-map",
+        devtool: "source-map",
         context: context,
         resolve: __assign({ extensions: [".js", ".ts", ".tsx"] }, webpackConfig.resolve),
         resolveLoader: { modules: [instmod] },

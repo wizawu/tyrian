@@ -1,5 +1,6 @@
 import * as filesize from "filesize"
 import * as fs from "fs"
+import * as os from "os"
 import * as path from "path"
 import * as webpack from "webpack"
 import chalk from "chalk"
@@ -102,7 +103,9 @@ function getCompiler(instdir: string, instmod: string, options: Options) {
         },
         plugins: [
             new webpack.DefinePlugin(javaPackages),
-            new ForkTsCheckerPlugin(),
+            new ForkTsCheckerPlugin({
+                memoryLimit: Math.floor(os.totalmem() / 1024 / 1024 / 4),
+            }),
         ],
         optimization: {
             minimize: options.uglify ? true : false,

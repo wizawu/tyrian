@@ -13,6 +13,7 @@ var __assign = (this && this.__assign) || function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var filesize = require("filesize");
 var fs = require("fs");
+var os = require("os");
 var path = require("path");
 var webpack = require("webpack");
 var chalk_1 = require("chalk");
@@ -95,7 +96,9 @@ function getCompiler(instdir, instmod, options) {
         },
         plugins: [
             new webpack.DefinePlugin(javaPackages),
-            new ForkTsCheckerPlugin(),
+            new ForkTsCheckerPlugin({
+                memoryLimit: Math.floor(os.totalmem() / 1024 / 1024 / 4),
+            }),
         ],
         optimization: __assign({ minimize: options.uglify ? true : false, minimizer: options.uglify ? [
                 new TerserPlugin({

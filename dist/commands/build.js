@@ -97,7 +97,7 @@ function getCompiler(instdir, instmod, options) {
         plugins: [
             new webpack.DefinePlugin(javaPackages),
             new ForkTsCheckerPlugin({
-                memoryLimit: Math.floor(os.totalmem() / 1024 / 1024 / 4),
+                memoryLimit: Math.max(1024, Math.floor(os.totalmem() / 1024 / 1024 / 4)),
             }),
         ],
         optimization: __assign({ minimize: options.uglify ? true : false, minimizer: options.uglify ? [

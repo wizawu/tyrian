@@ -27,8 +27,9 @@ exports.tsconfig = function (instdir) { return JSON.stringify({
         instdir + "/@types/jdk/rt/java.*.d.ts",
         instdir + "/@types/jdk/rt/javax.*.d.ts",
         instdir + "/@types/jdk/rt/jdk.*.d.ts",
-        "**/*.ts",
-        "**/*.tsx",
+        "lib/**/*.d.ts",
+        "src/**/*.ts",
+        "src/**/*.tsx",
     ]
 }, null, 2); };
 var package_json = JSON.stringify({

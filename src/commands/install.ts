@@ -28,8 +28,9 @@ export const tsconfig = instdir => JSON.stringify({
         `${instdir}/@types/jdk/rt/java.*.d.ts`,
         `${instdir}/@types/jdk/rt/javax.*.d.ts`,
         `${instdir}/@types/jdk/rt/jdk.*.d.ts`,
-        "**/*.ts",
-        "**/*.tsx",
+        "lib/**/*.d.ts",
+        "src/**/*.ts",
+        "src/**/*.tsx",
     ]
 }, null, 2)
 

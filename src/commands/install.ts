@@ -45,8 +45,8 @@ const build_gradle = deps => `
     apply plugin: "java"
 
     repositories {
-        mavenCentral()
         jcenter()
+        mavenCentral()
     }
 
     task install(type: Copy) {

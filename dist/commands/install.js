@@ -17,6 +17,7 @@ exports.tsconfig = function (instdir) { return JSON.stringify({
         "noUnusedLocals": true,
         "pretty": true,
         "removeComments": true,
+        "resolveJsonModule": true,
         "skipLibCheck": true,
         "sourceMap": true,
         "strictNullChecks": true,

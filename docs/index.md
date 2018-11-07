@@ -51,7 +51,7 @@ Let's use [spark](http://sparkjava.com/) as an example.
     [Thread-1] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
     [Thread-1] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
     [Thread-1] INFO org.eclipse.jetty.server.Server - jetty-9.3.6.v20151106
-    [Thread-1] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@78ce693d{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
+    [Thread-1] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@78ce693d
     [Thread-1] INFO org.eclipse.jetty.server.Server - Started @1588ms
     ```
 

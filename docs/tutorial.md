@@ -35,14 +35,10 @@ $ cat package.json
   ]
 }
 
-
 $ 1c install
 npm WARN wizawu.com No repository field.
 npm WARN wizawu.com No license field.
-
 up to date in 0.4s
-
-:install
 
 BUILD SUCCESSFUL
 

@@ -47,5 +47,4 @@ Groovy:       2.4.10
 Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
 JVM:          1.8.0_192 (Eclipse OpenJ9 openj9-0.10.0-rc1)
 OS:           Linux 4.9.0-7-amd64 amd64
-
 ```

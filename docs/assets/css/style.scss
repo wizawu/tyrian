@@ -2,26 +2,30 @@
 ---
 
 @import "{{ site.theme }}";
-@import url("https://fonts.googleapis.com/css?family=PT+Sans");
-@import url('https://fonts.googleapis.com/css?family=PT+Mono');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 
 h1>em {
     display: none;
 }
 
 body {
-    font-family: "PT Sans", sans-serif;
+    font-family: Lato, sans-serif;
     line-height: 2;
 }
 
 header h1,
 h1, h2, h3, h4, h5,
 pre, code, pre *, code * {
-    font-family: "PT Mono", monospace;
+    font-family: "Ubuntu Mono", monospace;
 }
 
 li {
     line-height: 2;
+}
+
+pre {
+    line-height: 1.6;
 }
 
 code.highlighter-rouge {
@@ -29,6 +33,6 @@ code.highlighter-rouge {
     margin: 0 2px;
 }
 
-.main_content a {
+#main_content a {
     font-variant: small-caps;
 }

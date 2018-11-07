@@ -64,7 +64,7 @@ Build the entry.
 
 ```bash
 $ 1c build main.ts
-ts-loader: Using typescript@2.3.4 and /home/wiza/new/tsconfig.json
+ts-loader: Using typescript@2.3.4 and /home/wizawu/new/tsconfig.json
 Hash: a224cd98aa0291534c77
 Time: 6514ms
       Asset       Size  Chunks             Chunk Names

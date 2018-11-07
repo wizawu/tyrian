@@ -1,1 +1,5 @@
 theme: jekyll-theme-architect
+title: 1c
+description: Full-featured TypeScript on JVM
+google_analytics: UA-74127852-5
+show_downloads: true

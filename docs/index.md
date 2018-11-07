@@ -2,6 +2,8 @@
 layout: default
 ---
 
+# _TypeScript on JVM_
+
 ## What's 1c
 
 1c is aimed to compile TypeScript to runnable code on both JVM and web browser. You can implement the full stack with TypeScript while using libraries from [Maven](https://maven.apache.org/) and [NPM](https://www.npmjs.com/) together.

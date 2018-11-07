@@ -2,11 +2,19 @@
 ---
 
 @import "{{ site.theme }}";
-@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css?family=Karla");
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro");
+@import url("https://fonts.googleapis.com/css?family=Nobile");
+@import url("https://fonts.googleapis.com/css?family=Oxygen");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 
+h1>em {
+    display: none;
+}
+
 body {
-    font-family: Nunito, sans-serif;
+    font-family: "Maven Pro", sans-serif;
 }
 
 header h1,

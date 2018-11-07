@@ -2,7 +2,13 @@
 ---
 
 @import "{{ site.theme }}";
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 
 body {
-    font-family: sans-serif;
+    font-family: Nunito, sans-serif;
+}
+
+pre, code, pre *, code * {
+    font-family: "Ubuntu Mono", monospace;
 }

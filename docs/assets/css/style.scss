@@ -2,21 +2,26 @@
 ---
 
 @import "{{ site.theme }}";
-@import url("https://fonts.googleapis.com/css?family=Ubuntu");
-@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+@import url('https://fonts.googleapis.com/css?family=PT+Mono');
 
 h1>em {
     display: none;
 }
 
 body {
-    font-family: "Ubuntu", sans-serif;
+    font-family: "PT Sans", sans-serif;
+    line-height: 2;
 }
 
 header h1,
 h1, h2, h3, h4, h5,
 pre, code, pre *, code * {
-    font-family: "Ubuntu Mono", monospace;
+    font-family: "PT Mono", monospace;
+}
+
+li {
+    line-height: 2;
 }
 
 code.highlighter-rouge {

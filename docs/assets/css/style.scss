@@ -9,6 +9,12 @@ body {
     font-family: Nunito, sans-serif;
 }
 
+header h1,
+h1, h2, h3, h4, h5,
 pre, code, pre *, code * {
     font-family: "Ubuntu Mono", monospace;
+}
+
+code.highlighter-rouge {
+    color: #90a959;
 }

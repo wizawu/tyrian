@@ -60,3 +60,11 @@ Let's use [spark](http://sparkjava.com/) as an example.
     ```
     $ curl http://127.0.0.1:4567/hello
     ```
+
+* Want to see more [examples](https://github.com/wizawu/1c/tree/master/examples)?
+
+* Interested? Why not [install](./installation) it and have a try!
+
+* Learn from zero with this [tutorial](./tutorial).
+
+* Read the [guideline](./guideline) for more details.

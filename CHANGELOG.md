@@ -3,6 +3,7 @@ Changelog
 
 ### Roadmap
 
+* Fix method overloading
 * OpenJDK 10 + Gradle 4.4
 * Expose internal functions
 

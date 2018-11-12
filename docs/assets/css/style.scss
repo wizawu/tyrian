@@ -2,7 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Neucha');
 @import url('https://fontlibrary.org/face/courier-code');
 
 h1>em {
@@ -10,7 +10,7 @@ h1>em {
 }
 
 body {
-    font-family: Lato, sans-serif;
+    font-family: Neucha, sans-serif;
     line-height: 2;
 }
 
@@ -19,6 +19,10 @@ h1, h2, h3, h4, h5,
 pre, code, pre *, code * {
     font-family: CourierCodeRoman, monospace;
     letter-spacing: -0.05em;
+}
+
+pre, code, pre *, code * {
+    font-size: 0.9rem;
 }
 
 li {

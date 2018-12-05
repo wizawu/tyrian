@@ -28,4 +28,13 @@ exports.that.clearTimeout = function (thread) {
     }
     thread.join();
 };
+exports.that.setInterval = function (runnable, period) {
+    var executor = new java.util.concurrent.ScheduledThreadPoolExecutor(1);
+    executor.scheduleAtFixedRate(runnable, period, period, java.util.concurrent.TimeUnit.MILLISECONDS);
+    return executor;
+};
+exports.that.clearInterval = function (executor) {
+    if (!executor.isShutdown())
+        executor.shutdown();
+};
 //# sourceMappingURL=global.js.map

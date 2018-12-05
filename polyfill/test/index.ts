@@ -28,7 +28,31 @@ describe("Node Polyfill", () => {
         java.lang.Thread.sleep(500)
         assert.strictEqual(x, 0)
         clearTimeout(timer)
-        java.lang.Thread.sleep(500 + 100)
+        java.lang.Thread.sleep(500)
+        assert.strictEqual(x, 0)
+    })
+
+    it("setInterval", () => {
+        let x = 0
+        let timer = setInterval(() => x = x + 1, 1000)
+        java.lang.Thread.sleep(500)
+        assert.strictEqual(x, 0)
+        java.lang.Thread.sleep(500)
+        assert.strictEqual(x, 1)
+        java.lang.Thread.sleep(1000)
+        assert.strictEqual(x, 2)
+        clearInterval(timer)
+    })
+
+    it("clearInterval", () => {
+        let x = 0
+        let timer = setInterval(() => x = x + 1, 1000)
+        java.lang.Thread.sleep(500)
+        assert.strictEqual(x, 0)
+        clearInterval(timer)
+        java.lang.Thread.sleep(500)
+        assert.strictEqual(x, 0)
+        java.lang.Thread.sleep(1000)
         assert.strictEqual(x, 0)
     })
 

@@ -28,3 +28,13 @@ that.clearTimeout = (thread: java.lang.Thread) => {
     }
     thread.join()
 }
+
+that.setInterval = (runnable: Function, period) => {
+    let executor = new java.util.concurrent.ScheduledThreadPoolExecutor(1)
+    executor.scheduleAtFixedRate(runnable as any, period, period, java.util.concurrent.TimeUnit.MILLISECONDS)
+    return executor
+}
+
+that.clearInterval = (executor: java.util.concurrent.ScheduledThreadPoolExecutor) => {
+    if (!executor.isShutdown()) executor.shutdown()
+}

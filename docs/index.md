@@ -20,14 +20,14 @@ Let's use [spark](http://sparkjava.com/) as an example.
 
     ```typescript
     {
-      "dependencies": {
-        "@types/chalk": "^0.4.31",
-        "chalk": "^1.1.3"
-      },
-      "mvnDependencies": [
-        "com.sparkjava:spark-core:2.5.5",
-        "org.slf4j:slf4j-simple:1.7.21"
-      ]
+        "dependencies": {
+            "@types/chalk": "^0.4.31",
+            "chalk": "^1.1.3"
+        },
+        "mvnDependencies": [
+            "com.sparkjava:spark-core:2.5.5",
+            "org.slf4j:slf4j-simple:1.7.21"
+        ]
     }
     ```
 

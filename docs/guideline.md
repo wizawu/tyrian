@@ -33,25 +33,25 @@ Check out [Java Scripting Programmer's Guide](https://docs.oracle.com/javase/8/d
 
 ```typescript
 {
-  "mvnDependencies": [
-    "com.sparkjava:spark-core:2.5.5",
-    "org.tinylog:tinylog:1.2"
-  ],
-  "webpack": {
-    "mode": "production",
-    "resolve": {
-      "alias": {
-        "react": "inferno-compat",
-        "react-dom": "inferno-compat"
-      }
-    },
-    "optimization": {
-      "splitChunks": {
-        "chunks": "all",
-        "name": "common.js",
-        "minChunks": 3
-      }
+    "mvnDependencies": [
+        "com.sparkjava:spark-core:2.5.5",
+        "org.tinylog:tinylog:1.2"
+    ],
+    "webpack": {
+        "mode": "production",
+        "resolve": {
+            "alias": {
+                "react": "inferno-compat",
+                "react-dom": "inferno-compat"
+            }
+        },
+        "optimization": {
+            "splitChunks": {
+                "chunks": "all",
+                "name": "common.js",
+                "minChunks": 3
+            }
+        }
     }
-  }
 }
 ```

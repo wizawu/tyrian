@@ -27,12 +27,12 @@ Add the NPM and Maven libraries you need to `package.json`.
 ```bash
 $ cat package.json
 {
-  "dependencies": {
-    "mockxhr": "^1.3.0"
-  },
-  "mvnDependencies": [
-    "org.tinylog:tinylog:1.2"
-  ]
+    "dependencies": {
+        "mockxhr": "^1.3.0"
+    },
+    "mvnDependencies": [
+        "org.tinylog:tinylog:1.2"
+    ]
 }
 
 $ 1c install

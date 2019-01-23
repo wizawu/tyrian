@@ -66,7 +66,7 @@ function getCompiler(instdir, instmod, options) {
         webpackConfig = packageJSON.webpack || {};
     }
     return webpack({
-        mode: options.watch ? "development" : "production",
+        mode: webpackConfig.mode || (options.watch ? "development" : "production"),
         devtool: "source-map",
         context: context,
         resolve: __assign({ extensions: [".js", ".ts", ".tsx"] }, webpackConfig.resolve),
@@ -106,7 +106,7 @@ function getCompiler(instdir, instmod, options) {
                     parallel: true,
                     sourceMap: false,
                 })
-            ] : undefined, nodeEnv: options.watch ? "development" : "production" }, webpackConfig.optimization)
+            ] : undefined }, webpackConfig.optimization)
     });
 }
 function default_1(instdir, instmod, options) {

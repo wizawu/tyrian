@@ -70,7 +70,7 @@ function getCompiler(instdir: string, instmod: string, options: Options) {
     }
 
     return webpack({
-        mode: options.watch ? "development" : "production",
+        mode: webpackConfig.mode || (options.watch ? "development" : "production"),
         devtool: "source-map",
         context: context,
         resolve: {
@@ -116,7 +116,6 @@ function getCompiler(instdir: string, instmod: string, options: Options) {
                     sourceMap: false,
                 })
             ] : undefined,
-            nodeEnv: options.watch ? "development" : "production",
             ...webpackConfig.optimization,
         }
     })

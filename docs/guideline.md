@@ -29,7 +29,7 @@ Check out [Java Scripting Programmer's Guide](https://docs.oracle.com/javase/8/d
 ### Extra package.json fields
 
 * `mvnDependencies` defines Maven dependencies in Gradle format.
-* `webpack.optimization` and `webpack.resolve` can be overridden.
+* The webpack options `mode`, `optimization` and `resolve` can be changed as follow.
 
 ```typescript
 {
@@ -38,6 +38,7 @@ Check out [Java Scripting Programmer's Guide](https://docs.oracle.com/javase/8/d
     "org.tinylog:tinylog:1.2"
   ],
   "webpack": {
+    "mode": "production",
     "resolve": {
       "alias": {
         "react": "inferno-compat",

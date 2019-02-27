@@ -5,6 +5,7 @@ Changelog
 
 * Fix method overloading
 * OpenJDK 10 + Gradle 4.4
+* Support both nashorn and graaljs
 * Expose internal functions
 
 ### 8.20.0

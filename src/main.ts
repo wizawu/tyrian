@@ -1,4 +1,3 @@
-import * as fs from "fs"
 import * as path from "path"
 import chalk from "chalk"
 
@@ -10,8 +9,11 @@ import { EXIT_STATUS } from "./const"
 import { Options as BuildOptions } from "./commands/build"
 import { help, version } from "./commands/help"
 
-const instdir = path.resolve(path.dirname(process.argv[1]) + "/..")
-const instmod = instdir + (fs.existsSync(instdir + "/node_modules/webpack") ? "/node_modules" : "/..")
+const instdir = path.resolve(path.dirname(process.argv[1]), "..")
+const instmod = [
+    path.resolve(instdir, "node_modules"),  // webpack
+    path.resolve(instdir, ".."),            // yarn
+]
 const command = process.argv[2]
 
 if (command === "help") {

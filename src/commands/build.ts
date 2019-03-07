@@ -20,7 +20,7 @@ export interface Options {
     uglify: RegExp | false
 }
 
-function getCompiler(instdir: string, instmod: string, options: Options) {
+function getCompiler(instdir: string, instmod: string[], options: Options) {
     let context = process.cwd()
     let entry = {}
     for (let i = 0; i < options.output.length; i++) {
@@ -77,7 +77,7 @@ function getCompiler(instdir: string, instmod: string, options: Options) {
             extensions: [".js", ".ts", ".tsx"],
             ...webpackConfig.resolve
         },
-        resolveLoader: { modules: [instmod] },
+        resolveLoader: { modules: instmod },
         entry: entry,
         output: {
             path: path.resolve(""),
@@ -121,7 +121,7 @@ function getCompiler(instdir: string, instmod: string, options: Options) {
     })
 }
 
-export default function (instdir: string, instmod: string, options: Options) {
+export default function (instdir: string, instmod: string[], options: Options) {
     if (options.input.length === 0) {
         console.error(chalk.red("No entry to build"))
         process.exit(EXIT_STATUS.CLI_INVALID_ENTRY)

@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var fs = require("fs");
 var path = require("path");
 var chalk_1 = require("chalk");
 var build_1 = require("./commands/build");
@@ -9,8 +8,11 @@ var install_1 = require("./commands/install");
 var run_1 = require("./commands/run");
 var const_1 = require("./const");
 var help_1 = require("./commands/help");
-var instdir = path.resolve(path.dirname(process.argv[1]) + "/..");
-var instmod = instdir + (fs.existsSync(instdir + "/node_modules/webpack") ? "/node_modules" : "/..");
+var instdir = path.resolve(path.dirname(process.argv[1]), "..");
+var instmod = [
+    path.resolve(instdir, "node_modules"),
+    path.resolve(instdir, ".."),
+];
 var command = process.argv[2];
 if (command === "help") {
     help_1.help(instdir, const_1.EXIT_STATUS.OK);

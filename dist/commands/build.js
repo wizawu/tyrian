@@ -70,7 +70,7 @@ function getCompiler(instdir, instmod, options) {
         devtool: "source-map",
         context: context,
         resolve: __assign({ extensions: [".js", ".ts", ".tsx"] }, webpackConfig.resolve),
-        resolveLoader: { modules: [instmod] },
+        resolveLoader: { modules: instmod },
         entry: entry,
         output: {
             path: path.resolve(""),

@@ -4,7 +4,7 @@ Changelog
 ### Roadmap
 
 * Fix method overloading
-* OpenJDK 10 + Gradle 4.4
+* OpenJDK 11 (LTS) + Gradle 5
 * Support both nashorn and graaljs
 * Expose internal functions
 

@@ -70,10 +70,11 @@ function parsePackage(pkg, level) {
 function parseJAR(jar, outputDir) {
     var classes = commandOutput("jar", ["tf", jar]).split("\n");
     classes = classes.filter(function (c) { return /\.class$/.test(c); }).map(function (c) { return c.replace(/\//g, ".").replace(/\.class$/, ""); });
-    console.log(chalk_1.default.gray("Disassembling " + jar + ": " + classes.length + " classes"));
     var pkg = {};
-    for (var i = 0; i < classes.length; i += 2000) {
-        var javaCode = commandOutput("javap", ["-protected", "-cp", jar].concat(classes.slice(i, i + 2000)));
+    var step = 1000;
+    for (var i = 0; i < classes.length; i += step) {
+        console.log(chalk_1.default.gray("Disassembling " + jar + ": " + Math.min(i + step, classes.length) + "/" + classes.length + " classes"));
+        var javaCode = commandOutput("javap", ["-protected", "-cp", jar].concat(classes.slice(i, i + step)));
         parseClass_1.default(javaCode, pkg);
     }
     return outputDir ? outputPackage(pkg, [], outputDir) : parsePackage(pkg, 0);

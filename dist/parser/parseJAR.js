@@ -71,7 +71,7 @@ function parseJAR(jar, outputDir) {
     var classes = commandOutput("jar", ["tf", jar]).split("\n");
     classes = classes.filter(function (c) { return /\.class$/.test(c); }).map(function (c) { return c.replace(/\//g, ".").replace(/\.class$/, ""); });
     var pkg = {};
-    var step = 1000;
+    var step = 500;
     for (var i = 0; i < classes.length; i += step) {
         console.log(chalk_1.default.gray("Disassembling " + jar + ": " + Math.min(i + step, classes.length) + "/" + classes.length + " classes"));
         var javaCode = commandOutput("javap", ["-protected", "-cp", jar].concat(classes.slice(i, i + step)));

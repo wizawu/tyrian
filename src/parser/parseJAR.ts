@@ -71,7 +71,7 @@ export default function parseJAR(jar: string, outputDir?: string) {
     classes = classes.filter(c => /\.class$/.test(c)).map(c => c.replace(/\//g, ".").replace(/\.class$/, ""))
 
     let pkg = {}
-    let step = 1000
+    let step = 500
     for (let i = 0; i < classes.length; i += step) {
         console.log(chalk.gray(`Disassembling ${jar}: ${Math.min(i + step, classes.length)}/${classes.length} classes`))
         let javaCode = commandOutput("javap", ["-protected", "-cp", jar].concat(classes.slice(i, i + step)))

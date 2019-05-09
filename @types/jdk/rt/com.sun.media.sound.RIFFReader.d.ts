@@ -14,7 +14,6 @@ declare namespace com {
                     public read(arg0: byte[], arg1: int, arg2: int): int
                     public readFully(arg0: byte[]): void
                     public readFully(arg0: byte[], arg1: int, arg2: int): void
-                    public skipBytes(arg0: long): long
                     public skip(arg0: long): long
                     public available(): int
                     public finish(): void

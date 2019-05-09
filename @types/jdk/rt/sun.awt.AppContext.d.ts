@@ -18,8 +18,8 @@ declare namespace sun {
             public getContextClassLoader(): java.lang.ClassLoader
             public toString(): string
             public getPropertyChangeListeners(): java.beans.PropertyChangeListener[]
-            public addPropertyChangeListener(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener): void
-            public removePropertyChangeListener(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener): void
+            public addPropertyChangeListener(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            public removePropertyChangeListener(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
             public getPropertyChangeListeners(arg0: java.lang.String | string): java.beans.PropertyChangeListener[]
             public static getSoftReferenceValue<T>(arg0: java.lang.Object, arg1: java.util.function$.Supplier<T> | java.util.function$.Supplier$$Lambda<T>): T
             public static class: java.lang.Class<any>

@@ -9,6 +9,8 @@ declare namespace java {
                 public entries2(arg0: java.util.jar.JarFile): java.util.Enumeration<java.util.jar.JarEntry>
                 public setEagerValidation(arg0: java.util.jar.JarFile, arg1: boolean): void
                 public getManifestDigests(arg0: java.util.jar.JarFile): java.util.List<java.lang.Object>
+                public getTrustedAttributes(arg0: java.util.jar.Manifest, arg1: java.lang.String | string): java.util.jar.Attributes
+                public ensureInitialization(arg0: java.util.jar.JarFile): void
                 public static class: java.lang.Class<any>
             }
         }

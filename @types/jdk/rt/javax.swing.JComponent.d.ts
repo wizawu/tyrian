@@ -62,8 +62,8 @@ declare namespace javax {
             public getGraphics(): java.awt.Graphics
             public setDebugGraphicsOptions(arg0: int): void
             public getDebugGraphicsOptions(): int
-            public registerKeyboardAction(arg0: java.awt.event.ActionListener, arg1: java.lang.String | string, arg2: javax.swing.KeyStroke, arg3: int): void
-            public registerKeyboardAction(arg0: java.awt.event.ActionListener, arg1: javax.swing.KeyStroke, arg2: int): void
+            public registerKeyboardAction(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda, arg1: java.lang.String | string, arg2: javax.swing.KeyStroke, arg3: int): void
+            public registerKeyboardAction(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$Lambda, arg1: javax.swing.KeyStroke, arg2: int): void
             public unregisterKeyboardAction(arg0: javax.swing.KeyStroke): void
             public getRegisteredKeyStrokes(): javax.swing.KeyStroke[]
             public getConditionForKeyStroke(arg0: javax.swing.KeyStroke): int

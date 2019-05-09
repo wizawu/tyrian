@@ -71,8 +71,8 @@ declare namespace java {
             protected setDesktopProperty<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.String | string, arg1: java.lang.Object): void
             protected lazilyLoadDesktopProperty<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.String | string): java.lang.Object
             protected initializeDesktopProperties<T extends java.awt.dnd.DragGestureRecognizer>(): void
-            public addPropertyChangeListener<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener): void
-            public removePropertyChangeListener<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener): void
+            public addPropertyChangeListener<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            public removePropertyChangeListener<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
             public getPropertyChangeListeners<T extends java.awt.dnd.DragGestureRecognizer>(): java.beans.PropertyChangeListener[]
             public getPropertyChangeListeners<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.String | string): java.beans.PropertyChangeListener[]
             public isAlwaysOnTopSupported<T extends java.awt.dnd.DragGestureRecognizer>(): boolean

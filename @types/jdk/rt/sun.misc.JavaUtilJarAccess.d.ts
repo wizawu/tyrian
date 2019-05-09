@@ -8,6 +8,8 @@ declare namespace sun {
             entries2(arg0: java.util.jar.JarFile): java.util.Enumeration<java.util.jar.JarEntry>
             setEagerValidation(arg0: java.util.jar.JarFile, arg1: boolean): void
             getManifestDigests(arg0: java.util.jar.JarFile): java.util.List<java.lang.Object>
+            getTrustedAttributes(arg0: java.util.jar.Manifest, arg1: java.lang.String | string): java.util.jar.Attributes
+            ensureInitialization(arg0: java.util.jar.JarFile): void
         }
     }
 }

@@ -131,8 +131,8 @@ declare namespace java {
             public addFocusListener(arg0: java.awt.event.FocusListener): void
             public removeFocusListener(arg0: java.awt.event.FocusListener): void
             public getFocusListeners(): java.awt.event.FocusListener[]
-            public addHierarchyListener(arg0: java.awt.event.HierarchyListener): void
-            public removeHierarchyListener(arg0: java.awt.event.HierarchyListener): void
+            public addHierarchyListener(arg0: java.awt.event.HierarchyListener | java.awt.event.HierarchyListener$$Lambda): void
+            public removeHierarchyListener(arg0: java.awt.event.HierarchyListener | java.awt.event.HierarchyListener$$Lambda): void
             public getHierarchyListeners(): java.awt.event.HierarchyListener[]
             public addHierarchyBoundsListener(arg0: java.awt.event.HierarchyBoundsListener): void
             public removeHierarchyBoundsListener(arg0: java.awt.event.HierarchyBoundsListener): void
@@ -146,8 +146,8 @@ declare namespace java {
             public addMouseMotionListener(arg0: java.awt.event.MouseMotionListener): void
             public removeMouseMotionListener(arg0: java.awt.event.MouseMotionListener): void
             public getMouseMotionListeners(): java.awt.event.MouseMotionListener[]
-            public addMouseWheelListener(arg0: java.awt.event.MouseWheelListener): void
-            public removeMouseWheelListener(arg0: java.awt.event.MouseWheelListener): void
+            public addMouseWheelListener(arg0: java.awt.event.MouseWheelListener | java.awt.event.MouseWheelListener$$Lambda): void
+            public removeMouseWheelListener(arg0: java.awt.event.MouseWheelListener | java.awt.event.MouseWheelListener$$Lambda): void
             public getMouseWheelListeners(): java.awt.event.MouseWheelListener[]
             public addInputMethodListener(arg0: java.awt.event.InputMethodListener): void
             public removeInputMethodListener(arg0: java.awt.event.InputMethodListener): void
@@ -211,11 +211,11 @@ declare namespace java {
             public list<T extends java.util.EventListener>(arg0: java.io.PrintStream, arg1: int): void
             public list<T extends java.util.EventListener>(arg0: java.io.PrintWriter): void
             public list<T extends java.util.EventListener>(arg0: java.io.PrintWriter, arg1: int): void
-            public addPropertyChangeListener<T extends java.util.EventListener>(arg0: java.beans.PropertyChangeListener): void
-            public removePropertyChangeListener<T extends java.util.EventListener>(arg0: java.beans.PropertyChangeListener): void
+            public addPropertyChangeListener<T extends java.util.EventListener>(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            public removePropertyChangeListener<T extends java.util.EventListener>(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
             public getPropertyChangeListeners<T extends java.util.EventListener>(): java.beans.PropertyChangeListener[]
-            public addPropertyChangeListener<T extends java.util.EventListener>(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener): void
-            public removePropertyChangeListener<T extends java.util.EventListener>(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener): void
+            public addPropertyChangeListener<T extends java.util.EventListener>(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
+            public removePropertyChangeListener<T extends java.util.EventListener>(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$Lambda): void
             public getPropertyChangeListeners<T extends java.util.EventListener>(arg0: java.lang.String | string): java.beans.PropertyChangeListener[]
             protected firePropertyChange<T extends java.util.EventListener>(arg0: java.lang.String | string, arg1: java.lang.Object, arg2: java.lang.Object): void
             protected firePropertyChange<T extends java.util.EventListener>(arg0: java.lang.String | string, arg1: boolean, arg2: boolean): void

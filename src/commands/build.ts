@@ -150,7 +150,7 @@ export default function (instdir: string, instmod: string[], options: Options) {
             entrypoints: false,
             modules: false,
         }))
-        stats.toJson().assets.forEach(asset => {
+        stats.toJson().assets!.forEach(asset => {
             if (asset.emitted) {
                 let size = filesize(asset.size, { standard: "iec", round: 2 })
                 size = ("           " + size).slice(-10)

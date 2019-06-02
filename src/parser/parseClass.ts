@@ -241,7 +241,7 @@ export default function (source: string, pkg: any) {
                     let ns = item.name.substring(0, item.name.length - className.length - 1)
                     ensureExists(pkg, ns, {})
                     if (ns === "java.lang" && className === "Object") {
-                        get(pkg, ns)[className] = "type Object = any"
+                        get(pkg, ns, {})[className] = "type Object = any"
                     } else {
                         // remove template arguments
                         let buffer0line = buffer[0].line, templateRegex = /<[^<>]+ extends/
@@ -304,7 +304,7 @@ export default function (source: string, pkg: any) {
                         } else if (isInterface && countUnimplMethods === 0) {
                             lambda.addLambda(ns + "." + classID, 0)
                         }
-                        get(pkg, ns)[className] = buffer.map(b => b.line).join("\n")
+                        get(pkg, ns, {})[className] = buffer.map(b => b.line).join("\n")
                     }
                 }
                 break

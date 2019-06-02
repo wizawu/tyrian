@@ -260,7 +260,7 @@ function default_1(source, pkg) {
                     var ns_1 = item.name.substring(0, item.name.length - className.length - 1);
                     object_path_1.ensureExists(pkg, ns_1, {});
                     if (ns_1 === "java.lang" && className === "Object") {
-                        object_path_1.get(pkg, ns_1)[className] = "type Object = any";
+                        object_path_1.get(pkg, ns_1, {})[className] = "type Object = any";
                     }
                     else {
                         var buffer0line = buffer[0].line, templateRegex = /<[^<>]+ extends/;
@@ -321,7 +321,7 @@ function default_1(source, pkg) {
                         else if (isInterface && countUnimplMethods_1 === 0) {
                             lambda.addLambda(ns_1 + "." + classID, 0);
                         }
-                        object_path_1.get(pkg, ns_1)[className] = buffer.map(function (b) { return b.line; }).join("\n");
+                        object_path_1.get(pkg, ns_1, {})[className] = buffer.map(function (b) { return b.line; }).join("\n");
                     }
                 }
                 break;

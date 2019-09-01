@@ -7,8 +7,6 @@ declare namespace sun {
             public abstract getCodeSourceURL(): java.net.URL
             public abstract getInputStream(): java.io.InputStream
             public abstract getContentLength(): int
-            public setClasspathLoadIndex(arg0: int): void
-            public getClasspathLoadIndex(): int
             public getBytes(): byte[]
             public getByteBuffer(): java.nio.ByteBuffer
             public getManifest(): java.util.jar.Manifest

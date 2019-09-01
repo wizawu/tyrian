@@ -6,7 +6,7 @@
   "bin": "./bin/1c",
   "dependencies": {
     "@types/filesize": "^3.6.0",
-    "@types/node": "^10.14.17",
+    "@types/node": "^9.6.51",
     "@types/object-path": "^0.9.29",
     "@types/webpack": "^4.4.32",
     "autoprefixer": "^8.6.0",

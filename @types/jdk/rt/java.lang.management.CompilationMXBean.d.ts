@@ -3,8 +3,8 @@ declare namespace java {
         namespace management {
             interface CompilationMXBean extends java.lang.management.PlatformManagedObject {
                 getName(): string
-                getTotalCompilationTime(): long
                 isCompilationTimeMonitoringSupported(): boolean
+                getTotalCompilationTime(): long
             }
         }
     }

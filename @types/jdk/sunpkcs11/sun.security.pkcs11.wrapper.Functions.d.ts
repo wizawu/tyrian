@@ -24,6 +24,7 @@ declare namespace sun {
                     public static getAttributeId(arg0: java.lang.String | string): long
                     public static getObjectClassName(arg0: long): string
                     public static getObjectClassId(arg0: java.lang.String | string): long
+                    public static getHashMechId(arg0: java.lang.String | string): long
                     public static equals(arg0: sun.security.pkcs11.wrapper.CK_DATE, arg1: sun.security.pkcs11.wrapper.CK_DATE): boolean
                     public static hashCode(arg0: byte[]): int
                     public static hashCode(arg0: char[]): int

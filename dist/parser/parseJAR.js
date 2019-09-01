@@ -1,4 +1,11 @@
 "use strict";
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 var fs = require("fs");
 var path = require("path");
@@ -39,10 +46,10 @@ function outputPackage(pkg, namespaces, outputDir) {
                 .map(function (line) { return space_1 + line; }).join("\n") + "\n" + tail_1.reverse().join("\n");
             if (key.indexOf("<") > 0)
                 key = key.substring(0, key.indexOf("<"));
-            fs.writeFileSync(path.join(outputDir, namespaces.concat([key, "d.ts"]).join(".")), result_1);
+            fs.writeFileSync(path.join(outputDir, __spreadArrays(namespaces, [key, "d.ts"]).join(".")), result_1);
         }
         else {
-            outputPackage(pkg[key], namespaces.concat([key]), outputDir);
+            outputPackage(pkg[key], __spreadArrays(namespaces, [key]), outputDir);
         }
     });
 }

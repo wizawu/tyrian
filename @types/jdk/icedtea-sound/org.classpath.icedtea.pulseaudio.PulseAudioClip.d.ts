@@ -37,12 +37,12 @@ declare namespace org {
                     public getStream(): org.classpath.icedtea.pulseaudio.Stream
                     public isRunning(): boolean
                     public isActive(): boolean
-                    public removeLineListener(arg0: javax.sound.sampled.LineListener): void
+                    public removeLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$Lambda): void
                     public isOpen(): boolean
                     public isControlSupported(arg0: javax.sound.sampled.Control$Type): boolean
                     public getControls(): javax.sound.sampled.Control[]
                     public getControl(arg0: javax.sound.sampled.Control$Type): javax.sound.sampled.Control
-                    public addLineListener(arg0: javax.sound.sampled.LineListener): void
+                    public addLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$Lambda): void
                     public static class: java.lang.Class<any>
                 }
             }

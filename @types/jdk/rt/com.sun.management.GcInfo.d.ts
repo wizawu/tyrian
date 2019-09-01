@@ -17,7 +17,7 @@ declare namespace com {
                 public getCompositeType(): javax.management.openmbean.CompositeType
                 public hashCode(): int
                 public toString(): string
-                public values(): java.util.Collection<any>
+                public values(): java.util.Collection
                 public toCompositeData(arg0: javax.management.openmbean.CompositeType): javax.management.openmbean.CompositeData
                 public static class: java.lang.Class<any>
             }

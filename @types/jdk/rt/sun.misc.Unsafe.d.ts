@@ -81,15 +81,12 @@ declare namespace sun {
             public copyMemory(arg0: java.lang.Object, arg1: long, arg2: java.lang.Object, arg3: long, arg4: long): void
             public copyMemory(arg0: long, arg1: long, arg2: long): void
             public freeMemory(arg0: long): void
-            public freeDBBMemory(arg0: long): void
             public fieldOffset(arg0: java.lang.reflect.Field): int
             public staticFieldBase(arg0: java.lang.Class<any>): java.lang.Object
-            public allocateDBBMemory(arg0: long): long
             public staticFieldOffset(arg0: java.lang.reflect.Field): long
             public objectFieldOffset(arg0: java.lang.reflect.Field): long
             public staticFieldBase(arg0: java.lang.reflect.Field): java.lang.Object
             public shouldBeInitialized(arg0: java.lang.Class<any>): boolean
-            public reallocateDBBMemory(arg0: long, arg1: long): long
             public ensureClassInitialized(arg0: java.lang.Class<any>): void
             public arrayBaseOffset(arg0: java.lang.Class<any>): int
             public arrayIndexScale(arg0: java.lang.Class<any>): int

@@ -15,6 +15,7 @@ declare namespace sun {
             public static readonly GPOSTag: int
             public static readonly GSUBTag: int
             public static readonly mortTag: int
+            public static readonly morxTag: int
             public static readonly fdscTag: int
             public static readonly fvarTag: int
             public static readonly featTag: int

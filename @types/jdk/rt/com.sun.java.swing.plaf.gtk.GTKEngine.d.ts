@@ -17,13 +17,13 @@ declare namespace com {
                             public paintHline(arg0: java.awt.Graphics, arg1: javax.swing.plaf.synth.SynthContext, arg2: javax.swing.plaf.synth.Region, arg3: int, arg4: java.lang.String | string, arg5: int, arg6: int, arg7: int, arg8: int): void
                             public paintOption(arg0: java.awt.Graphics, arg1: javax.swing.plaf.synth.SynthContext, arg2: javax.swing.plaf.synth.Region, arg3: java.lang.String | string, arg4: int, arg5: int, arg6: int, arg7: int): void
                             public paintShadow(arg0: java.awt.Graphics, arg1: javax.swing.plaf.synth.SynthContext, arg2: javax.swing.plaf.synth.Region, arg3: int, arg4: com.sun.java.swing.plaf.gtk.GTKConstants$ShadowType, arg5: java.lang.String | string, arg6: int, arg7: int, arg8: int, arg9: int): void
-                            public paintSlider(arg0: java.awt.Graphics, arg1: javax.swing.plaf.synth.SynthContext, arg2: javax.swing.plaf.synth.Region, arg3: int, arg4: com.sun.java.swing.plaf.gtk.GTKConstants$ShadowType, arg5: java.lang.String | string, arg6: int, arg7: int, arg8: int, arg9: int, arg10: com.sun.java.swing.plaf.gtk.GTKConstants$Orientation): void
+                            public paintSlider(arg0: java.awt.Graphics, arg1: javax.swing.plaf.synth.SynthContext, arg2: javax.swing.plaf.synth.Region, arg3: int, arg4: com.sun.java.swing.plaf.gtk.GTKConstants$ShadowType, arg5: java.lang.String | string, arg6: int, arg7: int, arg8: int, arg9: int, arg10: com.sun.java.swing.plaf.gtk.GTKConstants$Orientation, arg11: boolean): void
                             public paintVline(arg0: java.awt.Graphics, arg1: javax.swing.plaf.synth.SynthContext, arg2: javax.swing.plaf.synth.Region, arg3: int, arg4: java.lang.String | string, arg5: int, arg6: int, arg7: int, arg8: int): void
                             public paintBackground(arg0: java.awt.Graphics, arg1: javax.swing.plaf.synth.SynthContext, arg2: javax.swing.plaf.synth.Region, arg3: int, arg4: java.awt.Color, arg5: int, arg6: int, arg7: int, arg8: int): void
                             public paintCachedImage(arg0: java.awt.Graphics, arg1: int, arg2: int, arg3: int, arg4: int, ...arg5: java.lang.Object[]): boolean
                             public startPainting(arg0: java.awt.Graphics, arg1: int, arg2: int, arg3: int, arg4: int, ...arg5: java.lang.Object[]): void
-                            public finishPainting(): void
-                            public finishPainting(arg0: boolean): void
+                            public finishPainting(): java.awt.image.BufferedImage
+                            public finishPainting(arg0: boolean): java.awt.image.BufferedImage
                             public themeChanged(): void
                             public getSetting(arg0: com.sun.java.swing.plaf.gtk.GTKEngine$Settings): java.lang.Object
                             public static class: java.lang.Class<any>

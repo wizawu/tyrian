@@ -60,10 +60,10 @@ function nextToken(ctx) {
             break;
         if (char === "?") {
             skip += 1;
-            var token = nextToken(__assign({}, ctx, { offset: ctx.offset + skip }));
+            var token = nextToken(__assign(__assign({}, ctx), { offset: ctx.offset + skip }));
             if (token.value === "extends" || token.value === "super") {
                 skip += token.skip;
-                token = nextToken(__assign({}, ctx, { offset: ctx.offset + skip }));
+                token = nextToken(__assign(__assign({}, ctx), { offset: ctx.offset + skip }));
                 value += token.value;
                 skip += token.skip;
             }
@@ -126,7 +126,7 @@ function parseMember(ctx, isInterface, typeVariable) {
         }
     }
     if (type === "{}")
-        return __assign({}, ctx, { offset: ctx.offset + 1 });
+        return __assign(__assign({}, ctx), { offset: ctx.offset + 1 });
     token = nextToken(ctx);
     var member = token.value;
     line += member + typeVariable;

@@ -1,6 +1,7 @@
 declare namespace sun {
     namespace applet {
         abstract class AppletPanel extends java.awt.Panel implements java.applet.AppletStub , java.lang.Runnable {
+            protected applet: java.applet.Applet
             protected doInit: boolean
             protected loader: sun.applet.AppletClassLoader
             public static readonly APPLET_DISPOSE: int
@@ -24,6 +25,7 @@ declare namespace sun {
             public abstract getHeight(): int
             public abstract hasInitialFocus(): boolean
             protected setupAppletAppContext(): void
+            protected createAppletThread(): void
             public init(): void
             public minimumSize(): java.awt.Dimension
             public preferredSize(): java.awt.Dimension
@@ -31,7 +33,9 @@ declare namespace sun {
             public removeAppletListener(arg0: sun.applet.AppletListener): void
             public dispatchAppletEvent(arg0: int, arg1: java.lang.Object): void
             public sendEvent(arg0: int): void
+            protected getNextEvent(): sun.applet.AppletEvent
             public run(): void
+            protected runLoader(): void
             protected createApplet(arg0: sun.applet.AppletClassLoader): java.applet.Applet
             protected loadJarFiles(arg0: sun.applet.AppletClassLoader): void
             protected stopLoading(): void

@@ -300,6 +300,10 @@ declare namespace sun {
                     CKM_PBE_SHA1_RC2_40_CBC: long
                     CKM_PKCS5_PBKD2: long
                     CKM_PBA_SHA1_WITH_SHA1_HMAC: long
+                    CKM_TLS12_MASTER_KEY_DERIVE: long
+                    CKM_TLS12_KEY_AND_MAC_DERIVE: long
+                    CKM_TLS12_MASTER_KEY_DERIVE_DH: long
+                    CKM_TLS_MAC: long
                     CKM_KEY_WRAP_LYNKS: long
                     CKM_KEY_WRAP_SET_OAEP: long
                     CKM_SKIPJACK_KEY_GEN: long

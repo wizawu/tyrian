@@ -19,7 +19,6 @@ declare namespace java {
                 public skip<U>(arg0: long): java.util.stream.IntStream
                 public sorted<U>(): java.util.stream.IntStream
                 public distinct<U>(): java.util.stream.IntStream
-                protected static promoteGPUCompile<U>(): void
                 public forEach<U>(arg0: java.util.function$.IntConsumer): void
                 public forEachOrdered<U>(arg0: java.util.function$.IntConsumer): void
                 public sum<U>(): int

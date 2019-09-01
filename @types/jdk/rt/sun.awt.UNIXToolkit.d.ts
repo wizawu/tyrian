@@ -15,6 +15,9 @@ declare namespace sun {
             public sync(): void
             protected getDesktopAAHints(): java.awt.RenderingHints
             public checkGtkVersion(arg0: int, arg1: int, arg2: int): boolean
+            public static getEnabledGtkVersion(): sun.awt.UNIXToolkit$GtkVersions
+            public static getGtkVersion(): sun.awt.UNIXToolkit$GtkVersions
+            public static isGtkVerbose(): boolean
             public static class: java.lang.Class<any>
         }
     }

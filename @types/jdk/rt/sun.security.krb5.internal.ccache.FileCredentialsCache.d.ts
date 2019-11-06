@@ -14,7 +14,10 @@ declare namespace sun {
                         public save(): void
                         public getCredsList(): sun.security.krb5.internal.ccache.Credentials[]
                         public getCreds(arg0: sun.security.krb5.internal.LoginOptions, arg1: sun.security.krb5.PrincipalName): sun.security.krb5.internal.ccache.Credentials
+                        public addConfigEntry(arg0: sun.security.krb5.internal.ccache.CredentialsCache$ConfigEntry): void
+                        public getConfigEntries(): java.util.List<sun.security.krb5.internal.ccache.CredentialsCache$ConfigEntry>
                         public getCreds(arg0: sun.security.krb5.PrincipalName): sun.security.krb5.internal.ccache.Credentials
+                        public getInitialCreds(): sun.security.krb5.Credentials
                         public getDefaultCreds(): sun.security.krb5.internal.ccache.Credentials
                         public static getDefaultCacheName(): string
                         public static checkValidation(arg0: java.lang.String | string): string

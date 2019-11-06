@@ -3,6 +3,7 @@ declare namespace org {
         namespace Accessibility {
             class AtkValue {
                 public constructor(arg0: javax.accessibility.AccessibleContext)
+                public static createAtkValue(arg0: javax.accessibility.AccessibleContext): org.GNOME.Accessibility.AtkValue
                 public get_current_value(): java.lang.Number
                 public getMaximumValue(): double
                 public getMinimumValue(): double

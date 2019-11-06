@@ -7,6 +7,7 @@ declare namespace sun {
                 public getConnection(): sun.rmi.transport.Connection
                 public getOutputStream(): java.io.ObjectOutput
                 public releaseOutputStream(): void
+                public setObjectInputFilter(arg0: sun.misc.ObjectInputFilter | sun.misc.ObjectInputFilter$$Lambda): void
                 public getInputStream(): java.io.ObjectInput
                 public releaseInputStream(): void
                 public discardPendingRefs(): void

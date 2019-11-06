@@ -9,6 +9,7 @@ declare namespace java {
                 protected rightChild: K
                 protected constructor(arg0: java.util.stream.PipelineHelper<P_OUT>, arg1: java.util.Spliterator<P_IN>)
                 protected constructor(arg0: K, arg1: java.util.Spliterator<P_IN>)
+                public static getLeafTarget(): int
                 protected abstract makeChild(arg0: java.util.Spliterator<P_IN>): K
                 protected abstract doLeaf(): R
                 public static suggestTargetSize(arg0: long): long

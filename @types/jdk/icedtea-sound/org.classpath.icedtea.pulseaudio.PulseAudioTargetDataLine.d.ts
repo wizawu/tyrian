@@ -28,12 +28,12 @@ declare namespace org {
                     public isRunning(): boolean
                     public isActive(): boolean
                     public open(): void
-                    public removeLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$Lambda): void
+                    public removeLineListener(arg0: javax.sound.sampled.LineListener): void
                     public isOpen(): boolean
                     public isControlSupported(arg0: javax.sound.sampled.Control$Type): boolean
                     public getControls(): javax.sound.sampled.Control[]
                     public getControl(arg0: javax.sound.sampled.Control$Type): javax.sound.sampled.Control
-                    public addLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$Lambda): void
+                    public addLineListener(arg0: javax.sound.sampled.LineListener): void
                     public static class: java.lang.Class<any>
                 }
             }

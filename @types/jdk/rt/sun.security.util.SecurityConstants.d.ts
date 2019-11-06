@@ -23,6 +23,7 @@ declare namespace sun {
                 public static readonly GET_COOKIEHANDLER_PERMISSION: java.net.NetPermission
                 public static readonly SET_RESPONSECACHE_PERMISSION: java.net.NetPermission
                 public static readonly GET_RESPONSECACHE_PERMISSION: java.net.NetPermission
+                public static readonly SET_SOCKETIMPL_PERMISSION: java.net.NetPermission
                 public static readonly CREATE_CLASSLOADER_PERMISSION: java.lang.RuntimePermission
                 public static readonly CHECK_MEMBER_ACCESS_PERMISSION: java.lang.RuntimePermission
                 public static readonly MODIFY_THREAD_PERMISSION: java.lang.RuntimePermission

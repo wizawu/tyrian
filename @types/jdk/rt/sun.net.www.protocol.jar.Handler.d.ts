@@ -8,6 +8,7 @@ declare namespace sun {
                         protected openConnection(arg0: java.net.URL): java.net.URLConnection
                         protected sameFile(arg0: java.net.URL, arg1: java.net.URL): boolean
                         protected hashCode(arg0: java.net.URL): int
+                        public checkNestedProtocol(arg0: java.lang.String | string): string
                         protected parseURL(arg0: java.net.URL, arg1: java.lang.String | string, arg2: int, arg3: int): void
                         public static class: java.lang.Class<any>
                     }

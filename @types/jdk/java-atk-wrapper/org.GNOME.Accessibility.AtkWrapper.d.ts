@@ -22,8 +22,10 @@ declare namespace org {
                 public static componentRemoved(arg0: javax.accessibility.AccessibleContext): void
                 public static boundsChanged(arg0: javax.accessibility.AccessibleContext): void
                 public static dispatchKeyEvent(arg0: org.GNOME.Accessibility.AtkKeyEvent): boolean
+                public static getInstance(arg0: javax.accessibility.AccessibleContext): long
                 public static printLog(arg0: java.lang.String | string): void
                 public constructor()
+                public static getInstanceFromSwing(arg0: javax.accessibility.AccessibleContext): long
                 public static main(arg0: java.lang.String[]): void
                 public static class: java.lang.Class<any>
             }

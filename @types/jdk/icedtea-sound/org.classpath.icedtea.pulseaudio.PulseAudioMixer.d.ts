@@ -17,7 +17,7 @@ declare namespace org {
                     public isSynchronizationSupported(arg0: javax.sound.sampled.Line[], arg1: boolean): boolean
                     public synchronize(arg0: javax.sound.sampled.Line[], arg1: boolean): void
                     public unsynchronize(arg0: javax.sound.sampled.Line[]): void
-                    public addLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$Lambda): void
+                    public addLineListener(arg0: javax.sound.sampled.LineListener): void
                     public close(): void
                     public getControl(arg0: javax.sound.sampled.Control$Type): javax.sound.sampled.Control
                     public getControls(): javax.sound.sampled.Control[]
@@ -29,7 +29,7 @@ declare namespace org {
                     public openLocal(arg0: java.lang.String | string): void
                     public openRemote(arg0: java.lang.String | string, arg1: java.lang.String | string): void
                     public openRemote(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: int): void
-                    public removeLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$Lambda): void
+                    public removeLineListener(arg0: javax.sound.sampled.LineListener): void
                     public static class: java.lang.Class<any>
                 }
             }

@@ -3,6 +3,7 @@ declare namespace org {
         namespace Accessibility {
             class AtkHypertext extends org.GNOME.Accessibility.AtkText {
                 public constructor(arg0: javax.accessibility.AccessibleContext)
+                public static createAtkHypertext(arg0: javax.accessibility.AccessibleContext): org.GNOME.Accessibility.AtkHypertext
                 public get_link(arg0: int): org.GNOME.Accessibility.AtkHyperlink
                 public get_n_links(): int
                 public get_link_index(arg0: int): int

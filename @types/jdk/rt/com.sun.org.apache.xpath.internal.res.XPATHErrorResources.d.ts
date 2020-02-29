@@ -42,8 +42,6 @@ declare namespace com {
                                 public static readonly ER_FOUND_COMMA_BUT_NO_PRECEDING_ARG: string
                                 public static readonly ER_FOUND_COMMA_BUT_NO_FOLLOWING_ARG: string
                                 public static readonly ER_PREDICATE_ILLEGAL_SYNTAX: string
-                                public static readonly ER_PREDICATE_TOO_MANY_OPEN: string
-                                public static readonly ER_COMPILATION_TOO_MANY_OPERATION: string
                                 public static readonly ER_ILLEGAL_AXIS_NAME: string
                                 public static readonly ER_UNKNOWN_NODETYPE: string
                                 public static readonly ER_PATTERN_LITERAL_NEEDS_BE_QUOTED: string

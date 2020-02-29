@@ -9,7 +9,6 @@ declare namespace org {
                 public isCtrlKeyDown: boolean
                 public isAltKeyDown: boolean
                 public isMetaKeyDown: boolean
-                public isAltGrKeyDown: boolean
                 public keyval: int
                 public string: string
                 public keycode: int

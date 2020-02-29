@@ -3,7 +3,6 @@ declare namespace sun {
         namespace jgss {
             namespace krb5 {
                 class Krb5InitCredential extends javax.security.auth.kerberos.KerberosTicket implements sun.security.jgss.krb5.Krb5CredElement {
-                    public proxyTicket: javax.security.auth.kerberos.KerberosTicket
                     public getName(): sun.security.jgss.spi.GSSNameSpi
                     public getInitLifetime(): int
                     public getAcceptLifetime(): int

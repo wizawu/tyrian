@@ -3,14 +3,9 @@ declare namespace org {
         namespace Accessibility {
             class AtkText {
                 public constructor(arg0: javax.accessibility.AccessibleContext)
-                public static createAtkText(arg0: javax.accessibility.AccessibleContext): org.GNOME.Accessibility.AtkText
-                public static getRightStart(arg0: int): int
-                public static getRightEnd(arg0: int, arg1: int, arg2: int): int
                 public get_text(arg0: int, arg1: int): string
                 public get_character_at_offset(arg0: int): char
                 public get_text_at_offset(arg0: int, arg1: int): org.GNOME.Accessibility.AtkText$StringSequence
-                public get_text_before_offset(arg0: int, arg1: int): org.GNOME.Accessibility.AtkText$StringSequence
-                public get_text_after_offset(arg0: int, arg1: int): org.GNOME.Accessibility.AtkText$StringSequence
                 public get_caret_offset(): int
                 public get_character_extents(arg0: int, arg1: int): java.awt.Rectangle
                 public get_character_count(): int

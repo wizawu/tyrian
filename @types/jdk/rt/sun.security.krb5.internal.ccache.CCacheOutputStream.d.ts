@@ -7,7 +7,6 @@ declare namespace sun {
                         public constructor(arg0: java.io.OutputStream | java.io.OutputStream$$Lambda)
                         public writeHeader(arg0: sun.security.krb5.PrincipalName, arg1: int): void
                         public addCreds(arg0: sun.security.krb5.internal.ccache.Credentials): void
-                        public addConfigEntry(arg0: sun.security.krb5.PrincipalName, arg1: sun.security.krb5.internal.ccache.CredentialsCache$ConfigEntry): void
                         public static class: java.lang.Class<any>
                     }
                 }

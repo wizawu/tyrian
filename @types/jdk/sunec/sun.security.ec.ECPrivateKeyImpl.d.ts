@@ -6,7 +6,6 @@ declare namespace sun {
                 public constructor(arg0: java.math.BigInteger, arg1: java.security.spec.ECParameterSpec)
                 public getAlgorithm(): string
                 public getS(): java.math.BigInteger
-                public getArrayS(): byte[]
                 public getParams(): java.security.spec.ECParameterSpec
                 protected parseKeyBits(): void
                 public static class: java.lang.Class<any>

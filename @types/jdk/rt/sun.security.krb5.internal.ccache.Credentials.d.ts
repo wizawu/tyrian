@@ -11,9 +11,6 @@ declare namespace sun {
                         public constructor(arg0: sun.security.krb5.internal.KDCRep, arg1: sun.security.krb5.internal.Ticket)
                         public isValid(): boolean
                         public getServicePrincipal(): sun.security.krb5.PrincipalName
-                        public getTicket(): sun.security.krb5.internal.Ticket
-                        public getServicePrincipal2(): sun.security.krb5.PrincipalName
-                        public getClientPrincipal(): sun.security.krb5.PrincipalName
                         public setKrbCreds(): sun.security.krb5.Credentials
                         public getStartTime(): sun.security.krb5.internal.KerberosTime
                         public getAuthTime(): sun.security.krb5.internal.KerberosTime
@@ -21,9 +18,7 @@ declare namespace sun {
                         public getRenewTill(): sun.security.krb5.internal.KerberosTime
                         public getTicketFlags(): sun.security.krb5.internal.TicketFlags
                         public getEType(): int
-                        public getKey(): sun.security.krb5.EncryptionKey
                         public getTktEType(): int
-                        public getTktEType2(): int
                         public static class: java.lang.Class<any>
                     }
                 }

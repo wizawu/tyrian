@@ -4,7 +4,6 @@ declare namespace org {
             interface AtkCoordType {
                 SCREEN: int
                 WINDOW: int
-                PARENT: int
             }
         }
     }

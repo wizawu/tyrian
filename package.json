@@ -1,6 +1,6 @@
 {
   "name": "1c",
-  "version": "8.23.0",
+  "version": "8.24.0",
   "repository": "github:wizawu/1c",
   "license": "MIT",
   "bin": "./bin/1c",
@@ -8,7 +8,7 @@
     "@types/filesize": "^3.6.0",
     "@types/node": "^9.6.55",
     "@types/object-path": "^0.9.29",
-    "@types/webpack": "^4.39.8",
+    "@types/webpack": "^4.41.7",
     "autoprefixer": "^8.6.0",
     "chalk": "^2.4.2",
     "css-loader": "^0.28.9",
@@ -19,11 +19,11 @@
     "object-path": "^0.11.4",
     "postcss-loader": "^2.1.5",
     "style-loader": "^0.20.1",
-    "terser-webpack-plugin": "^1.4.1",
+    "terser-webpack-plugin": "^1.4.3",
     "ts-loader": "^4.5.0",
-    "typescript": "^3.7.2",
+    "typescript": "3.8.x",
     "url-loader": "^1.1.2",
-    "webpack": "^4.41.2"
+    "webpack": "^4.41.6"
   },
   "devDependencies": {
     "mixin-deep": ">=1.3.2",

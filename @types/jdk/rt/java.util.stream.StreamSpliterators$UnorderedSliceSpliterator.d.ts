@@ -4,7 +4,6 @@ declare namespace java {
             abstract class StreamSpliterators$UnorderedSliceSpliterator<T, T_SPLITR extends java.util.Spliterator<T>> {
                 protected readonly s: T_SPLITR
                 protected readonly unlimited: boolean
-                protected readonly chunkSize: int
                 protected acquirePermits(arg0: long): long
                 protected permitStatus(): java.util.stream.StreamSpliterators$UnorderedSliceSpliterator$PermitStatus
                 public trySplit(): T_SPLITR

@@ -3,7 +3,6 @@ declare namespace org {
         namespace Accessibility {
             class AtkEditableText extends org.GNOME.Accessibility.AtkText {
                 public constructor(arg0: javax.accessibility.AccessibleContext)
-                public static createAtkEditableText(arg0: javax.accessibility.AccessibleContext): org.GNOME.Accessibility.AtkEditableText
                 public set_text_contents(arg0: java.lang.String | string): void
                 public insert_text(arg0: java.lang.String | string, arg1: int): void
                 public copy_text(arg0: int, arg1: int): void

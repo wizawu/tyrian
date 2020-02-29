@@ -3,7 +3,6 @@ declare namespace sun {
         namespace jgss {
             namespace krb5 {
                 class Krb5NameElement implements sun.security.jgss.spi.GSSNameSpi {
-                    public static getInstance(arg0: sun.security.krb5.PrincipalName): sun.security.jgss.krb5.Krb5NameElement
                     public getKrb5PrincipalName(): sun.security.krb5.PrincipalName
                     public equals(arg0: sun.security.jgss.spi.GSSNameSpi): boolean
                     public equals(arg0: java.lang.Object): boolean

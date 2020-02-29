@@ -8,7 +8,7 @@ declare namespace com {
                             class Compiler extends com.sun.org.apache.xpath.internal.compiler.OpMap {
                                 public constructor(arg0: javax.xml.transform.ErrorListener, arg1: javax.xml.transform.SourceLocator, arg2: com.sun.org.apache.xpath.internal.compiler.FunctionTable)
                                 public constructor()
-                                public compileExpression(arg0: int): com.sun.org.apache.xpath.internal.Expression
+                                public compile(arg0: int): com.sun.org.apache.xpath.internal.Expression
                                 protected or(arg0: int): com.sun.org.apache.xpath.internal.Expression
                                 protected and(arg0: int): com.sun.org.apache.xpath.internal.Expression
                                 protected notequals(arg0: int): com.sun.org.apache.xpath.internal.Expression

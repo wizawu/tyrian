@@ -2,8 +2,6 @@ declare namespace sun {
     namespace security {
         namespace pkcs11 {
             abstract class P11Key implements java.security.Key , sun.security.util.Length {
-                public getKeyID(): long
-                public releaseKeyID(): void
                 public getAlgorithm(): string
                 public getEncoded(): byte[]
                 public equals(arg0: java.lang.Object): boolean

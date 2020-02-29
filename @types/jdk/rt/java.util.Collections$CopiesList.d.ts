@@ -9,8 +9,6 @@ declare namespace java {
             public toArray(): java.lang.Object[]
             public toArray<T>(arg0: T[]): T[]
             public subList<T>(arg0: int, arg1: int): java.util.List<E>
-            public hashCode<T>(): int
-            public equals<T>(arg0: java.lang.Object): boolean
             public stream<T>(): java.util.stream.Stream<E>
             public parallelStream<T>(): java.util.stream.Stream<E>
             public spliterator<T>(): java.util.Spliterator<E>

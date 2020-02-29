@@ -52,8 +52,6 @@ declare namespace sun {
                     public C_VerifyFinal(arg0: long, arg1: byte[]): void
                     public C_VerifyRecoverInit(arg0: long, arg1: sun.security.pkcs11.wrapper.CK_MECHANISM, arg2: long): void
                     public C_VerifyRecover(arg0: long, arg1: byte[], arg2: int, arg3: int, arg4: byte[], arg5: int, arg6: int): int
-                    public getNativeKeyInfo(arg0: long, arg1: long, arg2: long, arg3: sun.security.pkcs11.wrapper.CK_MECHANISM): byte[]
-                    public createNativeKey(arg0: long, arg1: byte[], arg2: long, arg3: sun.security.pkcs11.wrapper.CK_MECHANISM): long
                     public C_GenerateKey(arg0: long, arg1: sun.security.pkcs11.wrapper.CK_MECHANISM, arg2: sun.security.pkcs11.wrapper.CK_ATTRIBUTE[]): long
                     public C_GenerateKeyPair(arg0: long, arg1: sun.security.pkcs11.wrapper.CK_MECHANISM, arg2: sun.security.pkcs11.wrapper.CK_ATTRIBUTE[], arg3: sun.security.pkcs11.wrapper.CK_ATTRIBUTE[]): long[]
                     public C_WrapKey(arg0: long, arg1: sun.security.pkcs11.wrapper.CK_MECHANISM, arg2: long, arg3: long): byte[]

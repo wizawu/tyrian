@@ -1,6 +1,6 @@
 declare namespace sun {
     namespace print {
-        class PrintServiceLookupProvider extends javax.print.PrintServiceLookup implements sun.print.BackgroundServiceLookup , java.lang.Runnable {
+        class UnixPrintServiceLookup extends javax.print.PrintServiceLookup implements sun.print.BackgroundServiceLookup , java.lang.Runnable {
             public constructor()
             public getPrintServices(): javax.print.PrintService[]
             public refreshServices(): void

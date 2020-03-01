@@ -3,10 +3,14 @@ Changelog
 
 ### Roadmap
 
+* OpenJDK 11
+* Migrate to graaljs from nashorn
 * Fix method overloading
-* OpenJDK 11 (LTS) + Gradle 5
-* Support both nashorn and graaljs
 * Expose internal functions
+
+### 8.24.0
+
+* Upgraded TypeScript to 3.8.
 
 ### 8.20.0
 

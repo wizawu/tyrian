@@ -6,3 +6,10 @@
 * Check out the [examples](/examples).
 
 <img src="https://1c.wizawu.com/assets/images/autocomplete.gif" width="640" />
+
+### Branches
+
+| Git | NPM | Status |
+| --- | --- | --- |
+| master | 8.x.x | stable |
+| v11 | 11.x.x | alpha |

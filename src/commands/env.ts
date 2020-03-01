@@ -31,11 +31,6 @@ export default function() {
     output += notFound(child.stdout, child.stderr)
     if (child.status !== 0) ok = false
 
-    // jjs
-    child = spawnSync("jjs", ["-fv"], { ...{ input: "quit()" }, ...options })
-    output += "jjs      - " + notFound("", child.stderr).replace(/\n.+$/, "\n")
-    if (child.status !== 0) ok = false
-
     // javap
     child = spawnSync("which", ["javap"], options)
     output += "javap    - " + notFound(child.stdout, child.stderr)

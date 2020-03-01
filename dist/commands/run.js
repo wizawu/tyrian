@@ -9,17 +9,20 @@ var __spreadArrays = (this && this.__spreadArrays) || function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var fs = require("fs");
 var path = require("path");
+var which = require("which");
 var child_process_1 = require("child_process");
-function default_1(jjsArgs, target, args, watch) {
+function default_1(vmArgs, target, args, watch) {
     target = path.resolve(target);
     var classpath = !fs.existsSync("lib") ? "." :
         fs.readdirSync("lib").map(function (jar) { return jar === "@types" ? "" : "lib/" + jar; }).join(":");
     var run = function () {
-        var child = child_process_1.spawn("jjs", __spreadArrays(jjsArgs, [
-            "-scripting", "--language=es6",
-            "-cp", classpath,
-            target,
-            "--"
+        var javaPath = which.sync("java");
+        var nodePath = path.join(path.dirname(javaPath), "node");
+        var child = child_process_1.spawn(nodePath, __spreadArrays([
+            "--jvm",
+            "--vm.classpath=" + classpath
+        ], vmArgs, [
+            target
         ], args));
         child.on("exit", function (code) { return process.exit(code); });
         child.stdout.on("data", function (chunk) {

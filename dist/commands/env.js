@@ -1,15 +1,4 @@
 "use strict";
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 var chalk_1 = require("chalk");
 var const_1 = require("../const");
@@ -35,10 +24,6 @@ function default_1() {
     child = child_process_1.spawnSync("java", ["-version"], options);
     output += header("java", "http://openjdk.java.net/install");
     output += notFound(child.stdout, child.stderr);
-    if (child.status !== 0)
-        ok = false;
-    child = child_process_1.spawnSync("jjs", ["-fv"], __assign({ input: "quit()" }, options));
-    output += "jjs      - " + notFound("", child.stderr).replace(/\n.+$/, "\n");
     if (child.status !== 0)
         ok = false;
     child = child_process_1.spawnSync("which", ["javap"], options);

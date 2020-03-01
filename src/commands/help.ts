@@ -15,7 +15,7 @@ Usage:
   1c env                                check all prerequisites of 1c
   1c install [options]                  install dependencies in package.json
   1c build [options] <output/entry>...  build one/multiple entries (.ts/.tsx)
-  1c run [-w] [jjs options] <output>    run an output file (.js)
+  1c run [-w] [vm options] <output>     run an output file (.js)
 
 install options:
   -D                    do not generate typescript definitions for lib/*.jar
@@ -36,8 +36,8 @@ build output/entry:
 
 run options:
   -w                    watch changes and re-run
-  jjs options           check out 'jjs -h' (must be AFTER -w if used)
-                        e.g. -J-Xms64m -J-Xmx256m -Dfile.encoding=UTF-8
+  vm options            check out 'node --help:vm' (must be AFTER -w if used)
+                        e.g. --vm.Xms64m -vm.Xmx256m -vm.Dfile.encoding=UTF-8
     `.trim())
     console.log()
     process.exit(status)

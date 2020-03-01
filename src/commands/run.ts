@@ -1,19 +1,22 @@
 import * as fs from "fs"
 import * as path from "path"
+import * as which from "which"
 import { spawn } from "child_process"
 
-export default function (jjsArgs: string[], target: string, args: string[], watch: boolean) {
+export default function (vmArgs: string[], target: string, args: string[], watch: boolean) {
     target = path.resolve(target)
     let classpath = !fs.existsSync("lib") ? "." :
         fs.readdirSync("lib").map(jar => jar === "@types" ? "" : `lib/${jar}`).join(":")
 
     let run = () => {
-        let child = spawn("jjs", [
-            ...jjsArgs,
-            "-scripting", "--language=es6",
-            "-cp", classpath,
+        let javaPath = which.sync("java")
+        let nodePath = path.join(path.dirname(javaPath), "node")
+        let child = spawn(nodePath, [
+            "--jvm",
+            "--vm.classpath=" + classpath,
+            ...vmArgs,
             target,
-            "--", ...args
+            ...args
         ])
         child.on("exit", code => process.exit(code))
 

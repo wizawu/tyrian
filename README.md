@@ -9,7 +9,7 @@
 
 ### Branches
 
-| Git | NPM | Status |
-| --- | --- | --- |
-| master | 8.x.x | stable |
-| v11 | 11.x.x | alpha |
+| Git | NPM | Status | JVM Requirements |
+| --- | --- | --- | --- |
+| master | 8.x.x | stable | OpenJDK 8 / Oracle JDK 8 |
+| v11 | 11.x.x | alpha | GraalVM 19 |

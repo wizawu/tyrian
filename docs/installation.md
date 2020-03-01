@@ -33,7 +33,6 @@ Eclipse OpenJ9 VM (build openj9-0.10.0-rc1, JRE 1.8.0 Linux amd64-64-Bit
 OpenJ9   - c5018466
 OMR      - 9ef5a533
 JCL      - 84cb836f68 based on jdk8u192-b03)
-jjs      - nashorn full version 1.8.0_192-201809300329-b03
 javap    - /usr/lib/jvm/default-java/bin/javap
 jar      - /usr/lib/jvm/default-java/bin/jar
 

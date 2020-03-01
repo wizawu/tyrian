@@ -97,17 +97,17 @@ else if (command === "build" && process.argv[3]) {
 }
 else if (command === "run" && process.argv[3]) {
     var watch = false;
-    var jjsOptions = [];
+    var vmOptions = [];
     for (var i = 3; i < process.argv.length; i++) {
         var arg = process.argv[i];
         if (i === 3 && arg === "-w") {
             watch = true;
         }
         else if (arg.charAt(0) === "-") {
-            jjsOptions.push(arg);
+            vmOptions.push(arg);
         }
         else {
-            run_1.default(jjsOptions, arg, process.argv.slice(i + 1), watch);
+            run_1.default(vmOptions, arg, process.argv.slice(i + 1), watch);
             break;
         }
     }

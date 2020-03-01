@@ -83,15 +83,15 @@ if (command === "help") {
     build(instdir, instmod, options)
 } else if (command === "run" && process.argv[3]) {
     let watch = false
-    let jjsOptions = []
+    let vmOptions = []
     for (let i = 3; i < process.argv.length; i++) {
         let arg = process.argv[i]
         if (i === 3 && arg === "-w") {
             watch = true
         } else if (arg.charAt(0) === "-") {
-            jjsOptions.push(arg as never)
+            vmOptions.push(arg as never)
         } else {
-            run(jjsOptions, arg, process.argv.slice(i + 1), watch)
+            run(vmOptions, arg, process.argv.slice(i + 1), watch)
             break
         }
     }

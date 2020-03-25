@@ -1,7 +1,8 @@
 import * as fs from "fs"
 import * as path from "path"
-import * as which from "which"
 import { spawn } from "child_process"
+
+import { findJVMBin } from "./env"
 
 export default function (vmArgs: string[], target: string, args: string[], watch: boolean) {
     target = path.resolve(target)
@@ -9,10 +10,11 @@ export default function (vmArgs: string[], target: string, args: string[], watch
         fs.readdirSync("lib").map(jar => jar === "@types" ? "" : `lib/${jar}`).join(":")
 
     let run = () => {
-        let javaPath = which.sync("java")
-        let nodePath = path.join(path.dirname(javaPath), "node")
+        let nodePath = path.join(findJVMBin(), "node")
         let child = spawn(nodePath, [
             "--jvm",
+            "--experimental-options",
+            "--js.nashorn-compat=true",
             "--vm.classpath=" + classpath,
             ...vmArgs,
             target,

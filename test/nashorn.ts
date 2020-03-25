@@ -20,21 +20,14 @@ describe("nashorn", () => {
     })
 
     it("variable", () => {
-        assert.isArray($ARG)
-        assert.isObject($ENV)
         assert.isDefined(Packages)
         assert.isDefined(Java)
     })
 
     it("function", () => {
         assert.isFunction(String)
-        assert.isFunction(echo)
         assert.isFunction(exit)
-        assert.isFunction(load)
-        assert.isFunction(loadWithNewGlobal)
         assert.isFunction(quit)
-        assert.isFunction(readFully)
-        assert.isFunction(readLine)
         assert.isFunction(Java.extend)
         assert.isFunction(Java.from)
         assert.isFunction(Java.to)
@@ -42,5 +35,5 @@ describe("nashorn", () => {
     })
 })
 
-echo(report.toString())
+console.log(report.toString())
 assert.isOk(report.ok())

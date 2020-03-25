@@ -9,17 +9,18 @@ var __spreadArrays = (this && this.__spreadArrays) || function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var fs = require("fs");
 var path = require("path");
-var which = require("which");
 var child_process_1 = require("child_process");
+var env_1 = require("./env");
 function default_1(vmArgs, target, args, watch) {
     target = path.resolve(target);
     var classpath = !fs.existsSync("lib") ? "." :
         fs.readdirSync("lib").map(function (jar) { return jar === "@types" ? "" : "lib/" + jar; }).join(":");
     var run = function () {
-        var javaPath = which.sync("java");
-        var nodePath = path.join(path.dirname(javaPath), "node");
+        var nodePath = path.join(env_1.findJVMBin(), "node");
         var child = child_process_1.spawn(nodePath, __spreadArrays([
             "--jvm",
+            "--experimental-options",
+            "--js.nashorn-compat=true",
             "--vm.classpath=" + classpath
         ], vmArgs, [
             target

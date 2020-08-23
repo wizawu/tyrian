@@ -1,4 +1,4 @@
-# tyrian [![](https://badge.fury.io/js/1c.svg)](https://www.npmjs.com/package/1c) [![](https://travis-ci.org/wizawu/1c.svg)](https://travis-ci.org/wizawu/1c)
+# tyrian [![](https://badge.fury.io/js/tyrian.svg)](https://www.npmjs.com/package/tyrian) [![](https://travis-ci.org/wizawu/tyrian.svg)](https://travis-ci.org/wizawu/tyrian)
 
 *1c* has been renamed to *tyrian* and is moving forward to version 9.
 

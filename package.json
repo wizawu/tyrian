@@ -16,7 +16,7 @@
     "fork-ts-checker-webpack-plugin": "^1.6.0",
     "less": "2.x.x",
     "less-loader": "^4.0.5",
-    "object-path": "^0.11.4",
+    "object-path": "^0.11.5",
     "postcss-loader": "^2.1.5",
     "style-loader": "^0.20.1",
     "terser-webpack-plugin": "^1.4.3",

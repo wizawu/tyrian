@@ -1,15 +1,12 @@
 dist: trusty
-
 language: node_js
 node_js:
   - stable
 jdk:
-  - openjdk8
-
+  - openjdk11
 before_script:
-  - jdk_switcher use openjdk8
+  - jdk_switcher use openjdk11
 script:
   - npm install -g typescript
   - npm install
-  - make types
   - make test

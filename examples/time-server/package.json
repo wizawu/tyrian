@@ -1,5 +1,0 @@
-{
-  "mvnDependencies": [
-    "com.sparkjava:spark-core:2.5.5"
-  ]
-}

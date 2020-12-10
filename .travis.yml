@@ -7,6 +7,5 @@ jdk:
 before_script:
   - jdk_switcher use openjdk11
 script:
-  - npm install -g typescript
   - npm install
-  - make test
+  - npm run test
